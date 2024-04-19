@@ -10,7 +10,7 @@ updated: 2023-11-22
 
 ## Ziel
 
-Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des Lebenszyklus Ihrer Website kann es aus praktischen oder technischen Gründen erforderlich sein, den Inhalt Ihrer Datenbank in eine andere Ihrer Datenbanken zu kopieren. Dies is möglich innerhalb der Angebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
+Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des Lebenszyklus Ihrer Website kann es aus praktischen oder technischen Gründen erforderlich sein, den Inhalt Ihrer Datenbank in eine andere Ihrer Datenbanken zu kopieren. Dies is möglich innerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
 
 **Diese Anleitung erklärt, wie Sie den Inhalt einer OVHcloud Datenbank in eine andere OVHcloud Datenbank kopieren.**
 
@@ -20,8 +20,8 @@ Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des
 
 ## Voraussetzungen
 
-- Sie verfügen über Datenbanken der Dienste [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/). Beide Datenbanken müssen erstellt sein, bevor die Duplikationsfunktion verwendet werden kann.
-- Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zur Verwaltung aller betroffenen Datenbankdienste. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
+- Sie verfügen über Datenbanken der Dienste [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases). Beide Datenbanken müssen erstellt sein, bevor die Duplikationsfunktion verwendet werden kann.
+- Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zur Verwaltung aller betroffenen Datenbankdienste. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## In der praktischen Anwendung
 
@@ -35,14 +35,14 @@ Bevor Sie beginnen, überprüfen Sie diese Voraussetzungen:
 
 Die Duplikationsfunktion ist verfügbar für folgende Dienste:
 
-- [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) (in einigen unserer [Webhostings](https://www.ovhcloud.com/de/web-hosting/) enthalten oder [separat bestellt](https://www.ovhcloud.com/de/web-hosting/options/start-sql/))
-- [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) (in unseren [Performance Hostings](https://www.ovhcloud.com/de/web-hosting/performance-offer/) enthalten oder [separat bestellt](https://www.ovhcloud.com/de/web-cloud/databases/)). 
+- [Start SQL](/links/web/hosting-options-startsql) (in einigen unserer [Webhostings](/links/web/hosting) enthalten oder [separat bestellt](/links/web/hosting-options-startsql))
+- [Web Cloud Databases](/links/web/databases) (in unseren [Performance Hostings](/links/web/hosting-performance-offer) enthalten oder [separat bestellt](/links/web/databases)). 
 
 Je nach Ihrer Ausgangslage ist der Zugriffspfad zur Quelldatenbank unterschiedlich.
 
 #### Start SQL
 
-Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting mit der Quelldatenbank.
+Wählen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting mit der Quelldatenbank.
 
 ![Liste der Hostings](images/web-hosting-selection.png){.thumbnail}
 
@@ -52,7 +52,7 @@ Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste Ihrer Start
 
 #### Web Cloud Databases
 
-Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Web Cloud Databases`{.action} und wählen Sie den Web Cloud Databases Server mit der Quelldatenbank aus.
+Wählen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Web Cloud Databases`{.action} und wählen Sie den Web Cloud Databases Server mit der Quelldatenbank aus.
 
 ![Liste der WCD-Server](images/wcdb-server-selection.png){.thumbnail}
 
@@ -74,11 +74,11 @@ Wenn Sie keine Zieldatenbank haben, klicken Sie auf den Link im Text, um eine ne
 
 ![WCD DB-Liste](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
-Sie haben die Wahl zwischen [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
+Sie haben die Wahl zwischen [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
 
 > [!primary]
 >
-> Ihre neu bestellte Datenbank wird nicht automatisch aktiviert. Loggen Sie sich zum Aktivieren der Datenbank in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+> Ihre neu bestellte Datenbank wird nicht automatisch aktiviert. Loggen Sie sich zum Aktivieren der Datenbank in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 > 
 > - Für eine Shared SQL Datenbank: Folgen Sie unserer Anleitung „[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)“.
 > - Für eine Datenbank auf einem Web Cloud Databases Server: Folgen Sie unserer Anleitung „[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)“.
@@ -156,8 +156,8 @@ Beim Kopieren des Datenbankinhalts können Probleme auftreten.
 Dies bedeutet, dass nur eine Datenbank aktiv ist. Zum Kopieren der Quelldatenbank ist auch eine aktive Zieldatenbank erforderlich. Sie haben mehrere Möglichkeiten:
 
 - Konfigurieren Sie eine neue Datenbank auf Ihrem Webhosting.
-- Konfigurieren Sie eine neue Datenbank auf Ihrem [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Server.
-- Bestellen Sie eine neue Datenbank innerhalb der Angebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
+- Konfigurieren Sie eine neue Datenbank auf Ihrem [Web Cloud Databases](/links/web/databases) Server.
+- Bestellen Sie eine neue Datenbank innerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
 
 #### Es wird bereits eine Aktion ausgeführt
 
@@ -167,8 +167,8 @@ Diese Meldung bedeutet, dass bereits ein Task für die Datenbank ausgeführt wir
 
 Ihre Zieldatenbank enthält nicht genügend Speicherplatz. Sie haben zwei Möglichkeiten:
 
-- Eine neue Datenbank des Typs [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) mit mehr Speicherplatz bestellen.
-- Wenn Sie bereits über einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Server verfügen, wechseln Sie zu einem Angebot mit mehr Speicherplatz.
+- Eine neue Datenbank des Typs [Start SQL](/links/web/hosting-options-startsql) mit mehr Speicherplatz bestellen.
+- Wenn Sie bereits über einen [Web Cloud Databases](/links/web/databases) Server verfügen, wechseln Sie zu einem Angebot mit mehr Speicherplatz.
 
 #### Quell- und Zieldatenbank sind nicht kompatibel
 
@@ -188,8 +188,8 @@ Dieser Fehler kann beispielsweise auftreten, wenn Sie MySQL für die Quelldatenb
 
 [Backup in eine Webhosting-Datenbank importieren](/pages/web_cloud/web_hosting/sql_importing_mysql_database)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

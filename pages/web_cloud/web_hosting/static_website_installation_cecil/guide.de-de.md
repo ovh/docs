@@ -19,12 +19,12 @@ Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren B
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
 - Sie sind mit der Befehlszeileneingabe vertraut.
 - Sie können Ihre Dateien per FTP mit einem Client wie [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) übertragen.
 - Sie haben Ihre DNS-Zone konfiguriert, um Ihren Domainnamen (oder eine Subdomain) auf Ihr Webhosting zu verweisen. Dies ist besonders relevant, wenn Sie auf Ihrem Hosting mehrere Websites als [Multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) hosten möchten.
@@ -32,7 +32,7 @@ Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren B
 
 ## In der praktischen Anwendung
 
-Mit [Webhostings](https://www.ovhcloud.com/de/web-hosting/) können Sie Domainnamen oder Subdomains für mehrere Websites deklarieren. Sie benötigen einen Domainnamen oder eine Subdomain, um Ihre mit **Cecil** erstellte Seite zu veröffentlichen.
+Mit [Webhostings](/links/web/hosting) können Sie Domainnamen oder Subdomains für mehrere Websites deklarieren. Sie benötigen einen Domainnamen oder eine Subdomain, um Ihre mit **Cecil** erstellte Seite zu veröffentlichen.
 
 Um Ihnen dabei zu helfen, einen Domainnamen oder eine Subdomain zu deklarieren, verwenden Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
@@ -157,7 +157,7 @@ Sie können sie auf dem Server öffnen, indem Sie die URL Ihrer Seite gefolgt vo
 
 #### Auf dem Server arbeiten
 
-Markdown-Dateien können direkt auf dem Webhosting-Server bearbeitet werden. Mit dem SSH-Zugang der [Performance Hostings](https://www.ovhcloud.com/de/web-hosting/performance-offer/) können Sie [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} oder [vim](https://www.vim.org/){.external} verwenden.
+Markdown-Dateien können direkt auf dem Webhosting-Server bearbeitet werden. Mit dem SSH-Zugang der [Performance Hostings](/links/web/hosting-performance-offer) können Sie [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} oder [vim](https://www.vim.org/){.external} verwenden.
 
 Die Screenshots dieses Tutorials wurden unter **GNU nano** erstellt.
 
@@ -226,6 +226,6 @@ Die Verwendung einer Template Engine, die in der Web-Entwickler-Community weit v
 
 [Verwendung von FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

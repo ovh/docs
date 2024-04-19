@@ -16,15 +16,15 @@ Il **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 permette di sviluppare 
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database.
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting) che includa almeno un database.
+- Disporre di un [dominio](/links/web/domains).
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 
 ### Prepara l'installazione
 
-Per installare il CMS **Typo3** sul tuo [hosting Web](https://www.ovhcloud.com/it/web-hosting/), è necessario effettuare alcuni preparativi.
+Per installare il CMS **Typo3** sul tuo [hosting Web](/links/web/hosting), è necessario effettuare alcuni preparativi.
 
 Segui **gli step** descritti nel nostro tutorial sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) prima di proseguire con lo step successivo.
 
@@ -102,6 +102,6 @@ Il CMS Typo3 è stato installato manualmente sull’hosting Web OVHcloud. Dopo a
 
 [Creare un database sul proprio hosting Web](/pages/web_cloud/web_hosting/sql_create_database)
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
  
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

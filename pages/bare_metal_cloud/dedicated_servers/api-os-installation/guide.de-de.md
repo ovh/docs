@@ -1,7 +1,7 @@
 ---
 title: OVHcloud API and OS Installation (EN)
 excerpt: Use OVHcloud API to install or re-install an OS on your dedicated server
-updated: 2024-03-04
+updated: 2024-04-04
 ---
 
 ## Objective
@@ -59,7 +59,7 @@ You can find interesting information such as the following:
 |usage,category,family|Usage, category, and OS family|
 |project/os|Information about OS governance, version, release notes and project URL|
 |project/usage|Same as project/os, but at the software layer if applicable|
-|license/os|Information about OS license : licensing contract URL and licensing type|
+|license/os|Information about OS license: licensing contract URL and licensing type|
 |license/usage|Same as license/os, but at the software layer if applicable|
 |filesystems|Compatible file systems types|
 |hardRaidConfiguration,softRaidOnlyMirroring,lvmReady|Compatibility with hardware raids, software raids and LVM²|
@@ -81,6 +81,28 @@ You can find interesting information such as the following:
 ### OS Questions <a name="os-inputs"></a>
 
 Some OSs can have a list of specific questions. If that is the case, the `inputs` key contains a list of questions.
+
+> [!api]
+>
+> @api {v1} /dedicated/installationTemplate GET  /dedicated/installationTemplate/{templateName}
+>
+
+Example of specific questions for Debian 12 (Bookworm):
+
+```json
+{
+    "inputs": [
+        {
+            "default": "",
+            "name": "sshKey",
+            "mandatory": false,
+            "enum": [],
+            "description": "SSH Public Key",
+            "type": "sshPubKey"
+        }
+    ]
+}
+```
 
 Example of specific questions for Windows Server 2022 Standard (Core):
 
@@ -211,6 +233,23 @@ With the following parameters:
 
 - Key must be the `name` of the question.
 - Value must be the answer to the question, in the requested `type`.
+
+Payload example to install Debian 12 (Bookworm) with SSH key based authentication:
+
+```json
+{
+  "details": {
+    "customHostname": "mon-tux"
+  },
+  "templateName": "debian12_64",
+  "userMetadata": [
+    {
+      "key": "sshKey",
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+    }
+  ]
+}
+```
 
 Payload example to install Windows Server 2022 Standard (Core) in French:
 

@@ -1,7 +1,7 @@
 ---
 title: Replacing an SSH key pair
 excerpt: Find out how restore server access by replacing an SSH key pair with a new one in case your private key is lost
-updated: 2024-02-19
+updated: 2024-04-04
 ---
 
 ## Objective
@@ -25,25 +25,13 @@ However, you can still connect to your server via the OVHcloud rescue mode, whic
 
 ## Instructions
 
-### Step 1: Disable the current SSH key
-
-In order to access your server in rescue mode, the currently active SSH key has to be disabled first.
-
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and navigate to the `SSH keys`{.action} section. Use our [SSH key guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey) if necessary.
-
-Since the public key stored in the Control Panel is useless without the corresponding private key, you can simply remove it. Click on the button `...`{.action} in the row of the key and select `Delete key`{.action}.
-
-![Delete key](images/replace-lost-key-01.png){.thumbnail}
-
-In the popup window, click on `Confirm`{.action}.
-
-### Step 2: Create a new key pair
+### Step 1: Create a new key pair
 
 Create a new SSH key pair on your device, as described in the first part of the [SSH key guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-<a name="step3"></a>
+<a name="step2"></a>
 
-### Step 3: Access your server in rescue mode and replace the key
+### Step 2: Access your server in rescue mode and replace the key
 
 Follow the steps in the rescue mode guide to connect to your server and mount your partitions:
 
@@ -81,7 +69,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 For security reasons, delete the obsolete "old" key string from the file. Save your changes and exit the editor.
 
-Switch the boot mode back to "normal" and restart the server in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Refer to the [rescue mode guide](#step3) if necessary.
+Switch the boot mode back to "normal" and restart the server in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Refer to the [rescue mode guide](#step2) if necessary.
 
 You have now access to the server with your new SSH key pair.
 

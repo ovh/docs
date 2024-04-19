@@ -10,15 +10,15 @@ updated: 2024-02-26
 
 ## Ziel
 
-Mit Ihrem OVHcloud Webhosting verfügen Sie über ein [SSL-Zertifikat](https://www.ovhcloud.com/de/web-hosting/options/ssl/). Mit diesem können Sie eine oder mehrere Ihrer Websites über eine gesicherte Verbindung mittels *HTTPS* erreichbar machen. Bevor Ihre Websites diese sichere Verbindung verwenden können, sind einige Schritte erforderlich.
+Mit Ihrem OVHcloud Webhosting verfügen Sie über ein [SSL-Zertifikat](/links/web/hosting-options-ssl). Mit diesem können Sie eine oder mehrere Ihrer Websites über eine gesicherte Verbindung mittels *HTTPS* erreichbar machen. Bevor Ihre Websites diese sichere Verbindung verwenden können, sind einige Schritte erforderlich.
 
 **Diese Anleitung erklärt, wie Sie Ihre Website nach der Aktivierung eines SSL-Zertifikats auf HTTPS umstellen.**
 
 ## Voraussetzungen
 
-- Auf Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} ist ein [SSL-Zertifikat](https://www.ovhcloud.com/de/web-hosting/options/ssl){.external} installiert.
+- Auf Ihrem [OVHcloud Webhosting](/links/web/hosting){.external} ist ein [SSL-Zertifikat](https://www.ovhcloud.com/de/web-hosting/options/ssl){.external} installiert.
 - Sie verfügen über mindestens eine Website, die auf Ihrem OVHcloud Webhosting installiert und verfügbar ist.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), Bereich `Web Cloud`{.action}.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), Bereich `Web Cloud`{.action}.
 
 ## In der praktischen Anwendung
 
@@ -40,7 +40,7 @@ Es wird dadurch leicht überprüfbar, ob Ihre Website über eine sichere Verbind
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 Im Folgenden finden Sie die wichtigsten Schritte, um Ihre Website auf *HTTPS* umzustellen:
@@ -58,7 +58,7 @@ Um ein SSL-Zertifikat für Ihr Webhosting zu aktivieren oder zu überprüfen, ob
 
 Bevor Sie Änderungen an der Konfiguration Ihrer Website vornehmen, ist es wichtig sicherzustellen, dass Sie das *HTTPS* Protokoll korrekt verwenden können. Es gibt kein universelles Vorgehen, da es von der Website abhängt, die Sie verwenden.
 
-Die folgenden Informationen sind daher generisch. Wir empfehlen Ihnen im Zweifel einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren.
+Die folgenden Informationen sind daher generisch. Wir empfehlen Ihnen im Zweifel einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren.
 
 #### 2.1 - Vermeiden Sie das Mischen von HTTP- und HTTPS-Inhalten
 
@@ -103,7 +103,7 @@ Sobald Ihr Webhosting über ein aktives SSL-Zertifikat verfügt, die betreffende
 >
 > Bevor Sie mit der Durchführung von Maßnahmen beginnen, empfehlen wir Ihnen, ein vollständiges Backup Ihrer Website zu erstellen. Dieses Backup muss nicht nur die Dateien auf dem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_save_and_backup), sondern auch die Dateien der [Datenbank](/pages/web_cloud/web_hosting/sql_database_export) enthalten, wenn die Website eine solche verwendet.
 >
-> In diesem Schritt müssen die Aktionen direkt in den Dateien ausgeführt werden, aus denen Ihre Website besteht. Wenden Sie sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+> In diesem Schritt müssen die Aktionen direkt in den Dateien ausgeführt werden, aus denen Ihre Website besteht. Wenden Sie sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner).
 >
 
 Es gibt verschiedene Möglichkeiten, *HTTPS* für Ihre Website zu aktivieren. Für diesen Vorgang sind in der Konfiguration der Website, die Sie verwenden, einige Änderungen erforderlich. Die folgenden Informationen können Ihnen bei der Aktivierung helfen, können aber je nach Anwendungsfall unvollständig oder irrelevant sein.
@@ -140,7 +140,7 @@ In diesem zweiten Beispielskript werden alle URLs, die über das *HTTP*-Protokol
 
 Überprüfen Sie in diesem zweiten Beispiel, ob alle Ihre Ziel-Domains oder Subdomains über ein aktives SSL-Zertifikat verfügen.
 
-**Achtung**, für die Hosting-Angebote [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) ist folgendes Skript zu verwenden:
+**Achtung**, für die Hosting-Angebote [Cloud Web](/links/web/hosting-cloud-web-offer) ist folgendes Skript zu verwenden:
 
 ```bash
 RewriteEngine On
@@ -160,8 +160,8 @@ Wenn Ihre Website korrekt angezeigt wird und nach der Umstellung auf *HTTPS* kei
 
 [SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

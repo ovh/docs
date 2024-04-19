@@ -27,8 +27,8 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 
 ## Prerequisiti
 
-- Disporre di un'[offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di un'[offerta di hosting condiviso](/links/web/hosting)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
@@ -59,7 +59,7 @@ Per verificarlo, [connettiti in FTP](/pages/web_cloud/web_hosting/ftp_connection
 
 Rinomina questo file in.`htaccess.old` e prova il tuo sito.
 
-Se il dominio è di nuovo accessibile, è in causa il `.htaccess`. Il progetto dovrà pertanto essere modificato. Per farlo, contatta uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/).
+Se il dominio è di nuovo accessibile, è in causa il `.htaccess`. Il progetto dovrà pertanto essere modificato. Per farlo, contatta uno dei nostri [partner](/links/partner).
 
 ### Verifica i permessi su cartelle e file
 
@@ -79,7 +79,7 @@ In seguito, nella guida "[Utilizzare FileZilla con il tuo hosting](/pages/web_cl
 
 Per ragioni di sicurezza, il tuo sito nasconde gli eventuali dettagli sull'origine dell'errore 500 a chiunque vi si connetta tramite un browser web.
 
-Se vuoi avere accesso a questi dettagli, dal piano di hosting [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o superiore puoi connetterti al tuo sito tramite una [connessione ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
+Se vuoi avere accesso a questi dettagli, dal piano di hosting [Pro](/links/web/hosting-professional-offer) o superiore puoi connetterti al tuo sito tramite una [connessione ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 ### Verifica lo stato del database
 
@@ -116,6 +116,6 @@ Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del 
 
 [Risolvere l’errore «Sito non installato»](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

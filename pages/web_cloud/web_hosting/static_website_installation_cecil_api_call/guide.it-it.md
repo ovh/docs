@@ -18,12 +18,12 @@ Questa guida ti mostra come utilizzare il generatore del sito [Cecil](https://ce
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Se hai difficoltà a seguire gli step di questo tutorial, ti consigliamo di rivolgerti a un [professionista specializzato](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Se hai difficoltà a seguire gli step di questo tutorial, ti consigliamo di rivolgerti a un [professionista specializzato](/links/partner). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che include un accesso SSH Questo accesso permette di installare, da riga di comando, una o più soluzioni alternative a quelle proposte di default nelle nostre offerte di hosting Web.
+- Disporre di una [soluzione di hosting Web OVHcloud](/links/web/hosting) che include un accesso SSH Questo accesso permette di installare, da riga di comando, una o più soluzioni alternative a quelle proposte di default nelle nostre offerte di hosting Web.
 - Aver familiarità con l'inserimento da riga di comando
 - Aver installato e configurato l'applicazione **Cecil** sul tuo hosting (consulta [la nostra guida sull'installazione e la configurazione di Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil))
 
@@ -252,8 +252,8 @@ Questa guida ti mostra un esempio di integrazione di dati dinamici recuperati da
     - una lista di [API pubbliche](https://github.com/public-api-lists/public-api-lists){.external}
 - I [comandi Cecil](https://cecil.app/documentation/commands/){.external}.
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](/links/support).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

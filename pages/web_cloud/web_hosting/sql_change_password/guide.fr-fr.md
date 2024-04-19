@@ -14,11 +14,11 @@ Le changement de mot de passe d'une base de données doit donc toujours être ef
 
 - Dans le [fichier de configuration](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etape-1-identifier-la-base-de-donnees-lie-a-votre-module) de votre site via [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection);
 
-- **Et** dans le serveur contenant sa base de données via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- **Et** dans le serveur contenant sa base de données via votre [espace client OVHcloud](/links/manager).
 
 Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, votre site affichera une « [erreur de connexion à la base de données](/pages/web_cloud/web_hosting/diagnosis_database_errors#erreur-lors-de-la-connexion-a-la-base-de-donnees) ».
 
-Il est donc impératif, si vous souhaitez changer le mot de passe de votre base de données, que vous réalisiez **l'ensemble des opérations** indiquées dans ce guide. En cas de doutes sur les manipulations à réaliser, contactez votre webmaster ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
+Il est donc impératif, si vous souhaitez changer le mot de passe de votre base de données, que vous réalisiez **l'ensemble des opérations** indiquées dans ce guide. En cas de doutes sur les manipulations à réaliser, contactez votre webmaster ou faites appel à un [prestataire spécialisé](/links/partner).
 
 La modification du mot de passe de la base de données de votre site se fait en quatre étapes :
 
@@ -33,21 +33,21 @@ La modification du mot de passe de la base de données de votre site se fait en 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Utiliser une [base de données associée à votre offre d'hébergement mutualisé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou à un [serveur Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
+- Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Utiliser une [base de données associée à votre offre d'hébergement mutualisé](/links/web/hosting-options-startsql) ou à un [serveur Web Cloud Databases](/links/web/databases).
 - Être en possession des identifiants FTP permettant de se connecter à l'[espace de stockage](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement.
 
 ## En pratique
 
 ### Étape 1 : identifier le fichier de configuration de votre site <a name="step1"></a>
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action} puis, sur `Hébergements`{.action} et enfin sur l'hébergement concerné. Rendez-vous ensuite dans l'onglet `Multisite`{.action}. Identifiez le nom du `Dossier racine` de votre site (le répertoire dans lequel se trouvent ses fichiers et dossiers).
+Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.action} puis, sur `Hébergements`{.action} et enfin sur l'hébergement concerné. Rendez-vous ensuite dans l'onglet `Multisite`{.action}. Identifiez le nom du `Dossier racine` de votre site (le répertoire dans lequel se trouvent ses fichiers et dossiers).
 
 ![root-folders](images/root-folders.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Afin de déterminer quel cas s'applique à votre site, dans le fichier de config
 - Pour DRUPAL : le nom apparaît sous **« database »**;
 - Pour PRESTASHOP : le nom apparaît sous **« database_name »**.
 
-Retournez ensuite dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) toujours dans la partie `Web Cloud`{.action} :
+Retournez ensuite dans votre [espace client OVHcloud](/links/manager) toujours dans la partie `Web Cloud`{.action} :
 
 - Rendez-vous dans la partie `Hébergements`{.action} puis dans l'hébergement concerné;
 - Cliquez sur l'onglet `Bases de données`{.action} **à droite** de votre écran;
@@ -91,7 +91,7 @@ Retournez ensuite dans votre [espace client OVHcloud](https://www.ovh.com/auth/?
 
 Si vous avez retrouvé dans cette partie de votre espace client le nom de la base indiqué dans le fichier de configuration, passez à [l'étape 3](#step3).
 
-Dans le cas contraire, la base de données de votre site est liée à une offre [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
+Dans le cas contraire, la base de données de votre site est liée à une offre [Web Cloud Databases](/links/web/databases).
 
 Vous devez donc retourner dans le fichier de configuration de votre site, afin de noter le *nom du serveur* ainsi que le *nom d'utilisateur* de votre base de données :
 
@@ -102,7 +102,7 @@ Vous devez donc retourner dans le fichier de configuration de votre site, afin d
 
 Cliquez ensuite, dans la partie `Bases de données`{.action} dans la section `Web Cloud`{.action}.
 
-Dans l'onglet `Informations générales`{.action}, identifiez, dans votre offre [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/), celle qui contient, sous la mention `Nom d'hôte`{.action}, le nom du serveur de votre base de données trouvé précédemment.
+Dans l'onglet `Informations générales`{.action}, identifiez, dans votre offre [Web Cloud Databases](/links/web/databases), celle qui contient, sous la mention `Nom d'hôte`{.action}, le nom du serveur de votre base de données trouvé précédemment.
 
 Toujours dans cette partie de votre espace client, rendez-vous dans l'onglet `Utilisateur et droits`{.action}, afin de repérer également le `Nom d'utilisateur`{.action} de votre base de données.
 
@@ -187,8 +187,8 @@ Sauvegardez cette modification.
 
 A nouveau, deux cas sont possibles : 
 
-- Si votre base de données se trouve dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédiée à votre [hébergement web](https://www.ovhcloud.com/fr/web-hosting/), suivez ces [instructions](#case1).
-- Si votre base de données se trouve dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédiée à votre offre [Web Cloud Databases](/products/web-cloud-clouddb), suivez ces [instructions](#case2).
+- Si votre base de données se trouve dans la partie de votre [espace client OVHcloud](/links/manager) dédiée à votre [hébergement web](/links/web/hosting), suivez ces [instructions](#case1).
+- Si votre base de données se trouve dans la partie de votre [espace client OVHcloud](/links/manager) dédiée à votre offre [Web Cloud Databases](/products/web-cloud-clouddb), suivez ces [instructions](#case2).
 
 #### Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement <a name="case1"></a>
 
@@ -226,6 +226,6 @@ Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base
 
 [Résoudre les erreurs les plus fréquentes liées aux bases de données](/pages/web_cloud/web_hosting/diagnosis_database_errors)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

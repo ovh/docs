@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Tutorial - How to deploy a MongoDB database on OVHcloud using Terraform
 excerpt: Find out how to to set up an OVHcloud managed MongoDB service via Terraform within a vRack, as well as how to access it from other parts of your infrastructure.
-updated: 2024-01-31
+updated: 2024-04-17
 ---
 
 ## Objective
@@ -174,7 +174,6 @@ So, add the IP range `192.168.12.0/24`, which you picked and used when you decla
 This way, all Public Cloud instances hosted on it can directly access the MongoDB service.
 
 ```bash
-resource "ovh_cloud_project_database_mongodb_user" "userjd" {
 resource "ovh_cloud_project_database_ip_restriction" "iprestriction" {
   service_name = ovh_cloud_project_database.service.service_name
   engine       = ovh_cloud_project_database.service.engine
@@ -216,11 +215,11 @@ output "cluster_uri" {
 }
 
 output "user_name" {
-  value = ovh_cloud_project_database_mongodb_user.userjd.name
+  value = ovh_cloud_project_database_mongodb_user.tf_user.name
 }
 
 output "user_password" {
-  value     = ovh_cloud_project_database_mongodb_user.userjd.password
+  value     = ovh_cloud_project_database_mongodb_user.tf_user.password
   sensitive = true
 }
 ```

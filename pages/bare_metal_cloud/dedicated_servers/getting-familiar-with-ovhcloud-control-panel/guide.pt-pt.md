@@ -1,7 +1,7 @@
 ---
 title: "Clientes Kimsufi e So you Start - Familiarizar-se com a Área de Cliente OVHcloud"
 excerpt: "Saiba como navegar na Área de Cliente OVHcloud"
-updated: 2023-01-05
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -97,7 +97,7 @@ Na Área de Cliente OVHcloud, estas opções estão agrupadas num espaço comum.
 - **O meu nível de suporte** (apenas disponível para os serviços OVHcloud): nesta secção, encontrará mais informações sobre o nível de suporte proposto pela OVHcloud.
 - **Gestão dos utilizadores**: esta rubrica permite-lhe gerir os seus utilizadores. Para mais informações consulte [este guia](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 - **Mis faturas**: a partir desta rubrica, pode consultar as suas faturas, seguir os pagamentos efetuados com o seu método de pagamento predefinido e consultar as suas disponibilidades. Para mais informações, consulte [este guia](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management).
-- **Mis serviços**: esta rubrica permite-lhe visualizar o conjunto dos seus serviços, os seus contratos e as suas chaves SSH.
+- **Mis serviços**: esta secção permite-lhe visualizar o conjunto dos seus serviços e os seus contratos.
 - **Formas de pago**: nesta rubrica, terá acesso ao seu método de pagamento atual, à sua conta pré-paga bem como aos seus vouchers OVHcloud. Também poderá adicionar/eliminar um método de pagamento. Para obter mais informações sobre a gestão dos seus métodos de pagamento, consulte [este guia](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 - **Mis pedidos**: consulte as suas encomendas a partir desta página. Para mais informações, consulte [este guia](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders).
 - **Mis contactos** : nesta secção, pode visualizar e gerir os contactos associados aos seus serviços. No separador **Os meus pedidos**, encontrará os pedidos de modificação de dados enviados a partir da sua conta de cliente, bem como os pedidos de gestão de serviços recebidos. Para mais informações sobre a gestão dos seus contactos de serviços, consulte [este guia](/pages/account_and_service_management/account_information/managing_contacts).

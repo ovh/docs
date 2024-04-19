@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2024-04-02
+updated: 2024-04-15
 ---
 
 > [!warning]
@@ -84,13 +84,13 @@ Le tableau suivant présente le comportement par défaut de la fonctionnalité d
 
 | Ce qui est répliqué                                       | Ce qui n'est pas répliqué                                    |
 |-----------------------------------------------------------|--------------------------------------------------------------|
-| Objets créés *après* l de la configuration de réplication | Supprimer le marqueur, c'est-à-dire que les objets supprimés dans le bucket source ne sont pas automatiquement supprimés dans le bucket destinataire |
+| Objets créés *après* l'application de la configuration de réplication | Les marqueurs de suppression, c'est-à-dire que les objets supprimés dans le bucket source ne sont pas automatiquement supprimés dans le bucket destinataire |
 | Objets non chiffrés | Les réplicas d’objets, c’est-à-dire les objets résultant d’une opération de réplication précédente |
-| Objets chiffrés avec des clés fournies par le client (SSE-C) | Objets déjà répliqués vers une destination précédente |
+|  | Objets déjà répliqués vers une destination précédente |
 | Métadonnées d'objet des objets sources vers les réplicas | Objets stockés dans le stockage temporaire Cold Archive |
 | Les objets du bucket source dont le propriétaire dispose des autorisations nécessaires pour lire et accéder aux ACL | Configurations de buckets, c’est-à-dire configuration du cycle de vie, configuration CORS, ACL de buckets, etc. |
 | Mises à jour de la liste de contrôle d'accès des objets | Actions résultant des actions de configuration du cycle de vie |
-| Tags d'objets | Objets créés *avant* le téléchargement de la configuration de réplication |
+| Tags d'objets | Objets créés *avant* l'upload de la configuration de réplication |
 | Configuration de la rétention des verrous d'objet S3 | Réplication vers un bucket dans un autre projet Public Cloud, c'est-à-dire que les buckets source et de destination doivent se trouver dans le même projet |
 
 ### Configuration de la réplication
@@ -103,7 +103,6 @@ Une configuration de réplication est définie via un ensemble de règles dans u
 - Une **priorité de règle** pour déterminer l'ordre d'exécution lorsque plusieurs règles existent.
 - Un **bucket de destination** où seront stockés les objets répliqués.
 - Les **objets à répliquer** : par défaut, tous les objets sont éligibles à la réplication. Toutefois, vous pouvez spécifier un sous-ensemble d'objets en les filtrant avec un préfixe et/ou des tags.
-- Une **classe de stockage cible facultative** : par défaut, les copies d'objets héritent de la même classe de stockage que les objets source. Si nécessaire, vous pouvez spécifier une classe de stockage différente pour les copies.
 
 ### Structure des règles de réplication
 
@@ -147,7 +146,6 @@ La structure de base d'une règle de réplication dans le fichier JSON de config
 | Attribut | Description | Requis |
 |-----|----|----|
 | Tag | Filtrer les objets par clé et/ou valeur de tag. | Non |
-| StorageClass | Classe de stockage cible : « STANDARD » pour S3 Standard et « HIGH_PERF » pour S3 High Performance. | Non |
 | Status | Indique si votre règle de réplication est *Activée* ou *Désactivée*. | Oui |
 | Role | Rôle IAM OVHcloud nécessaire pour permettre à l'Object Storage OVHcloud d'accéder aux données du bucket source et d'écrire des données dans les buckets de destination. Actuellement, OVHcloud a défini un rôle unique : `s3-replication`. | Oui |
 | Priority | S'il existe plusieurs règles avec le même bucket de destination, les objets seront répliqués en fonction de la règle ayant la priorité la plus élevée. Plus le nombre est élevé, plus la priorité est élevée. | Oui |
@@ -246,7 +244,7 @@ Réplication simple entre 2 buckets :
       "Status": "Enabled",
       "Priority": 1,
       "Filter": { },
-      "DeleteMarkerReplication": { "Status": "Disabled" }
+      "DeleteMarkerReplication": { "Status": "Disabled" },
       "Destination": {
         "Bucket": "arn:aws:s3:::destination-bucket"
       }
@@ -379,10 +377,12 @@ $ aws s3 mb s3://my-source-bucket
 aws --endpoint-url https://s3.sbg.io.cloud.ovh.net --profile default s3 mb s3://my-source-bucket
 ```
 
-#### Activer le versioning dans le bucket de destination
+#### Activer le versioning dans le bucket de destination et la source
 
 ```bash
 $ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
+$ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-source-bucket --versioning-configuration Status=Enabled
+
 ```
 
 #### Appliquer la configuration de réplication
@@ -390,7 +390,7 @@ $ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.
 À l'aide de la CLI AWS, la configuration de réplication est appliquée au bucket source.
 
 ```bash
-$ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration <conf.json>
+$ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration file://<<conf.json>
 ```
 
 **_Exemple:_** : Répliquer tous les objets avec le préfixe « docs » ayant un tag « importance » avec la valeur « high » vers `my-destination-bucket` et répliquer les marqueurs de suppression, c'est-à-dire que les objets marqués comme supprimés dans la source seront marqués comme supprimés dans la destination.

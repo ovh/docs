@@ -19,8 +19,8 @@ With an OVHcloud Web Hosting plan, you get a storage space to host your websites
 
 ## Requirements
 
-- A [Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/){.external} (please note that this does not work with [Cloud Web](https://www.ovhcloud.com/en-ca/web-hosting/cloud-web-offer/)).
-- Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, or have the FTP user password required to access your storage space. 
+- A [Web Hosting plan](/links/web/hosting){.external} (please note that this does not work with [Cloud Web](/links/web/hosting-cloud-web-offer)).
+- Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](/links/manager){.external}, or have the FTP user password required to access your storage space. 
 
 ## Instructions
 
@@ -50,7 +50,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 >
 > This is because our robots install the backup on your hosting before deleting the FTP content which will be replaced by the restoration.
 >
-> To check the quota used on your web hosting, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). Go to the `Web Cloud`{.action} section and click on `Hosting plans`{.action}. Then choose the name of the hosting concerned. 
+> To check the quota used on your web hosting, log in to your [OVHcloud Control Panel](/links/manager). Go to the `Web Cloud`{.action} section and click on `Hosting plans`{.action}. Then choose the name of the hosting concerned. 
 >
 > The quota used appears on the page that appears:
 >
@@ -80,11 +80,11 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 > In this case:
 >
 > - Our teams send an email to the hosting [administrator contact](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management).
-> - The “maintenance” status will appear in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
+> - The “maintenance” status will appear in your [OVHcloud Control Panel](/links/manager){.external}. In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
 > - The hosted site(s) will display a "403 Forbidden" page.
 >
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click `Hosting plans`{.action}, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager){.external}, click `Hosting plans`{.action}, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
 
 ![backupftp](images/restore-backup.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Once you are ready to start restoring the backup, click `Confirm`{.action}.
 
 > [!primary]
 >
-> Automatic restoration can take from a few minutes to a few hours. If it takes **more than 24 hours**, contact [OVHcloud support](https://www.ovhcloud.com/en-ca/support-levels/).
+> Automatic restoration can take from a few minutes to a few hours. If it takes **more than 24 hours**, contact [OVHcloud support](/links/support).
 >
 
 ### Restore a file using a software program or interface <a name="viainterface"></a>
@@ -128,7 +128,7 @@ First of all, decide which software or interface you would like to use in order 
 
 - **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
-- **Using the FTP Explorer interface.** To use this method, you will need to log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Once you have logged in, click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
+- **Using the FTP Explorer interface.** To use this method, you will need to log in to the [OVHcloud Control Panel](/links/manager){.external}. Once you have logged in, click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
 
 Once you are ready to start making changes, continue to the next step.
 
@@ -190,8 +190,8 @@ Once you have connected, you can now restore the files you want. To do this, exp
 
 [Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

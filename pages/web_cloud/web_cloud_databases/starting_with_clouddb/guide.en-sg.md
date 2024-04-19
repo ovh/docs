@@ -13,14 +13,14 @@ Your Web Cloud Databases solution is linked to the OVHcloud web hosting network 
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in [Performance web hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/)).
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in [Performance web hosting plans](/links/web/hosting)).
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Web Cloud Databases server activation included with your Web Hosting plan
 
-If your hosting plan includes the Web Cloud Databases option, go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. In the `Web Cloud`{.action} section, click `Hosting plans`{.action} in the left-hand column.
+If your hosting plan includes the Web Cloud Databases option, go to the [OVHcloud Control Panel](/links/manager){.external}. In the `Web Cloud`{.action} section, click `Hosting plans`{.action} in the left-hand column.
 
 In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **Web Cloud Databases**. Then click `Enable`{.action} to start the activation process.
 
@@ -30,7 +30,7 @@ To complete the activation, follow the instructions to determine the type and ve
 
 ### View general information about the instance
 
-In the services bar on the left-hand side of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, go to the `Web Cloud Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
+In the services bar on the left-hand side of the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
 
 > [!primary]
 >
@@ -197,8 +197,8 @@ To access the logs for your Web Cloud Databases solution, please refer to our gu
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -12,12 +12,12 @@ This tutorial will help you install Joomla! CMS (Content Management System) manu
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/) or the [Joomla! support](https://www.joomla.org/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [Joomla! support](https://www.joomla.org/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 > [!success]
 >
-> To install Joomla! **automatically** from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> To install Joomla! **automatically** from your [OVHcloud Control Panel](/links/manager), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > To manually **install another CMS** (WordPress, Drupal, PrestaShop), please refer to our documentation on [installing a CMS manually](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -26,15 +26,15 @@ This tutorial will help you install Joomla! CMS (Content Management System) manu
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) that contains at least one database
-- A [domain name](https://www.ovhcloud.com/asia/domains/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- An [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database
+- A [domain name](/links/web/domains)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Step 1: Prepare for the installation <a name="step1"></a>
 
-To install the **Joomla!** CMS on your [web hosting plan](https://www.ovhcloud.com/asia/web-hosting/), you will need to make some preparations.
+To install the **Joomla!** CMS on your [web hosting plan](/links/web/hosting), you will need to make some preparations.
 
 Follow **all steps** described in our tutorial on [installing a CMS manually](/pages/web_cloud/web_hosting/cms_manual_installation) before continuing with step 2 below.
 
@@ -95,7 +95,7 @@ Have your database login details ready (if necessary, see **Step 1.4** in the [m
 
 - *Either a password you created or a password provided by your host*: You defined it yourself when you created your database. You may have modified it in the meantime.
 
-- *Enter the database name*: This name was defined when the database was created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). It is identical to the database username if you are using a database included with your web hosting plan.
+- *Enter the database name*: This name was defined when the database was created in the [OVHcloud Control Panel](/links/manager). It is identical to the database username if you are using a database included with your web hosting plan.
 
 - *Enter a table prefix or use the randomly generated one*: If you are installing with a brand new database, enter your preferred prefix. If you are using a database that has already been used by another website, please refer to **Step 1.4** in the tutorial on [manually installing a CMS](/pages/web_cloud/web_hosting/cms_manual_installation) to avoid entering a table prefix that has already been used in your database.
 
@@ -132,8 +132,8 @@ The installation is complete, but you can add additional languages to your CMS i
 
 [Joomla! official website](https://joomla.org){.external}
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

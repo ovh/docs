@@ -1,7 +1,7 @@
 ---
 title: 'Erste Public Cloud Instanz erstellen und auf dieser einloggen'
 excerpt: 'So starten Sie nach der Erstellung eines Projekts mit der Verwendung Ihres Public Cloud Dienstes'
-updated: 2024-03-12
+updated: 2024-04-03
 ---
 
 ## Ziel
@@ -133,7 +133,7 @@ Der Schlüssel ist fertig erstellt, wenn die Fortschrittsanzeige voll ist.
 
 ![Schlüssel speichern](images/puttygen_03a.png){.thumbnail}
 
-Sie können den öffentlichen Schlüssel in diesem Fenster auswählen und kopieren, um diesen in Ihrem OVHcloud Kundencenter wie in [Schritt 2](./#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern) beschrieben zu speichern.
+Sie können den öffentlichen Schlüssel in diesem Fenster auswählen und kopieren (unter dem Zusatz "Public key for pasting into OpenSSH authorized_keys file"), um diesen in Ihrem OVHcloud Kundencenter wie in [Schritt 2](./#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern) beschrieben zu speichern.
 
 Speichern Sie beide Schlüssel in Dateien und verwenden Sie die Option zur Eingabe einer Passphrase. Da für den Zugriff auf Ihre Public Cloud Instanz über Ihr Arbeitsgerät nur der zugehörige private Schlüssel erforderlich ist, sollten an dieser Stelle angemessene Sicherheitsvorkehrungen getroffen werden. Die Passphrase muss eingegeben werden, wenn eine Verbindung mit der Instanz hergestellt wird.
 
@@ -143,7 +143,7 @@ Unabhängig von der zur Erstellung der SSH-Schlüssel verwendeten Methode verfü
 
 > [!primary]
 >
-Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern folgen Sie der Anleitung “[Zusätzliche SSH-Schlüssel konfigurieren](/pages/public_cloud/compute/configuring_additional_ssh_keys)”.
+> Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern folgen Sie der Anleitung “[Zusätzliche SSH-Schlüssel konfigurieren](/pages/public_cloud/compute/configuring_additional_ssh_keys)”.
 >
 
 Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter “Project Management” auf `SSH-Schlüssel`{.action}.
@@ -190,9 +190,9 @@ Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. 
 
 > [!primary]
 >
-Die Gesamtressourcen Ihres Public Cloud Projekts sind anfangs aus Sicherheitsgründen eingeschränkt. Sie können Quotas überprüfen und eine Erhöhung über Ihr OVHcloud Kundencenter anfordern, indem Sie in der linken Menüleiste unter “Project Management” auf `Quota and Regions`{.action} klicken.
+> Die Gesamtressourcen Ihres Public Cloud Projekts sind anfangs aus Sicherheitsgründen eingeschränkt. Sie können Quotas überprüfen und eine Erhöhung über Ihr OVHcloud Kundencenter anfordern, indem Sie in der linken Menüleiste unter “Project Management” auf `Quota and Regions`{.action} klicken.
 >
-Bitte beachten Sie, dass Sie Ihre Instanz im Nachhinein upgraden, jedoch nicht auf ein kleineres Modell wechseln können, sofern Sie nicht in Schritt 4 der Erstellung die “Flex”-Option ausgewählt haben. Mehr Informationen hierzu finden Sie weiter unten in dieser Anleitung.
+> Bitte beachten Sie, dass Sie Ihre Instanz im Nachhinein upgraden, jedoch nicht auf ein kleineres Modell wechseln können, sofern Sie nicht in Schritt 4 der Erstellung die “Flex”-Option ausgewählt haben. Mehr Informationen hierzu finden Sie weiter unten in dieser Anleitung.
 >
 
 Wählen Sie im nächsten Schritt ein Rechenzentrum für Ihre Public Cloud Instanz aus.
@@ -230,7 +230,7 @@ Der Öffentliche Modus ist das klassische Netzwerkmodell und erlaubt es Ihren In
 
 Der Private Modus bietet Ihnen die Möglichkeit, Ihre Instanzen ausschließlich einem privaten Netzwerk zuzuweisen. Die Instanzen dieses Modus können dem öffentlichen Netzwerk nur mit einem Gateway oder Loadbalancer mit Floating IPs ausgesetzt werden. Weitere Informationen finden Sie in unserer Dokumentation zu den [Netzwerklösungen für die OVHcloud Public Cloud](/products/public-cloud-network).
 
-Wählen Sie nach der Wahl Ihr privates Netzwerk aus, an das Ihre Instanz angehängt werden soll, oder klicken Sie auf `Ein neues privates Netzwerk erstellen`{.action}, um ein neues zu erstellen.
+Wählen Sie nach der Wahl Ihr privates Netzwerk aus, an das Ihre Instanz angehängt werden soll, oder klicken Sie auf `Ein neues privates Netzwerk erstellen`{.action}, um ein neues zu erstellen. Wenn Sie diese Option auswählen, werden Sie auf die Seite zum Erstellen des privaten Netzwerks weitergeleitet. Danach müssen Sie die Bestellung Ihrer Instanz erneut durchführen. Es ist daher am besten, ein privates Netzwerk zu erstellen, bevor Sie Ihre Instanz erstellen.
 
 Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf `Weiter`{.action}, um zum letzten Schritt überzugehen und eine Abrechnungsmethode auszuwählen.
 

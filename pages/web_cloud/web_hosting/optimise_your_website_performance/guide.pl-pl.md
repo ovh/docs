@@ -17,10 +17,10 @@ Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetow
 
 ## Wymagania początkowe
 
-- [plan hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
+- [plan hostingu WWW OVHcloud](/links/web/hosting){.external}
 - e-mail potwierdzający skonfigurowanie planu hostingu WWW
-- [nazwa domeny](https://www.ovhcloud.com/pl/domains/){.external} umożliwiająca dostęp do witryny internetowej
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- [nazwa domeny](/links/web/domains){.external} umożliwiająca dostęp do witryny internetowej
+- dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce
 
@@ -50,9 +50,9 @@ Odpowiedzi na te pytania pomogą skoncentrować się na konkretnych kwestiach i 
 
 Do korzystania z systemów zarządzania treścią (CMS), takich jak WordPress, PrestaShop, Joomla! czy Drupal, jest potrzebnych wiele bibliotek, aby jedna strona internetowa mogła obsłużyć wiele elementów.
 Przeglądarki internetowe muszą załadować i odczytać te wszystkie elementy.
-Na [stronie produktu](https://www.ovhcloud.com/pl/web-hosting/){.external} przestawiamy oferty hostingu WWW zalecane do wskazanych powyżej systemów CMS.
+Na [stronie produktu](/links/web/hosting){.external} przestawiamy oferty hostingu WWW zalecane do wskazanych powyżej systemów CMS.
 
-Więcej informacji na temat wyboru właściwego planu znajdziesz na [tej stronie](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/){.external}.
+Więcej informacji na temat wyboru właściwego planu znajdziesz na [tej stronie](/links/web/hosting-best-web){.external}.
 
 ### Krok 2: sprawdzenie wersji PHP
 
@@ -94,7 +94,7 @@ Więcej informacji na ten temat zawiera poniższy krok 5.
 
 Aby znaleźć źródło opóźnień, przejrzyj wykresy wykorzystania zasobów hostingu (więcej informacji poniżej). Następnie sprawdź w logach wpisy z okresów, w których wystąpiło szczytowe wykorzystanie.
 
-Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHcloud](/links/manager){.external}.
 
 Dostęp do statystyk i logów:
 
@@ -156,7 +156,7 @@ Poznaj [nasze rozwiązanie CDN](https://www.ovh.pl/cdn/){.external}.
 
 _Ten krok jest opcjonalny, jeśli nie korzystasz z systemu CMS._
 
-Aby mieć pewność, że korzystasz z oferty hostingu dopasowanej do potrzeb Twojego systemu CMS, zapoznaj się z porównaniem usług na [stronie produktu](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+Aby mieć pewność, że korzystasz z oferty hostingu dopasowanej do potrzeb Twojego systemu CMS, zapoznaj się z porównaniem usług na [stronie produktu](/links/web/hosting){.external}.
 
 - **Korzystanie z wtyczki pamięci podręcznej:** Korzystanie z systemów zarządzania treścią (CMS) wiąże się z odwołaniami do wielu bibliotek, aby na jednej stronie internetowej mogło działać mnóstwo elementów. W celu optymalizacji systemu CMS zaleca się korzystanie z wtyczek pamięci podręcznej. Dzięki temu treść witryny internetowej nie musi być ponownie generowana przy każdym ładowaniu strony. Zalecamy wyszukanie wskazówek dotyczących wtyczek pamięci podręcznej w witrynach społeczności używanego systemu CMS (PrestaShop, WordPress, Joomla!). Pozwoli to uniknąć ponownego generowania całej treści witryny przy każdym załadowaniu strony internetowej.
 
@@ -168,7 +168,7 @@ _Ten krok jest opcjonalny, jeśli nie korzystasz z bazy danych._
 Dostęp do bazy danych umożliwia narzędzie PHPMyAdmin. Instrukcja korzystania z narzędzia PHPMyAdmin wykracza poza zakres tego przewodnika, więc to zagadnienie nie zostanie rozwinięte.
 Szczegółowe informacje można znaleźć w wielu przewodnikach zewnętrznych.
 
-**Dostęp do bazy danych za pośrednictwem narzędzia phpMyAdmin:** Aby uzyskać dostęp do bazy danych za pomocą narzędzia phpMyAdmin, skorzystaj z[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}:
+**Dostęp do bazy danych za pośrednictwem narzędzia phpMyAdmin:** Aby uzyskać dostęp do bazy danych za pomocą narzędzia phpMyAdmin, skorzystaj z[Panelu klienta OVHcloud](/links/manager){.external}:
 
 - Kliknij domenę w sekcji `Hosting`{.action}.
 - Przejdź do karty `Baza danych`{.action}.
@@ -238,8 +238,8 @@ Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, al
 
 [Pierwsze kroki z usługą Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

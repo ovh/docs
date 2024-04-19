@@ -12,14 +12,14 @@ Access to your website’s logs and statistics is included in your web hosting p
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 To access the different statistical data and logs on your web hosting plan, perform the following actions:
 
-1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Hosting plans`{.action} dropdown menu.
 4. Select the web hosting plan concerned.
@@ -58,7 +58,7 @@ The `Period selection` field in the top right-hand corner allows you to select a
 >
 > We will not be able to assist you in interpreting your web hosting plan’s logs, as this is strictly a web development issue not related to web hosting plans.
 >
-> Do not hesitate to contact a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) if you experience any difficulties.
+> Do not hesitate to contact a [specialist provider](/links/partner) if you experience any difficulties.
 >
 
 You can view your website’s raw logs with a delay of around 5 minutes.
@@ -107,7 +107,7 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 
 You can also access the statistics/logs link directly from your Control Panel:
 
-1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Hosting plans`{.action} dropdown menu.
 4. Select the web hosting plan concerned.
@@ -126,8 +126,8 @@ On the new page that pops up, retrieve the URL located in the address bar of you
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

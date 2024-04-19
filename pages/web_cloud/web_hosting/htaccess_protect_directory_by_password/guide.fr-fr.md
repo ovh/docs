@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Protéger un répertoire ou l'interface d'administration de votre site web par des fichiers « .htaccess » et « .htpasswd »"
 excerpt: "Decouvrez comment protéger un répertoire ou l'accès à l'administration de votre site web via une authentification avec les fichiers « .htaccess » et « .htpasswd »"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ Ceci en utilisant deux fichiers de configuration (HTTP) Apache à placer dans [l
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 > Les exemples qui vont suivre sont à mettre en place dans des fichiers nommées « .htaccess » et « .htpasswd ». Attention, les règles que vous définissez dans ces fichiers ont des conséquences directes sur votre site web. Vérifiez systématiquement les règles que vous ajoutez avant de les appliquer à votre site web. 
 > 
@@ -26,8 +26,8 @@ Ceci en utilisant deux fichiers de configuration (HTTP) Apache à placer dans [l
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer d'une [offre d'hébergement web](/links/web/hosting).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer des identifiants de connexion à [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## En pratique
@@ -42,7 +42,7 @@ Ceci en utilisant deux fichiers de configuration (HTTP) Apache à placer dans [l
 >
 > Pour toute question relative à la création, l'utilisation ou la programmation de votre site web, le support OVHcloud ne sera pas en mesure de vous apporter une assistance sur ces sujets.
 >
-> Pour cela, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou nos [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+> Pour cela, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou nos [partenaires OVHcloud](/links/partner).
 >
 
 Nous allons vous expliquer les 4 étapes principales à réaliser pour protéger l'accès à un répertoire ou tout ou partie de votre site web :
@@ -120,7 +120,7 @@ Remplacez uniquement `plain_text_password1`, `plain_text_password2` et `plain_te
 > Pour plus d'informations sur le sujet, consultez la [documentation officielle Apache](https://httpd.apache.org/docs/2.4/fr/misc/password_encryptions.html){.external}.
 >
 
-Si vous disposez d'un hébergement [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), connectez-vous ensuite en [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) à votre hébergement web. Descendez dans le « **dossier racine** » où se trouve votre script « crypt.php ».
+Si vous disposez d'un hébergement [Pro](/links/web/hosting-professional-offer) ou [Performance](/links/web/hosting-performance-offer), connectez-vous ensuite en [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) à votre hébergement web. Descendez dans le « **dossier racine** » où se trouve votre script « crypt.php ».
 
 Pour cela, utilisez la commande SSH suivante :
 
@@ -146,7 +146,7 @@ php crypt.php
 
 > [!warning]
 >
-> Pour des raisons de sécurité, l'utilisation du SSH est recommandée. Toutefois, si vous disposez d'une offre **Starter** ou [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) sur lesquelles le SSH est indisponible, vous pouvez aussi exécuter le fichier « crypt.php » via votre navigateur Web.
+> Pour des raisons de sécurité, l'utilisation du SSH est recommandée. Toutefois, si vous disposez d'une offre **Starter** ou [Perso](/links/web/hosting-personal-offer) sur lesquelles le SSH est indisponible, vous pouvez aussi exécuter le fichier « crypt.php » via votre navigateur Web.
 >
 > Pour cela, saisissez l'URL suivante : `https://domain.tld/crypt.php` en modifiant `domain.tld` par votre propre nom de domaine. Ceci directement dans la barre d'adresse de votre navigateur web.
 >
@@ -252,8 +252,8 @@ Dans le script ci-dessus, remplacez les éléments suivants par vos propres vale
 
 [Réécrire l'URL d'accès à mon site grâce au mod_rewrite via le fichier .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

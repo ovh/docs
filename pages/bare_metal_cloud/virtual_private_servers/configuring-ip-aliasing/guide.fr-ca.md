@@ -66,7 +66,7 @@ La création de ce fichier de configuration empêche l'exécution automatique de
 
 #### Étape 2 : créer une sauvegarde
 
-Par défaut, le fichier de configuration est situé dans le chemin `etc\Nnetwork\interfaces.d`.
+Par défaut, le fichier de configuration est situé dans le chemin `etc/network/interfaces.d`.
 
 Dans notre exemple, notre fichier s'appelle `50-cloud-init`, donc nous faisons une copie du fichier `50-cloud-init` en utilisant la commande suivante :
 
@@ -444,6 +444,10 @@ Dans la nouvelle fenêtre, cliquez sur `Ajouter...`{.action} sous « Adresses IP
 ![advance configuration section](images/configure-additional-ip.png){.thumbnail}
 
 Confirmez en cliquant sur `Ajouter`{.action}.
+
+![Additional IP configuration](images/additional-ip-config.png){.thumbnail}
+
+Cliquez ensuite sur `OK`{.action} pour appliquer la configuration.
 
 ![Additional IP configuration](images/final-configuration.png){.thumbnail}
 

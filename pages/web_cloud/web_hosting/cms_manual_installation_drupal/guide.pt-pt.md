@@ -16,12 +16,12 @@ Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Cont
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) ou [editor do CMS Drupal](https://www.drupal.org/support){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou [editor do CMS Drupal](https://www.drupal.org/support){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
 >
 
 > [!success]
 >
-> Para instalar o Drupal **automaticamente** a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), consulte o nosso manual sobre a [instalação de um módulo "num clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Para instalar o Drupal **automaticamente** a partir do seu [Área de Cliente OVHcloud](/links/manager), consulte o nosso manual sobre a [instalação de um módulo "num clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Para instalar **manualmente um outro CMS** (WordPress, Joomla!, PrestaShop), consulte o nosso manual sobre a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -30,15 +30,15 @@ Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Cont
   
 ## Requisitos
 
-- Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
-- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter acesso [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- Ter um plano de [alojamento web](/links/web/hosting) que contenha, pelo menos, uma base de dados.
+- Dispor de um [nome de domínio](/links/web/domains)
+- Ter acesso [Área de Cliente OVHcloud](/links/manager){.external}
   
 ## Instruções
 
 ### Etapa 1 - preparar a instalação <a name="step1"></a>
 
-Para instalar o CMS **Drupal** na sua oferta de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), são necessários alguns preparativos.
+Para instalar o CMS **Drupal** na sua oferta de [alojamento web](/links/web/hosting), são necessários alguns preparativos.
 
 Siga os **passos indicados** no nosso manual sobre a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation) antes de avançar com o passo 2 abaixo.
 
@@ -81,7 +81,7 @@ Tenha consigo os dados de acesso à sua base de dados (se necessário, consulte 
 
 - *Database type*: selecione o tipo de base de dados das opções disponíveis.
 
-- *Database name*: este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- *Database name*: este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](/links/manager).
 
 - *Database username*: é idêntico ao nome da base de dados se utiliza uma base de dados incluída no seu alojamento web. Para as bases de dados criadas num serviço Web Cloud Databases, consulte as informações indicadas **etapa 1.4** do tutorial para a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 
@@ -149,8 +149,8 @@ Se tudo correr bem, aparecerá a seguinte página:
 
 [Site oficial Drupal](https://www.drupal.org/){.external}
  
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

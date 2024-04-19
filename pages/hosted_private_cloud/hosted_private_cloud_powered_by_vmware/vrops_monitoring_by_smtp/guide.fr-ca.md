@@ -1,6 +1,6 @@
 ---
 title: "Configurer une alert vROps via le protocol smtp"
-excerpt: "Découvrer comment créer une alerte Outbound Smtp dans vROps"
+excerpt: "Découvrez comment créer une alerte Outbound Smtp dans vROps"
 updated: 2023-12-04
 ---
 

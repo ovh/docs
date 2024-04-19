@@ -16,14 +16,14 @@ Tutorial wyjaśnia, jak skonfigurować niektóre funkcjonalności hostingu za po
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub [edytora CMS WordPress](https://wordpress.com/support/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS WordPress](https://wordpress.com/support/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
 >
 
 **Dowiedz się, jak zabezpieczyć moduł WordPress korzystając z jednego lub kilku plików htaccess.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) i zainstalowanie modułu WordPress
+- Posiadanie [hostingu](/links/web/hosting) i zainstalowanie modułu WordPress
 - Możliwość korzystania z klienta FTP takiego jak [FileZilla](https://filezilla-project.org/). Zapoznaj się z naszym przewodnikiem "[Użyj FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)".
 
 Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tekstu, takich jak:
@@ -40,7 +40,7 @@ Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tek
 >
 > Jeśli nie korzystasz z CMS-a, OVHcloud udostępnia również tutorial dotyczący [ochrona katalogu lub interfejsu administracyjnego Twojej strony WWW za pomocą plików .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> W przypadku pytań dotyczących tworzenia, użytkowania lub programowania Twojej strony WWW, skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub naszymi [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Zespoły pomocy OVHcloud nie będą w stanie udzielić Ci wsparcia w tym zakresie.
+> W przypadku pytań dotyczących tworzenia, użytkowania lub programowania Twojej strony WWW, skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub naszymi [partnerami OVHcloud](/links/partner). Zespoły pomocy OVHcloud nie będą w stanie udzielić Ci wsparcia w tym zakresie.
 >
 
 ## FAQ
@@ -49,7 +49,7 @@ Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tek
 
 Plik **.htaccess** pozwala na skonfigurowanie serwera www. W przypadku hostingu współdzielonego chodzi o serwer open source "**Apache**". Składnia tego pliku jest definiowana przez organ, który edytuje i utrzymuje **Apache**. W przeciwieństwie do większości plików konfiguracyjnych serwera, pliki **.htaccess** znajdują się w katalogach stron www, a dokładniej w przestrzeni dyskowej FTP Twojego hostingu. Plik **.htaccess** będzie miał wpływ na katalog, w którym jest obecny, oraz na wszystkie podkatalogi znajdujące się wewnątrz.
 
-Nasze pakiety hostingowe nie zezwalają na pliki konfiguracyjne serwera. Jednak pliki **.htaccess** umożliwiają modyfikację niektórych funkcji i zachowań. Ponadto, nie ma potrzeby restartu serwera **Apache**, aby uwzględnić informacje i zmiany zapisane w pliku **.htaccess**. Wszystkie nasze oferty[hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) pozwalają na skonfigurowanie plików **.htaccess**.
+Nasze pakiety hostingowe nie zezwalają na pliki konfiguracyjne serwera. Jednak pliki **.htaccess** umożliwiają modyfikację niektórych funkcji i zachowań. Ponadto, nie ma potrzeby restartu serwera **Apache**, aby uwzględnić informacje i zmiany zapisane w pliku **.htaccess**. Wszystkie nasze oferty[hosting OVHcloud](/links/web/hosting) pozwalają na skonfigurowanie plików **.htaccess**.
 
 Punkt przed nazwą pliku **.htaccess** (który sam nie ma rozszerzenia) oznacza ukryty plik. Ponadto pliki te nie są dostępne dla użytkowników z zewnątrz odwiedzających Twoją stronę WWW.
 
@@ -174,8 +174,8 @@ Katalog **wp-admin** pozwala na połączenie z Twoim interfejsem administracyjny
 
 Sprawdź [tutorial dostępny na stronie internetowej Fundacji Apache](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

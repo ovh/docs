@@ -10,13 +10,13 @@ updated: 2024-02-13
 
 ## Objetivo
 
-OVHcloud ofrece [varios planes de hosting](https://www.ovhcloud.com/es/web-hosting/). Están diseñadas para diferentes casos de uso:
+OVHcloud ofrece [varios planes de hosting](/links/web/hosting). Están diseñadas para diferentes casos de uso:
 
 - Empezar en la web.
 - Crear rápidamente un sitio web (profesional o no), un blog, un **C**ontent **M**anagement **S**ystem (**CMS**) como *WordPress*, *Joomla!*, *PrestaShop* o *Drupal*, o una tienda online.
 - Personalizar una o varias direcciones de correo electrónico con el nombre de dominio que quiera utilizar para su sitio web.
 - Gestionar varios sitios web en un único plan de hosting.
-- Disponer de una o varias bases de datos ([incluidas con algunos de nuestros planes de hosting](https://www.ovhcloud.com/es/web-hosting/).
+- Disponer de una o varias bases de datos ([incluidas con algunos de nuestros planes de hosting](/links/web/hosting).
 - etc.
 
 Estos planes le ahorran gestionar el mantenimiento, la actualización y la seguridad de una infraestructura de alojamiento web.<br>
@@ -30,17 +30,17 @@ Le permiten ahorrar tiempo en la "administración del servidor" y concentrarse �
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
-- Disponer de un [dominio](https://www.ovhcloud.com/es/domains/) con el que poder acceder a su sitio web.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Disponer de un [dominio](/links/web/domains) con el que poder acceder a su sitio web.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-El objetivo de esta guía es mostrarle las principales acciones que podemos realizar con nuestras soluciones de [web hosting](https://www.ovhcloud.com/es/web-hosting/). 
+El objetivo de esta guía es mostrarle las principales acciones que podemos realizar con nuestras soluciones de [web hosting](/links/web/hosting). 
 Cada una de estas acciones irá acompañada de uno o varios enlaces a guías específicas (relativas a la acción en cuestión).
 
-Puede utilizar esta guía como un "repositorio" de acciones posibles desde la contratación de su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) y durante toda su utilización.
+Puede utilizar esta guía como un "repositorio" de acciones posibles desde la contratación de su [plan de hosting](/links/web/hosting) y durante toda su utilización.
 
 > [!primary]
 > 
@@ -63,7 +63,7 @@ Antes de empezar, es importante identificar y delimitar claramente sus necesidad
 - ¿Necesito una o más bases de datos para que mi sitio web funcione?
 - ¿Necesito una o más direcciones de correo personalizadas con mi dominio?
 
-En función de sus respuestas, asegúrese de que su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) se ajusta a todas sus necesidades antes de continuar.
+En función de sus respuestas, asegúrese de que su [plan de hosting](/links/web/hosting) se ajusta a todas sus necesidades antes de continuar.
 
 Si no es el caso, consulte nuestra guía "[Web hosting: ¿Cómo mejorar su solución?](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)".
 
@@ -93,7 +93,7 @@ Colocar la base de datos local en la base de datos asociada a su alojamiento web
 ##### Caso n°2 - Crear un sitio web utilizando un CMS
 
 OVHcloud pone a su disposición la opción Módulos en un clic.<br>
-Una vez conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y a través de su alojamiento web, esta opción le permite instalar rápidamente los CMS *WordPress*, *Joomla!*, *PrestaShop* y *Drupal*.
+Una vez conectado a su [área de cliente de OVHcloud](/links/manager) y a través de su alojamiento web, esta opción le permite instalar rápidamente los CMS *WordPress*, *Joomla!*, *PrestaShop* y *Drupal*.
 
 Para utilizar esta opción, consulte nuestra guía "[Instalar su sitio web con un 'módulo en 1 clic' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
@@ -104,7 +104,7 @@ Para utilizar esta opción, consulte nuestra guía "[Instalar su sitio web con u
 
 ### Etapa 3 - Crear sus direcciones de correo electrónico (opcional) <a name="email-creation"></a>
 
-Su plan de [web hosting](https://www.ovhcloud.com/es/web-hosting/) incluye una o varias direcciones de correo electrónico, que puede elegir entre activar o desactivar.
+Su plan de [web hosting](/links/web/hosting) incluye una o varias direcciones de correo electrónico, que puede elegir entre activar o desactivar.
 
 En primer lugar, consulte nuestra guía "[Activar el servicio de correo incluido en un plan de hosting](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
@@ -114,7 +114,7 @@ Una vez activada la opción, consulte nuestra guía "[Crear una dirección de co
 >
 > - Si va a migrar un sitio web y/o se trata de direcciones de correo asociadas al dominio de su sitio web, consulte nuestra guía "[Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". En ella encontrará todos los pasos clave para migrar sin interrupción todos sus servicios (nombre de dominio, sitio web, dirección(s) de correo electrónico, etc.).
 >
-> - Si no ha asociado un dominio al contratar el alojamiento web y quiere disfrutar de la opción "dirección(s) de correo incluida(s) con el alojamiento web", deberá realizar la operación manualmente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+> - Si no ha asociado un dominio al contratar el alojamiento web y quiere disfrutar de la opción "dirección(s) de correo incluida(s) con el alojamiento web", deberá realizar la operación manualmente desde el [área de cliente de OVHcloud](/links/manager).
 
 ### Etapa 4 - Comprobar y/o modificar la configuración de su dominio <a name="domain-configuration"></a>
 
@@ -150,13 +150,13 @@ Para comprobar o modificar la conexión entre su dominio y su solución de corre
 
 ### Etapa 5 - Otras opciones disponibles con los alojamientos web <a name="other-options"></a>
 
-En función de su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/), existen opciones / ofertas / funcionalidades adicionales gratuitas.
+En función de su [plan de hosting](/links/web/hosting), existen opciones / ofertas / funcionalidades adicionales gratuitas.
 
 #### Los certificados SSL
 
 Los certificados SSL permiten que su sitio web esté accesible utilizando el protocolo HTTPS. Este protocolo cifra los intercambios entre su alojamiento web y las personas que consultan su sitio web.
 
-Independientemente del [alojamiento web](https://www.ovhcloud.com/es/web-hosting/), puede activar gratuitamente un certificado SSL **Let's encrypt**.
+Independientemente del [alojamiento web](/links/web/hosting), puede activar gratuitamente un certificado SSL **Let's encrypt**.
 
 Para más información sobre los certificados SSL (gratuitos o de pago) ofrecidos en los alojamientos web, consulte nuestra guía "[Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
 
@@ -180,13 +180,13 @@ Para más información, consulte nuestra guía "[Acelerar un sitio web utilizand
 
 #### Los servidores de bases de datos Web Cloud Databases
 
-Si tiene un alojamiento web **Performance**, puede activar gratuitamente un servidor de bases de datos [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/).
+Si tiene un alojamiento web **Performance**, puede activar gratuitamente un servidor de bases de datos [Web Cloud Databases](/links/web/databases).
 
 Para más información, consulte nuestra guía "[Primeros pasos con el servicio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Enviar mensajes de correo desde su sitio web
 
-Todos nuestros [alojamientos web](https://www.ovhcloud.com/es/web-hosting/) permiten enviar mensajes de correo electrónico gratuitamente desde su sitio web o un script específico.
+Todos nuestros [alojamientos web](/links/web/hosting) permiten enviar mensajes de correo electrónico gratuitamente desde su sitio web o un script específico.
 
 Para más información, consulte nuestra guía "[Gestionar los mensajes de correo automatizados](/pages/web_cloud/web_hosting/mail_function_script_records)".
 
@@ -194,7 +194,7 @@ Para más información, consulte nuestra guía "[Gestionar los mensajes de corre
 
 Las tareas CRON permiten ejecutar automáticamente scripts alojados en el alojamiento web.
 
-Si su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) dispone de esta opción, consulte nuestra guía "[Crear tareas automatizadas (CRON) en un alojamiento web](/pages/web_cloud/web_hosting/cron_tasks)" para más información.
+Si su [plan de hosting](/links/web/hosting) dispone de esta opción, consulte nuestra guía "[Crear tareas automatizadas (CRON) en un alojamiento web](/pages/web_cloud/web_hosting/cron_tasks)" para más información.
 
 ## Más información
 
@@ -208,8 +208,8 @@ Si su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) dispone de est
 
 [Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -16,15 +16,15 @@ O **CMS** (**C**ontent **M**anagement **S**ystem) SPIP é uma solução adaptada
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que inclua, pelo menos, uma base de dados.
-- Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting) que inclua, pelo menos, uma base de dados.
+- Dispor de um [domínio](/links/web/domains).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 ### Preparar a instalação
 
-Para instalar o CMS **Spip** no seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), alguns preparativos são necessários.
+Para instalar o CMS **Spip** no seu [alojamento web](/links/web/hosting), alguns preparativos são necessários.
 
 Siga o **conjunto de passos** descritos no nosso tutorial de [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation) antes de avançar para o passo seguinte.
 
@@ -83,6 +83,6 @@ Acaba de instalar manualmente o CMS Spip no seu alojamento web da OVHcloud. O se
 
 [Criar uma base de dados num alojamento web](/pages/web_cloud/web_hosting/sql_create_database)
  
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

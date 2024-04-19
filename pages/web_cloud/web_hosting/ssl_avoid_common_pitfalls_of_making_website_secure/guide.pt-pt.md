@@ -16,16 +16,16 @@ Encontre, neste tutorial, alguns exemplos de situações relativas à segurança
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 > 
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
 >
 
 **Descubra como evitar os erros comuns de segurança do seu website com o SSL**
 
 ## Requisitos
 
-- Dispor de um [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-- Ter registado, pelo menos, um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external}.
-- Ter acesso à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, parte "Web cloud".
+- Dispor de um [alojamento web OVHcloud](/links/web/hosting){.external}.
+- Ter registado, pelo menos, um [nome de domínio](/links/web/domains){.external}.
+- Ter acesso à sua [Área de Cliente OVHcloud](/links/manager){.external}, parte "Web cloud".
 
 ## Instruções
 
@@ -63,6 +63,6 @@ RewriteRule ^(.*)$ https://www.yourdomain.tld/$1 [R,L]
 
 ## Quer saber mais? <a name="go-further"></a>
  
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

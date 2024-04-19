@@ -23,12 +23,12 @@ Puoi creare diversi file ".htaccess" in [lo spazio FTP](/pages/web_cloud/web_hos
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
 >
 
 ## Prerequisiti
 
-- Disporre di un [hosting condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di un [hosting condiviso OVHcloud](/links/web/hosting)
 
 ## Procedura
 
@@ -370,8 +370,8 @@ Indipendentemente dalla sicurezza sull'accesso generale all'hosting, il file ".h
 
 ## Per saperne di più <a name="go-further"></a>
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni (offerte di supporto)(https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni (offerte di supporto)(/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

@@ -26,13 +26,13 @@ A pirataria pode manifestar - se de várias formas (lista não exaustiva):
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 >
 
 ## Requisitos
 
-- Ter [oferta de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/) com o seu website alojado em cima.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter [oferta de alojamento Web Cloud](/links/web/hosting) com o seu website alojado em cima.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -95,7 +95,7 @@ Também recomendamos que utilize um [gestor de palavras-passe](/pages/account_an
 
 > [!warning]
 >
-> Se encontrar dificuldades para efetuar as ações descritas abaixo, recorra a um prestador de [serviços especializado](https://partner.ovhcloud.com/pt/directory/) em cibersegurança.
+> Se encontrar dificuldades para efetuar as ações descritas abaixo, recorra a um prestador de [serviços especializado](/links/partner) em cibersegurança.
 >
 
 Utilize o nosso manual sobre [estatísticas e logs do seu alojamento web](/pages/web_cloud/web_hosting/logs_and_statistics) para pesquisar os elementos maliciosos injetados no seu website. As informações podem ser encontradas nos logs "web". 
@@ -149,7 +149,7 @@ Façam coincidir ao máximo as datas de restauro do seu espaço de armazenamento
 > A OVHcloud dispõe de robôs de segurança que podem detetar ações maliciosas realizadas a partir do seu alojamento. Estes últimos desativam o seu alojamento e notificam-no por e-mail de que o seu alojamento foi desativado.
 > Além deste e-mail, uma página "403 Forbidden" aparece normalmente quando tenta aceder ao seu website.
 >
-> Se o seu alojamento estiver desativado, os robôs de restauro automático disponíveis a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) também serão desativados.
+> Se o seu alojamento estiver desativado, os robôs de restauro automático disponíveis a partir do seu [Área de Cliente OVHcloud](/links/manager) também serão desativados.
 > Deve obrigatoriamente efetuar um restauro "manual" do seu site, eliminar os elementos maliciosos residuais e corrigir todas as falhas de segurança presentes neste backup. Isto **antes** de reativar o alojamento.
 >
 > Para reativar o alojamento Web, siga as instruções indicadas no passo 4 deste [guia](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).
@@ -219,8 +219,8 @@ Consulte também o nosso manual sobre [como proteger o seu website](/pages/web_c
 
 [Otimizar as performances do seu site](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

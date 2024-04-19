@@ -24,16 +24,16 @@ Unsere Webhostings sind seit 2011 mit IPv6 kompatibel, doch die Aktivierung dies
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über einen [Domainnamen](/links/web/domains).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 Wenn Ihre Website nicht bereits mit IPv6 funktioniert, können Sie die [IPv6-Adresse Ihres OVHcloud Webhostings](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) der aktiven DNS-Zone Ihres Domainnamens hinzufügen. Ziel ist es, dass Webbrowser eine IPv6-Adresse finden, die mit Ihrer Website über Ihren Domainnamen verknüpft ist.
@@ -44,7 +44,7 @@ Um zu überprüfen, ob Ihre Website bereits eine IPv6-Adresse verwendet, können
 
 ### Schritt 1: IPv6-Adresse Ihres Webhostings abrufen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}.
 
 Kopieren Sie im Abschnitt **IPv6** die Adresse und gehen Sie zum nächsten Schritt über.
 
@@ -71,8 +71,8 @@ Tragen Sie die zuvor kopierte IPv6-Adresse als Typ **AAAA** ein.
 
 [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -18,11 +18,11 @@ Por isso, a alteração da palavra-passe de uma base de dados deve ser sempre ef
 
 - No [ficheiro de configuração](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-1-identificar-a-base-de-dados-do-modulo) do seu site através do [espaço FTP do seu alojamento](/pages/web_cloud/web_hosting/ftp_connection);
 
-- **E** no servidor que contém a base de dados através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- **E** no servidor que contém a base de dados através da [Área de Cliente OVHcloud](/links/manager).
 
 Enquanto esta alteração não for efetuada **nestes dois locais**, o seu site irá apresentar um "[erro de ligação à base de dados](/pages/web_cloud/web_hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
 
-Assim, para alterar a palavra-passe da base de dados, é imperativo que realize **o conjunto das operações** indicadas neste guia. Se tiver dúvidas sobre as operações a realizar, contacte o seu webmaster ou um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
+Assim, para alterar a palavra-passe da base de dados, é imperativo que realize **o conjunto das operações** indicadas neste guia. Se tiver dúvidas sobre as operações a realizar, contacte o seu webmaster ou um [fornecedor especializado](/links/partner).
 
 A alteração da palavra-passe da base de dados do seu site faz-se em quatro etapas:
 
@@ -37,21 +37,21 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
 >
 
 ## Requisitos
 
-- Ter um [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Utilizar uma [base de dados associada à sua oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ou a um [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
+- Ter um [plano de alojamento web OVHcloud](/links/web/hosting).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Utilizar uma [base de dados associada à sua oferta de alojamento partilhado](/links/web/hosting-options-startsql) ou a um [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
 - Ter acesso às credenciais FTP para aceder ao [espaço de armazenamento do alojamento](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Instruções
 
 ### Etapa 1: identificar o ficheiro de configuração do seu site <a name="step1"></a>
 
-Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action} e em `Alojamentos`{.action} e, por fim, no alojamento em causa. De seguida, aceda ao separador `Multisite`{.action}. Identifique o nome da `Pasta raiz` do seu site (o diretório no qual se encontram os seus ficheiros e pastas).
+Na sua [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.action} e em `Alojamentos`{.action} e, por fim, no alojamento em causa. De seguida, aceda ao separador `Multisite`{.action}. Identifique o nome da `Pasta raiz` do seu site (o diretório no qual se encontram os seus ficheiros e pastas).
 
 ![root-folders](images/root-folders.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Para determinar o caso aplicável ao seu website, no ficheiro de configuração 
 - Para o DRUPAL: o nome aparece na rubrica **"database"**;
 - Para PRESTASHOP: o nome aparece em **"database_name"**.
 
-De seguida, volte à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na secção `Web Cloud`{.action}:
+De seguida, volte à sua [Área de Cliente OVHcloud](/links/manager) na secção `Web Cloud`{.action}:
 
 - Aceda à secção `Alojamentos`{.action} e, a seguir, ao alojamento correspondente;
 - Clique no separador `Bases de dados`{.action} **à direita** do ecrã;
@@ -191,9 +191,9 @@ Guarde esta modificação.
 
 Novamente, dois casos são possíveis: 
 
-- Se a base de dados estiver na parte da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) dedicada ao seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), siga as [instruções](#case1).
+- Se a base de dados estiver na parte da [Área de Cliente OVHcloud](/links/manager) dedicada ao seu [alojamento web](/links/web/hosting), siga as [instruções](#case1).
 
-- Se a sua base de dados estiver na parte da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) dedicada às suas ofertas [Web Cloud Databases](/products/web-cloud-clouddb), siga as [instruções](#case2).
+- Se a sua base de dados estiver na parte da sua [Área de Cliente OVHcloud](/links/manager) dedicada às suas ofertas [Web Cloud Databases](/products/web-cloud-clouddb), siga as [instruções](#case2).
 
 #### Caso n°1: a base de dados do seu site faz parte da sua oferta de alojamento <a name="case1"></a>
 
@@ -231,6 +231,6 @@ Na nova janela, introduza a nova palavra-passe da base de dados (definida no [Et
 
 [Resolver os erros mais frequentes associados às bases de dados](/pages/web_cloud/web_hosting/diagnosis_database_errors)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

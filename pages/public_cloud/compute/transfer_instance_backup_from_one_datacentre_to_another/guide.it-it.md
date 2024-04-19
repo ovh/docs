@@ -76,6 +76,8 @@ Infine, esegui questo comando per scaricare il backup sull’host di collegament
 $ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
+<a name="transfer"></a>
+
 ### Trasferisci il backup in un’altra Region OpenStack
 
 Prima di avviare il processo di trasferimento è necessario impostare le nuove variabili d’ambiente.

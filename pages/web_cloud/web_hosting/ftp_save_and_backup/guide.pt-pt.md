@@ -23,8 +23,8 @@ A sua solução de alojamento web da OVHcloud dá-lhe acesso a um espaço de arm
 
 ## Requisitos
 
-- Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} (não funciona com um alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/)).
-- Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou dispor da palavra-passe do utilizador FTP que lhe permite aceder ao seu espaço de armazenamento. 
+- Ter um [alojamento web](/links/web/hosting){.external} (não funciona com um alojamento [Cloud Web](/links/web/hosting-cloud-web-offer)).
+- Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](/links/manager){.external} ou dispor da palavra-passe do utilizador FTP que lhe permite aceder ao seu espaço de armazenamento. 
 
 ## Instruções
 
@@ -52,7 +52,7 @@ Da mesma forma, deverá definir o método de restauração que vai utilizar:
 >
 > De facto, os nossos robôs instalam o backup no seu alojamento antes de eliminar o conteúdo FTP que será substituído pelo restauro.
 >
-> Para verificar o limite utilizado no seu alojamento web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Aceda à secção `Web Cloud`{.action} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente. 
+> Para verificar o limite utilizado no seu alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager). Aceda à secção `Web Cloud`{.action} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente. 
 >
 > A quota utilizada aparece na página que aparece:
 >
@@ -83,11 +83,11 @@ Aceda à informação correspondente ao método de restauração escolhido.
 > Nesse caso:
 >
 > - As nossas equipas enviam um e-mail ao [administrador](/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos) do alojamento. 
-> - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Web Cloud`{.action}, clique no serviço na secção `Alojamento`{.action} e, a seguir, no separador `Informações gerais`{.action}.
+> - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](/links/manager){.external}. Na secção `Web Cloud`{.action}, clique no serviço na secção `Alojamento`{.action} e, a seguir, no separador `Informações gerais`{.action}.
 > - O(s) site(s) alojado(s) apresenta(m) uma página "403 Forbidden".
 >
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Restaurar um backup`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Restaurar um backup`{.action}.
 
 ![backupftp](images/restore-backup.png){.thumbnail}
 
@@ -111,7 +111,7 @@ De seguida, clique no botão `Validar`{.action}.
 
 > [!primary]
 >
-> O restauro automático pode demorar alguns minutos a algumas horas. Se a duração da ação for **mais de 24 horas**, contacte [o suporte da OVHcloud](https://www.ovhcloud.com/pt/support-levels/).
+> O restauro automático pode demorar alguns minutos a algumas horas. Se a duração da ação for **mais de 24 horas**, contacte [o suporte da OVHcloud](/links/support).
 >
 
 ### Restaurar um ficheiro a partir de um programa ou uma interface <a name="viainterface"></a>
@@ -120,7 +120,7 @@ Esta operação realiza-se em vários passos. Certifique-se de que tem a palavra
 
 > [!warning]
 >
-> Para realizar as seguintes ações, deve ter conhecimentos sobre o programa ou a interface que vai utilizar. A seguir, propomos-lhe algumas indicações sobre como realizá-las. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do programa ou da interface. Não poderemos proporcionar-lhe assistência técnica.
+> Para realizar as seguintes ações, deve ter conhecimentos sobre o programa ou a interface que vai utilizar. A seguir, propomos-lhe algumas indicações sobre como realizá-las. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do programa ou da interface. Não poderemos proporcionar-lhe assistência técnica.
 >
 
 #### 1 - Escolher o programa ou a interface que vai utilizar
@@ -131,7 +131,7 @@ Em primeiro lugar, deve decidir qual o programa ou interface que vai utilizar pa
 
 - **Cyberduck**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual [“Guia de utilização do Cyberduck (MAC)”](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}. Este manual não substitui a documentação oficial do editor.
 
-- **FTP Explorer**: deverá aceder previamente através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para aceder, basta iniciar sessão, clicar em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecionar o alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}.
+- **FTP Explorer**: deverá aceder previamente através da [Área de Cliente OVHcloud](/links/manager){.external}. Para aceder, basta iniciar sessão, clicar em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecionar o alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}.
 
 Assim que estiver pronto para continuar a operação, avance para o passo seguinte.
 
@@ -195,8 +195,8 @@ Uma vez ligado, só precisará de restaurar os ficheiros. Para isso, navegue pel
 
 [Recuperar a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -26,12 +26,12 @@ Aby pobrać Cyberduck, przejdź do [oficjalnej strony](https://cyberduck.io/) ap
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja [Sprawdź również](#go-further) w tym przewodniku.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja [Sprawdź również](#go-further) w tym przewodniku.
 >
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu web](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Posiadanie [hostingu web](/links/web/hosting){.external}.
 - Pobranie i zainstalowanie aplikacji Cyberduck na komputerze.
 
 ## W praktyce
@@ -232,6 +232,6 @@ Aby sprawdzić, czy ponowne otwarcie nastąpiło prawidłowo, zaloguj się na Tw
 
 [Tutorial - Korzystanie z FileZilla na Twoim hostingu OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

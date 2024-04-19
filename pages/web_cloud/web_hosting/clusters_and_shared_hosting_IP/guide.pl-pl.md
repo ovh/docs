@@ -21,17 +21,17 @@ W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięk
 > [!primary]
 >
 > Adresy IP opcji CDN są typu „Anycast”.
-> Oznacza to, że nie potrzebują geolokalizacji ([więcej informacji znajdziesz tutaj](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)).
+> Oznacza to, że nie potrzebują geolokalizacji ([więcej informacji znajdziesz tutaj](/links/web/hosting-options-cdn)).
 > 
 
 ## Wymagania początkowe
 
-- Zakupienie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Zakupienie [hostingu OVHcloud](/links/web/hosting){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
-Aby poznać klaster hostingu, w którym hostowana jest Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} po czym wybierz odpowiedni hosting. Następnie przejdź do zakładki `FTP - SSH`{.action}.
+Aby poznać klaster hostingu, w którym hostowana jest Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](/links/manager) wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} po czym wybierz odpowiedni hosting. Następnie przejdź do zakładki `FTP - SSH`{.action}.
 Na tej stronie możesz sprawdzić numer klastra hostingu WWW, używając **Serwer FTP**.
 
 ### Klaster 002
@@ -786,8 +786,8 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 
 [Zoptymalizuj wydajność swojej strony www](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

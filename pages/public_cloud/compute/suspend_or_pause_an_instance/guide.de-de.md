@@ -60,7 +60,7 @@ Sobald der Vorgang abgeschlossen ist, erscheint die Instanz als *Ausgesetzt*.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-Um den Snapshot zu sehen, klicken Sie im linken Menü auf `Instance Backup`{.action}. Ein Snapshot namens *xxxxx-shelved* wird jetzt angezeigt.
+Um den Snapshot zu sehen, klicken Sie im linken Menü auf `Instance Backup`{.action} im Bereich `Storage`. Ein Snapshot mit dem Namen *xxxxx-shelved* wird dann angezeigt.
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -232,6 +232,6 @@ Um die Instanz wieder in Betrieb zu nehmen, geben Sie in der Kommandozeile Folge
 
 ## Weiterführende Informationen
 
-[OpenStack Dokumentation](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
+[OpenStack Dokumentation](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

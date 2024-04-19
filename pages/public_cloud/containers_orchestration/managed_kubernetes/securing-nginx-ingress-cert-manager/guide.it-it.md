@@ -1,7 +1,7 @@
 ---
 title: Secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes'
-updated: 2024-01-18
+updated: 2024-04-11
 ---
 
 ## Objective
@@ -26,7 +26,7 @@ You also need to install [cert-manager](/pages/public_cloud/containers_orchestra
 
 In this guide you will deploy an application that runs a HTTP server and displays a web page.
 
-First, create a `deployment.yml` file with the following content:
+First, create a `deployment.yaml` file with the following content:
 
 ```yaml
 apiVersion: apps/v1
@@ -54,7 +54,7 @@ spec:
 
 This YAML deployment manifest file defines that our application, based on the `ovhplatform/hello:latest` image will be deployed with 1 replica (1 pod).
 
-Then, create a `svc.yml` file with the following content to define our service (a service exposes a deployment):
+Then, create a `svc.yaml` file with the following content to define our service (a service exposes a deployment):
 
 ```yaml
 apiVersion: v1
@@ -145,8 +145,9 @@ The install process will begin and a new `ingress-nginx` namespace will be creat
 
 ```console
 $ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
+
 NAME: ingress-nginx
-LAST DEPLOYED: Thu Jan 18 15:20:47 2024
+LAST DEPLOYED: Thu Apr 11 10:54:34 2024
 NAMESPACE: ingress-nginx
 STATUS: deployed
 REVISION: 1
@@ -162,7 +163,6 @@ An example Ingress that makes use of the controller:
   metadata:
     name: example
     namespace: foo
-apiVersion: cert-manager.io/v1
   spec:
     ingressClassName: nginx
     rules:
@@ -202,7 +202,7 @@ If you try again in a few minutes you should get an `EXTERNAL-IP`:
 ```console
 $ kubectl get svc -n ingress-nginx ingress-nginx-controller
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)                      AGE
-ingress-nginx-controller   LoadBalancer   10.3.232.157   152.228.168.132   80:30903/TCP,443:31546/TCP   19h
+ingress-nginx-controller   LoadBalancer   10.3.232.157   xx.xx.xx.xx   80:30903/TCP,443:31546/TCP   19h
 ```
 
 You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via HTTP or `https://[YOUR_LOAD_BALANCER_IP]` via HTTPS.
@@ -292,7 +292,8 @@ spec:
         - [YOUR_DN]
       secretName: hello-world-tls # < cert-manager will store the created certificate in this secret.
   rules:
-  - http:
+  - host: [YOUR_DN]
+    http:
       paths:
       - backend:
           service:

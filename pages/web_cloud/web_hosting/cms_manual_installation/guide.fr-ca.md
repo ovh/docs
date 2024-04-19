@@ -12,7 +12,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) ou l'éditeur du CMS ue vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou l'éditeur du CMS ue vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 > Pour contacter les différents éditeurs des CMS cités ci-dessus, retrouvez ci-après les liens vers leurs pages officielles respectives :
 >
@@ -28,16 +28,16 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 
 > [!success]
 >
-> Pour installer votre CMS **automatiquement** depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Pour installer votre CMS **automatiquement** depuis votre [espace client OVHcloud](/links/manager), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **Découvrez comment configurer votre site web en installant manuellement un CMS.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) qui contient au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+- Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
+- Disposer d'un [nom de domaine](/links/web/domains)
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 
@@ -49,7 +49,7 @@ Pour vous aider à choisir votre CMS, découvrez ci-dessous un bref descriptif p
 
 **WordPress** est généralement utilisé pour créer un site web ou un blog. Il est basé sur la technologie PHP et comporte une gamme variée d’outils comme un correcteur orthographique ainsi que des plugins pour l'e-commerce, le SEO ou encore la sécurité de votre site web.
 
-Retrouvez plus d'informations sur notre page relative au [module WordPress](https://www.ovhcloud.com/fr-ca/web-hosting/uc-wordpress-website/)
+Retrouvez plus d'informations sur notre page relative au [module WordPress](/links/web/hosting-wordpress)
 
 - Site officiel de [WordPress](https://https://wordpress.com/){.external}
 
@@ -59,7 +59,7 @@ Retrouvez plus d'informations sur notre page relative au [module WordPress](http
 
 La communauté **Joomla!** est très grande et peut fournir de l’assistance et des services dans tous les domaines concernant ce CMS (aide, documentation, assistance technique, thèmes, etc.)
 
-Retrouvez plus d'informations sur notre page relative au [module Joomla!](https://www.ovhcloud.com/fr-ca/web-hosting/uc-joomla-website/)
+Retrouvez plus d'informations sur notre page relative au [module Joomla!](/links/web/hosting-joomla)
 
 - Site officiel de [Joomla!](https://www.joomla.org/){.external}
 
@@ -67,7 +67,7 @@ Retrouvez plus d'informations sur notre page relative au [module Joomla!](https:
 
 **Drupal** est une plateforme open source gratuite sous PHP créée en 2000. **Drupal** permet de créer rapidement des sites web dynamiques.
 
-Retrouvez plus d'informations sur notre page relative au [module Drupal](https://www.ovhcloud.com/fr-ca/web-hosting/uc-drupal-website/)
+Retrouvez plus d'informations sur notre page relative au [module Drupal](/links/web/hosting-drupal)
 
 - Site officiel de [Drupal](https://www.drupal.org/){.external}
 
@@ -75,7 +75,7 @@ Retrouvez plus d'informations sur notre page relative au [module Drupal](https:/
 
 CMS créé en 2005 et dédié à la réalisation de sites web e-commerce. En dehors des fonctionnalités courantes des boutiques en ligne, ce logiciel peut également être personnalisé avec des modules, des thèmes et des modèles. 
 
-Retrouvez plus d'informations sur notre page relative au [module PrestaShop](https://www.ovhcloud.com/fr-ca/web-hosting/uc-prestashop-website/)
+Retrouvez plus d'informations sur notre page relative au [module PrestaShop](/links/web/hosting-prestashop)
 
 - Site officiel de [PrestaShop](https://www.prestashop.com/){.external}
 
@@ -110,7 +110,7 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](htt
 
 ### Etape 1 - préparer l'installation <a name="step1"></a>
 
-Pour installer un CMS sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/), quelques préparatifs sont nécessaires.
+Pour installer un CMS sur votre offre d'[hébergement web](/links/web/hosting), quelques préparatifs sont nécessaires.
 
 #### 1.1 - Vérifier la déclaration du « dossier racine »
 
@@ -125,12 +125,12 @@ Consultez notre documentation qui décrit [comment ajouter un multisite sur son 
 
 #### 1.2 - Vérifier le « pointage » du nom de domaine
 
-- Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre CMS, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/).
+- Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre CMS, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](/links/web/hosting).
 
-Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}.<br>
+Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}.<br>
 Dans l'encadré `Informations générales`{.action} sur votre droite, vous trouverez l'adresse IP de votre hébergement web dans le formulaire `IPv4`{.action}.
 
-Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](/links/manager), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >
@@ -163,9 +163,9 @@ Si vous n'utilisez pas déjà un client FTP, vous pouvez utiliser Filezilla. Ret
 > Certains CMS fonctionnent sans base de données. Si c'est le cas pour le CMS que vous souhaitez installer, passez cette étape.
 >
 
-La plupart des CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) en contiennent.
+La plupart des CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](/links/web/hosting) en contiennent.
 
-Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) en contiennent.
+Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](/links/web/hosting) en contiennent.
 
 Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -406,8 +406,8 @@ Pour poursuivre l'installation, suivez l'un des liens suivants en cliquant sur l
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

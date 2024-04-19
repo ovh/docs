@@ -18,12 +18,12 @@ You can create multiple ".htaccess" files in [the FTP space](/pages/web_cloud/we
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
 
 ## Instructions
 
@@ -365,8 +365,8 @@ Besides general access security to the hosting, the ".htaccess" file allows you 
 
 ## Go further <a name=go-further></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: Clienti Kimsufi e So you Start - familiarizzarsi con lo Spazio Cliente OVHcloud
 excerpt: Come navigare nello Spazio Cliente OVHcloud
-updated: 2023-01-05
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -97,7 +97,7 @@ Nello Spazio Cliente OVHcloud, queste opzioni sono raggruppate in uno spazio com
 - **Il tuo livello di supporto** (disponibile solo per i servizi OVHcloud): per maggiori informazioni sul livello di supporto, consulta questa sezione.
 - **Gestione degli utenti**: questa sezione ti permette di gestire i tuoi utenti. Per maggiori informazioni, consulta [questa guida](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 - **Le tue fatture**: da questa sezione è possibile consultare le fatture, seguire i pagamenti effettuati con il metodo di pagamento predefinito e consultare i tuoi averi. Per maggiori informazioni, consulta [questa guida](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management).
-- **I tuoi servizi**: questa sezione ti permette di visualizzare tutti i tuoi servizi, i tuoi contratti e le tue chiavi SSH.
+- **I tuoi servizi**: questa sezione vi permette di visualizzare l'insieme dei vostri servizi e i vostri contratti.
 - **Modalità di pagamento**: in questa sezione è possibile accedere al metodo di pagamento corrente, al conto prepagato e ai voucher OVHcloud. e aggiungere/rimuovere un metodo di pagamento. Per maggiori informazioni sulla gestione dei metodi di pagamento, consulta [questa guida](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 - **I tuoi ordini**: consulta i tuoi ordini da questa pagina. Per maggiori informazioni, consulta [questa guida](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders).
 - **I tuoi contatti**: in questa sezione è possibile visualizzare e gestire i contatti associati ai tuoi servizi. Nella scheda **Le tue richieste**, visualizzi le richieste di modifica dei contatti inviate dal tuo account e le richieste di gestione dei servizi ricevute. Per maggiori informazioni sulla gestione dei contatti di servizio, consulta [questa guida](/pages/account_and_service_management/account_information/managing_contacts).

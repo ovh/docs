@@ -16,14 +16,14 @@ O acesso aos logs e às estatísticas do seu website está incluído na sua ofer
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter um serviço de [alojamento web](/links/web/hosting){.external} compatível.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
 Para aceder aos diferentes dados estatísticos e logs do seu alojamento web, efetue as seguintes ações: 
 
-1. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+1. Aceda à [Área de Cliente OVHcloud](/links/manager).
 2. Na linha situada no topo da Área de Cliente, clique no separador `Web Cloud`{.action}.
 3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
 4. Selecione o alojamento web em causa.
@@ -62,7 +62,7 @@ O campo "Period selection", no canto superior direito, permite selecionar um per
 >
 > Não poderemos acompanhá-lo na interpretação dos logs do seu alojamento web, uma vez que se trata apenas de um desenvolvimento web e não de um alojamento web.
 >
-> Contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se precisar de ajuda.
+> Contacte um [fornecedor especializado](/links/partner) se precisar de ajuda.
 >
 
 Pode visualizar os logs brutos do seu website com um diferimento de cerca de 5 minutos.
@@ -111,7 +111,7 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 
 Pode igualmente recuperar o link de acesso às estatísticas/logs diretamente a partir da sua Área de Cliente:
 
-1. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+1. Aceda à [Área de Cliente OVHcloud](/links/manager).
 2. Na linha situada no topo da Área de Cliente, clique no separador "Web Cloud" {.action}.
 3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
 4. Selecione o alojamento web em causa.
@@ -130,8 +130,8 @@ Na nova página, obtenha o URL existente na barra de endereço do browser.
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

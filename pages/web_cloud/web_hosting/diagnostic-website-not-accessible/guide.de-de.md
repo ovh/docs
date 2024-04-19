@@ -24,12 +24,12 @@ Im Browser können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht er
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten der Domain bzw. der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) sowie der DNS-Server.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zum Verwalten der Domain bzw. der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) sowie der DNS-Server.
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
@@ -44,7 +44,7 @@ Im Browser können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht er
 > Daher empfehlen wir Ihnen dringend, die [automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#in-der-praktischen-anwendung) für alle Ihre OVHcloud Abonnements zu aktivieren.
 >
 
-Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Ihren Namen, um das Kontextmenü anzuzeigen, und dann auf `Produkte und Dienstleistungen`{.action}.
+Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](/links/manager) auf Ihren Namen, um das Kontextmenü anzuzeigen, und dann auf `Produkte und Dienstleistungen`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}
 
@@ -56,7 +56,7 @@ Nach dieser Verlängerung ist Ihre Website innerhalb von maximal 48 Stunden verf
 
 ### Schritt 2: DNS Server überprüfen
 
-Um die Gültigkeit Ihrer [DNS Server](/pages/web_cloud/domains/dns_server_general_information) zu überprüfen, klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Domainnamen`{.action} und dann auf die Domain Ihrer Website.
+Um die Gültigkeit Ihrer [DNS Server](/pages/web_cloud/domains/dns_server_general_information) zu überprüfen, klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Domainnamen`{.action} und dann auf die Domain Ihrer Website.
 
 #### Szenario 1: keine Anomalien bei den DNS Servern
 
@@ -86,7 +86,7 @@ Ihre Website wird dann innerhalb von maximal 48 Stunden verfügbar sein.
 
 > [!warning]
 >
-> Kontaktieren Sie in diesem Fall den Hoster Ihrer DNS Zone, Ihren Webmaster oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/), bevor Sie die Änderung vornehmen.
+> Kontaktieren Sie in diesem Fall den Hoster Ihrer DNS Zone, Ihren Webmaster oder die [OVHcloud Partner](/links/partner), bevor Sie die Änderung vornehmen.
 >
 > Es ist möglich, dass die von Ihrer Domain verwendeten DNS Server funktionieren und dass das Problem beim Zugriff auf Ihre Website auf einen fehlenden oder fehlerhaften Eintrag in der [DNS Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) zurückzuführen ist. Jede Änderung der DNS Server kann dazu führen, dass Ihre E-Mail Adressen oder andere Online-Anwendungen nicht mehr verfügbar sind.
 >
@@ -115,7 +115,7 @@ In diesem Schritt ermitteln Sie die IP-Adresse Ihres Hostings und fügen sie zu 
 
 Wenn Ihre Website nicht auf der OVHcloud Infrastruktur gehostet ist oder von einem anderen Anbieter verwaltet wird, kontaktieren Sie bitte den zuständigen Support.
 
-Wenn Ihre Website auf einem unserer [Hosting-Angebote](https://www.ovhcloud.com/de/web-hosting/) gehostet wird, wählen Sie aus `Hosting-Pakete`{.action} den entsprechenden Dienst aus.
+Wenn Ihre Website auf einem unserer [Hosting-Angebote](/links/web/hosting) gehostet wird, wählen Sie aus `Hosting-Pakete`{.action} den entsprechenden Dienst aus.
 
 Kopieren Sie im Tab `Allgemeine Informationen`{.action} die IPv4- und/oder IPv6-Adresse Ihrer Domain.
 
@@ -135,8 +135,8 @@ Ihre Website wird dann innerhalb von maximal 24 Stunden verfügbar sein.
 
 [Die häufigsten Fehler bei 1-Klick-Modulen beheben](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

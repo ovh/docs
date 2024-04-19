@@ -16,8 +16,8 @@ Su base de datos puede contener una gran cantidad de información esencial para 
 
 ## Requisitos
 
-- Tener una [instancia Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es/web-hosting/))
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener una [instancia Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](/links/web/hosting))
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -27,7 +27,7 @@ Su base de datos puede contener una gran cantidad de información esencial para 
 
 ### Guardar y exportar una base de datos desde el área de cliente
 
-Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en la pestaña `Web` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos. Acceda a la pestaña `Bases de datos`.
+Acceda al [área de cliente de OVHcloud](/links/manager). Haga clic en la pestaña `Web` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos. Acceda a la pestaña `Bases de datos`.
 
 En la columna **"Copias de seguridad"**, la cifra corresponde al número de copias de seguridad disponibles para la base de datos.
 
@@ -118,8 +118,8 @@ pg_dump —host=servidor —port=puerto —user=usuario —password=contraseña 
 
 [Restaurar e importar una base de datos en su servidor de bases de datos](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Créer une première instance Public Cloud et s'y connecter"
 excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre première instance Public Cloud'
-updated: 2024-03-12
+updated: 2024-04-03
 ---
 
 ## Objectif
@@ -133,7 +133,7 @@ La clé est prête lorsque la barre de progression est pleine.
 
 ![clé de sauvegarde](images/puttygen_03a.png){.thumbnail}
 
-Vous pouvez sélectionner et copier la clé publique à partir de cette fenêtre pour l'enregistrer dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud).
+Vous pouvez sélectionner et copier la clé publique à partir de cette fenêtre (sous la mention : "Public key for pasting into OpenSSH authorized_keys file") pour l'enregistrer dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud).
 
 Enregistrez les deux clés dans des fichiers et utilisez l'option pour entrer une phrase secrète (passphrase). Étant donné que seule la clé privée correspondante sera requise pour accéder à votre instance Public Cloud depuis votre poste de travail, des mesures de sécurité appropriées doivent être appliquées à ce stade. La passphrase doit être entrée lorsqu'une connexion à l'instance est établie.
 
@@ -143,7 +143,7 @@ Quelle que soit la méthode utilisée pour créer les clés SSH, vous disposez m
 
 > [!primary]
 >
-Les clés SSH stockées sont utiles pour accélérer la création de vos instances. Pour modifier les paires de clés et ajouter des utilisateurs ultérieurement, reportez-vous au guide [Configurer des clés SSH supplémentaires](/pages/public_cloud/compute/configuring_additional_ssh_keys).
+> Les clés SSH stockées sont utiles pour accélérer la création de vos instances. Pour modifier les paires de clés et ajouter des utilisateurs ultérieurement, reportez-vous au guide [Configurer des clés SSH supplémentaires](/pages/public_cloud/compute/configuring_additional_ssh_keys).
 >
 
 Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `SSH Keys`{.action} dans la barre de navigation de gauche sous `Project Management`.
@@ -228,7 +228,7 @@ Le mode Public est le modèle de réseau classique, il permet à vos instances d
 
 Le mode Privé vous offre la possibilité d'affecter vos instances uniquement à un réseau privé. Les instances de ce mode ne peuvent être exposées au réseau public qu'à l'aide d'un service Gateway ou Load Balancer avec des Floating IPs. Pour plus d'informations, consultez notre documentation sur les [solutions réseau pour le Public Cloud OVHcloud](/products/public-cloud-network).
 
-Une fois votre mode choisi, sélectionnez un réseau privé auquel attacher votre instance ou cliquez sur `Créer un nouveau réseau privé`{.action} pour en créer un nouveau.
+Une fois votre mode choisi, sélectionnez un réseau privé auquel attacher votre instance ou cliquez sur `Créer un nouveau réseau privé`{.action} pour en créer un nouveau. Si vous sélectionnez ce dernier choix, vous serez redirigé vers la page de création du réseau privé et vous devrez refaire ultérieurement l'intégralité du parcours de commande de votre instance. Il est donc préférable de créer un réseau privé en amont de la création de votre instance.
 
 Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la dernière étape et définir votre mode de facturation.
 

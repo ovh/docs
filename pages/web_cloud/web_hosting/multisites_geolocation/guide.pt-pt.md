@@ -23,15 +23,15 @@ A opção de geolocalização no seu alojamento pode ser útil para o referencia
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Dispor de um [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
-- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Dispor de um [alojamento partilhado OVHcloud](/links/web/hosting)
+- Dispor de um [nome de domínio](/links/web/domains)
   
 ## Instruções
 
 Para os websites principalmente consultados no estrangeiro e alojados na nossa infraestrutura de alojamento partilhado OVHcloud, propomos uma opção de geolocalização por endereço IP. Permite uma melhor referenciação dos websites no país onde está situado o endereço IP escolhido com a opção.
 
-Para utilizar a opção de geolocalização por IP, ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+Para utilizar a opção de geolocalização por IP, ligue-se ao seu [Área de Cliente OVHcloud](/links/manager){.external}.
 
 Uma vez conectado, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento correspondente na lista.<br>
 A seguir, clique no separador `Multisite`{.action} e, a seguir, no botão `...`{.action} à direita do seu domínio na tabela. Por fim, clique em `Modificar o domínio`{.action}.
@@ -48,7 +48,7 @@ Clique em `Seguinte`{.action} e depois em `Validar`{.action} a partir da janela 
 
 >[!primary]
 >
-> Se a zona DNS ativa do seu domínio for inteiramente gerida no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), a entrada do tipo A na zona DNS do seu domínio mudará automaticamente. Para verificar se o endereço IP foi atualizado, consulte o nosso manual sobre a [criação de uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+> Se a zona DNS ativa do seu domínio for inteiramente gerida no seu [Área de Cliente OVHcloud](/links/manager), a entrada do tipo A na zona DNS do seu domínio mudará automaticamente. Para verificar se o endereço IP foi atualizado, consulte o nosso manual sobre a [criação de uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 >
 > Caso contrário, deverá efetuar a modificação manualmente junto do fornecedor que gere a zona DNS ativa do seu domínio. Encontre [aqui](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) a documentação que identifica todos os endereços IP da nossa infraestrutura de alojamento partilhado OVHcloud.
 >
@@ -57,8 +57,8 @@ Clique em `Seguinte`{.action} e depois em `Validar`{.action} a partir da janela 
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

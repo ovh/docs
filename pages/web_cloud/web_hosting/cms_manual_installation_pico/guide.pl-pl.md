@@ -16,15 +16,15 @@ Szybkie tworzenie stron WWW możliwe jest dzięki systemowi Pico **CMS** (**C**o
 
 ## Wymagania początkowe
 
-- Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/).
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie hostingu [OVHcloud](/links/web/hosting).
+- Posiadanie [domeny](/links/web/domains).
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
 ### Przygotowanie do instalacji
 
-Aby zainstalować CMS **Pico** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/), należy wykonać kilka czynności przygotowawczych.
+Aby zainstalować CMS **Pico** na Twoim [hostingu](/links/web/hosting), należy wykonać kilka czynności przygotowawczych.
 
 Postępuj zgodnie z**wszystkimi krokami** opisanymi w tutorialu [Instalacja ręczna modułu CMS](/pages/web_cloud/web_hosting/cms_manual_installation), aby przejść do kolejnego etapu.
 
@@ -118,6 +118,6 @@ Właśnie ręcznie zainstalowałeś CMS Pico na Twoim hostingu OVHcloud. Po skon
 
 [Tutorial - Zainstaluj ręcznie CMS na hostingu](/pages/web_cloud/web_hosting/cms_manual_installation)
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

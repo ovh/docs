@@ -23,8 +23,8 @@ Le soluzioni di hosting Web OVHcloud includono uno spazio di storage in cui è p
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} (escluso il servizio [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/))
-- In base al metodo utilizzato, disporre dell’accesso alla gestione della soluzione di hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o della password FTP per accedere allo spazio di storage 
+- Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting){.external} (escluso il servizio [Cloud Web](/links/web/hosting-cloud-web-offer))
+- In base al metodo utilizzato, disporre dell’accesso alla gestione della soluzione di hosting Web dallo [Spazio Cliente OVHcloud](/links/manager){.external} o della password FTP per accedere allo spazio di storage 
 
 ## Procedura
 
@@ -52,7 +52,7 @@ Inoltre, dovrai indicare il metodo di ripristino che intendi adottare:
 >
 > I nostri sistemi installano il backup sul tuo hosting prima di eliminare il contenuto FTP che verrà sostituito dal ripristino.
 >
-> Per verificare la quota utilizzata sull'hosting, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Accedi alla sezione `Web Cloud`{.action} e clicca su `Hosting`{.action}. Seleziona il nome dell'hosting interessato. 
+> Per verificare la quota utilizzata sull'hosting, accedi allo [Spazio Cliente OVHcloud](/links/manager). Accedi alla sezione `Web Cloud`{.action} e clicca su `Hosting`{.action}. Seleziona il nome dell'hosting interessato. 
 >
 > La quota utilizzata compare sulla pagina che appare:
 >
@@ -83,11 +83,11 @@ Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui
 > In questo caso:
 >
 > - I nostri team inviano un'email al [contatto amministratore](/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti) dell'hosting. 
-> - Lo stato di "manutenzione" compare nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nella sezione `Web Cloud`{.action}, clicca sul tuo servizio nella sezione `Hosting`{.action} e poi sulla scheda `Informazioni generali`{.action}.
+> - Lo stato di "manutenzione" compare nello [Spazio Cliente OVHcloud](/links/manager){.external}. Nella sezione `Web Cloud`{.action}, clicca sul tuo servizio nella sezione `Hosting`{.action} e poi sulla scheda `Informazioni generali`{.action}.
 > - Il(i) sito(i) ospita(i) mostra(no) una pagina "403 Forbidden".
 >
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `Ripristina un backup`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `Ripristina un backup`{.action}.
 
 ![backupftp](images/restore-backup.png){.thumbnail}
 
@@ -111,7 +111,7 @@ Clicca su `Conferma`{.action} per avviare l’operazione.
 
 > [!primary]
 >
-> Il ripristino automatico può richiedere da qualche minuto a qualche ora. Se dura **più di 24 ore**, contatta [il supporto OVHcloud](https://www.ovhcloud.com/it/support-levels/).
+> Il ripristino automatico può richiedere da qualche minuto a qualche ora. Se dura **più di 24 ore**, contatta [il supporto OVHcloud](/links/support).
 >
 
 ### Ripristina un file da un software o un’interfaccia Web <a name="viainterface"></a>
@@ -131,7 +131,7 @@ Per prima cosa, definisci quale software o interfaccia utilizzerai per accedere 
 
 - **Cyberduck**: il download di questo client è disponibile dal sito ufficiale. Per maggiori informazioni consulta la nostra [guida all’utilizzo di Cyberduck (MAC)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}, tenendo però presente che non si sostituisce alla documentazione ufficiale del software.
 
-- **FTP Explorer**: questa interfaccia è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `FTP - SSH`{.action} e poi sul pulsante `FTP Explorer`{.action}.
+- **FTP Explorer**: questa interfaccia è disponibile nello [Spazio Cliente OVHcloud](/links/manager){.external}: seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `FTP - SSH`{.action} e poi sul pulsante `FTP Explorer`{.action}.
 
 A questo punto, prosegui con lo step successivo.
 
@@ -197,8 +197,8 @@ A questo punto non ti resta che ripristinare i file: recuperali esplorando il co
 
 [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

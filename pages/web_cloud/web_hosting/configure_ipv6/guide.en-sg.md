@@ -20,9 +20,9 @@ Our web hosting plans have been compatible with IPv6 since 2011. However, enabli
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-sg/domains/){.external}
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A [domain name](/links/web/domains){.external}
+- An [OVHcloud web hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -30,7 +30,7 @@ Our web hosting plans have been compatible with IPv6 since 2011. However, enabli
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 If your website is not configured to work with an IPv6 address, you can add [the IPv6 address of your OVHcloud web hosting](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) in your domain name’s active DNS zone. The goal is for web browsers to find an IPv6 address associated with your website via your domain name.
@@ -41,7 +41,7 @@ To check if your website already uses an IPv6 address, use [ipv6-test.com](https
 
 ### Step 1: Retrieve your web hosting plan’s IPv6 address
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. In the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, select the plan concerned, then go to the `General information`{.action} tab.
+Log in to your [OVHcloud Control Panel](/links/manager){.external}. In the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, select the plan concerned, then go to the `General information`{.action} tab.
 
 In the **IPv6** box, copy the address and proceed to the next step.
 
@@ -68,8 +68,8 @@ Insert the previously copied IPv6 address using the **AAAA** record type.
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit#edit-your-domain-names-ovhcloud-dns-zone)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

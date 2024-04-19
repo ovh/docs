@@ -16,10 +16,10 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 
 ## Prérequis
 
-- Un [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}
+- Un [hébergement web OVHcloud](/links/web/hosting){.external}
 - Un e-mail confirmant que votre hébergement web a été configuré;
-- Un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} lié à votre hébergement web;
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Un [nom de domaine](/links/web/domains){.external} lié à votre hébergement web;
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
@@ -49,9 +49,9 @@ Les réponses à ces questions peuvent vous aider à cibler certains points spé
 
 L’utilisation des CMS comme WordPress, PrestaShop, Drupal ou Joomla! nécessite plusieurs bibliothèques pour qu’une seule page web puisse gérer un grand nombre d’éléments.
 Les navigateurs Internet doivent pouvoir charger et lire tous ces éléments.
-Nous fournissons des recommandations sur les solutions offertes par l’hébergement web, lesquelles peuvent être utilisées pour les CMS répertoriés ci-dessus sur la [page du produit](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+Nous fournissons des recommandations sur les solutions offertes par l’hébergement web, lesquelles peuvent être utilisées pour les CMS répertoriés ci-dessus sur la [page du produit](/links/web/hosting){.external}.
 
-Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/){.external}.
+Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](/links/web/hosting-best-web){.external}.
 
 ### Étape 2 : Vérification de la version PHP
 
@@ -93,7 +93,7 @@ Pour plus d’information à ce sujet, veuillez vous référer à l’étape 5 c
 
 Établissez une corrélation entre les graphiques d’utilisation des ressources de votre hébergement (voir ci-dessous pour plus d’information) pour déterminer l’origine des retards et consultez les fichiers journaux en vous référant aux dates de ces pointes d’utilisation.
 
-Vous pouvez accéder à vos logs, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+Vous pouvez accéder à vos logs, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](/links/manager){.external}.
 
 Comment accéder aux statistiques et logs :
 
@@ -155,7 +155,7 @@ Découvrez notre [solution CDN](https://www.ovh.com/fr/cdn/){.external}.
 > [!primary]
 > Cette étape est facultative si vous n’utilisez pas de CMS.
 
-Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de votre CMS, vous pouvez consulter une comparaison de nos services sur [la page du produit](https://www.ovhcloud.com/fr/web-hosting/){.external}. 
+Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de votre CMS, vous pouvez consulter une comparaison de nos services sur [la page du produit](/links/web/hosting){.external}. 
 
 - **Utilisation d’un plugin en cache :** L’utilisation d’un CMS implique de nombreuses bibliothèques, si bien qu’une seule page web peut devoir traiter un grand nombre d’éléments. Pour optimiser votre CMS, vous devez utiliser plusieurs plugins en cache pour éviter une régénération du contenu de votre site web chaque fois que le chargement d’une page est en cours. Il est recommandé de rechercher des plugins en cache sur les sites web de la communauté associés au CMS que vous utilisez (Joomla! - PrestaShop - WordPress) pour éviter la régénération de tout le contenu de votre site web chaque fois que vous chargez la page web.
 
@@ -169,7 +169,7 @@ Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de
 Vous pouvez accéder à votre base de données à l’aide de PHPMyAdmin; l'utilisation détaillée de PHPMyAdmin va au-delà de la portée de ce guide. Par conséquent, nous n’aborderons pas le sujet en détail.
 Toutefois, il existe un grand nombre de guides externes qui traitent le sujet.
 
-**Comment accéder à la base de données par le biais de phpMyAdmin :** Pour accéder à votre base de données par le biais de phpMyAdmin, procédez comme suit à partir de [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} :
+**Comment accéder à la base de données par le biais de phpMyAdmin :** Pour accéder à votre base de données par le biais de phpMyAdmin, procédez comme suit à partir de [l’espace client OVHcloud](/links/manager){.external} :
 
 - Cliquez sur votre domaine dans la section `Hébergement`{.action} ;
 
@@ -233,7 +233,7 @@ Par exemple :
 
 #### Web Cloud Databases
 Si, en dépit de toutes les modifications et mesures d’optimisation que vous avez appliquées, la base de données est toujours lente, ou si un grand nombre de requêtes sont envoyées à la base de données, vous pourrez éventuellement opter pour notre offre Web Cloud Databases pour disposer de plus de ressources.
-[Consulter notre offre Web Cloud Databases sur le site](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external}.
+[Consulter notre offre Web Cloud Databases sur le site](/links/web/hosting-options-startsql){.external}.
 
 ## Aller plus loin
 
@@ -243,8 +243,8 @@ Si, en dépit de toutes les modifications et mesures d’optimisation que vous a
 
 [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

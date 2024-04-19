@@ -26,7 +26,7 @@ Aby poprawnie korzystać z pliku ".htaccess", musisz znać i przestrzegać nast�
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i/lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) i/lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
 >
 > Przykłady, które będą następnie wyświetlane są wprowadzane do pliku ".htaccess". Uwaga, reguły, które określiłeś w tym pliku, mają bezpośrednie konsekwencje dla Twojej strony WWW. Sprawdź systematycznie dodawanie reguł przed ich wdrożeniem na Twojej stronie WWW. 
 > 
@@ -35,7 +35,7 @@ Aby poprawnie korzystać z pliku ".htaccess", musisz znać i przestrzegać nast�
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu OVHcloud](/links/web/hosting)
 
 ## W praktyce
 
@@ -144,8 +144,8 @@ Poniższa linia przekieruje osobę odwiedzającą, która ma błąd **404** na T
 
 [Prześlij link dostępowy do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

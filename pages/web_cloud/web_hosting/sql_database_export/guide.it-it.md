@@ -16,21 +16,21 @@ I database sono utilizzati dalla maggior parte dei siti Web e **C**ontent **M**a
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
-- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
-- In base al metodo di backup scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o disporre dei dati di connessione al database
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
+- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
+- In base al metodo di backup scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVHcloud](/links/manager){.external} o disporre dei dati di connessione al database
 
 ## Procedura
 
 Prima di iniziare, definisci il metodo che intendi utilizzare per recuperare il backup del database. Le opzioni disponibili sono diverse:
 
-- **Utilizza lo strumento di backup di OVHcloud**: permette di recuperare i backup dei tuoi database dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Questo metodo non richiede particolari competenze tecniche.
+- **Utilizza lo strumento di backup di OVHcloud**: permette di recuperare i backup dei tuoi database dallo [Spazio Cliente OVHcloud](/links/manager){.external}. Questo metodo non richiede particolari competenze tecniche.
 
 - **Effettuare il backup dall’interfaccia web phpMyAdmin** : per effettuare l’operazione è necessario connettersi all’interfaccia *phpMyAdmin*. per utilizzare al meglio l’interfaccia *phpMyAdmin*.
 
 - **Utilizza uno script per il backup** : per poter effettuare il backup è necessario creare uno script e salvarlo sull’hosting Web OVHcloud. Per questa creazione sono necessarie conoscenze specifiche.
 
-- **Effettua il backup da un comando SSH**: questo metodo richiede l’accesso allo spazio di storage FTP tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso. Questo tipo di accesso richiede conoscenze avanzate e una soluzione [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} specifica.
+- **Effettua il backup da un comando SSH**: questo metodo richiede l’accesso allo spazio di storage FTP tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso. Questo tipo di accesso richiede conoscenze avanzate e una soluzione [hosting Web OVHcloud](/links/web/hosting){.external} specifica.
 
 > [!success]
 >
@@ -45,12 +45,12 @@ Continua la lettura in base al metodo di backup scelto.
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/). OVHcloud non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) della guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner). OVHcloud non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) della guida.
 >
 
 ### Recuperare un backup tramite lo strumento di OVHcloud
 
-Per accedere allo strumento di backup di OVHcloud, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting interessato. e clicca sulla scheda `Database`{.action}.
+Per accedere allo strumento di backup di OVHcloud, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting interessato. e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Da questo momento è possibile scegliere se effettuare un nuovo backup o ripristinarne uno esistente.
 
@@ -80,7 +80,7 @@ Per scaricare un backup, clicca sul pulsante `...`{.action} a destra del backup 
 
 ### Recupera un backup dall'interfaccia web phpMyAdmin
 
-Per effettuare l’operazione, accedi a *phpMyAdmin*. Per conoscere il link di accesso a quest’ultimo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting interessato. e clicca sulla scheda `Database`{.action}.
+Per effettuare l’operazione, accedi a *phpMyAdmin*. Per conoscere il link di accesso a quest’ultimo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}, clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting interessato. e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sul pulsante `...`{.action} in corrispondenza del database interessato e seleziona `Accedi a phpMyAdmin`{.action}.
 
@@ -94,7 +94,7 @@ Accedi all’interfaccia di connessione a *phpMyAdmin*, inserisci le informazion
 
 > [!warning]
 >
-> L’interfaccia *phpMyAdmin* non è stata creata da OVHcloud: sarà necessario effettuare l’operazione in base alle proprie conoscenze. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o il fornitore dell’interfaccia. OVH non sarà infatti in grado di fornirti assistenza.
+> L’interfaccia *phpMyAdmin* non è stata creata da OVHcloud: sarà necessario effettuare l’operazione in base alle proprie conoscenze. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o il fornitore dell’interfaccia. OVH non sarà infatti in grado di fornirti assistenza.
 >
 
 ### Recuperare un backup utilizzando uno script
@@ -103,7 +103,7 @@ Questa operazione prevede diversi step. Per prima cosa, assicurati di avere a di
 
 > [!warning]
 >
-> Questa soluzione richiede competenze di programmazione. Di seguito vengono fornite alcune informazioni su come procedere. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/). OVH non sarà infatti in grado di fornirti assistenza.
+> Questa soluzione richiede competenze di programmazione. Di seguito vengono fornite alcune informazioni su come procedere. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner). OVH non sarà infatti in grado di fornirti assistenza.
 >
 
 #### Step 1: crea lo script di backup
@@ -155,7 +155,7 @@ Per effettuare questa operazione è necessario interagire con lo spazio di stora
 
 > [!warning]
 >
-> Per utilizzare questo tipo di accesso sono necessarie competenze tecniche avanzate. Qui di seguito ti forniamo alcune informazioni su come procedere. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/). OVH non sarà infatti in grado di fornirti assistenza.
+> Per utilizzare questo tipo di accesso sono necessarie competenze tecniche avanzate. Qui di seguito ti forniamo alcune informazioni su come procedere. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner). OVH non sarà infatti in grado di fornirti assistenza.
 >
 
 Una volta effettuato l’accesso in SSH allo spazio di storage FTP, esegui un comando per effettuare il backup del database. Qui sotto ne proponiamo uno di esempio. Ti ricordiamo che, nel momento in cui il comando viene eseguito nel terminale, il backup verrà realizzato nella directory corrente.
@@ -178,8 +178,8 @@ Sostituisci le informazioni generiche del comando con le informazioni del databa
 
 [Tutorial - Cosa fare quando il database è pieno?](/pages/web_cloud/web_hosting/sql_overquota_database)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

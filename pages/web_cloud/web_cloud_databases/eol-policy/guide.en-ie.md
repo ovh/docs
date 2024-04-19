@@ -13,9 +13,9 @@ OVHcloud managed databases offer several Database Management Systems (DBMS), suc
 
 At least one of the following 3 solutions:
 
-- One of the included databases with a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/).
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance Web Hosting](https://www.ovhcloud.com/en-ie/web-hosting/) offer).
-- A [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) database pack.
+- One of the included databases with a [Web Hosting plan](/links/web/hosting).
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance Web Hosting](/links/web/hosting) offer).
+- A [Start SQL](/links/web/hosting-options-startsql) database pack.
 
 ## Instructions
 
@@ -74,8 +74,8 @@ Termination can be done in two ways:
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>. 

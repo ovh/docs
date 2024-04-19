@@ -23,15 +23,15 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/) o di contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner) o di contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
 
 >
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
-- Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di un [dominio](/links/web/domains)
+- Disporre di una [soluzione di hosting Web](/links/web/hosting)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -47,7 +47,7 @@ Per visualizzare il tuo sito Web, accedi alla sezione `Multisito`{.action} del t
 >
 > Per collegare temporaneamente il tuo dominio a una `Cartella root` che non contiene file **index.php** o **index.html***, puoi vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questo [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> In caso di difficoltà nell'implementare questa configurazione, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Il nostro team di supporto non sarà infatti in grado di fornirti assistenza su eventuali modifiche della programmazione interna del tuo sito.
+> In caso di difficoltà nell'implementare questa configurazione, ti consigliamo di rivolgerti a un [provider specializzato](/links/partner). Il nostro team di supporto non sarà infatti in grado di fornirti assistenza su eventuali modifiche della programmazione interna del tuo sito.
 
 ### Risolvere il caso più comune di una pagina "Index of"
 
@@ -92,8 +92,8 @@ Assicurati inoltre che nella tua directory di destinazione sia presente un file 
 
 [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

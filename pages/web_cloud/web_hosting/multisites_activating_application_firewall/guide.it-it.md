@@ -25,13 +25,13 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
-- Disporre di almeno un [dominio](https://www.ovhcloud.com/it/domains/){.external} associato all'hosting
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting){.external} attivo
+- Disporre di almeno un [dominio](/links/web/domains){.external} associato all'hosting
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e poi su quello corrispondente.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e poi su quello corrispondente.
 
 ### Attiva il firewall applicativo nella configurazione PHP
 
@@ -69,8 +69,8 @@ La tabella visualizzata contiene tutti i domini aggiunti alla tua offerta di hos
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

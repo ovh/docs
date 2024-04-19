@@ -16,14 +16,14 @@ El acceso a los logs y a las estadísticas de su sitio web está incluido en su 
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external} compatible.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Tener contratado un [plan de hosting](/links/web/hosting){.external} compatible.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
 Para acceder a los diferentes datos estadísticos y logs de su alojamiento web, lleve a cabo las siguientes acciones: 
 
-1. Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
 2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
 3. En la columna izquierda, haga clic en el menú desplegable `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
@@ -62,7 +62,7 @@ El campo `Period selection` situado en la parte superior derecha permite selecci
 >
 > No podremos asesorarle sobre la interpretación de los logs de su alojamiento web, ya que solo es cuestión de desarrollo web y no de alojamiento web.
 >
-> No dude en contactar con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene alguna duda.
+> No dude en contactar con un [proveedor especializado](/links/partner) si tiene alguna duda.
 >
 
 Puede visualizar los logs en bruto de su sitio web con un retraso de aproximadamente 5 minutos.
@@ -111,7 +111,7 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 
 También puede consultar el enlace de acceso a las estadísticas / logs directamente desde su área de cliente:
 
-1. Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
 2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
 3. En la columna izquierda, haga clic en el menú desplegable `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
@@ -130,8 +130,8 @@ En la nueva página, consulte la dirección URL de su navegador de internet.
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

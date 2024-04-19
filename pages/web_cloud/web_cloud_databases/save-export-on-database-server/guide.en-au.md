@@ -12,8 +12,8 @@ Your database can contain a lot of essential information for your website. It is
 
 ## Requirements
 
-- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)).
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance web hosting plan](/links/web/hosting)).
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -23,7 +23,7 @@ Your database can contain a lot of essential information for your website. It is
 
 ### Backing up and exporting a database from the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action} in the services bar, then choose the SQL instance concerned. Next, go to the `Databases` tab.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action} in the services bar, then choose the SQL instance concerned. Next, go to the `Databases` tab.
 
 In the **Backups** column, the number corresponds to the number of backups available for your database.
 
@@ -114,8 +114,8 @@ pg_dump --host=server --port=port --user=usernmame --password=password database_
 
 [Restoring and importing a database to your database server](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>. 

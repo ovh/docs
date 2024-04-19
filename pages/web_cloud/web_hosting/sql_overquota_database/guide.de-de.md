@@ -22,15 +22,15 @@ Dieses Tutorial zeigt anhand von Beispielen die möglichen Aktionen, wenn eine O
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit einer dazugehörigen OVHcloud Datenbank.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit einer dazugehörigen OVHcloud Datenbank.
   
 ## In der praktischen Anwendung
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 Wenn Ihre OVHcloud Webhosting-Datenbank (*shared database*) eine bestimmte Sättigung (**overquota**) erreicht, senden unsere Bots eine Benachrichtigung an die E-Mail-Adresse des [Administratorkontakts](/pages/account_and_service_management/account_information/managing_contacts) der Datenbank. 
@@ -57,7 +57,7 @@ Im ersten Schritt werden die großen Tabellen in der Datenbank identifiziert.
 
 Das Passwort für den Zugriff auf Ihre Datenbank erhalten Sie direkt aus der Konfigurationsdatei Ihrer Seite. Führen Sie diese Aktion mithilfe von **Schritt 1** in unserer Anleitung zur [Änderung des Datenbankpassworts](/pages/web_cloud/web_hosting/sql_change_password) durch.
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der Navigationsleiste oben `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie den relevanten Dienst mit der Datenbank aus. Gehen Sie anschließend zum Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie in der Navigationsleiste oben `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie den relevanten Dienst mit der Datenbank aus. Gehen Sie anschließend zum Tab `Datenbanken`{.action}.
 
 Unten auf dem Bildschirm wird eine Tabelle mit den Datenbanken angezeigt.
 
@@ -77,7 +77,7 @@ Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldun
 >
 > Von hier an wirken sich Ihre Aktionen auf den Inhalt Ihrer Datenbank aus. Die Änderungen, die Sie an **phpMyAdmin** vornehmen, können irreversible Folgen haben, wenn sie nicht korrekt durchgeführt werden.
 >
-> Achten Sie auf jeden Befehl, den Sie in der Datenbank ausführen. Sollten Sie Probleme haben, empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. OVHcloud kann Ihnen bezüglich Datenbankinhalten nicht weiterhelfen.
+> Achten Sie auf jeden Befehl, den Sie in der Datenbank ausführen. Sollten Sie Probleme haben, empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren. OVHcloud kann Ihnen bezüglich Datenbankinhalten nicht weiterhelfen.
 >
 
 Sobald die Verbindung hergestellt wurde, wird die folgende Seite angezeigt:
@@ -128,13 +128,13 @@ Führen Sie ein Upgrade Ihres Datenbankdienstes auf ein Angebot durch, das mehr 
 > Um die Größe Ihrer Datenbank zu erhöhen, müssen Sie eine neue, größere Datenbank erstellen und den Inhalt der alten Datenbank in die neue Datenbank kopieren. Es ist nicht möglich, die Größe einer Datenbank, die mit einem Webhosting verbunden ist, direkt zu vergrößern.
 >
 
-Konsultieren Sie unsere Angebotsseite [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/), um sich über die Optionen zu informieren. 
+Konsultieren Sie unsere Angebotsseite [Web Cloud Databases](/links/web/databases), um sich über die Optionen zu informieren. 
 
 Wir empfehlen diese Lösung für große Datenbanken.
 
-Es ist möglich, den Inhalt Ihrer OVHcloud Datenbank direkt in eine andere Ihrer OVHcloud Datenbanken zu kopieren, indem Sie eine Funktion in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nutzen. Weitere Informationen finden Sie in unserer Anleitung „[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)“.
+Es ist möglich, den Inhalt Ihrer OVHcloud Datenbank direkt in eine andere Ihrer OVHcloud Datenbanken zu kopieren, indem Sie eine Funktion in Ihrem [OVHcloud Kundencenter](/links/manager) nutzen. Weitere Informationen finden Sie in unserer Anleitung „[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)“.
 
-Zur Migration auf eine Datenbank außerhalb der Angebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) können Sie den Inhalt Ihrer alten Datenbank mithilfe unserer Anleitungen manuell in eine neue Datenbank verschieben:
+Zur Migration auf eine Datenbank außerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) und [Web Cloud Databases](/links/web/databases) können Sie den Inhalt Ihrer alten Datenbank mithilfe unserer Anleitungen manuell in eine neue Datenbank verschieben:
 
 - [Exportieren Sie Ihre bestehende Datenbank](/pages/web_cloud/web_hosting/sql_database_export)
 - [Erste Schritte mit Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -152,7 +152,7 @@ Bevor Sie die folgenden Schritte ausführen, überprüfen Sie, ob die Daten in d
 
 > [!alert]
 >
-> Der folgende Teil dieses Tutorials zeigt, wie Sie in Ihrer Datenbank gespeicherte Daten löschen. Vergewissern Sie sich, welche Aktionen Sie durchführen müssen und wenden Sie sich im Zweifelsfall an einen [Experten](https://partner.ovhcloud.com/de/directory/).
+> Der folgende Teil dieses Tutorials zeigt, wie Sie in Ihrer Datenbank gespeicherte Daten löschen. Vergewissern Sie sich, welche Aktionen Sie durchführen müssen und wenden Sie sich im Zweifelsfall an einen [Experten](/links/partner).
 >
 
 Für OVHcloud Datenbanken sind verschiedene SQL-Befehle verfügbar, um Inhalte zu beeinflussen.
@@ -203,8 +203,8 @@ DROP TABLE `table_1`
 
 [Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

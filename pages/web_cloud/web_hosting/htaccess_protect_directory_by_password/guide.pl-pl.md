@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Chroń katalog lub interfejs administracyjny Twojej strony internetowej za pomocą plików .htaccess i .htpasswd"
 excerpt: "Dowiedz się, jak zabezpieczyć katalog lub dostęp do administrowania stroną WWW za pomocą uwierzytelnienia za pomocą plików .htaccess i .htpasswd"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 > [!primary]
@@ -21,7 +21,7 @@ Używając dwóch plików konfiguracyjnych (HTTP) Apache do umieszczenia w [prze
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i/lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) i/lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 > Przykłady, które zostaną następnie wyświetlone, znajdują się w plikach o nazwie ".htaccess" i ".htpasswd". Uwaga, reguły, które określiłeś w tych plikach, mają bezpośrednie konsekwencje dla Twojej strony WWW. Sprawdź systematycznie dodawanie reguł przed ich wdrożeniem na Twojej stronie WWW. 
 > 
@@ -30,8 +30,8 @@ Używając dwóch plików konfiguracyjnych (HTTP) Apache do umieszczenia w [prze
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [hostingu](/links/web/hosting)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie danych do logowania do [przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## W praktyce
@@ -46,7 +46,7 @@ Używając dwóch plików konfiguracyjnych (HTTP) Apache do umieszczenia w [prze
 >
 > W przypadku pytań związanych z tworzeniem, użytkowaniem lub programowaniem Twojej strony WWW, pomoc OVHcloud nie będzie w stanie udzielić Ci wsparcia w tym zakresie.
 >
-> W tym celu skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub naszymi [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+> W tym celu skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub naszymi [partnerami OVHcloud](/links/partner).
 >
 
 Opiszemy 4 główne etapy, które należy wykonać, aby chronić dostęp do katalogu lub części Twojej strony WWW:
@@ -124,7 +124,7 @@ Zastąp wyłącznie `plain_text_password1`, `plain_text_password2` i `plain_text
 > Więcej informacji na ten temat znajdziesz w [oficjalnej dokumentacji Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Jeśli dysponujesz hostingiem [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), zaloguj się do hostingu za pomocą [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Przejdź do "**katalog główny**", w którym znajduje się Twój skrypt "crypt.php".
+Jeśli dysponujesz hostingiem [Pro](/links/web/hosting-professional-offer) lub [Performance](/links/web/hosting-performance-offer), zaloguj się do hostingu za pomocą [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Przejdź do "**katalog główny**", w którym znajduje się Twój skrypt "crypt.php".
 
 W tym celu użyj następującej komendy SSH:
 
@@ -150,7 +150,7 @@ php crypt.php
 
 > [!warning]
 >
-> Ze względów bezpieczeństwa zaleca się korzystanie z SSH. Jeśli jednak dysponujesz usługą **Starter** lub [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/), dla której SSH jest niedostępny, możesz również uruchomić plik "crypt.php" za pomocą przeglądarki internetowej.
+> Ze względów bezpieczeństwa zaleca się korzystanie z SSH. Jeśli jednak dysponujesz usługą **Starter** lub [Perso](/links/web/hosting-personal-offer), dla której SSH jest niedostępny, możesz również uruchomić plik "crypt.php" za pomocą przeglądarki internetowej.
 >
 > W tym celu wprowadź następujący adres URL: `https://domain.tld/crypt.php` poprzez modyfikację `domain.tld` przez Twoją własną domenę. Znajduje się to bezpośrednio na pasku adresowym przeglądarki internetowej.
 >
@@ -256,8 +256,8 @@ W skrypcie powyżej zastąp następujące elementy własnymi wartościami:
 
 [Prześlij link dostępowy do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

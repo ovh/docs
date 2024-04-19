@@ -16,13 +16,13 @@ Scopri come creare un negozio online con l'estensione open source **WooCommerce*
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno specialista del settore (https://partner.ovhcloud.com/it/directory/), [amministratore del CMS WordPress](https://wordpress.com/support/){.external} o [amministratore delegato di WooCommerce](https://woocommerce.com/){.external}. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno specialista del settore (/links/partner), [amministratore del CMS WordPress](https://wordpress.com/support/){.external} o [amministratore delegato di WooCommerce](https://woocommerce.com/){.external}. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
   
 ## Prerequisiti
 
-- Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
+- Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
+- Disporre di un [dominio](/links/web/domains)
 - Aver precedentemente [installato WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sul tuo hosting Web
 
 Se non lo hai già fatto, ti consigliamo di utilizzare il protocollo HTTPS prima di continuare con questa guida: "[Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)".
@@ -162,8 +162,8 @@ Alcuni link utili:
 - L'estensione [WooCommerce](https://woocommerce.com/){.external}
 - Il negozio [estensioni WooCommerce](https://woocommerce.com/products/){.external}
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

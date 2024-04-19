@@ -18,8 +18,8 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting) che includa almeno un database.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Utilizzare una versione recente di PHP e un ambiente di esecuzione compatibile sul tuo hosting Web OVHcloud. Scopri lo stato delle diverse versioni disponibili in questa [pagina](https://webhosting-infos.hosting.ovh.net/). Se necessario, consulta la nostra [guida](/pages/web_cloud/web_hosting/configure_your_web_hosting) sull’argomento per modificare rapidamente questa configurazione.
 - La directory (cartella di root) in cui sarà installato il tuo "modulo in 1 click" deve essere vuota o al momento inesistente.
 - Il dominio (con sottodominio se necessario) che verrà utilizzato per il tuo sito web deve essere dichiarato come [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) sul tuo hosting Web OVHcloud.
@@ -37,15 +37,15 @@ Un CMS permette di progettare un sito Web tramite un'interfaccia di facile utili
 
 Tra tutti i CMS, OVHcloud ne propone 4 per l'installazione automatica con i "moduli in 1 click". 
 
-Utilizzando questa soluzione, dovrai scegliere tra i 4 CMS citati sopra. Se hai già scelto OVH, prosegui nella lettura degli step di questa guida. In caso contrario, consulta la nostra pagina [comparativa dei CMS](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/) per effettuare la tua scelta.
+Utilizzando questa soluzione, dovrai scegliere tra i 4 CMS citati sopra. Se hai già scelto OVH, prosegui nella lettura degli step di questa guida. In caso contrario, consulta la nostra pagina [comparativa dei CMS](/links/web/hosting-cms-comparison) per effettuare la tua scelta.
 
-Per installare un CMS non disponibile tramite i nostri "moduli in 1 click", è possibile installarlo manualmente sul tuo hosting. Questo CMS è compatibile con le nostre soluzioni di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
+Per installare un CMS non disponibile tramite i nostri "moduli in 1 click", è possibile installarlo manualmente sul tuo hosting. Questo CMS è compatibile con le nostre soluzioni di [hosting Web OVHcloud](/links/web/hosting).
 
 ![Logo dei CMS](images/cms-logos.png){.thumbnail}
 
 ### Step 2 - accedi alla gestione dei "moduli in 1 click"
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action}, seleziona l'offerta di hosting su cui vuoi installare un "modulo in 1 click" e clicca sulla scheda `CMS in 1 click`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action}, seleziona l'offerta di hosting su cui vuoi installare un "modulo in 1 click" e clicca sulla scheda `CMS in 1 click`{.action}.
 
 In questa interfaccia sono elencati gli eventuali "moduli in 1 click" già installati. è possibile gestire i "moduli in 1 click" e installarne di nuovi.
 
@@ -100,7 +100,7 @@ Una volta completata l'installazione, riceverai un'email con le informazioni di 
 
 > [!primary]
 >
-> L’installazione e la ricezione dell’email possono richiedere fino a 15 minuti a partire dal momento in cui hai cliccato sul pulsante `Installa`{.action} nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> L’installazione e la ricezione dell’email possono richiedere fino a 15 minuti a partire dal momento in cui hai cliccato sul pulsante `Installa`{.action} nel tuo [Spazio Cliente OVHcloud](/links/manager).
 >
 
 #### Installazione avanzata di un "modulo in 1 click"
@@ -142,7 +142,7 @@ Per il database sono richieste le seguenti informazioni aggiuntive:
 > - Il nome del server di un database Web Cloud Database inizia con il tuo identificativo cliente OVHcloud e viene mostrato come segue: `OVHID(without-ovh)-XXX.eu.cloudddb.ovh.net`, dove i **"X"** sono sostituiti dal riferimento del tuo servizio Web Cloud Databases.
 >
 
-- *Nome del database*: questo nome è stato definito durante la creazione del database nello[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- *Nome del database*: questo nome è stato definito durante la creazione del database nello[Spazio Cliente OVHcloud](/links/manager).
 
 - *Porta*: inserisci sistematicamente il numero **3306** (porta di default) per un database incluso con il tuo hosting Web. Per creare un database su un'istanza Web Cloud, consulta [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
@@ -212,7 +212,7 @@ Per maggiori informazioni sulle funzionalità del tuo CMS, contatta il produttor
 
 ## Per saperne di più
 
-[Scegli il CMS per il tuo sito Web](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}.
+[Scegli il CMS per il tuo sito Web](/links/web/hosting-cms-comparison){.external}.
 
 [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
@@ -226,8 +226,8 @@ Per mantenere il pieno controllo sull’installazione del CMS è possibile [inst
 
 Scopri la nostra soluzione [Web Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}.
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

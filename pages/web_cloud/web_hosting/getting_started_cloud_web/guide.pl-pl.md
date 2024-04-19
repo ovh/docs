@@ -16,10 +16,10 @@ Oferta hostingu Cloud Web łączy w sobie 20 lat doświadczenia OVHcloud w zakre
 
 ## Wymagania początkowe
 
-- Posiadanie hostingu SSD [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/)
+- Posiadanie hostingu SSD [Cloud Web](/links/web/hosting-cloud-web-offer)
 - Otrzymanie wiadomość e-mail z potwierdzeniem, że usługa Cloud Web została zainstalowana
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/), pod którą dostępna będzie Twoja strona WWW
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [domeny](/links/web/domains), pod którą dostępna będzie Twoja strona WWW
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -31,7 +31,7 @@ Hosting z dyskami SSD, Cloud Web, oferuje więcej możliwości konfiguracji niż
 
 - **pobierz wymagania techniczne niezbędne do instalacji**: istnieje możliwość, że z projektem, który chcesz zainstalować, wiążą się specyficzne wymagania techniczne.  Zapoznaj się z nimi przed instalacją;
 
-- **upewnij się, że Twój projekt jest kompatybilny z hostingiem Cloud Web**: potrzebny Ci określony framework lub SQL? Jeśli jeszcze tego nie zrobiłeś, upewnij się, że jest on dostępny wraz z Twoim hostingiem [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/).
+- **upewnij się, że Twój projekt jest kompatybilny z hostingiem Cloud Web**: potrzebny Ci określony framework lub SQL? Jeśli jeszcze tego nie zrobiłeś, upewnij się, że jest on dostępny wraz z Twoim hostingiem [Cloud Web](/links/web/hosting-cloud-web-offer).
 
 Po wybraniu różnych możliwości i określeniu ram Twojego projektu możesz przystąpić do jego umieszczenia w sieci.
 
@@ -46,11 +46,11 @@ Aktualnie dostępne języki to:
 - Python
 - Ruby
 
-Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, a następnie wybierz nazwę odpowiedniego hostingu Cloud Web. Teraz przejdź do zakładki `Framework`{.action}.
+Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, a następnie wybierz nazwę odpowiedniego hostingu Cloud Web. Teraz przejdź do zakładki `Framework`{.action}.
 
 Framework jest automatycznie tworzony podczas instalacji hostingu. Oznaczony jest jako `Wybór domyślny` w tabeli, która się wyświetli. Aby zmodyfikować wcześniej skonfigurowany framework, kliknij trzy kropki po jego prawej stronie, a następnie `Modyfikuj`{.action}. 
 
-Możesz również dodawać frameworki, jeśli pozwala na to wybrana oferta [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/). W tym celu kliknij przycisk `Operacje`{.action}, a następnie `Dodaj framework`{.action}. Pamiętaj, że maksymalna liczba frameworków zależy od oferty Cloud Web, którą zamówiłeś.
+Możesz również dodawać frameworki, jeśli pozwala na to wybrana oferta [Cloud Web](/links/web/hosting-cloud-web-offer). W tym celu kliknij przycisk `Operacje`{.action}, a następnie `Dodaj framework`{.action}. Pamiętaj, że maksymalna liczba frameworków zależy od oferty Cloud Web, którą zamówiłeś.
 
 Zanim przejdziesz do kolejnych kroków, upewnij się, że posiadasz framework lub frameworki niezbędne do Twojego projektu.
 
@@ -117,7 +117,7 @@ Aby zainstalować Twój projekt, masz do dyspozycji dwie możliwości. Powtarzaj
 
 #### 1. Użycie modułów CMS OVHcloud
 
-W tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud proponuje cztery moduły CMS, o których możesz dowiedzieć się więcej na stronie [„Twoja strona WWW dzięki modułom CMS”](https://www.ovhcloud.com/pl/web-hosting/uc-website/){.external}.
+W tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud proponuje cztery moduły CMS, o których możesz dowiedzieć się więcej na stronie [„Twoja strona WWW dzięki modułom CMS”](/links/web/hosting-website){.external}.
 
 Jeśli decydujesz się na skorzystanie z modułów CMS OVHcloud, kliknij zakładkę `Moduły CMS`{.action}, a następnie `Dodaj moduł`{.action}.  Będziesz mógł wówczas rozpocząć instalację w trybie „podstawowym” (bez personalizacji) lub „zaawansowanym” (z możliwością personalizacji niektórych elementów).
 
@@ -132,7 +132,7 @@ Jeśli chcesz uzyskać więcej informacji o modułach CMS OVHcloud, zapoznaj si�
 
 #### 2. Ręczna instalacja projektu
 
-W przypadku nowej strony WWW lub migracji strony istniejącej, ręczna instalacja może wymagać odpowiednich kompetencji technicznych. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub kontakt z producentem oprogramowania. 
+W przypadku nowej strony WWW lub migracji strony istniejącej, ręczna instalacja może wymagać odpowiednich kompetencji technicznych. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub kontakt z producentem oprogramowania. 
 
 Jeśli decydujesz się na ręczną instalację, powinieneś posiadać wszystkie pliki strony WWW lub aplikacji, które zamierzasz zainstalować, jak również (o ile jest to niezbędne dla jej poprawnego funkcjonowania), dane dostępowe bazy danych utworzonej uprzednio na hostingu Cloud Web. W przypadku migracji strony WWW zadbaj o wykonanie jej pełnej kopii.
 
@@ -150,8 +150,8 @@ Istnieje kilka rodzajów rekordów DNS w OVHcloud. Będą Cię dotyczyły szczeg
 
 |Rekordy DNS|Powiązana usługa|Gdzie sprawdzić rekordy?|
 |---|---|---|
-|A|Dla strony WWW|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Hosting`{.action} zaznacz odpowiedni hosting Cloud Web. Pobierz adres IP, który wyświetla się obok „IPv4” w zakładce `Informacje ogólne`{.action}.|
-|MX|Dla wiadomości e-mail|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `E-maile`{.action} zaznacz odpowiednią domenę. Pobierz informacje, które wyświetlają się obok „Pola MX” w zakładce `Informacje ogólne`{.action}.|
+|A|Dla strony WWW|W [Panelu klienta](/links/manager){.external}, w sekcji `Hosting`{.action} zaznacz odpowiedni hosting Cloud Web. Pobierz adres IP, który wyświetla się obok „IPv4” w zakładce `Informacje ogólne`{.action}.|
+|MX|Dla wiadomości e-mail|W [Panelu klienta](/links/manager){.external}, w sekcji `E-maile`{.action} zaznacz odpowiednią domenę. Pobierz informacje, które wyświetlają się obok „Pola MX” w zakładce `Informacje ogólne`{.action}.|
 
 #### 2. Sprawdź i/lub zmodyfikuj rekordy DNS
 
@@ -161,14 +161,14 @@ Teraz sprawdź, czy rekordy DNS przypisane do Twojego hostingu Cloud Web i kont 
 >
 > - Jeśli Twoja domena nie używa konfiguracji DNS OVHcloud, przeprowadź zmianę w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 > 
-> - Jeśli domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa konfiguracji DNS OVHcloud. W tym celu przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, zaznacz nazwę odpowiedniej domeny i kliknij zakładkę `Serwery DNS`{.action}.
+> - Jeśli domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa konfiguracji DNS OVHcloud. W tym celu przejdź do [Panelu klienta](/links/manager){.external}, zaznacz nazwę odpowiedniej domeny i kliknij zakładkę `Serwery DNS`{.action}.
 >
 
 Zapoznaj się z poniższymi wskazówkami, aby dowiedzieć się, gdzie przeprowadzić operacje:
 
 |Używana konfiguracja DNS|Gdzie przeprowadzić operacje?|
 |---|---|
-|OVHcloud|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Domeny`{.action} zaznacz odpowiednią domenę. W zakładce `Strefa DNS`{.action} sprawdź i zmodyfikuj niezbędne informacje. W razie potrzeby skorzystaj z naszej dokumentacji [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit){.external}.|
+|OVHcloud|W [Panelu klienta](/links/manager){.external}, w sekcji `Domeny`{.action} zaznacz odpowiednią domenę. W zakładce `Strefa DNS`{.action} sprawdź i zmodyfikuj niezbędne informacje. W razie potrzeby skorzystaj z naszej dokumentacji [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit){.external}.|
 |Inne|W interfejsie dostawcy zarządzającego konfiguracją DNS Twojej domeny. W przypadku trudności w przeprowadzeniu tych operacji zachęcamy do kontaktu z dostawcą zarządzającym konfiguracją DNS Twojej domeny.|
 
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny. Jeśli dodałeś kilka domen do Twojego hostingu Cloud Web w opcji MultiSite, przeprowadź obydwie operacje dla każdej z domen. 
@@ -195,8 +195,8 @@ Jeśli chcesz uzyskać więcej informacji dotyczących korzystania z RoundCube, 
 
 [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

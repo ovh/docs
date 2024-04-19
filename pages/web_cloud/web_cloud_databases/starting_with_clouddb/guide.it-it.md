@@ -17,14 +17,14 @@ La soluzione Web Cloud Databases è associata di default alla rete di hosting We
 
 ## Prerequisiti
 
-- Disporre di un’[istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa nelle soluzioni di [hosting Web performance](https://www.ovhcloud.com/it/web-hosting/))
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un’[istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa nelle soluzioni di [hosting Web performance](/links/web/hosting))
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
 ### Attiva il tuo server Web Cloud Databases incluso con la tua offerta di hosting Web
 
-Se la tua offerta di hosting include l'opzione Web Cloud Databases, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
+Se la tua offerta di hosting include l'opzione Web Cloud Databases, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
 
 Nella scheda `Informazioni generali`, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **Web Cloud Databases**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
 
@@ -34,7 +34,7 @@ Per completare l'operazione segui le istruzioni riportate qui di seguito per det
 
 ### Visualizza le informazioni generali dell'istanza
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Web Cloud Databases`{.action} nel menu a sinistra e seleziona la tua istanza Web Cloud Databases. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, clicca su `Web Cloud Databases`{.action} nel menu a sinistra e seleziona la tua istanza Web Cloud Databases. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
 
 > [!primary]
 >
@@ -201,8 +201,8 @@ Per accedere ai log della soluzione Web Cloud Databases, consulta la nostra guid
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

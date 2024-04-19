@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets (EN)
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2024-04-02
+updated: 2024-04-15
 ---
 
 > [!warning]
@@ -87,6 +87,7 @@ The following table provides the default behavior of the OVHcloud Object Storage
 |--------------------------------------------------------------|--------------------------------------------------------------|
 | Objects created *after* the upload of the replication configuration | Delete marker i.e. objects deleted in the source bucket are not automatically deleted in the destination bucket |
 | Unencrypted objects                                          | Object replicas i.e. objects that are the result of a previous replication operation |
+| | Objects that have already been replicated to a previous destination |
 | Object metadata from the source objects to the replicas      | Objects that are stored in the Cold Archive temporary storage |
 | Objects in the source bucket the bucket owner has permissions to read and access ACLs | Bucket configurations i.e. lifecycle configuration, CORS configuration, bucket ACLs, etc. |
 | Object ACL updates                                           | Actions resulting from Lifecycle Configuration actions |
@@ -104,7 +105,6 @@ A replication configuration is defined through a set of rules within a JSON file
 - **Rule priority** to determine the order of execution when multiple rules exist.
 - **Destination bucket** where the replicated objects will be stored.
 - **Objects to be replicated**: By default, all objects are eligible for replication. However, you can specify a subset of objects by filtering them with a prefix and/or tags.
-- **Optional target storage class**: By default, object replicas will inherit the same storage class as the source objects. If needed, you can specify a different storage class for the replicas.
 
 ### Replication rule structure
 
@@ -246,7 +246,7 @@ Simple replication between 2 buckets:
       "Status": "Enabled",
       "Priority": 1,
       "Filter": { },
-      "DeleteMarkerReplication": { "Status": "Disabled" }
+      "DeleteMarkerReplication": { "Status": "Disabled" },
       "Destination": {
         "Bucket": "arn:aws:s3:::destination-bucket"
       }
@@ -379,10 +379,12 @@ $ aws s3 mb s3://my-source-bucket
 aws --endpoint-url https://s3.sbg.io.cloud.ovh.net --profile default s3 mb s3://my-source-bucket
 ```
 
-#### Activate versioning in destination bucket
+#### Activate versioning in source and destination bucket
 
 ```bash
 $ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
+$ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-source-bucket --versioning-configuration Status=Enabled
+
 ```
 
 #### Apply replication configuration
@@ -390,7 +392,7 @@ $ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.
 Using the AWS CLI, replication configuration is applied on the source bucket.
 
 ```bash
-$ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration <conf.json>
+$ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration file://<<conf.json>
 ```
 
 **_Example:_**: Replicate all objects with prefix "docs" having a tag "importance" with value "high" to `my-destination-bucket` and replicate the delete markers i.e objects marked as deleted in source will be marked as deleted in destination.

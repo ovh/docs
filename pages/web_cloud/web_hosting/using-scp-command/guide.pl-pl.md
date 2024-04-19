@@ -22,7 +22,7 @@ Za pomocą terminala i polecenia Linux można skopiować plik lub folder zawiera
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 **Dowiedz się, jak używać polecenia Secure Copy Protocol (SCP) przez SSH do kopiowania plików z lub na Twój hosting.**
@@ -31,8 +31,8 @@ Za pomocą terminala i polecenia Linux można skopiować plik lub folder zawiera
 
 - Terminal kompatybilny z poleceniami Linux i SSH (na przykład *terminal* MacOS lub emulator *Ubuntu* na Windows)
 - Zaznajomienie się z poleceniami Linux i SSH
-- Posiadanie [hostingu web](https://www.ovhcloud.com/pl/web-hosting/) z dostępem przez SSH
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Posiadanie [hostingu web](/links/web/hosting) z dostępem przez SSH
+- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce
 
@@ -143,6 +143,6 @@ Aby sprawdzić, czy zawartość z Twojego hostingu została lokalnie skopiowana 
 
 [Logowanie do przestrzeni dyskowej FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection)
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

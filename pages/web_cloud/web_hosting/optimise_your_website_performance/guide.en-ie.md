@@ -12,14 +12,14 @@ This guide will help you get a basic understanding on what points can affect per
 **Find out how to improve the performance of your website.**
 
 > [!warning]
-> This use case will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
+> This use case will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation. If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
 - an email confirming that your Web Hosting plan has been set up
-- a [domain name](https://www.ovhcloud.com/en-ie/domains/) that can be used to access your website
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- a [domain name](/links/web/domains) that can be used to access your website
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -49,9 +49,9 @@ Answering those questions can help to focus on specific points and diagnose area
 
 The use of CMS such as WordPress, PrestaShop, Drupal or Joomla! requires many libraries, so that a single web page can handle a lot of elements.
 Internet browsers must load and read all of these elements.
-We provide recommendations on what web hosting offer to use for the above listed CMS on [the product page](https://www.ovhcloud.com/en-ie/web-hosting/){.external}.
+We provide recommendations on what web hosting offer to use for the above listed CMS on [the product page](/links/web/hosting){.external}.
 
-You can find more informations regarding which plan to choose from on [this page](https://www.ovhcloud.com/en-ie/web-hosting/uc-best-web-hosting/){.external}.
+You can find more informations regarding which plan to choose from on [this page](/links/web/hosting-best-web){.external}.
 
 ### Step 2: Checking the PHP version
 
@@ -93,7 +93,7 @@ You can find more details on this topic in the Step 5 below.
 
 Correlate the graphs of resource usage of your hosting (more information below) to find the origin of the delays and consult the logs at the dates of these peaks.
 
-You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](/links/manager){.external}.
 
 How to access statistics and logs:
 
@@ -149,13 +149,13 @@ In order to improve website access website downloads and get naturally optimised
 
 As a result you will improve response times for visitors all over the world because the static parts of your website will be downloaded directly by your visitor in the point of presence which is closest to them.
 
-Discover our [CDN solution here](https://www.ovhcloud.com/en-ie/web-hosting/options/cdn/){.external}.
+Discover our [CDN solution here](/links/web/hosting-options-cdn){.external}.
 
 ### Step 6: Checking the Content Management System (CMS) and plugins used
 
 _This step is optional if you are not using a CMS._
 
-To ensure that your hosting offer is adapted to the needs of your CMS, you can find a comparison of our services on [the product page](https://www.ovhcloud.com/en-ie/web-hosting/){.external}.
+To ensure that your hosting offer is adapted to the needs of your CMS, you can find a comparison of our services on [the product page](/links/web/hosting){.external}.
 
 - **Using a cache plugin:** Using a CMS calls upon several libraries, so that one single web page can deal with an enormous amount of elements. In order to optimise your CMS, you should use several cache plugins to avoid regenerating all of your website content each time a page loads. We recommend that you search for cache plugins on the community websites relating to the CMS that you use (Joomla! - PrestaShop - WordPress) in order to avoid regenerating the entire content of your website each time you load the web page.
 
@@ -167,7 +167,7 @@ _This step is optional if you are not using a database._
 You can access your database using PHPMyAdmin; instructions on how to use PHPMyAdmin would go beyond the scope of this guide, therefore it won't be furtherly detailed.
 However, lots of external guides exist on this matter.
 
-**How to access the database via phpMyAdmin:** To access your database via phpMyAdmin, here is the procedure to follow via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}:
+**How to access the database via phpMyAdmin:** To access your database via phpMyAdmin, here is the procedure to follow via the [OVHcloud Control Panel](/links/manager){.external}:
 
 - Click on your domain under the `Hosting plans`{.action} section.
 - Go to the `Database`{.action} tab.
@@ -228,7 +228,7 @@ Avoid using the "HAVING" clause which can slow down queries. You should also avo
 #### Web Cloud Databases
 If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Web Cloud Databases offer to have more resources available.
 
-[See the Web Cloud Databases offer on our website](https://www.ovhcloud.com/en-ie/web-cloud/databases/).
+[See the Web Cloud Databases offer on our website](/links/web/databases).
 
 ## Go further
 
@@ -238,8 +238,8 @@ If despite all the changes and optimisations you did undertake the database is s
 
 [Getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

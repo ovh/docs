@@ -16,8 +16,8 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
+- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}
+- Dostęp do [Panelu klienta](/links/manager){.external}, sekcja `Web Cloud`{.action}
 
 > [!primary]
 > Tylko hosting WWW **Pro** lub **Performance** umożliwia aktywację kilku użytkowników FTP i połączenie przez SSH.
@@ -36,12 +36,12 @@ Aby zalogować się do przestrzeni dyskowej FTP, pobierz następujące elementy:
 
 > [!primary]
 >
-> Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu podczas jego rejestracji. Są one dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+> Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu podczas jego rejestracji. Są one dostępne w [Panelu klienta OVHcloud](/links/manager){.external}.
 > 
 > **Jeśli dysponujesz już tymi elementami**, przejdź bezpośrednio do etapu 2  [niniejszego przewodnika](#ftp_storage_access).
 > 
 
-Jeśli nie posiadasz tych elementów, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję 'Hosting{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
+Jeśli nie posiadasz tych elementów, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję 'Hosting{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
 
 Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
 
@@ -70,7 +70,7 @@ Poniżej znajduje się opis najważniejszych informacji wyświetlanych na stroni
 
 > [!primary]
 >
-> W zależności od oferty [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}, którą posiadasz, niektóre z informacji opisanych powyżej (zwłaszcza dotyczących SSH) mogą się nie pojawić.
+> W zależności od oferty [hosting OVHcloud](/links/web/hosting){.external}, którą posiadasz, niektóre z informacji opisanych powyżej (zwłaszcza dotyczących SSH) mogą się nie pojawić.
 >
 
 Jeśli nie znasz hasła użytkownika FTP lub SSH, zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
@@ -88,11 +88,11 @@ Połączenie z przestrzenią dyskową FTP można wykonać na kilka sposobów. Pr
 - [2. Połączenie przez program FTP](#ftpsoftware): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przy użyciu programu (takiego jak [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) lub [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
 Najpierw zainstaluj wybrany program/klient FTP na komputerze.
 
-- [3. Połączenie przez dostęp SSH](#ssh): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przez SSH. Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} **Pro** lub **Performance**.
+- [3. Połączenie przez dostęp SSH](#ssh): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przez SSH. Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](/links/web/hosting){.external} **Pro** lub **Performance**.
 
 #### 1. Logowanie przez FTP Explorer <a name="ftpexplorer"></a>
 
-Aby zalogować się do Twojej przestrzeni dyskowej FTP za pomocą "FTP Explorer", zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}.
+Aby zalogować się do Twojej przestrzeni dyskowej FTP za pomocą "FTP Explorer", zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}.
 
 W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}. Wybierz odpowiedni hosting, przejdź do zakładki `FTP - SSH`{.action} i kliknij na przycisk `FTP Explorer`{.action}.
 
@@ -170,8 +170,8 @@ Skorzystaj z naszej dokumentacji "[Korzystanie z połączenia SSH na hostingu](/
 
 [Korzystaj z Cyberduck na Twoim hostingu](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

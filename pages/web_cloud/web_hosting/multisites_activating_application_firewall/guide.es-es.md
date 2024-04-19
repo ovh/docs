@@ -25,13 +25,13 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
-- Tener al menos un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} asociado al alojamiento.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting){.external}.
+- Tener al menos un [dominio](/links/web/domains){.external} asociado al alojamiento.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 ### Activar el firewall de aplicación en la configuración de PHP
 
@@ -69,8 +69,8 @@ La tabla mostrada contiene todos los dominios añadidos al plan de hosting. En l
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

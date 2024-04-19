@@ -44,7 +44,7 @@ You can either use the interactive configuration to generate the configuration f
 > [!primary]
 >
 > To use the interactive configuration, run the following command:
-> `aws --configure`
+> `aws configure`
 >
 
 The configuration file format in the aws client is as follows:

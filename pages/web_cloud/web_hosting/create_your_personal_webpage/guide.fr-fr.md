@@ -12,13 +12,13 @@ Découvre comment créer la première page d'un site web sur un hébergement gra
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 > 
 
 ## Prérequis
 
-- Posséder un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/) ou d'un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/)
+- Posséder un [nom de domaine](/links/web/domains)
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/) ou d'un [hébergement gratuit 100M](/links/web/domains-free-hosting)
 - Avoir un éditeur de texte (bloc-notes, TextEdit, Notepad++, etc.)
 - Avoir installé un client FTP (tel que [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) pour téléverser (déposer sur l'hébergement) ses fichiers sur son espace dédié.
 
@@ -173,14 +173,14 @@ Vous pouvez voir le résultat dans votre navigateur : par défaut, les élément
 
 #### Ajouter des images pour rendre votre page plus attrayante
 
-Le web est un média avant tout visuel. Nous allons voir dans cette partie comment insérer des images dans votre contenu. L'offre d'hébergement gratuit 100M vous propose un espace de stockage de 100 Mo. C'est suffisant pour vos pages HTML et CSS, mais cela peut être limité si vous souhaitez mettre beaucoup d'images sur votre site. Nous vous suggérons, dans ce cas de figure, de souscrire à une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) permettant de bénéficier d'un stockage plus conséquent.
+Le web est un média avant tout visuel. Nous allons voir dans cette partie comment insérer des images dans votre contenu. L'offre d'hébergement gratuit 100M vous propose un espace de stockage de 100 Mo. C'est suffisant pour vos pages HTML et CSS, mais cela peut être limité si vous souhaitez mettre beaucoup d'images sur votre site. Nous vous suggérons, dans ce cas de figure, de souscrire à une [offre d'hébergement web OVHcloud](/links/web/hosting) permettant de bénéficier d'un stockage plus conséquent.
 
 La balise HTML utilisée pour afficher une image est la balise `<img>`. Contrairement aux balises que nous avons vues précédemment, il n'y a pas d'ouverture et de fermeture de cet élément. On parlera de balise autofermante. Ce sont les attributs de cette balise qui permettront de donner le lien de l'emplacement du fichier et le texte descriptif de l'image.
 
 ##### **Optimiser ses images**
 
 Une image de grande taille, c'est une image qui mettra du temps à être chargée par votre navigateur, particulièrement si vos visiteurs utilisent un smartphone ou une tablette connecté(e) au réseau 4 ou 5G.
-En règle générale, vous devez optimiser vos images et en limiter le poids. Ce poids est exprimé en octets. Les unités généralement utilisées sont les kilo-octets (1 ko = 1.000 octets) ou le méga-octet (1 Mo = 1.000.000 octets). Une image suppérieure à quelques dizaines de ko est considérée comme lourde et mérite d'être optimisée. 
+En règle générale, vous devez optimiser vos images et en limiter le poids. Ce poids est exprimé en octets. Les unités généralement utilisées sont les kilo-octets (1 ko = 1.000 octets) ou le méga-octet (1 Mo = 1.000.000 octets). Une image supérieure à quelques dizaines de ko est considérée comme lourde et mérite d'être optimisée. 
 
 **Exemple** : si vos images pèsent chacune 1 Mo, vous serez limité à moins de 100 images sur votre hébergement gratuit 100M. Si vous parvenez à réduire leur taille entre 50 ko et 200 ko, vous pourriez en présenter jusqu'à plusieurs milliers sur votre page web.
 
@@ -441,8 +441,8 @@ Vous trouverez également des ressources en ligne :
 - [Free Online Image Optimizer](https://kraken.io/web-interface)
 - [TinyJPG](https://tinyjpg.com/) et [TinyPNG](https://tinypng.com/).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

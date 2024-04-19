@@ -17,10 +17,10 @@ Este guia irá fornecer-lhe informações básicas sobre os pontos que podem afe
 
 ## Requisitos
 
-- um [plano de Alojamento Web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}
+- um [plano de Alojamento Web OVHcloud](/links/web/hosting){.external}
 - um e-mail a confirmar a configuração do seu plano de Alojamento Web
-- um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} que pode ser utilizado para aceder ao seu website
-- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- um [nome de domínio](/links/web/domains){.external} que pode ser utilizado para aceder ao seu website
+- acesso à [Área de Cliente OVHcloud](/links/manager){.external}
 
 ## Instruções
 
@@ -50,9 +50,9 @@ A resposta a estas questões pode ajudá-lo a centrar-se em pontos específicos 
 
 A utilização de um CMS, como o WordPress, PrestaShop, Drupal ou Joomla!, requer muitas bibliotecas para permitir que uma única página web possa gerir diversos elementos.
 Os browsers têm de carregar e ler todos estes elementos.
-Fornecemos recomendações sobre a oferta de alojamento web a utilizar para os CMS acima indicados na [página de produto](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+Fornecemos recomendações sobre a oferta de alojamento web a utilizar para os CMS acima indicados na [página de produto](/links/web/hosting){.external}.
 
-Encontrará mais informações acerca do plano a escolher [nesta página](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/){.external}.
+Encontrará mais informações acerca do plano a escolher [nesta página](/links/web/hosting-best-web){.external}.
 
 ### Passo 2: Verificar a versão PHP
 
@@ -94,7 +94,7 @@ Encontrará mais informações sobre este tópico no Passo 5 abaixo.
 
 Correlacione os gráficos da utilização de recursos do seu alojamento (mais informações abaixo) para encontrar a origem dos atrasos e consultar os logs nas datas destes picos.
 
-Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Área de Cliente OVHcloud](/links/manager){.external}.
 
 Como aceder às estatísticas e logs:
 
@@ -156,7 +156,7 @@ Conheça a nossa [solução CDN aqui](https://www.ovh.pt/cdn/){.external}.
 
 _Este passo é opcional se não utilizar um CMS._
 
-Para garantir a adaptação da sua oferta de alojamento às necessidades do seu CMS, pode encontrar uma comparação dos nossos serviços na [página de produto](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+Para garantir a adaptação da sua oferta de alojamento às necessidades do seu CMS, pode encontrar uma comparação dos nossos serviços na [página de produto](/links/web/hosting){.external}.
 
 - **Utilização de um plugin de cache:** A utilização de um CMS requer várias bibliotecas para que uma única página web consiga gerir uma grande quantidade de elementos. Para otimizar o seu CMS, deve utilizar diversos plugins de cache para evitar regenerar todo o conteúdo do seu website sempre que uma página é carregada. Recomendamos que procure plugins de cache em websites da comunidade relacionados com o CMS que utiliza (Joomla! - PrestaShop - WordPress) para evitar regenerar todo o conteúdo do seu website sempre que carrega a página web.
 
@@ -168,7 +168,7 @@ _Este passo é opcional se não estiver a utilizar uma base de dados._
 Pode aceder à sua base de dados utilizando o PHPMyAdmin; as instruções sobre como utilizar o PHPMyAdmin sairiam do âmbito deste guia pelo que não serão detalhadas em maior pormenor.
 No entanto, existem vários guias externos sobre esta matéria.
 
-**Como aceder à base de dados via phpMyAdmin:** Para aceder à sua base de dados via phpMyAdmin, siga o procedimento disponibilizado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}:
+**Como aceder à base de dados via phpMyAdmin:** Para aceder à sua base de dados via phpMyAdmin, siga o procedimento disponibilizado na [Área de Cliente OVHcloud](/links/manager){.external}:
 
 - Clique no seu domínio na secção `Alojamento`{.action}.
 - Aceda ao separador `Base de dados`{.action}.
@@ -238,8 +238,8 @@ Se, apesar de todas as alterações e otimizações realizadas, a base de dados 
 
 [Web Cloud Databases - primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

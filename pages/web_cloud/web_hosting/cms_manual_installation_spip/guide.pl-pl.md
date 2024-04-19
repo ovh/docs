@@ -16,15 +16,15 @@ updated: 2024-03-28
 
 ## Wymagania początkowe
 
-- Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającego co najmniej jedną bazę danych.
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/).
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie hostingu [OVHcloud](/links/web/hosting) zawierającego co najmniej jedną bazę danych.
+- Posiadanie [domeny](/links/web/domains).
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
 ### Przygotowanie do instalacji
 
-Aby zainstalować CMS **Spip** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/), należy wykonać kilka czynności przygotowawczych.
+Aby zainstalować CMS **Spip** na Twoim [hostingu](/links/web/hosting), należy wykonać kilka czynności przygotowawczych.
 
 Postępuj zgodnie z **wszystkimi krokami** opisanymi w tutorialu [Instalacja ręczna modułu CMS](/pages/web_cloud/web_hosting/cms_manual_installation), aby przejść do kolejnego etapu.
 
@@ -83,6 +83,6 @@ Właśnie ręcznie zainstalowałeś CMS Spip na Twoim hostingu OVHcloud. Twoja s
 
 [Tworzenie bazy danych na hostingu OVHcloud](/pages/web_cloud/web_hosting/sql_create_database)
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

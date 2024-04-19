@@ -14,9 +14,9 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 
 > [!primary]
 >
-> Questa guida ti mostra come utilizzare la funzione "mail()" di PHP per inviare messaggi da script siti sul tuo [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
+> Questa guida ti mostra come utilizzare la funzione "mail()" di PHP per inviare messaggi da script siti sul tuo [hosting Web OVHcloud](/links/web/hosting).
 >
-> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, consulta la nostra guida sugli [email condivisi - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](/links/web/hosting){.external}, consulta la nostra guida sugli [email condivisi - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -28,16 +28,16 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
-Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud sono disponibili nello [Spazio Cliente OVHcloud](/links/manager){.external}. Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
-La nuova pagina ti permette di seguire e gestire le email automatiche inviate dal tuo [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
+La nuova pagina ti permette di seguire e gestire le email automatiche inviate dal tuo [hosting Web OVHcloud](/links/web/hosting).
 
 ### Presentazione della sezione "Script email"
 
@@ -106,7 +106,7 @@ Questo stato si verifica quando:
 
 - sono state inviate troppe email molto rapidamente
 - troppe email sono tornate in errore
-- hai disattivato la funzionalità dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- hai disattivato la funzionalità dallo [Spazio Cliente OVHcloud](/links/manager).
 
 Per sbloccare la situazione, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
@@ -189,14 +189,14 @@ Il nostro servizio anti-spam analizzerà la situazione e il nostro supporto ti r
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione la sezione che seguirà per supportarti in caso di necessità. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
+> Mettiamo a tua disposizione la sezione che seguirà per supportarti in caso di necessità. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
 >
 
 Anche se ti consigliamo vivamente di privilegiare l'utilizzo della funzione "mail()" di PHP, gli hosting condivisi permettono di inviare email passando per uno script che utilizza il protocollo SMTP (Simple Mail Transfer Protocol). La dimensione totale della tua email non potrà superare i **10 MB** (cioè **7/8 MB senza incapsulamento**).
 
 > [!warning]
 > 
-> Le email emesse con uno script che utilizzano una configurazione SMTP non potranno essere gestite e monitorate dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> Le email emesse con uno script che utilizzano una configurazione SMTP non potranno essere gestite e monitorate dal tuo [Spazio Cliente OVHcloud](/links/manager).
 > 
 
 utilizzando il seguente script, sostituendo i valori `Host`, `Username` e `Password` con i parametri SMTP:
@@ -223,8 +223,8 @@ $mail->Password = "YourEmailPassword";
 
 [Ripristina lo spazio di storage FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

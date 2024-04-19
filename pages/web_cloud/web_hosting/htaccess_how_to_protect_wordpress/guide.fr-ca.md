@@ -12,14 +12,14 @@ Ce tutoriel vous explique comment configurer certaines fonctionnalités de votre
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) ou [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 **Découvrez comment sécuriser votre WordPress avec un ou plusieurs fichiers htaccess.**
 
 ## Prérequis
 
-- Disposer d'un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) et avoir installé WordPress.
+- Disposer d'un [hébergement web](/links/web/hosting) et avoir installé WordPress.
 - Être en capacité d'utiliser un client FTP tel que [FileZilla](https://filezilla-project.org/). Vous pouvez consulter notre [tutoriel sur l'utilisation de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
 Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs de texte comme :
@@ -36,7 +36,7 @@ Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs
 >
 > Si vous n'utilisez pas un CMS, OVHcloud met également à votre disposition un tutoriel sur la [protection d'un répertoire ou de l'interface d'administration de votre site web via des fichiers .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> Pour toute question relative à la création, l'utilisation ou la programmation de votre site web, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou nos [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/). Les équipes du support OVHcloud ne seront pas en mesure de vous apporter une assistance sur ces sujets.
+> Pour toute question relative à la création, l'utilisation ou la programmation de votre site web, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou nos [partenaires OVHcloud](/links/partner). Les équipes du support OVHcloud ne seront pas en mesure de vous apporter une assistance sur ces sujets.
 >
 
 ## FAQ
@@ -45,7 +45,7 @@ Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs
 
 Un fichier **.htaccess** permet de configurer un serveur web. Dans le cas d'un hébergement web mutualisé, il s'agit du serveur web open source «**Apache**». La syntaxe de ce fichier est définie par l'organisme qui édite et maintient **Apache**. Contrairement à la plupart des fichiers de configuration d'un serveur, les fichiers **.htaccess** sont situés dans les répertoires des sites web, plus précisément dans l'espace de stockage FTP de votre hébergement web. Un fichier **.htaccess** aura des effets sur le répertoire dans lequel il est présent, ainsi que dans tous les sous-répertoires présents à l'intérieur.
 
-Nos offres d'hébergements mutualisés n'autorisent pas les fichiers de configuration serveur. Cependant, les fichiers **.htaccess** donnent la possibilité de modifier certaines caractéristiques et comportements. De plus, il n'est pas nécessaire de redémarrer le serveur **Apache** afin que les indications et modifications écrites dans le fichier **.htaccess** soient prises en compte. L'ensemble de nos offres d'[hébergement web mutualisé OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) permettent de configurer des fichiers  **.htaccess**.
+Nos offres d'hébergements mutualisés n'autorisent pas les fichiers de configuration serveur. Cependant, les fichiers **.htaccess** donnent la possibilité de modifier certaines caractéristiques et comportements. De plus, il n'est pas nécessaire de redémarrer le serveur **Apache** afin que les indications et modifications écrites dans le fichier **.htaccess** soient prises en compte. L'ensemble de nos offres d'[hébergement web mutualisé OVHcloud](/links/web/hosting) permettent de configurer des fichiers  **.htaccess**.
 
 Le point devant le nom du fichier **.htaccess** (qui n'a lui-même pas d'extension) désigne un fichier caché. De plus, ces fichiers ne sont pas accessibles par les utilisateurs extérieurs venant consulter votre site web.
 
@@ -170,8 +170,8 @@ Le répertoire **wp-admin** permet de vous connecter à votre interface d'admini
 
 Consultez le [tutoriel disponible sur le site de la Fondation Apache](https://httpd.apache.org/docs/2.4/fr/howto/htaccess.html).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

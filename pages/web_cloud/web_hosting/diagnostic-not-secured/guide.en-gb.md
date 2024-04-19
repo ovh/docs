@@ -20,13 +20,13 @@ Several error messages may appear if your website is inaccessible. The examples 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
 - control over your domain name’s servers and [DNS zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -39,9 +39,9 @@ To solve this issue, you will need to:
 
 #### Check the hosting IP address
 
-The error messages mentioned [above](#objective) do not necessarily mean that your website is hosted on one of our [Web Cloud offers](https://www.ovhcloud.com/en-gb/web-hosting/). For this reason, you will need to check the IP address of the server your [domain name](https://www.ovhcloud.com/en-gb/domains/) is attached to.
+The error messages mentioned [above](#objective) do not necessarily mean that your website is hosted on one of our [Web Cloud offers](/links/web/hosting). For this reason, you will need to check the IP address of the server your [domain name](/links/web/domains) is attached to.
 
-To find the IP address of your [OVHcloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), click on `Web Cloud`{.action} in the top of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on `Hosting plans`{.action}.
+To find the IP address of your [OVHcloud hosting plan](/links/web/hosting), click on `Web Cloud`{.action} in the top of your [OVHcloud Control Panel](/links/manager), then on `Hosting plans`{.action}.
 
 In the `General information`{.action} tab, note the IPv4 and/or IPv6 address of your web hosting.
 
@@ -49,9 +49,9 @@ In the `General information`{.action} tab, note the IPv4 and/or IPv6 address of 
 
 #### Check the IP address in the DNS zone
 
-You now need to check that the IP address listed in the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) corresponds to the one of your [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+You now need to check that the IP address listed in the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) corresponds to the one of your [OVHcloud Web Hosting plan](/links/web/hosting).
 
-Click on `Domain names`{.action} of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select your website’s domain name.
+Click on `Domain names`{.action} of your [OVHcloud Control Panel](/links/manager) and select your website’s domain name.
 
 Select the `DNS zone`{.action} tab and note the target of the `A` record for your domain name:
 
@@ -62,21 +62,21 @@ Select the `DNS zone`{.action} tab and note the target of the `A` record for you
 |Scenario|What to do|
 |---|---|
 |The IP address listed in the [DNS Zone](/pages/web_cloud/domains/dns_zone_edit) corresponds to your Web Hosting plan’s IP address.|Proceed to [Step 2](#step2).|
-|The IP address listed in the zone does not concern any of the Web Hosting plans within your [OVHcloud account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), but appears in the [list of our Web Cloud servers](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Check that you do not have a hosting plan with this IP address within one of your other [OVHcloud customer accounts](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), if you have several of them. Contact your webmaster or the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) for further information.|
-|The IP address entered in the zone is not your hosting plan’s one, nor does it appear on the [list of our Web Cloud servers](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Contact your webmaster or the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) for further information.|
+|The IP address listed in the zone does not concern any of the Web Hosting plans within your [OVHcloud account](/links/manager), but appears in the [list of our Web Cloud servers](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Check that you do not have a hosting plan with this IP address within one of your other [OVHcloud customer accounts](/links/manager), if you have several of them. Contact your webmaster or the [OVHcloud partners](/links/partner) for further information.|
+|The IP address entered in the zone is not your hosting plan’s one, nor does it appear on the [list of our Web Cloud servers](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Contact your webmaster or the [OVHcloud partners](/links/partner) for further information.|
 |In the `DNS Zone`{.action} tab, a warning indicates that your domain name uses other [DNS](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) servers. These appear as "ns **?** .ovh.net" or "dns **?** .ovh.net" (replace the "**?**" with the relevant DNS server number):<br><br>![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}|You must modify your domain's DNS servers to match the `NS` records of the DNS zone. To perform this operation, follow the instructions of [this guide](/pages/web_cloud/domains/dns_server_general_information#modifying-dns-servers).|
-|In the `DNS Zone`{.action} tab, a message indicates that your domain uses other [DNS](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) servers and these do not appear as "ns **?** .ovh.net" or "dns **?**.ovh.net" :<br><br>![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}|Contact your webmaster or the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) for further information.|
-|Your domain name does not appear in the `Domain names`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).<br><br>Or your domain's `DNS Zone`{.action} tab appears as follows:<br><br>![dns](images/zone-without-domain-top-of-the-page.png){.thumbnail}|It means that your domain name is not managed from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).<br><br>Check if it is managed from one of your other [OVHcloud customer accounts](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), if you have created more than one of them.<br><br>You can also check the registrar of your domain name and its actual DNS servers with our [WHOIS tool](https://www.ovh.co.uk/support/tools/check_whois.pl).<br><br>If necessary, contact your webmaster or the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) about this.|
+|In the `DNS Zone`{.action} tab, a message indicates that your domain uses other [DNS](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) servers and these do not appear as "ns **?** .ovh.net" or "dns **?**.ovh.net" :<br><br>![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}|Contact your webmaster or the [OVHcloud partners](/links/partner) for further information.|
+|Your domain name does not appear in the `Domain names`{.action} section of your [OVHcloud Control Panel](/links/manager).<br><br>Or your domain's `DNS Zone`{.action} tab appears as follows:<br><br>![dns](images/zone-without-domain-top-of-the-page.png){.thumbnail}|It means that your domain name is not managed from your [OVHcloud Control Panel](/links/manager).<br><br>Check if it is managed from one of your other [OVHcloud customer accounts](/links/manager), if you have created more than one of them.<br><br>You can also check the registrar of your domain name and its actual DNS servers with our [WHOIS tool](https://www.ovh.co.uk/support/tools/check_whois.pl).<br><br>If necessary, contact your webmaster or the [OVHcloud partners](/links/partner) about this.|
 
 ### Step 2: check your Web Hosting plan’s SSL certificate <a name="step2"></a>
 
-In the `General information`{.action} tab of the concerned hosting plan within your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), check the `SSL certificate` section:
+In the `General information`{.action} tab of the concerned hosting plan within your [OVHcloud Control Panel](/links/manager), check the `SSL certificate` section:
 
 ![ssl-certificate-in-general-tab](images/no-ssl-certificate.png){.thumbnail}
 
 #### Scenario 1: your Web Hosting plan does not contain any SSL certificate
 
-Activate an [SSL certificate](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/) on your Web Hosting plan by following the instructions in this [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Activate an [SSL certificate](/links/web/hosting-options-ssl) on your Web Hosting plan by following the instructions in this [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 #### Scenario 2: the SSL certificate on your Web Hosting plan does not work
 
@@ -89,7 +89,7 @@ If you have **imported a SSL certificate** from another provider, contact the ap
 
 > [!primary]
 >
-> To check all the emails sent by OVHcloud teams, click on the top right-hand corner of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on `Service emails`{.action}:
+> To check all the emails sent by OVHcloud teams, click on the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then on `Service emails`{.action}:
 >
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 >
@@ -106,8 +106,8 @@ If you have **imported a SSL certificate** from another provider, contact the ap
 
 [Resolving the most common 1-click module errors](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
  
-For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact the [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit einem VPS
 excerpt: Erfahren Sie hier, wie Sie einen VPS in Ihrem Kundencenter verwalten sowie die ersten Schritte zum Start, inklusive Remote-Verbindungen und Sicherheitsmaßnahmen
-updated: 2024-03-14
+updated: 2024-04-05
 ---
 
 > [!primary]
@@ -42,58 +42,68 @@ Der Tab `Start`{.action} enthält wichtige Informationen zu Ihrem Dienst und erm
 
 #### Ihr VPS <a name="yourvps"></a>
 
-In diesem Abschnitt werden Informationen zu diesem VPS und dem Status der Dienstleistung angezeigt.
+In diesem Bereich finden Sie Informationen zum VPS und dem Status der Dienstleistung. Klicken Sie auf die Tabs, um Erläuterungen anzuzeigen.
 
-##### Name
-
-Wenn Sie auf `...`{.action} und dann auf `Namen ändern`{.action}, können Sie einen bezeichnenden Namen für diesen VPS eingeben. Diese Funktion ist nützlich, um die Navigation im Kundencenter zu vereinfachen, wenn Sie mehrere VPS-Dienstleistungen verwalten. Der interne Name der Dienstleistung bleibt im Format *vps-XXXXXXX.vps.ovh.net* erhalten.
-
-##### Boot
-
-Der hier angezeigte Boot-Modus ist entweder der "normale" Modus, in dem das System das installierte Betriebssystem lädt (*LOCAL*), oder der von OVHcloud bereitgestellte **Rescue-Modus** zur Fehlerbehebung. Verwenden Sie den Button `...`{.action}, um den [VPS neu starten](#reboot-current-range), oder ihn im Rescue-Modus zu booten.
-
-Weitere Informationen finden Sie in unserer Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
-
-##### Betriebssystem / Distribution
-
-Dies ist das derzeit installierte Betriebssystem. Verwenden Sie den Button `...`{.action}, um [dasselbe Betriebssystem neu zu installieren oder ein anderes Betriebssystem aus den verfügbaren Optionen auszuwählen](#reinstallvps).
-
-Beachten Sie, dass bei einer Reinstallation alle aktuell auf dem VPS gehosteten Daten (mit Ausnahme zusätzlicher Disks) gelöscht werden.
-
-> [!primary]
->
-> Wenn Sie einen **Windows** VPS bestellt haben, können Sie nur ein Windows Betriebssystem für die Neuinstallation auswählen. Wenn Windows bei der Bestellung nicht ausgewählt wurde, kann es auch nach der Auslieferung des VPS nicht installiert werden.
->
-
-Sobald das System installiert ist, liegt es an Ihnen, relevante Sicherheitsupdates zu implementieren. Weitere Informationen finden Sie [weiter unten](#reinstallvps) und in unserer [Anleitung zur Absicherung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
-
-##### Zone / Standort
-
-Diese Bereiche enthalten Informationen zum Standort Ihres VPS. Dies kann beispielsweise nützlich sein, um Auswirkungen auf Ihren Dienst zu identifizieren, die in [Status Reports](https://bare-metal-servers.status-ovhcloud.com/) aufgeführt sind.
-
+> [!tabs]
+> Name
+>>
+>> Wenn Sie auf `...`{.action} und dann auf `Namen ändern`{.action}, können Sie einen bezeichnenden Namen für diesen VPS eingeben. Diese Funktion ist nützlich, um die Navigation im Kundencenter zu vereinfachen, wenn Sie mehrere VPS-Dienstleistungen verwalten. Der interne Name der Dienstleistung bleibt stets im Format *vps-XXXXXXX.vps.ovh.net* erhalten.
+>>
+> Boot
+>>
+>> Der hier angezeigte Boot-Modus ist entweder der "normale" Modus, in dem das System das installierte Betriebssystem lädt (*LOCAL*), oder der von OVHcloud bereitgestellte **Rescue-Modus** zur Fehlerbehebung. Verwenden Sie den Button `...`{.action}, um den [VPS neu starten](#reboot-current-range), oder ihn im Rescue-Modus zu booten.
+>>
+>> Weitere Informationen finden Sie in unserer Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+>>
+> Betriebssystem / Distribution
+>>
+>> Dies ist das derzeit installierte Betriebssystem. Verwenden Sie den Button `...`{.action}, um [dasselbe Betriebssystem neu zu installieren oder ein anderes Betriebssystem aus den verfügbaren Optionen auszuwählen](#reinstallvps).
+>>
+>> Beachten Sie, dass bei einer Reinstallation alle aktuell auf dem VPS gehosteten Daten (mit Ausnahme zusätzlicher Disks) gelöscht werden.
+>>
+>> > [!primary]
+>> >
+>> > Wenn Sie einen **Windows** VPS bestellt haben, können Sie nur ein Windows Betriebssystem für die Neuinstallation auswählen. Wenn Windows bei der Bestellung nicht ausgewählt wurde, kann es auch nach der Auslieferung des VPS nicht installiert werden.
+>>
+>>
+>> Sobald das System installiert ist, liegt es an Ihnen, relevante Sicherheitsupdates zu implementieren. Weitere Informationen finden Sie [weiter unten](#reinstallvps) und in unserer [Anleitung zur Absicherung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+>> 
+> Zone / Standort
+>>
+>> Diese Bereiche enthalten Informationen zum Standort Ihres VPS. Dies kann beispielsweise nützlich sein, um Auswirkungen auf Ihren Dienst zu identifizieren, die in [Status Reports](https://bare-metal-servers.status-ovhcloud.com/) aufgeführt sind.
+>>
+ 
 #### Ihre Konfiguration
 
-##### Modell
+Klicken Sie auf die Tabs, um Erläuterungen dieses Bereichs anzuzeigen.
 
-Dies ist die kommerzielle Referenz zur Identifizierung des VPS-Modells, das den [VPS-Angeboten auf unserer Website](https://www.ovhcloud.com/de/vps) entspricht.
-
-##### vCores / Arbeitsspeicher / Speicher
-
-Die aktuellen Ressourcen Ihres VPS werden hier angezeigt und können separat durch Klicken auf den entsprechenden Button hochgestuft werden. Beachten Sie, dass Upgrades abhängig vom gewählten VPS-Modell limitiert sind und nur mit einem Upgrade auf eine [höhere Reihe](https://www.ovhcloud.com/de/vps) verfügbar sein können.
+> [!tabs]
+> Modell
+>>
+>> Dies ist die kommerzielle Referenz zur Identifizierung des VPS-Modells, das den [VPS-Angeboten auf unserer Website](https://www.ovhcloud.com/de/vps) entspricht.
+>>
+> vCores / Arbeitsspeicher / Speicher
+>> 
+>> Die aktuellen Ressourcen Ihres VPS werden hier angezeigt und können separat durch Klicken auf den entsprechenden Button hochgestuft werden. Beachten Sie, dass Upgrades abhängig vom gewählten VPS-Modell limitiert sind und nur mit einem Upgrade auf eine [höhere Reihe](https://www.ovhcloud.com/de/vps) verfügbar sein können.
+>> 
 
 #### IP
 
-##### IPv4
+Klicken Sie auf die Tabs, um Erläuterungen dieses Bereichs anzuzeigen.
 
-Die primäre öffentliche IPv4-Adresse des VPS wird bei der Installation automatisch konfiguriert. Weitere Informationen zur Verwaltung von IP-Adressen finden Sie in unserer Anleitung [IP-Adresse als Alias konfigurieren ](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+> [!tabs]
+> IPv4
+>>
+>> Die primäre öffentliche IPv4-Adresse des VPS wird bei der Installation automatisch konfiguriert. Weitere Informationen zur Verwaltung von IP-Adressen finden Sie in unserer Anleitung [IP-Adresse als Alias konfigurieren ](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>>
+> IPv6 / Gateway
+>> 
+>> Hier sehen Sie die öffentliche IPv6-Adresse und die zugehörige Gateway-Adresse. Diese werden bei der Installation automatisch an den VPS gebunden. Weitere Informationen finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>> 
+> Sekundärer DNS
+>>
+>> Diese Funktion ist für das Hosting von DNS-Diensten nützlich. In unserer Anleitung [OVHcloud DNS Server mit einem VPS verwenden](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps) wird dies ausführlich beschrieben.
 
-##### IPv6 / Gateway
-
-Hier sehen Sie die öffentliche IPv6-Adresse und die zugehörige Gateway-Adresse. Diese werden bei der Installation automatisch an den VPS gebunden. Weitere Informationen finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
-
-##### Sekundärer DNS
-
-Diese Funktion ist für das Hosting von DNS-Diensten nützlich. In unserer Anleitung [OVHcloud DNS Server mit einem VPS verwenden](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps) wird dies ausführlich beschrieben.
 
 #### Zusammenfassung der Optionen
 
@@ -228,22 +238,22 @@ Verwenden Sie hierzu die KVM-Konsole: Klicken Sie auf den Button `...`{.action} 
 Um die Erstkonfiguration Ihres Windows VPS abzuschließen, folgen Sie den in den Tabs aufgeführten Schritten:
 
 > [!tabs]
-> **Lokale Einstellungen**
+> 1. **Lokale Einstellungen**
 >>
 >> Sobald die KVM-Sitzung erstellt ist, können Sie die Erstkonfiguration von Windows abschließen, indem Sie **Land/Region**, die bevorzugte **Windows-Sprache** und **Tastaturlayout** konfigurieren. Klicken Sie dann unten rechts auf `Next`{.action}.<br><br>
 >>![KVM](images/setup-03.png){.thumbnail}<br>
 >>
-> **Administratorpasswort**
+> 2. **Administratorpasswort**
 >>
 >> Geben Sie ein Passwort für den Windows `Administrator` / `admin` ein und bestätigen Sie. Klicken Sie dann auf `Finish`{.action}.<br><br>
 >>![KVM](images/setup-04.png){.thumbnail}<br>
 >>
-> **Anmeldebildschirm**
+> 3. **Anmeldebildschirm**
 >>
 >> Die Einstellungen werden angewendet, und der Anmeldebildschirm wird angezeigt. Klicken Sie auf `Send CtrlAltDel`{.action} oben rechts, um sich einzuloggen.<br><br>
 >>![KVM](images/setup-05.png){.thumbnail}<br>
 >>
-> **Administrator-Login**
+> 4. **Administrator-Login**
 >>
 >> Geben Sie das im vorherigen Schritt erstellte Passwort des Accounts `Administrator` ein und klicken Sie auf den `Pfeil`.<br><br>
 >>![KVM](images/setup-06.png){.thumbnail}<br>
@@ -271,21 +281,21 @@ Windows Boot Logs können bei der Diagnose von Serverstörungen hilfreich sein.
 Um sie zu aktivieren, folgen Sie den in den Tabs aufgeführten Schritten:
 
 > [!tabs]
-> **Verbindung mit Server herstellen**
+> 1. **Verbindung mit Server herstellen**
 >>
 >> Vebinden Sie sich mit Ihrem Server über Remote Desktop oder [KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).<br>
 >>
-> Tool **"Ausführen" öffnen**
+> 2. **Tool "Ausführen" öffnen**
 >>
 >> Öffnen Sie das Windows-Startmenü und klicken Sie auf `Run`{.action}.<br><br>
 >>![KVM](images/windowsboot1.png){.thumbnail}<br>
 >>
-> **"msconfig" öffnen**
+> 3. **"msconfig" öffnen**
 >>
 >> Geben Sie "msconfig" ein und klicken Sie auf `OK`{.action}.<br><br>
 >>![KVM](images/windowsboot2.png){.thumbnail}<br>
 >>
-> **Logs aktivieren**
+> 4. **Logs aktivieren**
 >>
 >> Aktivieren Sie im neuen Fenster die Option `Boot log`. Klicken Sie auf `OK`{.action}.<br><br>
 >>![KVM](images/windowsboot3.png){.thumbnail}<br>

@@ -12,13 +12,13 @@ updated: 2023-04-24
 
 ### Come configurare il tuo hosting?
 
-Per configurare il tuo hosting, accedi innanzitutto allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Dalla rubrica `Hosting`{.action} è possibile gestire certificati SSL, versione PHP, opzione CDN, multisito, database, ecc...
+Per configurare il tuo hosting, accedi innanzitutto allo [Spazio Cliente OVHcloud](/links/manager). Dalla rubrica `Hosting`{.action} è possibile gestire certificati SSL, versione PHP, opzione CDN, multisito, database, ecc...
 
 **Consigli e suggerimenti**: Per aiutarti a configurare il tuo hosting, ti invitiamo a consultare la sezione "*Per iniziare*" che trovi [qui](/products/web-cloud-hosting).
 
 ### Come gestire le tue password?
 
-Per gestire le password, è necessario innanzitutto accedere allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se hai dimenticato l’identificativo o la password, clicca su `Non ricordi identificativo o password?`{.action} nella finestra di login. Riceverai un’email con la procedura di rispristino.
+Per gestire le password, è necessario innanzitutto accedere allo [Spazio Cliente OVHcloud](/links/manager). Se hai dimenticato l’identificativo o la password, clicca su `Non ricordi identificativo o password?`{.action} nella finestra di login. Riceverai un’email con la procedura di rispristino.
 
 Per maggiori informazioni, consulta la guida [Impostare e gestire la password di un account OVHcloud](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -30,9 +30,9 @@ Accedi allo Spazio Cliente:
 
 ### Come mettere online il tuo sito? 
 
-Per pubblicare online il tuo sito, è necessario disporre di un [dominio](https://www.ovhcloud.com/it/domains/) che corrisponda all'indirizzo Web da cui il tuo sito sarà accessibile (ad esempio: *miodominio.com*). Ti servirà anche un [hosting](https://www.ovhcloud.com/it/web-hosting/) su cui installare il tuo sito.
+Per pubblicare online il tuo sito, è necessario disporre di un [dominio](/links/web/domains) che corrisponda all'indirizzo Web da cui il tuo sito sarà accessibile (ad esempio: *miodominio.com*). Ti servirà anche un [hosting](/links/web/hosting) su cui installare il tuo sito.
 
-Per seguire gli step necessari alla costruzione del tuo sito, consulta [questa pagina](https://www.ovhcloud.com/it/web-hosting/uc-website/) e segui le istruzioni contenute nella guida [Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
+Per seguire gli step necessari alla costruzione del tuo sito, consulta [questa pagina](/links/web/hosting-website) e segui le istruzioni contenute nella guida [Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
 **Consigli e suggerimenti**: Per aiutarti a creare il tuo sito, OVHcloud ti permette di installare sul tuo hosting un software di assistenza alla creazione di siti (WordPress, PrestaShop, Joomla! e Drupal), grazie alla funzionalità [CMS in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
@@ -46,7 +46,7 @@ Consulta la guida [Condividere un hosting tra più siti](/pages/web_cloud/web_ho
 
 ### Come cambiare il piano di hosting?
 
-Per ordinare la soluzione di hosting Web più adatta alle tue esigenze, consulta le nostre offerte su [questa pagina](https://www.ovhcloud.com/it/web-hosting/).
+Per ordinare la soluzione di hosting Web più adatta alle tue esigenze, consulta le nostre offerte su [questa pagina](/links/web/hosting).
 
 Una volta effettuata la scelta, segui la procedura descritta nella guida [Fai evolvere la tua offerta di hosting Web](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer).
 
@@ -67,7 +67,7 @@ Clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezi
 
 Per aumentare la RAM di un'offerta Web Cloud Database associata a un hosting condiviso **Performance**, è necessario svincolare obbligatoriamente e in precedenza l'offerta Web Cloud Database del tuo hosting **Performance** per passare a un'offerta superiore.
 
-accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Accedi alla sezione `Web Cloud`{.action} e clicca su `Hosting`{.action} nella colonna a sinistra. 
+accedendo allo [Spazio Cliente OVHcloud](/links/manager). Accedi alla sezione `Web Cloud`{.action} e clicca su `Hosting`{.action} nella colonna a sinistra. 
 
 Nella pagina `Informazioni generali`{.action}, in alto a sinistra, è possibile trovare un riquadro `Configurazione`{.action}. A destra della menzione `Web Cloud Databases`{.action}, clicca sul pulsante `...`{.action}, quindi su `Scollega`{.action}. Scegli la durata minima del rinnovo e prosegui fino alla conferma dell'ordine.
 
@@ -84,7 +84,7 @@ Per maggiori informazioni, consulta la nostra guida sulla ["Configurazione di un
 
 ### Cosa fare se il tuo sito Web non funziona? 
 
-Il malfunzionamento del sito può essere spiegato per diversi motivi. Per identificarne la causa, verifica prima di tutto che nessuno dei tuoi abbonamenti sia **rinnovato** accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Il malfunzionamento del sito può essere spiegato per diversi motivi. Per identificarne la causa, verifica prima di tutto che nessuno dei tuoi abbonamenti sia **rinnovato** accedendo allo [Spazio Cliente OVHcloud](/links/manager).
 
 Consulta gli [eventi in corso sulla nostra infrastruttura](https://www.status-ovhcloud.com/). Se tutti i tuoi servizi sono attivi e non subiscono incidenti o interventi di manutenzione, ti consigliamo di eseguire una diagnostica più approfondita.
 
@@ -108,7 +108,7 @@ Sono possibili due scenari. Il tuo sito è stato creato con questo indirizzo Web
 
 > [!warning]
 >
-> L'eliminazione di un database, come quello di un modulo in 1 click, è definitiva. e l'**eliminazione dei backup** dei dati. Prima di rimuovere un sito sull'hosting OVHcloud, assicurati **di essere in grado di ricrearlo allo stesso** modo. Se non sei sicuro delle operazioni da effettuare, contatta il tuo Webmaster o uno dei [nostri partner](https://partner.ovhcloud.com/it/directory/).
+> L'eliminazione di un database, come quello di un modulo in 1 click, è definitiva. e l'**eliminazione dei backup** dei dati. Prima di rimuovere un sito sull'hosting OVHcloud, assicurati **di essere in grado di ricrearlo allo stesso** modo. Se non sei sicuro delle operazioni da effettuare, contatta il tuo Webmaster o uno dei [nostri partner](/links/partner).
 >
 
 Nel primo caso, dopo aver effettuato tutti i backup necessari, elimina il tuo modulo dalla sezione `Hosting` dello Spazio Cliente OVHcloud:
@@ -144,7 +144,7 @@ Questa anomalia indica una configurazione errata dei [server DNS](/pages/web_clo
 
 Il caso più comune è il seguente: il dominio e il servizio di hosting sono stati ordinati separatamente e non sono quindi collegati tra loro tramite la zona DNS.
 
-Accedi alla sezione `Domini`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul dominio interessato e poi sulla scheda `Server DNS`{.action}.
+Accedi alla sezione `Domini`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Clicca sul dominio interessato e poi sulla scheda `Server DNS`{.action}.
 
 Annota i server DNS indicati e clicca sulla scheda `Zona DNS`{.action}.
 
@@ -154,7 +154,7 @@ Confronta i `Destinazione` degli record di tipo `NS` indicati nella scheda `Zona
 
 - Se gli elementi non corrispondono, ma i `Server DNS` indicati nella scheda con lo stesso nome appaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effettua una reinizializzazione seguendo le indicazioni di [questa guida](/pages/web_cloud/domains/dns_server_general_information#reinizializza-i-server-dns).
 
-- Se gli elementi non corrispondono e i `Server DNS` indicati nella scheda con lo stesso nome non compaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contatta il tuo Webmaster o cerca un [provider specializzato](https://partner.ovhcloud.com/it/directory/) tramite la pagina dei [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+- Se gli elementi non corrispondono e i `Server DNS` indicati nella scheda con lo stesso nome non compaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contatta il tuo Webmaster o cerca un [provider specializzato](/links/partner) tramite la pagina dei [partner OVHcloud](/links/partner).
 
 ### Cosa fare se il tuo sito mostra un errore "La pagina non si reindirizza correttamente"?
 
@@ -173,7 +173,7 @@ Ripristina il tuo sito allo stato precedente:
 
 - Se il tuo sito contiene un database, consulta la guida [Importare un backup nel database di un hosting Web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#ripristino-dallo-spazio-cliente-ovh).
 
-Se il ripristino non ti consente di ripristinare l'accesso al tuo sito, contatta il tuo Webmaster o cerca un [provider specializzato](https://partner.ovhcloud.com/it/directory/) sul sito dei [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Se il ripristino non ti consente di ripristinare l'accesso al tuo sito, contatta il tuo Webmaster o cerca un [provider specializzato](/links/partner) sul sito dei [partner OVHcloud](/links/partner).
 
 ### Cosa fare se il tuo sito mostra un errore "503 error Backend fetch failed (Varnish cache)"?
 
@@ -181,7 +181,7 @@ Se il ripristino non ti consente di ripristinare l'accesso al tuo sito, contatta
 
 Se hai attivato l'[opzione CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) del tuo hosting, disattiva la modalità *Maintenance* sul tuo sito WordPress o PrestaShop.
 
-Se non hai attivato questa opzione o utilizzato la modalità *Maintenance*, contatta il tuo Webmaster o cerca un [provider specializzato](https://partner.ovhcloud.com/it/directory/) sul sito dei [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Se non hai attivato questa opzione o utilizzato la modalità *Maintenance*, contatta il tuo Webmaster o cerca un [provider specializzato](/links/partner) sul sito dei [partner OVHcloud](/links/partner).
 
 ### Cosa fare se il tuo sito mostra un errore "Your request has been blocked"?
 
@@ -189,7 +189,7 @@ Se non hai attivato questa opzione o utilizzato la modalità *Maintenance*, cont
 
 Questo messaggio indica che il tipo di richiesta HTTP che stai cercando di effettuare sul tuo sito è vietato per un periodo di tempo limitato. In questa situazione, [controlla i log](/pages/web_cloud/web_hosting/logs_and_statistics) del tuo sito per determinare quali richieste abbiano causato il blocco.
 
-Per risolvere eventuali problemi, contatta il tuo Webmaster o uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/).
+Per risolvere eventuali problemi, contatta il tuo Webmaster o uno dei nostri [partner](/links/partner).
 
 ### Cosa fare se il tuo sito mostra un errore "Your IP has been banned"?
 
@@ -199,7 +199,7 @@ Questo messaggio indica che l'indirizzo IP utilizzato per connetterti al tuo sit
 
 In questo caso, esamina i [log del tuo sito](/pages/web_cloud/web_hosting/logs_and_statistics), per determinare quali richieste abbiano provocato questo blocco.<br>
 Verifica anche che il tuo computer non sia infettato da un virus.<br>
-contatta uno dei [nostri partner](https://partner.ovhcloud.com/it/directory/) per verificare il codice informatico del tuo sito.
+contatta uno dei [nostri partner](/links/partner) per verificare il codice informatico del tuo sito.
 
 ### Ho ordinato un dominio con accenti e si affigge in modo strano nel mio Spazio Cliente. Cosa devo fare?
 
@@ -216,6 +216,6 @@ Non c'è nulla da fare in questa situazione. Anche se il tuo dominio compare con
 
 [FAQ - Email condivise MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](/links/support).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

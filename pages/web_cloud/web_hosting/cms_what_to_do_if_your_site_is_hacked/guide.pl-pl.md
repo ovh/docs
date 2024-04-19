@@ -26,13 +26,13 @@ Piractwo może pojawić się na kilka sposobów (niewyczerpująca lista):
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW Cloud](https://www.ovhcloud.com/pl/web-hosting/) na Twojej stronie WWW z hostingiem
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [hostingu WWW Cloud](/links/web/hosting) na Twojej stronie WWW z hostingiem
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -95,7 +95,7 @@ Zalecamy również użycie [menedżera haseł](/pages/account_and_service_manage
 
 > [!warning]
 >
-> W przypadku trudności z wykonaniem opisanych poniżej operacji, należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) w zakresie bezpieczeństwa cybernetycznego.
+> W przypadku trudności z wykonaniem opisanych poniżej operacji, należy skontaktować się z [wyspecjalizowanym dostawcą](/links/partner) w zakresie bezpieczeństwa cybernetycznego.
 >
 
 Skorzystaj z naszego przewodnika na temat [statystyki i logi Twojego hostingu www](/pages/web_cloud/web_hosting/logs_and_statistics), aby wyszukać złośliwe elementy wprowadzone na Twoją stronę WWW. Informacje znajdziesz w logach "www". 
@@ -149,7 +149,7 @@ Wybierz maksymalnie dwie daty przywrócenia przestrzeni dyskowej FTP i bazy dany
 > OVHcloud dysponuje robotami bezpieczeństwa, które mogą wykrywać złośliwe operacje wykonywane z poziomu Twojego hostingu. Strony dezaktywują Twój hosting i powiadamiają e-mail, że Twój hosting został wyłączony.
 > Jako uzupełnienie tego e-maila, zazwyczaj pojawia się strona "403 Forbidden", gdy próbujesz wejść na Twoją stronę.
 >
-> Jeśli Twój hosting jest wyłączony, roboty przywracania automatycznego dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) zostaną również wyłączone.
+> Jeśli Twój hosting jest wyłączony, roboty przywracania automatycznego dostępne w [Panelu klienta OVHcloud](/links/manager) zostaną również wyłączone.
 > Musisz wykonać ręczne przywracanie strony, usunąć pozostałości złośliwych elementów, a następnie usunąć luki bezpieczeństwa występujące w kopii zapasowej. To **przed** włączyć hosting.
 >
 > Aby ponownie włączyć hosting WWW, postępuj zgodnie z instrukcjami etapu 4 tego [przewodnika](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).
@@ -219,8 +219,8 @@ Zapoznaj się również z naszym przewodnikiem dotyczącym [jak zabezpieczyć Tw
 
 [Optymalizacja wydajności strony](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Przyłącz się do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

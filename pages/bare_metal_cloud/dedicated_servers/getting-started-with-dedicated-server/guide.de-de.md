@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit einem Dedicated Server"
-excerpt: "Erfahren Sie hier, wie Sie Ihren neuen Dedicated Server verwalten"
-updated: 2024-02-19
+excerpt: "Erfahren Sie hier, wie Sie einen Dedicated Server in Ihrem OVHcloud Kundencenter verwalten und wie Sie mit der Konfiguration und Sicherung eines Servers starten"
+updated: 2024-04-10
 ---
 
 > [!primary]
@@ -10,21 +10,19 @@ updated: 2024-02-19
 
 ## Ziel
 
-Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren. Im Gegensatz zum Webhosting (auch "Shared Hosting" genannt), bei dem die technische Verwaltung von OVHcloud geleistet wird, sind Sie für die Verwaltung Ihres Servers allein verantwortlich.
+Ein dedizierter Server ist ein physischer Server ("Bare Metal") in einem unserer Rechenzentren. Im Gegensatz zum Webhosting (auch "Shared Hosting" genannt), bei dem die technische Verwaltung von OVHcloud geleistet wird, sind Sie für die Verwaltung Ihres Servers allein verantwortlich.
 
-**Diese Anleitung erläutert einige Grundlagen zur Erstverwendung eines OVHcloud Dedicated Server.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I2G6TkKg0gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Diese Anleitung erläutert die Grundlagen zur Erstverwendung eines OVHcloud Dedicated Server.**
 
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
-- Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder RDP (optional). 
+- Sie haben administrativen Zugriff auf Ihren Server über SSH oder RDP (Windows). 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!primary]
 >
-> Wenn Ihr Server zur Produktlinie **Eco** gehört, folgen Sie stattdesen [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server-eco).
+> Wenn Ihr Server zur Produktlinie **Eco** gehört, folgen Sie stattdessen [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server-eco).
 
 ## In der praktischen Anwendung
 
@@ -44,9 +42,12 @@ Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren.
 
 ### Betriebssystem installieren oder reinstallieren
 
-Wenn Ihr Dedicated Server während des Bestellprozesses zum ersten Mal konfiguriert wird, können Sie das zu installierende Betriebssystem auswählen.
+> [!success]
+>
+> Weitere Informationen zu Server-Betriebssystemen finden Sie auf unserer [Webseite](https://www.ovhcloud.com/de/bare-metal/os/).
+>
 
-Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) reinstallieren und ein anderes Betriebssystem auswählen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
+Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) reinstallieren oder ein anderes Betriebssystem auswählen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
 
 ![Button Reinstallieren](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -73,51 +74,39 @@ Nachdem Sie `Installation mit einem OVHcloud Template`{.action} ausgewählt habe
 
 Wenn Sie das Partitionsschema Ihres Betriebssystems ändern müssen, setzen Sie einen Haken in dem Feld "Konfiguration der Partitionen anpassen", bevor Sie auf `Weiter`{.action} klicken.
 
-![Konfiguration der Partitionen anpassen](images/reinstalling-your-server-04.png){.thumbnail}
+![Konfiguration anpassen](images/reinstalling-your-server-04.png){.thumbnail}
 
 In diesem Schritt können Sie RAID- und Partitionierungsoptionen innerhalb der Grenzen der Serverhardware und des Betriebssystems einrichten.
 
 Klicken Sie nach Abschluss der Anpassungen auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen.
 
-#### Hinzufügen eines SSH-Schlüssels (optional)
+Dort finden Sie außerdem Optionen zu dem von Ihnen ausgewählten Betriebssystem.
 
-Wenn Sie ein GNU/Linux-Betriebssystem installieren, können Sie Ihren SSH-Schlüssel im letzten Schritt des Installationsprozesses hinzufügen.
+Wenn Sie beispielsweise ein GNU/Linux-Betriebssystem installieren, können Sie Ihren SSH-Schlüssel hinzufügen.
 
-![SSH-Schlüssel personalisieren](images/SSH_01.png){.thumbnail}
+Eine ausführliche Erläuterung zum Verwenden von SSH-Schlüsseln finden Sie in [unserer Anleitung](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Wenn ein SSH-Schlüssel bereits hinterlegt ist, erscheint er unten im Drop-down-Menü unter "SSH-Schlüssel". Falls nicht, fügen Sie zuerst einen im Bereich "Meine Dienstleistungen" hinzu.
+![SSH-Konfiguration](images/reinstalling-your-server-05.png){.thumbnail}
 
-Öffnen Sie hierzu die Seitenleiste, indem Sie oben rechts auf Ihren Namen klicken und nutzen Sie dann den Shortcut `Produkte und Dienstleistungen`{.action}.
-
-![SSH-Schlüssel personalisieren](images/SSH_02.png){.thumbnail}
-
-Gehen Sie in "Meine Dienste" auf den Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
-
-![SSH-Schlüssel personalisieren](images/SSH_03.png){.thumbnail}
-
-Da es sich um die Einrichtung eines Dedicated Servers handelt, wählen Sie im Drop-down-Menü "Dedicated" aus (ebenso gültig für einen VPS).
-
-Geben Sie im neuen Fenster eine ID (Name Ihrer Wahl) und den Schlüssel selbst (vom Typ RSA, ECDSA oder Ed25519) in die entsprechenden Felder ein.
-
-![SSH-Schlüssel personalisieren](images/SSH_04.png){.thumbnail}
-
-Weitere Informationen zur Erstellung von SSH-Schlüsseln finden Sie in unserer [Anleitung](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
-
-> [!warning]
->OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Sie sind also verantwortlich für das ordnungsgemäße Funktionieren dieser Systeme.
->
->Diese Anleitung hilft Ihnen bei der Bewältigung allgemeiner Aufgaben. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Schwierigkeiten oder Zweifel hinsichtlich der Administration, Nutzung oder Implementierung der Dienste auf einem Server haben.
->
+Klicken Sie anschließend auf `Bestätigen`{.action}, um die Installation des Betriebssystems auf Ihrem Dedicated Server zu starten.
 
 <a name="connect"></a>
 
 ### Einloggen auf dem Server
 
+> [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
+>
+
 #### Linux
 
-Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Anweisungen zum administrativen Zugriff. Sie können sich über ein Kommandozeileninterface oder mit Hilfe von Drittanbietersoftware mit Ihrem Server über das sichere Kommunikationsprotokoll SSH verbinden.
+Wenn Sie ein OVHcloud Template als OS auf Ihrem Server installiert haben, wird automatisch ein Benutzer mit erhöhten Berechtigungen erstellt. Dieser Benutzer wird entsprechend dem Betriebssystem benannt, zum Beispiel "ubuntu" oder "rocky".
 
-Verwenden Sie die folgenden Beispiele, um sich mit Ihrem Server zu verbinden, und ersetzen Sie die Login-Daten mit Ihren eigenen Werten (IP-Adresse und Serverreferenzname sind austauschbar).
+Sie erhalten dann eine E-Mail mit den Informationen, die für die Herstellung einer ersten SSH-Verbindung erforderlich sind. SSH ist ein sicheres Kommunikationsprotokoll, das zum Herstellen verschlüsselter Verbindungen zu einem Remote-Host verwendet wird. Weitere Informationen finden Sie in unserer Anleitung [Einführung in SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+Die meisten aktuellen Betriebssysteme verfügen über einen nativ installierten **Open SSH** Client. Das bedeutet, dass Sie sich mit Ihren Zugangsdaten schnell und einfach über die jeweils verfügbare Befehlszeilenanwendung (`Terminal`, `Command prompt`, `Powershell`, etc.) mit Ihrem Server verbinden können. Geben Sie folgenden Befehl ein:
 
 ```bash
 ssh username@IPv4
@@ -129,13 +118,84 @@ ssh username@IPv4
 ssh ubuntu@203.0.113.1
 ```
 
-Weitere Informationen zu SSH finden Sie in unserer [Anleitung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+Sie können auch jede Anwendung eines Drittanbieters verwenden, die mit **Open SSH** kompatibel ist.
+
+Nach der Anmeldung können Sie das vordefinierte Kennwort des aktuellen Benutzers mit folgendem Befehl zu einer Passphrase Iher Wahl ändern:
+
+```bash
+passwd
+```
+
+Bei einer GNU/Linux-Distribution werden **bei einer Passworteingabeaufforderung Ihre Tastatureingaben nicht angezeigt**.
+
+Geben Sie Ihr aktuelles Kennwort ein, und drücken Sie `Enter`{.action}. Geben Sie die neue Passphrase ein, und geben Sie sie an der nächsten Eingabeaufforderung erneut ein, um sie zu bestätigen.
+
+```console
+Changing password for ubuntu.
+Current password:
+New password: 
+Retype new password: 
+passwd: password updated successfully
+```
+
+> [!warning]
+> 
+> **Aktivierung des Benutzer-Accounts "root"**
+>
+> Es ist nicht notwendig, den Benutzer-Account "root" zu verwenden, um mit der Administration Ihres Servers zu beginnen. Dieser Account muss zuerst im Serverbetriebssystem aktiviert werden, damit er verwendet werden kann. Aus Sicherheitsgründen sind außerdem SSH-Verbindungen mit dem Benutzer "root" standardmäßig **deaktiviert**.
+> 
+> Sofern nicht anders vermerkt, können alle in unserer Dokumentation beschriebenen administrativen Aktionen mit dem Standardbenutzer-Account durchgeführt werden, indem Sie `sudo` gefolgt von dem entsprechenden Befehl eingeben. Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zum [Konfigurieren von Benutzerkonten und Root-Zugriff auf einem Server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
+
+SSH-Schlüssel können je nach Ihren Anforderungen in Bezug auf Sicherheit, Mobilität und Komfort als zusätzliche Verbindungsmethode verwendet werden oder gar die Identifizierung mittels Benutzername und Kennwort ersetzen. In unserer Anleitung zu [SSH-Schlüsseln](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated) erfahren Sie, wie Sie diese verwenden.
 
 #### Windows
 
-Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Ihrem Passwort für den Administrator-Zugang (sudo). Verwenden Sie diese Login-Daten, um sich via RDP (**R**emote **D**esktop **P**rotocol) mit dem Server zu verbinden. Wenn Sie eingeloggt sind, wird Windows Sie durch die Erstinstallation führen.
+Nach Abschluss der Installation erhalten Sie eine E-Mail mit Ihren Windows-Anmeldeinformationen. Sie können sich dann über RDP (**R**emote **D**esktop **P**rotocol) mit Ihrem Server verbinden. Öffnen Sie dazu auf Ihrem lokalen Windows-Gerät die Anwendung `Remote Desktop Connection`.
 
-Beachten Sie auch unsere Anleitung zum [Konfigurieren einer neuen Windows Server Installation](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
+![Windows Remote](images/windows-connect-03.png){.thumbnail}
+
+Geben Sie die IPv4-Adresse Ihres Servers und dann Ihre Kennung und Passphrase ein. In der Regel wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, die Verbindung aufgrund eines unbekannten Zertifikats zu bestätigen. Klicken Sie zum Login auf `Ja`{.action}.
+
+Sie können auch jede RDP-kompatible Anwendung eines Drittanbieters verwenden. Dies ist notwendig, wenn Windows nicht auf Ihrem lokalen Gerät installiert ist.
+
+> [!primary]
+>
+Wenn bei diesem Verfahren Probleme auftreten, überprüfen Sie, ob Remoteverbindungen (RDP) auf Ihrem Gerät zugelassen sind, indem Sie die Systemeinstellungen, Firewallregeln und mögliche Netzwerkeinschränkungen überprüfen.
+>
+
+Sie können auch die [IPMI-Konsole in Ihrem OVHcloud Kundencenter](#console) zur Verbindung mit dem Server nutzen.
+
+#### Aktivieren der Windows Startprotokolle (optional)
+
+Windows Boot Logs können bei der Diagnose von Serverstörungen hilfreich sein.
+
+Um sie zu aktivieren, folgen Sie den in den Tabs aufgeführten Schritten:
+
+> [!tabs]
+> 1. **Verbindung mit Server herstellen**
+>>
+>> Vebinden Sie sich mit Ihrem Server über RDP oder [IPMI](#console).<br>
+>>
+> 2. **Tool "Ausführen" öffnen**
+>>
+>> Öffnen Sie das Windows-Startmenü und klicken Sie auf `Run`{.action}.<br><br>
+>>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>
+> 3. **"msconfig" öffnen**
+>>
+>> Geben Sie "msconfig" ein und klicken Sie auf `OK`{.action}.<br><br>
+>>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>
+> 4. **Logs aktivieren**
+>>
+>> Aktivieren Sie im neuen Fenster die Option `Boot log`. Klicken Sie auf `OK`{.action}.<br><br>
+>>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>
+
+Beim nächsten Hochfahren des Servers werden die Logs in einer Datei im Format `.txt` gespeichert. Der Dateipfad lautet: `C:\Windows\ntbtlog.txt`.
+
+Um die in der Datei gespeicherten Protokolle im Rescue-Modus einzusehen, folgen Sie der [Anleitung zum Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 <a name="reboot"></a>
 

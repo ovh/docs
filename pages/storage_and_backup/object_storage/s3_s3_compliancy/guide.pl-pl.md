@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Kompatybilność S3 (EN)
 excerpt: Discover the compliancy of OVHcloud S3 API versus the global AWS S3 API
-updated: 2023-11-02
+updated: 2024-04-17
 ---
 
 ## Objective
@@ -192,13 +192,26 @@ This guide lists the S3 API features supported by S3 Object Storage.
     <td>yes</td>
   </tr>
   <tr>
-    <td rowspan="4">Encryption at rest</td>
+    <td rowspan="7">Encryption at rest</td>
     <td>SSE-C</td>
     <td>n/c</td>
     <td>yes</td>
   </tr>
+<tr>
+    <td rowspan="3">SSE-S3</td>
+    <td>put bucket encryption</td>
+    <td>yes</td>
+</tr>
+ <tr>
+    <td>delete bucket encryption</td>
+    <td>yes</td>
+  </tr>
   <tr>
-    <td rowspan="3">SSE-S3 <br>SSE-KMS </td>
+    <td>get bucket encryption</td>
+    <td>yes</td>
+  </tr>
+  <tr>
+    <td rowspan="3">SSE-KMS </td>
     <td>put bucket encryption</td>
     <td>no</td>
   </tr>
@@ -300,15 +313,15 @@ This guide lists the S3 API features supported by S3 Object Storage.
     <td rowspan="3">Resiliency</td>
     <td rowspan="3">Async replication</td>
     <td>get bucket replication</td>
-    <td>no</td>
+    <td>yes</td>
   </tr>
   <tr>
     <td>delete bucket replication</td>
-    <td>no</td>
+    <td>yes</td>
   </tr>
   <tr>
     <td>put bucket replication</td>
-    <td>no</td>
+    <td>yes</td>
   </tr>
   <tr>
     <td rowspan="15">Observability</td>

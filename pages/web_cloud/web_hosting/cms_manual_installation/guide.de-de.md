@@ -15,7 +15,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder den Herausgeber des CMS zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber des CMS zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 > Um die verschiedenen Herausgeber der oben genannten CMS zu kontaktieren, finden Sie hier die Links zu ihren offiziellen Seiten:
 >
@@ -31,16 +31,16 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 > [!success]
 >
-> Um Ihr CMS **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Um Ihr CMS **automatisch** in Ihrem [OVHcloud Kundencenter](/links/manager) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **Diese Anleitung erklärt, wie Sie Ihre Website konfigurieren, indem Sie ein CMS manuell installieren.**
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting), das mindestens eine Datenbank enthält.
+- Sie verfügen über einen [Domainnamen](/links/web/domains).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -52,7 +52,7 @@ Um Ihnen bei der Auswahl des CMS zu helfen, finden Sie hier eine kurze Beschreib
 
 **WordPress** wird üblicherweise für die Erstellung einer Website oder eines Blogs verwendet. Es basiert auf PHP und enthält eine Vielzahl an Tools wie Rechtschreibprüfung und Plugins für E-Commerce, SEO sowie die Sicherheit Ihrer Website.
 
-Weitere Informationen finden Sie auf unserer Seite zum [WordPress Modul](https://www.ovhcloud.com/de/web-hosting/uc-wordpress-website/).
+Weitere Informationen finden Sie auf unserer Seite zum [WordPress Modul](/links/web/hosting-wordpress).
 
 - Offizielle Website von [WordPress](https://https://wordpress.com/){.external}
 
@@ -62,7 +62,7 @@ Weitere Informationen finden Sie auf unserer Seite zum [WordPress Modul](https:/
 
 Die Community **Joomla!** ist sehr groß und kann für alle Bereichen des CMS (Dokumentation, technische Hilfe, Themes etc.) Unterstützung und Dienstleistungen anbieten.
 
-Weitere Informationen finden Sie auf unserer Seite zum [Joomla! Modul](https://www.ovhcloud.com/de/web-hosting/uc-joomla-website/).
+Weitere Informationen finden Sie auf unserer Seite zum [Joomla! Modul](/links/web/hosting-joomla).
 
 - Offizielle Website von [Joomla!](https://www.joomla.org/){.external}
 
@@ -70,7 +70,7 @@ Weitere Informationen finden Sie auf unserer Seite zum [Joomla! Modul](https://w
 
 **Drupal** ist eine kostenlose Open-Source-Plattform, die auf PHP basiert. **Drupal** existiert seit 2000 und ermöglicht die schnelle Erstellung dynamischer Webseiten.
 
-Weitere Informationen finden Sie auf unserer Seite zum [Drupal Modul](https://www.ovhcloud.com/de/web-hosting/uc-drupal-website/).
+Weitere Informationen finden Sie auf unserer Seite zum [Drupal Modul](/links/web/hosting-drupal).
 
 - Offizielle Website von [Drupal](https://www.drupal.org/){.external}
 
@@ -78,7 +78,7 @@ Weitere Informationen finden Sie auf unserer Seite zum [Drupal Modul](https://ww
 
 PrestaShop wurde 2005 für die Realisierung von E-Commerce-Websites entwickelt. Abgesehen von den gängigen Funktionen von Onlineshops kann diese Software auch mit Modulen, Themes und Templates personalisiert werden. 
 
-Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](https://www.ovhcloud.com/de/web-hosting/uc-prestashop-website/).
+Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](/links/web/hosting-prestashop).
 
 - Offizielle Website von [PrestaShop](https://www.prestashop.com/){.external}
 
@@ -113,7 +113,7 @@ Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](https:
 
 ### Schritt 1: Installation vorbereiten <a name="step1"></a> 
 
-Um ein CMS auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot zu installieren sind einige Vorbereitungen erforderlich.
+Um ein CMS auf Ihrem [Webhosting](/links/web/hosting) Angebot zu installieren sind einige Vorbereitungen erforderlich.
 
 #### 1.1 Überprüfen Sie das Wurzelverzeichnis
 
@@ -128,12 +128,12 @@ In unserer Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/
 
 #### 1.2 DNS-Auflösung des Domainnamens überprüfen
 
-- Vergewissern Sie sich, dass der Domainname, den Sie für den Zugriff auf Ihr CMS verwenden, sowie dessen "www"-Subdomain auf die IP-Adresse Ihres [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) verweisen.
+- Vergewissern Sie sich, dass der Domainname, den Sie für den Zugriff auf Ihr CMS verwenden, sowie dessen "www"-Subdomain auf die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) verweisen.
 
-Um die IP-Adresse Ihres Webhostings zu erfahren, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr Webhosting im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} aus.<br>
+Um die IP-Adresse Ihres Webhostings zu erfahren, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr Webhosting im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} aus.<br>
 Im Kasten `Allgemeine Informationen`{.action} finden Sie die IP-Adresse Ihres Webhostings im Eintrag `IPv4`{.action}.
 
-Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird, vergleichen Sie die IP-Adresse Ihres Hostings mit der in der DNS-Zone Ihres Domainnamens eingetragenen. Verwenden Sie dazu unsere Dokumentation zur [Verwaltung von OVHcloud DNS-Zonen](/pages/web_cloud/domains/dns_zone_edit).
+Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](/links/manager) verwaltet wird, vergleichen Sie die IP-Adresse Ihres Hostings mit der in der DNS-Zone Ihres Domainnamens eingetragenen. Verwenden Sie dazu unsere Dokumentation zur [Verwaltung von OVHcloud DNS-Zonen](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >
@@ -166,7 +166,7 @@ Wenn Sie noch keinen FTP-Client verwenden, können Sie FileZilla installieren. D
 > Einige CMS funktionieren ohne Datenbanken. Wenn dies für das CMS der Fall ist, das Sie installieren möchten, überspringen Sie diesen Schritt.
 >
 
-Die meisten CMS benötigen eine Datenbank, um zu funktionieren. Unsere [Webhosting Angebote](https://www.ovhcloud.com/de/web-hosting/) enthalten diese mit Ausnahme des [100M kostenlosen Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+Die meisten CMS benötigen eine Datenbank, um zu funktionieren. Unsere [Webhosting Angebote](/links/web/hosting) enthalten diese mit Ausnahme des [100M kostenlosen Hostings](/links/web/domains-free-hosting).
 
 Verwenden Sie unsere Anleitung zur [Erstellung einer Datenbank über Ihr Webhosting](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -407,8 +407,8 @@ Um mit der Installation fortzufahren, folgen Sie der passenden Anleitung zu Ihre
 
 [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

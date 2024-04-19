@@ -37,17 +37,17 @@ On OVHcloud Web Hostings, you can use scripts to automate certain operations. Cr
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/) or reach out to the [OVHcloud community](https://community.ovh.com/en/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the [OVHcloud community](https://community.ovh.com/en/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) with the necessary permissions to manage the Web Hosting plan 
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the Web Hosting plan 
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `cron`{.action} tab by selecting it in the `More`{.action} submenu.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `cron`{.action} tab by selecting it in the `More`{.action} submenu.
 
 In this section you will see an overview of your scheduled jobs and their settings.
 
@@ -127,7 +127,7 @@ Always make sure to use absolute paths to files in your scripts. The "DIR" const
  
 #### Checking your execution logs
 
-In your Web Hosting's logs, accessible from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), you will see the log category labelled "cron".
+In your Web Hosting's logs, accessible from the [OVHcloud Control Panel](/links/manager), you will see the log category labelled "cron".
 
 Please refer to [this guide](/pages/web_cloud/web_hosting/logs_and_statistics) for details.
 
@@ -173,8 +173,8 @@ Please refer to [this guide](/pages/web_cloud/web_hosting/logs_and_statistics) f
 
 [Using SSH on a Web Hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

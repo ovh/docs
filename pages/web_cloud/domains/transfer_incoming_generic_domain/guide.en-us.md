@@ -50,7 +50,7 @@ The transfer procedure has several steps. These steps will involve various entit
 |[1](#step1)|[Checking the information associated with the domain](#step1)|The domain administrator|With the current registrar|Depends on your actions|
 |[2](#step2)|[Unlocking the domain and retrieving the transfer code](#step2)|The domain administrator, with the owner's permission|With the current registrar|Depends on your actions|
 |[3](#step3)|[Requesting the domain name transfer](#step3)|Whoever has the transfer code and the owner's permission|With the new registrar|Depends on your actions|
-|[4](#step4)|[Transfer confirmation|With the current registrar](#step4)|At the request of the organisation managing the domain name extension|Five days maximum|
+|[4](#step4)|[Transfer confirmation](#step4)|With the current registrar|At the request of the organisation managing the domain name extension|Five days maximum|
 
 > [!warning]
 >
@@ -157,7 +157,7 @@ To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the s
 > For domain names with a *generic* extension (**gTLD**s such as *.com*, *.net*, *.info*, *.org*, etc.), the initial expiration date of the domain name is retained. After a successful transfer, OVHcloud extends the subscription for another year at no extra charge.
 > For example, your domain name with a *generic* extension expires on 29/09/2023 and is transferred on 04/06/2023. Once you have transferred your domain name to OVHcloud, the new expiration date is 29/09/2024.
 >
-> For domain names with a *country* or *regional* extension (**ccTLD**s such as *.fr*, *.be*, *.de*, *.es*, etc.), the transfer rules depend on the specifications put in place by the **registry* of the extension in question.
+> For domain names with a *country* or *regional* extension (**ccTLD**s such as *.fr*, *.be*, *.de*, *.es*, etc.), the transfer rules depend on the specifications put in place by the *registry* of the extension in question.
 > Once the transfer is complete, check the expiry date of your domain name in your OVHcloud Control Panel.
 >
 > To do this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), then go to the `Web Cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the domain name concerned. The **month** and **year** of the next renewal are displayed below the domain name at the top of the page.

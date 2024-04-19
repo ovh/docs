@@ -21,13 +21,13 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
 
 ## Prérequis
 
 - Avoir la gestion des serveurs et de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) de votre domaine
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web)
 
 ## En pratique
@@ -42,7 +42,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 > De ce fait, nous vous recommandons fortement d'activer le [renouvellement automatique](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#en-pratique) sur l'ensemble de vos abonnements OVHcloud.
 >
 
-Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre [espace client](	https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
+Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre [espace client](/links/manager), afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
@@ -54,7 +54,7 @@ Suite à ce renouvellement, votre site sera accessible sous 48 heures maximum.
 
 ### Étape 2 : vérifier les serveurs DNS
 
-Pour vérifier la validité de vos [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information), dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) cliquez sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
+Pour vérifier la validité de vos [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information), dans votre [espace client OVHcloud](/links/manager) cliquez sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
 
 #### Scénario 1 : aucune anomalie sur les serveurs DNS
 
@@ -84,7 +84,7 @@ Votre site sera de nouveau accessible sous 48 heures maximum.
 
 > [!warning]
 >
-> Dans cette situation, contactez l'hébergeur de votre Zone DNS, votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/) avant toute manipulation.
+> Dans cette situation, contactez l'hébergeur de votre Zone DNS, votre webmaster ou les [partenaires OVHcloud](/links/partner) avant toute manipulation.
 >
 > Il est en effet possible que les serveurs DNS utilisés par votre nom de domaine soient fonctionnels et que le problème d'accès à votre site soit lié à une entrée manquante ou erronée dans la [zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns). Toute modification des serveurs DNS dans cette situation peut rendre vos adresses e-mails ou d'autres applications en ligne indisponibles.
 >
@@ -113,7 +113,7 @@ Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis
 
 Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou géré par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
 
-Si votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/), cliquez sur l'onglet `Hébergements`{.action}, puis sur l'offre concernée.
+Si votre site est hébergé sur l'une de nos [offres Web Cloud](/links/web/hosting), cliquez sur l'onglet `Hébergements`{.action}, puis sur l'offre concernée.
 
 Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine.
 
@@ -133,8 +133,8 @@ Votre site sera de nouveau accessible sous 24 heures maximum.
 
 [Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

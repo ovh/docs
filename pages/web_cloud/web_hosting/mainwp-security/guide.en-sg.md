@@ -12,14 +12,14 @@ Maintaining the security of your websites is crucial for the development of your
 
 ## Requirements
 
-- A [Web Cloud hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/).
+- A [Web Cloud hosting plan](/links/web/hosting).
 - Access to your MainWP dashboard.
 
 > [!warning]
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) or [the publisher of the MainWP plugin](https://mainwp.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
+> This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) or [the publisher of the MainWP plugin](https://mainwp.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
 >
 
 ## Instructions
@@ -92,6 +92,6 @@ Once the problem has been resolved, you can cancel the changes made by clicking 
 
 [Backing up your websites with MainWP](/pages/web_cloud/web_hosting/mainwp-backup)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

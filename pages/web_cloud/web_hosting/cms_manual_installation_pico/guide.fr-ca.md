@@ -12,15 +12,15 @@ Le **CMS** (**C**ontent **M**anagement **S**ystem) Pico permet de créer rapidem
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
+- Disposer d'un [nom de domaine](/links/web/domains).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
 ### Préparer l'installation
 
-Pour installer le CMS **Pico** sur votre [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/), quelques préparatifs sont nécessaires.
+Pour installer le CMS **Pico** sur votre [hébergement web](/links/web/hosting), quelques préparatifs sont nécessaires.
 
 Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) avant de poursuivre à l'étape suivante.
 
@@ -114,6 +114,6 @@ Vous venez d'installer manuellement le CMS Pico sur votre hébergement web OVHcl
 
 [Tutoriel - Installer manuellement un CMS sur mon hébergement](/pages/web_cloud/web_hosting/cms_manual_installation)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

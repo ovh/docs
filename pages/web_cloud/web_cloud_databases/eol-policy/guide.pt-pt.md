@@ -17,9 +17,9 @@ As bases de dados geridas pela OVHcloud propõem vários sistemas de gestão de 
 
 Dispor de, pelo menos, uma das 3 ofertas seguintes:
 
-- Uma das bases de dados incluídas com um [Alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
-- Uma [instance Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [Alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
-- Um pack de bases de dados [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/).
+- Uma das bases de dados incluídas com um [Alojamento web](/links/web/hosting).
+- Uma [instance Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [Alojamento web Performance](/links/web/hosting).
+- Um pack de bases de dados [Start SQL](/links/web/hosting-options-startsql).
 
 ## Instruções
 
@@ -78,8 +78,8 @@ A cessação pode ser efetuada de duas formas, consoante o caso:
 
 ## Saiba mais
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

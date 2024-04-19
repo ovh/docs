@@ -24,23 +24,23 @@ Es posible alojar varios sitios web en un mismo plan de hosting, aunque los domi
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} compatible.
-- Tener uno o más [dominios](https://www.ovhcloud.com/es/domains/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external} compatible.
+- Tener uno o más [dominios](/links/web/domains){.external}.
 - Poder modificar la configuración de sus dominios (la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns)).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
 > [!primary]
 >
-> La mayoría de los [planes de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} incluyen una opción de creación de direcciones de correo personalizadas con su nombre de dominio.
+> La mayoría de los [planes de hosting de OVHcloud](/links/web/hosting){.external} incluyen una opción de creación de direcciones de correo personalizadas con su nombre de dominio.
 > Esta opción de correo electrónico puede activarse para **un solo** nombre de dominio. Esto significa que si realiza el *multisite* con varios dominios diferentes, solo podrá activar esta opción para uno de sus dominios.
 > No dude en consultar nuestra [guide](/pages/web_cloud/web_hosting/activate-email-hosting) para más detalles sobre la activación de esta opción.
 >
 
 ### 1\. Acceder a la gestión del multisitio <a name="multisite-menu"></a>
 
-En primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action}. haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}.
+En primer lugar, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Web Cloud`{.action}. haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}.
 
 Se mostrará una tabla con todos los dominios y subdominios añadidos a su solución de alojamiento web. Algunos de ellos se habrán creado automáticamente al instalarlo.
 
@@ -72,7 +72,7 @@ Para un dominio externo a su cuenta de cliente (otro identificador de cliente) o
 > [!warning]
 > Este paso solo es pertinente si ha seleccionado la opción "Añadir un dominio registrado con OVHcloud". El nombre de dominio o su zona DNS debe estar **en el área de cliente**. Si quiere añadir un dominio externo, vaya al paso [2.2. Añadir un dominio externo](#add-external-domain){.external}.
 
-A continuación, deberá personalizar la adición del dominio o subdominio. Según el [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} contratado, algunas opciones podrían no estar disponibles.
+A continuación, deberá personalizar la adición del dominio o subdominio. Según el [plan de hosting de OVHcloud](/links/web/hosting){.external} contratado, algunas opciones podrían no estar disponibles.
 
 > [!primary]
 > Para añadir un subdominio, es necesario seleccionar primero el dominio principal de la lista (por ejemplo: domain.tld). En la siguiente etapa podrá indicar el subdominio (por ejemplo: **blog**.domain.tld).
@@ -83,11 +83,11 @@ A continuación, deberá personalizar la adición del dominio o subdominio. Seg�
 |---|---|
 |Dominios|El nombre de dominio seleccionado se autocompletará por defecto. Puede añadir un subdominio (p. ej., **blog**.domain.tld) y crear simultáneamente el subdominio www correspondiente (p. ej., **www.blog**.domain.tld). El dominio que introduzca aquí será la dirección de internet del sitio web una vez publicado.|
 |Carpeta raíz|Defina la carpeta, en su espacio de almacenamiento, hacia la que apunta el dominio . Los archivos del sitio web deberán publicarse en este espacio. Por ejemplo, para blog.domain.tld, la carpeta raíz podría ser "blog". Si la carpeta no existe, se creará automáticamente.|
-|SSL|Permite disfrutar de una conexión segura (https://) en el dominio seleccionado. Más información en nuestra página sobre [SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external}. Si activa conjuntamente las opciones SSL y CDN (Content Delivery Network), podrá disfrutar también del protocolo **HTTP2** (activo por defecto en nuestro datacenter de Gravelines).|
-|Activar la CDN|Permite activar el servicio CDN (almacenamiento en caché de los elementos estáticos del sitio web, como las imágenes) en el dominio seleccionado. Más información en nuestra página sobre [CDN](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/){.external}. Si activa conjuntamente las opciones SSL y CDN, podrá disfrutar también del protocolo **HTTP2** (activo por defecto en nuestro datacenter de Gravelines).|
-|IP del país|Permite disfrutar de una dirección IP geolocalizada (a elegir entre diversos países) en el dominio seleccionado. Más información en nuestra página sobre las [IP](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}.|
-|Activar el firewall|Permite activar un firewall (análisis de las peticiones) en el dominio seleccionado. Más información en nuestra página sobre [Mod Security](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}.|
-|Logs separados|Permite activar un nuevo espacio de logs en el dominio seleccionado. Deberá elegir un dominio de la lista, que determinará el nombre de acceso al nuevo espacio. Más información en [nuestra página sobre estadísticas completas](https://www.ovhcloud.com/es/web-hosting/uc-website-traffic-analysis/){.external}.|
+|SSL|Permite disfrutar de una conexión segura (https://) en el dominio seleccionado. Más información en nuestra página sobre [SSL](/links/web/hosting-options-ssl){.external}. Si activa conjuntamente las opciones SSL y CDN (Content Delivery Network), podrá disfrutar también del protocolo **HTTP2** (activo por defecto en nuestro datacenter de Gravelines).|
+|Activar la CDN|Permite activar el servicio CDN (almacenamiento en caché de los elementos estáticos del sitio web, como las imágenes) en el dominio seleccionado. Más información en nuestra página sobre [CDN](/links/web/hosting-options-cdn){.external}. Si activa conjuntamente las opciones SSL y CDN, podrá disfrutar también del protocolo **HTTP2** (activo por defecto en nuestro datacenter de Gravelines).|
+|IP del país|Permite disfrutar de una dirección IP geolocalizada (a elegir entre diversos países) en el dominio seleccionado. Más información en nuestra página sobre las [IP](/links/web/hosting-options){.external}.|
+|Activar el firewall|Permite activar un firewall (análisis de las peticiones) en el dominio seleccionado. Más información en nuestra página sobre [Mod Security](/links/web/hosting-options){.external}.|
+|Logs separados|Permite activar un nuevo espacio de logs en el dominio seleccionado. Deberá elegir un dominio de la lista, que determinará el nombre de acceso al nuevo espacio. Más información en [nuestra página sobre estadísticas completas](/links/web/hosting-traffic-analysis){.external}.|
 
 > [!warning]
 >
@@ -132,13 +132,13 @@ Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet
 > ![Multisitio](images/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
- Una vez seleccionado el dominio que quiera asociar al alojamiento, deberá personalizar su información. Tenga en cuenta que algunas opciones incluidas en su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} no pueden activarse durante este proceso. Es necesario añadir el dominio en primer lugar y posteriormente activar dichas opciones modificando la configuración del multisitio.
+ Una vez seleccionado el dominio que quiera asociar al alojamiento, deberá personalizar su información. Tenga en cuenta que algunas opciones incluidas en su [plan de hosting de OVHcloud](/links/web/hosting){.external} no pueden activarse durante este proceso. Es necesario añadir el dominio en primer lugar y posteriormente activar dichas opciones modificando la configuración del multisitio.
 
 |Campo|Descripción|
 |---|---|
 |Dominio|Introduzca el dominio que quiera utilizar. Añada un subdominio (p. ej., **blog**.domain.tld) y cree simultáneamente el subdominio www correspondiente (p. ej., **www.blog**.domain.tld). El dominio que introduzca aquí será la dirección de internet del sitio web, una vez publicado. Recuerde que, para poder añadir el dominio, es necesario tener permisos para modificar su configuración (zona DNS).|
 |Carpeta raíz| Defina la carpeta, en su espacio de almacenamiento, hacia la que apunta el dominio . Los archivos del sitio web deberán publicarse en este espacio. Por ejemplo, para blog.domain.tld, la carpeta raíz podría ser "blog". Si la carpeta no existe, se creará automáticamente.|
-|Activar IPv6|Permite activar el protocolo IPv6 en el dominio indicado. Más información en nuestra página sobre las [IP](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}.|
+|Activar IPv6|Permite activar el protocolo IPv6 en el dominio indicado. Más información en nuestra página sobre las [IP](/links/web/hosting-options){.external}.|
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}. Compruebe que la información que se muestra en el resumen es correcta.
 
@@ -169,7 +169,7 @@ Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir lo
 >
 > Si quiere utilizar su hosting para alojar varios sitios web, deberá realizar esta operación tantas veces como sea necesario.
 >
-> Recuerde que cuantos más sitios web aloje en su hosting, mayor será la demanda de recursos asignados. [En la página de nuestros planes de hosting](https://www.ovhcloud.com/es/web-hosting/){.external} puede consultar el número de sitios web recomendados que puede alojar en su espacio.
+> Recuerde que cuantos más sitios web aloje en su hosting, mayor será la demanda de recursos asignados. [En la página de nuestros planes de hosting](/links/web/hosting){.external} puede consultar el número de sitios web recomendados que puede alojar en su espacio.
 >
 
 ## Más información
@@ -180,6 +180,6 @@ Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir lo
 
 [Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

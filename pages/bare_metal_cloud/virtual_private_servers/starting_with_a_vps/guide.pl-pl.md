@@ -1,7 +1,7 @@
 ---
 title: Pierwsze kroki z serwerem VPS
 excerpt: Dowiedz się, jak zarządzać serwerem VPS w Panelu klienta i poznaj pierwsze kroki korzystania z niego, w tym zdalne połączenia i środki bezpieczeństwa
-updated: 2024-03-14
+updated: 2024-04-05
 ---
 
 > [!primary]
@@ -42,58 +42,67 @@ Karta `Strona`{.action} główna zawiera ważne informacje o Twojej usłudze i u
 
 #### Twój VPS <a name="yourvps"></a>
 
-W tej sekcji wyświetlane są podstawowe informacje o serwerze VPS i o stanie usługi.
+W tej części znajdziesz podstawowe informacje o serwerze VPS i stanie usługi. Kliknij poniższe zakładki, aby wyświetlić szczegółowe informacje.
 
-##### Nazwisko
-
-Jeśli klikniesz `...`{.action}, a następnie wybierzesz `Zmień nazwę`{.action}, będziesz mógł wprowadzić osobną nazwę dla tego VPS. Funkcja ta jest przydatna w przypadku zarządzania kilkoma usługami VPS. Nazwa wewnętrznej usługi jest zapisana w formacie *vps-XXXXXXX.vps.ovh.net*.
-
-##### Boot
-
-Wyświetlony tutaj tryb uruchamiania działa w trybie "normalnym", w którym system ładuje zainstalowany system operacyjny (*LOCAL*) lub w **trybie rescue** dostarczonym przez OVHcloud w przypadku rozwiązywania problemów. Użyj przycisku `...`{.action} aby [zrestartować serwer VPS](#reboot-current-range) lub uruchomić go w trybie Rescue.
-
-Więcej informacji na ten temat znajdziesz w naszym przewodniku o [trybie Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
-
-##### OS / Dystrybucja
-
-Jest to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny z dostępnych](#reinstallvps) opcji.
-
-Pamiętaj, że reinstalacja usunie wszystkie dane aktualnie hostowane na serwerze VPS (z wyjątkiem dodatkowych dysków).
-
-> [!primary]
->
-> Jeśli zamówiłeś VPS **Windows**, możesz wybrać do reinstalacji tylko jeden OS Windows. Podobnie, jeśli system Windows nie został wybrany podczas zamówienia, nie może zostać zainstalowany po zainstalowaniu serwera VPS.
->
-
-Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji znajdziesz [poniżej](#reinstallvps) i w naszym przewodniku [Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
-
-##### Strefa / Lokalizacja
-
-W tych sekcjach znajdziesz informacje o lokalizacji serwera VPS. Może to być przydatne na przykład do identyfikacji skutków dla Twojej usługi wymienionych w [status reports](https://bare-metal-servers.status-ovhcloud.com/).
-
+> [!tabs]
+> Nazwisko
+>>
+>> Jeśli klikniesz `...`{.action}, a następnie wybierzesz `Zmień nazwę`{.action}, będziesz mógł wprowadzić osobną nazwę dla tego VPS. Funkcja ta jest przydatna w przypadku zarządzania kilkoma usługami VPS. Nazwa wewnętrznej usługi jest zapisana w formacie *vps-XXXXXXX.vps.ovh.net*.
+>>
+> Boot
+>>
+>> Wyświetlony tutaj tryb uruchamiania działa w trybie "normalnym", w którym system ładuje zainstalowany system operacyjny (*LOCAL*) lub w **trybie rescue** dostarczonym przez OVHcloud w przypadku rozwiązywania problemów. Użyj przycisku `...`{.action} aby [zrestartować serwer VPS](#reboot-current-range) lub uruchomić go w trybie Rescue.
+>>
+>> Więcej informacji na ten temat znajdziesz w naszym przewodniku o [trybie Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+>>
+> OS / Dystrybucja
+>>
+>> Jest to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny z dostępnych](#reinstallvps) opcji.
+>>
+>> Pamiętaj, że reinstalacja usunie wszystkie dane aktualnie hostowane na serwerze VPS (z wyjątkiem dodatkowych dysków).
+>>
+>> > [!primary]
+>> >
+>> > Jeśli zamówiłeś VPS **Windows**, możesz wybrać do reinstalacji tylko jeden OS Windows. Podobnie, jeśli system Windows nie został wybrany podczas zamówienia, nie może zostać zainstalowany po zainstalowaniu serwera VPS.
+>>
+>>
+>> Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji znajdziesz [poniżej](#reinstallvps) i w naszym przewodniku [Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+>> 
+> Strefa / Lokalizacja
+>>
+>> W tych sekcjach znajdziesz informacje o lokalizacji serwera VPS. Może to być przydatne na przykład do identyfikacji skutków dla Twojej usługi wymienionych w [status reports](https://bare-metal-servers.status-ovhcloud.com/).
+>>
+ 
 #### Twoja konfiguracja
 
-##### Model
+Kliknij poniższe karty, aby wyświetlić szczegóły tej sekcji.
 
-Ten element wskazuje model biznesowy identyfikujący model serwera VPS odpowiadający [ofertom VPS na naszej stronie](https://www.ovhcloud.com/pl/vps).
-
-##### vCores / Pamięć / Przestrzeń dyskowa
-
-Tutaj wyświetlają się bieżące zasoby Twojego serwera VPS. Możesz je zaktualizować osobno, klikając odpowiedni przycisk. Aktualizacje są ograniczone wybranym modelem VPS i mogą być dostępne tylko po przejściu na wyższą [gamę](https://www.ovhcloud.com/pl/vps).
+> [!tabs]
+> Model
+>>
+>> Ten element wskazuje model biznesowy identyfikujący model serwera VPS odpowiadający [ofertom VPS na naszej stronie](https://www.ovhcloud.com/pl/vps).
+>>
+> vCores / Pamięć / Przestrzeń dyskowa
+>> 
+>> Tutaj wyświetlają się bieżące zasoby Twojego serwera VPS. Możesz je zaktualizować osobno, klikając odpowiedni przycisk. Aktualizacje są ograniczone wybranym modelem VPS i mogą być dostępne tylko po przejściu na wyższą [gamę](https://www.ovhcloud.com/pl/vps).
+>> 
 
 #### Adresy IP
 
-##### IPv4
+Kliknij poniższe karty, aby wyświetlić szczegóły tej sekcji.
 
-Główny publiczny adres IPv4 serwera VPS jest konfigurowany automatycznie podczas instalacji. Więcej informacji na temat zarządzania adresami IP znajdziesz w przewodniku [Konfiguracja IP aliasing](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
-
-##### IPv6 / Gateway
-
-W tej części można zobaczyć publiczny adres IPv6 i adres przypisanej bramy. Są one automatycznie dołączane do serwera VPS podczas instalacji. Więcej informacji zawiera [ten przewodnik](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
-
-##### DNS secondary
-
-Funkcja ta jest przydatna przy instalowaniu usług DNS. Szczegółowo opisany jest [w przewodniku dotyczącym konfigurowania DNS secondary OVHcloud na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps).
+> [!tabs]
+> IPv4
+>>
+>> Główny publiczny adres IPv4 serwera VPS jest konfigurowany automatycznie podczas instalacji. Więcej informacji na temat zarządzania adresami IP znajdziesz w przewodniku [Konfiguracja IP aliasing](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>>
+> IPv6 / Gateway
+>> 
+>> W tej części można zobaczyć publiczny adres IPv6 i adres przypisanej bramy. Są one automatycznie dołączane do serwera VPS podczas instalacji. Więcej informacji zawiera [ten przewodnik](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>> 
+> DNS secondary
+>>
+>> Funkcja ta jest przydatna przy instalowaniu usług DNS. Szczegółowo opisany jest [w przewodniku dotyczącym konfigurowania DNS secondary OVHcloud na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps).
 
 #### Podsumowanie opcji
 
@@ -228,22 +237,22 @@ Odbywa się to w konsoli VPS KVM: kliknij przycisk `...`{.action} obok nazwy ser
 Aby dokończyć wstępną konfigurację serwera VPS Windows, wykonaj poniższe kroki w zakładkach:
 
 > [!tabs]
-> **Ustawienia regionalne**
+> 1. **Ustawienia regionalne**
 >>
 >> Po ustanowieniu sesji KVM możesz zakończyć wstępną konfigurację systemu Windows, konfigurując **kraj/region**, **preferowany język Windows** i **układ klawiatury**. Następnie kliknij przycisk `Dalej`{.action} na dole po prawej stronie.<br><br>
 >>![KVM](images/setup-03.png){.thumbnail}<br>
 >>
-> **Hasło administratora**
+> 2. **Hasło administratora**
 >>
 >> Ustaw hasło dla konta Windows `Administrator` / `admin` i potwierdź je, następnie kliknij `Zakończ`{.action}.<br><br>
 >>![KVM](images/setup-04.png){.thumbnail}<br>
 >>
-> **Ekran logowania**
+> 3. **Ekran logowania**
 >>
 >> System Windows zastosuje ustawienia i wyświetli ekran logowania. Kliknij przycisk `Send CtrlAltDel`{.action} w prawym górnym rogu, aby się zalogować.<br><br>
 >>![KVM](images/setup-05.png){.thumbnail}<br>
 >>
-> **Login administratora**
+> 4. **Login administratora**
 >>
 >> Wprowadź hasło `Administrator`, które utworzyłeś na poprzednim etapie i kliknij przycisk `strzałka`.<br><br>
 >>![KVM](images/setup-06.png){.thumbnail}<br>
@@ -271,21 +280,21 @@ Dzienniki rozruchowe systemu Windows mogą być przydatne w diagnostyce błędó
 Aby je włączyć, na kartach wykonaj następujące kroki:
 
 > [!tabs]
-> **Logowanie do serwera**
+> 1. **Logowanie do serwera**
 >>
 >> Połącz się z serwerem za pomocą zdalnego pulpitu lub sesji [KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).<br>
 >>
-> **Otwórz narzędzie "Uruchom"**
+> 2. **Otwórz narzędzie "Uruchom"**
 >>
 >> Otwórz menu Start systemu Windows i kliknij polecenie `Uruchom`{.action}.<br><br>
 >>![KVM](images/windowsboot1.png){.thumbnail}<br>
 >>
-> **Otwórz "msconfig"**
+> 3. **Otwórz "msconfig"**
 >>
 >> Wpisz "msconfig" i kliknij na `OK`{.action}.<br><br>
 >>![KVM](images/windowsboot2.png){.thumbnail}<br>
 >>
-> **Włącz logi**
+> 4. **Włącz logi**
 >>
 >> W nowym oknie włącz opcję logi obok `Boot log`. Kliknij przycisk `OK`{.action}.<br><br>
 >>![KVM](images/windowsboot3.png){.thumbnail}<br>

@@ -22,13 +22,13 @@ Diese Fehler können auch durch Updates entstehen, die **automatisch** von Kompo
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der OVHcloud Community unter [https://community.ovh.com/en/](https://community.ovh.com/en/) (Englisch). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) und/oder stellen Ihre Fragen in der OVHcloud Community unter [https://community.ovh.com/en/](https://community.ovh.com/en/) (Englisch). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
 >
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
@@ -58,7 +58,7 @@ Um dies zu überprüfen, [verbinden Sie sich via FTP mit Ihrem Hosting](/pages/w
 
 Benennen Sie diese Datei dann in `.htaccess.old` um und aktualisieren Sie Ihre Website im Browser.
 
-Wenn Sie Hilfe bei der Durchführung der notwendigen Operationen benötigen, können Sie sich [an einen unserer Partner wenden](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie Hilfe bei der Durchführung der notwendigen Operationen benötigen, können Sie sich [an einen unserer Partner wenden](/links/partner).
 
 ### Berechtigungen von Ordnern und Dateien überprüfen
 
@@ -78,7 +78,7 @@ Die Anleitung "[Verwendung von FileZilla](/pages/web_cloud/web_hosting/ftp_filez
 
 Aus Sicherheitsgründen verschleiert Ihre Website alle technischen Details über einen Fehler vom Typ "500".
 
-Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](/pages/web_cloud/web_hosting/ssh_on_webhosting) (nur verfügbar mit einem [Webhosting der Reihe Pro, Performance oder Cloud Web](https://www.ovhcloud.com/de/web-hosting/)).
+Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](/pages/web_cloud/web_hosting/ssh_on_webhosting) (nur verfügbar mit einem [Webhosting der Reihe Pro, Performance oder Cloud Web](/links/web/hosting)).
 
 ### Den Zustand der Datenbank überprüfen
 
@@ -115,6 +115,6 @@ Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in e
 
 [Fehler "Seite nicht installiert" beheben](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

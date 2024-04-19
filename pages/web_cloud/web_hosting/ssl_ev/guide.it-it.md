@@ -12,7 +12,7 @@ updated: 2023-06-08
 
 I certificati Secure Socket Layer (SSL) permettono di cifrare gli scambi effettuati da o verso il tuo sito Web. In questo modo si evita che una persona o un robot malevolo "ascolti" chiaramente le richieste inviate o inviate al tuo sito Web.
 
-OVHcloud propone diversi tipi di certificati SSL sulle nostre offerte di [hosting condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/). Per maggiori informazioni, consulta la guida [Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting). I certificati SSL sono indispensabili per la sicurezza del tuo sito Web.
+OVHcloud propone diversi tipi di certificati SSL sulle nostre offerte di [hosting condiviso OVHcloud](/links/web/hosting). Per maggiori informazioni, consulta la guida [Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting). I certificati SSL sono indispensabili per la sicurezza del tuo sito Web.
 
 Esistono tre tipi di certificati SSL:
 
@@ -39,9 +39,9 @@ Per gli hosting condivisi OVHcloud, l'autorità di certificazione che rilascia i
     
 ## Prerequisiti <a name="requirements"></a>
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Ordinare o disporre di un [hosting condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/) sul quale non è già installato alcun certificato SSL.
-- Ordinare o disporre di un [dominio](https://www.ovhcloud.com/it/domains/) e disporre dei diritti esclusivi sull'utilizzo. Il dominio non deve essere già associato a un certificato SSL.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Ordinare o disporre di un [hosting condiviso OVHcloud](/links/web/hosting) sul quale non è già installato alcun certificato SSL.
+- Ordinare o disporre di un [dominio](/links/web/domains) e disporre dei diritti esclusivi sull'utilizzo. Il dominio non deve essere già associato a un certificato SSL.
 - essere un'organizzazione (impresa, agenzia governativa, ...) registrata presso un registro ufficiale.
 - Disporre dell'autorizzazione della tua organizzazione per ordinare un certificato SSL EV
 - Essere in grado di giustificare con esattezza le informazioni e le coordinate relative alla tua organizzazione.
@@ -54,7 +54,7 @@ Per verificare se hai diritto alla sottoscrizione di un certificato SSL EV, clic
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVHcloud non sarà infatti in grado di fornirti assistenza **per tutte le fasi di verifica direttamente realizzata con l'autorità di certificazione Sectigo**. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non sarà infatti in grado di fornirti assistenza **per tutte le fasi di verifica direttamente realizzata con l'autorità di certificazione Sectigo**. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
 >
 
 ### Step 1: ordina il certificato SSL EV
@@ -82,7 +82,7 @@ Continua l'ordine fino al pagamento per confermare la richiesta di creazione del
 
 #### 1.2 - Per un nuovo dominio e un nuovo hosting
 
-Se non hai ancora ordinato il tuo dominio e il servizio di hosting associato, accedi alla pagina [homepage OVHcloud](https://www.ovhcloud.com/it/), inserisci un dominio nel**form di ricerca previsto a questo scopo** e clicca su `Cerca`{.action} per avviare il tuo ordine.
+Se non hai ancora ordinato il tuo dominio e il servizio di hosting associato, accedi alla pagina [homepage OVHcloud](/links/website), inserisci un dominio nel**form di ricerca previsto a questo scopo** e clicca su `Cerca`{.action} per avviare il tuo ordine.
 
 ![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 
@@ -131,7 +131,7 @@ Tutte le azioni descritte in questa fase possono essere eseguite su diversi gior
 Una volta effettuato l'ordine, Sectigo invierà un'email con un link di conferma e una procedura da seguire.
 Verifica le tue informazioni e conferma la tua richiesta seguendo le indicazioni presenti in questa email. 
 
-Per assicurarti che gli scambi via email con Sectigo avvengano correttamente, verifica anche la validità dell'indirizzo email inserito nel form al momento dell'ordine del certificato SSL EV e l'indirizzo email di contatto associato al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Per assicurarti che gli scambi via email con Sectigo avvengano correttamente, verifica anche la validità dell'indirizzo email inserito nel form al momento dell'ordine del certificato SSL EV e l'indirizzo email di contatto associato al tuo [Spazio Cliente OVHcloud](/links/manager).
 
 > [!primary]
 >
@@ -179,8 +179,8 @@ A questo punto non ti resterà che [inserire il tuo sito in HTTPS](/pages/web_cl
 
 [Attiva il tuo sito in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

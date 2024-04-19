@@ -16,15 +16,15 @@ Das **CMS** (**C**ontent **M**anagement **S**ystem) Grav ermöglicht die schnell
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot.
-- Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/).
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) Angebot.
+- Sie besitzen eine [Domain](/links/web/domains).
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
 
 ## In der praktischen Anwendung
 
 ### Installation vorbereiten
 
-Für die Installation des CMS **Grav** auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) sind einige Vorbereitungen erforderlich.
+Für die Installation des CMS **Grav** auf Ihrem [Webhosting](/links/web/hosting) sind einige Vorbereitungen erforderlich.
 
 Folgen Sie **allen Schritten** in unserer Anleitung zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation), bevor Sie zum nächsten Schritt übergehen.
 
@@ -35,7 +35,7 @@ Folgen Sie **allen Schritten** in unserer Anleitung zur [manuellen Installation 
 > Leeren Sie den Cache Ihres Internetbrowsers, bevor Sie mit der Installation fortfahren, um Fehler zu vermeiden.
 >
 
-#### Besuchen Sie Ihre Grav Website über Ihren Browser
+#### Öffnen Sie Ihre Grav Website über Ihren Browser
 
 Geben Sie Ihren Domainnamen in die Suchleiste Ihres Webbrowsers ein.
 
@@ -119,8 +119,8 @@ Sie haben das CMS Grav manuell auf Ihrem OVHcloud Webhosting installiert. Nachde
 
 [Tutorial - Manuelle Installation von SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
-[Tutorial - Manuelles Installieren eines CMS auf meinem Hosting](/pages/web_cloud/web_hosting/cms_manual_installation)
+[Tutorial - Manuelle Installation eines CMS auf einem Webhosting](/pages/web_cloud/web_hosting/cms_manual_installation)
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

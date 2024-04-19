@@ -21,6 +21,7 @@ bare-metal-cloud-dedicated-servers: Serveurs dédiés
 bare-metal-cloud-dedicated-servers-advanced-usage: Utilisation avancée
 bare-metal-cloud-dedicated-servers-getting-started: Premiers pas
 bare-metal-cloud-dedicated-servers-managing-servers: Gérer un serveur
+bare-metal-cloud-dedicated-servers-backup-restore: Sauvegarder et restaurer un serveur
 bare-metal-cloud-dedicated-servers-miscellaneous: Divers
 bare-metal-cloud-dedicated-servers-network-and-ip-management: Réseau et IP
 bare-metal-cloud-dedicated-servers-raid-and-disks: RAID & disques
@@ -53,6 +54,7 @@ hosted-private-cloud-nutanix-on-ovhcloud-disaster-recovery-plan: Plan de Reprise
 hosted-private-cloud-nutanix-on-ovhcloud-raci: Partage de responsabilité (RACI)
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware: VMware on OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Premiers pas
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vcd: VMware Cloud Director
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security: Accès et sécurité
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Gestion des machines virtuelles
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring: Maintenance et surveillance
@@ -341,6 +343,7 @@ network-load-balancer-getting-started: Premiers pas
 network-load-balancer-setting-up: Mise en route
 network-load-balancer-use-cases: Cas d'utilisation
 network-load-balancer-viewing-statuses: Consulter les statuts
+network-vrack-services: vRack Services
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6

@@ -26,7 +26,7 @@ Para utilizar correctamente el archivo ".htaccess", debe conocer y respetar las 
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 > Deberá configurar los siguientes ejemplos en un archivo ".htaccess". Atención: Las reglas que usted establezca en este fichero tienen consecuencias directas en su sitio web. Compruebe sistemáticamente las reglas que añade antes de aplicarlas a su sitio web. 
 > 
@@ -35,7 +35,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Requisitos
 
-- Disponer de un [hosting OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/)
+- Disponer de un [hosting OVHcloud](/links/web/hosting)
 
 ## Procedimiento
 
@@ -144,8 +144,8 @@ La línea anterior redirigirá al internauta que experimente un error **404** ha
 
 [Reescribir la URL de acceso a mi sitio web gracias al mod_rewrite a través del archivo .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

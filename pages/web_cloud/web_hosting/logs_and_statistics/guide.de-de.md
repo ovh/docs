@@ -16,14 +16,14 @@ Der Zugriff auf die Logs und Statistiken Ihrer Website ist in Ihrem Webhosting-A
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 So greifen Sie auf die verschiedenen statistischen Daten und Logs Ihres Webhostings zu: 
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
 2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
@@ -62,7 +62,7 @@ Im Feld `Period selection` oben rechts können Sie einen bestimmten Zeitraum aus
 >
 > Wir sind nicht in der Lage, bei der Interpretation der Logs Ihres Webhostings zu assistieren, da dies ausschließlich die Webentwicklung und nicht das Webhosting selbst betrifft.
 >
-> Wenden Sie sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+> Wenden Sie sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner).
 >
 
 Sie können die *Raw Logs* Ihrer Website mit einer Verzögerung von ca. 5 Minuten einsehen.
@@ -111,7 +111,7 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 
 Sie können auch direkt über Ihr Kundencenter den Zugangslink zu den Statistiken und Logs abrufen:
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
 2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
@@ -130,8 +130,8 @@ Rufen Sie auf der neu geöffneten Seite die URL in der Adresszeile Ihres Browser
 
 ## Weiterführende Informationen
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

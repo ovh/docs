@@ -10,16 +10,16 @@ updated: 2024-03-21
 
 ## Ziel 
 
-Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einrichten oder einen Onlineshop eröffnen, mit anderen Ihr Hobby teilen oder Ihr Unternehmen darstellen und am Markt platzieren möchten: Sie können die gewünschte Website auf Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} hosten, solange diese mit der [Konfiguration unserer Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel ist.
+Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einrichten oder einen Onlineshop eröffnen, mit anderen Ihr Hobby teilen oder Ihr Unternehmen darstellen und am Markt platzieren möchten: Sie können die gewünschte Website auf Ihrem [OVHcloud Webhosting](/links/web/hosting){.external} hosten, solange diese mit der [Konfiguration unserer Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel ist.
 
 **Hier erfahren Sie, wie Sie eine Website auf Ihrem OVHcloud Webhosting online stellen.**
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting){.external}.
 - Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external}, über den Ihre Website erreichbar sein wird.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über einen [Domainnamen](/links/web/domains){.external}, über den Ihre Website erreichbar sein wird.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
@@ -28,7 +28,7 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 
 Um Ihr Vorhaben erfolgreich umzusetzen, ist es wichtig, dass Sie Ihr Ziel klar vor Augen haben. Was ist der Zweck Ihrer Website? Wie soll Sie online gestellt werden? Über Ihr OVHcloud Webhosting Angebot stehen Ihnen mehrere Möglichkeiten für Ihr Website-Projekt zur Verfügung.
 
-- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Inhalte, etc.). OVHcloud bietet Ihnen vier verschiedene, mit unserer Infrastruktur kompatible 1-Klick-Module, die auf unserer Seite "[Wie erstelle ich eine Website?](https://www.ovhcloud.com/de/web-hosting/uc-website/){.external}" vorgestellt werden. Beachten Sie dazu auch die Anleitung "[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Inhalte, etc.). OVHcloud bietet Ihnen vier verschiedene, mit unserer Infrastruktur kompatible 1-Klick-Module, die auf unserer Seite "[Wie erstelle ich eine Website?](/links/web/hosting-website){.external}" vorgestellt werden. Beachten Sie dazu auch die Anleitung "[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 - **Website über gebrauchsfertige Vorlage manuell installieren**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). Die Vorlage installieren Sie selbst auf Ihrem OVHcloud Webhosting.
 
@@ -46,7 +46,7 @@ Nachdem Sie eine der Möglichkeiten ausgewählt haben, ergeben sich die folgende
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 >
 
 ### Schritt 2: Websitedateien im Speicherplatz online stellen
@@ -68,7 +68,7 @@ Um sich mit Ihrem Speicherplatz zu verbinden, benötigen Sie die folgenden Eleme
 - Die Serveradresse
 - Den Verbindungsport des Servers
 
-Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt. Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. 
+Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt. Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. 
 
 ![website installation](images/tab-pro.png){.thumbnail}
 
@@ -80,7 +80,7 @@ Wenn Sie alle nötigen Informationen haben, können Sie sich in Ihren Speicherpl
 
 - **FTP- oder SFTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer (zum Beispiel FileZilla). Bitte kontaktieren Sie den Herausgeber der installierten Software, wenn Sie für deren Verwendung Hilfe brauchen, da sie nicht von OVHcloud entwickelt wurde.
 
-- **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot erforderlich.
+- **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVHcloud Webhosting](/links/web/hosting){.external} Angebot erforderlich.
 
 #### 3. Dateien auf Ihren Speicherplatz hochladen
 
@@ -109,9 +109,9 @@ Wenn Sie eine bereits bestehende Website migrieren, erhalten Sie die Datenbankda
 
 #### 2. Datenbank bei OVHcloud erstellen 
 
-Wenn Sie bereits eine Datenbank besitzen, die Sie verwenden möchten (beispielsweise aus einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot oder einer [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/){.external} Lösung), halten Sie bitte folgende Informationen bereit: Benutzername, zugehöriges Passwort, Name der Datenbank sowie die Serveradresse. Gehen Sie nun zum nächsten Schritt über.
+Wenn Sie bereits eine Datenbank besitzen, die Sie verwenden möchten (beispielsweise aus einem [OVHcloud Webhosting](/links/web/hosting){.external} Angebot oder einer [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/){.external} Lösung), halten Sie bitte folgende Informationen bereit: Benutzername, zugehöriges Passwort, Name der Datenbank sowie die Serveradresse. Gehen Sie nun zum nächsten Schritt über.
 
-Wenn Sie eine neue Datenbank bei OVHcloud erstellen möchten, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Wenn Sie eine neue Datenbank bei OVHcloud erstellen möchten, loggen Sie sich im [OVHcloud Kundencenter](/links/manager){.external} ein und klicken Sie auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Klicken Sie nun auf den Button `Datenbank erstellen`{.action} oder, wenn der Button nicht angezeigt wird, auf `Aktionen`{.action} und dann auf `Datenbank erstellen`{.action}. Folgen Sie nun den angezeigten Informationen.
 
@@ -127,7 +127,7 @@ Für den Import gibt es mehrere Möglichkeiten, OVHcloud bietet einen solchen ü
 
 Nun, da die Datenbank verfügbar ist und Sie die Dateien in den Speicherplatz hochgeladenen haben, müssen diese nur noch miteinander verbunden werden. Vergewissern Sie sich, dass Sie über die Login-Daten der Datenbank verfügen: Benutzername, das zugehörige Passwort, Name der Datenbank und Serveradresse.
 
-Wie Website und Datenbank miteinander verbunden werden, hängt von der Website ab, die Sie online stellen möchten. Die Vorgehensweise variiert je nach Konfiguration Ihrer Website und hat nichts mit OVHcloud zu tun. Wir empfehlen Ihnen deshalb, den Herausgeber Ihrer Website oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie weitere Hilfe benötigen.
+Wie Website und Datenbank miteinander verbunden werden, hängt von der Website ab, die Sie online stellen möchten. Die Vorgehensweise variiert je nach Konfiguration Ihrer Website und hat nichts mit OVHcloud zu tun. Wir empfehlen Ihnen deshalb, den Herausgeber Ihrer Website oder einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, falls Sie weitere Hilfe benötigen.
 
 ### Schritt 4: Auf Ihre Website zugreifen
 
@@ -141,7 +141,7 @@ Ist das nicht der Fall, empfehlen wir Ihnen Folgendes:
 
 - **Überprüfen Sie den Code der Website auf Fehler**: Diese Überprüfung ist zwar technisch anspruchsvoll, aber es kann sein, dass die hochgeladenen Dateien Fehler enthalten und der Server die Website deshalb nicht korrekt oder überhaupt nicht anzeigen kann.
 
-Sollten Sie bei der Veröffentlichung Ihrer Website Schwierigkeiten haben, empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes (zum Beispiel des installierten CMS) zu kontaktieren.
+Sollten Sie bei der Veröffentlichung Ihrer Website Schwierigkeiten haben, empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes (zum Beispiel des installierten CMS) zu kontaktieren.
 
 ## Weiterführende Informationen
 
@@ -151,8 +151,8 @@ Sollten Sie bei der Veröffentlichung Ihrer Website Schwierigkeiten haben, empfe
 
 [Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

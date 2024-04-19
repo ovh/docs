@@ -64,7 +64,7 @@ Po ukończeniu procesu Twoja instancja będzie wyświetlana jako *Zawieszona*.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-Aby wyświetlić migawkę, przejdź do menu po lewej stronie i kliknij pozycję Kopia zapasowa `Instance Backup`{.action}. Widoczna będzie teraz migawka o nazwie *xxxx-shelved*:
+Migawka będzie wówczas dostępna w sekcji `Instance Backup`{.action} w menu `Storage` po lewej stronie przestrzeni Public Cloud. Migawka o nazwie *xxxxx-shelved* będzie wtedy widoczna:
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -236,6 +236,6 @@ Aby ponownie włączyć instancję, wpisz w wierszu polecenia:
 
 ## Sprawdź również
 
-[Dokumentacja OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
+[Dokumentacja OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -12,15 +12,15 @@ Une base de données (BDD) est utilisée pour stocker des éléments dynamiques 
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données.
-- Disposer d’une base de données disponible en « création » parmi celles incluses dans votre offre d’hébergement web. Si besoin, vous pouvez ajouter des bases de données [Start SQL](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/) à votre hébergement web.
-- Disposer d'un accès à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) avec les [autorisations nécessaires](/pages/account_and_service_management/account_information/managing_contacts) pour gérer votre hébergement web.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting) incluant au moins une base de données.
+- Disposer d’une base de données disponible en « création » parmi celles incluses dans votre offre d’hébergement web. Si besoin, vous pouvez ajouter des bases de données [Start SQL](/links/web/hosting-options-startsql) à votre hébergement web.
+- Disposer d'un accès à l'[espace client OVHcloud](/links/manager) avec les [autorisations nécessaires](/pages/account_and_service_management/account_information/managing_contacts) pour gérer votre hébergement web.
 
 ## En pratique
 
 ### Étape 1 - Accéder à l'onglet de gestion des bases de données d'un hébergement web
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez créer une base de données puis cliquez sur l'onglet `Bases de données`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez créer une base de données puis cliquez sur l'onglet `Bases de données`{.action}.
 
 Le tableau de cette section contient toutes les bases de données créées avec votre hébergement web.
 
@@ -53,7 +53,7 @@ Dans la fenêtre qui s’ouvre, sélectionnez les informations suivantes :
 |Information|Description|  
 |---|---|
 |**Sélectionnez le type de base de données**|Choisissez la taille de la base de données. Cette taille fait référence à l'espace dont dispose votre base de données pour le stockage des données.|
-|**Sélectionnez le moteur de la base de données à ajouter**|Choisissez le moteur que la base de données doit utiliser. Les bases de données inclues dans votre [offre d’hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) sont uniquement disponibles avec le moteur MySQL.|
+|**Sélectionnez le moteur de la base de données à ajouter**|Choisissez le moteur que la base de données doit utiliser. Les bases de données inclues dans votre [offre d’hébergement web OVHcloud](/links/web/hosting) sont uniquement disponibles avec le moteur MySQL.|
 |**Sélectionnez la version de la base de données à ajouter**|Choisissez la version utilisée par le moteur de la base de données. Assurez-vous que votre site web soit compatible avec la version que vous avez choisie.|
 
 Ensuite, cliquez sur `Suivant`{.action}.
@@ -94,7 +94,7 @@ Vérifiez que toutes les informations affichées dans le résumé sont correctes
 
 > [!primary]
 >
-> Lorsque vous cliquez sur `Confirmer`{.action}, la création de la base de données peut prendre jusqu'à **15 minutes**. Rechargez la page web de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) si la base de données n'apparaît pas automatiquement dans le tableau listant vos bases de données.
+> Lorsque vous cliquez sur `Confirmer`{.action}, la création de la base de données peut prendre jusqu'à **15 minutes**. Rechargez la page web de votre [espace client OVHcloud](/links/manager) si la base de données n'apparaît pas automatiquement dans le tableau listant vos bases de données.
 >
 
 Répétez ce processus autant de fois que vous le souhaitez afin de créer plusieurs bases de données (dans la limite des bases de données disponibles dans votre offre).
@@ -103,7 +103,7 @@ Répétez ce processus autant de fois que vous le souhaitez afin de créer plusi
 
 > [!warning]
 >
-> Ce guide ne remplace pas l’assistance d'un professionnel en développement. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du logiciel de votre solution si vous rencontrez des difficultés. OVHcloud ne sera pas en mesure de vous fournir une assistance à ce propos. Retrouverez plus d’informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Ce guide ne remplace pas l’assistance d'un professionnel en développement. Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du logiciel de votre solution si vous rencontrez des difficultés. OVHcloud ne sera pas en mesure de vous fournir une assistance à ce propos. Retrouverez plus d’informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 À présent, vous pouvez utiliser votre base de données. Pour ce faire, vous aurez besoin de vos informations de connexion :
@@ -114,7 +114,7 @@ Répétez ce processus autant de fois que vous le souhaitez afin de créer plusi
 
 Ces informations sont essentielles pour que votre site web puisse se connecter à la base de données.
 
-Si besoin, pour récupérer ces informations de connexion, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez récupérer les informations de connexion à votre base de données puis cliquez sur l'onglet `Bases de données`{.action}.
+Si besoin, pour récupérer ces informations de connexion, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez récupérer les informations de connexion à votre base de données puis cliquez sur l'onglet `Bases de données`{.action}.
 
 Vous retrouverez l'ensemble des informations de connexion à votre base de données dans le tableau qui s'affiche. Ceci à l'exception du *mot de passe* pour des raisons de sécurité.
 
@@ -123,7 +123,7 @@ Vous retrouverez l'ensemble des informations de connexion à votre base de donn�
 > Si vous ne vous souvenez plus de votre mot de passe de connexion à votre base de données, consultez notre guide « [Changer le mot de passe de sa base de données](/pages/web_cloud/web_hosting/sql_change_password) ».
 >
 
-Selon le logiciel utilisé, il est possible que cette connexion nécessite d'être configurée manuellement ou via une interface générée par l'interface de configuration (backend) du site web. Étant donné que cette procédure concerne la configuration de votre site web et non votre hébergement OVHcloud, nous vous recommandons de consulter les ressources disponibles en ligne ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/).
+Selon le logiciel utilisé, il est possible que cette connexion nécessite d'être configurée manuellement ou via une interface générée par l'interface de configuration (backend) du site web. Étant donné que cette procédure concerne la configuration de votre site web et non votre hébergement OVHcloud, nous vous recommandons de consulter les ressources disponibles en ligne ou de faire appel à un [prestataire spécialisé](/links/partner).
 
 > [!primary]
 >
@@ -132,7 +132,7 @@ Selon le logiciel utilisé, il est possible que cette connexion nécessite d'êt
 
 #### Accéder à l’interface phpMyAdmin
 
-OVHcloud fournit un outil en ligne pour la gestion des bases de données, « phpMyAdmin ». Pour trouver le lien d'accès à cette application, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez récupérer les informations de connexion à votre base de données puis cliquez sur l'onglet `Bases de données`{.action}. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite de la base de données concernée, puis cliquez sur `Accéder à phpMyAdmin`{.action} dans le menu déroulant.
+OVHcloud fournit un outil en ligne pour la gestion des bases de données, « phpMyAdmin ». Pour trouver le lien d'accès à cette application, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez récupérer les informations de connexion à votre base de données puis cliquez sur l'onglet `Bases de données`{.action}. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite de la base de données concernée, puis cliquez sur `Accéder à phpMyAdmin`{.action} dans le menu déroulant.
 
 ![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
@@ -144,13 +144,13 @@ Si besoin, consultez l'[étape 3](#step3) du présent guide pour retrouvez les i
 
 Pour chaque base de données d'hébergement web, des snapshots sont créés automatiquement chaque jour (jusqu'à 32 maximum). Vous pouvez donc restaurer rapidement une version antérieure d'une base de données à partir de votre espace client OVHcloud.
 
-Pour vérifier les snapshots disponibles ainsi que leur date et heure de création, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez consulter les snapshots disponibles pour votre base de données puis cliquez sur l'onglet `Bases de données`{.action}. Dans le tableau qui s'affiche, cliquez sur le symbole juste à côté du cercle vert. Vous pouvez également télécharger chaque sauvegarde d'une base de données depuis ce même endroit. Retrouvez plus d'informations sur le sujet dans notre guide « [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export) ».
+Pour vérifier les snapshots disponibles ainsi que leur date et heure de création, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez consulter les snapshots disponibles pour votre base de données puis cliquez sur l'onglet `Bases de données`{.action}. Dans le tableau qui s'affiche, cliquez sur le symbole juste à côté du cercle vert. Vous pouvez également télécharger chaque sauvegarde d'une base de données depuis ce même endroit. Retrouvez plus d'informations sur le sujet dans notre guide « [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export) ».
 
 #### Comprendre les problèmes courants
 
 **Trop de connexions**
 
-Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives doivent être envisagées. Par exemple, vous pouvez migrer votre base de données sur une base de données [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) ou encore réaliser une [mise à niveau de votre offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/uc-best-web-hosting/).
+Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives doivent être envisagées. Par exemple, vous pouvez migrer votre base de données sur une base de données [Web Cloud Databases](/links/web/databases) ou encore réaliser une [mise à niveau de votre offre d'hébergement web](/links/web/hosting-best-web).
 
 **Erreurs de connexion / « introuvable »**
 
@@ -174,8 +174,8 @@ Une fois que la base de données a été optimisée (purgée), recalculez son qu
 
 [Optimiser les performances de votre site web](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

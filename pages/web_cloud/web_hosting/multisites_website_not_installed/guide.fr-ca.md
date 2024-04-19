@@ -16,12 +16,12 @@ Il est possible de voir apparaître sur votre navigateur Internet la page d'erre
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement mutualisé](https://www.ovhcloud.com/fr-ca/web-hosting/)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Disposer d'une [offre d'hébergement mutualisé](/links/web/hosting)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer également de la gestion de la [Zone DNS](/pages/web_cloud/domains/dns_zone_edit) à laquelle est rattachée votre nom de domaine.
 
 ## En pratique
@@ -36,7 +36,7 @@ Les étapes suivantes vous permettront de corriger l’erreur `Site non install�
 
 ### Étape 1 - Vérifier la déclaration de votre nom de domaine ou de votre sous-domaine sur votre hébergement web <a name="check-multisites"></a>
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page, puis cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche.
+Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page, puis cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche.
 
 Sélectionnez l'hébergement web concerné dans la liste, puis cliquez sur l’onglet `Multisite`{.action}.
 
@@ -61,7 +61,7 @@ Cette étape consiste à vérifier que votre nom de domaine ou sous-domaine poin
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement web OVHcloud
 
-Pour retrouver l'adresse IP de votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné dans la liste.
+Pour retrouver l'adresse IP de votre hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné dans la liste.
 
 Vous retrouverez l'adresse `IPv4` dans l'encadré `Informations générales`{.action}.
 
@@ -80,7 +80,7 @@ Vous devez maintenant vérifier que l'adresse IP de votre hébergement web appar
 > Si vous modifiez directement les **serveurs DNS** associés à votre nom de domaine, ce délai peut aller jusqu'à **48 heures** maximum.
 >
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Rendez vous dans la partie `Domaines`{.action}, sélectionnez votre nom de domaine puis dirigez-vous dans l'onglet `Zone DNS`{.action}.
+Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Rendez vous dans la partie `Domaines`{.action}, sélectionnez votre nom de domaine puis dirigez-vous dans l'onglet `Zone DNS`{.action}.
 
 Un tableau avec différents enregistrements DNS s'affiche.
 
@@ -88,7 +88,7 @@ Un tableau avec différents enregistrements DNS s'affiche.
 |---|---|
 |Dans la zone DNS active, votre nom de domaine/sous-domaine pointe vers l'adresse IP de votre hébergement web avec un enregistrement de type A (pour une IPv4) ou AAAA (pour une IPv6).<br><br>![zoneDNS_IP2](images/dashboard-entry-a.png){.thumbnail}|Ceci indique que la configuration de votre nom de domaine est correcte.<br><br> Patientez le temps de la propagation DNS si la modification est récente.<br><br> N'oubliez pas non plus de redémarrer vos appareils (PC, smartphone, box, etc.) et de vider le cache de votre navigateur internet. En effet, l'ancienne configuration de votre nom de domaine peut être mise en cache : ce qui peut ralentir l'affichage de votre mise à jour.|
 |La zone DNS active ne comporte pas d'enregistrements de type A ou AAAA reliant votre nom de domaine/sous-domaine à l'adresse IP de votre hébergement web. Ou l'enregistrement existant pointe sur une autre adresse IP.|Ajoutez le nouvel enregistrement de type A ou AAAA ou corrigez l'enregistrement existant en suivant [ce guide](/pages/web_cloud/domains/dns_zone_edit).|
-|Votre domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client OVHcloud.<br><br>Ou l'onglet `Zone DNS`{.action} de votre nom de domaine s'affiche de la façon suivante :<br><br>![zone-without-domain-top-of-the-page](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Cela signifie que votre nom de domaine n'est pas géré depuis votre espace client OVHcloud.<br><br>Déterminez son « registrar » via notre outil [WHOIS](https://www.ovhcloud.com/fr-ca/domains/whois/) et les serveurs DNS auxquels il est associé. <br><br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant la rubrique dédiée du guide « [Partager son hébergement entre plusieurs sites - ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».|
+|Votre domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client OVHcloud.<br><br>Ou l'onglet `Zone DNS`{.action} de votre nom de domaine s'affiche de la façon suivante :<br><br>![zone-without-domain-top-of-the-page](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Cela signifie que votre nom de domaine n'est pas géré depuis votre espace client OVHcloud.<br><br>Déterminez son « registrar » via notre outil [WHOIS](/links/web/domains-whois) et les serveurs DNS auxquels il est associé. <br><br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant la rubrique dédiée du guide « [Partager son hébergement entre plusieurs sites - ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».|
 |Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![message-other-ovh-dns-servers](images/message-other-ovh-dns-servers.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre nom de domaine en conséquence en suivant notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information). »|
 
 ## Aller plus loin <a name="go-further"></a>
@@ -103,8 +103,8 @@ Un tableau avec différents enregistrements DNS s'affiche.
 
 [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

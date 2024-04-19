@@ -1,7 +1,7 @@
 ---
-title: 'Korzystanie z migawek na prywatnym serwerze wirtualnym'
-excerpt: 'Dowiedz się, jak włączyć opcję migawki w Panelu klienta OVHcloud i korzystać z niej'
-updated: 2023-04-28
+title: "Korzystanie z migawek na prywatnym serwerze wirtualnym"
+excerpt: "Dowiedz się, jak włączyć opcję migawki w Panelu klienta OVHcloud i korzystać z niej"
+updated: 2024-04-15
 ---
 
 > [!primary]
@@ -30,7 +30,7 @@ Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 ### Krok 1: subskrybowanie opcji kopii zapasowej
 
-Na karcie `Strona główna`{.action} przewiń do obszaru z nagłówkiem “Podsumowanie opcji”. Kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Zamówienie`{.action}.
+Na karcie `Strona główna`{.action} przewiń do obszaru z nagłówkiem “Podsumowanie opcji”. Jeśli opcja "Snapshot" jest już w stanie "Włączona", przejdź od razu do etapu 2. Jeśli "Snapshot" nie jest jeszcze aktywny, kliknij na `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Zamówienie`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
@@ -38,7 +38,7 @@ W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.a
 
 ### Krok 2: tworzenie migawki
 
-Po włączeniu opcji kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Utwórz migawkę`{.action}. Czas tworzenia snapshota zależy od użytej przestrzeni dyskowej. Po utworzeniu migawki w obszarze “Podsumowanie opcji” pojawi się jej znacznik czasu.
+Po włączeniu opcji kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Utwórz migawkę`{.action}. Możesz wpisać opis, który będzie dołączony do kopii zapasowej snapshot. Czas tworzenia snapshota zależy od użytej przestrzeni dyskowej. Po utworzeniu migawki w obszarze “Podsumowanie opcji” pojawi się jej znacznik czasu.
 
 ### Krok 3: usuwanie / przywracanie migawki
 
@@ -51,6 +51,8 @@ Jeśli na pewno chcesz zresetować status prywatnego serwera wirtualnego do stan
 > [!alert]
 >
 > Pamiętaj, że przywrócenie systemu ze snapshota spowoduje usunięcie samego shapshota. Jeśli chcesz zachować tę samą migawkę, musisz wykonać nową przed wprowadzeniem zmian w przywróconym systemie.
+>
+> Jeśli funkcja snapshot jest zbyt ograniczona dla Twojego projektu, opcja [automatyczne kopie zapasowe](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) jest alternatywna.
 >
 
 ### Pobierz snapshot
@@ -96,6 +98,8 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 >
 > Aby uniknąć utraty zbyt dużej ilości przestrzeni dyskowej, zalecamy usunięcie kopii zapasowych snapshot bezpośrednio z serwera VPS.
 >
+> Pobrany plik można zaimportować do projektu Public Cloud (QCOW2) jako obraz za pośrednictwem [OpenStack](products/public-cloud-compute-instance-management). (Przykład zastosowania znajduje się w [tym przewodniku](/pages/public_cloud/compute/upload_own_image).)
+>
 
 ### Dobre praktyki dotyczące tworzenia migawek
 
@@ -110,21 +114,21 @@ W większości dystrybucji wymagany *qemu-guest-agent* nie jest zainstalowany do
 Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Jeśli wynik jest inny (“No such file or directory”), zainstaluj najnowszy pakiet:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install qemu-guest-agent
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
 ```
 
 Uruchom usługę, aby upewnić się, że działa:
 
 ```bash
-$ sudo service qemu-guest-agent start
+sudo service qemu-guest-agent start
 ```
 
 ##### **Distributions Redhat (CentOS, Fedora)**
@@ -132,22 +136,22 @@ $ sudo service qemu-guest-agent start
 Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Jeśli wynik jest inny (“No such file or directory”), zainstaluj i aktywuj agenta:
 
 ```bash
-$ sudo yum install qemu-guest-agent
-$ sudo chkconfig qemu-guest-agent on
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
 ```
 
 Uruchom agenta i sprawdź, czy działa:
 
 ```bash
-$ sudo service qemu-guest-agent start
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent start
+sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**

@@ -24,9 +24,9 @@ Nuestros planes de hosting son compatibles con IPv6 desde 2011. Sin embargo, la 
 
 ## Requisitos
 
-- Disponer de un [dominio](https://www.ovhcloud.com/es/domains/){.external} en el área de cliente de OVHcloud.
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external}.
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Disponer de un [dominio](/links/web/domains){.external} en el área de cliente de OVHcloud.
+- Tener contratado un [plan de hosting](/links/web/hosting){.external}.
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
@@ -34,7 +34,7 @@ Nuestros planes de hosting son compatibles con IPv6 desde 2011. Sin embargo, la 
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
 > 
 
 Si su sitio no está configurado para funcionar con una dirección IPv6, puede añadir [la dirección IPv6 de su alojamiento compartido OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) a la zona DNS activa de su nombre de dominio. El objetivo es que los navegadores puedan encontrar una dirección IPv6 asociada a su sitio web a través de su nombre de dominio.
@@ -45,7 +45,7 @@ Para comprobar si su sitio web ya utiliza una dirección IPv6, utilice el sitio 
 
 ### Etapa 1: descargar la dirección IPv6 de su alojamiento web
 
-Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action}, seleccione el alojamiento correspondiente y abra la pestaña `Información general`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action}, seleccione el alojamiento correspondiente y abra la pestaña `Información general`{.action}.
 
 Copie la entrada y vaya al siguiente paso en el marco **IPv6**.
 
@@ -72,8 +72,8 @@ Introduzca la dirección IPv6 previamente copiada utilizando el tipo de registro
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit#editar-la-zona-dns-de-ovhcloud-de-un-dominio)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

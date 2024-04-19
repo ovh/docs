@@ -34,15 +34,15 @@ In rari casi, la visualizzazione lenta può anche provenire dal tuo provider Int
 >
 > I nostri hosting condivisi non dispongono di "Service Level Agreement" (SLA). 
 >
-> In caso di necessità di un servizio con un tasso di disponibilità SLA superiore al 99%, ti consigliamo di considerare l'utilizzo di un [Server Privato Virtuale (VPS)](https://www.ovhcloud.com/it/vps/) o di un [Server Dedicato](https://www.ovhcloud.com/it/bare-metal/).
+> In caso di necessità di un servizio con un tasso di disponibilità SLA superiore al 99%, ti consigliamo di considerare l'utilizzo di un [Server Privato Virtuale (VPS)](/links/bare-metal/vps) o di un [Server Dedicato](/links/bare-metal/bare-metal).
 >
 > Inoltre, le prestazioni dell'infrastruttura di hosting condivisi OVHcloud sono monitorate 24 ore su 24 e 7 giorni su 7, al fine di garantirti un alto tasso di disponibilità e, in caso di comprovata necessità, un rapido ripristino dei tuoi servizi.
 >
 
 ## Prerequisiti
 
-- Disporre di un sito ospitato su una delle nostre offerte di [hosting condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di un sito ospitato su una delle nostre offerte di [hosting condiviso OVHcloud](/links/web/hosting)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -50,7 +50,7 @@ In rari casi, la visualizzazione lenta può anche provenire dal tuo provider Int
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVHcloud non sarà infatti in grado di fornirti assistenza **se l'infrastruttura in cui è presente la tua offerta di hosting condiviso non è interessata**. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non sarà infatti in grado di fornirti assistenza **se l'infrastruttura in cui è presente la tua offerta di hosting condiviso non è interessata**. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 > [!success]
@@ -98,7 +98,7 @@ Tutte le diagnostiche dello step 1 devono essere eseguite **senza eccezione** pe
 
 Per garantire che i tuoi servizi (hosting condiviso **e** database) non siano oggetto di manutenzione o incidente, recupera le informazioni sul cluster e il filer del tuo hosting condiviso, così come le informazioni generali relative al tuo database. In seguito potrai verificare il loro stato su [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}, seleziona il cluster e il file in cui si trova il tuo hosting condiviso, clicca su `Hosting`{.action} e seleziona l'hosting Web corrispondente. Nella scheda `Informazioni generali`{.action}, clicca su `datacenter` del tuo hosting condiviso e `filer` dov'è.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action}, seleziona il cluster e il file in cui si trova il tuo hosting condiviso, clicca su `Hosting`{.action} e seleziona l'hosting Web corrispondente. Nella scheda `Informazioni generali`{.action}, clicca su `datacenter` del tuo hosting condiviso e `filer` dov'è.
 
 ![Recupera Filer](images/find-filer.png){.thumbnail}
 
@@ -137,7 +137,7 @@ phpinfo();
 >
 > In alcuni casi, i file "**.htaccess**" presenti nelle directory/cartelle a monte o allo stesso livello del luogo in cui hai inserito il tuo file "**phpinfo.php**" possono influire sulla visualizzazione in un browser del "**phpinfo.php**". 
 >
-> Le operazioni su un file "**.htaccess**" possono avere conseguenze sulla visualizzazione del tuo sito. In caso di difficoltà o dubbi, rivolgiti a un [fornitore specializzato](https://partner.ovhcloud.com/it/directory/).
+> Le operazioni su un file "**.htaccess**" possono avere conseguenze sulla visualizzazione del tuo sito. In caso di difficoltà o dubbi, rivolgiti a un [fornitore specializzato](/links/partner).
 >
 > Se non compare e **solo per gli utenti esperti**, rinomina i tuoi file "**.htaccess**" in "**.htaccess_OLD**" affinché il server non li esegua più durante il test. Rinominali correttamente una volta completata la diagnostica.
 >
@@ -192,7 +192,7 @@ A questo punto, sai che i rallentamenti sono generati dalle pagine/script/file c
 
 > [!warning]
 >
-> In caso di difficoltà nell'esecuzione delle azioni successive, contatta uno dei nostri [specialisti del settore](https://partner.ovhcloud.com/it/directory/). OVHcloud non fornirà assistenza nello sviluppo e/o nell'ottimizzazione del contenuto del tuo sito Web.
+> In caso di difficoltà nell'esecuzione delle azioni successive, contatta uno dei nostri [specialisti del settore](/links/partner). OVHcloud non fornirà assistenza nello sviluppo e/o nell'ottimizzazione del contenuto del tuo sito Web.
 >
 
 Di seguito trovi le azioni da effettuare per identificare la fonte o le fonti dei rallentamenti e ottimizzare il tuo sito Web.
@@ -249,14 +249,14 @@ Per diminuire il flusso di richieste a ogni caricamento delle tue pagine, puoi a
 
 > [!primary]
 >
-> OVHcloud propone diverse [offerte CDN](https://www.ovhcloud.com/it/web-hosting/options/). Per utilizzarne o attivarne uno per il tuo hosting Web, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e consulta la nostra guida su [l'utilizzo della CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud propone diverse [offerte CDN](/links/web/hosting-options). Per utilizzarne o attivarne uno per il tuo hosting Web, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e consulta la nostra guida su [l'utilizzo della CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - ottimizza il tuo database
 
 > [!warning]
 >
-> Le azioni eseguite nei database possono avere conseguenze irreversibili se non eseguite in modo corretto e metodico. Se non sei sicuro delle azioni da realizzare, rivolgiti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/). 
+> Le azioni eseguite nei database possono avere conseguenze irreversibili se non eseguite in modo corretto e metodico. Se non sei sicuro delle azioni da realizzare, rivolgiti a un [provider specializzato](/links/partner). 
 >
 
 Verifica che vengano effettuate richieste in quantità sufficiente verso il tuo database.<br>
@@ -294,12 +294,12 @@ Per ottimizzare il tuo sito è possibile consultarlo su [gtmetrix.com](https://g
 
 Se il tuo hosting Web e il tuo database **non sono in causa** e il tuo sito Web continua ad essere lento, nonostante la realizzazione di **tutti gli step** di questa guida, probabilmente l'offerta che utilizzi per ospitare il tuo sito Web non è o non è più adatta alle tue necessità. 
 
-È possibile scegliere una [offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/) superiore o un'infrastruttura dedicata come [Server Privato Virtuale (VPS)](https://www.ovhcloud.com/it/vps/) o un [Server Dedicato](https://www.ovhcloud.com/it/bare-metal/). 
+È possibile scegliere una [offerta di hosting condiviso](/links/web/hosting) superiore o un'infrastruttura dedicata come [Server Privato Virtuale (VPS)](/links/bare-metal/vps) o un [Server Dedicato](/links/bare-metal/bare-metal). 
 
 ## Per saperne di più <a name="go-further"></a>
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

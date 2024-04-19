@@ -22,12 +22,12 @@ Pour télécharger Cyberduck, rendez-vous sur le [site officiel](https://cyberdu
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous rencontrez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Consultez la section [Aller plus loin](#go-further) de ce guide pour plus d'informations.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous rencontrez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Consultez la section [Aller plus loin](#go-further) de ce guide pour plus d'informations.
 >
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d'une offre d'[hébergement web](/links/web/hosting){.external}.
 - Avoir téléchargé et installé l'application Cyberduck sur votre ordinateur.
 
 ## En pratique
@@ -228,6 +228,6 @@ Pour vérifier que la réouverture est bien effective, connectez-vous à votre s
 
 [Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

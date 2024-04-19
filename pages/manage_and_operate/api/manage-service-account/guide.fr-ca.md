@@ -13,7 +13,7 @@ Lorsque des accès aux API sont nécessaires depuis des applications ou du code,
 Ce guide vous expliquera comment générer des identifiants pour les déployer au sein de votre code, ainsi que leur utilisation dans les politiques d'accès de OVHcloud.
 Ces identifiants peuvent être utilisés au sein des différentes API de nos produits :
 
-- API OVHcloud: [Comment s'authentifier sur l'API OVHcloud avec Oauth2](/pages/account_and_service_management/account_information/authenticate-api-with-service-account).
+- API OVHcloud: [Comment s'authentifier sur l'API OVHcloud avec OAuth2](/pages/account_and_service_management/account_information/authenticate-api-with-service-account).
 - API OpenStack: [Comment utiliser les comptes de service pour se connecter à OpenStack](/pages/manage_and_operate/iam/authenticate-api-openstack-with-service-account).
 
 ## Prérequis
@@ -30,7 +30,7 @@ Les comptes de services sont un des types d'identités pouvant être mis en plac
 
 ### Fonctionnement des comptes de services
 
-Les comptes de service OVHcloud sont un couple identifiant/token qui permettent à votre code de s'authentifier auprès des APIs de OVHcloud. Ces identifiants respectent le protocole Oauth2 en suivant le mécanisme d'authentification **client credential**.
+Les comptes de service OVHcloud sont un couple identifiant/token qui permettent à votre code de s'authentifier auprès des APIs de OVHcloud. Ces identifiants respectent le protocole OAuth2 en suivant le mécanisme d'authentification **client credential**.
 
 Ce couple identifiant/token n'a pas de limite d'utilisation dans le temps. Il est donc idéal pour l'utilisation au sein d'un code déployé en production. Vous pouvez bien entendu révoquer les accès associés à ce compte de service à tout moment en modifiant les politiques d'accès associées ou en supprimant ce compte de service.
 
@@ -51,12 +51,12 @@ Afin de créer un compte de service, utilisez l'appel API suivant :
 > @api {v1} /me POST /me/api/oauth2/client
 >
 
-Cet appel API permet de créer des identifiants Oauth2 pour plusieurs mécanismes d'authentification. Celui qui nous intéresse ici est **CLIENT_CREDENTIALS**. Ce mécanisme ne nécessite pas d'URL de callback.
+Cet appel API permet de créer des identifiants OAuth2 pour plusieurs mécanismes d'authentification. Celui qui nous intéresse ici est **CLIENT_CREDENTIALS**. Ce mécanisme ne nécessite pas d'URL de callback.
 
 Ainsi, vous devez fournir les valeurs suivantes :
 
 - **callbackUrls**: un tableau vide d'url de callback `[]`
-- **flow**: "CLIENT_CREDENTIALS"
+- **flow**: `CLIENT_CREDENTIALS`
 - **name**: le nom que vous souhaitez fournir à votre identifiant
 - **description**: une description de votre identifiant. Nous vous conseillons de décrire l'usage de cet identifiant. Si vous auditez vos accès dans le futur, il est plus simple de le rattacher au nommage de votre applicatif afin de retrouver facilement où cet identifiant est déployé (et quel est l'impact si on change ces accès).
 
@@ -77,7 +77,7 @@ Dans cet appel, vous aurez accès à la valeur **identity** sous forme d'une URN
 
 Cette URN est de la forme suivante :
 
-urn:v1:*<eu|ca>*:identity:credential:*<xx11111-ovh>*/oauth2-*<clientId>*
+`urn:v1:*<eu|ca>*:identity:credential:*<xx11111-ovh>*/oauth2-*<clientId>*`
 
 #### Supprimer un compte de service
 
@@ -91,7 +91,7 @@ Si vous n'utilisez plus un compte de service, ou bien que vous voulez supprimer 
 > [!warning]
 >
 > Attention, cette action est définitive. Si vous souhaitez faire un retour en arrière, vous serez contraint de créer un nouveau compte de service et de déployer le couple identifiant/token au sein de votre application.
-> 
+>
 > Afin de supprimer les accès, nous vous conseillons de dissocier toutes les politiques d'accès de ce compte de service. Cette action est réversible et permet de revenir en arrière en cas d'erreur. Une fois assuré que ce compte de service n'est pas utilisé en production, vous pourrez le supprimer sans crainte.
 >
 
@@ -143,7 +143,7 @@ Cet exemple peut être utilisé directement au sein de l'appel suivant pour cré
 
 Les comptes de services sont disponible dans plusieurs API de nos produits. Pour chaque API, un guide y est consacré :
 
-- [Comment s'authentifier sur l'API OVHcloud avec Oauth2](/pages/account_and_service_management/account_information/authenticate-api-with-service-account)
+- [Comment s'authentifier sur l'API OVHcloud avec OAuth2](/pages/account_and_service_management/account_information/authenticate-api-with-service-account)
 - [Comment utiliser les comptes de service pour se connecter à OpenStack](/pages/manage_and_operate/iam/authenticate-api-openstack-with-service-account)
 
 ## Aller plus loin

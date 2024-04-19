@@ -1,7 +1,7 @@
 ---
 title: "Kimsufi und So you Start Kunden - Einführung in das OVHcloud Kundencenter"
 excerpt: "Navigationshilfe für Ihr OVHcloud Kundencenter"
-updated: 2023-01-05
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -97,7 +97,7 @@ Im OVHcloud Kundencenter werden diese Optionen in einem gemeinsamen Kundencenter
 - **Mein Support-Level** (ausschließlich für OVHcloud Dienste verfügbar): Weitere Informationen zum von OVHcloud angebotenen Support finden Sie in diesem Abschnitt.
 - **Verwaltung der Nutzer**: In dieser Rubrik können Sie Ihre Benutzer verwalten. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 - **Meine Rechnungen**: Hier können Sie Ihre Rechnungen einsehen, die Zahlungen mit Ihrem Standardzahlungsmittel nachverfolgen und Ihre Guthaben einsehen. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management).
-- **Meine Dienste**: In dieser Rubrik können Sie alle Ihre Dienstleistungen, Verträge und SSH-Schlüssel einsehen.
+- **Meine Dienste**: In dieser Rubrik können Sie alle Ihre Dienstleistungen und Verträge einsehen.
 - **Meine Zahlungsarten**: In diesem Bereich haben Sie Zugriff auf Ihr aktuelles Zahlungsmittel, Ihren Prepaid-Account sowie Ihre OVHcloud Gutscheine. Dort finden Sie auch die Option, eine Zahlungsmethode hinzuzufügen oder zu löschen. Weitere Informationen zur Verwaltung Ihrer Zahlungsmittel finden Sie in [dieser Anleitung](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 - **Meine Bestellungen**: Sie finden die Übersicht Ihrer Bestellungen auf dieser Seite. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders).
 - **Meine Kontakte**: In diesem Bereich können Sie die zu Ihren Dienstleistungen gehörenden Kontakte anzeigen und verwalten. Im Tab **Meine Anfragen** finden Sie die Anfragen zur Änderung von Kontakten, die Sie über Ihren Kunden-Account gesendet haben, sowie die eingegangenen Anfragen zur Verwaltung von Dienstleistungen. Weitere Informationen zur Verwaltung Ihrer Servicekontakte finden Sie in [dieser Anleitung](/pages/account_and_service_management/account_information/managing_contacts).

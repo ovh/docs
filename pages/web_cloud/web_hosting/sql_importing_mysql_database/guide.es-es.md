@@ -12,18 +12,18 @@ Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas d
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
-- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external}.
+- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](/links/web/hosting){.external}.
 - Tener la copia de seguridad que quiera importar en la base de datos.
-- Según el método de importación utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o disponer de las claves necesarias para conectarse a la base de datos.
+- Según el método de importación utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager){.external} o disponer de las claves necesarias para conectarse a la base de datos.
 
 ## Procedimiento
 
 Antes de empezar, deberá elegir el método que quiera utilizar para importar la copia de seguridad en la base de datos. Existen diversas opciones con distinto nivel de dificultad técnica:
 
-- **Restaurar la base de datos a una fecha anterior en unos clics**: Esta solución permite restaurar el contenido de la base de datos utilizando las copias de seguridad efectuadas por la herramienta de backup de OVHcloud. Esta operación no requiere conocimientos técnicos y se realiza desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- **Restaurar la base de datos a una fecha anterior en unos clics**: Esta solución permite restaurar el contenido de la base de datos utilizando las copias de seguridad efectuadas por la herramienta de backup de OVHcloud. Esta operación no requiere conocimientos técnicos y se realiza desde el [área de cliente de OVHcloud](/links/manager){.external}.
 
-- **Importar su propio archivo de backup en unos clics**: Esta solución permite importar los datos de su propia copia de seguridad en una base de datos. Esta operación se realiza desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- **Importar su propio archivo de backup en unos clics**: Esta solución permite importar los datos de su propia copia de seguridad en una base de datos. Esta operación se realiza desde el [área de cliente de OVHcloud](/links/manager){.external}.
 
 - **Realizar la importación desde la herramienta web phpMyAdmin**: Para ello, deberá conectarse a phpMyAdmin. Esta operación requiere conocimientos técnicos. Asimismo, existe un límite para el tamaño del archivo de backup.
 
@@ -44,7 +44,7 @@ Continúe leyendo esta guía en el apartado correspondiente al método de import
 
 ### Restaurar una copia de seguridad desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos que quiera restaurar a una fecha anterior y seleccione `Restaurar una copia de seguridad`{.action}. Tenga en cuenta que esta acción sustituirá el contenido actual de la base de datos por el de la copia de seguridad.
 
@@ -58,7 +58,7 @@ Haga clic en los tres puntos situados al final de la línea correspondiente al b
 
 ### Importar una copia de seguridad desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos en la que quiera importar datos y seleccione `Importar un archivo`{.action}.
 
@@ -91,7 +91,7 @@ A continuación haga clic en `Aceptar`{.action} y espere a que finalice la impor
 
 ### Realizar la importación desde la herramienta web phpMyAdmin
 
-En primer lugar deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+En primer lugar deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos y seleccione `Acceder a phpMyAdmin`{.action}.
 
@@ -110,7 +110,7 @@ Esta operación se realiza en varios pasos. En primer lugar, asegúrese de que t
 
 > [!warning]
 >
-> Esta operación requiere conocimientos de programación. A continuación ofrecemos algunas indicaciones sobre cómo realizarla. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle.
+> Esta operación requiere conocimientos de programación. A continuación ofrecemos algunas indicaciones sobre cómo realizarla. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle.
 >
 
 #### 1. Crear un script de importación
@@ -153,7 +153,7 @@ Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos des
 
 > [!warning]
 >
-> Este tipo de acceso requiere conocimientos técnicos más avanzados. A continuación ofrecemos algunas indicaciones. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle.
+> Este tipo de acceso requiere conocimientos técnicos más avanzados. A continuación ofrecemos algunas indicaciones. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle.
 >
 
 Una vez que se haya conectado al espacio de almacenamiento por SSH, utilice un comando para importar la base de datos. A continuación ofrecemos un ejemplo que le ayudará a realizar esta operación. Tenga en cuenta que deberá haber cargado previamente la copia de seguridad que quiera importar en el espacio de almacenamiento y que, cuando envíe el comando, deberá estar situado en el mismo directorio que la copia de seguridad.
@@ -166,8 +166,8 @@ Sustituya la información genérica del comando por la información de la base d
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

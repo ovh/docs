@@ -18,8 +18,8 @@ Moduły za pomocą 1 kliknięcia umożliwiają łatwą i szybką instalację str
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającej co najmniej jedną bazę danych.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [hostingu OVHcloud](/links/web/hosting) zawierającej co najmniej jedną bazę danych.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 - Użycie najnowszej wersji PHP i kompatybilnego środowiska wykonawczego na Twoim hostingu OVHcloud. Sprawdź stan poszczególnych wersji dostępnych na tej [stronie](https://webhosting-infos.hosting.ovh.net/). W razie potrzeby sprawdź [przewodnik](/pages/web_cloud/web_hosting/configure_your_web_hosting), aby szybko zmienić tę konfigurację.
 - Katalog (katalog główny), w którym zostanie zainstalowany "moduł za 1 kliknięciem", musi być pusty lub w chwili obecnej nie istnieje.
 - Domena (wraz z subdomeną, jeśli jest potrzebna), która zostanie użyta na Twojej stronie WWW powinna zostać zadeklarowana jako [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) na Twoim hostingu OVHcloud.
@@ -37,15 +37,15 @@ CMS pozwala na zaprojektowanie strony www za pomocą łatwego w użyciu interfej
 
 Spośród wszystkich systemów CMS, OVHcloud oferuje 4 modułów za pomocą 1 kliknięcia. 
 
-Używając tego rozwiązania powinieneś wybrać spośród 4 systemów CMS wymienionych powyżej. Jeśli już dokonałeś wyboru, przejdź do kolejnych etapów niniejszego przewodnika. Jeśli tak się nie stanie, skorzystaj z naszych [porównań CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/), aby dokonać wyboru.
+Używając tego rozwiązania powinieneś wybrać spośród 4 systemów CMS wymienionych powyżej. Jeśli już dokonałeś wyboru, przejdź do kolejnych etapów niniejszego przewodnika. Jeśli tak się nie stanie, skorzystaj z naszych [porównań CMS](/links/web/hosting-cms-comparison), aby dokonać wyboru.
 
-Jeśli chcesz zainstalować niedostępny CMS za pomocą naszych "modułów za 1 kliknięciem", możesz zainstalować go ręcznie na Twoim hostingu. Pod warunkiem, że ten CMS jest kompatybilny z naszą ofertą [hostingiem www OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+Jeśli chcesz zainstalować niedostępny CMS za pomocą naszych "modułów za 1 kliknięciem", możesz zainstalować go ręcznie na Twoim hostingu. Pod warunkiem, że ten CMS jest kompatybilny z naszą ofertą [hostingiem www OVHcloud](/links/web/hosting).
 
 ![Dostępne w OVHcloud CMS](images/cms-logos.png){.thumbnail}
 
 ### Etap 2 - dostęp do zarządzania modułami za pomocą 1 kliknięcia
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action}, wybierz ofertę hostingu, na której chcesz zainstalować "moduł za 1 kliknięciem", następnie kliknij zakładkę `Moduły CMS`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action}, wybierz ofertę hostingu, na której chcesz zainstalować "moduł za 1 kliknięciem", następnie kliknij zakładkę `Moduły CMS`{.action}.
 
 Na stronie znajdziesz ewentualne "moduły za 1 kliknięciem" już zainstalowane. Możesz zarządzać Twoimi "modułami za 1 kliknięciem" i instalować nowe.
 
@@ -98,7 +98,7 @@ Po zakończeniu instalacji otrzymasz e-mail z danymi do logowania do interfejsu 
 
 > [!primary]
 >
-> Instalacja i odbiór e-maili mogą potrwać do 15 minut od momentu kliknięcia przycisku `Instaluj`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> Instalacja i odbiór e-maili mogą potrwać do 15 minut od momentu kliknięcia przycisku `Instaluj`{.action} w [Panelu klienta OVHcloud](/links/manager).
 >
 
 #### Zaawansowana instalacja modułu za 1 kliknięciem
@@ -142,7 +142,7 @@ Pozostałe informacje wymagane dla bazy danych są następujące:
 > - Nazwa serwera bazy danych Cloud Databases zaczyna się od Twojego identyfikatora klienta OVHcloud i ma następującą formę: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` gdzie **"X"** należy zastąpić odniesieniem do Twojej usługi WWW Cloud Databases.
 >
 
-- *Nazwa bazy*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- *Nazwa bazy*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](/links/manager).
 
 - *Port*: systematycznie wpisz numer **3306** (port domyślny) dla bazy danych zawartej w Twoim hostingu. W przypadku bazy danych na instancji Cloud Databases, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
@@ -212,7 +212,7 @@ Jeśli chcesz uzyskać pomoc w zakresie funkcji Twojego CMS-a, skontaktuj się z
 
 ## Sprawdź również
 
-[Porównanie rozwiązań CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external}.
+[Porównanie rozwiązań CMS](/links/web/hosting-cms-comparison){.external}.
 
 [Jak rozdzielić hosting WWW na wiele stron](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
@@ -226,8 +226,8 @@ Jeśli chcesz zachować pełną kontrolę nad instalacją Twojego CMS-a, możesz
 
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}.
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
