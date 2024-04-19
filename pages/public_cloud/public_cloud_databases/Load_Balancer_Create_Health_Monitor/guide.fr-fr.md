@@ -1,7 +1,7 @@
 ---
 title: Création et gestion d'un Health Monitor pour le Load Balancer Public Cloud OVHcloud
 excerpt: Maitriser la mise en place et la gestion d'un Health Monitor avec les Load Balancers Public Cloud OVHCloud via l'espace OVHcloud,CLI,Horizon et Terraform.
-updated: 2024-03-19
+updated: 2024-04-19
 ---
 
 ## Objectif
@@ -54,16 +54,6 @@ La configuration précise des Health Monitors, incluant la fréquence des vérif
 - **`delay`**: Interval en secondes entre chaque vérification de santé, permettant de contrôler la fréquence des tests.
 - **`timeout`**: Temps d'attente maximum pour une réponse du serveur avant de le considérer comme défaillant.
 - **`max_retries`**: Nombre de tentatives de vérification échouées avant que le serveur ne soit marqué comme défaillant.
-
-[GAL] Le chapitre ci dessous fait doublon avec celui ci dessus (cf mon premier lot de remarque) il faut fusionner. A discuter.
-
-Pour un Health Monitor efficace, accordez une attention particulière aux paramètres suivants :
-
-- **Délai (`delay`)** : Définit le temps en secondes entre chaque vérification de santé. Un intervalle plus court permet une détection plus rapide des défaillances mais peut augmenter la charge sur le serveur.
-  
-- **Temps d'attente (`timeout`)** : La durée maximale d’attente pour une réponse à chaque vérification. Ce temps doit être inférieur au délai pour éviter les chevauchements de vérifications.
-  
-- **Nombre de tentatives (`max-retries`)** : Indique combien de fois un serveur doit échouer aux vérifications de santé consécutives avant d'être considéré comme défaillant.
 
 ##### Meilleures Pratiques pour la Configuration des Health Monitors
 
