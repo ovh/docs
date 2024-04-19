@@ -1,7 +1,7 @@
 ---
 title: "Einen Domainnamen zu einem anderen Registrar transferieren"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren"
-updated: 2023-06-28
+updated: 2024-04-11
 ---
 
 > [!primary]
@@ -57,6 +57,10 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie die betreffende Domain aus.
 
 Im Tab `Allgemeine Informationen`{.action} finden Sie den Regler `Transfer-Schutz`{.action} unter **Sicherheit** mit der Standardeinstellung `Aktiviert`{.action}.
+
+> [!warning]
+>
+> Wenn der Button `Transfer-Schutz` nicht vorhanden ist, bedeutet dies, dass Ihre Domainendung keinen Transfer-Code erfordert. Sie können dann direkt mit dem Transfer beginnen.
 
 ![Schutz aktiviert](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
