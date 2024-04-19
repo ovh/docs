@@ -1,5 +1,5 @@
 ---
-title: Configuring an IPV6 block in a vRack
+title: Configuring an IPV6 block in a vRack (EN)
 excerpt: This guide will show you how to configure a block of public IPV6 addresses for use with the vRack
 updated: 2024-04-19
 flag: hidden
@@ -45,8 +45,8 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 
 ## Requirements
 
-- A [vRack](https://www.ovhcloud.com/en-gb/network/vrack/){.external} service activated in your account
-- A [vRack compatible server](https://www.ovhcloud.com/en-gb/network/vrack/){.external} attached to your vRack network
+- A [vRack](https://www.ovhcloud.com/es/network/vrack/){.external} service activated in your account
+- A [vRack compatible server](https://www.ovhcloud.com/es/network/vrack/){.external} attached to your vRack network
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
