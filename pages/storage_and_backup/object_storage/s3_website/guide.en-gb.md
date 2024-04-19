@@ -33,16 +33,16 @@ In S3, a bucket is a flat container of objects. It does not provide any hierarch
 
 ### Step 2: Setting the permissions
 
-The buckets hosting the website and its contents must be publically accessible i.e with READ permission set for all users.
+The bucket hosting the website and its contents must be publically accessible i.e with READ permission set for all users.
 
 **Example**:
-Using the predefined PUBLIC-READ ACL at the bucket level:
+Using the predefined `PUBLIC-READ` ACL at the bucket level:
 
 ```sh
 aws --profile user-aws s3api put-bucket-acl --bucket my-website --acl public-read
 ```
 
-Applying the predefined PUBLIC-READ ACL on **all** the objects:
+Applying the predefined `PUBLIC-READ` ACL on **all** the objects:
 ```sh
 aws --profile user-aws s3api put-object-acl --bucket my-website --key <file> --acl public-read
 ```
