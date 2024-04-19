@@ -31,9 +31,9 @@ Chaque méthode offre des avantages spécifiques, permettant de personnaliser la
   **L'ordre d'évaluation des politiques L7 est important et est déterminé par le paramètre de position de chaque politique.**
 Les politiques sont évaluées dans un ordre spécifique défini par l'attribut de position, où la première politique correspondante est celle dont l'action est suivie. Si plusieurs politiques L7 sont associées à un listener, le paramètre de position devient crucial pour déterminer l'ordre d'évaluation.
 
-Les politiques de rejet (REJECT) ont la priorité sur toutes les autres, suivies par les redirections vers une URL (REDIRECT_TO_URL) et enfin les redirections vers un pool (REDIRECT_TO_POOL). Si une politique correspondante est trouvée, son action est exécutée.
+  Les politiques de rejet (REJECT) ont la priorité sur toutes les autres, suivies par les redirections vers une URL (REDIRECT_TO_URL) et enfin les redirections vers un pool (REDIRECT_TO_POOL). Si une politique correspondante est trouvée, son action est exécutée.
 
-Si aucune politique ne correspond, la requête est dirigée vers le pool par défaut du listener, ou retourne une erreur 503 si aucun pool par défaut n'existe.
+  Si aucune politique ne correspond, la requête est dirigée vers le pool par défaut du listener, ou retourne une erreur 503 si aucun pool par défaut n'existe.
 
   - **Principales caractéristiques :**
     - **action** : L'action à réaliser (par exemple, redirect, reject).
