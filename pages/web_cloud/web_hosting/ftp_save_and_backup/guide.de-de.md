@@ -23,7 +23,7 @@ updated: 2023-12-04
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.com/de/hosting/){.external} Angebot (mit Ausnahme von [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/)).
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.com/de/hosting/){.external} Angebot (mit Ausnahme von [Cloud Web](/links/web/hosting-cloud-web-offer)).
 - Je nach der verwendeten Methode benötigen Sie Zugriff auf die Verwaltung des Webhostings über das [OVHcloud Kundencenter](/links/manager){.external} oder das Passwort des FTP-Benutzers, um sich mit Ihrem Speicherplatz zu verbinden. 
 
 ## In der praktischen Anwendung

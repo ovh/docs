@@ -57,7 +57,7 @@ Plusieurs offres d'hébergement mutualisé OVHcloud contiennent une offre e-mail
 - L'hébergement [Perso](/links/web/hosting-personal-offer) avec **10 adresses e-mail** « MX Plan »
 - L'hébergement [Pro](/links/web/hosting-professional-offer) avec **100 adresses e-mail** « MX Plan »
 - L'hébergement [Performance](/links/web/hosting-performance-offer) avec **1000 adresses e-mail** « MX Plan ». Cette offre est déclinée en 4 « sous-offres ».
-- L'hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) avec **200 adresses e-mail** « MX Plan ». Cette offre est utilisée par les développeurs d'applications.
+- L'hébergement [Cloud Web](/links/web/hosting-cloud-web-offer) avec **200 adresses e-mail** « MX Plan ». Cette offre est utilisée par les développeurs d'applications.
 
 Une fois votre offre d'hébergement choisie, si vous n'êtes pas encore client OVHcloud, cliquez sur le bouton `Commander`{.action} présent sur les pages commerciales ci-dessus. Suivez les étapes de la commande **sans demander le transfert de votre nom de domaine**.
 

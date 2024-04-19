@@ -46,7 +46,7 @@ Em resumo, alterar a configuração do seu alojamento web a partir da [Área de 
 
 ## Requisitos
 
-- Dispor de um serviço de [alojamento web OVHcloud](/links/web/hosting){.external}, com exceção de um [serviço de alojamento Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/).
+- Dispor de um serviço de [alojamento web OVHcloud](/links/web/hosting){.external}, com exceção de um [serviço de alojamento Cloud Web](/links/web/hosting-cloud-web-offer).
 - Ter acesso à sua oferta de alojamento web a partir da [Área de Cliente OVHcloud](/links/manager) ou conhecer as informações que permitem ligar-se à [Área de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Instruções

@@ -140,7 +140,7 @@ In diesem zweiten Beispielskript werden alle URLs, die über das *HTTP*-Protokol
 
 Überprüfen Sie in diesem zweiten Beispiel, ob alle Ihre Ziel-Domains oder Subdomains über ein aktives SSL-Zertifikat verfügen.
 
-**Achtung**, für die Hosting-Angebote [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) ist folgendes Skript zu verwenden:
+**Achtung**, für die Hosting-Angebote [Cloud Web](/links/web/hosting-cloud-web-offer) ist folgendes Skript zu verwenden:
 
 ```bash
 RewriteEngine On

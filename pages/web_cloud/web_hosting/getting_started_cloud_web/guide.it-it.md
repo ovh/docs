@@ -16,7 +16,7 @@ La nuova soluzione di hosting Cloud Web combina i nostri 20 anni di esperienza n
 
 ## Prerequisiti
 
-- Disporre di un piano di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) attivo
+- Disporre di un piano di hosting [Cloud Web](/links/web/hosting-cloud-web-offer) attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Cloud Web
 - Disporre di un [dominio](/links/web/domains) attivo, che corrisponderà all’indirizzo del tuo sito
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
@@ -31,7 +31,7 @@ Al fine di adattarsi al meglio alle tue esigenze, il Cloud Web offre più opzion
 
 - **recuperare i prerequisiti tecnici per l’installazione**: è possibile che il progetto che hai in mente necessiti di prerequisiti particolari, pertanto assicurati di esserne a conoscenza;
 
-- **verificare la compatibilità tecnica del tuo progetto con il Cloud Web**: hai bisogno di un programma d’esecuzione o di un database in particolare? Se non l’hai ancora fatto, accertati che sia disponibile con la tua soluzione di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/).
+- **verificare la compatibilità tecnica del tuo progetto con il Cloud Web**: hai bisogno di un programma d’esecuzione o di un database in particolare? Se non l’hai ancora fatto, accertati che sia disponibile con la tua soluzione di hosting [Cloud Web](/links/web/hosting-cloud-web-offer).
 
 Dopo aver valutato le diverse possibilità tra cui scegliere, puoi iniziare a metterlo online.
 
@@ -50,7 +50,7 @@ Per accedere al programma d’esecuzione del tuo hosting Cloud Web, effettua l�
 
 Nel momento in cui installi il tuo hosting, un programma viene utilizzato automaticamente e inserito come `Opzione predefinita`. Per modificare il programma d’esecuzione già configurato, clicca sui 3 puntini a destra, poi su `Modifica`{.action}. 
 
-In base alla tua soluzione di [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) puoi anche aggiungere programmi d’esecuzione aggiuntivi cliccando su `Azioni`{.action} > `Aggiungi un programma d’esecuzione`{.action}. Ti ricordiamo che il numero massimo di programmi d’esecuzione dipende dalla soluzione Cloud Web che hai ordinato.
+In base alla tua soluzione di [Cloud Web](/links/web/hosting-cloud-web-offer) puoi anche aggiungere programmi d’esecuzione aggiuntivi cliccando su `Azioni`{.action} > `Aggiungi un programma d’esecuzione`{.action}. Ti ricordiamo che il numero massimo di programmi d’esecuzione dipende dalla soluzione Cloud Web che hai ordinato.
 
 Da questo momento, prima di proseguire, assicurati di disporre del programma o più programmi d’esecuzione necessari al tuo progetto.
 

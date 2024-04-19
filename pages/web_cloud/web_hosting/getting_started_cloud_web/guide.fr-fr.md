@@ -12,7 +12,7 @@ Notre offre d’hébergement Cloud Web allie nos vingt ans d’expérience dans 
 
 ## Prérequis
 
-- Disposer d'une offre d'hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d'une offre d'hébergement [Cloud Web](/links/web/hosting-cloud-web-offer).
 - Avoir reçu l’e-mail vous confirmant l’installation de votre hébergement Cloud Web.
 - Disposer d’un [nom de domaine](/links/web/domains) qui sera l’adresse à laquelle votre site sera accessible.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
@@ -27,7 +27,7 @@ L'hébergement Cloud Web offre davantage de possibilités de configuration qu'un
 
 - **Identifier les prérequis techniques pour l'installation** : il est possible que le projet que vous souhaitez mettre en place nécessite des prérequis techniques spécifiques.
 
-- **S'assurer de la compatibilité technique de votre projet avec l'hébergement Cloud Web** : besoin d'un moteur d'exécution ou d'un service SQL en particulier ? Si ce n'est pas encore fait, assurez-vous que celui-ci est disponible avec votre hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- **S'assurer de la compatibilité technique de votre projet avec l'hébergement Cloud Web** : besoin d'un moteur d'exécution ou d'un service SQL en particulier ? Si ce n'est pas encore fait, assurez-vous que celui-ci est disponible avec votre hébergement [Cloud Web](/links/web/hosting-cloud-web-offer).
 
 Après avoir évalué les différentes possibilités et délimité avec précision votre projet, vous pouvez à présent mettre en place votre projet.
 
@@ -46,7 +46,7 @@ Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connecte
 
 Un moteur est automatiquement créé lors de l'installation de votre hébergement. Il est renseigné comme `Choix par défaut` dans le tableau qui s'affiche. Pour modifier un moteur déjà paramétré, cliquez sur le bouton `...`{.action} à droite, puis sur `Modifier`{.action}. 
 
-Vous pouvez également ajouter des moteurs d'exécution supplémentaires selon votre offre [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) en cliquant sur le bouton `Actions`{.action}, puis sur `Ajouter un moteur d'exécution`{.action}. Notez que le nombre maximum de moteurs d’exécution est dépendant de l’offre Cloud Web que vous avez commandée.
+Vous pouvez également ajouter des moteurs d'exécution supplémentaires selon votre offre [Cloud Web](/links/web/hosting-cloud-web-offer) en cliquant sur le bouton `Actions`{.action}, puis sur `Ajouter un moteur d'exécution`{.action}. Notez que le nombre maximum de moteurs d’exécution est dépendant de l’offre Cloud Web que vous avez commandée.
 
 Dès lors, assurez-vous de disposer du ou des moteurs d'exécution nécessaires à votre projet avant de poursuivre.
 

@@ -16,7 +16,7 @@ A Cloud Web oferece a possibilidade de construir um projeto em diferentes lingua
 
 ## Requisitos
 
-- Ter um serviço de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/).
+- Ter um serviço de alojamento [Cloud Web](/links/web/hosting-cloud-web-offer).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
 
 ## Instruções
@@ -39,7 +39,7 @@ A tabela que aparece indica os motores de execução adicionados atualmente ao s
 
 A gestão dos motores de execução do seu alojamento Cloud Web realiza-se de várias formas:
 
-- [adicionar ou alterar um motor de execução](./#21-Adicionar-ou-alterar-um-motor-de-execucao){.external} (o número máximo de motores depende do [plano escolhido](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external});
+- [adicionar ou alterar um motor de execução](./#21-Adicionar-ou-alterar-um-motor-de-execucao){.external} (o número máximo de motores depende do [plano escolhido](/links/web/hosting-cloud-web-offer){.external});
 - definir um motor enquanto escolha predefinida;
 - eliminar um motor de execução.
 
@@ -120,7 +120,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 > No nosso exemplo, foram criados apenas os motores PHP e Node.js. É possível que, no seu projeto, utilize Ruby ou Python. Neste caso, as operações descritas abaixo são
 > aplicáveis.
 > 
-> A utilização de dois motores de execução em paralelo no seu alojamento Cloud Web depende do [seu plano](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external}.
+> A utilização de dois motores de execução em paralelo no seu alojamento Cloud Web depende do [seu plano](/links/web/hosting-cloud-web-offer){.external}.
 > 
 
 Uma vez que dispõe dos motores de execução necessários para o seu projeto, certifique-se de que estes estão corretamente associados aos seus multi-sites. Para isso, aceda ao separador `Multi-site`{.action} do alojamento Cloud Web em questão. 

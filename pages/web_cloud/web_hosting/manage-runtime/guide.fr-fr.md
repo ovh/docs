@@ -12,7 +12,7 @@ Cloud Web met à disposition de multiples langages de développement pour constr
 
 ## Prérequis
 
-- Disposer d'une offre d'hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d'une offre d'hébergement [Cloud Web](/links/web/hosting-cloud-web-offer).
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 ## En pratique
@@ -33,7 +33,7 @@ Le tableau qui apparaît affiche les moteurs d'exécution ajoutés actuellement 
 
 La gestion des moteurs d'exécution de votre hébergement Cloud Web s'effectue de plusieurs manières :
 
-- [ajouter ou modifier un moteur d'exécution](./#21-ajouter-ou-modifier-un-moteur-dexecution){.external} (le nombre maximum de moteurs dépend de l’[offre choisie](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external}) ;
+- [ajouter ou modifier un moteur d'exécution](./#21-ajouter-ou-modifier-un-moteur-dexecution){.external} (le nombre maximum de moteurs dépend de l’[offre choisie](/links/web/hosting-cloud-web-offer){.external}) ;
 - définir un moteur en tant que choix par défaut ;
 - supprimer un moteur d'exécution.
 
@@ -114,7 +114,7 @@ Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-
 > Dans notre exemple, seul les moteurs PHP et Node.js ont été créés. Il est possible que, dans votre projet, vous utilisiez Ruby ou Python. Dans ce cas, les opérations décrites ci-dessous sont 
 > applicables.
 > 
-> L'utilisation de deux moteurs d’exécution en parallèle sur votre hébergement Cloud Web dépend de [votre offre](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external}.
+> L'utilisation de deux moteurs d’exécution en parallèle sur votre hébergement Cloud Web dépend de [votre offre](/links/web/hosting-cloud-web-offer){.external}.
 > 
 
 Lorsque vous disposez du ou des moteurs d'exécution nécessaires à votre projet, assurez-vous que ceux-ci sont bien liés à vos multisites. Pour cela, positionnez-vous sur l'onglet `Multisite`{.action} de l'hébergement Cloud Web concerné. 

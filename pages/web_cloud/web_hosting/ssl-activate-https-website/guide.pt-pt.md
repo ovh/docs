@@ -137,7 +137,7 @@ Este segundo exemplo de script tem o efeito de transformar todos os URL recebido
 
 Para este segundo exemplo, verifique se todos os seus nomes de domínio ou subdomínios alvo têm um certificado SSL ativo.
 
-**Atenção**, para as ofertas de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/), o script a utilizar é o seguinte:
+**Atenção**, para as ofertas de alojamento [Cloud Web](/links/web/hosting-cloud-web-offer), o script a utilizar é o seguinte:
 
 ```bash
 RewriteEngine On

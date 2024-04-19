@@ -137,7 +137,7 @@ This second example of a script turns all URLs that arrive via the *HTTP* protoc
 
 For this second example, check that all of your target domain names or subdomains have an active SSL certificate.
 
-**Warning**, for [Cloud Web](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/) hosting plans, the script to use is as follows:
+**Warning**, for [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plans, the script to use is as follows:
 
 ```bash
 RewriteEngine On

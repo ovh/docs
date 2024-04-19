@@ -12,7 +12,7 @@ updated: 2022-05-04
 
 [Ghost](https://ghost.org/){.external} to silnik bloga z otwartym kodem źródłowym. Ma on na celu uproszczenie procesu publikacji online dla blogerów i dziennikarzy. To oprogramowanie jest napisane w JavaScript i wykorzystuje [Node.js](https://nodejs.org/){.external}, platformę programową do tworzenia witryn i interfejsów API w JavaScript po stronie serwera.
 
-[Hosting Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external} umożliwia użycie Node.js jako frameworka dla Twoich stron WWW oraz instalację i hosting silnika Ghost lub innej aplikacji stworzonej na potrzeby Node.js.
+[Hosting Cloud Web](/links/web/hosting-cloud-web-offer){.external} umożliwia użycie Node.js jako frameworka dla Twoich stron WWW oraz instalację i hosting silnika Ghost lub innej aplikacji stworzonej na potrzeby Node.js.
 
 W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Ghost na hostingu Cloud Web w OVHcloud oraz jak udostępnić go pod Twoją domeną.
 
@@ -20,7 +20,7 @@ W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Gho
 
 ### Powinieneś posiadać:
 
-- Hosting [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external} od OVHcloud
+- Hosting [Cloud Web](/links/web/hosting-cloud-web-offer){.external} od OVHcloud
 - Node.js aktywowany jako framework
 - Domenę dodaną w opcji MultiSite oraz Node.js wskazany jako jej framework.
 - Dostęp do [Panelu klienta](/links/manager){.external} > sekcja `Web Cloud`{.action}

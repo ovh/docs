@@ -16,14 +16,14 @@ Bei Cloud Web stehen für Ihr Projekt verschiedene Entwicklungssprachen zur Verf
 
 ## Voraussetzungen
 
-- Sie haben ein [Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) in Ihrem Kunden-Account.
+- Sie haben ein [Cloud Web Hosting](/links/web/hosting-cloud-web-offer) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 Bei Cloud Web können Sie je nach Projekt eine oder mehrere Runtime Engines auswählen. Die Entscheidung, welche Runtime Engine Sie verwenden sollten, hängt davon ab, was Sie einrichten möchten. 
 
-Falls Sie dies noch nicht getan haben, **vergewissern Sie sich jetzt, dass Ihr Projekt mit Ihrem Cloud Web Hosting kompatibel ist**. Die verfügbaren Programmiersprachen sind auf [unserer Webseite](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) aufgeführt. 
+Falls Sie dies noch nicht getan haben, **vergewissern Sie sich jetzt, dass Ihr Projekt mit Ihrem Cloud Web Hosting kompatibel ist**. Die verfügbaren Programmiersprachen sind auf [unserer Webseite](/links/web/hosting-cloud-web-offer) aufgeführt. 
 
 Wenn Sie ermittelt haben, welche Runtime Engine(s) Sie verwenden möchten, können Sie mit den nachstehenden Schritten beginnen.
 
@@ -39,7 +39,7 @@ Es wird eine Tabelle angezeigt, die alle aktuell zu Ihrem Cloud Web Hosting hinz
 
 Es gibt verschiedene Möglichkeiten, um die Runtime Engines Ihres Cloud Web Hostings zu verwalten. Sie können:
 
-- eine Runtime Engine hinzufügen oder ändern (die maximale Anzahl der Runtime Engines ist abhängig vom gewählten [Hosting Angebot](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/)).
+- eine Runtime Engine hinzufügen oder ändern (die maximale Anzahl der Runtime Engines ist abhängig vom gewählten [Hosting Angebot](/links/web/hosting-cloud-web-offer)).
 - eine Engine als Standardauswahl festlegen.
 - eine Runtime Engine löschen.
 
@@ -119,7 +119,7 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{
 > [!primary]
 > In unserem Beispiel wurden nur die PHP- und Node.js-Engines erstellt. Möglicherweise verwenden Sie in Ihrem Projekt Ruby oder Python. In diesem Fall sind die unten beschriebenen Operationen ebenfalls anwendbar.
 > 
-> Die Verwendung von zwei parallelen Ausführungsmodulen auf Ihrem Cloud Web Hosting hängt von [Ihrem Angebot](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) ab.
+> Die Verwendung von zwei parallelen Ausführungsmodulen auf Ihrem Cloud Web Hosting hängt von [Ihrem Angebot](/links/web/hosting-cloud-web-offer) ab.
 > 
 
 Wenn Sie über die für Ihr Projekt notwendigen Runtime Engines verfügen, vergewissern Sie sich, dass diese korrekt mit Ihren Multisites verbunden sind. Gehen Sie hierzu in den Tab `Multisite`{.action} des betreffenden Cloud Web Hostings. 

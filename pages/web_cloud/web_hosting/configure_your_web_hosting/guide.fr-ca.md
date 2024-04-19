@@ -42,7 +42,7 @@ En résumé, modifier la configuration de votre hébergement web depuis l'[espac
 
 ## Prérequis
 
-- Disposer d’une offre d’[hébergement web OVHcloud](/links/web/hosting){.external}, à l'exception d'une [offre d'hébergement Cloud Web](https://www.ovhcloud.com/fr-ca/web-hosting/cloud-web-offer/).
+- Disposer d’une offre d’[hébergement web OVHcloud](/links/web/hosting){.external}, à l'exception d'une [offre d'hébergement Cloud Web](/links/web/hosting-cloud-web-offer).
 - Avoir accès à votre offre d’hébergement web depuis l’[espace client OVHcloud](/links/manager) ou connaître les informations permettant de se connecter à l'[espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## En pratique

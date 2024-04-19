@@ -16,7 +16,7 @@ Cloud Web mette a tua disposizione diversi linguaggi di programmazione per conse
 
 ## Prerequisiti
 
-- Disporre di un piano di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) attivo
+- Disporre di un piano di hosting [Cloud Web](/links/web/hosting-cloud-web-offer) attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}
 
 ## Procedura
@@ -39,7 +39,7 @@ Visualizzi una tabella con tutti i motori di esecuzione aggiunti alla tua soluzi
 
 La gestione dei motori di esecuzione di un hosting Cloud Web comprende diverse operazioni: 
 
-- [aggiungere o modificare un motore di esecuzione](./#21-aggiungere-o-modificare-un-motore-di-esecuzione){.external} (il numero massimo dei motori dipende dal[ servizio attivato](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/){.external})
+- [aggiungere o modificare un motore di esecuzione](./#21-aggiungere-o-modificare-un-motore-di-esecuzione){.external} (il numero massimo dei motori dipende dal[ servizio attivato](/links/web/hosting-cloud-web-offer){.external})
 - impostare un motore come predefinito
 - eliminare un motore di esecuzione
 
@@ -120,7 +120,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 > Nel nostro esempio, sono stati creati solo i motori PHP e Node.js. È possibile che, nel tuo progetto, tu stia utilizzando Ruby o Python. In questo caso, le operazioni descritte qui di seguito sono
 > applicabili.
 > 
-> L’utilizzo di due motori di esecuzione allo stesso tempo sul tuo hosting Cloud Web dipende dal[piano scelto.]https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/){.external}
+> L’utilizzo di due motori di esecuzione allo stesso tempo sul tuo hosting Cloud Web dipende dal[piano scelto.]/links/web/hosting-cloud-web-offer){.external}
 > 
 
 Una volta impostati i motori di esecuzione per il tuo progetto, assicurati che siano correttamente associati ai multisiti: clicca sulla scheda `Multisito`{.action} dell’hosting Cloud Web in questione 

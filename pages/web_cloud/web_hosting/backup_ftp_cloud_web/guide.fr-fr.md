@@ -21,7 +21,7 @@ Votre hébergement Cloud Web dispose d'un espace de stockage dans lequel vous po
 
 ## Prérequis
 
-- Disposer d'un [hébergement Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external}
+- Disposer d'un [hébergement Cloud Web](/links/web/hosting-cloud-web-offer){.external}
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 - Avoir accès à l'adresse e-mail de contact associée à votre identifiant client.
 

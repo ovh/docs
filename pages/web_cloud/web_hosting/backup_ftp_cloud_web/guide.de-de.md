@@ -26,7 +26,7 @@ Ihr Cloud Web Hosting verfügt über einen Speicherplatz, in dem Sie Ihre Websit
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/){.external}.
+- Sie verfügen über ein [Cloud Web Hosting](/links/web/hosting-cloud-web-offer){.external}.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben Zugriff auf die Kontakt-E-Mail-Adresse Ihres Kunden-Accounts.
 

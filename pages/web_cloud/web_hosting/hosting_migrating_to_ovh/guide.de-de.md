@@ -61,7 +61,7 @@ Mehrere OVHcloud Shared Hosting Angebote enthalten "MX Plan" E-Mail-Dienste. Mit
 - Hosting [Basic](/links/web/hosting-personal-offer) mit **10 "MX Plan E-Mail-Accounts**
 - Hosting [Pro](/links/web/hosting-professional-offer) mit **100 "MX Plan E-Mail-Accounts** (für gewerbliche Webseiten)
 - Hosting [Performance](/links/web/hosting-performance-offer) mit **1000 "MX Plan E-Mail-Accounts** (skalierbare dedizierte Ressourcen)
-- Hosting [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) mit **200 E-Mail-Accounts** (für Anwendungsentwickler)
+- Hosting [Cloud Web](/links/web/hosting-cloud-web-offer) mit **200 E-Mail-Accounts** (für Anwendungsentwickler)
 
 Wenn Sie sich für ein passendes Webhosting-Angebot entschieden haben, klicken Sie auf den Button `Bestellen`{.action} auf unserer Webseite. Folgen Sie den Bestellschritten, aber **leiten Sie dabei noch nicht den Transfer Ihres Domainnamens ein**.
 

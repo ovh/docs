@@ -19,7 +19,7 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](/links/web/hosting){.external} (ne fonctionne pas avec un [hébergement Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/)).
+- Disposer d'une offre d'[hébergement web](/links/web/hosting){.external} (ne fonctionne pas avec un [hébergement Cloud Web](/links/web/hosting-cloud-web-offer)).
 - Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVHcloud](/links/manager){.external} ou du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
 
 ## En pratique

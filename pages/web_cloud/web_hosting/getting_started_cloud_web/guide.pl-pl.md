@@ -16,7 +16,7 @@ Oferta hostingu Cloud Web łączy w sobie 20 lat doświadczenia OVHcloud w zakre
 
 ## Wymagania początkowe
 
-- Posiadanie hostingu SSD [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/)
+- Posiadanie hostingu SSD [Cloud Web](/links/web/hosting-cloud-web-offer)
 - Otrzymanie wiadomość e-mail z potwierdzeniem, że usługa Cloud Web została zainstalowana
 - Posiadanie [domeny](/links/web/domains), pod którą dostępna będzie Twoja strona WWW
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
@@ -31,7 +31,7 @@ Hosting z dyskami SSD, Cloud Web, oferuje więcej możliwości konfiguracji niż
 
 - **pobierz wymagania techniczne niezbędne do instalacji**: istnieje możliwość, że z projektem, który chcesz zainstalować, wiążą się specyficzne wymagania techniczne.  Zapoznaj się z nimi przed instalacją;
 
-- **upewnij się, że Twój projekt jest kompatybilny z hostingiem Cloud Web**: potrzebny Ci określony framework lub SQL? Jeśli jeszcze tego nie zrobiłeś, upewnij się, że jest on dostępny wraz z Twoim hostingiem [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/).
+- **upewnij się, że Twój projekt jest kompatybilny z hostingiem Cloud Web**: potrzebny Ci określony framework lub SQL? Jeśli jeszcze tego nie zrobiłeś, upewnij się, że jest on dostępny wraz z Twoim hostingiem [Cloud Web](/links/web/hosting-cloud-web-offer).
 
 Po wybraniu różnych możliwości i określeniu ram Twojego projektu możesz przystąpić do jego umieszczenia w sieci.
 
@@ -50,7 +50,7 @@ Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do
 
 Framework jest automatycznie tworzony podczas instalacji hostingu. Oznaczony jest jako `Wybór domyślny` w tabeli, która się wyświetli. Aby zmodyfikować wcześniej skonfigurowany framework, kliknij trzy kropki po jego prawej stronie, a następnie `Modyfikuj`{.action}. 
 
-Możesz również dodawać frameworki, jeśli pozwala na to wybrana oferta [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/). W tym celu kliknij przycisk `Operacje`{.action}, a następnie `Dodaj framework`{.action}. Pamiętaj, że maksymalna liczba frameworków zależy od oferty Cloud Web, którą zamówiłeś.
+Możesz również dodawać frameworki, jeśli pozwala na to wybrana oferta [Cloud Web](/links/web/hosting-cloud-web-offer). W tym celu kliknij przycisk `Operacje`{.action}, a następnie `Dodaj framework`{.action}. Pamiętaj, że maksymalna liczba frameworków zależy od oferty Cloud Web, którą zamówiłeś.
 
 Zanim przejdziesz do kolejnych kroków, upewnij się, że posiadasz framework lub frameworki niezbędne do Twojego projektu.
 

@@ -23,7 +23,7 @@ A sua solução de alojamento web da OVHcloud dá-lhe acesso a um espaço de arm
 
 ## Requisitos
 
-- Ter um [alojamento web](/links/web/hosting){.external} (não funciona com um alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/)).
+- Ter um [alojamento web](/links/web/hosting){.external} (não funciona com um alojamento [Cloud Web](/links/web/hosting-cloud-web-offer)).
 - Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](/links/manager){.external} ou dispor da palavra-passe do utilizador FTP que lhe permite aceder ao seu espaço de armazenamento. 
 
 ## Instruções

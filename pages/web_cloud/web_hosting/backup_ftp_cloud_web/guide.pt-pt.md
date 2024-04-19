@@ -26,7 +26,7 @@ O seu alojamento Cloud Web dispõe de um espaço de armazenamento no qual pode a
 
 ## Requisitos
 
-- Ter um [alojamento Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external}
+- Ter um [alojamento Cloud Web](/links/web/hosting-cloud-web-offer){.external}
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 - Ter acesso ao endereço de e-mail associado ao seu ID de cliente.
 

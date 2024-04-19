@@ -21,7 +21,7 @@ Your Cloud Web hosting plan has a storage space you can use to host your website
 
 ## Requirements
 
-- A [Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/){.external}
+- A [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer){.external}
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the contact email address linked to your OVHcloud customer account
 

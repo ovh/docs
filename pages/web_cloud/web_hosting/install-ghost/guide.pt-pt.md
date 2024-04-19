@@ -12,7 +12,7 @@ updated: 2022-05-04
 
 [Ghost](https://ghost.org/){.external} é um gestor de conteúdos open source destinado a blogueiros ou jornalistas que simplifica o processo de publicação na Internet. O programa está escrito em JavaScript e utiliza [Node.js](https://nodejs.org/){.external}, uma plataforma que permite criar websites e API em JavaScript do lado do servidor.
 
-O [alojamento Cloud Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} permite utilizar Node.js como motor de execução para os seus websites e, assim, instalar e alojar o Ghost ou qualquer outra aplicação concebida para Node.js.
+O [alojamento Cloud Web da OVHcloud](/links/web/hosting-cloud-web-offer){.external} permite utilizar Node.js como motor de execução para os seus websites e, assim, instalar e alojar o Ghost ou qualquer outra aplicação concebida para Node.js.
 
 Neste tutorial, vamos explicar como instalar um blogue com Ghost num alojamento Cloud Web da OVHcloud e publicá-lo através do seu domínio.
 
@@ -20,7 +20,7 @@ Neste tutorial, vamos explicar como instalar um blogue com Ghost num alojamento 
 
 ### O que precisa de ter
 
-- Ter um serviço de [alojamento Cloud Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external}.
+- Ter um serviço de [alojamento Cloud Web da OVHcloud](/links/web/hosting-cloud-web-offer){.external}.
 - Ter ativado Node.js como motor de execução.
 - Ter adicionado o domínio em questão como multisite e ter definido Node.js como o motor de execução.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, na secção `Web Cloud`{.action}.

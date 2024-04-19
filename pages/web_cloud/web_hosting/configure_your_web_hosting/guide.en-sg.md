@@ -42,7 +42,7 @@ In short, changing your Web Hosting plan’s configuration from the [OVHcloud Co
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](/links/web/hosting){.external}, with the exception of a [Cloud Web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/cloud-web-offer/)
+- An [OVHcloud web hosting plan](/links/web/hosting){.external}, with the exception of a [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer)
 - Access to your web hosting plan in the [OVHcloud Control Panel](/links/manager), or via [FTP login](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## Instructions

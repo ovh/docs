@@ -26,7 +26,7 @@ Twój hosting Cloud Web dysponuje przestrzenią dyskową, na której możesz hos
 
 ## Wymagania początkowe
 
-- Hosting [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external}
+- Hosting [Cloud Web](/links/web/hosting-cloud-web-offer){.external}
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 - Dostęp do konta e-mail do kontaktu przypisanego do Twojego identyfikatora klienta
 

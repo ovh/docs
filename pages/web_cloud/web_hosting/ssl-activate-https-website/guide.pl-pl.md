@@ -141,7 +141,7 @@ Drugi przykład skryptu powoduje przekształcenie wszystkich adresów URL przych
 
 W tym drugim przykładzie upewnij się, że wszystkie Twoje domeny lub subdomeny docelowe mają aktywny certyfikat SSL.
 
-**Uwaga**, w przypadku ofert hostingowych [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/) należy użyć następującego skryptu:
+**Uwaga**, w przypadku ofert hostingowych [Cloud Web](/links/web/hosting-cloud-web-offer) należy użyć następującego skryptu:
 
 ```bash
 RewriteEngine On
