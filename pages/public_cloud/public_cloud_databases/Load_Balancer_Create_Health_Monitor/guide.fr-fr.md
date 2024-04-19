@@ -1,6 +1,6 @@
 ---
 title: Création et gestion d'un Health Monitor pour le Load Balancer Public Cloud OVHcloud
-excerpt: This guide walks you through various methods to optimize the performance of your OVHcloud Object Storage buckets, including using byte range fetches and multipart uploads.
+excerpt: Maitriser la mise en place et la gestion d'un Health Monitor avec les Load Balancers Public Cloud OVHCloud via l'espace OVHcloud,CLI,Horizon et Terraform.
 updated: 2024-03-19
 ---
 
