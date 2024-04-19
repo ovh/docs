@@ -1,7 +1,7 @@
 ---
 title: All you need to know to get started with Public Cloud
 excerpt: Find out some basic tips to get started in the Public Cloud environment
-updated: 2022-02-07
+updated: 2024-04-19
 ---
 
 ## Objective
@@ -90,7 +90,7 @@ To start a project, you will need to save a payment method when you create the p
 #### Billing
 
 > [!primary]
-> For Virtual Machine instance specifically, the billing meter starts when an instance reaches the `ACTIVE` status (displayed as `Activated` in OVHcloud control). In other words, the time the instance is in `BUILD` status is not billed.
+> For Virtual Machine instances specifically, the billing meter starts when an instance reaches the `ACTIVE` status (displayed as `Activated` in the OVHcloud Control Panel). In other words, the period of time during which the instance is in `BUILD` status is not billed.
 
 Since your payment method has been saved, it will be used to debit the amount calculated for your [billing at the end of the month](/pages/public_cloud/compute/analyze_billing). This calculation is based on the usage time of each resource, depending on the price of the resources.
 

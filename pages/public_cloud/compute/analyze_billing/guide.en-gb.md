@@ -1,7 +1,7 @@
 ---
 title: 'Information regarding Public Cloud billing options'
 excerpt: 'Find out more about the different billing options for Public Cloud products'
-updated: 2022-08-29
+updated: 2024-04-19
 ---
 
 ## Objective
@@ -24,9 +24,9 @@ This system is similar to the one used by certain telephone operators, where the
 
 Our goal is to provide a billing system that matches the way our customers use this service as closely as possible. To achieve this, we needed to make the billing granular. This is why the unit system is usually the amount of time, counted in hours in this case.
 
-For each resource to be billed, an hour counter starts when the resource is created, and stops when the resource is removed. This works in accordance with the principle of each hour of use being billed. 
+For each resource to be billed, an hour counter starts when the resource is created, and stops when the resource is removed. This works in accordance with the principle of each hour of use being billed.
 
-For Virtual Machine instance specifically, the billing meter starts when an instance reaches the `ACTIVE` status (displayed as `Activated` in OVHcloud control panel). In other words, the time the instance is in `BUILD` status is not billed.
+For Virtual Machine instanced specifically, the billing meter starts when an instance reaches the `ACTIVE` status (displayed as `Activated` in the OVHcloud Control Panel). In other words, the period of time during which the instance is in `BUILD` status is not billed.
 
 
 At the end of the month, each counter is multiplied by the hourly rate for the resource. To get the overall bill total, simply add up all of the counters charged for.

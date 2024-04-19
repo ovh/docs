@@ -1,7 +1,7 @@
 ---
 title: 'Informations concernant le mode de facturation cloud'
 excerpt: 'Comprenez le mode de facturation des produits Public Cloud'
-updated: 2022-08-29
+updated: 2024-04-19
 ---
 
 ## Objectif
@@ -25,6 +25,8 @@ Ce fonctionnement ressemble à celui de certains opérateurs téléphoniques qui
 Le but est de fournir une facturation qui correspond au mieux à l'utilisation qu'ont les clients de ce service. Pour répondre à cet objectif, il est nécessaire de rendre la facturation granulaire, c'est pourquoi le plus souvent l'unité est le temps qui se compte en heure dans ce cas.
 
 Pour chaque ressource sujette à facturation, un compteur d'heure démarre à la création de la ressource et se termine à sa suppression avec le principe du "chaque heure entamée est due".
+
+En ce qui concerne spécifiquement les instances de type *Virtual Machines*, le compteur de facturation démarre lorsqu'une instance atteint le statut `ACTIVE` (affiché comme `Activée` dans l'espace client OVHcloud). En d'autres termes, la période pendant laquelle l'instance est en statut `BUILD` n'est pas facturée.
 
 Chaque projet cloud a donc sa propre facture rassemblant l'ensemble des ressources facturées dans le mois, cette facture est éditée le 1er du mois suivant.
 
@@ -60,7 +62,7 @@ Soit 23,63 euros.
 
 ### Consulter ses factures
 
-Pour consulter les factures d'un projet, dans l'onglet `Public Cloud`{.action} de l'espace client OVHcloud, sélectionnez le projet cloud concerné dans le menu de gauche puis cliquez sur `Billing Control`{.action} et enfin sur `Historique`{.action}.
+Pour consulter les factures d'un projet, dans l'onglet `Public Cloud`{.action} de l'espace client OVHcloud, sélectionnez le projet cloud concerné dans le menu de gauche  puis cliquez sur `Billing Control`{.action}  et enfin sur `Historique`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 
