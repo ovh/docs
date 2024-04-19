@@ -43,10 +43,10 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 > Odnowienie usług należy do Ciebie.<br>
 > OVHcloud, jako dostawca hostingu, ma obowiązek definitywnie usunąć usługi (domeny, hosting, e-maile, itp.), które nie zostały odnowione na czas, jak również wszystkie zawarte w nich dane.
 >
-> W związku z tym zalecamy włączenie automatycznego[ ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#w-praktyce) odnowienia wszystkich Twoich subskrypcji OVHcloud.
+> W związku z tym zalecamy [włączenie automatycznego](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#w-praktyce) odnowienia wszystkich Twoich subskrypcji OVHcloud.
 >
 
-Aby sprawdzić poprawność subskrypcji Twojej domeny, w prawym górnym rogu Panelu klienta kliknij Twoją nazwę, aby wyświetlić menu PPM, następnie `Produkty i usługi`{.action}.
+Aby sprawdzić poprawność subskrypcji Twojej domeny, w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager) kliknij Twoją nazwę, aby wyświetlić menu PPM, następnie `Produkty i usługi`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 

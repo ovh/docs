@@ -46,7 +46,7 @@ Em caso de inacessibilidade do seu website, podem ocorrer várias reações de e
 > Assim, recomendamos vivamente que ative a [renovação automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#instrucoes) em todas as subscrições da OVHcloud.
 >
 
-Para verificar a validade da assinatura relativa ao seu domínio, clique no seu nome (canto superior direito) no menu contextual e, a seguir, em `Produtos e serviços`{.action}.
+Para verificar a validade da assinatura relativa ao seu domínio, clique no seu nome (no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager)) no menu contextual e, a seguir, em `Produtos e serviços`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 

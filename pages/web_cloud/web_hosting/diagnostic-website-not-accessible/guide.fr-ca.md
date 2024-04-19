@@ -42,7 +42,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 > De ce fait, nous vous recommandons fortement d'activer le [renouvellement automatique](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#en-pratique) sur l'ensemble de vos abonnements OVHcloud.
 >
 
-Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre [espace client](	/links/manager), afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
+Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre [espace client](/links/manager), afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
