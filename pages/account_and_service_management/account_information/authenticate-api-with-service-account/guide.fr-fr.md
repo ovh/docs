@@ -1,10 +1,10 @@
 ---
 title: Comment utiliser les comptes de service pour se connecter aux API de OVHcloud
-excerpt: "Comment se connecter aux API avec ses comptes de service OVHcloud grâce au protocole Oauth2"
+excerpt: "Comment se connecter aux API avec ses comptes de service OVHcloud grâce au protocole OAuth2"
 updated: 2023-08-24
 ---
 
- 
+
 
 ## Objectif
 
@@ -20,9 +20,9 @@ Cela peut vous permettre de :
 - fournir à votre monitoring des informations issues de nos infrastructures ;
 - etc...
 
-Les comptes de service fonctionnent avec le flow *client credentials* de Oauth2. Cela vous permet donc d'intégrer l'utilisation de l'API OVHcloud avec tous les outils respectant ce protocole. Les versions v1 et v2 de l'API OVHcloud sont compatibles avec les flows *client credentials* et *authorization code* de Oauth2.
+Les comptes de service fonctionnent avec le flow *client credentials* de OAuth2. Cela vous permet donc d'intégrer l'utilisation de l'API OVHcloud avec tous les outils respectant ce protocole. Les versions v1 et v2 de l'API OVHcloud sont compatibles avec les flows *client credentials* et *authorization code* de OAuth2.
 
-Oauth2 permet aussi de développer des applications tierces se connectant aux API de OVHcloud, sans collecter les identifiants. Si vous souhaitez créer vos propres applications exploitant les informations de comptes OVHcloud, vous pouvez utiliser le flow *authorization code* qui n'est pas décrit dans ce guide.
+OAuth2 permet aussi de développer des applications tierces se connectant aux API de OVHcloud, sans collecter les identifiants. Si vous souhaitez créer vos propres applications exploitant les informations de comptes OVHcloud, vous pouvez utiliser le flow *authorization code* qui n'est pas décrit dans ce guide.
 
 ## Prérequis
 
@@ -49,7 +49,7 @@ Par exemple, pour l'appel */v1/hosting/web*, le nom de l'action nécessaire est 
 
 Vous pouvez aussi utiliser l'opérateur **\*** pour désigner un sous ensemble de droits. Dans notre exemple, nous souhaitons fournir tous les droits sur les API liées au produit **Hébergements Web**. Nous utiliserons ainsi l'action **webHosting:**
 
-Dans le cadre de notre exemple, nous avons créé la politique d'accès suivante : 
+Dans le cadre de notre exemple, nous avons créé la politique d'accès suivante :
 
 ```json
 {
@@ -87,15 +87,15 @@ curl --request POST \
   --data scope=all
 ```
 
-En modifiant les données suivantes: 
+En modifiant les données suivantes:
 
 - **client_id**: identifiant de votre compte de service
 - **client_secret**: token de votre compte de service
 
-En fonction de la localisation de votre API, vous devez utiliser l'URL suivante : 
+En fonction de la localisation de votre API, vous devez utiliser l'URL suivante :
 
 - **API EU**: `https://www.ovh.com/auth/oauth2/token`
-- **API CA**: `https://www.ovh.ca/auth/oauth2/token`
+- **API CA**: `https://ca.ovh.com/auth/oauth2/token`
 
 Lors de cet appel d'API, vous recevrez une réponse respectant le format suivant:
 
@@ -110,11 +110,11 @@ Lors de cet appel d'API, vous recevrez une réponse respectant le format suivant
 
 Conservez le token contenu dans le champ **access_token**. Il sera nécessaire pour authentifier vos appels d'API.
 
-Pour obtenir des informations sur votre hébergement web, vous pouvez désormais faire un appel sur 
+Pour obtenir des informations sur votre hébergement web, vous pouvez désormais faire un appel sur
 
 > [!api]
 >
-> @api {v1} /hosting/web GET /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
+> @api {v1} /hosting/web GET /hosting/web/{serviceName}
 >
 
 Pour ce faire, vous devez fournir le token récupéré précédemment en header de votre requête de la façon suivante :
@@ -122,7 +122,7 @@ Pour ce faire, vous devez fournir le token récupéré précédemment en header 
 ```bash
 curl -i -X GET "https://{eu|ca}.api.ovh.com/v1/hosting/web/xxxxxxx.cluster001.hosting.ovh.net" \
   -H "accept: application/json"\
-  -H "authorization: your-api-token" 
+  -H "Authorization: Bearer your-api-token"
 ```
 
 Avec cette politique d'accès, vous n'avez accès qu'aux API de webhosting. Les autres API vous retourneront l'erreur HTTP 403 suivante :

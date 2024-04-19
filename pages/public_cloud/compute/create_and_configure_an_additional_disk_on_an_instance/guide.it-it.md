@@ -24,7 +24,7 @@ Ciò può essere utile nei seguenti casi:
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel proprio account OVHcloud
-- Avere un accesso amministratore (root) alla tua istanza via SSH
+- Avere un accesso amministratore (sudo) alla tua istanza via SSH
 
 > [!warning]
 >

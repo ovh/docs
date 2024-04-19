@@ -1,7 +1,7 @@
 ---
 title: Adding IP restrictions on an OVHcloud Managed Private Registry
-excerpt: 'Find out how to add IP restrictions/manage access to the HMI/API & registry of an OVHcloud Managed Private Registry'
-updated: 2024-01-12
+excerpt: 'Find out how to add IP restrictions and manage access to the HMI/API & registry of an OVHcloud Managed Private Registry'
+updated: 2024-02-01
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ This guide will cover the feature that allows you to manage access to the HMI of
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=es)
 - An OVHcloud Managed Private Registry (see the [creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) guide for more information)
 
 ## Instructions
@@ -80,10 +80,15 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 **Result:**
 
 ```json
-null
+[
+  {
+    "createdAt": "2024-02-01T15:15:06.436256Z",
+    "description": "production environment",
+    "ipBlock": "192.0.2.0/24",
+    "updatedAt": "2024-02-01T15:15:06.436256Z"
+  }
+]
 ```
-
-You should obtain an HTTP status code that equals to 201 and a `null` response as a response.
 
 > [!primary]
 >
@@ -128,7 +133,7 @@ After adding IP restrictions for the `management` endpoint, an unauthorized IP w
 [
   {
     "description": "Q/A environment",
-    "ipBlock": "xxx.xx.xx.xx/24"
+    "ipBlock": "192.0.1.0/24"
   }
 ]
 ```
@@ -136,7 +141,14 @@ After adding IP restrictions for the `management` endpoint, an unauthorized IP w
 **Result:**
 
 ```json
-null
+[
+  {
+    "createdAt": "2024-02-01T15:18:05.611221Z",
+    "description": "Q/A environment",
+    "ipBlock": "192.0.1.0/24",
+    "updatedAt": "2024-02-01T15:18:05.611221Z"
+  }
+]
 ```
 
 > [!primary]

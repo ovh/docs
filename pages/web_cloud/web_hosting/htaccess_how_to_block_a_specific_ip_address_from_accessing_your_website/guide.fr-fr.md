@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Comment bloquer l'accès à mon site pour certaines adresses IP via un fichier .htaccess ?"
 excerpt: "Découvrez les actions possibles via un fichier .htaccess afin de bloquer l'accès à votre site à certaines adresses IP"
-updated: 2022-09-12
+updated: 2024-03-14
 ---
 
 ## Objectif
@@ -18,12 +18,12 @@ Vous pouvez créer plusieurs fichiers « .htaccess » dans [l'espace FTP](/pages
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
+- Disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting)
 
 ## En pratique
 
@@ -75,13 +75,13 @@ Pour bloquer une adresse IP spécifique, insérez l'un des deux codes suivants d
 >> ```
 >>
 
-- **Exemple** : si vous souhaitez bloquer l'adresse IP 192.168.1.2, vous devrez écrire l'un des deux codes suivants :
+- **Exemple** : si vous souhaitez bloquer l'adresse IP 203.0.113.0, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
 > Syntaxe historique
 >>
 >> ```bash
->> Deny from 192.168.1.2
+>> Deny from 203.0.113.0
 >> ```
 >>
 > Syntaxe à partir d'Apache 2.3
@@ -89,7 +89,7 @@ Pour bloquer une adresse IP spécifique, insérez l'un des deux codes suivants d
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168.1.2
+>> Require not ip 203.0.113.0
 >> </RequireAll>
 >> ```
 >>
@@ -115,13 +115,13 @@ Pour bloquer une plage d'adresses IP, insérez l'un des deux codes suivants dans
 >> ```
 >>
 
-- **Exemple** : si vous souhaitez bloquer toutes les IPs en 192.168.x.x, vous devrez écrire l'un des deux codes suivants :
+- **Exemple** : si vous souhaitez bloquer toutes les IPs en 203.0.113.x, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
 > Syntaxe historique
 >>
 >> ```bash
->> Deny from 192.168
+>> Deny from 203.0.113
 >> ```
 >>
 > Syntaxe à partir d'Apache 2.3
@@ -129,7 +129,7 @@ Pour bloquer une plage d'adresses IP, insérez l'un des deux codes suivants dans
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168
+>> Require not ip 203.0.113
 >> </RequireAll>
 >> ```
 >>
@@ -251,7 +251,7 @@ Pour n'autoriser qu'une seule IP à accéder à votre service, insérez l'un des
 >> ```
 >>
 
-- **Exemple** : si vous souhaitez autoriser uniquement les IPs 192.168.1.2 et 192.168.1.3 à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
+- **Exemple** : si vous souhaitez autoriser uniquement les IPs 203.0.113.0 et 203.0.113.1 à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
 > Syntaxe historique
@@ -259,14 +259,14 @@ Pour n'autoriser qu'une seule IP à accéder à votre service, insérez l'un des
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1.2
->> Allow from 192.168.1.3
+>> Allow from 203.0.113.0
+>> Allow from 203.0.113.1
 >> ```
 >>
 > Syntaxe à partir d'Apache 2.3
 >>
 >> ```bash
->> Require ip 192.168.1.2 192.168.1.3
+>> Require ip 203.0.113.0 203.0.113.1
 >> ```
 >>
 
@@ -291,7 +291,7 @@ Pour autoriser une plage d'IPs à accéder à votre service, insérez l'un des d
 >> ```
 >>
 
-- **Exemple** : si vous souhaitez autoriser uniquement la plage d'IPs 192.168.1.x à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
+- **Exemple** : si vous souhaitez autoriser uniquement la plage d'IPs 203.0.113.x à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
 > Syntaxe historique
@@ -299,14 +299,14 @@ Pour autoriser une plage d'IPs à accéder à votre service, insérez l'un des d
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1
+>> Allow from 203.0.113
 >> ```
 >>
 > Syntaxe à partir d'Apache 2.3 
 >> À placer tout en haut de votre « .htaccess »
 >>
 >> ```bash
->> Require ip 192.168.1
+>> Require ip 203.0.113
 >> ```
 >>
 
@@ -365,8 +365,8 @@ Indépendamment de la sécurité sur l'accès général à l'hébergement, le fi
 
 ## Aller plus loin <a name="go-further"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

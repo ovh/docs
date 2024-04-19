@@ -20,7 +20,7 @@ O vRack (rack virtual) da OVHcloud permite agrupar virtualmente vários servidor
 
 - Um serviço [vRack](https://www.ovh.pt/solucoes/vrack/) ativado na sua conta
 - Vários [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/) (compatíveis com vRack)
-- Dispor de um acesso de administrador (root) ao servidor através de SSH ou RDP
+- Dispor de um acesso de administrador (sudo) ao servidor através de SSH ou RDP
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Preparar o intervalo de endereços IP privados que escolheu
 

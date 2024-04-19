@@ -111,7 +111,7 @@ Para configurar os endereços de e-mail, aceda a `Contas de e-mail`{.action}. Na
 
 Para as configurar, clique no botão `...`{.action} e, a seguir, em `Alterar`{.action}.
 
-![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
+![emailpro](images/emailpro-05.png){.thumbnail}
 
 Introduza os dados solicitados.
 
@@ -130,7 +130,6 @@ Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e
 > Repita este passo sempre que necessário, de acordo com o número de contas disponíveis. Se precisar de mais contas, clique em `Encomendar contas`{.action}.
 >
 
-![emailpro](images/first_config_email_pro_configure_email_accounts_step2.png){.thumbnail}
 
 ### 5 - Usar o serviço de e-mail
 

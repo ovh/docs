@@ -1,7 +1,7 @@
 ---
 title: "IP address list for Web Hosting clusters"
 excerpt: "Find out the appropriate IP addresses to use with your OVHcloud Web Hosting plan"
-updated: 2023-08-22
+updated: 2024-02-28
 ---
 
 ## Objective
@@ -12,17 +12,17 @@ It might become necessary to manually adjust the access settings of a service. T
 
 > [!primary]
 >
-> Please note that the IP addresses of the CDN options are "Anycast", meaning they do not need geolocalisation (see also the [product page](https://www.ovhcloud.com/en-au/web-hosting/options/cdn/)).
+> Please note that the IP addresses of the CDN options are "Anycast", meaning they do not need geolocalisation (see also the [product page](/links/web/hosting-options-cdn)).
 > 
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
 You can verify the cluster number of the Web Hosting on this page under **FTP server**.
 
 ### Cluster 002
@@ -737,6 +737,38 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 51.161.94.36
 ```
 
+### Cluster 100
+
+#### Cluster IP addresses per country
+
+|Country|Country Code|IPv4|IPv6|
+|---|---|----|---|
+|France|FR|5.135.23.164|2001:41d0:301::100|
+|Ireland|IE|188.165.0.143|2001:41d0:301:3::100|
+|Portugal|PT|94.23.76.76|2001:41d0:301:2::100|
+|United Kingdom|UK|87.98.254.187|2001:41d0:301:12::100|
+|Italy|IT|178.32.143.165|2001:41d0:301:11::100|
+|Spain|ES|178.33.119.211|2001:41d0:301:4::100|
+|Poland|PL|94.23.89.116|2001:41d0:301:5::100|
+|Czech Republic|CZ|94.23.172.226|2001:41d0:301:6::100|
+|Netherlands|NL|94.23.146.244|2001:41d0:301:7::100|
+|Finland|FI|188.165.137.37|2001:41d0:301:8::100|
+|Lithuania|LT|188.165.26.152|2001:41d0:301:9::100|
+|Germany|DE|87.98.243.177|2001:41d0:301:1::100|
+|Belgium|BE|91.121.217.51|2001:41d0:301:10::100|
+
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.100
+```
+
+If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
+
+```bash
+54.36.142.130
+```
+
 ## Go further
 
 [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
@@ -745,8 +777,8 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 
 [Optimise your website’s performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

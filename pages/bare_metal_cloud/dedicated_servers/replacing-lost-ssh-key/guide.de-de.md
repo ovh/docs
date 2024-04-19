@@ -1,7 +1,7 @@
 ---
 title: Austauschen eines SSH-Schlüsselpaars
 excerpt: Erfahren Sie hier, wie Sie Zugriff auf Ihren Server mit einem neuen SSH-Schlüsselpaar wiederherstellen, falls der private Schlüssel verloren ist
-updated: 2023-01-19
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -29,25 +29,13 @@ Sie können sich jedoch weiterhin über den [OVHcloud Rescue-Modus](/pages/bare_
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Aktuellen SSH-Schlüssel deaktivieren
-
-Um auf Ihren Server im Rescue-Modus zuzugreifen, muss zuerst der aktuell genutzte SSH-Schlüssel deaktiviert werden.
-
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie zum Bereich `SSH-Schlüssel`{.action}. Folgen hierzu Sie bei Bedarf unserer Anleitung zu [SSH-Schlüsseln](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
-
-Da der im Kundencenter hinterlegte öffentliche Schlüssel ohne den zugehörigen privaten Schlüssel nutzlos ist, können Sie diesen einfach entfernen. Klicken Sie auf den Button `...`{.action} in der Zeile des Schlüssels und wählen Sie `Schlüssel löschen`{.action}.
-
-![Löschtaste](images/replace-lost-key-01.png){.thumbnail}
-
-Klicken Sie im Popup-Fenster auf `Bestätigen`{.action}.
-
-### Schritt 2: Ein neues Schlüsselpaar erstellen
+### Schritt 1: Ein neues Schlüsselpaar erstellen
 
 Erstellen Sie auf Ihrem Gerät ein neues SSH-Schlüsselpaar, wie im ersten Teil der Dokumentation zu [SSH-Schlüsseln](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated) beschrieben.
 
-<a name="step3"></a>
+<a name="step2"></a>
 
-### Schritt 3: Im Rescue-Modus auf den Server zugreifen und den Schlüssel ersetzen
+### Schritt 2: Im Rescue-Modus auf den Server zugreifen und den Schlüssel ersetzen
 
 Folgen Sie den Anweisungen in der Anleitung zum Rescue-Modus, um sich mit Ihrem Server zu verbinden und Ihre Partitionen zu mounten:
 
@@ -57,7 +45,7 @@ Folgen Sie den Anweisungen in der Anleitung zum Rescue-Modus, um sich mit Ihrem 
 Sobald Sie Zugriff auf Ihre Dateien haben, öffnen Sie die relevante Datei "authorized_keys" mit einem Texteditor. Diese Datei speichert SSH-Schlüssel und befindet sich im Verzeichnis `home` des Benutzers, mit dem Sie sich auf dem Server einloggen. (Ersetzen Sie "USER_NAME" mit Ihrem verwendeten Benutzernamen.)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Kopieren Sie Ihren neuen öffentlichen Schlüssel (erstellt in Schritt 2) und fügen Sie ihn in die Datei ein. Es sollte dann ähnlich dem folgenden Beispiel aussehen:
@@ -71,7 +59,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== neu@sshkey
 
 Löschen Sie aus Sicherheitsgründen die obsolete "alte" Schlüsselzeichenfolge aus der Datei. Speichern Sie die Änderungen und schließen Sie den Editor.
 
-Stellen Sie den Boot-Modus wieder auf "normal" um und starten Sie den Server in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu. Folgen Sie bei Bedarf der [Anleitung zum Rescue-Modus](#step3).
+Stellen Sie den Boot-Modus wieder auf "normal" um und starten Sie den Server in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu. Folgen Sie bei Bedarf der [Anleitung zum Rescue-Modus](#step2).
 
 Sie haben jetzt mit Ihrem neuen SSH-Schlüsselpaar wieder Zugriff auf den Server.
 

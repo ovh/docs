@@ -36,7 +36,7 @@ $ npm install ovh
 Per utilizzare l’API SMS sono necessari degli identificativi. Questi identificativi vengono creati una sola volta per individuare l’applicazione che invierà gli SMS. La loro durata di vita è configurabile.
 
 Crea i tuoi identificativi di Script (tutte le chiavi per volta) su questa pagina:
-[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (questo URL permette di avere automaticamente le autorizzazioni per gli step descritti in questa guida).
+[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*&GET=/sms/*/jobs&POST=/sms/*/jobs) (questo URL permette di avere automaticamente le autorizzazioni per gli step descritti in questa guida).
 
 ![creazione dei token](images/img_2462.jpg){.thumbnail}
 

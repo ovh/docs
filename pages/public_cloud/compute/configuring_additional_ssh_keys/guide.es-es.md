@@ -18,7 +18,7 @@ Al crear una instancia, solo es posible configurar una llave SSH para la conexi�
 
 - Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
 - Haber iniciado sesión en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Tener acceso a su instancia por SSH como administrador (root).
+- Tener acceso a su instancia por SSH como administrador (sudo).
 
 ## Procedimiento
 

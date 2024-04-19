@@ -16,15 +16,15 @@ Uma base de dados (BDD) é utilizada para armazenar elementos dinâmicos (dados 
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que inclua, pelo menos, uma base de dados.
-- Dispor de uma base de dados disponível "criação" entre as que estão incluídas na sua oferta de alojamento web. Se necessário, pode adicionar bases de dados [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ao seu alojamento web.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) com as [autorizações necessárias](/pages/account_and_service_management/account_information/managing_contacts) para gerir o seu alojamento web.
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting) que inclua, pelo menos, uma base de dados.
+- Dispor de uma base de dados disponível "criação" entre as que estão incluídas na sua oferta de alojamento web. Se necessário, pode adicionar bases de dados [Start SQL](/links/web/hosting-options-startsql) ao seu alojamento web.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager) com as [autorizações necessárias](/pages/account_and_service_management/account_information/managing_contacts) para gerir o seu alojamento web.
 
 ## Instruções
 
 ### Etapa 1 - Aceder ao separador de gestão das bases de dados de um alojamento web
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha o alojamento que pretende criar e clique no separador `Bases de dados`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha o alojamento que pretende criar e clique no separador `Bases de dados`{.action}.
 
 A tabela desta secção contém todas as bases de dados criadas com o seu alojamento web.
 
@@ -57,7 +57,7 @@ Na nova janela, selecione as seguintes informações:
 |Informação|Descrição|  
 |---|---| 
 |**Selecione o tipo de base de dados**|Selecione o tamanho da base de dados. Este tamanho refere-se ao espaço de que a sua base de dados dispõe para o armazenamento de dados.
-|**Selecione o motor da base de dados a adicionar**|Selecione o motor que pretende que a base de dados utilize. As bases de dados incluídas no seu [plano de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) só estão disponíveis com o motor MySQL.|
+|**Selecione o motor da base de dados a adicionar**|Selecione o motor que pretende que a base de dados utilize. As bases de dados incluídas no seu [plano de alojamento web da OVHcloud](/links/web/hosting) só estão disponíveis com o motor MySQL.|
 |**Selecione a versão da base de dados adicionar**|Selecione a versão utilizada pelo motor da base de dados. Certifique-se de que o seu website é compatível com a versão que escolheu.|
 
 De seguida, clique em `Seguinte`{.action}.
@@ -98,7 +98,7 @@ Certifique-se de que todas as informações apresentadas no resumo estão corret
 
 > [!primary]
 >
-> Quando clicar em `Validar`{.action}, a criação da base de dados pode demorar até **15 minutos**. Recarregue a página web do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) se a base de dados não aparecer automaticamente no quadro que lista as suas bases de dados.
+> Quando clicar em `Validar`{.action}, a criação da base de dados pode demorar até **15 minutos**. Recarregue a página web do seu [Área de Cliente OVHcloud](/links/manager) se a base de dados não aparecer automaticamente no quadro que lista as suas bases de dados.
 >
 
 Repita este processo as vezes que desejar a fim de criar várias bases de dados (no limite das bases de dados disponíveis na sua solução).
@@ -107,7 +107,7 @@ Repita este processo as vezes que desejar a fim de criar várias bases de dados 
 
 > [!warning]
 >
-> Este guia não substitui a assistência de um profissional em desenvolvimento. Recomendamos que, caso de precise de ajuda, recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do software da sua solução. A OVHcloud não poderá fornecer-lhe qualquer assistência a este respeito. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
+> Este guia não substitui a assistência de um profissional em desenvolvimento. Recomendamos que, caso de precise de ajuda, recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor do software da sua solução. A OVHcloud não poderá fornecer-lhe qualquer assistência a este respeito. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
 >
 
 Agora pode utilizar a sua base de dados. Para isso, precisará das suas informações de início de sessão:
@@ -118,7 +118,7 @@ Agora pode utilizar a sua base de dados. Para isso, precisará das suas informa�
 
 Estas informações são essenciais para que o seu website possa ligar-se à base de dados.
 
-Se necessário, para recuperar estas informações de ligação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha a oferta de alojamento para a qual pretende recuperar as informações de ligação à base de dados e clique no separador `Bases de dados`{.action}.
+Se necessário, para recuperar estas informações de ligação, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha a oferta de alojamento para a qual pretende recuperar as informações de ligação à base de dados e clique no separador `Bases de dados`{.action}.
 
 Consulte a tabela que se apresenta para ver o conjunto das informações de ligação à sua base de dados. Isto exceto para a *palavra-passe*, por motivos de segurança.
 
@@ -127,7 +127,7 @@ Consulte a tabela que se apresenta para ver o conjunto das informações de liga
 > Se já não se lembrar da palavra-passe de início de sessão da base de dados, consulte o guia "[Alterar a palavra-passe da base de dados](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
-Em função do software utilizado, é possível que esta ligação tenha de ser configurada manualmente ou através de uma interface gerida pela interface de configuração (backend) do website. Uma vez que este procedimento diz respeito à configuração do seu website e não ao seu alojamento OVHcloud, recomendamos que consulte os recursos disponíveis online ou que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
+Em função do software utilizado, é possível que esta ligação tenha de ser configurada manualmente ou através de uma interface gerida pela interface de configuração (backend) do website. Uma vez que este procedimento diz respeito à configuração do seu website e não ao seu alojamento OVHcloud, recomendamos que consulte os recursos disponíveis online ou que recorra a um [fornecedor especializado](/links/partner).
 
 > [!primary]
 >
@@ -136,7 +136,7 @@ Em função do software utilizado, é possível que esta ligação tenha de ser 
 
 #### Aceder à interface phpMyAdmin
 
-A OVHcloud fornece uma ferramenta online para a gestão das bases de dados, "phpMyAdmin". Para encontrar o link de acesso a esta aplicação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha a oferta de alojamento para a qual pretende recuperar as informações de ligação à base de dados e clique no separador `Bases de dados`{.action}. No quadro que se abrir, clique no botão `...`{.action} à direita da base de dados em causa e, a seguir, clique em `Aceder ao phpMyAdmin`{.action} no menu pendente.
+A OVHcloud fornece uma ferramenta online para a gestão das bases de dados, "phpMyAdmin". Para encontrar o link de acesso a esta aplicação, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha a oferta de alojamento para a qual pretende recuperar as informações de ligação à base de dados e clique no separador `Bases de dados`{.action}. No quadro que se abrir, clique no botão `...`{.action} à direita da base de dados em causa e, a seguir, clique em `Aceder ao phpMyAdmin`{.action} no menu pendente.
 
 ![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
@@ -148,13 +148,13 @@ Caso seja necessário, consulte a [etapa 3](#step3) deste guia para encontrar as
 
 Para cada base de dados de alojamento web, são criadas snapshots automaticamente todos os dias (até um máximo de 32). Assim, pode restaurar rapidamente uma versão anterior de uma base de dados a partir da sua Área de Cliente OVHcloud.
 
-Para verificar as snapshots disponíveis, bem como a data e a hora de criação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha a oferta de alojamento sobre a qual deseja consultar as snapshots disponíveis para a base de dados e, a seguir, clique no separador `Bases de dados`{.action}. Na tabela que vai aparecer, clique no símbolo junto do círculo verde. Pode igualmente descarregar cada backup de uma base de dados a partir desse mesmo local. Encontre mais informações sobre este assumpto no nosso guia "[Obter a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export)".
+Para verificar as snapshots disponíveis, bem como a data e a hora de criação, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha a oferta de alojamento sobre a qual deseja consultar as snapshots disponíveis para a base de dados e, a seguir, clique no separador `Bases de dados`{.action}. Na tabela que vai aparecer, clique no símbolo junto do círculo verde. Pode igualmente descarregar cada backup de uma base de dados a partir desse mesmo local. Encontre mais informações sobre este assumpto no nosso guia "[Obter a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export)".
 
 #### Compreender os problemas mais comuns
 
 **Demasiadas ligações**
 
-As bases de dados de alojamento web são limitadas a 30 ligações simultâneas (variável do sistema *max_connections*). Os pedidos SQL devem, portanto, ser otimizados para evitar este tipo de erros. Se, apesar de tudo, os problemas persistirem, devem ser consideradas medidas alternativas. Por exemplo, pode migrar a sua base de dados numa base de dados [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) ou ainda realizar uma [atualização da sua oferta de alojamento web](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/).
+As bases de dados de alojamento web são limitadas a 30 ligações simultâneas (variável do sistema *max_connections*). Os pedidos SQL devem, portanto, ser otimizados para evitar este tipo de erros. Se, apesar de tudo, os problemas persistirem, devem ser consideradas medidas alternativas. Por exemplo, pode migrar a sua base de dados numa base de dados [Web Cloud Databases](/links/web/databases) ou ainda realizar uma [atualização da sua oferta de alojamento web](/links/web/hosting-best-web).
 
 **Erros de ligação / "não encontrado"**
 
@@ -178,8 +178,8 @@ Depois de a base de dados ter sido otimizada (eliminada), recalcule a sua quota 
 
 [Otimizar as performances do seu website](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Lista adresów IP klastrów i hostingów WWW"
 excerpt: "Poznaj wszystkie dostępne adresy IP dostępne na naszych hostingach"
-updated: 2023-11-21
+updated: 2024-02-28
 ---
 
 > [!primary]
@@ -21,17 +21,17 @@ W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięk
 > [!primary]
 >
 > Adresy IP opcji CDN są typu „Anycast”.
-> Oznacza to, że nie potrzebują geolokalizacji ([więcej informacji znajdziesz tutaj](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)).
+> Oznacza to, że nie potrzebują geolokalizacji ([więcej informacji znajdziesz tutaj](/links/web/hosting-options-cdn)).
 > 
 
 ## Wymagania początkowe
 
-- Zakupienie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Zakupienie [hostingu OVHcloud](/links/web/hosting){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
-Aby poznać klaster hostingu, w którym hostowana jest Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} po czym wybierz odpowiedni hosting. Następnie przejdź do zakładki `FTP - SSH`{.action}.
+Aby poznać klaster hostingu, w którym hostowana jest Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](/links/manager) wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} po czym wybierz odpowiedni hosting. Następnie przejdź do zakładki `FTP - SSH`{.action}.
 Na tej stronie możesz sprawdzić numer klastra hostingu WWW, używając **Serwer FTP**.
 
 ### Klaster 002
@@ -746,6 +746,38 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 51.161.94.36
 ```
 
+### Cluster 100
+
+Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
+
+|Kraj|Kod kraju|IPv4|IPv6|
+|---|---|----|---|
+|Francja|FR|5.135.23.164|2001:41d0:301::100|
+|Irlandia|IE|188.165.0.143|2001:41d0:301:3::100|
+|Portugalia|PT|94.23.76.76|2001:41d0:301:2::100|
+|Wielka Brytania|UK|87.98.254.187|2001:41d0:301:12::100|
+|Włochy|IT|178.32.143.165|2001:41d0:301:11::100|
+|Hiszpania|ES|178.33.119.211|2001:41d0:301:4::100|
+|Polska|PL|94.23.89.116|2001:41d0:301:5::100|
+|Czechy|CZ|94.23.172.226|2001:41d0:301:6::100|
+|Niderlandy|NL|94.23.146.244|2001:41d0:301:7::100|
+|Finlandia|FI|188.165.137.37|2001:41d0:301:8::100|
+|Litwa|LT|188.165.26.152|2001:41d0:301:9::100|
+|Niemcy|DE|87.98.243.177|2001:41d0:301:1::100|
+|Belgia|BE|91.121.217.51|2001:41d0:301:10::100|
+
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
+
+```bash
+46.105.204.100
+```
+
+Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
+
+```bash
+54.36.142.130
+```
+
 ## Sprawdź również
 
 [Uruchomienie strony podpiętej w opcji MultiSite na Twoim hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)
@@ -754,8 +786,8 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 
 [Zoptymalizuj wydajność swojej strony www](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

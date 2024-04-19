@@ -82,7 +82,9 @@ Aby zachować porządek w przechowywaniu kopii zapasowych, utworzymy katalogi do
 
 ```sh
 df -h
+```
 
+```console
 Size Used Avail Use% Mounted on
 udev            7,8G       0  7,8G   0% /dev
 tmpfs           1,6G     51M  1,6G   4% /run

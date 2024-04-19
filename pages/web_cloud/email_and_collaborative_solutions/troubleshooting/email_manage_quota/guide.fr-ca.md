@@ -79,14 +79,14 @@ Il est possible d'augmenter la capacité de stockage de votre compte e-mail, si 
 > **Emails (MXplan)**
 >>
 >> La capacité d'un compte MXplan peut aller de 2,5 Mo à 5 Go. S'il est saturé et que sa capacité est inférieure à 5 Go, vous pouvez modifier sa capacité via l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).<br>
->> Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Modifier`{.action}.
+>> Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à modifier, puis cliquez sur `Modifier`{.action}.
 >> Depuis la case `Quota`{.action}, sélectionnez la taille qui vous convient, cliquez sur `Suivant`{.action} puis `Valider`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Si votre compte Exchange arrive à saturation de ses 50 Go, il est possible, pour les offres **Hosted** et **Provider**, de souscrire à une option d'extension pour étendre sa capacité à 300 Go.<br>
->> Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Augmenter la capacité à 300 Go`{.action}. Choisissez le mode de facturation qui vous convient et cliquez sur `Valider`{.action}.<br><br>
+>> Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bouton `...`{.action} à droite du compte à modifier, puis cliquez sur `Augmenter la capacité à 300 Go`{.action}. Choisissez le mode de facturation qui vous convient et cliquez sur `Valider`{.action}.<br><br>
 >>![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
 >> Si votre compte Exchange a déjà rempli ses 300 Go de stockage sur une offre **Hosted** ou **Provider**, vous devrez libérer de l'espace sur votre compte Exchange en supprimant des éléments superflus ou [archiver vos e-mails](#archiveorswitch) sur votre ordinateur en local. Cette situation est valable également pour les comptes Exchange de 50 Go présents sur une offre **Private**.
@@ -169,7 +169,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 > **Exchange**
 >>
 >> Si votre compte Exchange arrive à saturation des 50 Go d'espace, il est possible de souscrire à une option d'extension pour étendre sa capacité à 300 Go. Ceci uniquement si le compte Exchange est présent sur une offre **Hosted** ou **Provider**.<br>
->> Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Augmenter la capacité à 300 Go`{.action}.<br><br>
+>> Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez sur le bouton `...`{.action} à droite du compte à modifier, puis cliquez sur `Augmenter la capacité à 300 Go`{.action}.<br><br>
 >> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
 

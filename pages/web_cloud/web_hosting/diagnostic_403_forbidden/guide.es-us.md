@@ -40,14 +40,14 @@ Tras la detección de un funcionamiento sospechoso, nuestros robots de seguridad
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) y/o con nuestra [comunidad de usuarios](https://community.ovh.com/en/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner) y/o con nuestra [comunidad de usuarios](https://community.ovh.com/en/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting](https://www.ovhcloud.com/es/web-hosting/) de OVHcloud.
+- Tener contratado un plan de [hosting](/links/web/hosting) de OVHcloud.
 - Disponer de las [claves de conexión](/pages/web_cloud/web_hosting/ftp_connection) al espacio FTP de almacenamiento del alojamiento.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -55,11 +55,11 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 Si la página **"403 forbidden"** ha aparecido como consecuencia de una modificación de su sitio web, [restaure la totalidad o parte del espacio de almacenamiento FTP de su alojamiento](/pages/web_cloud/web_hosting/ftp_save_and_backup) a una fecha anterior.
 
-Si las copias de seguridad disponibles no le permiten restablecer el acceso a su sitio web, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
+Si las copias de seguridad disponibles no le permiten restablecer el acceso a su sitio web, contacte con un [proveedor especializado](/links/partner).
 
 Si la página **"403 forbidden" ** no ha aparecido debido a una modificación de su sitio web, consulte su mensajería. Si, por motivos de seguridad, ha recibido un mensaje de correo electrónico de nuestros servicios informándole de que desea cerrar su alojamiento web, vaya directamente al [etapa 2](#step-2) de la presente guía.
 
-Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún email de nuestros servicios al respecto, compruebe los permisos de acceso FTP (CHMOD) de sus ficheros/carpetas así como el código contenido en su(s) archivo(s) **.htaccess**. Compruebe también si este fallo no se ha producido por un plugin de seguridad o por un firewall de aplicación. Si lo necesita, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
+Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún email de nuestros servicios al respecto, compruebe los permisos de acceso FTP (CHMOD) de sus ficheros/carpetas así como el código contenido en su(s) archivo(s) **.htaccess**. Compruebe también si este fallo no se ha producido por un plugin de seguridad o por un firewall de aplicación. Si lo necesita, contacte con un [proveedor especializado](/links/partner).
 
 ### Etapa 2: proteger sus soluciones <a name="step-2"></a>
 
@@ -67,7 +67,7 @@ En primer lugar, compruebe la seguridad de sus equipos o dispositivos informáti
 
 - Realice las actualizaciones de seguridad de sus dispositivos.
 
-- Compruebe que se instale un antivirus, actualícela y lance una exploración completa. Si no tiene ninguno, consulte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) antes de toda instalación.
+- Compruebe que se instale un antivirus, actualícela y lance una exploración completa. Si no tiene ninguno, consulte con un [proveedor especializado](/links/partner) antes de toda instalación.
 
 - Modifique todas sus contraseñas locales, especialmente las de sus direcciones de correo electrónico, respetando las **buenas prácticas** especificadas en [esta guía](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -75,11 +75,11 @@ En primer lugar, compruebe la seguridad de sus equipos o dispositivos informáti
 
 > [!warning]
 >
-> Antes de cambiar la contraseña de la base de datos de su sitio web desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), actualice el archivo de configuración de su sitio web para que se conecte a la base de datos con la nueva contraseña.
+> Antes de cambiar la contraseña de la base de datos de su sitio web desde el [área de cliente de OVHcloud](/links/manager), actualice el archivo de configuración de su sitio web para que se conecte a la base de datos con la nueva contraseña.
 >
 > Si no, al cambiar la contraseña de la base de datos se cortará el acceso al sitio web o a los servicios que lo utilicen.
 >
-> En caso de duda sobre las operaciones a realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+> En caso de duda sobre las operaciones a realizar, contacte con los [partners de OVHcloud](/links/partner).
 
 ### Etapa 3: intervenir en su alojamiento
 
@@ -92,7 +92,7 @@ En primer lugar, la fecha de envío del mensaje de correo electrónico de OVHclo
 > - Desactivación aplicando un "**CHMOD 700**" a la raíz FTP de su alojamiento web.
 > - Desactivación aplicando un "**CHMOD 000**" a la raíz FTP de su alojamiento web.
 >
-> En caso de desactivación por restricción de acceso FTP en "**CHMOD 000**", contacte obligatoriamente con nuestro [equipo de soporte](https://www.ovhcloud.com/es/support-levels/) para conocer la situación antes de continuar con los pasos descritos en esta guía. 
+> En caso de desactivación por restricción de acceso FTP en "**CHMOD 000**", contacte obligatoriamente con nuestro [equipo de soporte](/links/support) para conocer la situación antes de continuar con los pasos descritos en esta guía. 
 >
 > En función de su situación, estos últimos aplicarán una restricción menos elevada convirtiendo el "**CHMOD 000**" en "**CHMOD 700**" para que usted pueda actuar en el espacio FTP de su alojamiento web.
 >
@@ -106,12 +106,12 @@ Para restaurar la totalidad o parte de su espacio de almacenamiento FTP, consult
 > [!warning]
 >
 > La restauración única de su espacio de almacenamiento FTP no es suficiente para corregir posibles fallos de seguridad presentes previamente en su sitio web.
-> Para identificar estos fallos de seguridad, analice los ["logs web"](/pages/web_cloud/web_hosting/logs_and_statistics) de su alojamiento web o utilice un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) para realizar una auditoría de seguridad de sus sitios web.
+> Para identificar estos fallos de seguridad, analice los ["logs web"](/pages/web_cloud/web_hosting/logs_and_statistics) de su alojamiento web o utilice un [proveedor especializado](/links/partner) para realizar una auditoría de seguridad de sus sitios web.
 >
 
 #### Caso n° 2: su alojamiento ha sido desactivado más de dos semanas antes.
 
-Si su alojamiento ha sido cerrado más de dos semanas antes, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) para realizar una auditoría de seguridad de sus sitios web. 
+Si su alojamiento ha sido cerrado más de dos semanas antes, contacte con un [proveedor especializado](/links/partner) para realizar una auditoría de seguridad de sus sitios web. 
 
 > [!success]
 >
@@ -160,7 +160,7 @@ SITE CHMOD 705 .
 
 #### Reactivar el alojamiento con el explorador FTP "net2ftp"
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Web Cloud`{.action} y, seguidamente, haga clic en `Alojamientos`{.action} en la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
+En el [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action} y, seguidamente, haga clic en `Alojamientos`{.action} en la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
 
 Pulse el botón `Explorador FTP `{.action} y conéctese a su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
@@ -195,8 +195,8 @@ Una respuesta **"200 Permissions changed on /"** confirma que la operación se h
 
 [Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

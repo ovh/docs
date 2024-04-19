@@ -12,7 +12,7 @@ Ce guide vous présente les différentes actions à réaliser pour migrer l'ense
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
@@ -21,7 +21,7 @@ Ce guide vous présente les différentes actions à réaliser pour migrer l'ense
 - Avoir accès à la zone DNS (Domain Name System) active de votre nom de domaine.
 - Avoir accès aux fichiers et à la base de données de votre site Web chez votre hébergeur actuel.
 - Disposer des identifiants (utilisateur, mot de passe, serveur) de vos adresses e-mail actuelles.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -54,25 +54,25 @@ Si une telle interruption devait avoir lieu, ce guide est construit de telle sor
 
 Plusieurs offres d'hébergement mutualisé OVHcloud contiennent une offre e-mail « MX Plan ». Cette offre e-mail permet de créer des adresses e-mail avec un espace de stockage de 5 Go maximum pour chaque adresse. Choisissez parmi les offres d'hébergement ci-dessous en fonction de la version PHP, de la version SQL, du nombre d'adresses e-mail dont vous avez besoin et de la taille de votre site à migrer :
 
-- L'hébergement [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) avec **10 adresses e-mail** « MX Plan »
-- L'hébergement [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) avec **100 adresses e-mail** « MX Plan »
-- L'hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) avec **1000 adresses e-mail** « MX Plan ». Cette offre est déclinée en 4 « sous-offres ».
-- L'hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) avec **200 adresses e-mail** « MX Plan ». Cette offre est utilisée par les développeurs d'applications.
+- L'hébergement [Perso](/links/web/hosting-personal-offer) avec **10 adresses e-mail** « MX Plan »
+- L'hébergement [Pro](/links/web/hosting-professional-offer) avec **100 adresses e-mail** « MX Plan »
+- L'hébergement [Performance](/links/web/hosting-performance-offer) avec **1000 adresses e-mail** « MX Plan ». Cette offre est déclinée en 4 « sous-offres ».
+- L'hébergement [Cloud Web](/links/web/hosting-cloud-web-offer) avec **200 adresses e-mail** « MX Plan ». Cette offre est utilisée par les développeurs d'applications.
 
 Une fois votre offre d'hébergement choisie, si vous n'êtes pas encore client OVHcloud, cliquez sur le bouton `Commander`{.action} présent sur les pages commerciales ci-dessus. Suivez les étapes de la commande **sans demander le transfert de votre nom de domaine**.
 
-Vous pouvez aussi effectuer la commande depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois connecté, cliquez sur la partie `Web Cloud`{.action}, cliquez ensuite sur le bouton `Commander`{.action}, dans la partie supérieure gauche, puis sur `Hébergement`{.action}. Poursuivez les étapes de la commande **sans demander le transfert de votre nom de domaine**.
+Vous pouvez aussi effectuer la commande depuis votre [espace client OVHcloud](/links/manager). Une fois connecté, cliquez sur la partie `Web Cloud`{.action}, cliquez ensuite sur le bouton `Commander`{.action}, dans la partie supérieure gauche, puis sur `Hébergement`{.action}. Poursuivez les étapes de la commande **sans demander le transfert de votre nom de domaine**.
 
 Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un e-mail sera envoyé sur votre adresse e-mail de contact. Celui-ci contiendra les identifiants d'accès à l'espace de stockage FTP (File Transfert Protocol) de votre hébergement Web.
 
 > [!primary]
 >
-> OVHcloud propose d'autres offres e-mail en plus de l'offre « MX Plan ». Vous pouvez, par exemple, combiner à des adresses e-mail « MX Plan » des adresses [« Email-Pro »](https://www.ovhcloud.com/fr/emails/email-pro/) et/ou des comptes [« Exchange »](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
+> OVHcloud propose d'autres offres e-mail en plus de l'offre « MX Plan ». Vous pouvez, par exemple, combiner à des adresses e-mail « MX Plan » des adresses [« Email-Pro »](/links/web/email-pro) et/ou des comptes [« Exchange »](/links/web/emails-hosted-exchange).
 >
 
 ### Etape 2 : créer et préconfigurer une zone DNS pour votre nom de domaine chez OVHcloud <a name="step2"></a>
 
-Lorsque votre hébergement est créé, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis créez une zone DNS pour votre nom de domaine **sans les « www »**. Vous pouvez vous aider de notre guide sur la [création d'une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+Lorsque votre hébergement est créé, connectez-vous à votre [espace client OVHcloud](/links/manager) puis créez une zone DNS pour votre nom de domaine **sans les « www »**. Vous pouvez vous aider de notre guide sur la [création d'une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Une fois la zone DNS créée, accédez à sa gestion à l'aide de notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ». Si elles ne sont pas présentes, renseignez les entrées suivantes :
 
@@ -182,7 +182,7 @@ Nous vous conseillons de ne pas utiliser le `Type de serveur`{.action} **POP** d
 
 Pour la partie `Compte de destination`{.action}, renseignez uniquement l'adresse e-mail OVHcloud concernée et son mot de passe associé. Ceci en laissant le `Type de serveur`{.action} en `Hosted by OVH (Autodetect)`{.action}.
 
-Une fois la migration terminée, connectez-vous à votre adresse e-mail OVHcloud à l'aide du [webmail OVHcloud](https://www.ovhcloud.com/fr/mail/) pour vérifier que tous vos e-mails sont bien présents dans le nouveau compte.
+Une fois la migration terminée, connectez-vous à votre adresse e-mail OVHcloud à l'aide du [webmail OVHcloud](/links/web/email) pour vérifier que tous vos e-mails sont bien présents dans le nouveau compte.
 
 Réitérez l'opération pour l'ensemble de vos comptes e-mail.
 
@@ -243,8 +243,8 @@ Une fois le transfert de vos données et services terminé, il ne vous reste plu
 
 [Gestion d’une base de données depuis un hébergement mutualisé](/pages/web_cloud/web_hosting/sql_create_database).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

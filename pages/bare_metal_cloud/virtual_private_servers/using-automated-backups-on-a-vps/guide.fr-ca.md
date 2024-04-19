@@ -20,7 +20,7 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 
 - Être connecté à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Un [VPS OVHcloud](https://www.ovhcloud.com/fr-ca/vps/options/) déjà configuré
-- Un accès administrateur (root) en SSH à votre VPS (facultatif)
+- Un accès administrateur (sudo) en SSH à votre VPS (facultatif)
 
 ## En pratique
 

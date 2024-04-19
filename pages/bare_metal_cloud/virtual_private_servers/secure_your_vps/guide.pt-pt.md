@@ -1,8 +1,7 @@
 ---
 title: "Proteger um VPS"
 excerpt: "Descubra os elementos de base que lhe permitem proteger o seu VPS"
-updated: 2024-01-23
-
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -16,15 +15,15 @@ Quando encomendar o seu VPS, pode escolher uma distribuição ou um sistema oper
 **Este manual fornece-lhe alguns conselhos gerais para proteger um servidor baseado em GNU/Linux.**
 
 > [!warning]
->A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
+> A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
 >
->Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer apoio técnico a este respeito.
+> Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer apoio técnico a este respeito.
 >
 
 ## Requisitos
 
 - Um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- Ter acesso de administrador (root) ao seu servidor através de SSH
+- Ter acesso de administrador (sudo) ao seu servidor através de SSH
 
 ## Instruções
 
@@ -99,67 +98,36 @@ sudo systemctl restart sshd
 
 Isto deveria ser suficiente para aplicar as alterações. Caso contrário, reinicie o VPS (`~$ sudo reboot`).
 
+**Para Ubuntu 23.04 e versões posteriores**
+
+Para as últimas versões de Ubuntu, a configuração SSH é agora gerida no ficheiro `ssh.socket`.
+
+Para atualizar a porta SSH, edite a linha `Listenstream` no ficheiro de configuração com um editor de texto à sua escolha (`nano` utilizado neste exemplo):
+
+```consola
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Guarde as alterações e execute os seguintes comandos:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Se tiver ativado a firewall do sistema operativo, certifique-se de que a nova porta está autorizada nas regras da firewall.
+
 Lembre-se de que deve indicar a nova porta a cada pedido de ligação SSH ao seu servidor, por exemplo:
 
 ```bash
 ssh username@IPv4_of_your_VPS -p NewPortNumber
 ```
 
-### Alterar a palavra-passe do utilizador root
-
-Recomenda-se vivamente que altere a palavra-passe do utilizador root para não a deixar ao valor predefinido num novo sistema. Para mais informações consulte [este guia](/pages/bare_metal_cloud/virtual_private_servers/root_password).
-
 ### Criar um utilizador com direitos restritos <a name="createuser"></a>
 
-Em geral, as tarefas que não exijam privilégios root devem ser realizadas através de um utilizador standard. Para criar um novo utilizador, execute o seguinte comando:
-
-```bash
-sudo adduser NomeUtilizadorPersonalizado
-```
-
-De seguida, indique as informações pedidas pelo sistema: palavra-passe, nome, etc.
-
-O novo utilizador será autorizado a ligar-se em SSH. Ao estabelecer uma ligação, utilize as informações de identificação especificadas.
-
-Uma vez ligado, introduza o seguinte comando para efetuar operações que requerem autorizações root:
-
-```bash
-su root
-```
-
-Introduza a password quando for convidado e a ligação ativa será migrada para o utilizador root.
-
-### Desativar o acesso ao servidor através do utilizador root
-
-O utilizador root é criado por predefinição nos sistemas GNU/Linux. Trata-se do nível de acesso mais elevado a um sistema operativo.<br>
-É desaconselhado e mesmo perigoso deixar o seu VPS acessível apenas em root, pois esta conta pode efetuar operações irreversíveis prejudiciais.
-
-Recomenda-se a desativação do acesso direto dos utilizadores root através do protocolo SSH. Não se esqueça de criar outro utilizador antes de seguir os passos abaixo.
-
-Deve modificar o ficheiro de configuração SSH da mesma forma que o descrito anteriormente:
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Consulte a secção seguinte:
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Substitua **yes** por **no** na linha `PermitRootLogin`.
-
-Para que esta modificação seja tida em conta, deve reiniciar o serviço SSH:
-
-```bash
-sudo systemctl restart sshd
-```
-
-De seguida, as ligações ao seu servidor através do utilizador root (`ssh root@IPv4_servidor`) serão rejeitadas.
+Em geral, as tarefas que não exijam privilégios root devem ser realizadas através de um utilizador standard. Para mais informações consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Configurar firewall interna (iptables)
 
@@ -207,7 +175,7 @@ Os parâmetros `[DEFAULT]` são globais e aplicar-se-ão a todos os serviços de
 Tomemos como exemplo estas linhas em `[DEFAULT]`:
 
 ```console
-bantime  = 10m
+bantime = 10m
 maxretry = 5
 enabled = false
 ```
@@ -267,6 +235,9 @@ Na [página do produto](https://www.ovhcloud.com/pt/vps/options/) e nos respetiv
 [VPS: primeira utilização](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
 
 [Configurar a firewall em Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
+
+[Configurar a firewall em Linux com iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Configurar a Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 

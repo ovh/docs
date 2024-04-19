@@ -1,6 +1,6 @@
 ---
-title: Software-RAID
-excerpt: 'Erfahren Sie hier, wie Sie das RAID Array Ihres Servers rekonfigurieren'
+title: Software-RAID konfigurieren und neu erstellen
+excerpt: "Erfahren Sie hier, wie Sie den Status des Software-RAID Ihres Servers überprüfen und im Fall eines Hardware-Austausches rekonfigurieren"
 updated: 2022-10-11
 ---
 
@@ -19,7 +19,7 @@ Das RAID Level für OVHcloud Server-Installationen ist standardmäßig RAID-1, w
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) mit Software-RAID-Konfiguration.
-- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH.
+- Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH.
 
 ## In der praktischen Anwendung
 
@@ -180,15 +180,15 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Beachten Sie, dass, falls Sie mit dem Account `root` eingeloggt sind, folgende Nachricht erhalten können, wenn Sie versuchen, die Partition zu unmounten (in unserem Fall wird die Partition md4 in /home gemountet):
+> Beachten Sie, dass, falls Sie mit dem Account `root` eingeloggt sind, folgende Nachricht erhalten können, wenn Sie versuchen, die Partition zu unmounten (in unserem Fall wird die Partition md4 in `/home` gemountet):
 >
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
+> <pre class="highlight language-console"><code class="language-console">umount: /home: target is busy</code></pre>
 >
-> Wechseln Sie in diesem Fall zu einem anderen Root-Benutzer (in diesem Fall `debian`) und verwenden Sie folgenden Befehl:
+> Wechseln Sie in diesem Fall zu einem anderen sudo-Benutzer (in diesem Fall `debian`) und verwenden Sie folgenden Befehl:
 >
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
+> <pre class="highlight language-console"><code class="language-console">debian@ns000000:/$ sudo umount /dev/md4</code></pre>
 >
-> Wenn Sie noch keine anderen User-Accounts haben, erstellen Sie einen.
+> Wenn Sie noch keine anderen User-Accounts haben, [erstellen Sie einen](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 Als Ergebnis erhalten Sie:
 
@@ -241,14 +241,14 @@ Um zu überprüfen, ob die Partition entfernt wurde, verwenden Sie folgenden Bef
 ```sh
 cat /proc/mdstat 
 
-Persönlichkeiten: [raid1] [Linear] [Multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
-md2: active raid1 sda2[1] sdb2[0]
-      931954688 Super-Blöcke 1.2 [2/2] [UU]
-      bitmap: 4/7 Seiten [16KB], 65536KB chunk
+Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
+md2 : active raid1 sda2[1] sdb2[0]
+      931954688 blocks super 1.2 [2/2] [UU]
+      bitmap: 4/7 pages [16KB], 65536KB chunk
 
-md4: active raid1 sdb4[1]
-      1020767232 Super-Blöcke 1.2 [2/1] [_U]
-      bitmap: 0/8 Seiten [0KB], 65536KB chunk
+md4 : active raid1 sdb4[1]
+      1020767232 blocks super 1.2 [2/1] [_U]
+      bitmap: 0/8 pages [0KB], 65536KB chunk
       
 unused devices: <none>
 ```
@@ -316,7 +316,7 @@ Der Befehl muss im folgenden Format sein: `sfdisk -d /dev/healthydisk | sfdisk /
 
 Jetzt können Sie das RAID Array neu konfigurieren. Der nachstehende Code zeigt, wie das Layout der Partition `/dev/md4` mit der zuvor kopierten Partitionstabelle von “sda” wiederhergestellt werden kann:
 
-``sh
+```sh
 mdadm --add /dev/md4 /dev/sda4
 cat /proc/mdstat
 
@@ -330,7 +330,6 @@ md4 : active raid1 sda4[0] sdb4[1]
       bitmap: 0/8 pages [0KB], 65536KB chunk
 
 unused devices: <none>
-
 ```
 
 Überprüfen Sie die Details des RAID mit folgendem Befehl:

@@ -11,7 +11,7 @@ Enable AMD SME on your Ubuntu 20.04 server, and spawn a KVM/QEMU virtual machine
 ## Requirements
 
 - A dedicated server with an AMD Naples/Rome Epyc CPU
-- Administrative (root) access to the server via SSH
+- Administrative (sudo) access to the server via SSH
 - Ubuntu 20.04 installed
 
 ## Instructions

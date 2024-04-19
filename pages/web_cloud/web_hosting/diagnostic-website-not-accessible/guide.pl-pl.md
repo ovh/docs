@@ -31,7 +31,7 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 ## Wymagania początkowe
 
 - Zarządzanie serwerami i [strefą DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns) domeny
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
 
 ## W praktyce
@@ -58,7 +58,7 @@ Po odnowieniu domeny Twoja strona będzie dostępna w ciągu 48 godzin.
 
 ### Etap 2: sprawdź serwery DNS
 
-Aby sprawdzić poprawność Twoich [serwerów DNS](/pages/web_cloud/domains/dns_server_general_information), w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
+Aby sprawdzić poprawność Twoich [serwerów DNS](/pages/web_cloud/domains/dns_server_general_information), w [Panelu klienta OVHcloud](/links/manager) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
 
 #### Scenariusz 1: brak anomalii na serwerach DNS
 
@@ -88,7 +88,7 @@ Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 
 > [!warning]
 >
-> W takiej sytuacji przed przystąpieniem do jakichkolwiek czynności, należy skontaktować się z dostawcą usług hostowanych w strefie DNS, webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+> W takiej sytuacji przed przystąpieniem do jakichkolwiek czynności, należy skontaktować się z dostawcą usług hostowanych w strefie DNS, webmasterem lub [partnerami OVHcloud](/links/partner).
 >
 > Możliwe, że serwery DNS używane przez Twoją domenę działają i że problem z dostępem do Twojej strony jest związany z brakującym lub nieprawidłowym wpisem w [strefie DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns). Każda zmiana serwerów DNS może spowodować niedostępność Twoich kont e-mail lub innych aplikacji online.
 >
@@ -117,7 +117,7 @@ Na tym etapie odnajdziesz adres IP Twojego hostingu, po czym dodaj go do Twojej 
 
 Jeśli Twoja strona nie jest hostowana w infrastrukturze OVHcloud lub jest zarządzana przez innego dostawcę, skontaktuj się z odpowiednią pomocą techniczną.
 
-Jeśli Twoja strona jest zainstalowana w jednej z naszych [ofert Web Cloud](https://www.ovhcloud.com/pl/web-hosting/), kliknij zakładkę `Hosting`{.action}, a następnie wybierz odpowiednią ofertę.
+Jeśli Twoja strona jest zainstalowana w jednej z naszych [ofert Web Cloud](/links/web/hosting), kliknij zakładkę `Hosting`{.action}, a następnie wybierz odpowiednią ofertę.
 
 W zakładce `Informacje ogólne`{.action} skopiuj adres IPV4 i/lub IPV6 Twojej domeny.
 
@@ -137,8 +137,8 @@ Twoja strona będzie dostępna w ciągu maksymalnie 24 godzin.
 
 [Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

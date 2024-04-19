@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser le Yealink CP860'
 excerpt: 'Découvrez comment utiliser votre téléphone Yealink CP860'
-hidden: true
+flag: hidden
 updated: 2018-07-03
 ---
 

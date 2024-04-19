@@ -1,7 +1,7 @@
 ---
 title: "Liste des adresses IP des clusters et hebergements web"
 excerpt: "Découvrez l'ensemble des adresses IP disponibles avec nos hébergements web"
-updated: 2023-11-21
+updated: 2024-02-28
 ---
 
 ## Objectif
@@ -17,17 +17,17 @@ Retrouvez dans ce guide toutes les adresses IP des hébergements web OVHcloud. C
 > [!primary]
 >
 > Les adresses IP de l'option CDN sont "Anycast".
-> C'est à dire qu'elles n'ont pas besoin de géolocalisation ([Plus d'informations ici](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)).
+> C'est à dire qu'elles n'ont pas besoin de géolocalisation ([Plus d'informations ici](/links/web/hosting-options-cdn)).
 > 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
 
 ## En pratique
 
-Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement Web concerné. Ensuite, accédez à l'onglet `FTP - SSH`{.action}.
+Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement Web concerné. Ensuite, accédez à l'onglet `FTP - SSH`{.action}.
 Vous pouvez vérifier le numéro de cluster de l'hébergement Web sur cette page sous **Serveur FTP**.
 
 ### Cluster 002
@@ -667,7 +667,7 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |France|FR|145.239.37.162|2001:41d0:301::30|
 |Irlande|IE|178.32.77.113|2001:41d0:301:3::30|
 |Portugal|PT|5.135.68.91|2001:41d0:301:2::30|
-|Royaume-Uni|91.134.177.228|2001:41d0:301:12::30|
+|Royaume-Uni|UK|91.134.177.228|2001:41d0:301:12::30|
 |Italie|IT|94.23.73.16|2001:41d0:301:11::30|
 |Espagne|ES|149.202.105.228|2001:41d0:301:4::30|
 |Pologne|PL|188.165.21.8|2001:41d0:301:5::30|
@@ -699,7 +699,7 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |France|FR|146.59.209.152|2001:41d0:301::31|
 |Irlande|IE|188.165.5.107|2001:41d0:301:3::31|
 |Portugal|PT|51.178.229.47|2001:41d0:301:2::31|
-|Royaume-Uni|178.32.52.177|2001:41d0:301:12::31|
+|Royaume-Uni|UK|178.32.52.177|2001:41d0:301:12::31|
 |Italie|IT|94.23.66.84|2001:41d0:301:11::31|
 |Espagne|ES|51.255.26.63|2001:41d0:301:4::31|
 |Pologne|PL|87.98.236.253|2001:41d0:301:5::31|
@@ -742,6 +742,38 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 51.161.94.36
 ```
 
+### Cluster 100
+
+Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
+
+|Pays|Code Pays|IPv4|IPv6|
+|---|---|----|---|
+|France|FR|5.135.23.164|2001:41d0:301::100|
+|Irlande|IE|188.165.0.143|2001:41d0:301:3::100|
+|Portugal|PT|94.23.76.76|2001:41d0:301:2::100|
+|Royaume-Uni|UK|87.98.254.187|2001:41d0:301:12::100|
+|Italie|IT|178.32.143.165|2001:41d0:301:11::100|
+|Espagne|ES|178.33.119.211|2001:41d0:301:4::100|
+|Pologne|PL|94.23.89.116|2001:41d0:301:5::100|
+|République tchèque|CZ|94.23.172.226|2001:41d0:301:6::100|
+|Pays-Bas|NL|94.23.146.244|2001:41d0:301:7::100|
+|Finlande|FI|188.165.137.37|2001:41d0:301:8::100|
+|Lituanie|LT|188.165.26.152|2001:41d0:301:9::100|
+|Allemagne|DE|87.98.243.177|2001:41d0:301:1::100|
+|Belgique|BE|91.121.217.51|2001:41d0:301:10::100|
+
+Si le **Shared CDN** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+```bash
+46.105.204.100
+```
+
+Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
+
+```bash
+54.36.142.130
+```
+
 ## Aller plus loin
 
 [Mettre en place un multisite sur votre hébergement Web](/pages/web_cloud/web_hosting/multisites_configure_multisite)
@@ -750,8 +782,8 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 
 [Optimiser les performances de votre site Web](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

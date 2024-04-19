@@ -31,7 +31,7 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 ## Requisitos
 
 - Tener la gestión de los servidores y de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) del dominio.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
@@ -58,7 +58,7 @@ Una vez completada la renovación del plan, su sitio web estará disponible en u
 
 ### Etapa 2: comprobar los servidores DNS
 
-Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information), haga clic en [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione el dominio en la parte del `Dominios`{.action}.
+Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information), haga clic en [área de cliente de OVHcloud](/links/manager) y seleccione el dominio en la parte del `Dominios`{.action}.
 
 #### Situación 1: no hay anomalías en los servidores DNS
 
@@ -88,7 +88,7 @@ Su sitio web estará disponible en un plazo máximo de 48 horas.
 
 > [!warning]
 >
-> En ese caso, contacte con el proveedor de hosting de su zona DNS, su webmaster o los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/) antes de realizar cualquier operación.
+> En ese caso, contacte con el proveedor de hosting de su zona DNS, su webmaster o los [partners de OVHcloud](/links/partner) antes de realizar cualquier operación.
 >
 > Es posible que los servidores DNS utilizados por el dominio sean funcionales y que el problema de acceso al sitio web esté relacionado con un registro que no se encuentra o que no está en la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns). Cualquier modificación de los servidores DNS en esta situación puede hacer que sus direcciones de correo u otras aplicaciones en línea no estén disponibles.
 >
@@ -117,7 +117,7 @@ En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a s
 
 Si su sitio web no está alojado en la infraestructura de OVHcloud o si está gestionado por otro proveedor, contacte con el servicio de soporte correspondiente.
 
-Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](https://www.ovhcloud.com/es/web-hosting/), abra la pestaña `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](/links/web/hosting), abra la pestaña `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 En la pestaña `Información general`{.action}, copie la dirección IPV4 y/o IPV6 de su dominio.
 
@@ -137,8 +137,8 @@ Su sitio web estará disponible en un plazo máximo de 24 horas.
 
 [Resolver los errores más frecuentes asociados a los módulos en 1 clic](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: Migrating an infrastructure to a new vDC
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
-updated: 2024-01-12
+updated: 2024-02-19
 ---
 
 <style>
@@ -177,7 +177,7 @@ You can add a destination vDC following those steps:
 <a name="addhostandds"></a>
 #### Step 2.2 Add new hosts and Datastores
 
-In the OVHcloud Control Panel, you will see your new vDC attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Hosted Private Cloud billing](/pages/account_and_service_management/managing_billing_payments_and_services/information_about_dedicated_cloud_billing#add-resources-billed-monthly) guide.
+In the OVHcloud Control Panel, you will see your new vDC attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Hosted Private Cloud billing](/pages/account_and_service_management/managing_billing_payments_and_services/facturation_private_cloud#monthly-resources) guide.
 <a name="converttoglobal"></a>
 #### Step 2.3 Convert a datastore to a global datastore
 
@@ -540,6 +540,9 @@ Here is how to proceed:
 > [!warning]
 >
 > This API call is to be executed on the old vDC (source vDC).
+> 
+> Warning! Between 7:00 pm and 8:00 am, the robot does not execute. It waits until 8:00 am to work. 
+> This period is defined in the operation of the robot.
 
 > [!api]
 >

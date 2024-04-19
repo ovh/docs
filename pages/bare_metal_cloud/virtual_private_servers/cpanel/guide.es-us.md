@@ -1,14 +1,14 @@
 ---
 title: "Desplegar cPanel en un VPS"
 excerpt: "Descubra cómo crear instancias de un VPS con la aplicación cPanel preinstalada"
-updated: 2024-01-12
+updated: 2024-01-31
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-## Objectivo
+## Objetivo
 
 cPanel es un panel de control que facilita la gestión de los alojamientos web. Hace que las tareas complejas sean más accesibles, incluso para los nuevos usuarios. Ofrece una amplia gama de funcionalidades como, por ejemplo, para la gestión: 
 
@@ -22,12 +22,21 @@ Gracias a una interfaz gráfica que permite automatizar los parámetros, el aloj
 
 **Descubra cómo desplegar cPanel con las aplicaciones preinstaladas en un VPS.**
 
+**Esta guía explica cómo desplegar cPanel con aplicaciones preinstaladas en un VPS.**
+
 ## Requisitos
 
-- Tener contratado un servicio [VPS reciente](https://www.ovhcloud.com/es/vps/){.external} (ofertas Value, **Essential**, **Comfort** o **Elite**).
-- Acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener contratado un servicio [VPS reciente](https://www.ovhcloud.com/es/vps/){.external} con un [OS compatible con cPanel](https://www.ovhcloud.com/es/vps/os/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
+
+Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) a través de un [OS compatible con cPanel](https://www.ovhcloud.com/es/vps/os/).
+
+> [!warning]
+>
+> Si reinstala un VPS, todos los datos almacenados en el VPS se perderán.
+> 
 
 Para instalar su servidor cPanel, contrate un VPS con la distribución cPanel.
 
@@ -41,13 +50,6 @@ Cuando su VPS esté listo, recibirá un correo electrónico con los datos de acc
  |    Puede conectarse a cpanel desde https://<ip>:2087/<session_parameters>
 ```
 
-Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) a través de un [OS compatible con cPanel](https://www.ovhcloud.com/es-es/vps/os/).
-
-> [!warning]
->
-> Si reinstala el VPS, toda la información almacenada puede perderse.
->
-
 ### Primera conexión
 
 Una vez que haya recibido el mensaje de correo electrónico con el enlace único, haga clic en este enlace para realizar la configuración inicial. Si el enlace ya ha expirado, conéctese al servidor por [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) y ejecute el comando `sudo whmlogin` para generar un nuevo enlace.
@@ -58,7 +60,7 @@ La URL generada por el comando `sudo whmlogin` le permite conectarse sin credenc
 
 Lea y acepte las condiciones de uso de cPanel.
 
-![horizon](images/license_validation.png){.thumbnail}
+![cPanel](images/license_validation.png){.thumbnail}
 
 #### Etapa 2: Completar los campos obligatorios
 
@@ -110,4 +112,4 @@ Asimismo, le recomendamos que consulte nuestra guía para [proteger un VPS](/pag
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

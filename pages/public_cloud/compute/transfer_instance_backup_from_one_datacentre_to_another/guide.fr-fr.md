@@ -74,6 +74,8 @@ Enfin, exécutez cette commande pour télécharger la sauvegarde sur l'hôte de 
 $ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
+<a name="transfer"></a>
+
 ### Transférer la sauvegarde vers une autre région OpenStack
 
 Pour démarrer le processus de transfert, vous devez d'abord charger de nouvelles variables d'environnement.

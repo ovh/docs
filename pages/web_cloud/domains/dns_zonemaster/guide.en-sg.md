@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Using Zonemaster
-updated: 2023-06-06
+updated: 2024-03-08
 ---
 
 > [!warning]
@@ -30,7 +30,7 @@ The Zonemaster tool allows you to check a DNS configuration in place on a domain
 
 To check the current configuration of a domain name, enter your domain name, then click `Run`{.action}.
 
-![Screenshot of the Zonemaster input form. The domain "mydomain.ovh" has been entered and is now ready to be tested.](images/run-domain-test.png){.thumbnail}
+![Screenshot of the Zonemaster input form. The domain "domain.tld" has been entered and is now ready to be tested.](images/run-domain-test.png){.thumbnail}
 
 To check a DNS configuration that has been prepared but not yet applied to the domain name concerned, select the `Options`{.action} box, and then enter the following information:
 
@@ -39,17 +39,17 @@ To check a DNS configuration that has been prepared but not yet applied to the d
 
 You can also force checks on a specific IP protocol by using the `Disable IPv6` and `Disable IPv4` checkboxes.
 
-> **Example**:<br><br> You have the domain name mydomain.ovh, which currently uses the DNS servers "dns19.ovh.net" and "ns19.ovh.net".
+> **Example**:<br><br> You have the domain name domain.tld, which currently uses the DNS servers "dnsXX.ovh.net" and "nsXX.ovh.net".
 >
-> You have configured a DNS zone for this domain name on the DNS servers "mydns.test.ovh" and "mydns2.test.ovh".<br>
-> Before you change the DNS servers, you can perform an advanced search by enabling `Options`{.action}, then entering "mydns.test.ovh" and "mydns2.test.ovh" into the `Nameservers` fields.<br>
-> Zonemaster will perform a test as if you were using the servers "mydns.test.ovh" and "mydns2.test.ovh" on mydomain.ovh.<br>
-> ![Screenshot of the advanced options of Zonemaster form. The two nameservers "mydns.test.ovh" and "mydns2.test.ovh" have been entered in the Nameservers section of the form.](images/run-domain-test-nameservers-option.png){.thumbnail}
+> You have configured a DNS zone for this domain name on the DNS servers "dns1.test.tld" and "dns2.test.tld".<br>
+> Before you change the DNS servers, you can perform an advanced search by enabling `Options`{.action}, then entering "dns1.test.tld" and "dns2.test.tld" into the `Nameservers` fields.<br>
+> Zonemaster will perform a test as if you were using the servers "dns1.test.tld" and "dns2.test.tld" on domain.tld.<br>
+> ![Screenshot of the advanced options of Zonemaster form. The two nameservers "dns1.test.tld" and "dns2.test.tld" have been entered in the Nameservers section of the form.](images/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > When you enter a domain name and click on `Fetch NS from parent zone`{.action} and `Fetch DS from parent zone`{.action}, the DNS servers associated with the domain name will appear, along with the DS record information (DNSSEC) if it has been configured.
-> ![Screenshot of the advanced options of Zonemaster form. The "Fetch NS from parent zone" button is highlighted and the nameservers of the domain "mydomain.ovh" are prefilled in the Nameservers section of the form.](images/fetch-ns-from-parent-zone.png){.thumbnail}
+> ![Screenshot of the advanced options of Zonemaster form. The "Fetch NS from parent zone" button is highlighted and the nameservers of the domain "domain.tld" are prefilled in the Nameservers section of the form.](images/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Result
 
@@ -62,7 +62,7 @@ Once the form has been validated, the results are grouped by type of test. Tests
 
 For each test, it is possible to get more details, for instance, to understand why a test failed.
 
-![Screenshot of the result page of Zonemaster for the domain "mydomain.ovh". The "Address" section is expanded.](images/domain-analysis.png){.thumbnail}
+![Screenshot of the result page of Zonemaster for the domain "domain.tld". The "Address" section is expanded.](images/domain-analysis.png){.thumbnail}
 
 ### Useful information
 

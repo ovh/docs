@@ -1,12 +1,12 @@
 ---
-title: MongoDB - Getting started
-excerpt: Get started with MongoDB through the OVHcloud Control Panel
-updated: 2024-01-29
+title: MongoDB Discovery - Getting started
+excerpt: Get started with MongoDB Free Tier through the OVHcloud Control Panel
+updated: 2024-02-05
 ---
 
 ## Objective
 
-**This guide explains how to get started with MongoDB on OVHcloud for free.**
+**This guide will take you through the first steps of creating and connecting to a forever-free MongoDB Discovery managed cloud database service.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6Tl7kNNsONY?si=Q6WIVd-9qdBJfyGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -23,9 +23,7 @@ Click the `Create a database instance`{.action} button (click `Create a service`
 
 ### Select the database type
 
-Select **MongoDB**. You can choose to change the version to install from the drop-down menu.
-
-![Choose MongoDB](images/select-mongodb.png){.thumbnail}
+Between all database engines, select **MongoDB**. You can choose to change the version to install from the drop-down menu.
 
 ### Review the order
 
@@ -43,8 +41,6 @@ The **Discovery** plan is selected by default along with the following options:
 
 Review the service settings and click on the `Order`{.action} button.
 
-![Confirm order](images/review-order.png){.thumbnail}
-
 Within a few minutes your **Discovery** MongoDB service will be deployed.
 
 ### Connectivity settings
@@ -61,7 +57,7 @@ If **MongoDB Compass** is not your preferred method, read these other guides to 
 - [Connect with Python](/pages/public_cloud/public_cloud_databases/mongodb_05_connect_python)
 - [Connect with PHP](/pages/public_cloud/public_cloud_databases/mongodb_04_connect_php)
 
-Other integration examples can be found on the following repository: <https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodbs>.
+Other integration examples can be found on the following repository: <https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb>.
 
 ## We want your feedback!
 

@@ -1,7 +1,7 @@
 ---
 title: Attivare e utilizzare il Rescue mode su un VPS
 excerpt: Scopri come utilizzare il Rescue mode OVHcloud per risolvere i problemi del VPS ed effettuare verifiche di sistema
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2024-01-23
 
 La modalità di ripristino (*rescue*) è uno strumento fornito da OVHcloud per avviare il tuo VPS in un sistema operativo temporaneo. È quindi possibile accedere al sistema per eseguire attività di diagnostica e risolvere diversi problemi, ad esempio:
 
-- Reimposta la password dell'utente per recuperare l'accesso
+- [Reimposta la password dell'utente per recuperare l'accesso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnosi di problemi di rete
 - Riparare un sistema operativo difettoso
 - Riparare un firewall software mal configurato
@@ -41,10 +41,6 @@ In caso di problemi al sistema, eseguire controlli in Rescue mode permette di de
 ## Procedura
 
 ### Attivazione della modalità Rescue
-
-> [!warning]
-> Ricordiamo che se nello Spazio Cliente è stata impostata una chiave SSH di default, non riceverai una password di root al riavvio del server in modalità Rescue. In questo caso, disattiva la chiave SSH di default prima di riavviare il server in modalità Rescue. Per farlo, consulta questa [sezione](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) della nostra guida sull'utilizzo delle chiavi SSH.
->
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/it/&ovhSubsidiary=it), clicca sulla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server privati virtuali`{.action}.
 
@@ -108,21 +104,17 @@ In modalità Rescue, `sda` è il disco in modalità Rescue e `sda1` è la partiz
 
 In questo esempio, il disco principale del VPS è `sdb` e la partizione di sistema è `sdb1` (indicata dalla dimensione).
 
-Montare questa partizione con i seguenti comandi:
+Monta questa partizione con questo comando:
 
 ```bash
-mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/
 ```
 
-```bash
-mount /dev/sdb1 /mnt/sdb1
-```
-
-A questo punto i tuoi file sono accessibili dal punto di mount `/mnt/sdb1`:
+A questo punto i tuoi file sono accessibili dal punto di mount `/mnt`:
 
 
 ```bash
-cd /mnt/sdb1
+cd /mnt
 ```
 
 ```bash
@@ -138,7 +130,7 @@ bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  op
 Tuttavia, prima di poter modificare questa partizione, è necessario aprirla per l'accesso in scrittura, operazione che può essere eseguita con il comando:
 
 ```bash
-chroot /mnt/sdb1/
+chroot /mnt
 ```
 
 A questo punto è possibile apportare modifiche al sistema, ad esempio [reimpostare le password utente e le chiavi SSH](#gofurther).
@@ -159,6 +151,8 @@ In caso di errore durante il riavvio di un VPS, segui questi step:
 ## Per saperne di più
 
 [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Recupera l'accesso al server in caso di perdita della password utente](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Sostituire una coppia di chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 

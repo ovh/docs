@@ -128,8 +128,6 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 > Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition. Vous pouvez commander des comptes additionnels grâce au bouton `Commander des comptes`{.action}.
 >
 
-![emailpro](images/emailpro-06.png){.thumbnail}
-
 ### Étape 5 : utiliser vos adresses e-mail
 
 Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external} et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.

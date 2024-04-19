@@ -1,7 +1,7 @@
 ---
 title: "Direcciones IP de los clusters y alojamientos web"
 excerpt: "Descubra todas las direcciones IP disponibles con nuestros alojamientos web"
-updated: 2023-11-21
+updated: 2024-02-28
 ---
 
 > [!primary]
@@ -21,17 +21,17 @@ Esta guía recoge todas las direcciones IP de los alojamientos web de OVHcloud. 
 > [!primary]
 >
 > Las direcciones IP de la opción CDN son «Anycast».
-> Esto quiere decir que no necesitan geolocalización ([Más información aquí](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/)).
+> Esto quiere decir que no necesitan geolocalización ([Más información aquí](/links/web/hosting-options-cdn)).
 > 
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Tener contratado un [plan de alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener contratado un [plan de alojamiento web](/links/web/hosting){.external}.
 
 ## Procedimiento
 
-Para conocer el cluster de alojamiento web en el que se encuentra su servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `FTP - SSH`{.action}.
+Para conocer el cluster de alojamiento web en el que se encuentra su servicio, conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `FTP - SSH`{.action}.
 Puede comprobar el número de cluster del alojamiento web en esta página bajo **Servidor FTP**.
 
 ### Cluster 002
@@ -746,6 +746,38 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 51.161.94.36
 ```
 
+### Cluster 100
+
+A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código del país|IPv4|IPv6|
+|---|---|----|---|
+|Francia|FR|5.135.23.164|2001:41d0:301::100|
+|Irlanda|IE|188.165.0.143|2001:41d0:301:3::100|
+|Portugal|PT|94.23.76.76|2001:41d0:301:2::100|
+|Reino Unido|UK|87.98.254.187|2001:41d0:301:12::100|
+|Italia|IT|178.32.143.165|2001:41d0:301:11::100|
+|España|ES|178.33.119.211|2001:41d0:301:4::100|
+|Polonia|PL|94.23.89.116|2001:41d0:301:5::100|
+|República Checa|CZ|94.23.172.226|2001:41d0:301:6::100|
+|Países Bajos|NL|94.23.146.244|2001:41d0:301:7::100|
+|Finlandia|FI|188.165.137.37|2001:41d0:301:8::100|
+|Lituania|LT|188.165.26.152|2001:41d0:301:9::100|
+|Alemania|DE|87.98.243.177|2001:41d0:301:1::100|
+|Bélgica|BE|91.121.217.51|2001:41d0:301:10::100|
+
+Si el servicio **Shared CDN** está activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+46.105.204.100
+```
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+54.36.142.130
+```
+
 ## Más información
 
 [Crear un multisitio en un alojamiento web](/pages/web_cloud/web_hosting/multisites_configure_multisite)
@@ -754,8 +786,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 [Optimizar el rendimiento de su sitio web](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

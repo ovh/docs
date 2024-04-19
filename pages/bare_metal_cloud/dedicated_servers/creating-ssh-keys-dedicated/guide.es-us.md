@@ -1,6 +1,6 @@
 ---
 title: Crear y utilizar llaves SSH
-excerpt: Cómo crear una llave SSH para realizar una conexión segura a un servidor
+excerpt: Cómo crear un par de llaves SSH en su puesto de trabajo y cómo utilizarlas para establecer una conexión segura con su servidor
 updated: 2023-11-22
 ---
 
@@ -21,7 +21,7 @@ Este suele ser el método de conexión más seguro y práctico.
 - Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
 - Instalar previamente una aplicación cliente SSH (línea de comandos o GUI)
-- Tener acceso de administrador (root) por SSH
+- Tener acceso de administrador (sudo) por SSH
 
 > [!primary]
 > Esta guía no se aplica a las instalaciones estándar de Windows Server**, ya que se basan en el Protocolo de escritorio remoto (RDP) para las conexiones. Sin embargo, las conexiones SSH se utilizan para el modo de rescate de OVHcloud. Para más información, consulte la sección [Más información](#gofurther) de esta guía.
@@ -37,6 +37,8 @@ No olvide consultar nuestras guías Primeros pasos: <a name="getstarted"></a>
 
 Para más información, consulte la guía de presentación del [protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
+### Crear un par de claves SSH
+
 Las siguientes instrucciones cubren dos métodos de uso de llaves SSH:
 
 - [Creación de un par de claves Open SSH y conexión a un servidor desde el cliente SSH en línea de comandos](#openssh)
@@ -46,7 +48,7 @@ Puede utilizar ambos métodos simultáneamente, pero tenga en cuenta que `PuTTY`
 
 Esto significa que una clave privada creada con el cliente SSH en línea de comandos deberá ser [convertida al formato `PuTTY` y viceversa](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt){.external}.
 
-### Creación de un par de claves SSH en línea de comandos <a name="openssh"></a>
+#### Creación de un par de claves SSH en línea de comandos <a name="openssh"></a>
 
 Abra la aplicación en línea de comandos (`Terminal`) desde un ordenador Mac o un dispositivo con un sistema operativo Linux.
 
@@ -159,7 +161,7 @@ Copie la cadena de clave completa en el Portapapeles para [añadirla al servidor
 > Cuando trabaje en línea de comandos en Windows, haga clic derecho para pegar el contenido del Portapapeles en la ventana de la línea de comandos. Para copiar* una cadena de la ventana de la línea de comandos, resáltela con el ratón y pulse la tecla « Intro ». También puede encontrar estas funciones haciendo clic derecho en la barra de menú.
 >
 
-### Crear un par de claves SSH con PuTTY <a name="useputty"></a>
+#### Crear un par de claves SSH con PuTTY <a name="useputty"></a>
 
 [PuTTY](https://putty.org/){.external} es un cliente SSH de código abierto con interfaz gráfica de usuario, disponible para Windows y otros sistemas operativos. Proporciona un programa complementario para crear llaves SSH: `PuTTY Key Generator` (`PuTTYgen`).
 
@@ -218,7 +220,7 @@ ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Por ejemplo:
 
 ```bash
-ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@203.0.113.100
 ```
 
 Se le pedirá la contraseña del usuario. Recibirá un mensaje como el que se muestra a continuación.
@@ -268,7 +270,7 @@ ssh user@IP_ADDRESS
 Por ejemplo:
     
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.100
 ```
 
 #### Añadir claves públicas adicionales al servidor
@@ -304,10 +306,10 @@ ssh -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Por ejemplo:
 
 ```bash
-ssh -i ~/.ssh/myVPS_rsa ubuntu@169.254.10.250
+ssh -i ~/.ssh/myVPS_rsa ubuntu@203.0.113.100
 ```
 
-Como se ha explicado en secciones anteriores, las mismas instrucciones funcionarán en un cliente Windows. Sustituya únicamente `~/` por la ruta de acceso de la carpeta de usuario Windows, por defecto `C:\Users\WindowsUsername\`. Por ejemplo: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@169.254.10.250`.
+Como se ha explicado en secciones anteriores, las mismas instrucciones funcionarán en un cliente Windows. Sustituya únicamente `~/` por la ruta de acceso de la carpeta de usuario Windows, por defecto `C:\Users\WindowsUsername\`. Por ejemplo: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@203.0.113.100`.
 
 #### Uso del archivo config
 
@@ -319,6 +321,9 @@ Ejemplo de contenido de carpeta `.ssh`:
 
 ```bash
 ls ~/.ssh/
+```
+
+```console
 config    id_rsa    id_rsa.pub    known_hosts     known_hosts.old
 ```
 
@@ -329,7 +334,7 @@ Abra el archivo y agregue las siguientes líneas en la parte superior:
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 ```
 
@@ -343,11 +348,11 @@ En el ejemplo anterior sólo se especificaron la IP del servidor y el archivo de
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 
 Host dedicated_server
-    HostName 169.254.10.251
+    HostName 203.0.113.101
     User rocky
     Port 49160
     IdentityFile ~/.ssh/myserver_rsa

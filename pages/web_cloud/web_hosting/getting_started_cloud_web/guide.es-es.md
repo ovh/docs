@@ -16,10 +16,10 @@ El plan de hosting Cloud Web de OVHcloud es el resultado de combinar veinte año
 
 ## Requisitos
 
-- Tener contratado un plan de hosting [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/) de OVHcloud.
+- Tener contratado un plan de hosting [Cloud Web](/links/web/hosting-cloud-web-offer) de OVHcloud.
 - Haber recibido el email de confirmación de la instalación del hosting Cloud Web.
-- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/) con el que poder acceder a su sitio web.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Disponer de un [dominio](/links/web/domains) con el que poder acceder a su sitio web.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -31,7 +31,7 @@ Con el fin de adaptarse lo mejor posible a cada proyecto, el plan de hosting Clo
 
 - **Establezca los requisitos técnicos para la instalación:** Es posible que el proyecto que quiera desplegar tenga requerimientos técnicos concretos. Asegúrese de conocerlos previamente.
 
-- **Asegúrese de que su proyecto es técnicamente compatible con el hosting  Cloud Web:** ¿Necesita un motor de ejecución o un SQL concretos? Si todavía no lo ha hecho, asegúrese de que están disponibles con el [hosting Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/).
+- **Asegúrese de que su proyecto es técnicamente compatible con el hosting  Cloud Web:** ¿Necesita un motor de ejecución o un SQL concretos? Si todavía no lo ha hecho, asegúrese de que están disponibles con el [hosting Cloud Web](/links/web/hosting-cloud-web-offer).
 
 Una vez que haya evaluado las distintas posibilidades y haya delimitado el proyecto con precisión, puede empezar a publicarlo en internet.
 
@@ -46,11 +46,11 @@ Los lenguajes disponibles actualmente son:
 - Python
 - Ruby
 
-Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
+Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
 
 Al instalar el alojamiento, se crea automáticamente un motor, que aparece en la tabla como **Opción por defecto**. Para cambiar de motor, haga clic en el botón `...`{.action} situado al final de la línea correspondiente y seleccione `Editar`{.action}. 
 
-Según el plan [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/) del que disponga, también puede añadir motores de ejecución adicionales haciendo clic en el botón `Acciones`{.action} y seleccionando `Añadir un motor de ejecución`{.action}. Tenga en cuenta que el número máximo de motores de ejecución depende del plan Cloud Web que tenga contratado. Por lo tanto, asegúrese de disponer del motor o motores de ejecución necesarios para su proyecto antes de continuar.
+Según el plan [Cloud Web](/links/web/hosting-cloud-web-offer) del que disponga, también puede añadir motores de ejecución adicionales haciendo clic en el botón `Acciones`{.action} y seleccionando `Añadir un motor de ejecución`{.action}. Tenga en cuenta que el número máximo de motores de ejecución depende del plan Cloud Web que tenga contratado. Por lo tanto, asegúrese de disponer del motor o motores de ejecución necesarios para su proyecto antes de continuar.
 
 ![Cloud Web](images/edit-runtime.png){.thumbnail}
 
@@ -115,7 +115,7 @@ Existen dos formas de instalar un proyecto. Si quiere instalar más de uno, debe
 
 #### 5.1. Utilizar los módulos en un clic
 
-Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVHcloud ofrece cuatro módulos en un clic, que puede consultar en la página [Crear un sitio web con los CMS más populares](https://www.ovhcloud.com/es-es/web-hosting/uc-website/){.external}.
+Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVHcloud ofrece cuatro módulos en un clic, que puede consultar en la página [Crear un sitio web con los CMS más populares](/links/web/hosting-website){.external}.
 
 Si elige esta opción, una vez seleccionado el alojamiento Cloud Web en el área de cliente de OVHcloud, abra la pestaña `Módulos en un clic`{.action} y seleccione `Añadir un módulo`{.action}. A continuación podrá comenzar la instalación en modo estándar (no personalizable) o avanzado (que permite personalizar determinados elementos).
 
@@ -148,8 +148,8 @@ Existen varios registros DNS específicos de OVHcloud. A continuación explicamo
 
 |Registro DNS|Servicio asociado|Dónde consultarlo|
 |---|---|---|
-|A|El sitio web|En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el hosting Cloud Web. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece en el apartado **IPv4**.|
-|MX|El correo electrónico |En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece en el apartado **Registros MX**.|
+|A|El sitio web|En el [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el hosting Cloud Web. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece en el apartado **IPv4**.|
+|MX|El correo electrónico |En el [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece en el apartado **Registros MX**.|
 
 #### 6.2. Comprobar y/o modificar los registros DNS
 
@@ -159,14 +159,14 @@ Una vez que conozca los registros DNS específicos de su hosting Cloud Web y su 
 >
 > - Si el dominio no utiliza la configuración DNS de OVHcloud, deberá realizar los cambios necesarios desde el panel que le ofrezca el proveedor que gestione dicha configuración.
 > 
-> - Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración DNS. Para ello, en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
+> - Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración DNS. Para ello, en el [área de cliente de OVHcloud](/links/manager){.external}, seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
 >
 
 A continuación se indica dónde realizar las operaciones correspondientes:
 
 |Configuración DNS utilizada|Dónde realizar las operaciones|
 |---|---|
-|OVHcloud|En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action} y revise la información, modificándola cuando sea necesario. Si lo necesita, puede consultar nuestra guía [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.|
+|OVHcloud|En el [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action} y revise la información, modificándola cuando sea necesario. Si lo necesita, puede consultar nuestra guía [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.|
 |Otros|Utilice el panel que le ofrezca el proveedor que gestione la configuración DNS de su dominio. Contacte con este último si tiene dificultades para realizar las operaciones.|
 
 Una vez que haya editado la configuración DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos. Si ha añadido varios dominios a su hosting Cloud Web como multisitio, deberá realizar las dos operaciones anteriores para cada uno de ellos. 
@@ -193,8 +193,8 @@ Para más información sobre el uso de Roundcube, consulte nuestra [Guía de uso
 
 [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

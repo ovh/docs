@@ -1,6 +1,6 @@
 ---
-title: Configurare un RAID software
-excerpt: Come configurare il software RAID di un server
+title: Configurazione e ricostruzione del RAID software
+excerpt: "Come verificare lo stato del RAID software del tuo server e ricostruirlo dopo la sostituzione del disco"
 updated: 2023-08-21
 ---
 
@@ -120,7 +120,7 @@ Questo comando mostra che `/dev/md2` è composto da 888,8 GB e `/dev/md4` contie
 Per visualizzare lo stato del disco utilizza il comando “mount”:
 
 ```sh
-# mount
+mount
 
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
@@ -186,13 +186,13 @@ umount /dev/md4
 > [!warning]
 > Se sei connesso come utente `root`, puoi ottenere questo messaggio quando cerchi di smontare la partizione (nel nostro caso, la partizione md4 è montata in /home):
 >
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
+> <pre class="highlight language-console"><code class="language-console">umount: /home: target is busy</code></pre>
 >
 > In questo caso, dovrai disconnetterti come utente root e connetterti come utente locale (nel nostro caso, `debian`) utilizzando il comando:
 >
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
+> <pre class="highlight language-console"><code class="language-console">debian@ns000000:/$ sudo umount /dev/md4</code></pre>
 >
-> Se non disponi di un utente locale, è necessario crearne uno.
+> Se non disponi di un utente locale, [è necessario crearne un](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 Il risultato restituito sarà di questo tipo:
 

@@ -12,13 +12,13 @@ updated: 2023-04-24
 
 ### Wie konfiguriere ich mein Webhosting?
 
-Um Ihr Webhosting zu konfigurieren, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Im Bereich `Hosting-Pakete` können Sie unter anderem Ihre SSL Zertifikate, die PHP Version, die CDN Option, die Multisite, die Datenbanken usw. verwalten.
+Um Ihr Webhosting zu konfigurieren, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Im Bereich `Hosting-Pakete` können Sie unter anderem Ihre SSL Zertifikate, die PHP Version, die CDN Option, die Multisite, die Datenbanken usw. verwalten.
 
 **Tipps und Tricks**: Um Ihnen bei der Konfiguration Ihres Hostings zu helfen, lesen Sie die Rubrik **Erste Schritte**, die Sie [hier](/products/web-cloud-hosting) finden.
 
 ### Wie verwalte ich meine Passwörter?
 
-Um Ihre Passwörter zu verwalten, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Sollten Sie Ihre Kennung oder Ihr Passwort vergessen haben, klicken Sie unter dem Login-Fenster auf `Login oder Passwort vergessen`{.action}. Ihnen wird eine E-Mail mit der Vorgehensweise zum Zurücksetzen gesendet.
+Um Ihre Passwörter zu verwalten, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Sollten Sie Ihre Kennung oder Ihr Passwort vergessen haben, klicken Sie unter dem Login-Fenster auf `Login oder Passwort vergessen`{.action}. Ihnen wird eine E-Mail mit der Vorgehensweise zum Zurücksetzen gesendet.
 
 Sie können auch die Anleitung [Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account_and_service_management/account_information/manage-ovh-password) lesen.
 
@@ -30,9 +30,9 @@ Wenn Sie in Ihrem Kundencenter eingeloggt sind:
 
 ### Wie kann ich meine Website online stellen? 
 
-Um Ihre Website online zu stellen benötigen Sie einen [Domainnamen](https://www.ovhcloud.com/de/domains/), der der Webadresse entspricht, über die Ihre Website erreichbar ist (Beispiel: *meinedomain.com*). Sie benötigen auch ein [Hosting](https://www.ovhcloud.com/de/web-hosting/), auf dem Ihre Website installiert werden kann.
+Um Ihre Website online zu stellen benötigen Sie einen [Domainnamen](/links/web/domains), der der Webadresse entspricht, über die Ihre Website erreichbar ist (Beispiel: *meinedomain.com*). Sie benötigen auch ein [Hosting](/links/web/hosting), auf dem Ihre Website installiert werden kann.
 
-Folgen Sie den für die Erstellung Ihrer Website notwendigen Schritten auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/uc-website/) und folgen Sie dann den Anweisungen in der Anleitung "[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
+Folgen Sie den für die Erstellung Ihrer Website notwendigen Schritten auf [dieser Seite](/links/web/hosting-website) und folgen Sie dann den Anweisungen in der Anleitung "[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 
 **Tipps und Tricks**: Um Ihnen bei der Erstellung Ihrer Website zu helfen, bietet Ihnen OVHcloud die Installation einer Software zur Erstellung von Webseiten (WordPress, PrestaShop, Joomla! und Drupal) auf Ihrem Hosting. Die Funktion [1 Klick-Module](/pages/web_cloud/web_hosting/cms_install_1_click_modules) bietet Ihnen diese Möglichkeit.
 
@@ -46,7 +46,7 @@ Lesen Sie die Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pag
 
 ## Wie kann ich das Hosting-Angebot ändern?
 
-Um das Webhosting-Angebot zu bestellen, das am besten zu Ihren Bedürfnissen passt, können Sie unsere Angebote auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/) vergleichen.
+Um das Webhosting-Angebot zu bestellen, das am besten zu Ihren Bedürfnissen passt, können Sie unsere Angebote auf [dieser Seite](/links/web/hosting) vergleichen.
 
 Wenn Sie Ihre Wahl getroffen haben, folgen Sie den Anweisungen in unserer Anleitung [Webhosting Angebot upgraden](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer).
 
@@ -67,7 +67,7 @@ Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hosting
 
 Um den RAM eines Web Cloud Databases Dienstes zu erhöhen, wenn Ihr Web Cloud Databases Dienst an ein **Performance** Webhosting gebunden ist, müssen Sie ihn zuerst von Ihrem **Performance** Hosting trennen, um den Dienst hochzustufen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, um den Web Cloud Databases Dienst vom Webhosting **Performance** abzutrennen. Klicken Sie auf den Tab `Web Cloud`{.action} und wählen Sie Ihr Hosting unter `Hosting-Pakete`{.action} in der linken Spalte aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, um den Web Cloud Databases Dienst vom Webhosting **Performance** abzutrennen. Klicken Sie auf den Tab `Web Cloud`{.action} und wählen Sie Ihr Hosting unter `Hosting-Pakete`{.action} in der linken Spalte aus.
 
 Auf der neuen Seite `Allgemeine Informationen`{.action} finden Sie mittig den Bereich `Konfiguration`{.action}. Klicken Sie rechts neben `Web Cloud Databases`{.action} auf `...`{.action} und dann auf `Abtrennen`{.action}. Wählen Sie die kürzeste Verlängerungsdauer aus und fahren Sie fort bis zur Bestätigung der Bestellung.
 
@@ -84,7 +84,7 @@ Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines 
 
 ### Was tun, wenn mein Webhosting nicht korrekt funktioniert? 
 
-Es kann verschiedene Gründe geben, warum Ihre Website nicht wie erwartet funktioniert. Um die Ursache zu ermitteln, stellen Sie zunächst sicher, dass **keiner Ihrer Dienste verlängert werden muss**, indem Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen.
+Es kann verschiedene Gründe geben, warum Ihre Website nicht wie erwartet funktioniert. Um die Ursache zu ermitteln, stellen Sie zunächst sicher, dass **keiner Ihrer Dienste verlängert werden muss**, indem Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) einloggen.
 
 Überprüfen Sie dann die [aktuellen Vorgänge auf unserer Infrastruktur](https://www.status-ovhcloud.com/). Wenn alle Ihre Dienste aktiv sind und von keinerlei Störungen oder Wartungsarbeiten betroffen sind, empfehlen wir Ihnen eine genauere Diagnose.
 
@@ -108,7 +108,7 @@ Zwei Szenarien sind möglich. Entweder wurde Ihre Website mit dieser Adresse ers
 
 > [!warning]
 >
-> Die Löschung einer Datenbank wie eines 1-Klick-Moduls ist endgültig. Sie führt auch zur **Löschung der Backups** der betreffenden Daten. Bevor Sie Ihre Website auf dem OVHcloud-Hosting löschen, **stellen Sie sicher, dass Sie sie auf die gleiche Weise neu erstellen können**. Wenn Sie sich nicht sicher sind, welche Änderungen notwendig sind, kontaktieren Sie bitte Ihren Webmaster oder einen unserer [Partner](https://partner.ovhcloud.com/de/directory/).
+> Die Löschung einer Datenbank wie eines 1-Klick-Moduls ist endgültig. Sie führt auch zur **Löschung der Backups** der betreffenden Daten. Bevor Sie Ihre Website auf dem OVHcloud-Hosting löschen, **stellen Sie sicher, dass Sie sie auf die gleiche Weise neu erstellen können**. Wenn Sie sich nicht sicher sind, welche Änderungen notwendig sind, kontaktieren Sie bitte Ihren Webmaster oder einen unserer [Partner](/links/partner).
 >
 
 Im ersten Fall löschen Sie Ihr Modul nach Durchführung aller notwendigen Backups aus dem Bereich `Hosting-Pakete` in Ihrem OVHcloud Kundencenter:
@@ -144,7 +144,7 @@ Diese Anomalie ist Folge einer fehlerhaften Konfiguration auf der Ebene der [DNS
 
 Der häufigste Fall ist: Domainname und Hosting wurden getrennt bestellt. Sie sind also nicht über die DNS-Zone untereinander verbunden.
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Domainnamen`{.action}. Klicken Sie auf die betreffende Domain und dann auf den Tab `DNS-Server`{.action}.
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Domainnamen`{.action}. Klicken Sie auf die betreffende Domain und dann auf den Tab `DNS-Server`{.action}.
 
 Notieren Sie sich die angegebenen DNS-Server und gehen Sie dann auf den Tab `DNS-Zone`{.action}.
 
@@ -154,7 +154,7 @@ Vergleichen Sie die **Ziele** der `NS`-Einträge im Tab `DNS-Zone`{.action} mit 
 
 - Wenn die Elemente nicht identisch sind, aber die im Tab desselben Namens aufgeführten `DNS-Server` in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, setzen Sie die Anweisungen in [dieser Anleitung](/pages/web_cloud/domains/dns_server_general_information#dns-server-zurucksetzen) fort.
 
-- Wenn die Elemente nicht identisch sind und die `DNS-Server` im Tab desselben Namens nicht in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der [Seite der OVHcloud-Partner](https://partner.ovhcloud.com/de/directory/).
+- Wenn die Elemente nicht identisch sind und die `DNS-Server` im Tab desselben Namens nicht in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](/links/partner) auf der [Seite der OVHcloud-Partner](/links/partner).
 
 ### Was tun, wenn meine Website einen Fehler “Die Seite leitet sich nicht richtig um“ zeigt?
 
@@ -173,7 +173,7 @@ Stellen Sie Ihre Website in ihrem vorherigen Zustand wieder her:
 
 - Wenn Ihre Website eine Datenbank enthält, lesen Sie unsere Anleitung [Backup Ihrer Datenbank wiederherstellen](/pages/web_cloud/web_hosting/sql_importing_mysql_database#backup-uber-das-kundencenter-wiederherstellen).
 
-Wenn Sie über die Wiederherstellungen den Zugang zu Ihrer Webseite nicht wiederherstellen können, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der [Seite der OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie über die Wiederherstellungen den Zugang zu Ihrer Webseite nicht wiederherstellen können, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](/links/partner) auf der [Seite der OVHcloud Partner](/links/partner).
 
 ### Was soll ich tun, wenn meine Website einen Fehler “503 error Backend fetch failed (Varnish cache)“ anzeigt?
 
@@ -181,7 +181,7 @@ Wenn Sie über die Wiederherstellungen den Zugang zu Ihrer Webseite nicht wieder
 
 Wenn Sie die [CDN Option](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) Ihres Hostings aktiviert haben, deaktivieren Sie den *Wartungsmodus* für Ihr WordPress oder PrestaShop.
 
-Wenn Sie diese Option nicht aktiviert oder den *Wartungsmodus* verwendet haben, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der Seite der [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie diese Option nicht aktiviert oder den *Wartungsmodus* verwendet haben, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](/links/partner) auf der Seite der [OVHcloud Partner](/links/partner).
 
 ### Was soll ich tun, wenn meine Website einen Fehler “Your request has been blocked“ zeigt?
 
@@ -189,7 +189,7 @@ Wenn Sie diese Option nicht aktiviert oder den *Wartungsmodus* verwendet haben, 
 
 Diese Nachricht zeigt an, dass die Art der HTTP-Anfrage, die Sie auf Ihrer Seite durchführen möchten, für eine begrenzte Zeit verboten ist. Überprüfen Sie in diesem Fall die [Logs Ihrer Website](/pages/web_cloud/web_hosting/logs_and_statistics), um herauszufinden, welche Anfragen zu dieser Sperrung geführt haben.
 
-Kontaktieren Sie Ihren Webmaster oder einen [unserer Partner](https://partner.ovhcloud.com/de/directory/), um Ihnen dabei zu helfen.
+Kontaktieren Sie Ihren Webmaster oder einen [unserer Partner](/links/partner), um Ihnen dabei zu helfen.
 
 ### Was soll ich tun, wenn meine Website einen Fehler “Your IP has been banned“ zeigt?
 
@@ -199,7 +199,7 @@ Diese Nachricht zeigt an, dass die IP-Adresse, die Sie verwenden, um sich mit Ih
 
 In diesem Fall überprüfen Sie [die Logs](/pages/web_cloud/web_hosting/logs_and_statistics) Ihrer Website, um festzustellen, welche Anfragen zu dieser Sperrung geführt haben.<br>
 Überprüfen Sie außerdem, dass Ihr Rechner nicht mit einem Virus infiziert ist.<br>
-Kontaktieren Sie einen [unserer Partner](https://partner.ovhcloud.com/de/directory/), um den Code Ihrer Website zu überprüfen.
+Kontaktieren Sie einen [unserer Partner](/links/partner), um den Code Ihrer Website zu überprüfen.
 
 ### Ich habe eine Domain mit Sonderzeichen bestellt, die in meinem Kundencenter auf ungewöhnliche Weise geschrieben wird. Was soll ich tun?
 
@@ -216,6 +216,6 @@ Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in I
 
 [FAQ - Webhosting E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/) einsehen.
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote](/links/support) einsehen.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

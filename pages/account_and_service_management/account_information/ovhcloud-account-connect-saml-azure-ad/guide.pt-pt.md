@@ -1,7 +1,7 @@
 ---
 title: Ativar as ligações Azure SSO com a sua conta OVHcloud
 excerpt: "Saiba como associar o seu Entra ID (anteriormente Azure Active Directory) à sua conta OVHcloud utilizando SAML 2.0"
-updated: 2023-04-05
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -227,6 +227,8 @@ Complete o campo **Group Atribute Name** com o valor de **Claim name** dos grupo
 
 Preencha os metadados XML da sua aplicação Entra ID a partir do ficheiro anteriormente registado.
 
+É possível conservar os utilizadores locais marcando a caixa `Manter os utilizadores da OVHcloud ativos`.
+
 Clique no botão `Validar`{.action}.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
@@ -256,6 +258,8 @@ Preencha os campos e clique no botão `Validar`{.action}.
 O grupo criado deve constar da lista.
 
 ![Grupos de gestão de utilizadores Ovhcloud etapa 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
+
+Atenção: se conceder o privilégio `Nenhum`, será necessário atribuir permissões a este grupo através das [políticas IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 ### Ligação via SSO
 
@@ -290,5 +294,7 @@ Se o seu e-mail não aparecer abaixo de `Connected via SSO`, isto significa que 
 [Definição e gestão da palavra-passe da sua conta](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Proteger a sua conta OVHcloud com a dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[Como utilizar as políticas IAM a partir do seu Espaço Cliente](/pages/account_and_service_management/account_information/iam-policy-ui)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

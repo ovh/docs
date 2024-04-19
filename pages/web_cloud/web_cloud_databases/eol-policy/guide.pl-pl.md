@@ -33,7 +33,7 @@ Produkty objęte tą polityką wycofania z eksploatacji to:
 
 ### Definicje i wytyczne polityki wycofania z eksploatacji
 
-![tymelina](images/ovh.eol.policy.timeline.png)
+![tymelina](images/ovhcloud-eol-policy-for-managed-databases-timeline.png)
 
 EOL = End Of Life
 

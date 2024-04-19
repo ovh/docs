@@ -1,7 +1,7 @@
 ---
 title: Creare e connettersi a un’istanza Public Cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
-updated: 2024-01-08
+updated: 2024-04-03
 ---
 
 > [!primary]
@@ -135,7 +135,7 @@ Una volta piena, la chiave sarà pronta.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Puoi selezionare e copiare la chiave pubblica da questa finestra per salvarla sullo Spazio Cliente OVHcloud allo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud).
+Puoi selezionare e copiare la chiave pubblica da questa finestra (sotto la voce: "Public key for pasting into OpenSSH authorized_keys file") per salvarla sullo Spazio Cliente OVHcloud allo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud).
 
 Salva entrambe le chiavi su file e inserisci una passphrase nell’apposito campo. Poiché per accedere all’istanza Public Cloud dal tuo dispositivo di lavoro sarà necessaria solo la chiave privata corrispondente, in questa fase è necessario applicare adeguate misure di sicurezza. È necessario specificare la passphrase quando si accede all'istanza.
 
@@ -158,9 +158,23 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina “Istanze”, cliccando su`Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
+> [!success]
+>
+> È preferibile creare una rete privata prima di procedere alla creazione di un’istanza. Per maggiori informazioni sulla creazione di una rete privata, consulta la guida [Configurazione della vRack sul Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>
 
-![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina "Istanze", cliccando su `Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
+
+![instance select](images/instance-creation-2024.png){.thumbnail}
+
+**Local Zone:**
+
+Le Local Zone sono un'estensione delle regioni che avvicinano i servizi OVHcloud a luoghi specifici, offrendo latenza ridotta e performance migliorate per le applicazioni. Sono strategicamente posizionate vicino alle zone a forte richiesta degli utenti. Il loro obiettivo principale è ridurre al minimo il tempo necessario al trasferimento dei dati tra utente e Cloud, per rendere i servizi più rapidi e più reattivi e per rispondere ai requisiti di residenza dei dati. Per maggiori informazioni sulle Local Zone, consulta i seguenti link: [Local Zone Compute](https://www.ovhcloud.com/it/public-cloud/local-zone-compute/) e [Local Zone Compute - Funzionalità, capacità e limiti](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+
+**Global Region:**
+
+Region supportate da uno o più datacenter gestiti da OVHcloud. Ogni Region è situata in una zona geografica diversa. Ogni Region fornisce una o più Availibility Zone, ad esempio GRA11, GRA7, BHS5, DE1, ecc.
 
 Per prima cosa, seleziona un modello di server in base alle tue esigenze. La procedura guidata fornisce una descrizione dei diversi casi d'uso e della disponibilità del modello di server. Puoi scegliere tra le seguenti categorie personalizzate:
 
@@ -216,7 +230,7 @@ La modalità Public è il modello di rete classico che permette alle istanze di 
 
 La modalità Private ti offre la possibilità di assegnare le tue istanze esclusivamente a una rete privata. Le istanze di questa modalità possono essere esposte alla rete pubblica solo con un servizio Gateway o Load Balancer con Floating IP. Per maggiori informazioni, consulta la nostra guida sulle [soluzioni di rete per il Public Cloud OVHcloud](/products/public-cloud-network).
 
-Una volta scelta la modalità, seleziona una rete privata a cui associare l'istanza o clicca su `Crea una nuova rete privata`{.action} per crearne una nuova.
+Una volta scelta la modalità, seleziona una rete privata a cui associare l'istanza o clicca su `Crea una nuova rete privata`{.action} per crearne una nuova. Selezionando quest'ultima opzione verrai reindirizzato alla pagina di creazione della rete privata e sarà necessario ripetere l’intero percorso d’ordine della tua istanza in un secondo momento. È quindi preferibile creare una rete privata prima della creazione dell’istanza.
 
 Una volta completata l’operazione, clicca su `Continua`{.action} per procedere allo step finale e scegliere il metodo di pagamento.
 

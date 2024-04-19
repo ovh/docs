@@ -1,7 +1,7 @@
 ---
 title: "Lista dos endereços IP dos clusters e alojamentos web"
 excerpt: "Saiba todos os endereços IP disponíveis nos nossos alojamentos web"
-updated: 2023-11-23
+updated: 2024-02-28
 ---
 
 > [!primary]
@@ -21,17 +21,17 @@ Neste guia encontrará todos os endereços IP dos alojamentos web OVHcloud. Assi
 > [!primary]
 >
 > Os endereços IP da opção CDN são Anycast.
-> Isso significa que não precisam de geolocalização ([Mais informações aqui](https://www.ovhcloud.com/pt/web-hosting/options/cdn/)).
+> Isso significa que não precisam de geolocalização ([Mais informações aqui](/links/web/hosting-options-cdn)).
 > 
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
-Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento web em causa. A seguir, aceda ao separador `FTP - SSH`{.action}.
+Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, aceda à [Área de Cliente OVHcloud](/links/manager) e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento web em causa. A seguir, aceda ao separador `FTP - SSH`{.action}.
 Pode verificar o número de cluster do alojamento Web nesta página em **Servidor FTP**.
 
 ### Cluster 002
@@ -746,6 +746,38 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 51.161.94.36
 ```
 
+### Cluster 100
+
+De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
+
+|País|Código de país|IPv4|IPv6|
+|---|---|----|---|
+|França|FR|5.135.23.164|2001:41d0:301::100|
+|Irlanda|IE|188.165.0.143|2001:41d0:301:3::100|
+|Portugal|PT|94.23.76.76|2001:41d0:301:2::100|
+|Reino Unido|UK|87.98.254.187|2001:41d0:301:12::100|
+|Itália|IT|178.32.143.165|2001:41d0:301:11::100|
+|Espanha|ES|178.33.119.211|2001:41d0:301:4::100|
+|Polónia|PL|94.23.89.116|2001:41d0:301:5::100|
+|República Checa|CZ|94.23.172.226|2001:41d0:301:6::100|
+|Países Baixos|NL|94.23.146.244|2001:41d0:301:7::100|
+|Finlândia|FI|188.165.137.37|2001:41d0:301:8::100|
+|Lituânia|LT|188.165.26.152|2001:41d0:301:9::100|
+|Alemanha|DE|87.98.243.177|2001:41d0:301:1::100|
+|Bélgica|BE|91.121.217.51|2001:41d0:301:10::100|
+
+Se o **Shared CDN** estiver ativado no seu alojamento, deve utilizar este endereço IP:
+
+```bash
+46.105.204.100
+```
+
+Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
+
+```bash
+54.36.142.130
+```
+
 ## Quer saber mais?
 
 [Implementar um multi-site no seu alojamento Web](/pages/web_cloud/web_hosting/multisites_configure_multisite)
@@ -754,8 +786,8 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 
 [Otimizar as performances do seu website](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

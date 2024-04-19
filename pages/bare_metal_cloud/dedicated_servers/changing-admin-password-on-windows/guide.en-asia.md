@@ -91,6 +91,9 @@ In this case, use the following command and then try to mount again.
 
 ```bash
 ntfsfix /dev/sda4
+```
+
+```bash
 mount /dev/sda4 /mnt
 ```
 

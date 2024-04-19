@@ -1,12 +1,12 @@
 ---
 title: Creating a private network with Gateway (EN)
 excerpt: Discover how to create a Private network with a Gateway
-updated: 2022-11-02
+updated: 2024-03-08
 ---
 
 ## Objective
 
-A Gateway offers a secure outbound connection method from your private network instances or the ability to use Floating IPs with your instance or Load Balancer for service exposition.
+A [Gateway](https://www.ovhcloud.com/pt/public-cloud/gateway/) offers a secure outbound connection method from your private network instances or the ability to use Floating IPs with your instance or Load Balancer for service exposition.
 
 This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), the [OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) or the [OVHcloud API](https://eu.api.ovh.com/).
 
@@ -99,23 +99,42 @@ Before proceeding, it is recommended that you consult these guides:
 
 - [Preparing an environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - [Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
- 
+
 > [!tabs]
 > **Step 1**
->> Once your environment is ready, type the following at the command line:
+>> Once your environment is ready, type the following at the command line to create a network and subnet:
 >>
->> ```
+>> ```console
 >> openstack network create my_network
 >>
 >> openstack subnet create my_subnet --subnet-range <my_private_ip_range/mask> --network my_network --no-dhcp
+>>```
+>**Step 2**
+>> List the quality of service available:
 >>
->> openstack router create my_router
+>> ```console
+>> openstack network qos policy list
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> | ID                                   | Name          | Shared | Default | Project                          |
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> | a5524eb5-944e-4106-b209-9478bbdcedab | large_router  | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> | c210f5b2-db59-4973-a25f-9131195b6bcf | medium_router | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> | ec0ee74d-a1f3-43f6-87aa-b0e69ef8ce45 | small_router  | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> ```
+>>
+>**Step 3**
+>>
+>>```console
+>> openstack router create my_router 
 >>
 >> openstack router add subnet my_router my_subnet
 >>
->> openstack router set --external-gateway Ext-Net my_router
+>> openstack router set --external-gateway Ext-Net --qos-policy QOS_ID_OF_YOUR_CHOICE my_router
 >> ```
->> 
+>> If you omit the `--qos-policy` parameter the "small" quality of service will be applied.
+
+
 
 ### Via the OVHcloud API
 
@@ -140,7 +159,7 @@ Before proceeding, it is recommended that you consult these guides:
 >> > [!primary]
 >> > This call identifies the project via the "description" field.
 >> >
-> **Step 2**<br>
+> **Step 2**
 >> **Create your private network and gateway** 
 >> 
 >> > [!api]
@@ -186,6 +205,8 @@ Before proceeding, it is recommended that you consult these guides:
 >>
 
 ## Go further
+
+Learn more about Gateway and its scenarios on our [dedicated page](https://www.ovhcloud.com/pt/public-cloud/gateway/).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

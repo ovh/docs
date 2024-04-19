@@ -64,7 +64,7 @@ Uma vez terminado o processo, a instância parece *Suspensa*.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-Para apresentar a snapshot, aceda ao menu à esquerda e clique em `Instance Backup`{.action}. Uma snapshot chamado *xxxxx-shelved* está agora visível:
+O snapshot estará então disponível na secção `Instance Backup`{.action} do menu `Storage` à esquerda do espaço Public Cloud. Um snapshot chamado *xxxxx-shelved* estará então visível:
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -236,6 +236,6 @@ Para reactivar a instância, utilize o seguinte comando:
 
 ## Quer saber mais?
 
-[Documentação OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
+[Documentação OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

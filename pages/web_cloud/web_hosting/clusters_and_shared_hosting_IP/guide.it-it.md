@@ -1,7 +1,7 @@
 ---
 title: "Lista degli indirizzi IP di cluster e hosting Web"
 excerpt: "Questa guida ti mostra comme tutti gli indirizzi IP disponibili con i nostri hosting Web"
-updated: 2023-11-21
+updated: 2024-02-28
 ---
 
 > [!primary]
@@ -21,17 +21,17 @@ In questa guida sono elencati tutti gli indirizzi IP degli hosting Web OVHcloud.
 > [!primary]
 >
 > Gli indirizzi IP dell’opzione CDN sono “Anycast”,
-> ovvero non hanno bisogno di geolocalizzazione ([Maggiori informazioni qui](https://www.ovhcloud.com/it/web-hosting/options/cdn/)).
+> ovvero non hanno bisogno di geolocalizzazione ([Maggiori informazioni qui](/links/web/hosting-options-cdn)).
 > 
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un piano di [hosting Web](/links/web/hosting){.external} attivo
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
-Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. Seleziona il tuo servizio nella sezione `Hosting`{.action}. In seguito accedi alla scheda `FTP - SSH`{.action}.
+Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Seleziona il tuo servizio nella sezione `Hosting`{.action}. In seguito accedi alla scheda `FTP - SSH`{.action}.
 Per verificare il numero di cluster dell'hosting Web, accedi alla pagina con il **Server FTP**.
 
 ### Cluster 002
@@ -746,6 +746,38 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 51.161.94.36
 ```
 
+### Cluster 100
+
+Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
+
+|Paese|Codice Paese|IPv4|IPv6|
+|---|---|----|---|
+|Francia|FR|5.135.23.164|2001:41d0:301::100|
+|Irlanda|IE|188.165.0.143|2001:41d0:301:3::100|
+|Portogallo|PT|94.23.76.76|2001:41d0:301:2::100|
+|Regno Unito|UK|87.98.254.187|2001:41d0:301:12::100|
+|Italia|IT|178.32.143.165|2001:41d0:301:11::100|
+|Spagna|ES|178.33.119.211|2001:41d0:301:4::100|
+|Polonia|PL|94.23.89.116|2001:41d0:301:5::100|
+|Repubblica Ceca|CZ|94.23.172.226|2001:41d0:301:6::100|
+|Paesi Bassi|NL|94.23.146.244|2001:41d0:301:7::100|
+|Finlandia|FI|188.165.137.37|2001:41d0:301:8::100|
+|Lituania|LT|188.165.26.152|2001:41d0:301:9::100|
+|Germania|DE|87.98.243.177|2001:41d0:301:1::100|
+|Belgio|BE|91.121.217.51|2001:41d0:301:10::100|
+
+Se il **Shared CDN** è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
+
+```bash
+46.105.204.100
+```
+
+Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
+
+```bash
+54.36.142.130
+```
+
 ## Per saperne di più
 
 [Installare un multisito sul tuo hosting Web](/pages/web_cloud/web_hosting/multisites_configure_multisite) 
@@ -754,8 +786,8 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 
 [Ottimizza le performance del tuo sito Web](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
  
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

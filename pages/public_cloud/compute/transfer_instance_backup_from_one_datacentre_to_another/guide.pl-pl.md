@@ -76,6 +76,8 @@ Na koniec, wprowadź następującą komendę, aby pobrać kopię zapasową na ho
 $ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
+<a name="transfer"></a>
+
 ### Przeniesienie kopii zapasowej do innego regionu OpenStack
 
 Aby uruchomić proces przeniesienia kopii zapasowej, najpierw pobierz nowe zmienne środowiskowe.

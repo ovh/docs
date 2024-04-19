@@ -1,7 +1,7 @@
 ---
 title: "Jak zastąpić parę kluczy SSH"
 excerpt: "Dowiedz się, jak przywrócić dostęp do serwera w przypadku utraty klucza prywatnego przez wygenerowanie nowej pary kluczy SSH"
-updated: 2023-01-19
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -30,25 +30,13 @@ Możesz jednak zalogować się do swojego serwera w [trybie Rescue OVHcloud](/pa
 
 ## W praktyce
 
-### Etap 1 - Wyłącz aktualny klucz SSH
+### Etap 1 - Tworzenie nowej pary kluczy
 
-Aby uzyskać dostęp do serwera w trybie Rescue, należy najpierw wyłączyć aktywny klucz SSH.
+Utwórz nową parę kluczy SSH na Twoim komputerze, opisaną w pierwszej części przewodnika ["Tworzenie kluczy SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Klucze SSH`{.action}. W razie potrzeby skorzystaj z naszego przewodnika ["Tworzenie kluczy SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
+<a name="step2"></a>
 
-Klucz publiczny przechowywany w Panelu klienta jest niepotrzebny bez odpowiedniego klucza prywatnego, możesz więc go usunąć. Kliknij przycisk `...`{.action} po prawej stronie klucza i wybierz `Usuń klucz`{.action}.
-
-![Usuń klucz](images/replace-lost-key-01.png){.thumbnail}
-
-W oknie, które się wyświetli kliknij `Zatwierdź`{.action}.
-
-### Etap 2 - Tworzenie nowej pary kluczy
-
-Utwórz nową parę kluczy SSH na Twoim komputerze, opisaną w pierwszej części przewodnika ["Tworzenie kluczy SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
-
-<a name="step3"></a>
-
-### Etap 3 - Dostęp do serwera w trybie Rescue i wymiana klucza
+### Etap 2 - Dostęp do serwera w trybie Rescue i wymiana klucza
 
 Postępuj zgodnie z instrukcjami zawartymi w przewodniku dotyczącym trybu Rescue, aby połączyć się z Twoim serwerem i zamontować partycje:
 
@@ -58,7 +46,7 @@ Postępuj zgodnie z instrukcjami zawartymi w przewodniku dotyczącym trybu Rescu
 Po uzyskaniu dostępu do plików otwórz odpowiedni plik "authorized_keys" w edytorze tekstu. Plik ten przechowuje klucze SSH i znajduje się w katalogu `home` użytkownika podłączonego do Twojego serwera. (Zastąp "USER_NAME" nazwą użytkownika.)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Skopiuj i wklej nowy klucz publiczny (utworzony w etapie 2) do pliku. Zawartość pliku powinna wyglądać jak następujący przykład:
@@ -72,7 +60,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 
 Ze względów bezpieczeństwa usuń z pliku ciąg klucza "old" (obecnie przestarzały). Zapisz i wyjdź z edytora.
 
-Przywróć tryb "normalny" i zrestartuj serwer w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W razie potrzeby zapoznaj się z przewodnikiem ["Aktywuj i użyj trybu Rescue"](#step3).
+Przywróć tryb "normalny" i zrestartuj serwer w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W razie potrzeby zapoznaj się z przewodnikiem ["Aktywuj i użyj trybu Rescue"](#step2).
 
 Teraz masz dostęp do serwera z nową parą kluczy SSH.
 

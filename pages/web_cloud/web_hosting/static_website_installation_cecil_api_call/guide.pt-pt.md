@@ -18,12 +18,12 @@ Este tutorial explica como utilizar o gerador de site [Cecil](https://cecil.app)
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Se tiver dificuldades em seguir os passos deste tutorial, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
+> Se tiver dificuldades em seguir os passos deste tutorial, recomendamos que recorra a um [prestador de serviços especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 >
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) com acesso SSH. Este acesso permite instalar, em linha de comandos, uma ou várias soluções alternativas às propostas por defeito nas nossas ofertas de alojamento web.
+- Ter um [serviço de alojamento web da OVHcloud](/links/web/hosting) com acesso SSH. Este acesso permite instalar, em linha de comandos, uma ou várias soluções alternativas às propostas por defeito nas nossas ofertas de alojamento web.
 - Estar familiarizado com a introdução em linha de comandos.
 - Ter instalado e configurado a aplicação **Cecil** no seu alojamento (consulte o nosso tutorial sobre [a instalação e a configuração do Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil)).
 
@@ -252,8 +252,8 @@ Este tutorial apresenta-lhe um exemplo de integração de dados dinâmicos recup
     - uma lista de [API públicas](https://github.com/public-api-lists/public-api-lists){.external}
 - As [encomendas Cecil](https://cecil.app/documentation/commands/){.external}.
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

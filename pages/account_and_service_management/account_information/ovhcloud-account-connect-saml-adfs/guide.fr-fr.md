@@ -1,7 +1,7 @@
 ---
 title: Activer les connexions Active Directory Federation Services (AD FS) SSO avec votre compte OVHcloud
 excerpt: "Découvrez comment associer votre service Active Directory Federation Services (AD FS) à votre compte OVHcloud via SAML 2.0"
-updated: 2022-10-13
+updated: 2024-03-05
 ---
 
 ## Objectif
@@ -139,6 +139,8 @@ Cliquez sur le bouton `Connexion SSO`{.action}.
 
 Renseignez les métadonnées XML de votre service AD FS. Le champ `Nom d'attribut de groupe` est facultatif dans ce cas. Cliquez sur `Confirmer`{.action}.
 
+Il est possible de conserver les utilisateurs locaux en cochant la case `Conserver les utilisateurs OVHcloud actifs`.
+
 ![OVHcloud connexion SSO étape 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
 Vous devez maintenant retrouver votre AD FS en tant que fournisseur d'identité, ainsi que les groupes par défaut.
@@ -200,6 +202,8 @@ Vous pourrez ensuite vérifier que le groupe est ajouté à votre compte OVHclou
 
 Lorsque vous vous connecterez par la suite avec l'utilisateur Active Directory « John Doe », votre compte OVHcloud reconnaîtra que l'utilisateur a le rôle « REGULAR », spécifié par son groupe.
 
+Attention, si vous donnez le privilège `Aucun`, il sera nécessaire d'attribuer des droits à ce groupe via les [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
+
 Vous pourrez ensuite vous déconnecter de votre compte et vous reconnecter avec votre AD FS en tant que fournisseur d'identité.
 
 ### Connexion via SSO
@@ -225,5 +229,7 @@ Vous êtes maintenant connecté avec le même identifiant client, mais via votre
 [Définition et gestion du mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[Créer des politiques d'accès IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

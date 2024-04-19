@@ -20,12 +20,12 @@ Es posible que aparezca en su navegador de internet la página de error **Sitio 
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/)
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Tener un [plan de hosting](/links/web/hosting)
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Disponer también de la gestión de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) a la que esté asociado el dominio.
 
 ## Procedimiento
@@ -40,7 +40,7 @@ A continuación se explica cómo corregir el error `Sitio no instalado` en ambos
 
 ### Etapa 1 - Compruebe la declaración de su dominio o subdominio en su alojamiento web <a name="check-multisites"></a>
 
-En su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Web Cloud`{.action} de la parte superior de la página y, en la columna izquierda, haga clic en `Alojamientos`{.action}.
+En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action} de la parte superior de la página y, en la columna izquierda, haga clic en `Alojamientos`{.action}.
 
 Seleccione el alojamiento web correspondiente en la lista y abra la pestaña de `Multisitio`{.action}.
 
@@ -65,7 +65,7 @@ Este paso consiste en comprobar que el dominio o subdominio apuntan hacia la dir
 
 #### 2\.1 Identificar la dirección IP de su alojamiento web de OVHcloud
 
-Para conocer la dirección IP de su alojamiento web, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action} de la parte superior de la página. En la columna izquierda, haga clic en la pestaña `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Para conocer la dirección IP de su alojamiento web, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action} de la parte superior de la página. En la columna izquierda, haga clic en la pestaña `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 La dirección `IPv4` se encuentra en el recuadro `Información general`{.action}.
 
@@ -84,7 +84,7 @@ A continuación, compruebe que la dirección IP del alojamiento web aparece en l
 > Si modifica directamente los **servidores DNS** asociados a su dominio, este plazo puede llegar hasta **48 horas** como máximo.
 >
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action} de la parte superior de la página. Acceda a la sección `Dominios`{.action} de la columna izquierda, seleccione su dominio y acceda a la pestaña `Zona DNS`{.action}.
+Para ello, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action} de la parte superior de la página. Acceda a la sección `Dominios`{.action} de la columna izquierda, seleccione su dominio y acceda a la pestaña `Zona DNS`{.action}.
 
 Aparecerá una tabla con distintos registros DNS.
 
@@ -92,7 +92,7 @@ Aparecerá una tabla con distintos registros DNS.
 |---|---|
 |En la zona DNS activa, su dominio o subdominio apunta a la dirección IP de su alojamiento web con un registro de tipo A (para una IPv4) o AAAA (para una IPv6).<br><br>![zonaDNS_IP2](images/dashboard-entry-a.png){.thumbnail}|Esto indica que la configuración de su dominio es correcta.<br><br> Espere el tiempo de propagación DNS si el cambio es reciente.<br><br> No olvide reiniciar sus dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador. La razón es que la antigua configuración del dominio puede almacenarse en caché, lo que puede ralentizar la visualización de la actualización.|
 |La zona DNS activa no tiene registros de tipo A o AAAA que vinculen el dominio o subdominio a la dirección IP de su alojamiento web. O bien, el registro existente apunta a otra dirección IP.|Agregue el nuevo registro de tipo A o AAAA o corrija el registro existente siguiendo [esta guía](/pages/web_cloud/domains/dns_zone_edit).|
-|Su dominio no aparece en la sección `Dominios`{.action} del área de cliente de OVHcloud.<br><br>O bien, la pestaña `Zona DNS`{.action} de su nombre de dominio se muestra de la siguiente manera:<br><br>![zone-without-domain-top-of-the-page](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Esto significa que su nombre de dominio no se gestiona desde el área de cliente de OVHcloud.<br><br><br>Determine su "registro" a través de nuestra herramienta [WHOIS](https://www.ovhcloud.com/es/domains/whois/) y los servidores DNS a los que está asociado. <br><br>Encuentre y modifique la zona DNS en cuestión siguiendo la sección dedicada de la guía "[Alojar varios sitios web en un mismo hosting - añadir un dominio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite)".|
+|Su dominio no aparece en la sección `Dominios`{.action} del área de cliente de OVHcloud.<br><br>O bien, la pestaña `Zona DNS`{.action} de su nombre de dominio se muestra de la siguiente manera:<br><br>![zone-without-domain-top-of-the-page](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Esto significa que su nombre de dominio no se gestiona desde el área de cliente de OVHcloud.<br><br><br>Determine su "registro" a través de nuestra herramienta [WHOIS](/links/web/domains-whois) y los servidores DNS a los que está asociado. <br><br>Encuentre y modifique la zona DNS en cuestión siguiendo la sección dedicada de la guía "[Alojar varios sitios web en un mismo hosting - añadir un dominio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite)".|
 |Esta advertencia aparece en la pestaña `Zona DNS`{.action}:<br><br>![advertencia_zonedns_pas_sur_srv_dns](images/message-other-ovh-dns-servers.png){.thumbnail}|Por lo tanto, deberá modificar los servidores DNS de su dominio siguiendo nuestra guía "[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information)."|
 
 ## Más información <a name="go-further"></a>
@@ -107,8 +107,8 @@ Aparecerá una tabla con distintos registros DNS.
 
 [Crear una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
  
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

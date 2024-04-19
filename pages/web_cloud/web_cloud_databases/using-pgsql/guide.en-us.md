@@ -52,7 +52,7 @@ psql --host=server --port=port --user=user --password=password database_name
 ### Connect from software (SQuirreL SQL)
 - Launch SQuirreL SQL and click on `Aliases`{.action}, then on `+`{.action}
 
-![launch SQuirreL SQL](images/1.PNG){.thumbnail}
+![launch SQuirreL SQL](images/aliases.png){.thumbnail}
 
 - Fill in the fields below and then confirm by clicking `OK`{.action} :
     - **Name**: Choose a name
@@ -61,15 +61,15 @@ psql --host=server --port=port --user=user --password=password database_name
     - **User Name**: Enter the username
     - **Password**: Enter the password
 
-![config connection](images/2.PNG){.thumbnail}
+![config connection](images/add-alias-pgsql.png){.thumbnail}
 
 - Confirm again by clicking the button `Connect`{.action}
 
-![valid connection](images/3.PNG){.thumbnail}
+![valid connection](images/connect-to-pgsql.png){.thumbnail}
 
 You will now be connected to your database:
 
-![config connection](images/4.PNG){.thumbnail}
+![config connection](images/general-dashboard-pgsql.png){.thumbnail}
 
 ### Connecting via phppgAdmin
 *Soon available in another guide.*

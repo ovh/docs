@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja rekordu MX
 excerpt: Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud
-updated: 2023-08-30
+updated: 2024-02-29
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ Rekord MX umożliwia powiązanie domeny z serwerem platformy e-mail. Jest to nie
 >
 > - Jeśli Twoja domena nie używa serwerów DNS OVHcloud, przeprowadź zmianę wpisów MX w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 >
-> - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w sekcji `Serwery DNS`{.action}, czy używa ona konfiguracji OVHcloud, w zakładce `Informacje ogólne`{.action}. Jeśli pozycja `Aktywne` znajduje się w sekcji "**Serwery DNS**", korzystasz z serwerów DNS OVHcloud.
+> - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud w Twoim [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Po wybraniu domeny w zakładce `Informacje ogólne`{.action} w sekcji `Serwery DNS`{.action}, jeśli pozycja `Aktywne` znajduje się pod adresem "**Serwery DNS**", korzystasz z serwerów DNS OVHcloud.
 >
 > ![email](images/dns-servers-enabled.png){.thumbnail}
 

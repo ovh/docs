@@ -129,8 +129,6 @@ Możesz automatycznie przenieść VPS do aktualnej gamy. Sprawdź zalety tej ofe
 
 [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Skonfiguruj nową instalację Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 [Pierwsze kroki z serwerem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

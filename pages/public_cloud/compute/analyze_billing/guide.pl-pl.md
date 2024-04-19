@@ -67,7 +67,7 @@ czyli 23,63 EUR.
 
 ### Wyświetlanie faktur
 
-Aby wyświetlić faktury za dany projekt, przejdź do Panelu klienta OVHcloud zakładka `Public Cloud`{.action}, następnie wybierz odpowiedni projekt z menu po lewej stronie, po czym kliknij `Billing Control`{.action}, a następnie `Historia`{.action}.
+Aby wyświetlić faktury za dany projekt, przejdź do Panelu klienta OVHcloud zakładka `Public Cloud`{.action}, następnie wybierz odpowiedni projekt z menu po lewej stronie, po czym kliknij `Billing Control`{.action} (w sekcji `Project Management`), a następnie `Historia`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 

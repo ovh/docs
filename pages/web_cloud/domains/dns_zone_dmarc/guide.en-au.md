@@ -17,8 +17,6 @@ The **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**omp
 > This tutorial is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-au/directory/) if you experience any issues. OVHcloud cannot provide you with technical support in this regard.
 > You can find more information in the [Go further](#gofurther) section of this tutorial.
 >
-> In addition, the **DMARC** record is currently incompatible with any [OVHcloud email solution](https://www.ovhcloud.com/en-au/emails/). This tutorial is **only** for customers who have an active DNS zone at OVHcloud for their domain name associated with an **external email solution**.
->
 
 ## Requirements
 

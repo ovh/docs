@@ -12,8 +12,8 @@ Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la co
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} compatible.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Disposer d'une [offre d'hébergement web](/links/web/hosting){.external} compatible.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
@@ -21,14 +21,14 @@ Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la co
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 >
 
 ### FTP
 
 - Utilisez le **mode passif** pour les connexions FTP. Assurez-vous que votre script ou votre client FTP est configuré en conséquence.
 
-- Si vous rencontrez l'erreur d'accès « Échec de l'authentification de connexion 530 » lors de la connexion à votre espace de stockage FTP: Assurez-vous que les informations d'accès à votre espace FTP sont correctes. Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}.
+- Si vous rencontrez l'erreur d'accès « Échec de l'authentification de connexion 530 » lors de la connexion à votre espace de stockage FTP: Assurez-vous que les informations d'accès à votre espace FTP sont correctes. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}.
 
 Vous y retrouverez l'ensemble des informations de connexion à votre espace de stockage FTP à l'exception du mot de passe.
 
@@ -62,14 +62,14 @@ En cas d'abus ou de piratage, une partie ou l'ensemble de votre service pourra �
 
 #### Connexions simultanées à la base de données
 
-Sur les offres d'hébergement Web (bases de données partagées), il existe une limite de 30 connexions simultanées par base de données (cette limite passe à 200 si vous utilisez une offre [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/)). Consulter le [détail de nos offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) pour connaître les options disponibles dans chaque offre d'hébergement Web.
+Sur les offres d'hébergement Web (bases de données partagées), il existe une limite de 30 connexions simultanées par base de données (cette limite passe à 200 si vous utilisez une offre [Web Cloud Databases](/links/web/databases)). Consulter le [détail de nos offres d'hébergement web](/links/web/hosting) pour connaître les options disponibles dans chaque offre d'hébergement Web.
 
-Vous pouvez également commander des offres [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) supplémentaires, celles-ci disposent d'options de personnalisation :
+Vous pouvez également commander des offres [Web Cloud Databases](/links/web/databases) supplémentaires, celles-ci disposent d'options de personnalisation :
 
 - *max_connections*: 100 par défaut, avec possibilité de passer à 200;
 - *max_user_connections*: 50 par défaut, avec possibilité de passer à 200.
 
-Pour en savoir plus, consultez les détails de nos [offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) et notre guide « [Premiers pas avec votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
+Pour en savoir plus, consultez les détails de nos [offres d'hébergement web](/links/web/hosting) et notre guide « [Premiers pas avec votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
 
 #### Connexions depuis un serveur externe
 
@@ -79,7 +79,7 @@ Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serve
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Seuls les serveurs de bases de données [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) permettent à des serveurs externes de s'y connecter. Ceci en ayant préalablement autorisé l'adresse IP de votre serveur externe sur votre serveur de bases de données. Au besoin, consultez notre guide « [Premiers pas avec votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
+Seuls les serveurs de bases de données [Web Cloud Databases](/links/web/databases) permettent à des serveurs externes de s'y connecter. Ceci en ayant préalablement autorisé l'adresse IP de votre serveur externe sur votre serveur de bases de données. Au besoin, consultez notre guide « [Premiers pas avec votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
 
 #### Variables serveur SQL mutualisé
 
@@ -98,7 +98,7 @@ Pour plus d'informations sur la gestion des bases de données et sur la connecti
 
 ### PHP
 
-Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/uc-programming-language/) pour vous assurer que l'offre d'hébergement Web que vous souhaitez commander convient à vos besoins.
+Nous vous recommandons de consulter nos [offres d'hébergement web](/links/web/hosting-programming-language) pour vous assurer que l'offre d'hébergement Web que vous souhaitez commander convient à vos besoins.
 
 > [!warning]
 >
@@ -168,7 +168,7 @@ Découvrez comment [se connecter à l’espace de stockage FTP de votre héberge
 > OVHcloud fournit un service de sauvegarde automatique des données ainsi que la mise à disposition de ces sauvegardes. Il reste cependant *non-contractuel* et est présent en complément de vos services. Effectivement, il est de votre responsabilité de mettre en place votre propre politique de restauration, et de déterminer des points de restaurations aux moments que vous jugez opportuns.
 >
 
-Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (Web Cloud Databases), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} ou via les [API OVHcloud](https://api.ovh.com/)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées dans un centre de données situé à Strasbourg (SBG). La politique de rétention des sauvegardes est de 30 jours.
+Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (Web Cloud Databases), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](/links/manager){.external} ou via les [API OVHcloud](https://api.ovh.com/)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées dans un centre de données situé à Strasbourg (SBG). La politique de rétention des sauvegardes est de 30 jours.
 
 Découvrez comment [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export) sur notre documentation.
 
@@ -227,8 +227,8 @@ Afin d’être utilisées dans le cadre d’« OVHcloud Web Statistics », les d
 
 [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

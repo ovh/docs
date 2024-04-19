@@ -134,7 +134,7 @@ root@rescue:~# nvme list
 
 #### Remplacer le disque à froid (coupure du serveur requise)
 
-Pour demander le remplacement d'un disque, il vous suffit de créer un ticket auprès de notre support depuis votre [espace client OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Afin d'accélérer le processus, il convient de fournir les éléments liés aux tests. Voici un récapitulatif de ce qu'il faut :
+Pour demander le remplacement d'un disque, il vous suffit de créer un ticket auprès de notre support depuis votre [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Afin d'accélérer le processus, il convient de fournir les éléments liés aux tests. Voici un récapitulatif de ce qu'il faut :
 
 - **le numéro de série du disque à remplacer ainsi que de tous les autres disques sains**. Pour récupérer le numéro de série du disque à remplacer, consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial){.external}. Si, pour une raison ou une autre, il n'est pas possible d'extraire le numéro de série du disque, veuillez le notifier dans le ticket, et nous communiquer le numéro de série du ou des disques à ne pas remplacer. 
 

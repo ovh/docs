@@ -18,7 +18,7 @@ Um website composto essencialmente por páginas web estáticas garante um melhor
 
 ## Requisitos
 
-- Ter um [plano de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que inclui um acesso SSH. Este acesso permite instalar em linha de comandos uma ou várias soluções alternativas às que são propostas por predefinição nas nossas ofertas de alojamento web.
+- Ter um [plano de alojamento web da OVHcloud](/links/web/hosting) que inclui um acesso SSH. Este acesso permite instalar em linha de comandos uma ou várias soluções alternativas às que são propostas por predefinição nas nossas ofertas de alojamento web.
 - estar familiarizado com a introdução em linha de comandos.
 - Ter capacidade para transferir ficheiros em FTP com um cliente como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 - Parametrizar a sua zona DNS para apontar o seu nome de domínio (ou subdomínio) para o seu alojamento web partilhado. Isto é particularmente útil se deseja alojar vários sites em [multi-sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) no seu alojamento web partilhado.
@@ -26,7 +26,7 @@ Um website composto essencialmente por páginas web estáticas garante um melhor
 
 ## Instruções
 
-Os [alojamentos web partilhados](https://www.ovhcloud.com/pt/web-hosting/) permitem declarar domínios ou subdomínios em multi-sites. Um domínio ou um subdomínio é necessário para implementar o seu website realizado com **Cecil**.
+Os [alojamentos web partilhados](/links/web/hosting) permitem declarar domínios ou subdomínios em multi-sites. Um domínio ou um subdomínio é necessário para implementar o seu website realizado com **Cecil**.
 
 Para o ajudar a declarar um domínio ou um subdomínio em multi-site no seu alojamento, consulte a nossa página "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
@@ -151,7 +151,7 @@ Pode visualizá-lo no seu servidor introduzindo o URL do seu site, seguido de `/
 
 #### Modificação no servidor
 
-A edição dos ficheiros _Markdown_ pode ser feita diretamente no servidor de alojamento web. Na sua oferta de [alojamento Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), o seu acesso SSH permite utilizar indiferentemente [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} ou [vim](https://www.vim.org/){.external}.
+A edição dos ficheiros _Markdown_ pode ser feita diretamente no servidor de alojamento web. Na sua oferta de [alojamento Performance](/links/web/hosting-performance-offer), o seu acesso SSH permite utilizar indiferentemente [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} ou [vim](https://www.vim.org/){.external}.
 As capturas de ecrã do presente tutorial foram realizadas sob **GNU nano**.
 
 Editar o ficheiro `mypage.md` situado no diretório `pages` o seguinte comando se estiver na raiz do seu site:
@@ -219,6 +219,6 @@ Um [guia sobre o formato Markdown](https://www.markdownguide.org/){.external}
 
 Nosso [guia sobre a utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

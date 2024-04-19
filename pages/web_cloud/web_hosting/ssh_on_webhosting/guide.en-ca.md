@@ -1,7 +1,7 @@
 ---
-title: 'Accessing a web hosting plan via SSH'
-excerpt: 'Find out how to connect and use SSH access on an OVHcloud web hosting plan'
-updated: 2022-01-19
+title: "Accessing a web hosting plan via SSH"
+excerpt: "Find out how to connect and use SSH access on an OVHcloud web hosting plan"
+updated: 2024-01-30
 ---
 
 ## Objective
@@ -12,25 +12,25 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 ## Requirements
 
-- an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/){.external} with SSH access
+- an [OVHcloud web hosting plan](/links/web/hosting){.external} with SSH access
 - the login credentials required to connect to your storage space via SSH
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager){.external}
 
 > [!warning]
 > 
-> SSH access to an OVHcloud web hosting plan is possible from the [Pro plan](https://www.ovhcloud.com/en-ca/web-hosting/compare/) and above.
+> SSH access to an OVHcloud web hosting plan is possible from the [Pro plan](/links/web/hosting-compare) and above.
 
 ## Instructions
 
 ### Step 1: Ensure that SSH access is enabled <a name="sshcheck"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
+Log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
 
 Find the table in the ‘SSH’ column to check if the SSH user (or ‘login’) concerned has SSH access enabled. A ‘Disabled’ label will be present if this is not the case.
 
 ![usessh](images/tab-ssh.png){.thumbnail}
 
-If SSH access is disabled, click `...`{.action} to the right of the user concerned, then `Modify`{.action}. In the window that pops up, enable SSH access, then confirm the modification. If you cannot enable it, ensure that your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/){.external} offers SSH access.
+If SSH access is disabled, click `...`{.action} to the right of the user concerned, then `Modify`{.action}. In the window that pops up, enable SSH access, then confirm the modification. If you cannot enable it, ensure that your [OVHcloud web hosting plan](/links/web/hosting){.external} offers SSH access.
 
 ### Step 2: Retrieve your connection information <a name="sshlogin"></a>
 
@@ -101,16 +101,26 @@ You can also run a command to launch a script using a specific PHP version. E.g.
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Depending on the PHP version you want to use, the runtime environment may need to be modified to ensure that there are no compatibility issues. Please refer to our documentation.
+Depending on the PHP version you want to use, the runtime environment may need to be modified to ensure that there are no compatibility issues. Please refer to our documentation "[Web Hosting : environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
+
+> [!primary]
+>
+> Files and folders can also be copied using the **S**ecure **C**opy **P**protocol (**SCP**).
+> This protocol uses the SSH protocol to duplicate content securely between:
+>
+> - A local computer/device and a remote server.
+> - A remote server and a local computer/device.
+> - Two remote servers.
+>
+> Find more information on using the `scp` command with our OVHcloud web hosting plans in our guide "[Web Hosting - Copying files with the SCP command](/pages/web_cloud/web_hosting/using-scp-command)"
+>
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+[Web Hosting : environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
-
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

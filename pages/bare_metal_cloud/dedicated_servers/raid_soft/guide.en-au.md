@@ -1,6 +1,6 @@
 ---
-title: Managing software RAID
-excerpt: Find out how to verify the state of your software RAID
+title: How to configure and rebuild software RAID
+excerpt: Find out how to verify the state of your software RAID and rebuild it after a disk replacement
 updated: 2023-08-21
 ---
 
@@ -10,12 +10,12 @@ Redundant Array of Independent Disks (RAID) is a technology that mitigates data 
 
 The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
 
-**This guide will help you configure your server’s RAID array in the event that it needs to be rebuilt due to corruption or disk failure.**
+**This guide explains how to configure your server’s RAID array in the event that it needs to be rebuilt due to corruption or disk failure.**
 
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/){.external} with a software RAID configuration
-- Administrative (root) access to the server via SSH
+- Administrative (sudo) access to the server via SSH
 
 ## Instructions
 
@@ -114,7 +114,7 @@ Disk identifier: 0x150f6797
 We can see that `/dev/md2` consists of 888.8GB and `/dev/md4` contains 973.5GB. If we were to run the mount command we can also find out the layout of the disk.
 
 ```sh
-# mount
+mount
 
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
@@ -180,15 +180,13 @@ umount /dev/md4
 > [!warning]
 > Please note that if you are connected as the user `root`, you may get the following message when you try to unmount the partition (in our case, where our md4 partition is mounted in /home):
 >
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
+> <pre class="highlight language-console"><code class="language-console">umount: /home: target is busy</code></pre>
 >
 > In this case, you must log out as the user root and connect as a local user (in our case `debian`), and use the following command:
 >
+> <pre class="highlight language-console"><code class="language-console">debian@ns000000:/$ sudo umount /dev/md4</code></pre>
 >
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
->
->
-> If you do not have a local user, you need to create one.
+> If you do not have a local user, you need to [create one](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 This will provide us with the following output:
 

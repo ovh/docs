@@ -1,7 +1,7 @@
 ---
 title: 'Automated Backup - Kernel panic (cPanel)'
 excerpt: 'Find out how to fix issues with cPanel servers getting stuck during OVHcloud automated backup'
-updated: 2023-06-06
+updated: 2024-01-31
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ However, if Jailed Shell access is enabled, cPanel creates a *virtfs* which cann
 
 ## Requirements
 
-- A current [VPS solution](https://www.ovhcloud.com/en/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
+- A [VPS](https://www.ovhcloud.com/en/vps) solution with a [compatible distribution](https://www.ovhcloud.com/en/vps/os/)
 - cPanel installed on your server
 
 ## Instructions
@@ -31,20 +31,20 @@ Please choose carefully as they each have their pros and cons.
 
 Firstly, you need to check if QEMU Guest Agent is running on your server. You can check this with the following command:
 
-```
+```bash
 systemctl status qemu-guest-agent
 ```
 
 The status of the service is indicated next to "Active:". If it is active/running then we need to stop the service and disable it from starting again in the future. You can do this with the following commands:
 
-```
+```bash
 systemctl stop qemu-guest-agent
 systemctl disable qemu-guest-agent
 ```
 
 ### Switch from Jailed Shell to Normal Shell
 
-You can read about what is Jailed and Normal Shell [here](https://support.cpanel.net/hc/en-us/articles/360051992634-Differences-Between-Normal-and-Jailed-Shell)
+You can read about what is Jailed and Normal Shell [here](https://support.cpanel.net/hc/en-us/articles/360051992634-Differences-Between-Normal-and-Jailed-Shell).
 
 To disable a jailed shell environment for all new and modified users, you will need to disable the jailshell by default option in WHM’s Tweak Settings interface (WHM >> Home >> Server Configuration >> Tweak Settings).
 

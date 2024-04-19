@@ -149,7 +149,7 @@ An order will be created and once your payment has been processed, you will be n
 To save individual files to your backup storage, you can use the following command:
 
 ```sh
-# ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
+ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 ```
 
 **Please note that this command does not support the FTPS protocol. If you need secure transfer you should use lftp or curl instead.**
@@ -165,7 +165,7 @@ The code example above contains variables, which you will need to substitute wit
 Backing up a folder is done by creating a folder archive, and then uploading it all with one command:
 
 ```sh
-# tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName ArchiveName.tar.gz
+tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName ArchiveName.tar.gz
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -179,7 +179,7 @@ The code example above contains variables, which you will need to substitute wit
 To download an archive file from your backup storage, you can use the following command:
 
 ```sh
-# ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
+ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -200,7 +200,7 @@ The code example above contains variables, which you will need to substitute wit
 To save individual files to your backup storage, you can use the following command:
 
 ```sh
-# curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
+curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -214,7 +214,7 @@ The code example above contains variables, which you will need to substitute wit
 Backing up a folder is done by creating a folder archive, and then uploading it all with one command:
 
 ```sh
-# tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
+tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -229,8 +229,8 @@ The code example above contains variables, which you will need to substitute wit
 To download an archive file from your backup storage, you can use the following commands:
 
 ```sh
-# cd /LocalFolder
-# curl -u FtpUsername:FtpPassword ftp://HostName/File 
+cd /LocalFolder
+curl -u FtpUsername:FtpPassword ftp://HostName/File 
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -241,7 +241,7 @@ The code example above contains variables, which you will need to substitute wit
 * **LocalFolder**: The name of the local folder where you want to save the file
 * **File**: The path to the file you want to download
 
-##### lftp (for Linux)
+####lftp (for Linux)
 
 > [!primary]
 >
@@ -251,7 +251,7 @@ The code example above contains variables, which you will need to substitute wit
 To save individual files to your backup storage, you can use the following command:
 
 ```sh
-# lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; quit"
+lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; quit"
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -265,7 +265,7 @@ The code example above contains variables, which you will need to substitute wit
 Backing up a folder is done by creating a folder archive, and then uploading it all with one command:
 
 ```sh
-# tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put /dev/stdin -o ArchiveName-$(date +%Y%m%d%H%M).tar.gz;quit"
+tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put /dev/stdin -o ArchiveName-$(date +%Y%m%d%H%M).tar.gz;quit"
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -280,8 +280,8 @@ The code example above contains variables, which you will need to substitute wit
 To download an archive file from your backup storage, you can use the following commands:
 
 ```sh
-# cd /LocalFolder
-# lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
+cd /LocalFolder
+lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -302,8 +302,8 @@ First make sure that you have authorised your IP blocks to access the storage an
 
 Once you have the NFS client installed and portmap running, you can mount the NFS share like a normal partition as shown below:
 
-```
-# mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+```sh
+mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -334,7 +334,7 @@ The code example above contains variables, which you will need to substitute wit
 Establish an SSH connection to your server, and type the following command:
 
 ```sh
-# mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
+mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.

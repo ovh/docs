@@ -88,7 +88,7 @@ para así poder recuperar los backups desde un servicio de otra localización.
 > Solo es posible autorizar las direcciones IP de OVHcloud.
 >
 
-Conéctese a [api.ovh.com](https://api.ovh.com/) y utilice la siguiente llamada:
+Conéctese a [api.ovh.com](https://ca.api.ovh.com/) y utilice la siguiente llamada:
 
 > [!api]
 >
@@ -248,7 +248,7 @@ En el comando anterior, sustituya las siguientes variables por el valor correspo
 * **LocalFolder**: Nombre del directorio local en el que quiere guardar el archivo
 * **File**: Ruta de acceso del archivo que quiere descargar
 
-##### LFTP (para Linux)
+####lftp (para Linux)
 
 > [!primary]
 >

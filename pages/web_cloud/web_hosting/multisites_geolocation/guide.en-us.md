@@ -19,15 +19,15 @@ The geolocation option on your hosting can be useful for SEO if your website is 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external}
-- One or more [domain names](https://www.ovhcloud.com/en/domains/){.external}
+- Access to the [OVHcloud Control Panel](/links/manager)
+- An [OVHcloud Web Hosting plan](/links/web/hosting){.external}
+- One or more [domain names](/links/web/domains){.external}
 
 ## Instructions
 
 For websites hosted on the OVHcloud shared hosting infrastructure which are mainly accessed by international visitors, we offer a geolocation by IP address option. It allows for a better search ranking in the country where the IP address you have selected is located.
 
-To use the IP geolocation option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
+To use the IP geolocation option, log in to your [OVHcloud Control Panel](/links/manager){.external}.
 
 Once you have logged in, go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the relevant hosting plan from the list.<br>
 Then click on the `Multisite`{.action} tab and the `...`{.action} to the right of your domain name in the table. Finally, click `Modify domain`{.action}.
@@ -44,7 +44,7 @@ Click `Next`{.action} and then click `Confirm`{.action} from the summary window.
 
 >[!primary]
 >
-> If your domain name’s active DNS zone is managed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), the A record in your domain name’s DNS zone will automatically change. You can check that the IP address has been updated using our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+> If your domain name’s active DNS zone is managed in your [OVHcloud Control Panel](/links/manager), the A record in your domain name’s DNS zone will automatically change. You can check that the IP address has been updated using our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 >
 > Otherwise, you will need to make the change manually with the provider that manages your domain name’s active DNS zone. Find [here](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) the documentation that lists all the IP addresses in our OVHcloud shared hosting infrastructure.
 >
@@ -53,8 +53,8 @@ Click `Next`{.action} and then click `Confirm`{.action} from the summary window.
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

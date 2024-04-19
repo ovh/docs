@@ -66,6 +66,8 @@ Wählen Sie `ovh`{.action} in der Drop-down-Liste "Typ" aus, wenn Sie nicht VMwa
 
 ![Virtuelle MAC-Adresse hinzufügen (2)](images/addvmac2.png){.thumbnail}
 
+Nach einigen Sekunden erscheint eine virtuelle MAC-Adresse in der Spalte "Virtuelle MAC-Adresse" in der Zeile Ihrer Additional IP-Adresse. Diese virtuelle MAC-Adresse wird benötigt, wenn Sie Ihre VM auf dem Host einrichten.
+
 ### Schritt 2: Die Adresse des Gateways bestimmen
 
 Um Ihre virtuellen Maschinen für den Internetzugang zu konfigurieren, müssen Sie das Gateway Ihrer Host-Maschine kennen, d. h. Ihres dedizierten Servers. Die Gateway-Adresse besteht aus den ersten drei Oktetten der Haupt-IP-Adresse Ihres Servers und 254 als das letzte Oktett. Angenommen, die Haupt-IP-Adresse Ihres Servers wäre:

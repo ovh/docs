@@ -1,7 +1,7 @@
 ---
 title: Cassandra - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-updated: 2023-12-04
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -30,6 +30,7 @@ Entire database instances have to be in the same region. Multi-AZ is currently n
 The Public Cloud Databases offer supports the following Cassandra versions:
 
 - Cassandra 4.0
+- Cassandra 4.1
 
 Cassandra recommends always installing and using the latest stable version.
 
@@ -71,21 +72,17 @@ Here are the node types you can choose from:
 
 | Name    | Storage                | vCore | Memory (GB) |
 | ------- | ---------------------- | ----- | ----------- |
-| db1-4   | From 240 GB to 720 GB  | 1     | 4           |
+| db1-4   | From 240 GB to 720 GB  | 2     | 4           |
 | db1-7   | From 480 GB to 1.44 TB | 2     | 7           |
-| db1-15  | 320       | 4     | 15          |
-| db1-30  | 640       | 8     | 30          |
-| db1-60  | 1280      | 16    | 60          |
 
 **Business plans**
 
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-7   | 480       | 2     | 7           |
-| db1-15  | 960       | 4     | 15          |
-| db1-30  | 1920      | 8     | 30          |
-| db1-60  | 3840      | 16    | 60          |
-| db1-120 | 7680      | 32    | 120         |
+| Name    | Storage                  | vCore | Memory (GB) |
+| ------- | ------------------------ | ----- | ----------- |
+| db1-15  | From 960 GB to 2.88 TB   | 4     | 15          |
+| db1-30  | From 1.92 TB to 5.76 TB  | 8     | 30          |
+| db1-60  | From 3.84 TB to 11.52 TB | 16    | 60          |
+| db1-120 | From 7.68 TB to 23.04 TB | 32    | 120         |
 
 **Enterprise plans**
 
@@ -151,7 +148,7 @@ You can further customise your Cassandra by using advanced parameters. See the [
 
 #### Backups
 
-Your services are automatically backed up daily during their maintenance window. The point-in-time recovery (PITR) feature is currently not available.
+Your services are automatically backed up daily. The point-in-time recovery (PITR) feature is currently not available.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 

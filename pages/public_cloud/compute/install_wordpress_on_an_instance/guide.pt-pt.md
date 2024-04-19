@@ -28,7 +28,7 @@ Este tutorial fornece as etapas de base para uma instalação manual do WordPres
 - Um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
 - Ter uma [instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) com Debian ou Ubuntu instalado.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Um acesso administrador (root) à sua instância através de SSH.
+- Um acesso administrador (sudo) à sua instância através de SSH.
 
 ## Instruções
 

@@ -37,7 +37,7 @@ Metoda zależy od typu partycji dysków. Postępuj zgodnie z instrukcjami z [tej
 
 W wierszu poleceń otwórz DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -164,7 +164,7 @@ Najlepiej nie uruchamiać ponownie serwera, jeśli proces odbudowy nie zostanie 
 
 W wierszu poleceń otwórz DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -361,7 +361,7 @@ Wróć do wiersza poleceń, skopiuj pliki uruchamiania partycji startowej (EFI) 
 
 Wpisz 3 poniższe polecenia i wykonaj je za pomocą przycisku `Wpisz`:
 
-```
+```console
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:

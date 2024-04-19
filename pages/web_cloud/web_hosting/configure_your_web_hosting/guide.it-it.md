@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web : ambiente, versione PHP, .ovhconfig"
 excerpt: "Questa guida ti mostra come modificare ambiente di esecuzione, versione PHP, firewall applicativo, motore, modalità e .ovhconfig di un hosting Web"
-updated: 2023-09-05
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-09-05
 
 ## Obiettivo
 
-Le offerte di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} permettono di ospitare il sito Web che si desidera, purché sia compatibile con la [configurazione delle nostre infrastrutture condivise](https://webhosting-infos.hosting.ovh.net){.external}.
+Le offerte di [hosting Web OVHcloud](/links/web/hosting){.external} permettono di ospitare il sito Web che si desidera, purché sia compatibile con la [configurazione delle nostre infrastrutture condivise](https://webhosting-infos.hosting.ovh.net){.external}.
 Tuttavia, sulle nostre infrastrutture condivise, è possibile modificare i seguenti parametri per il tuo hosting Web:
 
 - [ambiente di esecuzione](#runtime-environment)
@@ -21,7 +21,7 @@ Tuttavia, sulle nostre infrastrutture condivise, è possibile modificare i segue
 
 Queste impostazioni di configurazione possono essere modificate in due modi:
 
-- dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it);
+- dallo [Spazio Cliente OVHcloud](/links/manager);
 - dallo spazio di storage FTP del tuo hosting Web OVHcloud tramite un file denominato ".ovhconfig".
 
 > [!primary]
@@ -31,7 +31,7 @@ Queste impostazioni di configurazione possono essere modificate in due modi:
 > Contengono i valori degli elementi sopra indicati.
 >
 
-Per riassumere, modificare la configurazione dell’hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o modificare i valori presenti nel file ".ovhconfig" equivale a effettuare la stessa operazione.
+Per riassumere, modificare la configurazione dell’hosting Web dallo [Spazio Cliente OVHcloud](/links/manager) o modificare i valori presenti nel file ".ovhconfig" equivale a effettuare la stessa operazione.
 
 ### Sommario
 
@@ -46,8 +46,8 @@ Per riassumere, modificare la configurazione dell’hosting Web dallo [Spazio Cl
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, ad eccezione di una [soluzione di hosting Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/).
-- Avere accesso al piano di hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o conoscere le informazioni di accesso allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}, ad eccezione di una [soluzione di hosting Cloud Web](/links/web/hosting-cloud-web-offer).
+- Avere accesso al piano di hosting Web dallo [Spazio Cliente OVHcloud](/links/manager) o conoscere le informazioni di accesso allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Procedura
 
@@ -57,7 +57,7 @@ Prima di iniziare, consulta la descrizione tecnica di ogni parametro modificabil
 
 > [!warning]
 >
-> La modifica di uno o più di questi elementi potrebbe avere conseguenze sulla visualizzazione o sul corretto funzionamento del sito Web. **Assicurati prima che il tuo sito Web sia compatibile con le modifiche che vuoi apportare alla configurazione del tuo hosting Web**. Contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) in caso di dubbi o difficoltà.
+> La modifica di uno o più di questi elementi potrebbe avere conseguenze sulla visualizzazione o sul corretto funzionamento del sito Web. **Assicurati prima che il tuo sito Web sia compatibile con le modifiche che vuoi apportare alla configurazione del tuo hosting Web**. Contatta un [provider specializzato](/links/partner) in caso di dubbi o difficoltà.
 >
 
 ##### 1.1 - Gli ambienti di esecuzione <a name="runtime-environment"></a>
@@ -87,7 +87,7 @@ Di seguito sono riportati gli elementi contenuti nei nostri diversi ambienti di 
 
 PHP è un linguaggio di programmazione dinamico utilizzato per realizzare siti Web. Per il tuo sito Web e in funzione della sua anzianità, degli aggiornamenti effettuati o di alcune variabili necessarie al suo corretto funzionamento, potresti aver bisogno di modificare la versione di PHP che utilizza.
 
-Esistono diverse versioni del linguaggio di programmazione PHP. Le modifiche apportate alle versioni apportano patch di vario tipo e aggiungono o rimuovono alcune funzionalità. OVHcloud propone le ultime versioni principali di PHP, disponibili nella lista [qui](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/).
+Esistono diverse versioni del linguaggio di programmazione PHP. Le modifiche apportate alle versioni apportano patch di vario tipo e aggiungono o rimuovono alcune funzionalità. OVHcloud propone le ultime versioni principali di PHP, disponibili nella lista [qui](/links/web/hosting-programming-language).
 
 Alcune versioni di PHP funzionano solo con certi ambienti di esecuzione. Di seguito trovi le versioni di PHP disponibili sugli hosting condivisi OVHcloud e [gli ambienti di esecuzione](#runtime-environment) compatibili:
 
@@ -118,7 +118,7 @@ OVHcloud gestisce l’installazione delle ultime versioni di PHP sui propri serv
 
 Per conoscere la versione PHP in uso sull’hosting Web sono disponibili due distinti metodi:
 
-- **Dallo Spazio Cliente OVHcloud**. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella scheda `Informazioni generali`{.action}, individua la versione sotto *Versione PHP*. 
+- **Dallo Spazio Cliente OVHcloud**. Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella scheda `Informazioni generali`{.action}, individua la versione sotto *Versione PHP*. 
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}
 
@@ -136,7 +136,7 @@ Accedi allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 > [!warning]
 >
-> La modifica della versione di PHP tramite un file ".htaccess" non è più possibile sulle ultime offerte di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).<br>
+> La modifica della versione di PHP tramite un file ".htaccess" non è più possibile sulle ultime offerte di [hosting Web OVHcloud](/links/web/hosting).<br>
 > Il comando che permette di modificare la versione di PHP nel file ".htaccess" non permette di utilizzare le versioni recenti di PHP sulle nostre infrastrutture.
 > È necessario utilizzare il file ".ovhconfig".
 >
@@ -187,12 +187,12 @@ Ora che conosci i diversi parametri modificabili per il tuo hosting Web OVHcloud
 
 > [!warning]
 >
-> Ti ricordiamo che la modifica di uno o più di questi elementi potrebbe avere conseguenze sulla visualizzazione o sul corretto funzionamento del tuo sito Web. **Assicurati prima che il tuo sito Web sia compatibile con le modifiche alla configurazione del tuo hosting Web.** Contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) in caso di dubbi o difficoltà.
+> Ti ricordiamo che la modifica di uno o più di questi elementi potrebbe avere conseguenze sulla visualizzazione o sul corretto funzionamento del tuo sito Web. **Assicurati prima che il tuo sito Web sia compatibile con le modifiche alla configurazione del tuo hosting Web.** Contatta un [provider specializzato](/links/partner) in caso di dubbi o difficoltà.
 >
 
 #### 2.1 - Accedi alla gestione della configurazione dell’hosting Web
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Assicurati di essere posizionato sulla scheda
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Assicurati di essere posizionato sulla scheda
 `Informazioni generali`{.action}. A destra della voce `Versione PHP`{.action}, situata quasi al centro della pagina, clicca sul pulsante `...`{.action} e poi su `Modifica la configurazione`{.action}.
 
 ![hostingconfiguration](images/modify-hosting-configuration.png){.thumbnail}
@@ -201,7 +201,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 >
 > Se il pulsante `Modifica la configurazione`{.action} è disattivato, è possibile che una verifica della **versione PHP globale** sia in corso. In questo caso, accanto alla versione verrà visualizzato un cerchio blu che indica che è in corso un controllo. Attendi qualche minuto fino a quando il pulsante `Modifica la configurazione`{.action} sarà nuovamente disponibile.
 >
-> Se l’opzione `Versione PHP Globale`{.action} non compare nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), verifica che il file *.ovhconfig* esista effettivamente nella root FTP del tuo hosting condiviso OVHcloud.
+> Se l’opzione `Versione PHP Globale`{.action} non compare nel tuo [Spazio Cliente OVHcloud](/links/manager), verifica che il file *.ovhconfig* esista effettivamente nella root FTP del tuo hosting condiviso OVHcloud.
 >
 > Tutte le informazioni relative al file *.ovhconfig* sono disponibili nella terza parte "[Metodo 2: modificare la configurazione dell’hosting Web dal file ".ovhconfig"](#setting-ovhconfig)" di questa guida.
 >
@@ -229,7 +229,7 @@ Clicca su `Conferma`{.action} per applicare la modifica. e attendi il tempo nece
 #### 3.1 - Accedi allo spazio di storage FTP del tuo hosting Web
 
 Recupera l’identificativo FTP principale, la password e l’indirizzo del server FTP.
-Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting interessato. e clicca sulla scheda `FTP - SSH`{.action}. In questa interfaccia sono disponibili anche le informazioni necessarie per effettuare l’accesso. 
+Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting interessato. e clicca sulla scheda `FTP - SSH`{.action}. In questa interfaccia sono disponibili anche le informazioni necessarie per effettuare l’accesso. 
 
 Per conoscere la password associata a un utente FTP, consulta le istruzioni fornite nella nostra guida ["Modificare la password di un utente FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -270,8 +270,8 @@ Personalizza i valori delle variabili in base alla configurazione che vuoi utili
 |Variabili|Dettaglio|
 |---|---| 
 |app.engine|Permette di modificare [il motore PHP](#php-runtime) utilizzato dall’hosting. Inserisci **php** per attivare l’acceleratore PHP-FPM e **phpcgi** per disattivarlo.|
-|app.engine.version|Permette di definire [la versione di PHP](#php-versions) utilizzata dall’hosting tra [quelle proposte da OVHcloud](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/){.external}. Inserisci la versione scelta (in base all’ambiente di esecuzione che hai scelto di utilizzare).|
-|http.firewall|Permette di attivare o disattivare il [firewall incluso negli hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/options/){.external}. Inserisci **security** per attivarlo o **none** per disattivarlo.|
+|app.engine.version|Permette di definire [la versione di PHP](#php-versions) utilizzata dall’hosting tra [quelle proposte da OVHcloud](/links/web/hosting-programming-language){.external}. Inserisci la versione scelta (in base all’ambiente di esecuzione che hai scelto di utilizzare).|
+|http.firewall|Permette di attivare o disattivare il [firewall incluso negli hosting Web OVHcloud](/links/web/hosting-options){.external}. Inserisci **security** per attivarlo o **none** per disattivarlo.|
 |environment|Permette di gestire il comportamento della cache dei file statici del tuo sito Web e la gestione degli errori PHP. Questa è la [modalità di esecuzione](#runtime-mod). Inserisci **production** per massimizzare la memorizzazione in cache e nascondere gli errori PHP o **development** per disattivare la cache e visualizzare gli errori PHP.|
 |container.image|Permette di modificare [l’ambiente di esecuzione](#runtime-environment) utilizzato dall’hosting. Inserisci l'ambiente di esecuzione (**legacy**,**stable** o **stable64**) che preferisci. Se scegli l'ambiente di esecuzione **stable64**, verifica che il tuo sito sia compatibile con l'architettura a 64 bit.|
 
@@ -349,7 +349,7 @@ Una volta modificato il file ".ovhconfig", caricalo sul tuo [spazio di storage F
 
 Se utilizzi l’hosting Web per ospitare più siti Web (in *multisiti*), per diversi motivi potresti aver bisogno di una versione di PHP diversa per alcuni dei tuoi *multisiti*.
 
-Crea un file ".ovhconfig" contenente la versione di PHP desiderata per i *multisiti* interessati. Se necessario, guida alle operazioni descritte nella sezione "[3.3 - Modificare il contenuto del file ".ovhconfig"](#update-ovhconfig)" di questa guida. Quando carichi il file ".ovhconfig" sul tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), accedi alla cartella root in cui si trovano i file che compongono il sito Web "*multisiti*" interessato. Consulta la cartella root dei tuoi *multisiti* nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella scheda `Multisito`{.action} dell’hosting interessato.
+Crea un file ".ovhconfig" contenente la versione di PHP desiderata per i *multisiti* interessati. Se necessario, guida alle operazioni descritte nella sezione "[3.3 - Modificare il contenuto del file ".ovhconfig"](#update-ovhconfig)" di questa guida. Quando carichi il file ".ovhconfig" sul tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), accedi alla cartella root in cui si trovano i file che compongono il sito Web "*multisiti*" interessato. Consulta la cartella root dei tuoi *multisiti* nel tuo [Spazio Cliente OVHcloud](/links/manager) nella scheda `Multisito`{.action} dell’hosting interessato.
 
 Se necessario, consulta la nostra guida "[Configurare un multisito su un hosting Web](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
@@ -364,8 +364,8 @@ Se necessario, consulta la nostra guida "[Configurare un multisito su un hosting
 
 [Accedere allo spazio di storage dell’hosting Web](/pages/web_cloud/web_hosting/ftp_connection)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

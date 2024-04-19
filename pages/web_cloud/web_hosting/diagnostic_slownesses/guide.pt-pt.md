@@ -34,15 +34,15 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 >
 > As nossas ofertas de alojamento partilhado não dispõem de "Service Level Agreement" (SLA). 
 >
-> Se precisar de um serviço com uma taxa de disponibilidade SLA superior a 99%, sugerimos que considere a utilização de um [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/pt/vps/) ou de um [Servidor Dedicado](https://www.ovhcloud.com/pt/bare-metal/).
+> Se precisar de um serviço com uma taxa de disponibilidade SLA superior a 99%, sugerimos que considere a utilização de um [Servidor Privado Virtual (VPS)](/links/bare-metal/vps) ou de um [Servidor Dedicado](/links/bare-metal/bare-metal).
 >
 > Além disso, as performances da infraestrutura de alojamento partilhado OVHcloud são monitorizadas 24 horas por dia e 7 dias por semana. Isto de forma a garantir-lhe uma alta taxa de disponibilidade e, se for caso disso, um restabelecimento rápido dos seus serviços em caso de sobrecarga comprovada.*
 >
 
 ## Requisitos
 
-- Dispor de um site alojado numa das nossas ofertas de [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Dispor de um site alojado numa das nossas ofertas de [alojamento partilhado OVHcloud](/links/web/hosting)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
@@ -50,7 +50,7 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). De facto, não poderemos fornecer-lhe assistência **a partir do momento em que a infraestrutura em que o seu alojamento partilhado está presente não esteja em causa**. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). De facto, não poderemos fornecer-lhe assistência **a partir do momento em que a infraestrutura em que o seu alojamento partilhado está presente não esteja em causa**. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 >
 
 > [!success]
@@ -98,7 +98,7 @@ Todos os diagnósticos da etapa 1 devem ser realizados **sem exceção** para de
 
 Para ter a certeza de que os seus serviços (alojamento partilhado **e** base de dados) não são objeto de manutenção ou incidente, recupere as informações sobre o cluster e file do seu alojamento partilhado, assim como as informações gerais relativas à sua base de dados. De seguida, poderá verificar o seu estado em [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Para conhecer o cluster e filer onde se encontra o alojamento partilhado, aceda ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Information gerais`{.action}, localize o `datacenter` do seu alojamento partilhado bem como o `filer` onde está.
+Para conhecer o cluster e filer onde se encontra o alojamento partilhado, aceda ao seu [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Information gerais`{.action}, localize o `datacenter` do seu alojamento partilhado bem como o `filer` onde está.
 
 ![Recuperar Filer](images/find-filer.png){.thumbnail}
 
@@ -137,7 +137,7 @@ phpinfo();
 >
 > Em certos casos, os ficheiros "**.htaccess**" presentes nos diretórios/dossiers situados a montante ou ao mesmo nível que o local onde colocou o seu ficheiro "**phpinfo.php**" podem influir na visualização num browser do "**phpinfo.php**". 
 >
-> As manipulações num ficheiro "**.htaccess**" podem ter consequências na visualização do seu site. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se sentir dificuldades em realizar o seguinte.
+> As manipulações num ficheiro "**.htaccess**" podem ter consequências na visualização do seu site. Recorra a um [fornecedor especializado](/links/partner) se sentir dificuldades em realizar o seguinte.
 >
 > Se não for apresentada e **unicamente para os utilizadores experientes**, renomeie os seus ficheiros "**.htaccess**" em "**.htaccess_OLD**" para que o servidor não os execute durante o seu teste. Dê-lhes o nome correto quando o diagnóstico for efetuado.
 >
@@ -192,7 +192,7 @@ Neste momento, sabe que as lentidões são geradas pelas páginas/scripts/fichei
 
 > [!warning]
 >
-> Se encontrar dificuldades para realizar as ações que se seguem, pode contactar um dos nossos [prestadores especializados](https://partner.ovhcloud.com/pt/directory/). A OVHcloud não prestará assistência ao desenvolvimento e/ou otimização do conteúdo do seu website.
+> Se encontrar dificuldades para realizar as ações que se seguem, pode contactar um dos nossos [prestadores especializados](/links/partner). A OVHcloud não prestará assistência ao desenvolvimento e/ou otimização do conteúdo do seu website.
 >
 
 Encontre aqui as ações a realizar para identificar a(s) fonte(s) da(s) lentidão e otimizar o seu website.
@@ -249,14 +249,14 @@ Para diminuir o fluxo de pedidos a cada um dos carregamentos das suas páginas, 
 
 > [!primary]
 >
-> A OVHcloud oferece várias [ofertas CDN](https://www.ovhcloud.com/pt/web-hosting/options/). Se pretender utilizá-los ou ativar um para o seu alojamento web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e consulte o nosso guia sobre [utilização do CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> A OVHcloud oferece várias [ofertas CDN](/links/web/hosting-options). Se pretender utilizá-los ou ativar um para o seu alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e consulte o nosso guia sobre [utilização do CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - otimize a sua base de dados
 
 > [!warning]
 >
-> As ações que realiza na sua base de dados podem ter consequências irreversíveis se não forem realizadas de forma metódica e correta. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se não tem a certeza das ações a realizar. 
+> As ações que realiza na sua base de dados podem ter consequências irreversíveis se não forem realizadas de forma metódica e correta. Recorra a um [fornecedor especializado](/links/partner) se não tem a certeza das ações a realizar. 
 >
 
 Verifique se um número consequente de pedidos é efetuado para a sua base de dados.<br>
@@ -295,12 +295,12 @@ Pode encontrar pistas de otimização para o seu site analisando-o em [gtmetrix.
 
 Se o seu alojamento web e a sua base de dados ***não estiverem em causa** e o seu website continuar a ser lento, apesar da realização de **todas as etapas** deste guia, isso provavelmente significa que a oferta que utiliza para alojar o seu website não é ou deixou de ser adaptada às suas necessidades. 
 
-Pode considerar uma [oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/) superior ou uma infraestrutura dedicada como um [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/pt/vps/) ou um [Servidor Dedicado](https://www.ovhcloud.com/pt/bare-metal/). 
+Pode considerar uma [oferta de alojamento partilhado](/links/web/hosting) superior ou uma infraestrutura dedicada como um [Servidor Privado Virtual (VPS)](/links/bare-metal/vps) ou um [Servidor Dedicado](/links/bare-metal/bare-metal). 
 
 ## Quer saber mais? <a name="go-further"></a>
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

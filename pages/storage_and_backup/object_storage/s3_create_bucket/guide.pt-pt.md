@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Criando um intervalo (EN)
-updated: 2022-09-27
+updated: 2024-04-15
 ---
 
 ## Objective
@@ -59,12 +59,15 @@ The user credentials are then displayed:
 
 ![User created credentials](images/highperf-create-container-20220928082836834.png)
 
-Finally, name your bucket:
+Name your bucket:
 
 ![Container name](images/highperf-create-container-20220928082938155.png)
 
-Congratulations, your bucket is created:
+Finally, decide whether or not you wish to encrypt your data using [SSE-S3 (server-side encryption with OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 
+![Encryption](images/create-container-encryption.PNG)
+
+Congratulations, your bucket is created:
 ![Result](images/highperf-create-container-20220928083209650.png)
 
 ### Where to find the Endpoint URL of a bucket

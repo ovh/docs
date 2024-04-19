@@ -1,7 +1,7 @@
 ---
 title: 'Creating and connecting to your first Public Cloud instance'
 excerpt: 'Find out how to get started with your Public Cloud service after the creation of a project'
-updated: 2024-01-08
+updated: 2024-02-28
 ---
 
 ## Objective
@@ -131,7 +131,7 @@ The key is ready when the progress bar is full.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-You can select and copy the public key from this window to save it in your OVHcloud Control Panel in [Step 2](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel).
+You can select and copy the public key from this window (under the mention: "Public key for pasting into OpenSSH authorized_keys file") to save it in your OVHcloud Control Panel in [Step 2](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel).
 
 Save both keys to files and use the option to enter a passphrase. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
 
@@ -154,9 +154,22 @@ Click on the `Add an SSH key`{.action} button. In the new window, enter a name f
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+> [!success]
+>
+It is preferable to create a private network before creating an instance. For more information on creating a private network, see the [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) guide.
+>
+
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. On the "Home" page, click on `Create an instance`{.action}. (You can find the same functionality on the "Instances" page by clicking `Instances`{.action} in the left-hand navigation bar under "Compute".)
 
-![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
+![instance select](images/instance-creation-2024.png){.thumbnail}
+
+**Local Zones:**
+
+Local Zones are an extension of Regions that bring OVHcloud services closer to specific locations, offering reduced latency and improved performances for applications. They are strategically placed in proximity to areas with high user demand. Their main goal is to minimize the time it takes to transfer data between the user and the cloud, in order to make services faster and more responsive, and meet Data residency requirements. For more information about Local Zones, consult the following links: [Local Zone Compute](https://www.ovhcloud.com/en-ca/public-cloud/local-zone-compute/) and [Local Zone Compute - Features, Capabilities and Limitations](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+**Global Regions:**
+
+These are regions supported by one or more datacenters managed by OVHcloud. Each region located in different geographical area. Each global region has one or more Availibility Zones, for example, GRA11, GRA7, BHS5, DE1 etc.
 
 First, choose a server template according to your needs. The assistant will provide descriptions about the various use cases and server model availability. You can choose from these customised categories:
 
@@ -212,7 +225,7 @@ The Public mode is the standard network model, it allows your instances to have 
 
 The Private mode provides you with the possiblity of assigning your instances to a private network only. Instances in this mode can only be exposed to the public network using a Gateway or a Loadbalancer service with Floating IPs. For more information, please consult our [Public Cloud Network Services](/products/public-cloud-network) guides.
 
-Once you have selected a mode, select a private network to attach your instance to or click on `Create a new private network`{.action} to create a new one.
+Once you have selected a mode, select a private network to attach your instance to or click on `Create a new private network`{.action} to create a new one. If you select this last choice, you will be redirected to the page for creating the private network, and you will need to repeat the entire order process for your instance later. It is therefore preferable to create a private network before creating your instance.
 
 When you have applied your choices, click `Next`{.action} to proceed to the final step and decide on a billing method.
 

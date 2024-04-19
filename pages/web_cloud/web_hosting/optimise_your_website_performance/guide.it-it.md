@@ -17,10 +17,10 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 
 ## Prerequisiti
 
-- Una [soluzione Web Hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Una [soluzione Web Hosting OVHcloud](/links/web/hosting){.external}
 - Una email conferma che la tua soluzione di Web Hosting è stato configurato
-- Un [dominio](https://www.ovhcloud.com/it/domains/){.external}per accedere al tuo sito
-- avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}OVHcloud
+- Un [dominio](/links/web/domains){.external}per accedere al tuo sito
+- avere accesso allo [Spazio Cliente](/links/manager){.external}OVHcloud
 
 ## Procedura
 
@@ -50,9 +50,9 @@ Le risposte a queste domande possono aiutarti a concentrarti su aspetti ben spec
 
 I CMS come WordPress, PrestaShop, Drupal o Joomla! utilizzano numerose librerie, in modo che una sola pagina possa contenere molti elementi.
 Questi devono essere caricati e letti dal browser Internet dei tuoi utenti.
-Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS sopraelencati in questa [pagina](https://www.ovhcloud.com/it/web-hosting/){.external}.
+Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS sopraelencati in questa [pagina](/links/web/hosting){.external}.
 
-Per maggiori informazioni clicca [qui](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/){.external}.
+Per maggiori informazioni clicca [qui](/links/web/hosting-best-web){.external}.
 
 ### Step 2: Verifica la versione PHP
 
@@ -94,7 +94,7 @@ Puoi trovare maggiori informazioni più avanti, allo step 5.
 
 Correla i grafici relativi all’utilizzo delle risorse del tuo hosting (ulteriori informazioni qui di seguito) per trovare l’origine dei ritardi e poi consulta i log per rilevare le date dei picchi.
 
-Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)){.external}.
+Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spazio Cliente OVHcloud](/links/manager)){.external}.
 
 Come accedere alle statistiche e ai log:
 
@@ -156,7 +156,7 @@ Trovi tutte le offerte CDN OVHcloud [qui](https://www.ovh.it/cdn/){.external}.
 
 _Se non utilizzi un CMS, questo step è facoltativo_
 
-Per essere sicuro che il tuo piano di hosting sia adatto alle esigenze del tuo CMS, puoi confrontare i nostri servizi in [questa pagina](https://www.ovhcloud.com/it/web-hosting/){.external}.
+Per essere sicuro che il tuo piano di hosting sia adatto alle esigenze del tuo CMS, puoi confrontare i nostri servizi in [questa pagina](/links/web/hosting){.external}.
 
 - **Utilizzo dei plugin di cache:** I CMS utilizzano molte librerie in modo che una sola pagina Web possa contenere una grande quantità di elementi. Per ottimizzare l’utilizzo del tuo CMS, ti consigliamo di usare dei plugin di cache che ti permettono di evitare di rigenerare completamente il contenuto del tuo sito ogni volta che la pagina viene caricata. Cercane uno sul sito del CMS che utilizzi (Joomla! - PrestaShop - WordPress) per ottimizzare il tuo sito.
 
@@ -168,7 +168,7 @@ _Se non usi un database, questo step è facoltativo_
 È possibile accedere al database utilizzando PHPMyAdmin. (Dato che le istruzioni su come utilizzare PHPMyAdmin andrebbero oltre lo scopo di questa guida, non saranno forniti ulteriori dettagli).
 Tuttavia, sono disponibili numerose guide esterne su questo argomento.
 
-**Come accedere al database tramite phpMyAdmin:** Per accedere al database tramite phpMyAdmin, segui la procedura dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
+**Come accedere al database tramite phpMyAdmin:** Per accedere al database tramite phpMyAdmin, segui la procedura dallo [Spazio Cliente OVHcloud](/links/manager){.external}:
 
 - Clicca sul tuo dominio nella sezione `Hosting`{.action}
 - Vai alla scheda `Database`{.action}
@@ -241,8 +241,8 @@ Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è
 
 [Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

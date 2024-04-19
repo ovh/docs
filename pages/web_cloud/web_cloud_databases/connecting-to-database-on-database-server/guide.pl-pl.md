@@ -41,7 +41,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 W zakładce `Informacje ogólne` link dostępowy do phpMyAdmin znajduje się w polu **"Administrowanie bazą danych"** pod napisem " Panel użytkownika ".
 
-![web-cloud-databases](images/private-sql-phpma01.png){.thumbnail}
+![web-cloud-databases](images/database-administration.png){.thumbnail}
 
 Zostaniesz przekierowany na stronę logowania phpMyAdmin.
 
@@ -107,7 +107,7 @@ mysql —host=serwer —user=uzytkownik —port=port —password=password nazwa_
 
 - Uruchom SQuirreL SQL i kliknij `Aliasy`{.action}, a następnie `+`{.action}
 
-![launch SQL](images/1.png){.thumbnail}
+![launch SQL](images/aliases.png){.thumbnail}
 
 - Wypełnij poniższe pola i zatwierdź przyciskiem `OK`{.action}:
     - **Name**: Wybierz nazwę
@@ -116,15 +116,15 @@ mysql —host=serwer —user=uzytkownik —port=port —password=password nazwa_
     - **User Name**: Wpisz nazwę użytkownika
     - **Password**: Wpisz hasło
 
-![config connection](images/2.png){.thumbnail}
+![config connection](images/add-alias.png){.thumbnail}
 
 - Zatwierdź ponownie za pomocą przycisku `Connect`{.action}
 
-![valid connection](images/3.png){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 Jesteś teraz zalogowany do bazy danych:
 
-![config connection](images/4.PNG){.thumbnail}
+![config connection](images/general-dashboard.png){.thumbnail}
 
 ##### 4. Logowanie przez phpMyAdmin
 
@@ -162,7 +162,7 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 
 - Uruchom SQuirreL SQL i kliknij `Aliasy`{.action}, a następnie `+`{.action}
 
-![launch SQL](images/1.png){.thumbnail}
+![launch SQL](images/aliases.png){.thumbnail}
 
 - Wypełnij poniższe pola i zatwierdź przyciskiem `OK`{.action}:
     - **Name**: Wybierz nazwę
@@ -171,15 +171,15 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
     - **User Name**: Wpisz nazwę użytkownika
     - **Password**: Wpisz hasło
 
-![config connection](images/2.png){.thumbnail}
+![config connection](images/add-alias.png){.thumbnail}
 
 - Zatwierdź ponownie za pomocą przycisku `Connect`{.action}
 
-![valid connection](images/3.png){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 Jesteś teraz zalogowany do bazy danych:
 
-![config connection](images/4.PNG){.thumbnail}
+![config connection](images/general-dashboard.png){.thumbnail}
 
 ## Sprawdź również
 

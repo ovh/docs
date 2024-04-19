@@ -21,7 +21,7 @@ Cela peut être utile dans les cas suivants :
 - Être connecté votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr){.external}.
 - Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVHcloud.
 - Avoir une sauvegarde disque dans la même région OpenStack.
-- Avoir accès à votre instance via SSH en tant qu'administrateur (root).
+- Avoir accès à votre instance via SSH en tant qu'administrateur (sudo).
 
 ## En pratique
 

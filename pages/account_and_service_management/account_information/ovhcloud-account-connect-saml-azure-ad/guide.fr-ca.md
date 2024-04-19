@@ -1,7 +1,7 @@
 ---
 title: Activer les connexions Azure SSO avec votre compte OVHcloud
 excerpt: "Découvrez comment associer votre Azure Active Directory à votre compte OVHcloud en utilisant SAML 2.0"
-updated: 2023-12-06
+updated: 2024-03-05
 ---
 
 ## Objectif
@@ -223,6 +223,8 @@ Complétez le champ **Group Attribute Name** avec la valeur de **Claim name** de
 
 Remplissez les métadonnées XML de votre application Entra ID à partir du fichier enregistré précédemment.
 
+Il est possible de conserver les utilisateurs locaux en cochant la case `Conserver les utilisateurs OVHcloud actifs`.
+
 Cliquez sur le bouton `Valider`{.action}.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
@@ -253,6 +255,8 @@ Le groupe créé doit apparaître sur la liste.
 
 ![Groupes de gestion des utilisateurs Ovhcloud étape 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
 
+Attention, si vous donnez le privilège `Aucun`, il sera nécessaire d'attribuer des droits à ce groupe via les [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
+
 ### Connexion via SSO
 
 Sur [la page de connexion OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), renseignez votre [identifiant](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client) client suivi de **/idp** sans mot de passe puis cliquez sur le bouton `Login`{.action} .
@@ -278,5 +282,7 @@ Vous êtes maintenant connecté avec le même [identifiant client OVHcloud](/pag
 Si votre e-mail n'apparait pas en dessous de `Connected via SSO`, cela signifie que vous n'avez pas correctement configuré l'attribut **UPN** et une partie des fonctionnalités ne pourra donc pas fonctionner.
 
 ## Aller plus loin
+
+[Créer des politiques d'accès IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

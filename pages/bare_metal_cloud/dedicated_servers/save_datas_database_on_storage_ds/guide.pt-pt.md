@@ -82,7 +82,9 @@ Para armazenar os backups de forma clara, vamos criar diretórios alvo. Estabele
 
 ```sh
 df -h
+```
 
+```console
 Filesystem      Size    Used Avail Use% Mounted on
 udev            7,8G       0  7,8G   0% /dev
 tmpfs           1,6G     51M  1,6G   4% /run

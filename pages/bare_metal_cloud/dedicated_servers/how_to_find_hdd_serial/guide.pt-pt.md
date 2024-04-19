@@ -13,14 +13,14 @@ Para minimizar os riscos de erro durante a substituição de um disco rígido, p
 ## Requisitos
 
 - Ter um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
-- Ter acesso ao servidor através de SSH enquanto administrador (root).
+- Ter acesso ao servidor através de SSH enquanto administrador (sudo).
 - Ter instalado o utilitário sas2ircu no servidor Windows (disponível através do motor de busca [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
 
 ## Instruções
 
 > [!primary]
 >
-> No caso de um disco NVMe, será necessário colocar o servidor em modo Rescue64 e utilizar a ferramenta nvme-cli instalada por predefinição.
+> No caso de um disco NVMe, será necessário colocar o servidor em modo Rescue e utilizar a ferramenta nvme-cli instalada por predefinição.
 > 
 
 ### Obter o número de série de um disco (RAID de software)

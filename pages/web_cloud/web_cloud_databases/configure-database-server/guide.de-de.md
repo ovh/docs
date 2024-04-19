@@ -1,7 +1,7 @@
 ---
 title: 'Konfigurieren Ihres Datenbankservers'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Datenbankserver konfigurieren und optimieren können'
-updated: 2023-04-24
+updated: 2024-03-20
 ---
 
 > [!primary]
@@ -38,7 +38,7 @@ Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitte
 |Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
 |Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine interne Information der OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](https://web-cloud.status-ovhcloud.com/) verwendet werden kann.|
 
-![Allgemeine Informationen](images/web-cloud-databases-General-information.png){.thumbnail}
+![Allgemeine Informationen](images/general-information.png){.thumbnail}
 
 ### Zugangsverwaltung
 
@@ -52,17 +52,17 @@ Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=goto
 
 Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip.png){.thumbnail}
+![Web Cloud Databases](images/add-an-ip-address-mask.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse oder Maske ein, der Sie den Zugriff erlauben möchten. Legen Sie anschließend fest, ob Sie nur Zugriff auf die Datenbanken oder auch auf den SFTP-Port erlauben möchten. Klicken Sie dann auf `Bestätigen`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-step2.png){.thumbnail}
+![Web Cloud Databases](images/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
 #### Autorisieren der Anbindung eines OVHcloud Webhostings
 
 Für ein OVHcloud Webhosting können Sie einfach `Den OVHcloud Webhostings den Zugriff auf die Datenbank erlauben` auswählen.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-step3.png){.thumbnail}
+![Web Cloud Databases](images/tab-empty.png){.thumbnail}
 
 #### Ihren Web Cloud Databases Dienst ändern <a name="modify-ram-web-cloud-db"></a>
 
@@ -81,7 +81,7 @@ Um Ihren Web Cloud Databases Dienst zu bearbeiten, melden Sie sich in Ihrem [OVH
 
 In der Standardansicht **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
 
-![Web Cloud Databases](images/web-cloud-databases-order-ram01.png){.thumbnail}
+![Web Cloud Databases](images/change-the-amount-of-ram.png){.thumbnail}
 
 Wählen Sie die gewünschte RAM-Größe aus und klicken Sie auf `Weiter`{.action}. Danach können Sie die Laufzeit wählen.
 
@@ -103,11 +103,11 @@ Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.
 
 #### MySQL und MariaDB Instanzen
 
-- Gehen Sie zum Tab `Konfiguration`.
+- Gehen Sie zum Tab `Konfiguration`{.action}.
 
 Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihre Datenbank festgelegte Konfiguration. Sie können hier direkt Änderungen durchführen und dann auf `Anwenden`{.action} klicken.
 
-![Web Cloud Databases](images/web-cloud-databases-config02.png){.thumbnail}
+![Web Cloud Databases](images/general-configuration-of-mysql.png){.thumbnail}
 
 - **Tmpdir**: Verzeichnis temporärer Dateien. **/dev/shm** entspricht dem RAM Speicher der Instanz. **/tmp** entspricht der Festplatte der Instanz.
 - **MaxAllowedPacket**: Maximale Paketgröße.
@@ -160,13 +160,28 @@ Nachdem Sie die notwendigen Änderungen durchgeführt haben, klicken Sie auf `Be
 > Jede Änderung erfordert einen Neustart des Datenbankservers.
 > 
 
-#### Instance PostgreSQL
+#### PostgreSQL Instanzen
 
-Die Konfiguration einer PostgreSQL-Instanz kann nicht geändert werden. 
+- Klicken Sie auf den Tab `Konfiguration`{.action}.
 
-Sie können jedoch Erweiterungen auf Ihren Datenbanken aktivieren. Klicken Sie hierzu auf den Tab `Datenbanken` und dann auf das Tabellensymbol der betreffenden Datenbank in der Spalte **Erweiterungen**.
+Im Feld **Allgemeine Konfiguration von PostgreSQL** finden Sie die derzeit für Ihre Datenbank festgelegte Konfiguration. Sie können diese direkt bearbeiten und dann auf `Anwenden`{.action} klicken.
 
-![Web Cloud Databases](images/web-cloud-databases-config03.png){.thumbnail}
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_messages**: Steuert die Ebenen der Nachrichten, die in den Serverlogs protokolliert werden sollen. Für eine Web Cloud Databases Lösung sind folgende Level verfügbar: 
+    - **WARNING**: Stellt Warnmeldungen zu potenziellen Problemen bereit.
+    - **ERROR**: Sendet den Fehler, der zur Stornierung einer laufenden Bestellung geführt hat.
+    - **LOG**: Speichert Informationen für Serveradministratoren.
+    - **FATAL**: Sendet den Fehler, der zum Beenden der aktuellen Sitzung geführt hat.
+    - **PANIC**: Sendet den Fehler, der zum Beenden aller Sitzungen geführt hat.
+
+Jede Ebene enthält alle nachfolgenden Ebenen. Je höher die Stufe, desto weniger Meldungen werden in den Logs des Servers gespeichert.
+
+Der Standardwert ist **WARNING**, da er die Werte **ERROR**, **LOG**, **FATAL** und **PANIC** enthält.
+
+Außerdem können Sie Erweiterungen für Ihre Datenbanken aktivieren. Klicken Sie hierzu auf den Tab `Datenbanken`{.action} und dann auf das Tabellensymbol der betreffenden Datenbank in der Spalte **Erweiterungen**.
+
+![Web Cloud Databases](images/extensions.png){.thumbnail}
 
 ### Ändern der MySQL-, PostgreSQL- oder MariaDB-Version des Datenbankservers
 
@@ -176,7 +191,7 @@ Die aktuelle Version wird unter **Version** angezeigt.
 
 Um die Version anzupassen, klicken Sie auf `Die Version ändern`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-config04.png){.thumbnail}
+![Web Cloud Databases](images/postgre-12-update-version.png){.thumbnail}
 
 #### Wie kann ich die genaue Version von PostgreSQL erfahren, die verwendet wird?
 
@@ -207,33 +222,9 @@ show variables like "version";
 
 ### Logs und Messwerte
 
-#### Statistiken zur Ausführungsdauer der Anfragen
+#### Zugang zu den Logs
 
-So können Sie die Ausführungsdauer auf Ihrem Datenbankserver während der letzten 24 Stunden visualisieren.
-
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
-
-Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die **Statistiken zur Ausführungsdauer der Anfragen**.
-
-![Web Cloud Databases](images/web-cloud-databases-metrics01.png){.thumbnail}
-
-#### Zugang zu Slow-Query-Logs
-
-> **Definition von "slow query log"**
->
-> Es handelt sich um Anfragen, die zu lange benötigten, bis sie ausgeführt wurden. Der Wert wird auf „1 Sekunde“ auf unseren Datenbankservern in der **“long_query_time"**-Variable festgelegt.
-
-Diese Logs (**"slow-query.log"**) können im Wurzelverzeichnis des SFTP-Zugangs Ihres Datenbankservers abgerufen werden.
-
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
-
-Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**.
-
-![Web Cloud Databases](images/web-cloud-databases-SFTP01.png){.thumbnail}
-
-Um sich via **SFTP** einzuloggen, können Sie den Client von FileZilla verwenden. Diese Anleitung kann Ihnen dabei helfen: [Verwendung von FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
-
-Wenn diese Datei leer ist, haben Sie keine langsamen Anfragen.
+Um die Logs Ihrer Web Cloud Databases Lösung einzusehen, folgen Sie unserer Anleitung „[Web Cloud Databases - Logs abrufen](/pages/web_cloud/web_cloud_databases/retrieve-logs)“.
 
 #### Überprüfung der RAM Nutzung
 
@@ -241,7 +232,7 @@ Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken zum verwendeten RAM**.
 
-![Web Cloud Databases](images/web-cloud-databases-metrics02.png){.thumbnail}
+![Web Cloud Databases](images/ram-memory-usage-statistics.png){.thumbnail}
 
 #### Verbindungen pro Minute überprüfen
 
@@ -251,7 +242,7 @@ Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken der Gesamtzahl der Verbindungen pro Minute**.
 
-![Web Cloud Databases](images/web-cloud-databases-metrics03.png){.thumbnail}
+![Web Cloud Databases](images/statistics-for-total-connections-per-minute.png){.thumbnail}
 
 ### Ihre Datenbanken optimieren
 

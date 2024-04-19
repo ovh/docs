@@ -20,7 +20,6 @@ El registro **D**omain-based **M**essage **A**uthentication, **R**eporting, and 
 > 
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [«Más información»](#go-further) de este tutorial.
 >
-> Además, la creación de un registro **DMARC**, independientemente del [servicio de correo de OVHcloud](https://www.ovhcloud.com/fr-ca/emails/), no está disponible en este momento. Esta guía **solo** se aplica a los clientes que tengan una zona DNS activa en OVHcloud para su dominio asociado a una **solución de correo externa**.
 
 ## Requisitos
 

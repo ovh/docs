@@ -1,7 +1,7 @@
 ---
 title: "Changer le propriétaire d’un nom de domaine"
 excerpt: "Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine."
-updated: 2024-01-26
+updated: 2024-03-07
 ---
 
 ## Objectif
@@ -41,8 +41,7 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 >
 > - le site Web du registre **TLD** correspondant ;
 > - la [liste des TLD disponibles sur le site OVHcloud](https://www.ovhcloud.com/fr/domains/tld/) ;
-> - la section `Opérations en cours`{.action} de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour vérifier les mises à jour d'état du nom de domaine.
->
+> - les mises à jour d'état du nom de domaine. Pour vérifier cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action}, puis sur  `Opérations en cours`{.action}.
 
 ### Étape 1 : sélectionner le domaine
 

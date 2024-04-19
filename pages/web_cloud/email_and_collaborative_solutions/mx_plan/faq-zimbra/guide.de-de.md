@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Hier finden Sie die häufigsten Fragen zur Migration der OVHcloud MX Plan Dienste nach Zimbra
-updated: 2024-01-15
+updated: 2024-03-27
 ---
 
 > [!primary]
@@ -22,7 +22,7 @@ Zimbra bietet zahlreiche Funktionen, die in Kürze in den Katalogen von OVHcloud
 
 ### Was sind die Unterschiede zwischen Outlook Web App (OWA) und Zimbra Webmail?
 
-Zimbra bietet vergleichbare Funktionen und ein ähnliches Nutzererlebnis wie OWA. Eine Anleitung zur Nutzung von Zimbra wird in Kürze verfügbar sein.
+Zimbra bietet vergleichbare Funktionen und ein ähnliches Nutzererlebnis wie OWA. Eine Anleitung zur Verwendung von Zimbra finden Sie bereits unter [dieser Adresse](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ### Eröffnet die Migration neue Funktionen?
 
@@ -30,7 +30,7 @@ Die Migration auf das neue Webmail behält den Service-Level des vorherigen Webm
 
 ### Wann erfolgt die Migration meiner Dienstleistungen?
 
-Sie erhalten für jeden Dienst **1 Woche** und nochmals **1 Tag** vor der Migration E-Mail-Benachrichtigungen.
+Sie erhalten für jeden Dienst **2 Woche** und nochmals **1 Tag** vor der Migration E-Mail-Benachrichtigungen.
 
 Ihre Dienste werden schrittweise migriert, sodass die Möglichkeit besteht, dass die Migration Ihrer Dienste mehrere Wochen auseinander liegt.
 
@@ -44,13 +44,13 @@ Während der Migrationsphase ist jedoch eine kurze Unterbrechung des Dienstes er
 
 Diese Migration wurde konzipiert, um die Auswirkungen auf unsere Kunden so gering wie möglich zu halten. Keine Aktionen Ihrerseits werden erwartet.
 
-Best Practices zur Verwaltung von Passwörtern erfordern jedoch manuelles Eingreifen.<br>
-Vor der Migration werden Sie darüber informiert, ob Sie E-Mail-Account-Passwörter ändern müssen. In diesem Fall erhalten Sie eine Liste mit temporären Passwörtern, die nach der Migration angewendet werden.<br>
-Diese Einmalpasswörter werden es Ihren Benutzern ermöglichen, sich mit dem Zimbra-Webinterface zu verbinden. Nach dem ersten Einloggen bei Zimbra muss jeder Benutzer dann ein neues Passwort festlegen.
+Von Ihnen werden keine Änderungen erwartet.
 
 ### Sind Änderungen im OVHcloud Kundencenter vorgesehen?
 
 Es sind keine Änderungen im Kundencenter geplant. Da durch die Migration auf eine neue Lösung umgestellt wird, sind einige unwesentliche Funktionen möglicherweise in den ersten Wochen nach der Migration nicht verfügbar.
+
+Sie finden die Liste der Funktionen und deren Status für diese Migration [am Ende dieser FAQ](#features).
 
 ### Muss ich meine E-Mail-Software neu konfigurieren?
 
@@ -64,7 +64,7 @@ Die Migration auf das neue Zimbra Webmail erfolgt innerhalb der Dienstleistung. 
 
 ### Wo finde ich Anleitungen?
 
-Eine Anleitung zur Verwendung von Zimbra finden Sie demnächst vor der Migration in unserer Dokumentation.
+Eine Anleitung zur Verwendung von Zimbra finden Sie bereits unter [dieser Adresse](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ### Wo werden meine E-Mails nach der Migration gehostet?
 
@@ -88,6 +88,28 @@ Sie können aber weiterhin das OWA Interface nutzen, indem Sie Ihre [E-Mail-Acco
 
 Um Ihr Angebot unter "Meine Dienste" im OVHCloud Kundencenter zu kündigen, folgen Sie der Anleitung "[OVHcloud Dienste kündigen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan)" im Abschnitt zu MX Plan.
 
+### Funktionen, die nach der Migration nach Zimbra beibehalten, ausgesetzt oder entfernt wurden <a name="features"></a>
+
+| Funktion | Beschreibung | Status |
+|-|-|-|
+|**Verwaltung des E-Mail Accounts über das Kundencenter**<br>(Passwort, Alias, Quota)| Beibehalten|✅|
+|**Angebote und Abrechnung**| Beibehalten|✅|
+|**Weiterleitung / Alias / Mailingliste über das Kundencenter**| Beibehalten|✅|
+|**DNS-Konfiguration**<br>(SPF / MX / SRV)| Beibehalten|✅|
+|**E-Mail-Account-Delegierungen**| Per Webmail beibehalten|✅|
+|**E-Mail-Protokolle**<br>(IMAP/POP)| Beibehalten ohne Konfigurationsänderungen|✅|
+|**Inhalt des E-Mail Accounts**<br>(E-Mails, Ordner, Kontakte)| Migriert|✅|
+|**Während des Migrationsprozesses empfangene E-Mails**| Zugestellt|✅|
+|**Automatische Antwort / Beantworter**| Beibehalten|✅|
+|**Eingangsregeln**|- Die in Ihrem E-Mail-Programm konfigurierten Regeln bleiben unverändert.<br>- Die über das OWA Webmail-Interface konfigurierten Regeln werden auf das Zimbra Webmail-Interface migriert. Nur bestimmte Regeln können aufgrund von Inkompatibilität nicht migriert werden. Diese werden als E-Mail an den E-Mail-Account des Benutzers versandt und können manuell neu erstellt werden.<br>- *Inkompatible Regel*: Eine Regel, die zwei Bedingungstypen wie UND und ODER gleichzeitig verwendet. Beispiel: E-Mails von **john@mydomain.ovh** ODER **mary@mydomain.ovh** UND mit dem Betreff "Rechnung" in den Ordner "Wichtig" verschieben.|⚠️|
+|**Persönliche Signatur**|- Die über Ihr E-Mail-Programm konfigurierten Signaturen bleiben unverändert.<br>- Die über OWA Webmail konfigurierten Signaturen werden aufgrund der Formatierung nicht migriert.|⚠️|
+|**Blockieren / Erlauben**| Diese Funktion blockiert E-Mails, die von einem bestimmten Domainnamen oder einer bestimmten E-Mail-Adresse stammen. Sie ist nicht kompatibel mit Zimbra, kann jedoch über Posteingangsregeln in Zimbra wiederhergestellt werden.|❌|
+|**Fußzeile** (Domain-Signatur über das Kundencenter konfigurierbar)| Diese Funktion wird in der neuen Zimbra Infrastruktur nicht verfügbar sein. Es ist jedoch weiterhin möglich, eine Signatur auf Ebene des E-Mail-Accounts zu konfigurieren.|❌|
+|**Sicherheitseinstellungen**| Diese Funktion des Kundencenters, mit der Sie die Passwort-Verwaltung ändern können, wird in Zimbra nicht verwendet.<br> Die standardmäßige Passwort-Sicherheitseinstellung erfordert mindestens 10 alphanumerische Zeichen, 1 Sonderzeichen, 1 Großbuchstaben.|❌|
+|**Spoofing**| Spoofing ist das Versenden einer E-Mail von einer anderen Identität als dem E-Mail-Account, auf dem Sie authentifiziert sind. Diese Vorgehensweise ist nicht mit den SPF- und DKIM-Sicherheitsprotokollen kompatibel, die für die Zustellung von E-Mails erforderlich sind.<br>Von Zimbra aus können Sie eine andere Identität als die des verwendeten E-Mail-Accounts konfigurieren, sofern eine Delegierung erfolgt.|❌|
+
 ## Weiterführende Informationen
+
+[MX Plan - Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

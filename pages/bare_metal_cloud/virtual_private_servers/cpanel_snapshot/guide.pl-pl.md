@@ -1,7 +1,7 @@
 ---
 title: 'Automatyczna kopia zapasowa - kernel panic (cPanel)'
 excerpt: 'Dowiedz się, jak usunąć problemy z blokowaniem serwerów cPanel podczas wykonywania automatycznej kopii zapasowej OVHcloud'
-updated: 2023-06-06
+updated: 2024-01-31
 ---
 
 > [!primary]
@@ -22,7 +22,7 @@ Podczas tworzenia kopii zapasowej Twojego serwera VPS (w przypadku zamówienia a
 
 ## Wymagania początkowe
 
-- Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) (VPS Value, Essential, Comfort lub Elite) na Twoim koncie OVHcloud
+- Wykupienie usługi [VPS](https://www.ovhcloud.com/pl/vps/){.external} z dystrybucją [kompatybilną](https://www.ovhcloud.com/pl/vps/os/).
 - cPanel musi być zainstalowany na serwerze
 
 ## W praktyce

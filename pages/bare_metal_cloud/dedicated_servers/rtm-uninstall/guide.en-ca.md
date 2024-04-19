@@ -13,7 +13,7 @@ The OVHcloud RTM v2 monitoring system has now been deprecated and its repositori
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) with RTM v2 installed
-- Administrative (*root*) access to your server via SSH
+- Administrative (sudo) access to your server via SSH
 
 ## Instructions
 

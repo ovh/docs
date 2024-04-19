@@ -1,7 +1,7 @@
 ---
 title: "Instalacja cPanel na serwerze VPS"
 excerpt: "Dowiedz się, jak utworzyć instancję VPS przy użyciu wstępnie zainstalowanej aplikacji cPanel"
-updated: 2024-01-12
+updated: 2024-01-31
 ---
 
 > [!primary]
@@ -24,10 +24,17 @@ Dzięki interfejsowi graficznemu umożliwiającemu automatyzację parametrów, h
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [VPS](https://www.ovhcloud.com/pl/vps/){.external} (oferty Value, **Essential**, **Comfort** lub **Elite**).
+- Wykupienie usługi [VPS](https://www.ovhcloud.com/pl/vps/){.external} z dystrybucją [kompatybilną](https://www.ovhcloud.com/pl/vps/os/).
 - zalogowanie do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
+
+Jeśli posiadasz już serwer VPS i chcesz na nim zainstalować cPanel, możesz wykonać reinstalację serwera VPS z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przez [OS kompatybilny z cPanelem](https://www.ovhcloud.com/pl/vps/os/).
+
+> [!warning]
+>
+> Jeśli ponownie zainstalujesz serwer VPS, wszystkie dane przechowywane na serwerze VPS zostaną utracone.
+> 
 
 Aby zainstalować serwer cPanel, zamów VPS z dystrybucją cPanel.
 
@@ -40,13 +47,6 @@ Gdy VPS jest gotowy, otrzymasz wiadomość e-mail dającą dostęp do logowania 
  |    aplikacja: cpanel
  |    Możesz zalogować się do cpanel ze strony https://<ip>:2087/<session_parameters>
 ```
-
-Jeśli posiadasz już serwer VPS i chcesz na nim zainstalować cPanel, możesz wykonać reinstalację serwera VPS z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przez [OS kompatybilny z cPanelem](https://www.ovhcloud.com/pl/vps/os/).
-
-> [!warning]
->
-> Jeśli ponownie zainstalujesz serwer VPS, wszystkie dane przechowywane na serwerze VPS zostaną utracone.
-> 
 
 ### Pierwsze logowanie
 

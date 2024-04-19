@@ -1,7 +1,7 @@
 ---
 title: Domande frequenti sul NAS-HA
 excerpt: Hai una domanda sul NAS-HA? Ecco le risposte alle domande più frequenti
-updated: 2023-06-07
+updated: 2024-02-26
 ---
 
 > [!primary]
@@ -113,6 +113,14 @@ No, sui servizi NAS-HA non è possibile installare un OS.
 ### Lo spazio assegnato è partizionabile?
 
 Sì, è necessario creare una o più partizioni in base al tuo utilizzo. La creazione delle partizioni è illimitata.
+
+### Come cambiare capacità di storage sul mio NAS-HA?
+
+Al momento non è possibile modificare dinamicamente il NAS-HA. Per aumentare o ridurre la copertura è quindi necessario:
+
+1. Ordinare un nuovo servizio NAS-HA con la nuova capacità desiderata e disporre così dei vostri due NAS-HA: il vecchio e il nuovo.
+2. Migrare i dati consultando la nostra guida "[Migrazione dei dati da un NAS-HA a un altro via NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration)".
+3. Disattiva il vecchio NAS-HA.
 
 ## Snapshot
 

@@ -38,11 +38,11 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 > [!tabs]
 > **Emails MXplan**
 >> Para comprobar si su MXplan es una versión histórica o nueva, consulte el cuadro de la sección "[Identifique su solución MXplan](#whichmxplan)" de esta guía.<br><br>
->> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> situado al final de la línea correspondiente a la cuenta que quiera modificar y seleccione `Restaurar la cuenta`{.action}.<br><br>
+>> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. Haga clic en el botón `...`{.action} situado al final de la línea correspondiente a la cuenta que quiera modificar y seleccione `Restaurar la cuenta`{.action}.<br><br>
 >>![Correo electrónico](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
->> Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action}, y seleccione el nombre de la plataforma correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> situado al final de la línea correspondiente a la cuenta que desea modificar y, seguidamente, en `Reiniciar`{.action}.<br><br>
+>> Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action}, y seleccione el nombre de la plataforma correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Haga clic en el botón `...`{.action} situado al final de la línea correspondiente a la cuenta que desea modificar y, seguidamente, en `Reiniciar`{.action}.<br><br>
 >> Después de restaurar su cuenta, si desea eliminarla definitivamente, deberá darlo de baja. Para ello, consulte nuestra guía [Gestionar la facturación de sus cuentas Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange).<br><br>
 >>![Correo electrónico](images/exchange-reset.png){.thumbnail}<br>
 >>

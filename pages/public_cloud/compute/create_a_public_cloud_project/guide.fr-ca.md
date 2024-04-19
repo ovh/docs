@@ -1,12 +1,12 @@
 ---
 title: 'Créer votre premier projet Public Cloud'
 excerpt: 'Découvrez comment créer votre premier projet Public Cloud depuis l’espace client OVHcloud'
-updated: 2021-10-06
+updated: 2024-02-22
 ---
 
 ## Objectif
 
-La création d’un projet est la première étape indispensable pour déployer des instances [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/).
+La création d’un projet est la première étape indispensable pour déployer des [instances Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/).
 
 **Ce guide vous guidera à travers les étapes de création de votre premier projet Public Cloud.**
 
@@ -18,33 +18,31 @@ La création d’un projet est la première étape indispensable pour déployer 
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), et cliquez sur le menu `Public Cloud`{.action}.
 
-Cliquez ensuite sur `Créez votre premier projet OVH Public Cloud`{.action}.
+Après en avoir pris connaissance, validez les termes des contrats en cochant la case correspondante puis cliquez sur `Découvrir l'univers Public Cloud`{.action}.
 
-![première connexion](images/firstconnection.png){.thumbnail}
+![création de projet](images/firstproject2024.png){.thumbnail width="400"}
 
-Si vous disposez d'un bon d'achat, vous pouvez alors le renseigner. Seuls les bons d'achats fournis pour votre filiale OVHcloud peuvent être utilisés.
+- Si vous n'avez pas encore de moyen de paiement valide dans votre compte OVHcloud, le processus de création du projet Public Cloud commence. Votre projet sera alors créé en [Mode découverte](#discovery).
+- Si vous avez déjà renseigné un moyen de paiement dans votre compte OVHcloud, vous devez d'abord nommer votre projet Public Cloud puis sélectionner votre moyen de paiment.
 
-> [!warning]
-> Si vous aviez précédemment créé un projet Public Cloud sur votre compte et que vous l'avez supprimé, vous ne pourrez utiliser le bon d'achat.
+![création de projet](images/project-creation.png){.thumbnail width="400"}
+
+Une fois le processus de création terminé, votre nouveau projet Public Cloud sera visible en haut à gauche de la section `Public Cloud`{.action} de votre espace client OVHcloud :
+
+![nouveau projet créé](images/public-cloud-interface.png){.thumbnail width="400"}
+
+Vous avez dorénavant accès à tout l'ecosystème Public Cloud OVHcloud, découvrez cette nouvelle interface de votre espace client en parcourant notre guide « [Se familiariser avec l'interface Public Cloud](/pages/public_cloud/compute/03-public-cloud-interface-walk-me) ».
+
+<a name="discovery"></a>
+
+> [!primary]
+> **Mode Découverte**
 >
-
-Donnez un nom à votre projet, prenez connaissance des contrats et acceptez-les, puis cliquez sur le bouton `Continuer`{.action}.
-
-![name project](images/confirmvoucher.png){.thumbnail}
-
-Vous serez alors invité à **enregistrer un mode de paiement** si vous n’en avez pas déjà renseigné un. Celui-ci vous sera demandé même si un bon d'achat est appliqué.  
-
-Sélectionnez un moyen de paiement, puis cliquez sur `Créer mon projet`{.action}
-
-![add card](images/pci-project-03b_2020.png){.thumbnail}
-
-Une fois cette étape effectuée, la création du projet peut commencer :
-
-![création de projet](images/creatingproject.png){.thumbnail}
-
-Le processus de création terminé, votre nouveau projet Public Cloud sera disponible dans la section `Public Cloud`{.action} de votre espace client OVHcloud :
-
-![nouveau projet créé](images/newprojectcreated.png){.thumbnail}
+> S'il s'agit de votre premier projet Public Cloud et que vous n'avez pas renseigné de moyen de paiement dans votre compte, votre projet Public Cloud est alors restreint au `Mode découverte` de l'espace client OVHcloud. Cela signifie que vous pouvez parcourir et découvrir les produits Public Cloud mais que vous ne pouvez pas encore créer de ressources telles que des instances.
+>
+> Pour exploiter pleinement le potentiel du Public Cloud et démarrer vos premières ressources, cliquez sur `Activer le projet`{.action} dans la page d'accueil de votre projet.
+>
+> ![activer le projet](images/activate-project.png){.thumbnail width="400"}
 
 ## Aller plus loin
 

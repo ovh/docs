@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funcionalidades, capacidades e limites
 excerpt: Descubra as funcionalidades, capacidades e limites atuais das instâncias Local Zones
-updated: 2024-01-09
+updated: 2024-04-08
 ---
 
 > [!primary]
@@ -9,12 +9,6 @@ updated: 2024-01-09
 >
 
 ## Objetivo
-
-> [!primary]
->
-> Atualmente, as instâncias Local Zone só estão implementadas em versão alfa. Se encontrar dificuldades e/ou pretender discutir a sua experiência com outros utilizadores, contacte-nos através de Discord <https://discord.gg/ovhcloud> ou contacte a nossa plataforma comunitária: <https://community.ovh.com/en/>.
-> 
-
 
 As instâncias Local Zones são uma extensão das regiões que aproximam os serviços da OVHcloud de locais específicos, oferecendo uma latência reduzida e performances melhoradas para as aplicações.
 As instâncias Local Zones estão estrategicamente colocadas perto das zonas de forte procura dos utilizadores. O seu objetivo principal é o de minimizar o tempo necessário à transferência dos dados entre o utilizador e a cloud, a fim de tornar os serviços mais rápidos e mais reativos e responder às exigências da Data Residency.
@@ -25,7 +19,7 @@ Encontre mais informações na nossa [página dedicada às instâncias Local Zon
 
 ## Funcionalidades disponíveis
 
-| Ação | Alpha (janeiro) |
+| Ação | Disponibilidade geral (março de 2024) |
 | --- | --- |
 | Instâncias | Sim |
 | Suporte User-data/cloud-init | Sim|
@@ -34,10 +28,15 @@ Encontre mais informações na nossa [página dedicada às instâncias Local Zon
 | Suporte IPv4 Público | Sim |
 | Boot/Start | Sim |
 | Stop | Sim |
+| Block Storage | Sim |
+| Backups das instâncias | Não |
+| Snapshots de volumes| Não |
+| Backups de volumes | Não |
+| Object Storage | Não |
 
 ## Capacidades e limitações
 
-Todas as funcionalidades das instâncias que não estão listadas aqui, como o reboot das instâncias, o suporte de Block ou Object Storage estarão disponíveis nos próximos meses. O nosso objetivo consiste em apoiar todas as funcionalidades já suportadas nas regiões globais.
+Todas as funcionalidades das instâncias que não estão listadas aqui, como o reboot das instâncias, o suporte de Object Storage estarão disponíveis nos próximos meses. O nosso objetivo consiste em apoiar todas as funcionalidades já suportadas nas regiões globais.
 
 ## Feedback
 

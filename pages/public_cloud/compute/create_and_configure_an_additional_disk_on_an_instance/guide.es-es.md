@@ -24,7 +24,7 @@ Esto puede ser útil en los siguientes casos:
 
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Disponer de una instancia de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} en su cuenta de OVHcloud.
-- Tener acceso de administrador (root) a su instancia a través de SSH.
+- Tener acceso de administrador (sudo) a su instancia a través de SSH.
 
 > [!warning]
 >

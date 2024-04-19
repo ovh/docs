@@ -16,12 +16,12 @@ Qui trovi tutti gli elementi per installare manualmente il CMS (Content Manageme
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/) o [amministratore del CMS Joomla!](https://www.joomla.org/){.external}. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni, consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner) o [amministratore del CMS Joomla!](https://www.joomla.org/){.external}. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni, consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
 
 > [!success]
 >
-Per installare Joomla! **automaticamente** dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), consulta la nostra guida sull'[installazione di un modulo in un click](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+Per installare Joomla! **automaticamente** dal tuo [Spazio Cliente OVHcloud](/links/manager), consulta la nostra guida sull'[installazione di un modulo in un click](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Per installare **manualmente un altro CMS** (WordPress, Drupal, PrestaShop), consulta la nostra guida sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -30,15 +30,15 @@ Per installare Joomla! **automaticamente** dal tuo [Spazio Cliente OVHcloud](htt
   
 ## Prerequisiti
 
-- Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
+- Disporre di un [dominio](/links/web/domains)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
   
 ## Procedura
 
 ### Step 1 - preparare l'installazione <a name="step1"></a>
 
-Per installare il CMS **Joomla!** sulla tua offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/), sono necessari alcuni preparativi.
+Per installare il CMS **Joomla!** sulla tua offerta di [hosting web](/links/web/hosting), sono necessari alcuni preparativi.
 
 Segui **gli step** descritti nel nostro tutorial sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) prima di proseguire allo Step 2.
 
@@ -100,7 +100,7 @@ Per i database creati su un Web Cloud Databases, consulta le informazioni indica
 
 - *Either a password you created or a password provided by your host*: l'hai definito tu stesso durante la creazione del tuo database. Se nel frattempo è possibile che tu l'abbia modificato, ti consigliamo di verificarlo.
 
-- *Enter the database name*: questo nome è stato definito durante la creazione del database nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se utilizzi un database incluso con il tuo hosting Web, è lo stesso nome utente del database.
+- *Enter the database name*: questo nome è stato definito durante la creazione del database nello [Spazio Cliente OVHcloud](/links/manager). Se utilizzi un database incluso con il tuo hosting Web, è lo stesso nome utente del database.
 
 - *Enter a table prefix or use the randomly generated one*: se l'installazione avviene con un nuovo database, inserisci il "prefisso" che preferisci. Se utilizzi un database già utilizzato da un altro sito, consulta **lo Step 1.4** della guida sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) per non inserire un "prefisso" di tavolo già utilizzato nel tuo database.
 
@@ -137,8 +137,8 @@ Congratulazioni, Joomla! è pronto per essere utilizzato e somministrato.
 
 [Oficjalna strona Joomla!](https://joomla.org){.external}
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
  
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

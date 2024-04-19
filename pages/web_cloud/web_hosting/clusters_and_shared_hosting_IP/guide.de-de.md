@@ -1,7 +1,7 @@
 ---
 title: "Verzeichnis von IP-Adressen für die Webhosting Cluster"
 excerpt: "Diese Anleitung erklärt, wie Sie welche IP-Adresse für Ihr OVHcloud Webhosting zu verwenden ist"
-updated: 2023-11-21
+updated: 2024-02-28
 ---
 
 > [!primary]
@@ -16,17 +16,17 @@ Es kann notwendig werden, Zugriffseinstellungen für Dienste manuell anzupassen.
 
 > [!primary]
 >
-> Bitte beachten Sie, dass die IP-Adressen der CDN-Option "Anycast"-Adressen sind; das bedeutet, sie benötigen keine Geolokalisierung (siehe auch die Informationen auf unserer [Webseite](https://www.ovhcloud.com/de/web-hosting/options/cdn/).
+> Bitte beachten Sie, dass die IP-Adressen der CDN-Option "Anycast"-Adressen sind; das bedeutet, sie benötigen keine Geolokalisierung (siehe auch die Informationen auf unserer [Webseite](/links/web/hosting-options-cdn).
 > 
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Sie können hier die Clusternummer unter **FTP-Server** ablesen.
+Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Sie können hier die Clusternummer unter **FTP-Server** ablesen.
 
 ### Cluster 002
 
@@ -347,7 +347,7 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Frankreich|FR|213.186.33.3|2001:41d0:1:1b00:213:186:33:3|
 |Irland|IE|188.165.7.3|2001:41d0:1:1b00:188:165:7:3|
 |Portugal|PT|94.23.79.3|2001:41d0:1:1b00:94:23:79:3|
-||Vereinigtes Königreich|UK|87.98.255.3|2001:41d0:1:1b00:87:98:255:3|
+|Vereinigtes Königreich|UK|87.98.255.3|2001:41d0:1:1b00:87:98:255:3|
 |Italien|IT|94.23.64.3|2001:41d0:1:1b00:94:23:64:3|
 |Spanien|ES|87.98.231.3|2001:41d0:1:1b00:87:98:231:3|
 |Polen|PL|87.98.239.3|2001:41d0:1:1b00:87:98:239:3|
@@ -669,8 +669,8 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Italien|IT|94.23.73.16|2001:41d0:301:11::30|
 |Spanien|ES|149.202.105.228|2001:41d0:301:4::30|
 |Polen|PL|188.165.21.8|2001:41d0:301:5::30|
-|Tschechische tchèque|CZ|94.23.168.143|2001:41d0:301:6::30|
-|Niederlande-Bas|NL|149.202.25.75|2001:41d0:301:7::30|
+|Tschechische Republik|CZ|94.23.168.143|2001:41d0:301:6::30|
+|Niederlande|NL|149.202.25.75|2001:41d0:301:7::30|
 |Finnland|FI|188.165.140.151|2001:41d0:301:8::30|
 |Litauen|LT|188.165.24.146|2001:41d0:301:9::30|
 |Deutschland|DE|51.255.232.79|2001:41d0:301:1::30|
@@ -701,8 +701,8 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Italien|IT|94.23.66.84|2001:41d0:301:11::31|
 |Spanien|ES|51.255.26.63|2001:41d0:301:4::31|
 |Polen|PL|87.98.236.253|2001:41d0:301:5::31|
-|Tschechische tchèque|CZ|217.182.52.81|2001:41d0:301:6::31|
-|Niederlande-Bas|NL|213.32.108.83|2001:41d0:301:7::31|
+|Tschechische Republik|CZ|217.182.52.81|2001:41d0:301:6::31|
+|Niederlande|NL|213.32.108.83|2001:41d0:301:7::31|
 |Finnland|FI|178.32.10.72|2001:41d0:301:8::31|
 |Litauen|LT|188.165.30.182|2001:41d0:301:9::31|
 |Deutschland|DE|151.80.4.219|2001:41d0:301:1::31|
@@ -740,6 +740,38 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 51.161.94.36
 ```
 
+### Cluster 100
+
+#### IP-Adressen der Cluster nach Land
+
+|Country|Country Code|IPv4|IPv6|
+|---|---|----|---|
+|Frankreich|FR|5.135.23.164|2001:41d0:301::100|
+|Irland|IE|188.165.0.143|2001:41d0:301:3::100|
+|Portugal|PT|94.23.76.76|2001:41d0:301:2::100|
+|Vereinigtes Königreich|UK|87.98.254.187|2001:41d0:301:12::100|
+|Italien|IT|178.32.143.165|2001:41d0:301:11::100|
+|Spanien|ES|178.33.119.211|2001:41d0:301:4::100|
+|Polen|PL|94.23.89.116|2001:41d0:301:5::100|
+|Tschechische Republik|CZ|94.23.172.226|2001:41d0:301:6::100|
+|Niederlande|NL|94.23.146.244|2001:41d0:301:7::100|
+|Finnland|FI|188.165.137.37|2001:41d0:301:8::100|
+|Litauen|LT|188.165.26.152|2001:41d0:301:9::100|
+|Deutschland|DE|87.98.243.177|2001:41d0:301:1::100|
+|Belgien|BE|91.121.217.51|2001:41d0:301:10::100|
+
+Wenn Sie die Option **Shared CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.100
+```
+
+Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
+
+```bash
+54.36.142.130
+```
+
 ## Weiterführende Informationen
 
 [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
@@ -748,8 +780,8 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 [Optimierung der Performance Ihrer Website](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

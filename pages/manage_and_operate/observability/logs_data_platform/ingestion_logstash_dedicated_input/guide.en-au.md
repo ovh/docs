@@ -5,7 +5,7 @@ updated: 2023-06-20
 
 ## Objective
 
-[Logstash](https://github.com/elastic/logstash){.external} is an open source software developed by Elastic. Based on its features, its possible to send messages from several inputs to different types of output using a variety of codecs, while processing them and transforming them in the process. You can learn a lot more about it on [the official website](https://www.elastic.co/products/logstash){.external}.
+[Logstash](https://github.com/elastic/logstash){.external} is an open source software developed by Elastic. Based on its features, it is possible to send messages from several inputs to different types of output using a variety of codecs, while processing them and transforming them in the process. You can learn a lot more about it on [the official website](https://www.elastic.co/products/logstash){.external}.
 
 This guide will demonstrate how to deploy a personalized Logstash having a specific configuration, and send logs from any source to your stream directly on the Logs Data Platform.
 
@@ -13,7 +13,7 @@ This guide will demonstrate how to deploy a personalized Logstash having a speci
 
 If you are new to Logs Data Platform, completion of the [Quick Start Tutorial](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) is highly recommended.
 
-The following links can help you get a headstart on Logstash in order to get started with the basics:
+The following links can help you get a head start on Logstash in order to get started with the basics:
 
 - [What is Logstash?](#what-is-logstash){.external}
 - [How do I configure Logstash Collector on Logs Data Platform?](#host-a-logstash-collector-on-logs-data-platform){.external}
@@ -25,13 +25,13 @@ This is "All you need to know about the Logstash Collector on the Logs Data Plat
 
 ### What is Logstash
 
-Logstash is a data processing pipeline that allows you to receive information from several sources, transforming them if necessary before sending to a variety of softwares. In the configuration file there are three main parts to configure:
+Logstash is a data processing pipeline that allows you to receive information from several sources, transforming it if necessary before sending it to a variety of softwares. In the configuration file there are three main parts to configure:
 
 - The Input part: details where your logs come from. For instance, some inputs may wait for logs and in some cases inputs are able to fetch them from a database.
 - The Filter part: details how Logstash should parse and transform your logs messages.
 - The Output part: specifies the format and their destination.
 
-Following is a small configuration file for familiarizing yourself with the idea :
+The following is a small configuration file example:
 
 ```ruby
  #input
@@ -71,7 +71,7 @@ Following is a small configuration file for familiarizing yourself with the idea
  }
 ```
 
-This is one example of configuration among others you can use in your own Logstash to send syslog type logs to the Logs Data Platform. There are a lot of filters and plugins available in Logstash, and the list is growing! For example, by sending these kinds of lines into this Logstash:
+This is one of many configuration examples you can use in your own Logstash to send syslog type logs to the Logs Data Platform. There are a lot of filters and plugins available in Logstash, and the list is growing! For example, by sending these kinds of lines into this Logstash:
 
 ```text
  Mar 25 13:20:36 bdiasse-wsant docker[7406]: time="2016-03-25T13:20:36.038884464+01:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers : [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
@@ -97,7 +97,7 @@ This is one example of configuration among others you can use in your own Logsta
  Mar 25 13:24:02 bdiasse-wsant puppet-agent[1377]: Use 'puppet agent --enable' to re-enable.
 ```
 
-You will have the following result in your stream in Graylog :
+You will have the following result in your stream in Graylog:
 
 ![local\_logstash\_graylog](images/local_logstash_graylog.png){.thumbnail}
 
@@ -105,7 +105,7 @@ So, let's suppose you have a lot of hosts and you want to send all your syslog o
 
 ### Host a Logstash collector on Logs Data Platform
 
-The Logstash Collector comes with many advantages :
+The Logstash Collector comes with many advantages:
 
 - The output part of the Logstash is automatically configured by us.
 - You have your own certificate to enable SSL. This certificate can be used for example to trust only the TCP Inputs of your Logstash. This certificate and its associated key can be found at the following paths : **/etc/ssl/private/server.crt** for the cert and **/etc/ssl/private/server.key** for the key. The CA used to create these inputs is at the following location **/etc/ssl/private/ca.crt**. You will find this SSL CA for reference at the end of this document. For the http input with ssl enabled, a keystore with the key+cert+CA in PKCS12 format is present at the following location **/etc/ssl/private/keystore.jks** with keystore password "changeit".
@@ -114,11 +114,11 @@ The Logstash Collector comes with many advantages :
 To host this collector in the Logs Data Platform, you will need to configure it in the Logs Data Platform manager:
 
 - Check the **Data-gathering tools** tab and click on the button `Add a new data-gathering tool`{.action}.
-- The Manager will then ask you to put a elegant name and a wonderful description.
-- Select your Software : Select **Logstash 7.x**.
+- The Manager will then ask you to provide an elegant name and a wonderful description.
+- Select your Software: Select **Logstash 7.x**.
 - Fill the main port of your input. We need to know which port you will use in your input configuration. We will put **4000** for now. This is also a setting you can change later.
 - If you want to restrict the Logstash to specific IP Adresses, you can use the **Trusted Networks** field to firewall your instances. Add every IP Adress or subnet you want to allow, separated by comma. Leave it empty to allow any IP to contact it. Your collector will have a public IP Adress, you can use this feature to prevent people to send you false information in it.
-- Select one of the stream you have to attach this collector to the stream you have. That means that every message that goes out of this collector is automatically routed to the stream.
+- Select one of the streams you have to attached this collector to the stream you have. That means that every message that goes out of this collector is automatically routed to the stream.
 - Finally, select the number of instances you would need to handle your load. We recommend to have at least two instances to ensure the high availabilty of your Logstash. However some uses cases need you to limit the number of instance at 1 (like the [Twitter use case](/pages/manage_and_operate/observability/logs_data_platform/usecase_twitter)).
     - Note that you can also choose to *automatically scale the number of instances*. In this case, you need to select a minimum and maximum number of instances. Your input will then be started with the selected minimum number of instances. If these instances face a heavy load for a certain amount of time (more than 1 minute), your input will be automatically scaled up — one new instance at the time — until it reaches the selected maximum number of instances. On the other hand, if the load decreases, this number of instances will be scaled down until it reaches the minimum number of instances.
 
@@ -128,11 +128,11 @@ The Engine won't allow you to start it if you do not configure it properly. So l
 
 #### Logstash Collector configuration
 
-Click on `Next`{.action} button to display the Logstash Configuration Page as follows :
+Click on `Next`{.action} button to display the Logstash Configuration Page as follows:
 
 ![logstash_creation](images/config_logstash_1.png){.thumbnail}
 
-There is 3 sections in this page :
+There are 3 sections in this page:
 
 - The Input section where you put the Input part of your configuration file.
 - The Filter section where you put the filter part.
@@ -147,7 +147,7 @@ input {
 ```
 We will do it automatically for you.
 
-If we take the configuration example above and if we enable the SSL encryption, we have the following configuration for the Input Section :
+If we take the configuration example above and if we enable the SSL encryption, we have the following configuration for the Input Section:
 
 ```ruby
  tcp {
@@ -163,7 +163,7 @@ If we take the configuration example above and if we enable the SSL encryption, 
 
 ![logstash_creation](images/input_section.png){.thumbnail}
 
-As you can see, this is roughly the same configuration that before. The SSL configuration needs 5 extra parameters :
+As you can see, this is roughly the same configuration that before. The SSL configuration needs 5 extra parameters:
 
 - **ssl_enable**: that allows to enable SSL. Must be set to `true`.
 - **ssl_verify**: this deactivates the client certificate verification process that needs a trusted certificate on client side.
@@ -191,7 +191,7 @@ Starting the input is done by using the `Start`{.action} Button in the **...** m
 
 #### Collector useful information
 
-Once your collector is started, you can copy several informations into your clipboard.
+Once your collector is started, you can copy several pieces of information to your clipboard.
 
 - The hostname
 - The public IP
@@ -246,7 +246,7 @@ For your information, here is the list of Logstash plugins we support. Of course
 
 ##### Input gelf plugin
 
-We patched the gelf input to support TCP+TLS. Example of Input section :
+We patched the gelf input to support TCP+TLS. Example of Input section:
 
 ```ruby
  tcp {
@@ -324,7 +324,7 @@ We patched the gelf input to support TCP+TLS. Example of Input section :
  logstash-codec-rubydebug
 ```
 
-The following plugins are disabled for security reasons :
+The following plugins are disabled for security reasons:
 
 ```
  logstash-input-exec
@@ -363,6 +363,6 @@ That's all you need to know about the Logstash Collector on Logs Data Platform.
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
-- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
+- Documentation: [Guides](/products/observability-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

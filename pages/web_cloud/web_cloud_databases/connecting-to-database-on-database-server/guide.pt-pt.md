@@ -41,7 +41,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 No separador `Informações gerais`, encontrará a ligação de acesso ao phpMyAdmin no quadro **"Gestão da base de dados"** sob a menção "Interface do utilizador".
 
-![sql-privado](images/private-sql-phpma01.png){.thumbnail}
+![sql-privado](images/database-administration.png){.thumbnail}
 
 Será conduzido à página de conexão do phpMyAdmin.
 
@@ -107,7 +107,7 @@ mysql --host=servidor --user=utilizador --port=port --password=password nome_da_
 
 - Lance o SQuirreL. Clique em `Aliases`{.action} e, a seguir, em `+`{.action}.
 
-![lançar SQuirreL SQL](images/1.png){.thumbnail}
+![lançar SQuirreL SQL](images/aliases.png){.thumbnail}
 
 - Preencha os campos abaixo e valide clicando no botão `OK`{.action}:
     - **Name**: Escolha um nome.
@@ -116,15 +116,15 @@ mysql --host=servidor --user=utilizador --port=port --password=password nome_da_
     - **User Name**: Indique o nome de utilizador.
     - **Password**: Indique a palavra-passe.
 
-![config conexao](images/2.png){.thumbnail}
+![config conexao](images/add-alias.png){.thumbnail}
 
 - Torne a validar clicando no botão `Connect`{.action}.
 
-![valid conexao](images/3.png){.thumbnail}
+![valid conexao](images/connect-to-mysql.png){.thumbnail}
 
 Já está conectado à base de dados:
 
-![config conexao](images/4.PNG){.thumbnail}
+![config conexao](images/general-dashboard.png){.thumbnail}
 
 ##### 4. Conexão pelo phpMyAdmin
 
@@ -162,7 +162,7 @@ psql --host=servidor --port=port --user=utilizador --password=password nome_da_b
 
 - Lance o SQuirreL. Clique em `Aliases`{.action} e, a seguir, em `+`{.action}.
 
-![lançar SQuirreL SQL](images/1.png){.thumbnail}
+![lançar SQuirreL SQL](images/aliases.png){.thumbnail}
 
 - Preencha os campos abaixo e valide clicando no botão `OK`{.action}:
     - **Name**: Escolha um nome.
@@ -171,15 +171,15 @@ psql --host=servidor --port=port --user=utilizador --password=password nome_da_b
     - **User Name**: Indique o nome de utilizador.
     - **Password**: Indique a palavra-passe.
 
-![config conexao](images/2.png){.thumbnail}
+![config conexao](images/add-alias.png){.thumbnail}
 
 - Torne a validar clicando no botão `Connect`{.action}.
 
-![valid conexao](images/3.png){.thumbnail}
+![valid conexao](images/connect-to-mysql.png){.thumbnail}
 
 Já está conectado à base de dados:
 
-![config conexao](images/4.PNG){.thumbnail}
+![config conexao](images/general-dashboard.png){.thumbnail}
 
 ## Quer saber mais?
 

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Proteger un directorio o el panel de administración de su sitio web con los archivos .htaccess y .htpasswd"
 excerpt: "Descubra cómo proteger un repertorio o el acceso a la administración de su sitio web mediante autenticación con los archivos .htaccess y .htpasswd"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 > [!primary]
@@ -21,7 +21,7 @@ Utilizando dos archivos de configuración (HTTP) Apache que quiere situar en [el
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 > Deberá configurar los siguientes ejemplos en archivos con los nombres ".htaccess" y ".htpasswd". Atención: Las reglas que usted establezca en estos archivos tienen consecuencias directas en su sitio web. Compruebe sistemáticamente las reglas que añade antes de aplicarlas a su sitio web. 
 > 
@@ -30,8 +30,8 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener un [plan de hosting](/links/web/hosting).
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Disponer de las claves de conexión al [espacio FTP de su alojamiento](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Procedimiento
@@ -47,7 +47,7 @@ Si utiliza un CMS WordPress, OVHcloud también pone a su disposición un tutoria
 >
 > Si tiene cualquier duda relativa a la creación, el uso o la programación de su sitio web, el soporte de OVHcloud no podrá ofrecerle soporte sobre estos temas.
 >
-> Para ello, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o nuestros [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+> Para ello, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o nuestros [partners de OVHcloud](/links/partner).
 >
 
 A continuación explicamos los 4 pasos principales que debe seguir para proteger el acceso a un directorio o a la totalidad o parte de su sitio web:
@@ -126,7 +126,7 @@ Sustituya únicamente por `plain_text_password1`, `plain_text_password2` y `plai
 > Para más información sobre el asunto, consulte la [documentación oficial Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Si dispone de un alojamiento [Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/), conéctese a su alojamiento web en [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Vaya a la carpeta "**raíz*" en la que se encuentra su script "crypt.php".
+Si dispone de un alojamiento [Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), conéctese a su alojamiento web en [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Vaya a la carpeta "**raíz*" en la que se encuentra su script "crypt.php".
 
 Para ello, utilice el siguiente comando SSH:
 
@@ -152,7 +152,7 @@ php crypt.php
 
 > [!warning]
 >
-> Por motivos de seguridad, se recomienda el uso del SSH. No obstante, si tiene un producto [Perso](https://www.ovhcloud.com/es/web-hosting/personal-offer/) en el que el SSH no está disponible, puede igualmente ejecutar el fichero "crypt.php" a través de su navegador web.
+> Por motivos de seguridad, se recomienda el uso del SSH. No obstante, si tiene un producto [Perso](/links/web/hosting-personal-offer) en el que el SSH no está disponible, puede igualmente ejecutar el fichero "crypt.php" a través de su navegador web.
 >
 > Para ello, introduzca la siguiente URL: `https://domain.tld/crypt.php` modificando `domain.tld` por su propio nombre de dominio. Esto se muestra directamente en la barra de direcciones de su navegador web.
 >
@@ -256,8 +256,8 @@ Además, mientras no se haya autenticado para acceder a los archivos afectados p
 
 [Reescribir la URL de acceso a mi sitio web gracias al mod_rewrite a través del archivo .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

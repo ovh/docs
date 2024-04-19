@@ -1,7 +1,7 @@
 ---
 title: "Sustitución del par de claves SSH"
 excerpt: "Cómo restaurar el acceso al servidor en caso de pérdida de la clave privada generando un nuevo par de claves SSH"
-updated: 2023-01-19
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -30,25 +30,13 @@ No obstante, podrá conectarse al servidor utilizando el [modo de rescate de OVH
 
 ## Procedimiento
 
-### Paso 1: Desactivar la llave SSH actual
-
-Para acceder al servidor en modo de rescate, es necesario desactivar primero la llave SSH actual.
-
-Inicie sesión en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda al apartado `Llaves SSH`{.action}. Si necesita ayuda, consulte nuestra guía ["Crear claves SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
-
-La clave pública almacenada en el área de cliente no es necesaria sin la clave privada correspondiente, por lo que puede eliminarla. Haga clic en el botón `...`{.action} situado a la derecha de la llave y seleccione `Eliminar la llave`{.action}.
-
-![Eliminar la llave](images/replace-lost-key-01.png){.thumbnail}
-
-En la nueva ventana, haga clic en `Confirmar`{.action}.
-
-### Paso 2: Crear un nuevo par de claves
+### Paso 1: Crear un nuevo par de claves
 
 Cree un nuevo par de llaves SSH en su puesto de trabajo, tal y como se describe en la primera parte de la guía ["Crear claves SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-<a name="step3"></a>
+<a name="step2"></a>
 
-### Paso 3: Acceder al servidor en modo de rescate y sustituir la llave
+### Paso 2: Acceder al servidor en modo de rescate y sustituir la llave
 
 Siga los pasos que se indican en la guía sobre el modo de rescate para conectarse a su servidor y montar las particiones:
 
@@ -58,7 +46,7 @@ Siga los pasos que se indican en la guía sobre el modo de rescate para conectar
 Cuando acceda a sus archivos, abra el archivo "*authorized_keys*" correspondiente en un editor de texto. Este archivo almacena las llaves SSH y se encuentra en la carpeta `home` del usuario conectado al servidor. (Sustituya "USER_NAME" por su nombre de usuario.)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copie su nueva clave pública (creada en el paso 2) en el archivo. El contenido del archivo debería tener el siguiente formato:
@@ -72,7 +60,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Por motivos de seguridad, elimine la cadena de clave "old" (ahora obsoleta) del archivo. Guarde y salga del editor.
 
-Cambie al modo de arranque "normal" y reinicie el servidor desde el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Consulte la guía "[Activar y utilizar el modo de rescate](#step3)" si es necesario.
+Cambie al modo de arranque "normal" y reinicie el servidor desde el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Consulte la guía "[Activar y utilizar el modo de rescate](#step2)" si es necesario.
 
 Ahora tiene acceso al servidor con su nuevo par de llaves SSH.
 

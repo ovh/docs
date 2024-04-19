@@ -130,8 +130,6 @@ Po wprowadzeniu informacji, kliknij przycisk `Dalej`{.action}, sprawdź dane, kt
 > Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od liczby kont, które posiadasz. Możesz zamówić nowe konta, klikając przycisk `Zamówienie kont`{.action}.
 >
 
-![emailpro](images/emailpro-06.png){.thumbnail}
-
 ### Etap 5: korzystanie z kont e-mail
 
 Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz użyć udostępnionej przez OVHcloud aplikacji online (*webapp*). Aplikacja dostępna jest pod adresem [webmail](https://www.ovhcloud.com/pl/mail/). Zaloguj się, wprowadzając dane identyfikacyjne dla Twojego adresu e-mail.

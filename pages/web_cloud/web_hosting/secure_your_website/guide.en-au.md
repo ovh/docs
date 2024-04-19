@@ -6,10 +6,10 @@ updated: 2024-01-29
 
 ## Objective
 
-This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared servers](https://www.ovhcloud.com/en-au/web-hosting/).
+This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared servers](/links/web/hosting).
 
 This guide is organised in stages in an increasing order of technical difficulty. The security of your site will be measured by the element concerning it that is least protected. We therefore recommend that you carry out all of the actions described here.<br/>
-However, if you experience any difficulties completing some of these steps, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](https://www.ovhcloud.com/en-au/web-hosting/).
+However, if you experience any difficulties completing some of these steps, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](/links/web/hosting).
 
 **Find out how to secure your website.**
 
@@ -22,9 +22,9 @@ However, if you experience any difficulties completing some of these steps, plea
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
 - having the [login details](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- access to the [OVHcloud Control Panel](/links/manager)
 - access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
 ## Instructions
@@ -99,7 +99,7 @@ Add a security plugin recommended by the CMS publisher to your website:
 
 ### Step 10 - Check that your hosting does not contain any malwares
 
-In this step, you will need to log in to your [FTP space](/pages/web_cloud/web_hosting/ftp_connection). It involves technical skills to recognise possible malicious files on your web hosting. If you experience any difficulties with this verification, please do not hesitate to contact our [partners](https://www.ovhcloud.com/en-au/web-hosting/).
+In this step, you will need to log in to your [FTP space](/pages/web_cloud/web_hosting/ftp_connection). It involves technical skills to recognise possible malicious files on your web hosting. If you experience any difficulties with this verification, please do not hesitate to contact our [partners](/links/web/hosting).
 
 If you have any doubts regarding the safety of data within your FTP server, please also carry out the checks in [step 1](#local) once again and [change the password](/pages/web_cloud/web_hosting/ftp_change_password) on your FTP space.
 
@@ -131,6 +131,6 @@ The .htaccess file is an Apache configuration (HTTP) file that is run by your We
 
 [Responding when your hosting is deactivated for security purposes](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

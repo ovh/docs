@@ -1,7 +1,7 @@
 ---
 title: "Sostituzione del vostro paio di chiavi SSH"
 excerpt: "Come ripristinare l’accesso al server in caso di perdita della chiave privata generando una nuova coppia di chiavi SSH"
-updated: 2023-01-19
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -30,25 +30,13 @@ Per accedere al tuo server in [modalità Rescue OVHcloud](/pages/bare_metal_clou
 
 ## Procedura
 
-### Step 1 - Disattiva la chiave SSH corrente
-
-Per accedere al tuo server in modalità Rescue, la chiave SSH attiva deve essere disattivata.
-
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e naviga fino alla sezione `Chiavi SSH`{.action}. Se necessario, consulta la guida ["Creare una chiave SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
-
-La chiave pubblica salvata nello Spazio Cliente è inutile senza la chiave privata corrispondente, puoi quindi eliminarla. Clicca sul pulsante `...`{.action} a destra della chiave e seleziona `Elimina la chiave`{.action}.
-
-![Elimina la chiave](images/replace-lost-key-01.png){.thumbnail}
-
-Nella nuova finestra, clicca su `Conferma`{.action}.
-
-### Step 2 - Crea una nuova coppia di chiavi
+### Step 1 - Crea una nuova coppia di chiavi
 
 Crea una nuova coppia di chiavi SSH sulla tua postazione di lavoro, come descritto nella prima sezione della guida ["Creare una chiave SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-<a name="step3"></a>
+<a name="step2"></a>
 
-### Step 3 - Accedere al tuo server in modalità Rescue e sostituire la chiave
+### Step 2 - Accedere al tuo server in modalità Rescue e sostituire la chiave
 
 Segui gli step della guida sulla modalità Rescue per connetterti al tuo server e montare le tue partizioni:
 
@@ -58,7 +46,7 @@ Segui gli step della guida sulla modalità Rescue per connetterti al tuo server 
 Quando hai accesso ai tuoi file, apri il file "authorized_keys" in un editor di testo. Questo file salva le chiavi SSH e si trova nella cartella `home` dell'utente connesso al tuo server. (Sostituisci "USER_NAME" con il tuo nome utente)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copia e incolla la tua nuova chiave pubblica (creata allo Step 2) nel file. Il contenuto del file dovrebbe essere simile a questo esempio:
@@ -72,7 +60,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Per motivi di sicurezza, rimuovere la stringa di chiave "old" (ormai obsoleta) dal file. Salva e lascia l'editor.
 
-Riavvia la modalità "normale" di avvio e riavvia il server dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se necessario, consulta la guida ["Attivare e utilizzare il Rescue mode"](#step3).
+Riavvia la modalità "normale" di avvio e riavvia il server dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se necessario, consulta la guida ["Attivare e utilizzare il Rescue mode"](#step2).
 
 A questo punto hai accesso al server con la tua nuova coppia di chiavi SSH.
 

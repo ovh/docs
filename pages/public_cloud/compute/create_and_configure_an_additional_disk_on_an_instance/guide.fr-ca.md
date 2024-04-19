@@ -19,7 +19,7 @@ Cela peut être utile dans les cas suivants :
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Disposer d'une instance [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} dans votre compte OVHcloud
-- Avoir un accès administrateur (root) à votre instance via SSH
+- Avoir un accès administrateur (sudo) à votre instance via SSH
 
 > [!warning]
 > Cette fonctionnalité n'est actuellement pas disponible pour les instances Metal.

@@ -15,7 +15,7 @@ Si vous avez atteint la capacité maximale de votre disque supplémentaire, vous
 - Une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre projet Public Cloud.
 - Un [disque supplémentaire](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) créé dans votre projet.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Avoir un accès administratif (root) à votre instance via SSH (Linux) ou RDP (Windows).
+- Avoir un accès administratif (sudo) à votre instance via SSH (Linux) ou RDP (Windows).
 
 ## En pratique
 

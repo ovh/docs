@@ -1,6 +1,6 @@
 ---
-title: Creating and using SSH keys
-excerpt: Find out how to use SSH keys for a secure connection to your server
+title: How to create and use SSH keys
+excerpt: Find out how to create SSH key pairs on your local device and use them to establish secure connections to your server
 updated: 2023-11-22
 ---
 
@@ -17,7 +17,7 @@ This is generally the most secure and convenient connection method.
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
 - An SSH client application (command line or GUI)
-- Administrative access (root) via SSH to your server
+- Administrative access (sudo) via SSH to your server
 
 > [!primary]
 > This guide is not applicable for standard **Windows Server** installations since they rely on the `Remote Desktop Protocol` (RDP) for connections. SSH connections are used for the OVHcloud rescue mode however. You can find more information in the [Go further](#gofurther) section of this guide.
@@ -33,6 +33,8 @@ Be sure to consult our "Getting started" guides: <a name="getstarted"></a>
 
 We recommend reading the [SSH introduction guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) as well.
 
+### Creating an SSH key pair
+
 The following instructions cover two methods of using SSH keys:
 
 - [Creating an **Open SSH** key pair and connecting to a server from the command line SSH client](#openssh)
@@ -40,7 +42,7 @@ The following instructions cover two methods of using SSH keys:
 
 You can use both methods side by side but keep in mind that `PuTTY` stores key files in a specific format which makes them incompatible with SSH key files created with the **Open SSH** client. This means that a private key created with the command line SSH client will have to be [converted to the `PuTTY` format](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt) first and vice versa.
 
-### Creating an SSH key pair from the command line <a name="openssh"></a>
+#### Creating an SSH key pair from the command line <a name="openssh"></a>
 
 From a **Mac** computer or a device with a **Linux OS** installed, open the command line application (`Terminal`).
 
@@ -155,7 +157,7 @@ Copy the full key string to the clipboard in order to [add it to your server](#a
 > When working from a **Windows** command line, use a `right-click` to **paste** the content of your clipboard into the command line window. To **copy** a string from the command line window, highlight it, then press `Enter`. You can also find these functions via a `right-click` on the menu bar.
 >
 
-### Creating an SSH key pair with PuTTY <a name="useputty"></a>
+#### Creating an SSH key pair with PuTTY <a name="useputty"></a>
 
 [PuTTY](https://putty.org/){.external} is an open source SSH client software with a graphical user interface, available for **Windows** and other operating systems. It provides a companion software to create SSH keys: `PuTTY Key Generator` (`PuTTYgen`).
 
@@ -214,7 +216,7 @@ ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Example:
     
 ```bash
-ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@203.0.113.100
 ```
 
 You will be prompted for the user's password. If the process was successful, you will receive a message similar to the one below.
@@ -266,7 +268,7 @@ ssh user@IP_ADDRESS
 Example:
     
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.100
 ```
 
 #### Adding additional public keys to your server
@@ -283,7 +285,7 @@ Save the file and exit the editor.
 
 You might want to use multiple SSH key pairs to connect to different remote hosts. (If you are using `PuTTY`, skip to [the corresponding section](#puttykeys) below.) 
 
-Since all keys should be placed in the folder `.ssh` on your local device, the file names have to be different. When you [create a new key pair](#createnewkey) and you are asked to provide a file name, enter a name of your choice. Match it to your the name of your server for example.
+Since all keys should be placed in the folder `.ssh` on your local device, the file names have to be different. When you [create a new key pair](#createnewkey) and you are asked to provide a file name, enter a name of your choice. Match it to the name of your server for example.
 
 ```console
 Generating public/private rsa key pair.
@@ -302,10 +304,10 @@ ssh -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Example:
     
 ```bash
-ssh -i ~/.ssh/myVPS_rsa ubuntu@169.254.10.250
+ssh -i ~/.ssh/myVPS_rsa ubuntu@203.0.113.100
 ```
 
-As noted in previous sections, the same instructions will work on a **Windows** client. Only replace `~/` with the file path of your **Windows** user folder, by default `C:\Users\WindowsUsername\`. (Example: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@169.254.10.250`)
+As noted in previous sections, the same instructions will work on a **Windows** client. Only replace `~/` with the file path of your **Windows** user folder, by default `C:\Users\WindowsUsername\`. (Example: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@203.0.113.100`)
 
 #### Using the "config" file
 
@@ -317,6 +319,9 @@ Example of `.ssh` folder content:
     
 ```bash
 ls ~/.ssh/
+```
+
+```console
 config	id_rsa	id_rsa.pub	known_hosts	 known_hosts.old
 ```
 
@@ -327,7 +332,7 @@ Open the file and add the following lines at the top:
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 ```
 
@@ -341,11 +346,11 @@ Only the server IP and the key file were specified in the previous example but m
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 
 Host dedicated_server
-    HostName 169.254.10.251
+    HostName 203.0.113.101
     User rocky
     Port 49160
     IdentityFile ~/.ssh/myserver_rsa

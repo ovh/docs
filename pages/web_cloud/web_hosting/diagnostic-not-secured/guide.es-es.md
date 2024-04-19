@@ -31,7 +31,7 @@ En caso de que su sitio web no sea accesible, puede aparecer varios mensajes de 
 ## Requisitos
 
 - Gestionar los servidores y la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) de su nombre de dominio
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
@@ -44,9 +44,9 @@ Para resolver esta anomalía, deberá:
 
 #### Comprobar la dirección IP del alojamiento
 
-Los mensajes de error mencionados [anteriormente](#objective) no significan necesariamente que su sitio web esté alojado en uno de nuestros [planes Web Cloud](https://www.ovhcloud.com/es-es/web-hosting/). Por lo tanto, debe comprobar la dirección IP del servidor al que está asociado su [dominio](https://www.ovhcloud.com/es-es/domains/).
+Los mensajes de error mencionados [anteriormente](#objective) no significan necesariamente que su sitio web esté alojado en uno de nuestros [planes Web Cloud](/links/web/hosting). Por lo tanto, debe comprobar la dirección IP del servidor al que está asociado su [dominio](/links/web/domains).
 
-Para encontrar la dirección IP de su [hosting OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/), haga clic en el botón `Web Cloud`{.action} situado en la esquina superior derecha de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el alojamiento correspondiente.
+Para encontrar la dirección IP de su [hosting OVHcloud](/links/web/hosting), haga clic en el botón `Web Cloud`{.action} situado en la esquina superior derecha de su [área de cliente de OVHcloud](/links/manager) y seleccione el alojamiento correspondiente.
 
 En la pestaña `Información general`{.action}, indique la dirección IPV4 y/o IPV6 de su alojamiento.
 
@@ -54,9 +54,9 @@ En la pestaña `Información general`{.action}, indique la dirección IPV4 y/o I
 
 #### Verificar la dirección IP en la zona DNS
 
-Compruebe que la dirección IP indicada en [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) corresponde a la de su [Web Cloud hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+Compruebe que la dirección IP indicada en [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) corresponde a la de su [Web Cloud hosting](/links/web/hosting).
 
-Haga clic en `Dominios`{.action}  de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el dominio de su sitio web.
+Haga clic en `Dominios`{.action}  de su [área de cliente de OVHcloud](/links/manager) y seleccione el dominio de su sitio web.
 
 Seleccione la pestaña `Zona DNS`{.action} y anote el destino del registro de tipo `A` para su dominio:
 
@@ -67,11 +67,11 @@ Seleccione la pestaña `Zona DNS`{.action} y anote el destino del registro de ti
 |Escenario|Acción a emprender|
 |---|---|
 |La dirección IP indicada en la [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) corresponde a la de su alojamiento compartido.|Pase a el [etapa 2](#etape2).|
-|La dirección IP indicada en la zona no concierne ningún alojamiento de su [cuenta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), pero aparece en la [lista de servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Compruebe que no tiene un alojamiento con esta dirección IP en cualquiera de sus otras [cuentas OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) si ha creado más de uno. Si lo necesita, contacte con su webmaster o los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/) a este respecto.|
-|La dirección IP indicada en la zona no es la de su alojamiento y tampoco aparece en la [lista de servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Contacte su webmaster o los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/) a este respecto.|
+|La dirección IP indicada en la zona no concierne ningún alojamiento de su [cuenta OVHcloud](/links/manager), pero aparece en la [lista de servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Compruebe que no tiene un alojamiento con esta dirección IP en cualquiera de sus otras [cuentas OVHcloud](/links/manager) si ha creado más de uno. Si lo necesita, contacte con su webmaster o los [partners de OVHcloud](/links/partner) a este respecto.|
+|La dirección IP indicada en la zona no es la de su alojamiento y tampoco aparece en la [lista de servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Contacte su webmaster o los [partners de OVHcloud](/links/partner) a este respecto.|
 |En la pestaña `Zona DNS`{.action}, un mensaje indica que su dominio utiliza otros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) y estos aparecen en forma de « ns **?** .ovh.net » o « dns **?** .ovh.net » (sustituya el « **?** » por el número de servidor DNS correspondiente):<br><br>![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}|Modifique los servidores DNS de su dominio para que se ajusten a los inscritos en los registros de tipo `NS` de la zona. Para ello, siga las indicaciones de [esta guía](/pages/web_cloud/domains/dns_server_general_information#acceder-a-la-gestion-de-los-servidores-dns-de-ovhcloud)|
-|En la pestaña `Zona DNS`{.action}, un mensaje indica que su dominio utiliza otros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) y estos no aparecen en el formato « ns **?** .ovh.net » o « dns **?** .ovh.net »:<br><br>![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}|Contacte con su webmaster o los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/) al respecto.|
-|Su nombre de dominio no aparece en la sección `Dominios`{.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).<br><br>O la pestaña `Zona DNS`{.action} de su dominio se muestra de la siguiente manera:<br><br>![zonedns_ndd_pas_en_lec2](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Significa que su dominio no es gestionado desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).<br><br>Compruebe que no esté gestionado desde cualquiera de sus [cuentas OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), si ha creado varias.<br><br>También puede determinar su agente registrador y los servidores DNS a los que está asociado a través de nuestro herramienta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Si es necesario, contacte con su webmaster o los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/) al respecto.|
+|En la pestaña `Zona DNS`{.action}, un mensaje indica que su dominio utiliza otros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) y estos no aparecen en el formato « ns **?** .ovh.net » o « dns **?** .ovh.net »:<br><br>![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}|Contacte con su webmaster o los [partners de OVHcloud](/links/partner) al respecto.|
+|Su nombre de dominio no aparece en la sección `Dominios`{.action} de su [área de cliente OVHcloud](/links/manager).<br><br>O la pestaña `Zona DNS`{.action} de su dominio se muestra de la siguiente manera:<br><br>![zonedns_ndd_pas_en_lec2](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Significa que su dominio no es gestionado desde su [área de cliente de OVHcloud](/links/manager).<br><br>Compruebe que no esté gestionado desde cualquiera de sus [cuentas OVHcloud](/links/manager), si ha creado varias.<br><br>También puede determinar su agente registrador y los servidores DNS a los que está asociado a través de nuestro herramienta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Si es necesario, contacte con su webmaster o los [partners de OVHcloud](/links/partner) al respecto.|
 
 ### Etapa 2: verificar el certificado SSL de su alojamiento <a name="etape2"></a>
 
@@ -81,7 +81,7 @@ En la pestaña `Información general`{.action} de su alojamiento OVHcloud, consu
 
 #### Escenario 1: su alojamiento no contiene certificado SSL
 
-Active un [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/) en su alojamiento siguiendo las instrucciones de este [guía](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Active un [certificado SSL](/links/web/hosting-options-ssl) en su alojamiento siguiendo las instrucciones de este [guía](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 #### Escenario 2: el certificado SSL de su alojamiento no funciona
 
@@ -94,7 +94,7 @@ Si ha contratado uno de los **certificados SSL de pago** de nuestro partner [SEC
 
 > [!primary]
 >
-> Para consultar todos los mensajes enviados por nuestros servicios, haga clic en el botón superior derecha de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Emails de servicio`{.action}.
+> Para consultar todos los mensajes enviados por nuestros servicios, haga clic en el botón superior derecha de su [área de cliente de OVHcloud](/links/manager) y seleccione `Emails de servicio`{.action}.
 >
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 >
@@ -111,8 +111,8 @@ Si ha contratado uno de los **certificados SSL de pago** de nuestro partner [SEC
 
 [Resolver los errores más frecuentes asociados a los módulos en 1 clic](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
  
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas [soluciones de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas [soluciones de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

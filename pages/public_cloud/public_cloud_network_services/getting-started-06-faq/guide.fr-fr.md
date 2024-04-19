@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - FAQ
 excerpt: Foire aux questions sur les services réseau Public Cloud
-updated: 2023-12-12
+updated: 2024-01-30
 ---
 
 ## Objectif
@@ -82,6 +82,10 @@ Tout dépend de l’usage :
 
 Vous pouvez créer un réseau privé dans une région sélectionnée et y attacher la Gateway. Puis, lors de la création d’une instance, sélectionnez « Attacher au réseau privé » et validez à l’aide du bouton « Oui, je veux que mon instance soit totalement privée ».
 
+### L’IP publique de la Gateway est-elle protégée contre les attaques DDoS ?
+
+Oui, l’[infrastructure anti-DDoS d’OVHcloud](https://www.ovhcloud.com/fr/security/anti-ddos/) est activée sur toutes ces adresses IP. Vous pouvez consulter ces informations dans la section `Bare Metal Cloud > Network > IP` de votre espace client.
+
 ### J'ai créé une instance en mode privé (elle n'a que des ports privés). Comment s’y connecter ?
 
 Deux options peuvent être utilisées : 
@@ -98,6 +102,10 @@ Une Floating IP est une adresse IP publique flexible qui peut être associée à
 ### J'ai des VMs qui communiquent sur un réseau privé et je veux associer une Floating IP à une de ces VMs. Quel est le pool à choisir pour l'adresse Floating IP ?
 
 Le pool d'une Floating IP doit être « Ext-Net » et vous pouvez l'associer à un port du réseau privé.
+
+### Les adresses Floating IP sont-elles protégées contre les attaques DDoS ?
+
+Oui, l’[infrastructure anti-DDoS d’OVHcloud](https://www.ovhcloud.com/fr/security/anti-ddos/) est activée sur toutes les adresses Floating IP. Vous pouvez consulter ces informations dans la section `Bare Metal Cloud > Network > IP` de votre espace client.
 
 ## Aller plus loin
 

@@ -1,13 +1,8 @@
 ---
 title: Local Zone Compute - Features, Capabilities and Limitations
 excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
-updated: 2024-01-09
+updated: 2024-04-08
 ---
-
-> [!primary]
->
-> Local Zone Compute is currently only deployed as an alpha version. If you experience any difficulties and/or would like to discuss your experience with other users, please contact us on discord <https://discord.gg/ovhcloud>, or get in touch on our community platform: <https://community.ovh.com/en/>.
-> 
 
 ## Objective
 
@@ -20,7 +15,7 @@ Find more information on our [dedicated Local Zone Compute page](https://www.ovh
 
 ## Available Features
 
-| Action | Alpha (January) |
+| Action | General Availability (March 2024) |
 | --- | --- |
 | Instances | Yes |
 | User-data/cloud-init Support | Yes|
@@ -29,10 +24,15 @@ Find more information on our [dedicated Local Zone Compute page](https://www.ovh
 | Public IPv4 Support | Yes |
 | Boot/Start | Yes |
 | Stop | Yes |
+| Block Storage | Yes |
+| Instance Backups | No |
+| Volume Snapshots | No |
+| Volume Backups | No |
+| Object Storage | No |
 
 ## Capabilities and limitations
 
-All instance features which aren't listed here, like rebooting instances, Block or Object Storage support will be released in the next couple months as the goal is to support the entire features set which is supported in global regions.
+All instance features which aren't listed here, like rebooting instances or Object Storage support will be released in the next couple months as the goal is to support the entire features set which is supported in global regions.
 
 ## Feedback
 

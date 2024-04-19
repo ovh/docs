@@ -1,12 +1,12 @@
 ---
 title: 'Managing contacts for your services'
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-updated: 2021-12-13
+updated: 2024-02-16
 ---
 
 ## Objective
 
-Most services created with OVHcloud are managed by several contacts. Each of these contacts is linked to a unique NIC handle (Customer ID). 
+Most services created with OVHcloud are managed by several contacts. Each of these contacts is linked to a unique customer account.
 
 **Find out how to manage contacts for your OVHcloud services.**
 
@@ -18,8 +18,6 @@ There are three different contact types:
 - **The technical contact** only manages the technical aspects of a service.
 - **The billing contact** only manages the billing aspects of a service. Notably, this contact receives renewal notifications for services. 
 
-The NIC handle is a personal username that you receive via email when you create a customer account with OVHcloud. It is usually made up of two letters, followed by numbers. E.g.: **xx11111-ovh**. When you order services, this NIC handle is used as a contact.
-
 ![Contact management](images/managing_contacts_scheme.png){.thumbnail}
 
 ## Requirements
@@ -27,24 +25,28 @@ The NIC handle is a personal username that you receive via email when you create
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 - Access to the email address linked to any relevant customer account
 - Appropriate rights for the service concerned
-- The new contact’s NIC handle (the contact you want to add)
+- The new contact’s email address
 - No outstanding payments on billing contacts
 
 ## Instructions
 
-### Access contact management.
+> [!primary]
+> Contact management is only possible between two OVHcloud accounts located in the same geographical zone.
+> For example, it is impossible to manage contacts between an account in Europe and an account in Canada.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `Contact management`{.action}.
+### Access contact management
+
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click on the name linked to your customer account in the menu bar in the top right-hand corner, then click `Contact management`{.action}.
 
 ![Contact management](images/hubcontacts.png){.thumbnail}
 
-The table that appears will show all of the services your NIC handle is registered with as a contact.
+The table that appears will show all of the services your account is registered with as a contact.
 
 ![Contact management](images/managing_contacts_02.png){.thumbnail}
 
 ### Change the contacts for a service.
 
-Once you are on the Contacts page, click `...`{.action} to the right of the service you want to modify, then `Modify contacts`{.action}. Enter the new contact(s) you want to add, then click `Confirm`{.action}.
+Once you are on the Contacts page, click `...`{.action} to the right of the service you want to modify, then `Modify contacts`{.action}. Enter the new contact(s) you want (enter the primary email address for the account concerned), then click `Confirm`{.action}.
 
 ![Contact management](images/managing_contacts_03.png){.thumbnail}
 

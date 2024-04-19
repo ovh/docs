@@ -1,7 +1,7 @@
 ---
 title: 'Récupérer et déposer des données sur un serveur dédié via SFTP'
 excerpt: 'Découvrez comment transférer facilement des données depuis et vers votre serveur dédié'
-updated: 2021-05-18
+updated: 2024-02-23
 ---
 
 ## Objectif
@@ -11,8 +11,9 @@ Dans le cadre d'une migration, vous pouvez être amené à devoir récupérer le
 **Découvrez comment déposer ou récupérer des données sur un serveur dédié via SFTP.**
 
 > [!warning]
+>Ce tutoriel vous explique comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes et décrit les actions à effectuer dans un contexte spécifique. Vous devrez peut-être adapter les instructions en fonction de votre situation.
 >
-Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation. Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVHcloud ne sera pas en mesure de vous fournir une assistance.
+>Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/). Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce guide.
 >
 
 ## Prérequis
@@ -32,6 +33,10 @@ Par défaut, un serveur utilisant un système d'exploitation GNU/Linux aura un a
 #### **Si vous avez accès à votre serveur**
 
 Dans l'interface graphique de FileZilla, entrez l'adresse IP de votre serveur dans le champ `Hôte`, ainsi que votre nom d'utilisateur et votre mot de passe dans les champs respectifs. En ce qui concerne le champ `Port`, entrez « 22 » ou le port que votre service SSH écoute si vous l'avez modifié.
+
+> [!warning]
+> Notez que l'accès au dossier de l'utilisateur `root` via SFTP n'est possible qu'en utilisant les identifiants de ce compte utilisateur. Si vous êtes certain de vouloir accéder à ce dossier à distance, retrouvez plus d'informations sur la façon d'activer cette connexion dans notre [guide du compte utilisateur](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
 
 Dès que la connexion est établie, une arborescence de vos fichiers s'affiche dans la partie `Site distant`.
 

@@ -1,14 +1,14 @@
 ---
 title: Activating and using rescue mode on a VPS
 excerpt: Find out how to use the OVHcloud rescue mode to troubleshoot your VPS and run system checks
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 ## Objective
 
 Rescue mode is a tool provided by OVHcloud to boot your VPS into a temporary operating system. You can then access your system in order to run diagnostic tasks and resolve various issues, for example:
 
-- Resetting your user password to regain access
+- [Resetting your user password to regain access](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnosing network problems
 - Repairing a broken operating system
 - Fixing a misconfigured software firewall 
@@ -37,10 +37,6 @@ If you are facing a problem with your system, performing checks in rescue mode h
 ## Instructions
 
 ### Activating rescue mode
-
-> [!warning]
-> Please note that if you have set a **default SSH key** in your Control Panel, you will not receive a root password when rebooting a VPS in rescue mode. In this case, you must first disable the key before proceeding with the server reboot. To do so, please consult the guide "[Creating and using SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey)".
-> 
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
@@ -104,20 +100,16 @@ In rescue mode, `sda` is the rescue mode disk and `sda1` is the primary rescue p
 
 In this example, the primary disk of the VPS is `sdb` and the system partition is `sdb1` (indicated by the size).
 
-Mount this partition with the following commands:
+Mount this partition with the following command:
 
 ```bash
-mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/
 ```
 
-```bash
-mount /dev/sdb1 /mnt/sdb1
-```
-
-Your files are now accessible from the mount point `/mnt/sdb1`:
+Your files are now accessible from the mount point `/mnt`:
 
 ```bash
-cd /mnt/sdb1
+cd /mnt
 ```
 
 ```bash
@@ -133,7 +125,7 @@ bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  op
 Before you can manipulate this partition however, you need to open it for write access which you can do with the following command:
 
 ```bash
-chroot /mnt/sdb1/
+chroot /mnt
 ```
 
 You can now apply changes to your system, for example [reset user passwords and SSH keys](#gofurther).
@@ -154,6 +146,8 @@ If you encounter errors when rebooting a VPS, use the following procedure:
 ## Go further
 
 [Getting started with SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Recovering server access if your user password is lost](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Replacing an SSH key pair](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 

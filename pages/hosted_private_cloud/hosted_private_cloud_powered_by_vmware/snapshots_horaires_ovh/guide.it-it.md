@@ -73,7 +73,7 @@ Per completare la procedura, non ti resta che seguire l'assistente alla creazion
 
 ## E gli Snapshot dopo l'ultima ora?
 
-OVHcloud conserva gli altri 23 snapshot orari (fino a H-24) su una rack di storage (datastore) a cui non hai accesso diretto. Tuttavia, è possibile richiedere il ripristino di uno Snapshot (al di là di H-1, quindi) per una determinata VM tramite una richiesta di intervento fatta al supporto tecnico (fatturata 80 € +IVA). Ripristinare lo Snapshot richiesto nello stesso datastore o in un nuovo datastore non può essere garantito.
+OVHcloud conserva gli altri 23 snapshot orari (fino a H-24) su una rack di storage (datastore) a cui non hai accesso diretto. Tuttavia, è possibile richiedere il ripristino di uno Snapshot (al di là di H-1, quindi) per una determinata VM tramite una [richiesta di intervento **a pagamento** inviata al supporto tecnico](https://help.ovhcloud.com/csm?id=csm_get_help). Ripristinare lo Snapshot richiesto nello stesso datastore o in un nuovo datastore non può essere garantito.
 
 Si tratta di una sicurezza normalmente utilizzata da OVHcloud, gli Snapshot orari non sono un sistema di backup e non sono garantiti.
 

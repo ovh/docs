@@ -132,8 +132,6 @@ Una vez introducida toda la información, haga clic en el botón `Siguiente`{.ac
 > Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas a su disposición. Si necesita más cuentas, puede realizar el pedido utilizando el botón `Contratar cuentas`{.action}.
 >
 
-![emailpro](images/emailpro-06.png){.thumbnail}
-
 ### 5. Utilizar las direcciones de correo electrónico
 
 Una vez configuradas las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición una aplicación en internet (*webmail*). Puede acceder a ella en la dirección [webmail](https://www.ovh.com/es/mail/){.external}, donde deberá introducir las credenciales de su dirección de correo electrónico.

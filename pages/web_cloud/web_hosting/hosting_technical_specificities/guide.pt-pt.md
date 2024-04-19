@@ -16,8 +16,8 @@ As ofertas de alojamento web da OVHcloud são partilhadas. Por conseguinte, a co
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting){.external} compatível.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
@@ -25,14 +25,14 @@ As ofertas de alojamento web da OVHcloud são partilhadas. Por conseguinte, a co
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção "[Quer saber mais?](#go-further)" deste guia.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção "[Quer saber mais?](#go-further)" deste guia.
 > 
 
 ### FTP
 
 - Utilizar o **modo passivo** para as ligações FTP. Certifique-se de que o script ou o cliente FTP está configurado em conformidade.
 
-- Se encontrar o erro de acesso "falha de autenticação de ligação 530" ao aceder ao espaço de armazenamento FTP: Certifique-se de que as informações de acesso ao seu espaço FTP estão corretas. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que vai aparecer, clique no separador `FTP - SSH`{.action}.
+- Se encontrar o erro de acesso "falha de autenticação de ligação 530" ao aceder ao espaço de armazenamento FTP: Certifique-se de que as informações de acesso ao seu espaço FTP estão corretas. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que vai aparecer, clique no separador `FTP - SSH`{.action}.
 
 Nele, encontrará todas as informações de ligação ao seu espaço de armazenamento FTP, com exceção da palavra-passe.
 
@@ -66,14 +66,14 @@ Em caso de abuso ou pirataria, uma parte ou o conjunto do seu serviço poderá s
 
 #### Ligações simultâneas à base de dados
 
-Nas ofertas de alojamento web (bases de dados partilhadas), existe um limite de 30 ligações simultâneas por base de dados (este limite passa para 200 se utilizar uma oferta [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/). Consultar [detalhes das nossas ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) para conhecer as opções disponíveis em cada oferta de alojamento web.
+Nas ofertas de alojamento web (bases de dados partilhadas), existe um limite de 30 ligações simultâneas por base de dados (este limite passa para 200 se utilizar uma oferta [Web Cloud Databases](/links/web/databases). Consultar [detalhes das nossas ofertas de alojamento web](/links/web/hosting) para conhecer as opções disponíveis em cada oferta de alojamento web.
 
-Pode igualmente encomendar ofertas [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) suplementares, estas dispõem de opções de personalização:
+Pode igualmente encomendar ofertas [Web Cloud Databases](/links/web/databases) suplementares, estas dispõem de opções de personalização:
 
 - *max_connections*: 100 por predefinição, com possibilidade de passar para 200;
 - *max_user_connections*: 50 por predefinição, com possibilidade de passar para 200.
 
-Para saber mais, consulte os detalhes dos nossos [planos de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) e o nosso guia "[Primeiros passos com a sua oferta Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Para saber mais, consulte os detalhes dos nossos [planos de alojamento web](/links/web/hosting) e o nosso guia "[Primeiros passos com a sua oferta Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Ligações a partir de um servidor externo
 
@@ -83,7 +83,7 @@ Por razões de segurança, não é possível ligar-se a uma base de dados inclu�
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Apenas os servidores de bases de dados [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) permitem a servidores externos a ligação. Isto tendo previamente autorizado o endereço IP do seu servidor externo no servidor de bases de dados. Se necessário, consulte o guia "[Primeiros passos com a oferta Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Apenas os servidores de bases de dados [Web Cloud Databases](/links/web/databases) permitem a servidores externos a ligação. Isto tendo previamente autorizado o endereço IP do seu servidor externo no servidor de bases de dados. Se necessário, consulte o guia "[Primeiros passos com a oferta Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Variáveis do servidor SQL partilhado
 
@@ -102,7 +102,7 @@ Para mais informações sobre a gestão das bases de dados e sobre a ligação �
 
 ### PHP
 
-Recomendamos que consulte as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/) para se certificar de que a oferta de alojamento web que deseja encomendar se adapta às suas necessidades.
+Recomendamos que consulte as nossas [ofertas de alojamento web](/links/web/hosting-programming-language) para se certificar de que a oferta de alojamento web que deseja encomendar se adapta às suas necessidades.
 
 > [!warning]
 >
@@ -233,8 +233,8 @@ Para serem utilizados no âmbito "OVHcloud Web Statistics", os dados citados sã
 
 [Obter a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

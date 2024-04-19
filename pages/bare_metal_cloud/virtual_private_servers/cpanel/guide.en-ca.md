@@ -1,7 +1,7 @@
 ---
 title: "Deploying cPanel on a VPS"
 excerpt: "Find out how to instantiate a VPS with the pre-installed cPanel application"
-updated: 2024-01-12
+updated: 2024-01-31
 ---
 
 ## Objective
@@ -20,10 +20,17 @@ This simplifies website hosting, thanks to a graphical interface for automating 
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-ca/vps) in your OVHcloud account
+- A [VPS](https://www.ovhcloud.com/en-ca/vps) solution with a [compatible distribution](https://www.ovhcloud.com/en-ca/vps/os/)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
+
+If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) via a [cPanel-compatible OS](https://www.ovhcloud.com/en-ca/vps/os/).
+
+> [!warning]
+>
+> If you reinstall a VPS, all data stored on the VPS will be lost.
+>
 
 To install your cPanel server, order a VPS with the cPanel distribution.
 
@@ -36,13 +43,6 @@ When your VPS is ready, you will receive an email providing the information to c
  |    Application: cpanel
  |    You can connect to cPanel from https://<hostname>:2087/<session_parameters>
 ```
-
-If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) via a [cPanel-compatible OS](https://www.ovhcloud.com/en-ca/vps/os/).
-
-> [!warning]
->
-> If you reinstall a VPS, all data stored on the VPS will be lost.
->
 
 ### First login
 

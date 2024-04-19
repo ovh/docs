@@ -1,33 +1,42 @@
 ---
 title: Available datacenters, worker nodes and persistent storage flavors
 excerpt: ''
-updated: 2022-02-16
+updated: 2024-02-12
 ---
 
 ## Available datacenters, worker nodes and persistent storage flavors
 
 ### Available regions / Datacenters available
 
-A Managed Kubernetes Service deploys a Kubernetes Master within a given OVHcloud datacenter.  
+A Managed Kubernetes Service deploys a Kubernetes Master within a given OVHcloud datacenter.
 All its worker nodes and persistent volumes are then deployed by the cloud controller in the same region.
 
 Currently the service is available in all OVHcloud Public Cloud geographies.
 Note that projects with older regions (such as SBG1 or GRA1 for example) will be invited to transparently activate the latest regions in this zone to benefit from Managed Kubernetes Service.
 
-OVHcloud US customers can also deploy the service in both our East and West American datacenters. 
+OVHcloud US customers can also deploy the service in both our East and West American datacenters.
 
 ### Available worker nodes flavors
 
 When adding a worker node, Managed Kubernetes Service will deploy a managed Public Cloud instance in the same region/datacenter. The worker nodes types correspond to the standard OVHcloud Public Cloud catalog offered in this region and are billed at standard price.
 
-We currently support several types of instances with guaranteed and constant resources:
+We currently support several types of instances with guaranteed and constant resources.
 
-* GENERAL PURPOSE (`B2-*`)
-* CPU ORIENTED (`C2-*`)
-* RAM ORIENTED (`R2-*`)
-* GPU ORIENTED (`T1-*`)
-* DISCOVERY (`D2-4` and `D2-8` only)
-* IOPS ORIENTED (`Id1-*`)
+Here is a comparative table of flavours available by region :
+
+| **GENERAL PURPOSE** | | | **CPU ORIENTED** | | | **RAM ORIENTED** | |
+| :---: | :--- | --- | :---: | :--- | --- | :---: | :--- |
+| Name | Region availibility | | Name | Region availibility | | Name | Region availibility |
+| `B2-*` | All region | | `C2-*` | All region | | `R2-*` | All region |
+| `B3-*` | DE1 / GRA11 / UK1 / WAW1 | | `C3-*` | DE1 / GRA11 / UK1 / WAW1 | | `R3-*` | DE1 / GRA11 / UK1 / WAW1 |
+
+| **GPU ORIENTED** | | | **DISCOVERY** | | | **IOPS ORIENTED** | |
+| :---: | :--- | --- | :---: | :--- | --- | :---: | :--- |
+| Name | Region availibility | | Name | Region availibility | | Name | Region availibility |
+| `T1-*` | BHS5 / GRA5 / GRA7 / GRA11 | | `D2-4` | All region | | `I1-*` | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / SBG5 / UK1 / WAW1 |
+| `T2-*` | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / UK1 / WAW1 | | `D2-8` | All region | | | |
+| `H100-*` | GRA11 | | | | | | |
+| `A100-180` | GRA11 | | | | | | |
 
 Each family offers contains different flavors, consisting of a five amount of vCores, RAM and local storage.  
 For more information, please refer to the following page: [OVHcloud Public Cloud instances](https://www.ovhcloud.com/pl/public-cloud/prices/)

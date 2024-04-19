@@ -21,8 +21,8 @@ Votre hébergement Cloud Web dispose d'un espace de stockage dans lequel vous po
 
 ## Prérequis
 
-- Disposer d'un [hébergement Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external}
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'un [hébergement Cloud Web](/links/web/hosting-cloud-web-offer){.external}
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 - Avoir accès à l'adresse e-mail de contact associée à votre identifiant client.
 
 ## En pratique
@@ -38,13 +38,13 @@ Seules les sauvegardes mentionnées ci-dessus pourront être proposées par OVHc
 
 ### Récupérer une sauvegarde
 
-Contrairement aux hébergements mutualisés OVHcloud, il est impossible d'effectuer une restauration de l'espace FTP en un clic depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+Contrairement aux hébergements mutualisés OVHcloud, il est impossible d'effectuer une restauration de l'espace FTP en un clic depuis [l'espace client OVHcloud](/links/manager){.external}.
 
 Un lien de téléchargement de la sauvegarde est généré puis envoyé par e-mail à l'adresse e-mail associée à l'identifiant client administrateur de l'hébergement Cloud Web.
 
 #### Etape 1 - Générer le lien de récupération envoyé par e-mail
 
-Pour générer le lien de récupération, connectez-vous sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis sur le Cloud Web concerné. 
+Pour générer le lien de récupération, connectez-vous sur votre [espace client OVHcloud](/links/manager){.external}, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis sur le Cloud Web concerné. 
 
 Sélectionnez l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Générer une sauvegarde`{.action} à droite.
 
@@ -60,7 +60,7 @@ Une seconde fenêtre apparaît, vous précisant que le lien de récupération du
 
 Cliquez sur `Confirmer`{.action} pour valider votre demande.
 
-Si la génération de la sauvegarde est bien lancée, le message suivant apparaît dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} :
+Si la génération de la sauvegarde est bien lancée, le message suivant apparaît dans votre [espace client OVHcloud](/links/manager){.external} :
 
 ![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
@@ -81,7 +81,7 @@ Une fois vos fichiers téléchargés, vous pourrez vous [connecter à votre espa
 
 > [!primary]
 >
-> Utilisez bien les ports indiqués dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} pour les connexions en SFTP et SSH car le port 22 ne sera pas fonctionnel pour votre hébergement Cloud Web.
+> Utilisez bien les ports indiqués dans votre [espace client OVHcloud](/links/manager){.external} pour les connexions en SFTP et SSH car le port 22 ne sera pas fonctionnel pour votre hébergement Cloud Web.
 >
 
 ## Aller plus loin 
@@ -90,8 +90,8 @@ Une fois vos fichiers téléchargés, vous pourrez vous [connecter à votre espa
 
 [Se connecter à l'aide du logiciel Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

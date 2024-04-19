@@ -1,6 +1,6 @@
 ---
-title: Gestion du RAID logiciel
-excerpt: Apprenez à vérifier l'état de votre RAID logiciel
+title: Configuration et reconstruction du RAID logiciel
+excerpt: "Découvrez comment vérifier l'état du RAID logiciel de votre serveur et le reconstruire après un remplacement de disque"
 updated: 2023-08-21
 ---
 
@@ -17,7 +17,7 @@ Le niveau RAID par défaut pour les installations de serveurs OVHcloud est RAID 
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} avec une configuration RAID logiciel.
-- Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
+- Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 
 ## En pratique
 
@@ -116,7 +116,7 @@ Disk identifier: 0x150f6797
 Cette commande montre que `/dev/md2` se compose de 888,8 Go et `/dev/md4` contient 973,5 Go. Exécuter la commande « mount » montre la disposition du disque.
 
 ```sh
-# mount
+mount
 
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
@@ -183,13 +183,13 @@ umount /dev/md4
 > [!warning]
 > Veuillez noter que si vous êtes connecté en tant qu'utilisateur `root`, vous pouvez obtenir le message suivant lorsque vous essayez de démonter la partition (dans notre cas, où notre partition md4 est montée dans /home) :
 >
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
+> <pre class="highlight language-console"><code class="language-console">umount: /home: target is busy</code></pre>
 >
 > Dans ce cas, vous devez vous déconnecter en tant qu'utilisateur root et vous connecter en tant qu'utilisateur local (dans notre cas, `debian`) et utiliser la commande suivante :
 >
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
+> <pre class="highlight language-console"><code class="language-console">debian@ns000000:/$ sudo umount /dev/md4</code></pre>
 >
-> Si vous ne disposez pas d'utilisateur local, vous devez en créer un.
+> Si vous ne disposez pas d'utilisateur local, [vous devez en créer un](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 Le résultat obtenu sera le suivant :
 

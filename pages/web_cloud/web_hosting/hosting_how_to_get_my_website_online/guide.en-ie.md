@@ -1,21 +1,21 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2022-07-21
+updated: 2024-03-21
 ---
 
 ## Objective
 
-There are a multitude of different websites on the internet. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVHcloud Web Hosting space](https://www.ovhcloud.com/en-ie/web-hosting/){.external} lets you host the site you want, provided it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
+There are a multitude of different websites on the internet. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVHcloud Web Hosting space](/links/web/hosting){.external} lets you host the site you want, provided it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Learn how to publish a website on your OVHcloud Web Hosting space.**
 
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}.
+- You must have an [OVHcloud Web Hosting plan](/links/web/hosting){.external}.
 - You must have received an email confirming that your Web Hosting plan has been set up.
-- You must have a [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} that can be used to access your website.
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- You must have a [domain name](/links/web/domains){.external} that can be used to access your website.
+- You must be logged in to your [OVHcloud Control Panel](/links/manager){.external}.
 - being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan).
 
 ## Instructions
@@ -24,7 +24,7 @@ There are a multitude of different websites on the internet. Whether you are cre
 
 Having a clear idea of your objective is essential if your project is to be a success. What do you want to do with your website? How will you publish it? There are several potential ways to make your project become a reality with your OVHcloud Web Hosting plan:
 
-- **Use a turn-key site, with OVHcloud’s 1-click modules.** This solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). OVHcloud offers four such 1-click modules, compatible with our infrastructures, on the [“Create a website with 1-click modules”](https://www.ovhcloud.com/en-ie/web-hosting/uc-website/){.external} page.
+- **Using a turn-key website, with OVHcloud’s one-click modules**: This solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures that are featured on the OVHcloud webpage ["How to create a website"](/links/web/hosting-website){.external}. Please also see our guide ["Setting up your website with 1-click modules"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Use a turn-key website that you install manually.** This solution gives you the benefit of a ready-made website structure that you can customise (themes, text, etc.), which you install yourself on your OVHcloud Web Hosting space.
 
@@ -59,7 +59,7 @@ Make sure you have all the files for the website that you are looking to publish
 
 If you have an FTP username, a password and a server address, you will be able to log in to your storage space. These elements were sent to you in the email informing you that your OVHcloud Web Hosting plan had been set up. If you are no longer in possession of the password, refer to the instructions set out in this guide: [“Changing the password for an FTP user”](/pages/web_cloud/web_hosting/ftp_change_password).
 
-To obtain the server address or username to allow you to access your storage space, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then click on `Hosting Plans`{.action}. Select the name of the hosting plan concerned and click on the `FTP - SSH`{.action} tab.
+To obtain the server address or username to allow you to access your storage space, log in to your [OVHcloud Control Panel](/links/manager){.external}, then click on `Hosting Plans`{.action}. Select the name of the hosting plan concerned and click on the `FTP - SSH`{.action} tab.
 
 ![siteinstallation](images/tab-pro.png){.thumbnail}
 
@@ -69,7 +69,7 @@ Once you are in possession of all the elements, you have three different options
 
 - **Use FTP-compatible software.** You will need to install an FTP-compatible program on your computer (e.g. FileZilla). Since OVHcloud did not create the software package you have installed, please contact its publisher if you encounter any difficulties when using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} are required to use this type of access.
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud Web Hosting plan](/links/web/hosting){.external} are required to use this type of access.
 
 #### 3. Uploading the files to the storage space
 
@@ -102,9 +102,9 @@ If you are migrating an existing website, you can recover your existing database
 
 #### 2. Create the database with OVHcloud 
 
-If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, a [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/){.external}) you will need your username and password, the name of the database and the address of the server. You can now proceed to the next step.
+If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](/links/web/hosting){.external}, a [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/){.external}) you will need your username and password, the name of the database and the address of the server. You can now proceed to the next step.
 
-If you want to create a new database with OVHcloud, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then click on `Hosting plans`{.action}. Select the name of the hosting plan concerned and click on the `Database`{.action} tab.
+If you want to create a new database with OVHcloud, log in to your [OVHcloud Control Panel](/links/manager){.external}, then click on `Hosting plans`{.action}. Select the name of the hosting plan concerned and click on the `Database`{.action} tab.
 
 Now click the `Create a database`{.action} button, or, if this button is not shown, click on `Actions`{.action}, then on `Create a database`{.action}. Follow the instructions shown.
 
@@ -120,7 +120,7 @@ There are several methods for importing a database. OVHcloud offers one of these
 
 Once your database is available and you have uploaded your files to your storage space, all you need to do is connect them. To do this, you will need the following information: a username, the associated password, the name of the database and the address of the server.
 
-How this connection is created will depend on the type of website you are publishing. This process is dictated by how your website is configured and has nothing to do with OVHcloud. We therefore recommend that you contact your website’s editor or a similar professional (such as a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/)) if you need assistance with this procedure.
+How this connection is created will depend on the type of website you are publishing. This process is dictated by how your website is configured and has nothing to do with OVHcloud. We therefore recommend that you contact your website’s editor or a similar professional (such as a [specialist service provider](/links/partner)) if you need assistance with this procedure.
 
 ### Step 4: access your website
 
@@ -144,8 +144,8 @@ As a reminder, if you encounter difficulties when publishing your website, we re
 
 [Modifying an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: Attaching a Floating IP to a Public Cloud instance (EN)
 excerpt: Find out how a Floating IP address functions and how to configure it
-updated: 2023-08-18
+updated: 2024-03-26
 ---
 
 ## Objective
@@ -39,7 +39,7 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 #### Attaching a Floating IP to an instance
 
 > [!success]
-> Click one of the two tabs below depending on whether you want to attach a Floating IP to a new instance (**Option 1**) or an existing instance (**Option 2*).
+> Click one of the two tabs below depending on whether you want to attach a Floating IP to a new instance (**Option 1**) or an existing instance (**Option 2**).
 
 > [!tabs]
 > **Option 1**
@@ -52,12 +52,12 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >> 
 >> Before creating your instance, make sure you have created a [private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
+>> To create a new instance, follow [this guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) if necessary. 
+>>
 >>
 >> > [!warning]
 >> > As of today, all regions do not support this feature. Make sure to create an instance in a valid region. For more information, please refer to our [regions availability](https://www.ovhcloud.com/es/public-cloud/regions-availability/) page. 
 >> > 
->>
->> To create a new instance, follow [this guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) if necessary. 
 >>
 >> In Step 5, you have the option to choose a mode for your instance: Public mode or Private mode to be used for your instance networking. 
 >>
@@ -142,6 +142,9 @@ In the pop-up window, proceed with the deletion of the IP by clicking on `Confir
 ### Via the OpenStack API
 
 #### Attaching a Floating IP to an instance
+
+> [!success]
+> Click on the tabs below to view each of the 9 steps in turn.
 
 > [!tabs]
 > **Step 1**
@@ -337,6 +340,9 @@ In the pop-up window, proceed with the deletion of the IP by clicking on `Confir
 >> >
 
 #### Adding a DNS to a Floating IP
+
+> [!primary]
+> This procedure must be carried out **after** you have followed the 9 steps above.
 
 To add a DNS to a Floating IP, run the following command from the command line.
 

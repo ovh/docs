@@ -16,7 +16,7 @@ In alcuni casi, potrebbe essere necessario l'intervento di un amministratore OVH
 
 ## Prerequisiti
 
-- Avere [accesso in SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external} (root)
+- Avere [accesso in SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external} (sudo)
 
 ## Procedura
 

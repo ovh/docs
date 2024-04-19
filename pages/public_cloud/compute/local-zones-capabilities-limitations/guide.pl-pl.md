@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funkcje, możliwości i ograniczenia
 excerpt: Poznaj aktualne funkcje, możliwości i ograniczenia instancji Local Zones
-updated: 2024-01-09
+updated: 2024-04-08
 ---
 
 > [!primary]
@@ -9,11 +9,6 @@ updated: 2024-01-09
 >
 
 ## Wprowadzenie
-
-> [!primary]
->
-> Instancje Local Zone są aktualnie wdrażane tylko w wersji alfa. Jeśli masz trudności i/lub chcesz przedyskutować swoje doświadczenia z innymi użytkownikami, skontaktuj się z nami pod adresem Discord <https://discord.gg/ovhcloud> lub skontaktuj się z naszą platformą społecznościową pod adresem <https://community.ovh.com/en/>.
-> 
 
 Instancje Local Zones są rozszerzeniem regionów, które przybliżają usługi OVHcloud do konkretnych lokalizacji. Dzięki temu zapewniają krótszy czas odpowiedzi i większą wydajność aplikacji.
 Instancje Local Zones są strategicznie rozmieszczone w pobliżu obszarów o wysokim zapotrzebowaniu użytkowników. Ich głównym celem jest zminimalizowanie czasu potrzebnego na transfer danych między użytkownikiem a chmurą, aby usługi były szybsze i bardziej reaktywne oraz aby spełnić wymagania stawiane przez Data residency.
@@ -24,7 +19,7 @@ Więcej informacji znajdziesz na naszej [stronie poświęconej instancjom Local 
 
 ## Dostępne funkcje
 
-| Operacja | Alpha (styczeń) |
+| Operacja | Ogólna dostępność (marzec 2024) |
 | --- | --- |
 | Instancje | Tak |
 | Pomoc User-data/cloud-init | Tak|
@@ -33,10 +28,15 @@ Więcej informacji znajdziesz na naszej [stronie poświęconej instancjom Local 
 | Obsługa IPv4 | Tak |
 | Boot/Start | Tak |
 | Stop | Tak |
+| Block Storage | Tak |
+| Kopie zapasowe instancji | Nie |
+| Snapshoty wolumenów | Nie |
+| Kopie zapasowe woluminów | Nie |
+| Object Storage | Nie |
 
 ## Możliwości i ograniczenia
 
-Wszystkie funkcje instancji, których nie ma na liście, takie jak restart (reboot) instancji, obsługa bloków lub Object Storage, będą dostępne w ciągu najbliższych miesięcy. Naszym celem jest obsługa wszystkich funkcji już obsługiwanych w regionach globalnych.
+Wszystkie funkcje instancji, których nie ma na liście, takie jak restart (reboot) instancji lub obsługa Object Storage, będą dostępne w ciągu najbliższych miesięcy. Naszym celem jest obsługa wszystkich funkcji już obsługiwanych w regionach globalnych.
 
 ## Opinie
 
