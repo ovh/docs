@@ -30,7 +30,25 @@ In S3, a bucket is a flat container of objects. It does not provide any hierarch
 > - CSS files must be uploaded with text/css as their ContentType.
 > - Make your bucket content publicly available, i.e all resources must have ACL "public-read".
 
-### Step 2: Setting the website configuration for a bucket
+
+### Step 2: Setting the permissions
+
+The buckets hosting the website and its contents must be publically accessible i.e with READ permission set for all users.
+
+**Example**:
+Using the predefined PUBLIC-READ ACL at the bucket level:
+
+```sh
+aws --profile user-aws s3api put-bucket-acl --bucket my-website --acl public-read
+```
+
+Applying the predefined PUBLIC-READ ACL on **all** the objects:
+```sh
+aws --profile user-aws s3api put-object-acl --bucket my-website --key <file> --acl public-read
+```
+
+
+### Step 3: Setting the website configuration for a bucket
 
 To activate website hosting, you will have to upload a website configuration.
 
@@ -59,7 +77,7 @@ If you use the AWS low-level commands with website-conf.json:
 }
 ```
 
-### Step 3: Testing the endpoint
+### Step 4: Testing the endpoint
 
 Once the website configuration has been successfully uploaded, you can test the endpoint in your web browser.
 The default endpoint will depend on the region of your bucket.
