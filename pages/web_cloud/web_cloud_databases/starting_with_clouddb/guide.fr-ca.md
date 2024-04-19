@@ -204,7 +204,7 @@ Pour accéder aux logs de votre solution Web Cloud Databases, consultez notre gu
 
 [Configurer votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/configure-database-server){.external}
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

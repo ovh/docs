@@ -121,7 +121,7 @@ pg_dump —host=server —port=port —user=utente —password=password nome_dat
 
 [Ripristinare e importare un database sul tuo server di database](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
