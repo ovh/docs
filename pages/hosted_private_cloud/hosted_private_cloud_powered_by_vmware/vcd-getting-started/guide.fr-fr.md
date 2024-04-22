@@ -14,7 +14,7 @@ updated: 2024-04-16
 > Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
 - Avoir un compte VMware Cloud Director
-- Avoir une infrastructure VMware type Vsphere/Vcenter/vSAN/ESXI/NSX
+- Avoir une infrastructure VMware Cloud Foundation (VCF)
 
 ## En pratique
 
@@ -42,7 +42,7 @@ Les différentes sections disponibles :
 
 ### Datacenters
 
-![Datacenters Overview](images/vcd-datacenters-overview.png){.thumbnail}
+![Datacenters Overview](images/vcd-create-VM.gif){.thumbnail}
 
 Retrouvez dans cette sections tous vos datacenters virtuels (**vDC**) commandés avec différents emplacements de datacenters, un bref suivi de votre consommation de ressources et du nombre de vApps/VM en cours d’exécution.
 
@@ -60,7 +60,7 @@ Dans cette section, retrouvez tous les composants réseau de vos environnements 
 
 ### Content Hub
 
-![Content Hub Overview](images/vcd-content-overview.png){.thumbnail}
+![Content Hub Overview](images/vcd-catalog-ISO.gif){.thumbnail}
 
 Cette section vous permet d'administrer vos catalogues : créez, supprimez ou téléchargez des fichiers ISO, des modèles OVA, ou bien utilisez tout simplement les modèles préconfigurés disponibles dans le catalogue OVHcloud.
 
