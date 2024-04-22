@@ -1,7 +1,7 @@
 ---
 title: "Transferring a domain name to another registrar"
 excerpt: "Find out how to move a domain name from OVHcloud to a provider of your choice"
-updated: 2023-07-04
+updated: 2024-04-11
 ---
 
 ## Objective
