@@ -54,6 +54,10 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 On the `General information`{.action} tab you can find the `Protection against domain name transfer`{.action} slider button under **Security**, set to `Enabled`{.action} by default.
 
+> [!warning]
+>
+> If the `Transfer protection` button is not present, this means that your domain name extension does not require a transfer code. You can then launch your transfer directly.
+
 ![outgoingtransfer](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Click on the slider and confirm in the popup window that you want to remove this protection. Allow a few minutes for the status to change to `Disabled`{.action}.

@@ -55,6 +55,10 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Sous l'onglet `Informations générales`{.action}, vous trouverez le curseur `Protection contre le transfert` sous **Securité**. Par défaut, cette protection est `Activée`{.action}.
 
+> [!warning]
+>
+> Si le bouton `Protection contre le transfert` n'est pas présent, cela signifie que votre extension de nom de domaine ne nécessite pas de code de transfert. Vous pouvez alors lancer directement votre transfert.
+
 ![protection activée](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous souhaitez supprimer cette protection. Patientez quelques minutes pour que l'état passe à `Désactivée`{.action}.

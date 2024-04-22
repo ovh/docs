@@ -59,6 +59,10 @@ Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?act
 
 En la pestaña `Información general`{.action}, encontrará el cursor `Protección contra la transferencia` en **Seguridad**. Por defecto, esta protección está `Activada`{.action}.
 
+> [!warning]
+>
+> Si el botón `Protección contra la transferencia` no está presente, significa que la extensión del dominio no requiere un código de transferencia. A continuación, podrá lanzar la transferencia directamente.
+
 ![protección activada](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Haga clic en el cursor y confirme en la nueva ventana que desea eliminar la protección. Espere unos minutos a que el estado pase a `Desactivado`{.action}.
