@@ -15,7 +15,7 @@ OVHcloud Web PaaS powered by Platform.sh enables web developers to manage, devel
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Visiting the [product page](https://www.ovhcloud.com/en-gb/web-paas/) to decide which plan is suitable for your project's requirements
+- Visiting the [product page](/links/web/web-paas) to decide which plan is suitable for your project's requirements
 
 ## Instructions
 
@@ -33,7 +33,7 @@ Give your project a name and click on `Next`{.action}.
 
 #### Step 2: Choose a plan
 
-Select a plan that best suits your needs after verifying the details and capabilities on the [product page](https://www.ovhcloud.com/en-gb/web-paas/). If necessary, increase the number of vCPUs in the drop-down menu of the chosen solution.
+Select a plan that best suits your needs after verifying the details and capabilities on the [product page](/links/web/web-paas). If necessary, increase the number of vCPUs in the drop-down menu of the chosen solution.
 
 You can upgrade or downgrade the project later in the Control Panel. Note that a downgrade to the `Start`{.action} plan will not be possible after creating the project.
 
@@ -49,13 +49,13 @@ Choose the geographical region of the data centre in which your project will be 
 
 - If the project relies on your own pre-existing code, you will be able to import it: click on `Create your template`{.action} and continue with `Next`{.action}.
 
-- If you click on `Select an existing template`{.action}, the list of available templates will be displayed along with their properties. You can check the [product page FAQ](https://www.ovhcloud.com/en-gb/web-paas/) to find out which templates are included in the respective plan. Select one and click on `Next`{.action}.
+- If you click on `Select an existing template`{.action}, the list of available templates will be displayed along with their properties. You can check the [product page FAQ](/links/web/web-paas) to find out which templates are included in the respective plan. Select one and click on `Next`{.action}.
 
 ![project type](images/creation_manager04.png){.thumbnail}
 
 #### Step 5: Configure your project
 
-In this step you can choose additional resources for the project, according to the plan you have selected. Please refer to our [product page](https://www.ovhcloud.com/en-gb/web-paas/) for details about the available **Environments**, **Storage**, and **User licences** for each plan.
+In this step you can choose additional resources for the project, according to the plan you have selected. Please refer to our [product page](/links/web/web-paas) for details about the available **Environments**, **Storage**, and **User licences** for each plan.
 
 ![configure details](images/creation_manager05.png){.thumbnail}
 
@@ -66,7 +66,7 @@ The options chosen here can be modified in the Control Panel later. Note that it
 Finally, review the order summary and click on `Create a project`{.action} to confirm. This will initiate the payment process.
 
 > [!primary]
-> You can order the service from the [product page](https://www.ovhcloud.com/en-gb/web-paas/) as well.
+> You can order the service from the [product page](/links/web/web-paas) as well.
 >
 > Each project requires a separate service subscription. In order to add a project, simply repeat the steps above.
 
