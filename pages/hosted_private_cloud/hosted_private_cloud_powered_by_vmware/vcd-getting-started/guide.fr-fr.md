@@ -14,6 +14,7 @@ updated: 2024-04-16
 > Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
 - Avoir un compte VMware Cloud Director
+- Avoir une infrastructure VMware type Vsphere/Vcenter/vSAN/ESXI/NSX
 
 ## En pratique
 
@@ -32,7 +33,7 @@ Les différentes sections disponibles :
 2. **Applications**
 3. **Networking**
 4. **Content Hub**
-5. **Adminstation**
+5. **Administration**
 6. **Monitor**
 7. **More**
 8. **Loupe**
@@ -49,7 +50,7 @@ Retrouvez dans cette sections tous vos datacenters virtuels (**vDC**) commandés
 
 Cette section vous permet de profiter d'une vision d'ensemble complète de tous vos vApps et machines virtuelles sur vos centres de données virtuels (vcd) : créez, accédez et supprimez des vApps ou des machines virtuelles en toute simplicité.
 
-![Applications Overview](images/vcd-applications-overview.png){.thumbnail}
+![Applications Overview](images/vcd-Vapp-view.png){.thumbnail}
 
 ### Networking
 
