@@ -1,7 +1,7 @@
 ---
 title: "Transferir um domínio para outro agente de registo"
 excerpt: "Saiba como transferir um domínio da OVHcloud para o agente de registo da sua escolha"
-updated: 2023-06-28
+updated: 2024-04-11
 ---
 
 > [!primary]
@@ -58,6 +58,10 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e selecione o domínio correspondente.
 
 No separador `Informações gerais`{.action}, encontrará o cursor `Proteção contra a transferência` sob **Segurança**. Por predefinição, esta proteção está `Ativada`{.action}.
+
+> [!warning]
+>
+> Se o botão `Proteção contra transferência` não estiver presente, tal significa que a extensão do domínio não requer nenhum código de transferência. Poderá então lançar diretamente a sua transferência.
 
 ![proteção ativada](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 

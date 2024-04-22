@@ -1,7 +1,7 @@
 ---
 title: "Transferring a domain name to another registrar"
 excerpt: "Find out how to move a domain name from OVHcloud to a provider of your choice"
-updated: 2023-07-04
+updated: 2024-04-11
 ---
 
 ## Objective
@@ -53,6 +53,10 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and select `Web Cloud`{.action}. Click `Domain names`{.action}, then choose the domain name concerned.
 
 On the `General information`{.action} tab you can find the `Protection against domain name transfer`{.action} slider button under **Security**, set to `Enabled`{.action} by default.
+
+> [!warning]
+>
+> If the `Transfer protection` button is not present, this means that your domain name extension does not require a transfer code. You can then launch your transfer directly.
 
 ![outgoingtransfer](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 

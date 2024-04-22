@@ -1,7 +1,7 @@
 ---
 title: "Transfer domeny do innego operatora"
 excerpt: "Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora"
-updated: 2023-06-28
+updated: 2024-04-11
 ---
 
 > [!primary]
@@ -58,6 +58,10 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wybierz `Web Cloud`{.action}. Kliknij `Domeny`{.action}, po czym wybierz odpowiednią nazwę domeny.
 
 W zakładce `Informacje ogólne`{.action} znajdziesz suwak `Ochrona przed transferem` pod **zabezpieczeniem**. Domyślnie ochrona ta jest `Aktywne`{.action}.
+
+> [!warning]
+>
+> Jeśli przycisk `Ochrona przed transferem` nie jest widoczny, oznacza to, że rozszerzenie domeny nie wymaga kodu transferu. Będziesz mógł wówczas rozpocząć transfer domeny.
 
 ![ochrona włączona](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 

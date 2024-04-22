@@ -1,7 +1,7 @@
 ---
 title: "Trasferire un dominio verso un altro Registrar"
 excerpt: "Questa guida ti mostra come effettuare il trasferimento di un dominio OVHcloud verso un altro provider"
-updated: 2023-06-28
+updated: 2024-04-11
 ---
 
 > [!primary]
@@ -58,6 +58,10 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. Clicca sui `Domini`{.action} e seleziona il dominio interessato.
 
 Nella scheda `Informazioni generali`{.action}, visualizzi il cursore `Richiedi Auth info` sotto **Sicurezza**. Di default, questa protezione è `Attiva`{.action}.
+
+> [!warning]
+>
+> Se il pulsante `Protezione contro il trasferimento` non è presente, significa che la tua estensione di dominio non necessita di un codice di trasferimento. A questo punto puoi avviare direttamente il trasferimento.
 
 ![protezione attivata](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
