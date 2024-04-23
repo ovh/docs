@@ -57,7 +57,7 @@ Information on the architecture (servers, storage, etc.) is centralized and visi
 
 ### Available Migration Tools 
 
-[Convert a physical/virtual machine into a cloud infrastructure.](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vcenter_converter).
+[Convert a physical/virtual machine into a cloud infrastructure](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vcenter_converter).
 
 ### Partner Services
 
@@ -73,4 +73,4 @@ The data is stored until the end of the month following the termination of the s
 
 ## Go further
 
-[Migrate an infrastructure to Hosted Private Cloud.](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration).
+[Migrate an infrastructure to Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration)

@@ -72,4 +72,4 @@ Les données sont conservées jusqu'à la fin du mois suivant la résiliation du
 
 ## Aller plus loin
 
-[Migrer une infrastructure vers Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration).
+[Migrer une infrastructure vers Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration)
