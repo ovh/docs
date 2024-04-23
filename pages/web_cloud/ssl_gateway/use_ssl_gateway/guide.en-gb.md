@@ -242,7 +242,7 @@ You can find more information regarding this Nginx function in the [official doc
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
