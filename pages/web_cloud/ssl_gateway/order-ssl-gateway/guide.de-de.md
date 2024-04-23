@@ -20,7 +20,7 @@ updated: 2022-12-01
 > 
 
 ## Bestellung
-- Um unser SSL Gateway Angebot zu bestellen, gehen Sie auf [diese Seite](https://www.ovh.de/ssl-gateway/){.external}.
+- Um unser SSL Gateway Angebot zu bestellen, gehen Sie auf [diese Seite](/links/web/ssl-gateway){.external}.
 - Wählen Sie Ihr Angebot und klicken Sie dann auf `Jetzt aktivieren`{.action} bzw. auf `Bestellen`{.action}.
 
 ![Angebotsseite](images/1-en.png){.thumbnail}
@@ -103,8 +103,8 @@ Sobald Ihre Änderung von unserer Infrastruktur verarbeitet wurde, erhalten Sie 
 
 ## Weiterführende Informationen
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

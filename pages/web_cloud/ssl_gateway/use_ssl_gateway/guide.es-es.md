@@ -14,7 +14,7 @@ updated: 2022-12-01
 A continuación se explica cómo utilizar el servicio SSL Gateway.
 
 ### Configuracion del servicio
-Conéctese al [área de cliente](https://www.ovh.com/manager){.external} y acceda a la sección `Sunrise`{.action}.
+Conéctese al [área de cliente](/links/manager){.external} y acceda a la sección `Sunrise`{.action}.
 
 ![menú sunrise](images/4.PNG){.thumbnail}
 
@@ -232,8 +232,8 @@ En la [documentación oficial](http://nginx.org/en/docs/http/ngx_http_realip_mod
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
