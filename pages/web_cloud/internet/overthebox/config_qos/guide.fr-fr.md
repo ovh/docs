@@ -1,20 +1,22 @@
 ---
 title: 'Configurer la qualité de service (QoS) d’OverTheBox'
 excerpt: "Découvrez comment configurer la qualité de service (QoS) sur votre OverTheBox afin d'améliorer la gestion de votre bande passante"
-updated: 2021-04-28
+updated: 2024-04-24
 ---
 
 ## Objectif
 
-Découvrez comment modifier la QoS sur votre équipement OverTheBox, afin de prioriser certain flux réseaux et ainsi améliorer la gestion de votre bande passante.
+Découvrez comment modifier la QoS sur votre équipement OverTheBox, afin de prioriser certain flux réseaux et améliorer la gestion de votre bande passante.
 
 ## Prérequis
 
-- Une **OverTheBox** fournie par OVHcloud
+- Disposer d'un service [OverTheBox](https://www.ovhtelecom.fr/overthebox/)
+- Au moins un accès à Internet, par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
+- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
 
 ## En pratique
 
-Certaines règles sont déjà présentes par défaut, elle permettent notamment de prioriser les services de VoIP proposés par OVHcloud.
+Certaines règles sont déjà présentes par défaut, permettant notamment de prioriser les services de VoIP proposés par OVHcloud.
 
 ### Étape 1 : préparation
 
@@ -26,7 +28,7 @@ Certaines règles sont déjà présentes par défaut, elle permettent notamment 
 
 Avant de configurer la  **QoS**, il est conseillé de connaître le débit maximum **montant et descendant** de chaque connexion utilisée par votre **OverTheBox**. Pour cela, vous pouvez utiliser l'outil [http://proof.ovh.net/](http://proof.ovh.net/){.external} afin de déterminer les débits maximum de chacune de vos connexions.
 
-**A titre d'exemple**, pour ce guide, voici les débits obtenus sur chaque connexion :
+**À titre d'exemple**, pour ce guide, voici les débits obtenus sur chaque connexion :
 
 - **OVH-DSL1**: Débit descendant : **10 Mbps** / Débit montant : **1.2 Mbps**
 - **OVH-DSL2**: Débit descendant : **5 Mbps** / Débit montant : **0.6 Mbps**
@@ -53,12 +55,12 @@ Pour ce faire :
 
 ![overthebox](images/qos-step1.png){.thumbnail}
 
-Refaites cette procédure complète pour chacune de vos connexions (**IF2**, **IF3**, etc.)
+Refaites cette procédure complète pour chacune de vos connexions (**IF2**, **IF3**, etc.).
 
 > [!warning]
 >
 > Une fois en place, si vous rencontrez des perturbations, vous pouvez essayer de configurer le *traffic control* en fixant les débits à 80% de votre débit maximum.
-> Dans notre exemple, on remplacerait les valeurs 10000/1200 par 8000/960
+> Dans notre exemple, on remplacerait les valeurs 10000/1200 par 8000/960.
 >
 
 ### Étape 2 : créer une nouvelle règle QoS
@@ -86,7 +88,7 @@ Pour ce faire :
 
 - Cliquez sur **Add**
 
-_Une nouvelle ligne apparait_
+_Une nouvelle ligne apparait._
 
 - Dans notre exemple, nous voulons que le NAS ayant pour IP `192.168.100.80` soit prioritaire pour l'upload, peu importe l'IP distante. Il faut donc ajouter la règle comme ci-dessous :
 
@@ -100,7 +102,7 @@ _Une nouvelle ligne apparait_
 > Si c'est le cas, veuillez procéder à un redémarrage électrique de l'OverTheBox ou déconnecter/reconnecter du réseau l'appareil concerné par la règle.
 >
 
-Pour plus de détails sur les différentes options de cette page, voir la section « Aller plus loin » à la fin de ce guide.
+Pour plus de détails sur les différentes options de cette page, consultez la section « Aller plus loin » à la fin de ce guide.
 
 ### Étape 3 : vérifier le bon fonctionnement
 
@@ -143,3 +145,5 @@ Il existe quatre classes de trafic, ce qui vous permet de classer le trafic par 
 | Low Priority | Pour un trafic jugé non prioritaire |
 
 N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)
+
+Consultez la [FAQ OverTheBox](/pages/web_cloud/internet/overthebox/install_faq)
