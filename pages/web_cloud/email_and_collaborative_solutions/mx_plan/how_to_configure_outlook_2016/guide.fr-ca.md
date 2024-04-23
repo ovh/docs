@@ -1,7 +1,7 @@
 ---
-title: Configurer son adresse e-mail sur Outlook pour Windows
-excerpt: Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook pour Windows
-updated: 2021-06-05
+title: "MX Plan : Configurer son adresse e-mail sur Outlook pour Windows"
+excerpt: "Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook pour Windows"
+updated: 2024-02-16
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section "Aller plus loin" de ce guide.
 >
 
 ## Prérequis
@@ -40,19 +40,40 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail}
 
-| | |
-|---|---|
-|![Outlook](images/config-outlook-mxplan02.png){.thumbnail}|Parmi les différents types de comptes, choisissez entre IMAP et POP. <br>Nous vous conseillons une utilisation en IMAP.|
-|Saisissez le mot de passe de votre adresse e-mail, puis cliquez sur `Suivant`{.action}. |![Outlook](images/config-outlook-mxplan03.png){.thumbnail}|
-|![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche. <br>Cliquez sur `Modifier les paramètres du compte`{.action} |
-|Saisissez dans **Courrier entrant**: <br>- le serveur **imap.mail.ovh.ca** <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **smtp.mail.ovh.ca** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider. |![Outlook](images/config-outlook-mxplan05-ca.png){.thumbnail}|
+> [!primary]
+>
+> Vous ne savez pas si vous devez configurer votre compte e-mail en **POP** ou en **IMAP**?
+>
+> Avant de poursuivre, consultez la section "[POP ou IMAP, quelle est la différence ?](#popimap)" de ce guide.
+>
+> Dans les paramètres suivants, vous constaterez la possibilité de renseigner 2 noms d'hôtes différents pour le même serveur (entrant ou sortant). Ces valeurs renvoient exactement au même serveur, elles ont été mises en place pour faciliter la saisie et éviter la confusion entre les protocoles POP, IMAP et SMTP qui utilisent des ports différents.
 
-Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
-
-|Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
-|---|---|---|---|
-|Incoming|imap.mail.ovh.ca|SSL/TLS|995|
-|Outgoing|smtp.mail.ovh.ca|SSL/TLS|465|
+> [!tabs]
+> **Etape 1**
+>> Parmi les différents types de comptes, choisissez entre IMAP et POP. <br>Nous vous conseillons une utilisation en IMAP.
+>>
+>> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail}
+>>
+> **Etape 2**
+>> Saisissez le mot de passe de votre adresse e-mail puis cliquez sur `Suivant`{.action}.
+>>
+>> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail}
+>>
+> **Etape 3**
+>> Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche. Cliquez sur `Modifier les paramètres du compte`{.action}. En fonction de votre choix (**POP** ou **IMAP**), passez à l'étape 4 correspondante.
+>>
+>> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
+>>
+> **Etape 4 - IMAP**
+>> Si vous avez choisi IMAP, saisissez les paramètres suivants. Si vous avez choisi POP, passez à l'onglet "**Etape 4 - POP**".<br>
+>> Dans **Courrier entrant**, saisissez :<br>- Le serveur **imap.mail.ovh.ca**<br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Dans **Courrier sortant**, saisissez :<br>- Le serveur **smtp.mail.ovh.ca<br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
+>>
+>> ![Outlook](images/config-outlook-mxplan05-ca.png){.thumbnail}
+>>
+> **Etape 4 - POP**
+>> Dans **Courrier entrant**, saisissez :<br>- Le serveur **pop.mail.ovh.ca**<br>- Port **995**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Dans **Courrier sortant**, saisissez :<br>- Le serveur **smtp.mail.ovh.ca**<br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
+>>
+>> ![Outlook](images/config-outlook-mxplan05-pop-ca.png){.thumbnail}
 
 ### Utiliser l'adresse e-mail
 
@@ -62,7 +83,7 @@ OVHcloud propose aussi une application web permettant d'accéder à votre adress
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter depuis Windows** » sur notre guide [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter-depuis-windows).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe "**Exporter depuis Windows**" sur notre guide [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter-depuis-windows).
 
 ### Modifier les paramètres existants
 
@@ -78,7 +99,67 @@ La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sor
 
 ![Outlook](images/config-outlook-mxplan07-ca.png){.thumbnail}
 
+### Rappel des paramètres POP, IMAP et SMTP <a name="popimap-settings"></a>
+
+Pour la réception des e-mails, lors du choix du type de compte, nous vous conseillons une utilisation en **IMAP**. Vous pouvez cependant sélectionner **POP**. Pour comprendre leur fonctionnement respectif, consultez la section "[POP ou IMAP, quelle est la différence ?](#popimap)" ci-dessous.
+
+- **Pour une configuration en POP**
+
+|Information|Description|
+|---|---|
+|Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
+|Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
+|Serveur (entrant)|pop.mail.ovh.ca|
+|Port|995|
+|Type de sécurité|SSL/TLS|
+
+- **Pour une configuration en IMAP**
+
+|Information|Description|
+|---|---|
+|Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
+|Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
+|Serveur (entrant)|imap.mail.ovh.ca|
+|Port|993|
+|Type de sécurité|SSL/TLS|
+
+Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres **SMTP** dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser :
+
+- **Configuration SMTP**
+
+|Information|Description|
+|---|---|
+|Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
+|Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
+|Serveur (sortant)|smtp.mail.ovh.ca|
+|Port|465|
+|Type de sécurité|SSL/TLS|
+
+### POP ou IMAP, quelle est la différence ? <a name="popimap"></a>
+
+Lorsque vous configurez votre adresse e-mail manuellement, votre client de messagerie vous demande si vous souhaitez utiliser le protocole **POP** (**P**ost **O**ffice **P**rotocol) ou **IMAP**(**I**nternet **M**essage **A**ccess **P**rotocol). Pour bien comprendre, il faut situer le rôle des protocoles POP et IMAP dans la configuration de votre adresse e-mail.
+
+Lors de la configuration de votre client de messagerie, vous devez lui renseigner les informations du **serveur entrant** pour recevoir les e-mails et le **serveur sortant** pour envoyer les e-mails. Pour envoyer les e-mails, il n'y a pas de choix, c'est le protocole **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol) qui est utilisé. Pour la réception, vous aurez donc le choix entre **POP** ou **IMAP**.
+
+![mxplan](images/mxplan-popimap-01.png){.thumbnail}
+
+Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nous allons détailler les éléments qui composent le traitement de vos e-mails en réception :
+
+1. **Votre appareil** : un ordinateur, un smartphone ou une tablette. C'est votre support de consultation.
+2. **Votre client de messagerie** : application dédiée à la gestion de vos e-mails. Son choix déterminera le niveau d'ergonomie et de fonctionnalités dont vous aurez besoin pour consulter vos e-mails.
+3. **Le protocole de réception** : choix déterminant la façon de relever les e-mails sur votre appareil. Son choix a une incidence sur les autres appareils qui consultent ce même compte e-mail.
+    - **IMAP** : votre client de messagerie interroge le serveur e-mail et télécharge les e-mails sur votre appareil. Lorsque vous consultez un e-mail non lu, le serveur le marque comme "lu" par défaut. Les autres appareils configurés en IMAP pourront constater cet état et consulter cet e-mail tant qu'il n'aura pas été supprimé sur l'un des appareils.
+    - **POP** : votre client de messagerie interroge le serveur e-mail et télécharge les e-mails sur votre appareil. Par défaut, une fois l'e-mail téléchargé sur votre appareil, le message est supprimé du serveur. Par conséquent, les autres appareils connectés à cette adresse e-mail ne pourront pas consulter cet e-mail.
+
+![mxplan](images/mxplan-popimap-02.png){.thumbnail}
+
+> [!primary]
+>
+> Ce desriptif est une synthèse, il représente le fonctionnement standard de ces deux protocoles. Il est possible de paramétrer le POP pour que les e-mails ne soit pas supprimés lorsque vous relevez vos e-mails. Notre objectif est de décrire le fonctionnement natif de ces deux protocoles.
+
 ## Aller plus loin
+
+[Configurer son compte E-mail Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
 
 [Configurer son compte Exchange sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
 
