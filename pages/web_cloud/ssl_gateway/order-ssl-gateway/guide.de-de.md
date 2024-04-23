@@ -20,7 +20,7 @@ updated: 2022-12-01
 > 
 
 ## Bestellung
-- Um unser SSL Gateway Angebot zu bestellen, gehen Sie auf [diese Seite](https://www.ovh.de/ssl-gateway/){.external}.
+- Um unser SSL Gateway Angebot zu bestellen, gehen Sie auf [diese Seite](/links/web/ssl-gateway){.external}.
 - Wählen Sie Ihr Angebot und klicken Sie dann auf `Jetzt aktivieren`{.action} bzw. auf `Bestellen`{.action}.
 
 ![Angebotsseite](images/1-en.png){.thumbnail}

@@ -20,7 +20,7 @@ updated: 2022-12-01
 > 
 
 ## Effettua lordine
-- Per ordinare la soluzione SSL Gateway, accedi a [questa pagina](https://www.ovh.it/ssl-gateway/){.external}.
+- Per ordinare la soluzione SSL Gateway, accedi a [questa pagina](/links/web/ssl-gateway){.external}.
 - Scegli l’offerta e clicca su `Attivalo subito`{.action} o `Ordina`{.action}.
 
 ![pagina commerciale](images/1-en.png){.thumbnail}
