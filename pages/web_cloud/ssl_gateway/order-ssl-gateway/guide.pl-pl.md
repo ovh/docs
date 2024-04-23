@@ -20,7 +20,7 @@ updated: 2022-12-01
 > 
 
 ## Zamowienie
-- Aby zamówić ofertę SSL Gateway, [kliknij tutaj](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}.
+- Aby zamówić ofertę SSL Gateway, [kliknij tutaj](/links/web/hosting-options-ssl){.external}.
 - Wybierz ofertę i kliknij na `Włącz teraz`{.action} lub `Zamów`{.action}.
 
 ![page commerciale](images/1-en.png){.thumbnail}
@@ -105,6 +105,6 @@ Po zaakceptowaniu zmian w naszej infrastrukturze otrzymasz e-mail z potwierdzeni
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

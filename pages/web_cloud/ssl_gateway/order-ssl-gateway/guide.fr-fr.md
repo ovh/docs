@@ -17,7 +17,7 @@ updated: 2022-12-01
 ## En pratique
 
 ### Commande
-- Afin de commander notre offre SSL Gateway, [cliquez ici](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external}.
+- Afin de commander notre offre SSL Gateway, [cliquez ici](/links/web/hosting-options-ssl){.external}.
 - Choisissez votre offre, et cliquez ensuite sur `Activer maintenant`{.action} ou `Commander`{.action}.
 
 ![page commerciale](images/1.PNG){.thumbnail}
@@ -92,6 +92,6 @@ Une fois votre modification prise en compte par notre infrastructure, vous recev
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
