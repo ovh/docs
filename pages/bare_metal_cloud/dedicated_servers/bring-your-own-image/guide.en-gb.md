@@ -163,14 +163,14 @@ The following table gives an overview of well known customer errors and how to f
 
 |Error message|Details|Solution(s)|
 |---|---|---|
-|Please provide checkSum AND checkSumType or none of them|You have specified one of the 2 arguments among `imageCheckSum` and `imageCheckSumType`.|Either provide both arguments or none of them.|
-|image provided format is `x` which does not match expected qcow2 format|Not matter what the file extension is, real format has to be qcow2.|- Change value of `imageType` to `raw`.<br />- Convert your image to qcow2 format.|
-|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|Image provided has a size that is bigger than the size of the disk chosen for the OS installation.|- If your server has several disk groups, you can try to reinstall the OS on another disk group by specifying the `diskgroupid` argument.<br />- You need to reduce the size of your image.|
-|Can't write `t` on disk|Impossible to write qcow2/raw image on disk.|Modify your image so that the `qemu-img convert -f "$imageType" -O raw $pathToImageFile "$device"` command works.|
+|Please provide checkSum AND checkSumType or none of them|You have specified only one of the arguments `imageCheckSum` and `imageCheckSumType`.|Either provide both arguments or none of them.|
+|image provided format is `x` which does not match expected qcow2 format|Not matter what the file extension is, the real format has to be qcow2.|- Change the value of `imageType` to `raw`.<br />- Convert your image to qcow2.|
+|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|The image provided has a size that is bigger than the size of the disk chosen for the OS installation.|- If your server has several disk groups, you can try to reinstall the OS on another disk group by specifying the `diskgroupid` argument.<br />- You need to reduce the size of your image.|
+|Can't write `t` on disk|Impossible to write qcow2/raw image on disk.|Modify your image so that the command `qemu-img convert -f "$imageType" -O raw $pathToImageFile "$device"` works.|
 |Could not download, `t` image is too big to download in memory.|Your server doesn't have enough RAM to download the image.|You need to reduce the size of your image.|
-|Could not download image located : `url`|Cannot download image from `imageURL`.|Check that a download with `curl` command from your server in rescue works. If some HTTP specific headers are required, you can precise them with the `httpHeaders` argument.|
+|Could not download image located: `url`|Cannot download image from `imageURL`.|Check that a download with the `curl` command from your server works in rescue mode. If some HTTP specific headers are required, you can precise them with the `httpHeaders` argument.|
 |image provided format is not of type raw because no partition table was found. It seems to contain: `x`|A raw image must contain a partition table.|Check that your image contains a partition table.|
-|Bad `checkSumType` for downloaded file, got : `n` while expecting `m`.|Incorrect checksum.|- Please ensure that you have specified the correct checksum.<br />- Check that a download with `curl` command from your server in rescue works.|
+|Bad `checkSumType` for downloaded file, got: `n` while expecting `m`.|Incorrect checksum.|- Please ensure that you have specified the correct checksum.<br />- Check that a download with the `curl` command from your server works in rescue mode.|
 
 ## Go further
 
