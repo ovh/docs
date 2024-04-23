@@ -2,7 +2,6 @@
 title: Configuring an IPV6 block in a vRack
 excerpt: This guide will show you how to configure a block of public IPV6 addresses for use with the vRack
 updated: 2024-04-19
-flag: hidden
 ---
 
 <style>
