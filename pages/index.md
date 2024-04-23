@@ -364,6 +364,7 @@
             + [VMware HA (High Availability)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ha_high_availability)
             + [VMware Fault Tolerance](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_fault_tolerance)
             + [Cluster creation and EVC activation](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc)
+            + [Configuring VM encryption with a KMS server](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration)
         + [VMware NSX](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx)
             + [Getting started with NSX](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps)
             + [Segment management in NSX](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-02-segment-management)

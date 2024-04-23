@@ -1,5 +1,5 @@
 ---
-title: "Configuring VM encryption with a server KMS"
+title: "Configuring VM encryption with a KMS server"
 excerpt: "Find out how to encrypt your virtual machine on vSphere using a KMS server"
 updated: 2024-04-19
 ---
@@ -24,6 +24,7 @@ To do this, log in to your [OVHcloud Control Panel](/links/manager). Go to `Host
 Once in the security section, go to the `Virtual Machine Encryption Key Management Servers` section (at the bottom of the page), and add a new KMS server.
 
 ![Add Server KMS](images/add_kms_server.png)
+
 ![Creation KMS server](images/creation_kms_server.png)
 
 > [!primary]
