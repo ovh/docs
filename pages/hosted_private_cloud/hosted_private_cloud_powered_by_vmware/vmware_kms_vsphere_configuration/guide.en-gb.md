@@ -6,7 +6,7 @@ updated: 2024-04-19
 
 ## Objective
 
-**This guide explains in detail how to configure Key Management Service (KMS) encryption on your virtual machines in VMware vSphere**
+**This guide explains in detail how to configure Key Management Service (KMS) encryption on your virtual machines in VMware vSphere.**
 
 ## Requirements
 
@@ -19,25 +19,26 @@ updated: 2024-04-19
 ### Open workflows
  
 The first step is to configure the firewall to allow traffic between the KMS server and your vSphere environment.
-To do this, please go to your OVH manager. Go to `Hosted Private Cloud` > `VMware` > `Your Dedicated Cloud` > `Security`.
+
+To do this, log in to your [OVHcloud Control Panel](/links/manager). Go to `Hosted Private Cloud` > `VMware` > `Your Dedicated Cloud` > `Security`.
 Once in the security section, go to the `Virtual Machine Encryption Key Management Servers` section (at the bottom of the page), and add a new KMS server.
 
 ![Add Server KMS](images/add_kms_server.png)
 ![Creation KMS server](images/creation_kms_server.png)
 
 > [!primary]
-> To retrieve your SSL fingerprint from your KMS server, follow the instructions below:
+> To retrieve your SSL fingerprint from your KMS server, follow the instructions below by navigating through the tabs.
 >
 
 > [!Tab]
 > Windows
 >> Open your web browser.
->> In the address bar, enter your server’s IP address preceded by https:// and followed by the port if necessary (for example, https://192.168.0.1:443).
->> When the page loads, click the padlock icon to the left of the address in the address bar. This will display certificate information.
->> In the certificate information, look for the section that relates to the fingerprint or fingerprint. This section can be named differently depending on the browser you are using.
+>> In the address bar, enter your server’s IP address preceded by `https://` and followed by the port if necessary (for example: `https://192.0.2.1:443`).
+>> When the page loads, click the padlock icon to the left of the URL in the address bar. This will display the certificate information.
+>> In the certificate information, look for the section that relates to the *fingerprint*. This section can be named differently depending on the browser you are using.
 >>![Navigator Padlock](images/padlock_website.png)
 >>![Sha Thumbprint Browser](images/fingerprint_sha.png)
-> Linux/MacOs
+> Linux/MacOS
 >> If you are on a Linux or MacOS host, simply run the command below in a terminal.
 >> ```shell
 >> openssl s_client -connect 54.38.64.196:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
@@ -48,7 +49,7 @@ Once in the security section, go to the `Virtual Machine Encryption Key Manageme
 
 1. Add the Key Provider in vSphere. 
 
-Open a web browser and go to the address provided to access your vSphere interface. For example: https://pcc-x.x.x.x.ovh.de/ui/.
+Open a web browser and go to the address provided to access your vSphere interface. For example: `https://pcc-x.x.x.x.ovh.de/ui/`.
 Once logged in, select the `Configure` tab of your Dedicated Cloud then `Key Providers`. Add a new `Standard Key Provider`.
 
 ![Kms Key Provider](images/kms_key_provider.png)
@@ -68,6 +69,7 @@ Select your Key Provider you have just created and click on the `Trust VCENTER` 
 In the context menu, select `KMS Certificate and private key to vCenter.`. Then enter your KMS certificate and your KMS server private key.
 
 ![Trust KMS server](images/kms_trust_vcenter.png)
+
 ![Trust KMS server](images/kms_trust_vcenter_2.png)
 
 You can check that the connection has been established by selecting your Key Provider. The `Connected` option must be ticked.
