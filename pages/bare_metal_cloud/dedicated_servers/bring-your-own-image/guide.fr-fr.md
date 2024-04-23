@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image (BYOI)
 excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
-updated: 2024-04-04
+updated: 2024-04-23
 ---
 
 ## Objectif
