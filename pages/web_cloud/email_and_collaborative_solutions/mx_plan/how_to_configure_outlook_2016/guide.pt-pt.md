@@ -158,7 +158,7 @@ Para compreender a diferença entre a utilização do protocolo POP e IMAP, vamo
 1. **O seu dispositivo**: um computador, um smartphone ou um tablet. É o vosso suporte de consulta.
 2. **O seu cliente de e-mail** : aplicação dedicada à gestão dos seus e-mails. A sua escolha determinará o nível de ergonomia e de funcionalidades que terá de consultar os seus e-mails.
 3. **O protocolo de receção** : escolha que determina a forma de verificar os e-mails no seu dispositivo. A sua escolha afeta os outros dispositivos que acedem à mesma conta de e-mail.
-    - **IMAP**: O cliente de e-mail interroga o servidor de e-mail e transfere os e-mails para o seu dispositivo. Quando consulta uma mensagem de correio eletrónico não lida, o servidor marca-a como « ou ». Os outros dispositivos configurados em IMAP poderão constatar este estado e consultar este e-mail enquanto não tiver sido eliminado num dos dispositivos.
+    - **IMAP**: O cliente de e-mail interroga o servidor de e-mail e transfere os e-mails para o seu dispositivo. Quando consulta uma mensagem de correio eletrónico não lida, o servidor marca-a como "lido". Os outros dispositivos configurados em IMAP poderão constatar este estado e consultar este e-mail enquanto não tiver sido eliminado num dos dispositivos.
     - **POP**: O cliente de e-mail interroga o servidor de e-mail e transfere os e-mails para o seu dispositivo. Por predefinição, uma vez o e-mail transferido para o seu dispositivo, a mensagem é eliminada do servidor. Por isso, os outros dispositivos ligados a este endereço de e-mail não poderão consultar este e-mail.
 
 ![mxplan](images/mxplan-popimap-02.png){.thumbnail}

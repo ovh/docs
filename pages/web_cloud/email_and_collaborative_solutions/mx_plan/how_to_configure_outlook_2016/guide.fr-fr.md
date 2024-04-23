@@ -164,8 +164,8 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
 
 ## Aller plus loin
 
-[Configurer son compte E-mail Pro sur Outlook 2016 pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
+[Configurer son compte E-mail Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
 
-[Configurer son compte Exchange sur Outlook 2016 pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
+[Configurer son compte Exchange sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

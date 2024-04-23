@@ -1,5 +1,5 @@
 ---
-title: "MX Plan: Konfiguration Ihrer E-Mail-Adressen in Outlook für Windows"
+title: "MX Plan : Konfiguration Ihrer E-Mail-Adressen in Outlook für Windows"
 excerpt: "Erfahren Sie hier, wie Sie Ihren Mailaccount in Outlook für Windows einrichten"
 updated: 2024-02-16
 ---

@@ -1,5 +1,5 @@
 ---
-title: "MX Plan: Configuring your email address in Outlook for Windows"
+title: "MX Plan : Configuring your email address in Outlook for Windows"
 excerpt: "Find out how to configure your MX Plan email address in Outlook for Windows"
 updated: 2024-02-16
 ---
@@ -21,7 +21,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 - an MX Plan email address (included in the MX Plan solution and in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external})
 - Microsoft Outlook 2016 or later installed on your device
 - login credentials for the email account to be configured
- 
+
 > [!primary]
 >
 > Are you using Outlook for Mac? Refer to our documentation: [Configuring an email address in Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac).
@@ -32,7 +32,6 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 > [!alert]
 >
 > Before you start configuring your services using this guide, make sure that the flag at the top right of this page matches your country or region, as the settings depend on your location.
-
 
 ### Adding the account
 
