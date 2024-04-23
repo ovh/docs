@@ -26,11 +26,11 @@ You have a domain name with OVHcloud and you want to connect it to a Shopify hos
 
 ## Instructions
 
-Before following the two steps in this guide, we recommend that you get familiar with configuring a DNS zone using our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit) .
+Before following the two steps in this guide, we recommend that you get familiar with configuring a DNS zone using our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >
-> Your DNS zone is potentially already preconfigured or linked to a hosting plan. We will look at how to identify each DNS record you need to log in to your Shopify hosting plan. Some records will need to be deleted to avoid conflicts with DNS records required in this configuration. Others will simply need to be modified or created. For a better understanding, we will use the domain name “**mydomain.ovh**” as an example. Replace it with your domain name during configuration.
+> Your DNS zone is potentially already preconfigured or linked to a hosting plan. We will look at how to identify each DNS record required to connect to your Shopify hosting plan. Some records will need to be deleted to avoid conflicts with DNS records required in this configuration. Others will simply need to be modified or created. For a better understanding, we will use the domain name “**mydomain.ovh**” as an example. Replace it with your domain name during configuration.
 
 ### Configure your DNS records on your OVHcloud account
 

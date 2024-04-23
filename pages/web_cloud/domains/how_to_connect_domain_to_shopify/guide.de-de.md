@@ -10,7 +10,7 @@ updated: 2024-04-09
 
 ## Ziel
 
-Sie haben bereits einen Domainnamenamen bei OVHcloud und möchten ihn mit einem Shopify Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Shopify-Hostings zu ermöglichen.
+Sie haben bereits einen Domainnamenamen bei OVHcloud und möchten ihn mit einem Shopify Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Shopify Hostings zu ermöglichen.
 
 **Erfahren Sie hier, wie Sie Ihren OVHcloud Domainnamen mit einem Shopify Hosting verbinden.**
 
@@ -34,7 +34,7 @@ Bevor Sie dieser Anleitung folgen, empfehlen wir, sich mit der Konfiguration von
 
 > [!warning]
 >
-> Ihre DNS-Zone ist möglicherweise bereits konfiguriert oder mit einem Hosting verbunden. In dieser Anleitung erfahren Sie, wie Sie die DNS-Einträge zur Verbindung mit Ihrem Shopify-Hosting konfigurieren. Einige müssen gelöscht werden, um Konflikte mit den erforderlichen DNS-Einträgen zu vermeiden. Andere müssen nur noch geändert oder neu erstellt werden. Für ein besseres Verständnis verwenden wir als Beispiel den Domainnamen "**mydomain.ovh**". Ersetzen Sie ihn bei der Konfiguration durch Ihren Domainnamen.
+> Ihre DNS-Zone ist möglicherweise bereits konfiguriert oder mit einem Hosting verbunden. In dieser Anleitung erfahren Sie, wie Sie die DNS-Einträge zur Verbindung mit Ihrem Shopify Hosting konfigurieren. Einige müssen gelöscht werden, um Konflikte mit den erforderlichen DNS-Einträgen zu vermeiden. Andere müssen nur noch geändert oder neu erstellt werden. Für ein besseres Verständnis verwenden wir als Beispiel den Domainnamen "**mydomain.ovh**". Ersetzen Sie ihn bei der Konfiguration durch Ihren Domainnamen.
 
 ### DNS-Einträge in Ihrem OVHcloud Kunden-Account konfigurieren
 
@@ -54,17 +54,17 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> Um die vorhandenen Einträge vom Typ A zu identifizieren, klicken Sie oben in der Tabelle mit den DNS-Einträgen auf das Filtermenü und wählen Sie `A` aus.<br>
 >> ![dnszone](images/filter-a.png){.thumbnail}<br>
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrem Domainnamen ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
->> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihre Domainname allein mit der Subdomain "www." und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
+>> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www." und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn Sie noch keinen A-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `A`{.action}<br><br>
->> Lassen Sie das Feld **Subdomain** leer und geben Sie die Shopify IPv4-Adresse  `23.227.38.65` in das Feld **Ziel** ein.
+>> Lassen Sie das Feld **Subdomain** leer und geben Sie die Shopify IPv4-Adresse `23.227.38.65` in das Feld **Ziel** ein.
 >> ![dnszone](images/field-a.png){.thumbnail}<br><br>
 >> Klicken Sie auf `Weiter`{.action}, bestätigen Sie Ihren A-Eintrag und fahren Sie mit Schritt 2 fort.
 > **Schritt 2**
 >> **AAAA-Eintrag**<br><br>
 >>  Um vorhandene AAAA-Einträge zu identifizieren, klicken Sie oben in der Tabelle mit DNS-Einträgen auf das Filtermenü und wählen Sie `AAAA` aus.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
->> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihre Domainname allein ohne Subdomain (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
->> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihre Domainname allein mit der Subdomain "www" und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
+>> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen ohne Subdomain (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
+>> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www" und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn Sie noch keinen AAAA-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `AAAA`{.action}<br><br>
 >> Lassen Sie das Feld **Subdomain** leer und geben Sie die Shopify IPv6-Adresse `2620:0127:f00f:5::` in das Feld **Ziel** ein.
 >> ![dnszone](images/field-aaaa.png){.thumbnail}<br><br>
@@ -73,7 +73,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> **TXT-Eintrag**<br><br>
 >>  Um vorhandene TXT-Einträge zu identifizieren, klicken Sie oben in der Tabelle mit DNS-Einträgen auf das Filtermenü und wählen Sie `TXT` aus.<br>
 >> ![dnszone](images/filter-txt.png){.thumbnail}<br>
->> - Wenn TXT-Einträge für den Domainnamen (Beispiel: `mydomain.ovh.`) und die Subdomain "www" (Beispiel: `www.mydomain.ovh.`) vorhanden sind, müssen diese gelöscht werden, damit sie nicht im Konflikt mit dem CNAME-Eintrag stehen, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihre Domainnamen mit der Subdomain "www" und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
+>> - Wenn TXT-Einträge für den Domainnamen (Beispiel: `mydomain.ovh.`) und die Subdomain "www" (Beispiel: `www.mydomain.ovh.`) vorhanden sind, müssen diese gelöscht werden, damit sie nicht im Konflikt mit dem CNAME-Eintrag stehen, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www" und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 > **Schritt 4**
 >> **CNAME-Eintrag**<br><br>
 >>  Um vorhandene CNAME-Einträge zu identifizieren, klicken Sie oben in der DNS-Tabelle auf das Filtermenü und wählen Sie `CNAME` aus.<br>
