@@ -1,7 +1,7 @@
 ---
 title: "Configuration d'un plan de reprise d'activité avec Metro"
 excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
-updated: 2023-08-07
+updated: 2024-04-19
 ---
 
 ## Objectif
@@ -18,7 +18,7 @@ updated: 2023-08-07
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté sur vos clusters via Prism Central.
-- Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avec des licences **Pack Advanced** si vous avez une offre packagée sur les deux clusters du P.R.A. Ces 3 clusters devront être sur des sites distants pour obtenir un maximum de sûreté.
+- Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avec des licences des packs **Pro** ou **Ultimate** si vous avez une offre Nutanix on OVHCloud packagée sur les deux clusters du P.R.A. Ces 3 clusters devront être sur des sites distants pour obtenir un maximum de sûreté.
 - Avoir une latence de moins de 5 ms entre les deux clusters répliqués. Veuillez noter que la latence n'est pas couverte par les SLA.
 
 ## Présentation
@@ -813,7 +813,7 @@ Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le clus
 ![14 - Validate test recovery plan 06](images/14-validate-test-recovery-plan06.png){.thumbnail}
 
 > [!primary]
-> Assurez-vous d'avoir les bonnes licences, Si vous avez choisi un cluster avec des licences chez OVHcloud, il est nécessaire d'avoir souscrit le pack **Nutanix Advanced** sur les clusters de Roubaix et Gravelines.
+> Assurez-vous d'avoir les bonnes licences si vous avez choisi l'offre Nutanix on OVHcloud packagée. Il est nécessaire d'avoir souscrit le pack **Pro** ou **Ultimate** sur les clusters de Roubaix et Gravelines.
 >
 
 Cliquez sur `Execute Anyway`{.action}.
