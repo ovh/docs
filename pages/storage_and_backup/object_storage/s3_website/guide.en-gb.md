@@ -33,7 +33,7 @@ In S3, a bucket is a flat container of objects. It does not provide any hierarch
 
 ### Step 2: Setting the permissions
 
-The bucket hosting the website and its contents must be publically accessible i.e with READ permission set for all users.
+The bucket hosting the website and its contents must be publicly accessible i.e with READ permission set for all users.
 
 **Example**:
 
