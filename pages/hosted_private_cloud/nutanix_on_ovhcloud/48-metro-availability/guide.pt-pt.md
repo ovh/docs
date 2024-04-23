@@ -1,7 +1,7 @@
 ---
 title: Configurando a recuperação de desastres com o Metro (EN)
 excerpt: "Implementing Metro for a Disaster Recovery Plan"
-updated: 2023-08-08
+updated: 2024-04-19
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ updated: 2023-08-08
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Access to your clusters via Prism Central
-- You need to have 3 Nutanix clusters within the OVHcloud infrastructure with **Pack Advanced** licences, if you have a package offer on both clusters in the P.R.A. These 3 clusters will need to be at remote sites for maximum security.
+- You need to have 3 Nutanix clusters within the OVHcloud infrastructure with **Pro** or **Ultimate** packs if you have a Nutanix on OVHcloud packaged service on both clusters in the P.R.A. These 3 clusters will need to be at remote sites for maximum security.
 - You must have less than 5 ms of latency between the two replicated clusters. Please note that latency is not covered by SLAs.
 
 ## Introduction
@@ -813,7 +813,7 @@ Select the Roubaix cluster for **Entity Failing Over From** and the Gravelines c
 ![14 - Validate test recovery plan 06](images/14-validate-test-recovery-plan06.png){.thumbnail}
 
 > [!primary]
-> Make sure you have the right licences. If you have chosen a cluster with licences at OVHcloud, you need to have signed up to the **Nutanix Advanced** pack for the Roubaix and Gravelines clusters.
+> Make sure you have the right licences if you have chosen the Nutanix on OVHcloud packaged service. You need to have signed up to the **Pro** or **Ultimate** packs for the Roubaix and Gravelines clusters..
 >
 
 Click `Execute Anyway`{.action}.

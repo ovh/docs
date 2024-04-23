@@ -1,6 +1,6 @@
 ---
 title: Setting up NCM Self Service (CALM)
-excerpt: 'How to enable Self Service (CALM) in your Prism Central'  
+excerpt: 'How to enable Self Service (CALM) in your Prism Central'
 updated: 2024-04-19
 ---
 
