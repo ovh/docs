@@ -1,92 +1,56 @@
 ---
-title: Liste des services et licences inclus
-excerpt: "Présentation des services et licences inclus dans l'offre Nutanix on OVHcloud"
-updated: 2022-09-20
+title: Liste des licenses incluses
+excerpt: "Présentation des licences incluses dans l'offre Nutanix on OVHcloud packagée"
+updated: 2024-04-19
 ---
 
 ## Objectif
 
-Cette page vous présente les licences et services Nutanix inclus dans l'offre Nutanix on OVHcloud
+Cette page vous présente les licences incluses dans l'offre Nutanix on OVHcloud packagée.
 
-## Périmètre des licences et services Nutanix inclus dans l'offre Nutanix on OVHcloud
+## Périmètre des licences incluses dans l'offre Nutanix on OVHcloud packagée
 
-Seuls les licences et services Nutanix listés sur cette page sont disponibles dans l'offre Nutanix on OVHcloud.<br>
-Si la licence ou le service que vous cherchez n'est pas disponible, nous vous invitons à consulter la [roadmap GitHub Hosted Private Cloud](https://github.com/ovh/hosted-private-cloud-roadmap/projects/3) en première intention.
+Seules les licences détaillées dans ce guide sont disponibles dans l'offre Nutanix on OVHcloud packagée.
+Si la licence ou le service que vous recherchez n'est pas disponible, nous vous invitons à consulter la [roadmap GitHub](https://github.com/orgs/ovh/projects/16/views/1?sliceBy%5Bvalue%5D=Nutanix+on+OVHcloud) pour connaître les disponibilités futures. Et dans le cas d'un besoin immédiat, nous vous recommandons de considérer l'offre Nutanix on OVHcloud BYOL.
 
-Nutanix on OVHcloud propose deux pack de licences :
+Au sein de l'offre packagée, OVHcloud propose trois packs (Starter, Pro et Ultimate) qui contiennent les packs de licences de la Nutanix Cloud Platform (packs NCP Starter, NCP Pro ou NCP Ultimate), étudiés par Nutanix pour proposer un assemblage de fonctionnalités cohérentes pour les cas d'usage les plus courants.
 
-- **Nutanix Standard Pack**
-- **Nutanix Advanced Pack** qui reprend les licences et services du **Nutanix Standard Pack** auxquelles viennent s'ajouter des licences et services supplémentaires pour supporter des usages plus avancés tels que la réplication plus performante, des sites multiples, des possibilités de chiffrement de données avancées et des options de plan de reprise d'activités. 
+Chaque pack NCP est la combinaison des licences :
 
-### Socle de licences et services communs aux deux packs de licences **Nutanix Standard** et **Nutanix Advanced**
+- **Nutanix Cloud Infrastructure (NCI)**, en version Pro ou Ultimate : la suite logicielle en charge des ressources infrastructures du cluster (stockage, compute, virtualisation, résilience etc..)
+- **Nutanix Cloud Management (NCM)**, en version Pro ou Ultimate : la plateforme de gestion de votre infrastructure (gestion des coûts, automatisation, monitoring, sécurité etc..)
 
-Les licences et services communs aux deux packs de licences sont les suivants :
+Les trois packs OVHcloud intègrent donc ces trois packs de licences NCP de la manière suivante :
 
-- **Nutanix Cloud Infrastructure (NCI)**, anciennement **Hybrid Cloud Infrastructure** 
-    - **AHV Virtualization** : virtualisation intégrée dans NUTANIX ([présentation de Nutanix AHV](https://www.nutanix.com/products/ahv)).
-    - **Nutanix Kubernetes Engine** : gestion des containers Kubernetes sous Nutanix, produit anciennement nommé **Karbon** ([présentation de Nutanix Kubernetes Engine](https://www.nutanix.com/products/karbon)).
+- **Pack Starter**, composé de NCP Starter (NCI Pro + NCM Pro) : ce pack est pensé pour le déploiement d’un nouveau site de production à grande échelle et l’utilisation simultanée de plusieurs applications. Il permet également une gestion avancée en terme de gouvernance des coûts.
+- **Pack Pro**, composé de NCP Pro (NCI Ultimate + NCM Pro) : ce pack est conçu pour les déploiements multisites nécessitant une gestion avancée en terme de sécurité, de résilience des applications et de gouvernance des coûts.
+- **Pack Ultimate**, composé de NCP Ultimate (NCI Ultimate + NCM Ultimate) : ce pack inclut le nécessaire pour les déploiements multisites de grandes Entreprises et les cas d'usage les plus complexes. Il offre des process de gouvernance intégrés, des fonctionnalités de gestion de la sécurité et de la résilience avancées, et des scénarios d'automatisation des déploiements d'applications multiserveurs.
 
-- **Nutanix Cloud Manager(NCM)**, anciennement **Cloud Management** ([présentation de Nutanix Cloud Management](https://www.nutanix.com/products/cloud-manager/aiops)).
-    - **Intelligent Operation**, anciennement **Prism Pro** : surveillance et prévision des besoins.
-    - **Flow** : virtualisation et micro-segmentation du réseau ([présentation de FLOW](https://www.nutanix.com/products/flow)).
+Retrouvez également le détail des licences de la Nutanix Cloud Platform [ici](https://www.nutanix.com/products/cloud-platform/software-options).
 
-- **Nutanix Unified Storage**, anciennement **Unified Storage**.
-    - **Volumes Block Storage** : stockage par bloc pour un accès en iSCSI, soit à l’intérieur d'un cluster Nutanix pour un usage particulier, soit à l'extérieur pour donner accès au stockage Nutanix à d'autres ordinateurs ou infrastructures virtualisées.
+### Quelques fonctionnalités clés et différences entre les packs
 
-- **Framework utilities**
-    + **X-ray** : ensemble d'outils de test et de benchmark sur les principales solutions d'hyperconvergences ([présentation Nutanix de X-Ray](https://www.nutanix.com/products/x-ray)).
-    + **Move** :  outil de migration vers Nutanix ([présentation Nutanix de MOVE](https://www.nutanix.com/products/move)).
-    + **LCM** : outil de mise à jour des clusters ([présentation de LCM](https://www.nutanix.com/products/life-cycle-manager)).
+Nous listons ici quelques fonctionnalités fréquemment recherchées et le pack de licence à privilégier :
 
-### Licences et services complémentaires disponibles avec le pack de licence **Nutanix Standard**
-
-**Nutanix Standard** inclut la version **AOS Pro** de la brique **AOS Storage**, anciennement **AOS Distributed Storage**, qui permet de :
-
-- gérer le stockage distribué;
-- faire de l'orchestration avancée;
-- de la réplication asynchrone avec un *RPO* (Recovery Point Objective) d'une heure.
-
-### Licences et services supplémentaires disponibles avec le pack de licence **Nutanix Advanced**
-
-**Nutanix Advanced** inclut la version **AOS Ultimate** de la brique **AOS Storage**, anciennement **AOS Distributed Storage**, qui ajoute, en plus de la version standard, les capacités suivantes :
-
-- Une réplication avancée avec une meilleur résilience entre clusters :
-    - **Nearsync Replication** avec un **RPO** à 20 secondes.
-    - **Metro Availability** avec un **RPO** à 0 secondes et possible utilisation en continu.
-    - **Sync Replication** avec un **RPO** à 0 secondes.
-- et une meileure sécurité :
-    - **Data-at-Rest Encryption** : chiffrement logiciel.
-    - **Native KVM** : gestion des clés de chiffrement.
-
-Pour plus d'informations sur les différentes versions d'**AOS**, consultez la page [Nutanix Options AOS](https://www.nutanix.com/products/software-options).
+| Fonctionnalité               | Disponible dans le(s) pack(s)   |
+|------------------|--------|
+| Réplication asynchrone entre clusters (RPO >= 1h)  | Starter, Pro et Ultimate    |
+| Réplication avancée entre clusters (Metro, Sync, NearSync) | Pro et Ultimate    |
+| Nutanix Kubernetes Engine | Starter si < 3 clusters Kubernetes par cluster. NCI Pro et Ultimate sinon. |
+| Microsegmentation réseau | Pro et Ultimate |
+| Data-at-Rest encryption | Ultimate |
+| Outils de compliance sécurité | Ultimate |
+| Workflows de gouvernance | Ultimate |
+| Catalogue de déploiement d'application multi-vm en service autonome | Ultimate |
 
 ### En résumé
 
-Ci-dessous se trouve un tableau récapitulatif des deux offres Nutanix OVHcloud :
+Ci-dessous se trouve un tableau récapitulatif des licences incluses dans l'offre Nutanix on OVHcloud packagée :
 
-| Nom de l'offre                | Catégorie du service                   | Fonctionnalité associée au service |
-| ----------------------------- | -------------------------------------- | --------------------------------- |
-| **Nutanix Standard**          | **AOS Storage**                        | **AOS Pro**                       |               
-|                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
-|                               |                                        | **Nutanix Kubernetes Engine**     |   
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operations**         | 
-|                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         | 
-|                               | **Framework Utilities**                | **X-ray**                         |
-|                               |                                        | **Move**                          |
-|                               |                                        | **Lcm**                           |
-| **Nutanix Advanced**          | **AOS Storage**                        | **AOS Ultimate**                  |
-|                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
-|                               |                                        | **Nutanix Kubernetes Engine**     |   
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operations**         | 
-|                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         | 
-|                               | **Framework Utilities**                | **X-ray**                         |
-|                               |                                        | **Move**                          |
-|                               |                                        | **Lcm**                           |
+![Resumé licences](images/recap.png){.thumbnail}
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
