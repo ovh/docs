@@ -422,7 +422,7 @@ Klicken Sie auf `255.255.255.255` als Subnetzmaske und dann auf `Submit`{.action
 
 Zurück im Abschnitt `IP functions`{.action} klicken Sie auf `Show or Delete Current IP Addresses`{.action}, um zu überprüfen, ob die Additional IP korrekt hinzugefügt wurde.
 
-![check konfiguration IP](images/cPanel-2024-1.png){.thumbnail}
+![check konfiguration IP](images/Cpanel-2024-1.png){.thumbnail}
 
 
 ### Windows Server
