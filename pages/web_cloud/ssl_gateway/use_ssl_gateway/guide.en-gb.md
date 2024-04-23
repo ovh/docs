@@ -16,7 +16,7 @@ updated: 2022-12-01
 We will now explain how to use your SSL Gateway service
 
 ### Configuring the service
-Log in to [your control panel](https://www.ovh.com/manager){.external}.
+Log in to [your control panel](/links/manager){.external}.
 Then click on the `Sunrise`{.action} section.
 
 ![sunrise button](images/4.PNG){.thumbnail}

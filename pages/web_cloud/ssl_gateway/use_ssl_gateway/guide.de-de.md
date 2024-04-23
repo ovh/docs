@@ -18,7 +18,7 @@ updated: 2022-12-01
 Hier erfahren Sie, wie Sie Ihr SSL Gateway verwenden.
 
 ### Konfiguration Ihrer Dienstleistung
-- Loggen Sie sich in [Ihr Kundencenter](https://www.ovh.com/manager){.external} ein.
+- Loggen Sie sich in [Ihr Kundencenter](/links/manager){.external} ein.
 - Klicken Sie dann auf den Bereich `Sunrise`{.action}.
 
 ![Button Sunrise](images/4.PNG){.thumbnail}

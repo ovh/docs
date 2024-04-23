@@ -18,7 +18,7 @@ updated: 2022-12-01
 Questa guida ti mostra come configurare e rinnovare il tuo servizio SSL Gateway OVHcloud.
 
 ### Configurazione del servizio
-- Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager){.external}.
+- Accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
 - Clicca su `Sunrise`{.action}.
 
 ![pulsante Sunrise](images/4.PNG){.thumbnail}
