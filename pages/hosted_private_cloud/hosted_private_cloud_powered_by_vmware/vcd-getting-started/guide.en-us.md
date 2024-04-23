@@ -55,7 +55,11 @@ In this section, get a comprehensive overview of all your vApps and virtual mach
 
 ![Network Overview](images/vcd-networking-overview.png){.thumbnail}
 
-In this section, you can find all the network components of your VCD environments: networks, Edge Gateways, Provider Gateways, IP address ranges, datacentre groups, and security tags.
+In this section, you can find all the network components of your VCD environments: Networks, Edge Gateways, Provider Gateways, IP address ranges, datacentre groups, and security tags.
+vCloud Director supports three types of networks.
+- External networks
+- Organization virtual data center networks
+- vApp networks
 
 ### Content Hub
 

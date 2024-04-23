@@ -56,7 +56,18 @@ Cette section vous permet de profiter d'une vision d'ensemble complète de tous 
 
 ![Réseau Overview](images/vcd-networking-overview.png){.thumbnail}
 
-Dans cette section, retrouvez tous les composants réseau de vos environnements VCD : réseaux, passerelles Edge, passerelles fournisseur, plages d'adresses IP, groupes de centres de données et balises de sécurité.
+Dans cette section, retrouvez tous les composants réseau de vos environnements VCD : 
+- `Réseaux`{.action}. 
+- `Edge Gateways`{.action}. 
+- `Provider Gateways`{.action}. 
+- `IP Spaces`{.action}. 
+- `Data Center Groups`{.action}.
+- `Security Tags`{.action}.
+
+#### vCloud Director supporte trois types de réseaux :
+- Réseaux externes
+- Organisation de Réseaux de Datacenters virtuels
+- Réseaux vApp
 
 ### Content Hub
 
