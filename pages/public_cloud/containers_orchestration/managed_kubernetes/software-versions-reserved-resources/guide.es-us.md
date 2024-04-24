@@ -48,12 +48,12 @@ The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.ext
 
 The versions installed depends on the Kubernetes version:
 
-* `1.24`: calico v3.26.4, flannel v0.21.3 (deprecated)
-* `1.25`: calico v3.26.4, flannel v0.21.3 (deprecated)
-* `1.26`: calico v3.26.4, flannel v0.21.3
-* `1.27`: calico v3.26.4, flannel v0.21.3
-* `1.28`: calico v3.26.1, flannel v0.21.3
-* `1.29`: calico v3.27.2, flannel v0.21.3
+* `1.24`: calico v3.27.3, flannel v0.21.3 (deprecated)
+* `1.25`: calico v3.27.3, flannel v0.21.3 (deprecated)
+* `1.26`: calico v3.27.3, flannel v0.21.3
+* `1.27`: calico v3.27.3, flannel v0.21.3
+* `1.28`: calico v3.27.3, flannel v0.21.3
+* `1.29`: calico v3.27.3, flannel v0.21.3
 
 ## CSI (Container Storage Interface)
 
@@ -114,7 +114,7 @@ To guarantee the availability of a customer's node, the amount of reserved resou
 * **Storage** reservation is defined through this formula:  
     > log10(total storage in GB) * 10 + 10% of total storage
 
-This table sums up the reserved resources on b2 flavors:
+This table sums up the reserved resources on b2 and b3 flavors:
 
 | Flavor | vCore | Reserved CPU (ms) | Total RAM | Reserved RAM (GB) | Total storage (GB) | Reserved storage (GB) |
 |-|-|-|-|-|-|-|
@@ -123,6 +123,12 @@ This table sums up the reserved resources on b2 flavors:
 | b2-30 | 8 | 190 | 30 | 3 | 200 | 43 |
 | b2-60 | 16 | 230 | 60 | 4,5 | 400 | 66 |
 | b2-120 | 32 | 310 | 120 | 7,5 | 400 | 66 |
+| b3-8 | 2 | 160 | 8 | 1,4 | 50 | 22 |
+| b3-16 | 4 | 170 | 16 | 1,8 | 100 | 30 |
+| b3-32 | 8 | 190 | 32 | 2,6 | 200 | 43 |
+| b3-64 | 16 | 230 | 64 | 4,2 | 400 | 66 |
+| b3-128 | 32 | 310 | 128 | 7,4 | 400 | 66 |
+| b3-256 | 64 | 470 | 256 | 13,8 | 400 | 66 |
 
 ## Go further
 
