@@ -19,7 +19,7 @@ Rekord MX umożliwia powiązanie domeny z serwerem platformy e-mail. Jest to nie
 - Dostęp do interfejsu zarządzania strefą DNS danej domeny w [Panelu klienta](/links/manager).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Wybrana domena musi korzystać z konfiguracji OVHcloud (tzn. z serwerów DNS OVHcloud).
-- Posiadanie konta e-mail MX Plan (zawartego w pakiecie [hostingowym](/links/web/hosting), [bezpłatnym hostingu 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub w ofercie MX Plan zamówionej oddzielnie), jednej z naszych [ofert e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) lub zewnętrznej usługi e-mail.
+- Posiadanie konta e-mail MX Plan (zawartego w pakiecie [hostingowym](/links/web/hosting), [bezpłatnym hostingu 100M](/links/web/domains-free-hosting) lub w ofercie MX Plan zamówionej oddzielnie), jednej z naszych [ofert e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) lub zewnętrznej usługi e-mail.
 
 > [!primary]
 >

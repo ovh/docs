@@ -18,7 +18,7 @@ Der Eintrag vom Typ MX legt den für die E-Mail-Adressen eines Domainnamens zust
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens.
 - Der Domainname verwendet die OVHcloud Konfiguration (die OVHcloud DNS-Server).
-- Sie verfügen über einen MX Plan (enthalten in einem [Webhosting](/links/web/hosting) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt), einen unserer [OVHcloud E-Mail-Dienste](https://www.ovhcloud.com/de/emails/) oder einen externen E-Mail-Dienst.
+- Sie verfügen über einen MX Plan (enthalten in einem [Webhosting](/links/web/hosting) oder [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder separat bestellt), einen unserer [OVHcloud E-Mail-Dienste](https://www.ovhcloud.com/de/emails/) oder einen externen E-Mail-Dienst.
 
 > [!primary]
 >

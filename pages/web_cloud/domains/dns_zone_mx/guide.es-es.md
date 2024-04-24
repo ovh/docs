@@ -19,7 +19,7 @@ El registro MX permite asociar un dominio al servidor de su plataforma de correo
 - Tener acceso a la gestión de la zona DNS del dominio desde el [área de cliente de OVHcloud](/links/manager).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - El dominio debe utilizar la configuración de OVHcloud (es decir, los servidores DNS de OVHcloud).
-- Tener una solución MX Plan (incluida en el plan de [alojamiento web](/links/web/hosting), el [alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o la solución MX Plan contratada por separado), una de nuestras [soluciones de correo de OVHcloud](https://www.ovhcloud.com/es-es/emails/) o un servicio de correo externo.
+- Tener una solución MX Plan (incluida en el plan de [alojamiento web](/links/web/hosting), el [alojamiento gratuito 100M](/links/web/domains-free-hosting) o la solución MX Plan contratada por separado), una de nuestras [soluciones de correo de OVHcloud](https://www.ovhcloud.com/es-es/emails/) o un servicio de correo externo.
 
 > [!primary]
 >

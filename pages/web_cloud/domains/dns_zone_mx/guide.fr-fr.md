@@ -15,7 +15,7 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 - Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS d'OVHcloud).
-- Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou l'offre MX Plan commandée séparément), une de nos [offres e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/), ou un service e-mail externe.
+- Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](/links/web/domains-free-hosting) ou l'offre MX Plan commandée séparément), une de nos [offres e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/), ou un service e-mail externe.
 
 > [!primary]
 >

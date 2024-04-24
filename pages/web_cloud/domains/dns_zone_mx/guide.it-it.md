@@ -19,7 +19,7 @@ Il record MX permette di collegare un dominio al server della sua piattaforma di
 - Avere accesso alla gestione della zona DNS del dominio dallo [Spazio Cliente OVHcloud](/links/manager).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Il dominio in questione deve utilizzare la configurazione OVHcloud (ad esempio i server DNS di OVHcloud).
-- Disporre di una soluzione MX Plan (inclusa nelle soluzioni di [hosting Web](/links/web/hosting), [hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o MX Plan ordinati separatamente), una delle nostre [offerte di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/) o un servizio di posta esterna.
+- Disporre di una soluzione MX Plan (inclusa nelle soluzioni di [hosting Web](/links/web/hosting), [hosting gratuito 100M](/links/web/domains-free-hosting) o MX Plan ordinati separatamente), una delle nostre [offerte di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/) o un servizio di posta esterna.
 
 > [!primary]
 >

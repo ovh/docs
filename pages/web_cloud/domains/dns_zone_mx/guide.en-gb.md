@@ -15,7 +15,7 @@ With an MX record, you can link a domain name to the server on your email platfo
 - You have access to the [OVHcloud Control Panel](/links/manager).
 - You have the rights to manage the DNS zone for the domain name concerned via the [OVHcloud Control Panel](/links/manager).
 - The domain name concerned uses the OVHcloud configuration (i.e. OVHcloud DNS servers).
-- You have an MX Plan solution (included in the [web hosting plan](/links/web/hosting), a [free 100M hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or the MX Plan solution ordered separately), one of our [OVHcloud email offers](https://www.ovhcloud.com/en-gb/emails/), or an external email service.
+- You have an MX Plan solution (included in the [web hosting plan](/links/web/hosting), a [free 100M hosting](/links/web/domains-free-hosting), or the MX Plan solution ordered separately), one of our [OVHcloud email offers](https://www.ovhcloud.com/en-gb/emails/), or an external email service.
 
 > [!primary]
 >
