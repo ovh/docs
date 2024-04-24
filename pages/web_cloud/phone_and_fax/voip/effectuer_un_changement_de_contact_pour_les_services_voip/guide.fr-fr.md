@@ -27,7 +27,7 @@ OVHcloud vous permet de différencier la gestion administrative, technique et de
 
 ## Prérequis
 
-- Être connecté à  votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Être connecté à  votre [espace client OVHcloud](/links/manager){.external}
 - Disposer d’un accès à l’adresse e-mail renseignée dans votre profil.
 - Posséder l’identifiant client du nouveau contact (destinataire de la modification).
 - Le nouveau contact doit quant à lui disposer d’un accès à l’adresse e-mail renseignée dans son profil.
@@ -46,7 +46,7 @@ OVHcloud vous permet de différencier la gestion administrative, technique et de
 > En cas de changement de tous les contacts pour un service, le contact administrateur est à modifier **en dernier**. En effet, si vous le modifiez en premier, vous ne disposerez plus des droits nécessaires pour modifier les contacts technique ou facturation.
 >
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}.
+Connectez-vous à l'[espace client OVHcloud](/links/manager){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 

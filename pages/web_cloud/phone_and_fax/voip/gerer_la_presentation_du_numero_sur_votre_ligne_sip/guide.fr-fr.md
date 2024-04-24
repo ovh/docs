@@ -16,7 +16,7 @@ Votre ligne téléphonique OVHcloud vous permet de recevoir et d'émettre des ap
     - deux [lignes VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external};
     - une [ligne VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/) et un [numéro alias OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/);
     - une [ligne Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/);
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom` :
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -29,7 +29,7 @@ Même si le principe de la présentation du numéro reste le même, la manipulat
 
 ### Configurer la présentation du numéro d'une ligne SIP <a name="sip"></a>
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
 
@@ -66,7 +66,7 @@ Dès que vous êtes prêt, poursuivez la lecture de cette documentation en fonct
 
 #### Rester anonyme <a name="rester-anonyme"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de téléphonie concerné et enfin la ligne Trunk.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de téléphonie concerné et enfin la ligne Trunk.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
 
@@ -78,7 +78,7 @@ La page qui s'affiche vous indique la configuration actuelle de la présentation
 
 #### Présenter de manière unique un numéro OVHcloud <a name="presenter-numero-unique"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de téléphonie concerné et enfin la ligne Trunk.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de téléphonie concerné et enfin la ligne Trunk.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
 
@@ -103,7 +103,7 @@ Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.
 
 **Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client OVHcloud, sinon il sera prioritaire sur la présentation de votre IPBX.**
 
-Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de téléphonie concerné et enfin la ligne Trunk..
+Depuis votre [espace client OVHcloud](/links/manager), partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de téléphonie concerné et enfin la ligne Trunk..
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
 
@@ -126,7 +126,7 @@ Vous pouvez à présent configurer la présentation du numéro sur votre équipe
 
 La présentation d'un numéro externe depuis votre IPBX nécessite la validation du numéro souhaité.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de téléphonie concerné et enfin la ligne Trunk.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de téléphonie concerné et enfin la ligne Trunk.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation d'un numéro externe`{.action}.
 
@@ -144,7 +144,7 @@ Sous quelques minutes, le numéro renseigné recevra un appel. Décrochez et ind
 
 **Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client OVHcloud. Dans le cas contraire, il sera prioritaire sur la présentation de votre IPBX.**
 
-Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de téléphonie concerné et enfin la ligne Trunk.
+Depuis votre [espace client OVHcloud](/links/manager), partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de téléphonie concerné et enfin la ligne Trunk.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
 

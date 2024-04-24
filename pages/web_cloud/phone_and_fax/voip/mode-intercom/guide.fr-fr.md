@@ -14,7 +14,7 @@ Votre ligne téléphonique vous permet de recevoir et d'émettre des appels. Un 
 
 - Disposer d'une offre de téléphonie SIP.
 - Disposer d'un téléphone ou d'un équipement compatible avec le mode intercom.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} :
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action} :
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -22,7 +22,7 @@ Votre ligne téléphonique vous permet de recevoir et d'émettre des appels. Un 
 
 ### Étape 1 : accéder à la gestion du mode intercom
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée parmi celles qui s'affichent. 
+Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée parmi celles qui s'affichent. 
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action}, puis cliquez sur `Double appel et Intercom`{.action}.
  

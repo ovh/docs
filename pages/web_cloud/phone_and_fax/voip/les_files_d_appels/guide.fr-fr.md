@@ -15,7 +15,7 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 ## Prérequis
  
 - Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external} dans votre compte OVHcloud.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être connecté à l’[espace client OVHcloud](/links/manager){.external}.
 
 > [!primary]
 >
@@ -25,7 +25,7 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la section `Télécom`{.action}.<br>
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, dans la section `Télécom`{.action}.<br>
 Cliquez ensuite sur `Télécom`{.action} et choisissez le numéro alias sur lequel vous souhaitez configurer la file d'appels.
 
 ### Étape 1 : appliquer la configuration

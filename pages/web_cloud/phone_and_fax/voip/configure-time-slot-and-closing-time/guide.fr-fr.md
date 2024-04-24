@@ -13,7 +13,7 @@ Votre ligne téléphonique OVHcloud vous permet de recevoir des appels. Pour div
 ## Prérequis
 
 - Disposer d'une [ligne OVHcloud avec un forfait compatible](https://www.ovhtelecom.fr/telephonie/voip/){.external} ou d'une ligne Trunk.
-- Disposer d'un accès à la gestion de la ligne concernée depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Disposer d'un accès à la gestion de la ligne concernée depuis votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -35,7 +35,7 @@ Poursuivez la lecture de cette documentation en fonction de la configuration que
 
 #### Étape 1 : accéder à la gestion des plages horaires
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Gérer les plages horaires`{.action}.
 
@@ -94,7 +94,7 @@ Pour compléter vos plages horaires, vous avez la possibilité de créer des fer
 > Les fermetures exceptionnelles complètent [vos plages horaires paramétrées](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time#gerer-les-plages-horaires){.external}. Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles s’appliquent.
 >
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
 

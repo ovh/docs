@@ -14,7 +14,7 @@ Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre d
 
 - Disposer d'une ligne téléphonique possédant un [forfait compatible](https://www.ovhtelecom.fr/telephonie/services_inclus/){.external} avec la fonctionnalité « appels simultanés ».
 - Posséder et avoir installé un téléphone Plug & Phone.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -22,7 +22,7 @@ Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre d
 
 ### Gérer les appels simultanés
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}. Cliquez sur `Téléphonie`{.action}, puis sélectionnez la ligne concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}. Cliquez sur `Téléphonie`{.action}, puis sélectionnez la ligne concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} puis cliquez sur `Appels simultanés`{.action}.
 

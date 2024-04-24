@@ -13,7 +13,7 @@ La fonctionnalité Click2Call (ou « appel en un clic ») permet de mettre en re
 ## Prérequis
 
 - Disposer d’une ligne SIP possédant un [forfait compatible](https://www.ovhtelecom.fr/telephonie/services_inclus/){.external} avec la fonctionnalité Click2Call.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -21,7 +21,7 @@ La fonctionnalité Click2Call (ou « appel en un clic ») permet de mettre en re
 
 ### Configurer la fonctionnalité Click2Call
 
-Vous avez la possibilité de configurer la fonctionnalité Click2Call depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} (manipulation simple) ou depuis les [API OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} (manipulation experte).
+Vous avez la possibilité de configurer la fonctionnalité Click2Call depuis votre [espace client OVHcloud](/links/manager){.external} (manipulation simple) ou depuis les [API OVHcloud](/links/manager){.external} (manipulation experte).
 
 > [!primary]
 >
@@ -32,7 +32,7 @@ Vous avez la possibilité de configurer la fonctionnalité Click2Call depuis vot
 
 #### Configurer le Click2Call depuis l'espace client
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Appel en 1 clic (Click2Call)`{.action}.
 

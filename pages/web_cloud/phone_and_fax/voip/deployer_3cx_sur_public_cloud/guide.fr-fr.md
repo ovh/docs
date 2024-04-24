@@ -12,7 +12,7 @@ A la fin de ce guide, vous aurez les bases pour gérer le déploiement de votre 
 
 ## Prérequis
 
-- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud. Retrouvez plus d'informations dans notre guide « [Créer votre premier projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) ».
+- Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud. Retrouvez plus d'informations dans notre guide « [Créer votre premier projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) ».
 - L'IPBX 3CX requiert une license valide pour être utilisé. Assurez-vous d'avoir une license valide lors du déploiement. Retrouvez toutes les informations sur <https://www.3cx.fr>. 
 
 ## En pratique
@@ -599,7 +599,7 @@ Pour notre guide, nous allons utiliser une instance **Discovery D2-4**.
 
 #### Déploiement via l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur le menu `Public Cloud`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur le menu `Public Cloud`{.action}.
 
 Sélectionnez votre projet Public Cloud.
 
@@ -664,6 +664,6 @@ Dans ce JSON, insérez le template dans `userData`. Attention, les sauts de lign
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
