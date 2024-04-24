@@ -125,21 +125,21 @@ Après avoir créé une L7 policy, vous pouvez y ajouter des règles pour préci
    - **Inverser** : Optionnellement, vous pouvez inverser la logique de la règle pour que lorsque la condition est "True", la logique de la règle soit considérée comme "False" et vice versa.
 
 4. **Types de Règles L7 Disponibles** :
-- **Cookie**: Inspecte les cookies des requêtes pour identifier des critères spécifiques.
+   - **Cookie**: Inspecte les cookies des requêtes pour identifier des critères spécifiques.
 
-- **Header**: Analyse les en-têtes HTTP pour détecter des valeurs définies.
+   -  **Header**: Analyse les en-têtes HTTP pour détecter des valeurs définies.
 
-- **Host Name**: Compare le nom d'hôte de la requête à une valeur spécifique.
+   -  **Host Name**: Compare le nom d'hôte de la requête à une valeur spécifique.
 
-- **Path**: Examine le chemin d'accès URI pour trouver des correspondances spécifiques.
+   -  **Path**: Examine le chemin d'accès URI pour trouver des correspondances spécifiques.
 
-- **SSL Conn Has Cert**: Vérifie si une connexion SSL possède un certificat.
+   -  **SSL Conn Has Cert**: Vérifie si une connexion SSL possède un certificat.
 
-- **SSL Verify Result**: Évalue le résultat de la validation de certificat SSL.
+   -  **SSL Verify Result**: Évalue le résultat de la validation de certificat SSL.
 
-- **File Type**: Analyse le type de fichier dans l'URI pour identifier des extensions spécifiques.
+   -  **File Type**: Analyse le type de fichier dans l'URI pour identifier des extensions spécifiques.
 
-- **SSL BN Field**: Examine les champs de noms de certificat SSL pour des correspondances spécifiques.
+   -  **SSL BN Field**: Examine les champs de noms de certificat SSL pour des correspondances spécifiques.
 
 5. **Enregistrement de la règle** :
    - Une fois tous les champs remplis selon vos critères, cliquez sur « Ajouter » ou « Sauvegarder » pour enregistrer la règle à votre politique L7.
