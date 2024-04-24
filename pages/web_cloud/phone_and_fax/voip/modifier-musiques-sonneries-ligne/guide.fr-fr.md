@@ -12,7 +12,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afi
 
 ## Prérequis
 
-- Disposer d'une [ligne téléphonique OVHcloud entreprise](https://www.ovhtelecom.fr/telephonie/){.external}
+- Disposer d'une [ligne téléphonique OVHcloud entreprise](/links/telecom/telephonie){.external}
 - Être en possession de la ou des musiques ou sonneries que vous souhaitez utiliser, au format audio adéquat.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action} :
 

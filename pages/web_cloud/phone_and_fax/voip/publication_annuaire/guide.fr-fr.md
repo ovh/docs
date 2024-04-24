@@ -12,7 +12,7 @@ Lorsque vous disposez d'une ligne ou d'un numéro chez un opérateur, il est obl
 
 ## Prérequis
 
-- Disposer d’un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external} ou d'une [ligne VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/){.external}.
+- Disposer d’un [numéro alias](/links/telecom/numeros){.external} ou d'une [ligne VoIP OVHcloud](/links/telecom/telephonie){.external}.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action} :
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}

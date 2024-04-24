@@ -21,8 +21,8 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 ## Prérequis
 
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
-- Disposer d'une [ligne téléphonique OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Disposer d'un [téléphone fourni par OVHcloud](https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml){.external} et l'avoir installé.
+- Disposer d'une [ligne téléphonique OVHcloud](/links/telecom/voip){.external}.
+- Disposer d'un [téléphone fourni par OVHcloud](/links/telecom/comparatif-telephones){.external} et l'avoir installé.
 
 ## En pratique
 

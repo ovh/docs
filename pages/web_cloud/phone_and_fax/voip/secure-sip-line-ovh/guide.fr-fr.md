@@ -12,7 +12,7 @@ La téléphonie sur IP utilise le web pour transmettre des communications. Elle 
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external} (Découverte ou Entreprise).
+- Disposer d'une [ligne SIP OVHcloud](/links/telecom/voip){.external} (Découverte ou Entreprise).
 - Connaître ses adresses IP publiques ou être en mesure de les récupérer.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action} :
 

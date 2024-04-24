@@ -12,7 +12,7 @@ Vous pouvez configurer votre ligne Fax directement via votre espace client OVHcl
 
 ## Prérequis
 
-- Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
+- Disposer d’une [ligne Fax OVHcloud](/links/telecom/fax).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr).
 
 ## En pratique

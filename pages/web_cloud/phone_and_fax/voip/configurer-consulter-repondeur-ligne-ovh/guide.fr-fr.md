@@ -21,7 +21,7 @@ Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnalis
 
 ## Prérequis
 
-- Disposer d'une [ligne téléphonique OVHcloud](https://www.ovhtelecom.fr/telephonie/){.external}.
+- Disposer d'une [ligne téléphonique OVHcloud](/links/telecom/telephonie){.external}.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}

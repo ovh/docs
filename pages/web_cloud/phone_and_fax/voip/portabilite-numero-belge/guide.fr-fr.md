@@ -14,7 +14,7 @@ La portabilité permet à un abonné de conserver son numéro de téléphone lor
 
 - Disposer d'au moins un numéro de téléphone chez un autre opérateur en Belgique.
 - Pour les numéros géographiques, justifier d'une adresse postale correspondant à la zone du ou des numéros concernés.
-- Disposer d'une offre [VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/){.external}.
+- Disposer d'une offre [VoIP OVHcloud](/links/telecom/telephonie){.external}.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}

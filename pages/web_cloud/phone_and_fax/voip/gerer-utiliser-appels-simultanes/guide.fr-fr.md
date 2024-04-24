@@ -12,7 +12,7 @@ Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre d
 
 ## Prérequis
 
-- Disposer d'une ligne téléphonique possédant un [forfait compatible](https://www.ovhtelecom.fr/telephonie/services_inclus/){.external} avec la fonctionnalité « appels simultanés ».
+- Disposer d'une ligne téléphonique possédant un [forfait compatible](/links/telecom/services-inclus){.external} avec la fonctionnalité « appels simultanés ».
 - Posséder et avoir installé un téléphone Plug & Phone.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
