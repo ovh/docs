@@ -125,29 +125,30 @@ Après avoir créé une L7 policy, vous pouvez y ajouter des règles pour préci
    - **Inverser** : Optionnellement, vous pouvez inverser la logique de la règle pour que lorsque la condition est "True", la logique de la règle soit considérée comme "False" et vice versa.
 
 4. **Types de Règles L7 Disponibles** :
- 1. **Cookie**
-- **Description**: Vérifie les cookies dans les requêtes pour des critères spécifiques.
+- **Cookie**
+  - **Description**: Inspecte les cookies des requêtes pour identifier des critères spécifiques.
 
- 2. **Header**
-- **Description**: Inspecte les en-têtes HTTP des requêtes pour des valeurs spécifiques.
+- **Header**
+  - **Description**: Analyse les en-têtes HTTP pour détecter des valeurs définies.
 
- 3. **Host Name**
-- **Description**: Compare le nom d'hôte de la requête à une valeur donnée.
+- **Host Name**
+  - **Description**: Compare le nom d'hôte de la requête à une valeur spécifique.
 
- 4. **Path**
-- **Description**: Examine le chemin d'accès URI pour des correspondances spécifiques.
+- **Path**
+  - **Description**: Examine le chemin d'accès URI pour trouver des correspondances spécifiques.
 
- 5. **SSL Conn Has Cert**
-- **Description**: Vérifie si une connexion SSL présente un certificat.
+- **SSL Conn Has Cert**
+  - **Description**: Vérifie si une connexion SSL possède un certificat.
 
- 6. **SSL Verify Result**
-- **Description**: Compare le résultat de la vérification de certificat SSL.
+- **SSL Verify Result**
+  - **Description**: Évalue le résultat de la validation de certificat SSL.
 
- 7. **File Type**
-- **Description**: Évalue le type de fichier dans l'URI pour des extensions spécifiques.
+- **File Type**
+  - **Description**: Analyse le type de fichier dans l'URI pour identifier des extensions spécifiques.
 
- 8. **SSL BN Field**
-- **Description**: Examine les champs de noms de certificat SSL pour des valeurs spécifiques.
+- **SSL BN Field**
+  - **Description**: Examine les champs de noms de certificat SSL pour des correspondances spécifiques.
+
 
 
 5. **Enregistrement de la règle** :
