@@ -30,13 +30,11 @@ In S3, a bucket is a flat container of objects. It does not provide any hierarch
 > - CSS files must be uploaded with text/css as their ContentType.
 > - Make your bucket content publicly available, i.e all resources must have ACL "public-read".
 
-
 ### Step 2: Setting the permissions
 
 The bucket hosting the website and its contents must be publicly accessible i.e with READ permission set for all users.
 
 **Example**:
-
 
 Using the predefined `PUBLIC-READ` ACL at the bucket level:
 
@@ -45,6 +43,7 @@ aws --profile user-aws s3api put-bucket-acl --bucket my-website --acl public-rea
 ```
 
 Applying the predefined `PUBLIC-READ` ACL on **all** the objects:
+
 ```sh
 #!/bin/bash
 declare -a output=($(aws s3api list-objects-v2 --bucket my-website --query='Contents[].Key' | jq -r '.[]'))
@@ -53,7 +52,6 @@ do
     aws s3api put-object-acl --bucket my-website --key $value --acl public-read
 done
 ```
-
 
 ### Step 3: Setting the website configuration for a bucket
 
