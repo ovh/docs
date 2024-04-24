@@ -91,9 +91,6 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
 - **Note importante :** La gestion des politiques L7 n'est disponible que pour les listeners utilisant les protocoles `HTTP` et `TERMINATED HTTPS`. Assurez-vous que votre listener utilise l'un de ces protocoles avant de tenter d'accéder à ces paramètres.
 - Une fois dans la section des politiques L7, vous pouvez voir les politiques existantes ou cliquer sur « **Ajouter une L7 policy** » pour créer une nouvelle politique, selon les options disponibles dans l'interface.
 
- 
-##### Remplissage du formulaire de création de politique L7
-
 ##### Remplissage du formulaire de création de politique L7
 
 - **Nom :** Attribuez un nom unique à votre politique pour l'identifier facilement.
