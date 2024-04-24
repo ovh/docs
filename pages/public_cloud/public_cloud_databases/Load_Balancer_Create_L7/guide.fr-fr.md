@@ -103,30 +103,64 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
   - `REDIRECT_PREFIX` : Ici, le Load Balancer ajoute un préfixe à l'URL reçue dans la requête. Remplissez le champ `Préfixe` et choisissez le code de réponse HTTP approprié pour la redirection.
   - `REJECT` : Rejette les requêtes et retourne le code HTTP 403 (Forbidden).
 
-- **Configurer les conditions spécifiques à la politique** : 
-  - Déterminez sur quelles bases la politique doit être appliquée. Vous pouvez configurer des conditions basées sur :
-    - `URI` : L'adresse de la ressource demandée par le client. Configurez cette condition pour rediriger ou rejeter des requêtes selon le chemin d'accès spécifié dans l'URI.
-    - `En-têtes HTTP` : Les valeurs des en-têtes spécifiques dans la requête HTTP. Configurez cette condition pour appliquer une politique si un en-tête spécifique contient, commence par, ou correspond exactement à une valeur donnée.
-    - `Cookies` : Les cookies présents dans la requête du client. Configurez cette condition pour vérifier la présence d'un cookie spécifique ou sa valeur pour déclencher une redirection ou un rejet.
-  - **Type de comparaison** : Choisissez comment les valeurs seront comparées aux critères que vous définissez. Les options incluent `EQUAL_TO`, `STARTS_WITH`, `CONTAINS`, `ENDS_WITH`, etc.
-  - **Valeur** : Spécifiez la valeur exacte ou partielle que doit contenir l'élément (URI, en-tête, cookie) pour que la condition soit considérée comme remplie.
-
 - Après avoir rempli tous les champs nécessaires, cliquez sur **Ajouter** pour créer votre politique L7.
 
+#### 4. **Ajout de règles spécifiques à une politique L7**
 
-###### Exemple de configuration :
-- **Nom de la politique** : Redirection ancien site
-- **Action** : `REDIRECT_TO_URL`
-- **URL de redirection** : `https://nouveausite.example.com`
-- **Conditions** : 
-  - **Type** : `URI`
-  - **Type de comparaison** : `STARTS_WITH`
-  - **Valeur** : `/anciensite`
+Après avoir créé une L7 policy, vous pouvez y ajouter des règles pour préciser les conditions sous lesquelles cette politique doit s'activer. Voici les étapes pour ajouter des règles L7 à une politique existante :
 
-Cet exemple montre comment configurer une politique pour rediriger toutes les requêtes commençant par `/anciensite` vers `https://nouveausite.example.com`.
+1. **Accès aux options de la politique L7** :
+   - Sur la page des politiques L7 de votre listener, localisez la politique pour laquelle vous souhaitez ajouter des règles.
+   - Cliquez sur les trois petits points (...) à côté de la politique concernée et sélectionnez « Gérer les L7 rules ».
 
-- Validez en cliquant sur « **Créer** » pour finaliser la création de la politique. 
-- Ajoutez des règles spécifiques à votre nouvelle politique en suivant un processus similaire à travers l'interface de gestion des règles L7. [GAL] ajouter le même niveau de détails pour les règles. Ajouter des screenshots.
+2. **Ajouter une nouvelle règle L7** :
+   - Sur la page des règles L7, cliquez sur le bouton « Ajouter une L7 rule ».
+   - Une L7 rule est un test logique qui renvoie les statuts "True" ou "False". Pour déclencher l'action de la politique, toutes les règles doivent retourner "True".
+
+3. **Configuration de la règle L7** :
+   - **Type de la L7 Rule** : Sélectionnez le type de règle que vous souhaitez créer (par exemple, Cookie, Header, Host name, Path, etc.).
+   - **Type de comparaison** : Choisissez comment vous souhaitez comparer les données (Regex, starts with, ends with, contains, equal to).
+   - **Clé** : Pour certains types de règles comme Cookie ou Header, spécifiez la clé à évaluer.
+   - **Valeur** : Indiquez la valeur utilisée par le type de comparaison.
+   - **Inverser** : Optionnellement, vous pouvez inverser la logique de la règle pour que lorsque la condition est "True", la logique de la règle soit considérée comme "False" et vice versa.
+
+4. **Types de Règles L7 Disponibles** :
+ 1. **Cookie**
+- **Description**: Vérifie les cookies dans les requêtes pour des critères spécifiques.
+
+ 2. **Header**
+- **Description**: Inspecte les en-têtes HTTP des requêtes pour des valeurs spécifiques.
+
+ 3. **Host Name**
+- **Description**: Compare le nom d'hôte de la requête à une valeur donnée.
+
+ 4. **Path**
+- **Description**: Examine le chemin d'accès URI pour des correspondances spécifiques.
+
+ 5. **SSL Conn Has Cert**
+- **Description**: Vérifie si une connexion SSL présente un certificat.
+
+ 6. **SSL Verify Result**
+- **Description**: Compare le résultat de la vérification de certificat SSL.
+
+ 7. **File Type**
+- **Description**: Évalue le type de fichier dans l'URI pour des extensions spécifiques.
+
+ 8. **SSL BN Field**
+- **Description**: Examine les champs de noms de certificat SSL pour des valeurs spécifiques.
+
+
+5. **Enregistrement de la règle** :
+   - Une fois tous les champs remplis selon vos critères, cliquez sur « Ajouter » ou « Sauvegarder » pour enregistrer la règle à votre politique L7.
+
+### Conseils pour la configuration des règles L7
+
+- **Testez chaque règle individuellement** : Avant de combiner plusieurs règles, assurez-vous que chaque règle fonctionne comme prévu en la testant dans divers scénarios.
+- **Documentez vos règles** : Gardez une trace de la logique derrière chaque règle pour faciliter les modifications futures ou pour aider les nouveaux administrateurs à comprendre la configuration.
+- **Surveillez l'impact des règles** : Après l'activation des règles, surveillez le comportement du trafic pour s'assurer qu'elles fonctionnent comme prévu sans bloquer de trafic légitime.
+
+Cet exemple montre comment configurer une règle de type Cookie pour une politique L7, où la règle évalue si le cookie nommé "sessionId" contient une certaine valeur. En utilisant des règles bien conçues, vous pouvez contrôler finement le trafic et améliorer la sécurité et la performance de vos applications.
+
 
 ### Étape 2 : Utilisation de la CLI OpenStack et d'Horizon
 La CLI OpenStack et l'interface graphique Horizon offrent des alternatives à l'interface client OVHcloud pour la gestion des politiques et règles L7.
