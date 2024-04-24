@@ -1,7 +1,7 @@
 ---
 title: "Configuring VM encryption with a KMS server"
 excerpt: "Find out how to encrypt your virtual machine on vSphere using a KMS server"
-updated: 2024-04-19
+updated: 2024-04-24
 ---
 
 ## Objective
@@ -31,20 +31,23 @@ Once in the security section, go to the `Virtual Machine Encryption Key Manageme
 > To retrieve your SSL fingerprint from your KMS server, follow the instructions below by navigating through the tabs.
 >
 
-> [!Tab]
+> [!tabs]
 > Windows
 >> Open your web browser.
+>>
 >> In the address bar, enter your server’s IP address preceded by `https://` and followed by the port if necessary (for example: `https://192.0.2.1:443`).
+>>
 >> When the page loads, click the padlock icon to the left of the URL in the address bar. This will display the certificate information.
+>> 
 >> In the certificate information, look for the section that relates to the *fingerprint*. This section can be named differently depending on the browser you are using.
 >>![Navigator Padlock](images/padlock_website.png)
 >>![Sha Thumbprint Browser](images/fingerprint_sha.png)
 > Linux/MacOS
 >> If you are on a Linux or MacOS host, simply run the command below in a terminal.
+>> 
 >> ```shell
 >> openssl s_client -connect 54.38.64.196:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 >> ```
->> 
 
 ### Add the Key Provider in vSphere
 

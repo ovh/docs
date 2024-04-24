@@ -1,7 +1,7 @@
 ---
 title: "Configuration du chiffrement des machines virtuelles grâce à un KMS serveur"
 excerpt: "Decouvrez comment chiffrer votre machine virtuelle sur vSphere grâce à un serveur KMS"
-updated: 2024-04-19
+updated: 2024-04-24
 ---
  
 ## Objectif
@@ -29,20 +29,22 @@ Une fois dans la section sécurité rendez vous dans la section `Virtual Machine
 > Pour récuperer votre empreintre SSL de votre serveur KMS suivez les instructions ci-dessous :
 >
 
-> [!Tab]
+> [!tabs]
 > Windows
 >> Ouvrez votre navigateur web.
+>> 
 >> Dans la barre d'adresse, entrez l'adresse IP de votre serveur précédée de https:// et suivi du port si nécessaire (par exemple, https://192.168.0.1:443).
+>> 
 >> Lorsque la page est chargée, cliquez sur l'icône de cadenas à gauche de l'adresse dans la barre d'adresse. Cela affichera des informations sur le certificat.
 >> Dans les informations du certificat, cherchez la section qui concerne l'empreinte digitale ou le fingerprint. Cette section peut être nommée différemment selon le navigateur que vous utilisez.
 >> ![Cadena Navigateur](images/cadenas_site_web.png)
 >> ![Empreinte SHA Navigateur](images/fingerprint_sha.png)
 > Linux / MacOs
 >> Si vous être sur un hote linux ou MacOs il vous suffit d'executer la commande ci-dessous dans un terminal.
+>> 
 >> ```shell
 >> openssl s_client -connect 54.38.64.196:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 >> ```
->> 
 
 ## Ajouter le key provider dans vSphere
 
