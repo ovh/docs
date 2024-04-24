@@ -70,7 +70,7 @@ Dès que la vérification aboutit, choisissez d'activer ou non les entrées mini
 |Activer les entrées minimales ?|Détails|
 |---|---|
 |Oui|Sélectionnez ce choix si vous souhaitez personnaliser vous-même la zone DNS par la suite.</br>![minimal-dns-entries](images/dashboard-minimal-entries.png){.thumbnail}|
-|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, la zone étant préconfigurée à cet effet.</br>![no-minimal-dns-entries](images/dashboard-ovh-full-entries.png){.thumbnail}|
+|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](/links/web/hosting){.external}, la zone étant préconfigurée à cet effet.</br>![no-minimal-dns-entries](images/dashboard-ovh-full-entries.png){.thumbnail}|
 
 Une fois votre choix effectué, poursuivez les étapes jusqu'à la création de la zone DNS.
 

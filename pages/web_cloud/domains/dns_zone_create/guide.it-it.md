@@ -74,7 +74,7 @@ Una volta completata la verifica, scegli se attivare il numero minimo di record 
 |Attivare i record minimi?|Dettaglio|
 |---|---|
 |Sì|Seleziona questa scelta se vuoi personalizzare in autonomia la zona DNS in seguito.</br>![minimale-entra](images/dashboard-minimal-entries.png){.thumbnail}|
-|No|Seleziona questa opzione se intendi utilizzare servizi OVHcloud come [hosting web](https://www.ovhcloud.com/it/web-hosting/){.external}, con la zona preconfigurata a tal fine.</br>![no-minimale-entra](images/dashboard-ovh-full-entries.png){.thumbnail}|
+|No|Seleziona questa opzione se intendi utilizzare servizi OVHcloud come [hosting web](/links/web/hosting){.external}, con la zona preconfigurata a tal fine.</br>![no-minimale-entra](images/dashboard-ovh-full-entries.png){.thumbnail}|
 
 Una volta effettuata la scelta, segui gli step fino alla creazione della zona DNS.
 

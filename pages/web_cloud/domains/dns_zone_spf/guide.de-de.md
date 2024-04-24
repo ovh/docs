@@ -98,7 +98,7 @@ Im neu angezeigten Fenster bietet der Konfigurationsassistent verschiedene Arten
 
 Sie haben den `SPF`{.action}-Eintrag ausgewählt und möchten die OVHcloud-Konfiguration anwenden. Diese erlaubt es, alle ausgehenden E-Mail-Server von OVHcloud für die folgenden E-Mail-Angebote einzubeziehen:
 
-- MX Plan Standalone oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot inklusive
+- MX Plan Standalone oder in einem [OVHcloud Webhosting](/links/web/hosting){.external} Angebot inklusive
 - [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/)
 - [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/)
 
@@ -174,7 +174,7 @@ Die Tabelle auf dieser Seite zeigt die DNS-Zone Ihrer Domain bei OVHcloud an. Je
 
 Die allgemeine OVHcloud SPF-Konfiguration gilt für folgende Lösungen:
 
-- MX Plan Standalone oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} inklusive
+- MX Plan Standalone oder in einem [OVHcloud Webhosting](/links/web/hosting){.external} inklusive
 - [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/)
 - [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/)
 

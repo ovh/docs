@@ -96,7 +96,7 @@ Na nova janela, irá visualizar vários registos DNS. Para adicionar um SPF, tem
 
 Escolheu o registo `SPF`{.action} e deseja aplicar a configuração da OVHcloud. que permite incluir o conjunto dos servidores de e-mail enviados pela OVHcloud para as seguintes ofertas de e-mail:
 
-- MX Plan sozinho ou incluído numa oferta de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- MX Plan sozinho ou incluído numa oferta de [alojamento web da OVHcloud](/links/web/hosting){.external}.
 - [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
 - [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 
@@ -173,7 +173,7 @@ A tabela apresenta a configuração da OVHcloud do seu domínio. Cada linha corr
 
 A configuração SPF OVHcloud geral aplica-se às seguintes soluções:
 
-- MX Plan sozinho ou incluído numa oferta de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+- MX Plan sozinho ou incluído numa oferta de [alojamento web da OVHcloud](/links/web/hosting).
 - [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
 - [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 

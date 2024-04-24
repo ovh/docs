@@ -19,7 +19,7 @@ Il record MX permette di collegare un dominio al server della sua piattaforma di
 - Avere accesso alla gestione della zona DNS del dominio dallo [Spazio Cliente OVHcloud](/links/manager).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Il dominio in questione deve utilizzare la configurazione OVHcloud (ad esempio i server DNS di OVHcloud).
-- Disporre di una soluzione MX Plan (inclusa nelle soluzioni di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), [hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o MX Plan ordinati separatamente), una delle nostre [offerte di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/) o un servizio di posta esterna.
+- Disporre di una soluzione MX Plan (inclusa nelle soluzioni di [hosting Web](/links/web/hosting), [hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o MX Plan ordinati separatamente), una delle nostre [offerte di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/) o un servizio di posta esterna.
 
 > [!primary]
 >
@@ -53,7 +53,7 @@ L’email sarà inviata verso la destinazione **mx0.mail.ovh.net**, preceduta da
 
 ### Valori della configurazione MX di OVHcloud <a name="mxovhcloud"></a>
 
-Qui sotto è disponibile la configurazione MX di OVHcloud da utilizzare con le nostre soluzioni MX Plan (da sola o inclusa in un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)), [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/) e [Exchange](https://www.ovhcloud.com/it/emails/). I nostri server di posta dispongono di un antispam e di un antivirus integrato.
+Qui sotto è disponibile la configurazione MX di OVHcloud da utilizzare con le nostre soluzioni MX Plan (da sola o inclusa in un piano di [hosting Web OVHcloud](/links/web/hosting)), [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/) e [Exchange](https://www.ovhcloud.com/it/emails/). I nostri server di posta dispongono di un antispam e di un antivirus integrato.
 
 |Dominio|TTL|Record|Priorità|Destinazione|
 |---|---|---|---|---|

@@ -98,7 +98,7 @@ Wprowadź kod transferu w polu obok nazwy Twojej domeny. Jeśli nie posiadasz je
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.com/pl/web-hosting/){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik "[Przeniesienie strony WWW do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}" zawiera instrukcje, jak to zrobić.
+Możesz również zakończyć zamówienie [hostingiem www](/links/web/hosting){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik "[Przeniesienie strony WWW do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}" zawiera instrukcje, jak to zrobić.
 
 > [!warning]
 >

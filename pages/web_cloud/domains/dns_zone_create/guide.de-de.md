@@ -72,7 +72,7 @@ Sobald die Überprüfung abgeschlossen ist, wählen Sie aus, ob Sie die minimale
 |Die minimalen Einträge aktivieren?|Details|
 |---|---|
 |Ja|Wählen Sie diese Option, wenn Sie Ihre DNS-Zone später selbst anpassen möchten.</br>![Minimum-DNS-Zentries](images/dashboard-minimal-entries.png){.thumbnail}|
-|Nein|	Wählen Sie diese Option, wenn Sie OVHcloud Dienste wie zum Beispiel ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} nutzen möchten. Die DNS-Zone ist hierfür bereits vorkonfiguriert.</br>![Minimum-dns-zentries](images/dashboard-ovh-full-entries.png){.thumbnail}|
+|Nein|	Wählen Sie diese Option, wenn Sie OVHcloud Dienste wie zum Beispiel ein [Webhosting](/links/web/hosting){.external} nutzen möchten. Die DNS-Zone ist hierfür bereits vorkonfiguriert.</br>![Minimum-dns-zentries](images/dashboard-ovh-full-entries.png){.thumbnail}|
 
 Wenn Sie Ihre Auswahl getroffen haben, folgen Sie den Schritten bis zur Erstellung der DNS-Zone.
 

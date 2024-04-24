@@ -74,7 +74,7 @@ Assim que a verificação chegar ao fim, escolha ativar ou não as entradas mín
 |Ativar entradas mínimas?|Detalhes|
 |---|---|
 |Sim|Selecione esta escolha se deseja personalizar você mesmo a zona DNS.</br>![mínimo-entries](images/dashboard-minimal-entries.png){.thumbnail}
-|Não|Selecione esta escolha se pretende utilizar serviços da OVHcloud como [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, sendo a zona pré-configurada para este efeito.</br>![no-mínimo-dentro-entries](images/dashboard-ovh-full-entries.png){.thumbnail}|
+|Não|Selecione esta escolha se pretende utilizar serviços da OVHcloud como [alojamento web](/links/web/hosting){.external}, sendo a zona pré-configurada para este efeito.</br>![no-mínimo-dentro-entries](images/dashboard-ovh-full-entries.png){.thumbnail}|
 
 Depois de escolher, siga os passos até criar a zona DNS.
 

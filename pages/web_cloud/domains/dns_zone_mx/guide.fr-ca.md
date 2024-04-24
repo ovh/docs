@@ -15,7 +15,7 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 - Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS d'OVHcloud).
-- Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)), [Exchange](https://www.ovhcloud.com/fr-ca/emails/), ou un service e-mail externe.
+- Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](/links/web/hosting)), [Exchange](https://www.ovhcloud.com/fr-ca/emails/), ou un service e-mail externe.
 
 > [!primary]
 >
@@ -48,7 +48,7 @@ Vous pouvez paramétrer plusieurs enregistrements MX pour un même nom de domain
 
 ### Valeurs de la configuration MX OVHcloud <a name="mxovhcloud"></a>
 
-Retrouvez ci-dessous la configuration MX OVHcloud à utiliser pour nos solutions MX Plan ( incluse dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/)) et [Exchange](https://www.ovhcloud.com/fr-ca/emails/). Nos serveurs e-mail disposent d'un antispam et d'un antivirus intégré.
+Retrouvez ci-dessous la configuration MX OVHcloud à utiliser pour nos solutions MX Plan ( incluse dans une offre d’[hébergement web OVHcloud](/links/web/hosting)) et [Exchange](https://www.ovhcloud.com/fr-ca/emails/). Nos serveurs e-mail disposent d'un antispam et d'un antivirus intégré.
 
 |Domaine|TTL|Type d'enregistrement|Priorité|Cible|
 |---|---|---|---|---|

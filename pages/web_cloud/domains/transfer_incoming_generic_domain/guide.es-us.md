@@ -98,7 +98,7 @@ Cuando se le pida el código de transferencia, introdúzcalo en el campo situado
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-También puede completar el pedido con un [alojamiento web](https://www.ovhcloud.com/es/web-hosting/){.external} y otras soluciones de OVHcloud. Esto le puede interesar si quiere migrar sus servicios a OVHcloud. Nuestra guía [Migrar un sitio web y el correo a OVHcloud ](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) explica cómo hacerlo.
+También puede completar el pedido con un [alojamiento web](/links/web/hosting){.external} y otras soluciones de OVHcloud. Esto le puede interesar si quiere migrar sus servicios a OVHcloud. Nuestra guía [Migrar un sitio web y el correo a OVHcloud ](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) explica cómo hacerlo.
 
 > [!warning]
 >

@@ -97,7 +97,7 @@ Wenn Sie zur Eingabe des AUTH/INFO-Code eingeben werden, können Sie ihn in das 
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Sie können Ihre Bestellung auch mit einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} kombinieren. Unsere Anleitung "[Migration Ihrer Website zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}" beschreibt den optimalen Weg zum Migrieren Ihrer Dienste.
+Sie können Ihre Bestellung auch mit einem [Webhosting](/links/web/hosting){.external} kombinieren. Unsere Anleitung "[Migration Ihrer Website zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}" beschreibt den optimalen Weg zum Migrieren Ihrer Dienste.
 
 > [!warning]
 >

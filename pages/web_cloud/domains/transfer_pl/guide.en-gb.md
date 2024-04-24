@@ -75,7 +75,7 @@ Once you have unlocked your domain name and obtained your code, you can order th
 
 When you are asked to provide your transfer code, enter it in the box next to your domain name. If you do not yet have the transfer code, you can tick the box labelled `Enter transfer code at a later stage`{.action}. However, we strongly advise ensuring that you have the code to hand before you continue. Remember that the transfer will not start until a valid code has been provided.
 
-You can also complete your order with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}  and other OVHcloud solutions. This may be of interest to you, if you would also like to migrate your services to OVHcloud. Our guide to [Migrating your website to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) provides instructions on how to do this.
+You can also complete your order with a [web hosting plan](/links/web/hosting){.external}  and other OVHcloud solutions. This may be of interest to you, if you would also like to migrate your services to OVHcloud. Our guide to [Migrating your website to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) provides instructions on how to do this.
 
 > [!warning]
 >

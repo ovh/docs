@@ -99,7 +99,7 @@ Se abrirá una ventana en la que podrá elegir entre varios registros DNS. Para 
 
 Ha elegido el registro `SPF`{.action} y quiere aplicar la configuración de OVHcloud. Esto le permite incluir todos los servidores de correo saliente de OVHcloud para las siguientes ofertas de correo electrónico:
 
-- Solo MX Plan o incluido en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} .
+- Solo MX Plan o incluido en un plan de [hosting de OVHcloud](/links/web/hosting){.external} .
 - [Hosted Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/)
 
 Haga clic en el botón `Utilizar el SPF para hosting compartido OVHcloud`{.action}, situado en la parte superior de la ventana de asistencia. Se mostrará la información relativa al SPF de OVHcloud. Haga clic en `Aceptar`{.action} para aplicar los cambios.
@@ -178,7 +178,7 @@ Se mostrará una tabla con la configuración del dominio en OVHcloud. Cada líne
 
 La configuración SPF de OVHcloud general se aplica a las siguientes soluciones:
 
-- Solo MX Plan o incluido en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
+- Solo MX Plan o incluido en un plan de [hosting de OVHcloud](/links/web/hosting).
 - [Hosted Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/)
 
 La configuración es la siguiente:

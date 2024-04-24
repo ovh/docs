@@ -93,7 +93,7 @@ When you are asked to provide your transfer code, enter it into the field. If yo
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/). Our guide on [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} provides useful information for an optimised approach.
+Domains can also be ordered in addition to a [Web Hosting plan](/links/web/hosting). Our guide on [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} provides useful information for an optimised approach.
 
 > [!warning]
 >
