@@ -106,9 +106,14 @@ Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balan
 
 4. **Accès aux Pools**
    - Allez dans l'onglet "Pools", puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
+     
+![Schema 1](images/HealthM1.png)
 
 5. **Configuration du Health Monitor**
    - Cliquez sur l'onglet "Health Monitors" au sein du détail du Pool, puis sur "Ajouter un Health Monitor".
+
+![Schema 1](images/HealthM2.png)
+
    - **Informations générales**:
      - **Nom**: Doit contenir uniquement des lettres, nombres, underscores, tirets ou points.
      - **Type**: Sélectionnez le type de Health Monitor (par exemple, HTTP, HTTPS, TCP, TLS-hello).
@@ -125,6 +130,8 @@ Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balan
 
 6. **Validation**
    - Une fois toutes les informations renseignées, cliquez sur "Ajouter" pour activer votre Health Monitor.
+     
+![Schema 1](images/HealthM3.png)
 
 Ce processus crée un Health Monitor qui effectuera régulièrement des contrôles d'intégrité sur chaque membre du pool, utilisant les résultats pour déterminer si le membre doit recevoir de nouvelles connexions. Un seul Health Monitor peut être défini pour chaque pool.
 
