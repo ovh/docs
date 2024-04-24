@@ -59,7 +59,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 ### Step 1: Check the information associated with the domain <a name="step1"></a>
 
-**To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of GDPR, the data visible in [WHOIS](https://www.ovhcloud.com/en-gb/domains/whois/){.external} has become very limited. We recommend checking the information associated with your domain name via your current domain name registrar.
+**To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of GDPR, the data visible in [WHOIS](/links/web/domains-whois){.external} has become very limited. We recommend checking the information associated with your domain name via your current domain name registrar.
 
 - **If the information is correct:** Go to the next step of this guide.
 
@@ -67,7 +67,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 > [!primary]
 >
-> If you do not know which registrar is responsible for your domain name, the "Registrar" lines retrieved as part of the [WHOIS](https://www.ovhcloud.com/en-gb/domains/whois/){.external} search result can help you identify it.
+> If you do not know which registrar is responsible for your domain name, the "Registrar" lines retrieved as part of the [WHOIS](/links/web/domains-whois){.external} search result can help you identify it.
 >
 
 ### Step 2: Unlock your domain and retrieve the transfer code <a name="step2"></a>

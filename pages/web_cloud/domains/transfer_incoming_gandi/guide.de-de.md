@@ -73,7 +73,7 @@ Für den Transfer eines Gandi-Domainnamens ist ein spezieller Ansatz erforderlic
 
 > [!warning]
 >
-> Die meisten Domainendungen verfügen über eine Sperrfunktion gegen den Transfer, die im [Whois](https://www.ovhcloud.com/de/domains/whois/) als „transferProhibited“ bezeichnet ist.
+> Die meisten Domainendungen verfügen über eine Sperrfunktion gegen den Transfer, die im [Whois](/links/web/domains-whois) als „transferProhibited“ bezeichnet ist.
 >
 > Diese Sperrung verhindert unbeabsichtigtes Übertragen.
 >

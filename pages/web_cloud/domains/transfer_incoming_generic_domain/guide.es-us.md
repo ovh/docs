@@ -64,7 +64,7 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 
 ### 1. Comprobar la información relativa al dominio <a name="step1"></a>
 
-**En primer lugar, es importante comprobar que la información relativa al dominio esté actualizada.** Desde la introducción del RGPD, los datos visibles en el ["Whois"](https://www.ovhcloud.com/es-es/domains/whois/) se han vuelto muy limitados. Por lo tanto, le recomendamos que consulte la información relativa al dominio en su agente registrador actual.
+**En primer lugar, es importante comprobar que la información relativa al dominio esté actualizada.** Desde la introducción del RGPD, los datos visibles en el ["Whois"](/links/web/domains-whois) se han vuelto muy limitados. Por lo tanto, le recomendamos que consulte la información relativa al dominio en su agente registrador actual.
 
 - ** Si los datos son correctos: vaya al siguiente paso de esta guía.**
 
@@ -72,7 +72,7 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 
 > [!primary]
 >
-> Si no sabe qué agente registrador es responsable del dominio, las líneas Registrar, que aparecerán en el resultado de la búsqueda de la [herramienta Whois](https://www.ovhcloud.com/es-es/domains/whois/){.external}, le facilitarán información sobre su identidad.
+> Si no sabe qué agente registrador es responsable del dominio, las líneas Registrar, que aparecerán en el resultado de la búsqueda de la [herramienta Whois](/links/web/domains-whois){.external}, le facilitarán información sobre su identidad.
 >
 
 ### 2. Desbloquear el dominio y obtener el código de transferencia <a name="step2"></a>

@@ -71,7 +71,7 @@ To transfer a Gandi domain name, you will need to follow a specific procedure.
 
 > [!warning]
 >
-> Most extensions offer an antitransfer locking feature, identifiable by a special status in the [WHOIS](https://www.ovhcloud.com/en/domains/whois/), called “transferProhibited”.
+> Most extensions offer an antitransfer locking feature, identifiable by a special status in the [WHOIS](/links/web/domains-whois), called “transferProhibited”.
 >
 > This locking prevents any unintended transfer.
 >

@@ -45,7 +45,7 @@ So kann es beispielsweise vorkommen, dass Sie eine DNS-Zone für Ihren Domainnam
 >
 > Wenn Sie die aktive DNS-Zone für Ihre Domain löschen, werden Ihre Online-Dienste (Website, E-Mail-Adressen usw.) unterbrochen.
 >
-> Überprüfen Sie mithilfe einer [WHOIS](https://www.ovhcloud.com/de/domains/whois/)-Abfrage, ob die aktive DNS-Zone Ihrer Domain bei OVHcloud liegt.
+> Überprüfen Sie mithilfe einer [WHOIS](/links/web/domains-whois)-Abfrage, ob die aktive DNS-Zone Ihrer Domain bei OVHcloud liegt.
 >
 > Wenn die aktive DNS-Zone für Ihre Domain bei OVHcloud liegt und Sie diese durch eine an einem anderen Standort gehostete DNS-Zone ersetzen möchten, lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)“, bevor Sie die Löschung der DNS-Zone vornehmen.
 >

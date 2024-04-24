@@ -77,7 +77,7 @@ Musisz również:
 
 > [!warning]
 >
-> Większość rozszerzeń zawiera funkcję blokady przed transferem, która jest dostępna w [Whois](https://www.ovhcloud.com/pl/domains/whois/) pod nazwą "transferProhibited".
+> Większość rozszerzeń zawiera funkcję blokady przed transferem, która jest dostępna w [Whois](/links/web/domains-whois) pod nazwą "transferProhibited".
 >
 > Ta blokada zapobiega przypadkowemu przeniesieniu domeny.
 >

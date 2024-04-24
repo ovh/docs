@@ -60,7 +60,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 ### Étape 1 : vérifier les informations associées au nom de domaine <a name="step1"></a>
 
-**Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](https://www.ovhcloud.com/fr-ca/domains/whois/) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
+**Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](/links/web/domains-whois) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
 
 - **Si les informations sont correctes :** passez à l'étape suivante de ce guide.
 
@@ -68,7 +68,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 > [!primary]
 >
-> Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](https://www.ovhcloud.com/fr-ca/domains/whois/){.external}, peuvent vous fournir des informations sur son identité.
+> Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](/links/web/domains-whois){.external}, peuvent vous fournir des informations sur son identité.
 >
 
 ### Étape 2 : déverrouiller son nom de domaine et récupérer le code de transfert <a name="step2"></a>

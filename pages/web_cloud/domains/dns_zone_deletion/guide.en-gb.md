@@ -41,7 +41,7 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 >
 > If you delete the active DNS zone for your domain name, your online services (website, email addresses, etc.) will be interrupted.
 >
-> Perform a [WHOIS](https://www.ovhcloud.com/en-gb/domains/whois/) query to find out whether your domain name’s active DNS zone is the one hosted at OVHcloud.
+> Perform a [WHOIS](/links/web/domains-whois) query to find out whether your domain name’s active DNS zone is the one hosted at OVHcloud.
 >
 > If the active DNS zone for your domain name is the one at OVHcloud, and you would like to replace it with a DNS zone hosted elsewhere, please read our guide on [Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information) before deleting any DNS zones.
 >

@@ -45,7 +45,7 @@ Por ejemplo, es posible que necesite eliminar una zona DNS para su dominio en OV
 >
 > En efecto, si elimina la zona DNS activa para su dominio, se interrumpirán sus servicios en línea (sitio web, direcciones de correo, etc.).
 >
-> Efectúe un [WHOIS](https://www.ovhcloud.com/es/domains/whois/) de su dominio para saber si la zona DNS activa de su dominio es la que tiene en OVHcloud o no.
+> Efectúe un [WHOIS](/links/web/domains-whois) de su dominio para saber si la zona DNS activa de su dominio es la que tiene en OVHcloud o no.
 >
 > Si la zona DNS activa para su dominio es la que tiene en OVHcloud y desea sustituirla por una zona DNS alojada en otro proveedor, consulte nuestra guía "[Modificar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)" antes de eliminar cualquier zona DNS.
 >

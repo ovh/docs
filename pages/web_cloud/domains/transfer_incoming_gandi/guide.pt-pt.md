@@ -77,7 +77,7 @@ Deve também:
 
 > [!warning]
 >
-> A maioria das extensões propõe uma função de bloqueio contra a transferência, identificável por um estado especial no [Whois](https://www.ovhcloud.com/pt/domains/whois/), chamado "transferProhibited".
+> A maioria das extensões propõe uma função de bloqueio contra a transferência, identificável por um estado especial no [Whois](/links/web/domains-whois), chamado "transferProhibited".
 >
 > Este bloqueio impede transferências não intencionais.
 >

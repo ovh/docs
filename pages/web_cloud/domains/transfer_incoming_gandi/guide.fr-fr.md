@@ -73,7 +73,7 @@ Vous devez aussi :
 
 > [!warning]
 >
-> La plupart des extensions proposent une fonction de verrouillage contre le transfert, identifiable par un statut spécial dans le [Whois](https://www.ovhcloud.com/fr/domains/whois/), appelé « transferProhibited ».
+> La plupart des extensions proposent une fonction de verrouillage contre le transfert, identifiable par un statut spécial dans le [Whois](/links/web/domains-whois), appelé « transferProhibited ».
 >
 > Ce verrouillage empêche tout transfert involontaire.
 >

@@ -41,7 +41,7 @@ Vous pouvez, par exemple, être amené à supprimer une zone DNS pour votre nom 
 >
 > En effet, si vous supprimez la zone DNS active pour votre nom de domaine, cela engendrera une interruption de vos services en ligne (site web, adresses e-mail, etc.).
 >
-> Effectuez un [WHOIS](https://www.ovhcloud.com/fr/domains/whois/) de votre nom de domaine pour savoir si la zone DNS active de votre nom de domaine est celle présente chez OVHcloud ou non.
+> Effectuez un [WHOIS](/links/web/domains-whois) de votre nom de domaine pour savoir si la zone DNS active de votre nom de domaine est celle présente chez OVHcloud ou non.
 >
 > Si la zone DNS active pour votre nom de domaine est celle présente chez OVHcloud et que vous souhaitez remplacer celle-ci par une zone DNS hébergée ailleurs, consultez notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) » avant d'effectuer une quelconque suppression de zone DNS.
 >

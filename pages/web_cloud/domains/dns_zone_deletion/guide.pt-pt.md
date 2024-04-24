@@ -45,7 +45,7 @@ Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 >
 > A eliminação da zona DNS ativa para o seu domínio levará à interrupção dos serviços online (site, endereços de e-mail, etc.).
 >
-> Faça um [WHOIS](https://www.ovhcloud.com/pt/domains/whois/) do seu domínio para saber se a zona DNS ativa do seu domínio é a que se encontra presente na OVHcloud ou não.
+> Faça um [WHOIS](/links/web/domains-whois) do seu domínio para saber se a zona DNS ativa do seu domínio é a que se encontra presente na OVHcloud ou não.
 >
 > Se a zona DNS ativa para o seu domínio for a que está presente na OVHcloud e pretender substituí-la por uma zona DNS alojada noutro local, consulte o guia "[Modificar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)" antes de efetuar qualquer operação de eliminação da zona DNS.
 >

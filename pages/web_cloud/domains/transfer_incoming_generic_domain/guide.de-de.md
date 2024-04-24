@@ -63,7 +63,7 @@ Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahm
 
 ### Schritt 1: Domaininformationen überprüfen <a name="step1"></a>
 
-**Bevor Sie den Transfer beantragen, ist es wichtig zu überprüfen, dass die Angaben zu Ihrem Domainnamen aktuell sind.** Seit Inkrafttreten der DSGVO sind die im [Whois-Eintrag](https://www.ovhcloud.com/de/domains/whois/) sichtbaren Daten sehr begrenzt. Daher empfehlen wir Ihnen, die Informationen Ihres Domainnamens über Ihren aktuellen Registrar zu überprüfen.
+**Bevor Sie den Transfer beantragen, ist es wichtig zu überprüfen, dass die Angaben zu Ihrem Domainnamen aktuell sind.** Seit Inkrafttreten der DSGVO sind die im [Whois-Eintrag](/links/web/domains-whois) sichtbaren Daten sehr begrenzt. Daher empfehlen wir Ihnen, die Informationen Ihres Domainnamens über Ihren aktuellen Registrar zu überprüfen.
 
 - **Wenn die Angaben korrekt sind: Gehen Sie zum nächsten Schritt dieser Anleitung.**
 
@@ -71,7 +71,7 @@ Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahm
 
 > [!primary]
 >
-> Wenn Sie nicht wissen, welcher Registrar für Ihren Domainnamen verantwortlich ist, können Sie über die "Registrar"-Zeilen, die im Suchergebnis des [Whois](https://www.ovhcloud.com/de/domains/whois/){.external}-Tools erscheinen, Informationen zu dessen Identität erhalten.
+> Wenn Sie nicht wissen, welcher Registrar für Ihren Domainnamen verantwortlich ist, können Sie über die "Registrar"-Zeilen, die im Suchergebnis des [Whois](/links/web/domains-whois){.external}-Tools erscheinen, Informationen zu dessen Identität erhalten.
 >
 
 ### Schritt 2: Domainnamen entsperren und AUTH/INFO-Code beantragen <a name="step2"></a>

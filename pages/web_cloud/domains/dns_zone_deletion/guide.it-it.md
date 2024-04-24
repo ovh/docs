@@ -45,7 +45,7 @@ Ad esempio, una zona DNS per un dominio può essere eliminata in OVHcloud nei se
 >
 > L’eliminazione della zona DNS attiva per il dominio comporta infatti l’interruzione dei servizi online (sito Web, indirizzi email, etc.).
 >
-> Effettua un [WHOIS](https://www.ovhcloud.com/it/domains/whois/) del dominio per sapere se la zona DNS attiva del dominio è quella presente in OVHcloud o meno.
+> Effettua un [WHOIS](/links/web/domains-whois) del dominio per sapere se la zona DNS attiva del dominio è quella presente in OVHcloud o meno.
 >
 > Se la zona DNS attiva per il tuo nome di dominio è quella presente in OVHcloud e vuoi sostituirla con una zona DNS ospitata altrove, consulta la nostra guida "[Modificare i server DNS di un nome di dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)" prima di effettuare qualsiasi eliminazione di zona DNS.
 >

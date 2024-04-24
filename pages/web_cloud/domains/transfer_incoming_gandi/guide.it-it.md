@@ -78,7 +78,7 @@ Il trasferimento di un dominio Gandi richiede una procedura specifica.
 
 > [!warning]
 >
-> La maggior parte delle estensioni propone una funzione di blocco contro il trasferimento, identificabile da uno stato speciale nel [Whois](https://www.ovhcloud.com/it/domains/whois/), chiamata "transferProhibited".
+> La maggior parte delle estensioni propone una funzione di blocco contro il trasferimento, identificabile da uno stato speciale nel [Whois](/links/web/domains-whois), chiamata "transferProhibited".
 >
 > Questo blocco impedisce qualsiasi trasferimento involontario.
 >

@@ -45,7 +45,7 @@ Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w
 >
 > Jeśli usuniesz aktywną strefę DNS dla Twojej domeny, spowoduje to przerwę w działaniu Twoich usług online (strona WWW, konta e-mail, etc.).
 >
-> Sprawdź [WHOIS](https://www.ovhcloud.com/pl/domains/whois/), czy aktywna strefa DNS Twojej domeny jest strefą obecną w OVHcloud.
+> Sprawdź [WHOIS](/links/web/domains-whois), czy aktywna strefa DNS Twojej domeny jest strefą obecną w OVHcloud.
 >
 > Jeśli domena jest aktywna w strefie DNS OVHcloud i chcesz ją zastąpić strefą DNS hostowaną gdzie indziej, zapoznaj się z naszym przewodnikiem "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)" przed usunięciem strefy DNS.
 >

@@ -64,7 +64,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 ### Etap 1: weryfikacja informacji związanych z domeną <a name="step1"></a>
 
-**W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie ["Whois"](https://www.ovhcloud.com/pl/domains/whois/). Sugerujemy zatem sprawdzenie informacji dotyczących Twojej domeny u aktualnego operatora.
+**W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie ["Whois"](/links/web/domains-whois). Sugerujemy zatem sprawdzenie informacji dotyczących Twojej domeny u aktualnego operatora.
 
 - **Jeśli informacje są poprawne: przejdź do kolejnego etapu niniejszego przewodnika.**
 
@@ -72,7 +72,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 > [!primary]
 >
-> Jeśli nie wiesz, który operator jest odpowiedzialny za Twoją domenę, możesz podać informacje dotyczące jej tożsamości w wierszach "Registrar", które pojawią się w wyniku wyszukiwania narzędzia [Whois](https://www.ovhcloud.com/pl/domains/whois/){.external}.
+> Jeśli nie wiesz, który operator jest odpowiedzialny za Twoją domenę, możesz podać informacje dotyczące jej tożsamości w wierszach "Registrar", które pojawią się w wyniku wyszukiwania narzędzia [Whois](/links/web/domains-whois){.external}.
 >
 
 ### Etap 2: odblokowanie domeny i pobranie kodu transferu <a name="step2"></a>
