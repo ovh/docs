@@ -27,7 +27,8 @@ Cette solution vous permet de provisionner et de gérer efficacement des machine
 
 ![Dashboard Overview](images/vcd-dashboard-overview.png){.thumbnail}
 
-Les différentes sections disponibles :
+<details>
+<summary>Les différentes sections disponibles :</summary>
 
 1. **Data Centers**
 2. **Applications**
@@ -39,12 +40,41 @@ Les différentes sections disponibles :
 8. **Loupe**
 9. **Tâches effectuées**
 10. **Ressources utilisées**
+</details>
 
 ### Datacenters
 
 ![Datacenters Overview](images/vcd-create-VM.gif){.thumbnail}
 
 Retrouvez dans cette sections tous vos datacenters virtuels (**vDC**) commandés avec différents emplacements de datacenters, un bref suivi de votre consommation de ressources et du nombre de vApps/VM en cours d’exécution.
+Dans cette section vous retrouvez un bandeau sur votre gauche, le même que vous retrouvez quand vous cliquez sur une de vos : `Virtual Applications | Virtual Machines | Container Applications`{.action}. depuis la section **"Application"** :
+
+<details>
+<summary>Cliquez pour voir les sections :</summary>
+
+<summary>Compute :</summary>
+
+- `vApps`{.action}.
+- `Virtual Machines`{.action}.
+- `Affinity Rules`{.action}.
+
+<summary>Networking :</summary>
+
+- `Networks`{.action}.
+- `Edges`{.action}.
+
+<summary>Storage :</summary>
+
+- `Named disks`{.action}.
+- `Storage Policies`{.action}.
+
+<summary>Settings :</summary>
+
+- `General`{.action}.
+- `Metadata`{.action}.
+- `Sharing`{.action}.
+- `Kubernetes Policies`{.action}.
+</details>
 
 ### Applications
 
@@ -56,13 +86,17 @@ Cette section vous permet de profiter d'une vision d'ensemble complète de tous 
 
 ![Réseau Overview](images/vcd-networking-overview.png){.thumbnail}
 
-Dans cette section, retrouvez tous les composants réseau de vos environnements VCD : 
+<details>
+<summary>Dans cette section, vous retrouvez tous les composants réseau de vos environnements VCD :</summary>
+
 - `Réseaux`{.action}. 
 - `Edge Gateways`{.action}. 
 - `Provider Gateways`{.action}. 
 - `IP Spaces`{.action}. 
 - `Data Center Groups`{.action}.
 - `Security Tags`{.action}.
+
+</details>
 
 #### vCloud Director supporte trois types de réseaux :
 - Réseaux externes
