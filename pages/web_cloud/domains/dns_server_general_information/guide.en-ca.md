@@ -79,7 +79,7 @@ The table that opens will contain the DNS servers currently set by OVHcloud for 
 
 > [!primary]
 >
-> When you use the OVHcloud DNS servers, the numbers in the server names have no link to the service(s) you are using. Only the [Anycast DNS](https://www.ovhcloud.com/en-ca/domains/options/) option  uses specific DNS servers that are automatically assigned to you.
+> When you use the OVHcloud DNS servers, the numbers in the server names have no link to the service(s) you are using. Only the [Anycast DNS](/links/web/domains-options) option  uses specific DNS servers that are automatically assigned to you.
 
 ![dns-server](images/tab.png){.thumbnail}
 

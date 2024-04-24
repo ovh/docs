@@ -79,7 +79,7 @@ Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVH
 
 > [!primary]
 >
-> Lorsque vous utilisez les serveurs DNS OVHcloud, les numéros présents dans les noms des serveurs n'ont aucun lien avec le ou les services que vous utilisez. Seule l'option [DNS anycast](https://www.ovhcloud.com/fr-ca/domains/options/) utilise des serveurs DNS spécifiques qui vous sont automatiquement attribués. 
+> Lorsque vous utilisez les serveurs DNS OVHcloud, les numéros présents dans les noms des serveurs n'ont aucun lien avec le ou les services que vous utilisez. Seule l'option [DNS anycast](/links/web/domains-options) utilise des serveurs DNS spécifiques qui vous sont automatiquement attribués. 
 
 ![dns-server](images/tab.png){.thumbnail}
 

@@ -84,7 +84,7 @@ Die angezeigte Tabelle listet die DNS-Server auf, die derzeit von OVHcloud für 
 
 > [!primary]
 >
-> Wenn Sie die regulären OVHcloud DNS-Server verwenden, haben die in den Servernamen enthaltenen Nummern keinen Bezug zu den von Ihnen verwendeten Diensten. Nur die Option [DNS Anycast](https://www.ovhcloud.com/de/domains/options/) verwendet bestimmte DNS-Server, die Ihnen automatisch zugewiesen werden. 
+> Wenn Sie die regulären OVHcloud DNS-Server verwenden, haben die in den Servernamen enthaltenen Nummern keinen Bezug zu den von Ihnen verwendeten Diensten. Nur die Option [DNS Anycast](/links/web/domains-options) verwendet bestimmte DNS-Server, die Ihnen automatisch zugewiesen werden. 
 
 ![dns-server](images/tab.png){.thumbnail}
 

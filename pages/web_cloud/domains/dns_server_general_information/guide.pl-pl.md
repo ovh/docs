@@ -83,7 +83,7 @@ Tabela, która się wyświetla zawiera listę serwerów DNS zdefiniowanych aktua
 
 > [!primary]
 >
-> Gdy korzystasz z serwerów DNS OVHcloud, numery zawarte w nazwach serwerów nie mają żadnego związku z używanymi przez Ciebie usługami. Tylko opcja [DNS anycast](https://www.ovhcloud.com/pl/domains/options/) używa określonych serwerów DNS, które są automatycznie przypisywane. 
+> Gdy korzystasz z serwerów DNS OVHcloud, numery zawarte w nazwach serwerów nie mają żadnego związku z używanymi przez Ciebie usługami. Tylko opcja [DNS anycast](/links/web/domains-options) używa określonych serwerów DNS, które są automatycznie przypisywane. 
 
 ![dns-server](images/tab.png){.thumbnail}
 
