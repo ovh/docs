@@ -48,12 +48,12 @@ The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.ext
 
 The versions installed depends on the Kubernetes version:
 
-* `1.24`: calico v3.26.4, flannel v0.21.3 (deprecated)
-* `1.25`: calico v3.26.4, flannel v0.21.3 (deprecated)
-* `1.26`: calico v3.26.4, flannel v0.21.3
-* `1.27`: calico v3.26.4, flannel v0.21.3
-* `1.28`: calico v3.26.1, flannel v0.21.3
-* `1.29`: calico v3.27.2, flannel v0.21.3
+* `1.24`: calico v3.27.3, flannel v0.21.3 (deprecated)
+* `1.25`: calico v3.27.3, flannel v0.21.3 (deprecated)
+* `1.26`: calico v3.27.3, flannel v0.21.3
+* `1.27`: calico v3.27.3, flannel v0.21.3
+* `1.28`: calico v3.27.3, flannel v0.21.3
+* `1.29`: calico v3.27.3, flannel v0.21.3
 
 ## CSI (Container Storage Interface)
 

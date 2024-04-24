@@ -35,12 +35,12 @@ The OS, kernel and Docker demon version on your nodes will be regularly updated.
 
 We use `containerd` as the default CRI
 
-* `1.24`: 1.6.20 (deprecated)
-* `1.25`: 1.6.20 (deprecated)
-* `1.26`: 1.6.20
-* `1.27`: 1.6.20
-* `1.28`: 1.6.20
-* `1.29`: 1.6.27
+* `1.24`: calico v3.27.3, flannel v0.21.3 (deprecated)
+* `1.25`: calico v3.27.3, flannel v0.21.3 (deprecated)
+* `1.26`: calico v3.27.3, flannel v0.21.3
+* `1.27`: calico v3.27.3, flannel v0.21.3
+* `1.28`: calico v3.27.3, flannel v0.21.3
+* `1.29`: calico v3.27.3, flannel v0.21.3
 
 ## CNI (Cluster Network Interface)
 
