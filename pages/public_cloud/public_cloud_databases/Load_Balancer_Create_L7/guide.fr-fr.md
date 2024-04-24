@@ -94,24 +94,28 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
  
 ##### Remplissage du formulaire de création de politique L7
 
+##### Remplissage du formulaire de création de politique L7
+
 - **Nom :** Attribuez un nom unique à votre politique pour l'identifier facilement.
 
-- **Action :** Choisissez l'action que la politique doit exécuter lorsque les conditions sont remplies. Les options incluent :
-  - `REDIRECT_TO_URL` : Redirige les requêtes vers une URL spécifiée.
-  - `REDIRECT_TO_POOL` : Redirige les requêtes vers un pool de serveurs spécifié.
-  - `REJECT` : Rejette les requêtes et ne les envoie pas à un serveur backend.
+- **Position :** Indiquez la position de la politique dans l'ordre d'évaluation. Les positions commencent à 1 et déterminent l'ordre dans lequel les politiques sont évaluées.
 
-- **Pour les actions de redirection** : 
-  - Si vous choisissez `REDIRECT_TO_URL`, indiquez l'URL vers laquelle rediriger.
-  - Si vous choisissez `REDIRECT_TO_POOL`, spécifiez l'ID du pool de serveurs cible.
+- **Action :** Sélectionnez l'action que la politique doit exécuter lorsque les conditions sont remplies. Les options incluent :
+  - `REDIRECT_TO_URL` : Redirige les requêtes vers une URL spécifiée. Vous devrez fournir l'URL de redirection et sélectionner le code de réponse HTTP (par exemple, 301, 302, 303, 307, ou 308).
+  - `REDIRECT_TO_POOL` : Redirige les requêtes vers un pool de serveurs spécifié. Une liste déroulante nommée `pool` apparaîtra où vous pourrez choisir votre pool. Assurez-vous d'avoir des pools existants préalablement configurés.
+  - `REDIRECT_PREFIX` : Ici, le Load Balancer ajoute un préfixe à l'URL reçue dans la requête. Remplissez le champ `Préfixe` et choisissez le code de réponse HTTP approprié pour la redirection.
+  - `REJECT` : Rejette les requêtes et retourne le code HTTP 403 (Forbidden).
 
 - **Configurer les conditions spécifiques à la politique** : 
   - Déterminez sur quelles bases la politique doit être appliquée. Vous pouvez configurer des conditions basées sur :
-    - `URI` : L'adresse de la ressource demandée par le client. Par exemple, rediriger ou rejeter des requêtes selon le chemin d'accès spécifié dans l'URI.
-    - `En-têtes HTTP` : Les valeurs des en-têtes spécifiques dans la requête HTTP. Par exemple, appliquer une politique si un en-tête spécifique contient, commence par, ou correspond exactement à une valeur donnée.
-    - `Cookies` : Les cookies présents dans la requête du client. Par exemple, vérifier la présence d'un cookie spécifique ou sa valeur pour déclencher une redirection ou un rejet.
+    - `URI` : L'adresse de la ressource demandée par le client. Configurez cette condition pour rediriger ou rejeter des requêtes selon le chemin d'accès spécifié dans l'URI.
+    - `En-têtes HTTP` : Les valeurs des en-têtes spécifiques dans la requête HTTP. Configurez cette condition pour appliquer une politique si un en-tête spécifique contient, commence par, ou correspond exactement à une valeur donnée.
+    - `Cookies` : Les cookies présents dans la requête du client. Configurez cette condition pour vérifier la présence d'un cookie spécifique ou sa valeur pour déclencher une redirection ou un rejet.
   - **Type de comparaison** : Choisissez comment les valeurs seront comparées aux critères que vous définissez. Les options incluent `EQUAL_TO`, `STARTS_WITH`, `CONTAINS`, `ENDS_WITH`, etc.
   - **Valeur** : Spécifiez la valeur exacte ou partielle que doit contenir l'élément (URI, en-tête, cookie) pour que la condition soit considérée comme remplie.
+
+- Après avoir rempli tous les champs nécessaires, cliquez sur **Ajouter** pour créer votre politique L7.
+
 
 ###### Exemple de configuration :
 - **Nom de la politique** : Redirection ancien site
