@@ -14,14 +14,14 @@ Si tiene un dominio con OVHcloud y quiere conectarlo a un alojamiento Wix, Esta 
 >
 > - El servicio de asistencia Wix no tiene acceso a los parámetros de su dominio de OVHcloud y, por lo tanto, no puede aconsejarle sobre la información que deba proporcionarle.
 >
-> - La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.<br><br> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [Más](#gofurther) información de esta guía.
+> - La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.<br><br> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [Más](#gofurther) información de esta guía.
 >
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Tener un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} registrado con OVHcloud.
-- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Tener un [dominio](https://www.ovhcloud.com/es/domains/){.external} registrado con OVHcloud.
+- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Tener contratado un plan de hosting con Wix.
 - Tener acceso a la gestión de este alojamiento en Wix.
 
@@ -35,7 +35,7 @@ Antes de seguir los dos pasos de esta guía, le recomendamos que se familiarice 
 
 ### 1. Configurar el alojamiento Wix
 
-Si utiliza un alojamiento Wix con un dominio de OVHcloud, deberá preparar su alojamiento siguiendo las instrucciones **del paso 1** desde [**esta página de la documentación Wix**](https://support.wix.com/es-es/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882).
+Si utiliza un alojamiento Wix con un dominio de OVHcloud, deberá preparar su alojamiento siguiendo las instrucciones **del paso 1** desde [**esta página de la documentación Wix**](https://support.wix.com/es/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882).
 
 ### 2. Configurar los registros DNS en su cuenta de OVHcloud
 
