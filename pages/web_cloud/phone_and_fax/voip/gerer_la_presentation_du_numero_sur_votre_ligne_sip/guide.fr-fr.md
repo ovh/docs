@@ -13,8 +13,8 @@ Votre ligne téléphonique OVHcloud vous permet de recevoir et d'émettre des ap
 ## Prérequis
 
 - Disposer de (au choix) :
-    - deux [lignes VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external};
-    - une [ligne VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/) et un [numéro alias OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/);
+    - deux [lignes VoIP OVHcloud](/links/telecom/voip){.external};
+    - une [ligne VoIP OVHcloud](/links/telecom/voip) et un [numéro alias OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/);
     - une [ligne Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/);
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom` :
 

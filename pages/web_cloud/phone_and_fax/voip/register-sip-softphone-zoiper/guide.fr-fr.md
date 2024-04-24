@@ -19,7 +19,7 @@ Le logiciel [Zoiper](https://www.zoiper.com/){.external} est un softphone (logic
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}
+- Disposer d'une [ligne SIP OVHcloud](/links/telecom/voip){.external}
 - [Disposer des identifiants de votre ligne SIP OVHcloud](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone)
 - Disposer du logiciel [Zoiper](https://www.zoiper.com/en/voip-softphone/download/current){.external} sur un smartphone ou un ordinateur
 
