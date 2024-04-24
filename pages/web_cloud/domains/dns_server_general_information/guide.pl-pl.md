@@ -46,8 +46,8 @@ Niektórzy dostawcy DNS proponują czasem więcej niż 2 **serwery DNS* do zadek
 ## Wymagania początkowe
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/) zarejestrowanej w OVHcloud.
-- Posiadanie uprawnień [do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeny z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie uprawnień [do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeny z poziomu [Panelu klienta OVHcloud](/links//manager){.external}.
+- Dostęp do [panelu klienta OVHcloud](/links//manager){.external}.
 
 > [!primary]
 >
@@ -77,7 +77,7 @@ Upewnij się, że wprowadzone zmiany nie uniemożliwią dostępu do Twojej domen
 
 ### Dostęp do zarządzania serwerami DNS OVHcloud
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę. Wybierz zakładkę `Serwery DNS`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę. Wybierz zakładkę `Serwery DNS`{.action}.
 
 Tabela, która się wyświetla zawiera listę serwerów DNS zdefiniowanych aktualnie przez OVHcloud dla Twojej domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli.
 
@@ -121,7 +121,7 @@ Przycisk `Resetuj serwery DNS`{.action} pozwala zresetować aktualne serwery DNS
 
 Po zakończeniu operacji należy odczekać określony czas, zanim zmiany staną się widoczne. Na czas oczekiwania składają się dwa czynniki:
 
-- zmiana wprowadzona w OVHcloud musi zostać uwzględniona przez *registry* zarządzający rozszerzeniem Twojej domeny (na przykład rejestr rozszerzeń *.pl*). Możesz śledzić postęp operacji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu przejdź do sekcji `Web Cloud`{.action}, przejdź do sekcji `Domeny`{.action} w kolumnie po lewej stronie, następnie kliknij `Operacje w toku`{.action}.
+- zmiana wprowadzona w OVHcloud musi zostać uwzględniona przez *registry* zarządzający rozszerzeniem Twojej domeny (na przykład rejestr rozszerzeń *.pl*). Możesz śledzić postęp operacji w [Panelu klienta OVHcloud](/links//manager){.external}. W tym celu przejdź do sekcji `Web Cloud`{.action}, przejdź do sekcji `Domeny`{.action} w kolumnie po lewej stronie, następnie kliknij `Operacje w toku`{.action}.
 - po uwzględnieniu zmiany przez organizację zarządzającą rozszerzeniem domeny konieczny jest maksymalny czas propagacji wynoszący **48 godzin**, aby modyfikacje stały się w pełni widoczne.
 
 ## Sprawdź również

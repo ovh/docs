@@ -22,14 +22,14 @@ Vous pouvez, par exemple, être amené à supprimer une zone DNS pour votre nom 
 
 > [!primary]
 >
-> La création / modification / suppression d'une zone DNS dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) est totalement gratuite.
+> La création / modification / suppression d'une zone DNS dans votre [espace client OVHcloud](/links//manager) est totalement gratuite.
 >
 
 **Découvrez comment supprimer une zone DNS chez OVHcloud pour votre nom de domaine via votre espace client OVHcloud.**
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links//manager).
 - Avoir une zone DNS dans votre espace client OVHcloud.
 - Disposer des droits suffisants sur la zone DNS à supprimer. Retrouvez plus d'informations sur notre guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
 
@@ -50,7 +50,7 @@ Vous pouvez, par exemple, être amené à supprimer une zone DNS pour votre nom 
 
 Pour initier la suppression d'une zone DNS OVHcloud, effectuez les actions suivantes : 
 
-1. Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+1. Connectez-vous à votre [espace client OVHcloud](/links//manager).
 2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
 3. Dans la colonne de gauche, cliquez sur le menu déroulant `Noms de domaine`{.action}.
 4. Sélectionnez le nom de domaine ou la zone DNS concernée.
@@ -80,7 +80,7 @@ Cliquez sur le **lien de validation** pour poursuivre la suppression de la zone 
 
 > [!primary]
 >
-> Si la redirection des liens ne fonctionne pas, faites un **copier/coller** du lien dans la barre d'URL de votre navigateur Internet. Reconnectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si nécessaire.
+> Si la redirection des liens ne fonctionne pas, faites un **copier/coller** du lien dans la barre d'URL de votre navigateur Internet. Reconnectez-vous à votre [espace client OVHcloud](/links//manager) si nécessaire.
 >
 
 Si vous cliquez sur le lien de validation, vous serez redirigé vers une nouvelle page OVHcloud qui vous demandera le(s) motif(s) de suppression de la zone DNS OVHcloud.

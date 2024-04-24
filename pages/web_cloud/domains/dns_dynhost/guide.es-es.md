@@ -18,7 +18,7 @@ Por ejemplo, puede especificar:
 - Servidores de correo (registros DNS de tipo *MX*) a los que el dominio debe redirigir los mensajes que reciba. para consultarlos en su dirección de correo electrónico personalizada con su dominio.
 - Información relacionada con la seguridad o la autenticación de los servicios asociados (alojamiento web, servidor web, servidor de correo, etc.) a su dominio (registros DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
 
-Si lo necesita, consulte [nuestra documentación sobre los registros DNS y la edición de una zona DNS](/pages/web_cloud/domains/dns_zone_edit) desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Si lo necesita, consulte [nuestra documentación sobre los registros DNS y la edición de una zona DNS](/pages/web_cloud/domains/dns_zone_edit) desde su [área de cliente OVHcloud](/links//manager).
 
 La actualización de forma "dinámica" de un registro DNS puede evitar una interrupción prolongada de uno de sus servicios si no dispone de una dirección IP denominada "fija" (que no cambia).
 
@@ -28,7 +28,7 @@ Por ejemplo, el **DynHost** se puede utilizar si *se aloja* (en los locales de s
 
 ## Requisitos
 
-- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](/links//manager){.external}.
 - Utilizar la configuración de OVHcloud (es decir, sus servidores DNS) para el dominio en cuestión. 
 - El registro DynHost que vaya a crear no debe existir en la zona DNS de OVHcloud del dominio como registro "A".
 
@@ -36,7 +36,7 @@ Por ejemplo, el **DynHost** se puede utilizar si *se aloja* (en los locales de s
 >
 > - Si el dominio no utiliza los servidores DNS de OVHcloud, contacte con el proveedor que gestione su configuración DNS para conocer el procedimiento a seguir.
 > 
-> - Si el dominio está registrado en OVHcloud, compruebe que utiliza nuestra configuración. Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda al apartado `Web cloud`{.action}. En la columna izquierda, abra la pestaña `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action} para ver los servidores DNS utilizados por su dominio. 
+> - Si el dominio está registrado en OVHcloud, compruebe que utiliza nuestra configuración. Para ello, conéctese a su [área de cliente de OVHcloud](/links//manager){.external} y acceda al apartado `Web cloud`{.action}. En la columna izquierda, abra la pestaña `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action} para ver los servidores DNS utilizados por su dominio. 
 >
 > Para saber si utiliza o no los servidores DNS de OVHcloud, estos últimos tienen el siguiente formato: 
 >
@@ -50,7 +50,7 @@ Por ejemplo, el **DynHost** se puede utilizar si *se aloja* (en los locales de s
 
 ### Etapa 1 : crear un usuario DynHost <a name="step1"></a>
 
-Para crear un usuario DynHost, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web cloud`{.action}. En la columna izquierda, abra la pestaña `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `DynHost`{.action}.
+Para crear un usuario DynHost, conéctese a su [área de cliente de OVHcloud](/links//manager){.external} y acceda a la sección `Web cloud`{.action}. En la columna izquierda, abra la pestaña `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `DynHost`{.action}.
 
 ![DynHost](images/tab.png){.thumbnail}
 
@@ -121,7 +121,7 @@ https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|El subdominio afectado por la actualización.|
 |$IP|La nueva dirección IPv4 de destino.|
 
-Puede comprobar si la dirección IP de destino se ha actualizado correctamente. Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda al apartado `Web cloud`{.action}. En la columna izquierda, abra la pestaña `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `DynHost`{.action}. Compruebe la dirección IP que aparece en la columna `Destino`{.action}.
+Puede comprobar si la dirección IP de destino se ha actualizado correctamente. Para ello, conéctese a su [área de cliente de OVHcloud](/links//manager){.external} y acceda al apartado `Web cloud`{.action}. En la columna izquierda, abra la pestaña `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `DynHost`{.action}. Compruebe la dirección IP que aparece en la columna `Destino`{.action}.
 
 > [!warning]
 >

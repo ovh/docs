@@ -18,7 +18,7 @@ Możesz na przykład określić:
 - Serwery e-mail (rekordy DNS typu *MX*), na które Twoja domena musi przekierować otrzymane e-maile. Możesz sprawdzić je na spersonalizowanym adresie e-mail z Twoją domeną.
 - Informacje związane z bezpieczeństwem / uwierzytelnianiem usług (hosting, serwer www, serwer e-mail, itp.) powiązanych z Twoją domeną (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, itp.).
 
-W razie potrzeby zapoznaj się z naszą dokumentacją dotyczącą [rekordów DNS i edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+W razie potrzeby zapoznaj się z naszą dokumentacją dotyczącą [rekordów DNS i edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links//manager).
 
 Strefa DNS jest zainstalowana / zarejestrowana na **serwerach DNS**. Są to **serwery DNS**, które muszą być zadeklarowane u nazwy domeny, aby używać strefy DNS, którą hostują. 
 
@@ -39,7 +39,7 @@ Może zaistnieć konieczność utworzenia strefy DNS dla Twojej domeny w OVHclou
 
 - Posiadanie domeny
 - Nazwa domeny nie może mieć strefy DNS (aktywnej lub nieaktywnej) w OVHcloud ani podlegać operacji lub zamówieniu w trakcie realizacji.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links//manager){.external}.
 
 ## W praktyce
 
@@ -59,7 +59,7 @@ Może zaistnieć konieczność utworzenia strefy DNS dla Twojej domeny w OVHclou
 
 ### Etap 1: utworzyć strefę DNS w Panelu klienta OVHcloud
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web cloud`{.action}. W kolumnie po lewej stronie kliknij `Zamów`{.action}, następnie w ramce `Strefa DNS`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external} i przejdź do sekcji `Web cloud`{.action}. W kolumnie po lewej stronie kliknij `Zamów`{.action}, następnie w ramce `Strefa DNS`{.action}.
 
 Na stronie, która się wyświetla wprowadź nazwę domeny (przykład: *domain.tld*), dla której chcesz utworzyć strefę DNS. Odczekaj kilka chwil, aż narzędzie przeprowadzi weryfikację domeny.
 
@@ -95,7 +95,7 @@ Kiedy strefa DNS OVHcloud jest gotowa do użytku, powiąż ją z Twoją domeną,
 
 Należy zatem pobrać z wyprzedzeniem **serwery DNS** OVHcloud, na których strefa DNS OVHcloud została utworzona dla Twojej domeny.
 
-W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij `Domeny`{.action} i wybierz odpowiednią strefę DNS. 
+W tym celu zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external} i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij `Domeny`{.action} i wybierz odpowiednią strefę DNS. 
 
 Po lewej stronie widnieje nazwa Twojej domeny, a po lewej stronie widnieje logo w kształcie globu oznaczone symbolem *DNS*. 
 

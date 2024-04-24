@@ -20,7 +20,7 @@ The **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**omp
 
 ## Requirements
 
-- Access to manage your domain name (attached to your email solution) from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- Access to manage your domain name (attached to your email solution) from the [OVHcloud Control Panel](/links//manager).
 - One of the authentication mechanisms, [SPF](/pages/web_cloud/domains/dns_zone_spf) and/or [DKIM](/pages/web_cloud/domains/dns_zone_dkim) must be configured in the DNS zone of the email solution domain name.
 
 ## Instructions
@@ -57,7 +57,7 @@ There are two ways to configure the DMARC in your OVHcloud DNS zone:
 
 #### DMARC record <a name="dmarc-record"></a>
 
-You can add the DMARC record to your DNS zone from the OVHcloud Control Panel. To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), and click the `Web Cloud`{.action} tab. In the left-hand column, select the domain name in the `Domain names`{.action} section, then click on the `DNS zone`{.action} tab to access your DNS zone.
+You can add the DMARC record to your DNS zone from the OVHcloud Control Panel. To do this, log in to the [OVHcloud Control Panel](/links//manager), and click the `Web Cloud`{.action} tab. In the left-hand column, select the domain name in the `Domain names`{.action} section, then click on the `DNS zone`{.action} tab to access your DNS zone.
 
 Click on the `Add an entry`{.action} button, then click on "Mail records" in `DMARC`{.action}.
 
@@ -100,7 +100,7 @@ Below is a full description of the tags used for the OVHcloud **DMARC record**:
 
 #### TXT record <a name="txt-record"></a>
 
-You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). Click the `Web Cloud`{.action} tab, go to `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](/links//manager). Click the `Web Cloud`{.action} tab, go to `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 Once you have viewed your DNS zone, click on the `Add a record`{.action} button, then click on "Extended fields" in `TXT`{.action}.
 

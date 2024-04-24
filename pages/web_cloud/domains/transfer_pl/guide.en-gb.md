@@ -96,7 +96,7 @@ You can also complete your order with a [web hosting plan](https://www.ovhcloud.
 
 ![domain](images/order-summary.png){.thumbnail}
 
-Once the order has been confirmed, you will receive a free purchase order. The transfer process will only start once you have confirmed this free purchase order. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To track the progress, click `Domain`{.action} names , then`Ongoing`{.action} operations.
+Once the order has been confirmed, you will receive a free purchase order. The transfer process will only start once you have confirmed this free purchase order. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](/links//manager){.external}. To track the progress, click `Domain`{.action} names , then`Ongoing`{.action} operations.
 
 ### Step 4: Transfer confirmation
 
@@ -105,7 +105,7 @@ The domain name transfer procedure requires email validation. This step can be p
 - The domain name holder receives an email about the address that they have entered, which is listed in WHOIS (if it is not hidden).
 - This email comes from the `.pl` domain name registry, via the address `automat@dns.pl`.
 - Click on the validation link in this email to complete the transfer.
-- Once the validation is complete, the domain will be accessible from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}  within 24 hours.
+- Once the validation is complete, the domain will be accessible from your [OVHcloud Control Panel](/links//manager){.external}  within 24 hours.
 
 > [!warning]
 >
@@ -122,7 +122,7 @@ Once you have modified your email address, order a [new transfer request](#step3
 
 ### Step 5: manage a domain name with OVHcloud
 
-Once the transfer procedure is complete, you can manage your domain name from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To do this, select `Web Cloud`{.action}, click `Domain`{.action} names, then click on the domain name concerned.
+Once the transfer procedure is complete, you can manage your domain name from the [OVHcloud Control Panel](/links//manager){.external}. To do this, select `Web Cloud`{.action}, click `Domain`{.action} names, then click on the domain name concerned.
 
 ## Go further
 

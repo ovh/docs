@@ -12,7 +12,7 @@ The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configura
 - The email servers (DNS records of type *MX*) that should receive emails sent to addresses of this domain name. By configuring MX records, you can receive emails through custom email addresses using your domnain name.
 - Information related to the security/authentication of services (web hosting, web server, email server, etc.) associated with your domain name (DNS records of type *SPF*, *DKIM*, *DMARC*, etc.).
 
-For more information on DNS zones and how to edit them in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), refer to [our DNS documentation](/pages/web_cloud/domains/dns_zone_edit).
+For more information on DNS zones and how to edit them in your [OVHcloud Control Panel](/links//manager), refer to [our DNS documentation](/pages/web_cloud/domains/dns_zone_edit).
 For various reasons, you may need to apply an old DNS configuration to your domain name.
 
 DNS management is now easier thanks to the history of your DNS zones.
@@ -21,13 +21,13 @@ DNS management is now easier thanks to the history of your DNS zones.
 
 ## Requirements
 
-- A DNS zone for your domain name in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A DNS zone for your domain name in your [OVHcloud Control Panel](/links//manager)
+- Access to the [OVHcloud Control Panel](/links//manager)
 - Sufficient rights to manage the domain name
 
 ## Instructions
 
-To access this feature, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) then go to the `Web Cloud`{.action} section on the top of the interface. In the left-hand column, go to the `Domain names`{.action} section, click on the domain name linked to the DNS zone you want to manipulate, then go to the `DNS Zone`{.action} tab.
+To access this feature, log in to your [OVHcloud Control Panel](/links//manager) then go to the `Web Cloud`{.action} section on the top of the interface. In the left-hand column, go to the `Domain names`{.action} section, click on the domain name linked to the DNS zone you want to manipulate, then go to the `DNS Zone`{.action} tab.
 
 The table that appears will show your domain name’s DNS zone. There, you will find the list of DNS records that it contains. On the right of the table, there are several buttons you can use to perform actions on your DNS zone. 
 

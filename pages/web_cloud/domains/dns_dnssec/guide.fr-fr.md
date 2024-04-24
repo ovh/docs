@@ -24,28 +24,28 @@ N'hésitez pas également à consulter nos guides sur [les serveurs DNS OVHcloud
 
 - Disposer d’un nom de domaine enregistré chez OVHcloud.
 - Le nom de domaine concerné doit posséder une extension compatible avec le DNSSEC.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](/links//manager){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 
 L'activation du **DNSSEC** est possible dans deux cas :
 
-- **Votre nom de domaine utilise les serveurs DNS d'OVHcloud** : l'activation s'effectue en un clic depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} (si celle-ci n'est pas déjà activée par défaut).
+- **Votre nom de domaine utilise les serveurs DNS d'OVHcloud** : l'activation s'effectue en un clic depuis votre [espace client OVHcloud](/links//manager){.external} (si celle-ci n'est pas déjà activée par défaut).
 
-- **Votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud** : rapprochez-vous du prestataire gérant la configuration DNS de votre nom de domaine pour lui demander ses paramètres. Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné dans la liste.</br>
+- **Votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud** : rapprochez-vous du prestataire gérant la configuration DNS de votre nom de domaine pour lui demander ses paramètres. Connectez-vous à votre [espace client OVHcloud](/links//manager){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné dans la liste.</br>
 Sélectionnez l'onglet `DS records`{.action}, cliquez sur le bouton `Modifier`{.action} à droite puis sur le bouton `+`{.action} qui apparaît.</br>
 Vous pouvez désormais renseigner les 4 champs « Key Tag », « Flag », « Algorithm », « Clé publique (encodée en base64) » avec les données communiquées par votre prestataire actuel.
 
 > [!primary]
 >
-> Pour vérifier si votre nom de domaine utilise la configuration DNS OVHcloud, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné dans la liste. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
+> Pour vérifier si votre nom de domaine utilise la configuration DNS OVHcloud, connectez-vous à votre [espace client OVHcloud](/links//manager){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné dans la liste. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
 >
 > Si les noms des serveurs DNS se terminent par *ovh.net*, *ovh.ca* ou *anycast.me*, votre nom de domaine utilise bien les serveurs DNS OVHcloud.
 >
 
 ### Étape 1 : accéder à la gestion du nom de domaine <a name="step1"></a>
 
-Pour activer la solution **DNSSEC** pour votre nom de domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné dans la liste.
+Pour activer la solution **DNSSEC** pour votre nom de domaine, connectez-vous à votre [espace client OVHcloud](/links//manager){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné dans la liste.
 
 La page qui apparaît affiche les informations générales de celui-ci. 
 

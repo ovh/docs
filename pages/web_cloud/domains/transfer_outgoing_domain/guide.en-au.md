@@ -24,7 +24,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 ## Requirements
 
 - A [domain name](https://www.ovhcloud.com/en-au/domains/) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) with the necessary permissions to manage the domain name (domain administrator)
+- Access to the [OVHcloud Control Panel](/links//manager) with the necessary permissions to manage the domain name (domain administrator)
 - The registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
 
 > [!primary]
@@ -50,7 +50,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 ### Step 1: Remove the transfer protection for the domain name
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action}. Click `Domain names`{.action}, then choose the domain name concerned.
+Log in to your [OVHcloud Control Panel](/links//manager) and select `Web Cloud`{.action}. Click `Domain names`{.action}, then choose the domain name concerned.
 
 On the `General information`{.action} tab you can find the `Protection against domain name transfer`{.action} slider button under **Security**, set to `Enabled`{.action} by default.
 
@@ -66,9 +66,9 @@ Click on the slider and confirm in the popup window that you want to remove this
 > 
 > If you encounter the message "**An error occurred when requesting to disable the domain protection (User not granted for this request)**", your customer account does not have sufficient rights to unlock the domain name. 
 >
-> If you encounter the message "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**", this means that the transfer code for your domain name cannot be retrieved via your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+> If you encounter the message "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**", this means that the transfer code for your domain name cannot be retrieved via your [OVHcloud Control Panel](/links//manager).
 > 
-> In both cases, check that your account is the **administrator** contact of the domain name using our guide on [contact management](/pages/account_and_service_management/account_information/managing_contacts) then check that the domain name extension can be unlocked from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+> In both cases, check that your account is the **administrator** contact of the domain name using our guide on [contact management](/pages/account_and_service_management/account_information/managing_contacts) then check that the domain name extension can be unlocked from the [OVHcloud Control Panel](/links//manager).
 > 
 > Some *transfer codes* are directly managed by the *registry* of your domain name extension. A *registry* is an organisation that manages all domain names for a given extension. For example, the **AFNIC** manages all domain names with the extension *.fr*. If this is the case, you must contact the *registry* managing your domain name extension directly to retrieve the *transfer code*.
 >

@@ -16,12 +16,12 @@ La creazione di un dominio, il suo trasferimento e la modifica del proprietario 
 ## Prerequisiti
 
 - Disporre di uno o più domini
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links//manager)
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona la sezione `Web Cloud`{.action} e poi i `domini`{.action}. Clicca su `Operazioni in corso`{.action} sopra la lista dei domini.
+Dallo [Spazio Cliente OVHcloud](/links//manager), seleziona la sezione `Web Cloud`{.action} e poi i `domini`{.action}. Clicca su `Operazioni in corso`{.action} sopra la lista dei domini.
 
 Una tabella ti permette di consultare tutte le operazioni relative ai domini del tuo Spazio Cliente.
 

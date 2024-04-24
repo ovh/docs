@@ -23,7 +23,7 @@ Depending on your needs, you can customise your OVHcloud domain name’s DNS ser
 ## Requirements
 
 - A domain name registered with OVHcloud
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} in the `Web Cloud`{.action} section
+- Access to the [OVHcloud Control Panel](/links//manager){.external} in the `Web Cloud`{.action} section
 
 ## Instructions
 
@@ -66,7 +66,7 @@ If you need more information, please read [our tutorial on the Zonemaster tool](
 > In addition, *domain1.tld* must be registered with OVHcloud to set up the glue records.
 >
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} then choose the domain name you will use to customise the DNS server names. 
+Log in to your [OVHcloud Control Panel](/links//manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} then choose the domain name you will use to customise the DNS server names. 
 
 On the new page, click on the `GLUE`{.action} tab.
 
@@ -100,7 +100,7 @@ You must create the *A* and *AAAA* records for the host names that you defined i
 You can do this via the interface given by the service provider managing your domain name’s DNS configuration. There are two ways of doing this:
 
 - **If your domain name does not use an active DNS zone with OVHcloud**: Contact the service provider managing it. Once you have made the required changes, please move on to the next step.
-- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select the domain name you used to create the GLUE in [step 2](#step2). Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action}. Select the entry of type *A* or *AAAA* depending on the type of associated IP you want to add. Follow the steps by entering the *subdomain* and the address *IPv4* (A) or *IPv6* (AAAA) then proceed until the addition has been validated. If necessary, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](/links//manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select the domain name you used to create the GLUE in [step 2](#step2). Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action}. Select the entry of type *A* or *AAAA* depending on the type of associated IP you want to add. Follow the steps by entering the *subdomain* and the address *IPv4* (A) or *IPv6* (AAAA) then proceed until the addition has been validated. If necessary, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
 ![glueregistry](images/add-an-entry.png){.thumbnail}
 
@@ -122,7 +122,7 @@ As a result, the following records are added to the active DNS zone of the domai
 
 You will need to modify your domain name’s DNS servers by replacing the old DNS servers with the custom DNS servers you have created.
 
-To do this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select *the domain name for which you want to customise the DNS servers*.
+To do this, log in to your [OVHcloud Control Panel](/links//manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select *the domain name for which you want to customise the DNS servers*.
  
 Go to the `DNS servers`{.action} tab, then click `Modify DNS servers`{.action}. Then replace your current DNS servers with those you would like to use as custom DNS servers. 
 
@@ -149,7 +149,7 @@ For the customisation of DNS servers to be visible on the DNS network (by perfor
 You can do this via the interface given by the service provider managing your domain name’s DNS configuration. There are two possibilities:
 
 - **Your domain name does not use an active DNS zone at OVHcloud**: Contact the service provider managing it to make the change.
-- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select the domain name for which you have customised the DNS servers. Go to the `DNS Zone`{.action} tab, then click `Change in text format`{.action}. 
+- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](/links//manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select the domain name for which you have customised the DNS servers. Go to the `DNS Zone`{.action} tab, then click `Change in text format`{.action}. 
 
 A window will appear with your DNS zone in *text* mode:
 
@@ -163,7 +163,7 @@ A window will appear with your DNS zone in *text* mode:
 
 In this window, replace **only in records of the type *NS*** the names of the DNS servers with your own custom DNS server names. You **also have to** increment the first numeric value in the *SOA* line by "1". Once you have made your changes, click `Next`{.action} then `Confirm`{.action}.
 
-The change will not be visible immediately in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Wait around 20 minutes, then log in to the OVHcloud Control Panel to ensure that your changes have been processed.
+The change will not be visible immediately in the [OVHcloud Control Panel](/links//manager){.external}. Wait around 20 minutes, then log in to the OVHcloud Control Panel to ensure that your changes have been processed.
 
 > [!primary]
 >

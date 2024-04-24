@@ -16,8 +16,8 @@ El registro MX permite asociar un dominio al servidor de su plataforma de correo
 
 ## Requisitos
 
-- Tener acceso a la gestión de la zona DNS del dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener acceso a la gestión de la zona DNS del dominio desde el [área de cliente de OVHcloud](/links//manager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links//manager).
 - El dominio debe utilizar la configuración de OVHcloud (es decir, los servidores DNS de OVHcloud).
 - Tener una solución MX Plan (incluida en el plan de [alojamiento web](https://www.ovhcloud.com/es/web-hosting/)), [Exchange](https://www.ovhcloud.com/es/emails/), o un servicio de correo externo.
 
@@ -25,7 +25,7 @@ El registro MX permite asociar un dominio al servidor de su plataforma de correo
 >
 > - Si el dominio no utiliza los servidores DNS de OVHcloud, deberá editar los registros MX desde el panel que le ofrezca el proveedor que gestione la configuración del dominio.
 >
-> - Si el dominio está registrado en OVHcloud, compruebe que utiliza nuestra configuración en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Una vez que se haya registrado el dominio en cuestión, abra la pestaña `Información General`{.action}, en la sección `Servidores DNS`{.action}. Si la mención `Activo` aparece en «**Servidores DNS**», podrá utilizar los servidores DNS de OVHcloud.
+> - Si el dominio está registrado en OVHcloud, compruebe que utiliza nuestra configuración en el [área de cliente de OVHcloud](/links//manager). Una vez que se haya registrado el dominio en cuestión, abra la pestaña `Información General`{.action}, en la sección `Servidores DNS`{.action}. Si la mención `Activo` aparece en «**Servidores DNS**», podrá utilizar los servidores DNS de OVHcloud.
 >
 > ![Correo electrónico](images/dns-servers-enabled.png){.thumbnail}
 
@@ -67,7 +67,7 @@ Estos registros MX deben estar configurados en la zona DNS del dominio.
 
 ### Configurar un registro MX en una zona DNS de OVHcloud
 
-Para crear o modificar los registros MX en la configuración de su dominio en OVHcloud, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Acceda a la sección `Nombres de dominio`{.action}, haga clic en el dominio correspondiente y, seguidamente, abra la pestaña `Zona DNS`{.action}.
+Para crear o modificar los registros MX en la configuración de su dominio en OVHcloud, conéctese al [área de cliente de OVHcloud](/links//manager). Acceda a la sección `Nombres de dominio`{.action}, haga clic en el dominio correspondiente y, seguidamente, abra la pestaña `Zona DNS`{.action}.
 
 Esta tabla muestra la configuración de OVHcloud del dominio. Cada línea corresponde a un registro DNS.
 

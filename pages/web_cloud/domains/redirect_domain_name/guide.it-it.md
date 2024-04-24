@@ -17,7 +17,7 @@ Il reindirizzamento di un dominio consiste nel reindirizzarlo verso una nuova de
 ## Prerequisiti
 
 - Disporre di [un dominio](https://www.ovhcloud.com/it/domains/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links//manager){.external}
 - Essere connesso al tuo hosting Web (per un reindirizzamento tramite un file [.htaccess](#htaccess_rewrite)
 
 ## Procedura
@@ -33,7 +33,7 @@ Questa funzionalità permette di reindirizzare un dominio/sottodominio verso:
 
 Queste azioni possono essere eseguite in diversi modi:
 
-- **Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)**, dove l'assistente di configurazione permette di impostare il reindirizzamento.
+- **Dallo [Spazio Cliente OVHcloud](/links//manager)**, dove l'assistente di configurazione permette di impostare il reindirizzamento.
 - **Tramite un metodo che richiede programmazione**. Dovrai creare in autonomia il reindirizzamento in un file (in genere un [.htaccess](#htaccess_rewrite).
 
 > [!warning]
@@ -41,12 +41,12 @@ Queste azioni possono essere eseguite in diversi modi:
 > L'attivazione di un reindirizzamento può avere conseguenze sull'indicizzazione del tuo sito Internet. 
 > Presta la massima attenzione alle operazioni che intendi effettuare o contatta uno dei [provider specializzati](https://partner.ovhcloud.com/it/) nel referenziamento se necessario.
 >
-> Attenzione: un reindirizzamento creato dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) non permette di reindirizzare una URL in `https://` verso un altro dominio o URL. 
+> Attenzione: un reindirizzamento creato dallo [Spazio Cliente OVHcloud](/links//manager) non permette di reindirizzare una URL in `https://` verso un altro dominio o URL. 
 > Per creare questo tipo di reindirizzamento, dovrai necessariamente passare per una riscrittura dell'URL tramite un file ".htaccess" ad esempio.
 
 ### Reindirizzare un dominio dallo Spazio Cliente OVHcloud
 
-Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona il dominio da reindirizzare nella sezione `Domini`{.action} e clicca sulla scheda `Reindirizzamento`{.action}.
+Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](/links//manager), seleziona il dominio da reindirizzare nella sezione `Domini`{.action} e clicca sulla scheda `Reindirizzamento`{.action}.
 
 Visualizzi una tabella con tutti i reindirizzamenti attivi per il tuo dominio. Puoi gestire i tuoi reindirizzamenti esistenti con il pulsante dei contorni `...`{.action} situato a destra di ogni linea.
 
@@ -54,7 +54,7 @@ Clicca su `Aggiungi un reindirizzamento`{.action}.
 
 ![Presentazione del menu reindirizzamento](images/add-a-redirection.png){.thumbnail}
 
-Sono disponibili tre opzioni di reindirizzamento dallo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), ognuna delle quali è composta da **5 step** successivi. 
+Sono disponibili tre opzioni di reindirizzamento dallo[Spazio Cliente OVHcloud](/links//manager), ognuna delle quali è composta da **5 step** successivi. 
 
 > La scheda `Reindirizzamento`{.action} presenta una quarta opzione che permette di far puntare rapidamente il tuo dominio verso i record DNS A, AAAA e CNAME.<br>
 > Dato che non si tratta di un "reindirizzamento", questa opzione non sarà precisata in questa guida.

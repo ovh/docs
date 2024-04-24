@@ -12,12 +12,12 @@ Creating a domain name, transfering it, or changing its owner are technical oper
 ## Requirements
 
 - One or more domain names 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links//manager)
 - Being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Web Cloud`{.action} section, then `Domain names`{.action}. Click on `Ongoing operations`{.action} above the list of domain names.
+In your [OVHcloud Control Panel](/links//manager), go to the `Web Cloud`{.action} section, then `Domain names`{.action}. Click on `Ongoing operations`{.action} above the list of domain names.
 
 The table on this page displays all currrent domain name operations in your Control Panel.
 

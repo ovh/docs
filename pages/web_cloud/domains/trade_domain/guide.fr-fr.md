@@ -19,7 +19,7 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Être connecté à votre [espace client OVHcloud](/links//manager){.external}
 - Disposer d'un nom de domaine enregistré chez OVHcloud et pour lequel aucune opération (changement de propriétaire, transfert, création) n'est en cours. Si une opération a été finalisée récemment sur votre nom de domaine, un délai d'au moins 60 jours calendaires est nécessaire avant de réaliser une nouvelle opération.
 - Être le [contact administrateur](/pages/account_and_service_management/account_information/managing_contacts) du nom de domaine concerné.
 - Disposer de l'accord du propriétaire actuel du nom de domaine pour effectuer le changement de propriétaire.
@@ -41,12 +41,12 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 >
 > - le site Web du registre **TLD** correspondant ;
 > - la [liste des TLD disponibles sur le site OVHcloud](https://www.ovhcloud.com/fr/domains/tld/) ;
-> - les mises à jour d'état du nom de domaine. Pour vérifier cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action}, puis sur  `Opérations en cours`{.action}.
+> - les mises à jour d'état du nom de domaine. Pour vérifier cela, connectez-vous à votre [espace client OVHcloud](/links//manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action}, puis sur  `Opérations en cours`{.action}.
 >
 
 ### Étape 1 : sélectionner le domaine
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Web Cloud`{.action}. Cliquez sur `Noms de Domaine`{.action} , sélectionnez le nom de domaine générique (gTLD) dont vous souhaitez modifier le propriétaire.
+Connectez-vous à votre [espace client OVHcloud](/links//manager), dans la section `Web Cloud`{.action}. Cliquez sur `Noms de Domaine`{.action} , sélectionnez le nom de domaine générique (gTLD) dont vous souhaitez modifier le propriétaire.
 
 ### Étape 2 : lancer la procédure de changement de propriétaire
 
@@ -88,7 +88,7 @@ Une fois que les deux destinataires ont confirmé la demande par e-mail, le chan
 
 ### Mise à jour des informations de propriétaire <a name="updateownerinformation"></a>
 
-Si vous devez mettre à jour certaines informations secondaires telles que le numéro de téléphone, l'adresse, etc., vous n'avez pas besoin de lancer une procédure commerciale. Ces informations peuvent être modifiées directement dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Si vous devez mettre à jour certaines informations secondaires telles que le numéro de téléphone, l'adresse, etc., vous n'avez pas besoin de lancer une procédure commerciale. Ces informations peuvent être modifiées directement dans l'[espace client OVHcloud](/links//manager).
 
 Dans la section **Abonnement** de l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} devant **Contacts**, puis cliquez sur `Actualiser les informations du propriétaire`{.action}.
 

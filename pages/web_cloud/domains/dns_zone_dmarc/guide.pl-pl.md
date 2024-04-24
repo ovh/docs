@@ -24,7 +24,7 @@ Rekord **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania domeną (przypisaną do Twojego rozwiązania e-mail) w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do interfejsu zarządzania domeną (przypisaną do Twojego rozwiązania e-mail) w Panelu [klienta OVHcloud](/links//manager).
 - Jeden z mechanizmów uwierzytelniania, [SPF](/pages/web_cloud/domains/dns_zone_spf) i/lub [DKIM](/pages/web_cloud/domains/dns_zone_dkim) musi być skonfigurowany w strefie DNS nazwy domeny usługi e-mail.
 
 ## W praktyce
@@ -59,7 +59,7 @@ Istnieją dwa sposoby konfiguracji DMARC w strefie DNS OVHcloud:
 
 #### Rekord DMARC <a name="dmarc-record"></a>
 
-Rekord DMARC możesz dodać do strefy DNS w Panelu klienta OVHcloud. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie wybierz w sekcji `Nazwy domen`{.action} odpowiednią domenę, następnie kliknij na zakładkę `Strefa DNS`{.action}, aby przejść do strefy DNS.
+Rekord DMARC możesz dodać do strefy DNS w Panelu klienta OVHcloud. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links//manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie wybierz w sekcji `Nazwy domen`{.action} odpowiednią domenę, następnie kliknij na zakładkę `Strefa DNS`{.action}, aby przejść do strefy DNS.
 
 Po wyświetleniu strefy DNS kliknij przycisk `Dodaj rekord`{.action}, a następnie "Pola e-mail" `DMARC`{.action}.
 
@@ -102,7 +102,7 @@ Poniżej znajduje się wyczerpujący opis tagów używanych do **rejestracji DMA
 
 #### Rekord TXT <a name="txt-record"></a>
 
-Możesz dodać rekord TXT do strefy DNS w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejść do sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
+Możesz dodać rekord TXT do strefy DNS w [Panelu klienta OVHcloud](/links//manager) i przejść do sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
 Po wyświetleniu strefy DNS kliknij przycisk `Dodaj rekord`{.action}, a następnie "Rozszerzone pola" `TXT`{.action}.
 

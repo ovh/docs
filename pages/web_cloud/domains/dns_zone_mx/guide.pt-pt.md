@@ -16,8 +16,8 @@ O registo MX permite associar um domínio ao servidor da sua plataforma de e-mai
 
 ## Requisitos
 
-- Ter acesso à gestão da zona DNS do domínio na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à gestão da zona DNS do domínio na [Área de Cliente OVHcloud](/links//manager).
+- Ter acesso à [Área de Cliente OVHcloud](/links//manager).
 - O domínio em questão deve utilizar a configuração da OVHcloud (ou seja, os servidores DNS da OVHcloud).
 - Dispor de uma oferta MX Plan (incluída na oferta de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), no [alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou na oferta MX Plan encomendada separadamente), uma das nossas [ofertas de e-mail OVHcloud](https://www.ovhcloud.com/pt/emails/), ou um serviço de e-mail externo.
 
@@ -66,7 +66,7 @@ Estes registos MX devem ser configurados na zona DNS do seu domínio.
 
 ### Configurar um registo MX numa zona DNS da OVHcloud
 
-Para criar ou alterar os registos MX na configuração da OVHcloud do seu domínio, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Aceda à secção `Nomes de domínio`{.action}, clique no domínio que pretende e aceda ao separador `Zona DNS`{.action}.
+Para criar ou alterar os registos MX na configuração da OVHcloud do seu domínio, aceda à [Área de Cliente OVHcloud](/links//manager). Aceda à secção `Nomes de domínio`{.action}, clique no domínio que pretende e aceda ao separador `Zona DNS`{.action}.
 
 A tabela apresenta a configuração da OVHcloud do seu domínio. Cada linha corresponde a um registo DNS.
 

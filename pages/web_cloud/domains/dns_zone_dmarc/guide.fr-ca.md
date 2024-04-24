@@ -19,7 +19,7 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine (attaché à votre solution e-mail) depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Disposer d'un accès à la gestion du nom de domaine (attaché à votre solution e-mail) depuis l'[espace client OVHcloud](/links//manager).
 - Un des mécanismes d'authentification, [SPF](/pages/web_cloud/domains/dns_zone_spf) et/ou [DKIM](/pages/web_cloud/domains/dns_zone_dkim) doit être configuré dans la zone DNS du nom de domaine de l'offre e-mail.
 
 ## En pratique
@@ -54,7 +54,7 @@ Il y a deux façons de configurer le DMARC dans votre zone DNS OVHcloud :
 
 #### Enregistrement DMARC <a name="dmarc-record"></a>
 
-Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'espace client OVHcloud. Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, sélectionnez, dans la section `Noms de domaine`{.action}, le nom de domaine concerné puis cliquez sur l'onglet `Zone DNS`{.action} pour accéder à votre zone DNS.
+Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'espace client OVHcloud. Pour cela, connectez-vous à votre [espace client OVHcloud](/links//manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, sélectionnez, dans la section `Noms de domaine`{.action}, le nom de domaine concerné puis cliquez sur l'onglet `Zone DNS`{.action} pour accéder à votre zone DNS.
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs mails » `DMARC`{.action}.
 
@@ -97,7 +97,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 
 #### Enregistrement TXT <a name="txt-record"></a>
 
-Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace client OVHcloud](/links//manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs étendus » `TXT`{.action}.
 

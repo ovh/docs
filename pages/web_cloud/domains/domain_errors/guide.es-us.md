@@ -16,12 +16,12 @@ La creación de un nombre de dominio, su transferencia, su cambio de propietario
 ## Requisitos
 
 - Tener uno o más dominios.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links//manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
 
-Acceda a la sección `Web Cloud`{.action} y seleccione `Dominios`{.action} en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) . Haga clic en `Operaciones en curso`{.action} sobre la lista de dominios.
+Acceda a la sección `Web Cloud`{.action} y seleccione `Dominios`{.action} en el [área de cliente de OVHcloud](/links//manager) . Haga clic en `Operaciones en curso`{.action} sobre la lista de dominios.
 
 Una tabla le permite consultar todas las operaciones relacionadas con los dominios en su área de cliente.
 

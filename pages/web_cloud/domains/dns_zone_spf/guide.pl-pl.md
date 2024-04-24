@@ -37,22 +37,22 @@ W związku z tym upewnij się, że umieściłeś w rekordzie SPF źródła wysy�
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](/links//manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links//manager){.external}.
 - Nazwa domeny musi używać konfiguracji OVHcloud (czyli serwerów DNS OVHcloud).
 
 > [!warning]
 >
 > Jeśli Twoja domena nie używa serwerów DNS OVHcloud, przeprowadź zmianę SPF w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 >
-> Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, czy używa ona konfiguracji OVHcloud w zakładce `Serwery DNS`{.action}.
+> Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić w [Panelu klienta](/links//manager){.external}, czy używa ona konfiguracji OVHcloud w zakładce `Serwery DNS`{.action}.
 >
 
 ## W praktyce
 
 ### Sprawdź aktualną konfigurację SPF
 
-Jeśli Twoja domena używa konfiguracji OVHcloud, możesz sprawdzić, czy rekord SPF jest już skonfigurowany dla tej domeny. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Domeny`{.action} wybierz odpowiednią domenę. Kliknij zakładkę `Strefa DNS`{.action}.
+Jeśli Twoja domena używa konfiguracji OVHcloud, możesz sprawdzić, czy rekord SPF jest już skonfigurowany dla tej domeny. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external}. W sekcji `Domeny`{.action} wybierz odpowiednią domenę. Kliknij zakładkę `Strefa DNS`{.action}.
 
 Pojawi się tabela. Strona pokaże strefę DNS Twojej domeny w OVHcloud. Składają się one z kilku rekordów, które są symbolizowane przez wiersz w tabeli.
 
@@ -78,7 +78,7 @@ W tabeli, aby odnaleźć wiersz odpowiadający SPF OVHcloud, można użyć filtr
 
 ### Konfiguracja rekordu SPF
 
-Aby dodać rekord SPF w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij `Domeny`{.action}, następnie wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}.
+Aby dodać rekord SPF w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external}. Kliknij `Domeny`{.action}, następnie wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}.
 
 Aby dodać rekord SPF, kliknij przycisk `Dodaj rekord`{.action}.
 
@@ -170,7 +170,7 @@ Aby zakończyć operację, kliknij `Dalej`{.action}. Upewnij się, że wyświetl
 
 ### Zmień rekord SPF
 
-Aby zmienić SPF w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług, w sekcji `Domeny`{.action}, kliknij wybraną domenę, następnie przejdź do zakładki `Strefa DNS`{.action}.
+Aby zmienić SPF w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external}. Na pasku usług, w sekcji `Domeny`{.action}, kliknij wybraną domenę, następnie przejdź do zakładki `Strefa DNS`{.action}.
 
 W tabeli wyświetla się konfiguracja OVHcloud Twojej domeny. Każdy wiersz odpowiada jednemu rekordowi DNS. Znajdź rekord TXT lub SPF w tej tabeli i kliknij przycisk `...`{.action}, aby edytować rekord.
 

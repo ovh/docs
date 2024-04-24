@@ -12,7 +12,7 @@ The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configura
 - The email servers (DNS records of type *MX*) that should receive emails sent to addresses of this domain name. By configuring MX records, you can receive emails through custom email addresses using your domnain name.
 - Information related to the security/authentication of services (web hosting, web server, email server, etc.) associated with your domain name (DNS records of type *SPF*, *DKIM*, *DMARC*, etc.).
 
-For more information on DNS zones and how to edit them in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), refer to [our DNS documentation](/pages/web_cloud/domains/dns_zone_edit).
+For more information on DNS zones and how to edit them in your [OVHcloud Control Panel](/links//manager), refer to [our DNS documentation](/pages/web_cloud/domains/dns_zone_edit).
 
 Dynamically updating a DNS record can prevent interruptions of your web services, in case you do not use a static IP address.
 
@@ -22,7 +22,7 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 
 ## Requirements
 
-- You have access to manage the domain name in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You have access to manage the domain name in the [OVHcloud Control Panel](/links//manager).
 - The domain name has OVHcloud DNS servers configured as its nameservers.
 - The DynHost record you are about to create must not already exist as an "A" record in your domain name’s OVHcloud DNS zone.
 
@@ -30,7 +30,7 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 >
 > - If your domain name does not use OVHcloud DNS servers, please contact the service provider managing its DNS configuration to find out how to proceed.
 > 
-> - If your domain name is registered with OVHcloud, you can check if it is using our configuration. To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Domain names`{.action} tab, then select the domain name concerned. On the page that appears, click on the `DNS servers`{.action} tab to view the DNS servers used by your domain name. 
+> - If your domain name is registered with OVHcloud, you can check if it is using our configuration. To do this, log in to your [OVHcloud Control Panel](/links//manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Domain names`{.action} tab, then select the domain name concerned. On the page that appears, click on the `DNS servers`{.action} tab to view the DNS servers used by your domain name. 
 >
 > OVHcloud DNS servers have the following name formats: 
 >
@@ -44,7 +44,7 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 
 ### Step 1: Create a DynHost username <a name="step1"></a>
 
-To create a DynHost user, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Domain names`{.action} tab, then select the domain name concerned. On the page that appears, click on the `DynHost`{.action} tab.
+To create a DynHost user, log in to your [OVHcloud Control Panel](/links//manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Domain names`{.action} tab, then select the domain name concerned. On the page that appears, click on the `DynHost`{.action} tab.
 
 ![dynhost](images/tab.png){.thumbnail}
 
@@ -113,7 +113,7 @@ https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|The subdomain you are modifying the DNS configuration for|
 |$IP|The new target IPv4 address|
 
-You can check if the destination IP address has been updated. To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Domain names`{.action} tab, then select the domain name concerned. On the page that appears, click on the `DynHost`{.action} tab. Check the IP address that appears in the `Target`{.action} column.
+You can check if the destination IP address has been updated. To do this, log in to your [OVHcloud Control Panel](/links//manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Domain names`{.action} tab, then select the domain name concerned. On the page that appears, click on the `DynHost`{.action} tab. Check the IP address that appears in the `Target`{.action} column.
 
 > [!warning]
 >

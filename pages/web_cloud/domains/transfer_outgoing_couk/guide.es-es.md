@@ -36,7 +36,7 @@ Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** 
 ## Requisitos
 
 - Tener un [dominio .uk](https://www.ovhcloud.com/es-es/domains/) registrado con OVHcloud.
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y tener los permisos necesarios para gestionar el dominio (ser administrador del dominio).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links//manager) y tener los permisos necesarios para gestionar el dominio (ser administrador del dominio).
 - El dominio debe estar siempre activo, es decir, no debe haber expirado o haber sido bloqueado por OVHcloud.
 - El nombre de dominio no debe ser objeto de un litigio en curso ante el [Registro Nominet](https://www.nominet.uk/)
 
@@ -55,7 +55,7 @@ Si todavía no conoce el TAG necesario, puede solicitarlo a su nuevo proveedor o
 
 ### Paso 1: comprobar la información necesaria
 
-Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
+Conéctese al [Panel de configuración de OVHcloud](/links//manager) y seleccione `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
 
 Recuerde que debe estar conectado como administrador.
 

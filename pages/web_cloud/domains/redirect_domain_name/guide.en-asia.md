@@ -13,7 +13,7 @@ Redirecting a domain name is to redirect it to a new target. Different types of 
 ## Requirements
 
 - A [domain name](https://www.ovhcloud.com/asia/domains/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) with the necessary permissions to manage the domain name
+- Access to the [OVHcloud Control Panel](/links//manager) with the necessary permissions to manage the domain name
 - The login credentials required to connect to your storage space via SSH (optional, for redirection via a [.htaccess](#htaccess_rewrite) file).
 
 ## Instructions
@@ -29,7 +29,7 @@ This feature allows you to redirect a domain or subdomain to:
 
 There are several ways of doing this:
 
-- **From the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)**, where a configuration assistant can be used to set your redirection.
+- **From the [OVHcloud Control Panel](/links//manager)**, where a configuration assistant can be used to set your redirection.
 - **Via a method that requires programming**, in which case you will need to create the redirection yourself in a file (usually a [.htaccess](#htaccess_rewrite))
 
 > [!warning]
@@ -37,13 +37,13 @@ There are several ways of doing this:
 > Setting up a redirection can affect your SEO ranking. 
 > Be careful about the changes you apply, or contact a [specialised provider](https://partner.ovhcloud.com/asia/) for SEO if necessary.
 >
-> Warning: A redirection created from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) does not redirect an URL as `https://` to another domain or URL. 
+> Warning: A redirection created from the [OVHcloud Control Panel](/links//manager) does not redirect an URL as `https://` to another domain or URL. 
 > To create this type of redirection, you will have to apply [a URL rewrite](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite), for example by editing a ".htaccess" file. 
 >
 
 ### Redirecting a domain name from the Control Panel
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, go to the `Web Cloud`{.action} section, select the domain to redirect from `Domain names`{.action}, then click on the `Redirection`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links//manager){.external}, go to the `Web Cloud`{.action} section, select the domain to redirect from `Domain names`{.action}, then click on the `Redirection`{.action} tab.
 
 The table displays active redirections for your domain name. You can manage your existing redirections using the `...`{.action} button to the right of each line.
 
@@ -51,7 +51,7 @@ Click the `Add Redirection`{.action} button.
 
 ![Introduction to the redirection menu](images/add-a-redirection.png){.thumbnail}
 
-Three redirection options are available from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), and each of them is made up of **5 successive steps**. 
+Three redirection options are available from the [OVHcloud Control Panel](/links//manager), and each of them is made up of **5 successive steps**. 
 
 > The `Redirection`{.action} tab contains a fourth option that allows your domain to be quickly pointed to DNS A, AAAA and CNAME records.<br>
 > Since this is not strictly a "redirection", this option will not be detailed in this guide.

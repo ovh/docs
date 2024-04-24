@@ -25,7 +25,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/) enregistré chez OVHcloud
 - Être habilité à demander le transfert du nom de domaine : le propriétaire et/ou les personnes l'administrant doivent être informés de la demande du transfert.
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](/links//manager){.external}.
 - Le nom de domaine doit avoir été créé il y a plus de 61 jours **et** ne doit pas avoir été transféré ou avoir changé de propriétaire durant cette période.
 
 > [!primary]
@@ -51,7 +51,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 
 ### Étape 1 : lever la protection contre le transfert du nom de domaine
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+Connectez-vous à votre [espace client OVHcloud](/links//manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
 
 Sous l'onglet `Informations générales`{.action}, vous trouverez le curseur `Protection contre le transfert` sous **Securité**. Par défaut, cette protection est `Activée`{.action}.
 
@@ -67,9 +67,9 @@ Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous so
 >
 > Si vous rencontrez le message "**Une erreur est survenue lors de la demande de désactivation de la protection du domaine (User not granted for this request)**", cela signifie que vous n'avez pas les droits suffisants pour déverrouiller le domaine. 
 >
-> De plus, si vous rencontrez le message : "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", cela signifie que le code de transfert de votre nom de domaine n'est pas récupérable via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).  
+> De plus, si vous rencontrez le message : "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", cela signifie que le code de transfert de votre nom de domaine n'est pas récupérable via votre [espace client OVHcloud](/links//manager).  
 > 
-> Dans les deux cas, vérifiez que vous êtes bien le contact **administrateur** du domaine à l'aide de notre guide sur la [gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts) puis vérifiez que l'extension de votre domaine permet un déverrouillage depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> Dans les deux cas, vérifiez que vous êtes bien le contact **administrateur** du domaine à l'aide de notre guide sur la [gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts) puis vérifiez que l'extension de votre domaine permet un déverrouillage depuis l'[espace client OVHcloud](/links//manager).
 > 
 > En effet, certains *codes de transfert* sont directement gérés par le *registre* de l'extension de votre nom de domaine. Un *registre* est une organisation qui gère l'ensemble des domaines pour une extension donnée. Par exemple, l'**AFNIC** gère l'ensemble des noms de domaine ayant pour extension "*.fr*". Si tel est le cas, vous devez contactez directement le *registre* qui gère l'extension de votre nom de domaine afin de récupérer le *code de transfert*.
 >

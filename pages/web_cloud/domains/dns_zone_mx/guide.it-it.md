@@ -16,8 +16,8 @@ Il record MX permette di collegare un dominio al server della sua piattaforma di
 
 ## Prerequisiti
 
-- Avere accesso alla gestione della zona DNS del dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso alla gestione della zona DNS del dominio dallo [Spazio Cliente OVHcloud](/links//manager).
+- Avere accesso allo [Spazio Cliente OVHcloud](/links//manager)
 - Il dominio in questione deve utilizzare la configurazione OVHcloud (ad esempio i server DNS di OVHcloud).
 - Disporre di una soluzione MX Plan (inclusa nelle soluzioni di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), [hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o MX Plan ordinati separatamente), una delle nostre [offerte di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/) o un servizio di posta esterna.
 
@@ -67,7 +67,7 @@ Questi record MX devono essere configurati nella zona DNS del dominio.
 
 ### Configurare un record MX in una zona DNS OVHcloud
 
-Per creare o modificare i record MX nella configurazione OVHcloud del dominio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Accedi alla sezione `Domini`{.action}, clicca sul dominio interessato e poi sulla scheda `Zona DNS`{.action}.
+Per creare o modificare i record MX nella configurazione OVHcloud del dominio, accedi allo [Spazio Cliente OVHcloud](/links//manager). Accedi alla sezione `Domini`{.action}, clicca sul dominio interessato e poi sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con la configurazione OVHcloud del tuo dominio. ogni riga corrisponde a un diverso record DNS.
 

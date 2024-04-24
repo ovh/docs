@@ -16,7 +16,7 @@ Der Eintrag vom Typ MX legt den für die E-Mail-Adressen eines Domainnamens zust
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links//manager) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens.
 - Der Domainname verwendet die OVHcloud Konfiguration (die OVHcloud DNS-Server).
 - Sie verfügen über einen MX Plan (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt), einen unserer [OVHcloud E-Mail-Dienste](https://www.ovhcloud.com/de/emails/) oder einen externen E-Mail-Dienst.
 
@@ -67,7 +67,7 @@ Diese MX-Einträge müssen in der DNS-Zone Ihres Domainnamens konfiguriert werde
 
 ### MX-Eintrag in einer OVHcloud DNS-Zone konfigurieren
 
-Um MX-Einträge in der OVHcloud Konfiguration Ihres Domainnamens zu erstellen oder zu bearbeiten, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie in den Bereich `Domainnamen`{.action}, klicken Sie auf den Domainnamen und anschließend in den Tab `DNS-Zone`{.action}.
+Um MX-Einträge in der OVHcloud Konfiguration Ihres Domainnamens zu erstellen oder zu bearbeiten, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links//manager) ein. Gehen Sie in den Bereich `Domainnamen`{.action}, klicken Sie auf den Domainnamen und anschließend in den Tab `DNS-Zone`{.action}.
 
 Die Tabelle zeigt die OVHcloud DNS-Konfiguration Ihres Domainnamens an. Jede Zeile entspricht einem DNS-Eintrag.
 

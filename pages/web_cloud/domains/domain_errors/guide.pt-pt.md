@@ -16,12 +16,12 @@ A criação de um nome de domínio, a sua transferência, a sua mudança de prop
 ## Requisitos
 
 - Dispor de um ou vários domínios.
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar ligado à [Área de Cliente OVHcloud](/links//manager).
 - Estar atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web).
 
 ## Instruções
 
-Na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action} e, a seguir, `Domínios`{.action}. Clique em `Operações em curso`{.action} por cima da lista de domínios.
+Na Área de [Cliente OVHcloud](/links//manager), aceda à secção `Web Cloud`{.action} e, a seguir, `Domínios`{.action}. Clique em `Operações em curso`{.action} por cima da lista de domínios.
 
 Tem uma tabela que lhe permite consultar todas as operações associadas aos nomes de domínio da sua Área de Cliente.
 

@@ -19,9 +19,9 @@ Si tiene un dominio con OVHcloud y quiere conectarlo a un alojamiento Wix, Esta 
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links//manager){.external}.
 - Tener un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} registrado con OVHcloud.
-- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](/links//manager){.external}.
 - Tener contratado un plan de hosting con Wix.
 - Tener acceso a la gestión de este alojamiento en Wix.
 
@@ -47,7 +47,7 @@ Si utiliza un alojamiento Wix con un dominio de OVHcloud, deberá preparar su al
 > - Acceda al apartado "**Paso 2 | Actualizar los registros DNS en la cuenta de su proveedor de hosting de dominio**" de la documentación Wix.<br>
 > Las siguientes instrucciones le ayudarán a configurar más fácilmente su zona DNS de OVHcloud.
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links//manager){.external} en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
 Se mostrará una tabla con todos los registros DNS del dominio seleccionado.
 

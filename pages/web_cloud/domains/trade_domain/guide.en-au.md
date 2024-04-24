@@ -19,7 +19,7 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+- Access to the [OVHcloud Control Panel](/links//manager).
 - A domain name registered with OVHcloud for which no operation (owner change, transfer, creation) is in progress. If an operation has recently been completed on this domain name, there is a mandatory waiting period of 60 calendar days before a new operation can be started.
 - You are the [admin contact](/pages/account_and_service_management/account_information/managing_contacts) for the domain name concerned.
 - You have permission from the current domain name owner to initiate a domain trade.
@@ -40,11 +40,11 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 >
 > - The website of the respective **TLD** registry
 > - The [list of **TLD**s available at OVHcloud](https://www.ovhcloud.com/en-au/domains/tld/)
-> - The domain name status updates. To check this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then `Ongoing operations`{.action}.
+> - The domain name status updates. To check this, log in to your [OVHcloud Control Panel](/links//manager), then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then `Ongoing operations`{.action}.
 
 ### Step 1: Select the domain
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action}. In the `Domain names`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
+Log in to your [OVHcloud Control Panel](/links//manager) and select `Web Cloud`{.action}. In the `Domain names`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
 
 ### Step 2: Inititate the owner change procedure
 
@@ -84,7 +84,7 @@ If the email address is not changed as part of the domain trade, one recipient w
 
 ### Updating the owner information <a name="updateownerinformation"></a>
 
-If you need to update some secondary information such as phone number, address etc., you do not have to start a trade procedure. It can be edited directly in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+If you need to update some secondary information such as phone number, address etc., you do not have to start a trade procedure. It can be edited directly in the [OVHcloud Control Panel](/links//manager).
 
 In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the **contacts**, then click `Refresh owner information`{.action}.
 

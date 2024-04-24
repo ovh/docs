@@ -17,7 +17,7 @@ Przekierowanie domeny polega na przekierowaniu jej na nową docelową stronę. I
 ## Wymagania początkowe
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links//manager){.external}.
 - Połączenie z hostingiem (przekierowanie za pomocą pliku [.htaccess](#htaccess_rewrite))
 
 ## W praktyce
@@ -33,7 +33,7 @@ Funkcja ta pozwala na przekierowanie domeny/subdomeny na:
 
 Działania te mogą być przeprowadzane na kilka sposobów:
 
-- **Z poziomu[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)**, gdzie asystent konfiguracji pozwala na ustawienie przekierowania.
+- **Z poziomu[Panelu klienta OVHcloud](/links//manager)**, gdzie asystent konfiguracji pozwala na ustawienie przekierowania.
 - **Za pomocą metody wymagającej programowania**. Musisz samodzielnie utworzyć przekierowanie w pliku (zazwyczaj [.htaccess](#htaccess_rewrite)).
 
 > [!warning]
@@ -41,12 +41,12 @@ Działania te mogą być przeprowadzane na kilka sposobów:
 > Uruchomienie przekierowania może mieć wpływ na pozycjonowanie Twojej strony WWW. 
 > Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) w celu pozycjonowania strony, jeśli to konieczne.
 >
-> Uwaga: przekierowanie utworzone w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) nie pozwala na przekierowanie adresu URL na `https://` na inną domenę lub adres URL. 
+> Uwaga: przekierowanie utworzone w [Panelu klienta OVHcloud](/links//manager) nie pozwala na przekierowanie adresu URL na `https://` na inną domenę lub adres URL. 
 > Aby utworzyć ten rodzaj przekierowania, należy obowiązkowo przejść przez [wpisanie adresu URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite), na przykład przez plik ".htaccess".
 
 ### Przekieruj domenę w Panelu klienta
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Web Cloud`{.action}, wybierz domenę, którą chcesz przekierować do sekcji `Domeny`{.action}, następnie kliknij zakładkę `Przekierowanie`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external}, przejdź do sekcji `Web Cloud`{.action}, wybierz domenę, którą chcesz przekierować do sekcji `Domeny`{.action}, następnie kliknij zakładkę `Przekierowanie`{.action}.
 
 Tabela wyświetla aktywne przekierowania dla Twojej domeny. Możesz zarządzać istniejącymi przekierowaniami za pomocą przycisku `...`{.action} znajduje się po prawej stronie każdej linii.
 
@@ -54,7 +54,7 @@ Kliknij przycisk `Dodaj przekierowanie`{.action}.
 
 ![Prezentacja przekierowania menu](images/add-a-redirection.png){.thumbnail}
 
-Trzy opcje przekierowania są dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Każda z nich składa się z **5 kolejnych etapów**. 
+Trzy opcje przekierowania są dostępne w [Panelu klienta OVHcloud](/links//manager). Każda z nich składa się z **5 kolejnych etapów**. 
 
 > W zakładce `Przekierowanie`{.action} znajduje się czwarta opcja umożliwiająca szybkie przekierowanie domeny na rekordy DNS A, AAAA i CNAME.<br>
 > Ponieważ w tym przypadku nie chodzi o "przekierowanie", w tym przewodniku nie zostanie szczegółowo opisany ten wariant.

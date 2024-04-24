@@ -34,15 +34,15 @@ La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enr
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](/links//manager){.external}.
+- Être connecté à votre [espace client OVHcloud](/links//manager){.external}.
 - Utiliser la configuration OVHcloud (ses serveurs DNS) pour le nom de domaine concerné. 
 
 > [!warning]
 >
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 > 
-> - Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans l'onglet `Serveurs DNS`{.action} du nom de domaine concerné.
+> - Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, rendez-vous dans votre [espace client OVHcloud](/links//manager){.external}, dans l'onglet `Serveurs DNS`{.action} du nom de domaine concerné.
 > 
 > Dans les deux cas ci-dessus, faites attention en effectuant vos changements de serveurs DNS. En effet, l'ancienne configuration pouvant être appliquée à votre nom de domaine ne sera plus active si vous n'avez pas préalablement reconfiguré et personnalisé la nouvelle zone DNS présente chez OVHcloud.<br>
 > Vous ne pouvez avoir qu'une seule zone DNS active à la fois par nom de domaine.
@@ -56,7 +56,7 @@ La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enr
 >
 > Contrairement au nom de domaine, il n'y a pas de notion de propriétaire pour une zone DNS, mais de gestion des contacts pour une zone DNS OVHcloud. Si vous souhaitez basculer la gestion de votre zone DNS vers un autre compte OVHcloud, suivez notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links//manager){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Le tableau qui apparaît affiche pour chaque ligne un enregistrement DNS lié à votre nom de domaine chez OVHCloud. Vous avez la possibilité d'en filtrer le contenu par type d'enregistrement ou par domaine.
 

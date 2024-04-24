@@ -20,7 +20,7 @@ You have a domain name with OVHcloud and you want to connect it to a Shopify hos
 ## Requirements
 
 - A [domain name](https://www.ovhcloud.com/en-us/domains/) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) with the [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
+- Access to the [OVHcloud Control Panel](/links//manager) with the [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
 - A Shopify web hosting plan
 - Access to manage this hosting plan with Shopify
 
@@ -34,7 +34,7 @@ Before following the two steps in this guide, we recommend that you get familiar
 
 ### Configure your DNS records on your OVHcloud account
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links//manager){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 The table lists all of the DNS records for the selected domain name.
 

@@ -96,7 +96,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](https:
 
 ![domaine](images/order-summary.png){.thumbnail}
 
-Une fois la commande validée, vous recevrez un bon de commande gratuit. Le processus de transfert ne démarrera qu'après validation de ce bon de commande gratuit. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action}, puis `Opérations en cours`{.action}.
+Une fois la commande validée, vous recevrez un bon de commande gratuit. Le processus de transfert ne démarrera qu'après validation de ce bon de commande gratuit. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](/links//manager){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action}, puis `Opérations en cours`{.action}.
 
 ### Étape 4 : Validation du transfert
 
@@ -105,7 +105,7 @@ La procédure de transfert de nom de domaine implique une validation par e-mail.
 - Le propriétaire du nom de domaine reçoit un e-mail sur l'adresse qu'il a renseignée, présente dans le Whois (si elle est n'est pas masquée).
 - Cet e-mail provient du registre des noms de domaine « .pl », depuis l'adresse « automat@dns.pl» .
 - Cliquez sur le lien de validation présent dans cet e-mail pour finaliser le transfert.
-- Une fois la validation effectuée, le domaine sera accessible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans les 24 heures.
+- Une fois la validation effectuée, le domaine sera accessible depuis votre [espace client OVHcloud](/links//manager){.external} dans les 24 heures.
 
 > [!warning]
 >
@@ -122,7 +122,7 @@ Une fois l'adresse e-mail modifiée, effectuez une [nouvelle demande de transfer
 
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
 
-Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
+Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](/links//manager){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
 
 ## Aller plus loin
 

@@ -78,7 +78,7 @@ Depois de alterar a TAG, o proprietário do nome de domínio receberá após alg
 
 Uma vez na posse do seu código de autorização, pode procurar e iniciar a encomenda de transferência do seu nome de domínio para o site OVHcloud. A encomenda é semelhante à de qualquer outro domínio genérico.
 
-O seu domínio estará de seguida presente na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) dentro de algumas horas.
+O seu domínio estará de seguida presente na sua [Área de Cliente OVHcloud](/links//manager) dentro de algumas horas.
 
 ### Informações úteis
 

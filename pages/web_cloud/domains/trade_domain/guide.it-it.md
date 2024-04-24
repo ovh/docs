@@ -23,7 +23,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links//manager){.external}
 - Disporre di un dominio registrato in OVHcloud e per il quale non sono in corso operazioni (modifica del proprietario, trasferimento, creazione). Se un'operazione è stata ultimata di recente sul tuo dominio, prima di eseguire una nuova operazione è necessario almeno 60 giorni di calendario.
 - Essere il [contatto amministratore](/pages/account_and_service_management/account_information/managing_contacts) del dominio.
 - Disporre del consenso del proprietario attuale del dominio per effettuare il cambio di proprietario.
@@ -45,12 +45,12 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 >
 > - il sito web del registro **TLD** corrispondente;
 > - la [lista dei TLD disponibili su OVHcloud](https://www.ovhcloud.com/it/domains/tld/);
-> - gli aggiornamenti di stato del dominio. Per verificarlo, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e poi su `Operazioni in corso`{.action}.
+> - gli aggiornamenti di stato del dominio. Per verificarlo, accedi allo [Spazio Cliente OVHcloud](/links//manager), sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e poi su `Operazioni in corso`{.action}.
 >
 
 ### Step 1: seleziona il dominio
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}. Clicca su `Domini`{.action}, seleziona il dominio generico (gTLD) di cui vuoi modificare il proprietario.
+Accedi allo [Spazio Cliente OVHcloud](/links//manager), sezione `Web Cloud`{.action}. Clicca su `Domini`{.action}, seleziona il dominio generico (gTLD) di cui vuoi modificare il proprietario.
 
 ### Step 2: avvia la procedura di modifica del proprietario
 
@@ -91,7 +91,7 @@ Se l'indirizzo email non viene modificato in seguito alla modifica del proprieta
 
 ### Aggiornamento delle informazioni del proprietario <a name="updateownerinformation"></a>
 
-Se è necessario aggiornare alcune informazioni secondarie come il numero di telefono, l'indirizzo, ecc., non è necessario avviare una procedura commerciale. Queste informazioni possono essere modificate direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Se è necessario aggiornare alcune informazioni secondarie come il numero di telefono, l'indirizzo, ecc., non è necessario avviare una procedura commerciale. Queste informazioni possono essere modificate direttamente dallo [Spazio Cliente OVHcloud](/links//manager).
 
 Nella sezione **Abbonamento** della scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} davanti ai **Contatti** e poi clicca su `Aggiorna le informazioni del proprietario `{.action}.
 

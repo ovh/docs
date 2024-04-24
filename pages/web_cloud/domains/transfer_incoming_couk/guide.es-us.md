@@ -78,7 +78,7 @@ Una vez que haya modificado el TAG, el propietario del dominio recibirá al cabo
 
 Una vez que disponga del código de autorización, puede consultar e iniciar el pedido de transferencia del dominio en el sitio web de OVHcloud. El pedido es similar al de cualquier otro dominio genérico.
 
-El dominio aparecerá en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en unas horas.
+El dominio aparecerá en el [área de cliente de OVHcloud](/links//manager) en unas horas.
 
 ### Información útil
 

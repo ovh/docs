@@ -16,7 +16,7 @@ Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei ei
 - Die E-Mail-Server (DNS-Einträge vom Typ *MX*), die E-Mails erhalten sollen, die an Adressen mit diesem Domainnamen versendet wurden. Wenn Sie die MX-Einträge Ihres Domainnamens konfigurieren, können Sie E-Mails über Ihre personalisierten E-Mail-Adressen empfangen.
 - Informationen zur Sicherheit/Authentifizierung von Diensten (Webhosting, Webserver, E-Mail-Server, etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC*, etc.).
 
-Für weitere Informationen zu DNS-Zonen und wie Sie diese im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) editieren, lesen Sie [unsere Dokumentation zu DNS](/pages/web_cloud/domains/dns_zone_edit).
+Für weitere Informationen zu DNS-Zonen und wie Sie diese im [OVHcloud Kundencenter](/links//manager) editieren, lesen Sie [unsere Dokumentation zu DNS](/pages/web_cloud/domains/dns_zone_edit).
 Es kann aus verschiedenen Gründen erforderlich sein, eine alte DNS-Konfiguration auf Ihre Domain anzuwenden.
 
 Die Verwaltung von DNS wird mit dem Zugriff auf den Verlauf Ihrer DNS-Zonen vereinfacht.
@@ -25,13 +25,13 @@ Die Verwaltung von DNS wird mit dem Zugriff auf den Verlauf Ihrer DNS-Zonen vere
 
 ## Voraussetzungen
 
-- Sie haben eine DNS-Zone für Ihren Domainnamens in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben eine DNS-Zone für Ihren Domainnamens in Ihrem [OVHcloud Kundencenter](/links//manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links//manager).
 - Sie haben die erforderlichen Berechtigungen zum Verwalten des Domainnamens.
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus, dessen DNS-Zone Sie bearbeiten möchten. Öffnen Sie den Tab `DNS-Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus, dessen DNS-Zone Sie bearbeiten möchten. Öffnen Sie den Tab `DNS-Zone`{.action}.
 
 Die angezeigte Tabelle stellt die DNS-Zone Ihrer Domain dar. Dort finden Sie die Liste der darin enthaltenen DNS-Einträge. Rechts in der Tabelle finden Sie mehrere Schaltflächen, mit denen Sie Aktionen in Ihrer DNS-Zone durchführen können. 
 

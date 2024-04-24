@@ -39,15 +39,15 @@ Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Si
 
 ## Voraussetzungen
 
-- Sie haben über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Zugriff auf die Konfiguration des betreffenden Domainnamens oder entsprechenden Verwaltungszugriff bei Ihrem DNS-Anbieter, wenn der Domainname nicht über OVHcloud registriert ist.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben über das [OVHcloud Kundencenter](/links//manager) Zugriff auf die Konfiguration des betreffenden Domainnamens oder entsprechenden Verwaltungszugriff bei Ihrem DNS-Anbieter, wenn der Domainname nicht über OVHcloud registriert ist.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links//manager).
 - Sie nutzen OVHcloud [Exchange](https://www.ovhcloud.com/de/emails/), OVHcloud [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) oder ein externes E-Mail-Angebot mit DKIM.
 
 > [!warning]
 >
 > Wenn Ihr Domainname keine OVHcloud DNS-Server verwendet, muss die Änderung des DKIM über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration Ihres Domainnamens verwaltet wird.
 >
-> Wenn Ihr Domainname bei OVHcloud registriert ist, können Sie im [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen, ob OVHcloud DNS-Server genutzt werden, indem Sie den Domainnamen auswählen und dann den Tab `DNS-Zone`{.action} öffnen.
+> Wenn Ihr Domainname bei OVHcloud registriert ist, können Sie im [Kundencenter](/links//manager) überprüfen, ob OVHcloud DNS-Server genutzt werden, indem Sie den Domainnamen auswählen und dann den Tab `DNS-Zone`{.action} öffnen.
 >
 
 ## In der praktischen Anwendung
@@ -186,13 +186,13 @@ Klicken Sie auf den Tab für Ihren Dienst.
 > [!tabs]
 > **Exchange**
 >>
->> Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Tab `Web Cloud`{.action} auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Klicken Sie dann auf den Namen des betreffenden Dienstes. Der Dienstname ist identisch mit der Referenz oder wird unter dem individuellen Namen angezeigt, den Sie diesem Dienst gegeben haben (siehe Abbildung).
+>> Klicken Sie in Ihrem [OVHcloud Kundencenter](/links//manager) im Tab `Web Cloud`{.action} auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Klicken Sie dann auf den Namen des betreffenden Dienstes. Der Dienstname ist identisch mit der Referenz oder wird unter dem individuellen Namen angezeigt, den Sie diesem Dienst gegeben haben (siehe Abbildung).
 >>
 >> ![E-Mail](images/dns-dkim-platform-exchange.png){.thumbnail}
 >>
 > **E-Mail Pro**
 >>
->> Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Tab `Web Cloud`{.action} auf `E-Mail Pro`{.action} und anschließendauf den Namen des betreffenden Dienstes. Der Dienstname ist identisch mit der Referenz oder wird unter dem individuellen Namen angezeigt, den Sie diesem Dienst gegeben haben (siehe Abbildung).
+>> Klicken Sie in Ihrem [OVHcloud Kundencenter](/links//manager) im Tab `Web Cloud`{.action} auf `E-Mail Pro`{.action} und anschließendauf den Namen des betreffenden Dienstes. Der Dienstname ist identisch mit der Referenz oder wird unter dem individuellen Namen angezeigt, den Sie diesem Dienst gegeben haben (siehe Abbildung).
 >>
 >> ![E-Mail](images/dns-dkim-platform-emailpro.png){.thumbnail}
 
@@ -310,7 +310,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >> > Es ist möglich, dass `status:` den Wert `todo` hat. Das keine Auswirkungen auf die Konfiguration Ihrer DNS-Zone.
 >>
 > **4. DNS-Eintrag konfigurieren**
->> Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Web Cloud`{.action} in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den entsprechenden Domainnamen aus.<br>
+>> Klicken Sie in Ihrem [OVHcloud Kundencenter](/links//manager) im Bereich `Web Cloud`{.action} in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den entsprechenden Domainnamen aus.<br>
 >> Gehen Sie auf den Tab `DNS Zone`{.action} und klicken Sie dann auf `Eintrag hinzufügen`{.action} rechts. Wählen Sie `CNAME` aus und geben Sie Ihre zuvor ermittelten Werte ein.<br>
 >>
 >> Beispielwerte anhand Schritt **3. DNS-Eintrag abrufen**:
@@ -461,7 +461,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >> > Es ist möglich, dass `status:` den Wert `todo` hat. Das keine Auswirkungen auf die Konfiguration Ihrer DNS-Zone.
 >>
 > **4. DNS-Eintrag konfigurieren**
->> Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Web Cloud`{.action} in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den entsprechenden Domainnamen aus.<br>
+>> Klicken Sie in Ihrem [OVHcloud Kundencenter](/links//manager) im Bereich `Web Cloud`{.action} in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den entsprechenden Domainnamen aus.<br>
 >> Gehen Sie auf den Tab `DNS Zone`{.action} und klicken Sie dann auf `Eintrag hinzufügen`{.action} rechts. Wählen Sie `CNAME` aus und geben Sie Ihre zuvor ermittelten Werte ein.<br>
 >>
 >> Beispielwerte anhand Schritt **3. DNS-Eintrag abrufen**:
@@ -678,7 +678,7 @@ Wählen Sie Ihr E-Mail-Angebot in den folgenden Tabs aus:
 
 Wenn Sie Ihre DNS-Zone konfigurieren möchten, um einen DKIM-Eintrag für Ihren Dienst hinzuzufügen, folgen Sie den nachstehenden Anweisungen.
 
-Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Web Cloud`{.action} in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den entsprechenden Domainnamen aus.
+Klicken Sie in Ihrem [OVHcloud Kundencenter](/links//manager) im Bereich `Web Cloud`{.action} in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den entsprechenden Domainnamen aus.
 
 Gehen Sie auf den Tab `DNS Zone`{.action} und klicken Sie rechts auf `Eintrag hinzufügen`{.action}. Es gibt 3 Möglichkeiten, einen Eintrag hinzuzufügen, um die DKIM-Konfiguration in Ihrer DNS-Zone durchzuführen:
 

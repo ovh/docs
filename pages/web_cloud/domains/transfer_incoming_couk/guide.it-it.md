@@ -78,7 +78,7 @@ Una volta modificato il TAG, il proprietario del dominio riceverà dopo qualche 
 
 Una volta recuperato il codice di autorizzazione, è possibile ricercare ed avviare l'ordine di trasferimento del dominio sul sito OVHcloud. L'ordine è simile a quello di qualsiasi altro dominio generico.
 
-Il dominio sarà disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) entro poche ore.
+Il dominio sarà disponibile nello [Spazio Cliente OVHcloud](/links//manager) entro poche ore.
 
 ### Informazioni utili
 

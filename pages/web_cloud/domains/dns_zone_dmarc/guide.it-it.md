@@ -23,7 +23,7 @@ Il record **D**omain-based **M**essage **A**uthentication, **R**eporting, and **
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del dominio (associata alla soluzione email) dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Avere accesso alla gestione del dominio (associata alla soluzione email) dallo [Spazio Cliente OVHcloud](/links//manager).
 - Uno dei meccanismi di autenticazione, [SPF](/pages/web_cloud/domains/dns_zone_spf) e/o [DKIM](/pages/web_cloud/domains/dns_zone_dkim) deve essere configurato nella zona DNS del dominio del servizio di posta.
 
 ## Procedura
@@ -58,7 +58,7 @@ Esistono due modi per configurare il DMARC nella zona DNS di OVHcloud:
 
 #### Record DMARC <a name="dmarc-record"></a>
 
-Il record DMARC può essere aggiunto alla zona DNS dallo Spazio Cliente OVHcloud. Per farlo, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona la sezione `Web Cloud`{.action}. Nella colonna di sinistra, seleziona il dominio nella sezione `Domini`{.action} e clicca sulla scheda `Zona DNS`{.action} per accedere alla zona DNS.
+Il record DMARC può essere aggiunto alla zona DNS dallo Spazio Cliente OVHcloud. Per farlo, accedi allo [Spazio Cliente OVHcloud](/links//manager) e seleziona la sezione `Web Cloud`{.action}. Nella colonna di sinistra, seleziona il dominio nella sezione `Domini`{.action} e clicca sulla scheda `Zona DNS`{.action} per accedere alla zona DNS.
 
 Una volta visualizzata la zona DNS, clicca sul pulsante `Aggiungi un record`{.action} e poi su "Record email" `DMARC`{.action}.
 
@@ -101,7 +101,7 @@ Di seguito trovi la descrizione completa dei tag utilizzati per **la registrazio
 
 #### Record TXT <a name="txt-record"></a>
 
-È possibile aggiungere il record TXT alla zona DNS dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
+È possibile aggiungere il record TXT alla zona DNS dallo [Spazio Cliente OVHcloud](/links//manager), sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
 
 Una volta visualizzata la zona DNS, clicca sul pulsante `Aggiungi un record`{.action} e poi su "Record estesi" `TXT`{.action}.
 

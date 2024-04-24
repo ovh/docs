@@ -28,28 +28,28 @@ Zapoznaj się również z naszymi przewodnikami dotyczącymi [serwerów DNS OVHc
 
 - Zarejestrowana domena OVHcloud
 - Nazwa domeny musi posiadać rozszerzenie kompatybilne z DNSSEC.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Web Cloud`{.action}.
+- Dostęp do [Panelu klienta OVHcloud](/links//manager){.external}, część `Web Cloud`{.action}.
 
 ## W praktyce
 
 Aktywacja **DNSSEC** jest możliwa w dwóch przypadkach:
 
-- **Twoja domena używa serwerów DNS OVHcloud** : aktywacja następuje za pomocą jednego kliknięcia w [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} (jeśli nie jest ona jeszcze włączona domyślnie).
+- **Twoja domena używa serwerów DNS OVHcloud** : aktywacja następuje za pomocą jednego kliknięcia w [panelu klienta OVHcloud](/links//manager){.external} (jeśli nie jest ona jeszcze włączona domyślnie).
 
-- **Twoja domena nie używa serwerów DNS OVHcloud** : skontaktuj się z dostawcą zarządzającym konfiguracją DNS Twojej domeny, aby poprosić o jej ustawienia. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę z listy.</br>
+- **Twoja domena nie używa serwerów DNS OVHcloud** : skontaktuj się z dostawcą zarządzającym konfiguracją DNS Twojej domeny, aby poprosić o jej ustawienia. Zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę z listy.</br>
 Wybierz zakładkę `Rekordy DS`{.action}, kliknij przycisk `Zmień`{.action} po prawej stronie, następnie przycisk `+`{.action}, który się wyświetli.</br>
 Możesz teraz wpisać 4 pola "Key Tag", "Flaga", "Algorytm", "Klucz publiczny zakodowany w base64)" wraz z danymi dostarczonymi przez aktualnego operatora.
 
 > [!primary]
 >
-> Aby sprawdzić, czy Twoja domena używa konfiguracji DNS OVHcloud, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę z listy. Wybierz kartę `Serwery DNS`{.action} po wybraniu domeny.
+> Aby sprawdzić, czy Twoja domena używa konfiguracji DNS OVHcloud, zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę z listy. Wybierz kartę `Serwery DNS`{.action} po wybraniu domeny.
 >
 > Jeśli nazwy serwerów DNS kończą się na *ovh.net*, *ovh.ca* lub *anycast.me*, Twoja domena używa serwerów DNS OVHcloud.
 >
 
 ### Etap 1: dostęp do interfejsu zarządzania domeną <a name="step1"></a>
 
-Aby aktywować rozwiązanie **DNSSEC** dla Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę z listy.
+Aby aktywować rozwiązanie **DNSSEC** dla Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę z listy.
 
 Wyświetli się strona z ogólnymi informacjami o hostingu. 
 

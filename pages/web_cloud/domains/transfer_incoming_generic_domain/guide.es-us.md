@@ -121,7 +121,7 @@ También puede completar el pedido con un [alojamiento web](https://www.ovhcloud
 
 #### Seguimiento de la transferencia tras el pedido
 
-Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para consultar el progreso, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
+Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](/links//manager){.external}. Para consultar el progreso, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 
 > [!primary]
 >
@@ -139,7 +139,7 @@ Una vez validados el pedido y el código de transferencia, el actual agente regi
 
 Si el actual agente registrador rechaza la solicitud, contacte con él para conocer el motivo por el que la rechazó.
 
-El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Seleccione `Web Cloud`{.action} y acceda a la sección `Dominios`{.action} y haga clic en `Operaciones en curso`{.action}.
+El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcloud](/links//manager){.external}. Seleccione `Web Cloud`{.action} y acceda a la sección `Dominios`{.action} y haga clic en `Operaciones en curso`{.action}.
 
 > [!primary]
 >
@@ -153,7 +153,7 @@ El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcl
 
 ### 5. gestionar su dominio con OVHcloud
 
-Una vez finalizado el procedimiento de transferencia, podrá administrar su dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, seleccione `Web Cloud`{.action}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
+Una vez finalizado el procedimiento de transferencia, podrá administrar su dominio desde el [área de cliente de OVHcloud](/links//manager){.external}. Para ello, seleccione `Web Cloud`{.action}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
 
 > [!warning]
 >
@@ -163,7 +163,7 @@ Una vez finalizado el procedimiento de transferencia, podrá administrar su domi
 > Para los dominios con una extensión *local* o *regional* (los **ccTLD**, como *.fr*, *.be*, *.de*, *.es*, etc.), esto depende de las extensiones y de las reglas establecidas por el **registro** de la extensión en cuestión.
 > Una vez finalizada la transferencia, compruebe la fecha de expiración del dominio directamente desde el área de cliente de OVHcloud.
 >
-> Para ello, conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en el botón `Dominios`{.action} y seleccione el dominio correspondiente. En la nueva página, situada justo debajo del dominio, podrá consultar la fecha de renovación prevista en el **mes** y **el año**.
+> Para ello, conéctese a su [área de cliente de OVHcloud](/links//manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en el botón `Dominios`{.action} y seleccione el dominio correspondiente. En la nueva página, situada justo debajo del dominio, podrá consultar la fecha de renovación prevista en el **mes** y **el año**.
 >
 > En función de la situación y de la nueva fecha de expiración de su nombre de dominio, podrá ser necesaria una renovación del dominio justo después de la transferencia.
 >

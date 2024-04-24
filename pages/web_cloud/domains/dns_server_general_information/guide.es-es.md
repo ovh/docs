@@ -46,8 +46,8 @@ En ocasiones, algunos proveedores DNS ofrecen más de 2 **servidores DNS** para 
 ## Requisitos
 
 - Tener un [dominio](https://www.ovhcloud.com/es-es/domains/) registrado en OVHcloud.
-- Disponer de permisos [adecuados para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el nombre de dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Disponer de permisos [adecuados para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el nombre de dominio desde el [área de cliente de OVHcloud](/links//manager){.external}.
+- Estar conectado a su [área de cliente de OVHcloud](/links//manager){.external}.
 
 > [!primary]
 >
@@ -77,7 +77,7 @@ Asegúrese de que los cambios no inhabilitarán el dominio. Si no está seguro, 
 
 ### Acceder a la gestión de los servidores DNS de OVHcloud
 
-Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. Por último, abra la pestaña Servidores DNS`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links//manager){.external} y acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. Por último, abra la pestaña Servidores DNS`{.action}.
 
 Se mostrará una tabla con los servidores DNS actualmente definidos por OVHcloud para su dominio. Es posible mostrar varios servidores DNS, cada uno con su propia fila en la tabla.
 
@@ -121,7 +121,7 @@ El botón `Restaurar los servidores DNS`{.action} permite restaurar los servidor
 
 Una vez realizados los cambios necesarios, debe esperar a que los cambios surtan efecto. Hay que tener en cuenta dos períodos sucesivos:
 
-- el *registre* que gestiona la extensión del dominio (por ejemplo, el registro de extensiones en *.es*) debe aplicar los cambios realizados por OVHcloud. Puede consultar el progreso en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para ello, acceda a la sección `Web Cloud`{.action}, acceda a la sección `dominios`{.action} en la columna de la izquierda y haga clic en `Operaciones en curso`{.action}.
+- el *registre* que gestiona la extensión del dominio (por ejemplo, el registro de extensiones en *.es*) debe aplicar los cambios realizados por OVHcloud. Puede consultar el progreso en el [área de cliente de OVHcloud](/links//manager){.external}. Para ello, acceda a la sección `Web Cloud`{.action}, acceda a la sección `dominios`{.action} en la columna de la izquierda y haga clic en `Operaciones en curso`{.action}.
 - Una vez que la organización que gestiona la extensión del dominio haya aplicado el cambio, deberá esperar un máximo de **48 horas** para que los cambios que haya realizado se propaguen por completo.
 
 ## Más información

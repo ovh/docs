@@ -23,7 +23,7 @@ Der Eintrag **D**omain-based **M**essage **A**uthentication, **R**eporting, and 
 
 ## Voraussetzungen
 
-- Sie haben über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Zugriff auf die Verwaltung des Domainnamens, der Ihrer E-Mail-Lösung zugewiesen ist.
+- Sie haben über das [OVHcloud Kundencenter](/links//manager) Zugriff auf die Verwaltung des Domainnamens, der Ihrer E-Mail-Lösung zugewiesen ist.
 - Einer der Authentifizierungsmechanismen [SPF](/pages/web_cloud/domains/dns_zone_spf) oder [DKIM](/pages/web_cloud/domains/dns_zone_dkim) muss in der DNS-Zone des Domainnamens des E-Mail-Dienstes konfiguriert werden.
 
 ## In der praktischen Anwendung
@@ -58,7 +58,7 @@ Es gibt zwei Möglichkeiten, DMARC in Ihrer OVHcloud DNS-Zone zu konfigurieren:
 
 #### DMARC-Eintrag <a name="dmarc-record"></a>
 
-Sie können den DMARC-Eintrag über das OVHcloud Kundencenter zu Ihrer DNS-Zone hinzufügen. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Wählen Sie in der linken Spalte im Bereich `Domainnamen`{.action} die betreffende Domain aus und klicken Sie dann auf den Tab `DNS-Zone`{.action}, um zu Ihrer DNS-Zone zu gelangen.
+Sie können den DMARC-Eintrag über das OVHcloud Kundencenter zu Ihrer DNS-Zone hinzufügen. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links//manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Wählen Sie in der linken Spalte im Bereich `Domainnamen`{.action} die betreffende Domain aus und klicken Sie dann auf den Tab `DNS-Zone`{.action}, um zu Ihrer DNS-Zone zu gelangen.
 
 Klicken Sie auf den Button `Eintrag hinzufügen`{.action} und dann auf `DMARC`{.action} in den E-Mail-Feldern.
 
@@ -101,7 +101,7 @@ Nachfolgend finden Sie eine vollständige Beschreibung der Tags, die für den OV
 
 #### TXT-Eintrag <a name="txt-record"></a>
 
-Sie können den TXT-Eintrag über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Web Cloud`{.action} zu Ihrer DNS-Zone hinzufügen. Klicken Sie auf `Domainnamen`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS-Zone`{.action}.
+Sie können den TXT-Eintrag über das [OVHcloud Kundencenter](/links//manager) im Bereich `Web Cloud`{.action} zu Ihrer DNS-Zone hinzufügen. Klicken Sie auf `Domainnamen`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS-Zone`{.action}.
 
 Klicken Sie auf den Button `Eintrag hinzufügen`{.action} und dann auf `TXT`{.action}.
 

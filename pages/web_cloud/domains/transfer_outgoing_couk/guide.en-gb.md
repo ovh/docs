@@ -32,7 +32,7 @@ The process of changing the registrar for Top Level Domains (TLD) of the **UK** 
 ## Requirements
 
 - A [.uk domain name](https://www.ovhcloud.com/en-gb/domains/) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the necessary permissions to manage the domain name (domain administrator)
+- Access to the [OVHcloud Control Panel](/links//manager) with the necessary permissions to manage the domain name (domain administrator)
 - The domain name is still active i.e. not expired or otherwise locked on the part of OVHcloud
 - The domain name is not the subject of an ongoing dispute with the responsible registry [Nominet](https://www.nominet.uk/)
 
@@ -51,7 +51,7 @@ In case you do not know the required TAG yet, you can request it at your new pro
 
 ### Step 1: Verify the necessary information
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action}. Click `Domain names`{.action}, then choose the domain name concerned.
+Log in to your [OVHcloud Control Panel](/links//manager) and select `Web Cloud`{.action}. Click `Domain names`{.action}, then choose the domain name concerned.
 
 Keep in mind that you have to be logged in as the administrative contact.
 

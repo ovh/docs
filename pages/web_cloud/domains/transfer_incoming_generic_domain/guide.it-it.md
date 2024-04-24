@@ -121,7 +121,7 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 #### Stato del trasferimento dopo l'ordine
 
-Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di trasferimento inizierà solo dopo aver ricevuto il pagamento. Una volta completata l'operazione, è possibile seguire lo stato di avanzamento del processo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Per monitorare lo stato di avanzamento dell'operazione, clicca su `Domini`{.action} e poi `Operazioni in corso`{.action}.
+Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di trasferimento inizierà solo dopo aver ricevuto il pagamento. Una volta completata l'operazione, è possibile seguire lo stato di avanzamento del processo dallo [Spazio Cliente OVHcloud](/links//manager){.external}. Per monitorare lo stato di avanzamento dell'operazione, clicca su `Domini`{.action} e poi `Operazioni in corso`{.action}.
 
 > [!primary]
 >
@@ -139,7 +139,7 @@ Una volta convalidato l'ordine e il codice di trasferimento, il Registrar attual
 
 Se il provider attuale emette un rifiuto, contatta il provider per sapere perché l'ha rifiutata.
 
-Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Web Cloud`{.action} e accedi alla sezione `Domini`{.action}, poi clicca su `Operazioni in corso`{.action}.
+Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](/links//manager){.external}. Seleziona `Web Cloud`{.action} e accedi alla sezione `Domini`{.action}, poi clicca su `Operazioni in corso`{.action}.
 
 > [!primary]
 >
@@ -153,7 +153,7 @@ Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](https://w
 
 ### Step 5: gestire il dominio con OVHcloud
 
-Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Web Cloud`{.action}, clicca su `Domini`{.action} nel menu a sinistra e poi clicca sul dominio interessato.
+Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio Cliente OVHcloud](/links//manager){.external}. Seleziona `Web Cloud`{.action}, clicca su `Domini`{.action} nel menu a sinistra e poi clicca sul dominio interessato.
 
 > [!warning]
 >
@@ -163,7 +163,7 @@ Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio
 > Per i domini con estensione *locale* o *regionale* (i **ccTLD** come *.it*, *.be*, *.de*, *.es*, ecc.), questo dipende dalle estensioni e dalle regole messe in atto dal **Registro** dell'estensione in questione.
 > Una volta completata l'operazione, verifica la data di scadenza del dominio direttamente dallo Spazio Cliente OVHcloud.
 >
-> Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona il dominio interessato. Sulla pagina che appare e appena sotto il tuo dominio sulla parte superiore della pagina, visualizzerai la data di rinnovo prevista con il **mese** e **l'anno** di scadenza.
+> Accedi allo [Spazio Cliente OVHcloud](/links//manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona il dominio interessato. Sulla pagina che appare e appena sotto il tuo dominio sulla parte superiore della pagina, visualizzerai la data di rinnovo prevista con il **mese** e **l'anno** di scadenza.
 >
 > In base alla situazione e alla nuova data di scadenza del dominio, potrebbe essere necessario un rinnovo del dominio subito dopo il trasferimento.
 >

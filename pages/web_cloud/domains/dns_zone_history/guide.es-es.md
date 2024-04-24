@@ -18,7 +18,7 @@ Por ejemplo, puede especificar lo siguiente:
 - Los servidores de correo (registros DNS de tipo *MX*) a los que el dominio debe redirigir los emails que recibe. Esto le permite consultarlos en su dirección de correo personalizada con su nombre de dominio.
 - Información relativa a la seguridad y la autenticación de los servicios (alojamiento web, servidor web, servidor de correo, etc.) asociados a su dominio (registros DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
 
-Si desea más información sobre este tema, puede consultar nuestra documentación relativa a [los registros DNS y la edición de una zona DNS](/pages/web_cloud/domains/dns_zone_edit) en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Si desea más información sobre este tema, puede consultar nuestra documentación relativa a [los registros DNS y la edición de una zona DNS](/pages/web_cloud/domains/dns_zone_edit) en el [área de cliente de OVHcloud](/links//manager).
 Existen diversos motivos por los que podría necesitar aplicar una configuración DNS anterior al dominio.
 
 A partir de ahora, la gestión de los DNS se simplifica gracias al historial de sus zonas DNS.
@@ -27,13 +27,13 @@ A partir de ahora, la gestión de los DNS se simplifica gracias al historial de 
 
 ## Requisitos
 
-- Tener una zona DNS para el dominio en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Tener una zona DNS para el dominio en el [área de cliente de OVHcloud](/links//manager)
+- Estar conectado al [área de cliente de OVHcloud](/links//manager)
 - Tener acceso a la gestión del dominio
 
 ## Procedimiento
 
-Para acceder a esta funcionalidad, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action} de la parte superior de la interfaz. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio asociado a la zona DNS que quiera gestionar.
+Para acceder a esta funcionalidad, conéctese al [área de cliente de OVHcloud](/links//manager) y acceda a la sección `Web Cloud`{.action} de la parte superior de la interfaz. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio asociado a la zona DNS que quiera gestionar.
 
 En la nueva página, si no ha sido redirigido a esta pestaña, haga clic en la pestaña `Zona DNS`{.action}.
 

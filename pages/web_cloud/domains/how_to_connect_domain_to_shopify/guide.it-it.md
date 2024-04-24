@@ -23,9 +23,9 @@ Se il dominio è registrato in OVHcloud e vuoi connetterlo a un hosting Shopify.
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links//manager){.external}
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} registrato in OVHcloud.
-- Disporre delle [autorizzazioni necessarie per gestire](/pages/account_and_service_management/account_information/managing_contacts) il dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+- Disporre delle [autorizzazioni necessarie per gestire](/pages/account_and_service_management/account_information/managing_contacts) il dominio dallo [Spazio Cliente OVHcloud](/links//manager){.external}.
 - Disporre di un hosting in Shopify.
 - Avere accesso alla gestione di questo hosting su Shopify.
 
@@ -39,7 +39,7 @@ Prima di eseguire i due passaggi di questa guida, ti consigliamo di familiarizza
 
 ### Configurare i record DNS su un account OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links//manager){.external}, sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con tutti i record DNS del dominio selezionato.
 

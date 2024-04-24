@@ -47,8 +47,8 @@ DNS-Provider können auch drei oder mehr **DNS-Server** einsetzen, die alle dekl
 ## Voraussetzungen
 
 - Sie verfügen über eine bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie verfügen über die [entsprechenden Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts){.external} für die Verwaltung des Domainnamens über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über die [entsprechenden Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts){.external} für die Verwaltung des Domainnamens über Ihr [OVHcloud Kundencenter](/links//manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links//manager).
 
 > [!primary]
 >
@@ -78,7 +78,7 @@ Stellen Sie sicher, dass Ihr Domainname aufgrund der Änderungen nicht unerreich
 
 ### Zugang zur Verwaltung der OVHcloud DNS-Server
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus. Gehen Sie dann auf den Tab `DNS-Server`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus. Gehen Sie dann auf den Tab `DNS-Server`{.action}.
 
 Die angezeigte Tabelle listet die DNS-Server auf, die derzeit von OVHcloud für Ihren Domainnamen definiert sind. Es werden möglicherweise mehrere DNS-Server angezeigt. Eine Tabellenzeile entspricht dabei jeweils einem Server.
 
@@ -122,7 +122,7 @@ Mit dem Button `DNS-Server zurücksetzen`{.action} können Sie die aktuellen DNS
 
 Nachdem die erforderlichen Änderungen vorgenommen wurden, dauert es eine gewisse Zeit, bis diese effektiv sind. Dabei sind zwei aufeinanderfolgende Vorgänge zu beachten:
 
-- Die bei OVHcloud vorgenommene Änderung muss von der Registry, die Ihre Domainendung verwaltet, übernommen werden (z.B. der DENIC für *.de*). Sie können den Fortschritt dieser Operation in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nachverfolgen, indem Sie im Bereich `Domainnnamen`{.action} auf `Laufende Vorgänge`{.action} klicken.
+- Die bei OVHcloud vorgenommene Änderung muss von der Registry, die Ihre Domainendung verwaltet, übernommen werden (z.B. der DENIC für *.de*). Sie können den Fortschritt dieser Operation in Ihrem [OVHcloud Kundencenter](/links//manager) nachverfolgen, indem Sie im Bereich `Domainnnamen`{.action} auf `Laufende Vorgänge`{.action} klicken.
 - Nachdem die Registry Ihrer Domainendung die Änderung angenommen hat, ist eine Propagationszeit von maximal 48 Stunden erforderlich, bis sie voll wirksam ist.
 
 ## Weiterführende Informationen

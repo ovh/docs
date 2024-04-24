@@ -35,15 +35,15 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](/links//manager) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud.
+- Être connecté à votre [espace client OVHcloud](/links//manager).
 - Avoir souscrit une de nos offres [Exchange](https://www.ovhcloud.com/fr-ca/emails/) ou une offre e-mail hors OVHcloud disposant du DKIM.
 
 > [!warning]
 >
 > Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification du DKIM depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) depuis l'onglet `zone DNS`{.action}, une fois le domaine concerné sélectionné.
+> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](/links//manager) depuis l'onglet `zone DNS`{.action}, une fois le domaine concerné sélectionné.
 >
 
 ## En pratique
@@ -142,7 +142,7 @@ La configuration automatique du DKIM est accessible pour les offres e-mail [Exch
 
 Par défaut le DKIM n'est pas activé lorsque vous ajoutez un nom de domaine à votre plateforme. Vous devez donc lancer le processus de configuration automatique via l'espace client.
 
-Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez sur le nom du service Exchange concerné. Enfin, allez dans l'onglet `Domaines associés`{.action}.
+Depuis votre [espace client OVHcloud](/links//manager), dans l'onglet `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez sur le nom du service Exchange concerné. Enfin, allez dans l'onglet `Domaines associés`{.action}.
 
 À droite du nom de domaine concerné, vous pouvez observer que la pastille `DKIM` est grise.
 
@@ -168,7 +168,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 > [!tabs]
 > **Exchange**
 >>
->> Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dans l'onglet `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez enfin sur le nom du service Exchange concerné. Par défaut, le nom de votre plateforme correspond à sa référence ou celle-ci sera visible sous le nom que vous lui avez attribué (voir l'image ci-dessous).
+>> Depuis votre [espace client OVHcloud](/links//manager), dans l'onglet `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez enfin sur le nom du service Exchange concerné. Par défaut, le nom de votre plateforme correspond à sa référence ou celle-ci sera visible sous le nom que vous lui avez attribué (voir l'image ci-dessous).
 >>
 >> ![email](images/dns-dkim-platform-exchange.png){.thumbnail}
 >>
@@ -285,7 +285,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> > Il est possible que le `status:` soit en `todo`, cela n'a pas d'incidence sur la configuration de votre zone DNS.
 >>
 > **4.Configurer l'enregistrement DNS**
->> Depuis [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) où est hébergé le nom de domaine de votre plateforme Exchange, dans l'onglet `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action} dans la colonne de gauche et sélectionnez le nom de domaine concerné.<br>
+>> Depuis [l'espace client OVHcloud](/links//manager) où est hébergé le nom de domaine de votre plateforme Exchange, dans l'onglet `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action} dans la colonne de gauche et sélectionnez le nom de domaine concerné.<br>
 >> Dirigez-vous vers l'onglet `Zone DNS`{.action} puis cliquez sur `Ajouter une entrée`{.action} dans la fenêtre qui s'affiche. Choisissez `CNAME` puis complétez selon les valeurs que vous avez relevées.<br>
 >>
 >> Si on prend les valeurs de l'exemple à l'étape "**3.Récupérer l'enregistrement DNS**":
@@ -426,7 +426,7 @@ Si vous souhaitez supprimer le sélecteur DKIM et sa paire de clés, utilisez l'
 
 Si vous souhaitez configurer votre zone DNS afin d'y ajouter un enregistrement DKIM pour votre offre, suivez les instructions ci-dessous.
 
-Depuis [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur l'onglet `Web Cloud`{.action} puis sur `Noms de domaine`{.action} dans la colonne de gauche et sélectionnez le nom de domaine concerné.
+Depuis [l'espace client OVHcloud](/links//manager), cliquez sur l'onglet `Web Cloud`{.action} puis sur `Noms de domaine`{.action} dans la colonne de gauche et sélectionnez le nom de domaine concerné.
 
 CLiquez sur l'onglet `Zone DNS`{.action} puis sur `Ajouter une entrée`{.action}. Il existe 3 manières d'ajouter un enregistrement pour paramétrer le DKIM dans votre zone DNS :
 
@@ -548,7 +548,7 @@ Après avoir basculé sur le nouveau sélecteur, conservez l'ancien durant 7 jou
 
 Vous constatez que vos e-mails ne sont pas signés par le DKIM, malgré son activation ou son paramétrage. Dans un premier temps, connectez-vous à votre espace client pour vérifier l'état du DKIM.
 
-Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action}. Cliquez enfin sur le nom du service Exchange concerné.<br><br> Dans la rubrique `Domaines associés`{.action}, vérifiez la couleur de l'icône `DKIM` à droite du nom de domaine concerné (voir l'image ci-dessous).
+Depuis votre [espace client OVHcloud](/links//manager), dans l'onglet `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action}. Cliquez enfin sur le nom du service Exchange concerné.<br><br> Dans la rubrique `Domaines associés`{.action}, vérifiez la couleur de l'icône `DKIM` à droite du nom de domaine concerné (voir l'image ci-dessous).
 
 ![email](images/red-dkim.png){.thumbnail}
 

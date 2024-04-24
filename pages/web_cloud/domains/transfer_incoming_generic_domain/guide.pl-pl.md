@@ -121,7 +121,7 @@ Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.
 
 #### Informacje o transferze po zamówieniu
 
-Po zatwierdzeniu zamówienia otrzymasz zamówienie. Transfer rozpocznie się po otrzymaniu płatności. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action}, a następnie `Operacje w toku`{.action}.
+Po zatwierdzeniu zamówienia otrzymasz zamówienie. Transfer rozpocznie się po otrzymaniu płatności. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](/links//manager){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action}, a następnie `Operacje w toku`{.action}.
 
 > [!primary]
 >
@@ -139,7 +139,7 @@ Po zatwierdzeniu zamówienia i kodu transferu aktualny operator (którym nie jes
 
 Jeśli odmowa została wydana przez aktualny operator rejestracji, skontaktuj się z nim, aby dowiedzieć się, dlaczego odmówił rejestracji.
 
-Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz `Web Cloud`{.action} i przejdź do sekcji `Domeny`{.action}, następnie kliknij `Operacje w toku`{.action}.
+Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](/links//manager){.external}. Wybierz `Web Cloud`{.action} i przejdź do sekcji `Domeny`{.action}, następnie kliknij `Operacje w toku`{.action}.
 
 > [!primary]
 >
@@ -153,7 +153,7 @@ Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](
 
 ### Etap 5: zarządzaj domeną za pomocą OVHcloud
 
-Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu wybierz `Web Cloud`{.action}, kliknij `Domeny`{.action}, po czym kliknij wybraną nazwę domeny.
+Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta OVHcloud](/links//manager){.external}. W tym celu wybierz `Web Cloud`{.action}, kliknij `Domeny`{.action}, po czym kliknij wybraną nazwę domeny.
 
 > [!warning]
 >
@@ -163,7 +163,7 @@ Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta
 > Dla domen z rozszerzeniem *lokalnym* lub *regionalnym* (z **ccTLD**, takich jak *.fr*, *.be*, *.de*, *.es*, itp.) zależy to od rozszerzeń i reguł wdrożonych przez **registry** danego rozszerzenia.
 > Po zakończeniu transferu sprawdź w Panelu klienta datę wygaśnięcia Twojej domeny.
 >
-> W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action} i wybierz odpowiednią domenę. Na stronie, która się wyświetla i tuż poniżej nazwy domeny w górnej części strony znajdziesz planowaną datę odnowienia wraz z **m** i **rok** jako termin wygaśnięcia.
+> W tym celu zaloguj się do [Panelu klienta OVHcloud](/links//manager), następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action} i wybierz odpowiednią domenę. Na stronie, która się wyświetla i tuż poniżej nazwy domeny w górnej części strony znajdziesz planowaną datę odnowienia wraz z **m** i **rok** jako termin wygaśnięcia.
 >
 > W zależności od sytuacji oraz od daty wygaśnięcia domeny, może zaistnieć konieczność odnowienia domeny zaraz po jej zakończeniu.
 >

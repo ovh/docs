@@ -23,9 +23,9 @@ Tem um nome de domínio na OVHcloud e deseja ligá-lo a um alojamento Shopify. N
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links//manager){.external}.
 - Ter um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} registado na OVHcloud.
-- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links//manager){.external}.
 - Ter um alojamento na Shopify.
 - Ter acesso à gestão deste alojamento na Shopify.
 
@@ -39,7 +39,7 @@ Antes de seguir as duas etapas deste manual, deve familiarizar-se com a configur
 
 ### Configurar os registos DNS na sua conta OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links//manager){.external}, secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 

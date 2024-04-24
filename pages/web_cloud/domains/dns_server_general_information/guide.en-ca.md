@@ -42,8 +42,8 @@ Sometimes, some DNS providers offer more than 2 **DNS servers** to declare with 
 ## Requirements
 
 - A [domain name](https://www.ovhcloud.com/en-ca/domains/) registered with OVHcloud.
-- The appropriate permissions [to manage](/pages/account_and_service_management/account_information/managing_contacts) the domain name from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+- The appropriate permissions [to manage](/pages/account_and_service_management/account_information/managing_contacts) the domain name from your [OVHcloud Control Panel](/links//manager){.external}.
+- Access to the [OVHcloud Control Panel](/links//manager){.external}.
 
 > [!primary]
 >
@@ -73,7 +73,7 @@ Please ensure that the changes you have made will not render your domain name in
 
 ### Accessing OVHcloud DNS server management
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then choose the domain name concerned. Then select the `DNS servers`{.action} tab.
+Log in to your [OVHcloud Control Panel](/links//manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then choose the domain name concerned. Then select the `DNS servers`{.action} tab.
 
 The table that opens will contain the DNS servers currently set by OVHcloud for your domain name. Several DNS servers can be listed, each with its own row in the table.
 
@@ -117,7 +117,7 @@ The `Reset the DNS servers`{.action} button allows you to reset your current DNS
 
 Once you have made the required changes, you must wait for them to become fully effective. Two successive periods must be taken into account:
 
-- the modification made on the OVHcloud side must be taken into account by the *registry* that manages your domain name extension (for example, the registry of extensions in *.uk*). You can track the progress of this operation in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. To do this, go to the `Web Cloud`{.action} section, go to the `Domain names`{.action} section in the left-hand column, then click `Ongoing operations`{.action}.
+- the modification made on the OVHcloud side must be taken into account by the *registry* that manages your domain name extension (for example, the registry of extensions in *.uk*). You can track the progress of this operation in your [OVHcloud Control Panel](/links//manager){.external}. To do this, go to the `Web Cloud`{.action} section, go to the `Domain names`{.action} section in the left-hand column, then click `Ongoing operations`{.action}.
 - Once the change has been processed by the organization that manages your domain name extension, you must wait a maximum of **48 hours** for the changes you have made to be fully propagated.
 
 ## Go further

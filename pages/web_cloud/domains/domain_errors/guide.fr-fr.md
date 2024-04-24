@@ -12,12 +12,12 @@ La création d'un nom de domaine, son transfert, son changement de propriétaire
 ## Prérequis
 
 - Posséder un ou plusieurs noms de domaine.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links//manager).
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos noms de domaine.
 
 ## En pratique
 
-Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dirigez-vous dans la rubrique `Web Cloud`{.action} puis `Noms de domaine`{.action}. Cliquez sur `Opérations en cours`{.action} au-dessus de la liste des noms de domaine.
+Depuis votre [espace client OVHcloud](/links//manager), dirigez-vous dans la rubrique `Web Cloud`{.action} puis `Noms de domaine`{.action}. Cliquez sur `Opérations en cours`{.action} au-dessus de la liste des noms de domaine.
 
 Un tableau vous permet de consulter toutes les opérations liées aux noms de domaine de votre espace client.
 

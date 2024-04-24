@@ -23,7 +23,7 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links//manager).
 - Sie verwalten einen bei OVHcloud registrierten Domainnamen, für den keine Operation (Inhaberwechsel, Transfer, Erstellung) im Gange ist. Wenn vor kurzem ein solcher Vorgang für Ihren Domainnamen abgeschlossen wurde, gilt regulär eine Frist von 60 Kalendertagen, bevor eine neue Operation gestartet werden kann.
 - Sie sind der [Administrator-Kontakt](/pages/account_and_service_management/account_information/managing_contacts) des entsprechenden Domainnamens.
 - Sie haben die Zustimmung des aktuellen Inhabers des Domainnamens, den Inhaberwechsel durchzuführen.
@@ -44,12 +44,12 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 >
 > - Die Webseite der zuständigen **TLD**-Registry.
 > - Die [Beschreibungen der bei OVHcloud verfügbaren **TLD**s](https://www.ovhcloud.com/de/domains/tld/).
-> - Statusaktualisierungen des Domainnamens. Loggen Sie sich hierzu im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und dann auf `Laufende Vorgänge`{.action}.
+> - Statusaktualisierungen des Domainnamens. Loggen Sie sich hierzu im [OVHcloud Kundencenter](/links//manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und dann auf `Laufende Vorgänge`{.action}.
 >
 
 ### Schritt 1: Domainnamen auswählen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} den Domainnamen (gTLD), deren Inhaber Sie ändern möchten unter `Domainnamen`{.action} aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager) ein und wählen Sie im Bereich `Web Cloud`{.action} den Domainnamen (gTLD), deren Inhaber Sie ändern möchten unter `Domainnamen`{.action} aus.
 
 ### Schritt 2: Vorgang für den Inhaberwechsel
 
@@ -91,7 +91,7 @@ Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änder
 
 ### Aktualisierung der Inhaberinformationen <a name="updateownerinformation"></a>
 
-Wenn Sie nur bestimmte Sekundärinformationen wie Telefonnummer, Adresse usw. aktualisieren müssen, brauchen Sie kein Verfahren zum Inhaberwechsel einzuleiten. Diese Daten können direkt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) geändert werden.
+Wenn Sie nur bestimmte Sekundärinformationen wie Telefonnummer, Adresse usw. aktualisieren müssen, brauchen Sie kein Verfahren zum Inhaberwechsel einzuleiten. Diese Daten können direkt im [OVHcloud Kundencenter](/links//manager) geändert werden.
 
 Klicken Sie dazu im Rahmen **Abo** auf die Schaltfläche `...`{.action} neben den **Kontakten** und danach auf `Angaben des Inhabers aktualisieren`{.action}.
 

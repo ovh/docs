@@ -35,7 +35,7 @@ Ein **Domainname** besteht aus Leveln. Diese Level sind in der Regel durch ein `
 
 - Sie besitzen mindestens eine [Domain](https://www.ovhcloud.com/de/domains/).
 - Sie verfügen über eine aktive DNS-Zone für Ihre Domain. Bei Bedarf lesen Sie unsere Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links//manager) eingeloggt.
 - Über ausreichende Rechte für alle betroffenen Dienste verfügen. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
   
 ## In der praktischen Anwendung
@@ -139,7 +139,7 @@ Nicht aufgeführte Dienste finden Sie in der jeweiligen Service-Dokumentation. S
 
 #### Fall 1: Eine Website auf meinem OVHcloud Webhosting mit einer Subdomain anzeigen
 
-Um einer Subdomain die Berechtigung zu erteilen, den Inhalt eines "Ziel"-Ordners auf einem Webhosting anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Angebot aus, in dem sich Ihre Website befindet, und klicken Sie dann auf den Tab `Multisite`{.action}.
+Um einer Subdomain die Berechtigung zu erteilen, den Inhalt eines "Ziel"-Ordners auf einem Webhosting anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links//manager){.external} ein und wählen Sie `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Angebot aus, in dem sich Ihre Website befindet, und klicken Sie dann auf den Tab `Multisite`{.action}.
 
 Hier autorisieren Sie den Zugriff Ihrer Subdomain auf Ihr Webhosting, auf dem sich Ihre Website befindet.
 
@@ -152,7 +152,7 @@ Weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem We
 
 #### Fall 2 - Exchange E-Mail-Adressen mit einer Subdomain erstellen
 
-Um die Erstellung personalisierter Exchange E-Mail-Adressen mit einer Subdomain zu ermöglichen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie in der linken Spalte auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend die Exchange Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
+Um die Erstellung personalisierter Exchange E-Mail-Adressen mit einer Subdomain zu ermöglichen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links//manager){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie in der linken Spalte auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend die Exchange Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
 
 So können Sie Ihre Subdomain auf Ihrer Exchange Plattform deklarieren.
 
@@ -164,7 +164,7 @@ Weitere Informationen zur Konfiguration einer Exchange-Plattform finden Sie in d
 
 #### Fall 3 - E-Mail Pro Adressen mit einer Subdomain erstellen
 
-Um die Erstellung personalisierter E-Mail Pro Adressen mit einer Subdomain zu ermöglichen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `E-Mail für Profis`{.action} und wählen Sie dann die E-Mail Pro Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
+Um die Erstellung personalisierter E-Mail Pro Adressen mit einer Subdomain zu ermöglichen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links//manager){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `E-Mail für Profis`{.action} und wählen Sie dann die E-Mail Pro Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
 
 So können Sie Ihre Subdomain auf Ihrer E-Mail Pro Plattform deklarieren.
 

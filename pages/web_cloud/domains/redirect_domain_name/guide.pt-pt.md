@@ -17,7 +17,7 @@ O reencaminhamento de um domínio consiste em reencaminhá-lo para um novo desti
 ## Requisitos
 
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter acesso ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso ao seu [Área de Cliente OVHcloud](/links//manager){.external}.
 - Estar conectado ao seu alojamento web (para um reencaminhamento através de um ficheiro [.htaccess](#htaccess_rewrite).
 
 ## Instruções
@@ -33,7 +33,7 @@ Esta funcionalidade permite reencaminhar um domínio/subdomínio para:
 
 Estas ações podem ser realizadas de várias formas:
 
-- **A partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)**. em que um assistente de configuração permite configurar o seu reencaminhamento.
+- **A partir da [Área de Cliente OVHcloud](/links//manager)**. em que um assistente de configuração permite configurar o seu reencaminhamento.
 - **Através de um método que requer programação**. Deverá criar você mesmo o reencaminhamento num ficheiro (geralmente um [.htaccess](#htaccess_rewrite)).
 
 > [!warning]
@@ -41,12 +41,12 @@ Estas ações podem ser realizadas de várias formas:
 > O reencaminhamento pode afetar o referenciamento do seu website. 
 > Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/) no referenciamento, se necessário.
 >
-> Atenção: um reencaminhamento criado a partir da[Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) não permite reencaminhar um URL em `https://` para outro domínio ou URL. 
+> Atenção: um reencaminhamento criado a partir da[Área de Cliente OVHcloud](/links//manager) não permite reencaminhar um URL em `https://` para outro domínio ou URL. 
 > Para criar este tipo de reencaminhamento, deverá obrigatoriamente passar por [uma re-escritura de URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite) através de um ficheiro ".htaccess", por exemplo.
 
 ### Reencaminhar um domínio a partir da Área de Cliente
 
-Ligue-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Web Cloud`{.action}, selecione o domínio a reencaminhar na secção `Noms de domínio`{.action} e clique no separador `Redirecção`{.action}.
+Ligue-se à [Área de Cliente OVHcloud](/links//manager){.external}, aceda à secção `Web Cloud`{.action}, selecione o domínio a reencaminhar na secção `Noms de domínio`{.action} e clique no separador `Redirecção`{.action}.
 
 A tabela apresenta os reencaminhamentos ativos para o seu domínio. Pode gerir os seus reencaminhamentos existentes utilizando o botão `...`{.action} à direita de cada linha.
 
@@ -54,7 +54,7 @@ Clique no botão `Para Adicionar um reencaminhamento`{.action}.
 
 ![Apresentação do menu reencaminhamento](images/add-a-redirection.png){.thumbnail}
 
-Estão disponíveis três opções de reencaminhamento a partir da[Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e cada uma delas é composta por **5 etapas** sucessivas. 
+Estão disponíveis três opções de reencaminhamento a partir da[Área de Cliente OVHcloud](/links//manager) e cada uma delas é composta por **5 etapas** sucessivas. 
 
 > O separador `Reencaminhamento`{.action} apresenta uma quarta opção que permite apontar rapidamente o seu domínio para as entradas DNS A, AAAA e CNAME.<br>
 > Uma vez que não se trata propriamente de um "reencaminhamento", esta opção não será detalhada neste guia.

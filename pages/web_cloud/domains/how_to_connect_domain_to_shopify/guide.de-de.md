@@ -24,7 +24,7 @@ Sie haben bereits einen Domainnamenamen bei OVHcloud und möchten ihn mit einem 
 ## Voraussetzungen
 
 - Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen [Berechtigungen zur Verwaltung](/pages/account_and_service_management/account_information/managing_contacts) des Domainnamens.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links//manager) mit den erforderlichen [Berechtigungen zur Verwaltung](/pages/account_and_service_management/account_information/managing_contacts) des Domainnamens.
 - Sie verfügen über ein Hosting bei Shopify.
 - Sie haben Zugriff auf die Verwaltung dieses Hostings bei Shopify.
 
@@ -38,7 +38,7 @@ Bevor Sie dieser Anleitung folgen, empfehlen wir, sich mit der Konfiguration von
 
 ### DNS-Einträge in Ihrem OVHcloud Kunden-Account konfigurieren
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus der Liste aus. Gehen Sie dann auf den Tab `DNS-Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus der Liste aus. Gehen Sie dann auf den Tab `DNS-Zone`{.action}.
 
 Die Tabelle listet alle DNS-Einträge des ausgewählten Domainnamens auf.
 

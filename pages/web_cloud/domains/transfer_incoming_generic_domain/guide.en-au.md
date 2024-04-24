@@ -116,7 +116,7 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhc
 
 #### Tracking a transfer after the order
 
-Once the order has been confirmed, you will receive a purchase order. The transfer process will not start until payment has been received. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. To track the progress, open `Domain names`{.action}, then click on `Ongoing operations`{.action}.
+Once the order has been confirmed, you will receive a purchase order. The transfer process will not start until payment has been received. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](/links//manager){.external}. To track the progress, open `Domain names`{.action}, then click on `Ongoing operations`{.action}.
 
 > [!primary]
 >
@@ -134,7 +134,7 @@ Once the order and transfer code have been confirmed, the domain name registrar 
 
 If a refusal is issued by the current registrar, contact them to find out why they refused it.
 
-The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Select `Web Cloud`{.action} and go to the `Domain names`{.action}, then click on `Ongoing operations`{.action}.
+The transfer process can be restarted from the [OVHcloud Control Panel](/links//manager){.external}. Select `Web Cloud`{.action} and go to the `Domain names`{.action}, then click on `Ongoing operations`{.action}.
 
 > [!primary]
 >
@@ -148,7 +148,7 @@ The transfer process can be restarted from the [OVHcloud Control Panel](https://
 
 ### Step 5: Manage your domain at OVHcloud
 
-Once the transfer procedure is complete, you can manage your domain from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
+Once the transfer procedure is complete, you can manage your domain from the [OVHcloud Control Panel](/links//manager){.external}.
 
 To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the services bar, then click on the domain name concerned.
 
@@ -160,7 +160,7 @@ To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the s
 > For domain names with a *country* or *regional* extension (**ccTLD**s such as *.fr*, *.be*, *.de*, *.es*, etc.), the transfer rules depend on the specifications put in place by the *registry* of the extension in question.
 > Once the transfer is complete, check the expiry date of your domain name in your OVHcloud Control Panel.
 >
-> To do this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), then go to the `Web Cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the domain name concerned. The **month** and **year** of the next renewal are displayed below the domain name at the top of the page.
+> To do this, log in to your [OVHcloud Control Panel](/links//manager), then go to the `Web Cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the domain name concerned. The **month** and **year** of the next renewal are displayed below the domain name at the top of the page.
 >
 > Depending on the situation and the new expiry date, a renewal of the domain name may be necessary right after the transfer.
 >

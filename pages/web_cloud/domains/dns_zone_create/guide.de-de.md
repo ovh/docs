@@ -16,7 +16,7 @@ Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei ei
 - Die E-Mail-Server (DNS-Einträge vom Typ *MX*), die E-Mails erhalten sollen, die an Adressen mit diesem Domainnamen versendet wurden. Wenn Sie die MX-Einträge Ihres Domainnamens konfigurieren, können Sie E-Mails über Ihre personalisierten E-Mail-Adressen empfangen.
 - Informationen zur Sicherheit/Authentifizierung von Diensten (Webhosting, Webserver, E-Mail-Server, etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC*, etc.).
 
-Für weitere Informationen zu DNS-Zonen und wie Sie diese im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) editieren, lesen Sie [unsere Dokumentation zu DNS](/pages/web_cloud/domains/dns_zone_edit).
+Für weitere Informationen zu DNS-Zonen und wie Sie diese im [OVHcloud Kundencenter](/links//manager) editieren, lesen Sie [unsere Dokumentation zu DNS](/pages/web_cloud/domains/dns_zone_edit).
 
 Eine DNS-Zone wird auf **DNS-Servern** gehostet. Zur Verwendung der dort registrierten DNS-Zone müssen die **DNS-Server** für diesen Domainnamen deklariert werden. 
 
@@ -37,7 +37,7 @@ Es gibt verschiedene Gründe für die Erstellung einer DNS-Zone bei OVHcloud fü
 
 - Sie haben administrativen Zugriff auf Ihren Domainnamen.
 - Für den betreffenden Domainnamen besteht nicht bereits eine aktive oder inaktive OVHcloud DNS-Zone, noch ist er Gegenstand einer laufenden Operation oder einer Bestellung bei OVHcloud.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links//manager).
 
 ## In der praktischen Anwendung
 
@@ -57,7 +57,7 @@ Es gibt verschiedene Gründe für die Erstellung einer DNS-Zone bei OVHcloud fü
 
 ### Schritt 1: DNS-Zone über das OVHcloud Kundencenter erstellen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Bestellen`{.action} und dann auf `DNS-Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Bestellen`{.action} und dann auf `DNS-Zone`{.action}.
 
 Geben Sie auf neuen Seite den Domainnamen ein (*domainname.tld*), für den Sie eine OVHcloud DNS-Zone erstellen möchten. Warten Sie einen Moment, bis das Tool die Überprüfung des Domainnamens durchgeführt hat.
 
@@ -91,7 +91,7 @@ Um die DNS-Zone zu bearbeiten, lesen Sie unsere Anleitung "[Bearbeiten der OVHcl
 
 Sobald die OVHcloud DNS-Zone bereit ist, aktivieren Sie diese, indem Sie die neuen DNS-Server deklarieren. Ermitteln Sie hierfür zuerst die Namen der **DNS-Server** von OVHcloud, auf denen die OVHcloud DNS-Zone für Ihre Domainnamen erstellt wurde.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie die neu erstellte DNS-Zone aus. 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie die neu erstellte DNS-Zone aus. 
 
 Im linken Menü sollte für den Domainnamen ein Globus-Symbol mit der Bezeichnung *DNS* angezeigt werden. 
 

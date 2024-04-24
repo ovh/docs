@@ -12,8 +12,8 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](/links//manager).
+- Être connecté à votre [espace client OVHcloud](/links//manager).
 - Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS d'OVHcloud).
 - Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), l'[hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou l'offre MX Plan commandée séparément), une de nos [offres e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/), ou un service e-mail externe.
 
@@ -21,7 +21,7 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 >
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification des enregistrements MX depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois positionné sur le domaine concerné, depuis l'onglet `informations générales`{.action}, dans la partie `Serveurs DNS`{.action}, si la mention `Actif` est présente sous « **serveurs DNS** », vous utilisez bien les serveurs DNS OVHcloud.
+> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](/links//manager). Une fois positionné sur le domaine concerné, depuis l'onglet `informations générales`{.action}, dans la partie `Serveurs DNS`{.action}, si la mention `Actif` est présente sous « **serveurs DNS** », vous utilisez bien les serveurs DNS OVHcloud.
 >
 > ![email](images/dns-servers-enabled.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Ces enregistrements MX doivent être configurés dans la zone DNS de votre nom d
 
 ### Configurer un enregistrement MX dans une zone DNS OVHcloud
 
-Pour créer ou modifier les enregistrements MX dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous dans l'onglet `Zone DNS`{.action}.
+Pour créer ou modifier les enregistrements MX dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](/links//manager). Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous dans l'onglet `Zone DNS`{.action}.
 
 Le tableau affiche la configuration OVHcloud de votre nom de domaine. Chaque ligne correspond à un enregistrement DNS.
 
