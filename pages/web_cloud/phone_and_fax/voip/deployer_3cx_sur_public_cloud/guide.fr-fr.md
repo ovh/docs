@@ -12,7 +12,7 @@ A la fin de ce guide, vous aurez les bases pour gérer le déploiement de votre 
 
 ## Prérequis
 
-- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud. Retrouvez plus d'informations dans notre guide « [Créer votre premier projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) ».
+- Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud. Retrouvez plus d'informations dans notre guide « [Créer votre premier projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) ».
 - L'IPBX 3CX requiert une license valide pour être utilisé. Assurez-vous d'avoir une license valide lors du déploiement. Retrouvez toutes les informations sur <https://www.3cx.fr>. 
 
 ## En pratique
