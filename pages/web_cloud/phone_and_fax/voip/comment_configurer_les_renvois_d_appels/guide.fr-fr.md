@@ -77,7 +77,7 @@ Pour activer une configuration, cochez la case à côté de cette dernière puis
 |Renvoyer vers un|Description|
 |---|---|  
 |Fax|Il s'agit du service fax. Cette fonctionnalité est réservée aux offres Fax.|
-|Numéro hors OVHcloud|Permet de renvoyer l'appel vers un numéro hors OVHcloud. Sachez que les communications vers un numéro non enregistré chez OVHcloud seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/voip){.external} (voir la note en bas de page) et [les tarifs en vigueur](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml){.external}.|
+|Numéro hors OVHcloud|Permet de renvoyer l'appel vers un numéro hors OVHcloud. Sachez que les communications vers un numéro non enregistré chez OVHcloud seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/voip){.external} (voir la note en bas de page) et [les tarifs en vigueur](/links/telecom/tarifs-telephonie){.external}.|
 |Répondeur|Permet de renvoyer l'appel vers la boîte vocale d'une des lignes présentes dans votre parc téléphonique.|
 |Téléphone|Permet de renvoyer l'appel vers une autre ligne présente dans votre parc téléphonique.|
 

@@ -63,7 +63,7 @@ Définissez dans un premier temps où les appels doivent être redirigés selon 
 
 Pour modifier un créneau, cliquez sur l'icône en forme de roue dentée à côté de celui-ci. Définissez où seront redirigés les appels, puis cliquez sur le bouton `Modifier`{.action}. 
 
-Sachez que les communications vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/voip){.external} (voir la note en bas de page) et [les tarifs en vigueur](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml){.external}.
+Sachez que les communications vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/voip){.external} (voir la note en bas de page) et [les tarifs en vigueur](/links/telecom/tarifs-telephonie){.external}.
 
 ![gerer-plages-horaires](images/manage-time-slot-step3.png){.thumbnail}
 

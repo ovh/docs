@@ -115,7 +115,7 @@ Vous pouvez ajouter deux types d'agents, des lignes SIP internes (appartenant à
 |**Ligne externe**<br><br>![ligne SIP externe](images/agent-externe2021.png){.thumbnail}|Pour ajouter une ligne téléphonique externe, renseignez son numéro au format international (0033xxxxxxxxx pour la France) directement dans le champ « Numéro ».<br><br>Validez l'ajout de chaque ligne en cliquant sur `Ajouter un agent`{.action}.|
 
 > [!warning]
-> L'ajout d'une ligne externe peut occasionner des frais car un appel reçu par celle-ci sera comptabilisé en hors-forfait. Vous pouvez consulter nos tarifs hors-forfait en vigueur sur [cette page](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml){.external}. Nous vous conseillons donc de privilégier les lignes internes ou de n'utiliser une ligne externe qu'en solution de repli.
+> L'ajout d'une ligne externe peut occasionner des frais car un appel reçu par celle-ci sera comptabilisé en hors-forfait. Vous pouvez consulter nos tarifs hors-forfait en vigueur sur [cette page](/links/telecom/tarifs-telephonie){.external}. Nous vous conseillons donc de privilégier les lignes internes ou de n'utiliser une ligne externe qu'en solution de repli.
 >
 
 Les agents et leurs attributs sont visibles dans la « Liste des agents ». Vous pouvez modifier ces attributs en cliquant sur le stylo à droite de chaque agent.
