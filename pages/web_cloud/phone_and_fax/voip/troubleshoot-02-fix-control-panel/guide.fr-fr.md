@@ -20,7 +20,7 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 - Disposer d'une [ligne téléphonique OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
 - Disposer d'un [téléphone fourni par OVHcloud](https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml){.external} et l'avoir installé.
 
@@ -120,7 +120,7 @@ Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous
 > Rendez-vous sur <http://monip.ovh> et prenez note de l'adresse IP publique qui vous est indiquée.
 >
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis cliquez sur l'onglet `Telecom`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} puis cliquez sur l'onglet `Telecom`{.action}.
 
 Cliquez sur `Téléphonie`{.action} et choisissez la ligne concernée. 
 

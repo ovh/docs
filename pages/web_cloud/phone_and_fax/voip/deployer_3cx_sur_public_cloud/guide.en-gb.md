@@ -599,7 +599,7 @@ For our guide, we will use a **Discovery D2-4** instance.
 
 #### Deployment via the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and click on the `Public Cloud`{.action} menu.
+Log in to your [OVHcloud Control Panel](/links/manager) and click on the `Public Cloud`{.action} menu.
 
 Select your Public Cloud project.
 

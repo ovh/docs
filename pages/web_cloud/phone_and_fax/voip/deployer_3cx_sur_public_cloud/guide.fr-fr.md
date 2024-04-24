@@ -599,7 +599,7 @@ Pour notre guide, nous allons utiliser une instance **Discovery D2-4**.
 
 #### Déploiement via l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur le menu `Public Cloud`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur le menu `Public Cloud`{.action}.
 
 Sélectionnez votre projet Public Cloud.
 

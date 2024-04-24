@@ -13,7 +13,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afi
 ## Prérequis
 
 - Disposer d'au moins une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
@@ -28,13 +28,13 @@ Vous pouvez créer des numéros abrégés pour une seule ligne ou partager ces n
 
 - **Pour accéder à la gestion des numéros abrégés d'une seule ligne** :
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Numéros abrégés`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Numéros abrégés`{.action}.
  
 ![configuration numeros abrégés](images/configurer-numeros-abreges-step1-2022.png){.thumbnail}
 
 - **Pour accéder à la gestion des numéros abrégés d'un groupe de lignes** :
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de lignes concerné. Cliquez enfin sur le bouton `Numéros abrégés`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de lignes concerné. Cliquez enfin sur le bouton `Numéros abrégés`{.action}.
  
 ![configuration numeros abrégés](images/configurer-numeros-abreges-step2-2022.png){.thumbnail}
 

@@ -18,7 +18,7 @@ Cette procédure vous permet de valider l'identifiant client sur lequel OVHcloud
 ## Prérequis
 
 - Disposer d'un compte OVHcloud actif.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 
@@ -32,11 +32,11 @@ L'objet de l'e-mail reçu est :
 >[**OVH - IMPORTANT**] Nous attendons votre procédure VoIP pour finaliser votre commande.
 >
 
-Vous pouvez également retrouver cet e-mail dans votre espace client. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre nom en haut à droite puis sur `E-mails de service`{.action}
+Vous pouvez également retrouver cet e-mail dans votre espace client. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cliquez sur votre nom en haut à droite puis sur `E-mails de service`{.action}
 
 ![procédure email](images/email.png){.thumbnail}
 
-Si vous souhaitez générer la procédure manuellement (dans le cadre d'un changement de NIC Facturation) ou anticiper et valider votre compte OVHcloud pour la téléphonie en vue d'une prochaine commande de services VoIP, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis cliquez sur `Telecom`{.action}.
+Si vous souhaitez générer la procédure manuellement (dans le cadre d'un changement de NIC Facturation) ou anticiper et valider votre compte OVHcloud pour la téléphonie en vue d'une prochaine commande de services VoIP, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} puis cliquez sur `Telecom`{.action}.
 
 Un message d'information vous invitera à cliquer sur le lien du formulaire de validation.
 
