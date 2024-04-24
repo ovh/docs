@@ -88,13 +88,9 @@ Once the website configuration has been successfully uploaded, you can test the 
 The default endpoint will depend on the region of your bucket.
 
 ```sh
-http://{bucket-name}.s3-website.{region}.{storage_class}.cloud.ovh.net
+http://{bucket-name}.s3-website.{region}.io.cloud.ovh.net
 ```
 
-Where `storage_class` is:
-
-- "io" if you are using a standard bucket.
-- "perf" if you are using a high perf bucket.
 
 > [!primary]
 > If you want to use a custom endpoint, you will have to provide your own domain name.
