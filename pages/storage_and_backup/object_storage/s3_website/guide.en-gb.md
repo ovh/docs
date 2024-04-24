@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Hosting a static website in a S3 bucket
 excerpt: Learn how to configure a S3 bucket to host a static website
-updated: 2023-05-11
+updated: 2024-04-24
 ---
 
 ## Objective
@@ -98,7 +98,7 @@ Where `storage_class` is:
 
 > [!primary]
 > If you want to use a custom endpoint, you will have to provide your own domain name.
-> Find more information on OVHcloud domain name offers on the [OVHcloud website](https://www.ovhcloud.com/en-gb/domains/).
+> Find more information on OVHcloud domain name offers on the [OVHcloud website](/links/web/domains).
 
 > [!warning]
 > - Make sure the region you are hosting your bucket in supports the storage class you choose. You can check the list of supported storage classes by regions [here](/pages/storage_and_backup/object_storage/s3_location).
@@ -108,6 +108,6 @@ Where `storage_class` is:
 
 [Enable HTTPS on a S3 static website using a custom fqdn](/pages/storage_and_backup/object_storage/s3_website_https)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

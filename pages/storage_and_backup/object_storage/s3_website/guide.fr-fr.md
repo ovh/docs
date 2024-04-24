@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Héberger un site statique dans un bucket S3
 excerpt: Apprenez à configurer un bucket S3 pour héberger un site web statique
-updated: 2023-05-11
+updated: 2024-04-24
 ---
 
 ## Objectif
@@ -98,7 +98,7 @@ Où `storage_class` est :
 
 > [!primary]
 > Si vous souhaitez utiliser un endpoint personnalisé, vous devrez fournir votre propre nom de domaine.
-> Retrouvez plus d'informations sur les offres de noms de domaine OVHcloud sur [le site OVHcloud](https://www.ovhcloud.com/fr/domains/).
+> Retrouvez plus d'informations sur les offres de noms de domaine OVHcloud sur [le site OVHcloud](/links/web/domains).
 
 > [!warning]
 > - Assurez-vous que la région dans laquelle vous hébergez votre bucket supporte la classe de stockage que vous choisissez. Vous pouvez consulter la liste des classes de stockage prises en charge par région [ici](/pages/storage_and_backup/object_storage/s3_location).
@@ -108,6 +108,6 @@ Où `storage_class` est :
 
 [Activer HTTPS sur un site statique S3 avec un fqdn personnalisé](/pages/storage_and_backup/object_storage/s3_website_https)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
