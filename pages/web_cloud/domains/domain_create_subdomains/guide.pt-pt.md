@@ -34,7 +34,7 @@ Um **nome de domínio** é composto por níveis. Estes níveis são geralmente s
 
 ## Requisitos
 
-- Dispor de, pelo menos, um [nome de domínio](https://www.ovhcloud.com/pt/domains/);
+- Dispor de, pelo menos, um [nome de domínio](/links/web/domains);
 - Ter uma zona DNS ativa para o seu domínio. Se necessário, consulte o guia "[Criar uma zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)";
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager);
 - Dispor de direitos suficientes sobre o conjunto dos serviços em causa. Encontre mais informações no nosso guia [Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts).
@@ -43,7 +43,7 @@ Um **nome de domínio** é composto por níveis. Estes níveis são geralmente s
 
 ### Definição de um subdomínio
 
-Um [nome de domínio](https://www.ovhcloud.com/pt/domains/) pode estar associado a vários tipos de serviços (e-mail, website, etc.).
+Um [nome de domínio](/links/web/domains) pode estar associado a vários tipos de serviços (e-mail, website, etc.).
 
 No entanto, um domínio só pode ser associado a um website de cada vez.
 
@@ -75,7 +75,7 @@ Para além do terceiro nível de domínio, considera-se que se trata igualmente 
 
 ### Criar um subdomínio
 
-Os [nomes de domínio](https://www.ovhcloud.com/pt/domains/) precisam todos de uma **zona DNS** para funcionarem. A zona DNS é composta por informações técnicas, chamadas *registos DNS*. É, de certa forma, como um centro de comando.
+Os [nomes de domínio](/links/web/domains) precisam todos de uma **zona DNS** para funcionarem. A zona DNS é composta por informações técnicas, chamadas *registos DNS*. É, de certa forma, como um centro de comando.
 
 Para mais informações sobre as zonas DNS, consulte o guia "[Criar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_create)" e "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 

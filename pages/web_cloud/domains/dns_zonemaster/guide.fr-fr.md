@@ -20,7 +20,7 @@ updated: 2024-03-08
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
+- Disposer d'un [nom de domaine](/links/web/domains)
 
 ## En pratique
 

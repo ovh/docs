@@ -20,7 +20,7 @@ Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} enregistré chez OVHcloud.
+- Disposer d'un [nom de domaine](/links/web/domains){.external} enregistré chez OVHcloud.
 - Disposer des [autorisations appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine depuis votre [espace client OVHcloud](/links/manager){.external}.
 - Disposer d’un hébergement chez Wix.
 - Avoir accès à la gestion de cet hébergement chez Wix.

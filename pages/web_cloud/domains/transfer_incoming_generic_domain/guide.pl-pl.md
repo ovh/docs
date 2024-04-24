@@ -90,7 +90,7 @@ Pamiętaj, że OVHcloud nie jest operatorem Twojej domeny w momencie rozpoczęci
 
 ### Etap 3: zlecić transfer domeny do OVHcloud <a name="step3"></a>
 
-Po odblokowaniu Twojej domeny i uzyskanym kodzie możesz zamówić transfer domeny do OVHcloud z [naszej strony](https://www.ovhcloud.com/pl/domains/){.external}. Wprowadź nazwę Twojej domeny, po czym postępuj zgodnie z kolejnymi instrukcjami.
+Po odblokowaniu Twojej domeny i uzyskanym kodzie możesz zamówić transfer domeny do OVHcloud z [naszej strony](/links/web/domains){.external}. Wprowadź nazwę Twojej domeny, po czym postępuj zgodnie z kolejnymi instrukcjami.
 
 ![domain](images/Domain_transfer_order.png){.thumbnail}
 

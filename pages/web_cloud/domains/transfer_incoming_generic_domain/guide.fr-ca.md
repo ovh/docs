@@ -86,7 +86,7 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 
 ### Étape 3 : demander un transfert de nom de domaine vers OVHcloud <a name="step3"></a>
 
-Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](https://www.ovhcloud.com/fr-ca/domains/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
+Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](/links/web/domains){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
 
 ![domain](images/Domain_transfer_order.png){.thumbnail}
 

@@ -24,7 +24,7 @@ updated: 2024-03-08
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
+- Disporre di un [dominio](/links/web/domains)
 
 ## Procedura
 

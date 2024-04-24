@@ -27,7 +27,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 
 ## Voraussetzungen
 
-- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](/links/web/domains).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens (Domainadministrator).
 - Die Registrierung des Domainnamens erfolgte vor mindestens 60 Tagen **und** er wurde in den letzten 60 Tagen weder transferiert noch übertragen (Inhaberwechsel).
 

@@ -90,7 +90,7 @@ Ti ricordiamo che, non essendo OVHcloud il Registrar del tuo dominio al momento 
 
 ### Step 3: richiedere il trasferimento di un dominio in OVHcloud <a name="step3"></a>
 
-Una volta sbloccato il dominio e ottenuto il codice, è possibile ordinarne il trasferimento in OVHcloud dal [nostro sito](https://www.ovhcloud.com/it/domains/). Inserisci il nome del tuo dominio e segui la procedura d’ordine.
+Una volta sbloccato il dominio e ottenuto il codice, è possibile ordinarne il trasferimento in OVHcloud dal [nostro sito](/links/web/domains). Inserisci il nome del tuo dominio e segui la procedura d’ordine.
 
 ![domain](images/Domain_transfer_order.png){.thumbnail
 

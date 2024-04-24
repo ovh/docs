@@ -16,7 +16,7 @@ O reencaminhamento de um domínio consiste em reencaminhá-lo para um novo desti
 
 ## Requisitos
 
-- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
+- Dispor de um [nome de domínio](/links/web/domains)
 - Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager){.external}.
 - Estar conectado ao seu alojamento web (para um reencaminhamento através de um ficheiro [.htaccess](#htaccess_rewrite).
 

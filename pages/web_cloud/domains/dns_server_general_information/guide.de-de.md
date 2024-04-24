@@ -46,7 +46,7 @@ DNS-Provider können auch drei oder mehr **DNS-Server** einsetzen, die alle dekl
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie verfügen über eine bei OVHcloud registrierten [Domainnamen](/links/web/domains).
 - Sie verfügen über die [entsprechenden Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts){.external} für die Verwaltung des Domainnamens über Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 

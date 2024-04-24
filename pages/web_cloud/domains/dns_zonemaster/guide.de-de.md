@@ -23,7 +23,7 @@ updated: 2024-03-08
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/)
+- Sie verfügen über einen [Domainnamen](/links/web/domains)
 
 ## In der praktischen Anwendung
 

@@ -90,7 +90,7 @@ Tenga en cuenta que OVHcloud no es el agente registrador del dominio al iniciar 
 
 ### 3. solicitar la transferencia del dominio a OVHcloud <a name="step3"></a>
 
-Una vez desbloqueado el dominio, y con el código obtenido, puede solicitar la transferencia a OVHcloud desde [nuestro sitio web](https://www.ovhcloud.com/es-es/domains/){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
+Una vez desbloqueado el dominio, y con el código obtenido, puede solicitar la transferencia a OVHcloud desde [nuestro sitio web](/links/web/domains){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
 
 ![domain](images/Domain_transfer_order.png){.thumbnail}
 

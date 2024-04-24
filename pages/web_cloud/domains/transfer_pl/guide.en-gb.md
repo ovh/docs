@@ -71,7 +71,7 @@ Please note that since OVHcloud is not your domain name’s registrar at the tim
 
 ### Step 3: Request a domain name transfer to OVHcloud <a name="step3"></a>
 
-Once you have unlocked your domain name and obtained your code, you can order the transfer to OVHcloud from [our website](https://www.ovhcloud.com/en-gb/domains/){.external}. Enter your domain name, then follow the order process.
+Once you have unlocked your domain name and obtained your code, you can order the transfer to OVHcloud from [our website](/links/web/domains){.external}. Enter your domain name, then follow the order process.
 
 When you are asked to provide your transfer code, enter it in the box next to your domain name. If you do not yet have the transfer code, you can tick the box labelled `Enter transfer code at a later stage`{.action}. However, we strongly advise ensuring that you have the code to hand before you continue. Remember that the transfer will not start until a valid code has been provided.
 

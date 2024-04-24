@@ -12,7 +12,7 @@ La redirection d'un nom de domaine consiste à rediriger celui-ci vers une nouve
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
+- Disposer d'un [nom de domaine](/links/web/domains)
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 - Être connecté à votre hébergement web (pour une redirection via un fichier [.htaccess](#htaccess_rewrite)).
 

@@ -35,7 +35,7 @@ Il processo di modifica del Registrar (*registrar*) per i domini di primo livell
 
 ## Prerequisiti
 
-- Disporre di un [dominio.uk](https://www.ovhcloud.com/it/domains/) registrato in OVHcloud
+- Disporre di un [dominio.uk](/links/web/domains) registrato in OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) e disporre dei diritti necessari per gestire il dominio (essere amministratore del dominio)
 - Il dominio deve essere sempre attivo, significa che non deve essere scaduto o essere bloccato da OVHcloud
 - Il dominio non deve essere oggetto di controversia presso il [Registry Nominet](https://www.nominet.uk/)

@@ -24,7 +24,7 @@ Tem um nome de domínio na OVHcloud e deseja ligá-lo a um alojamento Shopify. N
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
-- Ter um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} registado na OVHcloud.
+- Ter um [nome de domínio](/links/web/domains){.external} registado na OVHcloud.
 - Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager){.external}.
 - Ter um alojamento na Shopify.
 - Ter acesso à gestão deste alojamento na Shopify.

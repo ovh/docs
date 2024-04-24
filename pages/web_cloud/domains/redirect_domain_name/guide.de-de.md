@@ -16,7 +16,7 @@ Bei der Weiterleitung eines Domainnamens wird dieser auf ein neues Ziel umgeleit
 
 ## Voraussetzungen
 
-- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](/links/web/domains).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über die erforderlichen Informationen, um sich auf Ihrem Webhosting-Speicherplatz einzuloggen (optional, für Weiterleitungen über eine [.htaccess Datei](#htaccess_rewrite)).
 

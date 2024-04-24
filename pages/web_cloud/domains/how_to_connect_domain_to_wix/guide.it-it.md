@@ -20,7 +20,7 @@ Se il dominio è registrato in OVHcloud e vuoi connetterlo a un hosting Wix. Que
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} registrato in OVHcloud.
+- Disporre di un [dominio](/links/web/domains){.external} registrato in OVHcloud.
 - Disporre delle [autorizzazioni necessarie per gestire](/pages/account_and_service_management/account_information/managing_contacts) il dominio dallo [Spazio Cliente OVHcloud](/links/manager){.external}.
 - Disporre di un hosting in Wix.
 - Avere accesso alla gestione di questo hosting presso Wix.

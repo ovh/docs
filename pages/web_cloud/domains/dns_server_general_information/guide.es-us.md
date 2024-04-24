@@ -45,7 +45,7 @@ En ocasiones, algunos proveedores DNS ofrecen más de 2 **servidores DNS** para 
 
 ## Requisitos
 
-- Tener un [dominio](https://www.ovhcloud.com/es/domains/) registrado en OVHcloud.
+- Tener un [dominio](/links/web/domains) registrado en OVHcloud.
 - Disponer de permisos [adecuados para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el nombre de dominio desde el [área de cliente de OVHcloud](/links/manager){.external}.
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
 

@@ -24,7 +24,7 @@ updated: 2024-03-08
 
 ## Requisitos
 
-- Tener un [dominio](https://www.ovhcloud.com/es/domains/).
+- Tener un [dominio](/links/web/domains).
 
 ## Procedimiento
 

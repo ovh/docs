@@ -34,7 +34,7 @@ Internet składa się z serwerów i urządzeń, które współdziałają ze sob�
 
 ## Wymagania początkowe
 
-- Posiadanie co najmniej jednej [domeny](https://www.ovhcloud.com/pl/domains/);
+- Posiadanie co najmniej jednej [domeny](/links/web/domains);
 - Dysponowanie aktywną strefą DNS dla Twojej domeny. W razie potrzeby sprawdź przewodnik "[Utwórz strefę DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)";
 - Dostęp do [panelu klienta OVHcloud](/links/manager);
 - Wystarczające uprawnienia dotyczące wszystkich usług. Więcej informacji znajdziesz w naszym przewodniku [Zarządzanie kontaktami dla usług OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
@@ -43,7 +43,7 @@ Internet składa się z serwerów i urządzeń, które współdziałają ze sob�
 
 ### Definicja subdomeny
 
-[Domena](https://www.ovhcloud.com/pl/domains/) może być powiązana z kilkoma rodzajami usług (e-mail, strona internetowa, etc.).
+[Domena](/links/web/domains) może być powiązana z kilkoma rodzajami usług (e-mail, strona internetowa, etc.).
 
 Jednocześnie domena może być przypisana tylko do jednej strony WWW.
 
@@ -75,7 +75,7 @@ Poza trzecim poziomem domeny, jest on również uważany za **subdomenę**. Aby 
 
 ### Tworzenie subdomeny
 
-Wszystkie [domeny](https://www.ovhcloud.com/pl/domains/) potrzebują do działania **strefy DNS**. Strefa DNS zawiera informacje techniczne nazywane *rekordami DNS*. Jest, w pewnym sensie, centrum ruchu wskazówek.
+Wszystkie [domeny](/links/web/domains) potrzebują do działania **strefy DNS**. Strefa DNS zawiera informacje techniczne nazywane *rekordami DNS*. Jest, w pewnym sensie, centrum ruchu wskazówek.
 
 Więcej informacji o strefach DNS znajdziesz w przewodniku "[Tworzenie strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)" i "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 

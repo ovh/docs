@@ -33,7 +33,7 @@ Ein **Domainname** besteht aus Leveln. Diese Level sind in der Regel durch ein `
 
 ## Voraussetzungen
 
-- Sie besitzen mindestens eine [Domain](https://www.ovhcloud.com/de/domains/).
+- Sie besitzen mindestens eine [Domain](/links/web/domains).
 - Sie verfügen über eine aktive DNS-Zone für Ihre Domain. Bei Bedarf lesen Sie unsere Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“.
 - Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
 - Über ausreichende Rechte für alle betroffenen Dienste verfügen. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
@@ -42,7 +42,7 @@ Ein **Domainname** besteht aus Leveln. Diese Level sind in der Regel durch ein `
 
 ### Definition einer Subdomain
 
-Ein [Domainname](https://www.ovhcloud.com/de/domains/) kann mehreren Arten von Diensten zugeordnet werden (E-Mail, Website etc.).
+Ein [Domainname](/links/web/domains) kann mehreren Arten von Diensten zugeordnet werden (E-Mail, Website etc.).
 
 Ein Domainname kann jedoch immer nur einer Website zugewiesen werden.
 
@@ -74,7 +74,7 @@ Wenn Sie beispielsweise über die Domain *example.com* verfügen, können Sie fo
 
 ### Subdomain erstellen
 
-Alle [Domainnamen](https://www.ovhcloud.com/de/domains/) benötigen eine **DNS-Zone**. Die DNS-Zone ist die Konfigurationsdatei eines Domainnamens, die sich aus "DNS-Einträge" zusammensetzt. Das sind Datensätze, die dem Domainnamen verschiedene Dienste und Funktionen zuordnen.
+Alle [Domainnamen](/links/web/domains) benötigen eine **DNS-Zone**. Die DNS-Zone ist die Konfigurationsdatei eines Domainnamens, die sich aus "DNS-Einträge" zusammensetzt. Das sind Datensätze, die dem Domainnamen verschiedene Dienste und Funktionen zuordnen.
 
 Weitere Informationen zu den DNS-Zonen finden Sie in unserer Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“ und „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
 

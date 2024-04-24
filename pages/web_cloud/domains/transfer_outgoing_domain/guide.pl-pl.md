@@ -27,7 +27,7 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny zarejestrowanej](https://www.ovhcloud.com/pl/domains/) w OVHcloud
+- Posiadanie [domeny zarejestrowanej](/links/web/domains) w OVHcloud
 - Posiadanie uprawnień do złożenia wniosku o transfer domeny: właściciel i/lub administratorzy domeny powinni zostać poinformowani o wszczęciu takiej procedury. 
 - Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](/links/manager){.external}.
 - Rejestracja tej domeny trwa co najmniej 60 dni **i** nie została przeniesiona ani wymieniona (tj. zmiana właściciela) w ciągu ostatnich 60 dni

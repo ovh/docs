@@ -23,7 +23,7 @@ Sie haben bereits einen Domainnamenamen bei OVHcloud und möchten ihn mit einem 
 
 ## Voraussetzungen
 
-- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](/links/web/domains).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen [Berechtigungen zur Verwaltung](/pages/account_and_service_management/account_information/managing_contacts) des Domainnamens.
 - Sie verfügen über ein Hosting bei Shopify.
 - Sie haben Zugriff auf die Verwaltung dieses Hostings bei Shopify.

@@ -41,7 +41,7 @@ Sometimes, some DNS providers offer more than 2 **DNS servers** to declare with 
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en/domains/) registered with OVHcloud.
+- A [domain name](/links/web/domains) registered with OVHcloud.
 - The appropriate permissions [to manage](/pages/account_and_service_management/account_information/managing_contacts) the domain name from your [OVHcloud Control Panel](/links/manager){.external}.
 - Access to the [OVHcloud Control Panel](/links/manager){.external}.
 

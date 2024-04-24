@@ -27,7 +27,7 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 
 ## Requisitos
 
-- Ter um [domínio](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud
+- Ter um [domínio](/links/web/domains) registado na OVHcloud
 - Ter o direito de solicitar a transferência do nome de domínio: o proprietário e/ou os administradores devem ser informados do pedido de transferência.
 - Ter acesso à secção de gestão do domínio na Área de [Cliente OVHcloud](/links/manager){.external}.
 - O registo do nome de domínio em questão data de há pelo menos 60 dias **e** não foi transferido ou trocado (ou seja, a mudança de proprietário) durante os últimos 60 dias

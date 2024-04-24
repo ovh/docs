@@ -20,7 +20,7 @@ updated: 2024-03-08
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-ca/domains/)
+- A [domain name](/links/web/domains)
 
 ## Instructions
 

@@ -19,7 +19,7 @@ You have a domain name with OVHcloud and you want to connect it to a Wix hosting
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-sg/domains/) registered with OVHcloud
+- A [domain name](/links/web/domains) registered with OVHcloud
 - Access to the [OVHcloud Control Panel](/links/manager) with the [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
 - A Wix web hosting plan
 - Access to manage this hosting plan with Wix

@@ -28,7 +28,7 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 
 ## Prérequis
 
-- Disposer d'au moins un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
+- Disposer d'au moins un [nom de domaine](/links/web/domains).
 - Disposer d'une zone DNS active pour votre nom de domaine. Si besoin, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) ».
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer des droits suffisants sur l’ensemble des services concernés. Retrouvez plus d'informations sur notre guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
@@ -37,7 +37,7 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 
 ### Définition d'un sous-domaine
 
-Un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/) peut être associé à plusieurs types de services (e-mail, site web, etc.). Néanmoins, un nom de domaine ne peut être associé qu'à un seul site web à la fois.
+Un [nom de domaine](/links/web/domains) peut être associé à plusieurs types de services (e-mail, site web, etc.). Néanmoins, un nom de domaine ne peut être associé qu'à un seul site web à la fois.
 
 Certains utilisateurs ou organisations ont cependant besoin de segmenter leurs sites web ou leurs services e-mail tout en gardant le même nom de domaine.
 
@@ -67,7 +67,7 @@ Au delà du troisième niveau de domaine, on considère qu'il s'agit là égalem
 
 ### Créer un sous-domaine
 
-Les [noms de domaine](https://www.ovhcloud.com/fr-ca/domains/) ont tous besoin d'une **zone DNS** pour fonctionner. La zone DNS se compose d’informations techniques, appelées « enregistrements DNS ». Elle est, en quelque sorte, comme un centre d'aiguillage.
+Les [noms de domaine](/links/web/domains) ont tous besoin d'une **zone DNS** pour fonctionner. La zone DNS se compose d’informations techniques, appelées « enregistrements DNS ». Elle est, en quelque sorte, comme un centre d'aiguillage.
 
 Pour plus de détails sur les zones DNS, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) » et « [Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 

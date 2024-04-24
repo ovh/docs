@@ -24,7 +24,7 @@ updated: 2024-03-08
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Posiadanie [domeny](/links/web/domains)
 
 ## W praktyce
 

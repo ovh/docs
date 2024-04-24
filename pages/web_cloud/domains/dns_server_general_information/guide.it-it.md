@@ -45,7 +45,7 @@ A volte, alcuni provider DNS offrono più di 2 **server DNS** da dichiarare pres
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/) registrato in OVHcloud.
+- Disporre di un [dominio](/links/web/domains) registrato in OVHcloud.
 - Disporre delle autorizzazioni [appropriate per la gestione](/pages/account_and_service_management/account_information/managing_contacts) il dominio dal tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}.
 

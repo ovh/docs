@@ -45,7 +45,7 @@ Niektórzy dostawcy DNS proponują czasem więcej niż 2 **serwery DNS* do zadek
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/) zarejestrowanej w OVHcloud.
+- Posiadanie [domeny](/links/web/domains) zarejestrowanej w OVHcloud.
 - Posiadanie uprawnień [do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeny z poziomu [Panelu klienta OVHcloud](/links/manager){.external}.
 - Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
 

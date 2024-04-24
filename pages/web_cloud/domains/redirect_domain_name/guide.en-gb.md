@@ -12,7 +12,7 @@ Redirecting a domain name is to point it to a new target. Different types of red
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-gb/domains/) registered with OVHcloud
+- A [domain name](/links/web/domains) registered with OVHcloud
 - Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the domain name
 - The login credentials required to connect to your storage space via SSH (optional, for redirection via a [.htaccess](#htaccess_rewrite) file).
 

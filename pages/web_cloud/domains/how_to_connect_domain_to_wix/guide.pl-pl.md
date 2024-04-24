@@ -20,7 +20,7 @@ Posiadasz domenę w OVHcloud i chcesz ją połączyć z hostingiem Wix. W tym pr
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} zarejestrowanej w OVHcloud.
+- Posiadanie [domeny](/links/web/domains){.external} zarejestrowanej w OVHcloud.
 - Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w Panelu [klienta OVHcloud](/links/manager){.external}.
 - Posiadanie hostingu w Wix.
 - Dostęp do interfejsu zarządzania hostingiem w Wix.

@@ -23,7 +23,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-ca/domains/) registered with OVHcloud
+- A [domain name](/links/web/domains) registered with OVHcloud
 - Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the domain name (domain administrator)
 - The registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
 

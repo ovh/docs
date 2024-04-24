@@ -29,7 +29,7 @@ A **domain name** is made up of levels. These levels are usually separated by a 
 
 ## Requirements
 
-- You have at least one [domain name](https://www.ovhcloud.com/en-ie/domains/).
+- You have at least one [domain name](/links/web/domains).
 - You have an active DNS zone for your domain name. If you need further guidance, please refer to our guide on "[Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create)".
 - You have access to the [OVHcloud Control Panel](/links/manager).
 - You have sufficient rights to all of the services concerned. You can find more information in our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
@@ -38,7 +38,7 @@ A **domain name** is made up of levels. These levels are usually separated by a 
 
 ### Definition of a subdomain
 
-A [domain name](https://www.ovhcloud.com/en-ie/domains/) can be associated with several types of services (email, website, etc.).
+A [domain name](/links/web/domains) can be associated with several types of services (email, website, etc.).
 
 A domain name can only be associated with one website at a time.
 
@@ -70,7 +70,7 @@ Beyond the third level of domain, these are also considered **subdomains**. To u
 
 ### Create a subdomain
 
-[Domain names](https://www.ovhcloud.com/en-ie/domains/) all need a **DNS zone** to work which is a domain name’s configuration file. It consists of DNS **records** that map the domain name to various services and functions.
+[Domain names](/links/web/domains) all need a **DNS zone** to work which is a domain name’s configuration file. It consists of DNS **records** that map the domain name to various services and functions.
 
 For more details on DNS zones, please read our guides “[Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create)” and “[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)”.
 

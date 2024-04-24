@@ -24,7 +24,7 @@ Si tiene un dominio con OVHcloud y quiere conectarlo a un alojamiento Shopify, E
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
-- Tener un [dominio](https://www.ovhcloud.com/es/domains/){.external} registrado con OVHcloud.
+- Tener un [dominio](/links/web/domains){.external} registrado con OVHcloud.
 - Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](/links/manager){.external}.
 - Tener contratado un plan de hosting con Shopify.
 - Tener acceso a la gestión de este alojamiento web en Shopify.

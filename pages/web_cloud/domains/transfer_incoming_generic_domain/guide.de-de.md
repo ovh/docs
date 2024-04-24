@@ -89,7 +89,7 @@ Bitte beachten Sie, dass OVHcloud zum Zeitpunkt der Einleitung des Transfervorga
 
 ### Schritt 3: Domaintransfer zu OVHcloud anfordern <a name="step3"></a>
 
-Sobald Ihr Domainname freigegeben und der Code verfügbar ist, können Sie den Transfer zu OVHcloud beantragen. Dazu führen Sie einfach eine [Bestellung über unsere Website aus](https://www.ovhcloud.com/de/domains/){.external}. Geben Sie dort Ihren Domainnamen ein und folgen Sie den Bestellschritten.
+Sobald Ihr Domainname freigegeben und der Code verfügbar ist, können Sie den Transfer zu OVHcloud beantragen. Dazu führen Sie einfach eine [Bestellung über unsere Website aus](/links/web/domains){.external}. Geben Sie dort Ihren Domainnamen ein und folgen Sie den Bestellschritten.
 
 ![domain](images/Domain_transfer_order.png){.thumbnail}
 
