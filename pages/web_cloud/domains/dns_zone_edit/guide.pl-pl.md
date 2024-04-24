@@ -38,15 +38,15 @@ Strefa DNS domeny to plik konfiguracyjny składający się z **rekordów**. Umo�
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](/links//manager){.external}.
-- Dostęp do [Panelu klienta OVHcloud](/links//manager){.external}.
+- Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 - Używanie konfiguracji OVHcloud (serwerów DNS OVHcloud) dla danej domeny.
 
 > [!warning]
 >
 > - Jeśli Twoja domena nie używa serwerów DNS OVHcloud, przeprowadź zmianę w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 > 
-> - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa konfiguracji OVHcloud. W tym celu przejdź do [Panelu klienta OVHcloud](/links//manager){.external}, zakładka `Serwery DNS`{.action} odpowiedniej domeny.
+> - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa konfiguracji OVHcloud. W tym celu przejdź do [Panelu klienta OVHcloud](/links/manager){.external}, zakładka `Serwery DNS`{.action} odpowiedniej domeny.
 > 
 > W obu przypadkach należy zachować ostrożność wykonując zmiany na serwerach DNS. Poprzednia konfiguracja, która może zostać zastosowana do Twojej domeny, nie będzie już aktywna, jeśli nie skonfigurowałeś i spersonalizowałeś wcześniej nowej strefy DNS w OVHcloud.<br>
 > Możesz mieć tylko jedną strefę DNS aktywowaną dla każdej domeny.
@@ -60,7 +60,7 @@ Strefa DNS domeny to plik konfiguracyjny składający się z **rekordów**. Umo�
 >
 > W przeciwieństwie do nazwy domeny, nie ma tu pojęcia właściciela strefy DNS, lecz zarządzanie kontaktami w przypadku strefy DNS OVHcloud. Jeśli chcesz przełączyć zarządzanie swoją strefą DNS na inne konto OVHcloud, postępuj zgodnie z naszym przewodnikiem [Zarządzanie kontaktami swoich usług](/pages/account_and_service_management/account_information/managing_contacts).
 
-Zaloguj się do Panelu [klienta OVHcloud](/links//manager){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, a następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `Strefa DNS`{.action}.
+Zaloguj się do Panelu [klienta OVHcloud](/links/manager){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, a następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
 Pojawi się tabela wyszczególniająca rekord DNS przypisany do Twojej domeny w OVHCloud dla każdego wiersza. Możesz sortować zawartość tabeli według typu rekordu lub nazwy domeny. 
 
@@ -274,8 +274,8 @@ W związku z tym nie będziesz mógł utworzyć pola CNAME dla *subdomeny-mając
 
 [Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](/pages/web_cloud/domains/dns_dnssec){.external}.
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links//support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

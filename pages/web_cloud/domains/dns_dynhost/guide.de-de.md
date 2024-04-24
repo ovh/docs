@@ -16,7 +16,7 @@ Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei ei
 - Die E-Mail-Server (DNS-Einträge vom Typ *MX*), die E-Mails erhalten sollen, die an Adressen mit diesem Domainnamen versendet wurden. Wenn Sie die MX-Einträge Ihres Domainnamens konfigurieren, können Sie E-Mails über Ihre personalisierten E-Mail-Adressen empfangen.
 - Informationen zur Sicherheit/Authentifizierung von Diensten (Webhosting, Webserver, E-Mail-Server, etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC*, etc.).
 
-Für weitere Informationen zu DNS-Zonen und wie Sie diese im [OVHcloud Kundencenter](/links//manager) editieren, lesen Sie [unsere Dokumentation zu DNS](/pages/web_cloud/domains/dns_zone_edit).
+Für weitere Informationen zu DNS-Zonen und wie Sie diese im [OVHcloud Kundencenter](/links/manager) editieren, lesen Sie [unsere Dokumentation zu DNS](/pages/web_cloud/domains/dns_zone_edit).
 
 Das dynamische Aktualisieren eines DNS-Eintrags kann Unterbrechungen Ihrer Dienste verhindern, wenn Sie nicht über eine statische IP-Adresse verfügen.
 
@@ -26,7 +26,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 ## Voraussetzungen
 
-- Sie haben über Ihr [OVHcloud Kundencenter](/links//manager){.external} Zugriff auf die Verwaltung des Domainnamens.
+- Sie haben über Ihr [OVHcloud Kundencenter](/links/manager){.external} Zugriff auf die Verwaltung des Domainnamens.
 - Der Domainname verwendet OVHcloud DNS-Server als zuständige Namensserver.
 - Der DynHost-Eintrag, den Sie erstellen möchten, darf noch nicht als "A"-Eintrag in der DNS-Zone Ihres Domainnamens bei OVHcloud vorhanden sein.
 
@@ -34,7 +34,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 >
 > - Wenn Ihr Domainname nicht die DNS-Server von OVHcloud verwendet, wenden Sie sich an den Dienstanbieter, der die DNS-Konfiguration verwaltet.
 > 
-> - Wenn Ihre Domainname bei OVHcloud registriert ist, können Sie überprüfen, ob unsere Konfiguration verwendet wird. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links//manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DNS-Server`{.action}, um die aktuell verwendeten DNS-Server anzuzeigen. 
+> - Wenn Ihre Domainname bei OVHcloud registriert ist, können Sie überprüfen, ob unsere Konfiguration verwendet wird. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DNS-Server`{.action}, um die aktuell verwendeten DNS-Server anzuzeigen. 
 >
 > OVHcloud DNS-Server haben folgendes Namensformat: 
 >
@@ -48,7 +48,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 ### Schritt 1: DynHost-Benutzer erstellen <a name="step1"></a>
 
-Um einen DynHost-Benutzer zu erstellen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DynHost`{.action}.
+Um einen DynHost-Benutzer zu erstellen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DynHost`{.action}.
 
 ![dynhost](images/tab.png){.thumbnail}
 
@@ -95,7 +95,7 @@ Sobald der [Benutzer](#step1) und der [DynHost-Eintrag](#step2) erstellt wurden,
 
 > [!warning]
 >
-> Die Installation und Konfiguration von Geräten und Software muss nach Ihren eigenen Kenntnissen erfolgen. Nachfolgend finden Sie einige Informationen zur Vorgehensweise. Wir empfehlen Ihnen jedoch, einen [spezialisierten Dienstleister](/links//partner) zu kontaktieren, wenn Sie Schwierigkeiten haben. Wir werden Ihnen diesbezüglich keine Hilfe anbieten können. 
+> Die Installation und Konfiguration von Geräten und Software muss nach Ihren eigenen Kenntnissen erfolgen. Nachfolgend finden Sie einige Informationen zur Vorgehensweise. Wir empfehlen Ihnen jedoch, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, wenn Sie Schwierigkeiten haben. Wir werden Ihnen diesbezüglich keine Hilfe anbieten können. 
 > Weitere Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
 >
 
@@ -119,7 +119,7 @@ https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 
 Um zu überprüfen, ob die Ziel-IP aktualisiert wurde, gehen Sie in Ihrem Kundencenter zum Tab `DynHost`{.action}. Überprüfen Sie dort in der Spalte `Ziel`{.action} die angezeigte IP-Adresse.
 
-Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links//manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DynHost`{.action}. Überprüfen Sie die in der Spalte `Ziel`{.action} angezeigte IP-Adresse.
+Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DynHost`{.action}. Überprüfen Sie die in der Spalte `Ziel`{.action} angezeigte IP-Adresse.
 
 > [!warning]
 >
@@ -130,8 +130,8 @@ Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Loggen Sie sich hie
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links//partner).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links//support).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -17,7 +17,7 @@ Przekierowanie domeny polega na przekierowaniu jej na nową docelową stronę. I
 ## Wymagania początkowe
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
-- Dostęp do [Panelu klienta OVHcloud](/links//manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 - Połączenie z hostingiem (przekierowanie za pomocą pliku [.htaccess](#htaccess_rewrite))
 
 ## W praktyce
@@ -33,7 +33,7 @@ Funkcja ta pozwala na przekierowanie domeny/subdomeny na:
 
 Działania te mogą być przeprowadzane na kilka sposobów:
 
-- **Z poziomu[Panelu klienta OVHcloud](/links//manager)**, gdzie asystent konfiguracji pozwala na ustawienie przekierowania.
+- **Z poziomu[Panelu klienta OVHcloud](/links/manager)**, gdzie asystent konfiguracji pozwala na ustawienie przekierowania.
 - **Za pomocą metody wymagającej programowania**. Musisz samodzielnie utworzyć przekierowanie w pliku (zazwyczaj [.htaccess](#htaccess_rewrite)).
 
 > [!warning]
@@ -41,12 +41,12 @@ Działania te mogą być przeprowadzane na kilka sposobów:
 > Uruchomienie przekierowania może mieć wpływ na pozycjonowanie Twojej strony WWW. 
 > Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) w celu pozycjonowania strony, jeśli to konieczne.
 >
-> Uwaga: przekierowanie utworzone w [Panelu klienta OVHcloud](/links//manager) nie pozwala na przekierowanie adresu URL na `https://` na inną domenę lub adres URL. 
+> Uwaga: przekierowanie utworzone w [Panelu klienta OVHcloud](/links/manager) nie pozwala na przekierowanie adresu URL na `https://` na inną domenę lub adres URL. 
 > Aby utworzyć ten rodzaj przekierowania, należy obowiązkowo przejść przez [wpisanie adresu URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite), na przykład przez plik ".htaccess".
 
 ### Przekieruj domenę w Panelu klienta
 
-Zaloguj się do [Panelu klienta OVHcloud](/links//manager){.external}, przejdź do sekcji `Web Cloud`{.action}, wybierz domenę, którą chcesz przekierować do sekcji `Domeny`{.action}, następnie kliknij zakładkę `Przekierowanie`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}, przejdź do sekcji `Web Cloud`{.action}, wybierz domenę, którą chcesz przekierować do sekcji `Domeny`{.action}, następnie kliknij zakładkę `Przekierowanie`{.action}.
 
 Tabela wyświetla aktywne przekierowania dla Twojej domeny. Możesz zarządzać istniejącymi przekierowaniami za pomocą przycisku `...`{.action} znajduje się po prawej stronie każdej linii.
 
@@ -54,7 +54,7 @@ Kliknij przycisk `Dodaj przekierowanie`{.action}.
 
 ![Prezentacja przekierowania menu](images/add-a-redirection.png){.thumbnail}
 
-Trzy opcje przekierowania są dostępne w [Panelu klienta OVHcloud](/links//manager). Każda z nich składa się z **5 kolejnych etapów**. 
+Trzy opcje przekierowania są dostępne w [Panelu klienta OVHcloud](/links/manager). Każda z nich składa się z **5 kolejnych etapów**. 
 
 > W zakładce `Przekierowanie`{.action} znajduje się czwarta opcja umożliwiająca szybkie przekierowanie domeny na rekordy DNS A, AAAA i CNAME.<br>
 > Ponieważ w tym przypadku nie chodzi o "przekierowanie", w tym przewodniku nie zostanie szczegółowo opisany ten wariant.
@@ -287,7 +287,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji tę część przewodnika, aby jak najlepiej wesprzeć Cię w bieżących zadaniach. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links//partner). Niestety firma OVHcloud nie będzie w stanie udzielić wsparcia w zakresie opisanych poniżej udokumentowanych etapów. Więcej informacji znajdziesz w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy do Twojej dyspozycji tę część przewodnika, aby jak najlepiej wesprzeć Cię w bieżących zadaniach. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety firma OVHcloud nie będzie w stanie udzielić wsparcia w zakresie opisanych poniżej udokumentowanych etapów. Więcej informacji znajdziesz w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 Pliki ".htaccess" to pliki konfiguracyjne, w których można określić komendy. Podczas wykonywania kodu Twojej strony WWW na serwerze WWW (Apache) polecenia zostaną zinterpretowane i tym samym wykonane.<br>
@@ -394,8 +394,8 @@ Ta zmienna może być używana podczas tymczasowego przenoszenia plików na inn�
 
 [Jak edytować strefę DNS?](/pages/web_cloud/domains/dns_zone_edit)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links//support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

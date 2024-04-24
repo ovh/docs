@@ -18,7 +18,7 @@ Puoi, ad esempio, precisare:
 - I server di posta (record DNS di tipo *MX*) verso cui il tuo dominio deve reindirizzare le email che riceve. Per consultare i tuoi indirizzi email personalizzati con il tuo dominio.
 - Informazioni relative alla sicurezza/autenticazione dei servizi associati (hosting Web, server Web, server di posta, ecc...) al tuo dominio (record DNS di tipo *SPF*, *DKIM*, *DMARC*, ecc...).
 
-Se necessario, consulta [la nostra documentazione sui record DNS e sulla modifica di una zona DNS](/pages/web_cloud/domains/dns_zone_edit) dal tuo [Spazio Cliente OVHcloud](/links//manager).
+Se necessario, consulta [la nostra documentazione sui record DNS e sulla modifica di una zona DNS](/pages/web_cloud/domains/dns_zone_edit) dal tuo [Spazio Cliente OVHcloud](/links/manager).
 
 L'aggiornamento "dinamico" di un record DNS può evitare un'interruzione prolungata di uno dei tuoi servizi se non disponi di un indirizzo IP detto "fisso" (che non cambia).
 
@@ -28,7 +28,7 @@ Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali 
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links//manager){.external}
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links/manager){.external}
 - Utilizzare i server DNS di OVHcloud per la configurazione del dominio in questione
 - Il DynHost da creare non deve essere già presente nella zona DNS OVHcloud del dominio come record di tipo A
 
@@ -36,7 +36,7 @@ Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali 
 >
 > - Se il dominio non utilizza i server DNS di OVHcloud, contatta il provider che ne gestisce la configurazione per conoscere la procedura da seguire al suo livello.
 > 
-> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente OVHcloud](/links//manager){.external} e cliccando sulla sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `Server DNS`{.action} per visualizzare i server DNS utilizzati dal tuo dominio. 
+> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente OVHcloud](/links/manager){.external} e cliccando sulla sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `Server DNS`{.action} per visualizzare i server DNS utilizzati dal tuo dominio. 
 >
 > Per sapere se utilizzi o meno i server DNS di OVHcloud, questi ultimi hanno la forma seguente: 
 >
@@ -50,7 +50,7 @@ Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali 
 
 ### Step 1: crea un utente DynHost <a name="step1"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](/links//manager){.external} e seleziona la sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `DynHost`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona la sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `DynHost`{.action}.
 
 ![dynhost](images/tab.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Una volta creato l'[utente](#step1) e l'[record DynHost](#step2), è necessario 
 
 > [!warning]
 >
-> L'installazione e la configurazione del software/client devono essere realizzati con le proprie conoscenze. Di seguito ti forniamo alcune informazioni su come procedere. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links//partner). OVH non sarà infatti in grado di fornirti assistenza. 
+> L'installazione e la configurazione del software/client devono essere realizzati con le proprie conoscenze. Di seguito ti forniamo alcune informazioni su come procedere. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVH non sarà infatti in grado di fornirti assistenza. 
 > Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
@@ -119,7 +119,7 @@ https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|Il sottodominio interessato dalla modifica|
 |$IP|Il nuovo indirizzo IPv4 di destinazione|
 
-Verifica che l'indirizzo IP di destinazione sia stato aggiornato correttamente. accedendo allo [Spazio Cliente OVHcloud](/links//manager){.external} e cliccando sulla sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `DynHost`{.action}. Nella colonna `Destinazione`{.action}, verifica l'indirizzo IP indicato.
+Verifica che l'indirizzo IP di destinazione sia stato aggiornato correttamente. accedendo allo [Spazio Cliente OVHcloud](/links/manager){.external} e cliccando sulla sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `DynHost`{.action}. Nella colonna `Destinazione`{.action}, verifica l'indirizzo IP indicato.
 
 > [!warning]
 >
@@ -128,8 +128,8 @@ Verifica che l'indirizzo IP di destinazione sia stato aggiornato correttamente. 
 
 ## Per saperne di più <a name="go-further"></a>
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links//partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links//support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

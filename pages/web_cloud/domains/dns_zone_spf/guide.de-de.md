@@ -38,21 +38,21 @@ Stellen Sie daher sicher, dass Sie die Absenderquellen, die Sie für den Versand
 
 ## Voraussetzungen
 
-- Sie haben über das [OVHcloud Kundencenter](/links//manager)Zugriff auf die Verwaltung der betreffenden Domain.
+- Sie haben über das [OVHcloud Kundencenter](/links/manager)Zugriff auf die Verwaltung der betreffenden Domain.
 - Die ausgewählte Domain muss die OVHcloud-Konfiguration (d. h. die OVHcloud DNS-Server) verwenden.
 
 > [!warning]
 >
 > Wenn Ihre Domain keine OVHcloud DNS-Server verwendet, ändern Sie den SPF-Eintrag über das Interface des Dienstleisters, der das DNS Ihrer Domain verwaltet.
 >
-> Wenn Ihre Domain bei OVHcloud registriert ist, können Sie in Ihrem [OVHcloud Kundencenter](/links//manager) überprüfen, ob sie die OVHcloud-Konfiguration verwendet. Klicken Sie dazu auf den Tab `DNS-Server`{.action} Ihrer Domain.
+> Wenn Ihre Domain bei OVHcloud registriert ist, können Sie in Ihrem [OVHcloud Kundencenter](/links/manager) überprüfen, ob sie die OVHcloud-Konfiguration verwendet. Klicken Sie dazu auf den Tab `DNS-Server`{.action} Ihrer Domain.
 >
 
 ## In der praktischen Anwendung
 
 #### Überprüfung Ihrer aktuellen SPF-Konfiguration
 
-Wenn Ihre Domain OVHcloud DNS-Server verwendet, können Sie überprüfen, ob ein SPF-Eintrag bereits dafür konfiguriert ist. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Domainnamen`{.action} Ihren Domainnamen aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
+Wenn Ihre Domain OVHcloud DNS-Server verwendet, können Sie überprüfen, ob ein SPF-Eintrag bereits dafür konfiguriert ist. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Domainnamen`{.action} Ihren Domainnamen aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
 
 Die Tabelle auf dieser Seite zeigt die DNS-Zone Ihrer Domain bei OVHcloud an. Jede Zeile der Tabelle repräsentiert einen DNS-Eintrag.
 
@@ -78,7 +78,7 @@ Um die Zeile mit dem OVHcloud SPF-Eintrag zu finden, kann auf die Tabelle ein An
 
 ### Konfiguration eines neuen SPF Eintrags
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Domainnamen`{.action} Ihren Domainnamen aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Domainnamen`{.action} Ihren Domainnamen aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
 
 Um einen SPF-Eintrag hinzuzufügen klicken Sie rechts im Menü auf `Eintrag hinzufügen`{.action}.
 
@@ -166,7 +166,7 @@ Klicken Sie auf `Weiter`{.action} und bestätigen Sie, dass der von Ihnen eingeg
 
 ### Bearbeiten eines SPF-Eintrags <a name="modifyspf"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Domainnamen`{.action} Ihren Domainnamen aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Domainnamen`{.action} Ihren Domainnamen aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
 
 Die Tabelle auf dieser Seite zeigt die DNS-Zone Ihrer Domain bei OVHcloud an. Jede Zeile der Tabelle repräsentiert einen DNS-Eintrag. Lokalisieren Sie den TXT- oder SPF-Eintrag in dieser Tabelle und klicken Sie rechts auf `...`{.action}, um den Eintrag zu bearbeiten.
 

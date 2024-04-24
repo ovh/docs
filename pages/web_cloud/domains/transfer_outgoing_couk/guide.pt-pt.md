@@ -36,7 +36,7 @@ O processo de mudança de agente de registo (*registar*) para os domínios de pr
 ## Requisitos
 
 - Ter um [domínio .uk](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links//manager) e ter os direitos necessários para gerir o domínio (ser administrador do domínio)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager) e ter os direitos necessários para gerir o domínio (ser administrador do domínio)
 - O domínio deve estar sempre ativo, isto é, não deve ter expirado ou ser bloqueado pela OVHcloud
 - O nome de domínio não deve ser objeto de um litígio em curso no [Registo Nominet](https://www.nominet.uk/)
 
@@ -55,7 +55,7 @@ Se ainda não conhece a TAG necessária, pode solicitá-la ao novo prestador de 
 
 ### Etapa 1: verificar as informações necessárias
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links//manager) e selecione a `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e selecione o domínio correspondente.
+Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e selecione a `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e selecione o domínio correspondente.
 
 Lembre-se de que deve estar ligado como contacto administrador.
 

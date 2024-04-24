@@ -38,21 +38,21 @@ Por isso, certifique-se de que as fontes de envio utilizadas para enviar e-mails
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do domínio na Área de [Cliente OVHcloud](/links//manager){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](/links//manager){.external}.
+- Ter acesso à secção de gestão do domínio na Área de [Cliente OVHcloud](/links/manager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 - O domínio em questão deve utilizar a configuração da OVHcloud (ou seja, os servidores DNS da OVHcloud).
 
 > [!warning]
 >
 > Se o domínio não usar os servidores DNS da OVHcloud, a alteração SPF deve ser realizada através da interface do agente responsável pela configuração do domínio.
 >
-> Se o domínio estiver registado na OVHcloud, verifique se este último utiliza a nossa configuração OVHcloud na sua Área de [Cliente](/links//manager){.external} a partir do separador `Servidores DNS`{.action}, depois de posicionado no domínio em questão.
+> Se o domínio estiver registado na OVHcloud, verifique se este último utiliza a nossa configuração OVHcloud na sua Área de [Cliente](/links/manager){.external} a partir do separador `Servidores DNS`{.action}, depois de posicionado no domínio em questão.
 
 ## Instruções
 
 ### Verificar a configuração SPF atual
 
-Se o seu domínio estiver a usar a configuração da OVHcloud, verifique se o registo SPF já está configurado. Para isso, aceda à Área de [Cliente OVHcloud](/links//manager){.external}. Na secção `Domínios`{.action}, selecione o domínio em questão. Clique no separador `Zona DNS`{.action}.
+Se o seu domínio estiver a usar a configuração da OVHcloud, verifique se o registo SPF já está configurado. Para isso, aceda à Área de [Cliente OVHcloud](/links/manager){.external}. Na secção `Domínios`{.action}, selecione o domínio em questão. Clique no separador `Zona DNS`{.action}.
 
 Irá aparecer uma tabela Este último apresenta a zona DNS do seu domínio na OVHcloud. É constituída por vários registos, todos simbolizados por uma linha da tabela.
 
@@ -76,7 +76,7 @@ Na tabela, para consultar a linha correspondente ao SPF OVHcloud, pode utilizar 
 
 ### Configurar o registo SPF
 
-Para adicionar um registo SPF na configuração da OVHcloud do seu domínio, aceda à Área de [Cliente OVHcloud](/links//manager){.external}. Selecione `Domínios`{.action}, clique no domínio pretendido e aceda ao separador `Zona DNS`{.action}.
+Para adicionar um registo SPF na configuração da OVHcloud do seu domínio, aceda à Área de [Cliente OVHcloud](/links/manager){.external}. Selecione `Domínios`{.action}, clique no domínio pretendido e aceda ao separador `Zona DNS`{.action}.
 
 Para adicionar um registo SPF, clique em `Adicionar uma entrada`{.action}.
 
@@ -165,7 +165,7 @@ Para terminar a ação, clique em `Seguinte`{.action}. Certifique-se que as info
 
 ### Modificar um registo SPF
 
-Para alterar o registo SPF na configuração OVHcloud do seu domínio, aceda à Área de [Cliente OVHcloud](/links//manager){.external}. Selecione `Domínios`{.action}, clique no domínio pretendido e aceda ao separador `Zona DNS`{.action}.
+Para alterar o registo SPF na configuração OVHcloud do seu domínio, aceda à Área de [Cliente OVHcloud](/links/manager){.external}. Selecione `Domínios`{.action}, clique no domínio pretendido e aceda ao separador `Zona DNS`{.action}.
 
 A tabela apresenta a configuração da OVHcloud do seu domínio. Cada linha corresponde a um registo DNS. Consulte neste quadro o seu registo TXT ou SPF e clique no botão `...`{.action} para editar a entrada.
 

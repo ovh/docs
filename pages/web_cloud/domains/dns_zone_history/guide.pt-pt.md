@@ -18,7 +18,7 @@ Poderá, por exemplo, especificar:
 - Os servidores de e-mail (registos DNS do tipo *MX*) para os quais o seu domínio deve reencaminhar os e-mails que recebe. Isto permite-lhe consultá-los no(s) seu(s) endereço(s) de e-mail(s) personalizado(s) com o seu nome de domínio.
 - Informações relacionadas com a segurança / autenticação dos seus serviços (alojamento web, servidor web, servidor de e-mail, etc.) associados ao seu nome de domínio (registos DNS do tipo *SPF*, *DKIM*, *DMARC*, etc.).
 
-Não hesite em consultar a nossa documentação sobre [os registos DNS e a edição de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit) a partir da sua [Área de Cliente OVHcloud](/links//manager) se deseja saber mais sobre o assumpto.
+Não hesite em consultar a nossa documentação sobre [os registos DNS e a edição de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit) a partir da sua [Área de Cliente OVHcloud](/links/manager) se deseja saber mais sobre o assumpto.
 Por várias razões, pode ser obrigado a aplicar uma antiga configuração DNS ao seu domínio.
 
 Agora, a gestão dos DNS é facilitada graças ao histórico das suas zonas DNS.
@@ -27,13 +27,13 @@ Agora, a gestão dos DNS é facilitada graças ao histórico das suas zonas DNS.
 
 ## Requisitos
 
-- Dispor de uma zona DNS para o seu domínio na [Área de Cliente OVHcloud](/links//manager)
-- Ter acesso à [Área de Cliente OVHcloud](/links//manager)
+- Dispor de uma zona DNS para o seu domínio na [Área de Cliente OVHcloud](/links/manager)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Ter acesso à gestão do nome de domínio em questão
 
 ## Instruções
 
-Para aceder a esta funcionalidade, aceda à [Área de Cliente OVHcloud](/links//manager) e aceda à secção `Web Cloud`{.action} ao separador `Nomes de domínio`{.action} e selecione o domínio associado à zona DNS que pretende utilizar.
+Para aceder a esta funcionalidade, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action} ao separador `Nomes de domínio`{.action} e selecione o domínio associado à zona DNS que pretende utilizar.
 
 Na página que se abrir, se ainda não tiver sido reencaminhado para este separador, clique no separador `Zona DNS`{.action}.
 
@@ -111,8 +111,8 @@ Graças a este guia, pode agora comparar duas zonas DNS, mas também visualizar,
 
 [Criar uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links//partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links//support).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

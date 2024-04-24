@@ -18,12 +18,12 @@ El registro **D**omain-based **M**essage **A**uthentication, **R**eporting, and 
 >
 > OVHcloud ofrece servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links//partner). Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [«Más información»](#go-further) de este tutorial.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [«Más información»](#go-further) de este tutorial.
 >
 
 ## Requisitos
 
-- Tener acceso a la gestión del dominio (asociado a la solución de correo) desde el [área de cliente de OVHcloud](/links//manager).
+- Tener acceso a la gestión del dominio (asociado a la solución de correo) desde el [área de cliente de OVHcloud](/links/manager).
 - Uno de los mecanismos de autenticación, [SPF](/pages/web_cloud/domains/dns_zone_spf) y/o [DKIM](/pages/web_cloud/domains/dns_zone_dkim), debe configurarse en la zona DNS del dominio de la solución de correo.
 
 ## Procedimiento
@@ -58,7 +58,7 @@ Existen dos formas de configurar el DMARC en la zona DNS de OVHcloud:
 
 #### Registro DMARC <a name="dmarc-record"></a>
 
-Puede añadir el registro DMARC a su zona DNS desde el área de cliente de OVHcloud. Para ello, conéctese al [área de cliente de OVHcloud](/links//manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, seleccione el dominio en la sección `Nombres de dominio`{.action} y abra la pestaña `Zona DNS`{.action} para acceder a su zona DNS.
+Puede añadir el registro DMARC a su zona DNS desde el área de cliente de OVHcloud. Para ello, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, seleccione el dominio en la sección `Nombres de dominio`{.action} y abra la pestaña `Zona DNS`{.action} para acceder a su zona DNS.
 
 Una vez que haya visualizado la zona DNS, haga clic en el botón `Añadir un registro`{.action} y seleccione «Campos de correo» `DMARC`{.action}.
 
@@ -101,7 +101,7 @@ A continuación ofrecemos una descripción completa de las etiquetas utilizadas 
 
 #### Registro TXT <a name="txt-record"></a>
 
-Puede añadir el registro TXT a su zona DNS desde el [área de cliente de OVHcloud](/links//manager) y accediendo a la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Puede añadir el registro TXT a su zona DNS desde el [área de cliente de OVHcloud](/links/manager) y accediendo a la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
 Una vez que haya visualizado la zona DNS, haga clic en el botón `Añadir un registro`{.action} y seleccione «Campos extendidos» `TXT`{.action}.
 
@@ -179,8 +179,8 @@ Obtenemos el siguiente resultado:
 
 ## Más información <a name="go-further"></a>
 
-Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links//partner).
+Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
 
-Si necesita ayuda sobre el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras diferentes [ofertas de soporte](/links//support).
+Si necesita ayuda sobre el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras diferentes [ofertas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

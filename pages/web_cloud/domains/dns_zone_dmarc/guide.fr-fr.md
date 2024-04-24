@@ -14,12 +14,12 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 >
 > OVHcloud propose des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links//partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine (attaché à votre solution e-mail) depuis l'[espace client OVHcloud](/links//manager).
+- Disposer d'un accès à la gestion du nom de domaine (attaché à votre solution e-mail) depuis l'[espace client OVHcloud](/links/manager).
 - Un des mécanismes d'authentification, [SPF](/pages/web_cloud/domains/dns_zone_spf) et/ou [DKIM](/pages/web_cloud/domains/dns_zone_dkim) doit être configuré dans la zone DNS du nom de domaine de l'offre e-mail.
 
 ## En pratique
@@ -54,7 +54,7 @@ Il y a deux façons de configurer le DMARC dans votre zone DNS OVHcloud :
 
 #### Enregistrement DMARC <a name="dmarc-record"></a>
 
-Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'espace client OVHcloud. Pour cela, connectez-vous à votre [espace client OVHcloud](/links//manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, sélectionnez, dans la section `Noms de domaine`{.action}, le nom de domaine concerné puis cliquez sur l'onglet `Zone DNS`{.action} pour accéder à votre zone DNS.
+Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'espace client OVHcloud. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, sélectionnez, dans la section `Noms de domaine`{.action}, le nom de domaine concerné puis cliquez sur l'onglet `Zone DNS`{.action} pour accéder à votre zone DNS.
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs mails » `DMARC`{.action}.
 
@@ -97,7 +97,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 
 #### Enregistrement TXT <a name="txt-record"></a>
 
-Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace client OVHcloud](/links//manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs étendus » `TXT`{.action}.
 
@@ -175,8 +175,8 @@ Nous obtenons le résultat suivant :
 
 ## Aller plus loin <a name="go-further"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links//partner).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links//support).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

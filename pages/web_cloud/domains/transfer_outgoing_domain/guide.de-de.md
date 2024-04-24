@@ -28,7 +28,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 ## Voraussetzungen
 
 - Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links//manager) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens (Domainadministrator).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens (Domainadministrator).
 - Die Registrierung des Domainnamens erfolgte vor mindestens 60 Tagen **und** er wurde in den letzten 60 Tagen weder transferiert noch übertragen (Inhaberwechsel).
 
 > [!primary]
@@ -54,7 +54,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 
 ### Schritt 1: Transfer-Schutz der Domain aufheben
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager) ein und gehen Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie die betreffende Domain aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie die betreffende Domain aus.
 
 Im Tab `Allgemeine Informationen`{.action} finden Sie den Regler `Transfer-Schutz`{.action} unter **Sicherheit** mit der Standardeinstellung `Aktiviert`{.action}.
 
@@ -70,9 +70,9 @@ Klicken Sie auf den Slider-Button und bestätigen Sie im Popup-Fenster, dass Sie
 >
 > Wenn Sie diese Meldung erhalten: "**An error occurred when requesting to disable the domain protection (User not granted for this request)**", hat Ihr Kunden-Account nicht die notwendigen Rechte, um den Domainnamen freizugeben. 
 >
-> Wenn Sie diese Meldung erhalten: "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**" bedeutet das, der Transfer-Code Ihres Domainnamens kann nicht über Ihr [OVHcloud Kundencenter](/links//manager) abgerufen werden.  
+> Wenn Sie diese Meldung erhalten: "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**" bedeutet das, der Transfer-Code Ihres Domainnamens kann nicht über Ihr [OVHcloud Kundencenter](/links/manager) abgerufen werden.  
 > 
-> Überprüfen Sie in beiden Fällen anhand unserer Anleitung zur [Verwaltung der Kontakte](/pages/account_and_service_management/account_information/managing_contacts), dass Sie der **Administrator**-Kontakt des Domainnamens sind, und überprüfen Sie, ob die Domainendung eine Entriegelung über das [OVHcloud Kundencenter](/links//manager) erlaubt.
+> Überprüfen Sie in beiden Fällen anhand unserer Anleitung zur [Verwaltung der Kontakte](/pages/account_and_service_management/account_information/managing_contacts), dass Sie der **Administrator**-Kontakt des Domainnamens sind, und überprüfen Sie, ob die Domainendung eine Entriegelung über das [OVHcloud Kundencenter](/links/manager) erlaubt.
 > 
 > Bestimmte Transfer-Codes werden direkt seitens der Registry der entsprechenden Domainendung verwaltet. Die Registry ist die Organisation, die eine oder mehrere TLDs und damit alle Domainnamen mit dieser Endung verwaltet. Zum Beispiel verwaltet die **AFNIC** alle Domainnamen mit der Endung *.fr*. In diesem Fall kontaktieren Sie die zuständige *Registry*, um Ihren Transfer-Code zu erhalten.
 >
@@ -118,8 +118,8 @@ Weitere Informationen hierzu erhalten Sie bei Ihren neuen Registrar.
 
 [Transfer einer .co.uk Domain](/pages/web_cloud/domains/transfer_outgoing_couk)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links//partner).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links//support).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

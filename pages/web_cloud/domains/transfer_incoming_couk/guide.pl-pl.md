@@ -78,7 +78,7 @@ Po zmianie APR właściciel domeny po kilku minutach otrzyma e-mail z kodem auto
 
 Po uzyskaniu kodu autoryzacyjnego możesz wyszukać i rozpocząć transfer domeny na [stronę OVHcloud](https://www.ovhcloud.com/pl/). Zamówienie jest podobne do innych domen globalnych.
 
-Twoja domena zostanie wyświetlona w [Panelu klienta OVHcloud](/links//manager) w ciągu kilku godzin.
+Twoja domena zostanie wyświetlona w [Panelu klienta OVHcloud](/links/manager) w ciągu kilku godzin.
 
 ### Przydatne informacje
 

@@ -23,7 +23,7 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links//manager){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 - Posiadanie domeny zarejestrowanej w OVHcloud dla której nie trwa żadna operacja (zmiana właściciela, transfer, utworzenie). Jeśli operacja została ostatnio zakończona w ramach Twojej domeny, przed wykonaniem nowej operacji musi upłynąć co najmniej 60 dni kalendarzowych.
 - Posiadanie statusu [kontaktu administracyjnego](/pages/account_and_service_management/account_information/managing_contacts) danej domeny.
 - Zgoda aktualnego właściciela domeny na zmianę właściciela.
@@ -45,12 +45,12 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 >
 > - strona internetowa rejestru **TLD**;
 > - Lista [TLD dostępnych na OVHcloud](https://www.ovhcloud.com/pl/domains/tld/);
-> - aktualizacje statusu domeny. Aby to sprawdzić, zaloguj się do [Panelu klienta OVHcloud](/links//manager), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, a następnie `Operacje w toku`{.action}.
+> - aktualizacje statusu domeny. Aby to sprawdzić, zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, a następnie `Operacje w toku`{.action}.
 >
 
 ### Etap 1: wybierz domenę
 
-Zaloguj się do [Panelu klienta OVHcloud](/links//manager) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, wybierz domenę globalną (gTLD), dla której chcesz zmienić właściciela.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, wybierz domenę globalną (gTLD), dla której chcesz zmienić właściciela.
 
 ### Etap 2: uruchomienie procedury zmiany właściciela
 
@@ -91,7 +91,7 @@ Jeśli adres e-mail nie został zmieniony w związku ze zmianą właściciela, r
 
 ### Aktualizacja danych właściciela <a name="updateownerinformation"></a>
 
-Jeśli musisz zaktualizować niektóre informacje uboczne, takie jak numer telefonu, adres itp., nie musisz wszczynać postępowania handlowego. Informacje te mogą zostać zmienione bezpośrednio w [Panelu klienta OVHcloud](/links//manager).
+Jeśli musisz zaktualizować niektóre informacje uboczne, takie jak numer telefonu, adres itp., nie musisz wszczynać postępowania handlowego. Informacje te mogą zostać zmienione bezpośrednio w [Panelu klienta OVHcloud](/links/manager).
 
 W sekcji **Abonament** w zakładce `Informacje ogólne`{.action} kliknij `...`{.action} przed **kontaktami**, a następnie kliknij `Aktualizuj dane właściciela`{.action}.
 
@@ -103,8 +103,8 @@ W przypadku tej operacji nie musisz potwierdzać modyfikacji za pomocą e-maila.
 
 [Zarządzanie kontaktami swoich usług](/pages/account_and_service_management/account_information/managing_contacts)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links//support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

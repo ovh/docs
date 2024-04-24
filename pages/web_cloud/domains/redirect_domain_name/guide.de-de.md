@@ -17,7 +17,7 @@ Bei der Weiterleitung eines Domainnamens wird dieser auf ein neues Ziel umgeleit
 ## Voraussetzungen
 
 - Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links//manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über die erforderlichen Informationen, um sich auf Ihrem Webhosting-Speicherplatz einzuloggen (optional, für Weiterleitungen über eine [.htaccess Datei](#htaccess_rewrite)).
 
 ## In der praktischen Anwendung
@@ -33,21 +33,21 @@ Mit dieser Funktion können Sie eine Domain/Subdomain umleiten:
 
 Diese Weiterleitungen können auf mehrere Arten erreicht werden:
 
-- **Über das [OVHcloud Kundencenter](/links//manager)**, in dem ein Konfigurationsassistent Ihre Weiterleitung einrichten kann.
+- **Über das [OVHcloud Kundencenter](/links/manager)**, in dem ein Konfigurationsassistent Ihre Weiterleitung einrichten kann.
 - **Über eine codegestüzte Methode**, indem Sie die Weiterleitung manuell in einer Datei hinterlegen (in der Regel [.htaccess](#htaccess_rewrite)).
 
 > [!warning]
 >
 > Die Einrichtung einer Weiterleitung kann Auswirkungen auf das Suchmaschinen-Ranking haben. 
-> Achten Sie auf die Änderungen, die Sie vornehmen, oder kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](/links//partner) für SEO.
+> Achten Sie auf die Änderungen, die Sie vornehmen, oder kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](/links/partner) für SEO.
 >
-> Achtung: Eine über das [OVHcloud Kundencenter](/links//manager) erstellte Weiterleitung erlaubt nicht die Weiterleitung einer URL als `https://` auf eine andere Domain oder URL. 
+> Achtung: Eine über das [OVHcloud Kundencenter](/links/manager) erstellte Weiterleitung erlaubt nicht die Weiterleitung einer URL als `https://` auf eine andere Domain oder URL. 
 > Um diese Weiterleitungsart zu erstellen, müssen Sie "URL Rewrite" verwenden, zum Beispiel mithilfe der ".htaccess"-Datei.
 >
 
 ### Eine Domain über das Kundencenter weiterleiten
 
-Loggen Sie sich in das [OVHcloud Kundencenter](/links//manager){.external} ein, gehen Sie in den Bereich `Web Cloud`{.action}, wählen Sie die umzuleitende Domain unter `Domainnamen`{.action} aus, und klicken Sie dann auf den Tab `Weiterleitung`{.action}.
+Loggen Sie sich in das [OVHcloud Kundencenter](/links/manager){.external} ein, gehen Sie in den Bereich `Web Cloud`{.action}, wählen Sie die umzuleitende Domain unter `Domainnamen`{.action} aus, und klicken Sie dann auf den Tab `Weiterleitung`{.action}.
 
 Die Tabelle zeigt die für Ihre Domain aktiven Weiterleitungen an. Sie können Ihre existierenden Weiterleitungen mit dem Button `...`{.action} rechts in den Zeilen verwalten.
 
@@ -55,7 +55,7 @@ Klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}.
 
 ![Vorstellung des Menüs zur Weiterleitung](images/add-a-redirection.png){.thumbnail}
 
-Über das [OVHcloud Kundencenter](/links//manager) sind drei Weiterleitungsoptionen verfügbar, von denen jede aus **fünf aufeinander folgenden Schritten** besteht. 
+Über das [OVHcloud Kundencenter](/links/manager) sind drei Weiterleitungsoptionen verfügbar, von denen jede aus **fünf aufeinander folgenden Schritten** besteht. 
 
 > Der Tab `Weiterleitung`{.action} zeigt eine vierte Option, die Ihre Domain auf DNS-Einträge vom Typ A, AAAA und CNAME zeigen lassen kann.<br>
 > Da es sich hierbei nicht um eine "Weiterleitung" im engeren Sinn handelt, wird diese Option hier nicht näher erläutert.
@@ -287,13 +287,13 @@ Diese Einbettung von Inhalten verhindert, dass Besuchern Ihrer Website die Zield
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links//partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 Dateien mit dem Dateinamen ".htaccess" sind Konfigurationsdateien, in denen Befehle spezifiziert werden können. Wenn der Webserver (Apache) den Code Ihrer Website verarbeitet, werden die Befehle interpretiert und ausgeführt.<br>
 Sie können solche Befehle verwenden, um Weiterleitungen zu erstellen.
 
-Eine fehlerhafte ".htaccess" Datei kann Ihre Website unerreichbar machen. Kontaktieren Sie im Zweifelsfall einen [spezialisierten Dienstleister](/links//partner) .
+Eine fehlerhafte ".htaccess" Datei kann Ihre Website unerreichbar machen. Kontaktieren Sie im Zweifelsfall einen [spezialisierten Dienstleister](/links/partner) .
 
 Unsere Dokumentation zum Thema ".htaccess" finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
 
@@ -392,8 +392,8 @@ Diese Variable kann verwendet werden, wenn Sie Dateien vorübergehend auf eine a
 
 [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links//partner).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links//support).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

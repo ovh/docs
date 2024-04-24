@@ -26,28 +26,28 @@ Lesen SIe dazu auch unsere Anleitungen zu [OVHcloud DNS-Servern](/pages/web_clou
 
 - Sie verfügen über einen bei OVHcloud registrierten Domainnamen.
 - Der Domainname hat eine mit DNSSEC kompatible Endung.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links//manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 Die Aktivierung von **DNSSEC** ist auf zwei Arten möglich:
 
-- **Ihr Domainname verwendet die DNS-Server von OVHcloud**: Die Aktivierung erfolgt mit einem Klick über Ihr [OVHcloud Kundencenter](/links//manager){.external} (sofern nicht bereits aktiviert).
+- **Ihr Domainname verwendet die DNS-Server von OVHcloud**: Die Aktivierung erfolgt mit einem Klick über Ihr [OVHcloud Kundencenter](/links/manager){.external} (sofern nicht bereits aktiviert).
 
-- **Ihr Domainname verwendet nicht die DNS-Server von OVHcloud**: Wenden Sie sich an den Anbieter, der die DNS-Konfiguration Ihrer Domain verwaltet, um dessen Einstellungen anzufordern. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus der Liste aus.</br>
+- **Ihr Domainname verwendet nicht die DNS-Server von OVHcloud**: Wenden Sie sich an den Anbieter, der die DNS-Konfiguration Ihrer Domain verwaltet, um dessen Einstellungen anzufordern. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus der Liste aus.</br>
 Wählen Sie den Tab `DS-Einträge`{.action} aus, klicken Sie rechts auf `Bearbeiten`{.action} und dann auf den Button `+`{.action}.</br>
 Sie können nun die 4 Felder "Key Tag", "Flag", "Algorithmus", "Öffentlicher Schlüssel (Base64-kodiert)" mit den von Ihrem aktuellen Anbieter übermittelten Daten ausfüllen.
 
 > [!primary]
 >
-> Um zu überprüfen, ob Ihr Domainname die OVHcloud DNS-Konfiguration verwendet, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus der Liste aus. Öffnen Sie dann den Tab `DNS-Server`{.action}.
+> Um zu überprüfen, ob Ihr Domainname die OVHcloud DNS-Konfiguration verwendet, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus der Liste aus. Öffnen Sie dann den Tab `DNS-Server`{.action}.
 >
 > Wenn die Namen der DNS-Server mit *ovh.net*, *ovh.ca* oder *anycast.me* enden, verwendet Ihr Domainname die OVHcloud DNS-Server.
 >
 
 ### Schritt 1: Auf die Verwaltung des Domainnamens zugreifen <a name="step1"></a>
 
-Um die **DNSSEC** Lösung für Ihre Domainname zu aktivieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links//manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus der Liste aus.
+Um die **DNSSEC** Lösung für Ihre Domainname zu aktivieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus der Liste aus.
 
 Auf dieser Seite werden die allgemeinen Informationen angezeigt. 
 
@@ -78,8 +78,8 @@ Im Tab `Allgemeine Informationen`{.action} können Sie nach [Schritt 1](#step1) 
 
 [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links//partner).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links//support).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

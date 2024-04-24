@@ -27,14 +27,14 @@ Consoante as suas necessidades, é possível personalizar o nome dos servidores 
 ## Requisitos
 
 - Ter um nome de domínio registado na OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links//manager){.external}, parte `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, parte `Web Cloud`{.action}.
 
 ## Instruções
 
 > [!warning]
 >
 > **Personalizar os servidores DNS de um domínio é uma operação sensível** : efetuar uma alteração inadequada pode bloquear o acesso ao seu website e/ou tornar indisponível a receção de novos e-mails. 
-> Recomendamos que siga os passos indicados abaixo ou, em caso de dúvida, que recorra a um [fornecedor especializado](/links//partner).
+> Recomendamos que siga os passos indicados abaixo ou, em caso de dúvida, que recorra a um [fornecedor especializado](/links/partner).
 >
 
 ### Etapa 1: recupere os servidores DNS atualmente utilizados pelo seu nome de domínio <a name="step1"></a>
@@ -70,7 +70,7 @@ Se precisar de mais informações, consulte o nosso tutorial sobre a ferramenta 
 > Além disso, o *domain1.tld* deve ser registado na OVHcloud para implementar os « GLUE » records.
 >
 
-Aceda à [Área de Cliente OVHcloud](/links//manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e escolha o domínio que vai utilizar para personalizar os nomes dos servidores DNS. 
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e escolha o domínio que vai utilizar para personalizar os nomes dos servidores DNS. 
 
 Na nova página, clique no separador `GLUE`{.action}.
 
@@ -104,7 +104,7 @@ Deve criar os registos *A* e *AAAA* para os nomes dos hosts que definiu no passo
 Esta operação é realizada através da interface do prestador responsável pela configuração DNS do seu domínio. A partir daí, existem duas possibilidades:
 
 - **o seu domínio não utiliza uma zona DNS ativa na OVHcloud** : contacte o prestador responsável por esta última. Depois de realizar esta operação, avance para o passo seguinte.
-- **O seu domínio utiliza uma zona DNS ativa na OVHcloud**: aceda à [Área de Cliente OVHcloud](/links//manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e selecione o domínio que utilizou para criar os « GLUE » durante a [etapa 2](#step2). Aceda ao separador `Zona DNS`{.action} e clique em `Adicionar uma entrada`{.action}. Selecione a entrada do tipo *A* ou *AAAA* em função do tipo de IP associado que pretende adicionar. Siga os passos indicados para introduzir o *subdomínio* e o endereço *IPv4* (A) ou *IPv6* (AAAA). Se necessário, consulte as instruções descritas na nossa documentação « [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+- **O seu domínio utiliza uma zona DNS ativa na OVHcloud**: aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e selecione o domínio que utilizou para criar os « GLUE » durante a [etapa 2](#step2). Aceda ao separador `Zona DNS`{.action} e clique em `Adicionar uma entrada`{.action}. Selecione a entrada do tipo *A* ou *AAAA* em função do tipo de IP associado que pretende adicionar. Siga os passos indicados para introduzir o *subdomínio* e o endereço *IPv4* (A) ou *IPv6* (AAAA). Se necessário, consulte as instruções descritas na nossa documentação « [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ![glueregistry](images/add-an-entry.png){.thumbnail}
 
@@ -128,7 +128,7 @@ Aguarde o tempo da propagação DNS.
 
 Deve modificar os servidores DNS do seu domínio substituindo os servidores DNS antigos pelos servidores DNS personalizados criados anteriormente.
 
-Para isso, aceda à [Área de Cliente OVHcloud](/links//manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em ‘Nomes de domínio‘ {.action} e selecione *o nome do domínio para o qual pretende personalizar os servidores DNS*.
+Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em ‘Nomes de domínio‘ {.action} e selecione *o nome do domínio para o qual pretende personalizar os servidores DNS*.
  
 Aceda ao separador `Servidores DNS`{.action} e clique em `Modificar os servidores DNS`{.action}. Substitua os seus servidores DNS atuais pelos que pretende utilizar como servidores DNS personalizados. 
 
@@ -155,7 +155,7 @@ Para que a personalização dos servidores DNS seja visível na rede DNS (efetua
 Esta operação é realizada através da interface do prestador responsável pela configuração DNS do seu domínio. Existem duas possibilidades:
 
 - **o seu domínio não utiliza uma zona DNS ativa na OVHcloud** : contacte o prestador responsável por esta última para efetuar a alteração.
-- **O seu domínio utiliza uma zona DNS ativa na OVHcloud**: aceda à [Área de Cliente OVHcloud](/links//manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínios`{.action} e selecione o domínio para o qual personalizou os servidores DNS. Aceda ao separador `Zona DNS`{.action} e clique em `Editar em modo de texto`{.action}. 
+- **O seu domínio utiliza uma zona DNS ativa na OVHcloud**: aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínios`{.action} e selecione o domínio para o qual personalizou os servidores DNS. Aceda ao separador `Zona DNS`{.action} e clique em `Editar em modo de texto`{.action}. 
 
 Uma janela com a zona DNS em modo *textual* aparece:
 
@@ -164,12 +164,12 @@ Uma janela com a zona DNS em modo *textual* aparece:
 > [!warning]
 >
 > Uma alteração inadequada no modo *textual* na zona DNS pode interromper o acesso ao seu website e/ou tornar indisponível a receção de novas mensagens nos seus endereços de e-mail.
-> Contacte um [fornecedor especializado](/links//partner) em caso de dúvida.
+> Contacte um [fornecedor especializado](/links/partner) em caso de dúvida.
 >
 
 Nesta janela, substitua **unicamente nos registos do tipo *NS*** os nomes dos servidores DNS pelos seus próprios nomes de servidores DNS personalizados **sem esquecer** de incrementar de « 1 » o primeiro valor numérico da linha *SOA*. Depois de efetuar as alterações, clique em `Seguinte`{.action} e em `Validar`{.action}.
 
-A alteração não será imediatamente visível na [Área de Cliente OVHcloud](/links//manager){.external}. Aguarde cerca de 20 minutos e aceda à Área de Cliente OVHcloud para verificar se as alterações foram aplicadas corretamente.
+A alteração não será imediatamente visível na [Área de Cliente OVHcloud](/links/manager){.external}. Aguarde cerca de 20 minutos e aceda à Área de Cliente OVHcloud para verificar se as alterações foram aplicadas corretamente.
 
 > [!primary]
 >
@@ -226,8 +226,8 @@ Se necessário, consulte as instruções descritas na nossa documentação « [E
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links//partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links//support).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

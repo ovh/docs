@@ -45,8 +45,8 @@ Por vezes, alguns fornecedores DNS propõem mais de 2 **servidores DNS** a decla
 ## Requisitos
 
 - Ter um [nome de domínio](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud.
-- Dispor das autorizações [adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir do seu [Área de Cliente OVHcloud](/links//manager){.external}.
-Ter acesso à [Área de Cliente OVHcloud](/links//manager){.external}.
+- Dispor das autorizações [adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir do seu [Área de Cliente OVHcloud](/links/manager){.external}.
+Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 > [!primary]
 >
@@ -76,7 +76,7 @@ Certifique-se de que as modificações não irão afetar a disponibilidade do se
 
 ### Aceder à gestão dos servidores DNS da OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](/links//manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e escolha o domínio em causa. Por fim, selecione o separador `Servidores DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e escolha o domínio em causa. Por fim, selecione o separador `Servidores DNS`{.action}.
 
 Aparecerá uma tabela com os servidores DNS atualmente definidos pela OVHcloud para o seu domínio. Vários servidores DNS podem estar listados, sendo que cada um deles possui a sua própria linha na tabela.
 
@@ -120,15 +120,15 @@ O botão `Reiniciar os servidores DNS`{.action} permite reiniciar os servidores 
 
 Depois de realizar as alterações necessárias, deverá esperar que as alterações se propaguem. Devem ser tidos em conta dois períodos sucessivos:
 
-- A modificação efetuada no lado da OVHcloud deve ser tida em conta pelo *registrar* que gere a sua extensão de domínio (por exemplo, o registry das extensões em *.pt*). Pode seguir o progresso da operação na sua [Área de Cliente OVHcloud](/links//manager){.external}. Para isso, aceda à parte `Web Cloud`{.action}, aceda à secção `Nomes de domínio`{.action} na coluna à esquerda e clique em `Operações em curso`{.action}.
+- A modificação efetuada no lado da OVHcloud deve ser tida em conta pelo *registrar* que gere a sua extensão de domínio (por exemplo, o registry das extensões em *.pt*). Pode seguir o progresso da operação na sua [Área de Cliente OVHcloud](/links/manager){.external}. Para isso, aceda à parte `Web Cloud`{.action}, aceda à secção `Nomes de domínio`{.action} na coluna à esquerda e clique em `Operações em curso`{.action}.
 - Depois de a organização responsável pela gestão da sua extensão registar as alterações, a modificação poderá demorar até **48 horas** para que as alterações efetuadas possam ser propagadas.
 
 ## Quer saber mais?
 
 [Modificação de uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links//partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links//support).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

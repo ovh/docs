@@ -19,9 +19,9 @@ Se possui um nome de domínio na OVHcloud, deseja ligá-lo a um alojamento Wix. 
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links//manager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 - Ter um [nome de domínio](https://www.ovhcloud.com/fr/domains/){.external} registado na OVHcloud.
-- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links//manager){.external}.
+- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager){.external}.
 - Ter um alojamento na Wix.
 - Ter acesso à gestão deste alojamento na Wix.
 
@@ -47,7 +47,7 @@ Quando utiliza um alojamento Wix com um nome de domínio OVHcloud, deve, em prim
 > - Posicione-se na parte « **Etapa 2 | Atualizar os registos DNS na conta do seu fornecedor de alojamento de domínio** » da documentação Wix.<br>
 > As instruções seguintes ajudá-lo-ão a configurar com maior facilidade a sua zona DNS da OVHcloud.
 
-Aceda à [Área de Cliente OVHcloud](/links//manager){.external}, secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 
@@ -104,8 +104,8 @@ Se utiliza uma oferta de e-mail da OVHcloud ou pretende subscrever uma das [noss
 
 Para alterar a gestão do seu domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
  
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links//partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links//support).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

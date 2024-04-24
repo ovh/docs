@@ -28,7 +28,7 @@ Si les situations décrites ci-dessus ne vous correspondent pas, sachez que l'AF
 - Avoir **initié une demande de changement de propriétaire** pour un domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/){.external} et pour lequel les procédures indiquées dans notre documentation sur le [changement de propriétaire d'un domaine](/pages/web_cloud/domains/trade_domain) **ne peuvent pas être appliquées**.
 - Avoir un bon de commande de **changement de propriétaire d'un domaine** dans le statut "en cours".
 - Télécharger la **Demande d'Opération AFNIC (DOA)** via le lien suivant : <https://www.afnic.fr/wp-media/uploads/2021/03/doa.pdf>.
-- Accéder à votre [espace client OVHcloud](/links//manager).
+- Accéder à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -54,7 +54,7 @@ Voici un descriptif des éléments pouvant être renseignés dans la DOA :
 > Un bon de commande pour l’opération de changement de propriétaire doit obligatoirement être en cours.
 >
 
-La validation des e-mails envoyés lors de l'initialisation du changement de propriétaire ne sera pas nécessaire, chcune des parties complète le document et le retourne à OVHcloud en créant un ticket d'assistance depuis son [espace client OVHcloud](/links//manager) respectif.
+La validation des e-mails envoyés lors de l'initialisation du changement de propriétaire ne sera pas nécessaire, chcune des parties complète le document et le retourne à OVHcloud en créant un ticket d'assistance depuis son [espace client OVHcloud](/links/manager) respectif.
 
 La DOA devra également être accompagnée des documents justificatifs de l'ancien propriétaire ci-dessous.
 
@@ -83,7 +83,7 @@ La DOA devra également être accompagnée des documents justificatifs de l'anci
 >
 
 Ce DOA est utilisé dans le cas où le propriétaire actuel du domaine ne peut pas fournir son accord (décision de justice, liquidation judiciaire, décès, etc.).<br>
-Seul le nouveau propriétaire complète le document et le retourne à OVHcloud, accompagné des pièces justifiant ce changement forcé, en créant un ticket d'assistance depuis son [espace client OVHcloud](/links//manager).
+Seul le nouveau propriétaire complète le document et le retourne à OVHcloud, accompagné des pièces justifiant ce changement forcé, en créant un ticket d'assistance depuis son [espace client OVHcloud](/links/manager).
 
 > [!primary]
 >
@@ -148,7 +148,7 @@ Retrouvez ci-dessous la liste des documents à fournir en fonction de la situati
 
 > [!primary]
 >
-> Si vous vous trouvez dans l'incapacité de réaliser vous-même le bon de commande de changement de propriétaire depuis votre [espace client OVHcloud](/links//manager), vous pouvez, dans ce cas précis, contacter directement le support en créant un ticket d'assistance depuis votre espace client.
+> Si vous vous trouvez dans l'incapacité de réaliser vous-même le bon de commande de changement de propriétaire depuis votre [espace client OVHcloud](/links/manager), vous pouvez, dans ce cas précis, contacter directement le support en créant un ticket d'assistance depuis votre espace client.
 >
 
 ## Aller plus loin
@@ -159,8 +159,8 @@ Retrouvez ci-dessous la liste des documents à fournir en fonction de la situati
 
 [Changer la propriété d'un nom de domaine](/pages/web_cloud/domains/trade_domain)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links//partner).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links//support).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

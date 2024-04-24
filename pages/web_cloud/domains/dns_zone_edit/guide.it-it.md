@@ -38,15 +38,15 @@ La zona DNS di un dominio è un file di configurazione composto da **record**. c
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links//manager){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](/links//manager){.external}
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 - Utilizza la configurazione OVHcloud (server DNS) per il dominio in questione. 
 
 > [!warning]
 >
 > - Se il dominio non utilizza i server DNS di OVHcloud, è necessario effettuare la modifica attraverso l'interfaccia del provider che gestisce la configurazione del dominio.
 > 
-> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente OVHcloud](/links//manager){.external}, cliccando sulla scheda `Server DNS`{.action} del dominio interessato.
+> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente OVHcloud](/links/manager){.external}, cliccando sulla scheda `Server DNS`{.action} del dominio interessato.
 > 
 > In entrambi i casi, fai attenzione effettuando le modifiche dei server DNS. Infatti, la configurazione precedente che può essere applicata al tuo dominio non sarà più attiva se non hai precedentemente riconfigurato e personalizzato la nuova zona DNS presente in OVHcloud.<br>
 > È possibile avere una sola zona DNS attiva per ogni dominio.
@@ -60,7 +60,7 @@ La zona DNS di un dominio è un file di configurazione composto da **record**. c
 >
 > A differenza del nome di dominio, per una zona DNS non esiste la nozione di proprietario, ma di gestione dei contatti per una zona DNS OVHcloud. Se desideri trasferire la gestione della tua zona DNS su un altro account OVHcloud, segui la nostra guida [Gestire i contatti di servizio](/pages/account_and_service_management/account_information/managing_contacts).
 
-Accedi allo [Spazio Cliente OVHcloud](/links//manager){.external} nella sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio. e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} nella sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio. e clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con tutti i record DNS associati al tuo dominio presso OVHcloud. Il contenuto può essere filtrato per tipo di record o per dominio.
 
@@ -273,8 +273,8 @@ Per questo motivo e in questo caso specifico, non è possibile creare un record 
 
 [Proteggere il dominio dal Cache Poisoning con DNSSEC](/pages/web_cloud/domains/dns_dnssec){.external}
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links//partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links//support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

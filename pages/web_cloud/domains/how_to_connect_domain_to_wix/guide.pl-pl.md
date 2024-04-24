@@ -19,9 +19,9 @@ Posiadasz domenę w OVHcloud i chcesz ją połączyć z hostingiem Wix. W tym pr
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links//manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} zarejestrowanej w OVHcloud.
-- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w Panelu [klienta OVHcloud](/links//manager){.external}.
+- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w Panelu [klienta OVHcloud](/links/manager){.external}.
 - Posiadanie hostingu w Wix.
 - Dostęp do interfejsu zarządzania hostingiem w Wix.
 
@@ -47,7 +47,7 @@ Jeśli korzystasz z hostingu Wix dla domeny OVHcloud, musisz najpierw przygotowa
 > - Posizionati sulla sezione "**Step 2 | Aggiorna record DNS nell'account dell'hosting di dominio**" nella documentazione di Wix.<br>
 > Le istruzioni seguenti ti aiuteranno a configurare la tua zona DNS OVHcloud.
 
-Zaloguj się do Twojego [panelu klienta OVHcloud](/links//manager){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
+Zaloguj się do Twojego [panelu klienta OVHcloud](/links/manager){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich rekordów DNS wybranej domeny.
 
@@ -104,8 +104,8 @@ Jeśli korzystasz z oferty e-mail OVHcloud lub zamierzasz zamówić jedną z [na
 
 Aby zmienić sposób zarządzania domeną na inne konto klienta OVHcloud, zapoznaj się z przewodnikiem "[Zarządzanie kontaktami dla usług](/pages/account_and_service_management/account_information/managing_contacts) OVHcloud".
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links//support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -39,15 +39,15 @@ O registo DKIM (**D**omain**K**eys **I**dentified **M**ail) permite assinar os e
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do domínio na [Área de Cliente OVHcloud](/links//manager) ou na Área de Cliente, caso esteja registado fora da OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links//manager).
+- Ter acesso à secção de gestão do domínio na [Área de Cliente OVHcloud](/links/manager) ou na Área de Cliente, caso esteja registado fora da OVHcloud.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter subscrito uma das nossas ofertas [Exchange](https://www.ovhcloud.com/pt/emails/), [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/) ou uma oferta de e-mail extra OVHcloud que disponha do DKIM.
 
 > [!warning]
 >
 > Se o domínio não usar os servidores DNS da OVHcloud, a alteração DKIM deverá ser efetuada através da interface do agente responsável pela configuração do domínio.
 >
-> Se o domínio for gerido pela OVHcloud, verifique se este utiliza a nossa configuração OVHcloud na [Área de Cliente](/links//manager) a partir do separador `Zona DNS`{.action}, depois de selecionado o domínio.
+> Se o domínio for gerido pela OVHcloud, verifique se este utiliza a nossa configuração OVHcloud na [Área de Cliente](/links/manager) a partir do separador `Zona DNS`{.action}, depois de selecionado o domínio.
 >
 
 ## Instruções
@@ -193,13 +193,13 @@ Clique no separador abaixo correspondente à sua oferta.
 > [!tabs]
 > **Exchange**
 >>
->> Na [Área de Cliente OVHcloud](/links//manager), no separador `Web Cloud`{.action}, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Finalmente, clique no nome do serviço Exchange em questão. Por predefinição, o nome da plataforma corresponde à sua referência ou esta será visível sob o nome que lhe atribuiu (ver imagem abaixo).
+>> Na [Área de Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Finalmente, clique no nome do serviço Exchange em questão. Por predefinição, o nome da plataforma corresponde à sua referência ou esta será visível sob o nome que lhe atribuiu (ver imagem abaixo).
 >>
 >> ![email](images/dns-dkim-platform-exchange.png){.thumbnail}
 >>
 > **E-mail Pro**
 >>
->> Na Área de [Cliente OVHcloud](/links//manager), no separador `Web Cloud`{.action}, clique em `E-mails Pro`{.action} e, a seguir, no nome do serviço E-mail Pro em causa. Por predefinição, o nome da plataforma corresponde à sua referência ou esta será visível sob o nome que lhe atribuiu (ver imagem abaixo).
+>> Na Área de [Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `E-mails Pro`{.action} e, a seguir, no nome do serviço E-mail Pro em causa. Por predefinição, o nome da plataforma corresponde à sua referência ou esta será visível sob o nome que lhe atribuiu (ver imagem abaixo).
 >>
 >> ![email](images/dns-dkim-platform-emailpro.png){.thumbnail}
 
@@ -317,7 +317,7 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> > É possível que o `status:` quer em `todo`, isto não afeta a configuração da sua zona DNS.
 >>
 > **4.Configurar o registo DNS**
->> Do [espaço cliente OVHcloud](/links//manager) onde o nome do domínio do seu Plataforma Exchange, na guia `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} na coluna da esquerda e selecione o nome de domínio relevante.<br>
+>> Do [espaço cliente OVHcloud](/links/manager) onde o nome do domínio do seu Plataforma Exchange, na guia `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} na coluna da esquerda e selecione o nome de domínio relevante.<br>
 >> Dirija-se ao separador `Zona DNS`{.action} e clique em `Adicionar uma entrada`{.action} na janela que se abrir. Escolha o `CNAME` e introduza-o em função dos valores que tiver registado.<br>
 >>
 >> Se considerarmos os valores do exemplo na etapa "**3.Recuperar o registo DNS**":
@@ -468,7 +468,7 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> > É possível que o `status:` quer em `todo`, isto não afeta a configuração da sua zona DNS.
 >>
 > **4.Configurar o registo DNS**
->> A partir da [área cliente OVHcloud](/links//manager) onde o nome do domínio do seu Plataforma E-mail Pro, na guia `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} na coluna da esquerda e selecione o nome de domínio relevante.<br>
+>> A partir da [área cliente OVHcloud](/links/manager) onde o nome do domínio do seu Plataforma E-mail Pro, na guia `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} na coluna da esquerda e selecione o nome de domínio relevante.<br>
 >> Dirija-se ao separador `Zona DNS`{.action} e clique em `Adicionar uma entrada`{.action} na janela que se abrir. Escolha o `CNAME` e introduza-o em função dos valores que tiver registado.<br>
 >>
 >> Se considerarmos os valores do exemplo na etapa "**3.Recuperar o registo DNS**":
@@ -685,7 +685,7 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 
 Se pretender configurar a zona DNS para adicionar um registo DKIM à sua oferta, siga as instruções abaixo.
 
-Na Área [de Cliente OVHcloud](/links//manager), clique no separador `Web Cloud`{.action} e, a seguir, em `Nomes de domínio`{.action}, na coluna da esquerda, e selecione o domínio em questão.
+Na Área [de Cliente OVHcloud](/links/manager), clique no separador `Web Cloud`{.action} e, a seguir, em `Nomes de domínio`{.action}, na coluna da esquerda, e selecione o domínio em questão.
 
 Clique no separador `Zona DNS`{.action} e em `Adicionar uma entrada`{.action}. Existem 3 formas de adicionar um registo para configurar o DKIM na sua zona DNS:
 

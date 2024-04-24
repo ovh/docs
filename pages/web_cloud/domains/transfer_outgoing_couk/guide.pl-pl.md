@@ -36,7 +36,7 @@ Proces zmiany operatora domeny *najwyższego poziomu* (*top-level domain*, lub *
 ## Wymagania początkowe
 
 - Posiadanie [domeny .uk](https://www.ovhcloud.com/pl/domains/) zarejestrowanej w OVHcloud
-- Dostęp do [Panelu client OVHcloud](/links//manager) i posiadanie uprawnień niezbędnych do zarządzania domeną (administrator domeny)
+- Dostęp do [Panelu client OVHcloud](/links/manager) i posiadanie uprawnień niezbędnych do zarządzania domeną (administrator domeny)
 - Nazwa domeny musi być zawsze aktywna, co oznacza, że nie wygasła lub nie może zostać zablokowana przez OVHcloud
 - Nazwa domeny nie może być przedmiotem sporu toczącego się w rejestrze [Nominet](https://www.nominet.uk/)
 
@@ -55,7 +55,7 @@ Jeśli nie znasz jeszcze wymaganego wpisu TAG, możesz złożyć wniosek u noweg
 
 ### Etap 1: sprawdzenie niezbędnych informacji
 
-Zaloguj się do [Panelu client OVHcloud](/links//manager) wybierz `Web Cloud`{.action}. Kliknij `Domeny`{.action}, po czym wybierz odpowiednią nazwę domeny.
+Zaloguj się do [Panelu client OVHcloud](/links/manager) wybierz `Web Cloud`{.action}. Kliknij `Domeny`{.action}, po czym wybierz odpowiednią nazwę domeny.
 
 Pamiętaj, że musisz być zalogowany jako kontakt administracyjny.
 
@@ -83,8 +83,8 @@ Skontaktuj się z nowym dostawcą, aby uzyskać więcej informacji oraz wszelkie
 
 [Transfer domeny do innego operatora](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links//partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

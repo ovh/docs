@@ -14,13 +14,13 @@ You have a domain name with OVHcloud and you want to connect it to a Shopify hos
 >
 > - Shopify support does not have access to your OVHcloud domain name settings and therefore cannot advise you on the exact steps.
 >
-> - OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.<br><br>We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links//partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+> - OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.<br><br>We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
 
 - A [domain name](https://www.ovhcloud.com/en-au/domains/) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](/links//manager) with the [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
+- Access to the [OVHcloud Control Panel](/links/manager) with the [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
 - A Shopify web hosting plan
 - Access to manage this hosting plan with Shopify
 
@@ -34,7 +34,7 @@ Before following the two steps in this guide, we recommend that you get familiar
 
 ### Configure your DNS records on your OVHcloud account
 
-Log in to the [OVHcloud Control Panel](/links//manager){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 The table lists all of the DNS records for the selected domain name.
 
@@ -102,8 +102,8 @@ If you are using an OVHcloud email solution, or planning to subscribe to one of 
 
 To delegate the management of your domain name to another OVHcloud customer account, follow the guide on [Managing contacts for OVHcloud services](/pages/account_and_service_management/account_information/managing_contacts).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
 Join our community of users on <https://community.ovh.com/en/>.

@@ -16,7 +16,7 @@ A transferência de um nome de domínio .uk (ou equiparado) requer uma abordagem
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links//partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further)?
 >
 
 ***Descubra como transferir um domínio .uk (ou equiparado) para a OVHcloud**
@@ -78,7 +78,7 @@ Depois de alterar a TAG, o proprietário do nome de domínio receberá após alg
 
 Uma vez na posse do seu código de autorização, pode procurar e iniciar a encomenda de transferência do seu nome de domínio para o site OVHcloud. A encomenda é semelhante à de qualquer outro domínio genérico.
 
-O seu domínio estará de seguida presente na sua [Área de Cliente OVHcloud](/links//manager) dentro de algumas horas.
+O seu domínio estará de seguida presente na sua [Área de Cliente OVHcloud](/links/manager) dentro de algumas horas.
 
 ### Informações úteis
 

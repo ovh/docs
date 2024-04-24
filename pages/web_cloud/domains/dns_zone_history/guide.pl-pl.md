@@ -18,7 +18,7 @@ Możesz na przykład w nim określić:
 - Serwery email (rekordy DNS typu *MX*), na które Twoja domena powinna przekierowywać wiadomości e-mail. Możesz wyświetlić je na Twoim (Twoich) spersonalizowanym(ych) adresie(ach) e-mail(ów) wraz z nazwą domeny.
 - Informacje związane z bezpieczeństwem / uwierzytelnianie Twoich usług (hosting, serwer www, serwer e-mail, etc.) przypisane do Twojej domeny (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, etc.).
 
-Zapoznaj się z naszą dokumentacją dotyczącą [wpisów DNS i edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) dostępną w [Panelu klienta OVHcloud](/links//manager), jeśli chcesz dowiedzieć się więcej na ten temat.
+Zapoznaj się z naszą dokumentacją dotyczącą [wpisów DNS i edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) dostępną w [Panelu klienta OVHcloud](/links/manager), jeśli chcesz dowiedzieć się więcej na ten temat.
 Może zajść konieczność zastosowania poprzedniej konfiguracji DNS dla Twojej domeny.
 
 Dzięki historii stref DNS zarządzanie serwerami DNS stało się łatwiejsze.
@@ -27,13 +27,13 @@ Dzięki historii stref DNS zarządzanie serwerami DNS stało się łatwiejsze.
 
 ## Wymagania początkowe
 
-- Strefa DNS dla Twojej domeny w [Panelu klienta OVHcloud](/links//manager)
-- Dostęp do [panelu klienta OVHcloud](/links//manager)
+- Strefa DNS dla Twojej domeny w [Panelu klienta OVHcloud](/links/manager)
+- Dostęp do [panelu klienta OVHcloud](/links/manager)
 - Dostęp do interfejsu zarządzania domeną
 
 ## W praktyce
 
-Aby uzyskać dostęp do tej funkcji, zaloguj się do [Panelu klienta OVHcloud](/links//manager) i przejdź do sekcji `Web Cloud`{.action} w górnej części interfejsu. W kolumnie po lewej stronie przejdź do zakładki `Domeny`{.action}, następnie wybierz domenę powiązaną ze strefą DNS, którą chcesz zarządzać.
+Aby uzyskać dostęp do tej funkcji, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action} w górnej części interfejsu. W kolumnie po lewej stronie przejdź do zakładki `Domeny`{.action}, następnie wybierz domenę powiązaną ze strefą DNS, którą chcesz zarządzać.
 
 Na stronie, która się wyświetli i jeśli jeszcze nie zostałeś przekierowany do tej zakładki, kliknij zakładkę `Strefa DNS`{.action}.
 
@@ -111,8 +111,8 @@ Dzięki niniejszemu przewodnikowi możesz teraz porównywać dwie strefy DNS ora
 
 [Utworzenie strefy DNS w OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links//support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

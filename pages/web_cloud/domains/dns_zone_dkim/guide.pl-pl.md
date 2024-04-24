@@ -39,15 +39,15 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
 
 ## Wymagania początkowe
 
-- Posiadanie dostępu do interfejsu zarządzania domeną w [Panelu klienta OVHcloud](/links//manager) lub u operatora domeny, jeśli jest zarejestrowany poza OVHcloud.
-- Dostęp do [Panelu klienta OVHcloud](/links//manager).
+- Posiadanie dostępu do interfejsu zarządzania domeną w [Panelu klienta OVHcloud](/links/manager) lub u operatora domeny, jeśli jest zarejestrowany poza OVHcloud.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Wykupienie jednej z naszych ofert [Exchange](https://www.ovhcloud.com/pl/emails/), [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/) lub usługi e-mail poza OVHcloud z DKIM
 
 > [!warning]
 >
 > Jeśli Twoja domena nie używa serwerów DNS OVHcloud, przeprowadź zmianę DKIM w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 >
-> Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud w [Panelu klienta](/links//manager) w zakładce `Strefa DNS`{.action}, po wybraniu domeny.
+> Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud w [Panelu klienta](/links/manager) w zakładce `Strefa DNS`{.action}, po wybraniu domeny.
 >
 
 ## W praktyce
@@ -193,13 +193,13 @@ Kliknij kartę poniżej odnoszącą się do Twojej oferty.
 > [!tabs]
 > **Exchange**
 >>
->> W [Panelu klienta OVHcloud](/links//manager) w zakładce `Web Cloud`{.action} kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Następnie kliknij nazwę odpowiedniej usługi Exchange. Domyślnie nazwa Twojej platformy odpowiada jej nazwie lub będzie widoczna pod przypisaną jej nazwą (patrz obrazek poniżej).
+>> W [Panelu klienta OVHcloud](/links/manager) w zakładce `Web Cloud`{.action} kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Następnie kliknij nazwę odpowiedniej usługi Exchange. Domyślnie nazwa Twojej platformy odpowiada jej nazwie lub będzie widoczna pod przypisaną jej nazwą (patrz obrazek poniżej).
 >>
 >> ![email](images/dns-dkim-platform-exchange.png){.thumbnail}
 >>
 > **E-mail Pro**
 >>
->> W [Panelu klienta OVHcloud](/links//manager) w zakładce `Web Cloud`{.action} kliknij `E-mail Pro`{.action}, a następnie nazwę odpowiedniej usługi E-mail Pro. Domyślnie nazwa Twojej platformy odpowiada jej nazwie lub będzie widoczna pod przypisaną jej nazwą (patrz obrazek poniżej).
+>> W [Panelu klienta OVHcloud](/links/manager) w zakładce `Web Cloud`{.action} kliknij `E-mail Pro`{.action}, a następnie nazwę odpowiedniej usługi E-mail Pro. Domyślnie nazwa Twojej platformy odpowiada jej nazwie lub będzie widoczna pod przypisaną jej nazwą (patrz obrazek poniżej).
 >>
 >> ![email](images/dns-dkim-platform-emailpro.png){.thumbnail}
 
@@ -317,7 +317,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >> > Możliwe, że `status:` lub w `todo` nie ma to wpływu na konfigurację strefy DNS.
 >>
 > **4.Konfiguracja rekordu DNS**
->> Z [strefy klienta OVHcloud](/links//manager), gdzie nazwa Twojej domeny Exchange, w zakładce `Web Cloud`{.action} kliknij `Nazwy domen`{.action} w lewej kolumnie i wybierz odpowiednią nazwę domeny.<br>
+>> Z [strefy klienta OVHcloud](/links/manager), gdzie nazwa Twojej domeny Exchange, w zakładce `Web Cloud`{.action} kliknij `Nazwy domen`{.action} w lewej kolumnie i wybierz odpowiednią nazwę domeny.<br>
 >> Przejdź do zakładki `Strefa DNS`{.action}, następnie kliknij `Dodaj rekord`{.action} w oknie, które się wyświetli. Wybierz `CNAME` i uzupełnij zgodnie z podanymi przez Ciebie wartościami.<br>
 >>
 >> Jeśli weźmiemy wartości z przykładu na etapie "**3.Pobierz rekord DNS**":
@@ -468,7 +468,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >> > Możliwe, że `status:` lub w `todo` nie ma to wpływu na konfigurację strefy DNS.
 >>
 > **4.Konfiguracja rekordu DNS**
->> Z [strefy klienta OVHcloud](/links//manager), gdzie nazwa Twojej domeny Platforma E-mail Pro, w zakładce `Web Cloud`{.action} kliknij `Nazwy domen`{.action} w lewej kolumnie i wybierz odpowiednią nazwę domeny.<br>
+>> Z [strefy klienta OVHcloud](/links/manager), gdzie nazwa Twojej domeny Platforma E-mail Pro, w zakładce `Web Cloud`{.action} kliknij `Nazwy domen`{.action} w lewej kolumnie i wybierz odpowiednią nazwę domeny.<br>
 >> Przejdź do zakładki `Strefa DNS`{.action}, następnie kliknij `Dodaj rekord`{.action} w oknie, które się wyświetli. Wybierz `CNAME` i uzupełnij zgodnie z podanymi przez Ciebie wartościami.<br>
 >>
 >> Jeśli weźmiemy wartości z przykładu na etapie "**3.Pobierz rekord DNS**":
@@ -685,7 +685,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 
 Jeśli chcesz skonfigurować strefę DNS, aby dodać rekord DKIM dla Twojej usługi, postępuj zgodnie z instrukcjami podanymi poniżej.
 
-W [Panelu klienta OVHcloud](/links//manager) kliknij zakładkę `Web Cloud`{.action}, następnie `Domeny`{.action} w kolumnie z lewej strony i wybierz odpowiednią nazwę domeny.
+W [Panelu klienta OVHcloud](/links/manager) kliknij zakładkę `Web Cloud`{.action}, następnie `Domeny`{.action} w kolumnie z lewej strony i wybierz odpowiednią nazwę domeny.
 
 Kliknij zakładkę `Strefa DNS`{.action}, a następnie `Dodaj rekord`{.action}. Istnieją 3 sposoby dodania rekordu do konfiguracji DKIM w strefie DNS:
 

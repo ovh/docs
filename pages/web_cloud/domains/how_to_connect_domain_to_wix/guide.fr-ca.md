@@ -19,9 +19,9 @@ Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links//manager){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} enregistré chez OVHcloud.
-- Disposer des [autorisations appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine depuis votre [espace client OVHcloud](/links//manager){.external}.
+- Disposer des [autorisations appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine depuis votre [espace client OVHcloud](/links/manager){.external}.
 - Disposer d’un hébergement chez Wix.
 - Avoir accès à la gestion de cet hébergement chez Wix.
 
@@ -47,7 +47,7 @@ Lorsque vous utilisez un hébergement Wix avec un nom de domaine OVHcloud, vous 
 > - Positionnez-vous sur la partie « **Étape 2 | Mettre à jour les enregistrements DNS dans le compte de votre hébergeur de domaine** » de la documentation Wix.<br>
 > Les instructions suivantes vous aideront à configurer plus facilement votre zone DNS OVHcloud.
 
-Connectez-vous à votre [espace client OVHcloud](/links//manager){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Le tableau qui s'affiche liste l'ensemble des enregistrements DNS du nom de domaine sélectionné.
 
@@ -104,8 +104,8 @@ Si vous utilisez une offre e-mail OVHcloud ou que vous prévoyez de souscrire à
 
 Pour modifier la gestion de votre nom de domaine vers un autre compte client OVHcloud, suivez le guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links//partner).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links//support).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

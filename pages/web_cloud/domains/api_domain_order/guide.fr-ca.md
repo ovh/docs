@@ -8,7 +8,7 @@ updated: 2023-08-30
 
 > [!warning]
 >
-> L'utilisation des APIs OVHcloud nécessite des connaissances avancées dans ce domaine. Si vous éprouvez des difficultés, contactez les [partenaires OVHcloud](/links//partner).
+> L'utilisation des APIs OVHcloud nécessite des connaissances avancées dans ce domaine. Si vous éprouvez des difficultés, contactez les [partenaires OVHcloud](/links/partner).
 >
 
 > [!primary]

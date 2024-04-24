@@ -23,7 +23,7 @@ Para além da [gestão dos contactos](/pages/account_and_service_management/acco
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](/links//manager){.external}
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external}
 - Ter um nome de domínio registado na OVHcloud e para o qual não está em curso nenhuma operação (mudança de proprietário, transferência, criação). Se uma operação foi finalizada recentemente no seu domínio, é necessário aguardar pelo menos 60 dias de calendário antes de realizar uma nova operação.
 - Ser o [contacto administrador](/pages/account_and_service_management/account_information/managing_contacts) do respetivo nome de domínio.
 - Ter o consentimento do titular atual do nome de domínio para realizar a alteração de titular.
@@ -45,12 +45,12 @@ Para além da [gestão dos contactos](/pages/account_and_service_management/acco
 >
 > - o sítio Web do registo **TLD** correspondente;
 > - a [lista dos TLD disponíveis na OVHcloud](https://www.ovhcloud.com/pt/domains/tld/);
-> - atualizações do estado do domínio. Para verificar isso, aceda à [Área de Cliente OVHcloud](/links//manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e, a seguir, em `Operações em curso`{.action}.
+> - atualizações do estado do domínio. Para verificar isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e, a seguir, em `Operações em curso`{.action}.
 >
 
 ### 1 - selecionar o domínio
 
-Aceda à [Área de Cliente OVHcloud](/links//manager), na secção `Web Cloud`{.action}. Clique em `Nomes de Domínio`{.action}, selecione o nome de domínio genérico (gTLD) do qual deseja modificar o proprietário.
+Aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}. Clique em `Nomes de Domínio`{.action}, selecione o nome de domínio genérico (gTLD) do qual deseja modificar o proprietário.
 
 ### Etapa 2: iniciar o procedimento de alteração de proprietário
 
@@ -91,7 +91,7 @@ Se o endereço de e-mail não for alterado devido à mudança de proprietário, 
 
 ### Atualização das informações do proprietário <a name="updateownerinformation"></a>
 
-Se precisar de atualizar algumas informações secundárias como o número de telefone, o endereço, etc., não precisa de iniciar um procedimento comercial. Estas informações podem ser alteradas diretamente na [Área de Cliente OVHcloud](/links//manager).
+Se precisar de atualizar algumas informações secundárias como o número de telefone, o endereço, etc., não precisa de iniciar um procedimento comercial. Estas informações podem ser alteradas diretamente na [Área de Cliente OVHcloud](/links/manager).
 
 Na secção **Subscrição** do separador `Informações gerais`{.action}, clique em `...`{.action} em **Contactos** e, a seguir, em `Atualizar as informações do proprietário`{.action}.
 
@@ -103,8 +103,8 @@ Para esta operação, não precisa de confirmar as modificações por e-mail.
 
 [Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links//partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links//support).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

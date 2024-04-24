@@ -26,14 +26,14 @@ Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w
 
 > [!primary]
 >
-> Utworzenie / modyfikacja / usunięcie strefy DNS w [Panelu klienta OVHcloud](/links//manager) jest całkowicie darmowe.
+> Utworzenie / modyfikacja / usunięcie strefy DNS w [Panelu klienta OVHcloud](/links/manager) jest całkowicie darmowe.
 >
 
 **Dowiedz się, jak usunąć strefę DNS z OVHcloud dla Twojej domeny, korzystając z Panelu klienta OVHcloud.**
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](/links//manager).
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
 - Strefa DNS w Panelu klienta OVHcloud.
 - Dysponujesz wystarczającymi uprawnieniami w strefie DNS, którą chcesz usunąć. Więcej informacji znajdziesz w przewodniku "[Zarządzanie kontaktami dla usług OVH](/pages/account_and_service_management/account_information/managing_contacts)".
 
@@ -54,7 +54,7 @@ Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w
 
 Aby rozpocząć usuwanie strefy DNS OVHcloud, wykonaj następujące czynności: 
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links//manager).
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 3. W lewej kolumnie kliknij menu rozwijane `Domeny`{.action}.
 4. Wybierz odpowiednią domenę lub strefę DNS.
@@ -84,7 +84,7 @@ Kliknij **link służący do walidacji**, aby kontynuować usuwanie strefy DNS O
 
 > [!primary]
 >
-> Jeśli przekierowanie łączy nie działa, wybierz **kopiowanie/wklejanie** łącza w pasku adresu URL przeglądarki internetowej. W razie potrzeby zaloguj się ponownie do [Panelu klienta OVHcloud](/links//manager).
+> Jeśli przekierowanie łączy nie działa, wybierz **kopiowanie/wklejanie** łącza w pasku adresu URL przeglądarki internetowej. W razie potrzeby zaloguj się ponownie do [Panelu klienta OVHcloud](/links/manager).
 >
 
 Po kliknięciu na link aktywacyjny zostaniesz przekierowany do nowej strony OVHcloud, na której zostaniesz poproszony o przyczynę(y) usunięcia strefy DNS OVHcloud.
@@ -105,8 +105,8 @@ Na adres e-mail kontaktu "[Administrator](/pages/account_and_service_management/
 
 [Utwórz strefę DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links//support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

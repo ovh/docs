@@ -13,7 +13,7 @@ La redirection d'un nom de domaine consiste à rediriger celui-ci vers une nouve
 ## Prérequis
 
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
-- Être connecté à votre [espace client OVHcloud](/links//manager){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 - Être connecté à votre hébergement web (pour une redirection via un fichier [.htaccess](#htaccess_rewrite)).
 
 ## En pratique
@@ -29,7 +29,7 @@ Cette fonctionnalité permet de rediriger un domaine/sous-domaine vers :
 
 Ces actions peuvent être réalisées de plusieurs manières :
 
-- **Depuis l'[espace client OVHcloud](/links//manager)** où un assistant de configuration permet de paramétrer votre redirection.
+- **Depuis l'[espace client OVHcloud](/links/manager)** où un assistant de configuration permet de paramétrer votre redirection.
 - **Via une méthode nécessitant de la programmation**. Vous devrez créer vous-même la redirection dans un fichier (généralement un [.htaccess](#htaccess_rewrite)).
 
 > [!warning]
@@ -37,13 +37,13 @@ Ces actions peuvent être réalisées de plusieurs manières :
 > La mise en place d'une redirection peut avoir des conséquences sur le référencement de votre site internet. 
 > Soyez vigilant quant aux manipulations que vous allez entreprendre ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) dans le référencement si nécessaire.
 >
-> Attention : une redirection créée depuis l'[espace client OVHcloud](/links//manager) ne permet pas de rediriger une URL en `https://` vers un autre domaine ou une autre URL. 
+> Attention : une redirection créée depuis l'[espace client OVHcloud](/links/manager) ne permet pas de rediriger une URL en `https://` vers un autre domaine ou une autre URL. 
 > Pour créer ce type de redirection, vous devrez obligatoirement passer par [une réécriture d'URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite) via un fichier « .htaccess » par exemple.
 >
 
 ### Rediriger un nom de domaine depuis l'espace client
 
-Connectez-vous à l'[espace client OVHcloud](/links//manager){.external}, rendez-vous dans la partie `Web Cloud`{.action}, sélectionnez le domaine à rediriger dans la section `Noms de domaine`{.action} puis cliquez sur l'onglet `Redirection`{.action}.
+Connectez-vous à l'[espace client OVHcloud](/links/manager){.external}, rendez-vous dans la partie `Web Cloud`{.action}, sélectionnez le domaine à rediriger dans la section `Noms de domaine`{.action} puis cliquez sur l'onglet `Redirection`{.action}.
 
 Le tableau affiche les redirections actives pour votre nom de domaine. Vous pouvez y gérer vos redirections existantes à l'aide du bouton `...`{.action} situé à droite de chaque ligne.
 
@@ -51,7 +51,7 @@ Cliquez sur le bouton `Ajouter une redirection`{.action}.
 
 ![Présentation du menu redirection](images/add-a-redirection.png){.thumbnail}
 
-Trois options de redirections sont disponibles depuis l'[espace client OVHcloud](/links//manager) et chacune d'entre elles se compose de **5 étapes** successives. 
+Trois options de redirections sont disponibles depuis l'[espace client OVHcloud](/links/manager) et chacune d'entre elles se compose de **5 étapes** successives. 
 
 > L'onglet `Redirection`{.action} présente une quatrième option permettant de faire pointer rapidement votre domaine vers les entrées DNS A, AAAA et CNAME.<br>
 > Du fait qu'il ne s'agit pas là à proprement parler d'une « redirection », cette option ne sera pas détaillée dans ce guide.
@@ -391,8 +391,8 @@ Cette variable peut être utilisée lorsque vous déplacez temporairement des fi
 
 [Comment éditer ma zone DNS ?](/pages/web_cloud/domains/dns_zone_edit)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links//partner).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links//support).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

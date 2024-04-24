@@ -16,12 +16,12 @@ La creazione di un dominio, il suo trasferimento e la modifica del proprietario 
 ## Prerequisiti
 
 - Disporre di uno o più domini
-- Avere accesso allo [Spazio Cliente OVHcloud](/links//manager)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
 
-Dallo [Spazio Cliente OVHcloud](/links//manager), seleziona la sezione `Web Cloud`{.action} e poi i `domini`{.action}. Clicca su `Operazioni in corso`{.action} sopra la lista dei domini.
+Dallo [Spazio Cliente OVHcloud](/links/manager), seleziona la sezione `Web Cloud`{.action} e poi i `domini`{.action}. Clicca su `Operazioni in corso`{.action} sopra la lista dei domini.
 
 Una tabella ti permette di consultare tutte le operazioni relative ai domini del tuo Spazio Cliente.
 
@@ -139,8 +139,8 @@ Se riscontri un'anomalia non legata alla configurazione dei server DNS o della z
 
 [Modifica i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links//partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links//support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

@@ -37,15 +37,15 @@ A zona DNS de um nome de domínio é um ficheiro de configuração composto por 
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do domínio na [Área de Cliente OVHcloud](/links//manager){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](/links//manager){.external}.
+- Ter acesso à secção de gestão do domínio na [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 - Utilizar a configuração da OVHcloud (os seus servidores DNS) para o domínio em questão.
 
 > [!warning]
 >
 > - Se o domínio não usar os servidores DNS da OVHcloud, a alteração deverá ser efetuada na interface do agente responsável pela configuração do domínio.
 > 
-> - Se o domínio estiver registado na OVHcloud, pode verificar se este último utiliza a nossa configuração. Para isso, aceda à [Área de Cliente OVHcloud](/links//manager){.external}, na janela `Servidores DNS`{.action} do domínio em questão.
+> - Se o domínio estiver registado na OVHcloud, pode verificar se este último utiliza a nossa configuração. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external}, na janela `Servidores DNS`{.action} do domínio em questão.
 > 
 > Em ambos os casos acima, tenha cuidado ao efetuar as alterações dos servidores DNS. A configuração anterior que pode ser aplicada ao seu domínio não estará ativa se não tiver reconfigurado e personalizado previamente a nova zona DNS presente na OVHcloud.<br>
 > Só pode ter uma zona DNS ativa por nome de domínio.
@@ -59,7 +59,7 @@ A zona DNS de um nome de domínio é um ficheiro de configuração composto por 
 >
 > Ao contrário do nome de domínio, para uma zona DNS não existe uma noção de proprietário, mas sim uma gestão de contactos para uma zona DNS da OVHcloud. Se desejar mudar a gestão da sua zona DNS para outra conta OVHcloud, siga o nosso guia [Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
 
-Aceda à [Área de Cliente OVHcloud](/links//manager){.external}, na secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, na secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com um registo DNS associado ao seu domínio na OVHcloud. Poderá filtrar o conteúdo por tipo de registo ou por nome de domínio.
 
@@ -272,8 +272,8 @@ Assim e neste caso específico, não poderá criar um campo CNAME para o *subdom
 
 [Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](/pages/web_cloud/domains/dns_dnssec){.external}
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links//partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links//support).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

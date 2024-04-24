@@ -36,7 +36,7 @@ Un **dominio** è composto da diversi livelli. Questi livelli sono generalmente 
 
 - Disporre di almeno un [dominio](https://www.ovhcloud.com/it/domains/);
 - Disporre di una zona DNS attiva per il dominio. Se necessario, consulta la nostra guida "[Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)";
-- Avere accesso allo [Spazio Cliente OVHcloud](/links//manager);
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager);
 - Disporre dei diritti necessari per tutti i servizi in questione. Per maggiori informazioni consulta la nostra guida [Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts).
   
 ## Procedura
@@ -140,7 +140,7 @@ Per i servizi non menzionati, consulta la documentazione relativa al servizio in
 
 #### Caso 1: visualizza un sito Web presente sul tuo hosting Web OVHcloud con un sottodominio
 
-Come per i domini e per autorizzare un sottodominio a visualizzare il contenuto di una cartella *di destinazione* presente su un hosting Web, accedi allo [Spazio Cliente OVHcloud](/links//manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona la tua offerta in cui si trova il sito Web e poi clicca sulla scheda `Multisito`{.action}.
+Come per i domini e per autorizzare un sottodominio a visualizzare il contenuto di una cartella *di destinazione* presente su un hosting Web, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona la tua offerta in cui si trova il sito Web e poi clicca sulla scheda `Multisito`{.action}.
 
 È qui che autorizzi l'accesso del sottodominio al tuo hosting Web in cui si trova il tuo sito Web.
 
@@ -153,7 +153,7 @@ Per maggiori informazioni sulla configurazione di un dominio o sottodominio su u
 
 #### Caso 2 - Crea indirizzi email Exchange con un sottodominio
 
-Per sbloccare la creazione di indirizzi email Exchange personalizzati con un sottodominio, accedi al tuo [Spazio Cliente OVHcloud](/links//manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Microsoft`{.action} nella colonna di sinistra e poi su `Exchange`{.action}. Seleziona la piattaforma Exchange da utilizzare con il sottodominio. Accedi alla scheda `Domini associati`{.action} e clicca sul pulsante `Aggiungi un dominio`{.action} a destra.
+Per sbloccare la creazione di indirizzi email Exchange personalizzati con un sottodominio, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Microsoft`{.action} nella colonna di sinistra e poi su `Exchange`{.action}. Seleziona la piattaforma Exchange da utilizzare con il sottodominio. Accedi alla scheda `Domini associati`{.action} e clicca sul pulsante `Aggiungi un dominio`{.action} a destra.
 
 In questo modo è possibile dichiarare il sottodominio sulla piattaforma Exchange.
 
@@ -165,7 +165,7 @@ Per maggiori informazioni sulla configurazione di una piattaforma Exchange, cons
 
 #### Caso 3 - Crea indirizzi Email Pro con un sottodominio
 
-Per sbloccare la creazione di indirizzi Email Pro personalizzati con un sottodominio, accedi allo [Spazio Cliente OVHcloud](/links//manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Email Pro`{.action} e seleziona la piattaforma Email Pro da utilizzare con il sottodominio. Accedi alla scheda `Domini associati`{.action} e clicca sul pulsante `Aggiungi un dominio`{.action} a destra.
+Per sbloccare la creazione di indirizzi Email Pro personalizzati con un sottodominio, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Email Pro`{.action} e seleziona la piattaforma Email Pro da utilizzare con il sottodominio. Accedi alla scheda `Domini associati`{.action} e clicca sul pulsante `Aggiungi un dominio`{.action} a destra.
 
 In questo modo è possibile dichiarare il sottodominio sulla piattaforma Email Pro.
 
@@ -193,8 +193,8 @@ Per maggiori informazioni sulla configurazione di una piattaforma Email Pro, con
 
 [Aggiungere un record CNAME per convalidare il dominio sul servizio di posta](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links//partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links//support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

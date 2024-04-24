@@ -78,6 +78,6 @@ If you have any additional questions about Zonemaster, see the [FAQ](https://zon
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/) .
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.
