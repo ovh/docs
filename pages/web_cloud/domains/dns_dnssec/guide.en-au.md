@@ -76,6 +76,6 @@ With the activation button above `Secured Delegation - DNSSEC`{.action}, you can
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
 
 Join our community of users on <https://community.ovh.com/en/>. 

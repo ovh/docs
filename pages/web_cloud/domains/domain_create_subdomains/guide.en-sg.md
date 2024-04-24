@@ -190,6 +190,6 @@ For more details on configuring an Email Pro platform, please refer to the follo
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
 
 Join our community of users on <https://community.ovh.com/en/>.

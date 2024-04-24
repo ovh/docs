@@ -104,6 +104,6 @@ Una vez que haya introducido toda la información, siga los pasos que se indican
 
 Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
 
-Si necesita ayuda sobre el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras diferentes [ofertas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si necesita ayuda sobre el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras diferentes [ofertas de soporte](/links//support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
