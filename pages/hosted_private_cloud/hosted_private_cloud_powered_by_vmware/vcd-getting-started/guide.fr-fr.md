@@ -14,13 +14,19 @@ updated: 2024-04-16
 > Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
 - Avoir un compte VMware Cloud Director
+[comment]: <> (A valider avec Franck pour cette partie VCF)
 - Avoir une infrastructure VMware Cloud Foundation (VCF)
+  - vSphere et des ressrouces NSX (selon offre)
+  - VSan (selon offre)
+- Une organisation Virtual Data Center VCD (OVH)
 
 ## En pratique
 
 VMware vCloud Director (VCD) est une plateforme de gestion de cloud computing. Celle-ci permet la création, la gestion et le déploiement de ressources informatiques virtualisées à grande échelle. VCD offre une infrastructure agile et évolutive. Grâce à son interface utilisateur conviviale et à ses fonctionnalités avancées telles que la gestion des ressources, la facturation automatisée et la sécurité renforcée, vCloud Director simplifie la gestion des environnements cloud complexes.
-
 Cette solution vous permet de provisionner et de gérer efficacement des machines virtuelles, des réseaux virtuels et d'autres ressources, offrant ainsi une agilité opérationnelle et une flexibilité accrues pour répondre aux besoins changeants des entreprises.
+
+[comment]: <> (Réécriture de l'introduction "En pratique" pour accès plus le propos sur le service que fournis OVH afin de se démarquer de VMware)
+VMware vCloud Director (VCD) par OVH Cloud permet d'avoir un service reuni au sein d'une même organisation managé par nos soins. Ce sera cette organisation que vous n'aurez pas à gérer.
 
 >[!primary]
 > Une fois connecté à votre interface web, vous serez accueilli par un tableau de bord affichant vos **vDC**, ainsi qu'un résumé détaillé de votre utilisation des ressources (10). En haut de l'écran, vous trouverez également une barre de navigation regroupant les différentes options de paramétrage disponibles pour vCloud Director (VCD).
