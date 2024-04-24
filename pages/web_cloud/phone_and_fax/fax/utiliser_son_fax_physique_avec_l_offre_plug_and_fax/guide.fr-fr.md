@@ -14,11 +14,11 @@ Vous pouvez configurer la réception de vos fax via votre espace client OVHcloud
 
 - Disposer d’une ligne [Plug & Fax OVHcloud](/links/telecom/plug-and-fax)
 - Disposer d'un télécopieur
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager-telecom)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne Plug & Fax.
+Connectez-vous à votre [espace client OVHcloud](/links/manager-telecom) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne Plug & Fax.
 
 ## En pratique
 
@@ -46,7 +46,7 @@ L'offre Plug & Fax permet d'utiliser deux modes de réception, au choix :
 - uniquement par e-mail ou via le logiciel Ecofax.
 
 La sélection d'un de ces deux modes s'effectue via les renvois d'appels sur votre ligne Plug & Fax.
-Pour y accéder, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. 
+Pour y accéder, connectez-vous à votre [espace client OVHcloud](/links/manager-telecom) puis sélectionnez `Télécom`{.action}. 
 <br>Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne concernée.
 <br>Cliquez sur `Gestion des appels`{.action} puis sur `Renvoi d'appel`{.action}
 
@@ -88,7 +88,7 @@ Pour configurer les notifications par e-mail de votre ligne, reportez vous au gu
 
 Avec l'offre Plug & Fax, vous pouvez modifier la présentation du numéro lors des appels sortants.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. 
+Connectez-vous à votre [espace client OVHcloud](/links/manager-telecom) puis sélectionnez `Télécom`{.action}. 
 <br>Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne concernée.
 
 <br>Cliquez sur `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}

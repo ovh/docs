@@ -20,7 +20,7 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 ## Prérequis
 
 - Disposer d'un [numéro alias](/links/telecom/numeros){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -37,7 +37,7 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 
 ### Étape 1 : Appliquer la configuration Contact Center Solution <a name="appliquer-CCS"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.<br>
+Connectez-vous à votre [espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.<br>
 Cliquez sur `Téléphonie`{.action}, sélectionnez le groupe de téléphonie puis le numéro à configurer.<br>
 Dans l'onglet `Configuration`{.action}, cliquez sur `Passer en mode expert`{.action} pour sélectionner **Contact Center Solution**.<br>
 Validez en cliquant sur `Paramétrer`{.action}. L'application de la configuration prend quelques secondes.

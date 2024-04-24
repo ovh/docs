@@ -18,7 +18,7 @@ Lorsque vous disposez d'un numéro alias chez OVHcloud, qu'il soit nouvellement 
 ## Prérequis
 
 - Disposer d'un [numéro alias fourni par OVHcloud](/links/telecom/numeros){.external} ou d'un [numéro porté](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -26,7 +26,7 @@ Lorsque vous disposez d'un numéro alias chez OVHcloud, qu'il soit nouvellement 
 
 ### Étape 1 : accéder à la gestion de votre numéro
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external} et assurez-vous de vous situer dans la partie `Télécom`{.action}. Cliquez sur `Téléphonie`{.action}, sélectionnez votre groupe de téléphonie puis le numéro à configurer.
+Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager-telecom){.external} et assurez-vous de vous situer dans la partie `Télécom`{.action}. Cliquez sur `Téléphonie`{.action}, sélectionnez votre groupe de téléphonie puis le numéro à configurer.
 
 Dès lors, deux possibilités existent selon le numéro concerné :
 
