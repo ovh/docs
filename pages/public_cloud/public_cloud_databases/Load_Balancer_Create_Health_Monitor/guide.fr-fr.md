@@ -91,11 +91,43 @@ Selon l'interface choisie, voici les étapes à suivre :
 
 #### Espace client OVHcloud
 
-1. **Connexion** : Connectez-vous à votre espace client OVHcloud.
-2. **Sélection du projet** : Allez dans la section "Public Cloud" et sélectionnez votre projet.
-3. **Accès au Load Balancer** : Cliquez sur "Load Balancer" dans le menu de gauche. Sélectionnez le Load Balancer pour lequel vous souhaitez configurer un Health Monitor.
-4. **Création du Health Monitor** : Dans l'onglet "Health Monitors", cliquez sur "Ajouter un Health Monitor". Remplissez les détails nécessaires tels que le type de Health Monitor (HTTP, TCP, etc.), l’intervalle de vérification, le nombre de tentatives et le timeout.
-5. **Validation** : Une fois les informations renseignées, cliquez sur "Créer" pour activer votre Health Monitor.
+## Configuration d'un Health Monitor sur OVHcloud Load Balancer
+
+Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balancer OVHcloud, ce qui permet de surveiller l'état de santé des serveurs du pool :
+
+1. **Connexion**
+   - Connectez-vous à votre espace client OVHcloud.
+
+2. **Sélection du projet**
+   - Naviguez à la section "Public Cloud" et sélectionnez votre projet.
+
+3. **Accès au Load Balancer**
+   - Cliquez sur "Load Balancer" dans le menu de gauche. Sélectionnez le Load Balancer que vous souhaitez configurer.
+
+4. **Accès aux Pools**
+   - Allez dans l'onglet "Pools", puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
+
+5. **Configuration du Health Monitor**
+   - Cliquez sur l'onglet "Health Monitors" au sein du détail du Pool, puis sur "Ajouter un Health Monitor".
+   - **Informations générales**:
+     - **Nom**: Doit contenir uniquement des lettres, nombres, underscores, tirets ou points.
+     - **Type**: Sélectionnez le type de Health Monitor (par exemple, HTTP, HTTPS, TCP, TLS-hello).
+   
+   - Pour les types **HTTP** et **HTTPS**:
+     - **URL PATH**: Spécifiez le chemin d'accès utilisé pour le test.
+     - **Code Attendu**: Indiquez les codes d'état HTTP attendus, pouvant être un seul chiffre, une liste de chiffres séparés par des virgules, ou un intervalle (deux chiffres séparés par un trait d'union).
+   
+   - **Paramètres de test**:
+     - **Max Retries Down**: Nombre d'échecs de connexion autorisés avant de marquer le membre comme défaillant (entre 1 et 10, défaut 3).
+     - **Delay**: Intervalle entre deux tests du Health Monitor (doit être supérieur au timeout).
+     - **Max Retries**: Nombre total d'échecs de connexion autorisés avant de marquer le membre comme inactif (entre 1 et 10).
+     - **Timeout**: Durée après laquelle un test s'arrête (doit être égal ou supérieur à la périodicité).
+
+6. **Validation**
+   - Une fois toutes les informations renseignées, cliquez sur "Ajouter" pour activer votre Health Monitor.
+
+Ce processus crée un Health Monitor qui effectuera régulièrement des contrôles d'intégrité sur chaque membre du pool, utilisant les résultats pour déterminer si le membre doit recevoir de nouvelles connexions. Un seul Health Monitor peut être défini pour chaque pool.
+
 
 #### CLI (OpenStack)
 
