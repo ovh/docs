@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Héberger un site statique dans un bucket S3
 excerpt: Apprenez à configurer un bucket S3 pour héberger un site web statique
-updated: 2023-05-11
+updated: 2024-04-24
 ---
 
 ## Objectif
@@ -30,7 +30,30 @@ Un bucket S3 est un conteneur d'objets « plat ». Il ne fournit aucune organisa
 > - Les fichiers CSS doivent être téléversés avec un ContentType de type text/css.
 > - Le contenu de votre bucket doit être public, c'est à dire que toutes les ressources doivent avoir un ACL "public-read".
 
-### Étape 2 : configuration d'un site sur un bucket
+### Étape 2 : définition des permissions
+
+Le bucket hébergeant le site web et son contenu doit être accessible publiquement, c'est-à-dire avec une autorisation de lecture (READ) définie pour tous les utilisateurs.
+
+**Exemple** :
+
+Utilisez la liste de contrôle d'accès prédéfinie `PUBLIC-READ` au niveau du bucket :
+
+```sh
+aws --profile user-aws s3api put-bucket-acl --bucket my-website --acl public-read
+```
+
+Application de la liste de contrôle d'accès prédéfinie `PUBLIC-READ` sur **tous** les objets :
+
+```sh
+#!/bin/bash
+declare -a output=($(aws s3api list-objects-v2 --bucket my-website --query='Contents[].Key' | jq -r '.[]'))
+for value in "${output[@]}"
+do
+    aws s3api put-object-acl --bucket my-website --key $value --acl public-read
+done
+```
+
+### Étape 3 : configuration d'un site sur un bucket
 
 Pour activer votre hébergement web, il est nécessaire de téléverser la configuration du site web.
 
@@ -59,7 +82,7 @@ Si vous utilisez les commandes de bas niveau AWS avec website-conf.json :
 }
 ```
 
-### Étape 3 : test du endpoint
+### Étape 4 : test du endpoint
 
 Une fois la configuration du site web téléversée avec succès, vous pouvez tester le endpoint dans votre navigateur web.
 Le endpoint par défaut dépendra de la région de votre bucket.
@@ -75,7 +98,7 @@ Où `storage_class` est :
 
 > [!primary]
 > Si vous souhaitez utiliser un endpoint personnalisé, vous devrez fournir votre propre nom de domaine.
-> Retrouvez plus d'informations sur les offres de noms de domaine OVHcloud sur [le site OVHcloud](https://www.ovhcloud.com/fr/domains/).
+> Retrouvez plus d'informations sur les offres de noms de domaine OVHcloud sur [le site OVHcloud](/links/web/domains).
 
 > [!warning]
 > - Assurez-vous que la région dans laquelle vous hébergez votre bucket supporte la classe de stockage que vous choisissez. Vous pouvez consulter la liste des classes de stockage prises en charge par région [ici](/pages/storage_and_backup/object_storage/s3_location).
@@ -85,6 +108,6 @@ Où `storage_class` est :
 
 [Activer HTTPS sur un site statique S3 avec un fqdn personnalisé](/pages/storage_and_backup/object_storage/s3_website_https)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
