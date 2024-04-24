@@ -16,7 +16,7 @@ Vous pouvez envoyer des fax OVHcloud de différentes manières. Ce guide vous pr
 
 ## Prérequis
 
-- Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
+- Disposer d’une [ligne Fax OVHcloud](/links/telecom/fax).
 - Avoir téléchargé et configuré le [logiciel EcoFax](https://www.ovhtelecom.fr/fax/logiciel-ecofax.xml)
 
 ## En pratique
