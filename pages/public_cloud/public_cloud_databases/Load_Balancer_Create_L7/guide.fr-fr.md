@@ -150,9 +150,6 @@ Après avoir créé une L7 policy, vous pouvez y ajouter des règles pour préci
 - **Documentez vos règles** : Gardez une trace de la logique derrière chaque règle pour faciliter les modifications futures ou pour aider les nouveaux administrateurs à comprendre la configuration.
 - **Surveillez l'impact des règles** : Après l'activation des règles, surveillez le comportement du trafic pour s'assurer qu'elles fonctionnent comme prévu sans bloquer de trafic légitime.
 
-Cet exemple montre comment configurer une règle de type Cookie pour une politique L7, où la règle évalue si le cookie nommé "sessionId" contient une certaine valeur. En utilisant des règles bien conçues, vous pouvez contrôler finement le trafic et améliorer la sécurité et la performance de vos applications.
-
-
 ### Étape 2 : Utilisation de la CLI OpenStack et d'Horizon
 La CLI OpenStack et l'interface graphique Horizon offrent des alternatives à l'interface client OVHcloud pour la gestion des politiques et règles L7.
 
