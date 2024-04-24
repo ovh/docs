@@ -16,7 +16,7 @@ The **D**omain **N**ame **S**ystem **SEC**ecurity Extensions (**DNSSEC**) protec
 
 **Find out how to enable DNSSEC for your domain name to protect it against *cache poisoning*.**
 
-For more information on how **DNSSEC** works, please visit our page “[Understanding DNSSEC](https://www.ovhcloud.com/en-gb/domains/dnssec/){.external}”.
+For more information on how **DNSSEC** works, please visit our page “[Understanding DNSSEC](/links/web/domains-dnssec){.external}”.
 
 You can also refer to our guides on [OVHcloud DNS servers](/pages/web_cloud/domains/dns_server_general_information) and on [editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit) if you would like more information on these topics.
 

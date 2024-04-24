@@ -20,7 +20,7 @@ Dzięki temu mogą przekierować przychodzące strumienie Twojej domeny na włas
 
 **Dowiedz się, jak aktywować DNSSEC dla Twojej domeny, aby zapewnić jej ochronę przed atakiem "Cache poisoning".**
 
-Aby uzyskać więcej informacji na temat działania usługi **DNSSEC**, sprawdź naszą stronę "[Dowiedz się więcej o DNSSEC](https://www.ovhcloud.com/pl/domains/dnssec/){.external}".
+Aby uzyskać więcej informacji na temat działania usługi **DNSSEC**, sprawdź naszą stronę "[Dowiedz się więcej o DNSSEC](/links/web/domains-dnssec){.external}".
 
 Zapoznaj się również z naszymi przewodnikami dotyczącymi [serwerów DNS OVHcloud](/pages/web_cloud/domains/dns_server_general_information) oraz [edycji strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit), jeśli chcesz uzyskać więcej informacji na temat tych tematów.
 

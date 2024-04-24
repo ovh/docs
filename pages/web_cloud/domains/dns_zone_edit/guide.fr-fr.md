@@ -294,7 +294,7 @@ De ce fait et dans ce cas bien spécifique, vous ne pourrez pas créer un champ 
 
 [Ajouter un champ SPF à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_spf){.external}.
 
-[Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](https://www.ovhcloud.com/fr/domains/dnssec/){.external}.
+[Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](/links/web/domains-dnssec){.external}.
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

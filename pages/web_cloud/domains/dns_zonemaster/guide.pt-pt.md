@@ -77,7 +77,7 @@ Se tiver questões adicionais sobre Zonemaster, consulte a secção [FAQ](https:
 
 [Modificação de uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
 
-[Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](https://www.ovhcloud.com/pt/domains/dnssec/){.external}
+[Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](/links/web/domains-dnssec){.external}
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 
