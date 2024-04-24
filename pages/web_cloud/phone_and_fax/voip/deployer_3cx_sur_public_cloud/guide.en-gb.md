@@ -664,6 +664,6 @@ In this JSON, insert the template into `userData`. Warning: line breaks must be 
 
 For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.
