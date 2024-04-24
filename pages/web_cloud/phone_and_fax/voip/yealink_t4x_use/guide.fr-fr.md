@@ -11,7 +11,7 @@ updated: 2018-05-30
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](https://www.ovhtelecom.fr/telephonie/){.external}.
+- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie){.external}.
 - Avoir réceptionné et installé le téléphone Yealing T4X fourni par OVH.
 
 ## En pratique

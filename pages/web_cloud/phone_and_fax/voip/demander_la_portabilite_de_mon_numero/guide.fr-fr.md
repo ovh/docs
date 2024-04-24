@@ -13,7 +13,7 @@ La portabilité permet à un abonné de conserver son numéro de téléphone lor
 ## Prérequis
 
 - Disposer d'au moins un numéro de téléphone chez un autre opérateur, dont le pays est compatible avec [la portabilité chez OVHcloud](https://www.ovhtelecom.fr/telephonie/services_inclus/portabilite_numero.xml){.external}.
-- Disposer d'une offre [VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/){.external}.
+- Disposer d'une offre [VoIP OVHcloud](/links/telecom/telephonie){.external}.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action} :
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
