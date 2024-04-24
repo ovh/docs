@@ -33,7 +33,7 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont variées :
 > [!warning]
 > Les équipes de support OVHcloud ne pourront pas vous fournir d'assistance quant à la configuration matérielle et logicielle de votre réseau local, celui-ci étant de votre responsabilité.
 >
-> En cas de difficultés, nous vous recommandons de faire appel à l'un de [nos partenaires](https://partner.ovhcloud.com/fr/directory/) ou à vous faire aider par la communauté des utilisateurs OVHcloud. Pour plus d'informations, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide
+> En cas de difficultés, nous vous recommandons de faire appel à l'un de [nos partenaires](/links/partner) ou à vous faire aider par la communauté des utilisateurs OVHcloud. Pour plus d'informations, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide
 >
 
 Ce tutoriel vous détaille les causes principales, liées au réseau local, d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 

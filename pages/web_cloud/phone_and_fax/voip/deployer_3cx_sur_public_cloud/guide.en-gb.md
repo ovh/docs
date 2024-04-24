@@ -21,7 +21,7 @@ At the end of this guide, you will have the basics to manage the deployment of y
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
 
 We will use a template in XML format so that we can automatically configure the 3CX instance.
@@ -662,7 +662,7 @@ In this JSON, insert the template into `userData`. Warning: line breaks must be 
 
 [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 
-For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](https://www.ovhcloud.com/en-gb/support-levels/).
 

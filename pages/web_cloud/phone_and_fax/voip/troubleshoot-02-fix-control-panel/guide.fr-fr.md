@@ -187,6 +187,6 @@ Afin de faciliter le diagnostic du téléphone par nos équipes, veillez à bien
  
 ## Aller plus loin <a name="gofurther"></a>
 
-En cas de difficultés, nous vous recommandons de faire appel à l'un de [nos partenaires](https://partner.ovhcloud.com/fr/directory/).
+En cas de difficultés, nous vous recommandons de faire appel à l'un de [nos partenaires](/links/partner).
  
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
