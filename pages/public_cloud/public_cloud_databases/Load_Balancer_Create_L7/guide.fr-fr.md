@@ -86,6 +86,8 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
 #### 3. **Gérer les Politiques L7**
 
 - Après avoir sélectionné votre Load Balancer, vous accéderez à son interface de gestion. Trouvez et cliquez sur l'onglet « **listeners** » pour afficher la liste des listeners.
+
+![Schema 1](images/Policy 1_1.png)
 - Pour accéder aux options de gestion des politiques L7 d'un listener spécifique, cliquez sur les trois petits points (...) situés à droite du listener que vous souhaitez configurer. 
 - Sélectionnez l'option « **Voir les L7 policies** » dans le menu déroulant.
 - **Note importante :** La gestion des politiques L7 n'est disponible que pour les listeners utilisant les protocoles `HTTP` et `TERMINATED HTTPS`. Assurez-vous que votre listener utilise l'un de ces protocoles avant de tenter d'accéder à ces paramètres.
