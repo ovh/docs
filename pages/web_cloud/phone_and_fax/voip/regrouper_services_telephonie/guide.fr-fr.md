@@ -16,12 +16,12 @@ Rattacher plusieurs lignes au sein d'un seul groupe permet aussi la supervision 
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr).
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom).
 - Disposer de [lignes SIP OVHcloud](/links/telecom/voip) et/ou de [numéros alias OVHcloud](/links/telecom/numeros).
 
 ## En pratique
 
-Afin d'accéder à la gestion des groupes de téléphonie, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr). Dans la partie `Télécom`{.action}, cliquez sur `Téléphonie`{.action}.
+Afin d'accéder à la gestion des groupes de téléphonie, connectez-vous à votre [espace client OVHcloud](/links/manager-telecom). Dans la partie `Télécom`{.action}, cliquez sur `Téléphonie`{.action}.
 
 Les différents groupes apparaissent alors. Cliquez sur un groupe pour afficher la liste des services qu'il contient.
 

@@ -20,7 +20,7 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 ## Prérequis
 
 - Disposer d'un [numéro alias](/links/telecom/numeros){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -37,7 +37,7 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 
 ### Étape 1 : Appliquer la configuration Contact Center Solution <a name="appliquer-CCS"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.<br>
+Connectez-vous à votre [espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.<br>
 Cliquez sur `Téléphonie`{.action}, sélectionnez le groupe de téléphonie puis le numéro à configurer.<br>
 Dans l'onglet `Configuration`{.action}, cliquez sur `Passer en mode expert`{.action} pour sélectionner **Contact Center Solution**.<br>
 Validez en cliquant sur `Paramétrer`{.action}. L'application de la configuration prend quelques secondes.
@@ -115,7 +115,7 @@ Vous pouvez ajouter deux types d'agents, des lignes SIP internes (appartenant à
 |**Ligne externe**<br><br>![ligne SIP externe](images/agent-externe2021.png){.thumbnail}|Pour ajouter une ligne téléphonique externe, renseignez son numéro au format international (0033xxxxxxxxx pour la France) directement dans le champ « Numéro ».<br><br>Validez l'ajout de chaque ligne en cliquant sur `Ajouter un agent`{.action}.|
 
 > [!warning]
-> L'ajout d'une ligne externe peut occasionner des frais car un appel reçu par celle-ci sera comptabilisé en hors-forfait. Vous pouvez consulter nos tarifs hors-forfait en vigueur sur [cette page](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml){.external}. Nous vous conseillons donc de privilégier les lignes internes ou de n'utiliser une ligne externe qu'en solution de repli.
+> L'ajout d'une ligne externe peut occasionner des frais car un appel reçu par celle-ci sera comptabilisé en hors-forfait. Vous pouvez consulter nos tarifs hors-forfait en vigueur sur [cette page](/links/telecom/tarifs-telephonie){.external}. Nous vous conseillons donc de privilégier les lignes internes ou de n'utiliser une ligne externe qu'en solution de repli.
 >
 
 Les agents et leurs attributs sont visibles dans la « Liste des agents ». Vous pouvez modifier ces attributs en cliquant sur le stylo à droite de chaque agent.
