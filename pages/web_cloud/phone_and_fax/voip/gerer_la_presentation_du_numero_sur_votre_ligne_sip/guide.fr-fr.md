@@ -14,7 +14,7 @@ Votre ligne téléphonique OVHcloud vous permet de recevoir et d'émettre des ap
 
 - Disposer de (au choix) :
     - deux [lignes VoIP OVHcloud](/links/telecom/voip){.external};
-    - une [ligne VoIP OVHcloud](/links/telecom/voip) et un [numéro alias OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/);
+    - une [ligne VoIP OVHcloud](/links/telecom/voip) et un [numéro alias OVHcloud](/links/telecom/numeros);
     - une [ligne Trunk](/links/telecom/sip-trunk);
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom` :
 

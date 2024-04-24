@@ -18,7 +18,7 @@ Cette configuration permet notamment la réception d'appels sur votre numéro pr
 
 ## Prérequis
 
-- Disposer d'un [numéro alias fourni par OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/){.external} ou d'un [numéro porté](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
+- Disposer d'un [numéro alias fourni par OVHcloud](/links/telecom/numeros){.external} ou d'un [numéro porté](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
 - Disposer d'[une ligne SIP OVHcloud](/links/telecom/voip){.external}.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
