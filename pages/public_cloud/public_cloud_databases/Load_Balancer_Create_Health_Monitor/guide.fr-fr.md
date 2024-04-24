@@ -107,7 +107,7 @@ Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balan
 4. **Accès aux Pools**
    - Allez dans l'onglet "Pools", puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
      
-![Schema 1](images/HealthM1.png)
+![Schema 1](images/healthM1.png)
 
 5. **Configuration du Health Monitor**
    - Cliquez sur l'onglet "Health Monitors" au sein du détail du Pool, puis sur "Ajouter un Health Monitor".
