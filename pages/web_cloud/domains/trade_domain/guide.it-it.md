@@ -103,7 +103,7 @@ Per questa operazione non è necessario confermare le modifiche tramite email.
 
 [Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links//partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links//support).
 

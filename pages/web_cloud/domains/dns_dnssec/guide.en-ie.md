@@ -74,7 +74,7 @@ With the activation button above `Secured Delegation - DNSSEC`{.action}, you can
 
 [Edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
 

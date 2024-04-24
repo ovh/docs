@@ -44,7 +44,7 @@ You can set up multiple MX records for the same domain name. It is then necessar
 > [!warning]
 >
 > Generally speaking, **modifying MX records in a domain name’s DNS zone warrants caution**. If you make any mistakes configuring the records, it may make it impossible for emails to reach your email address. Please take care when you carry out this procedure.
-> If you have any doubts, we advise contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/).
+> If you have any doubts, we advise contacting a [specialist provider](/links//partner).
 
 ### OVHcloud MX configuration values <a name="mxovhcloud"></a>
 
@@ -97,7 +97,7 @@ Fill in the values, complete the steps, then click `Confirm`{.action}.
 
 [Configuring a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
 

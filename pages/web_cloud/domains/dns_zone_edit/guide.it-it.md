@@ -273,7 +273,7 @@ Per questo motivo e in questo caso specifico, non è possibile creare un record 
 
 [Proteggere il dominio dal Cache Poisoning con DNSSEC](/pages/web_cloud/domains/dns_dnssec){.external}
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links//partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links//support).
 

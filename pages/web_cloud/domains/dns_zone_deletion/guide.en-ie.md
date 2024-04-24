@@ -101,7 +101,7 @@ A final confirmation email will be sent to the email address of the [Administrat
 
 [Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
 

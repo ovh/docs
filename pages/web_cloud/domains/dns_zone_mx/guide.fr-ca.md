@@ -44,7 +44,7 @@ Vous pouvez paramétrer plusieurs enregistrements MX pour un même nom de domain
 > [!warning]
 >
 > De manière générale, **modifier les enregistrements MX dans la zone DNS de son nom de domaine est une manipulation délicate** : réaliser une mauvaise manipulation peut rendre impossible la réception des e-mails sur vos adresses. Nous vous invitons à être vigilant lors de la réalisation de cette manipulation.
-> En cas de doute, nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/).
+> En cas de doute, nous vous conseillons de faire appel à un [prestataire spécialisé](/links//partner).
 
 ### Valeurs de la configuration MX OVHcloud <a name="mxovhcloud"></a>
 

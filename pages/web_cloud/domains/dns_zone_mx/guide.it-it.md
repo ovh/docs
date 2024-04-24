@@ -49,7 +49,7 @@ L’email sarà inviata verso la destinazione **mx0.mail.ovh.net**, preceduta da
 > [!warning]
 >
 > In generale, **modificare i record MX nella zona DNS del dominio è un’operazione delicata**: un’azione errata potrebbe rendere impossibile la ricezione delle email sugli indirizzi. Ti consigliamo di prestare la massima attenzione durante questa operazione.
-> In caso di dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+> In caso di dubbi, ti consigliamo di rivolgerti a un [provider specializzato](/links//partner).
 
 ### Valori della configurazione MX di OVHcloud <a name="mxovhcloud"></a>
 

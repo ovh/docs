@@ -34,7 +34,7 @@ En función de sus necesidades, es posible personalizar el nombre de los servido
 > [!warning]
 >
 > **Personalizar los servidores DNS de un dominio es una operación delicada**: una modificación errónea puede cortar el acceso al sitio web o hacer que la recepción de nuevos mensajes en las direcciones de correo electrónico no esté disponible. 
-> Siga los pasos que se describen a continuación y, en caso de duda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
+> Siga los pasos que se describen a continuación y, en caso de duda, contacte con un [proveedor especializado](/links//partner).
 >
 
 ### Etapa 1: obtenga los servidores DNS que utiliza actualmente su dominio <a name="step1"></a>
@@ -164,7 +164,7 @@ Aparecerá una ventana con su zona DNS en modo *textual*:
 > [!warning]
 >
 > Le recordamos que un cambio inoportuno en modo *textual* en su zona DNS puede cortar el acceso a su sitio web y/o hacer que la recepción de nuevos mensajes en sus direcciones de correo electrónico no esté disponible. 
-> En caso de duda, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
+> En caso de duda, póngase en contacto con un [proveedor especializado](/links//partner).
 >
 
 En esta ventana, sustituya **únicamente en los registros de tipo *NS*** los nombres de los servidores DNS por sus propios nombres de servidores DNS personalizados **sin olvidar** aumentar en `1` el primer valor numérico de la línea *SOA*. Una vez realizados los cambios, haga clic en `Siguiente`{.action} y luego en `Aceptar`{.action}.
@@ -226,7 +226,7 @@ Si necesita ayuda, consulte la guía [Editar una zona DNS de OVHcloud](/pages/we
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links//partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links//support).
 

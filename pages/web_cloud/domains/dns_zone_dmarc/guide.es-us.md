@@ -18,7 +18,7 @@ El registro **D**omain-based **M**essage **A**uthentication, **R**eporting, and 
 >
 > OVHcloud ofrece servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [«Más información»](#go-further) de este tutorial.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links//partner). Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [«Más información»](#go-further) de este tutorial.
 >
 
 ## Requisitos
@@ -179,7 +179,7 @@ Obtenemos el siguiente resultado:
 
 ## Más información <a name="go-further"></a>
 
-Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links//partner).
 
 Si necesita ayuda sobre el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras diferentes [ofertas de soporte](/links//support).
 

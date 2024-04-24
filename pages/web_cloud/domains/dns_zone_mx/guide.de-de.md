@@ -49,7 +49,7 @@ Sie können mehrere MX-Einträge für denselben Domainnamen einrichten. In diese
 > [!warning]
 >
 > Generell ist bei der **Änderung der MX-Einträge in der DNS-Zone Ihres Domainnamens Vorsicht geboten**: Bei einer fehlerhaften Änderung können E-Mails an Ihre Adressen nicht mehr empfangen werden.
-> Im Zweifelsfall empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren.
+> Im Zweifelsfall empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links//partner) zu kontaktieren.
 
 ### Werte der OVHcloud MX-Konfiguration <a name="mxovhcloud"></a>
 
@@ -102,7 +102,7 @@ Wenn Sie alle Daten eingegeben haben, schließen Sie die Schritte ab und klicken
 
 [DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links//partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links//support).
 

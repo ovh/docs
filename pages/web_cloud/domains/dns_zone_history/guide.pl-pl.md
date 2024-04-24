@@ -111,7 +111,7 @@ Dzięki niniejszemu przewodnikowi możesz teraz porównywać dwie strefy DNS ora
 
 [Utworzenie strefy DNS w OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links//support).
 

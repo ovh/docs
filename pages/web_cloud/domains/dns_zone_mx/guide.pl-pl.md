@@ -49,7 +49,7 @@ Dla tej samej domeny można skonfigurować wiele rekordów MX. W takim przypadku
 > [!warning]
 >
 > Ogólnie rzecz biorąc, **modyfikacja rekordów MX w strefie DNS domeny jest operacją wymagającą wiedzy** : omyłkowe działanie może uniemożliwić spływanie e-maili na Twoje adresy. Zalecamy szczególną ostrożność podczas wykonywania tej operacji.
-> W przypadku wątpliwości zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](https://partner.ovhcloud.com/pl/directory/).
+> W przypadku wątpliwości zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](/links//partner).
 
 ### Wartości konfiguracji MX OVHcloud <a name="mxovhcloud"></a>
 

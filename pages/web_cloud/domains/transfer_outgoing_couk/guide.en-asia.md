@@ -73,6 +73,6 @@ Successfully changing the TAG initiates the transfer process. Contact your new p
 
 [Transferring a domain name to another registrar](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

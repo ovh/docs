@@ -14,7 +14,7 @@ The **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**omp
 >
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This tutorial is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) if you experience any issues. OVHcloud cannot provide you with technical support in this regard.
+> This tutorial is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links//partner) if you experience any issues. OVHcloud cannot provide you with technical support in this regard.
 > You can find more information in the [Go further](#gofurther) section of this tutorial.
 >
 
@@ -180,7 +180,7 @@ The result is:
 
 ## Go further <a name="go-further"></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
 

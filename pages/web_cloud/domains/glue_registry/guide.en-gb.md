@@ -30,7 +30,7 @@ Depending on your needs, you can customise your OVHcloud domain name’s DNS ser
 > [!warning]
 >
 > **Customising a domain name’s DNS servers is a sensitive procedure**: An inappropriate change can prevent access to your website and/or interrupt the reception of emails sent to your email addresses.
-> Please follow the steps below carefully, or contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you have any doubts.
+> Please follow the steps below carefully, or contact a [specialist provider](/links//partner) if you have any doubts.
 >
 
 ### Step 1: Retrieve the DNS servers currently used by your domain name <a name="step1"></a>
@@ -158,7 +158,7 @@ A window will appear with your DNS zone in *text* mode:
 > [!warning]
 >
 > As a reminder, making an inappropriate change in *text* mode in your DNS zone can prevent access to your website and/or make your email addresses unable to receive incoming emails. 
-> Contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you have any doubts.
+> Contact a [specialist provider](/links//partner) if you have any doubts.
 >
 
 In this window, replace **only in records of the type *NS*** the names of the DNS servers with your own custom DNS server names. You **also have to** increment the first numeric value in the *SOA* line by "1". Once you have made your changes, click `Next`{.action} then `Confirm`{.action}.
@@ -220,7 +220,7 @@ If necessary, please refer to our guide on [editing an OVHcloud DNS zone](/pages
 
 [Edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
 

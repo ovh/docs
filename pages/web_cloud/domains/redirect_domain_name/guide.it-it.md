@@ -392,7 +392,7 @@ Questa variabile può essere utilizzata quando trasferisci temporaneamente file 
 
 [Come modificare la mia zona DNS?](/pages/web_cloud/domains/dns_zone_edit)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links//partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links//support).
 

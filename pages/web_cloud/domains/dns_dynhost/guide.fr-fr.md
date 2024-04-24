@@ -93,7 +93,7 @@ Une fois l'[utilisateur](#step1) et l'[enregistrement DynHost](#step2) créés, 
 
 > [!warning]
 >
-> L'installation et la configuration du logiciel/client doivent être réalisées selon vos propres connaissances. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce sujet. 
+> L'installation et la configuration du logiciel/client doivent être réalisées selon vos propres connaissances. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links//partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce sujet. 
 > Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
@@ -126,7 +126,7 @@ Vous pouvez vérifier si l'adresse IP de destination a bien été mise à jour. 
 
 ## Aller plus loin <a name="go-further"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links//partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links//support).
 

@@ -128,7 +128,7 @@ Una vez realizados los cambios necesarios, debe esperar a que los cambios surtan
 
 [Modificación de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links//partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links//support).
 

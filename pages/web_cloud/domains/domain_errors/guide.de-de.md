@@ -139,7 +139,7 @@ Wenn Sie eine Anomalie feststellen, die nicht mit der Konfiguration der DNS-Serv
 
 [DNS-Server einer OVHcloud Domain ändern](/pages/web_cloud/domains/dns_server_general_information)
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links//partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links//support).
 

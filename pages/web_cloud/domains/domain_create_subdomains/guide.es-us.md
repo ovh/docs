@@ -179,7 +179,7 @@ Para más información sobre la configuración de una plataforma Exchange, consu
 
 [Añadir un registro CNAME para validar su dominio en su solución de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links//partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links//support).
 

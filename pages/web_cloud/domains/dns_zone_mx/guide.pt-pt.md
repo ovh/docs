@@ -48,7 +48,7 @@ Pode configurar vários registos MX para o mesmo domínio. É então necessário
 > [!warning]
 >
 > De forma geral, **alterar os registos MX na zona DNS do domínio é uma operação delicada** : uma manipulação incorreta pode impossibilitar a receção de e-mails nos seus endereços. Por isso, sugerimos que tenha atenção durante a realização desta operação.
-> Em caso de dúvida, sugerimos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
+> Em caso de dúvida, sugerimos que recorra a um [fornecedor especializado](/links//partner).
 
 ### Valores da configuração MX da OVHcloud <a name="mxovhcloud"></a>
 

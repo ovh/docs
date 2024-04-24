@@ -159,7 +159,7 @@ Retrouvez ci-dessous la liste des documents à fournir en fonction de la situati
 
 [Changer la propriété d'un nom de domaine](/pages/web_cloud/domains/trade_domain)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links//partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links//support).
 

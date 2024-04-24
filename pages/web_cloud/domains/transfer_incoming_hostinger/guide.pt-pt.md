@@ -43,7 +43,7 @@ Deve também:
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o seu agente de registo atual. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte [Quer saber mais?](#go-further) deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links//partner) e/ou que contacte o seu agente de registo atual. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte [Quer saber mais?](#go-further) deste guia.
 >
 
 ## Instruções
@@ -101,7 +101,7 @@ Uma vez obtido o código de autorização, pode proceder à transferência do se
 
 [Migrar o seu website e os seus e-mails para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links//partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links//support).
 

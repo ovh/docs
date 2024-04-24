@@ -188,7 +188,7 @@ For more details on configuring an Email Pro platform, please refer to the follo
 
 [Adding a CNAME record to validate your domain on your email solution](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
 

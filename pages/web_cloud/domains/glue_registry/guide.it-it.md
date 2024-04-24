@@ -34,7 +34,7 @@ In base alle esigenze, è possibile personalizzare il nome dei server DNS del do
 > [!warning]
 >
 > **Personalizzare i server DNS di un dominio è un’operazione delicata**: se non viene eseguita correttamente, il tuo sito Web potrebbe non essere raggiungibile e/o la ricezione di nuovi messaggi non sarà più disponibile. 
-> In caso di dubbi, ti consigliamo di seguire gli step descritti o rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+> In caso di dubbi, ti consigliamo di seguire gli step descritti o rivolgerti a un [provider specializzato](/links//partner).
 >
 
 ### Step 1: recupera i server DNS attualmente utilizzati dal tuo dominio <a name="step1"></a>
@@ -164,7 +164,7 @@ Viene visualizzata una finestra che include la zona DNS in modalità *testuale*:
 > [!warning]
 >
 > Ti ricordiamo che una modifica inappropriata in modalità *testuale* nella tua zona DNS può impedire l'accesso al tuo sito Web e/o rendere non disponibile la ricezione di nuovi messaggi sui tuoi indirizzi email.
-> Contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) in caso di dubbi.
+> Contatta un [provider specializzato](/links//partner) in caso di dubbi.
 >
 
 In questa finestra, sostituisci **solo nei record di tipo *NS*** i nomi dei server DNS con i tuoi nomi di server DNS personalizzati **senza dimenticare** di incrementare di "1" il primo valore numerico della riga *SOA*. Una volta effettuate le modifiche, clicca su `Continua`{.action} e poi su `Conferma`{.action}.
@@ -226,7 +226,7 @@ Se necessario, consulta le istruzioni descritte nella nostra documentazione "[Mo
 
 [Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links//partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links//support).
 

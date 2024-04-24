@@ -34,7 +34,7 @@ Je nach Ihren Bedürfnissen können Sie die DNS-Server Ihres OVHcloud Domainname
 > [!warning]
 >
 > **Die DNS-Server eines Domainnamens zu personalisieren ist ein sensibler Vorgang**: Eine falsche Änderung kann dazu führen, dass der Zugang zu Ihrer Website verhindert und/oder der Empfang von Nachrichten an Ihre E-Mail-Adressen unterbrochen wird. 
-> Folgen Sie genau den nachstehenden Anweisungen oder wenden Sie sich im Zweifelsfall an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+> Folgen Sie genau den nachstehenden Anweisungen oder wenden Sie sich im Zweifelsfall an einen [spezialisierten Dienstleister](/links//partner).
 >
 
 ### Schritt 1: Abrufen der DNS-Server, die derzeit vom Domainnamen verwendet werden <a name="step1"></a>
@@ -162,7 +162,7 @@ Es erscheint ein Fenster mit Ihrer DNS Zone im Text-Modus:
 > [!warning]
 >
 > Denken Sie daran, dass eine falsche Änderung im Text-Modus den Zugang zu Ihrer Website blockieren und/oder den Empfang neuer Nachrichten an Ihre E-Mail-Adressen verhindern kann. 
-> Im Zweifelsfall wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+> Im Zweifelsfall wenden Sie sich an einen [spezialisierten Dienstleister](/links//partner).
 >
 
 Ersetzen Sie in diesem Fenster **nur in den Einträgen vom Typ *NS*** die DNS-Servernamen durch Ihre eigenen benutzerdefinierten DNS-Servernamen **und erhöhen Sie dabei den ersten numerischen Wert der Zeile "SOA" um 1**. Wenn Sie Ihre Änderungen vorgenommen haben, klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
@@ -224,7 +224,7 @@ Falls erforderlich, folgen Sie den Anweisungen in unserer Dokumentation "[OVHclo
 
 [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links//partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links//support).
 

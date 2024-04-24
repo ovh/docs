@@ -139,7 +139,7 @@ Se riscontri un'anomalia non legata alla configurazione dei server DNS o della z
 
 [Modifica i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links//partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links//support).
 

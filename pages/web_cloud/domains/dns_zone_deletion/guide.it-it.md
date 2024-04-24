@@ -105,7 +105,7 @@ Verrà inviata un’ultima email di conferma all’indirizzo email del contatto 
 
 [Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links//partner).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links//support).
  

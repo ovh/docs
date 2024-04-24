@@ -39,7 +39,7 @@ Diese Weiterleitungen können auf mehrere Arten erreicht werden:
 > [!warning]
 >
 > Die Einrichtung einer Weiterleitung kann Auswirkungen auf das Suchmaschinen-Ranking haben. 
-> Achten Sie auf die Änderungen, die Sie vornehmen, oder kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) für SEO.
+> Achten Sie auf die Änderungen, die Sie vornehmen, oder kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](/links//partner) für SEO.
 >
 > Achtung: Eine über das [OVHcloud Kundencenter](/links//manager) erstellte Weiterleitung erlaubt nicht die Weiterleitung einer URL als `https://` auf eine andere Domain oder URL. 
 > Um diese Weiterleitungsart zu erstellen, müssen Sie "URL Rewrite" verwenden, zum Beispiel mithilfe der ".htaccess"-Datei.
@@ -287,13 +287,13 @@ Diese Einbettung von Inhalten verhindert, dass Besuchern Ihrer Website die Zield
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links//partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 Dateien mit dem Dateinamen ".htaccess" sind Konfigurationsdateien, in denen Befehle spezifiziert werden können. Wenn der Webserver (Apache) den Code Ihrer Website verarbeitet, werden die Befehle interpretiert und ausgeführt.<br>
 Sie können solche Befehle verwenden, um Weiterleitungen zu erstellen.
 
-Eine fehlerhafte ".htaccess" Datei kann Ihre Website unerreichbar machen. Kontaktieren Sie im Zweifelsfall einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) .
+Eine fehlerhafte ".htaccess" Datei kann Ihre Website unerreichbar machen. Kontaktieren Sie im Zweifelsfall einen [spezialisierten Dienstleister](/links//partner) .
 
 Unsere Dokumentation zum Thema ".htaccess" finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
 
@@ -392,7 +392,7 @@ Diese Variable kann verwendet werden, wenn Sie Dateien vorübergehend auf eine a
 
 [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links//partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links//support).
 

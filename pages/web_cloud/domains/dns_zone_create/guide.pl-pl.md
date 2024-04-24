@@ -122,7 +122,7 @@ Po uzyskaniu informacji o domenie **modyfikuj serwery DNS Twojej domeny w interf
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links//support).
 

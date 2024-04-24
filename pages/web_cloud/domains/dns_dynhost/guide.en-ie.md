@@ -91,7 +91,7 @@ Once you have created the [user](#step1) and the [DynHost record](#step2), you n
 
 > [!warning]
 >
-> The installation and configuration of software and your devices must be done according to your own knowledge. Below is some information on how to proceed. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/directory/) if you encounter any difficulties. We will not be able to assist you in this regard. 
+> The installation and configuration of software and your devices must be done according to your own knowledge. Below is some information on how to proceed. However, we recommend contacting a [specialist provider](/links//partner) if you encounter any difficulties. We will not be able to assist you in this regard. 
 > Find more information in the ["Go further"](#go-further) section of this guide.
 >
 
@@ -124,7 +124,7 @@ You can check if the destination IP address has been updated. To do this, log in
 
 ## Go further <a name="go-further"></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
 

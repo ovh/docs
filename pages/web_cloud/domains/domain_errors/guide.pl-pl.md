@@ -138,7 +138,7 @@ Jeśli zauważysz problem, który nie jest związany z konfiguracją serwerów D
 
 [Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links//support).
 

@@ -34,7 +34,7 @@ Consoante as suas necessidades, é possível personalizar o nome dos servidores 
 > [!warning]
 >
 > **Personalizar os servidores DNS de um domínio é uma operação sensível** : efetuar uma alteração inadequada pode bloquear o acesso ao seu website e/ou tornar indisponível a receção de novos e-mails. 
-> Recomendamos que siga os passos indicados abaixo ou, em caso de dúvida, que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
+> Recomendamos que siga os passos indicados abaixo ou, em caso de dúvida, que recorra a um [fornecedor especializado](/links//partner).
 >
 
 ### Etapa 1: recupere os servidores DNS atualmente utilizados pelo seu nome de domínio <a name="step1"></a>
@@ -164,7 +164,7 @@ Uma janela com a zona DNS em modo *textual* aparece:
 > [!warning]
 >
 > Uma alteração inadequada no modo *textual* na zona DNS pode interromper o acesso ao seu website e/ou tornar indisponível a receção de novas mensagens nos seus endereços de e-mail.
-> Contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) em caso de dúvida.
+> Contacte um [fornecedor especializado](/links//partner) em caso de dúvida.
 >
 
 Nesta janela, substitua **unicamente nos registos do tipo *NS*** os nomes dos servidores DNS pelos seus próprios nomes de servidores DNS personalizados **sem esquecer** de incrementar de « 1 » o primeiro valor numérico da linha *SOA*. Depois de efetuar as alterações, clique em `Seguinte`{.action} e em `Validar`{.action}.
@@ -226,7 +226,7 @@ Se necessário, consulte as instruções descritas na nossa documentação « [E
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links//partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links//support).
 

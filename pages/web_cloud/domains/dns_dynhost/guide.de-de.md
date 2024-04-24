@@ -95,7 +95,7 @@ Sobald der [Benutzer](#step1) und der [DynHost-Eintrag](#step2) erstellt wurden,
 
 > [!warning]
 >
-> Die Installation und Konfiguration von Geräten und Software muss nach Ihren eigenen Kenntnissen erfolgen. Nachfolgend finden Sie einige Informationen zur Vorgehensweise. Wir empfehlen Ihnen jedoch, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, wenn Sie Schwierigkeiten haben. Wir werden Ihnen diesbezüglich keine Hilfe anbieten können. 
+> Die Installation und Konfiguration von Geräten und Software muss nach Ihren eigenen Kenntnissen erfolgen. Nachfolgend finden Sie einige Informationen zur Vorgehensweise. Wir empfehlen Ihnen jedoch, einen [spezialisierten Dienstleister](/links//partner) zu kontaktieren, wenn Sie Schwierigkeiten haben. Wir werden Ihnen diesbezüglich keine Hilfe anbieten können. 
 > Weitere Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
 >
 
@@ -130,7 +130,7 @@ Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Loggen Sie sich hie
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links//partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links//support).
 

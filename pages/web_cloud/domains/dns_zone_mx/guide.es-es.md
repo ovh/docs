@@ -49,7 +49,7 @@ Puede configurar varios registros MX para un mismo dominio. Es necesario definir
 > [!warning]
 >
 > En general, **modificar los registros MX en la zona DNS de un dominio es una operación delicada**: una manipulación incorrecta puede hacer imposible recibir mensajes de correo en sus direcciones. Preste especial atención al realizar esta operación.
-> En caso de duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
+> En caso de duda, le recomendamos que contacte con un [proveedor especializado](/links//partner).
 
 ### Valores de la configuración MX de OVHcloud <a name="mxovhcloud"></a>
 

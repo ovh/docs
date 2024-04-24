@@ -124,7 +124,7 @@ Once you have made the required changes, you must wait for them to become fully 
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
 

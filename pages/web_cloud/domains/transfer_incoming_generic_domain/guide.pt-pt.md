@@ -172,7 +172,7 @@ Uma vez terminado o processo de transferência, pode gerir o seu domínio a part
 
 [Migração do seu website e dos seus e-mails para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links//partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links//support).
 

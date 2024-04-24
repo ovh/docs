@@ -72,6 +72,6 @@ Contactez dès lors votre nouveau fournisseur pour obtenir davantage de détails
 
 [Transférer un nom de domaine vers un autre bureau d’enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links//partner).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

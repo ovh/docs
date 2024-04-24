@@ -8,7 +8,7 @@ updated: 2023-08-30
 
 > [!warning]
 >
-> Using OVHcloud APIs requires advanced knowledge. If you experience any difficulties, please contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+> Using OVHcloud APIs requires advanced knowledge. If you experience any difficulties, please contact [OVHcloud partners](/links//partner).
 >
 
 > [!primary]

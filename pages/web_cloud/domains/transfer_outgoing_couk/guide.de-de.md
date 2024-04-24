@@ -81,6 +81,6 @@ Eine erfolgreiche Änderung des TAG startet den Transferprozess. Wenden Sie sich
 
 [Einen Domainnamen zu einem anderen Registrar transferieren](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links//partner).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

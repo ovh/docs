@@ -14,7 +14,7 @@ You have a domain name with OVHcloud and you want to connect it to a Shopify hos
 >
 > - Shopify support does not have access to your OVHcloud domain name settings and therefore cannot advise you on the exact steps.
 >
-> - OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.<br><br>We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+> - OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.<br><br>We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links//partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
@@ -102,7 +102,7 @@ If you are using an OVHcloud email solution, or planning to subscribe to one of 
 
 To delegate the management of your domain name to another OVHcloud customer account, follow the guide on [Managing contacts for OVHcloud services](/pages/account_and_service_management/account_information/managing_contacts).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links//partner).
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links//support).
  

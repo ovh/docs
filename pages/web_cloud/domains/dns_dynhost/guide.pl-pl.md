@@ -97,7 +97,7 @@ Po utworzeniu [użytkownik](#step1) i [rekordu DynHost](#step2) należy zautomat
 
 > [!warning]
 >
-> Instalacja i konfiguracja oprogramowania/klienta muszą być wykonywane zgodnie z Twoją wiedzą. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie w stanie udzielić wsparcia w tym zakresie. 
+> Instalacja i konfiguracja oprogramowania/klienta muszą być wykonywane zgodnie z Twoją wiedzą. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links//partner). Niestety firma OVHcloud nie będzie w stanie udzielić wsparcia w tym zakresie. 
 > Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
@@ -130,7 +130,7 @@ Możesz sprawdzić, czy docelowy adres IP został zaktualizowany. W tym celu zal
 
 ## Sprawdź również <a name="go-further"></a>
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links//partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links//support).
 
