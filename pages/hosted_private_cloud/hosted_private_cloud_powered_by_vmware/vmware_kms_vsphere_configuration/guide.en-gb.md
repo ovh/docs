@@ -15,12 +15,13 @@ updated: 2024-04-24
 - SSL certificate (PEM)
 
 ## Instructions
- 
+
 ### Open workflows
- 
+
 The first step is to configure the firewall to allow traffic between the KMS server and your vSphere environment.
 
 To do this, log in to your [OVHcloud Control Panel](/links/manager). Go to `Hosted Private Cloud` > `VMware` > `Your Dedicated Cloud` > `Security`.
+
 Once in the security section, go to the `Virtual Machine Encryption Key Management Servers` section (at the bottom of the page), and add a new KMS server.
 
 ![Add Server KMS](images/add_kms_server.png)
@@ -32,31 +33,33 @@ Once in the security section, go to the `Virtual Machine Encryption Key Manageme
 >
 
 > [!tabs]
-> Windows
->> Open your web browser.
+> **Windows**
 >>
->> In the address bar, enter your server’s IP address preceded by `https://` and followed by the port if necessary (for example: `https://192.0.2.1:443`).
+>> - Open your web browser.
+>> - In the address bar, enter your server’s IP address preceded by `https://` and followed by the port if necessary (for example: `https://192.0.2.1:443`).
+>> - When the page loads, click the padlock icon to the left of the URL in the address bar. This will display the certificate information.
+>> - In the certificate information, look for the section that relates to the *fingerprint*. This section can be named differently depending on the browser you are using.<br>
 >>
->> When the page loads, click the padlock icon to the left of the URL in the address bar. This will display the certificate information.
->> 
->> In the certificate information, look for the section that relates to the *fingerprint*. This section can be named differently depending on the browser you are using.
->>![Navigator Padlock](images/padlock_website.png)
->>![Sha Thumbprint Browser](images/fingerprint_sha.png)
-> Linux/MacOS
->> If you are on a Linux or MacOS host, simply run the command below in a terminal.
->> 
+>> ![Navigator Padlock](images/padlock_website.png)
+>>
+>> ![Sha Thumbprint Browser](images/fingerprint_sha.png)
+>>
+> **Linux/MacOS**
+>>
+>> If you are on a Linux or MacOS host, simply run the command below in a terminal.<br>
+>>
 >> ```shell
 >> openssl s_client -connect 54.38.64.196:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 >> ```
 
 ### Add the Key Provider in vSphere
 
-1. Add the Key Provider in vSphere. 
+#### 1. Add the Key Provider in vSphere
 
 Open a web browser and go to the address provided to access your vSphere interface. For example: `https://pcc-x.x.x.x.ovh.de/ui/`.
-Once logged in, select the `Configure` tab of your Dedicated Cloud then `Key Providers`. Add a new `Standard Key Provider`.
+Once logged in, select the `Configure` tab of your Dedicated Cloud then `Key Providers`. click `Add a new Standard Key Provider`.
 
-![Kms Key Provider](images/kms_key_provider.png)
+![KMS Key Provider](images/kms_key_provider.png)
 
 Once you have selected the option to add a Key Provider, a window or form will open where you will be asked to enter the details of the Key Provider you want to add. This may include information such as the IP address or DNS name of the KMS server and the port used.
 
@@ -64,9 +67,9 @@ Once you have selected the option to add a Key Provider, a window or form will o
 
 Wait for vSphere to establish the connection with the Key Provider you have added. You should see a hint or message confirming that the connection has been successfully established.
 
-2. Authenticate the Provider to vSphere.
+#### 2. Authenticate the Provider to vSphere
 
-Select your Key Provider you have just created and click on the `Trust VCENTER` button.
+Select your Key Provider you have just created and click on the `TRUST VCENTER` button.
 
 ![Trust KMS server](images/trust_kms.png)
 
@@ -80,7 +83,7 @@ You can check that the connection has been established by selecting your Key Pro
 
 ![Trust KMS server](images/kms_key_provider_3.png)
 
-## Encryption of a Virtual Machine
+### Encryption of a Virtual Machine
 
 Locate the virtual machine (VM) you want to encrypt. Right-click on the selected VM to display the shortcut menu. In the context menu, select `VM Policies` and then select `Edit VM Storage Policies`. This will open a window or panel where you can modify the storage policies of the VM selected.
 
@@ -96,6 +99,6 @@ You have now edited the VM storage policies and enabled KMS encryption for your 
 
 ![VM Encrypt](images/vm_encrypt.png)
 
-## Go further
- 
+## Go further <a name="go-further"></a>
+
 Join our community of users on <https://community.ovh.com/en/>.
