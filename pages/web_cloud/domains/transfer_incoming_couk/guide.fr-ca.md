@@ -72,7 +72,7 @@ Une fois que vous aurez modifié le TAG, le propriétaire du nom de domaine rece
 
 #### Étape 3 : Commande du transfert gratuit
 
-Une fois en possession de votre code d'autorisation, vous pouvez rechercher et initier la commande de transfert de votre nom de domaine sur le [site OVHcloud](https://www.ovhcloud.com/fr-ca/). La commande est similaire à celle de tout autre nom de domaine générique.
+Une fois en possession de votre code d'autorisation, vous pouvez rechercher et initier la commande de transfert de votre nom de domaine sur le [site OVHcloud](/links/website). La commande est similaire à celle de tout autre nom de domaine générique.
 
 Votre domaine sera ensuite présent dans votre [espace client OVHcloud](/links/manager) sous quelques heures.
 

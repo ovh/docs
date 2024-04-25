@@ -66,7 +66,7 @@ After you change the TAG, the domain name owner will receive an authorisation co
 
 ### Step 3: Ordering the free transfer
 
-Once you have your authorisation code, you can create the transfer order for your domain name on the [OVHcloud website](https://www.ovhcloud.com/en-au/). This order is similar to the one of a generic domain name.
+Once you have your authorisation code, you can create the transfer order for your domain name on the [OVHcloud website](/links/website). This order is similar to the one of a generic domain name.
 
 Your domain will then be available in your [OVHcloud Control Panel](/links/manager) within a few hours.
 

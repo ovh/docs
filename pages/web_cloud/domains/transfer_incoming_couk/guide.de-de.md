@@ -72,7 +72,7 @@ Sobald Sie den TAG geändert haben, erhält der Inhaber der Domain nach einigen 
 
 #### Schritt 3: Bestellung des kostenlosen Transfers
 
-Sobald Sie über Ihren Autorisierungscode verfügen, können Sie die Transfer-Bestellung Ihrer Domain auf der [OVHcloud Website](https://www.ovhcloud.com/de/) ausführen. Der Bestellvorgang läuft dann ab wie bei der Bestellung generischer Domains.
+Sobald Sie über Ihren Autorisierungscode verfügen, können Sie die Transfer-Bestellung Ihrer Domain auf der [OVHcloud Website](/links/website) ausführen. Der Bestellvorgang läuft dann ab wie bei der Bestellung generischer Domains.
 
 Ihre Domain wird in wenigen Stunden in Ihrem [OVHcloud Kundencenter](/links/manager) angezeigt.
 
