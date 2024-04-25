@@ -6,30 +6,30 @@ updated: 2024-04-16
 
 ## Objectif
 
-**Ce guide vous présente les différentes sections de l'interface de VMware Cloud Director.**
+**Ce guide vous présente les différentes sections de l'interface de VMware Cloud Director.** 
+
+La version utilisé pour l'ensemble de nos produit Vcloud Director (VCD) est la `version 1.5`
 
 ## Prérequis
 
 >[!primary]
 > Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
-- Avoir un compte VMware Cloud Director
-[comment]: <> (A valider avec Franck pour cette partie VCF)
+- Une connaissance pratique des réseaux Linux, vSphere, Windows et IP est nécessaire pour configurer et gérer vCD
+- Avoir un compte VMware Cloud Director administrateur
 - Avoir une infrastructure VMware Cloud Foundation (VCF)
-  - vSphere et des ressrouces NSX (selon offre)
+  - vSphere et des ressources NSX (selon offre)
   - VSan (selon offre)
-- Une organisation Virtual Data Center VCD (OVH)
 
 ## En pratique
 
-VMware vCloud Director (VCD) est une plateforme de gestion de cloud computing. Celle-ci permet la création, la gestion et le déploiement de ressources informatiques virtualisées à grande échelle. VCD offre une infrastructure agile et évolutive. Grâce à son interface utilisateur conviviale et à ses fonctionnalités avancées telles que la gestion des ressources, la facturation automatisée et la sécurité renforcée, vCloud Director simplifie la gestion des environnements cloud complexes.
-Cette solution vous permet de provisionner et de gérer efficacement des machines virtuelles, des réseaux virtuels et d'autres ressources, offrant ainsi une agilité opérationnelle et une flexibilité accrues pour répondre aux besoins changeants des entreprises.
+VMware vCloud Director (vCD) est un logiciel de déploiement, d’automatisation et de gestion de ressources d’infrastructure virtuelle dans des environnements cloud multi-tenants.
 
 [comment]: <> (Réécriture de l'introduction "En pratique" pour accès plus le propos sur le service que fournis OVH afin de se démarquer de VMware)
-VMware vCloud Director (VCD) par OVH Cloud permet d'avoir un service reuni au sein d'une même organisation managé par nos soins. Ce sera cette organisation que vous n'aurez pas à gérer.
+VMware vCloud Director (VCD) par OVH Cloud permet d'avoir un service reuni au sein d'une même organisation managé.
 
 >[!primary]
-> Une fois connecté à votre interface web, vous serez accueilli par un tableau de bord affichant vos **vDC**, ainsi qu'un résumé détaillé de votre utilisation des ressources (10). En haut de l'écran, vous trouverez également une barre de navigation regroupant les différentes options de paramétrage disponibles pour vCloud Director (VCD).
+> Une fois connecté à votre interface web, vous serez accueillis par un tableau de bord affichant vos **vDC**, ainsi qu'un résumé détaillé de votre utilisation des ressources (10). En haut de l'écran, vous trouverez également une barre de navigation regroupant les différentes options de paramétrage disponibles pour vCloud Director (VCD).
 
 ![Dashboard Overview](images/vcd-dashboard-overview.png){.thumbnail}
 
@@ -86,21 +86,44 @@ Dans cette section vous retrouvez un bandeau sur votre gauche, le même que vous
 
 Cette section vous permet de profiter d'une vision d'ensemble complète de tous vos vApps et machines virtuelles sur vos centres de données virtuels (vcd) : créez, accédez et supprimez des vApps ou des machines virtuelles en toute simplicité.
 
+L'utilisation des vApps est une des fonctionnalitées unique de Vcloud Director (VCD). Il permet de créer de grouper un ensemble de machines virtuelles, de conteneurs au sein de la même Virtual Application (vApp). Mais aussi aller granulairement créer des rêgles d'affinités/anti-affinités au sein de ces vApp (réseau, firewall, templating etc).
+Nous retroouvons comme réglages pour ces vApp, les fonctionnalitées classique de Vsphere de réseau et de stockage que l'on peut appliquer à cet ensemble
+Voici la vu globale de la section "Application dans cette capture : 
+
 ![Applications Overview](images/vcd-Vapp-view.png){.thumbnail}
+
+Voici les 3 éléments principaux de la section Application, vous pouvez aussi voir que quand vous cliquez sur l'une de vos vApp vous serez redirigé dans la section Data Center :
+<details>
+<summary>Application</summary>
+
+- `Virtual Applications`
+- `Virtual Machines`
+- `Container Applications`
+</details>
+
+
+![Applications Overview](images/vcd-vapp.png){.thumbnail}
 
 ### Networking
 
-![Réseau Overview](images/vcd-networking-overview.png){.thumbnail}
+La mise en réseau de Cloud Director permet au fournisseur et au client de l'organisation de créer et de consommer des ressources de mise en réseau à partir d'un environnement vSphere ou NSX. 
+Par conséquent, les clients peuvent créer des segments réseaux et configurer des services finement avec ou sans DHCP, effectuer du pare-feu NAT mais aussi utiliser les intégrations de load-balancing par exemple.
+
+Vous pouvez voir après cette capture que les fonctionnalitées les plus avancées proposées par VMware depuis toutes ces années sont présente dans Vcloud Director (VCD) au sein d'une même console central d'administration.
+
+Voici la vu globale dans cette capture :
+
+![Réseau Overview](images/vcd-network.png){.thumbnail}
 
 <details>
 <summary>Dans cette section, vous retrouvez tous les composants réseau de vos environnements VCD :</summary>
 
-- `Réseaux`{.action}. 
-- `Edge Gateways`{.action}. 
-- `Provider Gateways`{.action}. 
-- `IP Spaces`{.action}. 
-- `Data Center Groups`{.action}.
-- `Security Tags`{.action}.
+- `Réseaux`
+- `Edge Gateways`
+- `Provider Gateways`
+- `IP Spaces`
+- `Data Center Groups`
+- `Security Tags`
 
 </details>
 
@@ -109,17 +132,84 @@ Cette section vous permet de profiter d'une vision d'ensemble complète de tous 
 - Organisation de Réseaux de Datacenters virtuels
 - Réseaux vApp
 
+
+Voici une capture animé (gif), des réglages réseau géré depuis la section "Data Centers" pour une `Edge Gateway`:
+
+![Réseau Overview](images/vcd-edge-GW.gif){.thumbnail}
+
+#### vCloud Director supporte trois types de réseaux :
+- Réseaux externes
+- Organisation de Réseaux de Datacenters virtuels
+- Réseaux vApp
+
 ### Content Hub
+
+Cette section vous permet d'administrer vos catalogues : créez, supprimez ou téléchargez des fichiers ISO, des modèles OVA, ou bien utilisez tout simplement les modèles préconfigurés disponibles dans le catalogue OVHcloud.
 
 ![Content Hub Overview](images/vcd-catalog-ISO.gif){.thumbnail}
 
-Cette section vous permet d'administrer vos catalogues : créez, supprimez ou téléchargez des fichiers ISO, des modèles OVA, ou bien utilisez tout simplement les modèles préconfigurés disponibles dans le catalogue OVHcloud.
+Cliquez pour déroulez le contenue de votre section "Content Hub" :
+<details>
+<summary>Content Hub</summary>
+
+- `Welcome to Content Hub`
+- `Content`
+- `Catalogs`
+- `Manage Ressources`
+</details>
+
+### Libraries
+
+![Libraries Overview](images/VCD-libraries-overview.png){.thumbnail}
+
+Cliquez pour déroulez le contenue de votre section "Libraries" :
+<details>
+<summary>Libraries</summary>
+
+- `Content Libraries`
+- `Services`
+</details>
+
 
 ### Administration
 
 ![Administration Overview](images/vcd-administration-overview.png){.thumbnail}
 
 Vous avez la possibilité de gérer ici les utilisateurs de votre organisation, de créer des rôles et des groupes et de configurer un fournisseur d'identification (OIDC/SAML). Vous pouvez également paramétrer des stratégies d'alertes et d'expiration par e-mail pour vos applications.
+
+Dans cette section, vous retrouvez tous les composants d'administration de votre organisation VCD :
+
+Cliquez pour déroulez le contenue de votre section "Administration" :
+
+<details>
+<summary>Access Control</summary>
+
+- `Users`
+- `Groups`
+- `Roles`
+
+<summary>Identity Providers</summary>
+
+- `SAML`
+- `OIDC`
+
+<summary>Certificates Management</summary>
+
+- `Certificates Library`
+
+<summary>Organizations :</summary>
+<summary>Settings :</summary>
+
+- `General`
+- `Email`
+- `Guest Personalization`
+- `Metadata`
+- `Multisite`
+- `Policies`
+- `Quotas`
+
+</details>
+
 
 ### Monitoring
 
