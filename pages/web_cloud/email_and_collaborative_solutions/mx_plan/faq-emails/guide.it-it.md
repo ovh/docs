@@ -46,7 +46,21 @@ Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?act
 
 Se nello Spazio Cliente non è presente la colonna `Filtro`{.action}, è necessario creare i filtri seguendo le regole di gestione della posta in arrivo di [ Webmail](https://www.ovh.com/it/mail/){.external}. Per maggiori dettagli, consulta questa guida: [Regole della posta in arrivo dall’interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
 
-**Consigli e suggerimenti**: Se imposti un filtro sulla ricezione di SPAM, è probabile che alcune email legittime vengano considerate come SPAM. Queste email vengono chiamate “falsi positivi”. In tal caso, ti invitiamo a creare una richiesta di assistenza dal tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} per informarci. In questo modo potremo fare il necessario per fare in modo che queste email non vengano considerate come SPAM anche in futuro. 
+**Consigli e suggerimenti**: Se imposti un filtro sulla ricezione di SPAM, è probabile che alcune email legittime vengano considerate come SPAM. Queste email vengono chiamate “falsi positivi”. In tal caso, ti invitiamo a creare una richiesta di assistenza dal tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} per informarci. In questo modo potremo fare il necessario per fare in modo che queste email non vengano considerate come SPAM anche in futuro.
+
+### Il mio indirizzo email è pieno, non ho più spazio. Cosa posso fare?
+
+Se hai attivato [una delle nostre soluzioni email OVHcloud](https://www.ovhcloud.com/it/emails/) e uno dei tuoi account è pieno, consulta la nostra guida "[Gestire lo spazio di storage di un account email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Questa guida ti mostra come ottimizzare lo spazio disponibile o se è necessario cambiare il tuo servizio di posta per aumentare lo spazio di storage.
+
+### Voglio cambiare offerta email per il mio indirizzo, come posso farlo pur conservandone il contenuto?
+
+Per modificare il tuo [servizio di posta](https://www.ovhcloud.com/it/emails/) e usufruire di più spazio e funzionalità, conserva il contenuto del tuo indirizzo esistente. Per effettuare questa operazione, consulta le nostre guide alla migrazione:
+
+- [Migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [Migrare gli indirizzi email da una piattaforma di posta elettronica OVHcloud a un’altra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [Migrare manualmente l’indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
+- [Migrare account email tramite OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
+- [Migrare un account Gmail verso un account email OVHcloud tramite OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
 
 ### La soluzione 365 Pro Plus include una licenza Skype?  
 

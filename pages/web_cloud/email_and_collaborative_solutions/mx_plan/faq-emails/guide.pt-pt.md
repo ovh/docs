@@ -48,9 +48,23 @@ Se não visualiza a coluna `Filtro`{.action}, a criação de filtros deverá ser
 
 **Truques e dicas**: Se definir um filtro quanto à receção de spam, é possível que alguns e-mails legítimos sejam considerados indesejados. São os chamados «falsos positivos». Se isso lhe acontecer, sugerimos que faça um pedido de assistência a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Assim, faremos o necessário para que essas mensagens deixem de ser consideradas spam.
 
-### O serviço Office 365 Pro Plus contém uma licença Skype? 
+### O meu endereço de e-mail está cheio, já não tenho espaço. O que posso fazer?
 
-O serviço Office 365 Pro Plus não contém uma licença Skype. Só está incluído o programa Skype for Business. 
+Se subscreveu [um dos nossos serviços de e-mail OVHcloud](https://www.ovhcloud.com/pt/emails/) e uma das suas contas de e-mail está saturada, consulte o nosso guia « [Gerir o espaço de armazenamento de uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Este guia ajuda-o a determinar se pode otimizar o espaço existente ou se é necessário mudar de oferta de e-mail para aumentar a capacidade de armazenamento.
+
+### Desejo mudar de oferta de e-mail para o meu endereço, como posso fazê-lo mantendo o conteúdo?
+
+Deseja mudar [de oferta de e-mail](https://www.ovhcloud.com/pt/emails/) para beneficiar de mais espaço e de funcionalidades, mas deseja conservar o conteúdo do seu endereço existente. Para isso, consulte um dos nossos manuais:
+
+- [Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_colaborative_solutions/migrating/migrating_control_panel)
+- [Migrar os seus endereços de e-mail de uma plataforma de e-mail OVHcloud para outra](/pages/web_cloud/email_and_colaborative_solutions/migrating/migrating_control_panel)
+- [Migrar manualmente o seu endereço de e-mail](/pages/web_cloud/email_and_colaborative_solutions/migrating/manual_email_migration)
+- [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_colaborative_solutions/migrating/migration_omm)
+- [Migrar uma conta Gmail para uma conta de e-mail OVHcloud através do OVH Mail Migrator](/pages/web_cloud/email_and_colaborative_solutions/migrating/security_gmail)
+
+### O serviço Office 365 Pro Plus contém uma licença Skype?
+
+O serviço Office 365 Pro Plus não contém uma licença Skype. Só está incluído o programa Skype for Business.
 
 ## Quer saber mais?
 

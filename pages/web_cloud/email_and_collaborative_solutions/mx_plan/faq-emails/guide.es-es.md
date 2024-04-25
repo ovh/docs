@@ -43,6 +43,20 @@ Si no ve esta columna, se pueden crear filtros de correo basura configurando reg
 
 **Ideas y consejos**:  Si configura un filtro para limitar la recepción de spam, es posible que los correos electrónicos legítimos también sean considerados como spam («falsos positivos»). En ese caso, le recomendamos que abra un tíquet de asistencia en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Nuestro equipo de soporte adoptará las medidas necesarias para que estos correos legítimos no sean considerados como spam.
 
+### Mi dirección de correo electrónico está llena, no tengo espacio. ¿Qué puedo hacer?
+
+Si ha contratado [una de nuestras soluciones de correo de OVHcloud](https://www.ovhcloud.com/es/emails/) y tiene una cuenta de correo llena, consulte nuestra guía «[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
+
+### Quiero cambiar de plan de correo para mi dirección, ¿cómo puedo hacerlo conservando su contenido?
+
+Si quiere cambiar [de plan de correo](https://www.ovhcloud.com/es/emails/) para disfrutar de más espacio y funcionalidades, pero quiere conservar el contenido de su dirección existente. Para ello, siga una de nuestras guías de migración:
+
+- [Migrar una dirección de correo MX Plan a una cuenta Email Pro o Exchange] (/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [Migrar las direcciones de correo electrónico de una plataforma de correo de OVHcloud a otra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
+- [Migrar cuentas de correo electrónico mediante OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
+- [Migrar una cuenta de Gmail a una cuenta de correo electrónico de OVHcloud mediante OVH Mail Migrator] (/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
+
 ### ¿La solución Office 365 Pro Plus incluye licencia Skype? 
 
 La solución Office 365 Pro Plus no incluye licencia Skype. Solo se incluye Skype for Business. 
