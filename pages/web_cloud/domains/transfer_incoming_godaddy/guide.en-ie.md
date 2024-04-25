@@ -12,7 +12,7 @@ To transfer a GoDaddy domain name, you will need to follow a specific procedure.
 
 > [!warning]
 >
-> The domain name [registrar](https://www.ovhcloud.com/en-ie/learn/what-is-domain-name-registrar/) is a service provider authorised to offer domain names for registration by an individual, association or organisation. You renew your domain name subscription with the same registrar (usually once a year).
+> The domain name [registrar](/links/domains-what-is-registrar) is a service provider authorised to offer domain names for registration by an individual, association or organisation. You renew your domain name subscription with the same registrar (usually once a year).
 >
 > If OVHcloud is already the registrar of your domain name, the incoming domain transfer procedure does not apply. The incoming domain transfer procedure described in this guide is **only** appropriate for domain names registered with a registrar other than OVHcloud.
 >
