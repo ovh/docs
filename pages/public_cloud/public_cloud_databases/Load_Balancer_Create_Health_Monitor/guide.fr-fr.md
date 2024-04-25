@@ -173,11 +173,15 @@ resource "openstack_lb_monitor_v2" "monitor_1" {
   expected_codes = "200"
 }
 ```
-Remplacez `<POOL_ID>` par l'ID de votre Pool.
+Remplacez `<POOL_ID>` par l'ID de votre Pool. Pour plus de détails sur les options disponibles pour cette ressource, consultez la [documentation officielle de la ressource `openstack_lb_monitor_v2`](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_monitor_v2) sur Terraform Registry.
 
-- **Application de la configuration** : Exécutez `terraform init` pour initialiser Terraform, puis `terraform apply` pour appliquer la configuration.
+### Application de la configuration
+Pour appliquer votre configuration Terraform :
+- Exécutez `terraform init` pour initialiser le répertoire de travail Terraform.
+- Exécutez `terraform apply` pour appliquer les changements définis dans votre configuration.
 
-- **Vérification** : Terraform confirmera la création du Health Monitor avec un résumé des ressources créées.
+### Vérification
+Après avoir exécuté `terraform apply`, Terraform vous fournira un résumé des ressources créées, modifiées ou supprimées. Cela confirme la création ou la mise à jour de votre Health Monitor.
 
 Chaque méthode offre des avantages spécifiques selon votre familiarité avec les outils et votre environnement de travail. Le choix de l'interface dépend de vos préférences personnelles et des exigences techniques de votre projet.
 
