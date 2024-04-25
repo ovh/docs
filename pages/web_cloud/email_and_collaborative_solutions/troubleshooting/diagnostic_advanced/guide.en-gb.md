@@ -51,7 +51,7 @@ If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc
 
 ### I can't receive emails because my email address is full, I don't have any more space. What can I do?
 
-If you have signed up to [one of our OVHcloud email solutions](https://www.ovhcloud.com/en-gb/emails/) and one of your email accounts is full, please read our guide on [Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) . This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
+If you have signed up to [one of our OVHcloud email solutions](https://www.ovhcloud.com/en-gb/emails/) and one of your email accounts is full, please read our guide on [Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota). This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
 
 ### Are emails functional from webmail? (**sending** and/or **receiving**)
 
