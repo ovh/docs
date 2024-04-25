@@ -16,12 +16,12 @@ Bei der Erstellung eines Domainnamens, dem Transfer oder dem Inhaberwechsel hand
 ## Voraussetzungen
 
 - Sie verfügen über eine oder mehrere Domains.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action} und dann zu `Domainnamen`{.action}. Klicken Sie auf `Laufende Operationen`{.action} über der Liste der Domainnamen.
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action} und dann zu `Domainnamen`{.action}. Klicken Sie auf `Laufende Operationen`{.action} über der Liste der Domainnamen.
 
 Die hier angezeigte Tabelle zeigt alle Vorgänge im Zusammenhang mit den Domainnamen in Ihrem Kundencenter an.
 
@@ -139,8 +139,8 @@ Wenn Sie eine Anomalie feststellen, die nicht mit der Konfiguration der DNS-Serv
 
 [DNS-Server einer OVHcloud Domain ändern](/pages/web_cloud/domains/dns_server_general_information)
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

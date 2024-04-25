@@ -76,9 +76,9 @@ Po zmianie APR właściciel domeny po kilku minutach otrzyma e-mail z kodem auto
 
 #### Etap 3: Bezpłatne zamówienie na transfer
 
-Po uzyskaniu kodu autoryzacyjnego możesz wyszukać i rozpocząć transfer domeny na [stronę OVHcloud](https://www.ovhcloud.com/pl/). Zamówienie jest podobne do innych domen globalnych.
+Po uzyskaniu kodu autoryzacyjnego możesz wyszukać i rozpocząć transfer domeny na [stronę OVHcloud](/links/website). Zamówienie jest podobne do innych domen globalnych.
 
-Twoja domena zostanie wyświetlona w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w ciągu kilku godzin.
+Twoja domena zostanie wyświetlona w [Panelu klienta OVHcloud](/links/manager) w ciągu kilku godzin.
 
 ### Przydatne informacje
 
@@ -98,4 +98,4 @@ Transfer jest darmowy. Data wygaśnięcia domeny po jego przeniesieniu będzie t
 
 [Transfer domeny do OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

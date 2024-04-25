@@ -14,13 +14,13 @@ You have a domain name with OVHcloud and you want to connect it to a Shopify hos
 >
 > - Shopify support does not have access to your OVHcloud domain name settings and therefore cannot advise you on the exact steps.
 >
-> - OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.<br><br>We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/directory/) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+> - OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.<br><br>We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-ie/domains/) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) with the [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
+- A [domain name](/links/web/domains) registered with OVHcloud
+- Access to the [OVHcloud Control Panel](/links/manager) with the [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
 - A Shopify web hosting plan
 - Access to manage this hosting plan with Shopify
 
@@ -34,7 +34,7 @@ Before following the two steps in this guide, we recommend that you get familiar
 
 ### Configure your DNS records on your OVHcloud account
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 The table lists all of the DNS records for the selected domain name.
 
@@ -90,7 +90,7 @@ Log in to the Shopify Control Panel and carry out step 2 of the [corresponding S
 >
 > It may take up to 48 hours to verify your domain name.
 
-If you are using an OVHcloud email solution, or planning to subscribe to one of [our email solutions](https://www.ovhcloud.com/en-ie/emails/), you will also need to prepare your DNS zone accordingly. Read our guide on [configuring an MX record](/pages/web_cloud/domains/dns_zone_mx).
+If you are using an OVHcloud email solution, or planning to subscribe to one of [our email solutions](/links/web/emails), you will also need to prepare your DNS zone accordingly. Read our guide on [configuring an MX record](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Go further <a name="gofurther"></a>
 
@@ -102,8 +102,8 @@ If you are using an OVHcloud email solution, or planning to subscribe to one of 
 
 To delegate the management of your domain name to another OVHcloud customer account, follow the guide on [Managing contacts for OVHcloud services](/pages/account_and_service_management/account_information/managing_contacts).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
 Join our community of users on <https://community.ovh.com/en/>.

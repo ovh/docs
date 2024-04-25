@@ -28,16 +28,16 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 
 ## Prérequis
 
-- Disposer d'au moins un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
+- Disposer d'au moins un [nom de domaine](/links/web/domains).
 - Disposer d'une zone DNS active pour votre nom de domaine. Si besoin, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) ».
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer des droits suffisants sur l’ensemble des services concernés. Retrouvez plus d'informations sur notre guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
 
 ## En pratique
 
 ### Définition d'un sous-domaine
 
-Un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/) peut être associé à plusieurs types de services (e-mail, site web, etc.). Néanmoins, un nom de domaine ne peut être associé qu'à un seul site web à la fois.
+Un [nom de domaine](/links/web/domains) peut être associé à plusieurs types de services (e-mail, site web, etc.). Néanmoins, un nom de domaine ne peut être associé qu'à un seul site web à la fois.
 
 Certains utilisateurs ou organisations ont cependant besoin de segmenter leurs sites web ou leurs services e-mail tout en gardant le même nom de domaine.
 
@@ -67,7 +67,7 @@ Au delà du troisième niveau de domaine, on considère qu'il s'agit là égalem
 
 ### Créer un sous-domaine
 
-Les [noms de domaine](https://www.ovhcloud.com/fr-ca/domains/) ont tous besoin d'une **zone DNS** pour fonctionner. La zone DNS se compose d’informations techniques, appelées « enregistrements DNS ». Elle est, en quelque sorte, comme un centre d'aiguillage.
+Les [noms de domaine](/links/web/domains) ont tous besoin d'une **zone DNS** pour fonctionner. La zone DNS se compose d’informations techniques, appelées « enregistrements DNS ». Elle est, en quelque sorte, comme un centre d'aiguillage.
 
 Pour plus de détails sur les zones DNS, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) » et « [Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
@@ -132,7 +132,7 @@ Pour les services qui ne seraient pas mentionnés, consultez la documentation re
 
 #### Cas 1 - Afficher un site web présent sur mon hébergement web OVHcloud avec un sous-domaine
 
-Tout comme pour un nom de domaine, pour autoriser un sous-domaine à afficher le contenu d'un dossier « cible » présent sur un hébergement web, connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'offre concernée où se trouve votre site web puis choisissez l'onglet `Multisite`{.action}.
+Tout comme pour un nom de domaine, pour autoriser un sous-domaine à afficher le contenu d'un dossier « cible » présent sur un hébergement web, connectez-vous à l'[espace client OVHcloud](/links/manager){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'offre concernée où se trouve votre site web puis choisissez l'onglet `Multisite`{.action}.
 
 C'est ici que vous autorisez l'accès de votre sous-domaine à votre hébergement web où se trouve votre site web.
 
@@ -145,7 +145,7 @@ Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur
 
 #### Cas 2 - Créer des adresses e-mail Exchange avec un sous-domaine
 
-Pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} dans la colonne de gauche puis sur `Exchange`{.action}. Sélectionnez ensuite la plateforme Exchange que vous souhaitez utiliser avec votre sous-domaine. Sur la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
+Pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à l'[espace client OVHcloud](/links/manager){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} dans la colonne de gauche puis sur `Exchange`{.action}. Sélectionnez ensuite la plateforme Exchange que vous souhaitez utiliser avec votre sous-domaine. Sur la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
 
 Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme Exchange.
 
@@ -171,8 +171,8 @@ Pour plus de détails sur la configuration d'une plateforme Exchange, consultez 
 
 [Ajouter un enregistrement CNAME pour valider votre domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

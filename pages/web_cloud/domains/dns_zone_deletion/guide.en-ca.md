@@ -22,14 +22,14 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 
 > [!primary]
 >
-> The creation/modification/deletion of a DNS zone in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) is free of charge.
+> The creation/modification/deletion of a DNS zone in your [OVHcloud Control Panel](/links/manager) is free of charge.
 >
 
 **This guide explains how to delete an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel.**
 
 ## Requirements
 
-- You have access your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- You have access your [OVHcloud Control Panel](/links/manager).
 - You have a DNS zone in your OVHcloud Control Panel.
 - You have sufficient rights on the DNS zone to be deleted. You can find more information in our guide “[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)”.
 
@@ -41,7 +41,7 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 >
 > If you delete the active DNS zone for your domain name, your online services (website, email addresses, etc.) will be interrupted.
 >
-> Perform a [WHOIS](https://www.ovhcloud.com/en-ca/domains/whois/) query to find out whether your domain name’s active DNS zone is the one hosted at OVHcloud.
+> Perform a [WHOIS](/links/web/domains-whois) query to find out whether your domain name’s active DNS zone is the one hosted at OVHcloud.
 >
 > If the active DNS zone for your domain name is the one at OVHcloud, and you would like to replace it with a DNS zone hosted elsewhere, please read our guide on [Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information) before deleting any DNS zones.
 >
@@ -50,7 +50,7 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 
 To start deleting an OVHcloud DNS zone, perform the following actions: 
 
-1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Domain names`{.action} dropdown menu.
 4. Select the domain name or DNS zone concerned.
@@ -80,7 +80,7 @@ Click the **validation link** to continue deleting the OVHcloud DNS zone, or cli
 
 > [!primary]
 >
-> If the link redirection does not work, **copy/paste** the link into the URL bar of your web browser. Reconnect to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) if necessary.
+> If the link redirection does not work, **copy/paste** the link into the URL bar of your web browser. Reconnect to your [OVHcloud Control Panel](/links/manager) if necessary.
 >
 
 If you click on the validation link, you will be redirected to a new OVHcloud page, which will ask you for the reason(s) for deleting the OVHcloud DNS zone.
@@ -101,8 +101,8 @@ A final confirmation email will be sent to the email address of the [Administrat
 
 [Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

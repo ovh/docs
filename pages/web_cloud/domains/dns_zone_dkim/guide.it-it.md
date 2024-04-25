@@ -39,15 +39,15 @@ Il record DKIM (**D**omain**K**eys **I**dentified **M**ail) permette di firmare 
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o dal provider del tuo dominio registrato al di fuori di OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Aver sottoscritto una delle nostre soluzioni [Exchange](https://www.ovhcloud.com/it/emails/), [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/) o una soluzione email extra OVHcloud con DKIM
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links/manager) o dal provider del tuo dominio registrato al di fuori di OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Aver sottoscritto una delle nostre soluzioni [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro) o una soluzione email extra OVHcloud con DKIM
 
 > [!warning]
 >
 > Se il dominio non utilizza i server DNS di OVHcloud, è necessario apportare la modifica del DKIM dall'interfaccia del provider che gestisce la configurazione del dominio.
 >
-> Se il tuo dominio è registrato presso OVHcloud, verifica che utilizzi la configurazione OVHcloud nel tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) utilizzando la scheda `Zona DNS`{.action}.
+> Se il tuo dominio è registrato presso OVHcloud, verifica che utilizzi la configurazione OVHcloud nel tuo [Spazio Cliente](/links/manager) utilizzando la scheda `Zona DNS`{.action}.
 >
 
 ## Procedura
@@ -145,7 +145,7 @@ Il destinatario **recipient@otherdomain.ovh** potrà decifrare questa firma con 
 
 ### Configurare il DKIM automaticamente per un servizio di posta Exchange o Email Pro OVHcloud <a name="auto-dkim"></a>
 
-La configurazione automatica di DKIM è accessibile per le offerte di posta elettronica [Exchange](https://www.ovhcloud.com/it/emails/) e [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/).
+La configurazione automatica di DKIM è accessibile per le offerte di posta elettronica [Exchange](/links/web/emails) e [Email Pro](/links/web/email-pro).
 
 Di default, il DKIM non è attivo quando aggiungi un dominio alla tua piattaforma. È quindi necessario avviare il processo di configurazione automatica dallo Spazio Cliente.
 
@@ -193,13 +193,13 @@ Clicca sulla scheda qui sotto corrispondente alla tua offerta.
 > [!tabs]
 > **Exchange**
 >>
->> Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), nella scheda `Web Cloud`{.action}, clicca su `Microsoft`{.action} e poi su `Exchange`{.action}. Infine clicca sul nome del servizio Exchange interessato. Di default, il nome della tua piattaforma corrisponde al suo riferimento o sarà visibile con il nome che le hai assegnato (vedi l'immagine qui sotto).
+>> Dallo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Microsoft`{.action} e poi su `Exchange`{.action}. Infine clicca sul nome del servizio Exchange interessato. Di default, il nome della tua piattaforma corrisponde al suo riferimento o sarà visibile con il nome che le hai assegnato (vedi l'immagine qui sotto).
 >>
 >> ![email](images/dns-dkim-platform-exchange.png){.thumbnail}
 >>
 > **Email Pro**
 >>
->> Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), nella scheda `Web Cloud`{.action}, clicca su `Email Pro`{.action} e poi sul nome del servizio Email Pro interessato. Di default, il nome della tua piattaforma corrisponde al suo riferimento o sarà visibile con il nome che le hai assegnato (vedi l'immagine qui sotto).
+>> Dallo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Email Pro`{.action} e poi sul nome del servizio Email Pro interessato. Di default, il nome della tua piattaforma corrisponde al suo riferimento o sarà visibile con il nome che le hai assegnato (vedi l'immagine qui sotto).
 >>
 >> ![email](images/dns-dkim-platform-emailpro.png){.thumbnail}
 
@@ -317,7 +317,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >> > È possibile che lo `status:` o in `todo`, questo non influisce sulla configurazione della tua zona DNS.
 >>
 > **4.Configura il record DNS**
->> Da [l'area clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dove il nome del dominio del tuo Piattaforma Exchange, nella scheda `Web Cloud`{.action}, fai clic su `Nomi di dominio`{.action} nella colonna di sinistra e seleziona il nome di dominio pertinente.<br>
+>> Da [l'area clienti OVHcloud](/links/manager) dove il nome del dominio del tuo Piattaforma Exchange, nella scheda `Web Cloud`{.action}, fai clic su `Nomi di dominio`{.action} nella colonna di sinistra e seleziona il nome di dominio pertinente.<br>
 >> Clicca sulla scheda `Zona DNS`{.action} e poi su `Aggiungi un record`{.action} nella finestra che appare. Scegli `CNAME` e completa in base ai valori rilevati.<br>
 >>
 >> Se prendiamo i valori dell'esempio nello step "**3.Recupera il record DNS**":
@@ -468,7 +468,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >> > È possibile che lo `status:` o in `todo`, questo non influisce sulla configurazione della tua zona DNS.
 >>
 > **4.Configura il record DNS**
->> Da [l'area clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dove il nome del dominio del tuo Piattaforma E-mail Pro, nella scheda `Web Cloud`{.action}, fai clic su `Nomi di dominio`{.action} nella colonna di sinistra e seleziona il nome di dominio pertinente.<br>
+>> Da [l'area clienti OVHcloud](/links/manager) dove il nome del dominio del tuo Piattaforma E-mail Pro, nella scheda `Web Cloud`{.action}, fai clic su `Nomi di dominio`{.action} nella colonna di sinistra e seleziona il nome di dominio pertinente.<br>
 >> Clicca sulla scheda `Zona DNS`{.action} e poi su `Aggiungi un record`{.action} nella finestra che appare. Scegli `CNAME` e completa in base ai valori rilevati.<br>
 >>
 >> Se prendiamo i valori dell'esempio nello step "**3.Recupera il record DNS**":
@@ -685,7 +685,7 @@ Seleziona il servizio di posta in questione nelle seguenti schede:
 
 Per configurare la tua zona DNS per aggiungere un record DKIM sulla tua offerta, segui le istruzioni qui sotto.
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sulla scheda `Web Cloud`{.action} e poi su `Domini`{.action} nella colonna di sinistra.
+Dallo [Spazio Cliente OVHcloud](/links/manager), clicca sulla scheda `Web Cloud`{.action} e poi su `Domini`{.action} nella colonna di sinistra.
 
 Clicca sulla scheda `Zona DNS`{.action} e poi su `Aggiungi un record`{.action}. Per configurare il DKIM nella tua zona DNS, è possibile aggiungere un record in 3 modi:
 

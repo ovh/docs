@@ -12,16 +12,16 @@ With an MX record, you can link a domain name to the server on your email platfo
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
-- You have the rights to manage the DNS zone for the domain name concerned via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+- You have access to the [OVHcloud Control Panel](/links/manager).
+- You have the rights to manage the DNS zone for the domain name concerned via the [OVHcloud Control Panel](/links/manager).
 - The domain name concerned uses the OVHcloud configuration (i.e. OVHcloud DNS servers).
-- You have an MX Plan solution (included in the [web hosting plan](https://www.ovhcloud.com/asia/web-hosting/), or an external email service.
+- You have an MX Plan solution (included in the [web hosting plan](/links/web/hosting), or an external email service.
 
 > [!primary]
 >
 > - If your domain name does not use OVHcloud DNS servers, you will need to modify the MX records using the interface of the service provider that manages your domain name configuration.
 >
-> - If your domain name is registered with OVHcloud, you can verify that it uses the OVHcloud configuration in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). Once you have selected the domain name concerned and the `General information`{.action} tab is displayed, check the entry **DNS servers** : If you see `Enabled` underneath it, your domain name is using the OVHcloud DNS servers.
+> - If your domain name is registered with OVHcloud, you can verify that it uses the OVHcloud configuration in the [OVHcloud Control Panel](/links/manager). Once you have selected the domain name concerned and the `General information`{.action} tab is displayed, check the entry **DNS servers** : If you see `Enabled` underneath it, your domain name is using the OVHcloud DNS servers.
 >
 > ![email](images/dns-servers-enabled.png){.thumbnail}
 
@@ -44,11 +44,11 @@ You can set up multiple MX records for the same domain name. It is then necessar
 > [!warning]
 >
 > Generally speaking, **modifying MX records in a domain name’s DNS zone warrants caution**. If you make any mistakes configuring the records, it may make it impossible for emails to reach your email address. Please take care when you carry out this procedure.
-> If you have any doubts, we advise contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/).
+> If you have any doubts, we advise contacting a [specialist provider](/links/partner).
 
 ### OVHcloud MX configuration values <a name="mxovhcloud"></a>
 
-Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (included in an [OVHcloud web hosting](https://www.ovhcloud.com/asia/web-hosting/) plan). Our email servers have antispam and antivirus integrated.
+Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (included in an [OVHcloud web hosting](/links/web/hosting) plan). Our email servers have antispam and antivirus integrated.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|
@@ -62,7 +62,7 @@ These MX records must be configured in your domain name’s DNS zone.
 
 ### Configuring an MX record in an OVHcloud DNS zone
 
-To create or modify the MX records in your domain name’s OVHcloud configuration, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). Go to the `Domain names`{.action} section, click on the domain concerned, then go to the `DNS Zone`{.action} tab.
+To create or modify the MX records in your domain name’s OVHcloud configuration, log in to the [OVHcloud Control Panel](/links/manager). Go to the `Domain names`{.action} section, click on the domain concerned, then go to the `DNS Zone`{.action} tab.
 
 The table shows your domain name’s OVHcloud configuration. Each row corresponds to a DNS record.
 
@@ -97,8 +97,8 @@ Fill in the values, complete the steps, then click `Confirm`{.action}.
 
 [Configuring a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

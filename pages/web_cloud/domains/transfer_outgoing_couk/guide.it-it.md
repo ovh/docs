@@ -35,8 +35,8 @@ Il processo di modifica del Registrar (*registrar*) per i domini di primo livell
 
 ## Prerequisiti
 
-- Disporre di un [dominio.uk](https://www.ovhcloud.com/it/domains/) registrato in OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e disporre dei diritti necessari per gestire il dominio (essere amministratore del dominio)
+- Disporre di un [dominio.uk](/links/web/domains) registrato in OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) e disporre dei diritti necessari per gestire il dominio (essere amministratore del dominio)
 - Il dominio deve essere sempre attivo, significa che non deve essere scaduto o essere bloccato da OVHcloud
 - Il dominio non deve essere oggetto di controversia presso il [Registry Nominet](https://www.nominet.uk/)
 
@@ -55,7 +55,7 @@ Se non conosci ancora il TAG richiesto, puoi farne richiesta presso il tuo nuovo
 
 ### Step 1: verificare le informazioni necessarie
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. Clicca sui `Domini`{.action} e seleziona il dominio interessato.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca sui `Domini`{.action} e seleziona il dominio interessato.
 
 Ricordati di essere connesso come contatto amministratore.
 
@@ -83,6 +83,6 @@ Contatta il tuo nuovo provider per maggiori informazioni e per qualsiasi domanda
 
 [Trasferire un dominio verso un altro Registrar](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

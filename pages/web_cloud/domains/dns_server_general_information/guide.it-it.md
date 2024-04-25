@@ -45,9 +45,9 @@ A volte, alcuni provider DNS offrono più di 2 **server DNS** da dichiarare pres
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/) registrato in OVHcloud.
-- Disporre delle autorizzazioni [appropriate per la gestione](/pages/account_and_service_management/account_information/managing_contacts) il dominio dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+- Disporre di un [dominio](/links/web/domains) registrato in OVHcloud.
+- Disporre delle autorizzazioni [appropriate per la gestione](/pages/account_and_service_management/account_information/managing_contacts) il dominio dal tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}.
 
 > [!primary]
 >
@@ -77,13 +77,13 @@ ed è quindi importante assicurarsi che le modifiche apportate non abbiano impat
 
 ### Accedere alla gestione dei server DNS OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona il dominio interessato. Infine seleziona la scheda `Server DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona il dominio interessato. Infine seleziona la scheda `Server DNS`{.action}.
 
 Visualizzi una tabella con tutti i server DNS configurati da OVHcloud per il tuo dominio. A ogni riga corrisponde un server DNS.
 
 > [!primary]
 >
-> Quando utilizzi i server DNS OVHcloud, i numeri presenti nei nomi dei server non hanno alcun legame con il servizio o i servizi che utilizzi. Solo l'opzione [DNS anycast](https://www.ovhcloud.com/it/domains/options/) utilizza server DNS specifici che vengono automaticamente assegnati all'utente. 
+> Quando utilizzi i server DNS OVHcloud, i numeri presenti nei nomi dei server non hanno alcun legame con il servizio o i servizi che utilizzi. Solo l'opzione [DNS anycast](/links/web/domains-options) utilizza server DNS specifici che vengono automaticamente assegnati all'utente. 
 
 ![dns-server](images/tab.png){.thumbnail}
 
@@ -121,15 +121,15 @@ Il pulsante `Reinizializza i server DNS`{.action} permette di reinizializzare i 
 
 Una volta completata l’operazione attendi il tempo necessario alla sua elaborazione. Devono essere presi in considerazione due periodi successivi:
 
-- la modifica apportata in OVHcloud deve essere presa in carico dal *registro* che gestisce l’estensione del dominio (ad esempio, il registro delle estensioni in *.it*). Lo stato di avanzamento dell’operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Accedi alla sezione `Web Cloud`{.action}, clicca su `Domini`{.action} nella colonna di sinistra e poi su `Operazioni in corso`{.action}.
+- la modifica apportata in OVHcloud deve essere presa in carico dal *registro* che gestisce l’estensione del dominio (ad esempio, il registro delle estensioni in *.it*). Lo stato di avanzamento dell’operazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager){.external}. Accedi alla sezione `Web Cloud`{.action}, clicca su `Domini`{.action} nella colonna di sinistra e poi su `Operazioni in corso`{.action}.
 - una volta che la modifica è stata presa in carico dall'organizzazione che gestisce l’estensione del dominio, è necessario attendere fino a **48 ore** perché le modifiche apportate siano completamente propagate.
 
 ## Per saperne di più
 
 [Modifica di una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

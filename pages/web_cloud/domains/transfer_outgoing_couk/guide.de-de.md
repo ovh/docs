@@ -35,8 +35,8 @@ Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk
 
 ## Voraussetzungen
 
-- Sie verfügen über einen bei OVHcloud registrierten [.uk-Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten der Domain (Domainadministrator).
+- Sie verfügen über einen bei OVHcloud registrierten [.uk-Domainnamen](/links/web/domains).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zum Verwalten der Domain (Domainadministrator).
 - Der Domainname muss noch aktiv sein, d.h. er ist nicht abgelaufen oder anderweitig seitens OVHcloud gesperrt.
 - Der Domainname darf nicht Gegenstand eines laufenden Rechtsstreits bei der zuständigen Registry [Nominet](https://www.nominet.uk/) sein.
 
@@ -55,7 +55,7 @@ Falls Sie den benötigten TAG noch nicht kennen, können Sie ihn bei Ihrem neuen
 
 ### Schritt 1: Überprüfung der erforderlichen Informationen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} Ihren Domainnamen unter `Domainnamen`{.action} aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Web Cloud`{.action} Ihren Domainnamen unter `Domainnamen`{.action} aus.
 
 Denken Sie daran, dass Sie als Administrator-Kontakt eingeloggt sein müssen.
 
@@ -81,6 +81,6 @@ Eine erfolgreiche Änderung des TAG startet den Transferprozess. Wenden Sie sich
 
 [Einen Domainnamen zu einem anderen Registrar transferieren](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

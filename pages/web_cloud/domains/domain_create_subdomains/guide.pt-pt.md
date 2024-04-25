@@ -34,16 +34,16 @@ Um **nome de domínio** é composto por níveis. Estes níveis são geralmente s
 
 ## Requisitos
 
-- Dispor de, pelo menos, um [nome de domínio](https://www.ovhcloud.com/pt/domains/);
+- Dispor de, pelo menos, um [nome de domínio](/links/web/domains);
 - Ter uma zona DNS ativa para o seu domínio. Se necessário, consulte o guia "[Criar uma zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)";
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt);
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager);
 - Dispor de direitos suficientes sobre o conjunto dos serviços em causa. Encontre mais informações no nosso guia [Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts).
   
 ## Instruções
 
 ### Definição de um subdomínio
 
-Um [nome de domínio](https://www.ovhcloud.com/pt/domains/) pode estar associado a vários tipos de serviços (e-mail, website, etc.).
+Um [nome de domínio](/links/web/domains) pode estar associado a vários tipos de serviços (e-mail, website, etc.).
 
 No entanto, um domínio só pode ser associado a um website de cada vez.
 
@@ -75,7 +75,7 @@ Para além do terceiro nível de domínio, considera-se que se trata igualmente 
 
 ### Criar um subdomínio
 
-Os [nomes de domínio](https://www.ovhcloud.com/pt/domains/) precisam todos de uma **zona DNS** para funcionarem. A zona DNS é composta por informações técnicas, chamadas *registos DNS*. É, de certa forma, como um centro de comando.
+Os [nomes de domínio](/links/web/domains) precisam todos de uma **zona DNS** para funcionarem. A zona DNS é composta por informações técnicas, chamadas *registos DNS*. É, de certa forma, como um centro de comando.
 
 Para mais informações sobre as zonas DNS, consulte o guia "[Criar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_create)" e "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
@@ -140,7 +140,7 @@ Para serviços que não sejam indicados, consulte a documentação do serviço. 
 
 #### Casos 1: Ver um website presente no meu alojamento web da OVHcloud com um subdomínio
 
-Tal como para um domínio e para autorizar um subdomínio a apresentar o conteúdo de uma pasta *de destino* presente num alojamento web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, selecione o serviço em causa onde se encontra o seu website e escolha o separador `Multisite`{.action}.
+Tal como para um domínio e para autorizar um subdomínio a apresentar o conteúdo de uma pasta *de destino* presente num alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, selecione o serviço em causa onde se encontra o seu website e escolha o separador `Multisite`{.action}.
 
 É aqui que autoriza o acesso do seu subdomínio ao seu alojamento web onde se encontra o seu website.
 
@@ -153,7 +153,7 @@ Para mais informações sobre a configuração de um domínio ou subdomínio num
 
 #### Casos 2 - Criar endereços de e-mail Exchange com um subdomínio
 
-Para desbloquear a criação de endereços de e-mail Exchange personalizados com um subdomínio, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action}. Clique em `Microsoft`{.action} na coluna da esquerda e, a seguir, em `Exchange`{.action}. De seguida, selecione a plataforma Exchange que deseja utilizar com o seu subdomínio. Na página que se abrir, aceda ao separador `Domínios associados`{.action} e clique no botão `Adicionar domínio`{.action} à direita.
+Para desbloquear a criação de endereços de e-mail Exchange personalizados com um subdomínio, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione `Web Cloud`{.action}. Clique em `Microsoft`{.action} na coluna da esquerda e, a seguir, em `Exchange`{.action}. De seguida, selecione a plataforma Exchange que deseja utilizar com o seu subdomínio. Na página que se abrir, aceda ao separador `Domínios associados`{.action} e clique no botão `Adicionar domínio`{.action} à direita.
 
 Assim, poderá declarar o seu subdomínio na sua plataforma Exchange.
 
@@ -165,7 +165,7 @@ Para obter mais detalhes sobre a configuração de uma plataforma Exchange, cons
 
 #### Casos 3 - Criar endereços E-mail Pro com um subdomínio
 
-Para desbloquear a criação de endereços E-mail Pro personalizados com um subdomínio, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action}. Clique em `E-mails Pro`{.action} e selecione a plataforma E-mail Pro que pretende utilizar com o seu subdomínio. Na página que se abrir, aceda ao separador `Domínios associados`{.action} e clique no botão `Adicionar domínio`{.action} à direita.
+Para desbloquear a criação de endereços E-mail Pro personalizados com um subdomínio, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione `Web Cloud`{.action}. Clique em `E-mails Pro`{.action} e selecione a plataforma E-mail Pro que pretende utilizar com o seu subdomínio. Na página que se abrir, aceda ao separador `Domínios associados`{.action} e clique no botão `Adicionar domínio`{.action} à direita.
 
 Assim, poderá declarar o seu subdomínio na sua plataforma E-mail Pro.
 
@@ -193,8 +193,8 @@ Para obter mais informações sobre a configuração de uma plataforma E-mail Pr
 
 [Adicionar um registo CNAME para validar o seu domínio na sua oferta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

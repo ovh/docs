@@ -75,11 +75,11 @@ Pamiętaj, że OVHcloud nie jest operatorem Twojej domeny w momencie rozpoczęci
 
 ### Etap 3: zlecić transfer domeny do OVHcloud <a name="step3"></a>
 
-Po odblokowaniu Twojej domeny i uzyskanym kodzie możesz zamówić jej transfer z [naszej strony WWW](https://www.ovhcloud.com/pl/domains/){.external}. Wprowadź nazwę Twojej domeny, po czym postępuj zgodnie z kolejnymi instrukcjami.
+Po odblokowaniu Twojej domeny i uzyskanym kodzie możesz zamówić jej transfer z [naszej strony WWW](/links/web/domains){.external}. Wprowadź nazwę Twojej domeny, po czym postępuj zgodnie z kolejnymi instrukcjami.
 
 Wprowadź kod transferu w polu obok nazwy Twojej domeny. Jeśli nie posiadasz jeszcze kodu transferu, możesz zaznaczyć pole `Podaj kod transferu później`{.action}. Zalecamy jednak, abyś przed kolejnymi krokami upewnił się, że jesteś w stanie ten kod uzyskać. Pamiętaj, że transfer nie rozpocznie się, dopóki nie zostanie podany prawidłowy kod.
 
-Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.com/pl/web-hosting/){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik [Przeniesienie strony WWW do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) zawiera instrukcje, jak to zrobić.
+Możesz również zakończyć zamówienie [hostingiem www](/links/web/hosting){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik [Przeniesienie strony WWW do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) zawiera instrukcje, jak to zrobić.
 
 > [!warning]
 >
@@ -100,7 +100,7 @@ Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.
 
 ![domena](images/order-summary.png){.thumbnail}
 
-Po zatwierdzeniu zamówienia otrzymasz bezpłatne zamówienie. Transfer rozpocznie się po zatwierdzeniu tego darmowego zamówienia. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action}, następnie `Operacje w toku`{.action}.
+Po zatwierdzeniu zamówienia otrzymasz bezpłatne zamówienie. Transfer rozpocznie się po zatwierdzeniu tego darmowego zamówienia. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](/links/manager){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action}, następnie `Operacje w toku`{.action}.
 
 ### Etap 4: Zatwierdzenie transferu
 
@@ -109,7 +109,7 @@ Transfer domeny wiąże się z potwierdzeniem przez e-mail. Etap ten może zosta
 - Właściciel domeny otrzymuje e-mail na adres, który podał w bazie (jeśli nie jest ukryty).
 - E-mail ten pochodzi z rejestru domen ".pl" - "automat@dns.pl".
 - Kliknij link potwierdzający zawarty w tym e-mailu, aby sfinalizować transfer.
-- Po zatwierdzeniu domena będzie dostępna w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w ciągu 24 godzin.
+- Po zatwierdzeniu domena będzie dostępna w [Panelu klienta OVHcloud](/links/manager){.external} w ciągu 24 godzin.
 
 > [!warning]
 >
@@ -126,14 +126,14 @@ Po zmianie adresu e-mail wykonaj [nowy wniosek o transfer](#step3).
 
 ### Etap 5: zarządzaj domeną za pomocą OVHcloud
 
-Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu wybierz `Web Cloud`{.action}, kliknij `Domeny`{.action}, po czym kliknij wybraną nazwę domeny.
+Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta OVHcloud](/links/manager){.external}. W tym celu wybierz `Web Cloud`{.action}, kliknij `Domeny`{.action}, po czym kliknij wybraną nazwę domeny.
 
 ## Sprawdź również
 
 [Migracja strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

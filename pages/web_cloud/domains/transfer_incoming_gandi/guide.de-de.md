@@ -14,7 +14,7 @@ Für den Transfer eines Gandi-Domainnamens ist ein spezieller Ansatz erforderlic
 
 > [!warning]
 >
-> Der [Domainnamen-Registrar](https://www.ovhcloud.com/de/learn/what-is-domain-name-registrar/) ist ein Diensteanbieter, der authorisiert ist, Domainnamen zur Registrierung seitens Privatpersonen, Unternehmen oder sonstigen Organisationen anzubieten. Sie verlängern ein Domainnamen-Abonnement bei Ihrem Registrar, üblicherweise jährlich.
+> Der [Domainnamen-Registrar](/links/web/domains-what-is-registrar) ist ein Diensteanbieter, der authorisiert ist, Domainnamen zur Registrierung seitens Privatpersonen, Unternehmen oder sonstigen Organisationen anzubieten. Sie verlängern ein Domainnamen-Abonnement bei Ihrem Registrar, üblicherweise jährlich.
 >
 > Wenn OVHcloud bereits der Registrar Ihres Domainnamens ist, ist der Prozess des eingehenden Transfers nicht für diesen Domainnamen anwendbar. Das in dieser Anleitung beschriebene Verfahren für eingehende Domaintransfers gilt **nur** für Domainnamen, die derzeit bei einem anderen Registrar als OVHcloud registriert sind.
 >
@@ -48,7 +48,7 @@ Für den Transfer eines Gandi-Domainnamens ist ein spezieller Ansatz erforderlic
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihren aktuellen Registrar zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihren aktuellen Registrar zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## In der praktischen Anwendung
@@ -73,7 +73,7 @@ Für den Transfer eines Gandi-Domainnamens ist ein spezieller Ansatz erforderlic
 
 > [!warning]
 >
-> Die meisten Domainendungen verfügen über eine Sperrfunktion gegen den Transfer, die im [Whois](https://www.ovhcloud.com/de/domains/whois/) als „transferProhibited“ bezeichnet ist.
+> Die meisten Domainendungen verfügen über eine Sperrfunktion gegen den Transfer, die im [Whois](/links/web/domains-whois) als „transferProhibited“ bezeichnet ist.
 >
 > Diese Sperrung verhindert unbeabsichtigtes Übertragen.
 >
@@ -104,8 +104,8 @@ Sobald Sie den Autorisierungscode erhalten haben, können Sie den Transfer Ihres
 
 [Website und E-Mails zu OVHcloud migrieren](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

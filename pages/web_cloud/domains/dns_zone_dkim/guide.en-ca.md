@@ -35,15 +35,15 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 
 ## Requirements
 
-- Access to manage the domain name concerned in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), or via your DNS service provider if it is registered outside of OVHcloud
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- An OVHcloud [Exchange](https://www.ovhcloud.com/en-ca/emails/) or external email solution with DKIM
+- Access to manage the domain name concerned in the [OVHcloud Control Panel](/links/manager), or via your DNS service provider if it is registered outside of OVHcloud
+- Access to the [OVHcloud Control Panel](/links/manager)
+- An OVHcloud [Exchange](/links/web/emails) or external email solution with DKIM
 
 > [!warning]
 >
 > If your domain name does not use OVHcloud DNS servers, you will need to modify the DKIM records in the interface of the service provider that manages your domain name configuration.
 >
-> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). To do this, go to the `DNS Zone`{.action} tab, and select the domain concerned.
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](/links/manager). To do this, go to the `DNS Zone`{.action} tab, and select the domain concerned.
 >
 
 ## Instructions
@@ -139,13 +139,13 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 
 ### Configuring DKIM automatically for an OVHcloud Exchange solution <a name="auto-dkim"></a>
 
-The automatic configuration of DKIM is accessible for the email [Exchange](https://www.ovhcloud.com/en-ca/emails/) solutions.
+The automatic configuration of DKIM is accessible for the email [Exchange](/links/web/emails) solutions.
 
 By default, the DKIM is not activated when you add a domain name to your platform. You will need to launch the automatic configuration process via the OVHcloud Control Panel.
 
 Click on the tab below corresponding to your solution.
 
-From your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Click on the name of the Exchange service concerned. Finally, go to the `Associated domains`{.action} tab.
+From your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Click on the name of the Exchange service concerned. Finally, go to the `Associated domains`{.action} tab.
 
 To the right of the domain name concerned, you can see that the `DKIM` box is gray.
 
@@ -167,7 +167,7 @@ To configure your DKIM, you will first need to retrieve the reference for your E
 
 Click on the tab below for your solution.
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Next, click on the name of the Exchange service concerned. By default, your platform name will match its reference number, or it will be visible under the name you have given it (see image below).
+In the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Next, click on the name of the Exchange service concerned. By default, your platform name will match its reference number, or it will be visible under the name you have given it (see image below).
 
 ![email](images/dns-dkim-platform-exchange.png){.thumbnail}
 
@@ -283,7 +283,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> > It is possible that the `status:` is in `todo`, this will not affect your DNS zone’s configuration.
 >>
 > **4. Configure the DNS record**
->> Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the relevant domain name.<br>
+>> Log in to the [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the relevant domain name.<br>
 >> Go to the `DNS Zone`{.action} tab, then click on `Add an entry`{.action}. In the window that appears, choose `CNAME`, then enter the information according to the values retrieved previously.<br>
 >>
 >> If we take the values of the example in step "**3. Retrieve the DNS record**":
@@ -428,7 +428,7 @@ If you want to delete the DKIM selector and its key pair, use the following API 
 
 If you would like to configure your DNS zone to add a DKIM record to it for your solution, follow the instructions below.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the domain name concerned.
+Log in to the [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the domain name concerned.
 
 Click on the `DNS Zone`{.action} tab, then `Add an entry`{.action}. There are 3 ways to add a record to set the DKIM in your DNS zone:
 

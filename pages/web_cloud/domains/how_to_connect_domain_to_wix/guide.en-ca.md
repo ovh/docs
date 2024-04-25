@@ -14,13 +14,13 @@ You have a domain name with OVHcloud and you want to connect it to a Wix hosting
 >
 > - Wix Support does not have access to your OVHcloud domain name settings and therefore cannot advise you on the information you will need to provide.
 >
-> - OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.<br><br> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist](https://partner.ovhcloud.com/en-ca/) provider and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#gofurther) section of this guide.
+> - OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.<br><br> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist](/links/partner) provider and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-ca/domains/) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) with the [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
+- A [domain name](/links/web/domains) registered with OVHcloud
+- Access to the [OVHcloud Control Panel](/links/manager) with the [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
 - A Wix web hosting plan
 - Access to manage this hosting plan with Wix
 
@@ -46,7 +46,7 @@ When using a Wix hosting plan with an OVHcloud domain name, you must first prepa
 > - Go to the "**Step 2 section | Update the DNS records in your domain hosting provider’s account**" in the Wix documentation.<br>
 > The following instructions will help you configure your OVHcloud DNS zone more easily.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 The table lists all of the DNS records for the selected domain name.
 
@@ -91,7 +91,7 @@ The DNS zone is now configured to link to a Wix hosting plan.
 >
 > It may take up to 48 hours to verify your domain name.
 
-If you are using an OVHcloud email solution, or planning to subscribe to one of [our email solutions](https://www.ovhcloud.com/en-ca/emails/), you will also need to prepare your DNS zone accordingly. Read our guide on [configuring an MX record](/pages/web_cloud/domains/dns_zone_mx).
+If you are using an OVHcloud email solution, or planning to subscribe to one of [our email solutions](/links/web/emails), you will also need to prepare your DNS zone accordingly. Read our guide on [configuring an MX record](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Go further <a name="gofurther"></a>
 
@@ -103,8 +103,8 @@ If you are using an OVHcloud email solution, or planning to subscribe to one of 
 
 To delegate the management of your domain name to another OVHcloud customer account, follow the guide on [Managing contacts for OVHcloud services](/pages/account_and_service_management/account_information/managing_contacts).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
 Join our community of users on <https://community.ovh.com/en/>.
