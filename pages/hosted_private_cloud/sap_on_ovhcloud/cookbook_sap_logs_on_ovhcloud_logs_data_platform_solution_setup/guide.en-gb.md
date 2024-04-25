@@ -206,6 +206,7 @@ OVHcloud provides an Ansible playbook to deploy the rsyslog configuration.
 ```
 
 > [!primary]
+>
 > Regardless of the method used, if you missed an option or need to reconfigure your rsyslog during the process, you can relaunch the script. A new configuration will be deployed, and the old configuration will be saved with the `.old` extension.
 >
 
@@ -243,6 +244,8 @@ OVHcloud provides a collection of saved queries and dashboards that can be direc
 > In the downloaded files, the keywords \<replace-with-your-alias-id\> and \<replace-with-your-audit-alias-id\> must be replaced with the alias ID of your data stream.
 >
 > In the case of you have only one data stream for your technical logs and your security audit logs, replace both keywords by the same value.
+>
+> You can find this ID in your OpenSearch Dashboards instance, `Stack Management`{.action}, `Index patterns`{.action}, then select your alias. The ID is displayed in the URL and is composed of alphanumeric characters.
 >
 
 In your OpenSearch Dashboards instance, use the left panel to navigate to `Stack Management`{.action}, then `Saved Objects`{.action} and click on `Import`{.action} to import the file previously downloaded.
