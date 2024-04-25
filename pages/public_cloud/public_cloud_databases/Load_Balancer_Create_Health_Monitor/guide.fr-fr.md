@@ -91,7 +91,7 @@ Selon l'interface choisie, voici les étapes à suivre :
 
 #### Espace client OVHcloud
 
-## Configuration d'un Health Monitor sur OVHcloud Load Balancer
+##### Configuration d'un Health Monitor sur OVHcloud Load Balancer
 
 Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balancer OVHcloud, ce qui permet de surveiller l'état de santé des serveurs du pool :
 
