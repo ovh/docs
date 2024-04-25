@@ -119,7 +119,7 @@ Per maggiori informazioni, contatta il tuo nuovo Registrar.
 
 [Trasferimento di dominio.co.uk in uscita](/pages/web_cloud/domains/transfer_outgoing_couk)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni (offerte di supporto)(/links/support).
 

@@ -119,7 +119,7 @@ Para más información, contacte con su nuevo agente registrador.
 
 [Transferencia del dominio .co.uk saliente](/pages/web_cloud/domains/transfer_outgoing_couk)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 

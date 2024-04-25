@@ -35,7 +35,7 @@ Ces actions peuvent être réalisées de plusieurs manières :
 > [!warning]
 >
 > La mise en place d'une redirection peut avoir des conséquences sur le référencement de votre site internet. 
-> Soyez vigilant quant aux manipulations que vous allez entreprendre ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) dans le référencement si nécessaire.
+> Soyez vigilant quant aux manipulations que vous allez entreprendre ou contactez un [prestataire spécialisé](/links/partner) dans le référencement si nécessaire.
 >
 > Attention : une redirection créée depuis l'[espace client OVHcloud](/links/manager) ne permet pas de rediriger une URL en `https://` vers un autre domaine ou une autre URL. 
 > Pour créer ce type de redirection, vous devrez obligatoirement passer par [une réécriture d'URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite) via un fichier « .htaccess » par exemple.
@@ -284,13 +284,13 @@ Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition cette partie du guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur les étapes documentées ci-dessous. Retrouvez plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition cette partie du guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur les étapes documentées ci-dessous. Retrouvez plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 Les fichiers « .htaccess » sont des fichiers de configuration dans lesquels des commandes peuvent être spécifiées. Lors de l’exécution du code de votre site internet par le serveur web (Apache), les commandes seront interprétées et ainsi exécutées.<br>
 Parmi ces commandes, il est possible de créer des redirections.
 
-Manipuler un fichier « .htaccess »  peut rendre votre site inaccessible. En cas de doute, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) .
+Manipuler un fichier « .htaccess »  peut rendre votre site inaccessible. En cas de doute, contactez un [prestataire spécialisé](/links/partner) .
 
 Retrouvez l'ensemble de notre documentation sur le « .htaccess »  dans la section [« Aller plus loin »](#go-further) de ce guide.
 

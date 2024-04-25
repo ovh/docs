@@ -39,7 +39,7 @@ Queste azioni possono essere eseguite in diversi modi:
 > [!warning]
 >
 > L'attivazione di un reindirizzamento può avere conseguenze sull'indicizzazione del tuo sito Internet. 
-> Presta la massima attenzione alle operazioni che intendi effettuare o contatta uno dei [provider specializzati](https://partner.ovhcloud.com/it/) nel referenziamento se necessario.
+> Presta la massima attenzione alle operazioni che intendi effettuare o contatta uno dei [provider specializzati](/links/partner) nel referenziamento se necessario.
 >
 > Attenzione: un reindirizzamento creato dallo [Spazio Cliente OVHcloud](/links/manager) non permette di reindirizzare una URL in `https://` verso un altro dominio o URL. 
 > Per creare questo tipo di reindirizzamento, dovrai necessariamente passare per una riscrittura dell'URL tramite un file ".htaccess" ad esempio.
@@ -287,13 +287,13 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/). OVHcloud non sarà infatti in grado di fornirti assistenza sugli step documentati qui sotto. Per maggiori informazioni, consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non sarà infatti in grado di fornirti assistenza sugli step documentati qui sotto. Per maggiori informazioni, consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 I file ".htaccess" sono file di configurazione nei quali possono essere specificati alcuni comandi. Quando il codice del tuo sito Internet viene eseguito dal server Web (Apache), i comandi vengono interpretati e quindi eseguiti.<br>
 Tra questi comandi, è possibile creare reindirizzamenti.
 
-Gestire un file ".htaccess" può rendere il tuo sito inaccessibile. In caso di dubbio, contatta uno dei [fornitori specializzati](https://partner.ovhcloud.com/it/).
+Gestire un file ".htaccess" può rendere il tuo sito inaccessibile. In caso di dubbio, contatta uno dei [fornitori specializzati](/links/partner).
 
 Per maggiori informazioni, consulta la nostra guida sul .htaccess nella sezione ["Per saperne di più"](#go-further) di questa guida.
 

@@ -39,7 +39,7 @@ Existen diversas formas de realizar estas acciones:
 > [!warning]
 >
 > La redirección puede afectar al posicionamiento de su sitio web. 
-> Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) en el posicionamiento, si es necesario.
+> Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](/links/partner) en el posicionamiento, si es necesario.
 >
 > Atención: una redirección creada desde el [área de cliente de OVHcloud](/links/manager) no permite redirigir una URL en `https://` a otro dominio o URL. 
 > Para crear este tipo de redirección, debe pasar obligatoriamente por [una reescritura de URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite) a través de un fichero ".htaccess", por ejemplo.
@@ -287,13 +287,13 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta parte de la guía para acompañarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). No podremos asistirle en las siguientes etapas. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición esta parte de la guía para acompañarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner). No podremos asistirle en las siguientes etapas. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 Los archivos ".htaccess" son archivos de configuración en los que se pueden especificar comandos. Al ejecutar el código de su sitio web por el servidor web (Apache), los comandos se interpretarán y ejecutarán de esta forma.<br>
 Entre estos comandos, es posible crear redirecciones.
 
-Manipular un archivo ".htaccess" puede inhabilitar el acceso al sitio web. En caso de duda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) .
+Manipular un archivo ".htaccess" puede inhabilitar el acceso al sitio web. En caso de duda, contacte con un [proveedor especializado](/links/partner) .
 
 Para más información, consulte nuestra guía ".htaccess" en la sección ["Más información"](#go-further) de esta guía.
 

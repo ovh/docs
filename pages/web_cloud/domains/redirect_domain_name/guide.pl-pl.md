@@ -39,7 +39,7 @@ Działania te mogą być przeprowadzane na kilka sposobów:
 > [!warning]
 >
 > Uruchomienie przekierowania może mieć wpływ na pozycjonowanie Twojej strony WWW. 
-> Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) w celu pozycjonowania strony, jeśli to konieczne.
+> Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner) w celu pozycjonowania strony, jeśli to konieczne.
 >
 > Uwaga: przekierowanie utworzone w [Panelu klienta OVHcloud](/links/manager) nie pozwala na przekierowanie adresu URL na `https://` na inną domenę lub adres URL. 
 > Aby utworzyć ten rodzaj przekierowania, należy obowiązkowo przejść przez [wpisanie adresu URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite), na przykład przez plik ".htaccess".
@@ -293,7 +293,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 Pliki ".htaccess" to pliki konfiguracyjne, w których można określić komendy. Podczas wykonywania kodu Twojej strony WWW na serwerze WWW (Apache) polecenia zostaną zinterpretowane i tym samym wykonane.<br>
 Wśród tych poleceń możesz utworzyć przekierowania.
 
-Manipulowanie plikiem ".htaccess" może spowodować niedostępność Twojej strony WWW. W przypadku wątpliwości należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/).
+Manipulowanie plikiem ".htaccess" może spowodować niedostępność Twojej strony WWW. W przypadku wątpliwości należy skontaktować się z [wyspecjalizowanym dostawcą](/links/partner).
 
 Pełna dokumentacja dotycząca ".htaccess" znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 

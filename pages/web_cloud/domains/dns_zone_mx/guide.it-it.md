@@ -102,7 +102,7 @@ Una volta inserite le informazioni, prosegui con gli step successivi e clicca su
 
 [Configura un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/links/support).
 

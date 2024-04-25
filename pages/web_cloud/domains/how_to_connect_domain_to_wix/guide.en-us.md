@@ -14,7 +14,7 @@ You have a domain name with OVHcloud and you want to connect it to a Wix hosting
 >
 > - Wix Support does not have access to your OVHcloud domain name settings and therefore cannot advise you on the information you will need to provide.
 >
-> - OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.<br><br> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist](https://partner.ovhcloud.com/en/) provider and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#gofurther) section of this guide.
+> - OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.<br><br> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist](/links/partner) provider and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements

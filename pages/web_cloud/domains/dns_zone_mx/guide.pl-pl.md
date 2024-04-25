@@ -102,8 +102,8 @@ Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.a
 
 [Skonfiguruj rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-Jeśli potrzebujesz specjalistycznych usług (SEO, programowanie, etc.), skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+Jeśli potrzebujesz specjalistycznych usług (SEO, programowanie, etc.), skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -39,7 +39,7 @@ Estas ações podem ser realizadas de várias formas:
 > [!warning]
 >
 > O reencaminhamento pode afetar o referenciamento do seu website. 
-> Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/) no referenciamento, se necessário.
+> Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](/links/partner) no referenciamento, se necessário.
 >
 > Atenção: um reencaminhamento criado a partir da[Área de Cliente OVHcloud](/links/manager) não permite reencaminhar um URL em `https://` para outro domínio ou URL. 
 > Para criar este tipo de reencaminhamento, deverá obrigatoriamente passar por [uma re-escritura de URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite) através de um ficheiro ".htaccess", por exemplo.
@@ -287,13 +287,13 @@ Esta encapsulação permite impedir os visitantes do seu site de visualizar o do
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Esta secção do manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não lhe poderemos fornecer assistência nas etapas abaixo indicadas. Para mais informações, aceda à secção deste manual intitulada ["Quer saber mais?"](#go-further).
+> Esta secção do manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não lhe poderemos fornecer assistência nas etapas abaixo indicadas. Para mais informações, aceda à secção deste manual intitulada ["Quer saber mais?"](#go-further).
 >
 
 Os ficheiros ".htaccess" são ficheiros de configuração nos quais podem ser especificados comandos. Ao executar o código do seu website pelo servidor web (Apache), os comandos serão interpretados e assim executados.<br>
 Entre estes comandos, é possível criar reencaminhamentos.
 
-Manipular um ficheiro ".htaccess" pode tornar o seu site inacessível. Em caso de dúvida, contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/) .
+Manipular um ficheiro ".htaccess" pode tornar o seu site inacessível. Em caso de dúvida, contacte um [fornecedor especializado](/links/partner) .
 
 Encontre o conjunto da nossa documentação no ".htaccess" na secção ["Quer saber mais?"](#go-further) deste manual.
 

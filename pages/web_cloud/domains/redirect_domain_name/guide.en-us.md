@@ -35,7 +35,7 @@ There are several ways of doing this:
 > [!warning]
 >
 > Setting up a redirection can affect your SEO ranking. 
-> Be careful about the changes you apply, or contact a [specialised provider](https://partner.ovhcloud.com/en/) for SEO if necessary.
+> Be careful about the changes you apply, or contact a [specialised provider](/links/partner) for SEO if necessary.
 >
 > Warning: A redirection created from the [OVHcloud Control Panel](/links/manager) does not redirect an URL as `https://` to another domain or URL. 
 > To create this type of redirection, you will have to apply [a URL rewrite](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite), for example by editing a ".htaccess" file. 
@@ -283,13 +283,13 @@ This type of embedded content prevents your site visitors from viewing the targe
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ".htaccess" files are configuration files in which commands can be specified. When the web server (Apache) runs your website’s code, the commands are interpreted, then executed.<br>
 You can use such commands to create redirections.
 
-A faulty .htaccess file can make your website inaccessible. If in doubt, contact a [specialist provider](https://partner.ovhcloud.com/en/).
+A faulty .htaccess file can make your website inaccessible. If in doubt, contact a [specialist provider](/links/partner).
 
 You can find all of our documentation on .htaccess in the ["Go further"](#go-further) section of this guide.
 

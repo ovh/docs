@@ -112,7 +112,7 @@ You can contact your provider for more information about this process.
 
 [Transferring a .uk domain name to another registrar](/pages/web_cloud/domains/transfer_outgoing_couk)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
