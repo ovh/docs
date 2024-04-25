@@ -48,7 +48,7 @@ You can set up multiple MX records for the same domain name. It is then necessar
 
 ### OVHcloud MX configuration values <a name="mxovhcloud"></a>
 
-Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (MX Plan standalone or included in an [OVHcloud web hosting](/links/web/hosting) plan), [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) and [Exchange](/links/web/emails). Our email servers have antispam and antivirus integrated.
+Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (MX Plan standalone or included in an [OVHcloud web hosting](/links/web/hosting) plan), [Email Pro](/links/web/email-pro) and [Exchange](/links/web/emails). Our email servers have antispam and antivirus integrated.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|

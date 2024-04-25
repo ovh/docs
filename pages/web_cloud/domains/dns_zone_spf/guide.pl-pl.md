@@ -99,7 +99,7 @@ W oknie, które się wyświetli, pojawi się kilka rekordów DNS. Jeśli chcesz 
 Wybrałeś rekord `SPF`{.action} i chcesz zastosować konfigurację OVHcloud. Pozwala ona na uwzględnienie wszystkich wychodzących serwerów e-mail OVHcloud w następujących ofertach e-mail:
 
 - MX Plan w monoterapii lub w cenie [hostingu OVHcloud](/links/web/hosting){.external}.
-- [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/).
+- [E-mail Pro](/links/web/email-pro).
 - [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
 
 Kliknij na przycisk `Użyj SPF na hostingu OVHcloud`{.action} na górze okna informacyjnego. Wyświetlą się informacje dotyczące SPF OVHcloud. Kliknij przycisk `Zatwierdź`{.action}, aby przeprowadzić modyfikację.
@@ -179,7 +179,7 @@ W tabeli wyświetla się konfiguracja OVHcloud Twojej domeny. Każdy wiersz odpo
 Ogólna konfiguracja SPF OVHcloud ma zastosowanie do następujących rozwiązań:
 
 - Usługa MX Plan w monoterapii lub w [cenie hostingu](/links/web/hosting).
-- [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/).
+- [E-mail Pro](/links/web/email-pro).
 - [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
 
 Konfiguracja jest następująca:

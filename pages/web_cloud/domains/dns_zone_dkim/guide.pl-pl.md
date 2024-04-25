@@ -41,7 +41,7 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
 
 - Posiadanie dostępu do interfejsu zarządzania domeną w [Panelu klienta OVHcloud](/links/manager) lub u operatora domeny, jeśli jest zarejestrowany poza OVHcloud.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Wykupienie jednej z naszych ofert [Exchange](/links/web/emails), [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/) lub usługi e-mail poza OVHcloud z DKIM
+- Wykupienie jednej z naszych ofert [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) lub usługi e-mail poza OVHcloud z DKIM
 
 > [!warning]
 >

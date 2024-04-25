@@ -53,7 +53,7 @@ Sie können mehrere MX-Einträge für denselben Domainnamen einrichten. In diese
 
 ### Werte der OVHcloud MX-Konfiguration <a name="mxovhcloud"></a>
 
-Nachfolgend finden Sie die Konfiguration für OVHcloud MX Plan (Standalone oder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten), [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) und [Exchange](/links/web/emails). Unsere E-Mail-Server verfügen über integrierte Antispam- und Antivirensoftware.
+Nachfolgend finden Sie die Konfiguration für OVHcloud MX Plan (Standalone oder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten), [E-Mail Pro](/links/web/email-pro) und [Exchange](/links/web/emails). Unsere E-Mail-Server verfügen über integrierte Antispam- und Antivirensoftware.
 
 |Domain|TTL|Eintrag|Priorität|Ziel|
 |---|---|---|---|---|

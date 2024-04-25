@@ -100,7 +100,7 @@ Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont propos
 Vous avez choisi l'enregistrement `SPF`{.action} et souhaitez appliquer la configuration OVHcloud. Celle-ci permet d'inclure l'ensemble des serveurs e-mail sortants OVHcloud pour les offres e-mail suivantes :
 
 - MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](/links/web/hosting){.external} .
-- [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
+- [E-mail Pro](/links/web/email-pro).
 - [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
 
 Cliquez sur le bouton `Utiliser le SPF pour mutualisé OVHcloud`{.action} en haut de la fenêtre d'assistance. Les informations relatives au SPF OVHcloud s'afficheront. Cliquez sur le bouton `Valider`{.action} pour réaliser la modification.
@@ -180,7 +180,7 @@ Le tableau affiche la configuration OVHcloud de votre domaine. Chaque ligne corr
 La configuration SPF OVHcloud générale s'applique aux solutions ci-dessous :
 
 - MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](/links/web/hosting).
-- [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
+- [E-mail Pro](/links/web/email-pro).
 - [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
 
 La configuration est la suivante :

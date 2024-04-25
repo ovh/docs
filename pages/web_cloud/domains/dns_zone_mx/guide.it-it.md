@@ -53,7 +53,7 @@ L’email sarà inviata verso la destinazione **mx0.mail.ovh.net**, preceduta da
 
 ### Valori della configurazione MX di OVHcloud <a name="mxovhcloud"></a>
 
-Qui sotto è disponibile la configurazione MX di OVHcloud da utilizzare con le nostre soluzioni MX Plan (da sola o inclusa in un piano di [hosting Web OVHcloud](/links/web/hosting)), [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/) e [Exchange](/links/web/emails). I nostri server di posta dispongono di un antispam e di un antivirus integrato.
+Qui sotto è disponibile la configurazione MX di OVHcloud da utilizzare con le nostre soluzioni MX Plan (da sola o inclusa in un piano di [hosting Web OVHcloud](/links/web/hosting)), [Email Pro](/links/web/email-pro) e [Exchange](/links/web/emails). I nostri server di posta dispongono di un antispam e di un antivirus integrato.
 
 |Dominio|TTL|Record|Priorità|Destinazione|
 |---|---|---|---|---|
