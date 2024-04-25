@@ -13,7 +13,11 @@ Le service Veeam Backup Data Protection est disponible et prêt à l'emploi dans
 - Une Organisation VCD
 - Un utilisateur avec le rôle Administrateur de l'organisation pour vous connecter au portail libre-service Veeam Data Protection. L'utilisateur admin d'un datacenter virtuel nouvellement configuré a le rôle par défaut.
 
-
+Pour en savoir plus sur l'offre de sauvegarde avec Veeam avec OVH pour pouvez accéder à ce lien de la documentation officiel OVH ["Activer et utiliser Veeam Managed Backup"](Activer et utiliser Veeam Managed Backup)
+S i vous ne savez pas comment vous connecter à la console d'administration Vcloud Director OVH je vous invite à lire ces documentations : 
+- [VCD - Se connecter à son organisation](https://help.ovhcloud.com/csm/fr-vmware-vcd-logging-change-password?id=kb_article_view&sysparm_article=KB0062737)
+- [VCD - Découvrez comment utiliser l'interface utilisateur de VCD](https://help.ovhcloud.com/csm/fr-vmware-vcd-getting-started-dashboard-overview?id=kb_article_view&sysparm_article=KB0062580)
+- [VCD - Les concepts fondamentaux de VCD](https://help.ovhcloud.com/csm/fr-vmware-vcd-concepts?id=kb_article_view&sysparm_article=KB0062577)
 ## En pratique
 [!primary] Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord ce guide.
 
@@ -27,10 +31,11 @@ Si vous utilisez le traitement d'images prenant en charge les applications pour 
 
 ###  Accéder à la console d'administration Veeam Backup Data Protection
 
-Le service Veeam Backup Data Protection dispose d’une visibilité pour sauvegarder des machines virtuelles ou des vApp à partir de n’importe quel Virtual Data Center (VDC) de l’organisation. Il est disponible au niveau de l'organisation pour tout utilisateur VMware Cloud Director ayant le rôle d'administrateur de l'organisation.
+Le service Veeam Backup Data Protection dispose d’une visibilité pour sauvegarder des machines virtuelles et des vApp à partir de n’importe quel Virtual Data Center (VDC) de l’organisation. Il est disponible au niveau de l'organisation pour tout utilisateur VMware Cloud Director ayant le rôle d'administrateur de l'organisation.
+
 Lorsque vous utilisez l'intégration Veeam Data Protection VCD pour créer des tâches de sauvegarde, vous pouvez choisir n'importe quelle instance de machine virtuelle à partir de n'importe quel datacenter virtuel de l'organisation.
 
-Vous pouvez accéder au portail Veeam Data Protection, cliquez sur `More -> Veeam Backup Data Protection` dans le volet de navigation du haut VCD (voir capture).
+Pour accéder au portail Veeam Data Protection, cliquez sur `More -> Veeam Backup Data Protection` dans le volet de navigation du haut de la console administration (voir ci-dessous) :
 
 ![VCD access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail .h-600 .w-400} 
 
@@ -46,7 +51,20 @@ Vous pouvez accéder au portail Veeam Data Protection, cliquez sur `More -> Veea
 >
 
 Dans la console Vcloud Director, cliquez sur `Data Centers -> Virtual Machines`, choisissez une VM et cliquez sur `Action -> Data Protection with Veeam -> add to Veeam backup Job`(voir capture).
+
 ![Backup VM](images/vcd_veeam_backup_vm.png){.thumbnail .h-600 .w-400}
+
+### Étape 3
+
+### Comment restorer une VM avec Veeam Backup
+
+#### Restauration entière d'une VM
+
+![VCD_Veeam_restore_vm_1](images/vcd_veeam_restore_vm.png){.thumbnail .h-600 .w-400}
+
+![VCD_Veeam_restore_vm_2](images/vcd_veeam_restore_vm_2.png){.thumbnail .h-600 .w-400}
+
+![VCD_Veeam_restore_vm_3](images/vcd_veeam_restore_vm_3.png){.thumbnail .h-600 .w-400}
 
 ## Aller plus loin
 
