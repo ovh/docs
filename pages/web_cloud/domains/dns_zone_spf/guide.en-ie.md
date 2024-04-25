@@ -86,7 +86,7 @@ To add an SPF record, click on `Add an entry`{.action} in the right-hand menu.
 
 In the window that pops up, the configuration assistant offers several different types of DNS records. There are two ways of adding an SPF record:
 
-- [Add an OVHcloud SPF record](#spfrecordovhcloud) **and use the OVHcloud configuration**: For users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](https://www.ovhcloud.com/en-ie/emails/private-exchange/){.external}).
+- [Add an OVHcloud SPF record](#spfrecordovhcloud) **and use the OVHcloud configuration**: For users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](/links/web/emails-private-exchange){.external}).
 - [Add an SPF record](#spfrecord): For users who do not have the entire record. For example, you only have an IP address or the host name of the email server.
 - [Add a TXT record](#txtrecord): For users who are experienced or already have the full record. For example, your email solution provider will send you the value.
 
