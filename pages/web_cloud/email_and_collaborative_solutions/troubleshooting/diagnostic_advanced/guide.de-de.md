@@ -51,7 +51,7 @@ Wenn Sie ein E-Mail-Programm auf Ihrem Computer (Outlook, Mac Mail, Thunderbird 
 
 ## Ich kann keine E-Mails empfangen, da meine E-Mail-Adresse voll ist und ich keinen Speicherplatz mehr habe. Was kann ich tun?
 
-Wenn Sie [eines unserer E-Mail-Angebote von OVHcloud](https://www.ovhcloud.com/de/emails/) abonniert haben und einer Ihrer E-Mail-Accounts voll ist, lesen Sie unsere Anleitung "[Speicherplatz eines E-Mail-Accounts verwalten](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". In dieser Anleitung erfahren Sie, ob Sie den vorhandenen Speicherplatz optimieren können oder ob Sie das E-Mail-Angebot wechseln müssen, um die Speicherkapazität zu erhöhen.
+Wenn Sie [ein E-Mail-Angebot von OVHcloud](https://www.ovhcloud.com/de/emails/) abonniert haben und einer Ihrer E-Mail-Accounts voll ist, lesen Sie unsere Anleitung "[Speicherplatz eines E-Mail-Accounts verwalten](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". In dieser Anleitung erfahren Sie, ob Sie den vorhandenen Speicherplatz optimieren können oder ob Sie das E-Mail-Angebot wechseln müssen, um die Speicherkapazität zu erhöhen.
 
 ### Sind die E-Mails über das Webmail-Interface funktionsfähig? (**Versand** und/oder **Empfang**)
 
