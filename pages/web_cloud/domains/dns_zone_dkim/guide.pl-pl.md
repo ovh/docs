@@ -145,7 +145,7 @@ Odbiorca **recipient@otherdomain.ovh** będzie mógł odszyfrować ten podpis kl
 
 ### Automatyczna konfiguracja DKIM dla usługi e-mail Exchange lub E-mail Pro OVHcloud <a name="auto-dkim"></a>
 
-Automatyczna konfiguracja DKIM jest dostępna dla ofert e-mail [Exchange](https://www.ovhcloud.com/pl/emaile/) i [E-mail Pro](https://www.ovhcloud.com/pl/emaile/email-pro/).
+Automatyczna konfiguracja DKIM jest dostępna dla ofert e-mail [Exchange](/links/web/emails-hosted-exchange) i [E-mail Pro](/links/web/email-pro).
 
 Domyślnie DKIM nie jest aktywowany podczas dodawania domeny do platformy. Dlatego rozpocznij proces automatycznej konfiguracji w Panelu klienta.
 

@@ -390,7 +390,7 @@ Esta variable se puede utilizar cuando mueve temporalmente archivos a otro sitio
 
 [Reescribir las URLs utilizando el "mod_rewrite"](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite).
 
-[Realizar otras operaciones con el archivo ".htaccess"]().
+[Realizar otras operaciones con el archivo ".htaccess"](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do).
 
 [Cómo editar mi zona DNS ?](/pages/web_cloud/domains/dns_zone_edit)
 

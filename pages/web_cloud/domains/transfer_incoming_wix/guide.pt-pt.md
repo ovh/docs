@@ -16,7 +16,7 @@ A transferência de um nome de domínio Wix requer um processo específico.
 
 > [!warning]
 >
-> O [agente de registo](/links/domains-what-is-registrar) de um domínio representa a organização/fornecedor acreditado junto do qual o domínio está registado/subscrito por um particular, uma associação ou uma organização. É nesse mesmo agente de registo que renova a subscrição do seu nome de domínio (geralmente uma vez por ano).
+> O [agente de registo](/links/web/domains-what-is-registrar) de um domínio representa a organização/fornecedor acreditado junto do qual o domínio está registado/subscrito por um particular, uma associação ou uma organização. É nesse mesmo agente de registo que renova a subscrição do seu nome de domínio (geralmente uma vez por ano).
 >
 > Se a OVHcloud já é o agente registador do seu domínio **antes** de iniciar o procedimento que se seguirá, a transferência de entrada de domínio não é o procedimento adequado. O procedimento de transferência de domínio aplica-se *** apenas aos nomes de domínio registados noutro agente de registo que não a OVHcloud.
 >

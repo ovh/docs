@@ -16,7 +16,7 @@ Für den Transfer eines Ionos-Domainnamens ist ein spezieller Ansatz erforderlic
 
 > [!warning]
 >
-> Der [Domainnamen-Registrar](/links/domains-what-is-registrar) ist ein Diensteanbieter, der authorisiert ist, Domainnamen zur Registrierung seitens Privatpersonen, Unternehmen oder sonstigen Organisationen anzubieten. Sie verlängern ein Domainnamen-Abonnement bei Ihrem Registrar, üblicherweise jährlich.
+> Der [Domainnamen-Registrar](/links/web/domains-what-is-registrar) ist ein Diensteanbieter, der authorisiert ist, Domainnamen zur Registrierung seitens Privatpersonen, Unternehmen oder sonstigen Organisationen anzubieten. Sie verlängern ein Domainnamen-Abonnement bei Ihrem Registrar, üblicherweise jährlich.
 >
 > Wenn OVHcloud bereits der Registrar Ihres Domainnamens ist, ist der Prozess des eingehenden Transfers nicht für diesen Domainnamen anwendbar. Das in dieser Anleitung beschriebene Verfahren für eingehende Domaintransfers gilt **nur** für Domainnamen, die derzeit bei einem anderen Registrar als OVHcloud registriert sind.
 >
