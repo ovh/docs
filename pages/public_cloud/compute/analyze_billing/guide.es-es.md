@@ -1,7 +1,7 @@
 ---
 title: 'Información sobre el tipo de facturación cloud'
 excerpt: 'Cómo interpretar la facturación de las soluciones Public Cloud'
-updated: 2022-08-29
+updated: 2024-04-24
 ---
 
 > [!primary]
@@ -31,6 +31,8 @@ OVHcloud busca ofrecer un tipo de facturación lo más adaptada posible al uso q
 Al crear un recurso con este tipo de facturación, se activa un contador por horas, que posteriormente se desactiva al eliminar el recurso. Cada período de facturación comenzado (cada hora en este caso) deberá abonarse completo.
 
 Al final de mes, se multiplica cada contador por el precio por horas del recurso en cuestión. Para obtener el importe total, se suman todos los contadores que se hayan activado durante el mes.
+
+Específicamente para instancias de máquinas virtuales, el contador de facturación comienza cuando una instancia alcanza el estado `ACTIVE` (mostrado como `Activa` en el área de clientes de OVHcloud). En otras palabras, el periodo durante el cual la instancia está en estado `BUILD` no se factura.
 
 Cada proyecto cloud tiene asignada su propia factura, emitida el primer día del mes siguiente, en la que se incluyen todos los recursos facturados durante el mes en curso.
 
