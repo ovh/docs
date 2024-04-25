@@ -1,76 +1,53 @@
 ---
-title: "VMware Cloud Director - FAQ"
-excerpt: "Retrouvez les questions les plus fréquentes concernant VCD"
-updated: 2024-04-16
+title: "VMware Cloud Director - Sauvegarde avec Veeam Backup"
+excerpt: "Retrouvez commment effectuer des sauvegardes avec l'intégration Veeam Backup Data Protection"
+updated: 2024-04-XX
 ---
 
-## FAQ
+## Objectif
 
-**Retrouvez ci-dessous les questions les plus fréquentes concernant VMWare Cloud Director par OVHcloud**
+Le service Veeam Backup Data Protection est disponible et prêt à l'emploi dans les 3 offres OVH ([voir catalogues des fonctionnalitées](https://help.ovhcloud.com/csm/en-ie-vmware-vcd-concepts?id=kb_article_view&sysparm_article=KB0062559#features-of-vmware-cloud-director-at-ovhcloud)). Ce service s’intègre de manière transparente en tant que solution gérée pour aider votre entreprise à atteindre une haute disponibilité et fournit des points de récupération pour vos applications et vos données. En utilisant ce service, vous contrôlez la sauvegarde de toutes les machines virtuelles (VM) et vApp de votre infrastructure directement depuis la console VCD Veeam Data Protection.
 
-<a name="VCDonOVH"></a>
+## Prérequis
+- Un compte Vcloud Director administrateur
+- Une Organisation VCD
+- Un utilisateur avec le rôle Administrateur de l'organisation pour vous connecter au portail libre-service Veeam Data Protection. L'utilisateur admin d'un datacenter virtuel nouvellement configuré a le rôle par défaut.
 
-### Qu’est-ce que VMware Cloud Director par OVHcloud ?
 
-Il s’agit d’un nouveau produit disponible dans l’offre VMware on OVHcloud qui vous fournit un datacenter virtuel alimenté par la technologie VMware, en plus d’une infrastructure mutualisée hébergée et exploitée par OVHcloud.
+## En pratique
+[!primary] Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord ce guide.
 
-VMware Cloud Director par OVHcloud sera disponible en 3 niveaux :
+### Limitation
+> [!WARNING]
+> 
+> Pour que les options de traitement d'image et d'indexation du système de fichiers invité compatibles avec l'application Veeam fonctionnent pour les machines virtuelles Windows®, les outils VMware™ les plus récents doivent être installés sur les machines virtuelles. Les machines virtuelles Linux® ne prennent pas en charge la reconnaissance des applications ou l'indexation du système de fichiers invité.
+Si vous utilisez le traitement d'images prenant en charge les applications pour les sauvegardes de base de données MS SQL ou Oracle, les options prenant en charge les applications et Restauration d'éléments ne sont pas prises en charge. L'opération de restauration doit effectuer une restauration complète de la machine virtuelle, ce qui nécessite une fenêtre de temps d'arrêt pour tous les utilisateurs de la base de données. Impossible de retenter manuellement un échec de sauvegarde immuable. Vous devez exécuter la sauvegarde complète active ou attendre l'exécution de la prochaine sauvegarde planifiée. [Pour en savoir plus](https://helpcenter.veeam.com/docs/backup/vsphere/vcloud_manage_backup.html?ver=120)
 
-- VCD Standard, fournissant les capacités standard de virtualisation de la pile VMware.
-- VCD Advanced, qui comprend VCD standard ainsi que des capacités avancées de mise en réseau et de sécurité.
-- VCD Premium, qui comprend les fonctionnalités des niveaux précédents ainsi qu'un stockage vSAN haute performance au niveau Advanced.
+### Étape 1
 
-Pour plus d'informations, voir la page [les principes clés de VCD sur OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features).
+###  Accéder à la console d'administration Veeam Backup Data Protection
 
-<a name="migrationVCD"></a>
+Le service Veeam Backup Data Protection dispose d’une visibilité pour sauvegarder des machines virtuelles ou des vApp à partir de n’importe quel Virtual Data Center (VDC) de l’organisation. Il est disponible au niveau de l'organisation pour tout utilisateur VMware Cloud Director ayant le rôle d'administrateur de l'organisation.
+Lorsque vous utilisez l'intégration Veeam Data Protection VCD pour créer des tâches de sauvegarde, vous pouvez choisir n'importe quelle instance de machine virtuelle à partir de n'importe quel datacenter virtuel de l'organisation.
 
-### Comment la migration sera-t-elle effectuée par OVHcloud ?
+Vous pouvez accéder au portail Veeam Data Protection, cliquez sur `More -> Veeam Backup Data Protection` dans le volet de navigation du haut VCD (voir capture).
 
-Si vous choisissez de migrer vers VCD, OVHcloud se chargera de la migration pour vous.
+![VCD access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail .h-600 .w-400} 
 
-Par exception, nous ne facturerons pas les nouveaux prix actuels du serveur/hôte pendant le processus de migration. Nous absorberons les coûts liés à l’augmentation du prix des licences pendant la migration. Que vous choisissiez ou non de continuer à utiliser la solution actuelle, vous bénéficierez tout de suite des nouveaux tarifs VCD à compter du 1er mai 2024.
+![VCD access to Veeam Backup](images/vcd_veeam_backup_console.png){.thumbnail .h-600 .w-400}
 
-Cependant, notre objectif est de migrer vers VCD dès que nous sommes prêts. Nous vous avertirons 1 à 2 semaines avant le début de votre migration, qui sera effectuée sans temps d'arrêt. Si, pour des raisons techniques, une migration à chaud ne peut pas être effectuée, nous discuterons avec vous de la meilleure façon de procéder.
+### Étape 2
 
-<a name="migrationdata"></a>
+### Comment sauvegarder une machine virtuelle avec Veeam Backup
 
-### Comment migrer mes données vers VCD ?
+> [!primary]
+>
+> Aucun agent n'est necessaire au fonctionnement des sauvegarde avec Veeam Backup Data Protection depuis une machine virtuelle ou une vApp.
+>
 
-Vos données restent sur les *filers* Leclerc v3, nous allons exposer à VCD le stockage comme nous exposons le stockage à vSphere. La migration « en direct » entre deux hôtes avec le même CPU (Intel) se fait via vMotion.
-
-<a name="accessAPI"></a>
-
-### Puis-je toujours avoir accès à vSphere ESXi et à l’API vCenter avec VMware Cloud Director ?
-
-Avec VMware Cloud Director, vous ne pouvez pas accéder aux API vSphere ESXi et vCenter. Vous aurez accès à l’API de Cloud Director et pourrez utiliser des outils comme [Terraform](https://registry.terraform.io/providers/vmware/vcd/latest/docs).
-
-<a name="backupTools"></a>
-
-### Puis-je quand même utiliser des produits comme Veeam, Naviko, Rubik pour sauvegarder mes VM ?
-
-Non, avec VMware Cloud Director, vous ne pouvez pas utiliser d’outil demandant l’accès à vSphere ESXi ou vCenter.
-
-Pour le Backup, nous vous proposerons Veeam Managed Backup avec un plugin intégré pour les VM de Backup.
-Nous proposerons 3 types de jobs par défaut, mais vous pourrez ajouter des politiques différentes si besoin.
-
-La consommation sera basée par VM et par mois et la consommation de stockage par mois.
-
-<a name="rulesvSphere"></a>
-
-### Puis-je utiliser des règles comme l’affinité et l’anti-affinité comme précédemment avec vSphere ?
-
-Avec VMware Cloud Director, vous pouvez définir l’affinité de groupe pour les machines virtuelles et des règles comme l’anti-affinité pour séparer différentes machines virtuelles.
-
-<a name="certifications"></a>
-
-### Quelles certifications s'appliquent au nouveau service VCD ?
-
-Lors du lancement du service, aucune certification spécifique ne sera applicable au service VMware Cloud Director par OVHcloud.
-
-Cependant, la prise en charge des certifications HDS, ISO27001, SOC2 ou PCI-DSS est un des objectifs de notre feuille de route.
+Dans la console Vcloud Director, cliquez sur `Data Centers -> Virtual Machines`, choisissez une VM et cliquez sur `Action -> Data Protection with Veeam -> add to Veeam backup Job`(voir capture).
+![Backup VM](images/vcd_veeam_backup_vm.png){.thumbnail .h-600 .w-400}
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
-
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
