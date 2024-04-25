@@ -1,7 +1,7 @@
 ---
 title: "Kluczem do rozpoczęcia korzystania z usługi Public Cloud"
 excerpt: "Poznaj podstawowe pojęcia, które mogą być przydatne podczas uruchamiania aplikacji w środowisku Public Cloud"
-updated: 2022-02-07
+updated: 2024-04-24
 ---
 
 > [!primary]
@@ -90,7 +90,7 @@ Aby uruchomić projekt, musisz zarejestrować sposób płatności podczas tworze
 #### Płatności
 
 > [!primary]
-> W przypadku instancji *Virtual Machines* licznik rozliczeń rozpoczyna się, gdy instancja osiągnie status `ACTIVE` (wyświetlany jako `Activated` w przestrzeni klienta OVHcloud). Innymi słowy, okres, w którym instancja jest w stanie `BUILD` nie jest rozliczany.
+> W przypadku instancji *Virtual Machines* licznik rozliczeń rozpoczyna się, gdy instancja osiągnie status `ACTIVE` (wyświetlany jako `Włączona` w przestrzeni klienta OVHcloud). Innymi słowy, okres, w którym instancja jest w stanie `BUILD` nie jest rozliczany.
 >
 
 Ponieważ Twój sposób płatności jest zarejestrowany, zostanie wykorzystany do pobrania kwoty obliczonej dla Twojego [fakturowania na koniec miesiąca](/pages/public_cloud/compute/analyze_billing). Obliczenia te dokonuje się na podstawie czasu wykorzystania każdego zasobu, w zależności od ceny zasobów.
@@ -136,7 +136,7 @@ W praktyce znajdziesz tutaj również przewodniki, które pomogą Ci zacząć:
 |[Dostęp do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)|Interfejs Horizon OpenStack pozwala na wykonywanie niektórych zaawansowanych operacji.|
 |[Utwórz klaster Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) (EN)|Niniejszy przewodnik ułatwi Ci realizację pierwszego klastra Kubernetes.|
 |[Konfiguracja Additional IP](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance)|Adresy Additional IP pozwalają na przełączanie ruchu z jednej instancji na inną. Niniejszy przewodnik wyjaśnia, jak to skonfigurować.|
-|[Korzystanie z interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)|Horizon to klasyczny interfejs OpenStack, a ten przewodnik wyjaśni, jak uzyskać do niego dostęp.
+|[Korzystanie z interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)|Horizon to klasyczny interfejs OpenStack, a ten przewodnik wyjaśni, jak uzyskać do niego dostęp.|
 |[Instalacja CLI OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)|OpenStack może być również używany w wierszu poleceń. Oto jak zainstalować narzędzia.|
 
 Jedną z największych zalet korzystania ze standardowych i otwartych technologii, takich jak OpenStack lub Kubernetes, jest dostęp do całej dostępnej dokumentacji.

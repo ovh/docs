@@ -94,7 +94,7 @@ Um ein Projekt zu starten müssen Sie bei der Erstellung des Projekts unbedingt 
 #### Abrechnung
 
 > [!primary].
-> Speziell für Instanzen vom Typ *Virtual Machines* wird der Rechnungszähler gestartet, wenn eine Instanz den Status `ACTIVE` erreicht (im OVHcloud-Kundenbereich als `Activated` angezeigt). Mit anderen Worten: Der Zeitraum, in dem sich die Instanz im Status `BUILD` befindet, wird nicht in Rechnung gestellt.
+> Speziell für Instanzen vom Typ *Virtual Machines* wird der Rechnungszähler gestartet, wenn eine Instanz den Status `ACTIVE` erreicht (im OVHcloud-Kundenbereich als `Aktiviert` angezeigt). Mit anderen Worten: Der Zeitraum, in dem sich die Instanz im Status `BUILD` befindet, wird nicht in Rechnung gestellt.
 >
 
 Da Ihr Zahlungsmittel hinterlegt ist, wird der berechnete Betrag [am Ende des Monats abgebucht](/pages/public_cloud/compute/analyze_billing). Diese Berechnung erfolgt auf der Grundlage der Nutzungszeit der einzelnen Ressourcen und des Preises der Ressourcen.

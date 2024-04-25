@@ -1,7 +1,7 @@
 ---
 title: "Lo esencial para empezar con Public Cloud"
 excerpt: "Descubra las nociones básicas útiles para empezar en el entorno Public Cloud"
-updated: 2024-04-22
+updated: 2024-04-24
 ---
 
 > [!primary]
@@ -94,7 +94,7 @@ Para iniciar un proyecto, deberá registrar una forma de pago al crear el proyec
 #### La facturación
 
 > [!primary]
-> Específicamente para instancias *Virtual Machines*, el contador de facturación comienza cuando una instancia alcanza el estado `ACTIVE` (mostrado como `Activated` en el espacio de cliente de OVHcloud). En otras palabras, el periodo durante el cual la instancia está en estado `BUILD` no se factura.
+> Específicamente para instancias *Virtual Machines*, el contador de facturación comienza cuando una instancia alcanza el estado `ACTIVE` (mostrado como `Activa` en el espacio de cliente de OVHcloud). En otras palabras, el periodo durante el cual la instancia está en estado `BUILD` no se factura.
 >
 
 Al haber registrado su forma de pago, esta se utilizará para cargar el importe calculado para su [facturación a fin de mes](/pages/public_cloud/compute/analyze_billing). Este cálculo se realiza en función del tiempo de uso de cada recurso, en función del precio de los recursos.
