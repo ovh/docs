@@ -175,15 +175,36 @@ La CLI OpenStack et l'interface graphique Horizon offrent des alternatives à l'
 
 La CLI OpenStack permet de gérer vos ressources cloud via des commandes exécutées dans votre terminal. Pour la création de politiques L7 sur vos Load Balancers, suivez ces instructions :
 
-- Ouvrez votre terminal.
-- Assurez-vous que l'environnement de votre CLI est configuré avec les bons identifiants.
-- Obtenir la Liste des Listeners
+1. **Ouvrir votre terminal**:
+   - Assurez-vous que l'environnement de votre CLI est configuré avec les bons identifiants.
 
-Pour obtenir la liste des listeners disponibles, utilisez la commande suivante :
+2. **Lister les listeners disponibles**:
+   - Utilisez la commande suivante pour obtenir la liste des listeners de votre Load Balancer:
+     ```bash
+     openstack loadbalancer listener list
+     ```
 
-```shell
-openstack loadbalancer listener list
-```
+3. **Créer une politique L7**:
+   - Après avoir identifié le listener approprié, créez une politique L7 en utilisant la commande suivante. Remplacez `<LISTENER_ID>` par l'ID du listener où vous voulez ajouter la politique :
+     ```bash
+     openstack loadbalancer l7policy create --action REDIRECT_TO_POOL --redirect-pool <POOL_ID> --name <POLICY_NAME> --position 1 <LISTENER_ID>
+     ```
+
+4. **Ajouter une règle L7 à la politique**:
+   - Pour ajouter une règle à la politique que vous venez de créer, utilisez la commande suivante. Adaptez les paramètres tels que `<POLICY_ID>`, `<TYPE>`, `<COMPARE_TYPE>`, `<VALUE>` selon vos besoins :
+     ```bash
+     openstack loadbalancer l7rule create --type <TYPE> --compare-type <COMPARE_TYPE> --value '<VALUE>' <POLICY_ID>
+     ```
+   - Exemples de types de règles incluent `PATH`, `HEADER`, `COOKIE`, etc., et les types de comparaison peuvent être `REGEX`, `STARTS_WITH`, `ENDS_WITH`, `EQUAL_TO`, `CONTAINS`.
+
+5. **Vérifier la création de la règle**:
+   - Pour confirmer que la règle a été correctement ajoutée à votre politique L7, vous pouvez lister les règles associées à la politique :
+     ```bash
+     openstack loadbalancer l7rule list <POLICY_ID>
+     ```
+
+En suivant ces étapes, vous pouvez efficacement configurer et gérer les politiques et les règles L7 pour vos Load Balancers en utilisant la CLI OpenStack, offrant une approche flexible et puissante pour le contrôle avancé du trafic réseau.
+
 Voici un exemple de format de sortie de la commande :
 ```shell
 | id       | default_pool_id | name                           | project_id | protocol | protocol_port | admin_state_up |
@@ -251,7 +272,7 @@ Que vous optiez pour la CLI pour sa rapidité et sa flexibilité dans les script
   
 ### Étape 3 : Configuration Automatisée avec Terraform
 
-La configuration automatisée avec Terraform permet de déployer et de gérer des ressources cloud de manière déclarative, en utilisant des fichiers de configuration au format HashiCorp Language (HCL). Cela facilite la mise en place de politiques L7 pour les Load Balancers chez OVHcloud. Voici un exemple plus détaillé de configuration d'une politique L7 avec Terraform :
+La configuration automatisée avec Terraform permet de déployer et de gérer des ressources cloud de manière déclarative, en utilisant des fichiers de configuration au format HashiCorp Language (HCL). Cela facilite la mise en place de politiques L7 pour les Load Balancers chez OVHcloud. Pour plus d'informations sur les ressources spécifiques de Terraform, consultez la documentation pour [L7 Policy](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_l7policy_v2) et [L7 Rule](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_l7rule_v2). Voici un exemple plus détaillé de configuration d'une politique L7 avec Terraform :
 
 #### Prérequis
 
