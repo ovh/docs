@@ -87,7 +87,7 @@ Per aggiungere un record SPF, clicca su `Aggiungi un record`{.action}.
 
 Nella nuova finestra, vengono proposti diversi record DNS. Per aggiungere un record SPF, hai due possibilità:
 
-- [Aggiungere un record SPF OVHcloud](#spfrecordovhcloud)**e utilizzare la configurazione OVHcloud**: per gli utenti che dispongono esclusivamente delle soluzioni email OVHcloud sul loro dominio (esclusi [Private Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external}).
+- [Aggiungere un record SPF OVHcloud](#spfrecordovhcloud)**e utilizzare la configurazione OVHcloud**: per gli utenti che dispongono esclusivamente delle soluzioni email OVHcloud sul loro dominio (esclusi [Private Exchange](/links/web/emails-hosted-exchange){.external}).
 - [Aggiungi un record SPF](#spfrecord): per gli utenti che non possiedono la registrazione completa. Ad esempio, disponi solo di un indirizzo IP o del nome host del server di posta.
 - [Aggiungi un record TXT](#txtrecord): per gli utenti esperti o che dispongono già di una registrazione completa. Ad esempio, il tuo provider di soluzione email ti trasmette il valore.
 
@@ -101,7 +101,7 @@ Hai scelto il record `SPF`{.action} e vuoi applicare la configurazione OVHcloud.
 
 - MX Plan da solo o incluso in un'offerta di [hosting Web OVHcloud](/links/web/hosting){.external}.
 - [Email Pro](/links/web/email-pro).
-- [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/)
+- [Hosted Exchange](/links/web/emails-hosted-exchange)
 
 Clicca sul pulsante `Utilizza il record SPF per l'hosting condiviso OVHcloud`{.action} in cima alla finestra di assistenza. Visualizzi le informazioni relative al record SPF di OVHcloud. Clicca poi sul pulsante `Conferma`{.action} per attivare la modifica.
 
@@ -181,7 +181,7 @@ La configurazione SPF OVHcloud generale si applica alle seguenti soluzioni:
 
 - MX Plan da solo o incluso in un'offerta di [hosting Web OVHcloud](/links/web/hosting).
 - [Email Pro](/links/web/email-pro).
-- [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/)
+- [Hosted Exchange](/links/web/emails-hosted-exchange)
 
 La configurazione è questa:
 

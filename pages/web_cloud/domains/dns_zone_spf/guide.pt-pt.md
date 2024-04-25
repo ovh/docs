@@ -84,7 +84,7 @@ Para adicionar um registo SPF, clique em `Adicionar uma entrada`{.action}.
 
 Na nova janela, irá visualizar vários registos DNS. Para adicionar um SPF, tem duas possibilidades:
 
-- [Adicionar um registo SPF OVHcloud](#spfrecordovhcloud)e utilizar **a configuração da OVHcloud**: para os utilizadores que apenas possuem as ofertas de e-mail OVHcloud no seu nome de domínio (exceto [Private Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}).
+- [Adicionar um registo SPF OVHcloud](#spfrecordovhcloud)e utilizar **a configuração da OVHcloud**: para os utilizadores que apenas possuem as ofertas de e-mail OVHcloud no seu nome de domínio (exceto [Private Exchange](/links/web/emails-hosted-exchange){.external}).
 - [Adicionar um registo SPF](#spfrecord): para os utilizadores que não possuem a totalidade do registo. Por exemplo, dispõe apenas de um endereço de IP ou do nome do host do servidor de e-mail.
 - [Adicionar um registo TXT](#txtrecord): para utilizadores experientes ou que já disponham do registo completo. Por exemplo, o seu fornecedor de solução de e-mail transmite-lhe o valor.
 
@@ -98,7 +98,7 @@ Escolheu o registo `SPF`{.action} e deseja aplicar a configuração da OVHcloud.
 
 - MX Plan sozinho ou incluído numa oferta de [alojamento web da OVHcloud](/links/web/hosting){.external}.
 - [E-mail Pro](/links/web/email-pro).
-- [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
+- [Hosted Exchange](/links/web/emails-hosted-exchange).
 
 Clique no botão `Utilizar o SPF para partilhar a OVHcloud`{.action} no topo da janela de assistência. Aparecerão as informações relativas ao SPF da OVHcloud. Clique no botão `Validar`{.action} para concretizar alteração.
 
@@ -175,7 +175,7 @@ A configuração SPF OVHcloud geral aplica-se às seguintes soluções:
 
 - MX Plan sozinho ou incluído numa oferta de [alojamento web da OVHcloud](/links/web/hosting).
 - [E-mail Pro](/links/web/email-pro).
-- [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
+- [Hosted Exchange](/links/web/emails-hosted-exchange).
 
 A configuração é a seguinte:
 

@@ -100,7 +100,7 @@ You have chosen the `SPF`{.action} record and would like to apply the OVHcloud c
 
 - MX Plan standalone or included in an OVHcloud [web hosting plan](/links/web/hosting){.external}
 - [E-mail Pro](/links/web/email-pro)
-- [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
+- [Hosted Exchange](/links/web/emails-hosted-exchange)
 
 Choose the `SPF`{.action} type record and then click on the button `Use the SPF for OVHcloud web hosting`{.action}. In the following step, click on `Confirm`{.action} to approve the action.
 
@@ -178,7 +178,7 @@ The general OVHcloud SPF configuration applies to the solutions below:
 
 - MX Plan standalone or included in an OVHcloud [web hosting plan](/links/web/hosting)
 - [E-mail Pro](/links/web/email-pro)
-- [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
+- [Hosted Exchange](/links/web/emails-hosted-exchange)
 
 The configuration is as follows:
 

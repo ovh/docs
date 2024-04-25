@@ -86,7 +86,7 @@ Um einen SPF-Eintrag hinzuzufügen klicken Sie rechts im Menü auf `Eintrag hinz
 
 Im neu angezeigten Fenster bietet der Konfigurationsassistent verschiedene Arten von DNS-Einträgen an. Es gibt zwei Möglichkeiten, einen SPF-Eintrag hinzuzufügen: 
 
-- [Einen OVHcloud SPF-Eintrag hinzufügen](#spfrecordovhcloud) **und die OVHcloud-Konfiguration verwenden**: Für Benutzer, die ausschließlich die E-Mail-Angebote von OVHcloud für ihre Domain nutzen (ausgenommen [Private Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}).
+- [Einen OVHcloud SPF-Eintrag hinzufügen](#spfrecordovhcloud) **und die OVHcloud-Konfiguration verwenden**: Für Benutzer, die ausschließlich die E-Mail-Angebote von OVHcloud für ihre Domain nutzen (ausgenommen [Private Exchange](/links/web/emails-hosted-exchange){.external}).
 - [SPF-Eintrag hinzufügen](#spfrecord): Für Benutzer, die nicht über den vollständigen Wert verfügen. Sie haben beispielsweise nur eine IP-Adresse oder den Hostnamen des E-Mail-Servers als Information.
 - [TXT-Eintrag hinzufügen](#txtrecord): Für erfahrene Benutzer bzw. wenn der vollständige SPF-Eintrag vorliegt. Ihr E-Mail-Anbieter übermittelt Ihnen zum Beispiel den Wert.
 
@@ -100,7 +100,7 @@ Sie haben den `SPF`{.action}-Eintrag ausgewählt und möchten die OVHcloud-Konfi
 
 - MX Plan Standalone oder in einem [OVHcloud Webhosting](/links/web/hosting){.external} Angebot inklusive
 - [E-Mail Pro](/links/web/email-pro)
-- [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/)
+- [Hosted Exchange](/links/web/emails-hosted-exchange)
 
 Klicken Sie auf den `Button SPF für das Shared Hosting von OVHcloud`{.action} oben im Support-Fenster. Die Informationen zum OVHcloud SPF werden angezeigt. Klicken Sie auf den Button `Bestätigen`{.action}, um die Änderung vorzunehmen.
 
@@ -176,7 +176,7 @@ Die allgemeine OVHcloud SPF-Konfiguration gilt für folgende Lösungen:
 
 - MX Plan Standalone oder in einem [OVHcloud Webhosting](/links/web/hosting){.external} inklusive
 - [E-Mail Pro](/links/web/email-pro)
-- [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/)
+- [Hosted Exchange](/links/web/emails-hosted-exchange)
 
 Die Konfiguration lautet:
 

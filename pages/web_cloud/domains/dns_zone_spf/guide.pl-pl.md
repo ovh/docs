@@ -86,7 +86,7 @@ Aby dodać rekord SPF, kliknij przycisk `Dodaj rekord`{.action}.
 
 W oknie, które się wyświetli, pojawi się kilka rekordów DNS. Jeśli chcesz dodać SPF, masz dwie możliwości:
 
-- [Dodaj rekord SPF OVHcloud](#spfrecordovhcloud)**i użyj konfiguracji OVHcloud**: dla użytkowników posiadających tylko oferty e-mail OVHcloud dla ich domeny (poza [Private Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}).
+- [Dodaj rekord SPF OVHcloud](#spfrecordovhcloud)**i użyj konfiguracji OVHcloud**: dla użytkowników posiadających tylko oferty e-mail OVHcloud dla ich domeny (poza [Private Exchange](/links/web/emails-hosted-exchange){.external}).
 - [Dodaj rekord SPF](#spfrecord): dla użytkowników, którzy nie posiadają całego rekordu. Na przykład dysponujesz tylko adresem IP lub nazwą hosta serwera e-mail.
 - [Dodaj rekord TXT](#txtrecord): dla użytkowników, którzy są ostrzeżeni lub mają już pełny wpis. Na przykład, dostawca rozwiązania poczty elektronicznej przekazuje Ci wartość.
 
@@ -100,7 +100,7 @@ Wybrałeś rekord `SPF`{.action} i chcesz zastosować konfigurację OVHcloud. Po
 
 - MX Plan w monoterapii lub w cenie [hostingu OVHcloud](/links/web/hosting){.external}.
 - [E-mail Pro](/links/web/email-pro).
-- [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
+- [Hosted Exchange](/links/web/emails-hosted-exchange).
 
 Kliknij na przycisk `Użyj SPF na hostingu OVHcloud`{.action} na górze okna informacyjnego. Wyświetlą się informacje dotyczące SPF OVHcloud. Kliknij przycisk `Zatwierdź`{.action}, aby przeprowadzić modyfikację.
 
@@ -180,7 +180,7 @@ Ogólna konfiguracja SPF OVHcloud ma zastosowanie do następujących rozwiązań
 
 - Usługa MX Plan w monoterapii lub w [cenie hostingu](/links/web/hosting).
 - [E-mail Pro](/links/web/email-pro).
-- [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
+- [Hosted Exchange](/links/web/emails-hosted-exchange).
 
 Konfiguracja jest następująca:
 
