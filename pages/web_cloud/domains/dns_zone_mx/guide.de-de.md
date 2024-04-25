@@ -18,7 +18,7 @@ Der Eintrag vom Typ MX legt den für die E-Mail-Adressen eines Domainnamens zust
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens.
 - Der Domainname verwendet die OVHcloud Konfiguration (die OVHcloud DNS-Server).
-- Sie verfügen über einen MX Plan (enthalten in einem [Webhosting](/links/web/hosting) oder [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder separat bestellt), einen unserer [OVHcloud E-Mail-Dienste](https://www.ovhcloud.com/de/emails/) oder einen externen E-Mail-Dienst.
+- Sie verfügen über einen MX Plan (enthalten in einem [Webhosting](/links/web/hosting) oder [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder separat bestellt), einen unserer [OVHcloud E-Mail-Dienste](/links/web/emails) oder einen externen E-Mail-Dienst.
 
 > [!primary]
 >
@@ -53,7 +53,7 @@ Sie können mehrere MX-Einträge für denselben Domainnamen einrichten. In diese
 
 ### Werte der OVHcloud MX-Konfiguration <a name="mxovhcloud"></a>
 
-Nachfolgend finden Sie die Konfiguration für OVHcloud MX Plan (Standalone oder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten), [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) und [Exchange](https://www.ovhcloud.com/de/emails/). Unsere E-Mail-Server verfügen über integrierte Antispam- und Antivirensoftware.
+Nachfolgend finden Sie die Konfiguration für OVHcloud MX Plan (Standalone oder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten), [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) und [Exchange](/links/web/emails). Unsere E-Mail-Server verfügen über integrierte Antispam- und Antivirensoftware.
 
 |Domain|TTL|Eintrag|Priorität|Ziel|
 |---|---|---|---|---|

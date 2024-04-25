@@ -92,7 +92,7 @@ La zona DNS ya está configurada para asociarse a un alojamiento Wix.
 >
 > La comprobación del dominio puede tardar hasta 48 horas.
 
-Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](https://www.ovhcloud.com/es-es/emails/), deberá preparar su zona DNS en consecuencia. Para más información, consulte nuestra guía sobre la [configuración de un registro MX](/pages/web_cloud/domains/dns_zone_mx).
+Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](/links/web/emails), deberá preparar su zona DNS en consecuencia. Para más información, consulte nuestra guía sobre la [configuración de un registro MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Ir más lejos <a name="go-further"></a>
 

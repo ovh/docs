@@ -95,7 +95,7 @@ Operacje na tym etapie należy wykonać w panelu zarządzania Shopify. Prosimy o
 >
 > Weryfikacja domeny może potrwać do 48 godzin.
 
-Jeśli korzystasz z oferty e-mail OVHcloud lub zamierzasz zamówić jedną z [naszych usług e-mail](https://www.ovhcloud.com/pl/emails/), musisz również odpowiednio przygotować Twoją strefę DNS. Zapoznaj się z przewodnikiem dotyczącym [konfiguracji rekordu MX](/pages/web_cloud/domains/dns_zone_mx).
+Jeśli korzystasz z oferty e-mail OVHcloud lub zamierzasz zamówić jedną z [naszych usług e-mail](/links/web/emails), musisz również odpowiednio przygotować Twoją strefę DNS. Zapoznaj się z przewodnikiem dotyczącym [konfiguracji rekordu MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Więcej informacji <a name="go-further"></a>
 

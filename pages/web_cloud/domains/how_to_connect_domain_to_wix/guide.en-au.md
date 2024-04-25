@@ -91,7 +91,7 @@ The DNS zone is now configured to link to a Wix hosting plan.
 >
 > It may take up to 48 hours to verify your domain name.
 
-If you are using an OVHcloud email solution, or planning to subscribe to one of [our email solutions](https://www.ovhcloud.com/en-au/emails/), you will also need to prepare your DNS zone accordingly. Read our guide on [configuring an MX record](/pages/web_cloud/domains/dns_zone_mx).
+If you are using an OVHcloud email solution, or planning to subscribe to one of [our email solutions](/links/web/emails), you will also need to prepare your DNS zone accordingly. Read our guide on [configuring an MX record](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Go further <a name="gofurther"></a>
 

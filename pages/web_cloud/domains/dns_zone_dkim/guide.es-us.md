@@ -41,7 +41,7 @@ El registro DKIM (**D**omain**K**eys **I**dentified **M**ail) permite firmar los
 
 - Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](/links/manager) o desde su proveedor de servicios si está registrado fuera de OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Haber contratado una de nuestras soluciones [Exchange](https://www.ovhcloud.com/es/emails/).
+- Haber contratado una de nuestras soluciones [Exchange](/links/web/emails).
 
 > [!warning]
 >
@@ -144,7 +144,7 @@ El destinatario **recipient@otherdomain.ovh** podrá descifrar esta firma con la
 
 ### Configurar el DKIM automáticamente para una solución de correo Exchange de OVHcloud <a name="auto-dkim"></a>
 
-La configuración automática del DKIM está disponible para los servicios de correo [Exchange](https://www.ovhcloud.com/es/emails/) y [E-mail Pro](https://www.ovhcloud.com/es/emails/email-pro/).
+La configuración automática del DKIM está disponible para los servicios de correo [Exchange](/links/web/emails) y [E-mail Pro](https://www.ovhcloud.com/es/emails/email-pro/).
 
 Por defecto, el DKIM no está activado cuando se añade un dominio a la plataforma. Por lo tanto, deberá iniciar el proceso de configuración automática desde el área de cliente.
 

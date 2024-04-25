@@ -91,7 +91,7 @@ Les manipulations pour cette étape sont à réaliser depuis l'espace de gestion
 >
 > La vérification de votre nom de domaine peut prendre jusqu’à 48 heures.
 
-Si vous utilisez une offre e-mail OVHcloud ou que vous prévoyez de souscrire à l'une de [nos offres e-mail](https://www.ovhcloud.com/fr-ca/emails/), vous devez également préparer vote zone DNS en conséquence. Consultez notre guide sur la [configuration d’un enregistrement MX](/pages/web_cloud/domains/dns_zone_mx).
+Si vous utilisez une offre e-mail OVHcloud ou que vous prévoyez de souscrire à l'une de [nos offres e-mail](/links/web/emails), vous devez également préparer vote zone DNS en conséquence. Consultez notre guide sur la [configuration d’un enregistrement MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Aller plus loin <a name="gofurther"></a>
 

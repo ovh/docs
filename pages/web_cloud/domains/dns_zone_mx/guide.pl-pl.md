@@ -19,7 +19,7 @@ Rekord MX umożliwia powiązanie domeny z serwerem platformy e-mail. Jest to nie
 - Dostęp do interfejsu zarządzania strefą DNS danej domeny w [Panelu klienta](/links/manager).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Wybrana domena musi korzystać z konfiguracji OVHcloud (tzn. z serwerów DNS OVHcloud).
-- Posiadanie konta e-mail MX Plan (zawartego w pakiecie [hostingowym](/links/web/hosting), [bezpłatnym hostingu 100M](/links/web/domains-free-hosting) lub w ofercie MX Plan zamówionej oddzielnie), jednej z naszych [ofert e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) lub zewnętrznej usługi e-mail.
+- Posiadanie konta e-mail MX Plan (zawartego w pakiecie [hostingowym](/links/web/hosting), [bezpłatnym hostingu 100M](/links/web/domains-free-hosting) lub w ofercie MX Plan zamówionej oddzielnie), jednej z naszych [ofert e-mail OVHcloud](/links/web/emails) lub zewnętrznej usługi e-mail.
 
 > [!primary]
 >
@@ -53,7 +53,7 @@ Dla tej samej domeny można skonfigurować wiele rekordów MX. W takim przypadku
 
 ### Wartości konfiguracji MX OVHcloud <a name="mxovhcloud"></a>
 
-Zapoznaj się z przedstawioną poniżej konfiguracją MX OVHcloud przewidzianą dla rozwiązań MX Plan (występującą samodzielnie lub włączoną do oferty [hostingu WWW OVHcloud](/links/web/hosting)), [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/) oraz [Exchange](https://www.ovhcloud.com/pl/emails/). Na serwerach poczty elektronicznej OVH zainstalowane jest oprogramowanie antyspamowe i antywirusowe.
+Zapoznaj się z przedstawioną poniżej konfiguracją MX OVHcloud przewidzianą dla rozwiązań MX Plan (występującą samodzielnie lub włączoną do oferty [hostingu WWW OVHcloud](/links/web/hosting)), [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/) oraz [Exchange](/links/web/emails). Na serwerach poczty elektronicznej OVH zainstalowane jest oprogramowanie antyspamowe i antywirusowe.
 
 |Domena|TTL|Typ rekordu|Priorytet|Adres docelowy|
 |---|---|---|---|---|

@@ -92,7 +92,7 @@ A zona DNS está configurada para fazer a ligação a um alojamento Wix.
 >
 > A verificação do seu domínio pode levar até 48 horas.
 
-Se utiliza uma oferta de e-mail da OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](https://www.ovhcloud.com/pt/emails/), deverá também preparar a sua zona DNS em conformidade. Consulte o nosso manual sobre a [configuração de um registo MX](/pages/web_cloud/domains/dns_zone_mx).
+Se utiliza uma oferta de e-mail da OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](/links/web/emails), deverá também preparar a sua zona DNS em conformidade. Consulte o nosso manual sobre a [configuração de um registo MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Quer saber mais? <a name="go-further"></a>
 

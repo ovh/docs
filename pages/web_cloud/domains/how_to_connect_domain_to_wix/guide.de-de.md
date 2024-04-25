@@ -96,7 +96,7 @@ Die DNS-Zone ist nun zur Verwendung mit einem Wix Hosting konfiguriert.
 >
 > Die Verifizierung Ihres Domainnamenamens kann bis zu 48 Stunden dauern.
 
-Wenn Sie einen E-Mail-Dienst von OVHcloud nutzen oder eines [unserer E-Mail-Angebote](https://www.ovhcloud.com/de/emails/) abonnieren möchten, müssen Sie auch Ihre DNS-Zone entsprechend konfigurieren. Lesen Sie dazu unsere Anleitung zur [Konfiguration eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx).
+Wenn Sie einen E-Mail-Dienst von OVHcloud nutzen oder eines [unserer E-Mail-Angebote](/links/web/emails) abonnieren möchten, müssen Sie auch Ihre DNS-Zone entsprechend konfigurieren. Lesen Sie dazu unsere Anleitung zur [Konfiguration eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 

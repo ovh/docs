@@ -19,7 +19,7 @@ O registo MX permite associar um domínio ao servidor da sua plataforma de e-mai
 - Ter acesso à gestão da zona DNS do domínio na [Área de Cliente OVHcloud](/links/manager).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - O domínio em questão deve utilizar a configuração da OVHcloud (ou seja, os servidores DNS da OVHcloud).
-- Dispor de uma oferta MX Plan (incluída na oferta de [alojamento web](/links/web/hosting), no [alojamento gratuito 100M](/links/web/domains-free-hosting) ou na oferta MX Plan encomendada separadamente), uma das nossas [ofertas de e-mail OVHcloud](https://www.ovhcloud.com/pt/emails/), ou um serviço de e-mail externo.
+- Dispor de uma oferta MX Plan (incluída na oferta de [alojamento web](/links/web/hosting), no [alojamento gratuito 100M](/links/web/domains-free-hosting) ou na oferta MX Plan encomendada separadamente), uma das nossas [ofertas de e-mail OVHcloud](/links/web/emails), ou um serviço de e-mail externo.
 
 > [!primary]
 >
@@ -52,7 +52,7 @@ Pode configurar vários registos MX para o mesmo domínio. É então necessário
 
 ### Valores da configuração MX da OVHcloud <a name="mxovhcloud"></a>
 
-Consulte abaixo a configuração MX da OVHcloud que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVHcloud](/links/web/hosting)), [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/) e [Exchange](https://www.ovhcloud.com/pt/emails/). Os nossos servidores de e-mail dispõem de um antisspam e antivírus integrado.
+Consulte abaixo a configuração MX da OVHcloud que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVHcloud](/links/web/hosting)), [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/) e [Exchange](/links/web/emails). Os nossos servidores de e-mail dispõem de um antisspam e antivírus integrado.
 
 |Domínio|TTL|Tipo de registo|Prioridade|Destino|
 |---|---|---|---|---|

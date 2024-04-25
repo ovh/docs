@@ -95,7 +95,7 @@ Le operazioni per questo step devono essere effettuate dallo spazio di gestione 
 >
 > La verifica del dominio può richiedere fino a 48 ore.
 
-Se utilizzi un servizio di posta elettronica OVHcloud o prevedi di sottoscrivere una delle [nostre soluzioni email](https://www.ovhcloud.com/it/emails/), è necessario preparare la zona DNS in modo adeguato. Consulta la nostra guida sulla [configurazione di un record MX](/pages/web_cloud/domains/dns_zone_mx).
+Se utilizzi un servizio di posta elettronica OVHcloud o prevedi di sottoscrivere una delle [nostre soluzioni email](/links/web/emails), è necessario preparare la zona DNS in modo adeguato. Consulta la nostra guida sulla [configurazione di un record MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Per saperne di più <a name="go-further"></a>
 
