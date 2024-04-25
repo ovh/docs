@@ -28,7 +28,7 @@ Für jede abzurechnende Ressource beginnt ein Stundenzähler, sobald die Ressour
 
 Am Monatsende werden alle gezählten Einheiten mit dem Stundensatz der Ressource multipliziert. Um die Gesamtrechnung zu erhalten, addieren Sie einfach alle abgerechneten Stundeneinheiten.
 
-Speziell für Instanzen vom Typ *Virtual Machines* wird der Abrechnungszähler gestartet, wenn eine Instanz den Status `ACTIVE` erreicht (im OVHcloud-Kundenbereich als `Aktiviert` angezeigt). Mit anderen Worten: Der Zeitraum, in dem sich die Instanz im Status `BUILD` befindet, wird nicht in Rechnung gestellt.
+Speziell für Instanzen vom Typ *Virtual Machines* wird der Abrechnungszähler gestartet, wenn eine Instanz den Status `ACTIVE` erreicht (im OVHcloud-Kundenbereich als `Aktiviert` angezeigt). Das bedeutet: Der Zeitraum, in dem sich die Instanz im Status `BUILD` befindet, wird nicht in Rechnung gestellt.
 
 Für jedes Cloud Projekt gibt es eine eigene Rechnung, die alle im Laufe des Monats abgerechneten Ressourcen zusammenfasst. Diese Rechnung wird am ersten Tag des Folgemonats erstellt.
 
