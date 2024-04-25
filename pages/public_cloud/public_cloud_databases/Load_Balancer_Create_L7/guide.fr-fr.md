@@ -12,7 +12,7 @@ Ce guide a pour but d'expliquer comment configurer et gérer des policies et rè
 - **Compte OVHcloud :** Accès à un projet Public Cloud chez OVHcloud.
 - Comprendre les [concepts d'un Load Balancer Public Cloud](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
 - **Load Balancer Public Cloud :** Un Load Balancer déjà configuré et en état de fonctionnement. voir [Configuration d'un Load Balancer Public Cloud](https://help.ovhcloud.com/csm/fr-public-cloud-network-getting-started-load-balancer?id=kb_article_view&sysparm_article=KB0050200)
-
+##  En pratique
 Pour configurer votre load balancer chez OVHcloud, vous avez plusieurs options de gestion disponibles. Vous n'avez pas besoin de toutes les utiliser, mais il est nécessaire d'en choisir au moins une selon vos préférences :
 
 - **Accès au Manager OVHcloud :** Permet la gestion via l'interface graphique, idéal pour ceux qui préfèrent une approche visuelle et intuitive.
