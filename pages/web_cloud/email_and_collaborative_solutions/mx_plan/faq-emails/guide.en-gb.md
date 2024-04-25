@@ -45,13 +45,13 @@ If you don't see this column, spam filters can only be created by setting up inb
 
 **Tips and tricks**: If you set up a spam filter, legitimate emails may be marked as spam. These are called "false positives". If this happens, please submit a support ticket via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and let us know. We can then take the necessary steps to ensure that they are no longer labelled as spam in the future.
 
-### My email address is full, I don't have any more space. What can I do?
+### My email account is full, I don't have any more space. What can I do?
 
-If you have signed up to [one of our OVHcloud email solutions](https://www.ovhcloud.com/en-gb/emails/) and one of your email accounts is full, please read our guide on [Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) . This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
+If you have signed up to [one of our OVHcloud email solutions](https://www.ovhcloud.com/en-gb/emails/) and one of your email accounts is full, please read our guide on [Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota). This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
 
 ### I want to change my email solution for my address, how can I do this while keeping its content?
 
-You want to change [email solution](https://www.ovhcloud.com/en-gb/emails/) to benefit from more space and features, but you want to keep the content of your existing address. To do this, please follow one of our migration guides:
+You want to change [email solutions](https://www.ovhcloud.com/en-gb/emails/) to benefit from more space and features, but you want to keep the content of your existing account. To do this, please follow the corresponding migration guide:
 
 - [Migrate an MX Plan email address to an Email Pro or Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [Migrate your email addresses from one OVHcloud email platform to another](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
