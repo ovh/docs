@@ -1,7 +1,7 @@
 ---
 title: 'Rozliczanie należności za usługę Public Cloud'
 excerpt: 'Zasady i modele naliczania opłat'
-updated: 2022-08-29
+updated: 2024-04-24
 ---
 
 > [!primary]
@@ -31,6 +31,8 @@ Celem jest zapewnienie rozliczenia jak najlepiej dopasowanego do sposobu wykorzy
 W przypadku każdego zasobu, który podlega fakturowaniu odliczanie godzin rozpoczyna się w momencie utworzenia zasobu i kończy się w momencie jego usunięcia, z zachowaniem zasady: "każda rozpoczęta godzina jest płatna jako pełna godzina".
 
 Pod koniec miesiąca liczba godzin mnożona jest przez stawkę godzinową należną za dany zasób. Aby otrzymać całkowitą kwotę należności, należy zsumować wszystkie naliczone wcześniej kwoty cząstkowe.
+
+W przypadku instancji maszyn wirtualnych licznik rozliczeń rozpoczyna się, gdy instancja osiągnie status `ACTIVE` (wyświetlany jako `Włączona` w obszarze klienta OVHcloud). Innymi słowy, okres, w którym instancja znajduje się w statusie `BUILD`, nie jest rozliczany.
 
 Każdy projekt w chmurze jest fakturowany oddzielnie. Faktura obejmuje należności za wszystkie zasoby wykorzystane w ciągu miesiąca i jest wystawiana pierwszego dnia następnego miesiąca.
 

@@ -1,7 +1,7 @@
 ---
 title: "Lo esencial para empezar con Public Cloud"
 excerpt: "Descubra las nociones básicas útiles para empezar en el entorno Public Cloud"
-updated: 2022-02-07
+updated: 2024-04-24
 ---
 
 > [!primary]
@@ -93,6 +93,10 @@ Para iniciar un proyecto, deberá registrar una forma de pago al crear el proyec
 
 #### La facturación
 
+> [!primary]
+> Específicamente para instancias *Virtual Machines*, el contador de facturación comienza cuando una instancia alcanza el estado `ACTIVE` (mostrado como `Activa` en el espacio de cliente de OVHcloud). En otras palabras, el periodo durante el cual la instancia está en estado `BUILD` no se factura.
+>
+
 Al haber registrado su forma de pago, esta se utilizará para cargar el importe calculado para su [facturación a fin de mes](/pages/public_cloud/compute/analyze_billing). Este cálculo se realiza en función del tiempo de uso de cada recurso, en función del precio de los recursos.
 
 Por ejemplo: En el mes, ha utilizado 1 instancia d2-8 durante todo el mes y 3 instancias b2-60 que contabilizan conjuntamente 32 horas.
@@ -136,6 +140,7 @@ En la práctica, a continuación le ofrecemos algunas guías que le ayudarán en
 |[Conectarse a Horizon](/pages/public_cloud/compute/introducing_horizon)|La interfaz Horizon de OpenStack permite realizar determinadas acciones avanzadas. Así es como conectarse a ella.|
 |[Crear un cluster Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) (EN)|Esta guía le ayudará paso a paso a la creación de su primer cluster Kubernetes.|
 |[Configurar una Additional IP](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance)|Las Additional IP permiten cambiar el tráfico de una instancia a otra. Esta guía explica cómo configurar esta opción.|
+|[Uso de la interfaz Horizon](/pages/public_cloud/compute/introducing_horizon)|Horizon es la interfaz clásica de OpenStack, y esta guía explicará cómo acceder a ella.|
 |[Instalación de la CLI OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)|OpenStack también puede utilizarse en línea de comandos. Así es como instalar las herramientas.|
 
 Una de las grandes ventajas de utilizar tecnologías estándares y abiertas, como OpenStack o Kubernetes, es disfrutar de toda la documentación ya disponible.
