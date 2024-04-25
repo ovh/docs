@@ -87,8 +87,11 @@ Dans cette section vous retrouvez un bandeau sur votre gauche, le même que vous
 Cette section vous permet de profiter d'une vision d'ensemble complète de tous vos vApps et machines virtuelles sur vos centres de données virtuels (vcd) : créez, accédez et supprimez des vApps ou des machines virtuelles en toute simplicité.
 
 L'utilisation des vApps est une des fonctionnalitées unique de Vcloud Director (VCD). Il permet de créer de grouper un ensemble de machines virtuelles, de conteneurs au sein de la même Virtual Application (vApp). Mais aussi aller granulairement créer des rêgles d'affinités/anti-affinités au sein de ces vApp (réseau, firewall, templating etc).
-Nous retroouvons comme réglages pour ces vApp, les fonctionnalitées classique de Vsphere de réseau et de stockage que l'on peut appliquer à cet ensemble
-Voici la vu globale de la section "Application dans cette capture : 
+Nous retrouvons comme réglages pour ces vApp, les fonctionnalitées classiques de Vsphere/NSX pour réseau et le stockage que l'on peut appliquer à cet console Web centralisé (orchestrator).
+
+Il est par exemple possible de copier une vApp d'un Data Center à un autre, pour une migration d'application d'un site à un autre.
+
+Voici la vu globale de la section "Application" dans cette capture : 
 
 ![Applications Overview](images/vcd-Vapp-view.png){.thumbnail}
 
