@@ -48,7 +48,7 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 > Em caso de dúvida, recomendamos que consulte os seguintes recursos:
 >
 > - O sítio Web do registo TLD correspondente;
-> - a [lista dos TLD disponíveis na OVHcloud](https://www.ovhcloud.com/pt/domains/tld/);
+> - a [lista dos TLD disponíveis na OVHcloud](/links/web/domains-tld);
 > - [Explicações do ICANN sobre os códigos de estado EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (para saber que códigos de estado se aplicam atualmente ao seu nome de domínio, efetue uma pesquisa *Whois*, utilizando de preferência o website do registo TLD correspondente);
 > - o website e a interface de gestão do seu novo agente de registo, especialmente para as questões relativas a um processo de transferência pendente.
 >

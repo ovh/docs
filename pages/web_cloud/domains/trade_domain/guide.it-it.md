@@ -44,7 +44,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 > In caso di dubbi, consulta queste risorse:
 >
 > - il sito web del registro **TLD** corrispondente;
-> - la [lista dei TLD disponibili su OVHcloud](https://www.ovhcloud.com/it/domains/tld/);
+> - la [lista dei TLD disponibili su OVHcloud](/links/web/domains-tld);
 > - gli aggiornamenti di stato del dominio. Per verificarlo, accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e poi su `Operazioni in corso`{.action}.
 >
 

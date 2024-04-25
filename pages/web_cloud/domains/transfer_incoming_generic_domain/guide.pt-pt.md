@@ -45,7 +45,7 @@ Ao transferir o domínio, irá mudar de **registrar** para o domínio. Pode tran
 
 > [!success]
 >
-> Para conhecer as condições tarifárias para a transferência de um nome de domínio em função da sua extensão, insira o domínio que deseja transferir na nossa página [www.ovhcloud.com/pt/domains/tld/](https://www.ovhcloud.com/pt/domains/tld/) e siga as instruções.
+> Para conhecer as condições tarifárias para a transferência de um nome de domínio em função da sua extensão, insira o domínio que deseja transferir na nossa página [www.ovhcloud.com/pt/domains/tld/](/links/web/domains-tld) e siga as instruções.
 >
 
 O procedimento de transferência compreende várias etapas, implicando o contacto com várias entidades, entre as quais o seu registo atual, a OVHcloud e outras partes. A tabela abaixo indica as etapas de uma transferência.

@@ -45,7 +45,7 @@ Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** 
 
 > [!success]
 >
-> Para conocer las condiciones tarifarias para la transferencia de un dominio en función de su extensión, introduzca el dominio que desea transferir a nuestra página [www.ovhcloud.com/es-es/domains/tld/](https://www.ovhcloud.com/es-es/domains/tld/) y siga los pasos que se indican en esta guía.
+> Para conocer las condiciones tarifarias para la transferencia de un dominio en función de su extensión, introduzca el dominio que desea transferir a nuestra página [www.ovhcloud.com/es-es/domains/tld/](/links/web/domains-tld) y siga los pasos que se indican en esta guía.
 >
 
 El procedimiento de transferencia se desarrolla en varias etapas e involucra a varias entidades, entre ellas su actual agente registrador, OVHcloud y otras partes. La siguiente tabla resume las etapas de una transferencia.

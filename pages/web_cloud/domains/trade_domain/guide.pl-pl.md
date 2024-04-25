@@ -44,7 +44,7 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 > W przypadku wątpliwości zalecamy sprawdzenie następujących zasobów:
 >
 > - strona internetowa rejestru **TLD**;
-> - Lista [TLD dostępnych na OVHcloud](https://www.ovhcloud.com/pl/domains/tld/);
+> - Lista [TLD dostępnych na OVHcloud](/links/web/domains-tld);
 > - aktualizacje statusu domeny. Aby to sprawdzić, zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, a następnie `Operacje w toku`{.action}.
 >
 

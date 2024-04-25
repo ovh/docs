@@ -44,7 +44,7 @@ Además de [gestionar los contactos](/pages/account_and_service_management/accou
 Si tiene alguna duda, le recomendamos que consulte los siguientes recursos:
 >
 > - el sitio web del registro **TLD** correspondiente;
-> - la [lista de TLD disponibles en OVHcloud](https://www.ovhcloud.com/es-es/domains/tld/);
+> - la [lista de TLD disponibles en OVHcloud](/links/web/domains-tld);
 > - actualizaciones de estado del dominio. Para comprobarlo, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}  de la columna izquierda de la página web de OVHcloud. En la columna de la izquierda, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 >
 

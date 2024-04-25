@@ -48,7 +48,7 @@ Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** 
 > En caso de duda, le recomendamos que consulte los siguientes recursos:
 >
 > - el sitio web del registro TLD correspondiente;
-> - la [lista de TLD disponibles en OVHcloud](https://www.ovhcloud.com/es/domains/tld/);
+> - la [lista de TLD disponibles en OVHcloud](/links/web/domains-tld);
 > - [Las explicaciones de la ICANN sobre los códigos de estado EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (para saber qué códigos de estado se aplican actualmente a su nombre de dominio, realice una búsqueda *Whois*, utilizando preferentemente el sitio web del registro TLD correspondiente);
 > - el sitio web y la interfaz de gestión de su nuevo agente registrador, especialmente en lo que respecta a las cuestiones relativas a un proceso de transferencia pendiente.
 >

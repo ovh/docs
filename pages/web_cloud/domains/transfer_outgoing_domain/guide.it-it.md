@@ -48,7 +48,7 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 > In caso di dubbi, consulta queste risorse:
 >
 > - il sito web del registro TLD corrispondente;
-> - la [lista dei TLD disponibili in OVHcloud](https://www.ovhcloud.com/it/domains/tld/);
+> - la [lista dei TLD disponibili in OVHcloud](/links/web/domains-tld);
 > - [le spiegazioni dell'ICANN sui codici di stato EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (per sapere quali codici di status si applicano attualmente al tuo dominio, effettua una ricerca *Whois*, preferibilmente utilizzando il sito web del registro TLD corrispondente);
 > - il sito Web e l'interfaccia di gestione del nuovo Registrar, in particolare per le domande relative ad un processo di trasferimento in attesa.
 >

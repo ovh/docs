@@ -41,7 +41,7 @@ En transférant votre nom de domaine, vous changerez de **bureau d'enregistremen
 
 > [!success]
 >
-> Pour connaître les conditions tarifaires pour le transfert d'un nom de domaine en fonction de son extension, renseignez le domaine que vous souhaitez transférer sur notre page [www.ovhcloud.com/fr/domains/tld/](https://www.ovhcloud.com/fr/domains/tld/) puis suivez les étapes de ce guide.
+> Pour connaître les conditions tarifaires pour le transfert d'un nom de domaine en fonction de son extension, renseignez le domaine que vous souhaitez transférer sur notre page [www.ovhcloud.com/fr/domains/tld/](/links/web/domains-tld) puis suivez les étapes de ce guide.
 > 
 
 La procédure de transfert comporte plusieurs étapes, impliquant la prise de contact avec votre registre actuel et OVHcloud. Le tableau ci-dessous vous indique les personnes contactées et la durée estimée de chaque étape.

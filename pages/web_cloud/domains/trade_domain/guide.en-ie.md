@@ -39,7 +39,7 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 > We recommend to consult the following resources in case of any doubt:
 >
 > - The website of the respective **TLD** registry
-> - The [list of **TLD**s available at OVHcloud](https://www.ovhcloud.com/en-ie/domains/tld/)
+> - The [list of **TLD**s available at OVHcloud](/links/web/domains-tld)
 > - The domain name status updates. To check this, log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then `Ongoing operations`{.action}.
 
 ### Step 1: Select the domain

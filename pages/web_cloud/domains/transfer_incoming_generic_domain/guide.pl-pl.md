@@ -45,7 +45,7 @@ Transfer domeny może spowodować zmianę z **rejestrator** dla domeny. Możesz 
 
 > [!success]
 >
-> Aby uzyskać informacje na temat cennika transferu domeny w zależności od jej rozszerzenia, wprowadź domenę, którą chcesz przenieść na naszą stronę [www.ovhcloud.com/pl/domains/tld/](https://www.ovhcloud.com/pl/domains/tld/) następnie postępuj zgodnie z instrukcjami zawartymi w tym przewodniku.
+> Aby uzyskać informacje na temat cennika transferu domeny w zależności od jej rozszerzenia, wprowadź domenę, którą chcesz przenieść na naszą stronę [www.ovhcloud.com/pl/domains/tld/](/links/web/domains-tld) następnie postępuj zgodnie z instrukcjami zawartymi w tym przewodniku.
 >
 
 Procedura transferu składa się z kilku etapów, w które włączone są różne podmioty, w tym obecny rejestr, OVHcloud i inne strony. Poniższa tabela wskazuje osoby, z którymi należy się kontaktować oraz szacowany czas trwania każdego etapu.

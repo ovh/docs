@@ -44,7 +44,7 @@ Para além da [gestão dos contactos](/pages/account_and_service_management/acco
 > Em caso de dúvida, recomendamos que consulte os seguintes recursos:
 >
 > - o sítio Web do registo **TLD** correspondente;
-> - a [lista dos TLD disponíveis na OVHcloud](https://www.ovhcloud.com/pt/domains/tld/);
+> - a [lista dos TLD disponíveis na OVHcloud](/links/web/domains-tld);
 > - atualizações do estado do domínio. Para verificar isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e, a seguir, em `Operações em curso`{.action}.
 >
 
