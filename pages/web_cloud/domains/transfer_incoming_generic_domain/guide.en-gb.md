@@ -85,7 +85,7 @@ Please note that OVHcloud is not your current domain name registrar. We are ther
 
 ### Step 3: Request a domain name transfer to OVHcloud <a name="step3"></a>
 
-Now that your domain name is unlocked and you have your AUTH/INFO, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](https://www.ovhcloud.com/en-gb/domains/domain-transfer/){.external}. Enter your domain name, and follow the order process.
+Now that your domain name is unlocked and you have your AUTH/INFO, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](/links/web/domains-transfer){.external}. Enter your domain name, and follow the order process.
 
 ![domain](images/Domain_transfer_order.png){.thumbnail}
 
