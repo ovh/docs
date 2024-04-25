@@ -1,7 +1,7 @@
 ---
 title: Die wichtigsten Informationen zum Start mit Public Cloud
 excerpt: "Entdecken Sie nützliche Grundkenntnisse, um in der Public Cloud Umgebung anzufangen"
-updated: 2022-02-07
+updated: 2024-04-24
 ---
 
 > [!primary]
@@ -93,6 +93,10 @@ Um ein Projekt zu starten müssen Sie bei der Erstellung des Projekts unbedingt 
 
 #### Abrechnung
 
+> [!primary].
+> Speziell für Instanzen vom Typ *Virtual Machines* wird der Rechnungszähler gestartet, wenn eine Instanz den Status `ACTIVE` erreicht (im OVHcloud-Kundenbereich als `Activated` angezeigt). Mit anderen Worten: Der Zeitraum, in dem sich die Instanz im Status `BUILD` befindet, wird nicht in Rechnung gestellt.
+>
+
 Da Ihr Zahlungsmittel hinterlegt ist, wird der berechnete Betrag [am Ende des Monats abgebucht](/pages/public_cloud/compute/analyze_billing). Diese Berechnung erfolgt auf der Grundlage der Nutzungszeit der einzelnen Ressourcen und des Preises der Ressourcen.
 
 Beispiel: Sie haben 1 Instanz d2-8 für den ganzen Monat verwendet, sowie 3 Instanzen b2-60 für insgesamt 32 Stunden während dieses Monats.
@@ -122,7 +126,7 @@ Nachfolgend finden Sie grundlegende Wissensressourcen, die Ihnen bei Ihrem Start
 |---|---|
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Die häufigsten Fragen zur Public Cloud.|
 |[Glossar](/pages/public_cloud/compute/introduction_about_instances)|Die Konzepte und Definitionen zur fortgeschrittenen Nutzung.|
-|[Verfügbarkeit der Dienste nach Standort](https://www.ovhcloud.com/fr/public-cloud/regions-availability/)|Verfügbarkeitstabellen der Dienste über die verschiedenen Standorte hinweg.|
+|[Verfügbarkeit der Dienste nach Standort](https://www.ovhcloud.com/de/public-cloud/regions-availability/)|Verfügbarkeitstabellen der Dienste über die verschiedenen Standorte hinweg.|
 |[Changelog](/pages/public_cloud/compute/image_changelog)|Änderungslogs von öffentlich verfügbaren System-Images.|
 
 Verwenden Sie folgende Anleitungen, um Informationen zum praktischen Vorgehen zu erhalten:
@@ -136,14 +140,15 @@ Verwenden Sie folgende Anleitungen, um Informationen zum praktischen Vorgehen zu
 |[Auf das Horizon-Interface zugreifen](/pages/public_cloud/compute/introducing_horizon)|Das OpenStack Horizon Interface erlaubt einige erweiterte Einstellungen. Der Zugriff wird hier erklärt.|
 |[Kubernetes-Cluster erstellen](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) (EN) |Diese Anleitung begleitet Sie bei der Erstellung Ihres ersten Kubernetes-Clusters.|
 |[Eine Additional IP konfigurieren](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance)|Mit Additional IPs können Sie den Traffic von einer Instanz auf eine andere umstellen. In dieser Anleitung erfahren Sie, wie Sie diesen konfigurieren.|
+|[Verwendung der Horizon-Schnittstelle](/pages/public_cloud/compute/introducing_horizon)|Horizon ist die klassische Schnittstelle von OpenStack, diese Anleitung erklärt Ihnen, wie Sie darauf zugreifen können.|
 |[OpenStack CLI installieren](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)|OpenStack kann auch über die Kommandozeile verwendet werden. Hier können Sie die Tools installieren.|
 
 Einer der großen Vorteile der Verwendung von Standard- und Open-Source-Technologien wie OpenStack oder Kubernetes besteht darin, dass alle bereits verfügbaren Dokumentationen herangezogen werden können.
 
 |Dokumentation|Beschreibung|
 |---|---|
-|[OpenStack CLI](https://docs.openstack.org/python-openstackclient/stein/#using-openstackclient) (EN)|Die vollständige Dokumentation des essentiellen 'OpenStack' Clients in der Kommandozeile. Dokumentation für die Stein Version: Nutzen Sie [die Verfügbarkeitstabelle](https://www.ovhcloud.com/fr/public-cloud/regions-availability/), um zu sehen, welche Dienstleistungen verfügbar sind.|
-|[OpenStack API](https://docs.openstack.org/stein/api/) (EN)|Die vollständige Dokumentation zu OpenStack für die "Stein"-Version. Nutzen Sie [die Verfügbarkeitstabelle](https://www.ovhcloud.com/fr/public-cloud/regions-availability/), um zu sehen, welche Dienstleistungen verfügbar sind.|
+|[OpenStack CLI](https://docs.openstack.org/python-openstackclient/stein/#using-openstackclient) (EN)|Die vollständige Dokumentation des essentiellen 'OpenStack' Clients in der Kommandozeile. Dokumentation für die Stein Version: Nutzen Sie [die Verfügbarkeitstabelle](https://www.ovhcloud.com/de/public-cloud/regions-availability/), um zu sehen, welche Dienstleistungen verfügbar sind.|
+|[OpenStack API](https://docs.openstack.org/stein/api/) (EN)|Die vollständige Dokumentation zu OpenStack für die "Stein"-Version. Nutzen Sie [die Verfügbarkeitstabelle](https://www.ovhcloud.com/de/public-cloud/regions-availability/), um zu sehen, welche Dienstleistungen verfügbar sind.|
 |[Benutzer-Dokumentation](https://docs.openstack.org/stein/user/) (EN)|Vollständige Dokumentation für den OpenStack-Benutzer in der "Stein"-Version.|
 |[Entwickler-Dokumentation](https://developer.openstack.org/) (EN)|Dokumentation für Entwickler, die ihre Anwendung mit der OpenStack API verbinden möchten, unter Verwendung der verfügbaren Bibliotheken/SDKs.|
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/) (EN)| Dokumentation des essentiellen CLI-Clients *kubectl*.|

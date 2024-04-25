@@ -89,6 +89,10 @@ Aby uruchomić projekt, musisz zarejestrować sposób płatności podczas tworze
 
 #### Płatności
 
+> [!primary]
+> W przypadku instancji *Virtual Machines* licznik rozliczeń rozpoczyna się, gdy instancja osiągnie status `ACTIVE` (wyświetlany jako `Activated` w przestrzeni klienta OVHcloud). Innymi słowy, okres, w którym instancja jest w stanie `BUILD` nie jest rozliczany.
+>
+
 Ponieważ Twój sposób płatności jest zarejestrowany, zostanie wykorzystany do pobrania kwoty obliczonej dla Twojego [fakturowania na koniec miesiąca](/pages/public_cloud/compute/analyze_billing). Obliczenia te dokonuje się na podstawie czasu wykorzystania każdego zasobu, w zależności od ceny zasobów.
 
 Przykład: W miesiącu korzystałeś z 1 instancji d2-8 przez cały miesiąc oraz 3 instancji b2-60, które zajmują łącznie 32 godziny.
@@ -118,7 +122,7 @@ Oto kilka zasobów ogólnych, które pomogą Ci w uruchomieniu usługi Public Cl
 |---|---|
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Najczęstsze pytania dotyczące usługi Public Cloud.|
 |[Słowniczek](/pages/public_cloud/compute/introduction_about_instances)|Koncepcje i definicje, które będą potrzebne, aby iść naprzód.|
-|[Dostępność usług według lokalizacji](https://www.ovhcloud.com/fr/public-cloud/regions-availability/)|Tabele dostępności usług w różnych lokalizacjach.|
+|[Dostępność usług według lokalizacji](https://www.ovhcloud.com/pl/public-cloud/regions-availability/)|Tabele dostępności usług w różnych lokalizacjach.|
 |[Zmiany obrazu](/pages/public_cloud/compute/image_changelog)|Zmiany wprowadzone do obrazów systemowych dostępnych publicznie.|
 
 W praktyce znajdziesz tutaj również przewodniki, które pomogą Ci zacząć:
@@ -132,14 +136,15 @@ W praktyce znajdziesz tutaj również przewodniki, które pomogą Ci zacząć:
 |[Dostęp do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)|Interfejs Horizon OpenStack pozwala na wykonywanie niektórych zaawansowanych operacji.|
 |[Utwórz klaster Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) (EN)|Niniejszy przewodnik ułatwi Ci realizację pierwszego klastra Kubernetes.|
 |[Konfiguracja Additional IP](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance)|Adresy Additional IP pozwalają na przełączanie ruchu z jednej instancji na inną. Niniejszy przewodnik wyjaśnia, jak to skonfigurować.|
+|[Korzystanie z interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)|Horizon to klasyczny interfejs OpenStack, a ten przewodnik wyjaśni, jak uzyskać do niego dostęp.
 |[Instalacja CLI OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)|OpenStack może być również używany w wierszu poleceń. Oto jak zainstalować narzędzia.|
 
 Jedną z największych zalet korzystania ze standardowych i otwartych technologii, takich jak OpenStack lub Kubernetes, jest dostęp do całej dostępnej dokumentacji.
 
 |Dokumentacja|Szczegóły|
 |---|---|
-|[OpenStack CLI](https://docs.openstack.org/python-openstackclient/stein/#using-openstackclient) (EN)|Pełna dokumentacja dotycząca najważniejszego klienta z linii poleceń 'openstack'. Dokumentacja dotycząca wersji Stein, zapoznaj się z [tabelą dostępności](https://www.ovhcloud.com/fr/public-cloud/regions-availability/), aby dowiedzieć się, jakie usługi są dostępne.|
-|[APIs OpenStack](https://docs.openstack.org/stein/api/) (EN)|Pełna dokumentacja API OpenStack. Dokumentacja dotycząca wersji Stein, zapoznaj się z [tabelą dostępności](https://www.ovhcloud.com/fr/public-cloud/regions-availability/), aby dowiedzieć się, jakie usługi są dostępne.|
+|[OpenStack CLI](https://docs.openstack.org/python-openstackclient/stein/#using-openstackclient) (EN)|Pełna dokumentacja dotycząca najważniejszego klienta z linii poleceń 'openstack'. Dokumentacja dotycząca wersji Stein, zapoznaj się z [tabelą dostępności](https://www.ovhcloud.com/pl/public-cloud/regions-availability/), aby dowiedzieć się, jakie usługi są dostępne.|
+|[APIs OpenStack](https://docs.openstack.org/stein/api/) (EN)|Pełna dokumentacja API OpenStack. Dokumentacja dotycząca wersji Stein, zapoznaj się z [tabelą dostępności](https://www.ovhcloud.com/pl/public-cloud/regions-availability/), aby dowiedzieć się, jakie usługi są dostępne.|
 |[End user dokumentacje](https://docs.openstack.org/stein/user/) (EN)|Pełna dokumentacja dotycząca użytkownika OpenStack w wersji Stein.|
 |[Developer Documents](https://developer.openstack.org/) (EN)|Dokumentacja dla programistów, którzy chcą podłączyć aplikację do API OpenStack, korzystając z dostępnych bibliotek/SDK.|
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/) (EN)| Dokumentacja dotycząca najważniejszego klienta w wierszu poleceń "kubectl".|
