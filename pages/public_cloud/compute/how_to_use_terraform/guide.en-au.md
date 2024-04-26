@@ -161,6 +161,13 @@ resource "openstack_compute_instance_v2" "test_terraform_instance" {
   network {
     name      = "Ext-Net" # Adds the network component to reach your instance
   }
+  lifecycle {
+    # OVHcloud regularly updates the base image of a given OS so that customer has less packages to update after spawning a new instance 
+    # To avoid terraform to have some issue with that, the following ignore_changes is required.
+    ignore_changes = [
+      image_name
+    ]
+  }
 }
 ```
 
