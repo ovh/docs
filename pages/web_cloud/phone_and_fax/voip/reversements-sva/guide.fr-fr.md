@@ -14,7 +14,7 @@ L'espace client OVHcloud vous permet de consulter et modifier votre palier tarif
 
 ## Prérequis
 
-- Posséder au moins [un numéro spécial](https://www.ovhtelecom.fr/telephonie/numeros/numeros-speciaux/) dans votre compte OVHcloud.
+- Posséder au moins [un numéro spécial](/links/telecom/telephonie-numeros-speciaux-francais)telecom/telephonie-numeros-speciaux) dans votre compte OVHcloud.
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom` :
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
@@ -27,7 +27,7 @@ Pour plus d'informations sur les groupes de téléphonie, consultez notre guide 
 ### Consulter et/ou modifier le palier tarifaire de votre numéro spécial
 
 > [!primary]
-> Vous pouvez consulter la liste complète des paliers tarifaires OVHcloud applicables aux numéros spéciaux en France sur [cette page](https://www.ovhtelecom.fr/telephonie/numeros/numeros-speciaux/numeros-francais.xml).
+> Vous pouvez consulter la liste complète des paliers tarifaires OVHcloud applicables aux numéros spéciaux en France sur [cette page](/links/telecom/telephonie-numeros-speciaux-francais)telecom/telephonie-numeros-speciaux-francais).
 >
 > La première modification du palier tarifaire est offerte.<br>
 > **Par la suite, la modification sera facturée 20 € HT**.<br>

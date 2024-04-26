@@ -13,7 +13,7 @@ flag: hidden
 
 ## Préambule {#préambule}
 
-Asterisk est un IPBX Software gratuit et disponible sur Linux. Cet IPBX très puissant vous permet de gérer votre téléphonie d'entreprise et de créer des services personnalisés. Vous trouverez dans ce guide les étapes pour bien démarrer en configurant votre ligne [**SIP Trunk**](/links/telecom/sip-trunk){.external-link}, la **présentation** de vos **numérosAlias** et le **routage** des appels selon le **numéroappelé**.
+Asterisk est un IPBX Software gratuit et disponible sur Linux. Cet IPBX très puissant vous permet de gérer votre téléphonie d'entreprise et de créer des services personnalisés. Vous trouverez dans ce guide les étapes pour bien démarrer en configurant votre ligne [**SIP Trunk**](/links/telecom/telephonie-sip-trunk){.external-link}, la **présentation** de vos **numérosAlias** et le **routage** des appels selon le **numéroappelé**.
 
 **Sommaire :**
 

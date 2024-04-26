@@ -21,11 +21,11 @@ Le softphone est une application ou un logiciel qui vous permet d'enregistrer vo
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVHcloud](/links/telecom/voip){.external}.
+- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip){.external}.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 > [!primary]
-> Une ligne SIP **fournie avec un téléphone OVHcloud** ne peut pas être enregistrée sur un softphone. Si c'est le cas de votre ligne et que vous souhaitez utiliser un softphone, nous vous invitons à [commander une ligne SIP supplémentaire](/links/telecom/voip), fournie sans téléphone OVHcloud.
+> Une ligne SIP **fournie avec un téléphone OVHcloud** ne peut pas être enregistrée sur un softphone. Si c'est le cas de votre ligne et que vous souhaitez utiliser un softphone, nous vous invitons à [commander une ligne SIP supplémentaire](/links/telecom/telephonie-voip), fournie sans téléphone OVHcloud.
 >
 
 ## En pratique

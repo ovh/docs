@@ -4,7 +4,7 @@ flag: hidden
 updated: 2018-03-26
 ---
 
-[![Cisco SPA112](images/spa112-main.jpg){.thumbnail}](https://www.ovhtelecom.fr/telephonie/telephones/cisco_spa112/){.external-link}
+[![Cisco SPA112](images/spa112-main.jpg){.thumbnail}](/links/telecom/telephonie-telephones-cisco-spa-112){.external-link}
 
 ## Fiche technique : {#fiche-technique}
 

@@ -17,7 +17,7 @@ Rattacher plusieurs lignes au sein d'un seul groupe permet aussi la supervision 
 ## Prérequis
 
 - Être connecté à l'[espace client OVHcloud](/links/manager-telecom).
-- Disposer de [lignes SIP OVHcloud](/links/telecom/voip) et/ou de [numéros alias OVHcloud](/links/telecom/numeros).
+- Disposer de [lignes SIP OVHcloud](/links/telecom/telephonie-voip) et/ou de [numéros alias OVHcloud](/links/telecom/telephonie-numeros).
 
 ## En pratique
 

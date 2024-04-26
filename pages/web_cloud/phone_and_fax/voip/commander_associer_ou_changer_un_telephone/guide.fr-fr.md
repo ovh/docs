@@ -12,7 +12,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVHcloud](/links/telecom/voip){.external}.
+- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip){.external}.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
@@ -21,7 +21,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 
 > [!primary]
 >
-> Nos téléphones sont fournis en l'échange d'une caution (restituée en fin de contrat). Retrouvez l'ensemble des téléphones proposés par OVHcloud sur [cette page](/links/telecom/comparatif-telephones).
+> Nos téléphones sont fournis en l'échange d'une caution (restituée en fin de contrat). Retrouvez l'ensemble des téléphones proposés par OVHcloud sur [cette page](/links/telecom/telephonie-comparatif-telephones).
 
 Votre ligne SIP peut être associée à un téléphone OVHcloud. Cela vous permet ainsi de gérer ce dernier depuis votre espace client. Cette gestion s'effectue par le biais de plusieurs manipulations. Poursuivez la lecture de cette documentation selon celle que vous souhaitez réaliser.
 
