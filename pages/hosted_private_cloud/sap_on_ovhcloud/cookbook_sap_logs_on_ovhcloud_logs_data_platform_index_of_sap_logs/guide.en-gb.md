@@ -3,6 +3,7 @@ title: "SAP logs on OVHcloud Logs Data Platform - Index of SAP logs"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 excerpt: "This guide is designed to help you retrieve the right fields from your SAP logs to perform searches in your logs."
 updated: 2024-03-30
 flag: hidden
@@ -15,6 +16,9 @@ updated: 2024-04-10
 >>>>>>> 52a51e141e (feat: added docs for the new feature SAP logs on OVHcloud Logs Data Platform)
 =======
 excerpt: "This guide is designed to help you retrieve the fields from your SAP logs to perform searches in your logs."
+=======
+excerpt: "This guide is designed to help you retrieve the fields from your SAP logs to perform searches in your logs"
+>>>>>>> ba7ef147c9 (EN proofduplo)
 updated: 2024-04-24
 >>>>>>> 8d8de4fb45 (SAP logs on LDP)
 ---
@@ -34,7 +38,7 @@ This guide is designed to help you retrieve fields from your SAP logs to perform
 
 If you haven't configured your OVHcloud Logs Data Platform service, please take note of our documentation [SAP logs on OVHcloud Logs Data Platform - Solution Setup](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup) to get started.
 
-## Requirement
+## Requirements
 
 - [SAP logs on OVHcloud Logs Data Platform configured](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
 
@@ -50,14 +54,14 @@ If you haven't configured your OVHcloud Logs Data Platform service, please take 
 | dev_rd              | /usr/sap/<SAP_SID>/D<INSTANCE_NUMBER>/work/dev_rd                           | |
 | dev_w               | /usr/sap/<SAP_SID>/D<INSTANCE_NUMBER>/work/dev_w*                           | |
 | gw_log              | /usr/sap/<SAP_SID>/D<INSTANCE_NUMBER>/work/gw_log*                          | |
-| applications_java   | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/applications_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
-| default_trace_java  | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/defaultTrace_\*.*.trc | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
-| config_changes_java | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/configChanges_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
+| applications_java   | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/applications_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
+| default_trace_java  | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/defaultTrace_\*.*.trc | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
+| config_changes_java | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/configChanges_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
 | security_audit_java | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/security_audit_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo, Event_Name, Event_Type, ObjectID, ObjectName, Details |
-| userinterface_java  | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/userinterface_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
-| database_java       | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/database_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
-| security_java       | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/security_0*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
-| server_java         | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/server_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
+| userinterface_java  | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/userinterface_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
+| database_java       | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/database_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
+| security_java       | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/security_0*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
+| server_java         | /usr/sap/<SAP_SID>/J<INSTANCE_NUMBER>/j2ee/cluster/server*/log/system/server_\*.*.log | SAP_Version, DateTime, TimeZone, Severity, SourceName, MsgCode, CSN_Component, DC_Component, GUID, Correlation_ID, SAP_Application, SAP_Location, SAP_User, Session, Transaction, DSRRootContextID, DSRTransaction, DSRConnection, DSRCounter, ThreadName, MsgType, ResourceBundle, MsgText, MsgArgsNo |
 | dev_ms              | /usr/sap/<SAP_SID>/{ASCS\|SCS}<INSTANCE_NUMBER>/work/dev_ms                            | |
 | dev_ms_audit        | /usr/sap/<SAP_SID>/{ASCS\|SCS}<INSTANCE_NUMBER>/work/dev_ms_audit                      | |
 | dev_enqsrv          | /usr/sap/<SAP_SID>/<SERVER_TYPE><INSTANCE_NUMBER>/work/dev_enqsrv                     | |
@@ -105,7 +109,11 @@ Join our community of users on <https://community.ovh.com/en/>.
 - [SAP logs on OVHcloud Logs Data Platform - Solution Setup](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
 - [SAP logs on OVHcloud Logs Data Platform - Analyze and work with your logs](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_analyze_and_work_with_your_logs)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
+<<<<<<< HEAD
 Join our community of users on <https://community.ovh.com/en/>.
 >>>>>>> 8d8de4fb45 (SAP logs on LDP)
+=======
+Join our community of users on <https://community.ovh.com/en/>.
+>>>>>>> ba7ef147c9 (EN proofduplo)
