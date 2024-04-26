@@ -15,7 +15,7 @@ Il se présente sous la forme d'une application, installée sur votre PC sous Wi
 ## Prérequis
 
 - Disposer d'un PC sous Windows (7, 8, 10).
-- Disposer de la [solution POPC OVHcloud](https://www.ovhtelecom.fr/telephonie/standard/) ainsi que de la ligne SIP associée.
+- Disposer de la [solution POPC OVHcloud](/links/telecom/telephonie-standard) ainsi que de la ligne SIP associée.
 - **Uniquement pour la version d'essai de POPC** : disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip) sans téléphone Plug & Phone associé.
 - Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
