@@ -6,7 +6,7 @@ updated: 2024-03-11
 
 > [!warning]
 >
-> Cette procédure n'est pas nécessaire si vous activez des services VoIP inclus avec une de [nos offres d'accès internet](https://www.ovhtelecom.fr/offre-internet/).
+> Cette procédure n'est pas nécessaire si vous activez des services VoIP inclus avec une de [nos offres d'accès internet](/links/telecom/offre-internet).
 > Dans ce cadre, consultez [cette procédure](/pages/web_cloud/internet/internet_access/comment_activer_mes_lignes_telephoniques_offre_adsl_vdsl)
 >
 
