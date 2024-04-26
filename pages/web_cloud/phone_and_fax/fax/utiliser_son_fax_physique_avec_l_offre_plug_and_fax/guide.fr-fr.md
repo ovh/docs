@@ -12,7 +12,7 @@ Vous pouvez configurer la réception de vos fax via votre espace client OVHcloud
 
 ## Prérequis
 
-- Disposer d’une ligne [Plug & Fax OVHcloud](/links/telecom/plug-and-fax)
+- Disposer d’une ligne [Plug & Fax OVHcloud](/links/telecom/fax-plug-and-fax)
 - Disposer d'un télécopieur
 - Être connecté à votre [espace client OVHcloud](/links/manager-telecom)
 
