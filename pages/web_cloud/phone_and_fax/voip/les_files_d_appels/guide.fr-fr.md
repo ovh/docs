@@ -92,7 +92,7 @@ Une fois ces informations complétées, cliquez sur le bouton `Valider`{.action}
 >
 > - La législation interdit la redirection sur des numéros surtaxés.
 > - Un appel redirigé vers une destination non-comprise dans votre forfait vous sera facturé.
-> - Les redirections vers un numéro mobile ou une ligne externe à OVHcloud ne sont pas comprises dans les [forfaits VoIP](https://www.ovhtelecom.fr/telephonie/voip/#offers). Elles sont donc facturées à la seconde, sauf dans le cadre des forfaits mobile à l’heure.
+> - Les redirections vers un numéro mobile ou une ligne externe à OVHcloud ne sont pas comprises dans les [forfaits VoIP](/links/telecom/telephonie-voip-offers). Elles sont donc facturées à la seconde, sauf dans le cadre des forfaits mobile à l’heure.
 >
 > Consultez les [tarifs de la téléphonie OVHcloud](/links/telecom/telephonie-decouvrez-tarifs-telephonie) pour plus de détails.
 
