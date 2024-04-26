@@ -40,6 +40,10 @@ Pour créer votre machine virtuelle, accédez d'abord au datacenter où vous pr�
 >> Dans la section `Boot image`, vous retrouverez des ISO préconfigurés qui vous sont fournis.<br><br>
 >> ![Menu Vm Creation](images/vcd-creation-template-vm.png){.thumbnail}<br>
 >> La section `Compute` vous permet de configurer la quantité de vCPU et de mémoire souhaitée pour cette machine virtuelle.
+> **From Clone**
+>> Qu’est-ce qu’un **Clone** ? Un Clone est une copy d'une machine virtuelle. Dans le cas d'une VM les réglages disque associé à la machine utilisé. Il faut lancer la copie depuis la VM grâce au boutton `Action -> Copy de la section "Data Center"`
+>> Attention une vApp doit être toujours ajouté sur VDC. A la suite de ça suivez le menu déroulant des différents réglages disponible comme lors d'uns creation de VM.<br><br>
+>> ![Menu Vm Creation](images/vcd-vm-clone.png){.thumbnail}<br>
 
 Pour la section NIC, vous avez la possibilité de choisir le type de carte réseau en fonction de vos besoins. Le type par défaut (VMXNET3) est souvent un bon choix si vous n'avez pas d'exigences particulières.
 
