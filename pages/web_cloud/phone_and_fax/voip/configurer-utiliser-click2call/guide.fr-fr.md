@@ -101,7 +101,7 @@ Muni d'un identifiant Click2Call et de son mot de passe, vous pouvez à présent
 
 #### Utiliser le Click2Call depuis le logiciel EasyClick2Call
 
-Le logiciel EasyClick2Call permet de passer des appels directement depuis un ordinateur. Pour cela, rendez-vous sur la page [EasyClick2Call](https://www.ovhtelecom.fr/telephonie/easyclick2call.xml){.external} puis téléchargez le logiciel selon le système d'exploitation de votre ordinateur. 
+Le logiciel EasyClick2Call permet de passer des appels directement depuis un ordinateur. Pour cela, rendez-vous sur la page [EasyClick2Call](/links/telecom/telephonie-easyclick2call){.external} puis téléchargez le logiciel selon le système d'exploitation de votre ordinateur. 
 
 Installez EasyClick2Call sur votre machine et ouvrez-le. Vous serez alors invité à renseigner les informations suivantes.
 
