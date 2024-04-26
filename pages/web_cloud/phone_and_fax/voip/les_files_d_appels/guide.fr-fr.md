@@ -14,7 +14,7 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
  
 ## Prérequis
  
-- Disposer d'un [numéro alias](/links/telecom/numeros){.external} dans votre compte OVHcloud.
+- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros){.external} dans votre compte OVHcloud.
 - Être connecté à l’[espace client OVHcloud](/links/manager){.external}.
 
 > [!primary]
