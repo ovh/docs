@@ -24,7 +24,7 @@ This guide is designed to assist you in retrieving and exploiting your SAP logs 
 
 If you haven't configured the SAP logs on OVHcloud Logs Data Platform feature, please use our guide [SAP logs on OVHcloud Logs Data Platform - Solution Setup](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup) to get started.
 
-## Requirement
+## Requirements
 
 - [SAP logs on OVHcloud Logs Data Platform configured](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
 
