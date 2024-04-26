@@ -27,7 +27,7 @@ Pour plus d'informations sur les groupes de téléphonie, consultez notre guide 
 ### Consulter et/ou modifier le palier tarifaire de votre numéro spécial
 
 > [!primary]
-> Vous pouvez consulter la liste complète des paliers tarifaires OVHcloud applicables aux numéros spéciaux en France sur [cette page](https://www.ovhtelecom.fr/telephonie/numeros/numeros-speciaux/numeros-francais.xml).
+> Vous pouvez consulter la liste complète des paliers tarifaires OVHcloud applicables aux numéros spéciaux en France sur [cette page]((/links/telecom/telephonie-numeros-speciaux-francais).
 >
 > La première modification du palier tarifaire est offerte.<br>
 > **Par la suite, la modification sera facturée 20 € HT**.<br>
