@@ -12,7 +12,7 @@ Votre ligne téléphonique OVHcloud vous permet de recevoir des appels. Pour div
 
 ## Prérequis
 
-- Disposer d'une [ligne OVHcloud avec un forfait compatible](/links/telecom/voip){.external} ou d'une ligne Trunk.
+- Disposer d'une [ligne OVHcloud avec un forfait compatible](/links/telecom/telephonie-voip){.external} ou d'une ligne Trunk.
 - Disposer d'un accès à la gestion de la ligne concernée depuis votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
@@ -63,7 +63,7 @@ Définissez dans un premier temps où les appels doivent être redirigés selon 
 
 Pour modifier un créneau, cliquez sur l'icône en forme de roue dentée à côté de celui-ci. Définissez où seront redirigés les appels, puis cliquez sur le bouton `Modifier`{.action}. 
 
-Sachez que les communications vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/voip){.external} (voir la note en bas de page) et [les tarifs en vigueur](/links/telecom/telephonie-decouvrez-tarifs-telephonie){.external}.
+Sachez que les communications vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/telephonie-voip){.external} (voir la note en bas de page) et [les tarifs en vigueur](/links/telecom/telephonie-decouvrez-tarifs-telephonie){.external}.
 
 ![gerer-plages-horaires](images/manage-time-slot-step3.png){.thumbnail}
 
