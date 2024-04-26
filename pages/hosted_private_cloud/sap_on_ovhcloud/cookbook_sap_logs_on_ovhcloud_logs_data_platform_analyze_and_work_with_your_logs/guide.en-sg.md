@@ -1,8 +1,7 @@
 ---
 title: "SAP logs on OVHcloud Logs Data Platform - Analyze and work with your logs"
-excerpt: "This guide is designed to assist you in retrieving and exploiting your SAP logs on the OVHcloud Logs Data Platform service"
+excerpt: "This guide is designed to assist you in retrieving and exploiting your SAP logs on the OVHcloud Logs Data Platform feature"
 updated: 2024-04-24
-flag: hidden
 ---
 
 <style>
@@ -41,7 +40,7 @@ OVHcloud manages a list of SAP files which are pre-configured and can be directl
 
 ### Filter your logs
 
-Several pre-defined fields have been created in order to make easier your navigation through your logs.
+Several pre-defined fields have been created in order to make your navigation through your logs easier.
 
 Below, a summary of pre-defined fields:
 
@@ -56,7 +55,7 @@ Below, a summary of pre-defined fields:
 | source      | Hostname of the server which forwarded the log. |
 | timestamp   | Timestamp (UTC). |
 
-Examples of filters usages:
+Examples of filter usage:
 
 <details>
 <summary>Logs of the work process trace files (dev_w*)</summary>
@@ -73,7 +72,7 @@ Examples of filters usages:
 </details>
 
 <details>
-<summary>Logs of all servers with name starting by ldp and coming from the RFC trace files (dev_rfc*)</summary>
+<summary>Logs of all servers with a name starting with ldp and coming from the RFC trace files (dev_rfc*)</summary>
 
 ![filter_ldp_and_dev_rfc1](images/filter_ldp_and_dev_rfc1.png){.thumbnail}
 ![filter_ldp_and_dev_rfc1](images/filter_ldp_and_dev_rfc2.png){.thumbnail}
@@ -98,7 +97,7 @@ Following the import of your dashboards or OVHcloud dashboards, the Dashboards t
 
 ![dashboards_menu](images/dashboards_menu.png){.thumbnail}
 
-The SAP OVHcloud dashboards allow you to filter on an SAP SID and/or a specific hostname.
+The SAP OVHcloud dashboards allow you to filter by an SAP SID and/or a specific hostname.
 
 ![dashboard](images/dashboard.png){.thumbnail}
 
@@ -120,10 +119,10 @@ The OVHcloud API available at [api.ovh.com](https://ca.api.ovh.com/console-previ
 
 ## Go further
 
-- [Archiving your logs - Cold-storage](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage/guide.en-gb.md)
+- [Archiving your logs - Cold-storage](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage)
 - [Logs Data Platform - Archive mirror](https://github.com/ovh/ldp-archive-mirror)
 - [SAP logs on OVHcloud Logs Data Platform - Index of SAP logs](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_index_of_sap_logs)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
