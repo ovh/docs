@@ -13,7 +13,7 @@ Les touches programmables (aussi appelées touches de fonction) permettent de li
 ## Prérequis
 
 - Posséder un téléphone fourni par OVHcloud avec des touches de fonction (cette information est disponible sur [notre site](/links/telecom/telephonie-comparatif-telephones){.external}).
-- Détenir une offre VoIP compatible (voir « Fonctionnalités du téléphone » sur [notre site](/links/telecom/services-inclus){.external}).
+- Détenir une offre VoIP compatible (voir « Fonctionnalités du téléphone » sur [notre site](/links/telecom/telephonie-services-inclus){.external}).
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique

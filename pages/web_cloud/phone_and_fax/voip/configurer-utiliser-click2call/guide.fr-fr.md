@@ -12,7 +12,7 @@ La fonctionnalité Click2Call (ou « appel en un clic ») permet de mettre en re
 
 ## Prérequis
 
-- Disposer d’une ligne SIP possédant un [forfait compatible](/links/telecom/services-inclus){.external} avec la fonctionnalité Click2Call.
+- Disposer d’une ligne SIP possédant un [forfait compatible](/links/telecom/telephonie-services-inclus){.external} avec la fonctionnalité Click2Call.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
@@ -27,7 +27,7 @@ Vous avez la possibilité de configurer la fonctionnalité Click2Call depuis vot
 >
 > Les communications lancées depuis la fonctionnalité Click2Call vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/voip){.external} (voir la note en bas de page) et [les tarifs en vigueur](/links/telecom/telephonie-decouvrez-tarifs-telephonie){.external}.
 >
-> Le Click2Call peut être utilisé conjointement avec d'[autres fonctionnalités disponibles](/links/telecom/services-inclus){.external} sur votre ligne SIP, telles que le [filtrage d'appel](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels){.external} (permettant par exemple d'empêcher tout appel vers des numéros commençant par « 08 »).
+> Le Click2Call peut être utilisé conjointement avec d'[autres fonctionnalités disponibles](/links/telecom/telephonie-services-inclus){.external} sur votre ligne SIP, telles que le [filtrage d'appel](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels){.external} (permettant par exemple d'empêcher tout appel vers des numéros commençant par « 08 »).
 > 
 
 #### Configurer le Click2Call depuis l'espace client
