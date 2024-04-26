@@ -25,6 +25,10 @@ En accord avec des critères internes (ancienneté, existence de factures acquit
 
 Vous avez la possibilté d'augmenter votre quota de ressources manuellement ou automatiquement.
 
+> [!primary]
+> Si vous avez besoin d'augmenter votre quota et que le bouton `Augmenter mes quotas!`{.action} n'est pas disponible dans votre espace client, vous pouvez contacter nos équipes support.
+>
+
 #### Augmenter manuellement votre quota de ressources
 
 Cette procédure vous permet de demander manuellement une augmentation de quota et de la valider via un paiement initial (crédit Public Cloud).

@@ -25,6 +25,10 @@ In compliance with internal criteria (seniority, existence of paid invoices, etc
 
 You can increase your resources quota manually or automatically.
 
+> [!primary]
+> If you need to increase your quota and the `Increase your quota!`{.action} button is not available in your Control Panel, you can contact our support teams.
+>
+
 #### Increasing your resources quota manually
 
 This procedure allows you to manually request a quota increase and validate it with an upfront payment (Public Cloud credit).

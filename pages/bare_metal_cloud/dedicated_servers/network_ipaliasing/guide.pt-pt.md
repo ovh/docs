@@ -286,7 +286,7 @@ network:
        INTERFACE_NAME:
            dhcp4: true
            addresses:
-           - ADDITIONAL_IP1/32
+           - ADDITIONAL_IP/32
 ```
 
 Se tiver dois endereços Additional IP a configurar, o ficheiro de configuração deve ter o seguinte formato:
