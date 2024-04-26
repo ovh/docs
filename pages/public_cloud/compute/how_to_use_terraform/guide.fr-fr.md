@@ -3,7 +3,7 @@ title: Comment utiliser Terraform sur le Public Cloud OVHcloud
 description: Utilisation de Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Décrouvez comment utiliser l'outil Terraform pour abstraire le déploiement de votre infrastructure
-updated: 2024-01-12
+updated: 2024-04-26
 ---
 
 ## Objectif
