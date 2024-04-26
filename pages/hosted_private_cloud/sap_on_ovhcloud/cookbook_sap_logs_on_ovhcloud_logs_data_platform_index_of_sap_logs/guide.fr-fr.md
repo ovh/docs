@@ -2,7 +2,6 @@
 title: "SAP Logs on OVHcloud Logs Data Platform - Index des logs SAP"
 excerpt: "Ce guide a pour but de vous aider à récupérer les champs de vos logs SAP pour effectuer des recherches dans vos logs."
 updated: 2024-04-24
-flag: hidden
 ---
 
 ## Objectif
