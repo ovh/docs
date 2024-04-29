@@ -40,7 +40,7 @@ Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryp
 >> - Lorsque la page est chargée, cliquez sur l'icône de cadenas situé à gauche de l'URL dans la barre d'adresse. Cela affichera des informations sur le certificat.
 >> - Dans les informations du certificat, cherchez la section qui concerne l'empreinte digitale ou le fingerprint. Cette section peut être nommée différemment selon le navigateur que vous utilisez.<br>
 >>
->> ![Cadena Navigateur](images/cadenas_site_web.png){.thumbnail}
+>> ![Cadena Navigateur](images/fingerprint_sha.png){.thumbnail}
 >>
 >> ![Empreinte SHA Navigateur](images/fingerprint_sha.png){.thumbnail}
 >>
