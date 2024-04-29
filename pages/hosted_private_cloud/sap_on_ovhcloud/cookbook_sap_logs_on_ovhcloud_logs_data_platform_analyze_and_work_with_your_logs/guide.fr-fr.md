@@ -32,7 +32,9 @@ Si vous n'avez pas encore configuré la fonctionnalité SAP logs on OVHcloud Log
 
 ### Visualiser vos logs
 
-Avec la configuration de SAP logs on OVHcloud Logs Data Platform, vos logs sont accessibles dans votre data stream. Dans le but de les visualiser, deux options s'offrent à vous, Graylog et OpenSearch Dashboards. OpenSearch Dashboards offre la possibilité de créer des dashboards ainsi que des recherches vous aidant à répondre à vos différents cas d'usages.
+Avec la configuration de SAP logs on OVHcloud Logs Data Platform, vos logs sont accessibles dans votre data stream.
+
+Dans le but de les visualiser, deux options s'offrent à vous, Graylog et OpenSearch Dashboards. OpenSearch Dashboards offre la possibilité de créer des dashboards ainsi que des recherches vous aidant à répondre à vos différents cas d'usages.
 
 OVHcloud propose une liste de fichiers SAP qui sont transférés sur votre data stream. Vous pouvez accéder à cette liste de fichiers sur notre [repository GitHub](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform).
 
@@ -101,7 +103,7 @@ Les dashboards SAP OVHcloud vous offre la possibilité de filtrer sur un SID SAP
 
 ### Ajouter un nouveau fichier de logs
 
-SAP logs on OVHcloud Logs Data Platform vous permet d'ajouter votre propre configuration. Pour ajouter un nouveau fichier de log, vous devez ajouter un nouveau bloc dans votre fichier de configuration rsyslog (`/etc/rsyslog.d/ovhcloud-sap-rsyslog.conf`) et appliqué la règle appropriée afin de transférer vos logs dans votre data stream.
+SAP logs on OVHcloud Logs Data Platform vous permet d'ajouter votre propre configuration. Pour ajouter un nouveau fichier de log, vous devez ajouter un nouveau bloc dans votre fichier de configuration rsyslog (`/etc/rsyslog.d/ovhcloud-sap-rsyslog.conf`) et appliquer la règle appropriée afin de transférer vos logs dans votre data stream.
 
 Après chaque changement dans le fichier de configuration, il est nécessaire de redémarrer le service rsyslog.
 
