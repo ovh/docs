@@ -105,6 +105,16 @@ SAP logs on OVHcloud Logs Data Platform vous permet d'ajouter votre propre confi
 
 Après chaque changement dans le fichier de configuration, il est nécessaire de redémarrer le service rsyslog.
 
+### Récupérer les logs archivés
+
+Si vous avez choisi d'archiver vos logs lors de la configuration de votre data stream, vous pouvez les récupérer en suivant les instructions de notre [documentation](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage#retrieving-the-archives).
+
+Une fois que vous avez obtenu vos logs archivés, vous pouvez les utiliser à l'aide de votre éditeur de texte, ils seront présentés dans un format GELF / JSON, avec tous les champs comme indiqué sur la plateforme Graylog.
+
+Les données étant au format JSON, vous pouvez également envoyer vos logs sur une plateforme d'analyse Big Data.
+
+L’API OVHcloud disponible sur [api.ovh.com](https://ca.api.ovh.com/console-preview/) peut vous aider à récupérer vos données. Dans la documentation, vous retrouverez de nombreux appels d'API qui peuvent vous aider à récupérer et utiliser vos logs.
+
 ## Aller plus loin
 
 - [Archiving your logs - Cold-storage](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage/guide.en-gb.md)

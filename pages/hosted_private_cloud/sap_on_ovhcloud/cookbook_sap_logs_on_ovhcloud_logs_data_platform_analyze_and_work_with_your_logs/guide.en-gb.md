@@ -115,7 +115,7 @@ Upon obtaining your archived logs from the data stream, you can work with them u
 
 As the data is a JSON-like format you can as well send your logs in a Big Data analysis platform.
 
-The OVHcloud API available at [api.ovh.com](https://eu.api.ovh.com/console-preview/) can helps you to retrieve your data to use them. In the guide, you will find numerous API calls that can assist you in retrieving and utilizing your logs.
+The OVHcloud API available at [api.ovh.com](https://eu.api.ovh.com/console-preview/) can helps you to retrieve your data to use them. In the documentation, you will find numerous API calls that can assist you in retrieving and utilizing your logs.
 
 ## Go further
 
