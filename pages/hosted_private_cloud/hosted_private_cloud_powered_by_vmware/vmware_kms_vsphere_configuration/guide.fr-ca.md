@@ -24,9 +24,9 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 
 Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryption Key Management Servers` (en bas de page), et ajouter un nouveau serveur KMS.
 
-![Add Server KMS](images/add_kms_server.png)
+![Add Server KMS](images/add_kms_server.png){.thumbnail}
 
-![Creation KMS server](images/creation_kms_server.png)
+![Creation KMS server](images/creation_kms_server.png){.thumbnail}
 
 > [!primary]
 > Pour récuperer votre empreintre SSL de votre serveur KMS suivez les instructions ci-dessous :
@@ -40,9 +40,9 @@ Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryp
 >> - Lorsque la page est chargée, cliquez sur l'icône de cadenas situé à gauche de l'URL dans la barre d'adresse. Cela affichera des informations sur le certificat.
 >> - Dans les informations du certificat, cherchez la section qui concerne l'empreinte digitale ou le fingerprint. Cette section peut être nommée différemment selon le navigateur que vous utilisez.<br>
 >>
->> ![Cadena Navigateur](images/cadenas_site_web.png)
+>> ![Cadena Navigateur](images/cadenas_site_web.png){.thumbnail}
 >>
->> ![Empreinte SHA Navigateur](images/fingerprint_sha.png)
+>> ![Empreinte SHA Navigateur](images/fingerprint_sha.png){.thumbnail}
 >>
 > **Linux / MacOs**
 >>
@@ -59,11 +59,11 @@ Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryp
 Ouvrez votre navigateur web et rendez-vous à l'adresse fournie pour accéder à votre interface vSphere. Par exemple : `https://pcc-x.x.x.x.ovh.de/ui/`.
 Une fois connecté, selectionnez l'onglet `Configure` de votre PCC, puis `Key Providers`. cliquez sur `Add a new Standard Key Provider`.
 
-![KMS Key Provider](images/kms_key_provider.png)
+![KMS Key Provider](images/kms_key_provider.png){.thumbnail}
 
 Une fois que vous avez sélectionné l'option pour ajouter un Key Provider, une fenêtre ou un formulaire s'ouvrira pour saisir les détails du Key Provider que vous souhaitez ajouter. Cela peut inclure des informations telles que l'adresse IP ou le nom DNS du serveur KMS et le port utilisé.
 
-![KMS Key Provider](images/kms_key_provider_2.png)
+![KMS Key Provider](images/kms_key_provider_2.png){.thumbnail}
 
 Attendez que vSphere établisse la connexion avec le Key Provider que vous avez ajouté. Vous devriez voir une indication ou un message confirmant que la connexion a été établie avec succès.
 
@@ -71,33 +71,33 @@ Attendez que vSphere établisse la connexion avec le Key Provider que vous avez 
 
 Selectionner votre Key Provider que vous venez de créer et cliquer sur le bouton `TRUST VCENTER`.
 
-![Trust KMS server](images/trust_kms.png)
+![Trust KMS server](images/trust_kms.png){.thumbnail}
 
 Selectionnez `KMS Certificate and private key to vCenter.`. Puis renseignez votre certificat KMS et votre clef privée du serveur KMS.
 
-![Trust KMS server](images/kms_trust_vcenter.png)
+![Trust KMS server](images/kms_trust_vcenter.png){.thumbnail}
 
-![Trust KMS server](images/kms_trust_vcenter_2.png)
+![Trust KMS server](images/kms_trust_vcenter_2.png){.thumbnail}
 
 Vous pouvez verifier que la connection à été établie en selectionnant votre Key Provider. L'option `Connected` doit être cochée.
 
-![Trust KMS server](images/kms_key_provider_3.png)
+![Trust KMS server](images/kms_key_provider_3.png){.thumbnail}
 
 ### Chiffrement d'une Machine Virtuelle
 
 Localisez la machine virtuelle (VM) que vous souhaitez chiffrer. Faites un clic droit sur la machine virtuelle sélectionnée pour afficher le menu contextuel. Sélectionnez `VM Policies` puis choisissez `Edit VM Storage Policies`. Cela ouvrira une fenêtre ou un panneau où vous pourrez modifier les politiques de stockage de la VM sélectionnée.
 
-![VM Storage Policies](images/vm_policies.png)
+![VM Storage Policies](images/vm_policies.png){.thumbnail}
 
 Recherchez les options de chiffrement ou de sécurité dans les politiques de stockage pour activer le chiffrement KMS pour cette VM.
 
-![VMS policies encrypt](images/vm_policies_kms_encrypt.png)
+![VMS policies encrypt](images/vm_policies_kms_encrypt.png){.thumbnail}
 
 Après avoir apporté les modifications nécessaires, enregistrez les modifications et fermez la fenêtre.
 
 Vous avez maintenant édité les politiques de stockage de la VM et activer le chiffrement KMS pour votre serveur. Un petit cadenas sur le résumé des informations de votre machine virtuelle le confirme.
 
-![VM Encrypt](images/vm_encrypt.png)
+![VM Encrypt](images/vm_encrypt.png){.thumbnail}
 
 ## Aller plus loin <a name="go-further"></a>
 

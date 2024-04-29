@@ -24,9 +24,9 @@ To do this, log in to your [OVHcloud Control Panel](/links/manager). Go to `Host
 
 Once in the security section, go to the `Virtual Machine Encryption Key Management Servers` section (at the bottom of the page), and add a new KMS server.
 
-![Add Server KMS](images/add_kms_server.png)
+![Add Server KMS](images/add_kms_server.png){.thumbnail}
 
-![Creation KMS server](images/creation_kms_server.png)
+![Creation KMS server](images/creation_kms_server.png){.thumbnail}
 
 > [!primary]
 > To retrieve your SSL fingerprint from your KMS server, follow the instructions below by navigating through the tabs.
@@ -40,9 +40,9 @@ Once in the security section, go to the `Virtual Machine Encryption Key Manageme
 >> - When the page loads, click the padlock icon to the left of the URL in the address bar. This will display the certificate information.
 >> - In the certificate information, look for the section that relates to the *fingerprint*. This section can be named differently depending on the browser you are using.<br>
 >>
->> ![Navigator Padlock](images/padlock_website.png)
+>> ![Navigator Padlock](images/padlock_website.png){.thumbnail}
 >>
->> ![Sha Thumbprint Browser](images/fingerprint_sha.png)
+>> ![Sha Thumbprint Browser](images/fingerprint_sha.png){.thumbnail}
 >>
 > **Linux/MacOS**
 >>
@@ -59,11 +59,11 @@ Once in the security section, go to the `Virtual Machine Encryption Key Manageme
 Open a web browser and go to the address provided to access your vSphere interface. For example: `https://pcc-x.x.x.x.ovh.de/ui/`.
 Once logged in, select the `Configure` tab of your Dedicated Cloud then `Key Providers`. click `Add a new Standard Key Provider`.
 
-![KMS Key Provider](images/kms_key_provider.png)
+![KMS Key Provider](images/kms_key_provider.png){.thumbnail}
 
 Once you have selected the option to add a Key Provider, a window or form will open where you will be asked to enter the details of the Key Provider you want to add. This may include information such as the IP address or DNS name of the KMS server and the port used.
 
-![KMS Key Provider](images/kms_key_provider_2.png)
+![KMS Key Provider](images/kms_key_provider_2.png){.thumbnail}
 
 Wait for vSphere to establish the connection with the Key Provider you have added. You should see a hint or message confirming that the connection has been successfully established.
 
@@ -71,33 +71,33 @@ Wait for vSphere to establish the connection with the Key Provider you have adde
 
 Select your Key Provider you have just created and click on the `TRUST VCENTER` button.
 
-![Trust KMS server](images/trust_kms.png)
+![Trust KMS server](images/trust_kms.png){.thumbnail}
 
 In the context menu, select `KMS Certificate and private key to vCenter.`. Then enter your KMS certificate and your KMS server private key.
 
-![Trust KMS server](images/kms_trust_vcenter.png)
+![Trust KMS server](images/kms_trust_vcenter.png){.thumbnail}
 
-![Trust KMS server](images/kms_trust_vcenter_2.png)
+![Trust KMS server](images/kms_trust_vcenter_2.png){.thumbnail}
 
 You can check that the connection has been established by selecting your Key Provider. The `Connected` option must be ticked.
 
-![Trust KMS server](images/kms_key_provider_3.png)
+![Trust KMS server](images/kms_key_provider_3.png){.thumbnail}
 
 ### Encryption of a Virtual Machine
 
 Locate the virtual machine (VM) you want to encrypt. Right-click on the selected VM to display the shortcut menu. In the context menu, select `VM Policies` and then select `Edit VM Storage Policies`. This will open a window or panel where you can modify the storage policies of the VM selected.
 
-![VM Storage Policies](images/vm_policies.png)
+![VM Storage Policies](images/vm_policies.png){.thumbnail}
 
 Search for encryption or security options in storage policies to enable KMS encryption for this VM.
 
-![VMS policies encrypt](images/vm_policies_kms_encrypt.png)
+![VMS policies encrypt](images/vm_policies_kms_encrypt.png){.thumbnail}
 
 After making the necessary changes, save the changes and close the window.
 
 You have now edited the VM storage policies and enabled KMS encryption for your server. A small padlock on your virtual machine’s summary information confirms this.
 
-![VM Encrypt](images/vm_encrypt.png)
+![VM Encrypt](images/vm_encrypt.png){.thumbnail}
 
 ## Go further <a name="go-further"></a>
 
