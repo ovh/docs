@@ -20,7 +20,7 @@ updated: 2024-04-24
 
 La première étape consiste à configurer le pare-feu pour autoriser les flux entre le serveur KMS et votre environnement vSphere.
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dirigez-vous dans la section `Hosted Private Cloud` > `VMware` > `Votre PCC` > `Sécurité`.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager). Dirigez-vous dans la section `Hosted Private Cloud` > `VMware` > `Votre PCC` > `Sécurité`.
 
 Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryption Key Management Servers` (en bas de page), et ajouter un nouveau serveur KMS.
 
