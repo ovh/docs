@@ -1,7 +1,7 @@
 ---
 title: 'E-Mails können nicht gesendet oder empfangen werden'
 excerpt: 'Erfahren Sie hier die Vorgehensweise, wenn Sende- oder Empfangsprobleme über OVHcloud auftreten'
-updated: 2023-08-30
+updated: 2024-04-11
 ---
 
 ## Ziel
@@ -48,6 +48,10 @@ Wenn Sie ein E-Mail-Programm auf Ihrem Computer (Outlook, Mac Mail, Thunderbird 
 - Überprüfen Sie bei einem **E-Mail Pro** Angebot im Bereich [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `Konfiguration des E-Mail-Clients`.
 
 - Für ein **Exchange** Angebot überprüfen Sie im Bereich [Microsoft Collaborative Solutions](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Bereich `Konfiguration des Exchange E-Mail-Clients` oder Ihres Smartphones in `Konfiguration von Exchange auf kompatiblen Smartphones/Tablets`
+
+## Ich kann keine E-Mails empfangen, da meine E-Mail-Adresse voll ist und ich keinen Speicherplatz mehr habe. Was kann ich tun?
+
+Wenn Sie [ein E-Mail-Angebot von OVHcloud](https://www.ovhcloud.com/de/emails/) abonniert haben und einer Ihrer E-Mail-Accounts voll ist, lesen Sie unsere Anleitung "[Speicherplatz eines E-Mail-Accounts verwalten](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". In dieser Anleitung erfahren Sie, ob Sie den vorhandenen Speicherplatz optimieren können oder ob Sie das E-Mail-Angebot wechseln müssen, um die Speicherkapazität zu erhöhen.
 
 ### Sind die E-Mails über das Webmail-Interface funktionsfähig? (**Versand** und/oder **Empfang**)
 
@@ -120,6 +124,7 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 |504|Command parameter not implemented|Die beim Versand der E-Mail mit Ihrem SMTP-Server verwendeten Einstellungen oder Optionen werden erkannt, sind in der Konfiguration jedoch deaktiviert. Bitte kontaktieren Sie Ihren Dienstleister.|
 |535|Authentication failed|Die Benutzer-/Passwort-Informationen sind falsch oder der Versand von dieser E-Mail-Adresse ist blockiert. Überprüfen Sie den Zustand Ihrer E-Mail-Adresse über Ihr OVHcloud Kundencenter. Wenn der Account wegen Spam gesperrt wurde, können Sie den Versand durch eine Passwortänderung wieder entsperren. Weitere Informationen finden Sie in unserer Anleitung [Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam).
 |550|Requested action not performed: mailbox unavailable|Der Empfänger-Server konnte die verwendete E-Mail-Adresse nicht überprüfen. Dies wird meist durch eine ungültige Ziel-E-Mail-Adresse verursacht, kann aber auch bedeuten, dass der Server Probleme mit der Firewall oder der Konnektivität hat. Überprüfen Sie die E-Mail-Adresse des Empfängers, und/oder versuchen Sie es erneut.|
+|550 5.7.1|Email rejected per policy reason|Der Ziel-E-Mail-Server hat die Absender-E-Mail-Adresse aus sicherheitspolitischen Gründen abgelehnt. Diese Gründe können mehrere sein, sie werden normalerweise mit dem Fehlercode angegeben. In einigen Fällen kann es sich um eine IP-Adresse in der Übertragungskette handeln, die in einer Ablehnungsliste enthalten ist. Um die Reputation einer IP-Adresse zu überprüfen, können Sie sie beispielsweise auf [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) testen oder die E-Mail-Kette der betreffenden E-Mail-Adresse mit [Mailtester](https://www.mail-tester.com/) überprüfen|
 |550 5.7.26|This message does not have authentication information or fails to pass authentication checks| Die Mail wurde abgelehnt, weil der E-Mail-Dienst des Absenders weder SPF noch DKIM für seinen Domainnamen konfiguriert hat.<br><br>Es wird empfohlen, einen SPF-Prioritätseintrag zu erstellen, der mit allen E-Mail-Diensten kompatibel ist. Nutzen Sie dazu unsere Anleitung „[Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen](/pages/web_cloud/domains/dns_zone_spf)“.<br><br>Wenn Ihr E-Mail-Angebot über die DKIM-Option verfügt, können Sie diese mithilfe unserer Anleitung einrichten: „[DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)“.|
 |551|User not local or invalid address – Relay denied|Dies wird typischerweise als Strategie zur Vermeidung von Spam verwendet. Es besagt, dass das Mail-Relay aus irgendeinem Grund nicht berechtigt ist, Ihre Nachricht an einen anderen Server als den Ihren weiterzuleiten. Bitte kontaktieren Sie Ihren Dienstleister.|
 |552|Requested mail actions aborted – Exceeded storage allocation|Der Empfängeraccount hat keinen Speicherplatz mehr für den Empfang von Nachrichten. Leider besteht die einzige Lösung darin, den Empfänger über eine andere Methode zu kontaktieren.|
