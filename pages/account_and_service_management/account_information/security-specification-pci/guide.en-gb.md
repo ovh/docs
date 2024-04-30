@@ -1,12 +1,12 @@
 ---
-title: Concepts - Security overview
-excerpt: Public Cloud Databases security overview
-updated: 2023-12-13
+title: Security specification for Public Cloud Instance
+excerpt: Public Cloud Instance security overview
+
 ---
 
 ## Objective
 
-In addition to [the responsibility model for Public Cloud Database services](/pages/public_cloud/public_cloud_databases/information_03_shared_responsibility), this security fact sheets aims at describing security features and functions associated to the service. It describes also best practices that customers can adopt to secure their databases.
+In addition to [the responsibility model for Public Cloud Instance](/pages/public_cloud/compute/responsibility-model-instances), this security fact sheets aims at describing security features and functions associated to the service. It describes also best practices that customers can adopt to secure their Instances based on OpenStack technology.
 
 ## 1.Certifications
 
@@ -24,8 +24,11 @@ In addition to [the responsibility model for Public Cloud Database services](/pa
 
 ### 2.1 Recommandations once the service is delivered
 
-Once you have followed [these first steps to subscribe your service](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) and reset the default password communicated to access to the service, you must filter connections by using iptables.<br>
-You can also activate a private connection by using the vRack option.
+At service subscription, it's recommanded to use SSH keys to access to your Instance (rather than a login/password) for a better authentication security level for your administrators and to change it regularly. [You can follow this link to manage your SSH keys.](/pages/public_cloud/compute/public-cloud-first-steps)<br>
+
+You can use the user interface and CLI to run tasks. You must manage and secure your 'root' access to perform some administration tasks as indicated at [this link.](/pages/public_cloud/compute/become_root_and_change_password) <br>
+
+You must filter connections by using IPtables. 
 
 ### 2.2 Vulnerability scans
 
@@ -35,17 +38,22 @@ You are not authorized to use your service to scan other infrastructures.
 
 ## 3.SLA
 
-xxxxxxx
+The SLA varies between 99,999% - 99,9% and differs following offers /ranges.  You can refer to Particular Conditions of the service for more details. 
 
 ## 4.Backups
 
 ### 4.1 Technical backups
 
-Technical backups are backups made by OVHcloud to maintain the Service Level Agreement. These backups can not be activated at customer request.
+As a part of our reslience plan in the Control Plane, we perform backups to maintain our Service Level Agreement. These technical backups can not be activated at customer resquest. 
 
 ### 4.2 Customer data backups
 
-xxxxxx
+| **Option** | **granularity** | **RPO** | **RTO** | **Documentation** |
+| --- | --- | --- | --- | --- |
+| Backup of an Instance | Instance | Depends on the date of the last backup and the delay of incident resolution | Depends on the size of the Instance | [Backing up an instance](/pages/public_cloud/compute/save_an_instance)<br>
+[Backups and restoration](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)|
+
+
 
 ## 5.Logs
 
@@ -55,9 +63,9 @@ xxxxxx
 
 ## 6.API
 
-| **Name** | **Capacity** | **Link** |
+| **Name** | **Capacity** | **Documentation** |
 | --- | --- | --- |
-| Control Panel and service | Manage customer accounts and services on which each account has access rights. | [https://eu.api.ovh.com/console/#/dbaas/logs](https://eu.api.ovh.com/console/#/dbaas/logs)) |
+| Control Panel and service | Manage customer accounts and services on which each account has access rights. | [Preparing an environment for using the OpenStack API](Preparing an environment for using the OpenStack API)<br>[Getting started with the OpenStack API](/pages/public_cloud/compute/starting_with_nova)<br>[API Rate Limits](/pages/public_cloud/compute/api_rate_limits) |
 
 ## 7.Accounts - User
 
