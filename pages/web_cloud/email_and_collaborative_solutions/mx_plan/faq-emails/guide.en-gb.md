@@ -14,7 +14,7 @@ Most of the time, a failure in sending/receiving emails is related to the config
 
 After sending an email to your email account, do you receive an error message? If yes, check the error message, as it may specify the reason (mailbox full, mailbox does not exist, etc.). 
 
-You can also check that your domain name is delivering emails to the right place. To do this, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, select the DNS zone for your domain name, then look at the MX records that have been set up. These records must be in the form "mx**X**.mail.ovh.net." (replace X with a number between 0 and 3). If the MX records are different, this could mean you have an email solution from an operator other than OVHcloud. 
+You can also check that your domain name is delivering emails to the right place. To do this, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, select the DNS zone for your domain name, then look at the MX records that have been set up. These records must be in the form "mx**X**.mail.ovh.net." (replace **X** with a number between 0 and 3). If the MX records are different, this could mean you have an email solution from an operator other than OVHcloud. 
 
 **Tips and tricks**: If you cannot log in via webmail, your password may be incorrect. Check your password, and if necessary, reset it via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} — then try logging in again. To do this, you can use the following documentation: [Changing your password for an MX Plan email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password).
 
@@ -59,9 +59,9 @@ You want to change [email solutions](https://www.ovhcloud.com/en-gb/emails/) to 
 - [Migrate email accounts via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_com)
 - [Migrate a Gmail account to an OVHcloud email account via the OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
 
-### Does the Office 365 Pro Plus solution include a Skype licence? 
+### Does the Office 365 Pro Plus solution include a Skype licence?
 
-The Office 365 Pro Plus solution does not come with a Skype licence. Only the Skype for Business software is included with it. 
+The Office 365 Pro Plus solution does not come with a Skype licence. Only the Skype for Business software is included with it.
 
 ## Go further
 

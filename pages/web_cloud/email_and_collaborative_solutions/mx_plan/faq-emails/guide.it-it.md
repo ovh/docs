@@ -14,7 +14,7 @@ La maggior parte delle volte, i problemi di invio e ricezione delle email sono d
 
 Dopo aver inviato un’email sul tuo account email, ricevi un messaggio di errore? Se sì, ritrova il messaggio d’errore, che potrebbe indicarne il motivo (casella piena, casella non esistente, ecc.).
 
-Puoi anche verificare che il tuo dominio consegni le e-mail al posto giusto. Per farlo, accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona la zona DNS del tuo dominio e consulta i record MX applicati. Questi record devono essere in questo formato “mx\*.mail.ovh.net.” (sostituisci l’asterisco * con una cifra tra 0 e 3).
+Puoi anche verificare che il tuo dominio consegni le e-mail al posto giusto. Per farlo, accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona la zona DNS del tuo dominio e consulta i record MX applicati. Questi record devono essere in questo formato “mx\*.mail.ovh.net.” (sostituisci l’asterisco \* con una cifra tra 0 e 3).
 Se i record MX sono diversi, è possibile che tu disponga di un servizio di posta elettronica di un operatore diverso da OVHcloud.
 
 **Consigli e suggerimenti**: Se non riesci ad accedere alla tua Webmail, è probabile che la tua password sia errata. Verifica la tua password e, se necessario, modificala dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} prima di effettuare nuovamente il login. Per questa procedura, consulta la [nostra guida](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password).

@@ -14,7 +14,7 @@ La plupart du temps, une émission/réception d'e-mails impossible est liée à 
 
 Suite à l'envoi d'un e-mail sur votre compte mail, recevez-vous un message d'erreur ? Si oui, repérez le message d'erreur, il pourra vous en préciser la raison (boite pleine, boite non existante ...).
 
-Vous pouvez également vérifier que votre nom de domaine livre les e-mails au bon endroit. Pour cela, depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, sélectionnez la zone DNS de votre nom de domaine et regardez les enregistrements de type MX mis en place. Ces enregistrements doivent être sous la forme « mx*.mail.ovh.ca. » (remplacez * par un chiffre entre 0 et 3). 
+Vous pouvez également vérifier que votre nom de domaine livre les e-mails au bon endroit. Pour cela, depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, sélectionnez la zone DNS de votre nom de domaine et regardez les enregistrements de type MX mis en place. Ces enregistrements doivent être sous la forme « mx\*.mail.ovh.ca. » (remplacez \* par un chiffre entre 0 et 3). 
 Si les enregistrements MX sont différents, c'est que vous avez potentiellement une offre e-mail d'un autre opérateur qu'OVHcloud.
 
 **Trucs et Astuces** : Si la connexion à votre webmail est impossible, votre mot de passe est peut-être erroné. Vérifiez-le et, si nécessaire, nous vous invitons à le modifier depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et à renouveler votre connexion.
@@ -43,10 +43,23 @@ Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la
 
 **Trucs et Astuces** : Si vous définissez un filtre sur la réception de SPAMS, il est possible que des e-mails légitimes soient considérés comme étant des SPAMS. On appelle cela des « faux positifs ».Si cela vous arrive, nous vous invitons à déclarer une demande d'assistance dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} afin de nous en faire part. Nous pourrons ainsi faire le nécessaire afin que ceux-ci ne soient plus considérés comme SPAMS par la suite.
 
-### L'offre Office 365 Pro Plus comprend-t-elle une licence Skype? 
+### Je souhaite changer d'offre e-mail pour mon adresse, comment puis-je le faire tout en gardant son contenu ?
 
-L’offre Office 365 Pro Plus ne contient pas de licence Skype. Seul le logiciel Skype for Business y est inclus. 
+Vous souhaitez changer [d'offre e-mail](https://www.ovhcloud.com/fr/emails/) pour bénéficier de plus d'espace et de fonctionnalités, mais vous souhaitez conserver le contenu de votre adresse existante. Pour cela nous vous invitons à suivre l'un de nos guides de migration :
 
+- [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
+- [Migrer des comptes e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
+- [Migrer un compte Gmail vers un compte e-mail OVHcloud via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
+
+### L'offre Office 365 Pro Plus comprend-t-elle une licence Skype?
+
+L’offre Office 365 Pro Plus ne contient pas de licence Skype. Seul le logiciel Skype for Business y est inclus.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
