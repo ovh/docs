@@ -46,13 +46,13 @@ The SLA varies between 99,999% - 99,9% and differs following offers /ranges.  Yo
 
 As a part of our reslience plan in the Control Plane, we perform backups to maintain our Service Level Agreement. These technical backups can not be activated at customer resquest. 
 
+
 ### 4.2 Customer data backups
 
 | **Option** | **granularity** | **RPO** | **RTO** | **Documentation** |
 | --- | --- | --- | --- | --- |
 | Backup of an Instance | Instance | Depends on the date of the last backup and the delay of incident resolution | Depends on the size of the Instance | [Backing up an instance](/pages/public_cloud/compute/save_an_instance)<br>
 [Backups and restoration](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)|
-
 
 
 ## 5.Logs
@@ -65,7 +65,7 @@ As a part of our reslience plan in the Control Plane, we perform backups to main
 
 | **Name** | **Capacity** | **Documentation** |
 | --- | --- | --- |
-| Control Panel and service | Manage customer accounts and services on which each account has access rights. | [Preparing an environment for using the OpenStack API](Preparing an environment for using the OpenStack API)<br>[Getting started with the OpenStack API](/pages/public_cloud/compute/starting_with_nova)<br>[API Rate Limits](/pages/public_cloud/compute/api_rate_limits) |
+| Control Panel and service | Manage customer accounts and services on which each account has access rights. | [Preparing an environment for using the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)<br>[Getting started with the OpenStack API](/pages/public_cloud/compute/starting_with_nova)<br>[API Rate Limits](/pages/public_cloud/compute/api_rate_limits) |
 
 ## 7.Accounts - User
 
