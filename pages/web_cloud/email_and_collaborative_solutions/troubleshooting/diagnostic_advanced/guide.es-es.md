@@ -49,6 +49,10 @@ Si utiliza un cliente de correo en su ordenador (Outlook, Mail de Mac, Thunderbi
 
 - Para un servicio **Exchange**, en la sección [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) de nuestras guías **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración del cliente de correo Exchange` o su smartphone en `Configuración en un smartphone o tablet compatible con Exchange`.
 
+### No puedo recibir correos electrónicos porque mi dirección de correo electrónico está llena, no tengo espacio. ¿Qué puedo hacer?
+
+Si ha contratado [una de nuestras soluciones de correo de OVHcloud](https://www.ovhcloud.com/es/emails/) y tiene una cuenta de correo llena, consulte nuestra guía "[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
+
 ### ¿Los mensajes de correo funcionan desde el webmail? (**envío** y/o **recepción**)
 
 Para asegurarse de que el fallo de funcionamiento no se deba a un error de configuración, realice una prueba de envío y de recepción directamente a través del webmail de OVHcloud. Si todo funciona correctamente, compruebe la configuración de su programa a través de las guías disponibles.
@@ -68,10 +72,6 @@ Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 - Para un servicio **Email Pro**, acceda a la sección `Web Cloud`{.action}, haga clic en `Email Pro`{.action} y seleccione su plataforma. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña.
 
 - Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña. <br> Compruebe si la doble autenticación está activada en nuestra guía [Configurar la doble autenticación en una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange).
-
-### No puedo recibir correos electrónicos porque mi dirección de correo electrónico está llena, no tengo espacio. ¿Qué puedo hacer?
-
-Si ha contratado [una de nuestras soluciones de correo de OVHcloud](https://www.ovhcloud.com/es/emails/) y tiene una cuenta de correo llena, consulte nuestra guía "[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
 
 ### ¿Hay algún incidente o mantenimiento en curso en mi servicio? (**envío** y/o **recepción**)
 
