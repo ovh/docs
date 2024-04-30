@@ -106,7 +106,7 @@ You should filter and allow necessay connections by using IPtables according to 
 
 ### 8.3 Data encryption at rest
 
-To encrypt your data at disk level, you can follow [this guide](https://docs.openstack.org/cinder/pike/configuration/block-storage/volume-encryption.html#create-an-encrypted-volume) when you create a volume storage.
+To encrypt your data at rest (volume level encyption), you can follow [this guide](https://docs.openstack.org/cinder/pike/configuration/block-storage/volume-encryption.html#create-an-encrypted-volume) when you create a volume storage.
 
 
 ### 8.4 HDS option
