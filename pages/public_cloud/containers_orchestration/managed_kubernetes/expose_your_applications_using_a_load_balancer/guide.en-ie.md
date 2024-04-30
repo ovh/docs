@@ -384,9 +384,6 @@ test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 > Changing the flavor will lead to a new LoadBalancer creation and deletion of the old LoadBalancer. During this change your applications may become inaccessible.
 >
 
-#### Sharing load balancer with multiple Services
-
-By default, different Services of LoadBalancer type should have different corresponding cloud load balancers. However, the Cloud Controller Manager (CCM) allows multiple Services to share a single load balancer. To do so, you can follow the official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services).
 
 #### Use PROXY protocol to preserve client IP
 
