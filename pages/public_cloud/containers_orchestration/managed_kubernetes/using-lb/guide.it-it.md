@@ -1,7 +1,7 @@
 ---
 title: Using the OVHcloud Managed Kubernetes LoadBalancer
 excerpt: Find out how to use and deploy an OVHcloud Managed Kubernetes LoadBalancer
-updated: 2024-01-04
+updated: 2024-04-30
 ---
 
 ## Objective
@@ -84,7 +84,7 @@ OVHcloud currently provides two types of load balancers that can be used with Ma
 - [Public Load Balancer](https://www.ovhcloud.com/it/public-cloud/load-balancer/), based on the OpenStack Octavia project, this load balancer type can also be used with standard OVHcloud instances. You can choose between three Load Balancer sizes (S,M,L), providing up to 40k requests/second and a 2 Gbits/second bandwidth. Other advantages are the capability to expose your Load Balancer privately (private-to-private) or publicly (public-to-private or public-to-public) using [Floating IPs](https://www.ovhcloud.com/it/public-cloud/floating-ip/), the possibility to collect metrics and TCP/UDP protocols.
 
 > [!warning] 
-> Usage of the [Public Load Balancer](https://www.ovhcloud.com/it/public-cloud/load-balancer/) with a Managed Kubernetes Service is currently in Alpha phase, you can retrieve all the related information and request an access by joining our [Container & Orchestration dedicated Discord channel](https://discord.com/channels/850031577277792286/1143208429872226325).
+> Usage of the [Public Load Balancer](https://www.ovhcloud.com/it/public-cloud/load-balancer/) with a Managed Kubernetes Service is currently in Beta phase, you can retrieve all the related information and request an access by joining our [Container & Orchestration dedicated Discord channel](https://discord.com/channels/850031577277792286/1143208429872226325).
 
 ### Supported annotations
 
