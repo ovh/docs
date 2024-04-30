@@ -51,8 +51,7 @@ As a part of our reslience plan in the Control Plane, we perform backups to main
 
 | **Option** | **granularity** | **RPO** | **RTO** | **Documentation** |
 | --- | --- | --- | --- | --- |
-| Backup of an Instance | Instance | Depends on the date of the last backup and the delay of incident resolution | Depends on the size of the Instance | [Backing up an instance](/pages/public_cloud/compute/save_an_instance)<br>
-[Backups and restoration](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)|
+| Backup of an Instance | Instance | Depends on the date of the last backup and the delay of incident resolution | Depends on the size of the Instance | [Backing up an instance](/pages/public_cloud/compute/save_an_instance)<br>[Backups and restoration](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)|
 
 
 ## 5.Logs
@@ -76,48 +75,51 @@ OVHcloud uses another account with an internal NIC to refer a customer having su
 
 To enforce security access to your account on the Control Panel, we recommend activating a [two-factor authentication mechanism](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) or [SSO(Single Sign-On) authentication](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs).
 
+You can create your OpenStack users and define several roles following [this guide](/pages/public_cloud/compute/create_and_delete_a_user) according to your access management policy.
 
+You have to activate and manage your tokens in order to access [to Keystone API by following this guide.](/pages/public_cloud/compute/managing_tokens)
 
 ### 7.2 Data plane
 
-Once a VM is created by OVHcloud, on which the customer Database engines run, a TLS certificate is generated and used by the customer to access his DB. The certificate is renewed every three months.
+Once you get your credentials, you are autonomous to create user accounts on your OS and applications you've installed.
 
 ## 8.Features and options available at service delivery
 
-### 8.1 High availability
+### 8.1 OS hardening and maintenance
 
-xxxxxx
+Public Cloud Instance is based on OpenStack technology which is managed and maintained by OVHcloud team.
 
-### 8.2 Data encryption
+OVHcloud provides a large catalog of Opereating Systems for Windows and Linux distributions. We undertake to update our catalog with last realses provided by editors.
 
-#### 8.2.1 Encryption made by the OVHcloud teams
+The hardening level applyed refers to the basic version provided the editor. For an advanced hardening level, we recommand you to refer to guidelines publiqhed by each editor.
 
-xxxxxxx
+You have also the possibility to import your own image when you deploy your Instance with a supported format following [this guide](/pages/public_cloud/compute/upload_own_image).    
+
+Finally, you ramain responsible for monitoring your OS and applying necessary updates, [upgrades](/pages/public_cloud/compute/upgrading_operating_system) and security measures on applications you've installed.
+
+### 8.2 Network security
+
+To activate a private connection, you can use the [vRack option](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).  This option could be activated at the first step when you create your Public Cloud Instance (which is recommaned) or after service subcription.<br>
+
+You should filter and allow necessay connections by using IPtables according to your defined project architecture. You can fallow these guides to setup your configurations using [OpenStack CLI](/pages/public_cloud/compute/security_group_private_network), [Horizon interface](/pages/public_cloud/compute/access_and_security_in_horizon) and other [network services available at this link](/pages/public_cloud/public_cloud_network_services).
 
 
-#### 8.2.2 In-use encryption on client side
+### 8.3 Data encryption at rest
+
+To encrypt your data at disk level, you can follow [this guide](https://docs.openstack.org/cinder/pike/configuration/block-storage/volume-encryption.html#create-an-encrypted-volume) when you create a volume storage.
 
 
-### 8.3 xxxxx
-
-xxxxx
-
-### 8.4 vRack option
-
-You can activate the vRack option at the subscription step or afterwards and have your private network for your Database project. The configuration of your private network can be done by following [this link](/pages/public_cloud/public_cloud_databases/databases_08_vrack).
-
-### 8.5 HDS option
+### 8.4 HDS option
 
 The HDS option can be activated on the service.<br>
-This option is available only for "Business" and "Entreprise" plans for this service.<br>
 The subscription to the Business support level is mandatory, at least to maintain necessary requirements.
 
 ## 9.Reversibility
 
-xxxxxx
+To ensure reversibility on the service, you may follow this [specific reversibility policy](/pages/account_and_service_management/reversibility/03-public-cloud-reversibility-policy) to import and export your data in complete autonomy. 
 
 
 ### 9.1 Erasure of customer data
 
-xxxxxx
+Once you destroy your Public Cloud project, in the OVHcloud Control Panel, all allocated resources are relased.
 
