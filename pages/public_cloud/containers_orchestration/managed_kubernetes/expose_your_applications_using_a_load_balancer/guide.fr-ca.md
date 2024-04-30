@@ -422,21 +422,31 @@ kubectl apply -f your-service-manifest.yaml
 > Changing the LoadBalancer class of your Service will lead to the creation of a new Loadbalancer and the allocation of a new Public IP (Floating IP).
 >
 
+### Features not yet supported
+
+#### Sharing load balancer with multiple Services
+
+By default, different Services of LoadBalancer type should have different corresponding cloud load balancers. However, the Cloud Controller Manager (CCM) allows multiple Services to share a single load balancer. We are currently working to provide this feature for General Availability laucnh. Official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services).
+
 ## Resources Naming
 
 When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, the Cloud Controller Manager (CCM) implementation will automatically create Public Cloud resources (LoadBalancer, Listener, Pool, Health-monitor, Gateway, Network, Subnet,...). In order to easily identify those resources, here are the naming templates:
 
+> [!warning]
+>
+> Do not change the name of resources automatically created by MKS, as it may result to inconsistencies.
+>
+
 | Resource                                                           | Naming                                                                                                                 |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Public Cloud Load Balancer                                         | mks_resource_$mks_cluster_shortname_$namespace_$k8s_service_name_$mks-service-id |
-| Listener                                                           | listener_mks_resource_$listener_n°_$mks_cluster_shortname_$namespace_$service-name                                    |
-| Pool                                                               | pool_mks_resource_$pool_n°_$mks_cluster_shortname_$namespace_$service-name                                            |
-| Health-monitor                                                     | monitor_mks_resource_$mks_cluster_shortname_$namespace_$service-name                                                  |
+| Public Cloud Load Balancer                                         | kube_service_$mks_cluster_shortname_$namespace_$k8s_service_name |
+| Listener                                                           | listener_kube_service_$listener_n°_$mks_cluster_shortname_$namespace_$service-name                                    |
+| Pool                                                               | pool_kube_service_$pool_n°_$mks_cluster_shortname_$namespace_$service-name                                            |
+| Health-monitor                                                     | monitor_kube_service_$mks_cluster_shortname_$namespace_$service-name                                                  |
 | Network (only automatically created in Public-to-Public scenario)  | k8s-cluster-$mks_cluster_id                                                                                            |
 | Subnet (only automatically created in Public-to-Public scenario)   | k8s-cluster-$mks_cluster_id                                                                                            |
 | Gateway/Router                                                     | k8s-cluster-$mks_cluster_id                                                                                            |
 | Floating IP                                                        | Name = IP. Description= LB Octavia Name                                                                                |
-
 ## Others resources
 
 - [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
