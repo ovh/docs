@@ -114,11 +114,15 @@ Access your MKS cluster details (by clicking on the cluster name in the MKS clus
 
 In the `Audit Logs`{.action} tab, you can view live audit logs from your cluster.
 
+![Log Data Platform Menu entry](images/Kubernetes1.png){.thumbnail}
+
 In order to activate logs forwarding to LDP, simply click the `Subscribe`{.action} button on the right-hand side of your screen.
 
 #### Step 3 - Select your LDP Account and Data stream
 
 From the dropdown list select the LDP Accounts you want, then select the Data Stream you would like to use from the list and click the `Subscribe`{.action} button.
+
+![Log Data Platform Menu entry](images/Kubernetes2.png){.thumbnail}
 
 Your subscription is now created and your MKS audit logs are forwarded !
 
