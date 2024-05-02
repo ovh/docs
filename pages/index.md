@@ -665,6 +665,8 @@
             + [Logs to customer](public_cloud/public_cloud_databases/databases_16_logs_to_customer)
             + [Getting started with Kubernetes database operator](public_cloud/public_cloud_databases/databases_12_operator)
             + [Cross Service Integration](public_cloud/public_cloud_databases/databases_07_cross_service_integration)
+            + [How to create and manage a Health Monitor for OVHcloud Public Cloud Load Balancer](public_cloud/public_cloud_databases/load_balancer_create_health_monitor)
+            + [How to create and manage Level 7 (L7) Policies and Rules for OVHcloud Public Cloud Load Balancers](public_cloud/public_cloud_databases/load_balancer_create_l7)
         + [MongoDB](products/public-cloud-databases-mongodb)
             + [Guides](public-cloud-databases-mongodb-guides)
                 + [MongoDB - Getting Started](public_cloud/public_cloud_databases/mongodb_13_getting_started)
