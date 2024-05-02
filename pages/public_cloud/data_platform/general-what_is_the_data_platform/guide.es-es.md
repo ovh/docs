@@ -1,7 +1,7 @@
 ---
 title: What is Data Platform ?
 excerpt: ""
-updated: 2023-12-08
+updated: 2024-04-30
 ---
 
 <style>
@@ -103,6 +103,11 @@ updated: 2023-12-08
 }
 </style>
 
+> [!warning]
+>
+> Data Platform is currently only deployed as a beta version. If you experience any difficulties and/or would like to discuss your experience with other users, please contact us on discord <https://discord.gg/ovhcloud>, or get in touch on our community platform: <https://community.ovh.com/en/>.
+> 
+
 ## Welcome to the Data Platform documentation portal !
 
 By following this documentation, you will discover what **the Data Platform** can do for you, uncover how to master its features and functionality, and learn how to use it to its full potential to **build any AI application** you may desire.
@@ -136,12 +141,6 @@ When working with the Data Platform, organizations create their own personal env
 
 A Project contains **all the components you need to manage your data's life cycle**, processes and rules and user access rights to make your data Projects a success. All these components are included in the illustration below. You can click on a component to learn more about it, or simply follow the guide’s logical flow, which will help you use the Data Platform in the most helpful way.
 
-### What is an AI Application ?
-
-So, what is an AI Application, you might ask? At Data Platform, we consider an *AI Application* to be any application that uses data for analytics, dashboarding, alerting, real-time automation, or to gain business insight using artificial intelligence or Machine Learning predictive models.
-
-The data used by an AI Application can come from a variety of sources, including internal databases, ERP systems, IoT, and external datasets such as open-source or public information (weather, news, etc.).
-
 ### Finding Your Way Around This Documentation
 
 We’re excited to have you on board ! There are four sections in this documentation that you can browse to discover the Data Platform, from the most basic to the more advanced. Anyone can use the Data Platform, from non-technical professionals to technical developers.
@@ -152,8 +151,36 @@ We’re excited to have you on board ! There are four sections in this documenta
       <h3 style="color:#2199e8 !important;padding-top:5px !important;">GETTING STARTED</h3>
       <p>You’d like to get up and running as quickly as possible? No problem, we’ve got you covered! Check out this awesome Getting Started tutorial, which will help you build a Project using sample datasets.</p>
    </div>
-   <a href="/pages/public_cloud/data_platform/general-getting_started"></a>
+   <a href="https://docs.forepaas.io/#/en/getting-started/index"></a>
 </div>
+
+<div class="block-step">
+   <img src="images/pict2.png" />
+   <div>
+      <h3 style="color:#2199e8 !important;padding-top:5px !important;">GETTING FURTHER</h3>
+      <p>You can't get enough of the Getting Started guides and want to see hands-on tutorials for more advanced use cases? Check out our Getting Further guide series!</p>
+   </div>
+   <a href="https://docs.forepaas.io/#/en/getting-further/index"></a>
+</div>
+
+<div class="block-step">
+   <img src="images/pict3.png" />
+   <div>
+      <h3 style="color:#2199e8 !important;padding-top:5px !important;">PLATFORM DOCUMENTATION</h3>
+      <p>Starting out with the Platform? Still unsure of what's called what and figuring out how every feature works? This if for you.</p>
+   </div>
+   <a href="https://docs.forepaas.io/#/en/product/index"></a>
+</div>
+
+<div class="block-step">
+   <img src="images/pict4.png" />
+   <div>
+      <h3 style="color:#2199e8 !important;padding-top:5px !important;">DEVELOPER DOCUMENTATION</h3>
+      <p>You're an advanced user and are exploring what's under the hood, check out our component's API Reference and SDK functions.</p>
+   </div>
+   <a href="https://docs.forepaas.io/#/en/technical/index"></a>
+</div>
+
 
 ### Additional Resources
 
