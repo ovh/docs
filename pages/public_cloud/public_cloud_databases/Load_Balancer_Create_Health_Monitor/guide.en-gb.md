@@ -1,8 +1,9 @@
 ---
 title: Creating and Managing a Health Monitor for OVHcloud Public Cloud Load Balancer
 excerpt: Master the setup and management of a Health Monitor with OVHCloud Public Cloud Load Balancers via the OVHcloud interface, CLI, Horizon, and Terraform.
-updated: 2024-04-25
+updated: 2024-05-02
 ---
+
 ## Objective
 
 Learn how to create and manage a Health Monitor for your OVHcloud Load Balancers using various interfaces such as the OVHcloud Control Panel, Command Line Interface (CLI), Horizon, and Terraform.
@@ -67,7 +68,7 @@ When configuring Health Monitors for web applications, keep the following tips i
 - **HTTP Method (`http_method`)**: Use less resource-intensive methods, such as `HEAD` or `GET`, to minimize the impact on server performance.
   
 - **Expected Response Codes (`expected_codes`)**: Configure the HTTP response codes that indicate a server is healthy, typically `200`.
-- 
+
 #### Monitoring and Testing
 
 - **Validation**: Test your configuration by simulating server failures to ensure that the Health Monitor responds as expected.
@@ -78,17 +79,17 @@ By integrating these best practices into your configuration process, you maximiz
 
 #### Monitoring and Optimization
 
-**Adjustments and Best Practices**: To maintain optimal performance, it is recommended to:
+To maintain optimal performance, it is recommended to:
 
 - Regularly monitor the health of your servers and the efficiency of your Load Balancer.
 - Adjust the Health Monitor settings (delay, timeout, max-retries) as needed based on observed performance.
 - Explore optimization strategies based on performance data and feedback.
 
-### Configuring a Health Monitor through Various OVHcloud Interfaces
+### Configuring a Health Monitor through various OVHcloud Interfaces
 
 Depending on the interface chosen, here are the steps to follow:
 
-#### OVHcloud Control Panel
+#### Configuring a Health Monitor via the OVHcloud Control Panel
 
 **Setting up a Health Monitor on OVHcloud Load Balancer**
 
@@ -114,10 +115,10 @@ Follow these steps to add a Health Monitor to a pool of your OVHcloud Load Balan
   - **Expected Code**: Indicate the expected HTTP status codes, which can be a single digit, a list of digits separated by commas, or a range (two digits separated by a hyphen).
 
 - **Test Settings**:
- - **Max Retries Down**: Number of connection failures allowed before marking the member as failing (between 1 and 10, default 3).
- - **Delay**: Interval between two tests of the Health Monitor (must be greater than the timeout).
- - **Max Retries**: Total number of connection failures allowed before marking the member as inactive (between 1 and 10).
- - **Timeout**: Duration after which a test stops (must be equal to or greater than the periodicity).
+  - **Max Retries Down**: Number of connection failures allowed before marking the member as failing (between 1 and 10, default 3).
+  - **Delay**: Interval between two tests of the Health Monitor (must be greater than the timeout).
+  - **Max Retries**: Total number of connection failures allowed before marking the member as inactive (between 1 and 10).
+  - **Timeout**: Duration after which a test stops (must be equal to or greater than the periodicity).
 
 6. Once all the information is filled in, click on `Add`{.action} to activate your Health Monitor.
 
