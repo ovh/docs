@@ -89,12 +89,12 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
 - Pour accéder aux options de gestion des politiques L7 d'un listener spécifique, cliquez sur les trois petits points (...) situés à droite du listener que vous souhaitez configurer. 
 - Sélectionnez l'option « **Voir les L7 policies** » dans le menu déroulant.
 
-![Schema 1](images/Policy1.png)
+![Schema 1](images/Policy1.png){.thumbnail}
 
 - **Note importante :** La gestion des politiques L7 n'est disponible que pour les listeners utilisant les protocoles `HTTP` et `TERMINATED HTTPS`. Assurez-vous que votre listener utilise l'un de ces protocoles avant de tenter d'accéder à ces paramètres.
 - Une fois dans la section des politiques L7, vous pouvez voir les politiques existantes ou cliquer sur « **Ajouter une L7 policy** » pour créer une nouvelle politique, selon les options disponibles dans l'interface.
 
-![Schema 1](images/Policy2.png)
+![Schema 1](images/Policy2.png){.thumbnail}
 
 ##### Remplissage du formulaire de création de politique L7
 
@@ -108,11 +108,11 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
   - `REDIRECT_PREFIX` : Ici, le Load Balancer ajoute un préfixe à l'URL reçue dans la requête. Remplissez le champ `Préfixe` et choisissez le code de réponse HTTP approprié pour la redirection.
   - `REJECT` : Rejette les requêtes et retourne le code HTTP 403 (Forbidden).
 
-![Schema 1](images/Policy3.png)
+![Schema 1](images/Policy3.png){.thumbnail}
 
 - Après avoir rempli tous les champs nécessaires, cliquez sur **Ajouter** pour créer votre politique L7.
 
-![Schema 1](images/Policy4.png)
+![Schema 1](images/Policy4.png){.thumbnail}
 
 #### 4. **Ajout de règles spécifiques à une politique L7**
 
@@ -122,12 +122,12 @@ Après avoir créé une L7 policy, vous pouvez y ajouter des règles pour préci
    - Sur la page des politiques L7 de votre listener, localisez la politique pour laquelle vous souhaitez ajouter des règles.
    - Cliquez sur les trois petits points (...) à côté de la politique concernée et sélectionnez « Gérer les L7 rules ».
 
-![Schema 1](images/Policy5.png)
+![Schema 1](images/Policy5.png){.thumbnail}
 
 2. **Ajouter une nouvelle règle L7** :
    - Sur la page des règles L7, cliquez sur le bouton « Ajouter une L7 rule ».
 
-![Schema 1](images/Policy6.png)
+![Schema 1](images/Policy6.png){.thumbnail}
 
    - Une L7 rule est un test logique qui renvoie les statuts "True" ou "False". Pour déclencher l'action de la politique, toutes les règles doivent retourner "True".
 
@@ -155,12 +155,12 @@ Après avoir créé une L7 policy, vous pouvez y ajouter des règles pour préci
 
    -  **SSL BN Field**: Examine les champs de noms de certificat SSL pour des correspondances spécifiques.
      
- ![Schema 1](images/Policy7.png)
+ ![Schema 1](images/Policy7.png){.thumbnail}
  
 5. **Enregistrement de la règle** :
    - Une fois tous les champs remplis selon vos critères, cliquez sur « Ajouter » pour enregistrer la règle à votre politique L7.
      
- ![Schema 1](images/Policy8.png)
+ ![Schema 1](images/Policy8.png){.thumbnail}
  
 ### Conseils pour la configuration des règles L7
 

@@ -1,29 +1,33 @@
 ---
-title: "Creation and Management of Level 7 (L7) Policies and Rules for OVHcloud Public Cloud Load Balancers"
+title: "How to create and manage Level 7 (L7) Policies and Rules for OVHcloud Public Cloud Load Balancers"
 excerpt: "Learn how to configure and manage Level 7 (L7) Policies and Rules for OVHcloud Public Cloud Load Balancers"
 updated: 2024-04-25
 ---
 
 ## Objective
 
-**This guide explains how to configure and manage Level 7 (L7) policies and rules for Public Cloud Load Balancers in the OVHcloud environment.** Using L7 capabilities allows for intelligent traffic routing based on the content of HTTP/HTTPS requests, thereby enhancing the security, performance, and reliability of your applications.
+Using L7 capabilities allows for intelligent traffic routing based on the content of HTTP/HTTPS requests, thereby enhancing the security, performance, and reliability of your applications.
+
+**This guide explains how to configure and manage Level 7 (L7) policies and rules for Public Cloud Load Balancers in the OVHcloud environment.**
 
 ## Requirements
 
-- **OVHcloud Account:** Access to a Public Cloud project at OVHcloud.
-- Understanding of [Public Cloud Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer).
-- **Public Cloud Load Balancer:** A Load Balancer that is already configured and operational. See [Setting Up a Public Cloud Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
+- An [active OVHcloud account](/links/manager)
+- Understanding of the [Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer)
+- An active [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)
+- A previously configured [Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) within your OVHcloud project space
 
 ## Instructions
 
-To configure your load balancer at OVHcloud, several management options are available. You don't need to use all of them, but it is necessary to choose at least one according to your preferences:
+To configure your Load Balancer at OVHcloud, several management options are available. You don't need to use all of them, but it is necessary to choose at least one according to your preferences:
 
-- **Access to OVHcloud Manager:** Allows management via the graphical interface, ideal for those who prefer a visual and intuitive approach.
-- **CLI OpenStack:** For command line management. More information on preparing your OpenStack API environment is available [here](https://help.ovhcloud.com/csm/fr-public-cloud-compute-prepare-openstack-api-environment?id=kb_article_view&sysparm_article=KB0050995).
-- **Horizon Interface:** Offers graphical management via OpenStack for users familiar with this platform. Additional details [here](https://help.ovhcloud.com/csm/fr-public-cloud-compute-horizon?id=kb_article_view&sysparm_article=KB0050895).
-- **Terraform:** Enables management via Infrastructure as Code, useful for automating and reproducing environments through code files. Information on the OVH provider for Terraform available [here](https://registry.terraform.io/providers/ovh/ovh/latest/docs).
+- **OVHcloud Control Panel:** Allows management via the graphical interface, ideal for those who prefer a visual and intuitive approach.
+- **OpenStack CLI:** For command line management. More information on preparing your OpenStack API environment is available [here](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- **Horizon Interface:** Offers graphical management via OpenStack for users familiar with this platform. Additional details [here](/pages/public_cloud/compute/introducing_horizon).
+- **Terraform:** Enables management via Infrastructure as Code, useful for automating and reproducing environments through code files. Information on the OVH provider for Terraform is available [here](https://registry.terraform.io/providers/ovh/ovh/latest/docs).
 
-Each method offers specific advantages, allowing you to customize the management of your load balancer according to your needs and technical expertise.
+Each method offers specific advantages, allowing you to customize the management of your Load Balancer according to your needs and technical expertise.
+
 ### Key Concepts Detail
 #### L7 Policies and Rules
 
@@ -31,6 +35,7 @@ Each method offers specific advantages, allowing you to customize the management
   A directive applied to a Load Balancer listener to control traffic based on specific criteria, such as URI, HTTP headers, or cookies. Possible actions include redirecting to a specific URL or server pool, or rejecting the request.
 
   **The order of evaluation of L7 policies is important and is determined by the position parameter of each policy.**
+
   Policies are evaluated in a specific order defined by the position attribute, where the first matching policy is the one whose action is followed. If multiple L7 policies are associated with a listener, the position parameter becomes crucial to determining the order of evaluation.
 
   Reject policies (REJECT) take precedence over all others, followed by redirects to a URL (REDIRECT_TO_URL) and then redirects to a pool (REDIRECT_TO_POOL). If a matching policy is found, its action is executed.
@@ -38,7 +43,7 @@ Each method offers specific advantages, allowing you to customize the management
   If no policy matches, the request is directed to the listener's default pool, or a 503 error is returned if no default pool exists.
 
   - **Main characteristics:**
-    - **action**: The action to be performed (e.g., redirect, reject).
+    - **action**: The action to be performed (e.g. redirect, reject).
     - **redirect_http_code**: The HTTP code used during redirection.
     - **redirect_pool_id**: The ID of the server pool to redirect to.
     - **redirect_prefix**: The prefix to add to the URL during a redirection.
@@ -48,12 +53,13 @@ Each method offers specific advantages, allowing you to customize the management
 
 - **L7 Rule:**
   The underlying condition of an L7 policy, which defines the specific criteria for matching traffic, such as a URI or cookie match. Multiple rules can be associated with a policy, and all must match (AND logic) for the policy's action to be applied. To express a logical OR operation between rules, it is necessary to create multiple policies with the same action.
-
+-
   - **Main characteristics:**
-    - **type**: The type of condition (e.g., HEADER, COOKIE, URI).
-    - **compare_type**: The type of comparison (e.g., EQUAL_TO, STARTS_WITH).
+    - **type**: The type of condition (e.g. HEADER, COOKIE, URI).
+    - **compare_type**: The type of comparison (e.g. EQUAL_TO, STARTS_WITH).
     - **value**: The value to compare.
     - **key**: The specific key to compare, if applicable.
+
 ### Examples of L7 Policy and L7 Rules
 
 - **L7 Policy Example:**
@@ -68,17 +74,18 @@ Each method offers specific advantages, allowing you to customize the management
 
 This example demonstrates how to redirect traffic from `/oldpath` to `https://example.com/newpath` with a HTTP 302 redirect code when the URI starts with `/oldpath`.
 
-### Step 1: Configuration via the OVHcloud Customer Space
+### Step 1: Configuration via the OVHcloud Control Panel
 
 Configuring L7 policies and rules via the OVHcloud customer space allows you to manage your Load Balancer in an intuitive and graphical manner. Here are the detailed steps to follow:
-#### 1. **Access the OVHcloud Customer Space**
 
-- Go to the [OVHcloud site](https://www.ovh.com/manager/) and log in with your credentials.
+#### 1. **Access the OVHcloud Control Panel**
+
+- Go to the [OVHcloud website](/links/manager) and log in with your credentials.
 - Once in your customer space, you will have an overview of all your OVHcloud services.
 
 #### 2. **Navigate to the Load Balancer**
 
-- In the sidebar of your customer space, click on the "**Public Cloud**" tab.
+- In the sidebar of your Control Panel, click on the "**Public Cloud**" tab.
 - Select the desired Public Cloud project if you have multiple.
 - Find and select "**Load Balancer**" in the "**Network**" section or use the quick search function.
 - You will see a list of your Load Balancers. Click on the one you wish to configure.
@@ -86,15 +93,15 @@ Configuring L7 policies and rules via the OVHcloud customer space allows you to 
 #### 3. **Manage L7 Policies**
 
 - After selecting your Load Balancer, you will access its management interface. Find and click on the "**listeners**" tab to display the list of listeners.
-- To access the management options for L7 policies of a specific listener, click on the three small dots (...) located to the right of the listener you want to configure.
+- To access the management options for L7 policies of a specific listener, click on the `...`{.action} button to the right of the listener you want to configure.
 - Select the "**View L7 policies**" option from the dropdown menu.
 
-![Schema 1](images/Policy1.png)
+![Schema 1](images/Policy1.png){.thumbnail}
 
 - **Important Note:** The management of L7 policies is only available for listeners using the `HTTP` and `TERMINATED HTTPS` protocols. Ensure your listener uses one of these protocols before attempting to access these settings.
 - Once in the L7 policies section, you can view existing policies or click on "**Add an L7 policy**" to create a new policy, depending on the options available in the interface.
 
-![Schema 1](images/Policy2.png)
+![Schema 1](images/Policy2.png){.thumbnail}
 
 ##### Filling out the form to create an L7 policy
 
@@ -103,35 +110,36 @@ Configuring L7 policies and rules via the OVHcloud customer space allows you to 
 - **Position:** Specify the policy's position in the order of evaluation. Positions start at 1 and determine the order in which policies are evaluated.
 
 - **Action:** Select the action that the policy should execute when the conditions are met. The options include:
-  - `REDIRECT_TO_URL`: Redirects requests to a specified URL. You will need to provide the redirect URL and select the HTTP response code (e.g., 301, 302, 303, 307, or 308).
+  - `REDIRECT_TO_URL`: Redirects requests to a specified URL. You will need to provide the redirect URL and select the HTTP response code (e.g. 301, 302, 303, 307, or 308).
   - `REDIRECT_TO_POOL`: Redirects requests to a specified server pool. A dropdown named `pool` will appear where you can choose your pool. Ensure you have pre-configured existing pools.
   - `REDIRECT_PREFIX`: Here, the Load Balancer adds a prefix to the URL received in the request. Fill in the `Prefix` field and choose the appropriate HTTP response code for the redirection.
   - `REJECT`: Rejects requests and returns the HTTP 403 (Forbidden) code.
 
-![Schema 1](images/Policy3.png)
+![Schema 1](images/Policy3.png){.thumbnail}
 
 - After filling in all the necessary fields, click on "**Add**" to create your L7 policy.
 
-![Schema 1](images/Policy4.png)
+![Schema 1](images/Policy4.png){.thumbnail}
+
 #### 4. **Adding Specific Rules to an L7 Policy**
 
 After creating an L7 policy, you can add rules to specify the conditions under which this policy should activate. Here are the steps to add L7 rules to an existing policy:
 
 1. **Accessing L7 Policy Options**:
    - On the L7 policies page of your listener, locate the policy to which you want to add rules.
-   - Click on the three small dots (...) next to the relevant policy and select "Manage L7 rules".
+   - Click on the `...`{.action} button next to the relevant policy and select `Manage L7 rules`{.action}.
 
-![Schema 1](images/Policy5.png)
+![Schema 1](images/Policy5.png){.thumbnail}
 
 2. **Add a New L7 Rule**:
-   - On the L7 rules page, click on the "Add an L7 rule" button.
+   - On the L7 rules page, click on the button `Add an L7 rule`{.action} button.
 
-![Schema 1](images/Policy6.png)
+![Schema 1](images/Policy6.png){.thumbnail}
 
    - An L7 rule is a logical test that returns "True" or "False" statuses. To trigger the policy's action, all rules must return "True".
 
 3. **Configuring the L7 Rule**:
-   - **Type of L7 Rule**: Select the type of rule you want to create (e.g., Cookie, Header, Host name, Path, etc.).
+   - **Type of L7 Rule**: Select the type of rule you want to create (e.g. Cookie, Header, Host name, Path, etc.).
    - **Comparison Type**: Choose how you want to compare the data (Regex, starts with, ends with, contains, equal to).
    - **Key**: For certain types of rules like Cookie or Header, specify the key to evaluate.
    - **Value**: Indicate the value used by the comparison type.
@@ -147,12 +155,13 @@ After creating an L7 policy, you can add rules to specify the conditions under w
    - **File Type**: Analyzes the file type in the URI to identify specific extensions.
    - **SSL BN Field**: Examines SSL certificate name fields for specific matches.
 
-![Schema 1](images/Policy7.png)
+![Schema 1](images/Policy7.png){.thumbnail}
 
 5. **Saving the Rule**:
-   - Once all fields are filled in according to your criteria, click "Add" to save the rule to your L7 policy.
+   - Once all fields are filled in according to your criteria, click `Add`{.action} to save the rule to your L7 policy.
 
-![Schema 1](images/Policy8.png)
+![Schema 1](images/Policy8.png){.thumbnail}
+
 ### Tips for Configuring L7 Rules
 
 - **Test each rule individually**: Before combining multiple rules, ensure that each rule functions as intended by testing it in various scenarios.
@@ -160,6 +169,7 @@ After creating an L7 policy, you can add rules to specify the conditions under w
 - **Monitor the impact of rules**: After activating the rules, monitor the traffic behavior to ensure that they are working as expected without blocking legitimate traffic.
 
 ### Step 2: Using the OpenStack CLI and Horizon
+
 The OpenStack CLI and Horizon graphical interface offer alternatives to the OVHcloud client interface for managing L7 policies and rules.
 
 #### Using the OpenStack CLI
@@ -185,7 +195,7 @@ The OpenStack CLI allows you to manage your cloud resources via commands execute
      ```bash
      openstack loadbalancer l7rule create --type <TYPE> --compare-type <COMPARE_TYPE> --value '<VALUE>' <POLICY_ID>
      ```
-   - Examples of rule types include `PATH`, `HEADER`, `COOKIE`, etc., and comparison types can be `REGEX`, `STARTS_WITH`, `ENDS_WITH`, `EQUAL_TO`, `CONTAINS`.
+   - Examples of rule types include `PATH`, `HEADER`, `COOKIE`, etc. and comparison types can be `REGEX`, `STARTS_WITH`, `ENDS_WITH`, `EQUAL_TO`, `CONTAINS`.
 
 5. **Verify the Creation of the Rule**:
    - To confirm that the rule has been correctly added to your L7 policy, you can list the rules associated with the policy:
@@ -196,6 +206,7 @@ The OpenStack CLI allows you to manage your cloud resources via commands execute
 By following these steps, you can effectively configure and manage L7 policies and rules for your Load Balancers using the OpenStack CLI, offering a flexible and powerful approach for advanced network traffic control.
 
 Here is an example of the command output format:
+
 ```shell
 | id       | default_pool_id | name                           | project_id | protocol | protocol_port | admin_state_up |
 |----------|-----------------|--------------------------------|------------|----------|---------------|----------------|
@@ -208,23 +219,25 @@ Here is an example of the command output format:
 - **default_pool_id**: ID of the default pool (where the listener sends traffic by default).
 - **name**: Name of the listener.
 - **project_id**: ID of the project associated with this listener.
-- **protocol**: The protocol used by the listener (e.g., HTTP, HTTPS).
+- **protocol**: The protocol used by the listener (e.g. HTTP, HTTPS).
 - **protocol_port**: The port on which the listener listens.
 - **admin_state_up**: Indicates whether the listener is enabled (`True`) or disabled (`False`).
 
 ### Creating a New L7 Policy
 
-Use the following command to create a new L7 policy, replacing `mon-listener-id` with your listener's ID and `https://monsite.com` with the desired redirect URL:
+Use the following command to create a new L7 policy, replacing `mon-listener-id` with your listener's ID and `https://example.com` with the desired redirect URL:
 
 ```bash
 openstack loadbalancer l7policy create \
   --name ma-politique-l7 \
   --listener mon-listener-id \
   --action REDIRECT_TO_URL \
-  --redirect-url https://monsite.com
+  --redirect-url https://example.com
 ```
 #### Management via Horizon
+
 Horizon, the OpenStack web interface, offers a graphical view on the configuration of your cloud resources, including Load Balancers and L7 policies:
+
 ##### Navigation
 
 - In the Horizon dashboard, select "**Project > Network > Load Balancers**" to display the list of available Load Balancers.
@@ -239,22 +252,23 @@ Horizon, the OpenStack web interface, offers a graphical view on the configurati
 2. **Managing Listeners**:
    - Find the listener to which you want to add L7 policies and click on it to access its details.
    - In the listener's details, locate and click on the `L7 policies` tab. This tab lists all existing policies.
-   - To add a new policy, click on the `Create L7 Policy` button.
+   - To add a new policy, click on the `Create L7 Policy`{.action} button.
 
 3. **Creating the L7 Policy**:
    - You will be guided through a form to define:
      - **Policy Name**: Assign a unique name to the policy.
-     - **Action**: Choose the action that the policy should execute (e.g., REDIRECT_TO_URL, REDIRECT_TO_POOL, REJECT).
+     - **Action**: Choose the action that the policy should execute (e.g. REDIRECT_TO_URL, REDIRECT_TO_POOL, REJECT).
      - **Specific Conditions**: Define any specific criteria that must be met for the policy to be activated.
 
 4. **Adding Rules to the Policy**:
    - Once the policy is created, to add specific rules to this policy, return to the L7 policy details screen.
-   - Click on `Add Rule` to set up the rules that will determine the specific conditions under which the policy will apply.
+   - Click on `Add Rule`{.action} to set up the rules that will determine the specific conditions under which the policy will apply.
      - You will be prompted to specify criteria such as the type of condition (URI, Header, Cookie), the type of comparison (EQUAL_TO, STARTS_WITH, etc.), and the values to compare.
+
 ### Management Tools
 
 - **CLI (Command Line Interface)**: Ideal for those who prefer a scriptable and rapid approach to configuration management.
-- **Horizon (Graphical Interface)**: Perfect for those who favor an intuitive visual interface for navigation and configuration management. Horizon is particularly useful for users less familiar with command-line operations.
+- **Horizon (Graphical Interface)**: Perfect for those who favor an intuitive visual interface for navigation and configuration management. Horizon is particularly useful for users less familiar with command line operations.
 
 Whether you choose the CLI for its speed and flexibility in scripting, or Horizon for its ease of use and intuitive graphical interface, these tools significantly enhance your ability to finely manage incoming traffic on your applications deployed at OVHcloud.
 
@@ -270,6 +284,7 @@ Automated configuration with Terraform enables you to deploy and manage cloud re
 #### Configuration of an HTTPS Redirection Policy
 
 The following example shows how to define a Terraform resource to create an L7 policy that redirects all HTTP requests to HTTPS:
+
 ```hcl
 # Define the OpenStack provider
 provider "openstack" {
