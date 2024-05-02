@@ -1,7 +1,7 @@
 ---
 title: Création et gestion d'un Health Monitor pour le Load Balancer Public Cloud OVHcloud
 excerpt: Maitriser la mise en place et la gestion d'un Health Monitor avec les Load Balancers Public Cloud OVHCloud via l'espace OVHcloud,CLI,Horizon et Terraform.
-updated: 2024-04-30
+updated: 2024-04-19
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Apprenez à créer et à gérer un Health Monitor pour vos Load Balancers OVHclo
 - Un compte OVHcloud actif.
 - Comprendre les concepts d'un load balancer : voir [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
 - Un projet Public Cloud chez OVHcloud avec un accès fonctionnel.
-- Un Load Balancer [déjà configuré](https://help.ovhcloud.com/csm/fr-public-cloud-network-getting-started-load-balancer?id=kb_article_view&sysparm_article=KB0050200) dans votre espace projet OVHcloud
+- Un Load Balancer [déjà configuré](https://help.ovhcloud.com/csm/fr-public-cloud-network-getting-started-load-balancer?id=kb_article_view&sysparm_article=KB0050200) dans votre espace projet OVHcloud]
 
 ## En pratique
 ### Création d’un Health Monitor
@@ -107,12 +107,12 @@ Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balan
 4. **Accès aux Pools**
    - Allez dans l'onglet "Pools", puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
      
-![Schema 1](images/healthM1.png){.thumbnail}
+![Schema 1](images/healthM1.png)
 
 5. **Configuration du Health Monitor**
    - Cliquez sur l'onglet "Health Monitors" au sein du détail du Pool, puis sur "Ajouter un Health Monitor".
 
-![Schema 1](images/healthM2.png){.thumbnail}
+![Schema 1](images/healthM2.png)
 
    - **Informations générales**:
      - **Nom**: Doit contenir uniquement des lettres, nombres, underscores, tirets ou points.
@@ -131,7 +131,7 @@ Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balan
 6. **Validation**
    - Une fois toutes les informations renseignées, cliquez sur "Ajouter" pour activer votre Health Monitor.
      
-![Schema 1](images/healthM3.png){.thumbnail}
+![Schema 1](images/healthM3.png)
 
 Ce processus crée un Health Monitor qui effectuera régulièrement des contrôles d'intégrité sur chaque membre du pool, utilisant les résultats pour déterminer si le membre doit recevoir de nouvelles connexions. Un seul Health Monitor peut être défini pour chaque pool.
 
