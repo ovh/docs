@@ -1,7 +1,7 @@
 ---
-title: 'Guide : Création et Gestion des Policies et Règles de Niveau 7 (L7) pour les Load Balancers Public Cloud OVHcloud'
-excerpt: 'Découvrez comment configurer et gérer des Policies et règles de niveau 7 (L7) pour les Load Balencers Public Cloud OVHcloud'
-updated: 2024-04-17
+title: "Création et Gestion des Policies et Règles de Niveau 7 (L7) pour les Load Balancers Public Cloud OVHcloud"
+excerpt: "Découvrez comment configurer et gérer des Policies et règles de niveau 7 (L7) pour les Load Balencers Public Cloud OVHcloud"
+updated: 2024-04-25
 ---
 ## Objectif
 
@@ -73,7 +73,7 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
 
 #### 1. **Accéder à l'espace client OVHcloud**
 
-- Allez sur le [site d'OVHcloud](https://www.ovh.com/manager/) et connectez-vous avec vos identifiants.
+- Allez sur le [site d'OVHcloud](/links/manager) et connectez-vous avec vos identifiants.
 - Une fois dans votre espace client, vous aurez une vue d'ensemble de tous vos services OVHcloud.
 
 #### 2. **Naviguer vers le Load Balancer**
