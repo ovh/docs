@@ -1,6 +1,6 @@
 ---
-title: 'Hardware diagnostics'
-excerpt: 'Find out how to use diagnostic tools to identify hardware failures on your server'
+title: "Hardware diagnostics"
+excerpt: "Find out how to use diagnostic tools to identify hardware failures on your server"
 updated: 2022-12-15
 ---
 
@@ -48,7 +48,7 @@ for file in 1Mb 10Mb 100Mb 1Gb ; do time curl -4f https://proof.ovh.net/files/${
 The memory test checks the integrity of your server's RAM modules. If the server crashes during this test, then it means that the one or more of your RAM modules is faulty.
 
 > [!warning]
-> Warning, this test can be very long.
+> Keep in mind that this test can take a long time to complete.
 
 ```bash
 RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
