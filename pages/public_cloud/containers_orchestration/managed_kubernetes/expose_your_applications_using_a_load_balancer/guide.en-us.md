@@ -432,6 +432,7 @@ When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, t
 > Do not change the name of resources automatically created by MKS, as it may result to inconsistencies.
 >
 
+
 | Resource                                                           | Naming                                                                                                                 |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Public Cloud Load Balancer                                         | kube_service_$mks_cluster_shortname_$namespace_$k8s_service_name |
@@ -443,7 +444,7 @@ When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, t
 | Gateway/Router                                                     | k8s-cluster-$mks_cluster_id                                                                                            |
 | Floating IP                                                        | Name = IP. Description= LB Octavia Name                                                                                |
 
-## Others resources
+## Other resources
 
 - [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
 - [Using Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)
