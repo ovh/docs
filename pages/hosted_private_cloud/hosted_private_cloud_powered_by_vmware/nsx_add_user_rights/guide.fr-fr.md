@@ -20,28 +20,28 @@ details[open]>summary::before {
 
 ## Objective
 
-Ce guide permet de vous expliquer comment ajouter les droits à un utilisateur de votre organisation "Hosted Private Cloud" OVH pour accéder à la console Web NSX-T.
+Ce guide permet de vous expliquer comment ajouter les droits à un utilisateur pour accéder à la console Web NSX-T de votre Hosted Private Cloud - VMware On OVHcloud.
 
-Ces droits sont données depuis la console [OVH Manager](https://www.ovh.com/manager).
+Ces droits sont données depuis la console [OVHcloud Manager](https://www.ovh.com/manager).
 
 
 ## Requirements
 
 - Avoir souscrit une offre [Hosted Private Cloud](https://www.ovhcloud.com/en/hosted-private-cloud/vmware/)
 avec les options **"Network Security Virtualization"** ou **"Software-Defined Datacenter"** 
-- Se connecter à votre compte OVH (Si vous ne savez pas: suivez cette documentation : [Se connecter à votre compte OVH](https://help.ovhcloud.com/csm/en-account-log-in-ovhcloud-control-panel?id=kb_article_view&sysparm_article=KB0043032)</summary>
+- Se connecter à votre compte OVHcloud (Si vous ne savez pas: suivez cette documentation : [Se connecter à votre compte OVHcloud](https://help.ovhcloud.com/csm/en-account-log-in-ovhcloud-control-panel?id=kb_article_view&sysparm_article=KB0043032)</summary>
 - Être contact administrateur de l'infrastructure VMware on OVHcloud, celui-ci recevant les identifiants de connexion.
 - Avoir lu cette documentation : [Premiers pas avec NSX](https://help.ovhcloud.com/csm/fr-vmware-nsx-first-steps?id=kb_article_view&sysparm_article=KB0056837)
 
 ## Instructions
 
-### Etape 1 : Accéder à votre Organisation privée
+### Etape 1 : Accéder à votre Hosted Private Cloud - VMware On OVHcloud
 <details>
 
-<summary>Comment accéder à votre organisation privée ?</summary>
+<summary>Comment accéder à votre Hosted Private Cloud - VMware On OVHcloud ?</summary>
 
-1. Dans la console OVH Manager allez dans la section du bandeau central : `Hosted Private Cloud`
-- <ins>Lien OVH</ins> : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX -> Remplacez le par le nom de vôtre organization privée.
+1. Dans la console OVHcloud Manager allez dans la section du bandeau central : `Hosted Private Cloud`
+- <ins>Lien OVHcloud</ins> : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX -> Remplacez le par le nom de vôtre organization privée.
 </summary>
 
 ![NSX catures](images/nsx_user_rights_7.png){.thumbnail}
@@ -119,7 +119,7 @@ avec les options **"Network Security Virtualization"** ou **"Software-Defined Da
 <summary>
 
 5. Toujours depuis votre arborescence Hosted Private Cloud, Cliquez sur : `"VMware" -> XXX-XXX..`
--  <ins>Lien OVH</ins> : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX -> Remplacez le par le nom de vôtre organization privée.
+-  <ins>Lien OVHcloud</ins> : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX -> Remplacez le par le nom de vôtre organization privée.
 </summary>
 
 ![NSX catures](images/nsx_user_rights_9.png){.thumbnail}
@@ -133,10 +133,10 @@ avec les options **"Network Security Virtualization"** ou **"Software-Defined Da
 </details>
 
 ## Go further
-Allez plus loin avec nos offres réseaux VMware managé par OVH : ["Contactez Nous"](https://www.ovhcloud.com/fr/contact/)
+Allez plus loin avec nos offres réseaux VMware managé par OVHcloud : ["Contactez Nous"](https://www.ovhcloud.com/fr/contact/)
 - Vous pouvez poursuivre avec cette documentation : [Gestion des ségments dans NSX](https://help.ovhcloud.com/csm/fr-vmware-nsx-segment-management?id=kb_article_view&sysparm_article=KB0056848)
 - Ainsi que la [FAQ NSX](https://help.ovhcloud.com/csm/fr-vmware-nsx-faq?id=kb_article_view&sysparm_article=KB0058413)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur le lien "Contactez nous"  ci-dessus pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Vous pouvez aussi vous joindre à notre communité d'utilisateurs OVH sur :  <https://community.ovh.com/en/>.
+Vous pouvez aussi vous joindre à notre communité d'utilisateurs OVHcloud sur :  <https://community.ovh.com/en/>.
