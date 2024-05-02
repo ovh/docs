@@ -4,6 +4,20 @@ excerpt: "Ajouter les droits à un utilisateur pour accéder à la console NSX"
 updated: 2023-04-24
 ---
 
+<style>
+details>summary {
+	color:rgb(33, 153, 232) !important;
+	cursor: pointer;
+}
+details>summary::before {
+	content:'\25B6';
+	padding-right:1ch;
+}
+details[open]>summary::before {
+	content:'\25BC';
+}
+</style>
+
 ## Objective
 
 Ce guide permet de vous expliquer comment ajouter les droits à un utilisateur de votre organisation "Hosted Private Cloud" OVH pour accéder à la console Web NSX-T.
