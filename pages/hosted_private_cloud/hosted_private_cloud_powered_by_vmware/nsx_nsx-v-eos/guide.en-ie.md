@@ -6,7 +6,7 @@ updated: 2024-04-15
 
 ## Objective
 
-You are using the VMware NSX-V component (Network and Security Virtualization); we inform you that this component will no longer be maintained by OVHcloud as of July 31, 2024, and will therefore be deactivated on that date.
+You are using the VMware NSX-V component (Network and Security Virtualization); we inform you that this component will no longer be maintained by OVHcloud as of **July 31 2024**, and will therefore be deactivated on that date.
 
 This guide helps you analyse your use of NSX-V features and therefore offers you different evolution scenarios: From disabling the NSX-V component to migrating to its successor NSX-T (named NSX by VMware since version 4.0).
 
@@ -16,30 +16,29 @@ This guide helps you analyse your use of NSX-V features and therefore offers you
 
 To identify your usage of the NSX-V feature in your Hosted Private Cloud environment, you have to ask yourself the following questions:
 
-- Am I using VXLAN?
+- Am I using `VXLAN` ?
 
 ![NSX VXLAN](images/vxlan.gif){.thumbnail}
 
-- Am I using a Distributed Firewall rules?
+- Am I using a `Distributed Firewall rules` ?
 
 ![NSX DFW](images/DFW.gif){.thumbnail}
 
-- Am I using a Distributed Logical Router or an Edge Services Gateway?
+- Am I using a `Distributed Logical Router` or an `Edge Services Gateway` ?
 
 ![NSX EDGES](images/dlr-edge.gif){.thumbnail}
 
 - Am I using an SSL VPN?
+
 From latest version of NSX-v the features was already disabled. 
 
 #### I do not use any of the NSX-V features
 
-We will disable NSX-V from 31 March 2024 if you are not using any NSX-V features.
+We will disable NSX-V from **31 March 2024** if you are not using any NSX-V features.
 
 Regardless of your Hosted Private Cloud range, if you want to disable NSX-V, you won't have to migrate to a new Datacentre. You will be able to keep your current resources. For the maintenance task to run properly and deactivate NSX-V, you need to make sure to clean the NSX-V environnement.
 
-Make sure to remove all NSX-V EDGES (DLR or Gateway).
-
-You should remove all the NSX-V Edges, Distributed Logical Gateway and Edges Services Gateway.
+Make sure to remove all `NSX-V EDGES` (DLR or Gateway).
 
 ![NSX Edges](images/remove-Edges.gif){.thumbnail}
 
@@ -60,7 +59,7 @@ At the end, you can use the API call to check that you have cleaned NSX-V:
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/generateNsxvInventory~POST
 >
 
-> **Parameters:**
+> **Parameters to use :**
 >
 > serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
 
@@ -102,7 +101,7 @@ You will be notified when the deactivation process is available. After the previ
 From the `Networks`{.action} view on the vSphere UI console, right-click on the VXLAN portgroup where your Virtual Machines are located and select `Migrate the VMs to another network...`{.action}.
 
 > [!primary]
-> In this example, we will migrate the VMs to the VLAN10 portgroup, which is located on the vRack. You must migrate all VMs to portgroups in order to disable NSX-v (or if OVHcloud detects that NSX-v is not in use).
+> In this example, we will migrate the VMs to the VLAN10 portgroup, which is located on the vRack. You must migrate all VMs to portgroups in order to disable NSX-v (or if OVHcloud detects that NSX-v is not > in use).
 
 ![NSX DVS](images/migration.gif){.thumbnail}
 
