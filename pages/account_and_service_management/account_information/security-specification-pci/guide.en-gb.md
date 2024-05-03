@@ -6,7 +6,7 @@ updated: 2024-05-01
 
 ## Objective
 
-In addition to [the responsibility model for Public Cloud Instance](/pages/public_cloud/compute/responsibility-model-instances), this security fact sheets aims at describing security features and functions associated to the service. It also describes the best practices that customers can adopt to secure their instances based on OpenStack technology.
+In addition to [the responsibility model for Public Cloud Instance](/pages/public_cloud/compute/responsibility-model-instances), this security fact sheets aims at describing security features and functions associated to the service. It also describes best practices that customers can adopt to secure their instances based on OpenStack technology.
 
 ### 1. Certifications
 
@@ -26,9 +26,9 @@ In addition to [the responsibility model for Public Cloud Instance](/pages/publi
 
 When you sign up for the service, we recommend that you use SSH keys to access your Instance (rather than a login/password) for a better authentication security level for your administrators and to change it regularly. For more information on how to manage your SSH keys, consult this [guide](/pages/public_cloud/compute/public-cloud-first-steps).
 
-You can use the user interface and the CLI to perform tasks. You must manage and secure your ‘root’ access to perform certain administration tasks as indicated on [this link](/pages/public_cloud/compute/become_root_and_change_password).
+You can use the user interface and the CLI to perform tasks. You must manage and secure your ‘root’ access  to perform certain administrative tasks, as described in this [guide](/pages/public_cloud/compute/become_root_and_change_password).
 
-To filter connections, you can set up a firewall using IPtables. 
+To filter connections, you must set up a firewall using IPtables. 
 
 #### 2.2 Vulnerability scans
 
@@ -58,7 +58,7 @@ As a part of our reslience plan in the Control Plane, we perform backups to main
 
 | **Source** | **Content** | **Documentation** |
 | --- | --- | --- |
-| Control Panel | Logs of interactions made by admin, technical or billing contacts in the Control Panel and services they have access to, using API calls. |- <https://api.ovh.com/console/#/me> (see `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br>- [List of API calls done on services you have access to](https://api.ovh.com/console/#/me/api/logs/services~GET)<br>-[Get your audit logs](https://api.ovh.com/console/#/me/logs/audit~GET) |
+| Control Panel | Logs of interactions made by admin, technical or billing contacts in the Control Panel and services they have access to, using API calls. |- <https://api.ovh.com/console/#/me> (see `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br>- [List of API calls done on services you have access to](https://api.ovh.com/console/#/me/api/logs/services~GET)<br>- [Get your audit logs](https://api.ovh.com/console/#/me/logs/audit~GET) |
 
 ### 6. API
 
@@ -89,7 +89,7 @@ Once you get your credentials, you are autonomous to create user accounts on you
 
 Public Cloud Instance is based on OpenStack technology which is managed and maintained by the OVHcloud team.
 
-OVHcloud provides a large catalog of Opereating Systems for Windows and Linux distributions. We are committed to updating our catalogue with the latest releases from editors.
+OVHcloud provides a large catalog of Operating Systems for Windows and Linux distributions. We are committed to updating our catalogue with the latest releases from editors.
 
 The level of hardening applied refers to the basic version supplied by the editor. For an advanced level of hardening, we recommend that you refer to the guidelines published by each editor.
 
@@ -116,7 +116,7 @@ To encrypt your data at rest (volume level encyption), you can follow [this guid
 #### 8.4 HDS option
 
 The HDS option can be activated on the service.<br>
-The subscription to the Business support level is mandatory, at least to maintain necessary requirements.
+The subscription to the [Business support level](https://www.ovhcloud.com/en/support-levels/business/)is mandatory, at least to maintain necessary requirements.
 
 ### 9. Reversibility
 
