@@ -6,7 +6,7 @@ updated: 2024-04-15
 
 ## Objectif
 
-Le composant `NSX-v` ne sera plus maintenu par OVHcloud à compter du 31 Juillet 2024. 
+Le composant `NSX-v` ne sera plus maintenu par OVHcloud à compter du **31 Juillet 2024**. 
 
 Ce guide vous aide à analyser votre utilisation des fonctionnalités NSX-v pour vous proposer différents scénarios suite à cette évolution : De la désactivation du composant `NSX-v` jusqu'à la migration vers son successeur `NSX-T` (appelé NSX par VMware depuis la `version 4.0`).
 
@@ -36,31 +36,29 @@ Depuis la derniere version NSX-v les fonctionnalitées étaient désactivées
 
 Nous allons desactiver `NSX-V` à partir du 31 mars 2024 si vous n’utilisez aucune de ses fonctionnalitées.
 
-Quelle que soit votre gamme Hosted Private Cloud, si vous souhaitez désactiver NSX-V, vous n'aurez pas à migrer vers un nouveau Centre de données. Vous pourrez ainsi conserver vos ressources actuelles. Pour que la tâche de maintenance s'exécute correctement et désactive NSX-V, vous devez vous assurer de bien nettoyer votre environnement NSX-V.
+Quelle que soit votre gamme Hosted Private Cloud, si vous souhaitez désactiver NSX-V, vous n'aurez pas à migrer vers un nouveau Centre de données. Vous pourrez ainsi conserver vos ressources actuelles, pour que la tâche de maintenance s'exécute correctement et désactive NSX-V. Vous devez vous assurer de bien nettoyer votre environnement NSX-V.
 
-Veillez à supprimer tous les `NSX-V EDGES` (DLR or Gateway).
-
-Vous devez supprimer tous les `NSX-V Edges`, Distributed Logical Gateway and Edges Services Gateway
+Veillez à bien supprimer tous les `NSX-V EDGES` (DLR or Gateway).
 
 ![NSX Edges](images/remove-Edges.gif){.thumbnail}
 
-Veillez à supprimer les règles distribuées existantes (3 règles doivent être créées par défaut avec NSX-V ou alors aucune règle ne doit être créée ).
+Veillez à bien supprimer les règles distribuées existantes (3 règles sont par défaut avec NSX-V ou aucune).
 
 ![NSX DFW](images/DFW.gif){.thumbnail}
 
-Veillez à déplacer chaque VM de vXlan vers le vRACK du portgroup.
+Veillez à bien déplacer les VM de chaque vXlan vers le vRACK du Portgroup.
 
-Vous pouvez suivre la documentation ici pour migrer les VM.
+Vous pouvez suivre la documentation ici pour migrer les machines virtuelles.
 
 ![NSX VXLAN](images/vxlan.gif){.thumbnail}
 
-À la fin, vous pouvez utiliser l'appel API OVHcloud pour vérifier que vous avez supprimé NSX-V :
+À la fin, vous pouvez utiliser l'appel API OVHcloud pour vérifier que vous avez supprimé `NSX-V` :
 
 >
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/generateNsxvInventory~POST
 >
 
-> **Parameters:**
+> **Parametres à utiliser :**
 >
 > serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
 
@@ -84,7 +82,7 @@ Si vous souhaitez le migrer vers des VLAN, pour vous aider à configurer votre r
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
 >
 
-> **Paramètres:**
+> **Paramètres à utiliser :**
 >
 > serviceName: la référence de votre PCC sous la forme `pcc-XX-XX-XX-XX`.
 
@@ -102,7 +100,7 @@ Vous serez notifié lorsque le processus de désactivation sera disponible. Apr�
 Depuis la vue `Réseaux`{.action} sur la console vSphere UI, faire un cliv droit sur le portgroup VXLAN où résident vos Machines Virtuelles et sélectionnez `Migrer les VM vers un autre réseau...`{.action}.
 
 > [!primary]
-> Dans cet exemple, nous allons migrer les VMs vers le portgroup VLAN10 qui se trouve sur le vRACK. Vous devez migrer toutes les VM vers des portgroups pour pouvoir désactiver NSX-v (ou pour que OVHcloud détecte un non usage de NSX-v).
+> Dans cet exemple, nous allons migrer les VMs vers le portgroup `VLAN10` qui se trouve sur le vRACK. Vous devez migrer toutes les VM vers des portgroups pour pouvoir désactiver NSX-v (ou pour que OVHcloud > détecte un non usage de NSX-v).
 
 ![NSX DVS](images/migration.gif){.thumbnail}
 
@@ -118,7 +116,7 @@ Une autre possibilité est de déployer des composants alternatifs (Load Balance
 
 ### Migrer vers NSX <a name="migration"></a>
 
-Le logiciel NSX est activé au niveau du Virtual Datacenter (vDC). Afin de migrer de NSX-v vers NSX, vous pouvez commander un nouveau vDC pour votre service Hosted Private Cloud existant (la fonctionnalité sera disponible à partir du 18 juillet 2023), ajouter de nouveaux Hosts puis migrer de votre vDC actuel vers le nouveau vDC en utilisant VMware vMotion.
+La solution logiciel NSX est activé au niveau du Virtual Datacenter (vDC). Afin de migrer de NSX-v vers NSX, vous pouvez commander un nouveau vDC pour votre service Hosted Private Cloud existant (la fonctionnalité sera disponible à partir du **18 juillet 2023**), ajouter de nouveaux hotes puis migrer de votre vDC actuel vers le nouveau vDC en utilisant VMware vMotion.
 
 La documentation pour migrer vers NSX est disponible ici: [vDC Migration](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)
 
