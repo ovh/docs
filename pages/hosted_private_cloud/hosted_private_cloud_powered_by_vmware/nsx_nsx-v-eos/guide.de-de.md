@@ -1,5 +1,5 @@
 ---
-title: VMware NSX-V - End of Life
+title: VMware NSX-V - End of Life (EN)
 excerpt: Analyse your use of the NSX-V features and choose between the different evolution scenarios, from disabling the NSX-V component to the migration to NSX
 updated: 2024-04-15
 ---
@@ -122,7 +122,7 @@ The NSX software is enabled at the Virtual Datacenter (vDC) level. In order to m
 
 The documentation to migrate to NSX is available here: [vDC Migration](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)
 
-Our support teams and [Professional Services experts](https://www.ovhcloud.com/en-gb/professional-services/) can provide you with assistance.
+Our support teams and [Professional Services experts](https://www.ovhcloud.com/de/professional-services/) can provide you with assistance.
 
 ## Go further <a name="gofurther"></a>
 
