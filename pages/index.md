@@ -340,7 +340,7 @@
             + [OVF Tool](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool)
             + [Deploying an OVF template from content libraries](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library)
             + [Deploy an OVF Linux, Windows Server and Windows SQL Server template](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)
-            + [Manage Windows licensing on virtual machines](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/spla_license_management)
+            + [How to manage Windows licenses for virtual machines on your Hosted Private Cloud infrastructure](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/spla_license_management)
             + [Avoiding VM freeze with the Veeam Managed Backup option](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/eviter_le_freeze_de_vm_avec_l_option_veeam_backup)
             + [Enabling promiscuous mode on a Virtual Machine](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_carp)
             + [Changing the MTU size for machines reaching the OVHcloud Gateway SSL](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/recommended_mtu_for_machines_reaching_ovh_gw_ssl)
