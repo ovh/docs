@@ -122,7 +122,7 @@ The NSX software is enabled at the Virtual Datacenter (vDC) level. In order to m
 
 The documentation to migrate to NSX is available here: [vDC Migration](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)
 
-Our support teams and [Professional Services experts](https://www.ovhcloud.com/en-gb/professional-services/) can provide you with assistance.
+Our support teams and [Professional Services experts](https://www.ovhcloud.com/en-ie/professional-services/) can provide you with assistance.
 
 ## Go further <a name="gofurther"></a>
 
