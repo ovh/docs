@@ -63,7 +63,7 @@ Once the SAP HANA sources have been uploaded in your S3 Object Storage bucket, y
 <a name="ovf_link"></a>
 
 ```console
-https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64.ovf
+https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP5-Full-x86_64/sles4sap-sap-hana-SLE-15-SP5-Full-x86_64.ovf
 ```
 
 ![deploy-from-template](images/step-2.png){.thumbnail}
@@ -133,6 +133,10 @@ Find below the table of SAP recommendations to size SAP HANA disks:
 >
 
 ![ovhcloud-backint-agent-installation](images/step-10.png){.thumbnail}
+
+11\. If you want to use the automation of the SAP logs on OVHcloud Logs Data Platform installation to forward logs to the Logs Data Platform solution, tick the installation enable box and fill in the information in the `SAP logs on OVHcloud Logs Data Platform`{.action}` category.
+
+![sap-ldp-installation](images/step-11.png){.thumbnail}
 
 Once these steps have been done, the deployment of your virtual machine from the OVF template created by OVHcloud starts.
 
