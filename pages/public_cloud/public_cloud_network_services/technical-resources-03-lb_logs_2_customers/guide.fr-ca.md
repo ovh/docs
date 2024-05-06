@@ -12,7 +12,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 
 ## Glossaire
 
-- **Logs Data Platform :** plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/).
+- **Logs Data Platform :** plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr-ca/logs-data-platform/).
 - **Data Stream :** partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
 - **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
 - **Abonnement à la redirection de logs :** lors de l'activation du transfert de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
@@ -64,7 +64,7 @@ Les champs suivants sont calculés à partir de `client_ip` et fournis dans les 
 
 ## En pratique
 
-Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](https://www.ovhcloud.com/fr/logs-data-platform/).
+Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](https://www.ovhcloud.com/fr-ca/logs-data-platform/).
 
 ### Activation du Log forwarding du Load Balancer Public Cloud via l’espace client OVHcloud
 
@@ -74,7 +74,7 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client
 
 Vous devrez définir le *Stream* ciblé de l'un de vos comptes LDP sur lequel vous souhaitez que vos logs soient transférés. L'activation du transfert va créer un abonnement pour cet ID de flux.
 
-Vous pouvez récupérer les spécifications de l'API dans le portail [OVH API](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
+Vous pouvez récupérer les spécifications de l'API dans le portail [OVH API](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
 
 #### Étape 1 - récupérer le Stream (et l'ID) cible
 
@@ -103,13 +103,13 @@ Utilisez l'appel API suivant pour créer un abonnement :
 
 Vous devrez remplacer :
 
-- **loadBalancerId** : il s'agit de l'identifiant du Load Balancer, que vous pouvez retrouver dans la page de détails de votre Load Balancer dans votre espace client OVHcloud ou en utilisant [l'appel API dédié](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/loadbalancer).
+- **loadBalancerId** : il s'agit de l'identifiant du Load Balancer, que vous pouvez retrouver dans la page de détails de votre Load Balancer dans votre espace client OVHcloud ou en utilisant [l'appel API dédié](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/loadbalancer).
 - **regionName** : la région OpenStack, par exemple, `GRA11`.
-- **serviceName** : il s’agit de l’identifiant du projet Public Cloud, que vous pouvez retrouver dans votre espace client OVHcloud sous le nom de votre projet ou en utilisant [l’appel API dédié](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project).
+- **serviceName** : il s’agit de l’identifiant du projet Public Cloud, que vous pouvez retrouver dans votre espace client OVHcloud sous le nom de votre projet ou en utilisant [l’appel API dédié](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project).
 
 La requête POST a une charge utile qui nécessite les informations suivantes :
 
-- `kind` : le type de journal que vous voulez transférer. Notez que la seule valeur actuellement prise en charge pour Public Cloud Load Balancer est « haproxy » (vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/log/kind)).
+- `kind` : le type de journal que vous voulez transférer. Notez que la seule valeur actuellement prise en charge pour Public Cloud Load Balancer est « haproxy » (vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/log/kind)).
 - `streamId` : flux de données cible de votre compte LDP vers lequel vous souhaitez que vos logs du service Public Cloud Load Balancer soient transférés.
 
 ```shell
@@ -199,6 +199,6 @@ Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

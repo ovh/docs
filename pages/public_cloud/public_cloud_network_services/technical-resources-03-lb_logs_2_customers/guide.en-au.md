@@ -12,7 +12,7 @@ If you would like to find out more about Logs Data Platform before reading this 
 
 ## Glossary
 
-- **Logs Data Platform:** a fully managed and secured log management platform by OVHcloud. For more information, consult the [Logs Data Platform](https://www.ovhcloud.com/en-gb/logs-data-platform/) service page.
+- **Logs Data Platform:** a fully managed and secured log management platform by OVHcloud. For more information, consult the [Logs Data Platform](https://www.ovhcloud.com/en-au/logs-data-platform/) service page.
 - **Data Stream:** a logical partition of logs which you create in an LDP account and which you will use when ingesting, viewing or querying your logs. Multiple sources can be stored in the same data stream, and it is the unit that can be used to define a log pipeline (retention policy, archiving, live streaming, etc.), access rights and alert policies.
 - **Logs forwarding:** a feature integrated into an OVHcloud product to ingest the logs of its services into a *Data Stream* of an LDP account in the same OVHcloud account. This feature must be activated by the customer and per service.
 - **Logs forwarding Subscription:** when enabling the logs forwarding for a given OVHcloud service to a given LDP *Data Stream*, a *Subscription* is created and attached to the *Data Stream* for further management by the customer.
@@ -64,7 +64,7 @@ The following fields are computed from `client_ip` and provided in logs:
 
 ## Instructions
 
-Note that the forwarding activation is free of charge, but you will be charged for the usage of the Logs Data Platform service as per the standard price plan. For LDP pricing, refer to this [page](https://www.ovhcloud.com/en-gb/logs-data-platform/).
+Note that the forwarding activation is free of charge, but you will be charged for the usage of the Logs Data Platform service as per the standard price plan. For LDP pricing, refer to this [page](https://www.ovhcloud.com/en-au/logs-data-platform/).
 
 ### Enabling Public Cloud Load Balancer Log Forwarding using the OVHcloud Control Panel
 
@@ -74,7 +74,7 @@ This feature is not yet available in the Control Panel.
 
 You will have to define the targeted *Stream* of one of your LDP account on which you want your logs to be forwarded to. The enablement of the forwarding will create a subscription for this stream id.
 
-You can retrieve the API specifications in the [OVH API Portal](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
+You can retrieve the API specifications in the [OVH API Portal](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
 
 #### Step 1 - Retrieve your target Stream (and ID)
 
@@ -103,13 +103,13 @@ Use the following API call to create a subscription:
 
 You will need to replace:
 
-- **loadBalancerId**: this is the Load Balancer ID, you can find it in the details page of your Load Balancer in the OVHcloud Control Panel or using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/loadbalancer) call.
+- **loadBalancerId**: this is the Load Balancer ID, you can find it in the details page of your Load Balancer in the OVHcloud Control Panel or using the [dedicated API](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/loadbalancer) call.
 - **regionName**: the OpenStack region, for example, `GRA11`.
-- **serviceName**: the Public Cloud Project ID. You can find it in the OVHcloud Control Panel under your project name or using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project) call.
+- **serviceName**: the Public Cloud Project ID. You can find it in the OVHcloud Control Panel under your project name or using the [dedicated API](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project) call.
 
 The POST request has a payload that requires:
 
-- `kind`: the kind of log you want to forward. Note that the only value currently supported for Public Cloud Load Balancer is 'haproxy' (you can find available kinds using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/log/kind) call).
+- `kind`: the kind of log you want to forward. Note that the only value currently supported for Public Cloud Load Balancer is 'haproxy' (you can find available kinds using the [dedicated API](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/log/kind) call).
 - `streamId`: the target data stream of your LDP account where you want your Public Cloud Load Balancer logs to be forwarded to. 
 
 ```shell
@@ -199,6 +199,6 @@ To delete your subscription you can use the following API call:
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

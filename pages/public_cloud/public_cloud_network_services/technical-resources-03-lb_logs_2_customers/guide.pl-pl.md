@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding
+title: Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding (EN)
 excerpt: Find out how to forward your logs from a Public Cloud Load Balancer to Logs Data Platform
 updated: 2024-05-06
 flag: hidden
@@ -12,7 +12,7 @@ If you would like to find out more about Logs Data Platform before reading this 
 
 ## Glossary
 
-- **Logs Data Platform:** a fully managed and secured log management platform by OVHcloud. For more information, consult the [Logs Data Platform](https://www.ovhcloud.com/en-gb/logs-data-platform/) service page.
+- **Logs Data Platform:** a fully managed and secured log management platform by OVHcloud. For more information, consult the [Logs Data Platform](https://www.ovhcloud.com/pl/logs-data-platform/) service page.
 - **Data Stream:** a logical partition of logs which you create in an LDP account and which you will use when ingesting, viewing or querying your logs. Multiple sources can be stored in the same data stream, and it is the unit that can be used to define a log pipeline (retention policy, archiving, live streaming, etc.), access rights and alert policies.
 - **Logs forwarding:** a feature integrated into an OVHcloud product to ingest the logs of its services into a *Data Stream* of an LDP account in the same OVHcloud account. This feature must be activated by the customer and per service.
 - **Logs forwarding Subscription:** when enabling the logs forwarding for a given OVHcloud service to a given LDP *Data Stream*, a *Subscription* is created and attached to the *Data Stream* for further management by the customer.
@@ -64,7 +64,7 @@ The following fields are computed from `client_ip` and provided in logs:
 
 ## Instructions
 
-Note that the forwarding activation is free of charge, but you will be charged for the usage of the Logs Data Platform service as per the standard price plan. For LDP pricing, refer to this [page](https://www.ovhcloud.com/en-gb/logs-data-platform/).
+Note that the forwarding activation is free of charge, but you will be charged for the usage of the Logs Data Platform service as per the standard price plan. For LDP pricing, refer to this [page](https://www.ovhcloud.com/pl/logs-data-platform/).
 
 ### Enabling Public Cloud Load Balancer Log Forwarding using the OVHcloud Control Panel
 
@@ -199,6 +199,6 @@ To delete your subscription you can use the following API call:
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
