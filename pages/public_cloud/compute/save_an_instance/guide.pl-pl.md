@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie kopii zapasowej instancji'
 excerpt: 'Dowiedz się, jak utworzyć kopię zapasową instancji Public Cloud w Panelu klienta OVHcloud'
-updated: 2024-05-02
+updated: 2024-05-06
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 ## Wymagania początkowe
 
 - Posiadanie instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -27,7 +27,7 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 > Ta opcja jest dostępna tylko przez **Cold Snapshot** dla instancji Metal. Instancja Metal przejdzie do trybu Rescue. Po wykonaniu kopii zapasowej instancja zostanie zrestartowana w trybie normalnym.
 >
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz swój projekt `Public Cloud`{.action}. Następnie kliknij `Instances`{.action} w menu po lewej stronie.
+Zaloguj się do [Panelu client OVHcloud](/links/manager) i otwórz swój projekt `Public Cloud`{.action}. Następnie kliknij `Instances`{.action} w menu po lewej stronie.
 
 Kliknij przycisk `...`{.action} po prawej stronie instancji i wybierz `Utwórz kopię zapasową`{.action}.
 

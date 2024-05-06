@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder une instance'
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud'
-updated: 2024-05-02
+updated: 2024-05-06
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 ## Prérequis
 
 - Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -23,7 +23,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 > Cette option est uniquement disponible via un **Cold Snapshot** pour les instances Metal. L'instance Metal passera en mode rescue et, une fois la sauvegarde effectuée, l'instance sera redémarrée en mode normal.
 >
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
 
 Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer un backup`{.action}.
 

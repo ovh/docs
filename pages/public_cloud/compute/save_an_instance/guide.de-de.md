@@ -1,7 +1,7 @@
 ---
 title: Backup einer Instanz erstellen
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz in Ihrem OVHcloud Kundencenter sichern
-updated: 2024-05-02
+updated: 2024-05-06
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -27,7 +27,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 > Diese Option ist für Metal Instanzen nur über einen **Cold Snapshot** verfügbar. Die Metal-Instanz wird in den Rescue-Modus versetzt, und sobald das Backup abgeschlossen ist, wird die Instanz im normalen Modus neu gestartet.
 >
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
 
 Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Backup erstellen`{.action}.
 

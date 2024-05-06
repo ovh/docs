@@ -1,7 +1,7 @@
 ---
 title: 'Guardar una instancia'
 excerpt: 'Cómo realizar el backup de una instancia de Public Cloud desde el área de cliente de OVHcloud'
-updated: 2024-05-02
+updated: 2024-05-06
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 ## Requisitos
 
 - Tener una instancia de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -27,7 +27,7 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 > Esta opción solo está disponible a través de un **Cold Snapshot** para las instancias Metal. La instancia Metal pasará a modo de rescate y, una vez realizada la copia de seguridad, la instancia se reiniciará en modo normal.
 >
 
-Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra su proyecto de `Public Cloud`{.action}. En el menú de la izquierda, haga clic en `Instances`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager) y abra su proyecto de `Public Cloud`{.action}. En el menú de la izquierda, haga clic en `Instances`{.action}.
 
 Haga clic en el botón `...`{.action} a la derecha de la instancia y seleccione `Crear un backup`{.action}.
 

@@ -1,7 +1,7 @@
 ---
 title: Backing up an instance
 excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel
-updated: 2024-05-02
+updated: 2024-05-06
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ You can create a single backup of an instance or configure a schedule in order t
 ## Requirements
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -23,7 +23,7 @@ You can create a single backup of an instance or configure a schedule in order t
 > This option is only available through a **Cold Snapshot** for Metal instances. During this process, the Metal instance will be switched to rescue-mode, and once the backup is performed, the instance will reboot back to normal mode.
 >
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu.
 
 Click on the `...`{.action} button to the right of the instance and select `Create a backup`{.action}.
 

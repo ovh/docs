@@ -1,7 +1,7 @@
 ---
 title: "Effettuare il backup di un'istanza"
 excerpt: "Come eseguire le prime operazioni su un'istanza Public Cloud dallo Spazio Cliente OVHcloud"
-updated: 2024-05-02
+updated: 2024-05-06
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 ## Prerequisiti
 
 - Disporre di un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -27,7 +27,7 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 > Questa opzione è disponibile solo via **Cold Snapshot** per le istanze Metal. L'istanza Metal passerà in modalità Rescue e, una volta effettuato il backup, l'istanza sarà riavviata in modalità normale.
 >
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e apri il tuo progetto `Public Cloud`{.action}. Clicca sulle `Instances`{.action} nel menu a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e apri il tuo progetto `Public Cloud`{.action}. Clicca sulle `Instances`{.action} nel menu a sinistra.
 
 Clicca sul pulsante `...`{.action} a destra dell'istanza e seleziona `Crea un backup`{.action}.
 
