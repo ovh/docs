@@ -1,7 +1,7 @@
 ---
 title: 'Configurer la qualité de service (QoS) d’OverTheBox'
 excerpt: "Découvrez comment configurer la qualité de service (QoS) sur votre OverTheBox afin d'améliorer la gestion de votre bande passante"
-updated: 2024-04-24
+updated: 2024-05-06
 ---
 
 ## Objectif
@@ -11,8 +11,8 @@ Découvrez comment modifier la QoS sur votre équipement OverTheBox, afin de pri
 ## Prérequis
 
 - Disposer d'un service [OverTheBox](https://www.ovhtelecom.fr/overthebox/)
-- Au moins un accès à Internet, par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
-- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
+- Au moins un accès à Internet, fourni par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
+- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source (consultez le guide « [Installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) »)
 
 ## En pratique
 
@@ -45,13 +45,13 @@ Une fois vos débits maximum connus, il est nécessaire d'activer le *traffic co
 Pour ce faire :
 
 - Rendez vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
-- Cliquez sur **Network**
-- Cliquez sur **Interfaces**
+- Cliquez sur `Network`{.action}
+- Cliquez sur `Interfaces`{.action}
 - Cliquez sur l'onglet qui porte le nom de la connexion sur laquelle vous voulez activer le traffic control, **IF1** dans notre exemple.
-- Cliquez sur l'onglet **Traffic Control**
+- Cliquez sur l'onglet `Traffic Control`{.action}
 - Configurez le *Traffic Control* en **Static** à l'aide du menu déroulant
 - Inscrivez le **débits maximum** de cette connexion en **kbps** pour le débit descendant (**Download**) et montant (**Upload**). 1 Mbps = 1000 kbps, dans notre exemple le débit 10Mbps/1,2Mbps devient 10000/1200
-- Cliquez sur **"Save & Apply"**
+- Cliquez sur `Save & Apply`{.action}
 
 ![overthebox](images/qos-step1.png){.thumbnail}
 
@@ -77,8 +77,8 @@ Dans notre exemple, nous souhaitons que le débit montant de notre serveur NAS s
 Pour ce faire :
 
 - Rendez vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
-- Cliquez sur **OvertheBox**
-- Cliquez sur **DSCP Settings**
+- Cliquez sur `OvertheBox`{.action}
+- Cliquez sur `DSCP Settings`{.action}
 
 ![overthebox](images/qos-step2-1.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Pour ce faire :
 
 ![overthebox](images/qos-step2-2.png){.thumbnail}
 
-- Cliquez sur **Add**
+- Cliquez sur `Add`{.action}
 
 _Une nouvelle ligne apparait._
 
@@ -94,7 +94,7 @@ _Une nouvelle ligne apparait._
 
 ![overthebox](images/qos-step2-3.png){.thumbnail}
 
-- Une fois votre règle configurée, vous devez cliquer sur **Save & Apply** pour qu'elle soit correctement sauvegardée.
+- Une fois votre règle configurée, vous devez cliquer sur `Save & Apply`{.action} pour qu'elle soit correctement sauvegardée.
 
 > [!primary]
 >
@@ -108,8 +108,8 @@ Pour plus de détails sur les différentes options de cette page, consultez la s
 
 Pour vérifier le bon fonctionnement de votre règle :
 
-- Cliquez sur **OverTheBox**
-- Cliquez sur **QoS Graphs**
+- Cliquez sur `OverTheBox`{.action}
+- Cliquez sur `QoS Graphs`{.action}
 
 Lorsque le NAS génère du débit montant, le trafic correspondant apparait en orange sur la courbe, le NAS est donc bien identifié comme prioritaire.
 

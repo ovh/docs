@@ -1,7 +1,7 @@
 ---
 title: "Installer l'image OverTheBox sur votre matériel"
 excerpt: "Découvrez comment installer manuellement une image OverTheBox sur votre matériel"
-updated: 2024-04-24
+updated: 2024-05-06
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Installer l'image OverTheBox sur votre propre matériel est une étape cruciale 
 ## Prérequis
 
 - Une **OverTheBox** fournie par OVHcloud ou un matériel compatible avec la solution OverTheBox (plateforme x86_64 avec un processeur Intel ou AMD)
-- Au moins un accès à Internet, par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
+- Au moins un accès à Internet, fourni par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
 
 ## En pratique
 
@@ -41,7 +41,7 @@ Vous pouvez créer une clé USB bootable contenant l'image OverTheBox afin d'ins
 > La clé USB est maintenant prête à être utilisée pour flasher l'OverTheBox.
 >
 
-#### Création d'une clé USB bootable sous MacOS
+#### Création d'une clé USB bootable sous macOS
 
 Toute l'opération se faisant en ligne de commande, ouvrez le **Terminal**.
 
@@ -180,7 +180,7 @@ major minor  #blocks  name
 
 Dans cet exemple, on identifie que la destination d'installation sera **mmcblk0**.
 
-#### Téléchargez l'image OverTheBox
+#### Télécharger l'image OverTheBox
 
 La page suivante liste les images d'**OverTheBox** compilées : [http://downloads.overthebox.net/stable/](http://downloads.overthebox.net/stable/){.external}
 
@@ -197,7 +197,7 @@ gunzip latest.img.gz
 sudo dd if=latest.img of=/dev/mmcxxx
 ```
 
-Vous devez remplacer **mmcxxx** par votre destination d'installation.
+Vous devez remplacer **mmcxxx par votre destination d'installation.
 
 Retirez maintenant votre « live usb » et redémarrez votre matériel.
 

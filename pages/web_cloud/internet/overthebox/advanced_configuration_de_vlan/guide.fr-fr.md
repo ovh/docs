@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un VLAN sur OverTheBox'
 excerpt: 'Découvrez comment créer un VLAN sur votre OverTheBox'
-updated: 2024-04-24
+updated: 2024-05-06
 ---
 
 ## Objectif
@@ -13,33 +13,33 @@ La configuration d'un VLAN (Virtual Local Area Network) sur votre OverTheBox per
 ## Prérequis
 
 - Disposer d'un service [OverTheBox](https://www.ovhtelecom.fr/overthebox/)
-- Au moins un accès à Internet, par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
-- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
+- Au moins un accès à Internet, fourni par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
+- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source (consultez le guide « [Installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) »)
 
 ## En pratique
 
 ### Sur OverTheBox Plus (switch Ethernet intégré)
 
-- Rendez-vous dans  **Network**  >  **Switch**  >  **go to expert mode**
-- Cliquez sur **Add** puis inscrivez l'ID **666** sur la ligne venant d'apparaitre
-- Cliquez sur " **Save & Apply** "
+- Rendez-vous dans `Network`{.action} > `Switch`{.action} >  `go to expert mode`{.action}
+- Cliquez sur `Add`{.action} puis inscrivez l'ID `666` sur la ligne venant d'apparaitre
+- Cliquez sur `Save & Apply`{.action}
 
 ### Autre solution
 
-Rendez-vous dans  **Network**  >  **Interfaces**  > puis cliquez sur " **Add new interface** ” en bas à gauche de la page.
+Rendez-vous dans  `Network`{.action} > `Interfaces`{.action} puis cliquez sur `Add new interface`{.action} en bas à gauche de la page.
 
-Ensuite, nommez la nouvelle interface, par exemple : “ **vlan666** ”
+Ensuite, nommez la nouvelle interface, par exemple : `vlan666`
 
-- Cochez **" custom interface "**, écrivez **“ eth0.666 ”**, puis validez
+- Cochez `custom interface`{.action}, écrivez `eth0.666` puis validez
 
-> [!alert]
+> [!warning]
 >
 > Dans cet exemple, nous avons choisi la valeur 666. Cette valeur doit
-> obligatoirement être comprise en 2 et 4094.
+> obligatoirement être comprise entre 2 et 4094.
 > 
 
-- Rendez-vous dans l'onglet **"General Setup"** si vous souhaitez configurer les informations de ce VLAN en statique
-- Cliquez sur " **Save & Apply** " pour confirmer
+- Rendez-vous dans l'onglet `General Setup`{.action} si vous souhaitez configurer les informations de ce VLAN en statique
+- Cliquez sur `Save & Apply`{.action} pour confirmer
 
 ## Aller plus loin
 

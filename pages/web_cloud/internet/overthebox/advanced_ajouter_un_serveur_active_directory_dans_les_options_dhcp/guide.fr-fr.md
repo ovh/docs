@@ -1,7 +1,7 @@
 ---
 title: 'Ajouter un serveur Active Directory à OverTheBox'
 excerpt: "Découvrez comment ajouter un serveur Active Directory dans les options DHCP"
-updated: 2024-04-24
+updated: 2024-05-06
 ---
 
 ## Objectif
@@ -13,21 +13,20 @@ Intégrer un serveur Active Directory avec votre OverTheBox permet de centralise
 ## Prérequis
 
 - Disposer d'un service [OverTheBox](https://www.ovhtelecom.fr/overthebox/)
-- Au moins un accès à Internet, par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
-- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
+- Au moins un accès à Internet, fourni par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
+- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source (consultez le guide « [Installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) »)
 
 ## En pratique
 
-### Configuration
 - Connectez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} en tant qu'administrateur
-- Rendez-vous dans l'onglet "Network > Interfaces"
+- Rendez-vous dans l'onglet `Network`{.action} > `Interfaces`{.action}
 - Éditez la configuration de l'interface LAN
 
 ![overthebox](images/4434.png){.thumbnail}
 
-- Rendez-vous en bas de page, dans la partie "DHCP server"
-- Saisissez dans le champ DHCP-Options : "option:dns-server,x.x.x.x" où x.x.x.x représente l'IP de votre serveur Active Directory
-- Cliquez sur "Save & Apply" pour confirmer
+- Rendez-vous en bas de page, dans la partie `DHCP server`{.action}
+- Saisissez dans le champ DHCP-Options : `option:dns-server,x.x.x.x` où x.x.x.x représente l'IP de votre serveur Active Directory
+- Cliquez sur `Save & Apply`{.action} pour confirmer
 
 ![overthebox](images/4435.png){.thumbnail}
 
