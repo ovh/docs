@@ -11,7 +11,7 @@ It is possible to store Pulumi state on a remote data store/backend like an AWS 
 In this tutorial you will:
 
 - create an OVHcloud Object Storage container
-- log-in in Pulumi and initialize your Pulumi backend
+- log in to Pulumi and initialise your Pulumi backend
 
 ## Requirements
 
@@ -19,24 +19,24 @@ In this tutorial you will:
 - A [Public Cloud Instance](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
 - [Pulumi CLI](https://www.pulumi.com/docs/install/){.external} installed
 
-### Before you begin
+**Before you begin**
 
-* You should have installed Pulumi CLI, on your machine. You can install it by following the [detailed installation instructions](https://www.pulumi.com/docs/install/){.external}.
+- You should have installed Pulumi CLI, on your machine. You can install it by following the [detailed installation instructions](https://www.pulumi.com/docs/install/){.external}.
 
-### Pulumi
+**Pulumi**
 
 ![Pulumi](images/pulumi.jpg){.thumbnail}
 
-[Pulumi](https://www.pulumi.com/) is an Infrastructure as code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang for example.
-Users define the desired state in Pulumi programs and Pulumi create the desired resources.
+[Pulumi](https://www.pulumi.com/){.external} is an Infrastructure as Code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang for example.
+Users define the desired state in Pulumi programs and Pulumi creates the desired resources.
 
-Pulumi offers an intuitive command line interface (CLI), to provision, update or delete your infrastructure. If you are familiar with Docker Compose CLI and Terraform CLI, you will adopt [Pulumi CLI](https://www.pulumi.com/docs/cli/) too.
+Pulumi offers an intuitive command line interface (CLI), to provision, update or delete your infrastructure. If you are familiar with Docker Compose CLI and Terraform CLI, you will adopt [Pulumi CLI](https://www.pulumi.com/docs/cli/){.external} too.
 
 At OVHcloud we created a [Pulumi provider](https://www.pulumi.com/registry/packages/ovh/){.external} that you can use to interact with and manage OVHcloud resources.
 
-### Pulumi states and backend
+**Pulumi states and backend**
 
-Pulumi stores metadata about your infrastructure so that it can manage your cloud resources, for example your OVHcloud resources. This metadata is called `state` and is typically JSON files. Each [stack](https://www.pulumi.com/docs/concepts/stack/) has its own state, and state is how Pulumi knows when and how to create, read, delete, or update cloud resources.
+Pulumi stores metadata about your infrastructure so that it can manage your cloud resources, for example your OVHcloud resources. This metadata is called `state` and is typically JSON files. Each [stack](https://www.pulumi.com/docs/concepts/stack/){.external} has its own state, and state is how Pulumi knows when and how to create, read, delete, or update cloud resources.
 
 A Pulumi state is updated when you run the `pulumi login`, `pulumi up` or `pulumi destroy` commands.
 
@@ -60,12 +60,12 @@ A state is composed of several files inside a `.pulumi` folder:
 
 ### Creating an Object Storage container/bucket
 
-First, you need to have an Object Storage container. If you don't already have one, you can follow the [Creating an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket) guide.
+First, you need to have an Object Storage container. If you don't already have one, please consult the guide [Creating an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket).
 
-For this guide, our Object Storage container is:
+For this guide, our Object Storage container has the following characteristics:
 
 - a `High Performance Object Storage - S3 API`
-- in the  `GRA` region
+- located in the `GRA` region
 - with a newly created user
 - named `pulumi`
 
@@ -75,7 +75,7 @@ For this guide, our Object Storage container is:
 > Save the S3 credentials, you will use the `S3 access key` and the `S3 secret key` in the coming `export` commands.
 > 
 
-Click on the `pulumi`{.action} bucket to enter it and display its information, including the useful `Endpoint`.
+Click on `pulumi`{.action} to access the bucket and to display its information, including the useful `Endpoint`.
 
 ![OVHcloud Object Storage pulumi bucket](images/pulumi-bucket.png){.thumbnail}
 
@@ -118,6 +118,7 @@ Follow the one you prefer.
 >>```
 
 As you can see, in both solutions, we defined all the needed parameters to access to the existing OVHcloud S3 bucket:
+
 - endpoint=s3.gra.perf.cloud.ovh.net
 - region=gra (or the region of your OVHcloud Object Storage bucket)
 
