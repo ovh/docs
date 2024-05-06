@@ -639,6 +639,7 @@
         + [Technical resources](public-cloud-network-technical-resources)
             + [Deploying a Public Cloud Load Balancer](public_cloud/public_cloud_network_services/technical-resources-01-using-lbaas-in-openstack-environment)
             * [How to create and manage a Health Monitor for OVHcloud Public Cloud Load Balancer](public_cloud/public_cloud_network_services/technical-resources-03-lbaas-create-health-monitor)
+            * [How to create and manage Level 7 (L7) Policies and Rules for OVHcloud Public Cloud Load Balancers](public_cloud/public_cloud_network_services/technical-resources-04-lbaas-create-L7)
             + [Known limits](public_cloud/public_cloud_network_services/known-limits)
             + [Public Cloud Load Balancer monitoring with Prometheus](public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus)
         + [Tutorials](public-cloud-network-tutorials)
