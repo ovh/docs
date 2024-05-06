@@ -53,7 +53,7 @@ You want to change [email solutions](https://www.ovhcloud.com/en-gb/emails/) to 
 - [Migrate an MX Plan email address to an Email Pro or Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [Migrate your email addresses from one OVHcloud email platform to another](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [Migrate your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
-- [Migrate email accounts via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_com)
+- [Migrate email accounts via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 - [Migrate a Gmail account to an OVHcloud email account via the OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
 
 ### Does the Office 365 Pro Plus solution include a Skype licence?

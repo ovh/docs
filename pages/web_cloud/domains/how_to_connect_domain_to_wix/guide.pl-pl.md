@@ -1,7 +1,7 @@
 ---
 title: Jak powiązać domenę OVHcloud z hostingiem Wix
 excerpt: Przygotuj i skonfiguruj strefę DNS Twojej domeny OVHcloud, aby połączyć ją z hostingiem Wix
-Updated: 2024-04-17
+updated: 2024-04-17
 ---
 
 ## Wprowadzenie

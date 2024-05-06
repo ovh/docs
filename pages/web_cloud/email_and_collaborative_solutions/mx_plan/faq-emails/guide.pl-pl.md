@@ -59,7 +59,7 @@ Chcesz zmienić [ofertę e-mail](https://www.ovhcloud.com/pl/emails/) na większ
 - [Przeniesienie adresu e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [Przenoszenie adresów e-mail z jednej platformy e-mail OVHcloud na inną](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
-- [Przeniesienie kont e-mail za pomocą OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_com)
+- [Przeniesienie kont e-mail za pomocą OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 - [Przeniesienie konta Gmail do konta e-mail OVHcloud za pośrednictwem OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
 
 ### Czy oferta Office 365 Pro Plus zawiera licencję Skype?
