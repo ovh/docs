@@ -1,7 +1,7 @@
 ---
 title: Backing up an instance
 excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel
-updated: 2023-09-21
+updated: 2024-05-02
 ---
 
 ## Objective
@@ -33,7 +33,7 @@ Enter a name for the backup on the next page. Take note of the pricing informati
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Once the backup is completed, it will be available in the `Instance Backup`{.action} section.
+Once the backup is complete, it will be available in the `Instance Backup`{.action} section under `Storage`{.action} in the left-hand menu.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
@@ -74,13 +74,17 @@ Enter a name for the automatic backup schedule. Take note of the pricing informa
 
 ### Managing backups and schedules
 
-Schedules can be created and removed in the Public Cloud `Workflow Management`{.action} section.
+Schedules can be created and deleted in the `Workflow Management`{.action} section, which is located under `Storage`{.action} in the left-hand menu.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Your instance backups are managed in the Public Cloud `Instance Backup`{.action} section.
+Your instance backups are managed in the Public Cloud `Instance Backup`{.action} section, which can be found under `Storage`{.action} in the left-hand menu.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> The instance backup option must be deleted separately if you no longer wish to be billed for it. Deleting an instance does not delete the options attached to it.
+>
 
 > [!warning]
 > **Note that you cannot delete an instance backup if an instance that has been spawned from this backup is running at the time of the delete action.**
