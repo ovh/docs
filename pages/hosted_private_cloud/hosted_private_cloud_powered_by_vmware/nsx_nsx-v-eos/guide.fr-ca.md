@@ -1,14 +1,14 @@
 ---
 title: VMware NSX-v - Fin de prise en charge
 excerpt: "Analysez votre utilisation des fonctionnalités NSX-v et choisissez entre les différents scénarios possibles d’évolution, allant de la désactivation du composant NSX-v jusqu'à la migration vers NSX"
-updated: 2024-04-15
+updated: 2024-05-06
 ---
 
 ## Objectif
 
 Le composant `NSX-v` ne sera plus maintenu par OVHcloud à compter du **31 Juillet 2024**. 
 
-Ce guide vous aide à analyser votre utilisation des fonctionnalités NSX-v pour vous proposer différents scénarios suite à cette évolution : De la désactivation du composant `NSX-v` jusqu'à la migration vers son successeur `NSX-T` (appelé NSX par VMware depuis la `version 4.0`).
+Ce guide vous aide à analyser votre utilisation des fonctionnalités NSX-v pour vous proposer différents scénarios suite à cette évolution : de la désactivation du composant `NSX-v` jusqu'à la migration vers son successeur `NSX-T` (appelé NSX par VMware depuis la `version 4.0`).
 
 ## En pratique
 
@@ -30,7 +30,7 @@ Pour identifier votre utilisation de la fonctionnalité NSX-v dans votre environ
 
 - Est-ce que j’utilise un VPN SSL ?
 
-Depuis la derniere version NSX-v les fonctionnalitées étaient désactivées
+Depuis la derniere version NSX-v, les fonctionnalitées étaient désactivées.
 
 #### Je n'utilise aucune des fonctionnalités de NSX-v
 
@@ -42,17 +42,17 @@ Veillez à bien supprimer tous les `NSX-V EDGES` (DLR or Gateway).
 
 ![NSX Edges](images/remove-Edges.gif){.thumbnail}
 
-Veillez à bien supprimer les règles distribuées existantes (3 règles sont par défaut avec NSX-V ou aucune).
+Veillez à bien supprimer les règles distribuées existantes (3 règles existent par défaut avec NSX-V, ou aucune règle).
 
 ![NSX DFW](images/DFW.gif){.thumbnail}
 
 Veillez à bien déplacer les VM de chaque vXlan vers le vRACK du Portgroup.
 
-Vous pouvez suivre la documentation ici pour migrer les machines virtuelles.
+Vous pouvez suivre la documentation pour migrer les machines virtuelles.
 
 ![NSX VXLAN](images/vxlan.gif){.thumbnail}
 
-À la fin, vous pouvez utiliser l'appel API OVHcloud pour vérifier que vous avez supprimé `NSX-V` :
+En dernier lieu, vous pouvez utiliser l'appel API OVHcloud suivant pour vérifier que vous avez supprimé `NSX-V` :
 
 >
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/generateNsxvInventory~POST
@@ -60,11 +60,11 @@ Vous pouvez suivre la documentation ici pour migrer les machines virtuelles.
 
 > **Parametres à utiliser :**
 >
-> serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
+> serviceName: la référence de votre PCC sous la forme `pcc-XX-XX-XX-XX`.
 
 > [!primary]
 >
-> Find more information on the OVHcloud API in our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+> Retrouvez plus d'informations sur l'API OVHcloud dans notre guide [Premiers pas avec l'API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 Consultez notre page sur le [cycle de vie de la solution VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/lifecycle_policy).
 
@@ -95,12 +95,12 @@ Il s'agit là uniquement d'une proposition contenant une liste de vos VMs et des
 
 Pour créer vos réseaux VLAN, vous pouvez suivre cette documentation : [Création de VLAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan).
 
-Vous serez notifié lorsque le processus de désactivation sera disponible. Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelles des VXLAN vers les DVS vRACK."
+Vous serez notifié lorsque le processus de désactivation sera disponible. Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelles des VXLAN vers les DVS vRACK.
 
 Depuis la vue `Réseaux`{.action} sur la console vSphere UI, faire un cliv droit sur le portgroup VXLAN où résident vos Machines Virtuelles et sélectionnez `Migrer les VM vers un autre réseau...`{.action}.
 
 > [!primary]
-> Dans cet exemple, nous allons migrer les VMs vers le portgroup `VLAN10` qui se trouve sur le vRACK. Vous devez migrer toutes les VM vers des portgroups pour pouvoir désactiver NSX-v (ou pour que OVHcloud > détecte un non usage de NSX-v).
+> Dans cet exemple, nous allons migrer les VMs vers le portgroup `VLAN10` qui se trouve sur le vRACK. Vous devez migrer toutes les VM vers des portgroups pour pouvoir désactiver NSX-v (ou pour que OVHcloud détecte un non usage de NSX-v).
 
 ![NSX DVS](images/migration.gif){.thumbnail}
 
@@ -116,7 +116,7 @@ Une autre possibilité est de déployer des composants alternatifs (Load Balance
 
 ### Migrer vers NSX <a name="migration"></a>
 
-La solution logiciel NSX est activé au niveau du Virtual Datacenter (vDC). Afin de migrer de NSX-v vers NSX, vous pouvez commander un nouveau vDC pour votre service Hosted Private Cloud existant (la fonctionnalité sera disponible à partir du **18 juillet 2023**), ajouter de nouveaux hotes puis migrer de votre vDC actuel vers le nouveau vDC en utilisant VMware vMotion.
+La solution logicielle NSX est activé eau niveau du Virtual Datacenter (vDC). Afin de migrer de NSX-v vers NSX, vous pouvez commander un nouveau vDC pour votre service Hosted Private Cloud existant (la fonctionnalité est disponible depuis le 18 juillet 2023), ajouter de nouveaux hôtes puis migrer de votre vDC actuel vers le nouveau vDC en utilisant VMware vMotion.
 
 La documentation pour migrer vers NSX est disponible ici: [vDC Migration](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)
 
