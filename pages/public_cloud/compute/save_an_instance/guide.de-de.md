@@ -37,7 +37,7 @@ Geben Sie auf der folgenden Seite eine Bezeichnung für das Backup ein. Nehmen S
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Sobald das Backup bereit ist, wird es im Bereich `Instance Backup`{.action} angezeigt  unter dem Menüpunkt `Storage`{.action} im linken Menü verfügbar.
+Sobald das Backup bereit ist, wird es im Bereich `Instance Backup`{.action} unter `Storage`{.action} im linken Menü angezeigt.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
@@ -78,18 +78,19 @@ Geben Sie einen Namen für die Planung des automatischen Backups ein. Nehmen Sie
 
 ### Verwaltung der Backups und Zeitpläne
 
-Zeitpläne können im Abschnitt `Workflow Management`{.action} erstellt und gelöscht werden, der sich unter dem Menüpunkt `Storage`{.action} im linken Menü befindet.
+Zeitplanungen können im Bereich `Workflow Management`{.action} unter `Storage`{.action} im linken Menü erstellt und entfernt werden.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Die Backups Ihrer Instanzen werden im Bereich `Instance Backup`{.action} in Ihrem Public Cloud Kundencenter verwaltet, der sich unter dem Menüpunkt `Storage`{.action} im Menü auf der linken Seite befindet.
+Die Backups Ihrer Instanzen werden im Bereich `Instance Backup`{.action} in Ihrem Public Cloud Kundencenter verwaltet, unter `Storage`{.action} im linken Menü.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
 
 > [!warning]
-> Die Option, die Instanz zu sichern, muss separat entfernt werden, wenn sie Ihnen nicht mehr in Rechnung gestellt werden soll. Das Löschen einer Instanz entfernt nicht die mit ihr verbundenen Optionen.
+> Die Option, die Instanz zu sichern, muss separat abgestellt werden, damit sie nicht mehr in Rechnung gestellt wird. Das Löschen einer Instanz entfernt nicht automatisch die mit ihr verbundenen Dienst-Optionen.
 >
-6
+
+
 > [!warning]
 > **Beachten Sie, dass Sie ein Instanz-Backup nicht löschen können, wenn eine Instanz, die aus diesem Backup erzeugt wurde, zum Zeitpunkt des Löschvorgangs ausgeführt wird.**
 
