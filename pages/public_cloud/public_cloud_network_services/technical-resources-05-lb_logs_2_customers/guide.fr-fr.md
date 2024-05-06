@@ -8,7 +8,7 @@ flag: hidden
 ## Objectif
 
 L'objectif de ce guide est de vous montrer comment activer le transfert de logs de votre Public Cloud Load Balancer vers Logs Data Platform (LDP), une plateforme qui vous aide à stocker, archiver, interroger et visualiser vos logs.
-Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au [Guide d'introduction de Logs Data Platform](/pages/manage_and_operation/observability/logs_data_platform/getting_started_introduction_to_LDP).
+Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au [Guide d'introduction de Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 
 ## Glossaire
 
@@ -19,7 +19,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 
 ## Prérequis
 
-- Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start).
+- Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 - Un [Load Balancer Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) opérationnel.
 - Le compte LDP et le compte Public Cloud Load Balancer doivent appartenir au même compte OVHcloud.
 
@@ -171,7 +171,7 @@ GET /cloud/project/{serviceName}/region/{regionName}/loadbalancing/loadbalancer/
 
 Maintenant que vos logs sont ingérés et stockés dans votre flux de données Logs Data Platform, vous pouvez interroger vos logs et créer des tableaux de bord pour avoir une représentation graphique de vos logs en utilisant l'interface web de Graylog.
 
-- Depuis votre espace client, récupérez l'identifiant LDP (ex: logs-xxxx) et son mot de passe sur la page d'accueil de votre compte Logs Data Platform. Vous pouvez vous référer à la documentation [Quick start for Logs Data Platform](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start).
+- Depuis votre espace client, récupérez l'identifiant LDP (ex: logs-xxxx) et son mot de passe sur la page d'accueil de votre compte Logs Data Platform. Vous pouvez vous référer à la documentation [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 - Ouvrez l'interface utilisateur Graylog. Vous pouvez récupérer le lien sur la page d'accueil de votre compte ou en utilisant votre point d'accès en fonction de la région de votre compte (par exemple : la région de Gravelines est https://gra1.logs.ovh.com/).
 - Connectez-vous à Graylog en utilisant votre nom d'utilisateur et votre mot de passe Logs Data Platform.
 - Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html){.external} pour plus de détails sur la syntaxe de recherche.
