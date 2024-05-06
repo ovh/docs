@@ -600,6 +600,7 @@
             + [Changing the admin password on a Windows server](bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)
             + [How to use Terraform](public_cloud/compute/how_to_use_terraform)
             + [Using OVHcloud Object Storage as Terraform Backend to store your Terraform state](public_cloud/compute/use_object_storage_terraform_backend_state)
+            + [Using OVHcloud Object Storage as Pulumi Backend to store your Pulumi state](public_cloud/compute/use_object_storage_pulumi_backend_state)
             + [Upgrading your operating system](public_cloud/compute/upgrading_operating_system)
             + [Changing the hostname of a Public Cloud instance](public_cloud/compute/changing_the_hostname_of_an_instance)
             + [Create a custom OpenStack image with Packer](public_cloud/compute/create_image_from_existing_image_with_packer)
