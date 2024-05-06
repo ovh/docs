@@ -17,24 +17,24 @@ Ce guide vous aide à analyser votre utilisation des fonctionnalités NSX-v pour
 Pour identifier votre utilisation de la fonctionnalité NSX-v dans votre environnement Hosted Private Cloud, vous devez vous poser les questions suivantes :
 
 - Est-ce que j’utilise un VXLAN ?
-  
+
 ![NSX VXLAN](images/vxlan.gif){.thumbnail}
 
 - Est-ce que j’utilise des règles de Distributed Firewall ?
-  
+
 ![NSX DFW](images/DFW.gif){.thumbnail}
 
 - Est-ce que j'utilise un Distributed Logical Router  ou une Edge Services Gateway?
-  
+
 ![NSX EDGES](images/dlr-edge.gif){.thumbnail}
 
 - Est-ce que j’utilise un VPN SSL ?
 
-Depuis la derniere version NSX-v, les fonctionnalitées étaient désactivées.
+Depuis la derniere version NSX-v, les fonctionnalités étaient désactivées.
 
 #### Je n'utilise aucune des fonctionnalités de NSX-v
 
-Nous allons desactiver `NSX-V` à partir du 31 mars 2024 si vous n’utilisez aucune de ses fonctionnalitées.
+Nous désactivons `NSX-V` depuis le 31 mars 2024 si vous n’utilisez aucune de ses fonctionnalités.
 
 Quelle que soit votre gamme Hosted Private Cloud, si vous souhaitez désactiver NSX-V, vous n'aurez pas à migrer vers un nouveau Centre de données. Vous pourrez ainsi conserver vos ressources actuelles, pour que la tâche de maintenance s'exécute correctement et désactive NSX-V. Vous devez vous assurer de bien nettoyer votre environnement NSX-V.
 
