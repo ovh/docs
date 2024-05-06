@@ -1,20 +1,15 @@
 ---
 title: Signin signup to Data Platform
 excerpt: ""
-updated: 2023-12-08
+updated: 2024-04-30
 ---
 
-## How to access the Data Platform <sup><small>Alpha</small></sup>
+## How to access the Data Platform <sup><small>Beta</small></sup>
 
 > [!warning]
 >
-> Data Platform is currently only deployed as an alpha version. If you experience any difficulties and/or would like to discuss your experience with other users, please contact us on discord <https://discord.gg/ovhcloud>, or get in touch on our community platform: <https://community.ovh.com/en/>.
+> Data Platform is currently only deployed as a beta version. If you experience any difficulties and/or would like to discuss your experience with other users, please contact us on discord <https://discord.gg/ovhcloud>, or get in touch on our community platform: <https://community.ovh.com/en/>.
 > 
-
-> [!warning]
->
-> During the alpha, only invited users can access the Data Platform.
->
 
 ### Signin
 

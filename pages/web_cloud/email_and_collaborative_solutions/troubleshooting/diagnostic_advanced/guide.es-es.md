@@ -1,7 +1,7 @@
 ---
 title: 'No se puede enviar o recibir mensajes'
 excerpt: Cómo reaccionar ante un fallo de funcionamiento en el envío o recepción de los mensajes de correo electrónico a OVHcloud
-updated: 2023-08-30
+updated: 2024-04-11
 ---
 
 ## Objetivo
@@ -48,6 +48,10 @@ Si utiliza un cliente de correo en su ordenador (Outlook, Mail de Mac, Thunderbi
 - Para un servicio **Email Pro**, en la sección [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) de nuestras guías de **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración del cliente de correo`.
 
 - Para un servicio **Exchange**, en la sección [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) de nuestras guías **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración del cliente de correo Exchange` o su smartphone en `Configuración en un smartphone o tablet compatible con Exchange`.
+
+### No puedo recibir correos electrónicos porque mi dirección de correo electrónico está llena, no tengo espacio. ¿Qué puedo hacer?
+
+Si ha contratado [una de nuestras soluciones de correo de OVHcloud](https://www.ovhcloud.com/es/emails/) y tiene una cuenta de correo llena, consulte nuestra guía "[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
 
 ### ¿Los mensajes de correo funcionan desde el webmail? (**envío** y/o **recepción**)
 
@@ -120,6 +124,7 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 |504|Parámetro de órdenes no implementado|Los parámetros o opciones utilizados al enviar el email con su servidor SMTP son reconocidos pero desactivados en su configuración. Por favor, contacte con su proveedor de servicio.|
 |535| falló durante la autenticación| Se ha generado la información de usuario/contraseña o el envío puede estar bloqueado en su dirección de correo. Compruebe el estado de su dirección de correo electrónico desde el área de cliente de OVHcloud. Un cambio de la contraseña puede desbloquear el envío si la cuenta ha sido bloqueada por spam, consulte nuestra guía [¿Qué hacer con una cuenta bloqueada debido a correo no deseado?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) para más información|
 |550|Acción solicitada no realizada: buzón de correo no disponible|El servidor de correo de destino no ha podido verificar la dirección de correo electrónico utilizada. Esto suele deberse a una dirección de correo electrónico de destino no válida, pero también puede significar que el servidor de correo de destino tenga problemas de cortafuegos o conectividad. Compruebe la dirección de correo electrónico del destinatario e inténtelo de nuevo|
+|550 5.7.1|Email rejected per policy reason|El servidor de correo de destino rechazó la dirección de correo de envío por motivos de política de seguridad. Estas razones pueden ser múltiples, normalmente se detallan con el código de error. En algunos casos, puede ser una dirección IP de la cadena de transmisión que está presente en una lista de rechazo. Para comprobar la reputación de una dirección IP, puede probarla, por ejemplo, en [MXtoolbox](https://maxtoolbox.com/blacklists.aspx) o comprobar la cadena de transmisión de un mensaje de correo desde la dirección de correo electrónico correspondiente con [Mailtester](https://www.mail-tester.com/)|
 |550 5.7.26|This message does not have authentication information or fails to pass authentication checks| El correo electrónico fue rechazado porque el servicio de correo electrónico del remitente no tiene configurado SPF o DKIM en su nombre de dominio.<br><br>Se recomienda configurar un registro SPF de prioridad, que es compatible con todas nuestras soluciones de correos electrónicos. Use nuestra guía "[Configure un registro SPF en su nombre de dominio](/pages/web_cloud/domains/dns_zone_spf)".<br><br>Si su oferta de correo electrónico tiene la opción DKIM, puede implementarla usando nuestra guía “[Configurar un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)”.|
 |551|Usuario no local|Esto se usa generalmente como una estrategia de prevención contra el spam. Por alguna razón, el relevo de correo no está autorizado a transferir su mensaje a otro servidor distinto del suyo. Por favor, contacte con su proveedor de servicio.|
 |552|Petición de acción de correo interrumpida: espacio de almacenamiento superado|El usuario al que ha intentado contactar ya no tiene espacio disponible para recibir mensajes. Desafortunadamente, la única solución es contactar con el destinatario a través de otro método|

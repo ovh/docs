@@ -384,10 +384,6 @@ test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 > Changing the flavor will lead to a new LoadBalancer creation and deletion of the old LoadBalancer. During this change your applications may become inaccessible.
 >
 
-#### Sharing load balancer with multiple Services
-
-By default, different Services of LoadBalancer type should have different corresponding cloud load balancers. However, the Cloud Controller Manager (CCM) allows multiple Services to share a single load balancer. To do so, you can follow the official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services).
-
 #### Use PROXY protocol to preserve client IP
 
 When exposing services like nginx-ingress-controller, it's a common requirement that the client connection information could pass through proxy servers and load balancers, therefore visible to the backend services. Knowing the originating IP address of a client may be useful for setting a particular language for a website, keeping a denylist of IP addresses, or simply for logging and statistics purposes. You can follow the official Cloud Controller Manager documentation on how to [Use PROXY protocol to preserve client IP](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#use-proxy-protocol-to-preserve-client-ip).
@@ -422,22 +418,33 @@ kubectl apply -f your-service-manifest.yaml
 > Changing the LoadBalancer class of your Service will lead to the creation of a new Loadbalancer and the allocation of a new Public IP (Floating IP).
 >
 
+### Features not yet supported
+
+#### Sharing load balancer with multiple Services
+
+By default, different Services of LoadBalancer type should have different corresponding cloud load balancers. However, the Cloud Controller Manager (CCM) allows multiple Services to share a single load balancer. We are currently working to provide this feature for General Availability laucnh. Official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services).
+
 ## Resources Naming
 
 When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, the Cloud Controller Manager (CCM) implementation will automatically create Public Cloud resources (LoadBalancer, Listener, Pool, Health-monitor, Gateway, Network, Subnet,...). In order to easily identify those resources, here are the naming templates:
 
+> [!warning]
+>
+> Do not change the name of resources automatically created by MKS, as it may result to inconsistencies.
+>
+
+
 | Resource                                                           | Naming                                                                                                                 |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Public Cloud Load Balancer                                         | mks_resource_$mks_cluster_shortname_$namespace_$k8s_service_name_$mks-service-id |
-| Listener                                                           | listener_mks_resource_$listener_n°_$mks_cluster_shortname_$namespace_$service-name                                    |
-| Pool                                                               | pool_mks_resource_$pool_n°_$mks_cluster_shortname_$namespace_$service-name                                            |
-| Health-monitor                                                     | monitor_mks_resource_$mks_cluster_shortname_$namespace_$service-name                                                  |
+| Public Cloud Load Balancer                                         | kube_service_$mks_cluster_shortname_$namespace_$k8s_service_name |
+| Listener                                                           | listener_kube_service_$listener_n°_$mks_cluster_shortname_$namespace_$service-name                                    |
+| Pool                                                               | pool_kube_service_$pool_n°_$mks_cluster_shortname_$namespace_$service-name                                            |
+| Health-monitor                                                     | monitor_kube_service_$mks_cluster_shortname_$namespace_$service-name                                                  |
 | Network (only automatically created in Public-to-Public scenario)  | k8s-cluster-$mks_cluster_id                                                                                            |
 | Subnet (only automatically created in Public-to-Public scenario)   | k8s-cluster-$mks_cluster_id                                                                                            |
 | Gateway/Router                                                     | k8s-cluster-$mks_cluster_id                                                                                            |
 | Floating IP                                                        | Name = IP. Description= LB Octavia Name                                                                                |
-
-## Others resources
+## Other resources
 
 - [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
 - [Using Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)

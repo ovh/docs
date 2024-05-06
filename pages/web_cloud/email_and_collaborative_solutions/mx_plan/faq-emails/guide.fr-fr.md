@@ -22,7 +22,7 @@ Si les enregistrements MX sont différents, c'est que vous avez potentiellement 
 
 ### Comment configurer mon adresse e-mail et l'utiliser avec le webmail ? 
 
-Il est possible de configurer votre compte e-mail sur un logiciel de messagerie tel que Outlook, Thunderbird, Mail de Mac... 
+Il est possible de configurer votre compte e-mail sur un logiciel de messagerie tel que Outlook, Thunderbird, Mail de Mac...
 Pour ce faire nous vous mettons à disposition des guides afin d'effectuer la mise en place de votre adresse. Vous pouvez les retrouver sur [cette page](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 Grâce au [webmail](https://www.ovh.com/fr/mail/){.external}, vous pouvez accéder à tout moment à votre messagerie, depuis n'importe quel appareil connecté. Une fois votre compte e-mail créé, connectez-vous ici pour y accéder.
@@ -58,9 +58,9 @@ Vous souhaitez changer [d'offre e-mail](https://www.ovhcloud.com/fr/emails/) pou
 - [Migrer des comptes e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 - [Migrer un compte Gmail vers un compte e-mail OVHcloud via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
 
-### L'offre Office 365 Pro Plus comprend-t-elle une licence Skype? 
+### L'offre Office 365 Pro Plus comprend-t-elle une licence Skype?
 
-L’offre Office 365 Pro Plus ne contient pas de licence Skype. Seul le logiciel Skype for Business y est inclus. 
+L’offre Office 365 Pro Plus ne contient pas de licence Skype. Seul le logiciel Skype for Business y est inclus.
 
 ## Aller plus loin
 
