@@ -637,6 +637,7 @@
             + [Update a subnet properties](public_cloud/public_cloud_network_services/configuration-04-update_subnet)
         + [Technical resources](public-cloud-network-technical-resources)
             + [Deploying a Public Cloud Load Balancer](public_cloud/public_cloud_network_services/technical-resources-01-using-lbaas-in-openstack-environment)
+            * [How to create and manage a Health Monitor for OVHcloud Public Cloud Load Balancer](public_cloud/public_cloud_network_services/technical-resources-03-lbaas-create-health-monitor)
             + [Known limits](public_cloud/public_cloud_network_services/known-limits)
             + [Public Cloud Load Balancer monitoring with Prometheus](public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus)
         + [Tutorials](public-cloud-network-tutorials)
