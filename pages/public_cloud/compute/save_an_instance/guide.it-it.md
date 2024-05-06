@@ -1,7 +1,7 @@
 ---
 title: "Effettuare il backup di un'istanza"
 excerpt: "Come eseguire le prime operazioni su un'istanza Public Cloud dallo Spazio Cliente OVHcloud"
-updated: 2023-09-21
+updated: 2024-05-02
 ---
 
 > [!primary]
@@ -37,7 +37,7 @@ Assegna un nome al backup nella nuova pagina. Leggi le tariffe e clicca su `Conf
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Una volta terminato il backup, sarà disponibile nella sezione `Instance Backup`{.action}.
+Una volta terminato il backup, sarà disponibile nella sezione `Instance Backup`{.action} sotto `Storage`{.action} nel menu di sinistra.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
@@ -78,13 +78,17 @@ Inserisci un nome per la pianificazione del backup automatico. Leggi le informaz
 
 ### Gestione di backup e pianificazione
 
-Le pianificazioni possono essere create ed eliminate nella sezione `Workflow Management`{.action} dello Spazio Cliente Public Cloud.
+Le pianificazioni possono essere create ed eliminate nella sezione `Workflow Management`{.action}, che si trova sotto `Storage`{.action} nel menu di sinistra.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-I backup delle istanze sono gestiti nella sezione `Instance Backup`{.action} dello Spazio Cliente Public Cloud.
+I backup delle istanze sono gestiti nella sezione `Instance Backup`{.action}, che si trova sotto `Storage`{.action} nel menu di sinistra.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> L’opzione di backup dell’istanza deve essere eliminata separatamente se non vuoi più che ti venga fatturata. L’eliminazione di un’istanza non comporta l’eliminazione delle opzioni ad essa associate.
+>
 
 > [!warning]
 > **Si noti che non è possibile eliminare un backup dell'istanza se un'istanza creata da questo backup è in esecuzione al momento dell'azione di eliminazione.**

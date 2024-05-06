@@ -1,7 +1,7 @@
 ---
 title: 'Guardar uma instância'
 excerpt: 'Saiba como efetuar o backup de uma instância Public Cloud a partir da Área de Cliente OVHcloud'
-updated: 2023-09-21
+updated: 2024-05-02
 ---
 
 > [!primary]
@@ -37,7 +37,7 @@ Introduza um nome para o backup na página seguinte. Consulte as informações t
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Uma vez terminado o backup, este estará disponível na secção `Instance Backup`{.action}.
+Uma vez terminado o backup, este estará disponível na secção `Instance Backup`{.action} na rubrica `Storage`{.action} no menu à esquerda.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
@@ -78,13 +78,17 @@ Introduza um nome para o planeamento do backup automático. Leia as informaçõe
 
 ### Gestão dos backups e dos planos
 
-Os planos podem ser criados e eliminados na secção `Workflow Management`{.action} da Área de Cliente Public Cloud.
+As planificações podem ser criadas e eliminadas na secção `Workflow Management`{.action} que se encontra na rubrica `Storage`{.action} no menu à esquerda.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Os backups das suas instâncias são geridos na secção `Instance Backup`{.action} da sua Área de Cliente Public Cloud.
+Os backups das suas instâncias são geridos na secção `Instance Backup`{.action}, que se encontra na secção `Storage`{.action} no menu à esquerda.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> A opção de backup da instância deve ser eliminada separadamente se já não desejar que esta lhe seja faturada. A eliminação de uma instância não elimina as opções que lhe estão associadas.
+>
 
 > [!warning]
 > **Tenha em atenção que não é possível eliminar um backup de instância se uma instância gerada a partir deste backup estiver a ser executada no momento da ação de eliminação.**

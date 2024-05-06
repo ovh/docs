@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie kopii zapasowej instancji'
 excerpt: 'Dowiedz się, jak utworzyć kopię zapasową instancji Public Cloud w Panelu klienta OVHcloud'
-updated: 2023-09-21
+updated: 2024-05-02
 ---
 
 > [!primary]
@@ -37,7 +37,7 @@ Wpisz nazwę kopii zapasowej na następnej stronie. Zapoznaj się z informacjami
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Po utworzeniu kopii zapasowej będzie ona dostępna w sekcji `Instance Backup`{.action}.
+Po utworzeniu kopii zapasowej będzie ona dostępna w sekcji `Instance Backup`{.action} pod `Storage`{.action} w menu po lewej stronie.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
@@ -78,13 +78,17 @@ Wprowadź nazwę do automatycznego planowania tworzenia kopii zapasowych. Zapozn
 
 ### Zarządzanie kopiami zapasowymi i planami
 
-Planowanie może zostać utworzone i usunięte w sekcji `Workflow Management`{.action} w Twoim Panelu klienta Public Cloud.
+Planowanie może zostać utworzone i usunięte w sekcji `Workflow Management`{.action}, która znajduje się pod `Storage`{.action} w menu po lewej stronie.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Kopie zapasowe instancji są zarządzane w sekcji `Instance Backup`{.action} w Panelu klienta Public Cloud.
+Kopie zapasowe instancji są zarządzane w sekcji `Instance Backup`{.action}, która znajduje się pod rubryką `Storage`{.action} w menu po lewej stronie.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> Opcja kopii zapasowej instancji musi zostać usunięta oddzielnie, jeśli nie chcesz już ponosić za nią opłat. Usunięcie instancji nie powoduje usunięcia powiązanych z nią opcji.
+>
 
 > [!warning]
 > **Nie można usunąć kopii instancji, jeśli instancja uruchomiona z tej kopii zapasowej jest uruchomiona w czasie wykonywania akcji usuwania.**
