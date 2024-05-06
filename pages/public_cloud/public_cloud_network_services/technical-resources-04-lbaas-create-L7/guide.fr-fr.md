@@ -131,13 +131,13 @@ Après avoir rempli tous les champs nécessaires, cliquez sur **Ajouter** pour c
 
 Après avoir créé une L7 policy, vous pouvez y ajouter des règles pour préciser les conditions sous lesquelles cette politique doit s'activer. Voici les étapes pour ajouter des règles L7 à une politique existante :
 
-1. **Accès aux options de la politique L7**
+1\. **Accès aux options de la politique L7**
 
 Sur la page des politiques L7 de votre listener, localisez la politique pour laquelle vous souhaitez ajouter des règles. Cliquez sur sur le bouton `...`{.action} à côté de la politique concernée et sélectionnez `Gérer les L7 rules`{.action}.
 
 ![Schema 1](images/Policy5.png){.thumbnail}
 
-2. **Ajouter une nouvelle règle L7**
+2\. **Ajouter une nouvelle règle L7**
 
 Sur la page des règles L7, cliquez sur le bouton `Ajouter une L7 rule`{.action}.
 
@@ -145,7 +145,7 @@ Sur la page des règles L7, cliquez sur le bouton `Ajouter une L7 rule`{.action}
 
 Une L7 rule est un test logique qui renvoie les statuts `True` ou `False`. Pour déclencher l'action de la politique, toutes les règles doivent retourner `True`.
 
-3. **Configuration de la règle L7**
+3\. **Configuration de la règle L7**
 
 - **Type de la L7 Rule** : sélectionnez le type de règle que vous souhaitez créer (par exemple : Cookie, Header, Host name, Path, etc.).
 - **Type de comparaison** : choisissez comment vous souhaitez comparer les données (Regex, starts with, ends with, contains, equal to).
@@ -153,7 +153,7 @@ Une L7 rule est un test logique qui renvoie les statuts `True` ou `False`. Pour 
 - **Valeur** : indiquez la valeur utilisée par le type de comparaison.
 - **Inverser** : optionnellement, vous pouvez inverser la logique de la règle pour que lorsque la condition est `True`, la logique de la règle soit considérée comme `False` et vice versa.
 
-4. **Types de Règles L7 disponibles**
+4\. **Types de Règles L7 disponibles**
 
 - **Cookie** : inspecte les cookies des requêtes pour identifier des critères spécifiques.
 - **Header** : analyse les en-têtes HTTP pour détecter des valeurs définies.
@@ -166,7 +166,7 @@ Une L7 rule est un test logique qui renvoie les statuts `True` ou `False`. Pour 
 
 ![Schema 1](images/Policy7.png){.thumbnail}
 
-5. **Enregistrement de la règle**
+5\. **Enregistrement de la règle**
 
 Une fois tous les champs remplis selon vos critères, cliquez sur `Ajouter`{.action} pour enregistrer la règle à votre politique L7.
 
@@ -296,7 +296,7 @@ Vous serez guidé à travers un formulaire pour définir :
 - **Action** : choisissez l'action que la politique doit exécuter (par exemple : REDIRECT_TO_URL, REDIRECT_TO_POOL, REJECT).
 - **Conditions spécifiques** : définissez tout critère spécifique qui doit être rencontré pour que la politique soit activée.
 
-4. **Ajout de Règles à la Politique** :
+4\. **Ajout de Règles à la Politique** :
 
 Une fois la politique créée, pour ajouter des règles spécifiques à cette politique, retournez à l'écran de détails de la politique L7.
 
