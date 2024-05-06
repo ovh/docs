@@ -5,24 +5,23 @@ updated: 2024-05-24
 ---
 
 # Table of Contents
-1. [Informations utiles](## Objectif)
-1. [Prérequis](## Prérequis)
-2. [Les concepts IAM dans un PCC](## En pratique)
-3. [Comment fonctionne une Politique IAM](### Etape 1)
-4. [Comment activer IAM](## Aller plus loin)
-
+1. [Premiers pas avec IAM](lien vers doc getting started)
+1. [Les Prérequis](lien vers doc)
+2. [Les concepts IAM dans un PCC](lien vers doc)
+3. [Comment activer IAM](lien vers doc)
+4. [Comment ajouter un role IAM manuellement](lien vers doc)
 
 ## Objectif
   
-**Dans ce guide, nous allons vous expliquer les bases pour démarrer avec IAM dans votre Cloud Privée VMware on OVHcloud** 
+**Dans ces guides, nous allons vous expliquer les bases pour démarrer avec IAM dans votre Cloud Privée VMware on OVHcloud** 
 
-Vous apprendrez :
+Voici les liens des guides :
 
-- Etape 1 : Commment activer IAM dans votre cloud privée OVHcloud -> lien vers doc ...
-- Etape 2 : Comment créer un role IAM et le lier à une politique (policy) IAM -> lien vers doc "Comment ajouter un role manuellement à une policy IAM"
-- Etape 3 : Comment configurer des politique IAM avec votre cloud privée OVHcloud -> lien vers doc ...
-- Etape 4 : Comment lier un role IAM à une politique (policy) -> lien vers doc ...
-- Etape 5 : Comment gérer les identités associées IAM avec mon PCC -> -> lien vers doc ...
+- Guide 1 : [Comment activer IAM dans votre cloud privée OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_enable#Objectif)
+- Guide 2 : [Comment créer un role IAM et le lier à une politique](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
+- Guide 3 : [Comment configurer des politique IAM avec votre cloud privée OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_policy)
+- Guide 4 : [Comment lier un role IAM à une politique](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
+- Guide 5 : [Comment gérer les identités associées IAM avec mon PCC](/home/pbgarcia/Documents/GIT/doc3/docs/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_actions)
 
 
 Le diagramme suivant présente une vue d'ensemble de la solution IAM ainsi que le fonctionnement de la gestion des **Ressources**, des **Droits** et **Actions** :
