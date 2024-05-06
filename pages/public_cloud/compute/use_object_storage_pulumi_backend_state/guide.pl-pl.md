@@ -1,17 +1,17 @@
 ---
-title: 'Using OVHcloud Object Storage as Pulumi Backend to store your Pulumi state'
-excerpt: 'Find out how to use an OVHcloud Object Storage S3 bucket as a Pulumi Backend to store your Pulumi state'
-updated: 2024-04-30
+title: "Using OVHcloud Object Storage as Pulumi Backend to store your Pulumi state"
+excerpt: "Find out how to use an OVHcloud Object Storage S3 bucket as a Pulumi Backend to store your Pulumi state"
+updated: 2024-05-02
 ---
 
 ## Objective
 
-It is possible to store Pulumi state on a remote data store/backend like an AWS S3 bucket, a Google Cloud Storage (GCS), etc. but are you aware that you can also store your Pulumi states on an OVHcloud Object Storage container (bucket)?
+It is possible to store Pulumi state on a remote data store/backend like an AWS S3 bucket, a Google Cloud Storage (GCS), etc., but did you know that you can also store your Pulumi states on an OVHcloud Object Storage container (bucket)?
 
 In this tutorial you will:
 
 - create an OVHcloud Object Storage container
-- log-in in Pulumi and initialize your Pulumi backend
+- log in to Pulumi and initialise your Pulumi backend
 
 ## Requirements
 
@@ -19,35 +19,35 @@ In this tutorial you will:
 - A [Public Cloud Instance](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
 - [Pulumi CLI](https://www.pulumi.com/docs/install/){.external} installed
 
-## Before you begin
+**Before you begin**
 
-* You should have installed Pulumi CLI, on your machine. You can install it by following the [detailed installation instructions](https://www.pulumi.com/docs/install/){.external}.
+- You should have installed Pulumi CLI, on your machine. You can install it by following the [detailed installation instructions](https://www.pulumi.com/docs/install/){.external}.
 
-## Pulumi
+**Pulumi**
 
 ![Pulumi](images/pulumi.jpg){.thumbnail}
 
-[Pulumi](https://www.pulumi.com/) is an Infrastructure as code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang for example.
-Users define the desired state in Pulumi programs and Pulumi create the desired resources.
+[Pulumi](https://www.pulumi.com/){.external} is an Infrastructure as Code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang for example.
+Users define the desired state in Pulumi programs and Pulumi creates the desired resources.
 
-Pulumi offers an intuitive command line interface (CLI), to provision, update or delete your infrastructure. If you are familiar with Docker Compose CLI and Terraform CLI, you will adopt [Pulumi CLI](https://www.pulumi.com/docs/cli/) too.
+Pulumi offers an intuitive command line interface (CLI), to provision, update or delete your infrastructure. If you are familiar with Docker Compose CLI and Terraform CLI, you will adopt [Pulumi CLI](https://www.pulumi.com/docs/cli/){.external} too.
 
 At OVHcloud we created a [Pulumi provider](https://www.pulumi.com/registry/packages/ovh/){.external} that you can use to interact with and manage OVHcloud resources.
 
-### Pulumi states and backend
+**Pulumi states and backend**
 
-Pulumi stores metadata about your infrastructure so that it can manage your cloud resources, for example your OVHcloud resources. This metadata is called `state` and is typically JSON files. Each [stack](https://www.pulumi.com/docs/concepts/stack/) has its own state, and state is how Pulumi knows when and how to create, read, delete, or update cloud resources.
+Pulumi stores metadata about your infrastructure so that it can manage your cloud resources, for example your OVHcloud resources. This metadata is called `state` and is typically JSON files. Each [stack](https://www.pulumi.com/docs/concepts/stack/){.external} has its own state, and state is how Pulumi knows when and how to create, read, delete, or update cloud resources.
 
-A Pulumi state is updated when you run `pulumi login`, `pulumi up` or `pulumi destroy` commands.
+A Pulumi state is updated when you run the `pulumi login`, `pulumi up` or `pulumi destroy` commands.
 
-By default, the state files are stored in the Pulumi Cloud and you can also store it locally.
-But you can store the state remotely in a [self-managed backend](https://www.pulumi.com/docs/concepts/state/#using-a-self-managed-backend).
+By default, status files are stored in the Pulumi cloud, and you can also store them locally.
+You can store the state remotely in a [self-managed backend](https://www.pulumi.com/docs/concepts/state/#using-a-self-managed-backend).
 
 ![Pulumi state schema](images/pulumi-state-schema.png){.thumbnail}
 
 For example, you can store your Pulumi state on an OVHcloud High Performance (S3) Object Storage container.
 
-In order to do that you have several ways: through the `pulumi login` command or through the configuration of a `backend` in your `Pulumi.yaml` file.
+There are several ways of doing this: using the `pulumi login` command or configuring a `backend` in your `Pulumi.yaml` file.
 
 A state is composed of several files inside a `.pulumi` folder:
 
@@ -60,12 +60,12 @@ A state is composed of several files inside a `.pulumi` folder:
 
 ### Creating an Object Storage container/bucket
 
-First, you need to have an Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket) guide.
+First, you need to have an Object Storage container. If you don't already have one, please consult the guide [Creating an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket).
 
-For this guide, our Object Storage container is:
+For this guide, our Object Storage container has the following characteristics:
 
 - a `High Performance Object Storage - S3 API`
-- in `GRA` region
+- located in the `GRA` region
 - with a newly created user
 - named `pulumi`
 
@@ -73,8 +73,9 @@ For this guide, our Object Storage container is:
 
 > [!primary]
 > Save the S3 credentials, you will use the `S3 access key` and the `S3 secret key` in the coming `export` commands.
+> 
 
-Click on the `pulumi` bucket to enter it and display its information, including the useful `endpoint`.
+Click on `pulumi`{.action} to access the bucket and to display its information, including the useful `Endpoint`.
 
 ![OVHcloud Object Storage pulumi bucket](images/pulumi-bucket.png){.thumbnail}
 
@@ -87,8 +88,8 @@ export AWS_SECRET_ACCESS_KEY=<S3 secret key>
 
 ### Set-up Pulumi backend and login
 
-You have several ways to define the backend to store a Pulumi state in a remote backend.
-Follow the one that you want.
+There are several ways to define the backend for storing a Pulumi report in a remote backend.
+Follow the one you prefer.
 
 > [!tabs]
 > Pulumi login with backend URL
@@ -98,7 +99,7 @@ Follow the one that you want.
 >>
 >> Logged in to ovh-tuto-27gm21h6v46 as gitpod (s3://pulumi?endpoint=s3.gra.perf.cloud.ovh.net&region=gra)
 >> ```
-> Backend configuration in Pulumi.yaml file
+> Backend configuration in the `Pulumi.yaml` file
 >> Or if you don't want to type the URL every time, you can define a backend property in the `Pulumi.yaml` config file as below:
 >>
 >> ```bash
@@ -108,7 +109,7 @@ Follow the one that you want.
 >> ...
 >> ```
 >>
->> Then you can simply execute `pulumi login` command to log you and store/retrieve the state:
+>> Then you can simply run the `pulumi login` command to log in and store/retrieve the state:
 >>
 >> ```bash
 >> $ pulumi login
@@ -117,6 +118,7 @@ Follow the one that you want.
 >>```
 
 As you can see, in both solutions, we defined all the needed parameters to access to the existing OVHcloud S3 bucket:
+
 - endpoint=s3.gra.perf.cloud.ovh.net
 - region=gra (or the region of your OVHcloud Object Storage bucket)
 
