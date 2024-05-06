@@ -89,12 +89,12 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
 - Pour accéder aux options de gestion des politiques L7 d'un listener spécifique, cliquez sur les trois petits points (...) situés à droite du listener que vous souhaitez configurer. 
 - Sélectionnez l'option « **Voir les L7 policies** » dans le menu déroulant.
 
-![Schema 1](images/Policy1.png){.thumbnail}
+![Schema 1](images/Policy9.png){.thumbnail}
 
 - **Note importante :** La gestion des politiques L7 n'est disponible que pour les listeners utilisant les protocoles `HTTP` et `TERMINATED HTTPS`. Assurez-vous que votre listener utilise l'un de ces protocoles avant de tenter d'accéder à ces paramètres.
 - Une fois dans la section des politiques L7, vous pouvez voir les politiques existantes ou cliquer sur « **Ajouter une L7 policy** » pour créer une nouvelle politique, selon les options disponibles dans l'interface.
 
-![Schema 1](images/Policy2.png){.thumbnail}
+![Schema 1](images/Policy10.png){.thumbnail}
 
 ##### Remplissage du formulaire de création de politique L7
 
@@ -108,7 +108,7 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
   - `REDIRECT_PREFIX` : Ici, le Load Balancer ajoute un préfixe à l'URL reçue dans la requête. Remplissez le champ `Préfixe` et choisissez le code de réponse HTTP approprié pour la redirection.
   - `REJECT` : Rejette les requêtes et retourne le code HTTP 403 (Forbidden).
 
-![Schema 1](images/Policy3.png){.thumbnail}
+![Schema 1](images/Policy11.png){.thumbnail}
 
 - Après avoir rempli tous les champs nécessaires, cliquez sur **Ajouter** pour créer votre politique L7.
 
