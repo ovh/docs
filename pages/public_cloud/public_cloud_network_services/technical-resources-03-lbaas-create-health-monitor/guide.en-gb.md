@@ -1,7 +1,7 @@
 ---
 title: How to create and manage a Health Monitor for OVHcloud Public Cloud Load Balancer
 excerpt: Master the setup and management of a Health Monitor with OVHCloud Public Cloud Load Balancers via the OVHcloud interface, CLI, Horizon, and Terraform
-updated: 2024-04-30
+updated: 2024-05-06
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ Learn how to create and manage a Health Monitor for your OVHcloud Load Balancers
 - An [active OVHcloud account](/links/manager)
 - Understanding of the [Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer)
 - An active [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)
-- A previously configured [Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) within your OVHcloud project space
+- A previously configured [Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) within your OVHcloud project
 
 ## Instructions
 
@@ -28,7 +28,6 @@ Different types of Health Monitors cater to various specific needs:
 #### HTTP/S
 
 - Performs HTTP or HTTPS requests, ideal for checking the health status of web applications or REST APIs.
-
 - **`url_path`**: Targeted path for the check, default is `/`.
 - **`http_method`**: HTTP method used for the check, usually `GET`.
 - **`expected_codes`**: Response codes indicating a healthy state, typically `200`.
@@ -70,9 +69,7 @@ Effectively setting up a Health Monitor is crucial for maintaining the high avai
 When configuring Health Monitors for web applications, keep the following tips in mind:
 
 - **URL Path (`url_path`)**: Choose a lightweight and fast-loading path for health checks, ideally a page that does not require heavy processing or authentication.
-  
 - **HTTP Method (`http_method`)**: Use less resource-intensive methods, such as `HEAD` or `GET`, to minimize the impact on server performance.
-  
 - **Expected Response Codes (`expected_codes`)**: Configure the HTTP response codes that indicate a server is healthy, typically `200`.
 
 #### Monitoring and Testing
@@ -113,7 +110,7 @@ Follow these steps to add a Health Monitor to a pool of your OVHcloud Load Balan
 ![Schema 1](images/healthM2.png){.thumbnail}
 
 - **General Information**:
-  - **Name**: Must contain only letters, numbers, underscores, dashes, or dots.
+  - **Name**: Must contain only letters, numbers, underscores (`_`), dashes (`-`), or dots (`.`).
   - **Type**: Select the type of Health Monitor (e.g. HTTP, HTTPS, TCP, TLS-hello).
 
 - For **HTTP** and **HTTPS** types:
@@ -138,7 +135,7 @@ This process creates a Health Monitor that will regularly perform health checks 
 2\. Use the following command to create a Health Monitor:
 
 ```bash
-   openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 3 --type HTTP --http-method GET --url-path /healthcheck --expected-codes 200 <POOL_ID>
+openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 3 --type HTTP --http-method GET --url-path /healthcheck --expected-codes 200 <POOL_ID>
 ```
 
 Replace <POOL_ID> with the ID of your Pool.
