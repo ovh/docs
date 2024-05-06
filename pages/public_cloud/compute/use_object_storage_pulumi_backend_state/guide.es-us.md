@@ -1,7 +1,7 @@
 ---
 title: "Using OVHcloud Object Storage as Pulumi Backend to store your Pulumi state"
 excerpt: "Find out how to use an OVHcloud Object Storage S3 bucket as a Pulumi Backend to store your Pulumi state"
-updated: 2024-05-02
+updated: 2024-05-06
 ---
 
 ## Objective
@@ -15,7 +15,7 @@ In this tutorial you will:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud Instance](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
 - [Pulumi CLI](https://www.pulumi.com/docs/install/){.external} installed
 
