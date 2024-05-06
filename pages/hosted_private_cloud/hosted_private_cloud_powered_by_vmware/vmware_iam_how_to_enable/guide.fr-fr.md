@@ -4,17 +4,31 @@ excerpt: "Comment activer avec IAM dans un cloud privée OVH"
 updated: 2024-05-24
 ---
 
-# Table of Contents
+# Table des matières
+
 1. [Premiers pas avec IAM](lien vers doc getting started)
-1. [Les Prérequis](lien vers doc)
-2. [Les concepts IAM dans un PCC](lien vers doc)
-3. [Comment activer IAM](lien vers doc)
-4. [Comment ajouter un role IAM manuellement](lien vers doc)
+2. [Les Prérequis](lien vers doc)
+3. [Les concepts IAM dans un PCC](lien vers doc)
+4. [Comment activer IAM](lien vers doc)
+[Comment ajouter un role IAM manuellement](lien vers doc)
 
 
 ## Objectif
 
 **Ce guide vous détaille comment activer IAM dans votre Cloud Privée VMware on OVHcloud**
+
+Voici les liens des guides :
+
+- Guide 1 : [Comment activer IAM dans votre cloud privée OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_enable#Objectif)
+- Guide 2 : [Comment créer un role IAM et le lier à une politique](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
+- Guide 3 : [Comment configurer des politique IAM avec votre cloud privée OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_policy)
+- Guide 4 : [Comment lier un role IAM à une politique](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
+- Guide 5 : [Comment gérer les identités associées IAM avec mon PCC](/home/pbgarcia/Documents/GIT/doc3/docs/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_actions)
+
+
+Le diagramme suivant présente une vue d'ensemble de la solution IAM ainsi que le fonctionnement de la gestion des **Ressources**, des **Droits** et **Actions** :
+
+![Schema IAM](images/iam_schema.png){.thumbnail}
 
 ## Prérequis
 
@@ -32,31 +46,31 @@ La gestion des accès OVHcloud est basée sur un système de gestion des politiq
 
 Pour comprendre un peu mieux les concepts IAM au sein de votre Hosted Private Cloud - VMware On OVHcloud (PCC), vous pouvez lire [Premiers pas avec IAM](lien vers doc getting started)
 
-### Etape 1 : Activer IAM
+## Etape 1 - Activer IAM
 
-#### Comment lier un role à une polittique IAM ?
+### Comment activer IAM dans un PCC depuis l'espace client ?
 
-
-pccVMware:vSphere:assumeRole?iam-
+> [!CAUTION]
+> Cette opération pourra prendre jusqu’à 30 minutes.
 
 1. Via l'espace client :
 
+Dans le menu de gestion des utilisateurs de votre Hosted Private cloud, Cliquez sur : `Activer l'IAM OVHcloud`.
+
+Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/pcc-X-X-X-X/users
+
+![Activer IAM](images/iam_enable_2.png){.thumbnail }
+
+![Activer IAM](images/iam_enable.png){.thumbnail }
+
+### Comment activer IAM dans un PCC depuis l'API OVHcloud ?
+
 > [!CAUTION]
 > Cette opération pourra prendre jusqu’à 30 minutes.
-
-Dans le menu de gestion des utilisateur de votre environnment Hosted Private cloud, Cliquez : sur `Activer l'IAM OVHcloud`.
-
-[Lien OVHcloud:](https://www.ovh.com/manager/#/dedicated/dedicated_cloud/pcc-X-X-X-X/users).
-
-[Enable IAM](images/iam_enable.png)
 
 2. Via l'API :
 
-> [!CAUTION]
-> Cette opération pourra prendre jusqu’à 30 minutes.
-
 Vous pouvez activer l'option IAM sur votre Hosted Private Cloud depuis l'API OVHcloud. Exécutez l'appel suivant :
-
 
 > [!tabs]
 > 1st tab title
@@ -64,7 +78,6 @@ Vous pouvez activer l'option IAM sur votre Hosted Private Cloud depuis l'API OVH
 >> >
 >> > @api {v1} POST /dedicatedCloud/{serviceName}/iam/enable
 >> >
-
 
 ## Aller plus loin
 
