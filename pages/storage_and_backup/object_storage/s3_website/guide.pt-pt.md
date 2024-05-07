@@ -1,7 +1,11 @@
 ---
 title: Object Storage - Alojar um sítio Web estático num bucket S3 (EN)
 excerpt: Learn how to configure a S3 bucket to host a static website
+<<<<<<< HEAD
 updated: 2024-04-24
+=======
+updated: 2024-05-13
+>>>>>>> a435e6a3aa (Minor fixes and dates update)
 ---
 
 ## Objective

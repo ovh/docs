@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints e geoavailability do Object Storage (EN)
-updated: 2024-03-01
+updated: 2024-05-13
 ---
 
 <style>
@@ -32,13 +32,11 @@ The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh
 
 The legacy endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes and all S3 API operations will still be supported. However, please note that this endpoint will automatically enforce the High Performance storage class of object upload operations.
 
-
 ## Object Storage Swift
 
 | Storage solution | endpoint URL | Region available<br><b><i>To be entered in lower case</i></b> |
 | ------ | ------ | ------ |
 | Object Storage SWIFT - Standard - Legacy |`https://s3.<region>.cloud.ovh.net` | Strasbourg: sbg<br>London: uk<br>Frankfurt: de<br>Warsaw: waw<br>Beauharnois: bhs<br>Gravelines: gra |
-
 
 ## Go further
 
