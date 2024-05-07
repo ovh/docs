@@ -18,9 +18,9 @@ Voici le liens des guides :
 
 - Guide 1 : [Comment activer IAM dans votre cloud privée OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_enable#Objectif)
 - Guide 2 : [Comment créer un role IAM et le lier à une politique](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
-- Guide 3 : [Comment configurer des politiques IAM avec votre cloud privée OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_policy)
-- Guide 4 : [Comment lier un role IAM à une politique](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
-- Guide 5 : [Comment gérer les identités associées IAM avec mon PCC](/home/pbgarcia/Documents/GIT/doc3/docs/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_actions)
+- Guide 3 : [](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_policy)
+- Guide 4 : [Utilisation des roles par defaut](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
+- Guide 5 : [](/home/pbgarcia/Documents/GIT/doc3/docs/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_actions)
 
 
 Le diagramme suivant présente une vue d'ensemble de la solution IAM ainsi que le fonctionnement de la gestion des **Ressources**, des **Droits** et **Actions** :
@@ -29,11 +29,11 @@ Le diagramme suivant présente une vue d'ensemble de la solution IAM ainsi que l
 
 ## FAQ
 
-## Dans qu'elle scope applicable puis-je utiliser IAM dans mon cloud privée OVHcloud ?
+## Dans quelle scope applicable puis-je utiliser IAM dans mon cloud privée OVHcloud ?
 
 IAM permet de simplifier la gestion de l'authentification et de centraliser son utilisation.
 
-## Quelles droits je peux utiliser avec mon role dans une policy IAM ?
+## Quelles sont les droits que je peux utiliser dans mon role IAM ?
 
 Les droits utilisés avec une politique IAM sont ceux que je retrouve dans la console OVhcloud de mon PCC VMware. Je peux choisir **d'accéder à Vsphere, accéder au vmNetwork, accéder aux v(x)Lans** (en opérateur, lecture, écriture, administrateur par exemple). Ils sont modifiable niveau du PCC  ou par datacentres. Grâce aux roles IAM.
 
@@ -62,6 +62,12 @@ Oui je peux activer IAM depuis mon cloud privée VMware (voir guide : Comment ac
 ## Est ce que je peux ajouter un role automatiquement à une politique IAM ?
 
 Non il n'est pas possible j'ajouter un role grace aux groupe de permissions managées.
+
+## Que représente un role dans une politique IAM ?
+
+Chaque rôle de votre Hosted Private Cloud correspond à une action s'écrivant sous la forme `pccVMware:vSphere:assumeRole?nom_du_role` dans une politique IAM.
+
+Par exemple, pour le rôle **iam-admin** d'un PCC, l'action est -> `pccVMware:vSphere:assumeRole?iam-admin`.
 
 ## Est-il possible d'utiliser une fédération d'identité externe avec IAM et mon PCC ? -> A valider
 
