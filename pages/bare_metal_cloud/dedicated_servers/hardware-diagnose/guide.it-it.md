@@ -1,7 +1,7 @@
 ---
-title: 'Diagnosticare problemi hardware su un server dedicato'
-excerpt: 'Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server'
-updated: 2022-12-15
+title: "Diagnosticare problemi hardware su un server dedicato"
+excerpt: "Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server"
+updated: 2024-05-06
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2022-12-15
 
 ## Obiettivo
 
-Con il passare del tempo, l’usura di un server può causare malfunzionamenti dovuti a problemi di tipo hardware. Per questo motivo, i server dedicati OVHcloud sono dotati di numerosi strumenti di diagnostica che permettono di individuare i componenti hardware difettosi.
+A un certo punto della vita del tuo server, potresti riscontrare un guasto a causa di un problema hardware. Quando il server viene avviato in modalità Rescue OVHcloud, sono disponibili diversi strumenti di diagnostica che permettono di identificare i componenti hardware difettosi.
 
 **Questa guida ti mostra come diagnosticare problemi hardware su un server.**
 
@@ -26,7 +26,7 @@ Questa guida ti mostra i test da effettuare per diagnosticare:
 - processori
 - connessione di rete
 - memoria RAM
-- partizioni del disco
+- dischi e partizioni
 
 ### Processori
 
@@ -58,6 +58,16 @@ Il test di memoria consente di verificare l’integrità dei moduli RAM del serv
 RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
 memtester ${RAM}M 1
 ```
+
+### Disk Health
+
+*Smartmontools* consente di verificare lo stato dei dischi leggendo i dati `SMART`. Ad esempio, per visualizzare tutti i dettagli del disco denominato `nvme1n1`, immettere:
+
+```bash
+smartctl -a /dev/nvme1n1
+```
+
+Per maggiori informazioni sull'output di questo comando e sulla sua interpretazione, consulta la [documentazione ufficiale *Smartmontools*](https://www.smartmontools.org/wiki/TocDoc).
 
 ### Partizioni del disco
 

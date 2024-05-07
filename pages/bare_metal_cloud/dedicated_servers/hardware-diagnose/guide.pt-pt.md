@@ -1,7 +1,7 @@
 ---
-title: 'Diagnosticar avarias materiais num servidor dedicado'
-excerpt: 'Saiba como utilizar as ferramentas de diagnóstico para identificar avarias materiais no seu servidor'
-updated: 2022-12-15
+title: "Diagnosticar avarias materiais num servidor dedicado"
+excerpt: "Saiba como utilizar as ferramentas de diagnóstico para identificar avarias materiais no seu servidor"
+updated: 2024-05-06
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2022-12-15
 
 ## Sumário
 
-O desgaste de um servidor ao longo do tempo pode causar avarias materiais, originando erros. Por essa razão, o seu servidor inclui várias ferramentas de diagnóstico que permitem identificar os componentes físicos com defeito.
+A um determinado momento da vida do seu servidor, pode sofrer uma avaria devido a um problema material. Quando o servidor é iniciado através do modo rescue OVHcloud, dispõe de várias ferramentas de diagnóstico que permitem identificar os componentes materiais com defeito.
 
 **Saiba como diagnosticar avarias materiais no seu servidor dedicado.**
 
@@ -26,7 +26,7 @@ Este guia explica pormenorizadamente os testes a realizar para diagnosticar:
 - o(s) processador(es);
 - a ligação à rede;
 - a memória RAM;
-- as partições do disco.
+- discos e partições.
 
 ### Processadores
 
@@ -58,6 +58,16 @@ O teste da memória verifica a integridade dos módulos RAM do seu servidor. Se 
 RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
 memtester ${RAM}M 1
 ```
+
+### Disk Health
+
+Pode utilizar *Smartmontools* para verificar o estado dos seus discos lendo os dados `SMART`. Por exemplo, para ver todos os detalhes do disco intitulado `nvme1n1`, introduza:
+
+```bash
+smartctl -a /dev/nvme1n1
+```
+
+Para saber mais sobre a saída deste comando e a sua interpretação, consulte [a documentação oficial *Smartmontools*](https://www.smartmontools.org/wiki/TocDoc).
 
 ### Partições do disco
 
