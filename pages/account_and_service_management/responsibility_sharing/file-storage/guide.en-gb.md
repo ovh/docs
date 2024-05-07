@@ -7,7 +7,7 @@ updated: 2024-01-22
 The RACI below details shared responsibilities between OVHcloud and the customer for the following File Storage solutions:
 
 - NAS-HA 
-- Enterprise File Enterprise Storage
+- Enterprise File Storage
 
 This shared model can help relieve the customer’s operational burden.
 

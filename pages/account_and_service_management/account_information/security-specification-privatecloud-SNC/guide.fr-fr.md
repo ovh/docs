@@ -46,7 +46,9 @@ Reprise des SLA des conditions particulières par composante du service.
 
 | **Composant** | **SLA** | **Méthode de calcul** | **Dédommagement** |
 | --- | --- | --- | --- |
-| L'ensemble du service | Le taux de disponibilité mensuel est de 99,9 % pour l'ensemble du service | Nombre total  de minutes du mois considéré, déduction faite du nombre de minutes d’indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré. Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement. | 1- si de taux disponibilité mensuel < 99,9 %, crédit de 10% du prix du service impacté. <br>2- si taux de disponibilité mensuel <99%,9 crédit de 30% du prix du service impacté |
+| L'ensemble du service | Le taux de disponibilité mensuel est de 99,95 % pour l'ensemble du service | Nombre total de minutes du mois considéré, déduction faite du nombre de minutes d’indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré. Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement. | 1. si le taux disponibilité mensuel est < 99,95%, crédit de 10% du prix du service impacté. <br>2. Si le taux de disponibilité mensuel est < 99,99%, crédit de 30% du prix du service impacté |
+
+Les SLA pour les options telles que Veeam Managed Backups peuvent être différents, vous pouvez vous référer aux conditions particulières du service pour plus de détails.
 
 ## 4 - Backups
 
