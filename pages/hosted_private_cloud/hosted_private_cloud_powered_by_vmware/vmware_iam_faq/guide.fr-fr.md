@@ -14,7 +14,7 @@ updated: 2024-05-24
   
 **Dans cette FAQ, nous aborderons quelques question ainsi les avantages et limitations de l'utilisation de IAM dans votre Cloud Privée VMware sur OVHcloud** 
 
-Voici les liens des guides :
+Voici le liens des guides :
 
 - Guide 1 : [Comment activer IAM dans votre cloud privée OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_enable#Objectif)
 - Guide 2 : [Comment créer un role IAM et le lier à une politique](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
