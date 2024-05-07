@@ -1,7 +1,7 @@
 ---
 title: "Création et gestion d'un Health Monitor pour le Load Balancer Public Cloud OVHcloud"
 excerpt: "Maîtriser la mise en place et la gestion d'un Health Monitor avec les Load Balancers Public Cloud OVHCloud via l'espace client OVHcloud, la CLI, Horizon et Terraform"
-updated: 2024-05-06
+updated: 2024-05-07
 ---
 
 ## Objectif
@@ -95,10 +95,10 @@ Selon l'interface choisie, voici les étapes à suivre :
 
 Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balancer OVHcloud, ce qui permet de surveiller l'état de santé des serveurs du pool :
 
-1\. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2\. Rendez-vous dans l'onglet `Public Cloud`{.action} et sélectionnez votre projet.
-3\. Cliquez sur `Load Balancer`{.action} dans le menu de gauche. Sélectionnez le Load Balancer que vous souhaitez configurer.
-4\. Cliquez sur l'onglet `Pools`{.action} puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+2. Rendez-vous dans l'onglet `Public Cloud`{.action} et sélectionnez votre projet.
+3. Cliquez sur `Load Balancer`{.action} dans le menu de gauche. Sélectionnez le Load Balancer que vous souhaitez configurer.
+4. Cliquez sur l'onglet `Pools`{.action} puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
 
 ![Schema 1](images/healthM1.png){.thumbnail}
 
@@ -107,18 +107,18 @@ Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balan
 ![Schema 1](images/healthM2.png){.thumbnail}
 
 - **Informations générales**:
-   - **Nom**: doit contenir uniquement des lettres, nombres, underscores (`_`), tirets (`-`) ou points (`.`).
-   - **Type**: sélectionnez le type de Health Monitor (par exemple: HTTP, HTTPS, TCP, TLS-hello).
+      - **Nom**: doit contenir uniquement des lettres, nombres, underscores (`_`), tirets (`-`) ou points (`.`).
+      - **Type**: sélectionnez le type de Health Monitor (par exemple: HTTP, HTTPS, TCP, TLS-hello).
 
 - Pour les types **HTTP** et **HTTPS**:
-   - **URL PATH**: spécifiez le chemin d'accès utilisé pour le test.
-   - **Code Attendu**: indiquez les codes d'état HTTP attendus, pouvant être un seul chiffre, une liste de chiffres séparés par des virgules, ou un intervalle (deux chiffres séparés par un trait d'union).
+      - **URL PATH**: spécifiez le chemin d'accès utilisé pour le test.
+      - **Code Attendu**: indiquez les codes d'état HTTP attendus, pouvant être un seul chiffre, une liste de chiffres séparés par des virgules, ou un intervalle (deux chiffres séparés par un trait d'union).
 
 - **Paramètres de test**:
-   - **Max Retries Down**: nombre d'échecs de connexion autorisés avant de marquer le membre comme défaillant (entre 1 et 10, défaut 3).
-   - **Delay**: intervalle entre deux tests du Health Monitor (doit être supérieur au timeout).
-   - **Max Retries**: nombre total d'échecs de connexion autorisés avant de marquer le membre comme inactif (entre 1 et 10).
-   - **Timeout**: durée après laquelle un test s'arrête (doit être égal ou supérieur à la périodicité).
+      - **Max Retries Down**: nombre d'échecs de connexion autorisés avant de marquer le membre comme défaillant (entre 1 et 10, défaut 3).
+      - **Delay**: intervalle entre deux tests du Health Monitor (doit être supérieur au timeout).
+      - **Max Retries**: nombre total d'échecs de connexion autorisés avant de marquer le membre comme inactif (entre 1 et 10).
+      - **Timeout**: durée après laquelle un test s'arrête (doit être égal ou supérieur à la périodicité).
 
 6\. Une fois toutes les informations renseignées, cliquez sur `Ajouter`{.action} pour activer votre Health Monitor.
 
@@ -128,8 +128,8 @@ Ce processus crée un Health Monitor qui effectuera régulièrement des contrôl
 
 #### CLI (OpenStack)
 
-1\. **Préparation** : assurez-vous que l'outil CLI OpenStack est installé et configuré sur votre machine.
-2\. **Création du Health Monitor** : utilisez la commande suivante pour créer un Health Monitor :
+1. **Préparation** : assurez-vous que l'outil CLI OpenStack est installé et configuré sur votre machine.
+2. **Création du Health Monitor** : utilisez la commande suivante pour créer un Health Monitor :
 
 ```bash
 openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 3 --type HTTP --http-method GET --url-path /healthcheck --expected-codes 200 <POOL_ID>
@@ -148,13 +148,15 @@ openstack loadbalancer healthmonitor list
 Il existe deux façons d'accéder à l'interface Horizon :
 
 - Pour vous connecter avec l'authentification unique OVHcloud : utilisez le lien `Horizon`{.action} dans le menu de gauche sous « Interfaces de gestion » après avoir ouvert votre projet `Public Cloud`{.action} dans l'[espace client OVHcloud](/links/manager).
-
 - Pour vous connecter avec un utilisateur OpenStack spécifique : ouvrez la [page de connexion à Horizon](https://horizon.cloud.ovh.net/auth/login/) et entrez les [identifiants de l'utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) précédemment créées, puis cliquez sur `Se connecter`{.action}.
 
-1. Dans le menu de gauche, cliquez sur l'onglet `Network`{.action} et sélectionnez `Load Balancers`{.action}.
-2. Choisissez le Load Balancer que vous souhaitez configurer et cliquez sur l'onglet `Health Monitors`{.action}.
-3. Cliquez sur `Create Health Monitor`{.action} et remplissez les champs requis tels que le type, l'intervalle de vérification, le nombre maximal de tentatives et le délai d'expiration.
-4. Confirmez la création en cliquant sur `Create`{.action}.
+Dans le menu de gauche, cliquez sur l'onglet `Network`{.action} et sélectionnez `Load Balancers`{.action}.
+
+Choisissez le Load Balancer que vous souhaitez configurer et cliquez sur l'onglet `Health Monitors`{.action}.
+
+Cliquez sur `Create Health Monitor`{.action} et remplissez les champs requis tels que le type, l'intervalle de vérification, le nombre maximal de tentatives et le délai d'expiration.
+
+Confirmez la création en cliquant sur `Create`{.action}.
 
 #### Terraform
 

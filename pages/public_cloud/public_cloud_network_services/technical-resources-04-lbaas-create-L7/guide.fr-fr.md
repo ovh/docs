@@ -1,7 +1,7 @@
 ---
 title: "Créer et gérer des Policies et Règles de Niveau 7 (L7) pour les Load Balancers Public Cloud OVHcloud"
 excerpt: "Découvrez comment configurer et gérer des Policies et règles de niveau 7 (L7) pour les Load Balencers Public Cloud OVHcloud"
-updated: 2024-05-06
+updated: 2024-05-07
 ---
 
 ## Objectif
@@ -10,29 +10,13 @@ Utiliser les capacités L7 permet de diriger le trafic de manière intelligente,
 
 **Ce guide a pour but d'expliquer comment configurer et gérer des policies et règles de niveau 7 (L7) pour les Load Balancers Public Cloud dans l'environnement OVHcloud.**
 
-## Prérequis
-
-- Un [compte OVHcloud actif](/links/manager)
-- Comprendre les [concepts du OVHcloud Load Balancer](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer).
-- Un [projet Public Cloud OVHcloud](/pages/public_cloud/compute/create_a_public_cloud_project).
-- Un Load Balancer [déjà configuré](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) dans votre projet Public Cloud.
-
-##  En pratique
-
-Plusieurs options de gestion sont disponibles pour configurer votre load balancer chez OVHcloud. Vous n'avez pas besoin de toutes les utiliser, mais il est nécessaire d'en choisir au moins une selon vos préférences :
-
-- **Espace client OVHcloud :** permet la gestion via l'interface graphique, idéal pour ceux qui préfèrent une approche visuelle et intuitive.
-- **CLI OpenStack :** pour la gestion via la ligne de commande. Retrouvez plus d'informations pour préparer votre environnement API OpenStack sur [ce guide](pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
-- **Interface Horizon :** offre une gestion graphique via OpenStack pour les utilisateurs familiarisés avec cette plateforme. Retrouvez plus de détails supplémentaires sur [cette page](/pages/public_cloud/compute/introducing_horizon).
-- **Terraform :** permet la gestion via Infrastructure as Code, utile pour automatiser et reproduire des environnements via des fichiers de code. Retrouvez plus d'informations sur le provider OVH pour Terraform sur [cette page](https://registry.terraform.io/providers/ovh/ovh/latest/docs).
-
-Chaque méthode offre des avantages spécifiques, permettant de personnaliser la gestion de votre load balancer selon vos besoins et votre expertise technique.
-
-### Détails sur les concepts clés
+### Concepts clés
 
 #### Policies et Règles L7
 
-- **Policy L7 :** une directive appliquée à un listener de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions possibles incluent la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête.
+##### **Policy L7** 
+
+Une Policy L7U est une directive appliquée à un listener de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions possibles incluent la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête.
 
 **L'ordre d'évaluation des politiques L7 est important et est déterminé par le paramètre de position de chaque politique.**
 
@@ -51,7 +35,9 @@ Si aucune politique ne correspond, la requête est dirigée vers le pool par dé
 - **Contraintes des policies L7:**
     - Les L7 policies ne s'appliquent qu'à des listeners de type `HTTP` ou `TERMINATED_HTTPS`.
 
-- **Règle L7 :** Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie. Plusieurs règles peuvent être associées à une politique, et toutes doivent correspondre (logique *AND*) pour que l'action de la politique soit appliquée. Pour exprimer une opération logique *OR* entre les règles, il est nécessaire de créer plusieurs politiques avec la même action.
+##### **Règle L7** 
+
+Une règle L7 est une condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie. Plusieurs règles peuvent être associées à une politique, et toutes doivent correspondre (logique *AND*) pour que l'action de la politique soit appliquée. Pour exprimer une opération logique *OR* entre les règles, il est nécessaire de créer plusieurs politiques avec la même action.
 
 - **Principales caractéristiques :**
     - **type** : le type de condition (par exemple : HEADER, COOKIE, URI).
@@ -78,6 +64,24 @@ Cet exemple montre comment rediriger le trafic de `/oldpath` vers `https://examp
 - **Testez chaque règle individuellement** : avant de combiner plusieurs règles, assurez-vous que chaque règle fonctionne comme prévu en la testant dans divers scénarios.
 - **Documentez vos règles** : gardez une trace de la logique derrière chaque règle pour faciliter les modifications futures ou pour aider les nouveaux administrateurs à comprendre la configuration.
 - **Surveillez l'impact des règles** : après l'activation des règles, surveillez le comportement du trafic pour s'assurer qu'elles fonctionnent comme prévu sans bloquer de trafic légitime.
+
+## Prérequis
+
+- Un [compte OVHcloud actif](/links/manager)
+- Comprendre les [concepts du OVHcloud Load Balancer](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer).
+- Un [projet Public Cloud OVHcloud](/pages/public_cloud/compute/create_a_public_cloud_project).
+- Un Load Balancer [déjà configuré](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) dans votre projet Public Cloud.
+
+##  En pratique
+
+Plusieurs options de gestion sont disponibles pour configurer votre load balancer chez OVHcloud. Vous n'avez pas besoin de toutes les utiliser, mais il est nécessaire d'en choisir au moins une selon vos préférences :
+
+- **Espace client OVHcloud :** permet la gestion via l'interface graphique, idéal pour ceux qui préfèrent une approche visuelle et intuitive.
+- **CLI OpenStack :** pour la gestion via la ligne de commande. Retrouvez plus d'informations pour préparer votre environnement API OpenStack sur [ce guide](pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- **Interface Horizon :** offre une gestion graphique via OpenStack pour les utilisateurs familiarisés avec cette plateforme. Retrouvez plus de détails supplémentaires sur [cette page](/pages/public_cloud/compute/introducing_horizon).
+- **Terraform :** permet la gestion via Infrastructure as Code, utile pour automatiser et reproduire des environnements via des fichiers de code. Retrouvez plus d'informations sur le provider OVH pour Terraform sur [cette page](https://registry.terraform.io/providers/ovh/ovh/latest/docs).
+
+Chaque méthode offre des avantages spécifiques, permettant de personnaliser la gestion de votre load balancer selon vos besoins et votre expertise technique.
 
 ### Configuration via l'espace client OVHcloud
 

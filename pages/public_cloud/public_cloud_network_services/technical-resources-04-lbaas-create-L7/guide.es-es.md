@@ -1,7 +1,7 @@
 ---
 title: "How to create and manage Level 7 (L7) Policies and Rules for OVHcloud Public Cloud Load Balancers"
 excerpt: "Learn how to configure and manage Level 7 (L7) Policies and Rules for OVHcloud Public Cloud Load Balancers"
-updated: 2024-05-06
+updated: 2024-05-07
 ---
 
 ## Objective
@@ -10,29 +10,13 @@ Using L7 capabilities allows for intelligent traffic routing based on the conten
 
 **This guide explains how to configure and manage Level 7 (L7) policies and rules for Public Cloud Load Balancers in the OVHcloud environment.**
 
-## Requirements
-
-- An [active OVHcloud account](/links/manager)
-- Understanding of the [Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer)
-- An active [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)
-- A previously configured [Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) within your OVHcloud project space
-
-## Instructions
-
-To configure your Load Balancer at OVHcloud, several management options are available. You don't need to use all of them, but it is necessary to choose at least one according to your preferences:
-
-- **OVHcloud Control Panel:** Allows management via the graphical interface, ideal for those who prefer a visual and intuitive approach.
-- **OpenStack CLI:** For command line management. More information on preparing your OpenStack API environment is available [here](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
-- **Horizon Interface:** Offers graphical management via OpenStack for users familiar with this platform. Additional details [here](/pages/public_cloud/compute/introducing_horizon).
-- **Terraform:** Enables management via Infrastructure as Code, useful for automating and reproducing environments through code files. Information on the OVH provider for Terraform is available [here](https://registry.terraform.io/providers/ovh/ovh/latest/docs).
-
-Each method offers specific advantages, allowing you to customize the management of your Load Balancer according to your needs and technical expertise.
-
 ### Key Concepts Detail
 
 #### L7 Policies and Rules
 
-- **L7 Policy:** A directive applied to a Load Balancer listener to control traffic based on specific criteria, such as URI, HTTP headers, or cookies. Possible actions include redirecting to a specific URL or server pool, or rejecting the request.
+##### **L7 Policy:** 
+
+An L7 policy is a directive applied to a Load Balancer listener to control traffic based on specific criteria, such as URI, HTTP headers, or cookies. Possible actions include redirecting to a specific URL or server pool, or rejecting the request.
 
 **The order of evaluation of L7 policies is important and is determined by the position parameter of each policy.**
 
@@ -51,7 +35,9 @@ If no policy matches, the request is directed to the listener's default pool, or
 - **Constraints:**
     - L7 policies only apply to `HTTP` or `TERMINATED_HTTPS` type listeners.
 
-- **L7 Rule:** The underlying condition of an L7 policy, which defines the specific criteria for matching traffic, such as a URI or cookie match. Multiple rules can be associated with a policy, and all must match (AND logic) for the policy's action to be applied. To express a logical OR operation between rules, it is necessary to create multiple policies with the same action.
+##### **L7 Rule** 
+
+An L7 rule is the underlying condition of an L7 policy, which defines the specific criteria for matching traffic, such as a URI or cookie match. Multiple rules can be associated with a policy, and all must match (AND logic) for the policy's action to be applied. To express a logical OR operation between rules, it is necessary to create multiple policies with the same action.
 
 - **Main characteristics:**
     - **type**: The type of condition (e.g. HEADER, COOKIE, URI).
@@ -78,6 +64,24 @@ This example demonstrates how to redirect traffic from `/oldpath` to `https://ex
 - **Test each rule individually**: Before combining multiple rules, ensure that each rule functions as intended by testing it in various scenarios.
 - **Document your rules**: Keep a record of the logic behind each rule to facilitate future modifications or to help new administrators understand the setup.
 - **Monitor the impact of rules**: After activating the rules, monitor the traffic behavior to ensure that they are working as expected without blocking legitimate traffic.
+
+## Requirements
+
+- An [active OVHcloud account](/links/manager)
+- Understanding of the [Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer)
+- An active [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)
+- A previously configured [Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) within your OVHcloud project space
+
+## Instructions
+
+To configure your Load Balancer at OVHcloud, several management options are available. You don't need to use all of them, but it is necessary to choose at least one according to your preferences:
+
+- **OVHcloud Control Panel:** Allows management via the graphical interface, ideal for those who prefer a visual and intuitive approach.
+- **OpenStack CLI:** For command line management. More information on preparing your OpenStack API environment is available [here](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- **Horizon Interface:** Offers graphical management via OpenStack for users familiar with this platform. Additional details [here](/pages/public_cloud/compute/introducing_horizon).
+- **Terraform:** Enables management via Infrastructure as Code, useful for automating and reproducing environments through code files. Information on the OVH provider for Terraform is available [here](https://registry.terraform.io/providers/ovh/ovh/latest/docs).
+
+Each method offers specific advantages, allowing you to customize the management of your Load Balancer according to your needs and technical expertise.
 
 ### Configuration via the OVHcloud Control Panel
 
