@@ -11,12 +11,12 @@ Découvrez comment utiliser votre service SSL Gateway afin de sécuriser les con
 ### Prérequis
 
 - Disposer d’un service SSL Gateway.
-- Être connecté à votre  [espace client OVHcloud](https://www.ovh.com/manager){.external}, partie `Sunrise`{.action}.
+- Être connecté à votre  [espace client OVHcloud](/links/manager){.external}, partie `Sunrise`{.action}.
 
 ## En pratique
 
 ### Configurer le service
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/manager){.external}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}.
 Cliquez ensuite sur la section `Sunrise`{.action}.
 
 ![Bouton d'ouverture](images/4.PNG){.thumbnail}
@@ -242,8 +242,8 @@ Vous trouverez plus d'informations sur cette fonctionnalité Nginx dans la [docu
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

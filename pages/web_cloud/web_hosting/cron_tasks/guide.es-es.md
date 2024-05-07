@@ -46,12 +46,12 @@ En su alojamiento web de OVHcloud, puede utilizar scripts para automatizar deter
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener contratado un [plan de hosting](/links/web/hosting).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
+Acceda al [área de cliente de OVHcloud](/links/manager){.external}. Haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
 
 Seleccione el alojamiento correspondiente, abra la pestaña `Más`{.action} y haga clic en `Cron.`{.action}.
 
@@ -133,7 +133,7 @@ Utilice siempre rutas de acceso absolutas a los archivos de sus scripts. La cons
  
 #### Verificación de los logs de ejecución
 
-Podrá acceder a los logs de su alojamiento web desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y ver la categoría de log denominada "CRON".
+Podrá acceder a los logs de su alojamiento web desde su [área de cliente de OVHcloud](/links/manager) y ver la categoría de log denominada "CRON".
 
 Para más información, consulte nuestra guía ["Consultar las estadísticas y los logs de un sitio web alojado en un plan compartido"](/pages/web_cloud/web_hosting/logs_and_statistics).
 
@@ -179,8 +179,8 @@ Para más información, consulte nuestra guía ["Consultar las estadísticas y l
 
 [Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Activar el servicio de correo incluido en un plan de hosting"
 excerpt: "Descubra cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web"
-updated: 2024-02-08
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -16,15 +16,15 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 
 ## Requisitos
 
-- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} en su área de cliente de OVHcloud.
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Disponer de un [dominio](/links/web/domains){.external} en su área de cliente de OVHcloud.
+- Tener contratado un [plan de hosting](/links/web/hosting){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 > [!warning]
 >
 > Si quiere activar la opción "dirección(s) de correo incluida(s) con su alojamiento web" para un dominio externo (no registrado en OVHcloud) **del que deba ser obligatoriamente administrador**, deberá crear (al menos) una zona DNS en OVHcloud para su dominio externo. Si lo necesita, consulte nuestra guía "[Crear una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create)". Al activar esta opción, su dominio aparecerá en la lista de dominios disponibles.
 >
-> Por otro lado, si su dominio ya está registrado en OVHcloud o si existe una zona DNS para él en otra [cuenta de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) que el suyo, consulte nuestra documentación "[Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts)" para consultar su gestión.
+> Por otro lado, si su dominio ya está registrado en OVHcloud o si existe una zona DNS para él en otra [cuenta de OVHcloud](/links/manager) que el suyo, consulte nuestra documentación "[Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts)" para consultar su gestión.
 >
 > Por último, si su dominio ya está asociado a la opción "dirección(s) de correo incluida(s) con su alojamiento web" de otro alojamiento web, no podrá asociarlo directamente a su propio alojamiento web. Para más información, consulte esta guía.
 >
@@ -33,28 +33,31 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 
 ### Activar la solución de correo
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 En la columna `Configuración`, vaya a `Direcciones de correo`, haga clic en el botón `...`{.action} a la derecha y seleccione `Activar mi solución de correo`{.action}.
 
-![Activar el correo](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
+![Activar el correo](images/enable-email-included-webhosting.png){.thumbnail}
 
 Se mostrará la ventana de activación. Seleccione el dominio que quiere utilizar con sus direcciones de correo y confirme la activación.
 
-![Activar el correo](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-activate-email-included-webhosting-step-1.png){.thumbnail}
+![Activar el correo](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> Si desea disfrutar de más cuentas de correo incluidas, puede contratar un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external} superior desde nuestra página comercial.
+> Si desea disfrutar de más cuentas de correo incluidas, puede contratar un [plan de hosting](/links/web/hosting){.external} superior desde nuestra página comercial.
+>
+> Atención: La activación de la opción de correo puede tardar unos minutos. Recibirá un mensaje de correo electrónico para confirmar la instalación y activación de la solución MXPLAN. Incluye, entre otras cosas, la gestión y la configuración de sus direcciones de correo.
+>
 
 ### Conservar las direcciones de correo tras la expiración del alojamiento web
 
 Es posible conservar las direcciones de correo, incluso tras la expiración o la supresión del alojamiento web.
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 En la columna `Configuración`, vaya a `Direcciones de correo`, haga clic en el botón `...`{.action} a la derecha y seleccione `Desvincular la opción de correo`{.action}.
 
-![Desvincular el correo](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
+![Desvincular el correo](images/detach-email-included-webhosting.png){.thumbnail}
 
 Tendrá la opción de contratar una solución MX personalizada. Una vez abonado el pedido, sus direcciones de correo seguirán funcionando tras la supresión del alojamiento web.
  
@@ -66,11 +69,11 @@ Es posible eliminar definitivamente la solución de correo asociada a su alojami
 >
 > Tenga en cuenta que esta acción es irreversible. Tras la baja del servicio, no será posible reactivar la solución de correo.
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 En la columna `Configuración`, vaya a `Direcciones de correo`{.action}, haga clic en el botón `...` a la derecha y seleccione `Dar de baja la opción de correo`{.action}.
 
-![Dar de baja el correo](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}
+![Dar de baja el correo](images/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >
@@ -78,8 +81,8 @@ En la columna `Configuración`, vaya a `Direcciones de correo`{.action}, haga cl
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

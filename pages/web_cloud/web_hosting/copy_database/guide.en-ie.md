@@ -6,7 +6,7 @@ updated: 2023-11-22
 
 ## Objective
 
-Your database is a central part of building your dynamic website. During the life cycle of your website, for practical or technical reasons, you may copy the content of one database to a [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) or [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/).
+Your database is a central part of building your dynamic website. During the life cycle of your website, for practical or technical reasons, you may copy the content of one database to a [Start SQL](/links/web/hosting-options-startsql) or [Web Cloud Databases](/links/web/databases).
 
 **This guide explains how to duplicate the content of an OVHcloud database into another OVHcloud database.**
 
@@ -17,8 +17,8 @@ Your database is a central part of building your dynamic website. During the lif
 
 ## Requirements
 
-- You are using a [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) and/or [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) solution. The two databases concerned must be created beforehand in order to use the replication tool.
-- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- You are using a [Start SQL](/links/web/hosting-options-startsql) and/or [Web Cloud Databases](/links/web/databases) solution. The two databases concerned must be created beforehand in order to use the replication tool.
+- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have sufficient rights to all database services concerned. You can find more information in our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## Instructions
@@ -33,14 +33,14 @@ Before you begin, make sure that:
 
 This feature is available for:
 
-- A [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) database (included in some of our [web hostings](https://www.ovhcloud.com/en-ie/web-hosting/) or [ordered separately](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/)).
-- A database hosted on a [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) server (included with our [Performance web hosting](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) or [ordered separately](https://www.ovhcloud.com/en-ie/web-cloud/databases/)). 
+- A [Start SQL](/links/web/hosting-options-startsql) database (included in some of our [web hostings](/links/web/hosting) or [ordered separately](/links/web/hosting-options-startsql)).
+- A database hosted on a [Web Cloud Databases](/links/web/databases) server (included with our [Performance web hosting](/links/web/hosting-performance-offer) or [ordered separately](/links/web/databases)). 
 
 Depending on your situation, the path to your source database is different.
 
 #### Start SQL database
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Hosting plans`{.action} tab, then click on the web hosting plan that contains the source database you want to duplicate.
+In your [OVHcloud Control Panel](/links/manager), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Hosting plans`{.action} tab, then click on the web hosting plan that contains the source database you want to duplicate.
 
 ![Hosting list](images/web-hosting-selection.png){.thumbnail}
 
@@ -50,7 +50,7 @@ By clicking on the `Databases`{.action} tab, you will see a list of your Start S
 
 #### Web Cloud Databases
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Web Cloud Databases`{.action} tab, then select the Web Cloud Databases server that contains the source database you want to duplicate.
+In your [OVHcloud Control Panel](/links/manager), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Web Cloud Databases`{.action} tab, then select the Web Cloud Databases server that contains the source database you want to duplicate.
 
 ![WCD Server List](images/wcdb-server-selection.png){.thumbnail}
 
@@ -72,11 +72,11 @@ If you do not have a destination database, click on the link to purchase a new d
 
 ![WCD DB List](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
-You can choose between a [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) solution, or a [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) server.
+You can choose between a [Start SQL](/links/web/hosting-options-startsql) solution, or a [Web Cloud Databases](/links/web/databases) server.
 
 > [!primary]
 >
-> When you purchase your new database, it is not activated by default. To enable it, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and go to the `Web Cloud`{.action} section.
+> When you purchase your new database, it is not activated by default. To enable it, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section.
 > 
 > - For a Shared SQL database: Follow our guide on [Creating a database on your Web Hosting plan](/pages/web_cloud/web_hosting/sql_create_database).
 > - For a database on a Web Cloud Databases server: Follow our guide [Creating a database on a Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server).
@@ -154,8 +154,8 @@ During the process of copying the contents of the database, you may encounter di
 This means that you only have one active database. To copy your source database, you also need an active destination database. To do this, you can:
 
 - Configure a new database available on your Web Hosting plan.
-- Configure a new database on your [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) server.
-- Order a [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) solution or a [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) database server.
+- Configure a new database on your [Web Cloud Databases](/links/web/databases) server.
+- Order a [Start SQL](/links/web/hosting-options-startsql) solution or a [Web Cloud Databases](/links/web/databases) database server.
 
 #### You already have an action in progress
 
@@ -165,8 +165,8 @@ This message means that a task is already in progress on your database. Go to th
 
 Your destination database is not of a sufficient size. There are two ways to resolve this:
 
-- Order a new [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) database with more space.
-- If you have a [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) server, switch to a Web Cloud Databases solution with more storage space.
+- Order a new [Start SQL](/links/web/hosting-options-startsql) database with more space.
+- If you have a [Web Cloud Databases](/links/web/databases) server, switch to a Web Cloud Databases solution with more storage space.
 
 #### The source and destination databases are incompatible
 
@@ -186,8 +186,8 @@ For example, this error can occur when you use MySQL for your source database, a
 
 [Import a backup into a web hosting database](/pages/web_cloud/web_hosting/sql_importing_mysql_database)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

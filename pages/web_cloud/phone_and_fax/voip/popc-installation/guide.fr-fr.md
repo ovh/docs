@@ -15,9 +15,9 @@ Il se présente sous la forme d'une application, installée sur votre PC sous Wi
 ## Prérequis
 
 - Disposer d'un PC sous Windows (7, 8, 10).
-- Disposer de la [solution POPC OVHcloud](https://www.ovhtelecom.fr/telephonie/standard/) ainsi que de la ligne SIP associée.
-- **Uniquement pour la version d'essai de POPC** : disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/) sans téléphone Plug & Phone associé.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Disposer de la [solution POPC OVHcloud](/links/telecom/telephonie-standard) ainsi que de la ligne SIP associée.
+- **Uniquement pour la version d'essai de POPC** : disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip) sans téléphone Plug & Phone associé.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -35,7 +35,7 @@ Vous devez disposer des trois informations suivantes afin de pouvoir enregistrer
 
 #### Login et domain
 
-Afin de retrouver votre **login** et votre **domain**, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr). Dans la partie `Télécom`{.action}, cliquez sur `Téléphonie`{.action} puis sur votre groupe de téléphonie et enfin sur votre ligne SIP. Dans l'onglet `Gestion`, cliquez sur `Informations générales`{.action}.
+Afin de retrouver votre **login** et votre **domain**, connectez-vous à votre [espace client OVHcloud](/links/manager-telecom). Dans la partie `Télécom`{.action}, cliquez sur `Téléphonie`{.action} puis sur votre groupe de téléphonie et enfin sur votre ligne SIP. Dans l'onglet `Gestion`, cliquez sur `Informations générales`{.action}.
 
 ![ligne sip - Login et Domain](images/login-domain1.png){.thumbnail}
 
@@ -61,7 +61,7 @@ Vous pouvez utiliser un coffre-fort de mots de passe, comme [KeePass](https://ke
 > Si vous avez commandé une offre POPC OVHcloud, le dongle USB qui vous a été fourni fait office de clé de licence pour utiliser le logiciel. Le dongle USB ne contient pas le logiciel POPC. Vous devez donc le télécharger en suivant les étapes décrites ci-dessous.
 >
 
-Vous pouvez retrouver le lien de téléchargement du logiciel POPC sur [la page de présentation du logiciel](https://www.ovhtelecom.fr/telephonie/standard/popc_standard_votre_offre.xml) ou via ce [lien direct](http://www.voiceoperatorpanel.com/priv/VoiceOperatorPanel-OVH-setup.exe).
+Vous pouvez retrouver le lien de téléchargement du logiciel POPC sur [la page de présentation du logiciel](/links/telecom/telephonie-standard-popc) ou via ce [lien direct](http://www.voiceoperatorpanel.com/priv/VoiceOperatorPanel-OVH-setup.exe).
 
 Comme indiqué sur la page de présentation, il est possible de tester une version d'essai du logiciel POPC. Celle-ci est valable pendant 30 jous à compter de son installation. Au delà de ce délai, l'enregistrement d'une ligne SIP sera automatiquement désactivé.
 

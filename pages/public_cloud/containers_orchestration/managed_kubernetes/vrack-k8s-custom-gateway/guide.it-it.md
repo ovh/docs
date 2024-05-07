@@ -43,7 +43,7 @@ To setup a functional environment, you have to load the OpenStack and the OVHclo
 To help you we also created for you several useful scripts and templates.
 
 First, create a `utils` folder in your environment/local machine. 
-Then, download the [ovhAPI.sh](https://raw.githubusercontent.com/ovh/docs/master/pages/public_cloud/containers_orchestration/managed_kubernetes/vrack-k8s-custom-gateway/utils/ovhAPI.sh) script into it.
+Then, download the [ovhAPI.sh](https://github.com/ovh/docs/blob/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/vrack-k8s-custom-gateway/utils/ovhAPI.sh) script into it.
 
 And then add execution rights to the `ovhAPI.sh` script:
 

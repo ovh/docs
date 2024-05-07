@@ -48,6 +48,20 @@ Wird in Ihrem Kundencenter keine `Filter`{.action}-Spalte angezeigt, müssen zun
 
 **Tipps und Tricks**: Wenn Sie einen Filter für den Empfang von Spam-Mails festlegen, kann es vorkommen, das erwünschte E-Mails als Spam eingeordnet werden. Man spricht hierbei von falsch positiven Ergebnissen. Ist das bei Ihnen der Fall, können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eine Support-Anfrage erstellen, um uns darüber zu informieren. So können wir die notwendigen Schritte durchführen, damit die erwünschten E-Mails nicht länger als Spam eingeordnet werden.
 
+### Mein E-Mail-Accounts ist voll, ich habe keinen Speicherplatz mehr. Was kann ich tun?
+
+Wenn Sie [eines der E-Mail-Angebote von OVHcloud](https://www.ovhcloud.com/de/emails/) abonniert haben und einer Ihrer E-Mail-Accounts voll ist, lesen Sie unsere Anleitung „[Speicherplatz eines E-Mail-Accounts verwalten](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)“. In dieser Anleitung erfahren Sie, ob Sie den vorhandenen Speicherplatz optimieren können oder ob Sie das E-Mail-Angebot wechseln müssen, um die Speicherkapazität zu erhöhen.
+
+### Ich möchte das E-Mail-Angebot meiner E-Mail-Adresse ändern. Wie kann ich dies tun und den Inhalt beibehalte?
+
+Sie möchten zu einem anderen [E-Mail-Angebot](https://www.ovhcloud.com/de/emails/) wechseln, um mehr Speicherplatz und Funktionen nutzen zu können, möchten aber den Inhalt Ihres bestehenden Accounts beibehalten. Folgen Sie hierzu der passenden Migrationsanleitung:
+
+- [MX Plan E-Mail-Account auf E-Mail Pro oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [E-Mail-Accounts von einer OVHcloud-E-Mail-Plattform auf eine andere migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [E-Mail-Accounts manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
+- [E-Mail-Accounts über OVH Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
+- [Einen Google Mail-Account über den OVH Mail Migrator auf einen OVHcloud-E-Mail-Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
+
 ### Beinhaltet das Office 365 Pro Plus Angebot eine Skype-Lizenz? 
 
 Das Office 365 Pro Plus Angebot beinhaltet keine Skype-Lizenz. Nur die Skype for Business Software ist inklusive. 

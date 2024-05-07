@@ -16,8 +16,8 @@ Pakiety hostingowe OVHcloud są współdzielone. W związku z tym konfiguracja t
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie kompatybilnego [hostingu WWW](/links/web/hosting){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
@@ -25,14 +25,14 @@ Pakiety hostingowe OVHcloud są współdzielone. W związku z tym konfiguracja t
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) i/lub skontaktowanie się z dostawcą usługi. Niestety firma OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)" tego przewodnika.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) i/lub skontaktowanie się z dostawcą usługi. Niestety firma OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)" tego przewodnika.
 >
 
 ### FTP
 
 - Użyj pasywnego **trybu** dla połączeń FTP. Upewnij się, że Twój skrypt lub klient FTP jest odpowiednio skonfigurowany.
 
-- Jeśli napotkasz błąd dostępu "Uwierzytelnienie połączenia 530 się nie powiodło" podczas logowania do przestrzeni dyskowej FTP: Upewnij się, że informacje dotyczące dostępu do przestrzeni FTP są poprawne. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+- Jeśli napotkasz błąd dostępu "Uwierzytelnienie połączenia 530 się nie powiodło" podczas logowania do przestrzeni dyskowej FTP: Upewnij się, że informacje dotyczące dostępu do przestrzeni FTP są poprawne. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
 
 Znajdziesz tam wszystkie informacje dotyczące logowania do Twojej przestrzeni dyskowej FTP z wyjątkiem hasła.
 
@@ -66,14 +66,14 @@ W przypadku nadużycia lub włamania, część lub całość Twojej usługi moż
 
 #### Jednoczesne połączenia z bazą danych
 
-Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (limit ten wzrasta do 200, jeśli korzystasz z oferty [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/)). Zapoznaj się z [szczegółami naszych ofert hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/), aby poznać opcje dostępne w każdej ofercie hostingu WWW.
+Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (limit ten wzrasta do 200, jeśli korzystasz z oferty [Web Cloud Databases](/links/web/databases)). Zapoznaj się z [szczegółami naszych ofert hostingu WWW](/links/web/hosting), aby poznać opcje dostępne w każdej ofercie hostingu WWW.
 
-Możesz również zamówić dodatkowe pakiety [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/), które mają opcje personalizacji:
+Możesz również zamówić dodatkowe pakiety [Web Cloud Databases](/links/web/databases), które mają opcje personalizacji:
 
 - *max_connections*: domyślnie 100 z możliwością zwiększenia do 200;
 - *max_user_connections*: domyślnie 50 z możliwością zwiększenia do 200.
 
-Aby uzyskać więcej informacji, zapoznaj się ze szczegółami naszych [ofert hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/) oraz przewodnikiem "[Pierwsze kroki z Twoją ofertą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Aby uzyskać więcej informacji, zapoznaj się ze szczegółami naszych [ofert hostingu WWW](/links/web/hosting) oraz przewodnikiem "[Pierwsze kroki z Twoją ofertą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Połączenia z serwera zewnętrznego
 
@@ -83,7 +83,7 @@ Ze względów bezpieczeństwa nie jest możliwe połączenie się z serwera zewn
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Tylko serwery baz danych [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) umożliwiają łączenie się z nimi serwerom zewnętrznym. Autoryzacja adresu IP zewnętrznego serwera na serwerze baz danych. W razie potrzeby sprawdź przewodnik "[Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Tylko serwery baz danych [Web Cloud Databases](/links/web/databases) umożliwiają łączenie się z nimi serwerom zewnętrznym. Autoryzacja adresu IP zewnętrznego serwera na serwerze baz danych. W razie potrzeby sprawdź przewodnik "[Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Zmienne współdzielonego serwera SQL
 
@@ -102,7 +102,7 @@ Aby uzyskać więcej informacji na temat zarządzania bazami danych i łączenia
 
 ### PHP
 
-Zapoznaj się z [Pakietami hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/), aby upewnić się, czy oferta hostingu, którą chcesz zamówić, odpowiada Twoim potrzebom.
+Zapoznaj się z [Pakietami hostingu WWW](/links/web/hosting-programming-language), aby upewnić się, czy oferta hostingu, którą chcesz zamówić, odpowiada Twoim potrzebom.
 
 > [!warning]
 >
@@ -174,7 +174,7 @@ Dowiedz się, jak [zalogować się do przestrzeni dyskowej FTP Twojego hostingu]
 > OVHcloud dostarcza usługę automatycznego tworzenia kopii zapasowych danych oraz udostępnienia tych kopii. Pozostaje jednak *poza umową* i jest obecny jako uzupełnienie Twoich usług. Twoim obowiązkiem jest wdrożenie własnej polityki gastronomicznej i wskazanie punktów przywracania usług w chwilach, które uznasz za stosowne.
 >
 
-W przypadku baz danych współdzielonych (zawartych w Twojej ofercie hostingu WWW) lub serwerów baz danych (Web Cloud Databases), oferowanych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie, tworzenie kopii zapasowych baz jest wykonywane codziennie. Kopie zapasowe są dostępne (w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [API OVHcloud](https://api.ovh.com/)). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane są kopiowane w centrum danych zlokalizowanym w Strasburgu (SBG). Czas przechowywania kopii zapasowych to 30 dni.
+W przypadku baz danych współdzielonych (zawartych w Twojej ofercie hostingu WWW) lub serwerów baz danych (Web Cloud Databases), oferowanych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie, tworzenie kopii zapasowych baz jest wykonywane codziennie. Kopie zapasowe są dostępne (w [Panelu klienta OVHcloud](/links/manager){.external} lub [API OVHcloud](https://api.ovh.com/)). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane są kopiowane w centrum danych zlokalizowanym w Strasburgu (SBG). Czas przechowywania kopii zapasowych to 30 dni.
 
 Dowiedz się, jak [Pobrać kopię zapasową bazy danych hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export) znaleźć w naszej dokumentacji.
 
@@ -233,8 +233,8 @@ Aby wspomniane wyżej dane mogły być wykorzystywane w ramach narzędzia "OVHcl
 
 [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

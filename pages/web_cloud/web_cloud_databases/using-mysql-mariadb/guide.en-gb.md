@@ -24,8 +24,8 @@ This engine is 100% compatible, and is "freer" than its sibling MySQL. All the b
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovhcloud.com/en-gb/web-cloud/databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- A [Web Cloud Databases instance](/links/web/databases){.external} (included in a [performance web hosting plan](/links/web/hosting)).
+- Access to the [OVHcloud Control Panel](/links/manager){.external}.
 - You need to have read the [Web Cloud Databases startup guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
 ## Instructions
@@ -50,7 +50,7 @@ To log in to your database, make sure that you have:
 - The password associated with the user
 - The database name
 
-All this information is available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+All this information is available in the [OVHcloud Control Panel](/links/manager).
 
 Please also read our guide on [getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
@@ -116,8 +116,8 @@ cat database_name.sql | mysql --host=server --user=user --port=port --password=p
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

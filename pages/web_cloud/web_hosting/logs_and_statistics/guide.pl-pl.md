@@ -16,14 +16,14 @@ Dostęp do logów i statystyk Twojej strony WWW jest zawarty w wybranej przez Ci
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie kompatybilnego [hostingu](/links/web/hosting){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
 Aby uzyskać dostęp do różnych danych statystycznych i logów Twojego hostingu, wykonaj następujące czynności: 
 
-1. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 3. W lewej kolumnie kliknij menu rozwijane `Hosting`{.action}.
 4. Wybierz odpowiedni hosting.
@@ -62,7 +62,7 @@ Pole `Period selection` w prawym górnym rogu umożliwia wybranie konkretnego ok
 >
 > Nie będziemy w stanie udzielić Ci wsparcia w interpretacji logów Twojego hostingu, ponieważ jest to wyłącznie kwestia rozwoju www, a nie hostingu.
 >
-> W przypadku trudności skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
+> W przypadku trudności skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner).
 >
 
 Możesz wyświetlać logi Twojej strony z około 5-minutowym opóźnieniem.
@@ -111,7 +111,7 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 
 Link dostępowy do statystyk / logów możesz również sprawdzić bezpośrednio w Panelu klienta:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 3. W lewej kolumnie kliknij menu rozwijane `Hosting`{.action}.
 4. Wybierz odpowiedni hosting.
@@ -130,8 +130,8 @@ Na stronie, która się otworzy, pobierz adres URL z paska adresu przeglądarki 
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

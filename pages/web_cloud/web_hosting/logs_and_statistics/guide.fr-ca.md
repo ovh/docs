@@ -12,14 +12,14 @@ L'accès aux logs et aux statistiques de votre site web est compris dans votre o
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} compatible.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Disposer d'une offre d'[hébergement web](/links/web/hosting){.external} compatible.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
 Pour accéder aux différentes données statistiques et logs de votre hébergement web, effectuez les actions suivantes : 
 
-1. Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
 3. Dans la colonne de gauche, cliquez sur le menu déroulant `Hébergements`{.action}.
 4. Sélectionnez l'hébergement web concerné.
@@ -58,7 +58,7 @@ Le champ `Period selection` en haut à droite vous permet de sélectionner une p
 >
 > Nous ne serons pas en mesure de vous accompagner sur l'interprétation des logs de votre hébergement web car cela relève uniquement du développement web et non de l'hébergement web.
 >
-> N'hésitez pas à contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés.
+> N'hésitez pas à contacter un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés.
 >
 
 Vous pouvez visualiser les logs bruts de votre site web avec un différé d'environ 5 minutes.
@@ -107,7 +107,7 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 
 Vous pouvez également récupérer le lien d'accès aux statistiques / logs directement depuis votre espace client :
 
-1. Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
 3. Dans la colonne de gauche, cliquez sur le menu déroulant `Hébergements`{.action}.
 4. Sélectionnez l'hébergement web concerné.
@@ -126,8 +126,8 @@ Sur la nouvelle page qui apparaît, récupérez l'URL située dans la barre d'ad
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

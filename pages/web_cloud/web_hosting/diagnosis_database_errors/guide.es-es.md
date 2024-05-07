@@ -10,7 +10,7 @@ updated: 2023-10-26
 
 ## Objetivo
 
-El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sitio web o su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), así como en la interfaz [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin).
+El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sitio web o su [área de cliente OVHcloud](/links/manager), así como en la interfaz [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin).
 
 **Descubra cómo solucionar los errores relacionados con las bases de datos de los alojamientos compartidos de OVHcloud.**
 
@@ -23,9 +23,9 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 ## Requisitos
 
-- Disponer de un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) OVHcloud.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
+- Disponer de un [plan de hosting](/links/web/hosting) OVHcloud.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Utilizar uno de nuestros productos de bases de datos [Web Cloud](/links/web/hosting-options-startsql) o [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
 
 ## Procedimiento
 
@@ -39,7 +39,7 @@ En primer lugar, compruebe en [https://web-cloud.status-ovhcloud.com/](https://w
 
 > [!primary]
 >
-> Para encontrar esta información, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action} :
+> Para encontrar esta información, conéctese a su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} :
 >
 > - Para encontrar el `Datacenter` de su alojamiento, así como su `Filer` (servidor de archivos), seleccione `Alojamientos`{.action} y, seguidamente, el alojamiento correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
 > - Para consultar el **cluster** de servidores en el que se encuentra el alojamiento, abra la pestaña `FTP-SSH`{.action}. Esta información aparecerá en el nombre del servidor FTP.
@@ -54,7 +54,7 @@ Conéctese al espacio de almacenamiento de archivos de su alojamiento mediante [
 >
 > La elección y configuración del archivo que contiene la información de conexión a la base de datos es inherente al editor de contenidos (CMS) correspondiente y no a OVHcloud.
 >
-> Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) utilizado para crear su sitio web o con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). No podremos asistirle en este asunto.
+> Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) utilizado para crear su sitio web o con un [proveedor especializado](/links/partner). No podremos asistirle en este asunto.
 >
 
 Compruebe la coincidencia **exacta** entre los identificadores de conexión a [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceso-a-la-interfaz-phpmyadmin) y los del fichero de configuración de su sitio web.
@@ -80,7 +80,7 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
-En el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en la pestaña `Bases de datos`{.action} y compruebe la correspondencia entre los elementos mostrados y los presentes en el archivo **wp-config.php**.
+En el área de cliente de OVHcloud](/links/manager), haga clic en la pestaña `Bases de datos`{.action} y compruebe la correspondencia entre los elementos mostrados y los presentes en el archivo **wp-config.php**.
 
 - **my_database** debe coincidir con lo que se indica en el símbolo "Nombre de la base de datos" ;
 - **my_user** debe coincidir con lo que se indica en `Nombre de usuario`;
@@ -89,9 +89,9 @@ En el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 > [!primary]
 >
-> Si esta operación no le permite restablecer el acceso a su sitio web, [guarde su base de datos](/pages/web_cloud/web_hosting/sql_database_export) y después [restablezca-la a una fecha anterior](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#1-restaurar-una-copia-de-seguridad-existente) desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+> Si esta operación no le permite restablecer el acceso a su sitio web, [guarde su base de datos](/pages/web_cloud/web_hosting/sql_database_export) y después [restablezca-la a una fecha anterior](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#1-restaurar-una-copia-de-seguridad-existente) desde su [área de cliente OVHcloud](/links/manager).
 >
-> Contacte a continuación con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si es necesario. No podremos asistirle en este asunto.
+> Contacte a continuación con un [proveedor especializado](/links/partner) si es necesario. No podremos asistirle en este asunto.
 >
 
 ### Superación del límite autorizado de la base de datos
@@ -104,7 +104,7 @@ Desbloquee la base de datos de tres formas distintas:
 
 #### Método 1: cambiar la suscripción a un plan superior
 
-Si dispone de una fórmula **Personal** o **Profesional**, le recomendamos que cambie a [plan de hosting superior](https://www.ovhcloud.com/es-es/web-hosting/). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
+Si dispone de una fórmula **Personal** o **Profesional**, le recomendamos que cambie a [plan de hosting superior](/links/web/hosting). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
 
 > [!warning]
 >
@@ -112,10 +112,10 @@ Si dispone de una fórmula **Personal** o **Profesional**, le recomendamos que c
 >
 > Una anomalía puede conllevar un aumento permanente del tamaño de la base de datos, en cuyo caso el cambio de plan de hosting sería ineficaz.
 >
-> Si detecta un aumento repentino en el tamaño de su base de datos o si tiene un sitio web de tipo "blog" que normalmente no consume datos, le recomendamos que contacte inmediatamente con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). No podremos ofrecerle soporte sobre este tema.
+> Si detecta un aumento repentino en el tamaño de su base de datos o si tiene un sitio web de tipo "blog" que normalmente no consume datos, le recomendamos que contacte inmediatamente con un [proveedor especializado](/links/partner). No podremos ofrecerle soporte sobre este tema.
 >
 
-Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Haga clic en el botón `...`{.action} en el epígrafe `Producto` situado a la derecha de su pantalla y, seguidamente, en `Cambiar de plan`{.action}.
+Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Haga clic en el botón `...`{.action} en el epígrafe `Producto` situado a la derecha de su pantalla y, seguidamente, en `Cambiar de plan`{.action}.
 
 Si utiliza un plan **Performance**, consulte el [método 2](#methode2).
 
@@ -123,7 +123,7 @@ Si utiliza un plan **Performance**, consulte el [método 2](#methode2).
 
 También puede migrar sus datos a una nueva base de datos:
 
-- Contrate, si es necesario, una [base de datos](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) de mayor tamaño y lance su [creación](/pages/web_cloud/web_hosting/sql_create_database).
+- Contrate, si es necesario, una [base de datos](/links/web/hosting-options-startsql) de mayor tamaño y lance su [creación](/pages/web_cloud/web_hosting/sql_create_database).
 - Realice un [exportar sus datos](/pages/web_cloud/web_hosting/sql_database_export) y a continuación [importar los](/pages/web_cloud/web_hosting/sql_importing_mysql_database) en la nueva base de datos;
 - Integre las claves de la nueva base de datos en el [archivo de configuración](#config_file) de su sitio web.
 
@@ -140,7 +140,7 @@ Abra la pestaña `Bases de datos`{.action} del alojamiento correspondiente e ini
 
 > [!warning]
 >
-> Esta operación requiere fuertes conocimientos técnicos. Le recomendamos que, si lo necesita, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). No podremos asistirle en este asunto.
+> Esta operación requiere fuertes conocimientos técnicos. Le recomendamos que, si lo necesita, contacte con un [proveedor especializado](/links/partner). No podremos asistirle en este asunto.
 >
 
 #### Método 4: optimizar la base de datos
@@ -149,22 +149,22 @@ Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Confi
 
 > [!warning]
 >
-> Si el asesoramiento ofrecido sobre la optimización de su base de datos no bastaba para desbloquear el acceso a su sitio web, le recomendamos que se ponga en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle en este asunto.
+> Si el asesoramiento ofrecido sobre la optimización de su base de datos no bastaba para desbloquear el acceso a su sitio web, le recomendamos que se ponga en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 >
 
 ### Memoria RAM rebasada
 
-El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), indica que su servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
+El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](/links/manager), indica que su servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
 
 ![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
-En ese caso, puede aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#cambiar-la-oferta-del-servidor-de-bases-de-datos) disponible desde la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
+En ese caso, puede aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#cambiar-la-oferta-del-servidor-de-bases-de-datos) disponible desde la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](/links/manager). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
 
 > [!warning]
 >
-> Para aumentar la RAM, el Web Cloud Databases no debe activarse a través de un hosting Performance. Si quiere aumentar la cantidad de memoria RAM de una base de datos incluida en los [planes Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/){.external}, deberá desvincularla primero.
+> Para aumentar la RAM, el Web Cloud Databases no debe activarse a través de un hosting Performance. Si quiere aumentar la cantidad de memoria RAM de una base de datos incluida en los [planes Performance](/links/web/hosting-performance-offer){.external}, deberá desvincularla primero.
 > 
-> Para desvincular la base de datos, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web en el que esté activado el Web Cloud Databases.
+> Para desvincular la base de datos, conéctese a su [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web en el que esté activado el Web Cloud Databases.
 >
 > En el área de `Configuración`, haga clic en los `...`{.action} a la derecha de la entrada de la `Base de datos privada` y haga clic en el botón `Desvincular`{.action}.
 >
@@ -173,7 +173,7 @@ También puede optimizar su base de datos siguiendo las instrucciones de nuestra
 
 > [!primary]
 >
-> Si tiene dificultades para reducir el uso de los recursos en su servidor de bases de datos y no quiere aumentarlos, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/). No podremos asistirle en este asunto.
+> Si tiene dificultades para reducir el uso de los recursos en su servidor de bases de datos y no quiere aumentarlos, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). No podremos asistirle en este asunto.
 >
 
 ### Errores de importación de bases de datos
@@ -194,7 +194,7 @@ También puede marcar la casilla `Vaciar la base de datos actual`{.action} justo
 
 ![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
-Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud. Si lo necesita, puede ponerse en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). No podremos asistirle en la corrección de esta anomalía.
+Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud. Si lo necesita, puede ponerse en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con un [proveedor especializado](/links/partner). No podremos asistirle en la corrección de esta anomalía.
 
 > [!faq]
 >
@@ -214,7 +214,7 @@ Sustituya por:
 USE `Database-Name`;
 ```
 
-(`Database-Name`: indique el nombre de la base de datos indicada en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es))
+(`Database-Name`: indique el nombre de la base de datos indicada en su [área de cliente de OVHcloud](/links/manager))
 
 #### "MySQL server has gone away"
 
@@ -226,9 +226,9 @@ Este mensaje de error aparece durante [la importación de una base de datos](/pa
 
 Para resolver esta anomalía, puede:
 
-- Aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#seguimiento-de-la-ram-consumida). Para ello, acceda al [servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) correspondiente en la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en el botón `...`{.action} en la sección `RAM` y, seguidamente, en `Cambiar la cantidad de RAM`{.action}.
+- Aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#seguimiento-de-la-ram-consumida). Para ello, acceda al [servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) correspondiente en la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](/links/manager). Haga clic en el botón `...`{.action} en la sección `RAM` y, seguidamente, en `Cambiar la cantidad de RAM`{.action}.
 
-- Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle en este asunto.
+- Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 
 - [Optimice su base de datos](/pages/web_cloud/web_cloud_databases/configure-database-server#gestionar-las-bases-de-datos) y luego repite las operaciones de exportación/importación.
 
@@ -252,7 +252,7 @@ En ese caso, [compruebe los identificadores indicados](/pages/web_cloud/web_clou
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-El número máximo de conexiones activas para las bases de datos entregadas con los alojamientos compartidos [StartSQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) es de **30**.
+El número máximo de conexiones activas para las bases de datos entregadas con los alojamientos compartidos [StartSQL](/links/web/hosting-options-startsql) es de **30**.
 
 Este número es de **200** para las bases de servidores [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). (Puede cambiar este parámetro en la sección `Configuración`{.action} del servidor de la base de datos).
 
@@ -262,7 +262,7 @@ En ese caso, deberá [optimizar las bases de datos](/pages/web_cloud/web_cloud_d
 
 > [!warning]
 >
-> Para más información sobre las operaciones que debe realizar para reducir el número de conexiones activas a la base de datos, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle en este asunto.
+> Para más información sobre las operaciones que debe realizar para reducir el número de conexiones activas a la base de datos, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 >
 
 #### "Name or service not known"
@@ -275,11 +275,11 @@ Este mensaje de error aparece durante [conexión a PhpMyAdmin](/pages/web_cloud/
 
 ![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
 
-Compruebe el nombre del servidor que quiera registrar en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Compruebe el nombre del servidor que quiera registrar en su [área de cliente de OVHcloud](/links/manager).
 
 > [!success]
 >
-> Si la base de datos a la que desea conectarse aparece en la pestaña `Bases de datos`{.action} de la parte `Alojamientos`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), el nombre que debe introducir se indica en la columna `Dirección del servidor`.
+> Si la base de datos a la que desea conectarse aparece en la pestaña `Bases de datos`{.action} de la parte `Alojamientos`{.action} de su [área de cliente de OVHcloud](/links/manager), el nombre que debe introducir se indica en la columna `Dirección del servidor`.
 >
 > Si desea conectarse a una base de datos en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), el nombre del servidor a introducir se inscribe en la pestaña `Información general`{.action}, parte `Datos de conexión`{.action}, `SQL`{.action} y en el `Nombre del host`{.action}.
 >
@@ -288,6 +288,6 @@ Compruebe el nombre del servidor que quiera registrar en su [área de cliente de
 
 [Primeros pasos con el servicio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

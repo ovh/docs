@@ -1,7 +1,7 @@
 ---
 title: 'Informationen zu den Abrechnungsoptionen der Public Cloud'
 excerpt: 'Erfahren Sie mehr über die verschiedenen Abrechnungsoptionen für Public Cloud-Produkte'
-updated: 2022-08-29
+updated: 2024-04-24
 ---
 
 ## Ziel
@@ -27,6 +27,8 @@ Unser Ziel ist es, ein Abrechnungssystem für die Dienstleistung bereitzustellen
 Für jede abzurechnende Ressource beginnt ein Stundenzähler, sobald die Ressource erstellt wird, und endet, wenn die Ressource entfernt wird. Dies erfolgt nach dem Prinzip, dass jede angefangene Nutzungsstunde in Rechnung gestellt wird.
 
 Am Monatsende werden alle gezählten Einheiten mit dem Stundensatz der Ressource multipliziert. Um die Gesamtrechnung zu erhalten, addieren Sie einfach alle abgerechneten Stundeneinheiten.
+
+Speziell für Instanzen vom Typ *Virtual Machines* wird der Abrechnungszähler gestartet, wenn eine Instanz den Status `ACTIVE` erreicht (im OVHcloud-Kundenbereich als `Aktiviert` angezeigt). Das bedeutet: Der Zeitraum, in dem sich die Instanz im Status `BUILD` befindet, wird nicht in Rechnung gestellt.
 
 Für jedes Cloud Projekt gibt es eine eigene Rechnung, die alle im Laufe des Monats abgerechneten Ressourcen zusammenfasst. Diese Rechnung wird am ersten Tag des Folgemonats erstellt.
 
@@ -62,7 +64,7 @@ Ergebnis: 23,63€
 
 ### Ihre Rechnungen einsehen
 
-Um die Rechnungen eines Projekts anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie links auf `Billing Control`{.action} und dann auf den Tab `History`{.action}.
+Um die Rechnungen eines Projekts anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie links auf `Billing Control`{.action} (im Abschnitt `Project Management`) und dann auf den Tab `History`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 

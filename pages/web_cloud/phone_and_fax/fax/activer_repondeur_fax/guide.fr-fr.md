@@ -16,12 +16,12 @@ Vous pouvez configurer votre ligne fax en tant que messagerie vocale directement
 
 ## Prérequis
 
-- Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr)
+- Disposer d’une [ligne Fax OVHcloud](/links/telecom/fax).
+- Être connecté à votre [espace client OVHcloud](/links/manager-telecom)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez sur `Téléphonie`{.action} puis sur le groupe ou se trouve votre ligne Fax. Sélectionnez cette dernière.
+Connectez-vous à votre [espace client OVHcloud](/links/manager-telecom) puis sélectionnez `Télécom`{.action}. Cliquez sur `Téléphonie`{.action} puis sur le groupe ou se trouve votre ligne Fax. Sélectionnez cette dernière.
 
 ![gestion répondeur](images/gestion-repondeur.png){.thumbnail}
 

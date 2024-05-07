@@ -34,22 +34,22 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch mit Ihrem In
 >
 > Unsere Webhostings verfügen nicht über ein "Service Level Agreement" (SLA).
 >
-> Wenn Sie einen Dienst mit einer Verfügbarkeitsgarantie von mehr als 99% benötigen, empfehlen wir die Verwendung eines [Virtual Private Server (VPS)](https://www.ovhcloud.com/de/vps/) oder eines [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
+> Wenn Sie einen Dienst mit einer Verfügbarkeitsgarantie von mehr als 99% benötigen, empfehlen wir die Verwendung eines [Virtual Private Server (VPS)](/links/bare-metal/vps) oder eines [Dedicated Server](/links/bare-metal/bare-metal).
 >
 > Darüber hinaus wird die Performance der Hosting-Infrastruktur von OVHcloud permanent überwacht. Damit wird eine generell hohe Verfügbarkeit und gegebenenfalls eine schnelle Wiederherstellung Ihrer Dienste im Falle einer Überlastung sichergestellt.
 >
 
 ## Voraussetzungen
 
-- Sie hosten eine Website auf einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie hosten eine Website auf einem [OVHcloud Webhosting](/links/web/hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## Voraussetzungen
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten, sofern die **Ausfälle nicht auf Ebene der Hosting-Infrastruktur verursacht werden**. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten, sofern die **Ausfälle nicht auf Ebene der Hosting-Infrastruktur verursacht werden**. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 > [!success]
@@ -97,7 +97,7 @@ Alle Diagnosen in Schritt 1 sind **ausnahmslos** durchzuführen, um festzustelle
 
 Um sicherzustellen, dass Ihre Dienste (Webhosting **und** Datenbank) derzeit von keiner Störung oder Wartung beeinträchtigt werden, benötigen Sie die Cluster- und Filer-Nummer des Hostings sowie die allgemeinen Daten zur entsprechenden Datenbank. Damit können Sie den Status auf [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/) überprüfen.
 
-Um Cluster und Filer Ihres Webhostings zu ermitteln, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Im Tab `Allgemeine Informationen`{.action} können Sie `Rechenzentrum` und `Filer` des Webhostings einsehen.
+Um Cluster und Filer Ihres Webhostings zu ermitteln, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Im Tab `Allgemeine Informationen`{.action} können Sie `Rechenzentrum` und `Filer` des Webhostings einsehen.
 
 ![Filer abrufen](images/find-filer.png){.thumbnail}
 
@@ -136,7 +136,7 @@ phpinfo();
 >
 > In manchen Fällen können **.htaccess** Dateien in Ordnern, die sich auf derselben Ebene oder höher wie Ihre **phpinfo.php** befinden, die Anzeige von **phpinfo.php** im Webbrowser beeinträchtigen. 
 >
-> Änderungen an einer **.htaccess** können Auswirkungen auf die korrekte Anzeige Ihrer Website haben. Wenden Sie sich an [spezialisierter Dienstleister](https://partner.ovhcloud.com/de/directory/), wenn Sie Schwierigkeiten haben, die folgenden Maßnahmen durchzuführen.
+> Änderungen an einer **.htaccess** können Auswirkungen auf die korrekte Anzeige Ihrer Website haben. Wenden Sie sich an [spezialisierter Dienstleister](/links/partner), wenn Sie Schwierigkeiten haben, die folgenden Maßnahmen durchzuführen.
 >
 > **Als sachkundiger Nutzer** benennen Sie in diesem Fall Ihre **.htaccess** in **.htaccess_OLD** um, damit der Server sie nicht mehr während Ihres Tests ausführt. Benennen Sie die Datei(en) nach Ihrer Diagnose wieder korrekt.
 >
@@ -191,7 +191,7 @@ An dieser Stelle sollte eindeutig sein, dass Verlangsamungen von Seiten/Skripte/
 
 > [!warning]
 >
-> Wenn Sie Schwierigkeiten haben, die folgenden Aktionen durchzuführen, können Sie einen [sachverständigen Partner](https://partner.ovhcloud.com/de/directory/) kontaktieren. OVHcloud kann keine Unterstützung bei der Entwicklung oder Optimierung Ihrer Website anbieten.
+> Wenn Sie Schwierigkeiten haben, die folgenden Aktionen durchzuführen, können Sie einen [sachverständigen Partner](/links/partner) kontaktieren. OVHcloud kann keine Unterstützung bei der Entwicklung oder Optimierung Ihrer Website anbieten.
 >
 
 Im Folgenden finden Sie die notwendigen Aktionen, um die Quelle(n) der Langsamkeit zu ermitteln und Ihre Website zu optimieren.
@@ -248,14 +248,14 @@ Um das Aufkommen an Abfragen für jeden Seitenaufbau zu reduzieren, können Sie 
 
 > [!primary]
 >
-> OVHcloud bietet mehrere [CDN-Optionen](https://www.ovhcloud.com/de/web-hosting/options/) an. Wenn Sie CDN für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und folgen Sie unserer Anleitung zur [Verwendung des OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud bietet mehrere [CDN-Optionen](/links/web/hosting-options) an. Wenn Sie CDN für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und folgen Sie unserer Anleitung zur [Verwendung des OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - Optimieren Sie Ihre Datenbank
 
 > [!warning]
 >
-> Änderungen in Ihrer Datenbank können irreversible Folgen haben, wenn sie nicht systematisch und korrekt durchgeführt werden. Wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/), falls Sie sich der geeigneten Maßnahmen nicht sicher sind. 
+> Änderungen in Ihrer Datenbank können irreversible Folgen haben, wenn sie nicht systematisch und korrekt durchgeführt werden. Wenden Sie sich an einen [spezialisierten Dienstleister](/links/partner), falls Sie sich der geeigneten Maßnahmen nicht sicher sind. 
 >
 
 Überprüfen Sie, ob eine große Anzahl an Anfragen an Ihre Datenbank erfolgt.<br>
@@ -293,12 +293,12 @@ Sie können weitere Optimierungsmöglichkeiten für Ihre Website finden, indem S
 
 Wenn Ihr Webhosting und Ihre Datenbank **nicht betroffen sind** und Ihre Website trotz der Umsetzung **aller Schritte** in dieser Anleitung weiterhin langsam ist, bedeutet dies wahrscheinlich, dass Ihr Webhosting Dienst den Ansprüchen Ihrer Website nicht oder nicht mehr genügt. 
 
-Ziehen Sie in diesem Fall ein leistungsfähigeres [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder eine dedizierte Infrastruktur in Betracht, wie einen [Virtual Private Server (VPS)](https://www.ovhcloud.com/de/vps/) oder einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
+Ziehen Sie in diesem Fall ein leistungsfähigeres [Webhosting](/links/web/hosting) oder eine dedizierte Infrastruktur in Betracht, wie einen [Virtual Private Server (VPS)](/links/bare-metal/vps) oder einen [Dedicated Server](/links/bare-metal/bare-metal).
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

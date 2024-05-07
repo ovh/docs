@@ -26,13 +26,13 @@ Ein Hack kann diverse Folgen haben (nicht erschöpfende Liste):
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Ihre Webseite befindet sich auf einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Ihre Webseite befindet sich auf einem [OVHcloud Webhosting](/links/web/hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -95,7 +95,7 @@ Wir empfehlen Ihnen auch die Verwendung eines [Passwort-Managers](/pages/account
 
 > [!warning]
 >
-> Wenn Sie Schwierigkeiten haben, die unten beschriebenen Aktionen durchzuführen, wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) für Cyber-Sicherheit.
+> Wenn Sie Schwierigkeiten haben, die unten beschriebenen Aktionen durchzuführen, wenden Sie sich an einen [spezialisierten Dienstleister](/links/partner) für Cyber-Sicherheit.
 >
 
 Folgen Sie unserer Anleitung zu [Statistiken und Logs Ihres Webhostings](/pages/web_cloud/web_hosting/logs_and_statistics), um in den "Web"-Logs nach den entsprechenden Einträgen zu suchen, die Schadcode in die Website injizieren.
@@ -149,7 +149,7 @@ Gleichen Sie die Zeitpunkte für die Wiederherstellung Ihres FTP-Speicherplatzes
 > OVHcloud setzt Sicherheitsroboter ein, die von Ihrem Hosting ausgehende Angriffe erkennen können. Diese deaktivieren Ihr Hosting und und informieren Sie per E-Mail, dass Ihr Hosting deaktiviert wurde.
 > Zusätzlich zu dieser E-Mail erscheint in der Regel eine "403 Forbidden" Fehlerseite, wenn Sie auf Ihre Website zugreifen.
 >
-> Wenn sich Ihr Hosting im Zustand "Disabled" befindet, wird auch die über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbare Option zur automatischen Wiederherstellung deaktiviert.
+> Wenn sich Ihr Hosting im Zustand "Disabled" befindet, wird auch die über Ihr [OVHcloud Kundencenter](/links/manager) verfügbare Option zur automatischen Wiederherstellung deaktiviert.
 > Sie müssen eine "manuelle" Wiederherstellung Ihrer Website durchführen, die verbleibenden schadhaften Elemente entfernen und alle Sicherheitslücken in diesem Backup beheben. Dies muss durchgeführt werden, **bevor** das Hosting reaktiviert wird.
 >
 > Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).
@@ -220,8 +220,8 @@ Lesen Sie auch unsere Anleitung zur [Sicherung Ihrer Website](/pages/web_cloud/w
 
 [Die Performance Ihrer Website optimieren](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

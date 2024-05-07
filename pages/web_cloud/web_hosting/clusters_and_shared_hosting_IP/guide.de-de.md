@@ -16,17 +16,17 @@ Es kann notwendig werden, Zugriffseinstellungen für Dienste manuell anzupassen.
 
 > [!primary]
 >
-> Bitte beachten Sie, dass die IP-Adressen der CDN-Option "Anycast"-Adressen sind; das bedeutet, sie benötigen keine Geolokalisierung (siehe auch die Informationen auf unserer [Webseite](https://www.ovhcloud.com/de/web-hosting/options/cdn/).
+> Bitte beachten Sie, dass die IP-Adressen der CDN-Option "Anycast"-Adressen sind; das bedeutet, sie benötigen keine Geolokalisierung (siehe auch die Informationen auf unserer [Webseite](/links/web/hosting-options-cdn).
 > 
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Sie können hier die Clusternummer unter **FTP-Server** ablesen.
+Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Sie können hier die Clusternummer unter **FTP-Server** ablesen.
 
 ### Cluster 002
 
@@ -780,8 +780,8 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 [Optimierung der Performance Ihrer Website](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

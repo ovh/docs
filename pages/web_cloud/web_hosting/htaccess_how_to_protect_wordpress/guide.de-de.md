@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - htaccess-Dateien mit WordPress verwenden"
 excerpt: "Erfahren Sie hier, wie Sie Ihre WordPress Website mit einer oder mehreren htaccess-Dateien absichern"
-updated: 2023-06-22
+updated: 2024-03-15
 ---
 
 > [!primary]
@@ -15,14 +15,14 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/){.external} zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/){.external} zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 **Dieses Tutorial erklärt, wie Sie Ihr WordPress mit .htaccess-Dateien absichern.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) und haben WordPress installiert.
+- Sie verfügen über ein [Webhosting](/links/web/hosting) und haben WordPress installiert.
 - Sie haben einen FTP-Client, z.B. [FileZilla](https://filezilla-project.org/) installiert, wie in unserem [Tutorial zu FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) erläutert.
 
 **.htaccess**-Dateien können mit Texteditoren erstellt und bearbeitet werden, zum Beispiel:
@@ -39,7 +39,7 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 >
 > Wenn Sie kein CMS verwenden, stellt Ihnen OVHcloud auch ein [Tutorial zum Schützen von Verzeichnissen oder des Verwaltungsinterface Ihrer Website über .htaccess Dateien](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password) zur Verfügung.
 >
-> Kontaktieren Sie bei Fragen unsere [User Community](https://community.ovh.com/en/) oder [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/). Die Support-Teams von OVHcloud werden Ihnen zu diesen Themen keine Hilfe bieten können.
+> Kontaktieren Sie bei Fragen unsere [User Community](https://community.ovh.com/en/) oder [OVHcloud Partner](/links/partner). Die Support-Teams von OVHcloud werden Ihnen zu diesen Themen keine Hilfe bieten können.
 >
 
 ## FAQ
@@ -48,7 +48,7 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 
 Mit einer **.htaccess**-Datei können Sie einen Webserver konfigurieren. Bei Webhostings handelt es sich um den Open Source Webserver **Apache**. Die Syntax dieser Datei wird von der Organisation definiert, die **Apache** entwickelt. Im Gegensatz zu den meisten Konfigurationsdateien eines Servers befinden sich die **.htaccess**-Dateien in den Verzeichnissen von Websites, genauer: im FTP-Speicherplatz Ihres Webhostings. Eine **.htaccess**-Datei hat Auswirkungen auf das Verzeichnis, in dem sie liegt, sowie auf alle Unterverzeichnisse dieses Ordners.
 
-Unsere Webhosting-Angebote erlauben keine Serverkonfigurationsdateien. Die **.htaccess**-Dateien ermöglichen es jedoch, bestimmte Eigenschaften und Verhaltensweisen zu ändern. Darüber hinaus ist es nicht notwendig, **Apache** neu zu starten, damit die Inhalte und Änderungen in der **.htaccess**-Datei berücksichtigt werden. Mit unseren [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) können **.htaccess**-Dateien konfiguriert werden.
+Unsere Webhosting-Angebote erlauben keine Serverkonfigurationsdateien. Die **.htaccess**-Dateien ermöglichen es jedoch, bestimmte Eigenschaften und Verhaltensweisen zu ändern. Darüber hinaus ist es nicht notwendig, **Apache** neu zu starten, damit die Inhalte und Änderungen in der **.htaccess**-Datei berücksichtigt werden. Mit unseren [OVHcloud Webhostings](/links/web/hosting) können **.htaccess**-Dateien konfiguriert werden.
 
 Der Punkt vor dem Dateinamen **.htaccess** (der selbst keine Endung hat) kennzeichnet eine versteckte Datei. Außerdem sind diese Dateien für externe Benutzer, die Ihre Website aufrufen, nicht verfügbar.
 
@@ -141,12 +141,12 @@ Wenn Sie eine zu sperrende IP-Adresse identifiziert haben, geben Sie diese Zeile
 
 ```bash
 <Limit GET POST>
-    order allow,deny deny from xxx.xxx.xxx.xxx
+    order allow,deny deny from 203.0.113.0
     allow from all
 </Limit>
 ```
 
-Ersetzen Sie `xxx.xxx.xxx.xxx` mit der zu blockierenden IP-Adresse.
+Ersetzen Sie `203.0.113.0` mit der zu blockierenden IP-Adresse.
 
 Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [IP-basierten Zugriffsbeschränkung über die .htaccess-Datei](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -157,8 +157,8 @@ Das Verzeichnis **wp-admin** enthält den Zugang zum Administrationssinterface d
 ```bash
 <Limit GET POST PUT>
     order deny,allow deny from all
-    allow from xxx.xxx.xxx.xxx
-    allow from xxx.xxx.xxx.xxx
+    allow from 203.0.113.0
+    allow from 203.0.113.0
 </Limit>
 ```
 
@@ -173,8 +173,8 @@ Das Verzeichnis **wp-admin** enthält den Zugang zum Administrationssinterface d
 
 [Offizielles Apache .htaccess tutorial](https://httpd.apache.org/docs/2.4/de/howto/htaccess.html)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -20,7 +20,7 @@ updated: 2022-12-01
 > 
 
 ## Effettua lordine
-- Per ordinare la soluzione SSL Gateway, accedi a [questa pagina](https://www.ovh.it/ssl-gateway/){.external}.
+- Per ordinare la soluzione SSL Gateway, accedi a [questa pagina](/links/web/ssl-gateway){.external}.
 - Scegli l’offerta e clicca su `Attivalo subito`{.action} o `Ordina`{.action}.
 
 ![pagina commerciale](images/1-en.png){.thumbnail}
@@ -103,8 +103,8 @@ Una volta effettuate le operazioni necessarie, riceverai un'altra email con la c
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

@@ -30,7 +30,30 @@ In S3, a bucket is a flat container of objects. It does not provide any hierarch
 > - CSS files must be uploaded with text/css as their ContentType.
 > - Make your bucket content publicly available, i.e all resources must have ACL "public-read".
 
-### Step 2: Setting the website configuration for a bucket
+### Step 2: Setting the permissions
+
+The bucket hosting the website and its contents must be publicly accessible i.e with READ permission set for all users.
+
+**Example**:
+
+Using the predefined `PUBLIC-READ` ACL at the bucket level:
+
+```sh
+aws --profile user-aws s3api put-bucket-acl --bucket my-website --acl public-read
+```
+
+Applying the predefined `PUBLIC-READ` ACL on **all** the objects:
+
+```sh
+#!/bin/bash
+declare -a output=($(aws s3api list-objects-v2 --bucket my-website --query='Contents[].Key' | jq -r '.[]'))
+for value in "${output[@]}"
+do
+    aws s3api put-object-acl --bucket my-website --key $value --acl public-read
+done
+```
+
+### Step 3: Setting the website configuration for a bucket
 
 To activate website hosting, you will have to upload a website configuration.
 
@@ -59,7 +82,7 @@ If you use the AWS low-level commands with website-conf.json:
 }
 ```
 
-### Step 3: Testing the endpoint
+### Step 4: Testing the endpoint
 
 Once the website configuration has been successfully uploaded, you can test the endpoint in your web browser.
 The default endpoint will depend on the region of your bucket.
@@ -71,7 +94,7 @@ http://{bucket-name}.s3-website.{region}.io.cloud.ovh.net
 
 > [!primary]
 > If you want to use a custom endpoint, you will have to provide your own domain name.
-> Find more information on OVHcloud domain name offers on the [OVHcloud website](https://www.ovhcloud.com/es/domains/).
+> Find more information on OVHcloud domain name offers on the [OVHcloud website](/links/web/domains).
 
 > [!warning]
 > - Make sure the region you are hosting your bucket in supports the storage class you choose. You can check the list of supported storage classes by regions [here](/pages/storage_and_backup/object_storage/s3_location).
@@ -81,6 +104,6 @@ http://{bucket-name}.s3-website.{region}.io.cloud.ovh.net
 
 [Enable HTTPS on a S3 static website using a custom fqdn](/pages/storage_and_backup/object_storage/s3_website_https)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

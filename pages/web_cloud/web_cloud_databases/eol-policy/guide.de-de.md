@@ -17,9 +17,9 @@ Von OVHcloud verwaltete Datenbanken (*Managed Databases*) verwenden verschiedene
 
 Sie verfügen über einen der folgenden Dienste:
 
-- Eine in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthaltene Datenbank.
-- Eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/) (auch in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
-- Ein [Start SQL Datenbank-Paket](https://www.ovhcloud.com/de/web-hosting/options/start-sql/).
+- Eine in einem [Webhosting](/links/web/hosting) enthaltene Datenbank.
+- Eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/) (auch in einem [Performance Webhosting](/links/web/hosting) enthalten).
+- Ein [Start SQL Datenbank-Paket](/links/web/hosting-options-startsql).
 
 ## In der praktischen Anwendung
 
@@ -78,8 +78,8 @@ Die Einstellung kann je nach Fall auf zwei Arten erfolgen:
 
 ## Weiterführende Informationen
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

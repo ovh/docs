@@ -13,7 +13,7 @@ Lorsque vous changez de téléphone, vous restituez votre ancien matériel. Que 
 ## Prérequis
 
 - Disposer d'un téléphone VoIP fourni sous caution par OVHcloud.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
@@ -131,7 +131,7 @@ Lorsque nous avons reçu votre équipement, vous recevez cet e-mail :
 Si une caution est restituée, elle sera disponible sur votre compte OVHcloud et servira ainsi à régler vos prochaines factures de manière automatique. 
 <br>Si vous le souhaitez , vous pouvez en demander le versement sur votre compte bancaire via ces étapes :
 
--   connectez vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie **Telecom** ;
+-   connectez vous à votre [espace client OVHcloud](/links/manager), partie **Telecom** ;
 -   cliquez sur **Téléphonie**;****
 -   cliquez sur le bouton "**Groupe**" ;
 -   cliquez sur "**Facturation**" ;

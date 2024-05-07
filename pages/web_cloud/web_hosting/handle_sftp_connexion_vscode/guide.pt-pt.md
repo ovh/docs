@@ -21,7 +21,7 @@ Se dispõe de um alojamento web OVHcloud, pode aceder a um espaço de armazename
   
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting)
 - Instalar [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) na sua máquina
 
 ## Instruções
@@ -30,7 +30,7 @@ Se dispõe de um alojamento web OVHcloud, pode aceder a um espaço de armazename
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 > 
-> Nós disponibilizamos-lhe este tutorial a fim de o acompanhar nas tarefas mais comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) ou a [editor do IDE Visual Studio Code](https://code.visualstudio.com/){.external}. Não poderemos proporcionar-lhe assistência técnica. Mais informações na secção ["Quer saber mais?"](#go-further) deste tutorial.
+> Nós disponibilizamos-lhe este tutorial a fim de o acompanhar nas tarefas mais comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou a [editor do IDE Visual Studio Code](https://code.visualstudio.com/){.external}. Não poderemos proporcionar-lhe assistência técnica. Mais informações na secção ["Quer saber mais?"](#go-further) deste tutorial.
 >
 
 ### Instalar a extensão SFTP para o Visual Studio Code
@@ -86,7 +86,7 @@ Este ficheiro está presente na pasta .vscode, que por sua vez está posicionado
 
 ### Configurar o ficheiro sftp.json
 
-Antes de trabalhar no seu projeto, transfira-o para a pasta local que criou anteriormente. No entanto, em primeiro lugar, certifique-se de que o ficheiro "sftp.json" está configurado corretamente. As informações úteis estão presentes na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Na parte `Web Cloud`{.action}, clique em `Alojamentos`{.action}. Selecione o alojamento em causa e depois clique no separador `FTP - SSH`{.action}.
+Antes de trabalhar no seu projeto, transfira-o para a pasta local que criou anteriormente. No entanto, em primeiro lugar, certifique-se de que o ficheiro "sftp.json" está configurado corretamente. As informações úteis estão presentes na sua [Área de Cliente OVHcloud](/links/manager). Na parte `Web Cloud`{.action}, clique em `Alojamentos`{.action}. Selecione o alojamento em causa e depois clique no separador `FTP - SSH`{.action}.
 
 ficheiro "sftp.json", insira os valores para as seguintes entradas:
 
@@ -185,10 +185,10 @@ Este guia tem como objetivo apresentar de forma eficaz a gestão de um projeto a
 
 [Utilizar o FileZilla com o seu alojamento OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Utilizar o acesso SSH do alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Lembre-se de que, para utilizar o SSH, deve dispor de um [plano de alojamento web Pro ou Performance](https://www.ovhcloud.com/pt/web-hosting/).
+[Utilizar o acesso SSH do alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Lembre-se de que, para utilizar o SSH, deve dispor de um [plano de alojamento web Pro ou Performance](/links/web/hosting).
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

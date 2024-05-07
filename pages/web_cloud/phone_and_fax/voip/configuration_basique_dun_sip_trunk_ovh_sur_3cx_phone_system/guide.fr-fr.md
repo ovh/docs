@@ -23,7 +23,7 @@ Pour configurer le 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **
 
 ## Prérequis
 
-- Un [SIP Trunk OVHcloud](https://www.ovhtelecom.fr/telephonie/sip-trunk/)
+- Un [SIP Trunk OVHcloud](/links/telecom/telephonie-sip-trunk)
 - Deux [alias configurés](/pages/web_cloud/phone_and_fax/voip/redirection_avec_presentation) en DDI (Redirection avec présentation du numéro)
 - Un [softphone](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone) ou un téléphone SIP
 - [3CX](https://www.3cx.fr/) installé, activé et à jour. 
@@ -128,6 +128,6 @@ Pour configurer le second DDI il vous faut appliquer la même procédure, à la 
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

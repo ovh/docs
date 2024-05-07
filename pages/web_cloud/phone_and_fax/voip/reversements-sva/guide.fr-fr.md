@@ -14,20 +14,20 @@ L'espace client OVHcloud vous permet de consulter et modifier votre palier tarif
 
 ## Prérequis
 
-- Posséder au moins [un numéro spécial](https://www.ovhtelecom.fr/telephonie/numeros/numeros-speciaux/) dans votre compte OVHcloud.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+- Posséder au moins [un numéro spécial](/links/telecom/telephonie-numeros-speciaux-francais)telecom/telephonie-numeros-speciaux) dans votre compte OVHcloud.
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom` :
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et assurez-vous de vous situer dans la partie « Télécom ». Cliquez sur `Téléphonie`{.action}, puis sélectionnez votre groupe de téléphonie.<br>
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et assurez-vous de vous situer dans la partie « Télécom ». Cliquez sur `Téléphonie`{.action}, puis sélectionnez votre groupe de téléphonie.<br>
 Pour plus d'informations sur les groupes de téléphonie, consultez notre guide « [Gérer vos groupes de téléphonie](/pages/web_cloud/phone_and_fax/voip/regrouper_services_telephonie)».
 
 ### Consulter et/ou modifier le palier tarifaire de votre numéro spécial
 
 > [!primary]
-> Vous pouvez consulter la liste complète des paliers tarifaires OVHcloud applicables aux numéros spéciaux en France sur [cette page](https://www.ovhtelecom.fr/telephonie/numeros/numeros-speciaux/numeros-francais.xml).
+> Vous pouvez consulter la liste complète des paliers tarifaires OVHcloud applicables aux numéros spéciaux en France sur [cette page](/links/telecom/telephonie-numeros-speciaux-francais)telecom/telephonie-numeros-speciaux-francais).
 >
 > La première modification du palier tarifaire est offerte.<br>
 > **Par la suite, la modification sera facturée 20 € HT**.<br>

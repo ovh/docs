@@ -1,6 +1,6 @@
 ---
 title: Using your email account via the Roundcube webmail interface
-updated: 2024-02-21
+updated: 2024-03-26
 ---
 
 ## Objective
@@ -34,6 +34,7 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
     - [Contacts](#contacts-settings)
     - [Special folders](#special-folder-settings)
     - [Server settings](#server-settings)
+    - [Encryption](#encryption)
 - [Managing identities and their signatures](#identity-signature)
     - [Identity](#identity)
     - [Signature](#signature)
@@ -57,6 +58,11 @@ Go to the page <https://www.ovh.co.uk/mail/>. Enter your email address and passw
 You will then be redirected to the Roundcube interface.
 
 ![hosting](images/roundcube01.png){.thumbnail}
+
+> [!primary]
+> 
+> When you first log in to the Roundcube interface, the appearance may be different from what you will see in this documentation. This means that the "classic" appearance has been set on your interface. To change it, follow the steps to access the [user interface settings](#user-interface-settings) and select the "Larry" view.
+> The appearance of the interface will not affect the explanations in this documentation.
 
 > [!warning]
 > 
@@ -170,6 +176,8 @@ The `Pretty Dates` option allows you to display the received/sent date with rela
 
 The `Show next entry in the list after deletion or move` check box means that after a delete or move action on an email, the item in the lower row will then always be selected, regardless of the sort order. 
 
+You can choose the display style of your interface. You can choose between the **Classic** display or the **Larry** display.
+
 #### Mailbox View <a name="mail-view-settings"></a>
 
 Set here the usability to view and act on emails. The `Layout` option allows you to arrange the 3 windows described in the [Roundcube webmail main interface section](#topwindow) .
@@ -193,8 +201,11 @@ Customise the arrangement of information in your address book here.
 
 Roundcube has 4 special folders: `Drafts`, `Sent`, `Spam`, `Deleted Items`.
 
-We do not recommend changing them, but you can assign the behaviour of a special folder to another folder created later, using the drop-down menus.<br>
-**For example**, you can assign the `Drafts` behaviour to another folder that you created. The emails that will be saved there will be considered drafts until they are actually sent.
+We do not recommend changing them, but you can assign the behaviour of a special folder to another folder created later, using the drop-down menus.
+
+You can assign the `Drafts` behaviour to another folder that you created by clicking the drop-down list and choosing that folder. If no folder is assigned, it will be automatically set to the "Drafts" option. The emails saved in there will be considered drafts until they are sent.
+
+> Example: Create a subfolder called "Drafts client emails". Open `My preferences`{.action} and `Special folders`{.action} and choose the "Drafts" option. In the drop-down menu, select the "Drafts client emails" folder to replace "Drafts". Emails in this folder will be considered drafts.
 
 #### Server Settings <a name="server-settings"></a>
 
@@ -203,6 +214,17 @@ In this tab, you can optimise the space occupied by an email account. The option
 > [!warning]
 > 
 > It is not recommended to enable the `Permanently delete messages in the spam folder` option, in the event that false positives (emails falsely declared as "SPAM") are marked as SPAM for the receiving server. When emails are placed in the `Spam` folder, it is still possible to check for legitimate messages.
+
+#### Encryption <a name="encryption"></a>
+
+If your browser allows it, you can install and activate the "Mailvelope" extension. This is a browser extension that integrates PGP (**P**retty **G**ood **P**privacy) into your web mail. The PGP encryption system and, therefore, the "Mailevelope" extension allow you to:
+
+- Encrypt and decrypt emails in your browser.
+- Keep the content of your emails private to your email provider.
+
+This way, only you can read your emails. This extension is a way to secure your webmail if you receive confidential emails.
+
+For more information, see the Mailvelope FAQ at <https://mailvelope.com/faq>.
 
 ### Managing identities and their signatures <a name="identity-signature"></a>
 

@@ -2,6 +2,7 @@
 title: Comment modifier le temps d’enregistrement d’une ligne sur Asterisk
 excerpt: Comment modifier le temps d’enregistrement (Register expire) sur Asterisk
 updated: 2018-03-26
+flag: hidden
 ---
 
 Le temps d’enregistrement minimum conseillé est de 1800 secondes. Pour modifier ce paramètre suivez ces étapes :

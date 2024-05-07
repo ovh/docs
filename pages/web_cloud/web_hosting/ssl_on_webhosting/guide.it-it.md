@@ -16,9 +16,9 @@ Le operazioni di gestione degli hosting Web OVHcloud, disponibili direttamente n
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} attivo.
-- Aver registrato almeno un [dominio](https://www.ovhcloud.com/it/domains/){.external}.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}.
+- Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting){.external} attivo.
+- Aver registrato almeno un [dominio](/links/web/domains){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}.
 
 ## Procedura
 
@@ -34,7 +34,7 @@ Puoi anche [eliminare il certificato SSL su un hosting Web](#deletessl). **Ti ri
 
 ### 1. Attiva un certificato SSL su un multisito <a name="multisite"></a>
 
-In base al [certificato SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external} che vuoi attivare, puoi attivare una connessione SSL sicura su uno o più dei tuoi multisiti. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Nella sezione `Hosting`{.action}, e clicca sulla scheda Multisito.
+In base al [certificato SSL](/links/web/hosting-options-ssl){.external} che vuoi attivare, puoi attivare una connessione SSL sicura su uno o più dei tuoi multisiti. Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Nella sezione `Hosting`{.action}, e clicca sulla scheda Multisito.
 
 La tabella che appare contiene quindi tutti i domini che hai aggiunto al tuo hosting. La colonna "SSL" mostra lo stato di attivazione delle connessioni SSL sui tuoi multisiti.
 
@@ -89,13 +89,13 @@ Prima di procedere con questa configurazione, assicurati che lo step precedente 
 >
 > Per maggiori informazioni, consulta le nostre guide [sulla configurazione di un record multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) o su [la configurazione di una zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 
-Gli hosting Web OVHcloud permettono di attivare diversi tipi di [certificati SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external}:
+Gli hosting Web OVHcloud permettono di attivare diversi tipi di [certificati SSL](/links/web/hosting-options-ssl){.external}:
 
-- un certificato SSL gratuito Let’s Encrypt, [incluso nei piani di hosting Web compatibili](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external}
-- un certificato SSL a pagamento, [in opzione nei piani di hosting Web compatibili](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external}
+- un certificato SSL gratuito Let’s Encrypt, [incluso nei piani di hosting Web compatibili](/links/web/hosting-options-ssl){.external}
+- un certificato SSL a pagamento, [in opzione nei piani di hosting Web compatibili](/links/web/hosting-options-ssl){.external}
 - un certificato SSL ottenuto presso un altro provider e importato sull’hosting Web OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Seleziona il tuo servizio nella sezione `Hosting`{.action}. Assicurati di trovarti nella scheda `Informazioni generali`{.action}. Nella scheda "Certificato SSL" dovrebbe comparire la voce "No", che indica che sull'hosting Web non è stato configurato alcun certificato SSL.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Seleziona il tuo servizio nella sezione `Hosting`{.action}. Assicurati di trovarti nella scheda `Informazioni generali`{.action}. Nella scheda "Certificato SSL" dovrebbe comparire la voce "No", che indica che sull'hosting Web non è stato configurato alcun certificato SSL.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza di "Certificato SSL" e seleziona `Ordina un certificato SSL`{.action}.
 
@@ -103,7 +103,7 @@ Nel caso che invece compaia la voce “Sì”, significa che sull’hosting Web 
 
 ![Gestione SSL](images/order-an-ssl-certificate.png){.thumbnail}
 
-Nella nuova finestra, seleziona il certificato che vuoi generare. Ti ricordiamo che, in base al [piano di hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo e alla sua configurazione, alcune delle soluzioni elencate in questa guida potrebbero non essere disponibili. Una volta effettuata la scelta, clicca sul pulsante `Seguente`{.action}.
+Nella nuova finestra, seleziona il certificato che vuoi generare. Ti ricordiamo che, in base al [piano di hosting Web](/links/web/hosting){.external} attivo e alla sua configurazione, alcune delle soluzioni elencate in questa guida potrebbero non essere disponibili. Una volta effettuata la scelta, clicca sul pulsante `Seguente`{.action}.
 
 ![Gestione SSL](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
@@ -128,7 +128,7 @@ In base alla tipologia di certificato scelta, l’installazione può durare da p
 
 Una volta attivata la connessione SSL su uno o più dei tuoi multisiti, lo stato visualizzato è “Da generare”. Questo passaggio è indispensabile per poter aggiungere i domini interessati al certificato SSL dell’hosting.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Nella sezione `Hosting`{.action}, Assicurati di trovarti nella scheda `Informazioni generali`{.action}. Clicca sui tre puntini `...`{.action} in corrispondenza di "Certificato SSL" e `seleziona Rigenera il certificato SSL`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Nella sezione `Hosting`{.action}, Assicurati di trovarti nella scheda `Informazioni generali`{.action}. Clicca sui tre puntini `...`{.action} in corrispondenza di "Certificato SSL" e `seleziona Rigenera il certificato SSL`{.action}.
 
 ![Gestione SSL](images/regenerate-ssl-certificate.png){.thumbnail}
 
@@ -144,7 +144,7 @@ Il certificato SSL installato su un hosting può essere eliminato in qualsiasi m
 
 Queste operazioni sono relative ai parametri dei tuoi siti, per cui OVHcloud non fornisce assistenza. In caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} e seleziona `Web Cloud`{.action}. Nella sezione `Hosting`{.action}, Assicurati di trovarti nella scheda `Informazioni generali`{.action}. Clicca sui tre puntini in corrispondenza di "Certificato SSL" e seleziona `Elimina SSL`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Nella sezione `Hosting`{.action}, Assicurati di trovarti nella scheda `Informazioni generali`{.action}. Clicca sui tre puntini in corrispondenza di "Certificato SSL" e seleziona `Elimina SSL`{.action}.
 
 Nella nuova pagina, conferma l’eliminazione: l’operazione diventerà effettiva entro poche ore.
 
@@ -192,12 +192,12 @@ Questo messaggio viene visualizzato nei seguenti casi:
 
 - 1: La regola di reindirizzamento verso il tuo URL in "HTTPS" non è configurata correttamente o non esiste nel file ".htaccess":
 
-Per risolvere il problema, consulta il nostro tutorial "[Riscrivere l'URL di accesso al mio sito grazie al mod_rewrite tramite il file .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" o rivolgiti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) in caso di difficoltà.
+Per risolvere il problema, consulta il nostro tutorial "[Riscrivere l'URL di accesso al mio sito grazie al mod_rewrite tramite il file .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" o rivolgiti a un [provider specializzato](/links/partner) in caso di difficoltà.
 
 - 2: Alcuni elementi della pagina Web non sono correttamente reindirizzati verso elementi cifrati in "HTTPS":
 
 Per risolvere il problema, è necessario crittografare l’intero sito Web con il protocollo "HTTPS".
-In caso di difficoltà o dubbi, consulta il nostro tutorial "[Hosting Web: passare il proprio sito Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" o rivolgiti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+In caso di difficoltà o dubbi, consulta il nostro tutorial "[Hosting Web: passare il proprio sito Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" o rivolgiti a un [provider specializzato](/links/partner).
 
 > [!success]
 >
@@ -226,8 +226,8 @@ Per modificare la zona DNS attiva del dominio, consulta la nostra guida "[Modifi
 
 [Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website){.external}
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

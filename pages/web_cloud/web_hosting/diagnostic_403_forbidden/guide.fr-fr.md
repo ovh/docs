@@ -36,14 +36,14 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou d'échanger avec notre [communauté d'utilisateurs](https://community.ovh.com) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou d'échanger avec notre [communauté d'utilisateurs](https://community.ovh.com) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/) OVHcloud.
+- Disposer d'une [offre d'hébergement web](/links/web/hosting) OVHcloud.
 - Disposer des [identifiants de connexion](/pages/web_cloud/web_hosting/ftp_connection) à l'espace de stockage FTP de votre hébergement web.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -51,11 +51,11 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 
 Si la page **« 403 forbidden »** est apparue suite à une modification de votre site web, [restaurez tout ou partie de l'espace de stockage FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_save_and_backup) à une date antérieure.
 
-Si les sauvegardes disponibles ne vous permettent pas de rétablir l'accès à votre site web, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
+Si les sauvegardes disponibles ne vous permettent pas de rétablir l'accès à votre site web, contactez un [prestataire spécialisé](/links/partner).
 
 Si la page **« 403 forbidden »** n'est pas apparue suite à une modification de votre site web, consultez votre messagerie. Si vous avez reçu un e-mail de nos services indiquant une fermeture de votre hébergement web pour des raisons de sécurité, passez directement à [l'étape 2](#step-2) du présent guide.
 
-Si la page **« 403 forbidden »** est apparue sans action de votre part et que vous n'avez pas reçu d'e-mail de nos services à ce sujet, vérifiez les droits d'accès FTP (CHMOD) de vos fichiers/dossiers ainsi que le code contenu dans votre (vos) fichier(s) **.htaccess**. Vérifiez également si cette situation n'est pas générée par un plugin de sécurité ou par un pare-feu applicatif. Si besoin, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
+Si la page **« 403 forbidden »** est apparue sans action de votre part et que vous n'avez pas reçu d'e-mail de nos services à ce sujet, vérifiez les droits d'accès FTP (CHMOD) de vos fichiers/dossiers ainsi que le code contenu dans votre (vos) fichier(s) **.htaccess**. Vérifiez également si cette situation n'est pas générée par un plugin de sécurité ou par un pare-feu applicatif. Si besoin, contactez un [prestataire spécialisé](/links/partner).
 
 ### Étape 2 : sécuriser vos solutions <a name="step-2"></a>
 
@@ -63,7 +63,7 @@ Vérifiez tout d'abord la sécurité de votre (vos) poste(s)/appareil(s) informa
 
 - Effectuez les mises à jour de sécurité de vos appareils.
 
-- Vérifiez qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) avant toute installation.
+- Vérifiez qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](/links/partner) avant toute installation.
 
 - Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant les **bonnes pratiques** précisées dans [ce guide](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -71,11 +71,11 @@ Vérifiez tout d'abord la sécurité de votre (vos) poste(s)/appareil(s) informa
 
 > [!warning]
 >
-> Avant de modifier le mot de passe de la base de données de votre site web depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), mettez à jour le fichier de configuration de votre site web afin qu'il se connecte à la base de données avec le nouveau mot de passe.
+> Avant de modifier le mot de passe de la base de données de votre site web depuis votre [espace client OVHcloud](/links/manager), mettez à jour le fichier de configuration de votre site web afin qu'il se connecte à la base de données avec le nouveau mot de passe.
 >
 > Dans le cas contraire, la modification du mot de passe de votre base de données entraînera une coupure d'accès à votre site web ou à vos services/clients qui l'utilisent.
 >
-> En cas de doute sur les manipulations à réaliser, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+> En cas de doute sur les manipulations à réaliser, contactez les [partenaires OVHcloud](/links/partner).
 >
 
 ### Étape 3 : intervenir sur votre hébergement web
@@ -89,7 +89,7 @@ Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactiv
 > - une désactivation en appliquant un « **CHMOD 700** » à la racine FTP de votre hébergement web ;
 > - une désactivation en appliquant un « **CHMOD 000** » à la racine FTP de votre hébergement web.
 >
-> Dans le cas d'une désactivation par restriction d'accès FTP en « **CHMOD 000** », contactez obligatoirement nos [équipes support](https://www.ovhcloud.com/fr/support-levels/) pour faire le point sur la situation avant de poursuivre les étapes décrites dans ce guide. 
+> Dans le cas d'une désactivation par restriction d'accès FTP en « **CHMOD 000** », contactez obligatoirement nos [équipes support](/links/support) pour faire le point sur la situation avant de poursuivre les étapes décrites dans ce guide. 
 >
 > En fonction de votre situation, ces derniers appliqueront une restriction moins élevée en transformant le « **CHMOD 000** » en « **CHMOD 700** » afin que vous puissiez agir sur l'espace FTP de votre hébergement web.
 >
@@ -103,12 +103,12 @@ Pour restaurer tout ou partie de votre espace de stockage FTP, consultez [notre 
 > [!warning]
 >
 > La restauration seule de votre espace de stockage FTP ne suffit pas à corriger de potentielles failles de sécurité préalablement présentes sur votre site web.
-> Pour identifier ces failles de sécurité, analysez les [« logs web »](/pages/web_cloud/web_hosting/logs_and_statistics) de votre hébergement web ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) afin de réaliser un audit de sécurité de vos sites web.
+> Pour identifier ces failles de sécurité, analysez les [« logs web »](/pages/web_cloud/web_hosting/logs_and_statistics) de votre hébergement web ou faites appel à un [prestataire spécialisé](/links/partner) afin de réaliser un audit de sécurité de vos sites web.
 >
 
 #### Cas n°2 : votre hébergement web a été désactivé il y a plus de deux semaines
 
-Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) afin d'effectuer un audit de sécurité de vos sites web. 
+Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](/links/partner) afin d'effectuer un audit de sécurité de vos sites web. 
 
 > [!success]
 >
@@ -158,7 +158,7 @@ SITE CHMOD 705 .
 
 #### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche et sélectionnez l'hébergement web concerné. Sélectionnez l'onglet `FTP-SSH`{.action} sur la page qui s'affiche.
+Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche et sélectionnez l'hébergement web concerné. Sélectionnez l'onglet `FTP-SSH`{.action} sur la page qui s'affiche.
 
 Appuyez sur le bouton `FTP Explorer`{.action} et connectez-vous à votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection). 
 
@@ -193,8 +193,8 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 [Changer la version de PHP de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

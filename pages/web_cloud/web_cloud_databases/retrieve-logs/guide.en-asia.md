@@ -6,7 +6,7 @@ updated: 2024-03-07
 
 ## Objective
 
-With the [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/) solution, you can host multiple databases. In some situations, you may need to view or retrieve the logs of:
+With the [Web Cloud Databases](/links/web/databases) solution, you can host multiple databases. In some situations, you may need to view or retrieve the logs of:
 
 - Your Web Cloud Databases server.
 - One of the databases hosted on your Web Cloud Databases server.
@@ -15,8 +15,8 @@ With the [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases
 
 ## Requirements
 
-- A [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/) solution (included in a [Performance web hosting](https://www.ovhcloud.com/asia/web-hosting/) solution or standalone)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- A [Web Cloud Databases](/links/web/databases) solution (included in a [Performance web hosting](/links/web/hosting) solution or standalone)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -24,14 +24,14 @@ With the [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you encounter any difficulties. We will not be able to provide you with interpretation assistance for the logs available with your Web Cloud Databases solution. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) if you encounter any difficulties. We will not be able to provide you with interpretation assistance for the logs available with your Web Cloud Databases solution. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ### View real-time logs for your Web Cloud Databases solution
 
 To check the logs for your Web Cloud Databases solution in real time, perform the following actions:
 
-1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. In the top menu of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Web Cloud Databases`{.action} dropdown menu.
 4. Select the Web Cloud Databases solution concerned.
@@ -61,7 +61,7 @@ To retrieve the log history of your Web Cloud Databases solution, you will need 
 
 To retrieve the SFTP connection information for your Web Cloud Databases solution, perform the following actions:
 
-1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. In the top menu of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Web Cloud Databases`{.action} dropdown menu.
 4. Select the Web Cloud Databases solution concerned.
@@ -101,6 +101,6 @@ You can download it to your desktop to view it.
 
 [Getting started with your Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
  
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
   
 Join our community of users on <https://community.ovh.com/en/>.

@@ -18,14 +18,12 @@ O registo **D**omain-based **M**essage **A**uthentication, **R**eporting, and **
 >
 > A OVHcloud oferece serviços cuja configuração, gestão e responsabilidade são da sua responsabilidade. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Mais informações na secção [Quer saber mais?](#go-further) deste tutorial.
->
-> Além disso, a implementação de um registo **DMARC**, independentemente do [serviço de e-mail OVHcloud](https://www.ovhcloud.com/pt/emails/), está atualmente indisponível. Este guia diz **unicamente** respeito aos clientes que possuem uma zona DNS ativa na OVHcloud para o seu nome de domínio associado a uma **solução de e-mail externa**.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Mais informações na secção [Quer saber mais?](#go-further) deste tutorial.
 >
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do domínio (associada à sua solução de e-mail) a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à secção de gestão do domínio (associada à sua solução de e-mail) a partir da [Área de Cliente OVHcloud](/links/manager).
 - Um dos mecanismos de autenticação, [SPF](/pages/web_cloud/domains/dns_zone_spf) e/ou [DKIM](/pages/web_cloud/domains/dns_zone_dkim) deve estar configurado na zona DNS do nome de domínio da oferta de e-mail.
 
 ## Instruções
@@ -60,7 +58,7 @@ Existem duas formas de configurar o DMARC na sua zona DNS da OVHcloud:
 
 #### Registo DMARC <a name="dmarc-record"></a>
 
-Pode adicionar o registo DMARC à sua zona DNS a partir da Área de Cliente OVHcloud. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, selecione o nome de domínio correspondente na secção `Nomes de domínio`{.action} e, em seguida, clique no separador `Zona DNS`{.action} para aceder à zona DNS.
+Pode adicionar o registo DMARC à sua zona DNS a partir da Área de Cliente OVHcloud. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, selecione o nome de domínio correspondente na secção `Nomes de domínio`{.action} e, em seguida, clique no separador `Zona DNS`{.action} para aceder à zona DNS.
 
 Depois de apresentar a zona DNS, clique no botão `Adicionar uma entrada`{.action} e, a seguir, em « Campos de e-mail » `DMARC`{.action}.
 
@@ -103,7 +101,7 @@ A seguir, poderá encontrar uma descrição completa das tags utilizadas para **
 
 #### Registo TXT <a name="txt-record"></a>
 
-Pode adicionar o registo TXT à sua zona DNS a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e, a seguir, aceda à secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Pode adicionar o registo TXT à sua zona DNS a partir da [Área de Cliente OVHcloud](/links/manager) e, a seguir, aceda à secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Depois de apresentar a zona DNS, clique no botão `Adicionar uma entrada`{.action} e, a seguir, em « Campos » `TXT`{.action}.
 
@@ -181,8 +179,8 @@ Obtemos o seguinte resultado:
 
 ## Quer saber mais? <a name="go-further"></a>
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

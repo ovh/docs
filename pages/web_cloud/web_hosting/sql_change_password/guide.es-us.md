@@ -18,11 +18,11 @@ Por lo tanto, siempre debe cambiar la contraseña de una base de datos:
 
 - En el [archivo de configuración](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-1-identificar-la-base-de-datos-asociada-a-su-modulo) de su sitio web a través del [espacio FTP de su alojamiento](/pages/web_cloud/web_hosting/ftp_connection);
 
-- **Y** en el servidor que contiene la base de datos desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- **Y** en el servidor que contiene la base de datos desde el [área de cliente de OVHcloud](/links/manager).
 
 Mientras no se realice el cambio **en estos dos lugares**, el sitio web mostrará un "[error al conectar a la base de datos](/pages/web_cloud/web_hosting/diagnosis_database_errors#error-al-conectar-a-la-base-de-datos)".
 
-Si desea cambiar la contraseña de la base de datos, deberá realizar todas **las operaciones** que se indican en esta guía. En caso de duda sobre las operaciones a realizar, contacte con su webmaster o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
+Si desea cambiar la contraseña de la base de datos, deberá realizar todas **las operaciones** que se indican en esta guía. En caso de duda sobre las operaciones a realizar, contacte con su webmaster o contacte con un [proveedor especializado](/links/partner).
 
 La modificación de la contraseña de la base de datos del sitio web se realiza en cuatro pasos:
 
@@ -42,16 +42,16 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Utilizar una [base de datos asociada a su plan de hosting](https://www.ovhcloud.com/es/web-hosting/options/start-sql/).
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Utilizar una [base de datos asociada a su plan de hosting](/links/web/hosting-options-startsql).
 - Disponer de las claves FTP para conectarse al [espacio de almacenamiento](/pages/web_cloud/web_hosting/ftp_connection) del alojamiento.
 
 ## Procedimiento
 
 ### Etapa 1: identificar el archivo de configuración del sitio web <a name="step1"></a>
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action} y, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
+En el [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action} y, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
 
 ![root-folders](images/root-folders.png){.thumbnail}
 
@@ -82,7 +82,7 @@ En el archivo de configuración indicado en el [Etapa 1](#step1), empiece por an
 - Para DRUPAL: el nombre aparece en **"database"**;
 - Para PRESTASHOP: el nombre aparece en **"database_name"**.
 
-Vuelva al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección `Web Cloud`{.action}:
+Vuelva al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}:
 
 - Acceda a la sección `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 - Haga clic en la pestaña `Bases de datos`{.action} **a la derecha** de su pantalla.
@@ -187,6 +187,6 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 [Resolver los errores más frecuentes asociados a las bases de datos](/pages/web_cloud/web_hosting/diagnosis_database_errors)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

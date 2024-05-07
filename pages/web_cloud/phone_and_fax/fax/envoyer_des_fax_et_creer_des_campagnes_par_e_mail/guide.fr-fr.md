@@ -12,7 +12,7 @@ Vous pouvez envoyer des fax OVHcloud de différentes manières. Ce guide vous pr
 
 ## Prérequis
 
-- Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
+- Disposer d’une [ligne Fax OVHcloud](/links/telecom/fax).
 - Être connecté à son adresse e-mail via un client e-mail (webmail ou logiciel).
 - Connaître ou réinitialiser le mot de passe de la ligne Fax. Pour plus d'informations, consultez notre guide « [Configuration de votre ligne Fax](/pages/web_cloud/phone_and_fax/fax/configuration_fax_espace_client#mot-de-passe-fax) ».
 

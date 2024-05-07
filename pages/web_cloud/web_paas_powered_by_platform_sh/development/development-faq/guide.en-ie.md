@@ -65,7 +65,7 @@ Web PaaS is built on Debian.
 
 No.  The Development plan provides all the tools to build your website. You can create as many development profiles as you wish for yourself and for your team.  However, it does not allow for full production-level resources on the `master` branch and does not allow you to configure a custom domain name.
 
-Once your project is complete and ready for production, you can choose another plan to go live. These plans are available on the [pricing page](https://www.ovhcloud.com/fr/web-paas/).
+Once your project is complete and ready for production, you can choose another plan to go live. These plans are available on the [pricing page](/links/web/web-paas).
 
 ## I am getting weird errors when I push (something with paramiko..)
 

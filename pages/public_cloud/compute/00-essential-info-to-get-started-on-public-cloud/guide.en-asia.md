@@ -1,7 +1,7 @@
 ---
 title: All you need to know to get started with Public Cloud
 excerpt: Find out some basic tips to get started in the Public Cloud environment
-updated: 2022-02-07
+updated: 2024-04-19
 ---
 
 ## Objective
@@ -52,7 +52,7 @@ These resources are available in our various data centres across the globe. OVHc
 
 ### A cloud service provider in a mature market
 
-OVHcloud Public Cloud is positioned alongside well-known cloud providers such as AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (from Microsoft) and Alibaba Cloud. Our offer is distinguished by [the particularly advantageous rates](https://www.ovhcloud.com/en-gb/public-cloud/prices/) and the use of standard APIs that leave our users free to change, without adhering to any proprietary technology.
+OVHcloud Public Cloud is positioned alongside well-known cloud providers such as AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (from Microsoft) and Alibaba Cloud. Our offer is distinguished by [the particularly advantageous rates](https://www.ovhcloud.com/asia/public-cloud/prices/) and the use of standard APIs that leave our users free to change, without adhering to any proprietary technology.
 
 ## Practical approach <a name="concrete-approach"></a>
 
@@ -89,6 +89,9 @@ To start a project, you will need to save a payment method when you create the p
 
 #### Billing
 
+> [!primary]
+> For Virtual Machine instances specifically, the billing meter starts when an instance reaches the `ACTIVE` status (displayed as `Activated` in the OVHcloud Control Panel). In other words, the period of time during which the instance is in `BUILD` status is not billed.
+
 Since your payment method has been saved, it will be used to debit the amount calculated for your [billing at the end of the month](/pages/public_cloud/compute/analyze_billing). This calculation is based on the usage time of each resource, depending on the price of the resources.
 
 Example: During the month, you used 1 d2-8 instance for the whole month, and 3 b2-60 instances, which together account for 32 hours.
@@ -97,7 +100,7 @@ Example: During the month, you used 1 d2-8 instance for the whole month, and 3 b
 #### Quota management
 
 You may have to deal with the quota issue.
-<br>The Public Cloud quota defines the maximum number of resources you can start. It depends on certain settings (for example: age of account, previous invoices).
+<br>The Public Cloud quota defines the maximum number of resources you can start. It depends on certain settings (fore example: age of account, previous invoices).
 <br>These quotas are allocated by region (in the OpenStack sense). As a result, you may reach the maximum possible resources for your project, and you may need to [increase these quotas](/pages/public_cloud/compute/increasing_public_cloud_quota).
 
 ![Public Cloud quota](images/quota.png){.thumbnail}
@@ -145,5 +148,6 @@ One of the big advantages of using standard and open technologies, like OpenStac
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/)| The documentation for the essential command line client 'kubectl'.|
 |[Kubernetes APIs Overview](https://kubernetes.io/docs/reference/using-api/)| The documentation of the Kubernetes API, useful for an overview of the possibilities.|
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.

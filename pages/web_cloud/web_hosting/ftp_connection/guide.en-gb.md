@@ -12,8 +12,8 @@ OVHcloud web hosting plans provide you with access to an FTP storage space, whic
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- An [OVHcloud web hosting plan](/links/web/hosting){.external}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}
 
 > [!primary]
 > Only **Pro** and **Performance** web hosting plans allow SSH connections and multiple FTP users to be activated.
@@ -32,12 +32,12 @@ To connect to your FTP storage space, you will need the following:
 
 > [!primary]
 >
-> These elements were sent to you in the email informing you that your web hosting plan has been set up after completing your order. You can access them via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+> These elements were sent to you in the email informing you that your web hosting plan has been set up after completing your order. You can access them via your [OVHcloud Control Panel](/links/manager){.external}.
 >
 > **If you already have these items**, proceed directly to step 2 "[Access your storage space](#ftp_storage_access)" in this guide.
 >
 
-If you do not have this information at hand, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. Click on the `Hosting plans`{.action} section in the left-hand column. Select the name of the web hosting plan concerned, then go to the `FTP - SSH`{.action} tab. 
+If you do not have this information at hand, log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. Click on the `Hosting plans`{.action} section in the left-hand column. Select the name of the web hosting plan concerned, then go to the `FTP - SSH`{.action} tab. 
 
 The information associated with your storage space will then appear, along with a table listing the FTP and SSH users created on your web hosting plan.
 
@@ -66,7 +66,7 @@ Below is a description of the essential information displayed on the `FTP-SSH` p
 
 > [!primary]
 >
-> Depending on which OVHcloud [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} you have, some of the information listed above (particularly concerning SSH) may not appear.
+> Depending on which OVHcloud [web hosting plan](/links/web/hosting){.external} you have, some of the information listed above (particularly concerning SSH) may not appear.
 >
 
 If you have forgotten your FTP or SSH user password, please refer to our guide on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
@@ -84,7 +84,7 @@ There are several ways you can access your FTP storage space. We recommend readi
 - [2. Logging in via FTP software](#ftpsoftware): Allows you to access your FTP storage space via software (e.g. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) or [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
 You must first install the FTP client/software you have chosen on your computer.
 
-- [3. Connecting via SSH access](#ssh): Allows you to access your FTP storage space via SSH. You will need advanced knowledge and an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} **Pro** or **Performance** to use this access type.
+- [3. Connecting via SSH access](#ssh): Allows you to access your FTP storage space via SSH. You will need advanced knowledge and an [OVHcloud web hosting plan](/links/web/hosting){.external} **Pro** or **Performance** to use this access type.
 
 #### 1. Log in via FTP Explorer <a name="ftpexplorer"></a>
 
@@ -166,8 +166,8 @@ Please refer to our guide on [Using an SSH connection on a web hosting plan](/pa
 
 [Tutorial - Using Cyberduck with your OVHcloud hosting](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

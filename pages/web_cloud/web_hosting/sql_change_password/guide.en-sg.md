@@ -14,11 +14,11 @@ The password change for a database must therefore always be carried out in two p
 
 - In your website’s [configuration file](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-1-identify-the-database-linked-to-your-module) via the [FTP space on your Web Hosting plan](/pages/web_cloud/web_hosting/ftp_connection).
 
-- **And** on the server that contains their database, via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- **And** on the server that contains their database, via the [OVHcloud Control Panel](/links/manager).
 
 Until this change is made **in both locations**, your site will display a "[database connection error](/pages/web_cloud/web_hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
 
-For this reason, if you would like to change your database password, you will need to carry out  **all of the operations** listed in this guide. If you have any doubts about how to proceed, contact your webmaster or contact a [specialised service provider](https://partner.ovhcloud.com/en-sg/directory/).
+For this reason, if you would like to change your database password, you will need to carry out  **all of the operations** listed in this guide. If you have any doubts about how to proceed, contact your webmaster or contact a [specialised service provider](/links/partner).
 
 There are four steps to changing your website’s database password:
 
@@ -32,21 +32,21 @@ There are four steps to changing your website’s database password:
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- A [database associated with your hosting](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/)
+- An OVHcloud [Web Hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [database associated with your hosting](/links/web/hosting-options-startsql)
 - FTP login details to log in to your [hosting’s storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## Instructions
 
 ### Step 1: Identify your website’s configuration file <a name="step1"></a>
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), click on `Web Cloud`{.action}, then on `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
+In the [OVHcloud Control Panel](/links/manager), click on `Web Cloud`{.action}, then on `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
 
 ![root-folders](images/root-folders.png){.thumbnail}
 
@@ -77,7 +77,7 @@ In the configuration file identified in [step 1](#step1), start by noting down t
 - For DRUPAL: The name appears under "**database**".
 - For PRESTASHOP: The name appears under "**database_name**".
 
-Then go back to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open the `Web Cloud`{.action} section:
+Then go back to the [OVHcloud Control Panel](/links/manager) and open the `Web Cloud`{.action} section:
 
 - Go to the `Hosting plans`{.action} section, then to the Web Hosting plan concerned.
 - Click on `Databases`{.action} tab **on the right-hand side** of your screen.
@@ -182,6 +182,6 @@ In the window that pops up, enter your database’s new password (defined at [st
 
 [Troubleshoot common database errors](/pages/web_cloud/web_hosting/diagnosis_database_errors)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

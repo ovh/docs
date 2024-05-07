@@ -11,7 +11,7 @@ updated: 2018-06-28
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](https://www.ovhtelecom.fr/telephonie/){.external}.
+- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie){.external}.
 - Avoir réceptionné et installé le téléphone Cisco 8851 fourni par OVH.
 
 ## En pratique

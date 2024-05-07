@@ -1,7 +1,7 @@
 ---
 title: "Einen Domainnamen zu einem anderen Registrar transferieren"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren"
-updated: 2023-06-28
+updated: 2024-04-11
 ---
 
 > [!primary]
@@ -27,8 +27,8 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 
 ## Voraussetzungen
 
-- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens (Domainadministrator).
+- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](/links/web/domains).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens (Domainadministrator).
 - Die Registrierung des Domainnamens erfolgte vor mindestens 60 Tagen **und** er wurde in den letzten 60 Tagen weder transferiert noch übertragen (Inhaberwechsel).
 
 > [!primary]
@@ -47,16 +47,20 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 > Wir empfehlen, im Zweifelsfall folgende Ressourcen zu Rate zu ziehen:
 >
 > - Die Webseite der zuständigen TLD-Registry
-> - Die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
+> - Die [Liste der bei OVHcloud verfügbaren TLDs](/links/web/domains-tld)
 > - [Erläuterungen der ICANN zu den EPP-Statuscodes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (um herauszufinden, welche Statuscodes derzeit für Ihre Domain gelten, führen Sie eine *Whois*-Suche aus, vorzugsweise unter Verwendung der Webseite der entsprechenden TLD-Registry)
 > - Die Webseite und das Verwaltungsinterface Ihres neuen Registrars, insbesondere für Fragen im Zusammenhang mit einem ausstehenden Transferprozess
 >
 
 ### Schritt 1: Transfer-Schutz der Domain aufheben
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie die betreffende Domain aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie die betreffende Domain aus.
 
 Im Tab `Allgemeine Informationen`{.action} finden Sie den Regler `Transfer-Schutz`{.action} unter **Sicherheit** mit der Standardeinstellung `Aktiviert`{.action}.
+
+> [!warning]
+>
+> Wenn der Button `Transfer-Schutz` nicht vorhanden ist, bedeutet dies, dass Ihre Domainendung keinen Transfer-Code erfordert. Sie können dann direkt mit dem Transfer beginnen.
 
 ![Schutz aktiviert](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
@@ -66,9 +70,9 @@ Klicken Sie auf den Slider-Button und bestätigen Sie im Popup-Fenster, dass Sie
 >
 > Wenn Sie diese Meldung erhalten: "**An error occurred when requesting to disable the domain protection (User not granted for this request)**", hat Ihr Kunden-Account nicht die notwendigen Rechte, um den Domainnamen freizugeben. 
 >
-> Wenn Sie diese Meldung erhalten: "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**" bedeutet das, der Transfer-Code Ihres Domainnamens kann nicht über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) abgerufen werden.  
+> Wenn Sie diese Meldung erhalten: "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**" bedeutet das, der Transfer-Code Ihres Domainnamens kann nicht über Ihr [OVHcloud Kundencenter](/links/manager) abgerufen werden.  
 > 
-> Überprüfen Sie in beiden Fällen anhand unserer Anleitung zur [Verwaltung der Kontakte](/pages/account_and_service_management/account_information/managing_contacts), dass Sie der **Administrator**-Kontakt des Domainnamens sind, und überprüfen Sie, ob die Domainendung eine Entriegelung über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erlaubt.
+> Überprüfen Sie in beiden Fällen anhand unserer Anleitung zur [Verwaltung der Kontakte](/pages/account_and_service_management/account_information/managing_contacts), dass Sie der **Administrator**-Kontakt des Domainnamens sind, und überprüfen Sie, ob die Domainendung eine Entriegelung über das [OVHcloud Kundencenter](/links/manager) erlaubt.
 > 
 > Bestimmte Transfer-Codes werden direkt seitens der Registry der entsprechenden Domainendung verwaltet. Die Registry ist die Organisation, die eine oder mehrere TLDs und damit alle Domainnamen mit dieser Endung verwaltet. Zum Beispiel verwaltet die **AFNIC** alle Domainnamen mit der Endung *.fr*. In diesem Fall kontaktieren Sie die zuständige *Registry*, um Ihren Transfer-Code zu erhalten.
 >
@@ -114,8 +118,8 @@ Weitere Informationen hierzu erhalten Sie bei Ihren neuen Registrar.
 
 [Transfer einer .co.uk Domain](/pages/web_cloud/domains/transfer_outgoing_couk)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

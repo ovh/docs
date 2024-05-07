@@ -16,8 +16,8 @@ Cloud Web ofrece la posibilidad de utilizar distintos lenguajes de programación
 
 ## Requisitos
 
-- Tener contratado un plan de alojamiento [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y accedido a la sección `«Web»`{.action}.
+- Tener contratado un plan de alojamiento [Cloud Web](/links/web/hosting-cloud-web-offer).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager) y accedido a la sección `«Web»`{.action}.
 
 ## Procedimiento
 
@@ -27,7 +27,7 @@ Así pues, **si aún no lo ha hecho, asegúrese de que su proyecto sea técnicam
 
 ### Etapa 1:  acceder a la gestión de los motores de ejecución
 
-Para ver los motores de ejecución de su alojamiento Cloud Web, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `«Alojamientos»`{.action} en la barra de servicios a la izquierda y seleccione el nombre del alojamiento Cloud Web de su interés. A continuación, abra la pestaña `«Motores de ejecución»`{.action}.
+Para ver los motores de ejecución de su alojamiento Cloud Web, inicie sesión en el [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `«Alojamientos»`{.action} en la barra de servicios a la izquierda y seleccione el nombre del alojamiento Cloud Web de su interés. A continuación, abra la pestaña `«Motores de ejecución»`{.action}.
 
 Se mostrará una tabla con los motores de ejecución que haya añadido a su alojamiento Cloud Web hasta ese momento. Tenga en cuenta que se crea automáticamente un motor en el momento de la instalación de su alojamiento.
 
@@ -37,7 +37,7 @@ Se mostrará una tabla con los motores de ejecución que haya añadido a su aloj
 
 Existen diversas formas de gestionar los motores de ejecución de su alojamiento Cloud Web:
 
-- [Añadir o modificar un motor de ejecución](./#21-anadir-o-modificar-un-motor-de-ejecucion){.external} (el número máximo de motores de ejecución depende del [plan Cloud Web que tenga contratado](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external}).
+- [Añadir o modificar un motor de ejecución](./#21-anadir-o-modificar-un-motor-de-ejecucion){.external} (el número máximo de motores de ejecución depende del [plan Cloud Web que tenga contratado](/links/web/hosting-cloud-web-offer){.external}).
 - Establecer un motor de ejecución como opción por defecto.
 - Eliminar un motor de ejecución.
 
@@ -118,7 +118,7 @@ Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}.
 > En nuestro ejemplo, solo se crearon los motores PHP y Node.js. En su proyecto, bien podría utilizar Ruby o Python. En dicho caso, las operaciones descritas a continuación son
 > aplicables.
 > 
-> La utilización de dos motores de ejecución al mismo tiempo en su alojamiento Cloud Web depende del [plan que haya contratado](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external}.
+> La utilización de dos motores de ejecución al mismo tiempo en su alojamiento Cloud Web depende del [plan que haya contratado](/links/web/hosting-cloud-web-offer){.external}.
 > 
 
 Una vez que disponga del motor o los motores de ejecución necesarios para su proyecto, asegúrese de que estos estén correctamente asociados a sus multisitios. Para ello, abra la pestaña `«Multisitio»`{.action} del alojamiento Cloud Web de su interés. 
@@ -137,8 +137,8 @@ Una vez seleccionado, prosiga con las etapas correspondientes hasta finalizar.
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

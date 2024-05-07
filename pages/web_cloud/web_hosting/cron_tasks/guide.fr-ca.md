@@ -37,17 +37,17 @@ Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour autom
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section [« Aller plus loin »](#go-further) de ce guide. 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section [« Aller plus loin »](#go-further) de ce guide. 
 >
 
 ## Prérequis
 
-- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
-Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Cliquez sur l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
 
 Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus`{.action} puis sur `Cron`{.action}.
 
@@ -129,7 +129,7 @@ Veillez toujours à utiliser des chemins d'accès absolus aux fichiers de vos sc
  
 #### Vérification des logs d'éxecution
 
-Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, vous verrez la catégorie de log intitulée « CRON ».
+Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](/links/manager){.external}, vous verrez la catégorie de log intitulée « CRON ».
 
 Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](/pages/web_cloud/web_hosting/logs_and_statistics#logs) pour plus de détails.
 
@@ -177,8 +177,8 @@ Consultez notre guide [« Consulter les statistiques et les logs de mon site hé
 
 [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](/pages/web_cloud/web_hosting/logs_and_statistics)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

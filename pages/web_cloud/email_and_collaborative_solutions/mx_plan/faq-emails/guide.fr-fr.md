@@ -1,7 +1,7 @@
 ---
 title: FAQ e-mails OVHcloud
 excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails OVHcloud'
-updated: 2020-05-05
+updated: 2024-04-11
 ---
 
 ## FAQ e-mails
@@ -22,7 +22,7 @@ Si les enregistrements MX sont différents, c'est que vous avez potentiellement 
 
 ### Comment configurer mon adresse e-mail et l'utiliser avec le webmail ? 
 
-Il est possible de configurer votre compte e-mail sur un logiciel de messagerie tel que Outlook, Thunderbird, Mail de Mac... 
+Il est possible de configurer votre compte e-mail sur un logiciel de messagerie tel que Outlook, Thunderbird, Mail de Mac...
 Pour ce faire nous vous mettons à disposition des guides afin d'effectuer la mise en place de votre adresse. Vous pouvez les retrouver sur [cette page](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 Grâce au [webmail](https://www.ovh.com/fr/mail/){.external}, vous pouvez accéder à tout moment à votre messagerie, depuis n'importe quel appareil connecté. Une fois votre compte e-mail créé, connectez-vous ici pour y accéder.
@@ -44,9 +44,23 @@ Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la
 
 **Trucs et Astuces** : Si vous définissez un filtre sur la réception de SPAMS, il est possible que des e-mails légitimes soient considérés comme étant des SPAMS. On appelle cela des « faux positifs ».Si cela vous arrive, nous vous invitons à déclarer une demande d'assistance dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} afin de nous en faire part. Nous pourrons ainsi faire le nécessaire afin que ceux-ci ne soient plus considérés comme SPAMS par la suite.
 
-### L'offre Office 365 Pro Plus comprend-t-elle une licence Skype? 
+### Mon adresse e-mail est saturée, je n'ai plus d'espace. Que puis-je faire ?
 
-L’offre Office 365 Pro Plus ne contient pas de licence Skype. Seul le logiciel Skype for Business y est inclus. 
+Si vous avez souscrit à [l'une de nos offres e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/) et que l'un de vos comptes e-mail est saturé, consultez notre guide « [Gérer l'espace de stockage d'un compte e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Ce guide vous aidera à déterminer si vous pouvez optimiser l'espace existant ou s’il est nécessaire de changer d'offre e-mail pour augmenter la capacité de stockage.
+
+### Je souhaite changer d'offre e-mail pour mon adresse, comment puis-je le faire tout en gardant son contenu ?
+
+Vous souhaitez changer [d'offre e-mail](https://www.ovhcloud.com/fr/emails/) pour bénéficier de plus d'espace et de fonctionnalités, mais vous souhaitez conserver le contenu de votre adresse existante. Pour cela nous vous invitons à suivre l'un de nos guides de migration :
+
+- [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
+- [Migrer des comptes e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
+- [Migrer un compte Gmail vers un compte e-mail OVHcloud via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
+
+### L'offre Office 365 Pro Plus comprend-t-elle une licence Skype?
+
+L’offre Office 365 Pro Plus ne contient pas de licence Skype. Seul le logiciel Skype for Business y est inclus.
 
 ## Aller plus loin
 

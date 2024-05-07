@@ -1,20 +1,22 @@
 ---
 title: 'Configurer la qualité de service (QoS) d’OverTheBox'
 excerpt: "Découvrez comment configurer la qualité de service (QoS) sur votre OverTheBox afin d'améliorer la gestion de votre bande passante"
-updated: 2021-04-28
+updated: 2024-05-06
 ---
 
 ## Objectif
 
-Découvrez comment modifier la QoS sur votre équipement OverTheBox, afin de prioriser certain flux réseaux et ainsi améliorer la gestion de votre bande passante.
+Découvrez comment modifier la QoS sur votre équipement OverTheBox, afin de prioriser certain flux réseaux et améliorer la gestion de votre bande passante.
 
 ## Prérequis
 
-- Une **OverTheBox** fournie par OVHcloud
+- Disposer d'un service [OverTheBox](https://www.ovhtelecom.fr/overthebox/)
+- Au moins un accès à Internet, fourni par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
+- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source (consultez le guide « [Installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) »)
 
 ## En pratique
 
-Certaines règles sont déjà présentes par défaut, elle permettent notamment de prioriser les services de VoIP proposés par OVHcloud.
+Certaines règles sont déjà présentes par défaut, permettant notamment de prioriser les services de VoIP proposés par OVHcloud.
 
 ### Étape 1 : préparation
 
@@ -26,7 +28,7 @@ Certaines règles sont déjà présentes par défaut, elle permettent notamment 
 
 Avant de configurer la  **QoS**, il est conseillé de connaître le débit maximum **montant et descendant** de chaque connexion utilisée par votre **OverTheBox**. Pour cela, vous pouvez utiliser l'outil [http://proof.ovh.net/](http://proof.ovh.net/){.external} afin de déterminer les débits maximum de chacune de vos connexions.
 
-**A titre d'exemple**, pour ce guide, voici les débits obtenus sur chaque connexion :
+**À titre d'exemple**, pour ce guide, voici les débits obtenus sur chaque connexion :
 
 - **OVH-DSL1**: Débit descendant : **10 Mbps** / Débit montant : **1.2 Mbps**
 - **OVH-DSL2**: Débit descendant : **5 Mbps** / Débit montant : **0.6 Mbps**
@@ -43,22 +45,22 @@ Une fois vos débits maximum connus, il est nécessaire d'activer le *traffic co
 Pour ce faire :
 
 - Rendez vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
-- Cliquez sur **Network**
-- Cliquez sur **Interfaces**
+- Cliquez sur `Network`{.action}
+- Cliquez sur `Interfaces`{.action}
 - Cliquez sur l'onglet qui porte le nom de la connexion sur laquelle vous voulez activer le traffic control, **IF1** dans notre exemple.
-- Cliquez sur l'onglet **Traffic Control**
+- Cliquez sur l'onglet `Traffic Control`{.action}
 - Configurez le *Traffic Control* en **Static** à l'aide du menu déroulant
 - Inscrivez le **débits maximum** de cette connexion en **kbps** pour le débit descendant (**Download**) et montant (**Upload**). 1 Mbps = 1000 kbps, dans notre exemple le débit 10Mbps/1,2Mbps devient 10000/1200
-- Cliquez sur **"Save & Apply"**
+- Cliquez sur `Save & Apply`{.action}
 
 ![overthebox](images/qos-step1.png){.thumbnail}
 
-Refaites cette procédure complète pour chacune de vos connexions (**IF2**, **IF3**, etc.)
+Refaites cette procédure complète pour chacune de vos connexions (**IF2**, **IF3**, etc.).
 
 > [!warning]
 >
 > Une fois en place, si vous rencontrez des perturbations, vous pouvez essayer de configurer le *traffic control* en fixant les débits à 80% de votre débit maximum.
-> Dans notre exemple, on remplacerait les valeurs 10000/1200 par 8000/960
+> Dans notre exemple, on remplacerait les valeurs 10000/1200 par 8000/960.
 >
 
 ### Étape 2 : créer une nouvelle règle QoS
@@ -75,8 +77,8 @@ Dans notre exemple, nous souhaitons que le débit montant de notre serveur NAS s
 Pour ce faire :
 
 - Rendez vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
-- Cliquez sur **OvertheBox**
-- Cliquez sur **DSCP Settings**
+- Cliquez sur `OvertheBox`{.action}
+- Cliquez sur `DSCP Settings`{.action}
 
 ![overthebox](images/qos-step2-1.png){.thumbnail}
 
@@ -84,15 +86,15 @@ Pour ce faire :
 
 ![overthebox](images/qos-step2-2.png){.thumbnail}
 
-- Cliquez sur **Add**
+- Cliquez sur `Add`{.action}
 
-_Une nouvelle ligne apparait_
+_Une nouvelle ligne apparait._
 
 - Dans notre exemple, nous voulons que le NAS ayant pour IP `192.168.100.80` soit prioritaire pour l'upload, peu importe l'IP distante. Il faut donc ajouter la règle comme ci-dessous :
 
 ![overthebox](images/qos-step2-3.png){.thumbnail}
 
-- Une fois votre règle configurée, vous devez cliquer sur **Save & Apply** pour qu'elle soit correctement sauvegardée.
+- Une fois votre règle configurée, vous devez cliquer sur `Save & Apply`{.action} pour qu'elle soit correctement sauvegardée.
 
 > [!primary]
 >
@@ -100,14 +102,14 @@ _Une nouvelle ligne apparait_
 > Si c'est le cas, veuillez procéder à un redémarrage électrique de l'OverTheBox ou déconnecter/reconnecter du réseau l'appareil concerné par la règle.
 >
 
-Pour plus de détails sur les différentes options de cette page, voir la section « Aller plus loin » à la fin de ce guide.
+Pour plus de détails sur les différentes options de cette page, consultez la section « Aller plus loin » à la fin de ce guide.
 
 ### Étape 3 : vérifier le bon fonctionnement
 
 Pour vérifier le bon fonctionnement de votre règle :
 
-- Cliquez sur **OverTheBox**
-- Cliquez sur **QoS Graphs**
+- Cliquez sur `OverTheBox`{.action}
+- Cliquez sur `QoS Graphs`{.action}
 
 Lorsque le NAS génère du débit montant, le trafic correspondant apparait en orange sur la courbe, le NAS est donc bien identifié comme prioritaire.
 
@@ -143,3 +145,5 @@ Il existe quatre classes de trafic, ce qui vous permet de classer le trafic par 
 | Low Priority | Pour un trafic jugé non prioritaire |
 
 N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)
+
+Consultez la [FAQ OverTheBox](/pages/web_cloud/internet/overthebox/install_faq)

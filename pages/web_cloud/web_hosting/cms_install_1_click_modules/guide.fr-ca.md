@@ -1,7 +1,7 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-updated: 2023-11-14
+updated: 2024-03-21
 ---
 
 ## Objectif
@@ -14,9 +14,9 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données. 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting) incluant au moins une base de données.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Découvrez l'état des différentes versions disponibles sur cette [page](https://webhosting-infos.hosting.ovh.net/). Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
 - Le répertoire (dossier racine) où sera installé votre « module en 1 clic » doit être vide ou actuellement inexistant.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré en tant que [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web OVHcloud.
 
@@ -33,15 +33,15 @@ Un CMS permet de concevoir un site web via une interface facile d'utilisation. P
 
 Parmi tous les CMS, OVHcloud en propose 4 en installation automatique avec ses « modules en 1 clic ». 
 
-En utilisant cette solution, vous devrez choisir parmi les 4 CMS cités plus haut. Si votre choix est déjà fait, poursuivez la lecture des différentes étapes de ce guide. Dans le cas contraire, consultez notre [comparatif des CMS](https://www.ovhcloud.com/fr-ca/web-hosting/uc-cms-comparison/) pour faire votre choix.
+En utilisant cette solution, vous devrez choisir parmi les 4 CMS cités plus haut. Si votre choix est déjà fait, poursuivez la lecture des différentes étapes de ce guide. Dans le cas contraire, consultez notre [comparatif des CMS](/links/web/hosting-cms-comparison) pour faire votre choix.
 
-Si vous souhaitez installer un CMS indisponible via nos « modules en 1 clic », vous pouvez l'installer manuellement sur votre hébergement. Ceci sous réserve que ce CMS soit compatible avec nos offres d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
+Si vous souhaitez installer un CMS indisponible via nos « modules en 1 clic », vous pouvez l'installer manuellement sur votre hébergement. Ceci sous réserve que ce CMS soit compatible avec nos offres d'[hébergement web OVHcloud](/links/web/hosting).
 
 ![Logo des CMS](images/cms-logos.png){.thumbnail}
 
 ### Étape 2 - accéder à la gestion des « modules en 1 clic »
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, choisissez l'offre d'hébergement sur laquelle vous souhaitez installer un « module en 1 clic » puis cliquez sur l'onglet `Modules en 1 clic`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, choisissez l'offre d'hébergement sur laquelle vous souhaitez installer un « module en 1 clic » puis cliquez sur l'onglet `Modules en 1 clic`{.action}.
 
 Vous y retrouverez les éventuels « modules en 1 clic » déjà installés. Vous pourrez y gérer vos « modules en 1 clic » et en installer de nouveaux.
 
@@ -55,7 +55,7 @@ Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis sélectionnez l
 
 ![Choix du module](images/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} si besoin.
+Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) si besoin.
 
 > [!primary]
 >
@@ -94,7 +94,7 @@ Une fois l'installation terminée, vous recevrez un e-mail contenant les informa
 
 > [!primary]
 >
-> L'installation et la réception de l'e-mail peuvent prendre jusqu'à 15 minutes à compter du moment où vous avez cliqué sur le bouton `Installer`{.action} dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+> L'installation et la réception de l'e-mail peuvent prendre jusqu'à 15 minutes à compter du moment où vous avez cliqué sur le bouton `Installer`{.action} dans votre [espace client OVHcloud](/links/manager).
 >
 
 #### Installation avancée d'un « module en 1 clic »
@@ -136,7 +136,7 @@ Le reste des informations demandées pour la base de données sont les suivantes
 > - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
 >
 
-- *Nom de la base* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- *Nom de la base* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](/links/manager).
 
 - *Port* : indiquez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
@@ -184,7 +184,7 @@ Vérifiez les informations affichées puis cliquez sur `Valider`{.action} si tou
 
 ![Validation de l'installation en mode avancé](images/add-a-module-advanced-mod-step-4.png){.thumbnail}
 
-### Étape 4 : personnaliser mon site
+### Étape 4 - personnaliser mon site
 
 L'installation peut prendre une dizaine de minutes.
 
@@ -206,20 +206,22 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre CMS,
 
 ## Aller plus loin
 
-[Choisir un CMS pour créer un site web](https://www.ovhcloud.com/fr-ca/web-hosting/uc-cms-comparison/){.external}
+[Choisir un CMS pour créer un site web](/links/web/hosting-cms-comparison){.external}
 
 [Comment partager mon hébergement Web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
 
 [Gestion d’une base de données depuis un hébergement mutualisé](/pages/web_cloud/web_hosting/sql_create_database){.external}
 
-Découvrez nos [offres Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external}
+Découvrez nos [offres Web Cloud Databases](/links/web/databases){.external}
 
 [Gérer votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
 [Désinstaller votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Si vous souhaitez garder un contrôle total sur l'installation de votre CMS, vous pouvez [installer manuellement un CMS sur votre hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

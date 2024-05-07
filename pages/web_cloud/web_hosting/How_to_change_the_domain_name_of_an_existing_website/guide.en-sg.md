@@ -16,21 +16,21 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-sg/domains/).
-- An [OVHcloud shared hosting](https://www.ovhcloud.com/en-sg/web-hosting/).
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- A [domain name](/links/web/domains).
+- An [OVHcloud shared hosting](/links/web/hosting).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
 > [!warning]
 >
 > Changing a domain name to access your website may affect its SEO ranking. 
-> Be careful about the changes you make, and contact a [specialised provider](https://partner.ovhcloud.com/en-sg/directory/) for SEO if necessary.
+> Be careful about the changes you make, and contact a [specialised provider](/links/partner) for SEO if necessary.
 >
 
 To change the access domain name for your website, there are several steps to follow in a specific order.
@@ -42,7 +42,7 @@ Declare your new domain name using our guide on [adding a multisite on your web 
 There are several conditions to meet for this part:
 
 - Your new domain must point to the same root folder as the domain currently used to access your site.
-- Check that your new domain points to the IP address of your hosting plan. To retrieve the IP address, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Web cloud`{.action} section, click on `Hosting plans`{.action}, select your Hosting, then retrieve **IPv4** in the `General information`{.action} tab.
+- Check that your new domain points to the IP address of your hosting plan. To retrieve the IP address, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web cloud`{.action} section, click on `Hosting plans`{.action}, select your Hosting, then retrieve **IPv4** in the `General information`{.action} tab.
 
 > [!warning]
 >
@@ -83,7 +83,7 @@ Most sites use databases to operate. The tree structure for these nodes is gener
 
 > [!warning]
 >
-> Warning, the operations described in step 2 are extremely sensitive and can have serious consequences for your website if they are not carried out with caution. If you have any doubts, do not try anything and contact a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/).
+> Warning, the operations described in step 2 are extremely sensitive and can have serious consequences for your website if they are not carried out with caution. If you have any doubts, do not try anything and contact a [specialist provider](/links/partner).
 >
 > Before you take any action, we advise retrieving a [backup of your FTP storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup) and a [backup of your database](/pages/web_cloud/web_hosting/sql_database_export). This will allow you to restore your website in the event of an error.
 >
@@ -144,8 +144,8 @@ Once your old domain has been removed from the multisites tab, and if it is regi
 
 [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

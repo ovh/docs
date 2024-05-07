@@ -1,18 +1,18 @@
 ---
 title: "Tutorial - Installing a CMS manually on your Web Hosting plan"
 excerpt: "Find out more about some of the compatible CMS for Web Hostings"
-updated: 2023-03-24
+updated: 2024-03-28
 ---
 
 ## Objective
 
-This tutorial will help you install a CMS (Content Management System) like WordPress, Joomla!, Drupal or PrestaShop manually in just a few steps.
+This tutorial will help you install a CMS (Content Management System) like WordPress, Joomla!, Drupal, PrestaShop, Pico, Grav, Typo3 or SPIP manually in just a few steps.
 
 > [!warning]
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) or the publisher of the CMS you have chosen to install if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the publisher of the CMS you have chosen to install if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
 >
 > Find below the links to the respective official pages of the CMS mentioned above:
 >
@@ -20,32 +20,36 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 > - [Joomla!](https://www.joomla.org/){.external}
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
+> - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
+> - [Typo3](https://typo3.com/){.external}
+> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 >
 
 > [!success]
 >
-> To install your CMS **automatically** from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> To install your CMS **automatically** from your [OVHcloud Control Panel](/links/manager), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **This tutorial explains how to configure your website by manually installing a CMS.**
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/) that contains at least one database
-- A [domain name](https://www.ovhcloud.com/en-ca/domains/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- An [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database
+- A [domain name](/links/web/domains)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### CMS overview
 
-To help you choose your CMS, find below a short description for each of the 4 CMS mentioned above.
+To help you choose your CMS, find below a short description for each of the CMS mentioned above.
 
 #### WordPress
 
 **WordPress** is typically used to create a website or blog. It is based on PHP technology and includes a range of tools such as a spell checker, as well as plugins for e-commerce, SEO and even your website security.
 
-You can find more information on our [WordPress module page](https://www.ovhcloud.com/en-ca/web-hosting/uc-wordpress-website/). 
+You can find more information on our [WordPress module page](/links/web/hosting-wordpress). 
 
 - [Official WordPress website](https://https://wordpress.com/){.external}
 
@@ -55,7 +59,7 @@ You can find more information on our [WordPress module page](https://www.ovhclou
 
 The **Joomla!** community is very large and can provide assistance and services in all areas related to this CMS (help, documentation, technical assistance, themes, etc.)
 
-You can find more information on our [Joomla! module page](https://www.ovhcloud.com/en-ca/web-hosting/uc-joomla-website/). 
+You can find more information on our [Joomla! module page](/links/web/hosting-joomla). 
 
 - [Official site of Joomla!](https://www.joomla.org/){.external}
 
@@ -63,7 +67,7 @@ You can find more information on our [Joomla! module page](https://www.ovhcloud.
 
 **Drupal** is a free open-source platform under PHP created in 2000. **Drupal** allows you to create dynamic websites quickly.
 
-You can find more information on our [Drupal module page](https://www.ovhcloud.com/en-ca/web-hosting/uc-drupal-website/). 
+You can find more information on our [Drupal module page](/links/web/hosting-drupal). 
 
 - [Official Drupal website](https://www.drupal.org/){.external} 
 
@@ -71,20 +75,44 @@ You can find more information on our [Drupal module page](https://www.ovhcloud.c
 
 A CMS created in 2005 and dedicated to building e-commerce websites. Apart from the common features of online stores, this software can also be customised with modules, themes and templates. 
 
-You can find more information on our [PrestaShop module page](https://www.ovhcloud.com/en-ca/web-hosting/uc-prestashop-website/).
+You can find more information on our [PrestaShop module page](/links/web/hosting-prestashop).
 
 - [PrestaShop official website](https://www.prestashop.com/){.external} 
 
+#### Pico
+
+**Pico** is a lightweight PHP-based CMS, perfect for building websites and blogs. It does not require a database but uses Markdown files to manage content. It supports extensions to customise your website.
+
+- Official [Pico](https://picocms.org/){.external} website
+
+#### Grav
+
+**Grav** is a modern and flexible CMS based on PHP. It is designed without databases and uses Markdown files for storing and managing content. Grav stands out for its package management system which makes it easy to install and update plugins and themes for your website.
+
+- Official [Grav](https://getgrav.org/){.external} website
+
+#### Typo3
+
+**Typo3** is a PHP-based CMS designed for developing websites of all sizes, from small to large companies. It relies on a database to store the content. It offers a wide range of extensions to extend its features in order to customize your website.
+
+- Official [Typo3](https://typo3.com/){.external} website
+
+#### SPIP
+
+**SPIP** is a CMS designed primarily for publishing and managing editorial websites such as online newspapers or magazines. Based on PHP and based on an SQL database, it facilitates the creation of websites enriched with textual, graphical and/or multimedia content.
+
+- [SPIP](https://www.spip.net/en_section25.html){.external} official website
+
 > [!warning]
 >
-> Whichever CMS you choose, please note that OVHcloud does not provide support for using the respective software. If you experience any difficulties, please contact the publisher of your chosen CMS directly using the links listed above in this tutorial.
+> Whichever CMS you choose, please note that OVHcloud will not provide assistance with using these CMSs. If you encounter any difficulties, contact the publisher of the CMS you have chosen directly using the links indicated earlier in this tutorial.
 >
 
 ### Step 1: Prepare the installation <a name="step1"></a>
 
-To install a CMS on your [web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/), you will need to make some preparations.
+To install a CMS on your [web hosting plan](/links/web/hosting), you will need to make some preparations.
 
-#### 1.1 Check the “root folder” declaration
+#### 1.1 Check the root folder declaration
 
 The “root folder” refers to the directory your future CMS will be installed in on your hosting plan. We recommend choosing an empty directory to avoid conflicts with your other multisite potentials.
 
@@ -92,17 +120,17 @@ Please refer to our documentation, which describes [how to add a multisite on yo
 
 > [!primary]
 >
-> If you define a “root folder” name that does not exist on your Web Hosting plan, it will be automatically created in your Web Hosting plan’s FTP storage space.
+> If you define a root folder name that does not exist on your Web Hosting plan, it will be automatically created in your Web Hosting plan’s FTP storage space.
 >
 
 #### 1.2 Check the domain name resolution
 
-- Make sure that the domain name you will use to access your CMS, along with its subdomain “www”, is mapped to the IP address of your [web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/).
+- Make sure that the domain name you will use to access your CMS, along with its subdomain “www”, is mapped to the IP address of your [web hosting plan](/links/web/hosting).
 
-To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
+To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
 In the `General information`{.action} box on your right, you will find the IP address of your web hosting plan in the `IPv4`{.action} form.
 
-If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](/pages/web_cloud/domains/dns_zone_edit) documentation .
+If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](/links/manager), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](/pages/web_cloud/domains/dns_zone_edit) documentation .
 
 > [!warning]
 >
@@ -123,9 +151,19 @@ If you are unable to perform these checks, contact the hosting provider for your
 
 If you are not already using an FTP client, you can use Filezilla. You can find the free download link and a tutorial on how to use it in our documentation on [using FileZilla with your OVHcloud hosting plan](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
+> [!primary]
+>
+> There are other FTP clients that you can use, such as Cyberduck. You can find more information in our documentation on [using Cyberduck with your OVHcloud hosting plan](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
+>
+
 #### 1.4 Prepare a database <a name="step1-4"></a>
 
-CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/en-ca/web-hosting/) solutions include these.
+> [!warning]
+>
+> Some CMS systems work without a database. If this is the case for the CMS you want to install, skip this step.
+>
+
+Most CMSs require a database to work. Our [web hosting offers](/links/web/hosting) include them.
 
 Use our documentation to [create a database from your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -157,17 +195,25 @@ Below are links to the CMS download pages mentioned in this tutorial:
 - [Joomla!](https://downloads.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
+- [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
-> Retrieve the PHP version and the MySQL or MariaDB version required to run your CMS.
+> Retrieve the PHP version and, if your CMS uses a database, identify the MySQL or MariaDB version required to run your CMS.
 >
-> To do this, go to the link to the official CMS page that you want to install:
+> To do this, open the link to the official CMS page that you want to install:
 >
 > - [WordPress](https://wordpress.org/about/requirements/){.external}
 > - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
+> - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 >
 > Then configure the PHP version on your web hosting plan by referring to our guide on [Changing a Web Hosting plan’s PHP version](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -185,7 +231,7 @@ Follow the instructions provided by your CMS publisher until the source files ar
 
 >[!primary]
 >
-> To make things easier, replace the name of the **CMS** folder with the name of the CMS you have chosen (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
+> To make things easier, replace the name of the **CMS** folder with the name of the CMS you have chosen (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**, etc.).
 >
 
 The downloaded file is in a compressed (zipped) format. Create a folder named **CMS** on your computer and then uncompress the contents of the downloaded file into the **CMS** folder.
@@ -345,6 +391,10 @@ To continue with the installation, follow the guide corresponding to your CMS:
 - [Finalise a Joomla! installation](/pages/web_cloud/web_hosting/cms_manual_installation_joomla)
 - [Finalise a Drupal installation](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Finalise a PrestaShop installation](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
+- [Finalise a Pico installation](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- [Finalise a Grav installation](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Finalise a Typo3 installation](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+- [Finalise a SPIP installation](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 ## Go further <a name="go-further"></a>
 
@@ -354,8 +404,8 @@ To continue with the installation, follow the guide corresponding to your CMS:
 
 [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

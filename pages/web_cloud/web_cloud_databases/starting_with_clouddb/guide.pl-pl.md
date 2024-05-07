@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą Web Cloud Databases'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania Web Cloud Databases'
-updated: 2023-05-31
+updated: 2024-03-18
 ---
 
 > [!primary]
@@ -17,14 +17,14 @@ Twoje rozwiązanie Web Cloud Databases jest domyślnie powiązane z siecią host
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartego w ofercie [pakiecie hostingowym performance](https://www.ovhcloud.com/pl/web-hosting/))
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Posiadanie [instancji Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartego w ofercie [pakiecie hostingowym performance](/links/web/hosting))
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce
 
 ### Włączenie prywatnego Web Cloud Databases zawartego w ofercie hostingu
 
-Jeśli Twój hosting zawiera opcję prywatnego Web Cloud Databases, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
+Jeśli Twój hosting zawiera opcję prywatnego Web Cloud Databases, przejdź do [Panelu klienta OVHcloud](/links/manager){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
 
 W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie **Web Cloud Databases**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
 
@@ -34,7 +34,7 @@ Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej,
 
 ### Wyświetlanie informacji ogólnych o instancji
 
-W menu usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Web Cloud Databases`, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
+W menu usług po lewej stronie [Panelu klienta](/links/manager){.external}, przejdź do sekcji `Web Cloud Databases`, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
 > [!primary]
 >
@@ -197,32 +197,12 @@ Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące info
 
 ### Pobierz logi Twojego serwera Web Cloud Databases
 
-Aby sprawdzić najnowsze logi bazy danych, przejdź do zakładki `Logs`{.action} Twojego serwera Web Cloud Databases. W zakładce wyświetlają się alerty i błędy w czasie rzeczywistym.
-
-![Web Cloud Databases](images/tab-with-logs.png){.thumbnail}
-
-Aby pobrać wszystkie logi Twojego serwera Web Cloud Databases, zaloguj się przez SFTP do tego serwera.
-
-> [!warning]
->
-> Przed zalogowaniem upewnij się, że adres IP poczty, której używasz jest poprawnie autoryzowany na serwerze Web Cloud Databases z opcją `SFTP` zaznaczoną. Skorzystaj z sekcji [Zezwalaj na logowanie do hostingu OVHcloud](#trustip) w tym przewodniku.
-
-Dane do logowania SFTP znajdziesz w zakładce `Informacje ogólne`{.action} Twojego serwera Web Cloud Databases. Jeśli nie znasz `hasła do serwera`, kliknij przycisk `...`{.action} po prawej stronie, aby go zmienić.
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Zaloguj się za pośrednictwem klienta FTP (FileZilla, Cyberduck, WinSCP, itp.).
-
-W przypadku FileZilla w menu `Plik`{.action} przejdź do `Zarządzanie stronami`{.action}. Kliknij przycisk `Nowa strona`{.action}, po czym wprowadź wcześniej ustawienia.
-
-![Web Cloud Databases](images/sftp-connexion.png){.thumbnail}
-
-Plik logów zatytułowany `stdout.log` znajduje się w katalogu głównym.
+Aby uzyskać dostęp do logów rozwiązania Web Cloud Databases, zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Jak pobrać logi?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

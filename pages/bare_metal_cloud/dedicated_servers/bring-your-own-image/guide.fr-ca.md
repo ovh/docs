@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image (BYOI)
 excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
-updated: 2024-02-02
+updated: 2024-04-23
 ---
 
 ## Objectif
@@ -98,6 +98,10 @@ Le contenu de la requête API de Bring Your Own Image (BYOI) doit être similair
   "templateName": "byoi_64",
   "userMetadata": [
     {
+      "key": "sshKey",
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+    },
+    {
       "key": "imageURL",
       "value": "https://cdimage.debian.org/cdimage/cloud/bullseye/20230124-1270/debian-11-generic-amd64-20230124-1270.raw"
     },
@@ -135,6 +139,7 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 
 | Champ | Description | Obligatoire |
 |-|-|-|
+| userMetadata/sshKey | La clé publique SSH | ❌ |
 | userMetadata/imageURL | L'URL de votre image | ✅ |
 | userMetadata/imageType | Le type/format de votre image (qcow2, raw) | ✅ |
 | userMetadata/imageCheckSum | Checksum de votre image | ❌ |
@@ -152,20 +157,20 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 > La partition ConfigDrive est utilisée par cloud-init lors du premier démarrage du serveur afin d'appliquer vos configurations. Vous pouvez choisir d'utiliser la partition par défaut ou une partition personnalisée (en utilisant `configDriveUserData`).
 >
 
-#### Exemples de retour
+#### Les erreurs clients fréquentes <a name="errors"></a>
 
-Voici quelques exemples de retour :
+Le tableau suivant donne un aperçu des erreurs clients les plus connues et de la manière de les corriger.
 
-| Message | Signification |
-|-|-|
-| Can't write qcow2 on disk. | Impossible d'écrire l'image qcow2 sur le disque. |
-| Could not download, qcow2 image is too big to download in memory. | Il n'y a pas assez d'espace en RAM pour télécharger l'image. |
-| Could not download image located : `http://path/of/your/image`. | Impossible de télécharger l'image située : `http://chemin/de/votre/image`. |
-| Bad format image, expected : qcow2, raw. | Le format de l'image est incorrect. |
-| Bad checkSumType, expected : sha1, sha256, md5. | Le type de checksum est incorrect. |
-| Bad $checkSumType for downloaded file, got : 1234 while expecting 5678. | Le checksum est incorrect. |
-| Can not move backup GPT data structures to the end of disk. | Le format disque est incorrect. |
-| Could not create configdrive on disk. | Impossible de créer la partition configdrive sur le disk. |
+|Message d'erreur|Détails|Solution(s)|
+|---|---|---|
+|Please provide checkSum AND checkSumType or none of them|Vous avez précisé l'un des 2 champs parmi : `imageCheckSum` et `imageCheckSumType`.|Précisez les 2 valeurs ou aucune d'entre elle.|
+|image provided format is `x` which does not match expected qcow2 format|Peu importe l'extension du fichier, son format réel doit être qcow2.|- Changer la valeur de `imageType` à `raw`.<br />- Convertissez votre image au format qcow2.|
+|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|L'image spécifiée a une taille supérieure à celle du disque choisi pour l'installation.|- Si votre serveur possède plusieurs grappes de disques, vous pouvez réessayez une installation sur une autre grappe de disques à l'aide de l'argument `diskgroupid`.<br />- Vous devez réduire la taille de votre image.|
+|Can't write `t` on disk|Impossible d'écrire l'image qcow2/raw sur le disque.|Modifier votre image de telle sorte que la commande `qemu-img convert -f "$imageType" -O raw $pathToImageFile "$device"` fonctionne.|
+|Could not download, `t` image is too big to download in memory.|Il n'y a pas assez d'espace en RAM pour télécharger l'image.|Réduisez la taille de votre image.|
+|Could not download image located : `url`|Impossible de télécharger l'image située : `imageURL`.|Vérifiez qu'un téléchargement avec `curl` depuis votre serveur en rescue fonctionne. Si des en-têtes HTTP sont requises, vous devez les spécifier à l'aide des paramètres `httpHeaders`.|
+|image provided format is not of type raw because no partition table was found. It seems to contain: `x`|Une image de type raw doit contenir une table de partitions|Vérifiez que votre image contient bien une table de partitions.|
+|Bad `checkSumType` for downloaded file, got : `n` while expecting `m`.|Le checksum est incorrect.|- Assurez-vous de spécifier le bon checksum<br />- Vérifiez qu'un téléchargement avec `curl` depuis votre serveur en rescue fonctionne.|
 
 ## Aller plus loin
 

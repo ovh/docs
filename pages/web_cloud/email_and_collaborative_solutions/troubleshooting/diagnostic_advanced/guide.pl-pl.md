@@ -1,7 +1,7 @@
 ---
 title: 'Wysyłanie lub otrzymywanie e-maili niemożliwe'
 excerpt: "Dowiedz się, jak należy zareagować w przypadku problemów z wysyłaniem lub odbieraniem wiadomości e-mail do OVHcloud"
-updated: 2023-08-30
+updated: 2024-04-11
 ---
 
 ## Wprowadzenie
@@ -48,6 +48,10 @@ Jeśli korzystasz z programu pocztowego na Twoim komputerze (Outlook, Mail firmy
 - W przypadku oferty **E-mail Pro**, w sekcji [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro), przewodników **Web Cloud**, sprawdź konfigurację oprogramowania pocztowego w sekcji `Konfiguracja programu pocztowego`.
 
 - W przypadku oferty **Exchange**, w sekcji [Rozwiązania do pracy zespołowej Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) w przewodnikach **Web Cloud** sprawdź konfigurację programu pocztowego w sekcji `Konfiguracja programu pocztowego Exchange` lub smartphonie w `Konfiguracja konta Exchange na smartfonie/tablecie`
+
+### Nie mogę otrzymywać e-maili, ponieważ mój adres e-mail jest zapełniony, nie mam więcej miejsca. Co mogę zrobić?
+
+Jeśli zamówiłeś [jedną z naszych ofert e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) i jedno z Twoich kont e-mail jest zapełnione, zapoznaj się z naszym przewodnikiem "[Zarządzanie przestrzenią dyskową konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Przewodnik ten pomoże Ci określić, czy możesz zoptymalizować istniejącą przestrzeń lub czy konieczna jest zmiana oferty e-mail w celu zwiększenia przestrzeni dyskowej.
 
 ### Czy e-maile działają w interfejsie Webmail? (**wysyłka** i/lub **odbiór**)
 
@@ -120,6 +124,7 @@ Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych prze
 |504|Parametr zamówienia nie został zrealizowany|Parametry lub opcje używane podczas wysyłki e-maila do serwera SMTP są rozpoznawane, ale są wyłączone w konfiguracji. Skontaktuj się z dostawcą usług|
 |535|błąd podczas logowania|Informacje użytkownika/hasło są niewidoczne lub wysyłka jest potencjalnie zablokowana na Twoim koncie e-mail. Sprawdź stan Twojego konta e-mail w Panelu klienta OVHcloud. Zmiana hasła może odblokować wysyłkę, jeśli konto zostało zablokowane ze względu na spam, zapoznaj się z naszym przewodnikiem [Co zrobić, jeśli moje konto zostało zablokowane z powodu rozsyłania spamu?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam), aby uzyskać więcej informacji|
 |550|Operacja nie została wykonana: skrzynka pocztowa niedostępna|Docelowy serwer poczty elektronicznej nie mógł sprawdzić używanego adresu e-mail. Jest to najczęściej spowodowane nieprawidłowym adresem e-mail docelowym, ale może również oznaczać, że docelowy serwer poczty elektronicznej ma problemy z zaporą lub połączeniem. Sprawdź adres e-mail odbiorcy i/lub spróbuj ponownie|
+|550 5.7.1|Email rejected per policy reason|Docelowy serwer poczty e-mail odrzucił wysyłający adres e-mail ze względów polityki bezpieczeństwa. Przyczyny te mogą być wielorakie, zazwyczaj są one opisane za pomocą kodu błędu. W niektórych przypadkach może to być adres IP w ciągu transmisji, który znajduje się na liście odrzuconych. Aby sprawdzić reputację adresu IP, możesz go przetestować na przykład na [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) lub sprawdzić ciąg transmisji wiadomości e-mail z danego adresu e-mail za pomocą [Mailtester](https://www.mail-tester.com/)|
 |550 5.7.26|This message does not have authentication information or fails to pass authentication checks| E-mail został odrzucony, ponieważ usługa e-mail nadawcy nie ma skonfigurowanego SPF ani DKIM w jego nazwie domeny.<br><br>Zaleca się ustawienie priorytetowego rekordu SPF, który jest zgodny ze wszystkimi wiadomościami e-mail oferuje. Skorzystaj z naszego przewodnika „[Konfiguracja rekordu SPF dla Twojej nazwy domeny](/pages/web_cloud/domains/dns_zone_spf)”.<br><br>Jeśli Twoja oferta e-mail ma opcję DKIM, możesz ją ustawić za pomocą nasz przewodnik „[Ustaw rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)”.|
 |551|Użytkownik nielokalny|Jest to powszechnie stosowane jako strategia zapobiegania spamowi. Wiadomo, że przekazywanie poczty nie jest dozwolone z jakiegokolwiek powodu, aby przekazać wiadomość do innego serwera niż twój. Skontaktuj się z dostawcą usług|
 |552|Polecenie połączenia zostało przerwane: przekroczona przestrzeń dyskowa|Użytkownik, z którym próbowałeś się skontaktować, nie ma już dostępnej przestrzeni na otrzymywanie wiadomości. Niestety, jedynym rozwiązaniem jest kontakt z odbiorcą za pomocą innej metody|

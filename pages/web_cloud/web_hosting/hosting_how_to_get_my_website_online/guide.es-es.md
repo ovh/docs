@@ -1,7 +1,7 @@
 ---
 title: "Publicar un sitio web en internet"
 excerpt: "Descubra cómo subir un sitio web a un alojamiento de OVHcloud para publicarlo en internet"
-updated: 2022-07-21
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -10,16 +10,16 @@ updated: 2022-07-21
 
 ## Objetivo
 
-Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere crear un blog o una tienda online como compartir una afición o promover una actividad profesional, los [planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} le permiten alojar cualquier sitio web, siempre que sea compatible con la [configuración de nuestras infraestructuras](https://webhosting-infos.hosting.ovh.net){.external}.
+Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere crear un blog o una tienda online como compartir una afición o promover una actividad profesional, los [planes de hosting de OVHcloud](/links/web/hosting){.external} le permiten alojar cualquier sitio web, siempre que sea compatible con la [configuración de nuestras infraestructuras](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Esta guía explica cómo publicar en internet un sitio web alojado en un plan de hosting de OVHcloud.**
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external}.
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
-- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} con el que poder acceder a su sitio web.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Disponer de un [dominio](/links/web/domains){.external} con el que poder acceder a su sitio web.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
@@ -28,7 +28,7 @@ Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere c
 
 Para llevar su proyecto a buen puerto, es importante tener una visión clara de su objetivo. ¿Qué quiere conseguir con su sitio web? ¿Cómo quiere publicarlo? Los alojamientos web de OVHcloud le ofrecen diversas posibilidades para hacer realidad su proyecto:
 
-- **Crear un sitio web llave en mano con los módulos en un clic de OVHcloud**: Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVHcloud ofrece cuatro módulos en un clic compatibles con nuestras infraestructuras, que puede consultar en la página [Crear un sitio web con los CMS más populares](https://www.ovhcloud.com/es-es/web-hosting/uc-website/){.external}.
+- **Crear un sitio web llave en mano con los módulos en un clic de OVHcloud**: Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVHcloud ofrece cuatro módulos en un clic compatibles con nuestras infraestructuras, para descubrirlos en la página web de OVHcloud [«Crear un sitio web con los módulos en un clic»](/links/web/hosting-website){.external}. También puede consultar la guía [«Instalar su sitio web con los módulos en un clic»](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Crear un sitio web llave en mano con instalación manual**: Esta solución permite tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.), pero que deberá instalar usted mismo en su alojamiento web de OVHcloud.
 
@@ -68,7 +68,7 @@ Para conectarse al espacio de almacenamiento, necesitará lo siguiente:
 - la dirección del servidor;
 - el puerto de conexión al servidor.
 
-Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección **Web** y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
+Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la sección **Web** y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
 
 ![Instalación de un sitio web](images/tab-pro.png){.thumbnail}
 
@@ -80,7 +80,7 @@ Una vez que disponga de todos los datos necesarios, podrá conectarse a su espac
 
 - **Cliente FTP o SFTP**: Deberá instalar en su ordenador un programa compatible con el protocolo FTP o SFTP (por ejemplo, FileZilla). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa.
 
-- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} son compatibles.
+- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](/links/web/hosting){.external} son compatibles.
 
 #### 2.3. Cargar los archivos en el espacio de almacenamiento
 
@@ -113,9 +113,9 @@ Si va a migrar un sitio web que ya existe, descargue la base de datos desde su a
 
 #### 3.2. Crear la base de datos en OVHcloud 
 
-Si ya dispone de una base de datos (incluida con un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}, una solución [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}), necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
+Si ya dispone de una base de datos (incluida con un [plan de hosting de OVHcloud](/links/web/hosting){.external}, una solución [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}), necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
 
-Si quiere crear una nueva base de datos en OVHcloud, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `Bases de datos`{.action}.
+Si quiere crear una nueva base de datos en OVHcloud, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `Bases de datos`{.action}.
 
 A continuación, haga clic en `Crear una base de datos`{.action} o, si este botón no aparece, en `Acciones`{.action} > `Crear una base de datos`{.action}. Introduzca la información solicitada.
 
@@ -157,8 +157,8 @@ Le recomendamos que, si necesita ayuda para publicar su sitio web, se ponga en c
 
 [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

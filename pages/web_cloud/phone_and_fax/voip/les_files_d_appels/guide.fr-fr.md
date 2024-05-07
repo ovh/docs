@@ -14,8 +14,8 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
  
 ## Prérequis
  
-- Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external} dans votre compte OVHcloud.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros){.external} dans votre compte OVHcloud.
+- Être connecté à l’[espace client OVHcloud](/links/manager){.external}.
 
 > [!primary]
 >
@@ -25,7 +25,7 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la section `Télécom`{.action}.<br>
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, dans la section `Télécom`{.action}.<br>
 Cliquez ensuite sur `Télécom`{.action} et choisissez le numéro alias sur lequel vous souhaitez configurer la file d'appels.
 
 ### Étape 1 : appliquer la configuration
@@ -92,9 +92,9 @@ Une fois ces informations complétées, cliquez sur le bouton `Valider`{.action}
 >
 > - La législation interdit la redirection sur des numéros surtaxés.
 > - Un appel redirigé vers une destination non-comprise dans votre forfait vous sera facturé.
-> - Les redirections vers un numéro mobile ou une ligne externe à OVHcloud ne sont pas comprises dans les [forfaits VoIP](https://www.ovhtelecom.fr/telephonie/voip/#offers). Elles sont donc facturées à la seconde, sauf dans le cadre des forfaits mobile à l’heure.
+> - Les redirections vers un numéro mobile ou une ligne externe à OVHcloud ne sont pas comprises dans les [forfaits VoIP](/links/telecom/telephonie-voip-offers). Elles sont donc facturées à la seconde, sauf dans le cadre des forfaits mobile à l’heure.
 >
-> Consultez les [tarifs de la téléphonie OVHcloud](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml) pour plus de détails.
+> Consultez les [tarifs de la téléphonie OVHcloud](/links/telecom/telephonie-decouvrez-tarifs-telephonie) pour plus de détails.
 
 ##### 2. Configurer une stratégie d’appels
 

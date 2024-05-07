@@ -1,7 +1,7 @@
 ---
-title: Local Zone Compute - Features, Capabilities and Limitations
-excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
-updated: 2024-03-04
+title: Local Zone Compute - Funcionalidades, capacidades y límites
+excerpt: Descubra las funcionalidades, capacidades y límites actuales de las instancias de Local Zone
+updated: 2024-04-08
 ---
 
 > [!primary]
@@ -28,10 +28,15 @@ Para más información, consulte nuestra [página dedicada a las instancias de L
 | Soporte IPv4 público | Sí |
 | Boot/Start | Sí |
 | Stop | Sí |
+| Block Storage | Sí |
+| Copias de seguridad de instancias | No |
+| Snapshots de volúmenes | No |
+| Copias de seguridad de volúmenes | No |
+| Object Storage | No |
 
 ## Capacidades y limitaciones
 
-Todas las funcionalidades de instancia que no aparecen aquí, como el reinicio (reinicio) de las instancias, la compatibilidad con Block u Object Storage, estarán disponibles en los próximos meses. Nuestro objetivo es admitir todas las funcionalidades que ya son compatibles en las regiones globales.
+Todas las funcionalidades de instancia que no aparecen aquí, como el reinicio (reinicio) de las instancias o la compatibilidad con Object Storage, estarán disponibles en los próximos meses. Nuestro objetivo es admitir todas las funcionalidades que ya son compatibles en las regiones globales.
 
 ## Feedback
 

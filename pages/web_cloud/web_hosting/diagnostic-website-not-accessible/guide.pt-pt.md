@@ -25,13 +25,13 @@ Em caso de inacessibilidade do seu website, podem ocorrer várias reações de e
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further).
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further).
 >
 
 ## Requisitos
 
 - Ter a gestão dos servidores e da [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) do seu domínio.
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Estar atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web).
 
 ## Instruções
@@ -46,7 +46,7 @@ Em caso de inacessibilidade do seu website, podem ocorrer várias reações de e
 > Assim, recomendamos vivamente que ative a [renovação automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#instrucoes) em todas as subscrições da OVHcloud.
 >
 
-Para verificar a validade da assinatura relativa ao seu domínio, clique no seu nome (canto superior direito) no menu contextual e, a seguir, em `Produtos e serviços`{.action}.
+Para verificar a validade da assinatura relativa ao seu domínio, clique no seu nome (no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager)) no menu contextual e, a seguir, em `Produtos e serviços`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
@@ -58,7 +58,7 @@ Uma vez terminada a renovação da sua oferta, o seu website estará disponível
 
 ### Etapa 2: verificar os servidores DNS
 
-Para verificar a validade dos seus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information), na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) clique em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
+Para verificar a validade dos seus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information), na [Área de Cliente OVHcloud](/links/manager) clique em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
 
 #### Cenário 1: nenhuma anomalia nos servidores DNS
 
@@ -88,7 +88,7 @@ O seu website estará disponível num prazo máximo de 48 horas.
 
 > [!warning]
 >
-> Nesta situação, contacte o alojador da sua Zona DNS, o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/) antes de qualquer manipulação.
+> Nesta situação, contacte o alojador da sua Zona DNS, o seu webmaster ou os [parceiros OVHcloud](/links/partner) antes de qualquer manipulação.
 >
 > É possível que os servidores DNS utilizados pelo seu domínio estejam funcionais e que o problema de acesso ao seu site esteja associado a uma entrada inexistente ou errada na [zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns). Se alterar os servidores DNS nesta situação, os seus endereços de e-mail ou outras aplicações online poderão ficar indisponíveis.
 >
@@ -117,7 +117,7 @@ Nesta etapa, vai encontrar o endereço IP do seu alojamento e adicioná-lo à su
 
 Se o seu site não está alojado na infraestrutura da OVHcloud ou é gerido por outro fornecedor, contacte o serviço de suporte em causa.
 
-Se o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovhcloud.com/pt/web-hosting/), clique no separador `Alojamentos`{.action} à esquerda do seu ecrã e, a seguir, na oferta em causa.
+Se o seu site está alojado numa das nossas [ofertas Web Cloud](/links/web/hosting), clique no separador `Alojamentos`{.action} à esquerda do seu ecrã e, a seguir, na oferta em causa.
 
 No separador `Informações gerais`{.action}, copie o endereço IPV4 e/ou IPV6 do seu domínio.
 
@@ -137,8 +137,8 @@ O seu website estará disponível num prazo máximo de 24 horas.
 
 [Resolver os erros mais frequentes associados aos módulos 1 clique](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

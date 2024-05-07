@@ -39,14 +39,14 @@ Mit der automatisierten Sperrung werden Sie auch vor möglichen rechtlichen Kons
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection) für den FTP-Speicherplatz Ihres Hostings.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -54,11 +54,11 @@ Mit der automatisierten Sperrung werden Sie auch vor möglichen rechtlichen Kons
 
 Wenn die Seite "**403 forbidden**" nach einer Änderung an Ihrer Website erscheint, [setzen Sie den FTP-Speicherplatz Ihres Hostings ganz oder teilweise zu einem früheren Zeitpunkt zurück](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [spezialisierten Dienstleister](/links/partner).
 
 Wenn die Seite "**403 forbidden**" ohne Änderung Ihrer Website erscheint, prüfen Sie Ihren Posteingang. Wenn Sie eine E-Mail von unserem System erhalten haben, die eine Schließung Ihres Hostings aus Sicherheitsgründen meldet, gehen Sie zu [Schritt 2](#step-2) dieser Anleitung.
 
-Wenn die Seite "**403 forbidden**" ohne Aktion Ihrerseits erscheint und Sie diesbezüglich keine Benachrichtigung erhalten haben, überprüfen Sie zunächst die FTP-Zugriffsrechte (CHMOD) Ihrer Dateien und Ordner sowie den in Ihrer **.htaccess** enthaltenen Code. Überprüfen Sie auch, ob dieser Zustand ggf. von einem Sicherheitsplugin oder einer Application Firewall verursacht wird. Falls nötig, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+Wenn die Seite "**403 forbidden**" ohne Aktion Ihrerseits erscheint und Sie diesbezüglich keine Benachrichtigung erhalten haben, überprüfen Sie zunächst die FTP-Zugriffsrechte (CHMOD) Ihrer Dateien und Ordner sowie den in Ihrer **.htaccess** enthaltenen Code. Überprüfen Sie auch, ob dieser Zustand ggf. von einem Sicherheitsplugin oder einer Application Firewall verursacht wird. Falls nötig, kontaktieren Sie einen [spezialisierten Dienstleister](/links/partner).
 
 ### Schritt 2: Sicherheitsmaßnahmen auf Ihrer Seite durchführen <a name="step-2"></a>
 
@@ -66,7 +66,7 @@ Wenn die Seite "**403 forbidden**" ohne Aktion Ihrerseits erscheint und Sie dies
 
 - Führen Sie Sicherheitsupdates für alle Ihre Geräte durch.
 
-- Überprüfen Sie, ob ein Antivirus-Dienst installiert ist, aktualisieren Sie ihn und starten Sie einen vollständigen Scan. Wenn Sie keine solche Software besitzen, konsultieren Sie vor der Installation einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)
+- Überprüfen Sie, ob ein Antivirus-Dienst installiert ist, aktualisieren Sie ihn und starten Sie einen vollständigen Scan. Wenn Sie keine solche Software besitzen, konsultieren Sie vor der Installation einen [spezialisierten Dienstleister](/links/partner)
 
 - Ändern Sie alle Ihre persönlichen Passwörter, insbesondere Ihrer E-Mail-Accounts, und halten Sie sich dabei an die **Best Practices** in [dieser Anleitung](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -74,11 +74,11 @@ Wenn die Seite "**403 forbidden**" ohne Aktion Ihrerseits erscheint und Sie dies
 
 > [!warning]
 >
-> Bevor Sie Datenbankpasswörter Ihrer Website über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ändern, aktualisieren Sie die Konfigurationsdatei Ihrer Website, damit sie weiterhin auf die Datenbank zugreifen kann.
+> Bevor Sie Datenbankpasswörter Ihrer Website über Ihr [OVHcloud Kundencenter](/links/manager) ändern, aktualisieren Sie die Konfigurationsdatei Ihrer Website, damit sie weiterhin auf die Datenbank zugreifen kann.
 >
 > Bleibt diese Aktualisierung aus, führt die Änderung des Passworts Ihrer Datenbank dazu, dass die Website unzugänglich wird und jegliche Dienste mit Datenbankzugriff blockiert werden.
 >
-> Sollten Sie Hilfe bei den durchzuführenden Maßnahmen benötigen, wenden Sie sich an die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+> Sollten Sie Hilfe bei den durchzuführenden Maßnahmen benötigen, wenden Sie sich an die [OVHcloud Partner](/links/partner).
 >
 
 ### Schritt 3: Ihr Hosting bearbeiten
@@ -92,7 +92,7 @@ Beachten Sie zunächst das Datum des Versands der E-Mail von OVHcloud, in der di
 > - Die Zugriffsberechtigungen sind auf "**CHMOD 700**" im FTP-Root Ihres Webhostings gesetzt.
 > - Die Zugriffsberechtigungen sind auf "**CHMOD 000**" im FTP-Root Ihres Webhostings gesetzt.
 >
-> Wenn sie "**CHMOD 000**" zurücksetzen möchten, kontaktieren Sie unsere [Support-Teams](https://www.ovhcloud.com/de/support-levels/), um den Status Ihrer Website überprüfen zu lassen, bevor Sie mit den in dieser Anleitung beschriebenen Schritten fortfahren. 
+> Wenn sie "**CHMOD 000**" zurücksetzen möchten, kontaktieren Sie unsere [Support-Teams](/links/support), um den Status Ihrer Website überprüfen zu lassen, bevor Sie mit den in dieser Anleitung beschriebenen Schritten fortfahren. 
 >
 > Je nach Ihrer Situation können die Zugangsbeschränkungen von "**CHMOD 000**" zu "**CHMOD 700**" geändert werden, damit Sie wieder auf den FTP-Bereich Ihres Webhostings zugreifen können.
 >
@@ -107,12 +107,12 @@ Um Ihren FTP-Speicherplatz ganz oder teilweise zurückzusetzen, lesen Sie [unser
 >
 > Die Wiederherstellung Ihres FTP Speicherplatzes allein reicht nicht aus, um potenzielle Sicherheitslücken zu beheben, die bereits auf Ihrer Website vorhanden sind.
 >
-> Um diese Sicherheitslücken zu identifizieren, analysieren Sie die [Web-Logs](/pages/web_cloud/web_hosting/logs_and_statistics) Ihres Hostings oder wenden Sie sich an einen einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Webseiten durchzuführen.
+> Um diese Sicherheitslücken zu identifizieren, analysieren Sie die [Web-Logs](/pages/web_cloud/web_hosting/logs_and_statistics) Ihres Hostings oder wenden Sie sich an einen einen [spezialisierten Dienstleister](/links/partner), um eine Sicherheitsüberprüfung Ihrer Webseiten durchzuführen.
 >
 
 #### Fall 2: Ihr Hosting wurde vor mehr als zwei Wochen deaktiviert
 
-Wenn Ihr Hosting vor mehr als zwei Wochen gesperrt wurde, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Webseiten durchzuführen.
+Wenn Ihr Hosting vor mehr als zwei Wochen gesperrt wurde, kontaktieren Sie einen [spezialisierten Dienstleister](/links/partner), um eine Sicherheitsüberprüfung Ihrer Webseiten durchzuführen.
 
 > [!success]
 >
@@ -162,7 +162,7 @@ SITE CHMOD 705.
 
 #### Ihr Webhosting mit dem FTP-Explorer (“net2ftp“) reaktivieren
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action} und öffnen Sie `Hosting-Pakete`{.action} im linken Menü. Wechseln Sie zum Tab `FTP-SSH`{.action} des betroffenen Hostings.
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action} und öffnen Sie `Hosting-Pakete`{.action} im linken Menü. Wechseln Sie zum Tab `FTP-SSH`{.action} des betroffenen Hostings.
 
 Klicken Sie auf den Button `FTP-Explorer`{.action} und [loggen Sie sich in Ihren FTP-Speicherplatz ein](/pages/web_cloud/web_hosting/ftp_connection). 
 
@@ -197,8 +197,8 @@ Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung er
 
 [PHP-Version Ihres Webhostings ändern](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

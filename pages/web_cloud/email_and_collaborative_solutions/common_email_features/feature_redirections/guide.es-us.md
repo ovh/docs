@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar los alias y redirecciones de correo'
 excerpt: 'Cómo gestionar los alias y redirecciones de correo'
-updated: 2020-05-20
+updated: 2024-03-26
 ---
 
 <style>
@@ -53,7 +53,7 @@ Por ejemplo, su dirección de correo electrónico es **john.smith@mydomain.ovh**
 
 Los capítulos "[crear una redirección](#redirect)" y "[crear un alias](#alias)" se refieren al conjunto de nuestros productos de correo de OVHcloud, **excepto** si tiene un dominio registrado con OVHcloud y no tiene ningún servicio de correo asociado.
 
-Para estas dos excepciones, consulte directamente el capítulo "[Crear una redirección o un alias en un MX Plan histórico o un dominio sin servicio de correo](#mxplanlegacy)".
+Para estas dos excepciones, solo es posible la redirección. Le invitamos a consultar directamente el capítulo "[Crear una redirección o un alias en un MX Plan histórico o un dominio sin servicio de correo](#mxplanlegacy)".
 
 ### Crear una redirección <a name="redirect"></a>
 
@@ -153,6 +153,11 @@ El método para crear un alias o una redirección es estrictamente el mismo. Sig
 > **Etapa 2**
 >>
 >> Se mostrará una tabla con las redirecciones activas. Haga clic a la derecha, sobre el botón `Añadir una redirección`{.action}.<br><br>
+>>
+>> > [!primary]
+>> >
+>> > Para modificar o eliminar una redirección, haga clic en `...`{.action}, a la derecha de la redirección correspondiente.
+>>
 >> ![correo electrónico](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
 > **Etapa 3**

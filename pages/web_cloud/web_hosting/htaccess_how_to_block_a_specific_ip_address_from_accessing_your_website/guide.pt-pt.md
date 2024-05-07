@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Como bloquear o acesso ao meu site para alguns endereços IP através de um ficheiro .htaccess ?"
 excerpt: "Descubra as ações possíveis através de um ficheiro .htaccess para bloquear o acesso ao seu site a determinados endereços IP"
-updated: 2022-09-12
+updated: 2024-03-14
 ---
 
 > [!primary]
@@ -22,12 +22,12 @@ Pode criar vários ficheiros ".htaccess" no [espaço FTP](/pages/web_cloud/web_h
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 >
 
 ## Requisitos
 
-- Dispor de um [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de um [alojamento partilhado OVHcloud](/links/web/hosting)
 
 ## Instruções
 
@@ -79,13 +79,13 @@ Para bloquear um endereço IP específico, insira um dos dois códigos seguintes
 >> ```
 >>
 
-- **Exemplo** : se pretender bloquear o endereço IP 192.168.1.2, deverá escrever um dos dois códigos seguintes:
+- **Exemplo** : se pretender bloquear o endereço IP 203.0.113.0, deverá escrever um dos dois códigos seguintes:
 
 > [!tabs]
 > Sintaxe histórico
 >>
 >> ```bash
->> Deny from 192.168.1.2
+>> Deny from 203.0.113.0
 >> ```
 >>
 > Sintaxe a partir de Apache 2.3
@@ -93,7 +93,7 @@ Para bloquear um endereço IP específico, insira um dos dois códigos seguintes
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168.1.2
+>> Require not ip 203.0.113.0
 >> </RequireAll>
 >> ```
 >>
@@ -119,13 +119,13 @@ Para bloquear um intervalo de endereços IP, insira um dos dois códigos seguint
 >> ```
 >>
 
-- **Exemplo** : se pretender bloquear todos os IPs em 192.168.x.x, deverá escrever um dos dois códigos seguintes:
+- **Exemplo** : se pretender bloquear todos os IPs em 203.0.113.x, deverá escrever um dos dois códigos seguintes:
 
 > [!tabs]
 > Sintaxe histórico
 >>
 >> ```bash
->> Deny from 192.168
+>> Deny from 203.0.113
 >> ```
 >>
 > Sintaxe a partir de Apache 2.3
@@ -133,7 +133,7 @@ Para bloquear um intervalo de endereços IP, insira um dos dois códigos seguint
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168
+>> Require not ip 203.0.113
 >> </RequireAll>
 >> ```
 >>
@@ -255,7 +255,7 @@ Para autorizar apenas um IP a aceder ao seu serviço, insira um dos dois código
 >> ```
 >>
 
-- **Exemplo** : se pretender autorizar apenas o acesso ao seu alojamento aos IPs 192.168.1.2 e 192.168.1.3, deverá escrever um dos dois códigos seguintes:
+- **Exemplo** : se pretender autorizar apenas o acesso ao seu alojamento aos IPs 203.0.113.0 e 203.0.113.1, deverá escrever um dos dois códigos seguintes:
 
 > [!tabs]
 > Sintaxe histórico
@@ -263,14 +263,14 @@ Para autorizar apenas um IP a aceder ao seu serviço, insira um dos dois código
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1.2
->> Allow from 192.168.1.3
+>> Allow from 203.0.113.0
+>> Allow from 203.0.113.1
 >> ```
 >>
 > Sintaxe a partir de Apache 2.3
 >>
 >> ```bash
->> Require ip 192.168.1.2 192.168.1.3
+>> Require ip 203.0.113.0 203.0.113.1
 >> ```
 >>
 
@@ -295,7 +295,7 @@ Para autorizar um intervalo de endereços IP a aceder ao seu serviço, insira um
 >> ```
 >>
 
-- **Exemplo** : se pretender autorizar apenas o acesso ao seu alojamento ao intervalo de endereços IP 192.168.1.x, deverá escrever um dos dois códigos seguintes:
+- **Exemplo** : se pretender autorizar apenas o acesso ao seu alojamento ao intervalo de endereços IP 203.0.113.x, deverá escrever um dos dois códigos seguintes:
 
 > [!tabs]
 > Sintaxe histórico
@@ -303,14 +303,14 @@ Para autorizar um intervalo de endereços IP a aceder ao seu serviço, insira um
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1
+>> Allow from 203.0.113
 >> ```
 >>
 > Sintaxe a partir de Apache 2.3 
 >> A colocar no topo do seu ".htaccess"
 >>
 >> ```bash
->> Require ip 192.168.1
+>> Require ip 203.0.113
 >> ```
 >>
 
@@ -368,8 +368,8 @@ Independentemente da segurança do acesso geral ao alojamento, o ficheiro ".htac
 
 ## Quer saber mas? <a name="go-further"></a>
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

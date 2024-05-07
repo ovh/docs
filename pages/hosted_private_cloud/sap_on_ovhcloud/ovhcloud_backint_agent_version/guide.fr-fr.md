@@ -1,10 +1,14 @@
 ---
 title: "Historique des versions OVHcloud Backint Agent"
 excerpt: "Ce guide fournit la liste des changements d'OVHcloud Backint Agent"
-updated: 2024-02-15
+updated: 2024-03-18
 ---
 
 ## Historique des versions
+
+### Version 1.0.10
+
+- Résolution du problème pouvant se produire lors d'un timeout avec le bucket Object Storage S3 et entraînant une sauvegarde suspendue côté SAP HANA.
 
 ### Version 1.0.9
 

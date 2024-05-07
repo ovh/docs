@@ -1,7 +1,7 @@
 ---
 title: "Transferring a domain name to another registrar"
 excerpt: "Find out how to move a domain name from OVHcloud to a provider of your choice"
-updated: 2023-07-04
+updated: 2024-04-11
 ---
 
 ## Objective
@@ -23,8 +23,8 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en/domains/) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) with the necessary permissions to manage the domain name (domain administrator)
+- A [domain name](/links/web/domains) registered with OVHcloud
+- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the domain name (domain administrator)
 - The registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
 
 > [!primary]
@@ -43,16 +43,20 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 > We recommend to consult the following resources in case of any doubt:
 >
 > - The website of the respective TLD registry
-> - The [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en/domains/tld/)
+> - The [list of TLDs available at OVHcloud](/links/web/domains-tld)
 > - [ICANN's explanation of EPP Status Codes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (to find out which status codes currently apply to your domain name, carry out a *Whois* search, preferably using the respective TLD registry's website)
 > - Your new registrar's website and management interface, especially for questions about a pending transfer process
 >
 
 ### Step 1: Remove the transfer protection for the domain name
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action}. Click `Domain names`{.action}, then choose the domain name concerned.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Domain names`{.action}, then choose the domain name concerned.
 
 On the `General information`{.action} tab you can find the `Protection against domain name transfer`{.action} slider button under **Security**, set to `Enabled`{.action} by default.
+
+> [!warning]
+>
+> If the `Transfer protection` button is not present, this means that your domain name extension does not require a transfer code. You can then launch your transfer directly.
 
 ![outgoingtransfer](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
@@ -62,9 +66,9 @@ Click on the slider and confirm in the popup window that you want to remove this
 > 
 > If you encounter the message "**An error occurred when requesting to disable the domain protection (User not granted for this request)**", your customer account does not have sufficient rights to unlock the domain name. 
 >
-> If you encounter the message "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**", this means that the transfer code for your domain name cannot be retrieved via your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+> If you encounter the message "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**", this means that the transfer code for your domain name cannot be retrieved via your [OVHcloud Control Panel](/links/manager).
 > 
-> In both cases, check that your account is the **administrator** contact of the domain name using our guide on [contact management](/pages/account_and_service_management/account_information/managing_contacts) then check that the domain name extension can be unlocked from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+> In both cases, check that your account is the **administrator** contact of the domain name using our guide on [contact management](/pages/account_and_service_management/account_information/managing_contacts) then check that the domain name extension can be unlocked from the [OVHcloud Control Panel](/links/manager).
 > 
 > Some *transfer codes* are directly managed by the *registry* of your domain name extension. A *registry* is an organisation that manages all domain names for a given extension. For example, the **AFNIC** manages all domain names with the extension *.fr*. If this is the case, you must contact the *registry* managing your domain name extension directly to retrieve the *transfer code*.
 >
@@ -108,8 +112,8 @@ You can contact your provider for more information about this process.
 
 [Transferring a .uk domain name to another registrar](/pages/web_cloud/domains/transfer_outgoing_couk)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>. 

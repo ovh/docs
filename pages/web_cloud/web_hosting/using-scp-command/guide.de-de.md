@@ -21,7 +21,7 @@ Es ermöglicht über ein Terminal mit einem Linux-Befehl das Kopieren von Dateie
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 **Diese Anleitung erklärt, wie Sie den Befehl Secure Copy Protocol (SCP) per SSH verwenden, um Dateien von oder auf Ihr Webhosting zu kopieren.**
@@ -30,8 +30,8 @@ Es ermöglicht über ein Terminal mit einem Linux-Befehl das Kopieren von Dateie
 
 - Sie verfügen über ein Terminal, das mit Linux- und SSH-Befehlen kompatibel ist (zum Beispiel das *Terminal* von MacOS oder der *Ubuntu* Emulator unter Windows).
 - Sie können mit SSH und Kommandzeile umgehen.
-- Sie verfügen über ein OVHcloud [Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit SSH-Zugang.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über ein OVHcloud [Webhosting](/links/web/hosting) mit SSH-Zugang.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -142,6 +142,6 @@ Um zu überprüfen, ob Inhalte auf Ihrem Webhosting lokal auf Ihren Computer kop
 
 [Mit dem FTP-Speicherplatz Ihres Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection)
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

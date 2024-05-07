@@ -10,13 +10,13 @@ updated: 2024-02-13
 
 ## Ziel 
 
-OVHcloud bietet mehrere [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/). Sie sind für verschiedene Einsatzzwecke konzipiert:
+OVHcloud bietet mehrere [Webhosting-Angebote](/links/web/hosting). Sie sind für verschiedene Einsatzzwecke konzipiert:
 
 - Erste Schritte im Web.
 - Schnelles Erstellen einer Website (professionell oder nicht), eines Blogs, eines **C**ontent **M**anagement **S**ystem (**CMS**) wie *WordPress*, *Joomla!*, *PrestaShop* oder *Drupal* oder eines Onlineshops.
 - Personalisieren von E-Mail-Adressen mit dem Domainnamen, den Sie für Ihre Website verwenden möchten.
 - Verwaltung mehrerer Websites auf einem einzigen Webhosting.
-- Verwaltung von Datenbanken ([bei einigen unserer Webhostings inklusive](https://www.ovhcloud.com/de/web-hosting/)).
+- Verwaltung von Datenbanken ([bei einigen unserer Webhostings inklusive](/links/web/hosting)).
 - etc.
 
 Diese Angebote ersparen Ihnen die Verwaltung der Wartung, der Updates und der Sicherheit einer Webhosting-Infrastruktur.<br>
@@ -30,17 +30,17 @@ So sparen Sie Zeit bei der Administration und können sich ganz auf Folgendes ko
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
-- Sie haben einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben einen [Domainnamen](/links/web/domains).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Ziel dieser Anleitung ist es, Ihnen die wichtigsten Aktionen aufzuzeigen, die mit unseren [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Lösungen durchgeführt werden können. 
+Ziel dieser Anleitung ist es, Ihnen die wichtigsten Aktionen aufzuzeigen, die mit unseren [Webhosting](/links/web/hosting) Lösungen durchgeführt werden können. 
 Jede dieser Aktionen wird durch einen oder mehrere Links zu spezifischen Leitfäden (im Zusammenhang mit der jeweiligen Aktion) begleitet.
 
-Sie können diese Anleitung also als „Repository“ für die möglichen Aktionen verwenden, sobald Sie Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/) abonniert haben und während Sie es verwenden.
+Sie können diese Anleitung also als „Repository“ für die möglichen Aktionen verwenden, sobald Sie Ihr [Webhosting](/links/web/hosting) abonniert haben und während Sie es verwenden.
 
 > [!primary]
 > 
@@ -63,7 +63,7 @@ Bevor Sie beginnen, ist es wichtig, Ihre Bedürfnisse klar zu identifizieren und
 - Benötige ich eine oder mehrere Datenbanken, um meine Website zu betreiben?
 - Benötige ich eine oder mehrere personalisierte E-Mail-Adressen mit meinem Domainnamen?
 
-Je nach Ihren Antworten überprüfen Sie, ob Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot Ihren Anforderungen entspricht, bevor Sie fortfahren.
+Je nach Ihren Antworten überprüfen Sie, ob Ihr [Webhosting](/links/web/hosting) Angebot Ihren Anforderungen entspricht, bevor Sie fortfahren.
 
 Ist das nicht der Fall, lesen Sie unsere Anleitung „[Webhosting: Wie kann ich mein Angebot wechseln?](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)“.
 
@@ -93,7 +93,7 @@ Folgen Sie in diesem Fall unserer Anleitung „[Eine Website auf Ihrem Webhostin
 ##### Fall 2 - Erstellen einer Website mithilfe eines CMS
 
 OVHcloud stellt Ihnen die Option „1-Klick-Module“ zur Verfügung.<br>
-Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt sind, können Sie mit dieser Option schnell die CMS *WordPress*, *Joomla!*, *PrestaShop* und *Drupal* auf dem Hosting installieren.
+Wenn Sie in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt sind, können Sie mit dieser Option schnell die CMS *WordPress*, *Joomla!*, *PrestaShop* und *Drupal* auf dem Hosting installieren.
 
 Um diese Option zu verwenden, lesen Sie unsere Anleitung „[Installation Ihrer Website mit 1-Klick-Modulen (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“.
 
@@ -104,7 +104,7 @@ Um diese Option zu verwenden, lesen Sie unsere Anleitung „[Installation Ihrer 
 
 ### Schritt 3 - E-Mail-Accounts erstellen (optional) <a name="email-creation"></a>
 
-Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthält eine oder mehrere E-Mail-Accounts, die Sie aktivieren können.
+Ihr [Webhosting](/links/web/hosting) enthält eine oder mehrere E-Mail-Accounts, die Sie aktivieren können.
 
 Befolgen Sie zunächst unsere Anleitung „[Die in Ihrem Webhosting inklusiven E-Mail-Accounts aktivieren](/pages/web_cloud/web_hosting/activate-email-hosting)“.
 
@@ -114,7 +114,7 @@ Wenn die Option aktiviert ist, lesen Sie unsere Anleitung „[E-Mail-Accounts mi
 >
 > - Wenn Sie eine Website migrieren und/oder es sich um E-Mail-Adressen handelt, die mit dem Domainnamen Ihrer Website verknüpft sind, lesen Sie unsere Anleitung „[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)“. Dort finden Sie alle wesentlichen Schritte für eine unterbrechungsfreie Migration aller Ihrer Dienstleistungen (Domainname, Website, E-Mail-Adresse(n) etc.).
 >
-> - Wenn Sie bei der Bestellung Ihres Webhostings keinen Domainnamen hinzugefügt haben und die Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ nutzen möchten, müssen Sie die Operation manuell über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) durchführen.
+> - Wenn Sie bei der Bestellung Ihres Webhostings keinen Domainnamen hinzugefügt haben und die Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ nutzen möchten, müssen Sie die Operation manuell über Ihr [OVHcloud Kundencenter](/links/manager) durchführen.
 
 ### Schritt 4 - Konfiguration Ihrer Domain überprüfen und/oder ändern <a name="domain-configuration"></a>
 
@@ -150,13 +150,13 @@ Um die Verbindung zwischen Ihrem Domainnamen und Ihrem OVHcloud E-Mail-Angebot z
 
 ### Schritt 5 - Weitere Optionen für Webhostings <a name="other-options"></a>
 
-Abhängig von Ihrem [Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) sind zusätzliche Optionen / Angebote / Funktionen kostenlos verfügbar.
+Abhängig von Ihrem [Webhosting Angebot](/links/web/hosting) sind zusätzliche Optionen / Angebote / Funktionen kostenlos verfügbar.
 
 #### SSL Zertifikate
 
 Mit SSL Zertifikaten wird Ihre Website über HTTPS erreichbar gemacht. Dieses Protokoll verschlüsselt die Kommunikation zwischen Ihrem Webhosting und den Personen, die Ihre Website besuchen.
 
-Sie können ein kostenloses SSL-Zertifikat von **Let's Encrypt** für jedes [Webhosting](https://www.ovhcloud.com/de/web-hosting/) aktivieren.
+Sie können ein kostenloses SSL-Zertifikat von **Let's Encrypt** für jedes [Webhosting](/links/web/hosting) aktivieren.
 
 Weitere Informationen zu den SSL-Zertifikaten (kostenlos oder kostenpflichtig), die auf Webhostings angeboten werden, finden Sie in unserer Anleitung „[SSL-Zertifikate auf Webhostings](/pages/web_cloud/web_hosting/ssl_on_webhosting)“.
 
@@ -180,13 +180,13 @@ Weitere Informationen zu unseren verschiedenen CDN Angeboten finden Sie in unser
 
 #### Die Web Cloud Databases Datenbankserver
 
-Wenn Sie über ein Webhosting **Performance** verfügen, können Sie kostenlos einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Datenbankserver aktivieren.
+Wenn Sie über ein Webhosting **Performance** verfügen, können Sie kostenlos einen [Web Cloud Databases](/links/web/databases) Datenbankserver aktivieren.
 
 Weitere Informationen zur Verwendung finden Sie in unserer Dokumentation „[Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)“.
 
 #### E-Mails von Ihrer Website aus versenden
 
-Alle unsere [Webhosting](https://www.ovhcloud.com/de/web-hosting/) ermöglichen den kostenlosen Versand von E-Mails von Ihrer Website oder einem bestimmten Skript aus.
+Alle unsere [Webhosting](/links/web/hosting) ermöglichen den kostenlosen Versand von E-Mails von Ihrer Website oder einem bestimmten Skript aus.
 
 Weitere Informationen zu dieser Funktion finden Sie in unserer Anleitung „[Automatische E-Mails eines Webhostings verwalten](/pages/web_cloud/web_hosting/mail_function_script_records)“.
 
@@ -194,7 +194,7 @@ Weitere Informationen zu dieser Funktion finden Sie in unserer Anleitung „[Aut
 
 Mit den CRON Tasks können Sie automatisch Skripte ausführen, die auf Ihrem Webhosting gehostet werden.
 
-Wenn Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/) über diese Option verfügt, lesen Sie unsere Anleitung „[Automatische Tasks mit einem Webhosting verwendenn](/pages/web_cloud/web_hosting/cron_tasks)“ für weitere Informationen.
+Wenn Ihr [Webhosting](/links/web/hosting) über diese Option verfügt, lesen Sie unsere Anleitung „[Automatische Tasks mit einem Webhosting verwendenn](/pages/web_cloud/web_hosting/cron_tasks)“ für weitere Informationen.
 
 ## Weiterführende Informationen
 
@@ -208,8 +208,8 @@ Wenn Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/) über diese Opti
 
 [SSL-Zertifikate auf Webhostings](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

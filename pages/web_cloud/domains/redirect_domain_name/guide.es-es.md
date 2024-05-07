@@ -16,8 +16,8 @@ La redirección de un dominio consiste en redirigir el dominio hacia un nuevo de
 
 ## Requisitos
 
-- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/)
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Disponer de un [dominio](/links/web/domains)
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
 - Estar conectado al alojamiento web (para una redirección a través de un archivo [.htaccess](#htaccess_rewrite)).
 
 ## Procedimiento
@@ -33,21 +33,21 @@ Esta funcionalidad permite redirigir un dominio/subdominio hacia:
 
 Existen diversas formas de realizar estas acciones:
 
-- **Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)**) donde hay un asistente de configuración que le permite configurar su redirección.
+- **Desde el [área de cliente de OVHcloud](/links/manager)**) donde hay un asistente de configuración que le permite configurar su redirección.
 - **Mediante un método que requiere programación**. Usted mismo deberá crear la redirección en un fichero (normalmente un [.htaccess](#htaccess_rewrite)).
 
 > [!warning]
 >
 > La redirección puede afectar al posicionamiento de su sitio web. 
-> Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) en el posicionamiento, si es necesario.
+> Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](/links/partner) en el posicionamiento, si es necesario.
 >
-> Atención: una redirección creada desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) no permite redirigir una URL en `https://` a otro dominio o URL. 
+> Atención: una redirección creada desde el [área de cliente de OVHcloud](/links/manager) no permite redirigir una URL en `https://` a otro dominio o URL. 
 > Para crear este tipo de redirección, debe pasar obligatoriamente por [una reescritura de URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite) a través de un fichero ".htaccess", por ejemplo.
 >
 
 ### Redirigir un dominio desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda al apartado `Web Cloud`{.action}, seleccione el dominio que quiere redirigir en la sección `Dominios`{.action} y haga clic en la pestaña `Redirección`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, acceda al apartado `Web Cloud`{.action}, seleccione el dominio que quiere redirigir en la sección `Dominios`{.action} y haga clic en la pestaña `Redirección`{.action}.
 
 Se mostrará una tabla con las redirecciones activas para el dominio. Puede gestionar las redirecciones existentes utilizando el botón `...`{.action} situado a la derecha de cada línea.
 
@@ -55,7 +55,7 @@ Haga clic en el botón `Añadir una redirección`{.action}.
 
 ![Presentación del menú redirección](images/add-a-redirection.png){.thumbnail}
 
-Hay tres opciones de redirección disponibles en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), cada una de las cuales se compone de **5 etapas** sucesivas. 
+Hay tres opciones de redirección disponibles en el [área de cliente de OVHcloud](/links/manager), cada una de las cuales se compone de **5 etapas** sucesivas. 
 
 > La pestaña `Redirección`{.action} presenta una cuarta opción que permite hacer que su dominio apunte rápidamente a los registros DNS A, AAAA y CNAME.<br>
 > Debido a que no se trata de una "redirección", esta opción no se explicará en esta guía.
@@ -287,13 +287,13 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta parte de la guía para acompañarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). No podremos asistirle en las siguientes etapas. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición esta parte de la guía para acompañarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner). No podremos asistirle en las siguientes etapas. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 Los archivos ".htaccess" son archivos de configuración en los que se pueden especificar comandos. Al ejecutar el código de su sitio web por el servidor web (Apache), los comandos se interpretarán y ejecutarán de esta forma.<br>
 Entre estos comandos, es posible crear redirecciones.
 
-Manipular un archivo ".htaccess" puede inhabilitar el acceso al sitio web. En caso de duda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) .
+Manipular un archivo ".htaccess" puede inhabilitar el acceso al sitio web. En caso de duda, contacte con un [proveedor especializado](/links/partner) .
 
 Para más información, consulte nuestra guía ".htaccess" en la sección ["Más información"](#go-further) de esta guía.
 
@@ -392,8 +392,8 @@ Esta variable se puede utilizar cuando mueve temporalmente archivos a otro sitio
 
 [Cómo editar mi zona DNS ?](/pages/web_cloud/domains/dns_zone_edit)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

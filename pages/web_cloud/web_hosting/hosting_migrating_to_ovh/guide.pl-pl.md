@@ -16,7 +16,7 @@ Niniejszy przewodnik prezentuje działania, które należy przeprowadzić, aby p
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
 >
 
 ## Wymagania początkowe
@@ -25,7 +25,7 @@ Niniejszy przewodnik prezentuje działania, które należy przeprowadzić, aby p
 - Dostęp do strefy DNS (Domain Name System) domeny
 - Dostęp do plików i bazy danych na Twojej stronie WWW u Twojego aktualnego dostawcy.
 - Posiadanie danych dostępowych (użytkownika, hasła, serwera) dla aktualnych adresów e-mail
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -58,25 +58,25 @@ W przypadku wystąpienia takiej przerwy przewodnik ten jest tak skonstruowany, a
 
 Kilka ofert hostingu OVHcloud zawiera ofertę e-mail "MX Plan". Ta oferta e-mail pozwala na tworzenie kont e-mail z przestrzenią dyskową do 5 GB dla każdego konta. Wybierz spośród poniższych pakietów hostingowych w zależności od wersji PHP, wersji SQL, liczby kont e-mail, których potrzebujesz oraz rozmiaru Twojej strony, którą chcesz przenieść:
 
-- Hosting [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) z **10 adresów e-mail** "MX Plan"
-- Hosting [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) z **100 adresów e-mail** "MX Plan"
-- Hosting [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) z **1000 adresów e-mail** "MX Plan". Oferta jest podzielona na 4 "podoferty".
-- Hosting [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/) z **200 adresów e-mail** "MX Plan". Ta oferta jest używana przez programistów aplikacji.
+- Hosting [Perso](/links/web/hosting-personal-offer) z **10 adresów e-mail** "MX Plan"
+- Hosting [Pro](/links/web/hosting-professional-offer) z **100 adresów e-mail** "MX Plan"
+- Hosting [Performance](/links/web/hosting-performance-offer) z **1000 adresów e-mail** "MX Plan". Oferta jest podzielona na 4 "podoferty".
+- Hosting [Cloud Web](/links/web/hosting-cloud-web-offer) z **200 adresów e-mail** "MX Plan". Ta oferta jest używana przez programistów aplikacji.
 
 Po wybraniu oferty hostingu, jeśli nie jesteś jeszcze klientem OVHcloud, kliknij przycisk `Zamów`{.action} na powyższych stronach handlowych. Postępuj zgodnie z kolejnymi poleceniami **bez konieczności przenoszenia domeny*.
 
-Zamówienie można złożyć w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Po zalogowaniu kliknij pozycję `Web Cloud`{.action}, następnie kliknij przycisk `Zamów`{.action} w lewym górnym rogu, a następnie kliknij `Hosting`{.action}. Przejdź przez kolejne etapy zamówienia **bez konieczności transferu domeny**.
+Zamówienie można złożyć w [Panelu klienta OVHcloud](/links/manager). Po zalogowaniu kliknij pozycję `Web Cloud`{.action}, następnie kliknij przycisk `Zamów`{.action} w lewym górnym rogu, a następnie kliknij `Hosting`{.action}. Przejdź przez kolejne etapy zamówienia **bez konieczności transferu domeny**.
 
 Po zatwierdzeniu płatności rozpocznie się instalacja hostingu. Na adres e-mail do kontaktu zostanie wysłana wiadomość. Identyfikatory dostępu do przestrzeni dyskowej FTP (File Transfert Protocol) Twojego hostingu WWW.
 
 > [!primary]
 >
-> OVHcloud poza ofertą "MX Plan" proponuje również inne usługi e-mail. Możesz na przykład połączyć konta e-mail "MX Plan" z adresami ["Email-Pro"](https://www.ovhcloud.com/pl/emails/email-pro/) i/lub kontami ["Exchange"](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
+> OVHcloud poza ofertą "MX Plan" proponuje również inne usługi e-mail. Możesz na przykład połączyć konta e-mail "MX Plan" z adresami ["Email-Pro"](/links/web/email-pro) i/lub kontami ["Exchange"](/links/web/emails-hosted-exchange).
 >
 
 ### Etap 2: utworzyć i wstępnie skonfigurować strefę DNS dla Twojej domeny w OVHcloud <a name="step2"></a>
 
-Po utworzeniu hostingu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie utwórz strefę DNS dla Twojej domeny **bez wpisywania jej na listę "www"**. Zapoznaj się z naszym przewodnikiem [dotyczącym tworzenia strefy DNS w OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+Po utworzeniu hostingu zaloguj się do [Panelu klienta OVHcloud](/links/manager), następnie utwórz strefę DNS dla Twojej domeny **bez wpisywania jej na listę "www"**. Zapoznaj się z naszym przewodnikiem [dotyczącym tworzenia strefy DNS w OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Po utworzeniu strefy DNS zaloguj się do jej zarządzania, korzystając z naszego przewodnika "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)". Jeśli nie są obecne, wprowadź następujące wpisy:
 
@@ -186,7 +186,7 @@ Zalecamy nie używać `Typ serwera`{.action} **POP** w części `Konto źródło
 
 W części `Konto docelowe`{.action} wprowadź tylko adres e-mail OVHcloud i przypisane do niego hasło. Pozostawiając `Typ serwera`{.action} w `Hosted by OVH (Autodetect)`{.action}.
 
-Po zakończeniu migracji zaloguj się na Twój adres e-mail OVHcloud przy użyciu [webmail OVHcloud](https://www.ovhcloud.com/pl/mail/), aby sprawdzić, czy wszystkie Twoje e-maile są obecne w nowym koncie.
+Po zakończeniu migracji zaloguj się na Twój adres e-mail OVHcloud przy użyciu [webmail OVHcloud](/links/web/email), aby sprawdzić, czy wszystkie Twoje e-maile są obecne w nowym koncie.
 
 Powtórz operację dla wszystkich Twoich kont e-mail.
 
@@ -247,8 +247,8 @@ Po zakończeniu transferu danych i usług zrezygnuj ze starych usług u poprzedn
 
 [Zarządzanie bazą danych na hostingu](/pages/web_cloud/web_hosting/sql_create_database).
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

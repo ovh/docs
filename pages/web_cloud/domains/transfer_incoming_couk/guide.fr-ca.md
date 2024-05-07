@@ -23,7 +23,7 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Prérequis
@@ -72,9 +72,9 @@ Une fois que vous aurez modifié le TAG, le propriétaire du nom de domaine rece
 
 #### Étape 3 : Commande du transfert gratuit
 
-Une fois en possession de votre code d'autorisation, vous pouvez rechercher et initier la commande de transfert de votre nom de domaine sur le [site OVHcloud](https://www.ovhcloud.com/fr-ca/). La commande est similaire à celle de tout autre nom de domaine générique.
+Une fois en possession de votre code d'autorisation, vous pouvez rechercher et initier la commande de transfert de votre nom de domaine sur le [site OVHcloud](/links/website). La commande est similaire à celle de tout autre nom de domaine générique.
 
-Votre domaine sera ensuite présent dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) sous quelques heures.
+Votre domaine sera ensuite présent dans votre [espace client OVHcloud](/links/manager) sous quelques heures.
 
 ### Informations utiles
 

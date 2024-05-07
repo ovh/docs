@@ -1,6 +1,6 @@
 ---
 title: Verwendung Ihres E-Mail-Accounts mit Roundcube Webmail
-updated: 2024-02-21
+updated: 2024-03-26
 ---
 
 > [!primary]
@@ -38,6 +38,7 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
     - [Kontakte](#contacts-settings)
     - [Spezialordner](#special-folder-settings)
     - [Servereinstellungen](#server-settings)
+    - [Verschlüsselung](#encryption)
 - [Identitäten und deren Signatur verwalten](#identity-signature)
     - [Attribute einer Identität einstellen](#identity)
     - [Signatur hinzufügen](#signature)
@@ -61,6 +62,11 @@ Gehen Sie auf die Seite <https://www.ovh.com/de/mail/>. Geben Sie eine E-Mail-Ad
 Sie werden dann zum Roundcube Interface weitergeleitet.
 
 ![Hosting](images/roundcube01.png){.thumbnail}
+
+> [!primary]
+> 
+> Beim ersten Anmelden unterscheidet sich das Roundcube Interface möglicherweise von dem in dieser Anleitung beschriebenen. Dies bedeutet, dass das "klassische" Aussehen auf Ihrem Interface eingestellt wurde. Um es zu ändern, folgen Sie dem Abschnitt "[Benutzeroberfläche](#user-interface-settings)" und wählen Sie die Ansicht "Larry" aus.
+> Das Erscheinungsbild der Benutzeroberfläche hat keinen Einfluss auf die Erläuterungen in dieser Dokumentation.
 
 > [!warning]
 > 
@@ -174,6 +180,8 @@ Die Option `Kurze Datumsanzeige` ermöglicht die Anzeige der Empfangs- und Verse
 
 Das Feld `Den nächsten Eintrag nach Löschen oder Verschieben anzeigen` bedeutet, dass nach Löschen oder Verschieben einer E-Mail das Element der unteren Zeile automatisch ausgewählt wird, unabhängig von der Reihenfolge der Sortierung. 
 
+Sie können das Erscheinungsbild Ihrer Benutzeroberfläche auswählen. Sie können zwischen der Ansicht **Classic** und der Ansicht **Larry** wählen.
+
 #### Postfachansicht <a name="mail-view-settings"></a>
 
 Definieren Sie hier die bevorzugte Art, um E-Mails anzuzeigen und zu bearbeiten. Die Option `Layout` erlaubt es, die 3 im Abschnitt [Roundcube Interface Hauptseite](#topwindow) beschriebenen Fenster neu anzuordnen.
@@ -198,7 +206,10 @@ Personalisieren Sie hier die Anordnung der Informationen in Ihrem Adressbuch.
 Roundcube verfügt über 4 Spezialordner: `Entwürfe`, `Gesendet`, `Spam`, `Gelöscht`.
 
 Wir raten dazu, diese nicht zu ändern, aber Sie können über die Drop-down-Menüs die Eigenschaften der Spezialordner neu erstellten Ordnern zuweisen.<br>
-Zum Beispiel können Sie die Eigenschaft `Entwürfe` einem Ordner zuweisen, den Sie erstellt haben. Die dort gespeicherten E-Mails gelten dann als Entwürfe bis sie tatsächlich versendet werden.
+
+Sie können beispielsweise die Eigenschaft `Entwürfe` einem anderen Ordner zuweisen, den Sie erstellt haben, indem Sie auf die Dropdownliste klicken und diesen Ordner auswählen. Wenn kein Ordner zugewiesen ist, wird er automatisch auf die Option "Drafts" gesetzt. Die dort gespeicherten E-Mails gelten dann als Entwürfe bis sie tatsächlich versendet werden.
+
+> Beispiel: Sie erstellen einen Unterordner "Entwürfe von Kunden-E-Mails". Gehen Sie dann zu `Einstellungen`{.action}, `Spezialordner`{.action} und wählen die Option `Entwürfe`. Wählen Sie im Drop-down-Menü den Ordner "Entwürfe von Kunden-E-Mails" aus, um "Drafts" zu ersetzen. In diesem Ordner liegende E-Mails werden als Entwürfe behandelt.
 
 #### Servereinstellungen <a name="server-settings"></a>
 
@@ -207,6 +218,17 @@ In diesem Tab können Sie den Speicherplatz auf einem E-Mail-Account optimieren.
 > [!warning]
 > 
 > Es ist nicht ratsam, die Option `Nachrichten in Spam direkt löschen` zu aktivieren, um zu verhindern, dass "False Positives" (fälschlicherweise als "SPAM" erkannte E-Mails) für den Empfangsserver als SPAM deklariert werden. Wenn diese Nachrichten zunächst im Ordner "Spam" abgelegt werden, kann noch überprüft werden, ob sich legitime E-Mails darunter befinden.
+
+#### Verschlüsselung <a name="encryption"></a>
+
+Wenn Ihr Browser dies zulässt, können Sie die Erweiterung "Mailvelope" installieren und aktivieren. Hierbei handelt es sich um eine Browsererweiterung, die PGP (**P**retty **G**ood **P**rivacy) in Ihre webbasierten E-Mails integriert. Das PGP-Verschlüsselungssystem und somit die Erweiterung "Mailvelope" ermöglichen:
+
+- Verschlüsseln und Entschlüsseln von E-Mails in Ihrem Browser
+- Inhalt Ihrer E-Mails gegenüber Ihrem E-Mail-Anbieter verbergen
+
+So sind Sie allein in der Lage, Ihre E-Mails zu lesen. Diese Endung ist eine Möglichkeit, Ihr Webmail abzusichern, wenn Sie vertrauliche E-Mails erhalten.
+
+Weitere Informationen finden Sie in den FAQ zu "Mailvelope" unter <https://mailvelope.com/faq>.
 
 ### Identitäten und deren Signatur verwalten <a name="identity-signature"></a>
 

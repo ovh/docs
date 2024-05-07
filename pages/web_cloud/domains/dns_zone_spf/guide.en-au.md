@@ -38,21 +38,21 @@ You should therefore ensure that you enter the sending sources you use to send e
 
 ## Requirements
 
-- You have access to manage the domain name from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+- You have access to manage the domain name from your [OVHcloud Control Panel](/links/manager).
 - The domain name concerned must use the OVHcloud configuration (i.e. the OVHcloud DNS servers).
 
 > [!warning]
 >
 > If your domain name does not use OVHcloud DNS servers, you will need to modify the SPF record using the interface of the service provider managing your domain name's DNS.
 >
-> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Click on the `DNS servers`{.action} tab of your domain name.
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](/links/manager). Click on the `DNS servers`{.action} tab of your domain name.
 >
 
 ## Instructions
 
 ### Checking your current SPF configuration
 
-If your domain uses OVHcloud DNS servers, you can check if an SPF record is already configured for it. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domain names`{.action} section, select the domain name concerned. Click on the `DNS zone`{.action} tab.
+If your domain uses OVHcloud DNS servers, you can check if an SPF record is already configured for it. Log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domain names`{.action} section, select the domain name concerned. Click on the `DNS zone`{.action} tab.
 
 The table on this page displays your domain name's DNS zone at OVHcloud. Each DNS record is represented by one line in the table.
 
@@ -78,7 +78,7 @@ To find the row for the OVHcloud SPF record, a display filter can be applied to 
 
 ### Configuring a new SPF record
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domain names`{.action} section, select the domain name concerned. Click on the `DNS zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domain names`{.action} section, select the domain name concerned. Click on the `DNS zone`{.action} tab.
 
 To add an SPF record, click on `Add an entry`{.action} in the right-hand menu.
 
@@ -86,7 +86,7 @@ To add an SPF record, click on `Add an entry`{.action} in the right-hand menu.
 
 In the window that pops up, the configuration assistant offers several different types of DNS records. There are two ways of adding an SPF record:
 
-- [Add an OVHcloud SPF record](#spfrecordovhcloud) **and use the OVHcloud configuration**: For users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](https://www.ovhcloud.com/en-au/emails/hosted-exchange/){.external}).
+- [Add an OVHcloud SPF record](#spfrecordovhcloud) **and use the OVHcloud configuration**: For users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](/links/web/emails-hosted-exchange){.external}).
 - [Add an SPF record](#spfrecord): For users who do not have the entire record. For example, you only have an IP address or the host name of the email server.
 - [Add a TXT record](#txtrecord): For users who are experienced or already have the full record. For example, your email solution provider will send you the value.
 
@@ -98,8 +98,8 @@ In the window that pops up, the configuration assistant offers several different
 
 You have chosen the `SPF`{.action} record and would like to apply the OVHcloud configuration. This means that all of the OVHcloud outgoing email servers are included for the following email offers:
 
-- MX Plan standalone or included in an OVHcloud [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external}
-- [Hosted Exchange](https://www.ovhcloud.com/en-au/emails/hosted-exchange/)
+- MX Plan standalone or included in an OVHcloud [web hosting plan](/links/web/hosting){.external}
+- [Hosted Exchange](/links/web/emails-hosted-exchange)
 
 Choose the `SPF`{.action} type record and then click on the button `Use the SPF for OVHcloud web hosting`{.action}. In the following step, click on `Confirm`{.action} to approve the action.
 
@@ -165,7 +165,7 @@ Click on `Next`{.action} and verify that the SPF you have entered is correct by 
 
 ### Modifying an SPF record <a name="modifyspf"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domain names`{.action} section, select the domain name concerned. Click on the `DNS zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domain names`{.action} section, select the domain name concerned. Click on the `DNS zone`{.action} tab.
 
 The table on this page displays your domain name's DNS zone at OVHcloud. Each DNS record is represented by a line in the table. Locate your TXT or SPF record in this table and click on the `...`{.action} button to edit the entry.
 
@@ -175,8 +175,8 @@ Refer to the [guide section above](#addspfrecord) if you need more information a
 
 The general OVHcloud SPF configuration applies to the solutions below:
 
-- MX Plan standalone or included in an OVHcloud [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
-- [Hosted Exchange](https://www.ovhcloud.com/en-au/emails/hosted-exchange/)
+- MX Plan standalone or included in an OVHcloud [web hosting plan](/links/web/hosting)
+- [Hosted Exchange](/links/web/emails-hosted-exchange)
 
 The configuration is as follows:
 

@@ -1,7 +1,7 @@
 ---
 title: "Cómo cambiar el propietario de un nombre de dominio"
 excerpt: "En esta guía, encontrará diversas informaciones en relación con el cambio de propietario del nombre de un dominio."
-updated: 2024-01-26
+updated: 2024-03-07
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Además de [gestionar los contactos](/pages/account_and_service_management/accou
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 - Tener un nombre de dominio registrado en OVHcloud y para el que no se está realizando ninguna operación (cambio de propietario, transferencia, creación). Si una operación ha finalizado recientemente en su dominio, es necesario un plazo mínimo de 60 días naturales antes de realizar una nueva operación.
 - Ser el [contacto administrador](/pages/account_and_service_management/account_information/managing_contacts) del nombre de dominio en cuestión.
 - Contar con el consentimiento del propietario actual del nombre de dominio para realizar el cambio de propietario.
@@ -44,13 +44,13 @@ Además de [gestionar los contactos](/pages/account_and_service_management/accou
 Si tiene alguna duda, le recomendamos que consulte los siguientes recursos:
 >
 > - el sitio web del registro **TLD** correspondiente;
-> - la [lista de TLD disponibles en OVHcloud](https://www.ovhcloud.com/es/domains/tld/);
-> - la sección `Operaciones en curso`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para comprobar las actualizaciones del estado del dominio.
+> - la [lista de TLD disponibles en OVHcloud](/links/web/domains-tld);
+> - actualizaciones de estado del dominio. Para comprobarlo, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}  de la columna izquierda de la página web de OVHcloud. En la columna de la izquierda, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 >
 
 ### 1. seleccionar el dominio
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio genérico (gTLD) del que quiera cambiar el propietario.
+Conéctese al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio genérico (gTLD) del que quiera cambiar el propietario.
 
 ### 2. iniciar el procedimiento de cambio de propietario
 
@@ -91,7 +91,7 @@ Si la dirección de correo electrónico no se modifica como parte del cambio de 
 
 ### Actualización de la información del propietario <a name="updateownerinformation"></a>
 
-Si tiene que actualizar algunos datos secundarios como el número de teléfono, la dirección, etc., no necesita iniciar un procedimiento comercial. Estos datos pueden modificarse directamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Si tiene que actualizar algunos datos secundarios como el número de teléfono, la dirección, etc., no necesita iniciar un procedimiento comercial. Estos datos pueden modificarse directamente desde el [área de cliente de OVHcloud](/links/manager).
 
 En la sección **Suscripción** de la pestaña `Información general`{.action}, haga clic en `...`{.action} delante de **Contactos** y seleccione `Actualizar la información del propietario`{.action}.
 
@@ -103,8 +103,8 @@ No es necesario confirmar los cambios por correo electrónico.
 
 [Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

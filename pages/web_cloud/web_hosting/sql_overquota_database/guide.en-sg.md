@@ -18,8 +18,8 @@ This tutorial will show you the actions you can take when your OVHcloud shared d
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) with an associated OVHcloud shared database
+- Access to the [OVHcloud Control Panel](/links/manager)
+- An [OVHcloud web hosting plan](/links/web/hosting) with an associated OVHcloud shared database
   
 ## Instructions
 
@@ -27,7 +27,7 @@ This tutorial will show you the actions you can take when your OVHcloud shared d
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 > 
-> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 When your OVHcloud shared database reaches a certain saturation level (**overquota**), our robots will send a notification to the email address of the database’s [administrator contact](/pages/account_and_service_management/account_information/managing_contacts). 
@@ -54,7 +54,7 @@ The first step is to identify the large table or tables in your database.
 
 Retrieve your database access data directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} , then choose the web hosting plan associated to your OVHcloud shared database. Go to the `Databases`{.action} tab.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} , then choose the web hosting plan associated to your OVHcloud shared database. Go to the `Databases`{.action} tab.
 
 A table listing your databases will appear at the bottom of the screen.
 
@@ -74,7 +74,7 @@ Enter the login information for your database, then click `Login`{.action}.
 >
 > From here on, your actions affect the content of your database. The changes you make in **phpMyAdmin** can have irreversible consequences if they are not carried out correctly.
 >
-> Be sure about each command you execute on the database. If you experience any difficulties, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/). OVHcloud cannot assist you with the content of your database.
+> Be sure about each command you execute on the database. If you experience any difficulties, we recommend contacting a [specialist provider](/links/partner). OVHcloud cannot assist you with the content of your database.
 >
 
 Once connected, the following page is displayed:
@@ -125,13 +125,13 @@ You will need to upgrade your database service to one that includes more space f
 > To increase the size allocated to your database, you will need to create a new, larger database, and copy the contents of the old database into the new one. You cannot directly increase the size of a database linked to a web hosting plan.
 >
 
-Consult our [Web Cloud Databasess](https://www.ovhcloud.com/en-sg/web-cloud/databases/) offer to choose your new database service. 
+Consult our [Web Cloud Databasess](/links/web/databases) offer to choose your new database service. 
 
 We recommend this solution for large databases.
 
-You can duplicate the content of your OVHcloud database directly to another of your OVHcloud databases, using a feature in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). To do this, please refer to our guide "[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)".
+You can duplicate the content of your OVHcloud database directly to another of your OVHcloud databases, using a feature in your [OVHcloud Control Panel](/links/manager). To do this, please refer to our guide "[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)".
 
-If you are migrating to a database outside of the [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) and [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) solutions, you can manually move the content from your old database to a new one using our guides:
+If you are migrating to a database outside of the [Start SQL](/links/web/hosting-options-startsql) and [Web Cloud Databases](/links/web/databases) solutions, you can manually move the content from your old database to a new one using our guides:
 
 - [Export your existing database](/pages/web_cloud/web_hosting/sql_database_export)
 - [First steps with Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -149,7 +149,7 @@ Before you do the following, check if the data in the large table corresponds to
 
 > [!alert]
 >
-> The rest of this tutorial will show you how to delete data stored in your database. Be sure of the actions you need to take or contact a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) if in doubt.
+> The rest of this tutorial will show you how to delete data stored in your database. Be sure of the actions you need to take or contact a [specialist provider](/links/partner) if in doubt.
 >
 
 OVHcloud shared databases have several SQL commands to influence their content.
@@ -200,8 +200,8 @@ DROP TABLE `table_1`
 
 [Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

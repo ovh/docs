@@ -6,25 +6,25 @@ updated: 2024-01-29
 
 ## Objective
 
-This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared Web Hosting servers](https://www.ovhcloud.com/en-gb/web-hosting/).
+This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared Web Hosting servers](/links/web/hosting).
 
 The recommendations below are ordered by decreasing importance and increasing technical difficulty, which means that the first steps are the most essential. The security of your site will be measured by the element least protected. We therefore recommend carrying out all of the actions described in this guide. 
 
-However, if you experience any difficulties carrying out some of them, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](https://partner.ovhcloud.com/en-gb/directory/).
+However, if you experience any difficulties carrying out some of them, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](/links/partner).
 
 **This guide explains how to improve the security your website.**
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
 - The [login details](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
 ## Instructions
@@ -99,7 +99,7 @@ Add a security plugin recommended by the CMS publisher to your website:
 
 ### Step 10 - Check if your hosting contains malware
 
-In this step, you will need to log in to your [FTP space](/pages/web_cloud/web_hosting/ftp_connection). It involves technical skills to recognise possible malicious files on your web hosting. If you experience any difficulties with this verification, please do not hesitate to contact our [partners](https://partner.ovhcloud.com/en-gb/directory/).
+In this step, you will need to log in to your [FTP space](/pages/web_cloud/web_hosting/ftp_connection). It involves technical skills to recognise possible malicious files on your web hosting. If you experience any difficulties with this verification, please do not hesitate to contact our [partners](/links/partner).
 
 If you have any doubts regarding the safety of data hosted on your FTP storage, please also carry out the checks in [step 1](#local) once again and [change the password](/pages/web_cloud/web_hosting/ftp_change_password) for your FTP space.
 
@@ -127,6 +127,6 @@ The .htaccess file is an Apache configuration (HTTP) file that is run by your We
 
 [Responding when your hosting is deactivated for security purposes](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

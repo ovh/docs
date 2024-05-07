@@ -21,11 +21,11 @@ Le softphone est une application ou un logiciel qui vous permet d'enregistrer vo
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 > [!primary]
-> Une ligne SIP **fournie avec un téléphone OVHcloud** ne peut pas être enregistrée sur un softphone. Si c'est le cas de votre ligne et que vous souhaitez utiliser un softphone, nous vous invitons à [commander une ligne SIP supplémentaire](https://www.ovhtelecom.fr/telephonie/voip/), fournie sans téléphone OVHcloud.
+> Une ligne SIP **fournie avec un téléphone OVHcloud** ne peut pas être enregistrée sur un softphone. Si c'est le cas de votre ligne et que vous souhaitez utiliser un softphone, nous vous invitons à [commander une ligne SIP supplémentaire](/links/telecom/telephonie-voip), fournie sans téléphone OVHcloud.
 >
 
 ## En pratique
@@ -46,7 +46,7 @@ Vous devez **impérativement** disposer des trois informations suivantes afin de
 
 #### Login et Domain
 
-Afin de retrouver votre **Login** et votre **Domain**, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}. Cliquez sur `Téléphonie`{.action} puis sur votre groupe de téléphonie et enfin sur votre ligne SIP.
+Afin de retrouver votre **Login** et votre **Domain**, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}. Cliquez sur `Téléphonie`{.action} puis sur votre groupe de téléphonie et enfin sur votre ligne SIP.
 
 Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
 

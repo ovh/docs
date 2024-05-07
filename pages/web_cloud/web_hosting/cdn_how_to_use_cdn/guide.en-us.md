@@ -1,7 +1,7 @@
 ---
 title: "Speeding up your website with CDN"
 excerpt: "Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN"
-updated: 2023-11-21
+updated: 2024-03-12
 ---
 
 ## Objective
@@ -20,8 +20,8 @@ In order for this to work, each server stores a part of your website in its cach
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
+- Access to the [OVHcloud Control Panel](/links/manager)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
 
 ## Instructions
 
@@ -33,7 +33,7 @@ In order for this to work, each server stores a part of your website in its cach
 
 #### If the CDN option is not ordered or enabled on your Web Hosting plan
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of "CDN option", then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of "CDN option", then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
 
 > [!primary]
 >
@@ -45,7 +45,7 @@ You will be redirected to a page where you can generate a purchase order. Once t
 
 #### If the CDN option is already enabled on your Web Hosting plan
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
 
 Select the "Activate the CDN" option, click `Next`{.action} and then `Confirm`{.action}.
 
@@ -53,19 +53,16 @@ Select the "Activate the CDN" option, click `Next`{.action} and then `Confirm`{.
 
 > [!warning]
 >
-> If  an external (not registered with OVHcloud) domain name has been added to the Web Hosting as Multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.<br>
+> If  an external (not registered with OVHcloud) domain name has been added to the Web Hosting as Multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.
+>
 > Check the [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) to find the specific IP address for your cluster’s CDN.
 
-**Why is it not possible to use a geolocated IP with the CDN option?** <br>
-<br>
+**Why is it not possible to use a geolocated IP with the CDN option?**
+
 The CDN uses the principle of "IP Anycast". You do not request the same server depending on your geolocation, which is very efficient for reducing the loading time of your static files. Therefore, a geolocated IP address is not needed.<br>
 In terms of SEO (search engine optimisation), the website loading speed is more important that the geolocation of the IP addresses.
 
-### Managing your Shared CDN 
-
-> [!primary]
->
-> The Shared CDN option is already included in all "Performance" Web Hosting plans, and has been available to order since 11/19/20. For older versions, please refer to the section [Managing your Business CDN](#cdnbusiness).
+### Managing your Shared CDN
 
 #### Clearing the Shared CDN cache
 
@@ -81,7 +78,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 > [!warning]
 >
-> Some options are locked on the Basic solution and require you to sign up to [CDN Security](https://www.ovhcloud.com/en/web-hosting/options/cdn/) or [CDN Advanced](https://www.ovhcloud.com/en/web-hosting/options/cdn/).
+> Some options are locked on the Basic solution and require you to sign up to [CDN Security](/links/web/hosting-options-cdn) or [CDN Advanced](/links/web/hosting-options-cdn).
 
 ![CDN](images/sharedcdn-modify-cdn.png){.thumbnail}
 
@@ -125,15 +122,14 @@ Once you have configured your rules and chosen your options, click `Apply config
 
 > [!warning]
 >
-> To have a higher quota of rules and more settings available than creating cache rules, you can choose the [Advanced CDN option](https://www.ovhcloud.com/en/web-hosting/options/cdn/).
+> To have a higher quota of rules and more settings available than creating cache rules, you can choose the [Advanced CDN option](/links/web/hosting-options-cdn).
 
 #### Configuring CDN Security options
 
 Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then `Modify the CDN`{.action}. 
 
 > [!primary]
->
-> The options explained below require a subscription to [CDN Security](https://www.ovhcloud.com/en/web-hosting/options/cdn/) or [CDN Advanced](https://www.ovhcloud.com/en/web-hosting/options/cdn/).
+> The options explained below require a subscription to [CDN Security](/links/web/hosting-options-cdn) or [CDN Advanced](/links/web/hosting-options-cdn).
 
 - **Cross-Origin Resource Sharing (CORS)**: In the list, enter the external domain names that will be authorised to access your website’s resources for the purpose of sharing them.
 
@@ -181,18 +177,18 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 > [!primary]
 >
-> The options presented below require a subscription to [CDN Advanced](https://www.ovhcloud.com/en/web-hosting/options/cdn/).
+> The options presented below require a subscription to [CDN Advanced](/links/web/hosting-options-cdn).
 
 - **Geolocation HTTP Header**: Determine the country of the visitor to customise the proposed experience. The country code is automatically added in the header of each request to be handled by your original server. The identification elements in the header are called `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
 
 - **Prefetch**: Anticipate the next resource being loaded. Preload it automatically in the CDN cache using your website’s *header link*. This mechanism is mainly used to load CSS, JavaScript, images, favicons or web fonts that are required by the website theme.
 
-	In the example below, when the current page is displaying 'Hello', a subquery triggers the preloading of the resource `/cache/style.css`.
+	In the example below, when the current page is displaying 'Hi', a subquery triggers the preloading of the resource `/cache/style.css`.
 
 	```
 	<?php
 	header("Link: </cache/style.css>; rel=prefetch");
-	print 'Hello'
+	print 'Hi'
 	?>
 	```
 
@@ -255,20 +251,6 @@ In the `Multisite`{.action} tab of your hosting, under the table, you can view t
 
 ![CDN](images/statistics.png){.thumbnail}
 
-### Managing your CDN Business <a name="cdnbusiness"></a>
-
-> [!primary]
->
-> The CDN option is already included in the "Performance" Web Hosting plans or plans ordered before November 19th, 2020.
-
-#### Clearing the CDN cache
-
-It is sometimes useful to clear the CDN cache, particularly when you modify static files - for example, when launching a new version of your site. In this case, you can completely clear the CDN cache.
-
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of "CDN option", then on `Clear cache`{.action}.
-
-![CDN](images/clear-cache.png){.thumbnail}
-
 ### How do I cache my files in the CDN?
 
 **Using a CMS**
@@ -294,6 +276,7 @@ If you are not using a CMS, you can also use the CDN cache. To do this, you must
 > [!warning]
 >
 > Caching by using HTTP headers results in caching within the CDN but also within your users’ browsers. Therefore, to prevent your visitors from seeing an older cached version, it is recommended that you rename the files with every new version.
+>
 
 ### Disabling the CDN option for a website
 
@@ -302,7 +285,7 @@ This action allows you to deactivate the CDN for one or more of your Multisite e
 > [!warning]
 >
 > Disabling the CDN option for a website requires changing the IP address to use to redirect your domain name to your web hosting plan.
-> This change is done automatically if your domain name’s active DNS zone is also managed from the [OVHcloud account](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) containing your web hosting plan.
+> This change is done automatically if your domain name’s active DNS zone is also managed from the [OVHcloud account](/links/manager) containing your web hosting plan.
 >
 > Otherwise, you will need to do two things:
 >
@@ -312,7 +295,7 @@ This action allows you to deactivate the CDN for one or more of your Multisite e
 > Modifying an entry in a domain name’s active DNS zone will take between **4** and **24** hours to propagate fully. By the time this propagation finishes, a page containing the code **520** may appear randomly. This phenomenon is linked to the fact that some parts of the DNS network still redirect requests to the CDN IP address linked to your web hosting plan.
 >
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant the Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant the Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
 
 Untick "Activate the CDN", click `Next`{.action} and then `Confirm`{.action}.
 
@@ -322,7 +305,7 @@ Untick "Activate the CDN", click `Next`{.action} and then `Confirm`{.action}.
 
 This action will remove the CDN option from your entire Web Hosting solution.
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant the Web Hosting plan. Click `...`{.action} to the right of "CDN option", then on `Cancel the CDN`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant the Web Hosting plan. Click `...`{.action} to the right of "CDN option", then on `Cancel the CDN`{.action}.
 
 ![CDN](images/resiliation.png){.thumbnail}
 
@@ -331,6 +314,7 @@ Click `Confirm`{.action} to continue with the cancellation.
 > [!warning]
 >
 > You will receive an email containing the CDN closure procedure. Please follow the instructions in the email in order to confirm or cancel the request.
+>
 
 ### Checking that your CDN is working
 
@@ -356,6 +340,7 @@ Accept-Ranges: bytes
 Transfer-Encoding: chunked
 X-IPLB-Instance: 12345
 ```
+
 The "*X-CDN*" headers confirm that the domain is running through the CDN.
 
 If the domain name is not running through the CDN, you will receive a result similar to the following:
@@ -375,8 +360,8 @@ The absence of the "*X-CDN*" header shows that you are not using a CDN.
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -16,13 +16,13 @@ Saiba como criar a primeira página de um site num alojamento gratuito 100M grá
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 >
 
 ## Requisitos
 
-- Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) ou um [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/)
+- Dispor de um [domínio](/links/web/domains)
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting) ou um [Alojamento gratuito 100M](/links/web/domains-free-hosting)
 - Ter um editor de texto (bloco de notas, TextEdit, Notepad++, etc.)
 - Ter instalado um cliente FTP (por exemplo, [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) para telecarregar (colocar no alojamento) os seus ficheiros no seu espaço dedicado.
 
@@ -177,7 +177,7 @@ Pode ver o resultado no seu browser: por predefinição, os elementos das listas
 
 #### Adicionar imagens para tornar a sua página mais atraente
 
-A web é, antes de mais, um meio visual. Vamos ver nesta secção como inserir imagens no seu conteúdo. A oferta alojamento gratuito 100M propõe-lhe um espaço de armazenamento de 100MB. É suficiente para as suas páginas HTML e CSS, mas pode ser limitado se deseja colocar muitas imagens no seu site. Neste caso, sugerimos que subscreva uma [oferta de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que lhe permita beneficiar de um maior armazenamento.
+A web é, antes de mais, um meio visual. Vamos ver nesta secção como inserir imagens no seu conteúdo. A oferta alojamento gratuito 100M propõe-lhe um espaço de armazenamento de 100MB. É suficiente para as suas páginas HTML e CSS, mas pode ser limitado se deseja colocar muitas imagens no seu site. Neste caso, sugerimos que subscreva uma [oferta de alojamento web da OVHcloud](/links/web/hosting) que lhe permita beneficiar de um maior armazenamento.
 
 O identificador HTML utilizado para apresentar uma imagem é o identificador `<img>`. Contrariamente às balizas que vimos anteriormente, não há abertura e encerramento deste elemento. Falamos de baliza autoferoz. São os atributos desta baliza que permitirão estabelecer a ligação entre a localização do ficheiro e o texto descritivo da imagem.
 
@@ -445,8 +445,8 @@ Encontrará também recursos online:
 - [Free Online Image Optimizer](https://kraken.io/web-interface)
 - [TinyJPG](https://tinyjpg.com/) e [TinyPNG](https://tinypng.com/).
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -16,14 +16,14 @@ L’accesso ai log e alle statistiche del sito Web è incluso nella soluzione di
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un piano di [hosting Web](/links/web/hosting){.external} attivo
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
 Per accedere ai diversi dati statistici e log dell’hosting Web, esegui queste operazioni: 
 
-1. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
 2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
@@ -62,7 +62,7 @@ Il campo `Period selection` in alto a destra ti permette di selezionare un perio
 >
 > Non saremo in grado di supportarti nell’interpretazione dei log del tuo hosting Web perché questa operazione riguarda esclusivamente lo sviluppo Web e non l’hosting Web.
 >
-> In caso di difficoltà o dubbi, contatta il tuo [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+> In caso di difficoltà o dubbi, contatta il tuo [provider specializzato](/links/partner).
 >
 
 Potrete visualizzare i log grezzi del vostro sito web con un ritardo di circa 5 minuti.
@@ -111,7 +111,7 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 
 Puoi anche recuperare il link di accesso alle statistiche / log direttamente dal tuo Spazio Cliente:
 
-1. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
 2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
@@ -130,8 +130,8 @@ Nella nuova pagina, recupera l’URL che trovi nella barra degli indirizzi del t
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

@@ -31,7 +31,7 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 ## Prerequisiti
 
 - Avere la gestione dei server e della [zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns) del dominio
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
@@ -46,7 +46,7 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 > Per questo motivo, ti consigliamo di attivare il [rinnovo automatico](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#procedura) su tutti gli abbonamenti OVHcloud.
 >
 
-Per verificare la validità dell'abbonamento relativo al tuo dominio, clicca sul tuo nome in alto a destra del tuo Spazio Cliente e poi su `Prodotti e servizi`{.action}.
+Per verificare la validità dell'abbonamento relativo al tuo dominio, clicca sul tuo nome in alto a destra del tuo [Spazio Cliente OVHcloud](/links/manager) e poi su `Prodotti e servizi`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
@@ -58,7 +58,7 @@ Una volta terminato il rinnovo dell'offerta, il tuo sito Web sarà disponibile e
 
 ### Step 2: verifica i server DNS
 
-Per verificare la validità dei tuoi [server DNS](/pages/web_cloud/domains/dns_server_general_information), clicca in tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) sui `Domini`{.action} e poi sul dominio del tuo sito.
+Per verificare la validità dei tuoi [server DNS](/pages/web_cloud/domains/dns_server_general_information), clicca in tuo [Spazio Cliente OVHcloud](/links/manager) sui `Domini`{.action} e poi sul dominio del tuo sito.
 
 #### Scenario 1: nessuna anomalia sui server DNS
 
@@ -88,7 +88,7 @@ Il tuo sito Web sarà disponibile entro 48 ore.
 
 > [!warning]
 >
-> In questo caso, contatta l'hosting provider della tua Zona DNS, il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) prima di effettuare qualsiasi operazione.
+> In questo caso, contatta l'hosting provider della tua Zona DNS, il tuo webmaster o i [partner OVHcloud](/links/partner) prima di effettuare qualsiasi operazione.
 >
 > È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
 >
@@ -117,7 +117,7 @@ In questo step, visualizzerai l'indirizzo IP del tuo hosting e lo aggiungerai al
 
 Se il tuo sito non è ospitato sull'infrastruttura OVHcloud o se è gestito da un altro provider, contatta il supporto interessati.
 
-Se il tuo sito è ospitato su una delle nostre [offerte Web Cloud](https://www.ovhcloud.com/it/web-hosting/), clicca sulla scheda `Hosting`{.action} e poi sull'offerta corrispondente.
+Se il tuo sito è ospitato su una delle nostre [offerte Web Cloud](/links/web/hosting), clicca sulla scheda `Hosting`{.action} e poi sull'offerta corrispondente.
 
 Nella scheda `Informazioni generali`{.action}, copia l'indirizzo IPV4 e/o IPV6 del tuo dominio.
 
@@ -137,8 +137,8 @@ Il tuo sito Web sarà disponibile entro 24 ore.
 
 [Risolvere gli errori più frequenti associati ai moduli in 1 click](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 
-Per prestazioni specializzate (referenziamento, sviluppo, etc ...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, etc ...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

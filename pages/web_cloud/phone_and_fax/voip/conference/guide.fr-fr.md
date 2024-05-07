@@ -18,8 +18,8 @@ Une interface spécifique vous propose également de suivre en temps réel les d
 
 ## Prérequis
 
-- Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -32,7 +32,7 @@ Une interface spécifique vous propose également de suivre en temps réel les d
 
 ### Étape 1 : accéder à la configuration du numéro
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.<br>
+Connectez-vous à votre [espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.<br>
 Cliquez sur `Téléphonie`{.action}, sélectionnez le groupe de téléphonie puis le numéro à configurer.<br>
 Dans l'onglet `Configuration`{.action}, cliquez sur `Conférence`{.action} puis sur `Paramétrer`{.action}.<br>
 L'application de la configuration prend quelques secondes.

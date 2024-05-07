@@ -12,8 +12,8 @@ La fonctionnalité Click2Call (ou « appel en un clic ») permet de mettre en re
 
 ## Prérequis
 
-- Disposer d’une ligne SIP possédant un [forfait compatible](https://www.ovhtelecom.fr/telephonie/services_inclus/){.external} avec la fonctionnalité Click2Call.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Disposer d’une ligne SIP possédant un [forfait compatible](/links/telecom/telephonie-services-inclus){.external} avec la fonctionnalité Click2Call.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -21,18 +21,18 @@ La fonctionnalité Click2Call (ou « appel en un clic ») permet de mettre en re
 
 ### Configurer la fonctionnalité Click2Call
 
-Vous avez la possibilité de configurer la fonctionnalité Click2Call depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} (manipulation simple) ou depuis les [API OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} (manipulation experte).
+Vous avez la possibilité de configurer la fonctionnalité Click2Call depuis votre [espace client OVHcloud](/links/manager){.external} (manipulation simple) ou depuis les [API OVHcloud](/links/manager){.external} (manipulation experte).
 
 > [!primary]
 >
-> Les communications lancées depuis la fonctionnalité Click2Call vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](https://www.ovhtelecom.fr/telephonie/voip/){.external} (voir la note en bas de page) et [les tarifs en vigueur](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml){.external}.
+> Les communications lancées depuis la fonctionnalité Click2Call vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/telephonie-voip){.external} (voir la note en bas de page) et [les tarifs en vigueur](/links/telecom/telephonie-decouvrez-tarifs-telephonie){.external}.
 >
-> Le Click2Call peut être utilisé conjointement avec d'[autres fonctionnalités disponibles](https://www.ovhtelecom.fr/telephonie/services_inclus/){.external} sur votre ligne SIP, telles que le [filtrage d'appel](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels){.external} (permettant par exemple d'empêcher tout appel vers des numéros commençant par « 08 »).
+> Le Click2Call peut être utilisé conjointement avec d'[autres fonctionnalités disponibles](/links/telecom/telephonie-services-inclus){.external} sur votre ligne SIP, telles que le [filtrage d'appel](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels){.external} (permettant par exemple d'empêcher tout appel vers des numéros commençant par « 08 »).
 > 
 
 #### Configurer le Click2Call depuis l'espace client
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Appel en 1 clic (Click2Call)`{.action}.
 
@@ -101,7 +101,7 @@ Muni d'un identifiant Click2Call et de son mot de passe, vous pouvez à présent
 
 #### Utiliser le Click2Call depuis le logiciel EasyClick2Call
 
-Le logiciel EasyClick2Call permet de passer des appels directement depuis un ordinateur. Pour cela, rendez-vous sur la page [EasyClick2Call](https://www.ovhtelecom.fr/telephonie/easyclick2call.xml){.external} puis téléchargez le logiciel selon le système d'exploitation de votre ordinateur. 
+Le logiciel EasyClick2Call permet de passer des appels directement depuis un ordinateur. Pour cela, rendez-vous sur la page [EasyClick2Call](/links/telecom/telephonie-easyclick2call){.external} puis téléchargez le logiciel selon le système d'exploitation de votre ordinateur. 
 
 Installez EasyClick2Call sur votre machine et ouvrez-le. Vous serez alors invité à renseigner les informations suivantes.
 

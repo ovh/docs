@@ -19,7 +19,7 @@ Le logiciel [Linphone](https://www.linphone.org/){.external} est un softphone (l
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}
+- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip){.external}
 - [Disposer des identifiants de votre ligne SIP OVHcloud](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone)
 - Avoir installé le logiciel [Linphone](https://www.linphone.org/){.external} sur un smartphone ou un ordinateur
 

@@ -1,8 +1,17 @@
 ---
 title: Configurer son compte Exchange sur Mail de macOS
 excerpt: Apprenez à configurer votre compte Exchange sur Mail de macOS El Capitan, Sierra et High Sierra
-updated: 2021-12-28
+updated: 2024-04-16
 ---
+
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
 
 ## Objectif
 
@@ -22,21 +31,47 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 - Disposer d’une adresse e-mail [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
 - Disposer du logiciel Mail installé sur votre Mac.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
- 
+
 ## En pratique
 
-### Ajouter le compte
+### Ajouter le compte <a name="addaccount"></a>
+
+> [!primary]
+>
+> Dans notre exemple, nous utilisons la mention serveur : ex**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
+>
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `Microsoft`{.action}.
+> Cliquez sur `Exchange`{.action}, puis sur la plateforme Exchange souhaitée. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+>
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche directement et vous invite à choisir votre type de compte.
 
 - **Si un compte a déjà été paramétré** : cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Comptes`{.action}.
 
-| | |
-|---|---|
-|![mailmac](images/mail-mac-exchange01.png){.thumbnail}|Sélectionnez `Exchange`{.action}|
-|Saisissez le **Nom** de votre compte e-mail et votre **Adresse e-mail**, puis cliquez sur `Se connecter`{.action}|![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
-|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|Dans la fenêtre suivante, cliquez sur `Configuration manuelle`{.action} : <br>- Définissez le **Nom** qui s'affichera dans l'interface de navigation <br>- Laissez votre **adresse e-mail**<br>- Laissez votre **Mot de passe** déjà saisi <br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
-|En plus de vos e-mails, vous pouvez sélectionner d'autres fonctionnalités Exchange que vous souhaitez gérer depuis votre Mac.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
+> [!tabs]
+> **Etape 1**
+>> Sélectionnez `Exchange`{.action}<br><br> 
+>> ![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
+>>
+> **Etape 2**
+>> Saisissez le **Nom** de votre compte e-mail et votre **Adresse e-mail**, puis cliquez sur `Se connecter`{.action} <br><br> 
+>> ![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
+>>
+> **Etape 3**
+>> Dans la fenêtre suivante, cliquez sur `Configuration manuelle`{.action} : <br><br>- Définissez le **Nom** qui s'affichera dans l'interface de navigation <br>- Laissez votre **adresse e-mail**<br>- Laissez votre **Mot de passe** déjà saisi <br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action} <br><br> 
+>> ![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
+>>
+> **Etape 4**
+>> Saisissez: <br><br>- Adresse e-mail : laissez votre adresse e-mail complète<br>- Nom d'utilisateur : laissez votre adresse e-mail complète <br>- Mot de passe : laissez votre **mot de passe**<br> - URL interne : **ex?.mail.ovh.net** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br>- URL externe : **ex?.mail.ovh.net** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br><br>
+>>
+>> > [!warning]
+>> >
+>> > Il est normal de voir apparaître le message en rouge « **Impossible de vérfier le nom ou le mot de passe du compte** » lorsque la fenêtre apparaît la première fois. Néanmoins, si ce message persiste après validation, cela signifie que les informations saisies sont erronées.<br><br>
+>>
+>> ![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
+>>
+> **Etape 5**
+>> En plus de vos e-mails, vous pouvez sélectionner d'autres fonctionnalités Exchange que vous souhaitez gérer depuis votre Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Utiliser l'adresse e-mail
 
@@ -52,11 +87,17 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 
 Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
-- Cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Préférences`{.action}.
-- Sélectionez le compte concerné dans la colonne de gauche, puis cliquez sur `Réglages du serveur`{.action}.
+- Cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Préférences...`{.action} **ou** `Réglages...`{.action} selon votre version de macOS.
+- Depuis l'onglet `Comptes`{.action}, sélectionnez le compte concerné dans la colonne de gauche, puis cliquez sur `Réglages du serveur`{.action}.
 
-![mailmac](images/mail-mac-exchange05.png){.thumbnail}
+![mailmac](images/mail-mac-exchange06.png){.thumbnail .w-400 .h-600}
 
 ## Aller plus loin
+
+[FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+
+[Configurer votre compte E-mail Pro sur Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
+
+[Configurer votre compte e-mail MX plan sur Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

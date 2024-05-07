@@ -1,18 +1,18 @@
 ---
 title: "Tutoriel - Installer manuellement un CMS sur mon hébergement"
 excerpt: "Découvrez comment installer manuellement un CMS sur votre hébergement"
-updated: 2023-03-09
+updated: 2024-03-28
 ---
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal ou PrestaShop en quelques étapes.
+Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal, PrestaShop, Pico, Grav, Typo3 ou SPIP en quelques étapes.
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou l'éditeur du CMS ue vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou l'éditeur du CMS ue vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
 >
 > Pour contacter les différents éditeurs des CMS cités ci-dessus, retrouvez ci-après les liens vers leurs pages officielles respectives :
 >
@@ -20,32 +20,36 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 > - [Joomla!](https://www.joomla.org/){.external}
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
+> - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
+> - [Typo3](https://typo3.fr/){.external}
+> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 >
 
 > [!success]
 >
-> Pour installer votre CMS **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Pour installer votre CMS **automatiquement** depuis votre [espace client OVHcloud](/links/manager), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **Découvrez comment configurer votre site web en installant manuellement un CMS.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
+- Disposer d'un [nom de domaine](/links/web/domains)
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 
 ### Présentation des CMS
 
-Pour vous aider à choisir votre CMS, découvrez ci-dessous un bref descriptif pour chacun des 4 CMS évoqués précédemment.
+Pour vous aider à choisir votre CMS, découvrez ci-dessous un bref descriptif pour chacun des CMS évoqués précédemment.
 
 #### WordPress
 
 **WordPress** est généralement utilisé pour créer un site web ou un blog. Il est basé sur la technologie PHP et comporte une gamme variée d’outils comme un correcteur orthographique ainsi que des plugins pour l'e-commerce, le SEO ou encore la sécurité de votre site web.
 
-Retrouvez plus d'informations sur notre page relative au [module WordPress](https://www.ovhcloud.com/fr/web-hosting/uc-wordpress-website/)
+Retrouvez plus d'informations sur notre page relative au [module WordPress](/links/web/hosting-wordpress)
 
 - Site officiel de [WordPress](https://https://wordpress.com/){.external}
 
@@ -55,7 +59,7 @@ Retrouvez plus d'informations sur notre page relative au [module WordPress](http
 
 La communauté **Joomla!** est très grande et peut fournir de l’assistance et des services dans tous les domaines concernant ce CMS (aide, documentation, assistance technique, thèmes, etc.)
 
-Retrouvez plus d'informations sur notre page relative au [module Joomla!](https://www.ovhcloud.com/fr/web-hosting/uc-joomla-website/)
+Retrouvez plus d'informations sur notre page relative au [module Joomla!](/links/web/hosting-joomla)
 
 - Site officiel de [Joomla!](https://www.joomla.org/){.external}
 
@@ -63,7 +67,7 @@ Retrouvez plus d'informations sur notre page relative au [module Joomla!](https:
 
 **Drupal** est une plateforme open source gratuite sous PHP créée en 2000. **Drupal** permet de créer rapidement des sites web dynamiques.
 
-Retrouvez plus d'informations sur notre page relative au [module Drupal](https://www.ovhcloud.com/fr/web-hosting/uc-drupal-website/)
+Retrouvez plus d'informations sur notre page relative au [module Drupal](/links/web/hosting-drupal)
 
 - Site officiel de [Drupal](https://www.drupal.org/){.external}
 
@@ -71,9 +75,33 @@ Retrouvez plus d'informations sur notre page relative au [module Drupal](https:/
 
 CMS créé en 2005 et dédié à la réalisation de sites web e-commerce. En dehors des fonctionnalités courantes des boutiques en ligne, ce logiciel peut également être personnalisé avec des modules, des thèmes et des modèles. 
 
-Retrouvez plus d'informations sur notre page relative au [module PrestaShop](https://www.ovhcloud.com/fr/web-hosting/uc-prestashop-website/)
+Retrouvez plus d'informations sur notre page relative au [module PrestaShop](/links/web/hosting-prestashop)
 
 - Site officiel de [PrestaShop](https://www.prestashop.com/){.external}
+
+#### Pico
+
+**Pico** est un CMS léger basé sur PHP, idéal pour créer des sites web ou des blogs. Dépourvu de base de données, il utilise des fichiers Markdown pour gérer le contenu. Il supporte des extensions pour personnaliser votre site web.
+
+- Site officiel de [Pico](https://picocms.org/){.external}
+
+#### Grav
+
+**Grav** est un CMS moderne et flexible basé sur PHP. Il est conçu sans base de données et utilise des fichiers Markdown pour le stockage et la gestion du contenu. Grav se distingue par son système de gestion de paquets qui facilite l'installation et la mise à jour des plugins et des thèmes pour votre site web.
+
+- Site officiel de [Grav](https://getgrav.org/){.external}
+
+#### Typo3
+
+**Typo3** est un CMS basé sur PHP, conçu pour le développement de sites web de toutes tailles, des petites aux grandes entreprises. Il s'appuie sur une base de données pour stocker le contenu. Il offre une vaste gamme d'extensions pour étendre ses fonctionnalités afin de personnaliser votre site web.
+
+- Site officiel de [Typo3](https://typo3.fr/){.external}
+
+#### SPIP
+
+**SPIP** est un CMS conçu principalement pour la publication et la gestion de sites web éditoriaux comme des journaux ou des magazines en ligne. Basé sur PHP et s'appuyant sur une base de données SQL, il facilite la création de sites web enrichis de contenu textuel, graphique et / ou multimédia.
+
+- Site officiel de [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 
 > [!warning]
 >
@@ -82,7 +110,7 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](htt
 
 ### Etape 1 - préparer l'installation <a name="step1"></a>
 
-Pour installer un CMS sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
+Pour installer un CMS sur votre offre d'[hébergement web](/links/web/hosting), quelques préparatifs sont nécessaires.
 
 #### 1.1 - Vérifier la déclaration du « dossier racine »
 
@@ -97,12 +125,12 @@ Consultez notre documentation qui décrit [comment ajouter un multisite sur son 
 
 #### 1.2 - Vérifier le « pointage » du nom de domaine
 
-- Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre CMS, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+- Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre CMS, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](/links/web/hosting).
 
-Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}.<br>
+Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}.<br>
 Dans l'encadré `Informations générales`{.action} sur votre droite, vous trouverez l'adresse IP de votre hébergement web dans le formulaire `IPv4`{.action}.
 
-Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](/links/manager), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >
@@ -123,9 +151,19 @@ Si vous ne parvenez pas à effectuer ces vérifications, contactez l'hébergeur 
 
 Si vous n'utilisez pas déjà un client FTP, vous pouvez utiliser Filezilla. Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de FileZilla avec votre offre d'hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
+> [!primary]
+>
+> Il existe d'autres clients FTP que vous pouvez utiliser comme, par exemple, Cyberduck. Retrouvez plus d'informations dans notre documentation relative à l'[utilisation de Cyberduck avec votre offre d'hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
+>
+
 #### 1.4 - Préparer une base de données <a name="step1-4"></a>
 
-Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) en contiennent, à l'exception de [l'hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/).
+> [!warning]
+>
+> Certains CMS fonctionnent sans base de données. Si c'est le cas pour le CMS que vous souhaitez installer, passez cette étape.
+>
+
+La plupart des CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](/links/web/hosting) en contiennent, à l'exception de [l'hébergement gratuit 100M](/links/web/domains-free-hosting).
 
 Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -157,10 +195,17 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 - [Joomla!](https://downloads.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
+- [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
-> Récupérez la version PHP ainsi que la version MySQL ou MariaDB requises pour faire fonctionner votre CMS.
+> Récupérez la version PHP et, si votre CMS utilise une base de données, identifiez la version MySQL ou MariaDB requise pour faire fonctionner votre CMS.
 >
 > Pour cela, consultez le lien vers la page officielle du CMS que vous souhaitez installer :
 >
@@ -168,6 +213,13 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 > - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
+> - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 >
 > Configurez ensuite la version de PHP sur votre hébergement web en vous aidant de notre documentation sur [le changement de version PHP d'un hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -185,7 +237,7 @@ Suivez les instructions indiquées par l'éditeur de votre CMS jusqu'à ce que l
 
 >[!primary]
 >
-> Pour plus de facilité, remplacez, dans cette étape, le nom du dossier « **CMS** » par le nom du CMS que vous avez choisi pour plus de facilité. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
+> Pour plus de facilité, remplacez, dans cette étape, le nom du dossier « **CMS** » par le nom du CMS que vous avez choisi (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**, etc.).
 >
 
 Le fichier téléchargé est dans un format **compressé** (zippé). Créez un dossier intitulé « **CMS** » sur votre ordinateur puis **décompressez** le contenu du fichier téléchargé à l'intérieur du dossier « **CMS** ».
@@ -345,6 +397,10 @@ Pour poursuivre l'installation, suivez l'un des liens suivants en cliquant sur l
 - [Finaliser l'installation de Joomla!](/pages/web_cloud/web_hosting/cms_manual_installation_joomla)
 - [Finaliser l'installation de Drupal](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Finaliser l'installation de PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
+- [Finaliser l'installation de Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- [Finaliser l'installation de Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Finaliser l'installation de Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+- [Finaliser l'installation de SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 ## Aller plus loin <a name="go-further"></a>
 
@@ -354,8 +410,8 @@ Pour poursuivre l'installation, suivez l'un des liens suivants en cliquant sur l
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

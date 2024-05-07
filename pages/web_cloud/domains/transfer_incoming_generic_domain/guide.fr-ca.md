@@ -41,7 +41,7 @@ En transférant votre nom de domaine, vous changerez de **bureau d'enregistremen
 
 > [!success]
 >
-> Pour connaître les conditions tarifaires pour le transfert d'un nom de domaine en fonction de son extension, renseignez le domaine que vous souhaitez transférer sur notre page [www.ovhcloud.com/fr-ca/domains/tld/](https://www.ovhcloud.com/fr-ca/domains/tld/) puis suivez les étapes de ce guide.
+> Pour connaître les conditions tarifaires pour le transfert d'un nom de domaine en fonction de son extension, renseignez le domaine que vous souhaitez transférer sur notre page [www.ovhcloud.com/fr-ca/domains/tld/](/links/web/domains-tld) puis suivez les étapes de ce guide.
 > 
 
 La procédure de transfert comporte plusieurs étapes, impliquant la prise de contact avec plusieurs entités, dont votre registre actuel, OVHcloud et d'autres parties. Le tableau ci-dessous vous indique les personnes contactées et la durée estimée de chaque étape.
@@ -60,7 +60,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 ### Étape 1 : vérifier les informations associées au nom de domaine <a name="step1"></a>
 
-**Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](https://www.ovhcloud.com/fr-ca/domains/whois/) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
+**Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](/links/web/domains-whois) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
 
 - **Si les informations sont correctes :** passez à l'étape suivante de ce guide.
 
@@ -68,7 +68,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 > [!primary]
 >
-> Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](https://www.ovhcloud.com/fr-ca/domains/whois/){.external}, peuvent vous fournir des informations sur son identité.
+> Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](/links/web/domains-whois){.external}, peuvent vous fournir des informations sur son identité.
 >
 
 ### Étape 2 : déverrouiller son nom de domaine et récupérer le code de transfert <a name="step2"></a>
@@ -86,7 +86,7 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 
 ### Étape 3 : demander un transfert de nom de domaine vers OVHcloud <a name="step3"></a>
 
-Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](https://www.ovhcloud.com/fr-ca/domains/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
+Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](/links/web/domains){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
 
 ![domain](images/Domain_transfer_order.png){.thumbnail}
 
@@ -94,7 +94,7 @@ Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} » vous fournira des instructions sur la façon de procéder.
+Vous pouvez également terminer votre commande avec un [hébergement web](/links/web/hosting){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} » vous fournira des instructions sur la façon de procéder.
 
 > [!warning]
 >
@@ -117,7 +117,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](https:
 
 #### Suivi du transfert après la commande
 
-Une fois la commande validée, vous recevrez un bon de commande. Le processus de transfert ne démarrera qu'après réception du paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action}, puis `Opérations en cours`{.action}.
+Une fois la commande validée, vous recevrez un bon de commande. Le processus de transfert ne démarrera qu'après réception du paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](/links/manager){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action}, puis `Opérations en cours`{.action}.
 
 > [!primary]
 >
@@ -135,7 +135,7 @@ Une fois la commande et le code de transfert validés, le bureau d'enregistremen
 
 Si un refus est émis par le bureau d'enregistrement actuel, contactez le pour savoir pourquoi il l'a refusée.
 
-Le processus de transfert peut être redémarré à partir de [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Sélectionnez `Web Cloud`{.action} et accédez à la section `Noms de domaine`{.action}, puis cliquez sur `Opérations en cours`{.action}.
+Le processus de transfert peut être redémarré à partir de [l'espace client OVHcloud](/links/manager){.external}. Sélectionnez `Web Cloud`{.action} et accédez à la section `Noms de domaine`{.action}, puis cliquez sur `Opérations en cours`{.action}.
 
 > [!primary]
 >
@@ -149,7 +149,7 @@ Le processus de transfert peut être redémarré à partir de [l'espace client O
 
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
 
-Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
+Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](/links/manager){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
 
 > [!warning]
 >
@@ -159,7 +159,7 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 > Pour les noms de domaine avec une extension *locale* ou *régionale* (les **ccTLD** tels que les *.fr*, *.be*, *.de*, *.es*, etc.), cela dépend des extensions et des règles mises en place par le **registre** de l'extension en question.
 > Une fois le transfert terminé, vérifiez bien la date d'expiration de votre nom de domaine directement depuis votre espace client OVHcloud.
 >
-> Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez le nom de domaine concerné. Sur la page qui s'affiche et juste en dessous de votre nom de domaine sur la partie haute de la page, vous retrouverez la date de renouvellement prévue avec le **mois** et **l'année** d'échéance.
+> Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez le nom de domaine concerné. Sur la page qui s'affiche et juste en dessous de votre nom de domaine sur la partie haute de la page, vous retrouverez la date de renouvellement prévue avec le **mois** et **l'année** d'échéance.
 >
 > En fonction de la situation et de la nouvelle date d'expiration de votre nom de domaine, un renouvellement du domaine sera peut être nécessaire juste après le transfert.
 >
@@ -168,8 +168,8 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 
 [Migration de votre site Web et de vos e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

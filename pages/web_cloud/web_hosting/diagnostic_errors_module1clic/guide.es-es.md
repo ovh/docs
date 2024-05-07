@@ -1,7 +1,7 @@
 ---
 title: "Resolver los errores más frecuentes relacionados con los módulos en un clic"
 excerpt: "Descubra cómo diagnóstico de los errores más comunes relacionados con la creación de módulos en 1 clic"
-updated: 2023-11-30
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -19,13 +19,13 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
 >
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) compatible.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener contratado un [plan de hosting](/links/web/hosting) compatible.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Haber utilizado la funcionalidad "[Módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear un nuevo sitio web.
 
 ## Procedimiento
@@ -39,7 +39,7 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 
 ![domainenotproposed](images/domain-unavailable.png){.thumbnail}
 
-Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la nueva página, haga clic en la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
+Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la nueva página, haga clic en la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
 
 |Escenario|Solución|
 |---|---|
@@ -54,9 +54,9 @@ Este mensaje aparece al iniciar la instalación de su "módulo en un clic" cuand
 
 #### Solución n° 1: contratar una nueva base de datos
 
-Si ya no tiene bases de datos incluidas con su alojamiento web, puede contratar una nueva [base de datos Start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) y asociarla a su alojamiento web actual. A continuación, podrá reiniciar la instalación del "módulo en un clic". Si necesita más espacio de almacenamiento (superior a 1 GB), le recomendamos que utilice nuestro servicio [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
+Si ya no tiene bases de datos incluidas con su alojamiento web, puede contratar una nueva [base de datos Start SQL](/links/web/hosting-options-startsql) y asociarla a su alojamiento web actual. A continuación, podrá reiniciar la instalación del "módulo en un clic". Si necesita más espacio de almacenamiento (superior a 1 GB), le recomendamos que utilice nuestro servicio [Web Cloud Databases](/links/web/databases).
 
-En su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento web al que quiera añadir una base de datos adicional. En la nueva página, haga clic en la pestaña `Bases de datos`{.action} y seleccione `Acciones`{.action} para contratar una base de datos adicional:
+En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento web al que quiera añadir una base de datos adicional. En la nueva página, haga clic en la pestaña `Bases de datos`{.action} y seleccione `Acciones`{.action} para contratar una base de datos adicional:
 
 ![order_a_database](images/order-a-db.png){.thumbnail}
 
@@ -64,21 +64,21 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
 > [!primary]
 >
-> Le recordamos que no dude en consultar nuestras ofertas de bases de datos unitarias [start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/), así como nuestra oferta [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
+> Le recordamos que no dude en consultar nuestras ofertas de bases de datos unitarias [start SQL](/links/web/hosting-options-startsql), así como nuestra oferta [Web Cloud Databases](/links/web/databases).
 >
 
 #### Solución n° 2: modificar su plan de hosting
 
 > [!primary]
 >
-> Consultar la comparativa de nuestras distintas soluciones [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/).
+> Consultar la comparativa de nuestras distintas soluciones [alojamiento web](/links/web/hosting).
 >
 
-En su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action} :
+En su [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action} :
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Los planes [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
+Los planes [Pro](/links/web/hosting-professional-offer) y [Performance](/links/web/hosting-performance-offer) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
 
 Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
@@ -86,10 +86,10 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
 > [!warning]
 >
-> La operación de eliminación de una base de datos es permanente. Esta operación también implica la eliminación de las copias de seguridad de la base de datos correspondiente. En caso de duda, póngase en contacto con su webmaster o con uno de nuestros [partners](https://partner.ovhcloud.com/es-es/directory/).
+> La operación de eliminación de una base de datos es permanente. Esta operación también implica la eliminación de las copias de seguridad de la base de datos correspondiente. En caso de duda, póngase en contacto con su webmaster o con uno de nuestros [partners](/links/partner).
 >
 
-Para eliminar una base de datos de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action}de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+Para eliminar una base de datos de su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
 
 A continuación, abra la pestaña `Bases de datos`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a la base de datos que desea suprimir y seleccione `Eliminar la base de datos`{.action}:
 
@@ -111,7 +111,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 >
 > En esta situación, puede realizar una copia de seguridad de los datos de un único sitio web utilizando un [script PHP o un comando SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> Si tiene cualquier duda sobre las operaciones que debe realizar, póngase en contacto con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con uno de nuestros [partners](https://partner.ovhcloud.com/es-es/directory/).<br>
+> Si tiene cualquier duda sobre las operaciones que debe realizar, póngase en contacto con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con uno de nuestros [partners](/links/partner).<br>
 > No podremos asistirle.
 >
 
@@ -129,7 +129,7 @@ Después de haber iniciado la creación de su "módulo en un clic", ha recibido 
 
 Este mensaje significa que la **Carpeta raíz** asociada al dominio ya contiene uno o varios archivos o carpetas.
 
-Para asociar su dominio a otro directorio, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, haga clic en la pestaña `Multisitio`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al dominio y seleccione `Modificar el dominio`{.action}. Por último, indique el nombre de un nuevo **Carpeta raíz** (se creará automáticamente un directorio vacío en su alojamiento web).
+Para asociar su dominio a otro directorio, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, haga clic en la pestaña `Multisitio`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al dominio y seleccione `Modificar el dominio`{.action}. Por último, indique el nombre de un nuevo **Carpeta raíz** (se creará automáticamente un directorio vacío en su alojamiento web).
 
 ![modify_root_folder](images/modify-domain.png){.thumbnail}
 
@@ -157,7 +157,7 @@ En este caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) 
 
 > [!primary]
 >
-> Si tiene preguntas sobre la eliminación de datos para reducir la cantidad de datos en su alojamiento web, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).<br>
+> Si tiene preguntas sobre la eliminación de datos para reducir la cantidad de datos en su alojamiento web, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner).<br>
 > El soporte de OVHcloud no está autorizado a asistirle.
 >
 
@@ -165,14 +165,14 @@ En este caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) 
 
 > [!primary]
 >
-> Consultar la comparativa de nuestros diferentes [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+> Consultar la comparativa de nuestros diferentes [planes de hosting](/links/web/hosting).
 >
 
-En su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action}:
+En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action}:
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Los planes [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
+Los planes [Pro](/links/web/hosting-professional-offer) y [Performance](/links/web/hosting-performance-offer) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
 
 ### "No se puede conectar a la base de datos" <a name="delete-the-module"></a>
 
@@ -182,7 +182,7 @@ Tras instalar el "módulo en un clic" en modo avanzado, recibirá un mensaje de 
 
 Por lo tanto, compruebe las claves de la base de datos. Para más información, consulte esta [guía](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-A continuación, elimine el "módulo en un clic". Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, abra la pestaña `Módulos en un clic`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al dominio y seleccione `Eliminar el módulo`{.action}.
+A continuación, elimine el "módulo en un clic". Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, abra la pestaña `Módulos en un clic`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al dominio y seleccione `Eliminar el módulo`{.action}.
 
 ![delete_a_module](images/delete-a-module.png){.thumbnail}
 
@@ -201,7 +201,7 @@ A continuación, vuelva a instalar un nuevo "módulo en un clic".
 
 Este mensaje aparece únicamente al instalar un "módulo en un clic" en **modo avanzado**. La base de datos no se puede modificar porque la cantidad de datos que contiene supera el límite permitido. En este caso, la base de datos está bloqueada como de sólo lectura.
 
-En este caso, instale su "módulo en un clic" pasando por el [modo simple](/pages/web_cloud/web_hosting/cms_install_1_click_modules) o seleccione otra base de datos cuando se instale en modo avanzado. Si lo necesita, contrate una [oferta de bases de datos](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) complementaria.
+En este caso, instale su "módulo en un clic" pasando por el [modo simple](/pages/web_cloud/web_hosting/cms_install_1_click_modules) o seleccione otra base de datos cuando se instale en modo avanzado. Si lo necesita, contrate una [oferta de bases de datos](/links/web/hosting-options-startsql) complementaria.
 
 Si no dispone de otras bases de datos y no desea contratar una solución adicional, [importe localmente una copia de su base de datos](/pages/web_cloud/web_hosting/sql_database_export) y elimine los datos que no necesite.
 
@@ -209,7 +209,7 @@ Si no dispone de otras bases de datos y no desea contratar una solución adicion
 >
 > **Eliminar elementos de la base de datos puede provocar la interrupción del sitio web.**
 >
-> Si tiene más preguntas, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).<br>
+> Si tiene más preguntas, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner).<br>
 > No podremos asistirle.
 >
 
@@ -229,7 +229,7 @@ Compruebe también sus claves [conectándose directamente](/pages/web_cloud/web_
 
 Ha iniciado la instalación de un "módulo en un clic" en [modo avanzado](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en una base de datos situada en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ha recibido este mensaje de error por correo electrónico. Significa que el nombre del servidor de bases de datos que ha especificado es incorrecto.
 
-Para consultar el nombre del servidor de bases de datos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}de la página. Haga clic en `Web Cloud Databases`{.action} en la columna izquierda y seleccione el servidor de bases de datos correspondiente.
+Para consultar el nombre del servidor de bases de datos, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}de la página. Haga clic en `Web Cloud Databases`{.action} en la columna izquierda y seleccione el servidor de bases de datos correspondiente.
 
 En la nueva página, el nombre del servidor que debe utilizarse aparece en el recuadro `Datos de conexión`, subparte `SQL`, con la mención `Nombre de host`..
 
@@ -283,8 +283,8 @@ Una vez finalizado, vuelva a instalar un nuevo "módulo en un clic".
 
 [Problemas recurrentes al utilizar un programa FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems)
  
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
  
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Crear y conectarse a una instancia de Public Cloud'
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
-updated: 2024-01-08
+updated: 2024-04-03
 ---
 
 > [!primary]
@@ -135,7 +135,7 @@ La clave estará lista cuando se complete la barra de progreso.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Puede seleccionar y copiar la clave pública desde esta ventana para guardarla en su área de cliente de OVHcloud ([paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud)).
+Puede seleccionar y copiar la clave pública desde esta ventana (bajo la indicación: "Public key for pasting into OpenSSH authorized_keys file") para guardarla en su área de cliente de OVHcloud ([paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud)).
 
 Guarde ambas claves como archivo y cree una frase de contraseña. Para acceder a su instancia de Public Cloud desde un dispositivo de trabajo solo necesitará la clave privada correspondiente. Así pues, le recomendamos que aplique medidas adicionales de seguridad. Cada vez que se establezca una conexión con la instancia, deberá introducir la frase de contraseña.
 
@@ -158,9 +158,23 @@ Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+> [!success]
+>
+Es preferible crear una red privada antes de crear una instancia. Para más información sobre la creación de una red privada, consulte la guía [Configuración del vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>
+
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Desde la página de inicio, haga clic en el botón `Crear una instancia`{.action}. También puede crear su instancia desde el menú `Instancias`{.action}, en la sección «Compute» del menú de la izquierda.
 
-![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
+![instance select](images/instance-creation-2024.png){.thumbnail}
+
+**Local Zones:**
+
+Las instancias Local Zone son una extensión de las regiones que acercan los servicios de OVHcloud a lugares específicos, ofreciendo una latencia reducida y un rendimiento mejorado para las aplicaciones. Están estratégicamente situadas cerca de las zonas de alta demanda de los usuarios. Su principal objetivo es minimizar el tiempo necesario para la transferencia de datos entre el usuario y la nube, con el fin de que los servicios sean más rápidos y reactivos, y responder a las exigencias de residencia de los datos. Para obtener más información sobre las instancias Local Zone, consulte los vínculos siguientes: [Local Zone Compute](https://www.ovhcloud.com/es-es/public-cloud/local-zone-compute/) y [Local Zone Compute - Características, capacidades y límites](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+
+**Global Regions:**
+
+Las Global Regions incluyen ino vaitest por uno o varios datacenters gestionados por OVHcloud. Cada región está situada en una zona geográfica diferente. Cada región global ofrece una o varias Availibility Zones (zonas de disponibilidad) como GRA11, GRA7, BHS5, DE1, etc.
 
 En primer lugar, seleccione el modelo que mejor se adapta a sus necesidades. Podrá consultar las características de las diferentes instancias y los modelos de servidor disponibles de entre las siguientes categorías:
 
@@ -216,7 +230,7 @@ El modo público es el modelo de red clásico. Permite que las instancias tendr�
 
 El modo privado le permite asignar sus instancias únicamente a una red privada. Las instancias de este modo solo pueden estar expuestas a la red pública mediante un servicio Gateway o un Load Balancer con Floating IPs. Para más información, consulte nuestra guía sobre las [soluciones de red para el Public Cloud de OVHcloud](/products/public-cloud-network).
 
-Una vez elegido el modo, seleccione una red privada a la que quiere asociar la instancia o haga clic en `Crear una nueva red privada`{.action} para crear una nueva.
+Una vez elegido el modo, seleccione una red privada a la que quiere asociar la instancia o haga clic en `Crear una nueva red privada`{.action} para crear una nueva. Si selecciona esta última opción, será redirigido a la página de creación de la red privada y deberá volver a realizar toda la ruta de pedido de su instancia más adelante. Por lo tanto, es preferible crear una red privada antes de la creación de la instancia.
 
 Una vez que hay seleccionado las opciones deseadas, haga clic en `Siguiente`{.action} y, por último, elija el tipo de facturación.
 

@@ -1,7 +1,7 @@
 ---
 title: "Changing the owner of a domain name"
 excerpt: "Find out how to change the owner of a a domain name in the OVHcloud Control Panel"
-updated: 2024-01-26
+updated: 2024-03-07
 ---
 
 ## Objective
@@ -19,7 +19,7 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - A domain name registered with OVHcloud for which no operation (owner change, transfer, creation) is in progress. If an operation has recently been completed on this domain name, there is a mandatory waiting period of 60 calendar days before a new operation can be started.
 - You are the [admin contact](/pages/account_and_service_management/account_information/managing_contacts) for the domain name concerned.
 - You have permission from the current domain name owner to initiate a domain trade.
@@ -39,12 +39,12 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 > We recommend to consult the following resources in case of any doubt:
 >
 > - The website of the respective **TLD** registry
-> - The [list of **TLD**s available at OVHcloud](https://www.ovhcloud.com/en-ca/domains/tld/)
-> - The section `Ongoing operations`{.action} of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) to check any pending status updates of the domain name
+> - The [list of **TLD**s available at OVHcloud](/links/web/domains-tld)
+> - The domain name status updates. To check this, log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then `Ongoing operations`{.action}.
 
 ### Step 1: Select the domain
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and select `Web Cloud`{.action}. In the `Domains`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. In the `Domain names`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
 
 ### Step 2: Inititate the owner change procedure
 
@@ -84,7 +84,7 @@ If the email address is not changed as part of the domain trade, one recipient w
 
 ### Updating the owner information <a name="updateownerinformation"></a>
 
-If you need to update some secondary information such as phone number, address etc., you do not have to start a trade procedure. It can be edited directly in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+If you need to update some secondary information such as phone number, address etc., you do not have to start a trade procedure. It can be edited directly in the [OVHcloud Control Panel](/links/manager).
 
 In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the **contacts**, then click `Refresh owner information`{.action}.
 
@@ -96,8 +96,8 @@ With this operation you do not need to confirm changes by email.
 
 [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>. 

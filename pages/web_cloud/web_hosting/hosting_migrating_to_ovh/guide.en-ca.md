@@ -12,7 +12,7 @@ This guide will outline the steps you need to take to migrate your entire websit
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -22,7 +22,7 @@ This guide will outline the steps you need to take to migrate your entire websit
 - Access to your domain name’s active DNS (Domain Name System) zone
 - Access to your website’s files and database at your current hosting provider
 - Credentials (user, password, server) for your current email accounts
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -55,24 +55,24 @@ This guide is designed to minimise the duration of such an interruption.
 
 Several OVHcloud web hosting plans contain an MX Plan email solution. With this email offer, you can create email accounts with a maximum storage space of 5 GB each. Choose from the following hosting plans, considering the PHP version, SQL version, number of email accounts you need, and the size of your website to migrate:
 
-- Hosting [Personal](https://www.ovhcloud.com/en-ca/web-hosting/personal-offer/) with **10 MX Plan email accounts**
-- Hosting [Pro](https://www.ovhcloud.com/en-ca/web-hosting/professional-offer/) with **100 MX Plan email accounts** (for business)
-- Hosting [Performance](https://www.ovhcloud.com/en-ca/web-hosting/performance-offer/) with **1000 MX Plan email accounts** (scalable dedicated resources)
+- Hosting [Personal](/links/web/hosting-personal-offer) with **10 MX Plan email accounts**
+- Hosting [Pro](/links/web/hosting-professional-offer) with **100 MX Plan email accounts** (for business)
+- Hosting [Performance](/links/web/hosting-performance-offer) with **1000 MX Plan email accounts** (scalable dedicated resources)
 
 Once you have chosen your hosting plan, click the `Order`{.action} button on the commercial pages above. Follow the steps for the **order without requesting the transfer of your domain name**.
 
-As an OVHcloud customer you can also place an order from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). Once you have logged in, click on the `Web Cloud`{.action} section, then click on the `Order`{.action} button in the top left-hand corner and choose `Hosting plans`{.action}. Continue with the steps for the **order process without requesting the transfer of your domain name**.
+As an OVHcloud customer you can also place an order from your [OVHcloud Control Panel](/links/manager). Once you have logged in, click on the `Web Cloud`{.action} section, then click on the `Order`{.action} button in the top left-hand corner and choose `Hosting plans`{.action}. Continue with the steps for the **order process without requesting the transfer of your domain name**.
 
 Once the payment has been confirmed, the hosting plan installation will begin. An email will be sent to your contact email address. It will contain the credentials for accessing your web hosting plan’s FTP (File Transfer Protocol) storage space.
 
 > [!primary]
 >
-> OVHcloud offers other email services in addition to the MX Plan solution. For example, you can combine email accounts of the [Exchange offer](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) with MX Plan email accounts.
+> OVHcloud offers other email services in addition to the MX Plan solution. For example, you can combine email accounts of the [Exchange offer](/links/web/emails-hosted-exchange) with MX Plan email accounts.
 >
 
 ### Step 2: Create and preconfigure a DNS zone for your domain name at OVHcloud <a name="step2"></a>
 
-After your hosting service is installed, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) to create a DNS zone for your domain name. Do not use "**www**" when doing this. You can refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+After your hosting service is installed, log in to your [OVHcloud Control Panel](/links/manager) to create a DNS zone for your domain name. Do not use "**www**" when doing this. You can refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Once you have created a DNS zone, you can start configuring it with the help of our guide: [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit). Add the following records if they do not exist:
 
@@ -174,7 +174,7 @@ We recommend that you do not use the `Server type`{.action} **POP** in the `Sour
 
 As for `Destination account`{.action}, enter only the relevant OVHcloud email address and password. Keep the `Server type`{.action} in `Hosted by OVH (Autodetect)`{.action}.
 
-Once the migration is complete, log in to your OVHcloud email account using [OVHcloud webmail](https://www.ovhcloud.com/en-ca/mail/) to check that all your emails are in the new account.
+Once the migration is complete, log in to your OVHcloud email account using [OVHcloud webmail](/links/web/email) to check that all your emails are in the new account.
 
 Repeat for all of your email accounts.
 
@@ -231,8 +231,8 @@ Once you have transferred your data and services, you can cancel your old servic
 
 [Creating and managing a database in your Web Hosting plan](/pages/web_cloud/web_hosting/sql_create_database).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

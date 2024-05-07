@@ -1,7 +1,7 @@
 ---
 title: 'Informações sobre o método de faturação cloud'
 excerpt: 'Saiba mais sobre o método de faturação dos produtos Public Cloud'
-updated: 2022-08-29
+updated: 2024-04-24
 ---
 
 > [!primary]
@@ -31,6 +31,8 @@ O objetivo consiste em fornecer uma faturação que corresponde melhor à utiliz
 Para cada recurso sujeito a faturação, um contador de hora começa quando o recurso é criado e acaba quando é eliminado. Isto funciona de acordo com o princípio de “cada hora começada é devida”.
 
 No final do mês, multiplicamos cada contador pela taxa à hora do recurso. Para obter a fatura global, basta adicionar todos os contadores previamente carregados.
+
+Especificamente para as instâncias de máquinas virtuais, o contador de faturação começa quando uma instância atinge o estado `ACTIVE` (apresentado como `Ativada` na área de cliente da OVHcloud). Por outras palavras, o período durante o qual a instância se encontra no estado `BUILD` não é faturado.
 
 Todos os projetos cloud têm a sua própria faturação, que reúne todos os recursos faturados durante o mês. Esta fatura é gerada no primeiro dia do mês a seguir.
 
@@ -67,7 +69,7 @@ Ou seja, 23,63€.
 
 ### Consultar as faturas
 
-Para consultar as faturas de um projeto, aceda ao separador `Public Cloud`{.action} da Área de Cliente OVHcloud, selecione o projeto cloud correspondente na barra lateral e clique em `Billing Control`{.action} e em `Histórico`{.action}.
+Para consultar as faturas de um projeto, aceda ao separador `Public Cloud`{.action} da Área de Cliente OVHcloud, selecione o projeto cloud correspondente na barra lateral e clique em `Billing Control`{.action} (na secção `Project Management`) e em `Histórico`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 

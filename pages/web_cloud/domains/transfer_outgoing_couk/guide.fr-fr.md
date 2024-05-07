@@ -31,8 +31,8 @@ Le processus de changement de bureau d'enregistrement (*registrar*) pour les dom
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine .uk](https://www.ovhcloud.com/fr/domains/) enregistré chez OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et disposer des droits nécessaires pour gérer le nom de domaine (être administrateur du domaine)
+- Disposer d'un [nom de domaine .uk](/links/web/domains) enregistré chez OVHcloud
+- Être connecté à votre [espace client OVHcloud](/links/manager) et disposer des droits nécessaires pour gérer le nom de domaine (être administrateur du domaine)
 - Le nom de domaine doit être toujours actif, c'est-à-dire qu'il ne doit pas avoir expiré ou être bloqué par OVHcloud
 - Le nom de domaine ne doit pas faire l’objet d’un litige en cours auprès du [Registre Nominet](https://www.nominet.uk/)
 
@@ -44,7 +44,7 @@ Si vous ne connaissez pas encore le TAG requis, vous pouvez en faire la demande 
 
 ### Étape 1 : vérifier les informations nécessaires
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} . Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action} . Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
 
 N'oubliez pas que vous devez être connecté en tant que contact administrateur.
 
@@ -72,6 +72,6 @@ Contactez dès lors votre nouveau fournisseur pour obtenir davantage de détails
 
 [Transférer un nom de domaine vers un autre bureau d’enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

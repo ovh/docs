@@ -1,7 +1,7 @@
 ---
-title: 'Uso de instantáneas Snapshots en un servidor virtual privado (VPS)'
-excerpt: 'Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud'
-updated: 2023-04-28
+title: "Uso de instantáneas Snapshots en un servidor virtual privado (VPS)"
+excerpt: "Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud"
+updated: 2024-04-15
 ---
 
 > [!primary]
@@ -30,7 +30,7 @@ Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?act
 
 ### Paso 1: Suscribirse a la opción «Instantáneas»
 
-Acceda a la pestaña `«Inicio»`{.action} y desplácese hacia abajo hasta el cuadro «Resumen de opciones». Haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en `Contratar`{.action} (en el menú contextual).
+Acceda a la pestaña `Inicio`{.action} y desplácese hacia abajo hasta el cuadro «Resumen de opciones». Si el estado de «Snapshot» ya es «Activado», vaya directamente al paso 2. Si «Snapshot» todavía no está activado, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en `Contratar`{.action} (en el menú contextual).
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
@@ -38,7 +38,7 @@ En el siguiente paso, preste atención a la información sobre los precios y, a 
 
 ### Paso 2: Tomar una instantánea
 
-Una vez activada la opción, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en «Tomar una instantánea» (en el menú contextual). El tiempo de creación del snapshot depende del espacio de almacenamiento utilizado. Después, aparecerá la fecha y hora de su creación en el cuadro «Resumen de opciones».
+Una vez activada la opción, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en «Tomar una instantánea» (en el menú contextual). Puede escribir una descripción que se asociará al snapshot. El tiempo de creación del snapshot depende del espacio de almacenamiento utilizado. Después, aparecerá la fecha y hora de su creación en el cuadro «Resumen de opciones».
 
 ### Paso 3: Eliminar o restaurar una instantánea
 
@@ -51,6 +51,8 @@ Si está seguro de que desea restablecer su servidor virtual privado (VPS) al es
 > [!alert]
 > 
 > Tenga en cuenta que, al restaurar un VPS a partir de un snapshot, el snapshot se eliminará. Si desea conservar la misma instantánea, debe tomar una nueva antes de realizar cambios en el sistema restaurado.
+>
+> Si la función snapshot es demasiado limitada para su proyecto, la opción [Backup automatizado](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) es una alternativa.
 >
 
 ### Descargar un snapshot
@@ -96,6 +98,8 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 >
 > No obstante, para no consumir demasiado espacio de almacenamiento, le recomendamos que no descargue los snapshots directamente en el VPS.
 >
+> El archivo cargado puede importarse en un proyecto de Public Cloud como imagen (QCOW2) mediante [OpenStack](products/public-cloud-compute-instance-management). (Consulte un ejemplo de uso en [esta guía](/pages/public_cloud/compute/upload_own_image).)
+>
 
 ### Buenas prácticas para la creación de un snapshot
 
@@ -110,27 +114,27 @@ El *qemu-guest-agent* necesario no está instalado por defecto en la mayoría de
 Utilice el siguiente comando para comprobar si el sistema está configurado correctamente para los snapshots:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si el resultado es diferente (« No such file or directory »), instale la última versión del paquete:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install qemu-guest-agent
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
 ```
 
 Reiniciar el VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
-Verifique el servicio para garantizar que está en ejecución:
+Verifique  el servicio para garantizar que está en ejecución:
 
 ```bash
-$ sudo service qemu-guest-agent start
+sudo service qemu-guest-agent status
 ```
 
 ##### **Distribuciones Red Hat (CentOS, Fedora)**
@@ -138,27 +142,27 @@ $ sudo service qemu-guest-agent start
 Utilice el siguiente comando para comprobar si el sistema está configurado correctamente para los snapshots:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si el resultado es diferente (« No such file or directory »), instale y active el software:
 
 ```bash
-$ sudo yum install qemu-guest-agent
-$ sudo chkconfig qemu-guest-agent on
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
 ```
 
 Reiniciar el VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Verifique el software y compruebe que está en ejecución:
 
 ```bash
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**

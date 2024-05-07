@@ -8,7 +8,7 @@ updated: 2024-02-19
 
 Rescue mode is a tool provided by OVHcloud to boot your VPS into a temporary operating system. You can then access your system in order to run diagnostic tasks and resolve various issues, for example:
 
-- Resetting your user password to regain access
+- [Resetting your user password to regain access](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnosing network problems
 - Repairing a broken operating system
 - Fixing a misconfigured software firewall 
@@ -54,7 +54,7 @@ After initiating the reboot, a progress bar will indicate the duration of the ta
 
 > [!primary]
 >
-> You will receive an automated email with the SSH credentials for rescue mode access. Please wait for the email to arrive before taking any further action. This email can also be viewed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB): Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
+> You will receive an automated email with the SSH credentials for rescue mode access. Please wait for the email to arrive before taking any further action. This email can also be viewed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we): Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
 >
 
 You will then need to [access your server via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), using the temporary password generated for the rescue mode.

@@ -18,7 +18,7 @@ Możesz na przykład określić:
 - Serwery e-mail (rekordy DNS typu *MX*), na które Twoja domena musi przekierować otrzymane e-maile. Możesz sprawdzić je na spersonalizowanym adresie e-mail z Twoją domeną.
 - Informacje związane z bezpieczeństwem / uwierzytelnianiem przypisanych usług (hosting, serwer www, serwer e-mail, itp.) do Twojej domeny (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, itp.).
 
-W razie potrzeby sprawdź [naszą dokumentację dotyczącą rekordów DNS i edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+W razie potrzeby sprawdź [naszą dokumentację dotyczącą rekordów DNS i edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links/manager).
 
 Aktualizacja rekordu DNS w sposób "dynamiczny" może zapobiec przedłużającej się przerwie w dostępności Twoich usług, jeśli nie dysponujesz adresem IP zwanym "stałym" (który się nie zmienia).
 
@@ -28,7 +28,7 @@ Na przykład, **DynHost** może być używany, jeśli pacjent *samodzielnie host
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](/links/manager){.external}
 - Używanie przez domenę konfiguracji OVHcloud (serwerów DNS OVHcloud) 
 - Rekord DynHost nie może już istnieć w strefie DNS OVHcloud Twojej domeny jako rekord „A”
 
@@ -36,7 +36,7 @@ Na przykład, **DynHost** może być używany, jeśli pacjent *samodzielnie host
 >
 > - Jeśli Twoja domena nie używa serwerów DNS OVHcloud, skontaktuj się z dostawcą/dostawcą zarządzającym jej konfiguracją DNS, aby dowiedzieć się, jak przebiega procedura.
 > 
-> - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVH. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij zakładkę `Domeny`{.action} i wybierz odpowiednią nazwę domeny. Na stronie, która się wyświetla kliknij zakładkę `Serwery DNS`{.action}, aby wyświetlić serwery DNS używane przez Twoją domenę. 
+> - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVH. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij zakładkę `Domeny`{.action} i wybierz odpowiednią nazwę domeny. Na stronie, która się wyświetla kliknij zakładkę `Serwery DNS`{.action}, aby wyświetlić serwery DNS używane przez Twoją domenę. 
 >
 > Informacje na temat tego, czy serwery DNS OVHcloud są obsługiwane czy nie, mają następującą formę: 
 >
@@ -50,7 +50,7 @@ Na przykład, **DynHost** może być używany, jeśli pacjent *samodzielnie host
 
 ### Etap 1: utworzenie identyfikatora DynHost <a name="step1"></a>
 
-Aby utworzyć użytkownika DynHost, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij zakładkę `Domeny`{.action} i wybierz odpowiednią nazwę domeny. Na stronie, która się wyświetla kliknij zakładkę `DynHost`{.action}.
+Aby utworzyć użytkownika DynHost, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij zakładkę `Domeny`{.action} i wybierz odpowiednią nazwę domeny. Na stronie, która się wyświetla kliknij zakładkę `DynHost`{.action}.
 
 ![dynhost](images/tab.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Po utworzeniu [użytkownik](#step1) i [rekordu DynHost](#step2) należy zautomat
 
 > [!warning]
 >
-> Instalacja i konfiguracja oprogramowania/klienta muszą być wykonywane zgodnie z Twoją wiedzą. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie w stanie udzielić wsparcia w tym zakresie. 
+> Instalacja i konfiguracja oprogramowania/klienta muszą być wykonywane zgodnie z Twoją wiedzą. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety firma OVHcloud nie będzie w stanie udzielić wsparcia w tym zakresie. 
 > Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
@@ -119,7 +119,7 @@ https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|Subdomena, której dotyczy modyfikacja.|
 |$IP|Nowy docelowy adres IPv4.|
 
-Możesz sprawdzić, czy docelowy adres IP został zaktualizowany. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij zakładkę `Domeny`{.action} i wybierz odpowiednią nazwę domeny. Na stronie, która się wyświetla kliknij zakładkę `DynHost`{.action}. Sprawdź adres IP, który wyświetla się w kolumnie `Docelowy adres IP`{.action}.
+Możesz sprawdzić, czy docelowy adres IP został zaktualizowany. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij zakładkę `Domeny`{.action} i wybierz odpowiednią nazwę domeny. Na stronie, która się wyświetla kliknij zakładkę `DynHost`{.action}. Sprawdź adres IP, który wyświetla się w kolumnie `Docelowy adres IP`{.action}.
 
 > [!warning]
 >
@@ -130,8 +130,8 @@ Możesz sprawdzić, czy docelowy adres IP został zaktualizowany. W tym celu zal
 
 ## Sprawdź również <a name="go-further"></a>
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

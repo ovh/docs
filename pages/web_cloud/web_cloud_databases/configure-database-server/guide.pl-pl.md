@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja serwera baz danych'
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-updated: 2023-04-24
+updated: 2024-03-20
 ---
 
 > [!primary]
@@ -16,14 +16,14 @@ Za pomocą serwerów baz Web Cloud Databases możesz wpłynąć na globalne para
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie [instancji Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](/links/web/hosting).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
 ### Wyświetl ogólne informacje o serwerze baz danych
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Web Cloud Databases`{.action}, a następnie do odpowiedniej instancji SQL. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
+W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud Databases`{.action}, a następnie do odpowiedniej instancji SQL. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
 W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji SQL. Prosimy o poświęcenie kilku minut na sprawdzenie, czy wyświetlane informacje są poprawne lub zgodne z poniższymi wskazówkami.
 
@@ -48,7 +48,7 @@ Usługa Web Cloud Databases jest dostępna z poziomu hostingu OVHcloud lub/i z s
 
 Aby uzyskać dostęp do instancji Web Cloud Databases, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.
 
-W Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud Databases`{.action}, a następnie do odpowiedniej instancji Web Cloud Databases. 
+W Panelu [klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud Databases`{.action}, a następnie do odpowiedniej instancji Web Cloud Databases. 
 
 Kliknij kartę Autoryzowane `IP`{.action}, a następnie przycisk `Dodaj adres IP/maskę`{.action}.
 
@@ -70,14 +70,14 @@ W przypadku hostingu OVHcloud możesz po prostu zaznaczyć opcję `Zezwól hosti
 > 
 > Jeśli Twoja usługa Web Cloud Databases jest powiązana z usługą hostingu www **Performance**, musisz wcześniej odłączyć ofertę Web Cloud Databases od hostingu **Performance**, aby przejść na wyższą ofertę.
 >
-> Aby odłączyć ofertę Web Cloud Databases powiązaną z hostingiem www **Performance**, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`{.action}, a następnie odpowiedni hosting w zakładce `Hosting`{.action}, która pojawi się w kolumnie z lewej strony. 
+> Aby odłączyć ofertę Web Cloud Databases powiązaną z hostingiem www **Performance**, przejdź do [Panelu klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`{.action}, a następnie odpowiedni hosting w zakładce `Hosting`{.action}, która pojawi się w kolumnie z lewej strony. 
 >
 > Na nowej stronie `Informacje ogólne`{.action}, która się wyświetla, znajduje się ramka zatytułowana `Konfiguracja`{.action} w centrum strony. Po prawej stronie pozycji `Web Cloud Databases`{.action} kliknij przycisk `...`{.action} a następnie na `Odłącz`{.action}. Wybierz najkrótszy okres odnowienia i postępuj zgodnie z instrukcjami aż do zatwierdzenia zamówienia.
 >
 > **Operacja ta jest nieodwracalna i usługa Web Cloud Databases będzie odpłatna niezależnie od hostingu Performance.**
 >
 
-Aby zmienić ofertę Web Cloud Databases, przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
+Aby zmienić ofertę Web Cloud Databases, przejdź do Panelu [klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
 W zakładce **"Informacje ogólne"**, która jest wyświetlana domyślnie, kliknij `...`{.action} po prawej stronie słowa "RAM", a następnie `Zmień ilość pamięci RAM`{.action}, aby przejść do zlecenia zamówienia na tą zmianę.
 
 ![Web Cloud Databases](images/change-the-amount-of-ram.png){.thumbnail}
@@ -98,13 +98,13 @@ Po zatwierdzeniu regulaminów zostaniesz przekierowany do zamówienia, abyś mó
 
 ### Zmiana konfiguracji serwera baz danych
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę prywatnego serwera SQL.
+Przejdź do Panelu [klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę prywatnego serwera SQL.
 
 #### Instancja MySQL i MariaDB
 
-- Kliknij kartę `Konfiguracja`.
+- Kliknij kartę `Konfiguracja`{.action}.
 
-W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Zastosuj`{.action}.
+W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Wyślij`{.action}.
 
 ![Web Cloud Databases](images/general-configuration-of-mysql.png){.thumbnail}
 
@@ -161,9 +161,24 @@ Wprowadź niezbędne zmiany i kliknij `Zatwierdź`{.action}.
 
 #### Instancja PostgreSQL
 
-Nie można zmienić konfiguracji instancji PostgreSQL. 
+- Kliknij zakładkę `Konfiguracja`{.action}.
 
-Możesz jednak aktywować rozszerzenia Twoich baz danych. W tym celu przejdź do zakładki `Bazy danych`, kliknij ikonę tabeli bazy danych w kolumnie **"Rozszerzenia"**
+W części **"Konfiguracja PostgreSQL"** znajdziesz aktualnie skonfigurowaną konfigurację Twojej bazy danych. Możesz ją bezpośrednio zmienić, po czym kliknij przycisk `Wyślij`{.action}.
+
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_messages**: Określa poziomy wiadomości do filtrowania w logach serwera. Poziomy dostępne dla rozwiązania Web Cloud Databases to: 
+    - **"WARNING"**: Dostarcza komunikaty ostrzegawcze o potencjalnych problemach.
+    - **"ERROR"**: Wysyła błąd, który spowodował anulowanie bieżącego zamówienia.
+    - **"LOG"**: Rejestruje informacje dla administratorów serwera.
+    - **"FATAL"**: Wysyła błąd, który spowodował zakończenie bieżącej sesji.
+    - **"PANIC"**: Wysyła błąd, który spowodował zakończenie wszystkich sesji.
+
+Każdy poziom obejmuje wszystkie następne poziomy. Im wyższy poziom, tym mniej wiadomości jest rejestrowanych w logach serwera.
+
+Domyślnie jest ustawiona wartość **"WARNING"**, ponieważ zawiera wartości **"ERROR"**, **"LOG"**, **"FATAL"** i **"PANIC"**.
+
+Możesz włączyć rozszerzenia dla swoich baz danych. W tym celu przejdź do zakładki `Bazy danych`{.action}, kliknij ikonę tabeli bazy danych w kolumnie **"Rozszerzenia"**
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
@@ -206,37 +221,13 @@ show variables like "version";
 
 ### Logi i metryki
 
-#### Statystyki czasu wykonywania zapytań
+#### Dostęp do logów
 
-Dzięki temu możesz wyświetlić czas wykonywania zapytań na serwerze baz danych w ciągu ostatnich 24 godzin.
-
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
-
-Przejdź do karty `Metryki` serwera baz danych. Wykres **"Statystyki czasu wykonywania zapytań"**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
-
-#### Dostęp do logów "Slow Query"
-
-> **Definicja "slow query log"**
-> 
-> Są to nieoptymalne zapytania, które trwają dłużej. Wartość jest ustawiona na 1 sekundę dla serwerów baz danych w zmiennej **"long_query_time"**.
-
-Logi te, nazywane **"slow-query.log"**, mogą zostać odzyskane z katalogu głównego przestrzeni SFTP Twojego serwera baz danych.
-
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
-
-W zakładce `informacje ogólne` sekcja **"SFTP"** w polu **"Informacje o logowaniu"**
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Aby zalogować się przez **SFTP**, możesz skorzystać z programu Filezilla i z niniejszego przewodnika: [ "Korzystanie z programu FileZilla na Twoim hostingu"](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-
-Jeśli ten plik jest pusty, to znaczy, że nie masz żadnych nieoptymalnych zapytań.
+Aby uzyskać dostęp do logów rozwiązania Web Cloud Databases, zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Jak pobrać logi?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Monitoruj zużytą pamięć RAM
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
+Przejdź do Panelu [klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
 
 Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki pamięci RAM"**.
 
@@ -246,7 +237,7 @@ Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki pamięci RAM"
 
 Wykres ten pozwala na śledzenie, w ciągu ostatnich 24 godzin, obciążenia połączeń na minutę na serwerze bazy danych.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
+Przejdź do Panelu [klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
 
 Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki całkowitej liczby połączeń na minutę"**.
 
@@ -309,8 +300,8 @@ Unikanie na przykład stosowania **"HAVING"**. Zwiększa to liczbę twoich zapyt
 
 [Lista adresów IP klastrów i hostingów](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

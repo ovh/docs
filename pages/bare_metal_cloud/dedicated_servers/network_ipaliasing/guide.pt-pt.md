@@ -1,7 +1,7 @@
 ---
 title: Como configurar um IP alias
 excerpt: Descubra como adicionar endereços Additional IP à configuração de rede
-updated: 2023-06-15
+updated: 2024-03-25
 ---
 
 > [!primary]
@@ -19,9 +19,16 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 
 **Este guia explica como realizar o IP aliasing**
 
+> [!warning]
+>
+> A OVHcloud oferece-lhe serviços pelos quais é responsável. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
+>
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/diretory/). Mais informações na secção « Ir mais longe » deste guia.
+>
+
 ## Requisitos
 
-- Ter um servidor dedicado ([VPS](https://www.ovh.pt/vps/){.external}, [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external} ou [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}).
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}.
 - Dispor de um ou vários endereços [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/){.external}.
 - Estar ligado ao servidor usando o protocolo SSH.
 
@@ -32,45 +39,79 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 
 ## Instruções
 
-O presente guia inclui instruções paras sistemas Linux e para o Windows Server.
+As secções seguintes contêm as configurações das distribuições que disponibilizamos atualmente e as distribuições/sistemas operativos mais utilizados. O primeiro passo consiste sempre em estabelecer a ligação ao servidor em SSH ou através de uma sessão de ligação GUI (RDP para um servidor Windows).
+
+> [!primary]
+>
+> Se pretender utilizar uma distribuição recente, poderá ser necessário fazer adaptações para configurar a sua interface de rede. Se encontrar dificuldades, recomendamos que consulte a documentação relativa ao seu sistema operativo.
+>
+
+**Tenha em atenção a seguinte terminologia que será utilizada nos exemplos de código e nas instruções das secções do guia abaixo:**
+
+|Termo|Descrição|Exemplos|
+|---|---|---|
+|ADDITIONAL_IP|Endereço IP adicional atribuído ao seu serviço|203.0.113.1|
+|NETWORK_INTERFACE|Nome da interface de rede|*eth0*, *ens3*|
+|ID|ID do alias IP, que começa por *0* (em função do número de IP suplementares a configurar)|*0*, *1*|
+
+Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas operativos, primeiro é necessário instalá-lo antes de o utilizar. Se for o caso, ser-lhe-á pedido que o faça. Pode, claro, utilizar o editor de texto que preferir.
 
 ### Debian 10/11
 
+Por predefinição, o ficheiro de configuração está situado em `/etc/network/interfaces.d/`. Recomendamos começar por realizar uma cópia de segurança do ficheiro de configuração correspondente.
+
 #### 1 - Fazer cópia do ficheiro de configuração (*source file*)
 
-Primeiro, faça uma cópia do ficheiro de configuração para, se necessário, poder reverter o sistema para o estado inicial.
+No nosso exemplo, o nosso ficheiro chama-se `50-cloud-init`, pelo que copiamos o ficheiro `50-cloud-init` utilizando o seguinte comando:
 
 ```sh
-cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 ```
 
-#### 2 - Alterar o ficheiro de configuração
-
-Agora altere o ficheiro de configuração usando o seguinte comando:
-
-```sh
-editor /etc/network/interfaces.d/50-cloud-init
-```
-
-De seguida, adicione uma interface secundária:
+Em caso de erro, poderá então reverter a operação através dos seguintes comandos:
 
 ```bash
+sudo rm -f /etc/network/interfaces.d/50-cloud-init
+sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
+```
+
+#### 2 - Editar o ficheiro de configuração
+
+> [!primary]
+>
+> Os nomes das interfaces de rede indicados neste manual podem ser diferentes dos seus. Adapte as operações em conformidade.
+>
+
+Já pode modificar o ficheiro de configuração:
+
+
+```sh
+sudo nano /etc/network/interfaces.d/50-cloud-init
+```
+
+De seguida, deverá adicionar uma interface virtual ou um alias ethernet. No nosso exemplo, a nossa interface chama-se `eth0`, pelo que o nosso alias é `eth0:0`. Faça isso para cada endereço Additional IP que deseja configurar.
+
+Não modifique as linhas existentes no ficheiro de configuração. Adicione simplesmente o seu Additional IP ao ficheiro como indicado abaixo, substituindo `ADDITIONAL_IP/32` assim como a interface virtual (se o seu servidor não utilizar **eth0:0**) pelos seus próprios valores:
+
+```console
 auto eth0:0
 iface eth0:0 inet static
 address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
-Para garantir que a interface secundária é ativada ao mesmo tempo que a interface `eth0`, adicione esta instrução à configuração de eth0:
+Também pode configurar o seu Additional IP adicionando as seguintes linhas ao ficheiro de configuração:
 
-```bash
+```console
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
-Se quiser adicionar dois Additional IP, o ficheiro `/etc/network/interfaces.d/50-cloud-init` deve ter um conteúdo semelhante a este:
+Com a configuração acima, a interface virtual é ativada ou desativada sempre que a interface `eth0` é ativada ou desativada.
 
-```bash
+Se tem dois Additional IP a configurar, o ficheiro `/etc/network/interfaces.d/50-cloud-init` deve ter o seguinte formato:
+
+```console
 auto eth0
 iface eth0 inet dhcp
 
@@ -84,9 +125,10 @@ iface eth0:1 inet static
 address ADDITIONAL_IP2
 netmask 255.255.255.255
 ```
+
 Ou assim:
 
-```bash
+```console
 auto eth0
 iface eth0 inet dhcp
 
@@ -99,84 +141,27 @@ post-up /sbin/ifconfig eth0:1 ADDITIONAL_IP2 netmask 255.255.255.255 broadcast A
 pre-down /sbin/ifconfig eth0:1 down
 ```
 
-#### 3 - Reiniciar a interface de rede
+**Exemplo de configuração:**
 
-Agora, execute este comando para reiniciar a interface:
-
-```sh
-/etc/init.d/networking restart
-```
-
-### Debian 6/7/8 e «derivações»
-
-#### 1 - Fazer cópia do ficheiro de configuração (*source file*)
-
-Primeiro, faça uma cópia do ficheiro de configuração para, se necessário, poder reverter o sistema para o estado inicial.
-
-```sh
-cp /etc/network/interfaces /etc/network/interfaces.bak
-```
-
-#### 2 - Alterar o ficheiro de configuração
-
-Agora altere o ficheiro de configuração usando o seguinte comando:
-
-```sh
-editor /etc/network/interfaces
-```
-
-De seguida, adicione uma interface secundária: 
-
-```bash
-auto eth0:0
-iface eth0:0 inet static
-address ADDITIONAL_IP
-netmask 255.255.255.255
-```
-
-Para garantir que a interface secundária é ativada ao mesmo tempo que a interface `eth0`, adicione esta instrução à configuração de eth0:
-
-```bash
-post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP
-pre-down /sbin/ifconfig eth0:0 down
-```
-
-Se quiser adicionar dois Additional IP, o ficheiro `/etc/network/interfaces` deve ter um conteúdo semelhante a este:
-
-```bash
+```console
 auto eth0
-iface eth0 inet static
-address SERVER_IP
-netmask 255.255.255.0
-broadcast xxx.xxx.xxx.255
-gateway xxx.xxx.xxx.254
+iface eth0 inet dhcp
 
 auto eth0:0
 iface eth0:0 inet static
-address ADDITIONAL_IP1
+address 203.0.113.1
 netmask 255.255.255.255
+```
 
-auto eth0:1
-iface eth0:1 inet static
-address ADDITIONAL_IP2
-netmask 255.255.255.255
+Ou:
 
-Ou assim:
-
+```console
 auto eth0
-iface eth0 inet static
-address SERVER_IP
-netmask 255.255.255.0
-broadcast xxx.xxx.xxx.255
-gateway xxx.xxx.xxx.254
+iface eth0 inet dhcp
 
 # IP 1
-post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
+post-up /sbin/ifconfig eth0:0 203.0.113.1 netmask 255.255.255.255 broadcast 203.0.113.1
 pre-down /sbin/ifconfig eth0:0 down
-
-# IP 2
-post-up /sbin/ifconfig eth0:1 ADDITIONAL_IP2 netmask 255.255.255.255 broadcast ADDITIONAL_IP2
-pre-down /sbin/ifconfig eth0:1 down
 ```
 
 #### 3 - Reiniciar a interface de rede
@@ -184,46 +169,10 @@ pre-down /sbin/ifconfig eth0:1 down
 Agora, execute este comando para reiniciar a interface:
 
 ```sh
-/etc/init.d/networking restart
+sudo /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17.04+ e Arch Linux
-
-Estes sistemas não usam a terminologia eth0, eth1. Como tal, iremos usar o `systemd-network`.
-
-#### 1 - Fazer cópia do ficheiro de configuração (*source file*)
-
-Primeiro, faça uma cópia do ficheiro de configuração para, se necessário, poder reverter o sistema para o estado inicial.
-
-```sh
-cp /etc/systemd/network/50-default.network /etc/systemd/network/50-default.network.bak
-```
-
-#### 2 - Alterar o ficheiro de configuração
-
-O Additional IP deve ser adicionado ao ficheiro da seguinte forma:
-
-```sh
-nano /etc/systemd/network/50-default.network
-```
-
-```sh
-[Address]
-Address=22.33.44.55/32
-Label=failover1 # optional
-```
-
-O «label» é facultativo. Este serve apenas para ordenar os vários Additional IP.
-
-#### 3 - Reiniciar a interface de rede
-
-Agora, execute este comando para reiniciar a interface:
-
-```sh
-systemctl restart systemd-networkd
-```
-
-### Fedora 36 e versões posteriores
+### Fedora 38 e versões posteriores
 
 Fedora utiliza agora ficheiros chave (*keyfiles*).
 Fedora utilizava anteriormente perfis de rede armazenados pela NetworkManager no formato ifcfg no diretório `/etc/sysconfig/network-scripts/`.<br>
@@ -231,30 +180,47 @@ Uma vez que o ifcfg se encontra agora em imparidade, NetworkManager não cria de
 
 #### 1 - Fazer cópia do ficheiro de configuração (*source file*)
 
-Primeiro, faça uma cópia do ficheiro de configuração para poder reverter a situação a qualquer momento:
+> [!primary]
+>
+> Tenha em atenção que o nome do ficheiro de rede no nosso exemplo pode ser diferente do seu. Adapte os exemplos com o nome apropriado.
+>
+
+Recomendamos começar por realizar uma cópia de segurança do ficheiro de configuração correspondente. No nosso exemplo, o nosso ficheiro de configuração chama-se `cloud-init-eno1.nmconnection`:
 
 ```sh
-cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+Em caso de erro, poderá então reverter a operação através dos seguintes comandos:
+
+```sh
+sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
 #### 2 - Editar o ficheiro de configuração
 
 > [!primary]
->
-> Tenha em conta que o nome do ficheiro de rede no nosso exemplo pode diferir do seu. Queira adaptar os comandos em função do nome do seu ficheiro. Para obter o nome da interface de rede para poder editar o ficheiro de rede adequado, pode executar o seguinte comando: `ip a`.
->
-> Também pode verificar a interface ligada com o seguinte comando:
->
-> `nmcli connection show`
+> Tenha em conta que o nome do ficheiro de rede no nosso exemplo pode ser diferente do seu. Adapte os comandos ao seu nome de ficheiro.
 >
 
-O Additional IP deve ser adicionado ao ficheiro da seguinte forma:
+Para obter o nome da interface de rede para editar o ficheiro de rede adequado, pode executar um dos seguintes comandos:
 
 ```sh
-editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+ip a
 ```
 
 ```sh
+nmcli connection show
+```
+
+Não altere as linhas existentes no ficheiro de configuração. Adicione o seu Additional IP ao ficheiro da seguinte forma, substituindo `ADDITIONAL_IP/32` pelos seus próprios valores:
+
+```sh
+sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+```console
 [ipv4]
 method=auto
 may-fail=false
@@ -263,18 +229,7 @@ address1=ADDITIONAL_IP/32
 
 Se tem dois endereços Additional IP a configurar, o ficheiro de configuração deverá ser o seguinte:
 
-```sh
-[connection]
-id=cloud-init eno1
-uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
-type=ethernet
-
-[user]
-org.freedesktop.NetworkManager.origin=cloud-init
-
-[ethernet]
-mac-address=MA:CA:DD:RE:SS:XX
-
+```console
 [ipv4]
 method=auto
 may-fail=false
@@ -282,53 +237,95 @@ address1=ADDITIONAL_IP1/32
 address2=ADDITIONAL_IP2/32
 ```
 
+**Exemplo de configuração:**
+
+```console
+[ipv4]
+method=auto
+may-fail=false
+address1=203.0.113.1/32
+```
+
 #### 3 - Reiniciar a interface
 
 Agora, reinicie a sua interface:
 
 ```sh
-systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
-### Ubuntu 17.10 e versões seguintes
+### Debian 12, Ubuntu 20.04 e versões seguintes
 
-Cada endereço Additional IP necessitará da sua própria linha no ficheiro de configuração. Este tem o nome `50-cloud-init.yaml` e encontra-se em `/etc/netplan`.
+Por padrão, os arquivos de configuração estão localizados no diretório `/etc/netplan`.
+
+A melhor abordagem é criar um ficheiro de configuração separado para configurar os endereços Additional IP. Isto permite um retrocesso fácil em caso de erro.
 
 #### 1 - Determinar a interface
 
 ```sh
-ifconfig
+ip a
 ```
 
-Tome nota do nome da interface e do endereço MAC.
+Anote o nome da interface (a interface na qual está configurado o endereço IP principal do servidor).
 
 #### 2 - Criar o ficheiro de configuração
 
-Ligue-se ao seu servidor através de SSH e execute o seguinte comando:
+De seguida, crie um ficheiro de configuração com uma extensão `.yaml`. No nosso exemplo, o nosso ficheiro chama-se `51-cloud-init.yaml`.
 
 ```sh
-editor /etc/netplan/50-cloud-init.yaml
+sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-De seguida, edite o ficheiro com o conteúdo em baixo, substituindo "INTERFACE_NAME", "MAC_ADDRESS" e "ADDITIONAL_IP":
+De seguida, edite o ficheiro com o conteúdo abaixo, substituindo `INTERFACE_NAME` e `ADDITIONAL_IP` pelos seus próprios valores:
 
-```sh
+```yaml
 network:
-    version: 2
-    ethernets:
-        INTERFACE_NAME:
-            dhcp4: true
-            match:
-                macaddress: MAC_ADDRESS
-            set-name: INTERFACE_NAME
-            addresses:
-            - ADDITIONAL_IP/32
+   version: 2
+   renderer: networkd
+   ethernets:
+       INTERFACE_NAME:
+           dhcp4: true
+           addresses:
+           - ADDITIONAL_IP/32
 ```
 
-Registe e feche o ficheiro. Para testar a configuração introduza o seguinte comando:
+Se tiver dois endereços Additional IP a configurar, o ficheiro de configuração deve ter o seguinte formato:
+
+
+```yaml
+network:
+   version: 2
+   renderer: networkd
+   ethernets:
+       INTERFACE_NAME:
+           dhcp4: true
+           addresses:
+           - ADDITIONAL_IP1/32
+           - ADDITIONAL_IP2/32
+```
+
+> [!warning]
+>
+> É importante respeitar o alinhamento de cada elemento deste ficheiro, tal como é representado no exemplo acima. Não utilize a tecla de tabulação para criar o seu espaçamento. Apenas é necessário tecla de espaço.
+>
+
+**Exemplo de configuração:**
+
+```yaml
+network:
+   version: 2
+   renderer: networkd
+   ethernets:
+       eth0:
+           dhcp4: true
+           addresses:
+           - 203.0.113.1/32         
+```
+
+Guarde e feche o ficheiro. Pode testar a configuração com o seguinte comando:
 
 ```sh
-# netplan try
+sudo netplan try
 ```
 
 #### 3 - Aplicar a alteração
@@ -336,41 +333,62 @@ Registe e feche o ficheiro. Para testar a configuração introduza o seguinte co
 De seguida, execute os seguintes comandos para aplicar a configuração:
 
 ```sh
-# netplan apply
+sudo netplan apply
 ```
 
-### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9), e Fedora (versão 25 e anteriores)
+> [!primary]
+> Quando utilizar o comando `netplan try`, é possível que o sistema envie uma mensagem de aviso tal como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be access by others`. Isso simplesmente significa que o arquivo não tem permissões restritivas. Isto não afeta a configuração do seu Additional IP. Para mais informações sobre as permissões dos ficheiros, consulte a [documentação oficial do ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+>
 
-#### 1 - Fazer cópia do ficheiro de configuração (*source file*)
+### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
-Primeiro, faça uma cópia do ficheiro de configuração para, se necessário, poder usá-lo como modelo (*template*):
+
+O ficheiro de configuração principal encontra-se em `/etc/sysconfig/network-scripts/`. No nosso exemplo, é chamado `ifcfg-eth0`. Antes de fazer alterações, verifique o nome real do arquivo nessa pasta.
+
+Para cada Additional IP a configurar, criamos um ficheiro de configuração separado com os seguintes parâmetros: `ifcfg-NETWORK_INTERFACE:ID`. Onde "NETWORK_INTERFACE" representa a interface física e "ID" é a interface de rede virtual ou o alias ethernet que começa por um valor de 0. Por exemplo, para a nossa interface chamada `eth0`, o primeiro alias é `eth0:0`, o segundo alias é `eth0:1`, etc...
+
+#### 1 - Determinar a interface
 
 ```sh
-cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0:0
+ip a
 ```
 
-#### 2 - Alterar o ficheiro de configuração
+Anote o nome da interface (aquela em que o endereço IP principal do seu servidor está configurado).
 
-Altere o ficheiro eth0:0 para substituir o IP:
+#### 2 - Criar o ficheiro de configuração
+
+
+Comece por criar o ficheiro de configuração. Substitua `NETWORK_INTERFACE:ID` pelos seus próprios valores.
 
 ```sh
-editor /etc/sysconfig/network-scripts/ifcfg-eth0:0
+sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
 ```
 
-Substitua o nome do `Device` e, de seguida, o IP existente pelo Additional IP:
+De seguida, modifique o ficheiro com o conteúdo abaixo, substituindo `NETWORK_INTERFACE:ID` e `ADDITIONAL_IP` pelos seus próprios valores:
 
-```bash
-DEVICE="eth0:0"
-ONBOOT="yes"
-BOOTPROTO="none" # For CentOS use "static"
-IPADDR="ADDITIONAL_IP"
-NETMASK="255.255.255.255"
-BROADCAST="ADDITIONAL_IP"
+```console
+DEVICE=NETWORK_INTERFACE:ID
+ONBOOT=yes
+BOOTPROTO=none # For CentOS use "static"
+IPADDR=ADDITIONAL_IP
+NETMASK=255.255.255.255
+BROADCAST=ADDITIONAL_IP
 ```
 
-#### 3 - Reiniciar a interface de rede
+**Exemplo de configuração:**
 
-Agora, execute este comando para reiniciar a interface:
+```console
+DEVICE=eth0:0
+ONBOOT=yes
+BOOTPROTO=none # For CentOS use "static"
+IPADDR=203.0.113.1
+NETMASK=255.255.255.255
+BROADCAST=203.0.113.1
+```
+
+#### 3 - Reiniciar a interface alias
+
+De seguida, reinicie a sua interface alias. Substitua `eth0:0` pelos seus próprios valores:
 
 ```sh
 ifup eth0:0
@@ -381,108 +399,35 @@ ifup eth0:0
 Execute este comando para reiniciar a interface:
 
 ```sh
-systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
-### Gentoo
+### cPanel
 
-#### 1 - Fazer cópia do ficheiro de configuração (*source file*)
-
-Primeiro, faça uma cópia do ficheiro de configuração para, se necessário, poder reverter o sistema para o estado inicial.
-
-```sh
-cp /etc/conf.d/net /etc/conf.d/net.bak
-```
-
-#### 2 - Alterar o ficheiro de configuração
-
-Agora, altere o ficheiro para adicionar o Additional IP. Com o Gentoo, o IP alias é adicionado diretamente à interface eth0. Neste caso, não é necessário criar a interface eth0:0 (como no caso do Red Hat ou do CentOS).
-
-> [!warning]
->
-> Para garantir o correto funcionamento de algumas configurações OVH, o IP original do servidor e a instrução config_eth0= devem ficar na mesma linha
-> 
-
-Depois tem que inserir o Additional IP na linha abaixo da netmask **255.255.255.0** (substitua SERVER_IP pelo IP principal do seu servidor).
-
-```sh
-editor /etc/conf.d/net
-```
-
-Agora, adicione a seguinte instrução:
-
-```bash
-config_eth0=( "SERVER_IP netmask 255.255.255.0" "ADDITIONAL_IP netmask 255.255.255.255 brd ADDITIONAL_IP" )
-```
-
-O ficheiro /etc/conf.d/net deve conter a instrução:
-
-```bash
-#This blank configuration will automatically use DHCP for any net.
-# scripts in /etc/init.d. To create a more complete configuration,
-# please review /etc/conf.d/net.example and save your configuration
-# in /etc/conf.d/net (this file :]!).
-config_eth0=( "SERVER_IP netmask 255.255.255.0"
-"ADDITIONAL_IP netmask 255.255.255.255 brd ADDITIONAL_IP" )
-routes_eth0=( "default gw SERVER_IP.254" )
-```
-
-Para fazer ping ao Additional IP, basta reiniciar a interface de rede.
-
-#### 3 - Reiniciar a interface de rede
-
-Agora, execute este comando para reiniciar a interface:
-
-```sh
-/etc/init.d/net.eth0 restart
-```
-
-### openSUSE
-
-#### 1 - Fazer cópia do ficheiro de configuração (*source file*)
-
-Primeiro, faça uma cópia do ficheiro de configuração para, se necessário, poder reverter o sistema para o estado inicial.
-
-```sh
-cp /etc/sysconfig/network/ifcfg-ens32 /etc/sysconfig/network/ifcfg-ens32.bak
-```
-
-#### 2 - Alterar o ficheiro de configuração
-
-Agora, altere o ficheiro /etc/sysconfig/network/ifcfg-ens32 da seguinte forma:
-
-```bash
-IPADDR_1=FADDITIONAL_IP
-NETMASK_1=255.255.255.255
-LABEL_1=ens32:0
-```
-
-### cPanel (em CentOS 7)
-
-#### 1: aceder à secção gestão IP da WHM
+#### 1 - Aceder à secção gestão IP da WHM
 
 Na Área de Cliente WHM, clique em `IP Functions`{.action} e selecione `Add a New IP Address`{.action} no menu à esquerda.
 
 ![Adicionar um novo endereço IP](images/Cpanel-1.png){.thumbnail}
 
-#### 2: adicionar as informações dos Adicionais IP
+#### 2 - Adicionar as informações dos Adicionais IP
 
 Insira o seu endereço Additional IP sob a forma "xxx.xxx.xxx.xxx" no campo "New IP or IP range to add".
 
 Selecione `255.255.255.255` como máscara de sub-rede e clique em `Submit`{.action}.
 
-![indicar novas informações sobre o novo endereço IP](images/Cpanel-2.png){.thumbnail}
+![indicar novas informações sobre o novo endereço IP](images/Cpanel-2024.png){.thumbnail}
 
 > [!warning]
 >
 > Atenção: se tiver vários endereços IP a configurar num bloco e os adicionar ao mesmo tempo, o sistema WHM irá obrigar-lo a utilizar a máscara de sub-rede `255.255.255.0`.Não é recomendado que utilize esta configuração, deve adicionar cada IP individualmente para utilizar a máscara de sub-rede apropriada `255.255.255.255`.
 >
 
-#### 3: verificar a configuração IP atual
+#### 3 - Verificar a configuração IP atual
 
 De volta para a secção `IP Functions`{.action}, clique em `Show or Delete Current IPs`{.action} para verificar que o endereço Additional IP foi corretamente adicionado.
 
-![check configurgured IP](images/Cpanel-3.png){.thumbnail}
+![check configurgured IP](images/Cpanel-2024-1.png){.thumbnail}
 
 ### Windows Server
 
@@ -492,17 +437,17 @@ Se não, tem que alterar a configuração de rede para usar IP fixo em vez da co
 
 Abra a linha de comando `cmd`{.action} ou o `powershell`{.action} e introduza este comando:
 
-```sh
-ipconfig /all
+```powershell
+ipconfig
 ```
 
 A seguir, irá visualizar a seguinte informação:
 
-![Result of "ipconfig /all" command](images/guides-network-ipaliasing-windows-2008-1.png){.thumbnail}
+![Result of "ipconfig" command](images/ipconfig.png){.thumbnail}
 
 Guarde os dados relativos ao IPv4, à máscara de sub-rede, ao *gateway* predefinido e ao nome da placa de rede.
 
-No nosso exemplo, o IP do servidor é: **94.23.229.151**
+No nosso exemplo, o IP do servidor é: **192.0.2.28**
 
 Os próximos passos pode ser efetuados através da linha de comandos ou da interface gráfica:
 
@@ -513,9 +458,9 @@ Nos comandos indicados abaixo, deve substituir:
 |Comando|Valor|
 |---|---|
 |NETWORK_ADAPTER| Nome da placa de rede (no nosso exemplo: Local Area Connection)|
-|IP_ADDRESS| Endereço IP do servidor (no nosso exemplo: 94.23.229.151)|
+|IP_ADDRESS| Endereço IP do servidor (no nosso exemplo: 192.0.2.28)|
 |SUBNET_MASK| Máscara de sub-rede (no nosso exemplo: 255.255.255.0)|
-|GATEWAY| *Gateway* predefinido (no nosso exemplo: 94.23.229.254)|
+|GATEWAY| *Gateway* predefinido (no nosso exemplo: 192.0.2.254)|
 |ADDITIONAL_IP| Endereço Additional IP que deseja adicionar|
 
 > [!warning]
@@ -527,18 +472,18 @@ Execute as seguintes ações na linha de comandos:
 
 - Passar para IP fixo
 
-```sh
+```powershell
 netsh interface ipv4 set address name="NETWORK_ADAPTER" static IP_ADDRESS SUBNET_MASK GATEWAY
 ```
 
 - Definir servidor DNS
 
-```sh
+```powershell
 netsh interface ipv4 set dns name="NETWORK_ADAPTER" static 213.186.33.99
 ```
 - Adicionar Additional IP
 
-```sh
+```powershell
 netsh interface ipv4 add address "NETWORK_ADAPTER" ADDITIONAL_IP 255.255.255.255
 ```
 
@@ -546,34 +491,43 @@ O Additional IP está a funcionar.
 
 #### Através da interface gráfica
 
-1. Aceda ao menu `Iniciar`{.action} > `Painel de Gestão`{.action} > `Rede e Internet`{.action} > `Centro de Rede e Partilha`{.action} > `Alterar as definições da placa`{.action} (no menu à esquerda).
-2. Clique com o botão direito do rato em `Ligação à rede local`{.action}.
-3. Clique em `Propriedades`{.action}.
-4. Selecione o `Protocolo Internet Versão 4 (TCP/IPv4)`{.action}, e clique em `Propriedades`{.action}.
-5. Clique em `Utilizar o seguinte endereço IP `{.action} e introduza o IP principal do servidor, a máscara de sub-rede e o *gateway* predefinido, apresentados após a execução do comando `ipconfig`{.action} (ver exemplo acima). Em servidor DNS preferido, introduza 213.186.33.99.
+1. Aceda ao menu `Start`{.action} > `Control Panel`{.action} > `Network and Internet`{.action} > `Network and Sharing Centre`{.action} > `Change Adapter Settings`{.action} (no menu à esquerda).
+2. Clique com o botão direito do rato na sua ligação de rede, no nosso exemplo `Ethernet 2`{.action}.
+3. Clique em `Properties`{.action}.
+4. Selecione o `Internet Protocol Version 4 (TCP/IPv4)`{.action}, e clique em `Properties`{.action}.
+5. Clique em `Use the following IP address`{.action} e introduza o IP principal do servidor, a máscara de sub-rede e o *gateway* predefinido, apresentados após a execução do comando `ipconfig`{.action} (ver exemplo acima). Em `Preferred DNS Server`, introduza 213.186.33.99.
 
 ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
 
 > [!warning]
 >
-> Atenção: se introduzir informação incorreta, o servidor ficará inacessível. Neste caso, terá de usar o modo Winrescue ou o KVM para corrigir os dados.
+> Atenção: se introduzir informação incorreta, o servidor ficará inacessível. Será obrigado a efetuar as correções em modo [WinRescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#windows) ou através do [KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
 > 
 
-Depois, clique em `Avançado`{.action} (nas `Definições TCP/IP`{.action}).
+Depois, clique em `Advanced`{.action} (nas `TCP/IP Settings`{.action}).
 
-![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
+![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip-1.png){.thumbnail}
 
-Na parte `Endereço IP`{.action}, clique em `Adicionar`{.action}:
+Na parte `IP Address`{.action}, clique em `Add`{.action}:
 
-![Advanced TCP/IPv4 Settings](images/guides-network-ipaliasing-windows-2008-3.png){.thumbnail}
+![Advanced TCP/IPv4 Settings](images/add-additional-ip.png){.thumbnail}
 
-Introduza o Additional IP e a máscara de sub-rede **255.255.255.255**.
+Introduza o Additional IP e a máscara de sub-rede **255.255.255.255**. Em seguida, clique em `Add`{.action}.
 
-![TCP/IP Address](images/guides-network-ipaliasing-windows-2008-4.png){.thumbnail}
+![TCP/IP Address](images/configure-additional-ip.png){.thumbnail}
 
-Clique em `Adicionar`{.action}.
+Clique em `OK`{.action} para validar a sua configuração.
 
-O Additional IP está a funcionar.
+O seu Additional IP está agora funcional, pode verificar a configuração com o seguinte comando:
+
+```powershell
+ipconfig
+```
+
+Terá um resultado semelhante ao seguinte exemplo:
+
+![Final configuration](images/final-ip-configuration.png){.thumbnail}
+
 
 ### Plesk
 
@@ -583,142 +537,42 @@ No painel de configuração Plesk, selecione `Tools & Settings`{.action} na barr
 
 ![acesso à gestão dos endereços IP](images/pleskip1.png){.thumbnail}
 
-Clique em `IP Endereço`{.action} em **Tools & Settings**.
+Clique em `IP Addresses`{.action} em **Tools & Settings**.
 
 #### Etapa 2: adicionar informações IP suplementares
 
 Nesta secção, clique no botão `Add IP Address`{.action}.
 
-![adicionar informações IP](images/pleskip2-2.png){.thumbnail}
+![adicionar informações IP](images/Plesk-2024.png){.thumbnail}
 
 Introduza o seu endereço Additional IP sob a forma `xxx.xxx.xxx.xxx/32` no campo "IP address and subnet mask", e clique em `OK`{.action}.
 
-![adicionar informações IP](images/pleskip3-3.png){.thumbnail}
+![adicionar informações IP](images/Plesk-2024-1.png){.thumbnail}
 
 #### Etapa 3: verificar a configuração IP atual
 
-Na secção "Endereços IP", verifique se o endereço Additional IP foi adicionado corretamente.
+Na secção "IP Addresses", verifique se o endereço Additional IP foi adicionado corretamente.
 
-![configuração IP atual](images/pleskip4-4.png){.thumbnail}
+![configuração IP atual](images/Plesk-2024-2.png){.thumbnail}
 
-### FreeBSD
 
-#### 1 - Identificar a interface
-
-Primeiro tem de identificar o nome da interface de rede principal. Execute o comando `ifconfig`{.action} para obter esta informação:
-
-```sh
-ifconfig
-```
-
-Resultados apresentados:
-
-```sh
-ifconfig
->>> nfe0: flags=8843 metric 0 mtu 1500
->>> options=10b
->>> ether 00:24:8c:d7:ba:11
->>> inet 94.23.196.18 netmask 0xffffff00 broadcast 94.23.196.255
->>> inet 87.98.129.74 netmask 0xffffffff broadcast 87.98.129.74
->>> media: Ethernet autoselect (100baseTX )
->>> status: active
->>> lo0: flags=8049 metric 0 mtu 16384
->>> options=3
->>> inet6 fe80::1%lo0 prefixlen 64 scopeid 0x2
->>> inet6 ::1 prefixlen 128
->>> inet 127.0.0.1 netmask 0xff000000 v comsdvt#
-```
-
-No nosso exemplo, o nome da interface é **nfe0**.
-
-#### 2 - Fazer cópia do ficheiro de configuração (<i>source file</i>)
-
-Primeiro, faça uma cópia do ficheiro de configuração para, se necessário, poder reverter o sistema para o estado inicial.
-
-```sh
-cp /etc/rc.conf /etc/rc.conf.bak
-```
-
-#### 3 - Alterar ficheiro de configuração
-
-Altere o ficheiro /etc/rc.conf, usando o seguinte comando:
-
-```sh
-editor /etc/rc.conf
-```
-
-De seguida, adicione esta linha no final do ficheiro: ifconfig_INTERFACE_alias0=`inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP`.
-
-Substitua **INTERFACE** e **ADDITIONAL_IP** pelo nome da interface (indicado no passo 1) e pelo endereço Additional IP. Exemplo:
-
-```bash
-ifconfig_nfe0_alias0="inet 87.98.129.74 netmask 255.255.255.255 broadcast 87.98.129.74"
-```
-
-#### 4 - Reiniciar interface de rede
-
-Agora, execute este comando para reiniciar a interface:
-
-```sh
-/etc/rc.d/netif restart && /etc/rc.d/routing restart
-```
-
-### Solaris
-
-#### 1 - Identificar a interface
-
-Primeiro tem de identificar o nome da interface de rede principal. Execute o comando `ifconfig`{.action} para obter esta informação:
-
-```sh
-ifconfig -a
-```
-
-Resultados apresentados:
-
-```sh
-ifconfig -a
->>> lo0: flags=2001000849 mtu 8232 index 1 inet 127.0.0.1 netmask ff000000 e1000g0: flags=1000843 mtu 1500 index 2 inet 94.23.41.167 netmask ffffff00 broadcast 94.23.41.255 ether 0:1c:c0:f2:be:42
-```
-
-No nosso exemplo, o nome da interface é **e1000g0**.
-
-#### 2 - Fazer cópia do ficheiro de configuração (<i>source file</i>)
-
-Primeiro, faça uma cópia do ficheiro de configuração para, se necessário, poder reverter o sistema para o estado inicial.
-
-```sh
-editor /etc/hostname.e1000g0:1
-```
-
-#### 3 - Alterar ficheiro de configuração
-
-Adicione a seguinte informação ao ficheiro: **ADDITIONAL_IP/32 up**, em que **ADDITIONAL_IP** corresponde ao seu Additional IP. Por exemplo:
-
-```bash
-188.165.171.40/32 up
-```
-
-#### 4 -  Reiniciar a interface de rede
-
-Agora, execute este comando para reiniciar a interface:
-
-```sh
-svcadm restart svc:/network/physical:default
-```
-
-#### Resolução das deficiências
+### Resolução das deficiências
 
 Se não conseguir estabelecer uma ligação entre a rede pública e o seu alias IP e suspeitar de um problema de rede, reinicie o servidor em [modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) e configure o alias diretamente no servidor.
 
 Para isso, execute o seguinte comando depois de reiniciar o servidor em modo rescue:
 
-```bash
+```sh
 ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Onde irá substituir "ADITIONAL_IP" pelo verdadeiro Adicional IP.
+Onde irá substituir "ADDITIONAL_IP" pelo verdadeiro Additional IP.
 
-De seguida, basta efetuar um ping a partir do seu IP adicional para o exterior. Se isto funcionar, isto provavelmente significa que existe um erro de configuração que precisa de ser corrigido. Se, pelo contrário, o IP ainda não funcionar, abra um ticket à equipa de assistência através da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para uma investigação complementar.
+De seguida,efetuar um ping a partir do seu Additional IP para o exterior. Se isso funcionar, provavelmente significa que há um erro de configuração que precisa ser corrigido. Se, pelo contrário, o endereço IP não funcionar, abra um ticket junto da equipa de assistência através do [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help){.external} com as seguintes informações:
+
+- O nome e a versão do sistema operativo que utiliza no seu servidor.
+- Nome e diretório do ficheiro de configuração de rede.
+- O conteúdo deste ficheiro.
 
 ## Quer saber mais?
 

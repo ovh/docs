@@ -12,7 +12,7 @@ At the end of this guide, you will have the basics to manage the deployment of y
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account. You can find more information in our guide [Creating your first Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project).
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account. You can find more information in our guide [Creating your first Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project).
 - The 3CX IPBX requires a valid license to be used. Ensure that you have a valid license during deployment. You can find all the information on <https://www.3cx.com/>.
 
 ## Instructions
@@ -21,7 +21,7 @@ At the end of this guide, you will have the basics to manage the deployment of y
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
 
 We will use a template in XML format so that we can automatically configure the 3CX instance.
@@ -599,7 +599,7 @@ For our guide, we will use a **Discovery D2-4** instance.
 
 #### Deployment via the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and click on the `Public Cloud`{.action} menu.
+Log in to your [OVHcloud Control Panel](/links/manager) and click on the `Public Cloud`{.action} menu.
 
 Select your Public Cloud project.
 
@@ -662,8 +662,8 @@ In this JSON, insert the template into `userData`. Warning: line breaks must be 
 
 [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 
-For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

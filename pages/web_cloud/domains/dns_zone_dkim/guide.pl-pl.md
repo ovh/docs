@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja rekordu DKIM
 excerpt: Dowiedz się, jak skonfigurować rekord DKIM w Twojej domenie i platformie e-mail OVHcloud
-updated: 2024-02-16
+updated: 2024-04-04
 ---
 
 <style>
@@ -39,15 +39,15 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
 
 ## Wymagania początkowe
 
-- Posiadanie dostępu do interfejsu zarządzania domeną w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub u operatora domeny, jeśli jest zarejestrowany poza OVHcloud.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Wykupienie jednej z naszych ofert [Exchange](https://www.ovhcloud.com/pl/emails/), [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/) lub usługi e-mail poza OVHcloud z DKIM
+- Posiadanie dostępu do interfejsu zarządzania domeną w [Panelu klienta OVHcloud](/links/manager) lub u operatora domeny, jeśli jest zarejestrowany poza OVHcloud.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Wykupienie jednej z naszych ofert [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) lub usługi e-mail poza OVHcloud z DKIM
 
 > [!warning]
 >
 > Jeśli Twoja domena nie używa serwerów DNS OVHcloud, przeprowadź zmianę DKIM w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 >
-> Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w zakładce `Strefa DNS`{.action}, po wybraniu domeny.
+> Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud w [Panelu klienta](/links/manager) w zakładce `Strefa DNS`{.action}, po wybraniu domeny.
 >
 
 ## W praktyce
@@ -77,6 +77,7 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
 - [Przykłady zastosowań](#usecases)
     - [Jak zmienić parę kluczy DKIM?](#2selectors)
     - [Dlaczego ikona DKIM jest zaznaczona na czerwono w Panelu klienta?](#reddkim)
+    - [W interfejsie API OVHcloud, jak zrozumieć stan DKIM, który nie działa?](#api-error)
 
 
 ### Jak działa DKIM? <a name="how-dkim-work"></a>
@@ -144,7 +145,7 @@ Odbiorca **recipient@otherdomain.ovh** będzie mógł odszyfrować ten podpis kl
 
 ### Automatyczna konfiguracja DKIM dla usługi e-mail Exchange lub E-mail Pro OVHcloud <a name="auto-dkim"></a>
 
-Automatyczna konfiguracja DKIM jest dostępna dla ofert e-mail [Exchange](https://www.ovhcloud.com/pl/emaile/) i [E-mail Pro](https://www.ovhcloud.com/pl/emaile/email-pro/).
+Automatyczna konfiguracja DKIM jest dostępna dla ofert e-mail [Exchange](/links/web/emails-hosted-exchange) i [E-mail Pro](/links/web/email-pro).
 
 Domyślnie DKIM nie jest aktywowany podczas dodawania domeny do platformy. Dlatego rozpocznij proces automatycznej konfiguracji w Panelu klienta.
 
@@ -192,13 +193,13 @@ Kliknij kartę poniżej odnoszącą się do Twojej oferty.
 > [!tabs]
 > **Exchange**
 >>
->> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Następnie kliknij nazwę odpowiedniej usługi Exchange. Domyślnie nazwa Twojej platformy odpowiada jej nazwie lub będzie widoczna pod przypisaną jej nazwą (patrz obrazek poniżej).
+>> W [Panelu klienta OVHcloud](/links/manager) w zakładce `Web Cloud`{.action} kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Następnie kliknij nazwę odpowiedniej usługi Exchange. Domyślnie nazwa Twojej platformy odpowiada jej nazwie lub będzie widoczna pod przypisaną jej nazwą (patrz obrazek poniżej).
 >>
 >> ![email](images/dns-dkim-platform-exchange.png){.thumbnail}
 >>
 > **E-mail Pro**
 >>
->> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij `E-mail Pro`{.action}, a następnie nazwę odpowiedniej usługi E-mail Pro. Domyślnie nazwa Twojej platformy odpowiada jej nazwie lub będzie widoczna pod przypisaną jej nazwą (patrz obrazek poniżej).
+>> W [Panelu klienta OVHcloud](/links/manager) w zakładce `Web Cloud`{.action} kliknij `E-mail Pro`{.action}, a następnie nazwę odpowiedniej usługi E-mail Pro. Domyślnie nazwa Twojej platformy odpowiada jej nazwie lub będzie widoczna pod przypisaną jej nazwą (patrz obrazek poniżej).
 >>
 >> ![email](images/dns-dkim-platform-emailpro.png){.thumbnail}
 
@@ -316,7 +317,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >> > Możliwe, że `status:` lub w `todo` nie ma to wpływu na konfigurację strefy DNS.
 >>
 > **4.Konfiguracja rekordu DNS**
->> Z [strefy klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), gdzie nazwa Twojej domeny Exchange, w zakładce `Web Cloud`{.action} kliknij `Nazwy domen`{.action} w lewej kolumnie i wybierz odpowiednią nazwę domeny.<br>
+>> Z [strefy klienta OVHcloud](/links/manager), gdzie nazwa Twojej domeny Exchange, w zakładce `Web Cloud`{.action} kliknij `Nazwy domen`{.action} w lewej kolumnie i wybierz odpowiednią nazwę domeny.<br>
 >> Przejdź do zakładki `Strefa DNS`{.action}, następnie kliknij `Dodaj rekord`{.action} w oknie, które się wyświetli. Wybierz `CNAME` i uzupełnij zgodnie z podanymi przez Ciebie wartościami.<br>
 >>
 >> Jeśli weźmiemy wartości z przykładu na etapie "**3.Pobierz rekord DNS**":
@@ -467,7 +468,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >> > Możliwe, że `status:` lub w `todo` nie ma to wpływu na konfigurację strefy DNS.
 >>
 > **4.Konfiguracja rekordu DNS**
->> Z [strefy klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), gdzie nazwa Twojej domeny Platforma E-mail Pro, w zakładce `Web Cloud`{.action} kliknij `Nazwy domen`{.action} w lewej kolumnie i wybierz odpowiednią nazwę domeny.<br>
+>> Z [strefy klienta OVHcloud](/links/manager), gdzie nazwa Twojej domeny Platforma E-mail Pro, w zakładce `Web Cloud`{.action} kliknij `Nazwy domen`{.action} w lewej kolumnie i wybierz odpowiednią nazwę domeny.<br>
 >> Przejdź do zakładki `Strefa DNS`{.action}, następnie kliknij `Dodaj rekord`{.action} w oknie, które się wyświetli. Wybierz `CNAME` i uzupełnij zgodnie z podanymi przez Ciebie wartościami.<br>
 >>
 >> Jeśli weźmiemy wartości z przykładu na etapie "**3.Pobierz rekord DNS**":
@@ -684,7 +685,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 
 Jeśli chcesz skonfigurować strefę DNS, aby dodać rekord DKIM dla Twojej usługi, postępuj zgodnie z instrukcjami podanymi poniżej.
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij zakładkę `Web Cloud`{.action}, następnie `Domeny`{.action} w kolumnie z lewej strony i wybierz odpowiednią nazwę domeny.
+W [Panelu klienta OVHcloud](/links/manager) kliknij zakładkę `Web Cloud`{.action}, następnie `Domeny`{.action} w kolumnie z lewej strony i wybierz odpowiednią nazwę domeny.
 
 Kliknij zakładkę `Strefa DNS`{.action}, a następnie `Dodaj rekord`{.action}. Istnieją 3 sposoby dodania rekordu do konfiguracji DKIM w strefie DNS:
 
@@ -775,7 +776,7 @@ Oto co możesz znaleźć w nagłówku otrzymanego e-maila:
 <pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
-Return-Path: <test-dkim@mydomain.ovh>
+Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 
 Aby pobrać nagłówek wiadomości e-mail, zapoznaj się z naszym przewodnikiem "[Pobierz nagłówek wiadomości](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers)".
@@ -794,7 +795,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 > **Exchange**
 >> Aby przełączyć się na drugi selektor, użyj następującego wywołania API:
 >> 
->> > [!API]
+>> > [!api]
 >> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
@@ -807,7 +808,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 > **E-mail Pro**
 >> Aby przełączyć się na drugi selektor, użyj następującego wywołania API:
 >>
->> > [!API]
+>> > [!api]
 >> >
 >> @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
@@ -838,11 +839,51 @@ Kliknij na poniższą zakładkę odnoszącą się do Twojej oferty, aby sprawdzi
 >>
 >> ![email](images/red-dkim.png){.thumbnail}
 
-Jeśli właśnie skonfigurowałeś DKIM, oznacza to, że aktywacja DKIM nie została zakończona, **zaleca się odczekać 24 godziny**.
+Oto cztery statusy, po których w Panelu klienta wyświetli się czerwona ikona DKIM. Kliknij zakładkę z kodem błędu :
 
-Jeśli po 24 godzinach stan będzie czerwony, sprawdź stan włączonego selektora. W tym celu przejdź do sekcji "[Różne stany DKIM](#dkim-status)" w tym przewodniku.
+> [!tabs]
+> **501**
+>>
+>> "**Only one dkim selector has been initialized**"<br><br>
+>> Tylko selektor DKIM jest obecny w konfiguracji. Aby umożliwić przełączenie na nowy klucz, jeśli jest to konieczne, należy skonfigurować 2 selektory dostarczane przez usługę.<br><br>
+>> Aby naprawić ten błąd :
+>> - Sprawdź stan selektorów DKIM, aby określić, który powinien zostać skonfigurowany. W tym celu przejdź do sekcji "[Różne stany DKIM](#dkim-status)" niniejszego przewodnika.
+>> - Po wybraniu selektora do konfiguracji postępuj zgodnie z instrukcjami zawartymi w tej sekcji "[Pełna konfiguracja DKIM](#firststep)" w zależności od wybranej oferty (Exchange lub E-mail Pro) i zastosuj ją tylko do wybranego selektora.
+>> Odczekaj maksymalnie 24 godziny od skonfigurowania selektora.
+>>
+> **502**
+>>
+>> "**One DKIM configuration task is in error**"<br><br>
+>> Wystąpił błąd podczas konfigurowania DKIM. Po upływie 24 godzin, jeśli Twoja konfiguracja nadal jest w tym stanie, prosimy o otwarcie [zgłoszenia w dziale obsługi klienta](https://help.ovhcloud.com/csm?id=csm_get_help).
+>>
+> **503**
+>>
+>> "**CNAME record is wrong**"<br><br>
+>> Wartość rekordu CNAME potrzebnego do skonfigurowania DKIM nie została poprawnie wprowadzona. Należy poprawnie skonfigurować strefę DNS przypisanej nazwy domeny.
+>> Aby skonfigurować strefę DNS, pobierz wartości z rekordu CNAME, który się wyświetla :
+>>
+>> ![email](images/dkim-503.png){.thumbnail}
+>>
+>> Jeśli weźmiemy przykład powyższego zrzutu, nazwą domeny będzie "**mydomain.ovh**", a następnie zostanie wyświetlona prośba o skonfigurowanie selektora "**2**". Tutaj należy dodać rekord CNAME z subdomeną `ovhex1234567-selector2.domainkey.mydomain.ovh` oraz jako adres docelowy `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br>
+>> Po skonfigurowaniu strefy DNS odczekaj chwilę na propagację DNS (maksymalnie 24 godziny)
+>>
+> **504**
+>>
+>> "**One CNAME record is missing**"<br><br>
+>> Brak wartości rekordu CNAME wymaganej do skonfigurowania DKIM. Należy skonfigurować strefę DNS dla dołączonej nazwy domeny.
+>> Aby skonfigurować strefę DNS, pobierz wartości z rekordu CNAME, który się wyświetla :
+>>
+>> ![email](images/dkim-503.png){.thumbnail}
+>>
+>> Jeśli weźmiemy przykład powyższego zrzutu, nazwą domeny będzie "**mydomain.ovh**", a następnie zostanie wyświetlona prośba o skonfigurowanie selektora "**2**". Tutaj należy dodać rekord CNAME z subdomeną `ovhex1234567-selector2.domainkey.mydomain.ovh` oraz jako adres docelowy `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br>
+>> Po skonfigurowaniu strefy DNS odczekaj chwilę na propagację DNS (maksymalnie 24 godziny)
+>>
 
-Oto cztery statusy, w których w Panelu klienta wyświetlana jest czerwona ikona DKIM:
+### Z poziomu interfejsu API OVHcloud, jak zrozumieć stan DKIM, który nie działa? <a name="api-error"></a>
+
+Jeśli do konfiguracji DKIM używasz API OVHcloud, a DKIM nie działa, zapoznaj się z rubryką "[Poszczególne stany DKIM](#dkim-status)" niniejszego przewodnika, aby sprawdzić stan selektorów.
+
+Poniżej znajdziesz statusy, które mogą blokować działanie DKIM i odpowiednie rozwiązanie dla każdej sytuacji.
 
  - `WaitingRecord`: rekordy DNS oczekują na konfigurację lub są sprawdzane w strefie DNS domeny. Automatyczne i regularne weryfikacje przeprowadzane są w celu sprawdzenia, czy rekord DNS jest obecny i poprawnie wprowadzony. W zależności od Twojej oferty przejdź do **etapu 5** w sekcji "[Pełna konfiguracja DKIM](#firststep)", aby poprawnie skonfigurować strefę DNS danej domeny.
  - `ready`: rekordy DNS są obecne w strefie. Teraz można aktywować DKIM. Wystarczy włączyć selektor, naciskając sekcję "[Włącz lub zmień selektor DKIM](#enable-switch)".

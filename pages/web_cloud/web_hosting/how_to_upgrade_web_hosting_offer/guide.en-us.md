@@ -6,20 +6,20 @@ updated: 2023-09-19
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), you can increase the capacity of your [web hosting plans](https://www.ovhcloud.com/en/web-hosting/). A subscription upgrade provides the following advantages:
+In your [OVHcloud Control Panel](/links/manager), you can increase the capacity of your [web hosting plans](/links/web/hosting). A subscription upgrade provides the following advantages:
 
 - More powerful hosting
 - More FTP storage space
 - Additional databases
 - Additional email accounts
-- Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](https://www.ovhcloud.com/en/web-hosting/professional-offer/)) or the [Web Cloud Databases service](https://www.ovhcloud.com/en/web-cloud/databases/){.external} (included in [the Performance offers](https://www.ovhcloud.com/en/web-hosting/performance-offer/))
+- Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](/links/web/hosting-professional-offer)) or the [Web Cloud Databases service](/links/web/databases){.external} (included in [the Performance offers](/links/web/hosting-performance-offer))
 
 **This guide explains how to upgrade your OVHcloud hosting plan without any service interruptions.**
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) with the required permissions to manage the Web Hosting plan ([Administrator contact](/pages/account_and_service_management/account_information/managing_contacts))
+- An [OVHcloud web hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager) with the required permissions to manage the Web Hosting plan ([Administrator contact](/pages/account_and_service_management/account_information/managing_contacts))
 
 ## Instructions
 
@@ -39,7 +39,7 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 > If you would like to change your subscription to a lower plan, please follow the steps in our guide on "[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 >
 
-To modify your subscription, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) in the `Web Cloud`{.action} section. Click `Hosting plans`{.action} and select the hosting plan concerned.
+To modify your subscription, go to your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section. Click `Hosting plans`{.action} and select the hosting plan concerned.
 
 In the `Plan` box, click the `...`{.action} button to the right of `Solution`, then `Change plan`{.action}.
 
@@ -51,7 +51,7 @@ Then select your new subscription and its duration. Confirm the corresponding co
 
 #### Temporarily boost your Performance hosting <a name="boost"></a>
 
-With the [Boost option](https://www.ovhcloud.com/en/web-hosting/options/boost/), available on our *Performance* plans, you can temporarily increase your web hosting plan’s CPU and RAM resources to absorb a one-off increase in traffic. If this increase continues over time, you can also [switch to the higher-level Performance plan](#modify) so that you have these resources permanently.
+With the [Boost option](/links/web/hosting-options-boost), available on our *Performance* plans, you can temporarily increase your web hosting plan’s CPU and RAM resources to absorb a one-off increase in traffic. If this increase continues over time, you can also [switch to the higher-level Performance plan](#modify) so that you have these resources permanently.
 
 > [!warning]
 >
@@ -62,12 +62,12 @@ If the **Boost** option is right for you, please find instructions below on how 
 > [!tabs]
 > **Enable the Boost option**
 >>
->> To enable the Boost option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
+>> To enable the Boost option, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
 >>![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
 >>
 > **Disable the Boost option**
 >>
->> To disable the Boost option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, go to the `More` tab, then click `Boost my hosting plan`{.action}.<br>
+>> To disable the Boost option, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, go to the `More` tab, then click `Boost my hosting plan`{.action}.<br>
 >> The usage table for the Boost option will appear. Click `Disable boost plan`{.action}.<br><br>
 >>![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
 
@@ -78,9 +78,9 @@ This calculation is the price difference between your original plan and your new
 
 > **Example:**<br>
 >
-> You have subscribed to a [Personal](https://www.ovhcloud.com/en/web-hosting/personal-offer/) subscription on 1 January 2022.
+> You have subscribed to a [Personal](/links/web/hosting-personal-offer) subscription on 1 January 2022.
 >
-> On October 31, 2022, you upgrade this **Personal** plan to the [Pro](https://www.ovhcloud.com/en/web-hosting/professional-offer/) plan.<br>
+> On October 31, 2022, you upgrade this **Personal** plan to the [Pro](/links/web/hosting-professional-offer) plan.<br>
 >
 > Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from 01 November 2022 to 01 January 2023) is automatically deducted from the cost of the new **Pro** subscription, until 01 January 2023. You will only pay the difference.
 > From 01 January 2023, the **Pro** subscription will then be billed at its current price.
@@ -93,8 +93,8 @@ Follow [these instructions](#modify) to change your solution.
 
 [Optimising your website’s performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
-updated: 2023-11-14
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -18,9 +18,9 @@ updated: 2023-11-14
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank.
-- Ihr OVHcloud Webhosting verwendet eine aktuelle PHP-Version und eine kompatible Ausführungsumgebung. Wenn nötig, nutzen Sie unsere [Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting) zu diesem Thema, um diese Konfiguration schnell anpassen zu können.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit mindestens einer Datenbank.
+- Ihr OVHcloud Webhosting verwendet eine aktuelle PHP-Version und eine kompatible Ausführungsumgebung. Sie können den Stand der verschiedenen Versionen auf [dieser Seite](https://webhosting-infos.hosting.ovh.net/) überprüfen. Wenn nötig, nutzen Sie unsere [Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting) zu diesem Thema, um diese Konfiguration schnell anpassen zu können.
 - Falls ein bereits vorhandenes Verzeichnis zur Installation des 1-Klick-Moduls verwendet werden soll, muss dieses leer sein.
 - Der Domainname (und gegebenenfalls die Subdomain) den Sie für Ihre Website verwenden möchten, ist auf Ihrem OVHcloud Webhosting als [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) deklariert.
 
@@ -37,15 +37,15 @@ Mit einem CMS können Sie Ihre Website über ein einfach zu verwendendes Interfa
 
 OVHcloud bietet 4 CMS als automatische Installation über 1-Klick-Modul an. 
 
-Wählen Sie aus den oben aufgeführten 4 CMS aus und folgen dann den Schritten in dieser Anleitung. Sie können unsere [Übersichtsseite für CMS](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/) verwenden, um Ihre Auswahl zu erleichtern.
+Wählen Sie aus den oben aufgeführten 4 CMS aus und folgen dann den Schritten in dieser Anleitung. Sie können unsere [Übersichtsseite für CMS](/links/web/hosting-cms-comparison) verwenden, um Ihre Auswahl zu erleichtern.
 
-Wenn Sie ein CMS installieren möchten, das nicht als OVHcloud 1-Klick-Modul angeboten wird, können Sie es manuell auf Ihrem Hosting installieren, sofern dieses CMS mit Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) kompatibel ist.
+Wenn Sie ein CMS installieren möchten, das nicht als OVHcloud 1-Klick-Modul angeboten wird, können Sie es manuell auf Ihrem Hosting installieren, sofern dieses CMS mit Ihrem [OVHcloud Webhosting](/links/web/hosting) kompatibel ist.
 
 ![CMS-Logos](images/cms-logos.png){.thumbnail}
 
 ### Schritt 2: Zugang zur Verwaltung der 1-Klick-Module
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann auf den Tab `1-Klick-Module`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann auf den Tab `1-Klick-Module`{.action}.
 
 Hier können Sie die bereits installierten 1-Klick-Module verwalten und neue Module installieren.
 
@@ -98,7 +98,7 @@ Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Login-Da
 
 > [!primary]
 >
-> Die Installation kann bis zu 15 Minuten dauern, nachdem Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Installieren`{.action} geklickt haben.
+> Die Installation kann bis zu 15 Minuten dauern, nachdem Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Installieren`{.action} geklickt haben.
 >
 
 #### Erweiterte Installation eines Moduls
@@ -140,7 +140,7 @@ Für die Datenbank sind folgende Angaben erforderlich:
 > - Der Name des Servers einer Datenbank von Web Cloud Databases beginnt mit Ihrer OVHcloud Kundenkennung und hat folgende Form: `OVHID(ohne-ovh)-XXX.eu.clouddb.ovh.net` wobei **XXX** mit der Referenz Ihrer Datenbank zu ersetzen ist.
 >
 
-- *Name der Datenbank*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) festgelegt.
+- *Name der Datenbank*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](/links/manager) festgelegt.
 
 - *Port*: Geben Sie die Nummer **3306** (Standard-Port) für eine Webhosting-Datenbank ein. Für Datenbanken auf einer Web Cloud Databases Instanz folgen Sie [dieser Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
@@ -209,20 +209,22 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 
 ## Weiterführende Informationen
 
-[Finden Sie das richtige CMS für Ihre Website](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/){.external}
+[Finden Sie das richtige CMS für Ihre Website](/links/web/hosting-cms-comparison){.external}.
 
-[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database).
 
-Entdecken Sie unsere [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/){.external}
+Entdecken Sie unsere [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/){.external}.
 
-[CMS verwalten](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[CMS verwalten](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-[Ihr CMS deinstallieren](/pages/web_cloud/web_hosting/cms_manage_1_click_module#schritt-3-ihr-modul-loschen)
+[Ihr CMS deinstallieren](/pages/web_cloud/web_hosting/cms_manage_1_click_module#schritt-3-ihr-modul-loschen).
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie die volle Kontrolle über die Installation Ihres CMS behalten möchten, können Sie [ein CMS manuell auf Ihrem OVHcloud Webhosting installieren](/pages/web_cloud/web_hosting/cms_manual_installation).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

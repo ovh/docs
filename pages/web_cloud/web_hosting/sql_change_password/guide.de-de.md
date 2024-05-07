@@ -18,11 +18,11 @@ Die Änderung des Passworts einer Datenbank muss deshalb immer an zwei Orten dur
 
 - In der [Konfigurationsdatei](/pages/web_cloud/web_hosting/cms_manage_1_click_module#schritt-1-die-zu-ihrem-modul-gehorige-datenbank-identifizieren) Ihrer Website, im [FTP-Bereich Ihres Hostings](/pages/web_cloud/web_hosting/ftp_connection).
 
-- **Und** auf dem Server, der die entsprechende Datenbank enthält, über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- **Und** auf dem Server, der die entsprechende Datenbank enthält, über Ihr [OVHcloud Kundencenter](/links/manager).
 
 Bis diese Änderung **an beiden Stellen** durchgeführt wurde, wird auf Ihrer Seite ein Verbindungsfehler “[Error establishing a database connection](/pages/web_cloud/web_hosting/diagnosis_database_errors#verbindungsfehler-error-establishing-a-database-connection)“ angezeigt.
 
-Wenn Sie das Passwort Ihrer Datenbank ändern möchten, müssen daher die in dieser Anleitung **beschriebenen Operationen vollständig** durchgeführt werden. Bei Zweifeln an den durchzuführenden Aktionen wenden Sie sich an Ihren Webmaster oder kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie das Passwort Ihrer Datenbank ändern möchten, müssen daher die in dieser Anleitung **beschriebenen Operationen vollständig** durchgeführt werden. Bei Zweifeln an den durchzuführenden Aktionen wenden Sie sich an Ihren Webmaster oder kontaktieren Sie einen [[spezialisierten Dienstleister](/links/partner)](/links/partner).
 
 Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Schritten:
 
@@ -36,21 +36,21 @@ Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Schritte
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verwenden eine [in Ihrem Webhosting enthaltene Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder einen [Web Cloud Databases Dienst](https://www.ovh.de/cloud-databases/).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie verwenden eine [in Ihrem Webhosting enthaltene Datenbank](/links/web/hosting-options-startsql) oder einen [Web Cloud Databases Dienst](https://www.ovh.de/cloud-databases/).
 - Sie verfügen über die FTP-Zugangsdaten, um sich auf dem [Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) Ihres Hostings einzuloggen.
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Die Konfigurationsdatei Ihrer Website identifizieren <a name="step1"></a>
 
-Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action} und schließlich auf das betreffende Hosting. Öffnen Sie den Tab `Multisite`{.action}. Identifizieren Sie den Namen des `Wurzelverzeichnisses` Ihrer Website (das Verzeichnis, in dem sich ihre Dateien und Ordner befinden).
+Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action} und schließlich auf das betreffende Hosting. Öffnen Sie den Tab `Multisite`{.action}. Identifizieren Sie den Namen des `Wurzelverzeichnisses` Ihrer Website (das Verzeichnis, in dem sich ihre Dateien und Ordner befinden).
 
 ![root-folders](images/root-folders.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Um zu bestimmen, welcher Fall auf Ihre Webseite zutrifft, notieren Sie zunächst
 - Für DRUPAL: Der Name erscheint unter "**database**".
 - Für PRESTASHOP: Der Name erscheint unter "**database_name**".
 
-Führen Sie im Bereich `Web Cloud`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) jeweils die folgenden Schritte aus:
+Führen Sie im Bereich `Web Cloud`{.action} Ihres [OVHcloud Kundencenters](/links/manager) jeweils die folgenden Schritte aus:
 
 - Gehen Sie in den Bereich `Hosting-Pakete`{.action} und dann auf das betreffende Hosting.
 - Klicken Sie auf den Tab `Datenbanken`{.action} auf der **rechten Seite der Bildschirmanzeige**.
@@ -190,9 +190,9 @@ Speichern Sie diese Änderung.
 
 Auch hier sind zwei Fälle möglich: 
 
-- Wenn Ihre Datenbank sich im Bereich Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) für [Webhostings](https://www.ovhcloud.com/de/web-hosting/)befindet, folgen Sie [diesen Anweisungen](#case1).
+- Wenn Ihre Datenbank sich im Bereich Ihres [OVHcloud Kundencenters](/links/manager) für [Webhostings](/links/web/hosting)befindet, folgen Sie [diesen Anweisungen](#case1).
 
-- Wenn Ihre Datenbank sich in dem Teil Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) befindet, der [Web Cloud Databases Angeboten](/products/web-cloud-clouddb) gewidmet ist, folgen Sie [diesen Anweisungen](#case2).
+- Wenn Ihre Datenbank sich in dem Teil Ihres [OVHcloud Kundencenters](/links/manager) befindet, der [Web Cloud Databases Angeboten](/products/web-cloud-clouddb) gewidmet ist, folgen Sie [diesen Anweisungen](#case2).
 
 #### Fall 1: Die Datenbank Ihrer Website ist Teil Ihres Webhostings <a name="case1"></a>
 
@@ -230,6 +230,6 @@ Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definier
 
 [Die häufigsten Datenbankfehler beheben](/pages/web_cloud/web_hosting/diagnosis_database_errors)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

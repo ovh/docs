@@ -21,7 +21,7 @@ Jeśli posiadasz hosting od OVHcloud, zyskasz dostęp do przestrzeni dyskowej um
   
 ## Wymagania początkowe
 
-- Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie hostingu [OVHcloud](/links/web/hosting)
 - Zainstaluj [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) na komputerze
 
 ## W praktyce
@@ -30,7 +30,7 @@ Jeśli posiadasz hosting od OVHcloud, zyskasz dostęp do przestrzeni dyskowej um
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce tutorial, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego dostawcy](https://partner.ovhcloud.com/pl/directory/) lub [Visual Studio Code](https://code.visualstudio.com/){.external} IDE. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) tego tutoriala.
+> Oddajemy w Twoje ręce tutorial, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego dostawcy](/links/partner) lub [Visual Studio Code](https://code.visualstudio.com/){.external} IDE. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) tego tutoriala.
 >
 
 ### Zainstaluj rozszerzenie SFTP dla Visual Studio Code
@@ -86,7 +86,7 @@ Plik ten znajduje się w folderze .vscode, który jest umieszczony w katalogu g�
 
 ### Konfiguracja pliku sftp.json
 
-Zanim rozpoczniesz pracę nad Twoim projektem, przekaż go do utworzonego wcześniej lokalnego folderu. Najpierw jednak upewnij się, że plik "sftp.json" jest poprawnie skonfigurowany. Przydatne informacje można znaleźć w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action}. Wybierz odpowiedni hosting, następnie kliknij zakładkę `FTP - SSH`{.action}.
+Zanim rozpoczniesz pracę nad Twoim projektem, przekaż go do utworzonego wcześniej lokalnego folderu. Najpierw jednak upewnij się, że plik "sftp.json" jest poprawnie skonfigurowany. Przydatne informacje można znaleźć w [Panelu klienta OVHcloud](/links/manager). W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action}. Wybierz odpowiedni hosting, następnie kliknij zakładkę `FTP - SSH`{.action}.
 
 W pliku "sftp.json" wprowadź wartości dla następujących wpisów:
 
@@ -185,10 +185,10 @@ Celem tego przewodnika jest przedstawienie w sposób efektywny sposobu zarządza
 
 [Korzystanie z FileZilla na Twoim hostingu OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Korzystanie z dostępu do hostingu WWW przez SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Pamiętaj, że aby korzystać z SSH, musisz mieć wykupiony [hosting Pro lub Performance](https://www.ovhcloud.com/pl/web-hosting/).
+[Korzystanie z dostępu do hostingu WWW przez SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Pamiętaj, że aby korzystać z SSH, musisz mieć wykupiony [hosting Pro lub Performance](/links/web/hosting).
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

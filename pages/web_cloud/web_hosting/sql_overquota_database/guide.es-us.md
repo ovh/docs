@@ -22,8 +22,8 @@ Este tutorial explica las acciones que debe realizar cuando la base de datos en 
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Disponer de un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) con una base de datos en alojamiento compartido de OVHcloud asociada.
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+- Disponer de un [plan de hosting de OVHcloud](/links/web/hosting) con una base de datos en alojamiento compartido de OVHcloud asociada.
   
 ## Procedimiento
 
@@ -31,7 +31,7 @@ Este tutorial explica las acciones que debe realizar cuando la base de datos en 
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 Cuando su base de datos en alojamiento compartido OVHcloud se satura (**overquota**), nuestros robots le advierten por correo electrónico en la dirección de correo electrónico del [contacto "Administrador"](/pages/account_and_service_management/account_information/managing_contacts) de la base de datos. 
@@ -58,7 +58,7 @@ En primer lugar, es necesario identificar las tablas de gran tamaño de la base 
 
 Recupere la información de acceso a su base de datos directamente en el archivo de configuración de su sitio web. Realice esta acción utilizando el **paso 1** de nuestra guía sobre [el cambio de la contraseña de una base de datos](/pages/web_cloud/web_hosting/sql_change_password).
 
-Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione `Web Cloud`{.action} en la barra de navegación superior. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web asociado a su base de datos compartida de OVHcloud. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action} en la barra de navegación superior. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web asociado a su base de datos compartida de OVHcloud. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 En la parte inferior de la pantalla aparece una tabla con las bases de datos.
 
@@ -78,7 +78,7 @@ Introduzca los datos de acceso a la base de datos y haga clic en `Conexión`{.ac
 >
 > Desde ahora, usted interviene directamente en el contenido de su base de datos. Las operaciones que realice en phpMyAdmin pueden tener consecuencias irreversibles si no se realizan correctamente.
 >
-> Asegúrese de realizar las operaciones que desee. Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). OVHcloud no podrá ayudarle con el contenido de su base de datos.
+> Asegúrese de realizar las operaciones que desee. Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). OVHcloud no podrá ayudarle con el contenido de su base de datos.
 >
 
 Una vez que se haya conectado, se abrirá la siguiente página:
@@ -129,13 +129,13 @@ Deberá bascular su base de datos con una base de datos más voluminosa.
 > Para aumentar el tamaño asignado a la base de datos, es necesario crear una nueva base de datos más grande y copiar el contenido de la antigua en la nueva. No es posible aumentar directamente el tamaño de una base de datos asociada a un alojamiento web.
 >
 
-Consulte nuestra oferta de bases de datos [Web Cloud Databasess](https://www.ovhcloud.com/es/web-cloud/databases/) para elegir su nuevo servicio de bases de datos. 
+Consulte nuestra oferta de bases de datos [Web Cloud Databasess](/links/web/databases) para elegir su nuevo servicio de bases de datos. 
 
 Es recomendable para bases de datos de gran tamaño.
 
-Es posible duplicar el contenido de una base de datos de OVHcloud directamente en otra de sus bases de datos de OVHcloud gracias a la funcionalidad que ofrece su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Para ello, consulte nuestra guía "[Duplicar el contenido de una base de datos en otra](/pages/web_cloud/web_hosting/copy_database)".
+Es posible duplicar el contenido de una base de datos de OVHcloud directamente en otra de sus bases de datos de OVHcloud gracias a la funcionalidad que ofrece su [área de cliente de OVHcloud](/links/manager). Para ello, consulte nuestra guía "[Duplicar el contenido de una base de datos en otra](/pages/web_cloud/web_hosting/copy_database)".
 
-En caso de migrar a una base de datos externa a los planes de hosting [Start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) y [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/), puede mover manualmente el contenido de su antigua base de datos hacia una nueva mediante nuestras guías:
+En caso de migrar a una base de datos externa a los planes de hosting [Start SQL](/links/web/hosting-options-startsql) y [Web Cloud Databases](/links/web/databases), puede mover manualmente el contenido de su antigua base de datos hacia una nueva mediante nuestras guías:
 
 - [Exportar la base de datos existente](/pages/web_cloud/web_hosting/sql_database_export)
 - [Primeros pasos con Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -153,7 +153,7 @@ Antes de realizar esta operación, compruebe si los datos de la tabla de tamaño
 
 > [!alert]
 >
-> Esta guía explica cómo eliminar datos de la base de datos. En caso de duda, asegúrese de lo que está haciendo o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
+> Esta guía explica cómo eliminar datos de la base de datos. En caso de duda, asegúrese de lo que está haciendo o contacte con un [proveedor especializado](/links/partner).
 >
 
 Las bases de datos compartidas de OVHcloud disponen de varios comandos SQL para modificar su contenido.
@@ -204,8 +204,8 @@ DROP TABLE `table_1`
 
 [Duplicar el contenido de una base de datos en otra](/pages/web_cloud/web_hosting/copy_database)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

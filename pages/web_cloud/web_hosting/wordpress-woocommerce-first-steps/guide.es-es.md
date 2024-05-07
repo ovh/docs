@@ -16,13 +16,13 @@ Esta guía explica cómo crear una tienda online con la extensión open source *
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/), [el editor del CMS WordPress](https://wordpress.com/support/){.external} o con [el editor de WooCommerce](https://woocommerce.com/){.external} si tiene alguna dificultad. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, le recomendamos que contacte con un [proveedor especializado](/links/partner), [el editor del CMS WordPress](https://wordpress.com/support/){.external} o con [el editor de WooCommerce](https://woocommerce.com/){.external} si tiene alguna dificultad. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
 >
   
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que contenga al menos una base de datos.
-- Tener un [dominio](https://www.ovhcloud.com/es-es/domains/).
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting) que contenga al menos una base de datos.
+- Tener un [dominio](/links/web/domains).
 - Haber contratado previamente [WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en su alojamiento web.
 
 Si todavía no lo ha hecho, le recomendamos que cambie el sitio web a HTTPS antes de continuar con este tutorial con la guía "[Habilitar HTTPS en un sitio web gracias al SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)".
@@ -162,8 +162,8 @@ Algunos enlaces útiles:
 - El [WooCommerce](https://woocommerce.com/){.external}
 - La tienda [WooCommerce extensions](https://woocommerce.com/products/){.external}
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

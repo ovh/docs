@@ -1,6 +1,6 @@
 ---
 title: "Spécifications de sécurité du service Serveurs Dédiés"
-updated: 2023-02-16
+updated: 2024-05-06
 ---
 
 ## Objectif
@@ -169,46 +169,15 @@ En cas de contraintes ou limitations techniques sur certaines gammes de disques 
 
 Suite au décommissionnement du service par le client, OVHcloud procède à la libération des ressources qui lui sont allouées, comme les adresses IP et la suppression des configurations réalisées lors de la livraison du service.
 
-## 11. Représentation normalisée HDS
+## 11. Représentation des garanties HDS
 
-- **Administrateur de la sécurité** : OVHcloud
-- **Acteur de service** :
+> [!primary]
+>
+> Ce tableau est publié préalablement à la certification effective d'OVHcloud sur la version 2024 du référentiel HDS. Il permet aux clients d'OVHcloud d'alimenter leur propre démarche de conformité par rapport au référentiel HDS version 2024. OVHcloud a réalisé et publié ce tableau en s'efforçant d'appliquer au mieux les différentes exigences du référentiel. Les versions vérifiées par les auditeurs ont été mises en ligne avant février 2024.
+>
 
-| **Code** | **Identité** | **Rôle** |
-| --- | --- | --- |
-| OVHcloud | OVHcloud | Opérateur de l'offre certifiée HDS |
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
 
-**Instances des données de santé** :
-
-| **Code** | **Description** | **Acteur** |
-| --- | --- | --- |
-| RBX1 | Datacenter Roubaix 1 (FR) | OVHcloud |
-| RBX2 | Datacenter Roubaix 2 (FR) | OVHcloud |
-| RBX4 | Datacenter Roubaix 4 (FR) | OVHcloud |
-| RBX356 | Datacenter Roubaix 3-5-6 (FR) | OVHcloud |
-| RBX7 | Datacenter Roubaix 7 (FR) | OVHcloud |
-| RBX8 | Datacenter Roubaix 8 (FR) | OVHcloud |
-| RBX8(SNC) | Zone SecNumCloud du datacenter Roubaix 8 (FR) | OVHcloud |
-| GRA | Gravelines (FR) | OVHcloud |
-| SBG3 | Datacenter Strasbourg 3 (FR) | OVHcloud |
-| SBG3(SNC) | Zone SecNumCloud du datacenter Strasbourg 3 (FR | OVHcloud |
-| SBG4 | Datacenter Strasbourg 4 (FR) | OVHcloud |
-| SBG5 | Datacenter Strasbourg 5 (FR) | OVHcloud |
-| SBG5(SNC) | Datacenter Strasbourg 5 (FR) | OVHcloud |
-| BHS | Datacenter Beauharnois (CA) | OVHcloud |
-| ERI | Datacenter Erith (UK) | OVHcloud |
-| LIM | Datacenter Limburg (DE) | OVHcloud |
-| WAW | Datacenter Ozarow (PL) | OVHcloud |
-
-**Conformité de la prise en compte des objectifs de sécurité** :
-
-![TAB](images/spec_HDS.PNG){.thumbnail}
-
-**Commentaires :**
-
-- Le client choisit les instances (lieux) sur lesquelles il déploie ses serveurs d'hébergement de données de santé. Si le client souhaite déployer sur plusieurs instances (lieux), il devra souscrire plusieurs fois au service.
-- Objectif B : OVHcloud a pris en compte les risques relatifs à la réallocation des espaces de stockage de ses offres. La copie de données de santé à caractère personnel sur des supports portables est interdite chez OVHcloud. La matérialisation de données de santé à caractère personnel sous format papier ne fait pas partie de la prestation. OVHcloud n'a pas accès au service numérique en santé dans le cadre de cette offre.
-- Objectif C : Dans le cadre de cette offre, OVHcloud fournit exclusivement un matériel informatique conforme à la commande du client. Le client opère ce matériel en complète autonomie. Par conséquent, les flux réseau sont complètement opérés par le client, sans aucune intervention d'OVHcloud. C'est la raison pour laquelle cet objectif n'est pas adressé dans le tableau ci-dessus.
-- Objectif D : Dans le cadre de cette offre, OVHcloud ne maîtrise que l'interface de gestion de l'offre (espace client OVHcloud) et la fourniture du premier code administrateur du matériel. Le client doit respecter le reste des attentes formalisées dans cet objectif. Nous recommandons au client de mettre en œuvre un système robuste de gestion des accès pour l'ensemble de ses accès métiers.
-- Objectif F : OVHcloud répond à cet objectif de sécurité dans la limite de sa capacité à agir sur le matériel mis à disposition du client. Nous recommandons au client de mettre en œuvre des processus de maintien en conditions opérationnelles et de sécurité de son matériel à l'état de l'art.
-
+(1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.

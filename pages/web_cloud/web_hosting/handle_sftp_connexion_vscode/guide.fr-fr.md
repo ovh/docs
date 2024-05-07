@@ -17,7 +17,7 @@ Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un es
   
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting)
 - Installer [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) sur votre machine
 
 ## En pratique
@@ -26,7 +26,7 @@ Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un es
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou à [l'éditeur de l'IDE Visual Studio Code](https://code.visualstudio.com/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur de l'IDE Visual Studio Code](https://code.visualstudio.com/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 ### Installer l’extension SFTP pour Visual Studio Code
@@ -82,7 +82,7 @@ Ce fichier est présent dans le dossier .vscode, lui-même positionné à la rac
 
 ### Configurer le fichier sftp.json
 
-Avant de travailler sur votre projet, téléchargez-le dans votre dossier local précédemment créé. Cependant, dans un premier temps, assurez-vous que le fichier « sftp.json » est correctement configuré. Les informations utiles sont présentes dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}. Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `FTP - SSH`{.action}.
+Avant de travailler sur votre projet, téléchargez-le dans votre dossier local précédemment créé. Cependant, dans un premier temps, assurez-vous que le fichier « sftp.json » est correctement configuré. Les informations utiles sont présentes dans votre [espace client OVHcloud](/links/manager). Dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}. Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `FTP - SSH`{.action}.
 
 Dans le fichier « sftp.json » , rentrez les valeurs pour les entrées suivantes :
 
@@ -181,10 +181,10 @@ Ce guide a pour but de présenter d'une manière efficace la gestion d'un projet
 
 [Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting). N'oubliez pas que pour utiliser le SSH, vous devez disposer d'une [offre d'hébergement web Pro ou Performance](https://www.ovhcloud.com/fr/web-hosting/).
+[Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting). N'oubliez pas que pour utiliser le SSH, vous devez disposer d'une [offre d'hébergement web Pro ou Performance](/links/web/hosting).
 
-Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

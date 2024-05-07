@@ -26,12 +26,12 @@ Per scaricare Cyberduck, accedi al [sito ufficiale](https://cyberduck.io/) dell�
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione [Per saperne di più](#go-further) di questa guida.
 >
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}.
+- Disporre di una soluzione di [hosting Web](/links/web/hosting){.external}.
 - Aver scaricato e installato l’applicazione Cyberduck sul proprio computer.
 
 ## Procedura
@@ -232,6 +232,6 @@ Per assicurarti che la riapertura avvenga correttamente, accedi al tuo sito Web 
 
 [Tutorial - Utilizzare FileZilla con l’hosting OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

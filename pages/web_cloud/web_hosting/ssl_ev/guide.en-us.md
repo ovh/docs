@@ -8,7 +8,7 @@ updated: 2023-06-12
 
 You can use Secure Socket Layer (SSL) certificates to encrypt any exchange of data on your website. This prevents unauthorised persons and malicious robots from viewing requests to or from your website.
 
-OVHcloud offers several types of SSL certificates for [OVHcloud web hosting solutions](https://www.ovhcloud.com/en/web-hosting/). They are set out in our guide on [Managing an SSL certificate on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting). SSL certificates are essential for the security of your website.
+OVHcloud offers several types of SSL certificates for [OVHcloud web hosting solutions](/links/web/hosting). They are set out in our guide on [Managing an SSL certificate on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting). SSL certificates are essential for the security of your website.
 
 There are three types of SSL certificates:
 
@@ -35,9 +35,9 @@ For OVHcloud web hosting plans, the certification authority delivering EV SSL ce
     
 ## Requirements <a name="requirements"></a>
 
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
-- You plan to order an SSL secured [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/) or you have a web hosting plan in your customer account without an SSL certificate installed.
-- You manage a [domain name](https://www.ovhcloud.com/en/domains/) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
+- You have access to the [OVHcloud Control Panel](/links/manager).
+- You plan to order an SSL secured [OVHcloud web hosting plan](/links/web/hosting) or you have a web hosting plan in your customer account without an SSL certificate installed.
+- You manage a [domain name](/links/web/domains) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 - You represent an organisation (company, government agency, etc.) registered with an official registry.
 - You have your organisation’s permission to order an EV SSL certificate.
 - You are able to provide an accurate account of your organisation's information and contact details.
@@ -50,7 +50,7 @@ To check if you are eligible to subscribe to an EV SSL certificate, go to [this 
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/) if you encounter any difficulties. We will not be able to provide you with assistance **for all verification steps directly performed with the Sectigo certification authority**. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to provide you with assistance **for all verification steps directly performed with the Sectigo certification authority**. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ### Step 1: Order the EV SSL certificate
@@ -78,7 +78,7 @@ Proceed with the order until payment in order to confirm the request to create t
 
 #### 1.2 - For a new domain name and a new hosting
 
-If you have not yet ordered your domain name and associated hosting package, go to our [OVHcloud homepage](https://www.ovhcloud.com/en/), enter a domain name in the **search form** and click `Search`{.action} to start the order process.
+If you have not yet ordered your domain name and associated hosting package, go to our [OVHcloud homepage](/links/website), enter a domain name in the **search form** and click `Search`{.action} to start the order process.
 
 ![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 
@@ -127,7 +127,7 @@ All of the actions described in this step might be performed over several days. 
 Once your order has been placed, Sectigo will send you an email containing a validation link and a procedure to follow.
 Check your information and confirm your request by following the instructions in this email.
 
-To ensure that email exchanges with Sectigo are going well, also check the validity of the email address entered in the form when you ordered the EV SSL, as well as the contact email address associated with your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+To ensure that email exchanges with Sectigo are going well, also check the validity of the email address entered in the form when you ordered the EV SSL, as well as the contact email address associated with your [OVHcloud Control Panel](/links/manager).
 
 > [!primary]
 >
@@ -175,8 +175,8 @@ You will only need to [activate HTTPS on your website](/pages/web_cloud/web_host
 
 [Activate HTTPS on your website](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

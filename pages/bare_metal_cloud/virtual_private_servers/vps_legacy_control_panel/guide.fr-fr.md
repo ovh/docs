@@ -125,8 +125,6 @@ Votre VPS peut être migré automatiquement vers la gamme actuelle. Découvrez l
 
 [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Configurer une nouvelle installation de Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

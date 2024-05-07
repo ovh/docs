@@ -10,20 +10,20 @@ updated: 2023-09-19
 
 ## Obiettivo
 
-Il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) permette di aumentare la capacità delle tue [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/). In questo modo è possibile disporre di:
+Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capacità delle tue [offerte di hosting Web](/links/web/hosting). In questo modo è possibile disporre di:
 
 - hosting più potente;
 - più spazio di archiviazione FTP;
 - banche dati supplementari; 
 - di indirizzi email aggiuntivi;
-- funzionalità supplementari come le [mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partire da [l'offerta Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/)) o il [servizio Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} (incluso nelle [offerte Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/).
+- funzionalità supplementari come le [mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partire da [l'offerta Pro](/links/web/hosting-professional-offer)) o il [servizio Web Cloud Databases](/links/web/databases){.external} (incluso nelle [offerte Performance](/links/web/hosting-performance-offer).
 
 **Questa guida ti mostra come far evolvere la tua soluzione di hosting OVHcloud senza interruzioni del servizio.**
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di una [soluzione di hosting Web](/links/web/hosting)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - essere almeno contatto "[Amministratore](/pages/account_and_service_management/account_information/managing_contacts)" dei servizi per i quali si desidera modificare l'abbonamento.
 
 ## Procedura
@@ -40,7 +40,7 @@ Il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fr
 
 ### Modificare il piano di hosting Web <a name="modify"></a>
 
-Per modificare l’abbonamento, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting interessato.
+Per modificare l’abbonamento, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting interessato.
 
 Nel riquadro `Abbonamento`, clicca sul pulsante `...`{.action} a destra di `Servizio` e poi su `Modifica offerta`{.action}.
 
@@ -60,11 +60,11 @@ Seleziona il nuovo abbonamento e la durata. Conferma i contratti corrispondenti 
 
 #### 1 - Database Start SQL
 
-Assicurati che la nuova offerta includa un numero sufficiente di [database](https://www.ovhcloud.com/it/web-hosting/options/start-sql/). Verificare inoltre che le dimensioni siano sufficienti.
+Assicurati che la nuova offerta includa un numero sufficiente di [database](/links/web/hosting-options-startsql). Verificare inoltre che le dimensioni siano sufficienti.
 
-In caso contrario, eliminare i database inutilizzati e, se necessario, ridurre la quantità di dati in essi contenuti. Questa quantità non dovrà superare la dimensione massima dei database della nuova offerta. Per assistenza sulle operazioni da effettuare, contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+In caso contrario, eliminare i database inutilizzati e, se necessario, ridurre la quantità di dati in essi contenuti. Questa quantità non dovrà superare la dimensione massima dei database della nuova offerta. Per assistenza sulle operazioni da effettuare, contatta i [partner OVHcloud](/links/partner).
 
-In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizzata. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina, clicca sulla scheda `Database`{.action} e poi sul pulsante `...`{.action} a destra del database in questione e poi su `Ricalcola la quota`{.action}.
+In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizzata. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina, clicca sulla scheda `Database`{.action} e poi sul pulsante `...`{.action} a destra del database in questione e poi su `Ricalcola la quota`{.action}.
 
 ![quota](images/recalculate-quota.png){.thumbnail}
 
@@ -75,8 +75,8 @@ In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizza
 
 #### 2 - Web Cloud Databases
 
-Se utilizzi l’offerta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) inclusa con il tuo hosting Web [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) e vuoi passare il tuo hosting Web su un’offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/), dovrai innanzitutto dissociare l’offerta Web Cloud dal tuo hosting Web.<br>
-Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina, rimani sulla scheda `Informazioni generali`{.action}. Nella colonna centrale `Configurazione`, clicca sul pulsante `...`{.action} a destra della voce `Web Cloud Databases`{.action} e poi su `Scollega`{.action}.
+Se utilizzi l’offerta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) inclusa con il tuo hosting Web [Performance](/links/web/hosting-performance-offer) e vuoi passare il tuo hosting Web su un’offerta [Pro](/links/web/hosting-professional-offer), dovrai innanzitutto dissociare l’offerta Web Cloud dal tuo hosting Web.<br>
+Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina, rimani sulla scheda `Informazioni generali`{.action}. Nella colonna centrale `Configurazione`, clicca sul pulsante `...`{.action} a destra della voce `Web Cloud Databases`{.action} e poi su `Scollega`{.action}.
 
 ![Web Cloud Databases](images/wcdb-detach.png){.thumbnail}
 
@@ -85,13 +85,13 @@ Questa azione permette di ordinare una soluzione Web Cloud Databases indipendent
 Se non vuoi conservare questi dati, puoi anche eliminare la tua soluzione Web Cloud Databases prima di passare all'offerta *Pro*: 
 
 1. Esegui il backup dei dati seguendo le istruzioni riportate in questa [guida](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Elimina il server Web Cloud Databases dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca in alto a destra sul tuo nome e poi sull’icona `Prodotti e servizi`{.action}. Clicca sul pulsante `...`{.action} a destra della linea della soluzione Web Cloud Databases/SQL Privato in questione e poi su `Elimina il tuo hosting SQL Privato`{.action}.
+2. Elimina il server Web Cloud Databases dallo [Spazio Cliente OVHcloud](/links/manager). Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca in alto a destra sul tuo nome e poi sull’icona `Prodotti e servizi`{.action}. Clicca sul pulsante `...`{.action} a destra della linea della soluzione Web Cloud Databases/SQL Privato in questione e poi su `Elimina il tuo hosting SQL Privato`{.action}.
 
 #### 3 - Spazio di archiviazione FTP
 
 Assicurati che la nuova soluzione offra [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection) sufficiente per importare i file dell’hosting corrente.
 
-Per verificare lo spazio di storage FTP utilizzato sull’hosting Web, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Visualizzi la pagina `Informazioni generali`{.action} con la voce `Spazio Disco`.
+Per verificare lo spazio di storage FTP utilizzato sull’hosting Web, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Visualizzi la pagina `Informazioni generali`{.action} con la voce `Spazio Disco`.
 
 ![ftp](images/find-disk-space.png){.thumbnail}
 
@@ -99,26 +99,26 @@ Per verificare lo spazio di storage FTP utilizzato sull’hosting Web, accedi al
 
 Verifica che la nuova offerta includa un numero sufficiente di indirizzi email disponibili. In caso contrario, elimina gli indirizzi email inutilizzati dopo aver [salvato](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) il loro contenuto, se necessario.
 
-Per conservare lo stesso numero di caselle email **prima di passare l’hosting Web su un’offerta inferiore**, è possibile ordinare anche una nuova soluzione di posta **MX Plan**. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Email`{.action} e seleziona il servizio di posta in questione. Nella nuova pagina, nel riquadro `Abbonamento`{.action} e a destra della voce `Servizio`{.action}, clicca sul pulsante `...`{.action} e poi su `Modifica offerta`{.action}.
+Per conservare lo stesso numero di caselle email **prima di passare l’hosting Web su un’offerta inferiore**, è possibile ordinare anche una nuova soluzione di posta **MX Plan**. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Email`{.action} e seleziona il servizio di posta in questione. Nella nuova pagina, nel riquadro `Abbonamento`{.action} e a destra della voce `Servizio`{.action}, clicca sul pulsante `...`{.action} e poi su `Modifica offerta`{.action}.
 
 ![mxplan](images/change-solution.png){.thumbnail}
 
 >[!primary]
 >
-> Se il pulsante `...`{.action} non è disponibile sul tuo servizio di posta, puoi scollegare il servizio di posta dal tuo hosting Web. Resta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina `Informazioni generali`{.action} e nel riquadro `Configurazione`{.action}, clicca sul pulsante `...`{.action} a destra della dicitura `Account email`{.action} e poi su `Scollega la tua opzione email`{.action}.
+> Se il pulsante `...`{.action} non è disponibile sul tuo servizio di posta, puoi scollegare il servizio di posta dal tuo hosting Web. Resta connesso allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina `Informazioni generali`{.action} e nel riquadro `Configurazione`{.action}, clicca sul pulsante `...`{.action} a destra della dicitura `Account email`{.action} e poi su `Scollega la tua opzione email`{.action}.
 >
 
 #### 5 - Mailing list
 
-La funzionalità [Mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) è in opzione sugli hosting [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/).
+La funzionalità [Mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) è in opzione sugli hosting [Personale](/links/web/hosting-personal-offer).
 
-Per attivare l’hosting Web su una soluzione [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/), è necessario eliminare le mailing list o ordinare un servizio di posta elettronica che includa questa funzionalità (**MX Plan 100** o **MX Plan Full***) dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Per attivare l’hosting Web su una soluzione [Personale](/links/web/hosting-personal-offer), è necessario eliminare le mailing list o ordinare un servizio di posta elettronica che includa questa funzionalità (**MX Plan 100** o **MX Plan Full***) dallo [Spazio Cliente OVHcloud](/links/manager).
 
-Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Email`{.action} e seleziona il servizio di posta in questione. Nella nuova pagina, nel riquadro `Abbonamento`{.action} e a destra della voce `Servizio`{.action}, clicca sul pulsante `...`{.action} e poi su `Modifica offerta`{.action}.
+Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Email`{.action} e seleziona il servizio di posta in questione. Nella nuova pagina, nel riquadro `Abbonamento`{.action} e a destra della voce `Servizio`{.action}, clicca sul pulsante `...`{.action} e poi su `Modifica offerta`{.action}.
 
 >[!primary]
 >
-> Se il pulsante `...`{.action} non è disponibile sul tuo servizio di posta, puoi scollegare il servizio di posta dal tuo hosting Web. Resta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina `Informazioni generali`{.action} e nel riquadro `Configurazione`{.action}, clicca sul pulsante `...`{.action} a destra della dicitura `Account email`{.action} e poi su `Scollega la tua opzione email`{.action}.
+> Se il pulsante `...`{.action} non è disponibile sul tuo servizio di posta, puoi scollegare il servizio di posta dal tuo hosting Web. Resta connesso allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina `Informazioni generali`{.action} e nel riquadro `Configurazione`{.action}, clicca sul pulsante `...`{.action} a destra della dicitura `Account email`{.action} e poi su `Scollega la tua opzione email`{.action}.
 >
 
 #### 6 - Utenti FTP
@@ -141,13 +141,13 @@ Una volta verificati questi 6 punti, potrai realizzare il tuo [cambio di offerta
 
 #### Hai attivato un'offerta di hosting gratuito 100M <a name="100m"></a>
 
-In caso di modifica da un'offerta di [hosting gratuito 100M](/pages/web_cloud/web_hosting/activate_start10m), verrà proposta solo [l'offerta Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/). Tuttavia, dopo un cambio verso l’offerta Personale, è possibile farlo evolvere verso tutte le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/).
+In caso di modifica da un'offerta di [hosting gratuito 100M](/pages/web_cloud/web_hosting/activate_start10m), verrà proposta solo [l'offerta Personale](/links/web/hosting-personal-offer). Tuttavia, dopo un cambio verso l’offerta Personale, è possibile farlo evolvere verso tutte le nostre [offerte di hosting Web](/links/web/hosting).
 
 Segui [queste istruzioni](#modify) per modificare l’offerta.
 
 #### Potenzia temporaneamente il tuo hosting Performance <a name="boost"></a>
 
-Con l'[opzione Boost](https://www.ovhcloud.com/it/web-hosting/options/boost/), disponibile sulle nostre soluzioni *Performance*, è possibile aumentare temporaneamente le risorse CPU e RAM dell’hosting Web per assorbire un aumento temporaneo del traffico. Se l'aumento dura nel tempo, puoi anche [passare all'offerta Performance di livello superiore](#modify) per disporre di queste risorse in modo permanente.
+Con l'[opzione Boost](/links/web/hosting-options-boost), disponibile sulle nostre soluzioni *Performance*, è possibile aumentare temporaneamente le risorse CPU e RAM dell’hosting Web per assorbire un aumento temporaneo del traffico. Se l'aumento dura nel tempo, puoi anche [passare all'offerta Performance di livello superiore](#modify) per disporre di queste risorse in modo permanente.
 
 > [!warning]
 >
@@ -158,12 +158,12 @@ Se l’opzione **Boost** è adatta alle tue esigenze, trovi qui sotto le istruzi
 > [!tabs]
 > **Attiva l'opzione Boost**
 >>>
->>> Per attivare l’opzione Boost, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nel riquadro `Informazioni generali` della pagina che appare, clicca sul pulsante `...`{.action} a destra di `Boost` e poi su `Boost`{.action}.<br><br>
+>>> Per attivare l’opzione Boost, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nel riquadro `Informazioni generali` della pagina che appare, clicca sul pulsante `...`{.action} a destra di `Boost` e poi su `Boost`{.action}.<br><br>
 >>>![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
 >>>
 > **Disattiva l'opzione Boost**
 >>>
->>> Per disattivare l’opzione Boost, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Accedi alla scheda `Più` e clicca su `Boost`{.action}.<br>
+>>> Per disattivare l’opzione Boost, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Accedi alla scheda `Più` e clicca su `Boost`{.action}.<br>
 >>> Visualizzi la tabella di utilizzo dell’opzione Boost e clicca su `Disattiva l’offerta Boost`{.action}.<br><br>
 >>>![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
 
@@ -174,9 +174,9 @@ Questo calcolo corrisponde alla differenza di prezzo tra il piano iniziale e il 
 
 > **Esempio:**<br>
 >
-> Hai sottoscritto un abbonamento [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) il 1° gennaio 2022.
+> Hai sottoscritto un abbonamento [Personale](/links/web/hosting-personal-offer) il 1° gennaio 2022.
 >
-> Il 31 ottobre 2022, passerai da questa offerta **Personale** a un abbonamento sull'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/).<br>
+> Il 31 ottobre 2022, passerai da questa offerta **Personale** a un abbonamento sull'offerta [Pro](/links/web/hosting-professional-offer).<br>
 >
 > Di conseguenza, l'importo corrispondente alla durata residua dell'abbonamento **Personale** (2 mesi, dal 1° novembre 2022 al 1° gennaio 2023) viene automaticamente sottratto dal costo del nuovo abbonamento **Pro**, fino al 1° gennaio 2023. Pagherete solo la differenza.
 > A partire dal 1° gennaio 2023, ti sarà fatturato l'abbonamento **Pro** alla tariffa in vigore.
@@ -189,8 +189,8 @@ Segui [queste istruzioni](#modify) per modificare l’offerta.
 
 [Ottimizzazione delle prestazioni del sito](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

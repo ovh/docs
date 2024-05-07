@@ -16,15 +16,15 @@ Datenbanken (DBs) werden verwendet, um dynamische Elemente (Verbindungsdaten, Be
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer inkludierten Datenbank.
-- Sie haben unter den in Ihrem Webhosting enthaltenen Datenbanken eine zur Erstellung verfügbare Datenbank. Bei Bedarf können Sie [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) Datenbanken zu Ihrem Webhosting hinzufügen.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den [erforderlichen Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts) zur Verwaltung des Webhostings.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit mindestens einer inkludierten Datenbank.
+- Sie haben unter den in Ihrem Webhosting enthaltenen Datenbanken eine zur Erstellung verfügbare Datenbank. Bei Bedarf können Sie [Start SQL](/links/web/hosting-options-startsql) Datenbanken zu Ihrem Webhosting hinzufügen.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den [erforderlichen Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts) zur Verwaltung des Webhostings.
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Auf die Datenbankverwaltung des Webhostings zugreifen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} links unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Web Cloud`{.action} links unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Die Tabelle auf dieser Seite enthält alle Datenbanken, die mit Ihrem Webhosting erstellt wurden.
 
@@ -57,7 +57,7 @@ Wählen Sie im angezeigten Fenster unter den folgenden Optionen aus:
 |Information|Beschreibung|  
 |---|---|
 |**Wählen Sie den Typ der Datenbank aus**|Wählen Sie die Größe der Datenbank aus. Diese Größe bezieht sich auf den Speicherplatz, den Ihre Datenbank zum Speichern von Daten hat.|
-|**Wählen Sie die Engine der Datenbank aus**|Wählen Sie die Engine aus, die die Datenbank verwenden soll. Die in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) inkludierten Datenbanken sind ausschließlich mit der MySQL-Engine verfügbar.|
+|**Wählen Sie die Engine der Datenbank aus**|Wählen Sie die Engine aus, die die Datenbank verwenden soll. Die in einem [OVHcloud Webhosting](/links/web/hosting) inkludierten Datenbanken sind ausschließlich mit der MySQL-Engine verfügbar.|
 |**Wählen Sie die Version der Datenbank aus**|Wählen Sie die Version aus, die vom Datenbankmodul verwendet wird. Stellen Sie sicher, dass Ihre Website mit der von Ihnen gewählten Version kompatibel ist.|
 
 Klicken Sie auf `Weiter`{.action}.
@@ -98,7 +98,7 @@ Geben Sie die erforderlichen Informationen ein und klicken Sie auf `Weiter`{.act
 
 > [!primary]
 >
-> Wenn Sie auf `Bestätigen`{.action} klicken, wird die Erstellung der Datenbank bis zu **15 Minuten** dauern. Laden Sie die Seite des [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu, wenn die Datenbank nicht automatisch in der Tabelle mit den Datenbanken erscheint.
+> Wenn Sie auf `Bestätigen`{.action} klicken, wird die Erstellung der Datenbank bis zu **15 Minuten** dauern. Laden Sie die Seite des [OVHcloud Kundencenters](/links/manager) neu, wenn die Datenbank nicht automatisch in der Tabelle mit den Datenbanken erscheint.
 >
 
 Wiederholen Sie diesen Vorgang so oft wie nötig, um mehrere Datenbanken zu erstellen (im Rahmen der in Ihrem Webhosting verfügbaren Datenbanken).
@@ -107,7 +107,7 @@ Wiederholen Sie diesen Vorgang so oft wie nötig, um mehrere Datenbanken zu erst
 
 > [!warning]
 >
-> Diese Anleitung ersetzt nicht die Unterstützung durch einen Spezialisten, wie etwa eines Webentwicklers. Wir empfehlen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder den Herausgeber der verwendeten Software zu kontaktieren, falls Sie auf Schwierigkeiten stoßen. Leider können wir Ihnen keine weitergehende technische Unterstützung hierzu anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung ersetzt nicht die Unterstützung durch einen Spezialisten, wie etwa eines Webentwicklers. Wir empfehlen, einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber der verwendeten Software zu kontaktieren, falls Sie auf Schwierigkeiten stoßen. Leider können wir Ihnen keine weitergehende technische Unterstützung hierzu anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 Sie können nun Ihre Datenbank verwenden. Hierzu benötigen Sie Ihre Anmeldeinformationen:
@@ -118,7 +118,7 @@ Sie können nun Ihre Datenbank verwenden. Hierzu benötigen Sie Ihre Anmeldeinfo
 
 Diese Informationen sind für die Verbindung von Websites mit der Datenbank unbedingt erforderlich.
 
-Um diese Verbindungsinformationen einzusehen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie auf den Tab `Datenbanken`{.action}.
+Um diese Verbindungsinformationen einzusehen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie auf den Tab `Datenbanken`{.action}.
 
 Die Verbindungsinformationen zu Ihrer Datenbank finden Sie in der angezeigten Tabelle, aus Sicherheitsgründen unter Ausnahme von Passwörtern.
 
@@ -127,7 +127,7 @@ Die Verbindungsinformationen zu Ihrer Datenbank finden Sie in der angezeigten Ta
 > Wenn Sie das Datenbankpasswort nicht haben, lesen Sie unsere Anleitung „[Datenbankpasswort ändern](/pages/web_cloud/web_hosting/sql_change_password)“.
 >
 
-Je nach verwendeter Software muss diese Verbindung gegebenenfalls manuell oder über ein vom Website-Backend generiertes Interface konfiguriert werden. Da dieser Prozess eher die Konfiguration Ihrer Website als der von OVHcloud bereitgestellten Dienste betrifft, empfehlen wir Ihnen, die entsprechenden Online-Ressourcen zu konsultieren oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren.
+Je nach verwendeter Software muss diese Verbindung gegebenenfalls manuell oder über ein vom Website-Backend generiertes Interface konfiguriert werden. Da dieser Prozess eher die Konfiguration Ihrer Website als der von OVHcloud bereitgestellten Dienste betrifft, empfehlen wir Ihnen, die entsprechenden Online-Ressourcen zu konsultieren oder einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren.
 
 > [!primary]
 >
@@ -136,7 +136,7 @@ Je nach verwendeter Software muss diese Verbindung gegebenenfalls manuell oder �
 
 #### Auf das phpMyAdmin-Interface zugreifen
 
-OVHcloud stellt Ihnen ein Online-Tool für das Datenbankmanagement zur Verfügung: phpMyAdmin. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie dann auf den Tab `Datenbanken`{.action}.
+OVHcloud stellt Ihnen ein Online-Tool für das Datenbankmanagement zur Verfügung: phpMyAdmin. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie dann auf den Tab `Datenbanken`{.action}.
 
 Klicken Sie in der angezeigten Tabelle auf `...`{.action} rechts neben der betreffenden Datenbank und dann im Drop-down-Menü auf `Zugang zu phpMyAdmin`{.action}.
 
@@ -150,7 +150,7 @@ Falls nötig, folgen Sie [Schritt 3](#step3) dieser Anleitung, um die Zugangsdat
 
 Für jede Webhosting-Datenbank werden täglich Snapshots erstellt (maximal 32 insgesamt). Sie können damit schnell eine frühere Version einer Datenbank über Ihr OVHcloud Kundencenter wiederherstellen.
 
-Um die verfügbaren Snapshots sowie deren Erstellungsdatum und -zeit zu einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie dann auf den Tab `Datenbanken`{.action}.
+Um die verfügbaren Snapshots sowie deren Erstellungsdatum und -zeit zu einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie dann auf den Tab `Datenbanken`{.action}.
 
 Klicken Sie in der hier angezeigten Tabelle auf das Symbol neben dem grünen Kreis. Von dort können Sie auch jedes Backup einer Datenbank herunterladen. Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung „[Backup einer Webhosting-Datenbank exportieren](/pages/web_cloud/web_hosting/sql_database_export)“.
 
@@ -158,7 +158,7 @@ Klicken Sie in der hier angezeigten Tabelle auf das Symbol neben dem grünen Kre
 
 **Too many connections**
 
-Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Datenbank oder ein [Upgrade Ihres Webhostings](https://www.ovhcloud.com/de/web-hosting/uc-best-web-hosting/).
+Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine [Web Cloud Databases](/links/web/databases) Datenbank oder ein [Upgrade Ihres Webhostings](/links/web/hosting-best-web).
 
 **Connection error / "not found"**
 
@@ -182,8 +182,8 @@ Nachdem die Datenbank optimiert wurde (*purge*), können Sie die Quota über Ihr
 
 [Optimierung der Performance Ihrer Webseite](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

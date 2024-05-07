@@ -14,7 +14,7 @@ Vous pouvez, par exemple, y préciser :
 - Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
 - Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.)  associés à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
 
-N'hésitez pas à consulter notre documentation sur [les enregistrements DNS et l'édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) si vous souhaitez en apprendre plus sur le sujet.
+N'hésitez pas à consulter notre documentation sur [les enregistrements DNS et l'édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](/links/manager) si vous souhaitez en apprendre plus sur le sujet.
 Pour diverses raisons, vous pouvez être amené à appliquer une ancienne configuration DNS à votre nom de domaine.
 
 Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zones DNS.
@@ -23,13 +23,13 @@ Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zo
 
 ## Prérequis
 
-- Disposer d'une zone DNS pour votre nom de domaine dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Disposer d'une zone DNS pour votre nom de domaine dans votre [espace client OVHcloud](/links/manager)
+- Être connecté à l’[espace client OVHcloud](/links/manager)
 - Disposer d'un accès à la gestion du nom de domaine concerné
 
 ## En pratique
 
-Pour accéder à cette fonctionnalité, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action} sur la partie haute de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Noms de domaine`{.action}, puis sélectionnez le nom de domaine lié à la zone DNS que vous souhaitez manipuler.
+Pour accéder à cette fonctionnalité, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action} sur la partie haute de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Noms de domaine`{.action}, puis sélectionnez le nom de domaine lié à la zone DNS que vous souhaitez manipuler.
 
 Sur la page qui s'affiche et si vous n'êtes pas déjà redirigé dans cet onglet, cliquez sur l'onglet `Zone DNS`{.action}.
 
@@ -107,8 +107,8 @@ Grâce à ce guide, vous pouvez désormais comparer deux zones DNS, mais égalem
 
 [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

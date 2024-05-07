@@ -255,7 +255,7 @@ There are 2 types of errors:
 
 In the next section we will only focus on the **customer errors** types within the **partitioning pre-processing step**, because this is only helpful for the customer.
 
-#### Common customer errors
+#### Common customer errors <a name="errors"></a>
 
 The following table gives an overview of well known customer errors and how to fix them.
 

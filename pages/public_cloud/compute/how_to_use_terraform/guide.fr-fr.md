@@ -3,7 +3,7 @@ title: Comment utiliser Terraform sur le Public Cloud OVHcloud
 description: Utilisation de Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Décrouvez comment utiliser l'outil Terraform pour abstraire le déploiement de votre infrastructure
-updated: 2024-01-12
+updated: 2024-04-26
 ---
 
 ## Objectif
@@ -160,6 +160,13 @@ resource "openstack_compute_instance_v2" "test_terraform_instance" {
   key_pair    = openstack_compute_keypair_v2.test_keypair.name
   network {
     name      = "Ext-Net" # Ajoute le composant réseau pour atteindre votre instance
+  }
+    lifecycle {
+    # OVHcloud met régulièrement à jour l’image de base d’un OS donné afin que le client ait moins de paquets à mettre à jour après le lancement d’une nouvelle instance
+    # Pour éviter que terraform ne rencontre des problèmes avec cela, la commande ignore_changes suivante est requise.
+    ignore_changes = [
+      image_name
+    ]
   }
 }
 ```

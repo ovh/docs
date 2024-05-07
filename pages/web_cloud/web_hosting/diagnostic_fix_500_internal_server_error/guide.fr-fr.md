@@ -18,13 +18,13 @@ Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement*
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement mutualisé](https://www.ovhcloud.com/fr/web-hosting/)
-- Etre connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'une [offre d'hébergement mutualisé](/links/web/hosting)
+- Etre connecté à votre [espace client OVHcloud](/links/manager)
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web)
 
 ## En pratique
@@ -55,7 +55,7 @@ Pour le vérifier, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 Puis renommez ce fichier en `.htaccess.old` et retestez votre site.
 
-Si ce dernier est de nouveau accessible, alors le `.htaccess` est en cause. Il devra donc être modifié. Si vous le souhaitez, contactez l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/) à ce sujet.
+Si ce dernier est de nouveau accessible, alors le `.htaccess` est en cause. Il devra donc être modifié. Si vous le souhaitez, contactez l'un de nos [partenaires](/links/partner) à ce sujet.
 
 ### Vérifier les permissions sur les dossiers et les fichiers
 
@@ -75,7 +75,7 @@ Le guide « [Utilisation du logiciel FileZilla avec votre hébergement](/pages/w
 
 Pour des raisons de sécurité, votre site masque les détails éventuels sur l'origine de l'erreur 500 à toute personne s'y connectant par un navigateur web.
 
-Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), de vous connecter à votre site via une [connexion ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
+Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [Pro](/links/web/hosting-professional-offer), de vous connecter à votre site via une [connexion ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 ### Vérifier l'état de la base de données
 
@@ -112,6 +112,6 @@ Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP d
 
 [Résoudre l'erreur « Site non installé »](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

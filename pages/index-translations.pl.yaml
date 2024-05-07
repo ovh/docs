@@ -20,6 +20,7 @@ bare-metal-cloud-dedicated-servers: Serwery dedykowane
 bare-metal-cloud-dedicated-servers-advanced-usage: Zaawansowane użycie
 bare-metal-cloud-dedicated-servers-getting-started: Pierwsze kroki
 bare-metal-cloud-dedicated-servers-managing-servers: Zarządzanie serwerami
+bare-metal-cloud-dedicated-servers-backup-restore: Tworzenie kopii zapasowych i przywracanie serwera
 bare-metal-cloud-dedicated-servers-miscellaneous: Różne
 bare-metal-cloud-dedicated-servers-network-and-ip-management: Sieć i adres IP
 bare-metal-cloud-dedicated-servers-raid-and-disks: RAID i dyski
@@ -52,6 +53,7 @@ hosted-private-cloud-nutanix-on-ovhcloud-disaster-recovery-plan: Disaster Recove
 hosted-private-cloud-nutanix-on-ovhcloud-raci: Podział odpowiedzialności (RACI)
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware: VMware on OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Pierwsze kroki
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vcd: VMware Cloud Director
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security: Dostęp i bezpieczeństwo
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Zarządzanie maszynami wirtualnymi
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring: Konserwacja i monitorowanie
@@ -174,8 +176,6 @@ public-cloud-network-technical-resources: Zasoby techniczne
 public-cloud-network-tutorials: Tutoriale
 public-cloud-data-platform: Data Platform
 public-cloud-data-platform-general-information: General information
-public-cloud-data-platform-build-an-ai-model-from-scratch: Build your AI model from scratch
-public-cloud-data-platform-build-a-first-app-from-scratch: Build your analytics app from scratch
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Pierwsze kroki
 web-cloud-clouddb-configuration: Konfiguracja
@@ -338,6 +338,7 @@ network-load-balancer-getting-started: Pierwsze kroki
 network-load-balancer-setting-up: Uruchamianie
 network-load-balancer-use-cases: Przypadki użycia
 network-load-balancer-viewing-statuses: Wyświetlanie stanów
+network-vrack-services: vRack Services
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6

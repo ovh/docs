@@ -1,7 +1,7 @@
 ---
 title: "API OVHcloud et installation d'un OS"
 excerpt: "Découvrez comment l'API OVHcloud vous permet d'installer ou de réinstaller un OS sur votre serveur"
-updated: 2024-03-04
+updated: 2024-04-04
 ---
 
 ## Objectif
@@ -81,6 +81,23 @@ Vous y trouverez des informations pertinentes comme par exemple :
 ### Questions spécifiques des OS <a name="os-inputs"></a>
 
 Certains OS peuvent avoir une liste de questions spécifiques. Si c'est le cas, la clef `inputs`{.action} contient une liste de questions.
+
+Exemple de valeurs pour la clef `inputs`{.action} pour Debian 12 (Bookworm) :
+
+```json
+{
+    "inputs": [
+        {
+            "default": "",
+            "name": "sshKey",
+            "mandatory": false,
+            "enum": [],
+            "description": "SSH Public Key",
+            "type": "sshPubKey"
+        }
+    ]
+}
+```
 
 Exemple de valeurs pour la clef `inputs`{.action} pour Windows Server 2022 Standard (Core) :
 
@@ -211,6 +228,23 @@ Avec les paramètres suivants :
 
 - La clé doit contenir le nom (`name`{.action}) de la question.
 - La valeur doit contenir la réponse à la question, dans le format qui correspond au `type`{.action} requis.
+
+Exemple d'un payload pour installer Debian 12 (Bookworm) avec une authentification par clé SSH :
+
+```json
+{
+  "details": {
+    "customHostname": "mon-tux"
+  },
+  "templateName": "debian12_64",
+  "userMetadata": [
+    {
+      "key": "sshKey",
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+    }
+  ]
+}
+```
 
 Exemple d'un payload pour installer Windows Server 2022 Standard (Core) en français :
 

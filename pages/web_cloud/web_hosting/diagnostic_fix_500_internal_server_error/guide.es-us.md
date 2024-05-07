@@ -27,8 +27,8 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener un [plan de hosting](/links/web/hosting).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
@@ -59,7 +59,7 @@ Para comprobarlo, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connecti
 
 Cambie el nombre del archivo a `.htaccess.old` y permanezca en su sitio web.
 
-Si este último vuelve a estar accesible, entonces el `.htaccess` está en cuestión. Por lo tanto, deberá modificarse. Si lo desea, contacte con uno de nuestros [partners](https://partner.ovhcloud.com/es/directory/) al respecto.
+Si este último vuelve a estar accesible, entonces el `.htaccess` está en cuestión. Por lo tanto, deberá modificarse. Si lo desea, contacte con uno de nuestros [partners](/links/partner) al respecto.
 
 ### Comprobar los permisos de carpetas y archivos
 
@@ -79,7 +79,7 @@ La guía "[Uso de FileZilla con el alojamiento](/pages/web_cloud/web_hosting/ftp
 
 Por motivos de seguridad, su sitio web oculta los detalles sobre el origen del error 500 a cualquier persona que se conecte a él a través de un navegador web.
 
-Si usted o su desarrollador desea tener acceso a estos detalles, puede conectarse a su sitio web a través de una [conexión SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) a través de la fórmula de alojamiento [Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/) o superior.
+Si usted o su desarrollador desea tener acceso a estos detalles, puede conectarse a su sitio web a través de una [conexión SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) a través de la fórmula de alojamiento [Pro](/links/web/hosting-professional-offer) o superior.
 
 ### Comprobar el estado de la base de datos
 
@@ -116,6 +116,6 @@ Por último, si se ha producido un error al actualizar la versión PHP del aloja
 
 [Solucionar el error «Sitio no instalado»](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

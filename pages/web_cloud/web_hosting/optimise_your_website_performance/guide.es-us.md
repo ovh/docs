@@ -17,10 +17,10 @@ Esta guía le ayudará a obtener un entendimiento básico de los puntos que pued
 
 ## Requisitos
 
-- Un [plan de hospedaje web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}
+- Un [plan de hospedaje web de OVHcloud](/links/web/hosting){.external}
 - Un mensaje de correo electrónico que confirme que su plan de hospedaje web ha sido contratado
-- Un [nombre de dominio](https://www.ovhcloud.com/es/domains/){.external} que pueda utilizarse para acceder a su sitio web
-- Haber iniciado sesión en el [área de cliente de OVHcloud para tener acceso al panel de control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+- Un [nombre de dominio](/links/web/domains){.external} que pueda utilizarse para acceder a su sitio web
+- Haber iniciado sesión en el [área de cliente de OVHcloud para tener acceso al panel de control](/links/manager){.external}
 
 ## Procedimiento
 
@@ -50,9 +50,9 @@ Responder a estas preguntas puede ayudarle a centrarse en puntos concretos y ár
 
 El uso de un sistema de gestión de contenidos (CMS) como WordPress, PrestaShop, Drupal o Joomla! necesita muchas librerías, por lo que una única página web puede involucrar una gran cantidad de elementos.
 Los navegadores de internet deben cargar y leer todos esos elementos.
-Proporcionamos recomendaciones sobre qué oferta de hospedaje web utilizar para los sistemas de gestión de contenidos antes mencionados en [la página del producto](https://www.ovhcloud.com/es/web-hosting/){.external}.
+Proporcionamos recomendaciones sobre qué oferta de hospedaje web utilizar para los sistemas de gestión de contenidos antes mencionados en [la página del producto](/links/web/hosting){.external}.
 
-Puede encontrar más información sobre qué plan elegir en [esta página](https://www.ovhcloud.com/es/web-hosting/uc-best-web-hosting/){.external}.
+Puede encontrar más información sobre qué plan elegir en [esta página](/links/web/hosting-best-web){.external}.
 
 ### Paso 2: comprobar la versión del lenguaje PHP
 
@@ -94,7 +94,7 @@ Puede encontrar más información sobre este tema más adelante, en el paso 5.
 
 Correlacione los gráficos de recursos utilizados de su hospedaje (más información a continuación) para descubrir el origen de los retrasos y consulte los registros de las fechas de dichos picos.
 
-Puede acceder a sus registros, estadísticas y gráficos directamente desde el panel de control, iniciando sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+Puede acceder a sus registros, estadísticas y gráficos directamente desde el panel de control, iniciando sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 Cómo acceder a las estadísticas y los logs:
 
@@ -156,7 +156,7 @@ Descubra nuestra [solución de red de distribución de contenidos (CDN) aquí](h
 
 _Este paso es opcional si no está utilizando un sistema de gestión de contenidos._
 
-Para garantizar que nuestra oferta de hospedaje se adapte a las necesidades de su sistema de gestión de contenidos, puede encontrar una comparativa de nuestros servicios en [la página del producto](https://www.ovhcloud.com/es/web-hosting/){.external}.
+Para garantizar que nuestra oferta de hospedaje se adapte a las necesidades de su sistema de gestión de contenidos, puede encontrar una comparativa de nuestros servicios en [la página del producto](/links/web/hosting){.external}.
 
 - **Usar un complemento de caché:** Un sistema de gestión de contenidos recurre a varias librerías, por lo que una única página web puede procesar una enorme cantidad de elementos. Con el fin de optimizar su sistema de gestión de contenidos, debe usar varios complementos de caché para evitar que se regenere todo el contenido de su sitio web cada vez que se cargue una página. Recomendamos que busque complementos de caché en los sitios web de la comunidad del sistema de gestión de contenidos que utiliza (Joomla!, PrestaShop, WordPress) para evitar que se regenere todo el contenido de su sitio web cada vez que carga una página.
 
@@ -168,7 +168,7 @@ _Este paso es opcional si no está usando una base de datos._
 Puede acceder a su base de datos usando PHPMyAdmin. Las instrucciones sobre cómo usar PHPMyAdmin escapan del ámbito de esta guía, por lo que no se proporcionan más detalles.
 Sin embargo, existe una gran cantidad de guías externas sobre este tema.
 
-**Cómo acceder a la base de datos mediante phpMyAdmin:** A continuación, se detalla el procedimiento para acceder a su base de datos mediante phpMyAdmin, disponible en el panel de control una vez iniciada sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}:
+**Cómo acceder a la base de datos mediante phpMyAdmin:** A continuación, se detalla el procedimiento para acceder a su base de datos mediante phpMyAdmin, disponible en el panel de control una vez iniciada sesión en el [área de cliente de OVHcloud](/links/manager){.external}:
 
 - En la sección `Hospedaje`{.action}, haga clic en su dominio.
 - Acceda a la pestaña `Base de datos`{.action}.
@@ -239,8 +239,8 @@ Si a pesar de todos los cambios y optimizaciones realizados la base de datos va 
 
 [Primeros pasos con el servicio Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

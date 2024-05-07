@@ -14,8 +14,8 @@ La portabilité permet à un abonné de conserver son numéro de téléphone lor
 
 - Disposer d'au moins un numéro de téléphone chez un autre opérateur en Belgique.
 - Pour les numéros géographiques, justifier d'une adresse postale correspondant à la zone du ou des numéros concernés.
-- Disposer d'une offre [VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Disposer d'une offre [VoIP OVHcloud](/links/telecom/telephonie){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
  
@@ -38,7 +38,7 @@ Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le pro
 
 ### Étape 2 : demander la portabilité
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de facturation dans lequel le ou les numéros portés seront intégrés. 
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de facturation dans lequel le ou les numéros portés seront intégrés. 
 
 Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Demander une portabilité`{.action}.
 
@@ -91,7 +91,7 @@ Avant cette validation du mandat par nos soins, vous pouvez, en cas d'erreur, su
 
 ### Étape 4 : suivre une demande de portabilité <a name="suivi"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de facturation sur lequel a été demandée la portabilité.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez le groupe de facturation sur lequel a été demandée la portabilité.
 
 Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Consulter mes portabilités en cours`{.action}.
 

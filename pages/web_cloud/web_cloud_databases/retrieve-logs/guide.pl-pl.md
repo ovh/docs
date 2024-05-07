@@ -10,7 +10,7 @@ updated: 2024-03-07
 
 ## Wprowadzenie
 
-Rozwiązanie [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) umożliwia hostowanie kilku baz danych. W niektórych sytuacjach możesz sprawdzić/pobrać logi:
+Rozwiązanie [Web Cloud Databases](/links/web/databases) umożliwia hostowanie kilku baz danych. W niektórych sytuacjach możesz sprawdzić/pobrać logi:
 
 - serwera Web Cloud Databases ;
 - dla jednej z baz danych hostowanych na serwerze Web Cloud Databases.
@@ -19,8 +19,8 @@ Rozwiązanie [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databas
 
 ## Wymagania początkowe
 
-- Posiadanie rozwiązania [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) (zawartego lub nie w ofercie [hostingu performance](https://www.ovhcloud.com/pl/web-hosting/)).
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie rozwiązania [Web Cloud Databases](/links/web/databases) (zawartego lub nie w ofercie [hostingu performance](/links/web/hosting)).
+- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
@@ -28,14 +28,14 @@ Rozwiązanie [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databas
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce tutorial, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/). Niestety OVH nie jest w stanie udzielić Ci wsparcia w interpretacji logów dostępnych w ramach Twojego rozwiązania Web Cloud Databases. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)" tego tutoriala.
+> Oddajemy w Twoje ręce tutorial, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety OVH nie jest w stanie udzielić Ci wsparcia w interpretacji logów dostępnych w ramach Twojego rozwiązania Web Cloud Databases. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)" tego tutoriala.
 >
 
 ### Sprawdzanie logów usługi Web Cloud Databases w czasie rzeczywistym
 
 Aby w czasie rzeczywistym sprawdzać logi rozwiązania Web Cloud Databases, wykonaj następujące czynności:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 3. W lewej kolumnie kliknij menu rozwijane `Web Cloud Databases`{.action}.
 4. Wybierz odpowiednie rozwiązanie Web Cloud Databases.
@@ -65,7 +65,7 @@ Aby pobrać historię logów rozwiązania Web Cloud Databases, należy połączy
 
 Aby uzyskać informacje na temat logowania przez SFTP do rozwiązania Web Cloud Databases, wykonaj następujące czynności:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 3. W lewej kolumnie kliknij menu rozwijane `Web Cloud Databases`{.action}.
 4. Wybierz odpowiednie rozwiązanie Web Cloud Databases.
@@ -105,6 +105,6 @@ Możesz go pobrać na swoje stanowisko i sprawdzić.
 
 [Pierwsze kroki z Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

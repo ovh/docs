@@ -16,9 +16,9 @@ Der Eintrag vom Typ MX legt den für die E-Mail-Adressen eines Domainnamens zust
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens.
 - Der Domainname verwendet die OVHcloud Konfiguration (die OVHcloud DNS-Server).
-- Sie verfügen über einen MX Plan (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt), einen unserer [OVHcloud E-Mail-Dienste](https://www.ovhcloud.com/de/emails/) oder einen externen E-Mail-Dienst.
+- Sie verfügen über einen MX Plan (enthalten in einem [Webhosting](/links/web/hosting) oder [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder separat bestellt), einen unserer [OVHcloud E-Mail-Dienste](/links/web/emails) oder einen externen E-Mail-Dienst.
 
 > [!primary]
 >
@@ -49,11 +49,11 @@ Sie können mehrere MX-Einträge für denselben Domainnamen einrichten. In diese
 > [!warning]
 >
 > Generell ist bei der **Änderung der MX-Einträge in der DNS-Zone Ihres Domainnamens Vorsicht geboten**: Bei einer fehlerhaften Änderung können E-Mails an Ihre Adressen nicht mehr empfangen werden.
-> Im Zweifelsfall empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren.
+> Im Zweifelsfall empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren.
 
 ### Werte der OVHcloud MX-Konfiguration <a name="mxovhcloud"></a>
 
-Nachfolgend finden Sie die Konfiguration für OVHcloud MX Plan (Standalone oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten), [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) und [Exchange](https://www.ovhcloud.com/de/emails/). Unsere E-Mail-Server verfügen über integrierte Antispam- und Antivirensoftware.
+Nachfolgend finden Sie die Konfiguration für OVHcloud MX Plan (Standalone oder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten), [E-Mail Pro](/links/web/email-pro) und [Exchange](/links/web/emails). Unsere E-Mail-Server verfügen über integrierte Antispam- und Antivirensoftware.
 
 |Domain|TTL|Eintrag|Priorität|Ziel|
 |---|---|---|---|---|
@@ -67,7 +67,7 @@ Diese MX-Einträge müssen in der DNS-Zone Ihres Domainnamens konfiguriert werde
 
 ### MX-Eintrag in einer OVHcloud DNS-Zone konfigurieren
 
-Um MX-Einträge in der OVHcloud Konfiguration Ihres Domainnamens zu erstellen oder zu bearbeiten, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie in den Bereich `Domainnamen`{.action}, klicken Sie auf den Domainnamen und anschließend in den Tab `DNS-Zone`{.action}.
+Um MX-Einträge in der OVHcloud Konfiguration Ihres Domainnamens zu erstellen oder zu bearbeiten, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Gehen Sie in den Bereich `Domainnamen`{.action}, klicken Sie auf den Domainnamen und anschließend in den Tab `DNS-Zone`{.action}.
 
 Die Tabelle zeigt die OVHcloud DNS-Konfiguration Ihres Domainnamens an. Jede Zeile entspricht einem DNS-Eintrag.
 
@@ -102,8 +102,8 @@ Wenn Sie alle Daten eingegeben haben, schließen Sie die Schritte ab und klicken
 
 [DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

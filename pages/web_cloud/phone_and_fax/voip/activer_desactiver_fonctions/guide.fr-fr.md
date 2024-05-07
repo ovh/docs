@@ -9,7 +9,7 @@ Vous pouvez, depuis votre téléphone, activer ou désactiver certaines fonction
 
 ## Prérequis
 
-- Utiliser une [ligne téléphonique OVH](https://www.ovhtelecom.fr/telephonie/).
+- Utiliser une [ligne téléphonique OVH](/links/telecom/telephonie).
 
 ## En pratique
 

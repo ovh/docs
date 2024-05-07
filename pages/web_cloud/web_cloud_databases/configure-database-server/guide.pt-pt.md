@@ -1,7 +1,7 @@
 ---
 title: 'Configurar o servidor de bases de dados'
 excerpt: 'Descubra como configurar e otimizar o servidor de bases de dados'
-updated: 2023-04-24
+updated: 2024-03-20
 ---
 
 > [!primary]
@@ -16,21 +16,21 @@ Os servidores Web Cloud Databases oferecem-lhe a possibilidade de agir sobre os 
 
 ## Requisitos
 
-- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/)  (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/)  (incluída numa oferta de [alojamento web Performance](/links/web/hosting).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 ### Visualizar as informações gerais do servidor de bases de dados
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud Databases`{.action} e clique na instância SQL que pretende configurar. Certifique-se de que está no separador `Informações gerais`{.action}.
+Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud Databases`{.action} e clique na instância SQL que pretende configurar. Certifique-se de que está no separador `Informações gerais`{.action}.
 
 Esta secção apresenta as informações essenciais da instância SQL. Sugerimos que dedique alguns minutos para verificar se estão corretas ou se correspondem às indicações descritas a abaixo.
 
 |Informação|Detalhes|
 |---|---|
 |Estado do serviço|Indica se a instância está ativada, a ser reiniciada ou suspensa. Para configurar a instância SQL, esta tem que estar ativada.|
-|Tipo|Indica o sistema de base de dados usado pelo servidor. O sistema «MySQL» é o mais comum, mas existem outros (PostgreSQL, MariaDB). Por exemplo, se o seu site é um WordPress, o sistema MySQL serve perfeitamente.|
+|Tipo|Indica o sistema de base de dados usado pelo servidor. O sistema "MySQL" é o mais comum, mas existem outros (PostgreSQL, MariaDB). Por exemplo, se o seu site é um WordPress, o sistema MySQL serve perfeitamente.|
 |Versão|Indica a versão do sistema da base de dados. Por favor, verifique a compatibilidade do seu site com a versão selecionada.|
 |Saturação CPU|Mostra o tempo de saturação de CPU passado nas últimas 24 horas.|
 |RAM|Indica a RAM disponível para a instância, e avisa quando os limites da RAM são ultrapassados. O servidor de bases de dados dispõe de recursos dedicados e garantidos: a sua memória RAM. Se precisar de mais recursos, pode fazer um upgrade e receber notificações quando o limite de memória for atingido.|
@@ -48,7 +48,7 @@ O seu Web Cloud Databases está acessível a partir dos seus alojamentos web da 
 
 Para que o acesso à sua instância Web Cloud Databases funcione, é obrigatório indicar os IP ou intervalos de IP que podem conectar-se às suas bases de dados.
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud Databases`{.action} e clique na Web Cloud Databases SQL em causa. 
+Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud Databases`{.action} e clique na Web Cloud Databases SQL em causa. 
 
 Clique no separador `IP autorizados`{.action} e a seguir no botão `Adicionar um endereço IP/máscara`{.action}.
 
@@ -70,15 +70,15 @@ Para um alojamento web da OVHcloud, pode simplesmente selecionar `Autorizar os a
 > 
 > Se a sua oferta Web Cloud Databases está associada a uma oferta de alojamento web **Performance**, deverá obrigatoriamente e previamente desassociar a oferta Web Cloud Databases do seu alojamento **Performance** para migrar para uma oferta superior.
 >
-> Para desassociar uma oferta Web Cloud Databases associada a um alojamento web **Performance**, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud`{.action} e, a seguir, no separador `Alojamentos`{.action}, que aparece na coluna da esquerda. 
+> Para desassociar uma oferta Web Cloud Databases associada a um alojamento web **Performance**, aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud`{.action} e, a seguir, no separador `Alojamentos`{.action}, que aparece na coluna da esquerda. 
 >
 > Na nova página `Informações gerais`{.action}, encontrará no centro da página uma caixa intitulada `Configuração`{.action}. À direita da menção `Web Cloud Databases`{.action}, clique no botão `...`{.action} depois `Desassociar`{.action}. Escolha a duração da renovação mais curta e prossiga até à validação da encomenda.
 >
 > **Esta ação é irreversível e a oferta Web Cloud Databases será depois faturada independentemente do seu alojamento web Performance.**
 >
 
-Para alterar a sua oferta Web Cloud Databases, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
-No separador **«Informações gerais»**, que aparece de forma predefinida, clique em `...`{.action} à direita da menção «RAM» e, depois, em `Alterar o volume de RAM`{.action} de modo a proceder à encomenda desta modificação.
+Para alterar a sua oferta Web Cloud Databases, aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
+No separador **"Informações gerais"**, que aparece de forma predefinida, clique em `...`{.action} à direita da menção "RAM" e, depois, em `Alterar o volume de RAM`{.action} de modo a proceder à encomenda desta modificação.
 
 ![Web Cloud Databases](images/change-the-amount-of-ram.png){.thumbnail}
 
@@ -98,11 +98,11 @@ Após a validação dos contratos, será reencaminhado para a ordem de encomenda
 
 ### Alterar a configuração do servidor de bases de dados
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor Web Cloud Databases. 
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor Web Cloud Databases. 
 
 #### Instância MySQL e MariaDB
 
-- Aceda ao separador `Configuration`.
+- Aceda ao separador `Configuração`{.action}.
 
 No quadro **Configuração geral do MySql**, vai encontrar a configuração definida atualmente para a base de dados. Pode alterá-la diretamente e clicar em `Aplicar`{.action}.
 
@@ -120,8 +120,8 @@ No quadro **Configuração geral do MySql**, vai encontrar a configuração defi
 - **sql_mode**: A opção **sql_mode** afeta a sintaxe SQL e as verificações de validação de dados efetuadas por MySQL/MariaDB.
 
 > [!primary]
-> Quando encontra um erro no seu site a indicar **«Too many connections»**, isso deve-se à ultrapassagem do número máximo de conexões simultâneas na base de dados.
-> Assim, se a variável **«MaxConnections»** não estiver no máximo, pode aumentá-la.
+> Quando encontra um erro no seu site a indicar **"Too many connections"**, isso deve-se à ultrapassagem do número máximo de conexões simultâneas na base de dados.
+> Assim, se a variável **"MaxConnections"** não estiver no máximo, pode aumentá-la.
 >
 
 > [!primary]
@@ -161,17 +161,32 @@ Efetue as modificações necessárias e clique em `Confirmar`{.action}.
 
 #### Instance PostgreSQL
 
-Não é possível modificar a configuração de uma instância PostgreSQL. 
+- Aceda ao separador `Configuração`{.action}.
 
-No entanto, pode ativar extensões nas bases de dados. Para isso, aceda ao separador `Bases de dados` e clique no ícone da tabela junto à base de dados, sob a coluna **«Extensões»**.
+Encontrará, no quadro **"Configuração geral de PostgreSQL"**, a configuração atualmente definida para a sua base de dados. Pode alterá-la diretamente e clicar em `Aplicar`{.action}..
+
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_message**: Controla os níveis das mensagens a registar nos logs do servidor. Os níveis disponíveis para uma solução Web Cloud Databases são os seguintes: 
+    - **"WARNING"**: Fornece alertas em relação a potenciais problemas de segurança.
+    - **"ERROR"** : Envia o erro que ocasionou a anulação de uma encomenda em curso.
+    - **"LOG"** : Regista as informações destinadas aos administradores do servidor.
+    - **"FATAL"**: Envia o erro que causou o fim da sessão em curso.
+    - **"PANIC"** : Envia o erro que ocasionou o fim do conjunto das sessões.
+
+Cada um dos níveis inclui todos os níveis que se seguem. Quanto mais alto for o nível, menos mensagens serão guardadas nos logs do servidor.
+
+Por predefinição, o valor definido é **"WARNING"**, uma vez que inclui os valores **"ERROR"**, **"LOG"**, **"FATAL"** e **"PANIC"**.
+
+Além disso, pode ativar extensões nas bases de dados. Para isso, aceda ao separador `Bases de dados`{.action} e clique no ícone da tabela junto à base de dados, sob a coluna **"Extensões"**.
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
 ### Alterar a versão MySQL, PostgreSQL ou MariaDB do servidor de bases de dados
 
-Para conhecer a versão de MySQL, PostgreSQL ou MariaDB do seu servidor de bases de dados, deve aceder ao separador **«Informações gerais»** depois de ter escolhido o servidor de bases de dados.
+Para conhecer a versão de MySQL, PostgreSQL ou MariaDB do seu servidor de bases de dados, deve aceder ao separador **"Informações gerais"** depois de ter escolhido o servidor de bases de dados.
 
-A versão atual surge na linha **«Versão»**.
+A versão atual surge na linha **"Versão"**.
 
 Para modificar esta versão, clique em `Alterar a versão`{.action}.
 
@@ -179,7 +194,7 @@ Para modificar esta versão, clique em `Alterar a versão`{.action}.
 
 #### Como saber a versão exata de PostgreSQL que utilizo?
 
-Introduza este comando no phpPgAdmin, clicando na sua **base de dados**, rubrica **«SQL»**, e a seguir em `Lançar`{.action}:
+Introduza este comando no phpPgAdmin, clicando na sua **base de dados**, rubrica **"SQL"**, e a seguir em `Lançar`{.action}:
 
 ```sql
 select version();
@@ -187,7 +202,7 @@ select version();
 
 #### Como saber a versão exata de MySQL ou MariaDB que utilizo?
 
-Introduza este comando no phpMyAdmin, rubrica **«SQL»**, e a seguir em `Executar`{.action}:
+Introduza este comando no phpMyAdmin, rubrica **"SQL"**, e a seguir em `Executar`{.action}:
 
 ```sql
 show variables like "version";
@@ -207,39 +222,15 @@ show variables like "version";
 
 ### Logs e métricas
 
-#### Conhecer o tempo de execução dos pedidos
+#### Acesso aos logs
 
-Isto permite-lhe visualizar o tempo de execução dos pedidos no servidor de bases de dados nas últimas 24 horas.
-
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
-
-Aceda ao separador `Métricas` do servidor de bases de dados. Vai encontrar o gráfico **«Estatísticas do tempo de execução dos pedidos»**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
-
-#### Acesso aos logs «Slow Query»
-
-> **Definição dos «slow query logs»**
-> 
-> São os pedidos que levam mais tempo a ser executados. O valor é definido em 1 segundo nos nossos servidores de bases de dados na variável **«long_query_time»**.
-
-Estes logs, chamados **«slow-query.log»**, podem ser obtidos na raiz do espaço SFTP do servidor de bases de dados. 
-
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
-
-No separador `Informações gerais`, vai encontrar a secção **«SFTP»** no quadro **«Informações de conexão»**.
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Para se conectar em **SFTP**, pode recorrer ao programa Filezilla. Se necessário, consulte o guia: [ «Guia de utilização do FileZilla»](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-
-Se o ficheiro estiver vazio, isso revela a inexistência de pedidos lentos.
+Para aceder aos logs da sua solução Web Cloud Databases, consulte o guia "[Web Cloud Databases - Como recuperar os logs ?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Acompanhar a RAM consumida
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
 
-Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas de memória RAM utilizada»**.
+Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **"Estatísticas de memória RAM utilizada"**.
 
 ![Web Cloud Databases](images/ram-memory-usage-statistics.png){.thumbnail}
 
@@ -247,9 +238,9 @@ Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **�
 
 Este gráfico permite acompanhar, relativamente às últimas 24 horas, o volume de conexões por minuto no servidor de bases de dados.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
 
-Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas do total de conexões por minuto»**.
+Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **"Estatísticas do total de conexões por minuto"**.
 
 ![Web Cloud Databases](images/statistics-for-total-connections-per-minute.png){.thumbnail}
 
@@ -261,7 +252,7 @@ Aconselhamos que faça a manutenção das suas bases de dados para que o seu des
 
 Para aumentar a rapidez de pesquisa no seguimento de um pedido, é necessário indexar os campos utilizados nas cláusulas WHERE.
 
-Por exemplo: costuma fazer pesquisas de pessoas relativamente à cidade. Indexe o campo «cidade» com o pedido seguinte:
+Por exemplo: costuma fazer pesquisas de pessoas relativamente à cidade. Indexe o campo "cidade" com o pedido seguinte:
 
 ```sql
 ALTER TABLE 'test' ADD INDEX ('city')
@@ -302,14 +293,14 @@ Por exemplo:
 
 #### Evitar as opções que consomem demasiados recursos
 
-Por exemplo, evite utilizar **«HAVING»**; isto torna os pedidos mais pesados. Da mesma forma, evite utilizar **«GROUP BY»**, exceto em caso de verdadeira necessidade.
+Por exemplo, evite utilizar **"HAVING"**; isto torna os pedidos mais pesados. Da mesma forma, evite utilizar **"GROUP BY"**, exceto em caso de verdadeira necessidade.
 
 ## Quer saber mais?
 
 [Lista dos endereços IP dos clusters e alojamentos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

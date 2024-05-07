@@ -45,7 +45,7 @@ Con il trasferimento del tuo dominio, potrai cambiare da **Registrar** per quest
 
 > [!success]
 >
-> Per conoscere le condizioni tariffarie per il trasferimento di un dominio in base alla sua estensione, inserisci il dominio che vuoi trasferire sulla nostra pagina [www.ovhcloud.com/it/domains/tld/](https://www.ovhcloud.com/it/domains/tld/) e segui gli step di questa guida.
+> Per conoscere le condizioni tariffarie per il trasferimento di un dominio in base alla sua estensione, inserisci il dominio che vuoi trasferire sulla nostra pagina [www.ovhcloud.com/it/domains/tld/](/links/web/domains-tld) e segui gli step di questa guida.
 >
 
 La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti con diverse entità. Il tuo attuale Registrar, OVHcloud e altre parti. La tabella qui sotto riassume le diverse fasi del processo:
@@ -64,7 +64,7 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 
 ### Step 1: verifica le informazioni del proprietario del dominio <a name="step1"></a>
 
-**Come prima cosa, è importante accertarsi che i dati associati al dominio siano aggiornati.** Dall'entrata in vigore del GDPR, i dati visibili nel ["Whois"](https://www.ovhcloud.com/it/domains/whois/) sono diventati molto limitati. Puoi consultare le informazioni relative al tuo dominio presso il tuo attuale Registrar.
+**Come prima cosa, è importante accertarsi che i dati associati al dominio siano aggiornati.** Dall'entrata in vigore del GDPR, i dati visibili nel ["Whois"](/links/web/domains-whois) sono diventati molto limitati. Puoi consultare le informazioni relative al tuo dominio presso il tuo attuale Registrar.
 
 - **Se le informazioni sono corrette: passa allo step successivo di questa guida.**
 
@@ -72,7 +72,7 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 
 > [!primary]
 >
-> Se non sai quale Registrar è responsabile del tuo dominio, la riga "Registrar", che compare nel risultato della ricerca del [tool Whois](https://www.ovhcloud.com/it/domains/whois/){.external}, può fornirti informazioni sulla sua identità.
+> Se non sai quale Registrar è responsabile del tuo dominio, la riga "Registrar", che compare nel risultato della ricerca del [tool Whois](/links/web/domains-whois){.external}, può fornirti informazioni sulla sua identità.
 >
 
 ### Step 2: sblocca il dominio e recupera il codice di trasferimento <a name="step2"></a>
@@ -90,7 +90,7 @@ Ti ricordiamo che, non essendo OVHcloud il Registrar del tuo dominio al momento 
 
 ### Step 3: richiedere il trasferimento di un dominio in OVHcloud <a name="step3"></a>
 
-Una volta sbloccato il dominio e ottenuto il codice, è possibile ordinarne il trasferimento in OVHcloud dal [nostro sito](https://www.ovhcloud.com/it/domains/). Inserisci il nome del tuo dominio e segui la procedura d’ordine.
+Una volta sbloccato il dominio e ottenuto il codice, è possibile ordinarne il trasferimento in OVHcloud dal [nostro sito](/links/web/domains). Inserisci il nome del tuo dominio e segui la procedura d’ordine.
 
 ![domain](images/Domain_transfer_order.png){.thumbnail
 
@@ -98,7 +98,7 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-È inoltre possibile completare l'ordine con un [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)", fornisce alcune istruzioni su come procedere.
+È inoltre possibile completare l'ordine con un [hosting Web](/links/web/hosting){.external} e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)", fornisce alcune istruzioni su come procedere.
 
 > [!warning]
 >
@@ -121,7 +121,7 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 #### Stato del trasferimento dopo l'ordine
 
-Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di trasferimento inizierà solo dopo aver ricevuto il pagamento. Una volta completata l'operazione, è possibile seguire lo stato di avanzamento del processo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Per monitorare lo stato di avanzamento dell'operazione, clicca su `Domini`{.action} e poi `Operazioni in corso`{.action}.
+Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di trasferimento inizierà solo dopo aver ricevuto il pagamento. Una volta completata l'operazione, è possibile seguire lo stato di avanzamento del processo dallo [Spazio Cliente OVHcloud](/links/manager){.external}. Per monitorare lo stato di avanzamento dell'operazione, clicca su `Domini`{.action} e poi `Operazioni in corso`{.action}.
 
 > [!primary]
 >
@@ -139,7 +139,7 @@ Una volta convalidato l'ordine e il codice di trasferimento, il Registrar attual
 
 Se il provider attuale emette un rifiuto, contatta il provider per sapere perché l'ha rifiutata.
 
-Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Web Cloud`{.action} e accedi alla sezione `Domini`{.action}, poi clicca su `Operazioni in corso`{.action}.
+Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona `Web Cloud`{.action} e accedi alla sezione `Domini`{.action}, poi clicca su `Operazioni in corso`{.action}.
 
 > [!primary]
 >
@@ -153,7 +153,7 @@ Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](https://w
 
 ### Step 5: gestire il dominio con OVHcloud
 
-Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Web Cloud`{.action}, clicca su `Domini`{.action} nel menu a sinistra e poi clicca sul dominio interessato.
+Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona `Web Cloud`{.action}, clicca su `Domini`{.action} nel menu a sinistra e poi clicca sul dominio interessato.
 
 > [!warning]
 >
@@ -163,7 +163,7 @@ Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio
 > Per i domini con estensione *locale* o *regionale* (i **ccTLD** come *.it*, *.be*, *.de*, *.es*, ecc.), questo dipende dalle estensioni e dalle regole messe in atto dal **Registro** dell'estensione in questione.
 > Una volta completata l'operazione, verifica la data di scadenza del dominio direttamente dallo Spazio Cliente OVHcloud.
 >
-> Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona il dominio interessato. Sulla pagina che appare e appena sotto il tuo dominio sulla parte superiore della pagina, visualizzerai la data di rinnovo prevista con il **mese** e **l'anno** di scadenza.
+> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona il dominio interessato. Sulla pagina che appare e appena sotto il tuo dominio sulla parte superiore della pagina, visualizzerai la data di rinnovo prevista con il **mese** e **l'anno** di scadenza.
 >
 > In base alla situazione e alla nuova data di scadenza del dominio, potrebbe essere necessario un rinnovo del dominio subito dopo il trasferimento.
 >
@@ -172,8 +172,8 @@ Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio
 
 [Migrazione del tuo sito Web e delle tue email verso OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

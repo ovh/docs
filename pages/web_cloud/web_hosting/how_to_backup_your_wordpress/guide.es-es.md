@@ -19,14 +19,14 @@ En un alojamiento web compartido, usted es responsable de las copias de segurida
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con [el editor del CMS WordPress](https://wordpress.com/support/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con [el editor del CMS WordPress](https://wordpress.com/support/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
 >
 
 **Descubra cómo guardar copia de seguridad del contenido de su sitio web WordPress y su base de datos.**
 
 ## Requisitos
 
-- Disponer de un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/) y haber instalado WordPress.
+- Disponer de un [alojamiento web](/links/web/hosting) y haber instalado WordPress.
 
 ## Procedimiento
 
@@ -150,8 +150,8 @@ Aplicando estas buenas prácticas, podrá volver a una versión anterior sana.
 - [Sitio oficial de WordPress](https://wordpress.org){.external}
 - [Más información sobre las copias de seguridad de su alojamiento web](/pages/web_cloud/web_hosting/hosting_technical_specificities#informacion-tecnica-de-su-alojamiento-web)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

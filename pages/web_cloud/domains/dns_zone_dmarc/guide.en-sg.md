@@ -14,15 +14,13 @@ The **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**omp
 >
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This tutorial is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) if you experience any issues. OVHcloud cannot provide you with technical support in this regard.
+> This tutorial is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) if you experience any issues. OVHcloud cannot provide you with technical support in this regard.
 > You can find more information in the [Go further](#gofurther) section of this tutorial.
->
-> In addition, the **DMARC** record is currently incompatible with any [OVHcloud email solution](https://www.ovhcloud.com/en-sg/emails/). This tutorial is **only** for customers who have an active DNS zone at OVHcloud for their domain name associated with an **external email solution**.
 >
 
 ## Requirements
 
-- Access to manage your domain name (attached to your email solution) from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- Access to manage your domain name (attached to your email solution) from the [OVHcloud Control Panel](/links/manager).
 - One of the authentication mechanisms, [SPF](/pages/web_cloud/domains/dns_zone_spf) and/or [DKIM](/pages/web_cloud/domains/dns_zone_dkim) must be configured in the DNS zone of the email solution domain name.
 
 ## Instructions
@@ -59,7 +57,7 @@ There are two ways to configure the DMARC in your OVHcloud DNS zone:
 
 #### DMARC record <a name="dmarc-record"></a>
 
-You can add the DMARC record to your DNS zone from the OVHcloud Control Panel. To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), and click the `Web Cloud`{.action} tab. In the left-hand column, select the domain name in the `Domain names`{.action} section, then click on the `DNS zone`{.action} tab to access your DNS zone.
+You can add the DMARC record to your DNS zone from the OVHcloud Control Panel. To do this, log in to the [OVHcloud Control Panel](/links/manager), and click the `Web Cloud`{.action} tab. In the left-hand column, select the domain name in the `Domain names`{.action} section, then click on the `DNS zone`{.action} tab to access your DNS zone.
 
 Click on the `Add an entry`{.action} button, then click on "Mail records" in `DMARC`{.action}.
 
@@ -102,7 +100,7 @@ Below is a full description of the tags used for the OVHcloud **DMARC record**:
 
 #### TXT record <a name="txt-record"></a>
 
-You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Click the `Web Cloud`{.action} tab, go to `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](/links/manager). Click the `Web Cloud`{.action} tab, go to `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 Once you have viewed your DNS zone, click on the `Add a record`{.action} button, then click on "Extended fields" in `TXT`{.action}.
 
@@ -182,8 +180,8 @@ The result is:
 
 ## Go further <a name="go-further"></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

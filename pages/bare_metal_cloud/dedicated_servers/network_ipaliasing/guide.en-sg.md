@@ -1,12 +1,12 @@
 ---
 title: 'Configuring IP aliasing'
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
-updated: 2024-02-21
+updated: 2024-03-15
 ---
 
 > [!primary]
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-sg/network/additional-ip/). This renaming has no effect on its technical features.
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/asia/network/additional-ip/). This renaming has no effect on its technical features.
 >
 
 ## Objective
@@ -18,20 +18,20 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
-- An [Additional IP address](https://www.ovhcloud.com/en-sg/bare-metal/ip/) or an Additional IP block (RIPE or ARIN)
+- A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
+- An [Additional IP address](https://www.ovhcloud.com/asia/bare-metal/ip/) or an Additional IP block (RIPE or ARIN)
 - Access via SSH or remote desktop connection for Windows
 - Basic networking and administration knowledge
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-sg/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/asia/about/).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-sg/compare/) for more information.
+> Please visit our [comparison page](https://eco.ovhcloud.com/asia/compare/) for more information.
 
 ## Instructions
 
@@ -46,7 +46,7 @@ Concerning different distribution releases, please note that the proper procedur
 
 |Term|Description|Examples|
 |---|---|---|
-|ADDITIONAL_IP|An Additional IP address assigned to your service|169.254.10.254|
+|ADDITIONAL_IP|An Additional IP address assigned to your service|203.0.113.1|
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
@@ -144,7 +144,7 @@ iface eth0 inet dhcp
 
 auto eth0:0
 iface eth0:0 inet static
-address 169.254.10.254
+address 203.0.113.1
 netmask 255.255.255.255
 ```
 
@@ -155,7 +155,7 @@ auto eth0
 iface eth0 inet dhcp
 
 # IP 1
-post-up /sbin/ifconfig eth0:0 169.254.10.254 netmask 255.255.255.255 broadcast 169.254.10.254
+post-up /sbin/ifconfig eth0:0 203.0.113.1 netmask 255.255.255.255 broadcast 203.0.113.1
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
@@ -196,15 +196,13 @@ To obtain the name of your network interface in order to edit the appropriate ne
 ip a
 ```
 
-or 
-
 ```bash
 nmcli connection show
 ```
 
 Do not modify the existing lines in the configuration file, add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` wih your own values:
 
-```sh
+```bash
 sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
@@ -231,7 +229,7 @@ Configuration example:
 [ipv4]
 method=auto
 may-fail=false
-address1=169.254.10.254/32
+address1=203.0.113.1/32
 ```
 
 #### Step 3: Restart the interface
@@ -274,7 +272,7 @@ network:
     INTERFACE_NAME:
       dhcp4: true
       addresses:
-        - ADDITIONAL_IP1/32
+        - ADDITIONAL_IP/32
 ```
 
 If you have two Additional IPs to configure, the configuration file should look like this:
@@ -305,7 +303,7 @@ network:
     eth0:
       dhcp4: true
       addresses:
-        - 169.254.10.254/32
+        - 203.0.113.1/32
 ```
 
 Save and close the file. You can test the configuration with the following command:
@@ -326,7 +324,7 @@ sudo netplan apply
 > When using the `netplan try` command, it is possible that the system returns a warning message such as `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. This simply means that the file does not have restrictive permissions. This does not affect the configuration of your Additional IP. For more information about file permissions, consult the [official documentation of ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 >
 
-### CentOS 7, Alma Linux (8 & 9), Rocky Linux (8 & 9)
+### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called `ifcfg-eth0`. Before making changes, verify the actual file name in this folder.
 
@@ -365,9 +363,9 @@ Configuration example:
 DEVICE=eth0:0
 ONBOOT=yes
 BOOTPROTO=none # For CentOS use "static"
-IPADDR=169.254.10.254
+IPADDR=203.0.113.1
 NETMASK=255.255.255.255
-BROADCAST=169.254.10.254
+BROADCAST=203.0.113.1
 ```
 
 #### Step 3: Restart the interface
@@ -378,13 +376,13 @@ Next, restart your alias interface, replace `eth0:0` with your own values:
 ifup eth0:0
 ```
 
-#### For Alma Linux and Rocky Linux
+#### For AlmaLinux and Rocky Linux
 
 ```bash
 sudo systemctl restart NetworkManager
 ```
 
-### cPanel (on CentOS 7)
+### cPanel
 
 #### Step 1: Access the WHM IP management section
 
@@ -398,7 +396,7 @@ Enter your Additional IP in the form `xxx.xxx.xxx.xxx` into the field “New IP 
 
 Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
 
-![enter new IP information](images/Cpanel-2.png){.thumbnail}
+![enter new IP information](images/Cpanel-2024.png){.thumbnail}
 
 > [!warning]
 >
@@ -409,7 +407,7 @@ Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
 
 Back in the section `IP Functions`{.action}, click on `Show or Delete Current IP Addresses`{.action} to verify that the Additional IP address was added correctly.
 
-![check configured IP](images/Cpanel-3.png){.thumbnail}
+![check configured IP](images/Cpanel-2024-1.png){.thumbnail}
 
 ### Windows Servers
 
@@ -420,16 +418,16 @@ Otherwise, you need to first switch from a network-level DHCP configuration to a
 Open the command prompt `cmd`{.action} or `powershell`{.action}, then type the following command:
 
 ```powershell
-ipconfig /all
+ipconfig
 ```
 
 This will return a result similar to the following example:
 
-![Result of "ipconfig /all" command](images/guides-network-ipaliasing-windows-2008-1.png){.thumbnail}
+![Result of "ipconfig" command](images/ipconfig.png){.thumbnail}
 
 Identify and write down your IPv4, subnet mask, default gateway and the name of the network interface controller (network adapter).
 
-In our example, the server IP is **94.23.229.151**.
+In our example, the server IP is **192.0.2.28**.
 
 You can perform the next steps via either a command-line interface or the graphical user interface.
 
@@ -439,11 +437,11 @@ In the commands below, you need to replace:
 
 |Command|Value|
 |---|---|
-|NETWORK_ADAPTER| Name of the network adapter (in our example: Local Area Connection)|
-|IP_ADDRESS| Server IP address (in our example: 94.23.229.151)|
+|NETWORK_ADAPTER| Name of the network adapter (in our example: Ethernet 2)|
+|IP_ADDRESS| Server IP address (in our example: 192.0.2.28)|
 |SUBNET_MASK| Subnet mask (in our example: 255.255.255.0)|
-|GATEWAY| Default gateway (in our example: 94.23.229.254)|
-|ADDITIONAL_IP| Address of Additional IP you want to add|
+|GATEWAY| Default gateway (in our example: 192.0.2.254)|
+|ADDITIONAL_IP| Address of Additional IP you want to add (in our example 203.0.113.1)|
 
 > [!warning]
 >
@@ -457,11 +455,13 @@ In the command prompt:
 ```powershell
 netsh interface ipv4 set address name="NETWORK_ADAPTER" static IP_ADDRESS SUBNET_MASK GATEWAY
 ```
+
 2\. Set the DNS server
 
 ```powershell
 netsh interface ipv4 set dns name="NETWORK_ADAPTER" static 213.186.33.99
 ```
+
 3\. Add an Additional IP
 
 ```powershell
@@ -473,12 +473,12 @@ Your Additional IP is now functional.
 #### Via the graphical user interface
 
 1. Go to `Start`{.action}> `Control Panel`{.action}>` Network and Internet`{.action}> `Network and Sharing Centre`{.action}> `Change Adapter Settings `{.action}(in the left-hand menu).
-2. Right-click on `Local Area Connection`{.action}.
+2. Right-click on your network connection, in our example `Ethernet 2`{.action}.
 3. Click on `Properties`{.action}.
 4. Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, then click on `Properties`{.action}.
 5. Click on `Use the following IP address`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig`{.action} command above. In the "Preferred DNS Server" box, type 213.186.33.99.
 
-![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
+![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip.png){.thumbnail}
 
 > [!warning]
 >
@@ -487,19 +487,28 @@ Your Additional IP is now functional.
 
 Then click on `Advanced`{.action} (still in the `TCP/IP Settings`{.action}).
 
-![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.0.png){.thumbnail}
+![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip-1.png){.thumbnail}
 
 In the `IP Address`{.action} section, click `Add`{.action}:
 
-![Advanced TCP/IPv4 Settings](images/guides-network-ipaliasing-windows-2008-3.png){.thumbnail}
+![Advanced TCP/IPv4 Settings](images/add-additional-ip.png){.thumbnail}
 
-Type in your Additional IP and the subnet mask **255.255.255.255**.
+Type in your Additional IP and the subnet mask **255.255.255.255**. Then click on `Add`{.action}
 
-![TCP/IP Address](images/guides-network-ipaliasing-windows-2008-4.png){.thumbnail}
+![TCP/IP Address](images/configure-additional-ip.png){.thumbnail}
 
-Click on `Add`{.action}.
 
-Your Additional IP is now functional.
+Click on `OK`{.action} to apply your configuration.
+
+Your Additional IP is now functional, you can verify the configuration with the following command:
+
+```powershell
+ipconfig
+```
+
+This will return a result similar to the following example:
+
+![Final configuration](images/final-ip-configuration.png){.thumbnail}
 
 ### Plesk
 
@@ -515,17 +524,17 @@ Click on `IP Addresses`{.action} under **Tools & Resources**.
 
 In this section, click on the button `Add IP Address`{.action}.
 
-![add ip information](images/pleskip2-2.png){.thumbnail}
+![add ip information](images/Plesk-2024.png){.thumbnail}
 
 Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
 
-![add ip information](images/pleskip3-3.png){.thumbnail}
+![add ip information](images/Plesk-2024-1.png){.thumbnail}
 
 #### Step 3: Check the current IP configuration
 
 Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
 
-![current IP configuration](images/pleskip4-4.png){.thumbnail}
+![current IP configuration](images/Plesk-2024-2.png){.thumbnail}
 
 ### Troubleshooting
 

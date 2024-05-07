@@ -1,7 +1,7 @@
 ---
 title: "Configure um endereço IPv6 para o seu website"
 excerpt: "Saiba como tornar o seu website compatível com um endereço IPv6"
-updated: 2023-02-10
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -24,9 +24,9 @@ Os nossos alojamentos web são compatíveis com IPv6 desde 2011. Mas a ativaçã
 
 ## Requisitos
 
-- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} na sua Área de Cliente OVHcloud.
-- Dispor de um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-- Ter acesso ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Dispor de um [nome de domínio](/links/web/domains){.external} na sua Área de Cliente OVHcloud.
+- Dispor de um [serviço de alojamento web](/links/web/hosting){.external}.
+- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
@@ -34,7 +34,7 @@ Os nossos alojamentos web são compatíveis com IPv6 desde 2011. Mas a ativaçã
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
 > 
 
 Se o seu site não estiver configurado para funcionar com um endereço IPv6, pode adicionar [o endereço IPv6 do seu alojamento partilhado OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) na zona DNS ativa do seu nome de domínio. O objetivo é permitir aos browsers encontrar um endereço IPv6 associado ao seu website através do seu domínio.
@@ -45,7 +45,7 @@ Para verificar se o seu website já utiliza um endereço IPv6, utilize o site [i
 
 ### Etapa 1: recuperar o endereço IPv6 do seu alojamento web
 
-Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na parte `Web Cloud`{.action}, clique em `Alojamentos`{.action}, selecione o nome do alojamento em causa e aceda ao separador `Informações gerais`{.action}.
+Ligue-se ao seu [Área de Cliente OVHcloud](/links/manager){.external}. Na parte `Web Cloud`{.action}, clique em `Alojamentos`{.action}, selecione o nome do alojamento em causa e aceda ao separador `Informações gerais`{.action}.
 
 No quadro **IPv6**, copie a entrada e passe ao passo seguinte.
 
@@ -72,8 +72,8 @@ Introduza o endereço IPv6 previamente copiado utilizando o tipo de registo **AA
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit#editar-a-zona-dns-da-ovhcloud-do-seu-dominio)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

@@ -21,17 +21,17 @@ Esta guía recoge todas las direcciones IP de los alojamientos web de OVHcloud. 
 > [!primary]
 >
 > Las direcciones IP de la opción CDN son «Anycast».
-> Esto quiere decir que no necesitan geolocalización ([Más información aquí](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/)).
+> Esto quiere decir que no necesitan geolocalización ([Más información aquí](/links/web/hosting-options-cdn)).
 > 
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Tener contratado un [plan de alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener contratado un [plan de alojamiento web](/links/web/hosting){.external}.
 
 ## Procedimiento
 
-Para conocer el cluster de alojamiento web en el que se encuentra su servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `FTP - SSH`{.action}.
+Para conocer el cluster de alojamiento web en el que se encuentra su servicio, conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `FTP - SSH`{.action}.
 Puede comprobar el número de cluster del alojamiento web en esta página bajo **Servidor FTP**.
 
 ### Cluster 002
@@ -786,8 +786,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 [Optimizar el rendimiento de su sitio web](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

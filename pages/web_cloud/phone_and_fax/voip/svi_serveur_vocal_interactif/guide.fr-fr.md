@@ -13,8 +13,8 @@ L'exemple le plus courant consiste à orienter un appelant entre plusieurs servi
 
 ## Prérequis
 
-- Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -27,7 +27,7 @@ L'exemple le plus courant consiste à orienter un appelant entre plusieurs servi
 
 ### Étape 1 : accéder à la configuration du serveur vocal interactif
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.<br>
+Connectez-vous à votre [espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.<br>
 Cliquez sur `Téléphonie`{.action} puis sélectionnez votre groupe de téléphonie et enfin le numéro concerné.<br>
 Assurez-vous que celui-ci est bien configuré en tant que « Serveur Vocal Interactif », en vérifiant son `Type de configuration` dans le cadre « Configuration ». Dès lors, deux possibilités :
 

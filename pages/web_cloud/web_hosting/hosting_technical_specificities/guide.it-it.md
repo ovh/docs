@@ -16,8 +16,8 @@ I pacchetti di web hosting OVHcloud sono condivisi. Di conseguenza, la configura
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un piano di [hosting Web](/links/web/hosting){.external} attivo
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -25,14 +25,14 @@ I pacchetti di web hosting OVHcloud sono condivisi. Di conseguenza, la configura
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
 >
 
 ### FTP
 
 - Utilizza la **modalità passiva** per le connessioni FTP. Assicurati che il tuo script o il tuo client FTP siano configurati correttamente.
 
-- Se riscontri l’errore di accesso "Autenticazione di connessione 530 non riuscita" durante la connessione al tuo spazio di storage FTP: assicurati che le informazioni di accesso al tuo spazio FTP siano corrette. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Clicca sulla scheda `FTP - SSH`{.action}.
+- Se riscontri l’errore di accesso "Autenticazione di connessione 530 non riuscita" durante la connessione al tuo spazio di storage FTP: assicurati che le informazioni di accesso al tuo spazio FTP siano corrette. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Clicca sulla scheda `FTP - SSH`{.action}.
 
 In questa interfaccia sono disponibili tutte le informazioni di connessione allo spazio di storage FTP, ad eccezione della password.
 
@@ -66,14 +66,14 @@ In caso di abuso o pirateria, una parte o la totalità del servizio potrà esser
 
 #### Connessioni simultanee al database
 
-Sui piani di hosting Web (database condivisi), esiste un limite di 30 connessioni simultanee per database (questo limite passa a 200 se utilizzi una soluzione [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/). Consulta il [dettaglio delle nostre offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/) per conoscere le opzioni disponibili in ogni offerta di hosting Web.
+Sui piani di hosting Web (database condivisi), esiste un limite di 30 connessioni simultanee per database (questo limite passa a 200 se utilizzi una soluzione [Web Cloud Databases](/links/web/databases). Consulta il [dettaglio delle nostre offerte di hosting Web](/links/web/hosting) per conoscere le opzioni disponibili in ogni offerta di hosting Web.
 
-È inoltre possibile ordinare soluzioni [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/) aggiuntive, che dispongono di opzioni di personalizzazione:
+È inoltre possibile ordinare soluzioni [Web Cloud Databases](/links/web/databases) aggiuntive, che dispongono di opzioni di personalizzazione:
 
 - *max_connections*: 100 di default, con possibilità di passare a 200;
 - *max_user_connections*: 50 di default, con possibilità di passare a 200.
 
-Per saperne di più, consulta i dettagli delle nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/) e la nostra guida "[Iniziare a utilizzare il servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Per saperne di più, consulta i dettagli delle nostre [offerte di hosting Web](/links/web/hosting) e la nostra guida "[Iniziare a utilizzare il servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Connessioni da un server esterno
 
@@ -83,7 +83,7 @@ Per ragioni di sicurezza, non è consentita la connessione a un database incluso
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Solo i server di database [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/) permettono a server esterni di connettersi. previa autorizzazione dell’indirizzo IP del tuo server esterno sul tuo database server. Se necessario, consulta la nostra guida "[Iniziare a utilizzare il servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Solo i server di database [Web Cloud Databases](/links/web/databases) permettono a server esterni di connettersi. previa autorizzazione dell’indirizzo IP del tuo server esterno sul tuo database server. Se necessario, consulta la nostra guida "[Iniziare a utilizzare il servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Variabili server SQL condiviso
 
@@ -102,7 +102,7 @@ Per maggiori informazioni sulla gestione dei database e la connessione all'inter
 
 ### PHP
 
-Ti consigliamo di consultare le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/) per assicurarti che l’offerta di hosting Web che vuoi ordinare si adatti alle tue necessità.
+Ti consigliamo di consultare le nostre [offerte di hosting Web](/links/web/hosting-programming-language) per assicurarti che l’offerta di hosting Web che vuoi ordinare si adatti alle tue necessità.
 
 > [!warning]
 >
@@ -174,7 +174,7 @@ Questa guida ti mostra come [accedere allo spazio di storage FTP del tuo hosting
 > OVHcloud fornisce un servizio di backup automatico dei dati e la messa a disposizione di questi backup. *non contrattuale* ed è presente in aggiunta ai tuoi servizi. Effettivamente, è vostra responsabilità impostare la vostra propria politica di ripristino e determinare i punti di ripristino nel momento che ritenete opportuno.
 >
 
-Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è fatto tutti i giorni. Questi backup sono accessibili (dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup vengono inoltre archiviati su un'altra infrastruttura. Questi dati vengono replicati in un datacenter situato a Strasburgo (SBG). La politica di conservazione dei backup è di 30 giorni.
+Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è fatto tutti i giorni. Questi backup sono accessibili (dallo [Spazio Cliente OVHcloud](/links/manager){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup vengono inoltre archiviati su un'altra infrastruttura. Questi dati vengono replicati in un datacenter situato a Strasburgo (SBG). La politica di conservazione dei backup è di 30 giorni.
 
 Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export) nella nostra documentazione.
 
@@ -233,8 +233,8 @@ Per poter essere utilizzati nell’ambito di "OVHcloud Web Statistics", i dati c
 
 [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

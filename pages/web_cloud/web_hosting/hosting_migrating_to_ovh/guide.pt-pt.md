@@ -16,7 +16,7 @@ Este guia apresenta-lhe as diferentes ações a realizar para migrar o conjunto 
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 >
 
 ## Requisitos
@@ -25,7 +25,7 @@ Este guia apresenta-lhe as diferentes ações a realizar para migrar o conjunto 
 - Ter acesso à zona DNS (Domain Name System) ativa do seu domínio.
 - Ter acesso aos ficheiros e à base de dados do seu website no seu alojamento atual.
 - Dispor de dados de acesso (utilizador, palavra-passe, servidor) aos seus endereços de e-mail atuais.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -58,25 +58,25 @@ Se tal interrupção ocorrer, este guia será construído de forma a minimizar a
 
 Várias ofertas de alojamento partilhado OVHcloud incluem uma oferta de e-mail "MX Plan". Esta oferta de e-mail permite criar endereços de e-mail com um espaço de armazenamento de 5 GB no máximo para cada endereço. Escolha a seguir as ofertas de alojamento em função da versão PHP, da versão SQL, do número de endereços de e-mail que precisa e do tamanho do seu site a migrar:
 
-- O alojamento [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) com **10 endereços de e-mail** "MX Plan"
-- O alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) com **100 endereços de e-mail** "MX Plan"
-- O alojamento [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) com **1000 endereços de e-mail** "MX Plan". Esta oferta é indicada em 4 "subofertas".
-- O alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/) com **200 endereços de e-mail** "MX Plan". Esta oferta é utilizada pelos programadores de aplicações.
+- O alojamento [Perso](/links/web/hosting-personal-offer) com **10 endereços de e-mail** "MX Plan"
+- O alojamento [Pro](/links/web/hosting-professional-offer) com **100 endereços de e-mail** "MX Plan"
+- O alojamento [Performance](/links/web/hosting-performance-offer) com **1000 endereços de e-mail** "MX Plan". Esta oferta é indicada em 4 "subofertas".
+- O alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) com **200 endereços de e-mail** "MX Plan". Esta oferta é utilizada pelos programadores de aplicações.
 
 Depois de escolher a oferta de alojamento, se ainda não é cliente da OVHcloud, clique no botão `Encomendar`{.action} presente nas páginas comerciais acima. Siga os passos da encomenda **sem solicitar a transferência do seu nome de domínio**.
 
-Também pode efetuar a encomenda a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Depois de estabelecer a ligação, clique na parte `Web Cloud`{.action} e, na parte superior esquerda, clique no botão `Encomendar`{.action}, e depois nos `Alojamento`{.action}. Siga as etapas da encomenda **sem solicitar a transferência do seu nome de domínio**.
+Também pode efetuar a encomenda a partir do seu [Área de Cliente OVHcloud](/links/manager). Depois de estabelecer a ligação, clique na parte `Web Cloud`{.action} e, na parte superior esquerda, clique no botão `Encomendar`{.action}, e depois nos `Alojamento`{.action}. Siga as etapas da encomenda **sem solicitar a transferência do seu nome de domínio**.
 
 Depois de validar o pagamento, a instalação do alojamento vai iniciar. Um e-mail será enviado para o seu endereço de e-mail de contacto. Este último conterá as credenciais de acesso ao espaço de armazenamento FTP (File Transfer Protocol) do seu alojamento Web.
 
 > [!primary]
 >
-> A OVHcloud oferece outras ofertas de e-mail para além da oferta "MX Plan". Por exemplo, pode combinar endereços de e-mail "MX Plan" de endereços ["Email-Pro"](https://www.ovhcloud.com/pt/emails/email-pro/) e/ou contas ["Exchange"](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
+> A OVHcloud oferece outras ofertas de e-mail para além da oferta "MX Plan". Por exemplo, pode combinar endereços de e-mail "MX Plan" de endereços ["Email-Pro"](/links/web/email-pro) e/ou contas ["Exchange"](/links/web/emails-hosted-exchange).
 >
 
 ### Etapa 2 : criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud <a name="step2"></a>
 
-Quando o alojamento estiver criado, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e crie uma zona DNS para o seu domínio **sem "www"**. Para mais informações, consulte o nosso manual sobre a [criação de uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+Quando o alojamento estiver criado, aceda à [Área de Cliente OVHcloud](/links/manager) e crie uma zona DNS para o seu domínio **sem "www"**. Para mais informações, consulte o nosso manual sobre a [criação de uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Depois de criar a zona DNS, aceda à secção de gestão usando o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)". Se não estiverem presentes, introduza as seguintes entradas:
 
@@ -186,7 +186,7 @@ Sugerimos que não utilize o `Tipo de servidor`{.action} **POP** na parte `Conta
 
 Para a parte `Conta de destino`{.action}, introduza apenas o endereço de e-mail OVHcloud em questão e a respetiva palavra-passe. Isto permitindo o `Tipo de serviço`{.action} em `Hosted by OVH (Autodetect)`{.action}.
 
-Terminada a migração, aceda ao endereço de e-mail da OVHcloud usando o [webmail OVHcloud](https://www.ovhcloud.com/pt/mail/) para verificar que todos os seus e-mails estão presentes na nova conta.
+Terminada a migração, aceda ao endereço de e-mail da OVHcloud usando o [webmail OVHcloud](/links/web/email) para verificar que todos os seus e-mails estão presentes na nova conta.
 
 Repita a operação para o conjunto das suas contas de e-mail.
 
@@ -247,8 +247,8 @@ Uma vez concluída a transferência dos seus dados e serviços, só precisa de r
 
 [Gestão de uma base de dados a partir de um alojamento partilhado](/pages/web_cloud/web_hosting/sql_create_database).
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

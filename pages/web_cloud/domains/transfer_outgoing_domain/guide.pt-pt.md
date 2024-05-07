@@ -1,7 +1,7 @@
 ---
 title: "Transferir um domínio para outro agente de registo"
 excerpt: "Saiba como transferir um domínio da OVHcloud para o agente de registo da sua escolha"
-updated: 2023-06-28
+updated: 2024-04-11
 ---
 
 > [!primary]
@@ -27,9 +27,9 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 
 ## Requisitos
 
-- Ter um [domínio](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud
+- Ter um [domínio](/links/web/domains) registado na OVHcloud
 - Ter o direito de solicitar a transferência do nome de domínio: o proprietário e/ou os administradores devem ser informados do pedido de transferência.
-- Ter acesso à secção de gestão do domínio na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à secção de gestão do domínio na Área de [Cliente OVHcloud](/links/manager){.external}.
 - O registo do nome de domínio em questão data de há pelo menos 60 dias **e** não foi transferido ou trocado (ou seja, a mudança de proprietário) durante os últimos 60 dias
 
 > [!primary]
@@ -48,16 +48,20 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 > Em caso de dúvida, recomendamos que consulte os seguintes recursos:
 >
 > - O sítio Web do registo TLD correspondente;
-> - a [lista dos TLD disponíveis na OVHcloud](https://www.ovhcloud.com/pt/domains/tld/);
+> - a [lista dos TLD disponíveis na OVHcloud](/links/web/domains-tld);
 > - [Explicações do ICANN sobre os códigos de estado EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (para saber que códigos de estado se aplicam atualmente ao seu nome de domínio, efetue uma pesquisa *Whois*, utilizando de preferência o website do registo TLD correspondente);
 > - o website e a interface de gestão do seu novo agente de registo, especialmente para as questões relativas a um processo de transferência pendente.
 >
 
 ### Etapa 1: eliminar a proteção contra a transferência do nome de domínio
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e selecione o domínio correspondente.
+Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e selecione a `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e selecione o domínio correspondente.
 
 No separador `Informações gerais`{.action}, encontrará o cursor `Proteção contra a transferência` sob **Segurança**. Por predefinição, esta proteção está `Ativada`{.action}.
+
+> [!warning]
+>
+> Se o botão `Proteção contra transferência` não estiver presente, tal significa que a extensão do domínio não requer nenhum código de transferência. Poderá então lançar diretamente a sua transferência.
 
 ![proteção ativada](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
@@ -67,9 +71,9 @@ Clique no cursor e confirme, na nova janela, que pretende eliminar esta proteç�
 >
 > Se encontra a mensagem "**Ocorreu um erro aquando do pedido de desativação da proteção do domínio (User not granted for this request)**", isto significa que não tem os direitos suficientes para desbloquear o domínio. 
 >
-> Além disso, se encontrar a mensagem: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**" significa que o código de transferência do seu nome de domínio não pode ser recuperado através do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).  
+> Além disso, se encontrar a mensagem: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**" significa que o código de transferência do seu nome de domínio não pode ser recuperado através do seu [Área de Cliente OVHcloud](/links/manager).  
 > 
-> Em ambos os casos, verifique se é o contacto **administrador** do domínio através do nosso guia sobre a [gestão dos contactos](/pages/account_and_service_management/account_information/managing_contacts) e verifique se a extensão do seu domínio permite um desbloqueio a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> Em ambos os casos, verifique se é o contacto **administrador** do domínio através do nosso guia sobre a [gestão dos contactos](/pages/account_and_service_management/account_information/managing_contacts) e verifique se a extensão do seu domínio permite um desbloqueio a partir da [Área de Cliente OVHcloud](/links/manager).
 > 
 > De facto, alguns *códigos de transferência* são geridos diretamente pelo *registry* da extensão do seu nome de domínio. Um *registry* é uma organização que gere o conjunto dos domínios para uma determinada extensão. Por exemplo, a **AFNIC** gere o conjunto dos nomes de domínio com a extensão "*.fr*". Se for este o caso, deverá contactar diretamente o *registry* que gere a extensão do seu nome de domínio a fim de recuperar o *código de transferência*.
 >
@@ -115,8 +119,8 @@ Para mais informações contacte o seu novo agente de registo.
 
 [Transferência de domínio .co.uk de saída](/pages/web_cloud/domains/transfer_outgoing_couk)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

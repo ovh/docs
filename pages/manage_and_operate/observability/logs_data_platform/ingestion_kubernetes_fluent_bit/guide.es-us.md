@@ -8,7 +8,7 @@ updated: 2023-09-08
 
 In this tutorial, you will learn how to collect logs from pods in a Kubernetes cluster and send them to Logs Data Platform.
 
-[Kubernetes](https://kubernetes.io/){.external} is the de facto standard to manage containerized applications on cloud platforms. It is open source, has a large ecosystem, and has a ever growing community. Kubernetes is great but once your containers go live in the cloud, you still want to monitor their behavior. The more containers you have, the more difficult it can be to navigate through the logs and have a clear picture of what's happening. How can you centralize all your Kubernetes pods logs in one place and analyze them easily ? By using Logs Data Platform with the help of Fluent Bit. [Fluent Bit](https://fluentbit.io/) is a fast and lightweight log processor and forwarder. It is open source, cloud oriented and a part of the [Fluentd](https://fluentd.org/){.external} ecosystem. This tutorial will help you to configure it for Logs Data Platform, you can of course apply it to our [fully managed Kubernetes offer](https://www.ovhcloud.com/es/public-cloud/kubernetes/){.external}.
+[Kubernetes](https://kubernetes.io/){.external} is the de facto standard to manage containerized applications on cloud platforms. It is open source, has a large ecosystem, and has an ever-growing community. Kubernetes is great but once your containers go live in the cloud, you still want to monitor their behavior. The more containers you have, the more difficult it can be to navigate through the logs and have a clear picture of what's happening. How can you centralize all your Kubernetes pods logs in one place and analyze them easily ? By using Logs Data Platform with the help of Fluent Bit. [Fluent Bit](https://fluentbit.io/) is a fast and lightweight log processor and forwarder. It is open source, cloud oriented and a part of the [Fluentd](https://fluentd.org/){.external} ecosystem. This tutorial will help you to configure it for Logs Data Platform, you can of course apply it to our [fully managed Kubernetes offer](https://www.ovhcloud.com/es/public-cloud/kubernetes/){.external}.
 
 ## Requirements
 
@@ -21,7 +21,7 @@ Note that in order to complete this tutorial, you should have at least:
 
 ## Preparation
 
-Before we dive into this tutorial, it is important to understand how we will deploy Fluent Bit. The configuration of Fluent Bit will be similar as the one you can find in the [official documentation](https://docs.fluentbit.io/manual/installation/kubernetes). Fluent Bit will be deployed as a *DaemonSet* in every node of the kubernetes cluster through an [Helm installation](https://helm.sh). Helm is a package manager for Kubernetes which can simplify the deployment of applications on Kubernetes. Fluent Bit will read, parse and ship every log of every pods of your cluster by default. It will also enrich each log with precious metadata like pod name and id, container name and ids, labels and annotations. As stated in the Fluent Bit documentation, a built-in Kubernetes filter will use Kubernetes API to gather some of these information. This configuration has been tested with kubernetes 1.28 and Fluent Bit image 2.1.8
+Before we dive into this tutorial, it is important to understand how we will deploy Fluent Bit. The configuration of Fluent Bit will be similar to the one you can find in the [official documentation](https://docs.fluentbit.io/manual/installation/kubernetes). Fluent Bit will be deployed as a *DaemonSet* in every node of the kubernetes cluster through a [Helm installation](https://helm.sh). Helm is a package manager for Kubernetes which can simplify the deployment of applications on Kubernetes. Fluent Bit will read, parse and ship every log of every pod of your cluster by default. It will also enrich each log with precious metadata like pod name and id, container name and ids, labels and annotations. As stated in the Fluent Bit documentation, a built-in Kubernetes filter will use Kubernetes API to gather some of this information. This configuration has been tested with kubernetes 1.28 and Fluent Bit image 2.1.8
 
 ## Instructions
 
@@ -45,7 +45,7 @@ Once the namespace is created, we can proceed to the next steps: define a secret
 
 #### Token Secret creation
 
-there is several methods to create a secret in Kubernetes, for brevity sake, we will use the one-liner version of secret creation.
+There are several methods to create a secret in Kubernetes. For brevity's sake, we will use the one-liner version of secret creation.
 
 ```bash
 kubectl --namespace logging create secret generic ldp-token --from-literal=ldp-token=<your-token-value>
@@ -59,7 +59,7 @@ The Helm installation is documented here: [https://docs.fluentbit.io/manual/inst
 
 The default values in the configuration file of the Helm package are located here: [https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml).
 
-For brievety sake, we will just detail the part where we change the default values. Make sure to check the default values in the whole file to adadpt it to your Kubernetes configuration.
+For brevity's sake, we will just detail the part where we change the default values. Make sure to check the default values in the whole file to adapt it to your Kubernetes configuration.
 
 Look for the *env:* configuration in the file and add the following values to use your secret as an environment variable.
 
@@ -162,6 +162,6 @@ And that's it. Your kubernetes activity is now perfectly logged in one place. Ha
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
-- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
+- Documentation: [Guides](/products/observability-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

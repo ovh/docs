@@ -41,17 +41,17 @@ Sull'hosting Web OVHcloud è possibile utilizzare script per automatizzare alcun
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Spetta quindi a te garantirne il buon funzionamento.
 >
-> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Per questo, ti suggeriamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o di contattare l’amministratore del servizio nel caso in cui dovessi incontrare delle difficoltà. Non saremo effettivamente in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione [“Per saperne di più”](#go-further) di questa guida. 
+> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Per questo, ti suggeriamo di rivolgerti a un [provider specializzato](/links/partner) o di contattare l’amministratore del servizio nel caso in cui dovessi incontrare delle difficoltà. Non saremo effettivamente in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione [“Per saperne di più”](#go-further) di questa guida. 
 >
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attiva
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di una soluzione di [hosting Web](/links/web/hosting) attiva
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action}.
 
 Seleziona l'hosting, clicca sulla scheda `Più`{.action} e poi su `Cron`{.action}.
 
@@ -133,7 +133,7 @@ Ti consigliamo di utilizzare percorsi di accesso assoluti ai file dei tuoi scrip
  
 #### Verifica dei log di esecuzione
 
-Nei log del tuo hosting Web, accessibili dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, visualizzerai la categoria di log intitolata "CRON".
+Nei log del tuo hosting Web, accessibili dal tuo [Spazio Cliente OVHcloud](/links/manager){.external}, visualizzerai la categoria di log intitolata "CRON".
 
 Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'offerta condivisa"](/pages/web_cloud/web_hosting/logs_and_statistics) per maggiori dettagli.
 
@@ -179,8 +179,8 @@ Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'of
 
 [Utilizza l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

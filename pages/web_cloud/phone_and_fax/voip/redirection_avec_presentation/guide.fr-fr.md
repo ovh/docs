@@ -18,15 +18,15 @@ Cette configuration permet notamment la réception d'appels sur votre numéro pr
 
 ## Prérequis
 
-- Disposer d'un [numéro alias fourni par OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/){.external} ou d'un [numéro porté](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
-- Disposer d'[une ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Disposer d'un [numéro alias fourni par OVHcloud](/links/telecom/telephonie-numeros){.external} ou d'un [numéro porté](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
+- Disposer d'[une ligne SIP OVHcloud](/links/telecom/telephonie-voip){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
  
 ## En pratique
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external} et assurez-vous de vous situer dans la partie « Télécom ». Cliquez sur `Téléphonie`{.action} puis sélectionnez, parmi les numéros alias qui s'affichent, celui sur lequel vous souhaitez configurer la redirection de vos appels entrants.
+Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager-telecom){.external} et assurez-vous de vous situer dans la partie « Télécom ». Cliquez sur `Téléphonie`{.action} puis sélectionnez, parmi les numéros alias qui s'affichent, celui sur lequel vous souhaitez configurer la redirection de vos appels entrants.
 
 Cliquez sur l'onglet `Configuration`{.action}.<br>
 Parmi les configurations proposées, choisissez `Redirection d'appels`{.action} puis cliquez sur le bouton `Paramétrer`{.action}.

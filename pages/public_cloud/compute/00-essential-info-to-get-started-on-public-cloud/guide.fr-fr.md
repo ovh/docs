@@ -1,7 +1,7 @@
 ---
 title: "L'essentiel pour commencer avec Public Cloud"
 excerpt: "Découvrez des notions de base utiles pour commencer dans l'environnement Public Cloud"
-updated: 2022-02-07
+updated: 2024-04-19
 ---
 
 ## Objectif
@@ -88,6 +88,9 @@ Par exemple, vous pouvez choisir de séparer vos environnements de test et de pr
 Pour démarrer un projet, vous devrez nécessairement enregistrer un moyen de payement lors de la création du projet.
 
 #### La facturation
+
+> [!primary]
+> En ce qui concerne spécifiquement les instances de type *Virtual Machines*, le compteur de facturation démarre lorsqu'une instance atteint le statut `ACTIVE` (affiché comme `Activée` dans l'espace client OVHcloud). En d'autres termes, la période pendant laquelle l'instance est en statut `BUILD` n'est pas facturée.
 
 Votre moyen de payement étant enregistré, il servira à débiter le montant calculé pour votre [facturation en fin de mois](/pages/public_cloud/compute/analyze_billing). Ce calcul est fait sur la base du temps d'utilisation de chaque ressource, en fonction du prix des ressources.
 

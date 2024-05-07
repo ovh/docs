@@ -12,8 +12,8 @@ Redirecting a domain name is to point it to a new target. Different types of red
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-gb/domains/) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the necessary permissions to manage the domain name
+- A [domain name](/links/web/domains) registered with OVHcloud
+- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the domain name
 - The login credentials required to connect to your storage space via SSH (optional, for redirection via a [.htaccess](#htaccess_rewrite) file).
 
 ## Instructions
@@ -29,21 +29,21 @@ This feature allows you to redirect a domain or subdomain to:
 
 There are several ways of doing this:
 
-- **From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)**, where a configuration assistant can be used to set your redirection.
+- **From the [OVHcloud Control Panel](/links/manager)**, where a configuration assistant can be used to set your redirection.
 - **Via a method that requires programming**, in which case you will need to create the redirection yourself in a file (usually a [.htaccess](#htaccess_rewrite)).
 
 > [!warning]
 >
 > Setting up a redirection can affect your SEO ranking. 
-> Be careful about the changes you apply, or contact a [specialised provider](https://partner.ovhcloud.com/en-gb/) for SEO if necessary.
+> Be careful about the changes you apply, or contact a [specialised provider](/links/partner) for SEO if necessary.
 >
-> Warning: A redirection created from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) does not redirect an URL as `https://` to another domain or URL.
+> Warning: A redirection created from the [OVHcloud Control Panel](/links/manager) does not redirect an URL as `https://` to another domain or URL.
 > To create this type of redirection, you will have to apply [a URL rewrite](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite), for example by editing a ".htaccess" file. 
 >
 
 ### Redirecting a domain name from the Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Web Cloud`{.action} section, select the domain to redirect from `Domain names`{.action}, then click on the `Redirection`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, select the domain to redirect from `Domain names`{.action}, then click on the `Redirection`{.action} tab.
 
 The table displays active redirections for your domain name. You can manage your existing redirections using the `...`{.action} button to the right of each line.
 
@@ -51,7 +51,7 @@ Click the `Add a redirection`{.action} button.
 
 ![Introduction to the redirection menu](images/add-a-redirection.png){.thumbnail}
 
-Three redirection options are available from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and each of them is made up of **5 successive steps**. 
+Three redirection options are available from the [OVHcloud Control Panel](/links/manager), and each of them is made up of **5 successive steps**. 
 
 > The `Redirection`{.action} tab contains a fourth option that allows your domain to be quickly pointed to A, AAAA and CNAME DNS records.<br>
 > Since this is not strictly a "redirection", this option will not be detailed in this guide.
@@ -283,13 +283,13 @@ This type of embedded content prevents your site visitors from viewing the targe
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ".htaccess" files are configuration files in which commands can be specified. When the web server (Apache) runs your website’s code, the commands are interpreted, then executed.<br>
 You can use such commands to create redirections.
 
-A faulty .htaccess file can make your website inaccessible. If in doubt, contact a [specialist provider](https://partner.ovhcloud.com/en-gb/).
+A faulty .htaccess file can make your website inaccessible. If in doubt, contact a [specialist provider](/links/partner).
 
 You can find all of our documentation on .htaccess in the [Go further](#go-further) section of this guide.
 
@@ -390,8 +390,8 @@ This variable can be used when you temporarily move files to another site. Visit
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -4,7 +4,7 @@ links:
     - docs/cloud/clouddb/utilisation-mysql-mariadb/
     - docs/cloud/clouddb/utilisation-pgsql/
 excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die Web Cloud Databases Lösung verwenden'
-updated: 2023-05-31
+updated: 2024-03-18
 ---
 
 > [!primary]
@@ -20,14 +20,14 @@ Ihre Web Cloud Databases Lösung ist standardmäßig an das Webhosting-Netzwerk 
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/) (im [Webhosting Performance](https://www.ovhcloud.com/de/web-hosting/)).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/) (im [Webhosting Performance](/links/web/hosting)).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 ### Aktivierung des in Ihrem Webhosting-Angebot enthaltenen Web Cloud Databases Servers
 
-Wenn Ihr Hosting-Angebot die Option "Web Cloud Databases" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} links auf `Hosting-Pakete`{.action}.
+Wenn Ihr Hosting-Angebot die Option "Web Cloud Databases" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](/links/manager){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} links auf `Hosting-Pakete`{.action}.
 
 Klicken Sie im Tab `Allgemeine Informationen` im Rahmen `Konfiguration` auf `...`{.action} rechts von **Web Cloud Databases**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
 
@@ -37,7 +37,7 @@ Folgen Sie den Anweisungen, um Typ und Version Ihres Web Cloud Databases Servers
 
 ### Allgemeine Informationen der Instanz einsehen
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im linken Menü in den Bereich `Web Cloud Databases`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
+Gehen Sie In Ihrem [OVHcloud Kundencenter](/links/manager){.external} im linken Menü in den Bereich `Web Cloud Databases`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
 
 > [!primary]
 >
@@ -200,32 +200,12 @@ Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden k
 
 ### Die Logs Ihres Web Cloud Databases Servers abrufen
 
-Um die neuesten Logs Ihrer Datenbank zu überprüfen, gehen Sie auf den Tab `Logs`{.action} Ihres Web Cloud Databases Servers. Dieser Tab zeigt in Echtzeit Alarme und Fehler an.
-
-![Web Cloud Databases](images/tab-with-logs.png){.thumbnail}
-
-Um alle Logs Ihres Web Cloud Databases Servers abzurufen, loggen Sie sich via SFTP mit diesem ein.
-
-> [!warning]
->
-> Bevor Sie sich verbinden, überprüfen Sie, ob die IP-Adresse des von Ihnen verwendeten Geräts auf Ihrem Web Cloud Databases Server mit der angekreuzten Option "SFTP" erlaubt ist. Folgen Sie hierzu der Anleitung [Die Verbindung zu einem OVHcloud Webhosting erlauben](#trustip).
-
-Die SFTP-Verbindungsinformationen finden Sie im Tab `Allgemeine Informationen`{.action} Ihres Web Cloud Databases Servers. Wenn Sie das `Passwort des Servers` nicht kennen, klicken Sie auf die Schaltfläche Kfz `...`{.action} rechts, um ihn zu bearbeiten.
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Verbinden Sie sich über einen FTP-Client (FileZilla, Cyberduck, WinSCP...).
-
-Für FileZilla gehen Sie im Menü `File`{.action} zum Bereich `Site Manager`{.action}. Klicken Sie auf `New Site`{.action} und geben Sie die oben aufgeführten Einstellungen ein.
-
-![Web Cloud Databases](images/sftp-connexion.png){.thumbnail}
-
-Die Log-Datei mit dem Namen `stdout.log` befindet sich im Wurzelverzeichnis.
+Um die Logs Ihrer Web Cloud Databases Lösung einzusehen, folgen Sie unserer Anleitung „[Web Cloud Databases - Logs abrufen](/pages/web_cloud/web_cloud_databases/retrieve-logs)“.
 
 ## Weiterführende Informationen
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

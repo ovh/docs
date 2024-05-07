@@ -1,7 +1,7 @@
 ---
 title: 'Sistema di fatturazione dei servizi Cloud'
 excerpt: 'Come funziona il sistema di fatturazione dei servizi Public Cloud'
-updated: 2022-08-29
+updated: 2024-04-24
 ---
 
 ## Obiettivo
@@ -27,6 +27,8 @@ Per offrire una fatturazione che rispecchi l’utilizzo del servizio da parte de
 Ogni risorsa soggetta a fatturazione dispone di un contatore che si avvia alla creazione e si arresta alla sua eliminazione seguendo il principio secondo cui “ogni ora iniziata è interamente dovuta”.
 
 Alla fine del mese, il tempo registrato da ogni contatore viene moltiplicato per la tariffa oraria applicata alla risorsa. Per ottenere l’importo totale della fattura è sufficiente sommare il risultato di tutti i contatori.
+
+In particolare per le istanze di macchine virtuali, il contatore di fatturazione inizia quando un'istanza raggiunge lo stato `ACTIVE` (visualizzato come `Attivo` nell'area clienti di OVHcloud). In altre parole, il periodo in cui l'istanza è in stato di `BUILD` non viene fatturato.
 
 Ogni progetto Cloud ha quindi una fattura che riunisce l’insieme delle risorse fatturate nel corso del mese. Questo documento viene emesso il 1° del mese successivo.
 
@@ -63,7 +65,7 @@ Pari a 23,63€ IVA incl.
 
 ### Consulta le tue fatture
 
-Accedi alla sezione `Public Cloud`{.action}(1) dello Spazio Cliente, seleziona il tuo progetto nel menu a sinistra (2) e clicca su `Billing Control`{.action} (3) > `Storico`{.action}(4).
+Accedi alla sezione `Public Cloud`{.action}(1) dello Spazio Cliente, seleziona il tuo progetto nel menu a sinistra e clicca su `Billing Control`{.action} (nella sezione `Project Management`) > `Storico`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 

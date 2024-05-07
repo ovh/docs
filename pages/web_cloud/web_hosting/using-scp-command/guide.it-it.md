@@ -22,7 +22,7 @@ Permette, da un terminale e con l’aiuto di un comando Linux, di copiare un fil
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/). OVHcloud non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner). OVHcloud non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
   
 **Questa guida ti mostra come utilizzare il comando Secure Copy Protocol (SCP) in SSH per copiare file da o verso un hosting Web.**
@@ -31,8 +31,8 @@ Permette, da un terminale e con l’aiuto di un comando Linux, di copiare un fil
 
 - Disporre di un terminale compatibile con i comandi Linux e SSH (ad esempio, il *terminale* di MacOS o l’emulatore *Ubuntu* su Windows)
 - Familiarizzare con i comandi Linux e SSH
-- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) con accesso in SSH
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di una soluzione di [hosting Web](/links/web/hosting) con accesso in SSH
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
   
 ## Procedura
 
@@ -143,6 +143,6 @@ Per verificare che il contenuto dell’hosting Web sia stato copiato localmente 
 
 [Accedere allo spazio di storage FTP dell’hosting Web](/pages/web_cloud/web_hosting/ftp_connection)
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
  
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

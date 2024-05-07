@@ -11,7 +11,7 @@ updated: 2024-03-08
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 > 
 
 ## Objetivo
@@ -24,7 +24,7 @@ updated: 2024-03-08
 
 ## Requisitos
 
-- Ter um [domínio](https://www.ovhcloud.com/pt/domains/)
+- Ter um [domínio](/links/web/domains)
 
 ## Instruções
 
@@ -77,10 +77,10 @@ Se tiver questões adicionais sobre Zonemaster, consulte a secção [FAQ](https:
 
 [Modificação de uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
 
-[Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](https://www.ovhcloud.com/pt/domains/dnssec/){.external}
+[Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](/links/web/domains-dnssec){.external}
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>

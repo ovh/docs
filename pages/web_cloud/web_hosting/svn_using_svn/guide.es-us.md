@@ -23,7 +23,7 @@ SVN, abreviación de "subversion", es un sistema de gestión de versiones.
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting](https://www.ovhcloud.com/es/web-hosting/) que permita conectarse por SSH (**a partir del plan Pro**).
+- Tener contratado un plan de [hosting](/links/web/hosting) que permita conectarse por SSH (**a partir del plan Pro**).
 - Conectarse a su alojamiento web por SSH (consulte nuestra guía [Utilizar el acceso SSH de su alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)).
 
 ## Procedimiento
@@ -151,6 +151,6 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 [Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

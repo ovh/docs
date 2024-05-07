@@ -10,20 +10,20 @@ updated: 2023-09-19
 
 ## Objetivo
 
-Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es/web-hosting/). Así podrá disponer de:
+Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad de sus [planes de hosting](/links/web/hosting). Así podrá disponer de:
 
 - un alojamiento más potente;
 - más espacio de almacenamiento FTP;
 - bases de datos adicionales; 
 - direcciones de correo adicionales;
-- funcionalidades adicionales como las [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [la oferta Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/) o el [servicio Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/){.external} (incluido en [los planes Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer)/).
+- funcionalidades adicionales como las [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [la oferta Pro](/links/web/hosting-professional-offer) o el [servicio Web Cloud Databases](/links/web/databases){.external} (incluido en [los planes Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer)/).
 
 **Descubra cómo mejorar su plan de hosting de OVHcloud sin interrupciones del servicio.**
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/)
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Tener un [plan de hosting](/links/web/hosting)
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Ser, como mínimo, el contacto «[Administrador](/pages/account_and_service_management/account_information/managing_contacts)» de los servicios para los que quiera modificar la suscripción.
 
 ## Procedimiento
@@ -44,7 +44,7 @@ Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&fr
 > Si desea cambiar la suscripción a un plan inferior, siga los pasos de nuestra guía "[Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 >
 
-Para modificar su suscripción, acceda a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda al apartado `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Para modificar su suscripción, acceda a su [área de cliente de OVHcloud](/links/manager) y acceda al apartado `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 En el recuadro `Suscripción`, haga clic en el botón `...`{.action} a la derecha de `Solución` y seleccione `Cambiar de plan`{.action}.
 
@@ -56,7 +56,7 @@ A continuación, seleccione la nueva suscripción y su duración. Acepte los con
 
 #### Mejorar temporalmente su plan de hosting Performance <a name="boost"></a>
 
-Con la [opción Boost](https://www.ovhcloud.com/es/web-hosting/options/boost/), disponible en nuestros planes *Performance*, puede aumentar temporalmente los recursos de CPU y RAM de su alojamiento web para absorber un aumento puntual del tráfico. Si este aumento se prolonga en el tiempo, también puede [cambiar al plan Performance de nivel superior](#modify) para disponer de estos recursos de forma permanente.
+Con la [opción Boost](/links/web/hosting-options-boost), disponible en nuestros planes *Performance*, puede aumentar temporalmente los recursos de CPU y RAM de su alojamiento web para absorber un aumento puntual del tráfico. Si este aumento se prolonga en el tiempo, también puede [cambiar al plan Performance de nivel superior](#modify) para disponer de estos recursos de forma permanente.
 
 > [!warning]
 >
@@ -67,12 +67,12 @@ Si la opción **Boost** es adecuada para usted, encontrará a continuación las 
 > [!tabs]
 > **Activar la opción Boost**
 >>>
->> Para activar la opción Boost, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En el recuadro `Información general` de la página que se abre, haga clic en el botón `...`{.action} a la derecha de `Boost` y seleccione `Mejorar mi plan`{.action}.<br><br>
+>> Para activar la opción Boost, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En el recuadro `Información general` de la página que se abre, haga clic en el botón `...`{.action} a la derecha de `Boost` y seleccione `Mejorar mi plan`{.action}.<br><br>
 >>![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
 >>>
 > **Desactivar la opción Boost**
 >>>
->> Para desactivar la opción Boost, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Abra la pestaña `Más` y haga clic en `Mejorar mi plan`{.action}.<br>
+>> Para desactivar la opción Boost, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Abra la pestaña `Más` y haga clic en `Mejorar mi plan`{.action}.<br>
 >> Se mostrará la tabla de uso de la opción Boost. Haga clic en `Desactivar el plan Boost`{.action}.<br><br>
 >>![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
 
@@ -83,9 +83,9 @@ Este cálculo corresponde a la diferencia de precio entre su oferta inicial y su
 
 > **Ejemplo:**<br>
 >
-> Ha contratado una suscripción [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/) el 1 de enero de 2022.
+> Ha contratado una suscripción [Personal](/links/web/hosting-personal-offer) el 1 de enero de 2022.
 >
-> El 31 de octubre de 2022, cambiará de esta oferta **Perso** a una suscripción en el plan [Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/).<br>
+> El 31 de octubre de 2022, cambiará de esta oferta **Perso** a una suscripción en el plan [Pro](/links/web/hosting-professional-offer).<br>
 >
 > Por lo tanto, el importe correspondiente al período restante de la suscripción **Perso** (2 meses, del 1 de noviembre de 2022 al 1 de enero de 2023) se restará automáticamente del coste de la nueva suscripción **Pro**, hasta el 1 de enero de 2023. Solo pagará la diferencia.
 > A partir del 1 de enero de 2023, la suscripción **Pro** se facturará al precio vigente.
@@ -98,8 +98,8 @@ Siga [estas instrucciones](#modify) para realizar el cambio de producto.
 
 [Optimización del rendimiento de su sitio web](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

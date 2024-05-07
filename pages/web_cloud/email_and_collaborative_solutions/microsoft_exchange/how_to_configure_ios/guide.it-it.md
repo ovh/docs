@@ -33,7 +33,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 
 > [!primary]
 >
-> Nel nostro esempio, usiamo il nome del server: ex**?**.mail.ovh.net. Dovrai sostituire il ""? " dalla cifra che indica il server del tuo servizio Email Pro.
+> Nel nostro esempio, usiamo il nome del server: ex**?**.mail.ovh.net. Dovrai sostituire il ""? " dalla cifra che indica il server del tuo servizio Exchange.
 >
 > Questa cifra è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Web Cloud`{.action} e `Microsoft`{.action}.
 > Clicca su `Exchange`{.action} e poi sulla piattaforma Exchange. Il nome del server è visibile nel riquadro **Connessione** della `scheda Informazioni generali`{.action}.

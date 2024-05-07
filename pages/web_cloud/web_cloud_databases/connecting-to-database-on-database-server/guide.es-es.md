@@ -16,14 +16,14 @@ Es posible consultar el contenido de la base de datos a través de una interfaz.
 
 ## Requisitos
 
-- Tener una [instancia Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener una [instancia Web Cloud Databases](/links/web/databases) (incluida en un plan de [hosting Performance](/links/web/hosting))
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que las soluciones [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+> Tenga en cuenta que las soluciones [Web Cloud Databases](/links/web/databases){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
 > <br> - Tenga en cuenta que no hay acceso "root".
 > <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
 
@@ -36,7 +36,7 @@ Es posible consultar el contenido de la base de datos a través de una interfaz.
 
 ####  Por phpMyAdmin OVHcloud
 
-Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos.
+Conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos.
 
 En la pestaña `Información general`, encontrará el enlace de acceso a phpMyAdmin en el recuadro **"Administración de la base de datos"**, bajo la indicación "Interfaz de usuario".
 
@@ -48,11 +48,11 @@ Acceda a la página de conexión de phpMyAdmin.
 
 Introduzca los siguientes datos para conectarse a la base de datos:
 
-- **Servidor:** Introduzca el *nombre del host* de su servidor de bases de datos seguido de su *número de puerto*. El *número de puerto* debe estar separado del *nombre del host* por un "**espacio**" o por "**:**". Por ejemplo, si el *nombre de host* es **aaXXXXX-XXX.eu.clouddb.ovh.net** y el *número de puerto* es **12345**, deberá introducir **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** o **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. Para consultar el *nombre del host* y el *número de puerto* de su servidor Web Cloud Databases, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos. En la página `Información general`, puede consultar el *nombre del host* y el *número de puerto* en el recuadro `Datos de conexión`.
+- **Servidor:** Introduzca el *nombre del host* de su servidor de bases de datos seguido de su *número de puerto*. El *número de puerto* debe estar separado del *nombre del host* por un "**espacio**" o por "**:**". Por ejemplo, si el *nombre de host* es **aaXXXXX-XXX.eu.clouddb.ovh.net** y el *número de puerto* es **12345**, deberá introducir **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** o **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. Para consultar el *nombre del host* y el *número de puerto* de su servidor Web Cloud Databases, conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos. En la página `Información general`, puede consultar el *nombre del host* y el *número de puerto* en el recuadro `Datos de conexión`.
 
-- **Usuario:** Introduzca el *nombre de usuario* de su servidor de bases de datos. Para consultar el *nombre de usuario* de la base de datos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos. A continuación, abra la pestaña `Usuarios y permisos`{.action}. En ella encontrará una tabla con todos los usuarios creados en su solución Web Cloud Databases.
+- **Usuario:** Introduzca el *nombre de usuario* de su servidor de bases de datos. Para consultar el *nombre de usuario* de la base de datos, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos. A continuación, abra la pestaña `Usuarios y permisos`{.action}. En ella encontrará una tabla con todos los usuarios creados en su solución Web Cloud Databases.
 
-- **Contraseña:** Introduzca la *contraseña* asociada al *nombre de usuario* correspondiente. Si no recuerda la *contraseña* asociada a su *nombre de usuario*, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos. A continuación, abra la pestaña `Usuarios y permisos`{.action}. Haga clic en el botón `...`{.action} situado a la derecha de *el usuario* correspondiente para `Cambiar la contraseña`{.action}.
+- **Contraseña:** Introduzca la *contraseña* asociada al *nombre de usuario* correspondiente. Si no recuerda la *contraseña* asociada a su *nombre de usuario*, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos. A continuación, abra la pestaña `Usuarios y permisos`{.action}. Haga clic en el botón `...`{.action} situado a la derecha de *el usuario* correspondiente para `Cambiar la contraseña`{.action}.
 
 > [!warning]
 >
@@ -187,8 +187,8 @@ Se establecerá la conexión a la base de datos:
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

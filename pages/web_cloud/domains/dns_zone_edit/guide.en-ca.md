@@ -34,15 +34,15 @@ The DNS zone for a domain name is a configuration file made up of **records**. Y
 
 ## Requirements
 
-- Appropriate rights to manage the domain name from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Appropriate rights to manage the domain name from your [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - OVHcloud DNS servers in use for the domain name concerned
 
 > [!warning]
 >
 > - If your domain name does not use OVHcloud DNS servers, you will need to edit the configuration using the interface of your service provider that manages your domain name.
 > 
-> - If your domain name is registered with OVHcloud, you can check if it is using our configuration. To do this, go to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), and open the `DNS servers`{.action} tab of the domain name in question.
+> - If your domain name is registered with OVHcloud, you can check if it is using our configuration. To do this, go to your [Control Panel](/links/manager), and open the `DNS servers`{.action} tab of the domain name in question.
 >
 > In both of the above cases, be careful when making your DNS server changes. The old configuration that can be applied to your domain name will no longer be active if you have not previously reconfigured and customised the new DNS zone present at OVHcloud.<br>
 > You can only have one active DNS zone per domain name at a time.
@@ -56,7 +56,7 @@ The DNS zone for a domain name is a configuration file made up of **records**. Y
 >
 > Unlike domain names, a DNS zone has no "owner", but is managed at OVHcloud through the contact management. If you wish to assign the management of your DNS zone to another OVHcloud customer account, follow our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and go to the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS zone`{.action} tab.
 
 The table that appears will display a DNS record linked to your OVHcloud domain name for each row. You can filter the table content by DNS record type or by domain name.
 
@@ -270,8 +270,8 @@ As a result, and in this specific case, you will not be able to create a CNAME r
 
 [Securing your domain name with DNSSEC](/pages/web_cloud/domains/dns_dnssec)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -6,13 +6,13 @@ updated: 2024-02-06
 
 ## Objectif
 
-OVHcloud propose [plusieurs offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/). Elles sont conçues pour différents cas d'usage :
+OVHcloud propose [plusieurs offres d'hébergement web](/links/web/hosting). Elles sont conçues pour différents cas d'usage :
 
 - Débuter sur le Web.
 - Créer rapidement un site web (professionnel ou non), un blog, un **C**ontent **M**anagement **S**ystem (**CMS**) tel que *WordPress*, *Joomla!*, *PrestaShop* ou *Drupal* ou encore une boutique en ligne.
 - Personnaliser une ou plusieurs adresses e-mail avec le nom de domaine que vous souhaitez utiliser pour votre site web.
 - Gérer plusieurs sites web sur une seule offre d'hébergement web.
-- Disposer d'une ou plusieurs bases de données ([incluses avec certaines de nos offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)).
+- Disposer d'une ou plusieurs bases de données ([incluses avec certaines de nos offres d'hébergement web](/links/web/hosting)).
 - etc.
 
 Ces offres vous épargnent de gérer la maintenance, la mise à jour et la sécurité d'une infrastructure d'hébergement web.<br>
@@ -26,17 +26,17 @@ Elles vous permettent de gagner du temps sur « l'administration serveur » et d
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Disposer d'un [nom de domaine](/links/web/domains).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-L'objectif de ce guide est de vous indiquer les principales actions réalisables avec nos solutions d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/). 
+L'objectif de ce guide est de vous indiquer les principales actions réalisables avec nos solutions d'[hébergement web](/links/web/hosting). 
 Chacune de ces actions sera accompagnée d'un ou plusieurs liens vers des guides spécifiques (en rapport avec l'action en question).
 
-Vous pouvez ainsi utiliser ce guide comme un « référentiel » d'actions possibles dès la souscription de votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) et tout au long de son utilisation.
+Vous pouvez ainsi utiliser ce guide comme un « référentiel » d'actions possibles dès la souscription de votre offre d'[hébergement web](/links/web/hosting) et tout au long de son utilisation.
 
 > [!primary]
 > 
@@ -59,7 +59,7 @@ Avant de commencer, il est essentiel d'identifier et de délimiter clairement vo
 - Ai-je besoin d'une ou de plusieurs base(s) de données pour faire fonctionner mon site web ?
 - Ai-je besoin d'une ou de plusieurs adresses(s) e-mail personnalisée(s) avec mon nom de domaine ?
 
-En fonction de vos réponses, vérifiez que votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) correspond bien à tous vos besoins avant de poursuivre.
+En fonction de vos réponses, vérifiez que votre offre d'[hébergement web](/links/web/hosting) correspond bien à tous vos besoins avant de poursuivre.
 
 Si ce n'est pas le cas, consultez notre guide « [Hébergement web: comment faire évoluer son offre ?](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) ».
 
@@ -89,7 +89,7 @@ Pour ce cas de figure, nous vous invitons à suivre directement notre guide « [
 ##### Cas n°2 - Créer un site web en utilisant un CMS
 
 OVHcloud vous met à disposition l'option « Modules en 1 clic ».<br>
-Une fois connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et via votre hébergement web, cette option vous permet d'installer rapidement les CMS *WordPress*, *Joomla!*, *PrestaShop* et *Drupal*.
+Une fois connecté à votre [espace client OVHcloud](/links/manager) et via votre hébergement web, cette option vous permet d'installer rapidement les CMS *WordPress*, *Joomla!*, *PrestaShop* et *Drupal*.
 
 Pour utiliser cette option, consultez notre guide « [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
 
@@ -100,17 +100,17 @@ Pour utiliser cette option, consultez notre guide « [Installer votre site web a
 
 ### Étape 3 - Créer vos adresses e-mail (facultatif) <a name="email-creation"></a>
 
-Votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) inclut une ou plusieurs adresses e-mail, que vous pouvez choisir d'activer ou non.
+Votre offre d'[hébergement web](/links/web/hosting) inclut une ou plusieurs adresses e-mail, que vous pouvez choisir d'activer ou non.
 
 Consultez tout d'abord notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ».
 
-Une fois l'option activée, consultez notre guide « [Créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation) » pour personnaliser une ou plusiuers adresse(s) e-mail avec votre nom de domaine.
+Une fois l'option activée, consultez notre guide « [Créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation) » pour personnaliser une ou plusieurs adresse(s) e-mail avec votre nom de domaine.
 
 > **Cas Particuliers :**
 >
 > - Si vous migrez un site web et/ou s'il s'agit d'adresses e-mail associées au nom de domaine de votre site web, consultez notre guide « [Migrer son site web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ». Vous y retrouverez toutes les étapes clés pour migrer sans interruption l'ensemble de vos services (nom de domaine, site web, adresse(s) e-mail, etc.).
 >
-> - Si vous n'avez pas attaché un nom de domaine lors de la commande de votre hébergement web et si vous souhaitez bénéficier de l'option « adresse(s) e-mail incluse(s) avec votre hébergement web », vous devrez effectuer l'opération manuellement depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+> - Si vous n'avez pas attaché un nom de domaine lors de la commande de votre hébergement web et si vous souhaitez bénéficier de l'option « adresse(s) e-mail incluse(s) avec votre hébergement web », vous devrez effectuer l'opération manuellement depuis votre [espace client OVHcloud](/links/manager).
 
 ### Étape 4 - Vérifier et/ou modifier la configuration de votre nom de domaine <a name="domain-configuration"></a>
 
@@ -146,13 +146,13 @@ Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre off
 
 ### Étape 5 - Autres options disponibles avec les hébergements web <a name="other-options"></a>
 
-En fonction de votre [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/), des options / offres / fonctionnalités supplémentaires sont disponibles gratuitement.
+En fonction de votre [offre d'hébergement web](/links/web/hosting), des options / offres / fonctionnalités supplémentaires sont disponibles gratuitement.
 
 #### Les certificats SSL
 
 Les certificats SSL permettent de rendre votre site web accessible en utilisant le protocole HTTPS. Ce protocole chiffre les échanges entre votre hébergement web et les personnes qui consultent votre site web.
 
-Quel que soit l'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/), vous pouvez activer gratuitement un certificat SSL **Let's encrypt**.
+Quel que soit l'[hébergement web](/links/web/hosting), vous pouvez activer gratuitement un certificat SSL **Let's encrypt**.
 
 Pour plus de détails sur les certificats SSL (gratuits ou payants) proposés sur les hébergements web, consultez notre guide « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) ».
 
@@ -176,13 +176,13 @@ Retrouvez plus d'informations sur nos différentes offres CDN dans notre guide �
 
 #### Les serveurs de base de données Web Cloud Databases
 
-Si vous disposez d'un hébergement web **Performance**, vous pouvez activer gratuitement un serveur de base de données [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/).
+Si vous disposez d'un hébergement web **Performance**, vous pouvez activer gratuitement un serveur de base de données [Web Cloud Databases](/links/web/databases).
 
 Retrouvez plus de détails sur son utilisation dans notre documentation « [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
 
 #### Envoyer des e-mails depuis votre site web
 
-Tous nos [hébergements web](https://www.ovhcloud.com/fr-ca/web-hosting/) permettent d'envoyer gratuitement des e-mails à partir de votre site web ou d'un script spécifique.
+Tous nos [hébergements web](/links/web/hosting) permettent d'envoyer gratuitement des e-mails à partir de votre site web ou d'un script spécifique.
 
 Retrouvez tous les détails sur cette fonctionnalité dans notre guide « [Suivre et gérer les e-mails automatisés de son hébergement web](/pages/web_cloud/web_hosting/mail_function_script_records) ».
 
@@ -190,7 +190,7 @@ Retrouvez tous les détails sur cette fonctionnalité dans notre guide « [Suivr
 
 Les tâches « CRON » permettent d'exécuter automatiquement des scripts hébergés sur votre hébergement web.
 
-Si votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) dispose de cette option, consultez notre guide « [Créer des tâches automatisées (CRON) sur votre hébergement Web](/pages/web_cloud/web_hosting/cron_tasks) » pour plus de détails.
+Si votre offre d'[hébergement web](/links/web/hosting) dispose de cette option, consultez notre guide « [Créer des tâches automatisées (CRON) sur votre hébergement Web](/pages/web_cloud/web_hosting/cron_tasks) » pour plus de détails.
 
 ## Aller plus loin
 
@@ -204,8 +204,8 @@ Si votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)
 
 [Les certificats SSL sur les hébergements web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

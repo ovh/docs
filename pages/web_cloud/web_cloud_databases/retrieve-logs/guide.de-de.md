@@ -10,7 +10,7 @@ updated: 2024-03-07
 
 ## Ziel
 
-Mit der Datenbank-Lösung [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) können Sie mehrere Datenbanken hosten. In manchen Situationen kann es notwendig sein, deren Logs einzusehen oder abzurufen:
+Mit der Datenbank-Lösung [Web Cloud Databases](/links/web/databases) können Sie mehrere Datenbanken hosten. In manchen Situationen kann es notwendig sein, deren Logs einzusehen oder abzurufen:
 
 - Logs Ihres Web Cloud Databases Servers
 - Logs für eine der auf Ihrem Web Cloud Databases Server gehosteten Datenbanken
@@ -19,22 +19,22 @@ Mit der Datenbank-Lösung [Web Cloud Databases](https://www.ovhcloud.com/de/web-
 
 ## Voraussetzungen
 
-- Sie verfügen über [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) (in einem [Performance Web Hosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten oder separat).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über [Web Cloud Databases](/links/web/databases) (in einem [Performance Web Hosting](/links/web/hosting) Angebot enthalten oder separat).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Wir sind nicht in der Lage, Ihnen bei der Interpretation der Logs Ihrer Web Cloud Databases zu assistieren. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Wir sind nicht in der Lage, Ihnen bei der Interpretation der Logs Ihrer Web Cloud Databases zu assistieren. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ### Die Logs Ihrer Web Cloud Databases Lösung in Echtzeit einsehen
 
 So überprüfen Sie die Logs Ihrer Web Cloud Databases Lösung in Echtzeit:
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
 2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Web Cloud Databases`{.action}.
 4. Wählen Sie die betreffende Web Cloud Databases Lösung aus.
@@ -64,7 +64,7 @@ Um den Logverlauf Ihrer Web Cloud Databases Lösung abzurufen, muss eine SFTP-Ve
 
 So finden Sie die SFTP-Verbindungsinformationen zu Ihrer Web Cloud Databases Lösung:
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
 2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Web Cloud Databases`{.action}.
 4. Wählen Sie die betreffende Web Cloud Databases Lösung aus.
@@ -104,6 +104,6 @@ Laden Sie diese Datei herunter, um sie zu öffnen.
 
 [Erste Schritte mit Ihren Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

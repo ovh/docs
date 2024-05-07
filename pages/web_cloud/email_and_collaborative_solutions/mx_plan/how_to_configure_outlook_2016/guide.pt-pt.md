@@ -1,19 +1,18 @@
 ---
-title: 'Configurar um endereço de e-mail no Outlook para Windows'
-excerpt: 'Saiba como configurar um endereço de e-mail MX Plan no Outlook para Windows'
-updated: 2021-06-05
+title: "MX Plan : Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Windows"
+excerpt: "Saiba como configurar um endereço de e-mail MX Plan no Outlook para Windows"
+updated: 2024-02-16
 ---
- 
+
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
- 
 
 ## Objetivo
 
 As contas MX Plan podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir.
 
-**Saiba como configurar um endereço de e-mail MX Plan no Outlook 2016 ou posteriormente para Windows.**
+**Saiba como configurar o endereço de e-mail MX Plan no Outlook para Windows.**
 
 > [!warning]
 >
@@ -30,11 +29,14 @@ As contas MX Plan podem ser configuradas em vários softwares de e-mail compatí
  
 > [!primary]
 >
->
-> Se utilizar o Outlook 2016 para Mac, consulte o nosso manual [Configurar um endereço de e-mail no Outlook 2016 para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}.
+> Se utilizar o Outlook para Mac, consulte o nosso manual [Configurar um endereço de e-mail no Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## Instruções
+
+> [!alert]
+>
+> Antes de iniciar a configuração com este guia, certifique-se de que a bandeira no canto superior direito desta página corresponde ao seu país ou região, uma vez que os parâmetros dependem da sua localização.
 
 ### Adicionar a conta
 
@@ -46,19 +48,42 @@ As contas MX Plan podem ser configuradas em vários softwares de e-mail compatí
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail}
 
-| | |
-|---|---|
-|![Outlook](images/config-outlook-mxplan02.png){.thumbnail}|Entre os diferentes tipos de conta, selecione IMAP e POP. <br>Recomendamos uma utilização em IMAP.|
-|Introduza a password do seu endereço de e-mail e clique em `Seguinte`{.action}. |![Outlook](images/config-outlook-mxplan03.png){.thumbnail}|
-|![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|Se o Outlook não conseguir configurar automaticamente o seu endereço, esta janela será apresentada. <br>Clique em `Modificar os parâmetros da conta`{.action} |
-|Introduza no **Correio de entrada**: <br>- o servidor **ssl0.ovh.net** <br>- Porta **993**<br>- Método de encriptação **SSL/TLS**<br><br>Introduza no **Correio de saída**: <br>- o servidor **ssl0.ovh.net** <br>- Porta **465**<br>- Método de encriptação **SSL/TLS**<br><br>Clique em `Seguinte`{.action} para validar. |![Outlook](images/config-outlook-mxplan05.png){.thumbnail}|
+> [!primary]
+>
+> Não sabe se deve configurar a sua conta de e-mail em **POP** ou **IMAP**?
+>
+> Antes de prosseguir, consulte a secção « [POP ou IMAP. Qual é a diferença?](#popimap) » deste guia.
+>
+> Nas configurações seguintes, verá a possibilidade de inserir 2 nomes de hosts diferentes para o mesmo servidor (entrada ou saída). Estes valores referem-se exatamente ao mesmo servidor e foram implementados para facilitar a introdução e evitar a confusão entre os protocolos POP, IMAP e SMTP que utilizam portas diferentes.
 
-No âmbito de uma configuração em **POP**, os valores são os seguintes:
+Para configurar o seu endereço de e-mail, clique nos separadores abaixo para seguir os passos.
 
-|Tipo de servidor|Nome do servidor|Método de encriptação|Porta|
-|---|---|---|---|
-|Entrada|ssl0.ovh.net|SSL/TLS|995|
-|Saída|ssl0.ovh.net|SSL/TLS|465|
+> [!tabs]
+> **Etapa 1**
+>> Entre os diferentes tipos de conta, escolha entre IMAP e POP. <br>Aconselhamos uma utilização em IMAP.
+>>
+>> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail}
+>>
+> **Etapa 2**
+>> Introduza a palavra-passe do seu endereço de e-mail e clique em `Seguinte`{.action}.
+>>
+>> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail}
+>>
+> **Etapa 3**
+>> Se não for possível configurar o endereço automaticamente no Outlook, será exibida esta janela. Clique em `Editar definições da conta`{.action}. Em função da sua escolha (**POP** ou **IMAP**), passe à etapa 4 correspondente.
+>>
+>> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
+>>
+> **4 - IMAP**
+>> Se escolheu IMAP, insira os parâmetros a seguir. Se tiver escolhido o POP, clique no separador « **Passo 4 - POP** ».<br>
+>> Em **Correio a Receber**, introduza:<br>- O servidor **imap.mail.ovh.net** ou **ssl0.ovh.net** <br>- Porta **993**<br>- Método de encriptação **SSL/TLS**<br><br>Em **E-mail de saída**, introduza:<br>- O servidor **smtp.mail.ovh.net** ou **ssl0.ovh.net** <br>- Porta **465**<br>- Método de encriptação **SSL/TLS**<br><br>Clique em `Seguinte`{.action} para validar.<br>
+>>
+>> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail}
+>>
+> **Passo 4 - POP**
+>> Em **Correio a Receber**, introduza:<br>- O servidor **pop.mail.ovh.net** ou **ssl0.ovh.net** <br>- Porta **995**<br>- Método de encriptação **SSL/TLS**<br><br>Em **E-mail de saída**, introduza:<br>- O servidor **smtp.mail.ovh.net** ou **ssl0.ovh.net** <br>- Porta **465**<br>- Método de encriptação **SSL/TLS**<br><br>Clique em `Seguinte`{.action} para validar.<br>
+>>
+>> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail}
 
 ### Utilizar o endereço de e-mail
 
@@ -83,6 +108,64 @@ Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros d
 A janela está dividida em duas partes, **Correio de entrada** e **Correio de saída**. Clique em qualquer uma para as poder alterar.
 
 ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+
+### Lembrete dos parâmetros POP, IMAP e SMTP <a name="popimap-settings"></a>
+
+Para a receção dos e-mails, ao escolher o tipo de conta, recomendamos uma utilização em **IMAP**. No entanto, pode selecionar **POP**. Para compreender o funcionamento respetivo, consulte a secção « [POP ou IMAP, qual é a diferença?](#popimap) ».
+
+- **Configuração em POP**
+
+|Informação|Descrição|
+|---|---|
+|Nome de utilizador|Introduza o endereço de e-mail **completo**|
+|Palavra-passe|Insira a palavra-passe do endereço de e-mail|
+|Servidor (entrada)|pop.mail.ovh.net **ou** ssl0.ovh.net|
+|Porta|995|
+|Tipo de segurança|SSL/TLS|
+
+- **Configuração em IMAP**
+
+|Informação|Descrição|
+|---|---|
+|Nome de utilizador|Introduza o endereço de e-mail **completo**|
+|Palavra-passe|Insira a palavra-passe do endereço de e-mail|
+|Servidor (entrada)|imap.mail.ovh.net **ou** ssl0.ovh.net|
+|Porta|993|
+|Tipo de segurança|SSL/TLS|
+
+Se necessitar de inserir manualmente as definições de **SMTP** nas preferências da conta para enviar uma mensagem de correio eletrónico, poderá encontrar em seguida as definições a utilizar:
+
+- **Configuração SMTP**
+
+|Informação|Descrição|
+|---|---|
+|Nome de utilizador|Introduza o endereço de e-mail **completo**|
+|Palavra-passe|Insira a palavra-passe do endereço de e-mail|
+|Servidor (de saída)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
+|Porta|465|
+|Tipo de segurança|SSL/TLS|
+
+### POP ou IMAP, qual é a diferença? <a name="popimap"></a>
+
+Quando configura manualmente o endereço de e-mail, o cliente de e-mail pergunta se pretende utilizar o protocolo **POP** (**P**ost **O**ffice **P**rotocol) ou **IMAP**(**I**nternet **M**essage **A**ccess **P**rotocol). Para que se compreenda corretamente, é preciso situar a função dos protocolos POP e IMAP na configuração do seu endereço de e-mail.
+
+Quando configurar o cliente de correio eletrónico, terá de introduzir as informações do **servidor de entrada** para receber as mensagens e o **servidor de envio** para enviar as mensagens. Para enviar os e-mails, não há escolha, é o protocolo **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol) que é utilizado. Para a receção, poderá escolher entre **POP** ou **IMAP**.
+
+![mxplan](images/mxplan-popimap-01.png){.thumbnail}
+
+Para compreender a diferença entre a utilização do protocolo POP e IMAP, vamos detalhar os elementos que compõem o tratamento dos seus e-mails em receção:
+
+1. **O seu dispositivo**: um computador, um smartphone ou um tablet. É o vosso suporte de consulta.
+2. **O seu cliente de e-mail** : aplicação dedicada à gestão dos seus e-mails. A sua escolha determinará o nível de ergonomia e de funcionalidades que terá de consultar os seus e-mails.
+3. **O protocolo de receção** : escolha que determina a forma de verificar os e-mails no seu dispositivo. A sua escolha afeta os outros dispositivos que acedem à mesma conta de e-mail.
+    - **IMAP**: O cliente de e-mail interroga o servidor de e-mail e transfere os e-mails para o seu dispositivo. Quando consulta uma mensagem de correio eletrónico não lida, o servidor marca-a como "lido". Os outros dispositivos configurados em IMAP poderão constatar este estado e consultar este e-mail enquanto não tiver sido eliminado num dos dispositivos.
+    - **POP**: O cliente de e-mail interroga o servidor de e-mail e transfere os e-mails para o seu dispositivo. Por predefinição, uma vez o e-mail transferido para o seu dispositivo, a mensagem é eliminada do servidor. Por isso, os outros dispositivos ligados a este endereço de e-mail não poderão consultar este e-mail.
+
+![mxplan](images/mxplan-popimap-02.png){.thumbnail}
+
+> [!primary]
+>
+> Esta descrição é uma síntese, e representa o funcionamento padrão destes dois protocolos. É possível configurar o POP para que os e-mails não sejam eliminados quando recolhe os seus e-mails. O nosso objetivo é descrever o funcionamento nativo destes dois protocolos.
 
 ## Quer saber mais?
 

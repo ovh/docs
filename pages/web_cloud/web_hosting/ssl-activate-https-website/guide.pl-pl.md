@@ -10,15 +10,15 @@ updated: 2024-02-26
 
 ## Wprowadzenie
 
-Dzięki hostingowi OVHcloud możesz uzyskać [certyfikat SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/). Certyfikat ten gwarantuje poufność przesyłanych danych, a Twoje strony WWW stają się dostępne za pomocą *HTTPS*. Aby Twoje strony WWW mogły korzystać z bezpiecznego połączenia, wykonaj wcześniej kroki opisane w niniejszej dokumentacji.
+Dzięki hostingowi OVHcloud możesz uzyskać [certyfikat SSL](/links/web/hosting-options-ssl). Certyfikat ten gwarantuje poufność przesyłanych danych, a Twoje strony WWW stają się dostępne za pomocą *HTTPS*. Aby Twoje strony WWW mogły korzystać z bezpiecznego połączenia, wykonaj wcześniej kroki opisane w niniejszej dokumentacji.
 
 **Dowiedz się, jak aktywować certyfikat SSL na Twojej stronie WWW za pomocą protokołu HTTPS.**
 
 ## Wymagania początkowe
 
-- Posiadanie [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external} zainstalowanego na [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Posiadanie [certyfikatu SSL](/links/web/hosting-options-ssl){.external} zainstalowanego na [hostingu OVHcloud](/links/web/hosting){.external}.
 - Posiadanie co najmniej jednej strony WWW zainstalowanej i dostępnej na Twoim hostingu OVHcloud.
-- Zalogowanie do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}.
+- Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}, sekcja `Web Cloud`{.action}.
 
 ## W praktyce
 
@@ -41,7 +41,7 @@ A zatem, czy Twoja strona WWW używa bezpiecznego połączenia czy też nie, sta
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 Poniżej znajdziesz najważniejsze kroki opisane w dalszej części tego przewodnika, aby aktywować Twoją stronę WWW przy użyciu *HTTPS*:
@@ -59,7 +59,7 @@ Aby aktywować certyfikat SSL na Twoim hostingu lub sprawdzić, czy certyfikat S
 
 Przed wprowadzeniem zmian w konfiguracji Twojej strony WWW, koniecznie upewnij się, czy jest ona przygotowana do poprawnego korzystania z protokołu *HTTPS*. Nie istnieje uniwersalne podejście, ponieważ zależy ono od strony internetowej, której używasz.
 
-Poniższe informacje są zatem ogólne. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/).
+Poniższe informacje są zatem ogólne. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner).
 
 #### 2.1 - Unikaj mieszania zawartości HTTP i HTTPS
 
@@ -104,7 +104,7 @@ Jeśli Twój hosting posiada aktywny certyfikat SSL, a Twoja strona WWW korzysta
 >
 > Przed rozpoczęciem jakichkolwiek działań zalecamy wykonanie pełnej kopii zapasowej Twojej strony WWW. Kopia zapasowa powinna zawierać nie tylko pliki obecne na [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup), ale także pliki [bazy danych](/pages/web_cloud/web_hosting/sql_database_export), jeśli strona internetowa używa bazy.
 >
-> Operacje należy wykonać bezpośrednio z plików, z których składa się strona WWW. W przypadku trudności skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
+> Operacje należy wykonać bezpośrednio z plików, z których składa się strona WWW. W przypadku trudności skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner).
 >
 
 Istnieje kilka sposobów aktywacji *HTTPS* na Twojej stronie WWW. Operacja ta wymaga przeprowadzenia zmian w konfiguracji strony WWW. Poniższe informacje mogą Ci pomóc w przeprowadzeniu aktywacji, jednak mogą również okazać się dla Ciebie niekompletne lub mogą nie mieć zastosowania w odniesieniu do Twojego konkretnego przypadku.
@@ -141,7 +141,7 @@ Drugi przykład skryptu powoduje przekształcenie wszystkich adresów URL przych
 
 W tym drugim przykładzie upewnij się, że wszystkie Twoje domeny lub subdomeny docelowe mają aktywny certyfikat SSL.
 
-**Uwaga**, w przypadku ofert hostingowych [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/) należy użyć następującego skryptu:
+**Uwaga**, w przypadku ofert hostingowych [Cloud Web](/links/web/hosting-cloud-web-offer) należy użyć następującego skryptu:
 
 ```bash
 RewriteEngine On
@@ -161,8 +161,8 @@ Jeśli Twoja strona wyświetla się poprawnie i nie pojawia się żadne ostrzeż
 
 [Zarządzanie certyfikatem SSL na Twoim hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

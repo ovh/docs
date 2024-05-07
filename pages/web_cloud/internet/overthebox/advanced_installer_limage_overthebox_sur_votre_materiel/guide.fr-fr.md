@@ -1,31 +1,34 @@
 ---
 title: "Installer l'image OverTheBox sur votre matériel"
 excerpt: "Découvrez comment installer manuellement une image OverTheBox sur votre matériel"
-updated: 2024-02-27
+updated: 2024-05-06
 ---
 
 ## Objectif
 
-Découvrez comment installer ou mettre à jour votre matériel en installant manuellement l'image OverTheBox.
+Installer l'image OverTheBox sur votre propre matériel est une étape cruciale pour tirer pleinement parti des fonctionnalités avancées de gestion de réseau qu'offre OVHcloud. Ce guide vous explique comment installer ou mettre à jour votre matériel en installant manuellement l'image OverTheBox.
+
+**Découvrez comment installer l'image OverTheBox sur votre matériel.**
 
 ## Prérequis
 
 - Une **OverTheBox** fournie par OVHcloud ou un matériel compatible avec la solution OverTheBox (plateforme x86_64 avec un processeur Intel ou AMD)
+- Au moins un accès à Internet, fourni par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
 
 ## En pratique
 
-Dans le cas où votre matériel est une **OverTheBox** fournie par OVHcloud, vous pouvez suivre la [méthode n°1](#method1) à l'aide d'une clé USB bootable. Pour les autres matériels, suivez la [méthode n°2](#method2).
+Si votre matériel est une **OverTheBox** fournie par OVHcloud, vous pouvez suivre la [méthode n°1](#method1) à l'aide d'une clé USB bootable. Pour les autres matériels, suivez la [méthode n°2](#method2).
 
 ### Méthode n°1 : installation automatique à l'aide d'une clé USB <a name="method1"></a>
 
 Vous pouvez créer une clé USB bootable contenant l'image OverTheBox afin d'installer complétement le système.
 
-#### Création d'une clé USB bootable sous windows
+#### Création d'une clé USB bootable sous Windows
 
 - Téléchargez la dernière image **OverTheBox** sur votre ordinateur : [http://downloads.overthebox.net/stable/v5.0.1/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/v5.0.1/targets/x86/64/latest.img.gz){.external}.
 - Décompressez l'image grâce à un logiciel tel que [WinRAR](https://www.rarlab.com/download.htm){.external} afin d'obtenir le fichier **.img**.
 - Branchez la clé USB sur l'ordinateur.
-- Téléchargez le logiciel [Win32 Disk Imager](https://win32diskimager.org/#download){.external} et ouvrez le.
+- Téléchargez le logiciel [Win32 Disk Imager](https://win32diskimager.org/#download){.external} et ouvrez-le.
 - Cliquez sur `Parcourir`{.action} pour retrouver le fichier **.img**.
 - Sélectionnez la clé USB dans le champ **Device**.
 - Cliquez sur `Write`{.action}.
@@ -40,7 +43,7 @@ Vous pouvez créer une clé USB bootable contenant l'image OverTheBox afin d'ins
 
 #### Création d'une clé USB bootable sous macOS
 
-Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Terminal**.
+Toute l'opération se faisant en ligne de commande, ouvrez le **Terminal**.
 
 - Téléchargez la dernière image **OverTheBox** sur votre ordinateur, grâce à la commande suivante :
 
@@ -48,7 +51,7 @@ Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Termi
 curl -C - -O http://downloads.overthebox.net/stable/v5.0.1/targets/x86/64/latest.img.gz
 ```
 
-Il est ensuite impératif de connaître le dossier désignant les partitions de votre clé USB.
+Identifiez le dossier désignant les partitions de votre clé USB.
 
 - Branchez la clé USB puis entrez la commande suivante :
 
@@ -70,7 +73,7 @@ Maintenant que vous connaissez l'emplacement de votre clé USB, vous pouvez flas
 gunzip -c latest.img.gz | dd of=/dev/diskX
 ```
 
-Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minutes**.
+Patientez le temps de l'exécution, **cela peut durer plusieurs minutes**.
 
 > [!success]
 >
@@ -79,7 +82,7 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 
 #### Création d'une clé USB bootable sous Linux
 
-Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Terminal**.
+Toute l'opération se faisant en ligne de commande, ouvrez le **Terminal**.
 
 - Téléchargez la dernière image **OverTheBox** sur votre ordinateur, grâce à la commande suivante :
 
@@ -87,7 +90,7 @@ Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Termi
 wget http://downloads.overthebox.net/stable/v5.0.1/targets/x86/64/latest.img.gz
 ```
 
-Il est ensuite impératif de connaitre le dossier désignant les partitions de votre clé USB.
+Identifiez le dossier désignant les partitions de votre clé USB.
 
 - Branchez la clé USB puis tapez la commande suivante :
 
@@ -105,7 +108,7 @@ Maintenant que vous connaissez l'emplacement de votre clé USB, vous pouvez flas
 gunzip -c latest.img.gz | dd of=/dev/sdX
 ```
 
-Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minutes**.
+Patientez le temps de l’exécution, **cela peut durer plusieurs minutes**.
 
 > [!success]
 >
@@ -114,8 +117,8 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 
 #### Utilisation de la clé USB bootable
 
-- Débranchez l'**OverTheBox** du courant électrique.
-- Branchez la clé USB bootable sur un des ports USB de l'**OverTheBox**.
+- Débranchez l'**OverTheBox** du courant électrique
+- Branchez la clé USB bootable sur un des ports USB de l'**OverTheBox**
 
 Dans le cas de l'OverTheBox Intel, la clé USB doit être branchée sur un des ports USB **au dos** de l'appareil.
 
@@ -133,16 +136,16 @@ Dans le cas d'une OverTheBox IT v2, la clé USB doit être branchée sur un des 
 
 ![overthebox](images/manual_install-method1-3_OTBv2c.png){.thumbnail}
 
-- Branchez l'**OverTheBox** sur le courant électrique, le boitier commence sa réinitialisation.
-- Dans le cas de l'OverTheBox Intel, attendez que le **voyant de façade Power** soit éteint (cela peut prendre quelque minutes).
-- Dans le cas de l'OverTheBox IT v1, attendez que le **voyant de façade Power** s'éteigne puis se rallume automatiquement (cela peut prendre quelque minutes).
-- Dans le cas de l'OverTheBox Plus, attendez que le **voyant de façade Power** s'éteigne puis se rallume automatiquement (cela peut prendre quelque minutes).
-- Dans le cas de l'OverTheBox IT v2, attendez que le **voyant de façade Power** s'éteigne puis se rallume automatiquement (cela peut prendre quelque minutes).
-- Débranchez la clé USB puis redémarrez votre **OverTheBox** .
+- Branchez l'**OverTheBox** sur le courant électrique. Le boîtier commence sa réinitialisation
+- Dans le cas de l'OverTheBox Intel, attendez que le **voyant de façade Power** soit éteint (cela peut prendre plusieurs minutes).
+- Dans le cas de l'OverTheBox IT v1, attendez que le **voyant de façade Power** s'éteigne puis se rallume automatiquement (cela peut prendre plusieurs minutes).
+- Dans le cas de l'OverTheBox Plus, attendez que le **voyant de façade Power** s'éteigne puis se rallume automatiquement (cela peut prendre plusieurs minutes).
+- Dans le cas de l'OverTheBox IT v2, attendez que le **voyant de façade Power** s'éteigne puis se rallume automatiquement (cela peut prendre plusieurs minutes).
+- Débranchez la clé USB puis redémarrez votre **OverTheBox**.
 
 > [!success]
 >
-> Votre OvertheBox est maintenant opérationelle, vous pouvez l'installer en suivant la procédure décrite dans les guides suivants :
+> Votre OvertheBox est maintenant opérationelle. Vous pouvez l'installer en suivant la procédure décrite dans les guides suivants :
 >
 > [Installation OverTheBox Intel ou IT v1](/pages/web_cloud/internet/overthebox/intel_itv1_installation)
 >
@@ -177,7 +180,7 @@ major minor  #blocks  name
 
 Dans cet exemple, on identifie que la destination d'installation sera **mmcblk0**.
 
-#### Téléchargez l'image OverTheBox
+#### Télécharger l'image OverTheBox
 
 La page suivante liste les images d'**OverTheBox** compilées : [http://downloads.overthebox.net/stable/](http://downloads.overthebox.net/stable/){.external}
 
@@ -187,20 +190,20 @@ wget http://downloads.overthebox.net/stable/v5.0.1/targets/x86/64/latest.img.gz
 
 #### Installation
 
-Décompressez l'image téléchargée et écrivez)la sur le disque grâce à l'utilitaire **dd**.
+Décompressez l'image téléchargée et écrivez-la sur le disque grâce à l'utilitaire **dd**.
 
 ```bash
 gunzip latest.img.gz
 sudo dd if=latest.img of=/dev/mmcxxx
 ```
 
-Vous devez remplacer **mmcxxx**  par votre destination d'installation.
+Vous devez remplacer **mmcxxx par votre destination d'installation.
 
 Retirez maintenant votre « live usb » et redémarrez votre matériel.
 
 > [!success]
 >
-> Votre matériel est maintenant opérationel, vous pouvez l'installer en suivant la procédure décrite dans les guides suivants :
+> Votre matériel est maintenant opérationel. Vous pouvez l'installer en suivant la procédure décrite dans les guides suivants :
 >
 > - Sur une machine avec 1 seul port ethernet : [Installation OverTheBox Intel ou IT v1](/pages/web_cloud/internet/overthebox/intel_itv1_installation).
 > - Sur une machine avec plus d'un port ethernet : [Installation OverTheBox Plus ou IT v2](/pages/web_cloud/internet/overthebox/plus_itv2_installation).
@@ -208,4 +211,5 @@ Retirez maintenant votre « live usb » et redémarrez votre matériel.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+- N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)
+- Consultez la [FAQ OverTheBox](/pages/web_cloud/internet/overthebox/install_faq)

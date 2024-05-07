@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funcionalidades, capacidades e limites
 excerpt: Descubra as funcionalidades, capacidades e limites atuais das instâncias Local Zones
-updated: 2024-03-04
+updated: 2024-04-08
 ---
 
 > [!primary]
@@ -28,10 +28,15 @@ Encontre mais informações na nossa [página dedicada às instâncias Local Zon
 | Suporte IPv4 Público | Sim |
 | Boot/Start | Sim |
 | Stop | Sim |
+| Block Storage | Sim |
+| Backups das instâncias | Não |
+| Snapshots de volumes| Não |
+| Backups de volumes | Não |
+| Object Storage | Não |
 
 ## Capacidades e limitações
 
-Todas as funcionalidades das instâncias que não estão listadas aqui, como o reboot das instâncias, o suporte de Block ou Object Storage estarão disponíveis nos próximos meses. O nosso objetivo consiste em apoiar todas as funcionalidades já suportadas nas regiões globais.
+Todas as funcionalidades das instâncias que não estão listadas aqui, como o reboot das instâncias, o suporte de Object Storage estarão disponíveis nos próximos meses. O nosso objetivo consiste em apoiar todas as funcionalidades já suportadas nas regiões globais.
 
 ## Feedback
 

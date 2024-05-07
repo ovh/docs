@@ -22,8 +22,8 @@ Questa guida ti mostra le operazioni da effettuare quando il tuo database condiv
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Disporre di una [offerta di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) con un database condiviso OVHcloud associato
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di una [offerta di hosting Web OVHcloud](/links/web/hosting) con un database condiviso OVHcloud associato
   
 ## Procedura
 
@@ -31,7 +31,7 @@ Questa guida ti mostra le operazioni da effettuare quando il tuo database condiv
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 Quando il database condiviso OVHcloud raggiunge la saturazione (**overquota**), i nostri robot ti avvertono via email all'indirizzo del [contatto "amministratore"](/pages/account_and_service_management/account_information/managing_contacts) del database. 
@@ -58,7 +58,7 @@ Il primo step consiste nell'identificare le tavole voluminose presenti nel tuo d
 
 Recupera le informazioni di accesso al database direttamente nel file di configurazione del tuo sito Web. Per effettuare questa operazione, utilizza lo step 1** della nostra guida su [modificare la password di un database](/pages/web_cloud/web_hosting/sql_change_password).
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione in alto a sinistra. Clicca su `Hosting`{.action} e seleziona l'hosting Web associato al database condiviso OVHcloud. e clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action} nella barra di navigazione in alto a sinistra. Clicca su `Hosting`{.action} e seleziona l'hosting Web associato al database condiviso OVHcloud. e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database disponibili nella parte inferiore dello schermo.
 
@@ -78,7 +78,7 @@ Inserisci le informazioni di accesso al database e clicca su `Connetti`{.action}
 >
 > Da questo momento, potrete intervenire direttamente sul contenuto del vostro database. Le operazioni eseguite in phpMyAdmin possono avere conseguenze irreversibili se non vengono eseguite correttamente.
 >
-> Assicurati di aver effettuato le operazioni necessarie. In caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti assistenza sul contenuto del database.
+> Assicurati di aver effettuato le operazioni necessarie. In caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](/links/partner). OVHcloud non potrà fornirti assistenza sul contenuto del database.
 >
 
 Una volta connesso, visualizzi questa pagina:
@@ -133,9 +133,9 @@ Consulta la nostra offerta di database [Web Cloud Databasess](https://www.ovh.it
 
 Consigliamo questa offerta per database voluminosi.
 
-È possibile duplicare il contenuto del database OVHcloud direttamente verso un altro database grazie a una funzionalità disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Per farlo, consulta la nostra guida "[Duplicare il contenuto di un database in un altro](/pages/web_cloud/web_hosting/copy_database)".
+È possibile duplicare il contenuto del database OVHcloud direttamente verso un altro database grazie a una funzionalità disponibile nello [Spazio Cliente OVHcloud](/links/manager). Per farlo, consulta la nostra guida "[Duplicare il contenuto di un database in un altro](/pages/web_cloud/web_hosting/copy_database)".
 
-In caso di migrazione verso un database esterno alle offerte [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/), è possibile spostare manualmente il contenuto del vecchio database verso un nuovo database utilizzando le nostre guide:
+In caso di migrazione verso un database esterno alle offerte [Start SQL](/links/web/hosting-options-startsql) e [Web Cloud Databases](/links/web/databases), è possibile spostare manualmente il contenuto del vecchio database verso un nuovo database utilizzando le nostre guide:
 
 - [Esporta il tuo database esistente](/pages/web_cloud/web_hosting/sql_database_export)
 - [Iniziare a utilizzare l'offerta Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -153,7 +153,7 @@ Prima di effettuare questa operazione, verifica che i dati contenuti nella tabel
 
 > [!alert]
 >
-> Questa guida ti mostra come eliminare i dati presenti nel tuo database. In caso di dubbi, assicurati di aver consultato uno [specialista del settore](https://partner.ovhcloud.com/it/directory/).
+> Questa guida ti mostra come eliminare i dati presenti nel tuo database. In caso di dubbi, assicurati di aver consultato uno [specialista del settore](/links/partner).
 >
 
 I database condivisi OVHcloud dispongono di diversi comandi SQL per agire sul loro contenuto.
@@ -204,8 +204,8 @@ DROP TABLE `table_1`
 
 [Duplicare il contenuto di un database in un altro](/pages/web_cloud/web_hosting/copy_database)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
