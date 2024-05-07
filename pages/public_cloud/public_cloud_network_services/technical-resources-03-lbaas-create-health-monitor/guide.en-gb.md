@@ -1,7 +1,7 @@
 ---
 title: How to create and manage a Health Monitor for OVHcloud Public Cloud Load Balancer
 excerpt: Master the setup and management of a Health Monitor with OVHCloud Public Cloud Load Balancers via the OVHcloud interface, CLI, Horizon, and Terraform
-updated: 2024-05-06
+updated: 2024-05-07
 ---
 
 ## Objective
@@ -75,7 +75,6 @@ When configuring Health Monitors for web applications, keep the following tips i
 #### Monitoring and Testing
 
 - **Validation**: Test your configuration by simulating server failures to ensure that the Health Monitor responds as expected.
-
 - **Monitoring**: Use OVHcloud monitoring tools to track the performance and health status of your Load Balancer and adjust the configuration as needed. See [Public Cloud Load Balancer monitoring with Prometheus](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
 
 By integrating these best practices into your configuration process, you maximize the availability and performance of your hosted applications, while ensuring an optimal user experience.
@@ -92,16 +91,14 @@ To maintain optimal performance, it is recommended to:
 
 Depending on the interface chosen, here are the steps to follow:
 
-#### Configuring a Health Monitor via the OVHcloud Control Panel
-
-**Setting up a Health Monitor on OVHcloud Load Balancer**
+#### OVHcloud Control Panel
 
 Follow these steps to add a Health Monitor to a pool of your OVHcloud Load Balancer, which will monitor the health status of the servers in the pool:
 
-1\. Log in to the [OVHcloud Control Panel](/links/manager).
-2\. Navigate to the `Public Cloud`{.action} section and select your project.
-3\. Click on `Load Balancer`{.action} in the left menu and select the Load Balancer you want to configure.
-4\. Go to the `Pools`{.action} tab, then click on the Pool for which you want to create a Health Monitor.
+1. Log in to the [OVHcloud Control Panel](/links/manager).
+2. Navigate to the `Public Cloud`{.action} section and select your project.
+3. Click on `Load Balancer`{.action} in the left menu and select the Load Balancer you want to configure.
+4. Go to the `Pools`{.action} tab, then click on the Pool for which you want to create a Health Monitor.
 
 ![Schema 1](images/healthM1.png){.thumbnail}
 
@@ -110,18 +107,18 @@ Follow these steps to add a Health Monitor to a pool of your OVHcloud Load Balan
 ![Schema 1](images/healthM2.png){.thumbnail}
 
 - **General Information**:
-  - **Name**: Must contain only letters, numbers, underscores (`_`), dashes (`-`), or dots (`.`).
-  - **Type**: Select the type of Health Monitor (e.g. HTTP, HTTPS, TCP, TLS-hello).
+    - **Name**: Must contain only letters, numbers, underscores (`_`), dashes (`-`), or dots (`.`).
+    - **Type**: Select the type of Health Monitor (e.g. HTTP, HTTPS, TCP, TLS-hello).
 
 - For **HTTP** and **HTTPS** types:
   - **URL PATH**: Specify the path used for the test.
   - **Expected Code**: Indicate the expected HTTP status codes, which can be a single digit, a list of digits separated by commas, or a range (two digits separated by a hyphen).
 
 - **Test Settings**:
-  - **Max Retries Down**: Number of connection failures allowed before marking the member as failing (between 1 and 10, default 3).
-  - **Delay**: Interval between two tests of the Health Monitor (must be greater than the timeout).
-  - **Max Retries**: Total number of connection failures allowed before marking the member as inactive (between 1 and 10).
-  - **Timeout**: Duration after which a test stops (must be equal to or greater than the periodicity).
+    - **Max Retries Down**: Number of connection failures allowed before marking the member as failing (between 1 and 10, default 3).
+    - **Delay**: Interval between two tests of the Health Monitor (must be greater than the timeout).
+    - **Max Retries**: Total number of connection failures allowed before marking the member as inactive (between 1 and 10).
+    - **Timeout**: Duration after which a test stops (must be equal to or greater than the periodicity).
 
 6\. Once all the information is filled in, click on `Add`{.action} to activate your Health Monitor.
 
@@ -131,8 +128,8 @@ This process creates a Health Monitor that will regularly perform health checks 
 
 #### CLI (OpenStack)
 
-1\. Ensure the OpenStack CLI tool is installed and configured on your machine.
-2\. Use the following command to create a Health Monitor:
+1. Ensure the OpenStack CLI tool is installed and configured on your machine.
+2. Use the following command to create a Health Monitor:
 
 ```bash
 openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 3 --type HTTP --http-method GET --url-path /healthcheck --expected-codes 200 <POOL_ID>
@@ -151,13 +148,15 @@ openstack loadbalancer healthmonitor list
 There are two ways to access the Horizon interface:
 
 - To log in with OVHcloud Single Sign-On: Use the `Horizon`{.action} link in the left-hand menu under "Management Interfaces" after opening your `Public Cloud`{.action} project in the [OVHcloud Control Panel](/links/manager).
-
 - To log in with a specific OpenStack user: Open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](/pages/public_cloud/compute/create_and_delete_a_user) previously created, then click on `Connect`{.action}.
 
-1. In the left menu, click on the `Network`{.action} tab and select `Load Balancers`{.action}.
-2. Choose the Load Balancer you want to configure and click on the `Health Monitors`{.action} tab.
-3. Click on `Create Health Monitor`{.action} and fill in the required fields such as `type`, `check interval`, `maximum retry count`, and `timeout`.
-4. Confirm the creation by clicking on `Create`{.action}.
+In the left menu, click on the `Network`{.action} tab and select `Load Balancers`{.action}.
+
+Choose the Load Balancer you want to configure and click on the `Health Monitors`{.action} tab.
+
+Click on `Create Health Monitor`{.action} and fill in the required fields such as `type`, `check interval`, `maximum retry count`, and `timeout`.
+
+Confirm the creation by clicking on `Create`{.action}.
 
 #### Terraform
 
@@ -192,5 +191,5 @@ After running `terraform apply`, Terraform will provide you with a summary of th
 Each method offers specific advantages depending on your familiarity with the tools and your working environment. The choice of interface depends on your personal preferences and the technical requirements of your project.
 
 ## Go further
- 
+
 Join our community of users on <https://community.ovh.com/en/>.
