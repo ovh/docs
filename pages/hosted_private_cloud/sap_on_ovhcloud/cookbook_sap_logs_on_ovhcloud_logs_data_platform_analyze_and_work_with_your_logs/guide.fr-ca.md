@@ -91,13 +91,13 @@ Dans OpenSearch Dashboards, vous avez la possibilité de sauvegarder des recherc
 
 ![queries](images/queries.png){.thumbnail}
 
-### Utilisez les dashboards importés
+### Utiliser les dashboards importés
 
 Suite à l'importation de vos dashboards ou des dashboards d'OVHcloud, l'onglet Dashboards regroupe l'ensemble des dashboards disponibles au sein de votre solution OpenSearch Dashboards.
 
 ![dashboards_menu](images/dashboards_menu.png){.thumbnail}
 
-Les dashboards SAP OVHcloud vous offre la possibilité de filtrer sur un SID SAP et/ou sur un serveur en particulier.
+Les dashboards SAP OVHcloud vous offrent la possibilité de filtrer sur un SID SAP et/ou sur un serveur en particulier.
 
 ![dashboard](images/dashboard.png){.thumbnail}
 
@@ -111,7 +111,7 @@ Après chaque changement dans le fichier de configuration, il est nécessaire de
 
 Si vous avez choisi d'archiver vos logs lors de la configuration de votre data stream, vous pouvez les récupérer en suivant les instructions de notre [documentation](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage#retrieving-the-archives).
 
-Une fois que vous avez obtenu vos logs archivés, vous pouvez les utiliser à l'aide de votre éditeur de texte, ils seront présentés dans un format GELF / JSON, avec tous les champs comme indiqué sur la plateforme Graylog.
+Une fois que vous avez obtenu vos logs archivés, vous pouvez les utiliser à l'aide de votre éditeur de texte, ils seront présentés dans un format GELF / JSON, avec tous les champs comme indiqués sur la plateforme Graylog.
 
 Les données étant au format JSON, vous pouvez également envoyer vos logs sur une plateforme d'analyse Big Data.
 
