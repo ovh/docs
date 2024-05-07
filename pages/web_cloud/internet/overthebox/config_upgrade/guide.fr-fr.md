@@ -1,136 +1,129 @@
 ---
-title: 'Comment mettre à jour OverTheBox ?'
-excerpt: 'Découvrez comment mettre à jour votre équipement OverTheBox'
-updated: 2023-11-21
+title: 'Comment mettre à jour un appareil OverTheBox'
+excerpt: 'Découvrez comment mettre à jour votre appareil OverTheBox'
+updated: 2024-05-07
 ---
 
 ## Objectif
 
-Découvrez comment mettre à jour votre équipement OverTheBox, afin de profiter des dernières améliorations apportées sur cette solution.
+Découvrez comment mettre à jour votre appareil OverTheBox, afin de profiter des dernières améliorations apportées sur cette solution.
 
 ## Prérequis
 
-- Disposer d'une **OverTheBox** fournie par OVHcloud.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr)
-dans la partie `Telecom`{.action}.
+- Disposer d'un service **OverTheBox** fourni par OVHcloud.
+- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Telecom`{.action}.
 
 ## En pratique
 
-### Mettre à jour votre OverTheBox
+La méthode recommandée est de mettre à jour votre appareil OverTheBox depuis l'espace client OVHcloud.
 
-Il existe plusieurs méthodes pour mettre à jour votre équipement OverThebox.
+### Consulter la version de son appareil
 
-#### Méthode n°1 : mise à jour par l'espace client
+L'OverTheBox est un projet open-source hébergé sur la plateforme GitHub. Le code est librement accessible et vous permet de consulter concrètement ce qui change entre chaque version.
+La version d'un appareil est au format [semver](https://semver.org/lang/fr/), vous pouvez consulter la version actuellement installée sur votre appareil depuis l'espace client.
 
-La méthode recommandée est de mettre à jour votre OverTheBox depuis l'espace client OVHcloud.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr), partie `Telecom`{.action}.
+Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
+
+Le champ `Version du matériel` indique la version actuellement installée sur votre appareil. Elle est basée sur les tags du [dépôt git overthebox](https://github.com/ovh/overthebox/tags){.external}.
+
+![overthebox](images/manager-version-2024.png){.thumbnail}
+
+### Vérifier si une mise à jour est disponible
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
+
+Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
+
+Si une mise à jour est disponible, une bannière s'affiche comme sur l'image ci-dessous.
+
+![overthebox](images/manager-available-2024.png){.thumbnail}
+
+### Mise à jour via l'espace client
+
+> [!warning]
+>
+> Cette action n'est possible que si votre appareil contacte notre serveur de provisionning. Si ce n'est pas le cas, vous devez effectuer une [installation manuelle](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel).
+>
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
 
 Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
 
 Cliquez ensuite sur le bouton `Mettre à jour`{.action}, puis cliquez une seconde fois sur l'encart explicatif, la mise à jour commencera alors.
 
-![overthebox](images/upgrade-step1-2022.png){.thumbnail}
+![overthebox](images/manager-upgrade-2024.png){.thumbnail}
 
-Attendez quelques minutes afin que l'**OverTheBox** soit de nouveau opérationnelle.
-
-> [!success]
->
-> Votre  OvertheBox  est maintenant mise à jour, votre configuration a été réappliquée automatiquement.
->
-
-#### Méthode n°2 : mise à jour par l'interface web locale
-
-Vous pouvez mettre à jour votre équipement OverTheBox depuis l'interface web locale.
-
-- Téléchargez la dernière image sur votre ordinateur : [http://downloads.overthebox.net/stable/v5.0.1/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/v5.0.1/targets/x86/64/latest.img.gz){.external}.
-- Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}.
-- Cliquez sur `System`{.action}.
-- Cliquez sur `Backup/Flash Firmware`{.action}.
-
-![overthebox](images/upgrade-method2-1.png){.thumbnail}
-
-Ensuite, dans la section **Flash new firmware image** :
-
-- Cliquez sur `Parcourir`{.action}.
-- Choisissez le fichier image que vous venez de télécharger.
-- Laissez la case **"Keep settings"** cochée si vous souhaitez conserver vos configurations.
-- Cliquez sur `Flash image`{.action}.
-
-![overthebox](images/upgrade-method2-2.png){.thumbnail}
-
-- Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle.
+Attendez quelques minutes afin que l'appareil **OverTheBox** soit de nouveau opérationnel.
 
 > [!success]
 >
-> Votre  OvertheBox  est maintenant mise à jour, votre configuration a été réappliquée automatiquement si la case **Keep settings** n'a pas été décochée.
+> Votre appareil OvertheBox est maintenant mise à jour, votre configuration a été réappliquée automatiquement.
 >
 
-#### Méthode n°3 : mise à jour par le CLI
-
-Vous pouvez également mettre à jour votre équipement OverTheBox depuis le CLI, accessible depuis une connexion SSH.
-
-- Connectez vous en SSH à votre **OverTheBox** :
-
-```bash
-ssh root@overthebox.ovh
-```
-
-- Une fois connecté, entrez la commande suivante :
-
-```bash
-otb-action-sysupgrade
-```
-
-- Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle.
-
-> [!success]
->
-> Votre  OvertheBox  est maintenant mise à jour, votre configuration a été réappliquée automatiquement.
->
-
-#### Méthode n°4 : réinstallation manuelle
+### Modifier le canal de version
 
 > [!warning]
 >
-> Cette méthode n'est pas recommandée et n'est utile uniquement que pour certains usages avancés.
+> Pour un appareil avec un unique port ethernet RJ45 (comme un NUC Intel), seul le canal `v0.8` est compatible
 >
 
-Vous pouvez suivre le guide « [Installer l’image OverTheBox sur votre matériel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) » pour installer manuellement la dernière image du système OverTheBox.
+Par défaut, un appareil OverTheBox est sur le canal `stable` qui contient la dernière version logicielle stable. Ce canal est recommandé, vous pourrez ainsi profiter des dernières fonctionnalités.
+
+D'autre canaux sont disponibles :
+
+- Le canal `beta` permet de tester la prochaine version du logiciel avant le déploiment sur le canal `stable`.
+- Les canaux de versions, comme `v0.8`, `v0.9`, permettent de maintenir votre matériel sur une version majeure précise. Seules des mises à jour mineures, telles que des correctifs, seront proposées.
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
+
+Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez modifier.
+
+Selectionnez ensuite le canal souhaité à l'aide du menu déroulant `Versions disponibles`{.action}.
+
+![overthebox](images/manager-releaseChannel-2024.png){.thumbnail}
+
+### Désactiver les mises à jour automatiques
+
+Par défaut, un appareil OverTheBox est mis à jour automatiquement la nuit si une nouvelle version du logicielle est disponible. Vous pouvez désactiver cette fonctionnnalité depuis l'espace client.
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
+
+Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez modifier.
+
+Activez ou désactivez les mise à jour automatique à l'aide de l'interrupteur `Autoriser les mises à jour automatiques la nuit`{.action}.
+
+![overthebox](images/manager-autoupgrade-2024.png){.thumbnail}
 
 ### Voir les différences entre versions
 
 L'OverTheBox est un projet open-source hébergé sur la plateforme GitHub. Le code est librement accessible et vous permet de consulter concrètement ce qui change entre chaque version.
 
-Sur l'espace client OVHcloud, deux informations de versions vous sont présentées : **Version du matériel** et **Version du système**.
+Le code est séparé sur trois dépôts git distincts :
 
-- La **version du matériel** est la version « principale » utilisée pour déterminer la version de votre équipement OverTheBox. Elle est basée sur le dépôt [overthebox-feeds](https://github.com/ovh/overthebox-feeds/tags){.external} qui regroupe les différents logiciels utilisés par le système **OverTheBox**.
+- [overthebox-lede](https://github.com/ovh/overthebox-lede) contient les sources du système [openwrt](https://openwrt.org/) utilisé comme base pour le système d'exploitation d'OverTheBox.
+- [overthebox-feeds](https://github.com/ovh/overthebox-feeds) contient les sources des différents paquets modifiés ou ajoutés pour améliorer le logiciel d'OverTheBox.
+- [overthebox](https://github.com/ovh/overthebox) contient les sources qui permettent de construire l'image logicielle d'OverTheBox.
 
-- La **version du système** est la version du système **OverTheBox** sur lequel a été construite l'image. Elle est basée sur le dépôt [overthebox](https://github.com/ovh/overthebox/tags){.external}.
+L'ensemble des modifications est consultable ici :
 
-![overthebox](images/upgrade-more1-2022.png){.thumbnail}
-
-### Passer sur une version alpha ou beta
-
-> [!warning]
->
-> Il n'est pas recommandé de modifier la version de votre image si vous n'êtes pas un utilisateur expert.
->
-
-Vous pouvez modifier le canal de votre version via l'espace client OVHcloud, ce qui vous permet d'utiliser des versions plus récentes en status alpha ou beta. Ce sont des versions fonctionnelles qui seront, à terme, déployées sur le canal stable.
-
-![overthebox](images/upgrade-more2-2022.png){.thumbnail}
-
-### Installer la version Raspberry Pi
-
-> [!warning]
->
-> Seul les équipements Raspberry Pi 3 sont actuellement supportés.
->
-
-Dans un premier temps, il vous faut installer manuellement [la dernière image disponible](http://downloads.overthebox.net/stable/v5.0.1/targets/brcm2708/bcm2710/latest.img.gz){.external}.
-Une fois l'image installée et votre service OverTheBox configuré, votre Raspberry Pi se comportera comme une OverTheBox standard. Il vous sera également possible de modifier le canal de version si vous souhaitez utiliser les canaux alpha et beta.
+- [Changelog en Anglais](https://github.com/ovh/overthebox/releases).
+- [Changelog en Français](https://github.com/ovh/overthebox/blob/master/CHANGELOG_fr.md).
 
 ## Aller plus loin
+
+### Matrice des versions
+
+| Canal | OverTheBox | OpenWRT | Linux | MPTCP | Compatibilité du matériel |
+| ---  | :---: | :---: | :---: | :---: | ---: |
+| v0.8 | v0.8.1 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3, v2b, v2c |
+| v0.9 | v0.9.3 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
+| stable | v0.8.1 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3, v2b, v2c |
+| beta | v0.9.3 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
+
+### Installer manuellement une image
+
+Vous pouvez suivre le guide « [Installer l’image OverTheBox sur votre matériel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) » pour installer manuellement la dernière image du système OverTheBox.
 
 N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)
