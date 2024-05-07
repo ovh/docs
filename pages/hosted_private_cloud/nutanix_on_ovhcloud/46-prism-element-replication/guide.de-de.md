@@ -1,7 +1,7 @@
 ---
 title: Asynchrone oder NearSync-Replikation mit Prism Element (EN)
 excerpt: How to set up asynchronous or NearSync replication through Prism Element
-updated: 2024-04-19
+updated: 2024-05-13
 ---
 
 ## Objective
@@ -23,9 +23,9 @@ Via **Prism Element**, you can:
 
 > [!warning]
 > 
-> The **Nutanix Standard** OVHcloud pack allows you to use asynchronous replicas **every hour**.
+> The **Starter** pack of the Nutanix on OVHcloud packaged service allows you to use asynchronous replicas **every hour**.
 >
-> For a shorter replication time between 1 and 15 minutes, you must configure NearSync replicas. This option is only available with the **Nutanix Advanced** OVHcloud pack.
+> For a shorter replication time between 1 and 15 minutes, you must configure NearSync replicas. This option is only available with the **Pro** or **Ultimate** OVHcloud packs.
 > 
 
 ## Requirements
@@ -170,13 +170,13 @@ Click `Create Schedule`{.action} to commit the schedule.
 
 ![03 Create dataprotection 08](images/03-create-dataprotection08.png){.thumbnail}
 
-The replication task is created to run hourly. This will be asynchronous replication, which can be used with the OVHcloud **Nutanix Standard** pack. 
+The replication task is created to run hourly. This will be asynchronous replication, which can be used with the OVHcloud **Starter** pack. 
 
 Click `Close`{.action} to close the window.
 
 > [!primary]
 > 
-> You can change the schedule to reduce the risk of data loss in the event of a disaster, but replication will switch from asynchronous to *NearSync* mode, and you will then need to upgrade your licence to the OVHcloud **Nutanix Advanced** pack.
+> You can change the schedule to reduce the risk of data loss in the event of a disaster, but replication will switch from asynchronous to *NearSync* mode, and you will then need to upgrade your licence to the OVHcloud **Pro** or **Ultimate** packs.
 
 ![03 Create dataprotection 09](images/03-create-dataprotection09.png){.thumbnail}
 

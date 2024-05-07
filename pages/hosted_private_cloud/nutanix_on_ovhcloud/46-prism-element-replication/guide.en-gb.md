@@ -1,7 +1,7 @@
 ---
 title: Asynchronous or NearSync replication through Prism Element
 excerpt: How to set up asynchronous or NearSync replication through Prism Element
-updated: 2024-04-19
+updated: 2024-05-13
 ---
 
 ## Objective

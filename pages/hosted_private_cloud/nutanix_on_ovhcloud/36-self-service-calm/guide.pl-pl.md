@@ -1,7 +1,7 @@
 ---
 title: Uruchomienie NCM Self Service (CALM) (EN)
 excerpt: 'How to enable Self Service (CALM) in your Prism Central'  
-updated: 2024-04-19
+updated: 2024-05-13
 ---
 
 ## Objectif
