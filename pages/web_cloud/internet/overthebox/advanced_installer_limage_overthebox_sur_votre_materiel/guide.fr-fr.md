@@ -17,9 +17,9 @@ Installer l'image OverTheBox sur votre propre matériel est une étape cruciale 
 
 ## En pratique
 
-### Téléchargee la dernière image du logiciel OverTheBox
+### Télécharger la dernière image du logiciel OverTheBox
 
-Pour installer manuellement le logiciel OverTheBox, vous devez téléchargez l'image sur votre ordinateur.
+Pour installer manuellement le logiciel OverTheBox, vous devez télécharger l'image sur votre ordinateur.
 
 - Pour un appareil avec un unique port ethernet RJ45 (comme un NUC Intel), seule la version [v0.8](http://downloads.overthebox.net/v0.8/targets/x86/64/latest.img.gz) est compatible.
 - Pour un appareil de type **Raspberry Pi 3**, seule [cette image](http://downloads.overthebox.net/v0.8/targets/brcm2708/bcm2710/latest.img.gz) est compatible.
