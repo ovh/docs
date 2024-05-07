@@ -288,7 +288,7 @@ Your logs are now sent to the Logs Data Platform and displayed on your data stre
 
 You can receive email notifications when specific patterns or threshold values are detected in your SAP logs.
 
-You can create an alert with our documentation [Configuring an Field Aggregation alert condition](/pages/manage_and_operate/observability/logs_data_platform/alerting_stream#configuring-an-field-aggregation-alert-condition).
+You can create an alert with our documentation [Configuring a Field Aggregation alert condition](/pages/manage_and_operate/observability/logs_data_platform/alerting_stream#configuring-an-field-aggregation-alert-condition).
 
 Upon choosing the appropriate alert type for your requirements, we provide some example of alerts:
 

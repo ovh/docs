@@ -19,7 +19,7 @@ Ce guide vous fournit les instructions pour configurer SAP logs on OVHcloud Logs
 
 ### Logs Data Platform
 
-OVHcloud Logs Data Platform est un service qui traite les logs générés par vos infrastructures et applications, dans le but de les classifier et de les afficher en temps réel dans des dashboards. Pour plus d'information, vous pouvez vous référer à notre [documentation](/pages/manage_and_operate/observability/logs_data_platform).
+OVHcloud Logs Data Platform est un service qui traite les logs générés par vos infrastructures et applications, dans le but de les classifier et de les afficher en temps réel dans des dashboards. Pour plus d'informations, vous pouvez vous référer à notre [documentation](/pages/manage_and_operate/observability/logs_data_platform).
 
 OVHcloud fournit les ressources (formatage des logs SAP, dashboards et recherches) afin d'apporter une solution complète au service OVHcloud Logs Data Platform pour vos applications SAP.
 
@@ -61,7 +61,7 @@ Veuillez suivre le chapitre « Host a logstash collector on Logs Data Platform �
 
 > [!primary]
 >
-> Chaque instance possède des capacités limitées pour gérer les logs en provenance de vos serveurs et de vos applications. Dans un contexte SAP, nous vous recommandons d'activer la mise à l'échelle automatique et de paramétrer le nombre minimum d'instance à 2.
+> Chaque instance possède des capacités limitées pour gérer les logs en provenance de vos serveurs et de vos applications. Dans un contexte SAP, nous vous recommandons d'activer la mise à l'échelle automatique et de paramétrer le nombre minimum d'instances à 2.
 >
 
 La fonctionnalité SAP logs on OVHcloud Logs Data Platform fournit une configuration Logstash permettant de filtrer et de traiter vos logs provenant d'un serveur SAP Central Services, d'un serveur d'application SAP, d'une base de données SAP HANA, d'un SAProuter ou d'un SAP WebDispatcher.
@@ -81,14 +81,14 @@ Ces informations seront nécessaire pour la configuration de votre service rsysl
 
 > [!primary]
 >
-> Cette section doit être répétée sur chaque serveur sur lesquels vous souhaitez transférer les logs vers Logs Data Platform.
+> Cette section doit être répétée sur chaque serveur sur lequel vous souhaitez transférer les logs vers Logs Data Platform.
 >
 > Si vous utilisez notre [template SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_hana_template_vmware), veuillez noter que cette configuration peut être réalisée durant le déploiement du template.
 >
 
 #### Paquets
 
-Veuillez vous assurez que les paquets rsyslog (>=8.23.0) et rsyslog-module-gtls (>=8.2108) sont présents sur vos serveurs.
+Veuillez vous assurer que les paquets rsyslog (>=8.23.0) et rsyslog-module-gtls (>=8.2108) sont présents sur vos serveurs.
 
 ```bash
 $ rpm -qa rsyslog
@@ -98,7 +98,7 @@ $ rpm -qa rsyslog-module-gtls
 rsyslog-module-gtls-8.2306.0-150400.5.27.1.x86_64
 ```
 
-Si la version est inférieure à celle requise, veuillez mettre à jour votre système d'exploitation. Si le message de sortie est vide, cela signifie que que le paquet n'est pas présent sur votre système d'exploitation et que vous devez l'installer.
+Si la version est inférieure à celle requise, veuillez mettre à jour votre système d'exploitation. Si le message de sortie est vide, cela signifie que le paquet n'est pas présent sur votre système d'exploitation et que vous devez l'installer.
 
 - SLES
 
@@ -114,7 +114,7 @@ yum install rsyslog rsyslog-module-gtls
 
 #### Installation
 
-OVHcloud fournit de nombreux fichiers de configuration rsyslog disponibles sur notre [repository GitHub](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform). Ces fichiers sont nécessaire afin de gérer correctement les logs d'un système SAP.
+OVHcloud fournit de nombreux fichiers de configuration rsyslog disponibles sur notre [repository GitHub](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform). Ces fichiers sont nécessaires afin de gérer correctement les logs d'un système SAP.
 
 Afin de faciliter le déploiement de ces configurations rsyslog, deux solutions sont disponibles sur notre GitHub. La première est un script bash lançant la configuration en fonction des paramètres fournis. La seconde est un playbook Ansible pour lancer la configuration sur plusieurs serveurs en même temps.
 
@@ -134,7 +134,7 @@ De nombreuses options sont disponibles pour configurer rsyslog avec nos automati
 
 #### Terminal
 
-- Un déploiement minimal ne nécessite que l'hôte d'OVHcloud Logs Data Platform et la localisation du certificat:
+- Un déploiement minimal ne nécessite que l'hôte d'OVHcloud Logs Data Platform et la localisation du certificat :
 
 ```bash
 ./start.sh \
@@ -142,7 +142,7 @@ De nombreuses options sont disponibles pour configurer rsyslog avec nos automati
 --ldp-ca-file-path /etc/rsyslog.d/logstash.crt
 ```
 
-- Un déploiement en paramétrant le software stack afin de laisser le script découvrir l'environnement SAP:
+- Un déploiement en paramétrant le software stack afin de laisser le script découvrir l'environnement SAP :
 
 ```bash
 ./start.sh --software-stack S4 \
@@ -150,7 +150,7 @@ De nombreuses options sont disponibles pour configurer rsyslog avec nos automati
 --ldp-ca-file-path /etc/rsyslog.d/logstash.crt
 ```
 
-- Un déploiement en paramétrant le SID SAP:
+- Un déploiement en paramétrant le SID SAP :
 
 ```bash
 ./start.sh --software-stack NW \
@@ -159,7 +159,7 @@ De nombreuses options sont disponibles pour configurer rsyslog avec nos automati
 --ldp-ca-file-path /etc/rsyslog.d/logstash.crt
 ```
 
-- Un déploiement en paramétrant les logs d'audit SAP HANA sur un data stream spécifique:
+- Un déploiement en paramétrant les logs d'audit SAP HANA sur un data stream spécifique :
 
 ```bash
 ./start.sh --software-stack HANA \
@@ -171,7 +171,7 @@ De nombreuses options sont disponibles pour configurer rsyslog avec nos automati
 --audit-ldp-ca-file-path /etc/rsyslog.d/audit-logstash.crt \
 ```
 
-- Un déploiement en paramétrant la collecte des logs d'audit SAP ABAP:
+- Un déploiement en paramétrant la collecte des logs d'audit SAP ABAP :
 
 *La fonctionnalité SAP logs on OVHcloud Logs Data Platform fournit la possibilité de traiter les logs d'audit ABAP avec le paramètre `--collect-sal`. Plus d'information dans le chapitre [SAP AS ABAP Security Audit Log](#sap-as-abap-security-audit-log).*
 
@@ -213,9 +213,9 @@ OVHcloud fournit un playbook Ansible pour déployer la configuration rsyslog.
 
 SAP fournit la possibilité d'enregistrer tous les évènements liés à la sécurité d'un système SAP avec la fonctionnalité Security Audit Log.
 
-En l'activant, toutes les activités que vous aurez spécifiées seront enregistrées dans un log d'audit localisé dans `/usr/sap/<SID>/D<NI>/log/audit_YYYYMMDD` pour la version NetWeaver 7.50. Veuillez notez que le service OVHcloud n'accepte que les fichiers journalisers ayant pour nom audit_YYYYDDMM.
+En l'activant, toutes les activités que vous aurez spécifiées seront enregistrées dans un log d'audit localisé dans `/usr/sap/<SID>/D<NI>/log/audit_YYYYMMDD` pour la version NetWeaver 7.50. Veuillez noter que le service OVHcloud n'accepte que les fichiers journalisés ayant pour nom audit_YYYYDDMM.
 
-Pour les versions SAP S/4HANA, l'approche classique doit être configurée. Un seul fichier par jour doit être généré, l'option `protection format active`{.action} doit être désactivée et le paramètre FN_AUDIT (configuré dans le profile DEFAULT.PFL) doit avoir pour valeur ++++++++.AUD, où ++++++++ est égal à YYYYDDMM. Dans le but de charger cette nouvelle configuration, un redémarrage de votre système SAP doit être réalisé.
+Pour les versions SAP S/4HANA, l'approche classique doit être configurée. Un seul fichier par jour doit être généré, l'option `protection format active`{.action} doit être désactivée et le paramètre FN_AUDIT (configuré dans le profil DEFAULT.PFL) doit avoir pour valeur ++++++++.AUD, où ++++++++ est égal à YYYYDDMM. Dans le but de charger cette nouvelle configuration, un redémarrage de votre système SAP doit être réalisé.
 
 Ces fichiers d'audit n'ayant pas une syntaxe rsyslog standard, OVHcloud a développé un service Linux dans le but d'identifier et d'envoyer ces logs à rsyslog par le biais du fichier `/var/log/messages`. Ces logs provenant du processus Security Audit Log sont identifiés avec le tag `security_audit_abap`{.action}.
 
@@ -244,12 +244,12 @@ OVHcloud fournit une collection de recherches et de dashboards, disponibles sur 
 >
 > Dans le cas où vous n'auriez qu'un seul data stream pour vos logs techniques et de sécurité, remplacez les deux mots clefs par la même valeur.
 >
-> Vous pouvez trouver cet ID dans votre instance OpenSearch Dashboards, `Stack Management`{.action}, `Index patterns`{.action}, puis sélectionnez votre alias. L'ID est affichée dans l'URL et est composé de caractère alphanumériques.
+> Vous pouvez trouver cet ID dans votre instance OpenSearch Dashboards, `Stack Management`{.action}, `Index patterns`{.action}, puis sélectionnez votre alias. L'ID est affichée dans l'URL et est composé de caractères alphanumériques.
 >
 
 Dans votre instance OpenSearch Dashboards, utilisez le panneau de gauche pour naviguer dans l'onglet `Stack Management`{.action}, puis `Saved Objects`{.action} et cliquez sur `Import`{.action} pour sélectionner le fichier précédemment téléchargé.
 
-En suivant ces étapes, vous avez à présent les objets disponibles dans le menu  `Saved Objects`{.action}.
+En suivant ces étapes, vous avez à présent les objets disponibles dans le menu `Saved Objects`{.action}.
 
 Toujours au sein de votre instance OpenSearch Dashboards, dans le menu principal, vous avez à présent deux nouveaux dashboards créés par OVHcloud. Vous avez également la possibilité d'accéder aux recherches sauvegardées en cliquant sur l'icône de sauvegarde.
 
@@ -263,7 +263,7 @@ Vos logs sont à présent transférés vers Logs Data Platform et sont visualisa
 
 Vous pouvez recevoir des notifications par e-mail quand des mots clefs sont détectés ou un seuil dépassé dans vos logs SAP.
 
-Vous pouvez retrouver les informations pour créer une alerte dans notre documentation [Configuring an Field Aggregation alert condition](/pages/manage_and_operate/observability/logs_data_platform/alerting_stream#configuring-an-field-aggregation-alert-condition).
+Vous pouvez retrouver les informations pour créer une alerte dans notre documentation [Configuring a Field Aggregation alert condition](/pages/manage_and_operate/observability/logs_data_platform/alerting_stream#configuring-an-field-aggregation-alert-condition).
 
 Ci-dessous, nous vous proposons des exemples d'alertes :
 
@@ -298,9 +298,9 @@ Par exemple, une erreur en lien avec votre hôte OVHcloud Logs Data Platform:
 cannot resolve hostname 'gra159-xxx.gra159.logs.ovh.com': Invalid argument [v8.2306.0 try https://www.rsyslog.com/e/2027]
 ```
 
-Vérifiez que les informations de votre hôte et de votre certificat sont corrects. Vous trouverez ces informations dans votre outil de collecte dans la section `Informations utiles`{.action} de ce menu.
+Vérifiez que les informations de votre hôte et de votre certificat sont correctes. Vous trouverez ces informations dans votre outil de collecte dans la section `Informations utiles`{.action} de ce menu.
 
-Parfois, le service rsyslog peut être surchargé dans le cas où un très grand nombre de message doit être envoyé. Dans la plupart des cas, il est préférable d'attendre quelques minutes que le service rsyslog traite les messages par le biais de son spool (`/var/spool/rsyslog`). Si après plusieurs minutes, vous vous apercevez que les messages sont toujours bloqués, vous pouvez alors envisager de redémarrer les services rsyslog et syslog.socket.
+Parfois, le service rsyslog peut être surchargé dans le cas où un très grand nombre de messages doit être envoyé. Dans la plupart des cas, il est préférable d'attendre quelques minutes que le service rsyslog traite les messages par le biais de son spool (`/var/spool/rsyslog`). Si après plusieurs minutes, vous vous apercevez que les messages sont toujours bloqués, vous pouvez alors envisager de redémarrer les services rsyslog et syslog.socket.
 
 ```bash
 systemctl restart rsyslog.service syslog.socket
