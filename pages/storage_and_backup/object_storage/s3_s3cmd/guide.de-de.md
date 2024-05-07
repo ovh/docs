@@ -1,7 +1,7 @@
 ---
 title: Object Storage - S3 Object Storage mit S3cmd (EN)
 excerpt: Learn how to configure S3cmd to manage your buckets and objects
-updated: 2022-01-03
+updated: 2024-05-13
 ---
 
 ## Objective

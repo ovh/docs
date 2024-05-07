@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Utiliser S3 Object Storage avec Nextcloud
 excerpt: Découvrez comment configurer le stockage dans Nextcloud pour utiliser un bucket S3 Object Storage
-updated: 2022-01-03
+updated: 2024-05-13
 ---
 
 ## Objectif
@@ -110,7 +110,7 @@ Montez votre bucket S3 sur Nextcloud comme point de montage **OVH_hp-bucket** :
 
 ```bash
 $ php occ files_external:create -c bucket=hp-bucket \
-                                -c hostname=s3.<region_in_lowercase>.perf.cloud.ovh.net \
+                                -c hostname=s3.<region_in_lowercase>.io.cloud.ovh.net \
                                 -c region=<region_in_lowercase> \
                                 -c use_ssl=true \
                                 -c use_path_style=false \
@@ -169,7 +169,7 @@ Editez votre fichier `config/config.php` et ajoutez :
                 'autocreate' => true,
                 'key'    => 'xxxxxxxxxxxxxxxxxxxx',
                 'secret' => 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy',
-                'hostname' => 's3.<region_in_lowercase>.perf.cloud.ovh.net',
+                'hostname' => 's3.<region_in_lowercase>.io.cloud.ovh.net',
                 'port' => 443,
                 'use_ssl' => true,
                 'region' => '<region_in_lowercase>',

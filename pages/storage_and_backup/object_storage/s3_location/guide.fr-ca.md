@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-03-01
+updated: 2024-05-13
 ---
 
 <style>
@@ -30,14 +30,14 @@ Le point de terminaison de bucket est une URL, par exemple `https://my-bucket.s3
 
 ### Rétrocompatibilité des points de terminaison
 
-L'ancien point de terminaison `https://s3.<region>.perf.cloud.ovh.net` sera toujours maintenu à des fins de rétrocompatibilité et toutes les opérations de l'API S3 seront toujours prises en charge. Cependant, veuillez noter que ce point de terminaison appliquera automatiquement la classe de stockage High Performance des opérations de téléchargement d'objets.
-
+L'ancien point de terminaison `https://s3.<region>.perf.cloud.ovh.net` sera toujours maintenu à des fins de rétrocompatibilité et toutes les opérations de l'API S3 seront toujours prises en charge. Cependant, veuillez noter que ce point de terminaison appliquera automatiquement la classe de stockage High Performance des opérations d'upload d'objets.
 
 ## Object Storage Swift
 
 | Solution de stockage | URL du point de terminaison | Région disponible<br><b><i>À saisir en minuscules</i></b> |
 | ----- | ----- | ----- |
 | Object Storage SWIFT - Standard - Legacy |`https://s3.<region>.cloud.ovh.net` | Strasbourg : sbg<br>Londres : uk<br>Francfort : de<br>Varsovie : waw<br>Beauharnois : bhs<br>Gravelines : gra |
+
 ## Aller plus loin
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
