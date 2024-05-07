@@ -236,7 +236,7 @@ Pour créer un OpenSearch Dashboards, veuillez prendre connaissance de notre doc
 
 #### Importer les objets OVHcloud pour SAP
 
-OVHcloud fournit une collection de recherches et de dashboards, disponibles sur notre [repository GitHub](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform). Ces objets peuvent être téléchargés et importés dans votre OpenSearch Dashboards.
+OVHcloud fournit une collection de recherches et de dashboards, disponibles sur notre [repository GitHub](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform/tree/main/opensearch). Ces objets peuvent être téléchargés et importés dans votre OpenSearch Dashboards.
 
 > [!primary]
 >
