@@ -6,13 +6,13 @@ updated: 2024-04-24
 
 ## Objectif
 
-Ce guide fournit des instructions pour configurer SAP logs on OVHcloud Logs Data Platform.
+Ce guide vous fournit les instructions pour configurer SAP logs on OVHcloud Logs Data Platform.
 
 ![sap_logs_on_ldp_schema](images/sap_logs_on_ldp_schema.png){.thumbnail}
 
 ## Prérequis
 
-- Un accès à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Un accès à l'[espace client OVHcloud](/links/manager).
 - Un système SAP installé.
 
 ## En pratique
@@ -35,7 +35,7 @@ Dans un environnement SAP, nous recommandons de créer deux data streams avec de
 
 Pour établir la configuration de votre data stream, vous pouvez vous référer au chapitre « Let's send some logs » de notre [documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start#lets-send-some-logs).
 
-Vous pouvez également configurer une rétention de vos logs pour une période donnée. Vous trouverez plus d'information dans notre documentation [Activating cold storage on a stream](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage).
+Vous pouvez également configurer une rétention de vos logs pour une période donnée. Vous trouverez plus d'informations dans notre documentation [Activating cold storage on a stream](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage).
 
 Le tableau résume les paramètres clefs pour les configurations des deux data streams que nous recommandons :
 
@@ -57,7 +57,7 @@ Veuillez suivre le chapitre « Host a logstash collector on Logs Data Platform �
 | tools-sap-logstash | Outil de collecte pour vos logs SAP et OS | LOGSTASH 8.x | 6514 | X.X.X.X/X | sap-logstash |
 | tools-audit-sap-logstash | Outil de collecte pour vos logs d'audit et de sécurité | LOGSTASH 8.x | 6514 | X.X.X.X/X | audit-sap-logstash |
 
-[^2]: Dans le but d'améliorer la sécurité, nous recommandons de configurer un ou des réseaux de confiance.
+[^2]: Dans le but d'améliorer la sécurité, nous recommandons de configurer un ou plusieurs réseaux de confiance.
 
 > [!primary]
 >
@@ -134,7 +134,7 @@ De nombreuses options sont disponibles pour configurer rsyslog avec nos automati
 
 #### Terminal
 
-- Un déploiement minimal ne requit que l'hôte d'OVHcloud Logs Data Platform et la localisation du certificat:
+- Un déploiement minimal ne nécessite que l'hôte d'OVHcloud Logs Data Platform et la localisation du certificat:
 
 ```bash
 ./start.sh \
@@ -171,7 +171,8 @@ De nombreuses options sont disponibles pour configurer rsyslog avec nos automati
 --audit-ldp-ca-file-path /etc/rsyslog.d/audit-logstash.crt \
 ```
 
-- Un déploiement en paramétrant la collecte des logs d'audit SAP ABAP:  
+- Un déploiement en paramétrant la collecte des logs d'audit SAP ABAP:
+
 *La fonctionnalité SAP logs on OVHcloud Logs Data Platform fournit la possibilité de traiter les logs d'audit ABAP avec le paramètre `--collect-sal`. Plus d'information dans le chapitre [SAP AS ABAP Security Audit Log](#sap-as-abap-security-audit-log).*
 
 ```bash
@@ -204,6 +205,7 @@ OVHcloud fournit un playbook Ansible pour déployer la configuration rsyslog.
 ```
 
 > [!primary]
+>
 > Si vous avez oublié une option ou souhaitez reconfigurer votre rsyslog, vous pouvez relancer le script bash ou le playbook Ansible. Une nouvelle configuration sera déployée et l'ancienne configuration sera sauvegardée avec l'extension `.old`.
 >
 
@@ -234,13 +236,15 @@ Pour créer un OpenSearch Dashboards, veuillez prendre connaissance de notre doc
 
 #### Importer les objets OVHcloud pour SAP
 
-OVHcloud fournit une collection de recherches et de dashboards, disponibles sur notre [repository GitHub](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform). Ces objets peuvent être téléchargés et importés dans votre OpenSearch Dashboards.
+OVHcloud fournit une collection de recherches et de dashboards, disponibles sur notre [repository GitHub](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform/tree/main/opensearch). Ces objets peuvent être téléchargés et importés dans votre OpenSearch Dashboards.
 
 > [!primary]
 >
 > Dans le fichier téléchargé, les mots clefs \<replace-with-your-alias-id\> et \<replace-with-your-audit-alias-id\> doivent être remplacés par l'ID de l'alias de votre data stream.
 >
 > Dans le cas où vous n'auriez qu'un seul data stream pour vos logs techniques et de sécurité, remplacez les deux mots clefs par la même valeur.
+>
+> Vous pouvez trouver cet ID dans votre instance OpenSearch Dashboards, `Stack Management`{.action}, `Index patterns`{.action}, puis sélectionnez votre alias. L'ID est affichée dans l'URL et est composé de caractère alphanumériques.
 >
 
 Dans votre instance OpenSearch Dashboards, utilisez le panneau de gauche pour naviguer dans l'onglet `Stack Management`{.action}, puis `Saved Objects`{.action} et cliquez sur `Import`{.action} pour sélectionner le fichier précédemment téléchargé.
@@ -296,7 +300,7 @@ cannot resolve hostname 'gra159-xxx.gra159.logs.ovh.com': Invalid argument [v8.2
 
 Vérifiez que les informations de votre hôte et de votre certificat sont corrects. Vous trouverez ces informations dans votre outil de collecte dans la section `Informations utiles`{.action} de ce menu.
 
-De temps à autre, le service rsyslog peut être surchargé dans le cas où un très grand nombre de message doit être envoyé. Dans la plupart des cas, il est préférable d'attendre quelques minutes que le service rsyslog traite les messages par le biais de son spool (`/var/spool/rsyslog`). Si après plusieurs minutes, vous vous apercevez que les messages sont toujours bloqués, vous pouvez alors envisager de redémarrer les services rsyslog et syslog.socket.
+Parfois, le service rsyslog peut être surchargé dans le cas où un très grand nombre de message doit être envoyé. Dans la plupart des cas, il est préférable d'attendre quelques minutes que le service rsyslog traite les messages par le biais de son spool (`/var/spool/rsyslog`). Si après plusieurs minutes, vous vous apercevez que les messages sont toujours bloqués, vous pouvez alors envisager de redémarrer les services rsyslog et syslog.socket.
 
 ```bash
 systemctl restart rsyslog.service syslog.socket
@@ -310,7 +314,7 @@ Si vous ne souhaitez plus utiliser la fonctionnalité SAP logs on OVHcloud Logs 
 systemctl restart rsyslog.service syslog.socket
 ```
 
-Si vous aviez choisi d'installer notre service pour gérer les logs d'audit SAP, il vous suffit d'exécuter ces commandes :
+Si vous aviez choisi d'installer notre service pour gérer les logs d'audit SAP, il vous suffit d'exécuter les commandes suivantes :
 
 ```bash
 systemctl stop ovhcloud-sap-audit.service

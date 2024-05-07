@@ -113,7 +113,7 @@ In the OpenSearch Dashboards, you have the possibility to save searches for late
 
 > [!primary]
 >
-> OVHcloud provides pre-defined SAP search queries on our [GitHub repository](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform).
+> OVHcloud provides pre-defined SAP search queries on our [GitHub repository](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform/tree/main/opensearch).
 >
 
 ![queries](images/queries.png){.thumbnail}

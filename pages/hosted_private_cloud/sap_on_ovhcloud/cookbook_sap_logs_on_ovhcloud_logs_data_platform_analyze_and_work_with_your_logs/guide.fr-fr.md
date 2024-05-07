@@ -86,7 +86,7 @@ Dans OpenSearch Dashboards, vous avez la possibilité de sauvegarder des recherc
 
 > [!primary]
 >
-> OVHcloud fournit des requêtes de recherche SAP prédéfinies sur notre [repository GitHub](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform).
+> OVHcloud fournit des requêtes de recherche SAP prédéfinies sur notre [repository GitHub](https://github.com/ovh/sap-logs-on-ovhcloud-logs-data-platform/tree/main/opensearch).
 >
 
 ![queries](images/queries.png){.thumbnail}
