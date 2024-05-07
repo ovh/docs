@@ -35,6 +35,7 @@
             + [Beware of scams – recognising fraudulent email and phishing](account_and_service_management/account_information/phishing_care)
             + [Information System Security Policy (ISSP)](account_and_service_management/account_information/information-system-security-policy)
             + [Dedicated Servers service Security Specifications](account_and_service_management/account_information/security-specifications-dedicated-servers)
+            + [Public Cloud Instance security specification](account_and_service_management/account_information/security-specification-pci)
             + [VMware on OVHcloud - Security Specifications](account_and_service_management/account_information/security-specification-privatecloud-VMware)
             + [SecNumCloud-qualified VMware on OVHcloud - Security Specifications](account_and_service_management/account_information/security-specification-privatecloud-SNC)
             + [OVHcloud products ISO27k certifications](account_and_service_management/account_information/security_certifications)
