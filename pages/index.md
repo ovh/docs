@@ -143,7 +143,7 @@
             + [How to recover server access if your user password is lost](bare_metal_cloud/dedicated_servers/replacing-user-password)
             + [Replacing an SSH key pair](bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
             + [Replacing a defective disk](bare_metal_cloud/dedicated_servers/disk_replacement)
-            + [Hardware diagnostics](bare_metal_cloud/dedicated_servers/hardware-diagnose)
+            + [How to perform server hardware diagnostics in rescue mode](bare_metal_cloud/dedicated_servers/hardware-diagnose)
             + [Installing an OVHcloud SSH key](bare_metal_cloud/dedicated_servers/ovh_ssh_key)
             + [Finding the serial number of a hard disk](bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial)
             + [Finalize a maintenance action performed on your dedicated server](bare_metal_cloud/dedicated_servers/intervention-support)
