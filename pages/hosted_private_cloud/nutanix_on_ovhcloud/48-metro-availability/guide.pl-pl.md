@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie odzyskiwania po awarii za pomocą Metro (EN)
 excerpt: "Implementing Metro for a Disaster Recovery Plan"
-updated: 2024-04-19
+updated: 2024-05-13
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Configuring Disaster Recovery with Metro"
 excerpt: "Implementing Metro for a Disaster Recovery Plan"
-updated: 2024-04-19
+updated: 2024-05-13
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: Réplication asynchrone ou NearSync au travers de Prism Element
 excerpt: "Comment mettre en place la réplication asynchrone ou NearSync au travers de Prism Element"
-updated: 2024-04-19
+updated: 2024-05-13
 ---
 
 ## Objectif
@@ -23,7 +23,7 @@ Via **Prism Element**, il est possible :
 
 > [!warning]
 > 
-> Le pack **Starter** de l'offre Nutanix on OVHcloud packagée vous permet d'utiliser des réplications asynchrones **toutes les heures**. 
+> Le pack **Starter** de l'offre Nutanix on OVHcloud packagée vous permet d'utiliser des réplications asynchrones **toutes les heures**.
 >
 > Pour obtenir un délai de réplication plus court compris entre 1 et 15 minutes, il vous faut configurer des réplications *NearSync*. Cette option n'est disponible qu'avec les packs **Pro** et **Ultimate** OVHcloud.
 > 
@@ -170,7 +170,7 @@ Cliquez sur `Create Schedule`{.action} pour valider la planification.
 
 ![03 Create dataprotection 08](images/03-create-dataprotection08.png){.thumbnail}
 
-La tâche de réplication est créée pour fonctionner toutes les heures. Il s'agira d'une réplication asynchrone utilisable avec le pack **Starter** OVHcloud. 
+La tâche de réplication est créée pour fonctionner toutes les heures. Il s'agira d'une réplication asynchrone utilisable avec le pack **Starter** OVHcloud.
 
 Cliquez sur `Close`{.action} pour fermer la fenêtre.
 

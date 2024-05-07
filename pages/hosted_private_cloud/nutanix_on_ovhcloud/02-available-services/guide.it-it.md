@@ -1,7 +1,7 @@
 ---
 title: Elenco delle licenze inclusi (EN)
 excerpt: "Presentation of the included licences in the Nutanix on OVHcloud packaged service"
-updated: 2024-04-19
+updated: 2024-05-13
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ This page lists the included Nutanix licences in the Nutanix on OVHcloud package
 
 Only the Nutanix licences listed in this guide are available in the Nutanix on OVHcloud packaged service.
 
-If the licence or service you are looking for is not available, please refer to the [GitHub roadmap](https://github.com/orgs/ovh/projects/16/views/1?sliceBy%5Bvalue%5D=Nutanix+on+OVHcloud) for future availability. And if you have an immediate need, we recommend considering the Nutanix on OVHcloud BYOL service.
+If the licence or service you are looking for is not available, please refer to the [GitHub roadmap](https://github.com/orgs/ovh/projects/16/views/1?sliceBy%5Bvalue%5D=Nutanix+on+OVHcloud) for future availability. If you have an immediate need, we recommend considering the Nutanix on OVHcloud BYOL service.
 
 Within the packaged service, OVHcloud offers three packs (Starter, Pro and Ultimate) that contain the Nutanix Cloud Platform licence packs (NCP Starter, NCP Pro or NCP Ultimate packs), designed by Nutanix to offer a consistent feature set for the most common use cases.
 
