@@ -28,6 +28,8 @@ Le diagramme suivant présente une vue d'ensemble de la solution IAM ainsi que l
 
 ![Schema IAM](images/iam_schema.png){.thumbnail}
 
+![Schema IAM pour PCC](images/iam_vmware_schema_2.png){.thumbnail}
+
 
 ## En pratique
 
@@ -56,8 +58,9 @@ Pour utiliser IAM dans votre cloud privée, il va falloir :
 
 1. [Activer IAM](lien vers guide activer IAM dans PCC)
 
-2. [Créer une politique de gestion des ressources (policy, ressources groupes)]( lien vers doc gerer uen policy IAM avec PCC)  
+2. [Créer une politique de gestion des ressources (policy, ressources groupes, rôles)]( lien vers doc comment gérer une policy IAM avec PCC)  
   
+---
 
 ### Etape 1 : Comment fonctionne une Politique IAM (policy) ?
 
@@ -74,13 +77,21 @@ En détail, une politique contient :
     Une ou plusieurs actions autorisées ou exceptées par cette politique.
         Les actions sont les droits spécifiques concernés par cette politique (redémarrage d'un serveur, création d'un compte e-mail, résiliation d'un abonnement, etc.)
 
-  
+---  
 ### Etape 2 : Comment fonctionne IAM avec PCC
   
   
 Pour mieux comprendre comment fonctionne IAM avec Vsphere vous pouvez lire ce guide : [Comment utiliser les politiques IAM avec vSphere](https://help.ovhcloud.com/csm/fr-vmware-use-iam-vsphere?id=kb_article_view&sysparm_article=KB0059059)
   
-  
+Vous pouvez aussi regarder ce schema visuel pour mieux comprendre comment s'imbrique IAM avec vos services VMware ->
+
+
+![Schema IAM 3](images/iam_vmware_schema_3.png){.thumbnail}
+
+---
+
+![Schema IAM 2](images/iam_vmware_schema_2.png){.thumbnail}
+
 ## Aller plus loin
   
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
