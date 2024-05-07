@@ -8,22 +8,22 @@ updated: 2024-05-07
 
 Softphone est une solution permettant d'enregistrer votre ligne SIP (**S**ession **I**nitiation **P**rotocol) et de l'utiliser grâce à l'application Softcall, disponible sur ordinateur, smarphone et tablette.
 
-**Découvrez comment installer et configurer Softcall sur les plateformes Android, IOS, MacOS et Windows.**
+**Découvrez comment installer et configurer Softcall sur les plateformes Android, iOS, macOS et Windows.**
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip){.external}.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
+- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 
 ## En pratique
 
 ### Installer Softcall
 
-Connectez-vous à votre espace client et rendez-vous dans la partie `Télécom`{.action}. Dans le menu de gauche, cliquez sur `Téléphonie`{.action} puis sur votre ligne SIP. Après avoir sélectionné l'onglet `Softphone`{.action}, cliquez sur l'interrupteur pour générer l'envoie du mail dans lequel se trouve le logiciel Softcall, disponible pour Windows, MacOS, Android et IOS.
+Connectez-vous à votre espace client et rendez-vous dans la partie `Télécom`{.action}. Dans le menu de gauche, cliquez sur `Téléphonie`{.action} puis sur votre ligne SIP. Après avoir sélectionné l'onglet `Softphone`{.action}, cliquez sur l'interrupteur pour générer l'envoi d'un e-mail dans lequel se trouve le logiciel Softcall, disponible pour Windows, macOS, Android et iOS.
 
 ![Install Softcall](images/send_mail_manager.png){.thumbnail}
 
-Ouvrez le mail et suivez les instructions pour installer Softcall.
+Ouvrez l'e-mail et suivez les instructions pour installer Softcall.
 
 ### Configurer Softcall
 
@@ -31,19 +31,21 @@ Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous ête
 
 #### Application mobile (Android et IOS)
 
+*Cliquez sur l'onglet correspondant à votre système d'exploitation mobile :*
+
 > [!tabs]
 > **Android**
 >>
 >> ![Install Softcall](images/assistant_android.jpg){.thumbnail}
 >>
-> **IOS**
+> **iOS**
 >>
 >> ![Install Softcall](images/assistant_ios.jpg){.thumbnail}
 >>
 
-Récupérez l'URL ou le QR CODE de configuration vous permettant de télécharger votre configuration Softcall. Retrouvez l'URL et le QR CODE de configuration dans le mail que vous avez reçu après avoir souscris à l'offre Softcall.
+Récupérez l'URL ou le QR CODE de configuration vous permettant de télécharger votre configuration Softcall. Retrouvez l'URL et le QR CODE de configuration dans l'e-mail que vous avez reçu après avoir souscrit à l'offre Softcall.
 
-> [!alert]
+> [!warning]
 > 
 > Si vous cliquez sur l'URL de configuration, vous ne pourrez pas télécharger votre configuration Softcall. Veuillez uniquement copier l'URL ou scanner le QR CODE pour plus de sécurité.
 >
@@ -54,19 +56,21 @@ Votre compte Softcall est désormais configuré. Dans le menu principal de Softc
 
 #### Application de bureau (Windows et MacOS)
 
+*Cliquez sur l'onglet correspondant à votre système d'exploitation :*
+
 > [!tabs]
 > **Windows**
 >>
 >> ![Install Softcall](images/assistant_windows.png){.thumbnail}
 >>
-> **MacOS**
+> **macOS**
 >>
 >> ![Install Softcall](images/assistant_macos.png){.thumbnail}
 >>
 
-Récupérez l'URL de configuration vous permettant de télécharger votre configuration Softcall. Retrouvez l'URL de configuration dans le mail que vous avez reçu après avoir souscris à l'offre Softcall.
+Récupérez l'URL de configuration vous permettant de télécharger votre configuration Softcall. Retrouvez l'URL de configuration dans l'e-mail que vous avez reçu après avoir souscrit à l'offre Softcall.
 
-> [!alert]
+> [!warning]
 > 
 > Si vous cliquez sur l'URL de configuration, vous ne pourrez pas télécharger votre configuration Softcall. Veuillez uniquement copier le lien.
 >
@@ -92,7 +96,7 @@ Dans le menu principal en bas de l'écran, cliquez sur l'icône représentant un
 >>
 >> ![Install Softcall](images/bottom_menu_android.jpg){.thumbnail}
 >>
-> **IOS**
+> **iOS**
 >>
 >> ![Install Softcall](images/bottom_menu_ios.png){.thumbnail}
 >>
@@ -108,7 +112,7 @@ Dans le menu principal en bas de l'écran, cliquez sur l'icône des contacts. Su
 - Ajouter des nouveaux contacts
 - Modifier et supprimer des contacts
 
-##### Application de bureau (Windows et MacOS)
+##### Application de bureau (Windows et macOS)
 
 Pour passer un appel téléphonique, entrez le numéro dans le champ en haut de l'interface, ou cliquez sur l'icône représentant un clavier numérique pour tapper le numéro. Cliquez sur l'icône représentant un téléphone pour passer l'appel.
 
@@ -124,7 +128,6 @@ Dans le menu principal à gauche de l'interface, cliquez sur l'icône des contac
 - Rechercher un contact
 - Ajouter des nouveaux contacts
 - Modifier et supprimer des contacts
-
 
 ## Aller plus loin
 
