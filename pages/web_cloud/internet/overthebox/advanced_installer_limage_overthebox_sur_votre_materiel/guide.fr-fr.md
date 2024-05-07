@@ -17,24 +17,24 @@ Installer l'image OverTheBox sur votre propre matériel est une étape cruciale 
 
 ## En pratique
 
-### Téléchargez la dernière image du logiciel OverTheBox
+### Téléchargee la dernière image du logiciel OverTheBox
 
 Pour installer manuellement le logiciel OverTheBox, vous devez téléchargez l'image sur votre ordinateur.
 
-- Pour un appareil avec un unique port ethernet RJ45 (comme un NUC Intel), seule la version [v0.8](http://downloads.overthebox.net/v0.8/targets/x86/64/latest.img.gz) est compatible
-- Pour un appareil de type **rasberry pi 3** seule [cette image](http://downloads.overthebox.net/v0.8/targets/brcm2708/bcm2710/latest.img.gz) est compatible
+- Pour un appareil avec un unique port ethernet RJ45 (comme un NUC Intel), seule la version [v0.8](http://downloads.overthebox.net/v0.8/targets/x86/64/latest.img.gz) est compatible.
+- Pour un appareil de type **Raspberry Pi 3**, seule [cette image](http://downloads.overthebox.net/v0.8/targets/brcm2708/bcm2710/latest.img.gz) est compatible.
 - Pour un appareil avec plusieurs ports ethernet RJ45, nous recommandons d'utiliser la dernière version [stable](http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz).
 
-Si vous chercher une version particulière d'autres options sont disponible sur le site [http://downloads.overthebox.net/](http://downloads.overthebox.net/).
+Si vous cherchez une version particulière, d'autres options sont disponible sur le site [http://downloads.overthebox.net/](http://downloads.overthebox.net/).
 
 ### Mettre à jour un appareil OverTheBox
 
 > [!warning]
 >
-> Cette méthode est recommandé pour les appareils sous une version inférieure à v0.6.33 ou qui ne contact pas le serveur de provisioning
+> Cette méthode est recommandée pour les appareils sous une version inférieure à v0.6.33 ou qui ne contactent pas le serveur de provisioning.
 >
 
-Si une version du logiciel OverTheBox est déjà installé sur votre appareil, vous pouvez simplement le mettre à jour depuis l'interface web locale.
+Si une version du logiciel OverTheBox est déjà installée sur votre appareil, vous pouvez simplement le mettre à jour depuis l'interface web locale.
 
 - Rendez-vous sur [http://overthebox.ovh](http://overthebox.ovh){.external} ou [http://192.168.100.1](http://192.168.100.1).
 - Cliquez sur `System`{.action}.
@@ -55,17 +55,17 @@ Ensuite, dans la section **Flash new firmware image** :
 
 > [!success]
 >
-> Votre  OvertheBox  est maintenant mise à jour, votre configuration a été réappliquée automatiquement si la case **Keep settings** n'a pas été décochée.
+> Votre OverTheBox est maintenant mise à jour, votre configuration a été réappliquée automatiquement si la case **Keep settings** n'a pas été décochée.
 >
 
 ### Installation automatique à l'aide d'une clé USB
 
 > [!warning]
 >
-> Cette méthode n'est disponible que pour les appareils vendu par OVHcloud.
+> Cette méthode n'est disponible que pour les appareils vendus par OVHcloud.
 >
 
-Si le systeme n'est pas installé sur votre appareil, vous pouvez créer une clé USB bootable contenant l'image OverTheBox afin d'installer complétement le système.
+Si le système n'est pas installé sur votre appareil, vous pouvez créer une clé USB bootable contenant l'image OverTheBox afin d'installer complétement le système.
 
 #### Création d'une clé USB bootable sous Windows
 
@@ -110,7 +110,7 @@ Maintenant que vous connaissez l'emplacement de votre clé USB, vous pouvez flas
 - Tapez la commande suivante (**en remplaçant X par le bon chiffre de votre clé**) :
 
 ```bash
-# Positionnez vous dans le dossier où ce trouve l'image
+# Positionnez vous dans le dossier où se trouve l'image
 cd ~/Téléchargements
 gunzip -c latest.img.gz | dd of=/dev/diskX
 ```
