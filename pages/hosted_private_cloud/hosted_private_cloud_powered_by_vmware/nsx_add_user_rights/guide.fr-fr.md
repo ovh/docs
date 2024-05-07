@@ -18,14 +18,14 @@ details[open]>summary::before {
 }
 </style>
 
-## Objectifs
+## Objectif
 
-Ce guide permet de vous expliquer comment ajouter les droits à un utilisateur pour accéder à la console Web NSX-T de votre Hosted Private Cloud - VMware On OVHcloud.
+Ce guide permet de vous expliquer comment ajouter les droits de lecture à un utilisateur pour accéder à la console Web NSX-T de votre Hosted Private Cloud - VMware On OVHcloud.
 
 Ces droits sont données depuis la console [OVHcloud Manager](https://www.ovh.com/manager).
 
 
-## Prerequis
+## Prérequis
 
 - Avoir souscrit une offre [Hosted Private Cloud](https://www.ovhcloud.com/en/hosted-private-cloud/vmware/)
 avec les options **"Network Security Virtualization"** ou **"Software-Defined Datacenter"** 
