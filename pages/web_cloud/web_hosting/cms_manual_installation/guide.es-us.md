@@ -55,7 +55,7 @@ Para ayudarle a elegir su CMS, consulte a continuación una breve descripción p
 
 Más información en nuestra página relativa a [módulo WordPress](/links/web/hosting-wordpress)
 
-- Sitio oficial de [WordPress](https://https://wordpress.com/){.external}
+- Sitio oficial de [WordPress](https://wordpress.com/){.external}
 
 #### Joomla!
 

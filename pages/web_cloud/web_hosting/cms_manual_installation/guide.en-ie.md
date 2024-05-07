@@ -51,7 +51,7 @@ To help you choose your CMS, find below a short description for each of the CMS 
 
 You can find more information on our [WordPress module page](/links/web/hosting-wordpress). 
 
-- [Official WordPress website](https://https://wordpress.com/){.external}
+- [Official WordPress website](https://wordpress.com/){.external}
 
 #### Joomla!
 
