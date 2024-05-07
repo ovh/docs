@@ -1,7 +1,7 @@
 ---
 title: Managed Kubernetes Service Audit Logs Forwarding
 excerpt: 'Find out how to forward Audit logs from an OVHcloud Managed Kubernetes Service cluster to Logs Data Platform'
-updated: 2024-03-26
+updated: 2024-05-07
 ---
  
 ## Objective
@@ -116,9 +116,13 @@ In the `Audit Logs`{.action} tab, you can view live audit logs from your cluster
 
 In order to activate logs forwarding to LDP, simply click the `Subscribe`{.action} button on the right-hand side of your screen.
 
+![Log Data Platform Menu entry](images/Kubernetes1.png){.thumbnail}
+
 #### Step 3 - Select your LDP Account and Data stream
 
 From the dropdown list select the LDP Accounts you want, then select the Data Stream you would like to use from the list and click the `Subscribe`{.action} button.
+
+![Log Data Platform Menu entry](images/Kubernetes2.png){.thumbnail}
 
 Your subscription is now created and your MKS audit logs are forwarded !
 
