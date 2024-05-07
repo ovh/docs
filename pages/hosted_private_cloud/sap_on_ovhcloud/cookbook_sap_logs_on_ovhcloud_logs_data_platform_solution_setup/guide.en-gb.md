@@ -170,7 +170,7 @@ Many options are available to configure rsyslog on your operating system with ou
 --ldp-target-platform gra159-xxx.gra159.logs.ovh.com \
 --ldp-ca-file-path /etc/rsyslog.d/logstash.crt \
 --audit-ldp-target-platform gra159-xxx.gra159.logs.ovh.com \
---audit-ldp-ca-file-path /etc/rsyslog.d/audit-logstash.crt \
+--audit-ldp-ca-file-path /etc/rsyslog.d/audit-logstash.crt
 ```
 
 - Deployment with setting collect of SAP ABAP audit logs:  
@@ -181,7 +181,7 @@ Many options are available to configure rsyslog on your operating system with ou
 ./start.sh --software-stack NW \
 --sap-sid S0P \
 --ldp-target-platform gra159-xxx.gra159.logs.ovh.com \
---ldp-ca-file-path /etc/rsyslog.d/logstash.crt
+--ldp-ca-file-path /etc/rsyslog.d/logstash.crt \
 --collect-sal
 ```
 
