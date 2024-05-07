@@ -6,7 +6,7 @@ updated: 2024-05-06
 
 ## Objectif
 
-À un certain moment de la vie de votre serveur, vous pouvez rencontrer une panne en raison d'un problème matériel. Lorsque le serveur est démarré en mode rescue d’OVHcloud, vous disposez de plusieurs outils de diagnostic permettant d'identifier les composants matériels défectueux.
+À un certain moment de la vie de votre serveur, vous pouvez rencontrer une panne en raison d'un problème matériel. Lorsque le serveur est démarré via le mode rescue OVHcloud, vous disposez de plusieurs outils de diagnostic permettant d'identifier les composants matériels défectueux.
 
 **Découvrez comment diagnostiquer des dysfonctionnements matériels sur votre serveur.**
 
