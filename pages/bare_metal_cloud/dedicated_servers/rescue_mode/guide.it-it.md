@@ -15,11 +15,11 @@ La modalità Rescue è una funzione che permette di avviare il tuo servizio su u
 La modalità Rescue è generalmente adatta alle seguenti operazioni:
 
 - [Reimpostare la password utente](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnostica dei problemi di rete
+- [Diagnostica dei problemi di rete](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 - Riparazione di un sistema operativo difettoso
 - Correzione di una configurazione errata di un firewall software
-- Test delle prestazioni dei dischi
-- Test del processore e della memoria RAM
+- [Test delle prestazioni dei dischi](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+- [Test del processore e della memoria RAM](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 > [!warning]
 >

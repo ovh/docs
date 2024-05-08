@@ -15,11 +15,11 @@ Tryb Rescue jest dostarczanym przez OVHcloud narzędziem, które pozwala na uruc
 Tryb Rescue jest zazwyczaj dostosowany do następujących zadań:
 
 - [Reset hasła użytkownika](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnostyka problemów z siecią
+- [Diagnostyka problemów z siecią](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 - Naprawa wadliwego systemu operacyjnego
 - Naprawa nieprawidłowej konfiguracji zapory sieciowej
-- Test wydajności dysków
-- Test procesora i pamięci RAM
+- [Test wydajności dysków](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+- [Test procesora i pamięci RAM](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 > [!warning]
 >
