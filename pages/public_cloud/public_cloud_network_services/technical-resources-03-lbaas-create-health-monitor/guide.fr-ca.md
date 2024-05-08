@@ -162,7 +162,7 @@ Confirmez la création en cliquant sur `Create`{.action}.
 
 Créez un fichier `.tf` et définissez votre Health Monitor comme une ressource. Par exemple :
 
-```hcl
+```python
 resource "openstack_lb_monitor_v2" "monitor_1" {
   pool_id     = "<POOL_ID>"
   type        = "HTTP"

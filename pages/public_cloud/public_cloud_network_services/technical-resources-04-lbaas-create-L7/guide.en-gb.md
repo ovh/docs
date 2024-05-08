@@ -320,7 +320,7 @@ For more information on specific Terraform resources, consult the documentation 
 
 The following example shows how to define a Terraform resource to create an L7 policy that redirects all HTTP requests to HTTPS:
 
-```hcl
+```python
 # Define the OpenStack provider
 provider "openstack" {
   auth_url    = "https://auth.cloud.ovh.net/v3"

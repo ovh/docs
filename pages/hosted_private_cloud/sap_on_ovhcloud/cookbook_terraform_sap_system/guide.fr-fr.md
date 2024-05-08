@@ -48,7 +48,7 @@ Ce fichier contient le code pour appeler le module Terraform SAP system dévelop
 - Le premier bloc « module » regroupe toutes les variables que vous souhaitez passer au module Terraform SAP Application Servers développé par OVHcloud.
 - Le second bloc « module » regroupe toutes les variables que vous souhaitez passer au module Terraform SAP HANA databases développé par OVHcloud.
 
-```hcl
+```python
 provider "vsphere" {
   vsphere_server = "pcc-xx-xx-xx-xx.ovh.com"
 }
@@ -121,7 +121,7 @@ Par exemple, vous ne pouvez pas appliquer le type « chaîne de caractères » p
 
 Dans ce cas, le fichier main.tf pourrait être comme ceci :
 
-```hcl
+```python
 provider "vsphere" {
   vsphere_server = var.vsphere_server
 }
@@ -149,7 +149,7 @@ module "sap-hana-database" {
 
 Le fichier variables.tf devrait être similaire à cela :
 
-```hcl
+```python
 variable "vsphere_server" {
   type        = string
   description = "Nom du serveur vSphere"
@@ -198,7 +198,7 @@ variable "sap_hana_databases" {
 
 Enfin, dans le but d'éviter de devoir fournir chaque valeur à travers la console, vous avez la possibilité de créer un fichier nommé terraform.tfvars dans lequel vous pouvez mettre les valeurs souhaitées pour chaque variable.
 
-```hcl
+```python
 # vSphere
 vsphere_datacenter      = "pcc-xx-xx-xx-xx_datacenterxxxx"
 vsphere_compute_cluster = "Cluster1"
@@ -271,7 +271,7 @@ terraform apply
 
 La sortie de l'exécution devrait être similaire à celle-ci :
 
-```hcl
+```python
 Plan: 2 to add, 0 to change, 0 to destroy.
 
 Changes to Outputs:
@@ -322,7 +322,7 @@ terraform destroy
 
 La sortie de l'exécution devrait ressembler à celle-ci :
 
-```hcl
+```python
 Plan: 0 to add, 0 to change, 2 to destroy.
 
 Changes to Outputs:
