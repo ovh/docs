@@ -225,7 +225,7 @@ In Terraform, è necessario utilizzare il provider openstack. È possibile scari
 
 La sezione specifica di OVHcloud per l'integrazione vRack è il parametro `value_specs`.
 
-```hcl
+```python
 resource "openstack_networking_network_v2" "tf_network" {
   name = "tf_network"
   admin_state_up = "true"

@@ -69,6 +69,8 @@ A operazione completata, esci dall’installer cliccando su `Finish`{.action}.
 
 Verrai reindirizzato all'assistente all'installazione, ti sarà sufficiente chiudere la finestra.
 
+<a name="create"></a>
+
 ### Crea un account di servizio Veeam Enterprise
 
 #### Passo 1 - Attiva un account di servizio

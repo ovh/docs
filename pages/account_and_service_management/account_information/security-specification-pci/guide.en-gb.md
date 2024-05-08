@@ -107,7 +107,7 @@ You can consult these guides to setup your configurations:
 
 [Managing firewall rules and port security on networks using OpenStack CLI](/pages/public_cloud/compute/security_group_private_network).
 [Access and security settings in Horizon](/pages/public_cloud/compute/access_and_security_in_horizon).
-[Network guides](/pages/public_cloud/public_cloud_network_services).
+[Network guides](/products/public-cloud-network).
 
 #### 8.3 Data encryption at rest
 

@@ -40,11 +40,11 @@ Ces droits sont accordés depuis l'[espace client OVHcloud](/links/manager).
 
 <summary>Comment accéder à votre Hosted Private Cloud - VMware On OVHcloud ?</summary>
 
-Une fois connecté à l'espace client OVHcloud, cliquez sur l'onglet `Hosted Private Cloud`{.action}.
+Une fois connecté à l'espace client OVHcloud, cliquez sur l'onglet <code class="action">Hosted Private Cloud</code>.
+</br></br>
+- Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX > Remplacez le par le nom de vôtre organization privée.
 
-- <ins>Lien OVHcloud</ins> : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX > Remplacez le par le nom de vôtre organization privée.
-
-![NSX screenshot](images/nsx_user_rights_7.png){.thumbnail}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_7.png" loading="lazy"></p>
 
 </details>
 
@@ -54,13 +54,15 @@ Une fois connecté à l'espace client OVHcloud, cliquez sur l'onglet `Hosted Pri
 
 <summary>Comment activer l'interface NSX-T pour votre utilisateur ?</summary>
 
-Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez accéder à l'interface Web NSX-T : `VMware`{.action} > `PCC-XX..`{.action} > `Utilisateur`{.action} > `Modifier`{.action} puis activez le bouton `NSX Interface`{.action}.
+Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez accéder à l'interface Web NSX-T : 
+</br></br>
+<code class="action">VMware</code> > <code class="action">PCC-XX..</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
 
-![NSX screenshot](images/nsx_user_rights_2.png){.thumbnail}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_3.png" loading="lazy"></p>
 
-![NSX screenshot](images/nsx_user_rights_6.png){.thumbnail}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_6.png" loading="lazy"></p>
 
-![NSX screenshot](images/nsx_user_rights_1.png){.thumbnail}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_1.png" loading="lazy"></p>
 
 </details>
 
@@ -69,9 +71,9 @@ Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez acc
 <details>
 <summary>Comment ajouter les droits pour votre utilisateur ?</summary>
 
-Cliquez sur : `VMware`{.action} > `PCC-XX-XX-XX-XX`{.action} > `Utilisateur`{.action} > `Modifier`{.action}.
+Cliquez sur : <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code>.
 
-![NSX screenshot](images/nsx_user_rights_7.png){.thumbnail}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_7.png" loading="lazy"></p>
 
 </details>
 
@@ -81,19 +83,19 @@ Cliquez sur : `VMware`{.action} > `PCC-XX-XX-XX-XX`{.action} > `Utilisateur`{.ac
 <details>
 <summary>Comment ajoutez les droits aux Datacentres ?</summary>
 
-Il ne vous reste plus que à modifier les droits de chaque Datacenter souhaité en cliquant sur : `VMware > PCC-XX-XX-XX-XX > Utilisateur > Voir / Modifier les droits par DC > Modifier`
+Il ne vous reste plus que à modifier les droits de chaque Datacenter souhaité en cliquant sur : <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code> > <code class="action">Utilisateur</code> > <code class="action">Voir / Modifier les droits par DC</code> > <code class="action">Modifier</code>.
+</br></br>
+Une fenetre s'ouvre alors. Choisissez les droits nécessaires parmi les 3 sections principales > <code class="action">Accès Vsphere</code> / <code class="action">Accès au vmNetwork</code> / <code class="action">Accès aux V(x)Lans</code>.
+</br></br>
+Les droits suivants sont disponibles : <strong>Operateur</strong> / <strong>Administrateur</strong> / <strong>Aucun</strong> / <strong>Lecture seule</strong>
+</br></br>
+Uniquement l'accès aux <code class="action">V(x)Lans</code> en <strong>Lecture seule</strong> est necessaire pour accéder à l'interface Web NSX-T.
+</br></br>
+Choississez <code class="action">Lecture seule</code>.
+</br></br>
+Si vous voulez faire des modifications dans l'interface Web NSX-T, des droits supplémentaire seront alors nécessaires, tels que <strong>Opérateur</strong> ou <strong>Administrateur</strong>.
 
-Une fenetre s'ouvre alors. Choisissez les droits nécessaires parmi les 3 sections principales >  `Accès Vsphere` / `Accès au vmNetwork` / `Accès aux V(x)Lans`.
-
-Les droits suivants sont disponibles : **Operateur / Administrateur / Aucun / Lecture seule**
-
-Uniquement l'accès aux `V(x)Lans` en **Lecture seule** est necessaire pour accéder à l'interface Web NSX-T.
-
-Choississez `Lecture seule`
-
-Si vous voulez faire des modifications dans l'interface Web NSX-T, des droits supplémentaire seront alors nécessaires, tels que **Opérateur ou Administrateur**
-
-![NSX screenshot](images/nsx_user_rights_8.png){.thumbnail}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_8.png" loading="lazy"></p>
 
 </details>
 
@@ -102,18 +104,17 @@ Si vous voulez faire des modifications dans l'interface Web NSX-T, des droits su
 <details>
 <summary>Comment accéder à l'interface Web NSX-T ?</summary>
 
+Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code>.
+</br></br>
+- Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XX-XX-XX-XX > Remplacez le par le nom de vôtre organization privée PCC.
 
-Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur  `VMware > PCC-XX-XX-XX-XX`{.action}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_9.png" loading="lazy"></p>
 
--  <ins>Lien OVHcloud</ins> : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XX-XX-XX-XX > Remplacez le par le nom de vôtre organization privée PCC.
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_10.png" loading="lazy"></p>
 
-![NSX screenshot](images/nsx_user_rights_9.png){.thumbnail}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_11.png" loading="lazy"></p>
 
-![NSX screenshot](images/nsx_user_rights_10.png){.thumbnail}
-
-![NSX screenshot](images/nsx_user_rights_11.png){.thumbnail}
-
-![NSX screenshot](images/nsx_user_rights_12.png){.thumbnail}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_12.png" loading="lazy"></p>
 
 </details>
 
@@ -123,6 +124,6 @@ Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur  `VMware > 
 
 - [FAQ NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-11-faq)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

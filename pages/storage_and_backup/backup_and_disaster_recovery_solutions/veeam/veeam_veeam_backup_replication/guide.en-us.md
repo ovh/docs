@@ -65,6 +65,8 @@ Once it is complete, exit the installation wizard by clicking `Finish`{.action}.
 
 You will be redirected to the launch wizard, simply close the window.
 
+<a name="create"></a>
+
 ### Creating a Veeam Enterprise service account
 
 #### Step 1 - Launch a service account

@@ -47,7 +47,7 @@ Ce fichier contient le code pour appeler le module Terraform SAP Application Ser
 - Le bloc « provider » est nécessaire pour être en capacité d’interagir avec votre solution VMware on OVHcloud.
 - Le bloc « module » regroupe toutes les variables que vous souhaitez passer au module Terraform SAP Application Servers développé par OVHcloud.
 
-```hcl
+```python
 provider "vsphere" {
   vsphere_server = "pcc-xx-xx-xx-xx.ovh.com"
 }
@@ -87,7 +87,7 @@ Par exemple, vous ne pouvez pas appliquer le type « chaîne de caractères » p
 
 Dans ce cas, le fichier main.tf pourrait être comme ceci :
 
-```hcl
+```python
 provider "vsphere" {
   vsphere_server = var.vsphere_server
 }
@@ -104,7 +104,7 @@ module "sap-application-server" {
 
 Le fichier variables.tf devrait être similaire à cela :
 
-```hcl
+```python
 variable "vsphere_server" {
   type        = string
   description = "Nom du serveur vSphere"
@@ -133,7 +133,7 @@ variable "sap_application_servers" {
 
 Enfin, dans le but d'éviter de devoir fournir chaque valeur à travers la console, vous avez la possibilité de créer un fichier nommé terraform.tfvars dans lequel vous pouvez mettre les valeurs souhaitées pour chaque variable.
 
-```hcl
+```python
 # vSphere
 vsphere_datacenter      = "pcc-xx-xx-xx-xx_datacenterxxxx"
 vsphere_compute_cluster = "Cluster1"
@@ -183,7 +183,7 @@ terraform apply
 
 La sortie de l'exécution devrait être similaire à celle-ci :
 
-```hcl
+```python
 Plan: 1 to add, 0 to change, 0 to destroy.
  
 Changes to Outputs:
@@ -222,7 +222,7 @@ terraform destroy
 
 La sortie de l'exécution devrait ressembler à celle-ci :
 
-```hcl
+```python
 Plan: 0 to add, 0 to change, 1 to destroy.
 
 Changes to Outputs:

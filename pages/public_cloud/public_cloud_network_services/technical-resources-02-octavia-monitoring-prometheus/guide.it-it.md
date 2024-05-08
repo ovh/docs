@@ -151,7 +151,7 @@ Note that you should add the `--allowed-cidr` option in order to filter the list
 
 The resource [openstack_lb_listener_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_listener_v2) from the OpenStack provider enables to configure a Prometheus listener. The following snippet is extracted from a full example available on [Github](https://github.com/yomovh/tf-at-ovhcloud/tree/main/simple_http_lb_with_prom_grafana), adapt it to your needs. 
 
-```hcl
+```python
 resource "openstack_lb_listener_v2" "prom_listener" {
   protocol        = "PROMETHEUS"
   protocol_port   = 9100

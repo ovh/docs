@@ -69,6 +69,8 @@ Po jej zakończeniu zamknij kreator instalacji, klikając `Finish`{.action}.
 
 Zostaniesz przekierowany do asystenta instalacji. Wystarczy zamknąć okno.
 
+<a name="create"></a>
+
 ### Tworzenie konta usługi Veeam Enterprise
 
 #### Krok 1 - Utwórz konto usługi
