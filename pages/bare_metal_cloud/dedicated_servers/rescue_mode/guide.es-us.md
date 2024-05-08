@@ -15,11 +15,11 @@ El modo de rescate es una herramienta proporcionada por OVHcloud que le permite 
 El modo de rescate suele ser adecuado para las siguientes tareas:
 
 - [Restablecimiento de contraseña de usuario](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnóstico de problemas de red
+- [Diagnóstico de problemas de red](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 - Reparación de un sistema operativo defectuoso
 - Corrección de una configuración incorrecta de un cortafuegos de software
-- Prueba del rendimiento de los discos
-- Prueba del procesador y la memoria RAM
+- [Prueba del rendimiento de los discos](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+- [Prueba del procesador y la memoria RAM](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 > [!warning]
 >

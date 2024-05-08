@@ -15,11 +15,11 @@ O Modo Rescue é uma ferramenta fornecida pela OVHcloud que lhe permite iniciar 
 O modo rescue é geralmente adaptado às seguintes tarefas:
 
 - [Reinicialização da palavra-passe do utilizador](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnóstico dos problemas de rede
+- [Diagnóstico dos problemas de rede](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 - Reparação de um sistema operativo defeituoso
 - Correção de uma configuração incorreta de uma firewall de software
-- Teste das performances dos discos
-- Teste do processador e da memória RAM
+- [Teste das performances dos discos](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+- [Teste do processador e da memória RAM](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 > [!warning]
 >

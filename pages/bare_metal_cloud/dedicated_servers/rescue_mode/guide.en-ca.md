@@ -11,11 +11,11 @@ Rescue mode is a tool provided by OVHcloud that allows you to boot into a tempor
 Usual tasks the rescue mode is appropriate for include:
 
 - [Resetting your user password](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnosing network problems
+- [Diagnosing network problems](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 - Repairing a broken operating system
 - Fixing a software firewall misconfiguration
-- Testing disk performance
-- Testing CPU and RAM
+- [Testing disk performance](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+- [Testing CPU and RAM](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 > [!warning]
 >

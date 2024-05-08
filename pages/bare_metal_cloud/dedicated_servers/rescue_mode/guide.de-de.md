@@ -15,11 +15,11 @@ Der Rescue-Modus ist ein von OVHcloud zur Verfügung gestelltes Tool für Ihren 
 Der Rescue-Modus ist generell für folgende Aufgaben einzusetzen:
 
 - [Zurücksetzen Ihres User-Passworts](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnose von Netzwerkproblemen
+- [Diagnose von Netzwerkproblemen](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 - Reparatur eines beschädigten Betriebssystems
 - Korrektur einer fehlerhaften Konfiguration einer Software-Firewall
-- Performance-Test von Disks
-- Testen des Prozessors und des RAM
+- [Performance-Test von Disks](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+- [Testen des Prozessors und des RAM](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 > [!warning]
 >
