@@ -65,6 +65,8 @@ Une fois celle-ci terminée, quittez l'installateur en cliquant sur `Finish`{.ac
 
 Vous serez redirigé vers l'assistant d'installation, il vous suffit de fermer la fenêtre.
 
+<a name="create"></a>
+
 ### Créer un compte de service Veeam Enterprise
 
 #### Etape 1 - Lancer un compte de service

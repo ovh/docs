@@ -69,6 +69,8 @@ Klicken Sie nach erfolgreicher Installation auf `Finish`{.action}, um den Assist
 
 Sie werden zum Startassistenten weitergeleitet. Schließen Sie einfach das Fenster.
 
+<a name="create"></a>
+
 ### Veeam Enterprise Service-Account erstellen
 
 #### Schritt 1 - Service-Account erstellen

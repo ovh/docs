@@ -56,7 +56,7 @@ Choose `Veeam backup repository`{.action}. and click `Next`{.action}.
 
 #### Backup server
 
-Enter the **Veeam backup server name or IP address** and **Specify your personal credentials** (from a valid [Veeam Enterprise service account](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication#creating-a-veeam-enterprise-service-account)).
+Enter the **Veeam backup server name or IP address** and **Specify your personal credentials** (from a valid [Veeam Enterprise service account](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication#create)).
 
 Click `Next`{.action}.
 
