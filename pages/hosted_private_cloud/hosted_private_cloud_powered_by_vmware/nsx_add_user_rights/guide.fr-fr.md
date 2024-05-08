@@ -2,7 +2,6 @@
 title: "Activer NSX-T dans un Hosted Private Cloud VMware on OVHcloud"
 excerpt: "Découvrez comment ajouter les droits à un utilisateur et aux Datacentres pour NSX-T"
 updated: 2024-05-07
-flag: hidden
 ---
 
 <style>
@@ -59,9 +58,7 @@ Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez acc
 <code class="action">VMware</code> > <code class="action">PCC-XX..</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_3.png" loading="lazy"></p>
-
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_6.png" loading="lazy"></p>
-
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_1.png" loading="lazy"></p>
 
 </details>
@@ -109,11 +106,8 @@ Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class
 - Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XX-XX-XX-XX > Remplacez le par le nom de vôtre organization privée PCC.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_9.png" loading="lazy"></p>
-
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_10.png" loading="lazy"></p>
-
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_11.png" loading="lazy"></p>
-
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_12.png" loading="lazy"></p>
 
 </details>
