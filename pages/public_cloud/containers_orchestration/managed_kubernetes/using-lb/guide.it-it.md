@@ -62,6 +62,10 @@ It's rather cumbersome to use `NodePort` `Services` in production. As you are us
 >
 > In this case the *nodes* URL will be `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net` and a service deployed on NodePort 30123 can be accessed on `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net:30123`.
 
+> [!warning]
+> If your OVHcloud Managed Kubernets is connected to a vRack the `NodePort` is only exposed on your private Subnet. So you have to check your private IPs on your nodes in your Nodepool and you can
+> connect via one of these private IPs.
+
 ### Exposing services as LoadBalancer
 
 Declaring a service of type `LoadBalancer` exposes it externally using a cloud provider’s load balancer. The cloud provider will provision a load balancer for the `Service`, and map it to its automatically assigned `NodePort`. How the traffic from that external load balancer is routed to the `Service` pods depends on the cluster provider.
