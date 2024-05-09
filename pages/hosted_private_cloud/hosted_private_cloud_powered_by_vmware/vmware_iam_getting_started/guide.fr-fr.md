@@ -10,25 +10,29 @@ updated: 2024-05-24
 3. [En pratique](#En pratique)
 4. [Etape 1 : En pratique](#En pratique)
 5. [Etape 2 : FAQ](#FAQ)
+6. [Fin : Aller plus loin](#Aller plus loin)
 
+
+---
 ## Objectif
   
 **Dans ces guides, nous allons vous expliquer les bases pour démarrer avec IAM dans votre Cloud Privée VMware on OVHcloud** 
 
 Voici les liens des guides :
 
-- Guide 1 : [Premiers pas avec IAM et VMware sur OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_enable#Objectif)
-- Guide 2 : [Comment activer IAM dans un cloud privé VMware managé par OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_policy)
-- Guide 3 : [Comment utiliser les rôles IAM dans un cloud privée VMware managé par OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
-- Guide 4 : [Comment ajouter un rôle IAM à une politique globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_actions)
-- Guide 5 : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_actions...)
+- Guide 1 : [Premiers pas avec IAM et VMware sur OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
+- Guide 2 : [Comment activer IAM dans un cloud privé VMware managé par OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
+- Guide 3 : [Comment créer un rôles IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
+- Guide 4 : [Comment ajouter un rôle IAM manuellement à une politique globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
+- Guide 5 : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
 
-Le diagramme suivant présente une vue d'ensemble de la solution IAM ainsi que le fonctionnement de la gestion des **Ressources**, des **Droits** et **Actions** :
+Les diagrammes suivant présente une vue d'ensemble de la solution IAM ainsi que le fonctionnement de la gestion des **Ressources**, des **Droits** et **Actions** :
 
 ![Schema IAM](images/iam_schema.png){.thumbnail}
 
 ![Schema IAM pour PCC](images/iam_vmware_schema_2.png){.thumbnail}
 
+---
 ## Prérequis
 
 Pour activer IAM, vous aurez besoin des éléments suivants :
@@ -38,6 +42,7 @@ Pour activer IAM, vous aurez besoin des éléments suivants :
 - Savoir ["Créer et gérer des utilisateurs locaux sur un compte OVHcloud"](https://help.ovhcloud.com/csm/fr-account-managing-users?id=kb_article_view&sysparm_article=KB0043058).
 - Savoir ["Comment utiliser les politiques IAM depuis votre espace client"](https://help.ovhcloud.com/csm/fr-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058730).
 
+---
 ## Etape 1 : En pratique
 
 > [!WARNING]
@@ -97,42 +102,19 @@ Les 4 principaux éléments d'une politique sont :
 **Actions** : 
 
 ---  
-### Comment fonctionne IAM avec PCC
+### Comment fonctionne IAM dans un cloud privée VMware sur OVHcloud ?
   
-  
-Pour mieux comprendre comment fonctionne IAM avec Vsphere vous pouvez lire ce guide : [Comment utiliser les politiques IAM avec vSphere](https://help.ovhcloud.com/csm/fr-vmware-use-iam-vsphere?id=kb_article_view&sysparm_article=KB0059059)
-  
+   
 Vous pouvez aussi regarder ce schema visuel pour mieux comprendre comment s'imbrique IAM avec vos services VMware ->
 
-
 ![Schema IAM 3](images/iam_vmware_schema_3.png){.thumbnail}
-
----
 
 ![Schema IAM 2](images/iam_vmware_schema_2.png){.thumbnail}
 
 
-### Definition API Private cloud
-
-<https://api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
-
-|**Method**|**Path**|**Description**|
-| :-: | :-: | :-: |
-|GET|/me/identity/user|Retrieve all users of this account|
-|POST|/me/identity/user|Create a new user|
-|GET|/me/identity/user/{user}|Get details of this specific user|
-|PUT|/me/identity/user/{user}|Alter a user|
-|DELETE|/me/identity/user/{user}|Delete a user|
-|GET|/me/identity/group|Retrieve all groups of this account|
-|POST|/me/identity/group|Create a new group|
-|GET|/me/identity/group/{group}|Get details of this specific group|
-|PUT|/me/identity/group/{group}|Alter a group|
-|DELETE|/me/identity/group/{group}|Delete a group|
-
-
 ## Etape 2 : FAQ
 
-## Dans quelle scope applicable puis-je utiliser IAM et quelles sont ses limitations ?
+## Dans quelle est scope est applicable IAM au sein de OVHcloud et quelle sont ses limitations ?
 
 IAM est actuellement dans une version BETA sur la plateforme OVHcloud, les infrastructures bénéficiant d'options de sécurité renforcée ou d'un service certifié (HDS, PCI-DSS ou SNC) ne peuvent actuellement pas utiliser l'IAM OVHcloud.
 
@@ -144,25 +126,25 @@ Un role IAM ne peut que uniquement être ajouté manuellement dans une politique
 
 IAM permet de simplifier la gestion de l'authentification et de centraliser son utilisation.
 
-## Quelles sont les droits que je peux utiliser dans mon role IAM ?
+## Est ce que je peux activer IAM facilement ?
 
-Les droits utilisés avec une politique IAM sont ceux que je retrouve dans la console OVhcloud de mon PCC VMware. Je peux choisir **d'accéder à Vsphere, accéder au vmNetwork, accéder aux v(x)Lans** (en opérateur, lecture, écriture, administrateur par exemple). Ils sont modifiable niveau du PCC  ou par datacentres. Grâce aux roles IAM.
+Oui je peux activer IAM en cliquant sur un bouton depuis mon cloud privée VMware (voir guide : [Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)).
+
+## Comment sont gérer les utilisateur de IAM avec ceux de Vsphere ?
+
+L'activation de l'IAM OVHcloud ne désactive pas vos utilisateurs Hosted Private Cloud existants, vous pourrez toujours les utiliser pour vous connecter directement aux différents éléments de votre Hosted Private Cloud, sans passer par l'IAM. Choisissez alors un utilisateur local et non IAM.
 
 ## Comment IAM délègue la gestion des accès aux services IAM OVHcloud ?
 
-La gestion des rôles associés et leurs autorisations dans vSphere s'effectue depuis la page du manager OVH de votre PCC [lien web](https://www.ovh.com/manager/#/iam/). La gestion des politiques et accès s'effectue depuis l'IAM OVHcloud dans la partie Bare Metal Cloud avec lequel vous accéder depuis le tableau de bord de votre utilisateur en haut à droite [lien web](https://www.ovh.com/manager/#/dedicated/useraccount/dashboard)
+La gestion des rôles associés et leurs autorisations dans vSphere s'effectue depuis la page du manager OVH de votre PCC [lien web](https://www.ovh.com/manager/#/iam/). La gestion des politiques et accès s'effectue depuis l'IAM OVHcloud dans la partie Bare Metal Cloud avec lequel vous accédez depuis le tableau de bord de votre utilisateur en haut à droite [lien web](https://www.ovh.com/manager/#/dedicated/useraccount/dashboard)
 
 ## Y-aura t'il une gestion avancée des roles modifiés à l'avenir ?
 
 Oui, la version suivante de IAM permettra d'aller plus loin dans la gestion des droits avec les roles IAM modifiés.
 
-## Est ce que je peux activer IAM dans mon cloud privée VMware sur OVHcloud ?
+## Est-ce que je peux ajouter un rôle automatiquement à une politique IAM ?
 
-Oui je peux activer IAM depuis mon cloud privée VMware (voir guide : Comment activer IAMdans mon pcc) en Beta.
-
-## Est ce que je peux ajouter un role automatiquement à une politique IAM ?
-
-Non il n'est pas possible j'ajouter un role grace aux groupe de permissions managées.
+Non il n'est pas possible à ce jour d'ajouter un rôle grâce aux groupe de permissions managées automatique.
 
 ## Que représente un role dans une politique IAM ?
 
@@ -174,9 +156,17 @@ Par exemple, pour le rôle **iam-admin** d'un PCC, l'action est -> `pccVMware:vS
 
 Oui, l'utilisateur devra renseigner son identifiant XXX/idp sans son mot de passe afin d'être redirigé vers la page d'authentification du provider d'identité.
 
-
+---
 ## Aller plus loin
-  
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+
+Pour aller plus loin avec IAM, vous pouvez lire ces guides :
+
+- [Comment utiliser les politiques IAM avec vSphere](https://help.ovhcloud.com/csm/fr-vmware-use-iam-vsphere?id=kb_article_view&sysparm_article=KB0059059)
+- [Liste des groupes de permissions OVHcloud](https://help.ovhcloud.com/csm/fr-customer-iam-permissionsgroup?id=kb_article_view&sysparm_article=KB0060254)
+- [Comment utiliser les politiques IAM depuis votre espace client](https://help.ovhcloud.com/csm/fr-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058730)
+- [Comment utiliser les politiques IAM via l’API OVHcloud](https://help.ovhcloud.com/csm/fr-customer-iam-policies-api?id=kb_article_view&sysparm_article=KB0056808)
+- [Gérer et exploiter - IAM](https://help.ovhcloud.com/csm/fr-documentation-manage-operate-iam?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=f9734072c014f990f0785f572a5744ed&spa=1)
+- [Comment analyser les résultats de politiques IAM](https://help.ovhcloud.com/csm/fr-iam-troubleshooting?id=kb_article_view&sysparm_article=KB0060455)
+  Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
 
