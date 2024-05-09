@@ -55,7 +55,7 @@ Une fois connecté à l'espace client OVHcloud, cliquez sur l'onglet <code class
 
 Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez accéder à l'interface Web NSX-T : 
 </br></br>
-<code class="action">VMware</code> > <code class="action">pcc-xx..</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
+<code class="action">VMware</code> > <code class="action">pcc-xxx-xxx-xxx-xxx</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_3.png" loading="lazy"></p>
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_6.png" loading="lazy"></p>
