@@ -1,0 +1,207 @@
+---
+title: "Attivare e utilizzare il Rescue mode"
+excerpt: "Scopri come utilizzare il Rescue mode OVHcloud per risolvere i problemi del tuo server dedicato"
+updated: 2024-01-09
+---
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
+
+## Obiettivo
+
+La modalità Rescue è una funzione che permette di avviare il tuo servizio su un sistema operativo temporaneo, per diagnosticare e risolvere problemi.
+
+La modalità Rescue è generalmente adatta alle seguenti operazioni:
+
+- [Reimpostare la password utente](replacing-user-password1.)
+- Diagnostica dei problemi di rete
+- Riparazione di un sistema operativo difettoso
+- Correzione di una configurazione errata di un firewall software
+- Test delle prestazioni dei dischi
+- Test del processore e della memoria RAM
+
+> [!warning]
+>
+> Assicurati di eseguire un backup dei tuoi dati se ancora non ne hai.
+>
+> Se sul server sono presenti servizi in produzione, la modalità Rescue li interrompe fino al riavvio della macchina in modalità normale.
+>
+
+**Questa guida ti mostra come riavviare un server in modalità Rescue e montare le partizioni.**
+
+## Prerequisiti
+
+- Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+
+## Procedura
+
+> [!warning]
+> Ti ricordiamo che se hai impostato una chiave SSH di default nel tuo spazio per i prodotti dedicati, non riceverai una password di root durante il riavvio di un server in modalità Rescue. In questo caso, è necessario disattivare di default la chiave SSH prima di riavviare il server in modalità Rescue. Per effettuare questa operazione, consulta questa [sezione](creating-ssh-keys-dedicated#disablesshkey.) della guida corrispondente.
+>
+
+La modalità Rescue può essere attivata solo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}.
+
+Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} poi su `Modifica`{.action}.
+
+![Modifica la modalità di avvio](rescue-mode-001.png){.thumbnail}
+
+Nella pagina successiva, seleziona **Avviare in Rescue mode**. Se il tuo server utilizza un sistema operativo Linux, seleziona `rescue-customer`{.action} nel menu a tendina. Se il tuo server è Windows, scegli `WinRescue`{.action} (consulta la [sezione della guida qui sotto](#windowsrescue.)).
+Se **non** vuoi che le credenziali di accesso siano inviate all'indirizzo principale del tuo account, inserisci un altro indirizzo email.
+
+> [!warning]
+>
+> Alcuni account cliente OVHcloud possono essere interessati da un errore relativo alla lingua delle email di recupero: sono inviati in francese invece della lingua scelta per l’account. Sebbene la causa dell'errore sia stata corretta dal 20 settembre 2022, è necessario aggiornare una volta l'indirizzo email per risolvere il problema. Per farlo, inserisci l'indirizzo email del tuo account cliente in questo step prima di attivare la modalità Rescue.
+>
+
+Clicca su `Continua`{.action} per procedere al passo successivo, poi su `Conferma`{.action}.
+
+![Modalità rescue-customer](rescue-mode-08.png){.thumbnail}
+
+Una volta terminata la modifica, clicca sui tre puntini `...`{.action} in corrispondenza della voce "Stato" nella sezione intitolata **Stato dei servizi**.
+<br>Clicca su `Riavvia`{.action} e il server riavvia in modalità Rescue. Questa operazione potrebbe richiedere alcuni minuti.
+<br>Per verificare lo stato di avanzamento, clicca sulla scheda `Operazioni`{.action}. Riceverai un'email con le credenziali (inclusa la password di accesso) dell'utente "root" della modalità Rescue.
+
+![Riavvio del server](rescue-mode-02.png){.thumbnail}
+
+Una volta terminate le operazioni in modalità Rescue, ricordate di ridefinire il netboot su `Avviare da hard disk`{.action} e riavviare il server.
+
+### Linux
+
+#### Utilizzo della modalità Rescue (SSH)
+
+> [!primary]
+>
+> Se utilizzi una chiave SSH (attiva anche nello Spazio Cliente OVHcloud), non riceverai alcuna password. Una volta che il server è in modalità Rescue, potrai accedere direttamente alla tua chiave SSH.
+>
+
+Dopo il riavvio del server, riceverai un'email con le credenziali di accesso in modalità Rescue. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul nome associato al tuo identificativo cliente nell'angolo in alto a destra del tuo Spazio Cliente e poi su `Email di servizio`{.action}.
+
+A questo punto dovrai accedere al tuo server da riga di comando o tramite un tool [SSH](ssh_introduction1.), utilizzando la password di root generata per la modalità Rescue.
+
+ad esempio:
+
+```bash
+ssh root@ns3956771.ip-169-254-10.eu
+root@ns3956771.ip-169-254-10.eu's password:
+```
+
+> [!warning]
+>
+> Il tuo client SSH bloccherà probabilmente la connessione in un primo momento a causa di un'incompatibilità dell'impronta ECDSA. Questo è normale perché la modalità Rescue utilizza il proprio server SSH temporaneo.
+>
+> Un modo per ovviare a questo problema è "commentare" l’impronta del tuo server aggiungendo un `#` davanti alla sua riga nel file `known_hosts`. Ricordarsi di annullare la modifica prima di ripristinare il netboot in modalità "normale".<br>È inoltre possibile eliminare la riga dal file. Una volta stabilita nuovamente la connessione, il client SSH aggiungerà una nuova voce per il server. Per maggiori informazioni, consulta la nostra guida "[Introduzione a SSH](ssh_introduction#login.)".
+>
+
+#### Montaggio delle partizioni
+
+A meno che non si configurino i dischi del server in modo che debbano essere scollegati (*unmounted*), è necessario innanzitutto montare la partizione di sistema.
+
+Il mount delle partizioni viene realizzato con il comando `mount` in SSH. Dovrai prima listare le tue partizioni al fine di poter recuperare il nome di quella che vorrai montare. Puoi fare riferimento ai seguenti esempi di codice:
+
+```bash
+fdisk -l
+```
+
+```console
+Disk /dev/hda 40.0 GB, 40020664320 bytes
+255 heads, 63 sectors/track, 4865 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+
+Device Boot Start End Blocks Id System
+/dev/hda1 * 1 1305 10482381 83 Linux
+/dev/hda2 1306 4800 28073587+ 83 Linux
+/dev/hda3 4801 4865 522112+ 82 Linux swap / Solaris
+
+Disk /dev/sda 8254 MB, 8254390272 bytes
+16 heads, 32 sectors/track, 31488 cylinders
+Units = cylinders of 512 * 512 = 262144 bytes
+
+Device Boot Start End Blocks Id System
+/dev/sda1 1 31488 8060912 c W95 FAT32 (LBA)
+```
+
+Una volta identificato il nome della partizione da montare, esegui il comando:
+
+```bash
+mount /dev/hda1 /mnt/
+```
+
+> [!primary]
+>
+> La tua partizione verrà ora montata. A questo punto puoi effettuare operazioni sul file system.
+>
+> Se il tuo server dispone di una configurazione RAID software, devi montare il tuo volume RAID (in generale `/dev/mdX`).
+>
+
+Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.
+
+#### VMware - Installazione di un datastore
+
+È possibile creare un datastore VMware nello stesso modo descritto nello step precedente.
+
+Per recuperare il nome della partizione del datastore, è sufficiente elencare le proprie partizioni:
+
+```bash
+fdisk -l
+```
+
+Monta la partizione con questo comando, sostituendo `sdbX` con il valore identificato nel passaggio precedente:
+
+
+```bash
+vmfs-fuse /dev/sdbX /mnt
+```
+
+Se disponete di datastore `VMFS 6`, passate alla cartella `sbin` e create la cartella di mount:
+
+```bash
+cd /usr/local/sbin/
+mkdir /mnt/datastore
+```
+
+Per recuperare il nome della partizione del datastore, è sufficiente elencare le proprie partizioni:
+
+```bash
+fdisk -l
+```
+
+Monta la partizione con questo comando, sostituendo `sdbX` con il valore identificato nel passaggio precedente:
+
+```bash
+vmfs6-fuse /dev/sdbX /mnt/datastore/
+```
+
+Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.
+
+### Windows <a name="windowsrescue"></a>
+
+#### Utilizzo degli strumenti WinRescue
+
+Dopo il riavvio del server, riceverai un'email con le credenziali di accesso in modalità Rescue. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul nome associato al tuo identificativo cliente nell'angolo in alto a destra del tuo Spazio Cliente e poi su `Email di servizio`{.action}.
+
+Per utilizzare la modalità Rescue offerta da Windows, scarica e installa una console VNC o utilizza il modulo `IPMI` nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+
+![WinRescue Windows](rescue-mode-07.png){.thumbnail}
+
+Questi strumenti sono già installati in questa modalità:
+
+|Strumento|Descrizione|
+|---|---|
+|Mozilla ULight|Un browser Web.|
+|Memory Diagnostics Tool|Utilizza Windows per testare la memoria RAM.|
+|Explorer_Q-Dir|Un provider di file.|
+|GSmartControl|Uno strumento di verifica degli hard disk e degli hard disk SSD.|
+|PhotoRec|Un tool di recupero di file potenzialmente persi su un disco.|
+|SilverSHielD|Un server SSH2 e SFTP.|
+|System Recovery|Un tool Windows di ripristino e riparazione del sistema.|
+|TestDisk|Software di recupero dati. Ti permette di recuperare e modificare partizioni corrotte, ritrovare partizioni scomparse, riparare un settore di boot e ricostruire un MBR difettoso.|
+|FileZilla|Un client FTP open source. Prende in carico i protocolli SSH e SSL e dispone di un’interfaccia <i>Drag and Drop</i> (trascina e rilascia) chiara e intuitiva.  Può essere utilizzato per trasferire i tuoi dati verso un server FTP, come il backup FTP fornito con la maggior parte dei modelli di server OVHcloud.|
+|7-ZIP|Software per la compressione e archiviazione di file e cartelle, che legge questi formati: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR e Z. Con 7-ZIP è inoltre possibile creare archivi nei formati: BZIP2, GZIP, TAR, WIM, XZ, Z e ZIP.|
+
+## Per saperne di più
+
+[Modifica la password amministratore su un server dedicato Windows](changing-admin-password-on-windows1.)
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
