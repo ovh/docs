@@ -1,5 +1,5 @@
 ---
-title: "Guide tutoriel IAM dans un cloud privée VMware managé par OVHcloud"
+title: "Guides premiers pas avec IAM dans mon cloud privée VMware managé par OVHcloud"
 excerpt: "Utiliser les roles IAM dans une infrastructure VMware managé par OVHcloud"
 updated: 2024-05-24
 ---
@@ -25,7 +25,6 @@ Voici les liens des guides :
 - Guide 5 : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
 
 ## Prérequis
-Pour activer IAM, vous aurez besoin des éléments suivants :
 
 - Avoir un compte OVHcloud (voir guide :[Comment créer un compte OVHcloud](https://help.ovhcloud.com/csm/fr-account-create-ovhcloud-account?id=kb_article_view&sysparm_article=KB0043023)).
 - Disposer au préalable d'un ou plusieurs produits liés à ce compte OVHcloud (Hosted Private Cloud powered by VMware, Service Pack VMware etc..)
@@ -46,14 +45,13 @@ Pour activer IAM, vous aurez besoin des éléments suivants :
       
       2.1 Ensuite quand la fenetre s'affiche choisissez le nom de votre rôle et cliquez sur **Confirmer**
 
-Vous pouvez après éditer les droits du groupe de la même manière que avec un utilisateur normal, si vous ne savez pas suivez ce guide : [..]()
+Vous pouvez après éditer les droits du groupe de la même manière que avec un utilisateur local Vsphere.
 
+Vous pouvez aussi faire le choix d'être **Vsphere Admin** dans les permissions managés de la politique IAM.
 
 ![IAM role add](images/iam_role_8.png){.thumbnail}
 
 ![IAM role add](images/iam_role_9.png){.thumbnail}
-
-Pour les permissions, vous pouvez faire le choix d'être **Vsphere Admin** mais vous n'aurez pas la granularité pour chaque centre de données et les différents droits de chaque élément VMware.
 
 ## Via l'API OVHcloud : 
 
