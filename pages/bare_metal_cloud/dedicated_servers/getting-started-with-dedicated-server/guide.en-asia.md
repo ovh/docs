@@ -1,7 +1,7 @@
 ---
 title: "How to get started with a dedicated server"
 excerpt: "Find out how to manage a dedicated server in the OVHcloud Control Panel and how to start with configuring and securing a server"
-updated: 2024-04-10
+updated: 2024-05-10
 ---
 
 ## Objective
@@ -74,11 +74,20 @@ If you need to modify the partioning scheme of your operating system, check the 
 
 In this step you are able to set up RAID and partitioning options within the limits of the server's hardware and operating system.
 
+> [!warning]
+>
+> If your server comes with Softraid, our system will give priority to installing the operating system using all your disks. This technology is called RAID 1. RAID 1 (disk mirroring) is the replication of data on two or more disks. With this process, all the disks are automatically mounted during the installation procedure. This also means that you will only have access to storage on one disk, with the other disk(s) being used for data replication, providing redundancy in the event of a disk failure.
+>
+
+If you don't want to use all your disks for the installation, you can update it after ticking the "Customise the partition configuration" box. In this case, you will be responsible for mounting the other disks in the operating system. You should refer to the operating system documentation to find out how to do this.
+
+![select disks](images/choosedisk.png){.thumbnail}
+
 After you have finished your adjustments, click `Next`{.action} to arrive at the summary page.
 
 You will find additional questions that are specific to the chosen operating system.
 
-For example, if you are installing a GNU/Linux-based operating system, you can add your SSH key in the last step of the installation process.
+For example, if you are installing a GNU/Linux-based operating system, you can add your SSH key in the last step of the installation process (optional).
 
 For a detailed explanation on how to generate SSH keys, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
