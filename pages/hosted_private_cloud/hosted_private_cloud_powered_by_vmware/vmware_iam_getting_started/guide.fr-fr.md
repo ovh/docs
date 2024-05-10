@@ -1,6 +1,6 @@
 ---
-title: "Premiers pas avec IAM dans votre Hosted Private Cloud - VMware On OVHcloud"
-excerpt: "Bien démarrer avec IAM dans votre cloud privée VMware managé par OVH"
+title: "Guides premiers pas avec IAM dans mon cloud privée VMware managé par OVHcloud"
+excerpt: "Comment fonctionne IAM dans un cloud privé VMware managé par OVHcloud et une faq"
 updated: 2024-05-24
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Guide tutoriel IAM dans un cloud privée VMware managé par OVHcloud"
+title: "Guides premiers pas avec IAM dans mon cloud privée VMware managé par OVHcloud"
 excerpt: "Comment activer avec IAM dans une infrastructure VMware managé par OVHcloud"
 updated: 2024-05-24
 ---
@@ -23,7 +23,6 @@ Voici les liens des autres guides IAM private cloud :
 - Guide 5 : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
 
 ## Prérequis
-Pour activer IAM, vous aurez besoin des éléments suivants :
 
 - Avoir un compte OVHcloud (voir guide :[Comment créer un compte OVHcloud](https://help.ovhcloud.com/csm/fr-account-create-ovhcloud-account?id=kb_article_view&sysparm_article=KB0043023)).
 - Disposer au préalable d'un ou plusieurs produits liés à ce compte OVHcloud (Hosted Private Cloud powered by VMware, Service Pack VMware etc..)
