@@ -340,7 +340,7 @@
 >>>>>>> e0452e8634 (IAM/VMware : Add changes to folders structure and index.md)
         + [Access and Security](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security)
           + [Using Active Directory server as an authentication source (Federation)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/federation)
-          + [IAM - Getting started](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
+          + [IAM - Getting started and FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
           + [IAM - How to activate IAM in a private cloud VMware](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
           + [IAM - How to use default IAM role in VMware private cloud](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
           + [IAM - How to link an IAM policy to a role](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
