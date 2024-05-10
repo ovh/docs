@@ -7,8 +7,7 @@ updated: 2024-05-24
 # Table des matières
 1. [Objectif](#Objectif)
 2. [Prérequis](#Prérequis)
-3. [En pratique](#En pratique)
-4. [Instruction](#Instruction)
+3. [Instruction](#Instruction)
 5. [Aller plus loin](#Aller plus loin)
 
 ---
