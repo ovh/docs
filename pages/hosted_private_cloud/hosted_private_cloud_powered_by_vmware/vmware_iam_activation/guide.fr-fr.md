@@ -32,7 +32,7 @@ Voici les liens des autres guides IAM private cloud :
 
 ## Instruction
 
-## Etape 1
+## Etape 1 : Activer IAM
 
 > [!CAUTION]
 > Cette opération pourra prendre jusqu’à 30 minutes.
@@ -57,10 +57,10 @@ Si vous ne trouvez pas, utilisez cette "url" en la remplaçant par le nom de vot
 > Cette opération pourra prendre jusqu’à 30 minutes.
 
 ### Pour activer IAM via l'API :
+> [!IMPORTANT]
+> Pensez bien à remplacer le **serviceName** par le vôtre..
 
 1. Activer l'option IAM sur votre infrastructure depuis l'API OVHcloud :
-
-**Attention** : Pensez bien à remplacer le **serviceName** par le vôtre.
 
 > [!tabs]
 > 1st tab title
