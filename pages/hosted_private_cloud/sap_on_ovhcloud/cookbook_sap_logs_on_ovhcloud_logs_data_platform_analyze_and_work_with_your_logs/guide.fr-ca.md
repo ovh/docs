@@ -60,22 +60,22 @@ Quelques exemples de filtrage :
 <details>
 <summary>Logs d'un fichier de trace de type work process (dev_w*)</summary>
 
-![filter_dev_w1](images/filter_dev_w1.png){.thumbnail}
-![filter_dev_w2](images/filter_dev_w2.png){.thumbnail}
+<img src="images/filter_dev_w1.png" alt="filter_dev_w1"/>
+<img src="images/filter_dev_w2.png" alt="filter_dev_w2"/>
 </details>
 
 <details>
 <summary>Logs du serveur ldphan avec hana_sid HDB</summary>
 
-![filter_hana1](images/filter_hana1.png){.thumbnail}
-![filter_hana2](images/filter_hana2.png){.thumbnail}
+<img src="images/filter_hana1.png" alt="filter_hana1"/>
+<img src="images/filter_hana2.png" alt="filter_hana2"/>
 </details>
 
 <details>
 <summary>Logs de tous les serveurs dont le nom démarre par ldp et provenant des fichiers de trace RFC (dev_rfc*)</summary>
 
-![filter_ldp_and_dev_rfc1](images/filter_ldp_and_dev_rfc1.png){.thumbnail}
-![filter_ldp_and_dev_rfc1](images/filter_ldp_and_dev_rfc2.png){.thumbnail}
+<img src="images/filter_ldp_and_dev_rfc1.png" alt="filter_ldp_and_dev_rfc1"/>
+<img src="images/filter_ldp_and_dev_rfc2.png" alt="filter_ldp_and_dev_rfc2"/>
 </details>
 
 À partir de ces champs, vous avez la possibilité de créer des recherches afin de vous faciliter l'analyse de vos logs.

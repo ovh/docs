@@ -87,22 +87,22 @@ Examples of filter usage:
 <details>
 <summary>Logs of the work process trace files (dev_w*)</summary>
 
-![filter_dev_w1](images/filter_dev_w1.png){.thumbnail}
-![filter_dev_w2](images/filter_dev_w2.png){.thumbnail}
+<img src="images/filter_dev_w1.png" alt="filter_dev_w1"/>
+<img src="images/filter_dev_w2.png" alt="filter_dev_w2"/>
 </details>
 
 <details>
 <summary>Logs of the server ldphan with the hana_sid HDB</summary>
 
-![filter_hana1](images/filter_hana1.png){.thumbnail}
-![filter_hana2](images/filter_hana2.png){.thumbnail}
+<img src="images/filter_hana1.png" alt="filter_hana1"/>
+<img src="images/filter_hana2.png" alt="filter_hana2"/>
 </details>
 
 <details>
 <summary>Logs of all servers with a name starting with ldp and coming from the RFC trace files (dev_rfc*)</summary>
 
-![filter_ldp_and_dev_rfc1](images/filter_ldp_and_dev_rfc1.png){.thumbnail}
-![filter_ldp_and_dev_rfc1](images/filter_ldp_and_dev_rfc2.png){.thumbnail}
+<img src="images/filter_ldp_and_dev_rfc1.png" alt="filter_ldp_and_dev_rfc1"/>
+<img src="images/filter_ldp_and_dev_rfc2.png" alt="filter_ldp_and_dev_rfc2"/>
 </details>
 
 With those pre-configured fields available you can as well create your own saved searches to ease the navigation in your logs.
