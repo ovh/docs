@@ -109,10 +109,29 @@ For each **TCP** rule, you must choose:
 >
 > **Configuration example:**
 >
-> - Priority 0: Authorise TCP established
-> - Priority 1: Authorise UDP source port 53
-> - Priority 2: Authorise ICMP
+> If your server exposes services, you probably would like to allow access to them by anyone:
+>
+> - Priority 0: Authorize TCP to port 22 (e.g., 22 if you use SSH with standard port,or 443 if you have a public web server)
+>
+> If your server needs to contact external services (outside OVHcloud network), the answer that comes back from such services must be authorized for communication to be successfull.
+> Best way is to precisely define peer-IP address, port and protocol, for example:
+>
+> - Priority 1: Authorize TCP established from 1.2.3.4 port 443 (if your server queries external web services on 1.2.3.4:443)
+> - Priority 2: Authorize IPv4 established from 5.6.7.8 port 3306 (if your server queries external SQL server on 5.6.7.8:3306. Both: TCP and UDP are allowed.)
+>
+> Or, sometimes when IP can be random, let's define by protocol and port only: 
+>
+> - Priority 3: Authorize UDP source port 53 (if you need to query an external DNS server. This rule can also be configured using TCP instead or in parallel, depending on your needs.)
+>
+> And finally, in order to block any other traffic (thus, making firewall effective) we must block all the other traffic:
+>
 > - Priority 19: Refuse IPv4
+
+	
+
+
+
+
 
 > [!warning]
 > Firewall setups with only "Accept" mode rules are not effective at all. There must be an instruction as to which traffic should be dropped by the firewall. You will see a warning unless such a "Deny" rule is created.
