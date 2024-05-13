@@ -1921,6 +1921,9 @@
                 + [Tracking slow MySQL queries with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_mysql_slow_queries)
                 + [Supervising your HAProxy deployment with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_haproxy)
                 + [Analyzing Twitter with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_twitter)
+    + [KMS](manage-operate-kms)
+        + [Getting started](manage_and_operate/kms/quick-start)
+        + [Architecture description](manage_and_operate/kms/architecture-overview)
 + OVHcloud Labs
     + [Data Collector](products/ovhcloud-labs-data-collector)
         + [Getting started](ovhcloud-labs-data-collector-getting-started)
