@@ -95,15 +95,13 @@ Die Schritte für diesen Schritt müssen im Verwaltungsbereich von SquareSpace a
 > - Sie können mehrere benutzerdefinierte Domainnamen für Ihre Website verwenden. Sie können so viele Dateien verbinden oder speichern, wie Sie möchten.
 > - Sie können keinen benutzerdefinierten Domänennamen mit SquareSpace verbinden, wenn der Domänenname das Wort „squarespace“ oder „sqsp“ enthält.
 
-
-
-
+Befolgen Sie zunächst die in Schritt 1 dieses [SquareSpace-Handbuchs](https://support.squarespace.com/hc/de/articles/12880712406797-Eine-OVHcloud-Domain-mit-deiner-Squarespace-Website-verbinden){.external} beschriebenen Schritte.
 
 > [!warning]
 >
 > Wenn Sie die Warnmeldung „This domain is already connected to another Squarespace site“ erhalten (Diese Domain ist bereits mit einer anderen Squarespace-Website verbunden), überprüfen Sie Ihre anderen Squarespace-Websites, um festzustellen, mit welcher Website die Domain verbunden ist. Trennen Sie dann die Verbindung zu dieser Website.
 
-Gehen Sie für den weiteren Vorgang direkt zu Schritt 2 dieses [SquareSpace-Handbuchs](https://support.squarespace.com/hc/de/articles/205812378-Eine-Domain-eines-Drittanbieters-mit-deiner-Squarespace-Website-verbinden){.external}.
+Gehen Sie für den weiteren Vorgang direkt zu Schritt 2 dieses [SquareSpace-Handbuchs](https://support.squarespace.com/hc/de/articles/12880712406797-Eine-OVHcloud-Domain-mit-deiner-Squarespace-Website-verbinden){.external}.
 
 Wenn Sie ein E-Mail-Angebot von OVHcloud verwenden oder eines unserer [E-Mail-Angebote](/links/web/emails) abonnieren möchten, bereiten Sie Ihre DNS-Zone entsprechend vor. Lesen Sie unsere Anleitung „[Konfiguration eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx)“.
 
