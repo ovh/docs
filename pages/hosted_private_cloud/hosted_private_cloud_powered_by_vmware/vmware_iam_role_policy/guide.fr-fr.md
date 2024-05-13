@@ -5,12 +5,12 @@ updated: 2024-05-24
 ---
 
 # Table des matières
-1. [Liens des guides IAM](#Objectif)
+1. [Objectif - Liens des guides IAM](#Objectif)
 2. [Prérequis](#Prérequis)
 3. [Instruction](#Instruction)
-4. [Etape 1](#Etape 1)
-5. [Etape 2](#Etape 2)
-6. [Aller plus loin](#Aller plus loin)
+4. [Instruction - Etape 1](#Etape 1)
+5. [Instruction - Etape 2](#Etape 2)
+6. [Fin - Aller plus loin](#Aller plus loin)
 
 ---
 ## Objectif
