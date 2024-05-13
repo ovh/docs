@@ -54,7 +54,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> Um die vorhandenen Einträge vom Typ A zu identifizieren, klicken Sie oben in der Tabelle mit den DNS-Einträgen auf das Filtermenü und wählen Sie `A` aus.<br>
 >> ![dnszone](images/filter-a.png){.thumbnail}<br>
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrem Domainnamen ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
->> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www." und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
+>> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www" und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn Sie noch keinen A-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `A`{.action}<br><br>
 >> Sie müssen nacheinander 4 A-Einträge erstellen, um die 4 IPv4-Adressen für SquareSpace anzugeben.
 >> Lassen Sie das Feld **Subdomain** leer und geben Sie die erste SquareSpace-IPv4-Adresse `198.185.159.144` in das Feld **Ziel** ein.
@@ -63,11 +63,57 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> **AAAA-Eintrag**<br><br>
 >>  Um vorhandene AAAA-Einträge zu identifizieren, klicken Sie oben in der Tabelle mit DNS-Einträgen auf das Filtermenü und wählen Sie `AAAA` aus.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrer Domain ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
+>> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), löschen Sie diesen ebenfalls, damit er nicht in Konflikt mit dem CNAME-Eintrag steht, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile zu Ihrer Domain mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
+>> - Wenn Sie keinen existierenden „AAAA“-Eintrag haben, fahren Sie mit Schritt 3 fort.
+> **Schritt 3**
+>> **TXT-Eintrag**<br><br>
+>> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü, und wählen Sie `TXT`.<br> aus, um vorhandene TXT-Einträge zu identifizieren.
+>>![dnszone](images/filter-txt.png){.thumbnail}<br>
+>> - Wenn „TXT“-Einträge für die Domain alleine (Beispiel: `mydomain.ovh.`) und ihre Subdomain als "www" (Beispiel: `www.mydomain.ovh.`) vorhanden sind, müssen diese gelöscht werden, damit sie nicht in Konflikt mit dem CNAME-Eintrag stehen, den Sie in Schritt 3 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihre Domain allein mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
+> **Schritt 4**
+>> **CNAME-Eintrag**<br><br>
+>> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü und wählen Sie `CNAME`.<br>
+>>![dnszone](images/filter-cname.png){.thumbnail}
+>> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile Ihrer Subdomain in "www" (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
+>> - Wenn Sie keinen existierenden "CNAME" Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} oben rechts auf Ihrem Bildschirm und wählen Sie das „Daraufzeigefeld“ `CNAME`{.action}.
+>> Füllen Sie das Feld **Subdomain** mit dem Wert `www` aus und geben Sie `verify.squarespace.com.` in das Feld **Ziel**.<br>
+>>![cname-entry](images/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
+>> Klicken Sie auf `Weiter`{.action} und bestätigen Sie Ihren "CNAME" Eintrag.
+>> Fügen Sie den zweiten CNAME-Eintrag hinzu, indem Sie `ext-cust.squarespace.com.` in das Feld **Ziel**.<br>
 
+Die DNS-Zone ist nun so konfiguriert, dass sie mit einem SquareSpace Hosting verbunden wird.
 
+### Domainnamen mit SquareSpace verbinden
 
+Die Schritte für diesen Schritt müssen im Verwaltungsbereich von SquareSpace ausgeführt werden.
 
+> [!primary]
+>
+> - Sie können Ihre Domain mit einer Test- oder kostenpflichtigen SquareSpace-Website verbinden. Sie können keine Verbindung mit einer abgelaufenen Website herstellen.
+> - Wenn Sie über einen E-Mail-Account verfügen, der mit Ihrer Domain verbunden ist, können Sie diesen auch nach der Anmeldung der Domain bei SquareSpace weiter verwenden. Bevor Sie sich mit Ihrem Domainnamen verbinden, empfehlen wir Ihnen, diese [SquareSpace-Anleitung](https://support.squarespace.com/hc/de/articles/217601877-Eine-E-Mail-Adresse-einer-eigenen-Domain-die-Sie-bereits-besitzen-mit-Squarespace-nutzen){.external} zu lesen.
+> - Sie können mehrere benutzerdefinierte Domainnamen für Ihre Website verwenden. Sie können so viele Dateien verbinden oder speichern, wie Sie möchten.
+> - Sie können keinen benutzerdefinierten Domänennamen mit SquareSpace verbinden, wenn der Domänenname das Wort „squarespace“ oder „sqsp“ enthält.
 
+Führen Sie die folgenden Schritte aus, um zu beginnen:
+
+1.	Melden Sie sich bei Ihrem SquareSpace-Konto an und gehen Sie in den Bereich `Domainnamen`{.action}.
+2.	Klicken Sie auf `Ich habe bereits eine Domain`{.action} und dann auf `Domain eingeben`{.action}.
+3.	Klicken Sie auf `Domain verbinden`{.action}.
+4.	Wählen Sie im Dropdown-Menü **OVHcloud** aus. Wenn es in der Auswahl nicht angezeigt wird, klicken Sie auf `Andere`{.action}. Sie können Ihre Domain auch dann verbinden, wenn der Anbieter nicht auf der Liste steht.
+5.	Klicken Sie auf `Domain verbinden`{.action} und dann auf `Weiter`{.action}.
+
+> [!warning]
+>
+> Wenn Sie die Warnmeldung „This domain is already connected to another Squarespace site“ erhalten (Diese Domain ist bereits mit einer anderen Squarespace-Website verbunden), überprüfen Sie Ihre anderen Squarespace-Websites, um festzustellen, mit welcher Website die Domain verbunden ist. Trennen Sie dann die Verbindung zu dieser Website.
+
+Gehen Sie für den weiteren Vorgang direkt zu Schritt 2 dieses [SquareSpace-Handbuchs](https://support.squarespace.com/hc/de/articles/205812378-Eine-Domain-eines-Drittanbieters-mit-deiner-Squarespace-Website-verbinden){.external}.
+
+> [!primary]
+>
+> Die Überprüfung Ihres Domainnamens kann 24 bis 72 Stunden dauern, bis die Verbindung ordnungsgemäß funktioniert. In der Zwischenzeit werden Sie von SquareSpace aufgefordert, den Status der Verbindung und die Einstellungen für den Domainnamen im Bedienfeld `Domainübersicht`{.action} zu überprüfen. Gehen Sie hierzu zu Schritt 7 dieser [SquareSpace-Anleitung](https://support.squarespace.com/hc/de/articles/205812378-Eine-Domain-eines-Drittanbieters-mit-deiner-Squarespace-Website-verbinden){.external}.
+
+Wenn Sie ein E-Mail-Angebot von OVHcloud verwenden oder eines unserer [E-Mail-Angebote](/links/web/emails) abonnieren möchten, bereiten Sie Ihre DNS-Zone entsprechend vor. Lesen Sie unsere Anleitung „[Konfiguration eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx)“.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
