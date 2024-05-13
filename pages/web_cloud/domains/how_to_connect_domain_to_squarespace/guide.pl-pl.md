@@ -60,3 +60,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> Kolejno utwórz 4 rekordy typu "A", aby wpisać 4 adresy IPv4 związane z usługą SquareSpace.
 >> Pozostaw puste pole **Subdomena** i wprowadź pierwszy adres IPv4 domeny SquareSpace `198.185.159.144` w polu **Adres docelowy**.
 >> Kliknij przycisk `Dalej`{.action}, zatwierdź rejestrację "A", powtórz operację dla 3 pozostałych adresów IPv4 `198.185.159.145`; `198.49.23.144`; `198.49.23.145` i przejdź do etapu 2.
+> **Etap 2**
+>> **Rekord AAAA**<br><br>
+>>  Aby zidentyfikować istniejące rekordy "AAAA", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `AAAA`.<br>
+>> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
