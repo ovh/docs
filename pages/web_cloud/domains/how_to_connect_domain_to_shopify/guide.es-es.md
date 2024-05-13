@@ -97,7 +97,7 @@ Las operaciones de este paso deben realizarse desde el área de cliente de Shopi
 
 Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](/links/web/emails), deberá preparar su zona DNS en consecuencia. Para más información, consulte nuestra guía sobre la [configuración de un registro MX](/pages/web_cloud/domains/dns_zone_mx).
 
-## Ir más lejos <a name="go-further"></a>
+## Más información <a name="go-further"></a>
 
 [Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
