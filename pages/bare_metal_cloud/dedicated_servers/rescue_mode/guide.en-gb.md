@@ -33,26 +33,55 @@ Usual tasks the rescue mode is appropriate for include:
 
 ## Instructions
 
-> [!warning]
-> Please note that if you have set a default SSH key in your Control Panel for dedicated products, you will not receive a root password when rebooting a server in rescue mode. In this case, you must first disable the key before proceeding with the server reboot. To do so, please consult this [section](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) of the relevant guide.
-> 
-
 You can only activate rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Go to the `Bare Metal Cloud`{.action} section and then select the server on which to enable rescue mode from **Dedicated Servers**.
 
 Look for "Boot" in the **General information** box and click on `...`{.action}, then on `Edit`{.action}.
 
 ![Modify boot mode](images/rescue-mode-001.png){.thumbnail}
 
-In the next page, select **Boot in rescue mode**. If your server has a Linux-based OS, select `rescue-customer`{.action} from the menu. If your server runs on Windows, you can also choose "WinRescue" (see the [guide section below](#windowsrescue)). Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
+In the next page, select **Boot in rescue mode**.
+
+### Linux Rescue
+
+If your server has a Linux-based OS, select `rescue-customer`{.action} from the menu. 
+
+In this situation, two authentication modes are available:
+- Password authentication
+- SSH Key authentication
+<br><br>
+
+#### SSH Key authentication
+> [!primary]
+> 
+> If you choose SSH Key authentication, make sure your public SSH key respects the ``RSA``, ``ECDSA``, or ``ED25519`` format.
+>
+
+Select the “Authentication via SSH key” option, then enter your **public** SSH key in the dedicated text area.
+
+![ Linux SSH Key authentication](images/rescue-mode-08.png){.thumbnail}
+
+#### Password authentication
+Select the “Password authentication” option.<br>
+Login details will be sent by default to the main address of your OVHcloud account. You can enter a different address in the field ``Send new login details to the following email address``.
+
+![Linux password authentication](images/rescue-mode-09.png){.thumbnail}
+
+### Windows Rescue
+
+For servers running a Windows operating system, in addition to the `rescue-customer`{.action} rescue, you can choose the `WinRescue`{.action} rescue (see the [guide section below](#windowsrescue)). Note that only password authentication is available with this type of rescue.
+
+Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
+
+![Windows password authentication](images/rescue-mode-10.png){.thumbnail}
 
 > [!warning]
 >
 > Some OVHcloud customer accounts may be affected by an error regarding the language of rescue emails: they are sent in French instead of the chosen account language. Although the cause of the error has been corrected since September 20, 2022, the email address needs to be updated once to resolve the issue. To do this, enter your customer account's email address in this step before you enable rescue mode.
 >
 
-Click on `Next`{.action} to proceed to the next step and on `Confirm`{.action} to validate the change.
+### Final steps
 
-![Mode rescue-customer](images/rescue-mode-08.png){.thumbnail}
+Click on `Next`{.action} to proceed to the next step and on `Confirm`{.action} to validate the change.
 
 Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
 

@@ -33,20 +33,50 @@ Le mode rescue est généralement adapté aux tâches suivantes :
 
 ## En pratique
 
-> [!warning]
-> Veuillez noter que si vous avez défini une clé SSH par défaut dans votre espace pour les produits dédiés, vous ne recevrez pas de mot de passe root lors du redémarrage d'un serveur en mode rescue. Dans ce cas, vous devez d'abord désactiver la clé SSH par défaut avant de redémarrer le serveur en mode rescue. Pour ce faire, nous vous invitons à consulter cette [section](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) du guide correspondant.
->
-
 Le mode rescue ne peut être activé que depuis votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
 
 Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Modifier`{.action}.
 
 ![Changer le mode de démarrage](images/rescue-mode-001.png){.thumbnail}
 
-Dans la page suivante, sélectionnez **Booter en mode rescue**. Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue-customer`{.action} dans la liste déroulante. Si votre serveur est sous Windows, choisissez  `WinRescue`{.action} (voir la [section du guide ci-dessous](#windowsrescue). Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
-<br>Cliquez sur `Suivant`{.action} et `Valider`{.action}.
+Dans la page suivante, sélectionnez **Booter en mode rescue**. 
 
-![Mode rescue-customer](images/rescue-mode-08.png){.thumbnail}
+### Rescue Linux
+
+Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue-customer`{.action} dans la liste déroulante.
+Dans cette situation, deux modes d'authentification vous sont proposés :
+- Authentification par mot de passe
+- Authentification par clé SSH
+<br><br>
+
+#### Authentification par clé SSH
+> [!primary]
+> 
+> Si vous choisissez l'authentification par clé SSH, veillez à ce que votre clé SSH publique respecte le format ``RSA``, ``ECDSA``, ou ``ED25519``.
+>
+
+Sélectionnez l'option ``Authentification par clé SSH`` puis saisissez votre clé SSH **publique** dans la zone de texte dédiée.
+
+![Authentification par clé SSH](images/rescue-mode-08.png){.thumbnail}
+
+#### Authentification par mot de passe
+Sélectionnez l'option ``Authentification par mot de passe``.<br>
+Les identifiants de connexion seront envoyés par défaut sur l'adresse principale de votre compte OVHcloud. Vous avez la possibilité de renseigner une adresse différente dans le champ ``Recevoir les identifiants du mode sur l'adresse e-mail``.
+
+![Authentification par mot de passe Linux](images/rescue-mode-09.png){.thumbnail}
+
+
+### Rescue Windows
+
+Pour les serveurs disposant d'un système d'exploitation Windows, en plus du rescue `rescue-customer`{.action}, vous avez la possibilité de choisir le rescue `WinRescue`{.action} (voir la [section du guide ci-dessous](#windowsrescue). Notez que seule l'authentification par mot de passe est disponible avec ce type de rescue.
+
+Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
+
+![Authentification par mot de passe Windows](images/rescue-mode-10.png){.thumbnail}
+
+### Etapes finales
+
+<br>Cliquez sur `Suivant`{.action} et `Valider`{.action}.
 
 Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Statut » dans la zone intitulée **Etat des services**. 
 <br>Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. 
