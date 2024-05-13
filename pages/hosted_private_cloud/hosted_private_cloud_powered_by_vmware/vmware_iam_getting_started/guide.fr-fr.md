@@ -102,9 +102,9 @@ Un role IAM ne peut qu'uniquement être ajouté manuellement dans une politique 
 
 Oui je peux activer IAM en cliquant sur un seul bouton depuis mon cloud privé VMware (voir guide : [Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)).
 
-## Comment sont gérés les utilisateurs de IAM Vsphere ?
+## Comment sont gérés les utilisateurs d'IAM avec Vsphere ?
 
-L'activation de l'IAM OVHcloud ne désactive pas vos utilisateurs Hosted Private Cloud existants (Vsphere), vous pourrez toujours les utiliser pour vous connecter localement, sans utiliser IAM. Choisissez alors un utilisateur local et non IAM.
+L'activation de l'IAM OVHcloud ne désactive pas vos utilisateurs Hosted Private Cloud existants (Vsphere locaux), vous pourrez toujours les utiliser pour vous connecter localement, sans utiliser IAM. Choisissez alors un utilisateur local et non IAM.
 
 # Est-ce que je peux choisir entre un utilisateur local et un utilisateur IAM lors de la connexion à Vsphere ?
 
