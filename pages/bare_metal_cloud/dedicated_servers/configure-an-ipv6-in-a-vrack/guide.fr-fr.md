@@ -1,6 +1,6 @@
 ---
-title: Configuring an IPV6 block in a vRack (EN)
-excerpt: This guide will show you how to configure a block of public IPV6 addresses for use with the vRack
+title: Configuring an IPv6 block in a vRack (EN)
+excerpt: This guide will show you how to configure a block of public IPv6 addresses for use with the vRack
 updated: 2024-04-19
 ---
 
@@ -232,7 +232,7 @@ In this section we will present a more advanced IPv6 setup, where your vRack con
 
 
 The traffic path is as follows: Inbound traffic to a given VM (with specified subnet) is routed through the customer's vRack, first to a specified host (with a next-hop address), then using a local link (or vSwitch - black link fd00::/64 on a diagram) to the particular VM.
-Traffic comming back from such a VM should use the default route via the first part of the local link (black one, fd00::1), then (possibly default) route from a host to its gateway.
+Traffic coming back from such a VM should use the default route via the first part of the local link (black one, fd00::1), then (possibly default) route from a host to its gateway.
 
 #### APIv6 commands
 
@@ -475,6 +475,7 @@ Understanding the constraints of using **Additional IPv6** within the **vRack** 
 - **Public bandwidth cap**: Outbound traffic from OVHcloud to the internet is capped at 5Gbps per region location.
 - **IPv6 block allocation limits**: Users can obtain up to three /56 Additional IPv6 blocks per region location.
 - **Mobility of Additional IPv6 blocks**: Due to the hierarchical design of the IPv6 address space, Additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend.
+- **No direct VLAN 802.1Q support in vRack by Additional IPv6**: configuration can only be done with native vlan of your vRack network. For packet forwarding inside specific vlan (of a vRack) a dedicated host on customer side will be needed.
   
 
 ## Go further
