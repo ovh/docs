@@ -6,7 +6,7 @@ updated: 2024-05-14
 
 ## Objectif
 
-Softphone est une solution permettant d'enregistrer votre ligne SIP (**S**ession **I**nitiation **P**rotocol) et de l'utiliser grâce à l'application Softcall, disponible sur ordinateur, smarphone et tablette.
+Softphone est une solution qui transforme votre ordinateur, smartphone ou tablette en un téléphone virtuel, vous permettant d'utiliser votre ligne SIP (**S**ession **I**nitiation **P**rotocol) n'importe où et à tout moment. Grâce à notre application Softcall, facilement téléchargeable sur les plateformes Android, IOS, MacOS et Windows, vous pouvez accéder à toutes les fonctionnalités de votre ligne téléphonique professionnelle sans être lié à un téléphone de bureau traditionnel. Que vous soyez en déplacement ou que vous travailliez à distance, Softcall assure que votre ligne SIP reste aussi mobile et flexible que vos besoins quotidiens l'exigent.
 
 **Découvrez comment installer et configurer Softcall sur les plateformes Android, iOS, macOS et Windows.**
 
