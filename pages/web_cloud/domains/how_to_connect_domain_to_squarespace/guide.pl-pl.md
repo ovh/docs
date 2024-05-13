@@ -57,3 +57,6 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli, który odnosi się tylko do Twojej domeny, bez subdomeny (na przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.<br>
 >> - Jeśli istnieje rekord dla subdomeny "www." (przykład: `www.mydomain.ovh.`), należy go usunąć, aby nie kolidował z rekordem CNAME, który wprowadzisz w etapie 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej domeny z subdomeną "www.", a następnie kliknij `Usuń rekord`{.action}.<br>
 >> - Jeśli nie masz istniejącego rekordu "A", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wskaźnika" `A`{.action}<br><br>
+>> Kolejno utwórz 4 rekordy typu "A", aby wpisać 4 adresy IPv4 związane z usługą SquareSpace.
+>> Pozostaw puste pole **Subdomena** i wprowadź pierwszy adres IPv4 domeny SquareSpace `198.185.159.144` w polu **Adres docelowy**.
+>> Kliknij przycisk `Dalej`{.action}, zatwierdź rejestrację "A", powtórz operację dla 3 pozostałych adresów IPv4 `198.185.159.145`; `198.49.23.144`; `198.49.23.145` i przejdź do etapu 2.

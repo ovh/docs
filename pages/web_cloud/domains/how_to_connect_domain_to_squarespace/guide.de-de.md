@@ -56,3 +56,6 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrem Domainnamen ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
 >> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www." und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn Sie noch keinen A-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `A`{.action}<br><br>
+>> Sie müssen nacheinander 4 A-Einträge erstellen, um die 4 IPv4-Adressen für SquareSpace anzugeben.
+>> Lassen Sie das Feld **Subdomain** leer und geben Sie die erste SquareSpace-IPv4-Adresse `198.185.159.144` in das Feld **Ziel** ein.
+>> Klicken Sie auf `Weiter`{.action}, bestätigen Sie Ihren A-Eintrag, wiederholen Sie den Vorgang für die anderen 3 IPv4-Adressen `198.185.159.145`; `198.49.23.144`; `198.49.23.145` und fahren Sie mit Schritt 2 fort.
