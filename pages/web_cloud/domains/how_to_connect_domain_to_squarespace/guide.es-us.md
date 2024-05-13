@@ -64,3 +64,29 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >> **Registro AAAA**<br><br>
 >>  Para identificar los registros "AAAA" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `AAAA`.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+
+
+
+
+
+
+
+
+
+
+
+## Más información <a name="go-further"></a>
+
+[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+
+[Crear una zona DNS de OVHcloud para un dominio](/pages/web_cloud/domains/dns_zone_create)
+
+[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+
+Para cambiar la gestión de un dominio a otra cuenta de cliente de OVHcloud, consulte la guía [Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts) de OVHcloud.
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+ 
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+ 
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

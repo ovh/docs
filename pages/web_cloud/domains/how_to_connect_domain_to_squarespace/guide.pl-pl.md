@@ -64,3 +64,30 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> **Rekord AAAA**<br><br>
 >>  Aby zidentyfikować istniejące rekordy "AAAA", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `AAAA`.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+
+
+
+
+
+
+
+
+
+
+
+
+## Sprawdź również <a name="go-further"></a>
+
+[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+
+[Utworzenie strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
+
+[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+
+Aby zmienić sposób zarządzania domeną na inne konto klienta OVHcloud, zapoznaj się z przewodnikiem "[Zarządzanie kontaktami dla usług](/pages/account_and_service_management/account_information/managing_contacts) OVHcloud".
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
