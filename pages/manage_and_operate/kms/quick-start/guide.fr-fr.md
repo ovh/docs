@@ -6,7 +6,7 @@ updated: 2024-04-04
 
 ## Objectif
 
-L'objectif de ce guide est de présenter les différents étapes pour mettre en place votre premier KMS, créer une clé et y accéder.
+L'objectif de ce guide est de présenter les différents étapes pour mettre en place votre premier KMS (Key Management Service), créer une clé et y accéder.
 
 ## Prérequis
 
@@ -238,22 +238,22 @@ L'API attend les valeurs suivantes :
 
 |**Champ**|**Valeur**|**Description**|
 | :-: | :-: | :-: |
-|key_name|string|Nom de la clé|
-|key_context|string|Donnée d'identification complémentaire permettant de vérifier l'authenticité de la clé|
-|key_type|oct, rsa, ec|Type de la clé : Octet sequence (oct) for symmetric keys, RSA (rsa), Elliptic Curve (ec)|
-|key_size|Integer|Taille de la clé - voir table de correspondance ci-dessous|
-|key_ops|Array|Usage de la clé - voir table de correspondance ci-dessous|
+|name|string|Nom de la clé|
+|context|string|Donnée d'identification complémentaire permettant de vérifier l'authenticité de la clé|
+|type|oct, RSA, EC|Type de la clé : Octet sequence (oct) for symmetric keys, RSA (RSA), Elliptic Curve (EC)|
+|size|Integer|Taille de la clé - voir table de correspondance ci-dessous|
+|operations|Array|Usage de la clé - voir table de correspondance ci-dessous|
 |crv|P-256, P-384, P-521|(optionnel) Courbe cryptographique pour les clés de type ec|
 
 **Exemple de création de clé symétrique**
 
 ```json
 {
-  "key_name": "My first AES key",
-  "key_context": "project A",
-  "key_type": "oct",
-  "key_size": 256,
-  "key_ops": [
+  "name": "My first AES key",
+  "context": "project A",
+  "type": "oct",
+  "size": 256,
+  "operations": [
     "encrypt",
     "decrypt",
   ]
@@ -264,11 +264,11 @@ L'API attend les valeurs suivantes :
 
 ```json
 {
-  "key_name": "My first RSA key",
-  "key_context": "project A",
-  "key_type": "rsa",
-  "key_size": 4096,
-  "key_ops": [
+  "name": "My first RSA key",
+  "context": "project A",
+  "type": "rsa",
+  "size": 4096,
+  "operations": [
     "sign",
     "verify",
   ]
@@ -279,11 +279,10 @@ L'API attend les valeurs suivantes :
 
 ```json
 {
-  "key_name": "My first EC key",
-  "key_context": "project A",
-  "key_type": "ec",
-  "key_size": 384,
-  "key_ops": [
+  "name": "My first EC key",
+  "context": "project A",
+  "type": "ec",
+  "operations": [
     "sign",
     "verify",
   ],
@@ -295,13 +294,16 @@ Les tailes et opérations possibles en fonction du type de clé sont les suivant
 
 - **oct** :
   - taille : 128, 192, 256
-  - opération : encrypt, decrypt, wrapKey, unwrapKey
-- **rsa** :
+  - opérations :
+    - encrypt, decrypt
+    - wrapKey, unwrapKey
+- **RSA** :
   - taille : 2048, 3072, 4096
-  - opération : sign, verify
-- **oct** :
-  - taille : 256, 384, 521
-  - opération : sign, verify
+  - opérations : sign, verify
+- **EC** :
+  - taille : ne pas spécifier
+  - curve : P-256, P-384, P-521
+  - opérations : sign, verify
 
 #### Importer une clé de chiffrement
 
@@ -310,11 +312,11 @@ Pour cela il est possible d'ajouter un champ complémentaire **keys** dans le co
 
 ```json
 {
-  "key_name": "My first AES key",
-  "key_context": "project A",
-  "key_type": "oct",
-  "key_size": 256,
-  "key_ops": [
+  "name": "My first AES key",
+  "context": "project A",
+  "type": "oct",
+  "size": 256,
+  "operations": [
     "encrypt",
     "decrypt",
   ],
@@ -397,10 +399,6 @@ L'API renvoyant ensuite la donnée chiffrée dans un champ **ciphertext** :
 ```json
 {
   "ciphertext": "Encrypted data",
-  "context": {
-    "key_id": "XXX-XXXX-XXXX",
-    "key_version": 1
-  }
 }
 ```
 
@@ -435,15 +433,15 @@ L'API attend les valeurs suivantes :
 
 |**Champ**|**Valeur**|**Description**|
 | :-: | :-: | :-: |
-|key_name|string|Nom de la clé|
-|key_size|Integer|Taille de la clé (64-4096)|
+|name|string|Nom de la clé|
+|size|Integer|Taille de la clé (64-4096)|
 
 **Exemple de génération de Data Key**
 
 ```json
 {
-  "key_name": "My Data Key",
-  "key_size": 4096
+  "name": "My Data Key",
+  "size": 4096
 }
 ```
 
@@ -451,13 +449,13 @@ L'API renverra ensuite la Data Key :
 
 ```json
 {
-  "dk_key_blob": "string",
-  "plaintext_key": "string"
+  "key": "string",
+  "plaintext": "string"
 }
 ```
 
-- **dk_key_blob** : clé chiffrée encodée en base64. Cette information doit être stockée avec la donnée chiffrée et sera utiliser pour le déchiffrement par le KMS
-- **plaintext_key** : clé en clair encodée en base64. Cette information doit être supprimée une fois le chiffrement effectué et ne doit pas être sauvegarder
+- **key** : clé chiffrée encodée en base64. Cette information doit être stockée avec la donnée chiffrée et sera utiliser pour le déchiffrement par le KMS
+- **plaintext** : clé en clair encodée en base64. Cette information doit être supprimée une fois le chiffrement effectué et ne doit pas être sauvegarder
 
 L'utilisation de la Data Key se fait ensuite à travers des algorithme de chiffrements comme AES-GCM qui n'est pas couvert par cette documentation
 
@@ -472,9 +470,9 @@ L'API attend les valeurs suivantes :
 
 |**Champ**|**Valeur**|**Description**|
 | :-: | :-: | :-: |
-|dk_key_blob|string|Data Key chiffrée|
+|key|string|Data Key chiffrée|
 
-Et renvoie la Data Key déchiffrée dans un champ **plaintext_key**
+Et renvoie la Data Key déchiffrée dans un champ **plaintext**
 
 ### Signer avec le KMS
 
@@ -528,7 +526,7 @@ L'API attend les valeurs suivantes :
 | :-: | :-: | :-: |
 |message|string|Message à signer en format base64|
 |alg|string|Algorithme de signature|
-|is_digest|boolean|Indique si le message est déjà hashé|
+|isdigest|boolean|Indique si le message est déjà hashé|
 
 **Exemple de signature**
 
@@ -536,7 +534,7 @@ L'API attend les valeurs suivantes :
 {
   "message": "SGVsbG8gV29ybGQ=",
   "alg": "RS256",
-  "is_digest": false
+  "isdigest": false
 }
 ```
 
@@ -565,7 +563,7 @@ L'API attend les valeurs suivantes :
 |message|string|Message à signer|
 |signature|string|Signature associée au message|
 |alg|string|Algorithme de signature|
-|is_digest|boolean|Indique si le message est déjà hashé|
+|isdigest|boolean|Indique si le message est déjà hashé|
 
 **Exemple de vérification**
 
@@ -574,7 +572,7 @@ L'API attend les valeurs suivantes :
   "message": "SGVsbG8gV29ybGQ=",
   "signature": "EmUGXC6rsFTWtmFn77y6NS/U6IuhThApVKWTZdXjE7rDMonRPPxbjTo01HQN62J3Dxqyw==",
   "alg": "RS256",
-  "is_digest": false
+  "isdigest": false
 }
 ```
 
