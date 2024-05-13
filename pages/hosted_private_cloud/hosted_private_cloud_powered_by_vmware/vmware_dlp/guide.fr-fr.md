@@ -20,10 +20,8 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 ## Prérequis
 
 - Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-- Un [Load Balancer Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) opérationnel.
+- Un [environnement de cloud privée VMware](https://help.ovhcloud.com/csm/fr-vmware-host-addition?id=kb_article_view&sysparm_article=KB0045617) opérationnel.
 - Le compte LDP et le compte Hosted Private Cloud doivent appartenir au même compte OVHcloud.
-
-## Concepts & limites
 
 ## Concepts & limites
 
@@ -33,7 +31,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 
 **Quels sont les logs d'un PCC Private Cloud ?**
 
-Les logs transférés sont générés par [ESXI(https://fr.wikipedia.org/wiki/Esxi){.external} (le composant open source utilisé pour la répartition de charge).
+Les logs transférés sont générés par votre environnement VMware à l'aide d'un Syslog.
 
 Les logs contiennent les champs suivants :
 
@@ -69,7 +67,7 @@ Les champs suivants sont calculés à partir de `client_ip` et fournis dans les 
 
 Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](https://www.ovhcloud.com/fr/logs-data-platform/).
 
-### Activation du Log forwarding du PCC Prvate Cloud via l’espace client OVHcloud
+### Activation du Log forwarding dans Vsphere via l’espace client OVHcloud
 
 Cette fonctionnalité n'est pas encore disponible dans l'espace client
 
