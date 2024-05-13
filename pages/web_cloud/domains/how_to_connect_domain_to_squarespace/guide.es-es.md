@@ -57,3 +57,6 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla que corresponde a su nombre de dominio solo, sin subdominio (por ejemplo: `mydomain.ovh.`) y haga clic en `Editar el registro`{.action}.<br>
 >> - Si hay un registro para el subdominio "www." (por ejemplo: `www.mydomain.ovh.`), deberá eliminarlo para que no entre en conflicto con el registro CNAME que vaya a introducir en el etapa 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
 >> - Si no tiene un registro "A" existente, haga clic en el botón `Añadir una entrada`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de registro" `A`{.action}<br><br>
+>> Deberá crear cuatro registros de tipo "A" sucesivamente para completar las cuatro direcciones IPv4 relativas a SquareSpace.
+>> Deje el campo **Subdominio** vacío e introduzca la primera dirección IPv4 de SquareSpace `198.185.159.144` en el campo **Destino**.
+>> Haga clic en `Siguiente`{.action}, acepte su registro "A", repita la operación para las otras 3 direcciones IPv4 `198.185.159.145`; `198.49.23.144`; `198.49.23.145` y continúe con el etapa 2.

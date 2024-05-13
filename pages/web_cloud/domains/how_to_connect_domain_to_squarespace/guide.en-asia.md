@@ -52,3 +52,6 @@ Follow the steps in order by browsing the following tabs:
 >> - Click the `...`{.action} button in the table row that corresponds to your domain name (e.g. `mydomain.ovh.`) without a subdomain, then click `Edit record`{.action}.<br>
 >> - If a record for the subdomain "www" is present (e.g.: `www.mydomain.ovh.`), delete it so that it does not conflict with the CNAME record you enter in step 4. Click on the `...`{.action} button in the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.<br>
 >> - If you do not have an existing "A" record, click the `Add Entry`{.action} button in the top right of your screen and select `A`{.action}<br><br>
+>> You will need to create 4 A records in succession in order to enter the 4 IPv4 addresses for SquareSpace.
+>> Leave the **Subdomain** field blank and enter the first IPv4 address of SquareSpace `198.185.159.144` in the **Target** field.
+>> Click `Next`{.action}, confirm your A record, ; repeat the operation for the other 3 IPv4 addresses `198.185.159.145`; `198.49.23.144`; `198.49.23.145` and go to step 2.
