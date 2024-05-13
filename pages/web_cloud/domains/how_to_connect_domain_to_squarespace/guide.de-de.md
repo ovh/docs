@@ -59,3 +59,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> Sie müssen nacheinander 4 A-Einträge erstellen, um die 4 IPv4-Adressen für SquareSpace anzugeben.
 >> Lassen Sie das Feld **Subdomain** leer und geben Sie die erste SquareSpace-IPv4-Adresse `198.185.159.144` in das Feld **Ziel** ein.
 >> Klicken Sie auf `Weiter`{.action}, bestätigen Sie Ihren A-Eintrag, wiederholen Sie den Vorgang für die anderen 3 IPv4-Adressen `198.185.159.145`; `198.49.23.144`; `198.49.23.145` und fahren Sie mit Schritt 2 fort.
+> **Schritt 2**
+>> **AAAA-Eintrag**<br><br>
+>>  Um vorhandene AAAA-Einträge zu identifizieren, klicken Sie oben in der Tabelle mit DNS-Einträgen auf das Filtermenü und wählen Sie `AAAA` aus.<br>
+>> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>

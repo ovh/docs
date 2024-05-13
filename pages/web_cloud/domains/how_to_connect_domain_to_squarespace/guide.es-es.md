@@ -60,3 +60,7 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >> Deberá crear cuatro registros de tipo "A" sucesivamente para completar las cuatro direcciones IPv4 relativas a SquareSpace.
 >> Deje el campo **Subdominio** vacío e introduzca la primera dirección IPv4 de SquareSpace `198.185.159.144` en el campo **Destino**.
 >> Haga clic en `Siguiente`{.action}, acepte su registro "A", repita la operación para las otras 3 direcciones IPv4 `198.185.159.145`; `198.49.23.144`; `198.49.23.145` y continúe con el etapa 2.
+> **Etapa 2**
+>> **Registro AAAA**<br><br>
+>>  Para identificar los registros "AAAA" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `AAAA`.<br>
+>> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
