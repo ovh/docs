@@ -95,23 +95,15 @@ Die Schritte für diesen Schritt müssen im Verwaltungsbereich von SquareSpace a
 > - Sie können mehrere benutzerdefinierte Domainnamen für Ihre Website verwenden. Sie können so viele Dateien verbinden oder speichern, wie Sie möchten.
 > - Sie können keinen benutzerdefinierten Domänennamen mit SquareSpace verbinden, wenn der Domänenname das Wort „squarespace“ oder „sqsp“ enthält.
 
-Führen Sie die folgenden Schritte aus, um zu beginnen:
 
-1.	Melden Sie sich bei Ihrem SquareSpace-Konto an und gehen Sie in den Bereich `Domainnamen`{.action}.
-2.	Klicken Sie auf `Ich habe bereits eine Domain`{.action} und dann auf `Domain eingeben`{.action}.
-3.	Klicken Sie auf `Domain verbinden`{.action}.
-4.	Wählen Sie im Dropdown-Menü **OVHcloud** aus. Wenn es in der Auswahl nicht angezeigt wird, klicken Sie auf `Andere`{.action}. Sie können Ihre Domain auch dann verbinden, wenn der Anbieter nicht auf der Liste steht.
-5.	Klicken Sie auf `Domain verbinden`{.action} und dann auf `Weiter`{.action}.
+
+
 
 > [!warning]
 >
 > Wenn Sie die Warnmeldung „This domain is already connected to another Squarespace site“ erhalten (Diese Domain ist bereits mit einer anderen Squarespace-Website verbunden), überprüfen Sie Ihre anderen Squarespace-Websites, um festzustellen, mit welcher Website die Domain verbunden ist. Trennen Sie dann die Verbindung zu dieser Website.
 
 Gehen Sie für den weiteren Vorgang direkt zu Schritt 2 dieses [SquareSpace-Handbuchs](https://support.squarespace.com/hc/de/articles/205812378-Eine-Domain-eines-Drittanbieters-mit-deiner-Squarespace-Website-verbinden){.external}.
-
-> [!primary]
->
-> Die Überprüfung Ihres Domainnamens kann 24 bis 72 Stunden dauern, bis die Verbindung ordnungsgemäß funktioniert. In der Zwischenzeit werden Sie von SquareSpace aufgefordert, den Status der Verbindung und die Einstellungen für den Domainnamen im Bedienfeld `Domainübersicht`{.action} zu überprüfen. Gehen Sie hierzu zu Schritt 7 dieser [SquareSpace-Anleitung](https://support.squarespace.com/hc/de/articles/205812378-Eine-Domain-eines-Drittanbieters-mit-deiner-Squarespace-Website-verbinden){.external}.
 
 Wenn Sie ein E-Mail-Angebot von OVHcloud verwenden oder eines unserer [E-Mail-Angebote](/links/web/emails) abonnieren möchten, bereiten Sie Ihre DNS-Zone entsprechend vor. Lesen Sie unsere Anleitung „[Konfiguration eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx)“.
 
