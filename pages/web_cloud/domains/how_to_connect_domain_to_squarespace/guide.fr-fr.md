@@ -92,23 +92,13 @@ Les manipulations pour cette étape sont à réaliser depuis l'espace de gestion
 > - Vous pouvez utiliser plusieurs noms de domaine personnalisés pour votre site web. Vous pouvez en connecter ou en enregistrer autant que vous le souhaitez.
 > - Vous ne pouvez pas connecter un nom de domaine personnalisé à SquareSpace si le nom de domaine comprend le mot « squarespace » ou « sqsp ».
 
-Pour commencer, suivez les étapes de connexion ci-dessous :
-
-1.	Connectez-vous à votre compte SquareSpace et rendez-vous dans le panneau `Noms de domaine`{.action}. 
-2.	Cliquez sur `J’ai déjà un domaine`{.action} puis sur `Saisir le domaine`{.action}. 
-3.	Cliquez sur `Connecter le Domaine`{.action}. 
-4.	Sélectionnez **OVHcloud** dans le menu déroulant. Si vous ne le trouvez pas dans la sélection, cliquez sur `Autre`{.action}. Vous pourrez connecter votre domaine même si le fournisseur ne figure pas sur la liste. 
-5.	Cliquez sur `Connecter le Domaine`{.action} puis sur `Continuer`{.action}.
+Pour commencer, suivez les étapes de connexion décrites dans l'étape 1 de ce [guide SquareSpace](https://support.squarespace.com/hc/fr-fr/articles/12880712406797-Connecter-un-domaine-OVHcloud-%C3%A0-votre-site-Squarespace){.external}.
 
 > [!warning]
 >
 > Si vous recevez le message d’alerte « This domain is already connected to another Squarespace site » (Ce domaine est déjà connecté à un autre site Squarespace), vérifiez vos autres sites web Squarespace pour déterminer à quel site le nom de domaine est connecté. Puis, déconnectez-le de ce site web. 
 
-Pour la suite du processus, rendez-vous directement à l’étape 2 de ce [guide SquareSpace](https://support.squarespace.com/hc/fr-fr/articles/205812378-Connecter-un-domaine-tiers-%C3%A0-votre-site-Squarespace){.external}.
-
-> [!primary]
->
-> La vérification de votre nom de domaine peut prendre de 24 à 72 heures avant que la connexion ne fonctionne correctement. En attendant, SquareSpace vous invite à vérifier l’état d’avancement de la connexion et les paramètres du nom de domaine dans le panneau `Aperçu du domaine`{.action}. Pour cela, rendez-vous à l’étape 7 de ce [guide SquareSpace](https://support.squarespace.com/hc/fr-fr/articles/205812378-Connecter-un-domaine-tiers-%C3%A0-votre-site-Squarespace){.external}.
+Pour la suite du processus, poursuivez à l’étape 2 de ce [guide SquareSpace](https://support.squarespace.com/hc/fr-fr/articles/12880712406797-Connecter-un-domaine-OVHcloud-%C3%A0-votre-site-Squarespace){.external}.
 
 Si vous utilisez une offre e-mail OVHcloud ou que vous prévoyez de souscrire à l'une de [nos offres e-mail](/links/web/emails), préparez votre zone DNS en conséquence. Consultez notre guide sur la « [Configuration d’un enregistrement MX](/pages/web_cloud/domains/dns_zone_mx) ».
 
