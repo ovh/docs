@@ -5,10 +5,10 @@ updated: 2024-05-24
 ---
 
 # Table des matières
-1. [Liens des guides IAM](#Objectif)
+1. [Objectif - Liens des guides IAM avec VMware](#Objectif)
 2. [Prérequis](#Prérequis)
-3. [Instruction](#Instruction)
-4. [Aller plus loin](#Aller plus loin)
+3. [Instruction - Etape 1](#Instruction)
+4. [Fin - Aller plus loin](#Aller plus loin)
 
 ---
 ## Objectif
