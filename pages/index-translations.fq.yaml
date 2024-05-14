@@ -347,6 +347,7 @@ manage-operate-user-getting-started: Premiers pas
 manage-operate-user-federation: Fédération d'identités
 manage-operate-iam: IAM
 manage-operate-terraform: Terraform
+manage-operate-kms: KMS
 manage-operate-observability: Observabilité
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Premiers pas

@@ -349,6 +349,7 @@ manage-operate-user-federation: Federación de identidades
 manage-operate-iam: IAM
 manage-operate-terraform: Terraform
 manage-operate-observability: Observability
+manage-operate-kms: KMS
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Getting Started
 observability-logs-data-platform-ingestion: Ingesting your logs
