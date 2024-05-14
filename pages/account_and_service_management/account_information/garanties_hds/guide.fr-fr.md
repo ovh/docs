@@ -9,7 +9,7 @@ updated: 2024-05-14
 > [!primary]
 >
 > Ces tableaux sont publiés préalablement à la certification effective d'OVHcloud sur la version 2024 du référentiel HDS.
- Il permet aux clients d'OVHcloud d'alimenter leur propre démarche de conformité par rapport au référentiel HDS version 2024. OVHcloud a réalisé et publié ce tableau en s'efforçant d'appliquer au mieux
+ Ils permettent aux clients d'OVHcloud d'alimenter leur propre démarche de conformité par rapport au référentiel HDS version 2024. OVHcloud a réalisé et publié ce tableau en s'efforçant d'appliquer au mieux
 les différentes exigences du référentiel. Les versions vérifiées par les auditeurs ont été mises en ligne avant février 2024.
 >
 
