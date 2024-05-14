@@ -1,6 +1,6 @@
 ---
 title: "Proteger um servidor dedicado"
-excerpt: "Saiba como proteger o seu servidor dedicado graças a estas dicas"
+excerpt: "Saiba como implementar medidas básicas de segurança para proteger o seu servidor dedicado de ataques e acessos não autorizados"
 updated: 2024-02-20
 ---
 
@@ -34,7 +34,7 @@ Quando encomendar o seu servidor dedicado, pode escolher uma distribuição ou u
 > Se configurar o primeiro servidor dedicado da OVHcloud, recomendamos que consulte primeiro o nosso manual sobre [a implementação de um servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
 >
 
-Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas.
+Os exemplos abaixo pressupõem que está ligado enquanto [utilizador com autorizações elevadas](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Atualizar o sistema operativo
 
@@ -65,7 +65,7 @@ A alteração deste parâmetro, em benefício de uma porta diferente, é uma med
 Para isso, altere o ficheiro de configuração do serviço com o editor de texto à sua escolha (`nano` é utilizado neste exemplo):
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Deve encontrar as seguintes linhas ou equivalentes:
@@ -95,7 +95,7 @@ Reinicie o serviço:
 sudo systemctl restart sshd
 ```
 
-Isto deveria ser suficiente para aplicar as alterações. Caso contrário, reinicie o servidor (`~$ sudo reboot`).
+Isto deveria ser suficiente para aplicar as alterações. Caso contrário, reinicie o servidor (`sudo reboot`).
 
 **Para Ubuntu 23.04 e versões posteriores**
 
@@ -115,17 +115,27 @@ Accept=no
 
 Guarde as alterações e execute os seguintes comandos:
 
+
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 Se tiver ativado a firewall do sistema operativo, certifique-se de que a nova porta está autorizada nas regras da firewall.
 
-Lembre-se de que deve indicar a nova porta a cada pedido de ligação SSH ao seu servidor, por exemplo:
+Lembre-se de que deve indicar a nova porta a cada pedido de [ligação SSH ao seu servidor](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 ```bash
-ssh username@IPv4_servidor -p NewPortNumber
+ssh username@IPv4_server -p NewPortNumber
+```
+
+Exemplo:
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 > [!warning]

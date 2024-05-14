@@ -120,7 +120,7 @@ sudo systemctl restart ssh.service
 
 Jeśli włączona jest zapora systemu operacyjnego, upewnij się, że zezwalasz na nowy port w regułach zapory.
 
-Pamiętaj, że podczas każdego zlecenia [połączenia SSH z Twoim serwerem](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) należy wskazać nowy port, na przykład:
+Pamiętaj, że podczas każdego zlecenia [połączenia SSH z Twoim serwerem](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) należy wskazać nowy port:
 
 ```bash
 ssh username@IPv4_VPS -p NewPortNumber

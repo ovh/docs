@@ -122,7 +122,7 @@ sudo systemctl restart ssh.service
 
 Se tiver ativado a firewall do sistema operativo, certifique-se de que a nova porta está autorizada nas regras da firewall.
 
-Lembre-se de que deve indicar a nova porta a cada pedido de [ligação SSH ao seu servidor](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), por exemplo:
+Lembre-se de que deve indicar a nova porta a cada pedido de [ligação SSH ao seu servidor](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
 ```bash
 ssh username@IPv4_VPS -p NewPortNumber

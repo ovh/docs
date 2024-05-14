@@ -121,7 +121,7 @@ sudo systemctl restart ssh.service
 
 Si ha activado el cortafuegos del sistema operativo, asegúrese de autorizar el nuevo puerto en las reglas del cortafuegos.
 
-Recuerde que deberá indicar el nuevo puerto en cada solicitud de [conexión SSH al servidor](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), por ejemplo:
+Recuerde que deberá indicar el nuevo puerto en cada solicitud de [conexión SSH al servidor](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
 ```bash
 ssh username@IPv4_VPS -p NewPortNumber
