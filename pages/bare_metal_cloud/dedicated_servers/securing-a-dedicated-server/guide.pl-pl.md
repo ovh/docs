@@ -1,6 +1,6 @@
 ---
 title: "Zabezpieczanie serwera dedykowanego"
-excerpt: "Dowiedz się, jak zwiększyć bezpieczeństwo serwera dedykowanego"
+excerpt: "Dowiedz się, jak wdrożyć podstawowe środki bezpieczeństwa, aby chronić serwer dedykowany przed atakami i nieautoryzowanym dostępem"
 updated: 2024-02-20
 ---
 
@@ -34,7 +34,7 @@ Kiedy zamawiasz serwer dedykowany, możesz wybrać dystrybucję lub system opera
 > Jeśli skonfigurujesz Twój pierwszy serwer dedykowany OVHcloud, zapoznaj się [z przewodnikiem dotyczącym uruchomienia serwer dedykowany](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
 >
 
-Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami.
+Poniższe przykłady zakładają, że jesteś zalogowany jako [użytkownik z dużymi uprawnieniami](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Aktualizacja systemu operacyjnego
 
@@ -65,7 +65,7 @@ Zmiana tego parametru na inny port to prosty sposób na wzmocnienie ochrony serw
 W tym celu zmodyfikuj plik konfiguracyjny usługi za pomocą wybranego edytora tekstu (`nano` jest używany w tym przykładzie):
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Należy znaleźć następujące lub równoważne linie:
@@ -95,7 +95,7 @@ Zrestartuj usługę:
 sudo systemctl restart sshd
 ```
 
-Powinno to wystarczyć do wdrożenia zmian. W przeciwnym razie zrestartuj serwer (`~$ sudo reboot`).
+Powinno to wystarczyć do wdrożenia zmian. W przeciwnym razie zrestartuj serwer (`sudo reboot`).
 
 **Dla systemu Ubuntu 23.04 i nowszych wersji**
 
@@ -117,15 +117,24 @@ Zapisz zmiany i wykonaj następujące polecenia:
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 Jeśli włączona jest zapora systemu operacyjnego, upewnij się, że zezwalasz na nowy port w regułach zapory.
 
-Pamiętaj, że podczas każdego zlecenia połączenia SSH z Twoim serwerem należy wskazać nowy port, na przykład:
+Pamiętaj, że podczas każdego zlecenia [połączenia SSH z Twoim serwerem](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) należy wskazać nowy port:
 
 ```bash
-ssh username@IPv4_serwer -p NewPortNumber
+ssh username@IPv4_server -p NewPortNumber
+```
+
+Przykład:
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 > [!warning]

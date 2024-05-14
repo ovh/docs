@@ -118,7 +118,7 @@ sudo systemctl restart ssh.service
 
 Si vous avez activé le pare-feu de votre système d'exploitation, assurez-vous d'autoriser le nouveau port dans les règles du pare-feu.
 
-N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de [connexion SSH à votre serveur](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), par exemple :
+N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de [connexion SSH à votre serveur](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) :
 
 ```bash
 ssh nomdutilisateur@IPv4_VPS -p NouveauPort

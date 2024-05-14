@@ -119,7 +119,7 @@ sudo systemctl restart ssh.service
 
 Wenn Sie die Betriebssystemfirewall aktiviert haben, stellen Sie sicher, dass der neue Port in den Firewallregeln zugelassen ist.
 
-Denken Sie daran, dass Sie nun den neuen Port immer angeben müssen, wenn Sie eine [SSH-Verbindung mit Ihrem Server aufbauen](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), zum Beispiel:
+Denken Sie daran, dass Sie nun den neuen Port immer angeben müssen, wenn Sie eine [SSH-Verbindung mit Ihrem Server aufbauen](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
 ```bash
 username@IPv4_VPS -p PortNummer

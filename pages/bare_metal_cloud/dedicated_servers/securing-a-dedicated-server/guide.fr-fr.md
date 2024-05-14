@@ -1,6 +1,6 @@
 ---
 title: "Sécuriser un serveur dédié"
-excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre serveur dédié"
+excerpt: "Découvrez comment mettre en place des mesures de sécurité basiques pour protéger votre serveur dédié des attaques et des accès non autorisés"
 updated: 2024-02-20
 ---
 
@@ -15,13 +15,13 @@ Lorsque vous commandez votre serveur dédié, vous pouvez choisir une distributi
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la sécurité et la responsabilité vous appartiennent.
 > En effet, nous n'avons pas accès aux données hébergés sur ces machines et n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
-> Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
+> Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
 > Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/).
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal).
 - Avoir un accès administrateur (sudo) à votre serveur via SSH.
 
 ## En pratique
@@ -33,7 +33,7 @@ Lorsque vous commandez votre serveur dédié, vous pouvez choisir une distributi
 > S'il s'agit de votre première configuration d'un serveur dédié OVHcloud, nous vous invitons à consulter en premier lieu notre guide [Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
 >
 
-Les exemples suivants supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées.
+Les exemples suivants supposent que vous êtes connecté en tant qu'[utilisateur avec des autorisations élevées](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Mettre à jour votre système d'exploitation
 
@@ -64,7 +64,7 @@ La modification de ce paramètre, au profit d'un port différent, est une mesure
 Pour cela, modifiez le fichier de configuration du service avec l'éditeur de texte de votre choix (`nano` est utilisé dans cet exemple) :
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Vous devriez trouver les lignes suivantes ou équivalentes :
@@ -94,7 +94,7 @@ Redémarrez le service :
 sudo systemctl restart sshd
 ```
 
-Cela devrait être suffisant pour appliquer les changements. Dans le cas contraire, redémarrez le serveur (`~$ sudo reboot`).
+Cela devrait être suffisant pour appliquer les changements. Dans le cas contraire, redémarrez le serveur (`sudo reboot`).
 
 **Pour Ubuntu 23.04 et versions ultérieures**
 
@@ -116,15 +116,24 @@ Enregistrez vos modifications et exécutez les commandes suivantes :
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 Si vous avez activé le pare-feu de votre système d'exploitation, assurez-vous d'autoriser le nouveau port dans les règles du pare-feu.
 
-N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de connexion SSH à votre serveur, par exemple :
+N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de [connexion SSH à votre serveur](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) :
 
 ```bash
-ssh nomdutilisateur@IPv4_de_votre_serveur -p NouveauPort
+ssh nomdutilisateur@IPv4_server -p NouveauPort
+```
+
+Exemple :
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 > [!warning]
@@ -245,6 +254,6 @@ Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez 
 
 [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
