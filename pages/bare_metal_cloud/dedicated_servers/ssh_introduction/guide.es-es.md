@@ -90,14 +90,14 @@ Cuando se le pida una contraseña, escriba la del usuario que se conecta y pulse
 Si se trata de una nueva conexión, su cliente SSH recibirá una huella de llave (*fingerprint*) del servidor. Introduzca "yes" para confirmar la contraseña del usuario que se conecta.
 
 ```bash
-ssh ubuntu@169.254.10.254
+ssh ubuntu@203.0.113.100
 ```
 ```console
-The authenticity of host '169.254.10.254 (169.254.10.254)' can't be established.
+The authenticity of host '203.0.113.100 (203.0.113.100)' can't be established.
 ECDSA key fingerprint is SHA256:rRwrdsmJfzvJF5k0a4JmMSdaWbTlCgRKBukbmQ3gmso.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
-Warning: Permanently added '169.254.10.254' (ECDSA) to the list of known hosts.
-ubuntu@169.254.10.254's password:
+Warning: Permanently added '203.0.113.100' (ECDSA) to the list of known hosts.
+ubuntu@203.0.113.100's password:
 ```
 
 La huella de clave se guarda en su dispositivo y se comprueba con cada nueva conexión. Si la clave ha cambiado en la máquina remota, se mostrará un mensaje de aviso cuando intente conectarse, por ejemplo:
@@ -123,7 +123,7 @@ Esto significa que ha ocurrido una de las siguientes situaciones:
 Para solucionar el problema, utilice el siguiente comando con la dirección IP del servidor:
 
 ```bash
-ssh-keygen -f ~/.ssh/known_hosts -R 169.254.10.254
+ssh-keygen -f ~/.ssh/known_hosts -R 203.0.113.100
 ```
 
 También puede abrir el archivo `known_hosts` en su carpeta personal con un editor de texto y eliminar la línea "offending" especificada en el mensaje de aviso:
@@ -143,7 +143,7 @@ Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 Para solucionar este problema, utilice el siguiente comando con la dirección IP del servidor:
 
 ```bash
-ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 203.0.113.100
 ```
 
 También puede tener acceso a esta carpeta, hacer clic derecho en el archivo y abrirlo con la aplicación Bloc de notas.

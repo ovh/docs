@@ -86,14 +86,14 @@ Lorsque vous êtes invité à entrer un mot de passe, tapez celui de l'utilisate
 S'il s'agit d'une nouvelle connexion, votre client SSH recevra une empreinte de clé (*fingerprint*) du serveur. Renseignez "yes" pour confirmer puis le mot de passe de l'utilisateur qui se connecte.
 
 ```bash
-ssh ubuntu@169.254.10.254
+ssh ubuntu@203.0.113.100
 ```
 ```console
-The authenticity of host '169.254.10.254 (169.254.10.254)' can't be established.
+The authenticity of host '203.0.113.100 (203.0.113.100)' can't be established.
 ECDSA key fingerprint is SHA256:rRwrdsmJfzvJF5k0a4JmMSdaWbTlCgRKBukbmQ3gmso.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
-Warning: Permanently added '169.254.10.254' (ECDSA) to the list of known hosts.
-ubuntu@169.254.10.254's password:
+Warning: Permanently added '203.0.113.100' (ECDSA) to the list of known hosts.
+ubuntu@203.0.113.100's password:
 ```
 
 L'empreinte de clé est ensuite enregistrée sur votre appareil et vérifiée à chaque nouvelle connexion. Si la clé a changé sur l'hôte distant, un message d'avertissement s'affiche lorsque vous essayez de vous connecter, par exemple :
@@ -119,7 +119,7 @@ Cela signifie que l'une des situations suivantes s'est produite :
 Pour résoudre ce problème, utilisez la commande suivante avec l'adresse IP de votre serveur :
 
 ```bash
-ssh-keygen -f ~/.ssh/known_hosts -R 169.254.10.254
+ssh-keygen -f ~/.ssh/known_hosts -R 203.0.113.100
 ```
 
 Vous pouvez également ouvrir le fichier `known_hosts` situé dans votre dossier personnel à l'aide d'un éditeur de texte et supprimer la ligne "offending" spécifiée dans le message d'avertissement :
@@ -139,7 +139,7 @@ Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 Pour résoudre ce problème, utilisez la commande suivante avec l'adresse IP de votre serveur :
 
 ```bash
-ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 203.0.113.100
 ```
 
 Vous pouvez également accéder à ce dossier, effectuer un clic droit sur le fichier et l'ouvrir avec l'application Bloc-notes.
