@@ -90,14 +90,14 @@ Po wpisaniu hasła wpisz hasło użytkownika, który się łączy i naciśnij `E
 W przypadku nowego logowania klient SSH otrzyma odcisk klucza (*fingerprint*) serwera. Wpisz "yes", aby potwierdzić, a następnie hasło użytkownika, który się łączy.
 
 ```bash
-ssh ubuntu@169.254.10.254
+ssh ubuntu@203.0.113.100
 ```
 ```console
-The authenticity of host '169.254.10.254 (169.254.10.254)' can't be established.
+The authenticity of host '203.0.113.100 (203.0.113.100)' can't be established.
 ECDSA key fingerprint is SHA256:rRwrdsmJfzvJF5k0a4JmMSdaWbTlCgRKBukbmQ3gmso.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
-Warning: Permanently added '169.254.10.254' (ECDSA) to the list of known hosts.
-ubuntu@169.254.10.254's password:
+Warning: Permanently added '203.0.113.100' (ECDSA) to the list of known hosts.
+ubuntu@203.0.113.100's password:
 ```
 
 Odcisk klucza jest następnie zapisywany na Twoim urządzeniu i sprawdzany przy każdym nowym połączeniu. Jeśli klucz zmienił się na zdalnym hoście, podczas próby logowania wyświetla się komunikat ostrzegawczy, na przykład:
@@ -123,7 +123,7 @@ Oznacza to, że wystąpiła jedna z poniższych sytuacji:
 Aby rozwiązać ten problem, użyj następującej komendy z adresem IP Twojego serwera:
 
 ```bash
-ssh-keygen -f ~/.ssh/known_hosts -R 169.254.10.254
+ssh-keygen -f ~/.ssh/known_hosts -R 203.0.113.100
 ```
 
 Możesz również otworzyć plik `known_hosts` znajdujący się w Twoim katalogu za pomocą edytora tekstu i usunąć wiersz "offending" określony w ostrzeżeniu:
@@ -143,7 +143,7 @@ Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 Aby rozwiązać ten problem, użyj następującego polecenia z adresem IP Twojego serwera:
 
 ```bash
-ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 203.0.113.100
 ```
 
 Możesz również uzyskać dostęp do tego folderu, kliknąć prawym przyciskiem myszy plik i otworzyć go w aplikacji Notatnik.
