@@ -81,7 +81,7 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
 
 > [!api]
 >
-> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream
+> @api {v1} /dedicatedCloud/{serviceName}/logs GET /dedicatedCloud/{serviceName}/log/subscription
 >
  
 > **Parametres:**
@@ -93,7 +93,7 @@ Obtenez les détails d'un flux de données :
 
 > [!api]
 >
-> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
+> @api {v1} /dedicatedCloud/{serviceName}/logs GET /dedicatedCloud/{serviceName}/output/graylog/stream/{streamId}
 >
  
 > > **Parameters:**
@@ -209,6 +209,16 @@ Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, 
 - créer une intégration avec l'API OpenSearch ;
 - se connecter avec Grafana.
  
+
+### Comment accéder à l'interface Graylog ?
+
+Utiliser les identifiants de votre compte LDP, lorsque que vous vous connectez la première fois definissez un mot de passe. Le login correspond à celui de la capture ci-dessous -> **logs-dv-XXX
+
+Vous retrouvez plusieurs liens de connexions qui vous redirige sur le bon lien Graylog dans le compte de votre espace LDP.
+
+![GRAYLOG](images/graylog_login.png)
+
+![GRAYLOG](images/graylog_login_2.png)
 
 ### Informations utiles
 
