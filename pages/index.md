@@ -519,6 +519,9 @@
             + [SAP logs on OVHcloud Logs Data Platform - Solution Setup](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
             + [SAP logs on OVHcloud Logs Data Platform - Analyze and work with your logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_analyze_and_work_with_your_logs)
             + [SAP logs on OVHcloud Logs Data Platform - Index of SAP logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_index_of_sap_logs)
+    [Backup and Disaster Recovery Services](products/hosted-private-cloud-hosted-private-cloud-powered-by-vmware)
+            + [Veeam Backup](products/hosted-private-cloud-hosted-private-cloud-powered-by-vmware)
+              + [VMware Cloud Director - Veeam plugin on VCD](products/hosted-private-cloud-hosted-private-cloud-powered-by-vmware/vcd-backup)
 + Public Cloud
     + [Compute](products/public-cloud-compute)
         + [Getting started](public-cloud-compute-getting-started)

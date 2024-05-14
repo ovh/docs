@@ -83,6 +83,11 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
 >
 > @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream
 >
+ 
+> **Parametres:**
+>
+> serviceName: La reference de votre PCC, exemple: **pcc-XX-XX-XX-XX**.
+
 
 Obtenez les détails d'un flux de données :
 
@@ -90,6 +95,11 @@ Obtenez les détails d'un flux de données :
 >
 > @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
 >
+ 
+> > **Parameters:**
+>
+> streamId: La reference d'identification de votre stream LDP.
+
 
 #### Étape 2 - créer votre abonnement
 
@@ -99,6 +109,10 @@ Utilisez l'appel API suivant pour créer un abonnement :
 >
 > @api {v1} /dedicatedCloud/ POST /dedicatedCloud/{serviceName}/log/subscription
 >
+
+> **Parametres:**
+>
+> serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
 
 Vous devrez remplacer :
 
@@ -122,7 +136,7 @@ Vous obtiendrez en réponse un `operationId` :
 ```shell
 {
   "operationId": "f550aa1c-89ab-4b1a-81ae-4fba4959966f",
-  "serviceName": "ldp-xxxxx"
+  "serviceName": "pcc-XX-XX-XX-XX"
 }
 ```
 
@@ -133,12 +147,21 @@ Vous pouvez utiliser le `operationId` pour récupérer le `subscriptionId` à de
 > @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/operation/{operationId}
 >
 
+> **Parametres:**
+>
+> serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
+> operationId: he reference for ...
+
 Une fois l'opération terminée, vous pouvez également récupérer les abonnements à l'aide de l'appel API suivant :
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/subscription
+> 
+
+> **Parametres:**
 >
+> serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
 
 Une fois en possession du `subscriptionId`, vous pouvez obtenir les détails via l'appel API suivant :
 
@@ -146,6 +169,11 @@ Une fois en possession du `subscriptionId`, vous pouvez obtenir les détails via
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 >
+
+> **Parametres:**
+>
+> serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
+> subscriptionId: The reference for your DLP account subscription.
 
 ```shell
 GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
@@ -181,6 +209,13 @@ Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, 
 - créer une intégration avec l'API OpenSearch ;
 - se connecter avec Grafana.
  
+
+### Informations utiles
+
+**Zone Cluster** : Vous retrouverez la zone du cluster dont fait partie votre plateforme de gestion de logs depuis le lien Graylog. 
+- Exemple de lien Graylog d'un compte ldp, : **https://gra159.logs.ovh.com/ -> GRA159**
+
+
 ### Comment gérer vos abonnements ?
 
 À tout moment, vous pouvez récupérer les abonnements attachés à votre flux Logs Data Platform et choisir de désactiver la redirection en annulant votre abonnement sur votre flux, de sorte que votre flux Logs Data Platform ne reçoive plus vos journaux d'audit.
@@ -193,6 +228,10 @@ Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
 >
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 >
+
+> **Parametres:**
+>
+> subscriptionId: La reference de souscription pour votre compte LDP.
 
 ## Aller plus loin
 
