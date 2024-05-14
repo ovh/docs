@@ -1,7 +1,7 @@
 ---
 title: "Verbinden eines OVHcloud Domainnamens mit einem SquareSpace Hosting"
 excerpt: "Erfahren Sie hier, wie Sie die DNS-Zone Ihres OVHcloud Domainnamens konfigurieren, um sie mit einem SquareSpace Hosting zu verwenden"
-updated: 2024-05-13
+updated: 2024-05-14
 ---
 
 > [!primary]
