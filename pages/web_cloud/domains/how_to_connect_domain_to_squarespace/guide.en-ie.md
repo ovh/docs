@@ -1,7 +1,7 @@
 ---
 title: "How to connect an OVHcloud domain name to a SquareSpace hosting plan"
 excerpt: "Prepare and configure your OVHcloud domain name’s DNS zone to connect to a SquareSpace hosting plan"
-updated: 2024-05-13
+updated: 2024-05-14
 ---
 
 ## Objective
@@ -59,15 +59,47 @@ Follow the steps in order by browsing the following tabs:
 >> **"AAAA" record**<br><br>
 >>  To identify the existing "AAAA" records, click on the filter menu at the top of the DNS records table and select `AAAA`.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> - Click the `...`{.action} button to the right of the table row that corresponds to your domain name alone, without a subdomain (e.g. `mydomain.ovh.`), then click `Delete record`{.action}.<br>
+>> - If a record for the “www” subdomain is present (e.g.: `www.mydomain.ovh.`), also delete it so that it does not conflict with the CNAME record you enter in step 4. Click the `...`{.action} button to the right of the table row for your domain name with the subdomain “www”, then click `Delete record`{.action}.<br>
+>> - If you do not have an existing AAAA record, proceed to step 3.
+> **Step 3**
+>> **TXT record**<br><br>
+>> To identify existing TXT records, click the filter menu at the top of the DNS records table and select `TXT`.<br>
+>> ![dnszone](images/filter-txt.png){.thumbnail}<br>
+>> - If “TXT” records are present for the domain name alone (example: `mydomain.ovh.`) and for its subdomain in “www” (example: `www.mydomain.ovh.`), you must delete them so that they do not conflict with the CNAME record that you enter in step 3. Click the `...`{.action} button to the right of the table row for your domain name with the subdomain “www”, then click `Delete record`{.action}.<br>
+> **Step 4**
+>> **CNAME record**<br><br>
+>> To identify existing CNAME records, click the filter menu at the top of the DNS records table and select `CNAME`.<br>
+>> ![dnszone](images/filter-cname.png){.thumbnail}
+>> - Click the `...`{.action} button to the right of the table row corresponding to your subdomain in “www” (example: `mydomain.ovh.`), then click `Modify record`{.action}.<br>
+>> - If you do not have an existing “CNAME” record, click the `Add an entry`{.action} button in the top right-hand corner of your screen, and select the `CNAME`{.action} "Time and attendance record".
+>> Enter **Sub-domain** with the value `www` and enter `verify.squarespace.com.` in the **Target** field.<br>
+>> ![cname-entry](images/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
+>> Click `Next`{.action} , then confirm your “CNAME” record.
+>> Add the second CNAME record by typing `ext-cust.squarespace.com.` in the **Target** field.<br>
 
+The DNS zone is now configured to link to a SquareSpace hosting plan.
 
+### Connecting your domain name to SquareSpace
 
+You will need to edit this step in the SquareSpace control panel.
 
+> [!primary]
+>
+> - You can connect your domain name to a trial or paid SquareSpace website. You cannot connect it to an expired site.
+> - If you have an email account associated with your domain name, you can continue using it once the domain is logged in to SquareSpace. Before you connect your domain name, we recommend reading this [SquareSpace guide](https://support.squarespace.com/hc/en-us/articles/217601877-Using-a-custom-domain-email-you-already-own-with-Squarespace){.external}.
+> - You can use multiple custom domain names for your website. You can connect or save as many as you want.
+> - You cannot connect a custom domain name to SquareSpace if the domain name includes the word “squarespace” or “sqsp”.
 
+To get started, follow the login steps described in step 1 of this [SquareSpace guide](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site){.external}.
 
+> [!warning]
+>
+> If you receive the alert message “This domain is already connected to another Squarespace site,” check your other Squarespace websites to determine which site the domain name is connected to. Then, disconnect it from this website.
 
+To continue the process, go to step 2 of this [SquareSpace guide](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site){.external}.
 
-
+If you are using an OVHcloud email solution, or if you plan to subscribe to one of [our email solutions](/links/web/emails), prepare your DNS zone accordingly. Read our guide on “[Configuring an MX record](/pages/web_cloud/domains/dns_zone_mx)”.
 
 ## Go further <a name="go-further"></a>
 
