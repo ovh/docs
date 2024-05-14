@@ -1,12 +1,12 @@
 ---
 title: "Premier pas avec OVHcloud KMS"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2024-04-04
+updated: 2024-05-14
 ---
 
 ## Objectif
 
-L'objectif de ce guide est de présenter les différents étapes pour mettre en place votre premier KMS (Key Management Service), créer une clé et y accéder.
+L'objectif de ce guide est de présenter les différentes étapes pour mettre en place votre premier KMS (Key Management Service), créer une clé et y accéder.
 
 ## Prérequis
 
@@ -16,11 +16,11 @@ L'objectif de ce guide est de présenter les différents étapes pour mettre en 
 
 ### Commander votre KMS
 
-La commande d'un KMS se fait depuis l'espace client OVHcloud.
-Chaque KMS est associé à une région, ainsi les clés qui y sont stockés ont la garantie de rester dans cette région.
+La commande d'un KMS se fait depuis l'espace client OVHcloud.<br>
+Chaque KMS est associé à une région, ainsi les clés qui y sont stockées ont la garantie de rester dans cette région.<br>
 Il est possible de commander plusieurs KMS, que ce soit dans des régions différentes ou dans une même région.
 
-La facturation d'un KMS étant basée sur le nombre de clé y étant stocké, la commande d'un KMS ne génère pas de facturation en elle-même
+La facturation d'un KMS étant basée sur le nombre de clés y étant stocké, la commande d'un KMS ne génère pas de facturation en elle-même.
 
 Pour commander un KMS, cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre nom dans la barre latérale.
 
@@ -30,7 +30,7 @@ Vous pouvez accéder au menu KMS via l’entrée dédiée dans votre espace clie
 
 ![Accès au menu KMS](images/access_to_the_KMS_menu_02.png){.thumbnail}
 
-Indiquez la région de votre KMS, et acceptez les conditions d'utilisations
+Indiquez la région de votre KMS et acceptez les conditions d'utilisation.
 
 ![Commander le KMS](images/order_kms_01.png){.thumbnail}
 
@@ -38,22 +38,23 @@ La commande est ensuite à finaliser dans un autre onglet. Si celui-ci ne s'est 
 
 ![Commander le KMS](images/order_kms_02.png){.thumbnail}
 
-Après quelques secondes, le KMS est bien disponible dans votre espace client
+Après quelques secondes, le KMS est bien disponible dans votre espace client.
 
 ![Commander le KMS](images/order_kms_03.png){.thumbnail}
 
 ### Créer un certificat d'accès
 
 Afin de communiquer avec votre KMS, il est nécessaire de créer un certificat d'accès.
-Celui-ci sera utiliser pour toute interaction avec le KMS, que ce soit pour créer des clés de chiffrements ou effectuer des opérations avec celles-ci.
+Celui-ci sera utilisé pour toute interaction avec le KMS, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec celles-ci.
 
 Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui)
 
-Il est possible de généré ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre propre sécurité privée via une Certificate Signing Request (CSR)
+Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre propre sécurité privée via une Certificate Signing Request (CSR).
 
 #### Sans founir de clé privée
 
 Si vous ne fournissez pas de CSR, OVHcloud génèrera le certificat d'accès ainsi qu'une clé privée.
+
 La génération de certificat se fait via l'API suivante :
 
 > [!api]
@@ -63,12 +64,12 @@ La génération de certificat se fait via l'API suivante :
 
 Il est nécessaire d'indiquer les informations suivantes :
 
-- **name** : Le nom du certificat
-- **identityURNs** : Liste des identités OVHcloud sous format d'URN qui seront fourni à l'IAM pour le calcul des droits d'accès
-- **description** : Description du certificat (optionnel)
-- **validity** : Durée de validité du certificat en jours - 365 jours par défaut (optionnel)
+- **name** : le nom du certificat
+- **identityURNs** : liste des identités OVHcloud sous format d'URN qui seront fournies à l'IAM pour le calcul des droits d'accès
+- **description** : description du certificat (optionnel)
+- **validity** : durée de validité du certificat en jours - 365 jours par défaut (optionnel)
 
-**Exemple de création de certificat**
+**Exemple de création de certificat :**
 
 ```json
 {
@@ -105,10 +106,10 @@ Copiez la valeur du champ **privateKeyPEM** dans un fichier **domain.key**
 
 > [!warning]
 >
-> La clé privée ne sera plus accessible par la suite, en cas de perte il sera nécessaire de regénérer un certificat
+> La clé privée ne sera plus accessible par la suite. En cas de perte, il sera nécessaire de regénérer un certificat.
 >
 
-Copiez ensuite l'ID du certificat, et accédez au détail de ce dernier via l'API :
+Copiez ensuite l'ID du certificat et accédez au détail de ce dernier via l'API :
 
 > [!api]
 >
@@ -134,11 +135,12 @@ L'API renvoie maintenant la clé publique du certificat :
 }
 ```
 
-Copiez la valeur du champ **certificatePEM** dans un fichier **client.tls**
+Copiez la valeur du champ **certificatePEM** dans un fichier **client.tls**.
 
 #### Avec une CSR
 
-Si disposez de votre propre clé privé, il est possible de l'utiliser en fournissant une CSR
+Si vous disposez de votre propre clé privée, il est possible de l'utiliser en fournissant une CSR.
+
 La génération de certificat se fait via l'API suivante :
 
 > [!api]
@@ -148,13 +150,13 @@ La génération de certificat se fait via l'API suivante :
 
 Il est nécessaire d'indiquer les informations suivantes :
 
-- **name** : Le nom du certificat
-- **identityURNs** : Liste des identités OVHcloud sous format d'URN qui seront fourni à l'IAM pour le calcul des droits d'accès
-- **description** : Description du certificat (optionnel)
-- **validity** : Durée de validité du certificat en jours - 365 jours par défaut (optionnel)
-- **csr** : Le contenu de la CSR
+- **name** : le nom du certificat
+- **identityURNs** : liste des identités OVHcloud sous format d'URN qui seront fournies à l'IAM pour le calcul des droits d'accès
+- **description** : description du certificat (optionnel)
+- **validity** : durée de validité du certificat en jours - 365 jours par défaut (optionnel)
+- **csr** : le contenu de la CSR
 
-**Exemple de création de certificat**
+**Exemple de création de certificat :**
 
 ```json
 {
@@ -169,7 +171,7 @@ Il est nécessaire d'indiquer les informations suivantes :
 }
 ```
 
-L'API retourne ensuite l'état de création du certificat
+L'API retourne ensuite l'état de création du certificat :
 
 ```json
 {
@@ -187,7 +189,7 @@ L'API retourne ensuite l'état de création du certificat
 }
 ```
 
-Copiez l'ID du certificat, et accédez au détail de ce dernier via l'API :
+Copiez l'ID du certificat et accédez au détail de ce dernier via l'API :
 
 > [!api]
 >
@@ -213,11 +215,12 @@ L'API renvoie maintenant la clé publique du certificat :
 }
 ```
 
-Copiez la valeur du champ **certificatePEM** dans un fichier **client.tls**
+Copiez la valeur du champ **certificatePEM** dans un fichier **client.tls**.
 
 ### Communiquer avec le KMS
 
 La communication avec le KMS est disponible uniquement par API pendant la beta.
+
 Le KMS étant régionalisé, l'accès à l'API se fait directement sur la région de celui-ci : <https://my-region.okms.ovh.net>
 
 Par exemple, pour un KMS créé sur la région **eu-west-rbx** : <https://eu-west-rbx.okms.ovh.net>
@@ -245,7 +248,7 @@ L'API attend les valeurs suivantes :
 |operations|Array|Usage de la clé - voir table de correspondance ci-dessous|
 |crv|P-256, P-384, P-521|(optionnel) Courbe cryptographique pour les clés de type EC|
 
-**Exemple de création de clé symétrique**
+**Exemple de création de clé symétrique :**
 
 ```json
 {
@@ -260,7 +263,7 @@ L'API attend les valeurs suivantes :
 }
 ```
 
-**Exemple de création de clé assymétrique**
+**Exemple de création de clé asymétrique :**
 
 ```json
 {
@@ -275,7 +278,7 @@ L'API attend les valeurs suivantes :
 }
 ```
 
-**Exemple de création de clé EC**
+**Exemple de création de clé EC :**
 
 ```json
 {
@@ -290,24 +293,25 @@ L'API attend les valeurs suivantes :
 }
 ```
 
-Les tailes et opérations possibles en fonction du type de clé sont les suivantes :
+Les tailles et opérations possibles en fonction du type de clé sont les suivantes :
 
 - **oct** :
-  - taille : 128, 192, 256
-  - opérations :
-    - encrypt, decrypt
-    - wrapKey, unwrapKey
+    - taille : 128, 192, 256
+    - opérations :
+        - encrypt, decrypt
+        - wrapKey, unwrapKey
 - **RSA** :
-  - taille : 2048, 3072, 4096
-  - opérations : sign, verify
+    - taille : 2048, 3072, 4096
+    - opérations : sign, verify
 - **EC** :
-  - taille : ne pas spécifier
-  - curve : P-256, P-384, P-521
-  - opérations : sign, verify
+    - taille : ne pas spécifier
+    - curve : P-256, P-384, P-521
+    - opérations : sign, verify
 
 #### Importer une clé de chiffrement
 
 A la création d'une clé, il est possible d'importer une clé existante.
+
 Pour cela il est possible d'ajouter un champ complémentaire **keys** dans le corps de l'API :
 
 ```json
@@ -339,11 +343,11 @@ Pour cela il est possible d'ajouter un champ complémentaire **keys** dans le co
 }
 ```
 
-La clé devant être au format JSON Web Key (JWK). La valeur des champs contenu dans le tableau suit la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518.html)
+La clé doit être au format JSON Web Key (JWK). La valeur des champs contenus dans le tableau suit la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518.html).
 
 #### Gérer les clés de chiffrement
 
-Afin de gérer les clés de chiffrement, plusieures API sont disponibles :
+Afin de gérer les clés de chiffrement, plusieurs API sont disponibles :
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -352,20 +356,20 @@ Afin de gérer les clés de chiffrement, plusieures API sont disponibles :
 |POST|/v1/servicekey/{keyId}/activate|Active une clé de chiffrement|
 |POST|/v1/servicekey/{keyId}/deactivate|Désactive une clé de chiffrement|
 
-La désactivation d'une clé de chiffrement implique que celle-ce ne sera plus utilisable, bien que la clé reste présente dans le KMS.
+La désactivation d'une clé de chiffrement implique que celle-ce ne sera plus utilisable, bien que la clé reste présente dans le KMS.<br>
 La suppression d'une clé de chiffrement n'est possible que sur une clé préalablement désactivée
 
 > [!warning]
 >
-> La suppression d'une clé de chiffrement est définitive. Toutes données chiffrées à l'aide de celle-ci sera définitivement inaccessible
+> La suppression d'une clé de chiffrement est définitive. Toutes les données chiffrées à l'aide de celle-ci seront définitivement inaccessibles.
 >
 
 ### Chiffrer une donnée avec le KMS
 
 #### Chiffrement sur le KMS
 
-Le KMS OVHcloud dispose d'une API de chiffrement dédié pour le chiffrement de petit volume de données (moins de 4 kB).
-Il s'agit de la méthode la plus rapide, mais qui ne présente pas les meilleures performances
+Le KMS OVHcloud dispose d'une API de chiffrement dédiée pour le chiffrement de petits volumes de données (moins de 4 kB).<br>
+Il s'agit de la méthode la plus rapide, mais qui ne présente pas les meilleures performances.
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -395,7 +399,7 @@ L'API renvoyant ensuite la donnée chiffrée dans un champ **ciphertext** :
 }
 ```
 
-Le déchiffrement de la donnée se faisant à l'inverse par l'API :
+Le déchiffrement de la donnée se faisant à l'inverse via l'API :
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -412,7 +416,7 @@ Le champ **context** devant contenir la même information que celle donnée lors
 
 #### Chiffrement avec une Data Key (DK)
 
-Pour plus de performance, il est possible de générer une Data Key (DK) depuis une clé symétrique (AES) pour l'utiliser depuis votre application
+Pour plus de performances, il est possible de générer une Data Key (DK) depuis une clé symétrique (AES) pour l'utiliser depuis votre application.
 
 ![Chiffrement avec DK](images/Datakey_encrypt.png){.thumbnail}
 
@@ -429,7 +433,7 @@ L'API attend les valeurs suivantes :
 |name|string|Nom de la clé|
 |size|Integer|Taille de la clé (64-4096)|
 
-**Exemple de génération de Data Key**
+**Exemple de génération de Data Key :**
 
 ```json
 {
@@ -447,13 +451,14 @@ L'API renverra ensuite la Data Key :
 }
 ```
 
-- **key** : clé chiffrée encodée en base64. Cette information doit être stockée avec la donnée chiffrée et sera utiliser pour le déchiffrement par le KMS
-- **plaintext** : clé en clair encodée en base64. Cette information doit être supprimée une fois le chiffrement effectué et ne doit pas être sauvegarder
+- **key** : clé chiffrée encodée en base64. Cette information doit être stockée avec la donnée chiffrée et sera utilisée pour le déchiffrement par le KMS.
+- **plaintext** : clé en clair encodée en base64. Cette information doit être supprimée une fois le chiffrement effectué et ne doit pas être sauvegardée.
 
-L'utilisation de la Data Key se fait ensuite à travers des algorithme de chiffrements comme AES-GCM qui n'est pas couvert par cette documentation
+L'utilisation de la Data Key se fait ensuite à travers des algorithmes de chiffrement comme AES-GCM qui n'est pas couvert par cette documentation.
 
 ![Déchiffrement avec DK](images/Datakey_decrypt.png){.thumbnail}
-Inversement, il est possible de récupérer la version déchiffrée d'une Data Key par l'API suivante :
+
+Inversement, il est possible de récupérer la version déchiffrée d'une Data Key via l'API suivante :
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -465,15 +470,15 @@ L'API attend les valeurs suivantes :
 | :-: | :-: | :-: |
 |key|string|Data Key chiffrée|
 
-Et renvoie la Data Key déchiffrée dans un champ **plaintext**
+Et renvoie la Data Key déchiffrée dans un champ **plaintext**.
 
 ### Signer avec le KMS
 
-La signature de fichier se fait à l'aide de clé assymétrique
+La signature de fichier se fait à l'aide de clé asymétrique
 
 #### Algorithmes supportés
 
-Le KMS OVHcloud supporte la liste d'algorithme de signature suivante :
+Le KMS OVHcloud supporte la liste d'algorithmes de signature suivante :
 
 - **RSASSA-PKCS1 v1.5**
 
@@ -483,7 +488,7 @@ Le KMS OVHcloud supporte la liste d'algorithme de signature suivante :
 |RS384|RSASSA-PKCS1-v1_5 using SHA-384|
 |RS512|RSASSA-PKCS1-v1_5 using SHA-512|
 
-Suivant la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518#section-3.3)
+Suivant la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518#section-3.3).
 
 - **ECDSA**
 
@@ -493,7 +498,7 @@ Suivant la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518
 |ES384|ECDSA using P-384 and SHA-384|
 |ES512|ECDSA using P-521 and SHA-512|
 
-Suivant la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518#section-3.4)
+Suivant la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518#section-3.4).
 
 - **RSASSA-PSS**
 
@@ -503,11 +508,11 @@ Suivant la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518
 |PS384|RSASSA-PSS using SHA-384 and MGF1 with SHA-384|
 |PS512|RSASSA-PSS using SHA-512 and MGF1 with SHA-512|
 
-Suivant la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518#section-3.5)
+Suivant la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518#section-3.5).
 
 #### Signature d'un message
 
-Etant donné que la clé privé ne peut être extraite du KMS la signature ne peut se faire que directement auprès du KMS.
+Etant donné que la clé privée ne peut être extraite du KMS ,la signature ne peut se faire que directement auprès du KMS.
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -521,7 +526,7 @@ L'API attend les valeurs suivantes :
 |alg|string|Algorithme de signature|
 |isdigest|boolean|Indique si le message est déjà hashé|
 
-**Exemple de signature**
+**Exemple de signature :**
 
 ```json
 {

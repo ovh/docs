@@ -1,37 +1,38 @@
 ---
 title: "Architecture overview"
-excerpt: "Discover how OVHcloud handle the security of the OVHcloud KMS"
-updated: 2024-13-05
+excerpt: "Discover how we handle the security of the OVHcloud KMS"
+updated: 2024-05-14
 ---
 
 ## Objective
 
-The objective of this guide is to explain how we handle the resilience of the OVHcloud KMS.
+This guide explains how we handle the resilience of the OVHcloud KMS.
 
 ## Instructions
 
 ### KMS architecture
 
-The OVHcloud KMS is by design replicated accross multiple datacenter to ensure the high availability of it
+The OVHcloud KMS is by design replicated accross multiple datacenters to ensure its high availability.
 
 ![Architecture overview](images/KMS_Overview.png){.thumbnail}
 
 ### KMS components location
 
-Each KMS Region consists of several hosts in a single OVH Region.
+Each KMS Region consists of several hosts in a single OVHcloud Region.
+
 These hosts are partitioned into two different zones, so that any single hardware failure is as unlikely as possible to take out both zones at once.
 
 #### Data resilience
 
 - **DB Replication**
 
-The KMS will not return a success status for the creation or import of key material unless that data was successfully replicated to both zones. This is to ensure that in the event where one of the database is lost, no key will be lost. As a consequence, if one zone becomes unavailable, the KMS will refuse to create new keys. However existing keys will still be available to perform cryptographic operations.
+The KMS will not return a success status for the creation or import of key material unless that data was successfully replicated to both zones. This is to ensure that in the event where one of the database is lost, no key will be lost. As a consequence, if one zone becomes unavailable, the KMS will refuse to create new keys. However, existing keys will still be available to perform cryptographic operations.
 
 The key material is also replicated to a third database, in a different region. Because replication to a remote region has a higher latency, we do not wait for that replication to be complete before returning a success status to the user. Replication to the remote region will typically lag a few seconds at most behind the main region.
 
 - **DB Backups**
 
-Regular backups are taken from the replica every 5 minutes. Each backup is stored in two regions, different from the main KMS region.
+Regular backups are taken from the replica every 5 minutes. Each backup is stored in two regions, different from the main KMS region.<br>
 These backups are kept for 30 days.
 
 #### Data security
@@ -40,40 +41,38 @@ All customer data are always stored encrypted in the databases and in the backup
 
 #### Backup location
 
-Backup location depends of the location of the OVHcloud KMS
+Backup location depends on the location of the OVHcloud KMS.
 
 - **EU_WEST_RBX**
-
-KMS Backup Region 1 : EU_WEST_SBG
-KMS Backup Region 2 : EU_WEST_GRA
+    - KMS Backup Region 1 : EU_WEST_SBG
+    - KMS Backup Region 2 : EU_WEST_GRA
 
 - **EU_WEST_SBG**
-
-KMS Backup Region 1 : EU_WEST_RBX
-KMS Backup Region 2 : EU_WEST_GRA
+    - KMS Backup Region 1 : EU_WEST_RBX
+    - KMS Backup Region 2 : EU_WEST_GRA
 
 ### Disaster scenarios
 
-#### What happens if one host in a zone is lost
+#### What happens if one host in a zone is lost?
 
-Keys remains available and traffic is redirected to the other zone
-Requests in flight can timeout or return errors
-If the database is down, the KMS will refuse to create or import new keys
+Keys remain available and traffic is redirected to the other zone.<br>
+Requests in flight can timeout or return errors.<br>
+If the database is down, the KMS will refuse to create or import new keys.
 
-#### What happens if a zone is lost
+#### What happens if a zone is lost?
 
-Keys remains available
-The other zone stays available to serve user queries but will refuse to create or import new keys
+Keys remain available.<br>
+The other zone stays available to serve user queries but will refuse to create or import new keys.
 
-#### What happens if the primary region is lost
+#### What happens if the primary region is lost?
 
-The keys created in the last seconds can be lost and the KMS becomes unavailable
-Database replica will be use at region rebuilt to retrieve stored keys
+The keys created in the last seconds can be lost and the KMS becomes unavailable.<br>
+Database replica will be used at region rebuilt to retrieve stored keys.
 
-#### What happens if the primary region and the remote replica are lost
+#### What happens if the primary region and the remote replica are lost?
 
-The keys created in the last 5 minutes can be lost and the KMS becomes unavailable
-Database backup will be use at region rebuilt to retrieve stored keys
+The keys created in the last 5 minutes can be lost and the KMS becomes unavailable.<br>
+Database backup will be used at region rebuilt to retrieve stored keys.
 
 ## Go further
 
