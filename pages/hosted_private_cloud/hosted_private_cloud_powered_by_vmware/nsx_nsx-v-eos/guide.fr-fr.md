@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-v - Fin de prise en charge
 excerpt: "Analysez votre utilisation des fonctionnalités NSX-v et choisissez entre les différents scénarios possibles d’évolution, allant de la désactivation du composant NSX-v jusqu'à la migration vers NSX"
-updated: 2024-05-06
+updated: 2024-05-14
 ---
 
 ## Objectif
@@ -48,7 +48,7 @@ Veillez à bien supprimer les règles distribuées existantes (3 règles existen
 
 Veillez à bien déplacer les VM de chaque vXlan vers le vRACK du Portgroup.
 
-Vous pouvez suivre la documentation pour migrer les machines virtuelles.
+Vous pouvez suivre [les étapes ci-dessouss](#vm-migration) pour migrer les machines virtuelles.
 
 ![NSX VXLAN](images/vxlan.gif){.thumbnail}
 
@@ -98,6 +98,8 @@ Pour créer vos réseaux VLAN, vous pouvez suivre cette documentation : [Créati
 Vous serez notifié lorsque le processus de désactivation sera disponible. Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelles des VXLAN vers les DVS vRACK.
 
 Depuis la vue `Réseaux`{.action} sur la console vSphere UI, faire un cliv droit sur le portgroup VXLAN où résident vos Machines Virtuelles et sélectionnez `Migrer les VM vers un autre réseau...`{.action}.
+
+<a name="vm-migration"></a>
 
 > [!primary]
 > Dans cet exemple, nous allons migrer les VMs vers le portgroup `VLAN10` qui se trouve sur le vRACK. Vous devez migrer toutes les VM vers des portgroups pour pouvoir désactiver NSX-v (ou pour que OVHcloud détecte un non usage de NSX-v).
