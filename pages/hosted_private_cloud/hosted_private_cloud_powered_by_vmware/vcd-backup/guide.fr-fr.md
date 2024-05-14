@@ -1,6 +1,6 @@
 ---
-title: "VMware Cloud Director - Sauvegarde avec Veeam Backup"
-excerpt: "Retrouvez comment effectuer des sauvegardes avec l'intégration Veeam Backup Data Protection"
+title: "VMware Cloud Director - Sauvegarde avec Veeam backup Data Protection VDC Plugin"
+excerpt: "Effectuer des sauvegardes avec l'intégration Veeam Backup Data Protection VCD plugin"
 updated: 2024-04-30
 ---
 
@@ -25,7 +25,7 @@ Dans cette documentation, vous découvrirez :
 
 Cette documentation nécessite :
 
-- Un compte VMware Vloud Director administrateur
+- Un compte VMware Cloud Director administrateur
 - Une Organisation VCD
 - Un utilisateur avec le rôle Administrateur de l'organisation pour vous connecter au portail libre-service Veeam Data Protection. Le nouvel utilisateur admin d'un datacenter virtuel a le rôle par défaut.
 
@@ -60,7 +60,7 @@ Lorsque vous utilisez l'intégration Veeam Data Protection VCD pour créer des t
 Pour accéder au Portail Veeam Self-Service Backup depuis Cloud Director :
 
 1. Connectez-vous au portail client VMware Cloud Director avec un compte Cloud Director disposant des droits appropriés.
-2. Dans le menu de la barre central supérieur, cliquez sur -> `MORE` puis sélectionnez -> `Data Protection with Veeam`.
+2. Dans le menu de la barre central supérieur, cliquez sur -> `PLUS` puis sélectionnez -> `Data Protection with Veeam`.
 
 La fenêtre du Plugin Veeam VCD s'ouvrira avec un bandeau gris foncé (ici dans la 2eme capture)
 
