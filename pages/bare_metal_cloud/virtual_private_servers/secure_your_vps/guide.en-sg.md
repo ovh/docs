@@ -1,12 +1,12 @@
 ---
-title: 'Securing a VPS'
-excerpt: 'Find out the basics of securing your VPS'
+title: "How to secure a VPS"
+excerpt: "Find out how to apply basic security measures to protect your VPS against attacks and unauthorised access"
 updated: 2024-02-20
 ---
 
 ## Objective
 
-When you order your VPS, you can choose a distribution or operating system to pre-install. The server is therefore ready to use after delivery but it will be up to you as the administrator to implement measures to ensure the security and stability of your system.
+When you order your VPS, you can choose a distribution or operating system to install. The server is therefore ready to use after delivery but it will be up to you as the administrator to implement measures to ensure the security and stability of your system.
 
 **This guide provides some general tips for securing a GNU/Linux-based server.**
 
@@ -31,7 +31,7 @@ When you order your VPS, you can choose a distribution or operating system to pr
 > If you are configuring your first OVHcloud VPS, we recommend to consult our guide on [getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) before continuing.
 >
 
-The following examples presume that you are logged in as a user with elevated permissions.
+The following examples presume that you are logged in as a [user with elevated permissions](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Updating your system
 
@@ -60,7 +60,7 @@ One of the first things to do on your server is configuring the SSH service's li
 To do this, modify the service configuration file with a text editor of your choice (`nano` used in this example):
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Find the following or similar lines:
@@ -87,7 +87,7 @@ Restart the service:
 sudo systemctl restart sshd
 ```
 
-This should be sufficient to apply the changes. Alternatively, reboot the VPS (`~$ sudo reboot`).
+This should be sufficient to apply the changes. Alternatively, reboot the VPS (`sudo reboot`).
 
 **For Ubuntu 23.04 and later**
 
@@ -109,15 +109,24 @@ Save your changes and run the following commands:
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 If you have enabled your operating system's firewall, make sure you allow the new port in your firewall rules.
 
-Remember that you will have to indicate the new port any time you request an SSH connection to your server, for example:
+Remember that you will have to indicate the new port any time you [establish an SSH connection to your server](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), for example:
 
 ```bash
-ssh username@IPv4_of_your_VPS -p NewPortNumber
+ssh username@IPv4_VPS -p NewPortNumber
+```
+
+Example:
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 ### Creating a user with restricted rights <a name="createuser"></a>

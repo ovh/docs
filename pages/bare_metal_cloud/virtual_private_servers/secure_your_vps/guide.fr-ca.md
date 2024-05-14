@@ -1,6 +1,6 @@
 ---
-title: 'Sécuriser un VPS'
-excerpt: 'Découvrez les éléments de base vous permettant de sécuriser votre VPS'
+title: "Sécuriser un VPS"
+excerpt: "Découvrez comment mettre en place des mesures de sécurité basiques pour protéger votre VPS des attaques et des accès non autorisés"
 updated: 2024-02-20
 ---
 
@@ -31,7 +31,7 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 > S'il s'agit de votre première configuration d'un VPS OVHcloud, nous vous invitons à consulter en premier lieu notre guide [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 >
 
-Les exemples suivants supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées.
+Les exemples suivants supposent que vous êtes connecté en tant qu'[utilisateur avec des autorisations élevées](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Mettre à jour votre système d'exploitation
 
@@ -62,7 +62,7 @@ La modification de ce paramètre, au profit d'un port différent, est une mesure
 Pour cela, modifiez le fichier de configuration du service avec l'éditeur de texte de votre choix (`nano` est utilisé dans cet exemple) :
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Vous devriez trouver les lignes suivantes ou équivalentes :
@@ -92,7 +92,7 @@ Redémarrez le service :
 sudo systemctl restart sshd
 ```
 
-Cela devrait être suffisant pour appliquer les changements. Dans le cas contraire, redémarrez le VPS (`~$ sudo reboot`).
+Cela devrait être suffisant pour appliquer les changements. Dans le cas contraire, redémarrez le VPS (`sudo reboot`).
 
 **Pour Ubuntu 23.04 et versions ultérieures**
 
@@ -110,15 +110,24 @@ Enregistrez vos modifications et exécutez les commandes suivantes :
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 Si vous avez activé le pare-feu de votre système d'exploitation, assurez-vous d'autoriser le nouveau port dans les règles du pare-feu.
 
-N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de connexion SSH à votre serveur, par exemple :
+N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de [connexion SSH à votre serveur](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), par exemple :
 
 ```bash
-ssh nomdutilisateur@IPv4_de_votre_VPS -p NouveauPort
+ssh nomdutilisateur@IPv4_VPS -p NouveauPort
+```
+
+Exemple :
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 ### Créer un utilisateur avec des droits restreints <a name="createuser"></a>

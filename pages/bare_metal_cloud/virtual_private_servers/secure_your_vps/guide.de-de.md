@@ -1,6 +1,6 @@
 ---
-title: Einen VPS absichern
-excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS
+title: "Einen VPS absichern"
+excerpt: "Erfahren Sie hier, wie Sie grundsätzliche Sicherheitsmaßnahmen anwenden, um Ihren VPS vor Angriffen und unbefugtem Zugriff zu schützen"
 updated: 2024-02-20
 ---
 
@@ -12,12 +12,13 @@ updated: 2024-02-20
 
 Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssystem auswählen, das Sie vorinstallieren möchten. Der Server kann also nach der Lieferung direkt verwendet werden. Es ist jedoch Ihre Aufgabe als Administrator, Maßnahmen umzusetzen, die die Sicherheit und Stabilität Ihres Systems gewährleisten.
 
-**In dieser Anleitung erhalten Sie einige allgemeine Tipps zur Sicherung Ihres GNU/Linux-basierten Servers.**
+**In dieser Anleitung werden allgemeine Hinweise zur Absicherung eines GNU/Linux-basierten Servers erläutert.**
 
 > [!warning]
-> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Datenzugriff auf Ihre Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. 
 >
 
 ## Voraussetzungen
@@ -29,12 +30,12 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 
 > [!primary]
 >
-> Beachten Sie, dass dies eine allgemeine Anleitung ist, basierend auf einer Ubuntu Distribution. Einige Befehle müssen an die von Ihnen verwendete Distribution oder das Betriebssystem angepasst werden. Wir empfehlen Ihnen gelegentlich, externe Tools zu verwenden. Wenn Sie Hilfe benötigen, lesen Sie die offizielle Dokumentation dieser Anwendungen.
+> Beachten Sie, dass dies eine allgemeine Anleitung ist, basierend auf einer Ubuntu Distribution. Einige Befehle müssen an die von Ihnen verwendete Distribution oder das Betriebssystem angepasst werden. Wir empfehlen gelegentlich die Verwendung externer Tools. Wenn Sie dazu Hilfe benötigen, lesen Sie die offizielle Dokumentation dieser Anwendungen.
 >
-> Wenn Sie Ihren ersten OVHcloud VPS konfigurieren, empfehlen wir, zum Einstieg unsere Anleitung zur [Ersteinrichtung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) zu verwenden.
+> Wenn Sie Ihren ersten OVHcloud VPS konfigurieren, empfehlen wir, zum Einstieg unsere Anleitung zur [Ersteinrichtung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) zu nutzen.
 >
 
-Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen verbunden sind.
+Die folgenden Beispiele setzen voraus, dass Sie als [Benutzer mit erhöhten Berechtigungen](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) eingeloggt sind.
 
 ### Systemupdate
 
@@ -64,7 +65,7 @@ Eine der ersten Aktionen auf Ihrem Server sollte die Konfiguration des Listening
 Ändern Sie hierzu die Konfigurationsdatei des Dienstes mit einem Texteditor Ihrer Wahl (`nano` wird in diesem Beispiel verwendet):
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Sie sollten diese oder ähnliche Zeilen vorfinden:
@@ -92,7 +93,7 @@ Starten Sie den Dienst neu:
 systemctl restart sshd
 ```
 
-Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ den VPS neu starten (`~$ sudo reboot`).
+Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ den VPS neu starten (`sudo reboot`).
 
 **Für Ubuntu 23.04 und höher**
 
@@ -108,17 +109,26 @@ Accept=no
 
 Speichern Sie die Änderungen, und führen Sie die folgenden Befehle aus:
 
-```console
+```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 Wenn Sie die Betriebssystemfirewall aktiviert haben, stellen Sie sicher, dass der neue Port in den Firewallregeln zugelassen ist.
 
-Denken Sie daran, dass Sie nun den neuen Port immer angeben müssen, wenn Sie eine SSH-Verbindung mit Ihrem Server aufbauen, zum Beispiel:
+Denken Sie daran, dass Sie nun den neuen Port immer angeben müssen, wenn Sie eine [SSH-Verbindung mit Ihrem Server aufbauen](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), zum Beispiel:
 
 ```bash
-username@IPv4_des_VPS -p PortNummer
+username@IPv4_VPS -p PortNummer
+```
+
+Beispiel:
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 ### Erstellen eines Benutzers mit eingeschränkten Rechten <a name="createuser"></a>
