@@ -69,16 +69,16 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 > **Schritt 3**
 >> **TXT-Eintrag**<br><br>
 >> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü, und wählen Sie `TXT`.<br> aus, um vorhandene TXT-Einträge zu identifizieren.
->>![dnszone](images/filter-txt.png){.thumbnail}<br>
+>> ![dnszone](images/filter-txt.png){.thumbnail}<br>
 >> - Wenn „TXT“-Einträge für die Domain alleine (Beispiel: `mydomain.ovh.`) und ihre Subdomain als "www" (Beispiel: `www.mydomain.ovh.`) vorhanden sind, müssen diese gelöscht werden, damit sie nicht in Konflikt mit dem CNAME-Eintrag stehen, den Sie in Schritt 3 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihre Domain allein mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
 > **Schritt 4**
 >> **CNAME-Eintrag**<br><br>
 >> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü und wählen Sie `CNAME`.<br>
->>![dnszone](images/filter-cname.png){.thumbnail}
+>> ![dnszone](images/filter-cname.png){.thumbnail}
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile Ihrer Subdomain in "www" (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
 >> - Wenn Sie keinen existierenden "CNAME" Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} oben rechts auf Ihrem Bildschirm und wählen Sie das „Daraufzeigefeld“ `CNAME`{.action}.
 >> Füllen Sie das Feld **Subdomain** mit dem Wert `www` aus und geben Sie `verify.squarespace.com.` in das Feld **Ziel**.<br>
->>![cname-entry](images/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
+>> ![cname-entry](images/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
 >> Klicken Sie auf `Weiter`{.action} und bestätigen Sie Ihren "CNAME" Eintrag.
 >> Fügen Sie den zweiten CNAME-Eintrag hinzu, indem Sie `ext-cust.squarespace.com.` in das Feld **Ziel**.<br>
 
