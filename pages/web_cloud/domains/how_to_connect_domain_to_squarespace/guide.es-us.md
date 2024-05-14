@@ -1,7 +1,7 @@
 ---
 title: "Cómo conectar un dominio de OVHcloud a un alojamiento web de SquareSpace"
 excerpt: "Prepara y configura la zona DNS de tu dominio de OVHcloud para conectarla a un alojamiento de SquareSpace"
-updated: 2024-05-13
+updated: 2024-05-14
 ---
 
 > [!primary]
@@ -64,16 +64,47 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >> **Registro AAAA**<br><br>
 >>  Para identificar los registros "AAAA" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `AAAA`.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla que corresponde únicamente a su nombre de dominio, sin subdominio (por ejemplo, `mydomain.ovh.`) y seleccione `Eliminar el registro`{.action}.<br>
+>> - Si hay un registro para el subdominio "www" (p. ej.: `www.mydomain.ovh.`), elimínelo también para que no entre en conflicto con el registro CNAME que va a introducir en el etapa 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su dominio con el subdominio "www" y seleccione `Eliminar el registro`{.action}.<br>
+>> - Si no tiene un registro "AAAA" existente, vaya al etapa 3.
+> **Etapa 3**
+>>> **Registro TXT**<br><br>
+>> Para identificar los registros "TXT" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione "TXT".<br>
+>> ![dnszone](images/filter-txt.png){.thumbnail}<br>
+>> - Si existen registros "TXT" para el dominio solo (p. ej.: `mydomain.ovh.`) y para su subdominio en "www" (p. ej.: `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con el registro CNAME que vaya a introducir en el paso 3. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su dominio solo con el subdominio "www" y seleccione "`Eliminar el registro`{.action}.<br>
+> **Etapa 4**
+>>> **Registro CNAME**<br><br>
+>> Para identificar los registros CNAME existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `CNAME`.<br>
+>> ![dnszone](images/filter-cname.png){.thumbnail}
+>> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente a su subdominio en "www" (por ejemplo: `mydomain.ovh.`) y seleccione `Modificar el registro`{.action}.<br>
+>> - Si no tiene un registro "CNAME" existente, haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de punteo" `CNAME`{.action}.
+>> Complete el campo **Subdominio** con el valor `www` e introduzca `verify.squarespace.com.` en el campo **Destino**.<br>
+>> ![cname-entry](images/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
+>> Haga clic en `Siguiente`{.action} y acepte el registro CNAME.
+>> Agregue el segundo registro CNAME introduciendo `ext-cust.squarespace.com.` en el campo **Destino**.<br>
 
+La zona DNS ya está configurada para asociarse a un alojamiento SquareSpace.
 
+### Conectar un dominio a SquareSpace
 
+Para ello, acceda al área de cliente de SquareSpace y realice las operaciones necesarias.
 
+> [!primary]
+>
+> - Puede conectar su dominio a un sitio SquareSpace de prueba o de pago. No se puede conectar a un sitio caducado.
+> - Si tiene una cuenta de correo asociada a su dominio, puede seguir utilizándola una vez que el dominio se haya conectado a SquareSpace. Antes de conectar el dominio, le recomendamos que lea esta [guía de SquareSpace](https://support.squarespace.com/hc/es/articles/217601877-Usar-un-correo-electr%C3%B3nico-del-dominio-personalizado-que-ya-posees-con-Squarespace){.external}.
+> - Puede utilizar varios dominios personalizados para su sitio web. Puede conectar o guardar tantas como desee.
+> - No es posible conectar un dominio personalizado a SquareSpace si el dominio incluye las palabras "squarespace" o "sqsp".
 
+Para empezar, siga los pasos de conexión descritos en el paso 1 de esta [guía SquareSpace](https://support.squarespace.com/hc/es/articles/12880712406797-Conectar-un-dominio-de-OVHcloud-con-tu-sitio-de-Squarespace){.external}.
 
+> [!warning]
+>
+> Si recibe el mensaje de alerta "This domain is already connected to another Squarespace site" (Este dominio ya está conectado a otro sitio Squarespace), compruebe el resto de sitios web Squarespace para determinar a qué sitio está conectado el dominio. A continuación, desconéctelo de este sitio web.
 
+Para continuar el proceso, prosiga con el paso 2 de esta [guía SquareSpace](https://support.squarespace.com/hc/es/articles/12880712406797-Conectar-un-dominio-de-OVHcloud-con-tu-sitio-de-Squarespace){.external}.
 
-
-
+Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](/links/web/emails), configure su zona DNS en consecuencia. Para más información, consulte nuestra guía "[Configuración de un registro MX](/pages/web_cloud/domains/dns_zone_mx)".
 
 ## Más información <a name="go-further"></a>
 
