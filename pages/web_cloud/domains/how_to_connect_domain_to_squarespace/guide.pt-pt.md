@@ -57,9 +57,9 @@ Siga as etapas em ordem nas seguintes guias:
 >> - Clique no botão `...`{.action} à direita da linha da tabela que corresponde ao seu nome de domínio apenas, sem um subdomínio (exemplo: `mydomain.ovh.`), e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se existir um registo para o subdomínio "www." (exemplo: `www.mydomain.ovh.`), deverá eliminá-lo para que não entre em conflito com o registo CNAME que vai introduzir no etapa 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu nome de domínio apenas com o subdomínio "www." e clique em `Eliminar entrada`{.action}.<br>
 >> - Se não possui um registo "A" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `A`{.action}<br><br>
->>> Deverá criar 4 registos do tipo "A" sucessivamente a fim de introduzir os 4 endereços IPv4 relativos ao SquareSpace.
->>> Deixe o campo **Subdomínio** vazio e insira o primeiro endereço IPv4 do SquareSpace `198.185.159.144` no campo **Destino**.
->>> Clique em `Seguinte`{.action}, valide o seu registo "A", repita a operação para os outros 3 endereços IPv4 `198.185.159.145`; `198.49.23.144`; `198.49.23.145` e passe à etapa 2.
+>> Deverá criar 4 registos do tipo "A" sucessivamente a fim de introduzir os 4 endereços IPv4 relativos ao SquareSpace.
+>> Deixe o campo **Subdomínio** vazio e insira o primeiro endereço IPv4 do SquareSpace `198.185.159.144` no campo **Destino**.
+>> Clique em `Seguinte`{.action}, valide o seu registo "A", repita a operação para os outros 3 endereços IPv4 `198.185.159.145`; `198.49.23.144`; `198.49.23.145` e passe à etapa 2.
 > **Etapa 2**
 >> **Registo AAAA**<br><br>
 >>  Para identificar os registos "AAAA", clique no menu Filtros na parte superior da tabela de registos DNS e selecione `AAAA`.<br>
