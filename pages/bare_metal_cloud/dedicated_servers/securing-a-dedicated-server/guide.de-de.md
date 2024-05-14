@@ -1,6 +1,6 @@
 ---
-title: Einen dedizierten Server absichern
-excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres Dedicated Server
+title: "Einen Dedicated Server absichern"
+excerpt: "Erfahren Sie hier, wie Sie grundsätzliche Sicherheitsmaßnahmen anwenden, um Ihren Server vor Angriffen und unbefugtem Zugriff zu schützen"
 updated: 2024-02-20
 ---
 
@@ -34,7 +34,7 @@ Wenn Sie Ihren Dedicated Server bestellen, können Sie eine Distribution oder ei
 > Wenn Sie Ihren ersten OVHcloud Server konfigurieren, empfehlen wir, zum Einstieg unsere Anleitung zur [Ersteinrichtung eines Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) zu verwenden.
 >
 
-Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen eingeloggt sind.
+Die folgenden Beispiele setzen voraus, dass Sie als [Benutzer mit erhöhten Berechtigungen](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) eingeloggt sind.
 
 ### Systemupdate
 
@@ -64,7 +64,7 @@ Eine der ersten Aktionen auf Ihrem Server sollte die Konfiguration des Listening
 Ändern Sie hierzu die Konfigurationsdatei des Dienstes mit einem Texteditor Ihrer Wahl (`nano` wird in diesem Beispiel verwendet):
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Sie sollten diese oder ähnliche Zeilen vorfinden:
@@ -92,7 +92,7 @@ Starten Sie den Dienst neu:
 systemctl restart sshd
 ```
 
-Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ den Server neu starten (`~$ sudo reboot`).
+Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ den Server neu starten (`sudo reboot`).
 
 **Für Ubuntu 23.04 und höher**
 
@@ -112,22 +112,31 @@ Accept=no
 
 Speichern Sie die Änderungen, und führen Sie die folgenden Befehle aus:
 
-```console
+```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 Wenn Sie die Betriebssystemfirewall aktiviert haben, stellen Sie sicher, dass der neue Port in den Firewallregeln zugelassen ist.
 
-Denken Sie daran, dass Sie nun den neuen Port immer angeben müssen, wenn Sie eine SSH-Verbindung mit Ihrem Server aufbauen, zum Beispiel:
+Denken Sie daran, dass Sie nun den neuen Port immer angeben müssen, wenn Sie eine [SSH-Verbindung mit Ihrem Server aufbauen](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
 ```bash
-username@IPv4_des_servers -p PortNummer
+username@IPv4_server -p PortNummer
+```
+
+Beispiel:
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 > [!warning]
 >
-> Beachten Sie, dass die Änderung des Standardports von SSH oder einem anderen Protokoll das Risiko beinhaltet, dass bestimmte Dienste nur mittels Standardport konfiguriert werden können und nicht mehr funktionieren, wenn der Port bearbeitet wird.
+> Beachten Sie, dass die Änderung des Standardports von SSH oder einem anderen Protokoll ein Risiko beinhaltet, da bestimmte Dienste nur mittels Standardport konfiguriert werden können und nicht mehr funktionieren, wenn der Port geändert wird.
 >
 
 ### Erstellen eines Benutzers mit eingeschränkten Rechten
@@ -226,14 +235,14 @@ Wenn Sie die OVHcloud Network Firewall aktivieren möchten, folgen Sie [dieser A
 
 ### Ihr System und Ihre Daten sichern
 
-Das Konzept der Sicherheit ist nicht auf den Schutz eines Systems vor Angriffen beschränkt. Die Sicherung Ihrer Daten ist ebenfalls ein wesentlicher Bestandteil, weshalb OVHcloud Ihnen kostenlos 500 GB Backup-Speicherplatz für Ihren Server anbietet. Sie können den Backup-Speicher in Ihrem Kundencenter aktivieren und dort über folgende Protokolle auf ihn zugreifen.
+Das Konzept der Server-Sicherheit ist nicht auf den Schutz eines Systems vor Angriffen beschränkt. Die Sicherung Ihrer Daten ist ebenfalls ein wesentlicher Bestandteil, weshalb OVHcloud Ihnen kostenlos 500 GB Backup-Speicherplatz für Ihren Server anbietet. Sie können den Backup-Speicher in Ihrem Kundencenter aktivieren und dort über folgende Protokolle auf ihn zugreifen.
 
 - FTP
 - FTPS
 - NFS
 - CIFS
 
-Außerdem benötigen Sie eine zusätzliche Backup-Lösung, um Ihre Daten zu replizieren und auf Ihren Backup-Speicher zu übertragen.
+Außerdem benötigen Sie eine Backup-Anwendung, um Ihre Daten zu replizieren und auf Ihren Backup-Speicher zu übertragen.
 
 Für weitere Informationen zu unseren Storage-Angeboten lesen Sie [unsere Anleitung](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) zum Thema.
 

@@ -1,6 +1,6 @@
 ---
-title: Securing a dedicated server
-excerpt: Find out the basics of securing your dedicated server
+title: "How to secure a dedicated server"
+excerpt: "Find out how to apply basic security measures to protect your dedicated server against attacks and unauthorised access"
 updated: 2024-02-20
 ---
 
@@ -13,12 +13,12 @@ When you order your dedicated server, you can choose a distribution or operating
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and security. Since we have no administrative access to your devices, it is your responsibility to manage the software and to ensure they function correctly.
 > 
-> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
+> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Administrative access (sudo) via SSH to your server
 
 ## Instructions
@@ -29,6 +29,8 @@ When you order your dedicated server, you can choose a distribution or operating
 >
 > If you are configuring your first OVHcloud dedicated server, we recommend to consult our guide on [getting started with a dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) before continuing.
 >
+
+The following examples presume that you are logged in as a [user with elevated permissions](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Updating your system
 
@@ -57,7 +59,7 @@ One of the first things to do on your server is configuring the SSH service's li
 To do this, modify the service configuration file with a text editor of your choice (`nano` used in this example):
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Find the following or similar lines:
@@ -68,8 +70,7 @@ Find the following or similar lines:
 #ListenAddress 0.0.0.0
 ```
 
-Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.<br>
-Save and exit the configuration file.
+Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.<br>Save and exit the configuration file.
 
 If the line is "commented out" (i.e. if it is preceded by a "#") as shown in the example above, make sure to remove the "#" before saving the file so that the change takes effect. Example:
 
@@ -85,7 +86,7 @@ Restart the service:
 sudo systemctl restart sshd
 ```
 
-This should be sufficient to apply the changes. Alternatively, reboot the server (`~$ sudo reboot`).
+This should be sufficient to apply the changes. Alternatively, reboot the server (`sudo reboot`).
 
 **For Ubuntu 23.04 and later**
 
@@ -107,15 +108,24 @@ Save your changes and run the following commands:
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 If you have enabled your operating system's firewall, make sure you allow the new port in your firewall rules.
 
-Remember that you will have to indicate the new port any time you request an SSH connection to your server, for example:
+Remember that you will have to indicate the new port any time you [establish an SSH connection to your server](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
 ```bash
-ssh username@IPv4_of_your_server -p NewPortNumber
+ssh username@IPv4_server -p NewPortNumber
+```
+
+Example:
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 > [!warning]
@@ -237,6 +247,6 @@ For more information on our backup storage solutions, please see our [backup sto
 
 [Network Firewall guide](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
