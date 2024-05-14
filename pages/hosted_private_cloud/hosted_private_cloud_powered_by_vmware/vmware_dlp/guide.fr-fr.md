@@ -2,7 +2,6 @@
 title: "Transfert des logs (Logs Forwarding) TCP / HTTP / HTTPS du PCC Hosted Private Cloud"
 excerpt: "Découvrez comment transférer vos logs depuis un PCC Hosted Private Cloud vers Logs Data Platform"
 updated: 2024-05-13
-flag: hidden
 ---
 
 ## Objectif
@@ -81,8 +80,11 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
  
 > **Parametres:**
 >
-> serviceName: La reference de votre PCC, exemple: **pcc-XX-XX-XX-XX**.
+> serviceName: La reference de votre PCC : **pcc-XX-XX-XX-XX**.
 
+> [!primary]
+>
+>  Find more information on the OVHcloud API in our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 Obtenez les détails d'un flux de données :
 
