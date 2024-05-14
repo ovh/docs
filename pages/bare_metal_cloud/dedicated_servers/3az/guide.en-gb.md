@@ -20,7 +20,7 @@ Bare Metal in the 3-AZ region caters to customers requiring high availability an
 The 3-AZ region's value lies in offering three identical servers distributed across three availability zones within the same region. This setup ensures high availability and data redundancy, maintaining operational continuity and reducing the risk of data loss. The strategic distribution of servers minimizes latency and boosts application performance.
 
 ### Regionalization at OVHcloud
-OVHcloud's global presence includes several regions across the world, such as Europe, the US, Canada, and APAC. The introduction of the Region concept and support of Availability Zones is a strategic initiative to provide customers with optimal performance and resilience. The Paris region is the first to adopt the 3-AZ model, with more regions planned for future deployment.
+OVHcloud's global presence includes several regions across the world, such as Europe, the US, Canada, and APAC. The introduction of the Region concept and support of Availability Zones is a strategic initiative to provide customers with optimal performance and resilience. The Paris region is the first to adopt the 3-AZ model.
 
 ### Region Selection Tips
 For optimal performance, a region should be selected closest to its users. For global availability, services should be spread across multiple regions. The 3-AZ Region is ideal for customers seeking the highest resilience and should be used to build multi-AZ application designs.
