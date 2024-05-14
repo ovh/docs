@@ -68,12 +68,12 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >> - Si hay un registro para el subdominio "www" (p. ej.: `www.mydomain.ovh.`), elimínelo también para que no entre en conflicto con el registro CNAME que va a introducir en el etapa 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su dominio con el subdominio "www" y seleccione `Eliminar el registro`{.action}.<br>
 >> - Si no tiene un registro "AAAA" existente, vaya al etapa 3.
 > **Etapa 3**
->>> **Registro TXT**<br><br>
+>> **Registro TXT**<br><br>
 >> Para identificar los registros "TXT" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione "TXT".<br>
 >> ![dnszone](images/filter-txt.png){.thumbnail}<br>
 >> - Si existen registros "TXT" para el dominio solo (p. ej.: `mydomain.ovh.`) y para su subdominio en "www" (p. ej.: `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con el registro CNAME que vaya a introducir en el paso 3. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su dominio solo con el subdominio "www" y seleccione "`Eliminar el registro`{.action}.<br>
 > **Etapa 4**
->>> **Registro CNAME**<br><br>
+>> **Registro CNAME**<br><br>
 >> Para identificar los registros CNAME existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `CNAME`.<br>
 >> ![dnszone](images/filter-cname.png){.thumbnail}
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente a su subdominio en "www" (por ejemplo: `mydomain.ovh.`) y seleccione `Modificar el registro`{.action}.<br>
