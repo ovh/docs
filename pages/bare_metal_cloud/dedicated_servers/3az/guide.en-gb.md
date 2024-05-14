@@ -25,7 +25,7 @@ OVHcloud's global presence includes several regions across the world, such as Eu
 ### Region Selection Tips
 For optimal performance, a region should be selected closest to its users. For global availability, services should be spread across multiple regions. The 3-AZ Region is ideal for customers seeking the highest resilience and should be used to build multi-AZ application designs.
 
-You can list your clusters here with a new tab in the interface:
+You can list your clusters here with a new tab in the interface (the servers are represented in the list underlying a cluster comprising 3 nodes):
    
 ![left_menu](images/01-20240513-blur.png)
    
