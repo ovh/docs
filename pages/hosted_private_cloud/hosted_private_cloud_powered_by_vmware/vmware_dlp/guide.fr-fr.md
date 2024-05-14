@@ -10,17 +10,12 @@ flag: hidden
 L'objectif de ce guide est de vous montrer comment activer le transfert de logs de votre PCC Private Cloud vers Logs Data Platform (LDP), une plateforme qui vous aide à stocker, archiver, interroger et visualiser vos logs.
 Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au [Guide d'introduction de Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 
-## Glossaire
-
-- **Logs Data Platform :** plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/).
-- **Data Stream :** partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
-- **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
-- **Abonnement à la redirection de logs :** lors de l'activation du transfert de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
-
 ## Prérequis
 
+- Disposer d'un compte client OVHcloud.
 - Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 - Un [environnement de cloud privée VMware](https://help.ovhcloud.com/csm/fr-vmware-host-addition?id=kb_article_view&sysparm_article=KB0045617) opérationnel.
+- Avoir suivi le [Quick start Logs Data Plateform](https://help.ovhcloud.com/csm/fr-logs-data-platform-quick-start?id=kb_article_view&sysparm_article=KB0050058)
 - Le compte LDP et le compte Hosted Private Cloud doivent appartenir au même compte OVHcloud.
 
 ## Concepts & limites
@@ -35,21 +30,21 @@ Les logs transférés sont générés par votre environnement VMware à l'aide d
 
 Les logs contiennent les champs suivants :
 
-| Nom du champ                          | Description                                                                                                                                                                                      | Unité |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| serviceName                           | Domaine of the service                                                                                                                                                                           | uuid |
-| client_ip                             | Adresse IP du client qui a initié la connexion TCP au Load Balancer                                                                                                                              | IP |
-| client_port                           | Port TCP du client qui a initié la connexion TCP au Load Balancer                                                                                                                                | Numérique |
-| accept_date                           | Horodatage auquel la requête/connexion a été effectuée                                                                                                                                           | datetime (avec résolution en millisecondes), par exemple : 25/Mar/2024:14:07:19.536 |
-| http_verb http_request http_version   | La requête HTTP                                                                                                                                                                                  | String, par exemple : « GET / HTTP/1.1 » |
-| http_status                           | État HTTP retourné                                                                                                                                                                               | Numérique |
-| bytes_read                            | Nombre d'octets lus par le serveur                                                                                                                                                               | Numérique |
-| bytes_uploaded                        | Nombre d'octets envoyés par le serveur au client                                                                                                                                                 | Numérique |
-| client_certificate_verify             | Retourne l'ID d'erreur de vérification des résultats lorsque la connexion entrante a été établie sur une couche de transport SSL/TLS, sinon zéro si aucune erreur n'est rencontrée.              | Numérique |
-| client_certificate_distinguished_name | Lorsque la connexion entrante a été établie sur une couche de transport SSL/TLS, renvoie le nom unique complet du sujet du certificat présenté par le client                                     | String |
-| pool_id:listener_id                   | Pool vers lequel la requête/connexion a été redirigée                                                                                                                                            | uuid |
-| member_id                             | Membre auquel la requête/connexion a été envoyée                                                                                                                                                 | uuid |
-| tcp_total_session_duration_time       | Durée en millisecondes pendant laquelle la session TCP a été ouverte lorsque cette demande est effectuée                                                                                         | Numérique |
+| Nom du champ                          | Description                                                                                                                                                                                  | Unité |
+|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| serviceName                           | Nom de domaine de votre PCC                                                                                                                                                                  | uuid |
+| client_ip                             | Adresse IP du client qui a initié la connexion TCP au Load Balancer                                                                                                                          | IP |
+| client_port                           | Port TCP du client qui a initié la connexion TCP au Load Balancer                                                                                                                            | Numérique |
+| accept_date                           | Horodatage auquel la requête/connexion a été effectuée                                                                                                                                       | datetime (avec résolution en millisecondes), par exemple : 25/Mar/2024:14:07:19.536 |
+| http_verb http_request http_version   | La requête HTTP                                                                                                                                                                              | String, par exemple : « GET / HTTP/1.1 » |
+| http_status                           | État HTTP retourné                                                                                                                                                                           | Numérique |
+| bytes_read                            | Nombre d'octets lus par le serveur                                                                                                                                                           | Numérique |
+| bytes_uploaded                        | Nombre d'octets envoyés par le serveur au client                                                                                                                                             | Numérique |
+| client_certificate_verify             | Retourne l'ID d'erreur de vérification des résultats lorsque la connexion entrante a été établie sur une couche de transport SSL/TLS, sinon zéro si aucune erreur n'est rencontrée.          | Numérique |
+| client_certificate_distinguished_name | Lorsque la connexion entrante a été établie sur une couche de transport SSL/TLS, renvoie le nom unique complet du sujet du certificat présenté par le client                                 | String |
+| pool_id:listener_id                   | Pool vers lequel la requête/connexion a été redirigée                                                                                                                                        | uuid |
+| member_id                             | Membre auquel la requête/connexion a été envoyée                                                                                                                                             | uuid |
+| tcp_total_session_duration_time       | Durée en millisecondes pendant laquelle la session TCP a été ouverte lorsque cette demande est effectuée                                                                                     | Numérique |
 | termination_state                     | L'indicateur de fin de session : 2 lettres pour TCP, 4 lettres pour HTTP tous les détails sur la [page de documentation HAProxy](https://docs.haproxy.org/2.6/configuration.html#8.5){.external} | String (par exemple « ---- ») |
 
 Les champs suivants sont calculés à partir de `client_ip` et fournis dans les logs :
@@ -192,7 +187,7 @@ GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 }
 ```
 
-### Comment utiliser les logs du PCC Hosted Private CLoud ?
+### Comment utiliser les logs du PCC Hosted Private Cloud ?
 
 Maintenant que vos logs sont ingérés et stockés dans votre flux de données Logs Data Platform, vous pouvez interroger vos logs et créer des tableaux de bord pour avoir une représentation graphique de vos logs en utilisant l'interface web de Graylog.
 
@@ -201,13 +196,13 @@ Maintenant que vos logs sont ingérés et stockés dans votre flux de données L
 - Connectez-vous à Graylog en utilisant votre nom d'utilisateur et votre mot de passe Logs Data Platform.
 - Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html){.external} pour plus de détails sur la syntaxe de recherche.
 
-Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, querying and exploiting your logs](/products/observability-logs-data-platform-visualizing-querying-exploiting) pour plus de détails sur l'utilisation de vos logs avec Logs Data Platform, y compris sur la façon de :
+Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, querying and exploiting your logs](/products/observability-logs-data-platform-visualizing-querying-exploiting) pour plus de détails sur l'utilisation de vos logs avec **Logs Data Platform**, y compris sur la façon de :
 
-- mettre en place des alertes ;
-- consulter les logs en temps réel grâce à un WebSocket ;
-- créer une visualisation avec les tableaux de bord OpenSearch ;
-- créer une intégration avec l'API OpenSearch ;
-- se connecter avec Grafana.
+- Mettre en place des alertes ;
+- Consulter les logs en temps réel grâce à un WebSocket ;
+- Créer une visualisation avec les tableaux de bord OpenSearch ;
+- Créer une intégration avec l'API OpenSearch ;
+- Se connecter avec Grafana.
  
 
 ### Comment accéder à l'interface Graylog ?
@@ -219,12 +214,6 @@ Vous retrouvez plusieurs liens de connexions qui vous redirige sur le bon lien G
 ![GRAYLOG](images/graylog_login.png)
 
 ![GRAYLOG](images/graylog_login_2.png)
-
-### Informations utiles
-
-**Zone Cluster** : Vous retrouverez la zone du cluster dont fait partie votre plateforme de gestion de logs depuis le lien Graylog. 
-- Exemple de lien Graylog d'un compte ldp, : **https://gra159.logs.ovh.com/ -> GRA159**
-
 
 ### Comment gérer vos abonnements ?
 
@@ -242,8 +231,24 @@ Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
 > **Parametres:**
 >
 > subscriptionId: La reference de souscription pour votre compte LDP.
+>
+
+## Glossaire
+
+- **Logs Data Platform :** plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/).
+- **Data Stream :** partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
+- **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
+- **Abonnement à la redirection de logs :** lors de l'activation du transfert de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
+
 
 ## Aller plus loin
+
+Vous pouvez suivre ces guides qui vous explique comment configurer votre PCC pour faire suivre les logs dans LDP :
+- [Logs Data Platform - Premiers pas](https://help.ovhcloud.com/csm/fr-documentation-observability-logs-data-platform-getting-started?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=e3eec38c1977a5d0476b930e789695d0&spa=1)
+- [Pousser des logs avec un forwarder Syslog-ng (Linux)](https://help.ovhcloud.com/csm/fr-logs-data-platform-how-to-log-your-linux?id=kb_article_view&sysparm_article=KB0037664)
+- [Pousser des logs avec un forwarder NXlog (Windows)](https://help.ovhcloud.com/csm/fr-logs-data-platform-windows-nxlog?id=kb_article_view&sysparm_article=KB0037694)
+- [Génération des logs des comptes OVHcloud avec Logs Data Platform](https://help.ovhcloud.com/csm/fr-iam-logs-forwarding?id=kb_article_view&sysparm_article=KB0060437)
+- [Pousser les logs depuis Apache vers LDP](https://help.ovhcloud.com/csm/fr-logs-data-platform-apache-logs?id=kb_article_view&sysparm_article=KB0050046)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
