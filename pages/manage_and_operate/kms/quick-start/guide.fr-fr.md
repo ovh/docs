@@ -243,7 +243,7 @@ L'API attend les valeurs suivantes :
 |type|oct, RSA, EC|Type de la clé : Octet sequence (oct) for symmetric keys, RSA (RSA), Elliptic Curve (EC)|
 |size|Integer|Taille de la clé - voir table de correspondance ci-dessous|
 |operations|Array|Usage de la clé - voir table de correspondance ci-dessous|
-|crv|P-256, P-384, P-521|(optionnel) Courbe cryptographique pour les clés de type ec|
+|crv|P-256, P-384, P-521|(optionnel) Courbe cryptographique pour les clés de type EC|
 
 **Exemple de création de clé symétrique**
 
@@ -266,7 +266,7 @@ L'API attend les valeurs suivantes :
 {
   "name": "My first RSA key",
   "context": "project A",
-  "type": "rsa",
+  "type": "RSA",
   "size": 4096,
   "operations": [
     "sign",
@@ -281,7 +281,7 @@ L'API attend les valeurs suivantes :
 {
   "name": "My first EC key",
   "context": "project A",
-  "type": "ec",
+  "type": "EC",
   "operations": [
     "sign",
     "verify",
@@ -312,14 +312,7 @@ Pour cela il est possible d'ajouter un champ complémentaire **keys** dans le co
 
 ```json
 {
-  "name": "My first AES key",
-  "context": "project A",
-  "type": "oct",
-  "size": 256,
-  "operations": [
-    "encrypt",
-    "decrypt",
-  ],
+  "name": "My imported key",
   "keys": [
     {
       "kid": "string",
