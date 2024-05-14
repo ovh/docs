@@ -339,12 +339,15 @@
 =======
 >>>>>>> e0452e8634 (IAM/VMware : Add changes to folders structure and index.md)
         + [Access and Security](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security)
+<<<<<<< HEAD
             + [Using Active Directory server as an authentication source (Federation)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/federation)
             + [IAM for VMware on OVHcloud - Introduction and FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
             + [IAM for VMware on OVHcloud - How to activate IAM](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
             + [IAM for VMware on OVHcloud - How to create a vSphere IAM role](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
             + [IAM for VMware on OVHcloud - How to link an IAM policy to a vSphere role](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
             + [IAM for VMware on OVHcloud - How to link an OVHcloud identity user to a global IAM policy](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
+=======
+>>>>>>> d7c43008d9 (SK-1531: Remove Federation guides on Hosted Private Cloud (replacement with IAM))
             + [Keeping your vSphere web client secure](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_access_security_advices)
             + [Using the secure interface](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure)
             + [Using two-factor authentication (2FA) on your Private Cloud infrastructure](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/utilisation_2FA)
@@ -1766,14 +1769,7 @@
             + [Object Storage - Enabling HTTPS on a S3 static website using a custom domain](storage_and_backup/object_storage/s3_website_https)
             + [Object Storage - Setting up CORS on S3 Object Storage](storage_and_backup/object_storage/s3_setting_up_cors)
             + [Object Storage - Master asynchronous replication across your buckets](storage_and_backup/object_storage/s3_asynchronous_replication)
-        + [Configure Object Storage with your solutions](storage-object-storage-configure-object-storage-with-your-solutions)
-            + [Object Storage - Use S3 Object Storage with Rclone](storage_and_backup/object_storage/s3_rclone)
-            + [Object Storage - Use S3 Object Storage with S3cmd](storage_and_backup/object_storage/s3_s3cmd)
-            + [Object Storage - Use S3 Object Storage with WinSCP](storage_and_backup/object_storage/s3_winscp)
-            + [Object Storage - Use S3 Object Storage with Veeam](storage_and_backup/object_storage/s3_veeam)
-            + [Object Storage - Use S3 Object Storage with Nextcloud](storage_and_backup/object_storage/s3_nextcloud)
-            + [Object Storage - Use S3 Object Storage with Owncloud](storage_and_backup/object_storage/s3_owncloud)
-            + [Object Storage - Manage an S3 bucket with Terraform](storage_and_backup/object_storage/s3_terraform)
+ 
         + [Cold Archive Storage Class Specifics](storage-object-storage-cold-archive-storage-class-specifics)
             + [Cold Archive - Getting started with Cold Archive](storage_and_backup/object_storage/cold_archive_getting_started)
             + [Cold Archive - Overview](storage_and_backup/object_storage/cold_archive_overview)
