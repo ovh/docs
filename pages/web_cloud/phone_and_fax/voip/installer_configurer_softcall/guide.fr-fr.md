@@ -1,12 +1,16 @@
 ---
-title: 'Installer et configurer Softcall'
+title: 'Installer et configurer Softcall (Bêta)'
 excerpt: 'Découvrez comment installer et configurer Softcall afin de profiter de la solution Softphone'
 updated: 2024-05-14
 ---
 
+> [!primary]
+> L'application [Softcall](https://labs.ovhcloud.com/en/softphone-beta/) est actuellement en phase bêta.
+> Ce guide peut donc être incomplet et sera mis à jour lors de la bêta. Notre équipe reste disponible pour répondre à vos questions sur la mailing-list [voip@ml.ovh.net](mailto:voip@ml.ovh.net). Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services VoIP. 
+
 ## Objectif
 
-Softphone est une solution qui transforme votre ordinateur, smartphone ou tablette en un téléphone virtuel, vous permettant d'utiliser votre ligne SIP (**S**ession **I**nitiation **P**rotocol) n'importe où et à tout moment. Grâce à notre application Softcall, facilement téléchargeable sur les plateformes Android, IOS, MacOS et Windows, vous pouvez accéder à toutes les fonctionnalités de votre ligne téléphonique professionnelle sans être lié à un téléphone de bureau traditionnel. Que vous soyez en déplacement ou que vous travailliez à distance, Softcall assure que votre ligne SIP reste aussi mobile et flexible que vos besoins quotidiens l'exigent.
+Le Softphone est une solution qui transforme votre ordinateur, smartphone ou tablette en un téléphone virtuel, vous permettant d'utiliser votre ligne SIP (**S**ession **I**nitiation **P**rotocol) n'importe où et à tout moment. Grâce à notre application [Softcall](https://labs.ovhcloud.com/en/softphone-beta/), facilement téléchargeable sur les plateformes Android, iOS, macOS et Windows, vous pouvez accéder à toutes les fonctionnalités de votre ligne téléphonique professionnelle sans être lié à un téléphone de bureau traditionnel. Que vous soyez en déplacement ou que vous travailliez à distance, Softcall assure que votre ligne SIP reste aussi mobile et flexible que vos besoins quotidiens l'exigent.
 
 **Découvrez comment installer et configurer Softcall sur les plateformes Android, iOS, macOS et Windows.**
 
