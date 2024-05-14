@@ -27,15 +27,15 @@ For optimal performance, a region should be selected closest to its users. For g
 
 You can list your clusters here with a new tab in the interface:
    
-![left_menu](images/01-all-servers-v3.png)
+![left_menu](images/01-20240513-blur.png)
    
-![list_clusters](images/02-list-cluster-v3.png)
+![list_clusters](images/02-20240513-blur.png)
 
 When you select your cluster you have the list of the 3 servers inside this one:
-![list_servers](images/03-nodes-v3.png)
+![list_servers](images/03-20240513-blur.png)
 
 Interface still the same, no more changes at this level as yo ucan see :
-![detail_server](images/04-general-information-v3.png)
+![detail_server](images/04-20240513-blur.png)
 
 
 ## Go further
