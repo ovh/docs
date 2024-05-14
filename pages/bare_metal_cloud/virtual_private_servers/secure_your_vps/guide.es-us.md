@@ -1,6 +1,6 @@
 ---
-title: 'Proteger un VPS'
-excerpt: 'Descubra los elementos básicos que le permiten proteger su VPS'
+title: "Proteger un VPS"
+excerpt: "Esta guía explica cómo aplicar medidas de seguridad básicas para proteger su VPS de ataques y accesos no autorizados"
 updated: 2024-02-20
 ---
 
@@ -35,7 +35,7 @@ Al contratar su VPS, puede elegir una distribución o sistema operativo que quie
 > Si se trata de su primera configuración de un VPS de OVHcloud, consulte nuestra guía [Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 >
 
-Los siguientes ejemplos implican que está conectado como usuario con permisos muy exigentes.
+Los siguientes ejemplos implican que está conectado como [usuario con permisos muy exigentes](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Actualizar el sistema operativo
 
@@ -66,7 +66,7 @@ La modificación de este parámetro, en beneficio de un puerto diferente, es una
 Para ello, edite el archivo de configuración del servicio con el editor de texto que desee (`nano` se utiliza en este ejemplo):
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Encontrará las siguientes líneas o equivalentes:
@@ -95,7 +95,7 @@ Reinicie el servicio:
 sudo systemctl restart sshd
 ```
 
-Esto debería ser suficiente para aplicar los cambios. En caso contrario, reinicie el VPS (`~$ sudo reboot`).
+Esto debería ser suficiente para aplicar los cambios. En caso contrario, reinicie el VPS (`sudo reboot`).
 
 **Para Ubuntu 23.04 y versiones posteriores**
 
@@ -113,15 +113,24 @@ Guarde los cambios y ejecute los siguientes comandos:
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 Si ha activado el cortafuegos del sistema operativo, asegúrese de autorizar el nuevo puerto en las reglas del cortafuegos.
 
-Recuerde que deberá indicar el nuevo puerto en cada solicitud de conexión SSH al servidor, por ejemplo:
+Recuerde que deberá indicar el nuevo puerto en cada solicitud de [conexión SSH al servidor](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), por ejemplo:
 
 ```bash
-ssh username@IPv4_of_your_VPS -p NewPortNumber
+ssh username@IPv4_VPS -p NewPortNumber
+```
+
+Ejemplo:
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 ### Crear un usuario con permisos restringidos <a name="createuser"></a>
