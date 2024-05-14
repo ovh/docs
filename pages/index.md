@@ -522,6 +522,7 @@
             + [SAP logs on OVHcloud Logs Data Platform - Solution Setup](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
             + [SAP logs on OVHcloud Logs Data Platform - Analyze and work with your logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_analyze_and_work_with_your_logs)
             + [SAP logs on OVHcloud Logs Data Platform - Index of SAP logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_index_of_sap_logs)
+<<<<<<< HEAD
     [Backup and Disaster Recovery Services](products/hosted-private-cloud-hosted-private-cloud-powered-by-vmware)
             + [Veeam Backup](products/hosted-private-cloud-hosted-private-cloud-powered-by-vmware)
               + [VMware Cloud Director - Veeam plugin on VCD](products/hosted-private-cloud-hosted-private-cloud-powered-by-vmware/vcd-backup)
@@ -537,6 +538,10 @@
             + [SAP logs on OVHcloud Logs Data Platform - Analyze and work with your logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_analyze_and_work_with_your_logs)
             + [SAP logs on OVHcloud Logs Data Platform - Index of SAP logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_index_of_sap_logs)
 >>>>>>> c6e9fc6087 (fix: fixed guide headers, index links and slugs)
+=======
+    + [Backup et Disaster Recovery Services](products/storage-backup-and-disaster-recovery-solution)
+      + [VMware Cloud Director - Veeam backup Data Protection plugin](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
+>>>>>>> 43845132dc (SK-1520: Add tests to move MK section from Backup and disaster recovery to public cloud)
 + Public Cloud
     + [Compute](products/public-cloud-compute)
         + [Getting started](public-cloud-compute-getting-started)
@@ -1056,6 +1061,13 @@
         + [General information](public-cloud-data-platform-general-information)
             + [What is Data Platform](public_cloud/data_platform/general-what_is_the_data_platform)
             + [Signin Signup](public_cloud/data_platform/general-signin_signup)
+    + [Backup et Disaster Recovery Services](products/storage-backup-and-disaster-recovery-solution)
+      + [Managed Kubernetes - Data Protection](storage-backup-and-disaster-recovery-solution-kubernetes-data-protection)
+        + [Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio)
+        + [Backing-up an OVHcloud Managed Kubernetes cluster using CloudCasa](public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa)
+        + [Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/backup-restore-pv-volume-snapshot)
+        + [Backing-up an OVHcloud Managed Kubernetes cluster using Velero](public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero)
+        + [Backing-up Persistent Volumes using Stash](public_cloud/containers_orchestration/managed_kubernetes/backing-up-volumes-using-stash)
 + Web Cloud
     + [Domains](products/web-cloud-domains)
         + [Domain names](products/web-cloud-domains-domain-names)
@@ -1827,12 +1839,18 @@
             + [Backing up a Bare Metal Linux Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux)
             + [Backing Up a Bare Metal Windows Server Using Veeam Agent for Windows](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent)
             + [Restoring a Bare Metal Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore)
-        + [Managed Kubernetes - Data Protection](storage-backup-and-disaster-recovery-solution-kubernetes-data-protection)
-            + [Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio)
-            + [Backing-up an OVHcloud Managed Kubernetes cluster using CloudCasa](public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa)
-            + [Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/backup-restore-pv-volume-snapshot)
-            + [Backing-up an OVHcloud Managed Kubernetes cluster using Velero](public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero)
-            + [Backing-up Persistent Volumes using Stash](public_cloud/containers_orchestration/managed_kubernetes/backing-up-volumes-using-stash)
+          
+[//]: # (        + [Managed Kubernetes - Data Protection]&#40;storage-backup-and-disaster-recovery-solution-kubernetes-data-protection&#41;)
+
+[//]: # (            + [Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes]&#40;public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio&#41;)
+
+[//]: # (            + [Backing-up an OVHcloud Managed Kubernetes cluster using CloudCasa]&#40;public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa&#41;)
+
+[//]: # (            + [Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes]&#40;public_cloud/containers_orchestration/managed_kubernetes/backup-restore-pv-volume-snapshot&#41;)
+
+[//]: # (            + [Backing-up an OVHcloud Managed Kubernetes cluster using Velero]&#40;public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero&#41;)
+
+[//]: # (            + [Backing-up Persistent Volumes using Stash]&#40;public_cloud/containers_orchestration/managed_kubernetes/backing-up-volumes-using-stash&#41;)
 + Network
     + [Bring your own IP (BYOIP)](network-byoip)
         + [How to use the Bring Your Own IP feature](network/bring_your_own_ip/bring-your-own-IP)
