@@ -49,38 +49,38 @@ Auf der nächsten Seite wählen Sie **Im Rescue-Modus booten**.
 
 Wenn Ihr Server über ein Linux-Betriebssystem verfügt, wählen Sie im Dropdown-Menü `rescue-customer`{.action} aus.
 
-In diesem Fall stehen Ihnen zwei Authentifizierungsmodi zur Verfügung:
+In diesem Fall stehen Ihnen zwei Authentifizierungsoptionen zur Verfügung:
 
-- Authentifizierung per Kennwort
+- Authentifizierung per Passwort
 - Authentifizierung per SSH-Schlüssel
 
-#### Authentifizierung per SSH-Schlüssel
+#### Authentifizierung mit SSH-Schlüssel
 
 > [!primary]
 >
-> Wenn Sie sich für die Authentifizierung per SSH-Schlüssel entscheiden, stellen Sie sicher, dass Ihr öffentlicher SSH-Schlüssel einem der folgenden Formate entspricht: `RSA`, `ECDSA` oder `ED25519`.
+> Wenn Sie sich für die Authentifizierung mit SSH-Schlüssel entscheiden, stellen Sie sicher, dass Ihr öffentlicher SSH-Schlüssel einem der folgenden Formate entspricht: `RSA`, `ECDSA` oder `ED25519`.
 >
 
-Wählen Sie die Option "Authentifizierung per SSH-Schlüssel" und geben Sie Ihren öffentlichen **Public** SSH-Schlüssel in das dafür vorgesehene Textfeld ein.
+Wählen Sie die Option "Authentifizierung per SSH-Schlüssel" und geben Sie Ihren **Public** SSH-Schlüssel in das dafür vorgesehene Textfeld ein.
 
 ![Authentifizierung per SSH-Schlüssel](images/rescue-mode-08.png){.thumbnail}
 
-#### Authentifizierung per Kennwort
+#### Authentifizierung mit Passwort
 
 Wählen Sie die Option "Authentifizierung per Kennwort".<br>
-Die Zugangsdaten werden standardmäßig an die Haupt-E-Mail-Adresse Ihres OVHcloud Accounts versandt. Sie können eine andere Adresse in das Feld `Zugangsdaten an folgende E-Mail-Adresse versenden` eingeben.
+Die Zugangsdaten werden an die primäre E-Mail-Adresse Ihres OVHcloud Kunden-Accounts gesendet. Sie können eine andere Adresse in das Feld `Zugangsdaten an folgende E-Mail-Adresse versenden` eingeben.
 
 ![Linux-Passwortauthentifizierung](images/rescue-mode-09.png){.thumbnail}
 
 ### Windows Rescue
 
-Für Server mit Windows Betriebssystem können Sie zusätzlich zum Modus `Rescue-Customer`{.action} die Option `WinRescue`{.action} wählen (siehe [Abschnitt in der Anleitung unten](#windowsrescue)). Bitte beachten Sie, dass bei diesem Rescue-Modus nur die Authentifizierung per Passwort möglich ist.
+Bei einem Server mit Windows Betriebssystem können Sie zusätzlich zum Modus `Rescue-Customer`{.action} die Option `WinRescue`{.action} wählen (siehe [Abschnitt weiter unten](#windowsrescue)). Bitte beachten Sie, dass bei diesem Rescue-Modus nur die Authentifizierung per Passwort möglich ist.
 
 Geben Sie eine andere E-Mail-Adresse an, wenn Sie **nicht** möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Accounts gesendet werden.
 
 ![Windows-Kennwortauthentifizierung](images/rescue-mode-10.png){.thumbnail}
 
-### Endgültige Schritte
+### Abschließende Schritte
 
 Klicken Sie auf `Weiter`{.action} und `Bestätigen`{.action}.
 
@@ -90,7 +90,7 @@ Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action}. rechts neb
 
 ![Server neu starten](images/rescue-mode-02.png){.thumbnail}
 
-Wenn Sie Ihre Tasks im Rescue-Modus beendet haben, denken Sie daran, den Netboot-Modus wieder auf `Von Festplatte booten`{.action} umzustellen bevor Sie Ihren Server neu starten.
+Wenn Sie Ihre Tasks im Rescue-Modus beendet haben, denken Sie daran, den Netboot-Modus wieder auf `Von Festplatte booten`{.action} umzustellen **bevor** Sie Ihren Server neu starten.
 
 ### Linux
 
