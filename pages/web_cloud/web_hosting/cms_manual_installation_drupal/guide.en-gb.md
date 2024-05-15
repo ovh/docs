@@ -14,6 +14,8 @@ This tutorial will help you install Drupal CMS (Content Management System) manua
 >
 > This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [Drupal support](https://www.drupal.org/support){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
+> If you would like to update an existing Drupal CMS, or have any questions on how to use the Drupal CMS, please contact [the Drupal CMS publisher](https://www.drupal.org/support){.external} directly.
+>
 
 > [!success]
 >
