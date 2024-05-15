@@ -1,7 +1,7 @@
 ---
-title: Troubleshooting
+title: Public Cloud Databases - How to troubleshoot your service
 excerpt: Troubleshooting tips for Public Cloud Databases
-updated: 2021-09-27
+updated: 2024-05-15
 ---
 
 ## Objective
