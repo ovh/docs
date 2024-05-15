@@ -39,7 +39,7 @@ Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `
 
 ![Changer le mode de démarrage](images/rescue-mode-001.png){.thumbnail}
 
-Dans la page suivante, sélectionnez **Booter en mode rescue**. 
+Sur la page suivante, sélectionnez **Booter en mode rescue**.
 
 ### Rescue Linux
 
