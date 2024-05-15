@@ -35,19 +35,25 @@ Voici les liens des guides :
 
 ## Etape 1
 
-## Comment créer un rôle IAM dans mon cloud privée VMware ?
+## Comment créer un rôle IAM dans mon PCC ?
 
 ## Via l'accès client :
+> [!TIP]
+> Les rôles IAM sont préfixés par : iam-
 
-1. Accéder à la console OVHcloud, en suivant [le lien de l'espace client](https://www.ovh.com/manager) et **connectez vous avec vos identifiants**.
+Accéder à la console OVHcloud, en suivant [le lien de l'espace client](https://www.ovh.com/manager) et **Connectez-vous avec vos identifiants**.
 
-   2. Pour créer un rôle IAM, allez dans la section de votre cloud privée **Hosted Private Cloud > Datacenter-1 > Utilisateurs > Créer un role IAM**
+Pour créer votre rôle IAM dans le PCC : 
+
+1. Allez dans la section de votre cloud privée -> `Hosted Private Cloud > PCC-XX > Utilisateurs`
+
+2. Cliquez sur -> `Créer un rôle IAM`
       
-      2.1 Ensuite quand la fenetre s'affiche choisissez le nom de votre rôle et cliquez sur **Confirmer**
+Ensuite quand la fenêtre s'affiche et Choisissez le nom de votre rôle puis,
 
-Vous pouvez après éditer les droits du groupe de la même manière que avec un utilisateur local Vsphere.
+3. Cliquez sur -> `Confirmer`
 
-Vous pouvez aussi faire le choix d'être **Vsphere Admin** dans les permissions managés de la politique IAM.
+Vous pouvez après éditer les droits du groupe de la même manière qu'avec un utilisateur local Vsphere. Vous pouvez aussi faire le choix d'être **Vsphere Admin** dans les permissions managées de la politique IAM.
 
 ![IAM role add](images/iam_role_8.png){.thumbnail}
 
@@ -58,14 +64,49 @@ Vous pouvez aussi faire le choix d'être **Vsphere Admin** dans les permissions 
 > [!TIP]
 > Les rôles IAM sont préfixés par "iam-"
 
-> [!tabs]
-> 1st tab title
->> > [!api]
->> >
->> > @api {v1} POST /dedicatedCloud/{serviceName}/iam/addRole
->> >
+> [!api]
+>
+> @api {v1} POST /dedicatedCloud/{serviceName}/iam/addRole
+>
 
-Vous pourrez créer vous même de nouveaux rôles en exécutant l'appel suivant :
+RETOUR:
+```Shell
+{
+  "userId": null,
+  "maintenanceDateTo": null,
+  "parentTaskId": null,
+  "datacenterId": null,
+  "network": null,
+  "createdBy": null,
+  "state": "todo",
+  "hostId": null,
+  "endDate": null,
+  "networkAccessId": null,
+  "maintenanceDateFrom": null,
+  "name": "addUser",
+  "vlanId": null,
+  "description": null,
+  "filerId": null,
+  "executionDate": "2024-05-15T14:21:17+02:00",
+  "createdFrom": null,
+  "taskId": 56446627,
+  "orderId": null,
+  "type": "generic",
+  "progress": 0,
+  "lastModificationDate": "2024-05-15T14:21:17+02:00"
+}
+```
+
+### Via l'API OVHcloud avec Curl :
+
+```Shell
+curl -X POST "https://eu.api.ovh.com/v1/dedicatedCloud/pcc-XX-XX-XX-XX/iam/addRole" \
+ -H "accept: application/json"\
+ -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc3NTMzZTUwYTkyZTI1MTNiYzFmOGUyNGNmMjM4MmRiMjk5Y2RiZDcyMTJjNjlhYTMxMzMzOTY3MmYzM2I5ZWQiLCJpYXQiOjE3MTU3NzAwMzF9.L2nG4wZq43s06Gbq3JL5tjQ3pNLUBZUNwv-tOs__G1ZCHhUHdb63WNqpT7b_3cf7JiG7PqxtW7FOu2l5VdHRCQ"\
+ -H "content-type: application/json" \
+ -d '{"name":"iam-role-name"}' \
+```
+
 ---
 ## Aller plus loin
 
