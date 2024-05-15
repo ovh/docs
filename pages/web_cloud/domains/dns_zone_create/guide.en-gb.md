@@ -108,6 +108,11 @@ Once you have the information, **edit your domain name’s DNS servers in the in
 > As a reminder, please check that the configuration of the new DNS zone meets your expectations before changing the **DNS servers** registered with your domain name.
 >
 
+> [!success]
+>
+> If you would like to customize the names of the DNS servers associated with your domain name’s active DNS zone, please read our guide on "[Customizing a domain name’s DNS servers (Glue Records)](/pages/web_cloud/domains/glue_registry)".
+>
+
 ## Go further
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
