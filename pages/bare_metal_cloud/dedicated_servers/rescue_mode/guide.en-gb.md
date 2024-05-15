@@ -45,22 +45,24 @@ In the next page, select **Boot in rescue mode**.
 
 If your server has a Linux-based OS, select `rescue-customer`{.action} from the menu. 
 
-In this situation, two authentication modes are available:
+Two authentication modes are available:
+
 - Password authentication
 - SSH Key authentication
-<br><br>
 
 #### SSH Key authentication
+
 > [!primary]
 > 
-> If you choose SSH Key authentication, make sure your public SSH key respects the ``RSA``, ``ECDSA``, or ``ED25519`` format.
+> If you choose SSH Key authentication, make sure your public SSH key respects one of the formats ``RSA``, ``ECDSA``, or ``ED25519``.
 >
 
 Select the “Authentication via SSH key” option, then enter your **public** SSH key in the dedicated text area.
 
-![ Linux SSH Key authentication](images/rescue-mode-08.png){.thumbnail}
+![Linux SSH Key authentication](images/rescue-mode-08.png){.thumbnail}
 
 #### Password authentication
+
 Select the “Password authentication” option.<br>
 Login details will be sent by default to the main address of your OVHcloud account. You can enter a different address in the field ``Send new login details to the following email address``.
 
@@ -68,7 +70,7 @@ Login details will be sent by default to the main address of your OVHcloud accou
 
 ### Windows Rescue
 
-For servers running a Windows operating system, in addition to the `rescue-customer`{.action} rescue, you can choose the `WinRescue`{.action} rescue (see the [guide section below](#windowsrescue)). Note that only password authentication is available with this type of rescue.
+For servers running a Windows operating system, in addition to the `rescue-customer`{.action} mode, you can choose the option `WinRescue`{.action} (see the [guide section below](#windowsrescue)). Note that only password authentication is available with this type of rescue mode.
 
 Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
 
