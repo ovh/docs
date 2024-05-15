@@ -118,6 +118,11 @@ Po uzyskaniu informacji o domenie **modyfikuj serwery DNS Twojej domeny w interf
 > Przypominamy, że przed zmianą **serwerów DNS** zadeklarowanych u Twojej domeny sprawdź, czy konfiguracja nowej strefy DNS odpowiada Twoim oczekiwaniom.
 >
 
+> [!success]
+>
+> Jeśli chcesz spersonalizować nazwy serwerów DNS powiązanych z aktywną strefą DNS Twojej domeny, zapoznaj się z naszym przewodnikiem "[Personalizacja serwerów DNS domeny (Glue Records)](/pages/web_cloud/domains/glue_registry)".
+>
+
 ## Sprawdź również
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
