@@ -1,7 +1,7 @@
 ---
 title: "How to activate and use rescue mode"
 excerpt: "Find out how to use the OVHcloud rescue mode to troubleshoot your dedicated server"
-updated: 2024-01-09
+updated: 2024-05-15
 ---
 
 ## Objective
@@ -54,7 +54,7 @@ Two authentication modes are available:
 
 > [!primary]
 > 
-> If you choose SSH Key authentication, make sure your public SSH key respects one of the formats ``RSA``, ``ECDSA``, or ``ED25519``.
+> If you choose SSH Key authentication, make sure your public SSH key respects one of the formats `RSA`, `ECDSA`, or `ED25519`.
 >
 
 Select the “Authentication via SSH key” option, then enter your **public** SSH key in the dedicated text area.
@@ -64,7 +64,7 @@ Select the “Authentication via SSH key” option, then enter your **public** S
 #### Password authentication
 
 Select the “Password authentication” option.<br>
-Login details will be sent by default to the main address of your OVHcloud account. You can enter a different address in the field ``Send new login details to the following email address``.
+Login details will be sent by default to the main address of your OVHcloud account. You can enter a different address in the field `Send new login details to the following email address`.
 
 ![Linux password authentication](images/rescue-mode-09.png){.thumbnail}
 
