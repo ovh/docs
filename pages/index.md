@@ -1061,13 +1061,13 @@
         + [General information](public-cloud-data-platform-general-information)
             + [What is Data Platform](public_cloud/data_platform/general-what_is_the_data_platform)
             + [Signin Signup](public_cloud/data_platform/general-signin_signup)
-    + [Backup et Disaster Recovery Services](products/storage-backup-and-disaster-recovery-solution)
-      + [Managed Kubernetes - Data Protection](storage-backup-and-disaster-recovery-solution-kubernetes-data-protection)
-        + [Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio)
-        + [Backing-up an OVHcloud Managed Kubernetes cluster using CloudCasa](public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa)
-        + [Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/backup-restore-pv-volume-snapshot)
-        + [Backing-up an OVHcloud Managed Kubernetes cluster using Velero](public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero)
-        + [Backing-up Persistent Volumes using Stash](public_cloud/containers_orchestration/managed_kubernetes/backing-up-volumes-using-stash)
+    + [Backup et Disaster Recovery Services](products/public-cloud-storage-backup-and-disaster-recovery-services)
+        + [Managed Kubernetes - Data Protection](storage-backup-and-disaster-recovery-solution-kubernetes-data-protection)
+            + [Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio)
+            + [Backing-up an OVHcloud Managed Kubernetes cluster using CloudCasa](public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa)
+            + [Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/backup-restore-pv-volume-snapshot)
+            + [Backing-up an OVHcloud Managed Kubernetes cluster using Velero](public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero)
+            + [Backing-up Persistent Volumes using Stash](public_cloud/containers_orchestration/managed_kubernetes/backing-up-volumes-using-stash)
 + Web Cloud
     + [Domains](products/web-cloud-domains)
         + [Domain names](products/web-cloud-domains-domain-names)
@@ -1839,18 +1839,6 @@
             + [Backing up a Bare Metal Linux Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux)
             + [Backing Up a Bare Metal Windows Server Using Veeam Agent for Windows](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent)
             + [Restoring a Bare Metal Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore)
-          
-[//]: # (        + [Managed Kubernetes - Data Protection]&#40;storage-backup-and-disaster-recovery-solution-kubernetes-data-protection&#41;)
-
-[//]: # (            + [Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes]&#40;public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio&#41;)
-
-[//]: # (            + [Backing-up an OVHcloud Managed Kubernetes cluster using CloudCasa]&#40;public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa&#41;)
-
-[//]: # (            + [Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes]&#40;public_cloud/containers_orchestration/managed_kubernetes/backup-restore-pv-volume-snapshot&#41;)
-
-[//]: # (            + [Backing-up an OVHcloud Managed Kubernetes cluster using Velero]&#40;public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero&#41;)
-
-[//]: # (            + [Backing-up Persistent Volumes using Stash]&#40;public_cloud/containers_orchestration/managed_kubernetes/backing-up-volumes-using-stash&#41;)
 + Network
     + [Bring your own IP (BYOIP)](network-byoip)
         + [How to use the Bring Your Own IP feature](network/bring_your_own_ip/bring-your-own-IP)

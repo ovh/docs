@@ -4,6 +4,16 @@ excerpt: "Effectuer des sauvegardes avec l'intégration Veeam Backup Data Protec
 updated: 2024-04-30
 ---
 
+# Table des matières
+1. [Objectif](#Objectif)
+2. [Prérequis](#Prérequis)
+3. [En pratique](#En pratique)
+4. [Etape 1](###Étape 1)
+5. [Etape 2](###Étape 2)
+6. [Etape 3](###Restauration)
+7. [Aller plus loin](#Aller plus loin)
+
+
 ## Objectif
 
 Le service Veeam Backup Data Protection est disponible et prêt à l'emploi pour les 3 offres OVHcloud ([voir catalogues des fonctionnalités](https://help.ovhcloud.com/csm/en-ie-vmware-vcd-concepts?id=kb_article_view&sysparm_article=KB0062559#features-of-vmware-cloud-director-at-ovhcloud)).
@@ -11,8 +21,6 @@ Le service Veeam Backup Data Protection est disponible et prêt à l'emploi pour
 Ce service s’intègre de manière transparente en tant que solution gérée pour aider votre entreprise à atteindre une haute disponibilité. Il fournit des points de récupération pour vos applications et vos données. En utilisant ce service, vous contrôlez la sauvegarde de toutes les machines virtuelles (VM) et vApp de votre infrastructure directement depuis la console VCD Veeam Data Protection.
 
 Veeam Backup & Replication accompagne VCD. Il utilise l'API VMware Cloud Director pour sauvegarder les vApps et les VMs et les restaurer directement dans la hiérarchie VMware Cloud Director. La principale entité avec laquelle Veeam Backup & Replication travaille lors de la sauvegarde est une vApp.
-
-Une vApp est un système virtuel qui contient une ou plusieurs VMs individuelles ainsi que des paramètres qui définissent les détails opérationnels, à savoir les métadonnées d'une vApp/VM. Lorsque Veeam Backup & Replication réalise des sauvegardes de VM, il ne s’agit pas seulement de capturer les données des VM faisant partie des vApps, mais aussi les métadonnées des vApp. En conséquence, vous pouvez restaurer les objets VMware Cloud Director dans la hiérarchie VMware Cloud Director et vous n'avez pas besoin d'effectuer des actions supplémentaires lors de l'importation et de la configuration de la machine virtuelle.
 
 Dans cette documentation, vous découvrirez :
 
@@ -40,8 +48,9 @@ Si vous ne savez pas comment vous connecter à la console d'administration VMwar
 
 Cette documentation est divisée en plusieurs sections :
 
-1. Comment accéder à la console Veeam Data Protection avec VMware Cloud Director (VCD)
-2. Comment sauvegarder, créer des JOB et restaurer des machines virtuelles (VM)
+1. Comment accéder à la console Veeam Data Protection avec VMware Cloud Director (VCD).
+2. Comment sauvegarder, créer des JOB.
+3. Comment restaurer.
 
 [!primary] Si vous ne savez pas comment vous connecter au portail web de votre organisation, consultez d'abord ce guide.
 
@@ -74,15 +83,15 @@ La fenêtre du Plugin Veeam VCD s'ouvrira avec un bandeau gris foncé (ici dans 
 
 Lorsque Veeam Backup & Replication réalise des sauvegardes de vApp et de VM, il capture en plus les métadonnées de vApp.
 
-Les métadonnées des applications virtuelles (`vApp`) et VM incluent :
+Les métadonnées des applications virtuelles (vApp) et VM incluent :
 
-- Les informations générales sur les `vApp` (applications virtuelles), où résident les VMs, telles que : **Nom des vApp, descriptions, description des VMs**
-- Les informations sur les réseaux vApp et les réseaux d'organisation auxquels le vApp est connecté
-- Les options de démarrage des `VM` (VM Startup options)
-- Les informations utilisateur
+- Les informations générales sur les **vApp** (applications virtuelles)**, où résident les VMs, telles que : **Nom des vApp, descriptions, description des VMs**
+- Les informations sur les réseaux **vApp** et les réseaux d'organisation auxquels le vApp est connecté
+- Les options de démarrage des **VM** (VM Startup options)
+- Les informations utilisateurs
 - Le bail (Lease)
 - Le quota
-- Les Modèles de stockage (Templates)
+- Les Modèles de stockages (Templates)
 
 Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle. La capture des métadonnées vApp/VM est extrêmement importante pour la restauration : sans elle, vous ne serez pas en mesure de restaurer les vApp et les VM vers VMware Cloud Director.
 
@@ -123,7 +132,7 @@ Pour Windows vous pouvez choisir un compte standard ou un compte de service mana
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_6.png){.thumbnail .h-600 .w-400}
 
-- Si nécessaire, ajoutez du monitoring pour vos JOBS, puis cliquez sur -> `Finish`
+- Si nécessaire, ajoutez du monitoring pour vos JOBS, puis cliquez sur -> `FINISH`
 
 - Le JOB apparait dans la liste.
 
@@ -131,7 +140,7 @@ Pour Windows vous pouvez choisir un compte standard ou un compte de service mana
 
 ---
 
-#### Comment sauvegarder une machine virtuelle avec Veeam Backup
+### Comment sauvegarder une machine virtuelle avec Veeam Backup ?
 
 > [!primary]
 >
@@ -141,13 +150,19 @@ Pour Windows vous pouvez choisir un compte standard ou un compte de service mana
 > [!warning]
 > Pour pouvoir ajouter un job depuis la console VCD sur une VM, un JOB doit être pre ????
 >
-Dans la console VMware Cloud Director, cliquez sur `Data Centers -> Virtual Machines`, choisissez une VM et cliquez sur `Action -> Data Protection with Veeam -> add to Veeam backup Job`(voir capture).
+Dans la console VMware Cloud Director :
+
+1. Cliquez sur `CENTRE DE DONNEES` -> `MACHINES VIRTUELLES`.
+
+2. Choisissez une VM et Cliquez sur `ACTION` -> `DATA PROTECTION WITH VEEAM` -> `ADD TO VEEAM BACKUP JOB`(voir capture).
 
 ![Backup VM](images/vcd_veeam_backup_vm.png){.thumbnail .h-600 .w-400}
 
 ---
 
-#### Comment restaurer une VM avec le plugin Veeam VCD
+### Etape 3 : Restauration
+
+#### Comment restaurer une VM avec le plugin Veeam VCD ?
 
 Veam Backup dispose de plusieurs fonctionnalités de restauration :
 
@@ -166,13 +181,13 @@ Pour la restauration, Veeam Backup & Replication utilise les métadonnées de la
 
 Les objets sauvegardés peuvent être restaurés dans la même hiérarchie VMware Cloud Director ou dans un environnement VMware Cloud Director différent. Les options de restauration sont les suivantes :
 
-- Récupération instantanée (**Instant Recovery**)
-- Restauration complète pour les `vApps` et les `VM` (**Full restore for vApps and VMs**)
-- Restauration des disques des `VM` (**VM files**)
-- Restauration des fichiers VM (**VM disks**)
-- Restauration des fichiers du système d'exploitation invité pour les VMs (**Item recovery**)
+- Récupération instantanée : **Instant Recovery**
+- Restauration complète pour les vApps et les VM : **Full restore for vApps and VMs**
+- Restauration des disques des VM : **VM files**
+- Restauration des fichiers VM : **VM disks**
+- Restauration des fichiers du système d'exploitation invité pour les VMs : **Item recovery**
 
-Dans ce cas, faites une restauration de type "Full" (entière/complète).
+Dans ce cas, faites une restauration de type **Full (entière/complète)**.
 
 #### Restauration entière "Full" d'une VM (machine virtuelle)
 
@@ -180,24 +195,25 @@ Le service backup managé par OVHcloud vous permet de restaurer des VMs classiqu
 
 Lorsque vous restaurez des VMs normales ou autonomes dans la hiérarchie VMware Cloud Director, le processus de restauration comprend les étapes suivantes :
 
-1. Veeam utilise les métadonnées vApp capturées pour définir les paramètres vApp et l'emplacement d'origine de la machine virtuelle dans la hiérarchie VMware Cloud Director.
-2. Veeam restaure les VMs du fichier de sauvegarde à leur emplacement d'origine ou à un autre emplacement. De plus, Veeam restaure tous les paramètres des VM.
+- Veeam utilise les métadonnées vApp capturées pour définir les paramètres vApp et l'emplacement d'origine de la machine virtuelle dans la hiérarchie VMware Cloud Director. 
+
+- Veeam restaure les VMs du fichier de sauvegarde à leur emplacement d'origine ou à un autre emplacement. De plus, Veeam restaure tous les paramètres des VM.
 
 #### Comment restaurer une machine virtuelle depuis le plugin Veeam Backup Data Protection VCD ?
 
-- Effectuez une restauration complète, cliquer sur -> `Entire VM Restore`
+1. Effectuez une restauration complète, Cliquer sur -> `ENTIRE VM RESTORE`.
 
 ![VCD_Veeam_restore_vm_1](images/vcd_veeam_restore_vm.png){.thumbnail .h-600 .w-400}
 
-- Depuis la fenêtre que s'affiche, cliquez sur ->`Restore to the original location` pour ce test de restauration d'une VM complète.
+2. Depuis la fenêtre que s'affiche, Cliquez sur ->`RESTORE TO THE ORIGINAL LOCATION`, pour la restauration d'une VM complète (full).
 
-- Puis cliquez sur ->`NEXT`
+3. Puis cliquez sur ->`NEXT`.
 
 ![VCD_Veeam_restore_vm_2](images/vcd_veeam_restore_vm_2.png){.thumbnail .h-600 .w-400}
 
-- Dans la dernière étape cliquez sur -> `Finish`, lancez la VM en cliquant sur -> `Power on VM automatically` si vous le souhaitez
+4. Dans la dernière étape Cliquez sur -> `FINISH`, lancez la VM en Cliquant sur -> `POWER ON VM AUTOMATICALLY`, si vous le souhaitez.
 
-Ce processus est simplifié grâce à VCD, VEEAM et OVHcloud !
+Ce processus est simplifié grâce à VCD, VEEAM et OVHcloud.
 
 ![VCD_Veeam_restore_vm_3](images/vcd_veeam_restore_vm_3.png){.thumbnail .h-600 .w-400}
 
