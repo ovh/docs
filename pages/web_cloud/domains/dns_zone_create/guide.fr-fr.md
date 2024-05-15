@@ -116,7 +116,7 @@ Une fois les informations en votre possession, **modifiez les serveurs DNS de vo
 
 > [!success]
 >
-> Si vous souhaitez personnaliser le nom des serveurs DNS associés à la zone DNS active de votre nom de domaine, consultez notre guide « [Personnaliser les serveurs DNS d'un nom de domaine (Glue Records)](/pages/web_cloud/domains/glue_registry) ».
+> Si vous souhaitez personnaliser les noms des serveurs DNS associés à la zone DNS active de votre nom de domaine, consultez notre guide « [Personnaliser les serveurs DNS d'un nom de domaine (Glue Records)](/pages/web_cloud/domains/glue_registry) ».
 >
 
 ## Aller plus loin
