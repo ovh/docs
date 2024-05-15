@@ -114,7 +114,12 @@ A questo punto è possibile utilizzare il database. Per farlo, avrai bisogno del
 
 - *nome utente* e *password* impostati,
 - *nome del database* indicato,
--*indirizzo del server*.
+- *indirizzo del server*.
+
+> [!primary]
+>
+> Se richiesto e qualunque sia il database [Start SQL](/links/web/hosting-options-startsql) aggiunto o incluso con l’hosting Web OVHcloud, il numero di **porta** da utilizzare è **3306**.
+>
 
 Queste informazioni sono essenziali perché il sito Web possa connettersi al database.
 
