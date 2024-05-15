@@ -164,7 +164,7 @@ Instructions for use are available on [this link](/pages/hosted_private_cloud/ho
 
 You can benefit from an advanced security pack by enabling HDS options on your infrastructure.
 
-The pack includes several features such as:[token validator](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure), access via 2FA, session timeout, fail2ban, hids, force TLS v1.2 protocol, ..
+The pack includes several features such as: [token validator](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure), access via 2FA, session timeout, fail2ban, hids, force TLS v1.2 protocol, ..
 
 ## 10 - Reversibility
 
