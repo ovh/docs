@@ -23,7 +23,7 @@ Major differences with our Web Hosting Databases are the ability to connect to p
 
 ### What are the supported DBMS?
 
-We are adding more and more Databases Management Systems over time, please find the exact list and proposed versions in our [Capabilities and Limitations page](p/ages/public_cloud/public_cloud_databases/information_05_capabilitiess).
+We are adding more and more Databases Management Systems over time, please find the exact list and proposed versions in our [Capabilities and Limitations page](/pages/public_cloud/public_cloud_databases/information_05_capabilities).
 
 ### Can I connect Public Cloud Databases to other OVHcloud products?
 
