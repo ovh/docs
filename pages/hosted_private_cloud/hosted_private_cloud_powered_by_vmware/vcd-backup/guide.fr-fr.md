@@ -1,19 +1,19 @@
 ---
 title: "VMware Cloud Director - Sauvegarde avec Veeam backup Data Protection VDC Plugin"
 excerpt: "Effectuer des sauvegardes avec l'intégration Veeam Backup Data Protection VCD plugin"
-updated: 2024-04-30
+updated: 2024-05-15
 ---
 
 # Table des matières
 1. [Objectif](#Objectif)
 2. [Prérequis](#Prérequis)
 3. [En pratique](#En pratique)
-4. [Etape 1](###Étape 1)
-5. [Etape 2](###Étape 2)
-6. [Etape 3](###Restauration)
+4. [Etape 1 : Les sauvegardes](#Étape 1)
+5. [Etape 2 : La supervision](#Étape 2)
+6. [Etape 3 : La restauration](#Restauration)
 7. [Aller plus loin](#Aller plus loin)
 
-
+---
 ## Objectif
 
 Le service Veeam Backup Data Protection est disponible et prêt à l'emploi pour les 3 offres OVHcloud ([voir catalogues des fonctionnalités](https://help.ovhcloud.com/csm/en-ie-vmware-vcd-concepts?id=kb_article_view&sysparm_article=KB0062559#features-of-vmware-cloud-director-at-ovhcloud)).
@@ -29,6 +29,7 @@ Dans cette documentation, vous découvrirez :
 - Comment ajouter un JOB à votre machine virtuelle depuis la console VDC
 - Comment restaurer des sauvegardes de VMs
 
+---
 ## Prérequis
 
 Cette documentation nécessite :
@@ -44,6 +45,7 @@ Si vous ne savez pas comment vous connecter à la console d'administration VMwar
 - [VCD - Découvrez comment utiliser l'interface utilisateur de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
 - [VCD - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
 
+---
 ## En pratique
 
 Cette documentation est divisée en plusieurs sections :
@@ -60,7 +62,10 @@ Cette documentation est divisée en plusieurs sections :
 >
 > Si vous utilisez le traitement d'images supportant les applications pour les sauvegardes de base de données MS SQL ou Oracle, les options compatibles avec les applications et restaurations d'éléments ne seront pas prises en charge. Une restauration complète de la machine virtuelle doit être réalisée, cela implique une fenêtre de temps d'arrêt pour tous les utilisateurs de la base de données. Il est impossible de relancer manuellement un échec de sauvegarde immuable. Vous devez exécuter une sauvegarde complète active ou attendre l'exécution de la prochaine sauvegarde planifiée ([consultez la documentation Veeam pour en savoir plus](https://helpcenter.veeam.com/docs/backup/vsphere/vcloud_manage_backup.html?ver=120)).
 
-### Étape 1 - Accéder à la console d'administration Veeam Backup Data Protection
+---
+### Étape 1 - Les sauvegardes
+
+#### Accéder à la console d'administration Veeam Backup Data Protection
 
 Le service Veeam Backup Data Protection dispose d’une visibilité pour sauvegarder des VMs et des vApp à partir de n’importe quel Virtual Data Center (VDC) de l’organisation. Il est disponible au niveau de l'organisation pour tout utilisateur VMware Cloud Director ayant le rôle d'administrateur de l'organisation
 
@@ -75,9 +80,9 @@ La fenêtre du Plugin Veeam VCD s'ouvrira avec un bandeau gris foncé (ici dans 
 
 ![VCD access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
-![VCD access to Veeam Backup](images/vcd_veeam_backup_repo.png){.thumbnail}
+![VCD access to Veeam Backup](images/vcd_veeam_backup_repo_2.png){.thumbnail}
 
-### Étape 2 - Sauvegarder avec le Pluging Veeam VCD
+### Sauvegarder avec le Pluging Veeam VCD
 
 #### Données incluses dans les sauvegardes
 
@@ -95,29 +100,48 @@ Les métadonnées des applications virtuelles (vApp) et VM incluent :
 
 Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle. La capture des métadonnées vApp/VM est extrêmement importante pour la restauration : sans elle, vous ne serez pas en mesure de restaurer les vApp et les VM vers VMware Cloud Director.
 
-#### Comment créer un Job de backup
+##### Les politiques de sauvegardes
+
+1. **Les dépots**
+
+Avec l'offre que vous avez souscrite vous disposez de 3 depots avec 2 Jobs configurer par défaut :
+1. **Bronze Repository** : STD Stockage Objet
+2. **Silver Repository** : STD Stockage Objet + Sauvegarde hors Site (Offsite)
+3. **Gold Repository** : Haute performance stockage object + Sauvegarde hors site (offsite) + 14 points d'immutabilité (14 points de restauration sur 2 sites differents)
+
+2. **Les politiques de sauvegarde**
+
+En tant que client vCloud Director je suis capable de sauvegarder mes machines virtuelles de production avec une rétention de **30 points de restauration** + une copie hors site + **14 jours d'immuabilité** : **Gold**.
+
+Je suis capable de sauvegarder mes machines virtuelles avec une rétention de 14 points avec seulement 1 site : **Bronze / Silver**.
+
+#### Comment créer un Job de sauvegarde Veeam
 
 Vous allez créer notre première "JOB" depuis Veeam Backup Data Protection avec VMware Cloud Director :
 
-Dans la console Veeam VMware Cloud Director cliquez sur -> `JOBS -> CREATE`, une fenêtre va s'ouvrir pour spécifier le nom du Job, la description et la politique de rétention (voir les 2 prochaines captures ci-dessous) :
+Dans la console VCD Veeam Data Protection, 
+
+1. Cliquez sur -> `JOBS -> CREATE`, une fenêtre va s'ouvrir pour spécifier le nom du Job, la description et la politique de rétention (voir les 2 prochaines captures ci-dessous) :
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation.png){.thumbnail .h-600 .w-400}
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_jobs.png){.thumbnail .h-600 .w-400}
 
-Une fois les éléments définis (Job name, description, retention), cliquez sur `NEXT`
+Une fois les éléments définis (Job name, description, retention), 
+
+2. Cliquez sur `NEXT`.
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_3.png){.thumbnail .h-600 .w-400}
 
 Vous devrez ensuite choisir votre machine virtuelle (VM), vous pouvez dérouler l'arborescence de votre organisation VMware Cloud Director et cliquer sur votre VM :
 
-Cliquer sur `NEXT`
+3. Cliquer sur `NEXT`.
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_4.png){.thumbnail .h-600 .w-400}
 
 Votre machine virtuelle apparaitra dans la liste de nom et type (Name/Type)
 
-Cliquer sur `NEXT`
+4. Cliquer sur `NEXT`.
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_5.png){.thumbnail .h-600 .w-400}
 
@@ -128,13 +152,13 @@ Cliquer sur `NEXT`
 
 Pour Windows vous pouvez choisir un compte standard ou un compte de service managé.
 
-- Cliquez sur `NEXT`
+1. Cliquez sur `NEXT`
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_6.png){.thumbnail .h-600 .w-400}
 
 - Si nécessaire, ajoutez du monitoring pour vos JOBS, puis cliquez sur -> `FINISH`
 
-- Le JOB apparait dans la liste.
+Le JOB apparait dans la liste.
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_7.png){.thumbnail .h-600 .w-400}
 
@@ -159,8 +183,7 @@ Dans la console VMware Cloud Director :
 ![Backup VM](images/vcd_veeam_backup_vm.png){.thumbnail .h-600 .w-400}
 
 ---
-
-### Etape 3 : Restauration
+### Etape 2 : Restauration
 
 #### Comment restaurer une VM avec le plugin Veeam VCD ?
 
@@ -171,7 +194,7 @@ Veam Backup dispose de plusieurs fonctionnalités de restauration :
 - La connaissance des applications (Application Awarness)
 - La stratégie par VM (Policies)
 - 3 référentiels avec classe de stockage (repositories)
-- L'immutabilité ( optionnel )
+- L'immutabilité (optionnel)
 
 #### Données incluses dans les restaurations
 
@@ -217,6 +240,14 @@ Ce processus est simplifié grâce à VCD, VEEAM et OVHcloud.
 
 ![VCD_Veeam_restore_vm_3](images/vcd_veeam_restore_vm_3.png){.thumbnail .h-600 .w-400}
 
+---
+## Etape 3 : Supervision
+
+### Comment monitorer un Job de sauvegarde ?
+
+### Comment monitorer un Job de restauration ?
+
+---
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
