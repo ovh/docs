@@ -1,7 +1,17 @@
 ---
-title: 'Konfiguration von Exchange auf macOS Mail'
-updated: 2021-12-28
+title: Exchange - Konfiguration Ihres E-Mail Accounts auf macOS Mail
+excerpt: Hier erfahren Sie, wie Sie Ihren Exchange Account auf macOS Mail einrichten
+updated: 2024-04-16
 ---
+
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
@@ -17,12 +27,12 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil “Weiterführende Informationen“ dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil “Weiterführende Informationen“ dieser Anleitung.
 >
 
 ## Voraussetzungen
 
-- Sie besitzen eine [Exchange E-Mail-Adresse](https://www.ovhcloud.com/de/emails/hosted-exchange/).
+- Sie besitzen eine [Exchange E-Mail-Adresse](links/emails-hosted-exchange/).
 - Sie verfügen über das auf Ihrem Mac installierte Mail-Programm.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
  
@@ -34,7 +44,7 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 >
 > In unserem Beispiel verwenden wir den Servernamen: ex**?**.mail.ovh.net. Ersetzen Sie "?" durch die Zahl für den Server Ihrer Exchange Dienstleistung.
 >
-> Diese Zahl finden Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de){.external} im Bereich `Web Cloud`{.action} und `Microsoft`{.action}.
+> Diese Zahl finden Sie in Ihrem [OVHcloud Kundencenter](links/manager/) im Bereich `Web Cloud`{.action} und `Microsoft`{.action}.
 > Klicken Sie auf `Exchange`{.action} und dann auf die gewünschte Exchange-Plattform. Der Servername wird im Feld **Verbindung** im Tab `Allgemeine Informationen`{.action} angezeigt.
 >
 
