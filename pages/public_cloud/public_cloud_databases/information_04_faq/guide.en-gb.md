@@ -23,7 +23,7 @@ Major differences with our Web Hosting Databases are the ability to connect to p
 
 ### What are the supported DBMS?
 
-We are adding more and more Databases Management Systems over time, please find the exact list and proposed versions in our [Capabilities and Limitations page](/pages/public_cloud/public_cloud_databases/databases_01_concept_capabilities).
+We are adding more and more Databases Management Systems over time, please find the exact list and proposed versions in our [Capabilities and Limitations page](p/ages/public_cloud/public_cloud_databases/information_05_capabilitiess).
 
 ### Can I connect Public Cloud Databases to other OVHcloud products?
 
@@ -94,7 +94,7 @@ Please refer to the official website for each DBMS documentation:
 
 ### What are the proposed DBMS versions?
 
-We are adding more and more Databases Management Systems over time, please find the exact list and proposed versions in our [Capabilities and Limitations page](/pages/public_cloud/public_cloud_databases/databases_01_concept_capabilities).
+We are adding more and more Databases Management Systems over time, please find the exact list and proposed versions in our [Capabilities and Limitations page](/pages/public_cloud/public_cloud_databases/information_05_capabilities).
 
 ### What is a minor and a major version?
 
@@ -138,7 +138,7 @@ You will be warned in order to upgrade your version.
 
 Each DBMS has its own specificities for extensions. As a general rule, we only provide officially supported extensions.
 
-Please find the exact list and proposed versions in our [Capabilities and Limitations page](/pages/public_cloud/public_cloud_databases/databases_01_concept_capabilities).
+Please find the exact list and proposed versions in our [Capabilities and Limitations page](/pages/public_cloud/public_cloud_databases/information_05_capabilities).
 
 ## Billing
 
@@ -209,7 +209,7 @@ We do not provide benchmark results so far for Public Cloud databases. Each busi
 
 ### Where are my DB instances deployed?
 
-During the DB instance creation, you can select the region and datacenter to deploy your service. Please find the exact list in our [Capabilities and Limitations page](/pages/public_cloud/public_cloud_databases/databases_01_concept_capabilities).
+During the DB instance creation, you can select the region and datacenter to deploy your service. Please find the exact list in our [Capabilities and Limitations page](pages/public_cloud/public_cloud_databases/information_05_capabilities).
 
 ### Do we provide Multi-AZ deployments?
 
@@ -312,7 +312,7 @@ Each database instance is strongly secured through multiple actions:
 - **Network ACL**: we provide Access Control List (ACL) allowing you to specify which IPs or IP block have the right to connect to your database instance. By default, no ACL is declared on the service meaning nobody can connect to your service until you add at least one.
 - **End-to-End encryption**: connections to databases are, by default, encrypted with TLS protocol, providing end-to-end encryption protection. OVHcloud generates an SSL/TLS certificate for each DB instance. Once you establish an encrypted connection between your application and your database instance, your data flows will be encrypted.
 - **Data encryption**: data is stored on dedicated volumes that are encrypted.
-- **European data sovereignty**: Public Cloud Databases are part of OVHcloud, a European company. It guarantees data sovereignty to our customers. [Read more](https://www.ovhcloud.com/en/about-us/data-sovereignty/)
+- **European data sovereignty**: Public Cloud Databases are part of OVHcloud, a European company. It guarantees data sovereignty to our customers. [Read more](https://www.ovhcloud.com/en-gb/about-us/data-sovereignty/)
 
 ### Who can access my database instance initially?
 
@@ -344,7 +344,7 @@ OVHcloud is meeting the highest standards certifications. Public Cloud Databases
 - ISO 27001
 - Planned: HIPAA / HDS 1-2-3
 
-For healthcare compliance such as HIPAA/HDS, please refer to our [official page](https://www.ovhcloud.com/en/enterprise/certification-conformity/hds/). For certification overview, please refer to our [official page](https://www.ovhcloud.com/en/enterprise/certification-conformity/).
+For healthcare compliance such as HIPAA/HDS, please refer to our [official page](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/hds/). For certification overview, please refer to our [official page](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/).
 
 ## Network
 
