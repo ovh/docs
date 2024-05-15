@@ -654,7 +654,7 @@
     + [Public Cloud Databases](products/public-cloud-databases)
         + [General information](public-cloud-databases-general-information)
             + [Concepts - Security overview](public_cloud/public_cloud_databases/information_01_security_overview)
-            + [DBMS lifecycle policy](public_cloud/public_cloud_databases/information_02_lifecycle_policy)
+            + [Public Cloud Databases - Lifecycle policy](public_cloud/public_cloud_databases/information_02_lifecycle_policy)
             + [Responsibility model](public_cloud/public_cloud_databases/information_03_shared_responsibility)
             + [FAQ Public Cloud databases](public_cloud/public_cloud_databases/information_04_faq)
             + [Public Cloud Databases - Capabilities and Limitations](public_cloud/public_cloud_databases/information_05_capabilities)
