@@ -1,8 +1,17 @@
 ---
-title: "MX Plan : Configuring your email address in Outlook for Windows"
+title: "MX Plan - Configuring your email address in Outlook for Windows"
 excerpt: "Find out how to configure your MX Plan email address in Outlook for Windows"
 updated: 2024-02-16
 ---
+
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
 
 ## Objective
 
@@ -57,28 +66,28 @@ To configure your email address, follow the steps by clicking on the tabs below.
 > **Step 1**
 >> Choose between IMAP and POP accounts. <br>We recommend using IMAP.
 >>
->> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail .h-600}
 >>
 > **Step 2**
 >> Enter the password for your email account, then click `Next`{.action}.
 >>
->> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail .h-600}
 >>
 > **Step 3**
 >> If Outlook was unable to automatically configure your account, this window appears. Click `Change Account Settings`{.action}. Depending on your choice (**POP** or **IMAP**), go to step 4.
 >>
->> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail .h-600}
 >>
 > **Step 4 - IMAP**
 >> If you chose IMAP, enter the following parameters. If you have chosen POP, go to the "**Step 4 - POP**" tab.<br>
 >> In **Incoming Mail**, type:<br>- Server **imap.mail.ovh.net** or **ssl0.ovh.net** <br>- Port **993**<br>- **SSL/TLS encryption method**<br><br>In **Outgoing Mail**, type:<br>- Server **smtp.mail.ovh.net** or **ssl0.ovh.net server** <br>- Port **465**<br>- **SSL/TLS encryption method**<br><br>Click `Next`{.action} to confirm.<br>
 >>
->> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail .h-600}
 >>
 > **Step 4 - POP**
 >> In **Incoming Mail**, type:<br>- Server **pop.mail.ovh.net** or **ssl0.ovh.net server** <br>- Port **995**<br>- **SSL/TLS encryption method**<br><br>In **Outgoing Mail**, type:<br>- Server **smtp.mail.ovh.net** or **ssl0.ovh.net server** <br>- Port **465**<br>- **SSL/TLS encryption method**<br><br>Click `Next`{.action} to confirm.<br>
 >>
->> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail .h-600}
 
 ### Using your email address
 
@@ -146,7 +155,7 @@ When you set up your email account manually, your email client asks if you want 
 
 When you configure your mail client, you must enter the information from the **incoming server** to receive the emails, and the **outgoing server** to send the emails. To send emails, there is no choice, **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol) is used. For the reception, you will have the choice between **POP** or **IMAP**.
 
-![mxplan](images/mxplan-popimap-01.png){.thumbnail}
+![mxplan](images/mxplan-popimap-01.png){.thumbnail .w-400}
 
 To understand the difference between POP and IMAP, we will detail the elements that make up the processing of your incoming emails:
 
@@ -156,7 +165,7 @@ To understand the difference between POP and IMAP, we will detail the elements t
     - **IMAP**: Your email client queries the email server and downloads the emails to your device. When you view an unread email, the server marks it as "read" by default. Other clients configured in IMAP will be able to check this status and view this email until it has been deleted by one of the clients.
     - **POP**: Your email client queries the email server and downloads the emails to your device. By default, once the email is downloaded to your device, the message is deleted from the server. As a result, other devices connected to this email account will not be able to view this email.
 
-![mxplan](images/mxplan-popimap-02.png){.thumbnail}
+![mxplan](images/mxplan-popimap-02.png){.thumbnail .w-400}
 
 > [!primary]
 >
