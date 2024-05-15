@@ -1,7 +1,7 @@
 ---
 title: "Représentation des garanties de la certification d'Hébergement de Données de Santé (HDS) sur les produits OVHcloud"
 excerpt: "Représentation des garanties de la certification d'Hébergement de Données de Santé (HDS) sur les produits OVHcloud"
-updated: 2024-05-14
+updated: 2024-05-15
 ---
 
 ## Objectif
@@ -16,11 +16,8 @@ les différentes exigences du référentiel. Les versions vérifiées par les au
 ## 1-Dedicated Server
 La présnetation des garanties HDS est disponible sur [ce guide, section 11](/pages/account_and_service_management/account_information/security-specifications-dedicated-servers). 
 
-## 2-Dedicated Server 3AZ
 
-TBC
-
-## 3-File Storage
+## 2-File Storage
 
 
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
@@ -29,24 +26,25 @@ TBC
 
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
-## 4-Block Storage
+## 3-Block Storage
+
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
 
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
-## 5-Managed Private Cloud
+## 4-Managed Private Cloud
 
 La présnetation des garanties HDS est disponible sur [ce guide, section 11](/pages/account_and_service_management/account_information/security-specification-privatecloud-VMware). 
 
-## 6-Private Cloud SecNumCloud
+## 5-Private Cloud SecNumCloud
 
 La présnetation des garanties HDS est disponible sur [ce guide, section 11](/pages/account_and_service_management/account_information/security-specification-privatecloud-SNC). 
 
 
 
-## 8-Public Cloud Instances
+## 6-Public Cloud Instances
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
@@ -54,42 +52,42 @@ La présnetation des garanties HDS est disponible sur [ce guide, section 11](/pa
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
 
-## 9-AI Deploy
+## 7-AI Deploy
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
 
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
-## 10-AI Notebooks
+## 8-AI Notebooks
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
 
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
-## 11-AI Training
+## 9-AI Training
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
 
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
-## 12-Data Processing
+## 10-Data Processing
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
 
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
-## 13-Kubernetes
+## 11-Kubernetes
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
 
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
-## 14-Search Engine Software Platform
+## 12-Search Engine Software Platform
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
@@ -102,7 +100,7 @@ La présnetation des garanties HDS est disponible sur [ce guide, section 11](/pa
 | --- | --- |
 | 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'union européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
 
-## 15-Timeseries
+## 13-Timeseries
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
@@ -115,7 +113,7 @@ La présnetation des garanties HDS est disponible sur [ce guide, section 11](/pa
 | --- | --- |
 | 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'union européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
 
-## 16-In-Memory Database
+## 14-In-Memory Database
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
@@ -128,14 +126,14 @@ La présnetation des garanties HDS est disponible sur [ce guide, section 11](/pa
 | --- | --- |
 | 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'union européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
 
-## 17-Document Database
+## 15-Document Database
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
 
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
-## 18-Relational Database
+## 16-Relational Database
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
@@ -148,7 +146,7 @@ La présnetation des garanties HDS est disponible sur [ce guide, section 11](/pa
 | --- | --- |
 | 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'union européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
 
-## 19-Message Broker
+## 17-Message Broker
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
@@ -161,25 +159,22 @@ La présnetation des garanties HDS est disponible sur [ce guide, section 11](/pa
 | --- | --- |
 | 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'union européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
 
-## 20-Private Registry
+## 18-Private Registry
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
 
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
-## 22-Cold Storage
 
-TBC
-
-## 23-Log Data Plateform
+## 19-Log Data Plateform
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
 
 (1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
-## 24-Grafana
+## 20-Grafana
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
 | OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non(1) |
@@ -192,7 +187,7 @@ TBC
 | --- | --- |
 | 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'union européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
 
-## 25-E-mails on private infrastructures
+## 21-E-mails on private infrastructures
 Cette offre ne comprends pas l'intégration à l'espace de confiance de la Messagerie Sécurisée de Santé.
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
