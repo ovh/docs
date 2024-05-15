@@ -1,7 +1,7 @@
 ---
 title: "Come connettere un dominio OVHcloud a un hosting SquareSpace"
 excerpt: "Prepara e configura la zona DNS del dominio OVHcloud per connetterla a un hosting SquareSpace"
-updated: 2024-05-14
+updated: 2024-05-15
 ---
 
 > [!primary]
