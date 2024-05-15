@@ -1,6 +1,6 @@
 ---
 title: Public Cloud Databases - FAQ
-updated: 2023-05-15
+updated: 2024-05-15
 ---
 
 ## Objective
