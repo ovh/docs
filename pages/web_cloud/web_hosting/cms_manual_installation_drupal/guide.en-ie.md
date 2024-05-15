@@ -8,7 +8,7 @@ updated: 2023-03-27
 
 This tutorial will help you install Drupal CMS (Content Management System) manually in just a few steps.
 
-[!warning]
+> [!warning]
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
