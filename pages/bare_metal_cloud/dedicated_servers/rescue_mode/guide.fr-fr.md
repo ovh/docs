@@ -1,7 +1,7 @@
 ---
 title: "Activer et utiliser le mode rescue"
 excerpt: "Découvrez comment utiliser le mode rescue OVHcloud pour dépanner votre serveur dédié"
-updated: 2024-01-09
+updated: 2024-05-15
 ---
 
 ## Objectif
@@ -43,40 +43,42 @@ Dans la page suivante, sélectionnez **Booter en mode rescue**.
 
 ### Rescue Linux
 
-Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue-customer`{.action} dans la liste déroulante.
+Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue-customer`{.action} dans le menu déroulant.
+
 Dans cette situation, deux modes d'authentification vous sont proposés :
+
 - Authentification par mot de passe
 - Authentification par clé SSH
-<br><br>
 
 #### Authentification par clé SSH
+
 > [!primary]
 > 
-> Si vous choisissez l'authentification par clé SSH, veillez à ce que votre clé SSH publique respecte le format ``RSA``, ``ECDSA``, ou ``ED25519``.
+> Si vous choisissez l'authentification par clé SSH, veillez à ce que votre clé SSH publique respecte l'un des formats parmi `RSA`, `ECDSA`, ou `ED25519`.
 >
 
-Sélectionnez l'option ``Authentification par clé SSH`` puis saisissez votre clé SSH **publique** dans la zone de texte dédiée.
+Sélectionnez l'option « Authentification par clé SSH » puis saisissez votre clé SSH **publique** dans la zone de texte dédiée.
 
 ![Authentification par clé SSH](images/rescue-mode-08.png){.thumbnail}
 
 #### Authentification par mot de passe
-Sélectionnez l'option ``Authentification par mot de passe``.<br>
-Les identifiants de connexion seront envoyés par défaut sur l'adresse principale de votre compte OVHcloud. Vous avez la possibilité de renseigner une adresse différente dans le champ ``Recevoir les identifiants du mode sur l'adresse e-mail``.
+
+Sélectionnez l'option « Authentification par mot de passe ».<br>
+Les identifiants de connexion seront envoyés par défaut sur l'adresse e-mail principale de votre compte OVHcloud. Vous avez la possibilité de renseigner une adresse différente dans le champ `Recevoir les identifiants du mode sur l'adresse e-mail`.
 
 ![Authentification par mot de passe Linux](images/rescue-mode-09.png){.thumbnail}
 
-
 ### Rescue Windows
 
-Pour les serveurs disposant d'un système d'exploitation Windows, en plus du rescue `rescue-customer`{.action}, vous avez la possibilité de choisir le rescue `WinRescue`{.action} (voir la [section du guide ci-dessous](#windowsrescue). Notez que seule l'authentification par mot de passe est disponible avec ce type de rescue.
+Pour les serveurs disposant d'un système d'exploitation Windows, en plus du mode `rescue-customer`{.action}, vous avez la possibilité de choisir l'option `WinRescue`{.action} (voir la [section du guide ci-dessous](#windowsrescue)). Veuillez noter que seule l'authentification par mot de passe est disponible avec ce type de mode rescue.
 
-Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
+Spécifiez une autre adresse e-mail si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
 
 ![Authentification par mot de passe Windows](images/rescue-mode-10.png){.thumbnail}
 
 ### Etapes finales
 
-<br>Cliquez sur `Suivant`{.action} et `Valider`{.action}.
+Cliquez sur `Suivant`{.action} et `Valider`{.action}.
 
 Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Statut » dans la zone intitulée **Etat des services**. 
 <br>Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. 
