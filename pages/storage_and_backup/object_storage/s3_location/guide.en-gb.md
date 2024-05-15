@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints and Object Storage geoavailability
-updated: 2024-05-13
+updated: 2024-05-15
 ---
 
 <style>
@@ -32,7 +32,8 @@ The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh
 
 The **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service.
 
-The mapping for **WRITE(PUT)** operations on the **io** endpoint:
+The mapping for **WRITE(PUT)** operations on the **io** endpoint is the following:
+
 <table>
     <tr>
         <th>AWS</th>
@@ -73,7 +74,8 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint:
 
 *_the default storage class on the **io** endpoint will be Standard, i.e. if you don't specify a storage class or if you specify a storage class other than those provided by AWS, your object will be stored in our Standard tier._
 
-The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint:
+The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the following:
+
 <table>
     <tr>
         <th>AWS</th>
@@ -90,15 +92,16 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint:
 </table>
 
 > [!warning]
-> * the storage class will no longer be defined at the bucket creation level, but at individual object upload level.
-> * the **perf** endpoint will be maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our object storage thus we strongly encourage you to migrate to the target **io** endpoint wherever possible.
+> - The storage class will no longer be defined at the bucket creation level, but at individual object upload level.
+> - The **perf** endpoint will be maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our object storage thus we strongly encourage you to migrate to the target **io** endpoint wherever possible.
 
 
 ### Endpoint retrocompatibility
 
 The **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express_One_Zone storage class.
 
-The mapping for **WRITE(PUT)** operations on the **perf** endpoint:
+The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the following:
+
 <table>
     <tr>
         <th>AWS</th>
@@ -139,7 +142,8 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint:
 
 *_the default storage class on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class or if you specify a storage class other than those provided by AWS, your object will be stored in our High Performance tier._
 
-The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint:
+The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is the following:
+
 <table>
     <tr>
         <th>AWS</th>
@@ -154,8 +158,6 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint:
         <td>Standard</td>
     </tr>
 </table>
-
-
 
 ## Object Storage Swift
 

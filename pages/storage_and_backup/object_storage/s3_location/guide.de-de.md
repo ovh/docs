@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpunkte und Objektspeicher mit Geo-Verfügbarkeit (EN)
-updated: 2024-05-13
+updated: 2024-05-15
 ---
 
 <style>
@@ -13,7 +13,7 @@ We have designed the S3 storage classes to be **compatible with the S3 API**, co
 
 ## Object Storage S3
 
-OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address both Standard and High Performance storage classes. All S3 API operations are supported with this unique endpoint.
+OVHcloud Object Storage S3 can now be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address both Standard and High Performance storage classes. All S3 API operations are supported with this unique endpoint.
 
 ### List of available regions
 
@@ -28,9 +28,136 @@ OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s
 
 The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh.net` that represents a virtual host style endpoint.
 
+### Mapping from AWS S3 Storage tiers to OVHcloud Storage tiers
+
+The **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service.
+
+The mapping for **WRITE(PUT)** operations on the **io** endpoint is the following:
+
+<table>
+    <tr>
+        <th>AWS</th>
+        <th>OVHcloud current mapping</th>
+        <th>OVHcloud target mapping (from 2024-06-17)</th>
+    </tr>
+    <tr>
+        <td>Express One Zone</td> 
+        <td rowspan=9>Standard</td>
+        <td>High Performance</td>
+    </tr>
+    <tr>
+        <td>Standard</td>
+        <td rowspan=8>Standard</td>
+    </tr>
+    <tr>
+        <td>default*</td>
+    </tr>
+    <tr>
+         <td>Standard IA</td>     
+    </tr>
+    <tr>
+        <td>Intelligent Tiering</td>
+    </tr>
+    <tr>
+        <td>One Zone IA</td>
+    </tr>
+    <tr>
+        <td>Glacier Instant Retrieval</td>
+    </tr>
+    <tr>
+        <td>Glacier Flexible</td>
+    </tr>
+    <tr>
+        <td>Glacier Deep Archive</td>
+    </tr>
+</table>
+
+*_the default storage class on the **io** endpoint will be Standard, i.e. if you don't specify a storage class or if you specify a storage class other than those provided by AWS, your object will be stored in our Standard tier._
+
+The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the following:
+
+<table>
+    <tr>
+        <th>AWS</th>
+        <th>OVHcloud target mapping (from 2024-06-17)</th>
+    </tr>
+    <tr>
+        <td>Express One Zone</td> 
+        <td>High Performance</td>
+    </tr>
+    <tr>
+        <td>Standard</td>
+        <td>Standard</td>
+    </tr>
+</table>
+
+> [!warning]
+> - The storage class will no longer be defined at the bucket creation level, but at individual object upload level.
+> - The **perf** endpoint will be maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our object storage thus we strongly encourage you to migrate to the target **io** endpoint wherever possible.
+
+
 ### Endpoint retrocompatibility
 
-The legacy endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes and all S3 API operations will still be supported. However, please note that this endpoint will automatically enforce the High Performance storage class of object upload operations.
+The **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express_One_Zone storage class.
+
+The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the following:
+
+<table>
+    <tr>
+        <th>AWS</th>
+        <th>OVHcloud current mapping</th>
+        <th>OVHcloud target mapping (from 2024-06-10)</th>
+    </tr>
+    <tr>
+        <td>Express One Zone</td> 
+        <td rowspan=9>High Performance</td>
+        <td rowspan=3>High Performance</td>
+    </tr>
+    <tr>
+        <td>Standard</td>
+    </tr>
+    <tr>
+        <td>default*</td>
+    </tr>
+    <tr>
+         <td>Standard IA</td>
+        <td rowspan=6>Standard</td>
+    </tr>
+    <tr>
+        <td>Intelligent Tiering</td>
+    </tr>
+    <tr>
+        <td>One Zone IA</td>
+    </tr>
+    <tr>
+        <td>Glacier Instant Retrieval</td>
+    </tr>
+    <tr>
+        <td>Glacier Flexible</td>
+    </tr>
+    <tr>
+        <td>Glacier Deep Archive</td>
+    </tr>
+</table>
+
+*_the default storage class on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class or if you specify a storage class other than those provided by AWS, your object will be stored in our High Performance tier._
+
+The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is the following:
+
+<table>
+    <tr>
+        <th>AWS</th>
+        <th>OVHcloud target mapping (from 2024-06-10)</th>
+    </tr>
+    <tr>
+        <td>Standard</td> 
+        <td>High Performance</td>
+    </tr>
+    <tr>
+        <td>Standard IA</td>
+        <td>Standard</td>
+    </tr>
+</table>
 
 ## Object Storage Swift
 
