@@ -62,9 +62,11 @@ pccVMware:vSphere:assumeRole?{{nom_du_rôle}}
 ```
 ![IAM role add](images/iam_role_2.png){.thumbnail}
 
-4. Cliquer sur *Créer ou modifier** la politique pour finir.
+4. Cliquer sur -> `Créer ou modifier` la politique pour finir.
 
-Si vous modifiez juste une politique cliquez sur les `...` d'une politique et choisissez **modifier**. Vous retrouverez les même paramètres à ajouter que lors d'une création.
+Si vous modifiez juste une politique cliquez sur les `...` d'une politique et Choisissez -> `modifier`.
+
+Vous retrouverez les mêmes paramètres à ajouter que lors d'une création.
 
 Pour les permissions, vous pouvez faire le choix d'être **Vsphere Admin** mais vous n'aurez pas la granularité espérer pour chaque environnement et les différents droits de chaque éléments VMware.
 
@@ -72,11 +74,12 @@ Pour les permissions, vous pouvez faire le choix d'être **Vsphere Admin** mais 
 ## Aller plus loin
 Pour aller plus loin avec IAM, vous pouvez lire ces guides :
 
-- [Comment utiliser les politiques IAM avec vSphere](https://help.ovhcloud.com/csm/fr-vmware-use-iam-vsphere?id=kb_article_view&sysparm_article=KB0059059)
-- [Liste des groupes de permissions OVHcloud](https://help.ovhcloud.com/csm/fr-customer-iam-permissionsgroup?id=kb_article_view&sysparm_article=KB0060254)
-- [Comment utiliser les politiques IAM depuis votre espace client](https://help.ovhcloud.com/csm/fr-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058730)
-- [Comment utiliser les politiques IAM via l’API OVHcloud](https://help.ovhcloud.com/csm/fr-customer-iam-policies-api?id=kb_article_view&sysparm_article=KB0056808)
-- [Gérer et exploiter - IAM](https://help.ovhcloud.com/csm/fr-documentation-manage-operate-iam?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=f9734072c014f990f0785f572a5744ed&spa=1)
-- [Comment analyser les résultats de politiques IAM](https://help.ovhcloud.com/csm/fr-iam-troubleshooting?id=kb_article_view&sysparm_article=KB0060455)
-  Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+- [Comment utiliser les politiques IAM avec vSphere](https://help.ovhcloud.com/csm/fr-vmware-use-iam-vsphere?id=kb_article_view&sysparm_article=KB0059059){.external}
+- [Liste des groupes de permissions OVHcloud](https://help.ovhcloud.com/csm/fr-customer-iam-permissionsgroup?id=kb_article_view&sysparm_article=KB0060254){.external}
+- [Comment utiliser les politiques IAM depuis votre espace client](https://help.ovhcloud.com/csm/fr-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058730){.external}
+- [Comment utiliser les politiques IAM via l’API OVHcloud](https://help.ovhcloud.com/csm/fr-customer-iam-policies-api?id=kb_article_view&sysparm_article=KB0056808){.external}
+- [Gérer et exploiter - IAM](https://help.ovhcloud.com/csm/fr-documentation-manage-operate-iam?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=f9734072c014f990f0785f572a5744ed&spa=1){.external}
+- [Comment analyser les résultats de politiques IAM](https://help.ovhcloud.com/csm/fr-iam-troubleshooting?id=kb_article_view&sysparm_article=KB0060455){.external}
+  
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
