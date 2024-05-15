@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilità con S3 (EN)
 excerpt: Discover the compliancy of OVHcloud S3 API versus the global AWS S3 API
-updated: 2024-04-17
+updated: 2024-05-15
 ---
 
 ## Objective
@@ -389,7 +389,7 @@ This guide lists the S3 API features supported by S3 Object Storage.
     <td>no</td>
   </tr>
   <tr>
-    <td rowspan="4">Web content</td>
+    <td rowspan="6">Web content</td>
     <td rowspan="3">Static web site</td>
     <td>put bucket website</td>
     <td>yes</td>
@@ -403,9 +403,17 @@ This guide lists the S3 API features supported by S3 Object Storage.
     <td>yes</td>
   </tr>
   <tr>
-    <td>Post object</td>
-    <td>n/c</td>
-    <td>no</td>
+    <td rowspan=3>Pre-signed urls</td>
+      <td>GET</td>
+      <td>yes</td>
+  </tr>
+    <tr>
+        <td>PUT</td>
+        <td>yes</td>
+  </tr>
+    <tr>
+        <td>POST</td>
+        <td>no</td>
   </tr>
   <tr>
     <td>Data analytics</td>

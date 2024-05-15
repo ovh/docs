@@ -1,7 +1,7 @@
 ---
 title: Object Storage - S3 Compliancy
 excerpt: Discover the compliancy of OVHcloud S3 API versus the global AWS S3 API
-updated: 2024-04-17
+updated: 2024-05-15
 ---
 
 ## Objective
