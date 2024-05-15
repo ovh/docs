@@ -16,14 +16,6 @@ updated: 2024-05-24
 
 **Dans ce guide, nous allons vous expliquer comment créer un role IAM dans votre cloud privée VMware sur OVHcloud**
 
-Voici les liens des guides :
-
-- Guide 1 : [Premiers pas avec IAM et VMware sur OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
-- Guide 2 : [Comment activer IAM dans un cloud privé VMware managé par OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
-- Guide 3 : [Comment créer un rôles IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
-- Guide 4 : [Comment ajouter un rôle IAM manuellement à une politique globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
-- Guide 5 : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
-
 ## Prérequis
 
 - Avoir un compte OVHcloud (voir guide :[Comment créer un compte OVHcloud](https://help.ovhcloud.com/csm/fr-account-create-ovhcloud-account?id=kb_article_view&sysparm_article=KB0043023)).
@@ -106,6 +98,10 @@ curl -X POST "https://eu.api.ovh.com/v1/dedicatedCloud/pcc-XX-XX-XX-XX/iam/addRo
  -H "content-type: application/json" \
  -d '{"name":"iam-role-name"}' \
 ```
+
+## A suivre : Associer un utilisateur à une politique IAM globale
+
+Je vous invite maintenant à suivre le guide suivant : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
 
 ---
 ## Aller plus loin

@@ -8,53 +8,46 @@ updated: 2024-05-24
 1. [Objectif - Liens des guides IAM](#Objectif)
 2. [Prérequis](#Prérequis)
 3. [Instruction](#Instruction)
-4. [Instruction - Etape 1](#Etape 1)
-5. [Instruction - Etape 2](#Etape 2)
-6. [Fin - Aller plus loin](#Aller plus loin)
+4. [A suivre](#A suivre)
+5. [Fin - Aller plus loin](#Aller plus loin)
 
 ---
 ## Objectif
 
-**Dans ce guide, nous allons vous expliquer comment associer un rôle à une politique globale IAM**
-
-Voici les liens des autres guides IAM private cloud :
-
-- Guide 1 : [Premiers pas avec IAM et VMware sur OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
-- Guide 2 : [Comment activer IAM dans un cloud privé VMware managé par OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
-- Guide 3 : [Comment créer un rôles IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
-- Guide 4 : [Comment ajouter un rôle IAM manuellement à une politique globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
-- Guide 5 : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
-
+**Dans ce guide, nous allons vous expliquer comment associer un rôle IAM Vsphere à une politique globale**
 
 ## Prérequis
 
 - Avoir un compte OVHcloud (voir guide :[Comment créer un compte OVHcloud](https://help.ovhcloud.com/csm/fr-account-create-ovhcloud-account?id=kb_article_view&sysparm_article=KB0043023)).
 - Disposer au préalable d'un ou plusieurs produits liés à ce compte OVHcloud (Hosted Private Cloud powered by VMware, Service Pack VMware etc..)
 - Savoir ["Créer et gérer des utilisateurs locaux sur un compte OVHcloud"](https://help.ovhcloud.com/csm/fr-account-managing-users?id=kb_article_view&sysparm_article=KB0043058).
-- Savoir ["Comment utiliser les politiques IAM depuis votre espace client"](https://help.ovhcloud.com/csm/fr-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058730).
+- Avoir une politique IAM [Comment créer une politiques IAM"](https://help.ovhcloud.com/csm/fr-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058730).
 
 ## Instruction
 
-## Etape 1
+## Etape 1 : Comment créer une politique ? (optionnel)
 
-## Comment associer un rôle IAM à une politique globale (policy) ?
+## Etape 2 : Comment associer un rôle IAM à une politique globale (policy) ?
 
 ### Dans la console OVHcloud :
 1. Accéder à la console OVHcloud, en suivant [le lien de l'espace client](https://www.ovh.com/manager) et **connectez vous avec vos identifiants**.
-2. Ensuite allez dans la section **IAM > Politiques**, vous retrouverez vos politiques si vous en avez.
+2. Allez dans la section -> `IAM > Politiques`{.action},
+
+Vous retrouverez vos politiques si vous en avez créés.
 
 ![IAM role add](images/iam_role_policy_8.png){.thumbnail}
 ![IAM role add](images/iam_role_policy_6.png){.thumbnail}
 ![IAM role add](images/iam_role_policy_7.png){.thumbnail}
 
 ### Dans les politiques :
-3. Pour lier un rôle à une policy vous pouvez soit créer une politique ou alors modifiez en une. Si vous en créez une plusieurs parametres doivent être pris en compte :
-    1. Nom de la politique : Choisissez ce que vous voulez.
-    2. Description : Choisissez ce que vous voulez.
-    3. Ressources : Ajoutez les ressources concernées par votre politique **pcc-XX-XX-XX-XX/servicepack, pcc-XX-XX-XX-XX** etc..
-    3. Types de produit : **Hosted private cloud powered by VMware**.
-    4. Actions : C'est ici que vous ajoutez votre role :
-        1. Dans la section **Action ajoutées manuellement**, puis **Ajouter manuellement des actions**, copiez-collez ce paramètre avec le nom de votre rôle crée auparavant avec `pccVMware:vSphere:assumeRole?{{nom_du_rôle}}`
+Pour lier un rôle à une policy vous pouvez soit créer une politique ou alors modifiez en une. Si vous en créez une, plusieurs paramètres doivent être pris en compte :
+1. Nom de la politique : Choisissez ce que vous voulez.
+2. Description : Choisissez ce que vous voulez.
+3. Ressources : Ajoutez les ressources concernées par votre politique **pcc-XX-XX-XX-XX/servicepack, pcc-XX-XX-XX-XX** etc..
+4. Types de produit : **Hosted private cloud powered by VMware**.
+5. Actions : C'est ici que vous ajoutez votre rôle :
+   1. Dans la section `Action Ajouter Manuellement > Ajouter Manuellement Des Actions`{.action}.
+   2. Copiez-collez ce paramètre avec le nom de votre rôle crée auparavant avec `pccVMware:vSphere:assumeRole?{{nom_du_rôle}}`{.action}
 
 A Copiez-collez :
 ```Bash
@@ -62,13 +55,17 @@ pccVMware:vSphere:assumeRole?{{nom_du_rôle}}
 ```
 ![IAM role add](images/iam_role_2.png){.thumbnail}
 
-4. Cliquer sur -> `Créer ou modifier` la politique pour finir.
+1. Cliquer sur -> `CREER ou MODIFIER`{.action}.
 
-Si vous modifiez juste une politique cliquez sur les `...` d'une politique et Choisissez -> `modifier`.
+Si vous modifiez juste une politique :
+
+1. Cliquez sur les `...` -> `MODIFIER`{.action} .
 
 Vous retrouverez les mêmes paramètres à ajouter que lors d'une création.
 
-Pour les permissions, vous pouvez faire le choix d'être **Vsphere Admin** mais vous n'aurez pas la granularité espérer pour chaque environnement et les différents droits de chaque éléments VMware.
+## A suivre :
+
+Je vous invite maintenant à associer un utilisateur OVHcloud à une politique IAM globale en suivant les instructions du tutoriel suivant : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy).
 
 ---
 ## Aller plus loin
