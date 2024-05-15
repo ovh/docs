@@ -116,6 +116,11 @@ Agora pode utilizar a sua base de dados. Para isso, precisará das suas informa�
 - o *nome da base de dados* que indicou,
 - o *endereço do servidor*.
 
+> [!primary]
+>
+> Se lhe for pedido e qualquer que seja a base de dados [Start SQL](/links/web/hosting-options-startsql) adicionada ou incluída no seu alojamento web OVHcloud, o número de **port** a utilizar é o **3306**.
+>
+
 Estas informações são essenciais para que o seu website possa ligar-se à base de dados.
 
 Se necessário, para recuperar estas informações de ligação, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha a oferta de alojamento para a qual pretende recuperar as informações de ligação à base de dados e clique no separador `Bases de dados`{.action}.
