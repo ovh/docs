@@ -1,7 +1,7 @@
 ---
 title: "Eine Datenbank auf Ihrem Webhosting erstellen"
 excerpt: "Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden"
-updated: 2023-12-15
+updated: 2024-05-15
 ---
 
 > [!primary]
@@ -115,6 +115,11 @@ Sie können nun Ihre Datenbank verwenden. Hierzu benötigen Sie Ihre Anmeldeinfo
 - *Benutzername* und *Passwort*
 - *Datenbankname*
 - *Serveradresse*
+
+> [!primary]
+>
+> Wenn Sie dazu aufgefordert werden und unabhängig von der Datenbank [Start SQL](/links/web/hosting-options-startsql), die zu Ihrem OVHcloud Webhosting hinzugefügt oder in diesem enthalten ist, ist die zu verwendende **Port** Nummer **3306**.
+>
 
 Diese Informationen sind für die Verbindung von Websites mit der Datenbank unbedingt erforderlich.
 
