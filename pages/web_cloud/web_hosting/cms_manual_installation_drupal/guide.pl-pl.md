@@ -18,6 +18,8 @@ Tutaj znajdziesz wszystkie elementy, które pozwolą Ci ręcznie zainstalować C
 > 
 > Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [producenta CMS Drupal](https://www.drupal.org/support){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
 >
+> Jeśli chcesz zaktualizować istniejący CMS Drupal lub masz pytania dotyczące korzystania z tego CMS, skontaktuj się bezpośrednio z [wydawcą CMS Drupal](https://www.drupal.org/support){.external}.
+>
 
 > [!success]
 >
