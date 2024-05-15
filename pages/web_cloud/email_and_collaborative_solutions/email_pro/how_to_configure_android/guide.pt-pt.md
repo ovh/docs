@@ -23,11 +23,11 @@ Os endereços de e-mail do serviço E-mail Pro podem ser configurados em vários
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção « Ir mais longe » deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção « Ir mais longe » deste guia.
 
 ## Requisitos
 
-- Ter um plano [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
+- Ter um plano [E-mail Pro](/links/email-pro).
 - Ter a aplicação Gmail no seu dispositivo. Pode instalá-la a partir da Google Play Store.
 - Dispor de credenciais relativas ao endereço de e-mail que pretende configurar.
 
@@ -107,13 +107,13 @@ Depois de configurar o endereço de e-mail, já só precisa de o utilizar ! Pode
 
 ### Definições POP, IMAP e SMTP
 
-Para a receção dos e-mails, ao escolher o tipo de conta, recomendamos uma utilização em **IMAP**. No entanto, pode selecionar **POP**. Para compreender o funcionamento respetivo, consulte a nossa secção [« POP ou IMAP, qual é a diferença? »](#popimap)
+Para a receção dos e-mails, ao escolher o tipo de conta, recomendamos uma utilização em **IMAP**. No entanto, pode selecionar **POP**. Para compreender o funcionamento respetivo, consulte a nossa secção ["POP ou IMAP, qual é a diferença?"](#popimap)
 
 - **Para uma configuração em POP**
 
 |Informação|Descrição|
 |---|---|
-|Nome de utilizador|Introduza o endereço de e-mail **completo*|
+|Nome de utilizador|Introduza o endereço de e-mail **completo**|
 |Palavra-passe|Introduza a palavra-passe do endereço de e-mail|
 |Servidor|pro***?*.mail.ovh.net (substitua bem «**?**» pelo número do seu servidor)|
 |Porta|995|
@@ -123,7 +123,7 @@ Para a receção dos e-mails, ao escolher o tipo de conta, recomendamos uma util
 
 |Informação|Descrição|
 |---|---|
-|Nome de utilizador|Introduza o endereço de e-mail **completo*|
+|Nome de utilizador|Introduza o endereço de e-mail **completo**|
 |Palavra-passe|Introduza a palavra-passe do endereço de e-mail|
 |Servidor|pro***?*.mail.ovh.net (substitua bem «**?**» pelo número do seu servidor)|
 |Porta|993|
@@ -135,7 +135,7 @@ Se necessitar de inserir manualmente as definições **SMTP** nas preferências 
 
 |Informação|Descrição|
 |---|---|
-|Nome de utilizador|Introduza o endereço de e-mail **completo*|
+|Nome de utilizador|Introduza o endereço de e-mail **completo**|
 |Palavra-passe|Introduza a palavra-passe do endereço de e-mail|
 |Servidor|pro***?*.mail.ovh.net (substitua bem «**?**» pelo número do seu servidor)|
 |Porta|587|

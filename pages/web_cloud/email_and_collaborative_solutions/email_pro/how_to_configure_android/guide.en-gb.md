@@ -22,12 +22,12 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialised provider](https://partner.ovhcloud.com/fr/) and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the "Go further" section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialised provider](/links/partner) and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the "Go further" section of this guide.
 >
 
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) solution.
+- You must have an [Email Pro](/links/email-pro) solution.
 - You need to have the Gmail app installed on your device. You can install the app from the Google Play Store.
 - You need to have the required credentials for the email address you would like to configure.
 
