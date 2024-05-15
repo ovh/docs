@@ -118,6 +118,11 @@ Una volta in possesso delle informazioni, **modifica i server DNS del tuo domini
 > Ti ricordiamo che, prima di modificare i **server DNS** dichiarati presso il tuo dominio, verifica che la configurazione della nuova zona DNS corrisponda alle tue aspettative.
 >
 
+> [!success]
+>
+> Per personalizzare i nomi dei server DNS associati alla zona DNS attiva del tuo dominio, consulta la nostra guida "[Personalizzare i server DNS di un dominio (Glue Records)](/pages/web_cloud/domains/glue_registry)".
+>
+
 ## Per saperne di più
 
 [Modifica una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
