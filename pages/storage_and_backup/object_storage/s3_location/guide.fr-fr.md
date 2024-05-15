@@ -23,7 +23,7 @@ OVHcloud Object Storage S3 est accessible via un point de terminaison unique : `
 | Francfort | de | HTTPS | 4 |
 | Beauharnois | bhs | HTTPS | 4 |
 | Roubaix | rbx | HTTPS | 4 |
-| Varsovie | gueuler | HTTPS | 4 |
+| Varsovie | waw | HTTPS | 4 |
 | Londres | uk | HTTPS | 4 |
 
 Le point de terminaison de bucket est une URL, par exemple `https://my-bucket.s3.gra.io.cloud.ovh.net` qui représente un point de terminaison de style hôte virtuel.
