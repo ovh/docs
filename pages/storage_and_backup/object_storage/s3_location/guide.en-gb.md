@@ -25,6 +25,8 @@ OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s
 | Roubaix | rbx | HTTPS | 4 |
 | Warsaw | waw | HTTPS | 4 |
 | London | uk | HTTPS | 4 |
+| Strasbourg | sbg | HTTPS | 4 |
+| Singapore | sgp | HTTPS | 4 |
 
 The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh.net` that represents a virtual host style endpoint.
 
