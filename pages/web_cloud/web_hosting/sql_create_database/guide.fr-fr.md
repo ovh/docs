@@ -114,7 +114,7 @@ Répétez ce processus autant de fois que vous le souhaitez afin de créer plusi
 
 > [!primary]
 >
-> S'il vous est demandé et quel que soit la base de données [Start SQL](/links/web/hosting-options-startsql) ajoutée ou incluse avec votre hébergement web OVHcloud, le numéro de *port* à utiliser est le **3306**.
+> S'il vous est demandé et quelle que soit la base de données [Start SQL](/links/web/hosting-options-startsql) ajoutée ou incluse avec votre hébergement web OVHcloud, le numéro de **port** à utiliser est le **3306**.
 >
 
 Ces informations sont essentielles pour que votre site web puisse se connecter à la base de données.
