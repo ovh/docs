@@ -42,7 +42,6 @@ Voici les liens des autres guides IAM private cloud :
 
 ### Pour activer IAM via l'espace client :
 
-
 1. Accéder à la console OVHcloud, en suivant [le lien de l'espace client](https://www.ovh.com/manager) et Connectez vous avec vos identifiants.
 
 2. Dans la section **Utilisateurs** de votre service > Accédez à **IAM OVHcloud beta** puis > Cliquez sur **Activer l'IAM OVHcloud**.
@@ -52,6 +51,10 @@ Si vous ne trouvez pas, utilisez cette "url" en la remplaçant par le nom de vot
 
 ![Activer IAM](images/iam_enable_2.png){.thumbnail }
 
+Si IAM est activé, vous pouvez constatez le status **Activé** en vert (Enabled).
+
+![Activer IAM](images/iam_enable_3.png){.thumbnail }
+
 ### Comment activer IAM dans un PCC depuis l'API OVHcloud ?
 
 > [!CAUTION]
@@ -59,16 +62,58 @@ Si vous ne trouvez pas, utilisez cette "url" en la remplaçant par le nom de vot
 
 ### Pour activer IAM via l'API :
 > [!IMPORTANT]
-> Pensez bien à remplacer le **serviceName** par le vôtre..
+> Pensez bien à remplacer le **serviceName** par le vôtre.
 
-1. Activer l'option IAM sur votre infrastructure depuis l'API OVHcloud :
+Activer l'option IAM sur votre infrastructure depuis l'API OVHcloud :
 
-> [!tabs]
-> 1st tab title
->> > [!api]
->> >
->> > @api {v1} POST /dedicatedCloud/{serviceName}/iam/enable
->> >
+> [!api]
+>
+> @api {v1} POST /dedicatedCloud/{serviceName}/iam/enable
+>
+
+> **Parameters:**
+>
+> serviceName: La référence de votre service pcc, `pcc-XX-XX-XX-XX`.
+
+### Pour verifier si IAM est activé via l'API
+
+Vous pouvez contrôler l'activation avec l'appel API suivant :
+
+> [!api]
+>
+> @api {v1} GET /dedicatedCloud/{serviceName}/iam
+>
+
+> **Parameters:**
+>
+> serviceName: La référence de votre service pcc, `pcc-XX-XX-XX-XX`.
+
+RETOUR :
+```Shell
+{
+  "state": "enabled",
+  "identityProviderId": 275
+}
+```
+
+### Pour verifier si IAM peut être activé via l'API
+
+> [!api]
+>
+> @api {v1} GET /dedicatedCloud/{serviceName}/iam/canBeEnabled
+>
+
+> **Parameters:**
+>
+> serviceName: La référence de votre service pcc, `pcc-XX-XX-XX-XX`.
+
+RETOUR :
+```Shell
+{
+  "message": "This option is already enabled"
+}
+```
+
 
 ---
 ## Aller plus loin
