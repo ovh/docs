@@ -116,6 +116,11 @@ Teraz możesz korzystać z bazy danych. W tym celu potrzebujesz danych do logowa
 - *nazwa bazy danych*, którą wskazałeś,
 - *adres serwera*.
 
+> [!primary]
+>
+> Jeśli jest wymagane i niezależnie od bazy danych [Start SQL](/links/web/hosting-options-startsql) dodanej lub zawartej w hostingu OVHcloud, należy używać port **3306**.
+>
+
 Informacje te są niezbędne, aby Twoja strona WWW mogła połączyć się z bazą danych.
 
 W razie potrzeby, aby pobrać dane do logowania, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz pobrać dane do połączenia z bazą danych, następnie kliknij zakładkę `Bazy danych`{.action}.
