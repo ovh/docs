@@ -18,6 +18,8 @@ Qui trovi tutti gli elementi per installare manualmente il CMS (Content Manageme
 > 
 > Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner) o [amministratore del CMS Drupal](https://www.drupal.org/support){.external}. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni, consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
+> Per aggiornare un CMS Drupal esistente o avere domande sull'utilizzo del CMS Drupal, contatta direttamente [l'editor del CMS Drupal](https://www.drupal.org/support){.external}.
+>
 
 > [!success]
 >
