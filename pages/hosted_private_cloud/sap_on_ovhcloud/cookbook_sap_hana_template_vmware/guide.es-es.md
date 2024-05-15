@@ -63,7 +63,7 @@ Once the SAP HANA sources have been uploaded in your S3 Object Storage bucket, y
 <a name="ovf_link"></a>
 
 ```console
-https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP5-Full-x86_64/sles4sap-sap-hana-SLE-15-SP5-Full-x86_64.ovf
+https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf
 ```
 
 ![deploy-from-template](images/step-2.png){.thumbnail}
