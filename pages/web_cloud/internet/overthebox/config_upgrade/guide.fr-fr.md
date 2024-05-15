@@ -1,7 +1,7 @@
 ---
 title: 'Comment mettre à jour un appareil OverTheBox'
 excerpt: 'Découvrez comment mettre à jour votre appareil OverTheBox'
-updated: 2024-05-07
+updated: 2024-05-15
 ---
 
 ## Objectif
@@ -119,7 +119,7 @@ L'ensemble des modifications est consultable ici :
 | ---  | :---: | :---: | :---: | :---: | ---: |
 | v0.8 | v0.8.1 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3, v2b, v2c |
 | v0.9 | v0.9.3 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
-| stable | v0.8.1 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3, v2b, v2c |
+| stable | v0.9.3 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
 | beta | v0.9.3 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
 
 ### Installer manuellement une image
