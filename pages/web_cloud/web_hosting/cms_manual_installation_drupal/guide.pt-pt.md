@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalar manualmente Drupal"
 excerpt: "Descubra como instalar manualmente o seu CMS Drupal"
-updated: 2023-04-07
+updated: 2024-05-15
 ---
 
 > [!primary]
