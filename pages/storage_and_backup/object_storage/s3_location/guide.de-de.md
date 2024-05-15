@@ -13,7 +13,7 @@ We have designed the S3 storage classes to be **compatible with the S3 API**, co
 
 ## Object Storage S3
 
-OVHcloud Object Storage S3 can now be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address both Standard and High Performance storage classes. All S3 API operations are supported with this unique endpoint.
+OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address both Standard and High Performance storage classes. All S3 API operations are supported with this unique endpoint.
 
 ### List of available regions
 
@@ -29,8 +29,6 @@ OVHcloud Object Storage S3 can now be accessed through a unique endpoint: `https
 The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh.net` that represents a virtual host style endpoint.
 
 ### Mapping from AWS S3 Storage tiers to OVHcloud Storage tiers
-
-The **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service.
 
 The mapping for **WRITE(PUT)** operations on the **io** endpoint is the following:
 
@@ -91,14 +89,15 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
     </tr>
 </table>
 
+![Schema 1](images/io-mapping.png)
+
 > [!warning]
 > - The storage class will no longer be defined at the bucket creation level, but at individual object upload level.
 > - The **perf** endpoint will be maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our object storage thus we strongly encourage you to migrate to the target **io** endpoint wherever possible.
 
-
 ### Endpoint retrocompatibility
 
-The **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express_One_Zone storage class.
+Although the **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service, the **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express_One_Zone storage class.
 
 The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the following:
 
@@ -158,6 +157,8 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
         <td>Standard</td>
     </tr>
 </table>
+
+![Schema 2](images/perf-mapping.png)
 
 ## Object Storage Swift
 

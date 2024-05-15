@@ -13,7 +13,7 @@ Nous avons conçu les classes de stockage S3 pour qu’elles soient **compatible
 
 ## Object Storage S3
 
-OVHcloud Object Storage S3 est maintenant accessible via un point de terminaison unique : `https://s3.<region>.io.cloud.ovh.net`. Ce point de terminaison unique peut traiter à la fois les classes de stockage Standard et High Performance. Toutes les opérations de l'API S3 sont prises en charge avec ce point de terminaison unique.
+OVHcloud Object Storage S3 est accessible via un point de terminaison unique : `https://s3.<region>.io.cloud.ovh.net`. Ce point de terminaison unique peut traiter à la fois les classes de stockage Standard et High Performance. Toutes les opérations de l'API S3 sont prises en charge avec ce point de terminaison unique.
 
 ### Liste des régions disponibles
 
@@ -29,8 +29,6 @@ OVHcloud Object Storage S3 est maintenant accessible via un point de terminaison
 Le point de terminaison de bucket est une URL, par exemple `https://my-bucket.s3.gra.io.cloud.ovh.net` qui représente un point de terminaison de style hôte virtuel.
 
 ### Mapping des niveaux de stockage AWS S3 vers les niveaux de stockage OVHcloud
-
-Le point de terminaison **io** est le point de terminaison privilégié pour accéder au service OVHcloud Object Storage.
 
 Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est le suivant :
 
@@ -91,13 +89,15 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     </tr>
 </table>
 
+![Schema 1](images/io-mapping.png)
+
 > [!warning]
 > - La classe de stockage ne sera plus définie au niveau de la création du bucket, mais au niveau de l'upload d'objets individuels.
 > - Le point de terminaison **perf** sera maintenu à des fins de rétrocompatibilité uniquement, afin de permettre aux outils qui ne prennent pas en charge la récente classe de stockage Express_One_Zone d'AWS de continuer à fonctionner sur notre object storage. Nous vous encourageons donc fortement à migrer vers le point de terminaison **io** cible chaque fois que cela est possible.
 
 ### Rétrocompatibilité des points de terminaison
 
-L'ancien point de terminaison `https://s3.<region>.perf.cloud.ovh.net` sera toujours maintenu à des fins de rétrocompatibilité pour les outils et les applications qui ne prennent pas en charge la dernière classe de stockage AWS Express_One_Zone.
+Bien que le point de terminaison **io** soit le point de terminaison préféré pour accéder au service OVHcloud Object Storage, le point de terminaison **historique** `https://s3.<region>.perf.cloud.ovh.net` sera toujours maintenu à des fins de rétrocompatibilité pour les outils et les applications qui ne prennent pas en charge la dernière classe de stockage AWS Express_One_Zone.
 
 Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** est le suivant :
 
@@ -157,6 +157,8 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
         <td>Standard</td>
     </tr>
 </table>
+
+![Schema 2](images/perf-mapping.png)
 
 ## Object Storage Swift
 
