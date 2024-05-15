@@ -23,11 +23,11 @@ Konta e-mail usługi E-mail Pro mogą być skonfigurowane w jednym z kompatybiln
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "Sprawdź również".
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "Sprawdź również".
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
+- Wykupienie usługi [E-mail Pro](/links/email-pro)
 - Instalacja aplikacji Gmail na Twoim urządzeniu (możesz pobrać ją z Google Play Store)
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
@@ -68,35 +68,35 @@ Postępuj zgodnie z kolejnymi instrukcjami, przechodząc przez poniższe karty:
 > [!tabs]
 > **Etap 1**
 >> Z menu Typy kont e-mail wybierz `Inny`{.action}.<br><br>
->> ![emailpro](obrazy/emailpro-android-01.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-01.png){.thumbnail .h-600}
 >>
 > **Etap 2**
 >> Wpisz swój adres e-mail.<br><br>
->> ![emailpro](obrazy/emailpro-android-02.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-02.png){.thumbnail .h-600}
 >>
 > **Etap 3**
 >> Wybierz protokół otrzymywania e-maili. Zalecamy wybranie opcji `Personal (IMAP)`{.action}<br><br>Aby zapoznać się z różnicami, zapoznaj się z [więcej szczegółów dotyczących protokołów POP i IMAP](#popimap) na końcu tego przewodnika.<br><br>
->> ![emailpro](obrazy/emailpro-android-03.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-03.png){.thumbnail .h-600}
 >>
 > **Etap 4**
 >> Wpisz hasło przypisane do Twojego konta e-mail.<br><br>
->> ![emailpro](obrazy/emailpro-android-04.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-04.png){.thumbnail .h-600}
 >>
 > **Etap 5**
 >> Uzupełnij znaki "**Parametry serwera poczty przychodzącej**"<br><br>- **Nazwa użytkownika**: Twój pełny adres e-mail<br>- **Hasło** : Hasło do Twojego konta e-mail<br>- **Serwer** : wpisz **pro**?**.mail.ovh.net** (zmień "**?**" na numer serwera). <br><br>
->> ![emailpro](obrazy/emailpro-android-05.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-05.png){.thumbnail .h-600}
 >>
 > **Etap 6**
 >> Uzupełnij znaki "**Ustawienia serwera poczty wychodzącej**"<br><br>- **Nazwa użytkownika**: Twój kompletny adres e-mail<br>- **Hasło**: Hasło do konta e-mail<br>- **Serwer SMTP** : wpisz **pro**?**.mail.ovh.net** (dobrze zastąp "**?**" numerem serwera). <br><br>
->> ![emailpro](obrazy/emailpro-android-06.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-06.png){.thumbnail .h-600}
 >>
 > **Etap 7**
 >> Wybierz częstotliwość synchronizacji e-maili.<br><br>
->> ![emailpro](obrazy/emailpro-android-07.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-07.png){.thumbnail .h-600}
 >>
 > **Etap 8**
 >> Określ w aplikacji Gmail nazwę wyświetlaną Twojego konta e-mail, po czym kliknij `Dalej`{.action}.<br><br>
->> ![emailpro](obrazy/emailpro-android-08.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-08.png){.thumbnail .h-600}
 >>
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku! Możesz teraz wysyłać i odbierać wiadomości e-mail, korzystając z aplikacji Gmail.
@@ -107,7 +107,7 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku! Możesz teraz wysyła
 
 ### Parametry POP, IMAP i SMTP
 
-Jeśli chcesz otrzymywać e-maile, wybierz rodzaj konta. Zalecamy użycie **IMAP**. Możesz jednak wybrać **POP**. Aby dowiedzieć się, jak to działa, sprawdź naszą sekcję ["POP lub IMAP, jaka jest różnica?"] (#popimap)
+Jeśli chcesz otrzymywać e-maile, wybierz rodzaj konta. Zalecamy użycie **IMAP**. Możesz jednak wybrać **POP**. Aby dowiedzieć się, jak to działa, sprawdź naszą sekcję ["POP lub IMAP, jaka jest różnica?"](#popimap)
 
 - **Konfiguracja POP**
 
@@ -147,7 +147,7 @@ Podczas ręcznej konfiguracji adresu e-mail klient poczty pyta, czy chcesz używ
 
 Podczas konfiguracji klienta poczty należy podać informacje dotyczące **serwera poczty przychodzącej**, aby móc odbierać e-maile, oraz **serwera poczty wychodzącej**, aby móc wysyłać e-maile. Do wysyłania e-maili nie ma wyboru. Zastosowany jest protokół **SMTP** (**S**proste **M**ail **T**transfer **P**rotocol). W przypadku odbioru wiadomości należy wybrać **POP** lub **IMAP**.
 
-![emailpro](obrazy/popimap-01.png){.thumbnail}
+![emailpro](images/popimap-01.png){.thumbnail}
 
 Aby zrozumieć różnicę między używaniem protokołu POP i IMAP, wyjaśnimy szczegółowo elementy składające się na przetwarzanie e-maili otrzymywanych:
 
