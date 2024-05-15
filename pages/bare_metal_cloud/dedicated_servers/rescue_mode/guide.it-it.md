@@ -1,7 +1,7 @@
 ---
 title: "Attivare e utilizzare il Rescue mode"
 excerpt: "Scopri come utilizzare il Rescue mode OVHcloud per risolvere i problemi del tuo server dedicato"
-updated: 2024-01-09
+updated: 2024-05-15
 ---
 
 > [!primary]
@@ -32,28 +32,55 @@ La modalità Rescue è generalmente adatta alle seguenti operazioni:
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di un [server dedicato OVHcloud](/links/bare-metal/bare-metal)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-> [!warning]
-> Ti ricordiamo che se hai impostato una chiave SSH di default nel tuo spazio per i prodotti dedicati, non riceverai una password di root durante il riavvio di un server in modalità Rescue. In questo caso, è necessario disattivare di default la chiave SSH prima di riavviare il server in modalità Rescue. Per effettuare questa operazione, consulta questa [sezione](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) della guida corrispondente.
->
-
-La modalità Rescue può essere attivata solo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}.
+La modalità Rescue può essere attivata solo dallo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}.
 
 Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} poi su `Modifica`{.action}.
 
 ![Modifica la modalità di avvio](images/rescue-mode-001.png){.thumbnail}
 
-Nella pagina successiva, seleziona **Avviare in Rescue mode**. Se il tuo server utilizza un sistema operativo Linux, seleziona `rescue-customer`{.action} nel menu a tendina. Se il tuo server è Windows, scegli `WinRescue`{.action} (consulta la [sezione della guida qui sotto](#windowsrescue)).
-Se **non** vuoi che le credenziali di accesso siano inviate all'indirizzo principale del tuo account, inserisci un altro indirizzo email.
+Nella pagina successiva, seleziona **Avviare in Rescue mode**.
 
-> [!warning]
+### Rescue Linux
+
+Se il tuo server utilizza un sistema operativo Linux, seleziona `rescue-customer`{.action} nel menu a tendina.
+
+In questa situazione, vengono proposte due modalità di autenticazione:
+
+- Autenticazione tramite password
+- Autenticazione tramite chiave SSH
+
+#### Autenticazione tramite chiave SSH
+
+> [!primary]
 >
-> Alcuni account cliente OVHcloud possono essere interessati da un errore relativo alla lingua delle email di recupero: sono inviati in francese invece della lingua scelta per l’account. Sebbene la causa dell'errore sia stata corretta dal 20 settembre 2022, è necessario aggiornare una volta l'indirizzo email per risolvere il problema. Per farlo, inserisci l'indirizzo email del tuo account cliente in questo step prima di attivare la modalità Rescue.
+> Se scegli l’autenticazione tramite chiave SSH, verifica che la tua chiave SSH pubblica rispetti uno dei formati tra `RSA`, `ECDSA`, o `ED25519`.
 >
+
+Seleziona l’opzione "Autenticazione tramite chiave SSH" e inserisci la chiave SSH **pubblica* nella casella di testo dedicata.
+
+![Autenticazione tramite chiave SSH](images/rescue-mode-08.png){.thumbnail}
+
+#### Autenticazione tramite password
+
+Seleziona l’opzione "Autenticazione tramite password".<br>
+Le credenziali di accesso verranno inviate di default all’indirizzo email principale associato all’account OVHcloud. È possibile inserire un indirizzo differente nel campo `Ricevi le credenziali della modalità selezionata all'indirizzo email`.
+
+![Autenticazione tramite password Linux](images/rescue-mode-09.png){.thumbnail}
+
+### Rescue Windows
+
+Per i server con sistema operativo Windows, oltre alla modalità `rescue-customer`{.action}, è possibile scegliere l’opzione `WinRescue`{.action} (consulta la [sezione della guida qui sotto](#windowsrescue)). Ti ricordiamo che con questa modalità rescue è disponibile solo l’autenticazione tramite password.
+
+Se non si desidera **** che le credenziali di accesso vengano inviate all'indirizzo principale del proprio account OVHcloud, specificare un altro indirizzo email.
+
+![Autenticazione tramite password Windows](images/rescue-mode-10.png){.thumbnail}
+
+### Fasi finali
 
 Clicca su `Continua`{.action} per procedere al passo successivo, poi su `Conferma`{.action}.
 
@@ -76,7 +103,7 @@ Una volta terminate le operazioni in modalità Rescue, ricordate di ridefinire i
 > Se utilizzi una chiave SSH (attiva anche nello Spazio Cliente OVHcloud), non riceverai alcuna password. Una volta che il server è in modalità Rescue, potrai accedere direttamente alla tua chiave SSH.
 >
 
-Dopo il riavvio del server, riceverai un'email con le credenziali di accesso in modalità Rescue. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul nome associato al tuo identificativo cliente nell'angolo in alto a destra del tuo Spazio Cliente e poi su `Email di servizio`{.action}.
+Dopo il riavvio del server, riceverai un'email con le credenziali di accesso in modalità Rescue. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](/links/manager). Clicca sul nome associato al tuo identificativo cliente nell'angolo in alto a destra del tuo Spazio Cliente e poi su `Email di servizio`{.action}.
 
 A questo punto dovrai accedere al tuo server da riga di comando o tramite un tool [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), utilizzando la password di root generata per la modalità Rescue.
 
@@ -135,7 +162,7 @@ mount /dev/hda1 /mnt/
 > Se il tuo server dispone di una configurazione RAID software, devi montare il tuo volume RAID (in generale `/dev/mdX`).
 >
 
-Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.
+Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](/links/manager) e riavvia il server da riga di comando.
 
 #### VMware - Installazione di un datastore
 
@@ -173,15 +200,15 @@ Monta la partizione con questo comando, sostituendo `sdbX` con il valore identif
 vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
-Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.
+Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](/links/manager) e riavvia il server da riga di comando.
 
 ### Windows <a name="windowsrescue"></a>
 
 #### Utilizzo degli strumenti WinRescue
 
-Dopo il riavvio del server, riceverai un'email con le credenziali di accesso in modalità Rescue. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul nome associato al tuo identificativo cliente nell'angolo in alto a destra del tuo Spazio Cliente e poi su `Email di servizio`{.action}.
+Dopo il riavvio del server, riceverai un'email con le credenziali di accesso in modalità Rescue. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](/links/manager). Clicca sul nome associato al tuo identificativo cliente nell'angolo in alto a destra del tuo Spazio Cliente e poi su `Email di servizio`{.action}.
 
-Per utilizzare la modalità Rescue offerta da Windows, scarica e installa una console VNC o utilizza il modulo `IPMI` nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+Per utilizzare la modalità Rescue offerta da Windows, scarica e installa una console VNC o utilizza il modulo `IPMI` nel tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
 
 ![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 
