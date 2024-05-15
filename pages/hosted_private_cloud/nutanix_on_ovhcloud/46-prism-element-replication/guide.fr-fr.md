@@ -1,7 +1,7 @@
 ---
 title: Réplication asynchrone ou NearSync au travers de Prism Element
 excerpt: "Comment mettre en place la réplication asynchrone ou NearSync au travers de Prism Element"
-updated: 2022-06-29
+updated: 2024-05-13
 ---
 
 ## Objectif
@@ -23,9 +23,9 @@ Via **Prism Element**, il est possible :
 
 > [!warning]
 > 
-> Le pack **Nutanix Standard** OVHcloud vous permet d'utiliser des réplications asynchrones **toutes les heures**. 
+> Le pack **Starter** de l'offre Nutanix on OVHcloud packagée vous permet d'utiliser des réplications asynchrones **toutes les heures**.
 >
-> Pour obtenir un délai de réplication plus court compris entre 1 et 15 minutes, il vous faut configurer des réplications *NearSync*. Cette option n'est disponible qu'avec le pack **Nutanix Advanced** OVHcloud.
+> Pour obtenir un délai de réplication plus court compris entre 1 et 15 minutes, il vous faut configurer des réplications *NearSync*. Cette option n'est disponible qu'avec les packs **Pro** et **Ultimate** OVHcloud.
 > 
 
 ## Prérequis
@@ -170,13 +170,13 @@ Cliquez sur `Create Schedule`{.action} pour valider la planification.
 
 ![03 Create dataprotection 08](images/03-create-dataprotection08.png){.thumbnail}
 
-La tâche de réplication est créée pour fonctionner toutes les heures. Il s'agira d'une réplication asynchrone utilisable avec le pack **Nutanix Standard** OVHcloud. 
+La tâche de réplication est créée pour fonctionner toutes les heures. Il s'agira d'une réplication asynchrone utilisable avec le pack **Starter** OVHcloud.
 
 Cliquez sur `Close`{.action} pour fermer la fenêtre.
 
 > [!primary]
 > 
-> Vous pouvez modifier la planification pour réduire le risque de perte de données en cas de désastre mais la réplication va basculer du mode asynchrone au mode *NearSync* et il vous faudra alors faire évoluer votre licence vers le pack **Nutanix Advanced** OVHcloud.
+> Vous pouvez modifier la planification pour réduire le risque de perte de données en cas de désastre mais la réplication va basculer du mode asynchrone au mode *NearSync* et il vous faudra alors faire évoluer votre licence vers le pack **Pro** ou **Ultimate** OVHcloud.
 
 ![03 Create dataprotection 09](images/03-create-dataprotection09.png){.thumbnail}
 
