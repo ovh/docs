@@ -91,11 +91,9 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 
 ![Schema 1](images/io-mapping.png)
 
-
 > [!warning]
 > - The storage class will no longer be defined at the bucket creation level, but at individual object upload level.
 > - The **perf** endpoint will be maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our object storage thus we strongly encourage you to migrate to the target **io** endpoint wherever possible.
-
 
 ### Endpoint retrocompatibility
 
