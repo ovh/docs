@@ -19,7 +19,7 @@ Ce guide vous fournit les instructions pour configurer SAP logs on OVHcloud Logs
 
 ### Logs Data Platform
 
-OVHcloud Logs Data Platform est un service qui traite les logs générés par vos infrastructures et applications, dans le but de les classifier et de les afficher en temps réel dans des dashboards. Pour plus d'informations, vous pouvez vous référer à notre [documentation](/pages/manage_and_operate/observability/logs_data_platform).
+OVHcloud Logs Data Platform est un service qui traite les logs générés par vos infrastructures et applications, dans le but de les classifier et de les afficher en temps réel dans des dashboards. Pour plus d'informations, vous pouvez vous référer à notre [documentation](/products/observability-logs-data-platform).
 
 OVHcloud fournit les ressources (formatage des logs SAP, dashboards et recherches) afin d'apporter une solution complète au service OVHcloud Logs Data Platform pour vos applications SAP.
 
