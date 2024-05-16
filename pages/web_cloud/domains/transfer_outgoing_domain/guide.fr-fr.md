@@ -48,7 +48,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 > - [Les explications de l'ICANN sur les codes de statut EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (pour savoir quels codes de statut s'appliquent actuellement à votre nom de domaine, effectuez une recherche *Whois*, en utilisant de préférence le site Web du registre TLD correspondant);
 > - le site Web et l'interface de gestion de votre nouveau bureau d'enregistrement, en particulier pour les questions relatives à un processus de transfert en attente.
 >
-> De plus, le transfert d'un nom de domaine est généralement une opération payante auprès du nouveau bureau d'enregistrement choisi. Renseignez-vous sur ce point également avant de poursuivre.
+> Selon le nouveau bureau d'enregistrement que vous choisissez, le transfert d'un nom de domaine peut être une opération payante. Nous vous invitons à vous renseigner sur ce point avant de poursuivre.
 >
 
 ### Étape 1 : lever la protection contre le transfert du nom de domaine
