@@ -110,6 +110,18 @@ Podsumowanie zawiera informacje o skonfigurowanych parametrach, w tym *o ratingu
 
 Zadanie będzie gotowe za kilka minut. Możesz zmienić wszystkie parametry lub usunąć zadanie klikając na `...`{.action} w tabeli prezentacji Twojego panelu konfiguracyjnego OVHcloud.
 
+### Zmień lub usuń zaplanowane zadanie
+
+W tym celu wykonaj następujące czynności:
+
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
+3. W lewej kolumnie kliknij menu rozwijane `Hosting`{.action}.
+4. Wybierz odpowiedni hosting.
+5. Na stronie, która się wyświetli kliknij zakładkę `Więcej`{.action}, a następnie `Cron`{.action}.
+6. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie planowanego zadania.
+7. Wybierz przycisk `Zmień`{.action} lub `Usuń`{.action} w zależności od czynności, którą chcesz wykonać w odniesieniu do zaplanowanego zadania.
+
 ### Ograniczenia zaplanowanych zadań na Twoim hostingu
 
 |Funkcjonalność|Opis|
