@@ -116,7 +116,7 @@ Pour cela, effectuez les actions suivantes :
 4. Sélectionnez l'hébergement web concerné.
 5. Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis sur `Cron`{.action}.
 6. Dans le tableau qui apparaît, appuyez sur le bouton `...`{.action} situé à droite de la tâche planifiée concernée.
-7. Choisissez parmi les boutons `Modifier`{.action} ou `Supprimer`{.action} en fonction de l'action que vous osuhaitez réaliser sur la tâche planifiée.
+7. Choisissez parmi les boutons `Modifier`{.action} ou `Supprimer`{.action} en fonction de l'action que vous souhaitez réaliser sur la tâche planifiée.
 
 ### Limitations des tâches planifiées sur votre hébergement Web
 
