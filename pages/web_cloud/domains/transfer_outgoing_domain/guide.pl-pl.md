@@ -52,6 +52,8 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 > - [Wyjaśnienia ICANN dotyczące kodów statusu EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (aby dowiedzieć się, które kody statusu mają obecnie zastosowanie do Twojej domeny, należy przeszukać *Whois*, najlepiej korzystając ze strony internetowej odpowiedniego rejestru TLD);
 > - Twoja strona WWW oraz interfejs zarządzania nowym operatorem, zwłaszcza w przypadku pytań dotyczących procesu transferu oczekującego na połączenie.
 >
+> W zależności od tego, który nowy operator wybrałeś, transfer domeny może być operacją płatną. Przed kolejnymi krokami sprawdź, czy spełnione są te warunki.
+>
 
 ### Etap 1: wyłączenie ochrony przed transferem domeny
 
