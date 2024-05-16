@@ -1,7 +1,7 @@
 ---
 title: Creating an OVHcloud DNS zone for a domain name
 excerpt: Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel
-updated: 2024-05-15
+updated: 2024-05-16
 ---
 
 ## Objective
@@ -110,7 +110,7 @@ Once you have the information, **edit your domain name’s DNS servers in the in
 
 > [!success]
 >
-> If you would like to customize the names of the DNS servers associated with your domain name’s active DNS zone, please read our guide on "[Customizing a domain name’s DNS servers (Glue Records)](/pages/web_cloud/domains/glue_registry)".
+> If you would like to customise the names of the DNS servers associated with your domain name’s active DNS zone, please read our guide "[Customising a domain name’s DNS servers (Glue Records)](/pages/web_cloud/domains/glue_registry)".
 >
 
 ## Go further
