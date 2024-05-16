@@ -6,9 +6,9 @@ updated: 2024-05-16
 
 # Table des matières
 1. [Objectif](#Objectif)
-2. [Prérequis](#Prérequis)
+2. [Prérequis pour commencer](#Prérequis)
 3. [Instruction](#Instruction)
-4. [Liste des guides IAM avec VMware](#Fin)
+4. [FIN - Liste des guides IAM avec VMware](#Fin)
 5. [Aller plus loin](#Allerplusloin)
 
 ---

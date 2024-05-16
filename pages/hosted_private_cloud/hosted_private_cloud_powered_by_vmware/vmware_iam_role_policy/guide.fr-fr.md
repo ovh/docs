@@ -6,8 +6,10 @@ updated: 2024-05-24
 
 # Table des matières
 1. [Objectif - Liens des guides IAM](#Objectif)
-2. [Prérequis](#Prérequis)
-3. [Instruction](#Instruction)
+2. [Prérequis pour commencer](#Prérequis)
+3. [Etape 1 - Créer une politique (optionnel)](#Instruction)
+4. [Etape 2 - Modifier une politique](#Etape2)
+5. [Etape 3 - Ajouter un rôle à une politique](#Etape3)
 4. [A suivre - Comment associer un utilisateur à une politique](#A suivre)
 5. [Fin - Aller plus loin](#Aller plus loin)
 
@@ -25,7 +27,9 @@ updated: 2024-05-24
 
 ## Instruction
 
-## Etape 1 : Créer une politique ? (optionnel)
+## Etape 1
+
+### Créer une politique ? (optionnel)
 
 ### Accéder à IAM 
 
@@ -47,7 +51,9 @@ Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 
 3. Pour finir, Cliquer sur `CREER UNE POLITIQUE`{.action}
 
-## Etape 2 : Modifier une politique
+## Etape 2
+
+### Modifier une politique
 
 1. Pour accéder au service IAM, suivez les indications de la capture suivante : `SUPPORT STANDARD > IDENTITES ET ACCES (IAM)`{.action}
 

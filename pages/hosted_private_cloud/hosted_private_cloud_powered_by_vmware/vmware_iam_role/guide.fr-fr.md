@@ -6,10 +6,10 @@ updated: 2024-05-24
 
 # Table des matières
 1. [Objectif](#Objectif)
-2. [Prérequis](#Prérequis)
+2. [Prérequis pour commencer](#Prérequis)
 3. [Instruction - Comment créer un rôle](#Instruction)
 4. [A suivre - Les politiques](#Asuivre)
-6. [Fin - Aller plus loin](#Aller plus loin)
+6. [Aller plus loin](#Aller plus loin)
 
 ---
 ## Objectif

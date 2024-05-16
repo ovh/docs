@@ -6,8 +6,8 @@ updated: 2024-05-24
 
 # Table des matières
 1. [Objectif](#Objectif)
-2. [Prérequis](#Prérequis)
-3. [Instruction - Comment activer IAM](#Instruction)
+2. [Prérequis pour commencer](#Prérequis)
+3. [Instruction - Activer IAM](#Instruction)
 4. [A suivre - Comment créer un rôle IAM Vsphere](#Asuivre)
 5. [Aller plus loin](#Aller plus loin)
 
