@@ -1844,6 +1844,7 @@
             + [Backing up a Bare Metal Linux Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux)
             + [Backing Up a Bare Metal Windows Server Using Veeam Agent for Windows](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent)
             + [Restoring a Bare Metal Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore)
+            + [VMware Cloud Director - VEEAM Plugin](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
 + Network
     + [Bring your own IP (BYOIP)](network-byoip)
         + [How to use the Bring Your Own IP feature](network/bring_your_own_ip/bring-your-own-IP)
