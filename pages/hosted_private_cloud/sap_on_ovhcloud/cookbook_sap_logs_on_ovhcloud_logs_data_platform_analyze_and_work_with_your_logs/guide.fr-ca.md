@@ -22,7 +22,7 @@ details[open]>summary::before {
 
 Ce guide a pour but de vous accompagner dans la récupération et l'exploitation de vos logs SAP avec SAP logs on OVHcloud Logs Data Platform.
 
-Si vous n'avez pas encore configuré la fonctionnalité SAP logs on OVHcloud Logs Data Platform, veuillez suivre notre guide [SAP logs on OVHcloud Logs Data Platform - Configuration](ges/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup).
+Si vous n'avez pas encore configuré la fonctionnalité SAP logs on OVHcloud Logs Data Platform, veuillez suivre notre guide [SAP logs on OVHcloud Logs Data Platform - Configuration](pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup).
 
 ## Prérequis
 
@@ -119,7 +119,7 @@ L’API OVHcloud disponible sur [api.ovh.com](https://ca.api.ovh.com/console-pre
 
 ## Aller plus loin
 
-- [Archiving your logs - Cold-storage](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage/guide.en-gb.md)
+- [Archiving your logs - Cold-storage](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage)
 - [Logs Data Platform - Archive mirror](https://github.com/ovh/ldp-archive-mirror)
 - [SAP logs on OVHcloud Logs Data Platform - Index des logs SAP](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_index_of_sap_logs)
 
