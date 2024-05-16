@@ -1,7 +1,7 @@
 ---
 title: "Iniziare a utilizzare un server dedicato"
 excerpt: "Come gestire un server dedicato nello Spazio Cliente e come iniziare a utilizzare la configurazione e la protezione di un server"
-updated: 2024-04-10
+updated: 2024-05-15
 ---
 
 > [!primary]
@@ -77,6 +77,15 @@ Se è necessario modificare lo schema di partizione del sistema operativo, spunt
 ![Personalizzare la configurazione delle partizioni](images/reinstalling-your-server-04.png){.thumbnail}
 
 Questo step permette di configurare il tipo di RAID e il partizionamento, nei limiti dell'hardware e del sistema operativo.
+
+> [!warning]
+>
+> Se il tuo server è dotato di Soft RAID, il nostro sistema darà la priorità all'installazione del sistema operativo utilizzando tutti i tuoi dischi. Questa tecnologia è chiamata RAID 1. RAID 1 (disk mirroring) è la replica di dati su due o più dischi. In questo modo, tutti i dischi vengono montati automaticamente durante la procedura di installazione. Ciò significa anche che l'accesso allo storage avviene su un solo disco e che gli altri dischi vengono utilizzati per la replica dei dati, assicurando la ridondanza in caso di guasto del disco.
+>
+
+Se non si desidera utilizzare tutti i dischi per l'installazione, è possibile aggiornarla dopo aver selezionato la casella "Personalizza la configurazione delle partizioni". In questo caso, sarai responsabile del montaggio degli altri dischi nel sistema operativo. Per informazioni su come procedere, consultare la documentazione del sistema operativo.
+
+![select disks](images/choosedisk.png){.thumbnail}
 
 Una volta terminati gli adeguamenti, clicca su `Seguente`{.action} per accedere alla pagina di riepilogo.
 
