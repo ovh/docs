@@ -1,6 +1,6 @@
 ---
 title: "Add access to NSX-T web console for a hosted private OVHcloud user"
-excerpt: "Access NSX-T console for a user"
+excerpt: "How to access NSX-T Web Console"
 updated: 2024-05-16
 ---
 <style>
