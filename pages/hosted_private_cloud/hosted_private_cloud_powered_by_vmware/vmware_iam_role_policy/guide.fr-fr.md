@@ -14,7 +14,7 @@ updated: 2024-05-24
 ---
 ## Objectif
 
-**Dans ce guide, nous allons vous expliquer comment associer un rôle IAM Vsphere à une politique globale**
+**Dans ce guide, nous allons vous expliquer comment créer une politique globale et ajouter un rôle Vsphere**
 
 ## Prérequis
 
