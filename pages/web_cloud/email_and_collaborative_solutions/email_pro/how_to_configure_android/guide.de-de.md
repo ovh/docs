@@ -15,7 +15,7 @@ updated: 2024-03-15
 
 ## Ziel
 
-E-Mail-Adressen aus dem E-Mail Pro Angebot  können auf allen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Versand und Empfang Ihrer E-Mails verwenden.
+E-Mail-Accounts aus dem E-Mail Pro Angebot können auf allen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Versand und Empfang Ihrer E-Mails verwenden.
 
 **Diese Anleitung erklärt, wie Sie einen E-Mail Pro Account in Android über die Gmail-App einrichten.**
 
