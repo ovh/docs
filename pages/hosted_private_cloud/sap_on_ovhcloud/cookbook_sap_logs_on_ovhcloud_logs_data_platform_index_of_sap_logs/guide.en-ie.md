@@ -51,15 +51,15 @@ If you haven't configured your OVHcloud Logs Data Platform service, please take 
 | nameserver_alert    | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/nameserver_alert_<HOSTNAME\>.trc | |
 | preprocessor_alert  | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/preprocessor_alert_<HOSTNAME\>.trc | |
 | compileserver_alert | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/compileserver_alert_<HOSTNAME\>.trc | |
-| backup_tenant       | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT>/backup.log | |
-| backint_tenant      | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT>/backint.log | |
-| indexserver         | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT>/indexserver_<HOSTNAME\>.3<INSTANCE_NUMBER\>03.\*.trc                     | |
-| indexserver_loads   | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT>/indexserver_<HOSTNAME\>.3<INSTANCE_NUMBER\>03.loads.\*.trc               | |
-| indexserver_executed_statements | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT>/indexserver_<HOSTNAME\>.3<INSTANCE_NUMBER\>03.executed_statements.\*.trc | |
-| indexserver_unloads | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT>/indexserver_<HOSTNAME\>.3<INSTANCE_NUMBER\>03.unloads.\*.trc             | |
-| xsengine_tenant     | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT>/xsengine_<HOSTNAME\>.\*.\*.trc | |
-| indexserver_alert_tenant | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT>/indexserver_alert_<HOSTNAME\>.trc | |
-| xsengine_alert_tenant    | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT>/xsengine_alert_<HOSTNAME\>.trc | |
+| backup_tenant       | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT\>/backup.log | |
+| backint_tenant      | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT\>/backint.log | |
+| indexserver         | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT\>/indexserver_<HOSTNAME\>.3<INSTANCE_NUMBER\>03.\*.trc                     | |
+| indexserver_loads   | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT\>/indexserver_<HOSTNAME\>.3<INSTANCE_NUMBER\>03.loads.\*.trc               | |
+| indexserver_executed_statements | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT\>/indexserver_<HOSTNAME\>.3<INSTANCE_NUMBER\>03.executed_statements.\*.trc | |
+| indexserver_unloads | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT\>/indexserver_<HOSTNAME\>.3<INSTANCE_NUMBER\>03.unloads.\*.trc             | |
+| xsengine_tenant     | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT\>/xsengine_<HOSTNAME\>.\*.\*.trc | |
+| indexserver_alert_tenant | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT\>/indexserver_alert_<HOSTNAME\>.trc | |
+| xsengine_alert_tenant    | /hana/shared/<HANA_SID\>/HDB<INSTANCE_NUMBER\>/<HOSTNAME\>/trace/DB_<HANA_TENANT\>/xsengine_alert_<HOSTNAME\>.trc | |
 | dev_rout            | /usr/sap/saprouter/dev_rout | |
 | dev_webdisp         | /usr/sap/<SAP_SID\>/W<INSTANCE_NUMBER\>/work/dev_webdisp | |
 | security_audit_abap | /usr/sap/<SAP_SID\>/D<INSTANCE_NUMBER\>/log/sec/audit_<date\> | SLGFTYP, AREA, SUBID, DATE, TIME, DUMMY, UNIXPID, TASKTNO, SLGTTYP, SLGLTRM, SLGUSER, SLGTC, SLGREPNA, SLGMAND, SLGMODE, SLGDATA, SLGLTRM2, SLGDATA_VAR_A, SLGDATA_VAR_B, SLGDATA_VAR_C, SLGDATA_VAR_D, Class, Severity, Details |
