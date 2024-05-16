@@ -6,10 +6,10 @@ updated: 2024-05-24
 
 # Table des matières
 1. [Objectif - Liens des guides IAM avec VMware](#Objectif)
-2. [Etape 1 - En pratique](#En pratique)
+2. [Etape 1 - En pratique](#Enpratique)
 3. [Etape 2 - FAQ](#FAQ)
-4. [A suivre](#A suivre)
-5. [Fin - Aller plus loin](#Aller plus loin)
+4. [A suivre](#Asuivre)
+5. [Fin - Aller plus loin](#Allerplusloin)
 
 ---
 ## Objectif
@@ -24,7 +24,7 @@ Pour utiliser IAM dans votre cloud privé, il va faut :
 
 - [x] Activer IAM.
 
-- [x] Créer une politique IAM globale.
+- [x] Créer une politique IAM globale liée à mon identité OVHcloud.
 
 Des étapes supplémentaires sont nécessaires, nous allons les détailler dans la suite de ce guide.
 
@@ -44,7 +44,7 @@ Voici les éléments nécessaires à une politique globale :
 - Actions : **Groupes de permissions, Ajoutées manuellement -> Rôle Vsphere/IAM**
 - Utilisateurs : **Utilisateur 1/2/3**
 
-Voir les diagrammes du fonctionnement de IAM avec un cloud privé :
+Voir le diagramme du fonctionnement de IAM avec un cloud privé OVHcloud :
 
 ![Schema IAM](images/iam_schema.png){.thumbnail}
 
@@ -60,9 +60,9 @@ IAM est actuellement dans une version BETA sur la plateforme OVHcloud, les infra
 
 Un role IAM ne peut qu'uniquement être ajouté manuellement dans une politique (action : assumrole -> role_iam), vous pouvez suivre le guide [Comment créer un rôle IAM das Vsphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role) pour la solution.
 
-## Est ce que je peux activer IAM facilement ?
+## Est-ce que je peux activer IAM facilement ?
 
-Oui je peux activer IAM en cliquant sur un seul bouton depuis mon cloud privé VMware (voir guide : [Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)).
+Oui, je peux activer IAM en cliquant sur un seul bouton depuis mon cloud privé VMware (voir guide : [Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)).
 
 ## Comment sont gérés les utilisateurs d'IAM avec Vsphere ?
 
@@ -80,13 +80,13 @@ Oui, lorsque IAM est activé vous avez la possibilité de choisir entre IAM et u
 
 La gestion des **Identités associées**, des **Ressources**, **Groupes de ressources** et leurs autorisations dans les politiques s'effectue depuis [l'espace client](https://www.ovh.com/manager/#/dedicated/useraccount/dashboard) OVHcloud dans **Mon Profil (Support standard) > Identités et accès (IAM)**. Alors que les rôles IAM et les utilisateurs Vsphere locaux s'effectue depuis la section **Hosted Private Cloud > VMware > PCC-XX > Utilisateurs/Rôles (IAM-OVHcloud)**.
 
-## Y-aura t'il une gestion avancé des roles modifiés à l'avenir ?
+## Y-aura t'il une gestion avancée des roles modifiés à l'avenir ?
 
 Oui, la version suivante de IAM permettra d'aller plus loin dans la gestion des droits avec les roles IAM modifiés.
 
 ## Est-ce que je peux ajouter un rôle automatiquement à une politique IAM ?
 
-Non il n'est pas possible à ce jour d'ajouter un rôle grâce aux groupes de permissions managées automatique.
+Non, il n'est pas possible à ce jour d'ajouter un rôle grâce aux groupes de permissions managées automatique.
 
 ## Que représente un rôle IAM Vsphere dans une politique ?
 
