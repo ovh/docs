@@ -1,7 +1,7 @@
 ---
 title: "Criar uma base de dados num alojamento web"
 excerpt: "Saiba como criar uma base de dados no seu alojamento web OVHcloud"
-updated: 2023-12-15
+updated: 2024-05-16
 ---
 
 > [!primary]
@@ -115,6 +115,11 @@ Agora pode utilizar a sua base de dados. Para isso, precisará das suas informa�
 - o *nome de utilizador* e o *palavra-passe* por si definidos,
 - o *nome da base de dados* que indicou,
 - o *endereço do servidor*.
+
+> [!primary]
+>
+> Se lhe for pedido e qualquer que seja a base de dados [Start SQL](/links/web/hosting-options-startsql) adicionada ou incluída no seu alojamento web OVHcloud, o número de **port** a utilizar é o **3306**.
+>
 
 Estas informações são essenciais para que o seu website possa ligar-se à base de dados.
 

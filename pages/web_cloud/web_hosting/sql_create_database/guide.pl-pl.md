@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie bazy danych na hostingu"
 excerpt: "Dowiedz się, jak utworzyć bazę danych na hostingu OVHcloud"
-updated: 2023-12-15
+updated: 2024-05-16
 ---
 
 > [!primary]
@@ -115,6 +115,11 @@ Teraz możesz korzystać z bazy danych. W tym celu potrzebujesz danych do logowa
 - *nazwa użytkownika* i *hasło*, które ustawiłeś,
 - *nazwa bazy danych*, którą wskazałeś,
 - *adres serwera*.
+
+> [!primary]
+>
+> Jeśli jest wymagane i niezależnie od bazy danych [Start SQL](/links/web/hosting-options-startsql) dodanej lub zawartej w hostingu OVHcloud, należy używać port **3306**.
+>
 
 Informacje te są niezbędne, aby Twoja strona WWW mogła połączyć się z bazą danych.
 

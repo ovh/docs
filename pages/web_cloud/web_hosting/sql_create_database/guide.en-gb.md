@@ -1,7 +1,7 @@
 ---
 title: "Creating a database on your web hosting plan"
 excerpt: "Find out how to create a database on your OVHcloud web hosting plan"
-updated: 2023-12-15
+updated: 2024-05-16
 ---
 
 ## Objective
@@ -111,6 +111,11 @@ You can now use your database. To do this, you will need your login details:
 - The *username* and *password* you have set
 - The *name of the database* you have entered
 - The *server address*
+
+> [!primary]
+>
+> If you are asked to enter the database port, regardless of which [Start SQL](/links/web/hosting-options-startsql) database is used by your OVHcloud web hosting plan, the **port** number to use is **3306**.
+>
 
 This information is essential for your website to connect to the database.
 
