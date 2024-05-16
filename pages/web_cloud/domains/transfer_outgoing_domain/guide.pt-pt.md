@@ -52,6 +52,8 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 > - [Explicações do ICANN sobre os códigos de estado EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (para saber que códigos de estado se aplicam atualmente ao seu nome de domínio, efetue uma pesquisa *Whois*, utilizando de preferência o website do registo TLD correspondente);
 > - o website e a interface de gestão do seu novo agente de registo, especialmente para as questões relativas a um processo de transferência pendente.
 >
+> Consoante o novo agente de registo que escolher, a transferência de um domínio pode ser uma operação paga. Sugerimos que o informe antes de avançar.
+>
 
 ### Etapa 1: eliminar a proteção contra a transferência do nome de domínio
 
