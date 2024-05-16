@@ -1,5 +1,5 @@
 ---
-title: Update your cluster flavor
+title: Public Cloud Databases - Comment mettre à jour votre flavor de service (EN)
 excerpt: Find out how to adjust the flavor of your cluster
 updated: 2023-07-10
 ---

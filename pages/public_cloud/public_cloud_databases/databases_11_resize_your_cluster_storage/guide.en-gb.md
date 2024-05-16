@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - How to resize your service storage
 excerpt: Find out how to adjust the storage space of your cluster
-updated: 2024-05-15
+updated: 2023-09-18
 ---
 
 ## Objective
