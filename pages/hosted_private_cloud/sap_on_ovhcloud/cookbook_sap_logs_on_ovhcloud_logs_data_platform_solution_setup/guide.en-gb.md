@@ -4,6 +4,7 @@ title: "SAP logs on OVHcloud Logs Data Platform - Solution Setup"
 <<<<<<< HEAD
 excerpt: "This guide provides instructions for configuring your SAP logs on OVHcloud Logs Data Platform"
 <<<<<<< HEAD
+<<<<<<< HEAD
 updated: 2024-03-30
 flag: hidden
 =======
@@ -20,6 +21,9 @@ updated: 2024-04-23
 =======
 updated: 2024-04-24
 >>>>>>> 8a8d98b6f3 (update date)
+=======
+updated: 2024-05-16
+>>>>>>> ae721d62e6 (Date update before production)
 ---
 
 ## Objective

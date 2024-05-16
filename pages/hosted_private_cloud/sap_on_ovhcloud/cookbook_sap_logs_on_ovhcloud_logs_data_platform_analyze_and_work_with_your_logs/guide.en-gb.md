@@ -14,12 +14,16 @@ excerpt: "This guide is designed to assist you in retrieving and exploiting your
 =======
 excerpt: "This guide is designed to assist you in retrieving and exploiting your SAP logs on the OVHcloud Logs Data Platform feature"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8d8de4fb45 (SAP logs on LDP)
 updated: 2024-04-10
 >>>>>>> 52a51e141e (feat: added docs for the new feature SAP logs on OVHcloud Logs Data Platform)
 =======
 updated: 2024-04-24
 >>>>>>> 8a8d98b6f3 (update date)
+=======
+updated: 2024-05-16
+>>>>>>> ae721d62e6 (Date update before production)
 ---
 
 <style>

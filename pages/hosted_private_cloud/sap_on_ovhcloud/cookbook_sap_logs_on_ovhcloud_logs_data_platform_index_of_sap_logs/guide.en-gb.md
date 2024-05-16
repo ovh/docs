@@ -18,9 +18,13 @@ updated: 2024-04-10
 excerpt: "This guide is designed to help you retrieve the fields from your SAP logs to perform searches in your logs."
 =======
 excerpt: "This guide is designed to help you retrieve the fields from your SAP logs to perform searches in your logs"
+<<<<<<< HEAD
 >>>>>>> ba7ef147c9 (EN proofduplo)
 updated: 2024-04-24
 >>>>>>> 8d8de4fb45 (SAP logs on LDP)
+=======
+updated: 2024-05-16
+>>>>>>> ae721d62e6 (Date update before production)
 ---
 
 ## Objective

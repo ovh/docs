@@ -1,7 +1,7 @@
 ---
 title: "SAP logs on OVHcloud Logs Data Platform - Analyze and work with your logs"
 excerpt: "This guide is designed to assist you in retrieving and exploiting your SAP logs on the OVHcloud Logs Data Platform feature"
-updated: 2024-04-24
+updated: 2024-05-16
 ---
 
 <style>
