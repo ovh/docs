@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un serveur dédié"
 excerpt: "Découvrez comment gérer un serveur dédié dans votre espace client OVHcloud et comment démarrer avec la configuration et la sécurisation d'un serveur"
-updated: 2024-04-10
+updated: 2024-05-15
 ---
 
 ## Objectif
@@ -73,6 +73,15 @@ Si vous devez modifier le schéma de partitionnement de votre système d'exploit
 ![Personnaliser la configuration des partitions](images/reinstalling-your-server-04.png){.thumbnail}
 
 Cette étape vous permet de configurer le type de RAID ainsi que le partitionnement, dans les limites du matériel et du système d'exploitation.
+
+> [!warning]
+>
+> Si votre serveur est équipé de Soft RAID, notre système donnera la priorité à l'installation du système d'exploitation en utilisant tous vos disques. Cette technologie est appelée RAID 1. RAID 1 (disk mirroring) est la réplication de données sur deux disques ou plus. Avec ce procédé, tous les disques sont automatiquement montés lors de la procédure d'installation. Cela signifie également que vous n'aurez accès au stockage que sur un seul disque, le ou les autres disques étant utilisés pour la réplication des données, ce qui assure la redondance en cas de défaillance d'un disque.
+>
+
+Si vous ne souhaitez pas utiliser tous vos disques pour l'installation, vous pouvez la mettre à jour après avoir coché la case "Personnaliser la configuration de la partition". Dans ce cas, vous serez responsable du montage des autres disques dans le système d'exploitation. Vous devez vous référer à la documentation du système d'exploitation pour savoir comment procéder.
+
+![select disks](images/choosedisk.png){.thumbnail}
 
 Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder à la page de résumé.
 
