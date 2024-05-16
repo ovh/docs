@@ -1,7 +1,7 @@
 ---
 title: 'Editar una zona DNS de OVHcloud'
 excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVHcloud'
-updated: 2022-07-07
+updated: 2024-04-12
 ---
 
 > [!primary]
@@ -74,105 +74,140 @@ Conocer los distintos tipos de registros le permitirá entender mejor los cambio
 
 #### Registros de punteo
 
-- **A** (**A**ddress): Conecta un dominio a una dirección IPv4 `X.X.X` (donde las `X` son cifras entre `0` y `255`). Por ejemplo, la dirección IPv4 del servidor en el que está alojado el sitio web.
+Seleccione el registro que desee haciendo clic en cada una de las fichas siguientes.
 
-- **AAAA** (4 letras **A**, ya que este registro está codificado en cuatro veces más bits que el puntero **A** histórico): Conecta un dominio a una dirección IPv6. Por ejemplo, la dirección IPv6 del servidor en el que está alojado el sitio web.
-
-> [!primary]
-> 
-> Las direcciones IPv6 se están desplegando progresivamente para paliar la falta de direcciones IPv4 debido a la continua expansión de los usos digitales. La codificación en 128 bits de las direcciones IPv6 permite ofrecer un mayor número de direcciones IP.
->
-> No obstante, si su servidor ya dispone de una IPv4, le recomendamos que dé prioridad al uso de la IPv6.<br>
-> En efecto, las IPv6 todavía no se han interpretado correctamente en toda la red de internet, lo que puede provocar perturbaciones de visualización o de acceso.
->
-
-<a name="cname"></a>
-
-- **CNAME** (**C**anonical **NAME**): Utiliza la dirección IP de otro dominio creando un enlace llamado alias. Por ejemplo, si *www.mydomain.ovh* es un alias de *mydomain.ovh*, significa que *www.mydomain.ovh* utilizará la dirección IP de *mydomain.ovh*.
-
-> [!alert]
->
-> Un registro TXT que utilice el mismo dominio o subdominio que un registro CNAME perturba el funcionamiento de este último. El registro CNAME solo funcionará parcialmente o en absoluto.
-> 
-
-> [!warning]
->
-> Por convenio, los registros CNAME no pueden ser utilizados directamente por un dominio en su propia zona DNS. En efecto, solo el dominio debe apuntar obligatoriamente y directamente a una dirección IP con un registro de tipo A (o AAAA si se trata de una IPv6).
-> 
-> Para seguir el ejemplo anterior, no podrá crear un registro CNAME para el dominio *mydomain.ovh* en la zona DNS que haya creado para este dominio.
-> No obstante, podrá crear registros CNAME con todos los subdominios (ejemplos: *subdomain.mydomain.ovh* o *www.mydomain.ovh*) del dominio *mydomain.ovh* en la zona DNS creada para *mydomain.ovh*.
->
-> Si quiere profundizar más técnicamente en este asunto, puede encontrar, al final de esta página, [un caso especial de uso relativo a los CNAME y las zonas DNS creadas para subdominios](#techusecase).
->
-
-- **DNAME** (**D**elegation **NAME**): Permite generar un "alias" para todos los subdominios de un dominio. Este registro evita crear multitud de registros CNAME. De hecho, un registro CNAME redirige independientemente de un solo subdominio a un único destino.
-
-Ejemplo: creando un registro DNAME de *mydomain.ovh* a *ovh.com*, todos los subdominios de *mydomain.ovh* (como *dname.mydomain.ovh* y *xxx.mydomain.ovh*) se redirigirán a los subdominios de *ovh.com* (como: *dname.ovh.com* y *xxx.ovh.com*).
-
-Dicho de otro modo, el registro DNAME indica que *dname.mydomain.ovh* y *xxx.mydomain.ovh* deben mostrar los resultados de *dname.ovh.com* y *xxx.ovh.com*, respectivamente.
-
-> [!warning]
-> 
-> En cambio, *mydomain.ovh* como dominio no mostrará el destino del dominio *ovh.com*, ya que el registro DNAME solo es válido para los subdominios de los dominios definidos en el registro DNAME.
->
-> Además, si el subdominio objetivo *xxx.ovh.com* no apunta a ninguna parte, el registro DNAME tampoco mostrará nada para *xxx.mydomain.ovh*.
-> 
-
-> [!success]
-> 
-> El registro DNAME suele utilizarse para cambiar el nombre de la empresa. También puede configurarse cuando un usuario dispone de varias extensiones de dominios (.es, .net, .com, .info...) para redirigirlos entre sí fácilmente.
->
-
-- **NS** (**N**ame **S**erver): Define los servidores DNS asociados a su zona DNS. Por ejemplo, si los registros NS de su zona DNS muestran los servidores *dns19.ovh.net* y *ns19.ovh.net*, deberá utilizarlos en la pestaña `Servidores DNS`{.action} del área de cliente de OVHcloud. Para más información, consulte nuestra guía [Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
-
-> [!warning]
->
-> Utilice el botón `Cambiar los registros NS de la zona DNS a los servidores DNS externos a OVHcloud en modo de texto`{.action}. Esta zona DNS funciona **únicamente** con servidores DNS de OVHcloud.
->
+> [!tabs]
+> **A**
+>> **A**ddress <br><br>
+>> Conecta un dominio a una dirección IPv4 `X.X.X` (donde las `X` son cifras entre `0` y `255`). Por ejemplo, la dirección IPv4 del servidor en el que está alojado el sitio web.
+>>
+> **AAAA** 
+>> 4 letras **A**, ya que este registro está codificado en cuatro veces más bits que el puntero **A** histórico<br><br>
+>> Conecta un dominio a una dirección IPv6. Por ejemplo, la dirección IPv6 del servidor en el que está alojado el sitio web.
+>>
+>> > [!primary]
+>>
+>> > Las direcciones IPv6 se están desplegando progresivamente para paliar la falta de direcciones IPv4 debido a la continua expansión de los usos digitales. La codificación en 128 bits de las direcciones IPv6 permite ofrecer un mayor número de direcciones IP.
+>> >
+>> > No obstante, si su servidor ya dispone de una IPv4, le recomendamos que dé prioridad al uso de la IPv6.<br>
+>> > En efecto, las IPv6 todavía no se han interpretado correctamente en toda la red de internet, lo que puede provocar perturbaciones de visualización o de acceso.
+>> >
+>>
+> **CNAME**
+>> **C**anonical **NAME** <br><br>
+>> Utiliza la dirección IP de otro dominio creando un enlace llamado alias. Por ejemplo, si *www.mydomain.ovh* es un alias de *mydomain.ovh*, significa que *www.mydomain.ovh* utilizará la dirección IP de *mydomain.ovh*.
+>>
+>> > [!alert]
+>> >
+>> > Un registro TXT que utilice el mismo dominio o subdominio que un registro CNAME perturba el funcionamiento de este último. El registro CNAME solo funcionará parcialmente o en absoluto.
+>> >
+>>
+>> > [!warning]
+>> >
+>> > Por convenio, los registros CNAME no pueden ser utilizados directamente por un dominio en su propia zona DNS. En efecto, solo el dominio debe apuntar obligatoriamente y directamente a una dirección IP con un registro de tipo A (o AAAA si se trata de una IPv6).
+>> >
+>> > Para seguir el ejemplo anterior, no podrá crear un registro CNAME para el dominio *mydomain.ovh* en la zona DNS que haya creado para este dominio.
+>> > No obstante, podrá crear registros CNAME con todos los subdominios (ejemplos: *subdomain.mydomain.ovh* o *www.mydomain.ovh*) del dominio *mydomain.ovh* en la zona DNS creada para *mydomain.ovh*.
+>> >
+>> > Si quiere profundizar más técnicamente en este asunto, puede encontrar, al final de esta página, [un caso especial de uso relativo a los CNAME y las zonas DNS creadas para subdominios](#techusecase).
+>> >
+>>
+> **DNAME**
+>> **D**elegation **NAME** <br><br>
+>> Permite generar un "alias" para todos los subdominios de un dominio. Este registro evita crear multitud de registros CNAME. De hecho, un registro CNAME redirige independientemente de un solo subdominio a un único destino.
+>>
+>> Ejemplo: creando un registro DNAME de *mydomain.ovh* a *ovh.com*, todos los subdominios de *mydomain.ovh* (como *dname.mydomain.ovh* y *xxx.mydomain.ovh*) se redirigirán a los subdominios de *ovh.com* (como: *dname.ovh.com* y *xxx.ovh.com*).
+>>
+>> Dicho de otro modo, el registro DNAME indica que *dname.mydomain.ovh* y *xxx.mydomain.ovh* deben mostrar los resultados de *dname.ovh.com* y *xxx.ovh.com*, respectivamente.
+>>
+>> > [!warning]
+>> > 
+>> > En cambio, *mydomain.ovh* como dominio no mostrará el destino del dominio *ovh.com*, ya que el registro DNAME solo es válido para los subdominios de los dominios definidos en el registro DNAME.
+>> >
+>> > Además, si el subdominio objetivo *xxx.ovh.com* no apunta a ninguna parte, el registro DNAME tampoco mostrará nada para *xxx.mydomain.ovh*.
+>> > 
+>>
+>> > [!success]
+>> > 
+>> > El registro DNAME suele utilizarse para cambiar el nombre de la empresa. También puede configurarse cuando un usuario dispone de varias extensiones de dominios (.es, .net, .com, .info...) para redirigirlos entre sí fácilmente.
+>> >
+> **NS**
+>> **N**ame **S**erver<br><br>
+>> Define los servidores DNS asociados a su zona DNS. Por ejemplo, si los registros NS de su zona DNS muestran los servidores *dns19.ovh.net* y *ns19.ovh.net*, deberá utilizarlos en la pestaña `Servidores DNS`{.action} del área de cliente de OVHcloud. Para más información, consulte nuestra guía [Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
+>>
+>> > [!warning]
+>> >
+>> > Utilice el botón `Cambiar los registros NS de la zona DNS a los servidores DNS externos a OVHcloud en modo de texto`{.action}. Esta zona DNS funciona **únicamente** con servidores DNS de OVHcloud.
+>> >
 
 #### Registros de correo
 
-- **MX** (**M**ail e**X**changer): Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.net* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](/pages/web_cloud/domains/dns_zone_mx).
+Seleccione el registro que desee haciendo clic en cada una de las fichas siguientes.
 
-> [!warning]
->
-> En general, le recomendamos que utilice solo uno o más servidores de un mismo proveedor de correo en su zona DNS.
-> De hecho, si ya tiene servicios de correo con otro proveedor de correo y añade al mismo tiempo (sin sustituir) los servidores de correo de su nuevo proveedor de correo, puede recibir mensajes de correo al azar en uno de sus dos proveedores.
-> 
-
-- **SPF** (**S**ender **P**olicy **F**ramework): Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (*spoofing*). Por ejemplo, el registro `v=spf1 include:mx.ovh.com ~all` indica que solo los servidores de envío asociados a su solución de correo de OVHcloud pueden considerarse legítimos por el servidor de recepción. Puede introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática. Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf).
-
-- **DKIM** (**D**omain**K**eys **I**dentified **M**ail): Permite verificar la autenticidad del nombre de dominio del remitente y garantizar la integridad del mensaje de correo electrónico enviado. El registro DKIM se presenta como una clave de varios caracteres. La clave DKIM la proporciona su proveedor de correo electrónico (si esta funcionalidad la ofrece este último). Puede introducirla en forma de registro TXT.
-
-- **DMARC** (**D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance): Contribuye a la autenticación del correo en combinación con los métodos SPF y/o DKIM. Este valor le será dado por su proveedor de correo electrónico (si esta funcionalidad la ofrece este último), estará al menos asociado a un registro SPF o DKIM.
+> [!tabs]
+> **MX**
+>> **M**ail e**X**changer <br><br>  Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.net* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](/pages/web_cloud/domains/dns_zone_mx).
+>>
+>> > [!warning]
+>> >
+>> > En general, le recomendamos que utilice solo uno o más servidores de un mismo proveedor de correo en su zona DNS.
+>> > De hecho, si ya tiene servicios de correo con otro proveedor de correo y añade al mismo tiempo (sin sustituir) los servidores de correo de su nuevo proveedor de correo, puede recibir mensajes de correo al azar en uno de sus dos proveedores.
+>> > 
+> **SPF**
+>> **S**ender **P**olicy **F**ramework <br><br> Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (*spoofing*). Por ejemplo, el registro `v=spf1 include:mx.ovh.com ~all` indica que solo los servidores de envío asociados a su solución de correo de OVHcloud pueden considerarse legítimos por el servidor de recepción. Puede introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática. Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf).
+>>
+> **DKIM**
+>> **D**omain**K**eys **I**dentified **M**ail <br><br>
+>> Permite verificar la autenticidad del nombre de dominio del remitente y garantizar la integridad del mensaje de correo electrónico enviado. El registro DKIM se presenta como una clave de varios caracteres. La clave DKIM la proporciona su proveedor de correo electrónico (si esta funcionalidad la ofrece este último). Puede introducirla en forma de registro TXT.
+>>
+> **DMARC**
+>> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
+>> Contribuye a la autenticación del correo en combinación con los métodos SPF y/o DKIM. Este valor le será dado por su proveedor de correo electrónico (si esta funcionalidad la ofrece este último), estará al menos asociado a un registro SPF o DKIM.
 
 #### Registros extendidos
 
-- **TXT** (**T**e**XT**): Permite añadir el valor que desee en formato de texto a la zona DNS del dominio. Este registro suele utilizarse en procesos de verificación, validación o seguridad.
+Seleccione el registro que desee haciendo clic en cada una de las fichas siguientes.
 
-> [!warning]
-> 
-> El registro TXT está limitado a 255 caracteres. No obstante, en algunos casos puede dividir su valor en varios registros. Cuando el proveedor le pida que introduzca un valor superior al límite de 255 caracteres, deberá ponerse en contacto con su proveedor.
-> 
-> Este límite no existe si utiliza la funcionalidad "Cambiar al modo de texto" que se [describe a continuación](#txtmod) en esta guía (para usuarios avanzados).
-> 
-
-- **SRV** (**S**e**RV**ice resource): Indica la dirección del servidor que gestiona un servicio como, Por ejemplo, puede indicar la dirección de un servidor SIP o la de un servidor que permite la configuración automática de un cliente de correo.
-
-- **CAA** (**C**ertification **A**uthority **A**uthorisation):: Permite indicar las autoridades de certificación autorizadas a emitir certificados SSL para un dominio.
-
-> [!warning]
-> 
-> Si utiliza un certificado SSL Let's Encrypt con su dominio en un alojamiento compartido de OVHcloud y utiliza un registro CAA, este último impedirá la regeneración del certificado SSL Let's Encrypt.
-> 
-
-- **NAPTR** (**N**ame **A**uthority **P**oint**T**e**R**): Utilizado en telecomunicaciones para dirigir una petición emitida desde un terminal móvil hacia un servidor. Puede asociar un registro SRV para generar dinámicamente los URIs (Uniform Resource Identifier) de destino.
-
-- **LOC** (**LOC**ation): Utilizado para indicar la posición geográfica (especialmente la latitud, la longitud y la altitud).
-
-- **SSHFP** (**S**ecure **SH**ell **F**inger**P**rint): Utilizado para indicar la huella de una llave pública SSH.
-
-- **TLSA** (**T**ransport **L**ayer **S**ecurity **A**uthentication): Utilizado para indicar la huella de un certificado SSL/TLS.
+> [!tabs]
+> **TXT**
+>> **T**e**XT** <br><br>
+>> Permite añadir el valor que desee en formato de texto a la zona DNS del dominio. Este registro suele utilizarse en procesos de verificación, validación o seguridad.
+>>
+>> > [!warning]
+>> > 
+>> > El registro TXT está limitado a 255 caracteres. No obstante, en algunos casos puede dividir su valor en varios registros. Cuando el proveedor le pida que introduzca un valor superior al límite de 255 caracteres, deberá ponerse en contacto con su proveedor.
+>> >
+>> > Este límite no existe si utiliza la funcionalidad "Cambiar al modo de texto" que se [describe a continuación](#txtmod) en esta guía (para usuarios avanzados).
+>> > 
+>> 
+> **SRV**
+>> **S**e**RV**ice resource <br><br>
+>> Indica la dirección del servidor que gestiona un servicio como, Por ejemplo, puede indicar la dirección de un servidor SIP o la de un servidor que permite la configuración automática de un cliente de correo.
+>>
+> **CAA**
+>> **C**ertification **A**uthority **A**uthorization <br><br>
+>> Permite indicar las autoridades de certificación autorizadas a emitir certificados SSL para un dominio.
+>>
+>> > [!warning]
+>> > 
+>> > Si utiliza un certificado SSL Let's Encrypt con su dominio en un alojamiento compartido de OVHcloud y utiliza un registro CAA, este último impedirá la regeneración del certificado SSL Let's Encrypt.
+>> > 
+>>
+> **NAPTR**
+>> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
+>> Utilizado en telecomunicaciones para dirigir una petición emitida desde un terminal móvil hacia un servidor. Puede asociar un registro SRV para generar dinámicamente los URIs (Uniform Resource Identifier) de destino.
+>>
+> **LOC**
+>> **LOC**ation <br><br>
+>>  Utilizado para indicar la posición geográfica (especialmente la latitud, la longitud y la altitud).
+>>
+> **SSHFP**
+>> **S**ecure **SH**ell **F**inger**P**rint <br><br>
+>> Utilizado para indicar la huella de una llave pública SSH.
+>>
+> **TLSA**
+>> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
+>> Utilizado para indicar la huella de un certificado SSL/TLS.
 
 ### Editar la zona DNS de OVHcloud de un dominio
 
