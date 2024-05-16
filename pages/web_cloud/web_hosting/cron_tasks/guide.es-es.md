@@ -110,6 +110,18 @@ El resumen le recuerda los parámetros configurados, incluyendo la notación *cr
 
 La tarea estará lista en unos minutos. Podrá modificar todos los parámetros o eliminar la tarea haciendo clic en `...`{.action} en la tabla de presentación del panel de configuración de OVHcloud.
 
+### Modificar o eliminar una tarea programada
+
+Para ello, lleve a cabo las siguientes acciones:
+
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+3. En la columna izquierda, haga clic en el menú desplegable `Alojamientos`{.action}.
+4. Seleccione el alojamiento web correspondiente.
+5. En la nueva página, haga clic en la pestaña `Más`{.action} y seleccione `Cron`{.action}.
+6. En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la tarea planificada correspondiente.
+7. Elija entre los botones `Editar`{.action} o `Eliminar`{.action} en función de la acción que desee realizar en la tarea programada.
+
 ### Limitaciones de las tareas planificadas en su alojamiento web
 
 |Funcionalidad|Descripción|
