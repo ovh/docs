@@ -25,13 +25,15 @@ updated: 2024-05-24
 
 ## Instruction
 
+Vous disposez de 2 rôles IAM Vsphere par default, malgré ça nous allons vous expliquer comment créer un rôle.
+
 ## Etape 1
 
 ## Comment créer un rôle IAM dans mon PCC ?
 
 ## Via l'accès client :
 > [!TIP]
-> Les rôles IAM sont préfixés par : iam-
+> Les rôles IAM sont préfixés par : {{iam-}}
 
 Accéder à la console OVHcloud, en suivant [le lien de l'espace client](https://www.ovh.com/manager) et **Connectez-vous avec vos identifiants**.
 

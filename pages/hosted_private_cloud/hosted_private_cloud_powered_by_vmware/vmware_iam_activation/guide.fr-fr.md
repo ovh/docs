@@ -7,21 +7,13 @@ updated: 2024-05-24
 # Table des matières
 1. [Objectif](#Objectif)
 2. [Prérequis](#Prérequis)
-3. [Instruction](#Instruction)
-4. [Suite](#Suite)
+3. [Instruction - Comment activer IAM](#Instruction)
+4. [A suivre - Comment créer un rôle IAM Vsphere](#Asuivre)
 5. [Aller plus loin](#Aller plus loin)
 
 ---
 ## Objectif
-**Ce guide vous détaille comment activer IAM dans votre Cloud Privée VMware on OVHcloud**
-
-Voici les liens des autres guides IAM private cloud :
-
-- Guide 1 : [Premiers pas avec IAM et VMware sur OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
-- Guide 2 : [Comment activer IAM dans un cloud privé VMware managé par OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
-- Guide 3 : [Comment créer un rôle IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
-- Guide 4 : [Comment ajouter un rôle IAM par défaut à une politique globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
-- Guide 5 : [Comment associer un utilisateur OVHcloud à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
+**Ce guide vous détaille comment activer IAM dans un Cloud Privée VMware par OVHcloud**
 
 ---
 ## Prérequis
@@ -34,7 +26,7 @@ Voici les liens des autres guides IAM private cloud :
 ---
 ## Instruction
 
-## Etape 1 : Activer IAM dans un PCC
+## Activer IAM dans un PCC
 > [!CAUTION]
 > Cette opération peut prendre jusqu’à 30 minutes.
 
@@ -113,7 +105,9 @@ RETOUR :
 ```
 
 ---
-## Suite :  Créer un rôle IAM Vsphere
+## A suivre  
+
+### Créer un rôle IAM Vsphere
 
 Je vous invite maintenant à suivre le guide 3 : [Comment créer un rôle IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
 
