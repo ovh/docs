@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ręczna instalacja modułu Drupal"
 excerpt: "Dowiedz się, jak ręcznie zainstalować CMS Drupal"
-updated: 2023-04-07
+updated: 2024-05-16
 ---
 
 > [!primary]
@@ -17,6 +17,8 @@ Tutaj znajdziesz wszystkie elementy, które pozwolą Ci ręcznie zainstalować C
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
 > Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [producenta CMS Drupal](https://www.drupal.org/support){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
+>
+> Jeśli chcesz zaktualizować istniejący CMS Drupal lub masz pytania dotyczące korzystania z tego CMS, skontaktuj się bezpośrednio z [wydawcą CMS Drupal](https://www.drupal.org/support){.external}.
 >
 
 > [!success]
