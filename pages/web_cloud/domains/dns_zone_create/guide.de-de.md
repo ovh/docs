@@ -116,7 +116,7 @@ Mit den Namen der DNS-Server können Sie nun **die DNS-Server Ihres Domainnamens
 
 > [!success]
 >
-> Wenn Sie die Namen der DNS-Server personalisieren möchten, die mit der aktiven DNS-Zone Ihrer Domain verbunden sind, lesen Sie unsere Anleitung „[Personalisieren der DNS-Server einer Domain (Glue Records)](/pages/web_cloud/domains/glue_registry)“.
+> Wenn Sie die Namen der DNS-Server individualisieren möchten, die die aktive DNS-Zone Ihres Domainnamens bereitstellen, lesen Sie unsere Anleitung „[DNS-Server von Domainnamen individualisieren (Glue Records)](/pages/web_cloud/domains/glue_registry)“.
 >
 
 ## Weiterführende Informationen
