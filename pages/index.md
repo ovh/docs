@@ -1579,6 +1579,7 @@
                 + [Configurer la présentation de son numéro](web_cloud/phone_and_fax/voip/gerer_la_presentation_du_numero_sur_votre_ligne_sip)
                 + [Filtrer et renvoyer ses appels](web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels)
                 + [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time)
+                + [Installer et configurer Softcall](web_cloud/phone_and_fax/voip/installer_configurer_softcall)
                 + [Gérer un carnet de contacts sur une ligne SIP](web_cloud/phone_and_fax/voip/importer_un_carnet_de_contacts)
                 + [Gérer des numéros abrégés sur une ligne SIP](web_cloud/phone_and_fax/voip/gerer-numeros-abreges-ligne-sip)
                 + [Modifier les musiques et sonneries de votre ligne](web_cloud/phone_and_fax/voip/modifier-musiques-sonneries-ligne)
