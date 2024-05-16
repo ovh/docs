@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ręczna instalacja modułu Drupal"
 excerpt: "Dowiedz się, jak ręcznie zainstalować CMS Drupal"
-updated: 2024-05-15
+updated: 2024-05-16
 ---
 
 > [!primary]

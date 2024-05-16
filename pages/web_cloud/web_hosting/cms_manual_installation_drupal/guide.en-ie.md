@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installing Drupal manually"
 excerpt: "Find out how to install Drupal manually"
-updated: 2024-05-15
+updated: 2024-05-16
 ---
 
 ## Objective
