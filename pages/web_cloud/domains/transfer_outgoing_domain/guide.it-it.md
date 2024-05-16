@@ -1,7 +1,7 @@
 ---
 title: "Trasferire un dominio verso un altro Registrar"
 excerpt: "Questa guida ti mostra come effettuare il trasferimento di un dominio OVHcloud verso un altro provider"
-updated: 2024-04-11
+updated: 2024-05-16
 ---
 
 > [!primary]

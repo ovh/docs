@@ -1,7 +1,7 @@
 ---
 title: "Transfer domeny do innego operatora"
 excerpt: "Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora"
-updated: 2024-04-11
+updated: 2024-05-16
 ---
 
 > [!primary]
