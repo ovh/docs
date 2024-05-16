@@ -4,16 +4,6 @@ excerpt: "Découvrez comment effectuer des sauvegardes et restaurations avec l'i
 updated: 2024-05-16
 ---
 
-# Table des matières
-
-1. [Objectif](#Objectif)
-2. [Prérequis](#Prérequis)
-3. [En pratique](#Enpratique)
-4. [Etape 1 - Sauvegardes](#Étape1)
-6. [Etape 2 - Restauration](#Etape2)
-7. [Aller plus loin](#Aller plus loin)
-
-
 ## Objectif
 
 Le service Veeam Backup Data Protection est disponible et prêt à l'emploi pour les 3 offres OVHcloud ([voir catalogue des fonctionnalités](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#fonctionnalites-de-vmware-cloud-director-chez-ovhcloud)).
@@ -45,12 +35,6 @@ Si vous ne savez pas comment vous connecter à la console d'administration VMwar
 - [VCD - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
 
 ## En pratique
-
-Cette documentation est divisée en plusieurs sections :
-
-1. Comment accéder à la console Veeam Data Protection avec VMware Cloud Director (VCD).
-2. Comment sauvegarder, créer des JOB.
-3. Comment restaurer.
 
 > [!warning]
 >
