@@ -118,7 +118,7 @@ Sie können nun Ihre Datenbank verwenden. Hierzu benötigen Sie Ihre Anmeldeinfo
 
 > [!primary]
 >
-> Wenn Sie dazu aufgefordert werden und unabhängig von der Datenbank [Start SQL](/links/web/hosting-options-startsql), die zu Ihrem OVHcloud Webhosting hinzugefügt oder in diesem enthalten ist, ist die zu verwendende **Port** Nummer **3306**.
+Wenn Sie aufgefordert werden, den Datenbank-Port einzugeben, ist die zu verwendende **Port**-Nummer **3306**, unabhängig davon, welche [Start SQL](/links/web/hosting-options-startsql) Datenbank Ihr OVHcloud Webhosting verwendet.
 >
 
 Diese Informationen sind für die Verbindung von Websites mit der Datenbank unbedingt erforderlich.
