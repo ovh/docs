@@ -29,7 +29,7 @@ E-Mail-Accounts aus dem E-Mail Pro Angebot können auf allen kompatiblen E-Mail-
 
 - Sie verfügen über ein [E-Mail Pro](/links/email-pro) Angebot.
 - Sie haben die Gmail-App auf Ihrem Gerät. Sie können diese über den Google Play Store installieren.
-- Sie haben die Login-Daten des E-Mail-Accounts, die Sie einrichten möchten.
+- Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
 > [!primary]
 >
