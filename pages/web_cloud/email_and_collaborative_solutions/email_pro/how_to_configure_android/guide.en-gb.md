@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Configure an email address in Gmail for Android'
+title: 'Email Pro - Configuring an Email Pro account in Gmail for Android'
 excerpt: 'Find out how to configure an Email Pro account on Android, via the Gmail app'
 updated: 2024-03-15
 ---
@@ -20,22 +20,23 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 **Find out how to configure an Email Pro account on Android, via the Gmail app.**
 
 > [!warning]
-> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialised provider](/links/partner) and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the "Go further" section of this guide.
->
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+> 
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "Go further" section of this guide.
+> 
 
 ## Requirements
 
-- You must have an [Email Pro](/links/email-pro) solution.
-- You need to have the Gmail app installed on your device. You can install the app from the Google Play Store.
-- You need to have the required credentials for the email address you would like to configure.
+- You have an [Email Pro](/links/email-pro) solution.
+- You have the Gmail app installed on your device. You can install the app from the Google Play Store.
+- You have the required credentials for the email account you would like to configure.
 
 > [!primary]
 >
-> This guide was written using a device that uses Android version 13.
+> This guide was created using a device with Android version 13.
 
-## In practice
+## Instructions
 
 ### How to add your email account
 
@@ -50,7 +51,7 @@ On your device's homepage, go to the `Gmail`{.action} app.
 
 ![emailpro](images/emailpro-android-00.png){.thumbnail .w-400}
 
-Adding an account will be done differently **if no account has been set up,** or **if an account has already been set up**. Select the tab corresponding to one of the two situations mentioned:
+Adding an account will be done differently **if no account has been set up,** or **if an account has already been set up**. Select the tab corresponding to one of these two situations:
 
 > [!tabs]
 > **First configuration**
@@ -59,9 +60,9 @@ Adding an account will be done differently **if no account has been set up,** or
 >>
 > **Existing configuration**
 >>
->> 1. Go to the menu at the top left of the screen<br><br>
->> 2. Select `Settings`{.action}<br><br>
->> 3. Select `Add account`{.action}}<br><br>![emailpro](images/android-existing.png){.thumbnail .h-600}
+>> 1. Go to the menu at the top left of the screen.<br><br>
+>> 2. Select `Settings`{.action}.<br><br>
+>> 3. Select `Add account`{.action}.<br><br>![emailpro](images/android-existing.png){.thumbnail .h-600}
 
 Follow the next steps in the configuration process by browsing the tabs below:
 
@@ -75,22 +76,22 @@ Follow the next steps in the configuration process by browsing the tabs below:
 >> ![emailpro](images/emailpro-android-02.png){.thumbnail .h-600}
 >>
 > **Step 3**
->> Select the protocol for receiving emails. It is recommended that you select `Personal (IMAP)`{.action}<br><br>See [more details on POP and IMAP protocols](#popimap) at the end of this guide to understand their differences.<br><br>
+>> Select the protocol for receiving emails. It is recommended that you select `Personal (IMAP)`{.action}.<br><br>See [more details on POP and IMAP protocols](#popimap) at the end of this guide to understand their differences.<br><br>
 >>![emailpro](images/emailpro-android-03.png){.thumbnail .h-600}
 > **Step 4**
->> Enter the password for your email address.<br><br>
+>> Enter the password for your email account.<br><br>
 >> ![emailpro](images/emailpro-android-04.png){.thumbnail .h-600}
 >>
 > **Step 5**
->>> Enter the "**Incoming server settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email address password<br>- **Server**: Type **pro**?**.mail.ovh.net** (replace "**?**" with your server number). <br><br>
+>>> Enter the "**Incoming server settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email account password<br>- **Server**: Type pro**?**.mail.ovh.net (replace "**?**" with your server number). <br><br>
 >>![emailpro](images/emailpro-android-05.png){.thumbnail .h-600}
 >>
 > **Etape 6**
->> Complete the "**Outgoing Server Settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email address password<br>- **SMTP Server**: Type **pro**?**.mail.ovh.net** (replace "**?***" with your server number). <br><br>
+>> Complete the "**Outgoing Server Settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email account password<br>- **SMTP Server**: Type pro**?**.mail.ovh.net (replace "**?**" with your server number). <br><br>
 >>![emailpro](images/emailpro-android-06.png){.thumbnail .h-600}
 >>
 > **Step 7**
->> Choose how often you want your emails to be synchronized.<br><br>
+>> Choose how often you want your emails to be synchronised.<br><br>
 >> ![emailpro](images/emailpro-android-07.png){.thumbnail .h-600}
 >>
 > **Step 8**
@@ -111,7 +112,7 @@ messages from your Gmail application.
 
 When you choose your account type, we recommend using **IMAP** to receive emails. However, you can select **POP**. To understand how they work, see our section ["POP or IMAP, what is the difference?"](#popimap)
 
-- **For POP configuration**
+- **POP configuration**
 
 | Information | Description |
 | --- | --- |
@@ -121,7 +122,7 @@ When you choose your account type, we recommend using **IMAP** to receive emails
 | Port | 995 |
 | Security type | SSL/TLS |
 
-- **For IMAP configuration**
+- **IMAP configuration**
 
 | Information | Description |
 | --- | --- |
@@ -154,12 +155,12 @@ When you configure your mail client, you must enter the information from the **i
 
 To understand the difference between POP and IMAP, we will break down the elements that make up the processing of your incoming emails:
 
-1. **Your device**: a computer, smartphone or tablet. This is your consultation support.
+1. **Your device**: A computer, smartphone or tablet.
 
-2. **Your email client**: software or application dedicated to managing your emails. Your choice will determine the level of usability and functionality you will need to view your emails.
+2. **Your email client**: Software or application dedicated to managing your emails. Your choice will determine the level of usability and functionality you will need to view your emails.
 
-3. **The receiving protocol**: a choice that determines how you check emails on your device. This affects other devices that access the same email account.
-    - **IMAP**: Your email client queries the email server and downloads the emails to your device. When you view an unread email, the server marks it as "read" by default. Other devices configured in IMAP will be able to check this status and view this email until it has been deleted on one of the devices.
+3. **The receiving protocol**: A choice that determines how you check emails on your device. This affects other devices that access the same email account.
+    - **IMAP**: Your email client queries the email server and downloads the emails to your device. When you view an unread email, the server marks it as “read” by default. Other devices configured in IMAP will be able to check this status and view this email until it has been deleted on one of the devices.
     - **POP**: Your email client requests the email server and downloads the emails to your device. By default, once the email is downloaded to your device, the message is deleted from the server. As a result, other devices connected to this email address will not be able to view this email.
 
 ![emailpro](images/popimap-02.png){.thumbnail}
