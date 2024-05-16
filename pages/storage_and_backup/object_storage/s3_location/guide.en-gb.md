@@ -91,6 +91,9 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
     </tr>
 </table>
 
+> [!warning]
+> Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all S3 features and API operations will be available.
+
 ![Schema 1](images/io-mapping.png)
 
 > [!warning]
