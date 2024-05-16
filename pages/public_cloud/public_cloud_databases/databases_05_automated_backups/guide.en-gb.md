@@ -1,7 +1,7 @@
 ---
-title: Public Cloud Databases - Automated Backups 
+title: Public Cloud Databases - Automated Backups
 excerpt: Discover the automated backup methods for each engine
-updated: 2024-05-15
+updated: 2023-05-23
 ---
 
 ## Objective

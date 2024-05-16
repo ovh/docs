@@ -12,7 +12,7 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud database service](https://www.ovhcloud.com/en-gb/public-cloud/databases/) up and running
 - Access to the [OVHcloud API](https://eu.api.ovh.com/console/)
 - A Logs Data Platform account within this OVHcloud account with at least one destination stream configured
@@ -62,7 +62,7 @@ To find logs of your service in your graylogs stream you can use the following g
 
 Query: `cluster: "<HostID>"`
 
-You can find this `HostID` in your manager:
+You can find this `HostID` in your OVHcloud Control Panel:
 
 - In `Login information` switch `Service` to `mongodb`
 - Now you can see the `Host` field with the format `<HostID>.database.cloud.ovh.net`
@@ -71,7 +71,7 @@ You can find this `HostID` in your manager:
 
 Query: `clusterID: "<Engine>-<HostID>"`
 
-You can find this `HostID` in your manager:
+You can find this `HostID` in your OVHcloud Control Panel:
 
 - Find the Cluster ID formatted as a UUID (AAAAAAAA-BBBB-CCCC-DDDDDDDDDDDD)
 - `HostID` is the first part of the UUID (AAAAAAAA)
