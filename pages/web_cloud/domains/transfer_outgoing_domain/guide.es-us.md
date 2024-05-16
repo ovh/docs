@@ -52,6 +52,8 @@ Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** 
 > - [Las explicaciones de la ICANN sobre los códigos de estado EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (para saber qué códigos de estado se aplican actualmente a su nombre de dominio, realice una búsqueda *Whois*, utilizando preferentemente el sitio web del registro TLD correspondiente);
 > - el sitio web y la interfaz de gestión de su nuevo agente registrador, especialmente en lo que respecta a las cuestiones relativas a un proceso de transferencia pendiente.
 >
+> Según el nuevo agente registrador que elija, la transferencia de un dominio puede ser de pago. Antes de continuar, le recomendamos que se informe sobre este punto.
+>
 
 ### Etapa 1 : eliminar la protección contra la transferencia del dominio
 
