@@ -25,7 +25,7 @@ updated: 2024-05-24
 
 ## Instruction
 
-## Etape 1 : Comment créer une politique ? (optionnel)
+## Etape 1 : Créer une politique ? (optionnel)
 
 ### Accéder à IAM 
 
@@ -37,7 +37,21 @@ updated: 2024-05-24
 
 ![IAM POLICY](images/iam_role_policy_10.png){.thumbnail}
 
-Si vous modifiez juste une politique : Cliquez sur les `...` -> `MODIFIER.`{.action}
+Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
+
+1. **Nom de la politique** : Choisissez ce que vous voulez.
+2. **Description** : Choisissez ce que vous voulez.
+3. **Ressources** : Ajoutez les ressources concernées par votre politique **pcc-XX-XX-XX-XX/servicepack, pcc-XX-XX-XX-XX** etc..
+4. **Types de produit** : Hosted private cloud powered by VMware, Service Pack.
+5. **Actions** : C'est ici que vous ajoutez votre rôle.
+
+3. Pour finir, Cliquer sur `CREER UNE POLITIQUE`{.action}
+
+## Etape 2 : Modifier une politique
+
+1. Pour accéder au service IAM, suivez les indications de la capture suivante : `SUPPORT STANDARD > IDENTITES ET ACCES (IAM)`{.action}
+
+2. Modifiez juste une politique : Cliquez sur les `...` -> `MODIFIER.`{.action}
 
 Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 
@@ -47,8 +61,11 @@ Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 4. **Types de produit** : Hosted private cloud powered by VMware, Service Pack.
 5. **Actions** : C'est ici que vous ajoutez votre rôle.
 
+3. Pour finir, Cliquer sur `MODIFIER`{.action}
 
-## Etape 2 : Ajouter un rôle à une politique
+![IAM POLICY](images/iam_role_policy_13.png){.thumbnail}
+
+## Etape 3 : Ajouter un rôle à une politique
 
 ### Comment ajouter un rôle IAM à une politique globale (policy) ?
 
@@ -62,17 +79,7 @@ Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 
 Vous retrouverez vos politiques si vous en avez créés.
 
-Pour lier un rôle à une policy, vous pouvez soit créer une politique, soit modifier une politique.
-
-Dans les 2 cas plusieurs paramètres doivent être pris en compte :
-
-1. **Nom de la politique** : Choisissez ce que vous voulez.
-2. **Description** : Choisissez ce que vous voulez.
-3. **Ressources** : Ajoutez les ressources concernées par votre politique **pcc-XX-XX-XX-XX, pcc-XX-XX-XX-XX** etc..
-4. **Types de produit** : Hosted private cloud powered by VMware, Service Pack.
-
-
-L'action est le paramètre qui permet d'ajouter le rôle IAM Vsphere :
+Pour lier un rôle à une policy, une action est le paramètre qui permet d'ajouter le rôle IAM Vsphere :
 
 5. **Actions manuelles** :
    1. Dans la section `Action Ajouter Manuellement > Ajouter Manuellement Des Actions.`{.action}
@@ -91,6 +98,9 @@ pccVMware:vSphere:assumeRole?iam-auditor
 6. Pour finir, Cliquer sur `CREER LA POLITIQUE`{.action} ou `MODIFIER`{.action}
 
 ![IAM POLICY ADD](images/iam_role_policy_12.png){.thumbnail}
+
+![IAM POLICY](images/iam_role_policy_13.png){.thumbnail}
+
 
 Vous avez dans le guide precedent le processus de création d'un rôle depuis l'espace client et l'API.
 
