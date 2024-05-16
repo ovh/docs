@@ -80,10 +80,10 @@ In diesem Schritt können Sie RAID- und Partitionierungsoptionen innerhalb der G
 
 > [!warning]
 >
-> Wenn Ihr Server mit SoftRAID ausgestattet ist, wird die Installation des Betriebssystems von unserem System priorisiert, indem alle Ihre Festplatten verwendet werden. Diese Technologie wird als RAID 1 bezeichnet. RAID 1 (Disk Mirroring) ist die Datenreplikation auf zwei oder mehr Festplatten. Bei diesem Verfahren werden alle Festplatten während des Installationsvorgangs automatisch eingehängt. Das bedeutet auch, dass Sie nur auf eine Festplatte zugreifen können, wobei die anderen Festplatten für die Datenreplikation verwendet werden. So wird bei einem Festplattenausfall Redundanz gewährleistet.
+> Wenn Ihr Server mit *Soft RAID* ausgestattet ist, wird unser System zur Installation des Betriebssystems alle Disks verwenden. Dieses Verfahren wird als RAID 1 bezeichnet. RAID 1 (Disk Mirroring) ist die Datenreplikation auf zwei oder mehr Disks. Bei diesem Verfahren werden alle Disks während des Installationsvorgangs automatisch eingebunden. Das bedeutet auch, dass Sie nur auf eine Disk zugreifen können und die restlichen für die Datenreplikation genutzt werden. So wird bei einem Ausfall Redundanz gewährleistet.
 >
 
-Wenn Sie nicht alle Ihre Festplatten für die Installation verwenden möchten, können Sie diese aktualisieren, indem Sie das Kästchen "Konfiguration der Partitionen anpassen" ankreuzen. In diesem Fall sind Sie dafür verantwortlich, die anderen Festplatten im Betriebssystem zu mounten. Weitere Informationen hierzu finden Sie in der Dokumentation des Betriebssystems.
+Wenn Sie nicht alle Ihre Disks für die Installation verwenden möchten, können Sie dies verhindern, indem Sie die Option "Konfiguration der Partitionen anpassen" ankreuzen. In diesem Fall müssen Sie dann die anderen Disks im Betriebssystem manuell mounten. Weitere Informationen hierzu finden Sie in der Dokumentation des Betriebssystems.
 
 ![select disks](images/choosedisk.png){.thumbnail}
 
