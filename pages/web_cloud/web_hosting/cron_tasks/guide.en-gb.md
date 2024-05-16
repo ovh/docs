@@ -104,6 +104,18 @@ The summary lists all your settings including the *crontab* notation of the exec
 
 The task will be ready within a few minutes. You can then modify all of its settings or delete the task by clicking on `...`{.action} in the overview table in your OVHcloud Control Panel.
 
+### Modify or delete a scheduled task
+
+To do this, perform the following steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
+3. In the left-hand column, click on the `Hosting plans`{.action} dropdown menu.
+4. Select the web hosting plan concerned.
+5. On the page that pops up, click on the `More`{.action} tab, then `Cron`{.action}.
+6. In the table that appears, click the `...`{.action} button to the right of the scheduled task concerned.
+7. Choose from the `Edit`{.action} or `Delete`{.action} buttons, depending on the action you want to perform on the scheduled task.
+
 ### Limitations of Web Hosting tasks
 
 |Functionality|Description|
