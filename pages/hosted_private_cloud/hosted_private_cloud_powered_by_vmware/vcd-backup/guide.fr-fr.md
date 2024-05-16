@@ -106,7 +106,7 @@ Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle
 
 ##### Les politiques de sauvegardes
 
-Par défaut, vous avez **les dépots** :
+Par défaut, vous avez **les dépots** suivant :
 
 Avec l'offre que vous avez souscrite vous disposer de 3 depots avec 2 Jobs configurés par défaut :
 1. **Bronze Repository** : STD Stockage Objet
