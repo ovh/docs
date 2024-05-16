@@ -540,8 +540,13 @@
 >>>>>>> c6e9fc6087 (fix: fixed guide headers, index links and slugs)
 =======
     + [Backup et Disaster Recovery Services](products/storage-backup-and-disaster-recovery-solution)
+<<<<<<< HEAD
       + [VMware Cloud Director - Veeam backup Data Protection plugin](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
 >>>>>>> 43845132dc (SK-1520: Add tests to move MK section from Backup and disaster recovery to public cloud)
+=======
+        + [VMware Cloud Director](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vcd)
+            + [Veeam Backup Data Protection](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
+>>>>>>> ffbef2d119 (SK-1520: Add index changes)
 + Public Cloud
     + [Compute](products/public-cloud-compute)
         + [Getting started](public-cloud-compute-getting-started)
