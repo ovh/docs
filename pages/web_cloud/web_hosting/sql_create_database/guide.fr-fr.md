@@ -1,7 +1,7 @@
 ---
 title: "Créer une base de données sur son hébergement web"
 excerpt: "Découvrez comment créer une base de données sur votre hébergement web OVHcloud"
-updated: 2024-05-15
+updated: 2024-05-16
 ---
 
 ## Objectif
