@@ -18,7 +18,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 > 
 > Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den [Herausgeber von Drupal](https://www.drupal.org/support){.external} zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
-> Wenn Sie ein vorhandenes CMS Drupal aktualisieren möchten oder Fragen zur Verwendung des CMS Drupal haben, wenden Sie sich direkt an [den Herausgeber des CMS Drupal](https://www.drupal.org/support){.external}.
+> Wenn Sie ein vorhandenes Drupal CMS aktualisieren möchten oder Fragen zur Verwendung von Drupal haben, wenden Sie sich direkt an [den Herausgeber des Drupal CMS](https://www.drupal.org/support){.external}.
 >
 
 > [!success]
