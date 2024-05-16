@@ -109,17 +109,17 @@ Die Zusammenfassung listet alle Ihre Einstellungen auf, einschließlich der *cro
 
 Der Task wird in einigen Minuten bereit sein. Sie können dann alle Einstellungen ändern oder den Task löschen, indem Sie auf `...`{.action} in der Task-Übersichtstabelle im OVHcloud Kundencenter klicken.
 
-### Geplante Aufgabe bearbeiten oder löschen
+### Task bearbeiten oder löschen
 
 Gehen Sie hierzu wie folgt vor:
 
 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
-3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Hosting-Pakete`{.action}.
+2. Klicken Sie oben auf `Web Cloud`{.action}.
+3. Klicken Sie in der linken Spalte auf das Menü `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
-5. Klicken Sie auf der angezeigten Seite auf den Tab `Mehr`{.action} und dann auf `Cron`{.action}.
-6. Klicken Sie in der angezeigten Tabelle auf die Schaltfläche `...`{.action} rechts neben dem betreffenden geplanten Task.
-7. Wählen Sie eine der Schaltflächen `Bearbeiten`{.action} oder `Löschen`{.action}, je nachdem, welche Aktion Sie für den geplanten Task ausführen möchten.
+5. Klicken Sie auf auf den Tab `Mehr`{.action} und dann auf `Cron`{.action}.
+6. Klicken Sie in der hier angezeigten Tabelle auf den Button `...`{.action} rechts neben dem Task.
+7. Klicken Sie auf den Button `Bearbeiten`{.action} oder `Löschen`{.action}, je nachdem, welche Aktion Sie für den Task ausführen möchten.
 
 ### Einschränkungen bei geplanten Tasks auf Ihrem Webhosting
 
