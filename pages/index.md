@@ -673,6 +673,8 @@
             + [Responsibility model](public_cloud/public_cloud_databases/information_03_shared_responsibility)
             + [FAQ Public Cloud databases](public_cloud/public_cloud_databases/information_04_faq)
             + [Public Cloud Databases - Capabilities and Limitations](public_cloud/public_cloud_databases/information_05_capabilities)
+            + [Maintenance operations](public_cloud/public_cloud_databases/databases_15_maintenances)
+            + [Public Cloud Databases - Automated Backups](public_cloud/public_cloud_databases/databases_05_automated_backups
         + [General guides](public-cloud-databases-general-guides)
             + [Getting started with Public Cloud Databases](public_cloud/public_cloud_databases/databases_01_order_control_panel)
             + [Getting started with Public Cloud Databases via API](public_cloud/public_cloud_databases/databases_02_order_api)
@@ -685,8 +687,6 @@
             + [Public Cloud Databases - How to resize your service storage](public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage)
             + [Public Cloud Databases - How to update your service flavor](public_cloud/public_cloud_databases/databases_13_update_your_cluster_flavor)
             + [Public Cloud Databases - How to update your service plan](public_cloud/public_cloud_databases/databases_14_upgrade_your_cluster_plan)
-            + [Public Cloud Databases - Automated Backups](public_cloud/public_cloud_databases/databases_05_automated_backups)
-            + [Maintenance operations](public_cloud/public_cloud_databases/databases_15_maintenances)
             + [Public Cloud Databases - How to setup logs forwarding](public_cloud/public_cloud_databases/databases_16_logs_to_customer)
             + [Public Cloud Databases - How to setup your Kuberbenetes database operator](public_cloud/public_cloud_databases/databases_12_operator)
             + [Public Cloud Databases - How to setup a service integration](public_cloud/public_cloud_databases/databases_07_cross_service_integration)
