@@ -1,7 +1,7 @@
 ---
 title: "Primeros pasos con un servidor dedicado"
 excerpt: "Cómo gestionar un servidor dedicado en su área de cliente y cómo empezar con la configuración y la seguridad de un servidor"
-updated: 2024-04-10
+updated: 2024-05-15
 ---
 
 > [!primary]
@@ -77,6 +77,15 @@ Si necesita cambiar el esquema de partición del sistema operativo, marque la ca
 ![Personalizar la configuración de las particiones](images/reinstalling-your-server-04.png){.thumbnail}
 
 Este paso le permite configurar el tipo de RAID y la partición, dentro de los límites del hardware y del sistema operativo.
+
+> [!warning]
+>
+> Si su servidor está equipado con Soft RAID, nuestro sistema dará prioridad a la instalación del sistema operativo utilizando todos sus discos. Esta tecnología se denomina RAID 1. RAID 1 (duplicación de disco) es la replicación de datos en dos o más discos. Con este procedimiento, todos los discos se montan automáticamente durante el procedimiento de instalación. Esto también significa que sólo tendrá acceso al almacenamiento en un disco, con el resto de los discos utilizados para la replicación de datos, lo que garantiza la redundancia en caso de fallo de un disco.
+>
+
+Si no desea utilizar todos sus discos para la instalación, puede actualizarla marcando la casilla "Personalizar la configuración de las particiones". En ese caso, usted será responsable del montaje de los otros discos en el sistema operativo. Para más información, consulte la documentación del sistema operativo.
+
+![select disks](images/choosedisk.png){.thumbnail}
 
 Una vez realizados los ajustes, haga clic en `Siguiente`{.action} para acceder a la página de resumen.
 

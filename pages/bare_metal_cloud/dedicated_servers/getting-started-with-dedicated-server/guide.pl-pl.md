@@ -1,7 +1,7 @@
 ---
 title: "Pierwsze kroki z serwerem dedykowanym"
 excerpt: "Dowiedz się, jak zarządzać serwerem dedykowanym w Panelu klienta i jak rozpocząć konfigurację oraz zabezpieczenie serwera"
-updated: 2024-04-10
+updated: 2024-05-15
 ---
 
 > [!primary]
@@ -77,6 +77,15 @@ Jeśli chcesz zmienić schemat partycjonowania Twojego systemu operacyjnego, zaz
 ![Spersonalizuj konfigurację partycji](images/reinstalling-your-server-04.png){.thumbnail}
 
 W tym kroku skonfigurujesz typ macierzy RAID i partycjonowanie w ramach sprzętowych oraz systemu operacyjnego.
+
+> [!warning]
+>
+> Jeśli Twój serwer jest wyposażony w Soft RAID, nasz system daje pierwszeństwo instalacji systemu operacyjnego przy użyciu wszystkich dysków. Technologia ta nosi nazwę RAID 1. RAID 1 (disk mirroring) to replikacja danych na dwóch lub więcej dyskach. W ten sposób wszystkie dyski są automatycznie montowane podczas procesu instalacji. Oznacza to również, że będziesz mieć dostęp do przestrzeni dyskowej tylko na jednym dysku, podczas gdy inny dysk będzie używany do replikacji danych, co zapewni redundancję w przypadku awarii dysku.
+>
+
+Jeśli nie chcesz używać wszystkich dysków do instalacji, możesz zaktualizować dysk po zaznaczeniu kratki "Personalizuj konfigurację partycji". W takim przypadku będziesz odpowiedzialny za zamontowanie innych dysków w systemie operacyjnym. Więcej informacji na ten temat można znaleźć w dokumentacji systemu operacyjnego.
+
+![select disks](images/choosedisk.png){.thumbnail}
 
 Po zakończeniu wprowadzania korekt kliknij przycisk `Dalej`{.action}, aby przejść do strony z podsumowaniem.
 

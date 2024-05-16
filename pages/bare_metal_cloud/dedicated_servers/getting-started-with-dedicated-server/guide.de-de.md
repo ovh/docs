@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit einem Dedicated Server"
 excerpt: "Erfahren Sie hier, wie Sie einen Dedicated Server in Ihrem OVHcloud Kundencenter verwalten und wie Sie mit der Konfiguration und Sicherung eines Servers starten"
-updated: 2024-04-10
+updated: 2024-05-15
 ---
 
 > [!primary]
@@ -77,6 +77,15 @@ Wenn Sie das Partitionsschema Ihres Betriebssystems ändern müssen, setzen Sie 
 ![Konfiguration anpassen](images/reinstalling-your-server-04.png){.thumbnail}
 
 In diesem Schritt können Sie RAID- und Partitionierungsoptionen innerhalb der Grenzen der Serverhardware und des Betriebssystems einrichten.
+
+> [!warning]
+>
+> Wenn Ihr Server mit SoftRAID ausgestattet ist, wird die Installation des Betriebssystems von unserem System priorisiert, indem alle Ihre Festplatten verwendet werden. Diese Technologie wird als RAID 1 bezeichnet. RAID 1 (Disk Mirroring) ist die Datenreplikation auf zwei oder mehr Festplatten. Bei diesem Verfahren werden alle Festplatten während des Installationsvorgangs automatisch eingehängt. Das bedeutet auch, dass Sie nur auf eine Festplatte zugreifen können, wobei die anderen Festplatten für die Datenreplikation verwendet werden. So wird bei einem Festplattenausfall Redundanz gewährleistet.
+>
+
+Wenn Sie nicht alle Ihre Festplatten für die Installation verwenden möchten, können Sie diese aktualisieren, indem Sie das Kästchen "Konfiguration der Partitionen anpassen" ankreuzen. In diesem Fall sind Sie dafür verantwortlich, die anderen Festplatten im Betriebssystem zu mounten. Weitere Informationen hierzu finden Sie in der Dokumentation des Betriebssystems.
+
+![select disks](images/choosedisk.png){.thumbnail}
 
 Klicken Sie nach Abschluss der Anpassungen auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen.
 
