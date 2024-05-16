@@ -71,7 +71,7 @@ This table summarizes the key parameters for the two distinct data stream config
 | sap-logstash | Data stream for SAP system logs and OS logs | True | True | False | | | | |
 | audit-sap-logstash | Data stream for audit and security logs | True | True | True |.gz (zlib) | 5 years<sup>1</sup> | OVHcloud Archive | An archive containing all of the logs in Gelf format |
 
-<sup>1</sup>: Refers to the time frame mandated for conservation by your local regulation.
+<sup>1</sup> Refers to the time frame mandated for conservation by your local regulation.
 
 ### Data-gathering tools
 
@@ -86,7 +86,7 @@ Below the suggested inputs for these data-gathering tools:
 | tools-sap-logstash | Data-gathering tool for SAP system logs and OS logs | LOGSTASH 8.x | 6514 | X.X.X.X/X | sap-logstash |
 | tools-audit-sap-logstash | Data-gathering tool for audit and security logs | LOGSTASH 8.x | 6514 | X.X.X.X/X | audit-sap-logstash |
 
-<sup>2</sup>: For enhanced security, we recommend configuring trusted networks as part of your setup.
+<sup>2</sup> For enhanced security, we recommend configuring trusted networks as part of your setup.
 
 > [!primary]
 >

@@ -44,7 +44,7 @@ Le tableau résume les paramètres clefs pour les configurations des deux data s
 | sap-logstash | Data stream pour les logs SAP et OS | Oui | Oui | Non | | | | |
 | audit-sap-logstash | Data stream pour logs d'audit et de sécurité | Oui | Oui | Oui |.gz (zlib) | 5 ans<sup>1</sup> | OVHcloud Archive | Une archive contenant l'ensemble des logs au format Gelf |
 
-<sup>1</sup> : La durée peut être ajustée en fonction de la réglementation locale de conservation des logs.
+<sup>1</sup> La durée peut être ajustée en fonction de la réglementation locale de conservation des logs.
 
 ### Outils de collecte
 
@@ -57,7 +57,7 @@ Veuillez suivre le chapitre « Host a logstash collector on Logs Data Platform �
 | tools-sap-logstash | Outil de collecte pour vos logs SAP et OS | LOGSTASH 8.x | 6514 | X.X.X.X/X | sap-logstash |
 | tools-audit-sap-logstash | Outil de collecte pour vos logs d'audit et de sécurité | LOGSTASH 8.x | 6514 | X.X.X.X/X | audit-sap-logstash |
 
-<sup>2</sup> : Dans le but d'améliorer la sécurité, nous recommandons de configurer un ou plusieurs réseaux de confiance.
+<sup>2</sup> Dans le but d'améliorer la sécurité, nous recommandons de configurer un ou plusieurs réseaux de confiance.
 
 > [!primary]
 >
