@@ -110,7 +110,7 @@ Once you have the information, **edit your domain name’s DNS servers in the in
 
 > [!success]
 >
-> If you would like to customize the names of the DNS servers associated with your domain name’s active DNS zone, please read our guide on "[Customizing a domain name’s DNS servers (Glue Records)](/pages/web_cloud/domains/glue_registry)".
+> If you would like to customise the names of the DNS servers associated with your domain name’s active DNS zone, please read our guide "[Customising a domain name’s DNS servers (Glue Records)](/pages/web_cloud/domains/glue_registry)".
 >
 
 ## Go further
