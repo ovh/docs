@@ -114,7 +114,7 @@ You can now use your database. To do this, you will need your login details:
 
 > [!primary]
 >
-> If you are asked to do so, regardless of which [Start SQL](/links/web/hosting-options-startsql) database has been added or included with your OVHcloud web hosting plan, the **port** number to use is **3306**.
+> If you are asked to enter the database port, regardless of which [Start SQL](/links/web/hosting-options-startsql) database is used by your OVHcloud web hosting plan, the **port** number to use is **3306**.
 >
 
 This information is essential for your website to connect to the database.
