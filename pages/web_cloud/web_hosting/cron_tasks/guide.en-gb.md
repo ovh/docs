@@ -114,7 +114,7 @@ To do this, perform the following steps:
 4. Select the web hosting plan concerned.
 5. On the page that pops up, click on the `More`{.action} tab, then `Cron`{.action}.
 6. In the table that appears, click the `...`{.action} button to the right of the scheduled task concerned.
-7. Choose from the `Edit`{.action} or `Delete`{.action} buttons, depending on the action you want to perform on the scheduled task.
+7. Click on the `Edit`{.action} or `Delete`{.action} button, depending on the action you want to perform on the scheduled task.
 
 ### Limitations of Web Hosting tasks
 
