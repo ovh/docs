@@ -35,6 +35,8 @@ details[open]>summary::before {
 
 ### Step 1 - Access your Hosted Private Cloud
 
+#### From the control panel :
+
 <details>
 
 <summary>How to access your Hosted Private Cloud - VMware On OVHcloud?</summary>
