@@ -1,7 +1,7 @@
 ---
 title: "Using automated tasks on a Web Hosting plan"
 excerpt: "Find out how to configure scheduled jobs on your Web Hosting"
-updated: 2024-02-08
+updated: 2024-05-16
 ---
 
 <style>
