@@ -47,6 +47,8 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 > - [ICANN's explanation of EPP Status Codes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (to find out which status codes currently apply to your domain name, carry out a *Whois* search, preferably using the respective TLD registry's website)
 > - Your new registrar's website and management interface, especially for questions about a pending transfer process
 >
+> Depending on the new registrar you choose, transferring a domain name may be a paid operation. Please find out more before you continue.
+>
 
 ### Step 1: Remove the transfer protection for the domain name
 
