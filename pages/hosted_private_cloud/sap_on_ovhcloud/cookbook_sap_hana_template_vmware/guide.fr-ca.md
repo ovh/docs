@@ -1,7 +1,7 @@
 ---
 title: "Déployer une machine virtuelle avec SAP HANA et OVHcloud Backint Agent pré-installés"
 excerpt: "Ce guide fournit les instructions pour le déploiement d'une machine virtuelle SLES for SAP avec SAP HANA et OVHcloud Backint Agent pré-installés"
-updated: 2023-12-04
+updated: 2024-05-16
 ---
 
 ## Objectif
