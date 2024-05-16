@@ -1,7 +1,7 @@
 ---
 title: "Crea task automatizzati (CRON) sul tuo hosting Web"
 excerpt: "Questa guida ti mostra come creare task CRON per automatizzare le operazioni pianificate su un hosting Web"
-updated: 2024-02-08
+updated: 2024-05-16
 ---
 
 <style>

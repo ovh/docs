@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie automatycznych zadań (CRON) na Twoim hostingu"
 excerpt: "Dowiedz się, jak utworzyć zadania CRON do automatyzacji zaplanowanych zadań na hostingu"
-updated: 2024-02-08
+updated: 2024-05-16
 ---
 
 <style>
