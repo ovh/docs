@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un serveur dédié"
 excerpt: "Découvrez comment gérer un serveur dédié dans votre espace client OVHcloud et comment démarrer avec la configuration et la sécurisation d'un serveur"
-updated: 2024-05-14
+updated: 2024-05-15
 ---
 
 ## Objectif
@@ -80,6 +80,8 @@ Cette étape vous permet de configurer le type de RAID ainsi que le partitionnem
 >
 
 Si vous ne souhaitez pas utiliser tous vos disques pour l'installation, vous pouvez la mettre à jour après avoir coché la case "Personnaliser la configuration de la partition". Dans ce cas, vous serez responsable du montage des autres disques dans le système d'exploitation. Vous devez vous référer à la documentation du système d'exploitation pour savoir comment procéder.
+
+![select disks](images/choosedisk.png){.thumbnail}
 
 Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder à la page de résumé.
 
