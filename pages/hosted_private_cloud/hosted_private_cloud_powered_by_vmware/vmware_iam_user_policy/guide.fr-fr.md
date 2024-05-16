@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec IAM dans un cloud privée VMware managé par OVHcloud"
 excerpt: "Comment associer un utilisateur local OVHcloud à une politique globale IAM"
-updated: 2024-05-24
+updated: 2024-05-16
 ---
 
 # Table des matières
