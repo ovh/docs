@@ -1,7 +1,7 @@
 ---
 title: "Transferir um domínio para outro agente de registo"
 excerpt: "Saiba como transferir um domínio da OVHcloud para o agente de registo da sua escolha"
-updated: 2024-04-11
+updated: 2024-05-16
 ---
 
 > [!primary]
