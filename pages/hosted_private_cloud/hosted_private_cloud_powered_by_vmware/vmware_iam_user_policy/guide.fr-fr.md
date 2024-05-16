@@ -8,8 +8,8 @@ updated: 2024-05-16
 1. [Objectif](#Objectif)
 2. [Prérequis](#Prérequis)
 3. [Instruction](#Instruction)
-4. [A suivre](#Asuivre)
-5. [Fin - Aller plus loin](#Allerplusloin)
+4. [Liste des guides IAM avec VMware](#Fin)
+5. [Aller plus loin](#Allerplusloin)
 
 ---
 ## Objectif

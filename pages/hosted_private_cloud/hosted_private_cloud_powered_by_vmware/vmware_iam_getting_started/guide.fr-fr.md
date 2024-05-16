@@ -4,16 +4,26 @@ excerpt: "Comment fonctionne IAM dans un cloud privé VMware managé par OVHclou
 updated: 2024-05-24
 ---
 
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
+
+
 # Table des matières
-1. [Objectif - Liens des guides IAM avec VMware](#Objectif)
+1. [Objectif](#Objectif)
 2. [Etape 1 - En pratique](#Enpratique)
 3. [Etape 2 - FAQ](#FAQ)
-4. [A suivre](#Asuivre)
-5. [Fin - Aller plus loin](#Allerplusloin)
+4. [A suivre - Comment activer IAM](#Asuivre)
+5. [Aller plus loin](#Allerplusloin)
 
 ---
 ## Objectif
-**Dans ce guide, nous allons vous expliquer comment démarrer avec IAM dans votre Cloud Privée VMware sur OVHcloud** 
+**Dans ce guide, nous allons vous expliquer comment démarrer avec IAM dans votre Cloud Privée VMware sur OVHcloud et voir quelques questions réponses dans la FAQ** 
 
 ---
 ## Etape 1 : En pratique
@@ -44,9 +54,20 @@ Voici les éléments nécessaires à une politique globale :
 - Actions : **Groupes de permissions, Ajoutées manuellement -> Rôle Vsphere/IAM**
 - Utilisateurs : **Utilisateur 1/2/3**
 
-Voir le diagramme du fonctionnement de IAM avec un cloud privé OVHcloud :
+<details>
+<summary>Schema IAM
+
+</summary>
+
+<summary> Voir le diagramme du fonctionnement de IAM avec un cloud privé OVHcloud :</summary> 
 
 ![Schema IAM](images/iam_schema.png){.thumbnail}
+
+![Schema IAM](images/iam_vmware_schema_2.png){.thumbnail}
+
+![Schema IAM](images/iam_vmware_schema_3.png){.thumbnail}
+
+</details>
 
 ## Etape 2 : FAQ
 

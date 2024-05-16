@@ -5,11 +5,11 @@ updated: 2024-05-24
 ---
 
 # Table des matières
-1. [Objectif - Liens des guides IAM](#Objectif)
+1. [Objectif](#Objectif)
 2. [Prérequis](#Prérequis)
-3. [Instruction](#Instruction)
-4. [Instruction - Etape 1](#Etape 1)
-5. [Fin - Aller plus loin](#Aller plus loin)
+3. [Instruction - Comment créer un rôle](#Instruction)
+4. [A suivre - Les politiques](#Asuivre)
+6. [Fin - Aller plus loin](#Aller plus loin)
 
 ---
 ## Objectif
@@ -26,8 +26,6 @@ updated: 2024-05-24
 ## Instruction
 
 Vous disposez de 2 rôles IAM Vsphere par default, malgré ça nous allons vous expliquer comment créer un rôle.
-
-## Etape 1
 
 ## Comment créer un rôle IAM dans mon PCC ?
 
