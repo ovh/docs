@@ -24,7 +24,7 @@ Si vous avez une politique existante, cette étape est optionnel.
 
 Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/manager) et connecter vous avec vos identifiants.
 
-Pour accéder au service IAM, cliquer sur le bouton en haut à droite de compte OVHcloud : `Support Standard > Identités et accès (IAM)`{.action}
+Pour accéder au service IAM, cliquer sur le bouton en haut à droite de votre compte OVHcloud : `Support Standard > Identités et accès (IAM)`{.action}
 
 ![IAM OVHCLOUD](images/iam_role_policy_9.png){.thumbnail}
 
@@ -38,7 +38,7 @@ Vous retrouvez les mêmes paramètres à ajouter que lors d'une création :
 - **Description** : Choisissez ce que vous voulez.
 - **Ressources** : Ajoutez les ressources concernées par votre politique **pcc-XX-XX-XX-XX/servicepack, pcc-XX-XX-XX-XX** etc..
 - **Types de produit** : Hosted private cloud powered by VMware, Service Pack.
-- **Actions** : C'est ici que vous ajoutez votre rôle (que vous allons voir à l'étape 3).
+- **Actions** : C'est ici que vous ajoutez votre rôle (voir étape 3).
 
 2. Pour finir, cliquer sur `Créer une politique`{.action}
 
@@ -52,7 +52,7 @@ Pour accéder au service IAM, accéder depuis la console OVHcloud : `Support Sta
 
 ![IAM POLICY](images/iam_role_policy_14.png){.thumbnail}
 
-2. Pour modifier une politique, cliquer sur `...` > `Modifier la politique`{.action}
+2. Pour modifier une politique, cliquer sur `...`{.action} > `Modifier la politique`{.action}
 
 Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 
@@ -60,7 +60,7 @@ Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 - **Description** : Choisissez ce que vous voulez.
 - **Ressources** : Ajoutez les ressources concernées par votre politique **pcc-XX-XX-XX-XX/servicepack, pcc-XX-XX-XX-XX** etc..
 - **Types de produit** : Hosted private cloud powered by VMware, Service Pack.
-- **Actions** : C'est ici que vous ajoutez votre rôle (que vous allons voir à l'étape 3).
+- **Actions** : C'est ici que vous ajoutez votre rôle (voir étape 3).
 
 3. Pour finir, Cliquer sur `Modifier la politique`{.action}
 
