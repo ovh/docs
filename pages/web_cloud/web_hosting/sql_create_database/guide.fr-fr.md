@@ -1,7 +1,7 @@
 ---
 title: "Créer une base de données sur son hébergement web"
 excerpt: "Découvrez comment créer une base de données sur votre hébergement web OVHcloud"
-updated: 2024-05-16
+updated: 2024-05-17
 ---
 
 ## Objectif
@@ -64,7 +64,7 @@ Une nouvelle fenêtre s'affiche :
 
 |Information|Description|
 |---|---|
-|**Utilisateur**|Entrez un nom d'utilisateur qui sera associé à votre base de données (6 caractères maximum en plus du préfixe utilisateur déjà renseigné).|
+|**Utilisateur**|Entrez un nom d'utilisateur qui sera associé à votre base de données (6 caractères maximum en plus du préfixe utilisateur déjà renseigné). Le nom de votre base de donnée sera identique au nom d'utilisateur. **Une fois la création validée, le nom d'utilisateur et le nom de la base de données ne pourront plus être modifiés**|
 |**Mot de passe**|Entrez un mot de passe pour cet utilisateur en respectant les *critères* mentionnés plus bas.|
 |**Confirmation**|Saisissez de nouveau le mot de passe pour cet utilisateur.|
 
