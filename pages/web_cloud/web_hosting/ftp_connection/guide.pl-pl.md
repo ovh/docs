@@ -1,7 +1,7 @@
 ---
 title: "Logowanie do przestrzeni dyskowej FTP hostingu"
 excerpt: "Dowiedz się, jak się zalogować do przestrzeni dyskowej FTP Twojego hostingu WWW OVHcloud"
-updated: 2023-06-01
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -145,7 +145,7 @@ Po ustanowieniu połączenia SSH i w zależności od wybranej metody możesz zal
 W wierszu poleceń użyj następującej składni:
 
 ```bash
-ssh sshlogin@sshserver -p connectionport
+ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
 Zastąp elementy `sshlogin`, `sshserver` i `connectionport` własnymi informacjami. 

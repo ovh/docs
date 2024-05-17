@@ -1,7 +1,7 @@
 ---
 title: "Aceder ao espaço de armazenamento FTP do alojamento web"
 excerpt: "Descubra como aceder ao espaço de armazenamento FTP do alojamento web da OVHcloud"
-updated: 2023-06-01
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -145,7 +145,7 @@ Uma vez estabelecida a ligação SSH e em função do método escolhido, existem
 Em linha de comandos, utilize a sintaxe seguinte:
 
 ```bash
-ssh sshlogin@sshserver -p connectionport
+ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
 Substitua os elementos `sshlogin`, `sshserver` e `connectionport` pelos seus próprios dados. 
