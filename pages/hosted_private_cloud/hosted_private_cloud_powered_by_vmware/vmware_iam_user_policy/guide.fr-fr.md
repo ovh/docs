@@ -8,9 +8,8 @@ updated: 2024-05-17
 **Ce quide vous explique comment associer une identité (un utilisateur) OVHcloud à une politique IAM**
 
 ## Prérequis
-- Avoir un compte OVHcloud, voir guide : [Comment créer un compte OVHcloud.](https://help.ovhcloud.com/csm/fr-account-create-ovhcloud-account?id=kb_article_view&sysparm_article=KB0043023){.external}.
-- Disposer au préalable d'un ou plusieurs produits liés à ce compte OVHcloud de type : **Hosted Private Cloud powered by VMware / Service Pack VMware**.
-- Savoir [comment utiliser les politiques IAM depuis votre espace client.](/pages/hosted_private_cloud/){.external}.
+- Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
+- Avoir au préalable un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware)
 
 ## En pratique
 
