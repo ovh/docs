@@ -1,7 +1,7 @@
 ---
 title: 'Gérer vos services VoIP'
 excerpt: "Découvrez comment gérer vos services VoIP depuis l'espace client OVHcloud"
-updated: 2022-02-15
+updated: 2024-05-17
 ---
 
 ## Objectif
@@ -12,16 +12,27 @@ Afin d'adapter votre téléphonie à votre activité professionnelle, vous pouve
 
 ## Prérequis
 
-- Disposer de [services VoIP OVHcloud](/links/telecom/telephonie-voip){.external}.
+- Disposer de [services VoIP OVHcloud](/links/telecom/telephonie-voip).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
+
+- [Changer d'offre VoIP](#change-offer)
+    - [Annuler un changement d'offre VoIP](#cancel-change-offer)
+- [Modifier le nombre d'appels simultanés](#simultaneous-calls)
+- [Convertir une ligne SIP en numéro alias](#sip-to-alias)
+- [Convertir un numéro alias en ligne SIP](#alias-to-sip)
+- [Résilier une ligne SIP / Trunk](#cancel-sip)
+- [Résilier un numéro alias](#cancel-alias)
+- [Résilier une ligne Fax](#cancel-fax)
+
+<a name="change-offer"></a>
 
 ### Changer d'offre VoIP
 
 Un changement dans votre activité peut vous amener à vouloir modifier le forfait de votre ligne VoIP, pour le passer en Offre VoIP Entreprise ou ajouter des heures de communication vers les téléphones mobiles. Ce changement peut être effectué depuis votre espace client.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}. Sélectionnez votre groupe de téléphonie puis la ligne VoIP souhaitée.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}. Sélectionnez votre groupe de téléphonie puis la ligne VoIP souhaitée.
 Dans l'onglet `Gestion`{.action}, cliquez sur `Changer d'offre`{.action}. L'offre actuelle de votre ligne VoIP vous sera alors présentée. Cliquez sur `Modifier l'offre`{.action} pour accéder aux offres disponibles.
 
 Sélectionnez, dans le menu déroulant des offres disponibles, l'offre de votre choix.<br>
@@ -39,11 +50,15 @@ Ainsi, un changement d'offre VoIP sollicité entre le 1er et le 31 janvier serai
 > Une offre VoIP Entreprise ne peut pas évoluer vers une offre VoIP Découverte.
 >
 
+<a name="cancel-change-offer"></a>
+
 #### Annuler un changement d'offre VoIP
 
 Le changement d'offre peut être annulé à tout moment, avant son application lors du prochain renouvellement de la ligne. Pour annuler un changement d'offre, sélectionnez votre ligne VoIP dans l'espace-client OVHcloud puis cliquez successivement sur `Gestion`{.action} et sur `Changer d'offre`{.action}. Cliquez enfin sur `Annuler le changement d'offre`{.action}.
 
 ![changement-d-offre-voip](images/sip_change_offer_5.png){.thumbnail}
+
+<a name="simultaneous-calls"></a>
 
 ### Modifier le nombre d'appels simultanés
 
@@ -69,8 +84,10 @@ Cliquez sur `Générer le bon de commande`{.action} afin de l'afficher. L'option
 
 > [!primary] **Diminution du nombre d'appels simultanés**
 >
-Si vous souhaitez diminuer le nombre d'appels simultanés sur une ligne, ce changement ne sera effectif que lors du prochain renouvellement de la ligne. Le renouvellement est automatique, à chaque début de mois, lors de la facturation de vos services. Ainsi, un retrait d'appels simultanés sollicité entre le 1er et le 31 janvier serait appliqué à partir du 1er février.
+> Si vous souhaitez diminuer le nombre d'appels simultanés sur une ligne, ce changement ne sera effectif que lors du prochain renouvellement de la ligne. Le renouvellement est automatique, à chaque début de mois, lors de la facturation de vos services. Ainsi, un retrait d'appels simultanés sollicité entre le 1er et le 31 janvier serait appliqué à partir du 1er février.
 >
+
+<a name="sip-to-alias"></a>
 
 ### Convertir une ligne SIP en numéro alias
 
@@ -98,10 +115,16 @@ Une fois la conversion réalisée, votre ligne ne sera plus opérationnelle et v
 
 > [!warning]
 > 
-> Si un téléphone Plug And Phone est attaché à cette ligne, ce dernier ne fonctionnera plus et nous vous proposerons un retour de matériel.
+> Si un téléphone Plug And Phone est attaché à cette ligne, ce dernier ne fonctionnera plus et nous vous proposerons un [retour de matériel (RMA)](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma).
 >
 
+<a name="alias-to-sip"></a>
+
 ### Convertir un numéro alias en ligne SIP
+
+> [!primary]
+>
+> Un numéro [porté depuis un autre opérateur de téléphonie](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) ne peut pas être converti en ligne SIP.
 
 Afin de répondre à tous les besoins en téléphonie, il est également possible de convertir un numéro alias en ligne SIP.
 
@@ -121,6 +144,8 @@ Toute demande de conversion sera prise en compte lors de votre prochaine factura
 Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez lui [associer un téléphone Plug & Phone OVHcloud](/pages/web_cloud/phone_and_fax/voip/commander_associer_ou_changer_un_telephone#obtenir-un-telephone-plug-phone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel.<br>
 Dans ce dernier cas de figure, nous vous invitons de sécuriser votre ligne en suivant les instructions de [ce guide](/pages/web_cloud/phone_and_fax/voip/secure-sip-line).
 
+<a name="cancel-sip"></a>
+
 ### Résilier une ligne SIP / Trunk <a name="resilier-sip-trunk"></a>
 
 Pour résilier une ligne **SIP** ou **Trunk** OVHcloud, sélectionnez-la dans votre espace client OVHcloud puis, depuis l'onglet `Gestion`{.action}, cliquez sur `Résiliation de la ligne`{.action}.
@@ -133,10 +158,12 @@ Toute demande de résiliation sera prise en compte lors de votre prochaine factu
 
 > [!warning]
 > 
-> Si un téléphone Plug And Phone est attaché à cette ligne, ce dernier ne fonctionnera plus et nous vous proposerons un retour de matériel.
+> Si un téléphone Plug And Phone est attaché à cette ligne, ce dernier ne fonctionnera plus et nous vous proposerons un [retour de matériel (RMA)](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma).
 >
 
-### Résilier un numéro alias <a name="resilier-alias"></a>
+<a name="cancel-alias"></a>
+
+### Résilier un numéro alias
 
 Pour résilier un numéro alias, sélectionnez-le dans votre espace client OVHcloud puis, depuis l'onglet `Mon numéro`{.action}, cliquez sur `Résilier mon numéro`{.action}.
 
@@ -151,7 +178,9 @@ Toute demande de résiliation sera prise en compte lors de votre prochaine factu
 > Si le numéro fait partie d'un pool de numéros, sa résiliation entraînera la résiliation de l'ensemble du pool.
 >
 
-### Résilier une ligne Fax <a name="resilier-fax"></a>
+<a name="cancel-fax"></a>
+
+### Résilier une ligne Fax
 
 Pour résilier une ligne Fax OVHcloud, sélectionnez-la dans votre espace client OVHcloud puis, depuis l'onglet `Gestion`{.action}, cliquez sur `Résiliation du fax`{.action}.
 
@@ -163,7 +192,7 @@ Toute demande de résiliation sera prise en compte lors de votre prochaine factu
 
 > [!warning]
 > 
-> Si un équipement de type Plug & Fax est attaché à cette ligne, ce dernier ne fonctionnera plus et nous vous proposerons un retour de matériel.
+> Si un équipement de type Plug & Fax est attaché à cette ligne, ce dernier ne fonctionnera plus et nous vous proposerons un [retour de matériel (RMA)](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma).
 >
 
 ## Aller plus loin
