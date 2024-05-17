@@ -103,6 +103,11 @@ Sprawdź, czy wszystkie wyświetlane informacje są poprawne. Jeśli tak, klikni
 
 Powtórz ten proces tyle razy, ile chcesz, aby utworzyć kilka baz danych (w ramach limitu baz danych dostępnych w Twojej ofercie).
 
+> [!warning]
+>
+> Po zatwierdzeniu procesu tworzenia bazy danych nie można już zmieniać nazwy użytkownika ani nazwy bazy danych.
+>
+
 ### Etap 3 - Zarządzanie bazą danych <a name="step3"></a>
 
 > [!warning]
