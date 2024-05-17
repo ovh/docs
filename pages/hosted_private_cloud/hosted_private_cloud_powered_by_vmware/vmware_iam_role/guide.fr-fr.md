@@ -6,18 +6,22 @@ updated: 2024-05-17
 
 ## Objectif
 
-**Dans ce guide, nous allons vous expliquer comment créer un role IAM dans Hosted Private Cloud - VMware on OVHcloud**
+**Dans ce guide, nous allons vous expliquer comment créer un role IAM dans Hosted Private Cloud - VMware on OVHcloud**.
 
 ## Prérequis
 
-- Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Avoir au préalable un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware)
+- Disposer d'un [compte OVHcloud.](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
+- Avoir au préalable un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware).
 
 ## En pratique
 
 Vous disposez de 2 rôles IAM Vsphere par default, malgré ça nous allons vous expliquer comment créer un rôle.
 
-### Comment créer un rôle IAM dans mon PCC ?
+### Comment créer un rôle IAM dans mon PCC ? (optionnel)
+
+La création d'un rôle est optionnel, car vous disposez de 2 rôles par défaut activé avec IAM dans votre Hosted Private Cloud - VMware on OVHcloud.  
+
+Cependant, voici la procédure pour en créer un.
 
 #### Via l'accès client :
 > [!primary]
@@ -27,11 +31,11 @@ Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/
 
 Pour créer votre rôle IAM dans le PCC : 
 
-1. Aller dans la section de votre cloud privée : `Hosted Private Cloud > VMWARE > PCC-XX > Utilisateurs`{.action}
+1. Aller dans la section de votre cloud privée : `Hosted Private Cloud > VMWARE > PCC-XX > Utilisateurs.`{.action}
 
 2. Cliquer sur : `Créer un rôle IAM`{.action}
       
-Ensuite quand la fenêtre s'affiche et Choisissez le nom de votre rôle puis,
+Ensuite quand la fenêtre s'affiche et Choisissez le nom de votre rôle
 
 3. Cliquer sur : `Confirmer`{.action}
 
@@ -80,7 +84,7 @@ RETOUR:
 ```
 
 ## A suivre
-Vous pouvez maintenant suivre : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
+Vous pouvez maintenant suivre : [Comment associer un role à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
 
 ## Aller plus loin
 
