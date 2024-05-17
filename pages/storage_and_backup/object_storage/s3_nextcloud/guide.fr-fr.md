@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Utiliser S3 Object Storage avec Nextcloud
 excerpt: Découvrez comment configurer le stockage dans Nextcloud pour utiliser un bucket S3 Object Storage
-updated: 2024-05-13
+updated: 2024-05-20
 ---
 
 ## Objectif

@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints and Object Storage geoavailability
-updated: 2024-05-15
+updated: 2024-05-20
 ---
 
 <style>
@@ -102,7 +102,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 
 ### Endpoint retrocompatibility
 
-Although the **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service, the **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint will also be able to address all buckets and all objects in both Standard and High Performance storage classes and will support all S3 API operations including listBucket.
+Although the **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service, the **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint will also be able to address all buckets and all objects in both Standard and High Performance storage classes and will support all S3 API operations including `listBucket`.
 
 The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the following:
 
