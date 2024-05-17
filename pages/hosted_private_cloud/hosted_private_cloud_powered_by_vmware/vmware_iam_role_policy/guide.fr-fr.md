@@ -1,27 +1,25 @@
 ---
-title: "Guides premiers pas avec IAM dans mon cloud privée VMware managé par OVHcloud"
+title: "Guides premiers pas avec IAM dans Hosted Private Cloud - VMware on OVHcloud"
 excerpt: "Comment associer un rôle Vsphere à une politique IAM"
-updated: 2024-05-24
+updated: 2024-05-17
 ---
 
 ## Objectif
-
 **Dans ce guide, nous allons vous expliquer comment créer ou modifier une politique IAM globale et lui ajouter un rôle Vsphere**
 
 ## Prérequis
-
 - Avoir un compte OVHcloud (voir guide :[Comment créer un compte OVHcloud](https://help.ovhcloud.com/csm/fr-account-create-ovhcloud-account?id=kb_article_view&sysparm_article=KB0043023)).
 - Disposer au préalable d'un ou plusieurs produits liés à ce compte OVHcloud (Hosted Private Cloud powered by VMware, Service Pack VMware etc..)
 - Savoir ["Créer et gérer des utilisateurs locaux sur un compte OVHcloud"](https://help.ovhcloud.com/csm/fr-account-managing-users?id=kb_article_view&sysparm_article=KB0043058).
 - Avoir une politique IAM [Comment créer une politique IAM"](https://help.ovhcloud.com/csm/fr-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058730).
 
-## Instruction
+## En pratique
 
 ## Etape 1
 
-### Créer une politique ? (optionnel)
+### Créer une politique (optionnel)
 
-Si vous voulez modifier une politique existante, cette étape est optionnel.
+Si vous avez une politique existante, cette étape est optionnel.
 
 #### Accéder à IAM 
 
@@ -35,7 +33,7 @@ Pour accéder au service IAM, cliquer sur le bouton en haut à droite de compte 
 
 ![IAM POLICY](images/iam_role_policy_10.png){.thumbnail}
 
-Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
+Vous retrouvez les mêmes paramètres à ajouter que lors d'une création :
 
 - **Nom de la politique** : Choisissez ce que vous voulez.
 - **Description** : Choisissez ce que vous voulez.
@@ -53,9 +51,9 @@ Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/
 
 Pour accéder au service IAM, accéder depuis la console OVHcloud : `Support Standard > Identités et accès (IAM)`{.action}
 
-Pour modifier une politique, cliquer sur `...` > `Modifier la politique`{.action}
+![IAM POLICY](images/iam_role_policy_14.png){.thumbnail}
 
-![IAM OVHCLOUD](images/iam_role_policy_8.png){.thumbnail}
+Pour modifier une politique, cliquer sur `...` > `Modifier la politique`{.action}
 
 Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 
@@ -71,55 +69,46 @@ Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 
 ## Etape 3
 
-### Comment ajouter un rôle IAM à une politique globale (policy) ?
+### Ajouter un rôle IAM à une politique globale
 
 #### Depuis l'espace client :
 
-1. Accéder à la console OVHcloud, en suivant [le lien de l'espace client](https://www.ovh.com/manager) et **connectez-vous avec vos identifiants**.
+1. Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/manager) et **connectez-vous avec vos identifiants**.
 
-2. Allez dans la section -> `Support Standard > Identités et accès (IAM) > Politiques`{.action}
+2. Aller dans la section : `Support Standard > Identités et accès (IAM) > Politiques`{.action}
+
+![IAM OVHCLOUD](images/iam_role_policy_9.png){.thumbnail}
 
 Vous retrouverez vos politiques si vous en avez créés.
 
-Pour lier un rôle à une policy, une action est le paramètre qui permet d'ajouter le rôle IAM Vsphere :
+Pour lier un rôle à une politique, aller dans **Actions**, puis **Action manuelles** :
 
-5. **Actions manuelles** :
-   1. Dans la section `Action Ajouter Manuellement > Ajouter Manuellement Des Actions.`{.action}
-   2. Copiez-collez ce paramètre avec le nom de votre rôle crée auparavant avec `pccVMware:vSphere:assumeRole?{{nom_du_rôle}}`{.action}
+1. Dans la section `Action`{.action} -> `Action ajouter manuellement`{.action}
 
-Pour commencer, vous pouvez ajouter les 2 rôles IAM crée par défaut : `iam-admin, iam-auditor`{.action}
-
-```Shell
-pccVMware:vSphere:assumeRole?iam-admin
-pccVMware:vSphere:assumeRole?iam-auditor
-```
-6. Cliquez sur `Ajouter`{.action}
+2. Copier-coller l'action suivante : `pccVMware:vSphere:assumeRole?{{nom_du_rôle}}`{.action} dans **Ajouter manuellement des actions**
 
 ![IAM ACTION ADD](images/iam_role_policy_11.png){thumbnail="h-300 .w-200"}
 
-6. Pour finir, Cliquer sur `Créer la politique`{.action} ou `Modifier la politique`{.action}
+Vous pouvez ajouter les 2 rôles IAM crée par défaut lors de l'activation du service : `iam-admin, iam-auditor`{.action}
+
+Vous retrouvez les 2 roles par défaut à copier-coller, ici :
+
+```shell
+pccVMware:vSphere:assumeRole?iam-admin
+pccVMware:vSphere:assumeRole?iam-auditor
+```
+3. Cliquez sur `Ajouter`{.action}
+
+4. Pour finir, cliquer sur `Créer la politique`{.action} ou `Modifier la politique`{.action} suivant le mode que vous avez choisie.
 
 ![IAM POLICY ADD](images/iam_role_policy_12.png){.thumbnail}
 
 ![IAM POLICY](images/iam_role_policy_13.png){.thumbnail}
 
-
-Vous avez dans le guide precedent le processus de création d'un rôle depuis l'espace client et l'API.
-
 ## A suivre :
-
-Je vous invite maintenant à associer un utilisateur OVHcloud à une politique IAM globale en suivant les instructions du tutoriel suivant : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy).
-
+Vous pouvez maintenant suivre : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy).
 
 ## Aller plus loin
-Pour aller plus loin avec IAM, vous pouvez lire ces guides :
 
-- [Comment utiliser les politiques IAM avec vSphere](https://help.ovhcloud.com/csm/fr-vmware-use-iam-vsphere?id=kb_article_view&sysparm_article=KB0059059){.external}
-- [Liste des groupes de permissions OVHcloud](https://help.ovhcloud.com/csm/fr-customer-iam-permissionsgroup?id=kb_article_view&sysparm_article=KB0060254){.external}
-- [Comment utiliser les politiques IAM depuis votre espace client](https://help.ovhcloud.com/csm/fr-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058730){.external}
-- [Comment utiliser les politiques IAM via l’API OVHcloud](https://help.ovhcloud.com/csm/fr-customer-iam-policies-api?id=kb_article_view&sysparm_article=KB0056808){.external}
-- [Gérer et exploiter - IAM](https://help.ovhcloud.com/csm/fr-documentation-manage-operate-iam?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=f9734072c014f990f0785f572a5744ed&spa=1){.external}
-- [Comment analyser les résultats de politiques IAM](https://help.ovhcloud.com/csm/fr-iam-troubleshooting?id=kb_article_view&sysparm_article=KB0060455){.external}
-  
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
