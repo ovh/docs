@@ -107,7 +107,7 @@ Geben Sie auf der neu geöffneten Seite Ihre FTP-Kennung und das zugehörige Pas
 
 Nachdem Sie zuvor das FTP-Programm Ihrer Wahl auf Ihrem Computer installiert haben (z.B. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) oder [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac), starten Sie es. 
 
-Geben Sie in den dafür vorgesehenen Feldern die Verbindungsdaten ein. 
+Geben Sie in den dafür vorgesehenen Feldern die Verbindungsdaten ein.
 
 > [!warning]
 >
@@ -149,10 +149,10 @@ Verwenden Sie in der Kommandozeile folgende Syntax:
 ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
-Ersetzen Sie im obigen Befehl:
+Ersetzen Sie im obigen Befehl diese Werte:
 
-- den Wert `sshlogin` Ihres in [Schritt 2.2](#ftpsoftware) beschriebenen FTP-Haupt-Logins (oder eines FTP-Logins mit SSH-Zugang);
-- die `XXX` durch die der Nummer des Clusters entsprechenden Ziffern, in dem sich Ihr Webhosting befindet.
+- `sshlogin` mit dem in [Schritt 2.2](#ftpsoftware) beschriebenen FTP-Haupt-Login (oder einem FTP-Login bei SSH-Zugang)
+- `XXX` mit der Nummer des Clusters, auf dem sich Ihr Webhosting befindet.
 
 Anschließend werden Sie aufgefordert, das Passwort des SSH-Benutzers einzugeben.
 
