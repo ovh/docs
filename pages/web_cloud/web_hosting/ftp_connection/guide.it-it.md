@@ -148,7 +148,10 @@ Da riga di comando, utilizza questa sintassi:
 ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
-Sostituisci `sshlogin`, `sshserver` e `connectionport` con le tue informazioni. 
+Nel comando precedente, sostituisci:
+
+- il valore `sshlogin` dal tuo login FTP principale descritto nello [step 2.2](#ftpsoftware) (o da un login FTP che dispone degli accessi SSH);
+- i `XXX` con le cifre corrispondenti al numero del cluster in cui si trova l’hosting Web.
 
 Una volta inviato il comando, ti verrà chiesto di inserire la password dell'utente SSH.
 
