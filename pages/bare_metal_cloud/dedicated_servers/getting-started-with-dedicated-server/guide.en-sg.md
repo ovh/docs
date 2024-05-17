@@ -1,7 +1,7 @@
 ---
 title: "How to get started with a dedicated server"
 excerpt: "Find out how to manage a dedicated server in the OVHcloud Control Panel and how to start with configuring and securing a server"
-updated: 2024-05-15
+updated: 2024-05-17
 ---
 
 ## Objective
@@ -102,7 +102,7 @@ Finally, click `Confirm`{.action} to trigger the operating system installation o
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 #### Linux

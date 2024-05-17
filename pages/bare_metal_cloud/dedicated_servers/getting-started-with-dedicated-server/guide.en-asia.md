@@ -1,7 +1,7 @@
 ---
 title: "How to get started with a dedicated server"
 excerpt: "Find out how to manage a dedicated server in the OVHcloud Control Panel and how to start with configuring and securing a server"
-updated: 2024-05-15
+updated: 2024-05-17
 ---
 
 ## Objective
@@ -43,7 +43,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 > Find more information about server operating systems on [our web page](https://www.ovhcloud.com/asia/bare-metal/os/).
 >
 
-You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). In the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
+You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](/links/manager). In the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 ![Reinstall button](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Finally, click `Confirm`{.action} to trigger the operating system installation o
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 #### Linux
