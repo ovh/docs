@@ -1,11 +1,11 @@
 ---
 title: "Guides premiers pas avec IAM dans Hosted Private Cloud - VMware on OVHcloud"
-excerpt: "Découvrer comment associer un rôle Vsphere à une politique IAM"
+excerpt: "Découvrez comment associer un rôle Vsphere à une politique IAM"
 updated: 2024-05-17
 ---
 
 ## Objectif
-**Dans ce guide, nous allons vous expliquer comment créer ou modifier une politique IAM globale et lui ajouter un rôle Vsphere**
+**Dans ce guide, nous allons vous expliquer comment créer ou modifier une politique IAM globale et lui ajouter un rôle Vsphere**.
 
 ## Prérequis
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
