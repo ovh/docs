@@ -145,7 +145,7 @@ The guide to getting started with the NSX solution is available on [this link](/
 
 ### 9.2.5 Data encryption
 
-On a SecNumcloud or non-SecNumcloud qualified infrastructure, you can apply encryption at rest using the vNKP brick available on the service to encrypt VMs or at the datastore level of a vSAN Cluster.
+On your infrastructure, you can apply encryption at rest using the vNKP brick available on the service to encrypt VMs or at the datastore level of a vSAN Cluster.
 
 The same operation can be carried out if the customer chooses to use a KMS external to the OVHcloud solution.
 
