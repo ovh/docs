@@ -40,19 +40,19 @@ Vous retrouvez les mêmes paramètres à ajouter que lors d'une création :
 - **Types de produit** : Hosted private cloud powered by VMware, Service Pack.
 - **Actions** : C'est ici que vous ajoutez votre rôle.
 
-4. Pour finir, cliquer sur `Créer une politique`{.action}
+2. Pour finir, cliquer sur `Créer une politique`{.action}
 
 ## Etape 2
 
 ### Modifier une politique
 
-Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/manager) et connecter vous avec vos identifiants.
+1. Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/manager) et connecter vous avec vos identifiants.
 
 Pour accéder au service IAM, accéder depuis la console OVHcloud : `Support Standard > Identités et accès (IAM)`{.action}
 
 ![IAM POLICY](images/iam_role_policy_14.png){.thumbnail}
 
-Pour modifier une politique, cliquer sur `...` > `Modifier la politique`{.action}
+2. Pour modifier une politique, cliquer sur `...` > `Modifier la politique`{.action}
 
 Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 
