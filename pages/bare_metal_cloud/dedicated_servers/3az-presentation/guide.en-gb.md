@@ -1,5 +1,5 @@
 ---
-title: '3-AZ - High Availability and Redundancy for Bare Metal customers'
+title: 'OVHcloud 3-AZ Region - Service presentation'
 excerpt: 'Discover OVHcloud 3-AZ service, offering unparalleled high availability and redundancy across three data centers'
 updated: 2024-05-17
 ---

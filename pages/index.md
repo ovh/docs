@@ -105,6 +105,7 @@
             + [Migrate data from one dedicated server to another](bare_metal_cloud/dedicated_servers/migrate_a_server_to_another)
             + [Configuring a new Windows Server installation](bare_metal_cloud/dedicated_servers/windows_first_config)
             + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)
+            + [OVHcloud 3-AZ Region - Service presentation](bare_metal_cloud/dedicated_servers/3az-presentation)
         + [Security](bare-metal-cloud-dedicated-servers-security)
             + [Dedicated Servers service Security Specifications](account_and_service_management/account_information/security-specifications-dedicated-servers)
             + [Configuring the firewall on Linux with iptables](bare_metal_cloud/dedicated_servers/firewall-Linux-iptable)
