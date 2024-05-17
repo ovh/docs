@@ -83,7 +83,7 @@ Customers with a Hosted Private Cloud infrastructure have the option of retrievi
 
 | **Name** | **Capacity** | **Documentation** |
 | --- | --- | --- |
-| Control Panel and service | Manage customer accounts and services on which each account has access rights. | [Preparing an environment for using the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)<br>[Getting started with the OpenStack API](/pages/public_cloud/compute/starting_with_nova)<br>[API Rate Limits](/pages/public_cloud/compute/api_rate_limits) |
+| Control Panel and service | Manage customer accounts and services on which each account has access rights. | [API calls for Private Cloud](https://api.ovh.com/console/#/dedicatedCloud) |
 
 ## 7 - Users accounts
 
