@@ -1,6 +1,6 @@
 ---
 title: "Guides premiers pas avec IAM dans Hosted Private Cloud - VMware on OVHcloud"
-excerpt: "Comment activer avec IAM dans Hosted Private Cloud - VMware on OVHcloud"
+excerpt: "Découvrez comment activer IAM dans Vsphere"
 updated: 2024-05-17
 ---
 
