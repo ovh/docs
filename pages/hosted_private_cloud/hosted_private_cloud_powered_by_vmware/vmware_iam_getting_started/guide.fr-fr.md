@@ -4,37 +4,24 @@ excerpt: "Comment fonctionne IAM dans un cloud privé VMware managé par OVHclou
 updated: 2024-05-24
 ---
 
-<style>
-.w-400 {
-  max-width:400px !important;
-}
-.h-600 {
-  max-height:600px !important;
-}
-</style>
-
-
-# Table des matières
-1. [Objectif](#Objectif)
-2. [Etape 1 - En pratique](#Enpratique)
-3. [Etape 2 - FAQ](#FAQ)
-4. [A suivre - Comment activer IAM](#Asuivre)
-5. [Aller plus loin](#Allerplusloin)
-
----
 ## Objectif
 **Dans ce guide, nous allons vous expliquer comment démarrer avec IAM dans votre Cloud Privée VMware sur OVHcloud et voir quelques questions réponses dans la FAQ** 
 
----
+## Prérequis
+- Avoir un compte OVHcloud (voir guide :[Comment créer un compte OVHcloud](https://help.ovhcloud.com/csm/fr-account-create-ovhcloud-account?id=kb_article_view&sysparm_article=KB0043023)).
+- Disposer au préalable d'un ou plusieurs produits liés à ce compte OVHcloud (Hosted Private Cloud powered by VMware, Service Pack VMware etc..)
+- Savoir ["Créer et gérer des utilisateurs locaux sur un compte OVHcloud"](https://help.ovhcloud.com/csm/fr-account-managing-users?id=kb_article_view&sysparm_article=KB0043058).
+- Savoir ["Comment utiliser les politiques IAM depuis votre espace client"](https://help.ovhcloud.com/csm/fr-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058730).
+
 ## Etape 1 : En pratique
 
-## Premiers pas avec IAM et mon cloud privée VMware managé par OVHcloud
+### Premiers pas avec IAM et mon cloud privée VMware managé par OVHcloud
 
 Pour utiliser IAM dans votre cloud privé, il va faut : 
 
-- [x] Activer IAM.
+1. Activer IAM.
 
-- [x] Créer une politique IAM globale liée à mon identité OVHcloud.
+2. Créer une politique IAM globale liée à mon identité OVHcloud.
 
 Des étapes supplémentaires sont nécessaires, nous allons les détailler dans la suite de ce guide.
 
@@ -54,12 +41,10 @@ Voici les éléments nécessaires à une politique globale :
 - Actions : **Groupes de permissions, Ajoutées manuellement -> Rôle Vsphere/IAM**
 - Utilisateurs : **Utilisateur 1/2/3**
 
-<details>
-<summary>Schema IAM
 
-</summary>
+Schema IAM
 
-<summary> Voir le diagramme du fonctionnement de IAM avec un cloud privé OVHcloud :</summary> 
+Voir le diagramme du fonctionnement de IAM avec un cloud privé OVHcloud :
 
 ![Schema IAM](images/iam_schema.png){.thumbnail}
 
@@ -67,7 +52,6 @@ Voici les éléments nécessaires à une politique globale :
 
 ![Schema IAM](images/iam_vmware_schema_3.png){.thumbnail}
 
-</details>
 
 ## Etape 2 : FAQ
 
@@ -121,7 +105,7 @@ Un rôle peut être considéré comme un modèle utilisateur avec lequel vous de
 Je vous invite maintenant à activer IAM dans votre PCC en suivant les instructions du tutoriel : 
 - [Comment activer IAM dans un cloud privé VMware managé par OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
 
----
+
 ## Aller plus loin
 
 Pour aller plus loin avec IAM, vous pouvez lire ces guides :

@@ -4,14 +4,6 @@ excerpt: "Utiliser les roles IAM dans une infrastructure VMware managé par OVHc
 updated: 2024-05-24
 ---
 
-# Table des matières
-1. [Objectif](#Objectif)
-2. [Prérequis pour commencer](#Prérequis)
-3. [Instruction - Comment créer un rôle](#Instruction)
-4. [A suivre - Les politiques](#Asuivre)
-6. [Aller plus loin](#Aller plus loin)
-
----
 ## Objectif
 
 **Dans ce guide, nous allons vous expliquer comment créer un role IAM dans votre cloud privée VMware sur OVHcloud**
@@ -27,23 +19,23 @@ updated: 2024-05-24
 
 Vous disposez de 2 rôles IAM Vsphere par default, malgré ça nous allons vous expliquer comment créer un rôle.
 
-## Comment créer un rôle IAM dans mon PCC ?
+### Comment créer un rôle IAM dans mon PCC ?
 
-## Via l'accès client :
+#### Via l'accès client :
 > [!TIP]
 > Les rôles IAM sont préfixés par : {{iam-}}
 
-Accéder à la console OVHcloud, en suivant [le lien de l'espace client](https://www.ovh.com/manager) et **Connectez-vous avec vos identifiants**.
+Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/manager) et **Connectez-vous avec vos identifiants**.
 
 Pour créer votre rôle IAM dans le PCC : 
 
-1. Allez dans la section de votre cloud privée -> `Hosted Private Cloud > PCC-XX > Utilisateurs`
+1. Aller dans la section de votre cloud privée : `Hosted Private Cloud > PCC-XX > Utilisateurs`{.action}
 
-2. Cliquez sur -> `Créer un rôle IAM`
+2. Cliquer sur : `Créer un rôle IAM`{.action}
       
 Ensuite quand la fenêtre s'affiche et Choisissez le nom de votre rôle puis,
 
-3. Cliquez sur -> `Confirmer`
+3. Cliquer sur : `Confirmer`{.action}
 
 Vous pouvez après éditer les droits du groupe de la même manière qu'avec un utilisateur local Vsphere. Vous pouvez aussi faire le choix d'être **Vsphere Admin** dans les permissions managées de la politique IAM.
 
@@ -51,7 +43,7 @@ Vous pouvez après éditer les droits du groupe de la même manière qu'avec un 
 
 ![IAM role add](images/iam_role_9.png){.thumbnail}
 
-## Via l'API OVHcloud : 
+#### Via l'API OVHcloud : 
 
 > [!TIP]
 > Les rôles IAM sont préfixés par "iam-"
@@ -89,21 +81,10 @@ RETOUR:
 }
 ```
 
-### Via l'API OVHcloud avec Curl :
-
-```Shell
-curl -X POST "https://eu.api.ovh.com/v1/dedicatedCloud/pcc-XX-XX-XX-XX/iam/addRole" \
- -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc3NTMzZTUwYTkyZTI1MTNiYzFmOGUyNGNmMjM4MmRiMjk5Y2RiZDcyMTJjNjlhYTMxMzMzOTY3MmYzM2I5ZWQiLCJpYXQiOjE3MTU3NzAwMzF9.L2nG4wZq43s06Gbq3JL5tjQ3pNLUBZUNwv-tOs__G1ZCHhUHdb63WNqpT7b_3cf7JiG7PqxtW7FOu2l5VdHRCQ"\
- -H "content-type: application/json" \
- -d '{"name":"iam-role-name"}' \
-```
-
 ## A suivre : Associer un utilisateur à une politique IAM globale
 
 Je vous invite maintenant à suivre le guide suivant : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
 
----
 ## Aller plus loin
 
 Pour aller plus loin avec IAM, vous pouvez lire ces guides :
