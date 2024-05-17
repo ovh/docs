@@ -38,7 +38,7 @@ Vous retrouvez les mêmes paramètres à ajouter que lors d'une création :
 - **Description** : Choisissez ce que vous voulez.
 - **Ressources** : Ajoutez les ressources concernées par votre politique **pcc-XX-XX-XX-XX/servicepack, pcc-XX-XX-XX-XX** etc..
 - **Types de produit** : Hosted private cloud powered by VMware, Service Pack.
-- **Actions** : C'est ici que vous ajoutez votre rôle.
+- **Actions** : C'est ici que vous ajoutez votre rôle (que vous allons voir à l'étape 3).
 
 2. Pour finir, cliquer sur `Créer une politique`{.action}
 
@@ -60,7 +60,7 @@ Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 - **Description** : Choisissez ce que vous voulez.
 - **Ressources** : Ajoutez les ressources concernées par votre politique **pcc-XX-XX-XX-XX/servicepack, pcc-XX-XX-XX-XX** etc..
 - **Types de produit** : Hosted private cloud powered by VMware, Service Pack.
-- **Actions** : C'est ici que vous ajoutez votre rôle.
+- **Actions** : C'est ici que vous ajoutez votre rôle (que vous allons voir à l'étape 3).
 
 3. Pour finir, Cliquer sur `Modifier la politique`{.action}
 
@@ -69,6 +69,8 @@ Vous retrouverez les mêmes paramètres à ajouter que lors d'une création :
 ## Etape 3
 
 ### Ajouter un rôle IAM à une politique globale
+
+Lors de l'activation d'IAM dans Vsphere, 2 rôles sont ajoutés par défaut (iam-admin, iam-auditor). Ce sont ceux que nous allons ajouter ici.
 
 #### Depuis l'espace client :
 
