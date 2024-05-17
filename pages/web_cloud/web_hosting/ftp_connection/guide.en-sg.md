@@ -1,7 +1,7 @@
 ---
 title: "Logging in to your web hosting plan’s FTP storage space"
 excerpt: "Find out how to log in to your OVHcloud web hosting plan’s FTP storage space"
-updated: 2023-06-01
+updated: 2024-05-17
 ---
 
 ## Objective
@@ -141,7 +141,7 @@ Once the SSH connection has been established using the method chosen, there are 
 At the command line, use the following syntax:
 
 ```bash
-ssh sshlogin@sshserver -p connectionport
+ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
 Replace the elements `sshlogin`, `sshserver` and `connectionport` with your own information. 

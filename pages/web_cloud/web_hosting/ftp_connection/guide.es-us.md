@@ -1,7 +1,7 @@
 ---
 title: "Conectarse al espacio de almacenamiento FTP de un alojamiento web"
 excerpt: "Descubra cómo conectarse al espacio de almacenamiento FTP de un alojamiento web de OVHcloud"
-updated: 2023-06-01
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -145,7 +145,7 @@ Una vez establecida la conexión SSH, existen dos formas de conectarse según el
 En línea de comandos, utilice la sintaxis siguiente:
 
 ```bash
-ssh sshlogin@sshserver -p connectionport
+ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
 Sustituya los elementos `sshlogin`, `sshserver` y `connectionport` por sus propios datos. 
