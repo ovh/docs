@@ -49,6 +49,6 @@ Migracja MySQL z Oracle na Percona Server dla MySQL ma na celu zwiększenie wyda
 
 [Tworzenie bazy danych na hostingu](/pages/web_cloud/web_hosting/sql_create_database).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
