@@ -1,7 +1,7 @@
 ---
 title: Transfert des logs (Logs Forwarding) TCP / HTTP / HTTPS du Load Balancer Public Cloud
 excerpt: Découvrez comment transférer vos logs depuis un Load Balancer Public Cloud vers Logs Data Platform
-updated: 2024-05-06
+updated: 2024-05-17
 flag: hidden
 ---
 
@@ -33,34 +33,37 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 
 Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wiki/HAProxy){.external} (le composant open source utilisé pour la répartition de charge).
 
-Les logs contiennent les champs suivants :
+### Contenu des logs pour listeners TCP : `TCP`, `HTTP`,  `TERMINATED_HTTPS`, `HTTPS`
 
-| Nom du champ | Description | Unité |
+| Nom du champ | Description | Type |
 |--------------|-------------|-------|
-| project_id | ID du projet Public Cloud auquel appartient le Load Balancer | uuid |
-| load_balancer_id | ID du load balancer ayant reçu la demande/connexion | uuid |
-| listener_id | ID du listener qui a reçu la demande/connexion | uuid |
+| accept_date | Horodatage auquel la requête/connexion a été effectuée | datetime (avec résolution en millisecondes) ex. 25/Mar/2024:14:07:19.536 |
+| bytes_read | Nombre d'octets lus par le serveur | *Integer* |
+| bytes_uploaded | Nombre d'octets envoyés par le serveur au client | *Integer* |
 | client_ip | Adresse IP du client qui a initié la connexion TCP au Load Balancer | IP |
-| client_port | Port TCP du client qui a initié la connexion TCP au Load Balancer | Numérique |
-| accept_date | Horodatage auquel la requête/connexion a été effectuée | datetime (avec résolution en millisecondes), par exemple : 25/Mar/2024:14:07:19.536 |
-| http_verb http_request http_version | La requête HTTP | String, par exemple : « GET / HTTP/1.1 » |
-| http_status | État HTTP retourné | Numérique |
-| bytes_read | Nombre d'octets lus par le serveur | Numérique |
-| bytes_uploaded | Nombre d'octets envoyés par le serveur au client | Numérique |
-| client_certificate_verify | Retourne l'ID d'erreur de vérification des résultats lorsque la connexion entrante a été établie sur une couche de transport SSL/TLS, sinon zéro si aucune erreur n'est rencontrée. | Numérique |
-| client_certificate_distinguished_name | Lorsque la connexion entrante a été établie sur une couche de transport SSL/TLS, renvoie le nom unique complet du sujet du certificat présenté par le client | String |
-| pool_id:listener_id | Pool vers lequel la requête/connexion a été redirigée | uuid |
-| member_id | Membre auquel la requête/connexion a été envoyée | uuid |
-| tcp_total_session_duration_time | Durée en millisecondes pendant laquelle la session TCP a été ouverte lorsque cette demande est effectuée | Numérique |
-| termination_state | L'indicateur de fin de session : 2 lettres pour TCP, 4 lettres pour HTTP tous les détails sur la [page de documentation HAProxy](https://docs.haproxy.org/2.6/configuration.html#8.5){.external} | String (par exemple « ---- ») |
-
-Les champs suivants sont calculés à partir de `client_ip` et fournis dans les logs :
-
-| Nom du champ | Description | Unité |
-|--------------|-------------|-------|
-| client_ip_city_name | Ville calculée par Geoip à partir de `client_ip`| String (ex. `Lille`) |
-| client_ip_geolocation | Latitude, longitude calculées par Logstash Geoip à partir de `client_ip`| x.x,y.y (ex. `50.624,3.0511`) XST6Y7U899O0|
+| client_ip_city_name | Ville calculée par Geoip à partir de `client_ip`| Chaine (*String*) (ex. `Lille`) |
 | client_ip_country_code | Le code pays ISO 3166 A-2 calculé par Logstash Geoip à partir de `client_ip` ISO | XX (ex. `FR`) |
+| client_ip_geolocation | Latitude, longitude calculées par Logstash Geoip à partir de `client_ip`| x.x,y.y (ex. `50.624,3.0511`) XST6Y7U899O0|
+| client_port_int | Port TCP du client qui a initié la connexion TCP au Load Balancer | *Integer* |
+| listener_id | ID du listener qui a reçu la demande/connexion | uuid |
+| load_balancer_id | ID du load balancer ayant reçu la demande/connexion | uuid |
+| member | Membre auquel la requête/connexion a été envoyée | uuid |
+| message | Message du journal d'origine | Chaine (*String*) |
+| pool | Pool ayant traité la requête / connexion | uuid |
+| project_id | ID du projet Public Cloud auquel appartient le Load Balancer | uuid |
+| region | La région Public Cloud à laquelle appartient le load balancer | Chaine (*String*) |
+| tcp_total_session_duration_time_int | Durée en millisecondes pendant laquelle la session TCP a été ouverte lorsque cette demande est effectuée | *Integer* |
+| termination_state | L'indicateur de fin de session : 2 lettres pour TCP, 4 lettres pour HTTP tous les détails sur [page de documentation HAProxy](https://docs.haproxy.org/2.6/configuration.html#8.5){.external}| Chaine (*String*) (par exemple « ---- ») |
+| timestamp | Horodatage d'émission du journal | Chaine (*String*) |
+
+### Contenu supplémentaire pour les listeners `HTTP` & `TERMINATED_HTTPS`
+
+| Nom du champ | Description | Type |
+|--------------|-------------|-------|
+| http_request | La requête, par exemple « /index.html » | Chaine (*String*) |
+| http_status_int | Le statut HTTP retourné, par exemple « 200 » | *Integer* |
+| http_verb | Verbe HTTP utilisé dans la requête, par exemple « GET » | Chaine (*String*) |
+| http_version_num | La requête HTTP | Chaine (*String*) ex « 1.1 » | Numérique |
 
 ## En pratique
 
