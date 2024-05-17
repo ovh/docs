@@ -60,10 +60,10 @@ Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wik
 
 | Nom du champ | Description | Type |
 |--------------|-------------|-------|
-| http_request | La requête, par exemple « /index.html » | Chaine (*String*) |
+| http_request | La resource de la requête HTTP par exemple « /index.html » | Chaine (*String*) |
 | http_status_int | Le statut HTTP retourné, par exemple « 200 » | *Integer* |
 | http_verb | Verbe HTTP utilisé dans la requête, par exemple « GET » | Chaine (*String*) |
-| http_version_num | La requête HTTP | Chaine (*String*) ex « 1.1 » | Numérique |
+| http_version_num | La version HTTP de la requête, par exemple « 1.1 » | Numérique |
 
 ## En pratique
 
