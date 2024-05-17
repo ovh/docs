@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Use S3 Object Storage with Owncloud
 excerpt: Learn how to set up storage in Owncloud to use a S3 Object Storage bucket
-updated: 2024-05-13
+updated: 2024-05-20
 ---
 
 ## Objective

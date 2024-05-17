@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Hosting a static website in a S3 bucket
 excerpt: Learn how to configure a S3 bucket to host a static website
-updated: 2024-05-13
+updated: 2024-05-20
 ---
 
 ## Objective

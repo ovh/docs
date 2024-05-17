@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Héberger un site statique dans un bucket S3
 excerpt: Apprenez à configurer un bucket S3 pour héberger un site web statique
-updated: 2024-05-13
+updated: 2024-05-20
 ---
 
 ## Objectif

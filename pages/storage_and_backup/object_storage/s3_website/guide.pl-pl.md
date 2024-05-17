@@ -1,7 +1,7 @@
 ---
 title: Object Storage -  Hosting statycznej strony internetowej w S3 bucket (EN)
 excerpt: Learn how to configure a S3 bucket to host a static website
-updated: 2024-05-13
+updated: 2024-05-20
 ---
 
 ## Objective
