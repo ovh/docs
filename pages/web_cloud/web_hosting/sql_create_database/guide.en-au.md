@@ -99,6 +99,11 @@ Verify that all information displayed in the summary is correct. If this is the 
 
 Repeat this process as needed in order to create several databases (the total number of databases is limited by your web hosting plan).
 
+> [!warning]
+>
+> Once the database creation is validated, the user name and database name cannot be changed.
+>
+
 ### Step 3 - Manage your database <a name="step3"></a>
 
 > [!warning]
