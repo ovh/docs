@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un serveur dédié"
 excerpt: "Découvrez comment gérer un serveur dédié dans votre espace client OVHcloud et comment démarrer avec la configuration et la sécurisation d'un serveur"
-updated: 2024-05-15
+updated: 2024-05-17
 ---
 
 ## Objectif
@@ -102,7 +102,7 @@ Cliquez enfin sur `Confirmer`{.action} pour lancer l'installation du système d'
 > [!warning]
 > OVHcloud met à votre disposition des services dont la configuration et la gestion relèvent de votre responsabilité. Il vous appartient donc d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous avez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en œuvre de services sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) si vous avez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en œuvre de services sur un serveur.
 >
 
 #### Linux

@@ -1,7 +1,7 @@
 ---
 title: "Primeiros passos com um servidor dedicado"
 excerpt: "Descubra como gerir um servidor dedicado na sua Área de Cliente e como começar com a configuração e a segurança de um servidor"
-updated: 2024-05-15
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -16,9 +16,9 @@ Um servidor dedicado é um servidor físico ("bare metal") situado num dos nosso
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/).
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal).
 - Estar conectado em SSH em Linux ou enquanto administrador em Windows.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 > [!primary]
 >
@@ -47,7 +47,7 @@ Um servidor dedicado é um servidor físico ("bare metal") situado num dos nosso
 > Encontre mais informações sobre os sistemas operativos dos servidores em [nossa página web](https://www.ovhcloud.com/pt/bare-metal/os/).
 >
 
-Pode facilmente reinstalar o seu servidor ou escolher outra imagem de SO a instalar na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Informações gerais`{.action}, clique em `...`{.action} em frente do sistema operativo e, a seguir, em `Instalar`{.action}.
+Pode facilmente reinstalar o seu servidor ou escolher outra imagem de SO a instalar na sua [Área de Cliente OVHcloud](/links/manager). No separador `Informações gerais`{.action}, clique em `...`{.action} em frente do sistema operativo e, a seguir, em `Instalar`{.action}.
 
 ![Botão Reinstalar](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -59,7 +59,7 @@ Na nova janela, selecione uma das opções de instalação:
 
 > [!primary]
 >
-> Certos sistemas operativos ou plataformas proprietárias, como o Plesk ou o Windows, requerem licenças que geram custos suplementares. Pode comprar licenças [junto da OVHcloud](https://www.ovhcloud.com/pt/bare-metal/os/) ou junto de um revendedor externo. De seguida, deverá aplicar a sua licença no sistema operativo ou através da Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> Certos sistemas operativos ou plataformas proprietárias, como o Plesk ou o Windows, requerem licenças que geram custos suplementares. Pode comprar licenças [junto da OVHcloud](https://www.ovhcloud.com/pt/bare-metal/os/) ou junto de um revendedor externo. De seguida, deverá aplicar a sua licença no sistema operativo ou através da Área de [Cliente OVHcloud](/links/manager).
 >
 > Pode gerir todas as licenças na secção `Bare Metal Cloud`{.action} sob `Licenças`{.action}. Nesta secção, também pode encomendar licenças ou adicionar licenças existentes através do botão `Ações`{.action}.
 >
@@ -106,7 +106,7 @@ Por fim, clique em `Confirmar`{.action} para lançar a instalação do sistema o
 > [!warning]
 > A OVHcloud oferece-lhe serviços cuja configuração e gestão são da sua responsabilidade. Por isso, é da responsabilidade do cliente assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, recomendamos que contacte um [fornecedor de serviços especializado](https://partner.ovhcloud.com/pt/directory/) se tiver dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, recomendamos que contacte um [fornecedor de serviços especializado](/links/partner) se tiver dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor.
 >
 
 ### Linux
@@ -216,7 +216,7 @@ Pode ser necessário um reboot para aplicar configurações atualizadas ou para 
 reboot
 ```
 
-No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Informações gerais`{.action}, clique em `...`{.action} em face de "Estado" na zona **Estado dos serviços** e, a seguir, em `Reiniciar`{.action} e `Validar`{.action} na janela contextual.
+No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cliente OVHcloud](/links/manager). No separador `Informações gerais`{.action}, clique em `...`{.action} em face de "Estado" na zona **Estado dos serviços** e, a seguir, em `Reiniciar`{.action} e `Validar`{.action} na janela contextual.
 
 ![Reiniciar](images/rebooting-your-server.png){.thumbnail}
 
@@ -232,7 +232,7 @@ Se utilizar um servidor Windows, consulte [este guia](/pages/bare_metal_cloud/de
 
 ### Monitorização OVHcloud
 
-Pode ativar ou desativar o monitoring de um servidor dedicado a partir do separador `Informações gerais`{.action} da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A opção situa - se na secção `Estado dos serviços`.
+Pode ativar ou desativar o monitoring de um servidor dedicado a partir do separador `Informações gerais`{.action} da sua [Área de Cliente OVHcloud](/links/manager). A opção situa - se na secção `Estado dos serviços`.
 
 ![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
@@ -274,7 +274,7 @@ Todos os servidores dedicados OVHcloud são entregues com um bloco /64 IPv6. Par
 
 ### Modo rescue
 
-Para todo o tipo de problema, a primeira etapa de reparação consiste em reiniciar o seu servidor em modo de rescue a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). É importante identificar os problemas do servidor neste modo, de forma a excluir os problemas relacionados com os softwares antes de contactar as nossas equipas de suporte.
+Para todo o tipo de problema, a primeira etapa de reparação consiste em reiniciar o seu servidor em modo de rescue a partir da sua [Área de Cliente OVHcloud](/links/manager). É importante identificar os problemas do servidor neste modo, de forma a excluir os problemas relacionados com os softwares antes de contactar as nossas equipas de suporte.
 
 Consulte o manual "[Ativar e utilizar o modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)".
 
@@ -304,6 +304,6 @@ Para ativar e utilizar a opção Backup Storage, consulte [este guia](/pages/bar
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
