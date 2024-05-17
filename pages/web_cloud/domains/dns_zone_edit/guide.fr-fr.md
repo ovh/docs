@@ -84,9 +84,9 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> > [!primary]
 >> > Les adresses IPv6 sont progressivement mises en place pour pallier au manque d'adresses IPv4 dû à l'expansion continue des usages numériques. L'encodage sur 128 bits des adresses IPv6 permet ainsi de fournir un plus grand nombre d'adresses IP.
 >> >
->> >  Néanmoins, si votre serveur dispose déjà d'une IPv4, nous vous recommandons de privilégier l'utilisation de celle-ci à votre IPv6.<br>
->> >  En effet, les IPv6 ne sont pas encore correctement interprétées sur l'ensemble du réseau Internet, ce qui peut engendrer des perturbations d'affichage ou d'accès.
->
+>> > Néanmoins, si votre serveur dispose déjà d'une IPv4, nous vous recommandons de privilégier l'utilisation de celle-ci à votre IPv6.<br>
+>> > En effet, les IPv6 ne sont pas encore correctement interprétées sur l'ensemble du réseau Internet, ce qui peut engendrer des perturbations d'affichage ou d'accès.
+>>
 > **CNAME**
 >> **C**anonical **NAME** <br><br>
 >> Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
@@ -106,7 +106,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 > **Champ DNAME**
 >> **D**elegation **NAME** <br><br>
->> Permet de générer un « alias » pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible. Exemple : en créant un enregistrement DNAME de *mydomain.ovh* vers *ovh.com*, tous les sous-domaines de *mydomain.ovh* (tels que *dname.mydomain.ovh* et *xxx.mydomain.ovh*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (tels que *dname.ovh.com* et *xxx.ovh.com*). En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* et *xxx.mydomain.ovh* doivent respectivement afficher les résultats de *dname.ovh.com* et *xxx.ovh.com*.
+>> Permet de générer un « alias » pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible.<br><br> Exemple : en créant un enregistrement DNAME de *mydomain.ovh* vers *ovh.com*, tous les sous-domaines de *mydomain.ovh* (tels que *dname.mydomain.ovh* et *xxx.mydomain.ovh*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (tels que *dname.ovh.com* et *xxx.ovh.com*).<br><br>En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* et *xxx.mydomain.ovh* doivent respectivement afficher les résultats de *dname.ovh.com* et *xxx.ovh.com*.
 >>
 >> > [!warning]
 >> >
@@ -275,14 +275,14 @@ Vous avez le choix entre :
 
 Une fois la zone DNS de votre nom de domaine modifiée, un temps de propagation de 24 heures maximum est nécessaire afin que les modifications soient effectives.
 
-Si vous souhaitez réduire ce délai pour les prochaines éditions de votre zone DNS OVHcloud, vous pouvez le modifier, dans une certaine mesure, en ajustant le TTL (*Time To Live*) qui s'appliquera à tous les enregistrements de la zone DNS. 
-Pour ce faire, positionnez-vous sur l'onglet `Zone DNS`{.action} de votre espace client, cliquez sur le bouton `TTL par défaut`{.action} puis suivez les étapes qui s'affichent. 
+Si vous souhaitez réduire ce délai pour les prochaines éditions de votre zone DNS OVHcloud, vous pouvez le modifier, dans une certaine mesure, en ajustant le TTL (*Time To Live*) qui s'appliquera à tous les enregistrements de la zone DNS.
+Pour ce faire, positionnez-vous sur l'onglet `Zone DNS`{.action} de votre espace client, cliquez sur le bouton `TTL par défaut`{.action} puis suivez les étapes qui s'affichent.
 
 Vous pouvez aussi modifier le TTL d'un enregistrement DNS. Cependant, cette manipulation ne peut être effectuée que sur un enregistrement à la fois, en le modifiant ou lors d'un ajout.
 
 ### Cas particulier d'usage : l'utilisation des enregistrements CNAME <a name="techusecase"></a>
 
-Certains utilisateurs créent des zones DNS directement pour le sous-domaine d’un domaine (par exemple *subdomain-with-its-own-DNS-zone.mydomain.ovh*). La règle précisée [plus haut](#cname) dans ce guide s’applique alors également dans ce cas de figure. 
+Certains utilisateurs créent des zones DNS directement pour le sous-domaine d’un domaine (par exemple *subdomain-with-its-own-DNS-zone.mydomain.ovh*). La règle précisée [plus haut](#cname) dans ce guide s’applique alors également dans ce cas de figure.
 
 La zone DNS étant créée pour le sous-domaine (dans notre exemple *subdomain-with-its-own-DNS-zone.mydomain.ovh*), ce dernier est alors considéré comme un domaine à part entière dans sa zone DNS.
 
