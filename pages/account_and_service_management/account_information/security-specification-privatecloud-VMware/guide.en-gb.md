@@ -6,7 +6,7 @@ updated: 2024-05-17
 
 ## Objective
 
-In addition [to the responsibility model](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing) between OVHcloud and the customer for the Hosted Private Cloud powered by VMware, the purpose of this guide is to present best practices and features that customer can adopt to use the service.
+In addition to [the responsibility model](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing) between OVHcloud and the customer for the Hosted Private Cloud powered by VMware, the purpose of this guide is to present best practices and features that customer can adopt to use the service.
 
 ## 1 - Certifications
 
