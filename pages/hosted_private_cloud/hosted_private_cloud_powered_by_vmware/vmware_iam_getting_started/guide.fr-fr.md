@@ -13,6 +13,8 @@ updated: 2024-05-17
 
 ## En pratique
 
+## Etape 1 :
+
 ### Premiers pas avec IAM et Hosted Private Cloud - VMware on OVHcloud
 
 Pour utiliser IAM dans Hosted Private Cloud - VMware on OVHcloud il vous faut : 
@@ -45,6 +47,48 @@ Vous avez ici des diagrammes dédiés à l'utilisation avec Hosted Private Cloud
 ![Schema IAM 2](images/iam_vmware_schema_2.png){.thumbnail}
 
 ![Schema IAM 3](images/iam_vmware_schema_3.png){.thumbnail}
+
+## Etape 2
+
+## FAQ
+
+### Quelles sont les limitations de IAM avec Hosted Private Cloud - VMware on OVHcloud ?
+
+IAM est actuellement dans une version BETA sur la plateforme OVHcloud, les infrastructures bénéficiant d'options de sécurité renforcée ou d'un service certifié (HDS, PCI-DSS ou SNC) ne peuvent actuellement pas utiliser l'IAM OVHcloud.
+
+**SNC : SecNumCloud**
+**HDS : Hébergement de santé**
+**PCI-DSS: Hébergement de données bancaires**
+
+Un role IAM ne peut qu'uniquement être ajouté manuellement dans une politique (action : assumrole -> role_iam), vous pouvez suivre le guide [Comment créer un rôle IAM das Vsphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role) pour la solution.
+
+### Est-ce que je peux activer IAM facilement ?
+
+Oui, je peux activer IAM en cliquant sur un seul bouton depuis mon cloud privé VMware (voir guide : [Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)).
+
+### Est-ce que je peux choisir entre un utilisateur local et un utilisateur IAM lors de la connexion à Vsphere ?
+
+Oui, lorsque IAM est activé, vous avez la possibilité de choisir entre IAM et un utilisateur local Vphere, grâce à la fenêtre qui s'affiche ci-dessous :
+
+![IAM VS USER](images/iam_local_user_vs_iam.png){.thumbnail .h-250 .w-140}
+
+![IAM VS USER 2](images/iam_local_user_vs_iam_2.png){.thumbnail}
+
+### Comment est-ce que j'accède à la délégation des droits Vsphere avec IAM ?
+
+La gestion des **Identités associées**, des **Ressources**, **Groupes de ressources** et leurs autorisations dans les politiques s'effectue depuis [l'espace client](https://www.ovh.com/manager/#/dedicated/useraccount/dashboard) OVHcloud dans **Mon Profil (Support standard) > Identités et accès (IAM)**. Alors que les rôles IAM et les utilisateurs Vsphere locaux s'effectue depuis la section **Hosted Private Cloud > VMware > PCC-XX > Utilisateurs/Rôles (IAM-OVHcloud)**.
+
+### Combien de rôle sont disponibles par défaut ?
+
+Vous disposez de 2 rôles par défaut actif lors de l'activation d'IAM dans votre Hosted Private Cloud - VMware on OVHcloud.
+
+### Que représente un rôle IAM Vsphere lié à une politique ?
+
+Chaque rôle IAM de votre Hosted Private Cloud - VMware on OVHcloud correspond à une action s'écrivant sous la forme `pccVMware:vSphere:assumeRole?nom_du_role`{.action} dans une politique IAM.
+
+Par exemple, pour le rôle **iam-admin** d'un PCC, l'action est -> `pccVMware:vSphere:assumeRole?iam-admin.`{.action}
+
+Un rôle peut être considéré comme un modèle (template) utilisateur avec lequel vous définissez des droits PCC (Vsphere) et vous appliquez ces droits (ce rôle) sur un utilisateur de votre espace client OVHcloud (IAM, si vous avez lié votre utilisateur à une politique).
 
 ## A suivre 
 Vous pouvez maintenant suivre : [Comment activer IAM dans un cloud privé VMware managé par OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
