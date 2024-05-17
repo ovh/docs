@@ -225,9 +225,11 @@ Le KMS étant régionalisé, l'accès à l'API se fait directement sur la régio
 
 Par exemple, pour un KMS créé sur la région **eu-west-rbx** : <https://eu-west-rbx.okms.ovh.net>
 
->
-> Insérer connection avec le certificat
->
+En cas d'utilisation d'un navigateur, il est nécessaire de convertir le certificat en format pkcs12 :
+
+```bash
+openssl pkcs12 -export -inkey cert_key_pem.txt -in cert_key_pem.txt -out cert_key.p12
+```
 
 #### Créer une clé de chiffrement
 

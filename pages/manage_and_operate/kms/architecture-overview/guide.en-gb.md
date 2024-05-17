@@ -6,13 +6,26 @@ updated: 2024-05-14
 
 ## Objective
 
-This guide explains how we handle the resilience of the OVHcloud KMS.
+This guide explains how we handle the resilience of the OVHcloud KMS (Key Management Service).
 
 ## Instructions
 
+The OVHcloud KMS architecture has 3 main objectives.
+
+- **Confidentiality** : Assure that no one exept you can access to your key
+- **Disponibility** : Offering a high level of resilience and therefore high availability
+- **Integrity** : Making sure that keys cannot be lost or altered
+
+### Access Management
+
+Access to the keys are controlled by the [OVHcloud IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
+Only the users allowed by an IAM policy can manage the keys or use them to encrypt or sign data
+
+Even the OVHcloud employee cannot access to your keys
+
 ### KMS architecture
 
-The OVHcloud KMS is by design replicated accross multiple datacenters to ensure its high availability.
+The OVHcloud KMS is by design replicated accross multiple datacenters.
 
 ![Architecture overview](images/KMS_Overview.png){.thumbnail}
 
@@ -44,12 +57,12 @@ All customer data are always stored encrypted in the databases and in the backup
 Backup location depends on the location of the OVHcloud KMS.
 
 - **EU_WEST_RBX**
-    - KMS Backup Region 1 : EU_WEST_SBG
-    - KMS Backup Region 2 : EU_WEST_GRA
+  - KMS Backup Region 1 : EU_WEST_SBG
+  - KMS Backup Region 2 : EU_WEST_GRA
 
 - **EU_WEST_SBG**
-    - KMS Backup Region 1 : EU_WEST_RBX
-    - KMS Backup Region 2 : EU_WEST_GRA
+  - KMS Backup Region 1 : EU_WEST_RBX
+  - KMS Backup Region 2 : EU_WEST_GRA
 
 ### Disaster scenarios
 
