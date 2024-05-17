@@ -5,8 +5,7 @@ updated: 2024-05-17
 ---
 
 ## Objectif
-
-**Ce guide vous détaille comment activer IAM dans un Cloud Privée VMware par OVHcloud**
+**Ce guide vous détaille comment activer IAM avec Hosted Private Cloud - VMware on OVHcloud**
 
 ## Prérequis
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
@@ -14,11 +13,11 @@ updated: 2024-05-17
 
 ## En pratique
 
-### Activer IAM dans un PCC
+### Activer IAM
 > [!warning]
 > Cette opération peut prendre jusqu’à 30 minutes.
 
-### Pour activer IAM via l'espace client :
+### Via l'espace client :
 
 1. Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/manager) et connecter vous avec vos identifiants.
 
@@ -31,20 +30,16 @@ Pour vous aider la section correspond au lien OVHcloud manager suivant :
 
 ![Activer IAM](images/iam_enable_2.png){.thumbnail }
 
-> [!TIP]
-> Quand IAM est activé, vous pouvez constater le status **Activé** en vert (Enabled).
+> [!success]
+> Quand IAM est activé, vous pouvez voir le status **Activé** en vert (Enabled).
 
 ![Activer IAM](images/iam_enable_3.png){.thumbnail }
 
-### Comment activer IAM dans un PCC depuis l'API OVHcloud ?
+### Via l'API :
 > [!warning]
-> Cette opération pourra prendre jusqu’à 30 minutes.
-
-### Pour activer IAM via l'API :
-> [!IMPORTANT]
 > Pensez bien à remplacer le **serviceName** par le vôtre.
 
-Activer l'option IAM sur votre infrastructure depuis l'API OVHcloud :
+Pour activer l'option IAM lancer l'appel API suivant :
 
 > [!api]
 >
@@ -57,7 +52,7 @@ Activer l'option IAM sur votre infrastructure depuis l'API OVHcloud :
 
 ### Pour verifier si IAM est activé via l'API
 
-Vous pouvez contrôler l'activation avec l'appel API suivant :
+Pour contrôler l'activation d'IAM, lancer l'appel API suivant :
 
 > [!api]
 >
@@ -76,28 +71,9 @@ RETOUR :
 }
 ```
 
-### Pour verifier si IAM peut être activé via l'API
+## A suivre
 
-> [!api]
->
-> @api {v1} GET /dedicatedCloud/{serviceName}/iam/canBeEnabled
->
-
-> **Parameters:**
->
-> serviceName: La référence de votre service pcc, `pcc-XX-XX-XX-XX`.
-
-RETOUR :
-```Shell
-{
-  "message": "This option is already enabled"
-}
-```
-
-## A suivre  
-
-### Créer un rôle IAM Vsphere
-Vous pouvez maintenant suivre : [Comment créer un rôle IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
+Vous pouvez maintenant suivre : ["Comment créer un rôle Vsphere"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role).
 
 ## Aller plus loin
 

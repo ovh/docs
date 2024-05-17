@@ -1,6 +1,6 @@
 ---
 title: "Premiers pas avec IAM dans Hosted Private Cloud - VMware on OVHcloud"
-excerpt: "Comment associer une identité OVHcloud à une politique IAM"
+excerpt: "Associer une identité OVHcloud à une politique IAM"
 updated: 2024-05-17
 ---
 
@@ -21,13 +21,11 @@ updated: 2024-05-17
 
 2. Allez dans la section :`Identités et accès (IAM)`{.action} > `Politiques.`{.action}
 
+![IAM USER POLICY](images/iam_user_policy_4.png){.thumbnail}
+
 Vous retrouverez vos politiques si vous en avez.
 
 3. Cliquer sur : `...`{.action} > `Gérer les identités associées.`{.action}
-
-Si vous n'avez pas de politique définie suivez ce guide pour en créer une : [Comment ajouter un rôle IAM à une politique globale](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
-
-![IAM USER POLICY](images/iam_user_policy_2.png){.thumbnail}
 
 Il vous reste plus qu'à choisir l'identité : **utilisateurs, NIC, e-mail, groupes d'utilisateurs...** :
 
@@ -35,7 +33,7 @@ Il vous reste plus qu'à choisir l'identité : **utilisateurs, NIC, e-mail, grou
 
 Les utilisateurs disponibles apparaitront automatiquement s'ils existent.
 
-5. Valider votre choix en Cliquant sur `Ajouter.`{.action}
+5. Valider votre choix en cliquant sur `Ajouter.`{.action}
 
 ![IAM user policy](images/iam_user_policy_3.png){.thumbnail}
 
