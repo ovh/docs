@@ -148,7 +148,10 @@ W wierszu poleceń użyj następującej składni:
 ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
-Zastąp elementy `sshlogin`, `sshserver` i `connectionport` własnymi informacjami. 
+W powyższej komendzie zastąp:
+
+- wartość `sshlogin` przez główny login FTP opisany w [etap 2.2](#ftpsoftware) (lub przez login FTP z dostępem SSH);
+- `XXX` przez cyfry odpowiadające numerowi klastra, w którym znajduje się Twój hosting.
 
 Po wysłaniu polecenia zostaniesz poproszony o wpisanie hasła użytkownika SSH.
 
