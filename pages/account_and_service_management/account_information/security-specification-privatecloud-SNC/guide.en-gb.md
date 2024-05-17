@@ -166,7 +166,7 @@ The pack includes several features such as: [token validator](/pages/hosted_priv
 
 To ensure data portability and reversibility on the service, OVHcloud allows you to import and export your data (virtual machines and vCenter configuration files) autonomously in a VMDK file format or any other format supported by the VMware hypervisor. You can also use the APIs provided to facilitate these operations.
 
-OVHcloud’s portability principles are described in its own [reversibility policy](/pages/account_and_service_management/reversibility/00-global-reversibility-policy) and those specific to the Hosted Private Cloud by VMware service are set out [specific policy](/pages/account_and_service_management/reversibility/02-hosted-private-cloud-reversibility-policy).
+OVHcloud’s portability principles are described in its own [reversibility policy](/pages/account_and_service_management/reversibility/00-global-reversibility-policy) and those specific to the Hosted Private Cloud by VMware service qualified SecNumCloud are set out [specific policy](/pages/account_and_service_management/reversibility/05-snc-vmware-reversibility-policy).
 
 ### 10.1 - Erasure of customer data 
 
