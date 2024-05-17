@@ -1,6 +1,6 @@
 ---
-title: "Premiers pas avec IAM dans Hosted Private Cloud - VMware on OVHcloud"
-excerpt: "Associer une identité OVHcloud à une politique IAM"
+title: "Guides premiers pas avec IAM dans Hosted Private Cloud - VMware on OVHcloud"
+excerpt: "Découvrer comment associer une identité OVHcloud à une politique IAM"
 updated: 2024-05-17
 ---
 

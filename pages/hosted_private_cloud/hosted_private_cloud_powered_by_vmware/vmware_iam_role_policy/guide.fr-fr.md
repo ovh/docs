@@ -1,6 +1,6 @@
 ---
 title: "Guides premiers pas avec IAM dans Hosted Private Cloud - VMware on OVHcloud"
-excerpt: "Comment associer un rôle Vsphere à une politique IAM"
+excerpt: "Découvrer comment associer un rôle Vsphere à une politique IAM"
 updated: 2024-05-17
 ---
 
