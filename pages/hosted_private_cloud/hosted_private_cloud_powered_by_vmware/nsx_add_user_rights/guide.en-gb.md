@@ -1,8 +1,9 @@
 ---
-title: "Add access to NSX-T web console for a hosted private OVHcloud user"
-excerpt: "How to access NSX-T Web Console"
+title: "How to enable NSX-T in a VMware on OVHcloud Hosted Private Cloud"
+excerpt: "Find out how to add user and Datacenter rights for NSX-T"
 updated: 2024-05-16
 ---
+
 <style>
 details>summary {
 	color:rgb(33, 153, 232) !important;
@@ -17,131 +18,119 @@ details[open]>summary::before {
 }
 </style>
 
----
+
 ## Objective
 
-**This guide details how to add access to a user for NSX-T web console of your Hosted Private Cloud - VMware on OVHcloud.**
+**This guide explains how to add a user access for the NSX-T web console of your VMware on OVHcloud Hosted Private Cloud.**
 
----
 ## Requirements
 
-- Have subscribed to a [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/) offer with the options : **"Network Security Virtualization"** or **"Software-Defined Datacenter"**.
-- To know how to access the [OVHcloud Control Panel](/links/manager).
-- You must be an administrator on your VMware infrastructure on OVHcloud with the login credentials to add a user NSX-T access.
-- Have knowledge on NSX, for this read : [Getting started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
+- You have a [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/) service with the option **"Network Security Virtualization"** or **"Software-Defined Datacenter"**.
+- You have access to the [OVHcloud Control Panel](/links/manager).
+- You are the administrator on your VMware on OVHcloud infrastructure, with the login credentials to create NSX-T user access.
+- You have followed the steps in the guide: [Getting started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
----
+
 ## Instructions
 
 ### Step 1 - Access your Hosted Private Cloud
 
-#### From the control panel :
+#### In the OVHcloud Control Panel
 
 <details>
 
-<summary>How to access your Hosted Private Cloud - VMware On OVHcloud?</summary>
+<summary>How to access your VMware On OVHcloud Hosted Private Cloud service</summary>
 
-Once you have logged in to the OVHcloud Control Panel : 
+Log in to the [OVHcloud Control Panel](/links/manager).
+</br></br>
+Click on <code class="action">Hosted Private Cloud</code>.
+</br></br>
+- OVHcloud direct link: https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XX-XX-XX-X > Replace PCC-XX-XX-XX-X with the name of your PCC service.
 
-1. Click on your `Hosted Private Cloud`{.action}
-
-**Link** : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX -> `Replace PCC-XXX with the name of your private organization.`{.action}
-
-![NSX](images/nsx_user_rights_7.png)
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_7.png" loading="lazy"></p>
 
 </details>
 
 ### Step 2 - Enable NSX-T
 
-#### From the control panel :
+#### In the OVHcloud Control Panel
 
 <details>
 
-<summary>How do I enable the NSX-T web console for a user ?</summary>
+<summary>How to enable the NSX-T web console for a user</summary>
 
-From the previous page (check screenshot), on your **Hosted Private Cloud (PCC)** :
+On the previously opened page, edit the user with whom you want to access the NSX-T web interface.
+</br></br>
+Click on: <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-X</code> > <code class="action">Users</code> > <code class="action">Edit</code>. Activate the button <code class="action">NSX Interface</code>.
 
-1. Edit the user with whom you want to access the NSX-T web interface -> <code class="action">VMware</code> -> <code class="action">PCC-XX..</code> -> <code class="action">Users</code> -> <code class="action">Edit</code> and activate the button<code class="action">NSX Interface</code>.
-
-![NSX screenshot](images/nsx_user_rights_3.png){.thumbnail}
-
-![NSX screenshot](images/nsx_user_rights_13.png){.thumbnail}
-
-![NSX screenshot](images/nsx_user_rights_1.png){.thumbnail}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_3.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_13.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_1.png" loading="lazy"></p>
 
 </details>
 
 ### Step 3 - Add NSX-T permissions
 
-#### From the control panel :
+#### In the OVHcloud Control Panel
+
 <details>
-<summary>How do I add permissions to a user ?</summary>
+<summary>How to grant permissions to a user</summary>
 
-From the users page on your **Hosted Private Cloud (PCC)** :
+Click on: <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code> > <code class="action">Users</code> > <code class="action">Edit</code>.
 
-1. Clic on : <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code> > <code class="action">Users</code> > <code class="action">Edit</code>.
-
-![NSX screenshot](images/nsx_user_rights_7.png){.thumbnail}
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_7.png" loading="lazy"></p>
 
 </details>
 
 ### Step 4 - Add NSX-T permissions to a Datacenter
 
-#### From the control panel :
+#### In the OVHcloud Control Panel
 
 <details>
-<summary>How do I add permissions to my datacenters ?</summary>
+<summary>How to add permissions to a Datacenter</summary>
 
-At this stage, you just need to modify the permissions for each datacentre you want by : 
+At this stage, you just need to modify the permissions for each Datacenter.
 </br></br>
-1. Clicking on : `VMware`{.action} > `PCC-XX-XX-XX-XX`{.action} > `Users`{.action} > `View / Edit rights for each DC`{.action}
+Click on: <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code> > <code class="action">Users</code> > <code class="action">View / Edit rights for each DC</code> > <code class="action">Modify rights</code>.
 </br></br>
-The users page of you Datacenter :
-</br></br>
-2. Clic on : `...` > `Modify rights`
-</br></br>
-3. Choose the required permissions from the 3 main sections -> <code class="action">Vsphere access</code> > <code class="action">Access to vmNetwork</code> > <code class="action">Access to the V(X)LANs</code>.
+In the new window, choose the required permissions from the 3 main sections: <code class="action">Vsphere access</code> > <code class="action">Access to vmNetwork</code> > <code class="action">Access to the V(X)LANs</code>.
 </br></br>
 The following rights are available: <strong>Operator</strong> / <strong>Administrator</strong> / <strong>None</strong> / <strong>Read-only</strong>
 </br></br>
-Only access to <code class="action">V(X)LANs</code> in <strong>Read Only</strong> is necessary to access NSX-T Web console.
+Only access to <code class="action">V(X)LANs</code> in <strong>Read-only</strong> is necessary to access the NSX-T web console.
 </br></br>
-Choose then <code class="action">Read Only</code> mode.
+Select <code class="action">Read-only</code> mode.
 </br></br>
 If you want to make changes in the NSX-T web interface, then additional rights will be required, such as <strong>Operator</strong> or <strong>Administrator</strong>.
-
-![NSX screenshot](images/nsx_user_rights_8.png){.thumbnail}
-
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_8.png" loading="lazy"></p>
 </details>
 
-### Step 5 - Access the NSX-T
+### Step 5 - Access NSX-T
 
-#### From the control panel :
+#### In the OVHcloud Control Panel
 
 <details>
-<summary>How to access NSX-T Web console?</summary>
-Always from your Hosted Private Cloud PCC tree :
+<summary>>How to access the NSX-T web console</summary>
+
+In your Hosted Private Cloud tree view, click <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code>.
 </br></br>
-1. Clic on <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code>.
-
-Link -> https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XX-XX-XX-XX > Replace `PCC-XX-XX-XX-XX`{.action} with yours.
+- OVHcloud direct link: https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XX-XX-XX-X > Replace PCC-XX-XX-XX-X with the name of your PCC service.
 </br></br>
-
-![NSX screenshot](images/nsx_user_rights_9.png){.thumbnail}
-
-![NSX screenshot](images/nsx_user_rights_10.png){.thumbnail}
-
-![NSX screenshot](images/nsx_user_rights_11.png){.thumbnail}
-
-![NSX screenshot](images/nsx_user_rights_12.png){.thumbnail}
+<img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_9.png" loading="lazy">
+</br></br>
+<img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_10.png" loading="lazy">
+</br></br>
+<img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_11.png" loading="lazy">
+</br></br>
+<img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_12.png" loading="lazy">
 
 </details>
 
-### Step 5 - Useful information
+### Step 6 - Useful information
 
-Check if NSX-T is enabled on your datacenters. You can also find your NSX-T url and version : 
+You can check if NSX-T is enabled on your Datacenter. You can also find your NSX-T URL and version:
 
-**From the API** :
+**Via the OVHcloud API**
 
 > [!api]
 >
@@ -152,8 +141,9 @@ Check if NSX-T is enabled on your datacenters. You can also find your NSX-T url 
 > serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
 > 
 
-RESPONSE:
-```Shell
+Response example:
+
+```sh
 {
   "version": "4.1.1.0.0-22224312",
   "state": "enabled",
@@ -175,13 +165,14 @@ RESPONSE:
 >
 >  Find more information on the OVHcloud API in our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
----
+
 ## Go further
 
-You can read this guide to follow go further with NSX :
-- [Gestion des segments dans NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-02-segment-management)
-- [FAQ NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-11-faq)
+Read our guides to go further with NSX:
 
-If you require training or technical support to implement our solutions, please contact your sales representative or click [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
+- [Segment management in NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-02-segment-management)
+- [NSX FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-11-faq)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
