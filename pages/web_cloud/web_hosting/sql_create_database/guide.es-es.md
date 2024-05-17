@@ -103,6 +103,11 @@ Asegúrese de que toda la información mostrada en el resumen es correcta. En es
 
 Repita este proceso tantas veces como desee para crear varias bases de datos (con el límite de las bases de datos disponibles en su plan).
 
+> [!warning]
+>
+> Una vez validada la creación de la base de datos, el nombre de usuario y el nombre de la base de datos no se podrán editar.
+>
+
 ### Etapa 3 - Gestionar la base de datos <a name="step3"></a>
 
 > [!warning]
