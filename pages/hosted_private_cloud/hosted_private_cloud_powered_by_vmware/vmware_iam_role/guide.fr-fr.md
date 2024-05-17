@@ -20,14 +20,14 @@ Vous disposez de 2 rôles IAM Vsphere par default, malgré ça nous allons vous 
 ### Comment créer un rôle IAM dans mon PCC ?
 
 #### Via l'accès client :
-> [!TIP]
+> [!primary]
 > Les rôles IAM sont préfixés par : {{iam-}}
 
 Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/manager) et **Connectez-vous avec vos identifiants**.
 
 Pour créer votre rôle IAM dans le PCC : 
 
-1. Aller dans la section de votre cloud privée : `Hosted Private Cloud > PCC-XX > Utilisateurs`{.action}
+1. Aller dans la section de votre cloud privée : `Hosted Private Cloud > VMWARE > PCC-XX > Utilisateurs`{.action}
 
 2. Cliquer sur : `Créer un rôle IAM`{.action}
       
@@ -79,8 +79,7 @@ RETOUR:
 }
 ```
 
-## A suivre : Associer un utilisateur à une politique IAM globale
-
+## A suivre
 Vous pouvez maintenant suivre : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
 
 ## Aller plus loin
