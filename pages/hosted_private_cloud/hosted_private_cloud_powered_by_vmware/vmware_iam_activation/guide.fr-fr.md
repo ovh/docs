@@ -21,12 +21,12 @@ updated: 2024-05-17
 
 1. Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/manager) et connecter vous avec vos identifiants.
 
-2. Ensuite, allez dans la section de votre Hosted Private Cloud - VMware on OVHcloud : `Hosted Private Cloud > VMWARE > PCC-XX > Utilisateurs > IAM OVHcloud`{.action}
+2. Ensuite, aller dans la section utilisateur de votre Hosted Private Cloud - VMware on OVHcloud : `Hosted Private Cloud > VMWARE > PCC-XX > Utilisateurs > IAM OVHcloud`{.action}
 
 Pour vous aider la section correspond au lien OVHcloud manager suivant :
 - https://www.ovh.com/manager/#/dedicated/dedicated_cloud/... -> **pcc-X-X-X-X/users**
 
-3. Pour finir, cliquer sur : `Activer l'IAM OVHcloud.`{.action}
+3. Pour activer le service Enabler IAM dans votre PCC, cliquer sur : `Activer l'IAM OVHcloud.`{.action}
 
 ![Activer IAM](images/iam_enable_2.png){.thumbnail }
 
