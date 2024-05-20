@@ -1,7 +1,7 @@
 ---
 title: "Mit dem FTP-Speicherplatz eines Webhostings verbinden"
 excerpt: "Erfahren Sie hier, wie Sie sich im FTP-Speicherplatz Ihres OVHcloud Webhostings einloggen"
-updated: 2024-05-17
+updated: 2024-05-20
 ---
 
 > [!primary]
