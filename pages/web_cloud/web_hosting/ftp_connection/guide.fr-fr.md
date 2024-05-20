@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l’espace de stockage FTP de son hébergement web"
 excerpt: "Découvrez comment vous connecter à l'espace de stockage FTP de votre hébergement web OVHcloud"
-updated: 2024-05-17
+updated: 2024-05-20
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: "Accedi allo spazio di storage FTP del tuo hosting Web"
 excerpt: "Questa guida ti mostra come connettersi allo spazio di storage FTP del tuo hosting Web OVHcloud"
-updated: 2023-06-01
+updated: 2024-05-20
 ---
 
 > [!primary]
@@ -145,10 +145,13 @@ Una volta stabilita la connessione SSH, in base al metodo scelto, esistono due m
 Da riga di comando, utilizza questa sintassi:
 
 ```bash
-ssh sshlogin@sshserver -p connectionport
+ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
-Sostituisci `sshlogin`, `sshserver` e `connectionport` con le tue informazioni. 
+Nel comando precedente, sostituisci:
+
+- il valore `sshlogin` dal tuo login FTP principale descritto nello [step 2.2](#ftpsoftware) (o da un login FTP che dispone degli accessi SSH);
+- i `XXX` con le cifre corrispondenti al numero del cluster in cui si trova l’hosting Web.
 
 Una volta inviato il comando, ti verrà chiesto di inserire la password dell'utente SSH.
 
