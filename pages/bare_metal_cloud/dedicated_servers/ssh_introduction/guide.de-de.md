@@ -92,14 +92,14 @@ Wenn Sie zur Eingabe eines Passworts aufgefordert werden, geben Sie das Passwort
 Wenn es sich um eine neue Verbindung handelt, empfängt Ihr SSH-Client einen *Fingerprint* des Servers. Geben Sie "yes" ein, um dies zu bestätigen und dann das Passwort des sich einloggenden Benutzers. 
 
 ```bash
-ssh ubuntu@169.254.10.254
+ssh ubuntu@203.0.113.100
 ```
 ```console
-The authenticity of host '169.254.10.254 (169.254.10.254)' can't be established.
+The authenticity of host '203.0.113.100 (203.0.113.100)' can't be established.
 ECDSA key fingerprint is SHA256:rRwrdsmJfzvJF5k0a4JmMSdaWbTlCgRKBukbmQ3gmso.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
-Warning: Permanently added '169.254.10.254' (ECDSA) to the list of known hosts.
-ubuntu@169.254.10.254's password:
+Warning: Permanently added '203.0.113.100' (ECDSA) to the list of known hosts.
+ubuntu@203.0.113.100's password:
 ```
 
 Der Schlüssel-Fingerprint wird dann auf Ihrem Gerät gespeichert und bei jeder neuen Verbindung überprüft. Wenn sich der Schlüssel auf dem Remote-Host geändert hat, wird eine Warnmeldung angezeigt, sobald Sie versuchen, sich zu verbinden. Zum Beispiel:
@@ -125,7 +125,7 @@ Das bedeutet, dass eine der folgenden Situationen eingetreten ist:
 Um dies zu beheben, geben Sie folgenden Befehl unter Angabe der IP-Adresse Ihres Servers ein:
 
 ```bash
-ssh-keygen -f ~/.ssh/known_hosts -R 169.254.10.254
+ssh-keygen -f ~/.ssh/known_hosts -R 203.0.113.100
 ```
 
 Sie können alternativ die Datei `known_hosts` in Ihrem "Home"-Ordner mit einem Texteditor öffnen und die in der Warnmeldung angegebene Zeile ("offending key") manuell löschen:
@@ -145,7 +145,7 @@ Offending ECDSA key in C:\\Users\\Name_Windows_User\.ssh\known_hosts:3
 Um dies zu beheben, geben Sie folgenden Befehl unter Angabe der IP-Adresse Ihres Servers ein:
 
 ```bash
-ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 203.0.113.100
 ```
 
 Alternativ öffnen Sie den angegebenen Ordner, klicken Sie mit der rechten Maustaste auf die Datei und öffnen Sie diese mit der Anwendung Notepad (oder einem beliebigen Texteditor).

@@ -1,7 +1,7 @@
 ---
-title: Public Cloud Databases - Logs to customers
+title: Public Cloud Databases - How to setup logs forwarding
 excerpt: Find out how to forward logs of your database service to your Logs Data Platform data stream
-updated: 2024-03-20
+updated: 2024-05-15
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud database service](https://www.ovhcloud.com/en-sg/public-cloud/databases/) up and running
 - Access to the [OVHcloud API](https://ca.api.ovh.com/console/)
 - A Logs Data Platform account within this OVHcloud account with at least one destination stream configured
@@ -20,23 +20,25 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 ## Instructions
 
-### Forward logs to your LDP stream
+### Step 1 - Retrieve the required information
 
-Retrieve your LDP destination `streamId`:
+#### Retrieve your LDP destination `streamId`:
 
 - In the OVHcloud Control Panel, go to your LDP page.
 - Go to the `Data stream` tab.
 - Choose your target stream and click on `Edit`{.action}.
 - You can see the `streamId` in the URL `https://.../streams/<streamId>/edit`.
 
-Retrieve your LDP destination `serviceName`:
+#### Retrieve your LDP destination `serviceName`:
 
 - It refers to your Public Cloud project ID.
 
-Retrieve your `clusterId`:
+#### Retrieve your `clusterId`:
 
 - In the OVHcloud Control Panel, go to your database.
 - You can see the field `Cluster ID`.
+
+### Step 2 - Create your subscription
 
 Use the following API call:
 
@@ -50,18 +52,17 @@ body : {
     streamId: <LDP destination stream ID>
 }
 ```
-
 Then logs will start to be forwarded to your LDP stream.
 
 ### Find logs in Graylog
 
-To find logs of your service in your graylogs stream you can use following graylog queries :
+To find logs of your service in your graylogs stream you can use the following graylog queries:
 
 #### MongoDB
 
 Query: `cluster: "<HostID>"`
 
-You can find this `HostID` in your manager :
+You can find this `HostID` in your OVHcloud Control Panel:
 
 - In `Login information` switch `Service` to `mongodb`
 - Now you can see the `Host` field with the format `<HostID>.database.cloud.ovh.net`
@@ -70,14 +71,14 @@ You can find this `HostID` in your manager :
 
 Query: `clusterID: "<Engine>-<HostID>"`
 
-You can find this `HostID` in your manager :
+You can find this `HostID` in your OVHcloud Control Panel:
 
-- Find the Cluster ID formated as a UUID (AAAAAAAA-BBBB-CCCC-DDDDDDDDDDDD)
+- Find the Cluster ID formatted as a UUID (AAAAAAAA-BBBB-CCCC-DDDDDDDDDDDD)
 - `HostID` is the first part of the UUID (AAAAAAAA)
 
 ### Delete subscription
 
-You have 2 methods to delete subscription:
+You have 2 methods to delete a subscription:
 
 - You can delete subscriptions using the `subscriptionId` concerned in this API call:
 
@@ -87,7 +88,6 @@ You have 2 methods to delete subscription:
 >
 
 - If you delete your database service, all subscriptions of this service are deleted automatically.
-
 
 ## We want your feedback!
 

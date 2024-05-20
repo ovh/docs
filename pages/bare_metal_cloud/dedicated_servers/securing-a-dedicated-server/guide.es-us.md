@@ -1,6 +1,6 @@
 ---
 title: "Proteger un servidor dedicado"
-excerpt: "Descubra los elementos básicos que le permiten proteger un servidor dedicado"
+excerpt: "Esta guía explica cómo aplicar medidas de seguridad básicas para proteger su servidor dedicado de ataques y accesos no autorizados"
 updated: 2024-02-20
 ---
 
@@ -22,7 +22,7 @@ Los servidores dedicados no incluyen de forma nativa ningún protocolo de seguri
 
 ## Requisitos
 
-- Tener un [servidor dedicado de OVHcloud](https://www.ovhcloud.com/es/bare-metal/){.external}.
+- Tener un [servidor dedicado de OVHcloud](/links/bare-metal/bare-metal).
 - Tener acceso de administrador (sudo) al servidor por SSH.
 
 ## Procedimiento
@@ -34,7 +34,7 @@ Los servidores dedicados no incluyen de forma nativa ningún protocolo de seguri
 > Si se trata de su primera configuración de un servidor dedicado de OVHcloud, consulte nuestra guía [Primeros pasos con un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
 >
 
-Los siguientes ejemplos implican que está conectado como usuario con permisos muy exigentes.
+Los siguientes ejemplos implican que está conectado como [usuario con permisos muy exigentes](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Actualizar el sistema operativo
 
@@ -65,7 +65,7 @@ La modificación de este parámetro, en beneficio de un puerto diferente, es una
 Para ello, edite el archivo de configuración del servicio con el editor de texto que desee (`nano` se utiliza en este ejemplo):
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Encontrará las siguientes líneas o equivalentes:
@@ -95,11 +95,11 @@ Reinicie el servicio:
 sudo systemctl restart sshd
 ```
 
-Esto debería ser suficiente para aplicar los cambios. En caso contrario, reinicie el servidor (`~$ sudo reboot`).
+Esto debería ser suficiente para aplicar los cambios. En caso contrario, reinicie el servidor (`sudo reboot`).
 
-*Para Ubuntu 23.04 y versiones posteriores**
+**Para Ubuntu 23.04 y versiones posteriores**
 
-Para las últimas versiones de Ubuntu, la configuración SSH se gestiona ahora en el archivo /ssh.socket`.
+Para las últimas versiones de Ubuntu, la configuración SSH se gestiona ahora en el archivo `ssh.socket`.
 
 Para actualizar el puerto SSH, edite la línea `Listenstream` en el archivo de configuración con un editor de texto de su elección (`nano` utilizado en este ejemplo):
 
@@ -117,15 +117,24 @@ Guarde los cambios y ejecute los siguientes comandos:
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 Si ha activado el cortafuegos del sistema operativo, asegúrese de autorizar el nuevo puerto en las reglas del cortafuegos.
 
-Recuerde que deberá indicar el nuevo puerto en cada solicitud de conexión SSH al servidor, por ejemplo:
+Recuerde que deberá indicar el nuevo puerto en cada solicitud de [conexión SSH al servidor](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
 ```bash
-ssh username@IPv4_of_your_server -p NewPortNumber
+ssh username@IPv4_server -p NewPortNumber
+```
+
+Ejemplo:
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 > [!warning]
@@ -246,6 +255,6 @@ Para más información sobre este espacio de backup, consulte nuestra guía [Bac
 
 [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

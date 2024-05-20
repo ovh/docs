@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja i korzystanie z trybu Rescue"
 excerpt: "Dowiedz się, jak używać trybu Rescue OVHcloud do rozwiązywania problemów z serwerem dedykowanym"
-updated: 2024-01-09
+updated: 2024-05-15
 ---
 
 > [!primary]
@@ -32,27 +32,55 @@ Tryb Rescue jest zazwyczaj dostosowany do następujących zadań:
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
-> [!warning]
-> Pamiętaj, że jeśli ustaliłeś domyślny klucz SSH dla produktów dedykowanych, podczas restartu serwera w trybie rescue nie otrzymasz hasła root. W tym przypadku najpierw wyłącz domyślny klucz SSH, zanim uruchomisz serwer w trybie rescue. W tym celu zapraszamy do zapoznania się z [sekcją](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) odpowiedniego przewodnika.
->
-
-Tryb Rescue można włączyć tylko w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. 
+Tryb Rescue można włączyć tylko w [Panelu klienta OVHcloud](/links/manager). Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. 
 
 Wyszukaj "Boot" w sekcji **Informacje ogólne** i kliknij `...`{.action} a następnie `Zmień`{.action}.
 
 ![Zmień tryb uruchamiania](images/rescue-mode-001.png){.thumbnail}
 
-Na następnym ekranie wybierz **Uruchom w trybie diagnostycznym (Rescue)**. Jeśli Twój serwer posiada system operacyjny Linux, na rozwijanej liście wybierz `rescue-customer`{.action}. Jeśli Twój serwer znajduje się w systemie Windows, wybierz `WinRescue`{.action} (patrz [sekcja przewodnika poniżej](#windowsrescue)). Określ inny adres e-mail, jeśli nie chcesz, aby dane do logowania zostały wysłane na główny adres Twojego konta OVHcloud.
+Na następnym ekranie wybierz **Uruchom w trybie diagnostycznym (Rescue)**.
 
-> [!warning]
+## Rescue Linux
+
+Jeśli Twój serwer posiada system operacyjny Linux, z menu rozwijanego wybierz `rescue-customer`{.action}.
+
+W tej sytuacji dostępne są dwa tryby uwierzytelniania:
+
+- Uwierzytelnienie za pomocą hasła
+- Uwierzytelnianie za pomocą klucza SSH
+
+### Uwierzytelnianie za pomocą klucza SSH
+
+> [!primary]
 >
-> Na niektóre konta klientów OVHcloud może mieć wpływ błąd dotyczący języka e-maili ratunkowych: są one wysyłane w języku francuskim zamiast wybranego języka konta. Mimo że przyczyna błędu została usunięta 20 września 2022, adres e-mail musi zostać zaktualizowany jeden raz, aby rozwiązać ten problem. Aby to zrobić, przed włączeniem trybu ratunkowego wprowadź w tym kroku adres e-mail konta klienta.
+> Jeśli wybierzesz uwierzytelnianie za pomocą klucza SSH, upewnij się, że Twój publiczny klucz SSH spełnia jeden z formatów spośród `RSA`, `ECDSA` lub ``.
 >
+
+Wybierz opcję "Uwierzytelnianie za pomocą klucza SSH", a następnie wpisz swój klucz SSH **publiczny** w dedykowanym polu tekstowym.
+
+![Uwierzytelnianie za pomocą klucza SSH](images/rescue-mode-08.png){.thumbnail}
+
+### Uwierzytelnianie za pomocą hasła
+
+Wybierz opcję "Uwierzytelnienie za pomocą hasła".<br>
+Dane do logowania będą domyślnie wysyłane na główny adres e-mail Twojego konta OVHcloud. W polu `Wyślij dane do logowania do trybu Rescue na adres e-mail` możesz wpisać inny adres.
+
+![Uwierzytelnianie za pomocą hasła do systemu Linux](images/rescue-mode-09.png){.thumbnail}
+
+### Rescue Windows
+
+W przypadku serwerów z systemem operacyjnym Windows, poza trybem `rescue-customer`{.action}, możesz wybrać opcję `WinRescue`{.action} (patrz [sekcja przewodnika poniżej](#windowsrescue)). W przypadku tego typu trybu Rescue dostępne jest wyłącznie uwierzytelnianie za pomocą hasła.
+
+Jeśli nie chcesz, aby dane do logowania były wysyłane na główny adres Twojego konta OVHcloud, **nie**, określ inny adres e-mail.
+
+![Uwierzytelnianie za pomocą hasła systemu Windows](images/rescue-mode-10.png){.thumbnail}
+
+### Ostatnie kroki
 
 Kliknij `Dalej`{.action} i `Zatwierdź`{.action}.
 
@@ -75,7 +103,7 @@ Po zakończeniu zadań w trybie Rescue pamiętaj o ponownym ustawieniu netbootu 
 > Jeśli używasz klucza SSH (aktywnego również w Panelu klienta OVHcloud), nie otrzymasz hasła. Po uruchomieniu serwera w trybie Rescue możesz połączyć się bezpośrednio z kluczem SSH.
 >
 
-Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
+Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](/links/manager). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
 
 Zaloguj się do serwera za pomocą wiersza poleceń lub narzędzia [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), używając wygenerowanego hasła root dla trybu Rescue.
 
@@ -134,7 +162,7 @@ mount /dev/hda1 /mnt/
 > Jeśli na Twoim serwerze skonfigurowana jest programowa macierz RAID, zamontuj wolumin RAID (zwykle `/dev/mdX`).
 >
 
-Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.
+Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](/links/manager) i zrestartuj serwer z linii poleceń.
 
 #### VMware - Montaż datastore
 
@@ -171,15 +199,15 @@ Zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` war
 vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
-Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.
+Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](/links/manager) i zrestartuj serwer z linii poleceń.
 
 ### Windows <a name="windowsrescue"></a>
 
 #### Korzystanie z narzędzi WinRescue
 
-Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
+Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](/links/manager). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
 
-Aby korzystać z trybu Rescue oferowanego przez Windows, pobierz i zainstaluj konsolę VNC lub skorzystaj z modułu `IPMI` w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Aby korzystać z trybu Rescue oferowanego przez Windows, pobierz i zainstaluj konsolę VNC lub skorzystaj z modułu `IPMI` w [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 

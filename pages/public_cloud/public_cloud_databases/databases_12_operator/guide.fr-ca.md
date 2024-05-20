@@ -1,5 +1,5 @@
 ---
-title: Premiers pas avec Kubernetes database operator (EN)
+title: Public Cloud Databases - Comment installer Kubernetes database operator (EN)
 excerpt: Find out how to install and use the Kubernetes database operator
 updated: 2023-06-29
 ---

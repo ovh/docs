@@ -1,5 +1,5 @@
 ---
-title: Getting started with SSH
+title: How to get started with SSH
 excerpt: Find out how to use SSH connections to access your server
 updated: 2024-01-16
 ---
@@ -82,14 +82,14 @@ When prompted for a password, type the password of the connecting user and press
 If this is a new connection, your SSH client will receive a key fingerprint from the server. Enter "yes" to confirm and then the password of the connecting user to log in.
 
 ```bash
-ssh ubuntu@169.254.10.254
+ssh ubuntu@203.0.113.100
 ```
 ```console
-The authenticity of host '169.254.10.254 (169.254.10.254)' can't be established.
+The authenticity of host '203.0.113.100 (203.0.113.100)' can't be established.
 ECDSA key fingerprint is SHA256:rRwrdsmJfzvJF5k0a4JmMSdaWbTlCgRKBukbmQ3gmso.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
-Warning: Permanently added '169.254.10.254' (ECDSA) to the list of known hosts.
-ubuntu@169.254.10.254's password:
+Warning: Permanently added '203.0.113.100' (ECDSA) to the list of known hosts.
+ubuntu@203.0.113.100's password:
 ```
 
 The fingerprint is then saved on your device and will be verified for each new connection. If the key has changed on the remote host, you will receive a warning message when trying to connect, for example:
@@ -115,7 +115,7 @@ It means that one the following has occured:
 To resolve this, use the following command with the IP address of your server:
 
 ```bash
-ssh-keygen -f ~/.ssh/known_hosts -R 169.254.10.254
+ssh-keygen -f ~/.ssh/known_hosts -R 203.0.113.100
 ```
 
 Alternatively, open the `known_hosts` file located in your home folder with a text editor and delete the "offending" line that was specified in the warning message:
@@ -135,7 +135,7 @@ Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 To resolve this, use the following command with the IP address of your server:
 
 ```bash
-ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 203.0.113.100
 ```
 
 Alternatively, navigate to this folder, right-click on the file and open it with the Notepad application.

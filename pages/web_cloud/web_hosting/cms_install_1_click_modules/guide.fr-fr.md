@@ -1,7 +1,7 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-updated: 2024-03-21
+updated: 2024-05-15
 ---
 
 ## Objectif
@@ -201,7 +201,7 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre CMS,
 |---|---|
 |WordPress|[Premiers pas avec WordPress](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}|
 |PrestaShop|[Documentation en français PrestaShop](http://doc.prestashop.com/pages/viewpage.action?pageId=2424836){.external}|
-|Joomla|[Infos techniques Joomla](https://www.joomla.fr/actualites/infos-techniques){.external}|
+|Joomla|[Infos techniques Joomla (en anglais)](https://www.joomla.org/about-joomla/getting-started.html){.external}|
 |Drupal|[Bien démarrer avec Drupal](https://www.drupal.fr/documentation/bien-demarrer-drupal){.external}|
 
 ## Aller plus loin

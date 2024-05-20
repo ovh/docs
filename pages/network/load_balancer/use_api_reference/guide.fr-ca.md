@@ -183,7 +183,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 > 
 
-## certificats SSL
+## Certificats SSL
 
 ### Retourne la liste des certificats SSL
 

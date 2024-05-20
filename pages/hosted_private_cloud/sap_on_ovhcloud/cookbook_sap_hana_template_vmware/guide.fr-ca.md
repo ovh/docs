@@ -1,7 +1,7 @@
 ---
 title: "Déployer une machine virtuelle avec SAP HANA et OVHcloud Backint Agent pré-installés"
 excerpt: "Ce guide fournit les instructions pour le déploiement d'une machine virtuelle SLES for SAP avec SAP HANA et OVHcloud Backint Agent pré-installés"
-updated: 2023-12-04
+updated: 2024-05-16
 ---
 
 ## Objectif
@@ -63,7 +63,7 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
 <a name="ovf_link"></a>  
 
 ```console
-https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64.ovf
+https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf
 ```
 
 ![deploy-from-template](images/step-2.png){.thumbnail}
@@ -133,6 +133,10 @@ Voici un tableau des recommandations SAP pour les tailles des disques :
 >
 
 ![ovhcloud-backint-agent-installation](images/step-10.png){.thumbnail}
+
+11\. Si vous souhaitez bénéficier de l’installation automatisée SAP logs on OVHcloud Logs Data Platform afin d'externaliser vos logs sur notre solution Logs Data Platform, cochez l'activation de l'installation et renseignez les informations de la catégorie `SAP logs on OVHcloud Logs Data Platform`{.action}.
+
+![sap-ldp-installation](images/step-11.png){.thumbnail}
 
 Une fois ces étapes réalisées, le déploiement de votre machine virtuelle à partir du template OVF créé par OVHcloud s'exécute.
 

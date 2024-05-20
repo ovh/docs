@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit einem Dedicated Server"
 excerpt: "Erfahren Sie hier, wie Sie einen Dedicated Server in Ihrem OVHcloud Kundencenter verwalten und wie Sie mit der Konfiguration und Sicherung eines Servers starten"
-updated: 2024-04-10
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -16,9 +16,9 @@ Ein dedizierter Server ist ein physischer Server ("Bare Metal") in einem unserer
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff auf Ihren Server über SSH oder RDP (Windows). 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!primary]
 >
@@ -47,7 +47,7 @@ Ein dedizierter Server ist ein physischer Server ("Bare Metal") in einem unserer
 > Weitere Informationen zu Server-Betriebssystemen finden Sie auf unserer [Webseite](https://www.ovhcloud.com/de/bare-metal/os/).
 >
 
-Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) reinstallieren oder ein anderes Betriebssystem auswählen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
+Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](/links/manager) reinstallieren oder ein anderes Betriebssystem auswählen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
 
 ![Button Reinstallieren](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -78,6 +78,15 @@ Wenn Sie das Partitionsschema Ihres Betriebssystems ändern müssen, setzen Sie 
 
 In diesem Schritt können Sie RAID- und Partitionierungsoptionen innerhalb der Grenzen der Serverhardware und des Betriebssystems einrichten.
 
+> [!warning]
+>
+> Wenn Ihr Server mit *Soft RAID* ausgestattet ist, wird unser System zur Installation des Betriebssystems alle Disks verwenden. Dieses Verfahren wird als RAID 1 bezeichnet. RAID 1 (Disk Mirroring) ist die Datenreplikation auf zwei oder mehr Disks. Bei diesem Verfahren werden alle Disks während des Installationsvorgangs automatisch eingebunden. Das bedeutet auch, dass Sie nur auf eine Disk zugreifen können und die restlichen für die Datenreplikation genutzt werden. So wird bei einem Ausfall Redundanz gewährleistet.
+>
+
+Wenn Sie nicht alle Ihre Disks für die Installation verwenden möchten, können Sie dies verhindern, indem Sie die Option "Konfiguration der Partitionen anpassen" ankreuzen. In diesem Fall müssen Sie dann die anderen Disks im Betriebssystem manuell mounten. Weitere Informationen hierzu finden Sie in der Dokumentation des Betriebssystems.
+
+![select disks](images/choosedisk.png){.thumbnail}
+
 Klicken Sie nach Abschluss der Anpassungen auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen.
 
 Dort finden Sie außerdem Optionen zu dem von Ihnen ausgewählten Betriebssystem.
@@ -97,7 +106,7 @@ Klicken Sie anschließend auf `Bestätigen`{.action}, um die Installation des Be
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
 >
 
 #### Linux
@@ -207,7 +216,7 @@ Ein Neustart kann notwendig sein, um aktualisierte Konfigurationen anzuwenden od
 reboot
 ```
 
-Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ausführen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben "Status" im Bereich **Dienststatus** und klicken Sie dann im Kontextmenü auf `Neu starten`{.action} und `Bestätigen`{.action}.
+Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter](/links/manager) ausführen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben "Status" im Bereich **Dienststatus** und klicken Sie dann im Kontextmenü auf `Neu starten`{.action} und `Bestätigen`{.action}.
 
 ![Neustart](images/rebooting-your-server.png){.thumbnail}
 
@@ -223,7 +232,7 @@ Wenn Sie Windows Server einsetzen, verwenden Sie [diese Anleitung](/pages/bare_m
 
 ### OVHcloud Monitoring
 
-Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
+Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](/links/manager) vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
 
 ![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
@@ -265,7 +274,7 @@ Alle OVHcloud Dedicated Server werden mit einem /64 IPv6 Block geliefert. Um die
 
 ### Rescue-Modus
 
-Der erste Schritt zur Fehlerbehebung besteht stets darin, Ihren Server in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Rescue-Modus neu zu starten. Es ist wichtig, Serverfehler in diesem Modus zu identifizieren, um Probleme mit Software auszuschließen, bevor Sie unsere Support-Teams kontaktieren.
+Der erste Schritt zur Fehlerbehebung besteht stets darin, Ihren Server in Ihrem [OVHcloud Kundencenter](/links/manager) im Rescue-Modus neu zu starten. Es ist wichtig, Serverfehler in diesem Modus zu identifizieren, um Probleme mit Software auszuschließen, bevor Sie unsere Support-Teams kontaktieren.
 
 Folgen Sie unserer Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
@@ -295,6 +304,6 @@ Zur Aktivierung und Nutzung des Backup Storage folgen Sie der [zugehörigen Anle
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

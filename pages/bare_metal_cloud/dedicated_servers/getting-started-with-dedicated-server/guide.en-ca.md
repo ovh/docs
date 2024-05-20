@@ -1,7 +1,7 @@
 ---
 title: "How to get started with a dedicated server"
 excerpt: "Find out how to manage a dedicated server in the OVHcloud Control Panel and how to start with configuring and securing a server"
-updated: 2024-04-10
+updated: 2024-05-17
 ---
 
 ## Objective
@@ -12,8 +12,8 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Administrative access via SSH or remote desktop (Windows) to your server
 
 > [!primary]
@@ -43,7 +43,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 > Find more information about server operating systems on [our web page](https://www.ovhcloud.com/en-ca/bare-metal/os/).
 >
 
-You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). In the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
+You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](/links/manager). In the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 ![Reinstall button](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -55,7 +55,7 @@ In the popup window, select one of the installation options:
 
 > [!primary]
 >
-> Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en-ca/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+> Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en-ca/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](/links/manager).
 >
 You can manage all your licences in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add existing ones via the `Actions`{.action} button.
 >
@@ -73,6 +73,15 @@ If you need to modify the partioning scheme of your operating system, check the 
 ![partitioning configuration](images/reinstalling-your-server-04.png){.thumbnail}
 
 In this step you are able to set up RAID and partitioning options within the limits of the server's hardware and operating system.
+
+> [!warning]
+>
+> If your server comes with Soft RAID, our system will give priority to installing the operating system using all your disks. This technology is called RAID 1. RAID 1 (disk mirroring) is the replication of data on two or more disks. With this process, all the disks are automatically mounted during the installation procedure. This also means that you will only have access to storage on one disk, with the other disk(s) being used for data replication, providing redundancy in the event of a disk failure.
+>
+
+If you don't want to use all your disks for the installation, you can update it after ticking the "Customise the partition configuration" box. In this case, you will be responsible for mounting the other disks in the operating system. You should refer to the operating system documentation to find out how to do this.
+
+![select disks](images/choosedisk.png){.thumbnail}
 
 After you have finished your adjustments, click `Next`{.action} to arrive at the summary page.
 
@@ -93,7 +102,7 @@ Finally, click `Confirm`{.action} to trigger the operating system installation o
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 #### Linux
@@ -204,7 +213,7 @@ A reboot might become necessary in order to apply updated configurations or to f
 reboot
 ```
 
-However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). From the `General information`{.action} tab, click on `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action} and `Confirm`{.action} the action in the popup window.
+However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](/links/manager). From the `General information`{.action} tab, click on `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action} and `Confirm`{.action} the action in the popup window.
 
 ![Rebooting](images/rebooting-your-server.png){.thumbnail}
 
@@ -220,7 +229,7 @@ If your server runs Windows, use [this guide](/pages/bare_metal_cloud/dedicated_
 
 ### OVHcloud Monitoring
 
-You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) (section **Service status**).
+You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](/links/manager) (section **Service status**).
 
 ![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
@@ -262,7 +271,7 @@ All OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the a
 
 ### Rescue mode
 
-For any kind of issue, the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
+For any kind of issue, the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](/links/manager). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
 Please refer to the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
@@ -292,6 +301,6 @@ To activate and use the backup storage, please refer to [this guide](/pages/bare
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
