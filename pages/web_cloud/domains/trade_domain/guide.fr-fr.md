@@ -1,7 +1,7 @@
 ---
 title: "Changer le propriétaire d’un nom de domaine"
 excerpt: "Retrouvez les différentes informations concernant le changement de propriétaire d’un nom de domaine."
-updated: 2024-03-07
+updated: 2024-05-20
 ---
 
 ## Objectif
@@ -14,6 +14,9 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 > Pour obtenir ce résultat, vous devez [modifier les contacts](/pages/account_and_service_management/account_information/managing_contacts) du nom de domaine.
 >
 > Si vous devez réaliser un changement de propriétaire ainsi qu'un changement de contact pour le même nom de domaine, il n'y a pas d'ordre particulier à respecter. Néanmoins, c'est le contact administrateur qui est en mesure de lancer ces opérations. Ces deux changements se font, par conséquent, dans l'espace client du contact administrateur du nom de domaine.
+>
+> En effet, les informations relatives au propriétaire d'un nom de domaine n'ont qu'une valeur administrative et sont totalement indépendantes des informations pouvant être associées à un identifiant client OVHcloud. Par conséquent, un particulier ou une organisation (société, association, etc.) uniquement déclaré en tant que propriétaire d'un nom de domaine n'a donc pas d'accès à l'espace client OVHcloud.
+>
 
 **Découvrez comment changer le propriétaire d'un nom de domaine**
 
