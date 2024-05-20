@@ -146,8 +146,8 @@ ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 
 In the command above, replace:
 
-- the value `sshlogin` by your main FTP login, as described in [step 2.2](#ftpsoftware) (or by an FTP login with SSH access);
-- the `XXX` numbers correspond to the cluster number where your Web Hosting plan is located.
+- The value `sshlogin` by your main FTP login, as described in [step 2.2](#ftpsoftware) (or by an FTP login with SSH access).
+- `XXX` with the number of the cluster where your Web Hosting plan is located.
 
 Once the command has been sent, you will be prompted to enter the SSH user password.
 
