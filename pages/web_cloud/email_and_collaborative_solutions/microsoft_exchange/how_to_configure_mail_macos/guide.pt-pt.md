@@ -27,12 +27,12 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](links/manager/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção "Quer saber mais?" deste guia.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](links/manager) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção "Quer saber mais?" deste guia.
 > 
 
 ## Requisitos
 
-- Dispor de um endereço de e-mail [Exchange](links/emails-hosted-exchange/).
+- Dispor de um endereço de e-mail [Exchange](links/web/emails-hosted-exchange).
 - Ter o software Mail instalado no seu Mac.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
  
@@ -44,7 +44,7 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 >
 > Neste exemplo, utilizamos a menção servidor: ex**?**.mail.ovh.net. Deverá substituir o «? » pelo algarismo que designa o servidor do seu serviço Exchange.
 >
-> Encontre este algarismo na sua [Área de Cliente OVHcloud](links/manager/), na rubrica `Web Cloud`{.action} e `Microsoft {.action}.
+> Encontre este algarismo na sua [Área de Cliente OVHcloud](links/manager), na rubrica `Web Cloud`{.action} e `Microsoft {.action}.
 > Clique em `Exchange`{.action} e, de seguida, na plataforma Exchange desejada. O nome do servidor está visível na tabela **Ligação** do separador ‘Informações gerais`{.action}.
 >
 
@@ -98,10 +98,10 @@ Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros d
 
 ## Quer saber mais?
 
-[FAQ e-mails](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/faq-emails)
+[FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
-[Configurar a conta E-mail Pro no Mail do macOS](/pages/web_cloud/email_and_colaborative_solutions/email_pro/how_to_configure_mail_macos)
+[Configurar a conta E-mail Pro no Mail do macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
 
-[Configurar a conta de e-mail MX plan no Mail do macOS](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/how_to_configure_mail_macos)
+[Configurar a conta de e-mail MX plan no Mail do macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

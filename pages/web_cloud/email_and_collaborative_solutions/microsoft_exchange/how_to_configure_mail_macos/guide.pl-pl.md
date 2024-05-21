@@ -27,12 +27,12 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego webmastera](/links/partner/) lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "Sprawdź również".
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego webmastera](/links/partner) lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "Sprawdź również".
 > 
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail [Exchange](links/emails-hosted-exchange/)
+- Posiadanie konta e-mail [Exchange](links/web/emails-hosted-exchange)
 - Instalacja programu Mail na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
@@ -44,7 +44,7 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 >
 > W naszym przykładzie używamy nazwy serwera: ex*?*.mail.ovh.net. Należy zastąpić "?" cyfrą wskazującą serwer Twojej usługi Exchange.
 >
-> Znajdziesz tę cyfrę w [Panelu klienta OVHcloud](links/manager/), w rubryce `Web Cloud`{.action}, następnie `Microsoft`{.action}.
+> Znajdziesz tę cyfrę w [Panelu klienta OVHcloud](links/manager), w rubryce `Web Cloud`{.action}, następnie `Microsoft`{.action}.
 > Kliknij na `Exchange`{.action}, a następnie na wybraną platformę Exchange. Nazwa serwera jest widoczna w ramce **Połączenie** w zakładce `Informacje ogólne`{.action}.
 >
 
@@ -55,15 +55,15 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 > [!tabs]
 > **Etap 1**
 >> Wybierz `Exchange`{.action}<br><br>
->> ![MailMac](obrazy/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
+>> ![MailMac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 2**
 >> Wpisz **Nazwa** Twojego konta e-mail i **Adres e-mail**, a następnie kliknij `Zaloguj się {.action} <br><br>
->> ![MailMac](obrazy/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
+>> ![MailMac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 3**
 >> W kolejnym oknie kliknij `Konfiguracja ręczna`{.action} : <br><br>- Ustaw **Nazwa**, która będzie się wyświetlała w interfejsie nawigacji <br>- Pozostaw swój **adres e-mail**<br>- Pozostaw swoje **Hasło** wprowadzone <br><br>Aby dokończyć konfigurację, kliknij `Zaloguj się`{.action} <br><br>
->> ![MailMac](obrazy/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
+>> ![MailMac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 4**
 >> Wpisz: <br><br>- Adres e-mail: pozostaw pełny adres e-mail<br>- Nazwa użytkownika: pozostaw pełny adres e-mail <br>- Hasło: zostaw swoje **hasło**<br> - Wewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?* na [numer serwera Exchange](#addaccount))<br>- Zewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?* na [numer serwera Exchange](#addaccount))<br><br>
@@ -72,10 +72,10 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 >> >
 > > > Wiadomość jest wyświetlana na czerwono "**Nie można sprawdzić nazwy lub hasła konta**", gdy po raz pierwszy zostanie wyświetlone okno. Jeśli jednak ten komunikat będzie się powtarzać po zatwierdzeniu, wprowadzone informacje będą błędne.<br><br>
 >>
->> ![MailMac](obrazy/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
+>> ![MailMac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 5**
->> Oprócz e-maili możesz wybrać inne funkcje Exchange, którymi chcesz zarządzać z poziomu komputera Mac. <br><br>![mailmac](obrazy/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
+>> Oprócz e-maili możesz wybrać inne funkcje Exchange, którymi chcesz zarządzać z poziomu komputera Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Użyj konta e-mail
 

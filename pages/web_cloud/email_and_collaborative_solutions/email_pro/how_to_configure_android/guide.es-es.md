@@ -28,7 +28,7 @@ Las direcciones de correo electrónico de la solución Email Pro pueden configur
 
 ## Requisitos
 
-- Tener una cuenta [Email Pro](/links/email-pro).
+- Tener una cuenta [Email Pro](/links/web/email-pro).
 - Tener la aplicación Gmail instalada en su dispositivo. Puede instalarla desde Google Play Store.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
