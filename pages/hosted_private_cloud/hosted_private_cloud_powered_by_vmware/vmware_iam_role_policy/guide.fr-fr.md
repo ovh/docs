@@ -10,7 +10,7 @@ updated: 2024-05-17
 ## Prérequis
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - Avoir au préalable un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware)
-- Avoir IAM activé [Comment activer IAM dans Hosted Private Cloud - VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
+- Avoir IAM activé dans Hosted Private Cloud - VMware on OVHcloud : Guide 2 - [Comment activer IAM dans Hosted Private Cloud - VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
 
 ## En pratique
 
@@ -48,7 +48,9 @@ Vous retrouvez les mêmes paramètres à ajouter que lors d'une création :
 
 1. Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/manager) et connecter vous avec vos identifiants.
 
-Pour accéder au service IAM, accéder depuis la console OVHcloud : `Support Standard > Identités et accès (IAM)`{.action}
+Pour aller dans IAM, accéder depuis la console OVHcloud : `Support Standard > Identités et accès (IAM)`{.action}
+
+Vous tomberez automatiquement dans la section : `Politiques`{.action}
 
 ![IAM POLICY](images/iam_role_policy_14.png){.thumbnail}
 
@@ -106,7 +108,8 @@ pccVMware:vSphere:assumeRole?iam-auditor
 
 ![IAM POLICY](images/iam_role_policy_13.png){.thumbnail}
 
-## A suivre :
+## A suivre
+
 Vous pouvez maintenant suivre : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy).
 
 ## Aller plus loin
