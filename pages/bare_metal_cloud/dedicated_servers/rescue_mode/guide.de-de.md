@@ -74,9 +74,9 @@ Die Zugangsdaten werden an die primäre E-Mail-Adresse Ihres OVHcloud Kunden-Acc
 
 ### Windows Rescue
 
-Für Server, die über ein Windows Betriebssystem verfügen, lesen Sie die [Dedicated Guide](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+Für Server, die über ein Windows Betriebssystem verfügen, lesen Sie [unsere ASNleitung](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
 
-Die Option `WinRescue`{.action} kann Ihnen auch je nach Ihrem Server angeboten werden. Weitere Informationen zu diesem Modus finden Sie im [Abschnitt der folgenden Anleitung](#windowsrescue)). Bitte beachten Sie, dass bei diesem Rescue-Modus nur die Authentifizierung per Passwort möglich ist.
+Die Option `WinRescue`{.action} kann hier abhängig vom Server angeboten werden. Weitere Informationen zu diesem Modus finden Sie im [Abschnitt weiter unten](#windowsrescue). Beachten Sie, dass bei diesem Rescue-Modus nur die Authentifizierung per Passwort möglich ist.
 
 Geben Sie eine andere E-Mail-Adresse an, wenn Sie **nicht** möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Accounts gesendet werden.
 
