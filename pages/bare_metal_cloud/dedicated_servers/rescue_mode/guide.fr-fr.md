@@ -11,11 +11,11 @@ Le mode Rescue est un outil fourni par OVHcloud qui vous permet de démarrer sur
 Le mode rescue est généralement adapté aux tâches suivantes :
 
 - [Réinitialisation du mot de passe de l'utilisateur](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnostic des problèmes réseau
+- [Diagnostic des problèmes réseau](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 - Réparation d'un système d'exploitation défectueux
 - Correction d'une configuration incorrecte d'un pare-feu logiciel
-- Test des performances des disques
-- Test du processeur et de la mémoire RAM
+- [Test des performances des disques](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+- [Test du processeur et de la mémoire RAM](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 > [!warning]
 >
@@ -28,25 +28,59 @@ Le mode rescue est généralement adapté aux tâches suivantes :
 
 ## Prérequis
 
-- Posséder un [serveur dédié](/links/bare-metal/).
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-> [!warning]
-> Veuillez noter que si vous avez défini une clé SSH par défaut dans votre espace pour les produits dédiés, vous ne recevrez pas de mot de passe root lors du redémarrage d'un serveur en mode rescue. Dans ce cas, vous devez d'abord désactiver la clé SSH par défaut avant de redémarrer le serveur en mode rescue. Pour ce faire, nous vous invitons à consulter cette [section](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) du guide correspondant.
->
-
-Le mode rescue ne peut être activé que depuis votre [espace client OVHcloud](/links/manager){.external}. Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
+Le mode rescue ne peut être activé que depuis votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
 
 Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Modifier`{.action}.
 
 ![Changer le mode de démarrage](images/rescue-mode-001.png){.thumbnail}
 
-Dans la page suivante, sélectionnez **Booter en mode rescue**. Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue-customer`{.action} dans la liste déroulante. Si votre serveur est sous Windows, consultez [le guide dédié](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows). Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
-<br>Cliquez sur `Suivant`{.action} et `Valider`{.action}.
+Sur la page suivante, sélectionnez **Booter en mode rescue**.
 
-![Mode rescue-customer](images/rescue-mode-08.png){.thumbnail}
+### Rescue Linux
+
+Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue-customer`{.action} dans le menu déroulant.
+
+Dans cette situation, deux modes d'authentification vous sont proposés :
+
+- Authentification par mot de passe
+- Authentification par clé SSH
+
+#### Authentification par clé SSH
+
+> [!primary]
+> 
+> Si vous choisissez l'authentification par clé SSH, veillez à ce que votre clé SSH publique respecte l'un des formats parmi `RSA`, `ECDSA`, ou `ED25519`.
+>
+
+Sélectionnez l'option « Authentification par clé SSH » puis saisissez votre clé SSH **publique** dans la zone de texte dédiée.
+
+![Authentification par clé SSH](images/rescue-mode-08.png){.thumbnail}
+
+#### Authentification par mot de passe
+
+Sélectionnez l'option « Authentification par mot de passe ».<br>
+Les identifiants de connexion seront envoyés par défaut sur l'adresse e-mail principale de votre compte OVHcloud. Vous avez la possibilité de renseigner une adresse différente dans le champ `Recevoir les identifiants du mode sur l'adresse e-mail`.
+
+![Authentification par mot de passe Linux](images/rescue-mode-09.png){.thumbnail}
+
+### Rescue Windows
+
+Pour les serveurs disposant d'un système d'exploitation Windows, consultez le [guide dédié](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+L'option `WinRescue`{.action} peut également vous être proposée en fonction de votre serveur. Pour plus d'informations sur ce mode, consultez la [section du guide ci-dessous](#windowsrescue)). Veuillez noter que seule l'authentification par mot de passe est disponible avec ce type de mode rescue.
+
+Spécifiez une autre adresse e-mail si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
+
+![Authentification par mot de passe Windows](images/rescue-mode-10.png){.thumbnail}
+
+### Etapes finales
+
+Cliquez sur `Suivant`{.action} et `Valider`{.action}.
 
 Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Statut » dans la zone intitulée **Etat des services**. 
 <br>Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. 
@@ -165,13 +199,13 @@ Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur
 
 ### Windows <a name="windowsrescue"></a>
 
-Consultez notre guide « [Activer et utiliser le mode rescue Windows](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows) ».
+Pour les serveurs disposant d'un système d'exploitation Windows, consultez le [guide dédié](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
 
 #### Utilisation des outils WinRescue (déprécié)
 
 Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Cet e-mail est également disponible dans votre [espace client OVHcloud](/links/manager). Cliquez sur le nom associé à votre identifiant client dans le coin supérieur droit de votre espace client, puis sur `E-mails de service`{.action}.
 
-Pour utiliser le mode rescue proposé par Windows, vous devez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVHcloud](/links/manager){.external}.
+Pour utiliser le mode rescue proposé par Windows, vous devez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVHcloud](/links/manager).
 
 ![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 
