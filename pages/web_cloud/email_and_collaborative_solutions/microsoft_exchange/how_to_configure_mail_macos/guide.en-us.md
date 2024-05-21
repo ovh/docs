@@ -28,7 +28,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- An [Exchange email account](links/emails-hosted-exchange/)
+- An [Exchange email account](links/web/emails-hosted-exchange)
 - **Mail** installed on your Mac
 -  The required credentials for the email account you would like to configure
  

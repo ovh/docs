@@ -27,7 +27,7 @@ E-Mail-Accounts aus dem E-Mail Pro Angebot können auf allen kompatiblen E-Mail-
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [E-Mail Pro](/links/email-pro) Angebot.
+- Sie verfügen über ein [E-Mail Pro](/links/web/email-pro) Angebot.
 - Sie haben die Gmail-App auf Ihrem Gerät. Sie können diese über den Google Play Store installieren.
 - Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
@@ -56,7 +56,7 @@ Das Einrichten eines Accounts erfolgt **wenn noch kein Account eingerichtet** an
 > **Erste Konfiguration**
 >>
 >> Wählen Sie `E-Mail-Adresse hinzufügen`{.action}<br><br>
->> ![EmailPro](images/Android-first.png){.thumbnail .h-600}
+>> ![EmailPro](images/android-first.png){.thumbnail .h-600}
 >>
 > **Vorhandene Konfiguration**
 >>
@@ -71,35 +71,35 @@ Folgen Sie den Anleitungsschritten indem Sie nacheinander die Tabs aufrufen:
 > [!tabs]
 > **Schritt 1**
 >> Wählen Sie im Menü E-Mail-Kontotypen die Option `Andere`{.action}.<br><br>
->> ![emailpro](images/emailpro-Android-01.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-01.png){.thumbnail .h-600}
 >>
 > **Schritt 2**
 >> Geben Sie Ihre E-Mail-Adresse ein.<br><br>
->> ![emailpro](images/emailpro-Android-02.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-02.png){.thumbnail .h-600}
 >>
 > **Schritt 3**
 >> Wählen Sie das Protokoll für den E-Mail-Empfang aus. Wählen Sie `Persönlich (IMAP)`{.action aus.}<br><br>Weitere Informationen zu [POP und IMAP](#popimap) finden Sie unten in dieser Anleitung.<br><br>
->> ![emailpro](images/emailpro-Android-03.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-03.png){.thumbnail .h-600}
 >>
 > **Schritt 4**
 >> Geben Sie das Passwort des E-Mail-Accounts ein.<br><br>
->> ![emailpro](images/emailpro-Android-04.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-04.png){.thumbnail .h-600}
 >>
 > **Schritt 5**
 >> Geben Sie die **Einstellungen des Eingangsservers** ein:<br><br>- **Benutzername**: Ihre vollständige E-Mail-Adresse<br>- **Passwort**: Das Passwort des E-Mail-Accounts<br>- **Server**: Geben Sie **pro**?**.mail.ovh.net** ein (ersetzen Sie "**?**" mit der Nummer Ihres Servers). <br><br>
->> ![emailpro](images/emailpro-Android-05.png){.thumbnail}
+>> ![emailpro](images/emailpro-android-05.png){.thumbnail}
 >>
 > **Schritt 6**
 >> Geben Sie die **Einstellungen des Ausgangsservers** ein:<br><br>- **Benutzername**: Ihre vollständige E-Mail-Adresse<br>- **Passwort**: Das Passwort des E-Mail-Accounts<br>- **SMTP-Server**: Geben Sie **pro**?**.mail.ovh.net** ein (ersetzen Sie "**?**" mit der Nummer Ihres Servers). <br><br>
->> ![emailpro](images/emailpro-Android-06.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-06.png){.thumbnail .h-600}
 >>
 > **Schritt 7**
 >> Wählen Sie aus, wie oft Ihre E-Mails synchronisiert werden sollen.<br><br>
->> ![emailpro](images/emailpro-Android-07.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-07.png){.thumbnail .h-600}
 >>
 > **Schritt 8**
 >> Legen Sie den Anzeigenamen Ihrer E-Mail-Adresse in der Gmail-App fest und tippen Sie dann auf `Weiter`{.action}.<br><br>
->> ![emailpro](images/emailpro-Android-08.png){.thumbnail .h-600}
+>> ![emailpro](images/emailpro-android-08.png){.thumbnail .h-600}
 >>
 
 Wenn Ihr E-Mail-Account eingerichtet ist, können Sie ab sofort E-Mails über Ihre Gmail-App versenden und empfangen.

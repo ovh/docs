@@ -1,8 +1,8 @@
---- 
+---
 title: "Email Pro - Configurare un indirizzo email in Gmail per Android"
 excerpt: "Scopri come configurare un account Email Pro su Android tramite l’applicazione Gmail"
 updated: 2024-03-15
---- 
+---
 
 <style>
 .w-400 {
@@ -27,7 +27,7 @@ Gli indirizzi email del servizio Email Pro possono essere configurati su client 
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](/links/email-pro)
+- Disporre di una soluzione [Email Pro](/links/web/email-pro)
 - Aver installato l’applicazione Gmail sul proprio dispositivo, che puoi scaricare da Google Play Store
 - Disporre delle credenziali associate all’account email da configurare
 

@@ -27,7 +27,7 @@ Les adresses e-mail de l'offre E-mail Pro peuvent être configurées sur différ
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](/links/email-pro).
+- Disposer d'une offre [E-mail Pro](/links/web/email-pro).
 - Disposer de l'application Gmail sur votre appareil. Vous pouvez installer cette dernière depuis le Google Play Store.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
