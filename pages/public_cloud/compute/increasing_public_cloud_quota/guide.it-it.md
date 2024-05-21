@@ -1,7 +1,7 @@
 ---
 title: 'Aumentare le quote Public Cloud'
 excerpt: 'Come aumentare la quota Public Cloud'
-updated: 2023-05-03
+updated: 2024-05-21
 ---
 
 > [!primary]

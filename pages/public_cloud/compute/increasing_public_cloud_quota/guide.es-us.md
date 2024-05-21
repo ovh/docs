@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar las cuotas de Public Cloud'
 excerpt: 'Cómo aumentar el límite en Public Cloud'
-updated: 2023-05-03
+updated: 2024-05-21
 ---
 
 > [!primary]
