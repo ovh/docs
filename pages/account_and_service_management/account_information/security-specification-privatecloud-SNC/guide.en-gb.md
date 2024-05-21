@@ -1,7 +1,7 @@
 ---
 title: "Security specification for Private Cloud VMmare under SecNumCloud qualification"
 excerpt: "Discover features, security functions and best practices to use our Private Cloud VMware service under SecNumCloud qualification"
-updated: 2024-05-15
+updated: 2024-05-21
 ---
 
 ## Objective

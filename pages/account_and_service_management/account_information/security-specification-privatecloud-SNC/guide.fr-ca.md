@@ -1,7 +1,7 @@
 ---
 title: "Spécifications de sécurité du service VMware on OVHcloud sous la qualification SecNumCloud"
 excerpt: "Découvrez les particularités et fonctions de sécurité ainsi que les bonnes pratiques pour l'utilisation des service VMware on OVHcloud sous la qualification SecNumCloud"
-updated: 2024-05-06
+updated: 2024-05-21
 ---
 
 ## Objectif
@@ -82,7 +82,7 @@ Le client bénéficiant d'une infrastructure Hosted Private Cloud qualifiée Sec
 
 | **Nom** | **Capacités** | **Liens** |
 | --- | --- | --- |
-| Control Plane et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de gestion du service | [API calls for Private Cloud](https://api.ovh.com/console/#/dedicatedCloud) |
+| Control Plane et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de gestion du service | [Appels API pour Private Cloud](https://api.ovh.com/console/#/dedicatedCloud) |
 
 ## 7 - Comptes utilisateurs
 
@@ -168,7 +168,7 @@ Le pack comprend plusieurs fonctionnalités telles que [token validator](/pages/
 
 Afin d'assurer la portabilité et la réversibilité des données sur le service, OVHcloud vous permet d'importer et exporter vos données (machines virtuelles et fichiers de configuration du vCenter) en toute autonomie sous un format de fichiers VMDK ou tout autre format supporté par l'hyperviseur VMware. Il est également possible d'utiliser les API mis à disposition pour faciliter ces opérations.
 
-Les principes de portabilité d'OVHcloud sont décrits dans sa propre [politique de portabilité](/pages/account_and_service_management/reversibility/00-global-reversibility-policy) et ceux spécifiques au service Hosted Private Cloud by VMware sont indiqués dans sa [politique spécifique](/pages/account_and_service_management/reversibility/02-hosted-private-cloud-reversibility-policy).
+Les principes de portabilité d'OVHcloud sont décrits dans sa propre [politique de portabilité](/pages/account_and_service_management/reversibility/00-global-reversibility-policy) et ceux spécifiques au service Hosted Private Cloud by VMware sous la qualification SecNumCloud sont indiqués dans sa [politique spécifique](/pages/account_and_service_management/reversibility/05-snc-vmware-reversibility-policy).
 
 ### 10.1 - Effacement des données métier
 
