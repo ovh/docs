@@ -1,5 +1,5 @@
 ---
-title: Configurez votre réseau privé (EN)
+title: Public Cloud Databases - Comment configurer votre réseau privé (EN)
 excerpt: Connect a Public Cloud Database to vRack
 updated: 2023-08-17
 ---
