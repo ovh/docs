@@ -10,14 +10,13 @@ updated: 2024-05-16
 
 ## Prérequis
 
-- Posséder une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 - Un compte vCloud Director administrateur avec une Organisation VCD.
 - Un utilisateur avec le rôle Administrateur de l'organisation pour vous connecter au portail en libre-service Veeam Data Protection (le nouvel utilisateur admin d'un datacenter virtuel a le rôle par défaut).
 - Avoir lu les guides VCD : [Les concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) / [Comment se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) / [Comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
 
 ## En pratique
 
-Veeam Backup & Replication accompagne VCD. 
+Veeam Data Platform accompagne VCD. 
 
 Il utilise l'API VMware Cloud Director pour sauvegarder les vApps et les VMs et les restaurer directement dans la hiérarchie VMware Cloud Director.
 
@@ -73,13 +72,9 @@ Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle
 ##### Les depots (repository)
 
 Par défaut, vous avez **les dépots** suivant :
-
-Avec l'offre que vous avez souscrite vous disposer de 3 depots avec 2 Jobs configurés par défaut avec un quota de 100GB :
 1. **Bronze Repository** : STD Stockage Objet
-2. **Silver Repository** : STD Stockage Objet + Sauvegarde hors Site (Offsite)
-3. **Gold Repository** : Haute performance stockage object + Sauvegarde hors site (offsite) + 14 points d'immutabilité (14 points de restaurations sur 2 sites différents)
-
-Les référentiels sont tous configurés avec l'Object Storage Standard. Seul le produit de disponibilité générale répond aux spécifications de référentiel indiquées.
+2. **Silver Repository** : STD Stockage Objet + Copie de sauvegarde hors site ( offsite ).
+3. **Gold Repository** : Haute performance stockage object + Copie de sauvegarde hors site (offsite)
 
 #### Les taches de sauvegardes (Job)
 
