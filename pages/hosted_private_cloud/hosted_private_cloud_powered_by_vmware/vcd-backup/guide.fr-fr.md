@@ -6,7 +6,7 @@ updated: 2024-05-16
 
 ## Objectif
 
-**Nous allons voir dans ce guide les solutions de sauvegarde et de restauration de Veeam pour la solution VMware Cloud Director.**
+**Nous allons voir dans ce guide les solutions de sauvegarde et de restauration de Veeam pour VMware Cloud Director.**
 
 ## Prérequis
 
