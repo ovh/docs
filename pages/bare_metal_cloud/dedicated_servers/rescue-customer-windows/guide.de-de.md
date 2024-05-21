@@ -4,6 +4,10 @@ excerpt: Erfahren Sie, wie Sie den rescue-customer-windows modus von OVHcloud zu
 updated: 2024-05-21
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 ## Ziel
 
 Der *rescue-customer-windows* Modus ist ein von OVHcloud bereitgestelltes Tool, mit dem Sie auf einem temporären Betriebssystem starten können, um Probleme auf Ihrem Server zu diagnostizieren und zu beheben.
