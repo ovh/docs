@@ -43,7 +43,7 @@ Les utilisateurs disponibles apparaitront automatiquement s'ils existent.
 Voici la liste des guides IAM dans Hosted Private Cloud - VMware on OVHcloud : 
 - Guide 1 : [Premiers pas avec IAM et VMware dans Hosted Private Cloud - VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
 - Guide 2 : [Comment activer IAM dans Hosted Private Cloud - VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
-- Guide 3 : [Comment créer un rôle Vsphere IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
+- Guide 3 : [Comment utiliser et créer un rôle Vsphere IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
 - Guide 4 : [Comment ajouter un rôle Vsphere par défaut à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
 - Guide 5 : [Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
 
