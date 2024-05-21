@@ -141,6 +141,7 @@
             + [Restoring a Bare Metal Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore)
         + [Troubleshooting](bare-metal-cloud-dedicated-servers-troubleshooting)
             + [Activating and using rescue mode](bare_metal_cloud/dedicated_servers/rescue_mode)
+            + [Activating and using Windows rescue mode](bare_metal_cloud/dedicated_servers/rescue-customer-windows)
             + [How to recover server access if your user password is lost](bare_metal_cloud/dedicated_servers/replacing-user-password)
             + [Replacing an SSH key pair](bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
             + [Replacing a defective disk](bare_metal_cloud/dedicated_servers/disk_replacement)
