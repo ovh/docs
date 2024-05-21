@@ -79,7 +79,7 @@ Une fois le mot de passe récupéré, vous aurez trois possibilités pour vous c
 >
 > Dans tous les cas, le mot de passe vous sera demandé.
 >
-> L'utilisateur permettant de se connecter est `Administator`.
+> L'utilisateur permettant de se connecter est `Administrator`.
 >
 > Le mot de passe est transmis via un lien `secret-as-a-service`.
 
@@ -99,13 +99,13 @@ Vous pouvez changer les options d'accessibilité et activer le clavier virtuel :
 
 ### Monter les disques
 
-Il est possible que les disques attachés soient vus comme des `Volumes Dynamiques`. Pour pouvoir les utiliser, veuillez vous référer à la [documentation officielle Microsoft]( https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/troubleshoot-disk-management#a-dynamic-disks-status-is-foreign).
+Il est possible que les disques attachés soient vus comme des `Volumes Dynamiques`. Pour pouvoir les utiliser, veuillez vous référer à la [documentation officielle Microsoft](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/troubleshoot-disk-management#a-dynamic-disks-status-is-foreign).
 
 ### Utilitaires recommandés
 
 > [!warning]
 >
-> Vous trouverez ci-dessps nune liste de logiciels recommandés pour certains cas d'usages.
+> Vous trouverez ci-dessous une liste de logiciels recommandés pour certains cas d'usages.
 > Ces logiciels ne sont pas installés par défaut sur l'image de *rescue* et sont facilement disponibles sur Internet.
 
 | Logiciel | Description |
