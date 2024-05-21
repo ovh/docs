@@ -1,8 +1,8 @@
---- 
+---
 title: "E-mail Pro - Konfiguracja konta e-mail w programie Gmail na urządzeniu z systemem Android"
 excerpt: "Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu z systemem Android poprzez aplikację Gmail"
 updated: 2024-03-15
---- 
+---
 
 <style>
 .w-400 {
@@ -27,7 +27,7 @@ Konta e-mail usługi E-mail Pro mogą być skonfigurowane w jednym z kompatybiln
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [E-mail Pro](/links/email-pro)
+- Wykupienie usługi [E-mail Pro](/links/web/email-pro)
 - Instalacja aplikacji Gmail na Twoim urządzeniu (możesz pobrać ją z Google Play Store)
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 

@@ -28,7 +28,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- You have an [Email Pro](/links/email-pro) solution.
+- You have an [Email Pro](/links/web/email-pro) solution.
 - You have the Gmail app installed on your device. You can install the app from the Google Play Store.
 - You have the required credentials for the email account you would like to configure.
 
