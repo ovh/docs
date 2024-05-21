@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Utiliser le fichier htaccess avec WordPress"
 excerpt: "Découvrez comment sécuriser votre blog WordPress avec un ou plusieurs fichiers htaccess"
-updated: 2024-03-15
+updated: 2024-05-21
 ---
 
 ## Objectif
@@ -136,14 +136,29 @@ Votre fichier **wp-config.php**, présent à la racine de votre site web, contie
 
 Si vous avez identifié une adresse IP malveillante, voici la ligne à renseigner dans votre fichier **.htaccess** :
 
-```bash
-<Limit GET POST>
-    order allow,deny deny from 203.0.113.0
-    allow from all
-</Limit>
-```
-
-Dans cet exemple, `203.0.113.0` désigne l'adresse IP à bloquer.
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny deny from 203.0.113.0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Dans cet exemple, `203.0.113.0` désigne l'adresse IPv4 à bloquer.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny deny from 2001:db8:1:1b00:203:0:113:0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Dans cet exemple, `2001:db8:1:1b00:203:0:113:0` désigne l'adresse IPv6 à bloquer.
+>>
 
 Pour plus de détails sur ce sujet, consultez notre guide sur la [« restriction d'accès par IP via le fichier .htaccess »](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -151,13 +166,30 @@ Pour plus de détails sur ce sujet, consultez notre guide sur la [« restriction
 
 Le répertoire **wp-admin** permet de vous connecter à votre interface d'administration (la méthode fonctionne également avec les autres répertoires, mais ils correspondent à des URLs qui n'aboutissent pas à une interface particulière). Pour protéger ce répertoire, autorisez spécifiquement l'accès à une ou plusieurs adresses IP à l'aide du code suivant à placer dans votre **.htaccess** :
 
-```bash
-<Limit GET POST PUT>
-    order deny,allow deny from all
-    allow from 203.0.113.0
-    allow from 203.0.113.1
-</Limit>
-```
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow deny from all
+>>   allow from 203.0.113.0
+>>   allow from 203.0.113.1
+>> </Limit>
+>>```
+>>
+>> Dans cet exemple, seuls les adresses IPv4 `203.0.113.0` et `203.0.113.1` sont autorisées à accéder au répertoire dans lequel le fichier .htaccess se trouve.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow deny from all
+>>   allow from 2001:db8:1:1b00:203:0:113:0
+>>   allow from 2001:db8:1:1b00:203:0:113:1
+>> </Limit>
+>>```
+>>
+>> Dans cet exemple, seuls les adresses IPv6 `2001:db8:1:1b00:203:0:113:0` et `2001:db8:1:1b00:203:0:113:1` sont autorisées à accéder au répertoire dans lequel le fichier .htaccess se trouve.
 
 ### Informations importantes à retenir
 
@@ -168,7 +200,7 @@ Le répertoire **wp-admin** permet de vous connecter à votre interface d'admini
 
 ## Aller plus loin <a name="go-further"></a>
 
-Consultez le [tutoriel disponible sur le site de la Fondation Apache](https://httpd.apache.org/docs/2.4/fr/howto/htaccess.html).
+Consultez le [tutoriel disponible sur le site de la Fondation Apache](https://httpd.apache.org/docs/2.4/fr/howto/htaccess.html){.external}.
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
