@@ -1,7 +1,7 @@
 ---
 title: "How to activate and use rescue mode"
 excerpt: "Find out how to use the OVHcloud rescue mode to troubleshoot your dedicated server"
-updated: 2024-05-15
+updated: 2024-05-21
 ---
 
 ## Objective
@@ -70,7 +70,9 @@ Login details will be sent by default to the main address of your OVHcloud accou
 
 ### Windows Rescue
 
-For servers running a Windows operating system, in addition to the `rescue-customer`{.action} mode, you can choose the option `WinRescue`{.action} (see the [guide section below](#windowsrescue)). Note that only password authentication is available with this type of rescue mode.
+For servers with a Windows operating system, please refer to the [dedicated guide](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+You can also choose the `WinRescue`{.action} option, depending on your server. For more information about this mode, see the [guide section below](#windowsrescue)). Note that only password authentication is available with this type of rescue mode.
 
 Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
 
@@ -200,7 +202,9 @@ To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.act
 
 ### Windows <a name="windowsrescue"></a>
 
-#### Using WinRescue tools
+For servers with a Windows operating system, please refer to the [dedicated guide](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+#### Using WinRescue tools (deprecated)
 
 Once your server has rebooted, you will receive an email with your rescue mode access credentials. This email is also available in your [OVHcloud Control Panel](/links/manager) as soon as it is sent: Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
 
