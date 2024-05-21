@@ -119,7 +119,7 @@ Vous pouvez vérifier si l'adresse IP de destination a bien été mise à jour. 
 
 > [!warning]
 >
-> Toute modification dans la zone DNS active d'un nom de domaine via dyndns peut entraîner un délai de propagation de la mise à jour de plusieurs minutes.
+> Toute modification dans la zone DNS active d'un nom de domaine via DynDNS peut entraîner un délai de propagation de la mise à jour de plusieurs minutes.
 >
 
 ![dynhost](images/target.png){.thumbnail}
