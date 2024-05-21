@@ -1,5 +1,5 @@
 ---
-title: "Security specification for Private Cloud by VMmare"
+title: "Security specification for Private Cloud by VMmare (EN)"
 excerpt: "Discover features, security functions and best practices to use our Private Cloud by VMware service "
 updated: 2024-05-21
 ---
