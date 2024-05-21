@@ -83,14 +83,18 @@ Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle
 
 ##### Les politiques de sauvegardes
 
+** Les depots :**
+
 Par défaut, vous avez **les dépots** suivant :
 
-Avec l'offre que vous avez souscrite vous disposer de 3 depots avec 2 Jobs configurés par défaut :
+Avec l'offre que vous avez souscrite vous disposer de 3 depots avec 2 Jobs configurés par défaut avec un quota de 100GB :
 1. **Bronze Repository** : STD Stockage Objet
 2. **Silver Repository** : STD Stockage Objet + Sauvegarde hors Site (Offsite)
-3. **Gold Repository** : Haute performance stockage object + Sauvegarde hors site (offsite) + 14 points d'immutabilité (14 points de restauration sur 2 sites differents)
+3. **Gold Repository** : Haute performance stockage object + Sauvegarde hors site (offsite) + 14 points d'immutabilité (14 points de restaurations sur 2 sites différents)
 
-2. **Les politiques de sauvegardes**
+Les référentiels sont tous configurés avec l'Object Storage Standard. Seul le produit de disponibilité générale répond aux spécifications de référentiel indiquées.
+
+**Les politiques de sauvegardes**
 
 En tant que client vCloud Director, je suis capable de sauvegarder mes machines virtuelles de production avec une rétention de **30 points de restauration** + une copie hors site + **14 jours d'immuabilité** : **Gold**.
 
@@ -106,7 +110,7 @@ Dans la console VCD Veeam, cliquez sur `Plus`{.action} et sélectionnez `Protect
 
 ![VCD access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
-Cliquez sur `Jobs` puis sur `+ Create`{.action}.
+Cliquez sur `Jobs`{.action} puis sur `+ Create`{.action}
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation.png){.thumbnail}
 
@@ -114,13 +118,13 @@ Dans la fenêtre qui s'ouvre, spécifiez le nom du Job, la description et la pol
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_jobs.png){.thumbnail}
 
-Vous devez ensuite choisir votre machine virtuelle (VM). Pour cela, cliquez sur `Add`{.action}.
+Vous devez ensuite choisir votre machine virtuelle (VM). Pour cela, cliquez sur `Add.`{.action}
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_3.png){.thumbnail}
 
 Vous pouvez dérouler l'arborescence de votre organisation VMware Cloud Director et sélectionner votre VM.
 
-Cliquez sur `Next`{.action}.
+Cliquez sur `Next.`{.action}
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_4.png){.thumbnail}
 
