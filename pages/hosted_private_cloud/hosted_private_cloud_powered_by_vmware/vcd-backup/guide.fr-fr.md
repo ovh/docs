@@ -32,19 +32,19 @@ Le service Veeam Backup Data Protection est disponible et prêt à l'emploi pour
 
 ### Étape 1 - Sauvegarde
 
-#### Accéder à la console d'administration VEEAM Backup Data Protection
+#### Accéder à la console d'administration Veeam Backup Data Protection
 
-Le service **Protection des données avec VEEAM** dispose d’un plugin pour sauvegarder des VMs et des vApp à partir de n’importe quel Virtual Data Center (VDC) de l’organisation. Il est disponible au niveau de l'organisation pour tout utilisateur VMware Cloud Director ayant le rôle d'administrateur de l'organisation.
+Le service **Protection des données avec Veeam** dispose d’un plugin pour sauvegarder des VMs et des vApp à partir de n’importe quel Virtual Data Center (VDC) de l’organisation. Il est disponible au niveau de l'organisation pour tout utilisateur VMware Cloud Director ayant le rôle d'administrateur de l'organisation.
 
-Lorsque vous utilisez l'intégration VCD Protection des données avec VEEAM pour créer des tâches de sauvegarde, vous pouvez choisir n'importe quelle instance de machine virtuelle à partir de n'importe quel datacenter virtuel de l'organisation.
+Lorsque vous utilisez l'intégration VCD Protection des données avec Veeam pour créer des tâches de sauvegarde, vous pouvez choisir n'importe quelle instance de machine virtuelle à partir de n'importe quel datacenter virtuel de l'organisation.
 
-Pour accéder au Portail Protection des données avec VEEAM depuis Cloud Director, connectez-vous au portail client VCD avec un compte vCloud Director disposant des droits appropriés.
+Pour accéder au Portail Protection des données avec Veeam depuis Cloud Director, connectez-vous au portail client VCD avec un compte vCloud Director disposant des droits appropriés.
 
 Dans le menu de la barre centrale supérieure, cliquez sur `Plus`{.action} et sélectionnez `Protection des données avec Veeam`{.action}
 
 ![VCD access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
-La fenêtre du Plugin VEEAM VCD s'ouvrira avec un bandeau gris/noir.
+La fenêtre du Plugin Veeam VCD s'ouvrira avec un bandeau gris/noir.
 
 ![VCD access to Veeam Backup](images/vcd_veeam_backup_repo_2.png){.thumbnail}
 
@@ -96,13 +96,13 @@ Il est recommandé d'utiliser les tâches de sauvegarde de VMware Cloud Director
 
 #### Comment créer une tache de sauvegarde Veeam ?
 
-Vous allez créer votre premier Job depuis le plugin VCD VEEAM Backup Data Protection :
+Vous allez créer votre premiere tache de sauvegarde depuis le plugin VCD Veeam Backup Data Protection :
 
 Dans la console VCD Veeam, cliquez sur `Plus`{.action} et sélectionnez `Protection des données avec Veeam`{.action}
 
 ![VCD access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
-Cliquez sur `Jobs`{.action} puis sur `+ Create`{.action}
+Cliquez sur `Jobs`{.action} puis sur `Create`{.action}
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation.png){.thumbnail}
 
@@ -145,7 +145,7 @@ Si nécessaire, vous pouvez ajouter des options de monitoring pour vos JOBS. Cli
 
 Le JOB apparait dans la liste.
 
-### Comment sauvegarder une machine virtuelle avec Veeam Backup ?
+### Comment sauvegarder une machine virtuelle avec Veeam ?
 
 > [!primary]
 >
@@ -164,15 +164,15 @@ Choisissez une VM. Cliquez sur `Actions`{.action}, puis sur `Protection des donn
 
 ### Etape 2 - Restauration
 
-#### Comment restaurer une VM avec le Plugin VEEAM VCD ?
+#### Comment restaurer une VM avec le Plugin Veeam VCD ?
 
-Veam Backup dispose de plusieurs fonctionnalités de restauration :
+Veeam Backup dispose de plusieurs fonctionnalités de restauration :
 
 - La restauration au niveau des fichiers (File Level Restoration)
 - La récupération instantanée (Instant Recovery)
 - La connaissance des applications (Application Awareness)
 - La stratégie par VM (Policies)
-- 3 référentiels avec classe de stockage (repositories)
+- Les 3 référentiels avec classe de stockage (repositories)
 - L'immutabilité (optionnel)
 
 #### Données incluses dans les restaurations
@@ -216,7 +216,7 @@ Dans la dernière étape, cliquez sur `Finish`{.action}. Si vous le souhaitez, v
 
 ![VCD_Veeam_restore_vm_3](images/vcd_veeam_restore_vm_3.png){.thumbnail}
 
-Ce processus est simplifié grâce à VCD, VEEAM et OVHcloud.
+Ce processus est simplifié grâce à VCD, Veeam et OVHcloud.
 
 ## Aller plus loin
 
