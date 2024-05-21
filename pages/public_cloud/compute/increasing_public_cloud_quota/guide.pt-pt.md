@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar as quotas Public Cloud'
 excerpt: 'Saiba como solicitar o aumento das suas quotas Public Cloud'
-updated: 2023-05-03
+updated: 2024-05-21
 ---
 
 > [!primary]
@@ -51,7 +51,7 @@ Em seguida, clique na seta descendente ao lado de "Selecione o volume" para exib
 
 A tabela abaixo mostra os recursos obtidos para cada cota:
 
-|Quota|Instâncias|CPU/Cores|RAM|Tamanho do volume|Volumes|Snapshots|Tamanho da cópia de segurança|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
+|Quota|Instâncias|CPU/Cores|RAM (MB)|Tamanho do volume (GB)|Volumes|Snapshots|Tamanho da cópia de segurança (GB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|59TB|2|2|2|
 |20 VMs|20|40|240GB|20TB|40|40|117TB|2|2|2|
