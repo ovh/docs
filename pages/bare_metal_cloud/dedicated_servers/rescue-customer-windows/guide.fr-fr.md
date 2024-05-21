@@ -51,7 +51,7 @@ Recherchez « Boot » dans la zone **Informations générales**, cliquez sur le 
 
 Dans la page suivante, sélectionnez **Booter en mode rescue**. 
 
-Choisissez `rescue-customer-windows`{.action} (voir la [section du guide ci-dessous](#windowsrescue). Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
+Choisissez `rescue-customer-windows`{.action}. Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
 
 Cliquez sur `Suivant`{.action} et `Valider`{.action}.
 
