@@ -210,7 +210,7 @@ Lorsque vous restaurez des VMs normales ou autonomes dans la hiérarchie vCloud 
 
 #### Comment restaurer une machine virtuelle depuis le plugin Veeam Backup Data Protection VCD ?
 
-Pour effectuer une restauration complète , cliquez sur `Entire VM Restore`{.action}
+Pour effectuer une restauration complète, cliquez sur `Entire VM Restore`{.action}
 
 ![VCD_Veeam_restore_vm_1](images/vcd_veeam_restore_vm.png){.thumbnail}
 
