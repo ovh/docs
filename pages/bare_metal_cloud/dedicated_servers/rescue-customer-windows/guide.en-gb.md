@@ -106,7 +106,7 @@ Attached disks may be displayed as `Dynamic Volumes`. To access them, please ref
 > [!warning]
 >
 > Below is a list of recommended software for certain use cases.
-> This software ist not installed by default on the *rescue* image and are easily available on the internet.
+> This software is not installed by default on the *rescue* image and are easily available on the internet.
 
 | Software | Description |
 | --- | --- |
