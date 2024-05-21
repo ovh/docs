@@ -83,7 +83,7 @@ Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle
 
 ##### Les politiques de sauvegardes
 
-** Les depots :**
+##### Les depots
 
 Par défaut, vous avez **les dépots** suivant :
 
@@ -94,15 +94,20 @@ Avec l'offre que vous avez souscrite vous disposer de 3 depots avec 2 Jobs confi
 
 Les référentiels sont tous configurés avec l'Object Storage Standard. Seul le produit de disponibilité générale répond aux spécifications de référentiel indiquées.
 
-**Les politiques de sauvegardes**
+#### Les taches de sauvegardes (Job)
 
-En tant que client vCloud Director, je suis capable de sauvegarder mes machines virtuelles de production avec une rétention de **30 points de restauration** + une copie hors site + **14 jours d'immuabilité** : **Gold**.
+Les taches de sauvegarde nécessitent 4 paramètres par défaut:
 
-Je suis capable de sauvegarder mes machines virtuelles avec une rétention de 14 points avec seulement 1 site : **Bronze / Silver**.
+1. Les paramètres de taches : Nom / Dépot ou Quota (Bronze/Silver/Gold : 100GB) / Description / Rétention (Jours/point de restauration)
+2. Machines virtuelles (VM) : Ajout ou exclusion de machines virtuelles / vApp / vCloud Organisation
+3. Traitement invité : Traitement prenant en charge les applications / Indexation du système de fichiers invité / Informations d'identification du système d'exploitation invité (credentials)
+4. Notifications E-Mail : Activation de notifications E-Mail
 
-<!--- proofread resumes below this point --->
+Pour les machines virtuelles gérées par VMware Cloud Director, Veeam Backup & Replication offre un type spécial de travail de sauvegarde : le travail de sauvegarde VMware Cloud Director. Les tâches de sauvegarde de VMware Cloud Director traitent les objets VMware Cloud Director, assurent leur restauration correcte et la prise en charge des fonctionnalités spécifiques à Cloud Director.
 
-#### Comment créer un Job de sauvegarde Veeam
+Il est recommandé d'utiliser les tâches de sauvegarde de VMware Cloud Director pour sauvegarder les machines virtuelles gérées par VMware Cloud Director. Si vous sauvegardez des machines virtuelles gérées par VMware Cloud Director à l'aide d'un travail de sauvegarde régulier, Veeam Backup & Replication effectuera une sauvegarde au niveau du serveur vCenter sous-jacent et ne capturera pas les métadonnées vApp. Par conséquent, vous ne serez pas en mesure de restaurer une machine virtuelle pleinement opérationnelle sur VMware Cloud Director.
+
+#### Comment créer une tache de sauvegarde Veeam ?
 
 Vous allez créer votre premier Job depuis le plugin VCD VEEAM Backup Data Protection :
 
