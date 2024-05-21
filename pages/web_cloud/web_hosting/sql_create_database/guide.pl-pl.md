@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie bazy danych na hostingu"
 excerpt: "Dowiedz się, jak utworzyć bazę danych na hostingu OVHcloud"
-updated: 2024-05-16
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -102,6 +102,11 @@ Sprawdź, czy wszystkie wyświetlane informacje są poprawne. Jeśli tak, klikni
 >
 
 Powtórz ten proces tyle razy, ile chcesz, aby utworzyć kilka baz danych (w ramach limitu baz danych dostępnych w Twojej ofercie).
+
+> [!warning]
+>
+> Po zatwierdzeniu procesu tworzenia bazy danych nie można już zmieniać nazwy użytkownika ani nazwy bazy danych.
+>
 
 ### Etap 3 - Zarządzanie bazą danych <a name="step3"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Creating a database on your web hosting plan"
 excerpt: "Find out how to create a database on your OVHcloud web hosting plan"
-updated: 2024-05-16
+updated: 2024-05-17
 ---
 
 ## Objective
@@ -98,6 +98,11 @@ Verify that all information displayed in the summary is correct. If this is the 
 >
 
 Repeat this process as needed in order to create several databases (the total number of databases is limited by your web hosting plan).
+
+> [!warning]
+>
+> Once the database creation is validated, the user name and database name cannot be changed.
+>
 
 ### Step 3 - Manage your database <a name="step3"></a>
 

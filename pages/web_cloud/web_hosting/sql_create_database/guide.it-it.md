@@ -1,7 +1,7 @@
 ---
 title: "Creare un database su un hosting Web"
 excerpt: "Questa guida ti mostra come creare un database sul tuo hosting Web OVHcloud"
-updated: 2024-05-16
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -102,6 +102,11 @@ Verificare che tutte le informazioni visualizzate nel riepilogo siano corrette. 
 >
 
 Ripeti questo processo per tutti i database che vuoi creare (nel limite dei database disponibili nella tua offerta).
+
+> [!warning]
+>
+> Una volta convalidata la creazione del database, il nome utente e il nome del database non possono più essere modificati.
+>
 
 ### Step 3 - Gestire il database <a name="step3"></a>
 

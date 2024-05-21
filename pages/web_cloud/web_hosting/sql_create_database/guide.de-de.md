@@ -1,7 +1,7 @@
 ---
 title: "Eine Datenbank auf Ihrem Webhosting erstellen"
 excerpt: "Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden"
-updated: 2024-05-16
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -102,6 +102,11 @@ Geben Sie die erforderlichen Informationen ein und klicken Sie auf `Weiter`{.act
 >
 
 Wiederholen Sie diesen Vorgang so oft wie nötig, um mehrere Datenbanken zu erstellen (im Rahmen der in Ihrem Webhosting verfügbaren Datenbanken).
+
+> [!warning]
+>
+> Nachdem die Erstellung der Datenbank bestätigt wurde, können der Benutzername und der Datenbankname nicht mehr geändert werden.
+>
 
 ### Schritt 3: Verwaltung Ihrer Datenbank <a name="step3"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Criar uma base de dados num alojamento web"
 excerpt: "Saiba como criar uma base de dados no seu alojamento web OVHcloud"
-updated: 2024-05-16
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -102,6 +102,11 @@ Certifique-se de que todas as informações apresentadas no resumo estão corret
 >
 
 Repita este processo as vezes que desejar a fim de criar várias bases de dados (no limite das bases de dados disponíveis na sua solução).
+
+> [!warning]
+>
+> Depois de validada a criação da base de dados, o nome do utilizador e o nome da base de dados não podem ser alterados.
+>
 
 ### Etapa 3 - Gerir a sua base de dados <a name="step3"></a>
 
