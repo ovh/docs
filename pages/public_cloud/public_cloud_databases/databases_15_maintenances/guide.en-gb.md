@@ -37,6 +37,8 @@ You can get a list of maintenances for a service through the dedicated API endpo
 > @api {v1} /cloud GET /1.0/cloud/project/{serviceName}/database/postgresql/{productId}/maintenance
 >
 
+![Choose Maintenance ](images/maintenancesql.png){.thumbnail}
+
 > [!primary]
 > If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
@@ -50,6 +52,8 @@ You can also decide to preemptively apply some operations, using this API endpoi
 >
 > @api {v1} /cloud POST /1.0/cloud/project/{serviceName}/database/postgresql/{productId}/maintenance/{maintenanceId}/apply
 >
+
+![Choose Maintenance ](images/maintenancesql2.png){.thumbnail}
 
 This might be a good idea if e.g. you want to prepare for a busy period and thus want to avoid disturbances during that time.
 
