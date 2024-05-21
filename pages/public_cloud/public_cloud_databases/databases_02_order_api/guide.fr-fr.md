@@ -1,5 +1,5 @@
 ---
-title: Premiers pas avec les bases de données Public Cloud via API (EN)
+title: Public Cloud Databases - Premiers pas avec les APIs (EN)
 excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
 updated: 2024-02-29
 ---
