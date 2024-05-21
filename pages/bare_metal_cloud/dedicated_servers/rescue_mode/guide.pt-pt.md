@@ -1,7 +1,7 @@
 ---
 title: "Ativar e utilizar o modo rescue"
 excerpt: "Descubra como utilizar o modo rescue OVHcloud para solucionar problemas com o seu servidor dedicado"
-updated: 2024-05-15
+updated: 2024-05-21
 ---
 
 > [!primary]
@@ -74,7 +74,9 @@ Os identificadores de ligação serão enviados por predefinição para o endere
 
 ### Rescue Windows
 
-Para os servidores com sistema operativo Windows, além do modo `rescue-customer`{.action}, tem ainda a possibilidade de escolher a opção `WinRescue`{.action} (ver [secção do manual abaixo](#windowsrescue)). Tenha em conta que apenas a autenticação por palavra-passe está disponível com este tipo de modo rescue.
+Para os servidores com sistema operativo Windows, consulte o [guia dedicado](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+A opção `WinRescue`{.action} também pode ser proposta em função do servidor. Para mais informações sobre este modo, consulte [secção do manual](#windowsrescue). Tenha em conta que apenas a autenticação por palavra-passe está disponível com este tipo de modo rescue.
 
 Especifique outro endereço de e-mail se não pretender **não** que os identificadores de ligação sejam enviados para o endereço principal da sua conta OVHcloud.
 
@@ -203,7 +205,9 @@ Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco r�
 
 ### Windows <a name="windowsrescue"></a>
 
-#### Utilização das ferramentas WinRescue
+Para os servidores com sistema operativo Windows, consulte o [guia dedicado](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+#### Utilização das ferramentas WinRescue (obsoleta)
 
 Após o reboot do seu servidor, receberá um e-mail com os dados de acesso em modo rescue. Este e-mail também está disponível na [Área de Cliente OVHcloud](/links/manager). Clique no nome associado ao seu ID de cliente no canto superior direito da sua Área de Cliente e, a seguir, em `E-mails de serviço`{.action}.
 
