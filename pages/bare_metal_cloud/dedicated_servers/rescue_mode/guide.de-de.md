@@ -1,7 +1,7 @@
 ---
 title: "Rescue-Modus aktivieren und verwenden"
 excerpt: "Erfahren Sie hier, wie Sie den OVHcloud Rescue-Modus zur Fehlerbehebung bei einem Dedicated Server einsetzen"
-updated: 2024-05-15
+updated: 2024-05-21
 ---
 
 > [!primary]
@@ -74,7 +74,9 @@ Die Zugangsdaten werden an die primäre E-Mail-Adresse Ihres OVHcloud Kunden-Acc
 
 ### Windows Rescue
 
-Bei einem Server mit Windows Betriebssystem können Sie zusätzlich zum Modus `Rescue-Customer`{.action} die Option `WinRescue`{.action} wählen (siehe [Abschnitt weiter unten](#windowsrescue)). Bitte beachten Sie, dass bei diesem Rescue-Modus nur die Authentifizierung per Passwort möglich ist.
+Für Server, die über ein Windows Betriebssystem verfügen, lesen Sie [unsere ASNleitung](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+Die Option `WinRescue`{.action} kann hier abhängig vom Server angeboten werden. Weitere Informationen zu diesem Modus finden Sie im [Abschnitt weiter unten](#windowsrescue). Beachten Sie, dass bei diesem Rescue-Modus nur die Authentifizierung per Passwort möglich ist.
 
 Geben Sie eine andere E-Mail-Adresse an, wenn Sie **nicht** möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Accounts gesendet werden.
 
@@ -201,7 +203,9 @@ Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](/links/
 
 ### Windows <a name="windowsrescue"></a>
 
-#### Verwendung der WinRescue-Tools
+Für Server, die über ein Windows Betriebssystem verfügen, lesen Sie die [Dedicated Guide](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+#### Verwendung der WinRescue-Tools (abgewertet)
 
 Nach dem Neustart Ihres Servers erhalten Sie eine E-Mail mit den Login-Daten des Rescue-Modus. Diese E-Mail ist auch in Ihrem [OVHcloud Kundencenter](/links/manager) verfügbar. Klicken Sie in der oberen rechten Ecke Ihres Kundencenters auf den Namen Ihrer Kundenkennung und anschließend auf `E-Mails vom Support`{.action}.
 
