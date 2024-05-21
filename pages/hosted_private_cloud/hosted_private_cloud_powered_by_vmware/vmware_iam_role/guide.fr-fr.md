@@ -12,6 +12,7 @@ updated: 2024-05-17
 
 - Disposer d'un [compte OVHcloud.](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - Avoir au préalable un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware).
+- Avoir IAM activé dans Hosted Private Cloud - VMware on OVHcloud : Guide 2 - [Comment activer IAM dans Hosted Private Cloud - VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
 
 ## En pratique
 
@@ -29,6 +30,8 @@ Cependant, voici la procédure pour en créer un.
 
 Accéder à la console OVHcloud, en suivant [le lien de l'espace client](/links/manager) et **Connectez-vous avec vos identifiants**.
 
+![IAM role add](images/iam_role_8.png){.thumbnail}
+
 Pour créer votre rôle IAM dans le PCC : 
 
 1. Aller dans la section de votre cloud privée : `Hosted Private Cloud > VMWARE > PCC-XX > Utilisateurs.`{.action}
@@ -40,8 +43,6 @@ Ensuite quand la fenêtre s'affiche et Choisissez le nom de votre rôle
 3. Cliquer sur : `Confirmer`{.action}
 
 Vous pouvez après éditer les droits du groupe de la même manière qu'avec un utilisateur local Vsphere. Vous pouvez aussi faire le choix d'être **Vsphere Admin** dans les permissions managées de la politique IAM.
-
-![IAM role add](images/iam_role_8.png){.thumbnail}
 
 ![IAM role add](images/iam_role_9.png){.thumbnail}
 
