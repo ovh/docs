@@ -69,6 +69,8 @@ Cuando haya terminado, salga del instalador haciendo clic en `Finish`{.action}.
 
 El sistema le redirigirá al asistente de instalación. Solo tiene que cerrar la ventana.
 
+<a name="create"></a>
+
 ### Crear una cuenta de servicio Veeam Enterprise
 
 #### Paso 1 - Crear la cuenta de servicio

@@ -1,7 +1,7 @@
 ---
 title: Configuración de NCM Self Service (CALM) (EN)
 excerpt: 'How to enable Self Service (CALM) in your Prism Central'  
-updated: 2023-01-16
+updated: 2024-05-13
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ updated: 2023-01-16
 - A Nutanix cluster in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 - You must be connected to the cluster via Prism Central
-- Have BYOL for Self Service (CALM) licences (These licences are not available with the standard and advanced pack offered by OVHcloud).
+- Have Self Service (CALM) licences. These licences are available with the Nutanix on OVHcloud packaged service (with limitations for **Starter** pack)
 - An additional VLAN in your cluster that distributes IPAM IP addresses and has internet access
 
 ## Overview

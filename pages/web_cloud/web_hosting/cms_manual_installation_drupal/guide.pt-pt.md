@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalar manualmente Drupal"
 excerpt: "Descubra como instalar manualmente o seu CMS Drupal"
-updated: 2023-04-07
+updated: 2024-05-16
 ---
 
 > [!primary]
@@ -17,6 +17,8 @@ Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Cont
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
 > Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou [editor do CMS Drupal](https://www.drupal.org/support){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
+>
+> Se pretender atualizar um CMS Drupal existente ou se tiver dúvidas sobre a utilização do CMS Drupal, contacte diretamente o [editor do CMS Drupal](https://www.drupal.org/support){.external}.
 >
 
 > [!success]

@@ -56,7 +56,7 @@ Choisissez `Veeam backup repository`{.action}. et cliquez sur `Next`{.action}.
 
 #### Serveur de sauvegarde
 
-Entrez le nom ou l'adresse IP du serveur Veeam Backup et renseignez vos identifiants Veeam (ils doivent être ceux d'un [compte de service Veeam Enterprise](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_backup_replication#creer-un-compte-de-service-veeam-enterprise) valide).
+Entrez le nom ou l'adresse IP du serveur Veeam Backup et renseignez vos identifiants Veeam (ils doivent être ceux d'un [compte de service Veeam Enterprise](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication#create) valide).
 
 Cliquez sur `Next`{.action}.
 
@@ -129,7 +129,7 @@ Sur le serveur Veeam Backup and Recovery, la tâche de sauvegarde apparaîtra :
 
 ## Aller plus loin
 
-[Restaurer un serveur Bare Metal avec Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore).
+[Restaurer un serveur Bare Metal avec Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore)
 
 [Page d'assistance de Veeam](https://www.veeam.com/knowledge-base.html)
 

@@ -219,7 +219,7 @@ Należy skorzystać z usług dostawcy openstack. Przykład kompletnego skryptu t
 
 Specyficzną częścią procesu integracji rozwiązania vRack jest parametr `value_specs`.
 
-```hcl
+```python
 resource "openstack_networking_network_v2" "tf_network" {
   name = "tf_network"
   admin_state_up = "true"

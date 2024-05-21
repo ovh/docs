@@ -1,7 +1,7 @@
 ---
 title: Using the OVHcloud Managed Kubernetes LoadBalancer
 excerpt: Find out how to use and deploy an OVHcloud Managed Kubernetes LoadBalancer
-updated: 2024-01-04
+updated: 2024-05-08
 ---
 
 ## Objective
@@ -61,6 +61,9 @@ It's rather cumbersome to use `NodePort` `Services` in production. As you are us
 > ```
 >
 > In this case the *nodes* URL will be `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net` and a service deployed on NodePort 30123 can be accessed on `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net:30123`.
+
+> [!warning]
+> If your OVHcloud Managed Kubernetes is connected to a vRack, the `NodePort` is only exposed on your private subnet. So you have to check your private IPs on your nodes in your Nodepool and connect via one of these private IPs.
 
 ### Exposing services as LoadBalancer
 

@@ -1,12 +1,12 @@
 ---
 title: Public Cloud Databases - Capacités et Limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases
-updated: 2023-06-01
+updated: 2024-05-15
 ---
 
 ## Public Cloud Databases
 
-With our managed database services, we take care of the database infrastructure and administration, including set-up, backup, scalability and security.
+With our managed database services, we take care of the database infrastructure and administration, including set-up, backup, scalability, and security.
 Choose from a large portfolio of popular engines.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
@@ -42,8 +42,8 @@ See our [M3db Capabilities and limitations](/pages/public_cloud/public_cloud_dat
 
 ### Opensearch
 
-OpenSearch is an open-source fully managed search, analytics and observability engine. It is ideal for logs management and offers search and analytical aggregations.<br>
-OpenSearch is an open source fork derived from Elasticsearch.<br>
+OpenSearch is an open-source fully managed search, analytics, and observability engine. It is ideal for logs management and offers search and analytical aggregations.<br>
+OpenSearch is an open-source fork derived from Elasticsearch.<br>
 See our [OpenSearch Capabilities and limitations](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities) guide.
 
 ### Cassandra
@@ -66,8 +66,6 @@ See our [Cassandra Capabilities and limitations](/pages/public_cloud/public_clou
 (1) depends on the plan
 
 ## Specific feature Plans
-
-Three plans are available:
 
 ### Essential
 
@@ -97,26 +95,12 @@ Your choice of plan affects the number of nodes your cluster can run.
 
 ## Last Updates
 
-### 14 April 2023
-
-You can now adjust the storage space of your cluster according to your needs. To resize your cluster, see our [guide](/pages/public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage).
-
-### 15 March 2023
-
-Remote backup is now available for all services. See [Automated backups](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups).
-
-### 27 January 2023
-
-PostgreSQL 15 is now available in the OVHcloud Control Panel and via the API. Please refer to the [DBMS lifecycle policy](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy).
-
-### 8 November 2022
-
-MongoDB 6.0 is now available in the OVHcloud Control Panel and via the API. Please refer to the [DBMS lifecycle policy](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy).
+For the latest updates, please refer to our [Github changelog](https://github.com/orgs/ovh/projects/16/views/6?filterQuery=-no%3Achangelog+status%3ADone%2C%22Partially+released%22+main-product%3A%22Managed+Databases%22).
 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

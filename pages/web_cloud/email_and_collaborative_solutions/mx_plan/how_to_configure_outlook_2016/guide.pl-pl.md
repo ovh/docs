@@ -1,8 +1,17 @@
 ---
-title: "MX Plan : Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Windows"
+title: "MX Plan - Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Windows"
 excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w programie Outlook na urządzeniu z systemem Windows"
 updated: 2024-02-16
 ---
+
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
@@ -63,28 +72,28 @@ Aby skonfigurować konto e-mail, wykonaj poniższe kroki.
 > **Etap 1**
 >> Spośród różnych rodzajów kont wybierz IMAP lub POP. <br>Rekomendujemy użycie protokołu IMAP.
 >>
->> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail .h-600}
 >>
 > **Etap 2**
 >> Wpisz hasło przypisane do Twojego konta e-mail i kliknij `Dalej`{.action}.
 >>
->> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail .h-600}
 >>
 > **Etap 3**
 >> Jeśli program Outlook nie może automatycznie skonfigurować Twojego adresu e-mail, pojawi się to okno. Kliknij `Zmień ustawienia konta`{.action}. W zależności od dokonanego wyboru (**POP** lub **IMAP**) przejdź do odpowiedniego etapu 4.
 >>
->> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail .h-600}
 >>
 > **Etap 4 - IMAP**
 >> Jeśli wybrano IMAP, wprowadź następujące ustawienia. Jeśli wybrałeś POP, przejdź do zakładki "**Etap 4 - POP**".<br>
 >> W polu **Poczta przychodząca** wpisz:<br>- Serwer **imap.mail.ovh.net** lub **ssl0.ovh.net** <br>- Port **993**<br>- Metoda szyfrowania **SSL/TLS**<br><br>W polu **Poczta wychodząca** wpisz:<br>- Serwer **smtp.mail.ovh.net** lub **ssl0.ovh.net** <br>- Port **465**<br>- Metoda szyfrowania **SSL/TLS**<br><br>Kliknij `Dalej`{.action}, aby zatwierdzić.<br>
 >>
->> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail .h-600}
 >>
 > **Etap 4 - POP**
 >> W polu **Poczta przychodząca** wpisz:<br>- Serwer **pop.mail.ovh.net** lub **ssl0.ovh.net** <br>- Port **995**<br>- Metoda szyfrowania **SSL/TLS**<br><br>W polu **Poczta wychodząca** wpisz:<br>- Serwer **smtp.mail.ovh.net** lub **ssl0.ovh.net** <br>- Port **465**<br>- Metoda szyfrowania **SSL/TLS**<br><br>Kliknij `Dalej`{.action}, aby zatwierdzić.<br>
 >>
->> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail .h-600}
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
@@ -146,7 +155,7 @@ Podczas ręcznej konfiguracji adresu e-mail klient poczty pyta, czy chcesz używ
 
 Podczas konfigurowania klienta poczty, wprowadź dane **serwera poczty przychodzącej**, aby odbierać e-maile, oraz nazwę **serwera poczty wychodzącej**, aby wysyłać e-maile. Do wysyłania e-maili nie ma wyboru, jest używany protokół **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol). W przypadku odbioru wiadomości masz wybór między **POP** a **IMAP**.
 
-![mxplan](images/mxplan-popimap-01.png){.thumbnail}
+![mxplan](images/mxplan-popimap-01.png){.thumbnail .w-400}
 
 Aby zrozumieć różnicę między używaniem protokołu POP i IMAP, wyjaśnimy szczegółowo elementy składające się na przetwarzanie e-maili otrzymywanych:
 
@@ -156,7 +165,7 @@ Aby zrozumieć różnicę między używaniem protokołu POP i IMAP, wyjaśnimy s
     - **IMAP**: Twój klient poczty odpytuje serwer e-mail i pobiera wiadomości e-mail na Twoje urządzenie. Gdy wyświetlasz nieprzeczytaną wiadomość e-mail, serwer domyślnie oznacza ją jako "przeczytaną". Inne urządzenia skonfigurowane w protokole IMAP będą mogły zobaczyć ten stan i wyświetlić ten e-mail do momentu usunięcia go z jednego z urządzeń.
     - **POP** : Twój klient poczty odpytuje serwer e-mail i pobiera wiadomości e-mail na Twoje urządzenie. Domyślnie wiadomość zostaje usunięta z serwera po zapisaniu jej na urządzeniu. Z tego powodu inne urządzenia połączone z tym adresem e-mail nie będą mogły wyświetlać tej wiadomości e-mail.
 
-![mxplan](images/mxplan-popimap-02.png){.thumbnail}
+![mxplan](images/mxplan-popimap-02.png){.thumbnail .w-400}
 
 > [!primary]
 >

@@ -55,7 +55,7 @@ Poniżej znajdziesz krótki opis każdego z systemów CMS, o których mowa powy�
 
 Więcej informacji znajduje się na naszej stronie dotyczącej [modułu WordPress](/links/web/hosting-wordpress)
 
-- Oficjalna strona [WordPress](https://https://wordpress.com/){.external}
+- Oficjalna strona [WordPress](https://wordpress.com/){.external}
 
 #### Joomla!
 

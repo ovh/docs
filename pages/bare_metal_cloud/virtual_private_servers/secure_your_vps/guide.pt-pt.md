@@ -1,6 +1,6 @@
 ---
 title: "Proteger um VPS"
-excerpt: "Descubra os elementos de base que lhe permitem proteger o seu VPS"
+excerpt: "Saiba como implementar medidas básicas de segurança para proteger o seu VPS de ataques e acessos não autorizados"
 updated: 2024-02-20
 ---
 
@@ -34,7 +34,7 @@ Quando encomendar o seu VPS, pode escolher uma distribuição ou um sistema oper
 > Se configurar o primeiro VPS da OVHcloud, recomendamos que consulte primeiro o nosso manual sobre [a implementação de um VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 >
 
-Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas.
+Os exemplos abaixo pressupõem que está ligado enquanto [utilizador com autorizações elevadas](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Atualizar o sistema operativo
 
@@ -65,7 +65,7 @@ A alteração deste parâmetro, em benefício de uma porta diferente, é uma med
 Para isso, altere o ficheiro de configuração do serviço com o editor de texto à sua escolha (`nano` é utilizado neste exemplo):
 
 ```bash
-~$ sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 ```
 
 Deve encontrar as seguintes linhas ou equivalentes:
@@ -96,7 +96,7 @@ Reinicie o serviço:
 sudo systemctl restart sshd
 ```
 
-Isto deveria ser suficiente para aplicar as alterações. Caso contrário, reinicie o VPS (`~$ sudo reboot`).
+Isto deveria ser suficiente para aplicar as alterações. Caso contrário, reinicie o VPS (`sudo reboot`).
 
 **Para Ubuntu 23.04 e versões posteriores**
 
@@ -114,15 +114,24 @@ Guarde as alterações e execute os seguintes comandos:
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl restart ssh.service
 ```
 
 Se tiver ativado a firewall do sistema operativo, certifique-se de que a nova porta está autorizada nas regras da firewall.
 
-Lembre-se de que deve indicar a nova porta a cada pedido de ligação SSH ao seu servidor, por exemplo:
+Lembre-se de que deve indicar a nova porta a cada pedido de [ligação SSH ao seu servidor](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
 ```bash
-ssh username@IPv4_of_your_VPS -p NewPortNumber
+ssh username@IPv4_VPS -p NewPortNumber
+```
+
+Exemplo:
+
+```bash
+ssh ubuntu@203.0.113.100 -p 49152
 ```
 
 ### Criar um utilizador com direitos restritos <a name="createuser"></a>

@@ -1,7 +1,7 @@
 ---
 title: "Spécifications de sécurité du service VMware on OVHcloud"
 excerpt: "Découvrez les particularités et fonctions de sécurité ainsi que les bonnes pratiques pour l'utilisation des service VMware on OVHcloud"
-updated: 2023-09-06
+updated: 2024-05-06
 ---
 
 ## Objectif
@@ -46,7 +46,9 @@ Reprise des SLA des conditions particulières par composante du service.
 
 | **Composant** | **SLA** | **Méthode de calcul** | **Dédommagement** |
 | --- | --- | --- | --- |
-| L'ensemble du service | Le taux de disponibilité mensuel est de 99,9 % pour l'ensemble du service | Nombre total  de minutes du mois considéré, déduction faite du nombre de minutes d’indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré. Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement. | 1- si taux de disponibilité mensuel < 99,9 %, crédit de 10% du prix du service impacté. <br>2- si taux de disponibilité mensuel <99%,9 crédit de 30% du prix du service impacté |
+| L'ensemble du service | Le taux de disponibilité mensuel est de 99,95 % pour l'ensemble du service | Nombre total de minutes du mois considéré, déduction faite du nombre de minutes d’indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré. Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement. | 1. Si le taux de disponibilité mensuel est < 99,95 %, crédit de 10% du prix du service impacté. <br>2. Si le taux de disponibilité mensuel est < 99,99%, crédit de 30% du prix du service impacté |
+
+Les SLA pour les options telles que Veeam Managed Backups peuvent être différents, vous pouvez vous référer aux conditions particulières du service pour plus de détails.
 
 ## 4 - Backups
 
@@ -167,3 +169,16 @@ Suite au décommissionnement du service par le client et avant l'extraction du d
 ### 10.2 - Effacement des données techniques
 
 Suite au décommissionnement du service par le client, OVHcloud procède à la libération des ressources qui lui sont allouées et la suppression des configurations réalisées lors de la livraison du service.
+
+## 11 - Représentation des garanties HDS
+
+> [!primary]
+>
+> Ce tableau est publié préalablement à la certification effective d'OVHcloud sur la version 2024 du référentiel HDS. Il permet aux clients d'OVHcloud d'alimenter leur propre démarche de conformité par rapport au référentiel HDS version 2024. OVHcloud a réalisé et publié ce tableau en s'efforçant d'appliquer au mieux les différentes exigences du référentiel. Les versions vérifiées par les auditeurs ont été mises en ligne avant février 2024.
+>
+
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur laquelle l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>6° La sauvegarde des données de santé. | Oui<br> Pays concerné couvert par une décision d’adéquation au sens de l’article 45 du RGPD : Canada. | Non(1) |
+
+(1) : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.

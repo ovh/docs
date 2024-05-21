@@ -1,7 +1,7 @@
 ---
-title: 'Hardwarefehler auf einem dedizierten Server erkennen'
-excerpt: 'Erfahren Sie hier, wie Sie mithilfe von Diagnose-Tools Hardwarefehler auf Ihrem Server erkennen'
-updated: 2022-12-15
+title: "Hardwarefehler auf einem dedizierten Server im Rescue-Modus diagnostizieren"
+excerpt: "Erfahren Sie hier, wie Sie mithilfe von OVHcloud Rescue-Modus und Diagnose-Tools Hardwarefehler auf Ihrem Dedicated Server identifizieren"
+updated: 2024-05-06
 ---
 
 > [!primary]
@@ -10,13 +10,13 @@ updated: 2022-12-15
 
 ## Ziel
 
-Mit der Zeit kann es bei Ihrem Server zu Hardwarefehlern kommen, die Fehlfunktionen verursachen. Aus diesem Grund ist Ihr Server mit verschiedenen Diagnose-Tools ausgestattet, um fehlerhafte Hardwarekomponenten zu ermitteln.
+Mit der Zeit kann es bei Ihrem Server zu Hardwarefehlern kommen, die Fehlfunktionen verursachen. Wenn der Server im OVHcloud Rescue-Modus gestartet ist, stehen Ihnen mehrere Diagnosetools zur Verfügung, um fehlerhafte Hardwarekomponenten zu identifizieren.
 
-**Diese Anleitung erklärt, wie Sie Hardwarefehler auf Ihrem Server erkennen.**
+**Diese Anleitung erklärt, wie Sie Hardwarefehler auf Ihrem OVHcloud Dedicated Server erkennen.**
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
+- Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal).
 - Sie haben den Server im [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) gestartet.
 
 ## In der praktischen Anwendung
@@ -26,7 +26,7 @@ In dieser Anleitung werden Tests zur Diagnose der folgenden Komponenten aufgefü
 - Prozessor
 - Netzwerkverbindung
 - RAM
-- Partitionen
+- Partitionen und Disks
 
 ### Prozessoren
 
@@ -58,6 +58,16 @@ Der Arbeitsspeichertest überprüft alle RAM-Module Ihres Servers. Wenn der Serv
 RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
 memtester ${RAM}M 1
 ```
+
+### Disk Health
+
+Sie können *Smartmontools* verwenden, um den Status Ihrer Disks zu überprüfen, indem Sie deren `SMART`-Daten auslesen. Um beispielsweise alle Details der Disk mit dem Namen `nvme1n1` anzuzeigen, geben Sie Folgendes ein:
+
+```bash
+smartctl -a /dev/nvme1n1
+```
+
+Weitere Informationen zur Ausgabe dieses Befehls und deren Interpretation finden Sie in der [offiziellen Dokumentation zu *Smartmontools*](https://www.smartmontools.org/wiki/TocDoc).
 
 ### Disk-Partitionen
 

@@ -71,6 +71,7 @@ hosted-private-cloud-sap-ovhcloud-concepts: Koncepcje
 hosted-private-cloud-sap-ovhcloud-getting-started: Pierwsze kroki
 hosted-private-cloud-sap-ovhcloud-advanced-usage: Zaawansowane użycie
 hosted-private-cloud-sap-ovhcloud-backups: Backups
+hosted-private-cloud-sap-ovhcloud-observability: Observability
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Pierwsze kroki
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
@@ -176,8 +177,6 @@ public-cloud-network-technical-resources: Zasoby techniczne
 public-cloud-network-tutorials: Tutoriale
 public-cloud-data-platform: Data Platform
 public-cloud-data-platform-general-information: General information
-public-cloud-data-platform-build-an-ai-model-from-scratch: Build your AI model from scratch
-public-cloud-data-platform-build-a-first-app-from-scratch: Build your analytics app from scratch
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Pierwsze kroki
 web-cloud-clouddb-configuration: Konfiguracja

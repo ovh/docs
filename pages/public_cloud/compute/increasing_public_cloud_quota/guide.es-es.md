@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar las cuotas de Public Cloud'
 excerpt: 'Cómo aumentar el límite en Public Cloud'
-updated: 2023-05-03
+updated: 2024-05-21
 ---
 
 > [!primary]
@@ -49,13 +49,13 @@ A continuación, haga clic en la flecha desplegable situada junto a "Seleccione 
 
 La tabla siguiente muestra los recursos que obtiene por cada cuota:
 
-|Quota|Instancias|CPU/núcleos|RAM|Tamaño del volumen|Volúmenes|Snapshots|Tamaño de la copia de seguridad|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
+|Quota|Instancias|CPU/núcleos|RAM (MB)|Tamaño del volumen (GB)|Volúmenes|Snapshots|Tamaño de la copia de seguridad (GB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
-|10 VMs|10|20|40GB|20TB|20|20|59TB|2|2|2|
-|20 VMs|20|40|240GB|20TB|40|40|117TB|2|2|2|
-|50 VMs|50|64|496GB|20TB|100|100|293TB|10|10|10|
-|100 VMs|100|128|992GB|39TB|200|200|586TB|10|10|10|
-|200 VMs|200|512|3.9TB|78TB|400|400|1172TB|50|50|50|
+|10 VMs|10|34|430080|20000|100|600|60000|15|5|2|
+|20 VMs|20|40|430080|20000|200|1200|120000|30|10|4|
+|50 VMs|50|64|507904|20000|500|3000|300000|75|25|10|
+|100 VMs|100|128|1015808|40000|1000|6000|600000|300|10|10|
+|200 VMs|200|512|4063232|80000|2000|12000|1200000|600|50|50|
 
 Una vez seleccionado el volumen, haga clic en `Confirmar`{.action}. El pago se procesará lo antes posible.
 

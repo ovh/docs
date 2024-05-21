@@ -1,7 +1,7 @@
 ---
 title: Backup einer Instanz erstellen
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz in Ihrem OVHcloud Kundencenter sichern
-updated: 2023-09-21
+updated: 2024-05-06
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -27,7 +27,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 > Diese Option ist für Metal Instanzen nur über einen **Cold Snapshot** verfügbar. Die Metal-Instanz wird in den Rescue-Modus versetzt, und sobald das Backup abgeschlossen ist, wird die Instanz im normalen Modus neu gestartet.
 >
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
 
 Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Backup erstellen`{.action}.
 
@@ -37,7 +37,7 @@ Geben Sie auf der folgenden Seite eine Bezeichnung für das Backup ein. Nehmen S
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Sobald das Backup bereit ist, wird es im Bereich `Instance Backup`{.action} angezeigt.
+Sobald das Backup bereit ist, wird es im Bereich `Instance Backup`{.action} unter `Storage`{.action} im linken Menü angezeigt.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
@@ -78,13 +78,18 @@ Geben Sie einen Namen für die Planung des automatischen Backups ein. Nehmen Sie
 
 ### Verwaltung der Backups und Zeitpläne
 
-Zeitplanungen können im Bereich `Workflow Management`{.action} Ihres Public Cloud Kundencenters erstellt und entfernt werden.
+Zeitplanungen können im Bereich `Workflow Management`{.action} unter `Storage`{.action} im linken Menü erstellt und entfernt werden.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Die Backups Ihrer Instanzen werden im Bereich `Instance Backup`{.action} in Ihrem Public Cloud Kundencenter verwaltet.
+Die Backups Ihrer Instanzen werden im Bereich `Instance Backup`{.action} in Ihrem Public Cloud Kundencenter verwaltet, unter `Storage`{.action} im linken Menü.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> Die Option, die Instanz zu sichern, muss separat abgestellt werden, damit sie nicht mehr in Rechnung gestellt wird. Das Löschen einer Instanz entfernt nicht automatisch die mit ihr verbundenen Dienst-Optionen.
+>
+
 
 > [!warning]
 > **Beachten Sie, dass Sie ein Instanz-Backup nicht löschen können, wenn eine Instanz, die aus diesem Backup erzeugt wurde, zum Zeitpunkt des Löschvorgangs ausgeführt wird.**

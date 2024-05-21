@@ -1,99 +1,178 @@
 ---
-title: 'Konfiguration Ihres E-Mail Pro Accounts in Android über die Gmail-App'
-excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account in Android über die Gmail-App einrichten'
-updated: 2020-03-18
+title: "E-Mail Pro - Konfiguration eines E-Mail-Accounts in Gmail für Android"
+excerpt: "Erfahren Sie hier, wie Sie einen E-Mail Pro Account in Android über die Gmail-App einrichten"
+updated: 2024-03-15
 ---
+
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
 
 ## Ziel
 
-E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden.
+E-Mail-Accounts aus dem E-Mail Pro Angebot können auf allen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Versand und Empfang Ihrer E-Mails verwenden.
 
-**Diese Anleitung erklärt, wie Sie Ihren E-Mail Pro Account in Android über die Gmail-App einrichten.**
+**Diese Anleitung erklärt, wie Sie einen E-Mail Pro Account in Android über die Gmail-App einrichten.**
 
 > [!warning]
->OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
->
->Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber der verwendeten Software zu kontaktieren, falls Sie auf Schwierigkeiten stoßen Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt "Weiterführende Informationen" dieser Anleitung.
 >
 
 ## Voraussetzungen
 
-- Sie besitzen ein [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Angebot.
-- Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren.
-- Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
+- Sie verfügen über ein [E-Mail Pro](/links/email-pro) Angebot.
+- Sie haben die Gmail-App auf Ihrem Gerät. Sie können diese über den Google Play Store installieren.
+- Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
 > [!primary]
 >
-> Diese Anleitung wurde über ein Nexus-6-Gerät mit Android Version 7.1.1 erstellt. Aus Konsistenzgründen verwenden wir die Gmail-App, die über den Google Play Store heruntergeladen werden kann. Wenn Sie eine andere App verwenden möchten, kann sich die Vorgehensweise dementsprechend unterscheiden.
->
+> Diese Anleitung wurde anhand eines Geräts mit Android Version 13 erstellt.
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Account hinzufügen
+### Hinzufügen des E-Mail-Accounts
 
 > [!primary]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**?**.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**?**.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
 > 
-> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+> Sie finden diese Information im [OVHcloud Kundencenter](/links/manager), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
 >
 
-Tippen Sie auf dem Bildschirm Ihres Geräts auf die `Gmail`{.action}-App. Es gibt zwei Möglichkeiten, um Ihren Account hinzuzufügen:
+Öffnen Sie die Anwendung `Gmail`{.action}.
 
-- **Wenn noch kein Account eingerichtet ist**: Tippen Sie sich durch das Willkommensfenster und dann auf `E-Mail-Adresse hinzufügen`{.action}. Wählen Sie anschließend `Sonstige`{.action} aus. 
+![emailpro](images/emailpro-android-00.png){.thumbnail .w-400}
 
-- **Wenn bereits ein Account eingerichtet ist**: Tippen Sie oben links auf das Icon mit den drei Strichen, dann auf das Pfeilsymbol rechts neben dem bereits eingerichteten Account. Tippen Sie anschließend auf `Konto hinzufügen`{.action} und wählen Sie `Sonstige`{.action} aus. 
+Das Einrichten eines Accounts erfolgt **wenn noch kein Account eingerichtet** anders als **wenn bereits ein Account eingerichtet** wurde. Wählen Sie daher den Tab für eine der beiden Situationen aus:
 
-![e-mail pro](images/configuration-email-pro-gmail-application-android-step1.png){.thumbnail}
+> [!tabs]
+> **Erste Konfiguration**
+>>
+>> Wählen Sie `E-Mail-Adresse hinzufügen`{.action}<br><br>
+>> ![EmailPro](images/Android-first.png){.thumbnail .h-600}
+>>
+> **Vorhandene Konfiguration**
+>>
+>> 1. Gehen Sie zum Menü oben links auf dem Bildschirm.<br><br>
+>> 2. Wählen Sie `Einstellungen`{.action}.<br><br>
+>> 3. Wählen Sie `Account hinzufügen`{.action}.<br><br>
+>> ![emailpro](images/android-existing.png){.thumbnail .h-600}
+>>
 
-Geben Sie nun Ihre E-Mail-Adresse ein und klicken Sie auf `Weiter`{.action}.
+Folgen Sie den Anleitungsschritten indem Sie nacheinander die Tabs aufrufen:
 
-Wählen Sie bei der Auswahl des Kontotyps **IMAP** aus und geben Sie dann das Passwort Ihrer E-Mail-Adresse ein. Klicken Sie auf `Weiter`{.action}, um mit der Konfiguration fortzufahren.
+> [!tabs]
+> **Schritt 1**
+>> Wählen Sie im Menü E-Mail-Kontotypen die Option `Andere`{.action}.<br><br>
+>> ![emailpro](images/emailpro-Android-01.png){.thumbnail .h-600}
+>>
+> **Schritt 2**
+>> Geben Sie Ihre E-Mail-Adresse ein.<br><br>
+>> ![emailpro](images/emailpro-Android-02.png){.thumbnail .h-600}
+>>
+> **Schritt 3**
+>> Wählen Sie das Protokoll für den E-Mail-Empfang aus. Wählen Sie `Persönlich (IMAP)`{.action aus.}<br><br>Weitere Informationen zu [POP und IMAP](#popimap) finden Sie unten in dieser Anleitung.<br><br>
+>> ![emailpro](images/emailpro-Android-03.png){.thumbnail .h-600}
+>>
+> **Schritt 4**
+>> Geben Sie das Passwort des E-Mail-Accounts ein.<br><br>
+>> ![emailpro](images/emailpro-Android-04.png){.thumbnail .h-600}
+>>
+> **Schritt 5**
+>> Geben Sie die **Einstellungen des Eingangsservers** ein:<br><br>- **Benutzername**: Ihre vollständige E-Mail-Adresse<br>- **Passwort**: Das Passwort des E-Mail-Accounts<br>- **Server**: Geben Sie **pro**?**.mail.ovh.net** ein (ersetzen Sie "**?**" mit der Nummer Ihres Servers). <br><br>
+>> ![emailpro](images/emailpro-Android-05.png){.thumbnail}
+>>
+> **Schritt 6**
+>> Geben Sie die **Einstellungen des Ausgangsservers** ein:<br><br>- **Benutzername**: Ihre vollständige E-Mail-Adresse<br>- **Passwort**: Das Passwort des E-Mail-Accounts<br>- **SMTP-Server**: Geben Sie **pro**?**.mail.ovh.net** ein (ersetzen Sie "**?**" mit der Nummer Ihres Servers). <br><br>
+>> ![emailpro](images/emailpro-Android-06.png){.thumbnail .h-600}
+>>
+> **Schritt 7**
+>> Wählen Sie aus, wie oft Ihre E-Mails synchronisiert werden sollen.<br><br>
+>> ![emailpro](images/emailpro-Android-07.png){.thumbnail .h-600}
+>>
+> **Schritt 8**
+>> Legen Sie den Anzeigenamen Ihrer E-Mail-Adresse in der Gmail-App fest und tippen Sie dann auf `Weiter`{.action}.<br><br>
+>> ![emailpro](images/emailpro-Android-08.png){.thumbnail .h-600}
+>>
 
-![e-mail pro](images/configuration-email-pro-gmail-application-android-step2.png){.thumbnail}
+Wenn Ihr E-Mail-Account eingerichtet ist, können Sie ab sofort E-Mails über Ihre Gmail-App versenden und empfangen.
 
-Geben Sie die Einstellungen des Eingangsservers ein:
+> [!success]
+>
+> Eine OVHcloud Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können, ist verfügbar unter <https://www.ovhcloud.com/de/mail/>. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
 
-|Information|Beschreibung| 
-|---|---| 
-|Nutzername|Geben Sie die vollständige E-Mail-Adresse ein.|  
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
-|Server|Tragen Sie „pro**?**.mail.ovh.net“ ein.|
+### POP-, IMAP- und SMTP-Einstellungen
 
-Tippen Sie auf `Weiter`{.action} und geben Sie anschließend die Einstellungen des Ausgangsservers ein.
+Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps die Verwendung von **IMAP**. Sie können auch **POP** auswählen. Wie diese funktionieren, erfahren Sie im Abschnitt [„POP oder IMAP, was ist der Unterschied?“](#popimap).
 
-|Information|Beschreibung| 
-|---|---| 
-|Anmeldung erforderlich|Stellen Sie sicher, dass Sie diesen Button aktiviert haben.|
-|Nutzername|Geben Sie die vollständige E-Mail-Adresse ein.|  
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
-|SMTP-Server|Tragen Sie „pro**?**.mail.ovh.net“ ein.|
+- **POP-Konfiguration**
 
-Tippen Sie anschließend auf `Weiter`{.action}. Wenn Ihre Angaben korrekt sind, wird die Verbindung zu Ihrem Account hergestellt.
+| Information | Beschreibung |
+| --- | --- |
+| Benutzername | Geben Sie die **vollständige** E-Mail-Adresse ein. |
+| Passwort | Geben Sie das Passwort des E-Mail-Accounts ein. |
+| Server | pro**?**.mail.ovh.net (ersetzen Sie "**?**" mit der Nummer Ihres Servers) |
+| Port | 995 |
+| Sicherheitstyp | SSL/TLS |
 
-![e-mail pro](images/configuration-email-pro-gmail-application-android-step3.png){.thumbnail}
+- **IMAP-Konfiguration**
 
-Legen Sie die Konto-Optionen fest und klicken Sie dann auf `Weiter`{.action}. Nun können Sie einen Namen für Ihren Account festlegen, um diesen von anderen in Ihrer App angezeigten Accounts zu unterscheiden. Außerdem können Sie den Anzeigenamen bestimmen, der wenn Sie E-Mails versenden als Absender angezeigt wird. Wenn Sie diese Einstellungen vorgenommen haben, tippen Sie auf `Weiter`{.action}.
+| Information | Beschreibung |
+| --- | --- |
+| Benutzername | Geben Sie die **vollständige** E-Mail-Adresse ein. |
+| Passwort | Geben Sie das Passwort des E-Mail-Accounts ein. |
+| Server | pro**?**.mail.ovh.net (ersetzen Sie "**?**" mit der Nummer Ihres Servers) |
+| Port | 993 |
+| Sicherheitstyp | SSL/TLS |
 
-Sie können eine Test-E-Mail versenden, um zu überprüfen, dass der Account korrekt eingerichtet ist.
+Wenn Sie die **SMTP**-Einstellungen für den Versand von E-Mails manuell in den Kontoeinstellungen
+eingeben müssen, verwenden Sie die folgenden Einstellungen:
 
-Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwenden Sie die folgenden technischen Einstellungen für unsere E-Mail Pro Lösung.
+- **SMTP-Konfiguration**
 
-|Servertyp|Servername|Sicherheitstyp|Port|
-|---|---|---|---|
-|Eingangsserver|pro**?**.mail.ovh.net|SSL/TLS|993|
-|Ausgangsserver|pro**?**.mail.ovh.net|STARTTLS|587|
+| Information | Beschreibung |
+| --- | --- |
+| Benutzername | Geben Sie die **vollständige** E-Mail-Adresse ein. |
+| Passwort | Geben Sie das Passwort des E-Mail-Accounts ein. |
+| Server | pro**?**.mail.ovh.net (ersetzen Sie "**?**" mit der Nummer Ihres Servers) |
+| Port | 587 |
+| Sicherheitstyp | STARTTLS |
 
-### Schritt 2: E-Mail-Adresse verwenden
+### POP oder IMAP, was ist der Unterschied? <a name="popimap"></a>
 
-Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
+Wenn Sie Ihren E-Mail-Account manuell konfigurieren, werden Sie von Ihrem E-Mail-Client gefragt, ob Sie **POP** (**P**ost **O**ffice **P**rotocol) oder **IMAP** (**I**nternet **M**essage **A**ccess **P**rotocol) verwenden möchten. Lokalisieren Sie die POP- und IMAP-Protokolle in der Konfiguration Ihres E-Mail-Accounts.
 
-OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](https://www.ovhcloud.com/de/emails/). Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+Bei der Konfiguration Ihres E-Mail-Clients müssen Sie die Informationen des **eingehenden Servers** angeben, um E-Mails zu empfangen, und den **ausgehenden Server**, um E-Mails zu senden. Für den Versand von E-Mails gibt es keine Wahl, sondern es wird **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol) verwendet. Für den Empfang haben Sie somit die Wahl zwischen **POP** oder **IMAP**.
+
+![emailpro](images/popimap-01.png){.thumbnail}
+
+Um den Unterschied zwischen der Verwendung von POP- und IMAP-Protokoll zu verstehen, sind hier die einzelnen Elemente, die zur Verarbeitung eingehender E-Mails wichtig sind, erklärt:
+
+1. **Ihr Gerät**: Ein Computer, Smartphone oder Tablet.
+
+2. **Ihr E-Mail-Client**: Software zur Verwaltung Ihrer E-Mails.
+
+3. **Empfangsprotokoll**: Entscheidet, wie E-Mails auf Ihrem Gerät abgerufen werden. Ihre Wahl wirkt sich auf andere Geräte aus, die denselben E-Mail-Account nutzen.
+    - **IMAP**: Ihr E-Mail-Client fragt den E-Mail-Server ab und lädt die E-Mails auf Ihr Gerät. Wenn Sie eine ungelesene E-Mail anzeigen, wird diese vom Server standardmäßig als „gelesen“ markiert. Andere IMAP-fähige Geräte können diesen Status sehen und die E-Mail besteht, bis sie auf einem der Geräte gelöscht wurde.
+    - **POP**: Ihr E-Mail-Client fragt den E-Mail-Server ab und lädt die E-Mails auf Ihr Gerät. Standardmäßig wird die Nachricht vom Server gelöscht, sobald sie auf Ihr Gerät heruntergeladen wurde. Daher können andere Geräte, die mit diesem E-Mail-Account verbunden sind, diese E-Mail nicht mehr anzeigen.
+
+![emailpro](images/popimap-02.png){.thumbnail}
+
+> [!primary]
+>
+> Diese Beschreibung ist eine Zusammenfassung der Standardfunktionen beider Protokolle. Sie können auch **POP** so einstellen, dass E-Mails beim Abholen nicht gelöscht werden. Die Ausführungen oben dienen dazu, die native Funktionsweise dieser beiden Protokolle zu beschreiben und Ihren Einrichtungsaufwand zu minimieren.
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot in Android über die Gmail-App](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)
+[MX Plan - Konfiguration eines E-Mail-Accounts in Gmail für Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
-[Konfiguration Ihres Exchange Accounts in Android über die Gmail-App](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android)
+[Exchange - Konfiguration eines E-Mail-Accounts in Gmail für Android](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

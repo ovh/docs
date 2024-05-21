@@ -1,7 +1,7 @@
 ---
 title: "Activar y utilizar el modo de rescate"
 excerpt: "Cómo utilizar el modo de rescate de OVHcloud para solucionar los problemas de un servidor dedicado"
-updated: 2024-01-09
+updated: 2024-05-15
 ---
 
 > [!primary]
@@ -15,11 +15,11 @@ El modo de rescate es una herramienta proporcionada por OVHcloud que le permite 
 El modo de rescate suele ser adecuado para las siguientes tareas:
 
 - [Restablecimiento de contraseña de usuario](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnóstico de problemas de red
+- [Diagnóstico de problemas de red](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 - Reparación de un sistema operativo defectuoso
 - Corrección de una configuración incorrecta de un cortafuegos de software
-- Prueba del rendimiento de los discos
-- Prueba del procesador y la memoria RAM
+- [Prueba del rendimiento de los discos](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+- [Prueba del procesador y la memoria RAM](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 > [!warning]
 >
@@ -32,27 +32,55 @@ El modo de rescate suele ser adecuado para las siguientes tareas:
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-> [!warning]
-> Tenga en cuenta que, si ha establecido una llave SSH por defecto en su espacio para los productos dedicados, no recibirá una contraseña root al reiniciar un servidor en modo de rescate. En este caso, primero debe desactivar la llave SSH por defecto antes de reiniciar el servidor en modo de rescate. Para ello, consulte esta [sección](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) de la guía correspondiente.
->
-
-Solo es posible activar el modo de rescate desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
+Solo es posible activar el modo de rescate desde el [área de cliente de OVHcloud](/links/manager){.external} en la sección `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
 
 Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action}.
 
 ![Cambiar el modo de arranque](images/rescue-mode-001.png){.thumbnail}
 
-En la siguiente página, seleccione **Arrancar en modo rescue**. Si el sistema operativo del servidor es Linux, seleccione `rescue-customer`{.action} en la lista desplegable. Si el servidor está en Windows, seleccione `WinRescue`{.action} (ver la [sección de la guía abajo](#windowsrescue)). Indique otra dirección de correo electrónico si **no** desea que la información de identificación de la conexión se envíe a la dirección principal de su cuenta de cliente de OVHcloud.
+En la siguiente página, seleccione **Arrancar en modo rescue**.
 
-> [!warning]
+### Rescue Linux
+
+Si su servidor dispone de un sistema operativo Linux, seleccione `rescue-customer`{.action} en el menú desplegable.
+
+En esta situación, puede utilizar dos modos de autenticación:
+
+- Autenticación con contraseña
+- Autenticación con clave SSH
+
+#### Autenticación con clave SSH
+
+> [!primary]
 >
-> Algunas cuentas de cliente de OVHcloud pueden sufrir un error relativo al idioma de los mensajes de correo de rescate: se envían en francés en lugar del idioma de cuenta elegido. Aunque la causa del error se ha corregido desde el 20 de septiembre de 2022, la dirección de correo electrónico debe actualizarse una vez para resolver el problema. Para ello, introduzca la dirección de correo electrónico de su cuenta de cliente en este paso antes de activar el modo de rescate.
+> Si elige la autenticación con clave SSH, asegúrese de que su llave SSH pública respeta uno de los formatos entre `RSA`, `ECDSA`, o `ED25519`.
 >
+
+Seleccione la opción "Autenticación con clave SSH" e introduzca su llave SSH **pública** en el cuadro de texto dedicado.
+
+![Autenticación con clave SSH](images/rescue-mode-08.png){.thumbnail}
+
+#### Autenticación con contraseña
+
+Seleccione la opción "Autenticación con contraseña".<br>
+Las claves de conexión se enviarán por defecto a la dirección de correo electrónico principal de su cuenta de OVHcloud. Puede introducir una dirección diferente en el campo "Recibir las claves del modo seleccionado en la siguiente dirección de correo electrónico".
+
+![Autenticación con contraseña de Linux](images/rescue-mode-09.png){.thumbnail}
+
+### Rescue Windows
+
+Para los servidores que dispongan de un sistema operativo Windows, además del modo `rescue-customer`{.action}, tiene la posibilidad de elegir la opción `WinRescue`{.action} (ver la [sección de la guía a continuación](#windowsrescue)). Tenga en cuenta que solo la autenticación con contraseña está disponible con este tipo de modo de rescate.
+
+Indique una dirección de correo electrónico diferente si no desea **no** que las claves de conexión se envíen a la dirección principal de su cuenta de OVHcloud.
+
+![Autenticación con contraseña de Windows](images/rescue-mode-10.png){.thumbnail}
+
+### Pasos finales
 
 Haga clic en `Siguiente`{.action} y `Aceptar`{.action}.
 
@@ -75,7 +103,7 @@ Una vez que haya finalizado las tareas en modo de rescate, no olvide redefinir e
 > Si utiliza una llave SSH (activa también en su área de cliente de OVHcloud), no recibirá ninguna contraseña. Una vez que el servidor esté en modo de rescate, podrá conectarse directamente con su llave SSH.
 >
 
-Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Este mensaje de correo electrónico también está disponible en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la esquina superior derecha del área de cliente, haga clic en el nombre asociado a su identificador de cliente y seleccione `Emails de servicio`{.action}.
+Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Este mensaje de correo electrónico también está disponible en el [área de cliente de OVHcloud](/links/manager). En la esquina superior derecha del área de cliente, haga clic en el nombre asociado a su identificador de cliente y seleccione `Emails de servicio`{.action}.
 
 A continuación, acceda al servidor en línea de comandos o a través de una herramienta [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), utilizando la contraseña root generada para el modo de rescate.
 
@@ -85,6 +113,7 @@ Por ejemplo:
 ssh root@ns3956771.ip-169-254-10.eu
 root@ns3956771.ip-169-254-10.eu's password:
 ```
+
 
 > [!warning]
 >
@@ -134,7 +163,7 @@ mount /dev/hda1 /mnt/
 > Si el servidor dispone de una configuración RAID por software, debe montar el volumen RAID (en general `/dev/mdX`).
 >
 
-Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y reinicie el servidor en línea de comandos.
+Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](/links/manager) y reinicie el servidor en línea de comandos.
 
 #### VMware - Montaje de un datastore
 
@@ -171,15 +200,15 @@ Monte la partición con el siguiente comando, sustituyendo `sdbX` por el valor i
 vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
-Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y reinicie el servidor en línea de comandos.
+Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](/links/manager) y reinicie el servidor en línea de comandos.
 
 ### Windows <a name="windowsrescue"></a>
 
 #### Uso de herramientas WinRescue
 
-Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Este mensaje de correo electrónico también está disponible en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la esquina superior derecha del área de cliente, haga clic en el nombre asociado a su identificador de cliente y seleccione `Emails de servicio`{.action}.
+Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Este mensaje de correo electrónico también está disponible en el [área de cliente de OVHcloud](/links/manager). En la esquina superior derecha del área de cliente, haga clic en el nombre asociado a su identificador de cliente y seleccione `Emails de servicio`{.action}.
 
-Para utilizar el modo de rescate que ofrece Windows, es necesario descargar e instalar una consola VNC o utilizar el módulo `IPMI` en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Para utilizar el modo de rescate que ofrece Windows, es necesario descargar e instalar una consola VNC o utilizar el módulo `IPMI` en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 

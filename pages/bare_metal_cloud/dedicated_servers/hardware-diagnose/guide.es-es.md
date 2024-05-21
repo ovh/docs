@@ -1,7 +1,7 @@
 ---
-title: 'Diagnosticar fallos de hardware en un servidor dedicado'
-excerpt: 'Cómo utilizar las herramientas de diagnóstico para identificar fallos de hardware en el servidor'
-updated: 2022-12-15
+title: "Diagnosticar fallos de hardware en un servidor dedicado"
+excerpt: "Cómo utilizar las herramientas de diagnóstico para identificar fallos de hardware en el servidor"
+updated: 2024-05-06
 ---
 
 > [!primary]
@@ -10,13 +10,14 @@ updated: 2022-12-15
 
 ## Objetivo
 
-Es posible que, con el tiempo, se produzcan fallos de hardware en el servidor que provoquen un funcionamiento deficiente. Los servidores dedicados de OVH cuentan con diversas herramientas de diagnóstico que permiten identificar cuáles son los componentes de hardware que fallan.
+
+En algún momento de la vida de su servidor, puede experimentar una avería debido a un problema de hardware. Cuando el servidor se inicia en modo de rescate de OVHcloud, dispone de varias herramientas de diagnóstico que permiten identificar los componentes de hardware defectuosos.
 
 **Esta guía explica cómo diagnosticar fallos de hardware en un servidor dedicado.**
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/).
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal).
 - Haber reiniciado el servidor en [modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 ## Procedimiento
@@ -26,7 +27,7 @@ Esta guía explica los tests que deben realizarse para diagnosticar:
 - procesador(es)
 - conexión de red
 - memoria RAM
-- particiones del disco
+- discos y particiones
 
 ### Procesadores
 
@@ -58,6 +59,16 @@ La prueba de memoria RAM analiza la integridad de los módulos RAM del servidor.
 RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
 memtester ${RAM}M 1
 ```
+
+### Disk Health
+
+Puede utilizar *Smartmontools* para comprobar el estado de sus discos leyendo sus datos `SMART`. Por ejemplo, para ver todos los detalles del disco denominado `nvme1n1`, escriba:
+
+```bash
+smartctl -a /dev/nvme1n1
+```
+
+Para más información sobre el resultado de este comando y su interpretación, consulte [la documentación oficial *Smartmontools*](https://www.smartmontools.org/wiki/TocDoc).
 
 ### Particiones del disco
 

@@ -1,7 +1,7 @@
 ---
 title: Unable to send or receive emails
 excerpt: Find out what to do if your emails are not sent or received correctly by OVHcloud
-updated: 2023-08-30
+updated: 2024-04-11
 ---
 
 ## Objective
@@ -39,11 +39,18 @@ Start by checking that you are up to date with your [payments]
 - For your **Web Hosting plan**, go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then select your Web Hosting plan. The date of expiry or automatic renewal of your hosting will be indicated at the top of the page.
 - For your **MXplan email** solution, go to the `Web Cloud`{.action} section, click `Emails`{.action}, then select the domain name concerned. Click the `Email`{.action} accounts tab. Check the status of the email account in the `Status` column.
 
+
 ### I am unable to send emails from my email software (**sending** and/or **receiving**)
 
 If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc.) or smartphone (iOS, Android, etc.), and you experience a sending or receiving technical issue, check the configuration settings according to your email solution and the email client or application you are using.
 
 Go to the [Hosted email](/products/web-cloud-email-collaborative-solutions-mx-plan) section in our **Web Cloud** guides, and check the configuration of your email software in the `Configure on computer` section, or in the `Configure on smartphone` section for your smartphone.
+
+
+### I can't receive emails because my email address is full, I don't have any more space. What can I do?
+
+If you have signed up to [one of our OVHcloud email solutions](https://www.ovhcloud.com/en-gb/emails/) and one of your email accounts is full, please read our guide on [Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota). This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
+
 
 ### Are emails functional from webmail? (**sending** and/or **receiving**)
 
@@ -104,6 +111,7 @@ The majority of SMTP negative response codes used by servers are listed below:
 |504|Command parameter not implemented|The settings or options used when sending the email with your SMTP server are recognised but disabled in its configuration. Please contact your service provider.|
 |535|Authentication failed|User information/password is incorrect or sending is potentially blocked on your email address. Check the status of your email address in your OVHcloud Control Panel. A password change can unblock the sending if the account has been blocked for spam, see our guide [What to do if your account is blocked for spam](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) for more information.|
 |550|Requested action not performed: mailbox unavailable|The destination mail server could not verify the email address used. This is most often caused by an invalid destination email address, but can also mean that the destination email server has firewall or connectivity issues. Check the recipient's email address, and/or try again.|
+|550 5.7.1|Email rejected per policy reason|The destination email server rejected the sending email address for security policy reasons. There are many reasons for this, and they are usually detailed with the error code. In some cases, it can be an IP address in the transmission chain that is present in a reject list. To check the reputation of an IP address, you can test it, for example, on [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) or check the chain of transmission of an email from the email address concerned with [Mailtester](https://www.mail-tester.com/)|
 |550 5.7.26|This message does not have authentication information or fails to pass authentication checks| The email was rejected because the sender's email service does not have SPF or DKIM configured on their domain name.<br><br>It is advisable to set up a priority SPF record, which is compatible with all email offers. Use our guide “[Configure an SPF record on your domain name](/pages/web_cloud/domains/dns_zone_spf)”.<br><br>If your email offer has the DKIM option, you can put it in place using our guide “[Set up a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)”.|
 |551|User not local or invalid address – Relay denied|This is typically used as a spam prevention strategy. It says that the mail relay is not authorised for any reason to relay your message to another server than yours. Please contact your service provider.|
 |552|Requested mail actions aborted – Exceeded storage allocation|The user you tried to contact no longer has space to receive messages. Unfortunately, the only solution is to contact the recipient via another method.|

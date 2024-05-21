@@ -1,7 +1,7 @@
 ---
-title: 'Diagnostyka usterek sprzętowych serwera dedykowanego'
-excerpt: 'Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfikacji usterek sprzętowych na Twoim serwerze'
-updated: 2022-12-15
+title: "Diagnostyka usterek sprzętowych serwera dedykowanego"
+excerpt: "Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfikacji usterek sprzętowych na Twoim serwerze"
+updated: 2024-05-06
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2022-12-15
 
 ## Wprowadzenie
 
-Eksploatacja serwera może z czasem powodować jego fizyczne uszkodzenia, a to z kolei może być przyczyną błędów. Dlatego Twój serwer wyposażony jest w kilka narzędzi diagnostycznych umożliwiających identyfikację uszkodzonych komponentów.
+W pewnym momencie życia Twojego serwera może wystąpić awaria z powodu problemu sprzętowego. Po uruchomieniu serwera w trybie Rescue OVHcloud masz do dyspozycji kilka narzędzi diagnostycznych umożliwiających identyfikację uszkodzonych komponentów.
 
 **Dowiedz się, jak przeprowadzić diagnostykę sprzętową serwera dedykowanego.**
 
@@ -26,7 +26,7 @@ Niniejszy przewodnik zawiera szczegółowe informacje o testach, które należy 
 - procesora lub procesorów;
 - połączenia sieciowego;
 - pamięci RAM;
-- partycji dysku.
+- dyski i partycje.
 
 ### Procesory
 
@@ -58,6 +58,16 @@ Test pamięci pozwala sprawdzić integralność modułów RAM w Twoim serwerze. 
 RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
 memtester ${RAM}M 1
 ```
+
+### Disk Health
+
+Możesz użyć *Smartmontools*, aby sprawdzić stan dysków odczytując ich dane `SMART`. Na przykład, aby wyświetlić wszystkie szczegóły dysku o nazwie `nvme1n1`, wprowadź:
+
+```bash
+smartctl -a /dev/nvme1n1
+```
+
+Aby uzyskać więcej informacji na temat sposobu wprowadzenia polecenia i jego interpretacji, zapoznaj się z [oficjalną dokumentacją *Smartmontools*](https://www.smartmontools.org/wiki/TocDoc).
 
 ### Partycje dysku
 

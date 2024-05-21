@@ -1,6 +1,6 @@
 ---
 title: Backing Up a Bare Metal Windows Server Using Veeam Agent for Windows (EN)
-excerpt: Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal Windows server.
+excerpt: Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal Windows server
 updated: 2024-04-05
 ---
 
@@ -56,7 +56,7 @@ Choose `Veeam backup repository`{.action}. and click `Next`{.action}.
 
 #### Backup server
 
-Enter the **Veeam backup server name or IP address** and **Specify your personal credentials** (from a valid [Veeam Enterprise service account](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication#creating-a-veeam-enterprise-service-account)).
+Enter the **Veeam backup server name or IP address** and **Specify your personal credentials** (from a valid [Veeam Enterprise service account](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication#create)).
 
 Click `Next`{.action}.
 
@@ -129,7 +129,7 @@ On the Veeam Backup and Recovery server, the backup job will appear:
 
 ## Go further
 
-[Restoring a Bare Metal Server with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore).
+[Restoring a Bare Metal Server with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore)
 
 [Veeam support site](https://www.veeam.com/knowledge-base.html)
 

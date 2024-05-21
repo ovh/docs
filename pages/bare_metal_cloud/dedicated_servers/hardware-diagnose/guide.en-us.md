@@ -1,19 +1,19 @@
 ---
-title: 'Hardware diagnostics'
-excerpt: 'Find out how to use diagnostic tools to identify hardware failures on your server'
-updated: 2022-12-15
+title: "How to perform server hardware diagnostics in rescue mode"
+excerpt: "Find out how to use the OVHcloud rescue mode and diagnostic tools to identify hardware failures on your dedicated server"
+updated: 2024-05-06
 ---
 
 ## Objective
 
-At some point during the life of your server, you may encounter a fault due to a hardware issue. For these issues, your server is equipped with some diagnostic tools to help identify faulty hardware components.
+At some point during the life of your server, you may encounter a fault due to a hardware issue. When the server is booted into the OVHcloud rescue mode, you have several diagnostic tools available to help identify faulty hardware components.
 
-**This guide will show you how to diagnose hardware issues on your server.**
+**This guide explains how to diagnose hardware issues on your OVHcloud dedicated server.**
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/)
-- [Rescue mode activated](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) activated
 
 ## Instructions
 
@@ -22,7 +22,7 @@ This guide details the tests you need to carry out to diagnose:
 - Processors
 - Network connection
 - Memory
-- Disk partitions
+- Disks and partitions
 
 ### Processors
 
@@ -48,12 +48,22 @@ for file in 1Mb 10Mb 100Mb 1Gb ; do time curl -4f https://proof.ovh.net/files/${
 The memory test checks the integrity of your server's RAM modules. If the server crashes during this test, then it means that the one or more of your RAM modules is faulty.
 
 > [!warning]
-> Warning, this test can be very long.
+> Keep in mind that this test can take a long time to complete.
 
 ```bash
 RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
 memtester ${RAM}M 1
 ```
+
+### Disk Health
+
+You can use *Smartmontools* to check the status of your disks by reading their `SMART` data. For example, to display all details of the disk labelled `nvme1n1`, enter:
+
+```bash
+smartctl -a /dev/nvme1n1
+```
+
+To learn more about the output of this command and how to interpret it, consult [the official *Smartmontools* documentation](https://www.smartmontools.org/wiki/TocDoc).
 
 ### Disk Partitions
 

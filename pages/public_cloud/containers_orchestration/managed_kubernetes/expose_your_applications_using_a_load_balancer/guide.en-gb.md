@@ -419,18 +419,20 @@ kubectl apply -f your-service-manifest.yaml
 >
 
 ### Features not yet supported
+
 #### Sharing load balancer with multiple Services
 
-By default, different Services of LoadBalancer type should have different corresponding cloud load balancers. However, the Cloud Controller Manager (CCM) allows multiple Services to share a single load balancer. We are currently working to provide this feature for General Availability laucnh. Official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services). 
+By default, different Services of LoadBalancer type should have different corresponding cloud load balancers. However, the Cloud Controller Manager (CCM) allows multiple Services to share a single load balancer. We are currently working to provide this feature for General Availability laucnh. Official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services).
 
 ## Resources Naming
 
 When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, the Cloud Controller Manager (CCM) implementation will automatically create Public Cloud resources (LoadBalancer, Listener, Pool, Health-monitor, Gateway, Network, Subnet,...). In order to easily identify those resources, here are the naming templates:
+
 > [!warning]
 >
 > Do not change the name of resources automatically created by MKS, as it may result to inconsistencies.
 >
->
+
 
 | Resource                                                           | Naming                                                                                                                 |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -443,7 +445,7 @@ When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, t
 | Gateway/Router                                                     | k8s-cluster-$mks_cluster_id                                                                                            |
 | Floating IP                                                        | Name = IP. Description= LB Octavia Name                                                                                |
 
-## Others resources
+## Other resources
 
 - [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
 - [Using Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)

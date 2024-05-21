@@ -1,5 +1,5 @@
 ---
-title: Sauvegardes automatiques (EN)
+title: Public Cloud Databases - Sauvegardes automatiques (EN)
 excerpt: Discover the automated backup methods for each engine
 updated: 2023-05-23
 ---

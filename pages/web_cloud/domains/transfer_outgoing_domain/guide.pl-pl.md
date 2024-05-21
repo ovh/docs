@@ -1,7 +1,7 @@
 ---
 title: "Transfer domeny do innego operatora"
 excerpt: "Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora"
-updated: 2024-04-11
+updated: 2024-05-16
 ---
 
 > [!primary]
@@ -51,6 +51,8 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 > - Lista [TLD dostępnych w OVHcloud](/links/web/domains-tld);
 > - [Wyjaśnienia ICANN dotyczące kodów statusu EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (aby dowiedzieć się, które kody statusu mają obecnie zastosowanie do Twojej domeny, należy przeszukać *Whois*, najlepiej korzystając ze strony internetowej odpowiedniego rejestru TLD);
 > - Twoja strona WWW oraz interfejs zarządzania nowym operatorem, zwłaszcza w przypadku pytań dotyczących procesu transferu oczekującego na połączenie.
+>
+> W zależności od tego, który nowy operator wybrałeś, transfer domeny może być operacją płatną. Przed kolejnymi krokami sprawdź, czy spełnione są te warunki.
 >
 
 ### Etap 1: wyłączenie ochrony przed transferem domeny
