@@ -1,7 +1,7 @@
 ---
 title: "Attivare e utilizzare il Rescue mode"
 excerpt: "Scopri come utilizzare il Rescue mode OVHcloud per risolvere i problemi del tuo server dedicato"
-updated: 2024-05-15
+updated: 2024-05-21
 ---
 
 > [!primary]
@@ -74,7 +74,9 @@ Le credenziali di accesso verranno inviate di default all’indirizzo email prin
 
 ### Rescue Windows
 
-Per i server con sistema operativo Windows, oltre alla modalità `rescue-customer`{.action}, è possibile scegliere l’opzione `WinRescue`{.action} (consulta la [sezione della guida qui sotto](#windowsrescue)). Ti ricordiamo che con questa modalità rescue è disponibile solo l’autenticazione tramite password.
+Per i server che dispongono di un sistema operativo Windows, consulta la [guida dedicata](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+L’opzione `WinRescue`{.action} può essere proposta anche in base al server. Per maggiori informazioni su questa modalità, consulta la [sezione della guida qui di seguito](#windowsrescue)). Ti ricordiamo che con questa modalità rescue è disponibile solo l’autenticazione tramite password.
 
 Se non si desidera **** che le credenziali di accesso vengano inviate all'indirizzo principale del proprio account OVHcloud, specificare un altro indirizzo email.
 
@@ -204,7 +206,9 @@ Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare
 
 ### Windows <a name="windowsrescue"></a>
 
-#### Utilizzo degli strumenti WinRescue
+Per i server che dispongono di un sistema operativo Windows, consulta la [guida dedicata](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+#### Utilizzo degli strumenti WinRescue (obsoleti)
 
 Dopo il riavvio del server, riceverai un'email con le credenziali di accesso in modalità Rescue. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](/links/manager). Clicca sul nome associato al tuo identificativo cliente nell'angolo in alto a destra del tuo Spazio Cliente e poi su `Email di servizio`{.action}.
 
