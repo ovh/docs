@@ -1,7 +1,7 @@
 ---
 title: "Paramétrer un DNS dynamique (DynHost/DynDNS) pour votre nom de domaine"
 excerpt: "Découvrez comment paramétrer un enregistrement DNS dynamique pour votre nom de domaine OVHcloud"
-updated: 2024-05-17
+updated: 2024-05-21
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 
 > [!primary]
 >
-> Tout enregistrement A ou AAAA avec un TTL (**T**ime **T**o **L**ive) de 60 secondes est considéré comme DynHost. Le TTL est une valeur qui indique la durée pendant laquelle un enregistrement DNS est mis en cache par les serveurs DNS avant d'être mis à jour.
+> Tout enregistrement « A » ou « AAAA » avec un TTL (**T**ime **T**o **L**ive) de 60 secondes est considéré comme DynHost. Le TTL est une valeur qui indique la durée pendant laquelle un enregistrement DNS est mis en cache par les serveurs DNS avant d'être mis à jour.
 >
 
 **Découvrez comment paramétrer un enregistrement DNS dynamique (DynHost) pour votre nom de domaine OVHcloud.**
