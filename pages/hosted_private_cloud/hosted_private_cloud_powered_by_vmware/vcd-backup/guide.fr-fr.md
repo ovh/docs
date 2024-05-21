@@ -6,35 +6,22 @@ updated: 2024-05-16
 
 ## Objectif
 
-Le service Veeam Backup Data Protection est disponible et prêt à l'emploi pour les 3 offres OVHcloud ([voir catalogue des fonctionnalités](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#fonctionnalites-de-vmware-cloud-director-chez-ovhcloud)).
-
-Ce service s’intègre de manière transparente en tant que solution gérée pour aider votre entreprise à atteindre une haute disponibilité. Il fournit des points de récupération pour vos applications et vos données. En utilisant ce service, vous contrôlez la sauvegarde de toutes les machines virtuelles (VM) et vApp de votre infrastructure directement depuis la console VCD Veeam Data Protection.
-
-Veeam Backup & Replication accompagne VCD. Il utilise l'API VMware Cloud Director pour sauvegarder les vApps et les VMs et les restaurer directement dans la hiérarchie VMware Cloud Director. La principale entité avec laquelle Veeam Backup & Replication travaille lors de la sauvegarde est une vApp.
-
-Dans cette documentation, vous découvrirez :
-
-- Comment créer des sauvegardes de machines virtuelles (VM) avec VEEAM Backup au sein de votre Datacenter Virtuel OVHcloud.
-- Comment configurer des JOB de sauvegardes.
-- Comment ajouter un JOB à votre machine virtuelle depuis la console VDC.
-- Comment restaurer des sauvegardes de VMs.
+**Nous allons voir dans ce guide les solutions de sauvegarde et de restauration de Veeam pour la solution VMware Cloud Director.**
 
 ## Prérequis
 
-Cette documentation nécessite :
-
-- Un compte VMware Cloud Director administrateur
-- Une Organisation VCD
-- Un utilisateur avec le rôle Administrateur de l'organisation pour vous connecter au portail en libre-service Veeam Data Protection. Le nouvel utilisateur admin d'un datacenter virtuel a le rôle par défaut.
-
-Pour en savoir plus sur l'offre OVHcloud de sauvegarde avec Veeam, consulyez notre documentation « [Activer et utiliser Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service) ».
-Si vous ne savez pas comment vous connecter à la console d'administration VMware Cloud Director OVHcloud, consultez les guides suivants :
-
-- [VCD - Se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
-- [VCD - Découvrez comment utiliser l'interface utilisateur de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
-- [VCD - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
+- Posséder une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Un compte vCloud Director administrateur avec une Organisation VCD.
+- Un utilisateur avec le rôle Administrateur de l'organisation pour vous connecter au portail en libre-service Veeam Data Protection (le nouvel utilisateur admin d'un datacenter virtuel a le rôle par défaut).
+- Avoir lu les guides VCD : [Les concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) / [Comment se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) / [Comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
 
 ## En pratique
+
+Veeam Backup & Replication accompagne VCD. 
+
+Il utilise l'API VMware Cloud Director pour sauvegarder les vApps et les VMs et les restaurer directement dans la hiérarchie VMware Cloud Director.
+
+Le service Veeam Backup Data Protection est disponible et prêt à l'emploi pour les 3 offres OVHcloud [(voir catalogue des fonctionnalités).](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#fonctionnalites-de-vmware-cloud-director-chez-ovhcloud)
 
 > [!warning]
 >
@@ -77,13 +64,13 @@ Les métadonnées des applications virtuelles (vApp) et VM incluent :
 - Le quota.
 - Les Modèles de stockages (Templates).
 
-Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle. La capture des métadonnées vApp/VM est extrêmement importante pour la restauration : sans elle, vous ne serez pas en mesure de restaurer les vApp et les VM vers VMware Cloud Director.
+Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle. La capture des métadonnées vApp/VM est importante pour la restauration : sans elle, vous ne serez pas en mesure de restaurer les vApp et les VM vers VMware Cloud Director.
 
 <!--- proofread stops below this point --->
 
 ##### Les politiques de sauvegardes
 
-##### Les depots
+##### Les depots (repository)
 
 Par défaut, vous avez **les dépots** suivant :
 
@@ -96,9 +83,9 @@ Les référentiels sont tous configurés avec l'Object Storage Standard. Seul le
 
 #### Les taches de sauvegardes (Job)
 
-Les taches de sauvegarde nécessitent 4 paramètres par défaut:
+Les taches de sauvegarde nécessitent 4 paramètres par défaut :
 
-1. Les paramètres de taches : Nom / Dépot ou Quota (Bronze/Silver/Gold : 100GB) / Description / Rétention (Jours/point de restauration)
+1. Les paramètres de taches (job) : Nom / Dépot ou Quota (Bronze/Silver/Gold : 100GB) / Description / Rétention (Jours/point de restauration)
 2. Machines virtuelles (VM) : Ajout ou exclusion de machines virtuelles / vApp / vCloud Organisation
 3. Traitement invité : Traitement prenant en charge les applications / Indexation du système de fichiers invité / Informations d'identification du système d'exploitation invité (credentials)
 4. Notifications E-Mail : Activation de notifications E-Mail
