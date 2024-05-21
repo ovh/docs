@@ -1,45 +1,74 @@
 ---
+<<<<<<< HEAD
 title: "Activer et utiliser le mode rescue"
 excerpt: "Découvrez comment utiliser le mode rescue OVHcloud pour dépanner votre serveur dédié"
 updated: 2024-05-15
+=======
+title: 'Activer et utiliser le mode rescue'
+excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
+updated: 2024-01-09
+>>>>>>> 6c82ddcd1e (Revert "FR-CA versions")
 ---
 
 ## Objectif
 
-Le mode Rescue est un outil fourni par OVHcloud qui vous permet de démarrer sur un système d'exploitation temporaire dans le but de diagnostiquer et de résoudre les problèmes sur votre serveur.
+Le mode rescue est un outil de votre serveur dédié. Il vous permet de démarrer sur un système d’exploitation temporaire, dans le but de diagnostiquer et de résoudre les problèmes.
 
 Le mode rescue est généralement adapté aux tâches suivantes :
 
+<<<<<<< HEAD
 - [Réinitialisation du mot de passe de l'utilisateur](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - [Diagnostic des problèmes réseau](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+=======
+- Réinitialisation du mot de passe root
+- Diagnostic des problèmes réseau
+>>>>>>> 6c82ddcd1e (Revert "FR-CA versions")
 - Réparation d'un système d'exploitation défectueux
 - Correction d'une configuration incorrecte d'un pare-feu logiciel
 - [Test des performances des disques](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 - [Test du processeur et de la mémoire RAM](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
+Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas encore de sauvegardes récentes.
+
 > [!warning]
 >
-> Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas encore de sauvegardes récentes.
->
-> Si vous avez des services en production sur votre serveur, le mode rescue les interrompt tant que la machine n’a pas été redémarrée en mode normal.
+> Si vous avez des services en production sur votre VPS, le mode rescue les interrompt tant que la machine n’a pas été redémarrée en mode normal.
 > 
 
-**Ce guide vous explique comment redémarrer un serveur en mode rescue et monter des partitions.**
+**Découvrez comment activer et utiliser le mode rescue de votre serveur.**
 
 ## Prérequis
 
+<<<<<<< HEAD
 - Posséder un [serveur dédié](/links/bare-metal/bare-metal).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
 Le mode rescue ne peut être activé que depuis votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
+=======
+- Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+
+## En pratique
+
+> [!warning]
+> Veuillez noter que si vous avez défini une clé SSH par défaut dans votre espace pour les produits dédiés, vous ne recevrez pas de mot de passe root lors du redémarrage d'un serveur en mode rescue. Dans ce cas, vous devez d'abord désactiver la clé SSH par défaut avant de redémarrer le serveur en mode rescue. Pour ce faire, nous vous invitons à consulter cette [section](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) du guide correspondant.
+>
+
+Le mode rescue ne peut être activé que depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
+>>>>>>> 6c82ddcd1e (Revert "FR-CA versions")
 
 Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Modifier`{.action}.
 
 ![Changer le mode de démarrage](images/rescue-mode-001.png){.thumbnail}
 
+<<<<<<< HEAD
 Dans la page suivante, sélectionnez **Booter en mode rescue**. 
+=======
+Dans la page suivante, sélectionnez **Booter en mode rescue**. Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue-customer`{.action} dans la liste déroulante. Si votre serveur est sous Windows, choisissez  `WinRescue`{.action} (voir la [section du guide ci-dessous](#windowsrescue). Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
+<br>Cliquez sur `Suivant`{.action} et `Valider`{.action}.
+>>>>>>> 6c82ddcd1e (Revert "FR-CA versions")
 
 ### Rescue Linux
 
@@ -97,7 +126,7 @@ Lorsque vous aurez terminé vos tâches en mode rescue, n'oubliez pas de redéfi
 > Si vous utilisez une clé SSH (active également dans votre espace client OVHcloud), aucun mot de passe ne vous sera envoyé. Une fois le serveur en mode rescue, vous pourrez vous connecter directement avec votre clé SSH.
 >
 
-Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Cet e-mail est également disponible dans votre [espace client OVHcloud](/links/manager). Cliquez sur le nom associé à votre identifiant client dans le coin supérieur droit de votre espace client, puis sur `E-mails de service`{.action}.
+Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Cet e-mail est également disponible dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur le nom associé à votre identifiant client dans le coin supérieur droit de votre espace client, puis sur `E-mails de service`{.action}.
 
 Vous devrez ensuite accéder à votre serveur en ligne de commande ou via un outil [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), en utilisant le mot de passe root généré pour le mode rescue.
 
@@ -112,12 +141,12 @@ root@ns3956771.ip-169-254-10.eu's password:
 >
 > Votre client SSH bloquera probablement la connexion dans un premier temps en raison d'une incompatibilité de l'empreinte ECDSA. Ceci est normal car le mode rescue utilise son propre serveur SSH temporaire.
 >
-> Une façon de contourner ce problème est de « commenter » l'empreinte de votre serveur en ajoutant un `#` devant sa ligne dans le fichier `known_hosts`. N’oubliez pas d’annuler cette modification avant de repasser le netboot en mode « normal ».<br>Vous pouvez également supprimer la ligne du fichier. Votre client SSH ajoutera alors une nouvelle entrée d'empreinte pour le serveur lorsque la connexion sera à nouveau établie. Si vous avez besoin d'instructions plus détaillées, reportez-vous à notre guide « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction#login) ».
+> Une façon de contourner ce problème est de « commenter » l'empreinte de votre serveuren ajoutant un `#` devant sa ligne dans le fichier `known_hosts`. N’oubliez pas d’annuler cette modification avant de repasser le netboot en mode « normal ».<br>Vous pouvez également supprimer la ligne du fichier. Votre client SSH ajoutera alors une nouvelle entrée d'empreinte pour le serveur lorsque la connexion sera à nouveau établie. Si vous avez besoin d'instructions plus détaillées, reportez-vous à notre guide « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction#login) ».
 >
 
-#### Montage des partitions
+La plupart des modifications apportées à votre serveur via SSH en mode rescue nécessitent le montage d’une partition. En effet, ce mode possède son propre système de fichiers temporaires. Par conséquent, les modifications apportées au système de fichiers en mode rescue seront perdues lors du redémarrage du serveur en mode normal.
 
-À moins que vous configuriez les disques du serveur d'une manière qui nécessite qu'ils soient détachés (*unmounted*), vous devez d'abord monter la partition système.
+#### Montage des partitions
 
 Le montage des partitions est réalisé à l’aide de la commande `mount` en SSH. Vous devez préalablement lister vos partitions, afin de pouvoir récupérer le nom de celle que vous souhaitez monter. Vous pouvez vous référer aux exemples de code suivants :
 
@@ -156,7 +185,7 @@ mount /dev/hda1 /mnt/
 > Si votre serveur dispose d’une configuration RAID logicielle, vous devez monter votre volume RAID (en général `/dev/mdX`).
 >
 
-Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](/links/manager) et redémarrez le serveur en ligne de commande.
+Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et redémarrez le serveur en ligne de commande.
 
 #### VMware - Montage d'un datastore
 
@@ -193,15 +222,22 @@ Montez la partition avec la commande suivante, en remplaçant `sdbX` par la vale
 vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
-Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](/links/manager) et redémarrez le serveur en ligne de commande.
+Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et redémarrez le serveur en ligne de commande.
 
 ### Windows <a name="windowsrescue"></a>
 
 #### Utilisation des outils WinRescue
+<<<<<<< HEAD
 
 Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Cet e-mail est également disponible dans votre [espace client OVHcloud](/links/manager). Cliquez sur le nom associé à votre identifiant client dans le coin supérieur droit de votre espace client, puis sur `E-mails de service`{.action}.
 
 Pour utiliser le mode rescue proposé par Windows, vous devez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVHcloud](/links/manager).
+=======
+
+Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Cet e-mail est également disponible dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur le nom associé à votre identifiant client dans le coin supérieur droit de votre espace client, puis sur `E-mails de service`{.action}.
+
+Pour utiliser le mode rescue proposé par Windows, vous devez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+>>>>>>> 6c82ddcd1e (Revert "FR-CA versions")
 
 ![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 
