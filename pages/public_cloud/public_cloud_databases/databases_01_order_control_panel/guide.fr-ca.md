@@ -1,5 +1,5 @@
 ---
-title: Premiers pas avec les bases de données de cloud public (EN)
+title: Public Cloud Databases - Premiers pas (EN)
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
 updated: 2024-02-29
 ---
