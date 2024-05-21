@@ -157,7 +157,7 @@ Le JOB apparait dans la liste.
 >
 
 > [!warning]
-> Pour pouvoir ajouter un job depuis la console VCD sur une VM, un JOB doit être pre ????
+> Pour pouvoir ajouter un job depuis une VM (.. action -> ... Ajouter une tache à Veeam), il doit être préalablement créé.
 >
 
 Dans la console VMware Cloud Director, cliquez sur `Centre de données`{.action} puis sur `Machines virtuelles`{.action}.
