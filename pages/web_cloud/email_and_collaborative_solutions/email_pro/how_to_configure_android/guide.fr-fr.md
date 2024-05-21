@@ -8,6 +8,9 @@ updated: 2024-03-15
 .w-400 {
   max-width:400px !important;
 }
+.h-600 {
+  max-height:600px !important;
+}
 </style>
 
 ## Objectif
@@ -20,18 +23,17 @@ Les adresses e-mail de l'offre E-mail Pro peuvent être configurées sur différ
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external}.
+- Disposer d'une offre [E-mail Pro](/links/email-pro).
 - Disposer de l'application Gmail sur votre appareil. Vous pouvez installer cette dernière depuis le Google Play Store.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
 > [!primary]
 >
 > Cette documentation a été réalisée depuis un appareil utilisant la version 13 d'Android.
->
 
 ## En pratique
 
@@ -41,7 +43,7 @@ Les adresses e-mail de l'offre E-mail Pro peuvent être configurées sur différ
 >
 > Dans nos exemples, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 >
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 >
 
 Sur l'écran d'accueil de votre appareil, rendez-vous dans l'application `Gmail`{.action}.
@@ -53,51 +55,48 @@ L’ajout d’un compte se fera différemment **si aucun compte n'est paramétr�
 > [!tabs]
 > **Première configuration**
 >>
->> Sélectionnez `Ajouter une adresse e-mail`{.action}<br><br>
->> ![emailpro](images/android-first.png){.thumbnail}
+>> Sélectionnez `Ajouter une adresse e-mail`{.action}<br><br>![emailpro](images/android-first.png){.thumbnail .h-600}
 >>
 > **Configuration existante**
 >>
 >> 1. Dirigez-vous vers le menu situé dans la partie supérieure gauche de l'écran<br><br>
 >> 2. Sélectionnez `Paramètres`{.action}<br><br>
->> 3. Sélectionnez `Ajouter un compte`{.action}<br><br>
->> ![emailpro](images/android-existing.png){.thumbnail}
->>
+>> 3. Sélectionnez `Ajouter un compte`{.action}<br><br>![emailpro](images/android-existing.png){thumbnail .h-600}
 
 Suivez les étapes successives de configuration en parcourant les onglets ci-dessous :
 
 > [!tabs]
 > **Etape 1**
 >> Dans le menu des types de comptes e-mail, sélectionnez `Autre`{.action}.<br><br>
->> ![emailpro](images/emailpro-android-01.png){.thumbnail}
+>> ![emailpro](images/emailpro-android-01.png){.thumbnail .h-600}
 >>
 > **Etape 2**
 >> Saisissez votre adresse e-mail.<br><br>
->> ![emailpro](images/emailpro-android-02.png){.thumbnail}
+>> ![emailpro](images/emailpro-android-02.png){.thumbnail .h-600}
 >>
 > **Etape 3**
 >> Sélectionnez le protocole de réception des e-mails. Il est conseillé de sélectionner `Personnel (IMAP)`{.action}<br><br>Retrouvez [plus de détails sur les protocoles POP et IMAP](#popimap) à la fin de ce guide pour comprendre leurs différences.<br><br>
->> ![emailpro](images/emailpro-android-03.png){.thumbnail}
+>> ![emailpro](images/emailpro-android-03.png){.thumbnail .h-600}
 >>
 > **Etape 4**
 >> Saisissez le mot de passe de votre adresse e-mail.<br><br>
->> ![emailpro](images/emailpro-android-04.png){.thumbnail}
+>> ![emailpro](images/emailpro-android-04.png){.thumbnail .h-600}
 >>
 > **Etape 5**
 >> Complétez les « **Paramètres de serveur entrant** »<br><br>- **Nom d'utilisateur** : Votre adresse e-mail complète<br>- **Mot de passe** : Le mot de passe de votre adresse e-mail<br>- **Serveur** : saisissez **pro**?**.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur). <br><br>
->> ![emailpro](images/emailpro-android-05.png){.thumbnail}
+>> ![emailpro](images/emailpro-android-05.png){.thumbnail .h-600}
 >>
 > **Etape 6**
 >> Complétez les « **Paramètres de serveur sortant** »<br><br>- **Nom d'utilisateur** : Votre adresse e-mail complète<br>- **Mot de passe** : Le mot de passe de votre adresse e-mail<br>- **Serveur SMTP** : saisissez **pro**?**.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur). <br><br>
->> ![emailpro](images/emailpro-android-06.png){.thumbnail}
+>> ![emailpro](images/emailpro-android-06.png){.thumbnail .h-600}
 >>
 > **Etape 7**
 >> Choisissez la fréquence de synchronisation de vos e-mails selon vos préférences.<br><br>
->> ![emailpro](images/emailpro-android-07.png){.thumbnail}
+>> ![emailpro](images/emailpro-android-07.png){.thumbnail .h-600}
 >>
 > **Etape 8**
 >> Déterminez le nom d'affichage de votre adresse e-mail dans l'application Gmail puis appuyez sur `Suivante`{.action}.<br><br>
->> ![emailpro](images/emailpro-android-08.png){.thumbnail}
+>> ![emailpro](images/emailpro-android-08.png){.thumbnail .h-600}
 >>
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages depuis votre application Gmail.
@@ -172,4 +171,4 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
 
 [Exchange - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
