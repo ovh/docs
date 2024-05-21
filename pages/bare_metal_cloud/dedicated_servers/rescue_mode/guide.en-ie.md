@@ -72,7 +72,7 @@ Login details will be sent by default to the main address of your OVHcloud accou
 
 For servers with a Windows operating system, please refer to the [dedicated guide](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
 
-You can also choose the `WinRescue`{.action} option, depending on your server. For more information about this mode, see the [guide section below](#windowsrescue)). Note that only password authentication is available with this type of rescue mode.
+You can also choose the `WinRescue`{.action} option, depending on your server. For more information about this mode, see the [guide section below](#windowsrescue). Note that only password authentication is available with this type of rescue mode.
 
 Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
 
