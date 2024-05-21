@@ -1,12 +1,12 @@
 ---
 title: "Security specification for Private Cloud by VMmare "
 excerpt: "Discover features, security functions and best practices to use our Private Cloud by VMware service "
-updated: 2024-05-17
+updated: 2024-05-21
 ---
 
 ## Objective
 
-In addition to [the responsibility model](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing) between OVHcloud and the customer for the Hosted Private Cloud powered by VMware, the purpose of this guide is to present best practices and features that customer can adopt to use the service.
+In addition to [the responsibility model](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing) between OVHcloud and the customer for the Hosted Private Cloud powered by VMware offer, the purpose of this guide is to present best practices and features that customer can adopt to use the service.
 
 ## 1 - Certifications
 
@@ -27,8 +27,8 @@ In addition to [the responsibility model](/pages/hosted_private_cloud/hosted_pri
 
 ### 2.1 - Recommendations once the service is delivered
 
-At service delivery, once you have received you credentials, it's recommaned to change your credentials to connect to your private cloud. 
-To access the vSphere interface, follow the steps on [the following link](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc_getting_started). 
+At service delivery, once you have received you credentials, it is recommended to change your credentials to connect to your private cloud. 
+To access the vSphere interface, follow the steps on [this link](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc_getting_started). 
 
 You will also need to harden your operating system after you have created your virtual machines.
 
@@ -55,7 +55,7 @@ The SLA for options such as Veeam Managed Backups may be different, please refer
 
 Technical backups are backups made by OVHcloud to maintain the Service Level Agreement. These backups cannot be activated at the customer's request.
 
-### 4.2 - Sauvegardes métier
+### 4.2 - Business backups
 
 List of backup features and options adapted to the service.
 
@@ -71,7 +71,7 @@ List of backup features and options adapted to the service.
 Customers with a Hosted Private Cloud infrastructure have the option of retrieving logs from the OVHcloud Control Panel, as well as the events recorded on the service they are operating.
 
 > [!primary]
-> Follow this guide [First steps with OVHcloud API](/pages/manage_and_operate/api/first-steps) to understand how to use   OVHcloud APIv6.
+> Read the guide [First steps with OVHcloud API](/pages/manage_and_operate/api/first-steps) to understand how to use OVHcloud APIv6.
 
 | **Source** | **Content** | **Links** |
 | --- | --- | --- |
@@ -92,13 +92,12 @@ Customers with a Hosted Private Cloud infrastructure have the option of retrievi
 Using your customer account on the OVHcloud Control Panel, you are able to manage your service using [three different contacts](/pages/account_and_service_management/account_information/managing_contacts).<br>
 OVHcloud uses another account with an internal NIC to refer a customer having subscribed to several services.
 
-To enforce security access to your account on the Control Panel, we recommend activating a [two-factor authentication mechanism](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) or SSO authentication [(Single Sign-On)](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs) and associate your account with an external Active Directory.
+To enforce security access to your account on the Control Panel, we recommend activating a [two-factor authentication mechanism](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) or [SSO (Single Sign-On) authentication](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs) and associate your account with an external Active Directory.
 
-With the administrator account, you are able to establish your own access policy to the vCenter, to create users and assign them different access rights to manage the resources, to access to the vSphere interface and management of the private and public network part. Guide and configuration details are available on [this link](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud).
-To enforce users authentication on Private Cloud infrastructure, your can activate two-factor authentication mechanism, available by subscription to [HDS or PCI DSS offers](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/utilisation_2FA). 
+With the administrator account, you are able to establish your own access policy to the vCenter, to create users and assign them different access rights to manage the resources, to access to the vSphere interface and management of the private and public network part. A guide and configuration details are available on [this link](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud).
+To enforce users authentication on the Private Cloud infrastructure, you can activate a two-factor authentication mechanism, available by subscription to [HDS or PCI DSS offers](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/utilisation_2FA). 
 
-Finally, if you have an AD server and need to manage your users access to your Private cloud with your proper identity provider, you can activate this feature by following [this guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/federation). 
-
+Finally, if you have an AD server and need to manage your users access to your Private cloud with your own identity provider, you can activate this feature by following [this guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/federation). 
 
 ### 7.2 - Data Plane
 
@@ -126,14 +125,13 @@ IP addresses of a Private Cloud service to access the VMware admin interface are
 
 The SSL Gateway is a gateway that allows a customer to activate filtering functions to allow their own users to connect to their infrastructure through Internet network.
 
-It also offers a Firewall/NAT service that you can configure using 'iptable', a certificate to secure the connection, a ProxyPass, monitoring, an SFTP server and an antivirus script with daily/updated scan. 
-
+It also offers a Firewall/NAT service that you can configure using 'iptable', a certificate to secure the connection, a ProxyPass, monitoring, an SFTP server and an antivirus script with daily scans/updates.
 
 ### 9.2.2 Private Gateway
 
 The Private Gateway is an option available on a Private Cloud service and activated by default on a SecNumCloud qualified infrastructure. It allows the customer to manage access to their infrastructure via a private IP (vSphere interface, vScope, etc.). 
 
-Once deployed, the Private Gateway acts as a proxy to access the infrastructure from the vRack network. All the rules established in SSL Gateway (iptable) will be copied to the Private Gateway for filtering. Access via public IPs will be disabled and the Private Cloud domain will only be accessible via this Gateway.   
+Once deployed, the Private Gateway acts as a proxy to access the infrastructure from the vRack network. All the rules established in SSL Gateway (iptable) will be copied to the Private Gateway for filtering. Access via public IPs will be disabled and the Private Cloud domain will only be accessible via this Gateway.
 
 The procedure for enabling Private Gateway is available here: [Activate the Private Gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/private_gateway).
 
@@ -141,7 +139,7 @@ The procedure for enabling Private Gateway is available here: [Activate the Priv
 
 Several network filtering features such as micro segmentation, distributed firewall, load balancing, etc. are available via VMware's NSX-based SDN solution.
 
-The guide to getting started with the NSX solution is available on [this link](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps). It is accompanied by other tutorials in the documentation space to facilitate the use of other features.
+The guide to get started with the NSX solution is available using [this link](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps). It comes with other tutorials aimed at facilitating the use of other features.
 
 ### 9.2.5 Data encryption
 
@@ -159,17 +157,14 @@ The pack includes several features such as: [token validator](/pages/hosted_priv
 
 ## 10 - Reversibility
 
-To ensure data portability and reversibility on the service, OVHcloud allows you to import and export your data (virtual machines and vCenter configuration files) autonomously in a VMDK file format or any other format supported by the VMware hypervisor. You can also use the APIs provided and [OVF Tool](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool) to facilitate these operations.
+To ensure data portability and reversibility on the service, OVHcloud allows you to import and export your data (virtual machines and vCenter configuration files) autonomously in a VMDK file format or any other format supported by the VMware hypervisor. You can also use the APIs provided and the [OVF Tool](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool) to facilitate these operations.
 
-OVHcloud’s portability principles are described in its own [reversibility policy](/pages/account_and_service_management/reversibility/00-global-reversibility-policy) and those specific to the Hosted Private Cloud by VMware service are set out [specific policy](/pages/account_and_service_management/reversibility/02-hosted-private-cloud-reversibility-policy).
+OVHcloud’s portability principles are described in its own [reversibility policy](/pages/account_and_service_management/reversibility/00-global-reversibility-policy) and those specific to the Hosted Private Cloud by VMware service are set out in this [specific policy](/pages/account_and_service_management/reversibility/02-hosted-private-cloud-reversibility-policy).
 
 ### 10.1 - Erasure of customer data 
 
-Following the customer’s decommission of the service and prior to the removal of the hard drive from the rack, an erasing robot applies a secure data erasure procedure based on the NIST SP 800-88 r1 level ‘Purge’. In case of technical constraints or limitations on certain ranges of hard drives and when the level 'Purge' cannot be applied, the erase at the level 'Clear' will run.
-
+Following the customer’s decommission of the service and prior to the removal of the hard drive from the rack, an erasing robot applies a secure data erasure procedure based on the NIST SP 800-88 r1 level ‘Purge’. In case of technical constraints or limitations on certain ranges of hard drives and when the level 'Purge' cannot be applied, the erasure at the level 'Clear' will run.
 
 ### 10.2 - Erasure of technical data
 
 Following the customer’s resignation from the service, OVHcloud releases the resources allocated to him and deletes the configurations made during service delivery
-
-
