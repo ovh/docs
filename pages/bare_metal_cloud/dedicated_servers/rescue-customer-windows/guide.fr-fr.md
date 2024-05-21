@@ -25,7 +25,7 @@ Le mode rescue est généralement adapté aux tâches suivantes :
 
 ## Prérequis
 
-- Posséder un [serveur dédié](/links/bare-metal) installé avec une version de Microsoft Windows.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal) installé avec une version de Microsoft Windows.
 - Le serveur doit avoir plus de 16 Go de RAM.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
