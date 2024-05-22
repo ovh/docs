@@ -42,6 +42,14 @@ On the new page, a table displays the backup history for your DNS zone, ordered 
 - [Restore a DNS zone](#restore).
 - [Compare two DNS zones](#compare).
 
+> [!primary]
+>
+> Your DNS zone backups are subject to the following limitations:
+>
+> - We keep a maximum of 200 backups for the same DNS zone.
+> - Once a backup is more than 31 days old, it is automatically deleted, with the exception of the **5 most recent backups** made.
+>
+
 ### View a DNS zone <a name="view"></a>
 
 To view the DNS zone of your choice, identify the corresponding row in the table, then click on the icon in the `View`{.action} column.
