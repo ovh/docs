@@ -50,6 +50,14 @@ Visualizzi una tabella con la cronologia dei backup della zona DNS, ordinata in 
 - [Ripristinare una zona DNS](#restore)
 - [Confronta due zone DNS](#compare)
 
+> [!primary]
+>
+> I backup della zona DNS sono soggetti alle seguenti limitazioni:
+>
+> - Conserviamo al massimo 200 backup per la stessa zona DNS.
+> - Ogni volta che il backup dura più di 31 giorni, viene automaticamente eliminato, ad eccezione degli ultimi **5 backup** completati.
+>
+
 ### Visualizzare una zona DNS <a name="view"></a>
 
 Per visualizzare la zona DNS scelta, identifica la riga corrispondente nella tabella e clicca sull’icona presente nella colonna `Visualizza`{.action}.
