@@ -151,7 +151,7 @@ Si ha identificado una dirección IP maliciosa, introduzca la siguiente línea e
 >> </Limit>
 >>```
 >>
->> Dans cet exemple, `203.0.113.0` désigne l'adresse IPv4 à bloquer.
+>> En este ejemplo, `203.0.113.0` designa la dirección IPv4 que desea bloquear.
 >>
 > **IPv6**
 >>
@@ -163,10 +163,8 @@ Si ha identificado una dirección IP maliciosa, introduzca la siguiente línea e
 >> </Limit>
 >>```
 >>
->> Dans cet exemple, `2001:db8:1:1b00:203:0:113:0` désigne l'adresse IPv6 à bloquer.
+>> En este ejemplo, `2001:db8:1:1b00:203:0:113:0` designa la dirección IPv6 que desea bloquear.
 >>
-
-En este ejemplo, `203.0.113.0` designa la dirección IP que desea bloquear.
 
 Para más información, consulte nuestra guía sobre la [restricción de acceso por IP a través del archivo .htaccess](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -186,7 +184,7 @@ El directorio **wp-admin** permite conectarse a su interfaz de administración (
 >> </Limit>
 >>```
 >>
->> Dans cet exemple, seules les adresses IPv4 `203.0.113.0` et `203.0.113.1` sont autorisées à accéder au répertoire dans lequel se trouve le fichier .htaccess.
+>> En este ejemplo, solo las direcciones IPv4 `203.0.113.0` y `203.0.113.1` pueden acceder al directorio en el que se encuentra el archivo .htaccess.
 >>
 > **IPv6**
 >>
@@ -199,7 +197,7 @@ El directorio **wp-admin** permite conectarse a su interfaz de administración (
 >> </Limit>
 >>```
 >>
->> Dans cet exemple, seules les adresses IPv6 `2001:db8:1:1b00:203:0:113:0` et `2001:db8:1:1b00:203:0:113:1` sont autorisées à accéder au répertoire dans lequel se trouve le fichier .htaccess.
+>> En este ejemplo, solo las direcciones IPv6 `2001:db8:1:1b00:203:0:113:0` y `2001:db8:1:1b00:203:0:113:1` pueden acceder al directorio en el que se encuentra el archivo .htaccess.
 
 ### Datos importantes a tener en cuenta
 
