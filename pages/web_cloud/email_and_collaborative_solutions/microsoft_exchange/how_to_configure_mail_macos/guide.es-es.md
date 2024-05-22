@@ -32,7 +32,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo electrónico 
 
 ## Requisitos
 
-- Disponer de una dirección de correo [Exchange](links/web/emails-hosted-exchange).
+- Disponer de una dirección de correo [Exchange](/links/web/emails-hosted-exchange).
 - Tener el programa Mail instalado en su Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -44,7 +44,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo electrónico 
 >
 > En nuestro ejemplo, utilizamos la mención servidor : ex**?**.mail.ovh.net. Deberá sustituir el «?» por el número que designa el servidor de su servicio Exchange.
 >
-> Puede consultar esta cifra en el [área de cliente de OVHcloud](links/manager), en la sección `Web Cloud`{.action} y luego `Microsoft`{.action}.
+> Puede consultar esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y luego `Microsoft`{.action}.
 > Haga clic en `Exchange`{.action} y seleccione la plataforma Exchange deseada. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información general`{.action}.
 >
 

@@ -32,7 +32,7 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail [Exchange](links/web/emails-hosted-exchange)
+- Posiadanie konta e-mail [Exchange](/links/web/emails-hosted-exchange)
 - Instalacja programu Mail na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
@@ -44,7 +44,7 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 >
 > W naszym przykładzie używamy nazwy serwera: ex*?*.mail.ovh.net. Należy zastąpić "?" cyfrą wskazującą serwer Twojej usługi Exchange.
 >
-> Znajdziesz tę cyfrę w [Panelu klienta OVHcloud](links/manager), w rubryce `Web Cloud`{.action}, następnie `Microsoft`{.action}.
+> Znajdziesz tę cyfrę w [Panelu klienta OVHcloud](/links/manager), w rubryce `Web Cloud`{.action}, następnie `Microsoft`{.action}.
 > Kliknij na `Exchange`{.action}, a następnie na wybraną platformę Exchange. Nazwa serwera jest widoczna w ramce **Połączenie** w zakładce `Informacje ogólne`{.action}.
 >
 
@@ -98,7 +98,7 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 
 ## Sprawdź również
 
-[FAQ e-maile](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emaile)
+[FAQ e-maile](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 [Konfiguracja konta E-mail Pro w aplikacji Mail na urządzeniach z systemem macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
 

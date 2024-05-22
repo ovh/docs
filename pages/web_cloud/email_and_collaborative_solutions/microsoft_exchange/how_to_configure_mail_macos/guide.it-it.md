@@ -32,7 +32,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili. 
 
 ## Prerequisiti
 
-- Disporre di un indirizzo email [Exchange](links/web/emails-hosted-exchange)
+- Disporre di un indirizzo email [Exchange](/links/web/emails-hosted-exchange)
 - Disporre del software Mail installato sul tuo Mac
 - Disporre delle credenziali associate all’indirizzo email da configurare
 
@@ -44,7 +44,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili. 
 >
 > Nel nostro esempio, utilizziamo la dicitura server: ex**?**.mail.ovh.net. Sostituisci "?" con il numero che indica il server del tuo servizio Exchange.
 >
-> Ritrova questa cifra nel tuo [Spazio Cliente OVHcloud](links/manager), sezione `Web Cloud`{.action}, poi `Microsoft`{.action}.
+> Ritrova questa cifra nel tuo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}, poi `Microsoft`{.action}.
 > Clicca su `Exchange`{.action} e poi sulla piattaforma Exchange desiderata. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 >
 
