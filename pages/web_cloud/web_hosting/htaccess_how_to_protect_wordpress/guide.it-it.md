@@ -140,12 +140,31 @@ Il tuo file **wp-config.php**, presente alla radice del tuo sito Web, contiene i
 
 Se hai identificato un indirizzo IP malevolo, inserisci la riga nel tuo file **.htaccess*:
 
-```bash
-<Limit GET POST>
-    order allow,deny deny from 203.0.113.0
-    allow from all
-</Limit>
-```
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 203.0.113.0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Dans cet exemple, `203.0.113.0` désigne l'adresse IPv4 à bloquer.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 2001:db8:1:1b00:203:0:113:0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Dans cet exemple, `2001:db8:1:1b00:203:0:113:0` désigne l'adresse IPv6 à bloquer.
+>>
 
 In questo esempio `203.0.113.0` indica l'indirizzo IP da bloccare.
 
@@ -155,13 +174,32 @@ Per maggiori informazioni su questo argomento, consulta la nostra guida sulla ["
 
 La directory **wp-admin** permette di accedere alla tua interfaccia di amministrazione (il metodo funziona anche con le altre directory, ma corrispondono a URL che non portano a un'interfaccia specifica). Per proteggere questa directory, autorizzi in modo specifico l'accesso a uno o più indirizzi IP utilizzando il seguente codice da inserire nel tuo **.htaccess**:
 
-```bash
-<Limit GET POST PUT>
-    order deny,allow deny from all
-    allow from 203.0.113.0
-    allow from 203.0.113.0
-</Limit>
-```
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 203.0.113.0
+>>   allow from 203.0.113.1
+>> </Limit>
+>>```
+>>
+>> Dans cet exemple, seules les adresses IPv4 `203.0.113.0` et `203.0.113.1` sont autorisées à accéder au répertoire dans lequel se trouve le fichier .htaccess.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 2001:db8:1:1b00:203:0:113:0
+>>   allow from 2001:db8:1:1b00:203:0:113:1
+>> </Limit>
+>>```
+>>
+>> Dans cet exemple, seules les adresses IPv6 `2001:db8:1:1b00:203:0:113:0` et `2001:db8:1:1b00:203:0:113:1` sont autorisées à accéder au répertoire dans lequel se trouve le fichier .htaccess.
 
 ### Informazioni importanti da ricordare
 
