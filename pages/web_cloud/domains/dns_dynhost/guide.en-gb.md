@@ -81,9 +81,9 @@ Once you are ready to create the DynHost record, go to the `DynHost`{.action} ta
 |Subdomain|Enter the subdomain that the DNS record must be dynamically updated for. This subdomain must be identical to the one you entered when you created the DynHost username. **If you would like to set up a DynHost directly for your domain name, leave this form blank**|
 |Target IP|Enter the IP address (IPv4 or IPv6) currently mapped in the DNS record. This is usually the public IP address of your Internet access box or your self-hosted server. In accordance with the DynHost principle, the IP will from now on be updated automatically.|
 
-Once you have filled in all of the required fields, click `Confirm`{.action}. The DynHost record will then appear in the table on the current page. Repeat this step if you need additional DynHost records.
-
 ![dynhost](images/create-a-dynhost.png){.thumbnail}
+
+Once you have filled in all of the required fields, click `Confirm`{.action}. The DynHost record will then appear in the table on the current page. Repeat this step if you need additional DynHost records.
 
 ### Step 3: Automate the DynHost update
 
