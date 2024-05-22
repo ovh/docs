@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration von dynamischen DNS-Aktualisierungen (DynHost/DynDNS) für Ihren Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihren Domainnamen einrichten"
-updated: 2024-03-07
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -21,6 +21,11 @@ Für weitere Informationen zu DNS-Zonen und wie Sie diese im [OVHcloud Kundencen
 Das dynamische Aktualisieren eines DNS-Eintrags kann Unterbrechungen Ihrer Dienste verhindern, wenn Sie nicht über eine statische IP-Adresse verfügen.
 
 So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten Game Server (in Geschäftsräumen oder privat) ohne feste IP-Adresse zu betreiben; das bedeutet, Ihr **I**nternet **S**ervice **P**rovider (**ISP**) vergibt regulär eine neue Adresse.
+
+> [!primary]
+>
+> Jeder A- oder AAAA-Eintrag mit einer TTL (**T**ime **T**o **L**ive) von 60 Sekunden gilt als DynHost. Die TTL gibt an, wie lange DNS-Einträge von DNS-Servern zwischengespeichert werden, bevor sie aktualisiert werden.
+>
 
 **Diese Anleitung erklärt, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihren OVHcloud Domainnamen einrichten.**
 
@@ -109,7 +114,7 @@ Wenn Ihr Client einsatzbereit ist, muss er unter Verwendung der zuvor im OVHclou
 Je nach verwendetem Client kann zusätzlich zu DynHost-Benutzerinformationen und der Subdomain eine Update-URL erforderlich sein. Ist das der Fall, verwenden Sie die unten stehende URL und ersetzen Sie die generischen Elemente:
 
 ```bash
-https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 ```
 
 |Information|Ersetzen mit|
