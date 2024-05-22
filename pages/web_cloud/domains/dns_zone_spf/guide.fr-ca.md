@@ -1,5 +1,5 @@
 ---
-title: Configurer un enregistrement SPF sur son nom de domaine
+title: Configurer un enregistrement SPF pour améliorer la sécurité des emails
 excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine chez OVHcloud
 updated: 2023-08-04
 ---

@@ -148,7 +148,7 @@ Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mai
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Configurer un enregistrement DKIM pour améliorer la sécurité des emails](/pages/web_cloud/domains/dns_zone_dkim)
 
 [Configurer un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf)
 
