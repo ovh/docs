@@ -1,25 +1,28 @@
 ---
 title: "VMware Cloud Director - Sauvegarde avec Veeam Data Platform"
 excerpt: "Découvrez comment effectuer des sauvegardes et restaurations avec l'intégration Veeam Data Platform"
-updated: 2024-05-16
+updated: 2024-05-22
 ---
 
 ## Objectif
 
-**Nous allons voir dans ce guide les solutions de sauvegarde et de restauration du plugin VCD Veeam Data Platform.**
+**Ce guide vous décrit les solutions de sauvegarde et de restauration du plugin VCD Veeam Data Platform.**
 
 ## Prérequis
 
-- Un compte vCloud Director administrateur avec une Organisation VCD.
+- Un compte vCloud Director administrateur avec une Organisation VCD
 - Un utilisateur avec le rôle Administrateur de l'organisation pour vous connecter au portail en libre-service Veeam Data Platform (le nouvel utilisateur admin d'un datacenter virtuel a le rôle par défaut).
-- Avoir lu les guides VCD : [Les concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) / [Comment se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) / [Comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
+- Avoir pris connaissances des guides VCD :
+    - [Les concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
+    - [Comment se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
+    - [Comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
 - Avoir une connaissance du fonctionnement de Veeam Backup
 
 ## En pratique
 
 Veeam Data Platform accompagne VCD. Il utilise l'API VMware Cloud Director pour sauvegarder les vApps et les VMs et les restaurer directement dans la hiérarchie VMware Cloud Director.
 
-Le service Veeam Data Platform est disponible et prêt à l'emploi pour les 3 offres OVHcloud [(voir catalogue des fonctionnalités).](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#fonctionnalites-de-vmware-cloud-director-chez-ovhcloud)
+Le service Veeam Data Platform est disponible et prêt à l'emploi pour les 3 offres OVHcloud (voir le [catalogue des fonctionnalités](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features)).
 
 > [!warning]
 >
@@ -64,35 +67,32 @@ Les métadonnées des applications virtuelles (vApp) et VM incluent :
 
 Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle. La capture des métadonnées vApp/VM est importante pour la restauration : sans elle, vous ne serez pas en mesure de restaurer les vApp et les VM vers VMware Cloud Director.
 
-<!--- proofread stops below this point --->
+##### Les dépôts (repository)
 
-##### Les politiques de sauvegardes
+Par défaut, vous avez **les dépôts** suivants :
 
-##### Les depots (repository)
+1. **Bronze Repository** : Standard Object Storage.
+2. **Silver Repository** : Standard Object Storage + Copie de sauvegarde hors site (offsite).
+3. **Gold Repository** : High Performance Object Storage + Copie de sauvegarde hors site (offsite).
 
-Par défaut, vous avez **les dépots** suivant :
-1. **Bronze Repository** : STD Stockage Objet.
-2. **Silver Repository** : STD Stockage Objet + Copie de sauvegarde hors site (offsite).
-3. **Gold Repository** : Haute performance Stockage Object + Copie de sauvegarde hors site (offsite).
+Ces dépôts disposent d'un stockage d'une taille de **100GB**.
 
-Ces dépots dispose d'un stockage d'une taille de **100GB**.
+#### Les tâches de sauvegardes (*jobs*)
 
-#### Les taches de sauvegardes (Job)
+Les tâches de sauvegarde nécessitent 4 paramètres par défaut :
 
-Les taches de sauvegarde nécessitent 4 paramètres par défaut :
-
-1. Les paramètres de taches (job) : Nom / Dépot ou Quota (Bronze/Silver/Gold : 100GB) / Description / Rétention (Jours/point de restauration)
+1. Les paramètres de tâches *(jobs*) : Nom / Dépôt ou Quota (Bronze/Silver/Gold : 100GB) / Description / Rétention (Jours/point de restauration)
 2. Machines virtuelles (VM) : Ajout ou exclusion de machines virtuelles / vApp / vCloud Organisation
 3. Traitement invité : Traitement prenant en charge les applications / Indexation du système de fichiers invité / Informations d'identification du système d'exploitation invité (credentials)
-4. Notifications E-Mail : Activation de notifications E-Mail
+4. Notifications e-mail : Activation de notifications e-mail
 
-Pour les machines virtuelles gérées par VMware Cloud Director, Veeam Backup & Replication offre un type spécial de travail de sauvegarde : le travail de sauvegarde VMware Cloud Director. Les tâches de sauvegarde de VMware Cloud Director traitent les objets VMware Cloud Director, assurent leur restauration correcte et la prise en charge des fonctionnalités spécifiques à Cloud Director.
+Pour les machines virtuelles gérées par VMware Cloud Director, Veeam Backup & Replication offre un type spécial de tâche de sauvegarde : les tâches de sauvegarde VMware Cloud Director. Les tâches de sauvegarde de VMware Cloud Director traitent les objets VMware Cloud Director, assurent leur restauration correcte et la prise en charge des fonctionnalités spécifiques à Cloud Director.
 
-Il est recommandé d'utiliser les tâches de sauvegarde de VMware Cloud Director pour sauvegarder les machines virtuelles gérées par VMware Cloud Director. Si vous sauvegardez des machines virtuelles gérées par VMware Cloud Director à l'aide d'un travail de sauvegarde régulier, Veeam Backup & Replication effectuera une sauvegarde au niveau du serveur vCenter sous-jacent et ne capturera pas les métadonnées vApp. Par conséquent, vous ne serez pas en mesure de restaurer une machine virtuelle pleinement opérationnelle sur VMware Cloud Director.
+Il est recommandé d'utiliser les tâches de sauvegarde de VMware Cloud Director pour sauvegarder les machines virtuelles gérées par VMware Cloud Director. Si vous sauvegardez des machines virtuelles gérées par VMware Cloud Director à l'aide d'une tâche de sauvegarde régulière, Veeam Backup & Replication effectuera une sauvegarde au niveau du serveur vCenter sous-jacent et ne capturera pas les métadonnées vApp. Par conséquent, vous ne serez pas en mesure de restaurer une machine virtuelle pleinement opérationnelle sur VMware Cloud Director.
 
-#### Comment créer une tache de sauvegarde avec Veeam Data Platform ?
+#### Comment créer une tâche de sauvegarde avec Veeam Data Platform ?
 
-Vous allez créer votre premiere tache de sauvegarde depuis le plugin VCD Veeam Data Platform  :
+Vous allez créer votre premiere tâche de sauvegarde depuis le plugin VCD Veeam Data Platform  :
 
 Dans la console VCD Veeam, cliquez sur `Plus`{.action} et sélectionnez `Protection des données avec Veeam`{.action}
 
@@ -102,17 +102,17 @@ Cliquez sur `Jobs`{.action} puis sur `Create`{.action}
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation.png){.thumbnail}
 
-Dans la fenêtre qui s'ouvre, spécifiez le nom du Job, la description et la politique de rétention. Une fois les éléments définis (Job name, description, retention), cliquez sur `Next`{.action}.
+Dans la fenêtre qui s'ouvre, spécifiez le nom de la tâche de sauvegarde, la description et la politique de rétention. Une fois les éléments définis (Job name, description, retention), cliquez sur `Next`{.action}.
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_jobs.png){.thumbnail}
 
-Vous devez ensuite choisir votre machine virtuelle (VM). Pour cela, cliquez sur `Add.`{.action}
+Vous devez ensuite choisir votre machine virtuelle (VM). Pour cela, cliquez sur `Add`{.action}.
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_3.png){.thumbnail}
 
 Vous pouvez dérouler l'arborescence de votre organisation VMware Cloud Director et sélectionner votre VM.
 
-Cliquez sur `Next.`{.action}
+Cliquez sur `Next`{.action}.
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_4.png){.thumbnail}
 
@@ -135,11 +135,11 @@ Cliquez sur `Next`{.action}
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_6.png){.thumbnail}
 
-Si nécessaire, vous pouvez ajouter des options de monitoring pour vos JOBS. Cliquez enfin sur `Finish`{.action}.
+Si nécessaire, vous pouvez ajouter des options de monitoring pour vos tâches de sauvegarde. Cliquez enfin sur `Finish`{.action}.
 
 ![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_7.png){.thumbnail}
 
-Le JOB apparait dans la liste.
+La tâche de sauvegarde apparait dans la liste.
 
 ### Comment sauvegarder une machine virtuelle avec Veeam ?
 
@@ -149,7 +149,7 @@ Le JOB apparait dans la liste.
 >
 
 > [!warning]
-> Pour pouvoir ajouter un job depuis une VM (.. action -> ... Ajouter une tache à Veeam), il doit être préalablement créé.
+> Pour pouvoir ajouter une tâche de sauvegarde depuis une VM (.. action -> ... Ajouter une tâche à Veeam), il doit être préalablement créé.
 >
 
 Dans la console VMware Cloud Director, cliquez sur `Centre de données`{.action} puis sur `Machines virtuelles`{.action}.
@@ -215,5 +215,7 @@ Dans la dernière étape, cliquez sur `Finish`{.action}. Si vous le souhaitez, v
 Ce processus est simplifié grâce à VCD, Veeam et OVHcloud.
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
