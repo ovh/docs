@@ -48,10 +48,10 @@ Auf der neu geöffneten Seite wird eine Tabelle mit dem Versionsverlauf Ihrer DN
 
 > [!primary]
 >
-> Die Backups Ihrer DNS Zone unterliegen folgenden Einschränkungen:
+> Die Backups Ihrer DNS-Zone unterliegen folgenden Einschränkungen:
 >
-> - Wir führen maximal 200 Sicherungen für eine einzelne DNS-Zone.
-> - Wenn ein Backup mehr als 31 Tage alt ist, wird es automatisch gelöscht, mit Ausnahme der letzten **5 durchgeführten Backups**.
+> - Es existieren maximal 200 Sicherungen für eine DNS-Zone.
+> - Wenn ein Backup älter als 31 Tage ist, wird es automatisch gelöscht, mit Ausnahme der **letzten 5 Backups**.
 >
 
 ### Eine DNS-Zone anzeigen <a name="view"></a>
