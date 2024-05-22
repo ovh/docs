@@ -1,7 +1,7 @@
 ---
 title: 'Éditer une zone DNS OVHcloud'
 excerpt: 'Découvrez comment éditer une zone DNS OVHcloud via votre espace client'
-updated: 2024-04-12
+updated: 2024-05-22
 ---
 
 ## Objectif
@@ -24,7 +24,7 @@ Si nous reprenons l'exemple plus haut, lorsque vous tapez *mydomain.ovh*, les **
 
 ![DNS](images/dns-resolution.gif){.thumbnail}
 
-### La zone DNS 
+### La zone DNS
 
 La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enregistrements**. Ces derniers permettent de faire le lien entre votre nom de domaine et les serveurs qui hébergent vos services internet, tels que des sites web (via l'enregistrement A) ou des adresses e-mail (enregistrement MX).
 
@@ -138,7 +138,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 >> > [!warning]
 >> >
->> >  De manière générale, il est recommandé de n’utiliser qu’un ou plusieurs serveurs d’un même fournisseur e-mail dans votre zone DNS.
+>> > De manière générale, il est recommandé de n’utiliser qu’un ou plusieurs serveurs d’un même fournisseur e-mail dans votre zone DNS.
 >> > En effet, si vous disposez déjà de services e-mail chez un autre fournisseur e-mail et que vous ajoutez en parallèle (sans remplacer) les serveurs e-mail de votre nouveau fournisseur e-mail, vous risquez de recevoir aléatoirement vos e-mails chez l’un ou l’autre de vos deux fournisseurs.
 > **SPF**
 >> **S**ender **P**olicy **F**ramework <br><br>
@@ -249,7 +249,7 @@ Vous pouvez supprimer plusieurs entrées en une seule fois en les cochant depuis
 
 #### Réinitialiser la zone DNS
 
-Réinitialiser votre zone DNS permet de revenir à une configuration minimale, avec les entrées OVHcloud par défaut ou celles de vos services. Vous pouvez également pointer votre nom de domaines vers des services d'hébergement Web et e-mail personnalisés .
+Réinitialiser votre zone DNS permet de revenir à une configuration minimale, avec les entrées OVHcloud par défaut ou celles de vos services. Vous pouvez également pointer votre nom de domaine vers des services d'hébergement Web et e-mail personnalisés .
 
 > [!alert]
 >
@@ -262,7 +262,7 @@ Depuis l'onglet `Zone DNS`{.action}, cliquez sur `Réinitialiser ma zone DNS`{.a
 
 **Étape 1**
 
-Répondez à la question `Voulez-vous activer les entrées minimales lors de la réinitialisation de votre zone DNS ?`. Le principe de définir des entrées minimales dans une zone DNS est d'éviter qu'une requête vers le nom de domaine n'aboutisse pas sur une erreur.
+Répondez à la question `Voulez-vous activer les entrées minimales lors de la réinitialisation de votre zone DNS ?`. Définir des entrées minimales dans une zone DNS permet d'éviter qu'une requête vers le nom de domaine n'aboutisse pas sur une erreur.
 
 - `Oui, je veux réinitialiser ma zone DNS avec les entrées minimales`
 - `Non, mais je veux réinitialiser ma zone DNS`
@@ -275,18 +275,17 @@ Sélectionnez les deux options en cliquant sur les onglets suivants.
 
 > [!tabs]
 > **Adresse IP de votre hébergement**
->> - `Redirection`: votre nom de domaine pointera vers le serveur de redirection OVHcloud permettant d'afficher une page d'accueil OVHcloud et ainsi éviter une erreur DNS.<br>
->> - `Hébergement Web OVHcloud`: Votre nom de domaine pointera vers l'adresse IP de l'hébergement Web associé à nom de domaine <br>
+>> - `Redirection`: votre nom de domaine pointera vers le serveur de redirection OVHcloud. Cela permet d'afficher une page d'accueil OVHcloud et ainsi éviter une erreur DNS.<br>
+>> - `Hébergement Web OVHcloud`: Votre nom de domaine pointera vers l'adresse IP de l'hébergement Web associé au nom de domaine. <br>
 >> - `Personnalisé`: définissez la valeur IPv4 ([enregistrement A](#pointer-records)) de l'hébergement Web que vous souhaitez pointer. <br><br>
 >> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
 >>
 > **Adresse de votre serveur mail**
->> - `Redirection`: Votre nom de domaine pointera vers les serveurs redirections e-mails. Ce choix. Il est particulièrement utile si vous n'avez aucune offre e-mail mais que vous souhaitez renvoyer les e-mails vers une ou des adresses e-mails hors de votre nom de domaine.
->> - `Serveur E-mail OVHcloud`: à définir lorsque que vous possédez une offre e-mail mutualisée.
+>> - `Redirection`: votre nom de domaine pointera vers les serveurs de redirections e-mail. Ce choix. Il est particulièrement utile si vous n'avez aucune offre e-mail mais que vous souhaitez renvoyer les e-mails vers une ou plusieurs adresses e-mails en dehors de votre nom de domaine.<br>
+>> - `Serveur E-mail OVHcloud`: à définir lorsque que vous possédez une offre e-mail mutualisée.<br>
 >> - `Personnalisé`: définissez l'URL et la priorité du serveur e-mail ([enregistrement MX](#mail-records)) que vous souhaitez pointer.<br><br>
 >> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
 >>
-
 
 ### Le temps de propagation
 

@@ -1,7 +1,7 @@
 ---
 title: 'Editar uma zona DNS da OVHcloud'
 excerpt: 'Saiba como editar uma zona DNS da OVHcloud através da Área de Cliente'
-updated: 2024-04-12
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -71,7 +71,7 @@ Aparecerá uma tabela com um registo DNS associado ao seu domínio na OVHcloud. 
 
 Compreender os diferentes registos irá permitir-lhe perceber as alterações que irá efetuar se editar a zona DNS do seu domínio. Sugerimos que consulte a lista abaixo. Deve indicar os objetivos e as especificidades de cada registo.
 
-#### Registos de apontamento
+#### Registos de apontamento <a name="pointer-records"></a>
 
 Selecione o registo à sua escolha clicando nos separadores seguintes.
 
@@ -133,14 +133,14 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >> > Não altere, através do botão `Alterar em modo de texto`{.action}, os registos NS da sua zona DNS em benefício de servidores DNS externos à OVHcloud. Esta zona DNS funciona **apenas** com servidores DNS da OVHcloud.
 >> >
 
-#### Registos de e-mail
+#### Registos de e-mail <a name="mail-records"></a>
 
 Selecione o registo à sua escolha clicando nos separadores seguintes.
 
 > [!tabs]
 > **MX**
 >> **M**ail e**X**changer <br><br>
->>  Associe um domínio a um servidor de e-mail. Por exemplo, o endereço *10 mx1.mail.ovh.net* corresponde a um dos servidores de e-mail OVHcloud quando possui uma oferta de e-mail OVHcloud. É provável que o seu fornecedor de e-mail disponha de vários servidores de e-mail: assim, devem ser criados vários campos MX. Consulte o nosso manual "[Adicionar um campo MX à configuração do domínio](/pages/web_cloud/domains/dns_zone_mx)".
+>> Associe um domínio a um servidor de e-mail. Por exemplo, o endereço *10 mx1.mail.ovh.net* corresponde a um dos servidores de e-mail OVHcloud quando possui uma oferta de e-mail OVHcloud. É provável que o seu fornecedor de e-mail disponha de vários servidores de e-mail: assim, devem ser criados vários campos MX. Consulte o nosso manual "[Adicionar um campo MX à configuração do domínio](/pages/web_cloud/domains/dns_zone_mx)".
 >>
 >> > [!warning]
 >> >
@@ -159,7 +159,7 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
 >> Contribui para a autenticação dos e-mails em associação com os métodos SPF e/ou DKIM. Este valor ser-lhe-á dado pelo seu fornecedor de e-mail (se esta funcionalidade for proposta por este último), e será no mínimo associado a um registo SPF ou DKIM.
 
-#### Registos alargados
+#### Registos alargados <a name="extented-records"></a>
 
 Selecione o registo à sua escolha clicando nos separadores seguintes.
 
@@ -184,9 +184,10 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >> Permite listar as autoridades de certificação autorizadas a serem entregues dos certificados SSL para um domínio.
 >>
 >> > [!warning]
->> > 
->> > Se utiliza um certificado SSL Let's Encrypt com o seu domínio num alojamento partilhado OVHcloud e utiliza um registo CAA, este último impedirá a regeneração do certificado SSL Let's Encrypt.
 >> >
+>> > Se configurar uma entrada CAA para um domínio, esta configuração também será aplicada a **todos os subdomínios** desse mesmo domínio.
+>> >
+>> > Se utilizar um certificado SSL Let's Encrypt com o seu domínio num alojamento partilhado OVHcloud e um registo CAA, este último impedirá a regeneração do certificado SSL Let's Encrypt.
 >>
 > **NAPTR**
 >> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
@@ -254,27 +255,43 @@ Pode eliminar várias entradas de uma só vez, selecionando-as a partir da parte
 
 #### Reiniciar a zona DNS
 
-Reinicializar a zona DNS permite-lhe:
+Reiniciar a zona DNS permite voltar a uma configuração mínima, com as entradas da OVHcloud predefinidas ou as dos seus serviços. Também pode apontar o domínio para serviços de alojamento web e de correio eletrónico personalizados
 
-- ou voltar a uma configuração mínima com as entradas OVHcloud predefinidas.
-- voltar a uma zona DNS vazia (exceto os campos NS), para definir uma configuração manual posterior.
+> [!alert]
+>
+> Antes de reiniciar a zona DNS, certifique-se de que o seu domínio não está associado a serviços em curso de utilização, tais como um website ou endereços de e-mail.
+>
 
-No separador `Zona DNS`{.action}, clique em `Reiniciar a minha zona DNS`{.action} e siga os passos que aparecem.
+No separador "Zona DNS`{.action}", clique em "Reiniciar a minha zona DNS`{.action}" e siga os 2 passos que aparecem.
 
 ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
-Pode escolher entre:
+**Etapa 1**
 
-- `Sim, quero reiniciar a minha zona DNS com o número mínimo` de entradas. Esta opção permite-lhe dirigir o seu nome de domínio e o seu serviço de e-mail para:
-    - um dos serviços Web Cloud disponíveis na Área de Cliente OVHcloud.
-    - o serviço de reencaminhamento OVHcloud, acessível através do separador `Reencaminhamento`{.action} do seu nome de domínio nas secções `Nomes de domínio`{.action} e `Emails`{.action}.
-    - a função `Personalizada`. Introduza o campo `A` e/ou `MX` à sua escolha.
-- `Não, mas quero reiniciar a minha zona DNS`. A sua zona DNS estará vazia, com exceção das entradas NS que serão automaticamente associadas aos servidores DNS da OVHcloud da sua zona DNS.
+Responda à pergunta "Deseja ativar o número mínimo de entradas quando a zona DNS for reiniciada?" Definir entradas mínimas numa zona DNS permite evitar que um pedido para o domínio não acarrete um erro.
 
-> [!primary]
->
-> Antes de reiniciar a zona DNS, certifique-se de que o domínio não está associado a serviços em utilização, tais como um website ou endereços de e-mail.
->
+- `Sim, pretendo reiniciar a minha zona DNS com as entradas mínimas`
+- `Não, mas pretendo reiniciar a minha zona DNS`
+
+**Etapa 2**
+
+Qualquer que seja a sua escolha no passo 1, é necessário definir uma resposta quando se interroga o seu nome de domínio para evitar uma resposta DNS em erro.
+
+Selecione as duas opções clicando nos separadores seguintes.
+
+> [!tabs]
+> **Endereço IP do seu alojamento**
+>> - `Reencaminhamento`: o seu domínio apontará para o servidor de reencaminhamento OVHcloud. Isto permite apresentar uma página inicial da OVHcloud e evitar um erro DNS.<br>
+>> - `Alojamento Web OVHcloud`: O seu domínio ficará associado ao endereço IP do alojamento web associado ao domínio <br>
+>> - `Personalizado`: defina o valor IPv4 ([registo A](#pointer-records)) do alojamento web que deseja apontar. <br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
+> **Endereço do servidor de e-mail**
+>> - `Reencaminhamento`: o seu domínio irá apontar para os servidores de reencaminhamento de e-mail. Esta escolha. É particularmente útil se não tiver nenhuma oferta de e-mail mas pretender reenviar os e-mails para um ou vários endereços de e-mail fora do seu domínio.<br>
+>> - `Servidor de e-mail OVHcloud`: defina-se quando dispõe de um serviço de e-mail partilhado.<br>
+>> - `Personalizado`: defina o URL e a prioridade do servidor de e-mail ([registo MX](#mail-records)) que pretende apontar.<br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
 
 ### Tempo de propagação
 

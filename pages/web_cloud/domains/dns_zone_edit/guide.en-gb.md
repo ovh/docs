@@ -1,7 +1,7 @@
 ---
 title: 'Editing an OVHcloud DNS zone'
 excerpt: 'Find out how to edit an OVHcloud DNS zone via the OVHcloud Control Panel'
-updated: 2024-04-12
+updated: 2024-05-22
 ---
 
 ## Objective
@@ -41,7 +41,7 @@ The DNS zone for a domain name is a configuration file made up of **records**. Y
 > [!warning]
 >
 > - If your domain name does not use OVHcloud DNS servers, you will need to edit the configuration using the interface of your service provider that manages your domain name.
-> 
+>
 > - If your domain name is registered with OVHcloud, you can check if it is using our configuration. To do this, go to your [Control Panel](/links/manager), and open the `DNS servers`{.action} tab of the domain name in question.
 >
 > In both of the above cases, be careful when making your DNS server changes. The old configuration that can be applied to your domain name will no longer be active if you have not previously reconfigured and customised the new DNS zone present at OVHcloud.<br>
@@ -68,7 +68,7 @@ The table that appears will display a DNS record linked to your OVHcloud domain 
 
 By understanding what each of these records does, you will gain a better understanding of the changes you make if you edit your domain name’s DNS zone. Please refer to the list below. It lists the objectives and specificities of each registration.
 
-#### Pointing records
+#### Pointing records <a name="pointer-records"></a>
 
 Select the record you want by clicking each of the following tabs.
 
@@ -132,7 +132,7 @@ Select the record you want by clicking each of the following tabs.
 >> > Do not modify the NS records in your DNS zone using the button `Change in text format`{.action}, in favour of DNS servers external to OVHcloud. This DNS zone works **only** with OVHcloud DNS servers.
 >> >
 
-#### Email records
+#### Email records <a name="mail-records"></a>
 
 Select the record you want by clicking each of the following tabs.
 
@@ -159,7 +159,7 @@ Select the record you want by clicking each of the following tabs.
 >> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
 >> Helps authenticate emails in association with SPF and/or DKIM methods. This value will be given to you by your email provider (if this feature is offered by them), and will at least be associated with an SPF or DKIM record.
 
-#### Extended records
+#### Extended records <a name="extented-records"></a>
 
 Select the record you want by clicking each of the following tabs.
 
@@ -184,9 +184,10 @@ Select the record you want by clicking each of the following tabs.
 >> The CAA record is used to list certificate authorities authorised to deliver SSL certificates for a domain name.
 >>
 >> > [!warning]
->> > 
->> > If you use a Let's Encrypt SSL certificate with your domain on an OVHcloud shared hosting plan, and you enter a CAA record, the latter will prevent the Let's Encrypt SSL certificate from being regenerated.
 >> >
+>> > If you configure a CAA record for a domain name, this configuration will also apply to **all subdomains** of the same domain name.
+>> >
+>> > If you use a Let's Encrypt SSL certificate with your domain on an OVHcloud Web Hosting plan, and you use a CAA record, the CAA record will prevent the Let's Encrypt SSL certificate from being regenerated.
 >>
 > **NAPTR**
 >> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
@@ -256,27 +257,43 @@ You can delete several entries at once by ticking them on the left-hand side of 
 
 #### Reset the DNS zone
 
-Resetting your DNS zone allows you to:
+By resetting your DNS zone, you can revert back to a minimal configuration, with OVHcloud default records, or your services’ records. You can also point your domain name to custom web hosting and email services .
 
-- Go back to a minimum configuration with the default OVHcloud records.
-- Return to an empty DNS zone (with the exception of the NS entries), to define a subsequent manual configuration.
+> [!alert]
+>
+> Before you reset your DNS zone, ensure that your domain name is not attached to services that are in use, such as a website or email addresses.
+>
 
-In the `DNS zone`{.action} tab, click on `Reset my DNS zone`{.action}, then follow the steps in the window that appears.
+In the `DNS Zone`{.action} tab, click `Reset my DNS zone`{.action} , then follow the 2 steps that appear.
 
 ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
-You can choose between these options:
+**Step 1**
 
-- `Yes, I want to reset my DNS zone with the minimum records`. This allows you to direct your domain name and email service to:
-    - One of your Web Cloud services available in your OVHcloud Control Panel.
-    - The OVHcloud redirection service, accessible via your domain name’s `Redirection`{.action} tab in the `Domain names`{.action} and `Emails`{.action} sections.
-    - The `Custom` function. Enter the `A` and/or `MX` records of your choice.
-- `No, but I want to reset my DNS zone`. Your DNS zone will then be empty except for the NS records, which will be automatically attached to the OVHcloud DNS servers in your DNS zone.
+Answer the question `Do you want to enable the minimum records when you reset your DNS zone?`. The idea of defining minimal records in a DNS zone is to prevent a query for the domain name from leading to an error.
 
-> [!primary]
->
-> Before resetting your DNS zone, please ensure that your domain name is not attached to services that are currently in use, such as a website or email addresses.
->
+- `Yes, I want to reset my DNS zone with the minimum records`
+- `No, but I want to reset my DNS zone`
+
+**Step 2**
+
+Whichever option you choose in step 1, you will need to define a response when you query your domain name to prevent an incorrect DNS response.
+
+Select both options by clicking the following tabs.
+
+> [!tabs]
+> **IP address of your hosting**
+>> - `Redirection`: your domain name will point to the OVHcloud redirection server, which can be used to display an OVHcloud homepage, and thus avoid a DNS error.<br>
+>> - `OVHcloud Web Hosting`: Your domain name will point to the IP address of the Web Hosting plan associated with the domain name.<br>
+>> - `Custom`: Set the IPv4 value ([A record](#pointer-records)) of the Web Hosting plan you want to point to. <br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
+> **Address of your mail server**
+>> - `Redirection`: your domain name will point to the email redirection servers. This choice. This is particularly useful if you do not have any email solutions, but would like to send emails to one or more email addresses outside of your domain name.<br>
+>> - `OVHcloud email server`: to be defined when you have a shared email solution.<br>
+>> - `Custom`: Define the URL and priority of the email server ([MX record](#mail-records)) you want to point to.<br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
 
 ### Propagation time
 
