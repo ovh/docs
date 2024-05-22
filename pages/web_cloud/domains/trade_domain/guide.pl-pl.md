@@ -18,6 +18,9 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 >W tym celu należy [zmienić kontakty](/pages/account_and_service_management/account_information/managing_contacts) domeny.
 >
 > Jeśli potrzebujesz dokonać zmiany właściciela i kontaktu dla tej samej nazwy domeny, nie ma preferencyjnej kolejności. Jednak to kontakt administratora jest w stanie zainicjować te operacje. Te dwie zmiany są zatem wprowadzane w obszarze klienta kontaktu administratora nazwy domeny.
+>
+> Dane właściciela domeny mają wartość wyłącznie administracyjną i są całkowicie niezależne od informacji, które mogą być powiązane z identyfikatorem klienta OVHcloud. W związku z tym osoba fizyczna lub organizacja (firma, stowarzyszenie, etc.) zadeklarowana wyłącznie jako właściciel domeny, nie ma dostępu do Panelu klienta OVHcloud.
+>
 
 **Dowiedz się, jak zmienić właściciela domeny**
 
