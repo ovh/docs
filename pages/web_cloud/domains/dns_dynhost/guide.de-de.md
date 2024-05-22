@@ -76,19 +76,14 @@ Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{
 
 ### Schritt 2: Dynamischen DNS-Eintrag (DynHost) erstellen <a name="step2"></a>
 
-Im zweiten Schritt erstellen Sie den DNS-Eintrag, der dynamisch aktualisiert werden soll. Zur Erinnerung: Dieser darf nicht als A-Eintrag in der OVHcloud DNS-Zone des Domainnamens vorhanden sein. Um den Eintrag zu überprüfen und wenn nötig zu löschen, können Sie die Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“ verwenden.
+Im zweiten Schritt erstellen Sie den DNS-Eintrag, der dynamisch aktualisiert werden soll. Zur Erinnerung: Dieser darf nicht als A- oder AAAA-Eintrag in der OVHcloud DNS-Zone des Domainnamens vorhanden sein. Um den Eintrag zu überprüfen und wenn nötig zu löschen, können Sie die Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“ verwenden.
 
 Gehen Sie für die Erstellung des DynHost-Eintrags nun zurück auf den Tab `DynHost`{.action} und klicken Sie auf den Button `DynHost hinzufügen`{.action}. Geben Sie im angezeigten Fenster die notwendigen Informationen ein.
 
 |Information|Beschreibung|
 |---|---|
 |Subdomain|Geben Sie die Subdomain ein, deren DNS-Eintrag dynamisch aktualisiert werden soll. Diese Subdomain muss der bei der Erstellung des DynHost-Benutzers angegebenen Subdomain entsprechen. **Wenn Sie einen DynHost direkt für Ihren Domainnamen einrichten möchten, lassen Sie dieses Feld leer**|
-|Ziel-IP|Geben Sie die IP-Adresse (nur IPv4) ein, die derzeit für den DNS-Eintrag verwendet wird. Dies ist in der Regel die öffentliche IP-Adresse Ihrer Internet-Zugangsbox oder Ihres selbst gehosteten Servers. Nach dem DynHost-Prinzip wird diese Adresse künftig automatisch aktualisiert.|
-
-> [!primary]
->
-> Für die Einrichtung eines DynHost kann nur eine **IPv4**-Adresse verwendet werden. **IPv6** ist derzeit nicht verfügbar.
->
+|Ziel-IP|Geben Sie die IP-Adresse (IPv4 oder IPv6) ein, die derzeit für den DNS-Eintrag verwendet wird. Dies ist in der Regel die öffentliche IP-Adresse Ihrer Internet-Zugangsbox oder Ihres selbst gehosteten Servers. Nach dem DynHost-Prinzip wird diese Adresse künftig automatisch aktualisiert.|
 
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{.action}. Der DynHost-Eintrag erscheint dann in der Tabelle auf der aktuell geöffneten Seite. Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Einträge erstellen möchten.
 
@@ -120,7 +115,7 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |Information|Ersetzen mit|
 |---|---|
 |$HOSTNAME|Subdomain, die von der Aktualisierung betroffen ist|
-|$IP|Neue Ziel-IPv4-Adresse|
+|$IP|Die neue IPv4- oder IPv6-Zieladresse.|
 
 Um zu überprüfen, ob die Ziel-IP aktualisiert wurde, gehen Sie in Ihrem Kundencenter zum Tab `DynHost`{.action}. Überprüfen Sie dort in der Spalte `Ziel`{.action} die angezeigte IP-Adresse.
 
@@ -128,7 +123,7 @@ Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Loggen Sie sich hie
 
 > [!warning]
 >
-> Jede Änderung der aktiven DNS Zone eines Domainnamenns kann zu einer Propagationszeit von 4 bis 24 Stunden führen.
+> Jede Änderung der aktiven DNS-Zone einer Domain über DynDNS kann zu einer Verzögerung von mehreren Minuten bei der Propagation der Aktualisierung führen.
 >
 
 ![dynhost](images/target.png){.thumbnail}
