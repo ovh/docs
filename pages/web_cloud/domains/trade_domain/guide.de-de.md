@@ -19,7 +19,7 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 >
 > Wenn Sie einen Inhaber- und Kontaktwechsel für denselben Domainnamen vornehmen müssen, gibt es dabei keine bevorzugte Reihenfolge. Es ist jedoch der Administrator-Kontakt, der diese Vorgänge einleiten kann. Diese beiden Änderungen werden daher im Kundencenter des Administrator-Kontakts für den Domainnamen vorgenommen.
 >
-> Die Angaben zum Inhaber eines Domainnamens haben lediglich administrativen Wert und sind völlig unabhängig von den Angaben, die mit einer OVHcloud Kundenkennung verbunden werden können. Eine Einzelperson oder eine Organisation (Unternehmen, Verein usw.), die bzw. die nur als Inhaber eines Domainnamens deklariert ist, hat daher keinen Zugriff auf das OVHcloud Kundencenter.
+> Die Angaben zum Inhaber eines Domainnamens haben lediglich administrativen Wert und sind unabhängig von den Kontaktinformationen, die einer OVHcloud Kundenkennung entsprechen. Eine Einzelperson oder eine Organisation (Unternehmen, Verein, etc.), die nur als Inhaber eines Domainnamens deklariert ist, hat daher keinen Zugriff auf den Domainnamen im OVHcloud Kundencenter.
 >
 
 **Diese Anleitung erklärt die notwendigen Schritte zum Inhaberwechsel eines Domainnamens.**
