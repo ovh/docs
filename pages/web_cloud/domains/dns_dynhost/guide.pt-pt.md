@@ -35,7 +35,7 @@ Por exemplo, o **DynHost** pode ser utilizado se *autoidentificar* (nas instala�
 
 - Ter acesso à secção de gestão do domínio na [Área de Cliente OVHcloud](/links/manager){.external}
 - Utilizar a configuração da OVHcloud (os servidores DNS) para o domínio em questão.
-- O registo DynHost que está prestes a criar não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A".
+- O registo DynHost que está prestes a criar não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A" ou "AAAA".
 
 > [!warning]
 >
@@ -78,23 +78,18 @@ Depois de preencher os campos, clique no botão `Validar`{.action}. O identifica
 
 ### Etapa 2: criar o registo DNS dinâmico (DynHost) <a name="step2"></a>
 
-A segunda etapa consiste em criar o registo DNS que deverá ser atualizado de forma dinâmica. Relembramos que este não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A". Para o verificar e, se necessário, eliminá-lo, consulte o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}".
+A segunda etapa consiste em criar o registo DNS que deverá ser atualizado de forma dinâmica. Relembramos que este não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A" ou "AAAA". Para o verificar e, se necessário, eliminá-lo, consulte o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}".
 
 Quando estiver pronto para criar o registo DynHost, clique no separador `DynHost`{.action} e, em seguida, no botão `Adicionar um DynHost`{.action}. Na nova janela, preencha as informações necessárias:
 
 |Informações|Descrição|
 |---|---|
 |Subdomínio|Indique o subdomínio cujo registo DNS deverá ser atualizado de forma dinâmica. Este subdomínio deve corresponder ao domínio indicado durante a criação do utilizador DynHost. **Se desejar implementar um DynHost diretamente para o seu domínio, deixe este formulário em branco**|
-|IP de destino|Introduza o endereço IP (apenas IPv4) que deve ser atualmente utilizado pelo registo DNS. Trata-se geralmente do endereço IP público do seu *box* Internet ou do seu servidor alojado automaticamente. De acordo com o princípio do DynHost, esta será atualizada automaticamente.|
-
-> [!primary]
->
-> Apenas uma **IPv4** pode ser utilizada para a implementação de um DynHost. Os **IPv6* estão indisponíveis.
->
-
-Depois de preencher os campos, clique no botão `Validar`{.action}. O registo DynHost aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de mais registos DynHost.
+|IP de destino|Introduza o endereço IP (apenas IPv4 ou IPv6) que deve ser atualmente utilizado pelo registo DNS. Trata-se geralmente do endereço IP público do seu *box* Internet ou do seu servidor alojado automaticamente. De acordo com o princípio do DynHost, esta será atualizada automaticamente.|
 
 ![dynhost](images/create-a-dynhost.png){.thumbnail}
+
+Depois de preencher os campos, clique no botão `Validar`{.action}. O registo DynHost aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de mais registos DynHost.
 
 ### Etapa 3: automatizar a alteração do DynHost
 
@@ -122,13 +117,13 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |Informações|Substituir por|
 |---|---|
 |$HOSTNAME|O subdomínio abrangido pela alteração.|
-|$IP|O novo endereço IPv4 de destino.|
+|$IP|O novo endereço IPv4 ou IPv6 de destino.|
 
 Pode verificar se o endereço IP de destino foi atualizado. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web cloud`{.action}. Na coluna da esquerda, clique no separador `Nomes de domínio`{.action} e selecione o domínio em causa. Na página que aparece, clique no separador `DynHost`{.action}. Verifique o endereço de IP que aparece na coluna `Alvo`{.action}.
 
 > [!warning]
 >
-> Qualquer alteração na zona DNS ativa de um nome de domínio pode causar um atraso de 4 a 24 horas na propagação da atualização.
+> Qualquer alteração na zona DNS ativa de um domínio através do DynDNS pode provocar um atraso de propagação da atualização de vários minutos.
 >
 
 ![dynhost](images/target.png){.thumbnail}
