@@ -55,10 +55,10 @@ Une fois connecté à l'espace client OVHcloud, cliquez sur l'onglet <code class
 
 Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez accéder à l'interface Web NSX-T : 
 </br></br>
-<code class="action">VMware</code> > <code class="action">PCC-XX..</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
+<code class="action">VMware</code> > <code class="action">PCC-XXX.XXX.XXX.XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_3.png" loading="lazy"></p>
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_6.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_13.png" loading="lazy"></p>
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_1.png" loading="lazy"></p>
 
 </details>
@@ -68,7 +68,7 @@ Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez acc
 <details>
 <summary>Comment ajouter les droits pour votre utilisateur ?</summary>
 
-Cliquez sur : <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code>.
+Cliquez sur : <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code>.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_7.png" loading="lazy"></p>
 
@@ -80,7 +80,7 @@ Cliquez sur : <code class="action">VMware</code> > <code class="action">PCC-XX-X
 <details>
 <summary>Comment ajoutez les droits aux Datacentres ?</summary>
 
-Il ne vous reste plus que à modifier les droits de chaque Datacenter souhaité en cliquant sur : <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code> > <code class="action">Utilisateur</code> > <code class="action">Voir / Modifier les droits par DC</code> > <code class="action">Modifier</code>.
+Il ne vous reste plus que à modifier les droits de chaque Datacenter souhaité en cliquant sur : <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Voir / Modifier les droits par DC</code> > <code class="action">Modifier</code>.
 </br></br>
 Une fenêtre s'ouvre alors. Choisissez les droits nécessaires parmi les 3 sections principales > <code class="action">Accès Vsphere</code> / <code class="action">Accès au vmNetwork</code> / <code class="action">Accès aux V(x)Lans</code>.
 </br></br>
@@ -101,9 +101,9 @@ Si vous voulez faire des modifications dans l'interface Web NSX-T, des droits su
 <details>
 <summary>Comment accéder à l'interface Web NSX-T ?</summary>
 
-Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code>.
+Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code>.
 </br></br>
-- Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XX-XX-XX-XX > Remplacez PCC-XX-XX-XX-XX par le nom de votre organisation privée PCC.
+- Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX-XXX-XXX-XXX > Remplacez PCC-XXX-XXX-XXX-XXX par le nom de votre service PCC.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_9.png" loading="lazy"></p>
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_10.png" loading="lazy"></p>
@@ -111,6 +111,45 @@ Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_12.png" loading="lazy"></p>
 
 </details>
+
+### Step 6 - Informations utiles
+
+Vous pouvez vérifier si NSX-T est activé sur votre Datacenter. Vous pouvez également retrouver votre URL NSX-T et sa version :
+
+#### Via OVHcloud API :
+
+> [!api]
+>
+> @api {v1} GET /dedicatedCloud/{serviceName}/nsxt
+
+> **Paramètres:**
+>
+> serviceName: La référence de votre PCC `pcc-XX-XX-XX-XX`.
+>
+
+RETOUR :
+
+```shell
+{
+  "version": "4.1.1.0.0-22224312",
+  "state": "enabled",
+  "url": "https://nsxt.pcc-XX-X-X-X.ovh.X",
+  "datacentersState": [
+    {
+      "id": 1542,
+      "state": "disabled"
+    },
+    {
+      "state": "enabled",
+      "id": 1345
+    }
+  ]
+}
+```
+
+> [!primary]
+>
+> Retrouvez plus d’informations sur l’API OVHcloud dans notre guide : ["Démarrer avec l’API OVHcloud".](/pages/manage_and_operate/api/first-steps)
 
 ## Aller plus loin
 
