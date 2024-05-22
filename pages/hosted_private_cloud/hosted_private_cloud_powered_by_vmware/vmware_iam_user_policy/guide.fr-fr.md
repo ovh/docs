@@ -33,9 +33,9 @@ Cliquez sur le bouton `...`{.action} à droite de la politique IAM concenée pui
 
 Renseignez alors l'identité souhaitée. Il peut s'agir d'utilisateurs, d'un NIC, d'une adresse e-mail, de groupes d'utilisateurs :
 
-Les utilisateurs disponibles apparaitront automatiquement s'ils existent.
+Uniquement les Groupes IAM (et non les groupes IAM Vsphere) apparaisse automatiquement, attention à bien copier-coller votre choix sans fautes.
 
-Validez votre choix en cliquant sur `Ajouter`{.action}.
+Validez votre choix en cliquant sur `Ajouter`{.action}
 
 ![IAM user policy](images/iam_user_policy_3.png){.thumbnail}
 
