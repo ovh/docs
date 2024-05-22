@@ -18,6 +18,9 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 >Per farlo, devi [modificare i contatti](/pages/account_and_service_management/account_information/managing_contacts) del dominio.
 >
 > Se devi effettuare un cambio di titolare e un cambio di contatto per lo stesso nome a dominio, non c'è ordine preferenziale. Tuttavia, è il contatto dell'amministratore che può avviare queste operazioni. Queste due modifiche vengono quindi effettuate nell'area clienti del contatto amministratore del nome a dominio.
+>
+> Le informazioni relative al proprietario di un dominio hanno esclusivamente un valore amministrativo e sono totalmente indipendenti dalle informazioni che possono essere associate a un identificativo cliente OVHcloud. Di conseguenza, un privato o un'organizzazione (società, associazione, ecc...) dichiarati esclusivamente come proprietari di un dominio, non hanno accesso allo Spazio Cliente OVHcloud.
+>
 
 **Questa guida ti mostra come cambiare il proprietario di un dominio**
 
