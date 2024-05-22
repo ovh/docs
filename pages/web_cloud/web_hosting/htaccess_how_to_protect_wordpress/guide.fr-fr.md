@@ -141,7 +141,8 @@ Si vous avez identifié une adresse IP malveillante, voici la ligne à renseigne
 >>
 >>```bash
 >> <Limit GET POST>
->>   order allow,deny deny from 203.0.113.0
+>>   order allow,deny 
+>>   deny from 203.0.113.0
 >>   allow from all
 >> </Limit>
 >>```
@@ -152,7 +153,8 @@ Si vous avez identifié une adresse IP malveillante, voici la ligne à renseigne
 >>
 >>```bash
 >> <Limit GET POST>
->>   order allow,deny deny from 2001:db8:1:1b00:203:0:113:0
+>>   order allow,deny 
+>>   deny from 2001:db8:1:1b00:203:0:113:0
 >>   allow from all
 >> </Limit>
 >>```
@@ -171,7 +173,8 @@ Le répertoire **wp-admin** permet de vous connecter à votre interface d'admini
 >>
 >>```bash
 >> <Limit GET POST PUT>
->>   order deny,allow deny from all
+>>   order deny,allow 
+>>   deny from all
 >>   allow from 203.0.113.0
 >>   allow from 203.0.113.1
 >> </Limit>
@@ -183,7 +186,8 @@ Le répertoire **wp-admin** permet de vous connecter à votre interface d'admini
 >>
 >>```bash
 >> <Limit GET POST PUT>
->>   order deny,allow deny from all
+>>   order deny,allow 
+>>   deny from all
 >>   allow from 2001:db8:1:1b00:203:0:113:0
 >>   allow from 2001:db8:1:1b00:203:0:113:1
 >> </Limit>
