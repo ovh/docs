@@ -51,7 +51,7 @@ Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique 
 > Les sauvegardes de votre zone DNS sont soumises aux limitations suivantes :
 >
 > - Nous conservons au maximum 200 sauvegardes pour une même zone DNS.
-> - Dès qu'une sauvegarde a plus de 31 jours, celle-ci est automatiquement supprimée à l'exception des **5 sauvegardes les plus récentes** effectuées.
+> - Dès qu'une sauvegarde a plus de 31 jours, celle-ci est automatiquement supprimée, à l'exception des **5 sauvegardes les plus récentes** effectuées.
 >
 
 ### Visualiser une zone DNS <a name="view"></a>
