@@ -151,7 +151,7 @@ Jeśli zidentyfikowałeś złośliwy adres IP, w pliku **.htaccess**wpisz poniż
 >> </Limit>
 >>```
 >>
->> Dans cet exemple, `203.0.113.0` désigne l'adresse IPv4 à bloquer.
+>> W tym przykładzie `203.0.113.0` oznacza adres IPv4, który ma zostać zablokowany.
 >>
 > **IPv6**
 >>
@@ -163,10 +163,8 @@ Jeśli zidentyfikowałeś złośliwy adres IP, w pliku **.htaccess**wpisz poniż
 >> </Limit>
 >>```
 >>
->> Dans cet exemple, `2001:db8:1:1b00:203:0:113:0` désigne l'adresse IPv6 à bloquer.
+>> W tym przykładzie `2001:db8:1:1b00:203:0:113:0` oznacza adres IPv6, który ma zostać zablokowany.
 >>
-
-W tym przykładzie `203.0.113.0` oznacza adres IP, który ma zostać zablokowany.
 
 Aby uzyskać więcej informacji na ten temat, zapoznaj się z naszym przewodnikiem dotyczącym ["ograniczenia dostępu przez IP poprzez plik .htaccess"](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -186,7 +184,7 @@ Katalog **wp-admin** pozwala na połączenie z Twoim interfejsem administracyjny
 >> </Limit>
 >>```
 >>
->> Dans cet exemple, seules les adresses IPv4 `203.0.113.0` et `203.0.113.1` sont autorisées à accéder au répertoire dans lequel se trouve le fichier .htaccess.
+>> W tym przykładzie tylko adresy IPv4 `203.0.113.0` i `203.0.113.1` są autoryzowane do dostępu do katalogu, w którym znajduje się plik .htaccess.
 >>
 > **IPv6**
 >>
@@ -199,7 +197,7 @@ Katalog **wp-admin** pozwala na połączenie z Twoim interfejsem administracyjny
 >> </Limit>
 >>```
 >>
->> Dans cet exemple, seules les adresses IPv6 `2001:db8:1:1b00:203:0:113:0` et `2001:db8:1:1b00:203:0:113:1` sont autorisées à accéder au répertoire dans lequel se trouve le fichier .htaccess.
+>> W tym przykładzie tylko adresy IPv6 `2001:db8:1:1b00:203:0:113:0` i `2001:db8:1:1b00:203:0:113:1` są autoryzowane do dostępu do katalogu, w którym znajduje się plik .htaccess.
 
 ### Ważne informacje
 
