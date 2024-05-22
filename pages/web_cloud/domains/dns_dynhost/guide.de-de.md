@@ -33,7 +33,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 - Sie haben über Ihr [OVHcloud Kundencenter](/links/manager){.external} Zugriff auf die Verwaltung des Domainnamens.
 - Der Domainname verwendet OVHcloud DNS-Server als zuständige Namensserver.
-- Der DynHost-Eintrag, den Sie erstellen möchten, darf noch nicht als "A"-Eintrag in der DNS-Zone Ihres Domainnamens bei OVHcloud vorhanden sein.
+- Der DynHost-Eintrag, den Sie erstellen möchten, darf noch nicht als A- oder AAAA-Eintrag in der DNS-Zone Ihres Domainnamens bei OVHcloud vorhanden sein.
 
 > [!warning]
 >
