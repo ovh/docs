@@ -1,7 +1,7 @@
 ---
 title: "How to enable NSX-T in a VMware on OVHcloud Hosted Private Cloud"
 excerpt: "Find out how to add user and Datacenter rights for NSX-T"
-updated: 2024-05-16
+updated: 2024-05-22
 ---
 
 <style>
