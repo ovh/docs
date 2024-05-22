@@ -50,6 +50,14 @@ Se abrirá una nueva página en la que podrá consultar el historial de copias d
 - [Restaurar una zona DNS](#restore)
 - [Comparar dos zonas DNS](#compare)
 
+> [!primary]
+>
+> Las copias de seguridad de la zona DNS están sujetas a las siguientes limitaciones:
+>
+> - Conservamos un máximo de 200 copias de seguridad para una misma zona DNS.
+> - Cuando una copia de seguridad tiene más de 31 días, se elimina automáticamente, a excepción de las **5 copias de seguridad más recientes** realizadas.
+>
+
 ### Ver una zona DNS <a name="view"></a>
 
 Para ver la zona DNS que desea ver, identifique la fila correspondiente en la tabla y haga clic en el icono de la columna `Ver`{.action}.
