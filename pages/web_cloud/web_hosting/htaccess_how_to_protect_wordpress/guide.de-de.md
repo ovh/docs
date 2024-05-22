@@ -28,7 +28,7 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 **.htaccess**-Dateien können mit Texteditoren erstellt und bearbeitet werden, zum Beispiel:
 
 - [Notepad](https://support.microsoft.com/de-de/windows/hilfe-in-windows-editor-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} in Windows
-- [TextEdit](https://support.apple.com/de-de/guide/textedit/welcome/mac){.external} in macOS 
+- [TextEdit](https://support.apple.com/de-de/guide/textedit/welcome/mac){.external} in macOS
 - [Notepad++](https://notepad-plus-plus.org/){.external}
 
 > [!primary]

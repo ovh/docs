@@ -29,7 +29,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 Los archivos **.htaccess** se pueden crear y modificar con editores de texto como:
 
 - [Bloc de notas](https://support.microsoft.com/es-es/windows/ayuda-en-el-bloc-de-notas-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} de Windows;
-- [TextEdit](https://support.apple.com/es-es/guide/textedit/welcome/mac){.external} en macOS 
+- [TextEdit](https://support.apple.com/es-es/guide/textedit/welcome/mac){.external} en macOS;
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
 
 > [!primary]

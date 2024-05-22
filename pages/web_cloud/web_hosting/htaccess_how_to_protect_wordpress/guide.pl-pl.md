@@ -15,7 +15,7 @@ Tutorial wyjaśnia, jak skonfigurować niektóre funkcjonalności hostingu za po
 > [!warning]
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
-> 
+>
 > Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS WordPress](https://wordpress.com/support/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
 >
 
@@ -29,7 +29,7 @@ Tutorial wyjaśnia, jak skonfigurować niektóre funkcjonalności hostingu za po
 Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tekstu, takich jak:
 
 - [Notatnik](https://support.microsoft.com/pl-pl/windows/pomoc-w-aplikacji-notatnik-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} systemu Windows;
-- [TextEdit](https://support.apple.com/pl-pl/guide/textedit/welcome/mac){.external} na macOS; 
+- [TextEdit](https://support.apple.com/pl-pl/guide/textedit/welcome/mac){.external} na macOS;
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
 
 > [!primary]

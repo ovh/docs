@@ -28,8 +28,8 @@ Questa guida ti mostra come configurare alcune funzionalità del tuo hosting Web
 
 I file **.htaccess** possono essere creati e modificati con editor di testo come:
 
-- [Blocco note](https://support.microsoft.com/it-it/windows/assistenza-per-blocco-note-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} di Windows
-- [TextEdit](https://support.apple.com/it-it/guide/textedit/welcome/mac){.external} su macOS 
+- [Blocco note](https://support.microsoft.com/it-it/windows/assistenza-per-blocco-note-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} di Windows;
+- [TextEdit](https://support.apple.com/it-it/guide/textedit/welcome/mac){.external} su macOS;
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
 
 > [!primary]
