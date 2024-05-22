@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja i korzystanie z trybu Rescue"
 excerpt: "Dowiedz się, jak używać trybu Rescue OVHcloud do rozwiązywania problemów z serwerem dedykowanym"
-updated: 2024-05-15
+updated: 2024-05-21
 ---
 
 > [!primary]
@@ -74,7 +74,9 @@ Dane do logowania będą domyślnie wysyłane na główny adres e-mail Twojego k
 
 ### Rescue Windows
 
-W przypadku serwerów z systemem operacyjnym Windows, poza trybem `rescue-customer`{.action}, możesz wybrać opcję `WinRescue`{.action} (patrz [sekcja przewodnika poniżej](#windowsrescue)). W przypadku tego typu trybu Rescue dostępne jest wyłącznie uwierzytelnianie za pomocą hasła.
+W przypadku serwerów z systemem operacyjnym Windows zapoznaj się z [przewodnikiem dedykowanym](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+Opcja `WinRescue`{.action} może być również zaproponowana w zależności od serwera. Aby uzyskać więcej informacji na temat tego trybu, zapoznaj się z [sekcją przewodnika poniżej](#windowsrescue)). W przypadku tego typu trybu Rescue dostępne jest wyłącznie uwierzytelnianie za pomocą hasła.
 
 Jeśli nie chcesz, aby dane do logowania były wysyłane na główny adres Twojego konta OVHcloud, **nie**, określ inny adres e-mail.
 
@@ -203,7 +205,9 @@ Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruch
 
 ### Windows <a name="windowsrescue"></a>
 
-#### Korzystanie z narzędzi WinRescue
+W przypadku serwerów z systemem operacyjnym Windows zapoznaj się z [przewodnikiem dedykowanym](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+#### Korzystanie z narzędzi WinRescue (przestarzały)
 
 Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](/links/manager). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
 

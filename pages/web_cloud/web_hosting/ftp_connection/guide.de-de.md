@@ -1,7 +1,7 @@
 ---
 title: "Mit dem FTP-Speicherplatz eines Webhostings verbinden"
 excerpt: "Erfahren Sie hier, wie Sie sich im FTP-Speicherplatz Ihres OVHcloud Webhostings einloggen"
-updated: 2023-05-31
+updated: 2024-05-20
 ---
 
 > [!primary]
@@ -107,7 +107,7 @@ Geben Sie auf der neu geöffneten Seite Ihre FTP-Kennung und das zugehörige Pas
 
 Nachdem Sie zuvor das FTP-Programm Ihrer Wahl auf Ihrem Computer installiert haben (z.B. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) oder [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac), starten Sie es. 
 
-Geben Sie in den dafür vorgesehenen Feldern die Verbindungsdaten ein. 
+Geben Sie in den dafür vorgesehenen Feldern die Verbindungsdaten ein.
 
 > [!warning]
 >
@@ -146,10 +146,13 @@ Sobald die SSH-Verbindung hergestellt ist, gibt es je nach gewählter Methode zw
 Verwenden Sie in der Kommandozeile folgende Syntax:
 
 ```bash
-ssh sshlogin@sshserver -p connectionport
+ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
-Ersetzen Sie die Elemente `sshlogin`, `sshserver` und `connectionport` mit Ihren eigenen Daten. 
+Ersetzen Sie im obigen Befehl diese Werte:
+
+- `sshlogin` mit dem in [Schritt 2.2](#ftpsoftware) beschriebenen FTP-Haupt-Login (oder einem FTP-Login bei SSH-Zugang)
+- `XXX` mit der Nummer des Clusters, auf dem sich Ihr Webhosting befindet.
 
 Anschließend werden Sie aufgefordert, das Passwort des SSH-Benutzers einzugeben.
 

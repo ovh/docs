@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie strefy DNS OVHcloud dla domeny'
 excerpt: 'Dowiedz się, jak utworzyć strefę DNS w OVHcloud dla Twojej domeny w Panelu klienta'
-updated: 2024-03-11
+updated: 2024-05-16
 ---
 
 > [!primary]
@@ -116,6 +116,11 @@ Po uzyskaniu informacji o domenie **modyfikuj serwery DNS Twojej domeny w interf
 > [!primary]
 >
 > Przypominamy, że przed zmianą **serwerów DNS** zadeklarowanych u Twojej domeny sprawdź, czy konfiguracja nowej strefy DNS odpowiada Twoim oczekiwaniom.
+>
+
+> [!success]
+>
+> Jeśli chcesz spersonalizować nazwy serwerów DNS powiązanych z aktywną strefą DNS Twojej domeny, zapoznaj się z naszym przewodnikiem "[Personalizacja serwerów DNS domeny (Glue Records)](/pages/web_cloud/domains/glue_registry)".
 >
 
 ## Sprawdź również

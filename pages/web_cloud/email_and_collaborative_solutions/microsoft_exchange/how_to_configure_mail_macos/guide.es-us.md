@@ -1,7 +1,17 @@
 ---
-title: Configurar una cuenta Exchange en Mail de macOS
-updated: 2021-12-28
+Title: Exchange - Configurar una cuenta de correo en Mail de macOS
+excerpt: Cómo configurar una cuenta Exchange en Mail de macOS
+updated: 2024-04-16
 ---
+
+<style>
+.w-400 {
+max-width:400px!importante;
+}
+.h-600 {
+max-height:600px!importante;
+}
+</style>
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
@@ -15,31 +25,57 @@ Es posible configurar sus cuentas Exchange en el cliente de correo electrónico 
 
 > [!warning]
 >
-> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
-> 
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado "Más información" de esta guía.
-> 
+> OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
+>
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+>
 
 ## Requisitos
 
-- Disponer de una dirección de correo [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/).
+- Disponer de una dirección de correo [Exchange](/links/web/emails-hosted-exchange).
 - Tener el programa Mail instalado en su Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
- 
+
 ## Procedimiento
 
-### Añadir la cuenta
+### Añadir la cuenta <a name="addaccount"></a>
 
-- **En la primera ejecución de la aplicación**: se le mostrará directamente un asistente de configuración, que le pedirá que elija el tipo de cuenta.
+> [!primary]
+>
+> En nuestro ejemplo, utilizamos la mención servidor : ex**?**.mail.ovh.net. Deberá sustituir el «?» por el número que designa el servidor de su servicio Exchange.
+>
+> Puede consultar esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y luego `Microsoft`{.action}.
+> Haga clic en `Exchange`{.action} y seleccione la plataforma Exchange deseada. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información general`{.action}.
+>
 
-- **Si ya ha configurado** una cuenta: haga clic en `Mail`{.action} en el menú superior y seleccione `Cuentas`{.action}.
+- **La primera vez que inicie la aplicación**, aparecerá un asistente de configuración que le pedirá que seleccione su tipo de cuenta.
 
-| | |
-|---|---|
-|![mailmac](images/mail-mac-exchange01.png){.thumbnail}|Seleccione `Exchange`{.action}|
-|Introduzca el **Nombre** de su cuenta e-mail y su **dirección de correo electrónico** y haga clic en `Conectarse`{.action}|![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
-|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|En la siguiente ventana, haga clic en `Configuración manual`{.action}: <br>- Defina el **Nombre** que se mostrará en la interfaz de navegación <br>- Deje su **dirección de correo electrónico**<br>- Deje su **contraseña** ya introducida <br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
-|Además de los mensajes de correo, puede seleccionar otras funcionalidades Exchange que quiera gestionar desde su Mac.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
+- **Si ya tiene una cuenta configurada**, haga clic en `Mail`{.action} en la barra de menús de la parte superior de la pantalla y luego en `Cuentas`{.action}.
+
+> [!tabs]
+> **Paso 1**
+>> Seleccione `Exchange`{.action}<br><br>
+>>![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
+>>>
+> **Paso 2**
+>> Introduzca el **Nombre** de su cuenta de correo electrónico y su **Dirección de correo electrónico** y haga clic en `Iniciar sesión`{.action} <br><br>
+>>![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
+>>>
+> **Paso 3**
+>> En la siguiente ventana, haga clic en `Configuración manual`{.action}: <br><br>- Defina el **Nombre** que se mostrará en la interfaz de navegación <br>- Deje su **dirección de correo electrónico**<br>- Deje su **Contraseña** introducida <br><br>Para finalizar la configuración, haga clic en `Conectar`{.action} <br><br>
+>>![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
+>>>
+> **Paso 4**
+>> Escriba: <br><br>- Dirección de correo electrónico: deje su dirección de correo electrónico completa<br>- Nombre de usuario: deje su dirección de correo electrónico completa <br>- Contraseña: deje su **contraseña**<br> - URL interna: **ex?.mail.ovh.net** (sustituya el **?** por [el número de su servidor Exchange](#addaccount))<br>- URL externa: **ex?.mail.ovh.net** (sustituya el **?*** por [el número de su servidor Exchange](#addaccount))<br><br>
+>>>
+>> > [!warning]
+>>>
+>> > Es normal que aparezca el mensaje en rojo «**No se puede comprobar el nombre o la contraseña de la cuenta**» la primera vez que aparece la ventana. Sin embargo, si este mensaje persiste después de la validación, significa que la información introducida es incorrecta.<br><br>
+>>>
+>>![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
+>>>
+> **Paso 5**
+>> Además de sus mensajes de correo, puede seleccionar otras funcionalidades Exchange que desea gestionar desde su Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Utilizar la dirección de correo
 
@@ -55,11 +91,17 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 
 Si su cuenta de correo ya está configurada y debe acceder a los parámetros de la cuenta para modificarlos:
 
-- En la parte superior de la pantalla, haga clic en `Correo electrónico`{.action} y seleccione `Preferencias`{.action}.
-- Seleccione la cuenta correspondiente en la columna de la izquierda y haga clic en `Ajustes del servidor`{.action}.
+- Haga clic en `Mail`{.action} en la barra de menú de la parte superior de la pantalla y luego en `Preferencias...`{.action} **o** `Ajustes...`{.action}, según su versión de macOS.
+- En la pestaña `Cuentas`{.action}, seleccione la cuenta en la columna izquierda y haga clic en `Ajustes del servidor`{.action}.
 
 ![mailmac](images/mail-mac-exchange05.png){.thumbnail}
 
 ## Más información
-  
+
+[FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+
+[Configurar una cuenta Email Pro en Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
+
+[Configurar una cuenta MX plan en Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

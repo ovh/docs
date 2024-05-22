@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Utiliser S3 Object Storage avec Rclone
 excerpt: Découvrez comment configurer Rclone afin de synchroniser vos fichiers vers et depuis S3 Object Storage
-updated: 2022-01-03
+updated: 2024-05-20
 ---
 
 ## Objectif
@@ -41,7 +41,7 @@ provider = Other
 env_auth = false
 access_key_id = <access_key>
 secret_access_key = <secret_key>
-endpoint = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
+endpoint = https://s3.<region_in_lowercase>.io.cloud.ovh.net
 acl = private
 region = <region_in_lowercase>
 location_constraint = <region_in_lowercase>

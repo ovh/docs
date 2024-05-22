@@ -1,7 +1,7 @@
 ---
 title: 'Bearbeiten der OVHcloud DNS-Zone'
 excerpt: 'Erfahren Sie hier, wie Sie eine DNS-Zone über Ihr Kundencenter bearbeiten'
-updated: 2022-07-07
+updated: 2024-04-12
 ---
 
 > [!primary]
@@ -74,106 +74,137 @@ Ein genaueres Verständnis der verschiedenen Einträge ermöglicht es Ihnen, die
 
 #### Verweiseinträge
 
-- **A** (**A**ddress): Verbindet einen Domainnamen mit einer IPv4-Adresse. Zum Beispiel die IPv4-Adresse des Servers, auf dem Ihre Website gehostet ist.
+Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Registerkarten klicken.
 
-- **AAAA** (Vier **A**-Zeichen, da dieser Eintrag auf viermal mehr Bits als das historische **A** Feld kodiert ist): Verbindet einen Domainnamen mit einer IPv6-Adresse. Zum Beispiel die IPv6-Adresse des Servers, auf dem Ihre Website gehostet ist.
-
-> [!primary]
-> 
-> IPv6-Adressen werden vermehrt eingeführt, um den Mangel an IPv4-Adressen aufgrund der zunehmenden digitalen Nutzung zu beheben. Die 128-Bit-Kodierung von IPv6-Adressen ermöglicht die Bereitstellung einer größeren Anzahl an IP-Adressen.
->
-> Wenn Ihr Server jedoch bereits über eine IPv4 verfügt, empfehlen wir, diese bevorzugt zu verwenden.<br>
-> IPv6 wird noch nicht im gesamten Internet korrekt interpretiert, was zu Anzeige- oder Zugriffsstörungen führen kann.
->
-
-<a name="cname"></a>
-
-- **CNAME** (**C**anonical **NAME**): Verwendet die IP-Adresse einer anderen Domain, indem ein Link erstellt wird, der als Alias bezeichnet wird. Ist zum Beispiel *www.mydomain.ovh* ein Alias von *mydomain.ovh*, so bedeutet dies, dass *www.mydomain.ovh* die IP-Adresse von *mydomain.ovh* verwendet.
-
-> [!alert]
->
-> Ein TXT-Eintrag, der die gleiche Domain oder Subdomain wie ein CNAME-Eintrag verwendet, beeinträchtigt deren Funktion. Ihr CNAME-Eintrag wird dann nur teilweise oder gar nicht funktionieren.
->
-
-> [!warning]
->
-> CNAME Einträge können nicht direkt von einer Domain in ihrer eigenen DNS-Zone verwendet werden. Die Domain allein muss nämlich zwingend und direkt auf eine IP-Adresse mit einem Feld vom Typ A verweisen (oder AAAA, wenn es sich um IPv6 handelt).
-> 
-> Um das oben genutzte Beispiel zu verwenden: Sie können keinen CNAME Eintrag für *mydomain.ovh* in deren eigener DNS-Zone erstellen.
-> Sie können jedoch CNAME-Einträge für alle Subdomains von *mydomain.ovh* (Beispiele: *subdomain.mydomain.ovh* oder *www.mydomain.ovh*) in der für *mydomain.ovh* angelegten DNS-Zone erstellen.
->
-> Wenn Sie diesen Anwendungsfall vertiefen möchten, finden Sie am Ende dieser Seite [ein konkretes Beispiel für die Verwendung von CNAME und DNS-Zonen für Subdomains](#techusecase).
->
-
-- **DNAME** (**D**elegation **NAME**): Hier können Sie einen "Alias" für alle Subdomains einer Domain erstellen. Mit diesem Eintrag wird vermieden, eine Vielzahl von CNAME-Einträgen erstellen zu müssen. Ein CNAME-Eintrag leitet nur eine Subdomain auf ein einziges Ziel um.
-
-Beispiel: Durch die Erstellung eines DNAME-Eintrags von *mydomain.ovh* zu *ovh.com* werden alle Subdomains von *mydomain.ovh* (wie *dname.mydomain.ovh* und *xxx.mydomain.ovh*) auf Subdomains von *ovh.com* umgeleitet (wie *dname.ovh.com* und *xxx.ovh.com*).
-
-Der DNAME-Eintrag bewirkt also, dass *dname.mydomain.ovh* und *xxx.mydomain.ovh* das Ziel von *dname.ovh.com* bzw. *xxx.ovh.com* anzeigen.
-
-> [!warning]
-> 
-> Dagegen wird *mydomain.ovh* nicht das Ziel der Domain *ovh.com* anzeigen, da der DNAME-Eintrag nur für die Subdomains gilt, die im DNAME-Eintrag definiert sind.
->
-> Wenn beispielsweise die Ziel-Subdomain *xxx.ovh.com* kein Ziel hat, wird der DNAME-Eintrag auch für *xxx.mydomain.ovh* nichts anzeigen.
-> 
-
-> [!success]
-> 
-> Der DNAME-Eintrag wird etwa für Änderungen von Unternehmensbezeichnungen verwendet. Er kann auch verwendet werden, wenn ein Benutzer über mehrere Domainendungen (.de, .net, .com, .info, etc.) verfügt, um diese einfach weiterzuleiten.
->
-
-- **NS** (**N**ame **S**erver): Legt die zu Ihrer DNS-Zone gehörenden DNS Server fest. Wenn zum Beispiel die NS-Einträge Ihrer DNS-Zone die Server *dns19.ovh.net* und *ns19.ovh.net* anzeigen, müssen Sie diese im Tab `DNS Server`{.action} Ihres Kundencenters verwenden. Weitere Informationen finden Sie in unserer Anleitung zu [DNS Servern](/pages/web_cloud/domains/dns_server_general_information).
-
-> [!warning]
->
-> Ändern Sie nicht die NS-Einträge Ihrer DNS-Zone über den Button `Im Textmodus bearbeiten`{.action}, um DNS-Server außerhalb von OVHcloud zu verwenden. Diese DNS-Zone funktioniert ausschließlich mit **OVHcloud DNS Servern**.
->
+> [!tabs]
+> **A**
+>> **A**ddress <br><br>
+>> Verknüpft einen Domainnamen mit einer `X.X.X.X`-IPv4-Adresse (wobei `Xs` Zahlen zwischen `0` und `255` sind). Die IPv4-Adresse des Servers, auf dem Ihre Website gehostet wird.
+>>
+> **AAAA**
+>> Vier **A**-Zeichen, da dieser Eintrag auf viermal mehr Bits als das historische **A** Feld kodiert ist <br><br> 
+>> Verbindet einen Domainnamen mit einer IPv6-Adresse. Zum Beispiel die IPv6-Adresse des Servers, auf dem Ihre Website gehostet ist.
+>>
+>> > [!primary]
+>> > 
+>> > IPv6-Adressen werden vermehrt eingeführt, um den Mangel an IPv4-Adressen aufgrund der zunehmenden digitalen Nutzung zu beheben. Die 128-Bit-Kodierung von IPv6-Adressen ermöglicht die Bereitstellung einer größeren Anzahl an IP-Adressen.
+>> >
+>> > Wenn Ihr Server jedoch bereits über eine IPv4 verfügt, empfehlen wir, diese bevorzugt zu verwenden.<br>
+>> > IPv6 wird noch nicht im gesamten Internet korrekt interpretiert, was zu Anzeige- oder Zugriffsstörungen führen kann.
+>>
+> **CNAME**
+>> **C**anonical **NAME** <br><br> 
+>> Verwendet die IP-Adresse einer anderen Domain, indem ein Link erstellt wird, der als Alias bezeichnet wird. Ist zum Beispiel *www.mydomain.ovh* ein Alias von *mydomain.ovh*, so bedeutet dies, dass *www.mydomain.ovh* die IP-Adresse von *mydomain.ovh* verwendet.
+>>
+>> > [!alert]
+>> >
+>> > Ein TXT-Eintrag, der die gleiche Domain oder Subdomain wie ein CNAME-Eintrag verwendet, beeinträchtigt deren Funktion. Ihr CNAME-Eintrag wird dann nur teilweise oder gar nicht funktionieren.
+>> >
+>>
+>> > [!warning]
+>> >
+>> > CNAME Einträge können nicht direkt von einer Domain in ihrer eigenen DNS-Zone verwendet werden. Die Domain allein muss nämlich zwingend und direkt auf eine IP-Adresse mit einem Feld vom Typ A verweisen (oder AAAA, wenn es sich um IPv6 handelt).
+>> >
+>> > Um das oben genutzte Beispiel zu verwenden: Sie können keinen CNAME Eintrag für *mydomain.ovh* in deren eigener DNS-Zone erstellen.
+>> > Sie können jedoch CNAME-Einträge für alle Subdomains von *mydomain.ovh* (Beispiele: *subdomain.mydomain.ovh* oder *www.mydomain.ovh*) in der für *mydomain.ovh* angelegten DNS-Zone erstellen.
+>> >
+>> > Wenn Sie diesen Anwendungsfall vertiefen möchten, finden Sie am Ende dieser Seite [ein konkretes Beispiel für die Verwendung von CNAME und DNS-Zonen für Subdomains](#techusecase).
+>> >
+>>
+> **DNAME**
+>> **D**elegation **NAME** <br><br>
+>> Hier können Sie einen "Alias" für alle Subdomains einer Domain erstellen. Mit diesem Eintrag wird vermieden, eine Vielzahl von CNAME-Einträgen erstellen zu müssen. Ein CNAME-Eintrag leitet nur eine Subdomain auf ein einziges Ziel um.<br><br>Beispiel: Durch die Erstellung eines DNAME-Eintrags von *mydomain.ovh* zu *ovh.com* werden alle Subdomains von *mydomain.ovh* (wie *dname.mydomain.ovh* und *xxx.mydomain.ovh*) auf Subdomains von *ovh.com* umgeleitet (wie *dname.ovh.com* und *xxx.ovh.com*).<br><br>Der DNAME-Eintrag bewirkt also, dass *dname.mydomain.ovh* und *xxx.mydomain.ovh* das Ziel von *dname.ovh.com* bzw. *xxx.ovh.com* anzeigen.
+>>
+>> > [!warning]
+>> > 
+>> > Dagegen wird *mydomain.ovh* nicht das Ziel der Domain *ovh.com* anzeigen, da der DNAME-Eintrag nur für die Subdomains gilt, die im DNAME-Eintrag definiert sind.
+>> >
+>> > Wenn beispielsweise die Ziel-Subdomain *xxx.ovh.com* kein Ziel hat, wird der DNAME-Eintrag auch für *xxx.mydomain.ovh* nichts anzeigen.
+>> >
+>>
+>> > [!success]
+>> > 
+>> > Der DNAME-Eintrag wird etwa für Änderungen von Unternehmensbezeichnungen verwendet. Er kann auch verwendet werden, wenn ein Benutzer über mehrere Domainendungen (.de, .net, .com, .info, etc.) verfügt, um diese einfach weiterzuleiten.
+>> >
+> **NS**
+>> **N**ame **S**erver<br><br>
+>> Legt die zu Ihrer DNS-Zone gehörenden DNS Server fest. Wenn zum Beispiel die NS-Einträge Ihrer DNS-Zone die Server *dns19.ovh.net* und *ns19.ovh.net* anzeigen, müssen Sie diese im Tab `DNS Server`{.action} Ihres Kundencenters verwenden. Weitere Informationen finden Sie in unserer Anleitung zu [DNS Servern](/pages/web_cloud/domains/dns_server_general_information).
+>>
+>> > [!warning]
+>> >
+>> > Ändern Sie nicht die NS-Einträge Ihrer DNS-Zone über den Button `Im Textmodus bearbeiten`{.action}, um DNS-Server außerhalb von OVHcloud zu verwenden. Diese DNS-Zone funktioniert ausschließlich mit **OVHcloud DNS Servern**.
+>> >
 
 #### E-Mail Einträge
 
-- **MX** (**M**ail e**X**changer): Verbindet einen Domainnamen mit einem E-Mail-Server. Die Adresse *10 mx1.mail.ovh.net* entspricht beispielsweise einem der OVHcloud E-Mail-Server, wenn Sie ein OVHcloud E-Mail-Angebot haben. Ihr E-Mail-Anbieter verfügt wahrscheinlich über mehrere E-Mail-Server. Es müssen daher mehrere MX-Einträge erstellt werden.
-Lesen Sie dazu die Anleitung zum [Hinzufügen eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx).
+Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Registerkarten klicken.
 
-> [!warning]
->
-> Generell wird empfohlen, nur einen oder mehrere Server desselben E-Mail-Anbieters in Ihrer DNS-Zone zu verwenden.
-> Wenn Sie bereits über E-Mail-Dienste bei einem anderen E-Mail-Anbieter verfügen und gleichzeitig die E-Mail-Server Ihres neuen E-Mail-Anbieters hinzufügen (ohne diese zu ersetzen), besteht die Gefahr, dass Sie Ihre E-Mails zufällig bei einem Ihrer beiden Anbieter empfangen.
-> 
-
-- **SPF** (**S**ender **P**olicy **F**ramework): Damit kann potenzieller Identitätsdmissbrauch bei E-Mail-Adressen, die Ihre Domain verwenden (Spoofing), vermieden werden. Zum Beispiel legt der Eintrag `v=spf1 include:mx.ovh.com ~all` fest, dass nur die zu Ihrem OVHCloud E-Mail-Dienst gehörenden Server vom Empfangsserver als legitim angesehen werden können. Sie können den Eintrag entweder als TXT-Eintrag oder über unser automatisches Konfigurationssystem eingeben. Weitere Informationen finden Sie in der Anleitung zum [SPF-Eintrag](/pages/web_cloud/domains/dns_zone_spf).
-
-- **DKIM** (**D**omain**K**eys **I**dentified **M**ail): Ermöglicht die Überprüfung der Authentizität der Domain des Absenders und die Sicherstellung der Integrität der versandten E-Mail. Der DKIM-Eintrag ist ein aus mehreren Zeichen bestehender Schlüssel. Der DKIM-Schlüssel wird von Ihrem E-Mail-Anbieter bereitgestellt (falls diese Funktion angeboten wird). Sie können ihn in einem TXT-Eintrag eingeben.
-
-- **DMARC** (**D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance): Unterstützt die Authentifizierung von E-Mails in Verbindung mit SPF- und/oder DKIM-Methoden. Dieser Wert wird Ihnen von Ihrem E-Mail-Anbieter mitgeteilt (falls diese Funktion angeboten wird) und wird mindestens mit einem SPF- oder DKIM-Eintrag verbunden.
+> [!tabs]
+> **MX**
+>> **M**ail e**X**changer <br><br>
+>> Verbindet einen Domainnamen mit einem E-Mail-Server. Die Adresse *10 mx1.mail.ovh.net* entspricht beispielsweise einem der OVHcloud E-Mail-Server, wenn Sie ein OVHcloud E-Mail-Angebot haben. Ihr E-Mail-Anbieter verfügt wahrscheinlich über mehrere E-Mail-Server. Es müssen daher mehrere MX-Einträge erstellt werden. Lesen Sie dazu die Anleitung zum [Hinzufügen eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx).
+>>
+>> > [!warning]
+>> >
+>> > Generell wird empfohlen, nur einen oder mehrere Server desselben E-Mail-Anbieters in Ihrer DNS-Zone zu verwenden.
+>> > Wenn Sie bereits über E-Mail-Dienste bei einem anderen E-Mail-Anbieter verfügen und gleichzeitig die E-Mail-Server Ihres neuen E-Mail-Anbieters hinzufügen (ohne diese zu ersetzen), besteht die Gefahr, dass Sie Ihre E-Mails zufällig bei einem Ihrer beiden Anbieter empfangen.
+>> >
+>>
+> **SPF**
+>> **S**ender **P**olicy **F**ramework <br><br>
+>> Damit kann potenzieller Identitätsdmissbrauch bei E-Mail-Adressen, die Ihre Domain verwenden (Spoofing), vermieden werden. Zum Beispiel legt der Eintrag `v=spf1 include:mx.ovh.com ~all` fest, dass nur die zu Ihrem OVHCloud E-Mail-Dienst gehörenden Server vom Empfangsserver als legitim angesehen werden können. Sie können den Eintrag entweder als TXT-Eintrag oder über unser automatisches Konfigurationssystem eingeben. Weitere Informationen finden Sie in der Anleitung zum [SPF-Eintrag](/pages/web_cloud/domains/dns_zone_spf).
+> **DKIM**
+>> **D**omain**K**eys **I**dentified **M**ail <br><br>
+>> Ermöglicht die Überprüfung der Authentizität der Domain des Absenders und die Sicherstellung der Integrität der versandten E-Mail. Der DKIM-Eintrag ist ein aus mehreren Zeichen bestehender Schlüssel. Der DKIM-Schlüssel wird von Ihrem E-Mail-Anbieter bereitgestellt (falls diese Funktion angeboten wird). Sie können ihn in einem TXT-Eintrag eingeben.
+>>
+> **DMARC**
+>> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
+>> Unterstützt die Authentifizierung von E-Mails in Verbindung mit SPF- und/oder DKIM-Methoden. Dieser Wert wird Ihnen von Ihrem E-Mail-Anbieter mitgeteilt (falls diese Funktion angeboten wird) und wird mindestens mit einem SPF- oder DKIM-Eintrag verbunden.
 
 #### Erweiterte Einträge
 
-- **TXT** (**T**e**XT**): Hier können Sie den Wert Ihrer Wahl im Textformat zur DNS-Zone Ihrer Domain hinzufügen. Dieser Eintragstyp wird häufig für Verifizierungsprozesse oder Sicherheitsüberprüfungen verwendet.
+Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Registerkarten klicken.
 
-> [!warning]
-> 
-> Der TXT Eintrag ist auf 255 Zeichen begrenzt. In manchen Fällen können Sie Ihren Wert jedoch in mehrere Einträge aufteilen. Fragen Sie bei Ihrem Dienstleister nach, wenn dieser Sie auffordert, einen Wert anzugeben, der 255 Zeichen übersteigt.
-> 
-> Diese Einschränkung existiert jedoch nicht, wenn Sie die [weiter unten beschriebene Funktion](#txtmod) "Im Textmodus bearbeiten" verwenden (für erfahrene Benutzer).
-> 
-
-- **SRV** (**S**e**RV**ice resource): Der SRV-Eintrag enthält Informationen zur Adresse eines Servers, der einen Dienst bereitstellt. So kann er beispielsweise die Adresse eines SIP Servers oder eines Servers angeben, der die automatische Konfiguration eines E-Mail-Programms ermöglicht.
-
-- **CAA** (**C**ertification **A**uthority **A**uthorisation): Der CAA-Eintrag wird dazu verwendet, die Zertifizierungsstellen aufzulisten, die SSL-Zertifikate für eine Domain ausstellen dürfen.
-
-> [!warning]
-> 
-> Wenn Sie ein Let's Encrypt Zertifikat mit Ihrer Domain auf einem Shared Hosting bei OVHcloud verwenden und einen CAA-Eintrag anlegen, verhindert dieser die Erneuerung des SSL-Zertifikats von Let's Encrypt.
-> 
-
-- **NAPTR** (**N**ame **A**uthority **P**oint**T**e**R**): In der Telekommunikation verwendet, um eine von einem mobilen Endgerät ausgehende Anfrage auf einen Server zu leiten. Es kann ein SRV-Eintrag zugeordnet werden, um dynamisch Ziel-URIs (Uniform Resource Identifier) zu generieren. 
-
-- **LOC** (**LOC**ation): Zur Angabe der Ortsdaten verwendet (insbesondere Breiten-, Längen- und Höhenangaben).
-
-- **SSHFP** (**S**ecure **SH**ell **F**inger**P**rint): Verwendet, um den Fingerprint eines öffentlichen SSH-Schlüssels einzugeben.
-
-- **TLSA** (**T**ransport **L**ayer **S**ecurity **A**uthentication): Verwendet, um den Fingerprint eines SSL/TLS-Zertifikats einzugeben.
+> [!tabs]
+> **TXT**
+>> **T**e**XT** <br><br>
+>> Hier können Sie den Wert Ihrer Wahl im Textformat zur DNS-Zone Ihrer Domain hinzufügen. Dieser Eintragstyp wird häufig für Verifizierungsprozesse oder Sicherheitsüberprüfungen verwendet.
+>>
+>> > [!warning]
+>> >
+>> > Der TXT Eintrag ist auf 255 Zeichen begrenzt. In manchen Fällen können Sie Ihren Wert jedoch in mehrere Einträge aufteilen. Fragen Sie bei Ihrem Dienstleister nach, wenn dieser Sie auffordert, einen Wert anzugeben, der 255 Zeichen übersteigt.
+>> > 
+>> > Diese Einschränkung existiert jedoch nicht, wenn Sie die [weiter unten beschriebene Funktion](#txtmod) "Im Textmodus bearbeiten" verwenden (für erfahrene Benutzer).
+>> >
+>>
+> **SRV**
+>> **S**e**RV**ice resource <br><br>
+>> Der SRV-Eintrag enthält Informationen zur Adresse eines Servers, der einen Dienst bereitstellt. So kann er beispielsweise die Adresse eines SIP Servers oder eines Servers angeben, der die automatische Konfiguration eines E-Mail-Programms ermöglicht.
+>>
+> **CAA**
+>> **C**ertification **A**uthority **A**uthorization <br><br>
+>> Der CAA-Eintrag wird dazu verwendet, die Zertifizierungsstellen aufzulisten, die SSL-Zertifikate für eine Domain ausstellen dürfen.
+>>
+>> > [!warning]
+>> >
+>> > Wenn Sie ein Let's Encrypt Zertifikat mit Ihrer Domain auf einem Shared Hosting bei OVHcloud verwenden und einen CAA-Eintrag anlegen, verhindert dieser die Erneuerung des SSL-Zertifikats von Let's Encrypt.
+>> >
+>>
+> **NAPTR**
+>> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
+>> In der Telekommunikation verwendet, um eine von einem mobilen Endgerät ausgehende Anfrage auf einen Server zu leiten. Es kann ein SRV-Eintrag zugeordnet werden, um dynamisch Ziel-URIs (Uniform Resource Identifier) zu generieren.
+>>
+> **LOC**
+>> **LOC**ation <br><br>
+>> Zur Angabe der Ortsdaten verwendet (insbesondere Breiten-, Längen- und Höhenangaben).
+>>
+> **SSHFP**
+>> **S**ecure **SH**ell **F**inger**P**rint <br><br>
+>> Verwendet, um den Fingerprint eines öffentlichen SSH-Schlüssels einzugeben.
+>>
+> **TLSA**
+>> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
+>> Verwendet, um den Fingerprint eines SSL/TLS-Zertifikats einzugeben.
 
 ### Bearbeiten der OVHcloud DNS-Zone Ihrer Domain
 
@@ -182,9 +213,9 @@ Sie können die OVHcloud DNS-Zone Ihrer Domain bearbeiten, indem Sie einen DNS-E
 #### Zone manuell im Textmodus bearbeiten <a name="txtmod"></a>
 
 > [!warning]
-> 
+>
 > Diese Methode empfiehlt sich nur für erfahrene Anwender. Achten Sie auch auf die Syntax, wenn Sie Änderungen vornehmen.
-> 
+>
 
 Klicken Sie im Tab `DNS-Zone`{.action} auf `Im Textmodus bearbeiten`{.action} und folgen Sie den angezeigten Schritten.
 
@@ -211,7 +242,7 @@ Bitte überprüfen Sie zunächst, ob dieser Eintrag bereits existiert und auf ei
 >
 > Sie müssen dann als Ziel *mydomain.ovh.* haben, anstatt *mydomain.ovh* ohne "." am Ende.
 
-#### Existierenden DNS-Eintrag bearbeiten 
+#### Existierenden DNS-Eintrag bearbeiten
 
 Um einen DNS-Eintrag zu ändern, klicken Sie im Tab `DNS-Zone`{.action} auf den Button `...`{.action} in der gewünschen Tabellenzeile. Klicken Sie anschließend auf `Eintrag bearbeiten`{.action} und folgen Sie den angezeigten Schritten.
 

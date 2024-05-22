@@ -1,7 +1,7 @@
 ---
 title: Creare una zona DNS OVHcloud per un dominio
 excerpt: Questa guida ti mostra come creare una zona DNS per il tuo dominio dallo Spazio Cliente OVHcloud
-updated: 2024-03-11
+updated: 2024-05-16
 ---
 
 > [!primary]
@@ -116,6 +116,11 @@ Una volta in possesso delle informazioni, **modifica i server DNS del tuo domini
 > [!primary]
 >
 > Ti ricordiamo che, prima di modificare i **server DNS** dichiarati presso il tuo dominio, verifica che la configurazione della nuova zona DNS corrisponda alle tue aspettative.
+>
+
+> [!success]
+>
+> Per personalizzare i nomi dei server DNS associati alla zona DNS attiva del tuo dominio, consulta la nostra guida "[Personalizzare i server DNS di un dominio (Glue Records)](/pages/web_cloud/domains/glue_registry)".
 >
 
 ## Per saperne di più

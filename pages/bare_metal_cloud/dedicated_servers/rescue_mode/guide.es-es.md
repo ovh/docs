@@ -1,7 +1,7 @@
 ---
 title: "Activar y utilizar el modo de rescate"
 excerpt: "Cómo utilizar el modo de rescate de OVHcloud para solucionar los problemas de un servidor dedicado"
-updated: 2024-05-15
+updated: 2024-05-21
 ---
 
 > [!primary]
@@ -74,7 +74,9 @@ Las claves de conexión se enviarán por defecto a la dirección de correo elect
 
 ### Rescue Windows
 
-Para los servidores que dispongan de un sistema operativo Windows, además del modo `rescue-customer`{.action}, tiene la posibilidad de elegir la opción `WinRescue`{.action} (ver la [sección de la guía a continuación](#windowsrescue)). Tenga en cuenta que solo la autenticación con contraseña está disponible con este tipo de modo de rescate.
+Para los servidores con sistema operativo Windows, consulte la [guía dedicada](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+La opción `WinRescue`{.action} también puede estar disponible en función de su servidor. Para más información sobre este modo, consulte la [sección de la guía a continuación](#windowsrescue). Tenga en cuenta que solo la autenticación con contraseña está disponible con este tipo de modo de rescate.
 
 Indique una dirección de correo electrónico diferente si no desea **no** que las claves de conexión se envíen a la dirección principal de su cuenta de OVHcloud.
 
@@ -204,7 +206,9 @@ Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el 
 
 ### Windows <a name="windowsrescue"></a>
 
-#### Uso de herramientas WinRescue
+Para los servidores con sistema operativo Windows, consulte la [guía dedicada](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+
+#### Uso de herramientas WinRescue (obsoleto)
 
 Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Este mensaje de correo electrónico también está disponible en el [área de cliente de OVHcloud](/links/manager). En la esquina superior derecha del área de cliente, haga clic en el nombre asociado a su identificador de cliente y seleccione `Emails de servicio`{.action}.
 

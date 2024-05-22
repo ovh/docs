@@ -1,7 +1,7 @@
 ---
 title: "Einen Domainnamen zu einem anderen Registrar transferieren"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren"
-updated: 2024-04-11
+updated: 2024-05-16
 ---
 
 > [!primary]
@@ -50,6 +50,8 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 > - Die [Liste der bei OVHcloud verfügbaren TLDs](/links/web/domains-tld)
 > - [Erläuterungen der ICANN zu den EPP-Statuscodes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (um herauszufinden, welche Statuscodes derzeit für Ihre Domain gelten, führen Sie eine *Whois*-Suche aus, vorzugsweise unter Verwendung der Webseite der entsprechenden TLD-Registry)
 > - Die Webseite und das Verwaltungsinterface Ihres neuen Registrars, insbesondere für Fragen im Zusammenhang mit einem ausstehenden Transferprozess
+>
+> Je nachdem, welchen Registrar Sie gewählt haben, kann der Transfer eines Domainnamens auch kostenpflichtig sein. Erkundigen Sie sich hierzu an zuständiger Stelle, bevor Sie fortfahren.
 >
 
 ### Schritt 1: Transfer-Schutz der Domain aufheben

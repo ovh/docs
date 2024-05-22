@@ -1,7 +1,7 @@
 ---
 title: "Criar tarefas automatizadas (CRON) no seu alojamento Web"
 excerpt: "Saiba como criar tarefas CRON para automatizar as tarefas programadas num alojamento web"
-updated: 2024-02-08
+updated: 2024-05-16
 ---
 
 <style>
@@ -109,6 +109,18 @@ O resumo lembra-lhe os parâmetros configurados, incluindo a notação *crontab*
 ![cron confirmação](images/add-scheduling-step-3.png){.thumbnail}
 
 A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus parâmetros ou eliminar a tarefa clicando em `...`{.action} na tabela de apresentação do seu painel de configuração OVHcloud.
+
+### Modificar ou eliminar uma tarefa agendada
+
+Para isso, efetue as seguintes ações:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager).
+2. Na linha situada no topo da Área de Cliente, clique no separador `Web Cloud`{.action}.
+3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
+4. Selecione o alojamento web em causa.
+5. Na página que se abrir, clique no separador `Mais`{.action} e, a seguir, em `Cron`{.action}.
+6. Na tabela que aparece, clique no botão `...`{.action} situado à direita da tarefa planeada em causa.
+7. Escolha entre os botões `Alterar`{.action} ou `Eliminar`{.action} em função da ação que pretende realizar na tarefa programada.
 
 ### Limitações das tarefas planificadas no seu alojamento Web
 
