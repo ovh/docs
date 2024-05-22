@@ -47,7 +47,7 @@ On the new page, a table displays the backup history for your DNS zone, ordered 
 > Your DNS zone backups are subject to the following limitations:
 >
 > - We keep a maximum of 200 backups for the same DNS zone.
-> - Once a backup is more than 31 days old, it is automatically deleted, with the exception of the **5 most recent backups** made.
+> - Once a backup is older than 31 days, it is automatically deleted, with the exception of the **5 most recent backups**.
 >
 
 ### View a DNS zone <a name="view"></a>
