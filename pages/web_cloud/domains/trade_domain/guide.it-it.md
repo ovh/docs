@@ -1,7 +1,7 @@
 ---
 title: "Cambiare il proprietario di un dominio"
 excerpt: "In questa guida troverai le informazioni necessarie per cambiare il proprietario di un dominio"
-updated: 2024-03-07
+updated: 2024-05-22
 ---
 
 > [!primary]
