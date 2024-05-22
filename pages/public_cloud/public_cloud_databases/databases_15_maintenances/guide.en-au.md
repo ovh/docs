@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Maintenance operations
 excerpt: Find out how your cluster is maintained
-updated: 2024-02-09
+updated: 2024-05-22
 ---
 
 ## Objective
@@ -37,12 +37,16 @@ You can get a list of maintenances for a service through the dedicated API endpo
 > @api {v1} /cloud GET /1.0/cloud/project/{serviceName}/database/postgresql/{productId}/maintenance
 >
 
+![Choose Maintenance](images/maintenancesql.png){.thumbnail}
+
 > [!primary]
 > If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 ## How can I control the scheduling?
 
 You can change the maintenance time for your service so to have maintenance operations scheduled at a time that suits you better. For example, if your application is less busy at night, you can target that timeframe. Be aware that this only affects future maintenance operation scheduling, it won't reschedule already existing operations.
+
+![Choose Maintenance](images/maintenancesql2.png){.thumbnail}
 
 You can also decide to preemptively apply some operations, using this API endpoint:
 
