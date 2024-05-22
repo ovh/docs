@@ -35,7 +35,7 @@ Por ejemplo, el **DynHost** se puede utilizar si *se aloja* (en los locales de s
 
 - Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](/links/manager){.external}.
 - Utilizar la configuración de OVHcloud (es decir, sus servidores DNS) para el dominio en cuestión. 
-- El registro DynHost que vaya a crear no debe existir en la zona DNS de OVHcloud del dominio como registro "A".
+- El registro DynHost que vaya a crear no debe existir en la zona DNS de OVHcloud del dominio como registro "A" o "AAAA".
 
 > [!warning]
 >
@@ -79,19 +79,14 @@ Una vez que haya completado todos los campos, haga clic en `Aceptar`{.action}. E
 
 ### Etapa 2 : crear un registro DNS dinámico (DynHost) <a name="step2"></a>
 
-En segundo lugar, debe crear el registro DNS que se actualizará automáticamente. Le recordamos que el registro DynHost no debe existir en la zona DNS de OVHcloud del dominio como registro A. Para comprobarlo y, en su caso, eliminar dicho registro, consulte nuestra guía [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
+En segundo lugar, debe crear el registro DNS que se actualizará automáticamente. Le recordamos que el registro DynHost no debe existir en la zona DNS de OVHcloud del dominio como registro A o AAAA. Para comprobarlo y, en su caso, eliminar dicho registro, consulte nuestra guía [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
 
 Para crear el registro DynHost, vuelva a la página principal de la pestaña `DynHost`{.action} y haga clic en el botón `Añadir un DynHost`{.action}. Introduzca la información solicitada:
 
 |Campo|Descripción|
 |---|---|
 |Subdominio|Introduzca el subdominio al que pertenezca el registro DNS que deberá actualizarse dinámicamente. Este subdominio debe ser el mismo que haya indicado anteriormente al crear el usuario DynHost. **Si desea implementar un DynHost directamente para su dominio, deje este formulario de entrada vacío**|
-|IP de destino|Introduzca la dirección IP (solo IPv4) que vaya a utilizar el registro DNS. Es generalmente la dirección IP pública de su *box* Internet o de su servidor alojado. Según el principio DynHost, esta se actualizará automáticamente más adelante.|
-
-> [!primary]
->
-> Solo puede utilizarse un **IPv4** para implementar un DynHost. Los **IPv6** no están disponibles.
->
+|IP de destino|Introduzca la dirección IP (IPv4 o IPv6) que vaya a utilizar el registro DNS. Es generalmente la dirección IP pública de su *box* Internet o de su servidor alojado. Según el principio DynHost, esta se actualizará automáticamente más adelante.|
 
 Una vez que haya completado todos los campos, haga clic en `Aceptar`{.action}. El registro aparecerá en la tabla.
  Repita esta operación para cada registro DynHost que quiera crear.
@@ -124,13 +119,13 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |Valor|Sustituir por...|
 |---|---|
 |$HOSTNAME|El subdominio afectado por la actualización.|
-|$IP|La nueva dirección IPv4 de destino.|
+|$IP|La nueva dirección IPv4 o IPv6 de destino.|
 
 Puede comprobar si la dirección IP de destino se ha actualizado correctamente. Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y acceda al apartado `Web cloud`{.action}. En la columna izquierda, abra la pestaña `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `DynHost`{.action}. Compruebe la dirección IP que aparece en la columna `Destino`{.action}.
 
 > [!warning]
 >
-> Cualquier modificación en la zona DNS activa de un dominio puede conllevar un plazo de propagación de la actualización de 4 a 24 horas.
+> Cualquier modificación en la zona DNS activa de un dominio a través de DynDNS puede provocar un retraso de propagación de la actualización de varios minutos.
 >
 
 ![DynHost](images/target.png){.thumbnail}
