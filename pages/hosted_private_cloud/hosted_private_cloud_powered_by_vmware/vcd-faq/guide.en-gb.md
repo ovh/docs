@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - FAQ"
 excerpt: "Frequently asked questions on VCD"
-updated: 2024-04-16
+updated: 2024-05-22
 ---
 
 ## FAQ
@@ -66,6 +66,10 @@ With VMware Cloud Director, you are able to set group affinity for Virtual Machi
 At the service launch, no specific certification will be applicable to the VMware Cloud Director by OVHcloud service.
 
 However, supporting HDS, ISO27001, SOC2 or PCI-DSS certifications are clearly our roadmap objectives.
+
+### Can I choose with VCD the "Thin or Thick disk" type when I create a new virtual machine or disk ?
+
+No, with VMware Cloud Director, each disk consumes storage in a Virtual Datacentre (VDC) organization. There is no associated "Thin or Thick" setting for a tenant.
 
 ## Go further
 
