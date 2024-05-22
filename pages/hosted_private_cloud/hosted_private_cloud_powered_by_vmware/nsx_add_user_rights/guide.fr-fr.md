@@ -1,7 +1,7 @@
 ---
 title: "Activer NSX-T dans un Hosted Private Cloud VMware on OVHcloud"
 excerpt: "Découvrez comment ajouter les droits à un utilisateur et aux Datacentres pour NSX-T"
-updated: 2024-05-07
+updated: 2024-05-22
 ---
 
 <style>
@@ -115,11 +115,11 @@ Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class
 
 </details>
 
-### Step 6 - Informations utiles
+### Etape 6 - Informations utiles
 
 Vous pouvez vérifier si NSX-T est activé sur votre Datacenter. Vous pouvez également retrouver votre URL NSX-T et sa version :
 
-#### Via OVHcloud API :
+#### Via l'API OVHcloud
 
 > [!api]
 >
@@ -127,10 +127,10 @@ Vous pouvez vérifier si NSX-T est activé sur votre Datacenter. Vous pouvez ég
 
 > **Paramètres:**
 >
-> serviceName: La référence de votre PCC `pcc-XX-XX-XX-XX`.
+> serviceName: La référence de votre PCC sous la forme `pcc-XX-XX-XX-XX`.
 >
 
-RETOUR :
+Exemple de retour :
 
 ```shell
 {
@@ -152,12 +152,11 @@ RETOUR :
 
 > [!primary]
 >
-> Retrouvez plus d’informations sur l’API OVHcloud dans notre guide : ["Démarrer avec l’API OVHcloud".](/pages/manage_and_operate/api/first-steps)
+> Retrouvez plus d’informations sur l’API OVHcloud dans notre guide « [Premiers pas avec l’API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
 ## Aller plus loin
 
 - [Gestion des segments dans NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-02-segment-management)
-
 - [FAQ NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-11-faq)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
