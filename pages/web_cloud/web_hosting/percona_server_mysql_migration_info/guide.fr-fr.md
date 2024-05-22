@@ -1,7 +1,7 @@
 ---
 title: "Migration de MySQL vers Percona Server pour MySQL"
 excerpt: "Découvrez les avantages de la migration de MySQL vers Percona Server pour MySQL"
-updated: 2024-05-15
+updated: 2024-05-22
 ---
 
 ## Objectif
