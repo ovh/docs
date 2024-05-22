@@ -25,7 +25,7 @@ Ce tutoriel vous explique comment configurer certaines fonctionnalités de votre
 Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs de texte comme :
 
 - [Bloc-notes](https://support.microsoft.com/fr-fr/windows/aide-de-bloc-notes-windows-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} de Windows ;
-- [TextEdit](https://support.apple.com/fr-fr/guide/textedit/welcome/mac){.external} sur macOS ; 
+- [TextEdit](https://support.apple.com/fr-fr/guide/textedit/welcome/mac){.external} sur macOS ;
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
 
 > [!primary]

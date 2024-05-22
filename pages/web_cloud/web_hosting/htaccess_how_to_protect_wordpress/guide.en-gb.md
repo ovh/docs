@@ -25,7 +25,7 @@ This tutorial will show you how to configure certain features of your web hostin
 **.htaccess** files can be created and modified with text editors, for example:
 
 - [Notepad](https://support.microsoft.com/en-gb/windows/help-in-notepad-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} on Windows
-- [TextEdit](https://support.apple.com/en-gb/guide/textedit/welcome/mac){.external} on macOS 
+- [TextEdit](https://support.apple.com/en-gb/guide/textedit/welcome/mac){.external} on macOS
 - [Notepad++](https://notepad-plus-plus.org/){.external}
 
 > [!primary]
