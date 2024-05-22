@@ -59,7 +59,7 @@ Wählen Sie `rescue-customer-windows`{.action}. Geben Sie eine andere E-Mail-Adr
 
 Klicken Sie auf `Weiter`{.action} und `Bestätigen`{.action}.
 
-![Rescue-Customer-Modus](images/Rescue-Manager-windows-menu.png){.thumbnail}
+![Rescue-Customer-Modus](images/manager-rescue-windows-menu.png){.thumbnail}
 
 Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action}. rechts neben "Status" im Bereich **Dienstleistungsstatus**.
 

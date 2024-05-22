@@ -97,7 +97,7 @@ No ecrã de login do KVM pode selecionar um idioma diferente para o teclado.
 
 Pode alterar as opções de acessibilidade e ativar o teclado virtual:
 
-![KVM accability Screen](images/rescue-kvm-login-accability.png){.thumbnail}
+![KVM accessibility Screen](images/rescue-kvm-login-accessibility.png){.thumbnail}
 
 ![KVM keyboard Screen](images/rescue-kvm-login-keyboard.png){.thumbnail}
 
