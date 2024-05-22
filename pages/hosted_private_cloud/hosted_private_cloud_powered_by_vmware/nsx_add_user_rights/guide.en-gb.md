@@ -45,7 +45,7 @@ Log in to the [OVHcloud Control Panel](/links/manager).
 </br></br>
 Click on <code class="action">Hosted Private Cloud</code>.
 </br></br>
-- OVHcloud direct link: https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XX-XX-XX-X > Replace PCC-XX-XX-XX-X with the name of your PCC service.
+- OVHcloud direct link: https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX-XXX-XXX-XXX > Replace PCC-XXX-XXX-XXX-XXX with the name of your PCC service.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_7.png" loading="lazy"></p>
 
@@ -130,7 +130,7 @@ In your Hosted Private Cloud tree view, click <code class="action">VMware</code>
 
 You can check if NSX-T is enabled on your Datacenter. You can also find your NSX-T URL and version:
 
-**Via the OVHcloud API**
+#### Via the OVHcloud API
 
 > [!api]
 >
