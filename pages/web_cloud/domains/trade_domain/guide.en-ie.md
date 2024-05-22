@@ -15,7 +15,7 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 >
 > If you need to make a change of owner and a change of contact for the same domain name, there is no preferential order. However, it is the administrator contact who is able to initiate these operations. These two changes are therefore made in the Control Panel of ​​the domain name administrator contact.
 >
-> Information about the domain name holder is only of administrative value, and is completely independent of the information that can be linked to an OVHcloud NIC handle. As a result, an individual or organization (company, association, etc.) that has only been declared as the owner of a domain name does not have access to the OVHcloud Control Panel.
+> Information about the domain name holder is only of administrative value, and is completely independent of the information that can be linked to an OVHcloud NIC handle. As a result, an individual or organisation (company, association, etc.) that has only been declared as the owner of a domain name does not have access to the OVHcloud Control Panel.
 >
 
 **This guide explains how to change the owner of a domain name.**
