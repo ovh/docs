@@ -262,13 +262,13 @@ Reiniciar a zona DNS permite voltar a uma configuração mínima, com as entrada
 > Antes de reiniciar a zona DNS, certifique-se de que o seu domínio não está associado a serviços em curso de utilização, tais como um website ou endereços de e-mail.
 >
 
-No separador "Zona DNS`{.action}", clique em "Reiniciar a minha zona DNS`{.action}" e siga os 2 passos que aparecem.
+No separador `Zona DNS`{.action}, clique em `Reiniciar a minha zona DNS`{.action} e siga os 2 passos que aparecem.
 
 ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
 **Etapa 1**
 
-Responda à pergunta "Deseja ativar o número mínimo de entradas quando a zona DNS for reiniciada?" Definir entradas mínimas numa zona DNS permite evitar que um pedido para o domínio não acarrete um erro.
+Responda à pergunta `Deseja ativar o número mínimo de entradas quando a zona DNS for reiniciada?`` Definir entradas mínimas numa zona DNS permite evitar que um pedido para o domínio não acarrete um erro.
 
 - `Sim, pretendo reiniciar a minha zona DNS com as entradas mínimas`
 - `Não, mas pretendo reiniciar a minha zona DNS`

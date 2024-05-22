@@ -282,7 +282,7 @@ Responda a la pregunta «¿Quiere activar los registros mínimos al restaurar la
 
 **Etapa 2**
 
-Independientemente de cuál sea su elección en el paso 1, es necesario definir una respuesta cuando se pregunta a su nombre de dominio para evitar una respuesta DNS en error.
+Independientemente de cuál sea su elección en el etapa 1, es necesario definir una respuesta cuando se pregunta a su nombre de dominio para evitar una respuesta DNS en error.
 
 Seleccione ambas opciones haciendo clic en las fichas siguientes.
 
