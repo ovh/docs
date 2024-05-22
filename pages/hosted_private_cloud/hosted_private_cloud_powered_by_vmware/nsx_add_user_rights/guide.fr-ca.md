@@ -26,7 +26,7 @@ Ces droits sont accordés depuis l'[espace client OVHcloud](/links/manager).
 
 ## Prérequis
 
-- Avoir souscrit une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/) avec les options **"Network Security Virtualization"** ou **"Software-Defined Datacenter"** 
+- Avoir souscrit une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/vmware/) avec les options **"Network Security Virtualization"** ou **"Software-Defined Datacenter"** 
 - Etre connecté à l'[espace client OVHcloud](/links/manager)
 - Être contact administrateur de l'infrastructure VMware sur OVHcloud, celui-ci recevant les identifiants de connexion.
 - Avoir suivi les étapes de cette documentation : [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps)
