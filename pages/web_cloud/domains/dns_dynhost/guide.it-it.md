@@ -1,7 +1,7 @@
 ---
 title: "Impostare un DNS dinamico (DynHost/DynDNS) per il tuo dominio"
 excerpt: "Questa guida ti mostra come configurare un record DNS dinamico per il tuo dominio OVHcloud"
-updated: 2024-03-07
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -23,6 +23,11 @@ Se necessario, consulta [la nostra documentazione sui record DNS e sulla modific
 L'aggiornamento "dinamico" di un record DNS può evitare un'interruzione prolungata di uno dei tuoi servizi se non disponi di un indirizzo IP detto "fisso" (che non cambia).
 
 Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali della tua azienda o a casa, passando per la *box* del tuo **F**ourneur d'**A**ccesso a **I**nternet (**FAI**)) un server di videogiochi senza beneficiare di un indirizzo IP "fisso".
+
+> [!primary]
+>
+> Qualsiasi record "A" o "AAAA" con un TTL (**T**ime **T**o **L**ive) di 60 secondi è considerato DynHost. Il TTL è un valore che indica il periodo di tempo durante il quale un record DNS viene memorizzato nella cache dai server DNS prima di essere aggiornato.
+>
 
 **Questa guida ti mostra come configurare un record DNS dinamico (DynHost) per il tuo dominio OVHcloud.**
 
@@ -111,7 +116,7 @@ Una volta scelto e installato il client, è necessario configurarlo utilizzando 
 In base al client utilizzato, oltre agli elementi dell'utente DynHost e del sottodominio in questione può essere necessario un URL di aggiornamento. In questo caso, utilizza l'indirizzo URL qui sotto sostituendo le informazioni generiche:
 
 ```bash
-https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 ```
 
 |Campo|Sostituire con...|

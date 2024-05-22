@@ -1,7 +1,7 @@
 ---
 title: "Configure dynamic DNS (DynHost/DynDNS) for your domain name"
 excerpt: "Find out how to configure a dynamic DNS record for your OVHcloud domain name"
-updated: 2024-03-07
+updated: 2024-05-22
 ---
 
 ## Objective
@@ -17,6 +17,11 @@ For more information on DNS zones and how to edit them in your [OVHcloud Control
 Dynamically updating a DNS record can prevent interruptions of your web services, in case you do not use a static IP address.
 
 For example, the **DynHost** can be used for a self-hosted game server (located on your company premises or at your home) without a static IP address, meaning an **I**nternet **S**ervice **P**rovider (**ISP**) assigns a new IP address regularly.
+
+> [!primary]
+>
+> Any A or AAAA record with a TTL (**T**ime **T**o **L**ive) of 60 seconds is considered DynHost. The TTL is a value that indicates how long a DNS record is cached by DNS servers before it is updated.
+>
 
 **This guide explains how to configure a dynamic DNS record (DynHost) for your OVHcloud domain name.**
 
@@ -105,7 +110,7 @@ Once the client has been chosen and installed, you will need to configure it usi
 Depending on the client you are using, an update URL may be required, in addition to the DynHost username and subdomain concerned. If this is the case, use the URL below, taking care to replace the generic information:
 
 ```bash
-https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 ```
 
 |Information|Replace with|
