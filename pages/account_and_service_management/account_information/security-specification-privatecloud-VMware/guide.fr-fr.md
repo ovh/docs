@@ -94,13 +94,13 @@ A travers votre espace client OVHcloud, vous avez la possibilité de gérer le s
 
 Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un *NIC* interne. 
 
-Pour renforcer l'accès au compte client, vous avez la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) ou l'[authentification SSO (Single Sign-On)](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs) en associant votre compte à un Active Directory externe..
+Pour renforcer l'accès au compte client, vous avez la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 Sur le service Private Cloud, avec le compte administrateur, vous avez la possibilité d'établir votre propre politique d'accès au vCenter, de créer des utilisateurs et leur affecter différents droits d'accès pour gérer les ressources, l'accès à l'interface vSphere et la gestion de la partie réseau privé et public. Le guide et les détails de configurations sont disponibles sur [ce lien](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud).
 
 Pour une authentification plus robuste des utilisateurs disposant d'accès à vos Privates Cloud, il est possible d'activer l'authentification à double facteur (2FA), [disponible en option via les offres PCI-DSS et HDS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/utilisation_2FA).
 
-Enfin, si vous disposez d'un serveur AD et souhaitez gérer les accès des utilisateurs du Private cloud via votre propre fournisseur d'identités, il est possible d'activer cette fonctionnalité en suivant [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/federation).
+Enfin, si vous disposez d'un serveur AD et souhaitez gérer les accès des utilisateurs du Private cloud via votre propre fournisseur d'identités, il est possible d'activer cette fonctionnalité.
 
 ### 7.2 - Data Plane
 
