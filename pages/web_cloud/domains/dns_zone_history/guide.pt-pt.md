@@ -50,6 +50,14 @@ Na nova página que vai aparecer, aparecerá uma tabela com o histórico dos bac
 - [Restaurar uma zona DNS](#restore)
 - [Comparar duas zonas DNS](#compare)
 
+> [!primary]
+>
+> Os backups da sua zona DNS estão sujeitos às seguintes limitações:
+>
+> - Conservamos no máximo 200 backups para a mesma zona DNS.
+> - Quando um backup tem mais de 31 dias, este é automaticamente eliminado, exceto nos **5 com os backups mais recentes** efetuados.
+>
+
 ### Visualizar uma zona DNS <a name="view"></a>
 
 Para visualizar a zona DNS à sua escolha, identifique a linha correspondente na tabela e clique no ícone presente na coluna `Ver`{.action}.
