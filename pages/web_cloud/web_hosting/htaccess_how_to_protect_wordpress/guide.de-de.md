@@ -139,14 +139,31 @@ Ihre Datei **wp-config.php**, die sich im Wurzelverzeichnis Ihrer Website befind
 
 Wenn Sie eine zu sperrende IP-Adresse identifiziert haben, geben Sie diese Zeilen in Ihre **.htaccess**-Datei ein:
 
-```bash
-<Limit GET POST>
-    order allow,deny deny from 203.0.113.0
-    allow from all
-</Limit>
-```
-
-Ersetzen Sie `203.0.113.0` mit der zu blockierenden IP-Adresse.
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 203.0.113.0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Ersetzen Sie `203.0.113.0` mit der zu blockierenden IPv4-Adresse.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 2001:db8:1:1b00:203:0:113:0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Ersetzen Sie `2001:db8:1:1b00:203:0:113:0` mit der zu blockierenden IPv6-Adresse.
+>>
 
 Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [IP-basierten Zugriffsbeschränkung über die .htaccess-Datei](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -154,13 +171,32 @@ Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [IP-ba
 
 Das Verzeichnis **wp-admin** enthält den Zugang zum Administrationssinterface der Installation. (Die Methode funktioniert auch mit anderen Verzeichnissen, deren URLs nicht zu einem Verwaltungszugang führen). Zum Schutz dieses Verzeichnisses beschränken Sie den Zugriff auf eine oder mehrere IP-Adressen mit folgendem Code in Ihrer **.htaccess**:
 
-```bash
-<Limit GET POST PUT>
-    order deny,allow deny from all
-    allow from 203.0.113.0
-    allow from 203.0.113.0
-</Limit>
-```
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 203.0.113.0
+>>   allow from 203.0.113.1
+>> </Limit>
+>>```
+>>
+>> In diesem Beispiel können nur die IPv4-Adressen `203.0.113.0` und `203.0.113.1` auf das Verzeichnis zugreifen, in dem sich die .htaccess-Datei befindet.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 2001:db8:1:1b00:203:0:113:0
+>>   allow from 2001:db8:1:1b00:203:0:113:1
+>> </Limit>
+>>```
+>>
+>> In diesem Beispiel können nur die IPv6-Adressen `2001:db8:1:1b00:203:0:113:0` und `2001:db8:1:1b00:203:0:113:1` auf das Verzeichnis zugreifen, in dem sich die .htaccess-Datei befindet.
 
 ### Wichtige Informationen
 
