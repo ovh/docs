@@ -187,7 +187,7 @@ Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 >>
 >> > [!warning]
 >> >
->> > Se configuri una voce CAD per un dominio, questa configurazione verrà applicata anche a **tutti i sottodomini** dello stesso dominio.
+>> > Se configuri una voce CAA per un dominio, questa configurazione verrà applicata anche a **tutti i sottodomini** dello stesso dominio.
 >> >
 >> > Se utilizzi un certificato SSL Let's Encrypt con il tuo dominio su un hosting condiviso OVHcloud e utilizzi un record CAA, quest'ultimo impedirà la rigenerazione del certificato SSL Let's Encrypt.
 >>
