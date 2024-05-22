@@ -50,6 +50,14 @@ Na nowej stronie, która się wyświetli, pojawi się tabela z historią kopii z
 - [Przywróć strefę DNS](#restore)
 - [Porównaj dwie strefy DNS](#compare)
 
+> [!primary]
+>
+> Kopie zapasowe strefy DNS podlegają następującym ograniczeniom:
+>
+> - Przechowujemy maksymalnie 200 kopii zapasowych dla tej samej strefy DNS.
+> - Jeśli kopia zapasowa ma więcej niż 31 dni, jest automatycznie usuwana, z wyjątkiem najnowszych **5 kopii zapasowych**.
+>
+
 ### Wyświetl strefę DNS <a name="view"></a>
 
 Aby wyświetlić wybraną strefę DNS, zidentyfikuj odpowiedni wiersz w tabeli i kliknij na ikonę w kolumnie `Wyświetl`{.action}.
