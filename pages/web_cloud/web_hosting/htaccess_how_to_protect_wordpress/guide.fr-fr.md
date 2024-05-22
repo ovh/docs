@@ -177,7 +177,7 @@ Le répertoire **wp-admin** permet de vous connecter à votre interface d'admini
 >> </Limit>
 >>```
 >>
->> Dans cet exemple, seuls les adresses IPv4 `203.0.113.0` et `203.0.113.1` sont autorisées à accéder au répertoire dans lequel le fichier .htaccess se trouve.
+>> Dans cet exemple, seules les adresses IPv4 `203.0.113.0` et `203.0.113.1` sont autorisées à accéder au répertoire dans lequel se trouve le fichier .htaccess.
 >>
 > **IPv6**
 >>
