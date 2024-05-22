@@ -18,6 +18,9 @@ Además de [gestionar los contactos](/pages/account_and_service_management/accou
 >Para ello, debe [modificar los contactos](/pages/account_and_service_management/account_information/managing_contacts) del nombre de dominio.
 >
 > Si necesitas hacer un cambio de titular y un cambio de contacto para un mismo nombre de dominio, no hay orden preferente. Sin embargo, es el contacto del administrador quien puede iniciar estas operaciones. Por lo tanto, estos dos cambios se realizan en el área de clientes del contacto del administrador del nombre de dominio.
+>
+> Los datos relativos al propietario de un dominio solo tienen un valor administrativo y son totalmente independientes de los datos que puedan asociarse a un ID de cliente de OVHcloud. Por lo tanto, un particular o una organización (empresa, asociación, etc.) que únicamente esté declarado como propietario de un dominio no tendrá acceso al área de cliente de OVHcloud.
+>
 
 **Descubra cómo cambiar el propietario de un dominio**
 
