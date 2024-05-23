@@ -16,20 +16,21 @@ updated: 2023-05-22
 
 ## En pratique
 
-## Impacts sur les offres et produits OVHcloud
+### Impacts sur les offres et produits OVHcloud
 
-| type de service OVHcloud | Offres                                                    | Composant VMware | Impact | Technologie |
-|--------------------------|-----------------------------------------------------------|------------------|--------|-------------|
-| Hosted Private Cloud     | VMware on OVHcloud : SDDC / Essentials (Network Security) | NSX-T            | Haute  | Réseau      
-| Hosted Private Cloud     | VMware on OVHcloud : Hyperconverged Storage               | vSan             | Haute  | Stockage    
-| Hosted Private Cloud     | VMware on OVHcloud (vSphere)                              | vRops            | Haute  | Monitoring  
-| Hosted Private Cloud     | SecNumCloud                                               |                  |        |        
-| Hosted Private Cloud     | Veeam Managed Backup (Standard/Advanced/Premium)          | Veeam            | Haute  | Stockage    
-| Hosted Private Cloud     | Veeam Enterprise                                          | Veeam            | Haute  | Stockage    
-| Hosted Private Cloud     | Zerto (PRA)                                               | Zerto            | Haute  | Stockage    
-| Hosted Private Cloud     | VMware on OVHcloud (vSphere)                              | Tanzu            | Haute  | Kubernetes  
+| Type de produits     | Support                              | Offres                                                    | Composant VMware | Impact | Technologie |
+|----------------------|--------------------------------------|-----------------------------------------------------------|------------------|--------|-------------|
+| Hosted Private Cloud | Enterprise                           | VMware on OVHcloud : SDDC / Essentials (Network Security) | NSX-T            | Haute  | Réseau      
+| Hosted Private Cloud |               Standard/Advanced/Premium/Enterprise                         | VMware on OVHcloud : Hyperconverged Storage               | vSan             | Haute  | Stockage    
+| Hosted Private Cloud |         Standard/Advanced/Premium/Enterprise                               | VMware on OVHcloud (vSphere)                              | vRops            | Haute  | Monitoring  
+| Hosted Private Cloud |              Standard/Advanced/Premium/Enterprise                          | SecNumCloud                                               |                  |        |        
+| Hosted Private Cloud | Standard/Advanced/Premium/Enterprise           | Veeam Managed Backup     | Veeam            | Haute  | Stockage    
+| Hosted Private Cloud | Enterprise                           | Veeam Enterprise                                          | Veeam            | Haute  | Stockage    
+| Hosted Private Cloud | Enterprise                           | Zerto (PRA)                                               | Zerto            | Haute  | Stockage    
+| Hosted Private Cloud | Standard/Premium/Business/Enterprise | VMware on OVHcloud (vSphere)                              | Tanzu            | Haute  | Kubernetes  
 
-## Plan d'action
+
+### Plan d'action
 
 | Nom des maintenances  | Utiliser Plan all robot planning | But                                                                                                                                                                                                                                                                                                                                                                                 | Raison                                                             | Instructions préventives                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Impact                                                                                                                                                                                                                                                                                                                                 | Durée approximative                                                                                                    | Frequence                              | Peut être reprogrammé ? | Référence à une documentation technique |
 |---|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|----------------------------------------|-------------------------|-----------------------------------------|
