@@ -1,23 +1,8 @@
 ---
-title: "VMware Cloud Director - Find out how to use the VCD user interface"
+title: "VMware Cloud Director - How to use the VCD user interface"
 excerpt: "Discover the VCD user interface"
 updated: 2024-05-22
 ---
-
-<style>
-details>summary {
-	color:rgb(33, 153, 232) !important;
-	cursor: pointer;
-}
-details>summary::before {
-	content:'\25B6';
-	padding-right:1ch;
-}
-details[open]>summary::before {
-	content:'\25BC';
-}
-</style>
-
 
 ## Objective
 
@@ -25,10 +10,10 @@ details[open]>summary::before {
 
 ## Requirements
 
->[!primary]
-> If you are unsure how to log in to your organization’s web portal, read [this guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) first.
-
 - A VMware Cloud Director account
+
+> [!primary]
+> If you are unsure how to log in to your organization’s web portal, read [this guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) first.
 
 ## Instructions
 
@@ -36,12 +21,12 @@ VMware vCloud Director (VCD) is a cloud computing management platform. VCD enabl
 
 This solution enables you to provision and efficiently manage virtual machines, virtual networks, and other resources, providing increased operational agility and flexibility to meet changing business needs.
 
->[!primary]
+> [!primary]
 > Once you have logged in to your web interface, you will be greeted by a dashboard displaying your **vDC**, as well as a detailed summary of your resource usage (10). At the top of the screen, you will also find a navigation bar with the different settings options available for vCloud Director (VCD).
 
 ![Dashboard Overview](images/vcd-dashboard-overview.png){.thumbnail}
 
-The different sections available are the following :
+The different sections available are the following:
 
 1. **Data Centers**
 2. **Applications**
@@ -55,22 +40,26 @@ The different sections available are the following :
 10. **Resources used**
 
 ### Data Centers
-In this section, you will find all of your virtual datacentres (vDC) ordered in different datacentre locations, a brief overview of your resource usage, and the number of vApps/VMs currently running.</summary>
+In this section, you will find all of your virtual data centres (vDC) ordered in different data centre locations, a brief overview of your resource usage, and the number of vApps/VMs currently running.
 
-Compute :
+Compute:
+
 - `vApps`{.action}
 - `Virtual Machines`{.action}
 - `Affinity Rules`{.action}
 
-Networking :
+Networking:
+
 - `Networks`{.action}
 - `Edges`{.action}
 
-Storage :
-- `Named disks`{.action}
+Storage:
+
+- `Named Dlisks`{.action}
 - `Storage Policies`{.action}
 
-Settings :
+Settings:
+
 - `General`{.action}
 - `Metadata`{.action}
 - `Sharing`{.action}
@@ -79,9 +68,10 @@ Settings :
 ![Datacenters Overview](images/vcd_overview_datacenter.gif){.thumbnail}
 
 ### Applications
-In this section, get a comprehensive overview of all your vApps and virtual machines on your virtual datacentres (vcds): create, access and delete vApps or virtual machines with ease.
+In this section, get a comprehensive overview of all your vApps and virtual machines on your virtual data centres (vDC): Create, access and delete vApps or virtual machines with ease.
 
-Applications :
+Applications:
+
 - `Virtual Applications`{.action}
 - `Virtual Machines`{.action}
 - `Container Applications`{.action}
@@ -89,9 +79,10 @@ Applications :
 ![Applications Overview](images/vcd_overview_application.gif){.thumbnail}
 
 ### Networking
-In this section, you can find all the network components of your VCD environments: networks, Edge Gateways, Provider Gateways, IP address ranges, datacentre groups, and security tags.
+In this section, you can find all the network components of your VCD environments:
 
-Networking :
+Networking:
+
 - `Networks`{.action}
 - `Edge Gateways`{.action}
 - `Provider Gateways`{.action}
@@ -104,7 +95,8 @@ Networking :
 ### Content Hub
 In this section, you can manage your catalogs: create, delete or download ISO files, OVA templates, or simply use the preconfigured templates available in the OVHcloud catalog.
 
-Content :
+Content:
+
 - `Bibliothèques de contenu`{.action}
 - `Services`{.action}
 
@@ -113,22 +105,26 @@ Content :
 ### Administration
 In this section, you can manage users in your organization, create roles and groups, and configure an identification provider (OIDC/SAML). You can also set up email alerts and expiration policies for your applications.
 
-Access control :
+Access Control:
+
 - `Users`{.action}
 - `Groups`{.action}
 - `Roles`{.action}
 
-Fournisseur d'identités :
+Identity Providers:
+
 - `SAML`{.action}
 - `OIDC`{.action}
 
-Gestion des certificats :
+Certificate Management:
+
 - `Certificate Management`{.action}
 
-Parameters :
+Settings:
+
 - `General`{.action}
 - `Email`{.action}
-- `Guest Personnalization`{.action}
+- `Guest Personalization`{.action}
 - `Metadata`{.action}
 - `Multisite`{.action}
 - `Policies`{.action}
@@ -158,6 +154,6 @@ See here for all recent actions in your organization.
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
