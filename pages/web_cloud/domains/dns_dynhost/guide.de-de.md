@@ -117,13 +117,11 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|Subdomain, die von der Aktualisierung betroffen ist|
 |$IP|Die neue IPv4- oder IPv6-Zieladresse.|
 
-Um zu überprüfen, ob die Ziel-IP aktualisiert wurde, gehen Sie in Ihrem Kundencenter zum Tab `DynHost`{.action}. Überprüfen Sie dort in der Spalte `Ziel`{.action} die angezeigte IP-Adresse.
-
-Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DynHost`{.action}. Überprüfen Sie die in der Spalte `Ziel`{.action} angezeigte IP-Adresse.
+Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DynHost`{.action}. Überprüfen Sie die in der Spalte `Ziel`{.action} angezeigte IP-Adresse.
 
 > [!warning]
 >
-> Jede Änderung der aktiven DNS-Zone einer Domain über DynDNS kann zu einer Verzögerung von mehreren Minuten bei der Propagation der Aktualisierung führen.
+> Jede Änderung der aktiven DNS-Zone eines Domainnamens über DynDNS kann zu einer Verzögerung von mehreren Minuten bei der Propagation der Aktualisierung führen.
 >
 
 ![dynhost](images/target.png){.thumbnail}
