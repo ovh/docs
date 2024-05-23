@@ -1,7 +1,7 @@
 ---
 title: 'What to do if your account is blocked for spam'
 excerpt: 'Find out what to do if your email account has been blocked for spam'
-updated: 2023-06-07
+updated: 2024-05-23
 ---
 
 ## Objective
