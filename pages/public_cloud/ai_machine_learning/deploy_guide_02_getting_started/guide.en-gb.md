@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Getting started
 excerpt: Discover AI Deploy and unfold your first application
-updated: 2023-04-04
+updated: 2024-05-23
 ---
 
 > [!primary]
