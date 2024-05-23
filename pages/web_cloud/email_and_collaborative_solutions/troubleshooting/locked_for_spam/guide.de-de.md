@@ -29,12 +29,12 @@ Wenn beim Versand von E-Mails verdächtige Aktivitäten festgestellt werden, wir
 
 > [!warning]
 >
-> „Verdächtige Aktivität“ bedeutet:
+> "Verdächtige Aktivität" kann bedeuten:
 >
-> - Der Anti-Spam-Server, der E-Mails beim Versand scannt, hat festgestellt, dass ein oder mehrere Elemente der E-Mail als verdächtig angesehen werden und eine SPAM-E-Mail darstellen können.
-> - Die Häufigkeit des Versands und die Anzahl der Empfänger sind zu hoch und führen dazu, dass der Versand als Spam betrachtet wird. Für den massiven Versand ist es notwendig, eine Mailingliste und keine Standard-E-Mail-Adresse zu verwenden.
+> - Der Anti-SPAM-Server, der E-Mails beim Versand scannt, hat ein oder mehrere Elemente der E-Mail als verdächtig eingestuft, die für SPAM-E-Mails typisch sind.
+> - Die Häufigkeit des Versands und die Anzahl der Empfänger sind ungewöhnlich hoch, was als SPAM-Massen-Mailing angesehen werden kann. Für Massen-Versand ist es notwendig, eine Mailingliste zu verwenden, statt einzelner E-Mail-Adressen.
 >
-> Die genauen Gründe für das Blockieren können nicht bekannt gegeben werden, um zu verhindern, dass das Spam-Erkennungssystem umgangen wird. Um den Inhalt einer E-Mail zu testen, können Sie ein externes Tool von OVHcloud wie [Mailtester](https://www.mail-tester.com/) verwenden.
+> Die genauen Gründe für einen gesperrten Account können nicht bekannt gegeben werden, um zu Versuche zu verhindern, das SPAM-Erkennungssystem zu umgehen. Um den Inhalt einer E-Mail zu testen, können Sie ein externes Tool wie [Mailtester](https://www.mail-tester.com/) verwenden.
 >
 
 Überprüfen Sie zunächst gegenüber allen Benutzern des gesperrten E-Mail-Accounts, ob sie die Sperrung direkt verursacht haben, etwa mit einem ungewöhnlichen Nutzungsverhalten (z.B. aufgrund eines Massenversands). Ist das der Fall, müssen Sie dies vor der Freigabe der betroffenen Accounts korrigieren.
