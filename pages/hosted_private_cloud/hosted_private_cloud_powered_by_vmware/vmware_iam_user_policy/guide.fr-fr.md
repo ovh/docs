@@ -1,7 +1,7 @@
 ---
 title: "IAM pour VMware on OVHcloud - Comment associer un utilisateur à une politique IAM globale"
 excerpt: "Découvrez comment associer une identité OVHcloud à une politique IAM"
-updated: 2024-05-22
+updated: 2024-05-23
 ---
 
 > [!warning]
@@ -23,19 +23,19 @@ updated: 2024-05-22
 ### Comment associer un utilisateur à une politique IAM globale ?
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur votre nom en haut à droite de l'espace client puis cliquez sur vos initiales pour accéder à la rubrique `Mon compte`{.action}.<br>
-Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action] et restez dans l'onglet `Politiques.`{.action}.
+Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action} et restez dans l'onglet `Politiques.`{.action}.
 
 ![IAM USER POLICY](images/iam_user_policy_4.png){.thumbnail}
 
-Vous retrouverez vos politiques si vous en avez.
+Vous retrouverez vos politiques que vous avez déjà créées.
 
 Cliquez sur le bouton `...`{.action} à droite de la politique IAM concenée puis cliquez sur `Gérer les identités associées`{.action}.
 
-Renseignez alors l'identité souhaitée. Il peut s'agir d'utilisateurs, d'un NIC, d'une adresse e-mail, de groupes d'utilisateurs :
+Renseignez alors l'identité souhaitée. Il peut s'agir d'utilisateurs, d'un NIC, d'une adresse e-mail, de groupes d'utilisateurs.
 
-Uniquement les Groupes IAM (et non les groupes IAM Vsphere) apparaisse automatiquement, attention à bien copier-coller votre choix sans fautes.
+Uniquement les Groupes IAM (et non les groupes IAM vSphere) apparaissent automatiquement, attention à bien copier-coller votre choix sans fautes.
 
-Validez votre choix en cliquant sur `Ajouter`{.action}
+Validez votre choix en cliquant sur `Ajouter`{.action}.
 
 ![IAM user policy](images/iam_user_policy_3.png){.thumbnail}
 
@@ -48,5 +48,7 @@ Validez votre choix en cliquant sur `Ajouter`{.action}
 - Guide 3 : [IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
 - Guide 4 : [IAM pour VMware on OVHcloud - Comment associer un rôle vSphere à une politique IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
 - Guide 5 : IAM pour VMware on OVHcloud - Comment associer un utilisateur à une politique IAM globale
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
