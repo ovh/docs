@@ -12,8 +12,8 @@ When your email account is blocked for SPAM, it means that suspicious sending ac
 
 ## Requirements
 
-- An [OVHcloud email solution](https://www.ovhcloud.com/en-gb/emails/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud email solution](/links/web/emails/).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 ## Instructions <a name="instructions"></a>
 
@@ -26,6 +26,16 @@ If the block is occuring on an MX Plan email account, identify the version you a
 ### Step 1: Investigating why your email account is blocked for SPAM <a name="step1"></a>
 
 When suspicious activity is detected at the email sending level, the account concerned is automatically blocked. In this situation, you can no longer send emails from this email account.
+
+> [!warning]
+>
+> “Suspicious activity” means:
+>
+> - The anti-spam server, which scans emails when they are sent, has found that one or more elements of the email are considered suspicious and may constitute SPAM email.
+> - The sending frequency and the number of recipients are too high and contribute to considering the sending as spam. To send bulk emails, you will need to use a mailing list, not a standard email address.
+>
+> The precise reasons for a blockage cannot be disclosed to avoid any attempt to bypass the SPAM detection system. To test the content of an email, you can use a tool external to OVHcloud such as [Mailtester](https://www.mail-tester.com/).
+>
 
 First of all, make sure that any user of the blocked email account has caused the block directly, following an uncommon use of the email account (for example a mass email sending operation). If this is the case, you must resolve the root cause before unblocking the account.
 
