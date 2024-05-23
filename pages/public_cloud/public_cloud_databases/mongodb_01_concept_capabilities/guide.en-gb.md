@@ -111,12 +111,11 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 *Enterprise* and *Advanced* plan clusters are automatically backed up daily, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
 
-See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
+See the [Automated Backups guide]([https://help.ovhcloud.com/csm/en-public-cloud-databases-backups?id=kb_article_view&sysparm_article=KB0048766)) for more information.
 
 #### Logs and Metrics
 
-Logs and metrics are available through the Control Panel, API, and could be forwarded to Logs Data Platform. See the [Public Cloud Databases - How to setup logs forwarding guide]([https://help.ovhcloud.com/csm/en-public-cloud-databases-logs-to-customers?id=kb_article_view&sysparm_article=KB0062100)) for more information.
-
+Logs and metrics are available through the Control Panel, API, and could be forwarded to Logs Data Platform. See the [Public Cloud Databases - How to setup logs forwarding guide]([https://www.ovhcloud.com/<locale>/public-cloud/prices/#4951](https://help.ovhcloud.com/csm/en-public-cloud-databases-logs-to-customers?id=kb_article_view&sysparm_article=KB0062100))for more information.
 - **Logs retention:** 1000 lines of logs;
 - **Metrics retention:** 1 calendar year.
 
