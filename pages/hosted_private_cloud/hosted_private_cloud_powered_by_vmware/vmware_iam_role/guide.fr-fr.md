@@ -44,8 +44,6 @@ Dans la fenêtre qui s'affiche, définissez le nom de votre rôle puis cliquez s
 
 Vous pouvez ensuite éditer les droits du groupe de la même manière qu'avec un utilisateur local vSphere.
 
-Vous pouvez aussi faire le choix d'être **vSphereAdmin** dans les permissions managées de la politique IAM.
-
 #### Créer un rôle IAM via l'API OVHcloud
 
 > [!success]
