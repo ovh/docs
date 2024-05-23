@@ -42,7 +42,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 >
 > Esistono principalmente due tipi di **TLD**: I **ccTLD** e i **gTLD**. I **ccTLD** corrispondono a **TLD** relativi a una regione o a un paese (*.it*, *.be*, *.uk*, *.de*, *.paris*, ecc.). I **gTLD** corrispondono a **TLD** più generici (*.net*, *.com*, *.info*, *.org*, ecc.).
 >
-> La procedura esatta per il cambio di proprietà di un dominio può quindi variare, in particolare per alcuni **ccTLD**, quali *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, ecc., e per alcuni **TLD* speciali (*.am*, *.fm*, ecc.). Per alcuni di essi, il cambio di assegnatario è un'operazione a pagamento. Il cambio di proprietà può anche essere sospeso per diversi motivi, ad esempio per mancato pagamento, abuso o blocco da parte del registro. 
+> La procedura esatta per il cambio di proprietà di un dominio può quindi variare, in particolare per alcuni **ccTLD** (*.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, ecc.) e per alcuni **TLD* speciali (*.am*, *.fm*, ecc.). Per alcuni di essi, il cambio di assegnatario è un'operazione a pagamento. Il cambio di proprietà può anche essere sospeso per diversi motivi, ad esempio per mancato pagamento, abuso o blocco da parte del registro. 
 >
 > In caso di dubbi, consulta queste risorse:
 >
