@@ -31,10 +31,10 @@ Lorsqu'une activité suspecte est détectée au niveau de l'envoi des e-mails, l
 >
 > Une « activité suspecte » signifie que :
 >
-> - Le serveur anti-spam, qui scanne les e-mails à l'envoi, a constaté qu'un ou plusieurs éléments de l'e-mail sont considérés comme suspectes et peuvent constituer un e-mail SPAM.
-> - La fréquence d'envoi et le nombre de destinataires sont trop importants et contribuent à considérer l'envoi comme du spamming. En effet pour réaliser des envoies massif, il est nécessaire d'utiliser un service de mailing list mais pas une adresse e-mail standard.
+> - Le serveur anti-spam, qui scanne les e-mails à l'envoi, a constaté qu'un ou plusieurs éléments de l'e-mail sont considérés comme suspects et peuvent constituer un e-mail SPAM.
+> - La fréquence d'envoi et le nombre de destinataires sont trop importants et contribuent à considérer l'envoi comme du spamming. En effet, pour réaliser des envois massifs, il est nécessaire d'utiliser un service de mailing list et non une adresse e-mail standard.
 >
-> Les raisons précises d'un blocage ne peuvent pas être divulguées pour éviter toute tentative de contournement du système de détection des SPAM. Pour tester le contenu d'un e-mail, vous pouvez utiliser un outil externe à OVHcloud comme [Mailtester](https://www.mail-tester.com/).
+> Les raisons précises d'un blocage ne peuvent pas être divulguées pour éviter toute tentative de contournement du système de détection des SPAM. Pour tester le contenu d'un e-mail, vous pouvez utiliser un outil externe à OVHcloud tel que [Mailtester](https://www.mail-tester.com/).
 >
 
 Tout d'abord, assurez-vous, auprès du (des) utilisateur(s) de l'adresse e-mail bloquée, qu'il(s) n'est (ne sont) pas directement à l'origine du blocage, suite à une utilisation inhabituelle de l'adresse e-mail (par exemple, suite à la réalisation d'envois massifs d'e-mails). Si c'est le cas, vous devez corriger la situation avant de débloquer l'adresse.
@@ -101,7 +101,7 @@ Vous retrouverez ainsi l'e-mail qui vous a été transmis, celui-ci génère un 
 
 Le ticket d'assistance qui a été créé se présente comme ci-dessous :
 
-> 
+>
 > Cher Client,
 >
 > Notre système a détecté que l'adresse **youraddress@example.com** hébergée sur nos systèmes sous le service **servicename** est source d'envoi de courriers indésirables (spams).
@@ -117,7 +117,7 @@ Le ticket d'assistance qui a été créé se présente comme ci-dessous :
 > - Avez-vous une règle de redirection vers une autre adresse e-mail ?
 >
 > - Avez-vous répondu à un Spam ?
-> 
+>
 > Ces réponses nous aideront à réactiver votre compte rapidement.
 > <br>
 > <br>
