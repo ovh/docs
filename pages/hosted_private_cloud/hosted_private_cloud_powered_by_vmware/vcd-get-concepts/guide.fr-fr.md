@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Les concepts fondamentaux de VCD"
 excerpt: "Decouvrez les concepts fondamentaux de VMware Cloud Director"
-updated: 2024-05-22
+updated: 2024-05-23
 ---
 
 ## Objectif

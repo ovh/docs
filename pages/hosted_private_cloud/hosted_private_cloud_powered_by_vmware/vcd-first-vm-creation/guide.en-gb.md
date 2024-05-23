@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Creating a new virtual machine"
 excerpt: "How to create a new Virtual Machine in VCD"
-updated: 2024-05-22
+updated: 2024-05-23
 ---
 
 ## Objective
@@ -41,7 +41,7 @@ To create your virtual machine, first go to the datacentre where you plan to dep
 >> ![Menu VM Creation](images/vdc-creation-vm-scratch.png){.thumbnail}<br>
 >> The `Compute` section allows you to configure the desired amount of vCPU and memory for this virtual machine.
 > **From Clone**
->> What is a **Clone**? A Clone is a copy of a virtual machine. In the case of a VM, the disk settings correspond with the machine used. You need to launch the copy from the VM: Click on `Applications` > `VM` > `Actions` > `Copy`.
+>> What is a **Clone**? A Clone is a copy of a virtual machine. In the case of a VM, the disk settings correspond with the machine used. You need to launch the copy from the VM: Click on `Applications` > `VM` > `Actions` > `Copy`, in the "Applications" section.
 >> Warning: A vApp must always be added on VDC. Follow the dropdown menu for the various settings available, just like creating a VM.<br><br>
 >> ![Menu Vm Creation](images/vcd-vm-clone.png){.thumbnail}<br>
 
@@ -72,6 +72,11 @@ To conclude, please review all information provided to ensure accuracy. Next, cl
 ![VM Template Created](images/vcd-vm-template-created.png){.thumbnail}
 
 If you have used the **From scratch** method, you just need to turn on your server and launch the installation of your OS.
+
+
+> **Creating a virtual machine, in pictures:**
+>
+> ![VM Creation Gif](images/vcd-create-VM.gif){.thumbnail}
 
 ## Go further
 
