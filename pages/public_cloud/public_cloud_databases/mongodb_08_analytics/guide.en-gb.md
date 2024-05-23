@@ -6,7 +6,8 @@ updated: 2023-12-06
 
 ## Objective
 
-This guide shows how to configure a node in your cluster dedicated to analytics-type queries in a Public Cloud Databases for MongoDB cluster. This allows you to run such queries, or [BI (Business Intelligence)](https://en.wikipedia.org/wiki/Business_intelligence) tools - including [MongoDB BI Connector](https://www.mongodb.com/products/bi-connector) in a way that doesn't degrade the operational performance of the cluster.
+This guide shows how to configure a node in your cluster dedicated to analytics-type queries in a Public Cloud Databases for MongoDB Advanced cluster. This allows you to run such queries, or [BI (Business Intelligence)](https://en.wikipedia.org/wiki/Business_intelligence) tools - including [MongoDB BI Connector](https://www.mongodb.com/products/bi-connector) in a way that doesn't degrade the operational performance of the cluster.
+
 
 ## Requirements
 
