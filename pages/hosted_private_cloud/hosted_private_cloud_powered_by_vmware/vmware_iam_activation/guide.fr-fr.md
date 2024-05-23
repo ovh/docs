@@ -1,7 +1,7 @@
 ---
 title: "IAM pour VMware on OVHcloud - Comment activer IAM"
 excerpt: "Découvrez comment activer IAM pour votre offre VMware on OVHcloud via l'espace client OVHcloud ou par le biais de l'API OVHcloud"
-updated: 2024-05-22
+updated: 2024-05-23
 ---
 
 > [!warning]
@@ -35,7 +35,7 @@ Sous la section `IAM OVHcloud`{.action}, cliquez sur `Activer l'IAM OVHcloud`{.a
 ![Activer IAM](images/iam_enable_2.png){.thumbnail}
 
 > [!success]
-> Une fois IAM activé, son status sera `Activé` (*Enabled*) et en vert.
+> Une fois IAM activé, son statut sera `Activé` (*Enabled*) et en vert.
 
 ![Activer IAM](images/iam_enable_3.png){.thumbnail}
 
@@ -83,5 +83,7 @@ Vous pouvez maintenant suivre le guide « [IAM pour VMware on OVHcloud - Comment
 - Guide 3 : [IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
 - Guide 4 : [IAM pour VMware on OVHcloud - Comment associer un rôle vSphere à une politique IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
 - Guide 5 : [IAM pour VMware on OVHcloud - Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
