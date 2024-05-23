@@ -1,7 +1,7 @@
 ---
 title: "Cómo cambiar el propietario de un nombre de dominio"
 excerpt: "En esta guía, encontrará diversas informaciones en relación con el cambio de propietario del nombre de un dominio."
-updated: 2024-03-07
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -18,6 +18,9 @@ Además de [gestionar los contactos](/pages/account_and_service_management/accou
 >Para ello, debe [modificar los contactos](/pages/account_and_service_management/account_information/managing_contacts) del nombre de dominio.
 >
 > Si necesitas hacer un cambio de titular y un cambio de contacto para un mismo nombre de dominio, no hay orden preferente. Sin embargo, es el contacto del administrador quien puede iniciar estas operaciones. Por lo tanto, estos dos cambios se realizan en el área de clientes del contacto del administrador del nombre de dominio.
+>
+> Los datos relativos al propietario de un dominio solo tienen un valor administrativo y son totalmente independientes de los datos que puedan asociarse a un ID de cliente de OVHcloud. Por lo tanto, un particular o una organización (empresa, asociación, etc.) que únicamente esté declarado como propietario de un dominio no tendrá acceso al área de cliente de OVHcloud.
+>
 
 **Descubra cómo cambiar el propietario de un dominio**
 
@@ -39,7 +42,7 @@ Además de [gestionar los contactos](/pages/account_and_service_management/accou
 >
 > Existen principalmente dos tipos de **TLD** : **ccTLD** y **gTLD**. Los **ccTLD** corresponden a **TLD** relativos a una región o un país (*.es*, *.be*, *.uk*, *.de*, *.paris*, etc.). **gTLD** correspondientes a **TLD** más genéricos (*.net*, *.com*, *.info*, *.org*, etc.).
 >
-> El procedimiento exacto para el cambio de propietario de un dominio puede variar, en particular para determinados dominios **ccTLD**, como *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) y para algunos **TLD** especiales (*.am* , *.fm*, etc.). Para algunos de ellos, un cambio de propietario es una operación de pago. El cambio de propietario también puede ser suspendido por varias razones, por ejemplo por impago, abuso o bloqueo por parte del registro. 
+> El procedimiento exacto para el cambio de propietario de un dominio puede variar, en particular para determinados dominios **ccTLD** (*.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) y para algunos **TLD** especiales (*.am* , *.fm*, etc.). Para algunos de ellos, un cambio de propietario es una operación de pago. El cambio de propietario también puede ser suspendido por varias razones, por ejemplo por impago, abuso o bloqueo por parte del registro. 
 >
 Si tiene alguna duda, le recomendamos que consulte los siguientes recursos:
 >
