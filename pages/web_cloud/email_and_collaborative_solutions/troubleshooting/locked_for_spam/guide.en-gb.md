@@ -29,12 +29,12 @@ When suspicious activity is detected at the email sending level, the account con
 
 > [!warning]
 >
-> “Suspicious activity” means:
+> “Suspicious activity” can mean:
 >
-> - The anti-spam server, which scans emails when they are sent, has found that one or more elements of the email are considered suspicious and may constitute SPAM email.
-> - The sending frequency and the number of recipients are too high and contribute to considering the sending as spam. To send bulk emails, you will need to use a mailing list, not a standard email address.
+> - The anti-spam server, which scans emails when they are sent, has found one or more elements of the email that are suspicious and indicate SPAM.
+> - The sending frequency and the number of recipients are unusually high, which can be considered SPAM mass mailing. To send bulk emails, you will need to use a mailing list instead of single email addresses.
 >
-> The precise reasons for a blockage cannot be disclosed to avoid any attempt to bypass the SPAM detection system. To test the content of an email, you can use a tool external to OVHcloud such as [Mailtester](https://www.mail-tester.com/).
+> The precise reasons for a blocked account cannot be disclosed in order to prevent attempts to bypass the SPAM detection system. To test the content of an email, you can use a tool external to OVHcloud such as [Mailtester](https://www.mail-tester.com/).
 >
 
 First of all, make sure that any user of the blocked email account has caused the block directly, following an uncommon use of the email account (for example a mass email sending operation). If this is the case, you must resolve the root cause before unblocking the account.
