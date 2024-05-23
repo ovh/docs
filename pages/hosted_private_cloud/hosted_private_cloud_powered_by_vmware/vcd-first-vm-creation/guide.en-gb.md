@@ -41,8 +41,8 @@ To create your virtual machine, first go to the datacentre where you plan to dep
 >> ![Menu VM Creation](images/vdc-creation-vm-scratch.png){.thumbnail}<br>
 >> The `Compute` section allows you to configure the desired amount of vCPU and memory for this virtual machine.
 > **From Clone**
->> What is a **Clone** ? A Clone is a copy of a virtual machine. In the case of a VM, the disk settings associated with the machine used. You need to launch the copy from the VM, click on `Applications` > `VM` > `Actions` > `Copy`
->> Warning : A vApp must always be added on VDC. Follow the dropdown menu for the various settings available, just like creating a VM.<br><br>
+>> What is a **Clone**? A Clone is a copy of a virtual machine. In the case of a VM, the disk settings correspond with the machine used. You need to launch the copy from the VM: Click on `Applications` > `VM` > `Actions` > `Copy`.
+>> Warning: A vApp must always be added on VDC. Follow the dropdown menu for the various settings available, just like creating a VM.<br><br>
 >> ![Menu Vm Creation](images/vcd-vm-clone.png){.thumbnail}<br>
 
 For the NIC section, you have the option to choose the type of NIC you want. The default type (VMXNET3) is often a good choice if you don't have any special requirements.
