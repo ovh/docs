@@ -121,7 +121,7 @@ Le ticket d'assistance qui a été créé se présente comme ci-dessous :
 > Ces réponses nous aideront à réactiver votre compte rapidement.
 > <br>
 > <br>
-> 
+>
 
 Dans la continuité de ce message, un échantillon d'en-têtes des e-mails envoyés vous a été transmis.
 
