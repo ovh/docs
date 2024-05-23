@@ -1,7 +1,7 @@
 ---
 title: "Configure dynamic DNS (DynHost/DynDNS) for your domain name"
 excerpt: "Find out how to configure a dynamic DNS record for your OVHcloud domain name"
-updated: 2024-03-07
+updated: 2024-05-22
 ---
 
 ## Objective
@@ -18,13 +18,18 @@ Dynamically updating a DNS record can prevent interruptions of your web services
 
 For example, the **DynHost** can be used for a self-hosted game server (located on your company premises or at your home) without a static IP address, meaning an **I**nternet **S**ervice **P**rovider (**ISP**) assigns a new IP address regularly.
 
+> [!primary]
+>
+> Any A or AAAA record with a TTL (**T**ime **T**o **L**ive) of 60 seconds is considered DynHost. The TTL is a value that indicates how long a DNS record is cached by DNS servers before it is updated.
+>
+
 **This guide explains how to configure a dynamic DNS record (DynHost) for your OVHcloud domain name.**
 
 ## Requirements
 
 - You have access to manage the domain name in the [OVHcloud Control Panel](/links/manager).
 - The domain name has OVHcloud DNS servers configured as its nameservers.
-- The DynHost record you are about to create must not already exist as an "A" record in your domain name’s OVHcloud DNS zone.
+- The DynHost record you are about to create must not already exist as an "A" or "AAAA" record in your domain name’s OVHcloud DNS zone.
 
 > [!warning]
 >
@@ -67,23 +72,18 @@ Once you have filled in all of the required fields, click `Confirm`{.action}. Th
 
 ### Step 2: Create the dynamic DNS record (DynHost) <a name="step2"></a>
 
-This second step involves creating the DNS record that must be updated dynamically. As a reminder, it must not already exist in your domain name’s OVHcloud DNS zone as an "A" record. For advice on how to check this and delete the A record if necessary, please read our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)".
+This second step involves creating the DNS record that must be updated dynamically. As a reminder, it must not already exist in your domain name’s OVHcloud DNS zone as an "A" or "AAAA" record. For advice on how to check this and delete the A record if necessary, please read our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 Once you are ready to create the DynHost record, go to the `DynHost`{.action} tab, then click `Add a DynHost`{.action}. In the popup window, enter the following information:
 
 |Information|Description|
 |---|---|
 |Subdomain|Enter the subdomain that the DNS record must be dynamically updated for. This subdomain must be identical to the one you entered when you created the DynHost username. **If you would like to set up a DynHost directly for your domain name, leave this form blank**|
-|Target IP|Enter the IP address (IPv4 only) currently mapped in the DNS record. This is usually the public IP address of your Internet access box or your self-hosted server. In accordance with the DynHost principle, the IP will from now on be updated automatically.|
-
-> [!primary]
->
-> Only one **IPv4** address can be used to set up a DynHost. **IPv6** is currently unavailable.
->
-
-Once you have filled in all of the required fields, click `Confirm`{.action}. The DynHost record will then appear in the table on the current page. Repeat this step if you need additional DynHost records.
+|Target IP|Enter the IP address (IPv4 or IPv6) currently mapped in the DNS record. This is usually the public IP address of your Internet access box or your self-hosted server. In accordance with the DynHost principle, the IP will from now on be updated automatically.|
 
 ![dynhost](images/create-a-dynhost.png){.thumbnail}
+
+Once you have filled in all of the required fields, click `Confirm`{.action}. The DynHost record will then appear in the table on the current page. Repeat this step if you need additional DynHost records.
 
 ### Step 3: Automate the DynHost update
 
@@ -105,19 +105,19 @@ Once the client has been chosen and installed, you will need to configure it usi
 Depending on the client you are using, an update URL may be required, in addition to the DynHost username and subdomain concerned. If this is the case, use the URL below, taking care to replace the generic information:
 
 ```bash
-https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 ```
 
 |Information|Replace with|
 |---|---|
 |$HOSTNAME|The subdomain you are modifying the DNS configuration for|
-|$IP|The new target IPv4 address|
+|$IP|The new target IPv4 or IPv6 address|
 
 You can check if the destination IP address has been updated. To do this, log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Domain names`{.action} tab, then select the domain name concerned. On the page that appears, click on the `DynHost`{.action} tab. Check the IP address that appears in the `Target`{.action} column.
 
 > [!warning]
 >
-> Any changes made to a domain name’s active DNS zone can take between 4 and 24 hours to propagate.
+> Any changes made to a domain name’s active DNS zone via DynDNS can cause the update to propagate for several minutes.
 >
 
 ![dynhost](images/target.png){.thumbnail}

@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration von dynamischen DNS-Aktualisierungen (DynHost/DynDNS) für Ihren Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihren Domainnamen einrichten"
-updated: 2024-03-07
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -22,13 +22,18 @@ Das dynamische Aktualisieren eines DNS-Eintrags kann Unterbrechungen Ihrer Diens
 
 So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten Game Server (in Geschäftsräumen oder privat) ohne feste IP-Adresse zu betreiben; das bedeutet, Ihr **I**nternet **S**ervice **P**rovider (**ISP**) vergibt regulär eine neue Adresse.
 
+> [!primary]
+>
+> Jeder A- oder AAAA-Eintrag mit einer TTL (**T**ime **T**o **L**ive) von 60 Sekunden gilt als DynHost. Die TTL gibt an, wie lange DNS-Einträge von DNS-Servern zwischengespeichert werden, bevor sie aktualisiert werden.
+>
+
 **Diese Anleitung erklärt, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihren OVHcloud Domainnamen einrichten.**
 
 ## Voraussetzungen
 
 - Sie haben über Ihr [OVHcloud Kundencenter](/links/manager){.external} Zugriff auf die Verwaltung des Domainnamens.
 - Der Domainname verwendet OVHcloud DNS-Server als zuständige Namensserver.
-- Der DynHost-Eintrag, den Sie erstellen möchten, darf noch nicht als "A"-Eintrag in der DNS-Zone Ihres Domainnamens bei OVHcloud vorhanden sein.
+- Der DynHost-Eintrag, den Sie erstellen möchten, darf noch nicht als A- oder AAAA-Eintrag in der DNS-Zone Ihres Domainnamens bei OVHcloud vorhanden sein.
 
 > [!warning]
 >
@@ -71,23 +76,18 @@ Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{
 
 ### Schritt 2: Dynamischen DNS-Eintrag (DynHost) erstellen <a name="step2"></a>
 
-Im zweiten Schritt erstellen Sie den DNS-Eintrag, der dynamisch aktualisiert werden soll. Zur Erinnerung: Dieser darf nicht als A-Eintrag in der OVHcloud DNS-Zone des Domainnamens vorhanden sein. Um den Eintrag zu überprüfen und wenn nötig zu löschen, können Sie die Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“ verwenden.
+Im zweiten Schritt erstellen Sie den DNS-Eintrag, der dynamisch aktualisiert werden soll. Zur Erinnerung: Dieser darf nicht als A- oder AAAA-Eintrag in der OVHcloud DNS-Zone des Domainnamens vorhanden sein. Um den Eintrag zu überprüfen und wenn nötig zu löschen, können Sie die Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“ verwenden.
 
 Gehen Sie für die Erstellung des DynHost-Eintrags nun zurück auf den Tab `DynHost`{.action} und klicken Sie auf den Button `DynHost hinzufügen`{.action}. Geben Sie im angezeigten Fenster die notwendigen Informationen ein.
 
 |Information|Beschreibung|
 |---|---|
 |Subdomain|Geben Sie die Subdomain ein, deren DNS-Eintrag dynamisch aktualisiert werden soll. Diese Subdomain muss der bei der Erstellung des DynHost-Benutzers angegebenen Subdomain entsprechen. **Wenn Sie einen DynHost direkt für Ihren Domainnamen einrichten möchten, lassen Sie dieses Feld leer**|
-|Ziel-IP|Geben Sie die IP-Adresse (nur IPv4) ein, die derzeit für den DNS-Eintrag verwendet wird. Dies ist in der Regel die öffentliche IP-Adresse Ihrer Internet-Zugangsbox oder Ihres selbst gehosteten Servers. Nach dem DynHost-Prinzip wird diese Adresse künftig automatisch aktualisiert.|
-
-> [!primary]
->
-> Für die Einrichtung eines DynHost kann nur eine **IPv4**-Adresse verwendet werden. **IPv6** ist derzeit nicht verfügbar.
->
-
-Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{.action}. Der DynHost-Eintrag erscheint dann in der Tabelle auf der aktuell geöffneten Seite. Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Einträge erstellen möchten.
+|Ziel-IP|Geben Sie die IP-Adresse (IPv4 oder IPv6) ein, die derzeit für den DNS-Eintrag verwendet wird. Dies ist in der Regel die öffentliche IP-Adresse Ihrer Internet-Zugangsbox oder Ihres selbst gehosteten Servers. Nach dem DynHost-Prinzip wird diese Adresse künftig automatisch aktualisiert.|
 
 ![dynhost](images/create-a-dynhost.png){.thumbnail}
+
+Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{.action}. Der DynHost-Eintrag erscheint dann in der Tabelle auf der aktuell geöffneten Seite. Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Einträge erstellen möchten.
 
 ### Schritt 3: DynHost-Update automatisieren
 
@@ -109,21 +109,19 @@ Wenn Ihr Client einsatzbereit ist, muss er unter Verwendung der zuvor im OVHclou
 Je nach verwendetem Client kann zusätzlich zu DynHost-Benutzerinformationen und der Subdomain eine Update-URL erforderlich sein. Ist das der Fall, verwenden Sie die unten stehende URL und ersetzen Sie die generischen Elemente:
 
 ```bash
-https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 ```
 
 |Information|Ersetzen mit|
 |---|---|
 |$HOSTNAME|Subdomain, die von der Aktualisierung betroffen ist|
-|$IP|Neue Ziel-IPv4-Adresse|
+|$IP|Die neue IPv4- oder IPv6-Zieladresse.|
 
-Um zu überprüfen, ob die Ziel-IP aktualisiert wurde, gehen Sie in Ihrem Kundencenter zum Tab `DynHost`{.action}. Überprüfen Sie dort in der Spalte `Ziel`{.action} die angezeigte IP-Adresse.
-
-Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DynHost`{.action}. Überprüfen Sie die in der Spalte `Ziel`{.action} angezeigte IP-Adresse.
+Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DynHost`{.action}. Überprüfen Sie die in der Spalte `Ziel`{.action} angezeigte IP-Adresse.
 
 > [!warning]
 >
-> Jede Änderung der aktiven DNS Zone eines Domainnamenns kann zu einer Propagationszeit von 4 bis 24 Stunden führen.
+> Jede Änderung der aktiven DNS-Zone eines Domainnamens über DynDNS kann zu einer Verzögerung von mehreren Minuten bei der Propagation der Aktualisierung führen.
 >
 
 ![dynhost](images/target.png){.thumbnail}
