@@ -1,7 +1,7 @@
 ---
 title: '¿Qué hacer con una cuenta bloqueada debido a correo no deseado?'
 excerpt: 'Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado'
-updated: 2023-06-07
+updated: 2024-05-23
 ---
 
 ## Objetivo

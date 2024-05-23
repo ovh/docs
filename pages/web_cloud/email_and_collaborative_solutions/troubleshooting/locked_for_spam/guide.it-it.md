@@ -1,7 +1,7 @@
 ---
 title: 'Che fare in caso di account bloccato per invio di Spam ?'
 excerpt: 'Cosa fare se il tuo indirizzo email è bloccato per invio di Spam'
-updated: 2023-06-07
+updated: 2024-05-23
 ---
 
 ## Obiettivo
