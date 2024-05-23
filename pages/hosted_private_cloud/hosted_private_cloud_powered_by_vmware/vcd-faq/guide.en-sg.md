@@ -1,28 +1,28 @@
 ---
 title: "VMware Cloud Director - FAQ"
 excerpt: "Frequently asked questions on VCD"
-updated: 2024-04-16
+updated: 2024-05-23
 ---
 
 ## FAQ
 
 <a name="VCDonOVH"></a>
 
-### What is VMware Cloud Director by OVHcloud ?
+### What is VMware Cloud Director by OVHcloud?
 
-This is a new product available in the VMware on OVHcloud offering that provides you with a virtual Datacenter powered by VMware technology, on top of a mutualized infrastructure hosted and operated by OVHcloud.
+This is a new product available within the VMware on OVHcloud offers that provides you with a virtual Datacenter powered by VMware technology, on top of a mutualized infrastructure hosted and operated by OVHcloud.
 
 VMware Cloud Director by OVHcloud will be available in 3 tiers:
 
 - VCD Standard, providing the standard VMware stack virtualization capabilities.
-- VCD Advanced, including advanced networking & security capabilities on top of the standard tier.
+- VCD Advanced, including advanced networking & security capabilities on top of the Standard tier.
 - VCD Premium, adding high-performance vSAN storage to the Advanced tier.
 
 Please see [our key features page](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features) for more information.
 
 <a name="migrationVCD"></a>
 
-### How migration will be done by OVHcloud ?
+### How will the migration be done by OVHcloud?
 
 If you choose to migrate to VCD, OVHcloud will be handling the migration for you.
 
@@ -32,43 +32,47 @@ However, our goal is to migrate to VCD as soon as we’re ready. We’ll notify 
 
 <a name="migrationdata"></a>
 
-### How are you migrating my data to VCD ?
+### How are you migrating my data to VCD?
 
-Your data stays on the Leclerc v3 filers, we will expose to VCD the storage like we are exposing the storage to vSphere. The "live" migration between two hosts with the same CPU (Intel) is done via vMotion.
+Your data stays on the Leclerc v3 filers, we will expose the storage to VCD like we are exposing the storage to vSphere. The "live" migration between two hosts with the same CPU (Intel) is done via vMotion.
 
 <a name="accessAPI"></a>
 
-### Can I still have access to vSphere ESXi and vCenter API with VMware Cloud Director ?
+### Can I still have access to vSphere ESXi and vCenter API with VMware Cloud Director?
 
 With VMware Cloud Director, you cannot access to vSphere ESXi and vCenter API. You will have access to Cloud Director API, and you can use tools such as Terraform.
 
 <a name="backupTools"></a>
 
-### Can I still use products like Veeam, Naviko, Rubik to backup my VMs ?
+### Can I still use products like Veeam, Naviko, Rubik to backup my VMs?
 
 No, with VMware Cloud Director, you cannot use tools that request access to vSphre ESXi or vCenter.
 
-For Backup, we will propose Veeam Managed Backup with an integrated plugin for Backup VMs.
+For backup, we will propose Veeam Managed Backup with an integrated plugin for VM backups.
 We will propose 3 types of jobs by default, but you can add different policies if you need.
 
-Consumption will be based per VMs per Month and storage consumption per month.
+Consumption will be based on VMs per month and storage consumption per month.
 
 <a name="rulesvSphere"></a>
 
-### Can I use rules such as affinity and anti-affinity as previously used with vSphere ?
+### Can I use rules such as affinity and anti-affinity as previously used with vSphere?
 
 With VMware Cloud Director, you are able to set group affinity for Virtual Machines and rules such as anti-affinity to separate different virtual machines.
 
 <a name="certifications"></a>
 
-### Which certifications apply to the new VCD service ?
+### Which certifications apply to the new VCD service?
 
 At the service launch, no specific certification will be applicable to the VMware Cloud Director by OVHcloud service.
 
 However, supporting HDS, ISO27001, SOC2 or PCI-DSS certifications are clearly our roadmap objectives.
 
+### Can I choose the "Thin or Thick disk" type when I create a new virtual machine or disk with VCD?
+
+No, with VMware Cloud Director, each disk consumes storage in a Virtual Datacentre (VDC) organization. There is no associated "Thin or Thick" setting for a tenant.
+
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
