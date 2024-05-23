@@ -1,7 +1,7 @@
 ---
 title: "Gérer l’historique d'une zone DNS"
 excerpt: "Découvrez comment consulter, comparer, télécharger et restaurer vos sauvegardes de zone DNS"
-updated: 2024-05-22
+updated: 2024-05-23
 ---
 
 ## Objectif

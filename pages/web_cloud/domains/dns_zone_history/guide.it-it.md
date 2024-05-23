@@ -1,7 +1,7 @@
 ---
 title: "Gestire la cronologia di una zona DNS"
 excerpt: "Questa guide ti mostra come consultare, confrontare, scaricare e ripristinare i tuoi backup della zona DNS"
-updated: 2023-12-11
+updated: 2024-05-23
 ---
 
 > [!primary]
@@ -49,6 +49,14 @@ Visualizzi una tabella con la cronologia dei backup della zona DNS, ordinata in 
 - [Scaricare una zona DNS](#download)
 - [Ripristinare una zona DNS](#restore)
 - [Confronta due zone DNS](#compare)
+
+> [!primary]
+>
+> I backup della zona DNS sono soggetti alle seguenti limitazioni:
+>
+> - Conserviamo al massimo 200 backup per la stessa zona DNS.
+> - Ogni volta che il backup dura più di 31 giorni, viene automaticamente eliminato, ad eccezione degli ultimi **5 backup** completati.
+>
 
 ### Visualizzare una zona DNS <a name="view"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Gestionar el historial de una zona DNS"
 excerpt: "Descubra cómo consultar, comparar, descargar y restaurar las copias de seguridad de la zona DNS"
-updated: 2023-12-11
+updated: 2024-05-23
 ---
 
 > [!primary]
@@ -49,6 +49,14 @@ Se abrirá una nueva página en la que podrá consultar el historial de copias d
 - [Descargar una zona DNS](#download)
 - [Restaurar una zona DNS](#restore)
 - [Comparar dos zonas DNS](#compare)
+
+> [!primary]
+>
+> Las copias de seguridad de la zona DNS están sujetas a las siguientes limitaciones:
+>
+> - Conservamos un máximo de 200 copias de seguridad para una misma zona DNS.
+> - Cuando una copia de seguridad tiene más de 31 días, se elimina automáticamente, a excepción de las **5 copias de seguridad más recientes** realizadas.
+>
 
 ### Ver una zona DNS <a name="view"></a>
 

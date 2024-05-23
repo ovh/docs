@@ -1,7 +1,7 @@
 ---
 title: "Managing the history of a DNS zone"
 excerpt: "Find out how to view, compare, download and restore your DNS zone backups"
-updated: 2023-12-11
+updated: 2024-05-23
 ---
 
 ## Objective
@@ -41,6 +41,14 @@ On the new page, a table displays the backup history for your DNS zone, ordered 
 - [Download a DNS zone](#download).
 - [Restore a DNS zone](#restore).
 - [Compare two DNS zones](#compare).
+
+> [!primary]
+>
+> Your DNS zone backups are subject to the following limitations:
+>
+> - We keep a maximum of 200 backups for the same DNS zone.
+> - Once a backup is older than 31 days, it is automatically deleted, with the exception of the **5 most recent backups**.
+>
 
 ### View a DNS zone <a name="view"></a>
 
