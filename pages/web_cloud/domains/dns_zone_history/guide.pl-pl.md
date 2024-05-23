@@ -1,7 +1,7 @@
 ---
 title: "Zarządzanie historią strefy DNS"
 excerpt: "Dowiedz się, jak sprawdzać, porównywać, pobierać i przywracać kopie zapasowe strefy DNS"
-updated: 2024-05-22
+updated: 2024-05-23
 ---
 
 > [!primary]
