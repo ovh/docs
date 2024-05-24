@@ -19,7 +19,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `BHS` (Beauharnois, Canada)
 - `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
-- `SBG`(Strasbourg, France)
+- `SBG` (Strasbourg, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -71,65 +71,7 @@ More information on <https://github.com/opensearch-project/>.
 
 ### Hardware resources
 
-Here are the node types you can choose from:
-
-**Essentials plans**
-
-| Name    | Storage               | vCore | Memory (GB) |
-| ------- | ----------------------| ----- | ----------- |
-| db1-4   | From 40 GB to 120 GB  | 2     | 4           |
-| db1-7   | From 80 GB to 240 GB  | 2     | 7           |
-| db1-15  | From 160 GB to 480 GB | 4     | 15          |
-
-**Business plans**
-
-| Name    | Storage                  | vCore | Memory (GB) |
-| ------- | ------------------------ | ----- | ----------- |
-| db1-7   | From 240 GB to 720 GB    | 2     | 7           |
-| db1-15  | From 480 GB to 1.44 TB   | 4     | 15          |
-| db1-30  | From 960 GB to 2.88 TB   | 8     | 30          |
-| db1-60  | From 1.92 TB to 5.76 TB  | 16    | 60          |
-| db1-120 | From 3.84 TB to 11.52 TB | 32    | 120         |
-
-**Enterprise plans**
-
-| Name    | Storage                  | vCore | Memory (GB) |
-| ------- | ------------------------ | ----- | ----------- |
-| db1-7   | From 480 GB to 1.44 TB   | 2     | 7           |
-| db1-15  | From 960 GB to 2.88 TB   | 4     | 15          |
-| db1-30  | From 1.92 TB to 5.76 TB  | 8     | 30          |
-| db1-60  | From 3.84 TB to 11.52 TB | 16    | 60          |
-| db1-120 | From 7.68 TB to 23.04 TB | 32    | 120         |
-
-Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
-
-#### Flexible storage
-
-You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage) for more information.
-
-#### Node template upgrade
-
-You can upgrade the node template of your cluster to scale your hardware resources up. This operation causes no interruption of service but be aware that you will not be able to downgrade the node template afterwards.
-
-#### Disk type
-
-The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
-
-Also, the performance caracteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/en-gb/public-cloud/block-storage/) for more information about those performance caracteristics.
-
-Public Cloud Databases will select the most efficient disk type for your cluster depending on your cluster parameters.
-
-#### Effective storage
-
-The disk size listed above is the total disk size of the underlying machine. However, a small part of it goes towards the OS install.
-
-We try hard to avoid "disk full" situations that could be harmful to cluster health. Therefore:
-
-1. When reaching a concerning level of disk usage, a warning email is sent.
-2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
-3. You then have the ability to upgrade to a higher service plan with more storage.
-
-See the [Handling «Disk Full» situations documentation](/pages/public_cloud/public_cloud_databases/databases_10_full_disk_handling) for more information.
+For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](https://www.ovhcloud.com/<locale>/public-cloud/prices/#8551).
 
 ### Features
 
@@ -137,24 +79,25 @@ See the [Handling «Disk Full» situations documentation](/pages/public_cloud/pu
 
 Here is the list of plugins enabled by default:
 
-    ICU Analysis
-    Phonetic Analysis
-    kuromoji (Japanese Analysis)
-    Mapper Size
-    Open Distro for Elasticsearch SQL plugin
-    Open Distro for Elasticsearch Alerting plugin
-    Anomaly detection
-    Asynchronous search
-    Index Management
-    k-NN
-    Notebooks
-    Performance Analyzer
-    OpenSearch Dashboards Reports
-    Scheduler for Dashboards Reports
-    OpenSearch Dashboards GANTT Charts
-    OpenSearch Dashboards Trace Analytics
+- ICU Analysis
+- Phonetic Analysis
+- kuromoji (Japanese Analysis)
+- Mapper Size
+- Open Distro for Elasticsearch SQL plugin
+- Open Distro for Elasticsearch Alerting plugin
+- Anomaly detection
+- Asynchronous search
+- Index Management
+- k-NN
+- Notebooks
+- Performance Analyzer
+- OpenSearch Dashboards Reports
+- Scheduler for Dashboards Reports
+- OpenSearch Dashboards GANTT Charts
+- OpenSearch Dashboards Trace Analytics
 
 #### Network
+
 OpenSearch clusters are reachable through port specified in the control panel or API, for example 23125.
 
 Public as well as private networking (vRack) can be used for all the offers.
@@ -164,6 +107,7 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
+
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
@@ -190,7 +134,7 @@ See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/dat
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your OpenSearch metrics in Grafana. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information.
+Logs and metrics are available through the Control Panel, API and could be forwarded to Logs Data Platform. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your OpenSearch metrics in Grafana. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information. For more details on logs forwarding, see the [Public Cloud Databases - How to setup logs forwarding](https://help.ovhcloud.com/csm/en-public-cloud-databases-logs-to-customers?id=kb_article_view&sysparm_article=KB0062100).
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
