@@ -1,6 +1,6 @@
 ---
-title: 'Managing users'
-excerpt: 'Find out how to manage users via your OVHcloud account'
+title: 'Creating and managing local users on an OVHcloud account'
+excerpt: 'Find out how to add local users from your OVHcloud account'
 updated: 2024-03-05
 ---
 
@@ -32,11 +32,19 @@ Local users are one of the types of identities that can be set up on your OVHclo
 
 #### Add a user
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click `your name`{.action} (1) in the top right-hand corner, then click on your initials (2).
-Next, click on the `User management`{.action} tab (3), and `Add a user`{.action} (4).
+Click your account name in the top-right corner, then on your name again in the sidebar.
 
-![users-management](images/hubusers.png){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
+You can access the IAM menu via the dedicated entry in your customer account management.
+
+![Access to the IAM menu](images/access_to_the_IAM_menu_02.png){.thumbnail}
+
+Then click on the `Identities`{.action} tab to access to the local user management.
+
+![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+You can then click on `Add user`{.action}
 A window will pop up, and you will need to complete the required fields. Click `Confirm`{.action} to create the user.
 
 ![users-management](images/usersmanagement2.png){.thumbnail}
@@ -81,7 +89,7 @@ When you edit a user you can update their email address, group and description.
 
 #### Add a group
 
-On the `User management`{.action} tab, click on `Declare a group`{.action}.
+On the `Identities`{.action} tab, click on `Declare a group`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

@@ -148,9 +148,7 @@ Cela vous permettra d'ajouter et de supprimer les utilisateurs ou les groupes au
 
 ### Gestion des identités
 
-Les identités disponibles pour les politiques sont gérées via l'onglet `Gestion des utilisateurs`{.action}, dans le menu `Mon compte`{.action}.
-
-L'onglet `Identités`{.action} du menu IAM vous redirige vers ce menu.
+Les identités disponibles pour les politiques sont gérées via l'onglet `Identités`{.action}.
 
 Retrouvez les détails de la gestion des utilisateurs dans la [documentation dédiée](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
