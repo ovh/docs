@@ -6,13 +6,13 @@ updated: 2024-05-24
 
 ## Objectif
 
-Lorsque vous êtes absent et que vous n'êtes pas en mesure de consulterez votre adresse e-mail, vous pouvez mettre en place une réponse automatique (ou répondeur) qui transmettra un e-mail aux interlocuteurs qui vous envoie un e-mail.
+Lorsque vous êtes absent et que vous n'êtes pas en mesure de consulter votre adresse e-mail, vous pouvez mettre en place une réponse automatique (ou répondeur) qui transmettra un e-mail aux interlocuteurs qui vous envoient un e-mail.
 
 **Découvrez comment mettre en place une réponse automatique sur une adresse e-mail.**
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable) ou l'offre MX Plan commandé séparément.
+- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable) ou l'offre MX Plan commandée séparément.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
@@ -35,13 +35,13 @@ La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations 
 
 - `Type de répondeur`:
 
-**Associé à une boite e-mail**: à utiliser si cela concerne une adresse e-mail existante sur votre offre e-mail.
-**Libre**: à utiliser dans le cas d'un alias. Il n'est donc pas lié à une adresse existante.
+**Associé à une boite e-mail** : à utiliser si cela concerne une adresse e-mail existante sur votre offre e-mail.
+**Libre** : à utiliser dans le cas d'un alias. Il n'est donc pas lié à une adresse existante.
 
 - `Boîte email` ou `Nom du répondeur`: l'adresse e-mail ou l'alias concerné par la réponse automatique.
 - `Durée du répondeur`:
     - **Temporaire** : définissez une date de début et de fin à prendre en compte pour le fonctionnement de votre réponse automatique (utile si vous partez en congé par exemple).
-    - **Permanent** : la réponse automatique fonctionnera tant que vous ne l'aurez pas désactivé.
+    - **Permanent** : la réponse automatique fonctionnera tant que vous ne l'aurez pas désactivée.
 - `Envoyer une copie` ou `Garder les messages sur le serveur`: permets de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les conserver sur l'adresse e-mail.
 
 > [!warning]
@@ -49,17 +49,17 @@ La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations 
 > Si vous décochez cette case, les messages reçus pendant votre absence seront automatiquement supprimés.
 
 - `Adresse en copie` (seulement en mode libre) : dans le cas d'un alias, sélectionnez l'adresse e-mail qui recevra les e-mails envoyés vers l'alias.
-- `Message`: Il s'agit du message que vos correspondants recevront lorsqu'ils vous enverront un e-mail.
+- `Message` : il s'agit du message que vos correspondants recevront lorsqu'ils vous enverront un e-mail.
 
-Cliquez ensuite sur `Valider`{.action} pour terminer la configuration de votre réponse automatique soit mise en place.
+Cliquez ensuite sur `Valider`{.action} pour terminer la configuration de votre réponse automatique.
 
 > [!success]
 >
-> Si vous souhaitez déléguer la gestion d'une réponse automatique pour une adresse e-mail. Consultez notre guide [« Déléguer la gestion de vos comptes e-mails à une autre personne »](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation)
+> Si vous souhaitez déléguer la gestion d'une réponse automatique pour une adresse e-mail, consultez notre guide [« Déléguer la gestion de vos comptes e-mails à une autre personne »](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation)
 
 ### Modification ou suppression d'une réponse automatique
 
-Lorsque votre réponse automatique a été créée, il apparaît dans la liste visible dans la section `Gestion des répondeurs`{.action} de votre offre e-mail. Vous pouvez le supprimer ou le modifier en cliquant sur `...`{.action} à droite de celui-ci.
+Lorsque votre réponse automatique a été créée, elle apparaît dans la liste visible dans la section `Gestion des répondeurs`{.action} de votre offre e-mail. Vous pouvez la supprimer ou la modifier en cliquant sur `...`{.action} à droite de celle-ci.
 
 ![hosting](images/email_responder02.png){.thumbnail}
 
