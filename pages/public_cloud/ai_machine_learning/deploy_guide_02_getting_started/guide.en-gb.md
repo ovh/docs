@@ -182,7 +182,7 @@ In this example, we added the label **owner=elea** and two labels were automatic
 
 During the AI Deploy apps deployment process, we selected "restricted access". To query your app, you first need a valid security token.
 
-In your OVHcloud Control Panel left menu, go to the **AI Dashboard**, in the **AI & Machine Learning** section. Select the **Users & tokens** tab.
+In your OVHcloud Control Panel left menu, go to the `AI Dashboard`{.action} in the `AI & Machine Learning`{.action} section. Select the `Users & tokens`{.action} tab.
 
 Click on the `Create a token`{.action} button then fill in a name, a label selector, a role and region as below:
 
