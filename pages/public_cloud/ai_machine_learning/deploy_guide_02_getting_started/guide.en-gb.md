@@ -120,6 +120,7 @@ In both cases, you will have to specify:
 - `Mount directory` the location in the app where the synced data is mounted.
 
 There are also optional parameters:
+
 - `Prefix`: objects in the container are filtered on the basis of this prefix, only matching objects are synced.
 - `Authorisation` the permission rights on the mounted data. Available rights are **Read Only (ro)**, **Read Write (rw)**. Default value is rw.
 - `Cache` whether the synced data should be added to the project cache. Data in the cache can be used by other apps without additional synchronisation. To benefit from the cache, the new apps also need to mount the data with the cache option.
