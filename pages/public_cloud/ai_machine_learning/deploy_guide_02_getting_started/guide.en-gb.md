@@ -125,7 +125,7 @@ There are also optional parameters:
 - `Authorisation`: The permission rights on the mounted data. Available rights are **Read Only (ro)**, **Read Write (rw)**. Default value is rw.
 - `Cache` whether the synced data should be added to the project cache. Data in the cache can be used by other apps without additional synchronisation. To benefit from the cache, the new apps also need to mount the data with the cache option.
 
-To learn more about data, volumes and permission, check out the [data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) page.
+To learn more about data, volumes and permissions, check out the [data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) page.
 
 #### Step 5: Configure your AI Deploy app
 
