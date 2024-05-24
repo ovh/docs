@@ -95,14 +95,14 @@ Depending on the interface chosen, here are the steps to follow:
 
 Follow these steps to add a Health Monitor to a pool of your OVHcloud Load Balancer, which will monitor the health status of the servers in the pool:
 
-1. Log in to the [OVHcloud Control Panel](/links/manager).
-2. Navigate to the `Public Cloud`{.action} section and select your project.
-3. Click on `Load Balancer`{.action} in the left menu and select the Load Balancer you want to configure.
-4. Go to the `Pools`{.action} tab, then click on the Pool for which you want to create a Health Monitor.
+<strong>1.</strong> Log in to the [OVHcloud Control Panel](/links/manager).</br>
+<strong>2.</strong> Navigate to the `Public Cloud`{.action} section and select your project.</br>
+<strong>3.</strong> Click on `Load Balancer`{.action} in the left menu and select the Load Balancer you want to configure.</br>
+<strong>4.</strong> Go to the `Pools`{.action} tab, then click on the Pool for which you want to create a Health Monitor.
 
 ![Schema 1](images/healthM1.png){.thumbnail}
 
-5\. Click on the `Health Monitors`{.action} tab within the Pool details, then on `Add a Health Monitor`{.action}.
+<strong>5.</strong> Click on the `Health Monitors`{.action} tab within the Pool details, then on `Add a Health Monitor`{.action}.
 
 ![Schema 1](images/healthM2.png){.thumbnail}
 
@@ -111,8 +111,8 @@ Follow these steps to add a Health Monitor to a pool of your OVHcloud Load Balan
     - **Type**: Select the type of Health Monitor (e.g. HTTP, HTTPS, TCP, TLS-hello).
 
 - For **HTTP** and **HTTPS** types:
-  - **URL PATH**: Specify the path used for the test.
-  - **Expected Code**: Indicate the expected HTTP status codes, which can be a single digit, a list of digits separated by commas, or a range (two digits separated by a hyphen).
+    - **URL PATH**: Specify the path used for the test.
+    - **Expected Code**: Indicate the expected HTTP status codes, which can be a single digit, a list of digits separated by commas, or a range (two digits separated by a hyphen).
 
 - **Test Settings**:
     - **Max Retries Down**: Number of connection failures allowed before marking the member as failing (between 1 and 10, default 3).
@@ -120,7 +120,7 @@ Follow these steps to add a Health Monitor to a pool of your OVHcloud Load Balan
     - **Max Retries**: Total number of connection failures allowed before marking the member as inactive (between 1 and 10).
     - **Timeout**: Duration after which a test stops (must be equal to or greater than the periodicity).
 
-6\. Once all the information is filled in, click on `Add`{.action} to activate your Health Monitor.
+<strong>6.</strong> Once all the information is filled in, click on `Add`{.action} to activate your Health Monitor.
 
 ![Schema 1](images/healthM3.png){.thumbnail}
 
@@ -128,8 +128,8 @@ This process creates a Health Monitor that will regularly perform health checks 
 
 #### CLI (OpenStack)
 
-1. Ensure the OpenStack CLI tool is installed and configured on your machine.
-2. Use the following command to create a Health Monitor:
+<strong>1.</strong> Ensure the OpenStack CLI tool is installed and configured on your machine.</br>
+<strong>2.</strong> Use the following command to create a Health Monitor:</br>
 
 ```bash
 openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 3 --type HTTP --http-method GET --url-path /healthcheck --expected-codes 200 <POOL_ID>
@@ -137,7 +137,7 @@ openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 
 
 Replace <POOL_ID> with the ID of your Pool.
 
-3\. Confirm the creation of the Health Monitor by listing the Health Monitors associated with your Load Balancer using:
+<strong>3.</strong> Confirm the creation of the Health Monitor by listing the Health Monitors associated with your Load Balancer using:</br>
 
 ```bash
 openstack loadbalancer healthmonitor list
