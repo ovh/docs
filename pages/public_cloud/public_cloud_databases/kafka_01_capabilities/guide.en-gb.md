@@ -56,7 +56,8 @@ Here is an overview of the various plans' capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
-> **Note:** Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
+> [!primary]
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
 
 #### Nodes and replicas
 
@@ -70,7 +71,28 @@ More information on <https://github.com/apache/kafka/blob/trunk/LICENSE>.
 
 ### Hardware resources
 
-For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/<locale>/public-cloud/prices/#9667).
+Here are the node types you can choose from:
+
+**Business plans**
+
+| Name    | Storage                  | vCore | Memory (GB) |
+| ------- | ------------------------ | ----- | ----------- |
+| db1-4   | From 480 GB to 1.44 TB   | 2     | 4           |
+| db1-7   | From 960 GB to 2.88 TB   | 2     | 7           |
+| db1-15  | From 1.92 TB to 5.76 TB  | 4     | 15          |
+| db1-30  | From 3.84 TB to 11.52 TB | 8     | 30          |
+| db1-60  | From 7.68 TB to 23.04 TB | 16    | 60          |
+
+**Enterprise plans**
+
+| Name    | Storage                   | vCore | Memory (GB) |
+| ------- | ------------------------- | ----- | ----------- |
+| db1-7   | From 1.92 TB to 5.76 TB   | 2     | 7           |
+| db1-15  | From 3.84 TB to 11.52 TB  | 4     | 15          |
+| db1-30  | From 7.68 TB to 23.04 TB  | 8     | 30          |
+| db1-60  | From 15.36 TB to 46.08 TB | 16    | 60          |
+
+Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 
 #### Flexible storage
 
@@ -84,7 +106,7 @@ You can upgrade the node template of your cluster to scale your hardware resourc
 
 The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
 
-Also, the performance characteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better IOPS than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/en-gb/public-cloud/block-storage/) for more information about those performance characteristics.
+Also, the performance characteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/en-gb/public-cloud/block-storage/) for more information about those performance characteristics.
 
 Public Cloud Databases will select the most efficient disk type for your cluster depending on your cluster parameters.
 
@@ -101,7 +123,9 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 See the [Handling «Disk Full» situations documentation](/pages/public_cloud/public_cloud_databases/databases_10_full_disk_handling) for more information.
 
 ### Features
+
 #### Network
+
 Kafka clusters are reachable through a random port, attributed during cluster creation. Once your cluster is in **RUNNING** status, the Service URI will display the port to use.
 
 Public as well as private networking (vRack) can be used for all the offers.
@@ -111,9 +135,10 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
+
 Here are some considerations to take into account when using private network:
 
-- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
 
@@ -138,7 +163,7 @@ Schema registry is supported and can be activated on a running Kafka service by 
 
 #### Advanced parameters
 
-You can further customise your Kafka by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/public_cloud_databases/kafka_03_advanced_parameters_references) for more information on the supported parameters.
+You can further customize your Kafka by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/public_cloud_databases/kafka_03_advanced_parameters_references) for more information on the supported parameters.
 
 #### Backups
 
@@ -146,7 +171,7 @@ Kafka is a streaming tool. We don't backup Kafka data.
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel, API and could be forwarded to Logs Data Platform. For setup instructions, see the [Public Cloud Databases - How to setup logs forwarding guide](https://help.ovhcloud.com/csm/en-public-cloud-databases-logs-to-customers?id=kb_article_view&sysparm_article=KB0062100).
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Kafka logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
