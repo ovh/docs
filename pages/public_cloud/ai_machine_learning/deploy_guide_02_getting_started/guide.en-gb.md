@@ -272,7 +272,7 @@ You have the flexibility to keep your AI Deploy app running for an indefinite pe
 >> ![image](images/ai_app_stop.png){.thumbnail}
 >>
 >> Once stopped, your AI Deploy app will free up the previously allocated compute resources. Your endpoint is kept and if you restart your AI Deploy app, the same endpoint can be reused seamlessly.
-Also, when you stop your app, you no longer book compute resources which means you don't have expenses for this part. Only expenses for attached storage may occur.
+>> Also, when you stop your app, you no longer book compute resources which means you don't have expenses for this part. Only expenses for attached storage may occur.
 >>
 >> If you want to completely **delete** your AI Deploy app, just click on the `delete`{.action} action.
 >> Be sure to also delete your Object Storage data if you don't need it anymore, by going in the `Object Storage`{.action} section (in the Storage category).
