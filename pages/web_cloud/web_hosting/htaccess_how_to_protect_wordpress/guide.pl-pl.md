@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Użyj pliku htaccess w systemie WordPress"
 excerpt: "Dowiedz się, jak zabezpieczyć blog WordPress jednym lub kilkoma plikami htaccess"
-updated: 2024-05-22
+updated: 2024-05-24
 ---
 
 > [!primary]

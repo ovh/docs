@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Using the htaccess file with WordPress"
 excerpt: "Find out how to secure your WordPress blog with one or more htaccess files"
-updated: 2024-05-22
+updated: 2024-05-24
 ---
 
 ## Objective
