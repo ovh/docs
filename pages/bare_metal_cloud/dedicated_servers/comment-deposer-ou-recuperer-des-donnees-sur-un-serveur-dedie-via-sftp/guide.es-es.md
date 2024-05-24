@@ -1,6 +1,6 @@
 ---
-title: 'Subir o descargar datos en un servidor dedicado por SFTP'
-excerpt: 'Cómo transferir datos desde un servidor dedicado hacia un ordenador personal y viceversa'
+title: "Cómo descargar y recuperar datos en un servidor dedicado mediante SFTP"
+excerpt: "Cómo transferir datos desde un servidor dedicado hacia un ordenador personal y viceversa"
 updated: 2024-02-23
 ---
 

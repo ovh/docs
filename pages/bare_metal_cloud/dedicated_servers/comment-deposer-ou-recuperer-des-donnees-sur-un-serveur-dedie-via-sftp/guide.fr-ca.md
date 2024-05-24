@@ -1,6 +1,6 @@
 ---
-title: 'Récupérer et déposer des données sur un serveur dédié via SFTP'
-excerpt: 'Découvrez comment transférer facilement des données depuis et vers votre serveur dédié'
+title: "Comment télécharger et récupérer des données sur un serveur dédié via SFTP"
+excerpt: "Découvrez comment transférer facilement des données depuis et vers votre serveur dédié"
 updated: 2024-02-23
 ---
 
