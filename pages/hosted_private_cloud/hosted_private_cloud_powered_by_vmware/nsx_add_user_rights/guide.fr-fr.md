@@ -61,6 +61,7 @@ Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez acc
 </br></br>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <code class="action">VMware</code> > <code class="action">PCC-XXX.XXX.XXX.XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
 =======
 <code class="action">VMware</code> > <code class="action">pcc-xx..</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
@@ -68,6 +69,10 @@ Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez acc
 =======
 <code class="action">VMware</code> > <code class="action">pcc-xxx-xxx-xxx-xxx</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
 >>>>>>> 3d792cc553 (Fix guide.fr-fr.md)
+=======
+
+<code class="action">VMware</code> > <code class="action">PCC-XXX.XXX.XXX.XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
+>>>>>>> b6a565758d (Fix)
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_3.png" loading="lazy"></p>
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_13.png" loading="lazy"></p>
@@ -81,10 +86,14 @@ Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez acc
 <summary>Comment ajouter les droits pour votre utilisateur ?</summary>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Cliquez sur : <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code>.
 =======
 Cliquez sur : <code class="action">VMware</code> > <code class="action">pcc-xxx-xxx-xxx-xxx</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code>.
 >>>>>>> d20c7de2b9 (Fix guide.fr-fr.md)
+=======
+Cliquez sur : <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code>.
+>>>>>>> b6a565758d (Fix)
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_7.png" loading="lazy"></p>
 
@@ -97,12 +106,17 @@ Cliquez sur : <code class="action">VMware</code> > <code class="action">pcc-xxx-
 <summary>Comment ajoutez les droits aux Datacentres ?</summary>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il ne vous reste plus que à modifier les droits de chaque Datacenter souhaité en cliquant sur : <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Voir / Modifier les droits par DC</code> > <code class="action">Modifier</code>.
 </br></br>
 Une fenêtre s'ouvre alors. Choisissez les droits nécessaires parmi les 3 sections principales > <code class="action">Accès Vsphere</code> / <code class="action">Accès au vmNetwork</code> / <code class="action">Accès aux V(x)Lans</code>.
 =======
 Il ne vous reste plus que à modifier les droits de chaque Datacenter souhaité en cliquant sur : <code class="action">VMware</code> > <code class="action">pcc-xxx-xxx-xxx-xxx</code> > <code class="action">Utilisateur</code> > <code class="action">Voir / Modifier les droits par DC</code> > <code class="action">Modifier</code>.
 </br></br>
+=======
+Il ne vous reste plus que à modifier les droits de chaque Datacenter souhaité en cliquant sur : <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Voir / Modifier les droits par DC</code> > <code class="action">Modifier</code>.
+
+>>>>>>> b6a565758d (Fix)
 Une fenetre s'ouvre alors. Choisissez les droits nécessaires parmi les 3 sections principales > <code class="action">Accès vSphere</code> / <code class="action">Accès au vmNetwork</code> / <code class="action">Accès aux V(x)Lans</code>.
 >>>>>>> d20c7de2b9 (Fix guide.fr-fr.md)
 </br></br>
@@ -124,6 +138,7 @@ Si vous voulez faire des modifications dans l'interface Web NSX-T, des droits su
 <summary>Comment accéder à l'interface Web NSX-T ?</summary>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code>.
 </br></br>
 - Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX-XXX-XXX-XXX > Remplacez PCC-XXX-XXX-XXX-XXX par le nom de votre service PCC.
@@ -132,6 +147,11 @@ Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class
 </br></br>
 - Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/pcc-xxx-xxx-xxx-xxx > Remplacez-le par le nom de votre service VMware on OVHcloud.
 >>>>>>> d20c7de2b9 (Fix guide.fr-fr.md)
+=======
+Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code>.
+</br></br>
+- Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX-XXX-XXX-XXX > Remplacez PCC-XXX-XXX-XXX-XXX par le nom de votre service PCC.
+>>>>>>> b6a565758d (Fix)
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_9.png" loading="lazy"></p>
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_10.png" loading="lazy"></p>
@@ -148,7 +168,11 @@ Vous pouvez vérifier si NSX-T est activé sur votre Datacenter. Vous pouvez ég
 
 > [!api]
 >
+<<<<<<< HEAD
 > @api {v1} GET /dedicatedCloud/{serviceName}/nsxt
+=======
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/nsxt
+>>>>>>> b6a565758d (Fix)
 
 > **Paramètres:**
 >
