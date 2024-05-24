@@ -263,7 +263,7 @@ You have the flexibility to keep your AI Deploy app running for an indefinite pe
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
->> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+>> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 >>
 >> Then, select the `AI Deploy`{.action} section (in the Storage category) and access the details of your application by clicking on its UUID. 
 >> 
