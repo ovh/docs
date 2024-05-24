@@ -117,7 +117,7 @@ You can also mount an Object Storage as an output folder for example, to retriev
 In both cases, you will have to specify:
 
 - `Storage container` or `Git repository URL`: The name of the container to synchronise, or the GitHub repository URL (the one that ends by `.git`).
-- `Mount directory` the location in the app where the synced data is mounted.
+- `Mount directory`: The location in the app where the synced data is mounted.
 
 There are also optional parameters:
 
