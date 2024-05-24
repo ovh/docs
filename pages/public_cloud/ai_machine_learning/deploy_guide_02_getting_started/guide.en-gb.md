@@ -139,7 +139,7 @@ As an example, add a label with **Key=owner** and **Value=elea**.
 
 This will make the application accessible only to users who have the token associated with this label (key/value).
 
-Moreover, the default exposed port for your app's URL is `8080`. However, if you are using a specific framework that requires a different port, you can override the default and configure your application to use the desired alternative port.
+Moreover, the default exposed port for your app's URL is `8080`. However, if you are using a specific framework that requires a different port, you can override the default port and configure your application to use the desired alternative port.
 
 ![AI Deploy app configuration](images/ai_app_configuration.png){.thumbnail}
 
