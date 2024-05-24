@@ -258,6 +258,8 @@ Certbot will automatically renew the certificates. There are no further steps ne
 
 ## Go further
 
+[How to upload and retrieve data on a server via SFTP](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+
 [UFW documentation](https://help.ubuntu.com/community/UFW)
 
 [Apache documentation](https://httpd.apache.org/docs/)

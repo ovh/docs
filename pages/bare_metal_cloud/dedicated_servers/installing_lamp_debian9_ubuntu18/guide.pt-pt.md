@@ -266,6 +266,8 @@ Certbot renova automaticamente os certificados. Não são necessárias outras et
 
 ## Quer saber mais?
 
+[Como transferir e recuperar dados para um servidor através de SFTP](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+
 [Documentação UFW](https://help.ubuntu.com/community/UFW)
 
 [Documentação Apache](https://httpd.apache.org/docs/)
