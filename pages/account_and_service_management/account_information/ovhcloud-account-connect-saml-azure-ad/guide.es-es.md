@@ -1,5 +1,5 @@
 ---
-title: Activar las conexiones SSO de Azure con su cuenta OVHcloud
+title: Activar las conexiones SSO de Entra ID con su cuenta OVHcloud
 excerpt: "Esta guía explica cómo asociar su Entra ID (antes Azure Active Directory) a su cuenta de OVHcloud utilizando SAML 2.0"
 updated: 2024-03-05
 ---
