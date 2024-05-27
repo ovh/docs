@@ -144,7 +144,7 @@ Le guide de démarrage avec la solution NSX est disponible sur [ce lien](/pages/
 
 ### 9.2.4 Chiffrement des données
 
-Sur une infrastructure qualifiée SecNumcloud ou hors SecNumcloud, vous avez la possibilité d'appliquer un chiffrement au repos en utilisant la brique vNKP disponible sur le service pour chiffrer les VM ou au niveau des datastores d'un Cluster vSAN.
+Sur une infrastructure qualifiée SecNumcloud ou hors SecNumcloud, vous avez la la possibilité d'appliquer un chiffrement au repos en utilisant la brique vNKP disponible sur le service pour chiffrer les VM ou au niveau des datastores d'un Cluster vSAN.
 
 La même opération peut être réalisée si vous optez pour l'utilisation d'un KMS externe à l'offre OVHcloud.
 

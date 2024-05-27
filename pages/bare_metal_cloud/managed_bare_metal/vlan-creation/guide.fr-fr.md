@@ -70,7 +70,7 @@ Au niveau du Load Balancing, selectionnez *Route Based on IP hash* qui est la me
 
 > [!warning]
 >
-> Attention au niveau de la configuration de l'ordre du basculement, il est nécessaire de mettre la liason montante `lag1` en *Active* (connexion entre le réseau virtuel et le réseau physique), sinon aucune communication entre les hôtes ne sera possible.
+> Attention au niveau de de la configuration de l'ordre du basculement, il est nécessaire de mettre la liason montante `lag1` en *Active* (connexion entre le réseau virtuel et le réseau physique), sinon aucune communication entre les hôtes ne sera possible.
 >
 
 ![load balancing](images/13network6.png){.thumbnail}

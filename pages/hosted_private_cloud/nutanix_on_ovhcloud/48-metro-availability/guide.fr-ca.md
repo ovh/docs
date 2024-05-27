@@ -620,7 +620,7 @@ Cliquez à Gauche sur `Enable Disaster Recovery`{.action}.
 
 ![12 - Create Recovery Plan Roubaix 02](images/12-create-roubaix-recovery-plan02.png){.thumbnail}
 
-Normalement le plan de reprise doit être activé comme indiqué avec le message **Disaster Recovery enabled**. Cliquez sur la <i class="icons-close icons-gray"></i> à droite pour fermer cette fenêtre. 
+Normalement le plan de de reprise doit être activé comme indiqué avec le message **Disaster Recovery enabled**. Cliquez sur la <i class="icons-close icons-gray"></i> à droite pour fermer cette fenêtre. 
 
 ![12 - Create Recovery Plan Roubaix 03](images/12-create-roubaix-recovery-plan03.png){.thumbnail}
 

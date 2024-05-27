@@ -32,7 +32,7 @@ Découvrez comment installer et configurer votre équipement OverTheBox Intel ou
 
 Pour le bon déroulement de la procédure d'installation, il est impératif que vos modems répondent à 2 conditions :
 
-- Le serveur DHCP de vos modems doit être **activé**.
+- Le serveur DHCP de de vos modems doit être **activé**.
 - Les modems doivent être sur des réseaux locaux différents les uns des autres.
 
 > [!success]

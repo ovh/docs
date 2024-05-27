@@ -54,7 +54,7 @@ Exécutez l'appel API suivant :
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/iam/addRole
+> @api {v1} POST /dedicatedCloud/{serviceName}/iam/addRole
 >
 
 > [!warning]
