@@ -33,7 +33,7 @@ Aujourd'hui, il existe deux versions principales d'OverTheBox :
 - Version 1 (Intel & IT)
 - Version 2 (Plus & IT)
 
-Plus performante, la version 2 offre plus de possibilités à l'utilisateur. OverTheBox v2 vous permet entre autres d'associer jusqu'à 8 connexions distinctes afin d'augmenter le débit et d'optimiser votre connexion Internet. Découvrez comment [installer OverTheBox v2 (Plus & IT)](/pages/web_cloud/internet/overthebox/plus_itv2_installation).
+Plus performante, la version 2 offre plus de possibilités à l'utilisateur. OverTheBox v2 vous permet entre autres d'associer jusqu'à 8 connexions distinctes afin d'augmenter le débit et d'optimiser votre connexion Internet. Découvrez [comment installer OverTheBox](/pages/web_cloud/internet/overthebox/plus_itv2_installation).
 
 Si vous possédez la version 1 d'OverTheBox, consultez le guide pour [installer OverTheBox v1 (Intel & IT)](/pages/web_cloud/internet/overthebox/intel_itv1_installation). Pour en savoir plus, découvrez [comment fonctionne OverTheBox v1 (Intel & IT)](/pages/web_cloud/internet/overthebox/install_comment_fonctionne_overthebox_v1).
 
