@@ -51,7 +51,7 @@ Pour activer l'option IAM, exécutez l'appel API suivant :
 
 > [!api]
 >
-> @api {v1} POST /dedicatedCloud/{serviceName}/iam/enable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/iam/enable
 >
 
 #### Pour vérifier si IAM est activé
@@ -60,7 +60,7 @@ Pour contrôler l'activation d'IAM, exécutez l'appel API suivant :
 
 > [!api]
 >
-> @api {v1} GET /dedicatedCloud/{serviceName}/iam
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/iam
 >
 
 Retour de l'API :
