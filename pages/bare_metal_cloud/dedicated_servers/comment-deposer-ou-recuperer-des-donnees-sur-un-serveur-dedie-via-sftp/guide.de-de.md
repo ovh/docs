@@ -1,6 +1,6 @@
 ---
-title: 'Daten via SFTP auf einem Dedicated Server ablegen oder herunterladen'
-excerpt: 'Erfahren Sie hier, wie Sie SFTP zur Datenübertragung verwenden'
+title: "Daten via SFTP auf einem Dedicated Server ablegen oder herunterladen"
+excerpt: "Erfahren Sie hier, wie Sie SFTP zur Datenübertragung verwenden"
 updated: 2024-02-23
 ---
 

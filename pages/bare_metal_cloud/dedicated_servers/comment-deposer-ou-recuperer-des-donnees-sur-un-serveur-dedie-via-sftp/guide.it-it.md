@@ -1,5 +1,5 @@
 ---
-title: 'Caricare e recuperare dati su un server dedicato tramite il protocollo SFTP'
+title: "Come scaricare e recuperare dati su un server dedicato via SFTP"
 excerpt: 'Come trasferire dati da un server dedicato a un computer personale e viceversa'
 updated: 2024-02-23
 ---

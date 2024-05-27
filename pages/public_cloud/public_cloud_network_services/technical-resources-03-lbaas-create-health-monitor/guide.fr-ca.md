@@ -1,6 +1,6 @@
 ---
-title: Création et gestion d'un Health Monitor pour le Load Balancer Public Cloud OVHcloud
-excerpt: Maitriser la mise en place et la gestion d'un Health Monitor avec les Load Balancers Public Cloud OVHCloud via l'espace OVHcloud,CLI,Horizon et Terraform.
+title: "Création et gestion d'un Health Monitor pour le Load Balancer Public Cloud OVHcloud"
+excerpt: "Maîtriser la mise en place et la gestion d'un Health Monitor avec les Load Balancers Public Cloud OVHCloud via l'espace client OVHcloud, la CLI, Horizon et Terraform"
 updated: 2024-05-07
 ---
 
@@ -95,14 +95,14 @@ Selon l'interface choisie, voici les étapes à suivre :
 
 Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balancer OVHcloud, ce qui permet de surveiller l'état de santé des serveurs du pool :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Rendez-vous dans l'onglet `Public Cloud`{.action} et sélectionnez votre projet.
-3. Cliquez sur `Load Balancer`{.action} dans le menu de gauche. Sélectionnez le Load Balancer que vous souhaitez configurer.
-4. Cliquez sur l'onglet `Pools`{.action} puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
+<strong>1.</strong> Connectez-vous à votre [espace client OVHcloud](/links/manager).</br>
+<strong>2.</strong> Rendez-vous dans l'onglet `Public Cloud`{.action} et sélectionnez votre projet.</br>
+<strong>3.</strong> Cliquez sur `Load Balancer`{.action} dans le menu de gauche. Sélectionnez le Load Balancer que vous souhaitez configurer.</br>
+<strong>4.</strong> Cliquez sur l'onglet `Pools`{.action} puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
 
 ![Schema 1](images/healthM1.png){.thumbnail}
 
-5\. Cliquez sur l'onglet `Health Monitors`{.action} dans les détails du Pool, puis sur `Ajouter un Health Monitor`{.action}.
+<strong>5.</strong> Cliquez sur l'onglet `Health Monitors`{.action} dans les détails du Pool, puis sur `Ajouter un Health Monitor`{.action}.
 
 ![Schema 1](images/healthM2.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balan
       - **Max Retries**: nombre total d'échecs de connexion autorisés avant de marquer le membre comme inactif (entre 1 et 10).
       - **Timeout**: durée après laquelle un test s'arrête (doit être égal ou supérieur à la périodicité).
 
-6\. Une fois toutes les informations renseignées, cliquez sur `Ajouter`{.action} pour activer votre Health Monitor.
+<strong>6.</strong> Une fois toutes les informations renseignées, cliquez sur `Ajouter`{.action} pour activer votre Health Monitor.
 
 ![Schema 1](images/healthM3.png){.thumbnail}
 
@@ -128,8 +128,8 @@ Ce processus crée un Health Monitor qui effectuera régulièrement des contrôl
 
 #### CLI (OpenStack)
 
-1. **Préparation** : assurez-vous que l'outil CLI OpenStack est installé et configuré sur votre machine.
-2. **Création du Health Monitor** : utilisez la commande suivante pour créer un Health Monitor :
+<strong>1.</strong> **Préparation** : assurez-vous que l'outil CLI OpenStack est installé et configuré sur votre machine.</br>
+<strong>2.</strong> **Création du Health Monitor** : utilisez la commande suivante pour créer un Health Monitor :</br>
 
 ```bash
 openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 3 --type HTTP --http-method GET --url-path /healthcheck --expected-codes 200 <POOL_ID>
@@ -137,7 +137,7 @@ openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 
 
 Remplacez <POOL_ID> par l'ID de votre Pool.
 
-3\. Vérification : confirmez la création du Health Monitor en listant les Health Monitors associés à votre Load Balancer avec :
+<strong>3.</strong> Vérification : confirmez la création du Health Monitor en listant les Health Monitors associés à votre Load Balancer avec :</br>
 
 ```bash
 openstack loadbalancer healthmonitor list

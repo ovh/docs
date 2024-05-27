@@ -1,5 +1,5 @@
 ---
-title: 'Retrieving and uploading data on a dedicated server via SFTP'
+title: "How to upload and retrieve data on a dedicated server via SFTP"
 excerpt: 'Find out how to easily transfer data to and from your dedicated server'
 updated: 2024-02-23
 ---
@@ -8,7 +8,7 @@ updated: 2024-02-23
 
 As part of a migration process, you may find that you need to retrieve data stored on a dedicated server, and move it onto another server. There are different ways of doing this, but SFTP (Secure File Transfer Protocol) is best for transferring files quickly and simply via a secure SSH connection.
 
-**This tutorial will show you how to move and retrieve data on a dedicated server via SFTP.**
+**This tutorial explains how to use SFTP to connect to a server in order to upload or download files.**
 
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.

@@ -1,6 +1,6 @@
 ---
-title: 'Saiba como carregar ou descarregar dados num servidor dedicado através de SFTP'
-excerpt: 'Transfira informações do servidor dedicado para o computador pessoal, e vice-versa'
+title: "Como transferir e recuperar dados para um servidor dedicado através de SFTP"
+excerpt: "Transfira informações do servidor dedicado para o computador pessoal, e vice-versa"
 updated: 2024-02-23
 ---
 

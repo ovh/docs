@@ -1,5 +1,5 @@
 ---
-title: 'Przesyłanie i pobieranie danych z serwera dedykowanego za pośrednictwem SFTP'
+title: "Jak przesyłać i pobierać dane z serwera dedykowanego za pośrednictwem SFTP"
 excerpt: 'Dowiedz się, jak przesłać dane z serwera dedykowanego na komputer lokalny i na odwrót'
 updated: 2024-02-23
 ---

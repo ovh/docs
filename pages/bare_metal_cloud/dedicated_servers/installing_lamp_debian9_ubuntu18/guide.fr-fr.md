@@ -260,6 +260,8 @@ Certbot renouvelle automatiquement les certificats. Aucune autre étape n'est n�
 
 ## Aller plus loin
 
+[Comment télécharger et récupérer des données sur un serveur via SFTP](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+
 [Documentation UFW](https://help.ubuntu.com/community/UFW)
 
 [Documentation Apache](https://httpd.apache.org/docs/)

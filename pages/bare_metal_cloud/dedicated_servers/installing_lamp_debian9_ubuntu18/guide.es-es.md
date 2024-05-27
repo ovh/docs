@@ -264,6 +264,8 @@ Algunos renovarán automáticamente los certificados. No es necesario realizar n
 
 ## Más información
 
+[Cómo descargar y recuperar datos en un servidor mediante SFTP](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+
 [Documentación UFW](https://help.ubuntu.com/community/UFW)
 
 [Documentación Apache](https://httpd.apache.org/docs/)
