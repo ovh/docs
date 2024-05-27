@@ -1,6 +1,6 @@
 ---
-title: 'Annonces de fin de vente/vie base de données SQL'
-excerpt: 'Annonces de fin de vente/vie base de données SQL'
+title: "Annonces de fin de vente/vie base de données SQL"
+excerpt: "Annonces de fin de vente/vie base de données SQL"
 updated: 2023-11-16
 ---
 

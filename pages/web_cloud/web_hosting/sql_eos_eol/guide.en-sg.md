@@ -1,6 +1,6 @@
 ---
-title: 'SQL Database EOS and EOL announcements'
-excerpt: 'SQL Database EOS and EOL announcements'
+title: "SQL Database EOS and EOL announcements"
+excerpt: "SQL Database EOS and EOL announcements"
 updated: 2024-05-27
 ---
 
