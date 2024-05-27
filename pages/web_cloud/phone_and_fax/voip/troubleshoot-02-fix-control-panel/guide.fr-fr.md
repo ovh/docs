@@ -103,7 +103,7 @@ Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous
 >>
 > **Yealink** DECT (sans fil)
 >>
->> 1\. Débranchez l'alimentation électrique de **la base émettrice/réceptrice** du téléphone.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton au centre de la base**.<br>3\. Relâchez le bouton quand les 3 voyants sont allumés et fixes.<br>4\. Débranchez l'alimentation électrique de la **la base** du téléphone et rebranchez-la juste après.<br>5\. Patientez environ 5 minutes le temps que la base se mette à jour.<br>6\. Pour associer le **combiné** à la **base**, appuyez sur le bouton `REGISTER` en bas à gauche de l'écran du **combiné**. Dans la foulée, maintenez enfoncé le bouton au centre de la **base** pendant 3 à 4 secondes.
+>> 1\. Débranchez l'alimentation électrique de **la base émettrice/réceptrice** du téléphone.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton au centre de la base**.<br>3\. Relâchez le bouton quand les 3 voyants sont allumés et fixes.<br>4\. Débranchez l'alimentation électrique de **la base** du téléphone et rebranchez-la juste après.<br>5\. Patientez environ 5 minutes le temps que la base se mette à jour.<br>6\. Pour associer le **combiné** à la **base**, appuyez sur le bouton `REGISTER` en bas à gauche de l'écran du **combiné**. Dans la foulée, maintenez enfoncé le bouton au centre de la **base** pendant 3 à 4 secondes.
 
 
 **Une fois le téléphone réinitialisé, la date et l'heure affichées sur son écran sont-elles exactes ?**
