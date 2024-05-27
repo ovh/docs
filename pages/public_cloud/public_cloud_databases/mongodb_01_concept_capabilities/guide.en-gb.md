@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Capabilities and Limitations
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2023-12-06
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -28,7 +28,7 @@ The Public Cloud Databases offer supports the following MongoDB versions:
 - MongoDB 5.0
 - MongoDB 6.0
 
-Please refer to the [DBMS lifecycle policy guide](https://help.ovhcloud.com/csm/en-public-cloud-databases-lifecycle-policy?id=kb_article_view&sysparm_article=KB0048890) for recommendations on version upgrades and end of life announcements of major versions. Additionally, MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
+Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
 
 ### MongoDB Drivers
 
@@ -76,7 +76,7 @@ License cost is included inside the service plans. You cannot bring your own lic
 
 ### Hardware resources
 
-Please refer to the [price page](https://www.ovhcloud.com/<locale>/public-cloud/prices/#4951) for details on node types and their specifications.
+Please refer to the [price page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#4951) for details on node types and their specifications.
 
 ### Features
 
@@ -111,11 +111,11 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 *Enterprise* and *Advanced* plan clusters are automatically backed up daily, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
 
-See the [Automated Backups guide](https://help.ovhcloud.com/csm/en-public-cloud-databases-backups?id=kb_article_view&sysparm_article=KB0048766) for more information.
+See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 
 #### Logs and Metrics
 
-Logs and metrics are available through the Control Panel, API, and could be forwarded to Logs Data Platform. See the [Public Cloud Databases - How to setup logs forwarding guide](https://help.ovhcloud.com/csm/en-public-cloud-databases-logs-to-customers?id=kb_article_view&sysparm_article=KB0062100) for more information.
+Logs and metrics are available through the Control Panel, API, and can be forwarded to Logs Data Platform. See the [Public Cloud Databases - How to setup logs forwarding guide](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) for more information.
 
 - **Logs retention:** 1000 lines of logs;
 - **Metrics retention:** 1 calendar year.

@@ -1,7 +1,7 @@
 ---
 title: Grafana - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Grafana
-updated: 2023-12-04
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -60,7 +60,7 @@ More information on <https://raw.githubusercontent.com/grafana/grafana/main/LICE
 
 ### Hardware resources
 
-For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/<locale>/public-cloud/prices/#9533).
+For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#9533).
 
 #### Node template upgrade
 
@@ -99,7 +99,7 @@ See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/dat
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel, API and could be forwarded to Logs Data Platform. For setup instructions, see the [Public Cloud Databases - How to setup logs forwarding guide](https://help.ovhcloud.com/csm/en-public-cloud-databases-logs-to-customers?id=kb_article_view&sysparm_article=KB0062100).
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. For setup instructions, see the [Public Cloud Databases - How to setup logs forwarding guide](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer).
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
