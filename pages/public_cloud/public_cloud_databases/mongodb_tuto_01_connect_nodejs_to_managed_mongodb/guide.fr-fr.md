@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Tutoriel - Construire une application NodeJS connectée au service OVHcloud Managed MongoDB (EN)
+title: MongoDB - Tutorial - How to build and connect a Node.js Application to MongoDB
 excerpt: "Find out how to build a NodeJS application connected to an OVHcloud Managed MongoDB service"
 updated: 2023-10-10
 ---

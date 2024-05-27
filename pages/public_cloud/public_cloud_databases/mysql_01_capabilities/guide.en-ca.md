@@ -1,7 +1,7 @@
 ---
 title: MySQL - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
-updated: 2023-12-04
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -72,18 +72,7 @@ If any, license cost is included inside the service plans. You can't bring your 
 
 ### Hardware resources
 
-Here are the node types you can choose from:
-
-| Name    | Storage                 | vCore | Memory (GB) |
-| ------- | ----------------------- | ----- | ----------- |
-| db1-4   | From 80 GB to 240 GB    | 2     | 4           |
-| db1-7   | From 160 GB to 480 GB   | 2     | 7           |
-| db1-15  | From 320 GB to 960 GB   | 4     | 15          |
-| db1-30  | From 640 GB to 1.92 TB  | 8     | 30          |
-| db1-60  | From 1.28 TB to 3.84 TB | 16    | 60          |
-| db1-120 | From 2.56 TB to 7.68 TB | 32    | 120         |
-
-Right now, all nodes of a given cluster should be of the same type and live in the same region.
+For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/en-ca/public-cloud/prices/#7221).
 
 #### Flexible storage
 
@@ -97,7 +86,7 @@ You can upgrade the node template of your cluster to scale your hardware resourc
 
 The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](https://www.ovhcloud.com/en-ca/public-cloud/regions-availability/) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
 
-Also, the performance caracteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/en-ca/public-cloud/block-storage/) for more information about those performance caracteristics.
+Also, the performance characteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better IOPS than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/en-ca/public-cloud/block-storage/) for more information about those performance characteristics.
 
 Public Cloud Databases will select the most efficient disk type for your cluster depending on your cluster parameters.
 
@@ -159,7 +148,7 @@ See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/dat
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your MySQL logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information.
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. For setup instructions, see the [Public Cloud Databases - How to setup logs forwarding guide](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer).
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

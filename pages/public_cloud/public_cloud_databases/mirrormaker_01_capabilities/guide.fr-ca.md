@@ -1,7 +1,7 @@
 ---
 title: Kafka MirrorMaker - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka MirrorMaker
-updated: 2023-12-04
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -30,8 +30,9 @@ Kafka MirrorMaker nodes have to be in the same region. Multi-AZ is currently not
 The Public Cloud Databases offer supports the following Kafka versions:
 
 - Kafka MirrorMaker 2.0
+- Kafka 3.6
 
-You can follow Kafka Release Cycle on their official page : <https://kafka.apache.org/downloads>
+You can follow Kafka Release Cycle on their official page: <https://kafka.apache.org/downloads>
 
 ### Kafka clients
 
@@ -73,16 +74,7 @@ More information on <https://github.com/apache/kafka/blob/trunk/LICENSE>.
 
 ### Hardware resources
 
-Here are the node types you can choose from:
-
-| Name    | Storage | vCore | Memory (GB) |
-| ------- | ------- | ----- | ----------- |
-| db1-4   | N/A     | 2     | 4           |
-| db1-7   | N/A     | 2     | 7           |
-| db1-15  | N/A     | 4     | 15          |
-| db1-30  | N/A     | 8     | 30          |
-
-Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
+For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/fr-ca/public-cloud/prices/#8763).
 
 ### Features
 
@@ -109,7 +101,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 You can select a Kafka source cluster and a Kafka destination cluster from the same Public Cloud project.
 External Kafka clusters are not supported so far.
 
-You  need at least 2 Kafka clusters to create replication flows.
+You need at least 2 Kafka clusters to create replication flows.
 
 Replication flows allowed parameters are:
 
@@ -133,7 +125,7 @@ Kafka is a streaming tool. We don't backup Kafka data.
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Kafka MirrorMaker logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information.
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. For setup instructions, see the [Public Cloud Databases - How to setup logs forwarding guide](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer).
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
