@@ -58,7 +58,8 @@ Here is an overview of the various plans' capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run as well as the SLA.
 
-> **Note:** Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
+> [!primary]
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
 
 #### Nodes
 
