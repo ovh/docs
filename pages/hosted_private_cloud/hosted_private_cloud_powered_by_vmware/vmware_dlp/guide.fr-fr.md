@@ -12,9 +12,9 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 ## Prérequis
 
 - Disposer d'un compte client OVHcloud.
-- Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-- Un [environnement de cloud privée VMware](https://help.ovhcloud.com/csm/fr-vmware-host-addition?id=kb_article_view&sysparm_article=KB0045617) opérationnel.
-- Avoir suivi le [Quick start Logs Data Plateform](https://help.ovhcloud.com/csm/fr-logs-data-platform-quick-start?id=kb_article_view&sysparm_article=KB0050058)
+- Un compte Logs Data Platform (LDP) avec au moins un Stream actif configuré.
+- Disposer d'un ou plusieurs [hôtes Hosted Private Cloud VMware on OVHcloud](https://help.ovhcloud.com/csm/fr-vmware-host-addition?id=kb_article_view&sysparm_article=KB0045617){.external} opérationnel.
+- Avoir suivi le guide : [Logs Data Platform - Premiers pas](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Le compte LDP et le compte Hosted Private Cloud doivent appartenir au même compte OVHcloud.
 
 ## Concepts et limites
@@ -22,6 +22,15 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 > [!warning]
 > A ce jour, les logs des listeners **UDP** ne sont pas transmis.
 > L'intégralité des journaux VMware ne sont pas transmissible, pour raison de sécurité.
+
+### Glossaire
+
+- **Logs Data Platform :** plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/).
+- **Data Stream :** partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
+- **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
+- **Abonnement à la redirection de logs :** lors de l'activation du transfert de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
+
+
 
 **Quels sont les logs d'un PCC Private Cloud ?**
 
@@ -32,12 +41,12 @@ Les logs contiennent les champs suivants :
 | Nom du champ                          | Description                                                                                                                                                                                      | Unité |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
 | serviceName                           | La référence de votre service PCC                                                                                                                                                                | uuid |
-| kind                                  | Adresse IP du client qui a initié la connexion TCP au Load Balancer                                                                                                                              | IP |
-| streamid                              | Port TCP du client qui a initié la connexion TCP au Load Balancer                                                                                                                                | Numérique |
-| subscriptionid                        | Horodatage auquel la requête/connexion a été effectuée                                                                                                                                           | datetime (avec résolution en millisecondes), par exemple : 25/Mar/2024:14:07:19.536 |
-| operationid                           | La requête HTTP                                                                                                                                                                                  | String, par exemple : « GET / HTTP/1.1 » |
-|    syslogForward                  | État HTTP retourné                                                                                                                                                                               | Numérique |
-| logForwardId                            | Nombre d'octets lus par le serveur                                                                                                                                                               | Numérique |
+| kind                                  | La référence de votre                                                                                                                                                                            | IP |
+| streamid                              |                                                                                                                                                                                                  | Numérique |
+| subscriptionid                        |                                                                                                                                                                                                  | datetime (avec résolution en millisecondes), par exemple : 25/Mar/2024:14:07:19.536 |
+| operationid                           |                                                                                                                                                                                                  | String, par exemple : « GET / HTTP/1.1 » |
+| syslogForward                         |                                                                                                                                                                                                  | Numérique |
+| logForwardId                          |                                                                                                                                                                                                  | Numérique |
 | bytes_uploaded                        | Nombre d'octets envoyés par le serveur au client                                                                                                                                                 | Numérique |
 | client_certificate_verify             | Retourne l'ID d'erreur de vérification des résultats lorsque la connexion entrante a été établie sur une couche de transport SSL/TLS, sinon zéro si aucune erreur n'est rencontrée.              | Numérique |
 | client_certificate_distinguished_name | Lorsque la connexion entrante a été établie sur une couche de transport SSL/TLS, renvoie le nom unique complet du sujet du certificat présenté par le client                                     | String |
@@ -95,7 +104,7 @@ Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, 
 - Se connecter avec Grafana.
  
 
-#### Kind
+#### Types de journaux PCC
 
 Le **Kind** est le type de journal que vous voulez transférer à votre service LDP. Notez que la seule valeur actuellement prise en charge pour Hosted Private Cloud est "esxi" (vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://eu.api.ovh.com/console-preview/?section=%2FdedicatedCloud&branch=v1#get-/dedicatedCloud/-serviceName-/log/kind)).
 
@@ -110,7 +119,7 @@ D'autres références seront disponible dans les versions futures (si vous avez 
 
 ### Comment activer le Log forwarding dans Vsphere ?
 
-#### Via l’espace client OVHcloud
+#### Via le control panel OVHcloud
 
 Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 
@@ -121,14 +130,14 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 >  Trouvez plus d'information sur les appels API OVHcloud : [Premiers pas avec l'API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 > [!api]
-> POST /dedicatedCloud/{serviceName}/syslogForward/forwarder
+> @api {v1} /dedicatedCloud/{serviceName} POST /dedicatedCloud/{serviceName}/syslogForward/forwarder
 >
 > **Paramètres:**
 >
 > serviceName: La référence pour votre PCC `pcc-XXX-XXX-XXX-XXX`.
 
 
-### Activation de l'audit Log Forwarding
+### Activation du Log Forwarding
 
 #### Via l'espace client :
 
@@ -142,7 +151,7 @@ Vous pouvez récupérer les spécifications de l'API dans le portail [OVH API](h
 
 #### Étape 1 - Récupérer le Stream (et l'ID) cible
 
-##### Via l’API :
+##### Via l’API OVHcloud :
 
 Listez les flux de données de votre compte Logs Data Platform (renseignez votre identifiant LDP au format ldp-xx-xxxx dans le champ « serviceName ») :
 
@@ -168,7 +177,7 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
 > @api {v1} /dedicatedCloud/{serviceName}/logs GET /dedicatedCloud/{serviceName}/output/graylog/stream/{streamId}
 >
  
-> > **Parameters:**
+> > **Paramètres:**
 >
 > streamId: La reference d'identification de votre stream LDP.
 
@@ -253,7 +262,7 @@ GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 
 {
   "createdAt": "2024-04-26T22:27:57+02:00",
-  "kind": "string",
+  "kind": "esxi",
   "resource": {
     "name": "string",
     "type": "string"
@@ -292,14 +301,6 @@ Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
 >
 > subscriptionId: La reference de souscription pour votre compte LDP.
 >
-
-## Glossaire
-
-- **Logs Data Platform :** plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/).
-- **Data Stream :** partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
-- **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
-- **Abonnement à la redirection de logs :** lors de l'activation du transfert de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
-
 
 ## Aller plus loin
 
