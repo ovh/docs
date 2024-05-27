@@ -94,6 +94,8 @@ PING 192.168.200.109 (192.168.200.109) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.292/0.292/0.292/0.000 ms
 ```
 
-
+## Go further
+ 
+Join our community of users on <https://community.ovh.com/en/>.
 
 
