@@ -76,7 +76,7 @@ Uma vez que tenha submetido o pedido de ativação, o estado da ligação proteg
 
 ### 2. Ativar um certificado SSL no alojamento web <a name="enablessl"></a>
 
-Antes de realizar esta configuração, certifique-se de que a etapa anterior de de [ativação de um certificado SSL num website multisite](#multisite) foi realizada corretamente. Pelo menos um domínio deve ter a opção SSL `Ativado` ou o estado `A gerar / atualizar` para ativar o certificado SSL.<br>
+Antes de realizar esta configuração, certifique-se de que a etapa anterior de [ativação de um certificado SSL num website multisite](#multisite) foi realizada corretamente. Pelo menos um domínio deve ter a opção SSL `Ativado` ou o estado `A gerar / atualizar` para ativar o certificado SSL.<br>
 **Estas informações não se aplicam se selecionar `Certificado pago`{.action} ou `Importar do seu certificado SSL`{.action}.**
 
 > [!warning]
