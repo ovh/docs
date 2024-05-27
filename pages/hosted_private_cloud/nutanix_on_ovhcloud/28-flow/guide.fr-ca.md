@@ -369,7 +369,7 @@ Sélectionnez `Secure Application (App Policy)`{.action} et cliquez sur `Create`
 
 ![Create Application Rule 03](images/createapplicationrule03.png){.thumbnail}
 
-Saisissez les champs **Name** pour le nom de de la règle, **Purpose** pour un commentaire, **Secure this App** en choisissant une catégorie existante d'applications et cliquez sur `Next`{.action}.
+Saisissez les champs **Name** pour le nom de la règle, **Purpose** pour un commentaire, **Secure this App** en choisissant une catégorie existante d'applications et cliquez sur `Next`{.action}.
 
 ![Create Application Rule 04](images/createapplicationrule04.png){.thumbnail}
 

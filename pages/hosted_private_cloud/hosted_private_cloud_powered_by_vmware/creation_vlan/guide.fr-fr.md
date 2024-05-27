@@ -59,7 +59,7 @@ En ce qui concerne le *load balacing* , selectionnez *Route basée sur le hashag
 
 > [!warning]
 >
-> Attention au niveau de de la configuration de l'ordre du failover, il est nécessaire de mettre la liaison montante `lag1` en *Active* (connexion entre le réseau virtuel et le réseau physique), sinon aucune communication entre les hôtes ne sera possible.
+> Attention au niveau de la configuration de l'ordre du failover, il est nécessaire de mettre la liaison montante `lag1` en *Active* (connexion entre le réseau virtuel et le réseau physique), sinon aucune communication entre les hôtes ne sera possible.
 >
 
 ![load balancing](images/13network6.png){.thumbnail}
