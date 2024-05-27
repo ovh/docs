@@ -1,7 +1,7 @@
 ---
 title: '¿Qué hacer con una cuenta bloqueada debido a correo no deseado?'
 excerpt: 'Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado'
-updated: 2023-06-07
+updated: 2024-05-23
 ---
 
 ## Objetivo
@@ -12,8 +12,8 @@ Cuando su dirección de correo electrónico está bloqueada por SPAM, significa 
 
 ## Requisitos
 
-- Tener un [plan de correo en OVHcloud](https://www.ovhcloud.com/es-es/emails/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y accedido a la sección `Web Cloud`{.action}.
+- Tener un [plan de correo en OVHcloud](/links/web/emails/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager) y accedido a la sección `Web Cloud`{.action}.
 
 ## Procedimiento <a name="instructions"></a>
 
@@ -26,6 +26,16 @@ Antes de continuar, y si el bloqueo afecta a una dirección de correo electróni
 ### Etapa 1: ¿por qué su dirección de correo electrónico está bloqueada por spam? <a name="step1"></a>
 
 Cuando se detecta una actividad sospechosa en el envío de los mensajes de correo, la dirección en cuestión se bloquea automáticamente. En ese caso, no podrá enviar mensajes de correo desde esta dirección de correo.
+
+> [!warning]
+>
+> «Actividad sospechosa» significa:
+>
+> - El servidor antispam, que analiza los mensajes de correo electrónico durante el envío, ha descubierto que uno o varios elementos del correo electrónico se consideran sospechosos y pueden constituir un correo spam.
+> - La frecuencia de envío y el número de destinatarios son demasiado elevados y contribuyen a considerar el envío como spam. Para realizar envíos masivos, es necesario utilizar un servicio de listas de correo y no una dirección de correo estándar.
+>
+> Las razones concretas de un bloqueo no pueden ser divulgadas para evitar cualquier intento de burlar el sistema de detección de spam. Para probar el contenido de un mensaje de correo electrónico, puede utilizar una herramienta externa a OVHcloud como [Mailtester](https://www.mail-tester.com/).
+>
 
 En primer lugar, asegúrese de que los usuarios de la dirección de correo electrónico bloqueada no son los causantes directamente del bloqueo, debido a un uso inusual de la dirección de correo electrónico (por ejemplo, tras el envío masivo de mensajes de correo). En ese caso, debe corregir la situación antes de desbloquear la dirección.
 
@@ -42,7 +52,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 > [!tabs]
 > **Exchange**
 >>
->> Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
+>> Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
 >>
 >> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» de la dirección de correo electrónico correspondiente indica «bloqueado», haga clic en `...`{.action} a la derecha de la cuenta y, seguidamente, en `Desbloquear`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
 >> Continúe con el [paso 3](#step3) de la guía.
@@ -51,7 +61,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >> 
 > **Email Pro**
 >>
->> Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Webcloud`{.action}. Haga clic en `Email Pro`{.action} y, seguidamente, seleccione la plataforma Email Pro correspondiente.
+>> Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Webcloud`{.action}. Haga clic en `Email Pro`{.action} y, seguidamente, seleccione la plataforma Email Pro correspondiente.
 >>
 >> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» a la derecha de la dirección de correo electrónico correspondiente indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tique`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
 >> Pasar al [paso 3](#step3) de la guía.
@@ -60,7 +70,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >>
 >  **MX plan - nueva versión**
 >>
->> Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Correos electrónicos`{.action} y seleccione el nombre de dominio correspondiente.
+>> Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Correos electrónicos`{.action} y seleccione el nombre de dominio correspondiente.
 >>
 >> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» —a la derecha de la dirección de correo electrónico correspondiente— indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tiquet`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
 >> Continúe con el [paso 3](#step3) de la guía.
@@ -71,7 +81,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >>
 >> Si el bloqueo afecta a una dirección de correo electrónico [MXplan versión histórica](#instructions), no hay tíquet de soporte. Por favor, consulte la [etapa 1](#step1) de esta guía antes de seguir las instrucciones siguientes.
 >>
->> Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda al apartado `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente.
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda al apartado `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente.
 >>
 >> Acceda a la pestaña `Emails`{.action} de su plataforma. Si la columna "Bloqueado por spam" indica "Sí", haga clic en esta opción y, seguidamente, en `Cambiar la contraseña`{.action}. Su dirección de correo electrónico se ha desbloqueado. No necesita seguir el [paso 3](#step3).
 >>
@@ -83,7 +93,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 
 ### Paso 3: acceder al tique de asistencia <a name="step3"></a>
 
-Una vez completado el paso 1, se le redirigirá a la ventana «Mis solicitudes de asistencia». Haga clic en `...`{.action} —a la derecha del tique con el asunto «Cuenta bloqueada debido a correo no deseado»— y, seguidamente, en `Ver toda la información`{.action}. 
+Una vez completado el paso 1, se le redirigirá a la ventana «Mis solicitudes de asistencia». Haga clic en `...`{.action} —a la derecha del tique con el asunto «Cuenta bloqueada debido a correo no deseado»— y, seguidamente, en `Ver toda la información`{.action}.
 
 ![spam](images/blocked-for-SPAM-02.png){.thumbnail}
 
@@ -118,7 +128,7 @@ A continuación de este mensaje, se le ha enviado una muestra de los encabezados
 Estos encabezados permiten determinar el rastro de la ruta y el origen de los mensajes de correo electrónico enviados.
 
 ## Más información <a name="go-further"></a>
-  
+
 Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Si desea ayuda para el uso y la configuración de sus soluciones de OVHcloud, consulte nuestras distintas [ofertas de soporte](https://www.ovhcloud.com/es-es/support-levels/).

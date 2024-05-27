@@ -1,7 +1,7 @@
 ---
 title: "Zmiana właściciela domeny"
 excerpt: "W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny."
-updated: 2024-03-07
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -18,6 +18,9 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 >W tym celu należy [zmienić kontakty](/pages/account_and_service_management/account_information/managing_contacts) domeny.
 >
 > Jeśli potrzebujesz dokonać zmiany właściciela i kontaktu dla tej samej nazwy domeny, nie ma preferencyjnej kolejności. Jednak to kontakt administratora jest w stanie zainicjować te operacje. Te dwie zmiany są zatem wprowadzane w obszarze klienta kontaktu administratora nazwy domeny.
+>
+> Dane właściciela domeny mają wartość wyłącznie administracyjną i są całkowicie niezależne od informacji, które mogą być powiązane z identyfikatorem klienta OVHcloud. W związku z tym osoba fizyczna lub organizacja (firma, stowarzyszenie, etc.) zadeklarowana wyłącznie jako właściciel domeny, nie ma dostępu do Panelu klienta OVHcloud.
+>
 
 **Dowiedz się, jak zmienić właściciela domeny**
 
@@ -39,7 +42,7 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 >
 > Istnieją głównie dwa rodzaje **TLD**: **ccTLD** oraz **gTLD**. **ccTLD** odnosi się do **TLD** dotyczących regionu lub kraju (*.fr*, *.be*, *.uk*, *.de*, *.paris*, itp.). **gTLD** odnosi się do **TLD** plus ogólne (*.net*, *.com*, *.info*, *.org*, itp.).
 >
-> Dokładna procedura zmiany właściciela domeny może się zatem różnić, w szczególności w przypadku niektórych **ccTLD**, takich jak *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, itp.) oraz w przypadku niektórych **TLD** (*.am*,*,*, fm*, itp.) W przypadku niektórych z nich zmiana właściciela to operacja płatna. Zmiana właściciela może być również zawieszona z różnych powodów, na przykład z powodu nieopłacenia zamówienia, nadużycia lub zablokowania przez registry. 
+> Dokładna procedura zmiany właściciela domeny może się zatem różnić, w szczególności w przypadku niektórych **ccTLD** (*.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, itp.) oraz w przypadku niektórych **TLD** (*.am*,*,*, fm*, itp.) W przypadku niektórych z nich zmiana właściciela to operacja płatna. Zmiana właściciela może być również zawieszona z różnych powodów, na przykład z powodu nieopłacenia zamówienia, nadużycia lub zablokowania przez registry. 
 >
 > W przypadku wątpliwości zalecamy sprawdzenie następujących zasobów:
 >
