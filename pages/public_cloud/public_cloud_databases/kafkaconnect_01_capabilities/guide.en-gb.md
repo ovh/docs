@@ -1,7 +1,7 @@
 ---
 title: Kafka Connect - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka Connect
-updated: 2023-12-04
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -54,11 +54,12 @@ Your choice of plan affects the number of nodes your cluster run or the SLA.
 
 ### Hardware resources
 
-For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](https://www.ovhcloud.com/<locale>/public-cloud/prices/#9667).
+For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#9667).
 
 ### Features
 
 #### Network
+
 Public as well as private networking (vRack) can be used for all the offers.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
@@ -66,6 +67,7 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
+
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.

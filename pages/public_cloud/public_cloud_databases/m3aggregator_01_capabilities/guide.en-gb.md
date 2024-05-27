@@ -1,7 +1,7 @@
 ---
 title: M3 Aggregator - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for M3 Aggregator
-updated: 2024-02-29
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -63,7 +63,7 @@ Where applicable, the cost of the license is included in the service plans. It i
 
 ### Hardware resources
 
-For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](https://www.ovhcloud.com/<locale>/public-cloud/prices/#9745).
+For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#9745).
 
 ### Features
 
@@ -89,7 +89,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel, API and could be forwarded to Logs Data Platform. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3 Aggregator logs in Opensearch. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information. For more details on logs forwarding, see the [Public Cloud Databases - How to setup logs forwarding](https://help.ovhcloud.com/csm/en-public-cloud-databases-logs-to-customers?id=kb_article_view&sysparm_article=KB0062100).
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3 Aggregator logs in Opensearch. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information. For more details on logs forwarding, see the [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) guide.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
