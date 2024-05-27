@@ -1,7 +1,7 @@
 ---
 title: Redis - Capacités et limites (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Redis
-updated: 2023-12-04
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -71,18 +71,7 @@ More information on <https://redis.com/legal/licenses/>.
 
 ### Hardware resources
 
-Here are the node types you can choose from:
-
-| Name    | Storage  | vCore | Memory (GB) |
-| ------- | -------- | ----- | ----------- |
-| db1-4   | N/A      | 2     | 4           |
-| db1-7   | N/A      | 2     | 7           |
-| db1-15  | N/A      | 4     | 15          |
-| db1-30  | N/A      | 8     | 30          |
-| db1-60  | N/A      | 16    | 60          |
-| db1-120 | N/A      | 32    | 120         |
-
-Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
+For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/fr-ca/public-cloud/prices/#7262).
 
 ### Features
 
@@ -126,7 +115,7 @@ See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/dat
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Redis logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information.
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. For setup instructions, see the [Public Cloud Databases - How to setup logs forwarding guide](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer).
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
@@ -170,7 +159,6 @@ Here is the list of unsupported commands:
 - monitor
 
 > [!primary]
->
 > Update of user ACLs is allowed only via API. Follow this [guide](/pages/public_cloud/public_cloud_databases/redis_07_update_acls) to learn more.
 >
 

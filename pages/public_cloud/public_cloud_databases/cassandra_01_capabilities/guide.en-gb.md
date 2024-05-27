@@ -63,7 +63,7 @@ If any, license cost is included inside the service plans. You can't bring your 
 
 ### Hardware resources
 
-For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](https://www.ovhcloud.com/en-gb>/public-cloud/prices/#9482).
+For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#9482).
 
 ### Features
 

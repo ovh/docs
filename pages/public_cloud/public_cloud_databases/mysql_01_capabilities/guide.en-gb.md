@@ -55,7 +55,8 @@ Here is an overview of the various plans' capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
-> **Note:** Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
+> [!primary]
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
 
 #### Nodes and replicas
 
