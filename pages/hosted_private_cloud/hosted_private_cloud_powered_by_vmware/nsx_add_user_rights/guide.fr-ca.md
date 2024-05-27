@@ -123,7 +123,7 @@ Vous pouvez vérifier si NSX-T est activé sur votre Datacenter. Vous pouvez ég
 
 > [!api]
 >
-> @api {v1} GET /dedicatedCloud/{serviceName}/nsxt
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/nsxt
 
 > **Paramètres:**
 >
