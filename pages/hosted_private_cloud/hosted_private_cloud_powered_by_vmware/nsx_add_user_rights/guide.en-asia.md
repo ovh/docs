@@ -134,7 +134,7 @@ You can check if NSX-T is enabled on your Datacenter. You can also find your NSX
 
 > [!api]
 >
-> @api {v1} GET /dedicatedCloud/{serviceName}/nsxt
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/nsxt
 
 > **Parameters:**
 >
