@@ -1,7 +1,7 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-updated: 2023-12-04
+updated: 2024-05-28
 ---
 
 ## Objectif
@@ -42,7 +42,7 @@ La page qui s'affiche alors vous permet de suivre et de gérer les e-mails autom
 La page affiche plusieurs informations vous permettant de visualiser l'activité des envois d'e-mails automatisés générés depuis vos scripts :
 
 - **État du service** : état actuel du service réalisant les envois d'e-mails automatisés de votre hébergement web :
-    - S'il est vert (*« Activé »* ou *« Force »*), cela signifie que les envois sont opérationnels. 
+    - S'il est vert (*« Activé »* ou *« Force »*), cela signifie que les envois sont opérationnels.
     - S'il est rouge (*« Désactivé »*, *« Bounce »* ou *« SPAM »*), les envois ne s'effectuent plus. <br>
 
     Selon cet état, la gestion des envois sera différente.
@@ -94,7 +94,21 @@ Si vous recevez correctement le message *The email has been sent successfully!* 
 
 - **Vérifiez la taille totale de votre e-mail** : L'e-mail envoyé ne doit pas dépasser la taille totale de **10 Mo** (encapsulation et en-tête inclus). Le contenu même de votre e-mail ne devra donc pas excéder les **7/8 Mo**.
 
-### Gérer les états « Désactivé », « Bounce » et « SPAM »
+### Gérer les états « Désactivé », « Bounce » et « SPAM » <a name="block-state"></a>
+
+Dans cette partie vous trouverez le détail de chaque état à l'origine du blocage de votre fonction e-mail.
+
+> [!warning]
+>
+> Avant de détailler chacun de ces états, il est nécessaire de comprendre les points qui peuvent dégrader la réputation de votre nom de domaine ou empêcher la réception de vos e-mails.
+>
+> Vérifier les points suivants en amont:
+>
+> - La configuration de [l’enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) dans la zone DNS du nom de domaine.
+> - La configuration de [l’enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc) dans la zone DNS du nom de domaine, **seulement si le serveur de destination l'exige**.
+> - Vérifier la réputation de l’adresse IP à l’origine de l’envoi ([celle de votre hébergement web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip) dans votre cas), à l'aide d'un outil tel que [MXtoolbox](https://mxtoolbox.com/) ou [Spamhaus](https://check.spamhaus.org/).
+> - L'e-mail ne contient pas d'éléments susceptibles d'être interprétés comme du SPAM. Retrouver une liste non exhaustive de ces éléments dans la partie « [Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM](#elements-list-spam)» de ce guide.
+> - En cas d'absence de blocage du côté d'OVHcloud et que l'e-mail n'a pas été reçu ou rejeté par le destinataire. Contactez le destinataire afin qu'il vérifie si l'e-mail n'a pas été bloqué au niveau du serveur de réception.
 
 #### L'état « Désactivé »
 
@@ -157,7 +171,7 @@ Cliquez alors sur `Purger les e-mails`{.action}, cela effacera tous les e-mails 
 
 Une purge est obligatoire dans ce cas pour effacer les SPAM en attente d'envoi.
 
-- **Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM** :
+- **Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM** : <a name="elements-list-spam"></a>
 
 Si vous êtes à l'origine des e-mails ayant engendré le blocage, vous trouverez ci-dessous quelques exemples d’**usages à éviter** lors de l'envoi d'un e-mail (pour qu'il ne soit pas considéré trop « facilement » comme un SPAM) :
 
