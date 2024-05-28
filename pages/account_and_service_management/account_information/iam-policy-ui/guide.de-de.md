@@ -153,7 +153,7 @@ Auf diese Weise können Sie die Benutzer oder Gruppen, für die die Richtlinie g
 
 ### Verwaltung von Identitäten
 
-Die für die Richtlinien verfügbaren Identitäten werden über den Tab `Identitäten`{.action}.
+Die für die Richtlinien verfügbaren Identitäten werden über den Tab `Identitäten`{.action} verwaltet.
 
 Details zur Benutzerverwaltung finden Sie in [unserer Dokumentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
