@@ -1,36 +1,64 @@
 ---
-title: 'Installer OverTheBox v1 (Intel & IT)'
-excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox v1 (Intel & IT)"
-updated: 2021-04-14
+title: 'Configurer un ancien appareil OverTheBox v1 (Intel & IT v1)'
+excerpt: "Découvrez comment installer et configurer un ancien appareil OverTheBox v1 (Intel & IT v1)"
+updated: 2024-05-28
 ---
 
 > [!warning]
 >
 > Ce guide est déprécié et concerne la configuration d'équipements OverTheBox qui ne sont plus disponibles à la vente.
-> Veuillez vous reporter au guide suivant pour les offres OverTheBox actuelles : [Installation OverTheBox Plus ou IT v2](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
+> Veuillez vous reporter au guide suivant pour les offres OverTheBox actuelles : [Comment installer OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
 >
 
 ## Objectif
 
-Découvrez comment installer et configurer votre équipement OverTheBox Intel ou IT v1 afin de profiter de votre offre OverTheBox
+Découvrez comment installer et configurer votre ancien appareil OverTheBox v1 (Intel & IT v1) afin de profiter de votre offre OverTheBox.
 
 ## Prérequis
 
 - Au moins un modem ayant accès à Internet sur lequel vous devez être en capacité de modifier la configuration réseau (IP et DHCP). **Exemple** : Box fournie par un fournisseur d'accès Internet comme OVHcloud ou un opérateur national.
-- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
+- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel)).
 
 > [!alert]
 >
-> A ce stade, aucun branchement ne doit être fait entre les modems et l'OverTheBox.
+> À ce stade, aucun branchement ne doit être fait entre les modems et l'OverTheBox.
 > Il est aussi impératif d'utiliser uniquement les modems et l'OverTheBox pendant toute la durée de l'installation.
 > Si votre installation doit comprendre un switch, il est préférable d'intégrer ce dernier une fois la procédure terminée.
 >
 
 ## En pratique
 
-### Étape 1 : préparation de vos modems
+### Comment fonctionne OverTheBox ?
 
-Pour le bon déroulement de la procédure d'installation, il est impératif que vos modems répondent à 2 conditions :
+#### Branchements finaux
+
+> [!alert]
+>
+> La photo suivante illustre les branchements finaux pour une OverTheBox Intel.
+> Avant d'en arriver là sur votre installation, il est impératif de suivre le processus d'[installation](#installer-overthebox).
+>
+
+![overthebox](images/installationV1-final-plugs.png){.thumbnail}
+
+#### Fonctionnement
+
+Le principe est simple. Tous les éléments du réseau sont reliés physiquement entre eux par le biais des ports Ethernet de l'un des modems (qui est **le Modem Principal**). Cela inclut :
+
+- Le deuxième modem (câble vert).
+- L'OverTheBox (câble jaune).
+- Vos ordinateurs/téléphones etc. (port libre sur le modem principal).
+
+C'est donc ce **Modem Principal** qui permet la liaison physique de tous ces éléments.
+
+Lorsque votre ordinateur, branché sur le **Modem Principal**, effectue une requête sur Internet, cette dernière transite d'abord par l'**OverTheBox** qui va ensuite transférer les paquets intelligemment vers les deux connexions Internet grâce aux ports Ethernet du **Modem Principal**, comme le montre l'illustration suivante :
+
+![overthebox](images/installationV1-network.gif){.thumbnail}
+
+### Installer OverTheBox
+
+#### Étape 1 : préparation de vos modems
+
+Pour le bon déroulement de la procédure d'installation, il est impératif que vos modems répondent à deux conditions :
 
 - Le serveur DHCP de de vos modems doit être **activé**.
 - Les modems doivent être sur des réseaux locaux différents les uns des autres.
@@ -46,7 +74,7 @@ Dans le cas d'une OverTheBox Intel :
 Dans le cas d'une OverTheBox IT v1 :
 ![overthebox](images/installationV1-step1_OTBv2a.jpg){.thumbnail}
 
-**Exemple** : Le premier modem possède l'IP 192.168.**0**.1 et le deuxième 192.168.**1**.1
+**Exemple** : Le premier modem possède l'adresse IP 192.168.**0**.1 et le second l'adresse IP 192.168.**1**.1
 
 > [!primary]
 >
@@ -56,19 +84,17 @@ Dans le cas d'une OverTheBox IT v1 :
 **Cas d'un modem Technicolor TG788 ou TG789 fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG788 ou TG789 est 192.168.**1**.254.
 **Cas d'un modem Technicolor TGTG799vac ou Zyxel fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG799vac ou Zyxel VMG8924-B10D est 192.168.**1**.1.
 
-Il n'est donc pas possible de le cumuler avec un autre modem en 192.168.**1**.0/24
-
-Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems, ce guide détaille la procédure à suivre en fonction de votre fournisseur d'accès : [Désactiver le serveur DHCP de votre modem](/pages/web_cloud/internet/overthebox/intel_itv1_desactiver_dhcp_modem)
+Il n'est donc pas possible de le cumuler avec un autre modem en 192.168.**1**.0/24. Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems.
 
 Les modems et l'**OverTheBox** ne doivent toujours pas être reliés entre eux.
 
-### Étape 2 : branchements au modem principal
+#### Étape 2 : branchements au modem principal
 
-- Parmi vos modems, choisissez celui qui sera le **"modem principal"**, c'est sur ce dernier que seront branchés tous vos équipements ainsi que l'**OverTheBox**.
+- Parmi vos modems, choisissez celui qui sera le **"modem principal"**. C'est sur ce dernier que seront branchés tous vos équipements, ainsi que l'**OverTheBox**.
 
 > [!primary]
 >
-> Si vous utilisez la Télévision via l'un de vos modems (Box TV), il est préférable de le sélectionner comme modem principal.
+> Si vous utilisez la télévision via l'un de vos modems (Box TV), il est préférable de le sélectionner comme modem principal.
 >
 
 - Branchez votre  **OverTheBox** sur le courant électrique et sur le **"modem principal"** via un **câble RJ45** (câble jaune sur l'image ci-dessous).
@@ -86,15 +112,14 @@ Dans le cas d'une OverTheBox IT v1 :
 
 > [!success]
 >
-> Votre  OverTheBox  peut maintenant contacter nos serveurs via le modem principal et va se mettre à jour automatiquement. Veuillez patienter  5 Minutes  avant de passer à l'étape suivante.
+> Votre OverTheBox peut maintenant contacter nos serveurs via le modem principal et va se mettre à jour automatiquement. Veuillez patienter cinq minutes avant de passer à l'étape suivante.
 >
 
-### Étape 3 : enregistrement du service
+#### Étape 3 : enregistrement du service
 
 > [!alert]
 >
-> Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur le modem principal afin que votre OverTheBox
-> soit reconnue (câble noir sur l’image ci-dessous).
+> Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur le modem principal afin que votre OverTheBox soit reconnue (câble noir sur l’image ci-dessous).
 >
 
 Dans le cas d'une OverTheBox Intel :
@@ -105,26 +130,26 @@ Dans le cas d'une OverTheBox IT v1 :
 
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} depuis votre ordinateur connecté au modem principal.
 
-#### Automatiquement
+##### Automatiquement
 
-Lors de votre première connexion, un assistant d'installation se lance, **nous vous invitons à suivre toutes les étapes sans exception**.
+Lors de votre première connexion, un assistant d'installation se lance. **Nous vous invitons à suivre toutes les étapes sans exception**.
 
-#### Manuellement
+##### Manuellement
 
 - Cliquez sur **"Register"**.
 
 ![overthebox](images/installationV1-step3-2.png){.thumbnail}
 
-- Identifiez vous sur l'espace client.
-- Cliquez sur le **service OverTheBox** que vous souhaitez associer à votre boitier.
+- Identifiez-vous sur l'espace client.
+- Cliquez sur le **service OverTheBox** que vous souhaitez associer à votre boîtier.
 
 ![overthebox](images/installationV1-step3-3.png){.thumbnail}
 
-- Faites au préalable un copier/coller du nouveau **Device ID** sur l'interface **OverTheBox**.
+- Faites au préalable un copier-coller du nouveau **Device ID** sur l'interface **OverTheBox**.
 
 ![overthebox](images/installationV1-step3-4.png){.thumbnail}
 
-- Modifiez l' **Identifiant du périphérique**, il faut alors indiquer le **"Device ID"**.
+- Modifiez l'**Identifiant du périphérique** et indiquez le **"Device ID"**.
 
 ![overthebox](images/installationV1-step3-5.png){.thumbnail}
 
@@ -135,7 +160,7 @@ Lors de votre première connexion, un assistant d'installation se lance, **nous 
 > L'enregistrement est terminé, patientez quelques minutes avant de passer à l'étape suivante.
 >
 
-### Etape 4 : activation et configuration de l’OverTheBox sur la connexion principale
+#### Etape 4 : activation et configuration de l’OverTheBox sur la connexion principale
 
 > [!alert]
 >
@@ -153,23 +178,17 @@ Votre **OverTheBox** est maintenant prête à la configuration :
 
 ![overthebox](images/installationV1-step4-2.png){.thumbnail}
 
-- Connectez-vous au modem principal sur une nouvelle page du navigateur grâce à l'IP indiquée (dans notre exemple **http://192.168.0.1** ) et désactivez le DHCP de ce modem :
+- Connectez-vous au modem principal sur une nouvelle page du navigateur via l'adresse IP indiquée (dans notre exemple **http://192.168.0.1** ) et désactivez le DHCP de ce modem.
 
-> [!primary]
->
-> Comment désactiver le serveur DHCP des principaux modems grand public ?
-> Voir le guide [Désactiver le serveur DHCP de votre modem](/pages/web_cloud/internet/overthebox/intel_itv1_desactiver_dhcp_modem)
->
-
-- Revenez ensuite sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} et cliquez sur **recheck**.
+- Revenez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} et cliquez sur **recheck**.
 
 ![overthebox](images/installationV1-step4-3.png){.thumbnail}
 
-Cette opération dure 30 secondes, le DHCP sera ensuite géré par votre **OverTheBox**.
+Cette opération dure 30 secondes. Le DHCP sera ensuite géré par votre **OverTheBox**.
 
 ![overthebox](images/installationV1-step4-4.png){.thumbnail}
 
-- Rafraichissez ensuite la configuration réseau de votre ordinateur afin que ce dernier soit désormais pris en charge par l' **OverTheBox**. Pour ce faire :
+- Rafraichissez ensuite la configuration réseau de votre ordinateur afin que ce dernier soit désormais pris en charge par l'**OverTheBox**. Pour ce faire :
     - En **Ethernet RJ45** : débranchez et rebranchez le câble RJ45.
     - En **Wifi** : coupez le WiFi et réactivez-le.
 - Assurez vous que l'installation se soit bien déroulée en vérifiant votre **IP publique** sur notre site [http://proof.ovh.net/](http://proof.ovh.net/){.external}. Vous devez obtenir une IP similaire à 109.190.x.y ou 151.127.x.y:
@@ -183,15 +202,15 @@ Cette opération dure 30 secondes, le DHCP sera ensuite géré par votre **OverT
 ipconfig /release
 ipconfig /renew
 ```
-- Puis patientez 30 secondes.
+- Patientez 30 secondes.
 
 > [!alert]
 >
-> Si malgré cette opération, le site [http://proof.ovh.net/](http://proof.ovh.net/){.external} ne retourne toujours pas les bonnes informations, veuillez recommencer
+> Si malgré cette opération le site [http://proof.ovh.net/](http://proof.ovh.net/){.external} ne retourne toujours pas les bonnes informations, veuillez recommencer
 > l'intégralité de cette dernière étape point par point.
 >
 
-### Étape 5 : ajout d'une connexion supplémentaire
+#### Étape 5 : ajout d'une connexion supplémentaire
 
 Avant de brancher le modem supplémentaire, vérifiez que ce dernier possède **un sous réseau différent** des autres modems.
 
@@ -206,9 +225,7 @@ Avant de brancher le modem supplémentaire, vérifiez que ce dernier possède **
 **Cas d'un modem Technicolor TG788 ou TG789 fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG788 ou TG789 est 192.168.**1**.254.
 **Cas d'un modem Technicolor TGTG799vac ou Zyxel fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG799vac ou Zyxel VMG8924-B10D est 192.168.**1**.1.
 
-Il n'est donc pas possible de le cumuler avec un autre modem en 192.168.**1**.0/24
-
-Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems, ce guide détaille la procédure à suivre en fonction de votre fournisseur d'accès : [Désactiver le serveur DHCP de votre modem](/pages/web_cloud/internet/overthebox/intel_itv1_desactiver_dhcp_modem)
+Il n'est donc pas possible de le cumuler avec un autre modem en 192.168.**1**.0/24. Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems.
 
 - Branchez votre deuxième modem **sur le modem principal** (comme sur l'image ci-dessous avec le câble vert).
 
@@ -224,37 +241,27 @@ Votre **OverTheBox** va détecter le deuxième modem :
 
 ![overthebox](images/installationV1-step5-2.png){.thumbnail}
 
-- Connectez-vous au deuxième modem sur une nouvelle page du navigateur grâce à l'IP indiquée (dans notre exemple **http://192.168.1.1** ) et désactivez le DHCP de ce modem :
+- Connectez-vous au deuxième modem sur une nouvelle page du navigateur via l'adresse IP indiquée (dans notre exemple **http://192.168.1.1** ) et désactivez le DHCP de ce modem.    
 
-> [!primary]
->
-> Comment désactiver le serveur DHCP des principaux modems grand public ?
-> Voir le guide [Désactiver le serveur DHCP de votre modem](/pages/web_cloud/internet/overthebox/intel_itv1_desactiver_dhcp_modem)
->
-
-- Revenez ensuite sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} et cliquez sur **recheck**.
+- Revenez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} et cliquez sur **recheck**.
 
 Cette opération dure 30 secondes.
 
 ![overthebox](images/installationV1-step5-3.png){.thumbnail}
 
-La configuration est terminée. Votre  **OverTheBox**  utilise à présent les 2 connexions simultanées comme indiqué à l'accueil de [http://overthebox.ovh](http://overthebox.ovh){.external} :
+La configuration est terminée. Votre  **OverTheBox**  utilise à présent les deux connexions simultanées, comme indiqué à l'accueil de [http://overthebox.ovh](http://overthebox.ovh){.external} :
 
 ![overthebox](images/installationV1-step5-4.png){.thumbnail}
 
 > [!primary]
 >
-> L'OverTheBox est capable d'agréger jusque 4 connexions, il faut répéter cette étape pour chaque connexion supplémentaire.
+> L'OverTheBox est capable d'agréger jusqu'à 4 connexions. Il faut répéter cette étape pour chaque connexion supplémentaire.
 >
 
 ## Aller plus loin
 
-### Ajouter un décodeur TV
-
-Si vous devez utiliser la télévision via l'un des modems pris en charge par **OverTheBox**, veuillez suivre la procédure décrite sur le guide suivant : [Intégration d'un Décodeur TV](/pages/web_cloud/internet/overthebox/intel_itv1_integration_decodeur_tv){.external}.
-
 ### Brancher l'OverTheBox sur un switch
 
-Pour utiliser votre **OverTheBox** sur un **switch réseau**, la configuration ne doit pas être modifiée (hormis celle de votre switch s'il est manageable), il vous suffit de modifier les branchements et tout connecter sur le switch.
+Pour utiliser votre **OverTheBox** sur un **switch réseau**, la configuration ne doit pas être modifiée (hormis celle de votre switch s'il est manageable). Il vous suffit de modifier les branchements et tout connecter sur le switch.
 
 N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)
