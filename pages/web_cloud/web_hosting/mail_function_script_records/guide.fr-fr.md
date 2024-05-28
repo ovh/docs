@@ -107,8 +107,8 @@ Dans cette partie, retrouvez le détail de chaque état à l'origine du blocage 
 > - La configuration de [l’enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) dans la zone DNS du nom de domaine.
 > - La configuration de [l’enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc) dans la zone DNS du nom de domaine, **seulement si le serveur de destination l'exige**.
 > - Vérifiez la réputation de l’adresse IP à l’origine de l’envoi ([celle de votre hébergement web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip) dans votre cas), à l'aide d'un outil tel que [MXtoolbox](https://mxtoolbox.com/) ou [Spamhaus](https://check.spamhaus.org/).
-> - L'e-mail ne contient pas d'éléments susceptibles d'être interprétés comme du SPAM. Retrouvez une liste non exhaustive de ces éléments dans la partie « [Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM](#elements-list-spam)» de ce guide.
-> - En cas d'absence de blocage du côté d'OVHcloud et que l'e-mail n'a pas été reçu ou rejeté par le destinataire, contactez le destinataire afin qu'il vérifie si l'e-mail n'a pas été bloqué au niveau du serveur de réception.
+> - L'e-mail ne contient pas d'éléments susceptibles d'être interprétés comme du SPAM. Retrouvez une liste non exhaustive de ces éléments dans la partie « [Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM](#elements-list-spam) » de ce guide.
+> - En cas d'absence de blocage du côté d'OVHcloud et si l'e-mail n'a pas été reçu ou rejeté par le destinataire, contactez le destinataire afin qu'il vérifie si l'e-mail n'a pas été bloqué au niveau du serveur de réception.
 
 #### L'état « Désactivé »
 
