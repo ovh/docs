@@ -1,7 +1,7 @@
 ---
 title: 'Éditer une zone DNS OVHcloud'
 excerpt: 'Découvrez comment éditer une zone DNS OVHcloud via votre espace client'
-updated: 2024-04-12
+updated: 2024-04-13
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ updated: 2024-04-12
 
 ### Comprendre la notion de DNS <a name="understanddns"></a>
 
-Le sigle DNS, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments permettant de faire correspondre un nom de domaine avec une adresse IP.
+Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments permettant de faire correspondre un nom de domaine avec une adresse IP.
 
 Par exemple, lorsque vous souhaitez accéder au site *mydomain.ovh*, votre requête est initialement traitée par cet ensemble DNS qui va l'aiguiller vers l'adresse IP du serveur hébergeant le site *mydomain.ovh*.
 
