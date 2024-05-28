@@ -25,7 +25,7 @@ Voici la liste des logiciels compris dans la suite:
 
 ### Commander une licence
 
-Rendez-vous sur la page commercial [Microsoft 365 OVHcloud](https://www.ovh.com/fr/office-365-business){.external} et sélectionnez la rubrique `Microsoft`{.action} de notre section `Web Cloud`{.action}.
+Rendez-vous sur la page commerciale [Microsoft 365 OVHcloud](https://www.ovh.com/fr/office-365-business){.external} et sélectionnez la rubrique `Microsoft`{.action} de notre section `Web Cloud`{.action}.
 
 Vous pouvez également commander une licence depuis l'[espace client OVHcloud](/links/manager). Une fois connecté, sélectionnez `Web Cloud`{.action} dans le bandeau supérieur puis cliquez sur le bouton `Commander`{.action} et sur `o365`{.action}.
 
@@ -47,7 +47,7 @@ Saisissez les informations relatives à l'utilisateur de la licence, cliquez sur
 
 ![emails](images/Outlook-cps1-02.png){.thumbnail}
 
-### Installer la suite Microsoft 365 sur votre machine <a name="install360"></a>
+### Installer la suite Microsoft 365 sur votre machine <a name="install365"></a>
 
 Une fois la licence activée, vous recevez un e-mail sur l'adresse e-mail de contact de votre compte OVHcloud. Vous pouvez également retrouver cet e-mail depuis votre [espace client OVHcloud](/links/manager), en cliquant sur votre profil en haut à droite, puis sur `E-mails de service`{.action} dans la partie `Raccourcis`.
 
@@ -67,9 +67,9 @@ Rendez-vous sur <https://portal.office.com/> et connectez-vous avec **l'adresse 
 
 #### Installer la suite 365 sur plusieurs machines
 
-Avec une licence, l'utilisateur peut installer la suite Microsoft 365 sur **5 machines Windows et macOS**, sur **5 tablettes** et **5 smartphones**. Cela représente un total de **15 appareils** pour une licence. L'ensemble des ses appareils doivent appartenir au détenteur de la licence.
+Avec une licence, l'utilisateur peut installer la suite Microsoft 365 sur **5 machines Windows et macOS**, sur **5 tablettes** et **5 smartphones**. Cela représente un total de **15 appareils** pour une licence. L'ensemble de ces appareils doivent appartenir au détenteur de la licence.
 
-Pour installer votre licence sur plusieurs machines, il vous faut simplement reproduire [l'étape précédente](#install360) *sur chaque appareils* en s'assurant que chacun est géré *par le même utilisateur*.
+Pour installer votre licence sur plusieurs machines, il vous faut simplement reproduire [l'étape précédente](#install365) *sur chaque appareil* en vous assurant que chacun est géré *par le même utilisateur*.
 
 ### Ajouter une licence à un groupe existant
 
