@@ -1,12 +1,12 @@
 ---
-title: "Architecture overview"
+title: "OVHcloud KMS Architecture overview"
 excerpt: "Discover how we handle the security of the OVHcloud KMS"
 updated: 2024-05-14
 ---
 
 > [!warning]
 >
-> OVHcloud KMS is currently in beta. This guide may be incomplete and will be updated during the beta phase.
+> OVHcloud KMS will be open soon in beta. This guide may be incomplete and will be updated during the beta phase.
 > Do not hesitate to give us feedbacks on the dedicated Discord channel : https://discord.gg/ovhcloud
 >
 
