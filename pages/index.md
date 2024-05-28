@@ -301,7 +301,6 @@
             + [VMware DRS (Distributed Resource Scheduler)](bare_metal_cloud/managed_bare_metal/vmware_drs_distributed_ressource_scheduler)
             + [Enabling Virtual Machine Encryption (VM Encrypt)](bare_metal_cloud/managed_bare_metal/vm_encrypt)
             + [Using the vSphere SDK](bare_metal_cloud/managed_bare_metal/using-vsphere-sdk)
-            + [Using Active Directory server as an authentication source (Federation)](bare_metal_cloud/managed_bare_metal/federation)
 + Hosted Private Cloud
     + [VMware on OVHcloud](products/hosted-private-cloud-hosted-private-cloud-powered-by-vmware)
         + [Getting started](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started)
