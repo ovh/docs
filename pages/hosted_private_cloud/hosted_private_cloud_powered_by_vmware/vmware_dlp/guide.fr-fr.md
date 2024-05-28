@@ -93,10 +93,10 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > **Paramètres:**
 >
 > serviceName : La référence pour votre PCC, ***pcc-XXX-XXX-XXX-XXX***.
-> ip : L'adresse Ip du service distant 
-> logLevel : Le niveau de log miminum (LogLevelEnum)
-> servicePort : Port distant (syslog : 514, syslog manager : 6514)
-> sourceType : Type de source : nsxtEdge
+> ip : L'adresse Ip du service distant.
+> logLevel : Le niveau de log miminum (LogLevelEnum).
+> servicePort : Port distant (syslog : 514, syslog manager : 6514).
+> sourceType : Le type de source (nsxtEdge).
 > sslThumbprint : L'empreinte de votre gateway SSL.
 >
 
