@@ -2,7 +2,7 @@
 title: "Premier pas avec OVHcloud KMS"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
 flag: hidden
-updated: 2024-05-14
+updated: 2024-05-28
 ---
 
 > [!warning]
@@ -23,7 +23,7 @@ L'objectif de ce guide est de présenter les différentes étapes pour mettre en
 
 ### Commander votre KMS
 
-La commande d'un KMS se fait depuis l'espace client OVHcloud.<br>
+La commande d'un KMS se fait depuis [l'espace client OVHcloud](/links/manager).<br>
 Chaque KMS est associé à une région, ainsi les clés qui y sont stockées ont la garantie de rester dans cette région.<br>
 Il est possible de commander plusieurs KMS, que ce soit dans des régions différentes ou dans une même région.
 
@@ -421,7 +421,7 @@ L'API attend les valeurs suivantes :
 |ciphertext|string|Donnée à déchiffrer|
 |context|string|Donnée d'identification complémentaire permettant de vérifier l'authenticité de la donnée|
 
-Le champ **context** devant contenir la même information que celle donnée lors du chiffrement
+Le champ **context** devant contenir la même information que celle donnée lors du chiffrement.
 
 #### Chiffrement avec une Data Key (DK)
 
