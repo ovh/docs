@@ -207,15 +207,20 @@ web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-domains: Domeny
 web-cloud-domains-dns: DNS
-web-cloud-domains-dns-dns-and-dns-zone: Strefy DNS i DNS
-web-cloud-domains-dns-security: Bezpieczeństwo
+web-cloud-domains-dns-dns-records:
+web-cloud-domains-dns-dns-options:
+web-cloud-domains-dns-dns-tools:
+web-cloud-domains-dns-dns-zone: Strefy DNS i DNS
+web-cloud-domains-dns-servers: Bezpieczeństwo
 web-cloud-domains-domain-names: Nazwy domen
-web-cloud-domains-domain-names-general-guides: Przewodniki
+web-cloud-domains-domain-names-getting-started: Przewodniki
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Zmiana właściciela nazwy domeny (handel)
-web-cloud-domains-domain-names-transferring-between-registrars: Przenoszenie między rejestrami
+web-cloud-domains-domain-names-incoming-transfer-to-ovhcloud
+web-cloud-domains-domain-names-outgoing-transfer-from-ovhcloud: Przenoszenie między rejestrami
 web-cloud-domains-domain-names-troubleshooting: Diagnostyka
 web-cloud-domains-domain-names-tutorials: Tutoriale
-web-cloud-domains-domain-names-api: API
+web-cloud-domains-api: API
+web-cloud-domains-api-current-tasks:
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Dostęp do Internetu
 web-cloud-internet-internet-access-advanced-setup: Konfiguracja zaawansowana
