@@ -1,7 +1,7 @@
 ---
 title: Comment configurer le reverse DNS de ma connexion Internet OVHcloud
 excerpt: "Découvrez comment configurer et vérifier le reverse DNS d'un domaine redirigeant vers l'adresse IP de votre acccès FTTH ou xDSL OVHcloud"
-updated: 2024-05-27
+updated: 2024-05-28
 ---
 
 ## Objectif
