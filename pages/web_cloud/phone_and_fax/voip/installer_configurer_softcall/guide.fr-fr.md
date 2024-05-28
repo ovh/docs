@@ -1,11 +1,11 @@
 ---
 title: 'Installer et configurer Softcall (Bêta)'
 excerpt: 'Découvrez comment installer et configurer Softcall afin de profiter de la solution Softphone'
-updated: 2024-05-16
+updated: 2024-05-28
 ---
 
 > [!primary]
-> L'application [Softcall](https://labs.ovhcloud.com/en/softphone-beta/) est actuellement en phase bêta.
+> L'application [Softcall](https://labs.ovhcloud.com/en/softphone-beta/) est actuellement en phase bêta. [Rejoignez la bêta dès maintenant !](https://survey.ovh.com/index.php/361586?lang=fr).
 > Ce guide peut donc être incomplet et sera mis à jour lors de la bêta. Notre équipe reste disponible pour répondre à vos questions sur la mailing-list [voip@ml.ovh.net](mailto:voip@ml.ovh.net). Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services VoIP. 
 
 ## Objectif
@@ -18,6 +18,7 @@ Le Softphone est une solution qui transforme votre ordinateur, smartphone ou tab
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+- Rejoindre la [bêta Softcall](https://survey.ovh.com/index.php/361586?lang=fr).
 
 ## En pratique
 
