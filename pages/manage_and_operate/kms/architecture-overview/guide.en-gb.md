@@ -1,13 +1,13 @@
 ---
 title: "OVHcloud KMS Architecture overview"
 excerpt: "Discover how we handle the security of the OVHcloud KMS"
-updated: 2024-05-14
+updated: 2024-05-28
 ---
 
 > [!warning]
 >
 > OVHcloud KMS will be open soon in beta. This guide may be incomplete and will be updated during the beta phase.
-> Do not hesitate to give us feedbacks on the dedicated Discord channel : https://discord.gg/ovhcloud
+> Do not hesitate to provide us with feedback on the dedicated Discord channel : <https://discord.gg/ovhcloud>.
 >
 
 ## Objective
@@ -16,18 +16,18 @@ This guide explains how we handle the resilience of the OVHcloud KMS (Key Manage
 
 ## Instructions
 
-The OVHcloud KMS architecture has 3 main objectives.
+The OVHcloud KMS architecture has 3 main objectives:
 
-- **Confidentiality** : Assure that no one exept you can access to your key
-- **Disponibility** : Offering a high level of resilience and therefore high availability
-- **Integrity** : Making sure that keys cannot be lost or altered
+- **Confidentiality** : Assure that no one exept you can access to your key.
+- **Disponibility** : Offering a high level of resilience and therefore high availability.
+- **Integrity** : Making sure that keys cannot be lost or altered.
 
 ### Access Management
 
 Access to the keys are controlled by the [OVHcloud IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
-Only the users allowed by an IAM policy can manage the keys or use them to encrypt or sign data
+Only the users allowed by an IAM policy can manage the keys or use them to encrypt or sign data.
 
-Even the OVHcloud employee cannot access to your keys
+Even the OVHcloud employees cannot access your keys.
 
 ### KMS architecture
 
@@ -63,12 +63,11 @@ All customer data are always stored encrypted in the databases and in the backup
 Backup location depends on the location of the OVHcloud KMS.
 
 - **EU_WEST_RBX**
-  - KMS Backup Region 1 : EU_WEST_SBG
-  - KMS Backup Region 2 : EU_WEST_GRA
-
+    - KMS Backup Region 1 : EU_WEST_SBG
+    - KMS Backup Region 2 : EU_WEST_GRA
 - **EU_WEST_SBG**
-  - KMS Backup Region 1 : EU_WEST_RBX
-  - KMS Backup Region 2 : EU_WEST_GRA
+    - KMS Backup Region 1 : EU_WEST_RBX
+    - KMS Backup Region 2 : EU_WEST_GRA
 
 ### Disaster scenarios
 
@@ -95,4 +94,4 @@ Database backup will be used at region rebuilt to retrieve stored keys.
 
 ## Go further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
