@@ -1050,7 +1050,7 @@
 + Web Cloud
     + [Domains](products/web-cloud-domains)
         + [API](products/web-cloud-domains-api)
-            + [Frequent tasks](web-cloud-domains-api-current-tasks)
+            + [Frequent tasks](web-cloud-domains-api-frequent-tasks)
                 + [Introduction](web_cloud/domains/api_domain_intro)
                 + [Order a Domain Name](web_cloud/domains/api_domain_order)
                 + [Tasks Management](web_cloud/domains/api_domain_tasks)
