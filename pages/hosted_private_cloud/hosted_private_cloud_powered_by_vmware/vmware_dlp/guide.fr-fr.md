@@ -17,13 +17,11 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 - Les ressources PCC et LDP doivent appartenir au même compte OVHcloud.
 
 ## Concepts et limites
-
 > [!warning]
 > A ce jour, les logs des listeners **UDP** ne sont pas transmis.
 > L'intégralité des journaux VMware ne sont pas transmissible, pour raison de sécurité.
 
 ### Glossaire
-
 - **Logs Data Platform :** plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/).
 - **Data Stream :** partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
 - **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
@@ -73,8 +71,6 @@ Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, 
 - Créer une intégration avec l'API OpenSearch ;
 - Se connecter avec Grafana.
  
-
-
 ## En pratique
 
 Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](https://www.ovhcloud.com/fr/logs-data-platform/).
@@ -102,7 +98,7 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > servicePort : Port distant (syslog : 514, syslog manager : 6514)
 > sourceType : Type de source : nsxtEdge
 > sslThumbprint : L'empreinte de votre gateway SSL.
-
+>
 
 ### Etape 2 - Activation du Log Forwarding
 
