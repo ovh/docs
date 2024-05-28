@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Utilizar o ficheiro htaccess com WordPress"
 excerpt: "Descubra como proteger o seu blogue WordPress com um ou vários ficheiros htaccess"
-updated: 2024-05-24
+updated: 2024-05-28
 ---
 
 > [!primary]
