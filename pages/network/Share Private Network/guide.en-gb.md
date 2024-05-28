@@ -92,7 +92,7 @@ PING 192.168.200.109 (192.168.200.109) 56(84) bytes of data.
 --- 192.168.200.109 ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 0.292/0.292/0.292/0.000 ms
-
+```
 
 ## Go further
  
