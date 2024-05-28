@@ -1,7 +1,7 @@
 ---
 title: Configuring the firewall on Linux with iptables
 excerpt: Find out how to secure a server with iptables
-updated: 2022-10-18
+updated: 2024-05-28
 ---
 
 ## Objective
@@ -51,9 +51,18 @@ Please refer to our guide on [securing a dedicated server](/pages/bare_metal_clo
 sudo apt-get install iptables
 ```
 
-The example output in Ubuntu confirms that the latest version of *iptables* is already present:
+To make sure that your iptables rules are persistent after reboot, you must install the iptables persistent package using the following command:
 
-![iptables-version](images/step2-version-iptables.PNG){.thumbnail}
+```bash
+sudo apt-get install iptables-persistent
+```
+
+Once this is installed, the iptables folder will contain two files for IPV4 and IPV6 rules:
+
+```bash
+sudo /etc/iptables/rules.v4
+sudo /etc/iptables/rules.v6
+```
 
 Typically, an *iptables* command is as follows:
 
