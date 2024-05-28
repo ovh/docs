@@ -7,15 +7,14 @@ updated: 2024-05-13
 ## Objectif
 
 L'objectif de ce guide est de vous montrer comment activer le transfert de logs de votre PCC Private Cloud vers Logs Data Platform (LDP), une plateforme qui vous aide à stocker, archiver, interroger et visualiser vos logs.
-Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au [Guide d'introduction de Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
+
+Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au guide suivant : ["Introduction à Logs Data Platform"](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 
 ## Prérequis
-
 - Disposer d'un compte client OVHcloud.
-- Un compte Logs Data Platform (LDP) avec au moins un Stream actif configuré.
-- Disposer d'un ou plusieurs [hôtes Hosted Private Cloud VMware on OVHcloud](https://help.ovhcloud.com/csm/fr-vmware-host-addition?id=kb_article_view&sysparm_article=KB0045617){.external} opérationnel.
-- Avoir suivi le guide : [Logs Data Platform - Premiers pas](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
-- Le compte LDP et le compte Hosted Private Cloud doivent appartenir au même compte OVHcloud.
+- Disposer d'une ou plusieurs ressources Hosted Private Cloud (PCC).
+- Avoir au moins un Stream actif configuré sur le compte LDP pour recevoir les logs.
+- Les ressources PCC et LDP doivent appartenir au même compte OVHcloud.
 
 ## Concepts et limites
 
@@ -30,63 +29,34 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 - **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
 - **Abonnement à la redirection de logs :** lors de l'activation du transfert de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
 
+### Type de journaux
 
+Les informations sont transférés par **vRealize log Insight Forwarder**, à l'aide d'un Syslog sur chaque hôtes.
 
-**Quels sont les logs d'un PCC Private Cloud ?**
+Voici des exemples de kind que peuvent contenir des labels :
 
-Les logs transférés sont générés par votre environnement VMware à l'aide d'un Syslog Linux.
+- **esxi** : Référence de votre hôte ESX, filtré par application.
+- **nsxtEdge** : Référence de votre Edge, tout est redirigé (journaux réseaux).
+- **vcsa** : Référence de cluster vCenter, filtré par application (journaux clustering : en relation avec vCenter et vos hotes esx).
+- **nsxt** : Référence NSX-T, tout est redirigé (journaux réseaux)
+- **nsxtManager** : Référence du manager NSX-T, tout est redirigé (journaux réseaux)
 
-Les logs contiennent les champs suivants :
+La notion de kind est très importante dans ce guide c'est pourquoi, nous en parlons aussi tôt.
 
-| Nom du champ                          | Description                                                                                                                                                                                      | Unité |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| serviceName                           | La référence de votre service PCC                                                                                                                                                                | uuid |
-| kind                                  | La référence de votre                                                                                                                                                                            | IP |
-| streamid                              |                                                                                                                                                                                                  | Numérique |
-| subscriptionid                        |                                                                                                                                                                                                  | datetime (avec résolution en millisecondes), par exemple : 25/Mar/2024:14:07:19.536 |
-| operationid                           |                                                                                                                                                                                                  | String, par exemple : « GET / HTTP/1.1 » |
-| syslogForward                         |                                                                                                                                                                                                  | Numérique |
-| logForwardId                          |                                                                                                                                                                                                  | Numérique |
-| bytes_uploaded                        | Nombre d'octets envoyés par le serveur au client                                                                                                                                                 | Numérique |
-| client_certificate_verify             | Retourne l'ID d'erreur de vérification des résultats lorsque la connexion entrante a été établie sur une couche de transport SSL/TLS, sinon zéro si aucune erreur n'est rencontrée.              | Numérique |
-| client_certificate_distinguished_name | Lorsque la connexion entrante a été établie sur une couche de transport SSL/TLS, renvoie le nom unique complet du sujet du certificat présenté par le client                                     | String |
-| pool_id:listener_id                   | Pool vers lequel la requête/connexion a été redirigée                                                                                                                                            | uuid |
-| member_id                             | Membre auquel la requête/connexion a été envoyée                                                                                                                                                 | uuid |
-| tcp_total_session_duration_time       | Durée en millisecondes pendant laquelle la session TCP a été ouverte lorsque cette demande est effectuée                                                                                         | Numérique |
-| termination_state                     | L'indicateur de fin de session : 2 lettres pour TCP, 4 lettres pour HTTP tous les détails sur la [page de documentation HAProxy](https://docs.haproxy.org/2.6/configuration.html#8.5){.external} | String (par exemple « ---- ») |
+**Kind** : Le "kind" est le type de journal que vous voulez transférer à votre stream LDP. Notez que la seule valeur actuellement prise en charge pour Hosted Private Cloud est "esxi" (vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://eu.api.ovh.com/console-preview/?section=%2FdedicatedCloud&branch=v1#get-/dedicatedCloud/-serviceName-/log/kind)).
 
-Les champs suivants sont calculés à partir de `client_ip` et fournis dans les logs :
+D'autres références seront disponible dans les versions futures (si vous avez besoin de référence particulières, vous pouvez échangez avec notre communauté d’utilisateurs (voir la section #allezplusloin) ou sur le discord OVHcloud.
 
-| Nom du champ | Description | Unité |
-|--------------|-------------|-------|
-| client_ip_city_name | Ville calculée par Geoip à partir de `client_ip`| String (ex. `Lille`) |
-| client_ip_geolocation | Latitude, longitude calculées par Logstash Geoip à partir de `client_ip`| x.x,y.y (ex. `50.624,3.0511`) XST6Y7U899O0|
-| client_ip_country_code | Le code pays ISO 3166 A-2 calculé par Logstash Geoip à partir de `client_ip` ISO | XX (ex. `FR`) |
+Pour pouvoir consommer des logs, votre infrastructure PCC doit avoir l'option de sécurité **syslogForwarder** activée. 
 
+> [!primary]
+> Les PCC certifié (PCIDS, HDS, SNC, NSX-T) suivants peuvent faire transférer leur journaux uniquement si le **syslogForwarder** est activé.
 
-## En pratique
+Tous les journaux Edge, des managers, esxi et vcsa sont collectés et envoyés aux nos clusters Logs Data Plateform. 
 
-Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](https://www.ovhcloud.com/fr/logs-data-platform/).
+Tous les journaux de l'appliance vmware sont traités par les "forwarder" syslog et marqués pour le filtre au niveau du cluster LDP :
 
-### Eligibilité avec votre Hosted Private Cloud VMware on OVHcloud
-
-> [!warning]
-> Nous ne fournissons pas l'intégralité des logs VMware.
-
-Pour pouvoir consommer des logs, votre infrastructure PCC doit avoir l'option de sécurité **syslogForwarder** activée. Les PCC suivants peuvent faire transférer leur journal car syslogForwarder est activé :
-
-PCC certifié (pcids, hds, snc...)
-PCC NSX-T
-
-Toutefois, l'option syslogForwarder peut être activée, mais aucun appel d'API n'est disponible pour le moment (voir si nous avons plus de ressources sur PCC master pour cette journée)
-
-Tous les logs Edge, des managers suivants, esxi et vcsa sont collectés et envoyés à nos clusters LDP. Tous les journaux de l'appliance vmware sont traités par les "forwarder" syslog et marqués pour le filtre au niveau du cluster LDP :
-
-Nous labelisons le type de journal (est-ce nsxtEdge, nsxtManager, esxi, etc.)
-Notre label indique que ce journal peut être transféré au client (nous pouvons les filtrer par application)
-Nous mettons toutes les métadonnées pour l'identification de pcc
-
-Une fois le log envoyé sur notre cluster LDP, nous avons quelques routes d’API qui seront disponibles pour tous nos clients afin qu’ils puissent recevoir les logs de leur infrastructure LDAP :
+Nous mettons toutes les métadonnées pour l'identification de pcc.
 
 Maintenant que vos logs sont ingérés et stockés dans votre flux de données Logs Data Platform, vous pouvez interroger vos logs et créer des tableaux de bord pour avoir une représentation graphique de vos logs en utilisant l'interface web de Graylog.
 
@@ -104,26 +74,18 @@ Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, 
 - Se connecter avec Grafana.
  
 
-#### Types de journaux PCC
 
-Le **Kind** est le type de journal que vous voulez transférer à votre service LDP. Notez que la seule valeur actuellement prise en charge pour Hosted Private Cloud est "esxi" (vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://eu.api.ovh.com/console-preview/?section=%2FdedicatedCloud&branch=v1#get-/dedicatedCloud/-serviceName-/log/kind)).
+## En pratique
 
-Exemples :
-**esxi** : Référence de votre hôte ESX, filtré par application.
-**nsxtEdge** : Référence de votre Edge, tout est redirigé.
-**vcsa** : Référence de cluster vCenter, filtré par application.
-**nsxt** : Référence NSX-T, 
-**nsxtManager**
+Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](https://www.ovhcloud.com/fr/logs-data-platform/).
 
-D'autres références seront disponible dans les versions futures (si vous avez besoin de référence particulières, vous pouvez échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.)
+### Etape 1 - Création du Log Forwarder
 
-### Comment activer le Log forwarding dans Vsphere ?
-
-#### Via le control panel OVHcloud
+#### Via le control panel OVHcloud :
 
 Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 
-#### Via l’API :
+#### Via l’API OVHcloud :
 
 > [!primary]
 >
@@ -134,22 +96,32 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 >
 > **Paramètres:**
 >
-> serviceName: La référence pour votre PCC `pcc-XXX-XXX-XXX-XXX`.
+> serviceName : La référence pour votre PCC, ***pcc-XXX-XXX-XXX-XXX***.
+> ip : L'adresse Ip du service distant 
+> logLevel : Le niveau de log miminum (LogLevelEnum)
+> servicePort : Port distant (syslog : 514, syslog manager : 6514)
+> sourceType : Type de source : nsxtEdge
+> sslThumbprint : L'empreinte de votre gateway SSL.
 
 
-### Activation du Log Forwarding
+### Etape 2 - Activation du Log Forwarding
 
-#### Via l'espace client :
+#### Via le control panel OVHcloud :
 
 Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 
-#### Via l'API :
+#### Via l'API OVHcloud :
 
 Vous devrez définir le *Stream* ciblé de l'un de vos comptes LDP sur lequel vous souhaitez que vos logs soient transférés. L'activation du transfert va créer un abonnement pour cet ID de flux.
 
 Vous pouvez récupérer les spécifications de l'API dans le portail [OVH API](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
 
-#### Étape 1 - Récupérer le Stream (et l'ID) cible
+
+### Étape 3 - Récupéreration du Stream (et l'ID) cible
+
+#### Via le control panel OVHcloud :
+
+Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 
 ##### Via l’API OVHcloud :
 
@@ -166,11 +138,16 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
  
 > **Paramètres:**
 >
-> serviceName: La reference de votre PCC : **pcc-XXX.XXX-XXX-XXX**.
+> serviceName: La reference de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
 
-##### Obtenez les détails d'un flux de données :
 
-##### Via l’API :
+### Etape 4 - Obtenez les détails d'un flux de données
+
+#### Via le control panel OVHcloud :
+
+Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+
+##### Via l’API OVHcloud :
 
 > [!api]
 >
@@ -179,10 +156,13 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
  
 > > **Paramètres:**
 >
-> streamId: La reference d'identification de votre stream LDP.
+> streamId : La référence d'identification de votre stream LDP : ***caX6a2f5-XXa9-4434-a1xx-XX0809312dca***.
+> serviceName : La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
 
 
-#### Étape 2 - Créer votre abonnement
+### Étape 5 - Création de votre abonnement LDP
+
+##### Via l’API OVHcloud :
 
 Utilisez l'appel API suivant pour créer un abonnement :
 
@@ -193,7 +173,7 @@ Utilisez l'appel API suivant pour créer un abonnement :
 
 > **Paramètres:**
 >
-> serviceName: La reference de votre PCC, tel que `pcc-XXX-XXX-XXX-XXX`.
+> serviceName: La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
 
 Vous devrez remplacer :
 
@@ -201,8 +181,8 @@ Vous devrez remplacer :
 
 La requête POST a une charge utile qui nécessite les informations suivantes :
 
-- `kind` : le type de journal que vous voulez transférer. Notez que la seule valeur actuellement prise en charge pour Hosted Private Cloud est "esxi", "vcsa", "nsx-t" (vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://eu.api.ovh.com/console-preview/?section=%2FdedicatedCloud&branch=v1#get-/dedicatedCloud/-serviceName-/log/kind)).
-- `streamId` : flux de données cible de votre compte LDP vers lequel vous souhaitez que vos logs du service Hosted Private Cloud soient transférés.
+- `kind` : Le type de journal que vous voulez transférer. Notez que la seule valeur actuellement prise en charge pour Hosted Private Cloud est "esxi", "vcsa", "nsx-t" (vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://eu.api.ovh.com/console-preview/?section=%2FdedicatedCloud&branch=v1#get-/dedicatedCloud/-serviceName-/log/kind)).
+- `streamId` : Flux de données cible de votre compte LDP vers lequel vous souhaitez que vos logs du service Hosted Private Cloud soient transférés.
 
 ```shell
 POST /dedicatedCloud/{serviceName}/log/subscription
@@ -212,7 +192,7 @@ POST /dedicatedCloud/{serviceName}/log/subscription
 }
 ```
 
-Vous obtiendrez en réponse un `operationId` :
+Vous obtiendrez en réponse un `operationId`{.action} :
 
 ```shell
 {
@@ -221,7 +201,7 @@ Vous obtiendrez en réponse un `operationId` :
 }
 ```
 
-Vous pouvez utiliser le `operationId` pour récupérer le `subscriptionId` à des fins de gestion ultérieure à l'aide de l'appel API suivant :
+Vous pouvez utiliser le `operationId`{.action} pour récupérer le `subscriptionId`{.action} à des fins de gestion ultérieure à l'aide de l'appel API suivant :
 
 > [!api]
 >
@@ -230,7 +210,7 @@ Vous pouvez utiliser le `operationId` pour récupérer le `subscriptionId` à de
 
 > **Paramètres:**
 >
-> serviceName: La reference de votre PCC, tel que `pcc-XXX-XXX-XXX-XXX`.
+> serviceName: La reference de votre PCC, tel que `pcc-XXX-XXX-XXX-XXX.`{.action}
 > operationId: La reference de votre identifiant d'opération DLP, tel que : -> A compléter
 
 Une fois l'opération terminée, vous pouvez également récupérer les abonnements à l'aide de l'appel API suivant :
@@ -242,9 +222,9 @@ Une fois l'opération terminée, vous pouvez également récupérer les abonneme
 
 > **Paramètres:**
 >
-> serviceName: La reference de votre PCC, tel que `pcc-XX-XX-XX-XX`.
+> serviceName: La reference de votre PCC, tel que `pcc-XXX-XXX-XXX-XXX.`{.action}
 
-Une fois en possession du `subscriptionId`, vous pouvez obtenir les détails via l'appel API suivant :
+Une fois en possession du `subscriptionId`{.action} , vous pouvez obtenir les détails via l'appel API suivant :
 
 > [!api]
 >
@@ -253,10 +233,11 @@ Une fois en possession du `subscriptionId`, vous pouvez obtenir les détails via
 
 > **Paramètres:**
 >
-> serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
-> subscriptionId: La reference de votre identifiant de subscription DLP, tel que : `18d60324-b260-4000-83db-b484f4db6e80`
+> serviceName : La reference de votre PCC, tel que `pcc-XXX-XXX-XXX-XXX`.
+> subscriptionId : La reference de votre identifiant de subscription DLP, tel que : `18d60324-b260-4000-83db-b484f4db6e80`
 
 Exemple de retour :
+
 ```shell
 GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 
@@ -274,17 +255,19 @@ GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 }
 ```
 
-### Comment accéder à l'interface Graylog ?
+### Etape 6 -  Accéder à l'interface Graylog
 
-Utiliser les identifiants de votre compte LDP, lorsque que vous vous connectez la première fois definissez un mot de passe. Le login correspond à celui de la capture ci-dessous -> **logs-dv-XXX
+Utiliser les identifiants de votre compte LDP, lorsque que vous vous connectez la première fois definissez un mot de passe. Le login correspond au nom d'utilisateur Logs Data Plateform, celui de la capture ci-dessous.
 
-Vous retrouvez plusieurs liens de connexions qui vous redirige sur le bon lien Graylog dans le compte de votre espace LDP.
+Exemple :  `logs-dv-XXX`{.action}
 
 ![GRAYLOG](images/graylog_login.png)
 
+Vous retrouvez plusieurs liens de connexions qui vous redirige sur le bon lien Graylog dans le compte de votre espace LDP.
+
 ![GRAYLOG](images/graylog_login_2.png)
 
-### Comment gérer vos abonnements ?
+### Etape 7 - Gestion de votre abonnements LDP
 
 À tout moment, vous pouvez récupérer les abonnements attachés à votre flux Logs Data Platform et choisir de désactiver la redirection en annulant votre abonnement sur votre flux, de sorte que votre flux Logs Data Platform ne reçoive plus vos journaux d'audit.
 
@@ -299,7 +282,7 @@ Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
 
 > **Paramètres:**
 >
-> subscriptionId: La reference de souscription pour votre compte LDP.
+> subscriptionId : La reference de souscription pour votre compte LDP.
 >
 
 ## Aller plus loin
