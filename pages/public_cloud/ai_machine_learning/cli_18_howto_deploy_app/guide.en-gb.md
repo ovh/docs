@@ -1,7 +1,7 @@
 ---
 title: CLI - Launch an AI Deploy app
 excerpt: Learn how to run an AI Deploy app using the CLI
-updated: 2023-06-05
+updated: 2024-05-29
 ---
 
 ## Objective
