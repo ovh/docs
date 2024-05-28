@@ -211,9 +211,9 @@ web-cloud-domains-api: API
 web-cloud-domains-api-current-tasks: Tâches courrantes
 web-cloud-domains-dns: DNS
 web-cloud-domains-dns-dns-options: Options DNS
-web-cloud-domains-dns-dns-tools: Outils DNS
 web-cloud-domains-dns-dns-records: Enregistrements DNS
 web-cloud-domains-dns-servers: Serveurs DNS
+web-cloud-domains-dns-dns-tools: Outils DNS
 web-cloud-domains-dns-dns-zone: Zone DNS
 web-cloud-domains-domain-names: Noms de domaine
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Changer le propriétaire d'un nom de domaine (trade)
