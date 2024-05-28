@@ -1861,6 +1861,7 @@
             + [Manage a service account with OVHcloud API](manage_and_operate/api/manage-service-account)
             + [How to use the OVHcloud API with Oauth2](account_and_service_management/account_information/authenticate-api-with-service-account)
             + [How to enable OVHcloud account logs forwarding](manage_and_operate/iam/iam-logs-forwarding)
+            + [Getting started](manage_and_operate/kms/quick-start)
     + [User management & Federation](products/manage-operate-user)
         + [Getting started](manage-operate-user-getting-started)
             + [Presentation of identities that can interact within an OVHcloud account](manage_and_operate/iam/identities-management)
@@ -1922,7 +1923,6 @@
                 + [Supervising your HAProxy deployment with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_haproxy)
                 + [Analyzing Twitter with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_twitter)
     + [KMS](manage-operate-kms)
-        + [Getting started](manage_and_operate/kms/quick-start)
         + [Architecture description](manage_and_operate/kms/architecture-overview)
 + OVHcloud Labs
     + [Data Collector](products/ovhcloud-labs-data-collector)
