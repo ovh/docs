@@ -1,6 +1,7 @@
 ---
 title: "Premier pas avec OVHcloud KMS"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
+flag: hidden
 updated: 2024-05-14
 ---
 
