@@ -147,9 +147,7 @@ This will allow you to add and delete the users or the groups to whom the policy
 
 ### Managing identities
 
-The identities available for policies are managed via the `User management`{.action} tab, in the `My account`{.action} menu.
-
-The `Identities`{.action} tab on the IAM menu will redirect you the this menu.
+The identities available for policies are managed via the `Identities`{.action} tab.
 
 Details about user management are available in the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

@@ -81,17 +81,17 @@ Votre service Google Workspace fait désormais confiance à OVHcloud en tant que
 
 L'ajout de votre Google workspace en tant que fournisseur d'identité de confiance s'effectue dans [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) où vous pouvez fournir les métadonnées du fournisseur d'identité.
 
-[Connectez-vous](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et cliquez sur votre profil en haut à droite.
+Cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre nom dans la barre latérale.
 
-![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
+![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Cliquez sur votre nom pour accéder à la page de gestion de votre profil.
+Vous pouvez accéder au menu IAM via l’entrée dédiée dans votre espace client.
 
-![Informations utilisateur OVHcloud](images/ovhcloud_user_infos.png){.thumbnail}
+![Accès au menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Ouvrez l'onglet `Gestion des utilisateurs`{.action}.
+Puis cliquer sur l'onglet `Identités`{.action} pour accéder à la gestion des utilisateurs locaux.
 
-![Profil menu OVHcloud](images/ovhcloud_profile_menu.png){.thumbnail}
+![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Cliquez sur le bouton `Connexion SSO`{.action}.
 
