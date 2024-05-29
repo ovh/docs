@@ -1,7 +1,7 @@
 ---
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
-updated: 2023-01-11
+updated: 2024-05-30
 ---
 
 ## Objective
@@ -90,6 +90,8 @@ Complete and write down the configuration into `~/.aws/config`:
 endpoint = awscli_plugin_endpoint
 
 [profile default]
+aws_access_key_id=<access_key>
+aws_secret_access_key=<secret_key>
 # region = <public_cloud_region_without_digit>
 region = gra #for example
 s3 =
