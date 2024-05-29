@@ -1,7 +1,7 @@
 ---
 title: "Réinitialiser la configuration d'OverTheBox"
 excerpt: "Découvrez comment réinitialiser votre OverTheBox afin de revenir à la configuration par défaut"
-updated: 2022-11-14
+updated: 2024-05-29
 ---
 
 ## Objectif
@@ -44,9 +44,9 @@ Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle
 >
 > Votre OvertheBox est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans les guides suivants :
 >
-> [Installation OverTheBox Intel ou IT v1](/pages/web_cloud/internet/overthebox/intel_itv1_installation)
+> [Configurer un ancien appareil OverTheBox v1 (Intel & IT v1)](/pages/web_cloud/internet/overthebox/intel_itv1_installation)
 >
-> [Installation OverTheBox Plus ou IT v2](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
+> [Comment installer OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
 >
 
 ### Méthode 2 : réinitialisation par l'interface
@@ -69,9 +69,9 @@ Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle
 >
 > Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans les guides suivants :
 >
-> [Installation OverTheBox Intel ou IT v1](/pages/web_cloud/internet/overthebox/intel_itv1_installation)
+> [Configurer un ancien appareil OverTheBox v1 (Intel & IT v1)](/pages/web_cloud/internet/overthebox/intel_itv1_installation)
 >
-> [Installation OverTheBox Plus ou IT v2](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
+> [Comment installer OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
 >
 
 ### Méthode 3 : réinitialisation par le CLI
@@ -101,9 +101,9 @@ firstboot -y
 >
 > Votre OvertheBox est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans les guides suivants :
 >
-> [Installation OverTheBox Intel ou IT v1](/pages/web_cloud/internet/overthebox/intel_itv1_installation)
+> [Configurer un ancien appareil OverTheBox v1 (Intel & IT v1)](/pages/web_cloud/internet/overthebox/intel_itv1_installation)
 >
-> [Installation OverTheBox Plus ou IT v2](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
+> [Comment installer OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
 >
 
 ### Méthode n°4 : réinitialisation par clé USB
