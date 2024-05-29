@@ -6,15 +6,27 @@ updated: 2024-05-29
 
 ## Objectif
 
-Le sigle DNS, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments (serveurs DNS, zones DNS, etc.) permettant de faire correspondre un nom de domaine avec une adresse IP.
+Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments (serveurs DNS, zones DNS, etc.) permettant de faire correspondre un nom de domaine avec une adresse IP.
 
 **Découvrez le rôle des serveurs DNS, ce qu'ils contiennent et comment ils fonctionnent avec un nom de domaine.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### En pratique
+## En pratique
 
-Les **serveurs DNS** contiennent des fichiers de configurations DNS pour des noms de domaine, appelés **zones DNS**.
+### Rôle d'un serveur DNS
+
+Tous les **serveurs DNS** (y compris les résolveurs DNS) forment ensemble ce que l'on appelle le réseau DNS.
+
+Ce réseau DNS permet de faciliter, aux humains, l'utilisation d'Internet et l'accès aux différents services qui y sont associés (sites web, services de messagerie en ligne, etc.).
+
+Ils permettent notamment l'utilisation des [noms de domaine](/links/web/domains) pour, par exemple, accéder à votre site web préféré sans être obligé de retenir l'adresse IP du serveur où est hébergé ce site web.
+
+### Contenu d'un serveur DNS
+
+Un **serveur DNS** contient généralement un annuaire de noms de domaines.
+
+Pour chaque nom de domaine présent dans cet annuaire est associé un fichier de configuration DNS, appelé **zone DNS**.
 
 Une zone DNS contient des informations techniques, appelées *enregistrements DNS*. La zone DNS est comme un poste d'aiguillage.
 
@@ -30,16 +42,34 @@ De ce fait, ce sont les **serveurs DNS** qui doivent être déclarés auprès du
 
 ![DNS](images/dns-server.png){.thumbnail}
 
-Les **serveurs DNS** fonctionnent généralement par paire :
+### Fonctionnement d'un serveur DNS avec un nom de domaine
+
+#### Déclaration des serveurs DNS auprès du bureau d'enregistrement d'un nom de domaine
+
+De manière générale, pour que la zone DNS associée à un nom de domaine présent dans l'annuaire d'un serveur DNS soit active, il est nécessaire que ce serveur DNS soit déclaré auprès du bureau d'enregistrement du nom de domaine.
+
+De plus, les **serveurs DNS** fonctionnent généralement par paire :
 
 - Un serveur DNS *principal* qui redirige les flux de requêtes reçus par le nom de domaine vers la zone DNS qu'il héberge pour ce dernier. La zone DNS effectue ainsi la *résolution DNS* pour rediriger les flux vers les bons services (serveurs, site web, e-mails, etc.) associés au nom de domaine.
 - Un serveur DNS *secondaire* dit *de secours* qui est utilisé si le serveur *principal* est saturé, indisponible ou répond moins rapidement que le serveur *secondaire*.
 
 Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS** à déclarer auprès de votre nom de domaine. Dans ce cas, renseignez tous les serveurs DNS proposés par votre fournisseur DNS.
 
+#### Résolution d'une requête DNS
+
+Pour terminer et afin de comprendre plus globalement la place qu'occupe les serveurs DNS dans le réseau DNS, retrouvez ci-après un schéma expliquant la résolution d'une requête DNS.
+
+L'exemple ci-dessous représente une requête effectuée depuis un navigateur internet pour afficher le site web **mydomain.ovh**.
+
+![DNS request resolution](images/dns-request-resolution.png){.thumbnail}
+
+
+
 ## Aller plus loin
 
-[Modification d'une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit).
+
+[Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
