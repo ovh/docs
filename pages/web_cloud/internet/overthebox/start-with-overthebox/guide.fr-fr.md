@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OverTheBox"
 excerpt: "Découvrez par où commencer lorsque vous recevez votre OverTheBox"
-updated: 2024-05-28
+updated: 2024-05-29
 ---
 
 ## Objectif

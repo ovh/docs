@@ -1,7 +1,7 @@
 ---
 title: "Comment installer OverTheBox ?"
 excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox"
-updated: 2024-05-28
+updated: 2024-05-29
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Découvrez comment installer et configurer votre équipement OverTheBox Plus ou 
 - Au moins un modem ayant accès à Internet sur lequel vous devez être en capacité de modifier la configuration réseau (IP et DHCP). **Exemple** : Box fournie par un fournisseur d'accès Internet comme OVHcloud ou un opérateur national.
 - Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
 
-> [!alert]
+> [!warning]
 >
 > À ce stade, aucun branchement ne doit être effectué entre les modems et l'OverTheBox.
 > Il est aussi impératif d'utiliser uniquement les modems et l'OverTheBox pendant toute la durée de l'installation.
@@ -67,7 +67,7 @@ Dans le cas d'une OverTheBox IT v2 :
 
 ### Étape 3 : enregistrement du service
 
-> [!alert]
+> [!warning]
 >
 > Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'OverTheBox (câble gris sur l’image ci-dessus).
 >
@@ -106,16 +106,16 @@ Lors de votre première connexion, un assistant d'installation se lance. **Nous 
 
 ### Étape 4 : vérifier le bon fonctionnement de votre service
 
-> [!alert]
+> [!warning]
 >
-> Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'apareil (câble gris sur l’image ci-dessous).
+> Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'appareil (câble gris sur l’image ci-dessous).
 >
 
 - Assurez-vous que l'installation se soit bien déroulée en vérifiant votre **IP publique** sur notre site [http://proof.ovh.net/](http://proof.ovh.net/){.external}. Vous devez obtenir une adresse IP similaire à 109.190.x.y ou 151.127.x.y.
 
 ![overthebox](images/installationV2-step4-1.png){.thumbnail}
 
-> [!alert]
+> [!warning]
 >
 > Si malgré cette opération le site [http://proof.ovh.net/](http://proof.ovh.net/){.external} ne retourne toujours pas les bonnes informations, veuillez recommencer l'intégralité de l'étape 3 point par point.
 >
@@ -132,7 +132,7 @@ Pour le bon déroulement de la procédure d'installation, il est impératif que 
 - Le serveur DHCP du modem doit être **activé**.
 - Si vous avez plus d'un modem, ils doivent être respectivement sur des réseaux locaux différents.
 
-> [!alert]
+> [!warning]
 >
 > Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'OverTheBox.
 >

@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un ancien appareil OverTheBox v1 (Intel & IT v1)'
 excerpt: "Découvrez comment installer et configurer un ancien appareil OverTheBox v1 (Intel & IT v1)"
-updated: 2024-05-28
+updated: 2024-05-29
 ---
 
 > [!warning]
@@ -19,7 +19,7 @@ Découvrez comment installer et configurer votre ancien appareil OverTheBox v1 (
 - Au moins un modem ayant accès à Internet sur lequel vous devez être en capacité de modifier la configuration réseau (IP et DHCP). **Exemple** : Box fournie par un fournisseur d'accès Internet comme OVHcloud ou un opérateur national.
 - Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel)).
 
-> [!alert]
+> [!warning]
 >
 > À ce stade, aucun branchement ne doit être fait entre les modems et l'OverTheBox.
 > Il est aussi impératif d'utiliser uniquement les modems et l'OverTheBox pendant toute la durée de l'installation.
@@ -32,25 +32,25 @@ Découvrez comment installer et configurer votre ancien appareil OverTheBox v1 (
 
 #### Branchements finaux
 
-> [!alert]
+> [!warning]
 >
 > La photo suivante illustre les branchements finaux pour une OverTheBox Intel.
-> Avant d'en arriver là sur votre installation, il est impératif de suivre le processus d'[installation](#installer-overthebox).
+> Avant d'en arriver là sur votre installation, il est impératif de suivre le [processus d'installation](#installer-overthebox).
 >
 
 ![overthebox](images/installationV1-final-plugs.png){.thumbnail}
 
 #### Fonctionnement
 
-Le principe est simple. Tous les éléments du réseau sont reliés physiquement entre eux par le biais des ports Ethernet de l'un des modems (qui est **le Modem Principal**). Cela inclut :
+Le principe est simple. Tous les éléments du réseau sont reliés physiquement entre eux par le biais des ports Ethernet de l'un des modems (qui est **le modem principal**). Cela inclut :
 
 - Le deuxième modem (câble vert).
 - L'OverTheBox (câble jaune).
 - Vos ordinateurs/téléphones etc. (port libre sur le modem principal).
 
-C'est donc ce **Modem Principal** qui permet la liaison physique de tous ces éléments.
+C'est donc ce **modem principal** qui permet la liaison physique de tous ces éléments.
 
-Lorsque votre ordinateur, branché sur le **Modem Principal**, effectue une requête sur Internet, cette dernière transite d'abord par l'**OverTheBox** qui va ensuite transférer les paquets intelligemment vers les deux connexions Internet grâce aux ports Ethernet du **Modem Principal**, comme le montre l'illustration suivante :
+Lorsque votre ordinateur, branché sur le **modem principal**, effectue une requête sur Internet, cette dernière transite d'abord par l'**OverTheBox** qui va ensuite transférer les paquets intelligemment vers les deux connexions Internet grâce aux ports Ethernet du **modem principal**, comme le montre l'illustration suivante :
 
 ![overthebox](images/installationV1-network.gif){.thumbnail}
 
@@ -117,7 +117,7 @@ Dans le cas d'une OverTheBox IT v1 :
 
 #### Étape 3 : enregistrement du service
 
-> [!alert]
+> [!warning]
 >
 > Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur le modem principal afin que votre OverTheBox soit reconnue (câble noir sur l’image ci-dessous).
 >
@@ -140,7 +140,7 @@ Lors de votre première connexion, un assistant d'installation se lance. **Nous 
 
 ![overthebox](images/installationV1-step3-2.png){.thumbnail}
 
-- Identifiez-vous sur l'espace client.
+- Identifiez-vous sur [l'espace client](/links/manager).
 - Cliquez sur le **service OverTheBox** que vous souhaitez associer à votre boîtier.
 
 ![overthebox](images/installationV1-step3-3.png){.thumbnail}
@@ -162,7 +162,7 @@ Lors de votre première connexion, un assistant d'installation se lance. **Nous 
 
 #### Etape 4 : activation et configuration de l’OverTheBox sur la connexion principale
 
-> [!alert]
+> [!warning]
 >
 > Les opérations qui suivent doivent être effectuées depuis un ordinateur
 > connecté directement sur le modem principal afin que votre OverTheBox
@@ -204,10 +204,9 @@ ipconfig /renew
 ```
 - Patientez 30 secondes.
 
-> [!alert]
+> [!warning]
 >
-> Si malgré cette opération le site [http://proof.ovh.net/](http://proof.ovh.net/){.external} ne retourne toujours pas les bonnes informations, veuillez recommencer
-> l'intégralité de cette dernière étape point par point.
+> Si malgré cette opération le site [http://proof.ovh.net/](http://proof.ovh.net/){.external} ne retourne toujours pas les bonnes informations, veuillez recommencer l'intégralité de cette dernière étape point par point.
 >
 
 #### Étape 5 : ajout d'une connexion supplémentaire
@@ -216,7 +215,7 @@ Avant de brancher le modem supplémentaire, vérifiez que ce dernier possède **
 
 **Exemple** : Le premier modem possède l'IP 192.168.**0**.1 et le deuxième 192.168.**1**.1
 
-> [!alert]
+> [!warning]
 >
 > Cette vérification est obligatoire afin de s'assurer du bon fonctionnement en fin d'installation.
 > Afin de connaître l'adresse IP d'un modem non fourni par OVHcloud, veuillez vous rapprocher de votre administrateur ou de votre fournisseur d'accès.
