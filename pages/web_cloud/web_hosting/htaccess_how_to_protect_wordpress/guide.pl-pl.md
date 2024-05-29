@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Użyj pliku htaccess w systemie WordPress"
 excerpt: "Dowiedz się, jak zabezpieczyć blog WordPress jednym lub kilkoma plikami htaccess"
-updated: 2024-03-15
+updated: 2024-05-28
 ---
 
 > [!primary]
@@ -15,7 +15,7 @@ Tutorial wyjaśnia, jak skonfigurować niektóre funkcjonalności hostingu za po
 > [!warning]
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
-> 
+>
 > Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS WordPress](https://wordpress.com/support/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
 >
 
@@ -29,7 +29,7 @@ Tutorial wyjaśnia, jak skonfigurować niektóre funkcjonalności hostingu za po
 Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tekstu, takich jak:
 
 - [Notatnik](https://support.microsoft.com/pl-pl/windows/pomoc-w-aplikacji-notatnik-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} systemu Windows;
-- [TextEdit](https://support.apple.com/pl-pl/guide/textedit/welcome/mac){.external} na macOS; 
+- [TextEdit](https://support.apple.com/pl-pl/guide/textedit/welcome/mac){.external} na macOS;
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
 
 > [!primary]
@@ -140,14 +140,31 @@ Twój plik **wp-config.php**, obecny na Twojej stronie WWW, zawiera wrażliwe in
 
 Jeśli zidentyfikowałeś złośliwy adres IP, w pliku **.htaccess**wpisz poniższy wiersz:
 
-```bash
-<Limit GET POST>
-    order allow,deny deny from 203.0.113.0
-    allow from all
-</Limit>
-```
-
-W tym przykładzie `203.0.113.0` oznacza adres IP, który ma zostać zablokowany.
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 203.0.113.0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> W tym przykładzie `203.0.113.0` oznacza adres IPv4, który ma zostać zablokowany.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 2001:db8:1:1b00:203:0:113:0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> W tym przykładzie `2001:db8:1:1b00:203:0:113:0` oznacza adres IPv6, który ma zostać zablokowany.
+>>
 
 Aby uzyskać więcej informacji na ten temat, zapoznaj się z naszym przewodnikiem dotyczącym ["ograniczenia dostępu przez IP poprzez plik .htaccess"](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -155,13 +172,32 @@ Aby uzyskać więcej informacji na ten temat, zapoznaj się z naszym przewodniki
 
 Katalog **wp-admin** pozwala na połączenie z Twoim interfejsem administracyjnym (metoda działa również z innymi katalogami, ale odpowiadają one adresom URL, które nie prowadzą do określonego interfejsu). Aby chronić ten katalog, zezwalaj na dostęp do jednego lub kilku adresów IP przy użyciu następującego kodu, który ma zostać umieszczony w Twojej **.htaccess**:
 
-```bash
-<Limit GET POST PUT>
-    order deny,allow deny from all
-    allow from 203.0.113.0
-    allow from 203.0.113.0
-</Limit>
-```
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 203.0.113.0
+>>   allow from 203.0.113.1
+>> </Limit>
+>>```
+>>
+>> W tym przykładzie tylko adresy IPv4 `203.0.113.0` i `203.0.113.1` są autoryzowane do dostępu do katalogu, w którym znajduje się plik .htaccess.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 2001:db8:1:1b00:203:0:113:0
+>>   allow from 2001:db8:1:1b00:203:0:113:1
+>> </Limit>
+>>```
+>>
+>> W tym przykładzie tylko adresy IPv6 `2001:db8:1:1b00:203:0:113:0` i `2001:db8:1:1b00:203:0:113:1` są autoryzowane do dostępu do katalogu, w którym znajduje się plik .htaccess.
 
 ### Ważne informacje
 

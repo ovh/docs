@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Utilizar o ficheiro htaccess com WordPress"
 excerpt: "Descubra como proteger o seu blogue WordPress com um ou vários ficheiros htaccess"
-updated: 2024-03-15
+updated: 2024-05-28
 ---
 
 > [!primary]
@@ -15,7 +15,7 @@ Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamen
 > [!warning]
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
-> 
+>
 > Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou [editor do CMS WordPress](https://wordpress.com/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
 >
 
@@ -140,14 +140,31 @@ O seu ficheiro **wp-config.php**, presente na raiz do seu website, contém infor
 
 Se identificou um endereço de IP malicioso, eis a linha a inserir no ficheiro **.htaccess*:
 
-```bash
-<Limit GET POST>
-    order allow,deny deny from 203.0.113.0
-    allow from all
-</Limit>
-```
-
-Neste exemplo, `203.0.113.0`, refere-se ao endereço de IP a bloquear.
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 203.0.113.0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Neste exemplo, `203.0.113.0`, refere-se ao endereço de IPv4 a bloquear.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 2001:db8:1:1b00:203:0:113:0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Neste exemplo, `2001:db8:1:1b00:203:0:113:0`, refere-se ao endereço de IPv4 a bloquear.
+>>
 
 Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -155,13 +172,32 @@ Para mais informações, consulte o nosso guia sobre a [restrição do acesso po
 
 O diretório **wp-admin** permite-lhe ligar-se à sua interface de administração (o método também funciona com os outros diretórios, mas correspondem a URLs que não conduzem a uma interface específica). Para proteger este diretório, autorize especificamente o acesso a um ou vários endereços IP através do seguinte código a inserir no seu **.htaccess*:
 
-```bash
-<Limit GET POST PUT>
-    order deny,allow deny from all
-    allow from 203.0.113.0
-    allow from 203.0.113.0
-</Limit>
-```
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 203.0.113.0
+>>   allow from 203.0.113.1
+>> </Limit>
+>>```
+>>
+>> Neste exemplo, apenas os endereços IPv4 `203.0.113.0` e `203.0.113.1` são autorizados a aceder ao diretório no qual se encontra o ficheiro .htaccess.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 2001:db8:1:1b00:203:0:113:0
+>>   allow from 2001:db8:1:1b00:203:0:113:1
+>> </Limit>
+>>```
+>>
+>> Neste exemplo, apenas os endereços IPv6 `2001:db8:1:1b00:203:0:113:0` e `2001:db8:1:1b00:203:0:113:1` são autorizados a aceder ao diretório no qual se encontra o ficheiro .htaccess.
 
 ### Informações importantes a reter
 

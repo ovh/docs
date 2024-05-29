@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - htaccess-Dateien mit WordPress verwenden"
 excerpt: "Erfahren Sie hier, wie Sie Ihre WordPress Website mit einer oder mehreren htaccess-Dateien absichern"
-updated: 2024-03-15
+updated: 2024-05-28
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 **.htaccess**-Dateien können mit Texteditoren erstellt und bearbeitet werden, zum Beispiel:
 
 - [Notepad](https://support.microsoft.com/de-de/windows/hilfe-in-windows-editor-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} in Windows
-- [TextEdit](https://support.apple.com/de-de/guide/textedit/welcome/mac){.external} in macOS 
+- [TextEdit](https://support.apple.com/de-de/guide/textedit/welcome/mac){.external} in macOS
 - [Notepad++](https://notepad-plus-plus.org/){.external}
 
 > [!primary]
@@ -139,14 +139,31 @@ Ihre Datei **wp-config.php**, die sich im Wurzelverzeichnis Ihrer Website befind
 
 Wenn Sie eine zu sperrende IP-Adresse identifiziert haben, geben Sie diese Zeilen in Ihre **.htaccess**-Datei ein:
 
-```bash
-<Limit GET POST>
-    order allow,deny deny from 203.0.113.0
-    allow from all
-</Limit>
-```
-
-Ersetzen Sie `203.0.113.0` mit der zu blockierenden IP-Adresse.
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 203.0.113.0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Ersetzen Sie `203.0.113.0` mit der zu blockierenden IPv4-Adresse.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 2001:db8:1:1b00:203:0:113:0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Ersetzen Sie `2001:db8:1:1b00:203:0:113:0` mit der zu blockierenden IPv6-Adresse.
+>>
 
 Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [IP-basierten Zugriffsbeschränkung über die .htaccess-Datei](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -154,13 +171,32 @@ Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [IP-ba
 
 Das Verzeichnis **wp-admin** enthält den Zugang zum Administrationssinterface der Installation. (Die Methode funktioniert auch mit anderen Verzeichnissen, deren URLs nicht zu einem Verwaltungszugang führen). Zum Schutz dieses Verzeichnisses beschränken Sie den Zugriff auf eine oder mehrere IP-Adressen mit folgendem Code in Ihrer **.htaccess**:
 
-```bash
-<Limit GET POST PUT>
-    order deny,allow deny from all
-    allow from 203.0.113.0
-    allow from 203.0.113.0
-</Limit>
-```
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 203.0.113.0
+>>   allow from 203.0.113.1
+>> </Limit>
+>>```
+>>
+>> In diesem Beispiel können nur die IPv4-Adressen `203.0.113.0` und `203.0.113.1` auf das Verzeichnis zugreifen, in dem sich die .htaccess-Datei befindet.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 2001:db8:1:1b00:203:0:113:0
+>>   allow from 2001:db8:1:1b00:203:0:113:1
+>> </Limit>
+>>```
+>>
+>> In diesem Beispiel können nur die IPv6-Adressen `2001:db8:1:1b00:203:0:113:0` und `2001:db8:1:1b00:203:0:113:1` auf das Verzeichnis zugreifen, in dem sich die .htaccess-Datei befindet.
 
 ### Wichtige Informationen
 

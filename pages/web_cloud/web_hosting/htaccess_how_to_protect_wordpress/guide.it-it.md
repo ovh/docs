@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Utilizza il file htaccess con WordPress"
 excerpt: "Come proteggere un blog WordPress con uno o più file htaccess"
-updated: 2024-03-15
+updated: 2024-05-28
 ---
 
 > [!primary]
@@ -28,8 +28,8 @@ Questa guida ti mostra come configurare alcune funzionalità del tuo hosting Web
 
 I file **.htaccess** possono essere creati e modificati con editor di testo come:
 
-- [Blocco note](https://support.microsoft.com/it-it/windows/assistenza-per-blocco-note-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} di Windows
-- [TextEdit](https://support.apple.com/it-it/guide/textedit/welcome/mac){.external} su macOS 
+- [Blocco note](https://support.microsoft.com/it-it/windows/assistenza-per-blocco-note-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} di Windows;
+- [TextEdit](https://support.apple.com/it-it/guide/textedit/welcome/mac){.external} su macOS;
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
 
 > [!primary]
@@ -140,14 +140,31 @@ Il tuo file **wp-config.php**, presente alla radice del tuo sito Web, contiene i
 
 Se hai identificato un indirizzo IP malevolo, inserisci la riga nel tuo file **.htaccess*:
 
-```bash
-<Limit GET POST>
-    order allow,deny deny from 203.0.113.0
-    allow from all
-</Limit>
-```
-
-In questo esempio `203.0.113.0` indica l'indirizzo IP da bloccare.
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 203.0.113.0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> In questo esempio `203.0.113.0` indica l'indirizzo IPv4 da bloccare.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 2001:db8:1:1b00:203:0:113:0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> In questo esempio `2001:db8:1:1b00:203:0:113:0` indica l'indirizzo IPv6 da bloccare.
+>>
 
 Per maggiori informazioni su questo argomento, consulta la nostra guida sulla ["restrizione di accesso via IP tramite il file.htaccess"](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -155,13 +172,32 @@ Per maggiori informazioni su questo argomento, consulta la nostra guida sulla ["
 
 La directory **wp-admin** permette di accedere alla tua interfaccia di amministrazione (il metodo funziona anche con le altre directory, ma corrispondono a URL che non portano a un'interfaccia specifica). Per proteggere questa directory, autorizzi in modo specifico l'accesso a uno o più indirizzi IP utilizzando il seguente codice da inserire nel tuo **.htaccess**:
 
-```bash
-<Limit GET POST PUT>
-    order deny,allow deny from all
-    allow from 203.0.113.0
-    allow from 203.0.113.0
-</Limit>
-```
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 203.0.113.0
+>>   allow from 203.0.113.1
+>> </Limit>
+>>```
+>>
+>> In questo esempio, solo gli indirizzi IPv4 `203.0.113.0` e `203.0.113.1` sono autorizzati ad accedere alla directory in cui si trova il file .htaccess.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 2001:db8:1:1b00:203:0:113:0
+>>   allow from 2001:db8:1:1b00:203:0:113:1
+>> </Limit>
+>>```
+>>
+>> In questo esempio, solo gli indirizzi IPv6 `2001:db8:1:1b00:203:0:113:0` e `2001:db8:1:1b00:203:0:113:1` sono autorizzati ad accedere alla directory in cui si trova il file .htaccess.
 
 ### Informazioni importanti da ricordare
 

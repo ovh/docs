@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Using the htaccess file with WordPress"
 excerpt: "Find out how to secure your WordPress blog with one or more htaccess files"
-updated: 2024-03-15
+updated: 2024-05-28
 ---
 
 ## Objective
@@ -136,14 +136,31 @@ Your **wp-config.php** file, located at the root of your website, contains sensi
 
 If you have identified a malicious IP address, enter the following line in your **.htaccess** file:
 
-```bash
-<Limit GET POST>
-    order allow,deny deny from 203.0.113.0
-    allow from all
-</Limit>
-```
-
-Replace `203.0.113.0` with the IP address to block.
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 203.0.113.0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Replace `203.0.113.0` with the IPv4 address to block.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST>
+>>   order allow,deny 
+>>   deny from 2001:db8:1:1b00:203:0:113:0
+>>   allow from all
+>> </Limit>
+>>```
+>>
+>> Replace `2001:db8:1:1b00:203:0:113:0` with the IPv6 address to block.
+>>
 
 For more information on this subject, please refer to our [guide on IP access restriction via the .htaccess file](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -151,13 +168,32 @@ For more information on this subject, please refer to our [guide on IP access re
 
 The **wp-admin** directory is used to access your administration interface. (The method also works with other directories whose URLs do not lead to an administrative interface.) To protect this directory, restrict access to one or more IP addresses using the following code to place in your **.htaccess**:
 
-```bash
-<Limit GET POST PUT>
-    order deny,allow deny from all
-    allow from 203.0.113.0
-    allow from 203.0.113.0
-</Limit>
-```
+> [!tabs]
+> **IPv4**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 203.0.113.0
+>>   allow from 203.0.113.1
+>> </Limit>
+>>```
+>>
+>> In this example, only IPv4 addresses `203.0.113.0` and `203.0.113.1` are allowed to access the directory where the .htaccess file is located.
+>>
+> **IPv6**
+>>
+>>```bash
+>> <Limit GET POST PUT>
+>>   order deny,allow 
+>>   deny from all
+>>   allow from 2001:db8:1:1b00:203:0:113:0
+>>   allow from 2001:db8:1:1b00:203:0:113:1
+>> </Limit>
+>>```
+>>
+>> In this example, only IPv6 addresses `2001:db8:1:1b00:203:0:113:0` and `2001:db8:1:1b00:203:0:113:1` are allowed to access the directory where the .htaccess file is located.
 
 ### Important information to remember
 
