@@ -32,7 +32,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 > [!primary]
 > Les PCC certifié (PCIDS, HDS, SNC, NSX-T) suivants peuvent faire transférer leurs journaux uniquement si le **syslogForwarder** est activé.
 
-### Kind
+#### Kind
 
 La première chose dont vous avez besoin est de créer un ou plusieurs types de logs. Un Kind est un « type » de logs que votre produit génère. Cela dépend vraiment de votre logique commerciale. 
 
@@ -73,6 +73,42 @@ Logs Data Platform est une interface de collecte, d'indexation et d'analyse de l
 
 ### Etape 1 - Activer l'Audit Log Forwarding avec Hosted Private Cloud
 
+> [!warning]
+> Les ressources PCC et LDP doivent appartenir au même compte OVHcloud. Si ce n'est pas le cas, vous aurez ce message d'erreur : 
+> {
+> "message": "Client::ValidationError::SubscriptionDestinationClusterIsInternal ; {\"cluster_name\":\"XXX.logs.ovh.com\"} ; Subscription can't target non-public cluster 'XXXX.logs.ovh.com'"
+> }
+> 
+
+### Création de l'abonnement LDP pour votre Hosted Private Cloud
+
+#### Via le control panel OVHcloud :
+
+Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+
+#### Via l’API OVHcloud :
+
+> [!api]
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
+>
+
+> **Paramètres:**
+>
+> "kind": "esxi".
+> "streamId": "ffb8d894-c491-433e-9c87-50a8bf6fe665".
+
+Exemple :
+```shell
+POST /dedicatedCloud/{serviceName}/log/subscription
+{
+  "kind": "string", // La seul valeur supporté actuellement est : 'esxi'.
+  "streamId": "ca06a2f5-55a9-4434-a1fb-130809312dca" // Le feed ID de votre stream LDP.
+}
+```
+La requête GET à une charge utile qui permet de lister vos souscriptions.
+
+### Créer une redirection de logs vers votre syslog
+
 #### Via le control panel OVHcloud :
 
 Cette fonctionnalité n'est pas encore disponible dans l'espace client.
@@ -97,27 +133,15 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > sslThumbprint : L'empreinte de votre gateway SSL.
 >
 
-### Etape 2 - Créer une redirection de logs vers votre syslog
+La requête GET à une charge utile qui permet de lister les forwarder activés.
 
-#### Via le control panel OVHcloud
+### Obtenir l'option de transfert vers syslog
+
+#### Via le control panel OVHcloud :
 
 Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 
-#### Via l’API OVHcloud
-
-> [!api]
-> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/syslogForward/forwarder
->
-
-> **Paramètres:**
->
-> serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
->
-
-
-La requête GET à une charge utile qui permet de lister les forwarder activés.
-
-##### Obtenir l'option de transfert vers syslog
+#### Via l’API OVHcloud :
 
 > [!api]
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/syslogForward
@@ -129,7 +153,13 @@ La requête GET à une charge utile qui permet de lister les forwarder activés.
 > serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
 >
 
-##### Lister tous les syslog forwarders
+### Lister tous les syslog forwarders
+
+#### Via le control panel OVHcloud :
+
+Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+
+#### Via l’API OVHcloud :
 
 > [!api]
 > @api {v1} /dedicatedCloud GET  /dedicatedCloud/{serviceName}/syslogForward/forwarder
@@ -140,7 +170,13 @@ La requête GET à une charge utile qui permet de lister les forwarder activés.
 > serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
 >
 
-##### Mettre à jour les log forwarders
+### Mettre à jour les log forwarders
+
+#### Via le control panel OVHcloud :
+
+Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+
+#### Via l’API OVHcloud :
 
 > [!api]
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/syslogForward/forwarder/{logForwardId}/changeProperties
@@ -151,26 +187,7 @@ La requête GET à une charge utile qui permet de lister les forwarder activés.
 > serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
 > logForwardId : 
 
-### Etape 3 - Créez un abonnement pour votre Hosted Private Cloud
-
-> [!api]
-> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
->
-
-> **Paramètres:**
->
-> serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
-
-```shell
-POST /dedicatedCloud/{serviceName}/log/subscription
-{
-  "kind": "string", // La seul valeur supporté actuellement est : 'esxi'.
-  "streamId": "ca06a2f5-55a9-4434-a1fb-130809312dca" // Le feed ID de votre stream LDP.
-}
-```
-La requête GET à une charge utile qui permet de lister vos souscriptions.
-
-#### Étape 4 - Manager vos stream dans Hosted Private Cloud
+### Manager vos stream dans Hosted Private Cloud
 
 #### Via l’API OVHcloud
 
@@ -267,7 +284,7 @@ GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 
 Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 
-##### Via l’API OVHcloud :
+#### Via l’API OVHcloud :
 
 Listez les flux de données de votre compte Logs Data Platform (renseignez votre identifiant LDP au format ldp-xx-xxxx dans le champ « serviceName ») :
 
@@ -281,13 +298,13 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
 > serviceName: La reference de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
 
 
-### Etape 4 - Obtenez les détails d'un flux de données
+### Etape 3 - Obtenez les détails d'un flux de données
 
 #### Via le control panel OVHcloud :
 
 Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 
-##### Via l’API OVHcloud :
+#### Via l’API OVHcloud :
 
 > [!api]
 >
@@ -299,7 +316,7 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > streamId : La référence d'identification de votre stream LDP : ***caX6a2f5-XXa9-4434-a1xx-XX0809312dca***.
 > serviceName : La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
 
-### Etape 5 - Accéder à l'interface Graylog
+### Etape 4 - Accéder à l'interface Graylog
 
 Utiliser les identifiants de votre compte LDP, lorsque que vous vous connectez la première fois définissez un mot de passe. 
 
@@ -313,7 +330,7 @@ Vous retrouvez plusieurs liens de connexions qui vous redirige sur le bon lien G
 
 ![GRAYLOG](images/graylog_login_2.png)
 
-### Etape 6 - Gestion de l'abonnement Logs Data Plateform
+### Etape 5 - Gestion de l'abonnement Logs Data Plateform
 
 À tout moment, vous pouvez récupérer les abonnements attachés à votre flux Logs Data Platform et choisir de désactiver la redirection en annulant votre abonnement sur votre flux, de sorte que votre flux Logs Data Platform ne reçoive plus vos journaux d'audit.
 
