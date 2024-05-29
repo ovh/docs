@@ -49,8 +49,6 @@ If you don't see this column, spam filters can only be created by setting up inb
 
 You want to change [email solutions](https://www.ovhcloud.com/en-gb/emails/) to benefit from more space and features, but you want to keep the content of your existing account. To do this, please follow the corresponding migration guide:
 
-- [Migrate an MX Plan email address to an Email Pro or Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
-- [Migrate your email addresses from one OVHcloud email platform to another](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [Migrate your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
 - [Migrate email accounts via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 - [Migrate a Gmail account to an OVHcloud email account via the OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)

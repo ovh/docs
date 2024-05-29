@@ -90,14 +90,14 @@ Quando for convidado a introduzir uma palavra-passe, introduza a do utilizador q
 Se se tratar de uma nova ligação, o seu cliente SSH receberá uma impressão digital (*fingerprint*) do servidor. Introduza "yes" para confirmar e a palavra-passe do utilizador que se liga.
 
 ```bash
-ssh ubuntu@169.254.10.254
+ssh ubuntu@203.0.113.100
 ```
 ```console
-The authenticity of host '169.254.10.254 (169.254.10.254)' can't be established.
+The authenticity of host '203.0.113.100 (203.0.113.100)' can't be established.
 ECDSA key fingerprint is SHA256:rRwrdsmJfzvJF5k0a4JmMSdaWbTlCgRKBukbmQ3gmso.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
-Warning: Permanently added '169.254.10.254' (ECDSA) to the list of known hosts.
-ubuntu@169.254.10.254's password:
+Warning: Permanently added '203.0.113.100' (ECDSA) to the list of known hosts.
+ubuntu@203.0.113.100's password:
 ```
 
 A impressão da chave é depois registada no seu dispositivo e verificada em cada nova ligação. Se a chave tiver mudado no host remoto, surgirá uma mensagem de aviso ao tentar conectar-se, por exemplo:
@@ -123,7 +123,7 @@ Isto significa que ocorreu uma das seguintes situações:
 Para resolver este problema, utilize o seguinte comando com o endereço IP do seu servidor:
 
 ```bash
-ssh-keygen -f ~/.ssh/known_hosts -R 169.254.10.254
+ssh-keygen -f ~/.ssh/known_hosts -R 203.0.113.100
 ```
 
 Pode também abrir o ficheiro `known_hosts` situado na sua pasta pessoal com a ajuda de um editor de texto e suprimir a linha "ofending" especificada na mensagem de aviso:
@@ -143,7 +143,7 @@ Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 Para resolver este problema, utilize o seguinte comando com o endereço IP do seu servidor:
 
 ```bash
-ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 203.0.113.100
 ```
 
 Também pode aceder à pasta, clicar com o botão direito do rato no ficheiro e abri-lo com a aplicação do Bloco de Notas.

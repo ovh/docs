@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Use S3 Object Storage with S3cmd
 excerpt: Learn how to configure S3cmd to manage your buckets and objects
-updated: 2022-01-03
+updated: 2024-05-20
 ---
 
 ## Objective
@@ -46,11 +46,11 @@ Secret Key: `<secret_key>`
 Default Region [US]: `<region_in_lowercase>`
 
 Use "s3.amazonaws.com" for S3 Endpoint and not modify it to the target Amazon S3.
-S3 Endpoint [s3.amazonaws.com]: `s3.<region_in_lowercase>.perf.cloud.ovh.net`
+S3 Endpoint [s3.amazonaws.com]: `s3.<region_in_lowercase>.io.cloud.ovh.net`
 
 Use "%(bucket)s.s3.amazonaws.com" to the target Amazon S3. "%(bucket)s" and "%(location)s" vars can be used
 if the target S3 system supports dns based buckets.
-DNS-style bucket+hostname:port template for accessing a bucket [%(bucket)s.s3.amazonaws.com]: `<bucket>.s3.<region_in_lowercase>.perf.cloud.ovh.net`
+DNS-style bucket+hostname:port template for accessing a bucket [%(bucket)s.s3.amazonaws.com]: `<bucket>.s3.<region_in_lowercase>.io.cloud.ovh.net`
 
 Encryption password is used to protect your files from reading
 by unauthorized persons while in transfer to S3
@@ -69,8 +69,8 @@ New settings:
   Access Key: ACCESS_KEY
   Secret Key: SECRET_KEY
   Default Region: sbg
-  S3 Endpoint: s3.sbg.perf.cloud.ovh.net
-  DNS-style bucket+hostname:port template for accessing a bucket: hp-bucket.s3.sbg.perf.cloud.ovh.net
+  S3 Endpoint: s3.sbg.io.cloud.ovh.net
+  DNS-style bucket+hostname:port template for accessing a bucket: hp-bucket.s3.sbg.io.cloud.ovh.net
   Encryption password: passphrase
   Path to GPG program: /usr/bin/gpg
   Use HTTPS protocol: True

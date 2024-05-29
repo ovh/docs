@@ -1,7 +1,7 @@
 ---
 title: "Changer le propriétaire d’un nom de domaine"
 excerpt: "Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine."
-updated: 2024-03-07
+updated: 2024-05-21
 ---
 
 ## Objectif
@@ -14,6 +14,9 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 > Pour obtenir ce résultat, vous devez [modifier les contacts](/pages/account_and_service_management/account_information/managing_contacts) du nom de domaine.
 >
 > Si vous devez réaliser un changement de propriétaire ainsi qu'un changement de contact pour le même nom de domaine, il n'y a pas d'ordre particulier à respecter. Néanmoins, c'est le contact administrateur qui est en mesure de lancer ces opérations. Ces deux changements se font, par conséquent, dans l'espace client du contact administrateur du nom de domaine.
+>
+> En effet, les informations relatives au propriétaire d'un nom de domaine n'ont qu'une valeur administrative et sont totalement indépendantes des informations pouvant être associées à un identifiant client OVHcloud. Par conséquent, un particulier ou une organisation (société, association, etc.) uniquement déclaré en tant que propriétaire d'un nom de domaine n'a donc pas d'accès à l'espace client OVHcloud.
+>
 
 **Découvrez comment changer le propriétaire d'un nom de domaine**
 
@@ -35,7 +38,7 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 >
 > Il existe principalement deux types de **TLD** : Les **ccTLD** et les **gTLD**. Les **ccTLD** correspondent à des **TLD** relatifs à une région ou un pays (*.fr*, *.be*, *.uk*, *.de*, *.paris*, etc.). Les **gTLD** correspondant à des **TLD** plus génériques (*.net*, *.com*, *.info*, *.org*, etc.).
 >
-> La procédure exacte pour le changement de propriétaire d'un nom de domaine peut donc varier, en particulier pour cetains **ccTLD**, tels que *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) et pour quelques **TLD** spéciaux (*.am*, *.fm*, etc.). Pour certains d'entre eux, un changement de propriétaire est une opération payante. Le changement de propriétaire peut également être suspendu pour diverses raisons, par exemple pour un impayé, un abus ou un blocage de la part du registre. 
+> La procédure exacte pour le changement de propriétaire d'un nom de domaine peut donc varier, en particulier pour cetains **ccTLD** (*.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) et pour quelques **TLD** spéciaux (*.am*, *.fm*, etc.). Pour certains d'entre eux, un changement de propriétaire est une opération payante. Le changement de propriétaire peut également être suspendu pour diverses raisons, par exemple pour un impayé, un abus ou un blocage de la part du registre. 
 >
 > Nous vous recommandons de consulter les ressources suivantes en cas de doute :
 >

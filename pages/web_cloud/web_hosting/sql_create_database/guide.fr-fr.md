@@ -1,7 +1,7 @@
 ---
 title: "Créer une base de données sur son hébergement web"
 excerpt: "Découvrez comment créer une base de données sur votre hébergement web OVHcloud"
-updated: 2023-12-07
+updated: 2024-05-17
 ---
 
 ## Objectif
@@ -64,7 +64,7 @@ Une nouvelle fenêtre s'affiche :
 
 |Information|Description|
 |---|---|
-|**Utilisateur**|Entrez un nom d'utilisateur qui sera associé à votre base de données (6 caractères maximum en plus du préfixe utilisateur déjà renseigné).|
+|**Utilisateur**|Entrez un nom d'utilisateur qui sera associé à votre base de données (6 caractères maximum en plus du préfixe utilisateur déjà renseigné). Le nom de votre base de donnée sera identique au nom d'utilisateur.|
 |**Mot de passe**|Entrez un mot de passe pour cet utilisateur en respectant les *critères* mentionnés plus bas.|
 |**Confirmation**|Saisissez de nouveau le mot de passe pour cet utilisateur.|
 
@@ -99,6 +99,11 @@ Vérifiez que toutes les informations affichées dans le résumé sont correctes
 
 Répétez ce processus autant de fois que vous le souhaitez afin de créer plusieurs bases de données (dans la limite des bases de données disponibles dans votre offre).
 
+> [!warning]
+>
+> Une fois la création de la base de données validée, le nom d'utilisateur et le nom de la base de données ne sont plus modifiables.
+>
+
 ### Étape 3 - Gérer votre base de données <a name="step3"></a>
 
 > [!warning]
@@ -111,6 +116,11 @@ Répétez ce processus autant de fois que vous le souhaitez afin de créer plusi
 - le *nom d'utilisateur* et le *mot de passe* que vous avez défini,
 - le *nom de la base de données* que vous avez indiqué,
 - l'*adresse du serveur*.
+
+> [!primary]
+>
+> S'il vous est demandé et quelle que soit la base de données [Start SQL](/links/web/hosting-options-startsql) ajoutée ou incluse avec votre hébergement web OVHcloud, le numéro de **port** à utiliser est le **3306**.
+>
 
 Ces informations sont essentielles pour que votre site web puisse se connecter à la base de données.
 

@@ -1,7 +1,7 @@
 ---
 title: 'What to do if your account is blocked for spam'
-excerpt: 'Find out what to do if your email address has been blocked for spam'
-updated: 2023-06-07
+excerpt: 'Find out what to do if your email account has been blocked for spam'
+updated: 2024-05-23
 ---
 
 ## Objective
@@ -12,8 +12,8 @@ When your email account is blocked for SPAM, it means that suspicious sending ac
 
 ## Requirements
 
-- An [OVHcloud email solution](https://www.ovhcloud.com/en-ie/emails/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- An [OVHcloud email solution](/links/web/emails).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions <a name="instructions"></a>
 
@@ -26,6 +26,16 @@ If the block is occuring on an MX Plan email account, identify the version you a
 ### Step 1: Investigating why your email account is blocked for SPAM <a name="step1"></a>
 
 When suspicious activity is detected at the email sending level, the account concerned is automatically blocked. In this situation, you can no longer send emails from this email account.
+
+> [!warning]
+>
+> “Suspicious activity” can mean:
+>
+> - The anti-spam server, which scans emails when they are sent, has found one or more elements of the email that are suspicious and indicate SPAM.
+> - The sending frequency and the number of recipients are unusually high, which can be considered SPAM mass mailing. To send bulk emails, you will need to use a mailing list instead of single email addresses.
+>
+> The precise reasons for a blocked account cannot be disclosed in order to prevent attempts to bypass the SPAM detection system. To test the content of an email, you can use a tool external to OVHcloud such as [Mailtester](https://www.mail-tester.com/).
+>
 
 First of all, make sure that any user of the blocked email account has caused the block directly, following an uncommon use of the email account (for example a mass email sending operation). If this is the case, you must resolve the root cause before unblocking the account.
 
@@ -40,7 +50,7 @@ If the suspicious activity detected by the antispam system was not initiated by 
 > [!tabs]
 > **Exchange**
 >>
->> Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action}, then `Exchange`{.action} and select the Exchange service concerned.
+>> Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action}, then `Exchange`{.action} and select the Exchange service concerned.
 >>
 >> Go to the `Email accounts`{.action} section of your platform. If the "Status" column for your email account displays "Blocked", click `...`{.action} to the right of the account concerned, then `Unblock`{.action}. Email accounts are not unblocked automatically. You will need to contact the support team by answering the 3 questions in the support ticket.<br>
 >>
@@ -50,7 +60,7 @@ If the suspicious activity detected by the antispam system was not initiated by 
 >>
 > **Email Pro**
 >>
->> Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Email Pro`{.action} and select the Email Pro platform concerned.
+>> Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Email Pro`{.action} and select the Email Pro platform concerned.
 >> 
 >> Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email account concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Email accounts are not unblocked automatically. You will need to contact the support team by answering the 3 questions in the support ticket.<br>
 >>
@@ -60,7 +70,7 @@ If the suspicious activity detected by the antispam system was not initiated by 
 >>
 > **MX plan - New version**
 >>
->>Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Emails`{.action}, then choose the domain name concerned.
+>>Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Emails`{.action}, then choose the domain name concerned.
 >>
 >> Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email account concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Email accounts are not unblocked automatically. You will need to contact the support team by answering the 3 questions in the support ticket.<br>
 >>
@@ -72,7 +82,7 @@ If the suspicious activity detected by the antispam system was not initiated by 
 >>
 >> If the block is for an email account of [MX Plan Legacy](#instructions), there is no support ticket. Be sure to read [step 1](#step1) of this guide before following the instructions below.
 >>
->> Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and go to the `Web Cloud`{.action} section. Click `Emails`{.action} and select the domain name concerned.
+>> Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. Click `Emails`{.action} and select the domain name concerned.
 >>
 >> Go to the `Emails`{.action} tab on your platform. If the “Blocked for SPAM” column shows “Yes”, click on it and then on `Change password`{.action}. Your email account is now unblocked, you do not need to follow [step 3](#step3).
 >>
@@ -120,7 +130,7 @@ These headers will help determine the path and origin of the emails sent.
 
 ## Go further <a name="go-further"></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 

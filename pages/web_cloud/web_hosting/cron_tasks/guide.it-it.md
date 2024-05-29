@@ -1,7 +1,7 @@
 ---
 title: "Crea task automatizzati (CRON) sul tuo hosting Web"
 excerpt: "Questa guida ti mostra come creare task CRON per automatizzare le operazioni pianificate su un hosting Web"
-updated: 2024-02-08
+updated: 2024-05-16
 ---
 
 <style>
@@ -109,6 +109,18 @@ Il riepilogo ti ricorda i parametri configurati, inclusa la notazione *crontab* 
 ![cron di conferma](images/add-scheduling-step-3.png){.thumbnail}
 
 L'operazione sarà pronta tra pochi minuti. Per modificare tutte le impostazioni o eliminare l'operazione clicca sui tre puntini...` `{.action} nella tabella di presentazione del tuo pannello di configurazione OVHcloud.
+
+### Modificare o eliminare un'operazione pianificata
+
+Per effettuare questa operazione, esegui le operazioni seguenti:
+
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
+2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
+3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
+4. Seleziona il tuo hosting Web.
+5. Clicca sulla scheda `Più`{.action} e seleziona `Cron`{.action}.
+6. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra dell’operazione pianificata in questione.
+7. Scegli tra i pulsanti `Modifica`{.action} o `Elimina`{.action} in base all’azione che vuoi effettuare sull’operazione pianificata.
 
 ### Limitazioni delle attività pianificate sul tuo hosting Web
 

@@ -1,7 +1,7 @@
 ---
 title: OVHcloud DNS-Zone für eine Domainnamen erstellen
 excerpt: Erfahren Sie hier, wie Sie im OVHcloud Kundencenter eine DNS-Zone für Ihren Domainnamen erstellen
-updated: 2024-03-11
+updated: 2024-05-16
 ---
 
 > [!primary]
@@ -112,6 +112,11 @@ Mit den Namen der DNS-Server können Sie nun **die DNS-Server Ihres Domainnamens
 > [!primary]
 >
 > Überprüfen Sie, bevor Sie die für Ihrem Domainnamen angegebenen **DNS-Server** ändern, ob die Konfiguration der neuen DNS-Zone Ihren Erwartungen entspricht.
+>
+
+> [!success]
+>
+> Wenn Sie die Namen der DNS-Server individualisieren möchten, die die aktive DNS-Zone Ihres Domainnamens bereitstellen, lesen Sie unsere Anleitung „[DNS-Server von Domainnamen individualisieren (Glue Records)](/pages/web_cloud/domains/glue_registry)“.
 >
 
 ## Weiterführende Informationen

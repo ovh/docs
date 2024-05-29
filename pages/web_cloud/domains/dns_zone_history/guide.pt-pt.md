@@ -1,7 +1,7 @@
 ---
 title: "Gerir o histórico de uma zona DNS"
 excerpt: "Saiba como consultar, comparar, descarregar e restaurar os seus backups de zona DNS"
-updated: 2023-12-11
+updated: 2024-05-23
 ---
 
 > [!primary]
@@ -49,6 +49,14 @@ Na nova página que vai aparecer, aparecerá uma tabela com o histórico dos bac
 - [Descarregar uma zona DNS](#download)
 - [Restaurar uma zona DNS](#restore)
 - [Comparar duas zonas DNS](#compare)
+
+> [!primary]
+>
+> Os backups da sua zona DNS estão sujeitos às seguintes limitações:
+>
+> - Conservamos no máximo 200 backups para a mesma zona DNS.
+> - Quando um backup tem mais de 31 dias, este é automaticamente eliminado, exceto nos **5 com os backups mais recentes** efetuados.
+>
 
 ### Visualizar uma zona DNS <a name="view"></a>
 

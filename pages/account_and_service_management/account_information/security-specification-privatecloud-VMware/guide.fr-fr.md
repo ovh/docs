@@ -1,7 +1,7 @@
 ---
 title: "Spécifications de sécurité du service VMware on OVHcloud"
 excerpt: "Découvrez les particularités et fonctions de sécurité ainsi que les bonnes pratiques pour l'utilisation des service VMware on OVHcloud"
-updated: 2024-05-06
+updated: 2024-05-21
 ---
 
 ## Objectif
@@ -46,7 +46,7 @@ Reprise des SLA des conditions particulières par composante du service.
 
 | **Composant** | **SLA** | **Méthode de calcul** | **Dédommagement** |
 | --- | --- | --- | --- |
-| L'ensemble du service | Le taux de disponibilité mensuel est de 99,95 % pour l'ensemble du service | Nombre total de minutes du mois considéré, déduction faite du nombre de minutes d’indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré. Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement. | 1. Si le taux de disponibilité mensuel est < 99,95 %, crédit de 10% du prix du service impacté. <br>2. Si le taux de disponibilité mensuel est < 99,99%, crédit de 30% du prix du service impacté |
+| L'ensemble du service | Le taux de disponibilité mensuel est de 99,95 % pour l'ensemble du service | Nombre total de minutes du mois considéré, déduction faite du nombre de minutes d’indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré. Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement. | 1. Si le taux de disponibilité mensuel est < 99,95 %, crédit de 10% du prix du service impacté. <br>2. Si le taux de disponibilité mensuel est < 99%, crédit de 30% du prix du service impacté |
 
 Les SLA pour les options telles que Veeam Managed Backups peuvent être différents, vous pouvez vous référer aux conditions particulières du service pour plus de détails.
 
@@ -144,7 +144,7 @@ Le guide de démarrage avec la solution NSX est disponible sur [ce lien](/pages/
 
 ### 9.2.4 Chiffrement des données
 
-Sur une infrastructure qualifiée SecNumcloud ou hors SecNumcloud, vous avez la la possibilité d'appliquer un chiffrement au repos en utilisant la brique vNKP disponible sur le service pour chiffrer les VM ou au niveau des datastores d'un Cluster vSAN.
+Sur une infrastructure qualifiée SecNumcloud ou hors SecNumcloud, vous avez la possibilité d'appliquer un chiffrement au repos en utilisant la brique vNKP disponible sur le service pour chiffrer les VM ou au niveau des datastores d'un Cluster vSAN.
 
 La même opération peut être réalisée si vous optez pour l'utilisation d'un KMS externe à l'offre OVHcloud.
 

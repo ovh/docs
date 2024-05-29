@@ -266,6 +266,8 @@ Certbot verlängert die Zertifikate automatisch; es sind keine weitereren Schrit
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
+[Daten via SFTP auf einem Server ablegen oder herunterladen](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+
 [UFW Dokumentation](https://help.ubuntu.com/community/UFW)
 
 [Apache Dokumentation](https://httpd.apache.org/docs/)

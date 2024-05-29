@@ -1,7 +1,7 @@
 ---
 title: "Creare un database su un hosting Web"
 excerpt: "Questa guida ti mostra come creare un database sul tuo hosting Web OVHcloud"
-updated: 2023-12-15
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -103,6 +103,11 @@ Verificare che tutte le informazioni visualizzate nel riepilogo siano corrette. 
 
 Ripeti questo processo per tutti i database che vuoi creare (nel limite dei database disponibili nella tua offerta).
 
+> [!warning]
+>
+> Una volta convalidata la creazione del database, il nome utente e il nome del database non possono più essere modificati.
+>
+
 ### Step 3 - Gestire il database <a name="step3"></a>
 
 > [!warning]
@@ -114,7 +119,12 @@ A questo punto è possibile utilizzare il database. Per farlo, avrai bisogno del
 
 - *nome utente* e *password* impostati,
 - *nome del database* indicato,
--*indirizzo del server*.
+- *indirizzo del server*.
+
+> [!primary]
+>
+> Se richiesto e qualunque sia il database [Start SQL](/links/web/hosting-options-startsql) aggiunto o incluso con l’hosting Web OVHcloud, il numero di **porta** da utilizzare è **3306**.
+>
 
 Queste informazioni sono essenziali perché il sito Web possa connettersi al database.
 

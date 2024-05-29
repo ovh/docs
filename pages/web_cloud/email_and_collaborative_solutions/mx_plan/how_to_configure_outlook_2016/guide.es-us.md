@@ -1,8 +1,17 @@
 ---
-title: "MX Plan : Configurar una dirección de correo electrónico en Outlook para Windows"
+title: "MX Plan - Configurar una dirección de correo electrónico en Outlook para Windows"
 excerpt: "Cómo configurar una cuenta MX Plan en Outlook para Windows"
 updated: 2024-02-16
 ---
+
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -57,28 +66,28 @@ Para configurar su dirección de correo electrónico, siga los pasos que se indi
 > **Paso 1**
 >> Entre los distintos tipos de cuenta, elija IMAP o POP. <br>Le recomendamos que utilice IMAP.
 >>
->> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail .h-600}
 >>
 > **Paso 2**
 >> Introduzca la contraseña de su dirección de correo electrónico y haga clic en `Siguiente`{.action}.
 >>
->> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail .h-600}
 >>
 > **Paso 3**
 >> Si Outlook no puede configurar su dirección automáticamente, se abrirá esta ventana. Haga clic en `Cambiar la configuración de la cuenta`{.action}. En función de su elección (**POP** o **IMAP**), vaya al paso 4 correspondiente.
 >>
->> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail .h-600}
 >>
 > **Paso 4 - IMAP**
 >> Si ha elegido IMAP, introduzca los siguientes parámetros. Si ha elegido POP, vaya a la pestaña «**Paso 4 - POP**».<br>
 >> En **Correo entrante**, escriba:<br>- El servidor **imap.mail.ovh.ca** <br>- Port **993**<br>- Método de cifrado **SSL/TLS**<br><br>En **Correo saliente**, escriba:<br>- El servidor **smtp.mail.ovh.ca** <br>- Port **465**<br>- Método de cifrado **SSL/TLS**<br><br>Haga clic en `Siguiente`{.action} para validar.<br>
 >>
->> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail .h-600}
 >>
 > **Paso 4 - POP**
 >> En **Correo entrante**, escriba:<br>- El servidor **pop.mail.ovh.ca**<br>- Puerto **995**<br>- Método de cifrado **SSL/TLS**<br><br>En **Correo saliente**, escriba:<br>- El servidor **smtp.mail.ovh.ca**<br>- Port **465**<br>- Método de cifrado **SSL/TLS**<br><br>Haga clic en `Siguiente`{.action} para validar.<br>
 >>
->> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail .h-600}
 
 ### Utilizar la dirección de correo
 
@@ -146,7 +155,7 @@ Cuando configure manualmente su dirección de correo electrónico, el cliente de
 
 Al configurar el cliente de correo, debe introducir la información del **servidor entrante** para recibir los mensajes de correo electrónico y el **servidor saliente** para enviar los mensajes de correo electrónico. Para enviar los emails no hay elección, se utiliza el protocolo **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol). Para la recepción, podrá elegir entre **POP** o **IMAP**.
 
-![MX Plan](images/mxplan-popimap-01.png){.thumbnail}
+![MX Plan](images/mxplan-popimap-01.png){.thumbnail .w-400}
 
 Para entender la diferencia entre el uso del protocolo POP e IMAP, vamos a detallar los elementos que componen el tratamiento de sus mensajes de correo en recepción:
 
@@ -156,7 +165,7 @@ Para entender la diferencia entre el uso del protocolo POP e IMAP, vamos a detal
     - **IMAP**: su cliente de correo consulta el servidor de correo y descarga los mensajes de correo en su dispositivo. Al consultar un mensaje de correo no leído, el servidor lo marca como «leído» por defecto. Otros dispositivos configurados con IMAP verán este estado y verán este correo electrónico hasta que se elimine en uno de los dispositivos.
     - **POP**: su cliente de correo consulta el servidor de correo y descarga los mensajes de correo en su dispositivo. De forma predeterminada, una vez que el mensaje de correo electrónico se ha descargado en el dispositivo, se elimina del servidor. Como resultado, otros dispositivos conectados a esta dirección de correo electrónico no podrán ver este correo electrónico.
 
-![MX Plan](images/mxplan-popimap-02.png){.thumbnail}
+![MX Plan](images/mxplan-popimap-02.png){.thumbnail .w-400}
 
 > [!primary]
 >

@@ -97,7 +97,7 @@ Operacje na tym etapie należy wykonać w panelu zarządzania Shopify. Prosimy o
 
 Jeśli korzystasz z oferty e-mail OVHcloud lub zamierzasz zamówić jedną z [naszych usług e-mail](/links/web/emails), musisz również odpowiednio przygotować Twoją strefę DNS. Zapoznaj się z przewodnikiem dotyczącym [konfiguracji rekordu MX](/pages/web_cloud/domains/dns_zone_mx).
 
-## Więcej informacji <a name="go-further"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 

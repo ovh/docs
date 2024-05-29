@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Capabilities and Limitations
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2023-12-06
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -25,7 +25,6 @@ The Public Cloud Databases offer is available in the following regions:
 
 The Public Cloud Databases offer supports the following MongoDB versions:
 
-- MongoDB 4.4
 - MongoDB 5.0
 - MongoDB 6.0
 
@@ -33,7 +32,7 @@ Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_clo
 
 ### MongoDB Drivers
 
-You can use anyone of the [MongoDB-recommended driver](https://docs.mongodb.com/drivers/){.external} to access your cluster.
+You can use any one of the [MongoDB-recommended drivers](https://docs.mongodb.com/drivers/){.external} to access your cluster.
 
 ### Plans
 
@@ -77,43 +76,7 @@ License cost is included inside the service plans. You cannot bring your own lic
 
 ### Hardware resources
 
-Here are the node types you can choose from:
-
-| Name    | Cores | Memory | Usable storage          |
-| ------- | ----- | ------ | ----------------------- |
-| db1-2   | 1     | 2 GB   | From 40 GB to 120 GB    |
-| db1-4   | 2     | 4 GB   | From 80 GB to 240 GB    |
-| db1-7   | 2     | 7 GB   | From 160 GB to 480 GB   |
-| db1-15  | 4     | 15 GB  | From 320 GB to 960 GB   |
-| db1-30  | 8     | 30 GB  | From 640 GB to 1.92 TB  |
-| db1-60  | 16    | 60 GB  | From 1.28 TB to 3.84 TB |
-| db1-120 | 32    | 120 GB | From 2.56 TB to 4 TB    |
-
-Right now, all nodes of a given cluster should be of the same type and live in the same regions.
-
-#### Flexible storage
-
-You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage) for more information.
-
-#### Disk type
-
-The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
-
-Also, the performance caracteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/en-gb/public-cloud/block-storage/) for more information about those performance caracteristics.
-
-Public Cloud Databases will select the most efficient disk type for your cluster depending on your cluster parameters.
-
-#### Effective storage
-
-The disk size listed above is the total disk size of the underlying machine, however, a small part of it goes towards the OS install.
-
-We try hard to avoid "disk full" situations that could be harmful to cluster health. Therefore, The customer will :
-
-1. receive a first email alert once cluster is reaching 80% storage capacity;
-2. receive a second email alert once cluster is reaching 90% storage capacity;
-3. have his database instance moved in "read-only" mode, meaning no more writes can be done.
-
-See the [Handling «Disk Full» situations documentation](/pages/public_cloud/public_cloud_databases/databases_10_full_disk_handling) for more information.
+Please refer to the [price page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#4951) for details on node types and their specifications.
 
 ### Features
 
@@ -121,7 +84,7 @@ See the [Handling «Disk Full» situations documentation](/pages/public_cloud/pu
 
 MongoDB clusters are reachable through default port 27017.
 
-Public as well as private networking (vRack) can be used for all the offers.
+Public as well as private networking (vRack) can be used for all the offers. Private network is not available for the Discovery offer.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
 
@@ -131,29 +94,28 @@ The database service's IP address is subject to change periodically. Thus, it is
 
 Here are some considerations to take into account when using private network:
 
-- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- **DHCP must be enabled** in your private network in order to launch MongoDB clusters in the said private network.
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- **DHCP must be enabled** in your private network in order to launch MongoDB clusters in the said private network.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
 
 ##### Authorised IPs
 
-Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorize incoming traffic. Until then, your service will be unreachable.
 
 #### Backups
 
-*Essential* plan clusters are automatically backed up daily. Backup retention is 1 day.
+*Discovery* plan clusters are not backed up.
 
-*Business* plan clusters are automatically backed up daily. Backup retention is 7 days.
+*Business* and *Production* plan clusters are automatically backed up daily. Backup retention is 7 days.
 
-*Enterprise* plan clusters are automatically backed up daily, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
+*Enterprise* and *Advanced* plan clusters are automatically backed up daily, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 
 #### Logs and Metrics
 
-Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
-As of today, you can't export Logs and metrics, neither plug them to a remote tool.
+Logs and metrics are available through the Control Panel, API, and can be forwarded to Logs Data Platform. See the [Public Cloud Databases - How to setup logs forwarding guide](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) for more information.
 
 - **Logs retention:** 1000 lines of logs;
 - **Metrics retention:** 1 calendar year.

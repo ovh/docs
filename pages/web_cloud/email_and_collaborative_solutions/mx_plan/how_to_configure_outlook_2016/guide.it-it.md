@@ -1,10 +1,18 @@
 ---
-title: "MX Plan : Configurare un indirizzo email su Outlook per Windows"
+title: "MX Plan - Configurare un indirizzo email su Outlook per Windows"
 excerpt: "Scopri come configurare un indirizzo email MX Plan su Outlook per Windows"
 updated: 2024-02-16
 ---
 
- 
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
+
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
@@ -64,28 +72,28 @@ Per configurare il tuo indirizzo email, segui gli step cliccando sulle schede qu
 > **Step 1**
 >> Tra i diversi tipi di account, scegli tra IMAP e POP. <br>Ti consigliamo di utilizzare IMAP.
 >>
->> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail .h-600}
 >>
 > **Step 2**
 >> Inserisci la password del tuo indirizzo email e clicca su `Seguente`{.action}.
 >>
->> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail .h-600}
 >>
 > **Step 3**
 >> Se Outlook non è in grado di configurare automaticamente l'indirizzo, verrà visualizzata questa finestra. Fare clic su `Modifica impostazioni account`{.action}. In base alla tua scelta (**POP** o **IMAP**), passa allo step 4 corrispondente.
 >>
->> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail .h-600}
 >>
 > **Step 4 - IMAP**
 >> Se avete scelto IMAP, immettete i seguenti parametri. Se hai scelto POP, vai alla scheda "**Step 4 - POP**".<br>
 >> In **Posta in arrivo**, digitare:<br>- Il server **imap.mail.ovh.net** o **ssl0.ovh.net** <br>- Porta **993**<br>- Metodo di cifratura **SSL/TLS**<br><br>In **Posta in uscita** digitare:<br>- Il server **smtp.mail.ovh.net** o **ssl0.ovh.net** <br>- Porta **465**<br>- Metodo di cifratura **SSL/TLS**<br><br>Clicca su `Seguente`{.action} per confermare.<br>
 >>
->> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail .h-600}
 >>
 > **Step 4 - POP**
 >> In **Posta in arrivo**, digitare:<br>- Il server **pop.mail.ovh.net** o **ssl0.ovh.net** <br>- Porta **995**<br>- Metodo di cifratura **SSL/TLS**<br><br>In **Posta in uscita** digitare:<br>- Il server **smtp.mail.ovh.net** o **ssl0.ovh.net** <br>- Porta **465**<br>- Metodo di cifratura **SSL/TLS**<br><br>Clicca su `Seguente`{.action} per confermare.<br>
 >>
->> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail}
+>> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail .h-600}
 
 ### Utilizza l'indirizzo email
 
@@ -153,7 +161,7 @@ Quando si configura l'indirizzo di posta elettronica manualmente, il client di p
 
 Durante la configurazione del client di posta, è necessario fornire le informazioni sul **server in entrata** per ricevere le email e sul **server in uscita** per inviare le email. Per inviare le email non è possibile scegliere, ma viene utilizzato il protocollo **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol). Per la ricezione, potrete quindi scegliere tra **POP** o **IMAP**.
 
-![MX Plan](images/mxplan-popimap-01.png){.thumbnail}
+![MX Plan](images/mxplan-popimap-01.png){.thumbnail .w-400}
 
 Per comprendere la differenza tra l'utilizzo del protocollo POP e IMAP, andremo a descrivere nel dettaglio gli elementi che compongono l'elaborazione delle tue email in ricezione:
 
@@ -163,7 +171,7 @@ Per comprendere la differenza tra l'utilizzo del protocollo POP e IMAP, andremo 
     - **IMAP**: il client di posta interroga il server di posta e scarica le email sul tuo dispositivo. Quando visualizzi un messaggio non letto, il server lo contrassegna come "letto" di default. Gli altri dispositivi configurati in IMAP potranno visualizzare questo stato e controllare questo messaggio fino a quando non verrà eliminato da uno dei dispositivi.
     - **POP**: il vostro client di posta interroga il server di posta e scarica le email sul vostro dispositivo. Per impostazione predefinita, una volta scaricata l'email sul dispositivo, il messaggio viene eliminato dal server. Di conseguenza, gli altri dispositivi connessi a questo indirizzo email non potranno consultare questa email.
 
-![MX Plan](images/mxplan-popimap-02.png){.thumbnail}
+![MX Plan](images/mxplan-popimap-02.png){.thumbnail .w-400}
 
 > [!primary]
 >

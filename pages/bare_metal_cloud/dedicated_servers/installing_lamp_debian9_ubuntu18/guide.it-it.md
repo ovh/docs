@@ -264,6 +264,8 @@ Cerbot rinnova automaticamente i certificati. Non sono necessari ulteriori passi
 
 ## Per saperne di più
 
+[Come scaricare e recuperare dati su un server via SFTP](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+
 [Documentazione UFW](https://help.ubuntu.com/community/UFW)
 
 [Documentazione Apache](https://httpd.apache.org/docs/)

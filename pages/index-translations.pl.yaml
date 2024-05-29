@@ -71,6 +71,7 @@ hosted-private-cloud-sap-ovhcloud-concepts: Koncepcje
 hosted-private-cloud-sap-ovhcloud-getting-started: Pierwsze kroki
 hosted-private-cloud-sap-ovhcloud-advanced-usage: Zaawansowane użycie
 hosted-private-cloud-sap-ovhcloud-backups: Backups
+hosted-private-cloud-sap-ovhcloud-observability: Observability
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Pierwsze kroki
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
@@ -205,16 +206,21 @@ web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Rozw
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-domains: Domeny
-web-cloud-domains-dns: DNS
-web-cloud-domains-dns-dns-and-dns-zone: Strefy DNS i DNS
-web-cloud-domains-dns-security: Bezpieczeństwo
+web-cloud-domains-api: API
+web-cloud-domains-api-frequent-tasks: Zadania okresowe
+web-cloud-domains-dns: DNS (Domain Name System)
+web-cloud-domains-dns-dns-options: Opcje DNS
+web-cloud-domains-dns-dns-records: Rekordy DNS
+web-cloud-domains-dns-dns-servers: Serwery DNS
+web-cloud-domains-dns-dns-tools: Narzędzia DNS
+web-cloud-domains-dns-dns-zone: Strefa DNS
 web-cloud-domains-domain-names: Nazwy domen
-web-cloud-domains-domain-names-general-guides: Przewodniki
-web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Zmiana właściciela nazwy domeny (handel)
-web-cloud-domains-domain-names-transferring-between-registrars: Przenoszenie między rejestrami
+web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Zmiana właściciela nazwy domeny (trade)
+web-cloud-domains-domain-names-getting-started: Pierwsze kroki
+web-cloud-domains-domain-names-incoming-transfer-to-ovhcloud: Transfer przychodzący do OVHcloud
+web-cloud-domains-domain-names-outgoing-transfer-from-ovhcloud: Transfer wychodzący z OVHcloud
 web-cloud-domains-domain-names-troubleshooting: Diagnostyka
 web-cloud-domains-domain-names-tutorials: Tutoriale
-web-cloud-domains-domain-names-api: API
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Dostęp do Internetu
 web-cloud-internet-internet-access-advanced-setup: Konfiguracja zaawansowana

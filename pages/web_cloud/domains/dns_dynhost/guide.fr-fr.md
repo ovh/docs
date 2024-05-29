@@ -1,7 +1,7 @@
 ---
 title: "Paramétrer un DNS dynamique (DynHost/DynDNS) pour votre nom de domaine"
 excerpt: "Découvrez comment paramétrer un enregistrement DNS dynamique pour votre nom de domaine OVHcloud"
-updated: 2024-03-07
+updated: 2024-05-21
 ---
 
 ## Objectif
@@ -20,13 +20,18 @@ La mise à jour de manière « dynamique » d'un enregistrement DNS peut éviter
 
 Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans les locaux de votre entreprise ou à votre domicile en passant par la *box* de votre **F**ournisseur d'**A**ccès à **I**nternet (**FAI**)) un serveur de jeux vidéo sans bénéficier d'une adresse IP « fixe ».
 
+> [!primary]
+>
+> Tout enregistrement « A » ou « AAAA » avec un TTL (**T**ime **T**o **L**ive) de 60 secondes est considéré comme DynHost. Le TTL est une valeur qui indique la durée pendant laquelle un enregistrement DNS est mis en cache par les serveurs DNS avant d'être mis à jour.
+>
+
 **Découvrez comment paramétrer un enregistrement DNS dynamique (DynHost) pour votre nom de domaine OVHcloud.**
 
 ## Prérequis
 
 - Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](/links/manager){.external}.
 - Utiliser les serveurs DNS proposés par OVHcloud pour le nom de domaine concerné.
-- L'enregistrement DynHost que vous vous apprêtez à créer ne doit pas déjà exister dans la zone DNS OVHcloud de votre nom de domaine en tant qu'enregistrement « A ».
+- L'enregistrement DynHost que vous vous apprêtez à créer ne doit pas déjà exister dans la zone DNS OVHcloud de votre nom de domaine en tant qu'enregistrement « A » ou « AAAA ».
 
 > [!warning]
 >
@@ -69,23 +74,18 @@ Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'ide
 
 ### Étape 2 : créer l'enregistrement DNS dynamique (DynHost) <a name="step2"></a>
 
-La seconde étape consiste à créer l'enregistrement DNS qui devra être mis à jour dynamiquement. Pour rappel, celui-ci ne doit pas déjà exister dans la zone DNS OVHcloud de votre nom de domaine en tant qu'enregistrement « A ». Pour le vérifier, et le supprimer si nécessaire, reportez-vous aux informations de notre documentation « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+La seconde étape consiste à créer l'enregistrement DNS qui devra être mis à jour dynamiquement. Pour rappel, celui-ci ne doit pas déjà exister dans la zone DNS OVHcloud de votre nom de domaine en tant qu'enregistrement « A » ou « AAAA ». Pour le vérifier, et le supprimer si nécessaire, reportez-vous aux informations de notre documentation « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 Dès que vous êtes prêt à créer l'enregistrement DynHost, repositionnez-vous sur l'onglet `DynHost`{.action} puis cliquez sur le bouton `Ajouter un DynHost`{.action}. Dans la fenêtre qui s'affiche, complétez les informations demandées :
 
 |Informations|Description|
 |---|---|
 |Sous-domaine|Renseignez le sous-domaine dont l'enregistrement DNS devra être mis à jour dynamiquement. Ce sous-domaine doit correspondre à celui renseigné lors de la création de l'utilisateur DynHost. **Si vous souhaitez mettre en place un DynHost directement pour votre nom de domaine, laissez ce formulaire de saisie vide**|
-|IP de destination|Renseignez l'adresse IP (IPv4 uniquement) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé. Selon le principe du DynHost, celle-ci sera mise à jour automatiquement par la suite.|
-
-> [!primary]
->
-> Seule une **IPv4** peut etre utilisée pour la mise en place d'un DynHost. Les **IPv6** sont indisponibles.
->
-
-Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau présent sur la page actuelle. Répétez cette étape autant de fois que nécessaire si vous avez besoin d'enregistrements DynHost supplémentaires.
+|IP de destination|Renseignez l'adresse IP (IPv4 ou IPv6) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé. Selon le principe du DynHost, celle-ci sera mise à jour automatiquement par la suite.|
 
 ![dynhost](images/create-a-dynhost.png){.thumbnail}
+
+Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau présent sur la page actuelle. Répétez cette étape autant de fois que nécessaire si vous avez besoin d'enregistrements DynHost supplémentaires.
 
 ### Étape 3 : automatiser le changement du DynHost
 
@@ -107,19 +107,19 @@ Une fois le client choisi et installé, vous devrez le configurer en utilisant l
 Selon le client utilisé, une adresse URL de mise à jour peut être requise en plus des éléments de l'utilisateur DynHost et du sous-domaine concerné. Si tel est le cas, utilisez l'adresse URL ci-dessous en prenant soin d'y remplacer les informations génériques :
 
 ```bash
-https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 ```
 
 |Information|À remplacer par|
 |---|---|
 |$HOSTNAME|Le sous-domaine concerné par la modification.|
-|$IP|La nouvelle adresse IPv4 de destination.|
+|$IP|La nouvelle adresse IPv4 ou IPv6 de destination.|
 
 Vous pouvez vérifier si l'adresse IP de destination a bien été mise à jour. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} puis rendez-vous dans la partie `Web cloud`{.action}. Dans la colonne de gauche, cliquez sur l'onglet `Noms de domaine`{.action} puis sélectionnez le nom de domaine concerné. Sur la page qui s'affiche, cliquez sur l'onglet `DynHost`{.action}. Vérifiez l'adresse IP qui apparaît dans la colonne `Cible`{.action}.
 
 > [!warning]
 >
-> Toute modification dans la zone DNS active d'un nom de domaine peut entraîner un délai de propagation de la mise à jour de 4 à 24 heures.
+> Toute modification dans la zone DNS active d'un nom de domaine via DynDNS peut entraîner un délai de propagation de la mise à jour de plusieurs minutes.
 >
 
 ![dynhost](images/target.png){.thumbnail}

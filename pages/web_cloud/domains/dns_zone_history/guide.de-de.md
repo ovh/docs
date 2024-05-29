@@ -1,7 +1,7 @@
 ---
 title: "Den Versionsverlauf einer DNS-Zone verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Backups der DNS-Zone mithilfe der History-Funktion einsehen, vergleichen, herunterladen und wiederherstellen können"
-updated: 2023-12-11
+updated: 2024-05-23
 ---
 
 > [!primary]
@@ -45,6 +45,14 @@ Auf der neu geöffneten Seite wird eine Tabelle mit dem Versionsverlauf Ihrer DN
 - [DNS Zone herunterladen](#download)
 - [DNS-Zone wiederherstellen](#restore)
 - [Zwei DNS Zonen vergleichen](#compare)
+
+> [!primary]
+>
+> Die Backups Ihrer DNS-Zone unterliegen folgenden Einschränkungen:
+>
+> - Es existieren maximal 200 Sicherungen für eine DNS-Zone.
+> - Wenn ein Backup älter als 31 Tage ist, wird es automatisch gelöscht, mit Ausnahme der **letzten 5 Backups**.
+>
 
 ### Eine DNS-Zone anzeigen <a name="view"></a>
 

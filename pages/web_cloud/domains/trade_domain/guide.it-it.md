@@ -1,7 +1,7 @@
 ---
 title: "Cambiare il proprietario di un dominio"
 excerpt: "In questa guida troverai le informazioni necessarie per cambiare il proprietario di un dominio"
-updated: 2024-03-07
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -18,6 +18,9 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 >Per farlo, devi [modificare i contatti](/pages/account_and_service_management/account_information/managing_contacts) del dominio.
 >
 > Se devi effettuare un cambio di titolare e un cambio di contatto per lo stesso nome a dominio, non c'è ordine preferenziale. Tuttavia, è il contatto dell'amministratore che può avviare queste operazioni. Queste due modifiche vengono quindi effettuate nell'area clienti del contatto amministratore del nome a dominio.
+>
+> Le informazioni relative al proprietario di un dominio hanno esclusivamente un valore amministrativo e sono totalmente indipendenti dalle informazioni che possono essere associate a un identificativo cliente OVHcloud. Di conseguenza, un privato o un'organizzazione (società, associazione, ecc...) dichiarati esclusivamente come proprietari di un dominio, non hanno accesso allo Spazio Cliente OVHcloud.
+>
 
 **Questa guida ti mostra come cambiare il proprietario di un dominio**
 
@@ -39,7 +42,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 >
 > Esistono principalmente due tipi di **TLD**: I **ccTLD** e i **gTLD**. I **ccTLD** corrispondono a **TLD** relativi a una regione o a un paese (*.it*, *.be*, *.uk*, *.de*, *.paris*, ecc.). I **gTLD** corrispondono a **TLD** più generici (*.net*, *.com*, *.info*, *.org*, ecc.).
 >
-> La procedura esatta per il cambio di proprietà di un dominio può quindi variare, in particolare per alcuni **ccTLD**, quali *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, ecc., e per alcuni **TLD* speciali (*.am*, *.fm*, ecc.). Per alcuni di essi, il cambio di assegnatario è un'operazione a pagamento. Il cambio di proprietà può anche essere sospeso per diversi motivi, ad esempio per mancato pagamento, abuso o blocco da parte del registro. 
+> La procedura esatta per il cambio di proprietà di un dominio può quindi variare, in particolare per alcuni **ccTLD** (*.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, ecc.) e per alcuni **TLD* speciali (*.am*, *.fm*, ecc.). Per alcuni di essi, il cambio di assegnatario è un'operazione a pagamento. Il cambio di proprietà può anche essere sospeso per diversi motivi, ad esempio per mancato pagamento, abuso o blocco da parte del registro. 
 >
 > In caso di dubbi, consulta queste risorse:
 >

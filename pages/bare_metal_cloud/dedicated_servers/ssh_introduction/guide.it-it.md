@@ -90,14 +90,14 @@ Quando ti viene chiesto di inserire una password, inserisci quella dell'utente c
 Se si tratta di una nuova connessione, il tuo client SSH riceverà un'impronta di chiave (*fingerprint*) del server. Inserisci "yes" per confermare e poi la password dell'utente che si connette.
 
 ```bash
-ssh ubuntu@169.254.10.254
+ssh ubuntu@203.0.113.100
 ```
 ```console
-The authenticity of host '169.254.10.254 (169.254.10.254)' can't be established.
+The authenticity of host '203.0.113.100 (203.0.113.100)' can't be established.
 ECDSA key fingerprint is SHA256:rRwrdsmJfzvJF5k0a4JmMSdaWbTlCgRKBukbmQ3gmso.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
-Warning: Permanently added '169.254.10.254' (ECDSA) to the list of known hosts.
-ubuntu@169.254.10.254's password:
+Warning: Permanently added '203.0.113.100' (ECDSA) to the list of known hosts.
+ubuntu@203.0.113.100's password:
 ```
 
 L'impronta della chiave viene poi registrata sul tuo dispositivo e verificata ad ogni nuova connessione. Se la chiave è cambiata sull'host remoto, visualizzi un messaggio di avvertimento quando cerchi di connetterti, ad esempio:
@@ -123,7 +123,7 @@ Ciò significa che si è verificata una delle seguenti situazioni:
 Per risolvere il problema, utilizza questo comando con l'indirizzo IP del tuo server:
 
 ```bash
-ssh-keygen -f ~/.ssh/known_hosts -R 169.254.10.254
+ssh-keygen -f ~/.ssh/known_hosts -R 203.0.113.100
 ```
 
 Puoi anche aprire il file `known_hosts` nella tua cartella personale tramite un editor di testo ed eliminare la riga "offending" specificata nel messaggio di avviso:
@@ -143,7 +143,7 @@ Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 Per risolvere il problema, utilizza il comando seguente con l’indirizzo IP del tuo server:
 
 ```bash
-ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 203.0.113.100
 ```
 
 È inoltre possibile accedere alla cartella, fare clic con il pulsante destro del mouse sul file e aprirlo con Blocco note.

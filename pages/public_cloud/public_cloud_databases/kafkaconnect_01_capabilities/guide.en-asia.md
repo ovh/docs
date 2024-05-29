@@ -1,7 +1,7 @@
 ---
 title: Kafka Connect - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka Connect
-updated: 2023-12-04
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -54,20 +54,12 @@ Your choice of plan affects the number of nodes your cluster run or the SLA.
 
 ### Hardware resources
 
-Here are the node types you can choose from:
-
-| Name    | Storage | vCore | Memory (GB) |
-| ------- | ------- | ----- | ----------- |
-| db1-4   | N/A     | 2     | 4           |
-| db1-7   | N/A     | 2     | 7           |
-| db1-15  | N/A     | 4     | 15          |
-| db1-30  | N/A     | 8     | 30          |
-
-All nodes of a given cluster should be of the same type and distributed in the same region.
+For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](https://www.ovhcloud.com/asia/public-cloud/prices/#9667).
 
 ### Features
 
 #### Network
+
 Public as well as private networking (vRack) can be used for all the offers.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
@@ -75,9 +67,10 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
+
 Here are some considerations to take into account when using private network:
 
-- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
 

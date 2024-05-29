@@ -1,5 +1,5 @@
 ---
-title: Restaurer une sauvegarde (EN)
+title: Public Cloud Databases - Comment restaurer une sauvegarde (EN)
 excerpt: Find out how to restore a backup
 updated: 2023-05-11
 ---

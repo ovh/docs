@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Héberger un site statique dans un bucket S3
 excerpt: Apprenez à configurer un bucket S3 pour héberger un site web statique
-updated: 2024-04-24
+updated: 2024-05-20
 ---
 
 ## Objectif
@@ -88,13 +88,9 @@ Une fois la configuration du site web téléversée avec succès, vous pouvez te
 Le endpoint par défaut dépendra de la région de votre bucket.
 
 ```sh
-http://{bucket-name}.s3-website.{region}.{storage_class}.cloud.ovh.net
+http://{bucket-name}.s3-website.{region}.io.cloud.ovh.net
 ```
 
-Où `storage_class` est :
-
-- "io" si vous utilisez un bucket standard.
-- "perf" si vous utilisez un bucket High Performance.
 
 > [!primary]
 > Si vous souhaitez utiliser un endpoint personnalisé, vous devrez fournir votre propre nom de domaine.

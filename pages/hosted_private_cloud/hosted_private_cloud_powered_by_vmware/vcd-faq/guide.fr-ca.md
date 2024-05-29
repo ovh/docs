@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - FAQ"
 excerpt: "Retrouvez les questions les plus fréquentes concernant VCD"
-updated: 2024-04-16
+updated: 2024-05-23
 ---
 
 ## FAQ
@@ -48,7 +48,7 @@ Avec VMware Cloud Director, vous ne pouvez pas accéder aux API vSphere ESXi et 
 
 ### Puis-je quand même utiliser des produits comme Veeam, Naviko, Rubik pour sauvegarder mes VM ?
 
-Non, avec VMware Cloud Director, vous ne pouvez pas utiliser d’outil demandant l’accès à vSphere ESXi ou vCenter.
+Non. Avec VMware Cloud Director, vous ne pouvez pas utiliser d’outil demandant l’accès à vSphere ESXi ou vCenter.
 
 Pour le Backup, nous vous proposerons Veeam Managed Backup avec un plugin intégré pour les VM de Backup.
 Nous proposerons 3 types de jobs par défaut, mais vous pourrez ajouter des politiques différentes si besoin.
@@ -68,6 +68,10 @@ Avec VMware Cloud Director, vous pouvez définir l’affinité de groupe pour le
 Lors du lancement du service, aucune certification spécifique ne sera applicable au service VMware Cloud Director par OVHcloud.
 
 Cependant, la prise en charge des certifications HDS, ISO27001, SOC2 ou PCI-DSS est un des objectifs de notre feuille de route.
+
+### Puis-je choisir avec VMware Cloud Director le type de disque Thin ou Thick lorsque je crée une nouvelle machine virtuelle ou un nouveau disque ?
+
+Non. Avec VMware Cloud Director, chaque disque consomme du stockage dans une organisation Virtual Datacenter (VDC). Il n'existe aucun réglage de type Thin ou Thick associé pour le tenant d'un client.
 
 ## Aller plus loin
 

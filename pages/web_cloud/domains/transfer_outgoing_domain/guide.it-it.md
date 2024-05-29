@@ -1,7 +1,7 @@
 ---
 title: "Trasferire un dominio verso un altro Registrar"
 excerpt: "Questa guida ti mostra come effettuare il trasferimento di un dominio OVHcloud verso un altro provider"
-updated: 2024-04-11
+updated: 2024-05-16
 ---
 
 > [!primary]
@@ -51,6 +51,8 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 > - la [lista dei TLD disponibili in OVHcloud](/links/web/domains-tld);
 > - [le spiegazioni dell'ICANN sui codici di stato EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (per sapere quali codici di status si applicano attualmente al tuo dominio, effettua una ricerca *Whois*, preferibilmente utilizzando il sito web del registro TLD corrispondente);
 > - il sito Web e l'interfaccia di gestione del nuovo Registrar, in particolare per le domande relative ad un processo di trasferimento in attesa.
+>
+> In base al nuovo Registrar che scegli, il trasferimento di un dominio può essere un'operazione a pagamento. Prima di continuare, è possibile informarsi su questo punto.
 >
 
 ### Step 1: togliere la protezione contro il trasferimento del dominio

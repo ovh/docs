@@ -1,7 +1,7 @@
 ---
 title: M3 Aggregator - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for M3 Aggregator
-updated: 2024-02-29
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -27,9 +27,7 @@ The entire database instances must be in the same region. Multi-AZ is currently 
 
 ### M3 Aggregator versions
 
-The Public Cloud Databases offer supports the following M3 Aggregator versions:
-
-- M3 Aggregator 1.5
+The Public Cloud Databases offer supports M3 Aggregator version 1.5.
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions.
 
@@ -65,32 +63,12 @@ Where applicable, the cost of the license is included in the service plans. It i
 
 ### Hardware resources
 
-Here are the node types you can choose from:
-
-**Business plans**
-
-| Name    | Storage | vCore | Memory (GB) |
-| ------- | ------- | ----- | ----------- |
-| db1-7   | N/A     | 2     | 7           |
-| db1-15  | N/A     | 4     | 15          |
-| db1-30  | N/A     | 8     | 30          |
-| db1-60  | N/A     | 16    | 60          |
-| db1-120 | N/A     | 32    | 120         |
-
-**Enterprise plans**
-
-| Name    | Storage | vCore | Memory (GB) |
-| ------- | ------- | ----- | ----------- |
-| db1-15  | N/A     | 4     | 15          |
-| db1-30  | N/A     | 8     | 30          |
-| db1-60  | N/A     | 16    | 60          |
-| db1-120 | N/A     | 32    | 120         |
-
-Right now, all nodes in a given cluster must be of the same type and located in the same region.
+For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#9745).
 
 ### Features
 
 #### Network
+
 Public as well as private networking (vRack) can be used for all the offers.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
@@ -98,9 +76,10 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
+
 Here are some considerations to take into account when using private network:
 
-- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
 
@@ -110,7 +89,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3 Aggregator logs in Opensearch. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information.
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3 Aggregator logs in Opensearch. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information. For more details on logs forwarding, see the [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) guide.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
