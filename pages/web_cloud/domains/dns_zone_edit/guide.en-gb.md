@@ -264,34 +264,34 @@ By resetting your DNS zone, you can revert back to a minimal configuration, with
 > Before you reset your DNS zone, ensure that your domain name is not attached to services that are in use, such as a website or email addresses.
 >
 
-In the `DNS Zone`{.action} tab, click `Reset my DNS zone`{.action} , then follow the 2 steps that appear.
+In the `DNS zone`{.action} tab, click on `Reset my DNS zone`{.action}, then follow the 2 steps in the window that appears.
 
 ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
 **Step 1**
 
-Answer the question `Do you want to enable the minimum records when you reset your DNS zone?`. The idea of defining minimal records in a DNS zone is to prevent a query for the domain name from leading to an error.
+Answer the question `Do you want to enable the minimum records when you reset your DNS zone?`. Defining minimal records in a DNS zone prevents error responses when the domain name is queried.
 
 - `Yes, I want to reset my DNS zone with the minimum records`
 - `No, but I want to reset my DNS zone`
 
 **Step 2**
 
-Whichever option you choose in step 1, you will need to define a response when you query your domain name to prevent an incorrect DNS response.
+Whichever option you choose in step 1, you will need to set values for queries to your domain name to prevent an incorrect DNS response.
 
-Select both options by clicking the following tabs.
+Click on the tabs below to view the details of the available options.
 
 > [!tabs]
-> **IP address of your hosting**
->> - `Redirection`: your domain name will point to the OVHcloud redirection server, which can be used to display an OVHcloud homepage, and thus avoid a DNS error.<br>
->> - `OVHcloud Web Hosting`: Your domain name will point to the IP address of the Web Hosting plan associated with the domain name.<br>
->> - `Custom`: Set the IPv4 value ([A record](#pointer-records)) of the Web Hosting plan you want to point to. <br><br>
+> **Web hosting plan IP address**
+>> - `Redirection`: Your domain name will point to the OVHcloud redirection server, which can be used to display an OVHcloud homepage, and thus avoid a DNS error.<br>
+>> - `OVHcloud web hosting`: Your domain name will point to the IP address of the Web Hosting plan associated with the domain name.<br>
+>> - `Custom`: Enter the IPv4 address ([A record](#pointer-records)) of the Web Hosting plan you want to point to. <br><br>
 >> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
 >>
-> **Address of your mail server**
->> - `Redirection`: your domain name will point to the email redirection servers. This choice. This is particularly useful if you do not have any email solutions, but would like to send emails to one or more email addresses outside of your domain name.<br>
->> - `OVHcloud email server`: to be defined when you have a shared email solution.<br>
->> - `Custom`: Define the URL and priority of the email server ([MX record](#mail-records)) you want to point to.<br><br>
+> **Mail server address**
+>> - `Redirection`: Your domain name will point to the email redirection servers. This is particularly useful if you do not have any email solutions, but would like to send emails to one or more email addresses outside of your domain name.<br>
+>> - `OVHcloud email server`: To be defined if you have a shared email solution.<br>
+>> - `Custom`: Enter the URL and priority of the email server ([MX record](#mail-records)) you want to point to.<br><br>
 >> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
 >>
 
