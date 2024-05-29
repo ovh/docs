@@ -301,7 +301,6 @@
             + [VMware DRS (Distributed Resource Scheduler)](bare_metal_cloud/managed_bare_metal/vmware_drs_distributed_ressource_scheduler)
             + [Enabling Virtual Machine Encryption (VM Encrypt)](bare_metal_cloud/managed_bare_metal/vm_encrypt)
             + [Using the vSphere SDK](bare_metal_cloud/managed_bare_metal/using-vsphere-sdk)
-            + [Using Active Directory server as an authentication source (Federation)](bare_metal_cloud/managed_bare_metal/federation)
 + Hosted Private Cloud
     + [VMware on OVHcloud](products/hosted-private-cloud-hosted-private-cloud-powered-by-vmware)
         + [Getting started](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started)
@@ -328,7 +327,6 @@
             + [VMware Cloud Director - Creating a new virtual machine](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
             + [VMware Cloud Director - Veeam Backup Data Protection](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
         + [Access and Security](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security)
-            + [Using Active Directory server as an authentication source (Federation)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/federation)
             + [IAM for VMware on OVHcloud - Introduction and FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
             + [IAM for VMware on OVHcloud - How to activate IAM](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
             + [IAM for VMware on OVHcloud - How to create a vSphere IAM role](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
