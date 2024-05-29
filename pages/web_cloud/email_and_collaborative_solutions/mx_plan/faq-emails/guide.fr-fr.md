@@ -1,12 +1,12 @@
 ---
 title: FAQ e-mails OVHcloud
 excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails OVHcloud'
-updated: 2024-04-11
+updated: 2024-05-29
 ---
 
 ## FAQ e-mails
 
-### Que faire si l'émission/réception de mes e-mails est impossible ? 
+### Que faire si l'émission/réception de mes e-mails est impossible ?
 
 La plupart du temps, une émission/réception d'e-mails impossible est liée à la configuration de votre adresse sur votre logiciel de messagerie. Pour le vérifier, testez-le en vous connectant sur le [webmail](https://www.ovh.com/fr/mail/){.external} et réalisez un test d'envoi et de réception à partir de votre adresse.
 
@@ -15,12 +15,12 @@ La plupart du temps, une émission/réception d'e-mails impossible est liée à 
 
 Suite à l'envoi d'un e-mail sur votre compte mail, recevez-vous un message d'erreur ? Si oui, repérez le message d'erreur, il pourra vous en préciser la raison (boite pleine, boite non existante ...).
 
-Vous pouvez également vérifier que votre nom de domaine livre les e-mails au bon endroit. Pour cela, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, sélectionnez la zone DNS de votre nom de domaine et regardez les enregistrements de type MX mis en place. Ces enregistrements doivent être sous la forme « mx*.mail.ovh.net. » (remplacez * par un chiffre entre 0 et 3). 
+Vous pouvez également vérifier que votre nom de domaine livre les e-mails au bon endroit. Pour cela, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, sélectionnez la zone DNS de votre nom de domaine et regardez les enregistrements de type MX mis en place. Ces enregistrements doivent être sous la forme « mx*.mail.ovh.net. » (remplacez \* par un chiffre entre 0 et 3).
 Si les enregistrements MX sont différents, c'est que vous avez potentiellement une offre e-mail d'un autre opérateur qu'OVHcloud.
 
 **Trucs et Astuces** : Si la connexion à votre webmail est impossible, votre mot de passe est peut-être erroné. Vérifiez-le et, si nécessaire, nous vous invitons à le modifier depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et à renouveler votre connexion. Pour cela, vous pouvez vous appuyer sur [notre documentation](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
 
-### Comment configurer mon adresse e-mail et l'utiliser avec le webmail ? 
+### Comment configurer mon adresse e-mail et l'utiliser avec le webmail ?
 
 Il est possible de configurer votre compte e-mail sur un logiciel de messagerie tel que Outlook, Thunderbird, Mail de Mac...
 Pour ce faire nous vous mettons à disposition des guides afin d'effectuer la mise en place de votre adresse. Vous pouvez les retrouver sur [cette page](/products/web-cloud-email-collaborative-solutions-mx-plan).
@@ -29,15 +29,35 @@ Grâce au [webmail](https://www.ovh.com/fr/mail/){.external}, vous pouvez accéd
 
 **Trucs et Astuces** : Si vous configurez votre compte e-mail sur un logiciel de messagerie, nous vous conseillons de le configurer avec le protocole IMAP. De cette manière, les e-mails resteront stockés sur le serveur et vous pourrez les consulter où que vous soyez depuis le [webmail](https://www.ovh.com/fr/mail/){.external}. Pour cela, vous pouvez vous appuyer sur [notre documentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
-### Comment gérer mes services e-mails ? 
+### Comment gérer mes services e-mails ?
 
 L'ensemble de vos adresses e-mail se gère depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour cela, une fois connecté, accédez au produit concerné. Vous pouvez ainsi modifier le mot de passe de vos adresses e-mail, vérifier leur taux de remplissage, créer de nouvelles adresses ou supprimer des adresses existantes.
 
-**Trucs et Astuces** : Sur les offres e-mail MX Plan, vous pouvez déléguer la gestion d'un compte e-mail à un autre compte OVHcloud tout en gardant vous même la main sur celui-ci. Pour cela, il vous suffit de configurer une délégation, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Vous pouvez vous appuyer sur [notre documentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation). 
+**Trucs et Astuces** : Sur les offres e-mail MX Plan, vous pouvez déléguer la gestion d'un compte e-mail à un autre compte OVHcloud tout en gardant vous-même la main sur celui-ci. Pour cela, il vous suffit de configurer une délégation, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Vous pouvez vous appuyer sur [notre documentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
 
-### Comment limiter la réception de spams ? 
+### Que faut-il savoir pour créer mon adresse e-mail ?
 
-Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelées « Filtres » sur l'offre MXPlan). Ils auront pour but de supprimer ou de déplacer des e-mails dans le dossier « courriers indésirables » dès leur réception. 
+Créer une adresse e-mail n'est pas une opération complexe, mais il est nécessaire de respecter des règles pour définir le **nom de votre adresse e-mail** et le choix du **mot de passe**.
+
+Le **nom de votre adresse e-mail** doit respecter les règles suivantes :
+
+- Minimum 2 caractères
+- Maximum 32 caractères
+- Aucun caractère accentué
+- pas de caractères spéciaux à l'exception de **.,-** et **_** <br><br>
+
+Le **mot de passe** doit respecter les règles suivantes :
+
+- Minimum 9 caractères
+- Maximum 30 caractères
+- Aucun caractère accentué
+
+> [!warning]
+> Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions de votre nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
+
+### Comment limiter la réception de spams ?
+
+Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelées « Filtres » sur l'offre MXPlan). Ils auront pour but de supprimer ou de déplacer des e-mails dans le dossier « courriers indésirables » dès leur réception.
 Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, puis dans la rubrique `E-mail`, sélectionnez le domaine concerné , l'onglet `E-mail`{.action} puis dans la colonne `Filtre`{.action}, cliquez sur le bouton d'action.
 
 Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](https://www.ovh.com/fr/mail/){.external}. Vous pouvez consulter le guide suivant pour plus de détails : [Règles de boîte de réception depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
