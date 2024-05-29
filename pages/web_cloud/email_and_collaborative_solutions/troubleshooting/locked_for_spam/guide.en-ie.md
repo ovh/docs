@@ -12,7 +12,7 @@ When your email account is blocked for SPAM, it means that suspicious sending ac
 
 ## Requirements
 
-- An [OVHcloud email solution](/links/web/emails/).
+- An [OVHcloud email solution](/links/web/emails).
 - Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions <a name="instructions"></a>

@@ -12,7 +12,7 @@ Jeśli Twój adres e-mail jest zablokowany z powodu SPAM-u, oznacza to, że pode
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [e-mail OVHcloud](/links/web/emails/).
+- Posiadanie usługi [e-mail OVHcloud](/links/web/emails).
 - Dostęp do[Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 ## W praktyce <a name="instructions"></a>
