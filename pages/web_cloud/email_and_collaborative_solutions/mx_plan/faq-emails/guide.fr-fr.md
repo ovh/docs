@@ -35,7 +35,7 @@ L'ensemble de vos adresses e-mail se gère depuis votre [espace client OVHcloud]
 
 **Trucs et Astuces** : Sur les offres e-mail MX Plan, vous pouvez déléguer la gestion d'un compte e-mail à un autre compte OVHcloud tout en gardant vous-même la main sur celui-ci. Pour cela, il vous suffit de configurer une délégation, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Vous pouvez vous appuyer sur [notre documentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
 
-### Que faut-il savoir pour créer mon adresse e-mail ?
+### Que faut-il savoir avant de créer mon adresse e-mail ?
 
 Créer une adresse e-mail n'est pas une opération complexe, mais il est nécessaire de respecter des règles pour définir le **nom de votre adresse e-mail** et le choix du **mot de passe**.
 
