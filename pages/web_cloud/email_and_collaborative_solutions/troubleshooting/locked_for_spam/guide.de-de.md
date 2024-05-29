@@ -12,7 +12,7 @@ Wenn ein E-Mail-Acoount wegen SPAM gesperrt ist, bedeutet dies, dass verdächtig
 
 ## Voraussetzungen
 
-- Sie verwenden eine [OVHcloud E-Mail-Lösung](/links/web/emails/).
+- Sie verwenden eine [OVHcloud E-Mail-Lösung](/links/web/emails).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}.
 
 ## In der praktischen Anwendung <a name="instructions"></a>
