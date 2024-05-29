@@ -113,24 +113,26 @@ Pour les configurer, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.a
 
 Complétez les informations qui s'affichent.
 
-- **Compte e-mail** : Renseignez le nom que portera votre adresse e-mail (votre prénom.nom, par exemple) et sélectionnez le domaine concerné dans la liste.
+- **Compte e-mail** : renseignez le nom que portera votre adresse e-mail (votre prénom.nom, par exemple) et sélectionnez le domaine concerné dans la liste.
 
 > [!warning]
 >
-> Le choix du nom de votre adresse e-mail doit respecter les conditions suivantes:
+> Le choix du nom de votre adresse e-mail doit respecter les conditions suivantes :
+>
 > - Minimum 2 caractères
 > - Maximum 32 caractères
 > - Aucun caractère accentué
-> - pas de caractères spéciaux à l'exeption de **.,-** et **_**
+> - Pas de caractères spéciaux, à l'exception des caractères suivants : `.`, `,`, `-` et `_`
 
-- **Prénom** : Renseignez un prénom.
-- **Nom** : Renseignez un nom.
-- **Nom à afficher** : Renseignez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.
-- **Mot de passe et confirmation** : Définissez un mot de passe fort composé d'au minimum 8 caractères et comprenant au moins une majuscule, une minuscule, un chiffre.
+- **Prénom** : renseignez un prénom.
+- **Nom** : renseignez un nom.
+- **Nom à afficher** : renseignez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés depuis cette adresse.
+- **Mot de passe et confirmation** : définissez un mot de passe fort composé d'au minimum 8 caractères et comprenant au moins une majuscule, une minuscule, un chiffre.
 
 > [!warning]
 >
-> Le choix du mot de passe doit respecter les conditions suivantes:
+> Le choix du mot de passe doit respecter les conditions suivantes :
+>
 > - Minimum 9 caractères
 > - Maximum 30 caractères
 > - Aucun caractère accentué

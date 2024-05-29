@@ -53,20 +53,22 @@ Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
 > [!warning]
 >
-> Le choix du nom de votre adresse e-mail doit respecter les conditions suivantes:
+> Le choix du nom de votre adresse e-mail doit respecter les conditions suivantes :
+>
 > - Minimum 2 caractères
 > - Maximum 32 caractères
 > - Aucun caractère accentué
-> - pas de caractères spéciaux à l'exeption de **.,-** et **_**
+> - Pas de caractères spéciaux, à l'exception des caractères suivants : `.`, `,`, `-` et `_`
 
-- **Prénom** : Renseignez un prénom.
-- **Nom** : Renseignez un nom.
-- **Nom à afficher** : Indiquez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.
-- **Mot de passe** : Définissez un mot de passe et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
+- **Prénom** : renseignez un prénom.
+- **Nom** : renseignez un nom.
+- **Nom à afficher** : indiquez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés depuis cette adresse.
+- **Mot de passe** : définissez un mot de passe et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
 
 > [!warning]
 >
 > Le choix du mot de passe doit respecter les conditions suivantes:
+>
 > - Minimum 9 caractères
 > - Maximum 30 caractères
 > - Aucun caractère accentué
@@ -181,7 +183,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 > [!alert]
 >
-> Vérifiez bien que le drapeau visible en haut à droite de votre page corresponde à votre région. **Les paramètres ci-dessous sont différents selon votre région**.
+> Vérifiez bien que le drapeau visible en haut à droite de cette page de documentation correspond à votre pays / région. **Les paramètres ci-dessous sont différents selon votre pays / région**.
 
 > [!tabs]
 > **Configuration IMAP (recommandée)**
