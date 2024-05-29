@@ -1,7 +1,7 @@
 ---
 title: Configurer le pare-feu sous Linux avec Iptables
 excerpt: Découvrez comment sécuriser un serveur avec Iptables
-updated: 2022-10-18
+updated: 2024-05-28
 ---
 
 ## Objectif
@@ -52,9 +52,18 @@ Iptables est installé par défaut sur la plupart des systèmes Linux. Pour conf
 sudo apt-get install iptables
 ```
 
-L'exemple de sortie dans Ubuntu confirme que la dernière version de Iptables est déjà présente :
+Pour vous assurer que vos règles Iptables sont persistantes après le redémarrage, vous devez installer le paquet iptables persistent en utilisant la commande suivante :
 
-![version-iptables](images/step2-version-iptables.PNG){.thumbnail}
+```bash
+sudo apt-get install iptables-persistent
+```
+
+Une fois ce paquet installé, le dossier iptables contiendra deux fichiers pour les règles IPV4 et IPV6 :
+
+```bash
+sudo /etc/iptables/rules.v4
+sudo /etc/iptables/rules.v6
+```
 
 En général, une commande Iptables se présente comme suit :
 
@@ -205,10 +214,17 @@ Remplacez `Number` par le numéro de ligne de règle que vous souhaitez supprime
 Lors du redémarrage du système, Iptables ne conserve pas les règles que vous aviez créées. 
 Chaque fois que vous configurez Iptables sous Linux, toutes les modifications que vous apportez s'appliquent uniquement jusqu'au prochain redémarrage.
 
-Pour enregistrer les règles dans les systèmes basés sur Ubuntu, saisissez :
-  
+Pour sauvegarder les règles sur les systèmes basés sur Ubuntu, vous devez d'abord vous connecter en tant qu'utilisateur root en utilisant la commande `sudo su` :
+
 ```bash
-sudo -s iptables-save -c
+ubuntu@server:~$ sudo su
+root@server:/home/ubuntu#
+```
+
+Ensuite, exécutez la commande suivante : 
+
+```bash
+iptables-save > /etc/iptables/rules.v4
 ```
 
 Au prochain démarrage de votre système, Iptables rechargera automatiquement les règles du pare-feu.
