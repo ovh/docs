@@ -1,7 +1,7 @@
 ---
 title: Grafana - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Grafana
-updated: 2023-12-04
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -29,7 +29,7 @@ Grafana nodes have to be in the same region. Multi-AZ is currently not supported
 
 The Public Cloud Databases offer supports the following Grafana versions:
 
-- Grafana 9.1
+- Grafana 10
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
 
@@ -47,7 +47,7 @@ Here is an overview of the *Essential* plan capabilities:
 | ------------ | -------------------------- | ---------------- |
 | *Essential*  | 1                          | No               |
 
-The *Essential* plan offer an automatic backup retention of 2 days. It supports public or private networks (vRack).
+The *Essential* plan offers an automatic backup retention of 2 days. It supports public or private networks (vRack).
 
 #### Nodes and replicas
 
@@ -60,14 +60,7 @@ More information on <https://raw.githubusercontent.com/grafana/grafana/main/LICE
 
 ### Hardware resources
 
-Here are the node types you can choose from:
-
-**Essential plans**
-
-| Name    | Storage | vCore | Memory (GB) |
-| ------- | ------- | ----- | ----------- |
-| db1-4   | N/A     | 2     | 4           |
-| db1-7   | N/A     | 2     | 7           |
+For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#9533).
 
 #### Node template upgrade
 
@@ -106,7 +99,7 @@ See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/dat
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Grafana logs in Opensearch. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information.
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. For setup instructions, see the [Public Cloud Databases - How to setup logs forwarding guide](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer).
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

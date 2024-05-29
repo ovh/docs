@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
-updated: 2023-12-04
+updated: 2024-05-27
 ---
 
 ## Objective
@@ -29,11 +29,10 @@ Database nodes have to be in the same region. Multi-AZ is currently not supporte
 
 The Public Cloud Databases offer supports the following PostgreSQL versions:
 
-- PostgreSQL 11
-- PostgreSQL 12
 - PostgreSQL 13
 - PostgreSQL 14
 - PostgreSQL 15
+- PostgreSQL 16
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
 
@@ -75,18 +74,7 @@ More information on <https://www.postgresql.org/about/licence/>.
 
 ### Hardware resources
 
-Here are the node types you can choose from:
-
-| Name    | Storage                 | vCore | Memory (GB) |
-| ------- | ----------------------- | ----- | ----------- |
-| db1-4   | From 80 GB to 240 GB    | 2     | 4           |
-| db1-7   | From 160 GB to 480 GB   | 2     | 7           |
-| db1-15  | From 320 GB to 960 GB   | 4     | 15          |
-| db1-30  | From 640 GB to 1.92 TB  | 8     | 30          |
-| db1-60  | From 1.28 TB to 3.84 TB | 16    | 60          |
-| db1-120 | From 2.56 TB to 7.68 TB | 32    | 120         |
-
-Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
+For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/it/public-cloud/prices/#7261).
 
 #### Flexible storage
 
@@ -163,7 +151,7 @@ See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/dat
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your PostgreSQL logs in Opensearch and metrics in Grafana. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information.
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. For setup instructions, see the [Public Cloud Databases - How to setup logs forwarding guide](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer).
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

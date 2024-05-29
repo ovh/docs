@@ -1,7 +1,7 @@
 ---
 title: 'Che fare in caso di account bloccato per invio di Spam ?'
 excerpt: 'Cosa fare se il tuo indirizzo email è bloccato per invio di Spam'
-updated: 2023-06-07
+updated: 2024-05-23
 ---
 
 ## Obiettivo
@@ -12,8 +12,8 @@ Quando il tuo indirizzo email è bloccato per SPAM, significa che sono state ril
 
 ## Prerequisiti
 
-- Disporre di un [servizio di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/){.external}.
-- Avere accesso alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di un [servizio di posta elettronica OVHcloud](/links/web/emails).
+- Avere accesso alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura <a name="instructions"></a>
 
@@ -26,6 +26,16 @@ Prima di proseguire e se il blocco si riferisce a un indirizzo email di tipo MXp
 ### Step 1: perché il tuo indirizzo email è bloccato per SPAM? <a name="step1"></a>
 
 Quando viene rilevata un'attività sospetta a livello di invio delle email, l'indirizzo interessato viene automaticamente bloccato. In questo caso, non è possibile inviare email da questo indirizzo.
+
+> [!warning]
+>
+> "Attività sospetta" significa che:
+>
+> - Il server anti-spam, che scansiona le email al momento dell'invio, ha rilevato che uno o più elementi dell'email sono considerati sospetti e possono costituire un'email SPAM.
+> - La frequenza di invio e il numero di destinatari sono troppo elevati e contribuiscono a considerare l'invio come spam. Per invii massivi è infatti necessario utilizzare un servizio di mailing list e non un indirizzo email standard.
+>
+> I motivi precisi di un blocco non possono essere divulgati per evitare qualsiasi tentativo di elusione del sistema di rilevamento degli SPAM. Per testare il contenuto di un’email, puoi utilizzare uno strumento esterno a OVHcloud come [Mailtester](https://www.mail-tester.com/).
+>
 
 Per prima cosa, assicurati presso gli utenti dell’indirizzo email bloccato che non sia (non siano) direttamente all’origine del blocco, in seguito ad un utilizzo insolito dell’indirizzo email (ad esempio in seguito alla realizzazione di invii massivi di email). In questo caso, è necessario correggere la situazione prima di sbloccare l'indirizzo.
 
@@ -42,7 +52,7 @@ Seleziona il servizio di posta nelle schede seguenti:
 > [!tabs]
 > **Exchange**
 >>
->> Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
+>> Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
 >> 
 >> Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonna “stato” dell’indirizzo email interessato indica “bloccato”, clicca sui tre puntini `...`{.action} a destra in corrispondenza dell’account e poi su `Sblocca`{.action}. Lo sblocco dell'indirizzo email non avviene automaticamente. Per rispondere alle 3 domande poste, contatta il supporto sul ticket di assistenza.<br>
 >> Passare allo [step 3](#step3) della guida.
@@ -51,7 +61,7 @@ Seleziona il servizio di posta nelle schede seguenti:
 >>
 > **E-mail Pro**
 >>
->> Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Email Pro`{.action} e seleziona la piattaforma Email Pro.
+>> Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Clicca su `Email Pro`{.action} e seleziona la piattaforma Email Pro.
 >>
 >> Accedi alla scheda `Account email`{.action} della tua piattaforma. Se la colonna "stato" a destra dell'indirizzo email interessato indica "Spam", clicca su questa voce e poi su `Rispondi al ticket`{.action}. Lo sblocco dell'indirizzo email non avviene automaticamente. È necessario contattare il supporto, sul ticket di assistenza, rispondendo alle 3 domande poste. <br>
 >> Passare allo [step 3](#step3) della guida.
@@ -60,7 +70,7 @@ Seleziona il servizio di posta nelle schede seguenti:
 >>
 > **MX plan - Nuova versione**
 >>
->> Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Email`{.action} e seleziona il dominio interessato.
+>> Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Clicca su `Email`{.action} e seleziona il dominio interessato.
 >>
 >> Accedi alla scheda `Account email`{.action} della tua piattaforma. Se la colonna "stato" a destra dell'indirizzo email interessato indica "Spam", clicca su questa voce e poi su `Rispondi al ticket`{.action}. Lo sblocco dell'indirizzo email non avviene automaticamente. Per rispondere alle 3 domande poste, contatta il supporto sul ticket di assistenza.<br>
 >> Passare allo [step 3](#step3) della guida.
@@ -71,7 +81,7 @@ Seleziona il servizio di posta nelle schede seguenti:
 >>
 >> Se il blocco riguarda un indirizzo email [MXplan versione storica](#instructions), non ci sono ticket di assistenza. Consulta lo [step 1](#step1) di questa guida prima di seguire queste istruzioni.
 >>
->> Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Email`{.action} e seleziona il dominio interessato.
+>> Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Clicca su `Email`{.action} e seleziona il dominio interessato.
 >>
 >> Accedi alla scheda `Email`{.action} della tua piattaforma. Se la colonna "Bloccato per SPAM" indica "Sì", clicca su questa voce e poi su `Modifica la password`{.action}. Il tuo indirizzo email è sbloccato, non è necessario seguire lo [step 3](#step3).
 >>
@@ -83,7 +93,7 @@ Seleziona il servizio di posta nelle schede seguenti:
 
 ### Step 3: accedi al ticket di assistenza <a name="step3"></a>
 
-Una volta completato lo Step 1, sarai reindirizzato verso la finestra “Le tue richieste di assistenza”. Clicca sui tre puntini `...`{.action} a destra del ticket con oggetto: “Account locked for spam”, quindi clicca su `Mostra dettagli`{.action}. 
+Una volta completato lo Step 1, sarai reindirizzato verso la finestra “Le tue richieste di assistenza”. Clicca sui tre puntini `...`{.action} a destra del ticket con oggetto: “Account locked for spam”, quindi clicca su `Mostra dettagli`{.action}.
 
 ![spam](images/blocked-for-SPAM-02.png){.thumbnail}
 
@@ -91,7 +101,7 @@ A questo punto visualizzi l’email che ti è stata inviata e che, a sua volta, 
 
 Il ticket di assistenza è di questo tipo:
 
-> 
+>
 > Gentile Cliente,
 >
 > Il nostro sistema ha rilevato che l’indirizzo **youraddress@domain.com** ospitato sui nostri sistemi sotto il servizio **servicename** è fonte di invio di messaggi indesiderati (spam).
@@ -107,20 +117,20 @@ Il ticket di assistenza è di questo tipo:
 > - Disponi di una regola di reindirizzamento verso un altro indirizzo email?
 >
 > - Hai risposto a un messaggio Spam?
-> 
+>
 > Queste risposte ci consentiranno di riattivare rapidamente il tuo account.
 > <br>
 > <br>
-> 
+>
 
 Oltre a questo messaggio, ti abbiamo inviato un esempio di intestazioni delle email inviate,
 
-per aiutarti a individuare il percorso e l’origine dei messaggi inviati. 
+per aiutarti a individuare il percorso e l’origine dei messaggi inviati.
 
 ## Per saperne di più <a name="go-further"></a>
- 
+
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
- 
+
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
- 
+
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

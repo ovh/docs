@@ -1,7 +1,7 @@
 ---
 title: Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde?
 excerpt: Erfahren Sie hier, wie Sie vorgehen, wenn Ihr E-Mail-Acount wegen Spamverdachts blockiert ist 
-updated: 2023-06-07
+updated: 2024-05-23
 ---
 
 ## Ziel
@@ -12,8 +12,8 @@ Wenn ein E-Mail-Acoount wegen SPAM gesperrt ist, bedeutet dies, dass verdächtig
 
 ## Voraussetzungen
 
-- Sie verwenden eine [OVHcloud E-Mail-Lösung](https://www.ovhcloud.com/de/emails/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Web Cloud`{.action}.
+- Sie verwenden eine [OVHcloud E-Mail-Lösung](/links/web/emails).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}.
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
@@ -26,6 +26,16 @@ Falls die Sperrung einen E-Mail-Account vom Typ MX Plan betrifft, identifizieren
 ### Schritt 1: Die Ursache für den SPAM-Verdacht ermitteln <a name="step1"></a>
 
 Wenn beim Versand von E-Mails verdächtige Aktivitäten festgestellt werden, wird der betreffende Account automatisch gesperrt. In diesem Fall können Sie über den E-Mail-Account keine E-Mails mehr versenden.
+
+> [!warning]
+>
+> "Verdächtige Aktivität" kann bedeuten:
+>
+> - Der Anti-SPAM-Server, der E-Mails beim Versand scannt, hat ein oder mehrere Elemente der E-Mail als verdächtig eingestuft, die für SPAM-E-Mails typisch sind.
+> - Die Häufigkeit des Versands und die Anzahl der Empfänger sind ungewöhnlich hoch, was als SPAM-Massen-Mailing angesehen werden kann. Für Massen-Versand ist es notwendig, eine Mailingliste zu verwenden, statt einzelner E-Mail-Adressen.
+>
+> Die genauen Gründe für einen gesperrten Account können nicht bekannt gegeben werden, um zu Versuche zu verhindern, das SPAM-Erkennungssystem zu umgehen. Um den Inhalt einer E-Mail zu testen, können Sie ein externes Tool wie [Mailtester](https://www.mail-tester.com/) verwenden.
+>
 
 Überprüfen Sie zunächst gegenüber allen Benutzern des gesperrten E-Mail-Accounts, ob sie die Sperrung direkt verursacht haben, etwa mit einem ungewöhnlichen Nutzungsverhalten (z.B. aufgrund eines Massenversands). Ist das der Fall, müssen Sie dies vor der Freigabe der betroffenen Accounts korrigieren.
 
@@ -42,7 +52,7 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 > [!tabs]
 > **Exchange**
 >>
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}, und wählen Sie die entsprechende Plattform aus.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}, und wählen Sie die entsprechende Plattform aus.
 >>
 >> Gehen Sie auf den Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte „Status“ des betroffenen E-Mail-Accounts „Spam“ angegeben ist, klicken Sie auf `...`{.action} rechts und danach auf `Entsperren`{.action}. Das Entsperren des E-Mail-Accounts erfolgt nicht automatisch. Der Support muss über das Support-Ticket kontaktiert werden. Hierbei müssen die drei gestellten Fragen beantwortet werden.<br>
 >> Fahren Sie mit [Schritt 3](#step3) der Anleitung fort.
@@ -51,7 +61,7 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 >>
 > **E-Mail Pro**
 >>
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mail Pro`{.action} und wählen Sie die entsprechende Plattform aus.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mail Pro`{.action} und wählen Sie die entsprechende Plattform aus.
 >>
 >> Gehen Sie auf den Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte „Status“ des betroffenen E-Mail-Accounts „Spam“ angegeben ist, klicken Sie auf dieses Feld und dann auf `Ticket beantworten`{.action}. Das Entsperren des E-Mail-Accounts erfolgt nicht automatisch. Der Support muss über das Support-Ticket kontaktiert werden. Hierbei müssen die drei gestellten Fragen beantwortet werden. <br>
 >> Fahren Sie mit [Schritt 3](#step3) der Anleitung fort.
@@ -60,7 +70,7 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 >>
 > **MX Plan - Neue Version**
 >>
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Domainnamen aus.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Domainnamen aus.
 >>
 >> Gehen Sie auf den Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte „Status“ des betroffenen E-Mail-Accounts „Spam“ angegeben ist, klicken Sie auf dieses Feld und dann auf Das `Ticket beantworten`{.action}. Das Entsperren des E-Mail-Accounts erfolgt nicht automatisch. Der Support muss über das Support-Ticket kontaktiert werden. Hierbei müssen die drei gestellten Fragen beantwortet werden.<br>
 >> Fahren Sie mit [Schritt 3](#step3) der Anleitung fort.
@@ -71,7 +81,7 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 >>
 >> Wenn die Sperrung einen Account des Legacy [MX Plan](#instructions) betrifft, gibt es kein Support-Ticket. Bitte lesen Sie [Schritt 1](#step1) dieser Anleitung, bevor Sie den Anweisungen folgen.
 >>
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Domainnamen aus.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Domainnamen aus.
 >>
 >> Gehen Sie auf den Tab `E-Mails`{.action}. Wenn „Ja“ in der Spalte „Blockiert wegen SPAM“ angezeigt wird, klicken Sie auf diesen Hinweis und dann auf `Passwort ändern`{.action}. Ihr E-Mail-Account ist jetzt freigegeben. Sie müssen [Schritt 3](#step3) nicht ausführen.
 >>
@@ -118,10 +128,9 @@ Am Anschluss an diese Nachricht wird Ihnen ein Beispiel der Header der gesendete
 Diese Header werden verwendet, um die Route und den Ursprung der gesendeten E-Mails zu bestimmen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
- 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
- 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
- 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
 
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

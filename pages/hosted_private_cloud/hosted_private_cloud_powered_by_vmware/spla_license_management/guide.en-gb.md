@@ -1,7 +1,7 @@
 ---
 title: How to manage Windows licenses for virtual machines on your Hosted Private Cloud infrastructure
 excerpt: Find out how to manage Windows licenses for virtual machines on your OVHcloud Hosted Private Cloud infrastructure
-updated: 2024-05-03
+updated: 2024-05-23
 ---
 
 ## Objective
@@ -69,7 +69,7 @@ You can update the license associated with one of your virtual machines via the 
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/setLicense
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/setLicense
 >
 
 > [!primary]
@@ -88,7 +88,7 @@ You can delete the license associated with one of your virtual machines via the 
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/removeLicense
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/removeLicense
 >
 
 ## Go further

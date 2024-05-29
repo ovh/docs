@@ -347,7 +347,7 @@ Les étapes de migration sont décrites ci-dessous :
 4. Ajout de la machine virtuelle sur le cluster de destination.
 5. Démarrage de la machine virtuelle sur le cluster de destination.
 
-Le résultat de de la migration apparait dans la colonne **Last Failover Status** avec le statut `Succeeded` si tout s'est bien passé.
+Le résultat de la migration apparait dans la colonne **Last Failover Status** avec le statut `Succeeded` si tout s'est bien passé.
 
 ![Planned Migration 06](images/07-planned-migration06.png){.thumbnail}
 

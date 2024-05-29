@@ -206,16 +206,21 @@ web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diag
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-domains: Domínios
-web-cloud-domains-dns: DNS
-web-cloud-domains-dns-dns-and-dns-zone: Zonas DNS e DNS
-web-cloud-domains-dns-security: Segurança
+web-cloud-domains-api: API
+web-cloud-domains-api-frequent-tasks: Tarefas frequentes
+web-cloud-domains-dns: DNS (Domain Name System)
+web-cloud-domains-dns-dns-options: Opções DNS
+web-cloud-domains-dns-dns-records: Registos DNS
+web-cloud-domains-dns-dns-servers: Servidores DNS
+web-cloud-domains-dns-dns-tools: Ferramentas DNS
+web-cloud-domains-dns-dns-zone: Zona DNS
 web-cloud-domains-domain-names: Nomes de domínio
-web-cloud-domains-domain-names-general-guides: Guias gerais
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Alterar o titular de um domínio (trade)
-web-cloud-domains-domain-names-transferring-between-registrars: Transferência entre agentes de registo
+web-cloud-domains-domain-names-getting-started: Primeiros passos
+web-cloud-domains-domain-names-incoming-transfer-to-ovhcloud: Transferência de entrada para a OVHcloud
+web-cloud-domains-domain-names-outgoing-transfer-from-ovhcloud: Transferência de saída a partir da OVHcloud
 web-cloud-domains-domain-names-troubleshooting: Diagnóstico
 web-cloud-domains-domain-names-tutorials: Tutoriais
-web-cloud-domains-domain-names-api: API
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Acesso Internet
 web-cloud-internet-internet-access-advanced-setup: Configuração avançada

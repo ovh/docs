@@ -1,7 +1,7 @@
 ---
 title: Gérer les licences Windows de vos machines virtuelles
 excerpt: Gérer les licences Windows de vos machines virtuelles
-updated: 2024-05-03
+updated: 2024-05-23
 ---
 
 ## Objectif
@@ -68,7 +68,7 @@ Vous pouvez mettre à jour la licence associée à une de vos machines virtuelle
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/setLicense
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/setLicense
 >
 
 > [!primary]
@@ -87,7 +87,7 @@ Vous pouvez supprimer la licence associée à une de vos machines virtuelles dep
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/removeLicense
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/removeLicense
 >
 
 ## Aller plus loin

@@ -1,18 +1,18 @@
 ---
 title: "VMware Cloud Director - The fundamentals of VCD"
-excerpt: "Discover the basic concepts of VCD"
-updated: 2024-04-18
+excerpt: "Discover the basic concepts of VMware Cloud Director"
+updated: 2024-05-23
 ---
 
 ## Objective
 
-**This guide details the fundamentals of VCD at OVHcloud.**
+**This guide details the fundamentals of VMware Cloud Director (VCD) managed by OVHcloud.**
 
 ## Fundamental concepts
 
 In this section, we will detail the essential foundations of VMware Cloud Director (VCD).
 
-By defining these principles in a clear and concise way, we will provide the necessary foundation for effective and successful VCD use. Whether it’s for administrators looking to deploy complex infrastructures, or for users looking to access resources seamlessly, this exploration of VCD basics is a vital starting point.
+By defining these principles in a clear and concise way, we will provide the necessary foundation for effective and successful VMware Cloud Director use. Whether it’s for administrators looking to deploy complex infrastructures, or for users looking to access resources quickly, this exploration of VCD basics is a vital starting point.
 
 ### Organizations
 
@@ -24,19 +24,19 @@ System administrators are responsible for creating and provisioning organization
 
 ### Users and Groups
 
-An organization can have a variable number of users and groups. Users can be created directly by the organization administrator or imported from a directory service.
+An organization can have a variable number of users and groups. Users can be created directly by the organization administrator or imported from a directory service (e.g. Active Directory).
 
 Groups must be imported from the directory service. Within an organization, permissions are managed by assigning specific rights and roles to users and groups.
 
 ### Virtual Data Centers (vDC)
 
-A virtual datacentre offers resources to an organization, creating an environment where virtual systems can be stored, deployed and operated.
+A virtual datacentre can be used to offer computing resources (virtual machines/vApp/affinity rules) to an organization (your vDC), creating an environment managed by OVHcloud where virtualized systems can be stored, deployed and operated.
 
-It also provides storage space for virtual CDs and DVDs. It is important to note that an organization may have multiple virtual datacentres to meet their specific IT resource requirements.
+It also provides storage space for virtual CDs and DVDs. It is important to note that an organization may have multiple virtual datacentres (vDC) to meet their specific computing resource requirements (segmentation, isolation, security, etc.).
 
 ### Organization Virtual Data Center Networks
 
-An organization’s virtual datacentre network is encapsulated in a specific virtual datacentre created with VMware Cloud Director, and is accessible to all of that organization’s vApps. This network allows an organization's different vApps to communicate with each other seamlessly. It can be configured to be connected to an external network or kept isolated and internal to the organization.
+A vDC network is encapsulated in a specific virtual datacentre created with VMware Cloud Director (VCD), and is accessible to all of that organization’s vApps. This network allows an organization's different vApps to communicate with each other seamlessly. It can be configured to be connected to an external network or kept isolated and internal to the organization.
 
 Only system administrators have the privilege to create such networks, but organization administrators are able to manage the configurations of organization virtual datacentre networks, including the network services they offer.
 
