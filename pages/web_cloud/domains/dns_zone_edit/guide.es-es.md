@@ -1,7 +1,7 @@
 ---
 title: 'Editar una zona DNS de OVHcloud'
 excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVHcloud'
-updated: 2024-04-12
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -72,7 +72,7 @@ Se mostrará una tabla con un registro DNS asociado a su dominio en OVHcloud par
 
 Conocer los distintos tipos de registros le permitirá entender mejor los cambios que debe realizar al editar la zona DNS del dominio. Le invitamos a consultar la siguiente lista. En ella se recogen los objetivos y particularidades de cada registro.
 
-#### Registros de punteo
+#### Registros de punteo <a name="pointer-records"></a>
 
 Seleccione el registro que desee haciendo clic en cada una de las fichas siguientes.
 
@@ -140,13 +140,13 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >> > Utilice el botón `Cambiar los registros NS de la zona DNS a los servidores DNS externos a OVHcloud en modo de texto`{.action}. Esta zona DNS funciona **únicamente** con servidores DNS de OVHcloud.
 >> >
 
-#### Registros de correo
+#### Registros de correo <a name="mail-records"></a>
 
 Seleccione el registro que desee haciendo clic en cada una de las fichas siguientes.
 
 > [!tabs]
 > **MX**
->> **M**ail e**X**changer <br><br>  Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.net* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](/pages/web_cloud/domains/dns_zone_mx).
+>> **M**ail e**X**changer <br><br>Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.net* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](/pages/web_cloud/domains/dns_zone_mx).
 >>
 >> > [!warning]
 >> >
@@ -164,7 +164,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
 >> Contribuye a la autenticación del correo en combinación con los métodos SPF y/o DKIM. Este valor le será dado por su proveedor de correo electrónico (si esta funcionalidad la ofrece este último), estará al menos asociado a un registro SPF o DKIM.
 
-#### Registros extendidos
+#### Registros extendidos <a name="extented-records"></a>
 
 Seleccione el registro que desee haciendo clic en cada una de las fichas siguientes.
 
@@ -189,9 +189,10 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >> Permite indicar las autoridades de certificación autorizadas a emitir certificados SSL para un dominio.
 >>
 >> > [!warning]
->> > 
+>> >
+>> > Si configura una entrada CAA para un dominio, esta configuración también se aplicará a **todos los subdominios** del mismo dominio.
+>> >
 >> > Si utiliza un certificado SSL Let's Encrypt con su dominio en un alojamiento compartido de OVHcloud y utiliza un registro CAA, este último impedirá la regeneración del certificado SSL Let's Encrypt.
->> > 
 >>
 > **NAPTR**
 >> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
@@ -199,7 +200,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >>
 > **LOC**
 >> **LOC**ation <br><br>
->>  Utilizado para indicar la posición geográfica (especialmente la latitud, la longitud y la altitud).
+>> Utilizado para indicar la posición geográfica (especialmente la latitud, la longitud y la altitud).
 >>
 > **SSHFP**
 >> **S**ecure **SH**ell **F**inger**P**rint <br><br>
@@ -261,27 +262,43 @@ Puede borrar varias entradas de una vez marcándolas desde la parte izquierda de
 
 #### Restaurar la zona DNS
 
-Restaurar la zona DNS le permite:
+Restaurar la zona DNS permite retornar a una configuración mínima, con las entradas de OVHcloud por defecto o las de sus servicios. También puede apuntar su dominio hacia servicios de alojamiento web y de correo personalizados .
 
-- volver a una configuración mínima con las entradas de OVHcloud por defecto.
-- volver a una zona DNS vacía (excepto los campos NS) para establecer una configuración manual posterior.
-
-En la pestaña `Zona DNS`{.action}, haga clic en `Restaurar mi zona DNS`{.action} y siga los pasos que se indican.
-
-![Zona DNS](images/reset-my-dns-zone.png){.thumbnail}
-
-Puede elegir entre:
-
-- `Sí, quiero restaurar la zona DNS con los registros mínimos`. Esta opción le permite dirigir su dominio y su servicio de correo hacia:
-    - cualquiera de sus servicios Web Cloud disponibles en el área de cliente de OVHcloud.
-    - el servicio de redirección de OVHcloud, disponible en la pestaña `Redirección`{.action} del dominio en las secciones `Dominios`{.action} y `Correo electrónico`{.action}.
-    - la función `Personalizada`. Introduzca el registro `A` y/o `MX` que desee.
-- `No, pero quiero restaurar la zona DNS`. Su zona DNS estará vacía, a excepción de los registros NS que se asociarán automáticamente a los servidores DNS de OVHcloud de su zona DNS.
-
-> [!primary]
+> [!alert]
 >
-> Antes de restaurar la zona DNS, asegúrese de que el dominio no está asociado a servicios en uso, como un sitio web o direcciones de correo.
+> Antes de reiniciar la zona DNS, asegúrese de que el dominio no está asociado a servicios que esté utilizando, como un sitio web o direcciones de correo electrónico.
 >
+
+En la pestaña `Zona DNS`{.action}, haga clic en `Restaurar mi zona DNS`{.action} y siga los dos pasos que se indican.
+
+![dnszone](images/reset-my-dns-zone.png){.thumbnail}
+
+**Etapa 1**
+
+Responda a la pregunta «¿Quiere activar los registros mínimos al restaurar la zona DNS? ». Establecer los registros mínimos en una zona DNS evita que una consulta al nombre de dominio provoque un error.
+
+- `Sí, quiero restaurar mi zona DNS con los registros mínimos`
+- `No, pero quiero restaurar mi zona DNS`
+
+**Etapa 2**
+
+Independientemente de cuál sea su elección en el etapa 1, es necesario definir una respuesta cuando se pregunta a su nombre de dominio para evitar una respuesta DNS en error.
+
+Seleccione ambas opciones haciendo clic en las fichas siguientes.
+
+> [!tabs]
+> **Dirección IP de su alojamiento**
+>> - `Redirection`: su dominio apuntará hacia el servidor de redirección de OVHcloud. Esto permite mostrar una página de inicio de OVHcloud y así evitar un error DNS.<br>
+>> - `Alojamiento web de OVHcloud`: Su dominio apuntará a la dirección IP del alojamiento web asociado al dominio.<br>
+>> - `Personalizado`: defina el valor IPv4 ([registro A](#pointer-records)) del alojamiento web que quiera apuntar.<br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
+> **Dirección de su servidor mail**
+>> - `Redirection`: su dominio apuntará a los servidores de redirecciones de correo. Esta elección. Es especialmente útil si no tiene ninguna solución de correo, pero desea reenviar los mensajes hacia una o varias direcciones de correo fuera de su nombre de dominio.<br>
+>> - `Servidor de correo de OVHcloud`: Por definir al contratar un servicio de correo en alojamiento compartido.<br>
+>> - `Personalizado`: defina la URL y la prioridad del servidor de correo electrónico ([registro MX](#mail-records)) que quiera apuntar.<br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
 
 ### El tiempo de propagación
 

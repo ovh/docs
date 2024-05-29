@@ -1,7 +1,7 @@
 ---
 title: 'Modificare una zona DNS di OVHcloud'
 excerpt: 'Come modificare una zona DNS OVHcloud dallo Spazio Cliente'
-updated: 2024-04-12
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -72,7 +72,7 @@ Visualizzi una tabella con tutti i record DNS associati al tuo dominio presso OV
 
 Essere a conoscenza delle diverse tipologie di record consente di modificare al meglio la zona DNS del dominio. Per maggiori informazioni, consulta la lista qui sotto. Essa riprende gli obiettivi e le specificità di ogni registrazione.
 
-#### Registrazioni di puntamento
+#### Registrazioni di puntamento <a name="pointer-records"></a>
 
 Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 
@@ -140,7 +140,7 @@ Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 >> >
 >>
 
-#### Record email
+#### Record email <a name="mail-records"></a>
 
 Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 
@@ -164,7 +164,7 @@ Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 > **DMARC**
 >> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br> Contribuisce all'autenticazione delle email in associazione con i metodi SPF e/o DKIM. Questo valore ti verrà dato dal tuo provider email (se questa funzionalità è proposta da quest'ultimo), sarà associato almeno a un record SPF o DKIM.
 
-#### Registrazioni estese
+#### Registrazioni estese <a name="extented-records"></a>
 
 Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 
@@ -187,8 +187,9 @@ Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 >>
 >> > [!warning]
 >> >
->> > Se utilizzi un certificato SSL Let's Encrypt su un hosting condiviso OVHcloud e utilizzi un record CAA, quest'ultimo impedirà la rigenerazione del certificato SSL Let's Encrypt.
+>> > Se configuri una voce CAA per un dominio, questa configurazione verrà applicata anche a **tutti i sottodomini** dello stesso dominio.
 >> >
+>> > Se utilizzi un certificato SSL Let's Encrypt con il tuo dominio su un hosting condiviso OVHcloud e utilizzi un record CAA, quest'ultimo impedirà la rigenerazione del certificato SSL Let's Encrypt.
 >>
 > **NAPTR**
 >> **N**ame **A**uthority **P**oin**T**e**R** <br><br> 
@@ -257,27 +258,43 @@ Per eliminare più record in una sola volta, seleziona la casella sinistra della
 
 #### Reinizializza la zona DNS
 
-Reinizializza la tua zona DNS ti permette di:
+La reinizializzazione della zona DNS permette di ripristinare una configurazione minima, con i record OVHcloud di default o quelli dei servizi. Inoltre è possibile puntare il dominio verso servizi di hosting Web e email personalizzati.
 
-- ritornare a una configurazione minima con i record OVHcloud di default.
-- ritornare a una zona DNS vuota (ad eccezione dei record NS) per definire una configurazione manuale successiva.
+> [!alert]
+>
+> Prima di reimpostare la zona DNS, assicurati che il dominio non sia associato a servizi in uso, come un sito Web o indirizzi email.
+>
 
-Nella scheda `Zona DNS`{.action}, clicca su `Reimposta la tua zona DNS`{.action} e segui gli step.
+Nella scheda `Zona DNS`{.action}, clicca su `Ripristina la tua zona DNS`{.action} e segui i 2 step.
 
 ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
-Puoi scegliere tra:
+**Step 1**
 
-- `Sì, voglio reinizializzare la mia zona DNS con il numero minimo` di record Questa opzione ti permette di reindirizzare il tuo dominio e il tuo servizio di posta verso:
-    - uno dei tuoi servizi Web Cloud disponibili nello Spazio Cliente OVHcloud.
-    - il servizio di reindirizzamento OVHcloud, accessibile dalla scheda `Reindirizzamento`{.action} del tuo dominio nelle sezioni `Domini`{.action} ed `Email`{.action}.
-    - la funzione `Personalizzata`. Inserisci il record `A` e/o `MX` che preferisci.
-- `No, ma voglio reinizializzare la mia zona DNS`. La tua zona DNS sarà vuota, ad eccezione dei record NS che saranno automaticamente associati ai server DNS OVHcloud della tua zona DNS.
+Rispondi alla domanda `Vuoi attivare il numero minimo di record durante la reinizializzazione della zona DNS?`. Definire i record minimi in una zona DNS permette di evitare che una richiesta verso il nome di dominio si concluda con un errore.
 
-> [!primary]
->
-> Prima di reinizializzare la tua zona DNS, assicurati che il tuo dominio non sia associato a servizi in fase di utilizzo, come siti Web o indirizzi email.
->
+- `Sì, voglio reinizializzare la mia zona DNS con il numero minimo di record`
+- `No, ma voglio reinizializzare la mia zona DNS`
+
+**Step 2**
+
+Indipendentemente dalla scelta effettuata allo step 1, è necessario definire una risposta quando si interroga il dominio per evitare una risposta DNS in errore.
+
+Selezionare entrambe le opzioni facendo clic sulle schede seguenti.
+
+> [!tabs]
+> **Indirizzo IP dell’hosting**
+>> - `Reindirizzamento`: il dominio punterà verso il server di reindirizzamento OVHcloud. In questo modo viene visualizzata una home page di OVHcloud e si evita un errore DNS.<br>
+>> - `Hosting Web OVHcloud`: il dominio punterà verso l’indirizzo IP dell’hosting Web associato al dominio <br>
+>> - `Personalizzato`: definisci il valore IPv4 ([record A](#pointer-records)) dell’hosting Web che vuoi puntare. <br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
+> **Indirizzo del tuo server mail**
+>> - `Reindirizzamento`: il tuo dominio punterà verso i server di reindirizzamento email. Questa scelta. È particolarmente utile se non disponi di offerte email ma vuoi inoltrare le email verso uno o più indirizzi email esterni al tuo dominio.
+>> - `Server Di Posta Elettronica OVHcloud`: da definire quando si possiede un servizio di posta elettronica condiviso.
+>> - `Personalizzato`: definisci l’URL e la priorità del server di posta ([record MX](#mail-records)) che desideri puntare.<br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
 
 ### Tempo di propagazione
 
