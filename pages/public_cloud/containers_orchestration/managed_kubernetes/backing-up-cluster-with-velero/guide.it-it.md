@@ -90,6 +90,8 @@ Complete and write down the configuration into `~/.aws/config`:
 endpoint = awscli_plugin_endpoint
 
 [profile default]
+aws_access_key_id=<access_key>
+aws_secret_access_key=<secret_key>
 # region = <public_cloud_region_without_digit>
 region = gra #for example
 s3 =
