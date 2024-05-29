@@ -14,7 +14,7 @@ Lorsque votre adresse e-mail est bloquée pour SPAM, cela signifie qu'une activi
 
 ## Prérequis
 
-- Disposer d'une [offre e-mail OVHcloud](/links/web/emails/).
+- Disposer d'une [offre e-mail OVHcloud](/links/web/emails).
 - Être connecté à [l'espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 ## En pratique <a name="instructions"></a>

@@ -12,7 +12,7 @@ Quando o seu endereço de e-mail é bloqueado por SPAM, isto significa que foi d
 
 ## Requisitos
 
-- Ter uma [solução de e-mail na OVHcloud](/links/web/emails/).
+- Ter uma [solução de e-mail na OVHcloud](/links/web/emails).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
 
 ## Instruções <a name="instructions"></a>
