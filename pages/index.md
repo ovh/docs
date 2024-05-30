@@ -109,6 +109,7 @@
             + [How to use the IPMI console with a dedicated server](bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers)
             + [Migrate data from one dedicated server to another](bare_metal_cloud/dedicated_servers/migrate_a_server_to_another)
             + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)
+            + [OVHcloud 3-AZ Region - Service presentation](bare_metal_cloud/dedicated_servers/3az-presentation)
         + [Security](bare-metal-cloud-dedicated-servers-security)
             + [Dedicated Servers service Security Specifications](account_and_service_management/account_information/security-specifications-dedicated-servers)
             + [Configuring the firewall on Linux with iptables](bare_metal_cloud/dedicated_servers/firewall-Linux-iptable)
