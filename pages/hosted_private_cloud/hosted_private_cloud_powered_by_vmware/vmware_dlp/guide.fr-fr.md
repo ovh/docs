@@ -34,7 +34,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 
 #### Kind
 
-La première chose dont vous avez besoin est de créer un ou plusieurs types de logs. Un Kind est un « type » de logs que votre produit génère. Cela dépend vraiment de votre logique commerciale. 
+La première chose dont vous avez besoin est de créer un ou plusieurs types de logs. Un Kind est un « type » de logs que votre produit génère. Cela dépend vraiment de votre logique établit.
 
 Pour un produit Hosted Private Cloud, il est possible d'imaginer 4 types de logs : 
 
@@ -43,15 +43,86 @@ Pour un produit Hosted Private Cloud, il est possible d'imaginer 4 types de logs
 3. Les logs Cron.
 4. Les logs Réseaux.
 
+##### NSX-T
+
+| Nom                 | Description          |
+|---------------------|----------------------|
+| auth.log            | Authorization log    |
+| controller          |  Controller log      |
+| controller-error    | Controller error log |
+| http.log            | HTTP service log     |
+| kern.log            | Kernel log           |
+| manager.log         | Manager service log  |
+| node-mgmt.log       | Node management log  |
+| nsx-audit-write.log | NSX audit write log  |
+| nsx-audit.l         | NSX audit log        |
+| syslog              | System log           | 
+
+##### ESXI
+
+Emplacements du fichier des journaux ESXi :
+
+| Component | 	Location | 	Purpose                                                                                                                                                                           |
+|-----------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Authentication | 	/var/log/auth.log | 	Contains all events related to authentication for the local system.                                                                                                               |
+| ESXi host agent log |	/var/log/hostd.log | 	Contains information about the agent that manages and configures the ESXi host and its virtual machines.                                                                          |
+| Shell log |	/var/log/shell.log | 	Contains a record of all commands typed into the ESXi Shell and shell events (for example, when the shell was enabled).                                                           |
+| System messages |	/var/log/syslog.log | 	Contains all general log messages and can be used for troubleshooting. This information was formerly located in the messages log file.                                            |
+| vCenter Server agent log |	/var/log/vpxa.log | 	Contains information about the agent that communicates with vCenter Server (if the host is managed by vCenter Server). -                                                          
+| Virtual machines |	The same directory as the affected virtual machine's configuration files, named vmware.log and vmware*.log. For example, /vmfs/volumes/datastore/virtual machine/vmware.log | 	Contains virtual machine power events, system failure information, tools status and activity, time sync, virtual hardware changes, vMotion migrations, machine clones, and so on. |
+| VMkernel |	/var/log/vmkernel.log | 	Records activities related to virtual machines and ESXi.                                                                                                                          |
+| VMkernel summary |	/var/log/vmksummary.log | 	Used to determine uptime and availability statistics for ESXi (comma separated).                                                                                                  |
+| VMkernel warnings |	/var/log/vmkwarning.log | 	Records activities related to virtual machines.                                                                                                                                   | 
+| Quick Boot |	/var/log/loadESX.log | 	Contains all events related to restarting an ESXi host through Quick Boot.                                                                                                        |
+| Trusted infrastructure agent | /var/run/log/kmxa.log | 	Records activities related to the Client Service on the ESXi Trusted Host.                                                                                                        |
+| Key Provider Service |	/var/run/log/kmxd.log | 	Records activities related to the vSphere Trust Authority Key Provider Service.                                                                                                   | 
+| Attestation Service |	/var/run/log/attestd.log | 	Records activities related to the vSphere Trust Authority Attestation Service.                                                                                                    |
+| ESX Token Service |	/var/run/log/esxtokend.log | 	Records activities related to the vSphere Trust Authority ESX Token Service.                                                                                                      |
+| ESX API Forwarder |	/var/run/log/esxapiadapter.log | 	Records activities related to the vSphere Trust Authority API forwarder.                                                                                                          |
+
+##### vCenter (VCSA)
+
+Répertoires communs des journaux :
+
+| Log | Directory                                                                          | 	Description |
+|-----|------------------------------------------------------------------------------------|--------------|
+|../firstboot | 	Stores first boot logs                                                            |
+| applmgmt | and applmgmt-audit 	Stores logs related to the VMware Appliance Management Service |
+| cloudvm | 	Stores logs for allotment and distribution of resources between services          |
+| rhttpproxy | 	Stores logs for the VMware HTTP Reverse Proxy service                             |
+| sca | 	Stores logs for the VMware Service Control Agent service                          |
+| vapi | 	Stores logs for the VMware vAPI Endpoint service                                  |
+| vmafdd | 	Stores logs for the VMware Authentication Framework - LDAP service |              
+| vmdird | 	Stores logs for the VMware Directory Service - LDAP service         |              
+| vmon | 	Stores logs for the VMware Service Lifecycle Manager service                      
+
+##### Journaux du noeud de Management
+
+Journaux du répertoire :
+
+| Directory | Service                                   |
+|--|-------------------------------------------|
+| rbd | 	VMware vSphere Auto Deploy               |
+| content-library | 	VMware Content Library Service           |
+| eam | 	VMware ESX Agent Manager                 |
+| netdumper | 	VMware vSphere ESXi Dump Collector       |
+| perfcharts | 	VMware Performance Charts Service        |
+| vmcam 	VMware vSphere Authentication Proxy |
+| vmdird 	VMware Directory Service - LDAP |
+| vmware-sps 	VMware vSphere Profile-Driven Storage Service |
+| vpxd 	VMware vCenter Server |
+| vpostgres 	VMware Postgres service |
+| vcha | 	VMware vCenter High Availability service |
+
 Sachez qu'il est tout à fait acceptable qu'un produit ne possède qu'une seule catégorie. 
 
 Voici des exemples de labels "kind" représenté par défaut dans Hosted Private Cloud VMware on OVHcloud :
 
-- **esxi** : Référence de votre hôte ESX, peut filtré par application (journaux système : )
-- **nsxtEdge** : Référence de votre Edge, tout est redirigé (journaux réseaux).
+- **esxi** : Référence de votre hôte ESX, peut filtré par application (journaux système : auth, kernel, cron)
+- **nsxtEdge** : Référence de votre Edge, tout est redirigé (journaux system + réseaux : , auth, kernel, cron, ip, location, zone, etc..).
 - **vcsa** : Référence de cluster vCenter, filtré par application (journaux clustering : en relation avec vCenter et vos hôtes ESX).
-- **nsxt** : Référence NSX-T, tout est redirigé (journaux réseaux)
-- **nsxtManager** : Référence du manager NSX-T, tout est redirigé (journaux réseaux)
+- **nsxt** : Référence NSX-T, tout est redirigé (journaux system + réseaux : , auth, kernel, cron, ip, location, zone, etc..)
+- **nsxtManager** : Référence du manager NSX-T, tout est redirigé (journaux system + réseaux : , auth, kernel, cron, ip, location, zone, etc..)
 
 Il est le type de journal que vous voulez transférer à votre stream LDP. Notez que la seule valeur actuellement prise en charge aujourd'hui pour Hosted Private Cloud est "esxi".
 
@@ -71,43 +142,16 @@ Nous mettons toutes les métadonnées pour l'identification de Hosted Private Cl
 
 Logs Data Platform est une interface de collecte, d'indexation et d'analyse de logs. Quelque soit la provenance de vos logs, la plateforme vous permet de choisir différents points d'entrée en fonction du protocole, du niveau de sécurité et du format. L'analyse et l'exploitation des données peuvent se faire grâce à différentes API et interfaces web.
 
-### Etape 1 - Activer l'Audit Log Forwarding avec Hosted Private Cloud
+### Etape 1 - Audit Log Forwarding avec Hosted Private Cloud
 
 > [!warning]
 > Les ressources PCC et LDP doivent appartenir au même compte OVHcloud. Si ce n'est pas le cas, vous aurez ce message d'erreur : 
 > {
 > "message": "Client::ValidationError::SubscriptionDestinationClusterIsInternal ; {\"cluster_name\":\"XXX.logs.ovh.com\"} ; Subscription can't target non-public cluster 'XXXX.logs.ovh.com'"
 > }
-> 
-
-### Création de l'abonnement LDP pour votre Hosted Private Cloud
-
-#### Via le control panel OVHcloud :
-
-Cette fonctionnalité n'est pas encore disponible dans l'espace client.
-
-#### Via l’API OVHcloud :
-
-> [!api]
-> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
 
-> **Paramètres:**
->
-> "kind": "esxi".
-> "streamId": "ffb8d894-c491-433e-9c87-50a8bf6fe665".
-
-Exemple :
-```shell
-POST /dedicatedCloud/{serviceName}/log/subscription
-{
-  "kind": "string", // La seul valeur supporté actuellement est : 'esxi'.
-  "streamId": "ca06a2f5-55a9-4434-a1fb-130809312dca" // Le feed ID de votre stream LDP.
-}
-```
-La requête GET à une charge utile qui permet de lister vos souscriptions.
-
-### Créer une redirection de logs vers votre syslog
+### Activation du Log Forwarder avec Hosted Private Cloud 
 
 #### Via le control panel OVHcloud :
 
@@ -130,12 +174,68 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > logLevel : Le niveau de log minimum (LogLevelEnum).
 > servicePort : Port distant (Syslog : 514, Syslog Manager : 6514).
 > sourceType : Le type de source (nsxtEdge).
-> sslThumbprint : L'empreinte de votre gateway SSL.
+> sslThumbprint : L'empreinte de votre Gateway SSL.
 >
 
-La requête GET à une charge utile qui permet de lister les forwarder activés.
+Retour:
+```Shell
+{
+  "createdBy": "string",
+  "createdFrom": "string",
+  "datacenterId": 0,
+  "description": "string",
+  "endDate": "2024-05-30T09:02:03.867Z",
+  "executionDate": "2024-05-30T09:02:03.867Z",
+  "filerId": 0,
+  "hostId": 0,
+  "lastModificationDate": "2024-05-30T09:02:03.867Z",
+  "maintenanceDateFrom": "2024-05-30T09:02:03.867Z",
+  "maintenanceDateTo": "2024-05-30T09:02:03.867Z",
+  "name": "string",
+  "network": "string",
+  "networkAccessId": 0,
+  "orderId": 0,
+  "parentTaskId": 0,
+  "progress": 0,
+  "state": "canceled",
+  "taskId": 0,
+  "type": "string",
+  "userId": 0,
+  "vlanId": 0
+}
+```
 
-### Obtenir l'option de transfert vers syslog
+La requête GET permet de lister les forwarder activés.
+
+### Création de l'abonnement LDP pour votre Hosted Private Cloud
+
+#### Via le control panel OVHcloud :
+
+Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+
+#### Via l’API OVHcloud :
+
+> [!api]
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
+>
+
+> **Paramètres:**
+>
+> "kind": "esxi".
+> "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773".
+
+Exemple :
+```shell
+POST /dedicatedCloud/{serviceName}/log/subscription
+{
+  "kind": "string", // Le label VMware, la seul valeur supporté actuellement est : 'esxi'.
+  "streamId": "vf06a2f5-55a9-4434-a1fb-130809312dvf" // L'identifiant du flux (stream) LDP.
+}
+```
+La requête GET à une charge utile qui permet de lister vos souscriptions.
+
+
+### Verification si le forwarder Syslog est activé
 
 #### Via le control panel OVHcloud :
 
@@ -153,7 +253,17 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
 >
 
-### Lister tous les syslog forwarders
+Retour :
+```shell
+{
+  "state": "disabled/Enabled"
+}
+```
+
+Si vous avez réussi l'appel API `POST /dedicatedCloud/{serviceName}/syslogForward/forwarder`{.action}, vous devez avoir l'option Activé.
+
+
+### Lister les Syslog Forwarder
 
 #### Via le control panel OVHcloud :
 
@@ -170,7 +280,7 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
 >
 
-### Mettre à jour les log forwarders
+### Mise à jour du Log Forwarder
 
 #### Via le control panel OVHcloud :
 
@@ -185,9 +295,9 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > **Paramètres:**
 >
 > serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
-> logForwardId : 
+> logForwardId : Identifiant du log forwarder.
 
-### Manager vos stream dans Hosted Private Cloud
+### Manager vos flux (stream) LDP avec Hosted Private Cloud
 
 #### Via l’API OVHcloud
 
@@ -213,7 +323,6 @@ Avoir les details des stream :
 >
 > serviceName : La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
 > streamId : L'identifiant de votre stream LDP.
-
 
 Vous obtiendrez en réponse un `operationId`{.action} :
 
@@ -278,11 +387,14 @@ GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 }
 ```
 
-### Étape 2 - Récupération du Stream (et l'ID) cible
+### Étape 2 - Récupération du Stream (ID) cible LDP
+
+> [!warning]
+> Vous devez avoir préalablement créer un stream LDP.
 
 #### Via le control panel OVHcloud :
 
-Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+Vous pouvez suivre le guide suivant pour récupérer le stream ID depuis le control panel OVHcloud : [](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 #### Via l’API OVHcloud :
 
@@ -293,12 +405,11 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
 > @api {v1} /dedicatedCloud/{serviceName}/logs GET /dedicatedCloud/{serviceName}/log/subscription
 >
  
-> **Paramètres:**
+> Paramètres:
 >
 > serviceName: La reference de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
 
-
-### Etape 3 - Obtenez les détails d'un flux de données
+### Étape 3 - Obtenez les détails d'un flux de données PCC
 
 #### Via le control panel OVHcloud :
 
@@ -311,12 +422,12 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > @api {v1} /dedicatedCloud/{serviceName}/logs GET /dedicatedCloud/{serviceName}/output/graylog/stream/{streamId}
 >
  
-> > **Paramètres:**
+> Paramètres:
 >
-> streamId : La référence d'identification de votre stream LDP : ***caX6a2f5-XXa9-4434-a1xx-XX0809312dca***.
-> serviceName : La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
+> streamId: La référence d'identification de votre stream LDP : ***caX6a2f5-XXa9-4434-a1xx-XX0809312dca***.
+> serviceName: La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
 
-### Etape 4 - Accéder à l'interface Graylog
+### Étape 3 - Accéder à l'interface Graylog
 
 Utiliser les identifiants de votre compte LDP, lorsque que vous vous connectez la première fois définissez un mot de passe. 
 
@@ -326,11 +437,11 @@ Le login correspond au nom d'utilisateur Logs Data Plateform et non celui de vot
 
 ![GRAYLOG](images/graylog_login.png)
 
-Vous retrouvez plusieurs liens de connexions qui vous redirige sur le bon lien Graylog dans le compte de votre espace LDP.
+Vous retrouvez plusieurs liens de connexions qui vous redirigent sur le bon lien Graylog dans le compte de votre espace LDP.
 
 ![GRAYLOG](images/graylog_login_2.png)
 
-### Etape 5 - Gestion de l'abonnement Logs Data Plateform
+### Étape 4 - Gestion de l'abonnement Logs Data Plateform
 
 À tout moment, vous pouvez récupérer les abonnements attachés à votre flux Logs Data Platform et choisir de désactiver la redirection en annulant votre abonnement sur votre flux, de sorte que votre flux Logs Data Platform ne reçoive plus vos journaux d'audit.
 
@@ -343,19 +454,22 @@ Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 >
 
-> **Paramètres:**
+> Paramètres:
 >
-> subscriptionId : La référence de souscription pour votre compte LDP.
-> serviceName : La référence de vôtre PCC : ***pcc-XXX-XXX-XXX-XXX***.
+> subscriptionId: La référence de souscription pour votre compte LDP.
+> serviceName: La référence de votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
+
+Pour aller plus loins dans la gestion de votre abonnement, vous pouvez suivre le guide : ["Démarrage rapide Logs Data Plateform"](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
 ## Aller plus loin
 
 Vous pouvez suivre ces guides qui vous explique comment configurer votre PCC pour faire suivre les logs dans LDP :
-- [Logs Data Platform - Premiers pas](https://help.ovhcloud.com/csm/fr-documentation-observability-logs-data-platform-getting-started?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=e3eec38c1977a5d0476b930e789695d0&spa=1)
-- [Pousser des logs avec un forwarder Syslog-ng (Linux)](https://help.ovhcloud.com/csm/fr-logs-data-platform-how-to-log-your-linux?id=kb_article_view&sysparm_article=KB0037664)
-- [Pousser des logs avec un forwarder NXlog (Windows)](https://help.ovhcloud.com/csm/fr-logs-data-platform-windows-nxlog?id=kb_article_view&sysparm_article=KB0037694)
-- [Génération des logs des comptes OVHcloud avec Logs Data Platform](https://help.ovhcloud.com/csm/fr-iam-logs-forwarding?id=kb_article_view&sysparm_article=KB0060437)
-- [Pousser les logs depuis Apache vers LDP](https://help.ovhcloud.com/csm/fr-logs-data-platform-apache-logs?id=kb_article_view&sysparm_article=KB0050046)
+- [Logs Data Platform - Premiers pas.](https://help.ovhcloud.com/csm/fr-documentation-observability-logs-data-platform-getting-started?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=e3eec38c1977a5d0476b930e789695d0&spa=1){.external}
+- [Visualiser vos logs dans un tableau de bord Grafana](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana).
+- [Utiliser la Cli LDP Tail pour regarder en live vos logs Hosted Private Cloud](/pages/manage_and_operate/observability/logs_data_platform/cli_ldp_tail).
+- [Génération des logs des comptes OVHcloud avec Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding).
+- [Pousser les logs depuis Apache vers LDP](/pages/manage_and_operate/observability/logs_data_platform/ingestion_apache).
+- [Modèle de résponsabilité "RACI"](/pages/manage_and_operate/observability/logs_data_platform/getting_started_responsibility_model).
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
