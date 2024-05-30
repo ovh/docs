@@ -1,7 +1,7 @@
 ---
 title: Deploying a Public Cloud Load Balancer
 excerpt: Find out how to configure the Public Cloud Load Balancer
-updated: 2024-01-10
+updated: 2024-05-30
 ---
 
 ## Objective
@@ -69,7 +69,8 @@ openstack loadbalancer create --name loadbalancer_private_to_private --vip-subne
 +---------------------+--------------------------------------+
 ```
 
-> [!warning] **Load Balancer Flavors**
+> [!warning]
+> **Load Balancer Flavors**
 > 
 > If you do not provide the parameter `--flavor` during the creation, the Load Balancer will be of a small size.
 > 
@@ -77,7 +78,7 @@ openstack loadbalancer create --name loadbalancer_private_to_private --vip-subne
 Use the following command to display the flavors in OpenStack:
 
 ```bash
-❯ openstack loadbalancer flavor list
+openstack loadbalancer flavor list
 +--------------------------------------+--------+--------------------------------------+---------+
 | id                                   | name   | flavor_profile_id                    | enabled |
 +--------------------------------------+--------+--------------------------------------+---------+
@@ -87,7 +88,8 @@ Use the following command to display the flavors in OpenStack:
 +--------------------------------------+--------+--------------------------------------+---------+
 ```
 
-> [!warning] **Status**
+> [!warning]
+> **Status**
 >
 > The Load Balancer creation will take some time, mainly to create the instance and to configure the network.
 >
@@ -142,9 +144,9 @@ openstack loadbalancer listener create --protocol-port 80 --protocol HTTP --name
 ```
 
 **Step 3: Create the pool**
- 
+
 ```bash 
-❯ openstack loadbalancer pool create --name pool --lb-algorithm ROUND_ROBIN --listener <listener_id> --protocol HTTP
+openstack loadbalancer pool create --name pool --lb-algorithm ROUND_ROBIN --listener <listener_id> --protocol HTTP
 +----------------------+--------------------------------------+
 | Field                | Value                                |
 +----------------------+--------------------------------------+
@@ -175,10 +177,10 @@ openstack loadbalancer listener create --protocol-port 80 --protocol HTTP --name
 +----------------------+--------------------------------------+
 ```
 
-**4. Add the servers**
- 
+**Step 4. Add the servers**
+
 ```bash
-❯ openstack loadbalancer member create --subnet-id <private_subnet_id> --address <server_ip_address>  --protocol-port 80 <pool_id>
+openstack loadbalancer member create --subnet-id <private_subnet_id> --address <server_ip_address>  --protocol-port 80 <pool_id>
 +---------------------+--------------------------------------+
 | Field               | Value                                |
 +---------------------+--------------------------------------+
@@ -201,7 +203,7 @@ openstack loadbalancer listener create --protocol-port 80 --protocol HTTP --name
 +---------------------+--------------------------------------+
 ```
 
-**5. Use your Load Balancer**
+**Step 5. Use your Load Balancer**
 
 ```bash
 root@bastion:~# curl http://10.0.3.50/backend.txt
@@ -218,18 +220,18 @@ We will need to create a Floating IP address on the public network (Ext-Net), an
 
 In order to use a Floating IP, we will need to create an L3 router and configure an external Gateway on it.
 
-#### What is the role of a Floating IP?
-
-Floating IP addresses are used in the OpenStack universe to expose resources (Neutron port) to the Internet. You can associate a Floating IP to a private network port **only**.
-
-You can expose two types of resources:
-
-- An instance with a private port
-- An Load Balancer Virtual IP address (VIP)
-
-Floating IP currently does not support IPv6.
-
-You can read more about it on our dedicated [Concepts page](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
+> **What is the role of a Floating IP?**
+>
+> Floating IP addresses are used in the OpenStack universe to expose resources (Neutron port) to the Internet. You can associate a Floating IP to a private network port **only**.
+>
+> You can expose two types of resources:
+>
+> - An instance with a private port
+> - An Load Balancer Virtual IP address (VIP)
+>
+> Floating IP currently does not support IPv6.
+>
+> You can read more about it on our dedicated [Concepts page](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
 
 **Step 1: Create the router**
 
@@ -249,7 +251,7 @@ openstack router set --external-gateway Ext-Net <router_name>
 openstack router add subnet <router_id> <subnet_id>
 ```
 
-Now we can create a Floating IP on the public network: Ext-Net
+**Step 4: Now we can create a Floating IP on the public network: Ext-Net**
 
 ```bash
 openstack floating ip create Ext-Net
@@ -278,13 +280,13 @@ openstack floating ip create Ext-Net
 +---------------------+--------------------------------------+
 ```
 
-Associate its ID to the Load Balancer's VIP address:
+**Step 5: Associate its ID to the Load Balancer's VIP address**
 
 ```bash
 openstack floating ip set --port <load_balancer_vip_port_id> <floating_ip_id>
 ```
 
-**Using your Load Balancer with its public IP**
+**Step 6: Using your Load Balancer with its public IP**
 
 ```bash
 ❯ curl http://169.254.10.250/backend.txt
