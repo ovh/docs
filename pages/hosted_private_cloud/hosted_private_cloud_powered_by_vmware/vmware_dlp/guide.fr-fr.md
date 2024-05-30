@@ -66,61 +66,61 @@ Pour un produit Hosted Private Cloud, il est possible d'imaginer 4 types de logs
 
 Emplacements du fichier des journaux ESXi :
 
-| Component | 	Location | 	Purpose                                                                                                                                                                           |
-|-----------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authentication | 	/var/log/auth.log | 	Contains all events related to authentication for the local system.                                                                                                               |
-| ESXi host agent log |	/var/log/hostd.log | 	Contains information about the agent that manages and configures the ESXi host and its virtual machines.                                                                          |
-| Shell log |	/var/log/shell.log | 	Contains a record of all commands typed into the ESXi Shell and shell events (for example, when the shell was enabled).                                                           |
-| System messages |	/var/log/syslog.log | 	Contains all general log messages and can be used for troubleshooting. This information was formerly located in the messages log file.                                            |
-| vCenter Server agent log |	/var/log/vpxa.log | 	Contains information about the agent that communicates with vCenter Server (if the host is managed by vCenter Server). -                                                          
-| Virtual machines |	The same directory as the affected virtual machine's configuration files, named vmware.log and vmware*.log. For example, /vmfs/volumes/datastore/virtual machine/vmware.log | 	Contains virtual machine power events, system failure information, tools status and activity, time sync, virtual hardware changes, vMotion migrations, machine clones, and so on. |
-| VMkernel |	/var/log/vmkernel.log | 	Records activities related to virtual machines and ESXi.                                                                                                                          |
-| VMkernel summary |	/var/log/vmksummary.log | 	Used to determine uptime and availability statistics for ESXi (comma separated).                                                                                                  |
-| VMkernel warnings |	/var/log/vmkwarning.log | 	Records activities related to virtual machines.                                                                                                                                   | 
-| Quick Boot |	/var/log/loadESX.log | 	Contains all events related to restarting an ESXi host through Quick Boot.                                                                                                        |
-| Trusted infrastructure agent | /var/run/log/kmxa.log | 	Records activities related to the Client Service on the ESXi Trusted Host.                                                                                                        |
-| Key Provider Service |	/var/run/log/kmxd.log | 	Records activities related to the vSphere Trust Authority Key Provider Service.                                                                                                   | 
-| Attestation Service |	/var/run/log/attestd.log | 	Records activities related to the vSphere Trust Authority Attestation Service.                                                                                                    |
-| ESX Token Service |	/var/run/log/esxtokend.log | 	Records activities related to the vSphere Trust Authority ESX Token Service.                                                                                                      |
-| ESX API Forwarder |	/var/run/log/esxapiadapter.log | 	Records activities related to the vSphere Trust Authority API forwarder.                                                                                                          |
+| Composant                    | 	Endroit                                                                                                                                                                     | 	Objectif                                                                                                                                                             |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Authentication               | 	/var/log/auth.log                                                                                                                                                           | 	Contient tous les événements liés à l'authentification pour le système local.                                                                                        |
+| ESXi host agent log          | 	/var/log/hostd.log                                                                                                                                                          | 	Contient des informations sur l'agent qui gère et configure l'hôte ESXi et ses machines virtuelles.                                                                  |
+| Shell log                    | 	/var/log/shell.log                                                                                                                                                          | 	Contient un enregistrement de toutes les commandes tapées dans l'environnement ESXi et les événements d'environnement (par exemple, lorsque l'environnement a été activé). |
+| System messages              | 	/var/log/syslog.log                                                                                                                                                         | 	Contient tous les messages généraux du journal et peut être utilisé pour le dépannage. Ces informations se trouvaient auparavant dans le fichier journal des messages. |
+| vCenter Server agent log     | 	/var/log/vpxa.log                                                                                                                                                           | 	Contient des informations sur l'agent qui communique avec vCenter Server (si l'hôte est géré par vCenter Server).                                                  |                                                     
+| Virtual machines             | 	The same directory as the affected virtual machine's configuration files, named vmware.log and vmware*.log. For example, /vmfs/volumes/datastore/virtual machine/vmware.log | 	Contient les événements d'alimentation des machines virtuelles, les informations sur les pannes système, l'état et l'activité des outils, la synchronisation de l'heure, les modifications du matériel virtuel, les migrations vMotion, les clones de machines, etc. |
+| VMkernel                     | 	/var/log/vmkernel.log                                                                                                                                                       | 	Enregistre les activités liées aux machines virtuelles et à ESXi.                                                                                                            |
+| VMkernel summary             | 	/var/log/vmksummary.log                                                                                                                                                     | 	Permet de déterminer les statistiques de disponibilité et de temps de fonctionnement pour ESXi (séparées par des virgules).                                                                                  |
+| VMkernel warnings            | 	/var/log/vmkwarning.log                                                                                                                                                     | 	Enregistre les activités liées aux machines virtuelles.                                                                                                                      | 
+| Quick Boot                   | 	/var/log/loadESX.log                                                                                                                                                        | 	Contient tous les événements liés au redémarrage d'un hôte ESXi via le démarrage rapide.                                                                                        |
+| Trusted infrastructure agent | /var/run/log/kmxa.log                                                                                                                                                        | 	Enregistre les activités liées au service client sur l'hôte de confiance ESXi.                                                                                           |
+| Key Provider Service         | 	/var/run/log/kmxd.log                                                                                                                                                       | 	Enregistre les activités liées au service de fournisseur de clés vSphere Trust Authority.                                                                                      | 
+| Attestation Service          | 	/var/run/log/attestd.log                                                                                                                                                    | 	Enregistre les activités liées au service d'attestation d'autorité de confiance vSphere.                                                                                       |
+| ESX Token Service            | 	/var/run/log/esxtokend.log                                                                                                                                                  | 	Enregistre les activités liées au service de jeton ESX de l'autorité d'approbation vSphere.                                                                                      |
+| ESX API Forwarder            | 	/var/run/log/esxapiadapter.log                                                                                                                                              | 	Enregistre les activités liées au redirecteur API vSphere Trust Authority.                                                                                             |
 
 ##### vCenter (VCSA)
 
 Répertoires communs des journaux :
 
-| Log | Directory                                                                          | 	Description |
-|-----|------------------------------------------------------------------------------------|--------------|
-|../firstboot | 	Stores first boot logs                                                            |
-| applmgmt | and applmgmt-audit 	Stores logs related to the VMware Appliance Management Service |
-| cloudvm | 	Stores logs for allotment and distribution of resources between services          |
-| rhttpproxy | 	Stores logs for the VMware HTTP Reverse Proxy service                             |
-| sca | 	Stores logs for the VMware Service Control Agent service                          |
-| vapi | 	Stores logs for the VMware vAPI Endpoint service                                  |
-| vmafdd | 	Stores logs for the VMware Authentication Framework - LDAP service |              
-| vmdird | 	Stores logs for the VMware Directory Service - LDAP service         |              
-| vmon | 	Stores logs for the VMware Service Lifecycle Manager service                      
+| Répertoire | 	Description                                                                         |
+|------------------------|--------------------------------------------------------------------------------------|
+| ../firstboot           | Stocke les premiers journaux de démarrage.                                           |
+| applmgmt and applmgmt-audit | Stocke les journaux liés au service de gestion des appliances VMware.                |
+| cloudvm                | 	Stocke les logs pour l'allocation et la distribution des ressources entre les services. |
+| rhttpproxy             | 	      Stocke les logs du service VMware HTTP Reverse Proxy.                         |
+| sca                    | 	Stocke les journaux du service VMware Service Control Agent.                        |
+| vapi                   | Stocke les logs du service VMware vAPI Endpoint.                                     |
+| vmafdd                 | Stocke les journaux pour le service VMware Authentication Framework - LDAP.          |              
+| vmdird                 | 	Stocke les journaux du service d'annuaire VMware - service LDAP.                      |              
+| vmon                   | Stocke les logs du service VMware Service Lifecycle Manager.                         
 
 ##### Journaux du noeud de Management
 
 Journaux du répertoire :
 
-| Directory | Service                                   |
-|--|-------------------------------------------|
-| rbd | 	VMware vSphere Auto Deploy               |
-| content-library | 	VMware Content Library Service           |
-| eam | 	VMware ESX Agent Manager                 |
-| netdumper | 	VMware vSphere ESXi Dump Collector       |
-| perfcharts | 	VMware Performance Charts Service        |
-| vmcam 	VMware vSphere Authentication Proxy |
-| vmdird 	VMware Directory Service - LDAP |
-| vmware-sps 	VMware vSphere Profile-Driven Storage Service |
-| vpxd 	VMware vCenter Server |
-| vpostgres 	VMware Postgres service |
-| vcha | 	VMware vCenter High Availability service |
+| Log Directory   | Service                                        |
+|-----------------|------------------------------------------------|
+| rbd             | 	VMware vSphere Auto Deploy                    |
+| content-library | 	VMware Content Library Service                |
+| eam             | 	VMware ESX Agent Manager                      |
+| netdumper       | 	VMware vSphere ESXi Dump Collector            |
+| perfcharts      | 	VMware Performance Charts Service             |
+| vmcam           | 	VMware vSphere Authentication Proxy           |
+| vmdird          | 	VMware Directory Service - LDAP               |
+| vmware-sps      | 	VMware vSphere Profile-Driven Storage Service |
+| vpxd            | 	VMware vCenter Server                         |
+| vpostgres       | 	VMware Postgres service                       |
+| vcha            | 	VMware vCenter High Availability service      |
 
 Sachez qu'il est tout à fait acceptable qu'un produit ne possède qu'une seule catégorie. 
 
-Voici des exemples de labels "kind" représenté par défaut dans Hosted Private Cloud VMware on OVHcloud :
+Voici des exemples de labels "kind" représenté dans Hosted Private Cloud VMware on OVHcloud par Log Data Plateform :
 
 - **esxi** : Référence de votre hôte ESX, peut filtré par application (journaux système : auth, kernel, cron)
 - **nsxtEdge** : Référence de votre Edge, tout est redirigé (journaux system + réseaux : , auth, kernel, cron, ip, location, zone, etc..).
@@ -134,11 +134,10 @@ D'autres références seront disponible dans les versions futures.
 
 Pour pouvoir consommer des logs, votre infrastructure PCC doit avoir l'option de sécurité **syslogForwarder** activée. 
 
-Tous les journaux VMware sont collectés et envoyés aux clusters Logs Data Plateform. 
+- Tous les journaux VMware sont collectés et envoyés aux clusters Logs Data Plateform. 
+- Tous les journaux des appliances VMware sont traités par les "Forwarder" Syslog et marqués par le filtre (Logstash) au niveau du cluster Log Data Plateform.
 
-Tous les journaux de l'appliance VMware sont traités par les "Forwarder" Syslog et marqués pour le filtre au niveau du cluster LDP.
-
-Nous mettons toutes les métadonnées pour l'identification de Hosted Private Cloud.
+Nous mettons toutes les métadonnées pour l'identification de Hosted Private Cloud VMware on OVHcloud.
 
 ## En pratique
 > [!primary]
