@@ -47,8 +47,8 @@ Dans l'étape « Google Identity Provider details », téléchargez le fichier d
 
 Dans l'étape « Service provider details », complétez les champs `ACS URL` et `Entity ID` avec les valeurs de votre région : 
 
- - Region EU : **ACS URL** : `https://www.ovhcloud.com/eu/auth/saml/acs` et **Entity ID** : `https://www.ovhcloud.com/eu/auth/`
- - Region CA : **ACS URL** : `https://www.ovhcloud.com/ca/auth/saml/acs` et **Entity ID** : `https://www.ovhcloud.com/ca/auth/`
+- Region EU : **ACS URL** : `https://www.ovhcloud.com/eu/auth/saml/acs` et **Entity ID** : `https://www.ovhcloud.com/eu/auth/`
+- Region CA : **ACS URL** : `https://www.ovhcloud.com/ca/auth/saml/acs` et **Entity ID** : `https://www.ovhcloud.com/ca/auth/`
 
 Cliquez sur `Continue`{.action}.
 
@@ -56,9 +56,9 @@ Cliquez sur `Continue`{.action}.
 
 Dans l'étape « Attribute mapping », ajoutez le mapping suivant :
 
- - **First Name** : Name
- - **Last Name** : Surname
- - **Primary email** : E-Mail Address
+- **First Name** : Name
+- **Last Name** : Surname
+- **Primary email** : E-Mail Address
 
 Cliquez sur `Finish`{.action}.
 
@@ -147,8 +147,8 @@ Vous devez ensuite attribuer des **rôles** à ces groupes d'utilisateurs chez O
 
 Depuis votre espace client OVHcloud, ajoutez un groupe en cliquant sur le bouton `Déclarer un groupe`{.action} et en remplissant les champs :
 
- - **Nom de groupe** : nom du groupe au sein de Google Workspace
- - **Privilège** : niveau de droit accordé à ce groupe
+- **Nom de groupe** : nom du groupe au sein de Google Workspace
+- **Privilège** : niveau de droit accordé à ce groupe
 
 ![Groupes de gestion des utilisateurs Google Workspace](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 
