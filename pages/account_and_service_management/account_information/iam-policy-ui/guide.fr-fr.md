@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les politiques IAM depuis votre espace client
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs depuis un compte OVHcloud"
-updated: 2024-02-19
+updated: 2024-06-03
 ---
 
 ## Objectif

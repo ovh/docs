@@ -1,7 +1,7 @@
 ---
 title: Attiva le connessioni Active Directory Federation Services (AD FS) SSO con il tuo account OVHcloud
 excerpt: "Scopri come associare il tuo servizio Active Directory Federation Services (AD FS) al tuo account OVHcloud tramite SAML 2.0"
-updated: 2024-03-05
+updated: 2024-06-03
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Lokale Benutzer auf einem OVHcloud Kunden-Account erstellen und verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Benutzer über Ihren OVHcloud Kunden-Account verwalten"
-updated: 2024-03-05
+updated: 2024-06-03
 ---
 
 > [!primary]

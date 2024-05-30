@@ -1,7 +1,7 @@
 ---
 title: "Włącz połączenia Okta SSO z Twoim kontem OVHcloud"
 excerpt: "Dowiedz się, jak powiązać usługę Okta z kontem OVHcloud przy użyciu SAML 2.0"
-updated: 2024-03-05
+updated: 2024-06-03
 ---
 
 ## Wprowadzenie
