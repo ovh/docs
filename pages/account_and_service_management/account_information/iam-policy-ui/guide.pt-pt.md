@@ -153,7 +153,7 @@ Isto permitir-lhe-á adicionar e eliminar utilizadores ou grupos aos quais a pol
 
 ### Gestão das identidades
 
-As identidades disponíveis para as políticas são geridas através do separador `Identitaded`{.action}.
+As identidades disponíveis para as políticas são geridas através do separador `Identitades`{.action}.
 
 Encontre os detalhes da gestão dos utilizadores na [documentação dedicada](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
