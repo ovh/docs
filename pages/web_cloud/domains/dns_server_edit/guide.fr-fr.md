@@ -10,7 +10,7 @@ updated: 2024-05-30
 
 Le sigle **DNS** (**D**omain **N**ame **S**ystem), est un ensemble d'éléments (serveurs DNS, zones DNS, etc.) permettant de faire correspondre un nom de domaine avec une adresse IP.
 
-Si besoin, consultez notre guide « [Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_edit) » pour plus d'informations.
+Si besoin, consultez notre guide « [Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_general_information) » pour plus d'informations.
 
 **Découvrez comment modifier les serveurs DNS pour votre nom de domaine OVHcloud.**
 
