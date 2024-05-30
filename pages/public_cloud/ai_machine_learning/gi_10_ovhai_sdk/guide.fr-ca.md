@@ -1,6 +1,6 @@
 ---
-title: AI Tools - ovhai SDK
-excerpt: Simplify AI Solutions management with the ovhai Python SDK
+title: Produits IA - SDK ovhai (EN)
+excerpt: Simplifiez la gestion de vos solutions IA en utilisant le SDK python ovhai
 updated: 2024-05-30
 ---
 
