@@ -16,9 +16,9 @@ Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'�
 
 ### Rôle d'un serveur DNS
 
-Tous les **serveurs DNS** (y compris les résolveurs DNS) forment ensemble ce que l'on appelle le réseau DNS.
+Tous les **serveurs DNS** (y compris les résolveurs DNS récursifs) forment ensemble ce que l'on appelle le réseau DNS.
 
-Ce réseau DNS permet de faciliter, aux humains, l'utilisation d'Internet et l'accès aux différents services qui y sont associés (sites web, services de messagerie en ligne, etc.).
+Ce réseau DNS permet de faciliter, aux humains, l'accès à Internet et aux différents services qui lui sont associés (sites web, services de messagerie en ligne, etc.).
 
 Ils permettent notamment l'utilisation des [noms de domaine](/links/web/domains) pour, par exemple, accéder à votre site web préféré sans être obligé de retenir l'adresse IP du serveur où est hébergé ce site web.
 
@@ -26,7 +26,7 @@ Ils permettent notamment l'utilisation des [noms de domaine](/links/web/domains)
 
 Un **serveur DNS** contient généralement un annuaire de noms de domaines.
 
-Pour chaque nom de domaine présent dans cet annuaire est associé un fichier de configuration DNS, appelé **zone DNS**.
+Pour chaque nom de domaine contenu dans l'annuaire est associé un fichier de configuration DNS, appelé **zone DNS**.
 
 Une zone DNS contient des informations techniques, appelées *enregistrements DNS*. La zone DNS est comme un poste d'aiguillage.
 
