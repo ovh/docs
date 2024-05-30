@@ -1,7 +1,7 @@
 ---
 title: Configurer le pare-feu sous Linux avec Iptables
 excerpt: Découvrez comment sécuriser un serveur avec Iptables
-updated: 2024-05-28
+updated: 2024-05-30
 ---
 
 ## Objectif
@@ -52,7 +52,7 @@ Iptables est installé par défaut sur la plupart des systèmes Linux. Pour conf
 sudo apt-get install iptables
 ```
 
-Pour vous assurer que vos règles Iptables sont persistantes après le redémarrage, vous devez installer le paquet iptables persistent en utilisant la commande suivante :
+"Pour vous assurer que vos règles Iptables sont persistantes après le redémarrage, vous devez installer le paquet Iptables persistent en utilisant la commande suivante :"
 
 ```bash
 sudo apt-get install iptables-persistent
