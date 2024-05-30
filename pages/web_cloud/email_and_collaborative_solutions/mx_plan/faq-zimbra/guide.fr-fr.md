@@ -103,6 +103,7 @@ Pour résilier votre offre dans la section « Mes services » de votre espace OV
 |**Pied de page**<br>(signature de nom de domaine configurable via l'espace client)|Cette fonctionnalité ne sera pas présente vers la nouvelle infrastructure Zimbra. Il est cependant toujours possible de configurer une signature au niveau du compte e-mail.|❌|
 |**Politique de Sécurité**|Cette fonctionnalité de l'espace client permettant de changer la politique de gestion des mots de passe ne sera pas présente, dans un premier temps, sur la solution Zimbra.<br> La politique de sécurité appliquée par défaut sur les mots de passe requiert un minimum de 10 caractères alphanumeriques, 1 caractère spécial, 1 majuscule.|❌|
 |**Spoofing**|Le spoofing consiste à envoyer un e-mail depuis une identité différente du compte e-mail sur lequel vous êtes authentifié. Cette pratique est incompatible avec les protocoles de sécurité SPF et DKIM nécessaires à la bonne délivrabilité des e-mails.<br>Depuis Zimbra, vous pouvez configurer une autre identité différente du compte e-mail utilisé, à condition qu'une délégation y soit appliquée.|❌|
+|**Prise en charge du protocole de sécurité TLS (Transport Layer Security) 1.0 et 1.1.**|Les versions 1.0 et 1.1 sont considérées comme vulnérables aux attaques et ne répondent plus aux normes de sécurité actuelles.<br>Si votre navigateur internet ne prend pas en charge **au minimum le protocole TLS 1.2**, nous vous recommandons d'installer les dernières mises à jour de sécurité et de fonctionnalités."|❌|
 
 ## Aller plus loin
 
