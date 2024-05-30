@@ -58,7 +58,7 @@ Cet e-mail contient les informations nécessaires au téléchargement et à l'in
 >
 > Cliquez sur le bouton `...`{.action} à droite de la licence concernée puis sur `Changer le mot de passe`{.action}.
 >
->![emails](images/Outlook-cps1-03.png){.thumbnail}
+> ![emails](images/Outlook-cps1-03.png){.thumbnail}
 >
 
 Rendez-vous sur <https://portal.office.com/> et connectez-vous avec **l'adresse e-mail d'activation** et le **mot de passe** précédemment configurés. Vous serez dirigé vers une fenêtre vous permettant de télécharger la suite Microsoft 365 sur votre poste avec les instructions d'installation.
