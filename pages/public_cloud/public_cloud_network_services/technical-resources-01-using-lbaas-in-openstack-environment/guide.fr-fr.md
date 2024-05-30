@@ -1,7 +1,7 @@
 ---
 title: "Déployer un Load Balancer Public Cloud"
 excerpt: Découvrez comment configurer le Load Balander pour Public Cloud
-updated: 2024-01-10
+updated: 2024-05-30
 ---
 
 ## Objectif
@@ -39,7 +39,7 @@ Nous voulons équilibrer la charge entre les deux backends : `backend--1` et `ba
 +--------------------------------------+------------+--------+-----------------------------------------------------------------------+--------------+--------+
 ```
 
-**1. Créer le Load Balancer**
+**Etape 1. Créez le Load Balancer**
 
 ```bash
 openstack loadbalancer create --name loadbalancer_private_to_private --vip-subnet-id <private_subnet_id>
@@ -69,7 +69,8 @@ openstack loadbalancer create --name loadbalancer_private_to_private --vip-subne
 +---------------------+--------------------------------------+
 ```
 
-> [!warning] **Load Balancer Flavors**
+> [!warning]
+> **Load Balancer Flavors**
 >
 > Notez que si vous ne fournissez pas le paramètre `--flavor` pendant la création, le load balancer sera de taille *small*.
 > 
@@ -85,7 +86,8 @@ openstack loadbalancer flavor list
 +--------------------------------------+--------+--------------------------------------+---------+
 ```
 
-> [!warning] **Status**
+> [!warning]
+> **Status**
 >
 > La création du Load Balancer prendra un certain temps, essentiellement le temps de création de l'instance et la configuration du réseau.
 >
@@ -95,7 +97,7 @@ Vous pouvez déjà voir que notre Load Balancer est associé à une adresse IP V
 
 Il s'agit de l'adresse IP du Load Balancer à l'intérieur de notre réseau privé.
 
-**2. Créer un listener**
+**Etape 2. Créez un listener**
 
 ```bash
 openstack loadbalancer listener create --protocol-port 80 --protocol HTTP --name listener <loadbalancer_id>
@@ -135,10 +137,10 @@ openstack loadbalancer listener create --protocol-port 80 --protocol HTTP --name
 +-----------------------------+--------------------------------------+
 ```
 
-**3. Créer un pool**
+**Etape 3. Créez un pool**
 
 ```bash
-❯ openstack loadbalancer pool create --name pool --lb-algorithm ROUND_ROBIN --listener <listener_id> --protocol HTTP
+openstack loadbalancer pool create --name pool --lb-algorithm ROUND_ROBIN --listener <listener_id> --protocol HTTP
 +----------------------+--------------------------------------+
 | Field                | Value                                |
 +----------------------+--------------------------------------+
@@ -169,10 +171,10 @@ openstack loadbalancer listener create --protocol-port 80 --protocol HTTP --name
 +----------------------+--------------------------------------+
 ``` 
 
-**4. Ajouter les serveurs**
+**Etape 4. Ajoutez les serveurs**
 
 ```bash
-❯ openstack loadbalancer member create --subnet-id <private_subnet_id> --address <server_ip_address>  --protocol-port 80 <pool_id>
+openstack loadbalancer member create --subnet-id <private_subnet_id> --address <server_ip_address>  --protocol-port 80 <pool_id>
 +---------------------+--------------------------------------+
 | Field               | Value                                |
 +---------------------+--------------------------------------+
@@ -195,7 +197,7 @@ openstack loadbalancer listener create --protocol-port 80 --protocol HTTP --name
 +---------------------+--------------------------------------+
 ```
 
-**5. Utilisez votre Load Balancer**
+**Etape 5. Utilisez votre Load Balancer**
 
 ```bash
 root@bastion:~# curl http://10.0.3.50/backend.txt
@@ -212,38 +214,39 @@ Nous devons créer une Floating IP sur le réseau public (Ext-Net) et associer c
 
 Afin d'utiliser une Floating IP, nous devons créer un routeur L3 et configurer une *external gateway* sur celui-ci.
 
-#### Quel est le rôle d'une Floating IP ?
+> **Quel est le rôle d'une Floating IP ?**
+>
+> Les adresses Floating IP sont utilisées dans l'univers OpenStack pour exposer des ressources (via le port Neutron) vers Internet. Vous pouvez associer une Floating IP à un port de réseau privé **uniquement**.
+>
+> Vous pouvez exposer deux types de ressources :
+>
+> - Une instance avec un port privé
+>- Avoir une adresse IP virtuelle (VIP) de Load Balancer.
+>
+> Actuellement, les Floating IPs ne supportent pas les IPv6.
+>
+> Vous pouvez en savoir plus sur notre page [Concepts](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
+>
 
-Les adresses Floating IP sont utilisées dans l'univers OpenStack pour exposer des ressources (via le port Neutron) vers Internet. Vous pouvez associer une Floating IP à un port de réseau privé **uniquement**.
-
-Vous pouvez exposer deux types de ressources :
-
-- Une instance avec un port privé
-- Avoir une adresse IP virtuelle (VIP) de Load Balancer.
-
-Actuellement, les Floating IPs ne supportent pas les IPv6.
-
-Vous pouvez en savoir plus sur notre page [Concepts](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
-
-**1. Créez le routeur**
+**Etape 1. Créez le routeur**
 
 ```bash
 openstack router create <router_name>
 ```
 
-**2. Ajouter une External Gateway sur votre routeur**
+**Etape 2. Ajoutez une External Gateway sur votre routeur**
 
 ```bash
 openstack router set --external-gateway Ext-Net <router_name>
 ```
 
-**3. Connectez le routeur à votre réseau privé**
+**Etape 3. Connectez le routeur à votre réseau privé**
 
 ```bash
 openstack router add subnet <router_id> <subnet_id>
 ```
 
-Maintenant nous pouvons créer une Floating IP sur le réseau public Ext-Net
+**Etape 4. Maintenant vous pouvez créer une Floating IP sur le réseau public Ext-Net**
 
 ```bash
 openstack floating ip create Ext-Net
@@ -272,13 +275,13 @@ openstack floating ip create Ext-Net
 +---------------------+--------------------------------------+
 ```
 
-Et l'associer à l'ID de l'adresse VIP du Load Balancer
+**Etape 5 : Associez son ID à l'adresse VIP du Load Balancer**
 
 ```bash
 openstack floating ip set --port <load_balancer_vip_port_id> <floating_ip_id>
 ```
 
-**Utilisez votre Load Balancer avec son IP publique**.
+**Etape 6 : Utilisez votre Load Balancer avec son IP publique**.
 
 ```bash
 ❯ curl http://169.254.10.250/backend.txt
