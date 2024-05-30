@@ -17,10 +17,10 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 - Les ressources PCC et LDP doivent appartenir au même compte OVHcloud.
 
 ## Concepts et limites
-> [!warning]
-> A ce jour, les logs des listeners **UDP** ne sont pas transmis.
-> L'intégralité des journaux VMware ne sont pas transmissible, pour raison de sécurité.
 
+> [!warning]
+> 
+> A ce jour, les logs des listeners **UDP** ne sont pas transmis.
 ### Glossaire
 - **Logs Data Platform :** Plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/).
 - **Data Stream :** Partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
@@ -30,7 +30,11 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 ### Les types de journaux
 
 > [!primary]
+> 
 > Les PCC certifié (PCIDS, HDS, SNC, NSX-T) suivants peuvent faire transférer leurs journaux uniquement si le **syslogForwarder** est activé.
+>
+> Tous les journaux de VMware ne sont pas transférables pour des raisons de sécurité.
+>
 
 #### Kind
 
@@ -164,26 +168,45 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 >  Trouvez plus d'information sur les appels API OVHcloud : [Premiers pas avec l'API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 > [!api]
+> 
 > @api {v1} /dedicatedCloud/{serviceName} POST /dedicatedCloud/{serviceName}/syslogForward/forwarder
 >
-
+>
 > **Paramètres:**
 >
 > serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
 > ip: L'adresse Ip du service distant.
-> logLevel : Le niveau de log minimum (LogLevelEnum).
+> logLevel : Le niveau de log minimum (alert, etc..).
 > servicePort : Port distant (Syslog : 514, Syslog Manager : 6514).
-> sourceType : Le type de source (nsxtEdge).
+> sourceType : Type de source de journal possible (Allowed : nsxtEdge).
 > sslThumbprint : L'empreinte de votre Gateway SSL.
 >
 
-Retour:
+Exemple :
+
+```shell
+@api {v1} /dedicatedCloud/{serviceName} POST /dedicatedCloud/{serviceName}/syslogForward/forwarder
+ 
+{
+  "description": "string",
+  "ip": "XXX.XXX.XXX.XXX",
+  "logLevel": "alert┃critical┃emergency┃error┃info┃notice┃warning",
+  "noSsl": false,
+  "servicePort": 514,
+  "sourceType": [
+    "nsxtEdge"
+  ],
+  "sslThumbprint": "Null"
+}
+```
+
+Exemple de retour:
 ```Shell
 {
-  "createdBy": "string",
-  "createdFrom": "string",
+  "createdBy": "Null",
+  "createdFrom": "Null",
   "datacenterId": 0,
-  "description": "string",
+  "description": "Null",
   "endDate": "2024-05-30T09:02:03.867Z",
   "executionDate": "2024-05-30T09:02:03.867Z",
   "filerId": 0,
@@ -191,21 +214,21 @@ Retour:
   "lastModificationDate": "2024-05-30T09:02:03.867Z",
   "maintenanceDateFrom": "2024-05-30T09:02:03.867Z",
   "maintenanceDateTo": "2024-05-30T09:02:03.867Z",
-  "name": "string",
-  "network": "string",
+  "name": "Null",
+  "network": "Null",
   "networkAccessId": 0,
   "orderId": 0,
   "parentTaskId": 0,
   "progress": 0,
   "state": "canceled",
   "taskId": 0,
-  "type": "string",
+  "type": "Null",
   "userId": 0,
   "vlanId": 0
 }
 ```
 
-La requête GET permet de lister les forwarder activés.
+La requête GET permet de lister les Forwarder activés.
 
 ### Création de l'abonnement LDP pour votre Hosted Private Cloud
 
@@ -218,22 +241,26 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > [!api]
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
-
+>
 > **Paramètres:**
 >
-> "kind": "esxi".
-> "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773".
+> **kind** : "esxi".
+> **streamId** : "ggb8d894-c491-433e-9c87-50a8bf6fe773".
+>
+> 
 
 Exemple :
+
 ```shell
-POST /dedicatedCloud/{serviceName}/log/subscription
+@api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
+
 {
   "kind": "string", // Le label VMware, la seul valeur supporté actuellement est : 'esxi'.
-  "streamId": "vf06a2f5-55a9-4434-a1fb-130809312dvf" // L'identifiant du flux (stream) LDP.
+  "streamId": "vf06a2f5-55a9-4434-a1fb-130809312dvf", // L'identifiant du flux (stream) LDP.
 }
 ```
-La requête GET à une charge utile qui permet de lister vos souscriptions.
 
+La requête GET permet de lister vos souscriptions.
 
 ### Verification si le forwarder Syslog est activé
 
@@ -244,16 +271,18 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 #### Via l’API OVHcloud :
 
 > [!api]
+> 
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/syslogForward
 >
 >
-
-> **Paramètres:**
 >
-> serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
+> **Paramètres** :
+>
+> **serviceName** : La référence pour votre PCC : "pcc-XXX-XXX-XXX-XXX".
 >
 
-Retour :
+Exemple de retour :
+
 ```shell
 {
   "state": "disabled/Enabled"
@@ -261,7 +290,6 @@ Retour :
 ```
 
 Si vous avez réussi l'appel API `POST /dedicatedCloud/{serviceName}/syslogForward/forwarder`{.action}, vous devez avoir l'option Activé.
-
 
 ### Lister les Syslog Forwarder
 
@@ -272,12 +300,13 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 #### Via l’API OVHcloud :
 
 > [!api]
+> 
 > @api {v1} /dedicatedCloud GET  /dedicatedCloud/{serviceName}/syslogForward/forwarder
 >
-
+>
 > **Paramètres:**
 >
-> serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
+> **serviceName** : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
 >
 
 ### Mise à jour du Log Forwarder
@@ -289,13 +318,14 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 #### Via l’API OVHcloud :
 
 > [!api]
+> 
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/syslogForward/forwarder/{logForwardId}/changeProperties
 >
-
-> **Paramètres:**
 >
-> serviceName : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
-> logForwardId : Identifiant du log forwarder.
+> **Paramètres** :
+>
+> **serviceName** : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
+> **logForwardId** : Identifiant du log forwarder.
 
 ### Manager vos flux (stream) LDP avec Hosted Private Cloud
 
@@ -307,28 +337,29 @@ Utilisez l'appel API suivant pour lister les stream data de votre compte LDP :
 >
 > @api {v1} /dedicatedCloud/ GET /dbaas/logs/{serviceName}/output/graylog/stream
 >
-
-> **Paramètres:**
+>
+> **Paramètres** :
 >
 > serviceName : La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
+>
 
-Avoir les details des stream :
+Avoir les details des flux (stream) :
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
 >
-
+>
 > **Paramètres:**
 >
-> serviceName : La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
-> streamId : L'identifiant de votre stream LDP.
+> **serviceName** : La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
+> **streamId** : L'identifiant de votre stream LDP.
 
 Vous obtiendrez en réponse un `operationId`{.action} :
 
 ```shell
 {
-  "operationId": "f550aa1c-89ab-4b1a-81ae-4fba4959966f",
+  "operationId": "f330aa1c-89ab-4b1a-81ae-4ffr4959966f",
   "serviceName": "pcc-XXX-XXX-XXX-XXX"
 }
 ```
@@ -339,11 +370,11 @@ Vous pouvez utiliser le `operationId`{.action} pour récupérer le `subscription
 >
 > @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/operation/{operationId}
 >
-
-> **Paramètres:**
 >
-> serviceName : La reference de votre PCC : "pcc-XXX-XXX-XXX-XXX".
-> operationId : La reference de votre identifiant d'opération DLP : 5a9x1x74-a1f2-4bb7-a41c-e8fd397ee1xx.
+> **Paramètres** :
+>
+> **serviceName** : La référence de votre PCC : "pcc-XXX-XXX-XXX-XXX".
+> **operationId** : La référence de votre identifiant d'opération DLP : "5a9x1x74-a1f2-4bb7-a41c-e8fd397ee1xx".
 
 Une fois l'opération terminée, vous pouvez également récupérer les abonnements à l'aide de l'appel API suivant :
 
@@ -354,7 +385,8 @@ Une fois l'opération terminée, vous pouvez également récupérer les abonneme
 
 > **Paramètres:**
 >
-> serviceName: La reference de votre PCC, tel que `pcc-XXX-XXX-XXX-XXX.`{.action}
+> **serviceName** : La reference de votre PCC : "pcc-XXX-XXX-XXX-XXX".
+>
 
 Une fois en possession du `subscriptionId`{.action} , vous pouvez obtenir les détails via l'appel API suivant :
 
@@ -362,11 +394,12 @@ Une fois en possession du `subscriptionId`{.action} , vous pouvez obtenir les d�
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 >
-
+>
 > **Paramètres:**
 >
 > serviceName : La reference de votre PCC, tel que `pcc-XXX-XXX-XXX-XXX`.
 > subscriptionId : La reference de votre identifiant de subscription LDP, tel que : `18d60324-b260-4000-83db-b484f4db6e80`
+>
 
 Exemple de retour :
 
@@ -377,20 +410,21 @@ GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
   "createdAt": "2024-04-26T22:27:57+02:00",
   "kind": "esxi",
   "resource": {
-    "name": "string",
-    "type": "string"
+    "name": "Null",
+    "type": "Null"
   },
-  "serviceName": "string",
-  "streamId": "string",
-  "subscriptionId": "18d60324-b260-4000-83db-b484f4db6e80",
+  "serviceName": "Null",
+  "streamId": "Null",
+  "subscriptionId": "18a60324-b260-4000-83cb-h484f4db6i80",
   "updatedAt": "2024-01-31T15:45:25.286Z"
 }
 ```
 
 ### Étape 2 - Récupération du Stream (ID) cible LDP
 
-> [!warning]
-> Vous devez avoir préalablement créer un stream LDP.
+> [!primary]
+> 
+> Vous devez avoir préalablement créer un stream Logs Data Plateform.
 
 #### Via le control panel OVHcloud :
 
@@ -404,10 +438,11 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
 >
 > @api {v1} /dedicatedCloud/{serviceName}/logs GET /dedicatedCloud/{serviceName}/log/subscription
 >
- 
+>
 > Paramètres:
 >
-> serviceName: La reference de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
+> **serviceName** : La référence de votre PCC : "pcc-XXX.XXX-XXX-XXX".
+>
 
 ### Étape 3 - Obtenez les détails d'un flux de données PCC
 
@@ -421,11 +456,12 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 >
 > @api {v1} /dedicatedCloud/{serviceName}/logs GET /dedicatedCloud/{serviceName}/output/graylog/stream/{streamId}
 >
- 
-> Paramètres:
+> 
+> **Paramètres** :
 >
-> streamId: La référence d'identification de votre stream LDP : ***caX6a2f5-XXa9-4434-a1xx-XX0809312dca***.
-> serviceName: La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
+> **streamId** : La référence d'identification de votre stream LDP : "caX6a2f5-XXa9-4434-a1xx-XX0809312dca".
+> **serviceName** : La référence de votre PCC : "pcc-XXX.XXX-XXX-XXX".
+>
 
 ### Étape 3 - Accéder à l'interface Graylog
 
@@ -453,11 +489,12 @@ Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
 >
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 >
-
-> Paramètres:
 >
-> subscriptionId: La référence de souscription pour votre compte LDP.
-> serviceName: La référence de votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
+> **Paramètres** :
+>
+> **subscriptionId** : La référence de souscription pour votre compte LDP, exemple : "18d30324-x260-5000-81db-a484f4db6y80".
+> **serviceName** : La référence de votre PCC : "pcc-XXX-XXX-XXX-XXX".
+>
 
 Pour aller plus loins dans la gestion de votre abonnement, vous pouvez suivre le guide : ["Démarrage rapide Logs Data Plateform"](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
