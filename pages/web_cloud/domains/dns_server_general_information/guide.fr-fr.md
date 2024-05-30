@@ -57,13 +57,7 @@ Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS** à décl
 
 #### Résolution d'une requête DNS
 
-Pour terminer et afin de comprendre plus globalement la place qu'occupe les serveurs DNS dans le réseau DNS, retrouvez ci-après un schéma expliquant la résolution d'une requête DNS.
-
-L'exemple ci-dessous représente une requête effectuée depuis un navigateur internet pour afficher le site web **mydomain.ovh**.
-
-![DNS request resolution](images/dns-request-resolution.png){.thumbnail}
-
-
+Pour terminer et afin de comprendre plus globalement la place qu'occupe les serveurs DNS dans le réseau DNS, n'hésitez pas à consulter notre page web expliquant [comment fonctionne un serveur DNS](/links/web/domains-dns-server)
 
 ## Aller plus loin
 
