@@ -67,4 +67,4 @@ Lorsque votre réponse automatique a été créée, elle apparaît dans la liste
 
 [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
-Échangez avec notre communauté d'utilisateurs sur <ttps://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
