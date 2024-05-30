@@ -148,7 +148,7 @@ Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone D
 
 - Si les éléments sont identiques, remplacez la cible `213.186.33.5` par le code à quatre nombres noté dans l'onglet `Informations générales` sous la mention `IPv4` (pour plus de détails sur les manipulations à effectuer, suivez les instructions de [ce guide](/pages/web_cloud/domains/dns_zone_edit#en-pratique)).
 
-- Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effectuez une réinitialisation en suivant les instructions de [ce guide](/pages/web_cloud/domains/dns_server_general_information#reinitialiser-les-serveurs-dns).
+- Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effectuez une réinitialisation en suivant les instructions de [ce guide](/pages/web_cloud/domains/dns_server_edit).
 
 - Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contactez votre Webmaster ou recherchez un [prestataire spécialisé](/links/partner) via la page des [partenaires OVHcloud](/links/partner).
 

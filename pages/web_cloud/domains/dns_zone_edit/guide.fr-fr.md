@@ -16,7 +16,7 @@ Par exemple, lorsque vous souhaitez accéder au site *mydomain.ovh*, votre requ�
 
 Au vu des manipulations que vous serez amenés à effectuer dans l'espace client, il est important de différencier les **serveurs DNS** et la **zone DNS**. En effet, c'est au niveau du **serveur DNS** qu'est configurée la **zone DNS**. 
 
-Vous trouvez les informations relatives aux **serveurs DNS** et leur modification sur notre guide « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
+Vous trouvez les informations relatives aux **serveurs DNS** et leur modification sur notre guide « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
 
 ![DNS](images/dns-server.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> >
 > **Champ NS**
 >> **N**ame **S**erver <br><br>
->> Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client OVHcloud. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) » pour plus d'informations.
+>> Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client OVHcloud. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) » pour plus d'informations.
 >>
 >> > [!warning]
 >> > 
