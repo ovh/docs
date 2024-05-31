@@ -51,7 +51,7 @@ De manière générale, pour que la zone DNS associée à un nom de domaine pré
 
 De plus, les **serveurs DNS** fonctionnent généralement par paire :
 
-- Un serveur DNS *principal* qui redirige les flux de requêtes reçus par le nom de domaine vers la zone DNS que le serveur DNS héberge pour le nom de domaine. La zone DNS effectue ainsi la *résolution DNS* pour rediriger les flux vers les bons services (serveurs, site web, e-mails, etc.) associés au nom de domaine.
+1. Un serveur DNS *principal* qui redirige les flux de requêtes reçus par le nom de domaine vers la zone DNS (hébergée sur le serveur DNS pour le nom de domaine). La zone DNS effectue ainsi la *résolution DNS* pour rediriger les flux vers les bons services (serveurs, site web, e-mails, etc.) associés au nom de domaine.
 - Un serveur DNS *secondaire* dit *de secours* qui est utilisé si le serveur *principal* est saturé, indisponible ou répond moins rapidement que le serveur *secondaire*.
 
 Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS** à déclarer auprès de votre nom de domaine. Dans ce cas, renseignez tous les serveurs DNS proposés par votre fournisseur DNS.
