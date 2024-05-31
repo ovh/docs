@@ -215,11 +215,20 @@ Replace `Number` with the rule line number you want to delete.
 When the system is restarted, *iptables* does not keep the rules you created.
 Whenever you configure *iptables* on Linux, any changes you make apply only until the next reboot.
 
-To save rules to Ubuntu-based systems, type:
+To save rules to Ubuntu-based systems, first, you must log in as the root user using the `sudo su` command:
 
 ```bash
-sudo -s iptables-save -c
+ubuntu@server:~$ sudo su
+root@server:/home/ubuntu#
 ```
+
+Next, run the following command: 
+
+```bash
+iptables-save > /etc/iptables/rules.v4
+```
+
+This will save the rules directly to the IPV4 folder.
 
 The next time your system boots, *iptables* will automatically reload the firewall rules.
 
