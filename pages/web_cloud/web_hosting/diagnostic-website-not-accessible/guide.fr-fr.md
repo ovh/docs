@@ -54,7 +54,7 @@ Suite à ce renouvellement, votre site sera accessible sous 48 heures maximum.
 
 ### Étape 2 : vérifier les serveurs DNS
 
-Pour vérifier la validité de vos [serveurs DNS](/pages/web_cloud/domains/dns_server_edit), dans votre [espace client OVHcloud](/links/manager) cliquez sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
+Pour vérifier la validité de vos [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information), dans votre [espace client OVHcloud](/links/manager) cliquez sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
 
 #### Scénario 1 : aucune anomalie sur les serveurs DNS
 
