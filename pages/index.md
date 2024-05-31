@@ -1090,6 +1090,7 @@
                 + [What is a DNS server?](web_cloud/domains/dns_server_general_information)
                 + [Editing the DNS servers for an OVHcloud domain name](web_cloud/domains/dns_server_edit)
             + [DNS zone](web-cloud-domains-dns-dns-zone)
+                + [What is a DNS zone?](web_cloud/domains/dns_zone_general_information)
                 + [Creating an OVHcloud DNS zone for a domain name](web_cloud/domains/dns_zone_create)
                 + [Editing an OVHcloud DNS zone](web_cloud/domains/dns_zone_edit)
                 + [How to view the history of your DNS records](web_cloud/domains/dns_zone_history)
