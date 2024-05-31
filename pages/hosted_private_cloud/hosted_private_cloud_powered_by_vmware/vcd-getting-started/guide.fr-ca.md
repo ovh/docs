@@ -8,7 +8,7 @@ updated: 2024-05-23
 
 **Ce guide vous présente les différentes sections de l'interface de VMware Cloud Director.**
 
-La version utilisée pour l'ensemble de nos produits VMware Cloud Director (VCD) est la `version 1.5`.
+La version utilisée pour l'ensemble de nos produits VMware Cloud Director (VCD) est la `version 10.5`.
 
 ## Prérequis
 
