@@ -411,7 +411,7 @@ Vous pouvez utiliser le `operationId`{.action} pour récupérer le `subscription
 >
 > **serviceName** : La référence de votre PCC : "pcc-XXX-XXX-XXX-XXX".
 >
-> **operationId** : La référence de votre identifiant d'opération DLP : "5a9x1x74-a1f2-4bb7-a41c-e8fd397ee1xx".
+> **operationId** : La référence de votre identifiant d'opération LDP : "5a9x1x74-a1f2-4bb7-a41c-e8fd397ee1xx".
 >
 
 Une fois l'opération terminée, vous pouvez également récupérer les abonnements à l'aide de l'appel API suivant :
