@@ -169,7 +169,7 @@ openstack loadbalancer pool create --name pool --lb-algorithm ROUND_ROBIN --list
 | tags                 |                                      |
 | alpn_protocols       | None                                 |
 +----------------------+--------------------------------------+
-``` 
+```
 
 **Etape 4. Ajoutez les serveurs**
 
