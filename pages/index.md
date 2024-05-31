@@ -1096,6 +1096,7 @@
                 + [How to view the history of your DNS records](web_cloud/domains/dns_zone_history)
                 + [How to delete a DNS zone ?](web_cloud/domains/dns_zone_deletion)
             + [DNS records](web-cloud-domains-dns-dns-records)
+                + [Add an MX record to your domain name’s configuration](web_cloud/domains/dns_zone_records)
                 + [Add an MX record to your domain name’s configuration](web_cloud/domains/dns_zone_mx)
                 + [Adding an SPF record to the configuration of your domain name](web_cloud/domains/dns_zone_spf)
                 + [Adding a DKIM record to the configuration of your domain name](web_cloud/domains/dns_zone_dkim)
