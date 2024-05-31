@@ -13,7 +13,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 ## Prérequis
 - Disposer d'un compte client OVHcloud.
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud (PCC).
-- Avoir au moins un Stream actif configuré sur le compte LDP pour recevoir les logs.
+- Avoir au moins un Stream actif configurait sur le compte LDP pour recevoir les logs.
 - Les ressources PCC et LDP doivent appartenir au même compte OVHcloud.
 
 ## Concepts et limites
@@ -23,7 +23,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 > **Remarque :** A ce jour, les logs des listeners **UDP** ne sont pas transmis.
 >
 
-### Eligibilité Hosted Private Cloud (PCC)
+### Éligibilité avec Hosted Private Cloud (PCC)
 
 Les PCC certifié "PCIDS, HDS, SNC" + les PCC avec "NSX-T" ne peuvent uniquement faire transférer leurs journaux que si le **syslogForwarder** est activé (Enabled).
 
@@ -33,10 +33,10 @@ Les PCC certifié "PCIDS, HDS, SNC" + les PCC avec "NSX-T" ne peuvent uniquement
 
 
 ### Glossaire
-- **Logs Data Platform :** Plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/).
+- **Logs Data Platform :** Plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/){.external}
 - **Data Stream :** Partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
-- **Transfert de logs :** Fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
-- **Abonnement à la redirection de logs :** Lors de l'activation du transfert de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
+- **Transfert de logs :** Fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans le *Data Stream* d’un compte LDP du même compte OVHcloud. Cette fonctionnalité doit être activée par vos soins et pour votre service.
+- **Abonnement à la redirection de logs :** Lors de l'activation du transfert de logs pour votre service OVHcloud vers un LDP *Data Stream* donné, un *abonnement* doit être créé et rattaché au *Data Stream* pour une gestion ultérieure.
 
 ### Les journaux
 
@@ -147,14 +147,18 @@ Répertoire :
 
 
 ## En pratique
+
 > [!primary]
+> 
 > Prenez en compte que l'activation du **Log Forwarding** est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](https://www.ovhcloud.com/fr/logs-data-platform/).
+>
 
 Logs Data Platform est une interface de collecte, d'indexation et d'analyse de logs. Quelque-soit la provenance de vos logs, la plateforme vous permet de choisir différents points d'entrée en fonction du protocole, du niveau de sécurité et du format. L'analyse et l'exploitation des données peuvent se faire grâce à différentes API et interfaces web.
 
 ### Etape 1 - Audit Log Forwarding avec Hosted Private Cloud
 
 > [!warning]
+> 
 > Les ressources PCC et LDP doivent appartenir au même compte OVHcloud. Si ce n'est pas le cas, vous aurez ce message d'erreur : 
 > ```shell
 > {
@@ -167,35 +171,40 @@ Logs Data Platform est une interface de collecte, d'indexation et d'analyse de l
 
 > [!primary]
 >
-> Vous devez avoir préalablement créer un stream Logs Data Plateform.
+> Vous devez avoir préalablement créer un Data Stream Logs Data Plateform.
 > 
 
 #### Via le control panel OVHcloud :
 
-Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud VMware on OVHcloud. 
 
 #### Via l’API OVHcloud :
 
 > [!primary]
 >
 >  Trouvez plus d'information sur les appels API OVHcloud : [Premiers pas avec l'API OVHcloud](/pages/manage_and_operate/api/first-steps).
+>
 
 > [!api]
 > 
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/syslogForward/forwarder
 >
->
 > **Paramètres:**
 >
 > **serviceName** : La référence pour votre PCC : pcc-XXX-XXX-XXX-XXX.
+>
 > **ip** : IPv4 address (e.g., 192.0.2.0) : "XXX.XXX.XXX.XXX".
+>
 > **logLevel** : Le niveau de log minimum (alert, etc..).
+>
 > **servicePort** : Port distant (Syslog : 514, Syslog Manager : 6514).
+>
 > **sourceType** : Type de source de journal possible (Allowed : nsxtEdge).
+>
 > **sslThumbprint** : L'empreinte de votre Gateway SSL.
 >
 
-Ports utilisé par LDP / Syslog :
+Ports utilisés par LDP / Syslog :
 
 ||Syslog RFC5424|Gelf|LTSV line|LTSV nul|Cap’n’Proto|Beats|
 |---|---|---|---|---|---|---|
@@ -221,7 +230,7 @@ Exemple :
 }
 ```
 
-Exemple de retour:
+Exemple de retour :
 ```Shell
 {
   "createdBy": "Null",
@@ -256,21 +265,21 @@ La requête GET permet de lister les Forwarder activés.
 > [!primary]
 >
 > Vous devez avoir préalablement créer un stream Logs Data Plateform.
-> 
+>
 
 #### Via le control panel OVHcloud :
 
-Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud VMware on OVHcloud.
 
 #### Via l’API OVHcloud :
 
 > [!api]
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
->
 > **Paramètres:**
 >
 > **kind** : "esxi".
+>
 > **streamId** : "ggb8d894-c491-433e-9c87-50a8bf6fe773".
 >
 
@@ -291,7 +300,7 @@ La requête GET permet de lister vos souscriptions.
 
 #### Via le control panel OVHcloud :
 
-Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud VMware on OVHcloud.
 
 #### Via l’API OVHcloud :
 
@@ -315,11 +324,11 @@ Exemple de retour :
 
 Si vous avez réussi l'appel API `POST /dedicatedCloud/{serviceName}/syslogForward/forwarder`{.action}, vous devez avoir l'option Activé.
 
-### Lister les Syslog Forwarder
+### Lister les Syslog Forwarder de votre PCC
 
 #### Via le control panel OVHcloud :
 
-Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud VMware on OVHcloud.
 
 #### Via l’API OVHcloud :
 
@@ -327,17 +336,16 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > 
 > @api {v1} /dedicatedCloud GET  /dedicatedCloud/{serviceName}/syslogForward/forwarder
 >
->
 > **Paramètres:**
 >
 > **serviceName** : La référence pour votre PCC : "pcc-XXX-XXX-XXX-XXX".
 >
 
-### Mise à jour du Log Forwarder
+### Mise à jour du Log Forwarder de votre PCC
 
 #### Via le control panel OVHcloud :
 
-Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud VMware on OVHcloud.
 
 #### Via l’API OVHcloud :
 
@@ -345,13 +353,18 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 > 
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/syslogForward/forwarder/{logForwardId}/changeProperties
 >
->
 > **Paramètres** :
 >
 > **serviceName** : La référence pour votre PCC : ***pcc-XXX-XXX-XXX-XXX***.
+>
 > **logForwardId** : Identifiant du log forwarder.
+>
 
 ### Manager vos flux (stream) LDP avec Hosted Private Cloud
+
+#### Via le control panel OVHcloud :
+
+Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud VMware on OVHcloud.
 
 #### Via l’API OVHcloud
 
@@ -360,7 +373,6 @@ Utilisez l'appel API suivant pour lister les stream data de votre compte LDP :
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dbaas/logs/{serviceName}/output/graylog/stream
->
 >
 > **Paramètres** :
 >
@@ -373,10 +385,10 @@ Avoir les details des flux (stream) :
 >
 > @api {v1} /dedicatedCloud GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
 >
->
 > **Paramètres:**
 >
 > **serviceName** : La référence de votre PCC : ***pcc-XXX.XXX-XXX-XXX***.
+> 
 > **streamId** : L'identifiant de votre stream LDP.
 >
 
@@ -395,10 +407,10 @@ Vous pouvez utiliser le `operationId`{.action} pour récupérer le `subscription
 >
 > @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/operation/{operationId}
 >
->
 > **Paramètres** :
 >
 > **serviceName** : La référence de votre PCC : "pcc-XXX-XXX-XXX-XXX".
+>
 > **operationId** : La référence de votre identifiant d'opération DLP : "5a9x1x74-a1f2-4bb7-a41c-e8fd397ee1xx".
 >
 
@@ -407,7 +419,6 @@ Une fois l'opération terminée, vous pouvez également récupérer les abonneme
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/subscription
->
 >
 > **Paramètres:**
 >
@@ -419,7 +430,6 @@ Une fois en possession du `subscriptionId`{.action} , vous pouvez obtenir les d�
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
->
 >
 > **Paramètres:**
 >
@@ -451,10 +461,11 @@ GET /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 > [!primary]
 > 
 > Vous devez avoir préalablement créer un stream Logs Data Plateform.
+>
 
 #### Via le control panel OVHcloud :
 
-Vous pouvez suivre le guide suivant pour récupérer le stream ID depuis le control panel OVHcloud : [Premiers pas / Démarrage rapide Logs Data Plateform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
+Vous pouvez suivre le guide suivant pour récupérer le stream ID LDP via le control panel OVHcloud : [Premiers pas / Démarrage rapide Logs Data Plateform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 #### Via l’API OVHcloud :
 
@@ -463,7 +474,6 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
 > [!api]
 >
 > @api {v1} /dedicatedCloud/{serviceName}/logs GET /dedicatedCloud/{serviceName}/log/subscription
->
 >
 > Paramètres:
 >
@@ -474,7 +484,7 @@ Listez les flux de données de votre compte Logs Data Platform (renseignez votre
 
 #### Via le control panel OVHcloud :
 
-Cette fonctionnalité n'est pas encore disponible dans l'espace client.
+Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud VMware on OVHcloud.
 
 #### Via l’API OVHcloud :
 
@@ -482,10 +492,10 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 >
 > @api {v1} /dedicatedCloud/{serviceName}/logs GET /dedicatedCloud/{serviceName}/output/graylog/stream/{streamId}
 >
-> 
 > **Paramètres** :
 >
 > **streamId** : La référence d'identification de votre stream LDP : "caX6a2f5-XXa9-4434-a1xx-XX0809312dca".
+>
 > **serviceName** : La référence de votre PCC : "pcc-XXX.XXX-XXX-XXX".
 >
 
@@ -515,10 +525,10 @@ Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
 >
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 >
->
 > **Paramètres** :
 >
 > **subscriptionId** : La référence de souscription pour votre compte LDP, exemple : "18d30324-x260-5000-81db-a484f4db6y80".
+>
 > **serviceName** : La référence de votre PCC : "pcc-XXX-XXX-XXX-XXX".
 >
 
@@ -527,7 +537,7 @@ Pour aller plus loins dans la gestion de votre abonnement, vous pouvez suivre le
 ## Aller plus loin
 
 Vous pouvez suivre ces guides qui vous explique comment configurer votre PCC pour faire suivre les logs dans LDP :
-- [Logs Data Platform - Premiers pas.](https://help.ovhcloud.com/csm/fr-documentation-observability-logs-data-platform-getting-started?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=e3eec38c1977a5d0476b930e789695d0&spa=1){.external}
+- [Logs Data Platform - Listing guides premiers pas avec Log Data Plateform](https://help.ovhcloud.com/csm/fr-documentation-observability-logs-data-platform-getting-started?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=e3eec38c1977a5d0476b930e789695d0&spa=1){.external}
 - [Visualiser vos logs dans un tableau de bord Grafana](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana).
 - [Utiliser la cli "LDP Tail" pour regarder en live vos logs Hosted Private Cloud](/pages/manage_and_operate/observability/logs_data_platform/cli_ldp_tail).
 - [Génération des logs des comptes OVHcloud avec Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding).
