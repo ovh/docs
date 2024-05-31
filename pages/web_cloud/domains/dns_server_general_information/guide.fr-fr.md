@@ -22,6 +22,8 @@ Ce réseau DNS permet de faciliter, pour les utilisateurs, l'accès à Internet 
 
 Ils permettent notamment l'utilisation des [noms de domaine](/links/web/domains) pour, par exemple, accéder à votre site web préféré sans être obligé de retenir l'adresse IP du serveur où est hébergé ce site web.
 
+Consultez notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) » si vous avez besoin de réaliser cette action pour un nom de domaine enregistré chez OVHcloud.
+
 ### Contenu d'un serveur DNS
 
 Un **serveur DNS** contient généralement un annuaire de noms de domaines.
@@ -37,7 +39,7 @@ Par exemple, vous pouvez y préciser :
 - Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.) associés à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
 
 > [!success]
-> Pour plus d'informations sur les zones DNS, consultez notre guide « [Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+> Pour plus d'informations sur les zones DNS, consultez notre guide « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) ».
 
 De ce fait, ce sont les **serveurs DNS** qui doivent être déclarés auprès du nom de domaine pour utiliser la zone DNS qu'ils hébergent. 
 
@@ -61,6 +63,10 @@ Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS** à décl
 Pour comprendre plus globalement la place qu'occupent les serveurs DNS dans le réseau DNS, n'hésitez pas à consulter notre page web expliquant [comment fonctionne un serveur DNS](/links/web/domains-dns-server).
 
 ## Aller plus loin
+
+[Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Les enregitrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 
