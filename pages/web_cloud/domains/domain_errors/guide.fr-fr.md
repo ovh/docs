@@ -89,7 +89,7 @@ Dans l'exemple ci-dessous, l'adresse IP du serveur DNS ne répond pas.
 
 ![domain](images/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
 
-Dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine concerné puis cliquez sur l'onglet `Serveurs DNS`{.action}. Depuis cet onglet, [modifiez vos serveurs DNS](/pages/web_cloud/domains/dns_server_edit). 
+Dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine concerné puis cliquez sur l'onglet `Serveurs DNS`{.action}. Depuis cet onglet, [modifiez vos serveurs DNS](/pages/web_cloud/domains/dns_server_general_information). 
 
 #### Erreur sur un nom de domaine en **.ie**, **.de** ou **.it** après une mise à jour DNS
 
