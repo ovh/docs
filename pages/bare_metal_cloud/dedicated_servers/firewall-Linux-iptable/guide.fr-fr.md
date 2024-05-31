@@ -227,6 +227,8 @@ Ensuite, exécutez la commande suivante :
 iptables-save > /etc/iptables/rules.v4
 ```
 
+Cette opération permet d'enregistrer les règles directement dans le dossier IPV4.
+
 Au prochain démarrage de votre système, Iptables rechargera automatiquement les règles du pare-feu.
 
 Vous pouvez dorénavant configurer des règles de pare-feu Iptables de base pour votre serveur Linux. 
