@@ -56,7 +56,7 @@ Cette étape consiste à vérifier que votre nom de domaine ou sous-domaine poin
 > 
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit);
 > - [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create);
-> - [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit).
+> - [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
 >
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement web OVHcloud
