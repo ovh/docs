@@ -107,6 +107,7 @@ Um Ihr Angebot unter "Meine Dienste" im OVHCloud Kundencenter zu kündigen, folg
 |**Fußzeile** (Domain-Signatur über das Kundencenter konfigurierbar)| Diese Funktion wird in der neuen Zimbra Infrastruktur nicht verfügbar sein. Es ist jedoch weiterhin möglich, eine Signatur auf Ebene des E-Mail-Accounts zu konfigurieren.|❌|
 |**Sicherheitseinstellungen**| Diese Funktion des Kundencenters, mit der Sie die Passwort-Verwaltung ändern können, wird in Zimbra nicht verwendet.<br> Die standardmäßige Passwort-Sicherheitseinstellung erfordert mindestens 10 alphanumerische Zeichen, 1 Sonderzeichen, 1 Großbuchstaben.|❌|
 |**Spoofing**| Spoofing ist das Versenden einer E-Mail von einer anderen Identität als dem E-Mail-Account, auf dem Sie authentifiziert sind. Diese Vorgehensweise ist nicht mit den SPF- und DKIM-Sicherheitsprotokollen kompatibel, die für die Zustellung von E-Mails erforderlich sind.<br>Von Zimbra aus können Sie eine andere Identität als die des verwendeten E-Mail-Accounts konfigurieren, sofern eine Delegierung erfolgt.|❌|
+|**Unterstützung für Transport Layer Security (TLS) 1.0 und 1.1.**|Die Versionen 1.0 und 1.1 gelten als anfällig für Angriffe und entsprechen nicht mehr den aktuellen Sicherheitsstandards.<br>Wenn Ihr Internetbrowser **mindestens TLS 1.2** nicht unterstützt, wird empfohlen, die neuesten Sicherheits- und Funktionsupdates zu installieren.|❌|
 
 ## Weiterführende Informationen
 

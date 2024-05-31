@@ -107,6 +107,7 @@ Para rescindir a sua oferta na secção « Serviços » do seu espaço OVHcloud,
 |**Rodapé**<br>(assinatura de domínio configurável através da Área de Cliente)|Esta funcionalidade não estará presente para a nova infraestrutura Zimbra. No entanto, é sempre possível configurar uma assinatura ao nível da conta de e-mail.|❌|
 |**Política de Segurança**|Esta funcionalidade da Área de Cliente, que permite alterar a política de gestão das palavras-passe, não estará presente numa primeira fase na solução Zimbra.<br>A política de segurança aplicada por predefinição nas palavras-passe requer um mínimo de 10 caracteres alfanuméricos, 1 caráter especial, 1 maiúscula.|❌|
 |**Spoofing**|O spoofing consiste em enviar um e-mail a partir de uma identidade diferente da conta de e-mail na qual é autenticado. Esta prática é incompatível com os protocolos de segurança SPF e DKIM necessários para a correta entrega dos e-mails.<br>A partir do Zimbra, pode configurar outra identidade diferente da conta de e-mail utilizada, desde que seja aplicada uma delegação.|❌|
+|**Suporte para TLS (Transport Layer Security) 1.0 e 1.1.**|As versões 1.0 e 1.1 são consideradas vulneráveis a ataques e já não cumprem as normas de segurança atuais.<br>Se o seu browser da Internet não suportar **o protocolo TLS 1.2** ou posterior, recomendamos que instale as mais recentes atualizações de segurança e funcionalidade.|❌|
 
 ## Saiba mais
 

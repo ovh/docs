@@ -107,6 +107,7 @@ Per disattivare il servizio nella sezione "I tuoi servizi" dello spazio OVHcloud
 |**Piè di pagina**<br>(firma di un dominio configurabile dallo Spazio Cliente)|Questa funzionalità non sarà presente sulla nuova infrastruttura Zimbra. È comunque possibile configurare una firma a livello di account email.|❌|
 |**Politica di Sicurezza**|Questa funzionalità dello Spazio Cliente che permette di modificare la politica di gestione delle password non sarà presente, in un primo momento, sulla soluzione Zimbra.<br>La politica di sicurezza applicata di default sulle password richiede almeno 10 caratteri alfanumerici, 1 carattere speciale, 1 maiuscolo.|❌|
 |**Spoofing**|Lo spoofing consiste nell'inviare un'email da un'identità diversa dall'account email su cui ti sei autenticato. Questa pratica è incompatibile con i protocolli di sicurezza SPF e DKIM necessari per la corretta consegna delle email.<br>Da Zimbra, è possibile configurare un'altra identità diversa dall'account email utilizzato, a condizione che sia applicata una delega.|❌|
+|**Supporto per il protocollo di sicurezza TLS (Transport Layer Security) 1.0 e 1.1.**|Le versioni 1.0 e 1.1 sono considerate vulnerabili agli attacchi e non soddisfano più gli standard di sicurezza attuali.<br>Se il browser utilizzato non supporta **come minimo il protocollo TLS 1.2**, si consiglia di installare gli ultimi aggiornamenti di sicurezza e funzionalità.|❌|
 
 ## Per saperne di più
 
