@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Here you will find the most frequently asked questions about the migration of OVHcloud MX Plan solution to Zimbra
-updated: 2024-03-27
+updated: 2024-05-31
 ---
 
 ## Objective
@@ -103,6 +103,7 @@ To cancel your solution in the "My services" section of the OVHcloud Control Pan
 |**Footer**<br>(domain name signature configurable via the Control Panel)|This feature will not be present in the new Zimbra infrastructure. However, you can still configure a signature at the email account level.|❌|
 |**Security Policy**|This Control Panel feature that allows you to change the password management policy will not be present on the Zimbra solution.<br>The default security policy for passwords requires a minimum of 10 alphanumeric characters, 1 special character, 1 upper-case letter.|❌|
 |**Spoofing**|Spoofing involves sending an email from an identity that is different from the email account you have been authenticated to. This practice is incompatible with the SPF and DKIM security protocols required for email deliverability.<br>From Zimbra, you can configure another identity that is different from the email account used, provided that delegation is applied.|❌|
+|**Support for Transport Layer Security (TLS) 1.0 and 1.1.**|Versions 1.0 and 1.1 are considered vulnerable to attack and no longer meet current security standards.<br>If your web browser does not support **at least TLS 1.2**, we recommend installing the latest security and feature updates.|❌|
 
 ## Go further
 

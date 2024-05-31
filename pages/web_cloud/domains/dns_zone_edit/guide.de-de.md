@@ -1,7 +1,7 @@
 ---
 title: 'Bearbeiten der OVHcloud DNS-Zone'
 excerpt: 'Erfahren Sie hier, wie Sie eine DNS-Zone über Ihr Kundencenter bearbeiten'
-updated: 2024-04-12
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -30,7 +30,7 @@ Wenn Sie *mydomain.ovh* eingeben, werden die zu dieser Domain gehörenden **DNS 
 
 ### Die DNS-Zone 
 
-Die DNS-Zone einer Domain ist eine Konfigurationsdatei bestehend aus **Datensätzen**. Mit diesen können Sie Ihre Domain mit den Servern verbinden, auf denen Ihre Internetdienste gehostet werden, wie zum Beispiel Websites (über A-Eintrag) oder E-Mail-Adressen (MX-Eintrag).
+Die DNS-Zone einer Domain ist eine Konfigurationsdatei bestehend aus **Datensätzen** (*Records*). Mit diesen können Sie Ihre Domain mit den Servern verbinden, auf denen Ihre Internetdienste gehostet werden, wie zum Beispiel Websites (über A-Eintrag) oder E-Mail-Adressen (MX-Eintrag).
 
 ![DNS](images/dns-zone-mydomain-ovh.png){.thumbnail}
 
@@ -46,7 +46,7 @@ Die DNS-Zone einer Domain ist eine Konfigurationsdatei bestehend aus **Datensät
 >
 > - Wenn Ihre Domain nicht die DNS-Server von OVHcloud verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, der die Konfiguration Ihrer Domain verwaltet.
 > 
-> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob diese unsere Konfiguration verwendet. Gehen Sie hierzu in Ihrem [Kundencenter](/links/manager) in den Tab `DNS Server`{.action}  der betreffenden Domain.
+> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob diese OVHcloud DNS-Server verwendet. Gehen Sie hierzu in Ihrem [Kundencenter](/links/manager) in den Tab `DNS-Server`{.action} der betreffenden Domain.
 >
 > Seien Sie in jedem Fall vorsichtig, wenn Sie Ihre DNS-Server ändern. Die alte Konfiguration, die auf Ihre Domain angewendet werden kann, wird nicht mehr aktiv sein, wenn Sie die neue DNS-Zone bei OVHcloud aktivieren und nicht zuvor neu konfiguriert und personalisiert haben.<br>
 > Sie können nur eine aktive DNS-Zone pro Domainname haben.
@@ -60,19 +60,19 @@ Die DNS-Zone einer Domain ist eine Konfigurationsdatei bestehend aus **Datensät
 >
 > Im Gegensatz zum Domainnamen gibt es für eine DNS-Zone keinen Inhaber, lediglich die Kontaktverwaltung bei OVHcloud. Wenn Sie die Verwaltung Ihrer DNS-Zone auf einen anderen OVHcloud Kunden-Account übertragen möchten, folgen Sie unserer Anleitung [Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts).
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS-Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Domainnamen`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS-Zone`{.action}.
 
 Die Tabelle zeigt für jede Zeile einen DNS-Eintrag zu Ihrer Domain bei OVHCloud an. Sie können die Einträge nach dem Eintragstyp oder der zugehörigen Domain filtern.
 
 ![dnszone](images/tab.png){.thumbnail}
 
-### DNS Einträge
+### DNS-Einträge
 
 **Seien Sie vorsichtig bei der Bearbeitung der DNS-Zone**: Wenn Sie eine falsche Änderung vornehmen, kann es sein, dass Ihre Website nicht mehr erreichbar ist oder Ihre E-Mail-Adressen keine neuen Nachrichten empfangen können.
 
 Ein genaueres Verständnis der verschiedenen Einträge ermöglicht es Ihnen, die notwendigen Änderungen der DNS-Zone Ihrer Domain besser zu bestimmen. Bitte lesen Sie die unten stehende Liste. Sie enthält die Ziele und Besonderheiten jeder Registrierung.
 
-#### Verweiseinträge
+#### Verweiseinträge <a name="pointer-records"></a>
 
 Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Registerkarten klicken.
 
@@ -135,7 +135,7 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >> > Ändern Sie nicht die NS-Einträge Ihrer DNS-Zone über den Button `Im Textmodus bearbeiten`{.action}, um DNS-Server außerhalb von OVHcloud zu verwenden. Diese DNS-Zone funktioniert ausschließlich mit **OVHcloud DNS Servern**.
 >> >
 
-#### E-Mail Einträge
+#### E-Mail Einträge <a name="mail-records"></a>
 
 Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Registerkarten klicken.
 
@@ -161,7 +161,7 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
 >> Unterstützt die Authentifizierung von E-Mails in Verbindung mit SPF- und/oder DKIM-Methoden. Dieser Wert wird Ihnen von Ihrem E-Mail-Anbieter mitgeteilt (falls diese Funktion angeboten wird) und wird mindestens mit einem SPF- oder DKIM-Eintrag verbunden.
 
-#### Erweiterte Einträge
+#### Erweiterte Einträge <a name="extented-records"></a>
 
 Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Registerkarten klicken.
 
@@ -187,8 +187,9 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >>
 >> > [!warning]
 >> >
->> > Wenn Sie ein Let's Encrypt Zertifikat mit Ihrer Domain auf einem Shared Hosting bei OVHcloud verwenden und einen CAA-Eintrag anlegen, verhindert dieser die Erneuerung des SSL-Zertifikats von Let's Encrypt.
+>> > Wenn Sie einen CAA-Eintrag für eine Domain konfigurieren, gilt diese Konfiguration auch für **alle Subdomains** dieser Domain.
 >> >
+>> > Wenn Sie ein Let's Encrypt SSL-Zertifikat für Ihre Domain auf einem Webhosting von OVHcloud einsetzen und einen CAA-Eintrag verwenden, verhindert dieser die Regenerierung des Let's Encrypt SSL-Zertifikats.
 >>
 > **NAPTR**
 >> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
@@ -256,28 +257,44 @@ Sie können mehrere Einträge auf einmal löschen, indem Sie im linken Teil der 
 
 ![dnszone](images/delete-record.png){.thumbnail}
 
-#### Die DNS-Zone zurücksetzen
+### DNS-Zone zurücksetzen
 
-Sie können Ihre DNS-Zone auf zwei Zustände zurücksetzen:
+Durch das Zurücksetzen Ihrer DNS-Zone können Sie zu einer minimalen Konfiguration zurückkehren. Dabei werden die Standardeinträge von OVHcloud oder Ihrer Dienste verwendet. Sie können Ihren Domainnamen auch eigene E-Mail- und Webhosting-Dienste zuordnen.
 
-- Auf die Standardeinträge für OVHcloud DNS-Zonen mit einer minimalen Konfiguration.
-- Auf eine leere DNS-Zone (mit Ausnahme der NS-Einträge), um später eine manuelle Konfiguration einzurichten.
+> [!alert]
+>
+> Bevor Sie Ihre DNS-Zone zurücksetzen, vergewissern Sie sich, dass Ihr Domainname nicht mit anderen Diensten wie Websites oder E-Mail-Adressen verbunden ist.
+>
 
 Klicken Sie im Tab `DNS-Zone`{.action} auf `Meine DNS-Zone zurücksetzen`{.action} und folgen Sie den angezeigten Schritten.
 
 ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
-Sie haben die Wahl zwischen folgenden Optionen:
+**Schritt 1**
 
-- `Ja, ich möchte meine DNS-Zone mit den Mindesteinträgen zurücksetzen`. Damit können Sie Ihren Domainnamen und Ihren E-Mail-Dienst folgendermaßen  umleiten:
-    - Auf einen Ihrer Dienste unter "Web Cloud" im OVHcloud Kundencenter.
-    - Auf den OVHcloud Weiterleitungsdienst, verfügbar über den Tab `Weiterleitung`{.action} Ihres Domainnamens in den Bereichen `Domainnamen`{.action} und `E-Mails`{.action}.
-    - Auf eigene DNS-Einträge, wenn Sie `Personalisiert` auswählen. Geben Sie dann Einträge Ihrer Wahl vom Typ `A` und/oder `MX` ein.
-- `Nein, aber ich möchte meine DNS-Zone zurücksetzen`. Ihre DNS-Zone wird dann leer sein, mit Ausnahme der NS-Einträge, die automatisch entsprechend der  OVHcloud DNS-Server für Ihre DNS-Zone eingestellt werden.
+Beantworten Sie die Frage `Möchten Sie die minimalen Einträge beim Zurücksetzen Ihrer DNS-Zone aktivieren?`. Die Festlegung von Minimaleinträgen in einer DNS-Zone verhindert Fehlerantworten bei der Abfrage des Domainnamens.
 
-> [!primary]
->
-> Bevor Sie Ihre DNS-Zone zurücksetzen, überprüfen Sie, dass Ihr Domainname nicht mit derzeit aktiv verwendeten Dienstleistungen verbunden ist, wie zum Beispiel Websites oder E-Mail-Adressen.
+- `Ja, ich möchte meine DNS Zone mit den minimalen Einträgen zurücksetzen`
+- `Nein, aber ich möchte meine DNS Zone zurücksetzen`
+
+**Schritt 2**
+
+Unabhängig davon, welche Option Sie in Schritt 1 gewählt haben, müssen Werte für Abfragen an Ihren Domainnamen gesetzt werden, um fehlerhafte DNS-Antworten zu verhindern.
+
+Klicken Sie auf die Tabs, um die Details der verfügbaren Optionen anzuzeigen:
+> [!tabs]
+> **IP-Adresse Ihres Hostings**
+>> - `Weiterleitung`: Ihr Domainname verweist auf den Weiterleitungsserver von OVHcloud, der es ermöglicht, eine OVHcloud Startseite anzuzeigen und so einen DNS-Fehler zu vermeiden.<br>
+>> - `OVHcloud Webhosting`: Ihr Domainname verweist auf die IP-Adresse des Webhostings, das mit dem Domainnamen verbunden ist.<br>
+>> - `Benutzerdefiniert`: Legen Sie die IPv4-Adresse ([A-Eintrag](#pointer-records)) des Webhostings fest, auf das verwiesen werden soll. <br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
+> **Adresse Ihres Mailservers**
+>> - `Weiterleitung`: Ihr Domainname verweist auf Weiterleitungsserver für E-Mails. Dies ist besonders nützlich, wenn Sie keine E-Mail-Dienste nutzen, aber E-Mails an eine oder mehrere E-Mail-Adressen außerhalb Ihres Domainnamens weiterleiten möchten.<br>
+>> - `OVHcloud E-Mail-Server`: Zu verwenden, wenn Sie ein Webhosting-E-Mail-Angebot nutzen.<br>
+>> - `Benutzerdefiniert`: Legen Sie die URL und die Priorität des E-Mail-Servers ([MX-Eintrag](#mail-records)) fest, auf den verwiesen werden soll.<br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
 
 ### Propagationszeit
 
