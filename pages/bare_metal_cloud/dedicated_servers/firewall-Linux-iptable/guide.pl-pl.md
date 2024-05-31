@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja firewalla w systemie Linux z systemem iptables
 excerpt: Dowiedz się, jak zabezpieczyć serwer korzystając z iptables
-updated: 2022-10-18
+updated: 2024-05-31
 ---
 
 > [!primary]
@@ -56,9 +56,18 @@ iptables jest domyślnie zainstalowany na większości systemów Linux. Aby potw
 sudo apt-get install iptables
 ```
 
-Przykład wydania w Ubuntu potwierdza, że najnowsza wersja iptables jest już dostępna:
+Aby zapewnić trwałość reguł iptables po ponownym uruchomieniu komputera, należy zainstalować pakiet iptables persistent przy użyciu następującego polecenia:
 
-![wersja-iptables](images/step2-version-iptables.PNG){.thumbnail}
+```bash
+sudo apt-get install iptables-persistent
+```
+
+Po zainstalowaniu tego pakietu folder iptables będzie zawierał dwa pliki dla reguł IPV4 i IPV6:
+
+```bash
+sudo /etc/iptables/rules.v4
+sudo /etc/iptables/rules.v6
+```
 
 Zwykle polecenie iptables jest następujące:
 
@@ -211,11 +220,20 @@ Zastąp `Number` numerem linii reguły, którą chcesz usunąć.
 Podczas restartu systemu, iptables nie zachowuje reguł, które utworzyłeś.
 Za każdym razem, gdy skonfigurujesz iptables w Linuxie, wszystkie wprowadzone przez Ciebie zmiany dotyczą tylko do kolejnego restartu.
 
-Aby zarejestrować reguły w systemach opartych na Ubuntu, wprowadź:
+Aby zapisać reguły w systemach opartych na Ubuntu, należy najpierw zalogować się jako root za pomocą polecenia `sudo su` :
 
 ```bash
-sudo -s iptables-save -c
+ubuntu@server:~$ sudo su
+root@server:/home/ubuntu#
 ```
+
+Następnie uruchom następujące polecenie: 
+
+```bash
+iptables-save > /etc/iptables/rules.v4
+```
+
+Ta operacja zapisuje reguły bezpośrednio w folderze IPV4.
 
 Po kolejnym uruchomieniu systemu iptables automatycznie przeładuje reguły firewalla.
 
