@@ -107,9 +107,10 @@ Aby anulować ofertę w sekcji „Moje usługi” w przestrzeni OVHCloud, zapozn
 |**Stopka**<br>(podpis domeny konfigurowalny w Panelu klienta)|Ta funkcja nie będzie dostępna w nowej infrastrukturze Zimbra. Nadal można jednak skonfigurować podpis na poziomie konta e-mail.|❌|
 |**Polityka bezpieczeństwa**|Funkcja Panelu klienta umożliwiająca zmianę polityki zarządzania hasłami nie będzie początkowo dostępna w przypadku rozwiązania Zimbra.<br>Domyślna polityka bezpieczeństwa dotycząca haseł wymaga minimum 10 znaków alfanumerycznych, 1 znaku specjalnego, 1 wielkiej litery.|❌|
 |**Spoofing**|Spoofing polega na wysyłaniu e-maila z innej tożsamości niż konto e-mail, na którym jesteś uwierzytelniony. Taka praktyka jest niezgodna z protokołami zabezpieczeń SPF i DKIM wymaganymi do prawidłowego dostarczania wiadomości e-mail.<br>Z poziomu Zimbra można skonfigurować inną tożsamość używanego konta e-mail, pod warunkiem zastosowania uprawnienia.|❌|
+|**Obsługa protokołu zabezpieczeń TLS (Transport Layer Security) 1.0 i 1.1.**|Wersje 1.0 i 1.1 są uważane za narażone na ataki i nie spełniają aktualnych standardów bezpieczeństwa.<br>Jeśli przeglądarka internetowa nie obsługuje protokołu **TLS 1.2**, zalecamy zainstalowanie najnowszych aktualizacji zabezpieczeń i funkcji.|❌|
 
 ## Sprawdź również
 
 [MX Plan - Korzystaj z interfejsu Webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
