@@ -97,6 +97,7 @@
         + [Hosted Exchange - Shared Responsibility](web_cloud/email_and_collaborative_solutions/microsoft_exchange/responsibility-model)
         + [Email Pro - Shared Responsibility](web_cloud/email_and_collaborative_solutions/email_pro/responsibility_model)
         + [Domains - Shared Responsibility](web_cloud/domains/responsibility_model_domains)
+        + [Data Processing - Responsibility Model](public_cloud/data_analytics/data_processing/responsibility_model)
 + Bare Metal Cloud
     + [Dedicated Servers](products/bare-metal-cloud-dedicated-servers)
         + [Getting started](bare-metal-cloud-dedicated-servers-getting-started)
@@ -1067,6 +1068,7 @@
                 + [Notebooks for Apache Spark - Getting started](public_cloud/data_analytics/data_processing/23_GETTINGSTARTED_create-a-notebook)
                 + [FAQ](public_cloud/data_analytics/data_processing/faq)
                 + [Security specifications for Data Processing](public_cloud/data_analytics/data_processing/security_specifications)
+                +  [Data Processing - Responsibility Model](public_cloud/data_analytics/data_processing/responsibility_model)
             + [How to](public-cloud-data-analytics-data-processing-how-to)
                 + [How to activate the Data Processing service for your cloud project](public_cloud/data_analytics/data_processing/30_HOWTO_activate_project)
                 + [How to submit a Python job on the Data Processing platform using the OVHcloud Control Panel](public_cloud/data_analytics/data_processing/31_HOWTO_submit-python-ui)
