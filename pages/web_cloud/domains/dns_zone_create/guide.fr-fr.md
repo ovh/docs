@@ -98,7 +98,7 @@ Elle porte le nom de votre nom de domaine et un logo en forme de globe étiquet�
 > [!primary]
 > A ce stade, si vous avez un logo en forme de globe uniquement (sans le terme *DNS* écrit à l'intérieur), c'est que le nom de domaine est déjà géré dans votre espace client OVHcloud. 
 >
-> Si vous êtes le contact *Administrateur* de ce dernier, vous pourrez dans ce cas directement changer les **serveurs DNS** à l'aide de notre [guide](/pages/web_cloud/domains/dns_server_edit) sur le sujet.
+> Si vous êtes le contact *Administrateur* de ce dernier, vous pourrez dans ce cas directement changer les **serveurs DNS** à l'aide de notre [guide](/pages/web_cloud/domains/dns_server_general_information) sur le sujet.
 >
 > Pour rappel, vérifiez bien, avant de changer les **serveurs DNS** déclarés auprès de votre nom de domaine, que la configuration de la nouvelle zone DNS correspond bien à vos attentes.
 >
