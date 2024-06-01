@@ -1,7 +1,7 @@
 ---
 title: "Qu'est ce qu'un serveur DNS ?"
 excerpt: 'Découvrez le rôle des serveurs DNS, ce qu'ils contiennent et comment ils fonctionnent avec un nom de domaine'
-updated: 2024-05-31
+updated: 2024-06-03
 ---
 
 ## Objectif
@@ -32,14 +32,11 @@ Pour chaque nom de domaine contenu dans l'annuaire est associé un fichier de co
 
 Une zone DNS contient des informations techniques, appelées *enregistrements DNS*. La zone DNS est comme un poste d'aiguillage.
 
-Par exemple, vous pouvez y préciser :
-
-- L'adresse IP (enregistrements DNS de type *A* et *AAAA*) de votre hébergement web pour afficher votre site web avec votre nom de domaine.
-- Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
-- Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.) associés à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
-
 > [!success]
-> Pour plus d'informations sur les zones DNS, consultez notre guide « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) ».
+>
+> - Pour plus d'informations sur les zones DNS, consultez notre guide « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) ».
+> - Consultez ensuite notre guide sur [Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_general_information) pour une meilleure compréhension de l'ensemble.
+>
 
 De ce fait, ce sont les **serveurs DNS** qui doivent être déclarés auprès du nom de domaine pour utiliser la zone DNS qu'ils hébergent. 
 
@@ -54,7 +51,7 @@ De manière générale, pour que la zone DNS associée à un nom de domaine pré
 De plus, les **serveurs DNS** fonctionnent généralement par paire :
 
 1. Un serveur DNS *principal* qui redirige les flux de requêtes reçus par le nom de domaine vers la zone DNS (hébergée sur le serveur DNS pour le nom de domaine). La zone DNS effectue ainsi la *résolution DNS* pour rediriger les flux vers les bons services (serveurs, site web, e-mails, etc.) associés au nom de domaine.
-2. Un serveur DNS *secondaire* dit *de secours* qui est utilisé si le serveur *principal* est saturé, indisponible ou répond moins rapidement que le serveur *secondaire*.
+2. Un serveur DNS *secondaire* dit *de secours* qui est utilisé si le serveur DNS *principal* est saturé, indisponible ou répond moins rapidement que le serveur DNS *secondaire*.
 
 Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS** à déclarer auprès de votre nom de domaine. Dans ce cas, renseignez tous les serveurs DNS proposés par votre fournisseur DNS.
 

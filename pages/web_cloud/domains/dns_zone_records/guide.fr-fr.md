@@ -1,7 +1,7 @@
 ---
 title: "Les enregistrements DNS"
 excerpt: 'Découvrez les différents types d'enregistrements DNS disponibles dans une zone DNS OVHcloud'
-updated: 2024-05-31
+updated: 2024-06-03
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ Ce guide a pour objectif de vous présenter les différents types d'enregistreme
 - [Gérer l’historique d'une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_history)
 - [Supprimer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_deletion)
 
-**Découvrez les différents types d'enregistrements DNS.**
+**Découvrez les différents types d'enregistrements DNS disponibles dans une zone DNS OVHcloud.**
 
 ## En pratique
 

@@ -1,7 +1,7 @@
 ---
 title: "Qu'est ce qu'une zone DNS ?"
 excerpt: 'Découvrez le rôle d'une zone DNS et les enregistrements qu'elle contient pour un nom de domaine'
-updated: 2024-05-31
+updated: 2024-06-03
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'�
 
 Il est essentiel de différencier les **serveurs DNS** et la **zone DNS**. En effet, c'est au niveau du **serveur DNS** qu'est configurée la **zone DNS**. 
 
-Pour une méilleure compréhension de l'ensemble, nous vous recommandons au préalable de consulter notre guide « [Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_general_information) ».
+Pour une meilleure compréhension de l'ensemble, nous vous recommandons au préalable de consulter notre guide « [Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_general_information) ».
 
 Par exemple, lorsque vous souhaitez accéder au site *domain.tld* via un navigateur internet, votre requête est initialement traitée par cet ensemble DNS qui va l'aiguiller vers l'adresse IP du serveur hébergeant le site *domain.tld*.
 
@@ -22,7 +22,7 @@ Ainsi, lorsque vous tapez *domain.tld*, les **serveurs DNS** associés à ce nom
 
 ### Rôle d'une zone DNS
 
-La zone **D**omain **N**ame **S**ystem (**DNS**) d’un nom de domaine constitue le fichier de configuration de ce dernier. Elle se compose d’informations techniques, appelées *enregistrements DNS*. La zone DNS est, en quelque sorte, comme un centre d'aiguillage pour un nom de domaine.
+La zone DNS d’un nom de domaine constitue le fichier de configuration de ce dernier. Elle se compose d’informations techniques, appelées *enregistrements DNS*. La zone DNS est, en quelque sorte, comme un centre d'aiguillage pour un nom de domaine.
 
 Vous pouvez, par exemple, y préciser :
 
@@ -67,8 +67,8 @@ www              IN A      203.0.113.0
 Dans cet exemple, la zone DNS précise, entre autre, les informations suivantes aux requêtes DNS qui lui parviennent :
 
 - Les serveurs DNS déclarés pour le nom de domaine *domain.tld* sont les serveurs DNS *dns200.anycast.me* et *ns200.anycast.me*.
-- Le serveur doit renvoyer l'adresse IP 203.0.113.0 si une requête  DNS est effectuée vers le domaine *domain.tld* ou le sous-domaine *www.domain.tld*. Derrière l'adresse IP 203.0.113.0 ont peut, par exemple, retrouver le site web *domain.tld*.
-- Pour les e-mails, la zone DNS indique que les requêtes DNS réalisée pour le nom de domaine *domain.tld* doivent être redirigés vers le serveur *mx1.mail.ovh.net* en priorité. Si celui-ci met trop de temps à répondre ou est indisponible, la requête sera redirigée vers le serveur *mx2.mail.ovh.net* et ainsi de suite jusqu'au dernier serveur déclaré *mx3.mail.ovh.net*.
+- Le serveur doit renvoyer l'adresse IP 203.0.113.0 si une requête  DNS est effectuée vers le nom de domaine *domain.tld* ou le sous-domaine *www.domain.tld*. Derrière l'adresse IP 203.0.113.0 ont peut, par exemple, retrouver le site web *domain.tld*.
+- Pour les e-mails, la zone DNS indique que les requêtes DNS réalisée pour les adresses e-mail en *@domain.tld* doivent être redirigés vers le serveur *mx1.mail.ovh.net* en priorité. Si celui-ci met trop de temps à répondre ou est indisponible, la requête sera alors redirigée vers le serveur *mx2.mail.ovh.net* et ainsi de suite jusqu'au dernier serveur déclaré *mx3.mail.ovh.net*.
 - Le SOA de la zone DNS indique que la date de dernière mise à jour de la zone DNS est le 18/05/2024 et que le délai de raffraîchissement de la zone DNS est de 3600 secondes.
 
 ## Aller plus loin
