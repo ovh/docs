@@ -55,13 +55,13 @@ Weitere Informationen finden Sie in unserer [Anleitung zur Sicherung eines Dedic
 sudo apt-get install iptables
 ```
 
-Um sicherzustellen, dass Ihre Iptables-Regeln nach dem Neustart persistent sind, müssen Sie das Paket Iptables persistent mit dem folgenden Befehl installieren:
+Um sicherzustellen, dass Ihre *iptables*-Regeln nach dem Neustart persistent sind, installieren Sie das Paket *iptables-persistent* mit dem folgenden Befehl:
 
 ```bash
 sudo apt-get install iptables-persistent
 ```
 
-Sobald dieses Paket installiert ist, wird der iptables-Ordner zwei Dateien für die IPV4- und IPV6-Regeln enthalten:
+Sobald dieses Paket installiert ist, wird der *iptables*-Ordner zwei Dateien für die IPV4- und IPV6-Regeln enthalten:
 
 ```bash
 sudo /etc/iptables/rules.v4
