@@ -1,7 +1,7 @@
 ---
 title: "Personnaliser les serveurs DNS d'un nom de domaine (Glue Records)"
 excerpt: 'Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
-updated: 2024-03-07
+updated: 2024-06-03
 ---
 
 ## Objectif
@@ -57,6 +57,13 @@ Dans notre exemple illustré ci-dessus, le domaine **domain.tld** utilise actuel
 Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
 
 ### Étape 2 : ajouter les enregistrements « GLUE » <a name="step2"></a>
+
+> [!alert]
+>
+> Pour les extensions *.eu*,*.it*, *.be* et *.de*, les registres de ces extensions ne considèrenet pas les enregistrements « GLUE » comme des « objets » mais comme des « attributs ».
+>
+> Par conséquent et pour ces extensions, passez **directement à l'étape 3** du présent guide sans réaliser l'étape 2.
+>
 
 > [!success]
 >
@@ -129,6 +136,13 @@ Vous devez modifier les serveurs DNS de votre nom de domaine en remplaçant les 
 Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez *le nom de domaine pour lequel vous souhaitez personnaliser les serveurs DNS*.
  
 Positionnez-vous sur l'onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier les serveurs DNS`{.action}. Remplacez alors vos serveurs DNS actuels par ceux que vous souhaitez utiliser en tant que serveur DNS personnalisés. 
+
+> [!alert]
+>
+> Si vos serveurs DNS personnalisées ont été créées avec les extensions *.eu*,*.it*, *.be* et/ou *.de*, renseignez **obligatoirement** l'adresse IP asociée respectivement à chacun de vos serveurs DNS personnalisés.
+>
+> Le cas échéant, les serveurs DNS personnalisés ne seront pas pris en compte correctmeent et ne fonctionneront donc pas avec votre nom de domaine.
+>
 
 Finalisez les étapes et, si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
 
