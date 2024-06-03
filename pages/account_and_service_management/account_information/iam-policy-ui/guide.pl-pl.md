@@ -153,7 +153,7 @@ Dzięki temu będziesz mógł dodawać i usuwać użytkowników lub grupy, do kt
 
 ### Zarządzanie tożsamością
 
-Tożsamość dostępna dla polityk jest zarządzana w zakładce `Identifier`{.action}.
+Tożsamość dostępna dla polityk jest zarządzana w zakładce `Tożsamości`{.action}.
 
 Szczegóły zarządzania użytkownikami znajdziesz w [dokumentacji dedykowanej](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

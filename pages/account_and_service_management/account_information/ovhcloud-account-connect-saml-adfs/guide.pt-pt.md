@@ -133,7 +133,7 @@ Pode aceder ao menu IAM através da entrada dedicada na sua Área de Cliente.
 
 ![Para aceder ao menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-De seguida, clique no separador `Identitades`{.action} para aceder à gestão dos utilizadores locais.
+De seguida, clique no separador `Identidades`{.action} para aceder à gestão dos utilizadores locais.
 
 ![Para aceder ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 

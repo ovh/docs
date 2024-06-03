@@ -44,7 +44,7 @@ Aby uzyskać dostęp do menu IAM, przejdź do Panelu klienta.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Następnie kliknij zakładkę `Identifier`{.action}, aby zarządzać użytkownikami lokalnymi.
+Następnie kliknij zakładkę `Tożsamości`{.action}, aby zarządzać użytkownikami lokalnymi.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
