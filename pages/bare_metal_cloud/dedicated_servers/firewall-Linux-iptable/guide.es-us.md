@@ -34,7 +34,7 @@ Los cortafuegos funcionan estableciendo reglas que regulan el tráfico autorizad
 > Esta guía explica los comandos para una distribución Ubuntu Server.
 >
 > Esta guía es genérica.
- Tenga en cuenta que deberá adaptar los comandos en función de la distribución o el sistema operativo que utilice. En algunos casos le aconsejamos que utilice herramientas externas. Si necesita ayuda sobre el uso de dichas herramientas, puede consultar su documentación oficial.  
+> Tenga en cuenta que deberá adaptar los comandos en función de la distribución o el sistema operativo que utilice. En algunos casos le aconsejamos que utilice herramientas externas. Si necesita ayuda sobre el uso de dichas herramientas, puede consultar su documentación oficial.  
 >
 
 ### 1. Actualizar el sistema
@@ -57,7 +57,7 @@ iptables instalados por defecto en la mayoría de sistemas Linux. Para confirmar
 sudo apt-get install iptables
 ```
 
-« Para asegurar que sus reglas iptables son persistentes después de reiniciar, necesita instalar el paquete iptables persistent usando el siguiente comando: »
+Para asegurar que sus reglas iptables son persistentes después de reiniciar, necesita instalar el paquete iptables persistent usando el siguiente comando:
 
 ```bash
 sudo apt-get install iptables-persistent
