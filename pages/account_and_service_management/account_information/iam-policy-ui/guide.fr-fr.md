@@ -25,6 +25,8 @@ Par exemple, nous pouvons créer une politique pour donner à un utilisateur nom
 
 ![politiques IAM](images/iam_policies.png){.thumbnail}
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ynPqXBZpUpY?si=XDh2pZjMZ7Hv31cY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Prérequis
 
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
