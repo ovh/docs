@@ -1,7 +1,7 @@
 ---
 title: "Responsibility model for Data Processing"
-excerpt: "Shared responsibilities between OVHcloud and the customer for Data Processing service"
-updated: 2024-05-31
+excerpt: "Shared responsibilities between OVHcloud and the customer for the Data Processing service"
+updated: 2024-06-03
 ---
 
 ## Objective
@@ -23,7 +23,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Learn about the capabilities and limitations of the Services detailed in the OVHcloud documentation and particular conditions | RA | CI |
 | Choose the service location | RA | I |
-| Setup your cluster following business needs | RA | I |
+| Set up your cluster following business needs | RA | I |
 | Add a storage container  | RA | CI |
 | Provide personal data needed for service subscription | RA | I |
 
@@ -34,21 +34,20 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Produce, route, deliver and maintain physical machines, virtual machines and hosting buildings |  | RA |
-| Buy and hold licences and usage rights for software provided by OVHcloud (Apache Sparck) |  | RA |
+| Buy and hold licences and usage rights for software provided by OVHcloud (Apache Spark) |  | RA |
 
 
 #### 2.2. Reversibility model
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Import your job code following extensions supported by Apache Sparck technology, including S3 or SWIFT technology for data storage by using API calls  | RA | I |
+| Import your job code following extensions supported by Apache Spark technology, including S3 or SWIFT technology for data storage by using API calls  | RA | I |
 
 #### 2.3. Customer Information System setup
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Launch jobs once you have  retrieved your API v6 token | RA | I |
-
 
 ### 3. Service usage
 
@@ -75,8 +74,8 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Monitor the functioning of physical and virtual devices in support of your platform.sh projects|  | RA |
-| Monitor the functionning of ressources available (jobs execution) with Grafana or any other monitoring tool | RA |  |
-| Retain logs of management infrastructure service |  | RA |
+| Monitor the functionning of resources available (jobs execution) with Grafana or any other monitoring tool | RA |  |
+| Retain logs of the management infrastructure service |  | RA |
 | Retain logs of your jobs execution | RA | I |
 
 ##### **3.1.4. Storage**
@@ -119,7 +118,6 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Notify incidents for the service platform availability | A | I |
 | Process incidents on the service platform dysfunctioning (opened tickets and contacts) | I | RA |
 
-
 ##### **3.2.2. Changes**
 
 | **Activity** | **Customer** | **OVHcloud** |
@@ -140,7 +138,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Manage reversibility operations | RA |  |
-| Migrate/transfer data (job code, processed data, logs)  following extensions supported by Apache Sparck technology, including S3 or SWIFT technology for data storage by using API calls | RA |  |
+| Migrate/transfer data (job code, processed data, logs)  following extensions supported by Apache Spark technology, including S3 or SWIFT technology for data storage by using API calls | RA |  |
 
 ### 5. End of service
 
@@ -148,7 +146,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Delete your project and decommisionnate the service | RA | I |
+| Delete your project and decommission the service | RA | I |
 | Release allocated resources following service termination |  | RA |
 
 ## Go further
