@@ -607,7 +607,7 @@
             + [Managing instances from the OVHcloud Control Panel](public-cloud-compute-instance-management-control-panel)
                 + [Backing up an instance](public_cloud/compute/save_an_instance)
                 + [Using instance backups to create or restore an instance](public_cloud/compute/create_restore_a_virtual_server_with_a_backup)
-                + [Putting an instance in rescue mode](public_cloud/compute/put_an_instance_in_rescue_mode)
+                + [How to activate rescue mode on a Public Cloud instance](public_cloud/compute/put_an_instance_in_rescue_mode)
                 + [Putting a Metal instance in rescue mode](public_cloud/compute/rescue_mode_metal_instance)
                 + [Replacing your lost SSH key pair](public_cloud/compute/replacing_lost_ssh_key)
                 + [Deploying a GPU instance](public_cloud/compute/deploy_a_gpu_instance)

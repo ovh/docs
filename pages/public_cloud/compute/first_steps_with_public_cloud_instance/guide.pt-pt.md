@@ -86,7 +86,7 @@ Clique em `Iniciar`{.action} para reativar a instância.
 
 Clique em `Reiniciar em modo de rescue`{.action}.
 
-Isto irá ativar o modo de rescue da instância. Consulte o nosso manual [Passar uma instância em modo de rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) para obter informações detalhadas.
+Isto irá ativar o modo de rescue da instância. Consulte o nosso manual [Como ativar o modo rescue numa instância Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) para obter informações detalhadas.
 
 #### Reiniciar uma instância
 

@@ -86,7 +86,7 @@ Clicca su `Comincia ora`{.action} per riattivare l'istanza.
 
 Clicca su `Riavvia in modalità Rescue`{.action}.
 
-Questa operazione attiverà la modalità Rescue dell'istanza. Per maggiori informazioni, consulta la guida [Riavvia la tua istanza in Rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
+Questa operazione attiverà la modalità Rescue dell'istanza. Per maggiori informazioni, consulta la guida [Attivare il Rescue mode su un’istanza Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
 
 #### Riavvia l’istanza
 

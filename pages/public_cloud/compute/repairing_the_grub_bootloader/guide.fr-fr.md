@@ -10,7 +10,7 @@ Il est possible que vous deviez réparer le bootloader GRUB. Ce guide va vous pe
 
 ## Prérequis
 
-- L'instance doit être en mode rescue (Vous pouvez consulter le guide [Passer une instance en mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
+- L'instance doit être en mode rescue (Vous pouvez consulter le guide [Comment activer le mode rescue sur une instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
 
 ## En pratique
 
@@ -57,7 +57,7 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Vous pouvez maintenant sortir l'instance du mode rescue. (Voir le guide [Passer une instance en mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
+Vous pouvez maintenant sortir l'instance du mode rescue. (Voir le guide [Comment activer le mode rescue sur une instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
 
 ## Aller plus loin
 
