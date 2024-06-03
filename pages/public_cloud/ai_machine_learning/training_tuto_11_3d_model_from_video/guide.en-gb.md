@@ -46,14 +46,19 @@ The 3 main steps (prepare, process, extract) have their targets in the Makefile 
 
 ## Requirements
 
-**Tooling:**
+**Development tools:**
 
 - git
 - make
 - jq
 - blender
 - python/pip
-- ovhai
+
+**OVHcloud account and tools**
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed
+- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 
 ## Instructions
 
