@@ -60,6 +60,8 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 >
 > Consultez notre guide sur les [enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) afin de mieux appréhender vos manipulations DNS.
 >
+> N'hésitez pas non plus à consultez notre guide relatifs aux [sous-domaines](/pages/web_cloud/domains/domain_create_subdomains) pour plus d'informations sur le sujet.
+>
 
 Vous pouvez éditer la zone DNS OVHcloud de votre nom de domaine en ajoutant, modifiant ou en supprimant un enregistrement DNS. Pour cela, deux possibilités s'offrent à vous :
 
