@@ -68,7 +68,7 @@ Dans cet exemple, la zone DNS précise, entre autre, les informations suivantes 
 
 - Les serveurs DNS déclarés pour le nom de domaine *domain.tld* sont les serveurs DNS *dns200.anycast.me* et *ns200.anycast.me*.
 - Le serveur doit renvoyer l'adresse IP 203.0.113.0 si une requête DNS est effectuée vers le nom de domaine *domain.tld* ou le sous-domaine *www.domain.tld*. Derrière l'adresse IP 203.0.113.0 ont peut, par exemple, retrouver le site web *domain.tld*.
-- Pour les e-mails, la zone DNS indique que les requêtes DNS réalisée pour les adresses e-mail en *@domain.tld* doivent être redirigés vers le serveur *mx1.mail.ovh.net* en priorité. Si celui-ci met trop de temps à répondre ou est indisponible, la requête sera alors redirigée vers le serveur *mx2.mail.ovh.net* et ainsi de suite jusqu'au dernier serveur déclaré *mx3.mail.ovh.net*.
+- Pour les e-mails, la zone DNS indique que les requêtes DNS réalisées pour les adresses e-mail en *@domain.tld* doivent être redirigées vers le serveur *mx1.mail.ovh.net* en priorité. Si celui-ci met trop de temps à répondre ou est indisponible, la requête sera alors redirigée vers le serveur *mx2.mail.ovh.net* et ainsi de suite jusqu'au dernier serveur déclaré *mx3.mail.ovh.net*.
 - Le SOA de la zone DNS indique que la date de dernière mise à jour de la zone DNS est le 18/05/2024 et que le délai de raffraîchissement de la zone DNS est de 3600 secondes.
 
 ## Aller plus loin
