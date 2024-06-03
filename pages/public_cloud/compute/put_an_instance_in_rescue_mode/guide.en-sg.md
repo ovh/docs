@@ -1,7 +1,7 @@
 ---
-title: 'Putting an instance in rescue mode'
-excerpt: 'Find out how to activate rescue mode for your Public Cloud instance'
-updated: 2023-01-04
+title: "How to activate rescue mode on a Public Cloud instance"
+excerpt: "Find out how to enable and use the OVHcloud rescue mode for your Public Cloud instance"
+updated: 2024-06-03
 ---
 
 ## Objective
@@ -10,19 +10,22 @@ Your Public Cloud instance may become inaccessible due to a lost SSH key or conf
 
 In such circumstances, you can use the rescue mode to reconfigure your instance or to recover your data. 
 
-**This guide explains how to put your OVHcloud Public Cloud instance in rescue mode and access your data.**
+**This guide explains how to restart your OVHcloud Public Cloud instance into rescue mode and access your files.**
 
 ## Requirements
 
-- A [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- Administrative access (sudo) to your instance via SSH
+- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
+> [!alert]
+>
+> To date, rescue mode for Metal instances cannot be accessed via the OVHcloud Control Panel. For more information, please refer to our guide on [rescue mode for Metal instances](/pages/public_cloud/compute/rescue_mode_metal_instance).
+
 ### Step 1: Activating rescue mode
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu.
 
 Click on `...`{.action} in the row of the instance concerned and select `Reboot in rescue mode`{.action}.
 
@@ -40,22 +43,33 @@ Once your instance has been rebooted in rescue mode, an information box will dis
 
 When rescue mode has been activated, your instance's data will be attached as an additional disk. You will now need to mount it, by taking the following steps.
 
-First, establish an SSH connection to your instance. Once you are connected, verify the available disks with this command:
+Establish an [SSH connection](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) to your instance. Once you are connected, verify the available disks with this command:
 
 ```bash
-root@instance:/home/admin# lsblk
-
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 253:0 0 1G 0 disk
-└─vda1 253:1 0 1023M 0 part /
-vdb 253:16 0 10G 0 disk
-└─vdb1 253:17 0 10G 0 part
+lsblk
 ```
 
-Next, mount the partition:
+The result will look similar to the following example output:
+
+```console
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda       8:0    0  2.9G  0 disk
+└─sda1    8:1    0  2.9G  0 part /
+sdb       8:16   0   25G  0 disk
+├─sdb1    8:17   0   24G  0 part
+├─sdb14   8:30   0    4M  0 part
+├─sdb15   8:31   0  106M  0 part
+└─sdb16 259:0    0  913M  0 part
+```
+
+In rescue mode, `sda` is the rescue mode disk and `sda1` is the primary rescue partition mounted on `/`.
+
+In this example, the primary disk is `sdb` and the system partition is `sdb1` (indicated by the size).
+
+Mount this partition with the following command:
 
 ```bash
-root@instance:/home/admin# mount /dev/vdb1 /mnt
+mount /dev/sdb1 /mnt/
 ```
 
 Your data will now be accessible from the `/mnt` folder.
@@ -67,7 +81,7 @@ Once you have completed your tasks, you can deactivate rescue mode by rebooting 
 ![control panel](images/rescueexit2022.png){.thumbnail}
 
 > [!warning]
-> If the `Exit rescue mode`{.action} button is not displayed while the instance is in rescue mode, we recommend that you refresh your tab.
+> If the `Exit rescue mode`{.action} button is not displayed while the instance is in rescue mode, we recommend that you refresh your browser tab.
 >
 
 ### Activating rescue mode using the OpenStack API
@@ -75,15 +89,17 @@ Once you have completed your tasks, you can deactivate rescue mode by rebooting 
 You can also activate rescue mode via the OpenStack API using the following command:
 
 ```bash
-root@instance:~# nova rescue INSTANCE_ID
+nova rescue INSTANCE_ID
 ```
 
 To exit rescue mode, use the following command:
 
 ```bash
-root@instance:~# nova unrescue INSTANCE_ID
+nova unrescue INSTANCE_ID
 ```
 
 ## Go further
+
+[How to replace an SSH key pair on an instance](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
 Join our community of users on <https://community.ovh.com/en/>.

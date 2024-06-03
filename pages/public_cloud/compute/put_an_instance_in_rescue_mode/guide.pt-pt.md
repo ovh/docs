@@ -1,26 +1,25 @@
 ---
-title: 'Passar uma instância em modo de rescue'
-excerpt: 'Passar uma instância em modo de rescue'
-updated: 2023-01-04
+title: "Como ativar o modo rescue numa instância Public Cloud"
+excerpt: "Descubra como ativar e utilizar o modo rescue OVHcloud para a sua instância Public Cloud"
+updated: 2024-06-03
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-## Sumário
+## Objetivo
 
 Em caso de má configuração ou perda da chave SSH, é possível que deixe de poder aceder à sua instância.
 
 Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfigurar a sua instância ou recuperar os seus dados. 
 
-**Este guia mostra-lhe como passar uma instância para modo rescue**
+**Este guia explica como reiniciar a instância Public Cloud da OVHcloud em modo rescue e aceder aos seus ficheiros.**
 
 ## Requisitos
 
-* uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud
-* acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
-* acesso administrativo (sudo) à sua instância via SSH
+- uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud
+- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 
 ## Instruções
 
@@ -50,25 +49,36 @@ Depois de reiniciar a instância em modo rescue, uma caixa de informação apres
 
 Sempre que o modo rescue é ativado, a informação relativa à sua instância é anexada sob a forma de um disco adicional. Será então necessário montar este disco, procedendo aos seguintes passos.
 
-Primeiro, estabeleça uma conexão SSH com a sua instância. Assim que estiver conectado, verifique os discos disponíveis utilizando o seguinte comando:
+Primeiro, estabeleça uma [conexão SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) com a sua instância. Assim que estiver conectado, verifique os discos disponíveis utilizando o seguinte comando:
 
-```
-root@instance:/home/admin# lsblk
-
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 253:0 0 1G 0 disk
-└─vda1 253:1 0 1023M 0 part /
-vdb 253:16 0 10G 0 disk
-└─vdb1 253:17 0 10G 0 part
+```bash
+lsblk
 ```
 
-Depois, monte a partição:
+O resultado será semelhante ao seguinte exemplo de saída:
 
-```
-root@instance:/home/admin# mount /dev/vdb1 /mnt
+```console
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda       8:0    0  2.9G  0 disk
+└─sda1    8:1    0  2.9G  0 part /
+sdb       8:16   0   25G  0 disk
+├─sdb1    8:17   0   24G  0 part
+├─sdb14   8:30   0    4M  0 part
+├─sdb15   8:31   0  106M  0 part
+└─sdb16 259:0    0  913M  0 part
 ```
 
-A sua informação estará agora disponível a partir da pasta /mnt.
+No modo rescue, `sda` é o disco em modo rescue e `sda1` é a partição de backup principal montada em `/`.
+
+Neste exemplo, o disco principal é `sdb` e a partição do sistema é `sdb1` (indicada pelo tamanho).
+
+Monte esta partição com o seguinte comando:
+
+```bash
+mount /dev/sdb1 /mnt/
+```
+
+A sua informação estará agora disponível a partir da pasta `/mnt`.
 
 ### Desativar o modo rescue
 
@@ -84,16 +94,18 @@ Após concluir as suas tarefas, pode desativar o modo rescue reiniciando normalm
 
 Pode também ativar o modo rescue através da API OpenStack, utilizando o seguinte comando:
 
-```
-# root@server:~# nova rescue INSTANCE_ID
+```bash
+nova rescue INSTANCE_ID
 ```
 
 Para sair do modo rescue, utilize o comando abaixo:
 
-```
-# root@server:~# nova unrescue INSTANCE_ID
+```bash
+nova unrescue INSTANCE_ID
 ```
 
-## Vá mais longe
+## Quer saber mais?
+
+[Como substituir um par de chaves SSH numa instância](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
