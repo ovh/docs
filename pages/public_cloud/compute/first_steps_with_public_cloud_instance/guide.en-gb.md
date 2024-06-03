@@ -82,7 +82,7 @@ Click on `Boot`{.action} to reactivate the instance.
 
 Click on `Reboot in rescue mode`{.action}.
 
-This will activate rescue mode for the instance. Refer to our guide [Putting an instance in rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) for detailed information.
+This will activate rescue mode for the instance. Refer to our guide [How to activate rescue mode on a Public Cloud instance](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) for detailed information.
 
 #### Restarting the instance
 
