@@ -106,10 +106,23 @@ Pour chaque règle **TCP**, vous devez choisir :
 >
 > **Exemple de configuration :**
 >
-> - Priorité 0 : Autoriser TCP `established`
-> - Priorité 1 : Autoriser UDP, port source 53
-> - Priorité 2 : Autoriser ICMP
-> - Priorité 19 : Refuser l'IPv4
+> Si votre serveur expose des services, vous souhaitez probablement en autoriser l'accès à quiconque :
+>
+> - Priorité 0 : Autoriser le port 22 (par exemple, 22 si vous utilisez SSH avec un port standard, ou 443 si vous avez un serveur web public).
+>
+> Si votre serveur a besoin de contacter des services externes (en dehors du réseau OVHcloud), la réponse qui revient de ces services doit être autorisée pour que la communication soit réussie. La meilleure façon est de définir précisément l'adresse IP, le port et le protocole de l'homologue, par exemple :
+> 
+> - Priorité 1 : Autoriser le port 443 établi à partir de 1.2.3.4 (si votre serveur interroge des services web externes sur 1.2.3.4:443)
+> - Priorité 2 : Autoriser IPv4 à partir de 5.6.7.8 port 3306 (si votre serveur interroge un serveur SQL externe sur 5.6.7.8:3306. Les protocoles TCP et UDP sont autorisés et si vous voulez ouvrir les deux protocoles, vous avez besoin de deux règles. Les règles TCP doivent avoir le drapeau « established »)
+> 
+> Ou, parfois, lorsque l'IP peut être aléatoire, définissons uniquement le protocole et le port :
+>
+> - Priorité 3 : Autoriser le port source UDP 53 (si vous devez interroger un serveur DNS externe. Cette règle peut également être configurée en utilisant TCP à la place ou en parallèle, selon vos besoins).
+>
+> Enfin, pour bloquer tout autre trafic (et donc rendre le pare-feu efficace), nous devons bloquer tous les autres trafics :
+>
+> - Priorité 19 : Refuser IPv4
+>
 
 > [!warning]
 > Les configurations de pare-feu avec seulement des règles de mode « Accept » ne sont pas du tout efficaces. Une instruction doit indiquer ce qui doit être supprimé par le pare-feu. Vous recevrez un avertissement à moins qu'une règle « Refuser » ne soit créée.
@@ -137,7 +150,7 @@ Notez que les règles sont désactivées jusqu'au moment où une attaque est dé
 
 Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (53) restent ouverts lors de l'autorisation de l'ICMP, suivez les règles ci-dessous :
 
-![Exemple de configuration](images/exemple.png){.thumbnail}
+![Exemple de configuration](images/exemple-v2.png){.thumbnail}
 
 Les règles sont triées de 0 (la première règle lue) à 19 (la dernière). La chaîne cesse d'être analysée dès qu'une règle est appliquée au paquet.
 
