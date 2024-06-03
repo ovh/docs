@@ -1,7 +1,7 @@
 ---
-title: 'Passer une instance en mode rescue'
-excerpt: 'Ce guide vous explique comment activer le mode rescue pour votre instance Public Cloud'
-updated: 2023-01-04
+title: "Comment activer le mode rescue sur une instance Public Cloud"
+excerpt: "Découvrez comment activer et utiliser le mode rescue OVHcloud pour votre instance Public Cloud"
+updated: 2024-06-03
 ---
 
 ## Objectif
@@ -10,13 +10,12 @@ En cas de mauvaises configurations, ou de perte de clé SSH, votre instance peut
 
 Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigurer votre instance ou récupérer vos données. 
 
-**Ce guide vous explique comment mettre votre instance en mode rescue et accéder à vos données.**
+**Ce guide vous explique comment redémarrer votre instance Public Cloud OVHcloud en mode rescue et accéder à vos fichiers.**
 
 ## Prérequis
 
-- Une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVHcloud
-- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
-- Avoir accès à votre instance via SSH en tant qu'administrateur (sudo)
+- Une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
+- Avoir accès à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
@@ -26,7 +25,7 @@ Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigu
 
 ### Activer le mode rescue
 
-Tout d’abord, connectez-vous à [l’espace client d’OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
+Tout d’abord, connectez-vous à [l’espace client d’OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
 Cliquez ensuite sur l'onglet `Instances`{.action} dans la barre de navigation à gauche.
 
@@ -46,25 +45,36 @@ Une fois l’instance redémarrée en mode rescue, une boîte d’information af
 
 Une fois le mode rescue activé, les données de votre instance seront attachées en tant que disque supplémentaire. Il suffit donc de le monter, en suivant les étapes suivantes.
 
-En premier lieu, ouvrez une connexion SSH avec votre instance. Une fois connecté, vérifiez les disques disponibles avec cette commande :
+En premier lieu, ouvrez une [connexion SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) avec votre instance. Une fois connecté, vérifiez les disques disponibles avec cette commande :
 
-```
-root@instance:/home/admin# lsblk
-
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 253:0 0 1G 0 disk
-└─vda1 253:1 0 1023M 0 part /
-vdb 253:16 0 10G 0 disk
-└─vdb1 253:17 0 10G 0 part
+```bash
+lsblk
 ```
 
-Ensuite, montez la partition :
+Le résultat sera similaire à l'exemple de sortie suivant :
 
-```
-root@instance:/home/admin# mount /dev/vdb1 /mnt
+```console
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda       8:0    0  2.9G  0 disk
+└─sda1    8:1    0  2.9G  0 part /
+sdb       8:16   0   25G  0 disk
+├─sdb1    8:17   0   24G  0 part
+├─sdb14   8:30   0    4M  0 part
+├─sdb15   8:31   0  106M  0 part
+└─sdb16 259:0    0  913M  0 part
 ```
 
-Vos données seront maintenant accessibles depuis le dossier /mnt.
+En mode rescue, `sda` est le disque en mode rescue et `sda1` est la partition de secours principale montée sur `/`.
+
+Dans cet exemple, le disque principal est `sdb` et la partition système est `sdb1` (indiquée par la taille).
+
+Montez cette partition avec la commande suivante :
+
+```bash
+mount /dev/sdb1 /mnt/
+```
+
+Vos fichiers sont maintenant accessibles depuis le point de montage `/mnt`.
 
 ### Désactiver le mode rescue
 
@@ -80,16 +90,18 @@ Une fois vos tâches terminées, vous pouvez désactiver le mode rescue en redé
 
 Vous pouvez activer le mode rescue via les API OpenStack en utilisant la commande suivante :
 
-```
-# root@server:~# nova rescue INSTANCE_ID
+```bash
+nova rescue INSTANCE_ID
 ```
 
 Pour sortir du mode rescue, utilisez la commande suivante :
 
-```
-# root@server:~# nova unrescue INSTANCE_ID
+```bash
+nova unrescue INSTANCE_ID
 ```
 
 ## Aller plus loin
+
+[Comment remplacer une paire de clés SSH sur une instance](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

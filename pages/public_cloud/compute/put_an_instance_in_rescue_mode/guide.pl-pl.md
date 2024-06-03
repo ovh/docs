@@ -1,7 +1,7 @@
 ---
-title: 'Przełączenie instancji w tryb rescue'
-excerpt: 'Ten przewodnik zawiera informacje o przełączaniu instancji w tryb ratunkowy (rescue)'
-updated: 2023-01-04
+title: "Jak aktywować tryb ratunkowy na instancji Public Cloud"
+excerpt: "Dowiedz się, jak aktywować i korzystać z trybu Rescue OVHcloud w Twojej instancji Public Cloud"
+updated: 2024-06-03
 ---
 
 > [!primary]
@@ -14,13 +14,12 @@ Jeśli instancja została niewłaściwie skonfigurowana lub utracono klucz SSH, 
 
 W takiej sytuacji można ponownie skonfigurować instancję lub odzyskać dane przy użyciu trybu ratunkowego (rescue). 
 
-**Ten przewodnik zawiera informacje o przełączaniu instancji w tryb ratunkowy (rescue)**
+**Niniejszy przewodnik wyjaśnia, jak zrestartować Twoją instancję Public Cloud OVHcloud w trybie rescue i uzyskać dostęp do plików.**
 
 ## Wymagania początkowe
 
-* [Instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} utworzona na koncie OVHcloud
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-* dostęp administracyjny (uprawnienia użytkownika root) do instancji za pośrednictwem protokołu SSH
+- [Instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} utworzona na koncie OVHcloud
+- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce> 
 
@@ -50,25 +49,36 @@ Po ponownym uruchomieniu instancji w trybie Rescue wyświetli się okno informac
 
 Po aktywacji trybu ratunkowego dane instancji będą widoczne jako dodatkowy dysk. Aby go zamontować, wykonaj następujące kroki.
 
-Po pierwsze nawiąż połączenie SSH z instancją. Po nawiązaniu połączenia sprawdź dostępne dyski przy użyciu tego polecenia:
+Po pierwsze nawiąż [połączenie SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) z instancją. Po nawiązaniu połączenia sprawdź dostępne dyski przy użyciu tego polecenia:
 
-```
-root@instance:/home/admin# lsblk
-
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 253:0 0 1G 0 disk
-└─vda1 253:1 0 1023M 0 part /
-vdb 253:16 0 10G 0 disk
-└─vdb1 253:17 0 10G 0 part
+```bash
+lsblk
 ```
 
-Następnie zamontuj partycję:
+Wynik będzie podobny do poniższego przykładu wyjściowego:
 
-```
-root@instance:/home/admin# mount /dev/vdb1 /mnt
+```console
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda       8:0    0  2.9G  0 disk
+└─sda1    8:1    0  2.9G  0 part /
+sdb       8:16   0   25G  0 disk
+├─sdb1    8:17   0   24G  0 part
+├─sdb14   8:30   0    4M  0 part
+├─sdb15   8:31   0  106M  0 part
+└─sdb16 259:0    0  913M  0 part
 ```
 
-Dane będą dostępne w folderze /mnt.
+W trybie rescue `sda` to dysk w trybie rescue i `sda1` to główna partycja zapasowa zamontowana na `/`.
+
+W tym przykładzie głównym dyskiem jest `sdb`, a partycja systemowa to `sdb1` (określana przez rozmiar).
+
+Zamontuj tę partycję za pomocą polecenia:
+
+```bash
+mount /dev/sdb1 /mnt/
+```
+
+Dane będą dostępne w folderze `/mnt`.
 
 ### Dezaktywacja trybu ratunkowego
 
@@ -84,16 +94,18 @@ Po wykonaniu wszystkich zadań można zdezaktywować tryb ratunkowy przez zresta
 
 Tryb ratunkowy można aktywować także za pośrednictwem interfejsu API OpenStack przy użyciu następującego polecenia:
 
-```
-# root@server:~# nova rescue INSTANCE_ID
+```bash
+nova rescue INSTANCE_ID
 ```
 
 Aby wyjść z trybu ratunkowego, użyj następującego polecenia:
 
-```
-# root@server:~# nova unrescue INSTANCE_ID
+```bash
+nova unrescue INSTANCE_ID
 ```
 
 ## Sprawdź również
+
+[Jak zastąpić parę kluczy SSH na instancji](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
