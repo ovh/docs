@@ -141,7 +141,7 @@ Positionnez-vous sur l'onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier
 >
 > Si vos serveurs DNS personnalisés ont été créés avec les extensions *.eu*,*.it*, *.be* ou *.de*, renseignez **obligatoirement** l'adresse IP associée respectivement pour chacun de vos serveurs DNS personnalisés.
 >
-> Le cas échéant, les serveurs DNS personnalisés ne seront pas pris en compte correctmeent et ne fonctionneront donc pas avec votre nom de domaine.
+> Sans cela, les serveurs DNS personnalisés ne seront pas pris en compte correctement et ne fonctionneront donc pas avec votre nom de domaine.
 >
 
 Finalisez les étapes et, si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
