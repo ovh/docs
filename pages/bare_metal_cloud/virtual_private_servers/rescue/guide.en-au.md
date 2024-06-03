@@ -149,7 +149,7 @@ If you encounter errors when rebooting a VPS, use the following procedure:
 
 [Recovering server access if your user password is lost](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
-[Replacing an SSH key pair](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
+[How to replace an SSH key pair](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 
 [Checking the file system on a VPS](/pages/bare_metal_cloud/virtual_private_servers/check-filesystem)
 
