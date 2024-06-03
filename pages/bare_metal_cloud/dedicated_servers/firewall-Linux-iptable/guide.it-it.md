@@ -56,7 +56,7 @@ iptables è installato di default sulla maggior parte dei sistemi Linux. Per con
 sudo apt-get install iptables
 ```
 
-“Per assicurarsi che le regole di iptables siano persistenti dopo il riavvio, è necessario installare il pacchetto iptables persistent usando il seguente comando:”
+Per assicurarsi che le regole di iptables siano persistenti dopo il riavvio, è necessario installare il pacchetto `iptables persistent` usando il seguente comando:
 
 ```bash
 sudo apt-get install iptables-persistent
