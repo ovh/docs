@@ -92,32 +92,32 @@ You can set up to **20 rules per IP**.
 |:--:| 
 | Click on `Add a rule`{.action}. |
 
-For each rule (excluding TCP), you must choose:
+For each rule (excluding ), you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_other_than_.png) | 
 |:--| 
 | &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) |
 
-For each **TCP** rule, you must choose:
+For each **** rule, you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_.png) | 
 |:--| 
-| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port (optional) <br>&bull; The destination port (optional) <br>&bull; The TCP state (optional) <br>&bull; Fragments (optional)|
+| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port (optional) <br>&bull; The destination port (optional) <br>&bull; The  state (optional) <br>&bull; Fragments (optional)|
 
 > [!primary]
-> We advise authorising TCP protocol with an established option (for packets that are part of a previously opened/started session), ICMP packets (for ping and traceroute) and optionally UDP DNS responses from external servers (if you use external DNS servers).
+> We advise authorising  protocol with an established option (for packets that are part of a previously opened/started session), ICMP packets (for ping and traceroute) and optionally UDP DNS responses from external servers (if you use external DNS servers).
 >
 > **Configuration example:**
 >
 > If your server exposes services, you probably would like to allow access to them by anyone:
 >
-> - Priority 0: Authorize TCP to port 22 (e.g., 22 if you use SSH with standard port,or 443 if you have a public web server)
+> - Priority 0: Authorize  to port 22 (e.g., 22 if you use SSH with standard port,or 443 if you have a public web server)
 >
 > If your server needs to contact external services (outside OVHcloud network), the answer that comes back from such services must be authorized for communication to be successfull.
 > Best way is to precisely define peer-IP address, port and protocol, for example:
 >
-> - Priority 1: Authorize TCP established from 1.2.3.4 port 443 (if your server queries external web services on 1.2.3.4:443)
-> - Priority 2: Authorize IPv4 from 5.6.7.8 port 3306 (if your server queries external SQL server on 5.6.7.8:3306. Both: TCP and UDP are allowed.)
+> - Priority 1: Authorize  established from 1.2.3.4 port 443 (if your server queries external web services on 1.2.3.4:443)
+> - Priority 2: Authorize IPv4 from 5.6.7.8 port 3306 (if your server queries external SQL server on 5.6.7.8:3306. TCP and UDP are allowed and if you want to open both protocols you need 2 rules. Those rules should have the "established" flag, same as the first one)
 >
 > Or, sometimes when IP can be random, let's define by protocol and port only: 
 >
@@ -159,7 +159,7 @@ Note that rules are disabled until the moment an attack is detected - then they 
 
 To make sure that only the standard ports for SSH (22), HTTP (80), HTTPS (443) and UDP (53) are left open when authorising the ICMP, follow the rules below:
 
-![Configuration example](images/exemple.png){.thumbnail}
+![Configuration example](images/exemple-v2.png){.thumbnail}
 
 The rules are sorted from 0 (the first rule read) to 19 (the last). The rule chain stops as soon as a rule is applied to the packet.
 
