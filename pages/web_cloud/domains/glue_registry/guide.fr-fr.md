@@ -137,7 +137,7 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager){.ext
  
 Positionnez-vous sur l'onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier les serveurs DNS`{.action}. Remplacez alors vos serveurs DNS actuels par ceux que vous souhaitez utiliser en tant que serveur DNS personnalisés. 
 
-> [!alert]
+> [!warning]
 >
 > Si vos serveurs DNS personnalisés ont été créés avec les extensions *.eu*,*.it*, *.be* ou *.de*, renseignez **obligatoirement** l'adresse IP associée respectivement pour chacun de vos serveurs DNS personnalisés.
 >
