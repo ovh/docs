@@ -52,7 +52,7 @@ Iptables est installé par défaut sur la plupart des systèmes Linux. Pour conf
 sudo apt-get install iptables
 ```
 
-"Pour vous assurer que vos règles Iptables sont persistantes après le redémarrage, vous devez installer le paquet Iptables persistent en utilisant la commande suivante :"
+Pour vous assurer que vos règles Iptables sont persistantes après le redémarrage, vous devez installer le paquet `iptables persistent` en utilisant la commande suivante :
 
 ```bash
 sudo apt-get install iptables-persistent
@@ -226,6 +226,8 @@ Ensuite, exécutez la commande suivante :
 ```bash
 iptables-save > /etc/iptables/rules.v4
 ```
+
+Cette opération permet d'enregistrer les règles directement dans le dossier IPV4.
 
 Au prochain démarrage de votre système, Iptables rechargera automatiquement les règles du pare-feu.
 

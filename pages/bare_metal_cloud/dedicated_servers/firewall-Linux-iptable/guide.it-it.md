@@ -1,7 +1,7 @@
 ---
 title: Configura il firewall su Linux con iptables
 excerpt: Scopri come proteggere un server con iptables
-updated: 2022-10-18
+updated: 2024-06-03
 ---
 
 > [!primary]
@@ -56,9 +56,18 @@ iptables è installato di default sulla maggior parte dei sistemi Linux. Per con
 sudo apt-get install iptables
 ```
 
-L'esempio di uscita in Ubuntu conferma che l'ultima versione di iptables è già presente:
+Per assicurarsi che le regole di iptables siano persistenti dopo il riavvio, è necessario installare il pacchetto `iptables persistent` usando il seguente comando:
 
-![version-iptable](images/step2-version-iptables.PNG){.thumbnail}
+```bash
+sudo apt-get install iptables-persistent
+```
+
+Una volta installato questo pacchetto, la cartella iptables conterrà due file per le regole IPV4 e IPV6:
+
+```bash
+sudo /etc/iptables/regole.v4
+sudo /etc/iptables/rules.v6
+```
 
 In genere, esegui il comando iptables come segue:
 
@@ -211,11 +220,20 @@ Sostituisci `Number` con il numero di riga che vuoi eliminare.
 Durante il riavvio del sistema, iptables non mantiene le regole che hai creato.
 Ogni volta che configuri iptables su Linux, le modifiche apportate si applicano solo fino al prossimo riavvio.
 
-Per registrare le regole nei sistemi basati su Ubuntu, inserisci:
+Per salvare le regole sui sistemi basati su Ubuntu, è necessario prima accedere come root utilizzando il comando `sudo su` :
 
 ```bash
-sudo -s iptables-save -c
+ubuntu@server:~$ sudo su
+root@server:/home/ubuntu#
 ```
+
+Quindi, eseguite il seguente comando: 
+
+```bash
+iptables-save > /etc/iptables/rules.v4
+```
+
+Questa operazione salva le regole direttamente nella cartella IPV4.
 
 Al prossimo avvio del sistema, gli iptables ricariceranno automaticamente le regole del firewall.
 

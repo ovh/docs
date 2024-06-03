@@ -217,7 +217,6 @@ Whenever you configure *iptables* on Linux, any changes you make apply only unti
 
 To save rules to Ubuntu-based systems, first, you must log in as the root user using the `sudo su` command:
 
-
 ```bash
 ubuntu@server:~$ sudo su
 root@server:/home/ubuntu#
