@@ -117,7 +117,7 @@ For each **** rule, you must choose:
 > Best way is to precisely define peer-IP address, port and protocol, for example:
 >
 > - Priority 1: Authorize  established from 1.2.3.4 port 443 (if your server queries external web services on 1.2.3.4:443)
-> - Priority 2: Authorize IPv4 from 5.6.7.8 port 3306 (if your server queries external SQL server on 5.6.7.8:3306. TCP and UDP are allowed and if you want to open both protocols you need 2 rules. Those rules should have the "established" flag, same as the first one)
+> - Priority 2: Authorize IPv4 from 5.6.7.8 port 3306 (if your server queries external SQL server on 5.6.7.8:3306. TCP and UDP are allowed and if you want to open both protocols you need 2 rules. TCP rules should have the "established" flag)
 >
 > Or, sometimes when IP can be random, let's define by protocol and port only: 
 >
