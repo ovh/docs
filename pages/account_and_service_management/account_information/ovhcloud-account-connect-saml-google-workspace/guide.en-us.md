@@ -1,7 +1,7 @@
 ---
 title: Enabling Google Workspace SSO connections with your OVHcloud account
 excerpt: "Learn how to associate your Google Workspace service with your OVHcloud account via SAML 2.0"
-updated: 2024-03-05
+updated: 2024-06-03
 ---
 
 ## Objective
@@ -85,11 +85,11 @@ Click your account name in the top-right corner, then on your name again in the 
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-You can access the IAM menu via the dedicated entry in your customer account management.
+You can access the IAM menu via the dedicated entry in your Control Panel.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Then click on the `Identities`{.action} tab to access to the local user management.
+Then click on the `Identities`{.action} tab to access local users management.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
