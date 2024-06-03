@@ -62,7 +62,7 @@ Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zon
 >
 > Les registres des extensions *.eu*,*.it*, *.be* et *.de* ne considèrent pas les enregistrements « GLUE » comme des « objets » mais comme des « attributs ».
 >
-> Par conséquent et pour ces extensions, passez **directement à l'étape 3** du présent guide sans réaliser l'étape 2.
+> Par conséquent, pour ces extensions, passez **directement à l'étape 3** de ce guide sans réaliser l'étape 2.
 >
 
 > [!success]
