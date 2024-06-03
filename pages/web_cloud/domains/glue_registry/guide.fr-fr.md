@@ -139,7 +139,7 @@ Positionnez-vous sur l'onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier
 
 > [!alert]
 >
-> Si vos serveurs DNS personnalisées ont été créées avec les extensions *.eu*,*.it*, *.be* et/ou *.de*, renseignez **obligatoirement** l'adresse IP asociée respectivement à chacun de vos serveurs DNS personnalisés.
+> Si vos serveurs DNS personnalisés ont été créés avec les extensions *.eu*,*.it*, *.be* ou *.de*, renseignez **obligatoirement** l'adresse IP associée respectivement pour chacun de vos serveurs DNS personnalisés.
 >
 > Le cas échéant, les serveurs DNS personnalisés ne seront pas pris en compte correctmeent et ne fonctionneront donc pas avec votre nom de domaine.
 >
