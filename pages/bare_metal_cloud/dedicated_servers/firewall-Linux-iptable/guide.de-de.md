@@ -1,7 +1,7 @@
 ---
 title: Konfiguration der Linux Firewall mit iptables
 excerpt: Erfahren Sie hier, wie Sie einen Server mit iptables sichern
-updated: 2024-05-31
+updated: 2024-06-03
 ---
 
 > [!primary]
