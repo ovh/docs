@@ -267,7 +267,7 @@ The API expects the following values:
   "size": 256,
   "operations": [
     "encrypt",
-    "decrypt",
+    "decrypt"
   ]
 }
 ```
@@ -282,7 +282,7 @@ The API expects the following values:
   "size": 4096,
   "operations": [
     "sign",
-    "verify",
+    "verify"
   ]
 }
 ```
@@ -296,7 +296,7 @@ The API expects the following values:
   "type": "EC",
   "operations": [
     "sign",
-    "verify",
+    "verify"
   ],
   "crv": "P-256"
 }
