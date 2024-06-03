@@ -58,7 +58,7 @@ Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zon
 
 ### Étape 2 : ajouter les enregistrements « GLUE » <a name="step2"></a>
 
-> [!alert]
+> [!warning]
 >
 > Les registres des extensions *.eu*,*.it*, *.be* et *.de* ne considèrent pas les enregistrements « GLUE » comme des « objets » mais comme des « attributs ».
 >
