@@ -63,7 +63,7 @@ Par exemple :
 2. Les logs Auth.
 3. Les logs Cron.
 
-### Etape 1 - Activation de l'Audit Log Forwarding avec votre Hosted Private Cloud VMware on OVHcloud
+### Etape 1 - Activation du transfert des journaux Hosted Private Cloud
 
 > [!primary]
 > 
@@ -78,7 +78,7 @@ Par exemple :
 
 Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud, cependant vous pouvez vous référer à la documentation et retrouver comment créer un flux (stream) depuis le control panel Log Data Plateform : [Premiers pas | Commencement avec Logs Data Plateform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
-Vous pouvez récupérer le **streamId** et le mettre de coté (copier-coller), vous en aurez besoin pour activer votre souscription Logs Data Plateform.
+Vous pouvez récupérer le **streamId** et le  mettre de côté (copier-coller), vous en aurez besoin pour activer votre souscription Hosted Private Cloud vers le stream Logs Data Plateform en question.
 
 ### Création de l'abonnement Logs Data Plateform 
 
