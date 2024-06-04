@@ -1,6 +1,6 @@
 ---
 title: "Logs Forwarding Hosted Private Cloud vers Logs Data Plateform"
-excerpt: "Découvrez comment activer le transfert (audit logs forwarding) des journaux Hosted Private Cloud VMware on OVHcloud vers un flux (stream) Logs Data Platform"
+excerpt: "Découvrez comment activer le transfert (logs forwarding) des journaux Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
 updated: 2024-06-03
 ---
 
