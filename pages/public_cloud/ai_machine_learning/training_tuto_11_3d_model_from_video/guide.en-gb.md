@@ -67,6 +67,10 @@ The 3 main steps (prepare, process, extract) have their targets in the Makefile 
 
 Clone neuralangelo and init git repositories:
 
+neuralangelo is the main project we will use, including neuralangelo itself and the tools configuration such as COLMAP
+
+We need BlenderNeuralangelo for its tooling on top of blender. We will use to adjust our input data
+
 ```shell
 make neuralangelo BlenderNeuralangelo
 ```
@@ -94,6 +98,9 @@ gdown 1yWoZ4Hk3FgmV3pd34ZbW7jEqgqyJgzHy -O neuralangelo/input/
 ```
 
 ### Configure an S3 bucket for ovhai
+
+To be able to share data between the AI Training jobs we will run as well as providing code and data to our workloads,
+we need to configure an AI datastore pointing to a S3 endpoint.
 
 ```shell
 ovhai datastore add NEURALANGELO <s3_endpoint_url> <s3_region> <s3_access_key> --store-credentials-locally
@@ -128,6 +135,9 @@ make push-data
 #### Extract pictures from the video
 
 Neuralangelo works on pictures of the Object. These pictures are extracted from the source video using [COLMAP](https://colmap.github.io/).
+
+We are here triggering the extraction of pictures from the input video and generate data allowing us in the next step
+to adjust the area of interest we will ask neuralangelo to work on.
 
 Read detailed documentation for data preparation [here](https://github.com/NVlabs/neuralangelo/blob/main/DATA_PROCESSING.md#self-captured-video-sequence).
 
@@ -211,6 +221,9 @@ make push-data
 
 ### Process data and generate model
 
+Now we are triggering an AI Training job running Neuralangelo to train its model over the input data prepared in
+previous steps.
+
 ```shell
 make process
 ```
@@ -255,9 +268,11 @@ make process-status
 make process-logs
 ```
 
-Once the job is done, we can run the 3D model extraction.
+Once the job is done, we can run the 3D model extraction that will work with the model we just trained.
 
 ### Extract meshes from model
+
+The AI Training job we are running now will generate a 3D meshes `.ply` file out of the model
 
 ```shell
 make extract
@@ -310,13 +325,13 @@ Once the job is done, we get generated data from the S3 bucket:
 make pull-data
 ```
 
-A .ply file is now available in `neuralangelo/logs/experiments/lego/` and we are now able to open it with blender.
+The `.ply` file is now available in `neuralangelo/logs/experiments/lego/` and we are now able to open it with blender.
 
 ## Go further
 
 ### Neuralangelo configuration
 
-A small subset of parameters are tunable using the Make command.
+A small subset of parameters is tunable using the Make command.
 Each target can be tuned using a set of variables defined on top of the file.
 As an example, if you want to run the process step with another GPU flavor and over more iterations:
 
