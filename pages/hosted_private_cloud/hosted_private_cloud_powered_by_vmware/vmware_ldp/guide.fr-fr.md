@@ -78,7 +78,7 @@ Par exemple :
 
 Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud, cependant vous pouvez vous référer à la documentation et retrouver comment créer un flux (stream) depuis le control panel Log Data Plateform : [Premiers pas | Commencement avec Logs Data Plateform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
-### Création de l'abonnement Logs Data Plateform
+### Création de l'abonnement Logs Data Plateform Hosted Private Cloud VMware on OVHcloud
 
 #### Via le control panel OVHcloud :
 
@@ -90,8 +90,6 @@ Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted P
 >
 >  Trouvez plus d'information sur les appels API OVHcloud : [Premiers pas avec l'API OVHcloud](/pages/manage_and_operate/api/first-steps).
 >
-
-#### Via l’API OVHcloud :
 
 Pour récupérer le **streamId** de votre compte LDP, suivez le guide : [Premiers pas Logs Data Plateform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
