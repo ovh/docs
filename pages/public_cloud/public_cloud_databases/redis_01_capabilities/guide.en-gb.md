@@ -31,11 +31,11 @@ The Public Cloud Databases offer uses the following Redis® open source versions
 
 - Redis® open source 7.0
 
-Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
+Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Redis® release cycle on their official page: <https://redis.io/topics/releases>
 
 ### Caching clients
 
-You can use any of the [Redis-recommended clients](https://redis.io/clients){.external} to access your instance.
+You can use any of the [clients recommended by Redis®](https://redis.io/clients){.external} to access your instance.
 
 ### Plans
 
@@ -63,9 +63,9 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 #### License type
 
-Redis Community software prior version 7.4 is under the 3-Clause-BSD license, a liberal open-source license.
+Redis® open source software prior version 7.4 is under the 3-Clause-BSD license, a liberal open-source license.
 
-Redis Community software starting from version 7.4, Redis Stack and all Redis modules created by Redis Ltd. (e.g., RediSearch, RedisJSON, RedisGraph, RedisTimeSeries, and RedisBloom) are dual-licensed under the Redis Source Available License v2 (RSALv2) and SSPL. The RSALv2 license model prohibits OVHcloud, and any other service provider, from offering these softwares and modules to third parties as a service. So **these softwares and modules are not available**.
+Redis® open source software starting from version 7.4, Redis Stack and all Redis modules created by Redis Ltd. (e.g., RediSearch, RedisJSON, RedisGraph, RedisTimeSeries, and RedisBloom) are dual-licensed under the Redis Source Available License v2 (RSALv2) and SSPL. The RSALv2 license model prohibits OVHcloud, and any other service provider, from offering these softwares and modules to third parties as a service. So **these softwares and modules are not available**.
 
 More information on <https://redis.com/legal/licenses/>.
 
@@ -134,7 +134,7 @@ For each user you can specify:
 - Commands (such as "+ping +info +echo +get +set")
 - Channels (such as "*")
 
-You can follow the official Redis documentation about Commands: <https://redis.io/commands/>.
+You can follow the official Redis® documentation about Commands: <https://redis.io/commands/>.
 
 Here is the list of unsupported commands:
 
