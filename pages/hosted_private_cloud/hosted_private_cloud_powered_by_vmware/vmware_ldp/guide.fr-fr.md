@@ -11,15 +11,14 @@ L'objectif de ce guide est de vous montrer comment activer le transfert des logs
 ## Prérequis
 - Disposer d'un compte client OVHcloud.
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud.
-- Les ressources Hosted Private Cloud et Logs Data Plateform doivent appartenir au même compte OVHcloud.
-- Disposer d'un flux (stream) actif Logs Data Plateform du même compte et niveau de sécurité que votre infrastructure Hosted Private Cloud.
-- Avoir suivi le guide : ["Introduction à Logs Data Platform"](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
-;
+- Disposer d'un flux (stream) Logs Data Plateform actif du même compte et niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud..
+- Avoir suivi le guide : ["Introduction à Logs Data Platform".](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
+
 ## Concepts et limites
 
 ### Glossaire
 - **Logs Data Platform :** Plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/){.external}
-- **Data Stream :** Partition logique de logs que vous créez dans un compte LLogs Data Plateform et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
+- **Data Stream :** Partition logique de logs que vous créez dans un compte Logs Data Plateform et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
 - **Transfert de logs :** Fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans le *Data Stream* d’un compte Logs Data Plateform du même compte OVHcloud. Cette fonctionnalité doit être activée par vos soins et pour votre service [(consultez cette section du guide pour l'activer)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp#Etape1)
 - **Abonnement à la redirection de logs :** Lors de l'activation du transfert de logs pour votre service OVHcloud vers un *Data Stream* Logs Data Plateform donné, un *abonnement* doit être créé et rattaché au *Data Stream* pour une gestion ultérieure.
 
