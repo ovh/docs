@@ -355,6 +355,7 @@ manage-operate-observability: Observability
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Getting Started
 observability-logs-data-platform-ingestion: Ingesting your logs
+observability-logs-data-platform-upgrade: Upgrade
 observability-logs-data-platform-visualizing-querying-exploiting: Visualizing, querying and exploiting your logs
 observability-logs-data-platform-opensearch-index: OpenSearch Index as a service
 observability-logs-data-platform-security-conformity: Security and conformity

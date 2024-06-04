@@ -1918,6 +1918,8 @@
         + [Using Terraform with OVHcloud](manage_and_operate/terraform/terraform-at-ovhcloud)
     + [Observability](products/manage-operate-observability)
         + [Logs Data Platform](products/observability-logs-data-platform)
+            + [Upgrade](observability-logs-data-platform-upgrade)
+                + [Upgrade to OpenSearch 2](manage_and_operate/observability/logs_data_platform/upgrade_upgrade_to_opensearch_2)
             + [Getting started](observability-logs-data-platform-getting-started)
                 + [Introduction to Logs Data Platform](manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
                 + [Quick start for Logs Data Platform](manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
