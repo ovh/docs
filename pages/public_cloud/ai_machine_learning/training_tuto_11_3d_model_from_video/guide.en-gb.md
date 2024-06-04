@@ -18,7 +18,7 @@ model.
 This tutorial aims at showing how to run NVIDIA sample use case with OVHcloud AI-Training jobs.
 
 This tutorial scenario is based on Neuralangelo [git repository](https://github.com/NVlabs/neuralangelo) and
-[collab notebook](https://colab.research.google.com/drive/13u8DX9BNzQwiyPPCB7_4DbSxiQ5-_nGF#scrollTo=FUhJIThkeQoi)
+[colab notebook](https://colab.research.google.com/drive/13u8DX9BNzQwiyPPCB7_4DbSxiQ5-_nGF#scrollTo=FUhJIThkeQoi).
 
 After getting a sample video of a toy vehicle, we see how to put it through Neuralangelo model until we get a 3D mesh
 file.
@@ -149,7 +149,7 @@ make prepare
 >			bash projects/neuralangelo/scripts/preprocess.sh lego input/lego.mp4 2 object"
 > ```
 >
-> Note: It takes approximately 8 min to run on 1 ai1-1-gpu GPU.
+> Note: It takes approximately 8 min to run on 1 `ai1-1-gpu` GPU (V100S).
 > 
 
 You can follow the training job status using the following commands based on `ovhai job get` and `ovhai job logs`:
