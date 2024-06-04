@@ -1,5 +1,5 @@
 ---
-title: "Logs Forwarding Hosted Private Cloud vers Logs Data Plateform"
+title: "Transfert des journaux Hosted Private Cloud VMware vers LDP"
 excerpt: "Découvrez comment activer le transfert (logs forwarding) des journaux Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
 updated: 2024-06-03
 ---
