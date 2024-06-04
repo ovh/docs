@@ -6,16 +6,14 @@ updated: 2024-06-03
 
 ## Objectif
 
-L'objectif de ce guide est de vous montrer comment activer le transfert des logs de votre PCC Private Cloud vers Logs Data Platform (LDP), une plateforme qui vous aide à stocker, archiver, interroger et visualiser vos logs.
-
-Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au guide suivant : ["Introduction à Logs Data Platform"](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
+L'objectif de ce guide est de vous montrer comment activer le transfert des logs de votre Hosted Private Cloud VMware on OVHcloud vers Logs Data Platform (LDP), une plateforme qui vous aide à stocker, archiver, interroger et visualiser vos logs.
 
 ## Prérequis
 - Disposer d'un compte client OVHcloud.
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud.
-- Avoir au moins un Stream actif configurait sur le compte LDP pour recevoir les logs.
 - Les ressources Hosted Private Cloud et Logs Data Plateform doivent appartenir au même compte OVHcloud.
-- Disposer de flux (stream) LDP du même niveau de sécurité que votre infrastructure Hosted Private Cloud.
+- Disposer d'un flux (stream) actif Logs Data Plateform du même compte et niveau de sécurité que votre infrastructure Hosted Private Cloud.
+- Avoir suivi le guide : ["Introduction à Logs Data Platform"](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 
 ## Concepts et limites
 
@@ -32,41 +30,40 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 > Prenez en compte que l'activation du **transfert de logs (Log Forwarding)** est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez [la page Logs Data Plateform du site OVHcloud.](https://www.ovhcloud.com/fr/logs-data-platform/).
 >
 
-Logs Data Platform est une interface de collecte, d'indexation et d'analyse de logs. Quelque-soit la provenance de vos logs, la plateforme vous permet de choisir différents points d'entrée en fonction du protocole, du niveau de sécurité et du format. L'analyse et l'exploitation des données peuvent se faire grâce à différentes API et interfaces web.
+Logs Data Platform La plateforme LGD présente une interface sophistiquée dédiée à la collecte, à l'indexation et à l'analyse des logs. Peu importe leur origine, cette plateforme vous offre la possibilité de sélectionner divers points d'accès en fonction du protocole utilisé, du niveau de sécurité requis et du format souhaité. L'exploitation des données recueillies peut être effectuée aisément grâce aux multiples API et interfaces web mises à disposition.
 
-Pour plus d'information sur les caractéristiques techniques de Logs Data Plateform (ports, protocoles, etc..), vous pouvez vous référer au guide : ["Premiers pas | Bien commencer avec Logs Data Plateform".](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
+Pour de plus amples informations concernant les caractéristiques techniques du Logs Data Plateform (ports, protocoles, etc.), nous vous invitons à consulter le guide :  ["Premiers pas | Bien commencer avec Logs Data Plateform".](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 ### Les journaux et labels
 
-#### Kind
+#### Kind disponible
 
-Voici des exemples de labels "kind" disponible avec Hosted Private Cloud VMware on OVHcloud et Logs Data Plateform :
+Un Kind est un « type » de logs que votre produit génère.
 
-Disponible en fonction des composants de votre architecture :
+Ils sont le type de journal que vous voulez transférer à votre stream Logs Data Plateform. Voici des exemples qui peuvent être disponible en fonction des composants de votre architecture Hosted Private Cloud VMware on OVHcloud :
 
 - **esxi** : Filtré par application.
 - **nsxtEdge** : Tout est redirigé, pas de filtre.
 - **vcsa** : Filtré par application.
 - **nsxtManager** : Filtré par application.
 
-Les kind sont le type de journal que vous voulez transférer à votre stream Logs Data Plateform. Notez que la seule valeur actuellement prise en charge aujourd'hui pour Hosted Private Cloud est **"esxi"**.
-
 Sachez qu'il est tout à fait acceptable qu'un produit ne possède qu'une seule catégorie.
 
+**Remarques** :
 - Tous les journaux VMware sont collectés et envoyés aux clusters Logs Data Plateform.
-- Tous les journaux des appliances VMware sont traités par les "Forwarder" Syslog et marqués par le filtre (Logstash) au niveau du cluster Logs Data Plateform.
+- Tous les journaux des appliances VMware sont traités et marqués au niveau de Logs Data Plateform.
 
 Nous mettons toutes les métadonnées pour l'identification de Hosted Private Cloud VMware on OVHcloud.
 
-La première chose dont vous avez besoin est de créer un ou plusieurs types de logs. Un Kind est un « type » de logs que votre produit génère. Cela dépend vraiment de votre logique établit.
+Avec Hosted Private Cloud (Dedicated Server), il est possible d'imaginer 3 types de logs.
 
-Pour un produit Hosted Private Cloud, il est possible d'imaginer 3 types de logs :
+Par exemple :
 
 1. Les logs Kernel.
 2. Les logs Auth.
 3. Les logs Cron.
 
-### Etape 1 - Audit Log Forwarding avec Hosted Private Cloud
+### Etape 1 - Mise en place de l'Audit Log Forwarding avec votre Hosted Private Cloud VMware on OVHcloud
 
 > [!primary]
 > 
@@ -75,19 +72,17 @@ Pour un produit Hosted Private Cloud, il est possible d'imaginer 3 types de logs
 > Vous devez avoir préalablement créer un stream Logs Data Plateform.
 >
 
-### Création d'un stream Logs Data Plateform pour votre Hosted Private Cloud
+### Création d'un stream Logs Data Plateform pour votre Hosted Private Cloud VMware on OVHcloud
 
 #### Via le control panel OVHcloud :
 
-Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud VMware on OVHcloud.
+Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud, cependant vous pouvez vous référer à la documentation et retrouver comment créer un flux (stream) depuis le control panel Log Data Plateform : [Premiers pas | Commencement avec Logs Data Plateform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
-Pour créer un stream depuis l'interface Logs Data Plateform, suivez le guide : [Premiers pas | Commencement avec Logs Data Plateform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-
-### Création de l'abonnement Logs Data Plateform pour votre Hosted Private Cloud
+### Création de l'abonnement Logs Data Plateform
 
 #### Via le control panel OVHcloud :
 
-Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud VMware on OVHcloud.
+Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud, cependant vous pouvez vous référer à la documentation et retrouver ces fonctionnalités depuis le control panel Log Data Plateform : [Premiers pas | Commencement avec Logs Data Plateform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 #### Via l’API OVHcloud :
 
@@ -126,17 +121,15 @@ Exemple :
 
 La requête GET permet de lister vos souscriptions.
 
-### Etape 2 - Administrer vos flux (stream) Logs Data Plateform avec Hosted Private Cloud
+### Etape 2 - Administrer vos flux (stream) Logs Data Plateform 
 
 #### Via le control panel OVHcloud :
 
-Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud VMware on OVHcloud.
+Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud, cependant vous pouvez vous référer à ce guide et retrouver comment administrer vos flux (stream) depuis le control panel Log Data Plateform : [Premiers pas | Commencement avec Logs Data Plateform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
-Pour manager vos stream depuis l'interface Logs Data Plateform, suivez le guide : [Premiers pas Logs Data Plateform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+#### Via l’API OVHcloud :
 
-#### Via l’API OVHcloud
-
-Utilisez les appels API suivant pour lister les abonnements de votre compte LDP avec Hosted Private Cloud :
+Veuillez utiliser les appels API suivants pour dresser la liste des abonnements de votre compte Hosted Private Cloud :
 
 ![LDP CALL API](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp/images/LDP_API_CALL_LISTING.png){.thumbnail}
 
@@ -192,7 +185,7 @@ Retour :
 
 ## Aller plus loin
 
-Vous pouvez suivre ces guides qui vous explique comment configurer votre PCC pour faire suivre les logs dans LDP :
+Vous pouvez suivre ces guides qui vous explique comment continuer avec votre Hosted Private Cloud VMWare on OVHcloud pour manipuler vos journaux :
 - [Logs Data Platform - Listing guides premiers pas avec Logs Data Plateform](https://help.ovhcloud.com/csm/fr-documentation-observability-logs-data-platform-getting-started?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=e3eec38c1977a5d0476b930e789695d0&spa=1){.external}
 - [Visualiser vos logs dans un tableau de bord Grafana](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana).
 - [Utiliser la cli "LDP Tail" pour regarder en live vos logs Hosted Private Cloud](/pages/manage_and_operate/observability/logs_data_platform/cli_ldp_tail).
