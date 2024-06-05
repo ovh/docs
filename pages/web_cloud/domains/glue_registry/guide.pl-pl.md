@@ -60,6 +60,13 @@ W razie potrzeby i aby uzyskać więcej informacji, zapoznaj się z naszym tutor
 
 ### Etap 2: dodać rekordy "GLUE" <a name="step2"></a>
 
+> [!warning]
+>
+> Rejestry rozszerzeń *.eu*, *.it*, *.be* i *.de* nie traktują rekordów "GLUE" jako "obiektów", ale jako "atrybutów".
+>
+> Dlatego w przypadku tych rozszerzeń przejdź **bezpośrednio do etapu 3** niniejszego przewodnika bez wykonywania etapu 2.
+>
+
 > [!success]
 >
 > Przed rozpoczęciem, należy pamiętać, że:
@@ -130,7 +137,14 @@ Należy zmienić serwery DNS Twojej domeny zastępując stare serwery DNS niesta
 
 W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie z lewej strony kliknij `Domeny`{.action} i wybierz *nazwę domeny, dla której chcesz spersonalizować serwery DNS*.
  
-Przejdź do zakładki `Serwery DNS`{.action}, następnie kliknij polecenie `Zmień serwery DNS`{.action}. Zastąp Twoje aktualne serwery DNS serwerami, których chcesz użyć jako spersonalizowanego serwera DNS. 
+Przejdź do zakładki `Serwery DNS`{.action}, następnie kliknij polecenie `Zmień serwery DNS`{.action}. Zastąp Twoje aktualne serwery DNS serwerami, których chcesz użyć jako spersonalizowanego serwera DNS.
+
+> [!warning]
+>
+> Jeśli Twoje niestandardowe serwery DNS zostały utworzone z rozszerzeniami *.eu*, *.it*, *.be* lub *.de*, wprowadź **obligatoryjnie** przypisany adres IP dla każdego z Twoich niestandardowych serwerów DNS.
+>
+> W przeciwnym razie spersonalizowane serwery DNS nie zostaną uwzględnione prawidłowo i nie będą działać z Twoją domeną.
+>
 
 Zakończ ostatni etap i, jeśli potrzebujesz więcej informacji, skorzystaj z instrukcji zawartych w naszej dokumentacji "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
 
