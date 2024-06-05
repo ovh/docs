@@ -6,32 +6,32 @@ updated: 2024-03-27
 
 ## Objective
 
-There are several advantages to subscribing to the OVHcloud **Microsoft 365 Apps for business** or **Microsoft 365 Apps for enterprise** offers. Billing is monthly and you can use one licence for 5 PCs/Macs, 5 tablets and 5 smartphones.
+There are several advantages to subscribing to the OVHcloud **Microsoft 365 Apps for Business** or **Microsoft 365 Apps for Enterprise** offers. Billing is monthly and you can use one licence for 5 PCs/Macs, 5 tablets and 5 smartphones.
 
-Your Microsoft 365 licences are collected into a group, also called `Service`. An Apps for business licence group can contain up to 300 licences, an Apps for enterprise licence group is unlimited.
+Your Microsoft 365 licences are collected into a group, also called `Service`. An Apps for Business licence group can contain up to 300 licences, an Apps for Enterprise licence group is unlimited.
 
 Here is the list of software included in the suite:
 
-- Apps for business licences: Excel, Word, PowerPoint, Outlook, Note, Publisher.
-- Apps for enterprise licences: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
+- Apps for Business licences: Excel, Word, PowerPoint, Outlook, Note, Publisher.
+- Apps for Enterprise licences: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
 
 **This guide explains how to subscribe to a Microsoft 365 licence and manage it in the OVHcloud Control Panel.**
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-### Order a licence
+### How to order a licence
 
-Go to the [Microsoft 365 OVHcloud](https://www.ovh.co.uk/office-365-business){.external} commercial page  and select the `Microsoft`{.action} section of our `Web Cloud`{.action} section.
+Go to the [OVHcloud Microsoft 365]([https://www.ovh.co.uk/office-365-business](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/){.external} commercial page and click on the button `Order`{.action}.
 
-You can also order a license via the [OVHcloud Control Panel](/links/manager). Once you have logged in, select `Web Cloud`{.action} in the top banner, then click the `Order`{.action} button, and click `O365`{.action}.
+From the [OVHcloud Control Panel](/links/manager), select `Web Cloud`{.action} in the top menu, click the `Order`{.action} button and then `Office 365`{.action}.
 
-- Choose from our available offers, namely Apps for business and Apps for enterprise.
+- Choose from our available offers, namely Apps for Business and Apps for Enterprise.
 - Set the renewal frequency for your licence group.
-- Set the number of licences you want, then click `Order`{.action}.
+- Set the number of licences you want, then click `Continue`{.action}.
 
 You will be redirected to the order page to confirm and pay for your order.
 
