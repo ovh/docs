@@ -1,7 +1,7 @@
 ---
 title: Available datacenters, worker nodes and persistent storage flavors
 excerpt: ''
-updated: 2024-02-12
+updated: 2024-06-05
 ---
 
 ## Available datacenters, worker nodes and persistent storage flavors
@@ -33,10 +33,12 @@ Here is a comparative table of flavours available by region :
 | **GPU ORIENTED** | | | **DISCOVERY** | | | **IOPS ORIENTED** | |
 | :---: | :--- | --- | :---: | :--- | --- | :---: | :--- |
 | Name | Region availibility | | Name | Region availibility | | Name | Region availibility |
-| `T1-*` | BHS5 / GRA5 / GRA7 / GRA11 | | `D2-4` | All region | | `I1-*` | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / SBG5 / UK1 / WAW1 |
-| `T2-*` | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / UK1 / WAW1 | | `D2-8` | All region | | | |
-| `H100-*` | GRA11 | | | | | | |
-| `A100-180` | GRA11 | | | | | | |
+| `A100-180` | GRA11 | | `D2-4` | All region | | `I1-*` | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / SBG5 / UK1 / WAW1 |
+| `H100-*` | GRA11 | | `D2-8` | All region | | | |
+| `L4-*`   | GRA11 | | | | | | |
+| `L40s-*` | GRA11 | | | | | | |
+| `T1-*`   | BHS5 / GRA5 / GRA7 / GRA11 | | | | | | |
+| `T2-*`   | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / UK1 / WAW1 | | | | | | |
 
 Each family offers contains different flavors, consisting of a five amount of vCores, RAM and local storage.  
 For more information, please refer to the following page: [OVHcloud Public Cloud instances](https://www.ovhcloud.com/es-es/public-cloud/prices/)
