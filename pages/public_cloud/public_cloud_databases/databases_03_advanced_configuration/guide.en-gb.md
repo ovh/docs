@@ -8,10 +8,7 @@ updated: 2024-02-29
 
 Public cloud database engines are managed services, which means that they are not fully configurable. For example, it is not possible to modify *pg_hba.conf*.
 
-> [!primary]
->
-> Advanced configuration is available for the following Public Cloud Databases engines :
->
+> **Advanced configuration is available for the following Public Cloud Databases engines:**
 > - Cassandra
 > - Grafana
 > - Kafka
@@ -19,8 +16,7 @@ Public cloud database engines are managed services, which means that they are no
 > - MySQL
 > - Opensearch
 > - PostgreSQL
-> - Redis
->
+> - Caching
 
 ## Requirements
 
@@ -30,42 +26,27 @@ Public cloud database engines are managed services, which means that they are no
 
 ## Instructions
 
-> [!warning]
->
-> Please note that changes to the advanced settings apply at the cluster level and therefore to all the databases in the cluster.
->
+Please note that changes to the advanced settings apply at the cluster level and therefore to all the databases in the cluster.
 
-> [!primary]
->
-> Depending on the engine, some settings may already be defined.
->
+Depending on the engine, some settings may already be defined.
 
-> [!primary]
->
-> Once the advanced configuration has been submitted, it is not possible to reset it to initial values. It is only possible to update the values, so we recommend that you take note of the initial values before changing them.
->
-> See the [Checking](#checking) section below
->
+Once the advanced configuration has been submitted, it is not possible to reset it to initial values. It is only possible to update the values, so we recommend that you take note of the initial values before changing them.
+
+See the [Checking](#checking) section below.
 
 ### Using the OVHcloud Control Panel
 
-To change the advanced configuration, you first need to log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, select your engine instance then the `Advanced configuration`{.action} tab.
+To change the advanced configuration, you first need to log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud` project. Click on `Databases` in the left-hand navigation bar, select your engine instance then the `Advanced configuration` tab.
 
 Select the key of the advanced setting you want to define, then set its value.
 
-When ready, click on `Update advanced configuration`{.action}.
+When ready, click on `Update advanced configuration`.
 
-> [!primary]
->
 > On the top-right of the advanced configuration tab, you can see the settings which are already defined.
->
 
 ### Using API
 
-> [!primary]
->
-> If you are not familiar with using the OVHcloud API, please refer to our guide on [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
->
+If you are not familiar with using the OVHcloud API, please refer to our guide on [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
 
 #### Get your service and cluster IDs
 
@@ -75,19 +56,15 @@ You first need to identify the service and the cluster you want to apply the cha
 
 Execute the following API call:
 
-> [!api]
->
-> @api {v1} /cloud GET /cloud/project
->
-
+```plaintext
+GET /cloud/project
+```
 ![serviceName](images/04_advanced_configuration-20220405143910846.png){.thumbnail}
 
 From the resulting list, select and copy the service identifier corresponding to the desired service, also known as serviceName.
 
-##### **Get the desired cluster ID**
-
+#### Get the desired cluster ID
 Open the following API call, paste your service ID into the `serviceName` input field and click `Execute`{.action}:
-
 > [!tabs]
 > Cassandra
 >> > [!api]
@@ -119,19 +96,68 @@ Open the following API call, paste your service ID into the `serviceName` input 
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql
 >> >
-> Redis
+> Caching
 >> > [!api]
 >> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/Caching
 >> >
 
-![Cluster ID](images/04_advanced_configuration-20220405144109794.png){.thumbnail}
 
-From the resulting list, select and copy the cluster ID, also known as clusterId.
+```plaintext
+GET /cloud/project/{serviceName}/database/{databaseType}
+```
+Replace `{databaseType}` with the type of your database, such as `cassandra`, `kafka`, `kafkaConnect`, `mysql`, `opensearch`, `postgresql`, or `caching`.
 
-#### Get the existing advanced configuration
+![Get PostgreSQL advanced configuration](images/04_advanced_configuration-20220405144438289.png){.thumbnail}
 
-Open the following API call and paste the corresponding inputs (serviceName, clusterId) and click `Execute`{.action}:
+#### Advanced configuration settings list
+Open the following API call and paste the corresponding inputs (serviceName, clusterId) and click `Execute`:
+> [!tabs]
+> Cassandra
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/advancedConfiguration
+>> >
+> Kafka
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafka/{clusterId}/capabilities/advancedConfiguration
+>> >
+> Kafka Connect
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/capabilities/advancedConfiguration
+>> >
+> MySQL
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/capabilities/advancedConfiguration
+>> >
+> Opensearch
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch/{clusterId}/capabilities/advancedConfiguration
+>> >
+> PostgreSQL
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/advancedConfiguration
+>> >
+> Caching
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/Caching/{clusterId}/capabilities/advancedConfiguration
+>> >
+
+```plaintext
+GET /cloud/project/{serviceName}/database/caching/{clusterId}/capabilities/advancedConfiguration
+```
+
+![Get PostgreSQL Advanced Parameters](images/04_advanced_configuration-20220405144738738.png){.thumbnail}
+
+
+#### Change advanced configuration
+Open the following API call and paste the corresponding inputs (serviceName, clusterId):
 
 > [!tabs]
 > Cassandra
@@ -164,109 +190,24 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/advancedConfiguration
 >> >
-> Redis
+> Caching
 >> > [!api]
 >> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration
->> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/Caching/{clusterId}/advancedConfiguration
 
-![Get PostgreSQL advanced configuration](images/04_advanced_configuration-20220405144438289.png){.thumbnail}
 
-#### Advanced configuration settings list
+```plaintext
+PUT /cloud/project/{serviceName}/database/caching/{clusterId}/advancedConfiguration
+```
+Set the different values into the string arrays as needed.
 
-Open the following API call and paste the corresponding inputs (serviceName, clusterId) and click `Execute`{.action}:
-
-> [!tabs]
-> Cassandra
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/advancedConfiguration
->> >
-> Kafka
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafka/{clusterId}/capabilities/advancedConfiguration
->> >
-> Kafka Connect
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/capabilities/advancedConfiguration
->> >
-> MySQL
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/capabilities/advancedConfiguration
->> >
-> Opensearch
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch/{clusterId}/capabilities/advancedConfiguration
->> >
-> PostgreSQL
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/advancedConfiguration
->> >
-> Redis
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/capabilities/advancedConfiguration
->> >
-
-![Get PostgreSQL Advanced Parameters](images/04_advanced_configuration-20220405144738738.png){.thumbnail}
-
-#### Change advanced configuration
-
-Open the following API call and paste the corresponding inputs (serviceName, clusterId)
-
-> [!tabs]
-> Cassandra
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
->> >
-> Kafka
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/kafka/{clusterId}/advancedConfiguration
->> >
-> Kafka Connect
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
->> >
-> MySQL
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/mysql/{clusterId}/advancedConfiguration
->> >
-> Opensearch
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/opensearch/{clusterId}/advancedConfiguration
->> >
-> PostgreSQL
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/postgresql/{clusterId}/advancedConfiguration
->> >
-> Redis
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration
->> >
-
-Now, according to the settings you chose, set the different values into the string arrays, such as in the example below:
-
-![Put PostgreSQL Advanced Parameters](images/04_advanced_configuration-20220405152807105.png){.thumbnail}
-
-When ready, click on `Execute`{.action} to update the advanced configuration.
+When ready, click on Execute to update the advanced configuration.
 
 ### Checking
-
 You can check the changes in different ways such as:
 
-**Using API**
+#### Using API
+
 
 ![Get PostgreSQL advanced configuration](images/04_advanced_configuration-20220405152918491.png){.thumbnail}
 
@@ -283,3 +224,4 @@ We would love to help answer questions and appreciate any feedback you may have.
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
+
