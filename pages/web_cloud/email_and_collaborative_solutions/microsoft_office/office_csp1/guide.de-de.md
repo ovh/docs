@@ -10,14 +10,14 @@ updated: 2024-03-27
 
 ## Ziel
 
-Die OVHcloud Angebote für **Microsoft 365 Apps for business** und **Microsoft 365 Apps for enterprise** bieten mehrere Vorteile. Die Abrechnung erfolgt monatlich und Sie können eine Lizenz für 5 PCs/Macs, 5 Tablets und 5 Smartphones verwenden.
+Die OVHcloud Angebote für **Microsoft 365 Apps for Business** und **Microsoft 365 Apps for Enterprise** bieten mehrere Vorteile. Die Abrechnung erfolgt monatlich und Sie können eine Lizenz für 5 PCs/Macs, 5 Tablets und 5 Smartphones verwenden.
 
-Ihre Microsoft 365 Lizenzen werden zu einer Gruppe zusammengefasst, auch "Service" genannt. Eine Apps for business Lizenzgruppe kann maximal 300 Lizenzen enthalten, eine Lizenzgruppe Apps for enterprise ist unbegrenzt.
+Ihre Microsoft 365 Lizenzen werden zu einer Gruppe zusammengefasst, auch "Service" genannt. Eine Apps for Business Lizenzgruppe kann maximal 300 Lizenzen enthalten, eine Lizenzgruppe Apps for Enterprise ist unbegrenzt.
 
 Die Lizenzen gelten für folgende Software:
 
-- Apps for business: Excel, Word, PowerPoint, Outlook, Note, Publisher.
-- Apps for enterprise: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
+- Apps for Business: Excel, Word, PowerPoint, Outlook, Note, Publisher.
+- Apps for Enterprise: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
 
 **Diese Anleitung erklärt, wie Sie eine Microsoft 365 Lizenz bestellen und in Ihrem OVHcloud Kundencenter verwalten.**
 
@@ -27,13 +27,13 @@ Die Lizenzen gelten für folgende Software:
 
 ## In der praktischen Anwendung
 
-### Eine Lizenz bestellen
+### Lizenz bestellen
 
-Gehen Sie auf die Angebotsseite [OVHcloud Microsoft 365](https://www.ovh.com/de/office-365-business){.external} und wählen Sie die Rubrik `Microsoft`{.action} im Bereich `Web Cloud`{.action}.
+Gehen Sie zur Angebotsseite [OVHcloud Microsoft 365](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/){.external} und klicken Sie auf den Button `Bestellen`{.action}.
 
-Sie können eine Lizenz auch über das [OVHcloud Kundencenter](/links/manager) bestellen. Wenn Sie eingeloggt sind, wählen Sie oben `Web Cloud`{.action} aus und klicken Sie auf `Bestellen`{.action} und `O365`{.action}.
+Vom [OVHcloud Kundencenter](/links/manager) aus wählen Sie oben `Web Cloud`{.action} aus und klicken Sie auf `Bestellen`{.action} und dann `O365`{.action}.
 
-- Wählen Sie aus den verfügbaren Angeboten "Apps for business" oder "Apps for enterprise".
+- Wählen Sie aus den verfügbaren Angeboten "Apps for Business" oder "Apps for Enterprise".
 - Legen Sie das Verlängerungsintervall Ihrer Lizenzgruppe fest.
 - Geben Sie die gewünschte Anzahl an Lizenzen ein und klicken Sie auf `Bestellen`{.action}.
 
