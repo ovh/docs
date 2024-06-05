@@ -60,6 +60,13 @@ Si necesita más información, consulte [nuestro tutorial sobre la herramienta Z
 
 ### Etapa 2: agregar los registros "GLUE" <a name="step2"></a>
 
+> [!warning]
+>
+> Los registros de extensiones *.eu*, *.it*, *.be* y *.de* no consideran los registros "GLUE" como "objetos", sino como "atributos".
+>
+> Por lo tanto, para estas extensiones, vaya **directamente al etapa 3** de esta guía sin realizar el etapa 2.
+>
+
 > [!success]
 >
 > Antes de empezar, tenga en cuenta lo siguiente:
@@ -130,7 +137,14 @@ Debe modificar los servidores DNS de su dominio sustituyendo los antiguos servid
 
 Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`{.action} de la columna izquierda. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione *el dominio para el que quiera personalizar los servidores DNS*.
  
-Abra la pestaña `Servidores DNS`{.action} y haga clic en `Cambiar los servidores DNS`{.action}. Sustituya sus servidores DNS actuales por los que quiera utilizar como servidor DNS personalizado. 
+Abra la pestaña `Servidores DNS`{.action} y haga clic en `Cambiar los servidores DNS`{.action}. Sustituya sus servidores DNS actuales por los que quiera utilizar como servidor DNS personalizado.
+
+> [!warning]
+>
+> Si los servidores DNS personalizados se han creado con las extensiones *.eu*, *.it*, *.be* o *.de*, introduzca **obligatoriamente** la dirección IP asociada para cada uno de los servidores DNS personalizados.
+>
+> De lo contrario, los servidores DNS personalizados no se tendrán en cuenta correctamente y no funcionarán con el dominio.
+>
 
 Siga los pasos que se indican y, si necesita ayuda, consulte nuestra guía «[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
 
