@@ -1025,7 +1025,7 @@
                 + [Notebooks for Apache Spark - Getting started](public_cloud/data_analytics/data_processing/23_GETTINGSTARTED_create-a-notebook)
                 + [FAQ](public_cloud/data_analytics/data_processing/faq)
                 + [Security specifications for Data Processing](public_cloud/data_analytics/data_processing/security_specifications)
-                + [Data Processing - Responsibility Model](public_cloud/data_analytics/responsibility_model)
+                + [Data Processing - Responsibility Model](public_cloud/data_analytics/data_processing/responsibility_model)
             + [How to](public-cloud-data-analytics-data-processing-how-to)
                 + [How to activate the Data Processing service for your cloud project](public_cloud/data_analytics/data_processing/30_HOWTO_activate_project)
                 + [How to submit a Python job on the Data Processing platform using the OVHcloud Control Panel](public_cloud/data_analytics/data_processing/31_HOWTO_submit-python-ui)
