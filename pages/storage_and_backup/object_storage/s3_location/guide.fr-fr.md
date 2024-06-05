@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-05-20
+updated: 2024-06-05
 ---
 
 <style>
@@ -110,7 +110,7 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     <tr>
         <th>AWS</th>
         <th>Mapping OVHcloud actuel</th>
-        <th>Mapping OVHcloud cible (à partir du 10/06/2024)</th>
+        <th>Mapping OVHcloud cible (à partir du 17/06/2024)</th>
     </tr>
     <tr>
         <td>Express One Zone</td> 
