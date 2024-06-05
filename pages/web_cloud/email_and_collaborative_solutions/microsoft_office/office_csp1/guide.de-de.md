@@ -29,9 +29,9 @@ Die Lizenzen gelten für folgende Software:
 
 ### Eine Lizenz bestellen
 
-Gehen Sie auf die Vertriebsseite [Microsoft 365 OVHcloud](https://www.ovh.com/de/office-365-business){.external} und wählen Sie die Rubrik `Microsoft`{.action} in unserem Abschnitt `Web Cloud`{.action}.
+Gehen Sie auf die Angebotsseite [OVHcloud Microsoft 365](https://www.ovh.com/de/office-365-business){.external} und wählen Sie die Rubrik `Microsoft`{.action} im Bereich `Web Cloud`{.action}.
 
-Sie können eine Lizenz auch über das [OVHcloud Kundencenter](/links/manager) bestellen. Wenn Sie eingeloggt sind, wählen Sie `Web Cloud`{.action} im oberen Banner aus und klicken Sie auf `Bestellen`{.action} und `o365`{.action}.
+Sie können eine Lizenz auch über das [OVHcloud Kundencenter](/links/manager) bestellen. Wenn Sie eingeloggt sind, wählen Sie oben `Web Cloud`{.action} aus und klicken Sie auf `Bestellen`{.action} und `O365`{.action}.
 
 - Wählen Sie aus den verfügbaren Angeboten "Apps for business" oder "Apps for enterprise".
 - Legen Sie das Verlängerungsintervall Ihrer Lizenzgruppe fest.
