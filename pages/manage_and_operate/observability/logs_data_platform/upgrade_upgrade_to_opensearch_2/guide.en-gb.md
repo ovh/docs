@@ -14,7 +14,7 @@ OpenSearch is one of the core components of the Logs Data Platform, allowing you
 
 ## OpenSearch API 2.X Breaking changes
 
-The main change for OpenSearch 2.X in terms of API is the [removal of type parameters](https://opensearch.org/docs/latest/breaking-changes/#200){.external}. This means you cannot use the "\_type" meta field anymore. This field has been fixed to the value "\_doc" and all official OpenSearch libraries have been updated to accommodate this change for some time now. The APIs using "\_doc" in their path have not changed, making the upgrade straightforward.
+The main change for OpenSearch 2.X in terms of API is the [removal of type parameters](https://opensearch.org/docs/latest/breaking-changes/#200){.external}. This means you cannot use the `\_type` meta field anymore. This field has been fixed to the value `\_doc` and all official OpenSearch libraries have been updated to accommodate this change for some time now. The APIs using `\_doc` in their path have not changed, making the upgrade straightforward.
 
 > [!warning]
 >
