@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints e geoavailability do Object Storage (EN)
-updated: 2024-05-20
+updated: 2024-06-05
 ---
 
 <style>
@@ -110,7 +110,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     <tr>
         <th>AWS</th>
         <th>OVHcloud current mapping</th>
-        <th>OVHcloud target mapping (from 2024-06-10)</th>
+        <th>OVHcloud target mapping (from 2024-06-17)</th>
     </tr>
     <tr>
         <td>Express One Zone</td> 
