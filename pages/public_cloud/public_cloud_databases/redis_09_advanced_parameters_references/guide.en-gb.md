@@ -1,6 +1,6 @@
 ---
-title: Redis - Advanced parameters references
-excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Redis according to your use cases
+title: Caching - Advanced parameters references
+excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Caching according to your use cases
 updated: 2023-02-06
 ---
 
@@ -29,7 +29,7 @@ updated: 2023-02-06
 
 ## Objective
 
-This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Redis according to your use cases.
+This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Caching according to your use cases.
 
 ## Requirements
 
@@ -52,9 +52,9 @@ Please refer to this [guide](/pages/public_cloud/public_cloud_databases/database
 
 Please refer to this [guide](/pages/public_cloud/public_cloud_databases/databases_03_advanced_configuration#using-api) to find out how to change your advanced parameters from the OVHcloud API.
 
-### Advanced parameters for Redis
+### Advanced parameters for Caching
 
-Below you can find a summary of every configuration option available for Redis service:
+Below you can find a summary of every configuration option available for Caching service:
 
 | | |
 |---|---|
