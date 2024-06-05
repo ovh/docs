@@ -1,7 +1,7 @@
 ---
 title: "DNS-Server von Domainnamen individualisieren (Glue Records)"
 excerpt: "Erfahren Sie hier, wie Sie die DNS-Server Ihres OVHcloud Domainnamens anpassen"
-updated: 2024-03-07
+updated: 2024-06-05
 ---
 
 > [!primary]
@@ -59,6 +59,13 @@ Im oben abgebildeten Beispiel verwendet **domain.tld** derzeit die folgenden **D
 Weitere Informationen finden Sie in unserem Tutorial zum Tool [Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
 
 ### Schritt 2: *Glue Records* hinzufügen <a name="step2"></a>
+
+> [!warning]
+>
+> Die Registrys der Erweiterungen *.eu*, *.it*, *.be* und *.de* betrachten GLUE-Datensätze nicht als „Objekte“, sondern als „Attribute“.
+>
+> Fahren Sie daher für diese Erweiterungen **direkt mit Schritt 3** dieser Anleitung fort, ohne Schritt 2 abzuschließen.
+>
 
 > [!success]
 >
@@ -128,7 +135,14 @@ Sie müssen die DNS-Server Ihres Domainnamens ändern, indem Sie die alten DNS-S
 
 Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie *den Domainnamn aus, für die Sie die DNS-Server anpassen möchten*.
  
-Gehen Sie auf den Tab `DNS-Server`{.action} und klicken Sie dann auf `DNS-Server ändern`{.action}. Ersetzen Sie nun Ihre aktuellen DNS-Server durch die Server, die Sie als personalisierte DNS-Server verwenden möchten. 
+Gehen Sie auf den Tab `DNS-Server`{.action} und klicken Sie dann auf `DNS-Server ändern`{.action}. Ersetzen Sie nun Ihre aktuellen DNS-Server durch die Server, die Sie als personalisierte DNS-Server verwenden möchten.
+
+> [!warning]
+>
+> Wenn Ihre personalisierten DNS Server mit den Erweiterungen *.eu*,*.it*, *.be* oder *.de* erstellt wurden, geben Sie **zwingend** die zugehörige IP-Adresse für jeden Ihrer personalisierten DNS Server ein.
+>
+> Ohne diesen Schritt werden die personalisierten DNS-Server nicht korrekt registriert und funktionieren daher nicht mit Ihrem Domainnamen.
+>
 
 Beenden Sie die Schritte und folgen Sie bei Bedarf den Anweisungen in unserer [Dokumentation zum Ändern der OVHcloud DNS-Server](/pages/web_cloud/domains/dns_server_general_information)".
 

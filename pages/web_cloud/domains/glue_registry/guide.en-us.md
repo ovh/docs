@@ -1,7 +1,7 @@
 ---
 title: 'Customising the DNS servers for an OVHcloud domain name'
 excerpt: 'Find out how to customise the DNS servers for your OVHcloud domain name'
-updated: 2024-03-07
+updated: 2024-06-05
 ---
 
 ## Objective
