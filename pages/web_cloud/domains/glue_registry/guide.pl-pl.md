@@ -64,7 +64,7 @@ W razie potrzeby i aby uzyskać więcej informacji, zapoznaj się z naszym tutor
 >
 > Rejestry rozszerzeń *.eu*, *.it*, *.be* i *.de* nie traktują rekordów "GLUE" jako "obiektów", ale jako "atrybutów".
 >
-> Dlatego w przypadku tych rozszerzeń przejdź **bezpośrednio do etapu 3** niniejszego przewodnika bez wykonywania etapu 2.
+> Dlatego w przypadku tych rozszerzeń przejdź **bezpośrednio do [etapu 3](#step3)** niniejszego przewodnika bez wykonywania etapu 2.
 >
 
 > [!success]
@@ -104,7 +104,7 @@ Po uzupełnieniu informacji kliknij przycisk 'Dodaj{.action}, zapoznaj się z wy
 
 W naszym przykładzie należy powtórzyć operację, aby utworzyć "GLUE" **dns2.domain.tld**. Następnie zastąpi on serwer DNS **dnsX2.ovh.net* obecnie powiązany z IPv4 *203.0.113.1* i IPv6 *2001:db8:1:1b00:203:0:113:1*
 
-### Etap 3: tworzyć rekordy DNS typu A i AAAA odpowiadające spersonalizowanym DNS
+### Etap 3: tworzyć rekordy DNS typu A i AAAA odpowiadające spersonalizowanym DNS <a name="step3"></a>
 
 Utwórz rekordy *A* i *AAAA* dla hostów, które zdefiniowałeś na poprzednim etapie. Zapisy *A* i *AAAA* muszą mieć docelowy adres IP odpowiadający nazwie uprzednio utworzonego hosta.
 

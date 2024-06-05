@@ -64,7 +64,7 @@ Si necesita más información, consulte [nuestro tutorial sobre la herramienta Z
 >
 > Los registros de extensiones *.eu*, *.it*, *.be* y *.de* no consideran los registros "GLUE" como "objetos", sino como "atributos".
 >
-> Por lo tanto, para estas extensiones, vaya **directamente al etapa 3** de esta guía sin realizar el etapa 2.
+> Por lo tanto, para estas extensiones, vaya **directamente al [etapa 3](#step3)** de esta guía sin realizar el etapa 2.
 >
 
 > [!success]
@@ -104,7 +104,7 @@ Una vez que haya introducido toda la información, haga clic en el botón `Sigui
 
 En nuestro ejemplo, deberá repetir la operación para crear el "Glue" **dns2.domain.tld**. Este sustituirá posteriormente al servidor DNS **dnsX2.ovh.net** asociado actualmente a las IPv4 *203.0.113.1* e IPv6 *2001:db8:1:1b00:203:0:113:1*
 
-### Etapa 3: crear los registros DNS de tipo A y AAAA correspondientes a los DNS personalizados
+### Etapa 3: crear los registros DNS de tipo A y AAAA correspondientes a los DNS personalizados <a name="step3"></a>
 
 Debe crear los registros *A* y *AAAA* para los nombres de host que definió en el paso anterior. Los registros *A* y *AAAA* deben tener como destino la dirección IP de destino que coincida con el nombre de host creado anteriormente.
 

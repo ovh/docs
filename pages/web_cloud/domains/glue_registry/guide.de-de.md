@@ -64,7 +64,7 @@ Weitere Informationen finden Sie in unserem Tutorial zum Tool [Zonemaster](/page
 >
 > Die Registrys der Erweiterungen *.eu*, *.it*, *.be* und *.de* betrachten GLUE-Datensätze nicht als „Objekte“, sondern als „Attribute“.
 >
-> Fahren Sie daher für diese Erweiterungen **direkt mit Schritt 3** dieser Anleitung fort, ohne Schritt 2 abzuschließen.
+> Fahren Sie daher für diese Erweiterungen **direkt mit [Schritt 3](#step3)** dieser Anleitung fort, ohne Schritt 2 abzuschließen.
 >
 
 > [!success]
@@ -104,7 +104,7 @@ Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action},
 
 In unserem Beispiel müssen Sie den Vorgang wiederholen, um die *Glue*-Einträge zu erstellen **dns2.domain.tld**. Dieser ersetzt später den DNS-Server **dnsX2.ovh.net**, der derzeit IPv4 *203.0.113.1* und IPv6 *2001:db8:1:1b00:203:0:113:1* zugewiesen ist.
 
-### Schritt 3: DNS-Einträge vom Typ A und AAAA für benutzerdefiniertes DNS erstellen
+### Schritt 3: DNS-Einträge vom Typ A und AAAA für benutzerdefiniertes DNS erstellen <a name="step3"></a>
 
 Sie müssen die Einträge *A* und *AAAA* für die Hostnamen erstellen, die Sie im vorherigen Schritt definiert haben. Die Einträge *A* und *AAAA* müssen die Ziel-IP-Adressen enthalten, die dem zuvor erstellten Hostnamen entsprechen.
 

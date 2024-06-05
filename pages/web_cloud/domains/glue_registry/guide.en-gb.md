@@ -60,7 +60,7 @@ If you need more information, please read [our tutorial on the Zonemaster tool](
 >
 > The registries for extensions *.eu*, *.it*, *.be* and *.de* do not consider "GLUE" records to be "objects", but rather "attributes".
 >
-> Therefore, for these extensions, skip **directly to step 3** of this guide without completing step 2.
+> Therefore, for these extensions, skip **directly to [step 3](#step3)** of this guide without completing step 2.
 >
 
 > [!success]
@@ -100,7 +100,7 @@ Once you have entered this information, click the `Next`{.action} button, read t
 
 In our example, you will need to repeat the operation to create the **dns2.domain.tld** glue. This will then replace the DNS server **dnsX2.ovh.net** currently associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*
 
-### Step 3: Create the A and AAAA DNS records corresponding to the custom DNS
+### Step 3: Create the A and AAAA DNS records corresponding to the custom DNS <a name="step3"></a>
 
 You must create the *A* and *AAAA* records for the host names that you defined in the previous step. The *A* and *AAAA* records must target the destination IP address corresponding to the host name created earlier.
 

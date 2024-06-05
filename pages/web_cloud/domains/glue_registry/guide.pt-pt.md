@@ -64,7 +64,7 @@ Se precisar de mais informações, consulte o nosso tutorial sobre a ferramenta 
 >
 > Os registos das extensões *.eu*, *.it*, *.be* e *.de* não consideram os registos "GLUE" como "objetos", mas como "atributos".
 >
-> Por isso, para estas extensões, passe **diretamente para a etapa 3** deste guia sem realizar a etapa 2.
+> Por isso, para estas extensões, passe **diretamente para a [etapa 3](#step3)** deste guia sem realizar a etapa 2.
 >
 
 > [!success]
@@ -104,7 +104,7 @@ Depois de preencher as informações, clique no botão `Seguinte`{.action}, leia
 
 No nosso exemplo, deverá repetir a operação para criar o « GLUE » **dns2.domain.tld**. Este último substituirá o servidor DNS **dnsX2.ovh.net** atualmente associado aos IPv4 *203.0.113.1* e IPv6 *2001:db8:1:1b00:203:0:113:1*
 
-### Etapa 3: criar os registos DNS do tipo A e AAAA correspondentes aos DNS personalizados
+### Etapa 3: criar os registos DNS do tipo A e AAAA correspondentes aos DNS personalizados <a name="step3"></a>
 
 Deve criar os registos *A* e *AAAA* para os nomes dos hosts que definiu no passo anterior. Os registos *A* e *AAAA* devem ter como alvo o endereço IP de destino correspondente ao nome do host criado anteriormente.
 
