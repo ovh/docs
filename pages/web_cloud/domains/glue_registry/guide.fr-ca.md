@@ -1,7 +1,7 @@
 ---
 title: "Personnaliser les serveurs DNS d'un nom de domaine (Glue Records)"
 excerpt: 'Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
-updated: 2024-06-04
+updated: 2024-06-05
 ---
 
 ## Objectif
@@ -60,7 +60,7 @@ Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zon
 
 > [!warning]
 >
-> Les registres des extensions *.eu*,*.it*, *.be* et *.de* ne considèrent pas les enregistrements « GLUE » comme des « objets » mais comme des « attributs ».
+> Les registres des extensions *.eu*, *.it*, *.be* et *.de* ne considèrent pas les enregistrements « GLUE » comme des « objets » mais comme des « attributs ».
 >
 > Par conséquent, pour ces extensions, passez **directement à l'étape 3** de ce guide sans réaliser l'étape 2.
 >
@@ -139,7 +139,7 @@ Positionnez-vous sur l'onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier
 
 > [!warning]
 >
-> Si vos serveurs DNS personnalisés ont été créés avec les extensions *.eu*,*.it*, *.be* ou *.de*, renseignez **obligatoirement** l'adresse IP associée respectivement pour chacun de vos serveurs DNS personnalisés.
+> Si vos serveurs DNS personnalisés ont été créés avec les extensions *.eu*, *.it*, *.be* ou *.de*, renseignez **obligatoirement** l'adresse IP associée respectivement pour chacun de vos serveurs DNS personnalisés.
 >
 > Sans cela, les serveurs DNS personnalisés ne seront pas pris en compte correctement et ne fonctionneront donc pas avec votre nom de domaine.
 >

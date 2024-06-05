@@ -56,6 +56,13 @@ If you need more information, please read [our tutorial on the Zonemaster tool](
 
 ### Step 2: Add the glue records <a name="step2"></a>
 
+> [!warning]
+>
+> The registries for extensions *.eu*, *.it*, *.be* and *.de* do not consider "GLUE" records to be "objects", but rather "attributes".
+>
+> Therefore, for these extensions, skip **directly to step 3** of this guide without completing step 2.
+>
+
 > [!success]
 >
 > Before you begin, be aware that:
@@ -124,7 +131,14 @@ You will need to modify your domain name’s DNS servers by replacing the old DN
 
 To do this, log in to your [OVHcloud Control Panel](/links/manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select *the domain name for which you want to customise the DNS servers*.
  
-Go to the `DNS servers`{.action} tab, then click `Modify DNS servers`{.action}. Then replace your current DNS servers with those you would like to use as custom DNS servers. 
+Go to the `DNS servers`{.action} tab, then click `Modify DNS servers`{.action}. Then replace your current DNS servers with those you would like to use as custom DNS servers.
+
+> [!warning]
+>
+> If your custom DNS servers have been created with the extensions *.eu*, *.it*, *.be* or *.de*, enter **obligatory** the associated IP address for each of your custom DNS servers, respectively.
+>
+> Without this, custom DNS servers will not be registered correctly, and will not work with your domain name.
+>
 
 Finalise the steps and, if necessary, refer to the instructions set out in our documentation "[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_general_information)”.
 

@@ -139,7 +139,7 @@ Gehen Sie auf den Tab `DNS-Server`{.action} und klicken Sie dann auf `DNS-Server
 
 > [!warning]
 >
-> Wenn Ihre personalisierten DNS Server mit den Erweiterungen *.eu*,*.it*, *.be* oder *.de* erstellt wurden, geben Sie **zwingend** die zugehörige IP-Adresse für jeden Ihrer personalisierten DNS Server ein.
+> Wenn Ihre personalisierten DNS Server mit den Erweiterungen *.eu*, *.it*, *.be* oder *.de* erstellt wurden, geben Sie **zwingend** die zugehörige IP-Adresse für jeden Ihrer personalisierten DNS Server ein.
 >
 > Ohne diesen Schritt werden die personalisierten DNS-Server nicht korrekt registriert und funktionieren daher nicht mit Ihrem Domainnamen.
 >
