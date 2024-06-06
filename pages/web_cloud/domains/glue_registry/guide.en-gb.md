@@ -58,7 +58,7 @@ If you need more information, please read [our tutorial on the Zonemaster tool](
 
 > [!warning]
 >
-> The registries for extensions *.eu*, *.it*, *.be* and *.de* do not consider "GLUE" records to be "objects", but rather "attributes".
+> The registries for the extensions *.eu*, *.it*, *.be* and *.de* do not consider glue records to be "objects", but rather "attributes".
 >
 > Therefore, for these extensions, skip **directly to [step 3](#step3)** of this guide without completing step 2.
 >
@@ -70,6 +70,7 @@ If you need more information, please read [our tutorial on the Zonemaster tool](
 > - You can create custom DNS servers directly on the domain name that will use them. For example, you can create *dns1.domain.tld* and *dns2.domain.tld* for the domain name *domain.tld*.
 >
 > - You can also create custom DNS servers on a domain name to use with another domain name. For example, you can create *dns1.domain1.tld* and *dns2.domain1.tld* for the domain name *domain2.tld*. You will need to retrieve the DNS servers and their associated IPs from the *domain2.tld*.
+>  
 > In addition, *domain1.tld* must be registered with OVHcloud to set up the glue records.
 >
 
@@ -92,7 +93,7 @@ In the window that opens, enter the information requested:
 
 In the image above, taking the example from [step 1](#step1), the glue record you want to add here (from the domain name *domain.tld*) is **dns1.domain.tld**. 
 
-For this glue recoord, the IP addresses of *target DNS server* are indicated as *203.0.113.0* (IPv4) and *2001:db8:1:1b00:203:0:113:0* (IPv6). These IPs correspond to one of the two DNS servers currently used for *domain.tld* (**dnsX1.ovh.net**). 
+For this glue record, the IP addresses of *target DNS server* are indicated as *203.0.113.0* (IPv4) and *2001:db8:1:1b00:203:0:113:0* (IPv6). These IPs correspond to one of the two DNS servers currently used for *domain.tld* (**dnsX1.ovh.net**). 
 
 This glue record is added so that **dns1.domain.tld** can ultimately replace the DNS server name **dnsX1.ovh.net** currently used by the domain name *domain.tld*.
 
@@ -107,13 +108,13 @@ You must create the *A* and *AAAA* records for the host names that you defined i
 You can do this via the interface given by the service provider managing your domain name’s DNS configuration. There are two ways of doing this:
 
 - **If your domain name does not use an active DNS zone with OVHcloud**: Contact the service provider managing it. Once you have made the required changes, please move on to the next step.
-- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select the domain name you used to create the GLUE in [step 2](#step2). Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action}. Select the entry of type *A* or *AAAA* depending on the type of associated IP you want to add. Follow the steps by entering the *subdomain* and the address *IPv4* (A) or *IPv6* (AAAA) then proceed until the addition has been validated. If necessary, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select the domain name you used to create the glue record in [step 2](#step2). Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action}. Select the entry of type *A* or *AAAA* depending on the type of associated IP you want to add. Follow the steps by entering the *subdomain* and the address *IPv4* (A) or *IPv6* (AAAA) then proceed until the addition has been validated. If necessary, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
 ![glueregistry](images/add-an-entry.png){.thumbnail}
 
 > [!primary]
 >
-> In all cases, you will need to wait between 4 and 24 hours for the DNS zone modification to propagate across the entire DNS network.We recommend that you wait until the end of this period before continuing.
+> In all cases, you will need to wait between 4 and 24 hours for the DNS zone modification to propagate across the entire DNS network. We recommend that you wait until the end of this period before continuing.
 >
 
 If we go back to our previous example, the GLUE records that we want to add (from the *domain.tld* domain) are **dns1.domain.tld** and **dns2.domain.tld**. The goal is to replace the current DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**.
@@ -135,7 +136,7 @@ Go to the `DNS servers`{.action} tab, then click `Modify DNS servers`{.action}. 
 
 > [!warning]
 >
-> If your custom DNS servers have been created with the extensions *.eu*, *.it*, *.be* or *.de*, enter **obligatory** the associated IP address for each of your custom DNS servers, respectively.
+> If your custom DNS servers have been created with the extensions *.eu*, *.it*, *.be* or *.de*, it is **obligatory** to enter the associated IP address for each of your custom DNS servers, respectively.
 >
 > Without this, custom DNS servers will not be registered correctly, and will not work with your domain name.
 >

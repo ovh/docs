@@ -62,7 +62,7 @@ Weitere Informationen finden Sie in unserem Tutorial zum Tool [Zonemaster](/page
 
 > [!warning]
 >
-> Die Registrys der Erweiterungen *.eu*, *.it*, *.be* und *.de* betrachten GLUE-Datensätze nicht als „Objekte“, sondern als „Attribute“.
+> Die Registrys der Erweiterungen *.eu*, *.it*, *.be* und *.de* definieren *Glue Records* nicht als „Objekte“, sondern als „Attribute“.
 >
 > Fahren Sie daher für diese Erweiterungen **direkt mit [Schritt 3](#step3)** dieser Anleitung fort, ohne Schritt 2 abzuschließen.
 >
@@ -139,7 +139,7 @@ Gehen Sie auf den Tab `DNS-Server`{.action} und klicken Sie dann auf `DNS-Server
 
 > [!warning]
 >
-> Wenn Ihre personalisierten DNS Server mit den Erweiterungen *.eu*, *.it*, *.be* oder *.de* erstellt wurden, geben Sie **zwingend** die zugehörige IP-Adresse für jeden Ihrer personalisierten DNS Server ein.
+> Wenn Ihre personalisierten DNS-Server mit den Erweiterungen *.eu*, *.it*, *.be* oder *.de* erstellt wurden, ist es **zwingend** notwendig, die zugehörige IP-Adresse für jeden Ihrer personalisierten DNS-Server einzutragen.
 >
 > Ohne diesen Schritt werden die personalisierten DNS-Server nicht korrekt registriert und funktionieren daher nicht mit Ihrem Domainnamen.
 >
