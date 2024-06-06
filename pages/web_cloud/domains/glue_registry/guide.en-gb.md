@@ -1,7 +1,7 @@
 ---
 title: "Customising a domain name’s DNS servers (Glue Records)"
 excerpt: "Find out how to customise your OVHcloud domain name’s DNS servers"
-updated: 2024-06-05
+updated: 2024-06-06
 ---
 
 ## Objective
