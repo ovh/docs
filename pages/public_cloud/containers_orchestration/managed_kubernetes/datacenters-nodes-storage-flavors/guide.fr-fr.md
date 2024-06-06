@@ -1,7 +1,7 @@
 ---
 title: Available datacenters, worker nodes and persistent storage flavors
 excerpt: ''
-updated: 2024-06-05
+updated: 2024-06-06
 ---
 
 ## Available datacenters, worker nodes and persistent storage flavors
