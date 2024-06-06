@@ -12,13 +12,13 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 
 ## Go further
 
-[Log in to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/ovhcloud-account-login).
+[Log in to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[Creating a database on your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database).
+[Creating a database on your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database)
 
-[Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export).
+[Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)
 
-[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database).
+[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
