@@ -147,7 +147,7 @@ SITE CHMOD 705 /
 
 Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 
-> [warning]
+> [!warning]
 >
 > Es kann einige Minuten (maximal 20 Minuten) dauern, bis die Änderung über Ihren Webbrowser sichtbar ist.
 >
@@ -182,7 +182,7 @@ Klicken Sie dann auf den grünen "Haken".
 
 Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 
-> [warning]
+> [!warning]
 >
 > Es kann einige Minuten (maximal 20 Minuten) dauern, bis die Änderung über Ihren Webbrowser sichtbar ist.
 >

@@ -41,9 +41,13 @@ Zostanie wyświetlone okno dialogowe “Restart w trybie ratunkowym”. Kliknij 
 
 ![control panel](images/rescue2.png){.thumbnail}
 
-Po ponownym uruchomieniu instancji w trybie Rescue wyświetli się okno informacyjne zawierające dostępne metody dostępu. Twoje **hasło do trybu Rescue** tymczasowego będzie wyświetlane tylko w konsoli VNC. Kliknij Twoją instancję w tabeli, następnie przejdź do zakładki `Konsola VNC`{.action}, aby pobrać instancję.
+Po ponownym uruchomieniu instancji w trybie Rescue wyświetli się okno informacyjne zawierające dostępne metody dostępu.
 
 ![control panel](images/rescuedata.png){.thumbnail}
+
+Twoje **hasło do trybu Rescue** tymczasowego będzie wyświetlane tylko w konsoli VNC. Kliknij Twoją instancję w tabeli, następnie przejdź do zakładki `Konsola VNC`{.action}, aby pobrać instancję.
+
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Dostęp do danych
 

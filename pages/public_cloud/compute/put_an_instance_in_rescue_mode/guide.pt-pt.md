@@ -41,9 +41,13 @@ Surgirá então a janela que lhe permite executar esta ação. Clique na lista p
 
 ![área de cliente](images/rescue2.png){.thumbnail}
 
-Depois de reiniciar a instância em modo rescue, uma caixa de informação apresenta os métodos de acesso disponíveis. A sua **palavra-passe do modo rescue** temporário só será apresentada na consola VNC. Clique na sua instância na tabela e aceda ao separador `Console VNC`{.action} para a recuperar.
+Depois de reiniciar a instância em modo rescue, uma caixa de informação apresenta os métodos de acesso disponíveis.
 
-![área de cliente](images/rescuedata.png){.thumbnail}
+![control panel](images/rescuedata.png){.thumbnail}
+
+A sua **palavra-passe do modo rescue** temporário só será apresentada na consola VNC. Clique na sua instância na tabela e aceda ao separador `Console VNC`{.action} para a recuperar.
+
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Aceder à sua informação
 

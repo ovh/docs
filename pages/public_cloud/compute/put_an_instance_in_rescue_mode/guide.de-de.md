@@ -35,9 +35,13 @@ Sie sehen nun den Dialog "Neustart im Rescue-Modus". Klicken Sie auf die Dropdow
 
 ![control panel](images/rescue2.png){.thumbnail}
 
-Nach dem Neustart Ihrer Instanz im Rescue-Modus zeigt ein Hinweisfeld die verfügbaren Zugriffsmöglichkeiten an. Ihr temporäres **Passwort für den Rescue-Modus** wird nur in der VNC-Konsole angezeigt. Klicken Sie auf Ihre Instanz in der Tabelle und anschließend auf `VNC-Konsole`{.action}, um es abzurufen.
+Nach dem Neustart Ihrer Instanz im Rescue-Modus zeigt ein Hinweisfeld die verfügbaren Zugriffsmöglichkeiten an. 
 
 ![control panel](images/rescuedata.png){.thumbnail}
+
+Ihr temporäres **Passwort für den Rescue-Modus** wird nur in der VNC-Konsole angezeigt. Klicken Sie auf Ihre Instanz in der Tabelle und anschließend auf `VNC-Konsole`{.action}, um es abzurufen.
+
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Schritt 2: Auf Ihre Daten zugreifen
 

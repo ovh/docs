@@ -44,7 +44,7 @@ Go to the [webmail page](https://www.ovhcloud.com/asia/mail/). Enter your full e
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
-Click the <i class="icons-gear-concept icons-masterbrand-blue"></i> button at the top, then click `Options`{.action}.
+Click the gear icon at the top, then click `Options`{.action}.
 
 ![email](images/mxplan-password-new-step3.png){.thumbnail}
 
