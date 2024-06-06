@@ -1,7 +1,7 @@
 ---
 title: OpenSearch Upgrade to 2.X
 excerpt: Learn about the upgrade of OpenSearch from 1.3 to 2.x and its impact on the Logs Data Platform
-updated: 2024-06-05
+updated: 2024-06-06
 ---
 
 ## Objective
