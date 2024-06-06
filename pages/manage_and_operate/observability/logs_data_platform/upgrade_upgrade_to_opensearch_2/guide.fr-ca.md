@@ -10,11 +10,11 @@ This guide will help you to understand what the upcoming upgrade of OpenSearch f
 
 ## Why do we upgrade ?
 
-OpenSearch is one of the core components of the Logs Data Platform, allowing you to index logs at scale while providing the most complete query system for logs available today. The first release of OpenSearch 2 appeared in 2024. Since then, we have been monitoring the project. Now that the 1.X branch of OpenSearch will not have any new features, we need to upgrade our stack to this version to allow the platform to continue evolving. OpenSearch 2.X will bring performance improvements and new ways to interact with your logs.
+OpenSearch is one of the core components of the Logs Data Platform, allowing you to index logs at scale while providing the most complete query system for logs available today. The first release of OpenSearch 2 appeared in 2022. Since then, we have been monitoring the project. Now that the 1.X branch of OpenSearch will not have any new features, we need to upgrade our stack to this version to allow the platform to continue evolving. OpenSearch 2.X will bring performance improvements and new ways to interact with your logs.
 
 ## OpenSearch API 2.X Breaking changes
 
-The main change for OpenSearch 2.X in terms of API is the [removal of type parameters](https://opensearch.org/docs/latest/breaking-changes/#200){.external}. This means you cannot use the `\_type` meta field anymore. This field has been fixed to the value `\_doc` and all official OpenSearch libraries have been updated to accommodate this change for some time now. The APIs using `\_doc` in their path have not changed, making the upgrade straightforward.
+The main change for OpenSearch 2.X in terms of API is the [removal of type parameters](https://opensearch.org/docs/latest/breaking-changes/#200){.external}. This means you cannot use the `_type` meta field anymore. This field has been fixed to the value `_doc` and all official OpenSearch libraries have been updated to accommodate this change for some time now. The APIs using `_doc` in their path have not changed, making the upgrade straightforward.
 
 > [!warning]
 >
