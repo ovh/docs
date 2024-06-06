@@ -47,7 +47,7 @@ To use the APIs on your products, you must sign in to this site using your OVHcl
 
 Once logged in, you will see a list of OVHcloud products that can be managed with APIs. This list is sorted alphabetically.
 
-![API](images/api-list-ca.png){.thumbnail}
+![API](images/api-list.png){.thumbnail}
 
 For example, to view the domain name APIs, click **/domain** in the list.
 

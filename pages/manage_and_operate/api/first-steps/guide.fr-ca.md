@@ -47,7 +47,7 @@ Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site gr
 
 Une fois connecté, vous retrouvez la liste des produits OVHcloud disposant des API. Cette liste est classée par ordre alphabétique.
 
-![API](images/api-list-ca.png){.thumbnail} 
+![API](images/api-list.png){.thumbnail}
 
 Pour afficher, par exemple, les API liées aux noms de domaine, cliquez sur **/domain** dans la liste.
 
