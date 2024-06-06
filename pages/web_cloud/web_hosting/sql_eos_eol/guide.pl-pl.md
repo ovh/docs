@@ -13,3 +13,19 @@ Produkty objęte ogłoszeniami o zakończeniu sprzedaży i wycofaniu z eksploata
 |Wersja|Powiadomienie o zakończeniu cyklu życia|Zakończenie sprzedaży|Zakończenie obsługi|
 |---|---|---|---|
 |MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
+
+## Sprawdź również
+
+[Zaloguj się do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login).
+
+[Tworzenie bazy danych na hostingu](/pages/web_cloud/web_hosting/sql_create_database).
+
+[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
+
+[Duplikuj zawartość jednej bazy danych do innej](/pages/web_cloud/web_hosting/copy_database).
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
