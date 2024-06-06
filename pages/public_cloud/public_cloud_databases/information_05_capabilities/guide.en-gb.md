@@ -53,7 +53,7 @@ See our [Cassandra Capabilities and limitations](/pages/public_cloud/public_clou
 
 ## Feature Availability
 
-| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Redis | M3db | Opensearch | Cassandra |
+| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Caching | M3db | Opensearch | Cassandra |
 |--------------------------------------------------------------------------------------------------------------|-------|------------|------------------|-------|------|------------|-----------|
 | End-to-end security ([more information](/pages/public_cloud/public_cloud_databases/information_01_security_overview))         | ✓     | ✓          | ✓                | ✓     | ✓    | ✓          | ✓         |
 | Automatic updates and one click upgrade                                                                      | ✓     | ✓          | ✓                | ✓     | ✓    | ✓          | ✓         |
