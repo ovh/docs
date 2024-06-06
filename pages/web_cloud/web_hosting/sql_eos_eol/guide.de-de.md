@@ -18,13 +18,13 @@ Weitere Informationen finden Sie auf der Seite zur [EOL Policy für Managed Data
 
 ## Weiterführende Informationen
 
-[In das OVHcloud Kundencenter einloggen](/pages/account_and_service_management/account_information/ovhcloud-account-login).
+[In das OVHcloud Kundencenter einloggen](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[Eine Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database).
+[Eine Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)
 
-[Backup einer Webhosting-Datenbank exportieren](/pages/web_cloud/web_hosting/sql_database_export).
+[Backup einer Webhosting-Datenbank exportieren](/pages/web_cloud/web_hosting/sql_database_export)
 
-[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database).
+[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
