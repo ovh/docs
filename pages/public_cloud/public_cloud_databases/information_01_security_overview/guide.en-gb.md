@@ -151,7 +151,7 @@ The subscription to the Business support level is mandatory, at least to maintai
 You can  import and export your data  following recommendations provided by editors for each Database engine technology. Here are some examples :
 
 - For MongoDB, you can refer to this link : <https://www.mongodb.com/docs/compass/current/import-export/>
-- For Redis®, you can refer to this link : <https://docs.redis.com/latest/rs/databases/import-export/>
+- For Caching, you can refer to this link : <https://docs.redis.com/latest/rs/databases/import-export/>
 
 ### 9.1 Erasure of customer data
 
