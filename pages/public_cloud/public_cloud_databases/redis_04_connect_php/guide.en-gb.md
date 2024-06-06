@@ -38,7 +38,7 @@ We will need to set up our PHP environment with phpredis client, then configure 
 To interact with your instance with PHP, your development environment needs to be configured with:
 
 - A compatible version of PHP;
-- PHP extension that supports Redis 6 and TLS, as recommended by Redis®: phpredis or Predis PHP Libraries.
+- PHP extension that supports Redis® open source software version 6 and TLS, as recommended by Redis®: phpredis or Predis PHP Libraries.
 
 For both phpredis and Predis it is recommended to check their respective sites on how to do the install:
 
