@@ -36,7 +36,7 @@ Das Fenster "Eine Auto-Antwort hinzufügen" wird angezeigt. Füllen Sie das Form
 
 - `Art der Auto-Antwort`:
 
-**An eine Mailbox gebunden**: Zu verwenden, wenn es sich um einen bestehenden E-Mail-Account Ihres E-Mail-Dienstes handelt.
+**An eine Mailbox gebunden**: Zu verwenden, wenn es sich um einen bestehenden E-Mail-Account Ihres E-Mail-Dienstes handelt.</br>
 **Frei**: Für eine Alias-Adresse zu verwenden. Ein Alias ist nicht mit einem bestehenden Account verknüpft.
 
 - `Mailbox` oder `Name der Auto-Antwort`: Wählen Sie den vom Responder betroffenen E-Mail-Account oder geben Sie die Alias-Adresse ein.
