@@ -104,7 +104,7 @@ In case the user doesn't have the right privilege, you will get a NOPERM respons
 
 ## Go further
 
-### Redis capabilities and limitations
+### Caching capabilities and limitations
 
 ### Configuring vRack for Public Cloud
 
