@@ -65,7 +65,7 @@ To log in to webmail, go to the page <https://www.ovhcloud.com/en-gb/mail/> and 
 > [!tabs]
 > **OWA**: **Emails (MX Plan)** / **Email Pro** / **Exchange**
 >>
->> Click the <i class="icons-gear-concept icons-masterbrand-blue"></i> button on the top right and select `Options`{.action}. Click `My account`{.action} in the `General`{.action} section in the left-hand column. You can view your account’s current quota in the lower right-hand corner of the form.<br><br>
+>> Click the gear icon on the top right and select `Options`{.action}. Click `My account`{.action} in the `General`{.action} section in the left-hand column. You can view your account’s current quota in the lower right-hand corner of the form.<br><br>
 >>![email](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
 > **Roundcube**: **Emails (MX Plan)**
@@ -149,7 +149,6 @@ Below is a nonexhaustive list of configuration guides for email clients on compu
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos) (included with macOS)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac) (free)<br>
-
 >>
 > **Email Pro**
 >>

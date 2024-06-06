@@ -147,7 +147,7 @@ SITE CHMOD 705 /
 
 Odpowiedź **"200 Permissions changed on /"** potwierdza, że operacja została prawidłowo wykonana. Aby to sprawdzić, spróbuj ponownie wejść na Twoją stronę.
 
-> [warning]
+> [!warning]
 >
 > Modyfikacja może trwać kilka minut (maksymalnie 20 minut) i być widoczna w przeglądarce internetowej.
 >
@@ -182,7 +182,7 @@ Następnie kliknij zielony przycisk "V".
 
 Odpowiedź **"200 Permissions changed on /"** potwierdza, że operacja została prawidłowo wykonana. Aby to sprawdzić, spróbuj ponownie wejść na Twoją stronę.
 
-> [warning]
+> [!warning]
 >
 > Modyfikacja może trwać kilka minut (maksymalnie 20 minut) i być widoczna w przeglądarce internetowej.
 >

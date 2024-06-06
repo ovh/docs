@@ -147,7 +147,7 @@ SITE CHMOD 705 /
 
 Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
-> [warning]
+> [!warning]
 >
 > Potrebbe essere necessario qualche minuto (massimo 20 minuti) per rendere visibile la modifica attraverso il browser.
 >
@@ -182,7 +182,7 @@ Clicca su "V" verde.
 
 Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
-> [warning]
+> [!warning]
 >
 > Potrebbe essere necessario qualche minuto (massimo 20 minuti) per rendere visibile la modifica attraverso il browser.
 >

@@ -143,7 +143,7 @@ SITE CHMOD 705 /
 
 The response "**200 Permissions changed on /**" confirms that the change was successful. To check, try accessing your site again.
 
-> [warning]
+> [!warning]
 >
 > You may need to wait a few minutes (maximum 20 minutes) for the change to be visible in your web browser.
 >
@@ -178,7 +178,7 @@ Then click on the green "check mark" button.
 
 The response "**200 Permissions changed on /**" confirms that the change was successful. To check, try accessing your site again.
 
-> [warning]
+> [!warning]
 >
 > You may need to wait a few minutes (maximum 20 minutes) for the change to be visible in your web browser.
 >
