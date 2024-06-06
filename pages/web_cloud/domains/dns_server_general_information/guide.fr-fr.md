@@ -1,6 +1,6 @@
 ---
 title: "Qu'est ce qu'un serveur DNS ?"
-excerpt: 'Découvrez le rôle des serveurs DNS, ce qu'ils contiennent et comment ils fonctionnent avec un nom de domaine'
+excerpt: "Découvrez le rôle des serveurs DNS, ce qu'ils contiennent et comment ils fonctionnent avec un nom de domaine"
 updated: 2024-06-06
 ---
 
