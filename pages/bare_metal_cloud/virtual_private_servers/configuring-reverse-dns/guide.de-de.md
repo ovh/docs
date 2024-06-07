@@ -22,7 +22,7 @@ Die Konfiguration der umgekehrten DNS-Auflösung für einen VPS ist besonders be
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und öffnen Sie `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
 
-The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category.
+Im Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** können Sie Ihre Dienste nach Kategorien filtern.
 
 ![Reverse IP](images/filteripvps.png){.thumbnail}
 
