@@ -144,7 +144,7 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     </tr>
 </table>
 
-*_la classe de stockage par défaut sur le point de terminaison **io** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage ou si vous spécifiez une classe de stockage autre que celles fournies par AWS, votre objet sera stocké dans notre niveau High Performance._
+*_la classe de stockage par défaut sur le point de terminaison **perf** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage ou si vous spécifiez une classe de stockage autre que celles fournies par AWS, votre objet sera stocké dans notre niveau High Performance._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **perf** est le suivant :
 
