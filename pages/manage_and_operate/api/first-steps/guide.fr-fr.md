@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec les API OVHcloud'
 excerpt: 'Découvrez comment utiliser les API OVHcloud'
-updated: 2024-02-01
+updated: 2024-06-07
 ---
 
 ## Objectif
@@ -67,7 +67,7 @@ Il existe 4 types d'API disponibles qui emploient ce que l'on appelle des métho
 La methode GET a pour but de récupérer les données d'une ressource.
 
 Par exemple, pour récupérer la liste de vos noms de domaine, utilisez l'API suivante :
- 
+
 > [!api]
 >
 > @api {v1} /domain GET /domain

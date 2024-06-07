@@ -1,7 +1,7 @@
 ---
 title: 'First Steps with the OVHcloud APIs'
 excerpt: 'Learn how to use OVHcloud APIs'
-updated: 2024-02-01
+updated: 2024-06-07
 ---
 
 ## Objective
