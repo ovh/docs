@@ -1,7 +1,7 @@
 ---
 title: 'First Steps with the OVHcloud APIs'
 excerpt: 'Learn how to use OVHcloud APIs'
-updated: 2024-02-01
+updated: 2024-06-07
 ---
 
 ## Objective
@@ -13,7 +13,6 @@ The APIs available on [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.extern
 ## Requirements
 
 - You have an active OVHcloud account and know its credentials.
-
 - You are on the [OVHcloud API](https://ca.api.ovh.com/){.external} web page.
 
 ## Instructions
@@ -37,7 +36,7 @@ To use the APIs on your products, you must sign in to this site using your OVHcl
 - Enter your OVHcloud credentials.
 - Click `Authorize`{.action} to allow performing API calls through the console.
 
-![API](images/login-ca.png){.thumbnail}
+![API](images/login.png){.thumbnail}
 
 > [!primary]
 >
@@ -138,7 +137,7 @@ You can also add a description of the application and a validity period.
 The `Rights` field allows you to restrict the use of the application to certain APIs. 
 <br> In order to allow all OVHcloud APIs for an HTTP method, put an asterisk (`*`) into the field, as in the following example where the GET method is allowed for all APIs:
 
-![API keys](images/api-keys-ca.png){.thumbnail}
+![API keys](images/api-keys.png){.thumbnail}
 
 After you click `Create keys`{.action}, you will be issued three keys:
 
@@ -188,7 +187,6 @@ Here is an example of how to use the `/me` section to manage your OVHcloud accou
 import ovh
 
 # Instantiate. Visit https://ca.api.ovh.com/createToken/?GET=/me
-
 # to get your credentials
 client = ovh.Client(
     endpoint='ovh-eu',
