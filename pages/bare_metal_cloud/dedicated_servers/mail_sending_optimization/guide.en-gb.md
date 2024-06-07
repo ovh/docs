@@ -74,13 +74,13 @@ If you wish to configure the reverse DNS on an Additional IP, click on the `Addi
 
 The drop-down menu underneath **"My public IP addresses and associated services"** allows you to filter your services according to category.
 
-![Reverse IP](images/filteripvps.png){.thumbnail}
+![Reverse IP](images/filteripds.png){.thumbnail}
 
 Next, click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
 
 ![Reverse IP](images/addreverse2022.png){.thumbnail}
 
-Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.action}
+Enter your domain name on the `Reverse DNS` section and click on `Validate`{.action}.
 
 ![Reverse IP](images/enterreverse.png){.thumbnail}
 

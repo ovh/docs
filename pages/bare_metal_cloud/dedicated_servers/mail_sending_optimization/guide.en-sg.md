@@ -80,7 +80,7 @@ Next, click on `...`{.action} in the relevant row and select `Modify the reverse
 
 ![Reverse IP](images/addreverse2022.png){.thumbnail}
 
-Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.action}
+Enter your domain name on the `Reverse DNS` section and click on `Validate`{.action}.
 
 ![Reverse IP](images/enterreverse.png){.thumbnail}
 
