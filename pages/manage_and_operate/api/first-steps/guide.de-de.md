@@ -16,7 +16,7 @@ Die unter [https://api.ovh.com/](https://api.ovh.com/){.external} verfügbare AP
 
 ## Voraussetzungen
 
-- Sie verfügen über einen aktiven OVHcloud Kunden-Account und kennen dessen Zugangsdaten.
+- Sie verfügen über einen aktiven OVHcloud Kunden-Account und dessen Zugangsdaten.
 - Sie sind auf der Webseite der [OVHcloud API](https://api.ovh.com/){.external}.
 
 ## In der praktischen Anwendung
@@ -31,13 +31,13 @@ Die unter [https://api.ovh.com/](https://api.ovh.com/){.external} verfügbare AP
 
 #### Verbindung mit der OVHcloud API
 
-Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/) auf `Explore the OVH API`{.action}, um die Liste der API-Funktionen anzuzeigen. 
+Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/) auf `Explore the OVH API`{.action}, um die Liste der API-Funktionen anzuzeigen.
 
 Um die API für Ihre Dienste zu verwenden, loggen Sie sich mit Ihren OVHcloud Zugangsdaten ein:
 
 - Klicken Sie oben rechts auf `Authentication`{.action}.
 - Klicken Sie anschließend auf `Login with OVHcloud SSO`{.action}.
-- Geben Sie Ihre OVHcloud Zugangsdaten ein.
+- Geben Sie Ihre OVHcloud Kunden-Zugangsdaten ein.
 - Klicken Sie auf den Button `Authorize`{.action}, um API-Aufrufe von dieser Seite aus zuzulassen.
 
 ![API](images/login.png){.thumbnail} 
@@ -49,7 +49,7 @@ Um die API für Ihre Dienste zu verwenden, loggen Sie sich mit Ihren OVHcloud Zu
 
 #### Die mit API verfügbaren Dienste analysieren
 
-Im linken Menü finden Sie die Liste der OVHcloud Produkte, die über APIs verwaltet werden können.
+Alle OVHcloud Dienste, die über API-Zugang verwaltet werden können werden in der Liste links angezeigt.
 
 ![API](images/api-list.png){.thumbnail} 
 
@@ -59,7 +59,7 @@ Nachdem Sie auf die Dienstbezeichnung geklickt haben, wird die Liste der verfüg
 
 ![API](images/api-displayed.png){.thumbnail}
 
-Sie haben auch einen Selektor auf der linken Seite der Produktliste, mit dem Sie zwischen den API-Zweigen **/v1** und **/v2** wählen können. Wenn Sie mit dem Prinzip der API-Verzweigung nicht vertraut sind, lesen Sie die [folgende Dokumentation zur API v2](/pages/manage_and_operate/api/apiv2).
+Sie haben auch einen Selektor auf der linken Seite der Produktliste, mit dem Sie zwischen den API-Zweigen **/v1** und **/v2** wählen können. Wenn Sie mit dem Prinzip der API-Verzweigung nicht vertraut sind, lesen Sie [unsere Dokumentation zur API v2](/pages/manage_and_operate/api/apiv2).
 
 #### API-Aufrufe ausführen
 
