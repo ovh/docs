@@ -40,6 +40,8 @@ The Cloud Archive (SWIFT) storage class offers a storage service for long-term d
 | Standard object storage - SWIFT API  | Close listing end | partial | yes |
 | Cloud Archive - SWIFT API | Close listing end | no | yes |
 
+The list of all API endpoints can be found [here](/pages/storage_and_backup/object_storage/s3_location).
+
 ## Go further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
