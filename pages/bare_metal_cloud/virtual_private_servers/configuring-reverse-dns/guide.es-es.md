@@ -1,7 +1,7 @@
 ---
 title: "Configurar el registro DNS inverso de un VPS"
 excerpt: Cómo activar la resolución inversa DNS
-updated: 2023-01-05
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -26,15 +26,17 @@ La configuración de la resolución **inversa DNS** de un VPS resulta especialme
 
 Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `IP`{.action} en el menú de la izquierda.
 
-En la tabla de esta página se enumeran los servicios compatibles. Puede filtrar el nombre de su VPS utilizando el menú desplegable **Service**.
+El menú desplegable **Mis direcciones IP públicas y servicios asociados** le permite filtrar sus servicios por categoría.
 
-![Registro inverso](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/filteripvps.png){.thumbnail}
 
 Haga clic en `...`{.action} en la línea de la dirección IP correspondiente y seleccione `Cambiar el registro inverso`{.action}.
 
-![Registro inverso](images/reversecp02.png){.thumbnail}
+![Registro inverso](images/modifyreverse.png){.thumbnail}
 
 En la nueva ventana, introduzca el registro inverso y haga clic en `Confirmar`{.action}.
+
+![Registro inverso](images/enterreverse.png){.thumbnail}
 
 También puede editar el registro inverso directamente a través del icono de la columna **inversa** de la tabla.
 

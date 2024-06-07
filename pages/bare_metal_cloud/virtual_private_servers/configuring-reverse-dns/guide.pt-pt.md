@@ -1,7 +1,7 @@
 ---
 title: "Configurar a reverse DNS de um VPS"
 excerpt: Saiba como implementar a resolução reverse DNS
-updated: 2023-01-05
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -26,15 +26,17 @@ Configurar a resolução **Reverse DNS** de um VPS é particularmente útil para
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e abra o programa `Network`{.action}. De seguida, clique em `IP`{.action}.
 
-O quadro desta página apresenta os seus serviços elegíveis. Pode filtrar o nome do seu VPS através do menu pendente do **Serviço**.
+O menu suspenso em **Meus endereços IP públicos e serviços associados** permite filtrar os serviços por categoria.
 
-![Reverse DNS](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/filteripvps.png){.thumbnail}
 
 Clique em `...`{.action} na linha do endereço IP em causa e selecione `Alterar a reverse`{.action}.
 
-![Reverse DNS](images/reversecp02.png){.thumbnail}
+![Reverse DNS](images/modifyreverse.png){.thumbnail}
 
 Na nova janela, introduza a sua reverse e clique em `Confirmar`{.action}.
+
+![Reverse DNS](images/enterreverse.png){.thumbnail}
 
 Também pode editar a reverse diretamente através do ícone da coluna **Reverse** da tabela.
 

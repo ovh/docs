@@ -1,7 +1,7 @@
 ---
 title: Reverse DNS eines VPS konfigurieren
-excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung bearbeiten
-updated: 2023-01-05
+excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihres OVHcloud VPS bearbeiten
+updated: 2024-06-10
 ---
 
 ## Ziel
@@ -22,15 +22,17 @@ Die Konfiguration der umgekehrten DNS-Auflösung für einen VPS ist besonders be
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und öffnen Sie `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
 
-In der Tabelle auf dieser Seite werden Ihre kompatiblen Dienste aufgelistet. Sie können im Drop-Down-Menü unter **Dienst** nach Ihrem VPS filtern.
+The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category.
 
-![Reverse DNS](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/filteripvps.png){.thumbnail}
 
 Klicken Sie auf `...`{.action} in der Zeile der betreffenden IP-Adresse und wählen Sie dann `Reverse ändern`{.action} aus.
 
-![Reverse DNS](images/reversecp02.png){.thumbnail}
+![Reverse DNS](images/modifyreverse.png){.thumbnail}
 
 Geben Sie Ihren Reverse-Pfad im neuen Fenster ein und klicken Sie auf `Bestätigen`{.action}.
+
+![Reverse DNS](images/enterreverse.png){.thumbnail}
 
 Sie können den Reverse-Pfad auch direkt mithilfe des Icons in der Spalte "**Reverse**" der Tabelle editieren.
 
