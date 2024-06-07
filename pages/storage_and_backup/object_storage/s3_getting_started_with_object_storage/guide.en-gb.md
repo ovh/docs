@@ -115,6 +115,19 @@ aws s3 ls
 aws s3 cp /datas/test1 s3://<bucket_name>
 ```
 
+> [!primary]
+>
+> The `aws s3 cp` command will use STANDARD as default storage class for uploading objects.
+> To store objects in the High Performance tier, use `aws s3api put-object` command instead as `aws s3 cp` does not support the EXPRESS_ONEZONE storage class which is used to map the High Performance storage tier.
+> To learn more about the storage class mapping between the OVHcloud storage tiers and AWS storage classes, you can check our documentation [here](/pages/storage_and_backup/object_storage/s3_location).
+>
+
+```bash
+# upload an object to High Performance tier
+aws s3api put-object --bucket <bucket_name> --key <object_name> --body /datas/test1 --storage-class EXPRESS_ONEZONE
+```
+
+
 **By default, objects are named after files, but can be renamed**
 
 ```bash
