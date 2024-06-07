@@ -79,7 +79,7 @@ Jeśli chcesz skonfigurować Rewers DNS na adresie Additional IP, kliknij zakła
 
 W rozwijanym menu pod "**Moje publiczne adresy IP i usługi powiązane**" możesz sortować Twoje usługi według kategorii.
 
-![Rewers IP](images/selectservice2022.png){.thumbnail}
+![Rewers IP](images/filteripds.png){.thumbnail}
 
 Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej linii, a następnie `Zmień rewers`{.action}:
 

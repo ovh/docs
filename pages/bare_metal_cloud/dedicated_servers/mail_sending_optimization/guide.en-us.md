@@ -74,7 +74,7 @@ If you wish to configure the reverse DNS on an Additional IP, click on the `Addi
 
 The drop-down menu underneath **"My public IP addresses and associated services"** allows you to filter your services according to category.
 
-![Reverse IP](images/selectservice2022.png){.thumbnail}
+![Reverse IP](images/filteripds.png){.thumbnail}
 
 Next, click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
 
