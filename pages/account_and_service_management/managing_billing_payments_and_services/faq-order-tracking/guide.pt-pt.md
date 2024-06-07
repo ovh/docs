@@ -45,7 +45,7 @@ Se já fez o pagamento, sugerimos que contacte o [nosso Apoio ao Cliente](https:
 ### Como anular a minha encomenda?
 
 Se não realizar o pagamento, a sua encomenda será anulada automaticamente dentro de um prazo que poderá variar dependendo do tipo de serviço.
-Enquanto particular, se já pagou a encomenda e esta não estiver associada a um serviço personalizado (como um domínio) ou a uma licença (Office 365 ou SharePoint, por exemplo), pode retratar-se num período de 14 dias. A este respeito, disponibilizamos-lhe [um manual pormenorizado](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#direito-de-retratacao).
+Enquanto particular, se já pagou a encomenda e esta não estiver associada a um serviço personalizado (como um domínio) ou a uma licença (Office 365, por exemplo), pode retratar-se num período de 14 dias. A este respeito, disponibilizamos-lhe [um manual pormenorizado](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#direito-de-retratacao).
 
 #### Truques e dicas:
 
