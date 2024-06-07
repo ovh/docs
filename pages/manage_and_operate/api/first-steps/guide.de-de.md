@@ -35,9 +35,10 @@ Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/) auf `Explore the 
 
 Um die API für Ihre Dienste zu verwenden, loggen Sie sich mit Ihren OVHcloud Zugangsdaten ein:
 
-- Klicken Sie oben rechts auf `Login`{.action}. 
-- Geben Sie Ihre OVHcloud Zugangsdaten ein. 
-- Legen Sie unter der Bezeichnung **Validity** einen Zeitraum fest, während dessen Aktionen über die OVHcloud API erlaubt sein sollen.
+- Klicken Sie oben rechts auf `Authentication`{.action}.
+- Klicken Sie anschließend auf `Login with OVHcloud SSO`{.action}.
+- Geben Sie Ihre OVHcloud Zugangsdaten ein.
+- Klicken Sie auf den Button `Authorize`{.action}, um API-Aufrufe von dieser Seite aus zuzulassen.
 
 ![API](images/login.png){.thumbnail} 
 
@@ -48,7 +49,7 @@ Um die API für Ihre Dienste zu verwenden, loggen Sie sich mit Ihren OVHcloud Zu
 
 #### Die mit API verfügbaren Dienste analysieren
 
-Wenn Sie eingeloggt sind, werden alle OVHcloud Dienste, die über API-Zugang verfügen, angezeigt. Diese Liste ist alphabetisch geordnet.
+Im linken Menü finden Sie die Liste der OVHcloud Produkte, die über APIs verwaltet werden können.
 
 ![API](images/api-list.png){.thumbnail} 
 
@@ -56,7 +57,9 @@ Um zum Beispiel die zu Domainnamen gehörenden API-Aufrufe anzuzeigen, klicken S
 
 Nachdem Sie auf die Dienstbezeichnung geklickt haben, wird die Liste der verfügbaren API-Funktionen angezeigt. 
 
-![API](images/api-displayed.png){.thumbnail} 
+![API](images/api-displayed.png){.thumbnail}
+
+Sie haben auch einen Selektor auf der linken Seite der Produktliste, mit dem Sie zwischen den API-Zweigen **/v1** und **/v2** wählen können. Wenn Sie mit dem Prinzip der API-Verzweigung nicht vertraut sind, lesen Sie die [folgende Dokumentation zur API v2](/pages/manage_and_operate/api/apiv2).
 
 #### API-Aufrufe ausführen
 
@@ -108,15 +111,15 @@ Um beispielsweise einen Eintrag in Ihrer DNS Zone zu löschen, verwenden Sie fol
 
 ##### Parameter der API
 
-Nachdem Sie auf den Endpunkt Ihrer Wahl geklickt haben, können Sie im Bereich **Parameters** Ausführungsvariablen eingeben.
+Nachdem Sie auf den Endpunkt Ihrer Wahl geklickt haben, können Sie im Bereich **Request** Ausführungsvariablen eingeben.
  
 Um zum Beispiel einen TXT Eintrag in Ihrer DNS Zone hinzuzufügen, editieren Sie die folgenden Einstellungen:
  	
 ![API](images/parameters.png){.thumbnail} 
  
-Wenn Sie die Parameter festgelegt haben, können Sie die Ausführung des Aufrufs starten, indem Sie auf `Execute`{.action} klicken. 
+Wenn Sie die Parameter festgelegt haben, können Sie die Ausführung des Aufrufs starten, indem Sie auf `TRY`{.action} klicken. 
 
-Der Tab `Result` zeigt den Bericht zur Durchführung des API-Aufrufs.
+Der Tab `Response` zeigt den Bericht zur Durchführung des API-Aufrufs.
 
 ![API](images/result.png){.thumbnail} 
 
