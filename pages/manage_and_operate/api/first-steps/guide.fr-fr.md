@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec les API OVHcloud'
 excerpt: 'Découvrez comment utiliser les API OVHcloud'
-updated: 2024-02-01
+updated: 2024-06-07
 ---
 
 ## Objectif
@@ -32,9 +32,10 @@ Sur la page des [API OVHcloud](https://api.ovh.com/), cliquez sur `Explore the O
 
 Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site grâce à vos identifiants OVHcloud.
 
-- Cliquez sur `Login`{.action} en haut à droite. 
-- Saisissez vos identifiants OVHcloud. 
-- Définissez une temporalité, sous la mention **Validity**, pendant laquelle vous autorisez les actions via les API OVHcloud.
+- Cliquez sur `Authentication`{.action} en haut à gauche.
+- Cliquez ensuite sur `Login with OVHcloud SSO`{.action}.
+- Saisissez vos identifiants OVHcloud.
+- Cliquez sur le bouton `Authorize`{.action} pour autoriser les appels aux API depuis ce site.
 
 ![API](images/login.png){.thumbnail} 
 
@@ -45,7 +46,7 @@ Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site gr
 
 #### Explorer les produits disponibles sur les API
 
-Une fois connecté, vous retrouvez la liste des produits OVHcloud disposant des API. Cette liste est classée par ordre alphabétique.
+Vous retrouvez dans le menu de gauche la liste des produits OVHcloud qui peuvent être gérés via des API. Cette liste est classée par ordre alphabétique.
 
 ![API](images/api-list.png){.thumbnail} 
 
@@ -54,6 +55,8 @@ Pour afficher, par exemple, les API liées aux noms de domaine, cliquez sur **/d
 Après avoir cliqué sur le produit, la liste des API de ce dernier s'affiche en dessous. 
 
 ![API](images/api-displayed.png){.thumbnail} 
+
+Vous disposez également d'un sélecteur à gauche de la liste des produits qui permet de choisir entre les branches **/v1** et **/v2** de l'API. Si vous n'êtes pas familier avec le principe des branches d'API, vous pouvez consulter [la documentation suivante à propos de l'API v2](/pages/manage_and_operate/api/apiv2).
 
 #### Exécuter une API
 
@@ -64,7 +67,7 @@ Il existe 4 types d'API disponibles qui emploient ce que l'on appelle des métho
 La methode GET a pour but de récupérer les données d'une ressource.
 
 Par exemple, pour récupérer la liste de vos noms de domaine, utilisez l'API suivante :
- 
+
 > [!api]
 >
 > @api {v1} /domain GET /domain
@@ -105,15 +108,15 @@ Par exemple, si vous ne souhaitez finalement pas conserver l'enregistrement DNS 
 
 ##### Paramètres de l'API
 
-Après avoir cliqué sur l'API de votre choix, la section **Parameters** permet d'attribuer les variables relatives à son application.
+Après avoir cliqué sur l'API de votre choix, la section **Request** permet d'attribuer les variables relatives à son application.
  
 Par exemple, pour l'ajout d'un enregistrement TXT dans votre zone DNS, vous obtiendrez les paramètres suivants :
  	
 ![API](images/parameters.png){.thumbnail} 
  
-Une fois les paramètres définis, vous pouvez lancer l'API en cliquant sur `Execute`{.action}. 
+Une fois les paramètres définis, vous pouvez lancer l'API en cliquant sur `TRY`{.action}.
 
-L'onglet `Result` alors affiché vous donnera le rapport d'éxécution de l'API.
+L'onglet `Response` alors affiché vous donnera le rapport d'éxécution de l'API.
 
 ![API](images/result.png){.thumbnail} 
 
