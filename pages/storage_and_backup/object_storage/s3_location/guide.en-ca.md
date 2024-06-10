@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints and Object Storage geoavailability
-updated: 2024-06-05
+updated: 2024-06-10
 ---
 
 <style>
@@ -72,7 +72,7 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
     </tr>
 </table>
 
-_*the default storage class on the **io** endpoint will be Standard, i.e. if you don't specify a storage class, your object will be stored in our Standard tier._
+_* The default storage class on the **io** endpoint will be Standard, i.e. if you don't specify a storage class, your object will be stored in our Standard tier._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the following:
 
@@ -144,7 +144,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
 </table>
 
-_*the default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
+_* The default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is the following:
 

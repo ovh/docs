@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Getting started with Object Storage
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2024-01-31
+updated: 2024-06-10
 ---
 
 ## Objective
@@ -118,8 +118,8 @@ aws s3 cp /datas/test1 s3://<bucket_name>
 > [!primary]
 >
 > The `aws s3 cp` command will use STANDARD as default storage class for uploading objects.
-> To store objects in the High Performance tier, use `aws s3api put-object` command instead as `aws s3 cp` does not support the EXPRESS_ONEZONE storage class which is used to map the High Performance storage tier.
-> To learn more about the storage class mapping between the OVHcloud storage tiers and AWS storage classes, you can check our documentation [here](/pages/storage_and_backup/object_storage/s3_location).
+> To store objects in the High Performance tier, use the `aws s3api put-object` command instead, as `aws s3 cp` does not support the EXPRESS_ONEZONE storage class which is used to map the High Performance storage tier.
+> To learn more about the storage class mapping between OVHcloud storage tiers and AWS storage classes, you can check our documentation [here](/pages/storage_and_backup/object_storage/s3_location).
 >
 
 ```bash
