@@ -42,7 +42,7 @@ También puede editar el registro inverso directamente a través del icono de la
 
 > [!primary]
 >
-Si la modificación no funciona como se esperaba, compruebe que el registro `A` esté bien configurado en la zona DNS del dominio. Atención: La modificación de la [zona DNS](/pages/public_cloud/compute/setup_instance_reverse) puede tardar hasta 24 horas si solo ha cambiado recientemente el registro `A`.
+Si la modificación no funciona como se esperaba, compruebe que el registro `A` esté bien configurado en la zona DNS del dominio. Atención: La modificación de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) puede tardar hasta 24 horas si solo ha cambiado recientemente el registro `A`.
 >
 
 ## Más información <a name="gofurther"></a>
