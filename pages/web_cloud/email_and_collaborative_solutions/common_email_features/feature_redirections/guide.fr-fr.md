@@ -12,7 +12,9 @@ updated: 2024-03-26
 
 ## Objectif
 
-Vous trouverez dans ce guide différentes informations et aides concernant la configuration de vos redirections et alias e-mail, par exemple pour renvoyer des e-mails reçus sur une adresse A vers une adresse B.
+Vous trouverez dans ce guide différentes informations et aides concernant la configuration de vos **redirections** et **alias** e-mail, par exemple pour renvoyer des e-mails reçus sur une adresse A vers une adresse B.
+
+![emails](images/schema-redirect00.png){.thumbnail}
 
 **Découvrez comment gérer vos alias et redirections e-mail**
 
@@ -20,7 +22,7 @@ Vous trouverez dans ce guide différentes informations et aides concernant la co
 
 Une redirection permet de modifier le trajet initial d'un e-mail vers une ou plusieurs autres adresses e-mail.
 
-Par exemple, vous souhaitez qu'à l'envoi d'un e-mail sur **contact@mydomain.ovh**, celui-ci soit également renvoyé vers **john.smith@otherdomain.ovh**. Cela permet de transmettre automatiquement un e-mail destiné à **contact@mydomain.ovh** vers **john.smith@otherdomain.ovh**.
+Par exemple, vous souhaitez qu'à la réception d'un e-mail sur **contact@mydomain.ovh**, celui-ci soit également renvoyé vers **john.smith@otherdomain.ovh**. Cela permet de transmettre automatiquement un e-mail destiné à **contact@mydomain.ovh** vers **john.smith@otherdomain.ovh**.
 
 ### Qu'est-ce qu'un alias e-mail ?
 
@@ -32,17 +34,32 @@ Par exemple, votre adresse e-mail est **john.smith@mydomain.ovh** et votre alias
 
 ### Redirection et alias en image <a name="diagram"></a>
 
-- **La redirection simple (schéma n°1 ci-dessous)** : l'e-mail est directement renvoyé vers l'adresse de redirection, le destinataire initial ne reçoit pas l'e-mail.
+Cliquez sur les onglets suivant pour comprendre en image le fonctionnement des alias et redirections.
 
-- **La redirection avec copie locale (schéma n°2 ci-dessous)** : l'e-mail est transmis au destinataire initial ainsi qu'à l'adresse de redirection.
+- `From` désigne l'adresse de l'expéditeur
+- `To` désigne l'adresse du destinataire
+- `Redirect to` désigne l'adresse e-mail de redirection qui a été configurée.
 
-- **L'alias e-mail (schéma n°3 ci-dessous)** : l'e-mail est adressé à l'alias qui le renvoie vers le destinataire sur lequel l'alias a été configuré.
-
-![emails](images/schema-redirect.png){.thumbnail}
+> [!tabs]
+> **1. La redirection simple**
+>>
+>> l'e-mail est directement renvoyé vers l'adresse de redirection, le destinataire initial ne reçoit pas l'e-mail.<br><br>
+>> ![emails](images/schema-redirect01.png){.thumbnail}
+>>
+> **2. La redirection avec copie locale**
+>>
+>> l'e-mail est transmis au destinataire initial ainsi qu'à l'adresse de redirection.<br><br>
+>> ![emails](images/schema-redirect02.png){.thumbnail}
+>>
+> **3. L'alias e-mail**
+>>
+>> l'e-mail est adressé à l'alias qui le renvoie vers le destinataire sur lequel l'alias a été configuré. La mention `Received by` désigne l'adresse e-mail qui reçoit l'e-mail.<br><br>
+>> ![emails](images/schema-redirect03.png){.thumbnail}
+>>
 
 > [!primary]
 >
-> Sachez qu'il est possible de configurer une redirection vers plusieurs adresses e-mail.
+> Sachez qu'il est possible de configurer une redirection vers plusieurs adresses e-mail en créant
 
 ## Prérequis
 
@@ -51,12 +68,15 @@ Par exemple, votre adresse e-mail est **john.smith@mydomain.ovh** et votre alias
 
 ## En pratique
 
-Les chapitres « [créer une redirection](#redirect) » et « [créer un alias](#alias) » concernent l'ensemble de nos offres e-mail OVHcloud, **sauf si** :
-
-- vous possédez la version historique de l'offre MXplan (pour le vérifier, vous pouvez consulter le cadre ci-dessous).
-- vous possédez un nom de domaine enregistré chez OVHcloud sans offre e-mail attachée.
-
-Pour ces deux exceptions, seule la redirection est possible. Nous vous invitons à consulter directement le chapitre « [Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail](#mxplanlegacy) ».
+> [!warning]
+>
+> Les chapitres « [créer une redirection](#redirect) » et « [créer un alias](#alias) » concernent l'ensemble de nos offres e-mail OVHcloud, **sauf si** :
+> 
+> - vous possédez la version historique de l'offre MXplan (pour le vérifier, vous pouvez consulter le cadre ci-dessous).
+> - vous possédez un nom de domaine enregistré chez OVHcloud sans offre e-mail attachée.
+>
+> Pour ces deux exceptions, seule la redirection est possible. Nous vous invitons à consulter directement le chapitre « [Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail](#mxplanlegacy) ».
+>
 
 >
 > Selon la date d'activation de votre offre MXplan ou si [celle-ci a été récemment migrée](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/), il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci.<br> 
@@ -118,6 +138,27 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 > Pour appliquer une **redirection simple** (voir le [schéma 1](#diagram) au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur `Déplacer, copier ou supprimer`{.action} et enfin cliquez sur `supprimer le message`{.action}. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.<br><br>
 > ![emails](images/emails-all-07.png){.thumbnail .w-640}
 
+### Supprimer une redirection
+
+Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovhcloud.com/fr/mail/), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
+>> ![emails](images/emails-all-01.png){.thumbnail}<br>
+>>
+> **Etape 2**
+>> Depuis la fenêtre **Options**, dans la colonne de gauche, dirigez-vous dans la catégorie **Traitement automatique** de la section **Courrier** puis cliquez sur `Règles de boîte de réception et de rangement`{.action}. <br><br>
+>> ![emails](images/owa-redirect-del-01.png){.thumbnail}<br><br>
+>> Vous trouverez la fenêtre permettant de gérer vos redirections et filtres.<br>
+>>
+> **Etape 3**
+>>
+>> Une fois dans la fenêtre de gestion des **Règles de boîte de réception**, cliquez sur la redirection que vous souhaitez supprimer, elle doit apparaître en surbrillance. Cliquez ensuite sur l'icône de corbeille<br><br>
+>> ![emails](images/owa-redirect-del-02.png){.thumbnail}<br><br>
+>>
+
 ### Créer un alias <a name="alias"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
@@ -146,7 +187,7 @@ Pour ajouter un alias à votre compte e-mail, suivez les étapes décrites en cl
 >> Cliquez sur `Ajouter un alias`{.action} puis saisissez l'adresse que vous avez choisie pour votre alias et validez votre choix.<br><br>
 >> ![emails](images/email-alias03.png){.thumbnail}<br>
 
-#### Supprimer un alias
+### Supprimer un alias
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée. Cliquez ensuite sur `Configurer les alias`{.action} ( ou `Gérer les alias`{.action}).
 
@@ -158,7 +199,11 @@ Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le men
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web Cloud`. Dirigez-vous dans la sections `Emails`{.action} :
 
-La méthode pour créer un alias ou une redirection est strictement la même. Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
+> [!warning]
+>
+> La méthode pour créer un alias ou une redirection est strictement la même.
+
+Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
 
 > [!tabs]
 > **Etape 1**
@@ -187,6 +232,10 @@ La méthode pour créer un alias ou une redirection est strictement la même. Su
 >
 > Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVHcloud** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des redirections, elle matérialise cette copie locale.
 >
+
+### Supprimer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail <a name="del-mxplanlegacy"></a>
+
+
 
 ## Aller plus loin
 
