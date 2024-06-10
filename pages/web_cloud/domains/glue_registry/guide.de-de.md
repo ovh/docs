@@ -1,7 +1,7 @@
 ---
 title: "DNS-Server von Domainnamen individualisieren (Glue Records)"
 excerpt: "Erfahren Sie hier, wie Sie die DNS-Server Ihres OVHcloud Domainnamens anpassen"
-updated: 2024-06-07
+updated: 2024-06-10
 ---
 
 > [!primary]
