@@ -1,7 +1,7 @@
 ---
 title: "Transfert des logs VMware vers un stream Logs Data Platform"
-excerpt: "Découvrez comment activer le transfert de logs (logs forwarding)  Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-06-06
+excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
+updated: 2024-06-10
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ L'objectif de ce guide est de vous montrer comment activer le transfert des logs
 ### Glossaire
 - **Logs Data Platform :** Plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/){.external}
 - **Data Stream :** Partition logique de logs que vous créez dans un compte Logs Data Platform et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
-- **Transfert de logs :** Fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans le *Data Stream* d’un compte Logs Data Platform du même compte OVHcloud. Cette fonctionnalité doit être activée par vos soins et pour votre service [(consultez cette section du guide pour l'activer)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp#Etape1)
+- **Transfert de logs :** Fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans le *Data Stream* d’un compte Logs Data Platform du même compte OVHcloud. Cette fonctionnalité doit être activée par vos soins et pour votre service, consultez cette partie du guide pour l'activer : [Etape 1 - Comment activer le transfert des journaux via l'API OVHcloud ?](#Activation)
 - **Abonnement à la redirection de logs :** Lors de l'activation du transfert de logs pour votre service OVHcloud vers un *Data Stream* Logs Data Platform donné, un *abonnement* doit être créé et rattaché au *Data Stream* pour une gestion ultérieure.
 
 ## En pratique
@@ -79,7 +79,7 @@ Par exemple :
 
 Vous pouvez vous référer à ce guide et retrouver comment administrer vos flux (stream) depuis le control panel Log Data Platform : [Premiers pas | Commencement avec Logs Data Platform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
-Vous pouvez récupérer le **streamId** et le  mettre de côté (copier-coller), vous en aurez besoin pour activer votre souscription Hosted Private Cloud vers le stream Logs Data Platform en question.
+Vous pouvez récupérer le **streamId** et le mettre de côté (copier-coller). Vous en aurez besoin pour activer votre souscription Hosted Private Cloud avec le stream Logs Data Platform en question.
 
 ### Activation de l'abonnement Logs Data Platform Hosted Private Cloud
 
@@ -87,7 +87,7 @@ Vous pouvez récupérer le **streamId** et le  mettre de côté (copier-coller),
 
 Cette fonctionnalité n'est pas encore disponible dans le control panel Hosted Private Cloud.
 
-#### Via l’API OVHcloud :
+#### Via l’API OVHcloud <a name="Activation"></a>
 
 > [!primary]
 >
@@ -102,11 +102,11 @@ Pour récupérer le **streamId** de votre compte LDP, suivez le guide : [Premier
 >
 > **Paramètres :**
 >
-> **serviceName** : Domaine du service (pcc-XXX-XXX-XXX-XXX).
+> **serviceName** : Nom de service de votre Hosted Private Cloud VMware on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
 > 
-> **kind** : Nom du type de journal de l'abonnement ("esxi").
+> **kind** : Nom du type de journal de l'abonnement, ["esxi","nsxtManager","vcsa","nsxtEdge"].
 >
-> **streamId** : Identifiant du flux (stream) de destination (uuid :"ggb8d894-c491-433e-9c87-50a8bf6fe773").
+> **streamId** : Identifiant du flux (stream) de destination, (uuid :"ggb8d894-c491-433e-9c87-50a8bf6fe773").
 >
 
 Exemple :
@@ -115,8 +115,8 @@ Exemple :
 @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 
 {
-  "kind": "string", // Le label VMware, la seul valeur supporté actuellement est : 'esxi'.
-  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // L'identifiant du flux (stream) LDP.
+  "kind": "esxi", // Le label VMware, les valeurs supportées actuellement sont : ["esxi","nsxtManager","vcsa","nsxtEdge"].
+  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // L'identifiant du stream LDP.
 }
 ```
 
@@ -142,7 +142,7 @@ Obtenir le **subscriptionId** :
 >
 > **Paramètres :**
 >
-> **serviceName** : Domaine du service (pcc-XXX-XXX-XXX-XXX).
+> **serviceName** : Nom de service de votre Hosted Private Cloud VMware on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
 >
 > **kind** : Nom du type de journal de l'abonnement Hosted Private Cloud ("esxi").
 >
@@ -170,7 +170,7 @@ Désactiver votre abonnement de souscription Hosted Private Cloud Log Data Platf
 >
 > **Paramètres :**
 >
-> **serviceName** : Domaine du service (pcc-XXX-XXX-XXX-XXX).
+> **serviceName** : Nom de service de votre Hosted Private Cloud VMware on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
 >
 > **subscriptionId** : Nom de type de journal de l'abonnement ("esxi").
 >
