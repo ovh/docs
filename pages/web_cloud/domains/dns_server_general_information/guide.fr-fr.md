@@ -1,7 +1,7 @@
 ---
 title: "Qu'est ce qu'un serveur DNS ?"
 excerpt: "Découvrez le rôle des serveurs DNS, ce qu'ils contiennent et comment ils fonctionnent avec un nom de domaine"
-updated: 2024-06-06
+updated: 2024-06-10
 ---
 
 ## Objectif
@@ -14,19 +14,32 @@ Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'�
 
 ## En pratique
 
-### Rôle d'un serveur DNS
+### Rôle des serveurs DNS
 
-Tous les **serveurs DNS** (y compris les résolveurs DNS, les root DNS et les TLD DNS) forment ensemble ce que l'on appelle le réseau DNS.
+Tous les **serveurs DNS** forment ensemble ce que l'on appelle le réseau DNS.
 
 Ce réseau DNS permet de faciliter, pour les utilisateurs, l'accès à Internet et aux différents services qui lui sont associés (sites web, services de messagerie en ligne, etc.).
 
 Ils permettent notamment l'utilisation des [noms de domaine](/links/web/domains) pour accéder à votre site web préféré sans être obligé de retenir l'adresse IP du serveur où est hébergé ce site web.
 
+![DNS resolution](images/dns-resolution.png){.thumbnail}
+
+Il existe 4 types de serveurs DNS : 
+
+- Les résolveurs DNS (DNS resolver ou DNS recursive): Premier serveur qui reçoit la requête DNS émise par un client (navigateur internet, logiciel de messagerie, etc.). Cette étape est représentée par l'étape **1** du schéma ci-dessus. Ce serveur fait la passerelle entre le client et le reste du réseau DNS. Il interroge les trois autres types de serveur DNS jusqu'à ce qu'il récupère l'adresse IP, demandée par la requête DNS, auprès du serveur DNS de référence.
+- Les serveurs DNS racine (DNS root): Ce serveur DNS contient un annuaire pour tous les TLD (noms de domaine de premier niveau tels que *.com*, *.net*, .fr*, etc.). Il va indiquer au résolveur DNS l'adresse du serveur DNS TLD correspondant à l'extension présente dans la requête DNS demandée par le client (étapes **2** et **3** du schéma ci-dessus).
+- Les serveurs DNS d'extensions/nom de domaine de premier niveau (DNS TLD): Ce serveur DNS contient un annuaire de noms de domaine pour une extension donnée. Il va indiquer au résolveur DNS l'adresse du serveur DNS de référence correspondant au nom de domaine présent dans la requête DNS demandée par le client (étapes **4** et **5** du schéma ci-dessus).
+- Les serveurs DNS de référence (DNS Authoritative): C'est le dernier serveur DNS interrogé par le résolveur DNS (étapes **6** et **7** du schéma ci-dessus). Il contient la zone DNS active pour le nom de domaine présent dans la requête DNS demandée par le client. C'est le contenu de ce type de serveur DNS que nous allons détailler dans la suite de ce guide.
+
+Dès que le résolveur DNS a récupéré l'adresse IP du serveur recherchée via la requêtes DNS demandée par le client, il renvoie cette adresse IP au client (étape **8** du schéma ci-dessus).
+
+Le client envoi ensuite une autre requête directement au serveur associé à l'adresse IP récupérée grâce à la résolution DNS (étape **9** du schéma ci-dessus). Ceci pour s'y connecter ou y récupérer les éléments dont il a besoin pour résoudre cette seconde requête (étape **10** du schéma ci-dessus).
+
 Consultez notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) » si vous avez besoin de réaliser cette action pour un nom de domaine enregistré chez OVHcloud.
 
-### Contenu d'un serveur DNS
+### Contenu d'un serveur DNS (Authoritative)
 
-Un **serveur DNS** contient un annuaire de noms de domaine.
+Un **serveur DNS Authoritative** contient un annuaire de noms de domaine pouvant avoir des extensions (TLD) différentes.
 
 Pour chaque nom de domaine contenu dans l'annuaire est associé une **zone DNS** qui contient la configuration DNS à appliquer au nom de domaine.
 
@@ -38,7 +51,7 @@ Une zone DNS contient des informations techniques, appelées *enregistrements DN
 > - Consultez ensuite notre guide sur [Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_general_information) pour une meilleure compréhension de l'ensemble.
 >
 
-De ce fait, ce sont les **serveurs DNS** qui doivent être déclarés, auprès du bureau d'enregistrement d'un nom de domaine, pour utiliser la zone DNS qu'ils hébergent. 
+De ce fait, ce sont les **serveurs DNS Authoritative** qui doivent être déclarés, auprès du bureau d'enregistrement d'un nom de domaine, pour utiliser la zone DNS qu'ils hébergent. 
 
 ![DNS](images/dns-server.png){.thumbnail}
 
