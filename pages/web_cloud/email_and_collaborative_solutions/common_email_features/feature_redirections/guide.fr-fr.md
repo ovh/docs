@@ -59,7 +59,7 @@ Cliquez sur les onglets suivants pour comprendre en image le fonctionnement des 
 
 > [!primary]
 >
-> Sachez qu'il est possible de configurer une redirection vers plusieurs adresses e-mail en créant
+> Sachez qu'il est possible de configurer une redirection vers plusieurs adresses e-mail. Pour cela, il est néanmoins nécessaire de créer une par une les redirections vers chaque destinataire.
 
 ## Prérequis
 
