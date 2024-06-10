@@ -21,7 +21,7 @@ Les opérations de maintenance au sein d'OVHcloud témoignent d'un grand savoir-
 
 #### Via le control panel OVHcloud
 
-Pour accéder à vos opérations de maintenance depuis le [control panel OVHcloud](/links/manager), veuillez-vous référer au début du guide : [ En pratique - Décaler une maintenance programmée sur votre Hosted Private Cloud ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
+Pour accéder à vos opérations de maintenance depuis le [control panel OVHcloud](/links/manager), veuillez-vous référer au début du guide : [En pratique - Accéder aux opération d'une maintenance programmée sur votre Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
 
 ![Maintenance Operation](images/Maintenance.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Pour avoir le détail de chaque robot :
 
 Une fois que la fenêtre de modification de date s'affiche :
 
-![Maintenance Modified Traitement Date](images/Maintenance_modification_date_2.png){thumbnail}
+![Maintenance Modified Traitement Date 2](images/Maintenance_modification_date_2.png){thumbnail}
 
 Vous pouvez choisir la date que vous souhaitez en cliquant dessus, exemple ici: `11`{.action}, puis sur `Modifier`{.action}
 
