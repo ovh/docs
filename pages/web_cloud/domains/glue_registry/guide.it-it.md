@@ -1,7 +1,7 @@
 ---
 title: "Personalizzare i server DNS di un dominio (Glue Records)"
 excerpt: "Questa guida ti mostra come personalizzare i server DNS del tuo dominio OVHcloud"
-updated: 2024-03-07
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -60,6 +60,13 @@ Se necessario e per maggiori informazioni, consulta la nostra guida sullo strume
 
 ### Step 2: aggiungi i record "GLUE" <a name="step2"></a>
 
+> [!warning]
+>
+> I registri delle estensioni *.eu*, *.it*, *.be* e *.de* non considerano i record "GLUE" come "oggetti", ma come "attributi".
+>
+> Di conseguenza, per queste estensioni, passa **direttamente allo [step 3](#step3)** di questa guida senza realizzare lo step 2.
+>
+
 > [!success]
 >
 > Prima di iniziare, tieni presente che:
@@ -97,7 +104,7 @@ Una volta inseriti tutti i dati, clicca sul pulsante `Continua`{.action}, leggi 
 
 Nel nostro esempio, dovrai ripetere l’operazione per creare il "GLUE" **dns2.domain.tld**. che sostituirà il server DNS **dnsX2.ovh.net** attualmente associato agli IPv4 *203.0.113.1* e IPv6 *2001:db8:1:1b00:203:0:113:1*
 
-### Step 3: crea i record DNS di tipo A e AAAA corrispondenti ai DNS personalizzati
+### Step 3: crea i record DNS di tipo A e AAAA corrispondenti ai DNS personalizzati <a name="step3"></a>
 
 È necessario creare i record *A* e *AAAA* per i nomi host definiti nello step precedente. I record *A* e *AAAA* devono avere come destinazione l’indirizzo IP di destinazione corrispondente al nome host creato precedentemente.
 
@@ -130,7 +137,14 @@ Attendiamo il tempo di propagazione DNS.
 
 Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona *il dominio per il quale vuoi personalizzare i server DNS*.
 
-Seleziona la scheda `Server DNS`{.action} e clicca su `Modifica i server DNS`{.action}. Sostituisci i server DNS correnti con quelli che vuoi utilizzare come server DNS personalizzato. 
+Seleziona la scheda `Server DNS`{.action} e clicca su `Modifica i server DNS`{.action}. Sostituisci i server DNS correnti con quelli che vuoi utilizzare come server DNS personalizzato.
+
+> [!warning]
+>
+> Se i tuoi server DNS personalizzati sono stati creati con le estensioni *.eu*, *.it*, *.be* o *.de*, inserisci **obbligatorio** l'indirizzo IP associato rispettivamente per ciascuno dei tuoi server DNS personalizzati.
+>
+> In caso contrario, i server DNS personalizzati non verranno presi in carico correttamente e non funzioneranno quindi con il tuo dominio.
+>
 
 Completa gli step e, se necessario, consulta le istruzioni descritte nella nostra documentazione "[Modifica i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
 
@@ -230,4 +244,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>
+Contatta la nostra [Community di utenti](/links/community).

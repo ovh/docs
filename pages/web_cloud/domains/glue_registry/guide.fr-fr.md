@@ -1,7 +1,7 @@
 ---
 title: "Personnaliser les serveurs DNS d'un nom de domaine (Glue Records)"
 excerpt: 'Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
-updated: 2024-06-04
+updated: 2024-06-10
 ---
 
 ## Objectif
@@ -60,9 +60,9 @@ Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zon
 
 > [!warning]
 >
-> Les registres des extensions *.eu*,*.it*, *.be* et *.de* ne considèrent pas les enregistrements « GLUE » comme des « objets » mais comme des « attributs ».
+> Les registres des extensions *.eu*, *.it*, *.be* et *.de* ne considèrent pas les enregistrements « GLUE » comme des « objets » mais comme des « attributs ».
 >
-> Par conséquent, pour ces extensions, passez **directement à l'étape 3** de ce guide sans réaliser l'étape 2.
+> Par conséquent, pour ces extensions, passez **directement à l'[étape 3](#step3)** de ce guide sans réaliser l'étape 2.
 >
 
 > [!success]
@@ -102,7 +102,7 @@ Une fois les informations complétées, cliquez sur le bouton `Ajouter`{.action}
 
 Dans notre exemple, vous devrez réitérer l'opération pour créer le « GLUE » **dns2.domain.tld**. Ce dernier remplacera par la suite le serveur DNS **dnsX2.ovh.net**  actuellement associé aux IPv4 *203.0.113.1* et IPv6 *2001:db8:1:1b00:203:0:113:1*
 
-### Étape 3 : créer les enregistrements DNS de type A et AAAA correspondants aux DNS personnalisés
+### Étape 3 : créer les enregistrements DNS de type A et AAAA correspondants aux DNS personnalisés <a name="step3"></a>
 
 Vous devez créer les enregistrements *A* et *AAAA* pour les noms d'hôtes que vous avez définis lors de l'étape précédente. Les enregistrements *A* et *AAAA* doivent avoir pour cible l'adresse IP de destination correspondante au nom d'hôte créé précédemment.
 
@@ -139,7 +139,7 @@ Positionnez-vous sur l'onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier
 
 > [!warning]
 >
-> Si vos serveurs DNS personnalisés ont été créés avec les extensions *.eu*,*.it*, *.be* ou *.de*, renseignez **obligatoirement** l'adresse IP associée respectivement pour chacun de vos serveurs DNS personnalisés.
+> Si vos serveurs DNS personnalisés ont été créés avec les extensions *.eu*, *.it*, *.be* ou *.de*, renseignez **obligatoirement** l'adresse IP associée respectivement pour chacun de vos serveurs DNS personnalisés.
 >
 > Sans cela, les serveurs DNS personnalisés ne seront pas pris en compte correctement et ne fonctionneront donc pas avec votre nom de domaine.
 >
@@ -242,4 +242,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
