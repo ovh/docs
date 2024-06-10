@@ -75,7 +75,7 @@ Si vous souhaitez configurer le reverse DNS sur une adresse Additional IP, cliqu
 
 Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie.
 
-![Reverse IP](images/selectservice2022.png){.thumbnail}
+![Reverse IP](images/filteripds.png){.thumbnail}
 
 Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne correspondante puis sur `Modifier le reverse`{.action} :
 

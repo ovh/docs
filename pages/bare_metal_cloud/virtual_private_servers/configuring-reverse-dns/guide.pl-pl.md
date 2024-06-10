@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja rewersu DNS na serwerze VPS"
 excerpt: Dowiedz się, jak wdrożyć rewers DNS
-updated: 2023-01-05
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -26,15 +26,17 @@ Konfiguracja **rewersu DNS** VPS jest szczególnie przydatna przy wysyłaniu e-m
 
 Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i otwórz `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
-Tabela na tej stronie zawiera listę usług, które możesz spełnić. Nazwa VPS można filtrować z rozwijanego menu **Service**.
+W rozwijanym menu **Moje publiczne adresy IP i usługi powiązane** możesz podzielić Twoje usługi na kategorie.
 
-![Rewers DNS](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/filteripvps.png){.thumbnail}
 
 Kliknij `...`{.action} w linii odpowiedniego adresu IP i wybierz `Zmień rewers`{.action}.
 
-![Rewers DNS](images/reversecp02.png){.thumbnail}
+![Rewers DNS](images/modifyreverse.png){.thumbnail}
 
 W nowym oknie wprowadź rewers i kliknij `Zatwierdź`{.action}.
+
+![Rewers DNS](images/enterreverse.png){.thumbnail}
 
 Rewers możesz również edytować bezpośrednio na ikonie kolumny **Reverse** tabeli.
 
@@ -47,4 +49,4 @@ Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy pole `A` j
 
 [Pierwsze kroki z serwerem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

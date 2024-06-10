@@ -1,7 +1,7 @@
 ---
-title: "Configurer le reverse DNS d'un VPS"
-excerpt: Découvrez comment mettre en place la résolution reverse DNS
-updated: 2023-01-05
+title: "Comment configurer le reverse DNS d'un VPS"
+excerpt: Découvrez comment mettre en place la résolution reverse DNS de votre VPS OVHcloud
+updated: 2024-06-10
 ---
 
 ## Objectif
@@ -14,25 +14,25 @@ Configurer la résolution **Reverse DNS** d'un VPS est particulièrement utile p
 
 ## Prérequis
 
-- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- Disposer d'un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
 - Un nom de domaine avec son champ `A` pointant vers le VPS
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action} et ouvrez `Network`{.action}. Cliquez ensuite sur `IP`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Bare Metal Cloud`{.action} et ouvrez `Network`{.action}. Cliquez ensuite sur `IP`{.action}.
 
 Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie.
 
-![Reverse IP](images/selectservice2022.png){.thumbnail}
+![Reverse IP](images/filteripvps.png){.thumbnail}
 
 Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Modifier le reverse`{.action}.
 
-![Reverse DNS](images/reversecp01.png){.thumbnail}
+![Reverse DNS](images/modifyreverse.png){.thumbnail}
 
-Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Confirmer`{.action}.
+Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Valider`{.action}.
 
-![Reverse DNS](images/reversecp02.png){.thumbnail}
+![Reverse DNS](images/enterreverse.png){.thumbnail}
 
 Vous pouvez également éditer le reverse directement via l'icône de la colonne **Reverse** du tableau.
 
@@ -45,4 +45,4 @@ Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` es
 
 [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
