@@ -16,7 +16,7 @@ Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'�
 
 ### Rôle d'un serveur DNS
 
-Tous les **serveurs DNS** (y compris les résolveurs DNS récursifs) forment ensemble ce que l'on appelle le réseau DNS.
+Tous les **serveurs DNS** (y compris les résolveurs DNS, les root DNS et les TLD DNS) forment ensemble ce que l'on appelle le réseau DNS.
 
 Ce réseau DNS permet de faciliter, pour les utilisateurs, l'accès à Internet et aux différents services qui lui sont associés (sites web, services de messagerie en ligne, etc.).
 
