@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser les alias et redirections e-mail'
 excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
-updated: 2024-03-26
+updated: 2024-06-10
 ---
 
 <style>
@@ -34,7 +34,7 @@ Par exemple, votre adresse e-mail est **john.smith@mydomain.ovh** et votre alias
 
 ### Redirection et alias en image <a name="diagram"></a>
 
-Cliquez sur les onglets suivant pour comprendre en image le fonctionnement des alias et redirections.
+Cliquez sur les onglets suivants pour comprendre en image le fonctionnement des alias et redirections.
 
 - `From` désigne l'adresse de l'expéditeur
 - `To` désigne l'adresse du destinataire
@@ -90,7 +90,7 @@ Cliquez sur les onglets suivant pour comprendre en image le fonctionnement des a
 
 ### Créer une redirection <a name="redirect"></a>
 
-La gestion des redirections ne se fait pas via l'espace client mais directement via le webmail de l'adresse e-mail concernée.
+La gestion des redirections ne se fait pas via l'espace client, mais directement via le webmail de l'adresse e-mail concernée.
 
 Rendez-vous sur l'adresse <https://www.ovhcloud.com/fr/mail/>. Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
 
@@ -109,7 +109,7 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 > **Etape 2**
 >> Depuis la fenêtre **Options**, dans la colonne de gauche, dirigez-vous dans la catégorie **Traitement automatique** de la section **Courrier** puis cliquez sur `Règles de boîte de réception et de rangement`{.action}. <br><br>
 >> ![emails](images/emails-all-02.png){.thumbnail}<br><br>
->> Cette fenêtre permet de gérer vos redirections mais également d'appliquer des filtres sur l'ensemble des e-mails entrants.<br>
+>> Cette fenêtre permet de gérer vos redirections, mais également d'appliquer des filtres sur l'ensemble des e-mails entrants.<br>
 >>
 > **Etape 3**
 >>
@@ -201,7 +201,9 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 > [!warning]
 >
-> La méthode pour créer un alias ou une redirection est strictement la même.
+> - La méthode pour créer un alias ou une redirection est strictement la même.
+> - Il est possible de créer un maximum de 2000 alias et redirections, copies locales incluses.
+>
 
 Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
 
@@ -235,7 +237,15 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 
 ### Supprimer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail <a name="del-mxplanlegacy"></a>
 
+Depuis l'onglet `Emails`{.action}, cliquez sur `Gestion des redirections`{.action} à droite de la fenêtre.
 
+Cliquez sur le bouton `...`{.action} à droite de la redirtection concerné, cliquez sur `Supprimer la redirection`{.action}
+
+> [!warning]
+>
+> Il n'est pas possible de modifier une redirection ou un alias, il est nécessaire de la supprimer et la recréer.
+
+![emails](images/email-del-legacy-redirect01.png){.thumbnail}
 
 ## Aller plus loin
 
