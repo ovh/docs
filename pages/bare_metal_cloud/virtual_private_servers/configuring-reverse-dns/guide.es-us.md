@@ -49,4 +49,4 @@ Si la modificación no funciona como se esperaba, compruebe que el registro `A` 
 
 [Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

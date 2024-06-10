@@ -49,4 +49,4 @@ Wenn der Domainname von OVHcloud als Registrar verwaltet wird und OVHcloud DNS-S
 
 [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

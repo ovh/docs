@@ -49,4 +49,4 @@ Se la modifica non funziona come previsto, verifica che il record `A` sia config
 
 [Iniziare a utilizzare un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

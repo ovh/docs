@@ -49,4 +49,4 @@ Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy pole `A` j
 
 [Pierwsze kroki z serwerem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -49,4 +49,4 @@ If the domain name is managed by OVHcloud as its registrar **and** it uses OVHcl
 
 [How to edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

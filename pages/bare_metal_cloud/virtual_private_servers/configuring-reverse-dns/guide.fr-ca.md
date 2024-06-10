@@ -45,4 +45,4 @@ Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` es
 
 [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

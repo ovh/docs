@@ -49,4 +49,4 @@ Se a alteração não funcionar como previsto, verifique se o campo `A` está co
 
 [VPS - primeira utilização](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).
