@@ -30,7 +30,7 @@ Vous pouvez, par exemple, y préciser :
 - Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit.
 - Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.) associés à votre nom de domaine (enregistrements DNS de type SPF, DKIM, DMARC, etc.).
 
-Une zone DNS est hébergée / enregistrée sur des **serveurs DNS**. Ce sont les **serveurs DNS** qui doivent être déclarés, auprès du bureau d'enregistrement d'un nom de domaine, pour utiliser la zone DNS qu'ils hébergent. 
+Une zone DNS est hébergée / enregistrée sur des **serveurs DNS**. Ce sont les **serveurs DNS** qui doivent être déclarés (auprès du bureau d'enregistrement d'un nom de domaine) pour utiliser la zone DNS qu'ils hébergent. 
 
 Pour plus d'informations, consultez notre page web expliquant [comment fonctionne un serveur DNS](/links/web/domains-dns-server).
 
