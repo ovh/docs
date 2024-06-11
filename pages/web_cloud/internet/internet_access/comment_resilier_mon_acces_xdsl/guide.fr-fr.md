@@ -17,7 +17,7 @@ La résiliation sera effective à la prochaine facturation de votre accès à In
 - Disposer d'un accès xDSL/FTTH actif.
 - Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
 
-![espace client Telecom Accès Internet](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
 > [!primary]
 > La résiliation d'un [pack SIP Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/) doit faire l'objet d'une [« demande d'assistance »](https://www.ovh.com/manager/dedicated/index.html#/support/tickets) via l'espace-client OVHcloud afin que les équipes du support la mettent en place.
