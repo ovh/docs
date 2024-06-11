@@ -16,7 +16,7 @@ updated: 2024-03-08
 
 > [!primary]
 >
-> Pour mieux comprendre la notion de DNS, consultez l'introduction de notre guide sur la [configuration d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Pour mieux comprendre la notion de DNS, consultez notre guide sur la [configuration d'une zone DNS](/pages/web_cloud/domains/dns_zone_general_information).
 
 ## Prérequis
 

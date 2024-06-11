@@ -95,9 +95,9 @@ Une fois les modifications requises effectuées, vous devez attendre qu'elles so
 
 ## Aller plus loin
 
-[Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_edit)
+[Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_general_information)
 
-[Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_edit)
+[Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information)
 
 [Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
