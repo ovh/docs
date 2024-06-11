@@ -27,11 +27,11 @@ Ils permettent notamment l'utilisation des [noms de domaine](/links/web/domains)
 Il existe 4 types de serveurs DNS : 
 
 - Les résolveurs DNS (DNS resolver ou DNS recursive): Premier serveur qui reçoit la requête DNS émise par un client (navigateur internet, logiciel de messagerie, etc.). Cette étape est représentée par l'étape **1** du schéma ci-dessus. Ce serveur fait la passerelle entre le client et le reste du réseau DNS. Il interroge les trois autres types de serveur DNS jusqu'à ce qu'il récupère l'adresse IP, demandée par la requête DNS, auprès du serveur DNS de référence.
-- Les serveurs DNS racine (DNS root): Ce serveur DNS contient un annuaire pour tous les TLD (noms de domaine de premier niveau tels que *.com*, *.net*, .fr*, etc.). Il va indiquer au résolveur DNS l'adresse du serveur DNS TLD correspondant à l'extension présente dans la requête DNS demandée par le client (étapes **2** et **3** du schéma ci-dessus).
+- Les serveurs DNS racine (DNS root): Ce serveur DNS contient un annuaire pour tous les TLD (noms de domaine de premier niveau tels que *.com*, *.net*, *.fr*, etc.). Il va indiquer au résolveur DNS l'adresse du serveur DNS TLD correspondant à l'extension présente dans la requête DNS demandée par le client (étapes **2** et **3** du schéma ci-dessus).
 - Les serveurs DNS d'extensions/nom de domaine de premier niveau (DNS TLD): Ce serveur DNS contient un annuaire de noms de domaine pour une extension donnée. Il va indiquer au résolveur DNS l'adresse du serveur DNS de référence correspondant au nom de domaine présent dans la requête DNS demandée par le client (étapes **4** et **5** du schéma ci-dessus).
 - Les serveurs DNS de référence (DNS Authoritative): C'est le dernier serveur DNS interrogé par le résolveur DNS (étapes **6** et **7** du schéma ci-dessus). Il contient la zone DNS active pour le nom de domaine présent dans la requête DNS demandée par le client. C'est le contenu de ce type de serveur DNS que nous allons détailler dans la suite de ce guide.
 
-Dès que le résolveur DNS a récupéré l'adresse IP du serveur recherchée via la requêtes DNS demandée par le client, il renvoie cette adresse IP au client (étape **8** du schéma ci-dessus).
+Dès que le résolveur DNS a récupéré l'adresse IP du serveur recherchée via la requête DNS demandée par le client, il renvoie cette adresse IP au client (étape **8** du schéma ci-dessus).
 
 Le client envoi ensuite une autre requête directement au serveur associé à l'adresse IP récupérée grâce à la résolution DNS (étape **9** du schéma ci-dessus). Ceci pour s'y connecter ou y récupérer les éléments dont il a besoin pour résoudre cette seconde requête (étape **10** du schéma ci-dessus).
 
