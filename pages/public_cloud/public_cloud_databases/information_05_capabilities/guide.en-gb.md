@@ -32,7 +32,7 @@ See our [MongoDB Capabilities and limitations](/pages/public_cloud/public_cloud_
 
 ### Caching
 
-aching is fully managed in-memory NoSQL database based on the Redis® open source software. It helps you store and access data quickly and efficiently.<br>
+Caching is fully managed in-memory NoSQL database based on the Redis® open source software. It helps you store and access data quickly and efficiently.<br>
 See our [Caching Capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) guide.
 
 ### M3db
