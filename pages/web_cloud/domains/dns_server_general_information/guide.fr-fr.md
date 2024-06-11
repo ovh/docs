@@ -65,7 +65,7 @@ De ce fait, ce sont les **serveurs DNS Authoritative** qui doivent être déclar
 
 Pour que la zone DNS associée à un nom de domaine présent dans l'annuaire d'un serveur DNS soit active, il est nécessaire que ce serveur DNS soit déclaré auprès du bureau d'enregistrement du nom de domaine.
 
-Par précaution, on déclare au minimum 2 **serveurs DNS** auprès du bureau d'enregistrement d'un nom de domaine. Les deux fonctionnent de manière identique. Toutefois, si l'un des deux répond plus rapidement, il sera interrogé prioritairement par les résolveurs DNS. Si l'un des deux ne répond pas ou plus, l'autre serveur DNS sera là pour répondre à la requête DNS.
+Par précaution, on déclare au minimum 2 **serveurs DNS** (un serveur DNS primaire et un serveur DNS secondaire) auprès du bureau d'enregistrement d'un nom de domaine. Les deux fonctionnent de manière identique. Toutefois, si l'un des deux répond plus rapidement, il sera interrogé prioritairement par les résolveurs DNS. Si l'un des deux ne répond pas ou plus, l'autre serveur DNS sera là pour répondre à la requête DNS.
 
 Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS** à déclarer auprès de votre nom de domaine. Dans ce cas, renseignez tous les serveurs DNS proposés par votre fournisseur DNS.
 
