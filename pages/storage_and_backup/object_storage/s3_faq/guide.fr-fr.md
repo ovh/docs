@@ -168,6 +168,8 @@ Les options de cycle de vie ne sont pas encore disponibles. Nous vous invitons �
 
 Pour téléverser de gros volumes de données, il est recommandé de paralléliser les connexions (*multithread upload*).Plusieurs requêtes sont en cours en parallèle et la bande passante est multipliée (1 Gbps par connexion). Vous trouverez plus de détail sur la méthodologie dans notre guide « [Optimisez l’envoi de vos fichiers vers S3 Object Storage](/pages/storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files) ».
 
+Plus globalement, il existe différentes méthodes vous permettant de maximiser vos performances d'upload et de download sur notre Object Storage. Découvrez ces optimisations dans le guide suivant : [Object Storage - Optimiser les performances](https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-optimizing-performance?id=kb_article_view&sysparm_article=KB0062314)
+
 ### Quelle est la différence de performance entre les classes de stockage High Performance et Standard Performance?
 
 Adaptée aux cas d'usage d'IA ou d'analytique, la classe High Performance est construite pour apporter de la performance grâce à son design et l'utilisation de disques SSD NVMe. Elle est adaptée à des cas d'usage nécessitant une grande vitesse de lecture / écriture sur des volumes de données importants. Des tests de performances sont disponibles sur le site Cloud Mercato : 
