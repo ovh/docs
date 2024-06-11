@@ -26,7 +26,7 @@ Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de vot
 
 ## Prérequis
 
-- Avoir la gestion des serveurs et de la [zone DNS](/pages/web_cloud/domains/dns_zone_general_information) de votre nom de domaine
+- Avoir la gestion des [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) et de la [zone DNS](/pages/web_cloud/domains/dns_zone_general_information) de votre nom de domaine
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
@@ -50,7 +50,7 @@ Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IP
 
 #### Vérifier l'adresse IP dans la zone DNS
 
-Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](/pages/web_cloud/domains/dns_zone_general_information) correspond bien à celle de votre [hébergement Web Cloud](/links/web/hosting).
+Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](/pages/web_cloud/domains/dns_zone_edit) correspond bien à celle de votre [hébergement Web Cloud](/links/web/hosting).
 
 Cliquez sur `Noms de domaine`{.action} dans votre [espace client OVHcloud](/links/manager) et sélectionnez le nom de domaine de votre site.
 
