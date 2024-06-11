@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-06-05
+updated: 2024-06-11
 ---
 
 <style>
@@ -37,8 +37,8 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud actuel</th>
-        <th>Mapping OVHcloud cible (à partir du 17/06/2024)</th>
+        <th>Mapping OVHcloud avant le 17/06/2024</th>
+        <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
         <td>Express One Zone</td> 
@@ -72,14 +72,14 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
     </tr>
 </table>
 
-*_la classe de stockage par défaut sur le point de terminaison **io** sera Standard, c'est-à-dire que si vous ne spécifiez pas de classe de stockage ou si vous spécifiez une classe de stockage autre que celles fournies par AWS, votre objet sera stocké dans notre niveau Standard._
+_* La classe de stockage par défaut sur le point de terminaison **io** sera Standard, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau Standard._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **io** est le suivant :
 
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud cible (à partir du 17/06/2024)</th>
+        <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
         <td>Express One Zone</td> 
@@ -109,8 +109,8 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud actuel</th>
-        <th>Mapping OVHcloud cible (à partir du 17/06/2024)</th>
+        <th>Mapping OVHcloud avant le 17/06/2024</th>
+        <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
         <td>Express One Zone</td> 
@@ -144,14 +144,14 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     </tr>
 </table>
 
-*_la classe de stockage par défaut sur le point de terminaison **io** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage ou si vous spécifiez une classe de stockage autre que celles fournies par AWS, votre objet sera stocké dans notre niveau High Performance._
+_* Le niveau de stockage par défaut sur le point de terminaison **perf** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau High Performance._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **perf** est le suivant :
 
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud cible (à partir du 10/06/2024)</th>
+        <th>Mapping OVHcloud à partir du 10/06/2024</th>
     </tr>
     <tr>
         <td>Standard</td> 
