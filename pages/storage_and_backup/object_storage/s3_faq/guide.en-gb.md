@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "Frequently Asked Questions on the Object Storage solution"
-updated: 2023-09-12
+updated: 2024-06-11
 ---
 
 ## General questions
@@ -167,6 +167,8 @@ Lifecycle options are not yet available. Please follow our [public GitHub roadma
 ### How do I upload large volumes of data?
 
 To upload large volumes of data, we recommend that you parallelize the connections (*multithread upload*). Multiple requests are in progress in parallel, and the bandwidth is multiplied (1 Gbps per connection). You can find more details on the methodology in the following guide: [Optimize the sending of your files to S3 Object Storage](/pages/storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files).
+
+More generally, there are several methods that allow you to maximize your upload and download performance on our Object Storage. You can know more about those optimizations in the following guide: [Object Storage - Optimising Performance](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
 ### What is the performance difference between the High Performance and Standard Performance storage classes?
 
