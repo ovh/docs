@@ -15,7 +15,7 @@ Votre ligne téléphonique OVHcloud vous permet de recevoir des appels. Pour div
 - Disposer d'une [ligne OVHcloud avec un forfait compatible](/links/telecom/telephonie-voip){.external} ou d'une ligne Trunk.
 - Disposer d'un accès à la gestion de la ligne concernée depuis votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
-![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 

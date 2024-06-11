@@ -15,7 +15,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d'émettre des appels. Pour 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip){.external}.
 - Disposer d'un accès à la gestion de la ligne SIP concernée depuis votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
-![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
