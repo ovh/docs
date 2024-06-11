@@ -18,7 +18,7 @@ Votre ligne téléphonique OVHcloud vous permet de recevoir et d'émettre des ap
     - une [ligne Trunk](/links/telecom/telephonie-sip-trunk);
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom` :
 
-![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 

@@ -22,7 +22,7 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 - Disposer d'un [numéro alias](/links/telecom/telephonie-numeros){.external}.
 - Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
-![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## Lexique
 

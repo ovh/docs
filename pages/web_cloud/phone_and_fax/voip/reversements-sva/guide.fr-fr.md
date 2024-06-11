@@ -17,7 +17,7 @@ L'espace client OVHcloud vous permet de consulter et modifier votre palier tarif
 - Posséder au moins [un numéro spécial](/links/telecom/telephonie-numeros-speciaux-francais)telecom/telephonie-numeros-speciaux) dans votre compte OVHcloud.
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom` :
 
-![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 

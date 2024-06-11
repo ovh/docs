@@ -19,7 +19,7 @@ Il se présente sous la forme d'une application, installée sur votre PC sous Wi
 - **Uniquement pour la version d'essai de POPC** : disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip) sans téléphone Plug & Phone associé.
 - Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
 
-![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
