@@ -43,7 +43,7 @@ Consultez notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud
 
 ### Contenu d'un serveur DNS (Authoritative)
 
-Un **serveur DNS Authoritative** contient un annuaire de noms de domaine pouvant avoir des extensions (TLD) différentes.
+Un **serveur DNS (Authoritative)** contient un annuaire de noms de domaine pouvant avoir des extensions (TLD) différentes.
 
 Pour chaque nom de domaine contenu dans l'annuaire est associé une **zone DNS** qui contient la configuration DNS à appliquer au nom de domaine.
 
@@ -55,23 +55,19 @@ Une zone DNS contient des informations techniques, appelées *enregistrements DN
 > - Consultez ensuite notre guide sur [Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_general_information) pour une meilleure compréhension de l'ensemble.
 >
 
-De ce fait, ce sont les **serveurs DNS Authoritative** qui doivent être déclarés, auprès du bureau d'enregistrement d'un nom de domaine, pour utiliser la zone DNS qu'ils hébergent. 
+De ce fait, ce sont les **serveurs DNS (Authoritative)** qui doivent être déclarés, auprès du bureau d'enregistrement d'un nom de domaine, pour utiliser la zone DNS qu'ils hébergent. 
 
 ![DNS](images/dns-server.png){.thumbnail}
 
-### Fonctionnement d'un serveur DNS avec un nom de domaine
+### Fonctionnement d'un serveur DNS (Authoritative) avec un nom de domaine
 
-#### Déclaration des serveurs DNS auprès du bureau d'enregistrement d'un nom de domaine
+#### Déclaration des serveurs DNS (Authoritative) auprès du bureau d'enregistrement d'un nom de domaine
 
 Pour que la zone DNS associée à un nom de domaine présent dans l'annuaire d'un serveur DNS soit active, il est nécessaire que ce serveur DNS soit déclaré auprès du bureau d'enregistrement du nom de domaine.
 
-Par précaution, on déclare au minimum 2 **serveurs DNS** (un serveur DNS primaire et un serveur DNS secondaire) auprès du bureau d'enregistrement d'un nom de domaine. Les deux fonctionnent de manière identique. Toutefois, si l'un des deux répond plus rapidement, il sera interrogé prioritairement par les résolveurs DNS. Si l'un des deux ne répond pas ou plus, l'autre serveur DNS sera là pour répondre à la requête DNS.
+Par précaution, on déclare au minimum 2 **serveurs DNS (Authoritative)** (un serveur DNS primaire et un serveur DNS secondaire) auprès du bureau d'enregistrement d'un nom de domaine. Les deux fonctionnent de manière identique. Toutefois, si l'un des deux répond plus rapidement, il sera interrogé prioritairement par les résolveurs DNS. Si l'un des deux ne répond pas ou plus, l'autre serveur DNS sera là pour répondre à la requête DNS.
 
-Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS** à déclarer auprès de votre nom de domaine. Dans ce cas, renseignez tous les serveurs DNS proposés par votre fournisseur DNS.
-
-#### Résolution d'une requête DNS
-
-Pour comprendre plus globalement la place qu'occupent les serveurs DNS dans le réseau DNS, n'hésitez pas à consulter notre page web expliquant [comment fonctionne un serveur DNS](/links/web/domains-dns-server).
+Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS (Authoritative)** à déclarer auprès de votre nom de domaine. Dans ce cas, renseignez tous les serveurs DNS proposés par votre fournisseur DNS.
 
 ## Aller plus loin
 
