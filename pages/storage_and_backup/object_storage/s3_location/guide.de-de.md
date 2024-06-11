@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpunkte und Objektspeicher mit Geo-Verfügbarkeit (EN)
-updated: 2024-06-10
+updated: 2024-06-11
 ---
 
 <style>

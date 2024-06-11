@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoint e Object Storage geoavailability (EN)
-updated: 2024-06-10
+updated: 2024-06-11
 ---
 
 <style>
