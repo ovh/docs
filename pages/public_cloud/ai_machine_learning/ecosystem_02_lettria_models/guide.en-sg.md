@@ -186,8 +186,7 @@ The Emotion Analysis API is an effective solution for businesses looking to enha
 
 By reaching the root endpoint `/` of your API, you can access the full API documentation.
 
-<details>
-<summary>The model is trained to detect the following emotions</summary>
+/// details | The model is trained to detect the following emotions
 
 ```json
 {
@@ -222,7 +221,7 @@ By reaching the root endpoint `/` of your API, you can access the full API docum
 }
 ```
 
- </details>
+///
 
 #### Predict
 
