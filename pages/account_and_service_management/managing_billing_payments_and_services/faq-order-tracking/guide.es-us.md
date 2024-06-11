@@ -46,7 +46,7 @@ Si ya ha abonado el pedido, puede contactar con nuestro [servicio de atención a
 
 Si no realiza el pago, el pedido se cancelará automáticamente al cabo de un período que puede oscilar entre 24 horas y una semana (en función del servicio) sin que usted tenga que hacer nada.
 
-Si es un usuario particular y ya ha abonado el pedido, dispone de un plazo de 14 días para desistir del mismo siempre que este no se refiera a un servicio personalizado (como un nombre de dominio o un certificado SSL) o una licencia (como Exchange, Office 365 o SharePoint). En [esta guía](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#ejercer-el-derecho-de-desistimiento) ofrecemos información detallada al respecto.
+Si es un usuario particular y ya ha abonado el pedido, dispone de un plazo de 14 días para desistir del mismo siempre que este no se refiera a un servicio personalizado (como un nombre de dominio o un certificado SSL) o una licencia (como Exchange, Office 365). En [esta guía](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#ejercer-el-derecho-de-desistimiento) ofrecemos información detallada al respecto.
 
 #### Ideas y consejos
 
