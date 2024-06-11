@@ -71,7 +71,7 @@ Si vous avez des questions supplémentaires au sujet de Zonemaster, consultez la
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Généralités sur les serveurs DNS](/pages/web_cloud/domains/dns_server_general_information){.external}.
+[Généralités sur les serveurs DNS](/pages/web_cloud/domains/dns_server_edit){.external}.
 
 [Modification d'une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
 

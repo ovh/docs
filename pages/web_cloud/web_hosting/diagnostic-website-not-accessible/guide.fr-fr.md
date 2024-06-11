@@ -6,7 +6,7 @@ updated: 2022-08-02
 
 ## Objectif
 
-Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos [DNS](/pages/web_cloud/domains/dns_server_general_information#comprendre-la-notion-de-dns) ou un domaine suspendu (si votre site n'affiche pas l'un des messages d'erreur décrits ici, consultez la section [Aller plus loin](#go-further)) :
+Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos [DNS](/pages/web_cloud/domains/dns_server_edit) ou un domaine suspendu (si votre site n'affiche pas l'un des messages d'erreur décrits ici, consultez la section [Aller plus loin](#go-further)) :
 
 |Navigateur|Message d'erreur|
 |-|---|
@@ -54,7 +54,7 @@ Suite à ce renouvellement, votre site sera accessible sous 48 heures maximum.
 
 ### Étape 2 : vérifier les serveurs DNS
 
-Pour vérifier la validité de vos [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information), dans votre [espace client OVHcloud](/links/manager) cliquez sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
+Pour vérifier la validité de vos [serveurs DNS](/pages/web_cloud/domains/dns_server_edit), dans votre [espace client OVHcloud](/links/manager) cliquez sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
 
 #### Scénario 1 : aucune anomalie sur les serveurs DNS
 
@@ -74,7 +74,7 @@ Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS 
 
 ![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}
 
-Modifiez les serveurs DNS en suivant les instructions de [ce guide](/pages/web_cloud/domains/dns_server_general_information#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
+Modifiez les serveurs DNS en suivant les instructions de [ce guide](/pages/web_cloud/domains/dns_server_edit), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
 
 Votre site sera de nouveau accessible sous 48 heures maximum.
 
