@@ -117,7 +117,7 @@ For each **** rule, you must choose:
 > Best way is to precisely define peer-IP address, port and protocol, for example:
 >
 > - Priority 1: Authorize  established from 1.2.3.4 port 443 (if your server queries external web services on 1.2.3.4:443)
-> - Priority 2: Authorize IPv4 from 5.6.7.8 port 3306 (if your server queries external SQL server on 5.6.7.8:3306. TCP and UDP are allowed and if you want to open both protocols you need 2 rules. TCP rules should have the "established" flag)
+> - Priority 2: Authorize TCP from 5.6.7.8 port 3306 (if your server queries external SQL server on 5.6.7.8:3306)
 >
 > Or, sometimes when IP can be random, let's define by protocol and port only: 
 >
@@ -157,7 +157,7 @@ Note that rules are disabled until the moment an attack is detected - then they 
 
 ### Configuration example
 
-To make sure that only the standard ports for SSH (22), HTTP (80), HTTPS (443) and UDP (53) are left open when authorising the ICMP, follow the rules below:
+To make sure that only the standard ports for SSH (22), HTTP (80), HTTPS (443) and UDP (53) are left open, follow the rules below:
 
 ![Configuration example](images/exemple-v2.png){.thumbnail}
 
