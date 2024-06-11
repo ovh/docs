@@ -100,20 +100,6 @@ Para dar de baja la solución [Office 365 csp 1](https://www.ovhcloud.com/es-es/
 
 Para dar de baja la solución [Office 365 csp 2](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/), siga las indicaciones de esta [guía](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gestionar-las-suscripciones).
 
-#### SharePoint <a name="sharepoint"></a>
-
-Puede **eliminar** una cuenta individual de su plataforma [SharePoint](https://www.ovhcloud.com/es-es/collaborative-tools/sharepoint/) o dar de baja toda la plataforma SharePoint.
-Si desea dar de baja toda la plataforma, le recomendamos que comience por eliminar previamente cada cuenta individual.
-
-- Para eliminar una cuenta SharePoint individual, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Web Cloud`{.action}. Haga clic sucesivamente en `Microsoft`{.action}, `SharePoint`{.action} y, seguidamente, en su plataforma Sharepoint.<br>.
-En la pestaña `Usuarios`{.action}, haga clic en el botón Línea `...`{.action} a la derecha de la cuenta que desea eliminar y haga clic en `"Eliminar la cuenta`{.action}. Lea la información y haga clic en `Aceptar`{.action}.
-
-- Para dar de baja toda su plataforma Sharepoint, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la parte superior derecha y luego en el botón `Gestión de servicios`{.action}.
-
-Haga clic en el botón `...`{.action} a la derecha de la plataforma SharePoint que desea dar de baja y, seguidamente, en `Dar de baja`{.action}.
-
-Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
-
 #### Certificado SSL Sectigo <a name="ssl_sectigo"></a>
 
 No es posible dar de baja las ofertas [SSL sectigo](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/) antes de su expiración, ya que no se renuevan automáticamente. Solo tendrá que no renovarlos en la próxima renovación.

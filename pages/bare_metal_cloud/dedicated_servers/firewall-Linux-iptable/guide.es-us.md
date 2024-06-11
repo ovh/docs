@@ -1,7 +1,7 @@
 ---
 title: Configurar el firewall de Linux con iptables
 excerpt: Cómo proteger un servidor con iptables
-updated: 2022-10-18
+updated: 2024-06-03
 ---
 
 > [!primary]
@@ -34,7 +34,7 @@ Los cortafuegos funcionan estableciendo reglas que regulan el tráfico autorizad
 > Esta guía explica los comandos para una distribución Ubuntu Server.
 >
 > Esta guía es genérica.
- Tenga en cuenta que deberá adaptar los comandos en función de la distribución o el sistema operativo que utilice. En algunos casos le aconsejamos que utilice herramientas externas. Si necesita ayuda sobre el uso de dichas herramientas, puede consultar su documentación oficial.  
+> Tenga en cuenta que deberá adaptar los comandos en función de la distribución o el sistema operativo que utilice. En algunos casos le aconsejamos que utilice herramientas externas. Si necesita ayuda sobre el uso de dichas herramientas, puede consultar su documentación oficial.  
 >
 
 ### 1. Actualizar el sistema
@@ -57,9 +57,18 @@ iptables instalados por defecto en la mayoría de sistemas Linux. Para confirmar
 sudo apt-get install iptables
 ```
 
-El ejemplo de salida en Ubuntu confirma que la última versión de iptables ya está presente :
+Para asegurar que sus reglas iptables son persistentes después de reiniciar, necesita instalar el paquete iptables persistent usando el siguiente comando:
 
-![version-iptables](images/step2-version-iptables.PNG){.thumbnail}
+```bash
+sudo apt-get install iptables-persistent
+```
+
+Una vez instalado este paquete, la carpeta iptables contendrá dos archivos para las reglas IPV4 e IPV6:
+
+```bash
+sudo /etc/iptables/rules.v4
+sudo /etc/iptables/rules.v6
+```
 
 Por lo general, el comando iptables es el siguiente:
 
@@ -212,11 +221,20 @@ Sustituya `Number` por el número de línea de la regla que quiera eliminar.
 Al reiniciar el sistema, iptables no conserva las reglas que había creado.
 Cada vez que configure iptables en Linux, todos los cambios que realice se aplicarán únicamente hasta el siguiente reinicio.
 
-Para guardar las reglas en los sistemas basados en Ubuntu, escriba:
+Para guardar reglas en sistemas basados en Ubuntu, primero debe iniciar sesión como root mediante el comando ``sudo su` ``:
 
 ```bash
-sudo -s iptables-save -c
+ubuntu@server:~$ sudo su
+root@server:/home/ubuntu#
 ```
+
+A continuación, ejecute el siguiente comando: 
+
+```bash
+iptables-save > /etc/iptables/rules.v4
+```
+
+Esta operación guarda las reglas directamente en la carpeta IPV4.
 
 La próxima vez que inicie el sistema, iptables recargará automáticamente las reglas del firewall.
 

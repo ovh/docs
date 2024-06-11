@@ -86,7 +86,7 @@ Haga clic en `Iniciar`{.action} para reactivar la instancia.
 
 Haga clic en `Reiniciar en modo de rescate`{.action}.
 
-Esto activará el modo de rescate de la instancia. Para más información, consulte nuestra guía [Poner una instancia en modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
+Esto activará el modo de rescate de la instancia. Para más información, consulte nuestra guía [Cómo activar el modo de rescate en una instancia Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
 
 #### Reiniciar una instancia
 

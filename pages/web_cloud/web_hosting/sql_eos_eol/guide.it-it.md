@@ -1,7 +1,7 @@
 ---
 title: "Annunci di fine vendita/vita database SQL"
 excerpt: "Annunci di fine vendita/vita database SQL"
-updated: 2024-05-27
+updated: 2024-06-06
 ---
 
 > [!primary]
@@ -13,3 +13,19 @@ I prodotti coperti da questi annunci di fine vendita e di fine ciclo di vita son
 |Versione|Fine del ciclo di vita|Fine vendita|Fine supporto|
 |---|---|---|---|
 |MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
+
+## Per saperne di più
+
+[Accedi allo Spazio Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login).
+
+[Creare un database su un hosting Web](/pages/web_cloud/web_hosting/sql_create_database).
+
+[Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export).
+
+[Duplicare il contenuto di un database in un altro](/pages/web_cloud/web_hosting/copy_database).
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

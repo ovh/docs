@@ -100,6 +100,8 @@ Il riavvio dell'IPMI richiede alcuni minuti.
 
 > [!warning]
 > OVHcloud non garantisce la funzionalità dei sistemi operativi installati tramite IPMI. Questo metodo deve essere preso in considerazione solo da un amministratore di server esperto.
+>
+> Le versioni a 64 bit di Java possono impedire l’apertura dei menu `Redirect ISO`/`Redirect CDROM` e provocare il blocco di JViewer.
 
 Per iniziare, apri [IPMI da una applet Java](./#applet-java) attraverso il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Device`{.action} nella barra dei menu e seleziona `Redirect ISO`{.action} nel menu a tendina.
 

@@ -45,7 +45,7 @@ Se hai già eseguito il pagamento dell’ordine, contatta il nostro [servizio cl
 ### Come annullare un ordine?
 
 Se il pagamento non viene effettuato, l’ordine è automaticamente annullato con tempistiche che variano in base al tipo di servizio.
-Se sei un privato e hai già eseguito il pagamento di un ordine non relativo a un servizio personalizzato (ad esempio un dominio) o una licenza (come Office 365, SharePoint, Plesk, Windows, ecc...), è possibile esercitare il diritto di recesso entro 14 giorni. Per maggiori informazioni, consulta [questa guida](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#esercita-il-diritto-di-recesso).
+Se sei un privato e hai già eseguito il pagamento di un ordine non relativo a un servizio personalizzato (ad esempio un dominio) o una licenza (come Office 365, Plesk, Windows, ecc...), è possibile esercitare il diritto di recesso entro 14 giorni. Per maggiori informazioni, consulta [questa guida](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#esercita-il-diritto-di-recesso).
 
 #### Consigli e suggerimenti
 

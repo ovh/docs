@@ -44,7 +44,7 @@ Sollten Sie Ihre Bestellung bereits bezahlt haben, wenden Sie sich bitte an unse
 ### Wie kann ich meine Bestellung stornieren?
 
 Ohne Bezahlung Ihrerseits wird Ihre Bestellung nach einer Frist von 24 Stunden automatisch storniert.
-Als Verbraucher können Sie Ihre Bestellung auch nach Zahlung innerhalb von 14 Tagen widerrufen, wenn diese nicht mit einem personalisierten Dienst (wie zum Beispiel eine Domain) oder einer Lizenz (wie Office 365 oder SharePoint) verbunden ist. Informieren Sie sich über die folgende Anleitung : [OVHcloud Bestellungen verwalten - Widerrufsrecht ausüben](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#widerrufsrechts-ausuben).
+Als Verbraucher können Sie Ihre Bestellung auch nach Zahlung innerhalb von 14 Tagen widerrufen, wenn diese nicht mit einem personalisierten Dienst (wie zum Beispiel eine Domain) oder einer Lizenz (wie Office 365) verbunden ist. Informieren Sie sich über die folgende Anleitung : [OVHcloud Bestellungen verwalten - Widerrufsrecht ausüben](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#widerrufsrechts-ausuben).
 
 #### Tipps und Tricks
 

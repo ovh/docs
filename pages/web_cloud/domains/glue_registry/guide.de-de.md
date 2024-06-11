@@ -1,7 +1,7 @@
 ---
 title: "DNS-Server von Domainnamen individualisieren (Glue Records)"
 excerpt: "Erfahren Sie hier, wie Sie die DNS-Server Ihres OVHcloud Domainnamens anpassen"
-updated: 2024-03-07
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -60,6 +60,13 @@ Weitere Informationen finden Sie in unserem Tutorial zum Tool [Zonemaster](/page
 
 ### Schritt 2: *Glue Records* hinzufügen <a name="step2"></a>
 
+> [!warning]
+>
+> Die Registrys der Erweiterungen *.eu*, *.it*, *.be* und *.de* definieren *Glue Records* nicht als „Objekte“, sondern als „Attribute“.
+>
+> Fahren Sie daher für diese Erweiterungen **direkt mit [Schritt 3](#step3)** dieser Anleitung fort, ohne Schritt 2 abzuschließen.
+>
+
 > [!success]
 >
 > Bevor Sie beginnen, beachten Sie:
@@ -97,7 +104,7 @@ Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action},
 
 In unserem Beispiel müssen Sie den Vorgang wiederholen, um die *Glue*-Einträge zu erstellen **dns2.domain.tld**. Dieser ersetzt später den DNS-Server **dnsX2.ovh.net**, der derzeit IPv4 *203.0.113.1* und IPv6 *2001:db8:1:1b00:203:0:113:1* zugewiesen ist.
 
-### Schritt 3: DNS-Einträge vom Typ A und AAAA für benutzerdefiniertes DNS erstellen
+### Schritt 3: DNS-Einträge vom Typ A und AAAA für benutzerdefiniertes DNS erstellen <a name="step3"></a>
 
 Sie müssen die Einträge *A* und *AAAA* für die Hostnamen erstellen, die Sie im vorherigen Schritt definiert haben. Die Einträge *A* und *AAAA* müssen die Ziel-IP-Adressen enthalten, die dem zuvor erstellten Hostnamen entsprechen.
 
@@ -128,7 +135,14 @@ Sie müssen die DNS-Server Ihres Domainnamens ändern, indem Sie die alten DNS-S
 
 Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie *den Domainnamn aus, für die Sie die DNS-Server anpassen möchten*.
  
-Gehen Sie auf den Tab `DNS-Server`{.action} und klicken Sie dann auf `DNS-Server ändern`{.action}. Ersetzen Sie nun Ihre aktuellen DNS-Server durch die Server, die Sie als personalisierte DNS-Server verwenden möchten. 
+Gehen Sie auf den Tab `DNS-Server`{.action} und klicken Sie dann auf `DNS-Server ändern`{.action}. Ersetzen Sie nun Ihre aktuellen DNS-Server durch die Server, die Sie als personalisierte DNS-Server verwenden möchten.
+
+> [!warning]
+>
+> Wenn Ihre personalisierten DNS-Server mit den Erweiterungen *.eu*, *.it*, *.be* oder *.de* erstellt wurden, ist es **zwingend** notwendig, die zugehörige IP-Adresse für jeden Ihrer personalisierten DNS-Server einzutragen.
+>
+> Ohne diesen Schritt werden die personalisierten DNS-Server nicht korrekt registriert und funktionieren daher nicht mit Ihrem Domainnamen.
+>
 
 Beenden Sie die Schritte und folgen Sie bei Bedarf den Anweisungen in unserer [Dokumentation zum Ändern der OVHcloud DNS-Server](/pages/web_cloud/domains/dns_server_general_information)".
 
@@ -228,4 +242,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

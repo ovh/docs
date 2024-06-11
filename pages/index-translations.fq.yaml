@@ -204,7 +204,6 @@ web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-appl
 web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnostic et dépannage
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
-web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-domains: Domaines
 web-cloud-domains-api: API
 web-cloud-domains-api-frequent-tasks: Tâches courantes
@@ -352,10 +351,12 @@ manage-operate-user-getting-started: Premiers pas
 manage-operate-user-federation: Fédération d'identités
 manage-operate-iam: IAM
 manage-operate-terraform: Terraform
+manage-operate-kms: KMS
 manage-operate-observability: Observabilité
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Premiers pas
-observability-logs-data-platform-ingestion: Ingestion de vos logs 
+observability-logs-data-platform-ingestion: Ingestion de vos logs
+observability-logs-data-platform-upgrade: Mise à jour 
 observability-logs-data-platform-visualizing-querying-exploiting: Visualisation, requête et exploitation de vos logs
 observability-logs-data-platform-opensearch-index: Index OpenSearch as-a-service 
 observability-logs-data-platform-security-conformity: Sécurité et conformité

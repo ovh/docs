@@ -10,9 +10,9 @@ updated: 2024-05-30
 
 ## Ziel
 
-OVHcloud bietet seinen Bare-Metal-Dienst in der 3-AZ-Region an. Dies ist ein wichtiger Schritt in der Regionalisierungsstrategie des Unternehmens. Dieser Dienst, der im Großraum Paris verfügbar ist, stellt einen neuen Branchenstandard für die Zuverlässigkeit und Leistung von Bare-Metal-Servern dar.
+OVHcloud bietet Bare-Metal-Dienste in der [3-AZ-Region](/links/bare-metal/regions) an. Dies ist ein wichtiger Schritt in der Regionalisierungsstrategie des Unternehmens. Dieser Dienst, der im Großraum Paris verfügbar ist, stellt einen neuen Branchenstandard für die Zuverlässigkeit und Leistung von Bare-Metal-Servern dar.
 
-Bare Metal in der 3-AZ-Region erfüllt die Anforderungen von Kunden, die hohe Verfügbarkeit und Redundanz in ihren Business Continuity-Plänen benötigen. Dieser Dienst bietet Bare-Metal-Server in drei Rechenzentren in der Nähe von Paris, die über ein Netzwerk mit niedrigen Latenzen verbunden sind. Sie bietet erhöhte Sicherheit, verbesserte Leistung und unterbrechungsfreie Funktionen, selbst bei lokalisierten Vorfällen.
+Bare Metal in der 3-AZ-Region erfüllt die Anforderungen von Kunden, die hohe Verfügbarkeit und Redundanz zur Sicherstellung von Business Continuity benötigen. Dieser Dienst bietet Bare-Metal-Server in drei Rechenzentren in der Nähe von Paris, die über ein Netzwerk mit niedrigen Latenzen verbunden sind. Sie bietet erhöhte Sicherheit, verbesserte Leistung und unterbrechungsfreie Funktionen, selbst bei lokalen Unterbrechungen.
 
 ## Übersicht
 
@@ -26,7 +26,7 @@ OVHcloud ist weltweit tätig, insbesondere in Europa, den USA, Kanada und im Asi
 
 ### Tipps zur Auswahl der Region
 
-Für eine optimale Leistung sollte eine Region so nah wie möglich an ihren Benutzern ausgewählt werden. Um weltweit verfügbar zu sein, müssen die Dienste über mehrere Regionen verteilt sein. Die 3-AZ-Region ist ideal für Kunden, die höchste Resilienz suchen, und sollte für die Erstellung von Multi-AZ-Anwendungsentwürfen verwendet werden.
+Für eine optimale Leistung sollte eine Region so nah wie möglich an den Benutzern ausgewählt werden. Um weltweit verfügbar zu sein, müssen die Dienste über mehrere Regionen verteilt sein. Die 3-AZ-Region ist ideal für Kunden, die höchste Resilienz suchen, und sollte für die Erstellung von Multi-AZ-Anwendungsentwürfen verwendet werden.
 
 Hier können Sie Ihre Cluster mit einem neuen Tab im Interface auflisten (die Server sind in der zugrunde liegenden Liste für einen Cluster mit 3 Nodes dargestellt):
 
@@ -34,11 +34,11 @@ Hier können Sie Ihre Cluster mit einem neuen Tab im Interface auflisten (die Se
 
 ![list_clusters](images/02-20240513-blur.png){.thumbnail}
 
-Bei der Auswahl Ihres Clusters haben Sie die Liste der 3 Server im Cluster:
+Nach der Auswahl Ihres Clusters sehen Sie die Liste der 3 Server im Cluster:
 
 ![list_servers](images/03-20240513-blur.png){.thumbnail}
 
-Das Interface ist immer das gleiche, es gibt keine weiteren Änderungen auf dieser Ebene:
+Das Interface bleibt bestehen, es gibt keine weiteren Änderungen auf dieser Ebene:
 
 ![detail_server](images/04-20240513-blur.png){.thumbnail}
 

@@ -415,9 +415,6 @@ This permission group resumes the rights formerly carried by the `nicTech` role.
           "action": "publicCloudProject:apiovh:*"
         },
         {
-          "action": "sharepoint:apiovh:*"
-        },
-        {
           "action": "sms:apiovh:*"
         },
         {
@@ -703,9 +700,6 @@ This permission group resumes the rights formerly carried by the `nicTech` role.
         },
         {
           "action": "publicCloudProject:apiovh:terminate"
-        },
-        {
-          "action": "sharepoint:apiovh:serviceInfos/edit"
         },
         {
           "action": "sms:apiovh:serviceInfos/edit"

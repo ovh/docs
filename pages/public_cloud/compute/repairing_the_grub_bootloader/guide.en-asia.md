@@ -10,7 +10,7 @@ In some cases you might need to repair the GRUB bootloader. This guide will show
 
 ## Requirements
 
-- The instance must be in rescue mode (see [Putting an instance in rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
+- The instance must be in rescue mode (see [How to activate rescue mode on a Public Cloud instance](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
 ## Instructions
 
@@ -42,7 +42,7 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-You can now leave the rescue mode and boot normally (see [Putting an instance in rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
+You can now leave the rescue mode and boot normally (see [How to activate rescue mode on a Public Cloud instance](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
 ## Go further
 

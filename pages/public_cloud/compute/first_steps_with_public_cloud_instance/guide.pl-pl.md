@@ -86,7 +86,7 @@ Kliknij `Uruchom`{.action}, aby ponownie włączyć instancję.
 
 Kliknij `Zrestartuj w trybie Rescue`{.action}.
 
-Uruchomi to tryb Rescue dla instancji. Aby uzyskać szczegółowe informacje, zapoznaj się z przewodnikiem [Przełączenie instancji w tryb rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
+Uruchomi to tryb Rescue dla instancji. Aby uzyskać szczegółowe informacje, zapoznaj się z przewodnikiem [Jak aktywować tryb ratunkowy na instancji Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
 
 #### Restart instancji 
 
