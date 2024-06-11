@@ -210,7 +210,7 @@ Open the following API call, paste your service ID into the `serviceName` input 
 > Caching
 >> > [!api]
 >> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/caching
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis
 >> >
 
 ![Cluster ID](images/04_advanced_configuration-20220405144109794.png){.thumbnail}
