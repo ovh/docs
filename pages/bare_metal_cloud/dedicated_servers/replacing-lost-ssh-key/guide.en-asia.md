@@ -58,7 +58,7 @@ When you have access to your files, open the "authorized_keys" file concerned wi
 nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Copy and paste your new public key (created in step 2) into the file. It should look similar to the following example:
+Copy and paste your new public key (created in step 1) into the file. It should look similar to the following example:
 
 ```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666

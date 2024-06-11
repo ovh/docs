@@ -48,7 +48,7 @@ Sobald Sie Zugriff auf Ihre Dateien haben, öffnen Sie die relevante Datei "auth
 nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Kopieren Sie Ihren neuen öffentlichen Schlüssel (erstellt in Schritt 2) und fügen Sie ihn in die Datei ein. Es sollte dann ähnlich dem folgenden Beispiel aussehen:
+Kopieren Sie Ihren neuen öffentlichen Schlüssel (erstellt in Schritt 1) und fügen Sie ihn in die Datei ein. Es sollte dann ähnlich dem folgenden Beispiel aussehen:
 
 ```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
