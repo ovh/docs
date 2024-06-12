@@ -54,7 +54,7 @@ Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVH
 >
 > Lorsque vous utilisez les serveurs DNS OVHcloud, les numéros présents dans les noms des serveurs n'ont aucun lien avec le ou les services que vous utilisez. Seule l'option [DNS anycast](/links/web/domains-options) utilise des serveurs DNS spécifiques qui vous sont automatiquement attribués.
 
-![dns-server](images/tab.png){.thumbnail}
+![dns-server](images/tab-ca.png){.thumbnail}
 
 ### Modifier les serveurs DNS
 
@@ -68,14 +68,14 @@ Dans les formulaires de saisie, **remplacez** les valeurs actuelles des serveurs
 >
 > Veillez à ne pas mélanger un groupe de serveurs DNS avec un autre.
 >
-> Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils vont de pair et sont synchronisés. Si vous y ajoutez des serveurs DNS externes à OVHcloud (ou d'un groupe de serveurs DNS OVHcloud différent), la résolution DNS se fera de manière aléatoire entre les serveurs DNS OVHcloud et les serveurs DNS externes renseignés.
+> Par exemple, *dnsXX.ovh.ca* et *nsXX.ovh.ca* correspondent à un groupe de serveurs DNS OVHcloud, ils vont de pair et sont synchronisés. Si vous y ajoutez des serveurs DNS externes à OVHcloud (ou d'un groupe de serveurs DNS OVHcloud différent), la résolution DNS se fera de manière aléatoire entre les serveurs DNS OVHcloud et les serveurs DNS externes renseignés.
 >
-> Chez OVHCloud, les groupes de serveurs DNS sont identifiables à l'aide du numéro présent dans les noms des serveurs. Deux serveurs DNS OVHcloud font partie d'un même groupe de serveurs dès lors qu'ils partagent le même numéro. Par exemple, *dns19.ovh.net* et *ns19.ovh.net*.
+> Chez OVHCloud, les groupes de serveurs DNS sont identifiables à l'aide du numéro présent dans les noms des serveurs. Deux serveurs DNS OVHcloud font partie d'un même groupe de serveurs dès lors qu'ils partagent le même numéro. Par exemple, *dnsXX.ovh.ca* et *nsXX.ovh.ca*.
 >
 
 Une fois que vous avez saisi ces informations, cliquez sur `Appliquer la configuration`{.action}. Les statuts des serveurs DNS seront alors mis à jour dans le tableau et afficheront les nouvelles informations que vous venez de fournir.
 
-![dns-server](images/edit-dns-servers.png){.thumbnail}
+![dns-server](images/edit-dns-servers-ca.png){.thumbnail}
 
 > [!success]
 >
