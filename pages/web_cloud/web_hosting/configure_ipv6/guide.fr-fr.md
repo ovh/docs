@@ -56,7 +56,7 @@ Dans le cadre **IPv6**, copiez l'entrée et passez à l'étape suivante.
 > De plus, l'ajout, la modification ou la suppression d'une entrée DNS dans la zone DNS active d'un nom de domaine entraîne un délai de propagation de **4 à 24 heures** pour être pleinement effectif.
 >
 
-Afin que votre navigateur trouve l'adresse IPv6 avec votre nom de domaine, modifiez la zone DNS active de votre domaine. Utilisez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit#editer-la-zone-dns-ovhcloud-de-votre-nom-de-domaine) » pour créer une entrée DNS de type **AAAA**.
+Afin que votre navigateur trouve l'adresse IPv6 avec votre nom de domaine, modifiez la zone DNS active de votre domaine. Utilisez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » pour créer une entrée DNS de type **AAAA**.
 
 Dans la partie `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}. Choisissez votre nom de domaine puis positionnez-vous sur l'onglet `Zone DNS`{.action}. Cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau. 
 
@@ -66,7 +66,7 @@ Insérez l'adresse IPv6 préalablement copiée en utilisant le type d'enregistre
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit#editer-la-zone-dns-ovhcloud-de-votre-nom-de-domaine)
+[Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

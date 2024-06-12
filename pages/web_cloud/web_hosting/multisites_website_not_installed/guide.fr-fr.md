@@ -56,7 +56,7 @@ Cette étape consiste à vérifier que votre nom de domaine ou sous-domaine poin
 > 
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit);
 > - [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create);
-> - [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
+> - [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 >
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement web OVHcloud
@@ -89,7 +89,7 @@ Un tableau avec différents enregistrements DNS s'affiche.
 |Dans la zone DNS active, votre nom de domaine/sous-domaine pointe vers l'adresse IP de votre hébergement web avec un enregistrement de type A (pour une IPv4) ou AAAA (pour une IPv6).<br><br>![zoneDNS_IP2](images/dashboard-entry-a.png){.thumbnail}|Ceci indique que la configuration de votre nom de domaine est correcte.<br><br> Patientez le temps de la propagation DNS si la modification est récente.<br><br> N'oubliez pas non plus de redémarrer vos appareils (PC, smartphone, box, etc.) et de vider le cache de votre navigateur internet. En effet, l'ancienne configuration de votre nom de domaine peut être mise en cache : ce qui peut ralentir l'affichage de votre mise à jour.|
 |La zone DNS active ne comporte pas d'enregistrements de type A ou AAAA reliant votre nom de domaine/sous-domaine à l'adresse IP de votre hébergement web. Ou l'enregistrement existant pointe sur une autre adresse IP.|Ajoutez le nouvel enregistrement de type A ou AAAA ou corrigez l'enregistrement existant en suivant [ce guide](/pages/web_cloud/domains/dns_zone_edit).|
 |Votre domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client OVHcloud.<br><br>Ou l'onglet `Zone DNS`{.action} de votre nom de domaine s'affiche de la façon suivante :<br><br>![zone-without-domain-top-of-the-page](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Cela signifie que votre nom de domaine n'est pas géré depuis votre espace client OVHcloud.<br><br>Déterminez son « registrar » via notre outil [WHOIS](/links/web/domains-whois) et les serveurs DNS auxquels il est associé. <br><br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant la rubrique dédiée du guide « [Partager son hébergement entre plusieurs sites - ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».|
-|Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![message-other-ovh-dns-servers](images/message-other-ovh-dns-servers.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre nom de domaine en conséquence en suivant notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information). »|
+|Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![message-other-ovh-dns-servers](images/message-other-ovh-dns-servers.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre nom de domaine en conséquence en suivant notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit). »|
 
 ## Aller plus loin <a name="go-further"></a>
 
@@ -97,7 +97,7 @@ Un tableau avec différents enregistrements DNS s'affiche.
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 

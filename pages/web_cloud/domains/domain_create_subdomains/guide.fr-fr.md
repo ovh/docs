@@ -84,7 +84,7 @@ Deux cas de figure sont possibles :
 >
 > La zone DNS active de votre nom de domaine n'est pas obligatoirement gérée auprès du même fournisseur que votre nom de domaine.
 >
-> 1 : Pour identifier l'endroit où se trouve la zone DNS active d'un nom de domaine enregistré chez OVHcloud, vous pouvez vous aider de notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
+> 1 : Pour identifier l'endroit où se trouve la zone DNS active d'un nom de domaine enregistré chez OVHcloud, vous pouvez vous aider de notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
 >
 > 2 : Si votre nom de domaine n'est pas enregistré chez OVHcloud, rapprochez-vous du *bureau d'enregistrement* actuel de votre nom de domaine afin de connaître l'endroit où est hébergée sa zone DNS active. Sachez que vous pouvez utiliser notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) » si vous souhaitez réaliser cette action.
 >
@@ -173,7 +173,7 @@ Pour plus de détails sur la configuration d'une plateforme E-mail Pro, consulte
 
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 

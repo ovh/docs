@@ -83,7 +83,7 @@ Avant de procéder à cette configuration, assurez-vous que l'étape précédent
 > - Configurez la zone DNS du nom de domaine déclaré en multisite, depuis la rubrique `Domaines`{.action}, onglet `Zone DNS`{.action}. Modifiez ou ajoutez un enregistrement de type `A` corespondant à votre entrée multisite et renseignez l'adresse IP de votre hébergement dans la `Cible`.
 > ![managessl](images/modify-an-entry.png){.thumbnail}
 >
-> Pour plus de détails, n'hésitez pas à consulter nos guides [sur la configuration d'une entrée multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) ou sur [la configuration d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit#les-enregistrements-dns).
+> Pour plus de détails, n'hésitez pas à consulter nos guides [sur la configuration d'une entrée multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) ou sur [la configuration d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit).
 
 Votre hébergement web OVHcloud vous permet d'activer un [certificat SSL selon plusieurs solutions](/links/web/hosting-options-ssl){.external} :
 
