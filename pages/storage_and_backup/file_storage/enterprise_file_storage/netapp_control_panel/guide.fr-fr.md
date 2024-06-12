@@ -12,7 +12,7 @@ Les services Enterprise File Storage peuvent être gérés [via les API OVHcloud
 
 ## Prérequis
 
-- Avoir un service Enterprise File Storage dans votre compte OVHcloud.
+- Avoir un service Enterprise File Storage dans votre compte OVHcloud. Le service est commandable depuis la [page produit](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/) ou votre [espace client](https://www.ovh.com/manager/#/dedicated/netapp/new)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique <a name="instructions"></a>
