@@ -10,7 +10,7 @@ Retrouvez ici les questions les plus fréquemment posées sur la gestion de votr
 
 ### Comment créer un compte OVHcloud ?
 
-La création d'un compte est gratuite. Cet espace facilite l'accès à vos informations et permet de gérer vos services. Consultez notre guide [Créer un compte OVHcloud](/pagesaccount_and_service_management/account_information/ovhcloud-account-creation).
+La création d'un compte est gratuite. Cet espace facilite l'accès à vos informations et permet de gérer vos services. Consultez notre guide [Créer un compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 
 #### Trucs et astuces
 
