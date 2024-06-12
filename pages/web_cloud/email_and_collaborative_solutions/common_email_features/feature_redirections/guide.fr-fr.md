@@ -63,7 +63,7 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telle que [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)).
 
 ## En pratique
@@ -81,7 +81,7 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 >
 > Selon la date d'activation de votre offre MX plan ou si [celle-ci a été récemment migrée](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/), il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci.<br> 
 >
-> Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}. Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez :<br>
+> Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}. Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez :<br>
 >
 > |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 > |---|---|
@@ -92,7 +92,7 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 
 La gestion des redirections ne se fait pas via l'espace client mais directement via le webmail de l'adresse e-mail concernée.
 
-Rendez-vous sur l'adresse <https://www.ovhcloud.com/fr/mail/>. Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
+Rendez-vous sur le [webmail](/links/email) . Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
 
 ![emails](images/webmail.png){.thumbnail}
 
@@ -161,7 +161,7 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 
 ### Créer un alias <a name="alias"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
 
 - **Exchange** : dans `Microsoft`{.action} puis sur `Exchange`{.action} et sélectionnez la plateforme concernée. Cliquez sur l'onglet `Comptes e-mail`{.action}.
 
@@ -197,7 +197,7 @@ Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le men
 
 ### Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail <a name="mxplanlegacy"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web Cloud`. Dirigez-vous dans la sections `Emails`{.action} :
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`. Dirigez-vous dans la sections `Emails`{.action} :
 
 > [!warning]
 >
