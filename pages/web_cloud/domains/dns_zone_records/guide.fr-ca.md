@@ -1,7 +1,7 @@
 ---
 title: "Les enregistrements DNS"
 excerpt: "Découvrez les différents types d'enregistrements DNS disponibles dans une zone DNS OVHcloud"
-updated: 2024-06-11
+updated: 2024-06-12
 ---
 
 ## Objectif
