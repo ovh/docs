@@ -124,10 +124,10 @@ Enter the information requested.
 > - No accents
 > - No special characters, except for the following characters: `.`, `,`, `-` and `_`
 
-- **First name**: enter a first name.
+- **First name**: Enter a first name.
 - **Name**: Enter a name.
 - **Display name**: Enter the name that will be displayed as a sender when emails are sent from this address.
-- **Password and confirmation**: set a strong password consisting of at least 8 characters and including at least one upper-case letter, one lower-case letter, and one number. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
+- **Password and confirmation**: Set a strong password consisting of at least 8 characters and including at least one upper-case letter, one lower-case letter, and one number. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
 
 > [!warning]
 >
