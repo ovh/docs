@@ -44,48 +44,65 @@ updated: 2023-06-12
    - Use the "User Management" feature to grant access to team members.
    - Assign appropriate permissions based on roles and responsibilities.
 
-### Best Practices for Public Cloud Project Structuring
+### Best Practices for Structuring Public Cloud Projects
 
-A well-architected environment is crucial for effectively managing and scaling your OVHcloud resources. Here’s how you can structure your projects:
+A well-architected environment is crucial for managing and scaling your OVHcloud resources effectively. Here's how to structure your projects:
 
-#### What is a Landing Zone?
+#### Establish Landing Zones
 
-A landing zone is a well-architected, multi-account cloud environment that is scalable and secure. It serves as a starting point for deploying workloads and applications with confidence in your security and infrastructure environment. Building a landing zone involves making technical and business decisions across account structure, networking, security, and access management, aligned with your organization’s growth and business goals.
+Create a scalable and secure multi-account environment as the foundation for your projects. This helps isolate resources and manage growth efficiently.
 
-#### Use Multi-Account Framework
+#### Use Multiple Accounts
 
-##### Why Use Multiple Accounts?
-
-- **Administrative Isolation**: Different workloads or business units may require separate administrative controls.
-- **Visibility and Discoverability**: Limit visibility of sensitive workloads.
-- **Scope of Impact**: Isolate workloads to minimize the impact of security incidents.
-- **Recovery and Auditing**: Strongly isolate recovery and auditing data.
-
-##### Benefits of Multiple Accounts
-
-- **Security Controls**: Different applications can have tailored security policies.
-- **Isolation**: Contain potential risks and threats within a single account.
-- **Data Isolation**: Restrict access to sensitive data, aiding in compliance (e.g., GDPR).
-- **Team Management**: Different teams can manage their resources without interference.
-- **Business Processes**: Separate accounts for different business units or products.
-- **Billing Separation**: Easier management of costs by separating billing at the account level.
-- **Resource Limits**: Prevent resource contention by allocating limits per account.
+Isolate resources and workloads into different accounts for better security and management. This includes setting up accounts for different business units, applications, or environments (development, staging, production).
 
 #### Organize by Applications and Environments
 
-- **Project Segmentation**: Create separate projects for each application to isolate resources and manage costs effectively.
-- **Environment Segmentation**: Within each project, use different VRacks for development, staging, and production environments.
+Segment your projects by applications and further divide them by environments. Use VRacks to securely connect resources across these environments.
 
 #### Implement Network Segmentation
 
-- **Private Networks**: Isolate sensitive data and reduce the attack surface.
-- **Network Policies**: Define clear policies and use security groups to control traffic between segments.
+Use private networks and clear policies to protect sensitive data. Ensure traffic between different segments is controlled and monitored.
 
-#### Use Tags and Labels
+#### Consistent Tagging
 
-- **Consistent Tagging Strategy**: Implement a strategy to categorize and manage resources efficiently.
-- **Track Usage**: Use tags to track resource usage, ownership, and cost allocation.
+Implement a tagging strategy to categorize and manage resources efficiently. This helps in resource allocation, billing, and compliance tracking.
+
+### IAM and Multi-Tenancy Principles on OpenStack and Flexible Engine
+
+#### Domain (OpenStack) / Account (Flexible Engine)
+
+Domains are the highest level of abstraction for resources and users in an OpenStack environment. A domain can contain users, user groups, and projects.
+
+#### Projects (OpenStack & Flexible Engine) / Tenant (deprecated)
+
+Projects are the second highest level of abstraction in OpenStack. They can contain user groups or users and resources.
+
+#### User Groups (OpenStack & Flexible Engine)
+
+User groups are collections of users. Assigning roles to a group grants all users in that group the permissions of those roles.
+
+#### Roles
+
+In OpenStack, permissions are achieved via role assignments. Roles contain permissions, which are pairs of object types and operations.
+
+#### Users
+
+Users are the active entities in the OpenStack system who can consume resources. Users without assigned roles cannot perform any actions in the system.
+
+#### Keystone v3
+
+Keystone v3 introduces true multi-tenancy with domains. Each domain has its own administrator, who can manage projects, users, groups, and roles within their domain.
 
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
+
+For detailed information and community support, refer to our [best practices guide](https://cloud.orange-business.com/en/best-practices-and-how-to/iam-multi-tenancy/) and join our community discussions on [Discord](https://discord.com/channels/850031577277792286/1222599406163853484).
+
+Feel free to reach out if you need further assistance!
+
+Sources:
+- [OVHcloud Documentation](https://docs.ovh.com)
+- [OVHcloud Public Cloud Guide](https://docs.ovh.com/gb/en/public-cloud/)
+- [IAM and Multi-Tenancy Principles on Flexible Engine](https://cloud.orange-business.com/en/best-practices-and-how-to/iam-multi-tenancy/)
