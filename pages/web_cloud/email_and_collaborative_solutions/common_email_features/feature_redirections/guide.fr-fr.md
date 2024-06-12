@@ -12,7 +12,7 @@ updated: 2024-06-10
 
 ## Objectif
 
-Vous trouverez dans ce guide différentes informations et aides concernant la configuration de vos **redirections** et **alias** e-mail, par exemple pour renvoyer des e-mails reçus sur une adresse A vers une adresse B.
+Retrouvez dans ce guide différentes informations et aides concernant la configuration de vos **redirections** et **alias** e-mail, par exemple pour renvoyer des e-mails reçus sur une adresse A vers une adresse B.
 
 ![emails](images/schema-redirect00.png){.thumbnail}
 
@@ -34,7 +34,7 @@ Par exemple, votre adresse e-mail est **john.smith@mydomain.ovh** et votre alias
 
 ### Redirection et alias en image <a name="diagram"></a>
 
-Cliquez sur les onglets suivants pour comprendre en image le fonctionnement des alias et redirections.
+Cliquez sur les onglets suivants pour des explications illustrées sur le fonctionnement des alias et redirections.
 
 - `From` désigne l'adresse de l'expéditeur
 - `To` désigne l'adresse du destinataire
@@ -43,23 +43,23 @@ Cliquez sur les onglets suivants pour comprendre en image le fonctionnement des 
 > [!tabs]
 > **1. La redirection simple**
 >>
->> l'e-mail est directement renvoyé vers l'adresse de redirection, le destinataire initial ne reçoit pas l'e-mail.<br><br>
+>> L'e-mail est directement renvoyé vers l'adresse de redirection, le destinataire initial ne reçoit pas l'e-mail.<br><br>
 >> ![emails](images/schema-redirect01.png){.thumbnail}
 >>
 > **2. La redirection avec copie locale**
 >>
->> l'e-mail est transmis au destinataire initial ainsi qu'à l'adresse de redirection.<br><br>
+>> L'e-mail est transmis au destinataire initial ainsi qu'à l'adresse de redirection.<br><br>
 >> ![emails](images/schema-redirect02.png){.thumbnail}
 >>
 > **3. L'alias e-mail**
 >>
->> l'e-mail est adressé à l'alias qui le renvoie vers le destinataire sur lequel l'alias a été configuré. La mention `Received by` désigne l'adresse e-mail qui reçoit l'e-mail.<br><br>
+>> L'e-mail est adressé à l'alias qui le renvoie vers le destinataire sur lequel l'alias a été configuré. La mention `Received by` désigne l'adresse e-mail qui reçoit l'e-mail.<br><br>
 >> ![emails](images/schema-redirect03.png){.thumbnail}
 >>
 
 > [!primary]
 >
-> Sachez qu'il est possible de configurer une redirection vers plusieurs adresses e-mail. Pour cela, il est néanmoins nécessaire de créer une par une les redirections vers chaque destinataire.
+> Sachez qu'il est possible de configurer une redirection vers plusieurs adresses e-mail. Cela implique cependant de créer une par une les redirections vers chaque destinataire.
 
 ## Prérequis
 
@@ -90,7 +90,7 @@ Cliquez sur les onglets suivants pour comprendre en image le fonctionnement des 
 
 ### Créer une redirection <a name="redirect"></a>
 
-La gestion des redirections ne se fait pas via l'espace client, mais directement via le webmail de l'adresse e-mail concernée.
+La gestion des redirections ne se fait pas via l'espace client mais directement via le webmail de l'adresse e-mail concernée.
 
 Rendez-vous sur l'adresse <https://www.ovhcloud.com/fr/mail/>. Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
 
@@ -109,7 +109,7 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 > **Etape 2**
 >> Depuis la fenêtre **Options**, dans la colonne de gauche, dirigez-vous dans la catégorie **Traitement automatique** de la section **Courrier** puis cliquez sur `Règles de boîte de réception et de rangement`{.action}. <br><br>
 >> ![emails](images/emails-all-02.png){.thumbnail}<br><br>
->> Cette fenêtre permet de gérer vos redirections, mais également d'appliquer des filtres sur l'ensemble des e-mails entrants.<br>
+>> Cette fenêtre permet de gérer vos redirections mais également d'appliquer des filtres sur l'ensemble des e-mails entrants.<br>
 >>
 > **Etape 3**
 >>
@@ -201,7 +201,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 > [!warning]
 >
-> - La méthode pour créer un alias ou une redirection est strictement la même.
+> - La méthode pour créer un alias ou pour créer une redirection est strictement la même.
 > - Il est possible de créer un maximum de 2000 alias et redirections, copies locales incluses.
 >
 
@@ -243,10 +243,14 @@ Cliquez sur le bouton `...`{.action} à droite de la redirtection concerné, cli
 
 > [!warning]
 >
-> Il n'est pas possible de modifier une redirection ou un alias, il est nécessaire de la supprimer et la recréer.
+> Il n'est pas possible de modifier une redirection ou un alias. Vous devez la supprimer puis la recréer.
 
 ![emails](images/email-del-legacy-redirect01.png){.thumbnail}
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
