@@ -1,0 +1,276 @@
+# Documentation OVHcloud
+
+## Bare Metal Cloud
+### Compute
+- Getting Started
+  - [Getting started with your OVHcloud dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-getting-started-dedicated-server?id=kb_article_view&sysparm_article=KB0043477)
+  - [Getting started with your Eco dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-getting-started-dedicated-server-eco?id=kb_article_view&sysparm_article=KB0043491)
+  - [OVHcloud Control Panel guided tour](https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-control-panel-guided-tour?id=kb_article_view&sysparm_article=KB0043463)
+  - [Introduction to SSH for dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-ssh-introduction?id=kb_article_view&sysparm_article=KB0044021)
+  - [Creating SSH keys for dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-creating-ssh-keys?id=kb_article_view&sysparm_article=KB0043380)
+  - [Getting started with VPS](https://help.ovhcloud.com/csm/en-ie-vps-getting-started?id=kb_article_view&sysparm_article=KB0047715)
+- Configuration
+  - Administration
+    - [Managing billing and payments for your dedicated server](https://help.ovhcloud.com/csm/en-managing-billing-payments-services-raci-dedicated-server?id=kb_article_view&sysparm_article=KB0061754)
+    - [Changing the root password on a dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-root-password?id=kb_article_view&sysparm_article=KB0043633)
+    - [Activating a Windows license key on a dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-windows-key?id=kb_article_view&sysparm_article=KB0044093)
+    - [Changing the Windows administrator password on a dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-windows-admin-password-change?id=kb_article_view&sysparm_article=KB0043295)
+    - [Setting up secondary DNS on a dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-secondary-dns?id=kb_article_view&sysparm_article=KB0043239)
+    - [Changing your password on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-change-password?id=kb_article_view&sysparm_article=KB0061802)
+    - [Uninstalling RTM on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-uninstall-rtm?id=kb_article_view&sysparm_article=KB0058488)
+    - [Managing OVHcloud SSH keys on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-ssh-key?id=kb_article_view&sysparm_article=KB0043874)
+    - [Activating a Windows VM on Hyper-V for dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-activate-windows-vm-hyperv?id=kb_article_view&sysparm_article=KB0043231)
+    - [Using pre-installed applications on VPS](https://help.ovhcloud.com/csm/en-ie-vps-pre-installed-applications?id=kb_article_view&sysparm_article=KB0047517)
+    - [Using KVM on VPS](https://help.ovhcloud.com/csm/en-ie-vps-use-kvm?id=kb_article_view&sysparm_article=KB0047775)
+    - [Managing the image life cycle on a Public Cloud Compute VPS](https://help.ovhcloud.com/csm/en-ie-public-cloud-compute-vps-image-life-cycle?id=kb_article_view&sysparm_article=KB0050805)
+    - [Using the legacy control panel for VPS](https://help.ovhcloud.com/csm/en-ie-vps-legacy-control-panel?id=kb_article_view&sysparm_article=KB0059020)
+    - [Using snapshots on VPS](https://help.ovhcloud.com/csm/en-ie-vps-using-snapshots?id=kb_article_view&sysparm_article=KB0047762)
+    - [Using automated backups on VPS](https://help.ovhcloud.com/csm/en-ie-vps-using-automated-backups?id=kb_article_view&sysparm_article=KB0047755)
+    - [Logging in to the vSphere interface on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-login-vsphere-interface?id=kb_article_view&sysparm_article=KB0044808)
+    - [Creating a snapshot on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-create-snapshot?id=kb_article_view&sysparm_article=KB0044393)
+    - [Creating an alert on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-create-alert?id=kb_article_view&sysparm_article=KB0044383)
+    - [Modifying users' rights on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-change-users-rights?id=kb_article_view&sysparm_article=KB0044304)
+    - [Associating an email with a vSphere user on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-associate-email-vsphere-user?id=kb_article_view&sysparm_article=KB0044801)
+    - [Using hourly snapshots on OVHcloud Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-hourly-snapshots-ovhcloud?id=kb_article_view&sysparm_article=KB0044449)
+    - [Changing the user password on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-change-user-password?id=kb_article_view&sysparm_article=KB0044322)
+    - [Changing the vCenter access policy on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-modify-vcenter-access-policy?id=kb_article_view&sysparm_article=KB0044638)
+    - [Using the OVHcloud Control Panel on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-control-panel-ovhcloud?id=kb_article_view&sysparm_article=KB0044489)
+    - [Installing VMware Tools on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-install-vmware-tools?id=kb_article_view&sysparm_article=KB0044753)
+    - [Applying an OVHcloud template on Managed Bare Metal](https://help.ovhcloud.com/csm/en-managed-bare-metal-applying-ovhcloud-template?id=kb_article_view&sysparm_article=KB0044524)
+  - Deployments
+    - [Deploying a 3AZ Cluster on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-3az-cluster?id=kb_article_view&sysparm_article=KB0063271)
+    - [Using the API to install an OS on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-api-os-installation?id=kb_article_view&sysparm_article=KB0061951)
+    - [Bring Your Own Image (BYOI) on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-bringyourownimage?id=kb_article_view&sysparm_article=KB0043281)
+    - [Bring Your Own Linux (BYOL) on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-bring-your-own-linux?id=kb_article_view&sysparm_article=KB0061610)
+    - [Enabling Intel SGX on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-intel-sgx?id=kb_article_view&sysparm_article=KB0044005)
+    - [Using iPXE scripts on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-ipxe-scripts?id=kb_article_view&sysparm_article=KB0058505)
+    - [Using pfSense to bridge interfaces on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-pfsense-bridging?id=kb_article_view&sysparm_article=KB0043897)
+    - [Setting up LAMP on Debian/Ubuntu on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-setup-lamp-debian-ubuntu?id=kb_article_view&sysparm_article=KB0043611)
+    - [Installing CUDA on a server with a GPU for dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-install-cuda-server-gpu?id=kb_article_view&sysparm_article=KB0043393)
+    - [Hardware upgrade on HG Scale dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-hardware-upgrade-hg-scale?id=kb_article_view&sysparm_article=KB0060745)
+    - [Setting up software RAID on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-raid-soft?id=kb_article_view&sysparm_article=KB0043933)
+    - [Mirroring a software RAID on Windows dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-mirror-soft-raid-windows?id=kb_article_view&sysparm_article=KB0057459)
+    - [Setting up hardware RAID on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-raid-hard?id=kb_article_view&sysparm_article=KB0043928)
+    - [Partitioning a dedicated server using the API](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-api-partitioning?id=kb_article_view&sysparm_article=KB0043895)
+    - [Hot-swapping drives in a hardware RAID on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-hotswap-raid-hard?id=kb_article_view&sysparm_article=KB0043531)
+    - [Hot-swapping drives in a software RAID on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-hotswap-raid-soft?id=kb_article_view&sysparm_article=KB0043544)
+    - [Using the maximum amount of disk space on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-using-the-maximum-amount-of-disk-space?id=kb_article_view&sysparm_article=KB0043648)
+    - [Configuring the system on HGR-STOR-2 dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-hgrstor2-system-configuration?id=kb_article_view&sysparm_article=KB0043518)
+    - [Partitioning a dedicated server with ESXi](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-esxi-partitioning?id=kb_article_view&sysparm_article=KB0059568)
+    - [Upgrading Samsung NVMe firmware on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-samsung-nvme-firmware-upgrade?id=kb_article_view&sysparm_article=KB0060082)
+    - [Upgrading WD SAS firmware on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-wd-sas-firmware-upgrade?id=kb_article_view&sysparm_article=KB0062305)
+    - [Repartitioning a VPS after an upgrade](https://help.ovhcloud.com/csm/en-ie-vps-repartitioning-vps-after-upgrade?id=kb_article_view&sysparm_article=KB0047733)
+    - [Configuring an additional disk on VPS](https://help.ovhcloud.com/csm/en-ie-vps-config-additional-disk?id=kb_article_view&sysparm_article=KB0047558)
+    - [Increasing the size of an additional disk on VPS](https://help.ovhcloud.com/csm/en-ie-vps-increase-size-additional-disk?id=kb_article_view&sysparm_article=KB0057158)
+    - [Deploying a virtual machine on Managed Bare Metal](https://help.ovhcloud.com/csm/en-managed-bare-metal-deploying-virtual-machine?id=kb_article_view&sysparm_article=KB0044433)
+    - [Using a spare host on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-spare-host-howto?id=kb_article_view&sysparm_article=KB0044590)
+    - [Removing a host server on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-remove-host-server?id=kb_article_view&sysparm_article=KB0044415)
+    - [Adding hourly resources on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-adding-hourly-resources?id=kb_article_view&sysparm_article=KB0044279)
+    - [Modifying the hardware configuration of a virtual machine on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-modify-virtual-machine-hardware-configuration?id=kb_article_view&sysparm_article=KB0044506)
+    - [Cloning a virtual machine on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-clone-vm?id=kb_article_view&sysparm_article=KB0044346)
+    - [Using vMotion on Managed Bare Metal](https://help.ovhcloud.com/csm/en-managed-bare-metal-vmotion-new?id=kb_article_view&sysparm_article=KB0044771)
+    - [How to avoid disk read-only switch on Linux for Managed Bare Metal](https://help.ovhcloud.com/csm/en-managed-bare-metal-how-avoid-disk-read-only-switch-linux?id=kb_article_view&sysparm_article=KB0044287)
+    - [Applying an OVHcloud template on Managed Bare Metal](https://help.ovhcloud.com/csm/en-managed-bare-metal-applying-ovhcloud-template?id=kb_article_view&sysparm_article=KB0044524)
+  - Conceptions
+    - [Bring Your Own Image versus Bring Your Own Linux on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-bring-your-own-image-versus-bring-your-own-linux?id=kb_article_view&sysparm_article=KB0061597)
+- Performances
+    - [Optimizing email sending on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-optimise-email-sending?id=kb_article_view&sysparm_article=KB0043640)
+- Migrations
+  - [Migrate data between two dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-migrate-data-between-servers?id=kb_article_view&sysparm_article=KB0043700)
+  - [Copying data between servers with rsync](https://help.ovhcloud.com/csm/en-dedicated-servers-copy-data-server-rsync?id=kb_article_view&sysparm_article=KB0043556)
+- Tutorials
+  - [Creating a Palworld server on VPS](https://help.ovhcloud.com/csm/en-vps-create-palworld-server?id=kb_article_view&sysparm_article=KB0061710)
+  - [Installing a web development environment on VPS](https://help.ovhcloud.com/csm/en-vps-install-env-web-dev?id=kb_article_view&sysparm_article=KB0062068)
+  - [Installing WordPress with Docker on VPS](https://help.ovhcloud.com/csm/en-vps-install-wordpress-docker?id=kb_article_view&sysparm_article=KB0062090)
+  - [Installing a WordPress site on VPS](https://help.ovhcloud.com/csm/en-vps-install-wordpress-site?id=kb_article_view&sysparm_article=KB0062079)
+  - [Using cPanel on VPS](https://help.ovhcloud.com/csm/en-ie-vps-cpanel?id=kb_article_view&sysparm_article=KB0047611)
+  - [Setting up automatic backups with cPanel on VPS](https://help.ovhcloud.com/csm/en-ie-vps-cpanel-auto-backup?id=kb_article_view&sysparm_article=KB0047627)
+  - [Creating a Minecraft server on VPS](https://help.ovhcloud.com/csm/en-ie-vps-create-minecraft-server?id=kb_article_view&sysparm_article=KB0047641)
+  - [Installing LAMP on Debian/Ubuntu on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-setup-lamp-debian-ubuntu?id=kb_article_view&sysparm_article=KB0043611)
+  - [Installing VMware Tools on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-install-vmware-tools?id=kb_article_view&sysparm_article=KB0044753)
+  - [Applying an OVHcloud template on Managed Bare Metal](https://help.ovhcloud.com/csm/en-managed-bare-metal-applying-ovhcloud-template?id=kb_article_view&sysparm_article=KB0044524)
+  - [Deploying a virtual machine on Managed Bare Metal](https://help.ovhcloud.com/csm/en-managed-bare-metal-deploying-virtual-machine?id=kb_article_view&sysparm_article=KB0044433)
+  - [Using vMotion on Managed Bare Metal](https://help.ovhcloud.com/csm/en-managed-bare-metal-vmotion-new?id=kb_article_view&sysparm_article=KB0044771)
+- Security
+  - [Securing your dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-securing-server?id=kb_article_view&sysparm_article=KB0043988)
+  - [Setting up a firewall with iptables on your dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-firewall-iptables?id=kb_article_view&sysparm_article=KB0043436)
+  - [Setting up a firewall on a Windows dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-firewall-windows?id=kb_article_view&sysparm_article=KB0043216)
+  - [Securing your Memcached service on a dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-securing-server-memcached-service?id=kb_article_view&sysparm_article=KB0043684)
+  - [Mitigating the Zenbleed vulnerability on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-zenbleed-vulnerability?id=kb_article_view&sysparm_article=KB0059006)
+  - [Mitigating the Downfall vulnerability on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-downfall-vulnerability?id=kb_article_view&sysparm_article=KB0059180)
+  - [Mitigating the Inception vulnerability on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-inception-vulnerability?id=kb_article_view&sysparm_article=KB0059208)
+  - [Mitigating the Meltdown and Spectre vulnerabilities on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-meltdown-spectre-kernel-update-per-operating-system?id=kb_article_view&sysparm_article=KB0043669)
+  - [Information about Meltdown and Spectre vulnerability fixes for dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-information-about-meltdown-spectre-vulnerability-fixes?id=kb_article_view&sysparm_article=KB0043665)
+  - [Anti-spam best practices for dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-antispam-best-practices?id=kb_article_view&sysparm_article=KB0043252)
+  - [AMD SME and SEV for dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-amd-sme-sev?id=kb_article_view&sysparm_article=KB0044018)
+  - [Security tips for VPS](https://help.ovhcloud.com/csm/en-ie-vps-security-tips?id=kb_article_view&sysparm_article=KB0047704)
+  - [Setting up a firewall with iptables on VPS](https://help.ovhcloud.com/csm/en-ie-vps-firewall-iptables?id=kb_article_view&sysparm_article=KB0056977)
+  - [Setting up a firewall on a Windows VPS](https://help.ovhcloud.com/csm/en-ie-vps-firewall-windows?id=kb_article_view&sysparm_article=KB0056967)
+- Support / Troubleshooting
+  - [Using OVHcloud Rescue mode on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-rescue?id=kb_article_view&sysparm_article=KB0043949)
+  - [Using OVHcloud Rescue mode for Windows on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-rescue-windows?id=kb_article_view&sysparm_article=KB0063091)
+  - [Replacing a lost SSH key pair on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-replacing-lost-ssh-key-pair?id=kb_article_view&sysparm_article=KB0056390)
+  - [Replacing a disk on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-disk-replacement?id=kb_article_view&sysparm_article=KB0043410)
+  - [Running hardware diagnostics on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-hardware-diagnostics?id=kb_article_view&sysparm_article=KB0043506)
+  - [Finding the disk serial number on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-find-disk-serial-number?id=kb_article_view&sysparm_article=KB0043570)
+  - [Following up on an intervention on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-intervention-follow-up?id=kb_article_view&sysparm_article=KB0058043)
+  - [Using rescue mode on VPS](https://help.ovhcloud.com/csm/en-ie-vps-rescue?id=kb_article_view&sysparm_article=KB0047652)
+  - [Checking the file system on VPS](https://help.ovhcloud.com/csm/en-ie-vps-check-file-system?id=kb_article_view&sysparm_article=KB0047542)
+  - [Displaying the boot log in KVM for VPS](https://help.ovhcloud.com/csm/en-ie-vps-displaying-boot-log-in-kvm?id=kb_article_view&sysparm_article=KB0047528)
+  - [Changing the password on a dedicated server](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-change-password?id=kb_article_view&sysparm_article=KB0061800)
+  - [How to cancel a Managed Bare Metal service](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-how-to-cancel-service?id=kb_article_view&sysparm_article=KB0044458)
+- Additional Resources
+  - [Technical capabilities of Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-technical-capabilities?id=kb_article_view&sysparm_article=KB0044554)
+  - [VPS FAQ](https://help.ovhcloud.com/csm/en-ie-vps-faq?id=kb_article_view&sysparm_article=KB0047788)
+
+### Storage
+- Getting Started
+- Configuration
+  - Administration
+    - [Setting up backup storage for dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-services-backup-storage?id=kb_article_view&sysparm_article=KB0043985)
+    - [Preparing for backups with Veeam Enterprise Server](https://help.ovhcloud.com/csm/en-veeam-enterprise-server-backup-preparation?id=kb_article_view&sysparm_article=KB0062499)
+    - [Backing up data and databases on a Storage Server](https://help.ovhcloud.com/csm/en-dedicated-servers-data-database-backup-storage-server?id=kb_article_view&sysparm_article=KB0043961)
+    - [Storing and retrieving data via SFTP on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-store-retrieve-data-via-sftp?id=kb_article_view&sysparm_article=KB0043326)
+    - [Retrieving a database from a dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-retrieve-database?id=kb_article_view&sysparm_article=KB0057658)
+    - [Using Veeam Backup as a Service on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-veeam-backup-as-a-service?id=kb_article_view&sysparm_article=KB0044650)
+    - [Choosing a disk type on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-choosing-disk-type?id=kb_article_view&sysparm_article=KB0044334)
+    - [Connecting via SFTP on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-sftp_connection?id=kb_article_view&sysparm_article=KB0044565)
+  - Deployments
+    - [Backing up Linux servers with Veeam Enterprise Server](https://help.ovhcloud.com/csm/en-veeam-enterprise-server-backup-linux?id=kb_article_view&sysparm_article=KB0062537)
+    - [Backing up Windows servers with Veeam Enterprise Server](https://help.ovhcloud.com/csm/en-veeam-enterprise-server-backup-windows?id=kb_article_view&sysparm_article=KB0062511)
+    - [Restoring backups with Veeam Enterprise Server](https://help.ovhcloud.com/csm/en-veeam-enterprise-server-backup-restore?id=kb_article_view&sysparm_article=KB0062528)
+    - [Removing a datastore on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-remove-data-store?id=kb_article_view&sysparm_article=KB0044401)
+  - Conceptions
+  - Performances
+- Migrations
+- Tutorials
+- Security
+- Support / Troubleshooting
+  - [How to avoid disk read-only switch on Linux for Managed Bare Metal](https://help.ovhcloud.com/csm/en-managed-bare-metal-how-avoid-disk-read-only-switch-linux?id=kb_article_view&sysparm_article=KB0044287)
+- Additional Resources
+
+## Network
+### Additional IP
+- Getting Started
+- Configuration
+  - Administration
+  - Deployments
+    - [Configuring IPv6 on VPS](https://help.ovhcloud.com/csm/en-ie-vps-configuring-ipv6?id=kb_article_view&sysparm_article=KB0047567)
+    - [Configuring IPv6 on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-network-ipv6?id=kb_article_view&sysparm_article=KB0030803)
+    - [Setting up network IP aliasing on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-network-ipaliasing?id=kb_article_view&sysparm_article=KB0043752)
+    - [Setting up network IP aliasing on VPS](https://help.ovhcloud.com/csm/en-ie-vps-network-ipaliasing?id=kb_article_view&sysparm_article=KB0047586)
+    - [Setting up secondary DNS on VPS](https://help.ovhcloud.com/csm/en-ie-vps-secondary-dns-vps?id=kb_article_view&sysparm_article=KB0047508)
+    - [Configuring reverse DNS on VPS](https://help.ovhcloud.com/csm/en-ie-vps-configure-reverse-dns?id=kb_article_view&sysparm_article=KB0047596)
+    - [Setting up Virtual MAC addresses on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-network-support-virtual-mac?id=kb_article_view&sysparm_article=KB0043782)
+    - [Using Virtual MAC addresses on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-network-virtual-mac?id=kb_article_view&sysparm_article=KB0043806)
+    - [Adding an IP block on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-add-ip-block?id=kb_article_view&sysparm_article=KB0044472)
+    - [Configuring an IP for a virtual machine on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-configure-ip-virtual-machine?id=kb_article_view&sysparm_article=KB0044362)
+  - Conceptions
+  - Performances
+- Migrations
+- Tutorials
+- Security
+- Support / Troubleshooting
+- Additional Resources
+
+### OVHcloud Load Balancer
+- Getting Started
+- Configuration
+  - Administration
+  - Deployments
+  - Conceptions
+  - Performances
+- Migrations
+- Tutorials
+- Security
+- Support / Troubleshooting
+- Additional Resources
+
+### Private Network (vRack)
+- Getting Started
+- Configuration
+  - Administration
+    - [Managing OVHcloud Link Aggregation (OLA) on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-ola-manager?id=kb_article_view&sysparm_article=KB0043836)
+  - Deployments
+    - [Configuring an IPv6 in a vRack](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062826)
+    - [Configuring a vRack on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-configuring-vrack?id=kb_article_view&sysparm_article=KB0044063)
+    - [Configuring an IP block in a vRack](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043339)
+    - [Changing the announcement of an IP block in a vRack](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-change-anouncement-ip-block-vrack?id=kb_article_view&sysparm_article=KB0044051)
+    - [Configuring multiple VLANs on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-multiple-vlans?id=kb_article_view&sysparm_article=KB0043720)
+    - [Configuring failover IP in a vRack with Hyper-V](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-foip-vrack-hyperv?id=kb_article_view&sysparm_article=KB0043622)
+    - [Configuring PCI DSS compliance in a vRack](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-vrack-pci-ds?id=kb_article_view&sysparm_article=KB0043354)
+    - [Creating a VLAN on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-vlan-creation?id=kb_article_view&sysparm_article=KB0044672)
+    - [Using vRack on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-using-vrack?id=kb_article_view&sysparm_article=KB0044593)
+  - Conceptions
+  - Performances
+- Migrations
+- Tutorials
+- Security
+- Support / Troubleshooting
+- Additional Resources
+
+### OVHcloud Connect
+- Getting Started
+- Configuration
+  - Administration
+    - [Using the Network Security Dashboard](https://help.ovhcloud.com/csm/en-ie-network-security-dashboard?id=kb_article_view&sysparm_article=KB0060698)
+    - [Using the OVHcloud Network plugin on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-plugin-ovhcloud-network?id=kb_article_view&sysparm_article=KB0044542)
+  - Deployments
+    - [Configuring Hyper-V network on HG Scale dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-hyperv-network-hg-scale?id=kb_article_view&sysparm_article=KB0043583)
+    - [Configuring Proxmox network on HG Scale dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-proxmox-network-hg-scale?id=kb_article_view&sysparm_article=KB0043909)
+    - [Configuring ESXi network on HG Scale dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-esxi-network-hg-scale?id=kb_article_view&sysparm_article=KB0043420)
+    - [Configuring OVHcloud Link Aggregation (OLA) on Debian 9](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-ola-debian9?id=kb_article_view&sysparm_article=KB0043834)
+    - [Configuring OVHcloud Link Aggregation (OLA) on CentOS 7](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-ola-centos7?id=kb_article_view&sysparm_article=KB0043807)
+    - [Configuring OVHcloud Link Aggregation (OLA) on Windows Server 2019](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-ola-w2k19?id=kb_article_view&sysparm_article=KB0043856)
+    - [Configuring OVHcloud Link Aggregation (OLA) on SLES 15](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-ola-sles15?id=kb_article_view&sysparm_article=KB0057041)
+    - [Configuring OVHcloud Link Aggregation (OLA) on Netboot](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-ola-netboot?id=kb_article_view&sysparm_article=KB0057768)
+    - [Configuring Jumbo Frames on dedicated servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-network-jumbo?id=kb_article_view&sysparm_article=KB0043202)
+  - Conceptions
+  - Performances
+- Migrations
+- Tutorials
+- Security
+- Support / Troubleshooting
+- Additional Resources
+
+### Bring Your Own IP (BYOIP)
+- Getting Started
+- Configuration
+  - Administration
+  - Deployments
+  - Conceptions
+  - Performances
+- Migrations
+- Tutorials
+- Security
+- Support / Troubleshooting
+- Additional Resources
+
+### Security
+- Getting Started
+- Configuration
+  - Administration
+    - [Using the Network Security Dashboard](https://help.ovhcloud.com/csm/en-ie-network-security-dashboard?id=kb_article_view&sysparm_article=KB0060698)
+    - [Securing access to vSphere Web on Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-securing-access-vsphere-web?id=kb_article_view&sysparm_article=KB0044833)
+  - Deployments
+  - Conceptions
+  - Performances
+- Migrations
+- Tutorials
+  - [Anti-spam best practices for dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-antispam-best-practices?id=kb_article_view&sysparm_article=KB0043252)
+- Support / Troubleshooting
+  - [Using OVHcloud Rescue mode on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-rescue?id=kb_article_view&sysparm_article=KB0043949)
+  - [Using OVHcloud Rescue mode for Windows on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-rescue-windows?id=kb_article_view&sysparm_article=KB0063091)
+  - [Replacing a lost SSH key pair on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-replacing-lost-ssh-key-pair?id=kb_article_view&sysparm_article=KB0056390)
+  - [Replacing a disk on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-disk-replacement?id=kb_article_view&sysparm_article=KB0043410)
+  - [Running hardware diagnostics on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-hardware-diagnostics?id=kb_article_view&sysparm_article=KB0043506)
+  - [Finding the disk serial number on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-find-disk-serial-number?id=kb_article_view&sysparm_article=KB0043570)
+  - [Following up on an intervention on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-intervention-follow-up?id=kb_article_view&sysparm_article=KB0058043)
+  - [Using rescue mode on VPS](https://help.ovhcloud.com/csm/en-ie-vps-rescue?id=kb_article_view&sysparm_article=KB0047652)
+  - [Checking the file system on VPS](https://help.ovhcloud.com/csm/en-ie-vps-check-file-system?id=kb_article_view&sysparm_article=KB0047542)
+  - [Displaying the boot log in KVM for VPS](https://help.ovhcloud.com/csm/en-ie-vps-displaying-boot-log-in-kvm?id=kb_article_view&sysparm_article=KB0047528)
+  - [Changing the password on a dedicated server](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-change-password?id=kb_article_view&sysparm_article=KB0061800)
+  - [How to cancel a Managed Bare Metal service](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-how-to-cancel-service?id=kb_article_view&sysparm_article=KB0044458)
+- Additional Resources
+  - [Technical capabilities of Managed Bare Metal](https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-technical-capabilities?id=kb_article_view&sysparm_article=KB0044554)
+  - [VPS FAQ](https://help.ovhcloud.com/csm/en-ie-vps-faq?id=kb_article_view&sysparm_article=KB0047788)
