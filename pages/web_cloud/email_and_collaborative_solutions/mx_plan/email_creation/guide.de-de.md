@@ -187,7 +187,7 @@ Wenn Sie nur die Informationen zur Konfiguration Ihres E-Mail-Accounts benötige
 
 > [!alert]
 >
-> Vergewissern Sie sich, dass die oben rechts auf dieser Dokumentationsseite angezeigte Markierung für Ihr Land bzw. Ihre Region gilt. **Die folgenden Einstellungen sind je nach Land/Region unterschiedlich**.
+> Vergewissern Sie sich, dass die oben rechts auf dieser Seite angezeigte Markierung Ihrem Land bzw. Region enptspricht. **Die folgenden Einstellungen sind je nach Land/Region unterschiedlich.**
 
 > [!tabs]
 > **IMAP-Konfiguration (empfohlen)**
