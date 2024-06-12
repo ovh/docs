@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases
-updated: 2024-05-15
+updated: 2024-06-12
 ---
 
 ## Public Cloud Databases

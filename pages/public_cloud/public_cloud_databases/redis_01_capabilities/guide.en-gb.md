@@ -1,7 +1,7 @@
 ---
 title: Caching - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Caching
-updated: 2024-05-27
+updated: 2024-06-12
 ---
 
 ## Objective
@@ -103,7 +103,7 @@ So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672
 
 #### Advanced parameters
 
-You can further customise your service by using advanced parameters. See the [Advanced parameters references documentation](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-redis-advanced-parameters-references?id=kb_article_view&sysparm_article=KB0054733) for more information on the supported parameters.
+You can further customise your service by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/public_cloud_databases/redis_09_advanced_parameters_references) for more information on the supported parameters.
 
 #### Backups
 

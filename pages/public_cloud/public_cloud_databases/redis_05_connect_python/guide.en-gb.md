@@ -1,7 +1,7 @@
 ---
 title: Caching - Connect with Python
 excerpt: Connect to your Public Cloud Databases for Caching using the Python programming language
-updated: 2023-10-16
+updated: 2024-06-12
 ---
 
 ## Objective
@@ -79,6 +79,6 @@ Congratulations! Everything is working properly.
 
 Join our Discord: Visit our dedicated [Discord channel](https://discord.gg/ovhcloud) to ask questions, provide feedback, and interact directly with the team that builds our databases services.
 
-Need Training or Technical Assistance? Contact your sales representative or [get a quote](https://www.ovhcloud.com/en/services/) for custom analysis of your project by our Professional Services experts.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,7 +1,7 @@
 ---
 title: Caching - Manage ACLs via API
 excerpt: Update users ACLs with the OVHcloud API
-updated: 2022-03-08
+updated: 2024-06-12
 ---
 
 ## Objective
@@ -120,6 +120,6 @@ The result should be displayed similarly to the example below.
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
