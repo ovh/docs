@@ -23,7 +23,7 @@ Quando estiver em falta e não conseguir consultar o seu endereço de e-mail, po
 
 > [!primary]
 >
-> Se o seu endereço de e-mail estiver numa oferta [**Exchange**](/links/web/emails-hosted-exchange/), [**Email Pro**](/links/web/emails-email-pro/) ou se não houver nenhuma secção "Gestão das respostas automáticas" {.action} no seu MXplan, deverá criar uma resposta automática a partir do seu webmail com a ajuda da documentação [« Configurar uma resposta automática a partir da interface OWA »](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_replic_automatic).
+> Se o seu endereço de e-mail estiver numa oferta [**Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/emails-email-pro) ou se não houver nenhuma secção "Gestão das respostas automáticas" {.action} no seu MXplan, deverá criar uma resposta automática a partir do seu webmail com a ajuda da documentação [« Configurar uma resposta automática a partir da interface OWA »](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
 
 ### Criação de uma resposta automática
 
@@ -59,7 +59,7 @@ De seguida, clique em `Validar`{.action} para concluir a configuração da sua r
 
 > [!success]
 >
-> Se pretender delegar a gestão de uma resposta automática para um endereço de e-mail, consulte o nosso guia [« Delegar a gestão das suas contas de e-mail a outra pessoa »](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/feature_delegation)
+> Se pretender delegar a gestão de uma resposta automática para um endereço de e-mail, consulte o nosso guia [« Delegar a gestão das suas contas de e-mail a outra pessoa »](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation)
 
 ### Modificação ou eliminação de uma resposta automática
 
@@ -69,6 +69,6 @@ Depois de criada a sua resposta automática, esta aparecerá na lista visível n
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[FAQ e-mail](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/faq-emails)
+[FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>
