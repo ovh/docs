@@ -77,7 +77,7 @@ Cet exemple montre comment rediriger le trafic de `/oldpath` vers `https://examp
 Plusieurs options de gestion sont disponibles pour configurer votre load balancer chez OVHcloud. Vous n'avez pas besoin de toutes les utiliser, mais il est nécessaire d'en choisir au moins une selon vos préférences :
 
 - **Espace client OVHcloud :** permet la gestion via l'interface graphique, idéal pour ceux qui préfèrent une approche visuelle et intuitive.
-- **CLI OpenStack :** pour la gestion via la ligne de commande. Retrouvez plus d'informations pour préparer votre environnement API OpenStack sur [ce guide](pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- **CLI OpenStack :** pour la gestion via la ligne de commande. Retrouvez plus d'informations pour préparer votre environnement API OpenStack sur [ce guide](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
 - **Interface Horizon :** offre une gestion graphique via OpenStack pour les utilisateurs familiarisés avec cette plateforme. Retrouvez plus de détails supplémentaires sur [cette page](/pages/public_cloud/compute/introducing_horizon).
 - **Terraform :** permet la gestion via Infrastructure as Code, utile pour automatiser et reproduire des environnements via des fichiers de code. Retrouvez plus d'informations sur le provider OVH pour Terraform sur [cette page](https://registry.terraform.io/providers/ovh/ovh/latest/docs).
 

@@ -76,7 +76,7 @@ Suivez les étapes décrites dans la [documentation dédiée de Hostinger](https
 ### Obtenir le code EPP ou Auth
 
 Si vous souhaitez **transférer** votre nom de domaine de Hostinger vers un autre bureau d'enregistrements (comme OVHcloud), le nouveau bureau d'enregistrement peut demander un code d'autorisation (code « EPP » ou « Auth ») pour vérifier que vous avez bien le droit d'agir sur le nom de domaine.
-Pour vous familiariser avec le changement de propriétaire d'un nom de domaine, nous vous consultez ce [guide](pages/web_cloud/domains/trade_domain).
+Pour vous familiariser avec le changement de propriétaire d'un nom de domaine, nous vous consultez ce [guide](/pages/web_cloud/domains/trade_domain).
 
 > [!warning]
 >

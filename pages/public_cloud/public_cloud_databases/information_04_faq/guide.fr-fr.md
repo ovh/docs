@@ -209,7 +209,7 @@ We do not provide benchmark results so far for Public Cloud databases. Each busi
 
 ### Where are my DB instances deployed?
 
-During the DB instance creation, you can select the region and datacenter to deploy your service. Please find the exact list in our [Capabilities and Limitations page](pages/public_cloud/public_cloud_databases/information_05_capabilities).
+During the DB instance creation, you can select the region and datacenter to deploy your service. Please find the exact list in our [Capabilities and Limitations page](/pages/public_cloud/public_cloud_databases/information_05_capabilities).
 
 ### Do we provide Multi-AZ deployments?
 
