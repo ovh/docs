@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com a solução E-mail Pro'
 excerpt: 'Saiba como configurar o serviço E-mail Pro.'
-updated: 2024-05-29
+updated: 2024-06-11
 ---
 
 > [!primary]

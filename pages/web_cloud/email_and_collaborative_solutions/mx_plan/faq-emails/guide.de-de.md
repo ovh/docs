@@ -1,6 +1,6 @@
 ---
 title: FAQ OVHcloud E-Mails
-updated: 2024-05-29
+updated: 2024-06-11
 ---
 
 ## E-Mails FAQ

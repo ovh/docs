@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con la solución Email Pro'
 excerpt: 'Cómo configurar por primera vez la solución Email Pro'
-updated: 2024-05-29
+updated: 2024-06-11
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: FAQ e-mails OVHcloud
 excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails OVHcloud'
-updated: 2024-05-29
+updated: 2024-06-11
 ---
 
 ## FAQ e-mails
@@ -53,7 +53,7 @@ Le **mot de passe** doit respecter les règles suivantes :
 - Aucun caractère accentué
 
 > [!warning]
-> Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions de votre nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
+> Pour des raisons de sécurité, n'utilisez pas deux fois le même mot de passe. Choisissez-en un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple de mentionner vos nom, prénom et date de naissance). Changez-le régulièrement.
 
 ### Comment limiter la réception de spams ?
 

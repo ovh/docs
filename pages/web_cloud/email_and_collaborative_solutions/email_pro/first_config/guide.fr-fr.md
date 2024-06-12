@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec la solution E-mail Pro'
 excerpt: 'Découvrez comment réaliser la configuration de votre solution E-mail Pro'
-updated: 2024-05-29
+updated: 2024-06-11
 ---
 
 ## Objectif
@@ -127,7 +127,7 @@ Complétez les informations qui s'affichent.
 - **Prénom** : renseignez un prénom.
 - **Nom** : renseignez un nom.
 - **Nom à afficher** : renseignez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés depuis cette adresse.
-- **Mot de passe et confirmation** : définissez un mot de passe fort composé d'au minimum 8 caractères et comprenant au moins une majuscule, une minuscule, un chiffre. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
+- **Mot de passe et confirmation** : définissez un mot de passe fort composé de (au minimum) 8 caractères, une majuscule, une minuscule et un chiffre. Pour des raisons de sécurité, n'utilisez pas deux fois le même mot de passe. Choisissez-en un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple de mentionner vos nom, prénom et date de naissance). Changez-le régulièrement.
 
 > [!warning]
 >
