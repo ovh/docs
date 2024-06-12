@@ -168,7 +168,7 @@ If you just need the information required to configure your email address, the s
 > Check that the flag visible in the top right-hand corner of this documentation page corresponds to your country/region. **The settings below vary depending on your country/region**.
 
 > [!tabs]
-> **For IMAP configuration (recommended)**
+> **IMAP configuration (recommended)**
 >>
 >> |Information|Description|
 >> |---|---|
@@ -178,7 +178,7 @@ If you just need the information required to configure your email address, the s
 >> |Port|993|
 >> |Security type|SSL/TLS|
 >>
-> **For POP configuration**
+> **POP configuration**
 >>
 >> |Information|Description|
 >> |---|---|
