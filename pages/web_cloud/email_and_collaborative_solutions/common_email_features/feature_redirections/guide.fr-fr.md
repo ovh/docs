@@ -79,7 +79,7 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 >
 
 >
-> Selon la date d'activation de votre offre MXplan ou si [celle-ci a été récemment migrée](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/), il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci.<br> 
+> Selon la date d'activation de votre offre MX plan ou si [celle-ci a été récemment migrée](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/), il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci.<br> 
 >
 > Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}. Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez :<br>
 >
@@ -167,7 +167,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 - **E-mail Pro** : dans `E-mail Pro`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
 
-- **Emails** (MXplan): dans `Emails`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
+- **Emails** (MX plan): dans `Emails`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 Pour ajouter un alias à votre compte e-mail, suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
 
@@ -239,7 +239,7 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 
 Depuis l'onglet `Emails`{.action}, cliquez sur `Gestion des redirections`{.action} à droite de la fenêtre.
 
-Cliquez sur le bouton `...`{.action} à droite de la redirtection concerné, cliquez sur `Supprimer la redirection`{.action}
+Cliquez sur le bouton `...`{.action} à droite de la redirection concernée puis cliquez sur `Supprimer la redirection`{.action}
 
 > [!warning]
 >
