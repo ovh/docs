@@ -1,7 +1,7 @@
 --- 
 title: 'MXplan - Tworzenie automatycznej odpowiedzi na adres e-mail'
 excerpt: 'Dowiedz się, jak skonfigurować automatyczną odpowiedź na adres e-mail'
-Updated: 2024-05-24
+updated: 2024-05-24
 --- 
 
 > [!primary]
@@ -21,7 +21,7 @@ Jeśli jesteś nieobecny i nie możesz sprawdzić Twojego adresu e-mail, możesz
 
 > [!primary]
 >
-> Jeśli Twój adres e-mail jest zawarty w ofercie [**Exchange**](/links/web/emails-hosted-exchange/), [**Email Pro**](/links/web/email-pro/) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MXplanie, utwórz automatyczną odpowiedź z poziomu interfejsu webmail, korzystając z dokumentacji ["Uruchom automatyczną odpowiedź z interfejsu OWA"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
+> Jeśli Twój adres e-mail jest zawarty w ofercie [**Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/emails-email-pro) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MXplanie, utwórz automatyczną odpowiedź z poziomu interfejsu webmail, korzystając z dokumentacji ["Uruchom automatyczną odpowiedź z interfejsu OWA"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
 
 ### Utworzenie automatycznej odpowiedzi
 
@@ -67,6 +67,6 @@ Po utworzeniu odpowiedzi automatycznej zostanie ona wyświetlona na liście wido
 
 ## Krok w przyszłość
 
-[FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emaile)
+[FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
