@@ -1,7 +1,7 @@
 ---
 title: "Qu'est ce qu'une zone DNS ?"
 excerpt: "Découvrez le rôle d'une zone DNS et les enregistrements qu'elle contient pour un nom de domaine"
-updated: 2024-06-10
+updated: 2024-06-11
 ---
 
 ## Objectif
@@ -54,9 +54,9 @@ En comparaison, voici son équivalent en « mode textuel » :
 
 ```bash
 $TTL 3600
-@	IN SOA dnsXX.ovh.net. tech.ovh.net. (2024051800 86400 3600 3600000 60)
-                 IN NS     nsXX.ovh.net.
-                 IN NS     dnsXX.ovh.net.
+@	IN SOA dnsXX.ovh.ca. tech.ovh.net. (2024051800 86400 3600 3600000 60)
+                 IN NS     nsXX.ovh.ca.
+                 IN NS     dnsXX.ovh.ca.
                  IN MX     1 mx1.mail.ovh.ca.
                  IN MX     5 mx2.mail.ovh.ca.
                  IN MX     10 mx3.mail.ovh.ca.
