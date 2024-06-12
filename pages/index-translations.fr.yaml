@@ -136,9 +136,9 @@ public-cloud-databases-mysql-tutorials: MySQL - Tutoriels
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-postgresql-guides: PostgreSQL - Guides
 public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutoriels
-public-cloud-databases-redis: Redis
-public-cloud-databases-redis-guides: Redis - Guides
-public-cloud-databases-redis-tutorials: Redis - Tutoriels
+public-cloud-databases-redis: Caching
+public-cloud-databases-redis-guides: Caching - Guides
+public-cloud-databases-redis-tutorials: Caching - Tutoriels
 public-cloud-databases-grafana: Grafana
 public-cloud-databases-grafana-guides: Grafana - Guides
 public-cloud-databases-grafana-tutorials: Grafana - Tutoriels

@@ -1,28 +1,28 @@
 ---
-title: Redis - Configure your Redis instance to accept incoming connections
-excerpt: Find out how to configure your Redis instance to accept incoming connections
-updated: 2024-02-29
+title: Caching - Configure your Caching service to accept incoming connections
+excerpt: Find out how to configure your Caching service to accept incoming connections
+updated: 2024-06-12
 ---
 
 ## Objective
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to configure your Redis instance to accept incoming connections.**
+**This guide explains how to configure your Caching instance to accept incoming connections.**
 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+- A Caching service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 
 ## Instructions
 
-### Configure your Redis instance to accept incoming connections
+### Configure your Caching instance to accept incoming connections
 
-Before making a connection, we need to verify that our Redis instance is correctly configured.
+Before making a connection, we need to verify that our Caching instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your Redis instance.
+Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your Caching instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -55,7 +55,7 @@ Once created or updated, the user has to be ready and with the "Enabled" status 
 > Follow this [guide](/pages/public_cloud/public_cloud_databases/redis_01_capabilities#users-and-roles) to learn more about users and roles capabilities and limitations.
 >
 
-#### Step 2: Authorise incoming connections from the Redis client
+#### Step 2: Authorise incoming connections from the service
 
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorise the suitable IP addresses in order to successfully access your database.
@@ -85,6 +85,6 @@ Visit the [Github examples repository](https://github.com/ovh/public-cloud-datab
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
