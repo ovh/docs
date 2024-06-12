@@ -39,7 +39,7 @@ Please note that an OVHcloud customer ID (NIC handle) is required for both optio
 
 ### What should I know before I create an email address?
 
-Creating an email address isn't complicated, but there are rules that must be followed to set the **name of your email address** and its **password**.
+Creating an email address isn't complicated, but there are rules that must be followed to set the **name of your email address** and **passwords**.
 
 The **name of your email address** must respect the following rules:
 
