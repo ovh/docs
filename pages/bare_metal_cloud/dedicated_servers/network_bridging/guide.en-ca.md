@@ -319,7 +319,7 @@ To test that the VM is fully connected to the Internet, ping example.com. If you
 
 In the previous versions Rocky Linux and Alma Linux, network profiles were stored in ifcfg format in this directory: /etc/sysconfig/network-scripts/. However, the ifcfg format is now deprecated and has been replaced keyfiles. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in /etc/NetworkManager/system-connections/.
 
-For demonstration purposes, our file is called `ens18-nmconnection`:
+For demonstration purposes, our file is called `ens18-nmconnection`.
 
 Once you are connected to the shell of your virtual machine, run the following command to identify your interface name:
 
@@ -409,7 +409,20 @@ First, access the console to connect to your virtual machine and run the followi
 ip addr
 ```
 
-Next, open the network configuration file located in `/etc/netplan/` with the following command. For demonstration purposes, our file is called `00-installer-config.yaml`:
+Next, make a copy of the configuration file, so that you can revert at any time. For demonstration purposes, our file is called `00-installer-config.yaml`:
+
+```bash
+sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak
+```
+
+In case of a mistake, you will be able to revert the changes, using the commands below:
+
+```bash
+sudo rm -f /etc/netplan/00-installer-config.yaml
+sudo cp /etc/netplan/00-installer-config.yaml.bak /etc/netplan/00-installer-config.yaml
+```
+
+Next, open the network configuration file located in `/etc/netplan/` with the following command:
 
 ```bash
 sudo nano /etc/netplan/00-installer-config.yaml
