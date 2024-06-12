@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration von E-Mail Pro'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
-updated: 2024-01-29
+updated: 2024-05-29
 ---
 
 > [!primary]
@@ -117,13 +117,29 @@ Um sie zu konfigurieren klicken Sie auf `...`{.action} und dann auf `Ändern`{.a
 
 Ergänzen Sie die angezeigten Werte.
 
-|Bezeichnung|Beschreibung|
-|---|---|
-|E-Mail-Account|Geben Sie den Namen ein, den Ihre E-Mail-Adresse erhalten soll (zum Beispiel: vorname.name) und wählen Sie die entsprechende Domain aus der Liste aus.|
-|Vorname|Geben Sie einen Vornamen an.|
-|Name|Geben Sie einen Nachnamen an.|
-|Anzeigename|Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse verschickt werden.|
-|Passwort und Bestätigung|Wählen Sie ein Passwort und bestätigen Sie es.| 
+- **E-Mail-Account**: Geben Sie den Namen ein, den Ihre E-Mail-Adresse erhalten soll (zum Beispiel vorname.name), und wählen Sie die betreffende Domain aus der Liste aus.
+
+> [!warning]
+>
+> Die Wahl des Namens Ihrer E-Mail-Adresse muss folgende Bedingungen erfüllen:
+>
+> - Mindestens 2 Zeichen
+> - Maximal 32 Zeichen
+> - Keine Zeichen mit Akzent
+> - Keine Sonderzeichen außer `.`, `,`, `-` und `_`
+
+- **Vorname**: Geben Sie einen Vornamen ein.
+- **Name**: Geben Sie einen Namen ein.
+- **Anzeigename**: Geben Sie den Namen ein, der als Absender angezeigt werden soll, wenn E-Mails von dieser Adresse aus versendet werden.
+- **Kennwort und Bestätigung**: Legen Sie ein sicheres Kennwort fest, das aus mindestens 8 Zeichen besteht und mindestens einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthält. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
+
+> [!warning]
+>
+> Die Wahl des Passworts muss folgende Bedingungen erfüllen:
+>
+> - Mindestens 9 Zeichen
+> - Maximal 30 Zeichen
+> - Keine Zeichen mit Akzent
 
 Wenn alle Angaben vollständig sind, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigten Informationen und klicken Sie dann auf `Bestätigen`{.action}, um die Konfiguration Ihres Accounts abzuschließen.
 

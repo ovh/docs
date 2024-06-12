@@ -1,52 +1,72 @@
 ---
 title: FAQ e-mail OVHcloud
-updated: 2020-05-05
+updated: 2024-05-29
 ---
 
 ## Najczęściej zadawane pytania dotyczące kont e-mail
 
 ### Co zrobić, jeśli nie mogę wysyłać/odbierać wiadomości e-mail?
 
-W większości przypadków brak możliwości wysyłania/odbierania wiadomości e-mail wiąże się z konfiguracją adresu w programie pocztowym. Aby to sprawdzić, zaloguj się w interfejsie [webmail](https://www.ovh.pl/mail/){.external} i przeprowadź test wysyłania i odbierania wiadomości z Twojego adresu.
+W większości przypadków brak możliwości wysyłania/odbierania wiadomości e-mail wiąże się z konfiguracją adresu w programie pocztowym. Aby to sprawdzić, zaloguj się w interfejsie [webmail](/links/email) i przeprowadź test wysyłania i odbierania wiadomości z Twojego adresu.
 
 - Jeśli wszystko działa normalnie, to znaczy, że źródło problemu leży w konfiguracji oprogramowania.
 - Jeśli natomiast wysyłanie lub odbieranie wciąż jest niemożliwe, masz do wyboru kilka rozwiązań.
 
 Czy po wysłaniu e-maila na Twoje konto e-mail dostajesz komunikat błędu? Jeśli tak, zlokalizuj ten komunikat — znajdziesz w nim przyczynę problemów (przepełniona lub nieistniejąca skrzynka itp.).
 
-Możesz także sprawdzić, czy Twoja domena dostarcza wiadomości e-mail we właściwe miejsce. W tym celu przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, wybierz strefę DNS Twojej domeny i spójrz na ustawione wpisy typu MX. Wpisy te powinny mieć następujący format: „mx\*.mail.ovh.net.” (symbol „\*” zastąp cyfrą od 0 do 3).
+Możesz także sprawdzić, czy Twoja domena dostarcza wiadomości e-mail we właściwe miejsce. W tym celu przejdź do [Panelu klienta OVHcloud](/links/manager), wybierz strefę DNS Twojej domeny i spójrz na ustawione wpisy typu MX. Wpisy te powinny mieć następujący format: „mx\*.mail.ovh.net.” (symbol „\*” zastąp cyfrą od 0 do 3).
 Jeśli wpisy MX są różne, to znaczy, że być może korzystasz z oferty e-mail od innego operatora niż OVHcloud.
 
-**Wskazówki i porady**: Jeśli nie możesz się zalogować do interfejsu webmail, to znaczy, że hasło może być błędne. Sprawdź hasło, a w razie potrzeby zmień je w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i zaloguj się ponownie. W tym celu przejdź do [naszej dokumentacji](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
+**Wskazówki i porady**: Jeśli nie możesz się zalogować do interfejsu webmail, to znaczy, że hasło może być błędne. Sprawdź hasło, a w razie potrzeby zmień je w [Panelu klienta OVHcloud](/links/manager) i zaloguj się ponownie. W tym celu przejdź do [naszej dokumentacji](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
 
 ### Jak skonfigurować mój adres e-mail i używać go w interfejsie webmail?
 
 Konto e-mail można skonfigurować w programie pocztowym takim jak Outlook, Thunderbird, Mail na komputery Mac itd.
 W tym celu przygotowaliśmy przewodniki, z których dowiesz się, jak skonfigurować Twój adres. Znajdziesz je na [tej stronie](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
-Za sprawą interfejsu [webmail](https://www.ovh.pl/mail/){.external} w każdej chwili możesz uzyskać dostęp do Twojej poczty za pośrednictwem dowolnego urządzenia z dostępem do Internetu. Po utworzeniu konta e-mail zaloguj się tam, aby uzyskać dostęp do poczty.
+Za sprawą interfejsu [webmail](/links/email) w każdej chwili możesz uzyskać dostęp do Twojej poczty za pośrednictwem dowolnego urządzenia z dostępem do Internetu. Po utworzeniu konta e-mail zaloguj się tam, aby uzyskać dostęp do poczty.
 
-**Wskazówki i porady**: Jeśli konfigurujesz konto e-mail w programie pocztowym, zalecamy użycie protokołu IMAP. Dzięki temu wiadomości e-mail będą przechowywane na serwerze i będzie można uzyskać do nich dostęp z dowolnego miejsca za pomocą interfejsu [webmail](https://www.ovh.pl/mail/){.external}. W tym celu przejdź do [naszej dokumentacji](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+**Wskazówki i porady**: Jeśli konfigurujesz konto e-mail w programie pocztowym, zalecamy użycie protokołu IMAP. Dzięki temu wiadomości e-mail będą przechowywane na serwerze i będzie można uzyskać do nich dostęp z dowolnego miejsca za pomocą interfejsu [webmail](/links/email). W tym celu przejdź do [naszej dokumentacji](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ### Zarządzanie usługami e-mail
 
-Wszystkimi Twoimi kontami e-mail zarządzasz w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Zaloguj się do Panelu klienta i przejdź do odpowiedniej usługi. Możesz zmienić hasła do kont e-mail, sprawdzić dostępne miejsce na każdym z kont, utworzyć nowe konta lub usunąć istniejące.
+Wszystkimi Twoimi kontami e-mail zarządzasz w [Panelu klienta OVHcloud](/links/manager). Zaloguj się do Panelu klienta i przejdź do odpowiedniej usługi. Możesz zmienić hasła do kont e-mail, sprawdzić dostępne miejsce na każdym z kont, utworzyć nowe konta lub usunąć istniejące.
 
-**Porady i podpowiedzi**: Dzięki rozwiązaniom poczty elektronicznej MX Plan możesz delegować uprawnienia do zarządzania kontem e-mail innemu kontu OVHcloud, jednocześnie zachowując nad nim kontrolę. Nadaj uprawnienia odpowiedniemu kontu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu zaloguj się do Panelu klienta OVHcloud, przejdź do sekcji „Konta e-mail” i wybierz odpowiednią domenę. Następnie przejdź do zakładki „Konta e-mail” i wybierz opcję:
+**Porady i podpowiedzi**: Dzięki rozwiązaniom poczty elektronicznej MX Plan możesz delegować uprawnienia do zarządzania kontem e-mail innemu kontu OVHcloud, jednocześnie zachowując nad nim kontrolę. Nadaj uprawnienia odpowiedniemu kontu w [Panelu klienta OVHcloud](/links/manager). W tym celu zaloguj się do Panelu klienta OVHcloud, przejdź do sekcji „Konta e-mail” i wybierz odpowiednią domenę. Następnie przejdź do zakładki „Konta e-mail” i wybierz opcję:
 
 - `Zarządzaj elementami współdzielonymi przez wszystkie konta e-mail`{.action} po prawej stronie, jeśli chcesz delegować uprawnienia do zarządzania wszystkimi kontami dla tej domeny
 - `Zarządzanie delegacjami uprawnień`{.action}, jeśli chcesz delegować uprawnienia do zarządzania określonym kontem (kliknij `...`{.action} obok konta)  
 
 Pamiętaj, że w przypadku obu opcji wymagane jest podanie identyfikatora klienta OVHcloud (NIC).
 
+## Co należy wiedzieć przed utworzeniem konta e-mail?
+
+Utworzenie adresu e-mail nie jest skomplikowane, ale należy przestrzegać pewnych zasad definiowania **nazwy adresu e-mail** i **hasła**.
+
+**Nazwa Twojego konta e-mail** musi spełniać następujące wymagania:
+
+- Minimum 2 znaki
+- Maksymalnie 32 znaki
+- Brak znaków akcentowanych
+- Brak znaków specjalnych z wyjątkiem następujących znaków:`.`,`,`,`- et`_`
+
+**hasło** musi spełniać następujące wymagania:
+
+- Minimum 9 znaków
+- Maksymalnie 30 znaków
+- Brak znaków akcentowanych
+
+> [!warning]
+> Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.
+
 ### Jak ograniczyć ilość otrzymywanego spamu?
 
 Aby ograniczyć liczbę wiadomości-śmieci, możesz skonfigurować filtry dla poczty e-mail (w ofercie MXPlan — „Filtrowanie”). Ich celem jest usunięcie lub przeniesienie tego typu wiadomości do folderu „Spam” w momencie ich odebrania.
-W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do rubryki `E-mail`, a następnie wybierz daną domenę, kartę `E-mail`{.action}, a potem w kolumnie `Filtrowanie`{.action} kliknij przycisk akcji.
+W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do rubryki `E-mail`, a następnie wybierz daną domenę, kartę `E-mail`{.action}, a potem w kolumnie `Filtrowanie`{.action} kliknij przycisk akcji.
 
-Jeśli w Panelu klienta nie widzisz kolumny `Filtrowanie`{.action}, wówczas tworzenie filtrów odbywa się za pośrednictwem reguł zarządzania skrzynką odbiorczą w interfejsie [webmail](https://www.ovh.pl/mail/){.external}. Więcej szczegółów znajdziesz w przewodniku: [Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
+Jeśli w Panelu klienta nie widzisz kolumny `Filtrowanie`{.action}, wówczas tworzenie filtrów odbywa się za pośrednictwem reguł zarządzania skrzynką odbiorczą w interfejsie [webmail](/links/email). Więcej szczegółów znajdziesz w przewodniku: [Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
 
-**Wskazówki i porady**: Jeśli włączysz filtr antyspamowy, możliwe, że niektóre prawidłowe wiadomości zostaną uznane za spam. Jest to tzw. wynik „fałszywie pozytywny”. Jeśli tak się zdarzy, zachęcamy do otwarcia zgłoszenia w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, aby poinformować nas o tym. Dzięki temu będziemy mogli podjąć odpowiednie kroki, aby takie wiadomości nie były w przyszłości uznawane za spam.
+**Wskazówki i porady**: Jeśli włączysz filtr antyspamowy, możliwe, że niektóre prawidłowe wiadomości zostaną uznane za spam. Jest to tzw. wynik „fałszywie pozytywny”. Jeśli tak się zdarzy, zachęcamy do otwarcia zgłoszenia w [Panelu klienta OVHcloud](/links/manager), aby poinformować nas o tym. Dzięki temu będziemy mogli podjąć odpowiednie kroki, aby takie wiadomości nie były w przyszłości uznawane za spam.
 
 ### Mój adres e-mail jest zajęty. Nie mam już miejsca. Co mogę zrobić?
 

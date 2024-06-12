@@ -214,7 +214,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 >> |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
 >> |Serveur (sortant)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
 >> |Port|465|
->> Type de sécurité|SSL/TLS|
+>> |Type de sécurité|SSL/TLS|
 >>
 
 > [!warning]

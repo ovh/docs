@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com a solução E-mail Pro'
 excerpt: 'Saiba como configurar o serviço E-mail Pro.'
-updated: 2024-01-29
+updated: 2024-05-29
 ---
 
 > [!primary]
@@ -115,13 +115,29 @@ Para as configurar, clique no botão `...`{.action} e, a seguir, em `Alterar`{.a
 
 Introduza os dados solicitados.
 
-|Campo|Descrição|
-|---|---|
-|Conta de e-mail|Introduza um nome para o seu endereço de e-mail (por exemplo, nome.apelido) e escolha o domínio na lista.|
-|Nome|Introduza um nome.|
-|Sobrenome|Introduza um sobrenome.|
-|Nome a mostrar|Insira o nome do remetente apresentado nos e-mails enviados.|
-|Palavra-passe e confirmação|Defina uma palavra-passe forte, composta por um mínimo de 8 caracteres e compreendendo pelo menos uma maiúscula, uma minúscula e um algarismo.| 
+- **Conta de e-mail** : indique o nome do seu endereço de e-mail (por exemplo, nome.apelido) e escolha o domínio na lista.
+
+> [!warning]
+>
+> A escolha do nome do seu endereço de e-mail deve respeitar as seguintes condições:
+>
+> - Mínimo de 2 caracteres
+> - Máximo de 32 caracteres
+> - Nenhum caráter acentuado
+> - Sem caracteres especiais, com exceção dos seguintes caracteres: `.`, `,`, `-` e `_`
+
+- **Nome Próprio** : introduza um nome.
+- **Nome** : introduza um nome.
+- **Nome a apresentar** : indique o nome apresentado como remetente quando envia e-mails a partir deste endereço.
+- **Palavra-passe e confirmação** : defina uma palavra-passe forte, composta por um mínimo de 8 caracteres e compreendendo pelo menos uma maiúscula, uma minúscula e um algarismo. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento, por exemplo) e renove-a regularmente.
+
+> [!warning]
+>
+> A escolha da palavra-passe deve respeitar as seguintes condições:
+>
+> - Mínimo de 9 caracteres
+> - Máximo de 30 caracteres
+> - Nenhum caráter acentuado
 
 Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e clique em `Confirmar`{.action} para dar início à configuração da conta.
 
@@ -129,7 +145,6 @@ Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e
 >
 > Repita este passo sempre que necessário, de acordo com o número de contas disponíveis. Se precisar de mais contas, clique em `Encomendar contas`{.action}.
 >
-
 
 ### 5 - Usar o serviço de e-mail
 

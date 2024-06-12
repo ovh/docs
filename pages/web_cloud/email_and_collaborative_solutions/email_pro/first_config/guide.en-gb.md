@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your Email Pro solution'
 excerpt: 'Find out how to configure your Email Pro solution'
-updated: 2024-01-29
+updated: 2024-05-29
 ---
 
 ## Objective
@@ -113,13 +113,29 @@ To configure them, click the `...`{.action} icon then `Edit`{.action}.
 
 Enter the information requested.
 
-|Title|Description|
-|---|---|
-|Email account|Enter the name for your email address (firstname.lastname, for example) and select the appropriate domain in the list.|
-|First name|Enter a first name.|
-|Last name|Enter a last name.|
-|Display name|Enter the sender name that you wish to be displayed when sending emails from this address.|
-|Password confirmation|Type in a password and confirm it.| 
+- **Email account**: Enter the name that your email address will bear (your first name.surname, for example), and select the domain in question from the list.
+
+> [!warning]
+>
+> The name of your email address must meet the following conditions:
+>
+> - Minimum 2 characters
+> - Maximum 32 characters
+> - No accents
+> - No special characters, except for the following characters: `.`, `,`, `-` and `_`
+
+- **First name**: enter a first name.
+- **Name**: Enter a name.
+- **Display name**: Enter the name that will be displayed as a sender when emails are sent from this address.
+- **Password and confirmation**: set a strong password consisting of at least 8 characters and including at least one upper-case letter, one lower-case letter, and one number. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
+
+> [!warning]
+>
+> The password must meet the following requirements:
+>
+> - Minimum 9 characters
+> - Maximum 30 characters
+> - No accents
 
 Once the information is complete, click on the `Next`{.action} button, check the information displayed, then click `Confirm`{.action} to start configuring the account.
 

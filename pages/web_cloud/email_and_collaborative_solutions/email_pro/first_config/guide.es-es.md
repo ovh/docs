@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con la solución Email Pro'
 excerpt: 'Cómo configurar por primera vez la solución Email Pro'
-updated: 2024-01-29
+updated: 2024-05-29
 ---
 
 > [!primary]
@@ -117,13 +117,29 @@ Para configurarlos, haga clic en el botón `...`{.action} y, seguidamente, en `M
 
 Complete la información solicitada.
 
-|Campo|Descripción|
-|---|---|
-|Cuenta de correo electrónico|Introduzca el nombre que quiera asignarle a la cuenta de correo electrónico (por ejemplo, nombre.apellido) y seleccione un dominio de la lista.|
-|Nombre|Introduzca un nombre.|
-|Apellidos|Introduzca los apellidos.|
-|Nombre mostrado|Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.|
-|Contraseña y confirmación|Cree una contraseña segura que tenga un mínimo de ocho caracteres e incluya al menos una mayúscula, una minúscula y un número.|
+- **Cuenta de correo electrónico** : Introduzca el nombre que quiera asignarle a su dirección de correo electrónico (por ejemplo, su nombre.apellido) y seleccione el dominio correspondiente de la lista.
+
+> [!warning]
+>
+> La elección del nombre de su dirección de correo electrónico debe respetar las siguientes condiciones:
+>
+> - Mínimo 2 caracteres
+> - Máximo 32 caracteres
+> - Sin caracteres acentuados
+> - Sin caracteres especiales, excepto los siguientes: `.`, `,`, `-` y `_`
+
+- **Nombre**: introduzca un nombre.
+- **Nombre**: introduzca un nombre.
+- **Nombre mostrado** : Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes desde esta dirección.
+- **Contraseña y confirmación**: Establezca una contraseña segura de 8 caracteres como mínimo, que incluya al menos una mayúscula, una minúscula y un número. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
+
+> [!warning]
+>
+> La elección de la contraseña debe respetar las siguientes condiciones:
+>
+> - Mínimo 9 caracteres
+> - Máximo 30 caracteres
+> - Sin caracteres acentuados
 
 Una vez introducida toda la información, haga clic en el botón `Siguiente`{.action}. Compruebe que la información mostrada es correcta y haga clic en `Confirmar`{.action} para iniciar la configuración de la cuenta.
 

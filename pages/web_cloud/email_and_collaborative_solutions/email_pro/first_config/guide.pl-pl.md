@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja konta E-mail Pro'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
-updated: 2024-01-29
+updated: 2024-05-29
 ---
 
 > [!primary]
@@ -115,13 +115,29 @@ Aby je skonfigurować, kliknij przycisk `...`{.action}, a następnie `Zmień`{.a
 
 Teraz uzupełnij kolejne informacje, o które zostaniesz poproszony.
 
-|Nazwa|Opis|
-|---|---|
-|Konto e-mail|Wprowadź nazwę, którą wybrałeś dla Twojego konta e-mail (np. Twoje imie.nazwisko) i wybierz z listy odpowiednią domenę.|
-|Imię|Wprowadź imię.|
-|Nazwisko|Wprowadź nazwisko.|
-|Nazwa, która będzie się wyświetlać.|Wpisz nazwę nadawcy, która będzie się wyświetlać podczas wysyłki wiadomości e-mail przy użyciu tego konta.|
-|Hasło i jego potwierdzenie|Ustaw hasło składające się z co najmniej 8 znaków i zawierające co najmniej jedną dużą literę, jedną małą literę i jedną cyfrę.| 
+- **Konto e-mail** : wprowadź nazwę, którą wybrałeś dla Twojego konta e-mail (np. imie.nazwisko) i wybierz z listy odpowiednią domenę.
+
+> [!warning]
+>
+> Wybór nazwy konta e-mail musi spełniać następujące warunki:
+>
+> - Minimum 2 znaki
+> - Maksymalnie 32 znaki
+> - Brak znaków akcentowanych
+> - Brak znaków specjalnych, z wyjątkiem następujących znaków:`.`,`,`,`-` et`_`
+
+- **Imię** : wpisz imię.
+- **Nazwa** : wprowadź nazwę.
+- **Nazwa do wyświetlenia** : wprowadź nazwę nadawcy, która ma się wyświetlać podczas wysyłki e-maili z tego adresu.
+- **Hasło i potwierdzenie*** : Ustaw hasło składające się z minimum 8 znaków i zawierające co najmniej jedną dużą literę, jedną małą literę i jedną cyfrę. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.
+
+> [!warning]
+>
+> Wybór hasła musi spełniać następujące warunki:
+>
+> - Minimum 9 znaków
+> - Maksymalnie 30 znaków
+> - Brak znaków akcentowanych
 
 Po wprowadzeniu informacji, kliknij przycisk `Dalej`{.action}, sprawdź dane, które się wyświetlają, a następnie kliknij `Potwierdź`{.action}, aby rozpocząć konfigurację konta.
 

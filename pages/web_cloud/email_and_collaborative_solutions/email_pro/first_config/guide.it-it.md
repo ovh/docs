@@ -1,7 +1,7 @@
 ---
 title: 'Iniziare a utilizzare la soluzione Email Pro'
 excerpt: 'Come eseguire le prime operazioni sul servizio Email Pro'
-updated: 2024-01-29
+updated: 2024-05-29
 ---
 
 > [!primary]
@@ -115,13 +115,29 @@ Per configurarli, clicca sul pulsante `...`{.action} e poi su `Modifica`{.action
 
 Completa con le informazioni richieste.
 
-|Campo|Descrizione|
-|---|---|
-|Account email|Inserisci il nome che vuoi assegnare al tuo account email (ad esempio nome.cognome) e seleziona il dominio dalla lista.|
-|Nome|Inserisci un nome.|
-|Cognome|Inserisci un cognome.|
-|Nome da visualizzare|Indica il nome che comparirà come mittente delle email inviate da questo indirizzo.|
-|Password e Conferma|Crea una password complessa di almeno 8 caratteri e contenente almeno una maiuscola, una minuscola e un numero.| 
+- **Account email**: inserisci il nome che vuoi assegnare al tuo indirizzo email (ad esempio nome.cognome) e seleziona il dominio dalla lista.
+
+> [!warning]
+>
+> La scelta del nome dell’indirizzo email deve rispettare queste condizioni:
+>
+> - Minimo 2 caratteri
+> - Massimo 32 caratteri
+> - Nessun carattere accentato
+> - Nessun carattere speciale eccetto i seguenti: `.`, `,`, `-` e `_`
+
+- **Nome**: inserisci un nome.
+- **Cognome**: inserisci un nome.
+- **Nome da visualizzare** : inserisci il nome che comparirà come mittente dei messaggi inviati da questo indirizzo.
+- **Password e conferma**: definisci una password complessa, composta da almeno 8 caratteri e contenente almeno una maiuscola, una minuscola e un numero. Per motivi di sicurezza, vi consigliamo di non utilizzare due volte la stessa password, sceglierne una che non abbia alcun rapporto con le vostre informazioni personali (evitate di inserire il vostro cognome, nome e data di nascita, ad esempio) e di rinnovarla regolarmente.
+
+> [!warning]
+>
+> La scelta della password deve rispettare queste condizioni:
+>
+> - Minimo 9 caratteri
+> - Massimo 30 caratteri
+> - Nessun carattere accentato
 
 Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la correttezza delle informazioni inserite e poi clicca su `Conferma`{.action}.
 
