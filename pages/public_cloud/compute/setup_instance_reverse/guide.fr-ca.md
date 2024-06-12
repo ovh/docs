@@ -37,7 +37,7 @@ Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Valider`{.ac
 Vous pouvez également éditer le reverse directement via l'icône de la colonne **Reverse** du tableau.
 > [!primary]
 >
-Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` est bien configuré dans la zone DNS de votre nom de domaine. Attention, la modification de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) peut prendre jusqu'à 24 heures si vous n'avez modifié que récemment le champ `A`.
+Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` est bien configuré dans la zone DNS de votre nom de domaine. Attention, la modification de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) peut prendre jusqu'à 24 heures si vous n'avez modifié que récemment le champ `A`.
 >
 
 ## Aller plus loin <a name="gofurther"></a>
