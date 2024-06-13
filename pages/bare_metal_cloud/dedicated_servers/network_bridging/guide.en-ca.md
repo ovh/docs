@@ -24,7 +24,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/asia/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ca/about/).
 >
 > Please visit our [comparison page](https://eco.ovhcloud.com/en-ca/compare/) for more information.
 >
@@ -231,9 +231,24 @@ Finally, restart your networking service using the following command:
 sudo systemctl restart networking
 ```
 
-To test that the VM is fully connected to the Internet, `ping example.com`. If you get a response, you are good to go. If you do not, restart your VM and attempt the ping again.
+To verify that the virtual machine is fully connected to the Internet, use the following command:
 
-#### Red Hat and Red Hat-based operating systems (CentOS, Rocky Linux, Alma Linux, etc.)
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24,925/28,028/30,840/2,254 ms
+```
+
+If you receive a response, this means that the Additional IP has been correctly configured. If not, reboot your virtual machine and retry the ping command.
+
+#### Red Hat and Red Hat-based operating systems (CentOS, Rocky Linux 8, Alma Linux 8, etc.)
 
 By default, the virtual machine's network configuration file is located in `/etc/sysconfig/network-scripts/`. For demonstration purposes, our file is called `ifcfg-eth0`:
 
@@ -313,11 +328,26 @@ Restart your network using the following command:
 sudo systemctl restart network
 ```
 
-To test that the VM is fully connected to the Internet, ping example.com. If you get a response, you are good to go. If you do not, restart your VM and attempt the ping again.
+To verify that the virtual machine is fully connected to the Internet, use the following command:
+
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24,925/28,028/30,840/2,254 ms
+```
+
+If you receive a response, this means that the Additional IP has been correctly configured. If not, reboot your virtual machine and retry the ping command.
 
 #### Rocky Linux 9 and Alma Linux 9
 
-In the previous versions Rocky Linux and Alma Linux, network profiles were stored in ifcfg format in this directory: /etc/sysconfig/network-scripts/. However, the ifcfg format is now deprecated and has been replaced keyfiles. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in /etc/NetworkManager/system-connections/.
+In the previous versions of Rocky Linux and Alma Linux, network profiles were stored in ifcfg format in this directory: /etc/sysconfig/network-scripts/. However, the ifcfg format is now deprecated and has been replaced keyfiles. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in /etc/NetworkManager/system-connections/.
 
 For demonstration purposes, our file is called `ens18-nmconnection`.
 
@@ -357,7 +387,7 @@ Restart your network interface with the following command:
 sudo systemctl restart NetworkManager
 ```
 
-#### FreeBSD 12.0
+#### FreeBSD 
 
 By default, the virtual machine's network configuration file is located in `/etc/rc.conf`.
 
@@ -399,7 +429,22 @@ nameserver 213.186.33.99
 Save and close the file, then reboot your virtual machine.
 
 
-To test that the VM is fully connected to the Internet, ping example.com. If you get a response, you are good to go. If you do not, restart your VM and attempt the ping again.
+To verify that the virtual machine is fully connected to the Internet, use the following command:
+
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24,925/28,028/30,840/2,254 ms
+```
+
+If you receive a response, this means that the Additional IP has been correctly configured. If not, reboot your virtual machine and retry the ping command.
 
 #### Ubuntu
 
@@ -437,6 +482,9 @@ network:
       dhcp4: true
       addresses:
           - ADDITIONAL_IP/32
+      nameservers:
+          addresses:
+              - 213.186.33.99   
       routes:
            - to: 0.0.0.0/0
              via: GATEWAY_IP
@@ -453,6 +501,9 @@ network:
       dhcp4: true
       addresses:
           - 192.0.2.1/32
+      nameservers:
+          addresses:
+              - 213.186.33.99
       routes:
            - to: 0.0.0.0/0
              via: 203.0.113.254
@@ -472,7 +523,22 @@ If it is correct, apply it using the following command:
 sudo netplan apply
 ```
 
-To test that the VM is fully connected to the Internet, ping example.com. If you get a response, you are good to go. If you do not, restart your VM and attempt the ping again.
+To verify that the virtual machine is fully connected to the Internet, use the following command:
+
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24,925/28,028/30,840/2,254 ms
+```
+
+If you receive a response, this means that the Additional IP has been correctly configured. If not, reboot your virtual machine and retry the ping command.
 
 #### Windows Servers / Hyper-V
 
