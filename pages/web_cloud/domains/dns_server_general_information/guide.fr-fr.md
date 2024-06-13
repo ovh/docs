@@ -73,7 +73,7 @@ Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS (Authorita
 
 [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Les enregitrements DNS](/pages/web_cloud/domains/dns_zone_records)
+[Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 
