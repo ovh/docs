@@ -1089,6 +1089,8 @@
                 + [How to connect an OVHcloud domain name to a Shopify hosting plan](web_cloud/domains/how_to_connect_domain_to_shopify)
                 + [How to connect an OVHcloud domain name to a SquareSpace hosting plan](web_cloud/domains/how_to_connect_domain_to_squarespace)
                 + [How to connect an OVHcloud domain name to a Wix hosting plan](web_cloud/domains/how_to_connect_domain_to_wix)
+                + [How to connect an OVHcloud domain name to a GoDaddy hosting plan](web_cloud/domains/how_to_connect_domain_to_godaddy)
+                + [How to connect an OVHcloud domain name to a Webflow hosting plan](web_cloud/domains/how_to_connect_domain_to_webflow)
         + [DNS (Domain Name System)](products/web-cloud-domains-dns)
             + [DNS servers](web-cloud-domains-dns-dns-servers)
                 + [What is a DNS server?](web_cloud/domains/dns_server_general_information)
