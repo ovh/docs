@@ -1,6 +1,3 @@
-Voici la structure mise à jour au format Markdown :
-
-```markdown
 # Documentation OVHcloud
 
 ## Bare Metal Cloud
