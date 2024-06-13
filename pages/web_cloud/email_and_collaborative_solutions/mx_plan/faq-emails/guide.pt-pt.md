@@ -7,7 +7,7 @@ updated: 2024-06-13
 
 ### O que fazer se for impossível enviar ou receber e-mails?
 
-Na maioria dos casos, a impossibilidade de enviar ou receber e-mails está relacionada com a configuração do seu endereço no webmail. Para o verificar, aceda ao [webmail](/links/email) e faça um teste de envio e receção a partir do seu endereço.
+Na maioria dos casos, a impossibilidade de enviar ou receber e-mails está relacionada com a configuração do seu endereço no webmail. Para o verificar, aceda ao [webmail](/links/web/email) e faça um teste de envio e receção a partir do seu endereço.
 
 - Se tudo funcionar normalmente, é porque o fenómeno tem mesmo origem na configuração do seu endereço.
 - No entanto, se continuar a experimentar problemas no envio e na receção de e-mails, tem outras soluções ao seu dispor.
@@ -24,9 +24,9 @@ Se os registos MX forem diferentes, é porque é possível que tenha um serviço
 Pode configurar a sua conta de e-mail em programas como o Outlook, o Thunderbird, o Mail (em Mac)...
 Disponibilizamos guias que o ajudarão nesse processo. Aceda a eles [aqui](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
-Graças ao [webmail](/links/email), pode aceder a qualquer momento à sua caixa de e-mails, a partir de qualquer aparelho conectado. Depois de criar a sua conta de e-mail, aceda a ela a partir deste endereço.
+Graças ao [webmail](/links/web/email), pode aceder a qualquer momento à sua caixa de e-mails, a partir de qualquer aparelho conectado. Depois de criar a sua conta de e-mail, aceda a ela a partir deste endereço.
 
-**Truques e dicas**: Se configurar a sua conta de e-mail num programa de correio eletrónico, sugerimos que o faça com o protocolo IMAP. Assim, os e-mails ficarão armazenados no servidor e poderá consultá-los onde quer que esteja, a partir do [webmail](/links/email). Para isso, pode recorrer à nossa [documentação](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+**Truques e dicas**: Se configurar a sua conta de e-mail num programa de correio eletrónico, sugerimos que o faça com o protocolo IMAP. Assim, os e-mails ficarão armazenados no servidor e poderá consultá-los onde quer que esteja, a partir do [webmail](/links/web/email). Para isso, pode recorrer à nossa [documentação](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ### Como gerir os serviços de e-mail?
 
@@ -64,7 +64,7 @@ A **palavra-passe** deve respeitar as seguintes regras:
 De modo a limitar a receção de spam, pode aplicar regras aos seus e-mails (chamadas «Filtros» no serviço MX Plan). Elas terão por objetivo eliminar ou transferir e-mails para a pasta «Mensagens indesejadas» aquando da receção.
 Para isso, aceda à [Área de Cliente](/links/manager). Depois, na rubrica `E-mail`, selecione o domínio em causa. Clique no separador `E-mail`{.action} e, na coluna `Filtro`{.action}, clique no botão de ação.
 
-Se não visualiza a coluna `Filtro`{.action}, a criação de filtros deverá ser feita através de regras de gestão da caixa de entrada no [webmail](/links/email). Para mais informações, consulte este guia: [Criar regras inbox no OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
+Se não visualiza a coluna `Filtro`{.action}, a criação de filtros deverá ser feita através de regras de gestão da caixa de entrada no [webmail](/links/web/email). Para mais informações, consulte este guia: [Criar regras inbox no OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
 
 **Truques e dicas**: Se definir um filtro quanto à receção de spam, é possível que alguns e-mails legítimos sejam considerados indesejados. São os chamados «falsos positivos». Se isso lhe acontecer, sugerimos que faça um pedido de assistência a partir da [Área de Cliente OVHcloud](/links/manager). Assim, faremos o necessário para que essas mensagens deixem de ser consideradas spam.
 
@@ -76,8 +76,8 @@ Se subscreveu [um dos nossos serviços de e-mail OVHcloud](/links/web/emails) e 
 
 Deseja mudar [de oferta de e-mail](/links/web/emails) para beneficiar de mais espaço e de funcionalidades, mas deseja conservar o conteúdo do seu endereço existente. Para isso, consulte um dos nossos manuais:
 
-- [Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrating_control_panel)
-- [Migrar os seus endereços de e-mail de uma plataforma de e-mail OVHcloud para outra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrating_control_panel)
+- [Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+- [Migrar os seus endereços de e-mail de uma plataforma de e-mail OVHcloud para outra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [Migrar manualmente o seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
 - [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 - [Migrar uma conta Gmail para uma conta de e-mail OVHcloud através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
@@ -92,4 +92,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com nossa [comunidade de utilizadores](/https://community.ovh.com/en/).

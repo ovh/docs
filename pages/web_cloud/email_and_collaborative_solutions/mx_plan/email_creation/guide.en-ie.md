@@ -65,7 +65,7 @@ Repeat this step as necessary according to the number of accounts to create.
 
 #### View emails
 
-On the [Webmail login page](/links/email), enter your email address and password. Then click the `Login`{.action} button.
+On the [Webmail login page](/links/web/email), enter your email address and password. Then click the `Login`{.action} button.
 
 When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via Outlook Web App (OWA) webmail, use our guide ["Using the Outlook Web App with an email account"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -116,7 +116,7 @@ Repeat this step as necessary according to the number of accounts to create.
 
 #### View emails 
 
-On the [Webmail login page](/links/email), enter your email address and password. Then click the `Login`{.action} button.
+On the [Webmail login page](/links/web/email), enter your email address and password. Then click the `Login`{.action} button.
 
 Your inbox will then appear. You can find more information in our guide on [Using your email account via the RoundCube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 

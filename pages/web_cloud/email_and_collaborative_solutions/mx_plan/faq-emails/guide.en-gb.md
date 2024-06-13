@@ -7,7 +7,7 @@ updated: 2024-06-13
 
 ### What do I do if I can't send or receive emails?
 
-Most of the time, a failure in sending/receiving emails is related to the configuration of your address in your email client. To verify, test it by connecting to [webmail](/links/email), and try sending and receiving a test email with this account.
+Most of the time, a failure in sending/receiving emails is related to the configuration of your address in your email client. To verify, test it by connecting to [webmail](/links/web/email), and try sending and receiving a test email with this account.
 
 - If this works fine, the failure is indeed due to your email client configuration. 
 - If, however, you still cannot send or receive an email, there are other solutions you can try. 
@@ -22,9 +22,9 @@ You can also check that your domain name is delivering emails to the right place
 
 You can configure your email account to use an email client like Outlook, Thunderbird, Mac Mail, etc. To do this, we have created guides to help you set up your email address. You can find them on [this page](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
-With [webmail](/links/email), you can access your inbox at any time from any connected device. Once you have created your email account, you can log in here to access it.
+With [webmail](/links/web/email), you can access your inbox at any time from any connected device. Once you have created your email account, you can log in here to access it.
 
-**Tips and tricks**: If you configure your email account in an email software client, we advise configuring it with the IMAP protocol. This way, emails will stay stored on the server, and you can read them from any device via [webmail](/links/email). To do this, you can use the following documentation: [Getting started with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+**Tips and tricks**: If you configure your email account in an email software client, we advise configuring it with the IMAP protocol. This way, emails will stay stored on the server, and you can read them from any device via [webmail](/links/web/email). To do this, you can use the following documentation: [Getting started with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ### How do I manage my email services?
 
@@ -61,7 +61,7 @@ The **password** must respect the following rules:
 
 To limit the amount of spam emails you receive, you can set up inbox rules on your account (called "Filters" in the old MX Plan solution). Their purpose is to move emails to the spam folder ot delete them as soon as they are received. To do this, log in to the [OVHcloud Control Panel](/links/manager), then in the `Emails` section, select the domain concerned. Next, go to the `Emails`{.action} tab and click on the filter symbol in the "Filter" column.
 
-If you don't see this column, spam filters can only be created by setting up inbox rules on your email account via [webmail](/links/email). Please refer to [this guide](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) for detailed instructions.
+If you don't see this column, spam filters can only be created by setting up inbox rules on your email account via [webmail](/links/web/email). Please refer to [this guide](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) for detailed instructions.
 
 **Tips and tricks**: If you set up a spam filter, legitimate emails may be marked as spam. These are called "false positives". If this happens, please submit a support ticket via the [OVHcloud Control Panel](/links/manager) and let us know. We can then take the necessary steps to ensure that they are no longer labelled as spam in the future.
 
@@ -89,4 +89,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our [community of users](/links/community).
+Join our [community of users](/https://community.ovh.com/en/).
