@@ -1,6 +1,6 @@
 ---
 title: FAQ e-mails OVHcloud
-updated: 2024-06-11
+updated: 2024-06-13
 ---
 
 ## FAQ: e-mails
@@ -9,7 +9,7 @@ updated: 2024-06-11
 
 Na maioria dos casos, a impossibilidade de enviar ou receber e-mails está relacionada com a configuração do seu endereço no webmail. Para o verificar, aceda ao [webmail](/links/email) e faça um teste de envio e receção a partir do seu endereço.
 
-- Se tudo funcionar normalmente, é porque o fenómeno tem mesmo origem na configuração do seu endereço. 
+- Se tudo funcionar normalmente, é porque o fenómeno tem mesmo origem na configuração do seu endereço.
 - No entanto, se continuar a experimentar problemas no envio e na receção de e-mails, tem outras soluções ao seu dispor.
 
 Recebe uma mensagem de erro no seguimento do envio de um e-mail? Se sim, leia toda a mensagem de erro, pois ela poderá especificar a razão (caixa cheia, caixa não existente...).
@@ -70,11 +70,11 @@ Se não visualiza a coluna `Filtro`{.action}, a criação de filtros deverá ser
 
 ### O meu endereço de e-mail está cheio, já não tenho espaço. O que posso fazer?
 
-Se subscreveu [um dos nossos serviços de e-mail OVHcloud](https://www.ovhcloud.com/pt/emails/) e uma das suas contas de e-mail está saturada, consulte o nosso guia « [Gerir o espaço de armazenamento de uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Este guia ajuda-o a determinar se pode otimizar o espaço existente ou se é necessário mudar de oferta de e-mail para aumentar a capacidade de armazenamento.
+Se subscreveu [um dos nossos serviços de e-mail OVHcloud](/links/web/emails) e uma das suas contas de e-mail está saturada, consulte o nosso guia « [Gerir o espaço de armazenamento de uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Este guia ajuda-o a determinar se pode otimizar o espaço existente ou se é necessário mudar de oferta de e-mail para aumentar a capacidade de armazenamento.
 
 ### Desejo mudar de oferta de e-mail para o meu endereço, como posso fazê-lo mantendo o conteúdo?
 
-Deseja mudar [de oferta de e-mail](https://www.ovhcloud.com/pt/emails/) para beneficiar de mais espaço e de funcionalidades, mas deseja conservar o conteúdo do seu endereço existente. Para isso, consulte um dos nossos manuais:
+Deseja mudar [de oferta de e-mail](/links/web/emails) para beneficiar de mais espaço e de funcionalidades, mas deseja conservar o conteúdo do seu endereço existente. Para isso, consulte um dos nossos manuais:
 
 - [Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrating_control_panel)
 - [Migrar os seus endereços de e-mail de uma plataforma de e-mail OVHcloud para outra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrating_control_panel)
@@ -86,6 +86,10 @@ Deseja mudar [de oferta de e-mail](https://www.ovhcloud.com/pt/emails/) para ben
 
 O serviço Office 365 Pro Plus não contém uma licença Skype. Só está incluído o programa Skype for Business.
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+
+Fale com nossa [comunidade de utilizadores](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: FAQ e-mails OVHcloud
 excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails OVHcloud'
-updated: 2024-06-11
+updated: 2024-06-13
 ---
 
 ## FAQ e-mails
@@ -10,7 +10,7 @@ updated: 2024-06-11
 
 La plupart du temps, une émission/réception d'e-mails impossible est liée à la configuration de votre adresse sur votre logiciel de messagerie. Pour le vérifier, testez-le en vous connectant sur le [webmail](/links/email) et réalisez un test d'envoi et de réception à partir de votre adresse.
 
-* Si cela fonctionne normalement, c'est que le phénomène provient bien de votre configuration logicielle. 
+* Si cela fonctionne normalement, c'est que le phénomène provient bien de votre configuration logicielle.
 * À l'inverse si l'émission ou réception reste impossible, d'autres solutions s'offrent à vous.
 
 Suite à l'envoi d'un e-mail sur votre compte mail, recevez-vous un message d'erreur ? Si oui, repérez le message d'erreur, il pourra vous en préciser la raison (boite pleine, boite non existante ...).
@@ -82,6 +82,10 @@ Vous souhaitez changer [d'offre e-mail](https://www.ovhcloud.com/fr/emails/) pou
 
 L’offre Office 365 Pro Plus ne contient pas de licence Skype. Seul le logiciel Skype for Business y est inclus.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

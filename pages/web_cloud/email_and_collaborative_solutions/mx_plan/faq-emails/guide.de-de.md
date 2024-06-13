@@ -1,11 +1,11 @@
 ---
 title: FAQ OVHcloud E-Mails
-updated: 2024-06-11
+updated: 2024-06-13
 ---
 
 ## E-Mails FAQ
 
-### Was tun, wenn ich keine E-Mails versenden/empfangen kann? 
+### Was tun, wenn ich keine E-Mails versenden/empfangen kann?
 
 Ist der Versand/Empfang von E-Mails nicht möglich, hängt das meistens mit der Konfiguration Ihrer Adresse auf Ihrem E-Mail-Client zusammen. Um dies zu überprüfen, loggen Sie sich in Ihrem [Webmail](/links/email) ein und führen Sie einen Versand- bzw. Empfangstest für Ihre Adresse durch.
 
@@ -19,7 +19,7 @@ Wenn die MX-Einträge abweichen, verwenden Sie möglicherweise ein E-Mail-Angebo
 
 **Tipps und Tricks**: Wenn Sie sich nicht in Ihrem Webmail einloggen können, ist Ihr Passwort möglicherweise fehlerhaft. Überprüfen Sie Ihr Passwort, ändern Sie es bei Bedarf über Ihr [OVHcloud Kundencenter](/links/manager) und versuchen Sie erneut, sich einzuloggen. Weitere Informationen zur Passwortänderungen finden Sie in [unserer Dokumentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password).
 
-### Wie kann ich meine E-Mail-Adresse einrichten und mit dem Webmail verwenden? 
+### Wie kann ich meine E-Mail-Adresse einrichten und mit dem Webmail verwenden?
 
 Sie können Ihre E-Mail-Adresse auf einem E-Mail-Client wie Outlook, Thunderbird, Mac Mail etc. einrichten.
 Hierzu stellen wir Ihnen Anleitungen zur Einrichtung Ihrer E-Mail-Adresse zur Verfügung. Diese finden Sie [hier](/products/web-cloud-email-collaborative-solutions-mx-plan).
@@ -28,7 +28,7 @@ Dank [Webmail](/links/email) können Sie jederzeit und von jedem beliebigen Ger�
 
 **Tipps und Tricks**: Wenn Sie Ihren E-Mail-Account auf einem E-Mail-Client einrichten, empfehlen wir Ihnen, hierzu das IMAP-Protokoll zu verwenden. So werden die E-Mails weiterhin auf dem Server gespeichert und Sie können sie von überall aus über das [Webmail](/links/email) einsehen. Weitere Informationen hierzu finden Sie in [unserer Dokumentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
-### Wie kann ich meine E-Mail-Dienste verwalten? 
+### Wie kann ich meine E-Mail-Dienste verwalten?
 
 Alle Ihre E-Mail-Adressen werden über Ihr [OVHcloud Kundencenter](/links/manager) verwaltet. Gehen Sie hierzu nach dem Login zum betreffenden Produkt. So können Sie das Passwort Ihrer E-Mail-Adressen ändern, ihren Speicherplatz überprüfen, neue E-Mail-Adressen erstellen oder vorhandene Adressen löschen.
 
@@ -59,7 +59,7 @@ Das **Passwort** muss folgende Bedingungen erfüllen:
 > [!warning]
 > Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
 
-### Wie kann ich die Anzahl der empfangenen Spam-Mails reduzieren? 
+### Wie kann ich die Anzahl der empfangenen Spam-Mails reduzieren?
 
 Um den Empfang von Spam-Mails einzuschränken, können Sie Eingangsregeln für Ihre E-Mails einrichten (bei MX Plan als „Filter“ bezeichnet). Ihr Ziel ist es, E-Mails bei Empfang in den Spam-Ordner zu verschieben oder direkt zu löschen.
 Loggen Sie sich hierzu in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `E-Mail` und wählen Sie die betreffende Domain aus. Gehen Sie anschließend in den Tab `E-Mail`{.action}, dann in die Spalte `Filter`{.action} und klicken Sie auf den Aktionsbutton.
@@ -70,11 +70,11 @@ Wird in Ihrem Kundencenter keine `Filter`{.action}-Spalte angezeigt, müssen zun
 
 ### Mein E-Mail-Accounts ist voll, ich habe keinen Speicherplatz mehr. Was kann ich tun?
 
-Wenn Sie [eines der E-Mail-Angebote von OVHcloud](https://www.ovhcloud.com/de/emails/) abonniert haben und einer Ihrer E-Mail-Accounts voll ist, lesen Sie unsere Anleitung „[Speicherplatz eines E-Mail-Accounts verwalten](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)“. In dieser Anleitung erfahren Sie, ob Sie den vorhandenen Speicherplatz optimieren können oder ob Sie das E-Mail-Angebot wechseln müssen, um die Speicherkapazität zu erhöhen.
+Wenn Sie [eines der E-Mail-Angebote von OVHcloud](/links/web/emails) abonniert haben und einer Ihrer E-Mail-Accounts voll ist, lesen Sie unsere Anleitung „[Speicherplatz eines E-Mail-Accounts verwalten](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)“. In dieser Anleitung erfahren Sie, ob Sie den vorhandenen Speicherplatz optimieren können oder ob Sie das E-Mail-Angebot wechseln müssen, um die Speicherkapazität zu erhöhen.
 
 ### Ich möchte das E-Mail-Angebot meiner E-Mail-Adresse ändern. Wie kann ich dies tun und den Inhalt beibehalte?
 
-Sie möchten zu einem anderen [E-Mail-Angebot](https://www.ovhcloud.com/de/emails/) wechseln, um mehr Speicherplatz und Funktionen nutzen zu können, möchten aber den Inhalt Ihres bestehenden Accounts beibehalten. Folgen Sie hierzu der passenden Migrationsanleitung:
+Sie möchten zu einem anderen [E-Mail-Angebot](/links/web/emails) wechseln, um mehr Speicherplatz und Funktionen nutzen zu können, möchten aber den Inhalt Ihres bestehenden Accounts beibehalten. Folgen Sie hierzu der passenden Migrationsanleitung:
 
 - [MX Plan E-Mail-Account auf E-Mail Pro oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [E-Mail-Accounts von einer OVHcloud-E-Mail-Plattform auf eine andere migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
@@ -82,10 +82,14 @@ Sie möchten zu einem anderen [E-Mail-Angebot](https://www.ovhcloud.com/de/email
 - [E-Mail-Accounts über OVH Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 - [Einen Google Mail-Account über den OVH Mail Migrator auf einen OVHcloud-E-Mail-Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
 
-### Beinhaltet das Office 365 Pro Plus Angebot eine Skype-Lizenz? 
+### Beinhaltet das Office 365 Pro Plus Angebot eine Skype-Lizenz?
 
-Das Office 365 Pro Plus Angebot beinhaltet keine Skype-Lizenz. Nur die Skype for Business Software ist inklusive. 
+Das Office 365 Pro Plus Angebot beinhaltet keine Skype-Lizenz. Nur die Skype for Business Software ist inklusive.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+
+Treten Sie unserer [User Community](/links/community) bei.

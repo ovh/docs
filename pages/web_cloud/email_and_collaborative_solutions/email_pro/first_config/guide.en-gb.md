@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your Email Pro solution'
 excerpt: 'Find out how to configure your Email Pro solution'
-updated: 2024-06-11
+updated: 2024-06-13
 ---
 
 ## Objective
@@ -12,16 +12,16 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 
 ## Requirements
 
-- An [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) solution
+- An [Email Pro](/links/web/email-pro) solution
 - An email confirming that your Email Pro solution has been set up
 - A domain name
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Step 1: Log in to your service’s interface
 
-Once the Email Pro service has been created and is available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+Once the Email Pro service has been created and is available, you can manage it from the [OVHcloud Control Panel](/links/manager).
 
 To do this, log in, then click on `Email Pro`{.action} and select the appropriate service.
 
@@ -92,7 +92,7 @@ Once you have added the domain name as an associated domain, check its configura
 
 You can use the `Diagnosis`{.action} column to check the domain name’s DNS configuration. A red box will appear if these configurations need to be changed. There are two possibilities:
 
-- **Automatic configuration when you add an OVHcloud domain name**: If you have just made the change, it may take a few hours before it is displayed in [the OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- **Automatic configuration when you add an OVHcloud domain name**: If you have just made the change, it may take a few hours before it is displayed in [the OVHcloud Control Panel](/links/manager){.external}.
 
 - **Manual configuration for a non-OVHcloud domain name**: Click on the red box to view the changes you will need to make.
     - *For a CNAME* record, you can use our guide on "[Creating a CNAME record when adding an associated domain](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)".
@@ -146,7 +146,7 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 ### Step 5: Use your email addresses
 
-Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an web application, available [here](https://www.ovhcloud.com/en-gb/mail/). You will need to enter your email address and password to log in.
+Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an web application, available [here](/links/web/email). You will need to enter your email address and password to log in.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](/products/web-cloud-email-collaborative-solutions-email-pro). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
@@ -159,7 +159,7 @@ If you would like to configure your email address on an email client or device (
 >
 > In our guides, we use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Email Pro`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Email Pro`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 ## Go further
@@ -176,4 +176,8 @@ If you would like to configure your email address on an email client or device (
 
 [Managing the security policy of an email service](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/security-policy)
 
-Join our community of users on <https://community.ovh.com/en/>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+
+Join our [community of users](/links/community).

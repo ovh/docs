@@ -1,11 +1,11 @@
 ---
 title: FAQ soluciones de correo electrónico de OVHcloud
-updated: 2024-06-11
+updated: 2024-06-13
 ---
 
 ## FAQ
 
-### ¿Qué hacer si no puedo enviar o recibir mensajes de correo electrónico? 
+### ¿Qué hacer si no puedo enviar o recibir mensajes de correo electrónico?
 
 A menudo, cuando no es posible enviar o recibir un mensaje de correo electrónico, suele deberse a la configuración de la dirección en su cliente de correo. Para comprobarlo, conéctese al [webmail](/links/email) y realice una prueba de envío y recepción desde su dirección.
 
@@ -65,11 +65,11 @@ Si no ve esta columna, se pueden crear filtros de correo basura configurando reg
 
 ### Mi dirección de correo electrónico está llena, no tengo espacio. ¿Qué puedo hacer?
 
-Si ha contratado [una de nuestras soluciones de correo de OVHcloud](https://www.ovhcloud.com/es/emails/) y tiene una cuenta de correo llena, consulte nuestra guía «[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
+Si ha contratado [una de nuestras soluciones de correo de OVHcloud](/links/web/emails) y tiene una cuenta de correo llena, consulte nuestra guía «[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
 
 ### Quiero cambiar de plan de correo para mi dirección, ¿cómo puedo hacerlo conservando su contenido?
 
-Si quiere cambiar [de plan de correo](https://www.ovhcloud.com/es/emails/) para disfrutar de más espacio y funcionalidades, pero quiere conservar el contenido de su dirección existente. Para ello, siga una de nuestras guías de migración:
+Si quiere cambiar [de plan de correo](/links/web/emails) para disfrutar de más espacio y funcionalidades, pero quiere conservar el contenido de su dirección existente. Para ello, siga una de nuestras guías de migración:
 
 - [Migrar una dirección de correo MX Plan a una cuenta Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [Migrar las direcciones de correo electrónico de una plataforma de correo de OVHcloud a otra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
@@ -81,6 +81,10 @@ Si quiere cambiar [de plan de correo](https://www.ovhcloud.com/es/emails/) para 
 
 La solución Office 365 Pro Plus no incluye licencia Skype. Solo se incluye Skype for Business.
 
-## Más información
+## Más información <a name="go-further"></a>
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/)
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+
+Interactúe con nuestra [comunidad de usuarios](/links/community).

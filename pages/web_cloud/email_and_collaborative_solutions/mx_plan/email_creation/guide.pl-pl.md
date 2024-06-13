@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie konta e-mail w ramach usługi MX Plan'
 excerpt: 'Dowiedz się, jak utworzyć konto e-mail w ramach pakietu MX Plan'
-updated: 2024-06-11
+updated: 2024-06-13
 ---
 
 > [!primary]

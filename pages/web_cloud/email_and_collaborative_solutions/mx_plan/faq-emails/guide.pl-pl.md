@@ -1,6 +1,6 @@
 ---
 title: FAQ e-mail OVHcloud
-updated: 2024-06-11
+updated: 2024-06-13
 ---
 
 ## Najczęściej zadawane pytania dotyczące kont e-mail
@@ -70,11 +70,11 @@ Jeśli w Panelu klienta nie widzisz kolumny `Filtrowanie`{.action}, wówczas two
 
 ### Mój adres e-mail jest zajęty. Nie mam już miejsca. Co mogę zrobić?
 
-Jeśli zamówiłeś [jedną z naszych ofert e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) i jedno z Twoich kont e-mail jest zapełnione, zapoznaj się z naszym przewodnikiem "[Zarządzanie przestrzenią dyskową konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Przewodnik ten pomoże Ci określić, czy możesz zoptymalizować istniejącą przestrzeń lub czy konieczna jest zmiana oferty e-mail w celu zwiększenia przestrzeni dyskowej.
+Jeśli zamówiłeś [jedną z naszych ofert e-mail OVHcloud](/links/web/emails) i jedno z Twoich kont e-mail jest zapełnione, zapoznaj się z naszym przewodnikiem "[Zarządzanie przestrzenią dyskową konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Przewodnik ten pomoże Ci określić, czy możesz zoptymalizować istniejącą przestrzeń lub czy konieczna jest zmiana oferty e-mail w celu zwiększenia przestrzeni dyskowej.
 
 ### Chcę zmienić ofertę e-mail na mój adres. Jak mogę to zrobić zachowując jej zawartość?
 
-Chcesz zmienić [ofertę e-mail](https://www.ovhcloud.com/pl/emails/) na większą przestrzeń i więcej funkcji, ale chcesz zachować zawartość swojego istniejącego adresu. W tym celu skorzystaj z jednego z naszych przewodników:
+Chcesz zmienić [ofertę e-mail](/links/web/emails) na większą przestrzeń i więcej funkcji, ale chcesz zachować zawartość swojego istniejącego adresu. W tym celu skorzystaj z jednego z naszych przewodników:
 
 - [Przeniesienie adresu e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [Przenoszenie adresów e-mail z jednej platformy e-mail OVHcloud na inną](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
@@ -86,6 +86,10 @@ Chcesz zmienić [ofertę e-mail](https://www.ovhcloud.com/pl/emails/) na większ
 
 Oferta Office 365 Pro Plus nie zawiera licencji Skype. W ofercie zawarty jest jedynie program Skype for Business.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+
+Dołącz do [grona naszych użytkowników](/links/community).
