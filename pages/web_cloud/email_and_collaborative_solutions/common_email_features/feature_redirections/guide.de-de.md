@@ -16,7 +16,7 @@ updated: 2024-06-10
 
 ## Ziel
 
-In dieser Anleitung finden Sie verschiedene Informationen und Hilfen zur Konfiguration Ihrer **Weiterleitungen** und **Alias** E-Mails, um zum Beispiel an eine E-Mail-Adresse A empfangene E-Mails an eine Adresse B zu senden.
+In dieser Anleitung finden Sie Informationen und Instruktionen zur Konfiguration von **Weiterleitungen** und **Aliasen** für Ihre E-Mail-Lösung, zum Beispiel um auf einem Account A empfangene E-Mails an eine Adresse B weiterzuleiten.
 
 ![emails](images/schema-redirect00.png){.thumbnail}
 
@@ -24,32 +24,32 @@ In dieser Anleitung finden Sie verschiedene Informationen und Hilfen zur Konfigu
 
 ### Was ist eine E-Mail-Weiterleitung?
 
-Klicken Sie auf die folgenden Registerkarten, um die Funktionsweise von Aliasnamen und Weiterleitungen zu erläutern.
+Klicken Sie auf die Tabs, um die Funktionsweise von Aliasnamen und Weiterleitungen anzuzeigen.
 
-- `From` die Absenderadresse
-- `To` ist die Adresse des Empfängers
-- `Redirect to` ist die konfigurierte E-Mail-Adresse für die Weiterleitung.
+- `From` ist die Absenderadresse.
+- `To` ist die Adresse des Empfängers.
+- `Redirect to` ist die Ziel-E-Mail-Adresse der Weiterleitung.
 
 > [!tabs]
 > **1. Einfache Weiterleitung**
 >>
->> Die E-Mail wird direkt an die Weiterleitungsadresse weitergeleitet, der ursprüngliche Empfänger erhält die E-Mail nicht.<br><br>
+>> Die E-Mail wird direkt an die Weiterleitungsadresse gesendet, der ursprüngliche Empfänger-Account erhält die E-Mail nicht.<br><br>
 >>![E-Mails](images/schema-redirect01.png){.thumbnail}
 >>
 > **2. Weiterleitung mit lokaler Kopie**
 >>
->> Die E-Mail wird an den ursprünglichen Empfänger sowie an die Weiterleitungsadresse versandt.<br><br>
+>> Sowohl der ursprüngliche Empfänger als auch der Ziel-Account der Weiterleitung erhalten die E-Mail.<br><br>
 >> ![emails](images/schema-redirect02.png){.thumbnail}
 >>
-> **3. Der E-Mail-Alias**
+> **3. E-Mail Alias**
 >>
->> Die E-Mail wird an den Alias adressiert, der sie an den Empfänger weiterleitet, auf dem der Alias eingerichtet wurde. Die Angabe `Received by` bezieht sich auf die E-Mail-Adresse, die die E-Mail erhält.<br><br>
+>> Die E-Mail wird an die Alias-Adresse gesendet und von dem E-Mail-Account empfangen, für den der Alias konfiguriert wurde. Die Angabe `Received by` ist der Account, der die E-Mail empfängt.<br><br>
 >> ![emails](images/schema-redirect03.png){.thumbnail}
 >>
 
 > [!primary]
 >
-> Es ist möglich, eine Weiterleitung auf mehrere E-Mail-Adressen einzurichten. Dies setzt jedoch voraus, dass die Weiterleitungen einzeln zu den einzelnen Empfängern erstellt werden.
+> Es ist möglich, eine Weiterleitung auf mehrere E-Mail-Adressen einzurichten. Dazu müssen die Weiterleitungen zu jedem Empfängern einzeln erstellt werden.
 
 ## Voraussetzungen
 
@@ -81,7 +81,7 @@ Klicken Sie auf die folgenden Registerkarten, um die Funktionsweise von Aliasnam
 
 Die Verwaltung von Weiterleitungen erfolgt nicht im Kundencenter, sondern über Webmail, nachdem Sie sich in den betreffenden E-Mail-Account eingeloggt haben.
 
-Gehen Sie auf [webmail](/links/email) . Geben Sie **E-Mail-Adresse** und **Passwort** ein, um sich anzumelden.
+Öffnen Sie [Webmail](/links/email). Geben Sie **E-Mail-Adresse** und **Passwort** ein, um sich einzuloggen.
 
 ![E-Mails](images/webmail.png){.thumbnail}
 
@@ -92,7 +92,7 @@ Folgen Sie den Anleitungsschritten, indem Sie nacheinander die Tabs aufrufen:
 > [!tabs]
 > **Schritt 1**
 >>
->> Wenn Sie sich im [Webmail](/links/email) Ihres E-Mail-Accounts eingeloggt haben, klicken Sie oben rechts auf das Zahnrad und dann auf `Optionen`{.action}<br><br>
+>> Wenn Sie sich im [Webmail](/links/email) Ihres E-Mail-Accounts eingeloggt haben, klicken Sie oben rechts auf das Zahnrad und dann auf `Optionen`{.action}.<br><br>
 >> ![{.thumbnail}](images/emails-all-01.png) E-Mails<br>
 >>
 > **Schritt 2**
@@ -135,17 +135,17 @@ Folgen Sie den Anweisungen, indem Sie nacheinander auf die einzelnen Registerkar
 > [!tabs]
 > **Schritt 1**
 >>
->> Nachdem Sie sich über das [Webmail](/links/email) mit Ihrer E-Mail-Adresse verbunden haben, klicken Sie oben rechts auf das Zahnrad und dann auf `Optionen`{.action}.<br><br>
+>> Wenn Sie sich im [Webmail](/links/email) Ihres E-Mail-Accounts eingeloggt haben, klicken Sie oben rechts auf das Zahnrad und dann auf `Optionen`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Schritt 2**
->> Gehen Sie im Fenster **Optionen** in der linken Spalte in die Kategorie **Automatische Verarbeitung** im Abschnitt **Post** und klicken Sie dann auf `Posteingangs- und Aufbewahrungsregeln`{.action}. <br><br>
+>> In den **Optionen** der linken Navigationsstruktur finden Sie den Bereich **Automatische Verarbeitung**. Klicken Sie hier auf `Posteingangs- und Aufräumregeln`{.action}. <br><br>
 >> ![emails](images/OWA-redirect-del-01.png){.thumbnail}<br><br>
->> Hier finden Sie ein Fenster, in dem Sie Ihre Weiterleitungen und Filter verwalten können.<br>
+>> Dieser Abschnitt enthält die Optionen zum Verwalten der Weiterleitungen und Filter.<br>
 >>
 > **Schritt 3**
 >>
->> Klicken Sie im Verwaltungsfenster für die **Posteingangsregeln** auf die Weiterleitung, die Sie löschen möchten. Sie sollte hervorgehoben sein. Klicken Sie dann auf das Papierkorbsymbol<br><br>
+>> Klicken Sie im Verwaltungsfenster für **Posteingangsregeln** auf die zu löschende Weiterleitung, um sie zu markieren. Klicken Sie dann auf das Papierkorbsymbol.<br><br>
 >> ![emails](images/owa-redirect-del-02.png){.thumbnail}<br><br>
 >>
 
@@ -159,7 +159,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie
 
 - **E-Mails** (MX Plan): Öffnen Sie `E-Mails`{.action} und wählen Sie den Dienst aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}.
 
-Um einen Alias zu Ihrem E-Mail-Account hinzuzufügen, folgen Sie den Anleitungsschritten indem Sie nacheinander die Tabs aufrufen:
+Um einen Alias zu Ihrem E-Mail-Account hinzuzufügen, folgen Sie den Anleitungsschritten indem Sie nacheinander die Tabs öffnen:
 
 > [!tabs]
 > **Schritt 1**
@@ -191,7 +191,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](/links/manager) und gehen Sie
 
 > [!warning]
 >
-> - Die Methode zum Erstellen eines Alias oder zum Erstellen einer Weiterleitung ist genau dieselbe.
+> - Die Methode zur Erstellung eines Alias oder einer Weiterleitung ist dieselbe.
 > - Es können maximal 2000 Aliase und Weiterleitungen erstellt werden, einschließlich lokaler Kopien.
 >
 
@@ -226,15 +226,15 @@ Folgen Sie den Anleitungsschritten, indem Sie nacheinander die Tabs aufrufen:
 > Wenn Sie den Kopiermodus "**Eine Kopie der E-Mail bei OVHcloud aufbewahren**" wählen, wird automatisch eine Weiterleitung der E-Mail-Adresse auf sich selbst in der Liste der Weiterleitungen erstellt. Dies erzeugt die lokalen Kopien der E-Mails.
 > 
 
-### Eine Weiterleitung oder einen Alias für ein historisches MX Plan Angebot oder einen Domainnamen ohne E-Mail-Angebot löschen <a name=„del-mxplanlegacy“></a>
+### Eine Weiterleitung oder einen Alias für Legacy MX Plan oder einen Domainnamen ohne E-Mail-Dienst löschen <a name=„del-mxplanlegacy“></a>
 
-Klicken Sie im Tab `E-Mails`{.action} auf `Verwaltung der Weiterleitungen`{.action} rechts im Fenster.
+Klicken Sie im Tab `E-Mails`{.action} rechts auf `Verwaltung der Weiterleitungen`{.action}.
 
-Klicken Sie auf den Button `...`{.action} rechts neben der betreffenden Weiterleitung und dann auf `Weiterleitung löschen`{.action}
+Klicken Sie auf den Button `...`{.action} in der Zeile der Weiterleitung und dann auf `Weiterleitung löschen`{.action}.
 
 > [!warning]
 >
-> Weiterleitung oder Alias können nicht geändert werden. Sie müssen sie löschen und dann neu erstellen.
+> Weiterleitungen oder Aliase können nicht bearbeitet werden. Sie müssen sie löschen und dann neu erstellen.
 
 ![emails](images/email-del-legacy-redirect01.png){.thumbnail}
 
