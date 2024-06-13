@@ -36,6 +36,13 @@ Ouvrez l'e-mail et suivez les instructions pour installer Softcall.
 
 ### Configurer Softcall
 
+Si vous ne l'avez pas déjà fait, installez l'application Softcall sur la plateforme de votre choix :
+
+- [Softcall pour Android](https://play.google.com/store/apps/details?id=com.ovhcloud.softcall){.external}
+- [Softcall pour IOS](https://apps.apple.com/us/app/softcall/id6498718529){.external}
+- [Softcall pour Windows](https://download.softcall.app/download.php?file=softcall.exe){.external}
+- [Softcall pour MacOS](https://download.softcall.app/download.php?file=softcall.dmg){.external}
+
 Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous êtes dirigé vers l'écran `Assistant`{.action}.
 
 #### Application mobile (Android et IOS)
