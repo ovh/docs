@@ -15,25 +15,25 @@ Cependant, vous pouvez toujours vous connecter à votre instance via le mode res
 > [!warning]
 > OVHcloud fournit des services dont la configuration et la gestion relèvent de votre responsabilité. Il est donc de votre responsabilité de vous assurer de leur bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) ou de contacter [notre communauté](/links/community) si vous rencontrez des problèmes.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) ou de contacter [notre communauté d'utilisateurs](/links/community) si vous rencontrez des problèmes.
 >
 
 ## Prérequis
 
 - Une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Accès à l’[espace client OVHcloud](/links/manager)
+- Être connecté à l’[espace client OVHcloud](/links/manager)
 
 ## En pratique
 
 ### Étape 1 : créer une nouvelle paire de clés
 
-Créez une nouvelle paire de clés SSH sur votre appareil local, comme décrit dans la première partie du [SSH key guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Créez une nouvelle paire de clés SSH sur votre appareil local, en suivant les instructions de la première partie du [guide de création d'une clé SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 ### Étape 2 : accéder à votre instance en mode rescue
 
 Suivez les étapes du [guide du mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) pour redémarrer l'instance en mode rescue, vous y connecter et monter vos partitions.
 
-Une fois que vous avez utilisé la commande `mount` comme décrit dans le guide et que votre partition système est accessible, vous pouvez utiliser la commande suivante :
+Une fois que vous avez utilisé la commande `mount` (comme décrit dans le guide) et que votre partition système est accessible, vous pouvez utiliser la commande suivante :
 
 ```bash
 chroot path/to/partition/mountpoint
@@ -57,9 +57,9 @@ Exemple :
 nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Remplacez « USER_NAME » par votre nom d'utilisateur réel.
+Remplacez `USER_NAME` par votre nom d'utilisateur réel.
 
-Copiez et collez votre nouvelle clé publique (créée à l'étape 1) dans le fichier. Elle devrait ressembler à l'exemple suivant :
+Faites un copier-coller de votre nouvelle clé publique (créée à l'étape 1) dans le fichier. Elle devrait ressembler à l'exemple suivant :
 
 ```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
@@ -70,7 +70,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Pour des raisons de sécurité, supprimez la chaîne de clé obsolète « old » du fichier. Enregistrez vos modifications et quittez l'éditeur.
 
-Redémarrez l'instance en mode « normal » depuis votre [espace client OVHcloud](/links/manager). Reportez-vous au [guide du mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) si nécessaire.
+Redémarrez l'instance en mode « normal » depuis votre [espace client OVHcloud](/links/manager). Consultez les instructions du [guide sur le mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) si nécessaire.
 
 Vous avez maintenant accès à l'instance avec votre nouvelle paire de clés SSH.
 
