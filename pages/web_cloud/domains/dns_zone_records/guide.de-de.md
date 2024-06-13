@@ -170,7 +170,7 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 
 ### Anwendungsbeispiel: Verwendung von CNAME-Einträgen <a name="cnameusecase"></a>
 
-Manche Benutzer erstellen DNS-Zonen unmittelbar für die Subdomain einer Domain (Beispiel: *subdomain-mit-eigener-zone.domain.tld*). Die [oben erläuterte](#cname) Regel gilt auch für diesen Fall.
+Manche Benutzer erstellen DNS-Zonen unmittelbar für die Subdomain einer Domain (Beispiel: *subdomain-mit-eigener-zone.domain.tld*). In diesem Fall gilt auch die im Tab "CNAME" im Teil "[Zeitregistrierungen](#pointer-records)" angegebene Regel.
 
 Da die DNS-Zone für die Subdomain erstellt wurde (hier: *subdomain-mit-eigener-zone.domain.tld*), wird diese als eigenständige Domain in ihrer DNS-Zone betrachtet.
 
