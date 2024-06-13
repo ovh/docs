@@ -136,19 +136,21 @@ Après avoir validé le formulaire s'association de Git, dirigez-vous sur l'ongl
 
 Screenshot
 
-Une bannière rouge portant pour titre `Git n'a pas pu être activé`{.action} apparaît. Cela signifie qu'au moins une des erreurs suivantes est survenue :
+Dans le tableau, identifiez les lignes correspondant au répertoire que vous voulez associer à Git. Dans la colonne `Git`, une erreur `Initial error` apparaît. Cela signifie qu'au moins une des erreurs suivantes est survenue :
 
 - Le dépôt Git n'est pas vide.
 - L'adresse du dépôt Git n'existe pas ou est erronée.
 - La branche du dépôt Git n'existe pas ou son nom est erronée.
 
-Pour associer Git à nouveau, recommencez l'opération en cliquant sur `...`{.action} de la ligne correspondante, puis sur `Associer Git`{.action}.
+Pour connaître la cause exacte de l'erreur, consultez les informations du dernier déploiement. Dans le tableau, identifiez la ligne correspondant au domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur `...`{.action} puis sur `informations du dernier déploiement`{.action}.
+
+Une fois l'erreur identifiée, associez Git à nouveau. Recommencez l'opération en cliquant sur `...`{.action} de la ligne correspondante, puis sur `Associer Git`{.action}.
 
 ##### Erreurs liées à la clé SSH
 
 Après avoir validé le formulaire s'association de Git, dirigez-vous sur l'onglet `Multisite`{.action}. Une bannière verte vous indique que Git est en cours d'activation. Cela signifie qu'aucune erreur liée au dépôt Git n'a été détectée. Dans le tableau, identifiez les lignes correspondant au répertoire que vous voulez associer à Git. Pour chacune des lignes concernées, dans la colonne `Git`{.action}, la mention `OnGoing`{.action} indique que Git est en cours d'activation.
 
-Pendant le processus d'association de Git, si le système détecte une erreur liée à la clé SSH, alors le statut `Error`{.action} apparaît dans la colonne `Git`{.action} du tableau. Pour en savoir plus sur l'erreur, cliquez sur `...`{.action} de la ligne correspondante puis sur `Informations du dernier déploiement`{.action}.
+Pendant le processus d'association de Git, si le système détecte une erreur liée à la clé SSH, alors le statut `Initial error`{.action} apparaît dans la colonne `Git`{.action} du tableau. Pour en savoir plus sur l'erreur, cliquez sur `...`{.action} de la ligne correspondante puis sur `Informations du dernier déploiement`{.action}.
 
 Pour résoudre l'erreur liée à la clé SSH, dirigez-vous sur l'onglet `Multisite`{.action}, identifiez la ligne correspondant au répertoire que vous voulez associer à Git, cliquez sur `...`{.action} puis sélectionnez `Configurer Git`{.action}.
 
