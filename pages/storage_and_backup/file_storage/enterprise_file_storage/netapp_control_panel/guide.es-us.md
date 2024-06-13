@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Gestión desde el área de cliente de OVHcloud"
 excerpt: Cómo gestionar el servicio Enterprise File Storage desde el área de cliente de OVHcloud
-updated: 2022-04-14
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -16,7 +16,7 @@ Los servicios Enterprise File Storage pueden administrarse [a través de la API 
 
 ## Requisitos
 
-- Tener un servicio Enterprise File Storage en su cuenta de OVHcloud.
+- Tener un servicio Enterprise File Storage en su cuenta de OVHcloud. El servicio puede contratarse desde la [página del producto](https://www.ovhcloud.com/es/storage-solutions/enterprise-file-storage/) o desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/#/dedicated/netapp/new).
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento <a name="instructions"></a>
