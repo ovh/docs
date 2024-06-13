@@ -12,7 +12,7 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 
 ## Requirements
 
-- An MX Plan solution, available as part of our [Web Hosting plans](/links/web/hosting), the [100M free hosting](https://www.ovhcloud.com/en-sg/domains/free-web-hosting/) included with a domain name (activated in advance), or ordered separately as a standalone solution
+- An MX Plan solution, available as part of our [Web Hosting plans](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section
 
 > [!primary]
