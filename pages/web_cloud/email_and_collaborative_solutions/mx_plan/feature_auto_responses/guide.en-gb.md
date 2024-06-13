@@ -19,7 +19,7 @@ This OVHcloud feature allows you to set up an automatic email responder (auto-re
 
 > [!primary]
 >
-> If your email address is configured on [**Exchange**](/links/web/emails-hosted-exchange) or [**Email Pro**](/links/web/emails-email-pro), or if there is no `Manage auto-replies`{.action} section in your MX Plan interface, you will need to create an automatic reply from your webmail using the documentation on [Setting up an automatic reply from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
+> If your email address is configured on [**Exchange**](/links/web/emails-hosted-exchange) or [**Email Pro**](/links/web/email-pro), or if there is no `Manage auto-replies`{.action} section in your MX Plan interface, you will need to create an automatic reply from your webmail using the documentation on [Setting up an automatic reply from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
 
 ### Creating an auto-reply
 

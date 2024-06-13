@@ -19,7 +19,7 @@ Mit diesem OVHcloud Feature können Sie einen E-Mail-Responder einrichten, der a
 
 > [!primary]
 >
-> Wenn Ihre E-Mail-Adresse in [**Exchange**](/links/web/emails-hosted-exchange) oder [**Email Pro**](/links/web/emails-email-pro) eingerichtet ist oder der Bereich für Auto-Antworten `Verwaltung der Auto-Antworten`{.action} in Ihrem Kundencenter fehlt, können Sie automatische Antworten stattdessen über Ihr OWA-Webmail erstellen, indem Sie die Anleitung zum [Einrichten einer automatischen Antwort in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies) befolgen.
+> Wenn Ihre E-Mail-Adresse in [**Exchange**](/links/web/emails-hosted-exchange) oder [**Email Pro**](/links/web/email-pro) eingerichtet ist oder der Bereich für Auto-Antworten `Verwaltung der Auto-Antworten`{.action} in Ihrem Kundencenter fehlt, können Sie automatische Antworten stattdessen über Ihr OWA-Webmail erstellen, indem Sie die Anleitung zum [Einrichten einer automatischen Antwort in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies) befolgen.
 > 
 
 ### Automatische Antwort erstellen

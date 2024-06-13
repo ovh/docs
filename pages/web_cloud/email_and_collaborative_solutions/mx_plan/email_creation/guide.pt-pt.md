@@ -69,7 +69,7 @@ Repita este passo sempre que necessário, de acordo com o número de contas disp
 
 #### Consultar os e-mails
 
-Aceda à página “[Ligação ao webmail](/links/email)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página “[Ligação ao webmail](/links/web/email)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual "[Utilizar um endereço de e-mail a partir do Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
 
@@ -120,7 +120,7 @@ Repita este passo sempre que necessário, de acordo com o número de contas disp
 
 #### Consultar os e-mails 
 
-Aceda à página “[Ligação ao webmail](/links/email)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página “[Ligação ao webmail](/links/web/email)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual “[Guia de utilização do Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)”.
 

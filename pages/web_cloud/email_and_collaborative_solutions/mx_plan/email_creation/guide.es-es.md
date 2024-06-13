@@ -28,7 +28,7 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 
 ## Procedimiento <a name="instructions"></a>
 
-En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](/links/web/hostingmxplan-migration/), tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+En función de cuándo haya activado su MX Plan o de si el servicio ha sido migrado recientemente, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
 Para ello, conéctese al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 

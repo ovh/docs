@@ -69,7 +69,7 @@ Ripeti questa operazione per tutti gli account che vuoi creare, in base al numer
 
 #### Consultare le email
 
-Accedi alla [pagina di connessione](/links/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
+Accedi alla [pagina di connessione](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
 Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni sull'utilizzo della Webmail Outlook on the web (OWA), consulta la guida all'utilizzo di un indirizzo [email dalla Webmail Outlook on the web](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -120,7 +120,7 @@ Ripeti questa operazione per tutti gli account che vuoi creare, in base al numer
 
 #### Consultare le email 
 
-Accedi alla [pagina di connessione](/links/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
+Accedi alla [pagina di connessione](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
 Si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
