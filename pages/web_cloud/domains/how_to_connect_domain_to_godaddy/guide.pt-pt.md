@@ -1,7 +1,7 @@
 ---
-title: Como ligar um domínio OVHcloud a um alojamento Wix
-excerpt: Prepare e configure a zona DNS do seu domínio OVHcloud para a ligar a um alojamento Wix
-updated: 2024-04-17
+title: Como ligar um domínio OVHcloud a um alojamento GoDaddy
+excerpt: Prepare e configure a zona DNS do seu domínio OVHcloud para a ligar a um alojamento GoDaddy
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -10,13 +10,13 @@ updated: 2024-04-17
 
 ## Objetivo
 
-Se possui um nome de domínio na OVHcloud, deseja ligá-lo a um alojamento Wix. Neste guia, encontrará as etapas de preparação e de configuração da sua zona DNS da OVHcloud para permitir a configuração do seu alojamento Wix.
+Se possui um nome de domínio na OVHcloud, deseja ligá-lo a um alojamento GoDaddy. Neste guia, encontrará as etapas de preparação e de configuração da sua zona DNS da OVHcloud para permitir a configuração do seu alojamento GoDaddy.
 
-**Saiba como ligar o seu domínio OVHcloud a um alojamento Wix**
+**Saiba como ligar o seu domínio OVHcloud a um alojamento GoDaddy**
 
 > [!warning]
 >
-> - O suporte Wix não tem acesso aos parâmetros do seu nome de domínio OVHcloud e não pode, por isso, aconselhá-lo sobre as informações que deverá fornecer.
+> - O suporte GoDaddy não tem acesso aos parâmetros do seu nome de domínio OVHcloud e não pode, por isso, aconselhá-lo sobre as informações que deverá fornecer.
 >
 > - A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.<br><br> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção [Quer saber mais](#gofurther)? deste guia.
 >
@@ -26,8 +26,8 @@ Se possui um nome de domínio na OVHcloud, deseja ligá-lo a um alojamento Wix. 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 - Ter um [nome de domínio](/links/web/domains){.external} registado na OVHcloud.
 - Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager){.external}.
-- Ter um alojamento na Wix.
-- Ter acesso à gestão deste alojamento na Wix.
+- Ter um alojamento na GoDaddy.
+- Ter acesso à gestão deste alojamento na GoDaddy.
 
 ## Instruções
 
@@ -35,11 +35,11 @@ Antes de seguir as duas etapas deste manual, deve familiarizar-se com a configur
 
 > [!warning]
 >
-> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer a ligação com o seu alojamento Wix. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu domínio durante a configuração.
+> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer a ligação com o seu alojamento GoDaddy. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu domínio durante a configuração.
 
-### 1. Configurar o seu alojamento Wix
+### 1. Configurar o seu alojamento GoDaddy
 
-Quando utiliza um alojamento Wix com um nome de domínio OVHcloud, deve, em primeiro lugar, preparar o seu alojamento seguindo as instruções **do passo 1** a partir [**desta página da documentação Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882).
+Quando utiliza um alojamento GoDaddy com um nome de domínio OVHcloud, deve primeiro preparar o seu alojamento seguindo as instruções de [**esta página da documentação GoDaddy**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US).
 
 ### 2. Configurar os registos DNS na sua conta OVHcloud
 
@@ -48,8 +48,8 @@ Quando utiliza um alojamento Wix com um nome de domínio OVHcloud, deve, em prim
 > Antes de avançar: <br>
 >
 > - Abra um separador em paralelo no seu browser.
-> - Abrir [**esta página de documentação Wix**](https://support.wix.com/pt/article/connection-un-domaine-%C3%A0-wix-par-apontage-5727882){.external}.
-> - Posicione-se na parte "**Etapa 2 | Atualizar os registos DNS na conta do seu fornecedor de alojamento de domínio**" da documentação Wix.<br>
+> - Abrir [**esta página de documentação GoDaddy**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US){.external}.
+> - Siga as instruções até ao passo 10 e recupere as informações específicas ao seu website para poder modificar os seus registos DNS da OVHcloud.<br>
 > As instruções seguintes ajudá-lo-ão a configurar com maior facilidade a sua zona DNS da OVHcloud.
 
 Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
@@ -70,13 +70,15 @@ Siga as etapas em ordem nas seguintes guias:
 >> - Clique no botão `...`{.action} à direita da linha da tabela que corresponde ao seu nome de domínio apenas, sem um subdomínio (exemplo: `mydomain.ovh.`), e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se existir um registo para o subdomínio "www.» (exemplo: `www.mydomain.ovh.`), deverá eliminá-lo para que não entre em conflito com o registo CNAME que vai introduzir no passo 3. Clique no botão `...`{.action} à direita da linha correspondente ao seu domínio e ao subdomínio "www.» e clique em `Eliminar entrada`{.action}.<br>
 >> - Se não possui um registo "A" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `A`{.action}<br><br>
->> Deixe o campo **Subdomínio** vazio e introduza o endereço IPv4 *registado na sua interface Wix* no campo **Destino**.
+>> Deixe o campo **Subdomínio** vazio e introduza o endereço IPv4 *registado na sua interface GoDaddy* no campo **Destino**.
 >> Clique em `Seguinte`{.action}, valide o seu registo "A" e passe à etapa 2.
 > **Etapa 2**
 >> **Registo AAAA**<br><br>
->>  Para identificar os registos "AAAA", clique no menu Filtros na parte superior da tabela de registos DNS e selecione `AAAA`.<br>
+>> Para identificar os registos "AAAA", clique no menu Filtros na parte superior da tabela de registos DNS e selecione `AAAA`.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
->> - Se estiverem presentes registos "AAAA" para o nome de domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www.» (exemplo: `www.mydomain.ovh.`), deve eliminá-los para que não entrem em conflito com os registos "A" e "» CNAME que irá indicar no passo 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu domínio e ao subdomínio "www.» e clique em `Eliminar entrada`{.action}.<br>
+>> - Clique no botão `...`{.action} à direita da linha da tabela que corresponde ao seu nome de domínio apenas, sem subdomínio (exemplo: `mydomain.ovh.`), e depois clique em `Eliminar entrada`{.action}.<br>
+>> - Se estiver presente um registo para o subdomínio "www" (exemplo: `www.mydomain.ovh.`), elimine-o também para que não entre em conflito com o registo CNAME que vai introduzir no passo 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio com o subdomínio "www" e depois clique em `Eliminar entrada`{.action}.<br>
+>> - Se não tiver um registo "AAAA", prossiga para o passo 3.
 > **Etapa 3**
 >> **Registo TXT**<br><br>
 >>  Para identificar os registos "TXT" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `TXT`.<br>
@@ -88,10 +90,10 @@ Siga as etapas em ordem nas seguintes guias:
 >> ![dnszone](images/filter-cname.png){.thumbnail}<br>
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www.» (exemplo: `mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se não possui um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do seu ecrã e selecione o "Campo de apontamento" `CNAME`{.action}.
->> Preencha o campo **Subdomínio** com o valor `www` e introduza o valor medido a partir da sua interface Wix no campo **Alvo**.<br>
+>> Preencha o campo **Subdomínio** com o valor `www` e introduza o valor medido a partir da sua interface GoDaddy no campo **Alvo**.<br>
 >> Clique em `Seguinte`{.action} e valide o seu registo "CNAME".
 
-A zona DNS está configurada para fazer a ligação a um alojamento Wix.
+A zona DNS está configurada para fazer a ligação a um alojamento GoDaddy.
 
 > [!primary]
 >

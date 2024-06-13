@@ -4,6 +4,10 @@ excerpt: Prepare y configure la zona DNS de su dominio OVHcloud para conectarla 
 updated: 2024-04-17
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
 ## Objetivo
 
 Si tiene un dominio con OVHcloud y quiere conectarlo a un alojamiento Wix, Esta guía explica los pasos necesarios para preparar y configurar la zona DNS de OVHcloud con el fin de permitir la configuración de un alojamiento Wix.
@@ -41,7 +45,8 @@ Si utiliza un alojamiento Wix con un dominio de OVHcloud, deberá preparar su al
 
 > [!warning]
 >
-> Antes de continuar: <br>
+> Antes de continuar:
+>
 > - Abra una pestaña en paralelo en su navegador de internet.
 > - Abra [**esta página de la documentación de Wix**](https://support.wix.com/es/article/connect-un-domaine-%C3%A0-wix-par-apuntage-5727882){.external}.
 > - Acceda al apartado "**Paso 2 | Actualizar los registros DNS en la cuenta de su proveedor de hosting de dominio**" de la documentación Wix.<br>
@@ -94,7 +99,7 @@ La zona DNS ya está configurada para asociarse a un alojamiento Wix.
 
 Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](/links/web/emails), deberá preparar su zona DNS en consecuencia. Para más información, consulte nuestra guía sobre la [configuración de un registro MX](/pages/web_cloud/domains/dns_zone_mx).
 
-## Ir más lejos <a name="go-further"></a>
+## Más información <a name="go-further"></a>
 
 [Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
@@ -105,7 +110,7 @@ Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [
 Para cambiar la gestión de un dominio a otra cuenta de cliente de OVHcloud, consulte la guía [Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts) de OVHcloud.
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
- 
+
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
- 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+
+Interactúe con nuestra [comunidad de usuarios](/links/community).

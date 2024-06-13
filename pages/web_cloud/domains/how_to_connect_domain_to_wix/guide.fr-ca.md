@@ -41,7 +41,8 @@ Lorsque vous utilisez un hébergement Wix avec un nom de domaine OVHcloud, vous 
 
 > [!warning]
 >
-> Avant de poursuivre : <br>
+> Avant de poursuivre :
+>
 > - Ouvrez un onglet en parallèle sur votre navigateur internet.
 > - Ouvrez [**cette page de la documentation Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882){.external}.
 > - Positionnez-vous sur la partie « **Étape 2 | Mettre à jour les enregistrements DNS dans le compte de votre hébergeur de domaine** » de la documentation Wix.<br>

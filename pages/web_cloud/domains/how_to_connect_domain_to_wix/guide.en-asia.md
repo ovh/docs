@@ -40,7 +40,8 @@ When using a Wix hosting plan with an OVHcloud domain name, you must first prepa
 
 > [!warning]
 >
-> Before you continue: <br>
+> Before you continue:
+>
 > - Open a tab in your web browser.
 > - Open [**this page of the Wix documentation**](https://support.wix.com/en/article/connect-a-domain-%C3%A0-wix-par-pointage-5727882){.external}.
 > - Go to the "**Step 2 section | Update the DNS records in your domain hosting provider’s account**" in the Wix documentation.<br>

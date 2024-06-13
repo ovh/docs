@@ -34,13 +34,14 @@ Before following the two steps in this guide, we recommend that you get familiar
 
 ### 1. Configure your GoDaddy hosting plan
 
-When using a GoDaddy hosting plan with an OVHcloud domain name, you must first prepare your hosting plan by following **the instructions in step 1** from [**this page of the GoDaddy documentation**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US).
+When using a GoDaddy hosting plan with an OVHcloud domain name, you must first prepare your hosting plan by following **the instructions** from [**this page of the GoDaddy documentation**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US).
 
 ### 2. Configure your DNS records on your OVHcloud account
 
 > [!warning]
 >
-> Before you continue: <br>
+> Before you continue:
+>
 > - Open a tab in your web browser.
 > - Open [**this page of the GoDaddy documentation**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US){.external}.
 > - Follow the instructions until step 10 and retrieve the information specific to your website so that you can later modify your OVHcloud DNS records.<br>

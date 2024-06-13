@@ -40,7 +40,8 @@ When using a Webflow hosting plan with an OVHcloud domain name, you must first p
 
 > [!warning]
 >
-> Before you continue: <br>
+> Before you continue:
+>
 > - Open a tab in your web browser.
 > - Open [**this webflow documentation page**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export){.external}.
 > - Go to the “**How to set your DNS records**” section of the Webflow documentation.<br>
