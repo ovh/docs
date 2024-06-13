@@ -4,6 +4,10 @@ excerpt: "Descubra el papel de los servidores DNS, su contenido y cómo funciona
 updated: 2024-06-12
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
 ## Objetivo
 
 Las siglas **DNS**, que significan **D**omain **N**ame **S**ystem, son un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permiten asociar un dominio a una dirección IP.
@@ -39,7 +43,7 @@ Una vez que la resolución DNS haya recuperado la dirección IP del servidor que
 
 A continuación, el cliente envía otra petición directamente al servidor asociado a la dirección IP recuperada mediante la resolución DNS (paso **9** del esquema anterior). Esto le permite conectarse o recuperar los elementos que necesita para resolver esta segunda consulta (paso **10** del esquema anterior). En nuestro ejemplo, el cliente (navegador web) consulta al servidor con la dirección IP 203.0.113.0 para obtener el contenido que quiere mostrar para el sitio web *domain.tld*.
 
-Si necesita realizar esta acción para un dominio registrado con OVHcloud, consulte nuestra guía «[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
+Si necesita realizar esta acción para un dominio registrado con OVHcloud, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ### Contenido de un servidor DNS (Authoritative)
 
