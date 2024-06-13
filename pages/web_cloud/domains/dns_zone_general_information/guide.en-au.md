@@ -68,7 +68,7 @@ In this example, the DNS zone specifies, among other things, the following infor
 
 - The DNS servers declared for the domain name *domain.tld* are the DNS servers *dnsXX.ovh.ca* and *nsXX.ovh.ca*.
 - The server must return the IP address 203.0.113.0 if a DNS request is made to the domain name *domain.tld* or the subdomain *www.domain.tld*. For example, you can find the website *domain.tld* behind the IP address 203.0.113.0.
-- For emails, the DNS zone indicates that DNS queries made for *@domain.tld* email addresses must be sent to the *mx1.mail.ovh.net* server as a priority. If it takes too long to respond or is unavailable, the request will then be sent to the *mx2.mail.ovh.net* server, and so on until the last server that was declared *mx3.mail.ovh.net*.
+- For emails, the DNS zone indicates that DNS queries made for *@domain.tld* email addresses must be sent to the *mx1.mail.ovh.ca* server as a priority. If it takes too long to respond or is unavailable, the request will then be sent to the *mx2.mail.ovh.ca* server, and so on until the last server that was declared *mx3.mail.ovh.ca*.
 - The SOA (**S**tart **O**f **A**uthority) of the OVHcloud DNS zone indicates that the last update date of the DNS zone is 18/05/2024 and that the refresh time of the DNS zone is 3600 seconds. In DNS zones hosted elsewhere than at OVHcloud, the SOAs may contain other elements such as the email address of the DNS zone administrator. For security reasons, OVHcloud has chosen not to display this information in the SOA.
 
 ## Go further
