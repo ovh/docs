@@ -12,7 +12,7 @@ updated: 2024-06-10
 
 ## Objective
 
-In this guide, you can find information and help on configuring your **redirections** and **alias** emails, e.g. sending emails received from address A to address B.
+In this guide, you can find information and help on configuring your **redirections** and **alias** emails, such as sending emails received from address A to address B.
 
 ![emails](images/schema-redirect00.png){.thumbnail}
 
@@ -22,7 +22,7 @@ In this guide, you can find information and help on configuring your **redirecti
 
 You can use redirections to change the routing of an email sent to an email address, forwarding it to one or more other email addresses.
 
-For example, when you send an email to **contact@mydomain.ovh**, it will also be sent to **john.smith@otherdomain.ovh**. This way, you can automatically send an email to **contact@mydomain.ovh** to **john.smith@otherdomain.ovh**.
+For example, you may want emails sent to **contact@mydomain.ovh** forwarded to **john.smith@otherdomain.ovh**. This way, you can automatically send emails received by **contact@mydomain.ovh** to **john.smith@otherdomain.ovh**.
 
 ### What is an email alias?
 
@@ -34,7 +34,7 @@ For example, your email address is **john.smith@mydomain.ovh** and your alias is
 
 ### Redirection and alias in comparison <a name="diagram"></a>
 
-Click on the following tabs for a illustrated explanation of how aliases and redirections work.
+Click on the tabs below for an illustrated explanation of how aliases and redirections work.
 
 - `From` is the sender's address
 - `To` is the address of the recipient
@@ -48,18 +48,18 @@ Click on the following tabs for a illustrated explanation of how aliases and red
 >>
 > **2. Redirection with local copy**
 >>
->> The email is sent to the original recipient as well as the redirect address.<br><br>
+>> Both the original recipient and the redirection email account will receive the email.<br><br>
 >> ![emails](images/schema-redirect02.png){.thumbnail}
 >>
-> **3. The email alias**
+> **3. Email alias**
 >>
->> The email is sent to the alias that sends it back to the recipient on whom the alias has been configured. `Received by` means the email address that receives the email.<br><br>
+>> The email is sent to the alias address and received by the email account on which the alias has been configured. `Received by` means the email account that receives the email.<br><br>
 >> ![emails](images/schema-redirect03.png){.thumbnail}
 >>
 
 > [!primary]
 >
-> Please note that you can configure redirections to multiple email addresses. However, this means creating redirections to each recipient one at a time.
+> Note that you can configure redirections to multiple email addresses. To do this, the redirections to each recipient must be created individually.
 
 ## Requirements
 
@@ -103,7 +103,7 @@ Follow the instruction steps by clicking successively on each tab below:
 > [!tabs]
 > **Step 1**
 >>
->> Once you have logged in to your email account via [webmail](/links/email), click on the cogwheel icon in the top right-hand corner, then on `Options`{.action}.<br><br>
+>> Once you have logged in to your email account via [webmail](/links/email), click on the cogwheel icon in the top right corner, then on `Options`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Step 2**
@@ -114,7 +114,7 @@ Follow the instruction steps by clicking successively on each tab below:
 >>
 > **Step 3**
 >>
->> Once you have opened the window for managing **Inbox rules**, click on the `+`{.action} icon on the top left-hand corner.<br><br>
+>> Once you have opened the window for managing **Inbox rules**, click on the `+`{.action} icon on the top left corner.<br><br>
 >> ![emails](images/emails-all-03.png){.thumbnail}<br><br>
 >>
 > **Step 4**
@@ -146,17 +146,17 @@ Follow the steps described by clicking on each tab below:
 > [!tabs]
 > **Step 1**
 >>
->> Once you have logged in to your email address via [webmail](https://www.ovhcloud.com/en/mail/), click on the cogwheel icon in the top right-hand corner, then `Options`{.action}.<br><br>
+>> Once you have logged in to your email account via [webmail](/links/email), click on the cogwheel icon in the top right corner, then `Options`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Step 2**
->> From the **Options** window, in the left-hand column, go to the **Automatic processing** category in the **Mail** section, then click `Inbox and storage rules`{.action}. <br><br>
+>> From the **Options** window, go to the **Automatic processing** category in the **Mail** section in the left-hand column, then click `Inbox and storage rules`{.action}. <br><br>
 >> ![emails](images/owa-redirect-del-01.png){.thumbnail}<br><br>
->> You will find the window you can use to manage your redirections and filters.<br>
+>> This section contains the options to manage your redirections and filters.<br>
 >>
 > **Step 3**
 >>
->> Once in the window for managing **Inbox rules**, click on the redirection you want to delete, it must be highlighted. Then click the recycle bin icon<br><br>
+>> Once in the section for managing **Inbox rules**, click on the redirection you want to delete to highlight it. Then click the recycle bin icon.<br><br>
 >> ![emails](images/owa-redirect-del-02.png){.thumbnail}<br><br>
 >>
 
@@ -202,8 +202,8 @@ Log in to the [OVHcloud Control Panel](/links/manager) and open `Emails`{.action
 
 > [!warning]
 >
-> - The method for creating an alias or for creating a redirection is exactly the same.
-> - It is possible to create a maximum of 2000 aliases and redirections, including local copies.
+> - The method for creating an alias or redirection is the same.
+> - You can create a maximum of 2000 aliases and redirections, including local copies.
 >
 
 
@@ -239,9 +239,9 @@ Follow the instruction steps by clicking successively on each tab below:
 
 ### Delete a redirection or an alias on a legacy MX Plan solution, or a domain name without an email solution <a name="del-mxplanlegacy"></a>
 
-From the `Emails`{.action} tab, click `Manage redirections`{.action} on the right-hand side of the window.
+From the `Emails`{.action} tab, click `Manage redirections`{.action} on the right.
 
-Click the `...`{.action} button to the right of the redirection concerned, then click `Delete redirection`{.action}
+Click the `...`{.action} button in the row of the redirection concerned, then click `Delete redirection`{.action}
 
 > [!warning]
 >
