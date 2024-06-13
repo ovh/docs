@@ -52,7 +52,7 @@ Une zone DNS contient des informations techniques, appelées *enregistrements DN
 > [!success]
 >
 > - Pour plus d'informations sur les zones DNS, consultez notre guide « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) ».
-> - Consultez ensuite notre guide sur [Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_general_information) pour une meilleure compréhension de l'ensemble.
+> - Consultez ensuite notre guide sur [Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) pour une meilleure compréhension de l'ensemble.
 >
 
 De ce fait, ce sont les **serveurs DNS (Authoritative)** qui doivent être déclarés (auprès du bureau d'enregistrement d'un nom de domaine) pour utiliser la zone DNS qu'ils hébergent. 

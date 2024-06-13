@@ -25,9 +25,9 @@ Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 > [!primary]
 >
-> Um *registrar* é uma organização autorizada a vender nomes de domínio. A OVHcloud faz parte destes *registrars*.
+> Um **registrar** é uma organização autorizada a vender nomes de domínio. A OVHcloud faz parte destes **registrars**.
 >
-> Se o domínio não estiver registado na OVHcloud, terá de alterar os servidores DNS no *registrar*, onde o seu domínio está registado.
+> Se o domínio não estiver registado na OVHcloud, terá de alterar os servidores DNS no **registrar**, onde o seu domínio está registado.
 >
 
 ## Instruções
