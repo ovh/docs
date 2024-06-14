@@ -1,0 +1,152 @@
+# Documentation OVHcloud
+
+## Bare Metal Cloud
+- **Dedicated Servers**
+  - Getting Started
+    - https://help.ovhcloud.com/csm/en-ie-dedicated-servers-getting-started-dedicated-server?id=kb_article_view&sysparm_article=KB0043476
+  - Configuration
+    - Administration
+    - Deployments
+    - Conceptions
+    - Performances
+  - Migrations
+  - Tutorials
+  - Security
+  - Support / Troubleshooting
+  - Additional Resources
+- **Eco Dedicated Servers**
+  - Getting Started
+  - Configuration
+    - Administration
+    - Deployments
+    - Conceptions
+    - Performances
+  - Migrations
+  - Tutorials
+  - Security
+  - Support / Troubleshooting
+  - Additional Resources
+- **Managed Bare Metal**
+  - Getting Started
+  - Configuration
+    - Administration
+    - Deployments
+    - Conceptions
+    - Performances
+  - Migrations
+  - Tutorials
+  - Security
+  - Support / Troubleshooting
+  - Additional Resources
+
+## VPS - Virtual Private Servers
+- Getting Started
+- Configuration
+  - Administration
+  - Deployments
+  - Conceptions
+  - Performances
+- Migrations
+- Tutorials
+- Security
+- Support / Troubleshooting
+- Additional Resources
+
+## Storage and Backup
+- Getting Started
+- Configuration
+  - Administration
+  - Deployments
+  - Conceptions
+  - Performances
+- Migrations
+- Tutorials
+- Security
+- Support / Troubleshooting
+- Additional Resources
+
+## Network
+- **Additional IP**
+  - Getting Started
+  - Configuration
+    - Administration
+    - Deployments
+    - Conceptions
+    - Performances
+  - Migrations
+  - Tutorials
+  - Security
+  - Support / Troubleshooting
+  - Additional Resources
+- **OVHcloud Load Balancer**
+  - Getting Started
+  - Configuration
+    - Administration
+    - Deployments
+    - Conceptions
+    - Performances
+  - Migrations
+  - Tutorials
+  - Security
+  - Support / Troubleshooting
+  - Additional Resources
+- **Private Network (vRack)**
+  - Getting Started
+  - Configuration
+    - Administration
+    - Deployments
+    - Conceptions
+    - Performances
+  - Migrations
+  - Tutorials
+  - Security
+  - Support / Troubleshooting
+  - Additional Resources
+- **OVHcloud Connect**
+  - Getting Started
+  - Configuration
+    - Administration
+    - Deployments
+    - Conceptions
+    - Performances
+  - Migrations
+  - Tutorials
+  - Security
+  - Support / Troubleshooting
+  - Additional Resources
+- **OVHcloud Link Aggregation**
+  - Getting Started
+  - Configuration
+    - Administration
+    - Deployments
+    - Conceptions
+    - Performances
+  - Migrations
+  - Tutorials
+  - Security
+  - Support / Troubleshooting
+  - Additional Resources
+- **Bring Your Own IP (BYOIP)**
+  - Getting Started
+  - Configuration
+    - Administration
+    - Deployments
+    - Conceptions
+    - Performances
+  - Migrations
+  - Tutorials
+  - Security
+  - Support / Troubleshooting
+  - Additional Resources
+- **Security**
+  - Getting Started
+  - Configuration
+    - Administration
+    - Deployments
+    - Conceptions
+    - Performances
+  - Migrations
+  - Tutorials
+  - Security
+  - Support / Troubleshooting
+  - Additional Resources
