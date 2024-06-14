@@ -31,7 +31,7 @@ Oto lista programów zawartych w pakiecie:
 
 Przejdź do strony biznesowej [Microsoft 365 OVHcloud](https://www.ovh.pl/office-365-business){.external} i wybierz rubrykę `Microsoft`{.action} w sekcji `Web Cloud`{.action}.
 
-Licencję możesz również zamówić w panelu [Panel klienta OVHcloud] (/links/manager). Po zalogowaniu wybierz `Web Cloud`{.action} w górnym pasku, następnie kliknij przycisk `Zamów`{.action} i `O365`{.action}.
+Licencję możesz również zamówić w panelu [Panel klienta OVHcloud](/links/manager). Po zalogowaniu wybierz `Web Cloud`{.action} w górnym pasku, następnie kliknij przycisk `Zamów`{.action} i `O365`{.action}.
 
 - Wybierz jedną z dostępnych ofert: Apps for business i Apps for entreprise.
 - Określ częstotliwość odnawiania grupy licencji.

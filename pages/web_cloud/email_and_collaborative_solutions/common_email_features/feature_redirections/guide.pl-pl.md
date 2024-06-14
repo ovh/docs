@@ -48,17 +48,17 @@ Kliknij poniższe zakładki, aby uzyskać ilustrowane wyjaśnienia dotyczące dz
 > **1. Przekierowanie proste**
 >>
 >> Wiadomość jest przesyłana bezpośrednio na adres przekierowania. Pierwotny odbiorca nie otrzymuje wiadomości.<br><br>
->> ![emails](obrazy/schema-redirect01.png){.thumbnail}
+>> ![emails](images/schema-redirect01.png){.thumbnail}
 >>
 > **2. Przekierowanie z kopią lokalną**
 >>
 >> E-mail jest wysyłany do pierwotnego adresata oraz na adres przekierowania.<br><br>
->> ![emails](obrazy/schema-redirect02.png){.thumbnail}
+>> ![emails](images/schema-redirect02.png){.thumbnail}
 >>
 > **3. Alias e-mail**
 >>
 >> Wiadomość e-mail jest wysyłana do aliasu, który przekierowuje ją do adresata, dla którego został skonfigurowany. Adnotacja `Received by` oznacza adres e-mail, na który wysyłany jest e-mail.<br><br>
->> ![emails](obrazy/schema-redirect03.png){.thumbnail}
+>> ![emails](images/schema-redirect03.png){.thumbnail}
 >>
 
 > [!primary]
@@ -96,7 +96,7 @@ Kliknij poniższe zakładki, aby uzyskać ilustrowane wyjaśnienia dotyczące dz
 
 Zarządzanie przekierowaniami nie odbywa się w Panelu klienta lecz bezpośrednio w interfejsie webmail danego adresu e-mail.
 
-Przejdź do [webmail] (/links/email). Wpisz **adres e-mail** i **hasło**, aby się zalogować.
+Przejdź do [webmail](/links/web/email). Wpisz **adres e-mail** i **hasło**, aby się zalogować.
 
 ![emails](images/webmail.png){.thumbnail}
 
@@ -107,7 +107,7 @@ Postępuj zgodnie z instrukcjami podanymi w opisanych krokach, klikając kolejno
 > [!tabs]
 > **Etap 1**
 >>
->> Po zalogowaniu się do Twojego konta e-mail przez [webmail](/links/email) kliknij ikonkę koła zębatego w prawym górnym rogu, a następnie kliknij `Options`{.action}.<br><br>
+>> Po zalogowaniu się do Twojego konta e-mail przez [webmail](/links/web/email) kliknij ikonkę koła zębatego w prawym górnym rogu, a następnie kliknij `Opcje`{.action}.<br><br>
 >> ![emaile](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etap 2**
@@ -148,23 +148,23 @@ Postępuj zgodnie z instrukcjami podanymi w poniższych zakładkach:
 > [!tabs]
 > **Etap 1**
 >>
->> Po zalogowaniu się do swojego konta e-mail przez [webmail](/links/email), w prawym górnym rogu kliknij ikonę koła zębatego, a następnie ikonę `Options`{.action}.<br><br>
->> ![emails](obrazy/emaile-all-01.png){.thumbnail}<br>
+>> Po zalogowaniu się do swojego konta e-mail przez [webmail](/links/web/email), w prawym górnym rogu kliknij ikonę koła zębatego, a następnie ikonę `Opcje`{.action}.<br><br>
+>> ![emails](images/emaile-all-01.png){.thumbnail}<br>
 >>
 > **Etap 2**
->> W lewej kolumnie okna **Opcje** przejdź do kategorii **Automatyczne przetwarzanie** w sekcji **Poczta** i kliknij `Reguły skrzynki odbiorczej i porządkowania wiadomości {.action}. <br><br>
->> ![emails](obrazy/owa-redirect-del-01.png){.thumbnail}<br><br>
+>> W lewej kolumnie okna **Opcje** przejdź do kategorii **Automatyczne przetwarzanie** w sekcji **Poczta** i kliknij `Skrzynka odbiorcza i reguły oczyszczania`{.action}. <br><br>
+>> ![emails](images/owa-redirect-del-01.png){.thumbnail}<br><br>
 >> Znajdziesz okno do zarządzania przekierowaniami i filtrami.<br>
 >>
 > **Etap 3**
 >>
->> W oknie zarządzania **Reguły skrzynki odbiorczej** kliknij przekierowanie, które chcesz usunąć. Musi ono być podświetlone. Następnie kliknij ikonę kosza<br><br>
->> ![emails](obrazy/owa-redirect-del-02.png){.thumbnail}<br><br>
+>> W oknie zarządzania **Reguły skrzynki odbiorczej** kliknij przekierowanie, które chcesz usunąć. Musi ono być podświetlone. Następnie kliknij ikonę kosza.<br><br>
+>> ![emails](images/owa-redirect-del-02.png){.thumbnail}<br><br>
 >>
 
 ### Utwórz alias <a name="alias"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`. Następnie wybierz menu w zależności od oferty e-mail:
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Następnie wybierz menu w zależności od oferty e-mail:
 
 - **Exchange**: w `Microsoft`{.action}, następnie w `Exchange`{.action} i wybierz odpowiednią platformę. Kliknij kartę `Konta e-mail`{.action}.
 
@@ -243,13 +243,13 @@ Postępuj zgodnie z instrukcjami podanymi w opisanych krokach, klikając kolejno
 
 W zakładce `Emaile`{.action} kliknij `Zarządzanie przekierowaniami`{.action} po prawej stronie okna.
 
-Kliknij przycisk`...`{.action} po prawej stronie wybranego przekierowania, a następnie kliknij `Usuń przekierowanie`{.action}
+Kliknij przycisk `...`{.action} po prawej stronie wybranego przekierowania, a następnie kliknij `Usuń przekierowanie`{.action}
 
 > [!warning]
 >
 > Nie można zmienić przekierowania ani aliasu. Należy ją usunąć, a następnie utworzyć ponownie.
 
-![emaile](obrazy/email-del-legacy-redirect01.png){.thumbnail}
+![emaile](images/email-del-legacy-redirect01.png){.thumbnail}
 
 ## Sprawdź również <a name="go-further"></a>
 

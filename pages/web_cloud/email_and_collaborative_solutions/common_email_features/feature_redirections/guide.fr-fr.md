@@ -92,7 +92,7 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 
 La gestion des redirections ne se fait pas via l'espace client mais directement via le webmail de l'adresse e-mail concernée.
 
-Rendez-vous sur le [webmail](/links/email) . Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
+Rendez-vous sur le [webmail](/links/web/email) . Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
 
 ![emails](images/webmail.png){.thumbnail}
 
@@ -103,7 +103,7 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 > [!tabs]
 > **Etape 1**
 >>
->> Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovhcloud.com/fr/mail/), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
+>> Une fois connecté à votre adresse e-mail via le [webmail](/links/web/email), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etape 2**
@@ -145,7 +145,7 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 > [!tabs]
 > **Etape 1**
 >>
->> Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovhcloud.com/fr/mail/), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
+>> Une fois connecté à votre adresse e-mail via le [webmail](/links/web/email), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etape 2**

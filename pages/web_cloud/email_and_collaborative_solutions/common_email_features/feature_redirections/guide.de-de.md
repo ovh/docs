@@ -81,7 +81,7 @@ Klicken Sie auf die Tabs, um die Funktionsweise von Aliasnamen und Weiterleitung
 
 Die Verwaltung von Weiterleitungen erfolgt nicht im Kundencenter, sondern über Webmail, nachdem Sie sich in den betreffenden E-Mail-Account eingeloggt haben.
 
-Öffnen Sie [Webmail](/links/email). Geben Sie **E-Mail-Adresse** und **Passwort** ein, um sich einzuloggen.
+Öffnen Sie [Webmail](/links/web/email). Geben Sie **E-Mail-Adresse** und **Passwort** ein, um sich einzuloggen.
 
 ![E-Mails](images/webmail.png){.thumbnail}
 
@@ -92,7 +92,7 @@ Folgen Sie den Anleitungsschritten, indem Sie nacheinander die Tabs aufrufen:
 > [!tabs]
 > **Schritt 1**
 >>
->> Wenn Sie sich im [Webmail](/links/email) Ihres E-Mail-Accounts eingeloggt haben, klicken Sie oben rechts auf das Zahnrad und dann auf `Optionen`{.action}.<br><br>
+>> Wenn Sie sich im [Webmail](/links/web/email) Ihres E-Mail-Accounts eingeloggt haben, klicken Sie oben rechts auf das Zahnrad und dann auf `Optionen`{.action}.<br><br>
 >> ![{.thumbnail}](images/emails-all-01.png) E-Mails<br>
 >>
 > **Schritt 2**
@@ -135,7 +135,7 @@ Folgen Sie den Anweisungen, indem Sie nacheinander auf die einzelnen Registerkar
 > [!tabs]
 > **Schritt 1**
 >>
->> Wenn Sie sich im [Webmail](/links/email) Ihres E-Mail-Accounts eingeloggt haben, klicken Sie oben rechts auf das Zahnrad und dann auf `Optionen`{.action}.<br><br>
+>> Wenn Sie sich im [Webmail](/links/web/email) Ihres E-Mail-Accounts eingeloggt haben, klicken Sie oben rechts auf das Zahnrad und dann auf `Optionen`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Schritt 2**

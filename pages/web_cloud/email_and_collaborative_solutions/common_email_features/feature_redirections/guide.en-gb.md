@@ -92,7 +92,7 @@ Click on the tabs below for an illustrated explanation of how aliases and redire
 
 Redirections are not managed in the OVHcloud Control Panel, but via the webmail application after logging in to the email account concerned.
 
-Go to the [webmail](/links/email). Enter your **email address** and **password** to log in.
+Go to the [webmail](/links/web/email). Enter your **email address** and **password** to log in.
 
 ![emails](images/webmail.png){.thumbnail}
 
@@ -103,7 +103,7 @@ Follow the instruction steps by clicking successively on each tab below:
 > [!tabs]
 > **Step 1**
 >>
->> Once you have logged in to your email account via [webmail](/links/email), click on the cogwheel icon in the top right corner, then on `Options`{.action}.<br><br>
+>> Once you have logged in to your email account via [webmail](/links/web/email), click on the cogwheel icon in the top right corner, then on `Options`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Step 2**
@@ -146,7 +146,7 @@ Follow the steps described by clicking on each tab below:
 > [!tabs]
 > **Step 1**
 >>
->> Once you have logged in to your email account via [webmail](/links/email), click on the cogwheel icon in the top right corner, then `Options`{.action}.<br><br>
+>> Once you have logged in to your email account via [webmail](/links/web/email), click on the cogwheel icon in the top right corner, then `Options`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Step 2**
@@ -162,7 +162,7 @@ Follow the steps described by clicking on each tab below:
 
 ### Creating an alias <a name="alias"></a>
 
-Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud` section. Navigate to your email solution:
+Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. Navigate to your email solution:
 
 - **Exchange**: Open `Microsoft`{.action} and then `Exchange`{.action}. Select the service concerned. Click on the `Email accounts`{.action} tab.
 
@@ -198,7 +198,7 @@ Click on the button `...`{.action} in the row of the alias in question and selec
 
 #### Creating a redirection or an alias with a legacy MX Plan solution or for a domain name without an email solution <a name="mxplanlegacy"></a>
 
-Log in to the [OVHcloud Control Panel](/links/manager) and open `Emails`{.action} in the `Web Cloud` section.
+Log in to the [OVHcloud Control Panel](/links/manager) and open `Emails`{.action} in the `Web Cloud`{.action} section.
 
 > [!warning]
 >

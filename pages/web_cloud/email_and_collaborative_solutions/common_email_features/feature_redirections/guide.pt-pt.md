@@ -97,7 +97,7 @@ Clique nos separadores seguintes para obter explicações ilustradas sobre o fun
 
 A gestão dos reencaminhamentos faz-se não através da Área de Cliente, mas diretamente através do webmail do endereço de e-mail em questão.
 
-Aceda ao [webmail](/links/email) . Introduza **o endereço de correio eletrónico** e **a palavra-passe** para iniciar sessão.
+Aceda ao [webmail](/links/web/email) . Introduza **o endereço de correio eletrónico** e **a palavra-passe** para iniciar sessão.
 
 ![emails](images/webmail.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Siga os passos descritos clicando sucessivamente em cada separador abaixo:
 > [!tabs]
 > **Etapa 1**
 >>
->> Uma vez ligado ao seu endereço de e-mail através de [webmail](/links/email), clique na roda dentada no canto superior direito e, a seguir, em `opções`{.action}.<br><br>
+>> Uma vez ligado ao seu endereço de e-mail através de [webmail](/links/web/email), clique na roda dentada no canto superior direito e, a seguir, em `Opções`{.action}.<br><br>
 >> ![e-mails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etapa 2**
@@ -241,7 +241,7 @@ Siga os passos descritos clicando sucessivamente em cada separador abaixo:
 
 ### Eliminar um reencaminhamento ou um alias numa oferta MX Plan histórica ou um domínio sem um serviço de e-mail <a name="del-mxplanlegacy"></a>
 
-No separador "E-mails" {.action}, clique em "Gestão dos reencaminhamentos" {.action} à direita da janela.
+No separador `E-mails`{.action}, clique em `Gestão dos reencaminhamentos`{.action} à direita da janela.
 
 Clique no botão `...`{.action} à direita do reencaminhamento em causa e, a seguir, clique em `Eliminar o reencaminhamento {.action}
 

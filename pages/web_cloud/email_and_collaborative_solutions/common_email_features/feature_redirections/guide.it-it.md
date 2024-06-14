@@ -96,7 +96,7 @@ Fare clic sulle schede seguenti per illustrare il funzionamento di alias e reind
 
 La gestione dei reindirizzamenti non avviene tramite lo Spazio Cliente, ma direttamente tramite la webmail dell'indirizzo email in questione.
 
-Accedi alla [webmail](/links/email) . Inserisci **l'indirizzo email** e la **password** per effettuare l'accesso.
+Accedi alla [webmail](/links/web/email). Inserisci **l'indirizzo email** e la **password** per effettuare l'accesso.
 
 ![email](images/webmail.png){.thumbnail}
 
@@ -107,7 +107,7 @@ Per seguire gli step descritti, clicca su ciascuna scheda qui sotto:
 > [!tabs]
 > **Passo 1**
 >>
->> Una volta connesso al tuo indirizzo email tramite la [webmail](/links/email), clicca sull'icona a forma di ingranaggio in alto a destra e poi su `Opzioni`{.action}.<br><br>
+>> Una volta connesso al tuo indirizzo email tramite la [webmail](/links/web/email), clicca sull'icona a forma di ingranaggio in alto a destra e poi su `Opzioni`{.action}.<br><br>
 >> ![email](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Passo 2**
@@ -147,7 +147,7 @@ Segui i passaggi descritti cliccando su ciascuna scheda qui sotto:
 
 > [!tabs]
 > **Step 1**
->> Una volta connesso al tuo indirizzo email tramite la [webmail](/links/email), clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Options`{.action}.<br><br><br>
+>> Una volta connesso al tuo indirizzo email tramite la [webmail](/links/web/email), clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Opzioni`{.action}.<br><br><br>
 >> ![email](images/email-all-01.png){.thumbnail}<br>
 >>
 > **Step 2**
@@ -234,13 +234,13 @@ Per seguire gli step descritti, clicca su ciascuna scheda qui sotto:
 > [!primary]
 >
 > Quando scegli la modalità di copia "**Conserva una copia dell'email in OVHcloud**", viene automaticamente creato un reindirizzamento dell'indirizzo email verso se stesso nella lista dei reindirizzamenti, si materializza questa copia locale.
-> 
+>
 
 ### Eliminare un reindirizzamento o un alias su una soluzione MX Plan storica o un dominio senza offerta email <a name="del-mxplanlegacy"></a>
 
 Nella scheda `Email`{.action}, clicca su `Gestione dei reindirizzamenti`{.action} a destra della finestra.
 
-Clicca sul pulsante `...`{.action} a destra del reindirizzamento in questione e poi clicca su `Elimina il reindirizzamento`{.action}
+Clicca sul pulsante `...`{.action} a destra del reindirizzamento in questione e poi clicca su `Elimina il reindirizzamento`{.action}.
 
 > [!warning]
 >

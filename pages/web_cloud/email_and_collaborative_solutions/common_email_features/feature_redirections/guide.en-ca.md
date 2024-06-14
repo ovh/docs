@@ -108,7 +108,7 @@ Follow the instruction steps by clicking successively on each tab below:
 
 ### Creating an alias <a name="alias"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and go to the `Web Cloud` section. Navigate to your email solution:
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and go to the `Web Cloud`{.action} section. Navigate to your email solution:
 
 - **Exchange**: Open `Microsoft`{.action} and then `Exchange`{.action}. Select the service concerned. Click on the `Email accounts`{.action} tab.
 
@@ -142,7 +142,7 @@ Click on the button `...`{.action} in the row of the alias in question and selec
 
 #### Creating a redirection or an alias for a domain name without an email solution <a name="mxplanlegacy"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open `Emails`{.action} in the `Web Cloud` section.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open `Emails`{.action} in the `Web Cloud`{.action} section.
 
 The method for creating an alias or redirection is the same. Follow the instruction steps by clicking successively on each tab below:
 

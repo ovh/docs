@@ -92,7 +92,7 @@ Haga clic en las fichas siguientes para obtener una explicación ilustrada del f
 
 Las redirecciones no se gestionan desde el área de cliente, sino directamente desde el webmail de la dirección de correo electrónico correspondiente.
 
-Acceda a la dirección [webmail](/links/email). Introduzca **la dirección de correo** y la **contraseña** para conectarse.
+Acceda a la dirección del [webmail](/links/web/email). Introduzca **la dirección de correo** y la **contraseña** para conectarse.
 
 ![correo electrónico](images/webmail.png){.thumbnail}
 
@@ -103,7 +103,7 @@ Siga los pasos que se describen haciendo clic en cada pestaña:
 > [!tabs]
 > **Etapa 1**
 >>
->> Una vez que se haya conectado a su dirección de correo electrónico a través del [webmail](/links/email), haga clic en la rueda dentada en la parte superior derecha y, seguidamente, en el menú `Opciones`{.action}.<br><br>
+>> Una vez que se haya conectado a su dirección de correo electrónico a través del [webmail](/links/web/email), haga clic en la rueda dentada en la parte superior derecha y, seguidamente, en el menú `Opciones`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etapa 2**
@@ -145,7 +145,7 @@ Siga los pasos que se indican haciendo clic en cada ficha:
 > [!tabs]
 > **Paso 1**
 >>
->> Una vez que se haya conectado a su dirección de correo electrónico a través del [webmail](https://www.ovhcloud.com/fr/mail/), haga clic en la rueda dentada situada en la esquina superior derecha y seleccione `Options`{.action}.<br><br>
+>> Una vez que se haya conectado a su dirección de correo electrónico a través del [webmail](/links/web/email), haga clic en la rueda dentada situada en la esquina superior derecha y seleccione `Opciones`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Paso 2**
@@ -237,7 +237,7 @@ Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda al 
 
 ### Eliminar una redirección o un alias en un MX Plan histórico o un dominio sin una solución de correo <a name="del-mxplanlegacy"></a>
 
-En la pestaña «Correo electrónico» de {.action}, haga clic en «Gestión de las redirecciones»`{.action} a la derecha de la ventana.
+En la pestaña `Correo electrónico`{.action} de , haga clic en `Gestión de las redirecciones`{.action} a la derecha de la ventana.
 
 Haga clic en el botón `...`{.action} a la derecha de la redirección correspondiente y seleccione `Eliminar la redirección`{.action}
 
