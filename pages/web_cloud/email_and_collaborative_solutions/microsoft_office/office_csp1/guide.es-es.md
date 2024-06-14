@@ -31,7 +31,7 @@ Esta es la lista de programas incluidos en la siguiente:
 
 Acceda a la página comercial [Microsoft 365 OVHcloud](https://www.ovh.com/es/office-365-business){.external} y seleccione la sección `Microsoft`{.action} de nuestra sección `Web Cloud`{.action}.
 
-También puede contratar una licencia desde el [área de cliente de OVHcloud] (/links/manager). Una vez conectado, seleccione `Web Cloud`{.action} en la banda superior y haga clic en el botón `Contratar`{.action} y en `o365`{.action}.
+También puede contratar una licencia desde el [área de cliente de OVHcloud](/links/manager). Una vez conectado, seleccione `Web Cloud`{.action} en la banda superior y haga clic en el botón `Contratar`{.action} y en `o365`{.action}.
 
 - Elija entre los productos disponibles, es decir, "Apps for business" y "Apps for enterprise".
 - Indique la frecuencia de renovación del grupo de licencias.
@@ -41,7 +41,7 @@ Será redirigido a la página de contratación para validarla y abonarla.
 
 ### Activar la licencia
 
-Una vez contratada la licencia, deberá activarla desde el [área de cliente de OVHcloud] (/links/manager). En la sección `Web Cloud`, haga clic en `Microsoft`{.action}, luego en `Microsoft 365`{.action} y seleccione el grupo de licencias correspondiente.
+Una vez contratada la licencia, deberá activarla desde el [área de cliente de OVHcloud](/links/manager). En la sección `Web Cloud`, haga clic en `Microsoft`{.action}, luego en `Microsoft 365`{.action} y seleccione el grupo de licencias correspondiente.
 
 Haga clic en el botón `...`{.action} delante de la licencia y, seguidamente, en `Editar la cuenta`{.action}.
 
