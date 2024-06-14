@@ -1,7 +1,7 @@
 ---
 title: 'Mode bridge IP'
 excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Internet de vos machines virtuelles'
-updated: 2024-06-12
+updated: 2024-06-14
 ---
 
 > [!primary]
@@ -110,6 +110,7 @@ Pour tous les systèmes d'exploitation et distributions, vous devez configurer v
 >
 
 Après avoir créé la machine virtuelle et lorsque celle-ci est encore éteinte :
+
  1. Sélectionnez la machine virtuelle ;
  2. Ouvrez la section « Matériel » ;
  3. Sélectionnez `Périphérique réseau`{.action} ;
@@ -156,7 +157,7 @@ Une fois connecté au shell de votre machine virtuelle, exécutez la commande su
 ls /sys/class/net
 ```
 
-Ensuite, faites une copie du fichier de configuration, afin de pouvoir revenir en arrière à tout moment :
+Effectuez ensuite une copie du fichier de configuration, afin de pouvoir revenir en arrière à tout moment :
 
 ```bash
 sudo cp /etc/network/interfaces /etc/network/interfaces.bak
@@ -208,7 +209,7 @@ Ensuite, éditez ou créez le fichier `/etc/resolv.conf` :
 sudo nano /etc/resolv.conf
 ```
 
-Ajouter la ligne suivante :
+Ajoutez la ligne suivante :
 
 ```console
 nameserver 213.186.33.99
@@ -246,7 +247,7 @@ Si vous recevez une réponse, cela signifie que l’Additional IP a été correc
 
 #### Systèmes d'exploitation Red Hat et basés sur Red Hat (CentOS, Rocky Linux 8, Alma Linux 8, etc.)
 
-Pour vérifier que la machine virtuelle est bien connectée à Internet, « ping example.com ». Si vous obtenez une réponse, vous pouvez y aller. Si ce n'est pas le cas, redémarrez votre machine virtuelle et retentez la commande ping.Par défaut, le fichier de configuration réseau de la machine virtuelle se trouve dans `/etc/sysconfig/network-scripts/`. À titre de démonstration, notre fichier s'appelle `ifcfg-eth0` :
+Par défaut, le fichier de configuration réseau de la machine virtuelle se trouve dans `/etc/sysconfig/network-scripts/`. À titre de démonstration, notre fichier s'appelle `ifcfg-eth0` :
 
 Une fois connecté au shell de votre machine virtuelle, exécutez la commande suivante pour identifier le nom de votre interface :
 
@@ -254,7 +255,7 @@ Une fois connecté au shell de votre machine virtuelle, exécutez la commande su
 ls /sys/class/net
 ```
 
-Ensuite, faites une copie du fichier de configuration, afin de pouvoir revenir en arrière à tout moment :
+Effectuez ensuite une copie du fichier de configuration, afin de pouvoir revenir en arrière à tout moment :
 
 ```bash
 sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
@@ -295,13 +296,8 @@ HWADDR=MY:VI:RT:UA:LM:AC
 DNS=213.186.33.99
 ```
 
-> [!primary]
-> 
-> The DNS name server listed is that of OVHcloud. Feel free to use the name server(s) you prefer.
->
-
 Enregistrez et fermez le fichier.<br>
-Ensuite, créez un nouveau fichier, `route-(interface_name)`, dans le répertoire `/etc/sysconfig/network-scripts/` et définissez les routes par défaut suivantes pour l'interface à l'aide de la passerelle définie dans [Étape 2](#determinegateway).
+Ensuite, créez un nouveau fichier, `route-(interface_name)`, dans le répertoire `/etc/sysconfig/network-scripts/` et définissez les routes par défaut suivantes pour l'interface à l'aide de la passerelle définie dans l'[étape 2](#determinegateway).
 
 Dans notre exemple, notre fichier s'appelle `route-eth0` (remplacez `eth0` par vos propres valeurs) :
 
@@ -343,9 +339,7 @@ Si vous recevez une réponse, cela signifie que l’Additional IP a été correc
 
 #### Rocky Linux 9 and Alma Linux 9
 
-Dans les versions précédentes de Rocky Linux et Alma Linux, les profils réseau étaient stockés au format ifcfg dans ce répertoire : `/etc/sysconfig/network-scripts/`. Toutefois, le format ifcfg est désormais déconseillé et a été remplacé par keyfiles. Par défaut, NetworkManager ne crée plus de profils dans ce format. Le fichier de configuration se trouve désormais dans `/etc/NetworkManager/system-connections/`.
-
-À titre de d'exemple, notre fichier s'appelle `ens18-nmconnection`.
+Dans les versions précédentes de Rocky Linux et Alma Linux, les profils réseau étaient stockés au format ifcfg dans ce répertoire : `/etc/sysconfig/network-scripts/`. Toutefois, le format ifcfg est désormais déconseillé et a été remplacé par keyfiles. Le fichier de configuration se trouve désormais dans le répertoire : `/etc/NetworkManager/system-connections/`.
 
 Une fois connecté au shell de votre machine virtuelle, exécutez la commande suivante pour identifier le nom de votre interface :
 
@@ -353,7 +347,9 @@ Une fois connecté au shell de votre machine virtuelle, exécutez la commande su
 ls /sys/class/net
 ```
 
-Ensuite, faites une copie du fichier de configuration, afin de pouvoir revenir en arrière à tout moment :
+Effectuez ensuite une copie du fichier de configuration, afin de pouvoir revenir en arrière à tout moment. 
+
+À titre de d'exemple, notre fichier s'appelle `ens18-nmconnection` :
 
 ```bash
 sudo cp /etc/NetworkManager/system-connections/ens18-nmconnection /etc/NetworkManager/system-connections/ens18-nmconnection.bak
@@ -410,7 +406,7 @@ Une fois connecté au shell de votre machine virtuelle, exécutez la commande su
 ls /sys/class/net
 ```
 
-Ensuite, faites une copie du fichier de configuration, afin de pouvoir revenir en arrière à tout moment :
+Effectuez ensuite une copie du fichier de configuration, afin de pouvoir revenir en arrière à tout moment :
 
 ```bash
 sudo cp /etc/rc.conf /etc/rc.conf.bak
@@ -610,7 +606,7 @@ ip addr add ADDITIONAL_IP/32 dev test-bridge
 
 Remplacez « MAC_ADDRESS » par l'adresse MAC virtuelle générée dans le panneau de configuration et « ADDITIONAL_IP » par l'Additional IP réel.
 
-Ensuite, il vous suffit d'effectuer un ping sur votre Additional IP depuis l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration sur la machine virtuelle ou sur l'hôte qui empêche l'Additional IP de fonctionner en mode normal. Si, au contraire, l'IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVHcloud](/links/manager) pour une enquête complémentaire.
+Ensuite, il vous suffit d'effectuer un ping sur votre Additional IP depuis l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration sur la machine virtuelle ou sur l'hôte qui empêche l'Additional IP de fonctionner en mode normal. Si, au contraire, l'IP ne fonctionne toujours pas, veuillez ouvrir un ticket d'assistance via le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_cases_requests).
 
 ## Aller plus loin
 
