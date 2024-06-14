@@ -67,7 +67,8 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 > **Paso 1**
 >> **Registro A**<br><br>
 >> Para identificar los registros "A" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `A`.<br>
->> ![Zona DNS](images/filter-a.png){.thumbnail}<br>
+>> ![Zona DNS](images/filter-a.png){.thumbnail}
+>>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla que corresponde a su nombre de dominio solo, sin subdominio (por ejemplo: `mydomain.ovh.`) y haga clic en `Editar el registro`{.action}.<br>
 >> - Si hay un registro para el subdominio "www" (por ejemplo: `www.mydomain.ovh.`), deberá eliminarlo para que no entre en conflicto con el registro CNAME que vaya a introducir en el paso 3. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo y con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
 >> - Si no tiene un registro "A" existente, haga clic en el botón `Añadir una entrada`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de registro" `A`{.action}<br><br>
@@ -76,19 +77,22 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 > **Paso 2**
 >> **Registro AAAA**<br><br>
 >>  Para identificar los registros "AAAA" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `AAAA`.<br>
->> ![Zona DNS](images/filter-aaaa.png){.thumbnail}<br>
+>> ![Zona DNS](images/filter-aaaa.png){.thumbnail}
+>>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla que corresponde únicamente a su nombre de dominio, sin subdominio (por ejemplo, `mydomain.ovh.`) y seleccione `Eliminar el registro`{.action}.<br>
 >> - Si hay un registro para el subdominio "www" (p. ej.: `www.mydomain.ovh.`), elimínelo también para que no entre en conflicto con el registro CNAME que va a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su dominio con el subdominio "www" y seleccione `Eliminar el registro`{.action}.<br>
 >> - Si no tiene un registro "AAAA" existente, vaya al paso 3.
 > **Paso 3**
 >> **Registro TXT**<br><br>
 >>  Para identificar los registros "TXT" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `TXT`.<br>
->> ![Zona DNS](images/filter-txt.png){.thumbnail}<br>
+>> ![Zona DNS](images/filter-txt.png){.thumbnail}
+>>
 >> - Si existen registros "TXT" para el dominio solo (p. ej.: `mydomain.ovh.`) y para su subdominio "www" (p. ej.: `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con el registro CNAME que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
 > **Paso 4**
 >> **Registro CNAME**<br><br>
 >>  Para identificar los registros "CNAME" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `CNAME`.<br>
->> ![Zona DNS](images/filter-cname.png){.thumbnail}<br>
+>> ![Zona DNS](images/filter-cname.png){.thumbnail}
+>>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente a su subdominio en "www." (por ejemplo: `mydomain.ovh.`) y haga clic en `Modificar el registro`{.action}.<br>
 >> - Si no tiene un registro "CNAME" existente, haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de registro" `CNAME`{.action}.
 >> Rellene el campo **Subdominio** con el valor `www` e introduzca el valor obtenido desde su interfaz GoDaddy en el campo **Destino**.<br>
