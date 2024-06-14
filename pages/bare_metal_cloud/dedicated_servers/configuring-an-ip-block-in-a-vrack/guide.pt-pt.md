@@ -113,7 +113,7 @@ Agora tem de criar uma nova rota IP para o vRack. Para isso, basta adicionar uma
 253	default
 0	unspec
 # # #
-local
+# local
 # # #
 #1	inr.ruhep
 1 vrack
