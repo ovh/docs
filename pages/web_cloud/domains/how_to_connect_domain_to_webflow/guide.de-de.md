@@ -68,39 +68,39 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> ![dnszone](images/filter-a.png){.thumbnail}
 >>
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrer Domain ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
->> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht in Konflikt mit dem CNAME Eintrag steht, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihre Domain allein mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
->> - Wenn Sie keinen „A“-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} oben rechts auf Ihrem Bildschirm und wählen Sie das „Zeigerfeld“ `A`{.action}<br><br>
->> Sie müssen nacheinander zwei A-Einträge erstellen, um die zwei IPv4-Adressen für Webflow anzugeben.
->> Lassen Sie das Feld **Subdomain** leer und geben Sie die erste IPv4-Adresse des Webflows `75.2.70.75` in das Feld **Ziel** ein.
->> Klicken Sie auf `Weiter`{.action} und bestätigen Sie Ihren „A“ Eintrag. Wiederholen Sie den Vorgang für die zweite IPv4-Adresse `99.83.190.102`, und fahren Sie mit Schritt 2 fort.
+>> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht in Konflikt mit dem CNAME-Eintrag steht, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} Tabellenzeile zu Ihrer Domain mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
+>> - Wenn Sie keinen A-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} oben rechts und wählen Sie `A`{.action}.<br><br>
+>> Sie müssen nacheinander zwei A-Einträge erstellen, um die zwei IPv4-Adressen von Webflow anzugeben.
+>> Lassen Sie das Feld **Subdomain** leer und geben Sie die erste IPv4-Adresse `75.2.70.75` für Webflow in das Feld **Ziel** ein.
+>> Klicken Sie auf `Weiter`{.action} und bestätigen Sie Ihren A-Eintrag. Wiederholen Sie den Vorgang für die zweite IPv4-Adresse `99.83.190.102`, und fahren Sie mit Schritt 2 fort.
 > **Schritt 2**
 >> **AAAA-Eintrag**<br><br>
 >> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü, und wählen Sie `AAAA`.<br> aus, um die vorhandenen AAAA-Einträge zu identifizieren.
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}
 >>
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrer Domain ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
->> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), löschen Sie diesen ebenfalls, damit er nicht in Konflikt mit dem CNAME-Eintrag steht, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile zu Ihrer Domain mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
+>> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), löschen Sie diesen ebenfalls, damit er nicht in Konflikt mit dem CNAME-Eintrag steht, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile Ihrer Domain mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn Sie keinen existierenden AAAA-Eintrag haben, fahren Sie mit Schritt 3 fort.
 > **Schritt 3**
 >> **TXT-Eintrag**<br><br>
 >> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü, und wählen Sie `TXT`.<br> aus, um vorhandene TXT-Einträge zu identifizieren.
 >> ![dnszone](images/filter-txt.png){.thumbnail}
 >>
->> - Sind nur für den Domainnamen (Beispiel: `mydomain.ovh.`) und für dessen Subdomain "www" (Beispiel: `www.mydomain.ovh.`) TXT-Einträge vorhanden, müssen diese gelöscht werden, damit sie nicht in Konflikt mit dem CNAME-Eintrag stehen, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihre Domain allein mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
->> - Sie müssen einen Datensatz vom Typ „TXT“ erstellen. Klicken Sie auf den Button `Einen Eintrag hinzufügen`{.action} oben rechts auf Ihrem Bildschirm und wählen Sie das "Verweiseinträge" `TXT`{.action}.
+>> - Sind für den Domainnamen (Beispiel: `mydomain.ovh.`) und für dessen Subdomain "www" (Beispiel: `www.mydomain.ovh.`) TXT-Einträge vorhanden, müssen diese gelöscht werden, damit sie nicht in Konflikt mit dem CNAME-Eintrag stehen, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in den Tabellenzeile für den Domainnamen und der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
+>> - Sie müssen einen Eintrag vom Typ TXT erstellen. Klicken Sie auf den Button `Einen Eintrag hinzufügen`{.action} oben rechts und wählen Sie `TXT`{.action}.
 >> Füllen Sie das Feld **Subdomain** mit dem Wert `_webflow` aus, und geben Sie den Wert im Feld **Ziel** im Bereich `Site settings > Publishing tab > Production`{.action} Ihres Webflow Accounts vom Typ `one-time-verification=XXXXXXXX` ein. Ersetzen Sie `XXXXXXXX` durch den Wert in Ihrem Webflow-Konto.<br>
 >> ![dnszone](images/field-txt.png){.thumbnail}<br><br>
->> Klicken Sie auf `Weiter`{.action}, um Ihren „TXT“ Eintrag zu bestätigen und mit Schritt 4 fortzufahren.
+>> Klicken Sie auf `Weiter`{.action}, um Ihren TXT-Eintrag zu bestätigen und mit Schritt 4 fortzufahren.
 > **Schritt 4**
 >> **CNAME-Eintrag**<br><br>
 >> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü und wählen Sie `CNAME`.<br>
 >> ![dnszone](images/filter-cname.png){.thumbnail}
 >>
->> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile Ihrer Subdomain in „www.“ (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
->> - Wenn Sie keinen existierenden „CNAME“ Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} oben rechts auf Ihrem Bildschirm und wählen Sie das "Verweiseinträge" `CNAME`{.action}.
->> Vervollständigen Sie das Feld **Subdomain** mit dem Wert `www` und geben Sie `proxy-ssl.webflow.com` in das Feld **Ziel**.<br>
+>> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile der Subdomain "www" (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
+>> - Wenn Sie keinen existierenden CNAME-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} oben rechts und wählen Sie `CNAME`{.action}.
+>> Geben Sie im Feld **Subdomain** `www` ein und `proxy-ssl.webflow.com` im Feld **Ziel**.<br>
 >> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
->> Klicken Sie auf `Weiter`{.action}, um Ihren "CNAME" Eintrag zu bestätigen.
+>> Klicken Sie auf `Weiter`{.action}, um Ihren CNAME-Eintrag zu bestätigen.
 
 Die DNS-Zone ist nun zur Verwendung mit einem Webflow Hosting konfiguriert.
 
