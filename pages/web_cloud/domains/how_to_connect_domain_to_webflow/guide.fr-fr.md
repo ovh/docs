@@ -61,7 +61,8 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 > **Etape 1**
 >> **Enregistrement A**<br><br>
 >> Pour identifier les enregistrements « A » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `A`.<br>
->> ![dnszone](images/filter-a.png){.thumbnail}<br>
+>> ![dnszone](images/filter-a.png){.thumbnail}
+>>
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si un enregistrement pour le sous-domaine « www » est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
@@ -71,14 +72,16 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 > **Etape 2**
 >> **Enregistrement AAAA**<br><br>
 >> Pour identifier les enregistrements « AAAA » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `AAAA`.<br>
->> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> ![dnszone](images/filter-aaaa.png){.thumbnail}
+>>
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si un enregistrement pour le sous-domaine « www » est présent (exemple: `www.mydomain.ovh.`), supprimez-le également pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine avec le sous-domaine « www » puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « AAAA » existant, passez à l'étape 3.
 > **Etape 3**
 >> **Enregistrement TXT**<br><br>
 >>  Pour identifier les enregistrements « TXT » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `TXT`.<br>
->> ![dnszone](images/filter-txt.png){.thumbnail}<br>
+>> ![dnszone](images/filter-txt.png){.thumbnail}
+>>
 >> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www » (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Vous devez créer un enregistrement de type « TXT ». Cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `TXT`{.action}.
 >> Complétez le champ **Sous-domaine** avec la valeur `_webflow` et saisissez dans le champ **Cible** la valeur présente dans la section `Site settings > Publishing tab > Production`{.action} de votre compte Webflow, de type `one-time-verification=XXXXXXXX`. Remplacez `XXXXXXXX` par la valeur présente dans votre compte Webflow.<br>
@@ -88,6 +91,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> **Enregistrement CNAME**<br><br>
 >>  Pour identifier les enregistrements « CNAME » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `CNAME`.<br>
 >> ![dnszone](images/filter-cname.png){.thumbnail}
+>>
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `CNAME`{.action}.
 >> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez `proxy-ssl.webflow.com` dans le champ **Cible**.<br>
