@@ -67,7 +67,11 @@ Select the record you want by clicking each of the following tabs.
 >>
 > **DNAME**
 >> **D**elegation **NAME** <br><br>
->> Allows to generate an "alias" for all subdomains of a domain. This record avoids creating a multitude of CNAME records. A CNAME record redirects only one subdomain to a single target, independently.<br><br>Example: By creating a DNAME record from *domain.tld* to *ovh.com*, all subdomains from *domain.tld* (such as *dname.domain.tld* and *xxx.domain.tld*) will be redirected respectively to subdomains from *ovh.com* (such as *dname.ovh.com* and *xxx.ovh.com*).<br><br>In other words, the DNAME record indicates that *dname.domain.tld* and *xxx.domain.tld* must display the results of *dname.ovh.com* and *xxx.ovh.com*, respectively.
+>> Allows to generate an "alias" for all subdomains of a domain. This record avoids creating a multitude of CNAME records. A CNAME record redirects only one subdomain to a single target, independently.
+>>
+>> Example: By creating a DNAME record from *domain.tld* to *ovh.com*, all subdomains from *domain.tld* (such as *dname.domain.tld* and *xxx.domain.tld*) will be redirected respectively to subdomains from *ovh.com* (such as *dname.ovh.com* and *xxx.ovh.com*).
+>>
+>> In other words, the DNAME record indicates that *dname.domain.tld* and *xxx.domain.tld* must display the results of *dname.ovh.com* and *xxx.ovh.com*, respectively.
 >>
 >> > [!warning]
 >> >

@@ -47,7 +47,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> >
 >> > Cependant, si votre serveur dispose déjà d'une IPv4, nous vous recommandons de privilégier l'utilisation de celle-ci à votre IPv6.<br>
 >> > En effet, les IPv6 ne sont pas encore correctement interprétées sur l'ensemble du réseau Internet, ce qui peut engendrer des perturbations d'affichage ou d'accès.
->
+>>
 > **CNAME**
 >> **C**anonical **NAME**<br><br>
 >> Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.domain.tld* est un alias de *domain.tld*, cela indique que *www.domain.tld* utilisera l'adresse IP de *domain.tld*.
@@ -67,7 +67,11 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 > **Champ DNAME**
 >> **D**elegation **NAME**<br><br>
->> Permet de générer un « alias » pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible. Exemple : en créant un enregistrement DNAME de *domain.tld* vers *ovh.com*, tous les sous-domaines de *domain.tld* (tels que *dname.domain.tld* et *xxx.domain.tld*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (tels que *dname.ovh.com* et *xxx.ovh.com*). En d’autres termes, l’enregistrement DNAME indique que *dname.domain.tld* et *xxx.domain.tld* doivent respectivement afficher les résultats de *dname.ovh.com* et *xxx.ovh.com*.
+>> Permet de générer un « alias » pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible.
+>>
+>> Exemple : en créant un enregistrement DNAME de *domain.tld* vers *ovh.com*, tous les sous-domaines de *domain.tld* (tels que *dname.domain.tld* et *xxx.domain.tld*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (tels que *dname.ovh.com* et *xxx.ovh.com*).
+>>
+>> En d’autres termes, l’enregistrement DNAME indique que *dname.domain.tld* et *xxx.domain.tld* doivent respectivement afficher les résultats de *dname.ovh.com* et *xxx.ovh.com*.
 >>
 >> > [!warning]
 >> >

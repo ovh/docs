@@ -71,7 +71,11 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >>
 > **DNAME**
 >> **D**elegation **NAME** <br><br>
->> Hier können Sie einen "Alias" für alle Subdomains einer Domain erstellen. Mit diesem Eintrag wird vermieden, eine Vielzahl von CNAME-Einträgen erstellen zu müssen. Ein CNAME-Eintrag leitet nur eine Subdomain auf ein einziges Ziel um.<br><br>Beispiel: Durch die Erstellung eines DNAME-Eintrags von *domain.tld* zu *ovh.com* werden alle Subdomains von *domain.tld* (wie *dname.domain.tld* und *xxx.domain.tld*) auf Subdomains von *ovh.com* umgeleitet (wie *dname.ovh.com* und *xxx.ovh.com*).<br><br>Der DNAME-Eintrag bewirkt also, dass *dname.domain.tld* und *xxx.domain.tld* das Ziel von *dname.ovh.com* bzw. *xxx.ovh.com* anzeigen.
+>> Hier können Sie einen "Alias" für alle Subdomains einer Domain erstellen. Mit diesem Eintrag wird vermieden, eine Vielzahl von CNAME-Einträgen erstellen zu müssen. Ein CNAME-Eintrag leitet nur eine Subdomain auf ein einziges Ziel um.
+>>
+>> Beispiel: Durch die Erstellung eines DNAME-Eintrags von *domain.tld* zu *ovh.com* werden alle Subdomains von *domain.tld* (wie *dname.domain.tld* und *xxx.domain.tld*) auf Subdomains von *ovh.com* umgeleitet (wie *dname.ovh.com* und *xxx.ovh.com*).
+>>
+>> Der DNAME-Eintrag bewirkt also, dass *dname.domain.tld* und *xxx.domain.tld* das Ziel von *dname.ovh.com* bzw. *xxx.ovh.com* anzeigen.
 >>
 >> > [!warning]
 >> > 
