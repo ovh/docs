@@ -1,7 +1,7 @@
 ---
-title: Jak powiązać domenę OVHcloud z hostingiem Wix
-excerpt: Przygotuj i skonfiguruj strefę DNS Twojej domeny OVHcloud, aby połączyć ją z hostingiem Wix
-updated: 2024-04-17
+title: Jak powiązać domenę OVHcloud z hostingiem GoDaddy
+excerpt: Przygotuj i skonfiguruj strefę DNS Twojej domeny OVHcloud, aby połączyć ją z hostingiem GoDaddy
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -10,13 +10,13 @@ updated: 2024-04-17
 
 ## Wprowadzenie
 
-Posiadasz domenę w OVHcloud i chcesz ją połączyć z hostingiem Wix. W tym przewodniku znajdziesz etapy przygotowania i konfiguracji strefy DNS OVHcloud, aby umożliwić konfigurację hostingu Wix.
+Posiadasz domenę w OVHcloud i chcesz ją połączyć z hostingiem GoDaddy. W tym przewodniku znajdziesz etapy przygotowania i konfiguracji strefy DNS OVHcloud, aby umożliwić konfigurację hostingu GoDaddy.
 
-**Dowiedz się, jak powiązać domenę OVHcloud z hostingiem Wix**
+**Dowiedz się, jak powiązać domenę OVHcloud z hostingiem GoDaddy**
 
 > [!warning]
 >
-> - Pomoc Wix nie ma dostępu do ustawień Twojej domeny OVHcloud, a zatem nie może udzielić Ci porad dotyczących informacji, które należy jej dostarczyć.
+> - Pomoc GoDaddy nie ma dostępu do ustawień Twojej domeny OVHcloud, a zatem nie może udzielić Ci porad dotyczących informacji, które należy jej dostarczyć.
 >
 > - OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.<br><br> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z wyspecjalizowanym [usługodawcą](/links/partner) lub skontaktuj się z dostawcą usługi. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) również ten przewodnik.
 >
@@ -26,8 +26,8 @@ Posiadasz domenę w OVHcloud i chcesz ją połączyć z hostingiem Wix. W tym pr
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 - Posiadanie [domeny](/links/web/domains){.external} zarejestrowanej w OVHcloud.
 - Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w [Panelu klienta OVHcloud](/links/manager){.external}.
-- Posiadanie hostingu w Wix.
-- Dostęp do interfejsu zarządzania hostingiem w Wix.
+- Posiadanie hostingu w GoDaddy.
+- Dostęp do interfejsu zarządzania hostingiem w GoDaddy.
 
 ## W praktyce
 
@@ -35,11 +35,11 @@ Zalecamy, abyś przed przystąpieniem do dwóch kroków, zapoznał się z konfig
 
 > [!warning]
 >
-> Strefa DNS jest już wstępnie skonfigurowana lub powiązana z hostingiem. Zobaczymy, jak zidentyfikować każdy rekord DNS niezbędny do połączenia z hostingiem Wix. Niektóre z nich będą musiały zostać usunięte, aby uniknąć konfliktu z wymaganymi rekordami DNS w tej konfiguracji. Pozostałe zostaną po prostu zmodyfikowane lub utworzone. Aby lepiej zrozumieć, jako przykład posłużymy się nazwą domeny "**mydomain.ovh**". Zastąp go nazwą domeny podczas konfiguracji.
+> Strefa DNS jest już wstępnie skonfigurowana lub powiązana z hostingiem. Zobaczymy, jak zidentyfikować każdy rekord DNS niezbędny do połączenia z hostingiem GoDaddy. Niektóre z nich będą musiały zostać usunięte, aby uniknąć konfliktu z wymaganymi rekordami DNS w tej konfiguracji. Pozostałe zostaną po prostu zmodyfikowane lub utworzone. Aby lepiej zrozumieć, jako przykład posłużymy się nazwą domeny "**mydomain.ovh**". Zastąp go nazwą domeny podczas konfiguracji.
 
-### 1. Skonfiguruj hosting Wix
+### 1. Skonfiguruj hosting GoDaddy
 
-Jeśli korzystasz z hostingu Wix dla domeny OVHcloud, musisz najpierw przygotować hosting, postępując zgodnie z instrukcjami z **etapu 1** na [**tej stronie dokumentacji Wix**](https://support.wix.com/en/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882).
+Jeśli korzystasz z hostingu GoDaddy z domeną OVHcloud, najpierw musisz przygotować hosting, postępując zgodnie z instrukcjami podanymi na [**tej stronie dokumentacji GoDaddy**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US).
 
 ### 2. Konfiguracja wpisów DNS na koncie OVHcloud
 
@@ -48,8 +48,8 @@ Jeśli korzystasz z hostingu Wix dla domeny OVHcloud, musisz najpierw przygotowa
 > Prima di continuare:
 >
 > - Apri una scheda in parallelo sul tuo browser internet.
-> - Apri [**questa pagina della documentazione Wix**](https://support.wix.com/en/article/connected-un-domaine-%C3%A0-wix-par-pointage-5727882){.external}.
-> - Posizionati sulla sezione "**Step 2 | Aggiorna record DNS nell'account dell'hosting di dominio**" nella documentazione di Wix.<br>
+> - Apri [**questa pagina della documentazione GoDaddy**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US){.external}.
+> - Postępuj zgodnie z instrukcjami aż do etapu 10 i uzyskaj informacje dotyczące Twojej strony WWW, aby móc modyfikować rekordy DNS OVHcloud.<br>
 > Le istruzioni seguenti ti aiuteranno a configurare la tua zona DNS OVHcloud.
 
 Zaloguj się do Twojego [panelu klienta OVHcloud](/links/manager){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
@@ -68,17 +68,19 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> Aby zidentyfikować istniejące rekordy "A", kliknij menu filtrów w górnej części tabeli rekordów DNS i wybierz opcję `A`.<br>
 >> ![dnszone](images/filter-a.png){.thumbnail}
 >>
->> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli, który odnosi się tylko do Twojej domeny, bez subdomeny (na przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.
->> - Jeśli istnieje rekord dla subdomeny "www." (przykład: `www.mydomain.ovh.`), należy go usunąć, aby nie kolidował z rekordem CNAME, który wprowadzisz w etapie 3. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odnoszącego się tylko do Twojej domeny i subdomeny "www.", a następnie kliknij `Usuń rekord`{.action}.
+>> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli, który odnosi się tylko do Twojej domeny, bez subdomeny (na przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.<br>
+>> - Jeśli istnieje rekord dla subdomeny "www." (przykład: `www.mydomain.ovh.`), należy go usunąć, aby nie kolidował z rekordem CNAME, który wprowadzisz w etapie 3. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odnoszącego się tylko do Twojej domeny i subdomeny "www.", a następnie kliknij `Usuń rekord`{.action}.<br>
 >> - Jeśli nie masz istniejącego rekordu "A", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wskaźnika" `A`{.action}<br><br>
->> Pozostaw pole **Subdomena** puste i wpisz adres IPv4 *zgłoszony w interfejsie Wix* w polu **Cel**.
+>> Pozostaw pole **Subdomena** puste i wpisz adres IPv4 *zgłoszony w interfejsie GoDaddy* w polu **Cel**.
 >> Kliknij `Dalej`{.action}, zatwierdź rekord "A" i przejdź do etapu 2.
 > **Etap 2**
 >> **Rekord AAAA**<br><br>
 >>  Aby zidentyfikować istniejące rekordy "AAAA", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `AAAA`.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}
 >>
->> - Jeśli dla samej domeny (np. `mydomain.ovh.`) i dla jej subdomeny podano "www." (np. `www.mydomain.ovh.`) są widoczne rekordy "AAAA", należy je usunąć, aby nie kolidowały z rekordami "A" i "CNAME", które wprowadzisz w etapie 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odnoszącego się tylko do Twojej domeny i subdomeny "www.", a następnie kliknij `Usuń rekord`{.action}.<br>
+>> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli, który pasuje tylko do Twojej domeny, bez subdomeny (przykład: `mydomain.ovh.`), a następnie kliknij `Usuń rekord`{.action}.<br>
+>> - Jeśli jest obecny rekord dla subdomeny "www" (przykład: `www.mydomain.ovh.`), usuń go również, aby nie kolidował z rekordem CNAME, który wprowadzisz w kroku 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej domenie z subdomeną "www", a następnie kliknij `Usuń rekord`{.action}.<br>
+>> - Jeśli nie masz istniejącego rekordu "AAAA", przejdź do etapu 3.
 > **Etap 3**
 >> **Rekord TXT**<br><br>
 >>  Aby zidentyfikować istniejące rekordy "TXT", kliknij menu filtrów na górze tabeli rekordów DNS i wybierz opcję `TXT`.<br>
@@ -90,12 +92,12 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >>  Aby zidentyfikować istniejące rekordy "CNAME", kliknij menu filtrów na górze tabeli rekordów DNS i wybierz opcję `CNAME`.<br>
 >> ![dnszone](images/filter-cname.png){.thumbnail}
 >>
->> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej subdomenie "www." (przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.
+>> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej subdomenie "www." (przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.<br>
 >> - Jeśli nie posiadasz istniejącego rekordu "CNAME", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wpisu" `CNAME`{.action}.
->> Uzupełnij pole **Subdomena** wartością `www` i wpisz wartość odczytaną w interfejsie Wix w polu **Cel**.<br>
+>> Uzupełnij pole **Subdomena** wartością `www` i wpisz wartość odczytaną w interfejsie GoDaddy w polu **Cel**.<br>
 >> Kliknij `Dalej`{.action}, po czym zatwierdź rekord "CNAME".
 
-Strefa DNS jest teraz skonfigurowana do łączenia z hostingiem Wix.
+Strefa DNS jest teraz skonfigurowana do łączenia z hostingiem GoDaddy.
 
 > [!primary]
 >

@@ -40,7 +40,8 @@ When using a Webflow hosting plan with an OVHcloud domain name, you must first p
 
 > [!warning]
 >
-> Before you continue: <br>
+> Before you continue:
+>
 > - Open a tab in your web browser.
 > - Open [**this webflow documentation page**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export){.external}.
 > - Go to the “**How to set your DNS records**” section of the Webflow documentation.<br>
@@ -60,7 +61,8 @@ Follow the steps in order by browsing the following tabs:
 > **Step 1**
 >> **Record A**<br><br>
 >> To identify existing A records, click the filter menu at the top of the DNS records table and select `A`.<br>
->>![dnszone](images/filter-a.png){.thumbnail}<br>
+>>![dnszone](images/filter-a.png){.thumbnail}
+>>
 >> - Click the `...`{.action} button to the right of the table row that corresponds to your domain name alone, without a subdomain (e.g. `mydomain.ovh.`), then click `Modify record`{.action}.<br>
 >> - If a record for the "www" subdomain is present (e.g.: `www.mydomain.ovh.`), you must delete it so that it does not conflict with the CNAME record you enter in step 4. Click the `...`{.action} button to the right of the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.<br>
 >> - If you do not have an existing "A" record, click the `Add an entry`{.action} button in the top right-hand corner of your screen and select the `A`{.action}<br><br>
@@ -70,14 +72,16 @@ Follow the steps in order by browsing the following tabs:
 > **Step 2**
 >> **AAAA record**<br><br>
 >> To identify existing "AAAA" records, click the filter menu at the top of the DNS records table and select `AAAA`.<br>
->> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> ![dnszone](images/filter-aaaa.png){.thumbnail}
+>>
 >> - Click the `...`{.action} button to the right of the table row that corresponds to your domain name alone, without a subdomain (e.g. `mydomain.ovh.`), then click `Delete record`{.action}.<br>
 >> - If a record for the "www" subdomain is present (e.g.: `www.mydomain.ovh.`), also delete it so that it does not conflict with the CNAME record you enter in step 4. Click the `...`{.action} button to the right of the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.<br>
 >> - If you do not have an existing AAAA record, proceed to step 3.
 > **Step 3**
 >> **TXT record**<br><br>
 >> To identify existing "TXT" records, click the filter menu at the top of the DNS records table and select `TXT`.<br>
->>![dnszone](images/filter-txt.png){.thumbnail}<br>
+>>![dnszone](images/filter-txt.png){.thumbnail}
+>>
 >> - If "TXT" records are present for the domain name alone (e.g. `mydomain.ovh.`) and for its subdomain in "www" (e.g. `www.mydomain.ovh.`), you must delete them so that they do not conflict with the CNAME record that you enter in step 4. Click the `...`{.action} button to the right of the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.<br>
 >> - You must create a record of type "TXT". Click on the `Add an entry`{.action} button in the top right-hand corner of your screen and select the `TXT`{.action} "Pointer record".
 >> Enter the **Sub-domain** with the value `_webflow` in the **Target** field, and enter the value in the `Site settings > Publishing tab > Production`{.action} section of your Webflow account, of type `one-time-verification=XXXXXXXX`. Replace `XXXXXXXX` with the value present in your Webflow account.<br>
@@ -87,6 +91,7 @@ Follow the steps in order by browsing the following tabs:
 >> **CNAME record**<br><br>
 >> To identify existing "CNAME" records, click the filter menu at the top of the DNS records table and select `CNAME`.<br>
 >>![dnszone](images/filter-cname.png){.thumbnail}
+>>
 >> - Click the `...`{.action} button to the right of the table row corresponding to your subdomain in "www." (e.g. `mydomain.ovh.`), then click `Modify record`{.action}.<br>
 >> - If you do not have an existing "CNAME" record, click the `Add an entry`{.action} button in the top right-hand corner of your screen, and select the `CNAME`{.action} "pointer record’.
 >> Enter **Sub-domain** with the value `www` and enter `proxy-ssl.webflow.com` in the **Target** field.<br>
