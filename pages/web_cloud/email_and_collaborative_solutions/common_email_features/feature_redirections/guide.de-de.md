@@ -140,7 +140,7 @@ Folgen Sie den Anweisungen, indem Sie nacheinander auf die einzelnen Registerkar
 >>
 > **Schritt 2**
 >> In den **Optionen** der linken Navigationsstruktur finden Sie den Bereich **Automatische Verarbeitung**. Klicken Sie hier auf `Posteingangs- und Aufräumregeln`{.action}. <br><br>
->> ![emails](images/OWA-redirect-del-01.png){.thumbnail}<br><br>
+>> ![emails](images/owa-redirect-del-01.png){.thumbnail}<br><br>
 >> Dieser Abschnitt enthält die Optionen zum Verwalten der Weiterleitungen und Filter.<br>
 >>
 > **Schritt 3**
@@ -244,4 +244,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Treten Sie unserer [User Community](/links/community) bei.
+Treten Sie unserer [User Community](https://community.ovh.com/en/) bei.

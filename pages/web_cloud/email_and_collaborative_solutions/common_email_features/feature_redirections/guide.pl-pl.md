@@ -149,7 +149,7 @@ Postępuj zgodnie z instrukcjami podanymi w poniższych zakładkach:
 > **Etap 1**
 >>
 >> Po zalogowaniu się do swojego konta e-mail przez [webmail](/links/web/email), w prawym górnym rogu kliknij ikonę koła zębatego, a następnie ikonę `Opcje`{.action}.<br><br>
->> ![emails](images/emaile-all-01.png){.thumbnail}<br>
+>> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etap 2**
 >> W lewej kolumnie okna **Opcje** przejdź do kategorii **Automatyczne przetwarzanie** w sekcji **Poczta** i kliknij `Skrzynka odbiorcza i reguły oczyszczania`{.action}. <br><br>
@@ -257,4 +257,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](https://community.ovh.com/en/).
