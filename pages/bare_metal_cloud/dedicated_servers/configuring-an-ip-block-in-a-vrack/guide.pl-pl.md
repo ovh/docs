@@ -113,7 +113,7 @@ Następnie utwórz nową trasę IP dla vRack. W tym celu dodaj nową regułę ru
 253	default
 0	unspec
 # # #
-local
+# local
 # # #
 #1	inr.ruhep
 1 vrack
