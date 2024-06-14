@@ -39,7 +39,7 @@ Bevor Sie dieser Anleitung folgen, empfehlen wir, sich mit der Konfiguration von
 
 ### 1. Ihr GoDaddy Hosting konfigurieren
 
-Wenn Sie ein GoDaddy-Hosting mit einem OVHcloud Domainnamen verwenden, müssen Sie Ihr Hosting zunächst gemäß den Anweisungen in [**dieser Seite der GoDaddy-Dokumentation**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US) vorbereiten.
+Wenn Sie ein GoDaddy-Hosting mit einem OVHcloud Domainnamen verwenden, müssen Sie Ihr Hosting zunächst gemäß den Anweisungen auf [**dieser Seite der GoDaddy-Dokumentation**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US) vorbereiten.
 
 ### DNS-Einträge in Ihrem OVHcloud Kunden-Account konfigurieren
 
