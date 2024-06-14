@@ -1,7 +1,7 @@
 ---
 title: 'Configuring a network bridge'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2024-06-12
+updated: 2024-06-14
 ---
 
 > [!primary]
@@ -347,9 +347,7 @@ If you receive a response, this means that the Additional IP has been correctly 
 
 #### Rocky Linux 9 and Alma Linux 9
 
-In the previous versions of Rocky Linux and Alma Linux, network profiles were stored in ifcfg format in this directory: /etc/sysconfig/network-scripts/. However, the ifcfg format is now deprecated and has been replaced keyfiles. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in /etc/NetworkManager/system-connections/.
-
-For demonstration purposes, our file is called `ens18-nmconnection`.
+In the previous versions of Rocky Linux and Alma Linux, network profiles were stored in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated and has been replaced with keyfiles. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in this directory: `/etc/NetworkManager/system-connections/`.
 
 Once you are connected to the shell of your virtual machine, run the following command to identify your interface name:
 
@@ -357,7 +355,7 @@ Once you are connected to the shell of your virtual machine, run the following c
 ls /sys/class/net
 ```
 
-Next, make a copy of the configuration file, so that you can revert at any time:
+Next, make a copy of the configuration file, so that you can revert at any time. For demonstration purposes, our file is called `ens18-nmconnection`:
 
 ```bash
 sudo cp /etc/NetworkManager/system-connections/ens18-nmconnection /etc/NetworkManager/system-connections/ens18-nmconnection.bak
@@ -386,6 +384,23 @@ Restart your network interface with the following command:
 ```bash
 sudo systemctl restart NetworkManager
 ```
+
+To verify that the virtual machine is fully connected to the Internet, use the following command:
+
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24,925/28,028/30,840/2,254 ms
+```
+
+If you receive a response, this means that the Additional IP has been correctly configured. If not, reboot your virtual machine and retry the ping command.
 
 #### FreeBSD 
 
@@ -600,7 +615,7 @@ Next, ping your Additional IP address from an external device.
 
 - If it responds, that probably means that there is a configuration error either on the VM or the host that prevents the Additional IP from working in normal mode.
 
-- If the IP address is still not working, please create a ticket in your [OVHcloud Control Panel](/links/manager) to relay your test results to our support teams.
+- If the IP address is still not working, please open a support ticket via the [help center](https://help.ovhcloud.com/csm?id=csm_cases_requests) to relay your test results to our support teams.
 
 ## Go further
 
