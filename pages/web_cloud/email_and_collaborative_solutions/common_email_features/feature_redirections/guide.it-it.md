@@ -148,7 +148,7 @@ Segui i passaggi descritti cliccando su ciascuna scheda qui sotto:
 > [!tabs]
 > **Step 1**
 >> Una volta connesso al tuo indirizzo email tramite la [webmail](/links/web/email), clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Opzioni`{.action}.<br><br><br>
->> ![email](images/email-all-01.png){.thumbnail}<br>
+>> ![email](images/owa-redirect-del-01.png){.thumbnail}<br>
 >>
 > **Step 2**
 >> Dalla finestra **Opzioni**, nella colonna di sinistra, vai alla categoria **Elaborazione automatica** della sezione **Posta** e clicca su `Regole Posta in arrivo e organizzazione`{.action}. <br><br>
@@ -254,4 +254,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra [Community di utenti](/links/community).
+Contatta la nostra [Community di utenti](https://community.ovh.com/en/).

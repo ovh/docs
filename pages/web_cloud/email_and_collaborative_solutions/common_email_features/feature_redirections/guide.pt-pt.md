@@ -150,7 +150,7 @@ Siga os passos descritos, clicando sucessivamente em cada separador abaixo:
 > **Etapa 1**
 >>
 >> Depois de aceder ao endereço de e-mail através do [webmail](https://www.ovhcloud.com/fr/mail/), clique na roda dentada no canto superior direito e, a seguir, em Opções`{.action}.<br><br>>
->> ![emails](imagens/emails-all-01.png){.thumbnail}<br>
+>> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etapa 2**
 >> Na janela **Options**, na coluna da esquerda, aceda à categoria **Tratamento automático** na secção **Mail** e clique em `Regras da caixa de entrada e de arrumação`{.action}. <br><br>
@@ -257,4 +257,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com nossa [comunidade de utilizadores](https://community.ovh.com/en/).
