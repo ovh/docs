@@ -4,18 +4,31 @@
 - **Dedicated Servers**
   - Getting Started
     - https://help.ovhcloud.com/csm/en-ie-dedicated-servers-getting-started-dedicated-server?id=kb_article_view&sysparm_article=KB0043476
+    - https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-control-panel-guided-tour?id=kb_article_view&sysparm_article=KB0043463
+    - https://help.ovhcloud.com/csm/en-dedicated-servers-ssh-introduction?id=kb_article_view&sysparm_article=KB0044021
   - Configuration
     - Administration
+      - https://help.ovhcloud.com/csm/en-dedicated-servers-creating-ssh-keys?id=kb_article_view&sysparm_article=KB0043380
+      - https://help.ovhcloud.com/csm/en-dedicated-servers-root-password?id=kb_article_view&sysparm_article=KB0043633
+      - https://help.ovhcloud.com/csm/en-dedicated-servers-windows-key?id=kb_article_view&sysparm_article=KB0044093
+      - https://help.ovhcloud.com/csm/en-dedicated-servers-windows-admin-password-change?id=kb_article_view&sysparm_article=KB0043295
+      - https://help.ovhcloud.com/csm/en-dedicated-servers-secondary-dns?id=kb_article_view&sysparm_article=KB0043239
+      - https://help.ovhcloud.com/csm/en-dedicated-servers-uninstall-rtm?id=kb_article_view&sysparm_article=KB0058488
+      - https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-ssh-key?id=kb_article_view&sysparm_article=KB0043874
     - Deployments
+      - https://help.ovhcloud.com/csm/en-dedicated-servers-activate-windows-vm-hyperv?id=kb_article_view&sysparm_article=KB0043231
     - Conceptions
     - Performances
   - Migrations
   - Tutorials
   - Security
   - Support / Troubleshooting
+    - https://help.ovhcloud.com/csm/en-managing-billing-payments-services-raci-dedicated-server?id=kb_article_view&sysparm_article=KB0061754
+    - https://help.ovhcloud.com/csm/en-dedicated-servers-change-password?id=kb_article_view&sysparm_article=KB0061802
   - Additional Resources
 - **Eco Dedicated Servers**
   - Getting Started
+    - https://help.ovhcloud.com/csm/en-ie-dedicated-servers-getting-started-dedicated-server-eco?id=kb_article_view&sysparm_article=KB0043490
   - Configuration
     - Administration
     - Deployments
@@ -41,9 +54,12 @@
 
 ## VPS - Virtual Private Servers
 - Getting Started
+  - https://help.ovhcloud.com/csm/en-ie-vps-getting-started?id=kb_article_view&sysparm_article=KB0047715
 - Configuration
   - Administration
+    - https://help.ovhcloud.com/csm/en-ie-vps-use-kvm?id=kb_article_view&sysparm_article=KB0047775
   - Deployments
+    - https://help.ovhcloud.com/csm/en-ie-vps-pre-installed-applications?id=kb_article_view&sysparm_article=KB0047517
   - Conceptions
   - Performances
 - Migrations
@@ -150,3 +166,5 @@
   - Security
   - Support / Troubleshooting
   - Additional Resources
+
+17
