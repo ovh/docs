@@ -65,9 +65,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> ![dnszone](images/filter-a.png){.thumbnail}
 >>
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.
->>
 >> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 3. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul et avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.
->>
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
 >> Laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv4 *relevée depuis votre interface Wix* dans le champ **Cible**.
 >> Cliquez sur `Suivant`{.action}, validez votre enregistrement « A » et passez à l'étape 2.
@@ -89,7 +87,6 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> ![dnszone](images/filter-cname.png){.thumbnail}
 >>
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.
->>
 >> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `CNAME`{.action}.
 >> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez la valeur relevée depuis votre interface Wix dans le champ **Cible**.<br>
 >> Cliquez sur `Suivant`{.action} puis validez votre enregistrement « CNAME ».

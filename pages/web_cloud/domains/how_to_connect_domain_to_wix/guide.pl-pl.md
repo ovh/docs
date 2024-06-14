@@ -69,9 +69,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> ![dnszone](images/filter-a.png){.thumbnail}
 >>
 >> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli, który odnosi się tylko do Twojej domeny, bez subdomeny (na przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.
->>
 >> - Jeśli istnieje rekord dla subdomeny "www." (przykład: `www.mydomain.ovh.`), należy go usunąć, aby nie kolidował z rekordem CNAME, który wprowadzisz w etapie 3. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odnoszącego się tylko do Twojej domeny i subdomeny "www.", a następnie kliknij `Usuń rekord`{.action}.
->>
 >> - Jeśli nie masz istniejącego rekordu "A", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wskaźnika" `A`{.action}<br><br>
 >> Pozostaw pole **Subdomena** puste i wpisz adres IPv4 *zgłoszony w interfejsie Wix* w polu **Cel**.
 >> Kliknij `Dalej`{.action}, zatwierdź rekord "A" i przejdź do etapu 2.
@@ -93,7 +91,6 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> ![dnszone](images/filter-cname.png){.thumbnail}
 >>
 >> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej subdomenie "www." (przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.
->>
 >> - Jeśli nie posiadasz istniejącego rekordu "CNAME", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wpisu" `CNAME`{.action}.
 >> Uzupełnij pole **Subdomena** wartością `www` i wpisz wartość odczytaną w interfejsie Wix w polu **Cel**.<br>
 >> Kliknij `Dalej`{.action}, po czym zatwierdź rekord "CNAME".

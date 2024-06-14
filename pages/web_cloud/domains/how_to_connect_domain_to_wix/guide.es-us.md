@@ -69,15 +69,13 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >> ![Zona DNS](images/filter-a.png){.thumbnail}
 >>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla que corresponde a su nombre de dominio solo, sin subdominio (por ejemplo: `mydomain.ovh.`) y haga clic en `Editar el registro`{.action}.
->>
 >> - Si hay un registro para el subdominio "www." (por ejemplo: `www.mydomain.ovh.`), deberá eliminarlo para que no entre en conflicto con el registro CNAME que vaya a introducir en el paso 3. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo y con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.
->>
 >> - Si no tiene un registro "A" existente, haga clic en el botón `Añadir una entrada`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de registro" `A`{.action}<br><br>
 >> Deje el campo **Subdominio** en blanco e introduzca la dirección IPv4 *obtenida de su interfaz Wix* en el campo **Destino**.
 >> Haga clic en `Siguiente`{.action}, acepte el registro "A" y continúe con el paso 2.
 > **Paso 2**
 >> **Registro AAAA**<br><br>
->>  Para identificar los registros "AAAA" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `AAAA`.<br>
+>> Para identificar los registros "AAAA" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `AAAA`.<br>
 >> ![Zona DNS](images/filter-aaaa.png){.thumbnail}
 >>
 >> - Si existen registros "AAAA" para el dominio solo (por ejemplo, `mydomain.ovh.`) y para su subdominio "www" (por ejemplo, `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con los registros "A" y "CNAME" que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo y con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
@@ -93,7 +91,6 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >> ![Zona DNS](images/filter-cname.png){.thumbnail}
 >>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente a su subdominio en "www." (por ejemplo: `mydomain.ovh.`) y haga clic en `Modificar el registro`{.action}.
->>
 >> - Si no tiene un registro "CNAME" existente, haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de registro" `CNAME`{.action}.
 >> Rellene el campo **Subdominio** con el valor `www` e introduzca el valor obtenido desde su interfaz Wix en el campo **Destino**.<br>
 >> Haga clic en `Siguiente`{.action} y acepte el registro CNAME.

@@ -64,9 +64,7 @@ Follow the steps in order by browsing the following tabs:
 >> ![dnszone](images/filter-a.png){.thumbnail}
 >>
 >> - Click the `...`{.action} button in the table row that corresponds to your domain name (e.g. `mydomain.ovh.`) without a subdomain, then click `Edit record`{.action}.
->>
 >> - If a record for the subdomain "www" is present (e.g.: `www.mydomain.ovh.`), delete it so that it does not conflict with the CNAME record you enter in step 4. Click on the `...`{.action} button in the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.
->>
 >> - If you do not have an existing "A" record, click the `Add Entry`{.action} button in the top right of your screen and select `A`{.action}<br><br>
 >> Leave the **Subdomain** field blank and enter the IPv4 address *shown in your Wix interface* into the **Target** field.
 >> Click `Next`{.action}, confirm your A record, and go to step 2.
@@ -88,7 +86,6 @@ Follow the steps in order by browsing the following tabs:
 >> ![dnszone](images/filter-cname.png){.thumbnail}
 >>
 >> - Click on the `...`{.action} button to the right of the table row corresponding to the subdomain "www" (example: `mydomain.ovh.`) then click `Edit record`{.action}.
->>
 >> - If you do not have an existing CNAME record, click the `Add record`{.action} button in the top right-hand corner of your screen and select `CNAME`{.action}.
 >> Fill in the **Sub-domain** field with the value `www`, and enter the value from your Wix interface into the **Target** field.<br>
 >> Click `Next`{.action}, then confirm your CNAME record.

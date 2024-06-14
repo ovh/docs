@@ -69,15 +69,13 @@ Siga as etapas em ordem nas seguintes guias:
 >> ![dnszone](images/filter-a.png){.thumbnail}
 >>
 >> - Clique no botão `...`{.action} à direita da linha da tabela que corresponde ao seu nome de domínio apenas, sem um subdomínio (exemplo: `mydomain.ovh.`), e depois clique em `Modificar entrada`{.action}.
->>
 >> - Se existir um registo para o subdomínio "www.» (exemplo: `www.mydomain.ovh.`), deverá eliminá-lo para que não entre em conflito com o registo CNAME que vai introduzir no passo 3. Clique no botão `...`{.action} à direita da linha correspondente ao seu domínio e ao subdomínio "www.» e clique em `Eliminar entrada`{.action}.
->>
 >> - Se não possui um registo "A" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `A`{.action}<br><br>
->> Deixe o campo **Subdomínio** vazio e introduza o endereço IPv4 *registado na sua interface Wix* no campo **Destino**.
+>> Deixe o campo **Subdomínio** vazio e introduza o endereço IPv4 *registado na sua interface Wix* no campo **Alvo**.
 >> Clique em `Seguinte`{.action}, valide o seu registo "A" e passe à etapa 2.
 > **Etapa 2**
 >> **Registo AAAA**<br><br>
->>  Para identificar os registos "AAAA", clique no menu Filtros na parte superior da tabela de registos DNS e selecione `AAAA`.<br>
+>> Para identificar os registos "AAAA", clique no menu Filtros na parte superior da tabela de registos DNS e selecione `AAAA`.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}
 >>
 >> - Se estiverem presentes registos "AAAA" para o nome de domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www.» (exemplo: `www.mydomain.ovh.`), deve eliminá-los para que não entrem em conflito com os registos "A" e "» CNAME que irá indicar no passo 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu domínio e ao subdomínio "www.» e clique em `Eliminar entrada`{.action}.<br>
@@ -89,11 +87,10 @@ Siga as etapas em ordem nas seguintes guias:
 >> - Se existirem registos "TXT" apenas para o nome de domínio (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www.» (exemplo: `www.mydomain.ovh.`), deve eliminá-los para que não entrem em conflito com o registo CNAME que vai introduzir no passo 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu nome de domínio apenas com o subdomínio "www.» e clique em `Eliminar entrada`{.action}.<br>
 > **Etapa 4**
 >> **Registo CNAME**<br><br>
->>  Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `CNAME`.<br>
+>> Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `CNAME`.<br>
 >> ![dnszone](images/filter-cname.png){.thumbnail}
 >>
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www.» (exemplo: `mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.
->>
 >> - Se não possui um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do seu ecrã e selecione o "Campo de apontamento" `CNAME`{.action}.
 >> Preencha o campo **Subdomínio** com o valor `www` e introduza o valor medido a partir da sua interface Wix no campo **Alvo**.<br>
 >> Clique em `Seguinte`{.action} e valide o seu registo "CNAME".
