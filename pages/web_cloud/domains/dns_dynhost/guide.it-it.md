@@ -18,7 +18,7 @@ Puoi, ad esempio, precisare:
 - I server di posta (record DNS di tipo *MX*) verso cui il tuo dominio deve reindirizzare le email che riceve. Per consultare i tuoi indirizzi email personalizzati con il tuo dominio.
 - Informazioni relative alla sicurezza/autenticazione dei servizi associati (hosting Web, server Web, server di posta, ecc...) al tuo dominio (record DNS di tipo *SPF*, *DKIM*, *DMARC*, ecc...).
 
-Se necessario, consulta [la nostra documentazione sui record DNS e sulla modifica di una zona DNS](/pages/web_cloud/domains/dns_zone_edit) dal tuo [Spazio Cliente OVHcloud](/links/manager).
+In caso di necessità, consulta la nostra documentazione relativa a [i record DNS](/pages/web_cloud/domains/dns_zone_records) e alla [modifica di una zona DNS](/pages/web_cloud/domains/dns_zone_edit) dal tuo [Spazio Cliente OVHcloud](/links/manager).
 
 L'aggiornamento "dinamico" di un record DNS può evitare un'interruzione prolungata di uno dei tuoi servizi se non disponi di un indirizzo IP detto "fisso" (che non cambia).
 
