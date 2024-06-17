@@ -59,7 +59,7 @@ Trzy opcje przekierowania są dostępne w [Panelu klienta OVHcloud](/links/manag
 > W zakładce `Przekierowanie`{.action} znajduje się czwarta opcja umożliwiająca szybkie przekierowanie domeny na rekordy DNS A, AAAA i CNAME.<br>
 > Ponieważ w tym przypadku nie chodzi o "przekierowanie", w tym przewodniku nie zostanie szczegółowo opisany ten wariant.
 >
-> Więcej informacji na temat wpisów DNS znajdziesz w dokumentacji dotyczącej [rekordy DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Więcej informacji na temat wpisów DNS znajdziesz w dokumentacji dotyczącej [rekordy DNS](/pages/web_cloud/domains/dns_zone_records).
 >
 
 Poniżej znajdziesz trzy rodzaje przekierowań opisanych krok po kroku.

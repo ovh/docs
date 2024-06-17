@@ -62,7 +62,7 @@ To further optimise email sending and lower the risk of your emails being blocke
 
 To begin, you first have to create an A record in the DNS Zone of your domain with the IP address of your server as a target.
 
-If your DNS servers are managed by OVHcloud, please refer to our guide on [editing an OVHcloud DNS zone via the OVHcloud Control Panel](/pages/web_cloud/domains/dns_zone_edit#access-the-area-for-managing-an-ovhcloud-dns-zone).
+If your DNS servers are managed by OVHcloud, please refer to our guide on [editing an OVHcloud DNS zone via the OVHcloud Control Panel](/pages/web_cloud/domains/dns_zone_edit).
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 

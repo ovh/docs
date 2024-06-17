@@ -103,7 +103,7 @@ If you are using an OVHcloud email solution, or if you plan to subscribe to one 
 
 ## Go further <a name="go-further"></a>
 
-[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_edit)
 
 [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)
 

@@ -146,7 +146,7 @@ Przejdź do zakładki `Serwery DNS`{.action}, następnie kliknij polecenie `Zmie
 > W przeciwnym razie spersonalizowane serwery DNS nie zostaną uwzględnione prawidłowo i nie będą działać z Twoją domeną.
 >
 
-Zakończ ostatni etap i, jeśli potrzebujesz więcej informacji, skorzystaj z instrukcji zawartych w naszej dokumentacji "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
+Zakończ ostatni etap i, jeśli potrzebujesz więcej informacji, skorzystaj z instrukcji zawartych w naszej dokumentacji "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 > [!primary]
 > 

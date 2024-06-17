@@ -112,7 +112,7 @@ The signature is then encrypted with the private key using asymmetric encryption
 
 #### Why do we need to configure DNS servers? <a name="dns-and-dkim"></a>
 
-In order for a recipient to verify the sender's DKIM signature, they will need the DKIM parameters and especially the public key to decrypt it. A domain name’s [DNS zone](/pages/web_cloud/domains/dns_zone_edit) is public, which is why a DNS record is added to transmit the public key and DKIM settings to the recipient.
+In order for a recipient to verify the sender's DKIM signature, they will need the DKIM parameters and especially the public key to decrypt it. A domain name’s [DNS zone](/pages/web_cloud/domains/dns_zone_general_information) is public, which is why a DNS record is added to transmit the public key and DKIM settings to the recipient.
 
 #### What is a DKIM selector? <a name="selector"></a>
 

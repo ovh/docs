@@ -211,6 +211,6 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-[Editing the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information)
+[Editing the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
 
 Join our community of users on <https://community.ovh.com/en/>.

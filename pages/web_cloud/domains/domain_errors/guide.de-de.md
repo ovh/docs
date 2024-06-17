@@ -93,7 +93,7 @@ Im folgenden Beispiel antwortet die IP-Adresse des DNS-Servers nicht.
 
 ![domain](images/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
 
-Wählen Sie im Bereich `Domainnamen`{.action} die betreffende Domain aus und klicken Sie dann auf den Tab `DNS Server`{.action}. Bearbeiten Sie in diesem Tab [Ihre DNS Server](/pages/web_cloud/domains/dns_server_general_information). 
+Wählen Sie im Bereich `Domainnamen`{.action} die betreffende Domain aus und klicken Sie dann auf den Tab `DNS Server`{.action}. Bearbeiten Sie in diesem Tab [Ihre DNS Server](/pages/web_cloud/domains/dns_server_edit). 
 
 #### Fehler bei einer Domain mit der Endung **.ie**, **.de** oder **.it** ** nach einem DNS-Update
 
@@ -137,7 +137,7 @@ Wenn Sie eine Anomalie feststellen, die nicht mit der Konfiguration der DNS-Serv
 
 [Eine Domain zu einem anderen Registrar transferieren](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-[DNS-Server einer OVHcloud Domain ändern](/pages/web_cloud/domains/dns_server_general_information)
+[DNS-Server einer OVHcloud Domain ändern](/pages/web_cloud/domains/dns_server_edit)
  
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

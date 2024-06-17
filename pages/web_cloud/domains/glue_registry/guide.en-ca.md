@@ -141,7 +141,7 @@ Go to the `DNS servers`{.action} tab, then click `Modify DNS servers`{.action}. 
 > Without this, custom DNS servers will not be registered correctly, and will not work with your domain name.
 >
 
-Finalise the steps and, if necessary, refer to the instructions set out in our documentation "[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_general_information)”.
+Finalise the steps and, if necessary, refer to the instructions set out in our documentation "[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_edit)”.
 
 > [!primary]
 > 

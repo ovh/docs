@@ -91,7 +91,7 @@ Es gibt zwei mögliche Szenarien:
 >
 > Die aktive DNS-Zone Ihrer Domain wird nicht zwingend bei demselben Anbieter verwaltet wie Ihre Domain.
 >
-> 1: Um zu ermitteln, wo sich die aktive DNS-Zone einer bei OVHcloud registrierten Domain befindet, lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)“.
+> 1: Um zu ermitteln, wo sich die aktive DNS-Zone einer bei OVHcloud registrierten Domain befindet, lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)“.
 >
 > 2: Wenn Ihre Domain nicht bei OVHcloud registriert ist, kontaktieren Sie den aktuellen *Registrar* Ihrer Domain, um herauszufinden, wo ihre aktive DNS-Zone gehostet ist. Beachten Sie, dass Sie unsere Anleitung „[Domain zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)“ verwenden können, um diese Aktion durchzuführen.
 >
@@ -180,7 +180,7 @@ Weitere Informationen zur Konfiguration einer E-Mail Pro Plattform finden Sie in
 
 [Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
-[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)
+[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)
 
 [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 

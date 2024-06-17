@@ -389,7 +389,7 @@ Cette variable peut être utilisée lorsque vous déplacez temporairement des fi
 
 [Effectuer d'autres opérations avec le fichier « .htaccess » ](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do).
 
-[Comment éditer ma zone DNS ?](/pages/web_cloud/domains/dns_zone_edit)
+[Comment éditer ma zone DNS ?](/pages/web_cloud/domains/dns_zone_records)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

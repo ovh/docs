@@ -107,7 +107,7 @@ Wenn Sie ein E-Mail-Angebot von OVHcloud verwenden oder eines unserer [E-Mail-An
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[DNS-Server von OVHcloud Domainnamen ändern](/pages/web_cloud/domains/dns_server_general_information)
+[DNS-Server von OVHcloud Domainnamen ändern](/pages/web_cloud/domains/dns_server_edit)
 
 [OVHcloud DNS-Zone für einen Domainnamen erstellen](/pages/web_cloud/domains/dns_zone_create)
 

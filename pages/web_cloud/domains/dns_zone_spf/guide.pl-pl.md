@@ -223,6 +223,6 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 
 [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit){.external}.
 
-[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information){.external}.
+[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit){.external}.
 
 Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

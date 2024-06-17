@@ -118,7 +118,7 @@ A assinatura é depois encriptada com a chave privada utilizando a encriptação
 
 #### Porque é que precisamos de configurar os servidores DNS? <a name="dns-and-dkim"></a>
 
-Para que o destinatário possa verificar a assinatura DKIM do remetente, precisará dos parâmetros DKIM e, sobretudo, da chave pública para a decifrar. A [zona DNS](/pages/web_cloud/domains/dns_zone_edit) de um nome de domínio é pública, pelo que é acrescentado um registo DNS para transmitir a chave pública e os parâmetros DKIM ao destinatário.
+Para que o destinatário possa verificar a assinatura DKIM do remetente, precisará dos parâmetros DKIM e, sobretudo, da chave pública para a decifrar. A [zona DNS](/pages/web_cloud/domains/dns_zone_general_information) de um nome de domínio é pública, pelo que é acrescentado um registo DNS para transmitir a chave pública e os parâmetros DKIM ao destinatário.
 
 #### O que é um seletor DKIM <a name="selector"></a>
 
