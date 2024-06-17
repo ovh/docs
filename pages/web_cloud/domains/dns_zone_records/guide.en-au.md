@@ -1,7 +1,7 @@
 ---
 title: "DNS records"
 excerpt: "Discover the different types of DNS records available in an OVHcloud DNS zone"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 ## Objective

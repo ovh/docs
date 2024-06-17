@@ -1,7 +1,7 @@
 ---
 title: "I record DNS"
 excerpt: "Scopri i diversi tipi di record DNS disponibili in una zona DNS di OVHcloud"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 > [!primary]
@@ -179,7 +179,7 @@ Alcuni utenti creano zone DNS direttamente per il sottodominio di un dominio (ad
 
 Dal momento che la zona DNS è stata creata per il sottodominio (nel nostro esempio *subdomain-with-its-own-DNS-zone.domain.tld*), quest’ultimo viene considerato come un dominio a sé stante nella sua zona DNS.
 
-Per questo motivo e nel caso specifico, non sarà possibile creare un record CNAME per *subdomain-with-its-own-DNS-zone.domain.tld* nella zona DNS creata per questo record. È possibile creare record CNAME come *subdomain.subdomain-with-its-own-DNS-zone.domain.tld* o *xxx.subdomain-with-own-DNS-zone.domain.tld*.
+Per questo motivo e nel caso specifico, non sarà possibile creare un record CNAME per *subdomain-with-its-own-DNS-zone.domain.tld* nella zona DNS creata per questo record. È possibile creare record CNAME come *subdomain.subdomain-with-its-own-DNS-zone.domain.tld* o *xxx.subdomain-with-its-own-DNS-zone.domain.tld*.
 
 ## Per saperne di più <a name="go-further"></a>
 
