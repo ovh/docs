@@ -113,7 +113,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >>
 >> Überprüfen Sie zunächst, ob dieser Eintrag bereits vorhanden ist und auf ein anderes Ziel verweist. Filtern Sie hierzu den Inhalt der Tabelle nach Eintragstyp oder Domäne. Wenn der Eintrag bereits existiert, können Sie ihn mit den nachstehenden Angaben bearbeiten.
 >>
->>![dnszone](images/add-an-entry.png){.thumbnail}
+>> ![dnszone](images/add-an-entry.png){.thumbnail}
 >>
 >> > Wenn das Ziel Ihrer Aufzeichnung eine URL ist, denken Sie daran, diese zu punktieren. Wenn Sie dies nicht tun, wird Ihr Domainname automatisch am Ende Ihres Ziels hinzugefügt.
 >> >
@@ -133,7 +133,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >> 6. Klicken Sie in der angezeigten Tabelle auf das Symbol `...`{.action} rechts neben dem betreffenden Eintrag.
 >> 7. Klicken Sie dann auf `Eintrag bearbeiten`{.action} und folgen Sie den angezeigten Schritten.
 >>
->>![dnszone](images/modify-record.png){.thumbnail}
+>> ![dnszone](images/modify-record.png){.thumbnail}
 >>
 > **DNS-Eintrag löschen**
 >>
@@ -149,7 +149,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >>
 >> Sie können mehrere Einträge auf einmal löschen, indem Sie links in der Tabelle einen Haken setzen und dann auf den Button `Löschen`{.action} klicken.
 >>
->>![dnszone](images/delete-record.png){.thumbnail}
+>> ![dnszone](images/delete-record.png){.thumbnail}
 >>
 > **DNS-Zone zurücksetzen**
 >>
@@ -170,29 +170,29 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >> 6. Klicken Sie rechts oder unterhalb der Tabelle auf `Meine DNS-Zone zurücksetzen`{.action} und folgen Sie den 2 angezeigten Schritten.
 >>
 >> ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
->> 
+>>
 >> **Schritt 1**
->> 
+>>
 >> Beantworten Sie die Frage `Möchten Sie die minimalen Einträge beim Zurücksetzen Ihrer DNS-Zone aktivieren?`. Die Festlegung von Minimaleinträgen in einer DNS-Zone verhindert Fehlerantworten bei der Abfrage des Domainnamens.
->> 
+>>
 >> - `Ja, ich möchte meine DNS Zone mit den minimalen Einträgen zurücksetzen`
 >> - `Nein, aber ich möchte meine DNS Zone zurücksetzen`
->> 
+>>
 >> **Schritt 2**
->> 
+>>
 >> Unabhängig davon, welche Option Sie in Schritt 1 gewählt haben, müssen Werte für Abfragen an Ihren Domainnamen gesetzt werden, um fehlerhafte DNS-Antworten zu verhindern.
->> 
+>>
 >> Klicken Sie auf die Tabs, um die Details der verfügbaren Optionen anzuzeigen:
->> 
+>>
 >> **IP-Adresse Ihres Hostings**
->> 
+>>
 >> - `Weiterleitung`: Ihr Domainname verweist auf den Weiterleitungsserver von OVHcloud, der es ermöglicht, eine OVHcloud Startseite anzuzeigen und so einen DNS-Fehler zu vermeiden.<br>
 >> - `OVHcloud Webhosting`: Ihr Domainname verweist auf die IP-Adresse des Webhostings, das mit dem Domainnamen verbunden ist.<br>
 >> - `Benutzerdefiniert`: Legen Sie die IPv4-Adresse ([A-Eintrag](/pages/web_cloud/domains/dns_zone_records#pointer-records)) des Webhostings fest, auf das verwiesen werden soll. <br><br>
 >> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
 >>
 >> **Adresse Ihres Mailservers**
->> 
+>>
 >> - `Weiterleitung`: Ihr Domainname verweist auf Weiterleitungsserver für E-Mails. Dies ist besonders nützlich, wenn Sie keine E-Mail-Dienste nutzen, aber E-Mails an eine oder mehrere E-Mail-Adressen außerhalb Ihres Domainnamens weiterleiten möchten.<br>
 >> - `OVHcloud E-Mail-Server`: Zu verwenden, wenn Sie ein Webhosting-E-Mail-Angebot nutzen.<br>
 >> - `Benutzerdefiniert`: Legen Sie die URL und die Priorität des E-Mail-Servers ([MX-Eintrag](/pages/web_cloud/domains/dns_zone_records#mail-records)) fest, auf den verwiesen werden soll.<br><br>

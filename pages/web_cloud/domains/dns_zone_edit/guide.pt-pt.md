@@ -184,14 +184,14 @@ A partir de agora, o manual apenas irá abordar a configuração realizada atrav
 >>
 >> Selecione as duas opções clicando nos separadores seguintes.
 >>
-> **Endereço IP do seu alojamento**
+>> **Endereço IP do seu alojamento**
 >>
 >> - `Reencaminhamento`: o seu domínio apontará para o servidor de reencaminhamento OVHcloud. Isto permite apresentar uma página inicial da OVHcloud e evitar um erro DNS.<br>
 >> - `Alojamento Web OVHcloud`: O seu domínio ficará associado ao endereço IP do alojamento web associado ao domínio <br>
 >> - `Personalizado`: defina o valor IPv4 ([registo A](/pages/web_cloud/domains/dns_zone_records#pointer-records)) do alojamento web que deseja apontar. <br><br>
 >> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
 >>
-> **Endereço do servidor de e-mail**
+>> **Endereço do servidor de e-mail**
 >>
 >> - `Reencaminhamento`: o seu domínio irá apontar para os servidores de reencaminhamento de e-mail. Esta escolha. É particularmente útil se não tiver nenhuma oferta de e-mail mas pretender reenviar os e-mails para um ou vários endereços de e-mail fora do seu domínio.<br>
 >> - `Servidor de e-mail OVHcloud`: defina-se quando dispõe de um serviço de e-mail partilhado.<br>

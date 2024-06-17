@@ -115,11 +115,11 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >>
 >> ![dnszone](images/add-an-entry.png){.thumbnail}
 >>
-> > > Gdy celem rekordu jest adres URL, pamiętaj, aby go wpisać. W przeciwnym razie domena zostanie automatycznie dodana na końcu grupy docelowej.
+>> > Gdy celem rekordu jest adres URL, pamiętaj, aby go wpisać. W przeciwnym razie domena zostanie automatycznie dodana na końcu grupy docelowej.
 >> >
 >> > **Przykład** : chcesz utworzyć rekord CNAME `test.mydomain.ovh` na `mydomain.ovh`.
 >> >
-> > > Wówczas należy mieć jako cel `mydomain.ovh.` a nie `mydomain.ovh` bez **.** na końcu.
+>> > Wówczas należy mieć jako cel `mydomain.ovh.` a nie `mydomain.ovh` bez **.** na końcu.
 >>
 > **Modyfikacja istniejącego rekordu DNS**
 >>

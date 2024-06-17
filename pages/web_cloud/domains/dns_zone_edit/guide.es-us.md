@@ -116,9 +116,9 @@ Esta guía solo hace referencia a la configuración a través de nuestros asiste
 >> ![dnszone](images/add-an-entry-ca.png){.thumbnail}
 >>
 >> > Cuando el destino de la grabación sea una dirección URL, no olvide puntuarla. De lo contrario, su dominio se añadirá automáticamente al final de su objetivo.
->>>
+>> >
 >> > **Ejemplo**: quiere crear un registro CNAME de `test.mydomain.ovh` hacia `mydomain.ovh`.
->>>
+>> >
 >> > Debe tener como objetivo `mydomain.ovh.` y no `mydomain.ovh` sin el **.** al final.
 >>
 > **Modificar un registro DNS existente**
@@ -161,7 +161,7 @@ Esta guía solo hace referencia a la configuración a través de nuestros asiste
 >> >
 >>
 >> Para restaurar la zona DNS, lleve a cabo las siguientes acciones:
->>>
+>>
 >> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
 >> 2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
 >> 3. En la columna izquierda, haga clic en el menú desplegable `Dominios`{.action}.
@@ -183,7 +183,7 @@ Esta guía solo hace referencia a la configuración a través de nuestros asiste
 >> Independientemente de cuál sea su elección en el etapa 1, es necesario definir una respuesta cuando se pregunta a su nombre de dominio para evitar una respuesta DNS en error.
 >>
 >> Seleccione ambas opciones haciendo clic en las fichas siguientes.
->> 
+>>
 >> **Dirección IP de su alojamiento**
 >>
 >> - `Redirection`: su dominio apuntará hacia el servidor de redirección de OVHcloud. Esto permite mostrar una página de inicio de OVHcloud y así evitar un error DNS.<br>

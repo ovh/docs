@@ -96,8 +96,8 @@ From this point onwards, this guide will only cover configuration using our conf
 >
 
 > [!tabs]
->> **Add a new DNS record**
->> 
+> **Add a new DNS record**
+>>
 >> To add a new DNS record, perform the following steps:
 >>
 >> 1. Log in to your [OVHcloud Control Panel](/links/manager).
