@@ -26,7 +26,7 @@ Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anc
 
 - Disporre di una soluzione [di hosting Web OVHcloud](/links/web/hosting){.external} compatibile
 - Disporre di uno o più [domini](/links/web/domains){.external}
-- Poter modificare la configurazione dei tuoi domini (la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns))
+- Poter modificare la configurazione dei tuoi domini (la [zona DNS](/pages/web_cloud/domains/dns_zone_edit))
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
@@ -121,7 +121,7 @@ Ora che il dominio è stato aggiunto, passa allo [Step 3: mettere online](#site-
 >
 > |Campo|Dove trovare l’informazione|Azione da realizzare|
 > |---|---|---|
-> |TXT|Nella scheda `Multisito`{.action}, clicca sul pulsante `Configura il token ovhcontrol`{.action} in basso a sinistra.|Consente a OVHcloud di assicurarsi che l'aggiunta di ciascun dominio esterno sia legittima. Provvedi a creare il record TXT con il sottodominio ovhcontrol (ad esempio, ovhcontrol.domain.tld) nella zona DNS che è l'autorità per il dominio da aggiungere.<br></br>Per aggiungere `blog.domain.tld` è necessario creare il record per il sottodominio `ovhcontrol.domain.tld` e non `ovhcontrol.blog.domain.tld`.<br></br>Per recuperarla, consulta i [server DNS](/pages/web_cloud/domains/dns_server_general_information#capire-il-concetto-di-dns) a cui è associato il tuo dominio. Dovrai convalidare solo il dominio principale, non tutti i sottodomini.|
+> |TXT|Nella scheda `Multisito`{.action}, clicca sul pulsante `Configura il token ovhcontrol`{.action} in basso a sinistra.|Consente a OVHcloud di assicurarsi che l'aggiunta di ciascun dominio esterno sia legittima. Provvedi a creare il record TXT con il sottodominio ovhcontrol (ad esempio, ovhcontrol.domain.tld) nella zona DNS che è l'autorità per il dominio da aggiungere.<br></br>Per aggiungere `blog.domain.tld` è necessario creare il record per il sottodominio `ovhcontrol.domain.tld` e non `ovhcontrol.blog.domain.tld`.<br></br>Per recuperarla, consulta i [server DNS](/pages/web_cloud/domains/dns_server_general_information/dns_server_edit) a cui è associato il tuo dominio. Dovrai convalidare solo il dominio principale, non tutti i sottodomini.|
 >
 > ![multisito](images/find-token.png){.thumbnail}
 >

@@ -22,7 +22,7 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 
 - Disposer d'une offre [d'hébergement web OVHcloud](/links/web/hosting){.external} compatible.
 - Disposer d'un ou plusieurs [noms de domaine](/links/web/domains){.external}.
-- Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns)).
+- Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web_cloud/domains/dns_zone_edit)).
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
