@@ -25,9 +25,11 @@ Pour accéder à vos opérations de maintenance depuis le [control panel OVHclou
 
 ![Maintenance Operation](images/Maintenance.png){.thumbnail}
 
-Pour connaitre les opérations en cours, vous pouvez mettre à jour cette section opération du control panel grâce au bouton `Rafraîchir`{.action} : ![Maintenance Operation Refresh Button](images/Maintenance_refresh_button.png){.thumbnail}
+Pour connaitre les opérations en cours ou rafraichir les anciennes opérations, vous pouvez mettre à jour cette section opération du control panel grâce au bouton `Rafraîchir`{.action} : ![Maintenance Operation Refresh Button](images/Maintenance_refresh_button.png){.thumbnail}
 
 Il est possible de modifier la date de traitement d'une opération en cours en cliquant sur `...`{.action}, puis `Modifier la date de traitement`{.action}.
+
+Pour plus d'informations sur les options disponibles pour la replanification d'une opération de maintenance, consultez le guide : [En pratique - Accéder aux opération d'une maintenance programmée sur votre Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
 
 #### Via l'API OVHcloud
 
@@ -43,7 +45,7 @@ Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operat
 > serviceName: La reference de votre PCC, (pcc-XXX-XXX-XXX-XXX).
 > 
 
-Exemple, ce shéma de retour peut être long suivant la taille de votre infrastructure :
+Exemple, ce schéma de retour peut varier et être assez long suivant la taille de votre infrastructure :
 
 ```Shell
 ...
@@ -53,7 +55,6 @@ Exemple, ce shéma de retour peut être long suivant la taille de votre infrastr
   maintenanceUpdateAntivirusConfiguration,
 ...
 ```
-
 Pour avoir le détail de chaque robot :
 
 >
@@ -77,21 +78,11 @@ Pour avoir le détail de chaque robot :
 }
 ```
 
-### Modifier la date de traitement d'une opération
-
-![Maintenance Modified Traitement Date](images/Maintenance_modification_date.png){thumbnail}
-
-Une fois que la fenêtre de modification de date s'affiche :
-
-![Maintenance Modified Traitement Date 2](images/Maintenance_modification_date_2.png){thumbnail}
-
-Vous pouvez choisir la date que vous souhaitez en cliquant dessus, exemple ici: `11`{.action}, puis sur `Modifier`{.action}
-
-## Export d'une opération de maintenance
+## Accès aux opérations de maintenance
 
 ### Depuis le control panel OVHcloud :
 
-La section opération de votre control panel OVHcloud dispose de 11 sections.
+La section opération du control panel OVHcloud dispose de 11 sections.
 
 Exemple, ici d'un export des opérations du control panel Hosted Private Cloud VMware on OVHcloud :
 
