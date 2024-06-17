@@ -173,7 +173,7 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
 >> Verwendet, um den Fingerprint eines SSL/TLS-Zertifikats einzugeben.
 
-### Anwendungsbeispiel: Verwendung von CNAME-Einträgen <a name="cnameusecase"></a>
+#### Anwendungsbeispiel: Verwendung von CNAME-Einträgen <a name="cnameusecase"></a>
 
 Manche Benutzer erstellen DNS-Zonen unmittelbar für die Subdomain einer Domain (Beispiel: *subdomain-mit-eigener-zone.domain.tld*). In diesem Fall gilt auch die im Tab "CNAME" im Teil "[Zeitregistrierungen](#pointer-records)" angegebene Regel.
 

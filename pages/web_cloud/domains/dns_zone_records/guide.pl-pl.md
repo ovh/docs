@@ -173,7 +173,7 @@ Select the record you want by clicking each of the following tabs.
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
 >> Używane, gdy wpisujemy odcisk palca certyfikatu SSL/TLS.
 
-### Specjalne zastosowania: użycie rekordów CNAME <a name="cannamesecase"></a>
+#### Specjalne zastosowania: użycie rekordów CNAME <a name="cannamesecase"></a>
 
 Niektórzy użytkownicy tworzą strefy DNS bezpośrednio dla subdomeny domeny (na przykład *subdomain-with-its-own-DNS-zone.domain.tld*). Reguła określona powyżej w zakładce "CNAME" w sekcji "[Rekordy wskazywania](#pointer-records)" stosuje się również w tym przypadku.
 

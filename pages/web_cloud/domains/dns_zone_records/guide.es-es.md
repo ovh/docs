@@ -14,7 +14,7 @@ Las siglas **DNS**, que significan **D**omain **N**ame **S**ystem, son un conjun
 
 Le recomendamos que consulte nuestras guías "[Qué es un servidor DNS?](/pages/web_cloud/domains/dns_server_general_information)" y "[Qué es una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)" en este orden.
 
-La zona DNS de un dominio es el archivo de configuración del dominio. Consta de información técnica, denominada «registros DNS»*. La zona DNS es, en cierto modo, un centro de referencia para un dominio.
+La zona DNS de un dominio es el archivo de configuración del dominio. Consta de información técnica, denominada "registros DNS"*. La zona DNS es, en cierto modo, un centro de referencia para un dominio.
 
 Esta guía explica los distintos tipos de registros DNS disponibles en una zona DNS gestionada de OVHcloud. Complementa las siguientes guías:
 
@@ -173,7 +173,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
 >> Utilizado para indicar la huella de un certificado SSL/TLS.
 
-### Caso particular de uso: el uso de los registros CNAME <a name="cnameusecase"></a>
+#### Caso particular de uso: el uso de los registros CNAME <a name="cnameusecase"></a>
 
 Algunos usuarios crean zonas DNS directamente para el subdominio de un dominio (por ejemplo, *subdomain-with-its-own-DNS-zone.domain.tld*). En este caso, también se aplica la regla anterior en la pestaña "CNAME" de la sección "[Registros de punteo](#pointer-records)".
 
@@ -189,7 +189,7 @@ Así pues, en este caso concreto no podrá crear un registro CNAME para un *subd
 
 [Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf)
 
-[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec)
+[Proteja su dominio contra el "cache poisoning" con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
