@@ -28,7 +28,7 @@ Para más información, consulte nuestras guías "[Qué es un servidor DNS?](/pa
 >
 > - Si el dominio no utiliza los servidores DNS de OVHcloud, deberá realizar los cambios necesarios desde el panel que le ofrezca el proveedor que gestione la configuración de su dominio.
 > 
-> - Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración. Para ello, acceda a su [área de cliente de OVHcloud] (/links/manager) y abra la pestaña `Servidores DNS`{.action} del dominio correspondiente. Si lo necesita, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
+> - Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración. Para ello, acceda a su [área de cliente de OVHcloud](/links/manager) y abra la pestaña `Servidores DNS`{.action} del dominio correspondiente. Si lo necesita, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 > 
 > En ambos casos, tenga cuidado al cambiar los servidores DNS. La antigua configuración que puede aplicarse a su dominio ya no estará activa si no ha reconfigurado y personalizado previamente la nueva zona DNS de OVHcloud.<br>
 > Solo puede tener una única zona DNS activa a la vez por nombre de dominio.
