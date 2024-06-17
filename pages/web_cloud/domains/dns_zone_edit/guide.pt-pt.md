@@ -1,7 +1,7 @@
 ---
 title: 'Editar uma zona DNS da OVHcloud'
 excerpt: 'Saiba como editar uma zona DNS da OVHcloud através da Área de Cliente'
-updated: 2024-05-22
+updated: 2024-06-17
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: 'Bearbeiten der OVHcloud DNS-Zone'
 excerpt: 'Erfahren Sie hier, wie Sie eine DNS-Zone über Ihr Kundencenter bearbeiten'
-updated: 2024-05-22
+updated: 2024-06-17
 ---
 
 > [!primary]
