@@ -1,7 +1,7 @@
 ---
 title: "What is a DNS zone?"
 excerpt: "Find out what a DNS zone does and what records it contains for a domain name"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 ## Objective

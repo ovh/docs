@@ -1,7 +1,7 @@
 ---
 title: "Co to jest serwer DNS?"
 excerpt: "Sprawdź rolę serwerów DNS, ich zawartość oraz sposób działania z domeną"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 > [!primary]

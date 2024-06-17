@@ -1,7 +1,7 @@
 ---
 Title: "Was ist eine DNS-Zone?"
 excerpt: "Hier erfahren Sie, welche Rolle eine DNS-Zone spielt und welche Einträge sie für einen Domainnamen enthält"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 > [!primary]

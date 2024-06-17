@@ -1,7 +1,7 @@
 ---
 title: "Co to jest strefa DNS?"
 excerpt: "Dowiedz się, jaką rolę odgrywa strefa DNS oraz jakie rekordy zawiera dla domeny"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "O que é uma zona DNS?"
 excerpt: "Descubra o papel de uma zona DNS e os registos que contém para um domínio"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 > [!primary]

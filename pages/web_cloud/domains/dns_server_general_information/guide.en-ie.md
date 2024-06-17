@@ -1,7 +1,7 @@
 ---
 title: "What is a DNS server?"
 excerpt: "Find out what DNS servers do, what they contain, and how they work with a domain name"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 ## Objective

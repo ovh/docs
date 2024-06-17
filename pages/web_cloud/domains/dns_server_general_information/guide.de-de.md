@@ -1,7 +1,7 @@
 ---
 title: "Was ist ein DNS-Server?"
 excerpt: "Hier erfahren Sie, welche Rolle DNS-Server spielen, was sie enthalten und wie sie mit einem Domainnamen funktionieren"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 > [!primary]
