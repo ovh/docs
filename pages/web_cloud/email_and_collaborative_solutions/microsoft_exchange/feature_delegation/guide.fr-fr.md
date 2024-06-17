@@ -12,14 +12,14 @@ Les services Exchange et Email Pro permettent de bénéficier d’adresses e-mai
 
 ## Prérequis
 
-- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)
+- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](/links/web/email-pro)
 
 > [!warning]
 >
-> **Pour l'offre [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)** les fonctionnalités de délégations décritent dans ce guide s'utilisent uniquement au travers du [Webmail](links/web/email). Les protocoles permettant leur utilisation via un logiciel de messagerie nécessite de disposer d'un compte [Exchange](links/web/emails-hosted-exchange).
+> **Pour l'offre [Email Pro](/links/web/email-pro)** les fonctionnalités de délégations décrites dans ce guide s'utilisent uniquement au travers du [Webmail](links/web/email). Les protocoles permettant leur utilisation via un logiciel de messagerie nécessitent de disposer d'un compte [Exchange](links/web/emails-hosted-exchange).
 
 - Disposer au minimum de deux comptes e-mail actifs et configurés sur la même plateforme e-mail OVHcloud.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Disposer des identifiants relatifs au compte e-mail qui bénéficiera des nouveaux droits délégués.
 
 ## En pratique
@@ -41,7 +41,7 @@ Lorsque vous avez identifié le compte concerné par la délégation, détermin�
 
 ### Étape 1 : mettre en place la délégation
 
-Pour effectuer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr):
+Pour effectuer cette manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager):
 
 - **Exchange**: Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. 
 - **Email Pro**: Cliquez sur `Email Pro`{.action}.
@@ -74,7 +74,7 @@ La manière de faire est différente selon le ou les droits que vous avez délé
 
 > [!warning]
 >
-> Cette solution requiert des connaissances sur le logiciel ou l'interface que vous allez utiliser. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de vous rapprocher de l’éditeur du logiciel ou de l’interface si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance.
+> Cette solution requiert des connaissances sur le logiciel ou l'interface que vous allez utiliser. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un [partenaire spécialisé](/links/partner) et/ou de vous rapprocher de l’éditeur du logiciel ou de l’interface si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance.
 >
 
 #### 2.1 Utiliser son « droit d'accès »
