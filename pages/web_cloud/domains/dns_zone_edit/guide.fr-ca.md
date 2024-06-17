@@ -66,7 +66,6 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 Vous pouvez éditer la zone DNS OVHcloud de votre nom de domaine en ajoutant, modifiant ou en supprimant un enregistrement DNS.<br>
 Pour effectuer cela, vous pouvez soit modifier manuellement la zone en mode textuel, soit utiliser nos assistants de configuration.
 
-
 #### Modifier manuellement la zone en mode textuel <a name="txtmod"></a>
 
 > [!warning]
