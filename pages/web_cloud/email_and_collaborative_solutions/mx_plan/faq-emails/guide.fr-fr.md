@@ -57,11 +57,11 @@ Le **mot de passe** doit respecter les règles suivantes :
 
 ### Comment récupérer mon mot de passe oublié ?
 
-Pour des raisons de sécurité et de confidentialité, il n'est pas possible de **récupérer** un mot de passe. Comme il est décrit dans notre guide "[Modifier le mot de passe d'une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)", il est nécessaire de le réinitialiser si vous ne le connaissez pas.
+Pour des raisons de sécurité et de confidentialité, il n'est pas possible de **récupérer** un mot de passe. Comme cela est décrit dans notre « [Modifier le mot de passe d'une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password) », il est nécessaire de réinitialiser votre mot de passe si vous ne le connaissez plus.
 
 > [!primary]
 >
-> Si vous souhaitez stocker un mot de passe, il est conseillé d'utiliser un gestionnaire de mot de passe.
+> Si vous souhaitez stocker un mot de passe, il est conseillé d'utiliser un gestionnaire de mot de passe, comme **Keepass** par exemple.
 
 ### Comment limiter la réception de spams ?
 
