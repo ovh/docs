@@ -13,6 +13,11 @@ Les services Exchange et Email Pro permettent de bénéficier d’adresses e-mai
 ## Prérequis
 
 - Avoir souscrit une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)
+
+> [!warning]
+>
+> **Pour l'offre [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)** les fonctionnalités de délégations décritent dans ce guide s'utilisent uniquement au travers du [Webmail](links/web/email). Les protocoles permettant leur utilisation via un logiciel de messagerie nécessite de disposer d'un compte [Exchange](links/web/emails-hosted-exchange).
+
 - Disposer au minimum de deux comptes e-mail actifs et configurés sur la même plateforme e-mail OVHcloud.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Disposer des identifiants relatifs au compte e-mail qui bénéficiera des nouveaux droits délégués.
@@ -23,9 +28,9 @@ Avant de débuter, définissez le ou les droits que vous allez déléguer. Pour 
 
 |Droits|Description|
 |---|---|
-|Droit d'envoi|Permet de réaliser un envoi « en tant que ». Ce n'est pas le compte effectuant l'envoi qui apparaîtra en tant qu'expéditeur, mais le compte pour lequel il dispose du droit d'envoi. Aucune mention ne permettra de savoir que le message a été envoyé par le biais de quelqu'un d'autre.|
-|Droit d'envoyer de la part|Permet de réaliser un envoi « de la part de ». Ce n'est pas le compte effectuant l'envoi qui apparaîtra en tant qu'expéditeur, mais le compte pour lequel il dispose du droit d'envoyer de la part de. Une mention indiquera cependant que le message a été envoyé de la part du compte ayant réalisé l'envoi.|
-|Droit d'accès|Donne un accès en lecture seule au compte concerné par la création de la délégation. Cet accès ne permet pas d'effectuer des envois, mais de consulter le contenu.|
+|**Droit d'envoi**|Permet de réaliser un envoi « en tant que ». Ce n'est pas le compte effectuant l'envoi qui apparaîtra en tant qu'expéditeur, mais le compte pour lequel il dispose du droit d'envoi. Aucune mention ne permettra de savoir que le message a été envoyé par le biais de quelqu'un d'autre.|
+|**Droit d'envoyer de la part**|Permet de réaliser un envoi « de la part de ». Ce n'est pas le compte effectuant l'envoi qui apparaîtra en tant qu'expéditeur, mais le compte pour lequel il dispose du droit d'envoyer de la part de. Une mention indiquera cependant que le message a été envoyé de la part du compte ayant réalisé l'envoi.|
+|**Droit d'accès**|Donne un accès en lecture seule au compte concerné par la création de la délégation. Cet accès ne permet pas d'effectuer des envois, mais de consulter le contenu.|
 
 > [!warning]
 >
@@ -84,7 +89,11 @@ Dans la fenêtre qui apparaît, indiquez le nom du compte pour lequel vous bén�
 
 - **Depuis le logiciel Outlook pour Windows**
 
-Sur votre logiciel Outlook 2016, cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran puis cliquez sur `Paramètres du compte`{.action}. Dans le menu déroulant, cliquez de nouveau sur `Paramètres du compte`{.action}. Dans la fenêtre qui s'affiche, sélectionnez le compte bénéficiant du droit délégué puis cliquez sur `Modifier`{.action}. 
+> [!warning]
+>
+> L'utilisation de cette fonctionnalité **via Outlook** est uniquement disponible pour un compte e-mail [Exchange](links/web/emails-hosted-exchange).
+
+Sur votre logiciel Outlook, cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran puis cliquez sur `Paramètres du compte`{.action}. Dans le menu déroulant, cliquez de nouveau sur `Paramètres du compte`{.action}. Dans la fenêtre qui s'affiche, sélectionnez le compte bénéficiant du droit délégué puis cliquez sur `Modifier`{.action}. 
 
 ![delegation](images/delegation-step4.png){.thumbnail}
 
@@ -106,7 +115,11 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 - **Depuis le logiciel Outlook pour Windows**
 
-Sur votre logiciel Outlook 2016, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
+> [!warning]
+>
+> L'utilisation de cette fonctionnalité **via Outlook** est uniquement disponible pour un compte e-mail [Exchange](links/web/emails-hosted-exchange).
+
+Sur votre logiciel Outlook, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
 
 Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, cliquez sur `Autre`{.action}, renseignez l'adresse souhaitée, puis validez. 
 
@@ -128,7 +141,11 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 - **Depuis le logiciel Outlook pour Windows**
 
-Sur votre logiciel Outlook 2016, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
+> [!warning]
+>
+> L'utilisation de cette fonctionnalité **via Outlook** est uniquement disponible pour un compte e-mail [Exchange](links/web/emails-hosted-exchange).
+
+Sur votre logiciel Outlook, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
 
 Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, cliquez sur `Autre`{.action}, renseignez l'adresse souhaitée, puis validez. 
 
@@ -136,6 +153,10 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 ![delegation](images/delegation-step7.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
