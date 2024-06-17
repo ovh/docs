@@ -18,7 +18,7 @@ Por ejemplo, puede especificar lo siguiente:
 - Los servidores de correo (registros DNS de tipo *MX*) a los que el dominio debe redirigir los emails que recibe. Esto le permite consultarlos en su dirección de correo personalizada con su nombre de dominio.
 - Información relativa a la seguridad y la autenticación de los servicios (alojamiento web, servidor web, servidor de correo, etc.) asociados a su dominio (registros DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
 
-Si desea más información sobre este tema, puede consultar nuestra documentación relativa a [los registros DNS y la edición de una zona DNS](/pages/web_cloud/domains/dns_zone_edit) en el [área de cliente de OVHcloud](/links/manager).
+Si lo necesita, consulte nuestra documentación sobre [registros DNS](/pages/web_cloud/domains/dns_zone_records) y la [edición de una zona DNS](/pages/web_cloud/domains/dns_zone_edit) desde su [área de cliente de OVHcloud](/links/manager).
 Existen diversos motivos por los que podría necesitar aplicar una configuración DNS anterior al dominio.
 
 A partir de ahora, la gestión de los DNS se simplifica gracias al historial de sus zonas DNS.

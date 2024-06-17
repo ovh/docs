@@ -12,7 +12,7 @@ The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configura
 - The email servers (DNS records of type *MX*) that should receive emails sent to addresses of this domain name. By configuring MX records, you can receive emails through custom email addresses using your domnain name.
 - Information related to the security/authentication of services (web hosting, web server, email server, etc.) associated with your domain name (DNS records of type *SPF*, *DKIM*, *DMARC*, etc.).
 
-For more information on DNS zones and how to edit them in your [OVHcloud Control Panel](/links/manager), refer to [our DNS documentation](/pages/web_cloud/domains/dns_zone_edit).
+If you need further assistance, please refer to our documentation on [DNS records](/pages/web_cloud/domains/dns_zone_records) and [editing a DNS zone](/pages/web_cloud/domains/dns_zone_edit) in your [OVHcloud Control Panel](/links/manager).
 
 A DNS zone is hosted/registered on **DNS servers**. **DNS servers** must be declared on the domain name's configuration in order to use the DNS zone they host.
 
@@ -92,7 +92,7 @@ Log in to your [OVHcloud Control Panel](/links/manager){.external} then go to th
 > [!primary]
 > At this point, if you only see the globe-shaped logo (without the label *DNS*), the domain name is already managed in your OVHcloud Control Panel. 
 >
-> If you are the *Administrator* contact of the latter, you can directly change the **DNS servers** using [our guide](/pages/web_cloud/domains/dns_server_general_information) on the subject.
+> If you are the *Administrator* contact of the latter, you can directly change the **DNS servers** using [our guide](/pages/web_cloud/domains/dns_server_edit) on the subject.
 >
 > As a reminder, please check that the configuration of the new DNS zone meets your expectations before changing the **DNS servers** registered with your domain name.
 >

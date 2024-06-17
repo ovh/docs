@@ -17,6 +17,7 @@ Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei ei
 - Informationen zur Sicherheit/Authentifizierung von Diensten (Webhosting, Webserver, E-Mail-Server, etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC*, etc.).
 
 Lesen Sie bei Bedarf unsere Dokumentation zu [DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records) und [Bearbeiten einer DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) über Ihr [OVHcloud Kundencenter](/links/manager).
+
 Das dynamische Aktualisieren eines DNS-Eintrags kann Unterbrechungen Ihrer Dienste verhindern, wenn Sie nicht über eine statische IP-Adresse verfügen.
 
 So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten Game Server (in Geschäftsräumen oder privat) ohne feste IP-Adresse zu betreiben; das bedeutet, Ihr **I**nternet **S**ervice **P**rovider (**ISP**) vergibt regulär eine neue Adresse.
