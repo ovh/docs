@@ -1,7 +1,7 @@
 ---
 title: 'Configuring a network bridge'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2024-06-14
+updated: 2024-06-17
 ---
 
 > [!primary]
@@ -24,9 +24,9 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-au/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-au/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
 > This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-au/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-au/bare-metal/high-grade/).
 > 
@@ -88,7 +88,7 @@ The IPv4 gateway assigned to your server will appear in the `Network` section of
 
 #### Via the OVHcloud API <a name="viaapi"></a>
 
-On the [OVHcloud API page](https://ca.api.ovh.com/console/), click on `Login`{.action} in the top right-hand corner. On the next page, enter your OVHcloud credentials.
+On the [OVHcloud API page](https://api.ovh.com/console/), click on `Login`{.action} in the top right-hand corner. On the next page, enter your OVHcloud credentials.
 
 Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 
@@ -113,10 +113,10 @@ For all operating systems and distributions, you **must** configure your virtual
 
 After creating the VM and while it is still powered off, right-click the VM and click `Edit settings`.
 
- 1\. Select the VM.<br>
- 2\. Open the `Hardware` section.<br>
- 3\. Select `Network Device`.<br>
- 4\. Click the `Edit` button.<br>
+1. Select the VM.
+2. Open the `Hardware` section.
+3. Select `Network Device`.
+4. Click the `Edit` button.
 
 ![navigate to Network Device](images/proxmox_01.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Mode bridge IP'
 excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Internet de vos machines virtuelles'
-updated: 2024-06-14
+updated: 2024-06-17
 ---
 
 > [!primary]
@@ -24,9 +24,9 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 * Être connecté à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
-> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
 >
-> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
+> Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 >
 > Le présent guide n'est pas applicable aux serveurs des gammes [Scale](https://www.ovhcloud.com/fr/bare-metal/scale/) et [High Grade](https://www.ovhcloud.com/fr/bare-metal/high-grade/).
 >
@@ -111,10 +111,10 @@ Pour tous les systèmes d'exploitation et distributions, vous devez configurer v
 
 Après avoir créé la machine virtuelle et lorsque celle-ci est encore éteinte :
 
- 1. Sélectionnez la machine virtuelle ;
- 2. Ouvrez la section « Matériel » ;
- 3. Sélectionnez `Périphérique réseau`{.action} ;
- 4. Cliquez sur le bouton `Modifier`{.action}.
+1. Sélectionnez la machine virtuelle.
+2. Ouvrez la section « Matériel ».
+3. Sélectionnez `Périphérique réseau`{.action}.
+4. Cliquez sur le bouton `Modifier`{.action}.
 
 ![naviguer jusqu'au périphérique réseau](images/proxmox_01.png){.thumbnail}
 
@@ -571,11 +571,11 @@ Sélectionnez l'adaptateur avec l'adresse IP du serveur, puis cochez `Autoriser 
 
 Ensuite, sélectionnez la machine virtuelle à laquelle vous souhaitez ajouter l'Additional IP. Utilisez le panneau de configuration Hyper-V pour modifier les paramètres de la machine virtuelle, puis fermez-le.
 
-Ensuite, déployez la carte réseau et cliquez sur `Advanced Features`{.action}, définissez l'adresse MAC sur `Static`{.action} et entrez l'adresse MAC virtuelle pour l'adresse Additional IP. Une fois que vous avez entré ces paramètres, appuyez sur `OK`{.action} pour appliquer les modifications.
+Déployez ensuite la carte réseau et cliquez sur `Advanced Features`{.action}, définissez l'adresse MAC sur `Static`{.action} et entrez l'adresse MAC virtuelle pour l'adresse Additional IP. Une fois que vous avez entré ces paramètres, appuyez sur `OK`{.action} pour appliquer les modifications.
 
 ![networkbridging](images/network-bridging-windows-2012-2.jpg){.thumbnail}
 
-Ensuite, démarrez la machine virtuelle et connectez-vous en tant qu'administrateur, puis accédez à `Control Panel`{.action} et `Network and Sharing Center`{.action}. Cliquez sur le lien `Connections : Ethernet`{.action}, puis cliquez sur le bouton `Properties`{.action} pour afficher les propriétés Ethernet.
+Démarrez maintenant la machine virtuelle et connectez-vous en tant qu'administrateur, puis accédez à `Control Panel`{.action} et `Network and Sharing Center`{.action}. Cliquez sur le lien `Connections : Ethernet`{.action}, puis cliquez sur le bouton `Properties`{.action} pour afficher les propriétés Ethernet.
 
 Sélectionnez `Internet Protocol Version 4 (TCP/IPv4)`{.action}, puis cliquez sur le bouton `Properties`{.action} pour afficher les propriétés IPv4.
 
@@ -583,7 +583,7 @@ Sélectionnez `Internet Protocol Version 4 (TCP/IPv4)`{.action}, puis cliquez su
 
 Dans la fenêtre de propriétés de l’IPv4, sélectionnez `Use the following IP address`{.action}. Entrez l'adresse Additional IP dans le champ d'adresses IP et entrez « 255.255.255.255 » dans le masque de sous-réseau.
 
-Ensuite, entrez l’adresse IP de la passerelle de votre serveur dans la passerelle par défaut (par exemple, l’IP de votre serveur se terminant par 254) et entrez « 213.186.33.99 » dans le champ `Preferred DNS Server`{.action}.
+Entrez ensuite l’adresse IP de la passerelle de votre serveur dans la passerelle par défaut (par exemple, l’IP de votre serveur se terminant par 254) et entrez « 213.186.33.99 » dans le champ `Preferred DNS Server`{.action}.
 
 Cliquez sur `OK`{.action} et ignorez le message d'avertissement relatif à l'adresse IP de la passerelle et à l'adresse IP attribuée qui ne figurent pas dans le même sous-réseau.
 
