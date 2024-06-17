@@ -12,7 +12,7 @@ updated: 2024-05-22
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Die Abkürzung **DNS** für **D**Domain **N**Name **S**System ist eine Sammlung von Elementen (DNS-Server, DNS-Zonen usw.), mit denen ein Domainname einer IP-Adresse zugeordnet werden kann.
+Die Abkürzung **DNS** für **D**omain **N**ame **S**ystem ist eine Sammlung von Elementen (DNS-Server, DNS-Zonen usw.), mit denen ein Domainname einer IP-Adresse zugeordnet werden kann.
 
 Weitere Informationen finden Sie in unseren Anleitungen „[Was ist ein DNS-Server?](/pages/web_cloud/domains/dns_server_general_information)“ und „[Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)“
 
@@ -188,7 +188,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >> 
 >> - `Weiterleitung`: Ihr Domainname verweist auf den Weiterleitungsserver von OVHcloud, der es ermöglicht, eine OVHcloud Startseite anzuzeigen und so einen DNS-Fehler zu vermeiden.<br>
 >> - `OVHcloud Webhosting`: Ihr Domainname verweist auf die IP-Adresse des Webhostings, das mit dem Domainnamen verbunden ist.<br>
->> - `Benutzerdefiniert`: Legen Sie die IPv4-Adresse ([A-Eintrag](#pointer-records)) des Webhostings fest, auf das verwiesen werden soll. <br><br>
+>> - `Benutzerdefiniert`: Legen Sie die IPv4-Adresse ([A-Eintrag](/pages/web_cloud/domains/dns_zone_record#pointer-records)) des Webhostings fest, auf das verwiesen werden soll. <br><br>
 >> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
 >>
 >> **Adresse Ihres Mailservers**
