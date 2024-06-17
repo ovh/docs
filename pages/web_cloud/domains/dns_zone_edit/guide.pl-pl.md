@@ -28,7 +28,7 @@ Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami "[Co to j
 >
 > - Jeśli Twoja domena nie używa serwerów DNS OVHcloud, przeprowadź zmianę w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 > 
-> - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa konfiguracji OVHcloud. W tym celu przejdź do [Panelu klienta OVHcloud](/links/manager){.external}, zakładka `Serwery DNS`{.action} odpowiedniej domeny.
+> - Jeśli domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud. W tym celu przejdź do [Panelu klienta OVHcloud](/links/manager) w zakładce `Serwery DNS`{.action} danej domeny. W razie potrzeby sprawdź przewodnik "[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 > 
 > W obu przypadkach należy zachować ostrożność wykonując zmiany na serwerach DNS. Poprzednia konfiguracja, która może zostać zastosowana do Twojej domeny, nie będzie już aktywna, jeśli nie skonfigurowałeś i spersonalizowałeś wcześniej nowej strefy DNS w OVHcloud.<br>
 > Możesz mieć tylko jedną strefę DNS aktywowaną dla każdej domeny.
@@ -147,7 +147,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >> 6. W tabeli, która się wyświetli kliknij piktogram `...`{.action} po prawej stronie odpowiedniego wpisu.
 >> 7. Następnie kliknij `Usuń rekord`{.action} i postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 >>
->> Możesz usunąć kilka rekordów za jednym razem, zaznaczając je wcześniej w lewej części tabeli i klikając przycisk `Zatwierdź`{.action}.
+>> Możesz usunąć kilka rekordów za jednym razem, zaznaczając je wcześniej w lewej części tabeli i klikając przycisk `Usuń`{.action}.
 >>
 >> ![dnszone](images/delete-record.png){.thumbnail}
 >>

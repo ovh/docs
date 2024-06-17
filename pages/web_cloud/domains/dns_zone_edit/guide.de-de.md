@@ -188,7 +188,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >> 
 >> - `Weiterleitung`: Ihr Domainname verweist auf den Weiterleitungsserver von OVHcloud, der es ermöglicht, eine OVHcloud Startseite anzuzeigen und so einen DNS-Fehler zu vermeiden.<br>
 >> - `OVHcloud Webhosting`: Ihr Domainname verweist auf die IP-Adresse des Webhostings, das mit dem Domainnamen verbunden ist.<br>
->> - `Benutzerdefiniert`: Legen Sie die IPv4-Adresse ([A-Eintrag](/pages/web_cloud/domains/dns_zone_record#pointer-records)) des Webhostings fest, auf das verwiesen werden soll. <br><br>
+>> - `Benutzerdefiniert`: Legen Sie die IPv4-Adresse ([A-Eintrag](/pages/web_cloud/domains/dns_zone_records#pointer-records)) des Webhostings fest, auf das verwiesen werden soll. <br><br>
 >> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
 >>
 >> **Adresse Ihres Mailservers**
