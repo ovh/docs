@@ -17,9 +17,9 @@ updated: 2023-06-10
 
 Les opérations de maintenance au sein d'OVHcloud témoignent d'un grand savoir-faire de la part des équipes internes. Celui-ci a été peaufiné et perfectionné au fil des années afin de garantir la fiabilité et la performance des équipements.
 
-### Accéder aux opérations disponibles
+## Accéder aux opérations Hosted Private Cloud
 
-#### Via le control panel OVHcloud
+### Via le control panel OVHcloud
 
 Pour accéder à vos opérations de maintenance depuis le [control panel OVHcloud](/links/manager), veuillez-vous référer au début du guide : [En pratique - Accéder aux opération d'une maintenance programmée sur votre Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
 
@@ -31,7 +31,24 @@ Il est possible de modifier la date de traitement d'une opération en cours en c
 
 Pour plus d'informations sur les options disponibles pour la replanification d'une opération de maintenance, consultez le guide : [En pratique - Accéder aux opération d'une maintenance programmée sur votre Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
 
-#### Via l'API OVHcloud
+## Accès aux details des opérations de maintenance
+
+### Depuis le control panel OVHcloud :
+
+La section opération du control panel OVHcloud dispose de 11 sections.
+
+Exemple, ici d'un export des opérations du control panel Hosted Private Cloud VMware on OVHcloud :
+
+| Référence | Nom               | Type      | Progression | Commentaire                                       | Services affectés | 	Créé de                 | Créé par                 | 	Traitement          | Fin                  | Mis à jour           |
+|-----------|-------------------|-----------|---------|---------------------------------------------------|-------------------|--------------------------|--------------------------|----------------------|----------------------|----------------------|
+| 44XXXXXX  | provisionVcsaSolo | Générique | Terminé | Provisions infrastructure management for customer | Tâche : 44XXXXXX  | Information indisponible | Information indisponible | XX mai 2023 18:37:51 | XX mai 2023 18:37:XX | XX mai 2023 18:37:58 |
+| | | | | | | | | | | |
+
+Un ID de référencement d'opération commençant par 44 est toujours ajouté sur chaque opération, ainsi qu'un nom, un type, une progression, un commentaire, un service affectés, et des dates de traitement.
+
+Bien sûr, pour chaque service OVHcloud (Bare Metal Cloud, Public Cloud, etc..) ces noms et références peuvent changer.
+
+#### Depuis l'API OVHcloud
 
 Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
@@ -43,7 +60,7 @@ Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operat
 > **Parameters:**
 >
 > serviceName: La reference de votre PCC, (pcc-XXX-XXX-XXX-XXX).
-> 
+>
 
 Exemple, ce schéma de retour peut varier et être assez long suivant la taille de votre infrastructure :
 
@@ -66,7 +83,7 @@ Pour avoir le détail de chaque robot :
 > serviceName : La reference de votre PCC, (pcc-XXX-XXX-XXX-XXX).
 >
 > name : Le nom du robot, (maintenanceUpdateAntivirusConfiguration).
-> 
+>
 
 ```Shell
 {
@@ -78,24 +95,7 @@ Pour avoir le détail de chaque robot :
 }
 ```
 
-## Accès aux opérations de maintenance
-
-### Depuis le control panel OVHcloud :
-
-La section opération du control panel OVHcloud dispose de 11 sections.
-
-Exemple, ici d'un export des opérations du control panel Hosted Private Cloud VMware on OVHcloud :
-
-| Référence | Nom               | Type      | Progression | Commentaire                                       | Services affectés | 	Créé de                 | Créé par                 | 	Traitement          | Fin                  | Mis à jour           |
-|-----------|-------------------|-----------|---------|---------------------------------------------------|-------------------|--------------------------|--------------------------|----------------------|----------------------|----------------------|
-| 44XXXXXX  | provisionVcsaSolo | Générique | Terminé | Provisions infrastructure management for customer | Tâche : 44XXXXXX  | Information indisponible | Information indisponible | XX mai 2023 18:37:51 | XX mai 2023 18:37:XX | XX mai 2023 18:37:58 |
-| | | | | | | | | | | |
-
-Un ID de référencement d'opération commençant par 44 est toujours ajouté sur chaque opération, ainsi qu'un nom, un type, une progression, un commentaire, un service affectés, et des dates de traitement.
-
-Bien sûr, pour chaque service OVHcloud (Bare Metal Cloud, Public Cloud, etc..) ces noms et références peuvent changer.
-
-## Details des opérations de maintenance
+## Details des opérations de maintenance Hosted Private Cloud
 
 | Nom des maintenances | But                                                                                                                                                                                                                                                                                                                                            | Raison                                                              | Instructions préventives                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Impact                                                                                                                                                                                                                                                                   | Durée approximative                                                                                                     | Frequence                              | Peut être reprogrammé ? | Référence à une documentation technique |
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|----------------------------------------|-------------------------|-----------------------------------------|
