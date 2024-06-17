@@ -109,6 +109,7 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >> >
 >> > Generell wird empfohlen, nur einen oder mehrere Server desselben E-Mail-Anbieters in Ihrer DNS-Zone zu verwenden.
 >> > Wenn Sie bereits über E-Mail-Dienste bei einem anderen E-Mail-Anbieter verfügen und gleichzeitig die E-Mail-Server Ihres neuen E-Mail-Anbieters hinzufügen (ohne diese zu ersetzen), besteht die Gefahr, dass Sie Ihre E-Mails zufällig bei einem Ihrer beiden Anbieter empfangen.
+>>
 > **SPF**
 >> **S**ender **P**olicy **F**ramework <br><br>
 >> Damit kann potenzieller Identitätsdmissbrauch bei E-Mail-Adressen, die Ihre Domain verwenden (Spoofing), vermieden werden. Zum Beispiel legt der Eintrag `v=spf1 include:mx.ovh.com ~all` fest, dass nur die zu Ihrem OVHCloud E-Mail-Dienst gehörenden Server vom Empfangsserver als legitim angesehen werden können. Sie können den Eintrag entweder als TXT-Eintrag oder über unser automatisches Konfigurationssystem eingeben.
@@ -140,7 +141,7 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >> >
 >> > Der TXT Eintrag ist auf 255 Zeichen begrenzt. In manchen Fällen können Sie Ihren Wert jedoch in mehrere Einträge aufteilen. Fragen Sie bei Ihrem Dienstleister nach, wenn dieser Sie auffordert, einen Wert anzugeben, der 255 Zeichen übersteigt.
 >> > 
->> > Diese Einschränkung besteht jedoch nicht, wenn Sie die Funktion `Im Textmodus bearbeiten`{.action} in unserer Anleitung "[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_dmarc)" (für fortgeschrittene Benutzer) verwenden.
+>> > Diese Einschränkung besteht jedoch nicht, wenn Sie die Funktion `Im Textmodus bearbeiten`{.action} in unserer Anleitung "[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)" (für fortgeschrittene Benutzer) verwenden.
 >>
 > **SRV**
 >> **S**e**RV**ice resource <br><br>

@@ -109,6 +109,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >> >
 >> > En general, le recomendamos que utilice solo uno o más servidores de un mismo proveedor de correo en su zona DNS.
 >> > De hecho, si ya tiene servicios de correo con otro proveedor de correo y añade al mismo tiempo (sin sustituir) los servidores de correo de su nuevo proveedor de correo, puede recibir mensajes de correo al azar en uno de sus dos proveedores.
+>>
 > **SPF**
 >> **S**ender **P**olicy **F**ramework <br><br>
 >> Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (*spoofing*). Por ejemplo, el registro `v=spf1 include:mx.ovh.ca ~all` indica que solo los servidores de envío asociados a su solución de correo de OVHcloud pueden considerarse legítimos por el servidor de recepción. Puede introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática.
@@ -140,7 +141,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >> > 
 >> > El registro TXT está limitado a 255 caracteres. No obstante, en algunos casos puede dividir su valor en varios registros. Cuando el proveedor le pida que introduzca un valor superior al límite de 255 caracteres, deberá ponerse en contacto con su proveedor.
 >> >
->> > Sin embargo, este límite no existe si utiliza la funcionalidad `Editar en modo de texto`{.action} descrita en la guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_dmarc)" (para usuarios experimentados).
+>> > Sin embargo, este límite no existe si utiliza la funcionalidad `Editar en modo de texto`{.action} descrita en la guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)" (para usuarios experimentados).
 >> 
 > **SRV**
 >> **S**e**RV**ice resource <br><br>

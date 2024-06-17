@@ -105,6 +105,7 @@ Select the record you want by clicking each of the following tabs.
 >> >
 >> > In general, we recommend using only one or more servers from the same email provider in your DNS zone.
 >> > If you already have email services from another email provider and you are adding your new email provider’s servers in parallel (without replacing them), you risk randomly receiving your emails from either of your two email providers.
+>>
 > **SPF**
 >> **S**ender **P**olicy **F**ramework <br><br>
 >> Avoids potential identity theft on email addresses using your domain name (spoofing). For example, the record `v=spf1 include:mx.ovh.ca ~all` indicates that only outgoing servers linked to your OVHcloud mail service can be considered legitimate by the incoming server. You can enter this record as a TXT record, or via our automatic configuration system. 
@@ -136,7 +137,7 @@ Select the record you want by clicking each of the following tabs.
 >> > 
 >> > The TXT record is limited to 255 characters. However, in some cases, you can split your value into several records. Ask your service provider if they request to enter a value that exceeds the 255-character quota.
 >> > 
->> > However, this limit does not exist if you use the `Modify in text mode`{.action} feature described in our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_dmarc)" (for expert users).
+>> > However, this limit does not exist if you use the `Modify in text mode`{.action} feature described in our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)" (for expert users).
 >>
 > **SRV**
 >> **S**e**RV**ice resource <br><br>
