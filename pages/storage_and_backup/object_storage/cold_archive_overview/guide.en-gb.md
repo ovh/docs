@@ -63,7 +63,7 @@ Archive and retrieve your data with the methodology of your choice:
 - with rClone
 - with tools of the market 
 
-The bucket limitation is 100To.
+The bucket limitation is 100TB.
 
 ## Data lifecycle 
 
@@ -74,12 +74,13 @@ You can track the different steps of your data by the status of your bucket 
 | Archive (=bucket) status | Description | Objects permissions | Duration | Data pricing |
 | --- | --- | --- | --- | --- |
 | **`None`** | No Intelligent-Tiering configuration pushed on the bucket yet. | All | unlimited | Standard |
-| **`Archiving`** | Archiving in progress on tapes. | Listing | <48 hrs | Archive   |
-| **`Archived`** | Objects archived on tapes only. | Listing | unlimited | Archive  |
-| **`Restoring`** | Restoration in progress from tapes. | Listing | <48 hrs | Archive  |
-| **`Restored`** | Objects restored and accessible. | Read-only + Listing | 30 days | Archive  |
-| **`Deleting`** | Objects deletion from tapes (and disks if restored) in progress. | Listing | <48 hrs | Archive  |
-| **`Flushed`** | Bucket is empty and can be removed safely. | Listing (empty bucket) | NA | Archive  |
+| **`Archiving`** | Archiving in progress on tapes. | Listing | <48 hrs | Archive |
+| **`Archived`** | Objects archived on tapes only. | Listing | unlimited | Archive |
+| **`Restoring`** | Restoration in progress from tapes. | Listing | <48 hrs | Archive |
+| **`Restored`** | Objects restored and accessible. | Read-only + Listing | 30 days | Archive |
+| **`Deleting`** | Objects deletion from tapes (and disks if restored) in progress. | Listing | <48 hrs | Archive |
+| **`Flushed`** | Bucket is empty and can be removed safely. | Listing (empty bucket) | N/A | Archive |
+
 
 ## Network, upload and retrieval performances  
 
