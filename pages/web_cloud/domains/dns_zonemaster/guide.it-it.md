@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Utilizzo di Zonemaster
-updated: 2024-03-08
+updated: 2024-06-18
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ updated: 2024-03-08
 
 > [!primary]
 >
-> Per una migliore comprensione del concetto di DNS, consulta l'introduzione della nostra guida sulla [configurazione di una zona DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Per comprendere meglio il concetto di DNS, consulta la nostra guida "[Cos'è una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)".
 
 ## Prerequisiti
 
