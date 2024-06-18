@@ -165,4 +165,4 @@ Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich
 
 [Korzystanie z grup (mailing listy) dostępnych z kontem Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -163,4 +163,4 @@ Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHclo
 
 [Crear grupos de contactos](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

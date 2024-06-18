@@ -164,4 +164,4 @@ Se pretender usufruir de uma assistência na utilização e na configuração da
 
 [Utilização de grupos de difusão (mailing lists)](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

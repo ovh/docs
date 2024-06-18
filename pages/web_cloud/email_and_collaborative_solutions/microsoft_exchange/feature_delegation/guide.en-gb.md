@@ -159,4 +159,4 @@ If you would like assistance using and configuring your OVHcloud solutions, plea
 
 [Creating contact groups](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
