@@ -237,9 +237,9 @@ This malfunction can have several causes:
 
 - Check that the domain name you are using (“domain.tld”) is the one you just installed the 1-click module with.
 
-- If you have recently changed your domain name’s [active DNS zone](/pages/web_cloud/domains/dns_server_general_information) or [DNS servers](/pages/web_cloud/domains/dns_zone_edit) or you have executed a [domain name transfer](/pages/web_cloud/domains/transfer_incoming_generic_domain). Wait for these operations to be finished (4-24 hours for a change in the DNS zone and 24-48 hours for a change in the DNS servers). Also remember to restart your devices (PC, smartphone, box, etc.) and clear your browser cache.
+- If you have recently changed your domain name’s [active DNS zone](/pages/web_cloud/domains/dns_zone_edit)/[DNS servers](/pages/web_cloud/domains/dns_server_edit) or a [domain name transfer](/pages/web_cloud/domains/transfer_incoming_generic_domain). Wait for these operations to be finalized (4-24 hours for a change in the DNS zone and 24-48 hours for a change in the DNS servers). Also remember to restart your devices (PC, smartphone, box, etc.) and clear your browser cache.
 
-- Your domain name is still linked to your old web hosting plan. In this case, modify the [active DNS zone](/pages/web_cloud/domains/dns_zone_edit) associated with your domain name or its [DNS servers](/pages/web_cloud/domains/dns_server_general_information). If your domain name’s active DNS zone is not managed at OVHcloud, contact your DNS provider with this information.
+- Your domain name is still linked to your old web hosting plan. In this case, modify the [active DNS zone](/pages/web_cloud/domains/dns_zone_edit) associated with your domain name or its [DNS servers](/pages/web_cloud/domains/dns_server_edit). If your domain name’s active DNS zone is not managed at OVHcloud, contact your DNS provider with this information.
 
 ### The "Administrator" password for accessing the "administration interface" of your 1-click module does not work <a name="adminpassword"></a>
 

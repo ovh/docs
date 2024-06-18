@@ -10,7 +10,7 @@ updated: 2022-08-02
 
 ## Objetivo
 
-En caso de que su sitio web no sea accesible, puede haber varios errores en su navegador. Los siguientes ejemplos indican una configuración errónea de sus [DNS](/pages/web_cloud/domains/dns_server_general_information#entender-el-concepto-de-dns) o un dominio suspendido (si su sitio no muestra uno de los mensajes de error descritos aquí, consulte la sección [Más información](#go-further)):
+En caso de que su sitio web no sea accesible, pueden aparecer varios errores en su navegador. Los siguientes ejemplos indican una configuración incorrecta de sus [servidores DNS](/pages/web_cloud/domains/dns_server_edit), su [zona DNS](/pages/web_cloud/domains/dns_zone_edit) o un dominio suspendido (si su sitio web no muestra ninguno de los mensajes de error descritos aquí, consulte [Más información](#go-further)):
 
 |Navegador|Mensaje de error|
 |-|---|
@@ -30,7 +30,7 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 
 ## Requisitos
 
-- Tener la gestión de los servidores y de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) del dominio.
+- Tener la gestión de los servidores y de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) del dominio.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
@@ -58,7 +58,7 @@ Una vez completada la renovación del plan, su sitio web estará disponible en u
 
 ### Etapa 2: comprobar los servidores DNS
 
-Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information), haga clic en [área de cliente de OVHcloud](/links/manager) y seleccione el dominio del `Dominios`{.action}.
+Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_server_edit), haga clic en [área de cliente de OVHcloud](/links/manager) y seleccione el dominio del `Dominios`{.action}.
 
 #### Situación 1: no hay anomalías en los servidores DNS
 
@@ -78,7 +78,7 @@ Una advertencia en la pestaña `Zona DNS`{.action} indica que los servidores DNS
 
 ![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}
 
-Modifique los servidores DNS siguiendo las instrucciones de [esta guía](/pages/web_cloud/domains/dns_server_general_information#cambiar-los-servidores-dns) para que sean idénticos a los objetivos de los registros de tipo `NS` en la `Zona DNS`{.action}.
+Modifique los servidores DNS siguiendo las instrucciones de [esta guía](/pages/web_cloud/domains/dns_server_edit) para que sean idénticos a los objetivos de los registros de tipo `NS` en la `Zona DNS`{.action}.
 
 Su sitio web estará disponible en un plazo máximo de 48 horas.
 
@@ -90,7 +90,7 @@ Su sitio web estará disponible en un plazo máximo de 48 horas.
 >
 > En ese caso, contacte con el proveedor de hosting de su zona DNS, su webmaster o los [partners de OVHcloud](/links/partner) antes de realizar cualquier operación.
 >
-> Es posible que los servidores DNS utilizados por el dominio sean funcionales y que el problema de acceso al sitio web esté relacionado con un registro que no se encuentra o que no está en la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns). Cualquier modificación de los servidores DNS en esta situación puede hacer que sus direcciones de correo u otras aplicaciones en línea no estén disponibles.
+> Es posible que los servidores DNS utilizados por el dominio sean funcionales y que el problema de acceso al sitio web esté relacionado con un registro que no se encuentra o que no está en la [zona DNS](/pages/web_cloud/domains/dns_zone_general_information). Cualquier modificación de los servidores DNS en esta situación puede hacer que sus direcciones de correo u otras aplicaciones en línea no estén disponibles.
 >
 
 #### Situación 3: no aparece ningún registro de tipo NS en la zona DNS
@@ -123,7 +123,7 @@ En la pestaña `Información general`{.action}, copie la dirección IPV4 y/o IPV
 
 ![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
 
-A continuación, cópiela en la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#editar-la-zona-dns-de-ovhcloud-de-su-dominio) de su dominio modificando o creando uno o más registros de tipo `A`.
+A continuación, cópiela en la [zona DNS](/pages/web_cloud/domains) de su dominio modificando o creando uno o más registros de tipo `A`.
 
 ![ipv4-DNSzone](images/dashboard-entry-a.png){.thumbnail}
 

@@ -53,7 +53,7 @@ Scegli `SFTP`{.action} o `Attivo`{.action} (per attivare il protocollo SSH sul t
 
 Per prima cosa verifica che i file e le cartelle del tuo sito siano presenti nella [cartella root](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#3-caricare-i-file) del tuo hosting.
 
-Se hai apportato modifiche ai tuoi [server o alla tua zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns) meno di 48 ore fa, attendi e riavvia regolarmente i tuoi dispositivi per svuotare la cache.
+Se hai effettuato una modifica nei tuoi [server DNS](/pages/web_cloud/domains/dns_server_edit) o nella tua [zona DNS](/pages/web_cloud/domains/dns_zone_edit) meno di 48 ore fa, attendi e riavvia regolarmente i tuoi dispositivi per svuotare la cache.
 
 ### Le credenziali FTP non funzionano
 

@@ -242,9 +242,9 @@ Diese Fehlfunktion kann mehrere Ursachen haben:
 
 - Überprüfen Sie, ob der Domainname („domain.tld“), den Sie gerade aufgerufen haben, der Name ist, mit dem Sie das 1-Klick-Modul installiert haben.
 
-- Wenn Sie kürzlich die [aktive DNS Zone](/pages/web_cloud/domains/dns_server_general_information) oder [DNS Server](/pages/web_cloud/domains/dns_zone_edit) Ihres Domainnamens bearbeitet haben oder einen [Transfer eines Domainnamens](/pages/web_cloud/domains/transfer_incoming_generic_domain) durchgeführt haben: Warten Sie, bis diese Vorgänge abgeschlossen sind (4-24 Stunden bei einer Änderung der DNS-Zone und 24-48 Stunden bei einer Änderung der DNS-Server). Denken Sie auch daran, ggf. Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten und den Cache Ihres Internetbrowsers zu leeren.
+- Wenn Sie kürzlich die [aktive DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)/[DNS-Server](/pages/web_cloud/domains/dns_server_edit) Ihres Domainnamens oder einen [Transfer eines Domainnamens](/pages/web_cloud/domains/transfer_incoming_generic_domain) geändert haben. Warten Sie, bis diese Vorgänge abgeschlossen sind (4-24 Stunden bei einer Änderung der DNS-Zone und 24-48 Stunden bei einer Änderung der DNS-Server). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten und den Cache Ihres Internetbrowsers zu leeren.
 
-- Ihr Domainname ist immer noch mit Ihrem alten Webhosting verbunden. Ändern Sie in diesem Fall die [aktive DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), die mit Ihrem Domainnamen oder dessen [DNS-Servern](/pages/web_cloud/domains/dns_server_general_information) verbunden ist. Wenn die aktive DNS-Zone Ihrer Domain nicht bei OVHcloud verwaltet wird, wenden Sie sich mit diesen Informationen an Ihren DNS-Anbieter.
+- Ihr Domainname ist immer noch mit Ihrem alten Webhosting verbunden. Ändern Sie in diesem Fall die [aktive DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), die mit Ihrem Domainnamen oder dessen [DNS-Servern](/pages/web_cloud/domains/dns_server_edit) verbunden ist. Wenn die aktive DNS-Zone Ihrer Domain nicht bei OVHcloud verwaltet wird, wenden Sie sich mit diesen Informationen an Ihren DNS-Anbieter.
 
 ### Das Passwort „Administrator“ für den Zugriff auf das „Verwaltungsinterface“ Ihres 1-Klick-Moduls funktioniert nicht <a name="adminpassword"></a>
 

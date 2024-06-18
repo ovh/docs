@@ -48,7 +48,7 @@ Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), cl
 
 First of all, check that your website’s files and folders are in the [root folder](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#3-uploading-the-files-to-the-storage-space) of your Web Hosting plan.
 
-If you have modified your [DNS servers or DNS zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) less than 48 hours ago, please wait and restart your devices regularly in order to clear their cache.
+If you have made a change to your [DNS servers](/pages/web_cloud/domains/dns_server_edit) or [DNS zone](/pages/web_cloud/domains/dns_zone_edit) less than 48 hours ago, please wait and reboot your devices regularly to clear their cache.
 
 ### My FTP credentials are not working.
 
