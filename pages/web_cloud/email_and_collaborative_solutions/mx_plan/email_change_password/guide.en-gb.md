@@ -106,7 +106,7 @@ For security and confidentiality reasons, it is not possible to **retrieve** a p
 
 > [!primary]
 >
-> If you want to store a password, we recommend using a password manager, such as **Keepass**.
+> If you want to store a password, we recommend using a password manager, such as **KeePass**.
 
 #### Identifying your MX Plan solution <a name="whichmxplan"></a>
 
