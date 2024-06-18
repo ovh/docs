@@ -246,7 +246,7 @@ Once you have unpacked the files in your **CMS** folder, [log in to your storage
 
 Below is an example with the CMS *WordPress*:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/web-hosting-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
 
 >[!warning]
 >

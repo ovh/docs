@@ -250,7 +250,7 @@ Una volta che i file decomprimono la cartella "**CMS**", [collegati in FTP al tu
 
 Di seguito, un esempio con il CMS *WordPress*:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/web-hosting-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
 
 > [!warning]
 >
