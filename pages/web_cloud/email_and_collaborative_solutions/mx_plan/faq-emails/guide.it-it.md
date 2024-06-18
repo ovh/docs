@@ -59,6 +59,14 @@ La **password** deve rispettare queste regole:
 > [!warning]
 > Per motivi di sicurezza, ti consigliamo di non utilizzare due volte la stessa password, di sceglierne una che non abbia alcun rapporto con le tue informazioni personali (ad esempio evita di inserire il tuo cognome, nome e data di nascita) e di rinnovarla regolarmente.
 
+### Come recuperare la password dimenticata?
+
+Per motivi di sicurezza e riservatezza non è possibile **recuperare una password**. Come descritto nella nostra "[Modifica la password di un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)", è necessario reimpostare la password se non la conosci più.
+
+> [!primary]
+>
+> Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
+
 ### Come limitare la ricezione di spam?  
 
 Per limitare la ricezione di SPAM, è possibile impostare filtri sulle email (chiamati “Filtri” nella soluzione MX Plan), per eliminare o spostare email nella cartella “posta indesiderata” fin dal loro arrivo.

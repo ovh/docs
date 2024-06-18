@@ -59,6 +59,14 @@ A **palavra-passe** deve respeitar as seguintes regras:
 > [!warning]
 > Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento, por exemplo) e renove-a regularmente.
 
+### Como recuperar a minha palavra-passe esquecida?
+
+Por razões de segurança e de confidencialidade, não é possível **recuperar** uma palavra-passe. Conforme descrito no nosso "[Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/email_change_password)", é necessário redefinir a sua palavra-passe se não a souber mais.
+
+> [!primary]
+>
+> Se pretender armazenar uma palavra-passe, é aconselhável utilizar um gestor de palavra-passe, como, por exemplo, **Keepass**.
+
 ### Como limitar a receção de spam?
 
 De modo a limitar a receção de spam, pode aplicar regras aos seus e-mails (chamadas «Filtros» no serviço MX Plan). Elas terão por objetivo eliminar ou transferir e-mails para a pasta «Mensagens indesejadas» aquando da receção.

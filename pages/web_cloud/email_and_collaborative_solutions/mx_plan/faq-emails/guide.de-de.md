@@ -59,6 +59,14 @@ Das **Passwort** muss folgende Bedingungen erfüllen:
 > [!warning]
 > Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
 
+### Wie erhalte ich mein vergessenes Passwort zurück?
+
+Aus Gründen der Sicherheit und des Datenschutzes ist es nicht möglich, ein Passwort **wiederherzustellen**. Wie in unserer „[Passwort einer E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)“ beschrieben, muss Ihr Passwort zurückgesetzt werden, wenn Sie es nicht mehr kennen.
+
+> [!primary]
+>
+> Wenn Sie ein Kennwort speichern möchten, sollten Sie einen Kennwort-Manager verwenden, z. B. **Keepass**.
+
 ### Wie kann ich die Anzahl der empfangenen Spam-Mails reduzieren?
 
 Um den Empfang von Spam-Mails einzuschränken, können Sie Eingangsregeln für Ihre E-Mails einrichten (bei MX Plan als „Filter“ bezeichnet). Ihr Ziel ist es, E-Mails bei Empfang in den Spam-Ordner zu verschieben oder direkt zu löschen.

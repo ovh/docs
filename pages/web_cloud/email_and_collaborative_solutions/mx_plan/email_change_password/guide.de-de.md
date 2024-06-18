@@ -104,6 +104,14 @@ Geben Sie im neu geöffneten Fenster zunächst Ihr aktuelles Passwort ein. Geben
 
 ![E-Mail](images/mxplan-password-new-step5.png){.thumbnail}
 
+### Kennwort abrufen
+
+Aus Gründen der Sicherheit und des Datenschutzes ist es nicht möglich, ein Passwort **wiederherzustellen**. Wie in den vorherigen Schritten beschrieben, müssen Sie Ihr Kennwort zurücksetzen, wenn Sie es nicht mehr kennen.
+
+> [!primary]
+>
+> Wenn Sie ein Kennwort speichern möchten, sollten Sie einen Kennwort-Manager verwenden, z. B. **Keepass**.
+
 #### Identifizieren Sie die Version Ihres MX Plans <a name="whichmxplan"></a>
 
 In der dieser Tabelle finden Sie die notwendigen Informationen zur Identifizierung Ihres MX Plans:

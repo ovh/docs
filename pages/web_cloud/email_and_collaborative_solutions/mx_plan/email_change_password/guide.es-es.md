@@ -100,6 +100,14 @@ En la nueva ventana, introduzca la contraseña actual, escriba una nueva contras
 
 ![Correo electrónico](images/mxplan-password-new-step5.png){.thumbnail}
 
+### Recupera una password
+
+Per motivi di sicurezza e riservatezza non è possibile **recuperare** una password. Come descritto nei passaggi precedenti, è necessario reimpostare la password nel caso in cui non sia più nota.
+
+> [!primary]
+>
+> Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
+
 #### Identifique su solución MXplan <a name="whichmxplan"></a>
 
 En la siguiente tabla encontrará la información necesaria para identificar su solución MXplan.

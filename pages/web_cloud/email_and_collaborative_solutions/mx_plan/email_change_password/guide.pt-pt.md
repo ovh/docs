@@ -100,6 +100,14 @@ Na nova janela, comece por indicar a sua palavra-passe atual. A seguir, escreva 
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
+### Recuperar uma palavra-passe
+
+Por razões de segurança e de confidencialidade, não é possível **recuperar** uma palavra-passe. Como descrito nos passos anteriores, é necessário reinicializar a sua palavra-passe se não a conhecer mais.
+
+> [!primary]
+>
+> Se pretender armazenar uma palavra-passe, é aconselhável utilizar um gestor de palavra-passe, como, por exemplo, **Keepass**.
+
 #### Identifique a sua oferta MXplan <a name="whichmxplan"></a>
 
 Na tabela abaixo, encontrará as informações necessárias para identificar a sua oferta MXplan.
