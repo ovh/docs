@@ -23,12 +23,11 @@ This guide is designed to familiarise you with the management of your containers
 Enter the following command:
 
 ```bash
-user@host:~$ pip3 install awscli awscli-plugin-endpoint
+user@host:~$ pip3 install awscli
 ```
 
 > [!primary]
 >
-> - awscli-plugin-endpoint is optional
 > - Install the groff package if you want to use command line help.
 >
 
@@ -58,17 +57,11 @@ aws_secret_access_key = <secret_key>
 
 user@host:~$ cat ~/.aws/config
 
-# If you have not installed awscli-plugin-endpoint, delete the next two lines
-[plugins]
-endpoint = awscli_plugin_endpoint
-
 [profile default]
 region = <region_in_lowercase>
+endpoint_url = <url_endpoint>
 s3 =
-  endpoint_url = <url_endpoint>
   signature_version = s3v4
-s3api =
-  endpoint_url = <url_endpoint>
 ```
 
 Here are the configuration values that you can specifically set:
@@ -88,11 +81,6 @@ For a list of endpoints by region and storage class, refer to [this page](/pages
 
 > [!primary]
 >
-> If you have not installed `awscli-plugin-endpoint`, you must add `--endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net` to the command line.
->
-
-> [!primary]
->
 > If you have more than one profile, add `--profile <profile>` to the command line.
 >
 
@@ -100,7 +88,7 @@ For a list of endpoints by region and storage class, refer to [this page](/pages
 
 ```bash
 aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+aws --profile default s3 mb s3://<bucket_name>
 ```
 
 **Listing your buckets**

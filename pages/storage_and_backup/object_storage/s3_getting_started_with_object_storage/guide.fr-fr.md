@@ -60,6 +60,8 @@ user@host:~$ cat ~/.aws/config
 [profile default]
 region = <region_in_lowercase>
 endpoint_url = <url_endpoint>
+s3 =
+  signature_version = s3v4
 ```
 
 Voici les valeurs de configuration que vous pouvez définir spécifiquement  :

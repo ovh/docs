@@ -89,7 +89,7 @@ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN"
 Zainstaluj klienta AWS i skonfiguruj go w następujący sposób:
 
 ```bash
-user@host:~$ pip install awscli awscli-plugin-endpoint
+user@host:~$ pip install awscli
 [...]
 user@host:~$ cat ~/.aws/credentials
 

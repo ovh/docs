@@ -393,21 +393,20 @@ Please enter your OpenStack Password:
 Now, you need to install the CLI tools:
 
 ```
-pip install python-openstackclient awscli awscli-plugin-endpoint
+pip install python-openstackclient awscli
 ```
 
 The command install `openstack client` to generate your credentials, `aws CLI` and mandatory `endpoint plugin for aws CLI`:
 
 ```console
-$ pip install python-openstackclient awscli awscli-plugin-endpoint
+$ pip install python-openstackclient awscli
 DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621
 Collecting python-openstackclient
   Using cached python_openstackclient-5.7.0-py3-none-any.whl (970 kB)
 Collecting awscli
   Using cached awscli-1.22.54-py3-none-any.whl (3.8 MB)
-Collecting awscli-plugin-endpoint
 ...
-Successfully installed PrettyTable-3.1.0 PyYAML-5.4.1 appdirs-1.4.4 attrs-21.4.0 autopage-0.5.0 awscli-1.22.54 awscli-plugin-endpoint-0.4 botocore-1.23.54 certifi-2021.10.8 cffi-1.15.0 charset-normalizer-2.0.12 cliff-3.10.0 cmd2-2.3.3 colorama-0.4.3 cryptography-36.0.1 debtcollector-2.4.0 decorator-5.1.1 docutils-0.15.2 dogpile.cache-1.1.5 idna-3.3 iso8601-1.0.2 jmespath-0.10.0 jsonpatch-1.32 jsonpointer-2.2 keystoneauth1-4.4.0 msgpack-1.0.3 munch-2.5.0 netaddr-0.8.0 netifaces-0.11.0 openstacksdk-0.61.0 os-service-types-1.7.0 osc-lib-2.4.2 oslo.config-8.7.1 oslo.i18n-5.1.0 oslo.serialization-4.2.0 oslo.utils-4.12.1 packaging-21.3 pbr-5.8.1 pyasn1-0.4.8 pycparser-2.21 pyparsing-3.0.7 pyperclip-1.8.2 python-cinderclient-8.2.0 python-dateutil-2.8.2 python-keystoneclient-4.4.0 python-novaclient-17.6.0 python-openstackclient-5.7.0 pytz-2021.3 requests-2.27.1 requestsexceptions-1.4.0 rfc3986-2.0.0 rsa-4.7.2 s3transfer-0.5.1 simplejson-3.17.6 stevedore-3.5.0 urllib3-1.26.8 wcwidth-0.2.5 wrapt-1.13.3
+Successfully installed PrettyTable-3.1.0 PyYAML-5.4.1 appdirs-1.4.4 attrs-21.4.0 autopage-0.5.0 awscli-1.22.54 botocore-1.23.54 certifi-2021.10.8 cffi-1.15.0 charset-normalizer-2.0.12 cliff-3.10.0 cmd2-2.3.3 colorama-0.4.3 cryptography-36.0.1 debtcollector-2.4.0 decorator-5.1.1 docutils-0.15.2 dogpile.cache-1.1.5 idna-3.3 iso8601-1.0.2 jmespath-0.10.0 jsonpatch-1.32 jsonpointer-2.2 keystoneauth1-4.4.0 msgpack-1.0.3 munch-2.5.0 netaddr-0.8.0 netifaces-0.11.0 openstacksdk-0.61.0 os-service-types-1.7.0 osc-lib-2.4.2 oslo.config-8.7.1 oslo.i18n-5.1.0 oslo.serialization-4.2.0 oslo.utils-4.12.1 packaging-21.3 pbr-5.8.1 pyasn1-0.4.8 pycparser-2.21 pyparsing-3.0.7 pyperclip-1.8.2 python-cinderclient-8.2.0 python-dateutil-2.8.2 python-keystoneclient-4.4.0 python-novaclient-17.6.0 python-openstackclient-5.7.0 pytz-2021.3 requests-2.27.1 requestsexceptions-1.4.0 rfc3986-2.0.0 rsa-4.7.2 s3transfer-0.5.1 simplejson-3.17.6 stevedore-3.5.0 urllib3-1.26.8 wcwidth-0.2.5 wrapt-1.13.3
 ```
 
 ```

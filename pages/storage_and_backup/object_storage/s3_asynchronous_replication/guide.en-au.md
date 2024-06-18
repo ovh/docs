@@ -369,7 +369,7 @@ The source bucket is the bucket whose objects are automatically replicated.
 
 ```bash
 $ aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+aws --profile default s3 mb s3://<bucket_name>
 ```
 
 **_Example:_** Creation of a source bucket in the SBG region in the "Standard" storage class.
