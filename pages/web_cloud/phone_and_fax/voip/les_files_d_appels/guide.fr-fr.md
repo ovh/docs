@@ -1,7 +1,7 @@
 ---
 title: "Configurer une file d'appels"
 excerpt: "Découvrez comment configurer une file d'appels sur un numéro alias"
-updated: 2024-02-12
+updated: 2024-06-18
 ---
 
 ## Objectif
@@ -26,7 +26,9 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 ## En pratique
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, dans la section `Télécom`{.action}.<br>
-Cliquez ensuite sur `Télécom`{.action} et choisissez le numéro alias sur lequel vous souhaitez configurer la file d'appels.
+Cliquez ensuite sur `Téléphonie`{.action} et choisissez le numéro alias sur lequel vous souhaitez configurer la file d'appels.
+
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ### Étape 1 : appliquer la configuration
 
@@ -102,10 +104,8 @@ Dès qu'au moins une ligne est présente dans votre file, vous avez la possibili
 
 ![fileappels](images/2022-VoIP-FA-06.png){.thumbnail}
 
-- **« Numéro à afficher »** : définissez le numéro qui sera visible sur le téléphone de la personne qui reçoit l’appel ;
-
-- **« Stratégie de sonnerie »** : définissez la manière dont les lignes de votre file d'appels sonneront. Selon celle choisie, vous serez peut-être amené à [modifier l'ordre des lignes de la file](/pages/web_cloud/phone_and_fax/voip/les_files_d_appels#3-organiser-les-lignes-de-la-file-dappels) ;
-
+- **« Numéro à afficher »** : définissez le numéro qui sera visible sur le téléphone de la personne qui reçoit l’appel.
+- **« Stratégie de sonnerie »** : définissez la manière dont les lignes de votre file d'appels sonneront. Selon celle choisie, vous serez peut-être amené à [modifier l'ordre des lignes de la file](/pages/web_cloud/phone_and_fax/voip/les_files_d_appels#3-organiser-les-lignes-de-la-file-dappels).
 - **« Appliquer les renvois définis sur les lignes »** : définissez si les renvois d'appels configurés sur les lignes de la file doivent être appliqués ou non. Sauf besoin spécifique, nous vous conseillons de laisser cette option décochée. 
 
 Une fois vos choix effectués, cliquez sur le bouton `Valider`{.action}.
@@ -167,7 +167,6 @@ Dans le menu « Configuration », cliquez sur `Gestion des sons et de l'attente`
 Vous avez la possibilité d'ajouter deux sons :
 
 - **l'annonce avant mise en attente** : ce son sera joué intégralement avant que le correspondant ne rentre dans la file d'attente (et donc, avant qu'une ligne sonne). Privilégiez une annonce courte, par exemple un message de bienvenue citant le nom de votre entreprise.
-
 - **la musique d'attente** : ce son sera joué pendant que le client patiente dans la file d'attente et jusqu'au décrochage de l'appel par une ligne. Cette musique d'attente étant jouée en boucle, privilégiez une annonce plus longue, afin d'éviter une répétition trop fréquente et donc désagréable pour vos appelants.
 
 Pour ajouter un son, cliquez sur le bouton `Ajouter un son`{.action} puis suivez les étapes de téléversement. Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer les changements.
@@ -179,8 +178,7 @@ Pour ajouter un son, cliquez sur le bouton `Ajouter un son`{.action} puis suivez
 Depuis cette partie, définissez le nombre maximum d'appelants pouvant être en attente simultanément dans la file. Si ce nombre venait à être dépassé, vous pouvez définir un comportement à adopter parmi les deux possibilités suivantes de débordement :
 
 - **Renvoyer sur un répondeur** : le ou les appelants concernés par le débordement seront alors renvoyés vers le répondeur de votre choix. Pour le sélectionner, cochez d'abord la case `Renvoyer sur un répondeur`{.action}. Cliquez ensuite sur `Ajouter un répondeur`{.action} et sélectionnez le répondeur d'une vos ligne SIP.
-
-- **Jouer une annonce de débordement** : le ou les appelants concernés par le débordement entendront alors l'annonce que vous avez définie. Pour la téléverser, cochez d'abord la case `Jouer une annonce de débordement`{.action}. Cliquez ensuite sur `Ajouter un son`{.action}, puis suivez les étapes qui apparaissent jusqu'à finalisation.
+- **Jouer une annonce de débordement** : le ou les appelants concernés par le débordement entendront alors l'annonce que vous avez définie et l'appel sera ensuite raccroché. Pour téléverser un fichier audio, cochez d'abord la case `Jouer une annonce de débordement`{.action}. Cliquez ensuite sur `Ajouter un son`{.action}, puis suivez les étapes qui apparaissent jusqu'à finalisation.
 
 Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer les changements.
 
@@ -191,7 +189,6 @@ Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer 
 Définissez ici la durée maximale pendant laquelle un appelant attendra dans la file. Si cette durée venait à être dépassée, choisissez le comportement à adopter parmi deux possibilités :
 
 - **Renvoyer sur un répondeur** : le ou les appelants concernés seront alors renvoyés vers le répondeur de votre choix. Pour le sélectionner, cochez d'abord la case `Renvoyer sur un répondeur`{.action}. Cliquez ensuite sur `Ajouter un répondeur`{.action} et sélectionnez le répondeur d'une vos ligne SIP.
-
 - **Jouer une annonce de fermeture** : le ou les appelants concernés entendront alors l'annonce que vous avez définie. Pour l'envoyer, cochez d'abord la case `Jouer une annonce de fermeture`{.action}. Cliquez ensuite sur `Ajouter un son`{.action}, puis suivez les étapes qui apparaissent jusqu'à finalisation.
 
 Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer les changements.
@@ -328,4 +325,4 @@ Un tableau vous donnera accès aux enregistrements d'appels, vous permettant de 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
