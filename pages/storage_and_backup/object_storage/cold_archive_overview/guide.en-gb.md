@@ -39,13 +39,19 @@ The service allows you to focus on building and deploying cloud applications whi
 
 The service is fully managed by OVHcloud and accessible through S3 API.
 
-**3 steps operation**
+**5 steps operation**
 
-1. Store your data in an Object Storage bucket first in RBX Region
-2. Archive it on tapes
-3. Restore your data or/and delete your archive
+1. **Store (Active):** Your data is newly stored in a bucket within the Object Storage Bucket.
+2. **Archive (Archiving):** 
+   - **Archiving:** Your data is currently being archived to tapes.
+   - **Archived:** Your data is now archived in tapes, stored in the Tape Archive (long-term archive) across dedicated data centers.
+3. **Retrieve (48h) or Restore:** 
+   - **Restoring:** Your data is being copied to a bucket.
+   - **Restored:** Your data is available in a bucket, read-only (immutable), within the Object Storage Bucket.
+4. **Move / Suppress (Flushed):** The Object Storage Bucket is now empty.
+5. **Deleting (Optional):** Your data is being deleted from the tapes.
 
-![Cold Archive concept](images/cold_archive_overview-20230117154349550.png){.thumbnail}
+![Cold Archive concept](images/5_Steps.png){.thumbnail}
 
 ## Uploading the data
 
