@@ -57,7 +57,7 @@ La contraseña **contraseña** debe cumplir las siguientes reglas:
 
 ### ¿Cómo recuperar mi contraseña olvidada?
 
-Por motivos de seguridad y confidencialidad, no es posible **recuperar** una contraseña. Como se describe en nuestra guía «[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/email_change_password)», es necesario restaurar su contraseña si ya no la conoce.
+Por motivos de seguridad y confidencialidad, no es posible **recuperar** una contraseña. Como se describe en nuestra guía «[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)», es necesario restaurar su contraseña si ya no la conoce.
 
 > [!primary]
 >

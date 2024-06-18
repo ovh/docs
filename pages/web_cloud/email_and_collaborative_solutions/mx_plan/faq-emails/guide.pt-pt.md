@@ -61,7 +61,7 @@ A **palavra-passe** deve respeitar as seguintes regras:
 
 ### Como recuperar a minha palavra-passe esquecida?
 
-Por razões de segurança e de confidencialidade, não é possível **recuperar** uma palavra-passe. Conforme descrito no nosso "[Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/email_change_password)", é necessário redefinir a sua palavra-passe se não a souber mais.
+Por razões de segurança e de confidencialidade, não é possível **recuperar** uma palavra-passe. Conforme descrito no nosso "[Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)", é necessário redefinir a sua palavra-passe se não a souber mais.
 
 > [!primary]
 >
