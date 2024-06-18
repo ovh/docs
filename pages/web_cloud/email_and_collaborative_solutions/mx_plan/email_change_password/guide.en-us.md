@@ -79,6 +79,14 @@ In the new window that opens, enter your current password first. Then enter your
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
+### Retrieve a password
+
+For security and confidentiality reasons, it is not possible to **retrieve** a password. As described in the previous steps, you will need to reset your password if you have forgotten it.
+
+> [!primary]
+>
+> If you want to store a password, we recommend using a password manager, such as **KeePass**.
+
 ## Go further
 
 [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)

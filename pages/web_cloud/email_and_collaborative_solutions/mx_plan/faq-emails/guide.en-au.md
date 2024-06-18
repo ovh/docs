@@ -33,9 +33,37 @@ All of your email addresses are managed via the [OVHcloud Control Panel](https:/
 **Tips and tricks**: With MX Plan email solutions, you can delegate the management of an email account to another OVHcloud account while keeping control over it yourself. To do this, simply set up a delegation from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}: Log in to the OVHcloud Control Panel, navigate to the `Emails` section and select the domain concerned. Next, go to the `Emails` tab, then select an option:
 
 - `Manage the elements shared by all email adresses`{.action} on the right-hand side if you would like to delegate management of all accounts for this domain
-- `Delegation management`{.action} if you would like to delegate management of a specific account (click on `...`{.action} next to the account)  
+- `Delegation management`{.action} if you would like to delegate management of a specific account (click on `...`{.action} next to the account)
 
 Please note that an OVHcloud customer ID (NIC handle) is required for both options.
+
+### What should I know before I create an email address?
+
+Creating an email address isn't complicated, but there are rules that must be followed to set the **name of your email address** and **passwords**.
+
+The **name of your email address** must respect the following rules:
+
+- Minimum 2 characters
+- Maximum 32 characters
+- No accented characters
+- No special characters except the following characters: `.`, `,`, `-` and `_`
+
+The **password** must respect the following rules:
+
+- Minimum 9 characters
+- Maximum 30 characters
+- No accented characters
+
+> [!warning]
+> For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
+
+### How do I recover my forgotten password?
+
+For security and confidentiality reasons, it is not possible to **retrieve** a password. As described in our guide “[Changing an email password](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)”, you will need to reset your password if you have forgotten it.
+
+> [!primary]
+>
+> If you want to store a password, we recommend using a password manager, such as **Keepass**.
 
 ### How do I limit the amount of spam I receive? 
 
