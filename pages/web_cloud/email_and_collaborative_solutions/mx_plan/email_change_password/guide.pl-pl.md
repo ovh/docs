@@ -1,7 +1,7 @@
 ---
 title: 'Zmiana hasła do konta e-mail'
 excerpt: 'Dowiedz się, jak zmienić hasło do konta e-mail OVHcloud'
-updated: 2023-01-03
+updated: 2024-06-18
 ---
 
 ## Wprowadzenie

@@ -1,7 +1,7 @@
 ---
 title: 'Modifica la password di un indirizzo email'
 excerpt: 'Come modificare la password di un indirizzo email OVHcloud'
-updated: 2023-01-03
+updated: 2024-06-18
 ---
 
 ## Obiettivo

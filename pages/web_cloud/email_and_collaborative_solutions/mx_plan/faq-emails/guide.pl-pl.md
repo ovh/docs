@@ -1,6 +1,6 @@
 ---
 title: FAQ e-mail OVHcloud
-updated: 2024-06-13
+updated: 2024-06-18
 ---
 
 ## Najczęściej zadawane pytania dotyczące kont e-mail
