@@ -110,7 +110,7 @@ If everything has been done correctly, Drupal will be installed:
 
 Once the previous step is complete, the following page is displayed:
 
-![Drupal installation step 5-1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-configure-site-5-1.png){.thumbnail}
+![Drupal installation step 5-1](/pages/assets/screens/other/cms/drupal/install-configure-site-5-1.png){.thumbnail}
 
 Enter the information requested:
 

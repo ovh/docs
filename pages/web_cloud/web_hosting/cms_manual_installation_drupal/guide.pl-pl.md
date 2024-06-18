@@ -114,7 +114,7 @@ Jeśli wszystko zostało poprawnie zrealizowane, Drupal zostanie uruchomiony:
 
 Po zakończeniu poprzedniego etapu wyświetli się następująca strona:
 
-![Drupal instalacja step 5-1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-configure-site-5-1.png){.thumbnail}
+![Drupal instalacja step 5-1](/pages/assets/screens/other/cms/drupal/install-configure-site-5-1.png){.thumbnail}
 
 Wpisz wymagane elementy:
 

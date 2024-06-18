@@ -114,7 +114,7 @@ Wenn alles korrekt eingegeben wurde, startet die Drupal-Installation:
 
 Sobald der vorherige Schritt abgeschlossen ist, wird folgende Seite angezeigt:
 
-![Drupal installation step 5-1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-configure-site-5-1.png){.thumbnail}
+![Drupal installation step 5-1](/pages/assets/screens/other/cms/drupal/install-configure-site-5-1.png){.thumbnail}
 
 Geben Sie die angeforderten Informationen ein:
 
