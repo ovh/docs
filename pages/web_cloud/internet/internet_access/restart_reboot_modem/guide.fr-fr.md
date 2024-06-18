@@ -1,7 +1,7 @@
 ---
 title: 'Redémarrer ou réinitialiser une box OVHcloud'
 excerpt: 'Découvrez comment effectuer le redémarrage et la réinitialisation de votre box'
-updated: 2024-02-23
+updated: 2024-06-18
 ---
 
 ## Objectif
@@ -106,8 +106,11 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 ### Réinitialiser votre box OVHcloud
 
 > [!warning]
+> **Informations importantes**
 >
-> Avant de réinitialiser votre équipement, assurez-vous que celui-ci est et restera allumé (alimenté électriquement) durant la manipulation. Si vous avez déjà paramétré votre box via l'interface, sauvegardez ou récupérez les informations de configuration existantes si vous souhaitez les conserver.
+> - Avant de réinitialiser votre équipement, assurez-vous que celui-ci est et restera allumé (alimenté électriquement) durant la manipulation.
+> - Si vous avez déjà paramétré votre box via son interface locale, sauvegardez ou récupérez les informations de configuration existantes (si vous souhaitez les conserver).
+> - Si une première réinitialisation ne résoud pas les éventuelles difficultés rencontrées, débranchez les câbles LAN (reliant vos équipements locaux à votre modem) puis effectuez une nouvelle réinitialisation de votre box OVHcloud.
 >
 
 Il existe deux possibilités pour réinitialiser votre box OVHcloud :
