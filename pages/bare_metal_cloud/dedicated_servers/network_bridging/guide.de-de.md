@@ -110,7 +110,7 @@ Für alle Betriebssysteme und Distributionen **muss**** Ihre virtuelle Maschine 
 
 > [!warning]
 >
-> Die folgenden Anweisungen gelten für einen virtuellen Rechner, der zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie noch keine VM erstellt haben, gehen Sie zu den Optionen auf der Seite [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} von Proxmox.
+> Die folgenden Anweisungen gelten für eine virtuelle Maschine, die zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie noch keine VM erstellt haben, beachten Sie die Optionen auf der Seite [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} von Proxmox.
 >
 
 Nach Erstellung der VM und während diese noch ausgeschaltet ist:
@@ -132,7 +132,7 @@ Sie können nun Ihre VM starten und zu den nächsten Schritten, abhängig vom in
 
 > [!warning]
 >
-> Die folgenden Anweisungen gelten für einen virtuellen Rechner, der zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie keine VM erstellt haben, lesen Sie die Anleitung [Eine virtuelle Maschine im VMware Host-Client erstellen](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} auf der VMware-Seite.
+> Die folgenden Anweisungen gelten für eine virtuelle Maschine, die zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie noch keine VM erstellt haben, lesen Sie die Anleitung [Eine virtuelle Maschine im VMware Host-Client erstellen](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} auf der VMware-Seite.
 >
 
 Nach Erstellung der VM und während diese noch ausgeschaltet ist klicken Sie mit der rechten Maustaste darauf und klicken dann auf `Edit settings`.
@@ -149,14 +149,14 @@ Sie können nun Ihre VM starten und zu den nächsten Schritten, abhängig vom in
 
 > [!warning]
 >
-> Beachten Sie, dass in den folgenden Beispielen davon ausgegangen wird, dass Sie als Benutzer mit eingeschränkten Berechtigungen angemeldet sind. Daher wird *sudo* vor jedem Befehl verwendet. Wenn Sie als *root* angemeldet sind, müssen Sie dies nicht tun.
+> Beachten Sie, dass in den folgenden Beispielen davon ausgegangen wird, dass Sie als Benutzer mit erhöhten Berechtigungen angemeldet sind. Daher wird *sudo* vor jedem Befehl verwendet. Wenn Sie als *root* angemeldet sind, müssen Sie dies nicht tun.
 >
 
 #### Debian
 
 Standardmäßig befindet sich die Netzwerkkonfigurationsdatei der virtuellen Maschine in `/etc/network/interfaces`.
 
-Wenn Sie mit der Shell Ihrer virtuellen Maschine verbunden sind, führen Sie folgenden Befehl aus, um den Namen Ihres Interface zu identifizieren:
+Wenn Sie in der Shell Ihrer virtuellen Maschine eingeloggt sind, führen Sie folgenden Befehl aus, um den Namen Ihres Interface zu identifizieren:
 
 ```bash
 ls /sys/class/net
@@ -168,14 +168,14 @@ Erstellen Sie anschließend eine Kopie der Konfigurationsdatei, damit Sie jederz
 sudo cp /etc/network/interfaces /etc/network/interfaces.bak
 ```
 
-Im Falle eines Fehlers können Sie mit den folgenden Befehlen zurückgehen:
+Im Falle eines Fehlers können Sie dann die folgenden Befehle nutzen:
 
 ```bash
 sudo rm -f /etc/network/interfaces
 sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 
-Ändern Sie die Datei, sodass sie die folgende Konfiguration widerspiegelt, ersetzen Sie `INTERFACE_NAME`, `ADDITIONAL_IP` und `GATEWAY_IP` durch eigene Werte.
+Ändern Sie die Datei, sodass sie die folgende Konfiguration widerspiegelt. Ersetzen Sie `INTERFACE_NAME`, `ADDITIONAL_IP` und `GATEWAY_IP` durch eigene Werte.
 
 ```bash
 sudo nano /etc/network/interfaces
@@ -233,7 +233,7 @@ Starten Sie anschließend den Netzwerkdienst mit folgendem Befehl neu:
 sudo systemctl restart networking
 ```
 
-Um zu überprüfen, ob der virtuelle Computer vollständig mit dem Internet verbunden ist, verwenden Sie folgenden Befehl:
+Um zu überprüfen, ob die virtuelle Maschine mit dem Internet verbunden ist, verwenden Sie folgenden Befehl:
 
 ```bash
 ping -c 4 example.com
@@ -255,7 +255,7 @@ Wenn Sie eine Antwort erhalten, wurde die Additional IP korrekt konfiguriert. Is
 
 Standardmäßig befindet sich die Netzwerkkonfigurationsdatei der virtuellen Maschine in `/etc/sysconfig/network-scripts/`. Zum Beispiel heißt unsere Datei `ifcfg-eth0`.
 
-Wenn Sie mit der Shell Ihrer virtuellen Maschine verbunden sind, führen Sie folgenden Befehl aus, um den Namen Ihres Interface zu identifizieren:
+Wenn Sie in der Shell Ihrer virtuellen Maschine eingeloggt sind, führen Sie folgenden Befehl aus, um den Namen Ihres Interface zu identifizieren:
 
 ```bash
 ls /sys/class/net
@@ -267,14 +267,14 @@ Erstellen Sie anschließend eine Kopie der Konfigurationsdatei, damit Sie jederz
 sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
 ```
 
-Im Falle eines Fehlers können Sie mit den folgenden Befehlen zurückgehen:
+Im Falle eines Fehlers können Sie dann die folgenden Befehle nutzen:
 
 ```bash
 sudo rm -f etc/sysconfig/network-scripts/ifcfg-eth0
 sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0.bak etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Ändern Sie die Datei, sodass sie die folgende Konfiguration widerspiegelt, ersetzen Sie `ADDITIONAL_IP`, `GATEWAY_IP` und `MY:VI:RT:UA:LM:AC` durch eigene Werte. Darüber hinaus müssen die Parameter "BOOTPROTO", "ONBOOT" und "DNS" angepasst (oder hinzugefügt, falls sie fehlen) werden. Es ist nicht erforderlich, weitere Zeilen zu bearbeiten.
+Ändern Sie die Datei, sodass sie die folgende Konfiguration widerspiegelt. Ersetzen Sie `ADDITIONAL_IP`, `GATEWAY_IP` und `MY:VI:RT:UA:LM:AC` durch eigene Werte. Darüber hinaus müssen die Parameter "BOOTPROTO", "ONBOOT" und "DNS" angepasst werden (oder hinzugefügt, falls sie fehlen). Es ist nicht erforderlich, weitere Zeilen zu bearbeiten.
 
 ```bash
 sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0
@@ -305,7 +305,7 @@ DNS=213.186.33.99
 Speichern und schließen Sie die Datei.<br>
 Erstellen Sie anschließend eine neue Datei namens `route-(interface_name)` im Verzeichnis `/etc/sysconfig/network-scripts/`, und legen Sie die folgenden Standardrouten für die Schnittstelle mithilfe des in [Schritt 2](#determinegateway) definierten Gateways fest.
 
-In unserem Beispiel heißt unsere Datei `route-eth0` (ersetzen Sie `eth0` durch Ihre eigenen Werte):
+In unserem Beispiel heißt die Datei `route-eth0` (ersetzen Sie `eth0` durch Ihre eigenen Werte):
 
 ```bash
 sudo vi /etc/sysconfig/network-scripts/route-eth0
@@ -347,7 +347,7 @@ Wenn Sie eine Antwort erhalten, wurde die Additional IP korrekt konfiguriert. Is
 
 #### Rocky Linux 9 und Alma Linux 9
 
-In früheren Versionen von Rocky Linux und Alma Linux wurden Netzwerkprofile im ifcfg-Format in diesem Verzeichnis gespeichert: `/etc/sysconfig/network-scripts/`. Das ifcfg-Format ist jedoch veraltet und wurde durch keyfiles ersetzt. Die Konfigurationsdatei befindet sich jetzt im Verzeichnis `/etc/NetworkManager/system-connections/`.
+In früheren Versionen von Rocky Linux und Alma Linux wurden Netzwerkprofile im ifcfg-Format in diesem Verzeichnis gespeichert: `/etc/sysconfig/network-scripts/`. Das ifcfg-Format ist jedoch veraltet und wurde durch *keyfiles* ersetzt. Die Konfigurationsdatei befindet sich jetzt im Verzeichnis `/etc/NetworkManager/system-connections/`.
 
 Wenn Sie mit der Shell Ihrer virtuellen Maschine verbunden sind, führen Sie folgenden Befehl aus, um den Namen Ihres Interface zu identifizieren:
 
@@ -363,14 +363,14 @@ Als Beispiel nennt sich unsere Datei `ens18-nmconnection`:
 sudo cp /etc/NetworkManager/system-connections/ens18-nmconnection /etc/NetworkManager/system-connections/ens18-nmconnection.bak
 ```
 
-Im Falle eines Fehlers können Sie mit den folgenden Befehlen zurückgehen:
+Im Falle eines Fehlers können Sie dann die folgenden Befehle nutzen:
 
 ```bash
 sudo rm -f /etc/NetworkManager/system-connections/ens18-nmconnection
 sudo cp /etc/NetworkManager/system-connections/ens18-nmconnection.bak /etc/NetworkManager/system-connections/ens18-nmconnection
 ```
 
-Ändern Sie die Datei, sodass sie die folgende Konfiguration widerspiegelt, ersetzen Sie `ADDITIONAL_IP` und `GATEWAY_IP` durch eigene Werte. In diesem Beispiel lautet der Schnittstellenname `ens18`. Ersetzen Sie diesen Wert, wenn er nicht zutrifft.
+Ändern Sie die Datei, sodass sie die folgende Konfiguration widerspiegelt. Ersetzen Sie `ADDITIONAL_IP` und `GATEWAY_IP` durch eigene Werte. In diesem Beispiel lautet der Schnittstellenname `ens18`. Ersetzen Sie diesen Wert, wenn er nicht zutrifft.
 
 ```console
 [ipv4]
@@ -387,7 +387,7 @@ Starten Sie Ihr Netzwerkinterface mit folgendem Befehl neu:
 sudo systemctl restart NetworkManager
 ```
 
-Um zu überprüfen, ob der virtuelle Computer vollständig mit dem Internet verbunden ist, verwenden Sie folgenden Befehl:
+Um zu überprüfen, ob die virtuelle Maschine mit dem Internet verbunden ist, verwenden Sie folgenden Befehl:
 
 ```bash
 ping -c 4 example.com
@@ -424,7 +424,7 @@ nameserver 213.186.33.99
 
 Speichern und schließen Sie die Datei und starten Sie die VM neu.
 
-Um zu überprüfen, ob der virtuelle Computer vollständig mit dem Internet verbunden ist, verwenden Sie folgenden Befehl:
+Um zu überprüfen, ob die virtuelle Maschine vollständig mit dem Internet verbunden ist, verwenden Sie folgenden Befehl:
 
 ```bash
 ping -c 4 example.com
@@ -457,7 +457,7 @@ Erstellen Sie anschließend eine Kopie der Konfigurationsdatei, damit Sie jederz
 sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak
 ```
 
-Im Falle eines Fehlers können Sie mit den folgenden Befehlen zurückgehen:
+Im Falle eines Fehlers können Sie dann die folgenden Befehle nutzen:
 
 ```bash
 sudo rm -f /etc/netplan/00-installer-config.yaml
@@ -470,7 +470,7 @@ sudo cp /etc/netplan/00-installer-config.yaml.bak /etc/netplan/00-installer-conf
 sudo nano /etc/netplan/00-installer-config.yaml
 ```
 
-Wenn Sie die Datei zur Bearbeitung geöffnet haben, bearbeiten Sie sie mit folgendem Code, ersetzen Sie `INTERFACE-NAME`, `ADDITIONAL_IP` und `GATEWAY_IP` durch eigene Werte.
+Wenn Sie die Datei zur Bearbeitung geöffnet haben, editieren Sie sie mit den folgenden Änderungen. Ersetzen Sie `INTERFACE-NAME`, `ADDITIONAL_IP` und `GATEWAY_IP` durch eigene Werte.
 
 ```yaml
 network:
@@ -508,7 +508,7 @@ network:
   version: 2
 ```
 
-Datei speichern und schließen. Sie können die Konfiguration mit folgendem Befehl testen:
+Speichern und schließen Sie die Datei. Sie können die Konfiguration mit folgendem Befehl testen:
 
 ```bash
 sudo netplan try
@@ -520,7 +520,7 @@ Wenn sie korrekt ist, verwenden Sie folgenden Befehl:
 sudo netplan apply
 ```
 
-Um zu überprüfen, ob der virtuelle Computer vollständig mit dem Internet verbunden ist, verwenden Sie folgenden Befehl:
+Um zu überprüfen, ob die virtuelle Maschine mit dem Internet verbunden ist, verwenden Sie folgenden Befehl:
 
 ```bash
 ping -c 4 example.com
