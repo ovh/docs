@@ -103,4 +103,4 @@ You can download it to your desktop to view it.
  
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
   
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
