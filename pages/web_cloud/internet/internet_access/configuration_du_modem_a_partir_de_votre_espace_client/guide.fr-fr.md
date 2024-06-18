@@ -171,7 +171,7 @@ Depuis cette partie, plusieurs possibilités s'offrent à vous.
 > [!primary]
 >
 > À utiliser uniquement dans le cas où vous disposez d'un équipement pouvant agir en tant que routeur sur votre réseau local. Il gérera alors intégralement votre connexion locale, OVHcloud ne pouvant pas intervenir sur celui-ci.
-> Si votre modem est de marque Zyxel, connsultez le guide « [Comment activer le bridge sur un modem zyxel](/pages/web_cloud/internet/internet_access/comment_activer_bridge_zyxel) ».
+> Si votre modem est de marque Zyxel, consultez le guide « [Comment activer le bridge sur un modem zyxel](/pages/web_cloud/internet/internet_access/comment_activer_bridge_zyxel) ».
 >
 
 - **Configurer le MTU** : lors d'une transmission de données informatiques, le Maximum Transmission Unit (MTU) est la taille maximale d'un paquet pouvant être échangé en une seule fois (c'est-à-dire sans fragmentation) sur une interface. Le MTU par défaut d'un accès OVHcloud en PPPoe est de 1 492.
