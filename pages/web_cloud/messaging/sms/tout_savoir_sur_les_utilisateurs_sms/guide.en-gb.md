@@ -34,7 +34,7 @@ To better manage credit for your SMS accounts, you can set a limit and quota for
 
 - The **quota** is the number of available SMS credits for each API user.
 
-- The **limit** is the minimum threshold of remaining SMS credits for an API user before they receive an alert to re-credit the account.
+- The **limit** corresponds to the minimum threshold of SMS credits that an API user must have before receiving an alert to recharge or not the balance of these credits.
 
 ### Step 1: Create an API user.
 
