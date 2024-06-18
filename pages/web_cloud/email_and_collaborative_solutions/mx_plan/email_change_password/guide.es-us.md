@@ -1,7 +1,7 @@
 ---
 title: 'Cambiar la contraseña de una dirección de correo'
 excerpt: 'Cómo cambiar la contraseña de una dirección de correo de OVHcloud'
-updated: 2023-01-03
+updated: 2024-06-18
 ---
 
 ## Objetivo
