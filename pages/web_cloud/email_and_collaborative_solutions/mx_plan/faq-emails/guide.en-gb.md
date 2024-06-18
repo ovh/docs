@@ -59,7 +59,7 @@ The **password** must respect the following rules:
 
 ### How do I recover my forgotten password?
 
-For security and confidentiality reasons, it is not possible to **retrieve** a password. As described in our “[Changing an email password](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)”, you will need to reset your password if you have forgotten it.
+For security and confidentiality reasons, it is not possible to **retrieve** a password. As described in our guide “[Changing an email password](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)”, you will need to reset your password if you have forgotten it.
 
 > [!primary]
 >
