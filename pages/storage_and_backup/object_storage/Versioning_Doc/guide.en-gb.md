@@ -1,7 +1,7 @@
 ---
 title: 'Getting Started with Versioning Using OVHcloud APIs'
 excerpt: 'Learn how to enable and manage versioning for your OVHcloud Object Storage buckets using APIs. Future updates will cover the OVHcloud Control Panel.'
-updated: 2023-06-30
+updated: 2024-06-18
 ---
 
 ## Objective
