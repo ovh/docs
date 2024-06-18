@@ -252,7 +252,7 @@ Une fois les fichiers décompressés dans votre dossier « **CMS** », [connecte
 
 Ci-dessous, un exemple avec le CMS *WordPress*:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/web-hosting-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
 
 >[!warning]
 >
