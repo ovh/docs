@@ -100,6 +100,14 @@ W nowym oknie, które się wyświetli, wprowadź aktualne hasło, po czym je zat
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
+### Odzyskiwanie hasła
+
+Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** hasła. Jak opisano w poprzednich etapach, jeśli nie znasz hasła, konieczne jest jego zresetowanie.
+
+> [!primary]
+>
+> Jeśli chcesz zachować hasło, zalecane jest użycie menedżera haseł, takiego jak **Keepass**.
+
 #### Zidentyfikuj ofertę MXplan <a name="whichmxplan"></a>
 
 W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej oferty MXplan.

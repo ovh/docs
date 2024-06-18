@@ -55,6 +55,14 @@ La contraseña **contraseña** debe cumplir las siguientes reglas:
 > [!warning]
 > Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
+### ¿Cómo recuperar mi contraseña olvidada?
+
+Por motivos de seguridad y confidencialidad, no es posible **recuperar** una contraseña. Como se describe en nuestra guía «[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)», es necesario restaurar su contraseña si ya no la conoce.
+
+> [!primary]
+>
+> Si desea almacenar una contraseña, le recomendamos que utilice un gestor de contraseñas, como **Keepass**.
+
 ### ¿Cómo limitar la recepción de spam?
 
 Si desea limitar la recepción del spam, puede configurar filtros de correo (llamados «Filtros» en la solución MX Plan) para eliminar o mover estos mensajes de correo a la carpeta de correo no deseado. Para ello, desde su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Correo electrónico` en la columna de la izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Correo electrónico`{.action} y, en la columna «Filtros», haga clic en el icono de «Gestión de los filtros de la cuenta».
