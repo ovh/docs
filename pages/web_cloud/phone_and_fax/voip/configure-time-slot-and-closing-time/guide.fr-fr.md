@@ -53,6 +53,10 @@ La page qui s'affiche vous donne accès à trois parties afin de gérer vos plag
 
 #### Étape 2 : configurer les redirections
 
+> [!success]
+>
+> Pour configurer et personnaliser le répondeur d'une ligne, consultez le guide « [Configurer et consulter le répondeur de sa ligne](/pages/web_cloud/phone_and_fax/voip/configurer-consulter-repondeur-ligne-ovh) »
+
 Définissez dans un premier temps où les appels doivent être redirigés selon les créneaux. Vous pourrez utiliser ces derniers lorsque vous configurerez les plages horaires.
 
 |Créneaux|Description|
@@ -117,5 +121,7 @@ Enfin, dans la partie `Paramètres` de la page, assurez-vous que le « **fuseau 
 ![gerer-fermetures-exceptionnelles](images/manage-closing-time-step2.png){.thumbnail}
 
 ## Aller plus loin
+
+[Configurer et consulter le répondeur de sa ligne](/pages/web_cloud/phone_and_fax/voip/configurer-consulter-repondeur-ligne-ovh)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
