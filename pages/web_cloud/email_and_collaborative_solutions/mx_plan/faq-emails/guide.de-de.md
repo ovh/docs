@@ -61,7 +61,7 @@ Das **Passwort** muss folgende Bedingungen erfüllen:
 
 ### Wie erhalte ich mein vergessenes Passwort zurück?
 
-Aus Gründen der Sicherheit und des Datenschutzes ist es nicht möglich, ein Passwort **wiederherzustellen**. Wie in unserer „[Passwort einer E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)“ beschrieben, muss Ihr Passwort zurückgesetzt werden, wenn Sie es nicht mehr kennen.
+Aus Gründen der Sicherheit und der Vertraulichkeit ist es nicht möglich, ein Passwort **wiederherzustellen**. Wie in der [Anleitung zum Ändern eines E-Mail-Account-Passworts](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)“ beschrieben, muss Ihr Passwort zurückgesetzt werden, wenn Sie es nicht mehr kennen.
 
 > [!primary]
 >
