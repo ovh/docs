@@ -152,7 +152,7 @@ Compare os `Alvo` das entradas do tipo `NS` indicadas no separador `Zona DNS`{.a
 
 - Se os elementos forem idênticos, substitua o alvo `213.186.33.5` pelo código de quatro números indicado no separador `Informações gerais` com a menção `IPv4` (para mais informações sobre as operações a efetuar, siga as instruções [deste guia](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Se os elementos não forem idênticos mas os `Servidores DNS` indicados no separador do mesmo nome aparecerem na [lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), efetue uma reinicialização de acordo com as instruções [deste manual](/pages/web_cloud/domains/dns_server_editreinicializar-os-servidores-dns).
+- Se os elementos não forem idênticos mas os `Servidores DNS` indicados no separador do mesmo nome aparecerem na [lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), efetue uma reinicialização de acordo com as instruções [deste manual](/pages/web_cloud/domains/dns_server_edit).
 
 - Se os elementos não forem idênticos e os `Servidores DNS` indicados no separador do mesmo nome não aparecerem [nesta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contacte o seu Webmaster ou procure um fornecedor especializado através da página dos [parceiros OVHcloud](/links/partner).
 

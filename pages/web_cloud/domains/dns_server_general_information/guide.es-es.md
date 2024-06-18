@@ -75,9 +75,9 @@ A veces, algunos proveedores DNS ofrecen más de 2 **servidores DNS (Authoritati
 
 ## Más información
 
-[Qué es una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)
+[Qué es una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information).
 
-[Registros DNS](/pages/web_cloud/domains/dns_zone_records)
+[Registros DNS](/pages/web_cloud/domains/dns_zone_records).
 
 [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 

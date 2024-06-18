@@ -128,7 +128,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >>
 >> Consulte nuestra documentación "[Configurar un registro DMARC en su dominio](/pages/web_cloud/domains/dns_zone_dmarc)" para más información.
 
-#### Registros extendidos <a name="extented-records"></a>
+#### Registros extendidos <a name="extended-records"></a>
 
 Seleccione el registro que desee haciendo clic en cada una de las fichas siguientes.
 

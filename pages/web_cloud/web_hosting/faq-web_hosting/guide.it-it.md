@@ -152,7 +152,7 @@ Confronta i `Destinazione` degli record di tipo `NS` indicati nella scheda `Zona
 
 - Se gli elementi sono identici, sostituisci il record `213.186.33.5` con il codice a quattro cifre riportato nella scheda `Informazioni generali` con il nome `IPv4` (per maggiori informazioni sulle operazioni da effettuare, segui le istruzioni di [questa guida](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Se gli elementi non corrispondono, ma i `Server DNS` indicati nella scheda con lo stesso nome appaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effettua una reinizializzazione seguendo le indicazioni di [questa guida](/pages/web_cloud/domains/dns_server_editreinizializza-i-server-dns).
+- Se gli elementi non corrispondono, ma i `Server DNS` indicati nella scheda con lo stesso nome appaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effettua una reinizializzazione seguendo le indicazioni di [questa guida](/pages/web_cloud/domains/dns_server_edit).
 
 - Se gli elementi non corrispondono e i `Server DNS` indicati nella scheda con lo stesso nome non compaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contatta il tuo Webmaster o cerca un [provider specializzato](/links/partner) tramite la pagina dei [partner OVHcloud](/links/partner).
 

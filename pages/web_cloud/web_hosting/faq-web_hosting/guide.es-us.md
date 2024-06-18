@@ -145,7 +145,7 @@ Compare los `Objetivos` de las entradas de tipo `NS` indicadas en la pestaña `Z
 
 - Si los elementos son idénticos, sustituya el objetivo `213.186.33.5` por el código de cuatro cifras indicado en la pestaña `Información general` con la mención `IPv4` (para más información sobre las operaciones a realizar, consulte las instrucciones de [esta guía](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Si los elementos no son idénticos, pero los `servidores DNS` indicados en la pestaña del mismo nombre aparecen en [esta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), siga las instrucciones de [esta guía](/pages/web_cloud/domains/dns_server_editrestaurar-los-servidores-dns) para restaurarlos.
+- Si los elementos no son idénticos, pero los `servidores DNS` indicados en la pestaña del mismo nombre aparecen en [esta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), siga las instrucciones de [esta guía](/pages/web_cloud/domains/dns_server_edit) para restaurarlos.
 
 - Si los elementos no son idénticos y los `servidores DNS` indicados en la pestaña del mismo nombre no aparecen en [esta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contacte con su Webmaster o busque un [proveedor especializado](/links/partner) a través de la página de [partners de OVHcloud](/links/partner).
 

@@ -141,7 +141,7 @@ Compare the `Target` of the `NS` type records listed in the `DNS zone`{.action} 
 
 - If the elements are identical, replace target `213.186.33.5` with the four-number code noted in the `General information` tab under `IPv4` (for more details on how to make changes, follow the instructions in [this guide](/pages/web_cloud/domains/dns_zone_edit)).
 
-- If the elements are not identical, but the servers listed in the `DNS servers` tab appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), perform a reset as described in [this guide](/pages/web_cloud/domains/dns_server_editresetting-dns-servers).
+- If the elements are not identical, but the servers listed in the `DNS servers` tab appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), perform a reset as described in [this guide](/pages/web_cloud/domains/dns_server_edit).
 
 - If the elements are not identical and the servers listed in the `DNS server`{.action} tab do not appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contact your webmaster or search for a [specialist service provider](/links/partner) via the [OVHcloud partners](/links/partner) page.
 

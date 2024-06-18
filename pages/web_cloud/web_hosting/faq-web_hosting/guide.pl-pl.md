@@ -152,7 +152,7 @@ Porównaj `Adres docelowy` wpisów typu `NS` w zakładce `Strefa DNS`{.action} z
 
 - Jeśli elementy są identyczne, zamień cel `213.186.33.5` na czterocyfrowy kod zapisany w zakładce `Informacje ogólne` pod nagłówkiem `IPv4` (aby uzyskać więcej informacji na temat czynności, jakie należy wykonać, postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_editzresetuj-serwery-dns).
+- Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_edit).
 
 - Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), skontaktuj się z Webmasterem lub poszukaj [wyspecjalizowanego usługodawcy](/links/partner) na stronie [partnerów OVHcloud](/links/partner).
 

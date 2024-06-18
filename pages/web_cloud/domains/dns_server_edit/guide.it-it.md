@@ -21,7 +21,7 @@ Consulta le nostre guide "[Cos'è un server DNS?](/pages/web_cloud/domains/dns_s
 ## Prerequisiti
 
 - Disporre di un [dominio](/links/web/domains) registrato in OVHcloud.
-- Disporre delle autorizzazioni [appropriate per la gestione](/pages/account_and_service_management/account_information/managing_contacts) il dominio dal tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
+- Disporre delle [autorizzazioni appropriate per la gestione](/pages/account_and_service_management/account_information/managing_contacts) il dominio dal tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}.
 
 > [!primary]
@@ -74,7 +74,7 @@ Nei moduli di input, **Sostituisci** i valori correnti dei server DNS con le inf
 >
 > Assicurati di non mescolare un gruppo di server DNS con un altro. 
 >
-ad esempio, *dns19.ovh.net* e *ns19.ovh.net* corrispondono a un gruppo di server DNS di OVHcloud, vanno di pari passo e sono sincronizzati. Se al servizio vengono aggiunti server DNS esterni a OVHcloud (o di un gruppo OVHcloud diverso), la risoluzione DNS verrà eseguita in modo casuale tra i server DNS di OVHcloud e i server DNS esterni inseriti.
+> Ad esempio, *dns19.ovh.net* e *ns19.ovh.net* corrispondono a un gruppo di server DNS di OVHcloud, vanno di pari passo e sono sincronizzati. Se al servizio vengono aggiunti server DNS esterni a OVHcloud (o di un gruppo OVHcloud diverso), la risoluzione DNS verrà eseguita in modo casuale tra i server DNS di OVHcloud e i server DNS esterni inseriti.
 >
 > In OVHcloud, i gruppi di server DNS sono identificabili tramite il numero presente nei nomi dei server. Due server DNS OVHcloud fanno parte dello stesso gruppo di server quando condividono lo stesso numero. *dns19.ovh.net* e *ns19.ovh.net*.
 >

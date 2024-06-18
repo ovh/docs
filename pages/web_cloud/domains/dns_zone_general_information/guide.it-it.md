@@ -10,7 +10,7 @@ updated: 2024-06-17
 
 ## Obiettivo
 
-L'acronimo **DNS**, che sta per **D**omain **N**ame **S**ystem, è un insieme di elementi (server DNS, zone DNS, ecc...) che permettono di far corrispondere un nome di dominio con un indirizzo IP.
+L'acronimo **DNS**, che sta per **D**omain **N**ame **S**ystem, è un insieme di elementi (server DNS, zona DNS, ecc...) che permettono di far corrispondere un nome di dominio con un indirizzo IP.
 
 È importante distinguere tra **server DNS** e **zona DNS**. a livello di **server DNS** è configurata una **zona DNS**.
 
@@ -32,7 +32,7 @@ Ad esempio, è possibile specificare:
 
 - l’indirizzo IP (record DNS di tipo *A* e *AAAA*) dell’hosting Web per visualizzare il sito Web con il dominio.
 - I server di posta (record DNS di tipo *MX*) verso cui il tuo dominio deve reindirizzare le email che riceve.
-- informazioni legate alla sicurezza/autenticazione dei servizi (hosting Web, server Web, server di posta, ecc...) associati al dominio (record DNS di tipo SPF, DKIM, DMARC, ecc...).
+- Informazioni legate alla sicurezza/autenticazione dei servizi (hosting Web, server Web, server di posta, ecc...) associati al dominio (record DNS di tipo SPF, DKIM, DMARC, ecc...).
 
 Una zona DNS è ospitata/registrata su **server DNS**. Per utilizzare la zona DNS ospitata, è necessario dichiarare i **server DNS** (presso il Registrar di un dominio).
 

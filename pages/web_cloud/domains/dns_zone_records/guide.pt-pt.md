@@ -88,7 +88,7 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >> >
 > **NS**
 >> **N**ame **S**erver<br><br>
->> Define os servidores DNS associados à sua zona DNS. Por exemplo, se os registos NS da sua zona DNS mostrarem os servidores *dnsXX.ovh.net* e *nsXX.ovh.net*, deverá utilizar estes últimos no separador `Servidores DNS`{.action} da sua Área de Cliente OVHcloud. Para mais informações, consulte o nosso manual "[Modificar os servidores DNS de um domínio OVHcloud](//pages/web_cloud/domains/dns_server_edit)".
+>> Define os servidores DNS associados à sua zona DNS. Por exemplo, se os registos NS da sua zona DNS mostrarem os servidores *dnsXX.ovh.net* e *nsXX.ovh.net*, deverá utilizar estes últimos no separador `Servidores DNS`{.action} da sua Área de Cliente OVHcloud. Para mais informações, consulte o nosso manual "[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 >>
 >> > [!warning]
 >> >
@@ -127,7 +127,7 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >>
 >> Consulte a nossa documentação "[Configurar um registo DMARC no seu domínio](/pages/web_cloud/domains/dns_zone_dmarc)" para saber mais.
 
-#### Registos alargados <a name="extented-records"></a>
+#### Registos alargados <a name="extended-records"></a>
 
 Selecione o registo à sua escolha clicando nos separadores seguintes.
 

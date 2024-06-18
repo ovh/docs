@@ -124,7 +124,7 @@ Select the record you want by clicking each of the following tabs.
 >>
 >> Refer to our documentation “[Configuring a DMARC record on your domain name](/pages/web_cloud/domains/dns_zone_dmarc)” to find out more.
 
-#### Extended records <a name="extented-records"></a>
+#### Extended records <a name="extended-records"></a>
 
 Select the record you want by clicking each of the following tabs.
 

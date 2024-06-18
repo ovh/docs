@@ -21,7 +21,7 @@ Para más información, consulte nuestras guías "[Qué es un servidor DNS?](/pa
 ## Requisitos
 
 - Tener un [dominio](/links/web/domains) registrado en OVHcloud.
-- Disponer de permisos [adecuados para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el nombre de dominio desde el [área de cliente de OVHcloud](/links/manager){.external}.
+- Disponer de [permisos adecuados para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el nombre de dominio desde el [área de cliente de OVHcloud](/links/manager){.external}.
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
 
 > [!primary]
@@ -96,7 +96,7 @@ El botón `Restaurar los servidores DNS`{.action} permite restaurar los servidor
 
 Una vez realizados los cambios necesarios, debe esperar a que los cambios surtan efecto. Hay que tener en cuenta dos períodos sucesivos:
 
-- el *registre* que gestiona la extensión del dominio (por ejemplo, el registro de extensiones en *.es*) debe aplicar los cambios realizados por OVHcloud. Puede consultar el progreso en el [área de cliente de OVHcloud](/links/manager){.external}. Para ello, acceda a la sección `Web Cloud`{.action}, acceda a la sección `dominios`{.action} en la columna de la izquierda y haga clic en `Operaciones en curso`{.action}.
+- el *registre* que gestiona la extensión del dominio (por ejemplo, el registro de extensiones en *.es*) debe aplicar los cambios realizados por OVHcloud. Puede consultar el progreso en el [área de cliente de OVHcloud](/links/manager){.external}. Para ello, acceda a la sección `Web Cloud`{.action}, acceda a la sección `Dominios`{.action} en la columna de la izquierda y haga clic en `Operaciones en curso`{.action}.
 - Una vez que la organización que gestiona la extensión del dominio haya aplicado el cambio, deberá esperar un máximo de **48 horas** para que los cambios que haya realizado se propaguen por completo.
 
 ## Más información

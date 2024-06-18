@@ -128,7 +128,7 @@ Wybierz odpowiedni rekord, klikając każdą z następujących zakładek.
 >>
 >> Zapoznaj się z naszą dokumentacją "[Konfiguracja rekordu DMARC w Twojej domenie](/pages/web_cloud/domains/dns_zone_dmarc)", aby dowiedzieć się więcej.
 
-#### Rozszerzone wpisy <a name="extented-records"></a>
+#### Rozszerzone wpisy <a name="extended-records"></a>
 
 Select the record you want by clicking each of the following tabs.
 

@@ -124,7 +124,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 >> Consultez notre documentation « [Configurer un enregistrement DMARC sur votre nom de domaine](/pages/web_cloud/domains/dns_zone_dmarc) » pour en savoir plus.
 
-#### Enregistrements étendus <a name="extented-records"></a>
+#### Enregistrements étendus <a name="extended-records"></a>
 
 Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets suivants.
 

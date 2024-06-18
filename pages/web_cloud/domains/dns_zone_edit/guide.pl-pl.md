@@ -104,7 +104,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >>
 >> Aby dodać nowy rekord DNS, wykonaj następujące czynności:
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud] (/links/manager).
+>> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 >> 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 >> 3. W lewej kolumnie kliknij menu rozwijane `Domeny`{.action}.
 >> 4. Wybierz nazwę domeny lub strefę DNS(e).
@@ -125,7 +125,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >>
 >> Aby zmodyfikować rekord DNS, wykonaj następujące czynności:
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud] (/links/manager).
+>> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 >> 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 >> 3. W lewej kolumnie kliknij menu rozwijane `Domeny`{.action}.
 >> 4. Wybierz nazwę domeny lub strefę DNS(e).
@@ -139,7 +139,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >>
 >> Aby usunąć rekord DNS, wykonaj następujące czynności:
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud] (/links/manager).
+>> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 >> 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 >> 3. W lewej kolumnie kliknij menu rozwijane `Domeny`{.action}.
 >> 4. Wybierz nazwę domeny lub strefę DNS(e).
@@ -162,7 +162,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >>
 >> Aby zresetować strefę DNS, wykonaj następujące czynności:
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud] (/links/manager).
+>> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 >> 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 >> 3. W lewej kolumnie kliknij menu rozwijane `Domeny`{.action}.
 >> 4. Wybierz nazwę domeny lub strefę DNS(e).

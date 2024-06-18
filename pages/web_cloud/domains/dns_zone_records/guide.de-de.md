@@ -128,7 +128,7 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >>
 >> Weitere Informationen finden Sie in unserer Dokumentation "[DMARC-Eintrag für Ihre Domain konfigurieren](/pages/web_cloud/domains/dns_zone_dmarc)".
 
-#### Erweiterte Einträge <a name="extented-records"></a>
+#### Erweiterte Einträge <a name="extended-records"></a>
 
 Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Registerkarten klicken.
 

@@ -186,14 +186,14 @@ Esta guía solo hace referencia a la configuración a través de nuestros asiste
 >>
 >> **Dirección IP de su alojamiento**
 >>
->> - `Redirection`: su dominio apuntará hacia el servidor de redirección de OVHcloud. Esto permite mostrar una página de inicio de OVHcloud y así evitar un error DNS.<br>
+>> - `Redirección`: su dominio apuntará hacia el servidor de redirección de OVHcloud. Esto permite mostrar una página de inicio de OVHcloud y así evitar un error DNS.<br>
 >> - `Alojamiento web de OVHcloud`: Su dominio apuntará a la dirección IP del alojamiento web asociado al dominio.<br>
 >> - `Personalizado`: defina el valor IPv4 ([registro A](/pages/web_cloud/domains/dns_zone_records#pointer-records)) del alojamiento web que quiera apuntar.<br><br>
 >> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
 >>
 >> **Dirección de su servidor mail**
 >>
->> - `Redirection`: su dominio apuntará a los servidores de redirecciones de correo. Esta elección. Es especialmente útil si no tiene ninguna solución de correo, pero desea reenviar los mensajes hacia una o varias direcciones de correo fuera de su nombre de dominio.<br>
+>> - `Redirección`: su dominio apuntará a los servidores de redirecciones de correo. Esta elección. Es especialmente útil si no tiene ninguna solución de correo, pero desea reenviar los mensajes hacia una o varias direcciones de correo fuera de su nombre de dominio.<br>
 >> - `Servidor de correo de OVHcloud`: Por definir al contratar un servicio de correo en alojamiento compartido.<br>
 >> - `Personalizado`: defina la URL y la prioridad del servidor de correo electrónico ([registro MX](/pages/web_cloud/domains/dns_zone_records#mail-records)) que quiera apuntar.<br><br>
 >> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}

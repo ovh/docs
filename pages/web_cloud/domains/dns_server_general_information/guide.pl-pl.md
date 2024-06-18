@@ -75,9 +75,9 @@ Niektórzy dostawcy DNS proponują czasem więcej niż 2 **serwery DNS (Authorit
 
 ## Sprawdź również
 
-[Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information)
+[Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information).
 
-[Rekordy DNS](/pages/web_cloud/domains/dns_zone_records)
+[Rekordy DNS](/pages/web_cloud/domains/dns_zone_records).
 
 [Zmień serwery DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 
