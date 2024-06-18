@@ -12,11 +12,11 @@ Les services Exchange et Email Pro permettent de bénéficier d’adresses e-mai
 
 ## Prérequis
 
-- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](/links/web/email-pro)
+- Avoir souscrit une offre [Exchange OVHcloud](/links/web/emails-hosted-exchange) ou [Email Pro](/links/web/email-pro)
 
 > [!warning]
 >
-> **Pour l'offre [Email Pro](/links/web/email-pro)** les fonctionnalités de délégations décrites dans ce guide s'utilisent uniquement au travers du [Webmail](links/web/email). Les protocoles permettant leur utilisation via un logiciel de messagerie nécessitent de disposer d'un compte [Exchange](links/web/emails-hosted-exchange).
+> **Pour l'offre [Email Pro](/links/web/email-pro)** les fonctionnalités de délégations décrites dans ce guide s'utilisent uniquement au travers du [Webmail](links/web/email). Les protocoles permettant leur utilisation via un logiciel de messagerie nécessitent de disposer d'un compte [Exchange](/links/web/emails-hosted-exchange).
 
 - Disposer au minimum de deux comptes e-mail actifs et configurés sur la même plateforme e-mail OVHcloud.
 - Être connecté à l'[espace client OVHcloud](/links/manager).
@@ -35,7 +35,7 @@ Avant de débuter, définissez le ou les droits que vous allez déléguer. Pour 
 > [!warning]
 >
 > Vous n'avez pas la possibilité de cumuler le « droit d'envoi » avec le « droit d'envoyer de la part de ». Les autres combinaisons sont quant à elles possibles.
-> 
+>
 
 Lorsque vous avez identifié le compte concerné par la délégation, déterminé les droits que vous allez déléguer, ainsi qu'identifié le ou les comptes qui bénéficieront de ces droits supplémentaires, poursuivez vers la première étape.
 
@@ -43,7 +43,7 @@ Lorsque vous avez identifié le compte concerné par la délégation, détermin�
 
 Pour effectuer cette manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager):
 
-- **Exchange**: Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. 
+- **Exchange**: Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}.
 - **Email Pro**: Cliquez sur `Email Pro`{.action}.
 
 Cliquez ensuite sur le nom du service e-mail dans lequel se trouve le compte concerné par la création de la délégation. Positionnez-vous enfin sur l'onglet `Comptes e-mail`{.action}.
@@ -93,7 +93,7 @@ Dans la fenêtre qui apparaît, indiquez le nom du compte pour lequel vous bén�
 >
 > L'utilisation de cette fonctionnalité **via Outlook** est uniquement disponible pour un compte e-mail [Exchange](links/web/emails-hosted-exchange).
 
-Sur votre logiciel Outlook, cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran puis cliquez sur `Paramètres du compte`{.action}. Dans le menu déroulant, cliquez de nouveau sur `Paramètres du compte`{.action}. Dans la fenêtre qui s'affiche, sélectionnez le compte bénéficiant du droit délégué puis cliquez sur `Modifier`{.action}. 
+Sur votre logiciel Outlook, cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran puis cliquez sur `Paramètres du compte`{.action}. Dans le menu déroulant, cliquez de nouveau sur `Paramètres du compte`{.action}. Dans la fenêtre qui s'affiche, sélectionnez le compte bénéficiant du droit délégué puis cliquez sur `Modifier`{.action}.
 
 ![delegation](images/delegation-step4.png){.thumbnail}
 
@@ -107,9 +107,9 @@ Cliquez à présent sur `Paramètres supplémentaires`{.action}. Dans la nouvell
 
 Rendez-vous à l'adresse <https://www.ovh.com/fr/mail/> et renseignez les identifiants du compte e-mail disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
 
-Dans la zone qui apparaît, cliquez sur le bouton représentant trois points puis sur `Afficher le champ De`{.action}. Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, supprimez celle déjà renseignée et inscrivez celle souhaitée. 
+Dans la zone qui apparaît, cliquez sur le bouton représentant trois points puis sur `Afficher le champ De`{.action}. Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, supprimez celle déjà renseignée et inscrivez celle souhaitée.
 
-Il ne vous reste plus qu'à rédiger votre message et à l'envoyer. 
+Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 ![delegation](images/delegation-step6.png){.thumbnail}
 
@@ -121,9 +121,9 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 Sur votre logiciel Outlook, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
 
-Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, cliquez sur `Autre`{.action}, renseignez l'adresse souhaitée, puis validez. 
+Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, cliquez sur `Autre`{.action}, renseignez l'adresse souhaitée, puis validez.
 
-Il ne vous reste plus qu'à rédiger votre message et à l'envoyer. 
+Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 ![delegation](images/delegation-step7.png){.thumbnail}
 
@@ -133,9 +133,9 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 Rendez-vous à l'adresse <https://www.ovh.com/fr/mail/> et renseignez les identifiants du compte e-mail disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
 
-Dans la zone qui s'affiche, cliquez sur le bouton représentant trois points puis sur `Afficher le champ De`{.action}. Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, supprimez celle déjà renseignée et inscrivez celle souhaitée. 
+Dans la zone qui s'affiche, cliquez sur le bouton représentant trois points puis sur `Afficher le champ De`{.action}. Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, supprimez celle déjà renseignée et inscrivez celle souhaitée.
 
-Il ne vous reste plus qu'à rédiger votre message et à l'envoyer. 
+Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 ![delegation](images/delegation-step6.png){.thumbnail}
 
@@ -147,13 +147,19 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 Sur votre logiciel Outlook, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
 
-Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, cliquez sur `Autre`{.action}, renseignez l'adresse souhaitée, puis validez. 
+Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, cliquez sur `Autre`{.action}, renseignez l'adresse souhaitée, puis validez.
 
-Il ne vous reste plus qu'à rédiger votre message et à l'envoyer. 
+Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 ![delegation](images/delegation-step7.png){.thumbnail}
 
 ## Aller plus loin <a name="go-further"></a>
+
+[Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+
+[Partager un dossier depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
+
+[Créer un groupe de contacts](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

@@ -12,9 +12,14 @@ Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professione
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Lösung.
+- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](links/web/emails-hosted-exchange) oder [E-Mail Pro](/links/web/email-pro) Lösung.
+
+> [!warning]
+>
+> **For the [Email Pro] offer (/links/web/email-pro)** the delegation features described in this guide can only be used via the [Webmail](links/web/email). The protocols that allow them to be used via an email client require an [Exchange] account (links/web/emails-hosted-exchange).
+
 - Sie verfügen über mindestens zwei aktive E-Mail Account, die auf derselben OVHcloud E-Mail Plattform eingerichtet sind.
-- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
+- Sie sind im [OVHcloud Kundencenter](/links/manager) eingeloggt.
 - Sie verfügen über die Login-Informationen für den E-Mail Account, dem Sie neue Berechtigungen zuweisen möchten.
 
 ## In der praktischen Anwendung
@@ -23,9 +28,9 @@ Legen Sie zunächst fest, welche Berechtigungen Sie vergeben möchten. Zur Erinn
 
 |Berechtigungen|Beschreibung|
 |---|---|
-|„Senden als“|Erlaubt dem Benutzer, Nachrichten von einem anderen Account aus zu versenden. Nicht der Benutzer, der die E-Mail versendet, wird als Absender angezeigt, sondern der Account, für den dieser die „Senden als“-Berechtigung hat. Der Empfänger kann nicht erkennen, dass die Nachricht von einem anderen Account aus versandt wurde.|
-|„Senden im Auftrag von“|Erlaubt dem Benutzer, Nachrichten von einem anderen Account aus zu versenden. Nicht der Benutzer, der die E-Mail versendet, wird als Absender angezeigt, sondern der Account, für den dieser die „Senden im Auftrag von“-Berechtigung hat. Im Gegensatz zur „Senden als“-Berechtigung wird in diesem Fall eine Anmerkung hinzugefügt, dass die Nachricht von einem anderen Benutzer im Auftrag des angezeigten Accounts versandt wurde.|
-|Zugangsrechte|Mit dieser Berechtigung vergeben Sie für den betreffenden Account reine Leserechte. Nachrichten können nicht versandt werden. Es ist nur möglich, Inhalte zu lesen.|
+|**Senden als**|Erlaubt dem Benutzer, Nachrichten von einem anderen Account aus zu versenden. Nicht der Benutzer, der die E-Mail versendet, wird als Absender angezeigt, sondern der Account, für den dieser die „Senden als“-Berechtigung hat. Der Empfänger kann nicht erkennen, dass die Nachricht von einem anderen Account aus versandt wurde.|
+|**Senden im Auftrag von**|Erlaubt dem Benutzer, Nachrichten von einem anderen Account aus zu versenden. Nicht der Benutzer, der die E-Mail versendet, wird als Absender angezeigt, sondern der Account, für den dieser die „Senden im Auftrag von“-Berechtigung hat. Im Gegensatz zur „Senden als“-Berechtigung wird in diesem Fall eine Anmerkung hinzugefügt, dass die Nachricht von einem anderen Benutzer im Auftrag des angezeigten Accounts versandt wurde.|
+|**Zugangsrechte**|Mit dieser Berechtigung vergeben Sie für den betreffenden Account reine Leserechte. Nachrichten können nicht versandt werden. Es ist nur möglich, Inhalte zu lesen.|
 
 > [!warning]
 >
@@ -36,7 +41,7 @@ Wählen Sie zunächst den Account aus, für den Sie Berechtigungen vergeben möc
 
 ### Schritt 1: Delegation einrichten
 
-Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}ein:
+Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager){.external}ein:
 
 - **Exchange**: Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}.. 
 - **Email Pro**: Klicken Sie auf `Email Pro`{.action}.
@@ -53,7 +58,7 @@ Wählen Sie im angezeigten Fenster die Berechtigungen aus, die Sie übertragen m
 
 Überprüfen Sie die Änderungen in der Übersicht und klicken Sie anschließend auf `Bestätigen`{.action}. Innerhalb weniger Minuten wird die Delegation auf unseren Servern eingerichtet.
 
-Sobald die Delegation konfiguriert ist, kann *test@mypersonaldomain.ovh* die ausgewählten Berechtigungen für* test2@mypersonaldomain.ovh* nutzen und die entsprechenden Aktionen ausführen (siehe Grafik).
+Sobald die Delegation konfiguriert ist, kann *test@mypersonaldomain.ovh* die ausgewählten Berechtigungen für *test2@mypersonaldomain.ovh* nutzen und die entsprechenden Aktionen ausführen (siehe Grafik).
 
 ### Schritt 2: Berechtigungen nutzen
 
@@ -69,7 +74,7 @@ Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und 
 
 > [!warning]
 >
-> Für die nachstehenden Aktionen sind Kenntnisse über die von Ihnen verwendete Software bzw. das Interface erforderlich. Im Folgenden haben wir einige Informationen zur Vorgehensweise zusammengetragen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber der Software oder des Interface zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+> Für die nachstehenden Aktionen sind Kenntnisse über die von Ihnen verwendete Software bzw. das Interface erforderlich. Im Folgenden haben wir einige Informationen zur Vorgehensweise zusammengetragen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber der Software oder des Interface zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
 #### 2.1 Zugangsrechte nutzen
@@ -84,7 +89,11 @@ Geben Sie im angezeigten Fenster den Namen des Accounts ein, für den Sie Zugang
 
 - **Über Outlook für Windows**
 
-Öffnen Sie Outlook 2016 und klicken Sie oben im Menü auf `Datei`{.action} und dann auf `Kontoeinstellungen`{.action}. Wählen Sie im Drop-down-Menü erneut `Kontoeinstellungen`{.action} aus. Wählen Sie im angezeigten Fenster den Account mit zugewiesenen Berechtigungen aus und klicken Sie dann auf `Ändern`{.action}. 
+> [!warning]
+>
+> Die Verwendung dieser Funktion **über Outlook** ist nur für einen E-Mail-Account [Exchange](links/web/emails-hosted-exchange) verfügbar.
+
+Öffnen Sie Outlook und klicken Sie oben im Menü auf `Datei`{.action} und dann auf `Kontoeinstellungen`{.action}. Wählen Sie im Drop-down-Menü erneut `Kontoeinstellungen`{.action} aus. Wählen Sie im angezeigten Fenster den Account mit zugewiesenen Berechtigungen aus und klicken Sie dann auf `Ändern`{.action}.
 
 ![Delegation](images/delegation-step4.png){.thumbnail}
 
@@ -98,19 +107,23 @@ Klicken Sie nun auf `Weitere Einstellungen`{.action}. Gehen Sie im neuen Fenster
 
 Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
 
-Klicken Sie im angezeigten Bereich oben rechts auf die drei Punkte und dann auf `Absender anzeigen`{.action}. Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, löschen Sie die vorausgefüllte Adresse und geben Sie die gewünschte Adresse ein. 
+Klicken Sie im angezeigten Bereich oben rechts auf die drei Punkte und dann auf `Absender anzeigen`{.action}. Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, löschen Sie die vorausgefüllte Adresse und geben Sie die gewünschte Adresse ein.
 
-Verfassen Sie nun Ihre Nachricht und versenden Sie diese. 
+Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
 
 ![Delegation](images/delegation-step6.png){.thumbnail}
 
 - **Über Outlook für Windows**
 
-Öffnen Sie Outlook 2016 und beginnen Sie eine neue Nachricht. Vergewissern Sie sich, dass der Button `Von`{.action} im geöffneten Fenster angezeigt wird. Ist das nicht der Fall, gehen Sie oben im Menü auf den Tab `Optionen`{.action} und klicken Sie dann bei `Felder anzeigen`{.action} auf `Von`{.action}.
+> [!warning]
+>
+> Die Verwendung dieser Funktion **über Outlook** ist nur für einen E-Mail-Account [Exchange](links/web/emails-hosted-exchange) verfügbar.
 
-Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, klicken Sie auf `Weitere E-Mail-Adresse`{.action}, geben Sie die gewünschte Adresse ein und bestätigen Sie diese. 
+Öffnen Sie Outlook und beginnen Sie eine neue Nachricht. Vergewissern Sie sich, dass der Button `Von`{.action} im geöffneten Fenster angezeigt wird. Ist das nicht der Fall, gehen Sie oben im Menü auf den Tab `Optionen`{.action} und klicken Sie dann bei `Felder anzeigen`{.action} auf `Von`{.action}.
 
-Verfassen Sie nun Ihre Nachricht und versenden Sie diese. 
+Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, klicken Sie auf `Weitere E-Mail-Adresse`{.action}, geben Sie die gewünschte Adresse ein und bestätigen Sie diese.
+
+Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
 
 ![Delegation](images/delegation-step7.png){.thumbnail}
 
@@ -120,22 +133,36 @@ Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
 
 Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
 
-Klicken Sie im angezeigten Bereich oben rechts auf die drei Punkte und dann auf `Absender anzeigen`{.action}. Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, löschen Sie die vorausgefüllte Adresse und geben Sie die gewünschte Adresse ein. 
+Klicken Sie im angezeigten Bereich oben rechts auf die drei Punkte und dann auf `Absender anzeigen`{.action}. Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, löschen Sie die vorausgefüllte Adresse und geben Sie die gewünschte Adresse ein.
 
-Verfassen Sie nun Ihre Nachricht und versenden Sie diese. 
+Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
 
 ![Delegation](images/delegation-step6.png){.thumbnail}
 
 - **Über Outlook für Windows**
 
-Öffnen Sie Outlook 2016 und beginnen Sie eine neue Nachricht. Vergewissern Sie sich, dass der Button `Von`{.action} im geöffneten Fenster angezeigt wird. Ist das nicht der Fall, gehen Sie oben im Menü auf den Tab `Optionen`{.action} und klicken Sie dann bei `Felder anzeigen`{.action} auf `Von`{.action}.
+> [!warning]
+>
+> Die Verwendung dieser Funktion **über Outlook** ist nur für einen E-Mail-Account [Exchange](links/web/emails-hosted-exchange) verfügbar.
 
-Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, klicken Sie auf `Weitere E-Mail-Adresse`{.action}, geben Sie die gewünschte Adresse ein und bestätigen Sie diese. 
+Öffnen Sie Outlook und beginnen Sie eine neue Nachricht. Vergewissern Sie sich, dass der Button `Von`{.action} im geöffneten Fenster angezeigt wird. Ist das nicht der Fall, gehen Sie oben im Menü auf den Tab `Optionen`{.action} und klicken Sie dann bei `Felder anzeigen`{.action} auf `Von`{.action}.
 
-Verfassen Sie nun Ihre Nachricht und versenden Sie diese. 
+Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, klicken Sie auf `Weitere E-Mail-Adresse`{.action}, geben Sie die gewünschte Adresse ein und bestätigen Sie diese.
+
+Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
 
 ![Delegation](images/delegation-step7.png){.thumbnail}
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+
+[E-Mail-Accounts über Outlook Web App (OWA) verwenden](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+
+[Ordner in OWA freigeben](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
+
+[CKontaktgruppen erstellen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
