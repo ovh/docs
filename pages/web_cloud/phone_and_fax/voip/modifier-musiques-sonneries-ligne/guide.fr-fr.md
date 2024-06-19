@@ -26,7 +26,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et r
 
 Positionnez-vous ensuite sur l'onglet `Gestion des musiques`{.action}.
 
-![sonneriesetmusiques](images/gestion-musiques.png){.thumbnail}
+![sonneriesetmusiques](images/gestion-musiques.png){.thumbnail width="600"}
 
 > [!primary]
 >
@@ -62,7 +62,7 @@ Certaines règles et informations sont à prendre en considération en ce qui co
 
 Une fois que vous êtes prêt, en dessous de la musique ou de la sonnerie que vous voulez modifier, choisissez `Personnalisée` dans le menu déroulant puis cliquez sur le bouton `Choisir un fichier`{.action}. Dans la fenêtre qui s'ouvre, retrouvez le fichier audio que vous souhaitez utiliser. Une fois sélectionné, cliquez sur le bouton `Envoyer le fichier`{.action}.
 
-![sonneriesetmusiques](images/ajout-musique.png){.thumbnail}
+![sonneriesetmusiques](images/ajout-musique.png){.thumbnail width="600"}
 
 ## Aller plus loin
 
