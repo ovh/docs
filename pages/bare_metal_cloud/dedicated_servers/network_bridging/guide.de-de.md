@@ -90,7 +90,7 @@ Das Ihrem Server zugewiesene IPv4-Gateway wird im Tab `Allgemeine Informationen`
 
 #### Über die OVHcloud API <a name="viaapi"></a>
 
-Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/console/) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein.
+Klicken Sie auf der [OVHcloud API Seite](https://eu.api.ovh.com/console/) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein.
 
 Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
 

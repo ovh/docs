@@ -90,7 +90,7 @@ Adres bramy IPv4 przypisany do Twojego serwera wyświetla się w sekcji `Sieć` 
 
 #### Za pośrednictwem API OVHcloud <a name="viaapi"></a>
 
-Na [stronie API OVHcloud](https://api.ovh.com/console/) kliknij na `Login`{.action} w prawym górnym rogu. Na następnej stronie wpisz Twój identyfikator klienta OVHcloud.
+Na [stronie API OVHcloud](https://eu.api.ovh.com/console/) kliknij na `Login`{.action} w prawym górnym rogu. Na następnej stronie wpisz Twój identyfikator klienta OVHcloud.
 
 Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
 
