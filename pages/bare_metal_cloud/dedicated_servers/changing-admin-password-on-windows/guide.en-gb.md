@@ -10,6 +10,13 @@ When you install or reinstall a Windows operating system, you are provided with 
 
 **This guide explains how to reset the password of the admin account of a Windows Server OS via the OVHcloud rescue mode.**
 
+> [!warning]
+>
+> This is not compatible with the `Windows customer rescue system` boot mode.  
+> Follow [this guide](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows/guide.en-gb.md) if you are using the `Windows customer rescue system`.
+>
+
+
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with Windows installed in your OVHcloud account

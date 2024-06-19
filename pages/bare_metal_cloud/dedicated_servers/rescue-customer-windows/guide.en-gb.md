@@ -10,7 +10,7 @@ The *rescue-customer-windows* mode is a tool provided by OVHcloud that allows yo
 
 Usual tasks this rescue mode is appropriate for include:
 
-- [Resetting the administrator password](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
+- [Resetting the administrator password](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)
 - Repairing a broken operating system
 - Fixing a software firewall misconfiguration
 
