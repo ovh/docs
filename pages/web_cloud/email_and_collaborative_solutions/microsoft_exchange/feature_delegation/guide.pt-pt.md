@@ -1,7 +1,7 @@
 ---
 title: 'Delegar permissões numa conta de e-mail'
 excerpt: 'Saiba como delegar os direitos da sua conta de e-mail noutro'
-updated: 2020-10-24
+updated: 2024-06-19
 ---
 
 ## Objetivo

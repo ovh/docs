@@ -1,7 +1,7 @@
 ---
 title: 'Déléguer des droits sur un compte Exchange'
 excerpt: 'Découvrez comment déléguer des droits de votre compte Exchange à un autre'
-updated: 2020-10-24
+updated: 2024-06-19
 ---
 
 ## Objectif
