@@ -12,15 +12,15 @@ With the OVHcloud Exchange or Email Pro services, you can set up professional em
 
 ## Requirements
 
-- an [OVHcloud Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) solution already set up
+- An [OVHcloud Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) solution already set up
 
 > [!warning]
 >
-> **For the [Email Pro](/links/web/email-pro) offer** the delegation features described in this guide can only be used via the [Webmail](links/web/email). The protocols that allow them to be used via an email client require an [Exchange] account (/links/web/emails-hosted-exchange).
+> **For the [Email Pro](/links/web/email-pro) offer**, the delegation features described in this guide can only be used via [Webmail](links/web/email). The protocols that allow them to be used via an email client require an [Exchange account](/links/web/emails-hosted-exchange).
 
-- at least two active email accounts, configured on the same OVHcloud Exchange or Email Pro platform
-- access to the [OVHcloud Control Panel](/links/manager)
-- credentials for the email account that will be delegated new permissions
+- At least two active email accounts, configured on the same OVHcloud Exchange or Email Pro platform
+- Access to the [OVHcloud Control Panel](/links/manager)
+- Credentials for the email account that will be delegated new permissions
 
 ## Instructions
 
@@ -111,7 +111,7 @@ At this stage, you are now ready to write and send your email.
 
 > [!warning]
 >
-> Use of this feature **via Outlook** is only available for an email account [Exchange](links/web/emails-hosted-exchange).
+> Use of this feature **via Outlook** is only available for an [Exchange email account](links/web/emails-hosted-exchange).
 
 In your Outlook application, start editing a new email. Ensure that the `From`{.action} button is visible in the editing window. If it is not visible, go to the `Options`{.action} tab, then click `From`{.action}.
 
