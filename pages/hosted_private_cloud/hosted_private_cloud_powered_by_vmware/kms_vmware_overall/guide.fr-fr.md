@@ -48,6 +48,7 @@ Nous détaillerons ici les étapes qu'il faudra suivre pour une configuration r�
 - Stockage des clés de chiffrement avec le KMS OVHcloud (CMK).
 - Importer votre propre service de gestion de clé (KMS) avec vNKP.
 - Gestion du cycle de vie de vos clés (utilisation, rotation, révocation, etc..) KMS.
+- Utiliser IAM et KMS avec votre Hosted Private Cloud VMware on OVHcloud.
 
 ### Avantages du KMS OVHcloud
 
@@ -128,6 +129,11 @@ KMS pour Hosted Private Cloud VMware on OVHcloud - Index des guides :
 - Guide 3 : [Activation/Commande d'un KMS managé par OVHcloud pour votre Hosted Private Cloud VMware on OVHcloud - Premier pas (KMS + IAM + vSphere)](/pages/manage_and_operate/kms/quick-start).
 - Guide 4 : [Aperçu de l'architecture KMS](/pages/manage_and_operate/kms/architecture-overview).
 - Guide 5 : [Activation du chiffrement des machines virtuelles (VM Encryption)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
+
+Documentation officiel VMware :
+- [Présentation VMware de vSphere Native Key Provider](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html#GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97){.external}.
+- [Documentation VMware du processus de chiffrement sur vSphere](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html#GUID-4A8FA061-0F20-4338-914A-2B7A57051495){.external}.
+- [Documentation VMware concernant vSphere Native Key Provider](https://core.vmware.com/native-key-provider){.external}.
 
 Vous pouvez aussi suivre notre labs KMS OVHcloud : [Labs KMS OVHcloud](https://labs.ovhcloud.com/en/key-management-service/){.external}
 
