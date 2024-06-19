@@ -1,7 +1,7 @@
 ---
 title: Network Bridge einrichten
 excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang Ihrer virtuellen Maschinen konfigurieren
-updated: 2024-06-18
+updated: 2024-06-19
 ---
 
 > [!primary]
@@ -110,7 +110,7 @@ Für alle Betriebssysteme und Distributionen **muss**** Ihre virtuelle Maschine 
 
 > [!warning]
 >
-> Die folgenden Anweisungen gelten für einen virtuellen Rechner, der zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie noch keine VM erstellt haben, gehen Sie zu den Optionen auf der Seite [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} von Proxmox.
+> Die folgenden Anweisungen gelten für einen virtuellen Rechner, der zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie noch keine VM erstellt haben, gehen Sie zu den Optionen auf der Seite [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} (EN) von Proxmox.
 >
 
 Nach Erstellung der VM und während diese noch ausgeschaltet ist:
@@ -132,7 +132,7 @@ Sie können nun Ihre VM starten und zu den nächsten Schritten, abhängig vom in
 
 > [!warning]
 >
-> Die folgenden Anweisungen gelten für einen virtuellen Rechner, der zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie keine VM erstellt haben, lesen Sie die Anleitung [Eine virtuelle Maschine im VMware Host-Client erstellen](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} auf der VMware-Seite.
+> Die folgenden Anweisungen gelten für einen virtuellen Rechner, der zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie keine VM erstellt haben, lesen Sie die Anleitung [Eine virtuelle Maschine im VMware Host-Client erstellen](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} (EN) auf der VMware-Seite.
 >
 
 Nach Erstellung der VM und während diese noch ausgeschaltet ist klicken Sie mit der rechten Maustaste darauf und klicken dann auf `Edit settings`.
@@ -406,7 +406,28 @@ Wenn Sie eine Antwort erhalten, wurde die Additional IP korrekt konfiguriert. Is
 
 #### FreeBSD
 
-Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/rc.conf` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.) In diesem Beispiel lautet der Name des Interface "em0". Ersetzen Sie diesen Wert nötigenfalls.
+Standardmäßig befindet sich die Netzwerkkonfigurationsdatei der virtuellen Maschine in `/etc/rc.conf`.
+
+Wenn Sie mit der Shell Ihrer virtuellen Maschine verbunden sind, führen Sie folgenden Befehl aus, um den Namen Ihres Interface zu identifizieren:
+
+```bash
+ls /sys/class/net
+```
+
+Erstellen Sie anschließend eine Kopie der Konfigurationsdatei, damit Sie jederzeit zur vorherigen Version zurückkehren können.
+
+```bash
+sudo cp /etc/rc.conf /etc/rc.conf.bak
+```
+
+Im Falle eines Fehlers können Sie mit den folgenden Befehlen zurückgehen:
+
+```bash
+sudo rm -f /etc/rc.conf
+sudo cp /etc/rc.conf.bak /etc/rc.conf
+```
+
+Ändern Sie die Datei, sodass sie die folgende Konfiguration widerspiegelt, ersetzen Sie `ADDITIONAL_IP` und `GATEWAY_IP` durch eigene Werte. In diesem Beispiel lautet der Schnittstellenname `em0`. Ersetzen Sie diesen Wert, wenn er nicht zutrifft.
 
 ```console
 ifconfig_em0="inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP"

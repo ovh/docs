@@ -1,7 +1,7 @@
 ---
 title: 'Modalità bridge IP'
 excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzando la modalità bridge
-updated: 2023-11-24
+updated: 2024-06-19
 ---
 
 > [!primary]
@@ -110,7 +110,7 @@ Per tutti i sistemi operativi e le distribuzioni, è necessario configurare la p
 
 > [!warning]
 >
-> Le istruzioni seguenti sono valide per le macchine virtuali create in precedenza con un sistema operativo preinstallato. Se non hai creato delle VM, consulta le opzioni disponibili alla pagina [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} di Proxmox.
+> Le istruzioni seguenti sono valide per le macchine virtuali create in precedenza con un sistema operativo preinstallato. Se non hai creato delle VM, consulta le opzioni disponibili alla pagina [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} (EN) di Proxmox.
 >
 
 Dopo aver creato la macchina virtuale e quando è ancora spenta:
@@ -132,7 +132,7 @@ A questo punto puoi avviare la tua macchina virtuale e passare agli step success
 
 > [!warning]
 >
-> Le istruzioni seguenti sono valide per le macchine virtuali create in precedenza con un sistema operativo preinstallato. Se non hai creato una VM, consulta la guida [Creare una macchina virtuale nel client host VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} sulla pagina VMware.
+> Le istruzioni seguenti sono valide per le macchine virtuali create in precedenza con un sistema operativo preinstallato. Se non hai creato una VM, consulta la guida [Creare una macchina virtuale nel client host VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} (EN) sulla pagina VMware.
 >
 
 
@@ -408,11 +408,32 @@ Se ricevi una risposta, significa che l’Additional IP è stato configurato cor
 
 #### FreeBSD
 
-Apri un terminale sulla tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale, che si trova nella cartella `/etc/rc.conf`. Modifica il file in modo che rispecchi la configurazione qui sotto. In questo esempio, il nome dell'interfaccia è "em0". Se necessario, è possibile modificarlo.
+Per impostazione predefinita, il file di configurazione di rete della macchina virtuale si trova in `/etc/rc.conf`.
+
+Una volta connesso alla shell della macchina virtuale, esegui questo comando per identificare il nome dell’interfaccia:
+
+```bash
+ls /sys/class/net
+```
+
+Esegui una copia del file di configurazione per poter ripristinare la versione precedente se necessario:
+
+```bash
+sudo cp /etc/rc.conf /etc/rc.conf.bak
+```
+
+In caso di errore, puoi annullare l’operazione eseguendo questi comandi:
+
+```bash
+sudo rm -f /etc/rc.conf
+sudo cp /etc/rc.conf.bak /etc/rc.conf
+```
+
+Modificare il file in modo che rifletta la configurazione riportata di seguito, sostituire `ADDITIONAL_IP` e `GATEWAY_IP` con i propri valori. In questo esempio, il nome dell’interfaccia è `em0`. Sostituire questo valore se non è applicabile.
 
 ```console
 ifconfig_em0="inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP"
-static_route="net1 net2"
+static_routes="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
 route_net2="default GATEWAY_IP"
 ```
@@ -424,6 +445,21 @@ nameserver 213.186.33.99
 ```
 
 Salva e chiudi il file e riavvia la macchina virtuale.
+
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
+```
+
+Se ricevi una risposta, significa che l’Additional IP è stato configurato correttamente. In caso contrario, riavvia la macchina virtuale e riavvia il ping.
 
 #### Ubuntu
 

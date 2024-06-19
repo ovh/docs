@@ -1,7 +1,7 @@
 ---
 title: 'Modo bridge IP'
 excerpt: 'Saiba como utilizar o modo bridge para configurar o acesso à Internet das suas máquinas virtuais'
-updated: 2024-06-18
+updated: 2024-06-19
 ---
 
 > [!primary]
@@ -34,7 +34,7 @@ A ligação em rede em modo bridge pode ser utilizada para configurar as suas m�
 >
 > O presente guia não é aplicável aos servidores das gamas [Scale](https://www.ovhcloud.com/pt/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/pt/bare-metal/high-grade/).
 >
-> Consulte antes os seguintes guias: [Configurar a rede no ESXi nas gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Configurar a rede no Proxmox VE nas gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) e [Configurar a rede no Windows Server com Hyper-V nas gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
+> Consulte antes os seguintes guias: [Configurar a rede em ESXi nas gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Configurar a rede em Proxmox VE nas gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) e [Configurar a rede em Windows Server com Hyper-V nas gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 
 ## Instruções
 
@@ -114,7 +114,7 @@ Para todos os sistemas operativos e distribuições, deve configurar a sua máqu
 
 > [!warning]
 >
-> As seguintes instruções aplicam-se a uma máquina virtual criada anteriormente com um sistema operativo já instalado. Se não criou nenhuma VM, consulte as opções na página [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} de Proxmox.
+> As seguintes instruções aplicam-se a uma máquina virtual criada anteriormente com um sistema operativo já instalado. Se não criou nenhuma VM, consulte as opções na página [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} (EN) de Proxmox.
 >
 
 Depois de ter criado a máquina virtual e quando esta ainda estiver desligada:
@@ -136,7 +136,7 @@ Pode desde já iniciar a sua máquina virtual e passar às etapas seguintes, em 
 
 > [!warning]
 >
-> As seguintes instruções aplicam-se a uma máquina virtual criada anteriormente com um sistema operativo já instalado. Se não criou nenhuma VM, consulte o guia [Criar uma máquina virtual no cliente host VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} na página VMware.
+> As seguintes instruções aplicam-se a uma máquina virtual criada anteriormente com um sistema operativo já instalado. Se não criou nenhuma VM, consulte o guia [Criar uma máquina virtual no cliente host VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} (EN) na página VMware.
 >
 
 Depois de criar a máquina virtual e quando estiver fora de tensão, clique com o botão direito do rato sobre a máquina e clique em `Alterar os parâmetros`{.action}.
@@ -409,7 +409,29 @@ Se receber uma resposta, significa que o Additional IP foi corretamente configur
 
 #### FreeBSD
 
-Abra um terminal na sua máquina virtual. Uma vez ligado, abra o ficheiro de configuração de rede da máquina virtual, situado na pasta `/etc/rc.conf`. Altere o ficheiro para que este reflita a configuração abaixo. Neste exemplo, o nome da interface é "em0". Pode alterá-lo se necessário.
+Por predefinição, o ficheiro de configuração de rede da VM está localizado em `/etc/rc.conf`.
+
+Uma vez ligado ao shell da sua máquina virtual, execute o comando seguinte para identificar o nome da sua interface:
+
+```bash
+ls /sys/class/net
+```
+
+De seguida, faça uma cópia do ficheiro de configuração para, se necessário, poder reverter o sistema para o estado inicial:
+
+```bash
+sudo cp /etc/rc.conf /etc/rc.conf.bak
+```
+
+Em caso de erro, poderá reverter a operação através dos seguintes comandos:
+
+```bash
+sudo rm -f /etc/rc.conf
+sudo cp /etc/rc.conf.bak /etc/rc.conf
+```
+
+
+Modifique o ficheiro para que reflita a configuração abaixo, substitua `ADDITIONAL_IP` e `GATEWAY_IP` pelos seus próprios valores. Neste exemplo, o nome da interface é `em0`. Substitua este valor se não for aplicável.
 
 ```console
 ifconfig_em0="inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP"
@@ -543,7 +565,11 @@ Se receber uma resposta, significa que o Additional IP foi corretamente configur
 
 Antes de configurar a sua máquina virtual, deverá criar um comutador virtual.
 
-A partir da linha de comandos do seu servidor dedicado, execute `IPconfig/ALL`{.action} e anote o nome da placa de rede que contém o endereço IP principal do servidor.
+A partir da linha de comandos para o seu servidor dedicado, execute o seguinte comando e anote o nome da placa de rede que contém o endereço IP principal do servidor:
+
+```powershell
+ipconfig /all
+```
 
 No painel de configuração Hyper-V, crie um novo comutador virtual e defina o tipo de ligação no `External`{.action}.
 
