@@ -396,7 +396,7 @@ Now, you need to install the CLI tools:
 pip install python-openstackclient awscli
 ```
 
-The command install `openstack client` to generate your credentials, `aws CLI` and mandatory `endpoint plugin for aws CLI`:
+The command installs `openstack client` to generate your credentials and `aws CLI`:
 
 ```console
 $ pip install python-openstackclient awscli
