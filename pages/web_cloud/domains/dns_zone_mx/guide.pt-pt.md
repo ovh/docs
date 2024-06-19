@@ -27,7 +27,7 @@ O registo MX permite associar um domínio ao servidor da sua plataforma de e-mai
 >
 > - Se o seu domínio for gerido pela OVHcloud, pode verificar se este último utiliza a nossa configuração OVHcloud a partir da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/pt/&ovhSubsidiary=pt). Uma vez posicionado no domínio em causa, no separador `Informações gerais`{.action}, na parte `Servidores DNS`{.action}, se a menção `Ativo` estiver presente « **servidores DNS** », utiliza bem os servidores DNS da OVHcloud.
 >
-> ![email](images/dns-servers-enabled.png){.thumbnail}
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 
 ## Instruções
 
@@ -39,7 +39,7 @@ Quando o endereço **sender@otherdomain.ovh** envia um e-mail para **contact@myd
 - **(1)** consultar a zona DNS do nome de domínio **mydomain.ovh** e ler os registos **MX**.
 - **(2)** reencaminhar o e-mail para o URL do registo **MX** lido.
 
-![email](images/mx-dns-resolution.png){.thumbnail}
+![email](/pages/assets/schemas/dns/mx-dns-resolution.png){.thumbnail}
 
 O e-mail será enviado para o destino **mx0.mail.ovh.net**, precedido do valor **0**. Esse valor é chamado de prioridade. O valor mais baixo é inquirido em primeiro lugar e o mais alto em último. Isto significa que vários registos irão compensar a falta de resposta do registo MX com a prioridade mais baixa.
 
@@ -73,14 +73,14 @@ A tabela apresenta a configuração da OVHcloud do seu domínio. Cada linha corr
 Antes de mais, verifique se já existem registos MX na configuração DNS da OVHcloud do seu domínio. Para tal, recorra à lista de filtragem situada por cima da tabela da sua zona DNS.<br>
 Selecione o tipo **MX** e valide para apresentar apenas as entradas DNS MX da sua zona DNS. Use a captura de ecrã abaixo.
 
-![dnsmxrecord](images/mx-entries-research.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail}
 
 - Se já existirem e pretender alterá-los, clique no botão `...`{.action} à direita de cada linha da tabela em causa e, a seguir, em `Alterar entrada`{.action}.
 - Se não existir nenhum registo MX presente, clique no botão `Adicionar uma entrada`{.action} à direita da tabela e selecione `MX`{.action}. Introduza as informações necessárias em função da solução de e-mail selecionada:
 
 **Se dispõe de uma solução de e-mail OVHcloud**, consulte as informações fornecidas na etapa "[Conhecer a configuração MX da OVHcloud](#mxovhcloud)".
 
-![dnsmxrecord](images/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
 
 Conclua os passos e clique em `Validar`{.action}.
 
