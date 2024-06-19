@@ -29,7 +29,7 @@ Antes de empezar, debe decidir qué permisos quiere delegar. Le recordamos que u
 |Permisos|Descripción|
 |---|---|
 |**Permiso de "enviar como"**|Permite realizar un envío como si se tratase de otra persona. El que aparece como remitente del mensaje no es la cuenta que realiza el envío, sino la cuenta sobre la que se tienen permisos de "enviar como". El destinatario no sabrá que el mensaje se ha enviado desde otra cuenta, ya que no hay ninguna indicación al respecto.|
-|**Permiso de «enviar en nombre de»**|Permite realizar un envío en nombre de otra persona. El que aparece como remitente del mensaje es la cuenta que efectivamente realiza el envío, en la que han delegado permisos de «enviar en nombre de». Se incluye una mención indicando que el mensaje se ha enviado en nombre de otra persona.|
+|**Permiso de "enviar en nombre de"**|Permite realizar un envío en nombre de otra persona. El que aparece como remitente del mensaje es la cuenta que efectivamente realiza el envío, en la que han delegado permisos de "enviar en nombre de". Se incluye una mención indicando que el mensaje se ha enviado en nombre de otra persona.|
 |**Permiso de acceso completo**|Otorga acceso de solo lectura a la cuenta en la que se ha delegado este permiso. Este acceso permite consultar el contenido, pero no realizar envíos.|
 
 > [!warning]
