@@ -16,7 +16,7 @@ Los servicios Exchange y Email Pro permiten disfrutar de direcciones de correo p
 
 > [!warning]
 >
-> **Para la oferta [Email Pro](/links/web/email-pro)** las funcionalidades de delegación descritas en esta guía solo se utilizan a través del [Webmail](links/web/email). Los protocolos que permiten su uso a través de un programa de mensajería requieren disponer de una cuenta de [Exchange] (/links/web/emails-hosted-exchange).
+> **Para la oferta [Email Pro](/links/web/email-pro)** las funcionalidades de delegación descritas en esta guía solo se utilizan a través del [Webmail](links/web/email). Los protocolos que permiten su uso a través de un programa de mensajería requieren disponer de una cuenta de [Exchange](/links/web/emails-hosted-exchange).
 
 - Tener al menos dos cuentas de correo activas configuradas en una misma plataforma de correo de OVHcloud.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager).
