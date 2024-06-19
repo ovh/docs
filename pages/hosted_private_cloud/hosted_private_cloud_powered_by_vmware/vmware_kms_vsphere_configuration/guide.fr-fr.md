@@ -29,12 +29,13 @@ Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryp
 ![Creation KMS server](images/creation_kms_server.png){.thumbnail}
 
 > [!primary]
-> Pour récuperer votre empreintre SSL de votre serveur KMS suivez les instructions ci-dessous :
+> Pour récuperer votre empreintre SSL et l'IP publique de votre serveur KMS, suivez les instructions ci-dessous :
 >
 
 > [!tabs]
 > **Windows**
 >>
+>> **Empreinte SSL :**
 >> - Ouvrez votre navigateur web.
 >> - Dans la barre d'adresse, entrez l'adresse IP de votre serveur précédée de https:// et suivi du port si nécessaire (par exemple: `https://192.0.2.1:443`).
 >> - Lorsque la page est chargée, cliquez sur l'icône de cadenas situé à gauche de l'URL dans la barre d'adresse. Cela affichera des informations sur le certificat.
@@ -44,13 +45,36 @@ Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryp
 >>
 >> ![Empreinte SHA Navigateur](images/fingerprint_sha.png){.thumbnail}
 >>
+>> **IP Publique :**
+>>
+>> - Pour récupérer l'IP publique de votre endpoint KMS, vous pouvez faire un ping ou un NSlookup, par exemple :
+>>
+>> ```shell
+>> ping eu-west-rbx.okms.ovh.net
+>> or
+>> nslookup eu-west-rbx.okms.ovh.net
+>> ```
+>>
 > **Linux / MacOs**
 >>
->> Si vous être sur un hote linux ou MacOs il vous suffit d'executer la commande ci-dessous dans un terminal.<br>
+>> **Empreinte SSL :**
+>>
+>> - Si vous être sur un hote linux ou MacOs il vous suffit d'executer la commande ci-dessous dans un terminal.<br>
 >>
 >> ```shell
 >> openssl s_client -connect 54.38.64.196:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 >> ```
+>>
+>> **IP Publique :**
+>>
+>> - Pour récupérer l'IP publique de votre endpoint KMS, vous pouvez faire un ping ou un dig, par exemple :
+>>
+>> ```shell
+>> ping eu-west-rbx.okms.ovh.net
+>> or
+>> dig eu-west-rbx.okms.ovh.net
+>> ```
+>>
 
 ### Ajouter le key provider dans vSphere
 
@@ -73,11 +97,28 @@ Selectionner votre Key Provider que vous venez de créer et cliquer sur le bouto
 
 ![Trust KMS server](images/trust_kms.png){.thumbnail}
 
-Selectionnez `KMS Certificate and private key to vCenter.`. Puis renseignez votre certificat KMS et votre clef privée du serveur KMS.
+Nous recommandons la méthode : `Nouvelle demande de signature de certificat (CSR`{.action), mais libre à vous de choisir celle qui vous convient le mieux.
 
-![Trust KMS server](images/kms_trust_vcenter.png){.thumbnail}
-
-![Trust KMS server](images/kms_trust_vcenter_2.png){.thumbnail}
+> [!tabs]
+> **KMS certificate and private key**
+>>
+>> - Selectionnez `KMS Certificate and private key to vCenter.`. Puis renseignez votre certificat KMS et votre clef privée du serveur KMS.
+>>
+>> ![Trust KMS server](images/kms_trust_vcenter.png){.thumbnail}
+>>
+>> ![Trust KMS server](images/kms_trust_vcenter_2.png){.thumbnail}
+>>
+>>
+> **New Certificate Signing Request (CSR)**
+>>
+>> - Selectionnez `Nouvelle demande de signature de certificat (CSR)`{.action}. Puis Copiez ou téléchargez le CSR ci-dessous, mettez-le à la disposition de KMS et demandez à ce dernier de signer le certificat.
+>>
+>> ![Trust KMS server](images/kms_trust_vcenter_csr.png){.thumbnail}
+>>
+>> ![Trust KMS server](images/kms_trust_vcenter_csr_2.png){.thumbnail}
+>>
+>> L'approbation ne sera pas établie une fois que vous aurez terminé cet Assistant. Rendez-vous dans le KMS pour télécharger le CSR, faites signer le certificat par le KMS et téléchargez-le sur le vCenter pour établir la confiance.
+>>
 
 Vous pouvez verifier que la connection à été établie en selectionnant votre Key Provider. L'option `Connected` doit être cochée.
 
