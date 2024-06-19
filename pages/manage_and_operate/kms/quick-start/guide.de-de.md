@@ -30,7 +30,7 @@ Since the billing for a KMS is based on the number of keys stored on it, orderin
 
 To order a KMS, click on the KMS menu on the category `Identity, Security & Operations` available on the `Bare Metal Cloud` and `Hosted Private Cloud` univers or on the category `Identity, Security` on the `Public Cloud`univers. Then click on the button `Order a KMS`
 
-![Accès au menu KMS](images/access_to_the_KMS_menu_01.png){.thumbnail}
+![Access to the KMS menu](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
 Enter the region of your KMS.
 
