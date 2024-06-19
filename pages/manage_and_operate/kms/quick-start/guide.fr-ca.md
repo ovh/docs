@@ -1,8 +1,7 @@
 ---
 title: "Premier pas avec OVHcloud KMS"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-flag: hidden
-updated: 2024-06-06
+updated: 2024-06-25
 ---
 
 > [!warning]
@@ -29,15 +28,11 @@ Il est possible de commander plusieurs KMS, que ce soit dans des régions diffé
 
 La facturation d'un KMS étant basée sur le nombre de clés y étant stocké, la commande d'un KMS ne génère pas de facturation en elle-même.
 
-Pour commander un KMS, cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre nom dans la barre latérale.
+Pour commander un KMS, accédez au menu KMS présent dans la catégorie `Identité, Sécurité & Opérations` présent dans les univers `Bare Metal Cloud` et `Hosted Private Cloud` ou dans la catégorie `Identity, Security` dans l'univers `Public Cloud`. Puis cliquer sur le bouton `Commander un KMS`
 
 ![Accès au menu KMS](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
-Vous pouvez accéder au menu KMS via l’entrée dédiée dans votre espace client.
-
-![Accès au menu KMS](images/access_to_the_KMS_menu_02.png){.thumbnail}
-
-Indiquez la région de votre KMS et acceptez les conditions d'utilisation.
+Indiquez la région de votre KMS.
 
 ![Commander le KMS](images/order_kms_01.png){.thumbnail}
 
