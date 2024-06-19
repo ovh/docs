@@ -43,7 +43,7 @@ L'enregistrement DMARC communique la politique à adopter en fonction du résult
 
 Après lecture des instructions de l'enregistrement DMARC du nom de domaine **mydomain.ovh** par le serveur de réception de **« otherdomain.ovh »**, les e-mails seront soit délivrés vers l'adresse **recipient@otherdomain.ovh**, soit marqués comme « SPAM » ou rejetés.
 
-![dmarc](images/dns-dmarc-diagram.png){.thumbnail}
+![dmarc](/pages/assets/schemas/emails/dns-dmarc-diagram.png){.thumbnail}
 
 ### Configurer le DMARC
 
@@ -93,7 +93,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 > - **Partiellement aligné** : lorsque l'adresse *john.smith@subdomain.mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh*, mais que les mécanismes d'authentification SPF et DKIM ont été configurés uniquement sur le domaine principal (c'est à dire *mydomain.ovh*), on obtient un résultat partiellement aligné.
 > - **Echec des mécanismes d'authentification** : l'expéditeur tente d'envoyer un e-mail en tant que *john.smith@mydomain.ovh* en passant par une autre adresse (telle que *robert@example.com*) ou en utilisant un service d'envoi d'e-mail qui n'est pas listé dans le SPF. Dans ce cas, les mécanismes d'authentification SPF et DKIM renvoient un échec comme résultat.
 
-![dmarc](images/dns-dmarc-01.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-01.png){.thumbnail}
 
 #### Enregistrement TXT <a name="txt-record"></a>
 
@@ -121,7 +121,7 @@ Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enreg
 
 - **ri** (entier non signé de 32 bits en texte brut ; la valeur par défaut est 86400) : intervalle requis, en secondes, entre les rapports agrégés. Cette balise spécifie la fréquence à laquelle les destinataires des e-mails doivent générer des rapports agrégés sur les résultats d'évaluation DMARC pour le domaine concerné.
 
-![dmarc](images/dns-dmarc-02.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-02.png){.thumbnail}
 
 #### Exemples d'enregistrement <a name="record-example"></a>
 
@@ -135,7 +135,7 @@ Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enreg
 
 Pour illustrer ce premier exemple, nous avons utilisé l'[enregistrement DMARC](#dmarc-record) dans la zone DNS et nous lui avons appliqué les paramètres suivants :
 
-![dmarc](images/dns-dmarc-03.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-03.png){.thumbnail}
 
 Nous obtenons le résultat suivant :
 
@@ -149,7 +149,7 @@ La totalité des e-mails envoyés (**pct=100**) sont traités par les mécanisme
 
 Pour ce deuxième exemple, nous avons utilisé un [enregistrement TXT](#txt-record) pour utiliser des balises qui ne sont pas disponibles via l'[enregistrement DMARC](#dmarc-record) simplifié.
 
-![dmarc](images/dns-dmarc-04.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-04.png){.thumbnail}
 
 Nous obtenons le résultat suivant :
 
