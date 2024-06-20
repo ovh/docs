@@ -1,7 +1,7 @@
 ---
 title: "Liste des adresses IP à autoriser pour votre CDN Infrastructure"
 excerpt: "Découvrez l'ensemble des adresses IP à autoriser pour votre CDN Infrastructure"
-updated: 2024-05-29
+updated: 2024-06-20
 ---
 
 ## Objectif
@@ -40,4 +40,4 @@ Retrouvez ci-dessous la liste des adresses IP :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

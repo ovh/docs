@@ -1,7 +1,7 @@
 ---
 title: "List of IP addresses to authorize for your CDN Infrastructure"
 excerpt: "Discover all the IP addresses to authorize for your CDN Infrastructure"
-updated: 2024-05-29
+updated: 2024-06-20
 ---
 
 ## Objective
@@ -15,6 +15,10 @@ In this guide, you will find all of the CDN Infrastructure service IP addresses 
 - An [OVHcloud CDN Infrastructure solution](https://www.ovhcloud.com/en-gb/network/cdn/).
 
 ## Instructions
+
+> [!warning]
+> This list of IP addresses is not exhaustive and may change in the future.
+>
 
 Below is the list of IP addresses:
 
@@ -36,4 +40,4 @@ Below is the list of IP addresses:
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
