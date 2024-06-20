@@ -37,7 +37,7 @@ Saisissez votre nom de domaine dans la barre de recherche de votre navigateur In
 
 Si les fichiers source de Pico ont été placés correctement dans votre dossier racine, la page suivante apparaît :
 
-![Pico installation](images/welcome_page.png){.thumbnail}
+![Pico installation](/pages/assets/screens/other/cms/pico/welcome_page.png){.thumbnail}
 
 Pico est un CMS basé sur des fichiers, ce qui signifie que toute la configuration et la création de contenu se font directement en modifiant les fichiers sur le serveur. Voici les étapes à suivre pour configurer et personnaliser votre site web Pico.
 

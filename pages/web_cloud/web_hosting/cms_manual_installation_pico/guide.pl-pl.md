@@ -41,7 +41,7 @@ Wpisz nazwę domeny w pasku wyszukiwania przeglądarki internetowej.
 
 Jeśli pliki źródłowe Pico zostały pomyślnie umieszczone w folderze głównym, pojawi się następująca strona:
 
-![Pico installation](images/welcome_page.png){.thumbnail}
+![Pico installation](/pages/assets/screens/other/cms/pico/welcome_page.png){.thumbnail}
 
 Pico to CMS oparty na plikach, co oznacza, że cała konfiguracja i tworzenie treści odbywa się bezpośrednio poprzez modyfikację plików na serwerze. Poniżej przedstawiamy kroki, które należy wykonać, aby skonfigurować i spersonalizować stronę WWW Pico.
 
