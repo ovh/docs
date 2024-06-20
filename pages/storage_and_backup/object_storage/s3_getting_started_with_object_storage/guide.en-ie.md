@@ -126,7 +126,7 @@ aws s3 cp /datas/test1 s3://<bucket_name>
 # upload an object to High Performance tier
 aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/test1 --storage-class EXPRESS_ONEZONE
 
-# explicitely upload an object to Standard tier
+# explicitly upload an object to Standard tier
 aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/test1 --storage-class STANDARD
 ```
 
