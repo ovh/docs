@@ -1882,6 +1882,7 @@
         + [Configuring a domain name for the first time](network/content_delivery_network_infrastructure/first_domain_name_configuration)
         + [Understanding quota on the CDN](network/content_delivery_network_infrastructure/quota)
         + [Adding an SSL certificate on the CDN](network/content_delivery_network_infrastructure/ssl_certificate)
+        + [List of IP addresses to authorize for your CDN Infrastructure](network/content_delivery_network_infrastructure/ip_range)
 + Manage and Operate
     + [API](products/manage-operate-api)
         + [Getting started](manage-operate-api-getting-started)
