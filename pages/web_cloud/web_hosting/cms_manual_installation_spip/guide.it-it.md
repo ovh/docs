@@ -39,23 +39,23 @@ Segui gli step** descritti nel nostro tutorial sull'[installazione manuale di un
 
 Inserisci `your_domain/ecrire` nella barra di ricerca del tuo browser Internet per avviare l’installazione del tuo sito Web Spip. Viene visualizzata la pagina seguente:
 
-![Spip installation](images/installation_first_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_first_step.png){.thumbnail}
 
 Seleziona la lingua del sito Web Spip e clicca su `Next`{.action} per confermare. Viene visualizzata la seguente schermata:
 
-![Spip installation](images/installation_second_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_second_step.png){.thumbnail}
 
 Inserisci le informazioni di accesso al tuo DBMS (ad esempio, MySQL). Una volta stabilita la connessione al database, viene visualizzata la seguente schermata:
 
-![Spip installation](images/installation_third_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_third_step.png){.thumbnail}
 
 Seleziona il database da utilizzare per il tuo sito Web o [crea un nuovo database](/pages/web_cloud/web_hosting/sql_create_database). Scegliere un prefisso per le tabelle del database. Di default, viene utilizzato il prefisso `spip`. Clicca su `Next`{.action} per confermare le informazioni. Viene visualizzata la seguente schermata:
 
-![Spip installation](images/installation_fourth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fourth_step.png){.thumbnail}
 
 Inserisci le informazioni richieste e clicca su `Next`{.action} per confermare. Viene visualizzata la seguente schermata:
 
-![Spip installation](images/installation_fifth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fifth_step.png){.thumbnail}
 
 La schermata mostra l’elenco dei plugin disponibili per il tuo sito Web e ti informa che l’installazione di Spip è stata completata.
 

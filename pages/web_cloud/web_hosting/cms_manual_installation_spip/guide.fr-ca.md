@@ -35,23 +35,23 @@ Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installat
 
 Saisissez `your_domain/ecrire` dans la barre de recherche de votre navigateur Internet pour démarrer l'installation de votre site web Spip. La page suivante s'affiche :
 
-![Spip installation](images/installation_first_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_first_step.png){.thumbnail}
 
 Sélectionnez la langue de votre site web Spip et cliquez sur `Next`{.action} pour confirmer. L'écran suivant s'affiche :
 
-![Spip installation](images/installation_second_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_second_step.png){.thumbnail}
 
 Saisissez les informations pour vous connecter à votre SGBD (MySQL par exemple). Une fois la connexion à votre base de données réussie, l'écran suivant s'affiche :
 
-![Spip installation](images/installation_third_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_third_step.png){.thumbnail}
 
 Sélectionnez la base de données que vous souhaitez utiliser pour votre site web ou [créez en une nouvelle](/pages/web_cloud/web_hosting/sql_create_database). Choisissez un préfixe pour les tables de votre base de données. Par défaut, le préfixe `spip` est utilisé. Cliquez sur `Next`{.action} pour valider les informations. L'écran suivant s'affiche :
 
-![Spip installation](images/installation_fourth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fourth_step.png){.thumbnail}
 
 Entrez les informations demandées et cliquez sur `Next`{.action} pour confirmer. L'écran suivant s'affiche :
 
-![Spip installation](images/installation_fifth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fifth_step.png){.thumbnail}
 
 L'écran présente la liste des plugins disponibles pour votre site web et vous informe que l'installation de Spip s'est bien déroulée.
 
