@@ -16,7 +16,7 @@ Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-
 
 > [!warning]
 >
-> **W przypadku oferty [Email Pro](/links/web/email-pro)** Funkcje delegacji opisane w tym przewodniku są dostępne tylko w interfejsie [Webmail](links/web/email). Protokoły umożliwiające korzystanie z nich za pośrednictwem programu pocztowego wymagają posiadania konta [Exchange](/links/web/emails-hosted-exchange).
+> **W przypadku oferty [Email Pro](/links/web/email-pro)** Funkcje delegacji opisane w tym przewodniku są dostępne tylko w interfejsie [Webmail](/links/web/email). Protokoły umożliwiające korzystanie z nich za pośrednictwem programu pocztowego wymagają posiadania konta [Exchange](/links/web/emails-hosted-exchange).
 
 - Posiadanie co najmniej dwóch aktywnych kont e-mail skonfigurowanych na tej samej platformie e-mail OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
@@ -91,7 +91,7 @@ W oknie, które się wyświetla wskaż nazwę konta, którego dotyczy przyznane 
 
 > [!warning]
 >
-> Korzystanie z tej funkcji **przez program Outlook** jest dostępne tylko dla konta e-mail [Exchange](links/web/emails-hosted-exchange).
+> Korzystanie z tej funkcji **przez program Outlook** jest dostępne tylko dla konta e-mail [Exchange](/links/web/emails-hosted-exchange).
 
 Przejdź do programu Outlook i kliknij `Plik`{.action} na pasku menu na górze ekranu, a następnie kliknij `Ustawienia konta`{.action}. W rozwijanym menu kliknij ponownie `Parametry konta`{.action}. W oknie, które się wyświetla wybierz konto, którego dotyczy przydzielone prawo, a następnie kliknij `Modyfikuj`{.action}. 
 
@@ -117,7 +117,7 @@ Teraz możesz zredagować wiadomość e-mail i wysłać ją.
 
 > [!warning]
 >
-> Korzystanie z tej funkcji **przez program Outlook** jest dostępne tylko dla konta e-mail [Exchange](links/web/emails-hosted-exchange).
+> Korzystanie z tej funkcji **przez program Outlook** jest dostępne tylko dla konta e-mail [Exchange](/links/web/emails-hosted-exchange).
 
 Po otwarciu programu Outlook zacznij pisać nową wiadomość. Upewnij się, czy przycisk `Od`{.action} wyświetla się w oknie wiadomości. Jeśli nie wyświetla się, przejdź do zakładki `Opcje`{.action}, następnie kliknij `Wyświetl „Od”`{.action}.
 
@@ -143,7 +143,7 @@ Teraz możesz zredagować wiadomość e-mail i wysłać ją.
 
 > [!warning]
 >
-> Korzystanie z tej funkcji **przez program Outlook** jest dostępne tylko dla konta e-mail [Exchange](links/web/emails-hosted-exchange).
+> Korzystanie z tej funkcji **przez program Outlook** jest dostępne tylko dla konta e-mail [Exchange](/links/web/emails-hosted-exchange).
 
 Po otwarciu programu Outlook zacznij pisać nową wiadomość. Upewnij się, czy przycisk `Od`{.action} wyświetla się w oknie wiadomości. Jeśli nie wyświetla się, przejdź do zakładki `Opcje`{.action}, następnie kliknij `Wyświetl „Od”`{.action}.
 

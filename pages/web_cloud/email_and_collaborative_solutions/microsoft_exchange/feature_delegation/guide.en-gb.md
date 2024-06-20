@@ -16,7 +16,7 @@ With the OVHcloud Exchange or Email Pro services, you can set up professional em
 
 > [!warning]
 >
-> **For the [Email Pro](/links/web/email-pro) offer**, the delegation features described in this guide can only be used via [Webmail](links/web/email). The protocols that allow them to be used via an email client require an [Exchange account](/links/web/emails-hosted-exchange).
+> **For the [Email Pro](/links/web/email-pro) offer**, the delegation features described in this guide can only be used via [Webmail](/links/web/email). The protocols that allow them to be used via an email client require an [Exchange account](/links/web/emails-hosted-exchange).
 
 - At least two active email accounts, configured on the same OVHcloud Exchange or Email Pro platform
 - Access to the [OVHcloud Control Panel](/links/manager)
@@ -85,7 +85,7 @@ In the window that pops up, enter the name for the account that holds the delega
 
 > [!warning]
 >
-> Use of this feature **via Outlook** is only available for an email account [Exchange](links/web/emails-hosted-exchange).
+> Use of this feature **via Outlook** is only available for an email account [Exchange](/links/web/emails-hosted-exchange).
 
 In the Outlook application, click `File`{.action} in the menu bar at the top of your screen, then `Account Settings`{.action}. In the drop-down menu, click again on `Account Settings`{.action}. In the window that pops up, select the account with the delegated permission, then click `Change`{.action}.
 
@@ -111,7 +111,7 @@ At this stage, you are now ready to write and send your email.
 
 > [!warning]
 >
-> Use of this feature **via Outlook** is only available for an [Exchange email account](links/web/emails-hosted-exchange).
+> Use of this feature **via Outlook** is only available for an [Exchange email account](/links/web/emails-hosted-exchange).
 
 In your Outlook application, start editing a new email. Ensure that the `From`{.action} button is visible in the editing window. If it is not visible, go to the `Options`{.action} tab, then click `From`{.action}.
 
@@ -137,7 +137,7 @@ At this stage, you are now ready to write and send your email.
 
 > [!warning]
 >
-> Use of this feature **via Outlook** is only available for an email account [Exchange](links/web/emails-hosted-exchange).
+> Use of this feature **via Outlook** is only available for an email account [Exchange](/links/web/emails-hosted-exchange).
 
 In your Outlook application, start editing a new email. Ensure that the `From`{.action} button is visible in the editing window. If it is not visible, go to the `Options`{.action} tab, then click `From`{.action}.
 
