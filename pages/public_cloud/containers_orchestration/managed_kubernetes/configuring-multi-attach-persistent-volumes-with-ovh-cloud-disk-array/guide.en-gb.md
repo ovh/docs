@@ -11,7 +11,7 @@ OVHcloud Managed Kubernetes natively integrates Block Storage as persistent volu
 
 ## Requirements
 
-This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](https://www.ovhcloud.com/en/public-cloud/kubernetes/) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation.
+This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](/links/public-cloud/kubernetes) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation.
 
 It also assumes you have an OVHcloud Cloud Disk Array already available. If you don't, you can [order one in the OVHcloud Control Panel](/links/manager).
 
