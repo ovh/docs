@@ -49,7 +49,7 @@ Cuando acceda a sus archivos, abra el archivo "*authorized_keys*" correspondient
 nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Copie su nueva clave pública (creada en el paso 2) en el archivo. El contenido del archivo debería tener el siguiente formato:
+Copie su nueva clave pública (creada en el paso 1) en el archivo. El contenido del archivo debería tener el siguiente formato:
 
 ```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666

@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre la solución Zimbra OVHcloud
 excerpt: "Encuentre las preguntas sobre la migración a Zimbra para la solución MX Plan de OVHcloud"
-updated: 2024-03-27
+updated: 2024-05-31
 ---
 
 > [!primary]
@@ -107,6 +107,7 @@ Para dar de baja un servicio en la sección « Mis servicios » de su área de O
 |**Pie de página**<br>(firma de nombre de dominio que puede configurarse desde el área de cliente)|Esta funcionalidad no estará presente en la nueva infraestructura Zimbra. Sin embargo, todavía es posible configurar una firma en el nivel de la cuenta de correo.|❌|
 |**Política de seguridad**|Esta funcionalidad del área de cliente que permite cambiar la política de gestión de las contraseñas no estará presente, en un primer momento, en la solución Zimbra.<br>La política de seguridad aplicada por defecto a las contraseñas requiere un mínimo de 10 caracteres alfanuméricos, 1 carácter especial, 1 mayúscula.|❌|
 |**Spoofing**|La función Spoofing consiste en enviar un mensaje de correo electrónico desde una identidad distinta de la de la cuenta de correo en la que se ha autenticado. Esta práctica es incompatible con los protocolos de seguridad SPF y DKIM necesarios para la correcta entrega de los mensajes de correo.<br>Desde Zimbra, puede configurar una identidad diferente de la cuenta de correo utilizada, siempre que se haya delegado en ella.|❌|
+|**Compatibilidad con Seguridad de la capa de transporte (TLS) 1.0 y 1.1.**|Se considera que las versiones 1.0 y 1.1 son vulnerables a los ataques y no cumplen con los estándares de seguridad actuales.<br>Si su navegador de Internet no admite **TLS 1.2** como mínimo**, le recomendamos que instale las últimas actualizaciones de seguridad y características.|❌|
 
 ## Más información
 

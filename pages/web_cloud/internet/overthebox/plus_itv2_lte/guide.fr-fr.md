@@ -1,7 +1,7 @@
 ---
 title: 'Ajouter un lien LTE sur OverTheBox'
 excerpt: "Découvrez comment ajouter un lien LTE afin d'améliorer les performances de votre OverTheBox"
-updated: 2021-04-29
+updated: 2024-05-29
 ---
 
 ## Objectif
@@ -40,11 +40,6 @@ Retournez sur l'onglet `Accueil`{.action} pour vérifier que vous êtes bien con
 
 #### Configurer un téléphone Android
 
-> [!warning]
->
-> Sur les versions OverTheBox antérieures à la version 0.6, des manipulations supplémentaires sont nécessaires, voir la section « Aller plus loin » en bas de ce guide.
->
-
 > [!primary]
 >
 > L'interface Android dépend du modèle de votre téléphone, il est possible que les nom des menus ne soientt pas exactement identiques à ceux présentés dans ce guide.
@@ -68,11 +63,6 @@ Retournez sur l'onglet `Accueil`{.action} pour vérifier que vous êtes bien con
 > [!alert]
 >
 > Apple à introduit des changements depuis la version iOS14 qui peuvent rendre le partage impossible avec l'**OverTheBox**.
->
-
-> [!warning]
->
-> Sur les versions OverTheBox antérieures à la version 0.6, des manipulations supplémentaires sont nécessaires, voir la section « Aller plus loin » en bas de ce guide.
 >
 
 - Branchez votre téléphone à l'aide d'un câble USB sur l'un des ports USB de votre **OverTheBox**.
@@ -100,67 +90,5 @@ Dans cet exemple,  la courbe verte correspond à notre connexion VDSL tandis que
 ![LTE](images/lte-step2-2.png){.thumbnail}
 
 ## Aller plus loin
-
-### Utiliser un téléphone sur une OverTheBox antérieure à la version 0.6
-
-> [!warning]
->
-> Ceci n'est utile que sur les anciennes version d'OverTheBox, antérieures à la version 0.6
->
-
-> [!primary]
->
-> Ces commandes doivent être effectuées depuis le CLI de l'OverTheBox accessible depuis une connexion SSH.
->
-
-#### Pour un téléphone Android
-
-Tapez la commande suivante :
-
-```bash
-opkg update
-opkg install kmod-usb-net kmod-usb-net-rndis kmod-usb-net-cdc-ether
-```
-
-#### Pour un téléphone Apple
-
-Tapez la commande suivante :
-
-```bash
-opkg update
-opkg install kmod-usb-net-ipheth libimobiledevice usbmuxd
-```
-
-La commande suivante va permettre à l'OverTheBox de passer le téléphone en mode **Network USB**, même après chaque redémarrage.
-
-```bash
-/usr/sbin/usbmuxd
-sed -i '/^exit 0/i/usr/sbin/usbmuxd' /etc/rc.local
-```
-
-### Configurer un lien LTE en backup uniquement
-
-Même si les quotas des liens LTE ont grandement augmenté ces dernières années, ils sont toujours présents dans la majorité des offres.
-
-Si vous souhaitez activer l'agrégation sur le lien LTE uniquement en cas de défaillance de votre accès principal, vous pouvez modifier la politique d'agrégation pour chaque connexion.
-
-- Cliquez sur l'onglet `Network`{.action}.
-- Cliquez sur `Interfaces`{.action}.
-- Cliquez sur l'onglet correspondant à votre interface, dans notre cas «ETH4_DHCP» pour notre clé LTE.
-- Cliquez sur `Advanced Settings`{.action}.
-- Dans le menu déroulant `Multipath TCP`{.action}, choisissez **Backup**.
-- Sauvegardez vos changement avec le bouton `Save & Apply`{.action}.
-
-![LTE](images/lte-backup.png){.thumbnail}
-
-Voici la description de chaque paramètre de l'option **Multipath TCP**:
-
-Paramètre | Description |
-| ------------- | ------------- |
-| Disabled  | Le lien n'est pas inclus dans l'agrégation |
-| Enabled  | Le lien est inclus dans l'agrégation |
-| Master | Le lien est inclus dans l'agrégation et constitue la route par défaut pour tous les autres types de trafic. Une seule interface doit utiliser ce paramètre. |
-| Backup | Le lien ne sera inclus dans l'agrégation qu'en cas de perte des autres liens |
-| Handover | Le lien ne sera inclus dans l'agrégation qu'en cas de dégradation ou de perte des autres liens |
 
 N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)

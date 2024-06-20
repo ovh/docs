@@ -79,7 +79,7 @@ Wenn Sie den *Reverse DNS* auf eine Additional IP-Adresse konfigurieren möchten
 
 Das Dropdown-Menü unter "**Meine öffentlichen IP-Adressen und dazugehörigen Dienste**" erlaubt es Ihnen, Ihre Dienste nach Kategorie zu filtern.
 
-![IP Reverse](images/selectservice2022.png){.thumbnail}
+![IP Reverse](images/filteripds.png){.thumbnail}
 
 Klicken Sie auf den Button `...`{.action} rechts neben der entsprechenden Zeile und dann auf `Reverse ändern`{.action}:
 

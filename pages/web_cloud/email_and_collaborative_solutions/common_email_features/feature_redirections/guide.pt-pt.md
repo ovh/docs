@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar os alias e reencaminhamentos de e-mail'
 excerpt: 'Saiba como gerir os seus alias e reencaminhamentos de e-mail'
-updated: 2024-03-26
+updated: 2024-06-10
 ---
 
 <style>
@@ -16,7 +16,9 @@ updated: 2024-03-26
 
 ## Objetivo
 
-Neste guia encontrará diferentes informações e ajudas relativas à configuração dos seus reencaminhamentos e alias de e-mail, por exemplo para enviar e-mails recebidos num endereço A para um endereço B.
+Encontre neste guia diferentes informações e dicas relativas à configuração dos seus **reencaminhamentos** e **alias** emails, por exemplo para reenviar e-mails recebidos num endereço A para um endereço B.
+
+![emails](images/schema-redirect00.png){.thumbnail}
 
 **Saiba como gerir os seus alias e reencaminhamentos de e-mail.**
 
@@ -36,37 +38,55 @@ Por exemplo, o seu endereço de e-mail é **john.smith@mydomain.ovh** e o seu al
 
 ### Reencaminhamento e alias em imagem <a name="diagram"></a>
 
-- **O reencaminhamento simples (esquema n°1 abaixo)**: o e-mail é enviado diretamente para o endereço de reencaminhamento. o destinatário inicial não recebe o e-mail.
+Clique nos separadores seguintes para obter explicações ilustradas sobre o funcionamento dos alias e reencaminhamentos.
 
-- **O reencaminhamento com cópia local (esquema n°2 abaixo)**: o e-mail é enviado ao destinatário inicial e ao endereço de reencaminhamento.
+- `From` designa o endereço do remetente
+- `To` designa o endereço do destinatário
+- `Redirect to` designa o endereço de e-mail de reencaminhamento que foi configurado.
 
-- **O alias de e-mail (esquema n°3 abaixo)**: o e-mail é enviado ao alias que o devolve ao destinatário no qual o alias foi configurado.
-
-![emails](images/schema-redirect.png){.thumbnail}
+> [!tabs]
+> **1. O reencaminhamento simples**
+>>
+>> O e-mail é reencaminhado para o endereço de reencaminhamento e o destinatário original não recebe o e-mail.<br><br>
+>> ![emails](images/schema-redirect01.png){.thumbnail}
+>>
+> **2. O reencaminhamento com cópia local**
+>>
+>> O e-mail é enviado para o destinatário original e para o endereço de reencaminhamento.<br><br>
+>> ![emails](images/schema-redirect02.png){.thumbnail}
+>>
+> **3. O alias e-mail**
+>>
+>> O email é endereçado ao alias que o reencaminha para o destinatário no qual o alias foi configurado. A menção `Received by` designa o endereço de e-mail que recebe o e-mail.<br><br>
+>> ![emails](images/schema-redirect03.png){.thumbnail}
+>>
 
 > [!primary]
 >
-> Tenha em conta que é possível configurar um reencaminhamento para vários endereços de e-mail.
+> Tenha em atenção que é possível configurar um reencaminhamento para vários endereços de e-mail. No entanto, isto implica criar um de cada vez os reencaminhamentos para cada destinatário.
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/)).
 
 ## Instruções
 
-Os capítulos "[criar um reencaminhamento](#redirect)" e "[criar um alias](#alias)" abrangem todas as nossas ofertas de e-mail OVHcloud, **exceto se**:
-
-- Se possui a versão histórica da oferta MXplan (para o verificar, pode consultar o quadro abaixo).
-- possui um domínio registado na OVHcloud sem uma oferta de e-mail associada.
-
-Para estas duas exceções, só é possível o reencaminhamento. Sugerimos que consulte diretamente o capítulo "[Criar um reencaminhamento ou um alias numa oferta MX Plan histórica ou num domínio sem oferta de e-mail](#mxplanlegacy)".
+> [!warning]
+>
+> Os capítulos "[criar um reencaminhamento](#redirect)" e "[criar um alias](#alias)" abrangem todas as nossas ofertas de e-mail OVHcloud, **exceto se**:
+>
+> - Se possui a versão histórica da oferta MXplan (para o verificar, pode consultar o quadro abaixo).
+> - possui um domínio registado na OVHcloud sem uma oferta de e-mail associada.
+>
+> Para estas duas exceções, só é possível o reencaminhamento. Sugerimos que consulte diretamente o capítulo "[Criar um reencaminhamento ou um alias numa oferta MX Plan histórica ou num domínio sem oferta de e-mail](#mxplanlegacy)".
+>
 
 >
 > Consoante a data de ativação da sua oferta MXplan ou se [esta foi migrada recentemente](https://www.ovhcloud.com/pt/web-hosting/mxplan-migration/), é possível que disponha da versão histórica ou da nova versão da oferta. Antes de prosseguir, deve identificar esta última.<br> 
 >
 >
-> Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na parte `Web Cloud`{.action}. Clique em `Emails`{.action} e escolha o nome do serviço MX Plan em causa. Continue a ler em função da versão que possui:<br>
+> Para isso, aceda à [Área de Cliente OVHcloud](/links/manager), na parte `Web Cloud`{.action}. Clique em `Emails`{.action} e escolha o nome do serviço MX Plan em causa. Continue a ler em função da versão que possui:<br>
 >
 > |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 > |---|---|
@@ -77,7 +97,7 @@ Para estas duas exceções, só é possível o reencaminhamento. Sugerimos que c
 
 A gestão dos reencaminhamentos faz-se não através da Área de Cliente, mas diretamente através do webmail do endereço de e-mail em questão.
 
-Vá ao endereço <https://www.ovhcloud.com/pt/mail/>. Introduza o **endereço de e-mail** e a **palavra-passe**.
+Aceda ao [webmail](/links/web/email) . Introduza **o endereço de correio eletrónico** e **a palavra-passe** para iniciar sessão.
 
 ![emails](images/webmail.png){.thumbnail}
 
@@ -88,7 +108,7 @@ Siga os passos descritos clicando sucessivamente em cada separador abaixo:
 > [!tabs]
 > **Etapa 1**
 >>
->> Uma vez ligado ao seu endereço de e-mail através de [webmail](https://www.ovhcloud.com/pt/mail/), clique na roda dentada no canto superior direito e, a seguir, em `opções`{.action}.<br><br>
+>> Uma vez ligado ao seu endereço de e-mail através de [webmail](/links/web/email), clique na roda dentada no canto superior direito e, a seguir, em `Opções`{.action}.<br><br>
 >> ![e-mails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etapa 2**
@@ -105,26 +125,47 @@ Siga os passos descritos clicando sucessivamente em cada separador abaixo:
 >>
 >> **Nome**: defina o nome do seu reencaminhamento. <br>
 >> **Quando a mensagem chega e preenche todas estas condições**: se o reencaminhamento se aplicar a todas as mensagens, selecione `[Aplicar a todas as mensagens]`{.action}.<br><br>
->>![emails](images/emails-all-04.png){.thumbnail .w-640}<br><br>
+>> ![emails](images/emails-all-04.png){.thumbnail .w-640}<br><br>
 >>
 > **Etapa 5**
 >>
 >> **Efetuar todas as seguintes** operações: é aqui que aplica o reencaminhamento, selecione `Transferir, reencaminhar ou enviar`{.action} e, a seguir, `Reencaminhar o e-mail para...`{.action}.<br><br>
->>![emails](images/emails-all-05.png){.thumbnail .w-640}<br><br>
+>> ![emails](images/emails-all-05.png){.thumbnail .w-640}<br><br>
 >>
 > **Etapa 6**
 >>
 >> De seguida, introduza o endereço para o qual deseja reencaminhar o e-mail para "**Reencaminhar o e-mail para...**" e clique em `Guardar`{.action}. Finalmente, clique em `OK`{.action} (ícone de disquete) para finalizar o seu reencaminhamento.<br><br>
->>![emails](images/emails-all-06.png){.thumbnail .w-640}<br><br>
+>> ![emails](images/emails-all-06.png){.thumbnail .w-640}<br><br>
 >>
 
 > [!primary]
 > Para aplicar um **reencaminhamento simples** (ver [esquema 1](#diagram) no início deste manual), adicione uma regra suplementar ao seu **reencaminhamento com cópia local** a partir desta janela. Clique em `Adicionar uma ação`{.action} (quadro 1), depois em `Migrar, copiar ou suprimir`{.action} e, por fim, clique em `suprimir a mensagem`{.action}. Esta regra envia os e-mails diretamente para o lixo depois de ter reencaminhado as mensagens para o endereço final.<br><br>
 > ![e-mails](images/emails-all-07.png){.thumbnail .w-640}
 
+### Eliminar um reencaminhamento
+
+Siga os passos descritos, clicando sucessivamente em cada separador abaixo:
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Depois de aceder ao endereço de e-mail através do [webmail](https://www.ovhcloud.com/fr/mail/), clique na roda dentada no canto superior direito e, a seguir, em Opções`{.action}.<br><br>>
+>> ![emails](images/emails-all-01.png){.thumbnail}<br>
+>>
+> **Etapa 2**
+>> Na janela **Options**, na coluna da esquerda, aceda à categoria **Tratamento automático** na secção **Mail** e clique em `Regras da caixa de entrada e de arrumação`{.action}. <br><br>
+>> ![emails](images/owa-redirect-del-01.png){.thumbnail}<br><br>
+>> Encontrará a janela que lhe permite gerir os seus reencaminhamentos e filtros.<br>
+>>
+> **Etapa 3**
+>>
+>> Na janela de gestão das **Regras da caixa de entrada**, clique no reencaminhamento que pretende eliminar e este deverá ser realçado. De seguida, clique no ícone da lixeira<br><br>
+>> ![emails](images/owa-redirect-del-02.png){.thumbnail}<br><br>
+>>
+
 ### Criar um alias <a name="alias"></a>
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e dirija-se à secção `Web Cloud`{.action}. De seguida, selecione o menu em função da sua oferta de e-mail:
+Aceda à [Área de Cliente OVHcloud](/links/manager) e dirija-se à secção `Web Cloud`{.action}. De seguida, selecione o menu em função da sua oferta de e-mail:
 
 - **Exchange**: na `Microsoft`{.action}, depois em `Exchange`{.action} e selecione a plataforma em causa. Clique no separador `Contas de e-mail`{.action}.
 
@@ -155,7 +196,7 @@ Para adicionar um alias à sua conta de e-mail, siga os passos descritos clicand
 >> Clique em `Adicionar um alias`{.action} e introduza o endereço que escolheu para o seu alias e valide a sua escolha.<br><br>
 >> ![emails](images/email-alias03.png){.thumbnail}<br>
 
-#### Eliminar um alias
+### Eliminar um alias
 
 No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} à direita do endereço de e-mail em questão. De seguida, clique em `Configurar os alias`{.action} (ou `Gerir os alias`{.action}).
 
@@ -163,11 +204,17 @@ Clique no botão `...`{.action} à direita do alias em causa, no menu de gestão
 
 ![emails](images/email-alias04.png){.thumbnail}
 
-#### Criar um reencaminhamento ou um alias numa oferta MX Plan histórica ou num nome de domínio sem oferta de e-mail <a name="mxplanlegacy"></a>
+### Criar um reencaminhamento ou um alias numa oferta MX Plan histórica ou num nome de domínio sem oferta de e-mail <a name="mxplanlegacy"></a>
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e dirija-se à secção `Web Cloud`. Dirija-se à secção `Emails`{.action}:
+Aceda à Área de [Cliente OVHcloud](/links/manager) e dirija-se à secção `Web Cloud`. Dirija-se à secção `Emails`{.action}:
 
-O método para criar um alias ou um reencaminhamento é estritamente o mesmo. Siga os passos descritos clicando sucessivamente em cada separador abaixo:
+> [!warning]
+>
+> - O método para criar um alias ou criar um reencaminhamento é rigorosamente o mesmo.
+> - É possível criar um máximo de 2000 alias e reencaminhamentos, incluindo cópias locais.
+>
+
+Siga os passos descritos clicando sucessivamente em cada separador abaixo:
 
 > [!tabs]
 > **Etapa 1**
@@ -192,6 +239,22 @@ O método para criar um alias ou um reencaminhamento é estritamente o mesmo. Si
 > Quando escolhe o modo de cópia "**Conservar uma cópia do e-mail na OVHcloud**", um reencaminhamento do endereço de e-mail para si próprio é automaticamente criado na lista dos reencaminhamentos, materializa esta cópia local.
 > 
 
-## Quer saber mais?
+### Eliminar um reencaminhamento ou um alias numa oferta MX Plan histórica ou um domínio sem um serviço de e-mail <a name="del-mxplanlegacy"></a>
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+No separador `E-mails`{.action}, clique em `Gestão dos reencaminhamentos`{.action} à direita da janela.
+
+Clique no botão `...`{.action} à direita do reencaminhamento em causa e, a seguir, clique em `Eliminar o reencaminhamento {.action}
+
+> [!warning]
+>
+> Não é possível modificar um reencaminhamento ou um alias. Deve eliminá-la e recriá-la.
+
+![emails](images/email-del-legacy-redirect01.png){.thumbnail}
+
+## Quer saber mais? <a name="go-further"></a>
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+
+Fale com nossa [comunidade de utilizadores](https://community.ovh.com/en/).

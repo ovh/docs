@@ -135,9 +135,9 @@ public-cloud-databases-mysql-tutorials: MySQL - Tutoriels
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-postgresql-guides: PostgreSQL - Guides
 public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutoriels
-public-cloud-databases-redis: Redis
-public-cloud-databases-redis-guides: Redis - Guides
-public-cloud-databases-redis-tutorials: Redis - Tutoriels
+public-cloud-databases-redis: Caching
+public-cloud-databases-redis-guides: Caching - Guides
+public-cloud-databases-redis-tutorials: Caching - Tutoriels
 public-cloud-databases-grafana: Grafana
 public-cloud-databases-grafana-guides: Grafana - Guides
 public-cloud-databases-grafana-tutorials: Grafana - Tutoriels
@@ -204,7 +204,6 @@ web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-appl
 web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnostic et dépannage
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
-web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-domains: Domaines
 web-cloud-domains-api: API
 web-cloud-domains-api-frequent-tasks: Tâches courantes
@@ -232,8 +231,6 @@ web-cloud-internet-internet-access-troubleshooting: Dépanner
 web-cloud-internet-overthebox: OverTheBox
 web-cloud-internet-overthebox-advanced-setup: Configuration avancée
 web-cloud-internet-overthebox-getting-started: Premiers pas
-web-cloud-internet-overthebox-overthebox-intel-and-it-v1: OverTheBox Intel & IT v1
-web-cloud-internet-overthebox-overthebox-plus-and-it-v2: OverTheBox Plus & IT v2
 web-cloud-internet-overthebox-initial-setup: Configuration initiale
 web-cloud-messaging: SMS
 web-cloud-messaging-sms: SMS
@@ -354,10 +351,12 @@ manage-operate-user-getting-started: Premiers pas
 manage-operate-user-federation: Fédération d'identités
 manage-operate-iam: IAM
 manage-operate-terraform: Terraform
+manage-operate-kms: KMS
 manage-operate-observability: Observabilité
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Premiers pas
-observability-logs-data-platform-ingestion: Ingestion de vos logs 
+observability-logs-data-platform-ingestion: Ingestion de vos logs
+observability-logs-data-platform-upgrade: Mise à jour 
 observability-logs-data-platform-visualizing-querying-exploiting: Visualisation, requête et exploitation de vos logs
 observability-logs-data-platform-opensearch-index: Index OpenSearch as-a-service 
 observability-logs-data-platform-security-conformity: Sécurité et conformité

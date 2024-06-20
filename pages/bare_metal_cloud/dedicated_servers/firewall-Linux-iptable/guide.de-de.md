@@ -1,7 +1,7 @@
 ---
 title: Konfiguration der Linux Firewall mit iptables
 excerpt: Erfahren Sie hier, wie Sie einen Server mit iptables sichern
-updated: 2022-10-18
+updated: 2024-06-03
 ---
 
 > [!primary]
@@ -55,9 +55,18 @@ Weitere Informationen finden Sie in unserer [Anleitung zur Sicherung eines Dedic
 sudo apt-get install iptables
 ```
 
-Das folgende Beispiel des Outputs in Ubuntu bestätigt, dass die neueste Version von *iptables* bereits vorhanden ist:
+Um sicherzustellen, dass Ihre *iptables*-Regeln nach dem Neustart persistent sind, installieren Sie das Paket *iptables-persistent* mit dem folgenden Befehl:
 
-![iptables-version](images/step2-version-iptables.PNG){.thumbnail}
+```bash
+sudo apt-get install iptables-persistent
+```
+
+Sobald dieses Paket installiert ist, wird der *iptables*-Ordner zwei Dateien für die IPV4- und IPV6-Regeln enthalten:
+
+```bash
+sudo /etc/iptables/rules.v4
+sudo /etc/iptables/rules.v6
+```
 
 Ein *iptables*-Befehl ist im Allgemeinen folgendermaßen aufgebaut:
 
@@ -210,11 +219,20 @@ Ersetzen Sie `Nummer` mit der Zeilennummer, die Sie löschen möchten.
 Beim Neustart des Systems werden Regeln, die Sie für *iptables* erstellt haben, nicht beibehalten.
 Jedes Mal, wenn Sie *iptables* unter Linux konfigurieren, greifen alle von Ihnen vorgenommenen Änderungen nur bis zum nächsten Neustart.
 
-Um die Regeln in auf Ubuntu basierenden Systemen zu speichern, geben Sie folgenden Befehl ein:
+Um die Regeln auf Ubuntu-basierten Systemen zu sichern, müssen Sie sich zunächst als Benutzer root mit dem Befehl `sudo su` anmelden:
 
 ```bash
-sudo -s iptables-save -c
+ubuntu@server:~$ sudo su
+root@server:/home/ubuntu#
 ```
+
+Führen Sie dann den folgenden Befehl aus: 
+
+```bash
+iptables-save > /etc/iptables/rules.v4
+```
+
+Dadurch werden die Regeln direkt im IPV4-Ordner gespeichert.
 
 Beim nächsten Start Ihres Systems lädt *iptables* automatisch die Firewall-Regeln.
 

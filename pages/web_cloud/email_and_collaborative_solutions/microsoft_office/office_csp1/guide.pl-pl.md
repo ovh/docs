@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie grupą licencji Microsoft 365 OVHcloud
 excerpt: Dowiedz się, jak zamówić licencję Microsoft 365 i zarządzać nią w Panelu klienta OVHcloud.
-updated: 2021-09-09
+updated: 2024-03-27
 ---
 
 > [!primary]
@@ -29,9 +29,9 @@ Oto lista programów zawartych w pakiecie:
 
 ### Zamów licencję
 
-Przejdź na naszą stronę [OVHcloud.com](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/){.external} i wybierz sekcję "Narzędzia współpracy" w sekcji "Web Cloud".
+Przejdź do strony biznesowej [Microsoft 365 OVHcloud](https://www.ovh.pl/office-365-business){.external} i wybierz rubrykę `Microsoft`{.action} w sekcji `Web Cloud`{.action}.
 
-Licencję możesz również zamówić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Po zalogowaniu wybierz `Web Cloud`{.action} na górnym pasku, następnie kliknij przycisk `Zamów`{.action} i `o365`{.action}.
+Licencję możesz również zamówić w panelu [Panel klienta OVHcloud](/links/manager). Po zalogowaniu wybierz `Web Cloud`{.action} w górnym pasku, następnie kliknij przycisk `Zamów`{.action} i `O365`{.action}.
 
 - Wybierz jedną z dostępnych ofert: Apps for business i Apps for entreprise.
 - Określ częstotliwość odnawiania grupy licencji.
@@ -41,7 +41,7 @@ Zostaniesz przekierowany do strony zamówienia, w celu zatwierdzenia i uregulowa
 
 ### Włącz licencję
 
-Po zamówieniu licencji należy ją aktywować w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).W sekcji `Web Cloud`{.action} kliknij `Microsoft`{.action}, następnie `Office`{.action} i wybierz odpowiednią grupę licencji.
+Po zamówieniu licencji należy ją aktywować w [Panelu klienta OVHcloud](/links/manager). W sekcji `Web Cloud` kliknij `Microsoft`{.action}, następnie `Microsoft 365`{.action} i wybierz odpowiednią grupę licencji.
 
 Kliknij przycisk `...`{.action} przed licencją, a następnie `Edytuj konto`{.action}.
 
@@ -51,9 +51,9 @@ Wpisz informacje dotyczące użytkownika licencji, kliknij `Dalej`{.action}, a n
 
 ![emails](images/Outlook-cps1-02.png){.thumbnail}
 
-### Zainstaluj dodatek Microsoft 365 na Twoim komputerze
+### Zainstaluj dodatek Microsoft 365 na Twoim komputerze <a name="install365"></a>
 
-Po aktywacji licencji otrzymasz e-mail na adres e-mail do kontaktu Twojego konta OVHcloud. Możesz odnaleźć ten e-mail w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), klikając Twój profil w prawym górnym rogu, a następnie `E-maile usługi`{.action} w sekcji `Skróty`.
+Po aktywacji licencji otrzymasz wiadomość e-mail na adres e-mail podany na Twoim koncie OVHcloud. E-mail ten możesz również znaleźć w [Panelu klienta OVHcloud](/links/manager), klikając Twój profil w prawym górnym rogu, a następnie `E-maile dotyczące usługi`{.action} w sekcji `Skróty`.
 
 E-mail zawiera informacje niezbędne do pobrania i instalacji pakietu Microsoft 365, **a mianowicie adres e-mail aktywacyjny** oraz **hasło**.
 
@@ -69,14 +69,15 @@ Przejdź do strony <https://portal.office.com/> i zaloguj się **za pomocą adre
 
 ![emails](images/Outlook-cps1-04.png){.thumbnail}
 
-> [!primary]
->
-> Użytkownik może zainstalować pakiet Microsoft 365 na 5 maszynach na Windows lub macOS, na 5 tabletach i 5 smartfonach.
->
+#### Instalacja pakietu 365 na kilku maszynach
+
+Użytkownik może zainstalować licencję Microsoft 365 na **5 komputerach z systemem Windows i macOS**, **5 tabletach** i **5 smartphone'ach**. Oznacza to łącznie **15 urządzeń** dla jednej licencji. Wszystkie te urządzenia muszą należeć do posiadacza licencji.
+
+Aby zainstalować licencję na kilku maszynach, należy wykonać reprodukcję [poprzedniego etapu](#install365) *na każdym urządzeniu* i upewnić się, że każde urządzenie jest zarządzane *przez tego samego użytkownika*.
 
 ### Dodaj licencję do istniejącej grupy
 
-Jeśli chcesz dodać jedną lub więcej licencji do istniejącej grupy licencji, możesz to zrobić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W sekcji `Web Cloud`{.action} kliknij `Microsoft`{.action}, następnie `Office`{.action} i wybierz odpowiednią grupę licencji.
+Jeśli chcesz dodać jedną lub więcej licencji do istniejącej grupy licencji, możesz to zrobić w [Panelu klienta OVHcloud](/links/manager). W sekcji `Web Cloud` kliknij `Microsoft`{.action}, następnie `Microsoft 365`{.action} i wybierz odpowiednią grupę licencji.
 
 Kliknij przycisk `Zamów więcej licencji`{.action} po prawej stronie. Podaj liczbę i rodzaj licencji, które chcesz zamówić.
 
@@ -91,14 +92,16 @@ W zakładce `Licencje`{.action} grupy licencji kliknij przycisk `...`{.action} p
 ![e-maile](images/Outlook-cps1-06.png){.thumbnail}
 
 > [!primary]
+>
 > Zasoby wykorzystane w bieżącym miesiącu zostaną zafakturowane na koniec bieżącego miesiąca.
 
 #### Rezygnacja z grupy licencji
 
-Aby zrezygnować z grupy licencji Microsoft Office 365 CSP1, kliknij Twoją nazwę w prawym górnym rogu Panelu klienta OVHcloud, a następnie przycisk `Zarządzanie usługami`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie grupy licencji do rezygnacji, następnie kliknij `Zrezygnuj`{.action}.<br>
-Podaj przyczyny rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
+Aby zrezygnować z grupy licencji Microsoft Office 365 CSP1, kliknij swoją nazwę w prawym górnym rogu Panelu klienta OVHcloud, a następnie przycisk `Zarządzanie usługami`{.action}. Następnie kliknij przycisk`...`{.action} po prawej stronie grupy licencji, z którą chcesz zrezygnować, po czym kliknij `Rezygnacja`{.action}.<br>
+Podaj powody złożenia wniosku o rezygnację z usługi i kliknij przycisk `Zatwierdź`{.action}.
 
 > [!primary]
+>
 > Zasoby wykorzystane w bieżącym miesiącu zostaną zafakturowane na koniec bieżącego miesiąca.
 
 ## Sprawdź również

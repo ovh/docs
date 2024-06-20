@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2024-01-31
+updated: 2024-06-11
 ---
 
 ## Objectif
@@ -113,6 +113,18 @@ aws s3 ls
 
 ```bash
 aws s3 cp /datas/test1 s3://<bucket_name>
+```
+
+> [!primary]
+>
+> La commande `aws s3 cp` utilisera STANDARD comme classe de stockage par défaut pour l'upload d'objets.
+> Pour stocker des objets dans le niveau High Performance, utilisez plutôt la commande `aws s3api put-object`, car `aws s3 cp` ne prend pas en charge la classe de stockage EXPRESS_ONEZONE utilisée pour mapper le niveau High Performance.
+> Pour en savoir plus sur le mappage des classes de stockage entre les niveaux de stockage OVHcloud et les classes de stockage AWS, vous pouvez consulter notre documentation [ici](/pages/storage_and_backup/object_storage/s3_location).
+>
+
+```bash
+# upload d'un objet dans le niveau High Performance
+aws s3api put-object --bucket <bucket_name> --key <object_name> --body /datas/test1 --storage-class EXPRESS_ONEZONE
 ```
 
 **Par défaut, les objets prennent le nom des fichiers mais ils peuvent être renommés**

@@ -1,5 +1,5 @@
 ---
-title: Replacing an SSH key pair
+title: How to replace an SSH key pair
 excerpt: Find out how restore server access by replacing an SSH key pair with a new one in case your private key is lost
 updated: 2024-04-04
 ---
@@ -58,7 +58,7 @@ When you have access to your files, open the "authorized_keys" file concerned wi
 nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Copy and paste your new public key (created in step 2) into the file. It should look similar to the following example:
+Copy and paste your new public key (created in step 1) into the file. It should look similar to the following example:
 
 ```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666

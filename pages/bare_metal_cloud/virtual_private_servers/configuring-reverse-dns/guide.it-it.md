@@ -1,7 +1,7 @@
 ---
 title: "Configura il reverse DNS di un VPS"
 excerpt: Come impostare la risoluzione reverse DNS
-updated: 2023-01-05
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -26,15 +26,17 @@ Configurare la risoluzione **Reverse DNS** di un VPS è particolarmente utile pe
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}.
 
-La tabella di questa pagina contiene i tuoi servizi compatibili. L'ID del tuo VPS può essere filtrato utilizzando il menu a tendina **Service**.
+Il menu a tendina sotto **I miei indirizzi IP pubblici e servizi associati** permette di filtrare i tuoi servizi per categoria.
 
-![Reverse DNS](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/filteripvps.png){.thumbnail}
 
 Clicca sui tre puntini `...`{.action} nella riga dell'indirizzo IP in questione e seleziona `Modifica il reverse`{.action}.
 
-![Reverse DNS](images/reversecp02.png){.thumbnail}
+![Reverse DNS](images/modifyreverse.png){.thumbnail}
 
 Nella nuova finestra, inserisci il reverse e clicca su `Conferma`{.action}.
+
+![Reverse DNS](images/enterreverse.png){.thumbnail}
 
 Potrai anche modificare il reverse direttamente tramite l'icona della colonna **Reverse** della tabella.
 
@@ -47,4 +49,4 @@ Se la modifica non funziona come previsto, verifica che il record `A` sia config
 
 [Iniziare a utilizzare un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

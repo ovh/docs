@@ -15,7 +15,7 @@ La fonctionnalité Click2Call (ou « appel en un clic ») permet de mettre en re
 - Disposer d’une ligne SIP possédant un [forfait compatible](/links/telecom/telephonie-services-inclus){.external} avec la fonctionnalité Click2Call.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 
-![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 

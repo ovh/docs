@@ -1,7 +1,7 @@
 ---
 title: 'Modyfikacja strefy DNS'
 excerpt: 'Dowiedz się, jak edytować strefę DNS w Panelu klienta'
-updated: 2024-04-12
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -72,7 +72,7 @@ Pojawi się tabela wyszczególniająca rekord DNS przypisany do Twojej domeny w 
 
 Poznanie poszczególnych rekordów będzie pomocne w lepszym zrozumieniu zmian, które wprowadzisz w strefie DNS Twojej domeny. Zapraszamy do zapoznania się z poniższą listą. Zawiera ona cele i specyfikę każdej rejestracji.
 
-#### Zapisy wskazania
+#### Zapisy wskazania <a name="pointer-records"></a>
 
 Wybierz odpowiedni rekord, klikając każdą z następujących zakładek.
 
@@ -137,7 +137,7 @@ Wybierz odpowiedni rekord, klikając każdą z następujących zakładek.
 >> > Nie zmieniaj za pomocą przycisku `Modyfikacja w trybie tekstowym`{.action} rekordów NS strefy DNS na serwery DNS zewnętrzne OVHcloud. Strefa DNS działa **tylko** z serwerami DNS OVHcloud.
 >> >
 
-#### Zapisy e-mail
+#### Zapisy e-mail <a name="mail-records"></a>
 
 Wybierz odpowiedni rekord, klikając każdą z następujących zakładek.
 
@@ -163,7 +163,7 @@ Wybierz odpowiedni rekord, klikając każdą z następujących zakładek.
 >> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
 >> Przyczynia się do uwierzytelniania e-maili przy użyciu SPF i/lub DKIM. Wartość ta zostanie Ci przyznana przez dostawcę poczty e-mail (jeśli taka funkcja jest oferowana przez dostawcę). Będzie ona przynajmniej powiązana z rekordem SPF lub DKIM.
 
-#### Rozszerzone wpisy
+#### Rozszerzone wpisy <a name="extented-records"></a>
 
 Select the record you want by clicking each of the following tabs.
 
@@ -188,9 +188,10 @@ Select the record you want by clicking each of the following tabs.
 >> Umożliwia wyświetlenie listy organizacji upoważnionych do wydawania certyfikatów SSL dla domeny. 
 >>
 >> > [!warning]
->> > 
->> > Jeśli używasz certyfikatu SSL Let's Encrypt z Twoją domeną na hostingu OVHcloud i korzystasz z rekordu CAA, ten ostatni zapobiegnie regeneracji certyfikatu SSL Let's Encrypt.
 >> >
+>> > Jeśli konfigurujesz wpis CAA dla domeny, ta konfiguracja będzie dotyczyć również **wszystkich subdomen** dla tej samej domeny.
+>> >
+>> > Jeśli używasz certyfikatu SSL Let's Encrypt dla swojej domeny na hostingu www OVHcloud i używasz rekordu CAA, ten ostatni uniemożliwi odnowienie certyfikatu SSL Let's Encrypt.
 >>
 > **NAPTR**
 >> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
@@ -260,27 +261,43 @@ Możesz usunąć kilka rekordów za jednym razem, zaznaczając je w lewej częś
 
 #### Zresetuj strefę DNS
 
-Zresetuj strefę DNS:
+Zresetowanie strefy DNS pozwala na przywrócenie minimalnej konfiguracji z domyślnymi wpisami OVHcloud lub wpisami usług. Możesz również wskazać swoją domenę na niestandardowy hosting WWW oraz usługi e-mail.
 
-- powrócić do konfiguracji minimalnej z domyślnymi wpisami OVHcloud.
-- powrócić do pustej strefy DNS (z wyjątkiem pól NS), aby zdefiniować kolejną konfigurację ręczną.
+> [!alert]
+>
+> Przed zresetowaniem strefy DNS upewnij się, że Twoja domena nie jest powiązana z usługami, które są obecnie używane, takimi jak strona WWW lub konta e-mail.
+>
 
-W zakładce `Strefa DNS`{.action} kliknij `Zresetuj strefę DNS`{.action}, a następnie postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlają.
+W zakładce `Strefa DNS`{.action} kliknij `Zresetuj strefę DNS`{.action}, następnie postępuj zgodnie z 2 wyświetlającymi się instrukcjami.
 
 ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
-Możesz wybrać:
+**Etap 1**
 
-- `Tak, chcę zresetować strefę DNS z minimalnymi` wpisami. Ta opcja pozwala na przekierowanie domeny i usługi e-mail na:
-    - jedną z usług WWW Cloud dostępnych w Panelu klienta OVHcloud.
-    - usługę przekierowania OVHcloud, dostępną w zakładce `Przekierowanie`{.action} Twojej domeny w sekcjach `Domeny`{.action} i `Emaile`{.action}.
-    - funkcja `Spersonalizowana`. Wpisz pole `A` i/lub `MX`.
-- `Nie, ale chcę zresetować strefę DNS`. Strefa DNS zostanie wówczas pusta, z wyjątkiem wpisów NS, które zostaną automatycznie przypisane do serwerów DNS OVHcloud w strefie DNS.
+Odpowiedz na pytanie `Czy chcesz włączyć wpisy minimalne podczas resetowania strefy DNS?`. Ustanowienie minimalnych wpisów w strefie DNS zapobiega sytuacji, w której zapytanie do nazwy domeny nie doprowadzi do błędu.
 
-> [!primary]
->
-> Przed zresetowaniem strefy DNS upewnij się, że Twoja domena nie jest przypisana do usług w trakcie korzystania, takich jak strona WWW lub konta e-mail.
->
+- `Tak, chcę zresetować strefę DNS z minimalnymi wpisami`
+- `Nie, ale chcę zresetować strefę DNS`
+
+**Etap 2**
+
+Niezależnie od tego, jaki wybierzesz w etapie 1, podczas wyszukiwania nazwy domeny należy zdefiniować odpowiedź, aby uniknąć odpowiedzi DNS z błędem.
+
+Wybierz obie opcje, klikając poniższe zakładki.
+
+> [!tabs]
+> **Adres IP hostingu**
+>> - `Przekierowanie`: Twoja domena będzie wskazywać na serwer przekierowania OVHcloud. Pomaga to w wyświetleniu strony głównej OVHcloud, co pozwala uniknąć błędu DNS.<br>
+>> - `Hosting WWW OVHcloud`: Twoja domena będzie wskazywać na adres IP hostingu powiązanego z domeną <br>
+>> - `Niestandardowy`: ustaw wartość IPv4 ([rekord A](#pointer-records)) hostingu, który chcesz wskazywać. <br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
+> **Adres email**
+>> - `Przekierowanie`: Twoja domena będzie wskazywać na serwery przekierowań email. Ten wybór. Jest to szczególnie przydatne, jeśli nie masz żadnej oferty e-mail, ale chcesz, aby e-maile były wysyłane na jeden lub więcej adresów e-mail poza Twoją domeną.<br>
+>> - `Serwer E-mail OVHcloud`: do ustawienia, gdy posiadasz ofertę e-mail na hostingu.<br>
+>> - `Niestandardowy`: ustaw adres URL i priorytet serwera e-mail ([rekord MX](#mail-records)), który chcesz wskazać.<br><br>
+>> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>>
 
 ### Czas propagacji
 

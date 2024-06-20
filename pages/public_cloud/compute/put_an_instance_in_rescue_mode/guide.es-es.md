@@ -1,7 +1,7 @@
 ---
-title: 'Poner una instancia en modo de rescate'
-excerpt: 'Poner una instancia en modo de rescate'
-updated: 2023-01-04
+title: "Cómo activar el modo de rescate en una instancia Public Cloud"
+excerpt: "Cómo activar y utilizar el modo de rescate de OVHcloud para una instancia de Public Cloud"
+updated: 2024-06-03
 ---
 
 > [!primary]
@@ -14,13 +14,12 @@ Si su instancia no se ha configurado correctamente o si ha perdido su clave SSH,
 
 En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia o recuperar sus datos. 
 
-**Esta guía muestra cómo poner una instancia en modo de rescate**
+**Esta guía explica cómo reiniciar una instancia de Public Cloud de OVHcloud en modo de rescate y cómo acceder a los archivos.**
 
 ## Requisitos
 
-* Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud
-* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
-* Tener acceso a la instancia por SSH como administrador (usuario raíz)
+- Tener una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
+- Tener acceso al [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
@@ -30,49 +29,64 @@ En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia 
 
 ### Activar el modo de rescate
 
-En primer lugar, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} para acceder al panel de control y, seguidamente, haga clic en el menú `«Public Cloud»`{.action}.
+En primer lugar, inicie sesión en el [área de cliente de OVHcloud](/links/manager) para acceder al panel de control y, seguidamente, haga clic en el menú `Public Cloud`{.action}.
 
 A continuación, seleccione su proyecto de Public Cloud en el menú lateral a la izquierda de la pantalla y acceda a «Instancias».
 
-A continuación, haga clic en los 3 puntos a la derecha de la instancia y seleccione `«Reiniciar en modo de rescate»`{.action}
+A continuación, haga clic en los 3 puntos a la derecha de la instancia y seleccione `Reiniciar en modo de rescate`{.action}.
 
 ![control panel](images/rescue2022.png){.thumbnail}
 
-Entonces verá el cuadro de diálogo «Reiniciar en modo de rescate». Haga clic en la lista desplegable para seleccionar la distribución de Linux que desea utilizar en el modo de rescate y, a continuación, en el botón `«Reiniciar»`{.action}.
+Entonces verá el cuadro de diálogo «Reiniciar en modo de rescate». Haga clic en la lista desplegable para seleccionar la distribución de Linux que desea utilizar en el modo de rescate y, a continuación, en el botón `Reiniciar`{.action}.
 
 ![control panel](images/rescue2.png){.thumbnail}
 
-Una vez que la instancia se haya reiniciado en modo de rescate, se mostrará un panel informativo con los métodos de acceso disponibles. La **contraseña del modo de rescate** temporal solo se mostrará en la consola VNC. Haga clic en su instancia en la tabla y acceda a la pestaña `Consola VNC`{.action} para consultarla.
+Una vez que la instancia se haya reiniciado en modo de rescate, se mostrará un panel informativo con los métodos de acceso disponibles.
 
 ![control panel](images/rescuedata.png){.thumbnail}
+
+La **contraseña del modo de rescate** temporal solo se mostrará en la consola VNC. Haga clic en su instancia en la tabla y acceda a la pestaña `Consola VNC`{.action} para consultarla.
+
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Acceso a sus datos
 
 Una vez activado el modo de rescate, los datos de su instancia se adjuntarán como un disco adicional. Ahora, deberá instalarlo realizando los pasos siguientes.
 
-En primer lugar, cree una conexión SSH a su instancia. Una vez conectado, verifique los discos disponibles con este comando:
+En primer lugar, cree una [conexión SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) a su instancia. Una vez conectado, verifique los discos disponibles con este comando:
 
-```
-root@instance:/home/admin# lsblk
-
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 253:0 0 1G 0 disk
-└─vda1 253:1 0 1023M 0 part /
-vdb 253:16 0 10G 0 disk
-└─vdb1 253:17 0 10G 0 part
+```bash
+lsblk
 ```
 
-A continuación, instale la partición:
+El resultado será similar al siguiente ejemplo de salida:
 
-```
-root@instance:/home/admin# mount /dev/vdb1 /mnt
+```console
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda       8:0    0  2.9G  0 disk
+└─sda1    8:1    0  2.9G  0 part /
+sdb       8:16   0   25G  0 disk
+├─sdb1    8:17   0   24G  0 part
+├─sdb14   8:30   0    4M  0 part
+├─sdb15   8:31   0  106M  0 part
+└─sdb16 259:0    0  913M  0 part
 ```
 
-Podrá acceder a sus datos desde la carpeta /mnt.
+En modo rescue, `sda` es el disco en modo rescue y `sda1` es la partición de seguridad principal montada en `/`.
+
+En este ejemplo, el disco principal es `sdb` y la partición del sistema es `sdb1` (indicada por el tamaño).
+
+Monte esta partición con el siguiente comando:
+
+```bash
+mount /dev/sdb1 /mnt/
+```
+
+Podrá acceder a sus datos desde la carpeta `/mnt`.
 
 ### Desactivar el modo de rescate
 
-Una vez que haya completado sus tareas, puede desactivar el modo de rescate reiniciando normalmente su instancia. Para hacerlo, haga clic en la flecha desplegable de su instancia y seleccione `«Salir del modo de rescate»`{.action}.
+Una vez que haya completado sus tareas, puede desactivar el modo de rescate reiniciando normalmente su instancia. Para hacerlo, haga clic en la flecha desplegable de su instancia y seleccione `Salir del modo de rescate`{.action}.
 
 ![control panel](images/rescueexit2022.png){.thumbnail}
 
@@ -84,16 +98,18 @@ Una vez que haya completado sus tareas, puede desactivar el modo de rescate rein
 
 También puede activar el modo de rescate a través de la API OpenStack utilizando el siguiente comando:
 
-```
-# root@server:~# nova rescue INSTANCE_ID
+```bash
+nova rescue INSTANCE_ID
 ```
 
 Para salir del modo de rescate, utilice el siguiente comando:
 
-```
-# root@server:~# nova unrescue INSTANCE_ID
+```bash
+nova unrescue INSTANCE_ID
 ```
 
 ## Más información
+
+[Cómo sustituir un par de claves SSH en una instancia](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

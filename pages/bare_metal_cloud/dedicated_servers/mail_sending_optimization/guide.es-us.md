@@ -75,7 +75,7 @@ Si desea configurar el Registro DNS inverso  en una dirección Additional IP, ab
 
 El menú desplegable en "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categorías.
 
-![IP inversa](images/selectservice2022.png){.thumbnail}
+![IP inversa](images/filteripds.png){.thumbnail}
 
 Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Cambiar el registro inverso`{.action}:
 

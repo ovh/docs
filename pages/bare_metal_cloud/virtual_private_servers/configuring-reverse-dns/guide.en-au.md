@@ -1,7 +1,7 @@
 ---
-title: Configuring the reverse DNS of a VPS
-excerpt: Find out how to set up the reverse DNS resolution
-updated: 2023-01-05
+title: How to configure reverse DNS for a VPS
+excerpt: Find out how to set up the reverse DNS resolution of your OVHcloud VPS
+updated: 2024-06-10
 ---
 
 ## Objective
@@ -14,25 +14,25 @@ Configuring the reverse DNS resolution for a VPS is especially useful when sendi
 
 ## Requirements
 
-- A [Virtual Private Server](https://www.ovhcloud.com/en-au/vps/) in your OVHcloud account
-- A domain name with its `A` record pointing to the VPS
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
+- A domain name with its `A` record mapped to the VPS
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), switch to the `Bare Metal Cloud`{.action} section and open `IP`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), switch to the `Bare Metal Cloud`{.action} section and open `Network`{.action}. Next, click on `IP`{.action}.
 
-The drop-down menu underneath **"My public IP addresses and associated services"** allows you to filter your services according to category.
+The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category.
 
-![Reverse IP](images/selectservice2022.png){.thumbnail}
+![Reverse IP](images/filteripvps.png){.thumbnail}
 
 Click on `...`{.action} in the row of the IP address concerned and select `Modify the reverse path`{.action}.
 
-![Reverse DNS](images/reversecp01.png){.thumbnail}
+![Reverse DNS](images/modifyreverse.png){.thumbnail}
 
-In the new window, enter your reverse path and click on `Confirm`{.action}.
+In the new window, enter your reverse path and click on `Validate`{.action}.
 
-![Reverse DNS](images/reversecp02.png){.thumbnail}
+![Reverse DNS](images/enterreverse.png){.thumbnail}
 
 You can also edit the reverse path directly via the icon in the **Reverse DNS** column of the table.
 
@@ -40,13 +40,13 @@ You can also edit the reverse path directly via the icon in the **Reverse DNS** 
 >
 If the modification does not work as expected, verify that the `A` record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited the `A` record.
 >
-If the domain name is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, you can refer to [this guide](/pages/web_cloud/domains/dns_zone_edit).
+If the domain name is managed by OVHcloud as its registrar **and** it uses OVHcloud DNS servers, you can refer to [this guide](/pages/web_cloud/domains/dns_zone_edit).
 >
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
+[How to get started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+[How to edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

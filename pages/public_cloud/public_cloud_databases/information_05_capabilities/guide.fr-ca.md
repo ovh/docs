@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Capacités et Limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases
-updated: 2024-05-15
+updated: 2024-06-12
 ---
 
 ## Public Cloud Databases
@@ -30,10 +30,10 @@ See our [PostgreSQL Capabilities and limitations](/pages/public_cloud/public_clo
 MongoDB is a fully managed and scalable document-oriented database management system which does not require a predefined data schema.<br>
 See our [MongoDB Capabilities and limitations](/pages/public_cloud/public_cloud_databases/mongodb_01_concept_capabilities) guide.
 
-### Redis
+### Caching
 
-Redis is an open-source fully managed in-memory NoSQL database. It helps you store and access data quickly and efficiently.<br>
-See our [Redis Capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) guide.
+Caching is fully managed in-memory NoSQL database based on the Redis® open source software. It helps you store and access data quickly and efficiently.<br>
+See our [Caching Capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) guide.
 
 ### M3db
 
@@ -53,7 +53,7 @@ See our [Cassandra Capabilities and limitations](/pages/public_cloud/public_clou
 
 ## Feature Availability
 
-| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Redis | M3db | Opensearch | Cassandra |
+| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Caching | M3db | Opensearch | Cassandra |
 |--------------------------------------------------------------------------------------------------------------|-------|------------|------------------|-------|------|------------|-----------|
 | End-to-end security ([more information](/pages/public_cloud/public_cloud_databases/information_01_security_overview))         | ✓     | ✓          | ✓                | ✓     | ✓    | ✓          | ✓         |
 | Automatic updates and one click upgrade                                                                      | ✓     | ✓          | ✓                | ✓     | ✓    | ✓          | ✓         |

@@ -49,7 +49,7 @@ Po uzyskaniu dostępu do plików otwórz odpowiedni plik "authorized_keys" w edy
 nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Skopiuj i wklej nowy klucz publiczny (utworzony w etapie 2) do pliku. Zawartość pliku powinna wyglądać jak następujący przykład:
+Skopiuj i wklej nowy klucz publiczny (utworzony w etapie 1) do pliku. Zawartość pliku powinna wyglądać jak następujący przykład:
 
 ```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666

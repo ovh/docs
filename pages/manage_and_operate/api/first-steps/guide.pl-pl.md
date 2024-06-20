@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z API OVHcloud'
 excerpt: 'Dowiedz się, jak korzystać z API OVHcloud'
-updated: 2024-02-01
+updated: 2024-06-07
 ---
 
 > [!primary]
@@ -36,9 +36,10 @@ Na stronie [API OVHcloud](https://api.ovh.com/) kliknij `Explore the OVH API`{.a
 
 Aby korzystać z API na produktach, należy zalogować się na tej stronie za pomocą identyfikatora OVHcloud.
 
-- W prawym górnym rogu kliknij `Login`{.action}. 
-- Wpisz dane dostępowe OVHcloud. 
-- Określ czas, z określeniem **Validity**, podczas którego zezwalasz na wykonywanie operacji przez API OVHcloud.
+- W lewym górnym rogu kliknij przycisk `Authentication`{.action}.
+- Następnie kliknij `Login with OVHcloud SSO`{.action}.
+- Wpisz dane dostępowe OVHcloud.
+- Kliknij przycisk `Authorize`{.action}, aby zezwolić na wywołania API z tej strony.
 
 ![API](images/login.png){.thumbnail} 
 
@@ -49,7 +50,7 @@ Aby korzystać z API na produktach, należy zalogować się na tej stronie za po
 
 #### Sprawdź produkty dostępne na API
 
-Po zalogowaniu się znajdziesz listę produktów OVHcloud wyposażonych w API. Wykaz ten jest uporządkowany alfabetycznie.
+W menu po lewej stronie znajduje się lista produktów OVHcloud, którymi można zarządzać za pomocą API.
 
 ![API](images/api-list.png){.thumbnail} 
 
@@ -57,7 +58,9 @@ Aby wyświetlić na przykład API powiązane z domenami, kliknij na **/domain** 
 
 Po kliknięciu na produkt lista API tego produktu wyświetla się poniżej. 
 
-![API](images/api-displayed.png){.thumbnail} 
+![API](images/api-displayed.png){.thumbnail}
+
+Możesz również skorzystać z przycisku znajdującego się po lewej stronie listy produktów, aby wybrać gałąź **/v1** i **/v2** API. Jeśli nie znasz zasad gałęzi API, zapoznaj się z [następującą dokumentacją dotyczącą API v2](/pages/manage_and_operate/api/apiv2).
 
 #### Uruchom API
 
@@ -109,15 +112,15 @@ Na przykład, jeśli nie chcesz zachować rekordu DNS, który dodałeś do stref
 
 ##### **Parametry API**
 
-Po kliknięciu na API w wybranej przez Ciebie sekcji **Parameters** możesz przypisać zmienne związane z aplikacją.
+Po kliknięciu na API w wybranej przez Ciebie sekcji **Request** możesz przypisać zmienne związane z aplikacją.
  
 Na przykład, aby dodać rekord TXT do strefy DNS, zoptymalizujesz następujące parametry:
 
 ![API](images/parameters.png){.thumbnail} 
  
-Po zdefiniowaniu ustawień możesz uruchomić API klikając `Execute`{.action}. 
+Po zdefiniowaniu ustawień możesz uruchomić API klikając `TRY`{.action}. 
 
-W zakładce `Result` wyświetli się raport z realizacji API.
+W zakładce `Response` wyświetli się raport z realizacji API.
 
 ![API](images/result.png){.thumbnail} 
 
