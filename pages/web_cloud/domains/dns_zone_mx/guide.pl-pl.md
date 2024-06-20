@@ -27,7 +27,7 @@ Rekord MX umożliwia powiązanie domeny z serwerem platformy e-mail. Jest to nie
 >
 > - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud w Twoim [Panelu klienta](/links/manager). Po wybraniu domeny w zakładce `Informacje ogólne`{.action} w sekcji `Serwery DNS`{.action}, jeśli pozycja `Aktywne` znajduje się pod adresem "**Serwery DNS**", korzystasz z serwerów DNS OVHcloud.
 >
-> ![email](images/dns-servers-enabled.png){.thumbnail}
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 
 ## W praktyce
 
@@ -40,7 +40,7 @@ Gdy adres **sender@otherdomain.ovh** wysyła wiadomość na adres **contact@modo
 - **(1)** odpytywanie strefy DNS domeny **mydomain.ovh** i odczytywanie rekordów **MX**.
 - **(2)** Prześlij wiadomość e-mail na adres URL odczytanego rekordu **MX**.
 
-![email](images/mx-dns-resolution.png){.thumbnail}
+![email](/pages/assets/schemas/dns/mx-dns-resolution.png){.thumbnail}
 
 Wiadomość e-mail zostanie wysłana na adres docelowy **mx0.mail.ovh.net** poprzedzony wartością **0**. Ta wartość jest nazywana priorytetem. Najniższa jest odpytywana w pierwszej kolejności, a najwyższa w ostatniej. Oznacza to, że obecność wielu rekordów może zapobiec brakowi odpowiedzi rekordu MX o najniższym priorytecie.
 
@@ -74,14 +74,14 @@ W tabeli, która się wyświetli znajdziesz konfigurację Twojej domeny OVHcloud
 W pierwszym kroku sprawdź, czy jakieś rekordy MX zostały już wcześniej dodane do konfiguracji DNS OVHcloud Twojej domeny. Pomoże Ci w tym lista filtrów znajdująca się nad tabelą Twojej strefy DNS.<br>
 Wybierz typ **MX**, a następnie potwierdź, aby wyświetlić tylko wpisy DNS MX strefy DNS. Pomóż w zrzucie ekranu poniżej.
 
-![dnsmxrecord](images/mx-entries-research.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail}
 
 - Jeśli rekordy MX już istnieją i chcesz je zmienić, kliknij przycisk `...`{.action} po prawej stronie każdego wiersza w tabeli odpowiadającego rekordowi, a następnie kliknij `Zmień rekord`{.action}.
 - Jeśli rekord MX nie jest obecny, kliknij przycisk `Dodaj rekord`{.action} po prawej stronie tabeli i wybierz `MX`{.action}. Uzupełnij wymagane informacje w zależności od wybranego rozwiązania poczty elektronicznej:
 
 **Jeśli dysponujesz rozwiązaniem e-mail OVHcloud**, zapoznaj się z informacjami podanymi w etapie "[Wiedza na temat konfiguracji MX OVHcloud](#mxovhcloud)".
 
-![dnsmxrecord](images/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
 
 Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.action}.
 

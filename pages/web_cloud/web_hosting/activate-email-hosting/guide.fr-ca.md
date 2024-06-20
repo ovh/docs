@@ -35,11 +35,11 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cli
 
 Dans le cadre `Configuration`, vous trouverez la mention `Adresses e-mails`. Cliquez sur le bouton `...`{.action} à droite puis sur `Activer la solution e-mail`{.action}.
 
-![email-activation](images/enable-email-included-webhosting.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 
 La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous souhaitez attacher vos adresses e-mail puis validez votre choix.
 
-![email-activation](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
 > Si vous souhaitez obtenir davantage de comptes e-mails inclus, nous vous invitons à commander une [offre d'hébergement web](/links/web/hosting){.external} supérieure depuis notre page commerciale.
@@ -55,7 +55,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cli
 
 Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de la mention `Adresses e-mails`, puis cliquez sur le bouton `Délier mon option e-mail`{.action}
 
-![email-activation](images/detach-email-included-webhosting.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
 
 Une offre MX adaptée vous sera proposée à l'achat. Une fois la commande réglée, vos e-mails continueront à fonctionner après suspension de l'hébergement web.
  
@@ -71,7 +71,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cli
 
 Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de la mention `Adresses e-mails`, puis cliquez sur le bouton `Résilier l'option e-mail`{.action}.
 
-![email-activation](images/cancel-email-included-webhosting.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >
