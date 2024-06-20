@@ -36,18 +36,18 @@ Weitere Informationen finden Sie in unseren Anleitungen „[Was ist ein DNS-Serv
 
 > [!warning]
 >
-> **Wir raten zur Vorsicht, wenn Sie die DNS-Server einer Domainnamen ändern.** Fehlkonfigurationen können dazu führen, dass Ihre Website nicht mehr erreichbar ist, oder dass Ihre E-Mail-Adressen keine neuen E-Mails mehr empfangen können. Im Folgenden erklären wir Ihnen die Auswirkungen von Konfigurationsänderungen, um Ihnen zu helfen, die Konsequenzen besser einzuschätzen.
+> **Wir raten zur Vorsicht, wenn Sie die DNS-Server einer Domainnamen ändern.** Fehlkonfigurationen können dazu führen, dass Ihre Website nicht mehr erreichbar ist, oder dass Ihre E-Mail-Adressen keine neuen E-Mails mehr empfangen können. Im Folgenden erklären wir die Auswirkungen von Konfigurationsänderungen, um Ihnen zu helfen, die Konsequenzen besser einzuschätzen.
 >
 
-Wenn Sie die DNS-Server Ihres Domainnamens ändern, ändern Sie dessen DNS-Konfiguration. Die neue DNS-Konfiguration ersetzt die alte und wird auf den neu hinterlegten DNS-Servern gespeichert. Technisch gesehen verwendet der Domainname dann eine neue DNS-Zone.
+Wenn Sie die DNS-Server Ihres Domainnamens ändern, ändern Sie dessen DNS-Konfiguration. Die neue DNS-Konfiguration liegt auf den neuen DNS-Servern und ersetzt die alte. Der Domainname verwendet dann eine neue DNS-Zone.
 
-Bitte beachten Sie:
+Beachten Sie:
 
-- Wenn neue DNS-Server deklariert werden (beispielsweise wenn OVHcloud DNS-Server externe ersetzen), wird die alte DNS-Konfiguration nicht automatisch in die neue repliziert. Stellen Sie sicher, dass Ihre neue DNS-Zone alle DNS-Einträge enthält, die erforderlich sind, damit die Dienste Ihres Domainnamens korrekt funktionieren (z.B. Ihre Website und Ihre E-Mail-Adressen).
+- Wenn neue DNS-Server deklariert werden (beispielsweise wenn von externen Servern zu OVHcloud DNS-Server gewechselt wird), wird die alte DNS-Konfiguration nicht automatisch in die neue repliziert. Stellen Sie sicher, dass Ihre neue DNS-Zone alle DNS-Einträge enthält, die erforderlich sind, damit die Dienste Ihres Domainnamens korrekt funktionieren (z.B. Ihre Website und Ihre E-Mail-Adressen).
 
 - Wenn Sie nur einzelne Elemente Ihrer aktuellen DNS-Konfiguration ändern möchten (also einen DNS-Eintrag), empfehlen wir stattdessen, unsere [Anleitung zur Änderung der DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) zu befolgen.
 
-- Vereinzelt haben die Registrys, die Domainendungen verwalten, besondere Anforderungen an die DNS-Server (Anzahl der Namensserver, Wert der Einträge, etc.). Überprüfen Sie im Zweifelsfall die Regeln der zuständigen Registry des Domainnamens.
+- Vereinzelt haben die Organisationen, die Domainendungen verwalten (Registrys), besondere Anforderungen an die DNS-Server (Anzahl der Server, Vorgaben für Einträge, etc.). Überprüfen Sie im Zweifelsfall die Regeln der zuständigen Registry der Domainnamen-Endung.
 
 Stellen Sie sicher, dass Ihr Domainname aufgrund der Änderungen nicht unerreichbar wird. Wenn Sie sich nicht sicher sind, kontaktieren Sie die Person, die Sie um Änderungen ersucht.
 
@@ -55,17 +55,17 @@ Stellen Sie sicher, dass Ihr Domainname aufgrund der Änderungen nicht unerreich
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus. Gehen Sie dann auf den Tab `DNS-Server`{.action}.
 
-Die angezeigte Tabelle listet die DNS-Server auf, die derzeit von OVHcloud für Ihren Domainnamen definiert sind. Es werden möglicherweise mehrere DNS-Server angezeigt. Eine Tabellenzeile entspricht dabei jeweils einem Server.
+Die Tabelle listet die DNS-Server auf, die derzeit von OVHcloud für Ihren Domainnamen definiert sind. Es werden üblicherweise mehrere DNS-Server angezeigt. Eine Tabellenzeile entspricht dabei jeweils einem Server.
 
 > [!primary]
 >
-> Wenn Sie die regulären OVHcloud DNS-Server verwenden, haben die in den Servernamen enthaltenen Nummern keinen Bezug zu den von Ihnen verwendeten Diensten. Nur die Option [DNS Anycast](/links/web/domains-options) verwendet bestimmte DNS-Server, die Ihnen automatisch zugewiesen werden. 
+> Wenn Sie die regulären OVHcloud DNS-Server verwenden, haben die in den Servernamen enthaltenen Nummern keinen Bezug zu den von Ihnen verwendeten Diensten. Nur die Option [DNS Anycast](/links/web/domains-options) verwendet spezielle DNS-Server, die automatisch zugewiesen werden. 
 
 ![dns-server](images/tab.png){.thumbnail}
 
 ### DNS-Server ändern
 
-Wenn Sie externe DNS-Server verwenden möchten, müssen die aktuellen OVHcloud Server **ersetzt** werden, anstatt sie der Konfiguration hinzuzufügen.
+Wenn Sie externe DNS-Server deklarieren möchten, müssen die aktuellen OVHcloud Server **ersetzt** werden, anstatt sie der Konfiguration hinzuzufügen.
 
 Klicken Sie rechts auf `DNS-Server ändern`{.action}.
 
@@ -73,9 +73,9 @@ Ersetzen Sie in den Textfeldern die aktuellen Werte der DNS-Server mit den Namen
 
 > [!warning]
 >
-> Achten Sie darauf, eine Gruppe von DNS-Servern nicht mit einer anderen zu mischen. 
+> Achten Sie darauf, eine Gruppe von DNS-Servergruppe nicht mit einer anderen zu mischen. 
 >
-> Zum Beispiel entsprechen *dns19.ovh.net* und *ns19.ovh.net* einer Gruppe von OVHcloud DNS-Servern; diese sind aufeinander abgestimmt und werden synchronisiert. Wenn Sie externe DNS-Server zu OVHcloud Servern hinzufügen (oder die einer anderen Gruppe), erfolgt die DNS-Auflösung zufällig unter den OVHcloud DNS-Servern und den externen DNS-Servern.
+> Zum Beispiel entsprechen *dns19.ovh.net* und *ns19.ovh.net* einer Gruppe von OVHcloud DNS-Servern; diese werden synchronisiert. Wenn Sie externe DNS-Server zu OVHcloud Servern hinzufügen (oder die einer anderen Gruppe), erfolgt die DNS-Auflösung zufällig unter den OVHcloud DNS-Servern und den externen DNS-Servern.
 >
 > Bei OVHcloud können DNS-Servergruppen anhand der in den Servernamen angegebenen Nummer identifiziert werden, zum Beispiel gehören *dns19.ovh.net* und *ns19.ovh.net* zur selben Gruppe.
 >
@@ -91,24 +91,24 @@ Wenn Sie die Server eingetragen haben, klicken Sie auf `Konfiguration anwenden`{
 
 ### Sonderfall: DNS-Server zurücksetzen 
 
-Mit dem Button `DNS-Server zurücksetzen`{.action} können Sie die aktuellen DNS-Server zurücksetzen, indem Sie diese automatisch durch die ursprünglichen OVHcloud DNS-Server ersetzen. Verwenden Sie diese Option **ausschließlich**, wenn Sie die OVHcloud DNS-Server (und die dazugehörige OVHcloud DNS-Zone) verwenden möchten. 
+Mit dem Button `DNS-Server zurücksetzen`{.action} kann die OVHcloud DNS-Konfiguration automatisch wiederhergestellt werden, indem die ursprünglich zugewiesenen OVHcloud DNS-Server eingetragen werden. Verwenden Sie diese Option **ausschließlich**, wenn Sie die OVHcloud DNS-Server (und die dazugehörige OVHcloud DNS-Zone) verwenden möchten.
 
 ![dns-server](images/reset-the-dns-servers.png){.thumbnail}
 
-Nachdem die erforderlichen Änderungen vorgenommen wurden, dauert es eine gewisse Zeit, bis diese effektiv sind. Dabei sind zwei aufeinanderfolgende Vorgänge zu beachten:
+Nachdem die Änderungen vorgenommen wurden, dauert es eine gewisse Zeit, bis diese effektiv sind. Dabei sind zwei aufeinanderfolgende Vorgänge zu beachten:
 
-- Die bei OVHcloud vorgenommene Änderung muss von der Registry, die Ihre Domainendung verwaltet, übernommen werden (z.B. der DENIC für *.de*). Sie können den Fortschritt dieser Operation in Ihrem [OVHcloud Kundencenter](/links/manager) nachverfolgen, indem Sie im Bereich `Domainnnamen`{.action} auf `Laufende Vorgänge`{.action} klicken.
+- Die bei OVHcloud vorgenommene Änderung muss von der Registry, die die Domainendung verwaltet, übernommen werden (z.B. der DENIC für *.de*). Sie können den Fortschritt dieser Operation in Ihrem [OVHcloud Kundencenter](/links/manager) nachverfolgen, indem Sie im Bereich `Domainnnamen`{.action} auf `Laufende Vorgänge`{.action} klicken.
 - Nachdem die Registry Ihrer Domainendung die Änderung angenommen hat, ist eine Propagationszeit von maximal **48 Stunden** erforderlich, bis sie voll wirksam ist.
 
 ## Weiterführende Informationen
 
-[Was ist ein DNS-Server?](/pages/web_cloud/domains/dns_zone_general_information)
+[Was ist ein DNS-Server?](/pages/web_cloud/domains/dns_server_general_information)
 
 [Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)
 
 [DNS-Einträge](/pages/web_cloud/domains/dns_zone_records)
 
-[Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
+[Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
