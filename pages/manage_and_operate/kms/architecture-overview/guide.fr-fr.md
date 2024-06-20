@@ -94,4 +94,4 @@ La sauvegarde de la base de données sera utilisée lors de la reconstruction de
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

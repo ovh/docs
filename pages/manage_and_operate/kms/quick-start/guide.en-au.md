@@ -7,7 +7,7 @@ updated: 2024-06-25
 > [!warning]
 >
 > The OVHcloud KMS is currently in beta phase. This guide may be incomplete, and will be updated during the beta period.
-> Feel free to send us feedback on the dedicated Discord channel: https://discord.gg/ovhcloud.
+> Feel free to send us feedback on the dedicated Discord channel: <https://discord.gg/ovhcloud>.
 >
 
 ## Objective
@@ -22,13 +22,16 @@ The purpose of this guide is to show you the steps you need to take to set up yo
 
 ### Ordering your SMS
 
-You can order a KMS via the [OVHcloud Control Panel](/links/manager).<br>
 Each KMS is associated with a region, so the keys stored in that region are guaranteed to stay in that region.<br>
 You can order multiple KMSs, either in different regions or in the same region.
 
 Since the billing for a KMS is based on the number of keys stored on it, ordering a KMS does not generate billing per se.
 
-To order a KMS, click on the KMS menu on the category `Identity, Security & Operations` available on the `Bare Metal Cloud` and `Hosted Private Cloud` univers or on the category `Identity, Security` on the `Public Cloud`univers. Then click on the button `Order a KMS`
+You can order a KMS from the [OVHcloud Control Panel](/links/manager) by going to one of the following menus:
+
+- Click `Bare Metal Cloud`{.action} then `Identity, Security & Operations`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
+- Click `Hosted Private Metal Cloud`{.action} then `Identity, Security & Operations`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
+- Click `Public Cloud`{.action} then `Identity, Security`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
 
 ![Access to the KMS menu](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
@@ -594,4 +597,4 @@ You can access the swagger for your KMS by clicking on the link in the OVHcloud 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

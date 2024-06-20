@@ -94,4 +94,4 @@ Database backup will be used at region rebuilt to retrieve stored keys.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
