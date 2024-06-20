@@ -850,6 +850,7 @@
                 + [Setting-up a Persistent Volume on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume)
                 + [Resizing Persistent Volumes](public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes)
                 + [Configuring multi-attach persistent volumes with OVHcloud NAS-HA](public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-nas-ha)
+                + [Configuring multi-attach persistent volumes with OVHcloud Cloud Disk Array](public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-cloud-disk-array)
                 + [Formatting NVMe disks on IOPS nodes](public_cloud/containers_orchestration/managed_kubernetes/formating-nvme-disks-on-iops-nodes)
             + [GPU](public-cloud-containers-orchestration-managed-kubernetes-k8s-gpu)
                 + [Deploying a GPU application on OVHcloud Managed Kubernetes Service](public_cloud/containers_orchestration/managed_kubernetes/deploying-gpu-application)
