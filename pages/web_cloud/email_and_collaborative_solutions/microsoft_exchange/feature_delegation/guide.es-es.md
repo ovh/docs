@@ -16,7 +16,7 @@ Los servicios Exchange y Email Pro permiten disfrutar de direcciones de correo p
 
 > [!warning]
 >
-> **Para la oferta [Email Pro](/links/web/email-pro)** las funcionalidades de delegación descritas en esta guía solo se utilizan a través del [Webmail](links/web/email). Los protocolos que permiten su uso a través de un programa de mensajería requieren disponer de una cuenta de [Exchange](/links/web/emails-hosted-exchange).
+> **Para la oferta [Email Pro](/links/web/email-pro)** las funcionalidades de delegación descritas en esta guía solo se utilizan a través del [Webmail](/links/web/email). Los protocolos que permiten su uso a través de un programa de mensajería requieren disponer de una cuenta de [Exchange](/links/web/emails-hosted-exchange).
 
 - Tener al menos dos cuentas de correo activas configuradas en una misma plataforma de correo de OVHcloud.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager).
@@ -89,7 +89,7 @@ En la nueva ventana, indique el nombre de la cuenta para la que tiene el permiso
 
 > [!warning]
 >
-> El uso de esta funcionalidad **a través de Outlook** solo está disponible para una cuenta de correo [Exchange](links/web/emails-hosted-exchange).
+> El uso de esta funcionalidad **a través de Outlook** solo está disponible para una cuenta de correo [Exchange](/links/web/emails-hosted-exchange).
 
 En Outlook, haga clic en `Archivo`{.action} en el menú situado en la parte superior de la pantalla y luego en `Configuración de la cuenta`{.action}. En el menú desplegable, seleccione `Configuración de la cuenta`{.action}. Seleccione la cuenta que disfruta del permiso delegado y haga clic en `Cambiar`{.action}.
 
@@ -115,7 +115,7 @@ Ya puede redactar su mensaje y enviarlo.
 
 > [!warning]
 >
-> El uso de esta funcionalidad **a través de Outlook** solo está disponible para una cuenta de correo [Exchange](links/web/emails-hosted-exchange).
+> El uso de esta funcionalidad **a través de Outlook** solo está disponible para una cuenta de correo [Exchange](/links/web/emails-hosted-exchange).
 
 En Outlook, abra la ventana de redacción de un nuevo mensaje. Compruebe si aparece el botón `De`{.action}. Si no aparece, abra la pestaña `Opciones`{.action} y seleccione `De`{.action} en el grupo **Mostrar campos**.
 
@@ -141,7 +141,7 @@ Ya puede redactar su mensaje y enviarlo.
 
 > [!warning]
 >
-> El uso de esta funcionalidad **a través de Outlook** solo está disponible para una cuenta de correo [Exchange](links/web/emails-hosted-exchange).
+> El uso de esta funcionalidad **a través de Outlook** solo está disponible para una cuenta de correo [Exchange](/links/web/emails-hosted-exchange).
 
 En Outlook, abra la ventana de redacción de un nuevo mensaje. Compruebe si aparece el botón `De`{.action}. Si no aparece, abra la pestaña `Opciones`{.action} y seleccione `De`{.action} en el grupo **Mostrar campos**.
 

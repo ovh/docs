@@ -12,11 +12,11 @@ Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professione
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](links/web/emails-hosted-exchange) oder [E-Mail Pro](/links/web/email-pro) Lösung.
+- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](/links/web/emails-hosted-exchange) oder [E-Mail Pro](/links/web/email-pro) Lösung.
 
 > [!warning]
 >
-> **Für [Email Pro](/links/web/email-pro)** können die in dieser Anleitung beschriebenen Delegierungsfunktionen nur über [Webmail](links/web/email) verwendet werden. Die Protokolle, die ihre Verwendung über einen E-Mail-Client ermöglichen, erfordern einen [Exchange-Account](links/web/emails-hosted-exchange).
+> **Für [Email Pro](/links/web/email-pro)** können die in dieser Anleitung beschriebenen Delegierungsfunktionen nur über [Webmail](/links/web/email) verwendet werden. Die Protokolle, die ihre Verwendung über einen E-Mail-Client ermöglichen, erfordern einen [Exchange-Account](/links/web/emails-hosted-exchange).
 
 - Sie verfügen über mindestens zwei aktive E-Mail Account, die auf derselben OVHcloud E-Mail Plattform eingerichtet sind.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
@@ -91,7 +91,7 @@ Geben Sie im angezeigten Fenster den Namen des Accounts ein, für den Sie Zugang
 
 > [!warning]
 >
-> Die Verwendung dieser Funktion **über Outlook** ist nur für einen [Exchange-Account](links/web/emails-hosted-exchange) verfügbar.
+> Die Verwendung dieser Funktion **über Outlook** ist nur für einen [Exchange-Account](/links/web/emails-hosted-exchange) verfügbar.
 
 Öffnen Sie Outlook und klicken Sie oben im Menü auf `Datei`{.action} und dann auf `Kontoeinstellungen`{.action}. Wählen Sie im Drop-down-Menü erneut `Kontoeinstellungen`{.action} aus. Wählen Sie im angezeigten Fenster den Account mit zugewiesenen Berechtigungen aus und klicken Sie dann auf `Ändern`{.action}.
 
@@ -117,7 +117,7 @@ Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
 
 > [!warning]
 >
-> Die Verwendung dieser Funktion **über Outlook** ist nur für einen [Exchange-Account](links/web/emails-hosted-exchange) verfügbar.
+> Die Verwendung dieser Funktion **über Outlook** ist nur für einen [Exchange-Account](/links/web/emails-hosted-exchange) verfügbar.
 
 Öffnen Sie Outlook und beginnen Sie eine neue Nachricht. Vergewissern Sie sich, dass der Button `Von`{.action} im geöffneten Fenster angezeigt wird. Ist das nicht der Fall, gehen Sie oben im Menü auf den Tab `Optionen`{.action} und klicken Sie dann bei `Felder anzeigen`{.action} auf `Von`{.action}.
 
@@ -143,7 +143,7 @@ Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
 
 > [!warning]
 >
-> Die Verwendung dieser Funktion **über Outlook** ist nur für einen [Exchange-Account](links/web/emails-hosted-exchange) verfügbar.
+> Die Verwendung dieser Funktion **über Outlook** ist nur für einen [Exchange-Account](/links/web/emails-hosted-exchange) verfügbar.
 
 Öffnen Sie Outlook und beginnen Sie eine neue Nachricht. Vergewissern Sie sich, dass der Button `Von`{.action} im geöffneten Fenster angezeigt wird. Ist das nicht der Fall, gehen Sie oben im Menü auf den Tab `Optionen`{.action} und klicken Sie dann bei `Felder anzeigen`{.action} auf `Von`{.action}.
 

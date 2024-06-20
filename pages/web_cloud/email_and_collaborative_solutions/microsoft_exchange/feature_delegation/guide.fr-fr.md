@@ -16,7 +16,7 @@ Les services Exchange et Email Pro permettent de bénéficier d’adresses e-mai
 
 > [!warning]
 >
-> **Pour l'offre [Email Pro](/links/web/email-pro)** les fonctionnalités de délégations décrites dans ce guide s'utilisent uniquement au travers du [Webmail](links/web/email). Les protocoles permettant leur utilisation via un logiciel de messagerie nécessitent de disposer d'un compte [Exchange](/links/web/emails-hosted-exchange).
+> **Pour l'offre [Email Pro](/links/web/email-pro)** les fonctionnalités de délégations décrites dans ce guide s'utilisent uniquement au travers du [Webmail](/links/web/email). Les protocoles permettant leur utilisation via un logiciel de messagerie nécessitent de disposer d'un compte [Exchange](/links/web/emails-hosted-exchange).
 
 - Disposer au minimum de deux comptes e-mail actifs et configurés sur la même plateforme e-mail OVHcloud.
 - Être connecté à l'[espace client OVHcloud](/links/manager).
@@ -91,7 +91,7 @@ Dans la fenêtre qui apparaît, indiquez le nom du compte pour lequel vous bén�
 
 > [!warning]
 >
-> L'utilisation de cette fonctionnalité **via Outlook** est uniquement disponible pour un compte e-mail [Exchange](links/web/emails-hosted-exchange).
+> L'utilisation de cette fonctionnalité **via Outlook** est uniquement disponible pour un compte e-mail [Exchange](/links/web/emails-hosted-exchange).
 
 Sur votre logiciel Outlook, cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran puis cliquez sur `Paramètres du compte`{.action}. Dans le menu déroulant, cliquez de nouveau sur `Paramètres du compte`{.action}. Dans la fenêtre qui s'affiche, sélectionnez le compte bénéficiant du droit délégué puis cliquez sur `Modifier`{.action}.
 
@@ -117,7 +117,7 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 > [!warning]
 >
-> L'utilisation de cette fonctionnalité **via Outlook** est uniquement disponible pour un compte e-mail [Exchange](links/web/emails-hosted-exchange).
+> L'utilisation de cette fonctionnalité **via Outlook** est uniquement disponible pour un compte e-mail [Exchange](/links/web/emails-hosted-exchange).
 
 Sur votre logiciel Outlook, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
 
@@ -143,7 +143,7 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 > [!warning]
 >
-> L'utilisation de cette fonctionnalité **via Outlook** est uniquement disponible pour un compte e-mail [Exchange](links/web/emails-hosted-exchange).
+> L'utilisation de cette fonctionnalité **via Outlook** est uniquement disponible pour un compte e-mail [Exchange](/links/web/emails-hosted-exchange).
 
 Sur votre logiciel Outlook, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
 

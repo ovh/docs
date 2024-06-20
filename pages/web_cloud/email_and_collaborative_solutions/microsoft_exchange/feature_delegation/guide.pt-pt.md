@@ -16,7 +16,7 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 
 > [!warning]
 >
-> **Para a oferta [Email Pro](/links/web/email-pro)** as funcionalidades de delegação descritas neste guia são utilizadas unicamente através de [Webmail](links/web/email). Os protocolos que permitem a sua utilização através de um programa de correio eletrónico necessitam de dispor de uma conta [Exchange](/links/web/emails-hosted-exchange).
+> **Para a oferta [Email Pro](/links/web/email-pro)** as funcionalidades de delegação descritas neste guia são utilizadas unicamente através de [Webmail](/links/web/email). Os protocolos que permitem a sua utilização através de um programa de correio eletrónico necessitam de dispor de uma conta [Exchange](/links/web/emails-hosted-exchange).
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor dos identificadores relativos à conta  que beneficiará dos novos direitos delegados.
@@ -90,7 +90,7 @@ Na janela que aparecer, indique o nome da conta para a qual beneficia do direito
 
 > [!warning]
 >
-> A utilização desta funcionalidade **via Outlook** só está disponível para uma conta de e-mail [Exchange](links/web/emails-hosted-exchange).
+> A utilização desta funcionalidade **via Outlook** só está disponível para uma conta de e-mail [Exchange](/links/web/emails-hosted-exchange).
 
 No Outlook, clique em `Ficheiro`{.action} na barra de menu no topo do ecrã e, a seguir, em `Parâmetros da conta`{.action}. No menu pendente, clique novamente em `Parâmetros da conta`{.action}. Na nova janela, selecione a conta com direito delegado e clique em `Alterar`{.action}. 
 
@@ -116,7 +116,7 @@ Só precisa de redigir a sua mensagem e enviá-la.
 
 > [!warning]
 >
-> A utilização desta funcionalidade **via Outlook** só está disponível para uma conta de e-mail [Exchange](links/web/emails-hosted-exchange).
+> A utilização desta funcionalidade **via Outlook** só está disponível para uma conta de e-mail [Exchange](/links/web/emails-hosted-exchange).
 
 No Outlook, inicie a redação de uma nova mensagem. Certifique-se de que o botão `De`{.action} aparece na janela de redação. Se não for o caso, aceda ao separador `Opções`{.action} e clique em `Apresentar De`{.action}.
 
@@ -142,7 +142,7 @@ Só precisa de redigir a sua mensagem e enviá-la.
 
 > [!warning]
 >
-> A utilização desta funcionalidade **via Outlook** só está disponível para uma conta de e-mail [Exchange](links/web/emails-hosted-exchange).
+> A utilização desta funcionalidade **via Outlook** só está disponível para uma conta de e-mail [Exchange](/links/web/emails-hosted-exchange).
 
 No Outlook, inicie a redação de uma nova mensagem. Certifique-se de que o botão `De`{.action} aparece na janela de redação. Se não for o caso, aceda ao separador `Opções`{.action} e clique em `Apresentar De`{.action}.
 
