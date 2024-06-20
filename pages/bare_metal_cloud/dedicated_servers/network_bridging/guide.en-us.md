@@ -88,7 +88,7 @@ The IPv4 gateway assigned to your server will appear in the `Network` section of
 
 #### Via the OVHcloud API <a name="viaapi"></a>
 
-On the [OVHcloud API page](https://api.ovh.com/console/), click on `Login`{.action} in the top right-hand corner. On the next page, enter your OVHcloud credentials.
+On the [OVHcloud API page](https://eu.api.ovh.com/console/), click on `Login`{.action} in the top right-hand corner. On the next page, enter your OVHcloud credentials.
 
 Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 
@@ -402,7 +402,7 @@ rtt min/avg/max/mdev = 24,925/28,028/30,840/2,254 ms
 
 If you receive a response, this means that the Additional IP has been correctly configured. If not, reboot your virtual machine and retry the ping command.
 
-#### FreeBSD 12.0
+#### FreeBSD
 
 By default, the virtual machine's network configuration file is located in `/etc/rc.conf`.
 
@@ -462,6 +462,8 @@ rtt min/avg/max/mdev = 24,925/28,028/30,840/2,254 ms
 If you receive a response, this means that the Additional IP has been correctly configured. If not, reboot your virtual machine and retry the ping command.
 
 #### Ubuntu
+
+By default, the virtual machine's network configuration file is located in `/etc/netplan/`.
 
 First, access the console to connect to your virtual machine and run the following command to identify your interface name:
 
