@@ -16,6 +16,10 @@ Retrouvez dans ce guide toutes les adresses IP du service CDN Infrastructure à 
 
 ## En pratique
 
+> [!warning]
+> Cette liste d'adresses IP est non exhaustive et est susceptible de changer à l'avenir.
+>
+
 Retrouvez ci-dessous la liste des adresses IP :
 
 |Adresse IP|
