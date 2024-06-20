@@ -6,9 +6,9 @@ updated: 2024-06-17
 
 ## Objective
 
-The abbreviation **DNS**, meaning **D**omain **N**ame **S**ystem, is a set of elements (DNS servers, DNS zones, etc.) that allow you to match a domain name to an IP address.
+**DNS** means **D**omain **N**ame **S**ystem and is a set of elements (DNS servers, DNS zones, etc.) that map a domain name to an IP address.
 
-**Find out what DNS servers do, what they contain, and how they work with a domain name.**
+**This guide explains what DNS servers do, what they contain, and how they work with a domain name.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -47,7 +47,7 @@ A **DNS server (Authoritative)** contains a domain name directory that can have 
 
 For each domain name in the directory, there is a **DNS zone** associated with it, which contains the DNS configuration to be applied to the domain name.
 
-A DNS zone contains technical information, called *DNS records*. The DNS zone is like a referral point.
+A DNS zone contains technical information, called *DNS records*.
 
 > [!success]
 >
@@ -65,9 +65,9 @@ As a result, the **DNS servers (Authoritative)** must be registered (with a doma
 
 For the DNS zone associated with a domain name in a DNS server’s directory to be active, it is necessary for this DNS server to be declared to the domain name registrar.
 
-As a precaution, we declare at least 2 **Authoritative DNS servers** (a primary DNS server and a secondary DNS server) with a domain name registrar. Both work in the same way. However, if one of them responds faster, it will be queried by the DNS resolvers as a priority. If one of them does not respond or no longer responds, the other DNS server will be there to respond to the DNS request.
+As a precaution, we declare at least 2 **Authoritative DNS servers** (a primary DNS server and a secondary DNS server) with a domain name registrar. Both work in the same way. However, if one of them responds faster, it will be queried by the DNS resolvers as a priority. If one of them does not respond, the other DNS server will be there to respond to the DNS request.
 
-Sometimes, some DNS providers offer more than 2 **DNS servers (Authoritative)** to declare with your domain name. In this case, enter all of the DNS servers offered by your DNS provider.
+Some DNS providers offer more than 2 **DNS servers (Authoritative)** to declare with your domain name. In this case, enter all of the DNS servers offered by your DNS provider.
 
 ## Go further
 
@@ -75,9 +75,9 @@ Sometimes, some DNS providers offer more than 2 **DNS servers (Authoritative)** 
 
 [DNS records](/pages/web_cloud/domains/dns_zone_records)
 
-[Modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit).
+[Modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
 
-[Modify an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+[Modify an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
