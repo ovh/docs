@@ -12,11 +12,11 @@ I servizi Exchange ed Email Pro permettono di usufruire di indirizzi email profe
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](/links/web/email-hosted-exchange) o [Email Pro](/links/web/email-pro) attive
+- Disporre di una [soluzione Exchange OVHcloud](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) attive
 
 > [!warning]
 >
-> **Per l'offerta [Email Pro](/links/web/email-pro)** le funzionalità di delega descritte in questa guida possono essere utilizzate esclusivamente tramite [Webmail](/links/web/email). Per utilizzare i protocolli tramite un client di posta elettronica è necessario disporre di un account [Exchange](/links/web/email-hosted-exchange).
+> **Per l'offerta [Email Pro](/links/web/email-pro)** le funzionalità di delega descritte in questa guida possono essere utilizzate esclusivamente tramite [Webmail](/links/web/email). Per utilizzare i protocolli tramite un client di posta elettronica è necessario disporre di un account [Exchange](/links/web/emails-hosted-exchange).
 
 - Disporre di almeno due account attivi e configurati sulla stessa piattaforma email OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
@@ -91,7 +91,7 @@ Nella nuova finestra, inserisci il nome dell’account con i diritti delegati e 
 
 > [!warning]
 >
-> L'utilizzo di questa funzionalità **via Outlook** è disponibile esclusivamente per un account email [Exchange](/links/web/email-hosted-exchange).
+> L'utilizzo di questa funzionalità **via Outlook** è disponibile esclusivamente per un account email [Exchange](/links/web/emails-hosted-exchange).
 
 Se utilizzi Outlook, seleziona la scheda `File`{.action} in alto a sinistra e clicca su `Impostazioni account`{.action}. Nel menu a tendina, seleziona di nuovo `Impostazioni account...`{.action}. Nella nuova finestra, seleziona l’account a cui sono stati delegati i diritti e clicca su `Cambia...`{.action}.
 
@@ -117,7 +117,7 @@ A questo punto scrivi il tuo messaggio e invialo.
 
 > [!warning]
 >
-> L'utilizzo di questa funzionalità **via Outlook** è disponibile esclusivamente per un account email [Exchange](/links/web/email-hosted-exchange).
+> L'utilizzo di questa funzionalità **via Outlook** è disponibile esclusivamente per un account email [Exchange](/links/web/emails-hosted-exchange).
 
 Se utilizzi Outlook, inizia a scrivere un nuovo messaggio assicurandoti che il pulsante `Da`{.action} venga mostrato nella casella di testo. In caso contrario seleziona la scheda `Opzioni`{.action} e, nella sezione “Mostra campi”, clicca su `Da`{.action}.
 
@@ -143,7 +143,7 @@ A questo punto scrivi il tuo messaggio e invialo.
 
 > [!warning]
 >
-> L'utilizzo di questa funzionalità **via Outlook** è disponibile esclusivamente per un account email [Exchange](/links/web/email-hosted-exchange).
+> L'utilizzo di questa funzionalità **via Outlook** è disponibile esclusivamente per un account email [Exchange](/links/web/emails-hosted-exchange).
 
 Se utilizzi Outlook, inizia a scrivere un nuovo messaggio assicurandoti che il pulsante `Da`{.action} venga mostrato nella casella di testo. In caso contrario seleziona la scheda `Opzioni`{.action} e, nella sezione “Mostra campi”, clicca su `Da`{.action}.
 
