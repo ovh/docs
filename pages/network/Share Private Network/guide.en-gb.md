@@ -1,7 +1,7 @@
 ---
-title: [Network] How to share a private network between 2 public cloud projects
+title: Network - How to share a private network between 2 public cloud projects
 excerpt: Learn how to share a private network between two public cloud projects on OVH Cloud
-updated: 2024-06-20
+updated: 2024-02-29
 ---
 
 ## Objective
