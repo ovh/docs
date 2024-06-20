@@ -37,35 +37,35 @@ Saisissez votre nom de domaine dans la barre de recherche de votre navigateur In
 
 Si les fichiers source de Typo3 ont été placés correctement dans votre dossier racine, la page suivante apparaît :
 
-![Typo3 installation](images/install_step_one.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_one.png){.thumbnail}
 
 Comme indiqué, créez un fichier vide nommé `FIRST_INSTALL` dans le répertoire où vous avez déposé vos fichiers et dossiers Typo3. Retournez sur votre navigateur Internet et actualisez la page. Si des erreurs surviennent, l'écran ci-dessous apparaît, avec la description des erreurs.
 
-![Typo3 installation](images/install_step_2_error.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_2_error.png){.thumbnail}
 
 Résolvez les erreurs ou cliquez sur `Continue with errors`{.action}.
 
 La deuxième étape de l'installation s'affiche.
 
-![Typo3 installation](images/install_step_2.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_2.png){.thumbnail}
 
 Entrez les informations relatives à votre SGBD puis cliquez sur `Continue`{.action}.
 
 La troisième étape de l'installation s'affiche.
 
-![Typo3 installation](images/install_step_3.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_3.png){.thumbnail}
 
 Sélectionnez le nom de la base de données que vous souhaitez utiliser pour votre site web, ou [créez-en une nouvelle](/pages/web_cloud/web_hosting/sql_create_database), puis cliquez sur `Continue`{.action}.
 
 La quatrième étape de l'installation s'affiche.
 
-![Typo3 installation](images/install_step_4.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_4.png){.thumbnail}
 
 Entrez le nom de votre site web, ainsi que les informations relatives à votre utilisateur admin.
 
 La cinquième et dernière étape de l'installation s'affiche.
 
-![Typo3 installation](images/install_step_5.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_5.png){.thumbnail}
 
 Lisez les informations affichées à l'écran et choisissez l'option qui vous convient :
 
