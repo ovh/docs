@@ -57,7 +57,7 @@ To configure OVHcloud Cloud Disk Array, you need to use the [OVHcloud API](https
 > @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/user/{userName}/pool
 >
 
-![Add user permission on Cloud Disk Array](add-user-permissions.png){.thumbnail}
+![Add user permission on Cloud Disk Array](images/add-user-permissions.png){.thumbnail}
 
 - Get your Kubernetes nodes IP:
 
@@ -77,7 +77,7 @@ kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="Internal
 > @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/acl
 >
 
-![Add ACL on Cloud Disk Array](add-acl.png){.thumbnail}
+![Add ACL on Cloud Disk Array](images/add-acl.png){.thumbnail}
 
 - Get the key for the CephFS CSI user:
 
@@ -86,7 +86,7 @@ kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="Internal
 > @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/user/{userName}
 >
 
-![Get Ceph CSI user key](get-user-key.png){.thumbnail}
+![Get Ceph CSI user key](images/get-user-key.png){.thumbnail}
 
 - Get the Ceph monitors IP:
 
@@ -95,7 +95,7 @@ kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="Internal
 > @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}
 >
 
-![Get Ceph monitor IPs](get-ceph-monitor-ip.png){.thumbnail}
+![Get Ceph monitor IPs](images/get-ceph-monitor-ip.png){.thumbnail}
 
 - Create a Ubuntu pod on your Kubernetes cluster
 
