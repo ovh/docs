@@ -98,7 +98,7 @@ Możesz również zakończyć zamówienie [hostingiem www](/links/web/hosting){.
 
 - W niektórych przypadkach proces transferu może wymagać dodatkowych informacji o właścicielu domeny. Aby dodać te informacje, kliknij opcję `Zarządzanie kontaktami/właściciela`{.action}.
 
-![domena](images/order-summary.png){.thumbnail}
+![domena](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
 Po zatwierdzeniu zamówienia otrzymasz bezpłatne zamówienie. Transfer rozpocznie się po zatwierdzeniu tego darmowego zamówienia. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](/links/manager){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action}, następnie `Operacje w toku`{.action}.
 
