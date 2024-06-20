@@ -93,7 +93,7 @@ You can now reset the password by following the instructions below.
 #### B) Resetting the pasword <a name="sectionB"></a>
 
 To reset passwords, the NTPWEdit tool is required.<br>
-Once you are connected via Remote Desktop, open the browser and download it from its official website.<br>
+Once you are connected via Remote Desktop, open the browser and download it from its [official website](http://www.cdslow.org.ru/files/ntpwedit/ntpwed07.zip).<br>
 Navigate to the folder where the downloaded ZIP file is located and extract its content.<br>
 Next, open the `ntpwedit64` executable to start the application.
 
