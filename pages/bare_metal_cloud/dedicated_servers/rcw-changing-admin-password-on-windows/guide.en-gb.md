@@ -52,13 +52,15 @@ You can then see the disks and volumes of the server.
 Your server's Windows disk is probably *disk 1*, so you must import it to be able to access it.
 Please note that if you have several disk groups, the number of the Windows disk may vary, you may have to import several disks to get the Windows one.
 
+You also have to import the second disk to properly import your software RAID volume.
+
 ##### 2. Importing local disk
 
 Right-click *Disk 1* and select `Online`{.action}.
 
 ![disk_import_disk1](images/disk_manager_disk1on.png){.thumbnail}
 
-Do the same thing for the second disk (Disk 2) to properly import your software raid.
+Do the same thing for the second disk (Disk 2) to properly import your software RAID volume.
 
 Right-click *Disk 2* and select `Online`{.action}.
 
@@ -76,13 +78,13 @@ Click `OK` twice:
 
 ![disk_import2](images/disk_import2.png){.thumbnail}
 
-Here, you can see that the local disk is now accessible and the Windows disk is drive `E:` (spreading on two disks because it is in software RAID).
+You can see that the local disk is now accessible and that the Windows disk is drive `(E:)` (spreading on two software RAID disks with Mirrored volume type).
 
 ![disk_import_sync](images/disk_import_sync.png){.thumbnail}
 
 > [!primary]
-> In this example, the volume status is "Resynching" because the server was hard-rebooted in rescue mode. This is the normal behaviour and it is not caused by the rescue itself.
-> This will not affect data on the volume and resynchronisation will continue after the server is rebooted on its normal OS.
+> In this example, the volume status is "Resynching" because the server was hard-rebooted in rescue mode. This is an expected status and it is not caused by the rescue itself.
+> This will not affect data on the volume and resynchronisation will continue once the server is rebooted on its installed OS.
 
 > [!warning]
 >
@@ -90,36 +92,36 @@ Here, you can see that the local disk is now accessible and the Windows disk is 
 
 You can now reset the password by following the instructions below.
 
-#### B) Resetting the pasword <a name="sectionB"></a>
+#### B) Resetting the password <a name="sectionB"></a>
 
 To reset passwords, the NTPWEdit tool is required.<br>
-Once you are connected via Remote Desktop, open the browser and download it from its official website.<br>
+Once you are connected via Remote Desktop, open the browser and download it from its [official website](http://www.cdslow.org.ru/files/ntpwedit/ntpwed07.zip).<br>
 Navigate to the folder where the downloaded ZIP file is located and extract its content.<br>
 Next, open the `ntpwedit64` executable to start the application.
 
 In this interface, you can manipulate the SAM file in order to clear the admin user's password.
 
-You must browse the local Windows drive to find your server's SAM file.
+You must browse the local Windows drive to find your system's SAM file.
 
-Click the three dots button (`...`{.action}) to browse the drive containing your server's local Windows drive
+Click the three dots button (`...`{.action}) to browse the drive containing your server's local Windows folder.
 
-It usually is `Windows (E:\)`
+It usually is the `Windows (E:\)` drive.
 
 ![ntpwedit1](images/ntpwedit_1.png){.thumbnail}
 
 Browse to `E:\WINDOWS\SYSTEM32\CONFIG\`
 
-Open the SAM file to display the list of users by clicking `Open`{.action}.
+Select and open the SAM file to display the user accounts by clicking `Open`{.action}.
 
 ![ntpwedit_sam](images/SAM.png){.thumbnail}
 
-The relevant user will either be "admin" or "Administrator", depending on the Windows version. If both are present, choose "admin". Then click `Change password`{.action}.
+Select the user account "admin" and click on `Change password`{.action}.
 
 ![ntpwedit2](images/ntpwedit_2.png){.thumbnail}
 
 In the pop-up window, leave the fields empty and click `OK`{.action}. Finish by clicking `Save changes and Exit`{.action}.
 
-After this, the server needs to be rebooted again.
+After this, the server needs to be rebooted on the normal operating system.
 
 ### Step 3 - Rebooting the server <a name="step3"></a>
 
@@ -139,7 +141,7 @@ In your OVHcloud Control Panel, navigate to the IPMI tab to open a KVM session.
 
 #### For a newer version of Windows
 
-Once you have accessed your server through IPMI, click the hourglass icon on the bottom-left. Start typing `Sign-in options` and click the `Sign-in options`{.action} button once it pops up.
+Once you have accessed your server through IPMI, click the start menu icon on the bottom-left. Start typing `Sign-in options` and click the `Sign-in options`{.action} button once it pops up.
 
 ![adminpw7](images/adminpw7.png){.thumbnail}
 
