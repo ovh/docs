@@ -1,6 +1,6 @@
 ---
 title: Migrer son site web et ses services associés vers OVHcloud
-excerpt: Découvrez comment migrer l'intégralité de votre site web, incluant vos e-mails, vos domaines, votre base de données, chez OVHcloud sans interruption de services
+excerpt: Découvrez comment migrer votre site web, votre nom de domaine, votre base de données et vos e-mails chez OVHcloud sans interruption de services
 updated: 2024-06-21
 ---
 
