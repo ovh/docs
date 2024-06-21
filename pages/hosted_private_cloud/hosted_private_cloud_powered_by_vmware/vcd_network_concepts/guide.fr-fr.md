@@ -273,11 +273,11 @@ Vous pouvez maintenant suivre les étapes du guide suivant : [« Guide 2 - VMwar
 - Guide 4 : [« VMware Cloud Director on OVHcloud - Network - Comment exploiter un block IP avec VCD on OVHcloud ? »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_ipblock).
 - Guide 5 : [« VMware Cloud Director on OVHcloud - Network - Comment utiliser le distributed firewalling (East - Ouest) ? »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_firewall).
 
-### Notion réseau à connaitre
+### Notion réseau utile
 
+Voici la liste des guides que vous pouvez lire pour renforcer vos connaissances réseau au sein de l'univers OVHcloud :
 - [Bloc IP - Gérer et configurer un bloc IP /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29).
 - [Concepts - Réseau Public / Privée](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
-- 
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
