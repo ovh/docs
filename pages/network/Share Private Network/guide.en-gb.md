@@ -35,9 +35,14 @@ openstack network create <SHARED_NETWORK_NAME>
 ```
 
 3. Create two subnets, one for instances on our project and one shared with another project:
+
+For the Project 1
 ```sh
-openstack subnet create --subnet-range <SHARED_NETWORK_RANGE> --gateway none --network <SHARED_NETWORK_NAME> --allocation-pool start=<SHARED_NETWORK_DHCP_START>,end=<SHARED_NETWORK_DHCP_END> <SHARED_SUBNET_NAME>
-openstack subnet create --subnet-range <LOCAL_NETWORK_RANGE> --gateway none --network <SHARED_NETWORK_NAME> --allocation-pool start=<LOCAL_NETWORK_DHCP_START>,end=<LOCAL_NETWORK_DHCP_END> <LOCAL_SUBNET_NAME>
+openstack subnet create --subnet-range <LOCAL_NETWORK_RANGE> --network <SHARED_NETWORK_NAME> --allocation-pool start=<LOCAL_NETWORK_DHCP_START>,end=<LOCAL_NETWORK_DHCP_END> <LOCAL_SUBNET_NAME>
+```
+For the Project 2 :
+```sh
+openstack subnet create --subnet-range <SHARED_NETWORK_RANGE> --network <SHARED_NETWORK_NAME> --allocation-pool start=<SHARED_NETWORK_DHCP_START>,end=<SHARED_NETWORK_DHCP_END> <SHARED_SUBNET_NAME>
 ```
 
 4. Share this network (and associated subnets) with the second project:
@@ -50,6 +55,21 @@ openstack network rbac create --target-project <TARGET_PROJECT_ID> --action acce
 openstack port create --network <SHARED_NETWORK_NAME> --fixed-ip subnet=<LOCAL_SUBNET_NAME> <LOCAL_PORT_NAME>
 openstack server create --port <LOCAL_PORT_NAME> --security-group default --key-name <KEY_NAME> <INSTANCE_NAME>
 ```
+
+To switch projects via the OpenStack CLI, use the OS_PROJECT_ID or OS_PROJECT_NAME environment variables depending on whether you prefer to use the project ID or name. Here's how to change the project:
+
+Change project using project name:
+
+```sh
+export OS_PROJECT_NAME=project_B
+```
+
+Or using the project ID:
+
+```sh
+export OS_PROJECT_ID=1234567890abcdef
+```
+
 On our second (or more) project :
 
 1. List the project IDs:
