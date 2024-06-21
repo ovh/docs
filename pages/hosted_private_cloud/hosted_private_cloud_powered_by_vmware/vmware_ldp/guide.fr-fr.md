@@ -17,7 +17,7 @@ L'objectif de ce guide est de vous montrer comment activer le transfert des logs
 ## Concepts et limites
 
 ### Glossaire
-- **Logs Data Platform :** Plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/){.external}
+- **Logs Data Platform :** Plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution LDP <https://www.ovhcloud.com/fr/logs-data-platform/>.
 - **Data Stream :** Partition logique de logs que vous créez dans un compte Logs Data Platform et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
 - **Transfert de logs :** Fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans le *Data Stream* d’un compte Logs Data Platform du même compte OVHcloud. Cette fonctionnalité doit être activée par vos soins et pour votre service, consultez cette partie du guide pour l'activer : [Etape 1 - Comment activer le transfert des journaux via l'API OVHcloud ?](#Activation)
 - **Abonnement à la redirection de logs :** Lors de l'activation du transfert de logs pour votre service OVHcloud vers un *Data Stream* Logs Data Platform donné, un *abonnement* doit être créé et rattaché au *Data Stream* pour une gestion ultérieure.
@@ -33,7 +33,7 @@ L'objectif de ce guide est de vous montrer comment activer le transfert des logs
 
 L'activation du transfert des logs vers un stream Logs Data Platform permet de collecter, d'indexer et d'analyser les informations Hosted Private Cloud VMware on OVHcloud. Peu importe leur origine, cette plateforme offre une diversité de moyens d'accès en fonction du protocole, du niveau de sécurité et du format désiré. Les données recueillies peuvent être aisément exploitées grâce aux multiples API et interfaces web mises à disposition.
 
-Pour de plus amples informations concernant les caractéristiques techniques de Logs Data Platform (ports, protocoles, etc.), nous vous invitons à consulter le guide :  ["Premiers pas | Bien commencer avec Logs Data Platform".](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
+Pour de plus amples informations concernant les caractéristiques techniques de Logs Data Platform (ports, protocoles, etc.), nous vous invitons à consulter le guide : ["Premiers pas | Bien commencer avec Logs Data Platform".](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 ### Les journaux et labels
 
