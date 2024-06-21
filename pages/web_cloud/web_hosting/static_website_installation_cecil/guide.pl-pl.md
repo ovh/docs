@@ -221,4 +221,4 @@ Nasz [Przewodnik dotyczący korzystania z FileZilla](/pages/web_cloud/web_hostin
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).
