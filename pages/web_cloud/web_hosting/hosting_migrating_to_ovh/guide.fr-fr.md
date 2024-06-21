@@ -225,7 +225,7 @@ Une fois vos anciennes adresses e-mail migrées chez OVHcloud, reconfigurez vos 
 
 ### Etape 9 : remplacer les serveurs DNS actifs de votre nom de domaine par ceux d'OVHcloud <a name="step9"></a>
 
-La zone DNS pré-configurée lors de l'[étape 2](#etape-2--créer-et-préconfigurer-une-zone-dns-pour-votre-nom-de-domaine-chez-ovhcloud) n'est pas encore appliquée à votre nom de domaine. Actuellement, votre domaine utilise toujours les serveurs DNS de votre fournisseur d'origine.
+La zone DNS pré-configurée lors de l'[étape 2](#step2) n'est pas encore appliquée à votre nom de domaine. Actuellement, votre nom de domaine utilise toujours les serveurs DNS de votre fournisseur d'origine.
 
 Remplacez les serveurs DNS actuels (du registrar d'origine) par les deux serveurs DNS déclarés dans la zone DNS OVHcloud (de type `dnsXX.ovh.net` et `nsXX.ovh.net`). Cette manipulation se fait dans l'interface de gestion du registrar d'origine.
 
