@@ -6,7 +6,7 @@ updated: 2024-06-17
 
 ## Objective
 
-The abbreviation **DNS**, meaning **D**omain **N**ame **S**ystem, is a set of elements (DNS servers, DNS zones, etc.) that allow you to match a domain name to an IP address.
+**DNS** means **D**omain **N**ame **S**ystem and is a set of elements (DNS servers, DNS zones, etc.) that map a domain name to an IP address.
 
 First, we recommend reading our guides “[What is a DNS server?](/pages/web_cloud/domains/dns_server_general_information)” and “[What is a DNS zone?](/pages/web_cloud/domains/dns_zone_general_information)” in this order.
 
@@ -29,17 +29,17 @@ The purpose of this guide is to introduce you to the different types of DNS reco
 
 The list below includes the objectives and specifics of each registration. This will give you a better understanding of how you manage your DNS services.
 
-#### Pointing records <a name="pointer-records"></a>
+#### Pointer records <a name="pointer-records"></a>
 
 Select the record you want by clicking each of the following tabs.
 
 > [!tabs]
 > **A**
 >> **A**ddress <br><br>
->> Links a domain name to an `X.X.X.X` IPv4 address (where `Xs` are numbers between `0` and `255`). For example, the IPv4 address of the server your website is hosted on.
+>> Links a domain name to a `X.X.X.X` IPv4 address (where `X` is a number between `0` and `255`). For example, the IPv4 address of the server your website is hosted on.
 >>
 > **AAAA** 
->> Four **A** characters because this record is encoded on four times more bits than the historical **A** field <br><br>
+>> Four **A** characters because this record is encoded on four times more bits than the historical **A** field. <br><br>
 >> Links a domain name to an IPv6 address. For example, the IPv6 address of the server your website is hosted on.
 >>
 >> > [!primary]
@@ -69,7 +69,7 @@ Select the record you want by clicking each of the following tabs.
 >> **D**elegation **NAME** <br><br>
 >> Allows to generate an "alias" for all subdomains of a domain. This record avoids creating a multitude of CNAME records. A CNAME record redirects only one subdomain to a single target, independently.
 >>
->> Example: By creating a DNAME record from *domain.tld* to *ovh.com*, all subdomains from *domain.tld* (such as *dname.domain.tld* and *xxx.domain.tld*) will be redirected respectively to subdomains from *ovh.com* (such as *dname.ovh.com* and *xxx.ovh.com*).
+>> Example: By creating a DNAME record from *domain.tld* to *ovh.com*, all subdomains of *domain.tld* (such as *dname.domain.tld* and *xxx.domain.tld*) will be redirected respectively to subdomains of *ovh.com* (such as *dname.ovh.com* and *xxx.ovh.com*).
 >>
 >> In other words, the DNAME record indicates that *dname.domain.tld* and *xxx.domain.tld* must display the results of *dname.ovh.com* and *xxx.ovh.com*, respectively.
 >>
@@ -81,11 +81,11 @@ Select the record you want by clicking each of the following tabs.
 >>
 >> > [!success]
 >> > 
->> > The DNAME record is usually used for company name changes. It can also be set up when a user has several domain extensions (.fr, .net, .com, .info, ...) to redirect them easily.
+>> > The DNAME record is usually used for company name changes. It can also be set up when a user has several domain extensions (.fr, .net, .com, .info, etc.) to redirect them easily.
 >> >
 > **NS**
 >> **N**ame **S**erver<br><br>
->> Define the DNS servers associated with your DNS zone. For example, if the NS records in your DNS zone display the servers *dnsXX.ovh.net* and *nsXX.ovh.net*, you will need to use them in the `DNS servers`{.action} tab in your OVHcloud Control Pane. Please refer to our guide on [Editing DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit) for more information.
+>> Define the DNS servers associated with your DNS zone. For example, if the NS records in your DNS zone display the servers *dnsXX.ovh.net* and *nsXX.ovh.net*, you will need to use them in the `DNS servers`{.action} tab in your OVHcloud Control Panel. Please refer to our guide on [Editing DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit) for more information.
 >>
 >> > [!warning]
 >> >
@@ -99,11 +99,11 @@ Select the record you want by clicking each of the following tabs.
 > [!tabs]
 > **MX**
 >> **M**ail e**X**changer <br><br> 
->> Links a domain name to an email server. For example, the address *10 mx1.mail.ovh.net* corresponds to one of the OVHcloud email servers when you have an OVHcloud email solution. Your email provider may have several email servers: Several MX fields must therefore be created. Please read our guide on [Adding an MX record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_mx).
+>> Links a domain name to an email server. For example, the address *10 mx1.mail.ovh.net* corresponds to one of the OVHcloud email servers when you have an OVHcloud email solution. Your email provider may have several email servers. Several MX fields must therefore be created. Please read our guide on [Adding an MX record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_mx).
 >>
 >> > [!warning]
 >> >
->> > In general, we recommend using only one or more servers from the same email provider in your DNS zone.
+>> > In general, we recommend using servers from the same email provider in your DNS zone.
 >> > If you already have email services from another email provider and you are adding your new email provider’s servers in parallel (without replacing them), you risk randomly receiving your emails from either of your two email providers.
 >>
 > **SPF**
@@ -169,11 +169,11 @@ Select the record you want by clicking each of the following tabs.
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
 >> Used to fill in the fingerprint of an SSL/TLS certificate.
 
-#### Special use case: the use of CNAME records <a name="cnameusecase"></a>
+#### Special use case: CNAME records <a name="cnameusecase"></a>
 
 Some users create DNS zones directly for a domain’s subdomain (for example, *subdomain-with-its-own-DNS-zone.domain.tld*). The rule specified earlier in the "CNAME" tab of the “[pointer records](#pointer-records)” section will then also apply in this scenario.
 
-Since the DNS zone is created for the subdomain (in our example *subdomain-with-its-own-DNS-zone.domain.tld*), the subdomain is then considered a fully-fledged domain in its DNS zone.
+Since the DNS zone is created for the subdomain (in our example *subdomain-with-its-own-DNS-zone.domain.tld*), the subdomain is then considered a fully qualified domain name in its DNS zone.
 
 As a result, in this specific case, you will not be able to create a CNAME record for *subdomain-with-its-own-DNS-zone.domain.tld* in the DNS zone you have created for it. However, you can create CNAME records, such as *subdomain.subdomain-with-its-own-DNS-zone.domain.tld* or *xxx.subdomain-with-its-own-DNS-zone.domain.tld*.
 
