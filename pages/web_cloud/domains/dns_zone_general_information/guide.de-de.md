@@ -1,5 +1,5 @@
 ---
-Title: "Was ist eine DNS-Zone?"
+Title: "Alle Informationen zu DNS-Zonen"
 excerpt: "Erfahren Sie hier, welche Rolle eine DNS-Zone spielt und welche Einträge sie für einen Domainnamen enthält"
 updated: 2024-06-17
 ---
