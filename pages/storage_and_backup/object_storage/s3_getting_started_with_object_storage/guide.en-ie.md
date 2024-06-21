@@ -130,7 +130,6 @@ aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/tes
 aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/test1 --storage-class STANDARD
 ```
 
-
 **By default, objects are named after files, but can be renamed**
 
 ```bash
