@@ -104,4 +104,4 @@ Il CMS Typo3 è stato installato manualmente sull’hosting Web OVHcloud. Dopo a
  
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).
