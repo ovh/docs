@@ -1,7 +1,7 @@
 ---
-title: Migrer son site web (bases de données, noms de domaine, e-mails) vers OVHcloud
-excerpt: Découvrez comment migrer l'intégralité de votre site internet, incluant vos e-mails, vos domaines, votre base de données, chez OVHcloud sans interruption de services
-updated: 2024-06-19
+title: Migrer son site web et ses services associés vers OVHcloud
+excerpt: Découvrez comment migrer l'intégralité de votre site web, incluant vos e-mails, vos domaines, votre base de données, chez OVHcloud sans interruption de services
+updated: 2024-06-21
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ Ce guide vous présente les différentes actions à réaliser pour migrer l'ense
 
 > [!warning]
 >
-Ce guide s’adresse aux personnes possédant les bases dans les domaines tels que les [zones DNS](https://help.ovhcloud.com/csm/fr-dns-zone-general-information?id=kb_article_view&sysparm_article=KB0063450){.external}, les espaces de stockage FTP ou encore les bases de données. En revanche, vous n'avez pas besoin de posséder de connaissances techniques avancées, et ce guide vous aide pas à pas dans la migration de votre site web.
+Ce guide s’adresse aux personnes possédant les bases dans les domaines tels que les [zones DNS](/pages/web_cloud/domains/dns_zone_general_information){.external}, les espaces de stockage FTP ou encore les bases de données. En revanche, vous n'avez pas besoin de posséder de connaissances techniques avancées, et ce guide vous aide pas à pas dans la migration de votre site web.
 >
 
 ## Prérequis
@@ -37,16 +37,16 @@ Ce guide s’adresse aux personnes possédant les bases dans les domaines tels q
 
 Migrer l'intégralité de votre site internet et vos e-mails vers OVHcloud **sans interruption de service** nécessite d'appliquer une procédure précise en 10 étapes :
 
-- [Etape 1 : commander l'hébergement et les adresses e-mail chez OVHcloud](#etape-1--commander-lhébergement-et-les-adresses-e-mail-chez-ovhcloud)
-- [Etape 2 : créer et pré-configurer une zone DNS pour votre nom de domaine chez OVHcloud](#etape-2--créer-et-préconfigurer-une-zone-dns-pour-votre-nom-de-domaine-chez-ovhcloud)
-- [Etape 3 : récupérer une sauvegarde complète de votre site web](#etape-3--récupérer-une-sauvegarde-complète-de-votre-site-web)
-- [Etape 4 : importer la sauvegarde de votre site web sur votre offre d'hébergement OVHcloud](#etape-4--importer-la-sauvegarde-de-votre-site-web-sur-votre-offre-dhébergement-ovhcloud)
-- [Etape 5 : recréer vos adresses e-mail à l'identique chez OVHcloud](#etape-5--recréer-vos-adresses-e-mail-à-lidentique-chez-ovhcloud)
-- [Etape 6 : déclarer les serveurs e-mail OVHcloud dans la zone DNS active de votre nom de domaine](#etape-6--déclarer-les-serveurs-e-mail-ovhcloud-dans-la-zone-dns-active-de-votre-nom-de-domaine)
-- [Etape 7 : transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles adresses chez OVHcloud](#etape-7--transférer-le-contenu-de-vos-anciennes-adresses-e-mail-dans-vos-nouvelles-adresses-chez-ovhcloud)
-- [Etape 8 : reconfigurer vos logiciels de messagerie](#etape-8--reconfigurer-vos-logiciels-de-messagerie)
-- [Etape 9 : remplacer les serveurs DNS actifs de votre nom de domaine par ceux d'OVHcloud](#etape-9--remplacer-les-serveurs-dns-actifs-de-votre-nom-de-domaine-par-ceux-dovhcloud)
-- [Etape 10 : transférer votre nom de domaine chez OVHcloud](#etape-10--transférer-votre-nom-de-domaine-chez-ovhcloud)
+- [Etape 1 : commander l'hébergement et les adresses e-mail chez OVHcloud](#step1)
+- [Etape 2 : créer et pré-configurer une zone DNS pour votre nom de domaine chez OVHcloud](#step2)
+- [Etape 3 : récupérer une sauvegarde complète de votre site web](#step3)
+- [Etape 4 : importer la sauvegarde de votre site web sur votre offre d'hébergement OVHcloud](#step4)
+- [Etape 5 : recréer vos adresses e-mail à l'identique chez OVHcloud](#step5)
+- [Etape 6 : déclarer les serveurs e-mail OVHcloud dans la zone DNS active de votre nom de domaine](#step6)
+- [Etape 7 : transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles adresses chez OVHcloud](#step7)
+- [Etape 8 : reconfigurer vos logiciels de messagerie](#step8)
+- [Etape 9 : remplacer les serveurs DNS actifs de votre nom de domaine par ceux d'OVHcloud](#step9)
+- [Etape 10 : transférer votre nom de domaine chez OVHcloud](#step10)
 
 En suivant ces 10 étapes **dans l'ordre**, vous n'aurez pas d'interruption de service pour l'accès à votre site web et pour la réception de vos nouveaux e-mails.
 
@@ -55,9 +55,9 @@ Dans ce cas, une interruption de service peut survenir.
 
 Si une telle interruption devait avoir lieu, ce guide est construit de telle sorte à en minimiser la durée.
 
-### Etape 1 : commander l'hébergement et les adresses e-mail chez OVHcloud
+### Etape 1 : commander l'hébergement et les adresses e-mail chez OVHcloud <a name="step1"></a>
 
-Plusieurs [offres d'hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} contiennent une offre e-mail « [MX Plan](https://help.ovhcloud.com/csm/fr-mx-plan-getting-started?id=kb_article_view&sysparm_article=KB0051931){.external} ». Cette offre e-mail permet de créer des adresses e-mail avec un espace de stockage de 5 Go maximum pour chaque adresse. Choisissez parmi les offres d'hébergement ci-dessous en fonction de la version PHP, de la version SQL, du nombre d'adresses e-mail dont vous avez besoin et de la taille de votre site web à migrer :
+Plusieurs [offres d'hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} contiennent une offre e-mail « [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities){.external} ». Cette offre e-mail permet de créer des adresses e-mail avec un espace de stockage de 5 Go maximum pour chaque adresse. Choisissez parmi les offres d'hébergement ci-dessous en fonction de la version PHP, de la version SQL, du nombre d'adresses e-mail dont vous avez besoin et de la taille de votre site web à migrer :
 
 - L'hébergement [Perso](/links/web/hosting-personal-offer) avec **10 adresses e-mail** « MX Plan »
 - L'hébergement [Pro](/links/web/hosting-professional-offer) avec **100 adresses e-mail** « MX Plan »
@@ -79,7 +79,7 @@ Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un 
 > OVHcloud propose d'autres offres e-mail en plus de l'offre « MX Plan ». Vous pouvez, par exemple, combiner à des adresses e-mail « MX Plan » des adresses [« Email-Pro »](/links/web/email-pro) et/ou des comptes [« Exchange »](/links/web/emails-hosted-exchange).
 >
 
-### Etape 2 : créer et préconfigurer une zone DNS pour votre nom de domaine chez OVHcloud
+### Etape 2 : créer et préconfigurer une zone DNS pour votre nom de domaine chez OVHcloud <a name="step2"></a>
 
 Si votre domaine se trouve chez un autre prestataire et que vous souhaitez le transférer chez OVHcloud, vous devez dans un premier temps créer et pré-configurer une zone DNS avant d'initier le transfert, afin d'éviter l'interruption de services.
 
@@ -110,13 +110,13 @@ Pour récupérer la bonne adresse IP cible de votre hébergement OVHcloud, consu
 > Notez les deux valeurs cibles ayant pour type d'enregistrement « NS ». Ces valeurs, de type `dnsXX.ovh.net` et `nsXX.ovh.net`, correspondent aux serveurs DNS associés à cette zone DNS pour votre nom de domaine. Elles serviront lors de l'[étape 9](#etape-9--remplacer-les-serveurs-dns-actifs-de-votre-nom-de-domaine-par-ceux-dovhcloud) de ce guide.
 >
 
-### Etape 3 : récupérer une sauvegarde complète de votre site web
+### Etape 3 : récupérer une sauvegarde complète de votre site web <a name="step3"></a>
 
 Récupérez le contenu de l'espace de stockage FTP de votre hébergement actuel, ainsi qu'une sauvegarde de votre base de données si votre site web en utilise une.
 
 Ces opérations se font exclusivement auprès de votre hébergeur actuel. Contactez-le si vous éprouvez des difficultés à récupérer une sauvegarde complète de votre site web.
 
-### Etape 4 : importer la sauvegarde de votre site web sur votre offre d'hébergement OVHcloud
+### Etape 4 : importer la sauvegarde de votre site web sur votre offre d'hébergement OVHcloud <a name="step4"></a>
 
 Pour importer la sauvegarde de l'espace de stockage FTP de votre ancien prestataire, [connectez-vous à l'espace de stockage FTP de votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_connection) et téléversez la sauvegarde dans le dossier racine « www » (ou dans un autre dossier racine que vous aurez préalablement créé).
 
@@ -160,7 +160,7 @@ Déclarez/autorisez votre nom de domaine externe sur votre hébergement web OVHc
 
 Après la propagation DNS, le site web qui s'affichera avec votre nom de domaine sera celui hébergé chez OVHcloud.
 
-### Etape 5 : recréer vos adresses e-mail à l'identique chez OVHcloud
+### Etape 5 : recréer vos adresses e-mail à l'identique chez OVHcloud <a name="step5"></a>
 
 Recréez à l'identique les adresses e-mail présentes chez votre fournisseur e-mail à l'aide de notre guide sur la [création d'adresses e-mail « MX Plan »](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation).
 
@@ -169,7 +169,7 @@ Si vous avez opté pour une solution « Email Pro » ou « Exchange », consulte
 - Pour [Email-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 - Pour [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-### Etape 6 : déclarer les serveurs e-mail OVHcloud dans la zone DNS active de votre nom de domaine
+### Etape 6 : déclarer les serveurs e-mail OVHcloud dans la zone DNS active de votre nom de domaine <a name="step6"></a>
 
 Cette étape consiste à effectuer le changement des serveurs e-mail « MX » dans la zone DNS active de votre nom de domaine.
 Cela aura pour effet de réceptionner vos nouveaux e-mails sur vos nouvelles adresses e-mail OVHcloud.
@@ -187,7 +187,7 @@ Une fois la propagation terminée, tous les nouveaux e-mails reçus seront réce
 Nous vous conseillons de faire le changement des entrées « MX » **avant** d'effectuer la migration du contenu de vos anciennes adresses e-mail.
 En effet, cette méthode vous évite de refaire une migration pour les quelques e-mails reçus sur vos anciennes adresses e-mail pendant la propagation DNS.
 
-### Etape 7 : transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles adresses chez OVHcloud
+### Etape 7 : transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles adresses chez OVHcloud <a name="step7"></a>
 
 Après la propagation DNS , vos nouveaux e-mails sont désormais tous reçus sur vos nouvelles adresses e-mail. Mais vos anciens e-mails sont toujours enregistrés sur votre ancien serveur e-mail.
 
@@ -212,7 +212,7 @@ Réitérez l'opération pour l'ensemble de vos comptes e-mail.
 
 **Option 2** : effectuez une sauvegarde du contenu de vos anciennes adresses e-mail à l'aide d'un logiciel de messagerie (Outlook, Mail pour macOS, etc.). Reconfigurez votre logiciel de messagerie puis importez la sauvegarde dans votre nouvelle adresse e-mail OVHcloud.
 
-### Etape 8 : reconfigurer vos logiciels de messagerie
+### Etape 8 : reconfigurer vos logiciels de messagerie <a name="step8"></a>
 
 Une fois vos anciennes adresses e-mail migrées chez OVHcloud, reconfigurez vos logiciels de messagerie à l'aide de l'ensemble de nos guides sur le sujet.
 
@@ -228,7 +228,7 @@ Une fois vos anciennes adresses e-mail migrées chez OVHcloud, reconfigurez vos 
 
 - Retrouvez l'ensemble de nos guides d'aide à la configuration dans les sections `Configuration Exchange sur ordinateur` et `Configuration Exchange sur smartphone` de [notre documentation sur l'offre Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-### Etape 9 : remplacer les serveurs DNS actifs de votre nom de domaine par ceux d'OVHcloud
+### Etape 9 : remplacer les serveurs DNS actifs de votre nom de domaine par ceux d'OVHcloud <a name="step9"></a>
 
 La zone DNS pré-configurée lors de l'[étape 2](#etape-2--créer-et-préconfigurer-une-zone-dns-pour-votre-nom-de-domaine-chez-ovhcloud) n'est pas encore appliquée à votre nom de domaine. Actuellement, votre domaine utilise toujours les serveurs DNS de votre fournisseur d'origine.
 
@@ -239,7 +239,7 @@ Remplacez les serveurs DNS actuels (du registrar d'origine) par les deux serveur
 > Le changement des serveurs DNS doit être effectué depuis le bureau d'enregistrement actuel de votre nom de domaine et nécessite un temps de **propagation de 24 à 48 heures** maximum avant d’être pleinement effectif.
 >
 
-### Etape 10 : transférer votre nom de domaine chez OVHcloud
+### Etape 10 : transférer votre nom de domaine chez OVHcloud <a name="step10"></a>
 
 Une fois la propagation DNS terminée, vérifiez que l'ensemble de votre site web est fonctionnel. Naviguez sur votre site internet pour vérifier que toutes les pages s'affichent correctement et qu'aucune erreur 404 ne soit renvoyée. Vérifiez également l'envoi et la réception des e-mails depuis vos adresses e-mail.
 Si tout est en ordre, déverrouillez votre nom de domaine et récupérez son « code de transfert », « EPP » ou « AuthCode » depuis votre bureau d'enregistrement actuel.
