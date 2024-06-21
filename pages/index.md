@@ -370,6 +370,7 @@
             + [Extend Volume in vSphere and in OS](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/extend_disk)
             + [Testing a temporary host loss by enabling resilience mode](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_resilience_mode)
             + [SMTP Monitoring Alerts in vROps](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrops_monitoring_by_smtp)
+            + [Logs Data Plateform - VMware log forwading to an LDP stream](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp)
         + [Managing resources](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-resources)
             + [How to add storage?](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_storage)
             + [How to add a host?](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_host)
