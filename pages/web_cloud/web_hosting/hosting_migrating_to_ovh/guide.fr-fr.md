@@ -102,7 +102,7 @@ Pour récupérer la bonne adresse IP cible de votre hébergement OVHcloud, consu
 
 > [!success]
 >
-> Notez les deux valeurs cibles ayant pour type d'enregistrement « NS ». Ces valeurs, de type `dnsXX.ovh.net` et `nsXX.ovh.net`, correspondent aux serveurs DNS associés à cette zone DNS pour votre nom de domaine. Elles serviront lors de l'[étape 9](#etape-9--remplacer-les-serveurs-dns-actifs-de-votre-nom-de-domaine-par-ceux-dovhcloud) de ce guide.
+> Notez les deux valeurs cibles ayant pour type d'enregistrement « NS ». Ces valeurs, de type `dnsXX.ovh.net` et `nsXX.ovh.net`, correspondent aux serveurs DNS associés à cette zone DNS pour votre nom de domaine. Elles serviront lors de l'[étape 9](#step9) de ce guide.
 >
 
 ### Etape 3 : récupérer une sauvegarde complète de votre site web <a name="step3"></a>
