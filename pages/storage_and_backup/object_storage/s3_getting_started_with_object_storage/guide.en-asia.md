@@ -112,14 +112,16 @@ aws s3 cp /datas/test1 s3://<bucket_name>
 
 ```bash
 # upload an object to High Performance tier
-aws s3api put-object --bucket <bucket_name> --key <object_name> --body /datas/test1 --storage-class EXPRESS_ONEZONE
-```
+aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/test1 --storage-class EXPRESS_ONEZONE
 
+# explicitly upload an object to Standard tier
+aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/test1 --storage-class STANDARD
+```
 
 **By default, objects are named after files, but can be renamed**
 
 ```bash
-aws s3 cp /datas/test1 s3://<bucket_name>/other-filename
+aws s3 cp /data/test1 s3://<bucket_name>/other-filename
 ```
 
 **Downloading an object from a bucket**
