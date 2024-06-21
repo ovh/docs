@@ -1,5 +1,5 @@
 ---
-title: "Rekordy DNS"
+title: "Wszystko o rekordach DNS"
 excerpt: "Poznaj różne typy rekordów DNS dostępnych w strefie DNS OVHcloud"
 updated: 2024-06-17
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Cos'è una zona DNS?"
-excerpt: "Scopri il ruolo di una zona DNS e i record che contiene per un dominio"
+title: "Sapere tutto sulla zona DNS"
+excerpt: "Questa guida ti mostra il ruolo di una zona DNS e i record che contiene per un dominio"
 updated: 2024-06-17
 ---
 
