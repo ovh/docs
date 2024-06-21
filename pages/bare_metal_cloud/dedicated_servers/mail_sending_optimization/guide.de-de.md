@@ -67,7 +67,7 @@ Um den Versand zu optimieren und das Risiko einer Blockierung Ihrer E-Mails zu v
 
 Erstellen Sie zunächst einen A-Eintrag in der DNS-Zone Ihres Domainnamens mit der IP-Adresse Ihres Servers als Ziel.
 
-Wenn Ihre DNS-Server von OVHcloud verwaltet werden, Sie dazu unsere [Anleitung zur Bearbeitung der OVHcloud DNS-Zone über Ihr Kundencenter](/pages/web_cloud/domains/dns_zone_edit#zugang-zur-verwaltung-einer-ovhcloud-dns-zone).
+Wenn Ihre DNS-Server von OVHcloud verwaltet werden, Sie dazu unsere [Anleitung zur Bearbeitung der OVHcloud DNS-Zone über Ihr Kundencenter](/pages/web_cloud/domains/dns_zone_edit).
 
 Nach der Änderung der DNS-Zone Ihres Domainnamens ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.
 

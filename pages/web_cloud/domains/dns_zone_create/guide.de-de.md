@@ -16,7 +16,7 @@ Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei ei
 - Die E-Mail-Server (DNS-Einträge vom Typ *MX*), die E-Mails erhalten sollen, die an Adressen mit diesem Domainnamen versendet wurden. Wenn Sie die MX-Einträge Ihres Domainnamens konfigurieren, können Sie E-Mails über Ihre personalisierten E-Mail-Adressen empfangen.
 - Informationen zur Sicherheit/Authentifizierung von Diensten (Webhosting, Webserver, E-Mail-Server, etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC*, etc.).
 
-Für weitere Informationen zu DNS-Zonen und wie Sie diese im [OVHcloud Kundencenter](/links/manager) editieren, lesen Sie [unsere Dokumentation zu DNS](/pages/web_cloud/domains/dns_zone_edit).
+Lesen Sie bei Bedarf unsere Dokumentation zu [DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records) und [Bearbeiten einer DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) über Ihr [OVHcloud Kundencenter](/links/manager).
 
 Eine DNS-Zone wird auf **DNS-Servern** gehostet. Zur Verwendung der dort registrierten DNS-Zone müssen die **DNS-Server** für diesen Domainnamen deklariert werden. 
 
@@ -98,7 +98,7 @@ Im linken Menü sollte für den Domainnamen ein Globus-Symbol mit der Bezeichnun
 > [!primary]
 > Wenn Sie hier nur das Globus-Symbol sehen (ohne den Zusatz *DNS*), dann wird dieser Domainname bereits in Ihrem OVHcloud Kundencenter verwaltet.
 >
-> Wenn Sie der *Administrator* dieses Domainnamens sind, können Sie die **DNS-Server** selbst ändern. Verwenden Sie ggf. [unsere Anleitung](/pages/web_cloud/domains/dns_server_general_information) zum Thema.
+> Wenn Sie der *Administrator* dieses Domainnamens sind, können Sie die **DNS-Server** selbst ändern. Verwenden Sie ggf. [unsere Anleitung](/pages/web_cloud/domains/dns_server_edit) zum Thema.
 >
 > Zur Erinnerung: Überprüfen Sie, bevor Sie die bei Ihrer Domainnamen angegebenen **DNS-Server** ändern, ob die Konfiguration der neuen DNS-Zone Ihren Erwartungen entspricht.
 >

@@ -241,9 +241,9 @@ Esta disfunção pode ter várias causas:
 
 - Verifique que o domínio que está a consultar ("domain.tld") é aquele com o qual acabou de instalar o "módulo 1 clique".
 
-- Se alterou recentemente a [zona DNS ativa](/pages/web_cloud/domains/dns_server_general_information)/[servidores DNS](/pages/web_cloud/domains/dns_zone_edit) do seu domínio ou uma [transferência de domínio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Aguarde até que estas operações estejam finalizadas (4-24 horas para uma modificação na zona DNS e 24-48 horas para uma modificação dos servidores DNS). Não se esqueça também de reiniciar os seus dispositivos (PC, smartphone, box, etc.) e esvaziar a cache do seu browser.
+- Se alterou recentemente a [zona DNS ativa](/pages/web_cloud/domains/dns_zone_edit)/[servidores DNS](/pages/web_cloud/domains/dns_server_edit) do seu domínio ou uma [transferência de domínio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Aguarde até que estas operações estejam finalizadas (4-24 horas para uma modificação na zona DNS e 24-48 horas para uma modificação dos servidores DNS). Não se esqueça também de reiniciar os seus dispositivos (PC, smartphone, box, etc.) e esvaziar a cache do seu browser.
 
-- O seu domínio está sempre ligado ao seu antigo alojamento web. Nesse caso, altere a [zona DNS ativa](/pages/web_cloud/domains/dns_zone_edit) associada ao seu domínio ou aos seus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information). Se a zona DNS ativa do seu domínio não for gerida na OVHcloud, contacte o seu fornecedor DNS.
+- O seu domínio está sempre ligado ao seu antigo alojamento web. Nesse caso, altere a [zona DNS ativa](/pages/web_cloud/domains/dns_zone_edit) associada ao seu domínio ou aos seus [servidores DNS](/pages/web_cloud/domains/dns_server_edit). Se a zona DNS ativa do seu domínio não for gerida na OVHcloud, contacte o seu fornecedor DNS.
 
 ### A palavra-passe "Administrador" de acesso a "a interface de administração" do seu módulo 1 clique não funciona <a name="adminpassword"></a>
 

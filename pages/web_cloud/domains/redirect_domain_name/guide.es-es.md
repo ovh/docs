@@ -60,7 +60,7 @@ Hay tres opciones de redirección disponibles en el [área de cliente de OVHclou
 > La pestaña `Redirección`{.action} presenta una cuarta opción que permite hacer que su dominio apunte rápidamente a los registros DNS A, AAAA y CNAME.<br>
 > Debido a que no se trata de una "redirección", esta opción no se explicará en esta guía.
 >
-> Para más información sobre los registros DNS, consulte nuestra documentación sobre los [registros DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Para más información sobre los registros DNS, consulte nuestra documentación sobre los [registros DNS](/pages/web_cloud/domains/dns_zone_records).
 >
 
 A continuación se describen los tres tipos de redirecciones, que se explican paso a paso.

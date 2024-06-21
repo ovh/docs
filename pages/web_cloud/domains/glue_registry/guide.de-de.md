@@ -144,7 +144,7 @@ Gehen Sie auf den Tab `DNS-Server`{.action} und klicken Sie dann auf `DNS-Server
 > Ohne diesen Schritt werden die personalisierten DNS-Server nicht korrekt registriert und funktionieren daher nicht mit Ihrem Domainnamen.
 >
 
-Beenden Sie die Schritte und folgen Sie bei Bedarf den Anweisungen in unserer [Dokumentation zum Ändern der OVHcloud DNS-Server](/pages/web_cloud/domains/dns_server_general_information)".
+Beenden Sie die Schritte und folgen Sie bei Bedarf den Anweisungen in unserer [Dokumentation zum Ändern der OVHcloud DNS-Server](/pages/web_cloud/domains/dns_server_edit)".
 
 > [!primary]
 > 

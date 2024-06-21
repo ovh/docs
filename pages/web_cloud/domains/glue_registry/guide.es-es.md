@@ -146,7 +146,7 @@ Abra la pestaña `Servidores DNS`{.action} y haga clic en `Cambiar los servidore
 > De lo contrario, los servidores DNS personalizados no se tendrán en cuenta correctamente y no funcionarán con el dominio.
 >
 
-Siga los pasos que se indican y, si necesita ayuda, consulte nuestra guía «[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
+Siga los pasos que se indican y, si necesita ayuda, consulte nuestra guía «[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
 
 > [!primary]
 > 

@@ -6,7 +6,7 @@ updated: 2022-08-02
 
 ## Objective
 
-Several error messages may appear on your browser in the event of your site being inaccessible. The examples below indicate an incorrect configuration of your [DNS](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) or a suspended domain (if your website does not display one of the error messages described here, see the [Go further](#go-further) section of this guide):
+Several error returns may appear on your browser if your website becomes inaccessible. The examples below show an incorrect configuration of your [DNS servers](/pages/web_cloud/domains/dns_server_edit), your [DNS zone](/pages/web_cloud/domains/dns_zone_edit) or a suspended domain (if your website does not display one of the error messages described here, see the [Go further](#go-further) section):
 
 |Browser|Error Message|
 |-|---|
@@ -26,9 +26,11 @@ Several error messages may appear on your browser in the event of your site bein
 
 ## Requirements
 
-- control over your domain’s servers and [DNS zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns)
+- control over your domain’s servers and [DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 - access to the [OVHcloud Control Panel](/links/manager)
-- being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
+- Administrative access to your domain name in order to change the DNS servers and edit the [DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+- Access to the [OVHcloud Control Panel](/links/manager)
+- No outstanding [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 
@@ -54,7 +56,7 @@ After the renewal of your offer is completed, your website will be available wit
 
 ### Step 2: check the DNS servers
 
-To check that your [DNS servers](/pages/web_cloud/domains/dns_server_general_information) are valid, click on `Domain names`{.action} in your [OVHcloud Control Panel](/links/manager), then on your domain name.
+To check that your [DNS servers](/pages/web_cloud/domains/dns_server_edit) are valid, click on `Domain names`{.action} in your [OVHcloud Control Panel](/links/manager), then on your domain name.
 
 #### Scenario 1: no anomalies appear on the DNS servers
 
@@ -68,13 +70,13 @@ If they are identical to the targets of the `NS` type entries in the `DNS zone`{
 
 #### Scenario 2: a warning appears above the DNS zone
 
-A warning in the `DNS zone`{.action} tab indicates that the DNS servers used by your domain name are not the ones indicated in your [DNS zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns). Two scenarios are possible:
+A warning in the `DNS zone`{.action} tab indicates that the DNS servers used by your domain name are not the ones indicated in your [DNS zone](/pages/web_cloud/domains/dns_zone_edit). Two scenarios are possible:
 
 - Under the sentence "You are currently using the following DNS servers", the servers listed are "ns **?** .ovh.net" and "dns **?** .ovh.net" (replace the "**?**" by any number):
 
 ![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}
 
-Modify the DNS servers as described in [this guide](/pages/web_cloud/domains/dns_server_general_information#modifying-dns-servers), so that they are identical to the targets of the `NS` type records in your `DNS zone`{.action}.
+Modify the DNS servers as described in [this guide](/pages/web_cloud/domains/dns_server_edit), so that they are identical to the targets of the `NS` type records in your `DNS zone`{.action}.
 
 Your website will then be available within a maximum of 48 hours.
 
@@ -86,7 +88,7 @@ Your website will then be available within a maximum of 48 hours.
 >
 > In this situation, please contact your DNS Zone provider, your webmaster or a [OVHcloud partner](/links/partner) before making any changes.
 >
-> The DNS servers used by your domain name may be functional and the problem accessing your website be linked to a missing or incorrect entry in the active [DNS zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns). Changing the DNS servers in this situation might make your e-mail addresses or other online applications related to your domain name unavailable.
+> The DNS servers used by your domain name may be functional and the problem accessing your website be linked to a missing or incorrect entry in the active [DNS zone](/pages/web_cloud/domains/dns_zone_general_information). Changing the DNS servers in this situation might make your e-mail addresses or other online applications related to your domain name unavailable.
 >
 
 #### Scenario 3: no NS-type entries appear in the DNS zone
@@ -119,7 +121,7 @@ In the `General information`{.action} tab, copy the IPV4 and/or IPV6 address of 
 
 ![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
 
-Then refer to it in your domain’s [DNS zone](/pages/web_cloud/domains/dns_zone_edit#edit-your-domain-names-ovhcloud-dns-zone), by modifying or creating one or more `A` entries.
+Then refer to it in your domain’s [DNS zone](/pages/web_cloud/domains/dns_zone_edit), by modifying or creating one or more `A` entries.
 
 ![ipv4-DNSzone](images/dashboard-entry-a.png){.thumbnail}
 

@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial - Korzystanie z opcji Zonemaster'
-updated: 2024-03-08
+updated: 2024-06-18
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ updated: 2024-03-08
 
 > [!primary]
 >
-> Aby lepiej zrozumieć pojęcie DNS, zapoznaj się z wprowadzeniem naszego przewodnika dotyczącego [konfiguracji strefy DNS](/pages/web_cloud/domains/dns_server_general_information).
+> Zapoznaj się z koncepcją DNS w przewodniku "[Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information) ".
 
 ## Wymagania początkowe
 

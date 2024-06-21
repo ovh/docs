@@ -23,7 +23,7 @@ Quando adiciona um domínio à sua plataforma de e-mail, poderá ser-lhe solicit
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}.
 - Dispor de uma solução [Exchange](https://www.ovhcloud.com/pt/emails/) ou [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
 - Ter adicionado um domínio à sua plataforma de e-mail. Se necessário, pode consultar o guia " [Adicionar um domínio a uma plataforma de e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ".
-- Ter a possibilidade de configurar a zona DNS do domínio em questão a [partir da Área de Cliente OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ou da interface de gestão na qual está registado.
+- Poder [configurar a zona DNS](/pages/web_cloud/domains/dns_zone_edit) do domínio em causa a partir da Área de Cliente OVHcloud ou da interface de gestão onde está registado.
 
 ## Instruções
 

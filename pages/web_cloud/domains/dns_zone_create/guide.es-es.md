@@ -18,7 +18,7 @@ Por ejemplo, puede especificar:
 - Servidores de correo (registros DNS de tipo *MX*) a los que el dominio debe redirigir los mensajes que reciba. para consultarlos en su dirección de correo electrónico personalizada con su dominio.
 - Información relacionada con la seguridad o la autenticación de sus servicios (alojamiento web, servidor web, servidor de correo, etc.) asociados a su dominio (registros DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
 
-Si lo necesita, consulte nuestra documentación sobre [los registros DNS y la edición de una zona DNS](/pages/web_cloud/domains/dns_zone_edit) desde su [área de cliente OVHcloud](/links/manager).
+Si lo necesita, consulte nuestra documentación sobre [registros DNS](/pages/web_cloud/domains/dns_zone_records) y la [edición de una zona DNS](/pages/web_cloud/domains/dns_zone_edit) desde su [área de cliente de OVHcloud](/links/manager).
 
 Una zona DNS está alojada o registrada en **servidores DNS**. Son los **servidores DNS** los que deben estar declarados ante el nombre de dominio para utilizar la zona DNS que albergan. 
 
@@ -102,7 +102,7 @@ Lleva el nombre de su dominio y un logotipo en forma de globo etiquetado con el 
 > [!primary]
 > En este punto, si solo tiene un logotipo en forma de globo (sin el término *DNS* escrito en el interior), el dominio ya está gestionado en el área de cliente de OVHcloud. 
 >
-> Si es el contacto *Administrador* de este último, podrá en este caso cambiar directamente los **servidores DNS** con ayuda de nuestra [guía](/pages/web_cloud/domains/dns_server_general_information) sobre el asunto.
+> Si es el contacto *Administrador* de este último, podrá en este caso cambiar directamente los **servidores DNS** con ayuda de nuestra [guía](/pages/web_cloud/domains/dns_server_edit) sobre el asunto.
 >
 Le recordamos que antes de cambiar los **servidores DNS** declarados con su dominio, compruebe que la configuración de la nueva zona DNS se ajusta a sus expectativas.
 >

@@ -92,7 +92,7 @@ W poniższym przykładzie adres IP serwera DNS nie odpowiada.
 
 ![domena](images/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
 
-W sekcji `Domeny`{.action} wybierz odpowiednią domenę, a następnie kliknij zakładkę `Serwery DNS`{.action}. W tej zakładce [zmień serwery DNS](/pages/web_cloud/domains/dns_server_general_information). 
+W sekcji `Domeny`{.action} wybierz odpowiednią domenę, a następnie kliknij zakładkę `Serwery DNS`{.action}. W tej zakładce [zmień serwery DNS](/pages/web_cloud/domains/dns_server_edit). 
 
 #### Błąd dotyczący domeny **.ie**,.**de** lub **.it** po aktualizacji DNS
 
@@ -136,7 +136,7 @@ Jeśli zauważysz problem, który nie jest związany z konfiguracją serwerów D
 
 [Transfer domeny do innego operatora](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

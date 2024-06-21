@@ -18,7 +18,7 @@ Pode, por exemplo, especificar:
 - Os servidores de e-mail (registos DNS de tipo *MX*) para os quais o seu nome de domínio deve reencaminhar os e-mails que recebe. Isto permite-lhe consultá-los no(s) seu(s) endereço(s) de e-mail(s) personalizado(s) com o seu nome de domínio.
 - Informações relacionadas com a segurança / a autenticação dos seus serviços associados (alojamento web, servidor web, servidor de e-mail, etc.) ao seu nome de domínio (registos DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
 
-Se necessário, consulte [o nosso manual sobre os registos DNS e a edição de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit) a partir do seu [Área de Cliente OVHcloud](/links/manager).
+Se necessário, consulte a nossa documentação sobre [os registos DNS](/pages/web_cloud/domains/dns_zone_records) e a [edição de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit) a partir da [Área de Cliente OVHcloud](/links/manager).
 
 A atualização "dinâmica" de um registo DNS pode evitar uma interrupção prolongada de um dos seus serviços se não dispõe de um endereço IP dito "fixo" (que não se altera).
 

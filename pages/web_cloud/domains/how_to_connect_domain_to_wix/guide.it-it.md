@@ -105,7 +105,7 @@ Se utilizzi un servizio di posta elettronica OVHcloud o prevedi di sottoscrivere
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Creare una zona DNS OVHcloud per un dominio](/pages/web_cloud/domains/dns_zone_create)
 

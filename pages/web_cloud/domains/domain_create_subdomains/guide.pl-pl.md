@@ -92,7 +92,7 @@ Możliwe są dwa przypadki:
 >
 > Aktywna strefa DNS Twojej domeny nie musi być zarządzana u tego samego dostawcy, co Twoja domena.
 >
-> 1 : Aby ustalić, gdzie znajduje się aktywna strefa DNS domeny zarejestrowanej w OVHcloud, skorzystaj z naszego przewodnika "[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
+> 1 : Aby ustalić, gdzie znajduje się aktywna strefa DNS domeny zarejestrowanej w OVHcloud, skorzystaj z naszego przewodnika "[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 >
 > 2: Jeśli Twoja domena nie jest zarejestrowana w OVHcloud, skontaktuj się z *aktualnym operatorem* Twojej domeny, aby dowiedzieć się, gdzie hostowana jest aktywna strefa DNS. Aby wykonać transfer domeny do OVHcloud, zapoznaj się z naszym [przewodnikiem](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 >
@@ -181,7 +181,7 @@ Aby uzyskać więcej informacji na temat konfiguracji platformy E-mail Pro, zapo
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Instalacja kilku stron WWW na hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 

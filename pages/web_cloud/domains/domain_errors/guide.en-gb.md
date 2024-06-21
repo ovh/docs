@@ -89,7 +89,7 @@ In the example below, the IP address of the DNS server is not responding.
 
 ![domain](images/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
 
-In the `Domain names`{.action} section, select the domain name concerned, then click the `DNS servers`{.action} tab. In this tab, [edit your DNS servers](/pages/web_cloud/domains/dns_server_general_information). 
+In the `Domain names`{.action} section, select the domain name concerned, then click the `DNS servers`{.action} tab. In this tab, [edit your DNS servers](/pages/web_cloud/domains/dns_server_edit). 
 
 #### Error on a **.ie**, **.de** or **.it** domain name after a DNS update
 
@@ -133,7 +133,7 @@ If you notice an anomaly that is not related to the configuration of the DNS ser
 
 [Transferring a domain name to another registrar](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-[Editing the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information)
+[Editing the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
  
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

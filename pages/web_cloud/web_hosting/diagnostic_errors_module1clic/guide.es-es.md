@@ -241,9 +241,9 @@ Este fallo de funcionamiento puede deberse a varias causas:
 
 - Compruebe que el nombre de dominio ("domain.tld") es el que acaba de instalar el "módulo en un clic".
 
-- Si ha realizado recientemente un cambio en la [zona DNS activa](/pages/web_cloud/domains/dns_server_general_information)/[servidores DNS](/pages/web_cloud/domains/dns_zone_edit) de su nombre de dominio o una [transferencia de nombre de dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Espere a que se completen estas operaciones (4-24 horas para un cambio en la zona DNS y 24-48 horas para un cambio en los servidores DNS). No olvide reiniciar sus dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador de internet.
+- Si ha realizado recientemente un cambio en la [zona DNS activa](/pages/web_cloud/domains/dns_zone_edit)/[servidores DNS](/pages/web_cloud/domains/dns_server_edit) de su nombre de dominio o una [transferencia de nombre de dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Espere a que se completen estas operaciones (4-24 horas para un cambio en la zona DNS y 24-48 horas para un cambio en los servidores DNS). No olvide reiniciar sus dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador de internet.
 
-- Su dominio siempre está asociado a su antiguo alojamiento web. En ese caso, modifique la [zona DNS activa](/pages/web_cloud/domains/dns_zone_edit) asociada al dominio o a sus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information). Si la zona DNS activa de su dominio no está gestionada en OVHcloud, póngase en contacto con su proveedor DNS para que le informe.
+- Su dominio siempre está asociado a su antiguo alojamiento web. En ese caso, modifique la [zona DNS activa](/pages/web_cloud/domains/dns_zone_edit) asociada al dominio o a sus [servidores DNS](/pages/web_cloud/domains/dns_server_edit). Si la zona DNS activa de su dominio no está gestionada en OVHcloud, póngase en contacto con su proveedor DNS para que le informe.
 
 ### La contraseña "Administrador" de acceso a la "interfaz de administración" de su "módulo en un clic" no funciona <a name="adminpassword"></a>
 

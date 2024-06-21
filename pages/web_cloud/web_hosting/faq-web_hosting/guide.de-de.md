@@ -140,7 +140,7 @@ Wenn Ihre Webseite eine Datenbank enthält, lesen Sie unsere Anleitung [Backup i
 
 ![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
 
-Diese Anomalie ist Folge einer fehlerhaften Konfiguration auf der Ebene der [DNS-Server](/pages/web_cloud/domains/dns_server_general_information) oder der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), die Ihrer Domain zugewiesen sind.
+Diese Anomalie ist Folge einer fehlerhaften Konfiguration auf der Ebene der [DNS-Server](/pages/web_cloud/domains/dns_server_edit) oder der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), die Ihrer Domain zugewiesen sind.
 
 Der häufigste Fall ist: Domainname und Hosting wurden getrennt bestellt. Sie sind also nicht über die DNS-Zone untereinander verbunden.
 
@@ -150,9 +150,9 @@ Notieren Sie sich die angegebenen DNS-Server und gehen Sie dann auf den Tab `DNS
 
 Vergleichen Sie die **Ziele** der `NS`-Einträge im Tab `DNS-Zone`{.action} mit den **DNS-Servern** im Tab desselben Namens:
 
-- Wenn die Elemente identisch sind, ersetzen Sie das Ziel `213.186.33.5` durch den Vierzahlencode im Tab `Allgemeine Informationen` unter der Rubrik `IPv4` (weitere Informationen zu den durchzuführenden Aktionen finden Sie in [dieser Anleitung](/pages/web_cloud/domains/dns_zone_edit#in-der-praktischen-anwendung)).
+- Wenn die Elemente identisch sind, ersetzen Sie das Ziel `213.186.33.5` durch den Vierzahlencode im Tab `Allgemeine Informationen` unter der Rubrik `IPv4` (weitere Informationen zu den durchzuführenden Aktionen finden Sie in [dieser Anleitung](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Wenn die Elemente nicht identisch sind, aber die im Tab desselben Namens aufgeführten `DNS-Server` in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, setzen Sie die Anweisungen in [dieser Anleitung](/pages/web_cloud/domains/dns_server_general_information#dns-server-zurucksetzen) fort.
+- Wenn die Elemente nicht identisch sind, aber die im Tab desselben Namens aufgeführten `DNS-Server` in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, setzen Sie die Anweisungen in [dieser Anleitung](/pages/web_cloud/domains/dns_server_edit) fort.
 
 - Wenn die Elemente nicht identisch sind und die `DNS-Server` im Tab desselben Namens nicht in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](/links/partner) auf der [Seite der OVHcloud-Partner](/links/partner).
 

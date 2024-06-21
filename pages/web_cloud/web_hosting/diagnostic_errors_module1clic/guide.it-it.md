@@ -241,9 +241,9 @@ Questo malfunzionamento può avere diverse cause:
 
 - verifica che il dominio che consulti ("domain.tld") sia quello con cui hai appena installato il "modulo in 1 click".
 
-- Se hai apportato di recente una modifica alla [zona DNS attiva](/pages/web_cloud/domains/dns_server_general_information)/[server DNS](/pages/web_cloud/domains/dns_zone_edit) del tuo dominio o un [trasferimento di dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Attendi il completamento delle operazioni (4-24 ore per una modifica nella zona DNS e 24-48 ore per una modifica dei server DNS). Non dimenticare di riavviare i tuoi dispositivi (PC, smartphone, box, ecc...) e di svuotare la cache del tuo browser.
+- Se hai apportato di recente una modifica alla [zona DNS attiva](/pages/web_cloud/domains/dns_zone_edit)/[server DNS](/pages/web_cloud/domains/dns_server_edit) del tuo dominio o un [trasferimento di dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Attendi il completamento delle operazioni (4-24 ore per una modifica nella zona DNS e 24-48 ore per una modifica dei server DNS). Non dimenticare di riavviare i tuoi dispositivi (PC, smartphone, box, ecc...) e di svuotare la cache del tuo browser.
 
-- Il dominio è sempre associato al vecchio hosting Web. In questo caso, modifica la [zona DNS attiva](/pages/web_cloud/domains/dns_zone_edit) associata al dominio o i suoi [server DNS](/pages/web_cloud/domains/dns_server_general_information). Se la zona DNS attiva del dominio non è gestita in OVHcloud, contatta il provider DNS.
+- Il dominio è sempre associato al vecchio hosting Web. In questo caso, modifica la [zona DNS attiva](/pages/web_cloud/domains/dns_zone_edit) associata al dominio o i suoi [server DNS](/pages/web_cloud/domains/dns_server_edit). Se la zona DNS attiva del dominio non è gestita in OVHcloud, contatta il provider DNS.
 
 ### La password "Amministratore" di accesso all'"interfaccia di amministrazione" del tuo "modulo in 1 click" non funziona <a name="adminpassword"></a>
 

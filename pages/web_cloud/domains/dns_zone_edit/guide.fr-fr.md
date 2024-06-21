@@ -1,7 +1,7 @@
 ---
 title: "Éditer une zone DNS OVHcloud"
 excerpt: "Découvrez comment éditer une zone DNS OVHcloud via votre espace client OVHcloud"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ updated: 2024-06-12
 
 Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments (serveurs DNS, zones DNS, etc.) permettant de faire correspondre un nom de domaine avec une adresse IP.
 
-Pour plus d'explications, consultez nos guides « [Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_general_information) » et « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) » 
+Pour plus d'explications, consultez nos guides « [Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_general_information) » et « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) ».
 
 **Découvrez comment éditer votre zone DNS OVHcloud via votre espace client OVHcloud.**
 
@@ -65,7 +65,6 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 Vous pouvez éditer la zone DNS OVHcloud de votre nom de domaine en ajoutant, modifiant ou en supprimant un enregistrement DNS.<br>
 Pour effectuer cela, vous pouvez soit modifier manuellement la zone en mode textuel, soit utiliser nos assistants de configuration.
-
 
 #### Modifier manuellement la zone en mode textuel <a name="txtmod"></a>
 

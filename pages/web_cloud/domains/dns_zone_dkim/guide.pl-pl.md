@@ -118,7 +118,7 @@ Podpis jest następnie szyfrowany kluczem prywatnym, używając asymetrycznego s
 
 #### Dlaczego trzeba skonfigurować serwery DNS? <a name="dns-and-dkim"></a>
 
-Aby odbiorca mógł zweryfikować podpis DKIM nadawcy, będzie potrzebował parametrów DKIM, a przede wszystkim klucza publicznego, aby go odszyfrować. [Strefa DNS](/pages/web_cloud/domains/dns_zone_edit) domeny jest dostępna do wiadomości publicznej. W związku z tym dodano wpis DNS w celu przekazania odbiorcy klucza publicznego oraz parametrów DKIM.
+Aby odbiorca mógł zweryfikować podpis DKIM nadawcy, będzie potrzebował parametrów DKIM, a przede wszystkim klucza publicznego, aby go odszyfrować. [Strefa DNS](/pages/web_cloud/domains/dns_zone_general_information) domeny jest dostępna do wiadomości publicznej. W związku z tym dodano wpis DNS w celu przekazania odbiorcy klucza publicznego oraz parametrów DKIM.
 
 #### Co to jest selekcja DKIM <a name="selector"></a>
 

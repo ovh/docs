@@ -92,7 +92,7 @@ Existem dois casos possíveis:
 >
 > A zona DNS ativa do seu domínio não é obrigatoriamente gerida junto do mesmo fornecedor do seu domínio.
 >
-> 1: Para identificar a localização da zona DNS ativa de um domínio registado na OVHcloud, pode consultar o nosso guia "[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
+> 1: Para identificar a localização da zona DNS ativa de um domínio registado na OVHcloud, pode consultar o nosso guia "[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 >
 > 2: Se o domínio não estiver registado na OVHcloud, contacte o *agente de registo* atual do seu domínio para saber onde está alojada a sua zona DNS ativa. Tenha em conta que pode utilizar o nosso guia "[Transferir o seu nome de domínio para OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)" se deseja realizar esta ação.
 >
@@ -181,7 +181,7 @@ Para obter mais informações sobre a configuração de uma plataforma E-mail Pr
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 

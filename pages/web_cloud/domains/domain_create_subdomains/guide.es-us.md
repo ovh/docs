@@ -92,7 +92,7 @@ Existen dos situaciones posibles:
 >
 > La zona DNS activa de su dominio no está obligatoriamente gestionada con el mismo proveedor que su dominio.
 >
-> 1: Para identificar la zona DNS activa de un dominio registrado en OVHcloud, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
+> 1: Para identificar la zona DNS activa de un dominio registrado en OVHcloud, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 >
 > 2: Si su dominio no está registrado con OVHcloud, contacte con el actual agente registrador* para conocer el lugar en el que está alojada su zona DNS activa. Puede consultar nuestra guía "[Transferir un dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)" si desea realizar esta acción.
 >
@@ -169,7 +169,7 @@ Para más información sobre la configuración de una plataforma Exchange, consu
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 

@@ -10,7 +10,7 @@ updated: 2022-08-02
 
 ## Wprowadzenie 
 
-W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce kilka zwrotów błędów. Poniższe przykłady wskazują na nieprawidłową konfigurację Twoich [DNS](/pages/web_cloud/domains/dns_server_general_information#zrozumienie-pojecia-dns) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla żadnego z komunikatów o błędzie opisanych tutaj, sprawdź sekcję [Sprawdź również](#go-further)):
+W przypadku niedostępności Twojej strony WWW może pojawić się kilka zwrotów błędu. Poniższe przykłady ilustrują błędną konfigurację Twoich [serwerów DNS](/pages/web_cloud/domains/dns_server_edit), Twojej [strefy DNS](/pages/web_cloud/domains/dns_zone_edit) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla jednego z komunikatów o błędach opisanych tutaj, zobacz sekcję [Sprawdź również](#go-further)):
 
 |Przeglądarka|Komunikat błędu|
 |-|---|
@@ -30,7 +30,7 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 
 ## Wymagania początkowe
 
-- Zarządzanie serwerami i [strefą DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns) domeny
+- Zarządzanie serwerami i [strefą DNS](/pages/web_cloud/domains/dns_zone_edit) domeny
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
 
@@ -58,7 +58,7 @@ Po odnowieniu domeny Twoja strona będzie dostępna w ciągu 48 godzin.
 
 ### Etap 2: sprawdź serwery DNS
 
-Aby sprawdzić poprawność Twoich [serwerów DNS](/pages/web_cloud/domains/dns_server_general_information), w [Panelu klienta OVHcloud](/links/manager) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
+Aby sprawdzić poprawność Twoich [serwerów DNS](/pages/web_cloud/domains/dns_server_edit), w [Panelu klienta OVHcloud](/links/manager) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
 
 #### Scenariusz 1: brak anomalii na serwerach DNS
 
@@ -78,7 +78,7 @@ Ostrzeżenie w zakładce `Strefa DNS`{.action} wskazuje, że serwery DNS używan
 
 ![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}
 
-Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_general_information#zmien-serwery-dns), aby były one identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}.
+Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_edit), aby były one identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}.
 
 Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 
@@ -90,7 +90,7 @@ Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 >
 > W takiej sytuacji przed przystąpieniem do jakichkolwiek czynności, należy skontaktować się z dostawcą usług hostowanych w strefie DNS, webmasterem lub [partnerami OVHcloud](/links/partner).
 >
-> Możliwe, że serwery DNS używane przez Twoją domenę działają i że problem z dostępem do Twojej strony jest związany z brakującym lub nieprawidłowym wpisem w [strefie DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns). Każda zmiana serwerów DNS może spowodować niedostępność Twoich kont e-mail lub innych aplikacji online.
+> Możliwe, że serwery DNS używane przez Twoją domenę działają i że problem z dostępem do Twojej strony jest związany z brakującym lub nieprawidłowym wpisem w [strefie DNS](/pages/web_cloud/domains/dns_zone_general_information). Każda zmiana serwerów DNS może spowodować niedostępność Twoich kont e-mail lub innych aplikacji online.
 >
 
 #### Scenariusz 3: w strefie DNS nie pojawia się żaden wpis typu NS
@@ -123,7 +123,7 @@ W zakładce `Informacje ogólne`{.action} skopiuj adres IPV4 i/lub IPV6 Twojej d
 
 ![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
 
-Następnie przenieś domenę do [strefy DNS](/pages/web_cloud/domains/dns_zone_edit#modyfikacja-strefy-dns-domeny), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
+Następnie przenieś domenę do [strefy DNS](/pages/web_cloud/domains/dns_zone_edit), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
 
 ![ipv4-DNSzone](images/dashboard-entry-a.png){.thumbnail}
 

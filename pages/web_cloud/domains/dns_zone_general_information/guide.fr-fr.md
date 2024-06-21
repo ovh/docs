@@ -1,7 +1,7 @@
 ---
 title: "Qu'est ce qu'une zone DNS ?"
 excerpt: "Découvrez le rôle d'une zone DNS et les enregistrements qu'elle contient pour un nom de domaine"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 ## Objectif
@@ -42,7 +42,7 @@ De nombreux enregistrements DNS existent. Ils ont tous un but spécifique dans l
 - Les enregistrements e-mail (MX, SPF, DKIM, DMARC)
 - Les enregistrements étendus (TXT, SRV, CAA, NAPTR, LOC, SSHFP, TLSA)
 
-Consultez notre guide sur [les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) pour plus d'informations sur les différents types d'enregistrements évoqués ci-dessus. Vous y retrouverez des éléments qui vous permettront, par exemple, de mieux appréhender l'[édition d'une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+Consultez notre guide sur [les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) pour plus d'informations sur les différents types d'enregistrements évoqués ci-dessus. Vous y retrouverez des éléments qui vous permettront, par exemple, de mieux appréhender l'[édition d'une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Exemple de zone DNS
 
@@ -75,7 +75,7 @@ Dans cet exemple, la zone DNS précise, entre autres, les informations suivantes
 
 [Qu'est ce qu'un serveur DNS?](/pages/web_cloud/domains/dns_server_general_information)
 
-[Qu'est ce qu'une zone DNS?](/pages/web_cloud/domains/dns_zone_general_information)
+[Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 

@@ -10,7 +10,7 @@ updated: 2022-08-02
 
 ## Objetivo
 
-Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](/pages/web_cloud/domains/dns_server_general_information#compreender-a-nocao-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais?](#go-further)):
+Vários feedbacks de erro podem aparecer no seu navegador em caso de inacessibilidade do seu site. Os exemplos abaixo indicam uma configuração errada dos seus [servidores DNS](/pages/web_cloud/domains/dns_server_edit), a sua [zona DNS](/pages/web_cloud/domains/dns_zone_edit) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais?](#go-further)):
 
 |Browser|Mensagem de Erro|
 |-|---|
@@ -30,7 +30,7 @@ Em caso de inacessibilidade do seu website, podem ocorrer várias reações de e
 
 ## Requisitos
 
-- Ter a gestão dos servidores e da [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) do seu domínio.
+- Ter a gestão dos servidores e da [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) do seu domínio.
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Estar atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web).
 
@@ -58,7 +58,7 @@ Uma vez terminada a renovação da sua oferta, o seu website estará disponível
 
 ### Etapa 2: verificar os servidores DNS
 
-Para verificar a validade dos seus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information), na [Área de Cliente OVHcloud](/links/manager) clique em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
+Para verificar a validade dos seus [servidores DNS](/pages/web_cloud/domains/dns_server_edit), na [Área de Cliente OVHcloud](/links/manager) clique em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
 
 #### Cenário 1: nenhuma anomalia nos servidores DNS
 
@@ -78,7 +78,7 @@ Um aviso no separador `Zona DNS`{.action} indica que os servidores DNS utilizado
 
 ![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}
 
-Altere os servidores DNS de acordo com as instruções [deste manual](/pages/web_cloud/domains/dns_server_general_information#modificar-os-servidores-dns), para que sejam idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}.
+Altere os servidores DNS de acordo com as instruções [deste manual](/pages/web_cloud/domains/dns_server_edit), para que sejam idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}.
 
 O seu website estará disponível num prazo máximo de 48 horas.
 
@@ -90,7 +90,7 @@ O seu website estará disponível num prazo máximo de 48 horas.
 >
 > Nesta situação, contacte o alojador da sua Zona DNS, o seu webmaster ou os [parceiros OVHcloud](/links/partner) antes de qualquer manipulação.
 >
-> É possível que os servidores DNS utilizados pelo seu domínio estejam funcionais e que o problema de acesso ao seu site esteja associado a uma entrada inexistente ou errada na [zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns). Se alterar os servidores DNS nesta situação, os seus endereços de e-mail ou outras aplicações online poderão ficar indisponíveis.
+> É possível que os servidores DNS utilizados pelo seu domínio estejam funcionais e que o problema de acesso ao seu site esteja associado a uma entrada inexistente ou errada na [zona DNS](/pages/web_cloud/domains/dns_zone_general_information). Se alterar os servidores DNS nesta situação, os seus endereços de e-mail ou outras aplicações online poderão ficar indisponíveis.
 >
 
 #### Cenário 3: nenhuma entrada do tipo NS aparece na zona DNS
@@ -123,7 +123,7 @@ No separador `Informações gerais`{.action}, copie o endereço IPV4 e/ou IPV6 d
 
 ![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
 
-De seguida, aceda à [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#editar-a-zona-dns-da-ovhcloud-do-seu-dominio) do seu domínio alterando ou criando uma ou mais entradas de tipo `A`.
+De seguida, aceda à [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) do seu domínio alterando ou criando uma ou mais entradas de tipo `A`.
 
 ![ipv4-DNSzone](images/dashboard-entry-a.png){.thumbnail}
 

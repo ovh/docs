@@ -241,9 +241,9 @@ Taka nieprawidłowość może mieć kilka przyczyn:
 
 - Upewnij się, że odwiedzana przez Ciebie nazwa domeny ("domain.tld") jest nazwą domeny, dla której zainstalowałeś "moduł za 1 kliknięciem".
 
-- Jeśli ostatnio nastąpiła zmiana w [aktywnej strefie DNS](/pages/web_cloud/domains/dns_server_general_information)/[serwery DNS](/pages/web_cloud/domains/dns_zone_edit) Twojej domeny lub [transfer domeny](/pages/web_cloud/domains/transfer_incoming_generic_domain). Poczekaj, aż operacje zostaną zakończone (4-24 godziny na zmianę w strefie DNS i 24-48 godzin na zmianę serwerów DNS). Pamiętaj, aby również zrestartować swoje urządzenia (PC, smartphone, box, itp.) i wyczyścić pamięć podręczną przeglądarki internetowej.
+- Jeśli ostatnio nastąpiła zmiana w [aktywnej strefie DNS](/pages/web_cloud/domains/dns_zone_edit)/[serwery DNS](/pages/web_cloud/domains/dns_server_edit) Twojej domeny lub transfer [domeny](/pages/web_cloud/domains/transfer_incoming_generic_domain). Poczekaj, aż operacje zostaną zakończone (4-24 godziny na zmianę w strefie DNS i 24-48 godzin na zmianę serwerów DNS). Pamiętaj, aby również zrestartować swoje urządzenia (PC, smartphone, box, itp.) i wyczyścić pamięć podręczną przeglądarki internetowej.
 
-- Twoja domena jest zawsze powiązana z Twoim starym hostingiem. W tym przypadku zmień [strefę DNS active](/pages/web_cloud/domains/dns_zone_edit) powiązaną z Twoją domeną lub jej [serwery DNS](/pages/web_cloud/domains/dns_server_general_information). Jeśli aktywna strefa DNS Twojej domeny nie jest zarządzana w OVHcloud, skontaktuj się z dostawcą DNS w tej sprawie.
+- Twoja domena jest zawsze powiązana z Twoim starym hostingiem. W tym przypadku zmień [strefę DNS active](/pages/web_cloud/domains/dns_zone_edit) powiązaną z Twoją domeną lub jej [serwery DNS](/pages/web_cloud/domains/dns_server_edit). Jeśli aktywna strefa DNS Twojej domeny nie jest zarządzana w OVHcloud, skontaktuj się z dostawcą DNS w tej sprawie.
 
 ### Hasło "Administrator" dostępu do "interfejsu administracyjnego" modułu za pomocą 1 kliknięcia nie działa <a name="adminpassword"></a>
 
