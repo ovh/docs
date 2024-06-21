@@ -1,7 +1,7 @@
 -----
 title: 'Maintaining VMware on OVHcloud maintenance operations' 
 excerpt: 'Find out more about the operations carried out to ensure the reliability and performance of your Hosted Private Cloud VMware on OVHcloud equipment' 
-updated: 2023-06-17
+updated: 2023-06-21
 
 > [!warning]
 > 
