@@ -117,7 +117,7 @@ Pour importer la sauvegarde de l'espace de stockage FTP de votre ancien prestata
 
 Nous vous recommandons d'utiliser le logiciel [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) pour téléverser votre sauvegarde FTP sur votre hébergement.
 
-Si votre fichier de sauvegarde est compressé (zippé), décompressez-le dans un dossier vide sur votre ordinateur avant de téléverser l'ensemble des fichiers sur l'hébergement OVHcloud.
+Si votre fichier de sauvegarde est compressé (zippé), décompressez-le dans un dossier vide sur votre ordinateur avant de téléverser vos fichiers sur l'hébergement OVHcloud.
 
 Pour la sauvegarde de votre base de données, [créez une nouvelle base de données](/pages/web_cloud/web_hosting/sql_create_database) puis [importez votre sauvegarde dans votre nouvelle base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
 
