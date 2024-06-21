@@ -94,4 +94,4 @@ Once the problem has been resolved, you can cancel the changes made by clicking 
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

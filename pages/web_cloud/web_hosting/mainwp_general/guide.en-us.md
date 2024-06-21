@@ -184,4 +184,4 @@ Click `Enable`{.action} to enable the extension. If an error message indicates t
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

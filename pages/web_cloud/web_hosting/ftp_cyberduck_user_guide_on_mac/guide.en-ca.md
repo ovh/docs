@@ -230,4 +230,4 @@ To check that the reopening is effective, open your website in a web browser.
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
