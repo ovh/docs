@@ -14,9 +14,9 @@ Die Abkürzung **DNS** für **D**omain **N**ame **S**ystem ist eine Sammlung von
 
 Wir empfehlen Ihnen, unsere Anleitungen "[Was ist ein DNS-Server?](/pages/web_cloud/domains/dns_server_general_information)" und "[Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)" in dieser Reihenfolge zu lesen.
 
-Die DNS-Zone einer Domain ist deren Konfigurationsdatei. Sie besteht aus technischen Informationen, die als *DNS Einträge* bezeichnet werden. Die DNS-Zone ist gewissermaßen eine Anlaufstelle für einen Domainnamen.
+Die DNS-Zone einer Domain ist deren Konfigurationsdatei. Sie besteht aus technischen Informationen, die als *DNS Einträge* bezeichnet werden.
 
-In dieser Anleitung erfahren Sie, welche Arten von DNS-Einträgen in einer von OVHcloud verwalteten DNS-Zone verfügbar sind. Er ergänzt die folgenden Leitlinien:
+In dieser Anleitung erfahren Sie, welche Arten von DNS-Einträgen in einer von OVHcloud verwalteten DNS-Zone verfügbar sind. Sie ergänzt die folgenden Seiten:
 
 - [OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)
 - [Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
@@ -29,25 +29,25 @@ In dieser Anleitung erfahren Sie, welche Arten von DNS-Einträgen in einer von O
 
 ### DNS-Einträge
 
-**Die [Bearbeitung einer DNS Zone](/pages/web_cloud/domains/dns_zone_edit) ist ein sensibler Vorgang**: Wenn Sie eine falsche Änderung vornehmen, kann es sein, dass Ihre Website nicht mehr erreichbar ist oder Ihre E-Mail-Adressen keine Nachrichten mehr empfangen können.
+**Die [Bearbeitung einer DNS Zone](/pages/web_cloud/domains/dns_zone_edit) ist ein kritischer Vorgang**: Fehlerhafte Änderungen können bewirken, dass Ihre Website nicht mehr erreichbar ist oder Ihre E-Mail-Adressen keine Nachrichten mehr empfangen können.
 
-In der folgenden Liste sind die Ziele und Besonderheiten der einzelnen Datensätze aufgeführt. So erhalten Sie ein besseres Verständnis für Ihre DNS-Einstellungen.
+In der folgenden Liste sind die Ziele und Besonderheiten der einzelnen Einträge aufgeführt. So erhalten Sie ein besseres Verständnis für Ihre DNS-Einstellungen.
 
 #### Verweiseinträge <a name="pointer-records"></a>
 
-Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Registerkarten klicken.
+Wählen Sie den gewünschten Eintrag in den Tabs aus:
 
 > [!tabs]
 > **A**
 >> **A**ddress <br><br>
->> Verknüpft einen Domainnamen mit einer `X.X.X.X`-IPv4-Adresse (wobei `Xs` Zahlen zwischen `0` und `255` sind). Die IPv4-Adresse des Servers, auf dem Ihre Website gehostet wird.
+>> Verknüpft einen Domainnamen mit einer `X.X.X.X`-IPv4-Adresse (wobei `X` für eine Zahl zwischen `0` und `255` steht). Die IPv4-Adresse des Servers, auf dem Ihre Website gehostet wird.
 >>
 > **AAAA**
 >> Vier **A**-Zeichen, da dieser Eintrag auf viermal mehr Bits als das historische **A** Feld kodiert ist <br><br> 
 >> Verbindet einen Domainnamen mit einer IPv6-Adresse. Zum Beispiel die IPv6-Adresse des Servers, auf dem Ihre Website gehostet ist.
 >>
 >> > [!primary]
->> > IPv6-Adressen werden vermehrt eingeführt, um den Mangel an IPv4-Adressen aufgrund der zunehmenden digitalen Nutzung zu beheben. Die 128-Bit-Kodierung von IPv6-Adressen ermöglicht die Bereitstellung einer größeren Anzahl an IP-Adressen.
+>> > IPv6-Adressen werden vermehrt genutzt, um den Mangel an IPv4-Adressen aufgrund der zunehmenden Nutzung zu beheben. Die 128-Bit-Kodierung von IPv6-Adressen ermöglicht die Bereitstellung einer größeren Anzahl an IP-Adressen.
 >> >
 >> > Wenn Ihr Server jedoch bereits über eine IPv4 verfügt, empfehlen wir, diese bevorzugt zu verwenden.<br>
 >> > IPv6 wird noch nicht im gesamten Internet korrekt interpretiert, was zu Anzeige- oder Zugriffsstörungen führen kann.
@@ -89,16 +89,16 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >> >
 > **NS**
 >> **N**ame **S**erver<br><br>
->> Legt die zu Ihrer DNS-Zone gehörenden DNS Server fest. Wenn zum Beispiel die NS-Einträge Ihrer DNS-Zone die Server *dnsXX.ovh.net* und *nsXX.ovh.net* anzeigen, müssen Sie diese im Tab `DNS Server`{.action} Ihres Kundencenters verwenden. Weitere Informationen finden Sie in unserer Anleitung zu [DNS Servern](/pages/web_cloud/domains/dns_server_edit).
+>> Legt die zu Ihrer DNS-Zone gehörenden DNS-Server fest. Wenn zum Beispiel die NS-Einträge Ihrer DNS-Zone die Server *dnsXX.ovh.net* und *nsXX.ovh.net* anzeigen, müssen Sie diese im Tab `DNS-Server`{.action} Ihres Kundencenters verwenden. Weitere Informationen finden Sie in unserer Anleitung zu [DNS-Servern](/pages/web_cloud/domains/dns_server_edit).
 >>
 >> > [!warning]
 >> >
->> > Wenn Sie [eine OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit), dürfen Sie über den Button `Im Textmodus bearbeiten`{.action} die DNS-Einträge Ihrer DNS-Zone nicht zu Gunsten von OVHcloud-externen DNS-Servern ändern. Diese DNS-Zone funktioniert **nur** mit OVHcloud DNS-Servern.
+>> > Wenn Sie [eine OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit), nutzen Sie nicht die Funktion `Im Textmodus bearbeiten`{.action}, um die DNS-Einträge Ihrer DNS-Zone für externe DNS-Server zu ändern. Diese DNS-Zone funktioniert **nur** mit OVHcloud DNS-Servern.
 >>
 
 #### E-Mail Einträge <a name="mail-records"></a>
 
-Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Registerkarten klicken.
+Wählen Sie den gewünschten Eintrag in den Tabs aus:
 
 > [!tabs]
 > **MX**
@@ -107,18 +107,18 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >>
 >> > [!warning]
 >> >
->> > Generell wird empfohlen, nur einen oder mehrere Server desselben E-Mail-Anbieters in Ihrer DNS-Zone zu verwenden.
->> > Wenn Sie bereits über E-Mail-Dienste bei einem anderen E-Mail-Anbieter verfügen und gleichzeitig die E-Mail-Server Ihres neuen E-Mail-Anbieters hinzufügen (ohne diese zu ersetzen), besteht die Gefahr, dass Sie Ihre E-Mails zufällig bei einem Ihrer beiden Anbieter empfangen.
+>> > Generell wird empfohlen, nur Mail-Server desselben E-Mail-Anbieters in Ihrer DNS-Zone zu verwenden.
+>> > Wenn Sie bereits über E-Mail-Dienste bei einem E-Mail-Anbieter verfügen und gleichzeitig die E-Mail-Server Ihres neuen E-Mail-Anbieters hinzufügen, besteht die Gefahr, dass Ihre E-Mails nur bei einem der beiden Anbieter empfangen werden.
 >>
 > **SPF**
 >> **S**ender **P**olicy **F**ramework <br><br>
->> Damit kann potenzieller Identitätsdmissbrauch bei E-Mail-Adressen, die Ihre Domain verwenden (Spoofing), vermieden werden. Zum Beispiel legt der Eintrag `v=spf1 include:mx.ovh.com ~all` fest, dass nur die zu Ihrem OVHCloud E-Mail-Dienst gehörenden Server vom Empfangsserver als legitim angesehen werden können. Sie können den Eintrag entweder als TXT-Eintrag oder über unser automatisches Konfigurationssystem eingeben.
+>> Damit kann potenzieller Identitätsmissbrauch bei E-Mail-Adressen, die Ihre Domain verwenden (Spoofing), vermieden werden. Zum Beispiel legt der Eintrag `v=spf1 include:mx.ovh.com ~all` fest, dass nur die zu Ihrem OVHCloud E-Mail-Dienst gehörenden Server vom Empfangsserver als legitim angesehen werden können. Sie können den Eintrag entweder als TXT-Eintrag oder über unser automatisches Konfigurationssystem eingeben.
 >>
 >> Weitere Informationen finden Sie in der Anleitung zum "[SPF-Eintrag](/pages/web_cloud/domains/dns_zone_spf)".
 >>
 > **DKIM**
 >> **D**omain**K**eys **I**dentified **M**ail <br><br>
->> Ermöglicht die Überprüfung der Authentizität der Domain des Absenders und die Sicherstellung der Integrität der versandten E-Mail. Der DKIM-Eintrag ist ein aus mehreren Zeichen bestehender Schlüssel. Der DKIM-Schlüssel wird von Ihrem E-Mail-Anbieter bereitgestellt (falls diese Funktion angeboten wird). Sie können ihn in einem TXT-Eintrag eingeben.
+>> Ermöglicht die Überprüfung der Authentizität der Domain des Absenders und die Sicherstellung der Integrität der gesendeten E-Mail. Der DKIM-Eintrag ist ein aus mehreren Zeichen bestehender Schlüssel. Der DKIM-Schlüssel wird von Ihrem E-Mail-Anbieter bereitgestellt (falls diese Funktion angeboten wird). Sie können ihn in einem TXT-Eintrag eingeben.
 >>
 >> Weitere Informationen finden Sie in unserer Dokumentation "[DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)".
 >>
@@ -130,7 +130,7 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 
 #### Erweiterte Einträge <a name="extended-records"></a>
 
-Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Registerkarten klicken.
+Wählen Sie den gewünschten Eintrag in den Tabs aus:
 
 > [!tabs]
 > **TXT**
@@ -139,9 +139,9 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 >>
 >> > [!warning]
 >> >
->> > Der TXT Eintrag ist auf 255 Zeichen begrenzt. In manchen Fällen können Sie Ihren Wert jedoch in mehrere Einträge aufteilen. Fragen Sie bei Ihrem Dienstleister nach, wenn dieser Sie auffordert, einen Wert anzugeben, der 255 Zeichen übersteigt.
+>> > Der TXT-Eintrag ist auf 255 Zeichen begrenzt. In manchen Fällen können Sie Ihren Wert jedoch in mehrere Einträge aufteilen. Fragen Sie bei Ihrem Dienstleister nach, wenn dieser Sie auffordert, einen Wert anzugeben, der 255 Zeichen übersteigt.
 >> > 
->> > Diese Einschränkung besteht jedoch nicht, wenn Sie die Funktion `Im Textmodus bearbeiten`{.action} in unserer Anleitung "[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)" (für fortgeschrittene Benutzer) verwenden.
+>> > Diese Einschränkung besteht jedoch nicht, wenn Sie die Funktion `Im Textmodus bearbeiten`{.action} verwenden, siehe unsere Anleitung "[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)" (für fortgeschrittene Benutzer).
 >>
 > **SRV**
 >> **S**e**RV**ice resource <br><br>
@@ -175,11 +175,11 @@ Wählen Sie den gewünschten Datensatz aus, indem Sie auf jede der folgenden Reg
 
 #### Anwendungsbeispiel: Verwendung von CNAME-Einträgen <a name="cnameusecase"></a>
 
-Manche Benutzer erstellen DNS-Zonen unmittelbar für die Subdomain einer Domain (Beispiel: *subdomain-mit-eigener-zone.domain.tld*). In diesem Fall gilt auch die im Tab "CNAME" im Teil "[Zeitregistrierungen](#pointer-records)" angegebene Regel.
+Manche Benutzer erstellen DNS-Zonen für die Subdomain einer Domain (Beispiel: *subdomain-mit-eigener-zone.domain.tld*). In diesem Fall gilt auch die im Tab "CNAME" unter "[Verweiseinträge](#pointer-records)" angegebene Regel.
 
-Da die DNS-Zone für die Subdomain erstellt wurde (hier: *subdomain-mit-eigener-zone.domain.tld*), wird diese als eigenständige Domain in ihrer DNS-Zone betrachtet.
+Da die DNS-Zone für die Subdomain erstellt wurde (hier: *subdomain-mit-eigener-zone.domain.tld*), wird diese als *Fully Qualified Domain Name* in ihrer DNS-Zone betrachtet.
 
-Aus diesem Grund und in diesem speziellen Fall können Sie keinen CNAME-Eintrag für *subdomain-mit-eigener-zone.domain.tld* in deren DNS-Zone erstellen. Sie können jedoch CNAME-Einträge wie *subdomain.subdomain-mit-eigener-zone.domain.tld* oder *xxx.subdomain-mit-eigener-zone.domain.tld* erstellen.
+Aus diesem Grund können Sie in diesem speziellen Fall keinen CNAME-Eintrag für *subdomain-mit-eigener-zone.domain.tld* in deren DNS-Zone erstellen. Sie können jedoch CNAME-Einträge wie *subdomain.subdomain-mit-eigener-zone.domain.tld* oder *xxx.subdomain-mit-eigener-zone.domain.tld* erstellen.
 
 ## Weiterführende Informationen
 
