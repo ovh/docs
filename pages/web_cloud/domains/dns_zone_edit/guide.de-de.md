@@ -12,7 +12,7 @@ updated: 2024-06-17
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Die Abkürzung **DNS** für **D**omain **N**ame **S**ystem ist eine Sammlung von Elementen (DNS-Server, DNS-Zonen usw.), mit denen ein Domainname einer IP-Adresse zugeordnet werden kann.
+**D**omain **N**ame **S**ystem bezeichnet einen Satz von Elementen (DNS-Server, DNS-Zonen, etc.), mit denen ein Domainname IP-Adressen zugeordnet werden kann.
 
 Weitere Informationen finden Sie in unseren Anleitungen „[Was ist ein DNS-Server?](/pages/web_cloud/domains/dns_server_general_information)“ und „[Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)“
 
@@ -26,12 +26,12 @@ Weitere Informationen finden Sie in unseren Anleitungen „[Was ist ein DNS-Serv
 
 > [!warning]
 >
-> - Wenn Ihre Domain nicht die DNS-Server von OVHcloud verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, der die Konfiguration Ihrer Domain verwaltet.
+> - Wenn Ihre Domain nicht die DNS-Server von OVHcloud verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, der die DNS-Konfiguration Ihrer Domain verwaltet.
 > 
 > - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVHcloud Kundencenter](/links/manager) in den Tab `DNS-Server`{.action} der betreffenden Domain. Bei Bedarf lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)“.
 >
-> Seien Sie in jedem Fall vorsichtig, wenn Sie Ihre DNS-Server ändern. Die alte Konfiguration, die auf Ihre Domain angewendet werden kann, wird nicht mehr aktiv sein, wenn Sie die neue DNS-Zone bei OVHcloud aktivieren und nicht zuvor neu konfiguriert und personalisiert haben.<br>
-> Sie können nur eine aktive DNS-Zone pro Domainname haben.
+> Seien Sie in jedem Fall vorsichtig, wenn Sie Ihre DNS-Server ändern. Die alte Konfiguration wird deaktiviert, wenn Sie die neue DNS-Zone bei OVHcloud aktivieren und nicht zuvor neu konfiguriert und bearbeitet haben.<br>
+> Sie können nur eine aktive DNS-Zone pro Domainname nutzen.
 >
 
 ## In der praktischen Anwendung
@@ -44,7 +44,7 @@ Weitere Informationen finden Sie in unseren Anleitungen „[Was ist ein DNS-Serv
 
 So greifen Sie auf die Verwaltung einer OVHcloud DNS-Zone zu:
 
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
+1. Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein.
 2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Domainnamen`{.action}.
 4. Wählen Sie die betreffende Domain oder DNS-Zone aus.
@@ -56,7 +56,7 @@ Die Tabelle zeigt für jede Zeile einen DNS-Eintrag zu Ihrer Domain bei OVHCloud
 
 ### Bearbeiten der OVHcloud DNS-Zone Ihrer Domain
 
-**Die Bearbeitung einer DNS-Zone ist kritisch** : Wenn Sie eine falsche Änderung vornehmen, kann es sein, dass Ihre Website nicht mehr erreichbar ist oder Ihre E-Mail-Adressen keine Nachrichten mehr empfangen können.
+**Die Bearbeitung einer DNS-Zone ist kritisch**: Bei fehlerhaften Änderungen kann es sein, dass Ihre Website nicht mehr erreichbar ist oder Ihre E-Mail-Adressen keine Nachrichten mehr empfangen können.
 
 Ein genaueres Verständnis der verschiedenen Einträge ermöglicht es Ihnen, die notwendigen Änderungen der DNS-Zone Ihrer Domain zu bestimmen.
 
@@ -79,7 +79,7 @@ Dazu können Sie entweder die Zone im Textmodus manuell bearbeiten oder unsere K
 
 So bearbeiten Sie eine OVHcloud DNS-Zone im Textmodus:
 
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
+1. Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein.
 2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Domainnamen`{.action}.
 4. Wählen Sie die betreffende Domain oder DNS-Zone aus.
@@ -88,7 +88,7 @@ So bearbeiten Sie eine OVHcloud DNS-Zone im Textmodus:
 
 > [!warning]
 >
-> Ändern Sie nicht über den Button `Im Textmodus bearbeiten`{.action} die DNS-Einträge Ihrer DNS-Zone zu Gunsten von DNS-Servern außerhalb von OVHcloud. Diese DNS-Zone funktioniert **nur** mit OVHcloud DNS-Servern.
+> Verwenden Sie nicht den Button `Im Textmodus bearbeiten`{.action} zum Ändern der DNS-Einträge Ihrer DNS-Zone zu Gunsten von DNS-Servern außerhalb von OVHcloud. Diese DNS-Zone funktioniert **nur** mit OVHcloud DNS-Servern.
 
 #### Den Konfigurationsassistenten verwenden
 
@@ -104,14 +104,14 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >>
 >> Gehen Sie wie folgt vor, um einen neuen DNS-Eintrag hinzuzufügen:
 >>
->> 1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
+>> 1. Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein.
 >> 2. Klicken Sie in der Zeile oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 >> 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Domainnamen`{.action}.
 >> 4. Wählen Sie die betreffende Domain oder DNS-Zone aus.
 >> 5. Klicken Sie auf der angezeigten Seite auf den Tab `DNS-Zone`{.action}.
 >> 6. Klicken Sie rechts oder unterhalb der Tabelle auf `Eintrag hinzufügen`{.action} und folgen Sie den angezeigten Schritten.
 >>
->> Überprüfen Sie zunächst, ob dieser Eintrag bereits vorhanden ist und auf ein anderes Ziel verweist. Filtern Sie hierzu den Inhalt der Tabelle nach Eintragstyp oder Domäne. Wenn der Eintrag bereits existiert, können Sie ihn mit den nachstehenden Angaben bearbeiten.
+>> Überprüfen Sie zunächst, ob dieser Eintrag bereits vorhanden ist und auf ein anderes Ziel verweist. Filtern Sie hierzu den Inhalt der Tabelle nach Eintragstyp oder Domainname. Wenn der Eintrag bereits existiert, können Sie ihn mit den nachstehenden Angaben bearbeiten.
 >>
 >> ![dnszone](images/add-an-entry.png){.thumbnail}
 >>
@@ -125,12 +125,12 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >>
 >> Gehen Sie wie folgt vor, um einen DNS-Eintrag zu bearbeiten:
 >>
->> 1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
+>> 1. Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein.
 >> 2. Klicken Sie in der Zeile oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 >> 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Domainnamen`{.action}.
 >> 4. Wählen Sie die betreffende Domain oder DNS-Zone aus.
 >> 5. Klicken Sie auf der angezeigten Seite auf den Tab `DNS-Zone`{.action}.
->> 6. Klicken Sie in der angezeigten Tabelle auf das Symbol `...`{.action} rechts neben dem betreffenden Eintrag.
+>> 6. Klicken Sie in der Tabelle auf das Symbol `...`{.action} rechts neben dem betreffenden Eintrag.
 >> 7. Klicken Sie dann auf `Eintrag bearbeiten`{.action} und folgen Sie den angezeigten Schritten.
 >>
 >> ![dnszone](images/modify-record.png){.thumbnail}
@@ -139,12 +139,12 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >>
 >> Gehen Sie wie folgt vor, um einen DNS-Eintrag zu löschen:
 >>
->> 1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
+>> 1. Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein.
 >> 2. Klicken Sie in der Zeile oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 >> 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Domainnamen`{.action}.
 >> 4. Wählen Sie die betreffende Domain oder DNS-Zone aus.
 >> 5. Klicken Sie auf der angezeigten Seite auf den Tab `DNS-Zone`{.action}.
->> 6. Klicken Sie in der angezeigten Tabelle auf das Symbol `...`{.action} rechts neben dem betreffenden Eintrag.
+>> 6. Klicken Sie in der Tabelle auf das Symbol `...`{.action} rechts neben dem betreffenden Eintrag.
 >> 7. Klicken Sie dann auf `Eintrag löschen`{.action} und folgen Sie den angezeigten Schritten.
 >>
 >> Sie können mehrere Einträge auf einmal löschen, indem Sie links in der Tabelle einen Haken setzen und dann auf den Button `Löschen`{.action} klicken.
@@ -162,7 +162,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >>
 >> Gehen Sie wie folgt vor, um Ihre DNS-Zone zurückzusetzen:
 >>
->> 1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
+>> 1. Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein.
 >> 2. Klicken Sie in der Zeile oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 >> 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Domainnamen`{.action}.
 >> 4. Wählen Sie die betreffende Domain oder DNS-Zone aus.
@@ -203,9 +203,9 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 
 Nach der Änderung der DNS-Zone Ihrer Domain ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.
 
-Wenn Sie die Frist für die nächste Bearbeitung Ihrer OVHcloud DNS-Zone verkürzen möchten, können Sie diese bis zu einem gewissen Grad beeinflussen, indem Sie die TTL (*Time To Live*) anpassen, die für alle Einträge in der DNS-Zone gilt.
+Wenn Sie die Verzögerung für die nächste Bearbeitung Ihrer OVHcloud DNS-Zone verkürzen möchten, können Sie diese bis zu einem gewissen Grad beeinflussen, indem Sie die TTL (*Time To Live*) anpassen, die für alle Einträge in der DNS-Zone gilt.
 
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
+1. Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein.
 2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Domainnamen`{.action}.
 4. Wählen Sie die betreffende Domain oder DNS-Zone aus.
