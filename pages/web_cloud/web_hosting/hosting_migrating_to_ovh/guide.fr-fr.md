@@ -52,7 +52,7 @@ Si une telle interruption devait avoir lieu, ce guide est construit de telle sor
 
 ### Etape 1 : commander l'hébergement et les adresses e-mail chez OVHcloud <a name="step1"></a>
 
-Plusieurs [offres d'hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} contiennent une offre e-mail « [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities){.external} ». Cette offre e-mail permet de créer des adresses e-mail avec un espace de stockage de 5 Go maximum pour chaque adresse. Choisissez parmi les offres d'hébergement ci-dessous en fonction de la version PHP, de la version SQL, du nombre d'adresses e-mail dont vous avez besoin et de la taille de votre site web à migrer :
+Plusieurs [offres d'hébergement mutualisé OVHcloud](/links/web/hosting) contiennent une offre e-mail « [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) ». Cette offre e-mail permet de créer des adresses e-mail avec un espace de stockage de 5 Go maximum pour chaque adresse. Choisissez parmi les offres d'hébergement ci-dessous en fonction de la version PHP, de la version SQL, du nombre d'adresses e-mail dont vous avez besoin et de la taille de votre site web à migrer :
 
 - L'hébergement [Perso](/links/web/hosting-personal-offer) avec **10 adresses e-mail** « MX Plan »
 - L'hébergement [Pro](/links/web/hosting-professional-offer) avec **100 adresses e-mail** « MX Plan »
