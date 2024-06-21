@@ -81,25 +81,20 @@ $ openstack ec2 credentials create
 Install the `awscli` client:
 
 ```bash
-pip install awscli awscli-plugin-endpoint
+pip install awscli
 ```
 
 Complete and write down the configuration for `awscli` into `~/aws/config`:
 
 ```yaml
-[plugins]
-endpoint = awscli_plugin_endpoint
-
 [profile default]
 aws_access_key_id = <access fetched in previous step>
 aws_secret_access_key = <secret fetched in previous step>
 region = <public cloud region in lower case>
+endpoint_url = https://s3.<public cloud region without digit>.cloud.ovh.net
 s3 =
-  endpoint_url = https://s3.<public cloud region without digit>.cloud.ovh.net
   signature_version = s3v4
   addressing_style = virtual
-s3api =
-  endpoint_url = https://s3.<public cloud region without digit>.cloud.ovh.net
 ```
 
 ### Create a S3 bucket for Stash

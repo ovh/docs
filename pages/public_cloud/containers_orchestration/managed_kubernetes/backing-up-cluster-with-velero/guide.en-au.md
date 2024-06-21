@@ -80,7 +80,7 @@ $ openstack ec2 credentials create
 Install the `awscli` client:
 
 ```bash
-pip3 install awscli awscli-plugin-endpoint
+pip3 install awscli
 ```
 
 Create the credentials file into `~/.aws/credentials`:
