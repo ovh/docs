@@ -96,7 +96,7 @@ Si elles ne sont pas présentes, renseignez les entrées suivantes :
 
 Pour récupérer la bonne adresse IP cible de votre hébergement OVHcloud, consultez notre guide listant les [adresses IP des différents clusters d'hébergement mutualisés](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 
-**Exemple** : Pour le nom de domaine « domain.tld », le rendu des entrées de votre domaine doit être le suivant :
+**Exemple** : Pour le nom de domaine « domain.tld », le rendu des entrées de votre nom de domaine doit être le suivant :
 
 ![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
 
