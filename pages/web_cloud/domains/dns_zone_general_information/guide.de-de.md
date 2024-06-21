@@ -1,6 +1,6 @@
 ---
 Title: "Was ist eine DNS-Zone?"
-excerpt: "Hier erfahren Sie, welche Rolle eine DNS-Zone spielt und welche Einträge sie für einen Domainnamen enthält"
+excerpt: "Erfahren Sie hier, welche Rolle eine DNS-Zone spielt und welche Einträge sie für einen Domainnamen enthält"
 updated: 2024-06-17
 ---
 
@@ -10,23 +10,23 @@ updated: 2024-06-17
 
 ## Ziel
 
-Die Abkürzung **DNS** für **D**omain **N**ame **S**ystem ist eine Sammlung von Elementen (DNS-Server, DNS-Zonen usw.), mit denen ein Domainname einer IP-Adresse zugeordnet werden kann.
+**D**omain **N**ame **S**ystem bezeichnet einen Satz von Elementen (DNS-Server, DNS-Zonen, etc.), mit denen ein Domainname IP-Adressen zugeordnet werden kann.
 
-Es ist wichtig, zwischen den **DNS-Servern** und der **DNS-Zone** zu unterscheiden. Sie konfigurieren eine **DNS-Zone** auf Ebene des **DNS-Servers**.
+Es ist wichtig, zwischen den **DNS-Servern** und der **DNS-Zone** zu unterscheiden. Eine **DNS-Zone** wird auf Ebene des **DNS-Servers** konfiguriert.
 
 Für ein besseres Verständnis empfehlen wir Ihnen vorab unsere Anleitung „[Was ist ein DNS Server?](/pages/web_cloud/domains/dns_server_general_information)“.
 
-Wenn Sie beispielsweise über einen Internetbrowser auf die Seite *domain.tld* zugreifen möchten, wird Ihre Anfrage zunächst von diesem DNS-Eintrag bearbeitet. Diese DNS-Konfiguration liefert dann als Antwort auf Ihren Webbrowser die IP-Adresse des Servers, auf dem die *domain.tld* Website gehostet wird.
+Wenn Sie beispielsweise über einen Browser auf die Seite *domain.tld* zugreifen möchten, wird Ihre Anfrage zunächst von diesem DNS-Eintrag bearbeitet. Diese DNS-Konfiguration liefert dann als Antwort auf Ihren Webbrowser die IP-Adresse des Servers, auf dem die *domain.tld* Website gehostet wird.
 
 Wenn Sie also *domain.tld* eingeben, werden die **DNS-Server** abgefragt, die diesem Domainnamen zugeordnet sind. Diese enthalten die **DNS Zone** des Domainnamens *domain.tld*, in der die IP-Adresse des Hostings von *domain.tld* angegeben ist. Ihr Browser kann dann die *domain.tld* Website mit den Inhalten des Webhostings anzeigen. Dies wird als DNS-Auflösung bezeichnet.
 
-**Hier erfahren Sie, welche Rolle eine DNS-Zone spielt, was sie enthält und wie sie mit einem Domainnamen funktioniert.**
+**Diese Anleitung erklärt, welche Rolle eine DNS-Zone spielt, was sie enthält und wie sie mit einem Domainnamen funktioniert.**
 
 ## In der praktischen Anwendung
 
 ### Rolle der DNS Zone
 
-Die DNS-Zone einer Domain enthält eine für diese Domain geltende Konfiguration. Sie besteht aus technischen Informationen, die als *DNS* Einträge bezeichnet werden. Die DNS-Zone ist gewissermaßen eine Anlaufstelle für einen Domainnamen.
+Die DNS-Zone einer Domain enthält eine für diese Domain geltende Konfiguration. Sie besteht aus technischen Informationen, die als DNS-Einträge bezeichnet werden.
 
 Sie können beispielsweise Folgendes angeben:
 
@@ -34,27 +34,27 @@ Sie können beispielsweise Folgendes angeben:
 - Die E-Mail-Server (DNS-Einträge vom Typ *MX*), auf die Ihre Domain die von ihr empfangenen E-Mails weiterleiten soll.
 - Informationen zur Sicherheit / Authentifizierung Ihrer Dienste (Webhosting, Webserver, E-Mail-Server etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ SPF, DKIM, DMARC etc.).
 
-Eine DNS-Zone wird auf **DNS-Servern** gehostet / registriert. Die **DNS-Server** müssen (bei der zuständigen Domänenregistrierungsstelle) angemeldet werden, um die von ihnen gehostete DNS-Zone zu verwenden.
+Eine DNS-Zone wird auf **DNS-Servern** gehostet. Die **DNS-Server** müssen (bei der zuständigen Domänenregistrierungsstelle) deklariert werden, um die von ihnen gehostete DNS-Zone zu verwenden.
 
-Weitere Informationen finden Sie auf unserer Webseite [Funktionsweise eines DNS-Servers](/links/web/domains-dns-server).
+Weitere Informationen finden Sie in unserer Dokumentation: [Funktionsweise eines DNS-Servers](/links/web/domains-dns-server).
 
 ### DNS-Einträge
 
-Es sind zahlreiche DNS-Einträge vorhanden. Sie alle haben einen bestimmten Zweck in der DNS-Auflösung. Bei OVHcloud werden sie in drei Teile unterteilt:
+Es gibt verschiedene Typen von DNS-Einträgen. Sie alle haben einen bestimmten Zweck in der DNS-Auflösung. Bei OVHcloud werden sie folgendermaßen unterteilt:
 
-- Zeiterfassungen (A, AAAA, CNAME, DNAME, NS)
-- E-Mail-Datensätze (MX, SPF, DKIM, DMARC)
+- Verweiseinträge (A, AAAA, CNAME, DNAME, NS)
+- Mail-Einträge (MX, SPF, DKIM, DMARC)
 - Erweiterte Einträge (TXT, SRV, CAA, NAPTR, LOC, SSHFP, TLSA)
 
 Weitere Informationen zu den verschiedenen Eintragstypen finden Sie in unserer Anleitung zu [DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records). Dort finden Sie Elemente, die Ihnen zum Beispiel ein besseres Verständnis der [Bearbeitung einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) ermöglichen.
 
 ### Beispiel für eine DNS-Zone
 
-Nachstehend finden Sie ein Beispiel für eine bei OVHcloud gehostete DNS-Zone für die Domain *domain.tld*, um sich besser darüber zu informieren, was eine DNS-Zone ist. Diese wird auf den DNS-Servern *dns200.anycast.me* und *ns200.anycast.me* von OVHcloud konfiguriert:
+Nachstehend finden Sie ein Beispiel für eine bei OVHcloud gehostete DNS-Zone für die Domain *domain.tld*. Diese wird auf den DNS-Servern *dns200.anycast.me* und *ns200.anycast.me* von OVHcloud konfiguriert:
 
 ![DNS-Zone-Dashboard](Images/dns-Zone-Dashboard.png){.thumbnail}
 
-Im Vergleich dazu ist hier die Entsprechung im „Textmodus“:
+Im Vergleich dazu ist hier die Entsprechung im Textmodus:
 
 ```bash
 $TTL 3600
@@ -72,8 +72,8 @@ In diesem Beispiel gibt die DNS-Zone unter anderem die folgenden Informationen a
 
 - Die für die Domain *domain.tld* deklarierten DNS-Server sind die DNS-Server *dns200.anycast.me* und *ns200.anycast.me*.
 - Der Server muss die IP-Adresse 203.0.113.0 zurückgeben, wenn eine DNS-Abfrage an den Domainnamen *domain.tld* oder die Subdomain *www.domain.tld* durchgeführt wird. Unter der IP-Adresse 203.0.113.0 befindet sich zum Beispiel die Webseite *domain.tld*.
-- Für E-Mails gibt die DNS Zone an, dass DNS-Anfragen für E-Mail-Adressen mit der Endung *@domain.tld* prioritär an den Server *mx1.mail.ovh.net* gesendet werden sollen. Wenn die Antwort zu lange dauert oder nicht verfügbar ist, wird die Anfrage an den Server *mx2.mail.ovh.net* und so weiter weitergeleitet, bis der letzte gemeldete Server *mx3.mail.ovh.net* erreicht ist.
-- Das SOA (**S**tart **O**f **A**uthority) der OVHcloud DNS-Zone gibt an, dass das Datum der letzten Aktualisierung der DNS-Zone der 18.05.2024 ist und dass die Zeit für die Aktualisierung der DNS-Zone 3600 Sekunden beträgt. In DNS-Zonen, die nicht bei OVHcloud gehostet werden, können die SOAs weitere Elemente enthalten, wie die E-Mail-Adresse des Administrators der DNS-Zone. Aus Sicherheitsgründen hat OVHcloud beschlossen, diese Informationen nicht im SOA anzuzeigen.
+- Für E-Mails gibt die DNS Zone an, dass DNS-Anfragen für E-Mail-Adressen mit der Endung *@domain.tld* prioritär an den Server *mx1.mail.ovh.net* gesendet werden sollen. Wenn die Antwort zu lange dauert oder nicht verfügbar ist, wird die Anfrage an den Server *mx2.mail.ovh.net* weitergeleitet, bis der letzte gemeldete Server *mx3.mail.ovh.net* erreicht ist.
+- SOA (**S**tart **O**f **A**uthority) in der OVHcloud DNS-Zone gibt an, dass das Datum der letzten Aktualisierung der DNS-Zone der 18.05.2024 ist und dass die Zeit für die Aktualisierung der DNS-Zone 3600 Sekunden beträgt. In DNS-Zonen, die nicht bei OVHcloud gehostet werden, können die SOAs weitere Elemente enthalten, wie die E-Mail-Adresse des Administrators der DNS-Zone. Aus Sicherheitsgründen hat OVHcloud beschlossen, diese Informationen nicht im SOA anzuzeigen.
 
 ## Weiterführende Informationen
 
