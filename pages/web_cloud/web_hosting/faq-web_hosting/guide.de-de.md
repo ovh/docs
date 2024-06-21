@@ -218,4 +218,4 @@ Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in I
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote](/links/support) einsehen.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

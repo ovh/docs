@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-updated: 2024-04-24
+updated: 2024-06-12
 ---
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
@@ -61,12 +61,12 @@ The CSI plugin installed is [cinder](https://github.com/kubernetes/cloud-provide
 
 The versions depend on the Kubernetes cluster version:
 
-* `1.24`: csi-plugin v1.21.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0 (deprecated)
-* `1.25`: csi-plugin v1.21.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0 (deprecated)
-* `1.26`: csi-plugin v1.21.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0
-* `1.27`: csi-plugin v1.21.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0
-* `1.28`: csi-plugin v1.21.0, csi-attacher v4.4.2, csi-provisioner v3.6.2, csi-snapshotter v6.3.2, snapshot-controller: v6.3.2, csi-resizer v1.9.2
-* `1.29`: csi-plugin v1.21.0, csi-attacher v4.5.0, csi-provisioner v3.6.3, csi-snapshotter v6.3.3 snapshot-controller: v6.3.3, csi-resizer v1.10.0
+* `1.24`: csi-plugin v1.29.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0 (deprecated)
+* `1.25`: csi-plugin v1.29.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0 (deprecated)
+* `1.26`: csi-plugin v1.29.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0
+* `1.27`: csi-plugin v1.29.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0
+* `1.28`: csi-plugin v1.29.0, csi-attacher v4.4.2, csi-provisioner v3.6.2, csi-snapshotter v6.3.2, snapshot-controller: v6.3.2, csi-resizer v1.9.2
+* `1.29`: csi-plugin v1.29.0, csi-attacher v4.5.0, csi-provisioner v3.6.3, csi-snapshotter v6.3.3 snapshot-controller: v6.3.3, csi-resizer v1.10.0
 
 ## Other components
 

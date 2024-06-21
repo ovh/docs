@@ -221,4 +221,4 @@ Nosso [guia sobre a utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

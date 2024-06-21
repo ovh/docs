@@ -45,7 +45,7 @@ Lorsque vous avez accès à vos fichiers, ouvrez le fichier « authorized_keys �
 nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Copiez-collez votre nouvelle clé publique (créée à l'étape 2) dans le fichier. Le contenu du fichier devrait ressembler à l'exemple suivant :
+Copiez-collez votre nouvelle clé publique (créée à l'étape 1) dans le fichier. Le contenu du fichier devrait ressembler à l'exemple suivant :
 
 ```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666

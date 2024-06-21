@@ -59,11 +59,11 @@ W zakładce `Informacje ogólne`{.action}, po zalogowaniu się do [etap 1](#step
 
 W sekcji "Bezpieczeństwo" sprawdź status obok pozycji "Zabezpieczenie DNS - DNSSEC".
 
-![dnssec](images/activate-dnssec.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec.png){.thumbnail}
 
 Za pomocą przycisku aktywacyjnego powyżej hasła `Zabezpieczenie DNS - DNSSEC`{.action} możesz włączyć lub wyłączyć **DNSSEC** dla Twojej domeny. Po wykonaniu tych operacji pojawi się nowe okno, w którym możesz zatwierdzić modyfikację.
 
-![dnssec](images/activate-dnssec-confirmation.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
 
 > [!primary]
 >

@@ -1,7 +1,7 @@
 ---
 title: 'Cambiar la contraseña de una dirección de correo'
 excerpt: 'Cómo cambiar la contraseña de una dirección de correo de OVHcloud'
-updated: 2023-01-03
+updated: 2024-06-18
 ---
 
 ## Objetivo
@@ -78,6 +78,14 @@ En la nueva ventana, introduzca la contraseña actual, escriba una nueva contras
 >
 
 ![Correo electrónico](images/mxplan-password-new-step5.png){.thumbnail}
+
+### Recupera una password
+
+Per motivi di sicurezza e riservatezza non è possibile **recuperare** una password. Come descritto nei passaggi precedenti, è necessario reimpostare la password nel caso in cui non sia più nota.
+
+> [!primary]
+>
+> Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
 
 ## Más información
 

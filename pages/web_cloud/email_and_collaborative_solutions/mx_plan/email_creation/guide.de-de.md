@@ -1,7 +1,7 @@
 ---
 title: 'E-Mail-Accounts mit MX Plan erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie einen MX Plan E-Mail-Account erstellen'
-updated: 2022-10-11
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -16,21 +16,21 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
 
 ## Voraussetzungen
 
-- Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder enthalten in [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external}.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), Bereich `Web Cloud`{.action}.
+- Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten, separat bestellt, oder enthalten in [Kostenloses Hosting 100M](/links/web/domains-free-hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), Bereich `Web Cloud`{.action}.
 
 > [!primary]
 >
 > **Sonderfälle**
 >
-> - Hinweis zu Kostenloses Hosting 100M: Es muss zuerst [aktiviert werden](/pages/web_cloud/web_hosting/activate_start10m), um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} durchführen, indem Sie die betreffende Domain auswählen.
-> - Bei einem Webhosting muss der [inkludierte MX Plan aktiviert werden](https://www.ovhcloud.com/de/web-hosting/){.external}, bevor Sie die übrigen Schritte dieser Anleitung durchführen. Lesen Sie hierzu unsere Anleitung zur [Aktivierung der im Webhosting enthaltenen E-Mail-Accounts](/pages/web_cloud/web_hosting/activate-email-hosting).
+> - Hinweis zu Kostenloses Hosting 100M: Es muss zuerst [aktiviert werden](/pages/web_cloud/web_hosting/activate_start10m), um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](/links/manager) durchführen, indem Sie die betreffende Domain auswählen.
+> - Bei einem Webhosting muss der [inkludierte MX Plan aktiviert werden](/links/web/hosting), bevor Sie die übrigen Schritte dieser Anleitung durchführen. Lesen Sie hierzu unsere Anleitung zur [Aktivierung der im Webhosting enthaltenen E-Mail-Accounts](/pages/web_cloud/web_hosting/activate-email-hosting).
 
 ## ## In der praktischen Anwendung <a name="instructions"></a>
 
-Je nach Aktivierungsdatum Ihres Dienstes und je nachdem, ob [Ihr Dienst vor Kurzem migriert wurde](https://www.ovhcloud.com/de/web-hosting/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Dienstversion. 
+Je nach Aktivierungsdatum Ihres Dienstes und je nachdem, ob Ihr Dienst vor Kurzem migriert wurde, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Dienstversion.
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Öffnen Sie im Bereich `Web Cloud`{.action} den Eintrag `E-Mails`{.action} und wählen Sie dann den Namen des betreffenden MX Plan Dienstes aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein. Öffnen Sie im Bereich `Web Cloud`{.action} den Eintrag `E-Mails`{.action} und wählen Sie dann den Namen des betreffenden MX Plan Dienstes aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
 |Historische MX Plan Version|Neue MX Plan Version|
 |---|---|
@@ -54,10 +54,28 @@ Um einen neuen E-Mail-Account zu erstellen, gehen Sie in den Tab `E-Mail-Account
 Geben Sie im neu angezeigten Fenster die angeforderten Informationen ein.
 
 - **E-Mail Account**: Im Textfeld ist bereits ein vorläufiger Name angegeben. Fügen Sie hier Ihre gewünschte E-Mail-Adresse ein (zum Beispiel vorname.name). Der Domainname der E-Mail-Adresse ist bereits in der Liste vorausgewählt.
+
+> [!warning]
+>
+> Die Wahl des Namens Ihrer E-Mail-Adresse muss folgende Bedingungen erfüllen:
+>
+> - Mindestens 2 Zeichen
+> - Maximal 32 Zeichen
+> - Keine Zeichen mit Akzent
+> - Keine Sonderzeichen außer `.`, `,`, `-` und `_`
+
 - **Vorname**: Geben Sie einen Vornamen an.
 - **Name**: Geben Sie einen Nachnamen an.
 - **Anzeigename**: Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse verschickt werden.
 - **Passwort**: Wählen Sie ein Passwort und bestätigen Sie es. Aus Sicherheitsgründen empfehlen wir Ihnen, Passwörter nicht mehrfach zu verwenden, sondern ein neues auszuwählen, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (beispielsweise Namen, Vornamen oder Ihr Geburtsdatum). Es wird empfohlen, das Passwort regelmäßig zu ändern.
+
+> [!warning]
+>
+> Die Wahl des Passworts muss folgende Bedingungen erfüllen:
+>
+> - Mindestens 9 Zeichen
+> - Maximal 30 Zeichen
+> - Keine Zeichen mit Akzent
 
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Weiter`{.action}.
 
@@ -69,7 +87,7 @@ Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Account
 
 #### E-Mails einsehen
 
-Gehen Sie auf die [Webmail Loginseite](https://www.ovhcloud.com/de/mail/){.external} und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
+Gehen Sie auf die [Webmail Loginseite](/links/web/email) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
 Beim ersten Login werden Sie aufgefordert, die Sprache sowie Ihre Zeitzone festzulegen. Daraufhin wird Ihr Postfach angezeigt. Um herauszufinden, wie Sie Ihre E-Mail-Adresse mit Outlook Web App (OWA) nutzen, lesen Sie unsere Anleitung zur [Verwendung von E-Mail-Accounts über Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -120,7 +138,7 @@ Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Account
 
 #### E-Mails einsehen 
 
-Gehen Sie auf die [Webmail Loginseite](https://www.ovhcloud.com/de/mail/){.external} und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
+Gehen Sie auf die [Webmail Loginseite](/links/web/email) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
 Daraufhin wird Ihr Postfach angezeigt. Weitere Informationen finden Sie in unserer Anleitung zur [Verwendung Ihres E-Mail-Accounts mit RoundCube Webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
@@ -167,20 +185,40 @@ Sie können Ihre E-Mail-Accounts auf Ihrem gewünschten Gerät konfigurieren (z.
 
 Wenn Sie nur die Informationen zur Konfiguration Ihres E-Mail-Accounts benötigen, verwenden Sie die folgenden Einstellungen:
 
+> [!alert]
+>
+> Vergewissern Sie sich, dass die oben rechts auf dieser Seite angezeigte Markierung Ihrem Land bzw. Region enptspricht. **Die folgenden Einstellungen sind je nach Land/Region unterschiedlich.**
+
 > [!tabs]
 > **IMAP-Konfiguration (empfohlen)**
 >>
->> |Servertyp|Servername|Port (mit SSL)|Port (ohne SSL)|
->> |---|---|---|---|
->> |Eingangsserver|SSL0.OVH.NET|993|143|
->> |Ausgangsserver|SSL0.OVH.NET|465|587|
+>> |Information|Beschreibung|
+>> |---|---|
+>> |Nutzername|Geben Sie die **vollständige E-Mail-Adresse ein**|
+>> |Passwort|Geben Sie das Passwort des E-Mail-Accounts ein|
+>> |Server (eingehend)|imap.mail.ovh.net **oder** ssl0.ovh.net|
+>> |Port|993|
+>> |Sicherheitstyp|SSL/TLS|
 >>
 > **POP-Konfiguration**
 >>
->> |Servertyp|Servername|Port (mit SSL)|Port (ohne SSL)|
->> |---|---|---|---|
->> |Eingangsserver|SSL0.OVH.NET|995|110|
->> |Ausgangsserver|SSL0.OVH.NET|465|587|
+>> |Information|Beschreibung|
+>> |---|---|
+>> |Nutzername|Geben Sie die **vollständige E-Mail-Adresse ein**|
+>> |Passwort|Geben Sie das Passwort des E-Mail-Accounts ein|
+>> |Server (eingehend)|pop.mail.ovh.net **oder** ssl0.ovh.net|
+>> |Port|995|
+>> |Sicherheitstyp|SSL/TLS|
+>>
+> **SMTP-Konfiguration**
+>>
+>> |Information|Beschreibung|
+>> |---|---|
+>> |Nutzername|Geben Sie die **vollständige E-Mail-Adresse ein**|
+>> |Passwort|Geben Sie das Passwort des E-Mail-Accounts ein|
+>> |Server (ausgehend)|smtp.mail.ovh.net **oder** ssl0.ovh.net|
+>> |Port|465|
+>> |Sicherheitstyp|SSL/TLS|
 >>
 
 > [!warning]
@@ -189,5 +227,5 @@ Wenn Sie nur die Informationen zur Konfiguration Ihres E-Mail-Accounts benötige
 >
 
 ## Weiterführende Informationen
- 
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

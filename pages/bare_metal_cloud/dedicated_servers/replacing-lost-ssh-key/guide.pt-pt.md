@@ -49,7 +49,7 @@ Quando tiver acesso aos seus ficheiros, abra o ficheiro "authorized_keys" em cau
 nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Copie a sua nova chave pública (criada na etapa 2) no ficheiro. O conteúdo do ficheiro deverá ser o seguinte exemplo:
+Copie a sua nova chave pública (criada na etapa 1) no ficheiro. O conteúdo do ficheiro deverá ser o seguinte exemplo:
 
 ```console
 ssh-rsa 1111111111122222222222333333333334444444555 55555556666666666

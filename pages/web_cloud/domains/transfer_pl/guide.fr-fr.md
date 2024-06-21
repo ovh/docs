@@ -94,7 +94,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](/links
 
 - Dans certains cas, le processus de transfert peut nécessiter des informations supplémentaires concernant le propriétaire du nom de domaine. Pour ajouter ces informations, cliquez sur l'option `Gérer les contacts/le propriétaire`{.action}.
 
-![domaine](images/order-summary.png){.thumbnail}
+![domaine](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
 Une fois la commande validée, vous recevrez un bon de commande gratuit. Le processus de transfert ne démarrera qu'après validation de ce bon de commande gratuit. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](/links/manager){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action}, puis `Opérations en cours`{.action}.
 

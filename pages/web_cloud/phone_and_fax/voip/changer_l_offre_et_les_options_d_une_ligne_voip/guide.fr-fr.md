@@ -1,7 +1,7 @@
 ---
 title: 'Gérer vos services VoIP'
 excerpt: "Découvrez comment gérer vos services VoIP depuis l'espace client OVHcloud"
-updated: 2024-05-17
+updated: 2024-06-18
 ---
 
 ## Objectif
@@ -25,6 +25,7 @@ Afin d'adapter votre téléphonie à votre activité professionnelle, vous pouve
 - [Résilier une ligne SIP / Trunk](#cancel-sip)
 - [Résilier un numéro alias](#cancel-alias)
 - [Résilier une ligne Fax](#cancel-fax)
+- [Transférer une ou plusieurs lignes à un autre compte OVHcloud](#contacts)
 
 <a name="change-offer"></a>
 
@@ -194,6 +195,14 @@ Toute demande de résiliation sera prise en compte lors de votre prochaine factu
 > 
 > Si un équipement de type Plug & Fax est attaché à cette ligne, ce dernier ne fonctionnera plus et nous vous proposerons un [retour de matériel (RMA)](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma).
 >
+
+<a name="contacts"></a>
+
+### Transférer une ou plusieurs lignes à un autre compte OVHcloud
+
+Vous pouvez transférer partiellement ou totalement la gestion de vos services VoIP à un autre compte OVHcloud. Ce transfert s'effectue via une « gestion de contacts » sur le groupe de téléphonie qui contient vos services.
+
+Pour plus d'informations sur cette procédure, consultez le guide « [Effectuer un changement de contacts pour vos groupes de téléphonie](/pages/web_cloud/phone_and_fax/voip/effectuer_un_changement_de_contact_pour_les_services_voip) ».
 
 ## Aller plus loin
 

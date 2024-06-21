@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie konta e-mail w ramach usługi MX Plan'
 excerpt: 'Dowiedz się, jak utworzyć konto e-mail w ramach pakietu MX Plan'
-updated: 2022-10-11
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -16,21 +16,21 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
 
 ## Wymagania początkowe
 
-- Wykupienie usługi MX Plan Jest on dostępny w ramach: [pakietów hostingowych](https://www.ovhcloud.com/pl/web-hosting/){.external}, [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} zawartego w ofercie domeny (uprzednio aktywowanej) lub oferty MX Plan zamówionej oddzielnie.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}.
+- Wykupienie usługi MX Plan Jest on dostępny w ramach: [pakietów hostingowych](/links/web/hosting), [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) zawartego w ofercie domeny (uprzednio aktywowanej) lub oferty MX Plan zamówionej oddzielnie.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 > [!primary]
 >
 > **Szczególne przypadki**
 >
-> - Jeśli chodzi o bezpłatny Darmowy hosting 100M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przechodząc do odpowiedniej domeny.
-> - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}. W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](/pages/web_cloud/web_hosting/activate-email-hosting)".
+> - Jeśli chodzi o bezpłatny Darmowy hosting 100M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](/links/manager), przechodząc do odpowiedniej domeny.
+> - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](/links/web/hosting). W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
 ## W praktyce <a name="instructions"></a>
 
-W zależności od daty aktywacji usługi lub jeśli [usługa została niedawno przeniesiona](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration){.external}, możliwe, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, zidentyfikuj tą opcję.
+W zależności od daty aktywacji usługi lub jeśli usługa została niedawno przeniesiona, możliwe, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, zidentyfikuj tą opcję.
 
-W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Web Cloud`{.action}. Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
+W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), część `Web Cloud`{.action}. Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
@@ -69,9 +69,9 @@ Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od lic
 
 #### Sprawdź e-maile
 
-Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovhcloud.com/pl/mail/){.external}, po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
+Zaloguj się na stronie [Logowanie do interfejsu Webmail](/links/web/email), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
-Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail Outlook Web App (OWA), zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa){.external}.
+Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail Outlook Web App (OWA), zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -120,9 +120,9 @@ Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od lic
 
 #### Sprawdź e-maile 
 
-Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovhcloud.com/pl/mail/){.external}, po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
+Zaloguj się na stronie [Logowanie do interfejsu Webmail](/links/web/email), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
-Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}.
+Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -167,20 +167,40 @@ Skonfiguruj Twoje konto e-mail na wybranym urządzeniu (typu smartfon lub tablet
 
 Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
+> [!alert]
+>
+> Sprawdź, czy flaga widoczna w prawym górnym rogu tej strony dokumentacji pasuje do Twojego kraju/regionu. **Poniższe parametry różnią się w zależności od kraju/regionu**.
+
 > [!tabs]
-> **Konfiguracja IMAP (zalecana)**
+> **Konfiguracja IMAP (zalecane)**
 >>
->> |Typ serwera|Nazwa serwera|Port (z SSL)|Port (bez SSL)|
->> |---|---|---|---|
->> |Serwer poczty przychodzącej|SSL0.OVH.NET|993|143|
->> |Serwer poczty wychodzącej|SSL0.OVH.NET|465|587|
+>> |Informacja|Opis|
+>> |---|---|
+>> |Nazwa użytkownika|Wpisz **kompletny adres e-mail**|
+>> |Hasło|Wpisz hasło wybrane dla tego konta e-mail|
+>> |Serwer (przychodzący)|imap.mail.ovh.net **lub** ssl0.ovh.net|
+>> |Port|993|
+>> |Typ zabezpieczenia|SSL/TLS|
 >>
 > **Konfiguracja POP**
 >>
->> |Typ serwera|Nazwa serwera|Port (z SSL)|Port (bez SSL)|
->> |---|---|---|---|
->> |Serwer poczty przychodzącej|SSL0.OVH.NET|995|110|
->> |Serwer poczty wychodzącej|SSL0.OVH.NET|465|587|
+>> |Informacja|Opis|
+>> |---|---|
+>> |Nazwa użytkownika|Wpisz **kompletny adres e-mail**|
+>> |Hasło|Wpisz hasło wybrane dla tego konta e-mail|
+>> |Serwer (przychodzący)|pop.mail.ovh.net **lub** ssl0.ovh.net|
+>> |Port|995|
+>> |Typ zabezpieczenia|SSL/TLS|
+>>
+> **Konfiguracja SMTP**
+>>
+>> |Informacja|Opis|
+>> |---|---|
+>> |Nazwa użytkownika|Wpisz **kompletny adres e-mail**|
+>> |Hasło|Wpisz hasło wybrane dla tego konta e-mail|
+>> |Serwer (wychodzący)|smtp.mail.ovh.net **lub** ssl0.ovh.net|
+>> |Port|465|
+>> |Typ zabezpieczenia|SSL/TLS|
 >>
 
 > [!warning]
@@ -189,5 +209,5 @@ Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 >
 
 ## Sprawdź również
- 
+
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

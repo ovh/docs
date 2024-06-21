@@ -132,4 +132,4 @@ Plik ".htaccess" jest plikiem konfiguracyjnym (HTTP) Apache uruchomionym przez s
 
 Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

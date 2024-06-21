@@ -1,7 +1,7 @@
 ---
 title: "Modifier le mot de passe d'une adresse e-mail"
 excerpt: "Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud"
-updated: 2023-01-03
+updated: 2024-06-18
 ---
 
 ## Objectif
@@ -100,7 +100,15 @@ Sur la nouvelle fenêtre qui apparaît, commencez par renseigner votre mot de pa
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Identifiez votre offre MXplan <a name="whichmxplan"></a>
+### Récupérer un mot de passe
+
+Pour des raisons de sécurité et de confidentialité, il n'est pas possible de **récupérer** un mot de passe. Comme cela est décrit dans les étapes précédentes, il est nécessaire de réinitialiser votre mot de passe si vous ne le connaissez plus.
+
+> [!primary]
+>
+> Si vous souhaitez stocker un mot de passe, il est conseillé d'utiliser un gestionnaire de mot de passe, comme **Keepass** par exemple.
+
+### Identifiez votre offre MXplan <a name="whichmxplan"></a>
 
 Vous trouverez, dans le tableau ci-dessous, les informations nécessaires pour identifier votre offre MXplan.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Creare un account email con MX Plan'
-excerpt: 'Come aggiungere una casella di posta elettronica sulla soluzione MX Plan'
-updated: 2022-10-11
+excerpt: 'Questa guide ti mostra come aggiungere una casella di posta elettronica sulla soluzione MX Plan'
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -16,21 +16,21 @@ Una soluzione email MX Plan è stata appena creata per usufruire di indirizzi em
 
 ## Prerequisiti
 
-- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} o una soluzione MX Plan ordinata separatamente)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}.
+- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVHcloud](/links/web/hosting), un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o una soluzione MX Plan ordinata separatamente)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 
 > [!primary]
 >
 > **Casi particolari**
 >
-> - Se disponi di un Hosting gratuito 100M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, selezionando il dominio interessato.
-> - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}. Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](/pages/web_cloud/web_hosting/activate-email-hosting).
+> - Se disponi di un Hosting gratuito 100M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager), selezionando il dominio interessato.
+> - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](/links/web/hosting). Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](/pages/web_cloud/web_hosting/activate-email-hosting).
 
 ## Procedura <a name="instructions"></a>
 
-In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovhcloud.com/it/web-hosting/mxplan-migration/){.external}, la versione disponibile sarà differente. Prima di procedere, è necessario identificarla.
+In base alla data di attivazione o in caso di recente migrazione del servizio, la versione disponibile sarà differente. Prima di procedere, è necessario identificarla.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}. Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|
@@ -69,9 +69,9 @@ Ripeti questa operazione per tutti gli account che vuoi creare, in base al numer
 
 #### Consultare le email
 
-Accedi alla [pagina di connessione](https://www.ovhcloud.com/it/mail/){.external}, inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
+Accedi alla [pagina di connessione](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
-Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni sull'utilizzo della Webmail Outlook on the web (OWA), consulta la guida all'utilizzo di un indirizzo [email dalla Webmail Outlook on the web](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa){.external}.
+Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni sull'utilizzo della Webmail Outlook on the web (OWA), consulta la guida all'utilizzo di un indirizzo [email dalla Webmail Outlook on the web](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -120,9 +120,9 @@ Ripeti questa operazione per tutti gli account che vuoi creare, in base al numer
 
 #### Consultare le email 
 
-Accedi alla [pagina di connessione](https://www.ovhcloud.com/it/mail/){.external}, inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
+Accedi alla [pagina di connessione](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
-Si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}.
+Si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -167,21 +167,40 @@ Configura l’account email sul tuo dispositivo (ad esempio, smartphone o tablet
 
 Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 
+> [!alert]
+>
+> Assicurati che la bandiera in alto a destra in questa pagina di documentazione corrisponda al tuo paese. **I seguenti parametri variano in base al paese di residenza**.
+
 > [!tabs]
-> **Configurazione IMAP**
+> **per una configurazione IMAP (consigliato)** 
 >>
->> |Tipo di server|Nome del server|Porta (con SSL)|Porta (senza SSL)|
->> |---|---|---|---|
->> |In entrata|SSL0.OVH.NET|993|143|
->> |In uscita|SSL0.OVH.NET|465|587|
+>> |Campo|Descrizione|
+>> |---|---|
+>> |Nome utente|Inserisci l’indirizzo email **completo**|
+>> |Password|Inserisci la password associata all’indirizzo email|
+>> |Server (in entrata)|imap.mail.ovh.net **o** ssl0.ovh.net|
+>> |Porta|993|
+>> |Tipo di sicurezza|SSL/TLS|
 >>
 > **Configurazione POP**
 >>
->> |Tipo di server|Nome del server|Porta (con SSL)|Porta (senza SSL)|
->> |---|---|---|---|
->> |In entrata|SSL0.OVH.NET|995|110|
->> |In uscita|SSL0.OVH.NET|465|587|
+>> |Campo|Descrizione|
+>> |---|---|
+>> |Nome utente|Inserisci l’indirizzo email **completo**|
+>> |Password|Inserisci la password associata all’indirizzo email|
+>> |Server (in entrata)|pop.mail.ovh.net **o** ssl0.ovh.net|
+>> |Porta|995|
+>> |Tipo di sicurezza|SSL/TLS|
 >>
+> **Configurazione SMTP**
+>>
+>> |Campo|Descrizione|
+>> |---|---|
+>> |Nome utente|Inserisci l’indirizzo email **completo**|
+>> |Password|Inserisci la password associata all’indirizzo email|
+>> |Server (in uscita)|smtp.mail.ovh.net **o** ssl0.ovh.net|
+>> |Porta|465|
+>> |Tipo di sicurezza|SSL/TLS|
 
 > [!warning]
 >

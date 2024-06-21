@@ -132,4 +132,4 @@ El archivo ".htaccess" es un archivo de configuración (HTTP) Apache que ejecuta
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

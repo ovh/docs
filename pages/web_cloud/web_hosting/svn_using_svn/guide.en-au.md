@@ -139,4 +139,4 @@ svn+ssh://login@ftp.name-of-site.tld/home.XXX/login/svn/depot_test
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

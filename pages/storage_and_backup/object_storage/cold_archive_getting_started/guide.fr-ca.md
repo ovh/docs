@@ -65,11 +65,6 @@ aws s3api get-bucket-intelligent-tiering-configuration --bucket example-bucket -
 
 > [!primary]
 >
-> Le plugin `awscli-plugin-endpoint` ne fonctionne pas avec les alias, le paramètre `--endpoint-url` sera requis dans chaque commande.
->
-
-> [!primary]
->
 > Si vous avez défini plusieurs profils, ajoutez `--profile <profile>` à la ligne de commande.
 >
 

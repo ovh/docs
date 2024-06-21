@@ -214,4 +214,4 @@ You have no action to take in this situation. Even if your domain appears in [in
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

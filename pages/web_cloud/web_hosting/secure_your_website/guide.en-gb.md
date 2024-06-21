@@ -129,4 +129,4 @@ The .htaccess file is an Apache configuration (HTTP) file that is run by your We
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -57,7 +57,7 @@ Selecione o alojamento em causa, clique no separador `Mais`{.action} e, a seguir
 
 Nesta secção, terá uma visão geral das tarefas planeadas e dos respetivos parâmetros.
 
-![cron control panel](images/schedule-jobs.png){.thumbnail}
+![cron control panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/schedule-jobs.png){.thumbnail}
 
 ### Criação de uma tarefa automatizada
 
@@ -65,7 +65,7 @@ Nesta secção, terá uma visão geral das tarefas planeadas e dos respetivos pa
 
 Para criar uma tarefa CRON, clique no botão `Adicionar um planeamento`{.action} à direita. Pode personalizar os parâmetros da tarefa na nova janela.
 
-![adding scheduling](images/add-scheduling-step-1.png){.thumbnail}
+![adding scheduling](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-1.png){.thumbnail}
 
 |Opção|Descrição|   
 |---|---|   
@@ -84,7 +84,7 @@ A interface oferece dois modos para configurar a frequência da sua tarefa. Util
 |Modo simples|
 |---|
 |Utilize os menus pendente para especificar a hora, os dias de um mês, os dias da semana e os meses da tarefa.|
-|![cron frequency](images/add-scheduling-basic-mod-step-2.png){.thumbnail}|
+|![cron frequency](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-basic-mod-step-2.png){.thumbnail}|
 
 > [!primary]
 >
@@ -96,17 +96,17 @@ A interface oferece dois modos para configurar a frequência da sua tarefa. Util
 |Modo expert| 
 |---|
 |Introduza valores numéricos como num *crontab*. Os asteriscos indicam cada valor do período, o que significa que a tarefa será realizada continuamente **uma vez por hora, todos os dias**, no exemplo.|
-|![cron frequency](images/add-scheduling-expert-mod-step-2.png){.thumbnail}|
+|![cron frequency](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-expert-mod-step-2.png){.thumbnail}|
 
 Pode alternar entre os dois modos durante a configuração para visualizar as alterações em conformidade. Tenha em atenção as [limitações durante o planeamento de uma tarefa num alojamento Web](./#limitacoes-das-tarefas-planificadas-no-seu-alojamento-web).
 
-![cron control panel](images/add-scheduling-basic-mod-step-2.gif){.thumbnail}
+![cron control panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-basic-mod-step-2.gif){.thumbnail}
 
 #### Etapa 3: Fim da instalação
 
 O resumo lembra-lhe os parâmetros configurados, incluindo a notação *crontab* da frequência de execução. Se tudo estiver correto, clique em `Validar`{.action}.
 
-![cron confirmação](images/add-scheduling-step-3.png){.thumbnail}
+![cron confirmação](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
 
 A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus parâmetros ou eliminar a tarefa clicando em `...`{.action} na tabela de apresentação do seu painel de configuração OVHcloud.
 
@@ -195,4 +195,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

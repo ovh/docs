@@ -41,35 +41,35 @@ Introduzca su nombre de dominio en la barra de búsqueda de su navegador de Inte
 
 Si los archivos de origen de Typo3 se han colocado correctamente en la carpeta raíz, aparecerá la siguiente página:
 
-![Typo3 installation](images/install_step_one.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_one.png){.thumbnail}
 
 Cree un archivo vacío denominado `FIRST_INSTALL` en el directorio en el que haya colocado los archivos y carpetas de Typo3. Vuelva a su navegador de Internet y actualice la página. Si se producen errores, aparecerá la siguiente pantalla con la descripción de los errores.
 
-![Typo3 installation](images/install_step_2_error.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_2_error.png){.thumbnail}
 
 Resuelva los errores o haga clic en `Continue with errors`{.action}.
 
 Aparecerá el segundo paso de la instalación.
 
-![Typo3 installation](images/install_step_2.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_2.png){.thumbnail}
 
 Introduzca la información relativa a su SGBD y haga clic en `Continue`{.action}.
 
 Aparecerá el tercer paso de la instalación.
 
-![Typo3 installation](images/install_step_3.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_3.png){.thumbnail}
 
 Seleccione el nombre de la base de datos que desea utilizar para su sitio web o [cree una nueva](/pages/web_cloud/web_hosting/sql_create_database) y haga clic en `Continue`{.action}.
 
 Aparecerá el cuarto paso de la instalación.
 
-![Typo3 installation](images/install_step_4.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_4.png){.thumbnail}
 
 Introduzca el nombre de su sitio web y la información relativa a su usuario admin.
 
 Aparecerá el quinto y último paso de la instalación.
 
-![Typo3 installation](images/install_step_5.png){.thumbnail}
+![Typo3 installation](/pages/assets/screens/other/cms/typo3/install_step_5.png){.thumbnail}
 
 Lea la información que aparece en la pantalla y elija la opción que desee:
 
@@ -104,4 +104,4 @@ Acaba de instalar manualmente el CMS Typo3 en su alojamiento web de OVHcloud. De
  
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -196,7 +196,7 @@ W poniższej tabeli przedstawiono możliwe działania zbiorcze.
 >> W okresie kwarantanny domena nie jest już zarządzana przez OVHcloud. Odnowienie w Panelu klienta wiąże się z dodatkowymi kosztami (które różnią się w zależności od rozszerzenia).
 >> Po zakończeniu okresu kwarantanny domena wchodzi w fazę usuwania, która może trwać kilka dni. Po tym czasie domena zostaje ponownie przypisana do puli domen publicznych. Jeśli chcesz pobrać informacje o używaniu domeny, zalecamy użycie narzędzia [Whois](https://www.ovhcloud.com/pl/domains/whois/) do regularnego sprawdzania jej dostępności.
 > Nie chcę odnawiać mojej domeny, chcę ją przenieść do innego operatora niż OVHcloud. Jak to zrobić?
->> Zapoznaj się z instrukcjami zawartymi w przewodniku "[Transfer_domeny do innego operatora] (/pages/web_cloud/domains/transfer_outgoing_domain)".
+>> Zapoznaj się z instrukcjami zawartymi w przewodniku "[Transfer_domeny do innego operatora](/pages/web_cloud/domains/transfer_outgoing_domain)".
 > Nie chcę już automatycznego przelewu, ale nie chcę rezygnować z usługi. Co powinienem zrobić?
 >> Jeśli Twoja usługa na to pozwala, możesz skorzystać z działania [Skonfiguruj odnowienie](#actions) i wybrać odnowienie ręczne.
 > Odnowiłem usługę na 12 miesięcy. Czy mogę cofnąć wybór?

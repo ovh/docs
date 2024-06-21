@@ -367,7 +367,7 @@ Le bucket source est le bucket dont les objets sont automatiquement répliqués.
 
 ```bash
 $ aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+aws --profile default s3 mb s3://<bucket_name>
 ```
 
 **_Exemple:_** Création d'un bucket source dans la région SBG et dans la classe de stockage « Standard ».

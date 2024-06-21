@@ -41,7 +41,8 @@ Lorsque vous utilisez un hébergement Wix avec un nom de domaine OVHcloud, vous 
 
 > [!warning]
 >
-> Avant de poursuivre : <br>
+> Avant de poursuivre :
+>
 > - Ouvrez un onglet en parallèle sur votre navigateur internet.
 > - Ouvrez [**cette page de la documentation Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882){.external}.
 > - Positionnez-vous sur la partie « **Étape 2 | Mettre à jour les enregistrements DNS dans le compte de votre hébergeur de domaine** » de la documentation Wix.<br>
@@ -61,27 +62,31 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 > **Etape 1**
 >> **Enregistrement A**<br><br>
 >> Pour identifier les enregistrements « A » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `A`.<br>
->> ![dnszone](images/filter-a.png){.thumbnail}<br>
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
->> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 3. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul et avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> ![dnszone](images/filter-a.png){.thumbnail}
+>>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.
+>> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 3. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul et avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
 >> Laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv4 *relevée depuis votre interface Wix* dans le champ **Cible**.
 >> Cliquez sur `Suivant`{.action}, validez votre enregistrement « A » et passez à l'étape 2.
 > **Etape 2**
 >> **Enregistrement AAAA**<br><br>
 >>  Pour identifier les enregistrements « AAAA » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `AAAA`.<br>
->> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> ![dnszone](images/filter-aaaa.png){.thumbnail}
+>>
 >> - Si des enregistrements « AAAA » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec les enregistrements « A » et « CNAME » que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul et avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 > **Etape 3**
 >> **Enregistrement TXT**<br><br>
 >>  Pour identifier les enregistrements « TXT » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `TXT`.<br>
->> ![dnszone](images/filter-txt.png){.thumbnail}<br>
->> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 3. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> ![dnszone](images/filter-txt.png){.thumbnail}
+>>
+>> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 > **Etape 4**
 >> **Enregistrement CNAME**<br><br>
 >>  Pour identifier les enregistrements « CNAME » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `CNAME`.<br>
->> ![dnszone](images/filter-cname.png){.thumbnail}<br>
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
+>> ![dnszone](images/filter-cname.png){.thumbnail}
+>>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.
 >> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `CNAME`{.action}.
 >> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez la valeur relevée depuis votre interface Wix dans le champ **Cible**.<br>
 >> Cliquez sur `Suivant`{.action} puis validez votre enregistrement « CNAME ».

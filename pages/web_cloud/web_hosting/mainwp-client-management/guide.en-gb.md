@@ -85,4 +85,4 @@ Once you have created your new customer, go to your customers list. Click the cu
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

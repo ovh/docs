@@ -44,4 +44,4 @@ To use SSH you should now refer to [this guide](/pages/web_cloud/web_hosting/ssh
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
