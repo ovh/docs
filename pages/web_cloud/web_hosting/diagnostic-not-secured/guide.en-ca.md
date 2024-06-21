@@ -26,15 +26,15 @@ Several error messages may appear if your website is inaccessible. The examples 
 
 ## Requirements
 
-- have the management of your domain name’s [DNS servers](/pages/web_cloud/domains/dns_server_general_information) and [DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
-- access to the [OVHcloud Control Panel](/links/manager)
+- Administrative rights to manage your domain name’s [DNS servers](/pages/web_cloud/domains/dns_server_general_information) and [DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 To solve this issue, you will need to:
 
-1. determine the hosting plan to which your domain name is linked, in order to intervene on the correct server;
-2. create, activate or renew a [SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting) for your domain name on the concerned hosting plan.
+1. Determine the hosting plan to which your domain name is linked, in order to intervene on the correct server.
+2. Create, activate or renew a [SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting) for your domain name on the concerned hosting plan.
 
 ### Step 1: check the hosting plan attached to your domain name
 
@@ -62,12 +62,12 @@ Select the `DNS Zone`{.action} tab and note the target of the `A` record for you
 
 |Scenario|What to do|
 |---|---|
-|The IP address listed in the [DNS Zone](/pages/web_cloud/domains/dns_zone_edit) corresponds to your web hosting plan’s IP address.|Proceed to [Step 2](#step2).|
-|The IP address listed in the zone does not concern any of the Web hosting plans within your [OVHcloud account](/links/manager), but appears in the [list of our Web Cloud servers](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Check that you do not have a hosting plan with this IP address within one of your other [OVHcloud customer accounts](/links/manager), if you have several of them. Contact your webmaster or the [OVHcloud partners](/links/partner) for further information.|
-|The IP address entered in the zone is not your hosting plan’s one, nor does it appear on the [list of our Web Cloud servers](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Contact your webmaster or the [OVHcloud partners](/links/partner) for further informations.|
-|In the `DNS Zone`{.action} tab, a warning indicates that your domain name uses other [DNS](/pages/web_cloud/domains/dns_zone_edit) servers. These appear as "ns **?** .ovh.net" or "dns **?** .ovh.net" (replace the "**?**" with the relevant DNS server number):<br><br>![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}|You must therefore modify your domain's DNS servers to match the `NS` records of the DNS zone. To perform this operation, follow the instructions of [this guide](/pages/web_cloud/domains/dns_server_edit).|
-|In the `DNS Zone`{.action} tab, a message indicates that your domain uses other [DNS](/pages/web_cloud/domains/dns_zone_edit) servers and these do not appear as "ns **?** .ovh.net" or "dns **?** .ovh.net" :<br><br>![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}|Contact your webmaster or the [OVHcloud partners](/links/partner) for further informations.|
-|Your domain name does not appear in the `Domain names`{.action} section of your [OVHcloud Control Panel](/links/manager).<br><br>Or your domain's `DNS Zone`{.action} tab will appear as follows:<br><br>![dns_ndd_pas_sur_lec2](images/zone-without-domain-top-of-the-page.png){.thumbnail}|It means that your domain name is not managed from your [OVHcloud Control Panel](/links/manager).<br><br>Check if it is not managed from one of your other [OVHcloud customer accounts](/links/manager), if you have created more than one of them.<br><br>You can also check the registrar of your domain name and its actual DNS servers with our [WHOIS tool](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>If necessary, contact your webmaster or [OVHcloud partners](/links/partner) about this.|
+|The IP address listed in the [DNS Zone](/pages/web_cloud/domains/dns_zone_edit) corresponds to your Web Hosting plan’s IP address.|Proceed to [Step 2](#step2).|
+|The IP address listed in the zone does not concern any of the Web Hosting plans within your [OVHcloud account](/links/manager), but appears in the [list of our Web Cloud servers](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Check that you do not have a hosting plan with this IP address within one of your other [OVHcloud customer accounts](/links/manager), if you have several of them. Contact your webmaster or the [OVHcloud partners](/links/partner) for further information.|
+|The IP address entered in the zone is not your hosting plan’s one, nor does it appear on the [list of our Web Cloud servers](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Contact your webmaster or the [OVHcloud partners](/links/partner) for further information.|
+|In the `DNS Zone`{.action} tab, a warning indicates that your domain name uses other [DNS](/pages/web_cloud/domains/dns_zone_edit) servers. These appear as "ns **?** .ovh.net" or "dns **?** .ovh.net" (replace "**?**" with the relevant DNS server number):<br><br>![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}|You must modify your domain's DNS servers to match the `NS` records of the DNS zone. To perform this operation, follow the instructions of [this guide](/pages/web_cloud/domains/dns_server_edit).|
+|In the `DNS Zone`{.action} tab, a message indicates that your domain uses other [DNS](/pages/web_cloud/domains/dns_zone_edit) servers and these do not appear as "ns **?** .ovh.net" or "dns **?**.ovh.net" :<br><br>![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}|Contact your webmaster or the [OVHcloud partners](/links/partner) for further information.|
+|Your domain name does not appear in the `Domain names`{.action} section of your [OVHcloud Control Panel](/links/manager).<br><br>Or your domain's `DNS Zone`{.action} tab appears as follows:<br><br>![dns](images/zone-without-domain-top-of-the-page.png){.thumbnail}|It means that your domain name is not managed from your [OVHcloud Control Panel](/links/manager).<br><br>Check if it is managed from one of your other [OVHcloud customer accounts](/links/manager), if you have created more than one of them.<br><br>You can also check the registrar of your domain name and its actual DNS servers with our [WHOIS tool](https://www.ovh.co.uk/support/tools/check_whois.pl).<br><br>If necessary, contact your webmaster or the [OVHcloud partners](/links/partner) about this.|
 
 ### Step 2: check your hosting plan’s SSL certificate <a name="step2"></a>
 

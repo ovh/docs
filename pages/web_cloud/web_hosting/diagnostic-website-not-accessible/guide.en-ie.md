@@ -28,7 +28,9 @@ Several error returns may appear on your browser if your website becomes inacces
 
 - control over your domain’s servers and [DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 - access to the [OVHcloud Control Panel](/links/manager)
-- being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
+- Administrative access to your domain name in order to change the DNS servers and edit the [DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+- Access to the [OVHcloud Control Panel](/links/manager)
+- No outstanding [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 

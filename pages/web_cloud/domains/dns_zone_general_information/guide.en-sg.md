@@ -6,17 +6,17 @@ updated: 2024-06-17
 
 ## Objective
 
-The abbreviation **DNS**, meaning **D**omain **N**ame **S**ystem, is a set of elements (DNS servers, DNS zones, etc.) that allow you to match a domain name to an IP address.
+**DNS** means **D**omain **N**ame **S**ystem and is a set of elements (DNS servers, DNS zones, etc.) that map a domain name to an IP address.
 
 It is essential to differentiate between **DNS servers** and the **DNS zone**. A **DNS zone** is configured on the **DNS server**.
 
-To get a better understanding of all of this, we recommend reading our guide on [What is a DNS server?](/pages/web_cloud/domains/dns_server_general_information).
+For a better understanding, we recommend reading our guide on [What is a DNS server?](/pages/web_cloud/domains/dns_server_general_information).
 
 For example, when you want to access the *domain.tld* website via a web browser, your request is initially processed by this DNS set. This DNS set will then provide your web browser with the IP address of the server hosting the *domain.tld* website.
 
 When you type *domain.tld*, the **DNS servers** associated with this domain name will be queried. These records contain the **DNS zone** of the *domain.tld* domain name, which contains the IP address of the *domain.tld* hosting plan. Your browser will then be able to display the *domain.tld* website contained on the web hosting plan. This is called a DNS resolution.
 
-**Find out what a DNS zone does, what it contains, and how it works with a domain name.**
+**This guide explains what a DNS zone does, what it contains, and how it works with a domain name.**
 
 ## Instructions
 
@@ -30,15 +30,15 @@ For example, you can specify:
 - The email servers (DNS records of type *MX*) to which your domain name must redirect the emails it receives.
 - Information related to the security/authentication of your services (web hosting, web server, email server, etc.) associated with your domain name (SPF, DKIM, DMARC DNS records, etc.).
 
-A DNS zone is hosted/registered on **DNS servers**. The **DNS servers** must be registered (with a domain name registrar) in order to use the DNS zone they host.
+A DNS zone is hosted on **DNS servers**. The **DNS servers** must be registered (with a domain name registrar) in order to use the DNS zone they host.
 
 For more information, see our webpage explaining [how a DNS server works](/links/web/domains-dns-server).
 
 ### DNS records
 
-Many DNS records exist. They all have a specific purpose in DNS resolution. At OVHcloud, they are divided into three parts:
+Various DNS record types exist. They all have a specific purpose in DNS resolution. At OVHcloud, they are divided into three parts:
 
-- Time and attendance records (A, AAAA, CNAME, DNAME, NS)
+- Pointer records (A, AAAA, CNAME, DNAME, NS)
 - Email records (MX, SPF, DKIM, DMARC)
 - Extended records (TXT, SRV, CAA, NAPTR, LOC, SSHFP, TLSA)
 
@@ -50,7 +50,7 @@ To better represent what a DNS zone is, below is an example of a DNS zone hosted
 
 ![DNS zone dashboard](images/dns-zone-dashboard-ca.png){.thumbnail}
 
-In comparison, here is its equivalent in “text mode”:
+In comparison, here is its equivalent in text mode:
 
 ```bash
 $TTL 3600
