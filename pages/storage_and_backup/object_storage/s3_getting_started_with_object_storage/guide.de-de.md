@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Erste Schritte mit Object Storage (EN)
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2024-06-11
+updated: 2024-06-21
 ---
 
 ## Objective

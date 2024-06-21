@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Getting started with Cold Archive (EN)
 excerpt: This guide shows you how to manage your data with Cold Archive
-updated: 2024-03-04
+updated: 2024-06-21
 ---
 
 ## Objective
