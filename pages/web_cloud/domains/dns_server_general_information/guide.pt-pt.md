@@ -1,5 +1,5 @@
 ---
-title: "O que é um servidor DNS?"
+title: "Saber tudo sobre os servidores DNS"
 excerpt: "Descubra o papel dos servidores DNS, o que eles contêm e como funcionam com um domínio"
 updated: 2024-06-17
 ---
