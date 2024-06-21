@@ -35,11 +35,11 @@ Um die IP-Geolokalisierungsoption zu aktivieren, loggen Sie sich in Ihr [OVHclou
 Klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus.<br>
 Klicken Sie auf den Tab `Multisite`{.action} und dann auf den Button `...`{.action} rechts neben dem Domainnamen in der Tabelle. Wählen Sie `Domain bearbeiten`{.action}.
 
-![Hosting-Multisites](images/modify-a-domain.png){.thumbnail}
+![Hosting-Multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
 
 Setzen Sie im neu geöffneten Fenster einen Haken im Feld `IP des Landes`{.action}, um das Drop-down-Menü zu öffnen.
 
-![geolokation option](images/country-ip-selection.png){.thumbnail}
+![geolokation option](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/country-ip-selection.png){.thumbnail}
 
 Wählen Sie aus den 12 angebotenen Ländern die IP-Adresse des Landes aus, für das Sie Ihre Website geolokalisieren möchten: *Tschechische Republik, Finnland, Frankreich, Deutschland, Irland, Italien, Litauen, Niederlande, Polen, Portugal, Spanien, Vereinigtes Königreich*.
 

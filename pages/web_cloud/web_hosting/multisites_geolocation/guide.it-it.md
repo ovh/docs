@@ -36,11 +36,11 @@ Per utilizzare l'opzione di geolocalizzazione via IP, accedi al tuo [Spazio Clie
 Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista.<br>
 Clicca sulla scheda `Multisito`{.action} e poi sul pulsante `...`{.action} situato a destra del tuo dominio nella tabella. Infine clicca su `Modifica il dominio`{.action}.
 
-![hosting multisito](images/modify-a-domain.png){.thumbnail}
+![hosting multisito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
 
 Nella nuova finestra, seleziona `IP del Paese`{.action} e inserisci il menu a tendina.
 
-![geolocation option](images/country-ip-selection.png){.thumbnail}
+![geolocation option](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/country-ip-selection.png){.thumbnail}
 
 Scegli l'indirizzo IP del Paese per il quale vuoi geolocalizzare il tuo sito, tra i 12 Paesi proposti: * Repubblica Ceca, Finlandia, Francia, Germania, Irlanda, Italia, Lituania, Paesi Bassi, Polonia, Portogallo, Spagna, Regno Unito*.
 
