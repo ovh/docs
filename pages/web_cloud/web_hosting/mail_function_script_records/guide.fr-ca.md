@@ -31,13 +31,13 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 
 Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](/links/manager){.external}. Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
 
-![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 
 La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre [hébergement web OVHcloud](/links/web/hosting).
 
 ### Présentation de la partie « Scripts emails »
 
-![hosting](images/tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
 
 La page affiche plusieurs informations vous permettant de visualiser l'activité des envois d'e-mails automatisés générés depuis vos scripts :
 
@@ -125,7 +125,7 @@ Cet état survient lorsque des mails considérés comme du SPAM ont été émis 
 
 Généralement, ce blocage est accompagné par l'envoi d'un e-mail intitulé **« Abus avec votre hébergement domain.tld »** généré automatiquement par nos robots de sécurité :
 
-![hosting](images/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Trois cas de figure sont possibles par rapport à cette situation :
 

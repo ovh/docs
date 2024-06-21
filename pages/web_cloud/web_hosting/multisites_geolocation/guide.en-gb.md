@@ -32,11 +32,11 @@ To use the IP geolocation option, log in to your [OVHcloud Control Panel](/links
 Once you have logged in, go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the relevant hosting plan from the list.<br>
 Then click on the `Multisite`{.action} tab and the `...`{.action} to the right of your domain name in the table. Finally, click `Modify domain`{.action}.
 
-![hosting multisites](images/modify-a-domain.png){.thumbnail}
+![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
 
 In the window that pops up, tick the `Country IP`{.action} box to open the drop-down menu.
 
-![geolocation option](images/country-ip-selection.png){.thumbnail}
+![geolocation option](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/country-ip-selection.png){.thumbnail}
 
 Choose the IP address of the country for which you want to geolocate your site, from the 12 countries offered: *Czech Republic, Finland, France, Germany, Ireland, Italy, Lithuania, Netherlands, Poland, Portugal, Spain, United Kingdom*.
 

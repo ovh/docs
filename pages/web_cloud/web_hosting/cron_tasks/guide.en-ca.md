@@ -51,7 +51,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.
 
 In this section you will see an overview of your scheduled jobs and their settings.
 
-![cron control panel](images/schedule-jobs.png){.thumbnail}
+![cron control panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/schedule-jobs.png){.thumbnail}
 
 ### Creating an automated task
 
@@ -59,7 +59,7 @@ In this section you will see an overview of your scheduled jobs and their settin
 
 To create a new cron task, click on the `Add a scheduling`{.action} button on the right-hand side. You can customise the settings for the task in the new window.
 
-![adding scheduling](images/add-scheduling-step-1.png){.thumbnail}
+![adding scheduling](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-1.png){.thumbnail}
 
 |Option|Description|   
 |---|---|   
@@ -78,12 +78,12 @@ The interface offers two modes to configure the frequency of your task. Use the 
 |Basic mode|
 |---|
 |Use the drop-down menus to specify the time of day, days of a month, week days and months for the task.|
-|![cron frequency](images/add-scheduling-basic-mod-step-2.png){.thumbnail}|
+|![cron frequency](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-basic-mod-step-2.png){.thumbnail}|
 
 |Advanced mode| 
 |---|
 |Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
-|![cron frequency](images/add-scheduling-expert-mod-step-2.png){.thumbnail}|
+|![cron frequency](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-expert-mod-step-2.png){.thumbnail}|
 
 > [!primary]
 >
@@ -94,13 +94,13 @@ The interface offers two modes to configure the frequency of your task. Use the 
 
 You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks).
 
-![cron control panel](images/add-scheduling-basic-mod-step-2.gif){.thumbnail}
+![cron control panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-basic-mod-step-2.gif){.thumbnail}
 
 #### Step 3: Finishing the setup
 
 The summary lists all your settings including the *crontab* notation of the execution frequency. If everything is correct, click on `Confirm`{.action}.
 
-![cron confirmation](images/add-scheduling-step-3.png){.thumbnail}
+![cron confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
 
 The task will be ready within a few minutes. You can then modify all of its settings or delete the task by clicking on `...`{.action} in the overview table in your OVHcloud Control Panel.
 
