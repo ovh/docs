@@ -234,4 +234,4 @@ Para verificar que a reabertura foi efetuada corretamente, ligue-se ao seu websi
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

@@ -85,4 +85,4 @@ Acaba de instalar manualmente o CMS Spip no seu alojamento web da OVHcloud. O se
  
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).
