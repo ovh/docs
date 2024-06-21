@@ -15,7 +15,6 @@ Ce guide vous présente les différentes actions à réaliser pour migrer l'ense
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
-> [!warning]
 >
 Ce guide s’adresse aux personnes possédant les bases dans les domaines tels que les [zones DNS](/pages/web_cloud/domains/dns_zone_general_information){.external}, les espaces de stockage FTP ou encore les bases de données. En revanche, vous n'avez pas besoin de posséder de connaissances techniques avancées, et ce guide vous aide pas à pas dans la migration de votre site web.
 >
