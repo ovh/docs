@@ -85,4 +85,4 @@ Sie haben das CMS SPIP manuell auf Ihrem OVHcloud Webhosting installiert. Ihre S
  
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.
