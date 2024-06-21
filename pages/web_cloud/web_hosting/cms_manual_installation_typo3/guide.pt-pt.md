@@ -104,4 +104,4 @@ Acaba de instalar manualmente o CMS Typo3 no seu alojamento web da OVHcloud. Dep
  
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

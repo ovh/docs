@@ -100,4 +100,4 @@ You have just manually installed CMS Typo3 on your OVHcloud web hosting plan. Af
  
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

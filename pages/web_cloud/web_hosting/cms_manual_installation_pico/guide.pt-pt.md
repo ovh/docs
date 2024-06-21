@@ -120,4 +120,4 @@ Acaba de instalar manualmente o CMS Pico no seu alojamento web da OVHcloud. Depo
  
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

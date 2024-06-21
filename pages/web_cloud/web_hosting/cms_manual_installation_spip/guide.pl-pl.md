@@ -85,4 +85,4 @@ Właśnie ręcznie zainstalowałeś CMS Spip na Twoim hostingu OVHcloud. Twoja s
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

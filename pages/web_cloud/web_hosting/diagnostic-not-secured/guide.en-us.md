@@ -111,4 +111,4 @@ For specialized service providers (SEO, IT development, etc.), contact [OVHcloud
 
 If you need assistance using and configuring your OVHcloud solutions, please refer to our [support offers page](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
