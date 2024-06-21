@@ -1,7 +1,7 @@
 ---
 title: "Object Storage Swift - Iniziare a utilizzare l'API Swift S3"
 excerpt: "Come utilizzare l'API Swift S3"
-updated: 2023-03-02
+updated: 2024-06-21
 ---
 
 > [!primary]

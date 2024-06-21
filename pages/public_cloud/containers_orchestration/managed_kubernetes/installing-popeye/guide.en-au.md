@@ -1,7 +1,7 @@
 ---
 title: Sanitize your OVHcloud Managed Kubernetes with Popeye
 excerpt: Find out how to sanitize your OVHcloud Managed Kubernetes with Popeye and export the generated report on an OVHcloud Object Storage container
-updated: 2022-04-15
+updated: 2024-06-21
 ---
 
 ## Objective
