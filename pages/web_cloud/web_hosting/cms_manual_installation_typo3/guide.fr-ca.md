@@ -1,6 +1,6 @@
 ---
-title: "Tutoriel - Installer manuellement Typo3"
-excerpt: "Découvrez comment installer le CMS Typo3 sur un hébergement web OVHcloud"
+title: "Tutoriel - Installer Typo3 sur son hébergement web OVHcloud"
+excerpt: "Découvrez comment installer manuellement le CMS Typo3 sur un hébergement web OVHcloud"
 updated: 2024-03-28
 ---
 
@@ -88,11 +88,11 @@ Vous venez d'installer manuellement le CMS Typo3 sur votre hébergement web OVHc
 
 [Tutoriel - Installer manuellement PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 
-[Tutoriel - Installer manuellement Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+[Tutoriel - Installer Pico sur son hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
 
-[Tutoriel - Installer manuellement Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+[Tutoriel - Installer Grav sur son hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
 
-[Tutoriel - Installer manuellement SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
+[Tutoriel - Installer Spip sur son hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 [Tutoriel - Installer manuellement un CMS sur mon hébergement](/pages/web_cloud/web_hosting/cms_manual_installation)
 
