@@ -1,7 +1,7 @@
 ---
 title: 'Concepts réseau VMware Cloud Director on OVHcloud'
 exerpt: 'Découvrez les puissantes capacités de mise en réseau de VMware Cloud Director on OVHcloud avec notre guide complet sur les concepts et fonctionnalités clés'
-updated: 2024-06-21
+updated: 2024-06-24
 ---
 <style>
 details>summary {
@@ -38,7 +38,7 @@ details[open]>summary::before {
 
 Dans ce guide d'introduction, nous allons explorer les différents concepts de mise en réseau au sein de VMware Cloud Director on OVHcloud. Et étudier des notions d'optimisation de l'espace réseau tel que l'espace IP, les passerelles Edge, les groupes de centres de données par exemple.
 
-/// details | Introduction de la pratique réseau au sein de VCD on OVHcloud
+/// details | Introduction de la pratique du réseau au sein de VCD on OVHcloud
 
 Pour assurer une infrastructure réseau flexible et sécurisée dans un environnement de cloud polyvalent, VMware Cloud Director utilise une architecture de mise en réseau superposée comprenant quatre catégories de réseaux :
 
@@ -263,7 +263,9 @@ IAM n'est pas disponible au sein de VMware Cloud Director on OVHcloud à ce jour
 
 ## Aller plus loin
 
-Vous pouvez maintenant suivre les étapes du guide suivant : [« Guide 2 - VMware Cloud Director on OVHcloud - Network - Créer des composants réseau via le control panel VCD on OVHcloud ? »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
+Vous pouvez maintenant suivre les étapes du guide suivant : [« Guide 2 - VMware Cloud Director on OVHcloud - Network - Créer des composants réseau via le control panel VCD on OVHcloud »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
+
+/// details | Aller plus loin avec les concepts réseau au sein d'OVHcloud
 
 ### Networking pour VMware Cloud Director on OVHcloud - Index des guides :
 
@@ -278,6 +280,8 @@ Vous pouvez maintenant suivre les étapes du guide suivant : [« Guide 2 - VMwar
 Voici la liste des guides que vous pouvez lire pour renforcer vos connaissances réseau au sein de l'univers OVHcloud :
 - [Bloc IP - Gérer et configurer un bloc IP /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29).
 - [Concepts - Réseau Public / Privée](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
+
+///
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

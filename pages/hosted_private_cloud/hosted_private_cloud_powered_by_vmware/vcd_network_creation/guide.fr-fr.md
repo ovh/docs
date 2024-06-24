@@ -1,7 +1,7 @@
 ---
 title: 'Créer des composants réseau depuis VCD on OVHcloud'
 exerpt: 'Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud en suivant ce guide tutoriel qui déroule l'ensemble des étapes'
-updated: 2024-06-21
+updated: 2024-06-24
 ---
 
 <style>
@@ -411,6 +411,9 @@ Votre réseau est maintenant entièrement créé et prêt à l'emploi.
 ## Aller plus loin
 
 Vous pouvez maintenant suivre les étapes du prochain : [ « Guide 3 : VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ? » ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_ipsec).
+
+Si vous rencontrez des difficultés avec le réseau au sein de VCD on OVHcloud, relisez :
+- « Guide 1 :  [VMware Cloud Director on OVHcloud - Network - Concepts »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou [cliquez ici](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
