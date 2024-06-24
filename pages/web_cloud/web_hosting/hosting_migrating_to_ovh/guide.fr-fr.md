@@ -84,7 +84,7 @@ Une fois la zone DNS créée, accédez à sa gestion à l'aide de notre guide «
 
 Si elles ne sont pas présentes, renseignez les entrées suivantes :
 
-**Exemple** : Pour le nom de domaine « domain.tld »
+**Exemple**  (pour le nom de domaine « domain.tld ») :
 
 |Domaine|Type d'enregistrement|Priorité|Cible|
 |---|---|---|---|
