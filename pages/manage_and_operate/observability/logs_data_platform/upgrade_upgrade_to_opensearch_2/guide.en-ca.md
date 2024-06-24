@@ -1,7 +1,7 @@
 ---
 title: OpenSearch Upgrade to 2.X
 excerpt: Learn about the upgrade of OpenSearch from 1.3 to 2.x and its impact on the Logs Data Platform
-updated: 2024-06-21
+updated: 2024-06-24
 ---
 
 ## Objective
@@ -25,7 +25,8 @@ Another change for the OpenSearch API is the [Wildcard query behavior](https://o
 
 ## Filebeat Deprecation
 
-New Filebeat versions are only compatible with Elasticsearch when using Elasticsearch output. Only Filebeat 7.10+ versions are compatible with OpenSearch 1.X. The OpenSearch version endpoint will now provide its proper version instead of 7.10.2. **This change breaks Filebeat compatibility**. We strongly encourage our users to migrate to an alternative like [fluentbit](https://docs.fluentbit.io/manual/pipeline/outputs/opensearch){.external}, which supports OpenSearch 2.X with the **Suppress_Type_Name** option. 
+New Filebeat versions are only compatible with Elasticsearch when using Elasticsearch output. Only Filebeat 7.10+ versions are compatible with OpenSearch 1.X. The OpenSearch version endpoint will now provide its proper version instead of 7.10.2. **This change breaks Filebeat compatibility**. We strongly encourage our users to migrate to an alternative such as [fluentbit](https://docs.fluentbit.io/manual/pipeline/outputs/opensearch){.external}, which supports OpenSearch 2.X with the **Suppress_Type_Name** option.
+
 We are still providing a way to make Filebeat 7.10+ versions compatible with our OpenSearch 2.X version by using a special header, **X-Es-Compat**, with the value "7.10". Here is a configuration snippet for this purpose:
 
 ```yaml
