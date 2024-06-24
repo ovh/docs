@@ -59,7 +59,7 @@ Plusieurs [offres d'hébergement mutualisé OVHcloud](/links/web/hosting) contie
 - L'hébergement [Performance](/links/web/hosting-performance-offer) avec **1000 adresses e-mail** « MX Plan ». Cette offre est déclinée en 4 « sous-offres ».
 - L'hébergement [Cloud Web](/links/web/hosting-cloud-web-offer) avec **200 adresses e-mail** « MX Plan ». Cette offre est utilisée par les développeurs d'applications.
 
-Une fois votre offre d'hébergement choisie, si vous n'êtes pas encore client OVHcloud, cliquez sur le bouton `Commander`{.action} présent sur les pages commerciales ci-dessus. Suivez les étapes de la commande **sans demander le transfert de votre nom de domaine** (Cette action sera effectuée à l'étape 10 de ce guide).
+Une fois votre offre d'hébergement choisie, si vous n'êtes pas encore client OVHcloud, cliquez sur le bouton `Commander`{.action} présent sur les pages commerciales ci-dessus. Suivez les étapes de la commande **sans demander le transfert de votre nom de domaine** (cette action sera effectuée à l'étape 10 de ce guide).
 
 Vous pouvez aussi effectuer la commande depuis votre [espace client OVHcloud](/links/manager). Une fois connecté, suivez les instructions suivantes :
 
