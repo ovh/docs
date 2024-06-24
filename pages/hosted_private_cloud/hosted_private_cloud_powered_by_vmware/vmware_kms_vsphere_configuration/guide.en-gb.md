@@ -29,28 +29,53 @@ Once in the security section, go to the `Virtual Machine Encryption Key Manageme
 ![Creation KMS server](images/creation_kms_server.png){.thumbnail}
 
 > [!primary]
-> To retrieve your SSL fingerprint from your KMS server, follow the instructions below by navigating through the tabs.
+> To retrieve your SSL fingerprint and the public IP from your KMS server, follow the instructions below by navigating through the tabs.
 >
 
 > [!tabs]
+> 
 > **Windows**
 >>
+>> **Empreinte SSL :**
 >> - Open your web browser.
 >> - In the address bar, enter your server’s IP address preceded by `https://` and followed by the port if necessary (for example: `https://192.0.2.1:443`).
 >> - When the page loads, click the padlock icon to the left of the URL in the address bar. This will display the certificate information.
 >> - In the certificate information, look for the section that relates to the *fingerprint*. This section can be named differently depending on the browser you are using.<br>
 >>
->> ![Navigator Padlock](images/padlock_website.png){.thumbnail}
+>> ![Cadena Navigateur](images/fingerprint_sha.png){.thumbnail}
 >>
->> ![Sha Thumbprint Browser](images/fingerprint_sha.png){.thumbnail}
+>> ![Empreinte SHA Navigateur](images/fingerprint_sha.png){.thumbnail}
 >>
-> **Linux/MacOS**
+>> **IP Publique :**
 >>
->> If you are on a Linux or MacOS host, simply run the command below in a terminal.<br>
+>> - To retrieve the public IP of your KMS endpoint, you can ping or NSlookup, for example :
+>>
+>> ```shell
+>> ping eu-west-rbx.okms.ovh.net
+>> or
+>> nslookup eu-west-rbx.okms.ovh.net
+>> ```
+>>
+> **Linux / MacOs**
+>>
+>> **Empreinte SSL :**
+>>
+>> - If you are on a Linux or MacOS host, simply run the command below in a terminal.<br>
 >>
 >> ```shell
 >> openssl s_client -connect 54.38.64.196:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 >> ```
+>>
+>> **IP Publique :**
+>>
+>> - To retrieve the public IP of your KMS endpoint, you can ping or dig, for example :
+>>
+>> ```shell
+>> ping eu-west-rbx.okms.ovh.net
+>> or
+>> dig eu-west-rbx.okms.ovh.net
+>> ```
+>>
 
 ### Add the Key Provider in vSphere
 
@@ -71,15 +96,32 @@ Wait for vSphere to establish the connection with the Key Provider you have adde
 
 Select your Key Provider you have just created and click on the `TRUST VCENTER` button.
 
-![Trust KMS server](images/trust_kms.png){.thumbnail}
+We recommend the method : `New certificate signature request (CSR)`{.action). But you can also select `KMS Certificate and private key to vCenter.`{.action}, you are free to choose the one that best suits you.
 
-In the context menu, select `KMS Certificate and private key to vCenter.`. Then enter your KMS certificate and your KMS server private key.
+For more information on the benefit of each choice, read the documentation [KMS - Quick start](/pages/manage_and_operate/kms/quick-start).
 
-![Trust KMS server](images/kms_trust_vcenter.png){.thumbnail}
+> [!tabs]
+> **KMS certificate and private key**
+>>
+>> - Select `KMS Certificate and private key to vCenter.`{.action}, Then enter your KMS certificate and your KMS server private key.
+>>
+>> ![Trust KMS server](images/kms_trust_vcenter.png){.thumbnail}
+>>
+>> ![Trust KMS server](images/kms_trust_vcenter_2.png){.thumbnail}
+>>
+>>
+> **New Certificate Signing Request (CSR)**
+>>
+>> - Select `New Certificate Signing Request (CSR)`{.action}. Then copy or download the CSR below, make it available to KMS and ask them to sign the certificate.
+>>
+>> ![Trust KMS server](images/kms_trust_vcenter_csr.png){.thumbnail}
+>>
+>> ![Trust KMS server](images/kms_trust_vcenter_csr_2.png){.thumbnail}
+>>
+>> Trust will not be established after you complete this wizard. Go to the KMS to download the CSR, have the certificate signed by the KMS and upload it to vCenter to establish trust.
+>>
 
-![Trust KMS server](images/kms_trust_vcenter_2.png){.thumbnail}
-
-You can check that the connection has been established by selecting your Key Provider. The `Connected` option must be ticked.
+You can check that the connection has been established by selecting your Key Provider. The `Connected`{.action} option must be ticked.
 
 ![Trust KMS server](images/kms_key_provider_3.png){.thumbnail}
 

@@ -59,7 +59,7 @@ Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryp
 >>
 >> **Empreinte SSL :**
 >>
->> - Si vous être sur un hote linux ou MacOs il vous suffit d'executer la commande ci-dessous dans un terminal.<br>
+>> - Si vous êtes sur un hôte linux ou MacOs il vous suffit d'executer la commande ci-dessous dans un terminal.<br>
 >>
 >> ```shell
 >> openssl s_client -connect 54.38.64.196:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
@@ -97,7 +97,9 @@ Selectionner votre Key Provider que vous venez de créer et cliquer sur le bouto
 
 ![Trust KMS server](images/trust_kms.png){.thumbnail}
 
-Nous recommandons la méthode : `Nouvelle demande de signature de certificat (CSR`{.action), mais libre à vous de choisir celle qui vous convient le mieux.
+Nous recommandons la méthode : `Nouvelle demande de signature de certificat (CSR)`{.action), mais libre à vous de choisir celle qui vous convient le mieux.
+
+Pour d'information sur l'avantage de chaque choix, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
 
 > [!tabs]
 > **KMS certificate and private key**
@@ -120,7 +122,7 @@ Nous recommandons la méthode : `Nouvelle demande de signature de certificat (CS
 >> L'approbation ne sera pas établie une fois que vous aurez terminé cet Assistant. Rendez-vous dans le KMS pour télécharger le CSR, faites signer le certificat par le KMS et téléchargez-le sur le vCenter pour établir la confiance.
 >>
 
-Vous pouvez verifier que la connection à été établie en selectionnant votre Key Provider. L'option `Connected` doit être cochée.
+Vous pouvez verifier que la connection à bien été établie en selectionnant votre Key Provider. L'option `Connected` doit être cochée.
 
 ![Trust KMS server](images/kms_key_provider_3.png){.thumbnail}
 
