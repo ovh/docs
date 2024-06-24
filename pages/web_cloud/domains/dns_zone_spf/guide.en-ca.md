@@ -221,4 +221,4 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 
 [Editing the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -886,4 +886,4 @@ Im Folgenden finden Sie die Status, die den Betrieb Ihres DKIM blockieren könne
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

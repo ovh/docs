@@ -98,4 +98,4 @@ Poiché il trasferimento è gratuito, la data di scadenza del dominio dopo il tr
 
 [Trasferire un dominio in OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

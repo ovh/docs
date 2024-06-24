@@ -112,7 +112,7 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 >
 > In dieser Situation können Sie die Daten einer Website mit einem [PHP-Skript oder einem SSH-Befehl](/pages/web_cloud/web_hosting/sql_database_export) sichern.
 >
-> Bei Fragen zu den durchzuführenden Aktionen wenden Sie sich bitte an die [OVHcloud Community](https://community.ovh.com/en/) oder einen unserer [Partner](/links/partner).<br>
+> Bei Fragen zu den durchzuführenden Aktionen wenden Sie sich bitte an die [OVHcloud Community](/links/community) oder einen unserer [Partner](/links/partner).<br>
 > Wir können Ihnen in diesem Zusammenhang keine Unterstützung bieten.
 >
 
@@ -158,7 +158,7 @@ In dieser Situation nutzen Sie [FTP](/pages/web_cloud/web_hosting/ftp_connection
 
 > [!primary]
 >
-> Wenn Sie Fragen zum Löschen von Daten haben, um die Datenmenge auf Ihrem Webhosting zu reduzieren, wenden Sie sich an unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner).<br>
+> Wenn Sie Fragen zum Löschen von Daten haben, um die Datenmenge auf Ihrem Webhosting zu reduzieren, wenden Sie sich an unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner).<br>
 > Der OVHcloud Support ist nicht berechtigt, Sie bei diesen Fragen zu unterstützen.
 >
 
@@ -210,7 +210,7 @@ Wenn Sie keine anderen Datenbanken haben und kein zusätzliches Angebot bestelle
 >
 > **Das Löschen von Elementen aus der Datenbank kann zur Störung der Website führen.**
 >
-> Bei weiteren Fragen wenden Sie sich bitte an unsere [User Community](https://community.ovh.com/en/) oder an die [OVHcloud Partner](/links/partner).<br>
+> Bei weiteren Fragen wenden Sie sich bitte an unsere [User Community](/links/community) oder an die [OVHcloud Partner](/links/partner).<br>
 > Wir können Ihnen in diesem Zusammenhang keine Unterstützung bieten.
 >
 

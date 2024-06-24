@@ -893,4 +893,4 @@ Abaixo irá encontrar os estados que podem bloquear o funcionamento do seu DKIM 
 
 ## Saiba mais
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

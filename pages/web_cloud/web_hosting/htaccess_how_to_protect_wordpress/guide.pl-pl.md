@@ -40,7 +40,7 @@ Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tek
 >
 > Jeśli nie korzystasz z CMS-a, OVHcloud udostępnia również tutorial dotyczący [ochrona katalogu lub interfejsu administracyjnego Twojej strony WWW za pomocą plików .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> W przypadku pytań dotyczących tworzenia, użytkowania lub programowania Twojej strony WWW, skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub naszymi [partnerami OVHcloud](/links/partner). Zespoły pomocy OVHcloud nie będą w stanie udzielić Ci wsparcia w tym zakresie.
+> W przypadku pytań dotyczących tworzenia, użytkowania lub programowania Twojej strony WWW, skontaktuj się z naszym [społecznością użytkowników](/links/community) lub naszymi [partnerami OVHcloud](/links/partner). Zespoły pomocy OVHcloud nie będą w stanie udzielić Ci wsparcia w tym zakresie.
 >
 
 ## FAQ

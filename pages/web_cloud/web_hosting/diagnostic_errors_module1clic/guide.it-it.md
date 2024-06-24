@@ -111,7 +111,7 @@ Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 >
 > In questa situazione, è possibile salvare i dati di un solo sito Web utilizzando uno [script PHP o un comando SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> Per maggiori informazioni sulle operazioni da effettuare, contatta la [Community OVHcloud](https://community.ovh.com/en/) o uno dei nostri [partner](/links/partner).<br>
+> Per maggiori informazioni sulle operazioni da effettuare, contatta la [Community OVHcloud](/links/community) o uno dei nostri [partner](/links/partner).<br>
 > Non saremo in grado di fornirti assistenza.
 >
 
@@ -157,7 +157,7 @@ In questo caso, [accedi in FTP](/pages/web_cloud/web_hosting/ftp_connection) al 
 
 > [!primary]
 >
-> Per informazioni sulla cancellazione dei dati al fine di ridurre la quantità di dati sull’hosting Web, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner).<br>
+> Per informazioni sulla cancellazione dei dati al fine di ridurre la quantità di dati sull’hosting Web, contatta la nostra [Community di utenti](/links/commmunity) o i [partner OVHcloud](/links/partner).<br>
 > Il supporto OVHcloud non è autorizzato a fornirti assistenza.
 >
 
@@ -209,7 +209,7 @@ Se non disponi di altri database e non vuoi ordinare un piano aggiuntivo, [impor
 >
 > **Eliminare elementi dal database può causare l'interruzione del sito Web.**
 >
-> Per ulteriori informazioni, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner).<br>
+> Per ulteriori informazioni, contatta la nostra [Community di utenti](/links/community) o i [partner OVHcloud](/links/partner).<br>
 > Non saremo in grado di fornirti assistenza.
 >
 

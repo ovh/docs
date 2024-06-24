@@ -111,7 +111,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 >
 > En esta situación, puede realizar una copia de seguridad de los datos de un único sitio web utilizando un [script PHP o un comando SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> Si tiene cualquier duda sobre las operaciones que debe realizar, póngase en contacto con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con uno de nuestros [partners](/links/partner).<br>
+> Si tiene cualquier duda sobre las operaciones que debe realizar, póngase en contacto con la [comunidad de OVHcloud](/links/community) o con uno de nuestros [partners](/links/partner).<br>
 > No podremos asistirle.
 >
 
@@ -157,7 +157,7 @@ En este caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) 
 
 > [!primary]
 >
-> Si tiene preguntas sobre la eliminación de datos para reducir la cantidad de datos en su alojamiento web, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner).<br>
+> Si tiene preguntas sobre la eliminación de datos para reducir la cantidad de datos en su alojamiento web, póngase en contacto con nuestra [comunidad de usuarios](/links/community) o con los [partners de OVHcloud](/links/partner).<br>
 > El soporte de OVHcloud no está autorizado a asistirle.
 >
 
@@ -209,7 +209,7 @@ Si no dispone de otras bases de datos y no desea contratar una solución adicion
 >
 > **Eliminar elementos de la base de datos puede provocar la interrupción del sitio web.**
 >
-> Si tiene más preguntas, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner).<br>
+> Si tiene más preguntas, póngase en contacto con nuestra [comunidad de usuarios](/links/community) o con los [partners de OVHcloud](/links/partner).<br>
 > No podremos asistirle.
 >
 

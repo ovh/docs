@@ -149,7 +149,7 @@ Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Confi
 
 > [!warning]
 >
-> Si el asesoramiento ofrecido sobre la optimización de su base de datos no bastaba para desbloquear el acceso a su sitio web, le recomendamos que se ponga en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
+> Si el asesoramiento ofrecido sobre la optimización de su base de datos no bastaba para desbloquear el acceso a su sitio web, le recomendamos que se ponga en contacto con nuestra [comunidad de usuarios](/links/community) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 >
 
 ### Memoria RAM rebasada
@@ -173,7 +173,7 @@ También puede optimizar su base de datos siguiendo las instrucciones de nuestra
 
 > [!primary]
 >
-> Si tiene dificultades para reducir el uso de los recursos en su servidor de bases de datos y no quiere aumentarlos, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). No podremos asistirle en este asunto.
+> Si tiene dificultades para reducir el uso de los recursos en su servidor de bases de datos y no quiere aumentarlos, contacte con nuestra [comunidad](/links/community) o con los [partners de OVHcloud](/links/partner). No podremos asistirle en este asunto.
 >
 
 ### Errores de importación de bases de datos
@@ -194,7 +194,7 @@ También puede marcar la casilla `Vaciar la base de datos actual`{.action} justo
 
 ![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
-Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud. Si lo necesita, puede ponerse en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con un [proveedor especializado](/links/partner). No podremos asistirle en la corrección de esta anomalía.
+Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud. Si lo necesita, puede ponerse en contacto con nuestra [comunidad de usuarios](/links/community) o con un [proveedor especializado](/links/partner). No podremos asistirle en la corrección de esta anomalía.
 
 > [!faq]
 >
@@ -228,7 +228,7 @@ Para resolver esta anomalía, puede:
 
 - Aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#seguimiento-de-la-ram-consumida). Para ello, acceda al [servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) correspondiente en la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](/links/manager). Haga clic en el botón `...`{.action} en la sección `RAM` y, seguidamente, en `Cambiar la cantidad de RAM`{.action}.
 
-- Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
+- Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](/links/community) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 
 - [Optimice su base de datos](/pages/web_cloud/web_cloud_databases/configure-database-server#gestionar-las-bases-de-datos) y luego repite las operaciones de exportación/importación.
 
@@ -262,7 +262,7 @@ En ese caso, deberá [optimizar las bases de datos](/pages/web_cloud/web_cloud_d
 
 > [!warning]
 >
-> Para más información sobre las operaciones que debe realizar para reducir el número de conexiones activas a la base de datos, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
+> Para más información sobre las operaciones que debe realizar para reducir el número de conexiones activas a la base de datos, contacte con nuestra [comunidad](/links/community) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 >
 
 #### "Name or service not known"
