@@ -609,4 +609,4 @@ Below, you will find the states that may block your DKIM from working, and the a
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
