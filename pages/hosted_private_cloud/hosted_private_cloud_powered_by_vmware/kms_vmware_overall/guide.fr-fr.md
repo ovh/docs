@@ -54,19 +54,20 @@ Nous détaillerons ici les étapes qu'il faudra suivre pour une configuration r�
 
 Le KMS OVHcloud vous permet de profiter des avantages d'un service managé de gestion de clé (KMS as a service) dans Hosted Private Cloud VMware on OVHcloud.
 
-Pour plus d'information sur les avantages de l'usage du KMS OVHcloud, consultez le guide : [KMS architecture](/pages/manage_and_operate/kms/architecture-overview)
+Pour plus d'information sur les avantages de l'usage du KMS OVHcloud, consultez le guide :
+- [KMS architecture](/pages/manage_and_operate/kms/architecture-overview).
 
 ### Comparaison des fonctionnalités OMK / CMK
 
-|                                   | OMK (OVHcloud Managed Key)                                                                                                                                                                       | CMK (Customer Managed Key)               |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| Use in OVHcloud eligible services | 	Yes	                                                                                                                                                                                            | Yes                                      |
-| Use in external applications	     | n/a                                                                                                                                                                                              | Yes via a REST API or a KMIP API         |
-| Key lifecycle management          | 	n/a (Managed by OVHcloud)                                                                                                                                                                       | 	Yes (creation, rotation, revocation...) |
-| Access management                 | 	n/a	                                                                                                                                                                                            | Yes with OVHcloud lAM                    |
-| Logs access                       | n/a                                                                                                                                                                                              | 	Yes with OVHcloud Logs Data Platform    |
-| Bring Your Own key                | 	n/a                                                                                                                                                                                             | 	Yes                                     |
-| Key types                         | Symmetric keys of 128, 192 and 256 bits Asymmetric keys using: RSA-1024, RSA-2048, RSA-3072 or RSA-4096  Elliptic curve keys using EC-256, EC-384, EC-521 with curves values P-256, P-384, P-521 |
+|                                   | OMK (OVHcloud Managed Key)                                                                                                                                                                                | CMK (Customer Managed Key)               |
+|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
+| Use in OVHcloud eligible services | 	Yes	                                                                                                                                                                                                     | Yes                                      |
+| Use in external applications	     | n/a                                                                                                                                                                                                       | Yes via a REST API or a KMIP API         |
+| Key lifecycle management          | 	n/a (Managed by OVHcloud)                                                                                                                                                                                | 	Yes (creation, rotation, revocation...) |
+| Access management                 | 	n/a	                                                                                                                                                                                                     | Yes with OVHcloud lAM                    |
+| Logs access                       | n/a                                                                                                                                                                                                       | 	Yes with OVHcloud Logs Data Platform    |
+| Bring Your Own key                | 	n/a                                                                                                                                                                                                      | 	Yes                                     |
+| Key types                         | Symmetric keys of 128, 192 and 256 bits <br><br> Asymmetric keys using: RSA-1024, RSA-2048, RSA-3072 or RSA-4096  Elliptic curve keys using EC-256, EC-384, EC-521 with curves values P-256, P-384, P-521 |
 
 ## Étape 1 - Si vous disposez déja d'un service de gestion de clé (KMS)
 
@@ -137,4 +138,4 @@ Documentation officiel VMware :
 
 Vous pouvez aussi suivre notre labs KMS OVHcloud : [Labs KMS OVHcloud](https://labs.ovhcloud.com/en/key-management-service/){.external}
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
