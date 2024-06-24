@@ -10,7 +10,7 @@ updated: 2024-06-17
 
 Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments (serveurs DNS, zones DNS, etc.) permettant de faire correspondre un nom de domaine avec une adresse IP.
 
-Pour plus d'explications, consultez nos guides « [Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_general_information) » et « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) ».
+Pour plus d'explications, consultez nos guides « [Tout savoir sur les serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) » et « [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information) ».
 
 **Découvrez comment éditer votre zone DNS OVHcloud via votre espace client OVHcloud.**
 
@@ -216,7 +216,7 @@ Vous pouvez aussi modifier le TTL d'un enregistrement DNS. Cependant, cette mani
 
 [Qu'est ce qu'une zone DNS?](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
+[Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Ajouter un champ SPF à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_spf)
 

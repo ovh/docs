@@ -11,7 +11,7 @@ updated: 2024-06-17
 
 A sigla **DNS**, que significa **D**omain **N**ame **S**ystem, é um conjunto de elementos (servidores DNS, zonas DNS, etc.) que permitem fazer corresponder um domínio a um endereço IP.
 
-Recomendamos que consulte previamente os nossos manuais "[O que é um servidor DNS?](/pages/web_cloud/domains/dns_server_general_information)" e "[O que é uma zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)" nesta ordem.
+Recomendamos que consulte previamente os nossos manuais "[Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)" e "[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)" nesta ordem.
 
 A zona DNS de um domínio constitui o ficheiro de configuração deste último. É composta por informações técnicas, chamadas *registos DNS*. A zona DNS é, por assim dizer, um centro de informação para um domínio.
 
@@ -182,9 +182,9 @@ Por isso, e neste caso específico, não poderá criar um campo CNAME para *subd
 
 ## Quer saber mais?
 
-[O que é um servidor DNS?](/pages/web_cloud/domains/dns_server_general_information)
+[Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-[O que é uma zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)
+[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
 [Como configurar o registo SPF de um domínio](/pages/web_cloud/domains/dns_zone_spf)
 

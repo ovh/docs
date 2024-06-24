@@ -14,7 +14,7 @@ Skrót **DNS** oznaczający **D**omain **N**ame **S**ystem to zbiór elementów 
 
 Rozróżnienie między **serwerami DNS** i **strefą DNS** jest niezwykle istotne. **serwer DNS** jest skonfigurowany na poziomie **strefa DNS**.
 
-Aby lepiej zrozumieć całość odpowiedzi, zalecamy zapoznanie się z naszym przewodnikiem "[Co to jest serwer DNS?](/pages/web_cloud/domains/dns_server_general_information)".
+Aby lepiej zrozumieć całość odpowiedzi, zalecamy zapoznanie się z naszym przewodnikiem "[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)".
 
 Na przykład, jeśli chcesz wejść na stronę *domain.tld* za pośrednictwem przeglądarki internetowej, Twoje zapytanie jest początkowo przetwarzane przez ten zestaw DNS. Serwer DNS dostarczy w odpowiedzi na Twoją przeglądarkę internetową adres IP serwera hostującego stronę *domain.tld*.
 
@@ -77,9 +77,9 @@ W tym przykładzie strefa DNS między innymi precyzuje następujące informacje 
 
 ## Sprawdź również
 
-[Co to jest serwer DNS?](/pages/web_cloud/domains/dns_server_general_information)
+[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-[Rekordy DNS](/pages/web_cloud/domains/dns_zone_records)
+[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Utwórz strefę DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 

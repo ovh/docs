@@ -12,7 +12,7 @@ updated: 2024-06-17
 
 Skrót **DNS** oznaczający **D**omain **N**ame **S**ystem to zbiór elementów (serwery DNS, strefy DNS, etc.) pozwalających na dopasowanie nazwy domeny do adresu IP.
 
-Zalecamy, abyś przed podjęciem jakichkolwiek działań zapoznał się z naszymi przewodnikami "[Co to jest serwer DNS?](/pages/web_cloud/domains/dns_server_general_information)" i "[Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information)" w tej kolejności.
+Zalecamy, abyś przed podjęciem jakichkolwiek działań zapoznał się z naszymi przewodnikami "[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)" i "[Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information)" w tej kolejności.
 
 Strefa DNS domeny to plik konfiguracyjny domeny. Zawiera on informacje techniczne nazywane *rekordami DNS*. Strefa DNS jest, w pewnym sensie, centrum koordynacji dla nazwy domeny.
 
@@ -183,7 +183,7 @@ W tym przypadku nie będziesz mógł utworzyć pola CNAME dla *subdomain-with-it
 
 ## Sprawdź również
 
-[Co to jest serwer DNS?](/pages/web_cloud/domains/dns_server_general_information)
+[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
 
 [Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information)
 

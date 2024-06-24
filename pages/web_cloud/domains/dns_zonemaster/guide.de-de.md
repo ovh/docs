@@ -19,7 +19,7 @@ updated: 2024-06-18
 
 > [!primary]
 >
-> Weitere Informationen zum Begriff DNS finden Sie in unserer Anleitung „[Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)“.
+> Weitere Informationen zum Begriff DNS finden Sie in unserer Anleitung „[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)“.
 
 ## Voraussetzungen
 

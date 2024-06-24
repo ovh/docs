@@ -10,7 +10,7 @@ updated: 2024-06-17
 
 It is essential to differentiate between **DNS servers** and the **DNS zone**. A **DNS zone** is configured on the **DNS server**.
 
-For a better understanding, we recommend reading our guide on [What is a DNS server?](/pages/web_cloud/domains/dns_server_general_information).
+For a better understanding, we recommend reading our guide on [Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information).
 
 For example, when you want to access the *domain.tld* website via a web browser, your request is initially processed by this DNS set. This DNS set will then provide your web browser with the IP address of the server hosting the *domain.tld* website.
 
@@ -73,9 +73,9 @@ In this example, the DNS zone specifies, among other things, the following infor
 
 ## Go further
 
-[What is a DNS server?](/pages/web_cloud/domains/dns_server_general_information)
+[Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
 
-[DNS records](/pages/web_cloud/domains/dns_zone_records)
+[Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
 
 [Create an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create)
 

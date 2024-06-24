@@ -55,7 +55,7 @@ Eine DNS-Zone enthält technische Informationen, die als *DNS-Einträge* bezeich
 
 > [!success]
 >
-> - Weitere Informationen zu DNS-Zonen finden Sie in unserer Anleitung „[Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)“.
+> - Weitere Informationen zu DNS-Zonen finden Sie in unserer Anleitung „[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)“.
 > - Lesen Sie anschließend unsere Anleitung zu [DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records), um einen besseren Überblick zu erhalten.
 >
 
@@ -75,9 +75,9 @@ Manchmal bieten DNS-Anbieter mehr als 2 **DNS-Server (Authoritative)** an, die f
 
 ## Weiterführende Informationen
 
-[Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)
+[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)
 
-[DNS-Einträge](/pages/web_cloud/domains/dns_zone_records)
+[Alle Informationen zu DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records)
 
 [DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)
 

@@ -20,7 +20,7 @@ updated: 2024-06-18
 
 > [!primary]
 >
-> Para entender mejor la noción de DNS, consulte nuestra guía "[Qué es una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)".
+> Para entender mejor la noción de DNS, consulte nuestra guía "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
 ## Requisitos
 

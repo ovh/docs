@@ -51,7 +51,7 @@ A DNS zone contains technical information, called *DNS records*.
 
 > [!success]
 >
-> - For more information on DNS zones, please refer to our guide “[What is a DNS zone?](/pages/web_cloud/domains/dns_zone_general_information)”.
+> - For more information on DNS zones, please refer to our guide “[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)”.
 > - Then refer to our guide on [DNS records](/pages/web_cloud/domains/dns_zone_records) for a better understanding of everything.
 >
 
@@ -71,9 +71,9 @@ Some DNS providers offer more than 2 **DNS servers (Authoritative)** to declare 
 
 ## Go further
 
-[What is a DNS zone?](/pages/web_cloud/domains/dns_zone_general_information)
+[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
 
-[DNS records](/pages/web_cloud/domains/dns_zone_records)
+[Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
 
 [Modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
 

@@ -56,7 +56,7 @@ Strefa DNS zawiera informacje techniczne nazywane *rekordami DNS*. Strefa DNS je
 > [!success]
 >
 > - Więcej informacji na temat stref DNS znajdziesz w przewodniku "[Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information) ".
-> - Zapoznaj się z przewodnikiem dotyczącym [Rekordy DNS](/pages/web_cloud/domains/dns_zone_records), aby lepiej zrozumieć całość.
+> - Zapoznaj się z przewodnikiem dotyczącym [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records), aby lepiej zrozumieć całość.
 >
 
 Oznacza to, że należy zadeklarować **serwery DNS (Authoritative)** (u rejestratora domeny), aby korzystać ze strefy DNS, którą hostują.
@@ -77,7 +77,7 @@ Niektórzy dostawcy DNS proponują czasem więcej niż 2 **serwery DNS (Authorit
 
 [Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information).
 
-[Rekordy DNS](/pages/web_cloud/domains/dns_zone_records).
+[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records).
 
 [Zmień serwery DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 

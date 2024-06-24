@@ -8,7 +8,7 @@ updated: 2024-06-17
 
 **DNS** means **D**omain **N**ame **S**ystem and is a set of elements (DNS servers, DNS zones, etc.) that map a domain name to an IP address.
 
-First, we recommend reading our guides “[What is a DNS server?](/pages/web_cloud/domains/dns_server_general_information)” and “[What is a DNS zone?](/pages/web_cloud/domains/dns_zone_general_information)” in this order.
+First, we recommend reading our guides “[Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)” and “[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)” in this order.
 
 A domain name’s DNS zone is its configuration file. It consists of technical information, called *DNS records*. The DNS zone is a sort of referral center for a domain name.
 
@@ -179,9 +179,9 @@ As a result, in this specific case, you will not be able to create a CNAME recor
 
 ## Go further
 
-[What is a DNS server?](/pages/web_cloud/domains/dns_server_general_information)
+[Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
 
-[What is a DNS zone?](/pages/web_cloud/domains/dns_zone_general_information)
+[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
 
 [Add an SPF record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_spf)
 

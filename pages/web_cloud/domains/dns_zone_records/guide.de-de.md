@@ -12,7 +12,7 @@ updated: 2024-06-17
 
 Die Abkürzung **DNS** für **D**omain **N**ame **S**ystem ist eine Sammlung von Elementen (DNS-Server, DNS-Zonen usw.), mit denen ein Domainname einer IP-Adresse zugeordnet werden kann.
 
-Wir empfehlen Ihnen, unsere Anleitungen "[Was ist ein DNS-Server?](/pages/web_cloud/domains/dns_server_general_information)" und "[Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)" in dieser Reihenfolge zu lesen.
+Wir empfehlen Ihnen, unsere Anleitungen "[Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information)" und "[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)" in dieser Reihenfolge zu lesen.
 
 Die DNS-Zone einer Domain ist deren Konfigurationsdatei. Sie besteht aus technischen Informationen, die als *DNS Einträge* bezeichnet werden.
 
@@ -183,9 +183,9 @@ Aus diesem Grund können Sie in diesem speziellen Fall keinen CNAME-Eintrag für
 
 ## Weiterführende Informationen
 
-[Was ist ein DNS-Server?](/pages/web_cloud/domains/dns_server_general_information)
+[Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information)
 
-[Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)
+[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)
 
 [Einen SPF-Eintrag hinzufügen](/pages/web_cloud/domains/dns_zone_spf)
 

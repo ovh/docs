@@ -55,7 +55,7 @@ Una zona DNS contiene información técnica, denominada *registros DNS*. La zona
 
 > [!success]
 >
-> - Para más información sobre las zonas DNS, consulte nuestra guía "[Qué es una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)".
+> - Para más información sobre las zonas DNS, consulte nuestra guía "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 > - Consulte nuestra guía sobre [Registros DNS](/pages/web_cloud/domains/dns_zone_records) para una mejor comprensión del conjunto.
 >
 
@@ -75,7 +75,7 @@ A veces, algunos proveedores DNS ofrecen más de 2 **servidores DNS (Authoritati
 
 ## Más información
 
-[Qué es una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information).
+[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
 
 [Registros DNS](/pages/web_cloud/domains/dns_zone_records).
 

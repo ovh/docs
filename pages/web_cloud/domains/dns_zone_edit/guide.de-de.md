@@ -14,7 +14,7 @@ updated: 2024-06-17
 
 **D**omain **N**ame **S**ystem bezeichnet einen Satz von Elementen (DNS-Server, DNS-Zonen, etc.), mit denen ein Domainname IP-Adressen zugeordnet werden kann.
 
-Weitere Informationen finden Sie in unseren Anleitungen „[Was ist ein DNS-Server?](/pages/web_cloud/domains/dns_server_general_information)“ und „[Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)“
+Weitere Informationen finden Sie in unseren Anleitungen „[Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information)“ und „[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)“
 
 **Diese Anleitung erklärt, wie Sie Ihre OVHcloud DNS-Zone über Ihr Kundencenter bearbeiten.**
 
@@ -216,11 +216,11 @@ Sie können auch die TTL eines DNS-Eintrags ändern. Dies kann jedoch nur einzel
 
 ## Weiterführende Informationen
 
-[Was ist ein DNS-Server?](/pages/web_cloud/domains/dns_server_general_information)
+[Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information)
 
-[Was ist eine DNS-Zone?](/pages/web_cloud/domains/dns_zone_general_information)
+[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)
 
-[DNS-Einträge](/pages/web_cloud/domains/dns_zone_records)
+[Alle Informationen zu DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records)
 
 [Einen SPF-Eintrag hinzufügen](/pages/web_cloud/domains/dns_zone_spf)
 
