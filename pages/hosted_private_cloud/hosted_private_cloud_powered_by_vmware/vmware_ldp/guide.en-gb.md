@@ -137,7 +137,19 @@ Please use the following API calls to list subscriptions to your Hosted Private 
 
 ![LDP Hosted Private Cloud Api Call](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp/images/LDP_API_CALL_LISTING.png){.thumbnail}
 
-Get **subscriptionId** :
+**Referencing of all VMware Hosted Private Cloud API calls on OVHcloud**:
+
+| **Méthode** |                   **Chemin**                   |                     **Description**                     |
+|:-----------:|:----------------------------------------------:|:-------------------------------------------------------:|
+|     GET     |     /dedicatedCloud/{serviceName}/log/kind     |        Types of logs for your Dedicated Cloud.        |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}  |          Get properties of this object.            |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription |        Log subscriptions for your dedicated cloud.        |
+|    POST     | /dedicatedCloud/{serviceName}/log/subscription |    Create a log subscription for your dedicated cloud.   |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription |           Get this object properties.           |
+|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription |  Delete a log subscription for your dedicated cloud. |
+
+
+#### Get "subscriptionId"
 
 > [!api]
 > 
