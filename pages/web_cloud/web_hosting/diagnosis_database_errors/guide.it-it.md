@@ -145,7 +145,7 @@ Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configu
 
 > [!warning]
 >
-> Se i consigli forniti sull'ottimizzazione del database non sono sufficienti per sbloccare l'accesso al tuo sito, ti consigliamo di contattare la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner). OVHcloud non potrà fornirti alcuna assistenza al riguardo.
+> Se i consigli forniti sull'ottimizzazione del database non sono sufficienti per sbloccare l'accesso al tuo sito, ti consigliamo di contattare la nostra [Community di utenti](/links/community) o i [partner OVHcloud](/links/partner). OVHcloud non potrà fornirti alcuna assistenza al riguardo.
 >
 
 Superamento della capacità della RAM
@@ -168,7 +168,7 @@ In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages
 Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](/pages/web_cloud/web_cloud_databases/configure-database-server#ottimizza-i-tuoi-database)".
 
 > [!primary]
-> Se riscontri difficoltà nell'utilizzo delle risorse sul tuo server di database e non desideri aumentarle, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner). Non saremo in grado di fornirti assistenza al riguardo.
+> Se riscontri difficoltà nell'utilizzo delle risorse sul tuo server di database e non desideri aumentarle, contatta la nostra [Community di utenti](/links/community) o i [partner OVHcloud](/links/partner). Non saremo in grado di fornirti assistenza al riguardo.
 >
 
 ### Errori di importazione di database
@@ -185,7 +185,7 @@ Seleziona la casella `Svuota il database attuale`{.action} immediatamente prima 
 
 ![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
-Questo messaggio di errore significa che il database che stai cercando di importare contiene elementi non autorizzati sull'infrastruttura condivisa OVHcloud. Contatta, se necessario, la nostra [Community di utenti](https://community.ovh.com/en/) o un [provider specializzato](/links/partner). Non saremo in grado di fornirti assistenza sulla correzione di questa anomalia.
+Questo messaggio di errore significa che il database che stai cercando di importare contiene elementi non autorizzati sull'infrastruttura condivisa OVHcloud. Contatta, se necessario, la nostra [Community di utenti](/links/community) o un [provider specializzato](/links/partner). Non saremo in grado di fornirti assistenza sulla correzione di questa anomalia.
 
 > [!success]
 >
@@ -218,7 +218,7 @@ Per risolvere questa anomalia, puoi:
 
 - Aumentare la [quantità di RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata). accedendo alla sezione `Database` del tuo [Spazio Cliente OVHcloud](/links/manager). Clicca sul pulsante `...`{.action} nella sezione `RAM` e clicca su `Modifica la quantità di RAM`{.action}.
 
-- Per importare il tuo database in più operazioni anziché in una sola pagina (per maggiori informazioni sulle operazioni da effettuare, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner) OVHcloud non potrà fornirti alcuna assistenza al riguardo).
+- Per importare il tuo database in più operazioni anziché in una sola pagina (per maggiori informazioni sulle operazioni da effettuare, contatta la nostra [Community di utenti](/links/community) o i [partner OVHcloud](/links/partner) OVHcloud non potrà fornirti alcuna assistenza al riguardo).
 
 - [Ottimizza il tuo database](/pages/web_cloud/web_cloud_databases/configure-database-server) e ripeti le operazioni di esportazione/importazione.
 
@@ -252,7 +252,7 @@ Per ridurre il numero di connessioni attive, è necessario [ottimizzare i tuoi d
 
 > [!warning]
 >
-> Per maggiori informazioni sulle operazioni da effettuare per ridurre il numero di connessioni attive sul database, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner). OVHcloud non potrà fornirti alcuna assistenza al riguardo.
+> Per maggiori informazioni sulle operazioni da effettuare per ridurre il numero di connessioni attive sul database, contatta la nostra [Community di utenti](/links/community) o i [partner OVHcloud](/links/partner). OVHcloud non potrà fornirti alcuna assistenza al riguardo.
 >
 
 #### "Name or service not known"
@@ -280,4 +280,4 @@ Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](/link
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).
