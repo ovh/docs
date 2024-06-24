@@ -14,7 +14,7 @@ updated: 2024-06-17
 
 Skrót **DNS** oznaczający **D**omain **N**ame **S**ystem to zbiór elementów (serwery DNS, strefy DNS, etc.) pozwalających na dopasowanie nazwy domeny do adresu IP.
 
-Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami "[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)" i "[Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information)".
+Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami "[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)" i "[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
 **Dowiedz się, jak edytować strefę DNS w Panelu klienta.**
 
@@ -218,7 +218,7 @@ Możesz również zmienić TTL rekordu DNS. Operacja ta może być jednak przepr
 
 [Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-[Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information)
+[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
 [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
