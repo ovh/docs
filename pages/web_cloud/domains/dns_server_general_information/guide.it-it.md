@@ -55,8 +55,8 @@ Una zona DNS contiene informazioni tecniche chiamate *record DNS*. La zona DNS �
 
 > [!success]
 >
-> - Per maggiori informazioni sulle zone DNS, consulta la nostra guida "[Cos'è una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)".
-> - Consulta la nostra guida su [Record DNS](/pages/web_cloud/domains/dns_zone_records) per una migliore comprensione dell'insieme.
+> - Per maggiori informazioni sulle zone DNS, consulta la nostra guida "Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)".
+> - Consulta la nostra guida su [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records) per una migliore comprensione dell'insieme.
 >
 
 Per utilizzare la zona DNS ospitata, devono essere dichiarati i **server DNS (Authoritative)** (presso il Registrar di un dominio).
@@ -75,9 +75,9 @@ A volte alcuni provider DNS offrono più di 2 **server DNS (Authoritative)** da 
 
 ## Per saperne di più
 
-[Cos'è una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information).
+Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information).
 
-[Record DNS](/pages/web_cloud/domains/dns_zone_records).
+[Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records).
 
 [Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 

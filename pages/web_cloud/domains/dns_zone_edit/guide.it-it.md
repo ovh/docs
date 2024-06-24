@@ -14,7 +14,7 @@ updated: 2024-06-17
 
 L'acronimo **DNS**, che sta per **D**omain **N**ame **S**ystem, è un insieme di elementi (server DNS, zone DNS, ecc...) che permettono di far corrispondere un nome di dominio con un indirizzo IP.
 
-Per maggiori spiegazioni, consulta le nostre guide "[Cos'è un server DNS?](/pages/web_cloud/domains/dns_server_general_information)" e "[Cos'è una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)".
+Per maggiori spiegazioni, consulta le nostre guide "[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)" e "Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)".
 
 **Questa guida ti mostra come modificare la zona DNS OVHcloud dallo Spazio Cliente.**
 
@@ -216,11 +216,11 @@ Per ridurre il tempo di propagazione per le prossime modifiche della zona DNS, �
 
 ## Per saperne di più
 
-[Cos'è un server DNS?](/pages/web_cloud/domains/dns_server_general_information)
+[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-[Cos'è una zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)
+Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)
 
-[Record DNS](/pages/web_cloud/domains/dns_zone_records)
+[Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Aggiungere un record SPF alla configurazione di un dominio](/pages/web_cloud/domains/dns_zone_spf)
 

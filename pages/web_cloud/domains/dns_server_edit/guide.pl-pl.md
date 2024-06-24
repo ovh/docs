@@ -12,7 +12,7 @@ updated: 2024-06-17
 
 Skrót DNS oznaczający **D**omain **N**ame **S**ystem, to zbiór elementów (serwery DNS, strefy DNS itp.) pozwalających na dopasowanie nazwy domeny z adresem IP.
 
-Zapoznaj się z przewodnikami "[Co to jest serwer DNS?](/pages/web_cloud/domains/dns_server_general_information)" i "[Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information)", aby uzyskać więcej informacji.
+Zapoznaj się z przewodnikami "[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)" i "[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)", aby uzyskać więcej informacji.
 
 **Dowiedz się, jak modyfikować serwery DNS Twojej domeny OVHcloud.**
 
@@ -101,11 +101,11 @@ Po zakończeniu operacji należy odczekać określony czas, zanim zmiany staną 
 
 ## Sprawdź również
 
-[Co to jest serwer DNS?](/pages/web_cloud/domains/dns_server_general_information)
+[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-[Co to jest strefa DNS?](/pages/web_cloud/domains/dns_zone_general_information)
+[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Rekordy DNS](/pages/web_cloud/domains/dns_zone_records)
+[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Modyfikacja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 

@@ -8,7 +8,7 @@ updated: 2024-06-17
 
 **DNS** means **D**omain **N**ame **S**ystem and is a set of elements (DNS servers, DNS zones, etc.) that map a domain name to an IP address.
 
-Refer to our guides “[What is a DNS server?](/pages/web_cloud/domains/dns_server_general_information)” and “[What is a DNS zone?](/pages/web_cloud/domains/dns_zone_general_information)” for more information.
+Refer to our guides “[Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)” and “[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)” for more information.
 
 **This guide explains how to modify the DNS servers for your OVHcloud domain name.**
 
@@ -97,11 +97,11 @@ Once you have made the required changes, you must wait for them to become fully 
 
 ## Go further
 
-[What is a DNS server?](/pages/web_cloud/domains/dns_server_general_information)
+[Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
 
-[What is a DNS zone?](/pages/web_cloud/domains/dns_zone_general_information)
+[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
 
-[DNS records](/pages/web_cloud/domains/dns_zone_records)
+[Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 

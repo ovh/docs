@@ -51,8 +51,8 @@ Une zone DNS contient des informations techniques, appelées *enregistrements DN
 
 > [!success]
 >
-> - Pour plus d'informations sur les zones DNS, consultez notre guide « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) ».
-> - Consultez ensuite notre guide sur [Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) pour une meilleure compréhension de l'ensemble.
+> - Pour plus d'informations sur les zones DNS, consultez notre guide « [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information) ».
+> - Consultez ensuite notre guide sur [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) pour une meilleure compréhension de l'ensemble.
 >
 
 De ce fait, ce sont les **serveurs DNS (Authoritative)** qui doivent être déclarés (auprès du bureau d'enregistrement d'un nom de domaine) pour utiliser la zone DNS qu'ils hébergent. 
@@ -71,9 +71,9 @@ Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS (Authorita
 
 ## Aller plus loin
 
-[Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information).
+[Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information).
 
-[Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
+[Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
 
 [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 

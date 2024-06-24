@@ -10,7 +10,7 @@ Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'�
 
 Il est essentiel de différencier les **serveurs DNS** et la **zone DNS**. En effet, c'est au niveau du **serveur DNS** qu'est configurée une **zone DNS**.
 
-Pour une meilleure compréhension de l'ensemble, nous vous recommandons au préalable de consulter notre guide « [Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_general_information) ».
+Pour une meilleure compréhension de l'ensemble, nous vous recommandons au préalable de consulter notre guide « [Tout savoir sur les serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) ».
 
 Par exemple, lorsque vous souhaitez accéder au site *domain.tld* via un navigateur Internet, votre requête est initialement traitée par cet ensemble DNS. Cet ensemble DNS va ensuite fournir en réponse à votre navigateur Internet l'adresse IP du serveur hébergeant le site *domain.tld*.
 
@@ -75,7 +75,7 @@ Dans cet exemple, la zone DNS précise, entre autres, les informations suivantes
 
 [Qu'est ce qu'un serveur DNS?](/pages/web_cloud/domains/dns_server_general_information)
 
-[Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
+[Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 

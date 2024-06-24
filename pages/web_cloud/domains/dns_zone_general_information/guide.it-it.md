@@ -14,7 +14,7 @@ L'acronimo **DNS**, che sta per **D**omain **N**ame **S**ystem, è un insieme di
 
 È importante distinguere tra **server DNS** e **zona DNS**. a livello di **server DNS** è configurata una **zona DNS**.
 
-Per una migliore comprensione del complesso, ti consigliamo di consultare la nostra guida "[Cos'è un server DNS?](/pages/web_cloud/domains/dns_server_general_information)".
+Per una migliore comprensione del complesso, ti consigliamo di consultare la nostra guida "[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)".
 
 Ad esempio, se si desidera accedere al sito *domain.tld* tramite un browser Internet, la richiesta viene inizialmente elaborata da questo set di DNS. L’insieme DNS fornirà quindi in risposta al browser Internet l’indirizzo IP del server che ospita il sito *domain.tld*.
 
@@ -77,9 +77,9 @@ In questo esempio, la zona DNS specifica, tra le altre cose, le informazioni seg
 
 ## Per saperne di più
 
-[Cos'è un server DNS?](/pages/web_cloud/domains/dns_server_general_information)
+[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-[Record DNS](/pages/web_cloud/domains/dns_zone_records)
+[Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 

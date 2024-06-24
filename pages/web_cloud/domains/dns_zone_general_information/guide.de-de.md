@@ -14,7 +14,7 @@ updated: 2024-06-17
 
 Es ist wichtig, zwischen den **DNS-Servern** und der **DNS-Zone** zu unterscheiden. Eine **DNS-Zone** wird auf Ebene des **DNS-Servers** konfiguriert.
 
-Für ein besseres Verständnis empfehlen wir Ihnen vorab unsere Anleitung „[Was ist ein DNS Server?](/pages/web_cloud/domains/dns_server_general_information)“.
+Für ein besseres Verständnis empfehlen wir Ihnen vorab unsere Anleitung „[Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information)“.
 
 Wenn Sie beispielsweise über einen Browser auf die Seite *domain.tld* zugreifen möchten, wird Ihre Anfrage zunächst von diesem DNS-Eintrag bearbeitet. Diese DNS-Konfiguration liefert dann als Antwort auf Ihren Webbrowser die IP-Adresse des Servers, auf dem die *domain.tld* Website gehostet wird.
 
@@ -77,9 +77,9 @@ In diesem Beispiel gibt die DNS-Zone unter anderem die folgenden Informationen a
 
 ## Weiterführende Informationen
 
-[Was ist ein DNS-Server?](/pages/web_cloud/domains/dns_server_general_information)
+[Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information)
 
-[DNS-Einträge](/pages/web_cloud/domains/dns_zone_records)
+[Alle Informationen zu DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records)
 
 [OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)
 

@@ -16,7 +16,7 @@ updated: 2024-06-18
 
 > [!primary]
 >
-> To better understand the concept of DNS, please read our guide “[What is a DNS zone?](/pages/web_cloud/domains/dns_zone_general_information)”.
+> To better understand the concept of DNS, please read our guide “[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)”.
 
 ## Requirements
 

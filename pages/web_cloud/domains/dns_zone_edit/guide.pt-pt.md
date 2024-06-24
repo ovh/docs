@@ -14,7 +14,7 @@ updated: 2024-06-17
 
 A sigla **DNS**, que significa **D**omain **N**ame **S**ystem, é um conjunto de elementos (servidores DNS, zonas DNS, etc.) que permitem fazer corresponder um domínio a um endereço IP.
 
-Para mais explicações, consulte os nossos manuais "[O que é um servidor DNS?](/pages/web_cloud/domains/dns_server_general_information)" e "[O que é uma zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)".
+Para mais explicações, consulte os nossos manuais "[Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)" e "[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
 **Saiba como editar a zona DNS da OVHcloud através da Área de Cliente.**
 
@@ -216,11 +216,11 @@ Também pode alterar o TTL de um registo DNS. No entanto, esta operação só po
 
 ## Quer saber mais?
 
-[O que é um servidor DNS?](/pages/web_cloud/domains/dns_server_general_information)
+[Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-[O que é uma zona DNS?](/pages/web_cloud/domains/dns_zone_general_information)
+[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Os registos DNS](/pages/web_cloud/domains/dns_zone_records)
+[Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Como configurar o registo SPF de um domínio](/pages/web_cloud/domains/dns_zone_spf)
 

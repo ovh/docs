@@ -14,7 +14,7 @@ Las siglas **DNS**, que significan **D**omain **N**ame **S**ystem, son un conjun
 
 Es fundamental diferenciar entre los **servidores DNS** y la **zona DNS**. Una zona DNS** se configura a nivel del **servidor DNS**.
 
-Para una mejor comprensión del conjunto, le recomendamos que consulte previamente nuestra guía "[Qué es un servidor DNS?](/pages/web_cloud/domains/dns_server_general_information)".
+Para una mejor comprensión del conjunto, le recomendamos que consulte previamente nuestra guía "[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)".
 
 Por ejemplo, si desea acceder al sitio web *domain.tld* a través de un navegador de internet, su petición será tratada inicialmente por este conjunto DNS. A continuación, este conjunto DNS le proporcionará a su navegador de internet la dirección IP del servidor que aloja el sitio web *domain.tld*.
 
@@ -46,7 +46,7 @@ Existen numerosos registros DNS. Todos ellos tienen un propósito específico en
 - Registros de correo (MX, SPF, DKIM, DMARC)
 - Registros extendidos (TXT, SRV, CAA, NAPTR, LOC, SSHFP, TLSA)
 
-Para más información sobre los distintos tipos de registro mencionados anteriormente, consulte nuestra guía [Registros DNS](/pages/web_cloud/domains/dns_zone_records). En él encontrará, por ejemplo, los elementos que le permitirán entender mejor la [edición de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Para más información sobre los distintos tipos de registro mencionados anteriormente, consulte nuestra guía Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records). En él encontrará, por ejemplo, los elementos que le permitirán entender mejor la [edición de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Ejemplo de zona DNS
 
@@ -77,9 +77,9 @@ En este ejemplo, la zona DNS especifica, entre otros, la siguiente información 
 
 ## Más información
 
-[Qué es un servidor DNS?](/pages/web_cloud/domains/dns_server_general_information)
+[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-[Los registros DNS](/pages/web_cloud/domains/dns_zone_records)
+[Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Crear una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
