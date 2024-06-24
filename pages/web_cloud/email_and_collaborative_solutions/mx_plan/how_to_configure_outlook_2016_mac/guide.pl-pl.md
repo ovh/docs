@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja konta e-mail w programie Outlook na urządzeniu macOS
-excerpt: Dowiedz się, jak skonfigurować konto e-mail MX Plan w programie Outlook 2016 na urządzeniu Mac
+title: MX Plan - Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem macOS
+excerpt: Dowiedz się, jak skonfigurować konto e-mail MX Plan w programie Outlook na urządzeniu macOS
 updated: 2018-05-31
 ---
 
@@ -8,7 +8,7 @@ updated: 2018-05-31
 
 Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz wysyłać i odbierać wiadomości e-mail, korzystając z wybranej przez Ciebie aplikacji.
 
-**Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w programie Outlook 2016 na urządzeniu Mac.**
+**Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w programie Outlook na urządzeniu Mac.**
 
 ## Wymagania początkowe
 
@@ -18,7 +18,7 @@ Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych progra
 
 > [!primary]
 >
-> Używasz programu Outlook 2016 na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook 2016 na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
+> Używasz programu Outlook na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
 >
 
 ## W praktyce
@@ -76,6 +76,6 @@ OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego 
 
 ## Sprawdź również
 
-[Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
+[Konfiguracja konta Exchange w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

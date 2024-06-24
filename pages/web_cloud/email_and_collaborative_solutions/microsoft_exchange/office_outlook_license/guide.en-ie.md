@@ -12,9 +12,9 @@ OVHcloud offers the Outlook licence for a monthly cost of €2 ex VAT. It will b
 
 After subscribing, you can download the Outlook client as one of the following 3 versions:
 
-- Outlook 2016 for Windows 32 bit
-- Outlook 2016 for Windows 64 bit
-- Outlook 2016 for MAC 64 bit
+- Outlook for Windows 32 bit
+- Outlook for Windows 64 bit
+- Outlook for MAC 64 bit
 
 **This guide explains how to order an Outlook licence from your OVHcloud Exchange platform and how to activate it.**
 

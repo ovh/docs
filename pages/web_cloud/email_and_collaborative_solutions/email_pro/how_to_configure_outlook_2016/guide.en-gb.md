@@ -1,5 +1,5 @@
 ---
-title: 'Configuring your Email Pro account in Outlook for Windows'
+title: 'Email Pro - Set up an email account on Outlook for Windows'
 excerpt: 'Find out how to configure your Email Pro account in Outlook for Windows'
 updated: 2021-07-05
 ---
@@ -19,7 +19,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 ## Requirements
 
 - an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external} account
-- Microsoft Outlook 2016 or later installed on your device
+- Microsoft Outlook or later installed on your device
 - login credentials for the email account to be configured
 
 ## Instructions
@@ -90,6 +90,6 @@ The window is divided into two parts, **Incoming Mail** and **Outgoing Mail**. C
 
 [Configuring your MX Plan address in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 
-[Configuring your Exchange account in Outlook 2016 for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
+[Configuring your Exchange account in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 
 Join our community of users on <https://community.ovh.com/en/>.

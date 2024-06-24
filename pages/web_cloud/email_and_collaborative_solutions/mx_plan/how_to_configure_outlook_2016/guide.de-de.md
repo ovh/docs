@@ -21,7 +21,7 @@ updated: 2024-02-16
 
 MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden.
 
-**Diese Anleitung erklärt, wie Sie Ihren E-Mail-Account in Windows Outlook 2016 oder neuer einrichten.**
+**Diese Anleitung erklärt, wie Sie Ihren E-Mail-Account in Windows Outlook oder neuer einrichten.**
 
 > [!warning]
 > In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
@@ -177,8 +177,8 @@ Um den Unterschied zwischen der Verwendung des POP- und IMAP-Protokolls zu verst
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Konfiguration von E-Mail Pro auf Outlook 2016 für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+[Konfiguration von E-Mail Pro auf Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
-[Konfiguration von Exchange auf Outlook 2016 für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
+[Konfiguration von Exchange auf Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

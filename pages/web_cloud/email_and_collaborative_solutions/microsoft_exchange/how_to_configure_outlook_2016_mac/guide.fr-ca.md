@@ -1,6 +1,6 @@
 ---
-title: Configurer son compte Exchange sur Outlook 2016 pour Mac
-excerpt: Apprenez à configurer un compte Exchange sur Outlook 2016 pour Mac
+title: Exchange - Configurer son compte e-mail sur Outlook pour macOS
+excerpt: Apprenez à configurer un compte Exchange sur Outlook pour macOS
 updated: 2018-06-01
 ---
 
@@ -16,7 +16,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 > [!primary]
 >
-> Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}.
+> Vous utilisez Outlook pour Windows ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}.
 >
 
 ## En pratique
