@@ -65,7 +65,7 @@ Vous pouvez aussi effectuer la commande depuis votre [espace client OVHcloud](/l
 
 - Rendez-vous sur l'onglet `Web Cloud`{.action}.
 - En haut à gauche de l'interface, cliquez sur le bouton `Commander`{.action} puis sur `Hébergement`{.action}.
-- Poursuivez les étapes de la commande **sans demander le transfert de votre nom de domaine** (Cette action sera effectuée à l'étape 10 de ce guide).
+- Poursuivez les étapes de la commande **sans demander le transfert de votre nom de domaine** (cette action sera effectuée à l'étape 10 de ce guide).
 
 Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un e-mail sera envoyé sur votre adresse e-mail de contact. Celui-ci contiendra les identifiants d'accès à l'espace de stockage FTP (File Transfert Protocol) de votre hébergement Web.
 
