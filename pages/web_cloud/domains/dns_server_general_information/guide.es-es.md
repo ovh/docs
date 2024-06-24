@@ -56,7 +56,7 @@ Una zona DNS contiene información técnica, denominada *registros DNS*. La zona
 > [!success]
 >
 > - Para más información sobre las zonas DNS, consulte nuestra guía "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
-> - Consulte nuestra guía sobre [Registros DNS](/pages/web_cloud/domains/dns_zone_records) para una mejor comprensión del conjunto.
+> - Consulte nuestra guía sobre Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records) para una mejor comprensión del conjunto.
 >
 
 Por lo tanto, los **servidores DNS (Authoritative)** deben estar declarados (en el registrador del dominio) para utilizar la zona DNS que alojan.
@@ -77,7 +77,7 @@ A veces, algunos proveedores DNS ofrecen más de 2 **servidores DNS (Authoritati
 
 [Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
 
-[Registros DNS](/pages/web_cloud/domains/dns_zone_records).
+Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records).
 
 [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 

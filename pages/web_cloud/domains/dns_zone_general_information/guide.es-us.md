@@ -46,7 +46,7 @@ Existen numerosos registros DNS. Todos ellos tienen un propósito específico en
 - Registros de correo (MX, SPF, DKIM, DMARC)
 - Registros extendidos (TXT, SRV, CAA, NAPTR, LOC, SSHFP, TLSA)
 
-Para más información sobre los distintos tipos de registro mencionados anteriormente, consulte nuestra guía [Registros DNS](/pages/web_cloud/domains/dns_zone_records). En él encontrará, por ejemplo, los elementos que le permitirán entender mejor la [edición de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Para más información sobre los distintos tipos de registro mencionados anteriormente, consulte nuestra guía Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records). En él encontrará, por ejemplo, los elementos que le permitirán entender mejor la [edición de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Ejemplo de zona DNS
 
