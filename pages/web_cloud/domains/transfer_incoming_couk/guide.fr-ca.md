@@ -94,4 +94,4 @@ Le transfert étant gratuit, la date d'expiration du domaine suite à son transf
 
 [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
