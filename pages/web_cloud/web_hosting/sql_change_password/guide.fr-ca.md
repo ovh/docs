@@ -185,4 +185,4 @@ Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

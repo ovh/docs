@@ -79,4 +79,4 @@ Successfully changing the TAG initiates the transfer process. Contact your new p
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

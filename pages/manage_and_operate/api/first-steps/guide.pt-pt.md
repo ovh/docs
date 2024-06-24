@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com as API OVHcloud'
 excerpt: 'Saiba como utilizar as API da OVHcloud'
-updated: 2024-02-01
+updated: 2024-06-07
 ---
 
 > [!primary]
@@ -36,9 +36,10 @@ Na página das [API OVHcloud](https://api.ovh.com/), clique em `Explore the OVH 
 
 Para utilizar as API nos seus produtos, deve ligar-se a este site graças aos seus identificadores OVHcloud.
 
-- Clique em `Login`{.action} no canto superior direito. 
-- Introduza as suas credenciais OVHcloud. 
-- Defina uma duração, sob a menção **Validity**, durante a qual autoriza as ações através das API OVHcloud.
+- Clique em `Authentication`{.action} no canto superior esquerdo.
+- De seguida, clique em `Login with OVHcloud SSO`{.action}.
+- Introduza as suas credenciais OVHcloud.
+- Clique no botão `Authorize`{.action} para autorizar as chamadas às API a partir deste site.
 
 ![API](images/login.png){.thumbnail} 
 
@@ -49,7 +50,7 @@ Para utilizar as API nos seus produtos, deve ligar-se a este site graças aos se
 
 #### Explorar os produtos disponíveis nas API
 
-Uma vez ligado, encontrará a lista dos produtos da OVHcloud que dispõem das API. Esta lista será classificada por ordem alfabética.
+No menu à esquerda, encontrará uma lista dos produtos OVHcloud que podem ser geridos através das API.
 
 ![API](images/api-list.png){.thumbnail} 
 
@@ -57,7 +58,9 @@ Para apresentar, por exemplo, as API associadas aos nomes de domínio, clique em
 
 Depois de clicar no produto, a lista das API deste último é apresentada por baixo. 
 
-![API](images/api-displayed.png){.thumbnail} 
+![API](images/api-displayed.png){.thumbnail}
+
+Dispõe igualmente de um seletor à esquerda da lista dos produtos que permite escolher entre os ramos **/v1** e **/v2** da API. Se não está familiarizado com o princípio dos ramos da API, pode consultar [a seguinte documentação sobre a API v2](/pages/manage_and_operate/api/apiv2).
 
 #### Executar uma API
 
@@ -109,15 +112,15 @@ Por exemplo, se não deseja conservar o registo DNS que adicionou à sua zona DN
 
 ##### Parâmetros da API
 
-Depois de clicar na API à sua escolha, a secção **Parameters** permite atribuir as variáveis relativas à sua aplicação.
+Depois de clicar na API à sua escolha, a secção **Request** permite atribuir as variáveis relativas à sua aplicação.
 
 Por exemplo, para adicionar um registo TXT à sua zona DNS, poderá escolher os seguintes parâmetros:
 
 ![API](images/parameters.png){.thumbnail} 
 
-Depois de definir os parâmetros, pode lançar a API clicando em `Execute`{.action}. 
+Depois de definir os parâmetros, pode lançar a API clicando em `TRY`{.action}.
 
-O separador `Result` apresentado dar-lhe-á o relatório de execução da API.
+O separador `Response` apresentado dar-lhe-á o relatório de execução da API.
 
 ![API](images/result.png){.thumbnail} 
 

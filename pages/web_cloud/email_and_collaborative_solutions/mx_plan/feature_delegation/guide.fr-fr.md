@@ -1,5 +1,5 @@
 ---
-title: 'Déléguer la gestion de vos comptes e-mails à une autre personne'
+title: 'MX Plan - Déléguer la gestion de vos comptes e-mails à une autre personne'
 excerpt: 'Découvrez comment déléguer la gestion des comptes e-mail de votre offre MX Plan'
 updated: 2021-10-08
 ---

@@ -121,7 +121,7 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 >
 > |Campo|Onde posso encontrar a informação?|Ação a realizar|
 > |---|---|---|
-> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.domain.tld) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>É importante notar que se deseja adicionar `blog.domain.tld`, deve criar o registo para o subdomínio `ovhcontrol.domain.tld` e não `ovhcontrol.blog.domain.tld`. <br></br>Para consultar esta última, encontre os [servidores DNS](/pages/web_cloud/domains/dns_server_general_information) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
+> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.domain.tld) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>É importante notar que se deseja adicionar `blog.domain.tld`, deve criar o registo para o subdomínio `ovhcontrol.domain.tld` e não `ovhcontrol.blog.domain.tld`. <br></br>Para consultar esta última, encontre os [servidores DNS](/pages/web_cloud/domains/dns_server_edit) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
 >
 > ![multisite](images/find-token.png){.thumbnail}
 >
@@ -182,4 +182,4 @@ Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recu
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

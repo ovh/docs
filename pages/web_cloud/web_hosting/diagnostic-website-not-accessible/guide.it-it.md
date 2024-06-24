@@ -10,7 +10,7 @@ updated: 2022-08-02
 
 ## Obiettivo
 
-In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi errori. Gli esempi che seguono indicano una configurazione errata dei tuoi [DNS](/pages/web_cloud/domains/dns_server_general_information#capire-il-concetto-di-dns) o un dominio sospeso (se il tuo sito non mostra uno dei messaggi di errore descritti qui, consulta la sezione [Per saperne di più](#go-further)):
+Se il tuo sito non è raggiungibile, sul tuo browser potrebbero comparire diversi feedback. Gli esempi seguenti indicano una configurazione errata dei tuoi [server DNS](/pages/web_cloud/domains/dns_server_edit), della tua [zona DNS](/pages/web_cloud/domains/dns_zone_edit) o di un dominio sospeso (se il tuo sito non visualizza uno dei messaggi di errore descritti qui, consulta la sezione [Per saperne di più](#go-further)):
 
 |Browser|Messaggio di errore|
 |--|--|
@@ -30,7 +30,7 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 
 ## Prerequisiti
 
-- Avere la gestione dei server e della [zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns) del dominio
+- Avere la gestione dei server e della [zona DNS](/pages/web_cloud/domains/dns_zone_edit) del dominio
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
@@ -58,7 +58,7 @@ Una volta terminato il rinnovo dell'offerta, il tuo sito Web sarà disponibile e
 
 ### Step 2: verifica i server DNS
 
-Per verificare la validità dei tuoi [server DNS](/pages/web_cloud/domains/dns_server_general_information), clicca in tuo [Spazio Cliente OVHcloud](/links/manager) sui `Domini`{.action} e poi sul dominio del tuo sito.
+Per verificare la validità dei tuoi [server DNS](/pages/web_cloud/domains/dns_server_edit), clicca in tuo [Spazio Cliente OVHcloud](/links/manager) sui `Domini`{.action} e poi sul dominio del tuo sito.
 
 #### Scenario 1: nessuna anomalia sui server DNS
 
@@ -78,7 +78,7 @@ Un avviso nella scheda `Zona DNS`{.action} indica che i server DNS utilizzati da
 
 ![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}
 
-Modificare i server DNS seguendo le istruzioni di [questa guida](/pages/web_cloud/domains/dns_server_general_information#modifica-i-server-dns) in modo che siano identici agli obiettivi di record di tipo `NS` nella `Zona DNS`{.action}.
+Modificare i server DNS seguendo le istruzioni di [questa guida](/pages/web_cloud/domains/dns_server_edit) in modo che siano identici agli obiettivi di record di tipo `NS` nella `Zona DNS`{.action}.
 
 Il tuo sito Web sarà disponibile entro 48 ore.
 
@@ -90,7 +90,7 @@ Il tuo sito Web sarà disponibile entro 48 ore.
 >
 > In questo caso, contatta l'hosting provider della tua Zona DNS, il tuo webmaster o i [partner OVHcloud](/links/partner) prima di effettuare qualsiasi operazione.
 >
-> È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
+> È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](/pages/web_cloud/domains/dns_zone_general_information). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
 >
 
 #### Scenario 3: nella zona DNS non sono presenti record di tipo NS
@@ -123,7 +123,7 @@ Nella scheda `Informazioni generali`{.action}, copia l'indirizzo IPV4 e/o IPV6 d
 
 ![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
 
-E riportala nella [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#modifica-la-zona-dns-ovhcloud-del-dominio) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
+E riportala nella [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
 
 ![ipv4-DNSzone](images/dashboard-entry-a.png){.thumbnail}
 
@@ -141,4 +141,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, etc ...), contatta i [
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

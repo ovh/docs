@@ -1,7 +1,7 @@
 ---
 title: Managing Enterprise File Storage from the OVHcloud Control Panel
 excerpt: Find out how to manage your Enterprise File Storage service in the OVHcloud Control Panel
-updated: 2022-04-14
+updated: 2024-06-13
 ---
 
 ## Objective
@@ -12,8 +12,8 @@ Enterprise File Storage services can be managed [via the OVHcloud API](/pages/st
 
 ## Requirements
 
-- An Enterprise File Storage service in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An Enterprise File Storage service in your OVHcloud account. The service can be ordered from the [product page](https://www.ovhcloud.com/en-gb/storage-solutions/enterprise-file-storage/) or from the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/netapp/new).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 ## Instructions <a name="instructions"></a>
 

@@ -26,7 +26,7 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 
 - Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie besitzen eine oder mehrere [Domainnamen](/links/web/domains){.external}.
-- Sie sind berechtigt, die Konfiguration Ihrer Domainnamen (die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen)) zu ändern.
+- Sie sind berechtigt, die Konfiguration Ihrer Domainnamen (die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)) zu ändern.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -123,7 +123,7 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 >
 > |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
 > |---|---|---|
-> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain `ovhcontrol` (z.B. `ovhcontrol.domain.tld`) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Bitte beachten Sie, wenn Sie `blog.domain.tld` hinzufügen möchten, dass der Eintrag für die Subdomain `ovhcontrol.domain.tld` sein muss, und nicht `ovhcontrol.blog.domain.tld`.<br></br> Um die relevante DNS-Zone zu bearbeiten, prüfen Sie, welche [DNS-Server](/pages/web_cloud/domains/dns_server_general_information#dns-konzept-verstehen) Ihre Domain verwendet. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
+> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain `ovhcontrol` (z.B. `ovhcontrol.domain.tld`) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Bitte beachten Sie, wenn Sie `blog.domain.tld` hinzufügen möchten, dass der Eintrag für die Subdomain `ovhcontrol.domain.tld` sein muss, und nicht `ovhcontrol.blog.domain.tld`.<br></br> Um die relevante DNS-Zone zu bearbeiten, prüfen Sie, welche [DNS-Server](/pages/web_cloud/domains/dns_server_edit) Ihre Domain verwendet. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
 >
 > ![Multisite](images/find-token.png){.thumbnail}
 >
@@ -184,4 +184,4 @@ Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehö
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie [hier unsere Support-Angebote einsehen](/links/support).
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

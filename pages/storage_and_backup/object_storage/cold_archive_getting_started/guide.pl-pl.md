@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Getting started with Cold Archive (EN)
 excerpt: This guide shows you how to manage your data with Cold Archive
-updated: 2024-03-04
+updated: 2024-06-21
 ---
 
 ## Objective
@@ -62,11 +62,6 @@ aws s3api get-bucket-intelligent-tiering-configuration --bucket example-bucket -
     ]
 }
 ```
-
-> [!primary]
->
-> The plugin `awscli-plugin-endpoint` is not working with aliases, the parameter `--endpoint-url` will be required in every command.
->
 
 > [!primary]
 >

@@ -226,4 +226,4 @@ Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenomme
 
 [Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

@@ -19,7 +19,7 @@ Möglicherweise wird in Ihrem Webbrowser die Fehlerseite **Seite nicht installie
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
@@ -60,7 +60,7 @@ In diesem Schritt überprüfen Sie, dass Ihre Domain oder Subdomain über die ak
 > 
 > - [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit);
 > - [OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create);
-> - [DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information).
+> - [DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit).
 >
 
 #### 2\.1 IP-Adresse Ihres OVHcloud Webhostings identifizieren
@@ -93,7 +93,7 @@ Eine Tabelle mit verschiedenen DNS-Einträgen wird angezeigt.
 |In der aktiven DNS-Zone zeigt Ihr Domainname/Ihre Subdomain auf die IP-Adresse Ihres Webhostings mit einem A-Eintrag (für eine IPv4) oder AAAA-Eintrag (für eine IPv6).<br><br>![DNS-Zone_IP2](images/dashboard-entry-a.png){.thumbnail}|Dies weist darauf hin, dass die Konfiguration Ihres Domainnamens korrekt ist.<br><br> Warten Sie, bis die DNS Propagation abgeschlossen ist.<br><br> (Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten und leeren Sie den Cache Ihres Browsers). Die alte Konfiguration Ihrer Domain kann im Cache gespeichert werden, was die Anzeige Ihres Updates verzögern kann.|
 |Die aktive DNS-Zone enthält keine A- oder AAAA-Einträge, die Ihre Domain/Subdomain mit der IP-Adresse Ihres Webhostings verbinden. Oder der vorhandene Eintrag verweist auf eine andere IP-Adresse.|Fügen Sie den neuen A- oder AAAA-Eintrag hinzu, oder korrigieren Sie den vorhandenen Eintrag, indem Sie [diese Anleitung](/pages/web_cloud/domains/dns_zone_edit) befolgen.|
 |Ihre Domain wird nicht im Bereich `Domainnamen`{.action} Ihres OVHcloud Kundencenters angezeigt.<br><br>Oder der Tab `DNS-Zone`{.action} Ihres Domainnamens erscheint wie folgt:<br><br>![zone-without-domain-top-of-the-page](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Das bedeutet, dass Ihr Domainname nicht über Ihr OVHcloud Kundencenter verwaltet wird.<br><br>Finden Sie über unser [WHOIS-Tool](/links/web/domains-whois) den Registrar heraus sowie die zugehörigen DNS-Server. <br><br>Suchen Sie die betreffende DNS-Zone und ändern Sie sie entsprechend. Folgen Sie hierzu dem entsprechenden Abschnitt in der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.|
-|Diese Warnung erscheint in der Registerkarte `DNS Zone`{.action}:<br><br>![Warnung_zonedns_pas_sur_srv_dns](images/message-other-ovh-dns-servers.png){.thumbnail}|Sie müssen die DNS-Server Ihrer Domain entsprechend anpassen, indem Sie unsere Anleitung „[DNS Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)“ befolgen.|
+|Diese Warnung erscheint in der Registerkarte `DNS Zone`{.action}:<br><br>![Warnung_zonedns_pas_sur_srv_dns](images/message-other-ovh-dns-servers.png){.thumbnail}|Sie müssen die DNS-Server Ihrer Domain entsprechend anpassen, indem Sie unsere Anleitung „[DNS Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)“ befolgen.|
 
 ## Weitere Informationen <a name="go-further"></a>
 
@@ -101,7 +101,7 @@ Eine Tabelle mit verschiedenen DNS-Einträgen wird angezeigt.
 
 [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)
+[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)
 
 [Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
@@ -111,4 +111,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

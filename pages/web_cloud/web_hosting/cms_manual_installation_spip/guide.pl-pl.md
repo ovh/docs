@@ -39,23 +39,23 @@ Postępuj zgodnie z **wszystkimi krokami** opisanymi w tutorialu [Instalacja rę
 
 Wpisz `your_domain/ecrire` w pasku wyszukiwania przeglądarki internetowej, aby rozpocząć instalację strony www Spip. Pojawi się następująca strona:
 
-![Spip installation](images/installation_first_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_first_step.png){.thumbnail}
 
 Wybierz język Twojej strony WWW Spip i kliknij na `Next`{.action}, aby potwierdzić. Pojawi się następujący ekran:
 
-![Spip installation](images/installation_second_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_second_step.png){.thumbnail}
 
 Wpisz informacje, aby zalogować się do Twojego DBMS (np. MySQL). Po pomyślnym zalogowaniu się do bazy danych zostanie wyświetlony następujący ekran:
 
-![Spip installation](images/installation_third_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_third_step.png){.thumbnail}
 
 Wybierz bazę danych, której chcesz użyć na Twojej stronie WWW lub [utwórz nową](/pages/web_cloud/web_hosting/sql_create_database). Wybierz prefiks dla tabel w bazie danych. Domyślnie używany jest prefiks `spip`. Kliknij na `Next`{.action}, aby potwierdzić informacje. Pojawi się następujący ekran:
 
-![Spip installation](images/installation_fourth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fourth_step.png){.thumbnail}
 
 Wprowadź wymagane informacje i kliknij na `Next`{.action}, aby potwierdzić. Pojawi się następujący ekran:
 
-![Spip installation](images/installation_fifth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fifth_step.png){.thumbnail}
 
 Ekran wyświetla listę dostępnych wtyczek do Twojej strony WWW i informuje, że instalacja Spip przebiegła pomyślnie.
 
@@ -85,4 +85,4 @@ Właśnie ręcznie zainstalowałeś CMS Spip na Twoim hostingu OVHcloud. Twoja s
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

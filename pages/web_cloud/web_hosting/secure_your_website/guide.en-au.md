@@ -9,7 +9,7 @@ updated: 2024-01-29
 This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared servers](/links/web/hosting).
 
 This guide is organised in stages in an increasing order of technical difficulty. The security of your site will be measured by the element concerning it that is least protected. We therefore recommend that you carry out all of the actions described here.<br/>
-However, if you experience any difficulties completing some of these steps, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](/links/web/hosting).
+However, if you experience any difficulties completing some of these steps, please do not hesitate to contact the [OVHcloud community](/links/community) or our [partners](/links/web/hosting).
 
 **Find out how to secure your website.**
 
@@ -60,7 +60,7 @@ In the event of your login details being lost and/or the primary email address f
 Start by backing up the data that makes up your (FTP **AND** database files), following the instructions in this [guide](/pages/web_cloud/web_hosting/exporter-son-site-web). Import them on your desktop or on an external device, such as a NAS server or an USB key.
 
 Website management software (CMS) also provides the ability to install automatic backup plugins.<br>
-Check the official forums for your favourite CMS or contact the [OVHcloud community](https://community.ovh.com/en/).
+Check the official forums for your favourite CMS or contact the [OVHcloud community](/links/community).
 
 ### Step 4 - Find out how to recognise fraudulent emails
 
@@ -133,4 +133,4 @@ The .htaccess file is an Apache configuration (HTTP) file that is run by your We
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

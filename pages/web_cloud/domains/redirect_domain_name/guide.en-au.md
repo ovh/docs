@@ -56,7 +56,7 @@ Three redirection options are available from the [OVHcloud Control Panel](/links
 > The `Redirection`{.action} tab contains a fourth option that allows your domain to be quickly pointed to DNS A, AAAA and CNAME records.<br>
 > Since this is not strictly a "redirection", this option will not be detailed in this guide.
 >
-> For more information on DNS records, see our [DNS records](/pages/web_cloud/domains/dns_zone_edit).
+> For more information on DNS records, see our guide "[Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)".
 >
 
 Below are the three types of redirections detailed step by step.
@@ -394,4 +394,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

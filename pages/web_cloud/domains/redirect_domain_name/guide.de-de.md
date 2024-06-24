@@ -60,7 +60,7 @@ Klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}.
 > Der Tab `Weiterleitung`{.action} zeigt eine vierte Option, die Ihre Domain auf DNS-Einträge vom Typ A, AAAA und CNAME zeigen lassen kann.<br>
 > Da es sich hierbei nicht um eine "Weiterleitung" im engeren Sinn handelt, wird diese Option hier nicht näher erläutert.
 >
-> Mehr Informationen zu DNS-Einträgen finden Sie in unserer Dokumentation zum [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
+> Mehr Informationen zu DNS-Einträgen finden Sie in unserer Dokumentation zum [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_records).
 >
 
 Nachfolgend finden Sie die drei Arten der Weiterleitung Schritt für Schritt erläutert.
@@ -396,4 +396,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

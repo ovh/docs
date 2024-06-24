@@ -16,7 +16,7 @@ You may see the error page **Site not installed** displayed on your web browser,
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the [OVHcloud community](https://community.ovh.com/en/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the [OVHcloud community](/links/community) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -57,7 +57,7 @@ This step involves checking that your domain or subdomain points to your web hos
 > 
 > - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 > - [Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create)
-> - [Modify an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+> - [Modify an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_edit)
 >
 
 #### 2\.1 Identify the IP address of your OVHcloud web hosting plan
@@ -90,7 +90,7 @@ A table with different DNS records will appear.
 |In the active DNS zone, your domain name or subdomain points to the IP address of your web hosting plan with an A record (for an IPv4) or an AAAA record (for an IPv6).<br><br>![DNS_IP2 zone](images/dashboard-entry-a.png){.thumbnail}|This indicates that your domain name is correctly configured.<br><br> Wait for the DNS propagation if the change is recent.<br><br> Also remember to restart your devices (PC, smartphone, box, etc.) and clear your browser cache. Your domain name’s previous configuration can be cached, which can delay the display of your update.|
 |The active DNS zone does not have A or AAAA records that link your domain or subdomain to your web hosting plan's IP address. Or the existing record points to a different IP address.|Add the new A or AAAA record or correct the existing record by following [this guide](/pages/web_cloud/domains/dns_zone_edit).|
 |Your domain does not appear in the `Domain names`{.action} section of your OVHcloud Control Panel.<br><br>Or the `DNS Zone`{.action} tab of your domain name appears as follows:<br><br>![zonedns_ndd_not_on_lec2](images/zone-without-domain-top-of-the-page.png){.thumbnail}|This means that your domain name is not managed from your OVHcloud Control Panel.<br><br>Determine its registrar via our [WHOIS tool](/links/web/domains-whois) and the DNS servers associated with it. <br><br>Find and modify the DNS zone concerned accordingly by following the dedicated section of the guide “[Hosting multiple websites on your web hosting plan - adding an external domain name](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.|
-|This warning appears in the `DNS Zone`{.action} tab:<br><br>![warning_zonedns_pas_sur_srv_dns](images/message-other-ovh-dns-servers.png){.thumbnail}|You will need to modify your domain name’s DNS servers accordingly by following our guide on [Modifying DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information).
+|This warning appears in the `DNS Zone`{.action} tab:<br><br>![warning_zonedns_pas_sur_srv_dns](images/message-other-ovh-dns-servers.png){.thumbnail}|You will need to modify your domain name’s DNS servers accordingly by following our guide on [Modifying DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit).
 
 ## Go further <a name="go-further"></a>
 
@@ -98,7 +98,7 @@ A table with different DNS records will appear.
 
 [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-[Modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information)
+[Modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
 
 [Edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
@@ -108,4 +108,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

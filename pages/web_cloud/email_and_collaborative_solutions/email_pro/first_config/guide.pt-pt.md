@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com a solução E-mail Pro'
 excerpt: 'Saiba como configurar o serviço E-mail Pro.'
-updated: 2024-01-29
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -16,16 +16,16 @@ Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-m
 
 ## Requisitos
 
-- Ter o serviço [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
+- Ter o serviço [E-mail Pro](/links/web/email-pro){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do serviço E-mail Pro.
 - Dispor de um domínio.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
 ### 1 - Aceder à interface de gestão do serviço
 
-Depois de ativado, o serviço E-mail Pro pode ser gerido a partir da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.Para isso, clique em `E-mail Pro`{.action} e selecione o nome do serviço.
+Depois de ativado, o serviço E-mail Pro pode ser gerido a partir da [Área de Cliente](/links/manager){.external}.Para isso, clique em `E-mail Pro`{.action} e selecione o nome do serviço.
 
 > [!primary]
 >
@@ -94,7 +94,7 @@ Depois de adicionar o domínio enquanto domínio associado, verifique as configu
 
 A coluna `Diagnóstico`{.action} permite-lhe controlar a configuração DNS do domínio. Se apresentar uma etiqueta vermelha, terá de alterar a configuração. Dispõe de duas possibilidades:
 
-- **Configuração automática quando adiciona um domínio OVHcloud** : se acabou de realizar a alteração, a visualização na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} pode levar algumas horas.
+- **Configuração automática quando adiciona um domínio OVHcloud** : se acabou de realizar a alteração, a visualização na [Área de Cliente](/links/manager){.external} pode levar algumas horas.
 
 - **Configuração manual para um domínio não gerido pela OVHcloud** : clique na etiqueta vermelha para ver as alterações a realizar.
     - *Para um registo CNAME*, consulte o nosso guia « [Criar um registo CNAME ao adicionar um domínio associado](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname) ».
@@ -115,13 +115,29 @@ Para as configurar, clique no botão `...`{.action} e, a seguir, em `Alterar`{.a
 
 Introduza os dados solicitados.
 
-|Campo|Descrição|
-|---|---|
-|Conta de e-mail|Introduza um nome para o seu endereço de e-mail (por exemplo, nome.apelido) e escolha o domínio na lista.|
-|Nome|Introduza um nome.|
-|Sobrenome|Introduza um sobrenome.|
-|Nome a mostrar|Insira o nome do remetente apresentado nos e-mails enviados.|
-|Palavra-passe e confirmação|Defina uma palavra-passe forte, composta por um mínimo de 8 caracteres e compreendendo pelo menos uma maiúscula, uma minúscula e um algarismo.| 
+- **Conta de e-mail** : indique o nome do seu endereço de e-mail (por exemplo, nome.apelido) e escolha o domínio na lista.
+
+> [!warning]
+>
+> A escolha do nome do seu endereço de e-mail deve respeitar as seguintes condições:
+>
+> - Mínimo de 2 caracteres
+> - Máximo de 32 caracteres
+> - Nenhum caráter acentuado
+> - Sem caracteres especiais, com exceção dos seguintes caracteres: `.`, `,`, `-` e `_`
+
+- **Nome Próprio** : introduza um nome.
+- **Nome** : introduza um nome.
+- **Nome a apresentar** : indique o nome apresentado como remetente quando envia e-mails a partir deste endereço.
+- **Palavra-passe e confirmação** : defina uma palavra-passe forte, composta por um mínimo de 8 caracteres e compreendendo pelo menos uma maiúscula, uma minúscula e um algarismo. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento, por exemplo) e renove-a regularmente.
+
+> [!warning]
+>
+> A escolha da palavra-passe deve respeitar as seguintes condições:
+>
+> - Mínimo de 9 caracteres
+> - Máximo de 30 caracteres
+> - Nenhum caráter acentuado
 
 Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e clique em `Confirmar`{.action} para dar início à configuração da conta.
 
@@ -129,7 +145,6 @@ Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e
 >
 > Repita este passo sempre que necessário, de acordo com o número de contas disponíveis. Se precisar de mais contas, clique em `Encomendar contas`{.action}.
 >
-
 
 ### 5 - Usar o serviço de e-mail
 
@@ -145,9 +160,9 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 > [!primary]
 >
 > No nosso exemplo, utilizamos a referência servidor: pro**?**.mail.ovh.net. Deve substituir o «?» pelo algarismo que designa o servidor do seu serviço E-mail Pro.
-> 
-> Encontre esse algarismo na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action}, em `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
-> 
+>
+> Encontre esse algarismo na [Área de Cliente OVHcloud](/links/manager){.external}, na rubrica `Web Cloud`{.action}, em `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+>
 
 ## Quer saber mais?
 
@@ -163,4 +178,8 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 
 [Gerir a política de segurança de um serviço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/security-policy)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+
+Fale com nossa [comunidade de utilizadores](/links/community).

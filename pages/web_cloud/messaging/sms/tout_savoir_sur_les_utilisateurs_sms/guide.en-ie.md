@@ -13,7 +13,7 @@ This guide will explain how to create and manage API users.
 - an active OVHcloud SMS account
 - You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
 
-![SMS Telecom Control Panel](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
+![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
 
@@ -34,7 +34,7 @@ To better manage credit for your SMS accounts, you can set a limit and quota for
 
 - The **quota** is the number of available SMS credits for each API user.
 
-- The **limit** is the minimum threshold of remaining SMS credits for an API user before they receive an alert to re-credit the account.
+- The **limit** corresponds to the minimum threshold of SMS credits that an API user must have before receiving an alert to recharge or not the balance of these credits.
 
 ### Step 1: Create an API user
 

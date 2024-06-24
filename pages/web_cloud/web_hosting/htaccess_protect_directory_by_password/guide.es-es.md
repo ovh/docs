@@ -47,7 +47,7 @@ Si utiliza un CMS WordPress, OVHcloud también pone a su disposición un tutoria
 >
 > Si tiene cualquier duda relativa a la creación, el uso o la programación de su sitio web, el soporte de OVHcloud no podrá ofrecerle soporte sobre estos temas.
 >
-> Para ello, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o nuestros [partners de OVHcloud](/links/partner).
+> Para ello, contacte con nuestra [comunidad de usuarios](/links/community) o nuestros [partners de OVHcloud](/links/partner).
 >
 
 A continuación explicamos los 4 pasos principales que debe seguir para proteger el acceso a un directorio o a la totalidad o parte de su sitio web:
@@ -260,4 +260,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

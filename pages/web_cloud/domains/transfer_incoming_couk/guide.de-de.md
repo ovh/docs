@@ -94,4 +94,4 @@ Da der Transfer kostenlos ist, ändert sich nichts am Ablaufdatum. Um die Domain
 
 [Domainnamen zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

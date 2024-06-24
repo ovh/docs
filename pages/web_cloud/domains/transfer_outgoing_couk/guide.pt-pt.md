@@ -83,4 +83,4 @@ Contacte o seu novo fornecedor para obter mais informações sobre a transferên
 
 [Transferir um domínio para outro agente de registo](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

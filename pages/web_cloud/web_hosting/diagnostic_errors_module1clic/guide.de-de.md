@@ -112,7 +112,7 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 >
 > In dieser Situation können Sie die Daten einer Website mit einem [PHP-Skript oder einem SSH-Befehl](/pages/web_cloud/web_hosting/sql_database_export) sichern.
 >
-> Bei Fragen zu den durchzuführenden Aktionen wenden Sie sich bitte an die [OVHcloud Community](https://community.ovh.com/en/) oder einen unserer [Partner](/links/partner).<br>
+> Bei Fragen zu den durchzuführenden Aktionen wenden Sie sich bitte an die [OVHcloud Community](/links/community) oder einen unserer [Partner](/links/partner).<br>
 > Wir können Ihnen in diesem Zusammenhang keine Unterstützung bieten.
 >
 
@@ -158,7 +158,7 @@ In dieser Situation nutzen Sie [FTP](/pages/web_cloud/web_hosting/ftp_connection
 
 > [!primary]
 >
-> Wenn Sie Fragen zum Löschen von Daten haben, um die Datenmenge auf Ihrem Webhosting zu reduzieren, wenden Sie sich an unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner).<br>
+> Wenn Sie Fragen zum Löschen von Daten haben, um die Datenmenge auf Ihrem Webhosting zu reduzieren, wenden Sie sich an unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner).<br>
 > Der OVHcloud Support ist nicht berechtigt, Sie bei diesen Fragen zu unterstützen.
 >
 
@@ -210,7 +210,7 @@ Wenn Sie keine anderen Datenbanken haben und kein zusätzliches Angebot bestelle
 >
 > **Das Löschen von Elementen aus der Datenbank kann zur Störung der Website führen.**
 >
-> Bei weiteren Fragen wenden Sie sich bitte an unsere [User Community](https://community.ovh.com/en/) oder an die [OVHcloud Partner](/links/partner).<br>
+> Bei weiteren Fragen wenden Sie sich bitte an unsere [User Community](/links/community) oder an die [OVHcloud Partner](/links/partner).<br>
 > Wir können Ihnen in diesem Zusammenhang keine Unterstützung bieten.
 >
 
@@ -242,9 +242,9 @@ Diese Fehlfunktion kann mehrere Ursachen haben:
 
 - Überprüfen Sie, ob der Domainname („domain.tld“), den Sie gerade aufgerufen haben, der Name ist, mit dem Sie das 1-Klick-Modul installiert haben.
 
-- Wenn Sie kürzlich die [aktive DNS Zone](/pages/web_cloud/domains/dns_server_general_information) oder [DNS Server](/pages/web_cloud/domains/dns_zone_edit) Ihres Domainnamens bearbeitet haben oder einen [Transfer eines Domainnamens](/pages/web_cloud/domains/transfer_incoming_generic_domain) durchgeführt haben: Warten Sie, bis diese Vorgänge abgeschlossen sind (4-24 Stunden bei einer Änderung der DNS-Zone und 24-48 Stunden bei einer Änderung der DNS-Server). Denken Sie auch daran, ggf. Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten und den Cache Ihres Internetbrowsers zu leeren.
+- Wenn Sie kürzlich die [aktive DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)/[DNS-Server](/pages/web_cloud/domains/dns_server_edit) Ihres Domainnamens oder einen [Transfer eines Domainnamens](/pages/web_cloud/domains/transfer_incoming_generic_domain) geändert haben. Warten Sie, bis diese Vorgänge abgeschlossen sind (4-24 Stunden bei einer Änderung der DNS-Zone und 24-48 Stunden bei einer Änderung der DNS-Server). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten und den Cache Ihres Internetbrowsers zu leeren.
 
-- Ihr Domainname ist immer noch mit Ihrem alten Webhosting verbunden. Ändern Sie in diesem Fall die [aktive DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), die mit Ihrem Domainnamen oder dessen [DNS-Servern](/pages/web_cloud/domains/dns_server_general_information) verbunden ist. Wenn die aktive DNS-Zone Ihrer Domain nicht bei OVHcloud verwaltet wird, wenden Sie sich mit diesen Informationen an Ihren DNS-Anbieter.
+- Ihr Domainname ist immer noch mit Ihrem alten Webhosting verbunden. Ändern Sie in diesem Fall die [aktive DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), die mit Ihrem Domainnamen oder dessen [DNS-Servern](/pages/web_cloud/domains/dns_server_edit) verbunden ist. Wenn die aktive DNS-Zone Ihrer Domain nicht bei OVHcloud verwaltet wird, wenden Sie sich mit diesen Informationen an Ihren DNS-Anbieter.
 
 ### Das Passwort „Administrator“ für den Zugriff auf das „Verwaltungsinterface“ Ihres 1-Klick-Moduls funktioniert nicht <a name="adminpassword"></a>
 
@@ -288,4 +288,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

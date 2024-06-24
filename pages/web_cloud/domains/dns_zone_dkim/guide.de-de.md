@@ -117,7 +117,7 @@ Die Signatur wird dann mit dem privaten Schlüssel asymmetrisch verschlüsselt.
 
 #### Warum müssen die DNS Server konfiguriert werden? <a name="dns-and-dkim"></a>
 
-Damit der Empfänger die DKIM-Signatur des Absenders überprüfen kann, benötigt er die DKIM-Parameter, insbesondere den öffentlichen Schlüssel, um die Signatur zu entschlüsseln. Die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) eines Domainnamens ist öffentlich verfügbar, deshalb wird, um den öffentlichen Schlüssel und die DKIM-Parameter an den Empfänger weiterzuleiten, ein DNS-Eintrag verwendet.
+Damit der Empfänger die DKIM-Signatur des Absenders überprüfen kann, benötigt er die DKIM-Parameter, insbesondere den öffentlichen Schlüssel, um die Signatur zu entschlüsseln. Die [DNS-Zone](/pages/web_cloud/domains/dns_zone_general_information) eines Domainnamens ist öffentlich verfügbar, deshalb wird, um den öffentlichen Schlüssel und die DKIM-Parameter an den Empfänger weiterzuleiten, ein DNS-Eintrag verwendet.
 
 #### Was ist ein DKIM-Selektor? <a name="selector"></a>
 
@@ -886,4 +886,4 @@ Im Folgenden finden Sie die Status, die den Betrieb Ihres DKIM blockieren könne
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

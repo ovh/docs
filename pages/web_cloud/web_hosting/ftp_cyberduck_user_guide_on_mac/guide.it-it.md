@@ -14,7 +14,7 @@ Disponibile su macOS e Windows, Cyberduck è un'applicazione open source per il 
 
 Per scaricare Cyberduck, accedi al [sito ufficiale](https://cyberduck.io/) dell’applicazione.
 
-![hosting](images/logo.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/logo.png){.thumbnail}
 
 > [!primary]
 >
@@ -43,7 +43,7 @@ Quando avvii l’applicazione, viene visualizzata l’interfaccia qui sotto.
 - La parte superiore, racchiusa in arancione, corrisponde alla barra degli strumenti. Ti permette di stabilire una connessione al tuo spazio di hosting, di navigare nella gerarchia delle cartelle e dei file, di consultare la cronologia delle tue azioni e molte altre.
 - Il contenuto che si desidera visualizzare è riportato sotto. Ad esempio, se clicchi sull’icona `History`{.action}, comparirà la lista delle tue azioni.
 
-![hosting](images/start-page.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/start-page.png){.thumbnail}
 
 ### Personalizza la visualizzazione di Cyberduck
 
@@ -51,11 +51,11 @@ Quando avvii l’applicazione, viene visualizzata l’interfaccia qui sotto.
 
 Nel menu principale, nella parte superiore dell’interfaccia, clicca su `View`{.action} e poi su `Customize Toolbar...`{.action}.
 
-![hosting](images/customize-toolbar.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/customize-toolbar.png){.thumbnail}
 
 Nella nuova finestra, trascinare gli elementi desiderati sulla barra degli strumenti. Ad esempio, per aggiungere un’icona `Download`{.action} alla barra degli strumenti, trascinare e rilasciare l’icona `Download`{.action} sulla barra degli strumenti. Per confermare le modifiche, clicca su `Done`{.action}.
 
-![hosting](images/customize-display.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/customize-display.png){.thumbnail}
 
 ### Utilizza Cyberduck
 
@@ -79,7 +79,7 @@ Per accedere allo spazio di hosting Web, segui questi step:
 - Password (Password)
 - Porta (22)
 
-![hosting](images/sftp-connection.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/sftp-connection.png){.thumbnail}
 
 > [!success]
 >
@@ -103,7 +103,7 @@ Durante un tentativo di connessione al tuo spazio di hosting Web, è possibile c
 
 Nella maggior parte dei casi, questo errore è legato agli identificativi inseriti, che probabilmente sono errati. È quindi necessario verificare le informazioni di connessione inserite.
 
-![hosting](images/open-session-failed.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/open-session-failed.png){.thumbnail}
 
 > [!success]
 >
@@ -116,7 +116,7 @@ Questo messaggio è accompagnato dalla dicitura `Operation timed out`. Questo me
 
 L'errore può essere causato anche da un firewall o dalla LAN che blocca la porta 21 o 22 utilizzata per connettersi al server. In questo caso, è necessario verificare la configurazione personale.
 
-![hosting](images/connection-failed.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/connection-failed.png){.thumbnail}
 
 > [!primary]
 >
@@ -136,7 +136,7 @@ Per effettuare questa aggiunta:
 2. Nella parte superiore dell’interfaccia, sulla barra degli strumenti, clicca sulla scheda `Bookmarks`{.action} (cornice arancione nell’immagine qui sotto).
 3. Clicca sull’icona `+`{.action} in basso a sinistra della finestra per aggiungere un nuovo segnalibro.
 
-![hosting](images/add-signet.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/add-signet.png){.thumbnail}
 
 Verrà visualizzata una finestra con le informazioni di accesso e una nuova riga nell'elenco dei segnalibri. Al prossimo avvio di Cyberduck, sarà possibile fare doppio clic sul segnalibro per accedere più rapidamente.
 
@@ -148,13 +148,13 @@ Il trasferimento di file ti permette di salvare il tuo sito Internet sul tuo spa
 
 Per effettuare il trasferimento dei tuoi file, seleziona e trascina la selezione dalla finestra della cartella locale (i tuoi file sulla tua macchina) alla finestra di Cyberduck (spazio di archiviazione FTP del tuo hosting Web). Una volta completata l’operazione, i file vengono inseriti automaticamente in coda per essere depositati sul server. A questo punto, si aprirà una finestra.
 
-![hosting](images/drag-drop-transfert-file.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/drag-drop-transfert-file.png){.thumbnail}
 
 #### Dal menu principale
 
 Nel menu di Cyberduck, clicca su `File`{.action} e poi su `Upload...`{.action}. Seleziona i file da trasferire sul server e clicca su `Upload`{.action}.
 
-![hosting](images/transfert-files.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/transfert-files.png){.thumbnail}
 
 ### Visualizza i trasferimenti in corso
 
@@ -169,7 +169,7 @@ Questa finestra viene visualizzata in due modi diversi:
 - automaticamente all'avvio di un trasferimento;
 - cliccando su `Window`{.action} (nel menu principale) e poi su `Transfers`{.action}.
 
-![hosting](images/transfert-files-list.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/transfert-files-list.png){.thumbnail}
 
 ### Azioni possibili su un file / cartella
 
@@ -198,7 +198,7 @@ Questi ultimi si dividono in 3 famiglie:
 
 Clicca due volte su un file o una cartella e seleziona `Info`{.action}. Viene visualizzata la seguente finestra:
 
-![hosting](images/unix-permissions.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/transfert-files-list.png){.thumbnail}
 
 Clicca sulla scheda `Permissions`{.action} e poi effettua le modifiche:
 
@@ -213,13 +213,13 @@ Nella maggior parte dei casi, questa operazione è stata eseguita in seguito a u
 
 Nel menu di Cyberduck, clicca su `Go`{.action} e poi su `Send command...`{.action}.
 
-![hosting](images/send-ftp-command.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/send-ftp-command.png){.thumbnail}
 
 Nella nuova finestra, inserisci il comando `CHMOD 705 /` e clicca su `Send`{.action} per eseguire il comando. Come conferma, il messaggio `200 Permissions changed on /` dovrebbe apparire nel riquadro sottostante.
 
 Per assicurarti che la riapertura avvenga correttamente, accedi al tuo sito Web da un browser Web.
 
-![hosting](images/site-chmod-705-command.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/site-chmod-705-command.png){.thumbnail}
 
 > [!warning]
 >
@@ -234,4 +234,4 @@ Per assicurarti che la riapertura avvenga correttamente, accedi al tuo sito Web 
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

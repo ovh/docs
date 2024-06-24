@@ -67,7 +67,7 @@ Aby zoptymalizować wysyłkę i zmniejszyć ryzyko blokady kont e-mail, należy 
 
 Najpierw należy utworzyć rekord A w strefie DNS domeny, używając adresu IP Twojego serwera jako celu.
 
-Jeśli Twoje serwery DNS są zarządzane przez OVHcloud, zapoznaj się z naszym przewodnikiem [dotyczącym edycji strefy DNS OVHcloud w Panelu klienta](/pages/web_cloud/domains/dns_zone_edit#dostep-do-interfejsu-zarzadzania-strefa-dns).
+Jeśli Twoje serwery DNS są zarządzane przez OVHcloud, zapoznaj się z naszym przewodnikiem [dotyczącym edycji strefy DNS OVHcloud w Panelu klienta](/pages/web_cloud/domains/dns_zone_edit).
 
 Po zmianie strefy DNS Twojej domeny konieczny jest czas propagacji wynoszący maksymalnie 24 godziny, aby modyfikacje stały się widoczne.
 
@@ -79,7 +79,7 @@ Jeśli chcesz skonfigurować Rewers DNS na adresie Additional IP, kliknij zakła
 
 W rozwijanym menu pod "**Moje publiczne adresy IP i usługi powiązane**" możesz sortować Twoje usługi według kategorii.
 
-![Rewers IP](images/selectservice2022.png){.thumbnail}
+![Rewers IP](images/filteripds.png){.thumbnail}
 
 Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej linii, a następnie `Zmień rewers`{.action}:
 

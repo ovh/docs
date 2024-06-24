@@ -41,7 +41,7 @@ Introduzca su nombre de dominio en la barra de búsqueda de su navegador de Inte
 
 Si los archivos de origen de Pico se colocaron correctamente en la carpeta raíz, aparecerá la siguiente página:
 
-![Pico installation](images/welcome_page.png){.thumbnail}
+![Pico installation](/pages/assets/screens/other/cms/pico/welcome_page.png){.thumbnail}
 
 Pico es un CMS basado en archivos, lo que significa que toda la configuración y la creación de contenido se hace directamente modificando los archivos en el servidor. Estos son los pasos que debe seguir para configurar y personalizar su sitio web Pico.
 
@@ -120,4 +120,4 @@ Acaba de instalar manualmente el CMS Pico en su alojamiento web de OVHcloud. Una
  
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

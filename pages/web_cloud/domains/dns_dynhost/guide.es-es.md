@@ -18,7 +18,7 @@ Por ejemplo, puede especificar:
 - Servidores de correo (registros DNS de tipo *MX*) a los que el dominio debe redirigir los mensajes que reciba. para consultarlos en su dirección de correo electrónico personalizada con su dominio.
 - Información relacionada con la seguridad o la autenticación de los servicios asociados (alojamiento web, servidor web, servidor de correo, etc.) a su dominio (registros DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
 
-Si lo necesita, consulte [nuestra documentación sobre los registros DNS y la edición de una zona DNS](/pages/web_cloud/domains/dns_zone_edit) desde su [área de cliente OVHcloud](/links/manager).
+Si lo necesita, consulte nuestra documentación sobre [registros DNS](/pages/web_cloud/domains/dns_zone_records) y la [edición de una zona DNS](/pages/web_cloud/domains/dns_zone_edit) desde su [área de cliente de OVHcloud](/links/manager).
 
 La actualización de forma "dinámica" de un registro DNS puede evitar una interrupción prolongada de uno de sus servicios si no dispone de una dirección IP denominada "fija" (que no cambia).
 
@@ -136,4 +136,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

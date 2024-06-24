@@ -14,9 +14,9 @@ Vous avez la possibilité de bénéficier d'adresses E-mail avec nos offres FTTH
 
 - Disposer d'une [offre xDSL ou FTTH compatible](https://www.ovhtelecom.fr/adsl/){.external}.
 - Avoir encore la possibilité de créer des adresses e-mail dans le cadre de votre offre.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
 
-![espace client Telecom Accès Internet](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
 ## En pratique
 
@@ -54,10 +54,10 @@ Cliquez sur `Valider`{.action} pour lancer la création de l'adresse e-mail. Ré
 
 Il ne reste plus qu'à utiliser votre adresse e-mail. Pour cela, OVHcloud met à disposition un applicatif en ligne (webmail). Ce dernier est accessible à l'adresse <https://www.ovh.com/fr/mail/> ; vous devrez y renseigner les identifiants relatifs à votre adresse e-mail nouvellement créée.
 
-Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos tutoriels dédiés sur </products/web-cloud-email-collaborative-solutions-email-pro>.
+Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos tutoriels dédiés sur [cette page](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-Si vous éprouvez des difficultés lors de la configuration de votre adresse, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l’éditeur du client de messagerie utilisé. Les paramètres mentionnés dans le tableau ci-dessus peuvent vous être demandés.
+Si vous éprouvez des difficultés lors de la configuration de votre adresse, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l’éditeur du client de messagerie utilisé. Les paramètres mentionnés dans le tableau ci-dessus peuvent vous être demandés.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

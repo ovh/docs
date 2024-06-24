@@ -59,11 +59,11 @@ También en la pestaña `Información general`{.action}, tras la [etapa 1](#step
 
 Para ello, en el recuadro "Seguridad", compruebe el estado junto a la mención "Delegación segura (DNSSEC)".
 
-![dnssec](images/activate-dnssec.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec.png){.thumbnail}
 
 Gracias al botón de activación situado encima de la mención `Delegación segura (DNSSEC)`{.action}, puede activar o desactivar el **DNSSEC** en su nombre de dominio. Al realizar esta acción, se abrirá una nueva ventana en la que podrá confirmar los cambios.
 
-![dnssec](images/activate-dnssec-confirmation.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
 
 > [!primary]
 >
@@ -84,4 +84,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

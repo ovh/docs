@@ -10,7 +10,7 @@ Available for macOS and Windows, Cyberduck is an open-source file transfer appli
 
 To download Cyberduck, go to the [official website](https://cyberduck.io/) of the application.
 
-![hosting](images/logo.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/logo.png){.thumbnail}
 
 > [!primary]
 >
@@ -39,7 +39,7 @@ When you start the application, the interface below will appear.
 - The top part, highlighted in orange, corresponds to the toolbar. You can use it to establish a connection to your hosting space, browse the tree-view of your folders and files, view the history of your actions, and many other actions.
 - The lower section shows the content you want to view. For example, if you click on the `History`{.action} icon, the list of your actions will appear.
 
-![hosting](images/start-page.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/start-page.png){.thumbnail}
 
 ### Customize the Cyberduck display
 
@@ -47,11 +47,11 @@ You can customize the display of Cyberduck to make it more efficient and persona
 
 In the main menu, at the top of the interface, click `View`{.action} then `Customize Toolbar...`{.action}.
 
-![hosting](images/customize-toolbar.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/customize-toolbar.png){.thumbnail}
 
 In the window that appears, drag the elements you want onto the toolbar. For example, if you want to add the `Download`{.action} function to your toolbar, drag and drop the `Download`{.action} icon onto the toolbar. To confirm your changes, click `Done`{.action}.
 
-![hosting](images/customize-display.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/customize-display.png){.thumbnail}
 
 ### Use Cyberduck
 
@@ -75,7 +75,7 @@ To log in to your web hosting space, follow the steps below:
 - Password
 - Port (22)
 
-![hosting](images/sftp-connection.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/sftp-connection.png){.thumbnail}
 
 > [!success]
 >
@@ -99,7 +99,7 @@ When you try to connect to your web hosting space, an error may occur. Here are 
 
 In the majority of cases, this error is related to the credentials you have entered, which are probably incorrect. Check the login details you have entered.
 
-![hosting](images/open-session-failed.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/open-session-failed.png){.thumbnail}
 
 > [!success]
 >
@@ -112,7 +112,7 @@ The message `Operation timed out` usually means that the host is unreachable or 
 
 This error can also be caused by a firewall or the local network blocking port 21 or 22 which are used to connect to the server. In this case, you will need to check your local configuration.
 
-![hosting](images/connection-failed.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/connection-failed.png){.thumbnail}
 
 > [!primary]
 >
@@ -132,7 +132,7 @@ To add it:
 2. At the top of the interface, in the toolbar, click on the `Bookmarks`{.action} tab (orange box in the image below).
 3. At the bottom left of the window, click on the icon `+`{.action} to add a new bookmark.
 
-![hosting](images/add-signet.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/add-signet.png){.thumbnail}
 
 A window will appear containing your login details, along with a new line in the bookmark list. The next time you start Cyberduck, you can double-click the bookmark to log in faster.
 
@@ -144,13 +144,13 @@ File transfers allow you to put your website on your web hosting space. By defau
 
 To transfer your files, select and drag and drop them from the local folder window (your files on your machine) to the Cyberduck window (FTP storage space on your web hosting plan). Once you have done this, your files will automatically queue up for upload. A window will then open.
 
-![hosting](images/drag-drop-transfert-file.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/drag-drop-transfert-file.png){.thumbnail}
 
 #### Via the main menu
 
 In the Cyberduck menu, click `File`{.action} then `Upload...`{.action}. Select the files you want to transfer to the server, then click `Upload`{.action}.
 
-![hosting](images/transfert-files.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/transfert-files.png){.thumbnail}
 
 ### View transfers in progress
 
@@ -165,7 +165,7 @@ This window appears in two different ways:
 - Automatically when a transfer is initiated
 - By clicking `Window`{.action} (in the main menu), then `Transfers`{.action}
 
-![hosting](images/transfert-files-list.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/transfert-files-list.png){.thumbnail}
 
 ### Possible actions on a file/folder
 
@@ -194,7 +194,7 @@ These are divided into 3 permission classes:
 
 Double-click on a file or folder, then select `Info`{.action}. The following window appears:
 
-![hosting](images/unix-permissions.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/transfert-files-list.png){.thumbnail}
 
 Click on the `Permissions`{.action} tab, then make the changes you want:
 
@@ -209,13 +209,13 @@ In most cases, this action is necessary following the closing your web hosting p
 
 In the Cyberduck menu, click `Go`{.action} then `Send command...`{.action}.
 
-![hosting](images/send-ftp-command.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/send-ftp-command.png){.thumbnail}
 
 In the new window, insert the command `CHMOD 705 /` and then click `Send`{.action} to execute the command. In confirmation, the message `200 Permissions changed on /` should appear in the box below.
 
 To check that the reopening is effective, open your website in a web browser.
 
-![hosting](images/site-chmod-705-command.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/cyberduck/site-chmod-705-command.png){.thumbnail}
 
 > [!warning]
 >
@@ -230,4 +230,4 @@ To check that the reopening is effective, open your website in a web browser.
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

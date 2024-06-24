@@ -19,7 +19,7 @@ Lorsque vous ajoutez un nom de domaine sur votre plateforme e-mail, la configura
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
 - Disposer d'une solution [Exchange](https://www.ovhcloud.com/fr/emails/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
 - Avoir ajouté un nom de domaine sur votre plateforme e-mail. Vous pouvez vous aider du guide « [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) » si nécessaire.
-- Être en mesure de configurer la zone DNS du nom de domaine concerné, [depuis l'espace client OVHcoud](/pages/web_cloud/domains/dns_zone_edit) ou depuis l'interface de gestion où il est enregistré.
+- Être en mesure de [configurer la zone DNS](/pages/web_cloud/domains/dns_zone_edit) du nom de domaine concerné, depuis l'espace client OVHcloud ou depuis l'interface de gestion où il est enregistré.
 
 ## En pratique
 

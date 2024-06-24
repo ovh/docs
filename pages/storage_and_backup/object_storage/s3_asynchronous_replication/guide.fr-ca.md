@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2024-04-15
+updated: 2024-06-21
 ---
 
 > [!warning]
@@ -367,7 +367,7 @@ Le bucket source est le bucket dont les objets sont automatiquement répliqués.
 
 ```bash
 $ aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+aws --profile default s3 mb s3://<bucket_name>
 ```
 
 **_Exemple:_** Création d'un bucket source dans la région SBG et dans la classe de stockage « Standard ».

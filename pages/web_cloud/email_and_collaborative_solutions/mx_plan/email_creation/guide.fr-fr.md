@@ -1,7 +1,7 @@
 ---
 title: 'Créer une adresse e-mail avec son offre MX Plan'
 excerpt: 'Découvrez comment créer une adresse e-mail avec votre offre MX Plan'
-updated: 2022-10-11
+updated: 2024-06-13
 ---
 
 ## Objectif
@@ -12,21 +12,21 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, l'[hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external} compris avec un nom de domaine (activé au préalable) ou l'offre MX Plan commandée séparément.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
+- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable) ou l'offre MX Plan commandée séparément.
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 > [!primary]
 >
 > **Cas particuliers**
 >
-> - Concernant l’hébergement gratuit 100M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, en vous positionnant sur le nom de domaine concerné.
-> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ».
+> - Concernant l’hébergement gratuit 100M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](/links/manager), en vous positionnant sur le nom de domaine concerné.
+> - Dans le cadre d'un [hébergement web](/links/web/hosting), il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ».
 
 ## En pratique <a name="instructions"></a>
 
-Selon la date d'activation de votre service ou si [celui-ci a été récemment migré](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
+Selon la date d'activation de votre service ou si celui-ci a été récemment migré, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci.
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}. Cliquez sur `Emails`{.action}, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
+Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}. Cliquez sur `Emails`{.action}, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
@@ -50,12 +50,30 @@ Pour obtenir une nouvelle adresse e-mail, positionnez-vous sur l'onglet `Comptes
 Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
 - **Compte e-mail** : Un nom temporaire est déjà prérempli dans la zone de texte. Remplacez-le par celui que vous souhaitez pour votre adresse e-amil (votre prénom.nom, par exemple). Le nom de domaine composant l'adresse e-mail est déjà présélectionné dans la liste.
-- **Prénom**: Renseignez un prénom.
-- **Nom**: Renseignez un nom.
-- **Nom à afficher**: Indiquez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.
-- **Mot de passe**: Définissez un mot de passe et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
 
-Une fois les champs complétés, cliquez sur `Suivant`{.action}. 
+> [!warning]
+>
+> Le choix du nom de votre adresse e-mail doit respecter les conditions suivantes :
+>
+> - Minimum 2 caractères
+> - Maximum 32 caractères
+> - Aucun caractère accentué
+> - Pas de caractères spéciaux, à l'exception des caractères suivants : `.`, `,`, `-` et `_`
+
+- **Prénom** : renseignez un prénom.
+- **Nom** : renseignez un nom.
+- **Nom à afficher** : indiquez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés depuis cette adresse.
+- **Mot de passe** : définissez un mot de passe fort et confirmez-le. Pour des raisons de sécurité, n'utilisez pas deux fois le même mot de passe. Choisissez-en un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple de mentionner vos nom, prénom et date de naissance). Changez-le régulièrement.
+
+> [!warning]
+>
+> Le choix du mot de passe doit respecter les conditions suivantes:
+>
+> - Minimum 9 caractères
+> - Maximum 30 caractères
+> - Aucun caractère accentué
+
+Une fois les champs complétés, cliquez sur `Suivant`{.action}.
 
 ![email](images/mxplan-creation-new-step3.png){.thumbnail}
 
@@ -65,9 +83,9 @@ Réalisez cette étape autant de fois que nécessaire, selon le nombre de compte
 
 #### Consulter les e-mails
 
-Accédez à la page « [Connexion au webmail](https://www.ovh.com/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
+Accédez à la page « [Connexion au webmail](/links/web/email) », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
-Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail Outlook Web App (OWA), aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa){.external} ».
+Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail Outlook Web App (OWA), aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) ».
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -106,7 +124,7 @@ Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 - **Taille du compte**: Sélectionnez la taille du compte souhaitée. Il s'agit de l'espace dont bénéficiera votre adresse pour stocker les messages.|  
 - **Mot de passe**: Définissez un mot de passe et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.|
 
-Une fois les champs complétés, cliquez sur `Suivant`{.action}. 
+Une fois les champs complétés, cliquez sur `Suivant`{.action}.
 
 ![email](images/mxplan-creation-legacy-step3.png){.thumbnail}
 
@@ -116,9 +134,9 @@ Réalisez cette étape autant de fois que nécessaire, selon le nombre de compte
 
 #### Consulter les e-mails 
 
-Accédez à la page « [Connexion au webmail](https://www.ovh.com/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
+Accédez à la page « [Connexion au webmail](/links/web/email) », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
-Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external} ».
+Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube) ».
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -163,20 +181,40 @@ Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un sm
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
 
+> [!alert]
+>
+> Vérifiez bien que le drapeau visible en haut à droite de cette page de documentation correspond à votre pays / région. **Les paramètres ci-dessous sont différents selon votre pays / région**.
+
 > [!tabs]
-> **Pour une configuration en IMAP (recommandée)**
+> **Configuration IMAP (recommandée)**
 >>
->> |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
->> |---|---|---|---|
->> |Entrant|SSL0.OVH.NET|993|143|
->> |Sortant|SSL0.OVH.NET|465|587|
+>> |Information|Description|
+>> |---|---|
+>> |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
+>> |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
+>> |Serveur (entrant)|imap.mail.ovh.net **ou** ssl0.ovh.net|
+>> |Port|993|
+>> |Type de sécurité|SSL/TLS|
 >>
-> **Pour une configuration en POP**
+> **Configuration POP**
 >>
->> |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
->> |---|---|---|---|
->> |Entrant|SSL0.OVH.NET|995|110|
->> |Sortant|SSL0.OVH.NET|465|587|
+>> |Information|Description|
+>> |---|---|
+>> |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
+>> |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
+>> |Serveur (entrant)|pop.mail.ovh.net **ou** ssl0.ovh.net|
+>> |Port|995|
+>> |Type de sécurité|SSL/TLS|
+>>
+> **Configuration SMTP**
+>>
+>> |Information|Description|
+>> |---|---|
+>> |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
+>> |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
+>> |Serveur (sortant)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
+>> |Port|465|
+>> |Type de sécurité|SSL/TLS|
 >>
 
 > [!warning]

@@ -449,4 +449,4 @@ Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawanso
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

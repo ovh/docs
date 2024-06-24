@@ -67,7 +67,7 @@ Sempre com o objetivo de otimizar o envio e de reduzir os riscos de bloqueio dos
 
 Em primeiro lugar, deve criar um registo A na zona DNS do seu domínio com o endereço IP do seu servidor como alvo.
 
-Se os seus servidores DNS são geridos pela OVHcloud, consulte o nosso guia sobre [a edição de uma zona DNS da OVHcloud através da Área de Cliente](/pages/web_cloud/domains/dns_zone_edit#aceder-a-gestao-de-uma-zona-dns-da-ovhcloud).
+Se os seus servidores DNS são geridos pela OVHcloud, consulte o nosso guia sobre [a edição de uma zona DNS da OVHcloud através da Área de Cliente](/pages/web_cloud/domains/dns_zone_edit).
 
 Depois de alterar a zona DNS do domínio, é necessário aguardar 24 horas até que as alterações sejam efetivas.
 
@@ -79,7 +79,7 @@ Se deseja configurar a Reverse DNS num endereço Additional IP, clique no separa
 
 O menu pendente em "**Os meus endereços IP públicos e serviços associados**" permite-lhe filtrar os seus serviços por categoria.
 
-![Reverse IP](images/selectservice2022.png){.thumbnail}
+![Reverse IP](images/filteripds.png){.thumbnail}
 
 Clique no botão `...`{.action} à direita da linha correspondente e, a seguir, em `Modificar a reverse`{.action}:
 

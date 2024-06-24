@@ -250,7 +250,7 @@ Po rozpakowaniu plików w Twoim katalogu "**CMS**", [zaloguj się przez FTP do p
 
 Przykład systemu CMS *WordPress*:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/web-hosting-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
 
 > [!warning]
 >
@@ -414,4 +414,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

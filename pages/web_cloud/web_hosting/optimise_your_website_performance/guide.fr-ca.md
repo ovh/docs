@@ -12,7 +12,7 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 **Découvrez comment améliorer le rendement de votre site web.**
 
 > [!warning]
-> Ce cas d’application vous montrera comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes. Il décrit les mesures à appliquer dans un contexte précis. Veuillez noter que ces mesures doivent être adaptées à votre cas particulier. Si vous éprouvez des difficultés à appliquer ces mesures, veuillez contacter un prestataire de services spécialisés et/ou posez la question à notre communauté sur <https://community.ovh.com/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
+> Ce cas d’application vous montrera comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes. Il décrit les mesures à appliquer dans un contexte précis. Veuillez noter que ces mesures doivent être adaptées à votre cas particulier. Si vous éprouvez des difficultés à appliquer ces mesures, veuillez contacter un prestataire de services spécialisés et/ou posez la question à notre [communauté d'utilisateurs](/links/community). OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
 
 ## Prérequis
 
@@ -247,4 +247,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

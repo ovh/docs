@@ -17,7 +17,7 @@ Esta guía explica cómo crear y gestionar usuarios de la API de SMS.
 - Disponer de una cuenta de SMS en OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
 
-![área de cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
+![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedimiento
 
@@ -37,7 +37,7 @@ Para gestionar mejor el saldo de su cuenta de SMS, es posible aplicar un límite
 
 - La **cuota** es la cantidad de créditos de SMS asignada a un usuario de la API.
 
-- El **límite** es el umbral de créditos de SMS del que debe bajar un usuario de la API para recibir una alerta que se lo notifique y así poder recargar créditos si lo desea.
+- El **límite** corresponde al umbral mínimo de créditos de SMS que un usuario de la API debe tener antes de recibir una alerta para recargar o no el saldo de dichos créditos.
 
 ### 1. Crear un usuario de la API
 

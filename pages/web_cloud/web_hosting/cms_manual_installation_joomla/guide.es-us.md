@@ -55,7 +55,7 @@ Escriba su dominio en la barra de búsqueda de su navegador de Internet.
 
 Si los archivos fuente de Joomla! se han colocado correctamente en la carpeta raíz, la página de selección del idioma para Joomla. aparece:
 
-![Joomla instalando step 1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/joomla/install-select-language-1.png){.thumbnail}
+![Joomla instalando step 1](/pages/assets/screens/other/cms/joomla/install-select-language-1.png){.thumbnail}
 
 Seleccione el idioma, introduzca el nombre de su sitio web y haga clic en `Setup Login Data`{.action}.
 
@@ -63,7 +63,7 @@ Seleccione el idioma, introduzca el nombre de su sitio web y haga clic en `Setup
 
 Defina los accesos a su espacio de administración (*Back Office*) Joomla! :
 
-![Joomla instalando step 2](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/joomla/install-define-admin-2.png){.thumbnail}
+![Joomla instalando step 2](/pages/assets/screens/other/cms/joomla/install-define-admin-2.png){.thumbnail}
 
 > [!primary]
 >
@@ -80,7 +80,7 @@ Compruebe los datos introducidos y haga clic en `Setup Database Connection`{.act
 
 Introduzca la información solicitada para la base de datos:
 
-![Joomla instalando step 3](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/joomla/install-db-connect-3.png){.thumbnail}
+![Joomla instalando step 3](/pages/assets/screens/other/cms/joomla/install-db-connect-3.png){.thumbnail}
 
 Para completar los siguientes campos, consulte la información indicada en el **etapa 1.4** del tutorial sobre la [instalación manual de un CMS](/pages/web_cloud/web_hosting/cms_manual_installation):
 
@@ -110,7 +110,7 @@ Haga clic en `Install Joomla`{.action}.
 
 Aparecerá el siguiente mensaje:
 
-![Joomla instalando step 3-1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/joomla/install-db-connect-3-1.png){.thumbnail}
+![Joomla instalando step 3-1](/pages/assets/screens/other/cms/joomla/install-db-connect-3-1.png){.thumbnail}
 
 Si utiliza una base de datos externa al alojamiento local, deberá eliminar el *token* generado aleatoriamente al instalar el Joomla.
 
@@ -124,7 +124,7 @@ Vuelva al navegador de internet y vuelva a hacer clic en `Install Joomla`{.actio
 
 Una vez finalizada la instalación, se abrirá la siguiente página:
 
-![Joomla instalando step 4](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/joomla/install-ending-4.png){.thumbnail}
+![Joomla instalando step 4](/pages/assets/screens/other/cms/joomla/install-ending-4.png){.thumbnail}
 
 La instalación ha finalizado, pero puede añadir más idiomas al CMS si es necesario.
 
@@ -141,4 +141,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

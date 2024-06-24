@@ -52,7 +52,7 @@ Wählen Sie `SFTP`{.action} oder `Aktiviert`{.action} aus (um das SSH-Protokoll 
 
 Überprüfen Sie zunächst, dass die Dateien und Ordner Ihrer Website im [Wurzelverzeichnis](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#3-dateien-auf-ihren-speicherplatz-hochladen) Ihres Hostings enthalten sind.
 
-Wenn Sie vor weniger als 48 Stunden eine Änderung an Ihren [DNS-Servern oder der DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) vorgenommen haben, warten Sie ab und starten Sie Ihre Geräte regelmäßig neu, um deren Cache zu leeren.
+Wenn Sie vor weniger als 48 Stunden eine Änderung an Ihren [DNS-Servern](/pages/web_cloud/domains/dns_server_edit) oder Ihrer [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) vorgenommen haben, warten Sie ab und starten Sie Ihre Geräte regelmäßig neu, um ihren Cache zu leeren.
 
 ### Meine FTP-Zugangsdaten funktionieren nicht.
 
@@ -94,4 +94,4 @@ Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontakti
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, lesen Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

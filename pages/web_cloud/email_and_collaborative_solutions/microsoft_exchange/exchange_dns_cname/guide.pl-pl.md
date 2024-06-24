@@ -23,7 +23,7 @@ Podczas dodawania domeny do platformy e-mail możesz zostać poproszony o skonfi
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
 - Posiadanie usługi [Exchange](https://www.ovhcloud.com/pl/emails/) lub [Email Pro](https://www.ovhcloud.com/pl/emails/email-pro/).
 - Dodanie domeny do platformy e-mail. W razie potrzeby skorzystaj z przewodnika "[Dodawanie domeny do platformy e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)".
-- Możliwość skonfigurowania strefy DNS danej domeny w [Panelu klienta OVHcloud lub z poziomu](/pages/web_cloud/domains/dns_zone_edit) panelu zarządzania, w którym jest zarejestrowana.
+- Posiadanie możliwości [skonfigurowania strefy DNS](/pages/web_cloud/domains/dns_zone_edit) danej domeny w Panelu klienta OVHcloud lub z poziomu interfejsu zarządzania, w którym jest ona zarejestrowana.
 
 ## W praktyce
 

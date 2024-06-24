@@ -66,7 +66,7 @@ Per ottimizzare l'invio e ridurre i rischi di blocco delle tue email, è necessa
 
 Per prima cosa, crea un record A nella zona DNS del tuo dominio con l'indirizzo IP del tuo server come destinazione.
 
-Se i server DNS sono gestiti da OVHcloud, consulta la nostra guida [sulla modifica di una zona DNS OVHcloud dallo Spazio Cliente](/pages/web_cloud/domains/dns_zone_edit#accedere-alla-gestione-di-una-zona-dns-ovhcloud).
+Se i server DNS sono gestiti da OVHcloud, consulta la nostra guida [sulla modifica di una zona DNS OVHcloud dallo Spazio Cliente](/pages/web_cloud/domains/dns_zone_edit).
 
 Una volta modificata la zona DNS del dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore.
 
@@ -78,7 +78,7 @@ Per configurare il Reverse DNS su un indirizzo Additional IP, clicca sulla sched
 
 Il menu a tendina "**I tuoi indirizzi IP pubblici e servizi associati**" ti permette di filtrare i tuoi servizi per categoria.
 
-![Reverse IP](images/selectservice2022.png){.thumbnail}
+![Reverse IP](images/filteripds.png){.thumbnail}
 
 Clicca sul pulsante `...`{.action} a destra della riga corrispondente e poi su `Modifica il reverse`{.action}:
 

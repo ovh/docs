@@ -63,7 +63,7 @@ Para más información, consulte nuestra guía sobre la [configuración de un re
 
 Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il *Reverse IP* con su nombre de dominio.
 
-Si sus servidores DNS son gestionados por OVHcloud, consulte nuestra guía sobre [la edición de una zona DNS en OVHcloud desde el área de cliente](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
+Si sus servidores DNS son gestionados por OVHcloud, consulte nuestra guía sobre [la edición de una zona DNS en OVHcloud desde el área de cliente](/pages/web_cloud/domains/dns_zone_edit).
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse.
 
@@ -75,7 +75,7 @@ Si desea configurar el Registro DNS inverso  en una dirección Additional IP, ab
 
 El menú desplegable en "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categorías.
 
-![IP inversa](images/selectservice2022.png){.thumbnail}
+![IP inversa](images/filteripds.png){.thumbnail}
 
 Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Cambiar el registro inverso`{.action}:
 

@@ -40,7 +40,7 @@ Po wykryciu podejrzanego działania nasze roboty związane z bezpieczeństwem mo
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) i/lub kontakt z [społecznością użytkowników](https://community.ovh.com/en/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) i/lub kontakt z [społecznością użytkowników](/links/community). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 ## Wymagania początkowe
@@ -147,7 +147,7 @@ SITE CHMOD 705 /
 
 Odpowiedź **"200 Permissions changed on /"** potwierdza, że operacja została prawidłowo wykonana. Aby to sprawdzić, spróbuj ponownie wejść na Twoją stronę.
 
-> [warning]
+> [!warning]
 >
 > Modyfikacja może trwać kilka minut (maksymalnie 20 minut) i być widoczna w przeglądarce internetowej.
 >
@@ -182,7 +182,7 @@ Następnie kliknij zielony przycisk "V".
 
 Odpowiedź **"200 Permissions changed on /"** potwierdza, że operacja została prawidłowo wykonana. Aby to sprawdzić, spróbuj ponownie wejść na Twoją stronę.
 
-> [warning]
+> [!warning]
 >
 > Modyfikacja może trwać kilka minut (maksymalnie 20 minut) i być widoczna w przeglądarce internetowej.
 >
@@ -201,4 +201,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

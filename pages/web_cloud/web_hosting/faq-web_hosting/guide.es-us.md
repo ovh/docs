@@ -133,7 +133,7 @@ Si su sitio web incluye una base de datos, consulte nuestra guía [Restaurar una
 
 ![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
 
-Esta anomalía indica una configuración errónea a nivel de los [servidores DNS](/pages/web_cloud/domains/dns_server_general_information) o de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) asociada a su dominio.
+Esta anomalía indica una configuración errónea a nivel de los [servidores DNS](/pages/web_cloud/domains/dns_server_edit) o de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) asociada a su dominio.
 
 El caso más común es el siguiente: usted ha contratado por separado su dominio y su alojamiento, por lo que no están conectados entre sí a través de su zona DNS.
 
@@ -145,7 +145,7 @@ Compare los `Objetivos` de las entradas de tipo `NS` indicadas en la pestaña `Z
 
 - Si los elementos son idénticos, sustituya el objetivo `213.186.33.5` por el código de cuatro cifras indicado en la pestaña `Información general` con la mención `IPv4` (para más información sobre las operaciones a realizar, consulte las instrucciones de [esta guía](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Si los elementos no son idénticos, pero los `servidores DNS` indicados en la pestaña del mismo nombre aparecen en [esta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), siga las instrucciones de [esta guía](/pages/web_cloud/domains/dns_server_general_information#restaurar-los-servidores-dns) para restaurarlos.
+- Si los elementos no son idénticos, pero los `servidores DNS` indicados en la pestaña del mismo nombre aparecen en [esta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), siga las instrucciones de [esta guía](/pages/web_cloud/domains/dns_server_edit) para restaurarlos.
 
 - Si los elementos no son idénticos y los `servidores DNS` indicados en la pestaña del mismo nombre no aparecen en [esta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contacte con su Webmaster o busque un [proveedor especializado](/links/partner) a través de la página de [partners de OVHcloud](/links/partner).
 
@@ -211,4 +211,4 @@ No tiene que hacer nada al respecto. Aunque su dominio se muestre en [notación 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

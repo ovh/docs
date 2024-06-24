@@ -45,7 +45,7 @@ Verwenden Sie hierzu zwei Apache-Konfigurationsdateien (HTTP), die im [FTP-Berei
 >
 > Bei Fragen zur Erstellung, Nutzung oder Programmierung Ihrer Website kann der OVHcloud Support Sie nicht unterstützen.
 >
-> Kontaktieren Sie hierzu unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner).
+> Kontaktieren Sie hierzu unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner).
 >
 
 Wir erklären die 4 wichtigsten Schritte zum Schutz des Zugriffs auf ein Verzeichnis oder Teile Ihrer Website:
@@ -259,4 +259,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

@@ -107,7 +107,7 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 >
 > Dans cette situation, vous pourrez sauvegarder les données d'un seul site web en utilisant un [script PHP ou une commande SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> Pour toute question sur les manipulations à réaliser, contactez la [communauté OVHcloud](https://community.ovh.com) ou l'un de nos [partenaires](/links/partner).<br>
+> Pour toute question sur les manipulations à réaliser, contactez la [communauté OVHcloud](/links/community) ou l'un de nos [partenaires](/links/partner).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
@@ -153,7 +153,7 @@ Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_c
 
 > [!primary]
 >
-> Pour toute question concernant la suppression de données pour réduire la quantité de données sur votre hébergement web, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](/links/partner).<br>
+> Pour toute question concernant la suppression de données pour réduire la quantité de données sur votre hébergement web, contactez notre [communauté d'utilisateurs](/links/community) ou les [partenaires OVHcloud](/links/partner).<br>
 > Le support OVHcloud n'est pas habilité à vous apporter une assistance à ce sujet.
 >
 
@@ -205,7 +205,7 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 >
 > **Supprimer des éléments dans votre base de données peut entraîner une coupure de votre site web.**
 >
-> Pour toute question complémentaire, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](/links/partner).<br>
+> Pour toute question complémentaire, contactez notre [communauté d'utilisateurs](/links/community) ou les [partenaires OVHcloud](/links/partner).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
@@ -237,9 +237,9 @@ Ce dysfonctionnement peut avoir plusieurs causes :
 
 - Vérifiez que le nom de domaine que vous consultez (« domain.tld ») est bien celui avec lequel vous venez de faire l'installation du « module en 1 clic ».
 
-- Si vous avez effectué récemment un changement dans la [zone DNS active](/pages/web_cloud/domains/dns_server_general_information)/[serveurs DNS](/pages/web_cloud/domains/dns_zone_edit) de votre nom de domaine ou un [transfert de nom de domaine](/pages/web_cloud/domains/transfer_incoming_generic_domain). Patientez jusqu'à ce que ces opérations soient finalisées (4-24 heures pour une modification dans la zone DNS et 24-48 heures pour une modification des serveurs DNS). N'oubliez pas également de redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur internet.
+- Si vous avez effectué récemment un changement dans la [zone DNS active](/pages/web_cloud/domains/dns_zone_edit)/[serveurs DNS](/pages/web_cloud/domains/dns_server_edit) de votre nom de domaine ou un [transfert de nom de domaine](/pages/web_cloud/domains/transfer_incoming_generic_domain). Patientez jusqu'à ce que ces opérations soient finalisées (4-24 heures pour une modification dans la zone DNS et 24-48 heures pour une modification des serveurs DNS). N'oubliez pas également de redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur internet.
 
-- Votre nom de domaine est toujours relié à votre ancien hébergement web. Modifiez dans ce cas la [zone DNS active](/pages/web_cloud/domains/dns_zone_edit) associée à votre nom de domaine ou ses [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information). Si la zone DNS active de votre nom de domaine n'est pas gérée chez OVHcloud, contactez votre fournisseur DNS à ce sujet.
+- Votre nom de domaine est toujours relié à votre ancien hébergement web. Modifiez dans ce cas la [zone DNS active](/pages/web_cloud/domains/dns_zone_edit) associée à votre nom de domaine ou ses [serveurs DNS](/pages/web_cloud/domains/dns_server_edit). Si la zone DNS active de votre nom de domaine n'est pas gérée chez OVHcloud, contactez votre fournisseur DNS à ce sujet.
 
 ### Le mot de passe « Administrateur » d'accès à « l'interface d'administration » de votre module en 1 clic ne fonctionne pas <a name="adminpassword"></a>
 
@@ -283,4 +283,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

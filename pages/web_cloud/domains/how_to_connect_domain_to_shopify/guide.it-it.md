@@ -99,7 +99,7 @@ Se utilizzi un servizio di posta elettronica OVHcloud o prevedi di sottoscrivere
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Creare una zona DNS OVHcloud per un dominio](/pages/web_cloud/domains/dns_zone_create)
 
@@ -111,4 +111,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

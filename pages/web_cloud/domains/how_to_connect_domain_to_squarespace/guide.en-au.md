@@ -66,7 +66,7 @@ Follow the steps in order by browsing the following tabs:
 >> **TXT record**<br><br>
 >> To identify existing "TXT" records, click the filter menu at the top of the DNS records table and select `TXT`.<br>
 >> ![dnszone](images/filter-txt.png){.thumbnail}<br>
->> - If “TXT” records are present for the domain name (example: `mydomain.ovh.`) and for its subdomain “www” (example: `www.mydomain.ovh.`), you must delete them so that they do not conflict with the CNAME record that you enter in step 3. Click the `...`{.action} button in the table row for your domain name with the subdomain “www”, then click `Delete record`{.action}.<br>
+>> - If “TXT” records are present for the domain name (example: `mydomain.ovh.`) and for its subdomain “www” (example: `www.mydomain.ovh.`), you must delete them so that they do not conflict with the CNAME record that you enter in step 4. Click the `...`{.action} button in the table row for your domain name with the subdomain “www”, then click `Delete record`{.action}.<br>
 > **Step 4**
 >> **CNAME record**<br><br>
 >> To identify existing CNAME records, click the filter menu at the top of the DNS records table and select `CNAME`.<br>
@@ -103,7 +103,7 @@ If you are using an OVHcloud email solution, or if you plan to subscribe to one 
 
 ## Go further <a name="go-further"></a>
 
-[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_edit)
 
 [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)
 
@@ -115,4 +115,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

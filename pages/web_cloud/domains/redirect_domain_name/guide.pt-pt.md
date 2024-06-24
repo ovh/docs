@@ -59,7 +59,7 @@ Estão disponíveis três opções de reencaminhamento a partir da[Área de Clie
 > O separador `Reencaminhamento`{.action} apresenta uma quarta opção que permite apontar rapidamente o seu domínio para as entradas DNS A, AAAA e CNAME.<br>
 > Uma vez que não se trata propriamente de um "reencaminhamento", esta opção não será detalhada neste guia.
 >
-> Para mais informações sobre as entradas DNS, consulte o nosso manual sobre [registos DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Para mais informações sobre as entradas DNS, consulte o nosso manual sobre [registos DNS](/pages/web_cloud/domains/dns_zone_records).
 >
 
 Encontre aqui os três tipos de reencaminhamentos detalhados etapa a etapa.
@@ -396,4 +396,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

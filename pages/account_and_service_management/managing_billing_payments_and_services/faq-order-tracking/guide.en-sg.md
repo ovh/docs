@@ -46,7 +46,7 @@ If you have already paid for your order, please contact our [customer service te
 
 If you do not pay for an order, will automatically be cancelled after 24 hours.
 
-As a private customer, if you have already paid for your order and it is not linked to a custom service (e.g. a domain name) or a licence (e.g. Office 365 or SharePoint), you can retract your order within 14 days. If you need further information on this, please refer to our [detailed guide](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#apply-the-right-of-withdrawal) on this topic.
+As a private customer, if you have already paid for your order and it is not linked to a custom service (e.g. a domain name) or a licence (e.g. Office 365), you can retract your order within 14 days. If you need further information on this, please refer to our [detailed guide](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#apply-the-right-of-withdrawal) on this topic.
 
 #### Tips and tricks
 

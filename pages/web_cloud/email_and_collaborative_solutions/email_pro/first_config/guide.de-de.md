@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration von E-Mail Pro'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
-updated: 2024-01-29
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -16,16 +16,16 @@ Sie haben gerade eine E-Mail Pro Lösung erworben. Nun können Sie zu einem gün
 
 ## Voraussetzungen
 
-- Sie haben einen [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/)-Dienst in Ihrem Kunden-Account.
+- Sie haben einen [E-Mail Pro](/links/web/email-pro)-Dienst in Ihrem Kunden-Account.
 - Sie haben die E-Mail zur Installation von E-Mail Pro bereits erhalten.
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über einen [Domainnamen](/links/web/domains).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Zugang zur Verwaltung Ihres Dienstes
 
-Wenn der E-Mail Pro Dienst eingerichtet und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten.
+Wenn der E-Mail Pro Dienst eingerichtet und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](/links/manager) verwalten.
 
 Loggen Sie sich hierzu in Ihrem Kundencenter ein und wählen Sie den betreffenden `E-Mail Pro`{.action} Dienst aus.
 
@@ -96,7 +96,7 @@ Sobald die Domain als assoziierte Domain hinzugefügt ist, überprüfen Sie in d
 
 In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der MX-Felder der Domain korrekt ist. Ein rotes Feld zeigt an, dass die Konfiguration geändert werden muss.
 
-- **Automatische Konfiguration beim Hinzufügen eines Domainnamens von OVHcloud**: Wenn Sie gerade erst eine Änderung vorgenommen haben, kann es einige Stunden dauern, bis diese im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angezeigt wird.
+- **Automatische Konfiguration beim Hinzufügen eines Domainnamens von OVHcloud**: Wenn Sie gerade erst eine Änderung vorgenommen haben, kann es einige Stunden dauern, bis diese im [OVHcloud Kundencenter](/links/manager){.external} angezeigt wird.
 
 - **Manuelle Konfiguration einer nicht von OVHcloud verwalteten Domain**: Klicken Sie auf das rote Feld, um zu sehen, welche Änderungen notwendig sind.
     - *CNAME-Eintrag*: Folgen Sie unserer Anleitung „[CNAME-Eintrag erstellen, um eine assoziierte Domain hinzuzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)“.
@@ -117,13 +117,29 @@ Um sie zu konfigurieren klicken Sie auf `...`{.action} und dann auf `Ändern`{.a
 
 Ergänzen Sie die angezeigten Werte.
 
-|Bezeichnung|Beschreibung|
-|---|---|
-|E-Mail-Account|Geben Sie den Namen ein, den Ihre E-Mail-Adresse erhalten soll (zum Beispiel: vorname.name) und wählen Sie die entsprechende Domain aus der Liste aus.|
-|Vorname|Geben Sie einen Vornamen an.|
-|Name|Geben Sie einen Nachnamen an.|
-|Anzeigename|Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse verschickt werden.|
-|Passwort und Bestätigung|Wählen Sie ein Passwort und bestätigen Sie es.| 
+- **E-Mail-Account**: Geben Sie den Namen ein, den Ihre E-Mail-Adresse erhalten soll (zum Beispiel vorname.name), und wählen Sie die betreffende Domain aus der Liste aus.
+
+> [!warning]
+>
+> Die Wahl des Namens Ihrer E-Mail-Adresse muss folgende Bedingungen erfüllen:
+>
+> - Mindestens 2 Zeichen
+> - Maximal 32 Zeichen
+> - Keine Zeichen mit Akzent
+> - Keine Sonderzeichen außer `.`, `,`, `-` und `_`
+
+- **Vorname**: Geben Sie einen Vornamen ein.
+- **Name**: Geben Sie einen Namen ein.
+- **Anzeigename**: Geben Sie den Namen ein, der als Absender angezeigt werden soll, wenn E-Mails von dieser Adresse aus versendet werden.
+- **Kennwort und Bestätigung**: Legen Sie ein sicheres Kennwort fest, das aus mindestens 8 Zeichen besteht und mindestens einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthält. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
+
+> [!warning]
+>
+> Die Wahl des Passworts muss folgende Bedingungen erfüllen:
+>
+> - Mindestens 9 Zeichen
+> - Maximal 30 Zeichen
+> - Keine Zeichen mit Akzent
 
 Wenn alle Angaben vollständig sind, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigten Informationen und klicken Sie dann auf `Bestätigen`{.action}, um die Konfiguration Ihres Accounts abzuschließen.
 
@@ -147,7 +163,7 @@ Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispiel
 >
 > In den Anleitungen verwenden wir als Serverbezeichnung: pro**?**.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
 > 
-> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+> Sie finden diese Information im [OVHcloud Kundencenter](/links/manager), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
 >
 
 ## Weiterführende Informationen
@@ -164,4 +180,8 @@ Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispiel
 
 [Sicherheitseinstellungen eines E-Mail-Dienstes verwalten](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/security-policy)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+
+Treten Sie unserer [User Community](/links/community) bei.

@@ -18,7 +18,7 @@ Ad esempio, è possibile specificare:
 - I server di posta (record DNS di tipo *MX*) verso cui il tuo dominio deve reindirizzare le email che riceve. Questo ti permette di consultarle sul tuo o sui tuoi indirizzi email personalizzati con il tuo dominio.
 - informazioni relative alla sicurezza/autenticazione dei servizi (hosting Web, server Web, server di posta, ecc...) associati al dominio (record DNS di tipo *SPF*, *DKIM*, *DMARC*, ecc...).
 
-Per saperne di più, consulta la nostra documentazione relativa a [record DNS e modifica di una zona DNS](/pages/web_cloud/domains/dns_zone_edit) dallo [Spazio Cliente OVHcloud](/links/manager).
+In caso di necessità, consulta la nostra documentazione relativa a [i record DNS](/pages/web_cloud/domains/dns_zone_records) e alla [modifica di una zona DNS](/pages/web_cloud/domains/dns_zone_edit) dal tuo [Spazio Cliente OVHcloud](/links/manager).
 Per diversi motivi, potresti aver bisogno di applicare una configurazione DNS precedente al tuo dominio.
 
 Da questo momento, la gestione dei DNS è semplificata grazie alla cronologia delle zone DNS.
@@ -123,4 +123,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

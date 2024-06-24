@@ -136,7 +136,7 @@ If your website has a database, please refer to our guide on [Restoring a backup
 
 ![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
 
-This anomaly indicates an incorrect configuration in the [DNS servers](/pages/web_cloud/domains/dns_server_general_information) or the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) associated with your domain name.
+This anomaly indicates an incorrect configuration in the [DNS servers](/pages/web_cloud/domains/dns_server_edit) or the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) associated with your domain name.
 
 The most common case is: If you have ordered your domain name and Web Hosting plan separately, they will not be linked via their DNS zone.
 
@@ -146,9 +146,9 @@ Then note down the DNS servers listed and go to the `DNS zone`{.action} tab.
 
 Compare the `Target` of the `NS` type records listed in the `DNS zone`{.action} tab with the servers listed in the `DNS servers`{.action} tab:
 
-- If the elements are identical, replace target `213.186.33.5` with the four-number code noted in the `General information` tab under `IPv4` (for more details on how to make changes, follow the instructions in [this guide](/pages/web_cloud/domains/dns_zone_edit#instructions)).
+- If the elements are identical, replace target `213.186.33.5` with the four-number code noted in the `General information` tab under `IPv4` (for more details on how to make changes, follow the instructions in [this guide](/pages/web_cloud/domains/dns_zone_edit)).
 
-- If the elements are not identical, but the servers listed in the `DNS servers` tab appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), perform a reset as described in [this guide](/pages/web_cloud/domains/dns_server_general_information#resetting-dns-servers).
+- If the elements are not identical, but the servers listed in the `DNS servers` tab appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), perform a reset as described in [this guide](/pages/web_cloud/domains/dns_server_edit).
 
 - If the elements are not identical and the servers listed in the `DNS server`{.action} tab do not appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contact your webmaster or search for a [specialist service provider](/links/partner) via the [OVHcloud partners](/links/partner) page.
 
@@ -214,4 +214,4 @@ You have no action to take in this situation. Even if your domain appears in [in
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

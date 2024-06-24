@@ -71,7 +71,7 @@ Segui i passaggi in sequenza nelle seguenti schede:
 >> **Record TXT**<br><br>
 >> Per identificare i record TXT esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `TXT`.<br>
 >> ![dnszone](images/filter-txt.png){.thumbnail}<br>
->> - Se sono presenti record "TXT" solo per il dominio (esempio: `mydomain.ovh.`) e per il suo sottodominio in "www" (esempio: `wwww.mydomain.ovh.`), è necessario eliminarli affinché non entrino in conflitto con il record CNAME che inserirai allo Step 3. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo dominio con il sottodominio "www" e poi clicca su `Elimina il record`{.action}.<br>
+>> - Se sono presenti record "TXT" solo per il dominio (esempio: `mydomain.ovh.`) e per il suo sottodominio in "www" (esempio: `wwww.mydomain.ovh.`), è necessario eliminarli affinché non entrino in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo dominio con il sottodominio "www" e poi clicca su `Elimina il record`{.action}.<br>
 > **Step 4**
 >> **Record CNAME**<br><br>
 >> Per identificare i record "CNAME" esistenti, clicca sul menu dei filtri in alto nella tabella dei record DNS e seleziona `CNAME`.<br>
@@ -108,7 +108,7 @@ Se utilizzi un servizio di posta elettronica OVHcloud o intendi sottoscrivere un
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Creare una zona DNS OVHcloud per un dominio](/pages/web_cloud/domains/dns_zone_create)
 
@@ -120,4 +120,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

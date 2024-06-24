@@ -118,7 +118,7 @@ La firma viene poi cifrata con la chiave privata utilizzando la crittografia asi
 
 #### Perché è necessario configurare i server DNS? <a name="dns-and-dkim"></a>
 
-Affinché il destinatario possa verificare la firma DKIM del mittente, avrà bisogno dei parametri DKIM e soprattutto della chiave pubblica per decifrarla. La [zona DNS](/pages/web_cloud/domains/dns_zone_edit) di un dominio è pubblica, motivo per cui è stato aggiunto un record DNS per trasmettere la chiave pubblica e i parametri DKIM al destinatario.
+Affinché il destinatario possa verificare la firma DKIM del mittente, avrà bisogno dei parametri DKIM e soprattutto della chiave pubblica per decifrarla. La [zona DNS](/pages/web_cloud/domains/dns_zone_general_information) di un dominio è pubblica, motivo per cui è stato aggiunto un record DNS per trasmettere la chiave pubblica e i parametri DKIM al destinatario.
 
 #### Cos'è un selettore DKIM <a name="selector"></a>
 
@@ -893,4 +893,4 @@ Di seguito sono riportati gli stati che possono bloccare il funzionamento della 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com).
+Contatta la nostra [Community di utenti](/links/community).

@@ -118,7 +118,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 >
 > |Field|Where to find this information|Action to take|
 > |---|---|---|
-> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.domain.tld) in the DNS zone authoritative for the domain name to be added.<br></br> It is important to note that if you want to add `blog.domain.tld` you have to create the record for the subdomain `ovhcontrol.domain.tld` and not `ovhcontrol.blog.domain.tld` <br></br>(/pages/web_cloud/domains/dns_server_general_information#understanding-dns) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
+> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.domain.tld) in the DNS zone authoritative for the domain name to be added.<br></br> It is important to note that if you want to add `blog.domain.tld` you have to create the record for the subdomain `ovhcontrol.domain.tld` and not `ovhcontrol.blog.domain.tld` <br></br>(/pages/web_cloud/domains/dns_server_edit) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
 >
 > ![multisite](images/find-token.png){.thumbnail}
 >
@@ -177,4 +177,4 @@ However, if you would like to set up your website manually, you can put it onlin
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

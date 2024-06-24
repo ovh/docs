@@ -53,7 +53,7 @@ Escolha `SFTP`{.action} ou `Ativado`{.action} (para ativar o protocolo SSH no se
 
 Em primeiro lugar, verifique se os ficheiros e as pastas do seu site estão presentes na [pasta raiz](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#23-carregar-os-ficheiros-para-o-espaco-de-armazenamento) do seu alojamento.
 
-Se fez uma modificação nos seus [servidores ou zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) há menos de 48 horas, aguarde e reinicie regularmente os seus dispositivos para esvaziar a sua cache.
+Se efetuou uma alteração no seu [servidores DNS](/pages/web_cloud/domains/dns_server_edit) ou [zona DNS](/pages/web_cloud/domains/dns_zone_edit) há menos de 48 horas, aguarde e reinicie regularmente os seus dispositivos para limpar a cache.
 
 ### As minhas credenciais FTP não funcionam.
 
@@ -95,4 +95,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

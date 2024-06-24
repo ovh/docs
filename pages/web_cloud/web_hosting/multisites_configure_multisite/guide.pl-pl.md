@@ -26,7 +26,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 
 - Posiadanie kompatybilnego [hostingu OVHcloud](/links/web/hosting){.external}.
 - Zarejestrowana domena lub kilka [domen](/links/web/domains){.external}.
-- Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns))
+- Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit))
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
@@ -121,7 +121,7 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 >
 > |Pole|Gdzie znaleźć informację?|Działania|
 > |---|---|---|
-> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.domain.tld) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.domain.tld`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.domain.tld` i nie `ovhcontrol.blog.domain.tld`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_general_information#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
+> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.domain.tld) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.domain.tld`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.domain.tld` i nie `ovhcontrol.blog.domain.tld`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_edit), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
 >
 > ![MultiSite](images/find-token.png){.thumbnail}
 >
@@ -182,4 +182,4 @@ Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a nast
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

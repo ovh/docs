@@ -26,7 +26,7 @@ Es posible alojar varios sitios web en un mismo plan de hosting, aunque los domi
 
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external} compatible.
 - Tener uno o más [dominios](/links/web/domains){.external}.
-- Poder modificar la configuración de sus dominios (la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns)).
+- Poder modificar la configuración de sus dominios (la [zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
@@ -182,4 +182,4 @@ Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir lo
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

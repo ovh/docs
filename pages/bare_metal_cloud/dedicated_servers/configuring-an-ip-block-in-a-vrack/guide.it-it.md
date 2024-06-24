@@ -111,7 +111,7 @@ Successivamente, è necessario creare una nuova rotta IP per la vRack. Per aggiu
 253	default
 0	unspec
 # # #
-local
+# local
 # # #
 #1	inr.ruhep
 1 vrack

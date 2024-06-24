@@ -57,7 +57,7 @@ Wybierz odpowiedni hosting, kliknij zakładkę `Więcej`{.action}, a następnie 
 
 W tej sekcji znajdziesz przegląd zaplanowanych zadań i ich parametrów.
 
-![cron control panel](images/schedule-jobs.png){.thumbnail}
+![cron control panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/schedule-jobs.png){.thumbnail}
 
 ### Tworzenie zautomatyzowanego zadania
 
@@ -65,7 +65,7 @@ W tej sekcji znajdziesz przegląd zaplanowanych zadań i ich parametrów.
 
 Aby utworzyć zadanie CRON, kliknij przycisk `Dodaj harmonogram`{.action} po prawej stronie. W nowym oknie możesz spersonalizować ustawienia zadania.
 
-![adding scheduling](images/add-scheduling-step-1.png){.thumbnail}
+![adding scheduling](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-1.png){.thumbnail}
 
 |Opcja|Opis|   
 |---|---|   
@@ -84,7 +84,7 @@ Interfejs pozwala na skonfigurowanie częstotliwości zadania w dwóch trybach. 
 |Tryb prosty|
 |---|
 |Użyj rozwijanych menu, aby określić godzinę, dni miesiąca, dni tygodnia i miesiące zadania.|
-|![cron frequency](images/add-scheduling-basic-mod-step-2.png){.thumbnail}|
+|![cron frequency](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-basic-mod-step-2.png){.thumbnail}|
 
 > [!primary]
 >
@@ -96,17 +96,17 @@ Interfejs pozwala na skonfigurowanie częstotliwości zadania w dwóch trybach. 
 |Tryb zaawansowany| 
 |---|
 |Wprowadź wartości liczbowe jak w *crontab*. Gwiazdki wskazują każdą wartość okresu, co oznacza, że zadanie będzie wykonywane stale **raz na godzinę każdego dnia** w tym przykładzie.|
-|![cron frequency](images/add-scheduling-expert-mod-step-2.png){.thumbnail}|
+|![cron frequency](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-expert-mod-step-2.png){.thumbnail}|
 
 Możesz przełączyć między dwoma trybami podczas konfiguracji, aby wyświetlić odpowiednie zmiany. Pamiętaj również o [ograniczeniach podczas planowania zadania na hostingu WWW](./#ograniczenia-zaplanowanych-zadan-na-twoim-hostingu).
 
-![cron control panel](images/add-scheduling-basic-mod-step-2.gif){.thumbnail}
+![cron control panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-basic-mod-step-2.gif){.thumbnail}
 
 #### Etap 3: Koniec instalacji
 
 Podsumowanie zawiera informacje o skonfigurowanych parametrach, w tym *o ratingu crontab* częstotliwości wykonywania. Jeśli są poprawne, kliknij `Zatwierdź`{.action}.
 
-![cron](images/add-scheduling-step-3.png){.thumbnail}
+![cron](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
 
 Zadanie będzie gotowe za kilka minut. Możesz zmienić wszystkie parametry lub usunąć zadanie klikając na `...`{.action} w tabeli prezentacji Twojego panelu konfiguracyjnego OVHcloud.
 
@@ -195,4 +195,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -111,7 +111,7 @@ Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 >
 > In questa situazione, è possibile salvare i dati di un solo sito Web utilizzando uno [script PHP o un comando SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> Per maggiori informazioni sulle operazioni da effettuare, contatta la [Community OVHcloud](https://community.ovh.com/en/) o uno dei nostri [partner](/links/partner).<br>
+> Per maggiori informazioni sulle operazioni da effettuare, contatta la [Community OVHcloud](/links/community) o uno dei nostri [partner](/links/partner).<br>
 > Non saremo in grado di fornirti assistenza.
 >
 
@@ -157,7 +157,7 @@ In questo caso, [accedi in FTP](/pages/web_cloud/web_hosting/ftp_connection) al 
 
 > [!primary]
 >
-> Per informazioni sulla cancellazione dei dati al fine di ridurre la quantità di dati sull’hosting Web, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner).<br>
+> Per informazioni sulla cancellazione dei dati al fine di ridurre la quantità di dati sull’hosting Web, contatta la nostra [Community di utenti](/links/commmunity) o i [partner OVHcloud](/links/partner).<br>
 > Il supporto OVHcloud non è autorizzato a fornirti assistenza.
 >
 
@@ -209,7 +209,7 @@ Se non disponi di altri database e non vuoi ordinare un piano aggiuntivo, [impor
 >
 > **Eliminare elementi dal database può causare l'interruzione del sito Web.**
 >
-> Per ulteriori informazioni, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner).<br>
+> Per ulteriori informazioni, contatta la nostra [Community di utenti](/links/community) o i [partner OVHcloud](/links/partner).<br>
 > Non saremo in grado di fornirti assistenza.
 >
 
@@ -241,9 +241,9 @@ Questo malfunzionamento può avere diverse cause:
 
 - verifica che il dominio che consulti ("domain.tld") sia quello con cui hai appena installato il "modulo in 1 click".
 
-- Se hai apportato di recente una modifica alla [zona DNS attiva](/pages/web_cloud/domains/dns_server_general_information)/[server DNS](/pages/web_cloud/domains/dns_zone_edit) del tuo dominio o un [trasferimento di dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Attendi il completamento delle operazioni (4-24 ore per una modifica nella zona DNS e 24-48 ore per una modifica dei server DNS). Non dimenticare di riavviare i tuoi dispositivi (PC, smartphone, box, ecc...) e di svuotare la cache del tuo browser.
+- Se hai apportato di recente una modifica alla [zona DNS attiva](/pages/web_cloud/domains/dns_zone_edit)/[server DNS](/pages/web_cloud/domains/dns_server_edit) del tuo dominio o un [trasferimento di dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Attendi il completamento delle operazioni (4-24 ore per una modifica nella zona DNS e 24-48 ore per una modifica dei server DNS). Non dimenticare di riavviare i tuoi dispositivi (PC, smartphone, box, ecc...) e di svuotare la cache del tuo browser.
 
-- Il dominio è sempre associato al vecchio hosting Web. In questo caso, modifica la [zona DNS attiva](/pages/web_cloud/domains/dns_zone_edit) associata al dominio o i suoi [server DNS](/pages/web_cloud/domains/dns_server_general_information). Se la zona DNS attiva del dominio non è gestita in OVHcloud, contatta il provider DNS.
+- Il dominio è sempre associato al vecchio hosting Web. In questo caso, modifica la [zona DNS attiva](/pages/web_cloud/domains/dns_zone_edit) associata al dominio o i suoi [server DNS](/pages/web_cloud/domains/dns_server_edit). Se la zona DNS attiva del dominio non è gestita in OVHcloud, contatta il provider DNS.
 
 ### La password "Amministratore" di accesso all'"interfaccia di amministrazione" del tuo "modulo in 1 click" non funziona <a name="adminpassword"></a>
 
@@ -287,4 +287,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -41,9 +41,13 @@ Entonces verá el cuadro de diálogo «Reiniciar en modo de rescate». Haga clic
 
 ![control panel](images/rescue2.png){.thumbnail}
 
-Una vez que la instancia se haya reiniciado en modo de rescate, se mostrará un panel informativo con los métodos de acceso disponibles. La **contraseña del modo de rescate** temporal solo se mostrará en la consola VNC. Haga clic en su instancia en la tabla y acceda a la pestaña `Consola VNC`{.action} para consultarla.
+Una vez que la instancia se haya reiniciado en modo de rescate, se mostrará un panel informativo con los métodos de acceso disponibles.
 
 ![control panel](images/rescuedata.png){.thumbnail}
+
+La **contraseña del modo de rescate** temporal solo se mostrará en la consola VNC. Haga clic en su instancia en la tabla y acceda a la pestaña `Consola VNC`{.action} para consultarla.
+
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Acceso a sus datos
 

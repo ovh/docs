@@ -233,4 +233,4 @@ W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zde
 
 Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

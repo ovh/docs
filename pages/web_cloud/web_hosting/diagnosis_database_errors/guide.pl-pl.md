@@ -149,7 +149,7 @@ Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w p
 
 > [!warning]
 >
-> Jeśli dostarczone porady dotyczące optymalizacji Twojej bazy danych nie wystarczą, aby odblokować dostęp do Twojej strony, zalecamy kontakt z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
+> Jeśli dostarczone porady dotyczące optymalizacji Twojej bazy danych nie wystarczą, aby odblokować dostęp do Twojej strony, zalecamy kontakt z naszym [społecznością użytkowników](/links/community) lub [partnerami OVHcloud](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
 >
 
 ### Przekroczenie pojemności pamięci RAM
@@ -173,7 +173,7 @@ Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcj
 
 > [!primary]
 >
-> Jeśli napotkasz trudności z ograniczeniem wykorzystania zasobów na serwerze baz danych i nie chcesz ich zwiększać, skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](/links/partner). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+> Jeśli napotkasz trudności z ograniczeniem wykorzystania zasobów na serwerze baz danych i nie chcesz ich zwiększać, skontaktuj się z naszym [społecznością użytkowników](/links/community) lub [partnerami OVHcloud](/links/partner). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
 
 ### Błędy w imporcie baz danych
@@ -190,7 +190,7 @@ Możesz również zaznaczyć kratkę `Wyczyść aktualną bazę danych`{.action}
 
 ![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
-Ten komunikat błędu oznacza, że baza danych, którą chcesz importować zawiera nieautoryzowane elementy na infrastrukturze współdzielonej OVHcloud. W razie potrzeby skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub [wyspecjalizowanym dostawcą](/links/partner). Nie będziemy w stanie udzielić wsparcia w zakresie korekty tej nieprawidłowości.
+Ten komunikat błędu oznacza, że baza danych, którą chcesz importować zawiera nieautoryzowane elementy na infrastrukturze współdzielonej OVHcloud. W razie potrzeby skontaktuj się z [społecznością użytkowników](/links/community) lub [wyspecjalizowanym dostawcą](/links/partner). Nie będziemy w stanie udzielić wsparcia w zakresie korekty tej nieprawidłowości.
 
 > [!faq]
 >
@@ -224,7 +224,7 @@ Aby usunąć tę anomalię, możesz:
 
 - Zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitoruj-zuzyta-pamiec-ram). W tym celu przejdź do [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) w sekcji `Bazy danych`{.action} twojego [Panel klienta OVHcloud](/links/manager). Następnie kliknij przycisk `...`{.action} w części `RAM`, a następnie na `Zmień ilość pamięci RAM`{.action}.
 
-- Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.)
+- Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](/links/community) lub [partnerami OVHcloud](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.)
 
 - [Zoptymalizuj bazę danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-bazy-danych), a następnie powtórzyć operacje eksportu / importu.
 
@@ -258,7 +258,7 @@ W takiej sytuacji powinieneś [zoptymalizować bazy danych](/pages/web_cloud/web
 
 > [!warning]
 >
-> W przypadku pytań dotyczących operacji, które należy przeprowadzić, aby zmniejszyć liczbę aktywnych połączeń na Twojej bazie danych, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
+> W przypadku pytań dotyczących operacji, które należy przeprowadzić, aby zmniejszyć liczbę aktywnych połączeń na Twojej bazie danych, skontaktuj się z naszą [społecznością użytkowników](/links/community) lub [partnerami OVHcloud](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
 >
 
 #### "Name or service not known"
@@ -286,4 +286,4 @@ Sprawdź nazwę serwera, który chcesz zarejestrować w [Panelu klienta OVHcloud
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

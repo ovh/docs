@@ -1,7 +1,7 @@
 ---
 title: Object Storage Swift - Getting started with the Swift S3 API
 excerpt: 'Getting started with the Swift S3 API'
-updated: 2023-03-02
+updated: 2024-06-21
 ---
 
 ## Objective
@@ -85,7 +85,7 @@ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN"
 Install the AWS client and configure it as follows:
 
 ```bash
-user@host:~$ pip install awscli awscli-plugin-endpoint
+user@host:~$ pip install awscli
 [...]
 user@host:~$ cat ~/.aws/credentials
 

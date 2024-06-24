@@ -12,7 +12,7 @@ The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configura
 - The email servers (DNS records of type *MX*) that should receive emails sent to addresses of this domain name. By configuring MX records, you can receive emails through custom email addresses using your domnain name.
 - Information related to the security/authentication of services (web hosting, web server, email server, etc.) associated with your domain name (DNS records of type *SPF*, *DKIM*, *DMARC*, etc.).
 
-For more information on DNS zones and how to edit them in your [OVHcloud Control Panel](/links/manager), refer to [our DNS documentation](/pages/web_cloud/domains/dns_zone_edit).
+If you need further assistance, please refer to our documentation on [DNS records](/pages/web_cloud/domains/dns_zone_records) and [editing a DNS zone](/pages/web_cloud/domains/dns_zone_edit) in your [OVHcloud Control Panel](/links/manager).
 
 Dynamically updating a DNS record can prevent interruptions of your web services, in case you do not use a static IP address.
 
@@ -128,4 +128,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our [community of users](/links/community). 

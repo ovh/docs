@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints e geoavailability do Object Storage (EN)
-updated: 2024-05-20
+updated: 2024-06-11
 ---
 
 <style>
@@ -37,8 +37,8 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
 <table>
     <tr>
         <th>AWS</th>
-        <th>OVHcloud current mapping</th>
-        <th>OVHcloud target mapping (from 2024-06-17)</th>
+        <th>OVHcloud mapping before 2024-06-17</th>
+        <th>OVHcloud mapping from 2024-06-17</th>
     </tr>
     <tr>
         <td>Express One Zone</td> 
@@ -72,14 +72,14 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
     </tr>
 </table>
 
-*_the default storage class on the **io** endpoint will be Standard, i.e. if you don't specify a storage class or if you specify a storage class other than those provided by AWS, your object will be stored in our Standard tier._
+_* The default storage class on the **io** endpoint will be Standard, i.e. if you don't specify a storage class, your object will be stored in our Standard tier._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the following:
 
 <table>
     <tr>
         <th>AWS</th>
-        <th>OVHcloud target mapping (from 2024-06-17)</th>
+        <th>OVHcloud mapping from 2024-06-17</th>
     </tr>
     <tr>
         <td>Express One Zone</td> 
@@ -109,8 +109,8 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
 <table>
     <tr>
         <th>AWS</th>
-        <th>OVHcloud current mapping</th>
-        <th>OVHcloud target mapping (from 2024-06-10)</th>
+        <th>OVHcloud mapping before 2024-06-17</th>
+        <th>OVHcloud mapping from 2024-06-17</th>
     </tr>
     <tr>
         <td>Express One Zone</td> 
@@ -144,14 +144,14 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
 </table>
 
-*_the default storage class on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class or if you specify a storage class other than those provided by AWS, your object will be stored in our High Performance tier._
+_* The default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is the following:
 
 <table>
     <tr>
         <th>AWS</th>
-        <th>OVHcloud target mapping (from 2024-06-10)</th>
+        <th>OVHcloud mapping from 2024-06-10</th>
     </tr>
     <tr>
         <td>Standard</td> 

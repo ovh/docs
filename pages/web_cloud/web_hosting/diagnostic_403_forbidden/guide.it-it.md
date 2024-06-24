@@ -40,7 +40,7 @@ In seguito al rilevamento di un funzionamento sospetto, i nostri sistemi di sicu
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](/links/partner) e/o di contattare la nostra [Community di utenti](https://community.ovh.com/en/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](/links/partner) e/o di contattare la nostra [Community di utenti](/links/community). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 ## Prerequisiti
@@ -147,7 +147,7 @@ SITE CHMOD 705 /
 
 Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
-> [warning]
+> [!warning]
 >
 > Potrebbe essere necessario qualche minuto (massimo 20 minuti) per rendere visibile la modifica attraverso il browser.
 >
@@ -182,7 +182,7 @@ Clicca su "V" verde.
 
 Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
-> [warning]
+> [!warning]
 >
 > Potrebbe essere necessario qualche minuto (massimo 20 minuti) per rendere visibile la modifica attraverso il browser.
 >
@@ -201,4 +201,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

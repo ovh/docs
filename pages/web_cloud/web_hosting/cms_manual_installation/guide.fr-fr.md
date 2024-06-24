@@ -252,7 +252,7 @@ Une fois les fichiers décompressés dans votre dossier « **CMS** », [connecte
 
 Ci-dessous, un exemple avec le CMS *WordPress*:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/web-hosting-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
 
 >[!warning]
 >
@@ -414,4 +414,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

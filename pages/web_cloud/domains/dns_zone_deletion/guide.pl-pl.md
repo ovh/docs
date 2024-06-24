@@ -16,7 +16,7 @@ Więcej informacji o strefach DNS i serwerach DNS znajdziesz w przewodnikach:
 
 - [Tworzenie strefy DNS OVHcloud dla domeny](/pages/web_cloud/domains/dns_zone_create).
 - [Modyfikacja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-- [Zmiana serwerów DNS domeny w OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
+- [Zmiana serwerów DNS domeny w OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 
 Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w następujących przypadkach (lista nie jest wyczerpująca):
 
@@ -47,7 +47,7 @@ Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w
 >
 > Sprawdź [WHOIS](/links/web/domains-whois), czy aktywna strefa DNS Twojej domeny jest strefą obecną w OVHcloud.
 >
-> Jeśli domena jest aktywna w strefie DNS OVHcloud i chcesz ją zastąpić strefą DNS hostowaną gdzie indziej, zapoznaj się z naszym przewodnikiem "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)" przed usunięciem strefy DNS.
+> Jeśli domena jest aktywna w strefie DNS OVHcloud i chcesz ją zastąpić strefą DNS hostowaną gdzie indziej, zapoznaj się z naszym przewodnikiem "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)" przed usunięciem strefy DNS.
 >
 
 ### Etap 1 - Rozpoczęcie usuwania strefy DNS OVHcloud
@@ -101,7 +101,7 @@ Na adres e-mail kontaktu "[Administrator](/pages/account_and_service_management/
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Utwórz strefę DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
  
@@ -109,4 +109,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -88,4 +88,4 @@ The transfer being free, the domain's expiry date after changing registrars will
 
 [Transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

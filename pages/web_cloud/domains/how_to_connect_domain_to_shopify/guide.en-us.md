@@ -94,7 +94,7 @@ If you are using an OVHcloud email solution, or planning to subscribe to one of 
 
 ## Go further <a name="go-further"></a>
 
-[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_edit)
 
 [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)
 
@@ -106,4 +106,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

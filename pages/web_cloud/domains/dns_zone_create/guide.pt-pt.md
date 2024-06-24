@@ -18,7 +18,7 @@ Pode, por exemplo, especificar:
 - Os servidores de e-mail (registos DNS de tipo *MX*) para os quais o seu nome de domínio deve reencaminhar os e-mails que recebe. Isto permite-lhe consultá-los no(s) seu(s) endereço(s) de e-mail(s) personalizado(s) com o seu nome de domínio.
 - Informações relacionadas com a segurança / a autenticação dos seus serviços (alojamento web, servidor web, servidor de e-mail, etc.) associados ao seu nome de domínio (registos DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
 
-Se necessário, consulte o nosso manual sobre [os registos DNS e a edição de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit) a partir do seu [Área de Cliente OVHcloud](/links/manager).
+Se necessário, consulte a nossa documentação sobre [os registos DNS](/pages/web_cloud/domains/dns_zone_records) e a [edição de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit) a partir da [Área de Cliente OVHcloud](/links/manager).
 
 Uma zona DNS está alojada/registada em **servidores DNS**. São os **servidores DNS** que devem ser declarados junto do nome de domínio para utilizar a zona DNS que alojam. 
 
@@ -102,7 +102,7 @@ Ela tem o nome do seu domínio e um logótipo em forma de globo etiquetado com o
 > [!primary]
 > Neste estádio, se tem um logótipo em forma de globo apenas (sem o termo *DNS* escrito no seu interior), é que o nome de domínio já está a ser gerido na sua Área de Cliente OVHcloud. 
 >
-> Se é o contacto *Administrador* deste último, poderá neste caso alterar diretamente os **servidores DNS** através do nosso [guia](/pages/web_cloud/domains/dns_server_general_information) sobre o assumpto.
+> Se é o contacto *Administrador* deste último, poderá neste caso alterar diretamente os **servidores DNS** através do nosso [guia](/pages/web_cloud/domains/dns_server_edit) sobre o assumpto.
 >
 > Relembramos que, antes de alterar os **servidores DNS** declarados ao seu domínio, verifique se a configuração da nova zona DNS corresponde às suas expetativas.
 >
@@ -131,4 +131,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

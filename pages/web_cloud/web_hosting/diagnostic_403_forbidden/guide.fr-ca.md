@@ -36,7 +36,7 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou d'échanger avec notre [communauté d'utilisateurs](https://community.ovh.com) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou d'échanger avec notre [communauté d'utilisateurs](/links/community) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
@@ -143,7 +143,7 @@ SITE CHMOD 705 /
 
 Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site web.
 
-> [warning]
+> [!warning]
 >
 > Un délai de quelques minutes (maximum 20 minutes) peut être nécessaire pour que la modification soit visible via votre navigateur Internet.
 >
@@ -178,7 +178,7 @@ puis cliquez sur le bouton représentant un « V » vert.
 
 Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site web.
 
-> [warning]
+> [!warning]
 >
 > Un délai de quelques minutes (maximum 20 minutes) peut être nécessaire pour que la modification soit visible via votre navigateur Internet.
 >
@@ -197,4 +197,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

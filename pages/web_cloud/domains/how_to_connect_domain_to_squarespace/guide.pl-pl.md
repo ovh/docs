@@ -71,7 +71,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> **Rekord TXT**<br><br>
 >> Aby zidentyfikować istniejące rekordy "TXT", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `TXT`.<br>
 >> ![dnszone](images/filter-txt.png){.thumbnail}<br>
->> - Jeśli dla samej domeny istnieją rekordy "TXT" (na przykład: `mydomain.ovh.`), a dla jej subdomeny na "www" (na przykład: `www.mydomain.ovh.`), musisz je usunąć, aby nie kolidowały z rekordem CNAME, który wprowadzisz w etapie 3. Kliknij przycisk`...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej domeny wraz z subdomeną "www", a następnie kliknij `Usuń rekord`{.action}.<br>
+>> - Jeśli dla samej domeny istnieją rekordy "TXT" (na przykład: `mydomain.ovh.`), a dla jej subdomeny na "www" (na przykład: `www.mydomain.ovh.`), musisz je usunąć, aby nie kolidowały z rekordem CNAME, który wprowadzisz w etapie 4. Kliknij przycisk`...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej domeny wraz z subdomeną "www", a następnie kliknij `Usuń rekord`{.action}.<br>
 > **Etap 4**
 >> **Rekord CNAME**<br><br>
 >> Aby zidentyfikować istniejące rekordy "CNAME", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `CNAME`.<br>
@@ -108,7 +108,7 @@ Jeśli korzystasz z oferty e-mail OVHcloud lub zamierzasz zamówić jedną z [na
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Utworzenie strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
@@ -120,4 +120,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

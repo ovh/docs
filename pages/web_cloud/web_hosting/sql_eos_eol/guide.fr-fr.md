@@ -1,7 +1,7 @@
 ---
 title: "Annonces de fin de vente/vie base de données SQL"
 excerpt: "Annonces de fin de vente/vie base de données SQL"
-updated: 2024-06-04
+updated: 2024-06-06
 ---
 
 Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services base de données SQL Web Hosting, joignables via le réseau Web Hosting. Référez-vous à la [politique de fin de vie des bases de données managées](/pages/web_cloud/web_cloud_databases/eol-policy) pour plus d'informations.
@@ -24,4 +24,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

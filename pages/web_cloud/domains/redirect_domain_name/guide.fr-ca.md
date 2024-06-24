@@ -56,7 +56,7 @@ Trois options de redirections sont disponibles depuis l'[espace client OVHcloud]
 > L'onglet `Redirection`{.action} présente une quatrième option permettant de faire pointer rapidement votre domaine vers les entrées DNS A, AAAA et CNAME.<br>
 > Du fait qu'il ne s'agit pas là à proprement parler d'une « redirection », cette option ne sera pas détaillée dans ce guide.
 >
-> Pour plus d'informations sur les entrées DNS, consultez notre documentation sur les [enregistrements DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Pour plus d'informations sur les entrées DNS, consultez notre documentation sur les [enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
 >
 
 Retrouvez ci-dessous les trois types de redirections détaillés étape par étape.
@@ -389,10 +389,10 @@ Cette variable peut être utilisée lorsque vous déplacez temporairement des fi
 
 [Effectuer d'autres opérations avec le fichier « .htaccess » ](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do).
 
-[Comment éditer ma zone DNS ?](/pages/web_cloud/domains/dns_zone_edit)
+[Comment éditer ma zone DNS ?](/pages/web_cloud/domains/dns_zone_records)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

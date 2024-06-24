@@ -71,7 +71,7 @@ Siga as etapas em ordem nas seguintes guias:
 >> **Registo TXT**<br><br>
 >> Para identificar os registos "TXT" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `TXT`.<br>
 >> ![dnszone](images/filter-txt.png){.thumbnail}<br>
->> - Se existirem registos "TXT" para o nome de domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www" (exemplo: `www.mydomain.ovh.`), deverá eliminá-los para que não entrem em conflito com o registo CNAME que irá introduzir no passo 3. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio apenas com o subdomínio "www" e depois clique em `Eliminar entrada`{.action}.<br>
+>> - Se existirem registos "TXT" para o nome de domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www" (exemplo: `www.mydomain.ovh.`), deverá eliminá-los para que não entrem em conflito com o registo CNAME que irá introduzir no passo 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio apenas com o subdomínio "www" e depois clique em `Eliminar entrada`{.action}.<br>
 > **Etapa 4**
 >> **Registo CNAME**<br><br>
 >> Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `CNAME`.<br>
@@ -108,7 +108,7 @@ Se utiliza uma oferta de e-mail OVHcloud ou pretende subscrever uma das [nossas 
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Criar uma zona DNS da OVHcloud para um domínio](/pages/web_cloud/domains/dns_zone_create)
 
@@ -120,4 +120,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

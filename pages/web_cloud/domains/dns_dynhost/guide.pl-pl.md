@@ -18,7 +18,7 @@ Możesz na przykład określić:
 - Serwery e-mail (rekordy DNS typu *MX*), na które Twoja domena musi przekierować otrzymane e-maile. Możesz sprawdzić je na spersonalizowanym adresie e-mail z Twoją domeną.
 - Informacje związane z bezpieczeństwem / uwierzytelnianiem przypisanych usług (hosting, serwer www, serwer e-mail, itp.) do Twojej domeny (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, itp.).
 
-W razie potrzeby sprawdź [naszą dokumentację dotyczącą rekordów DNS i edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links/manager).
+W razie potrzeby sprawdź dokumentację dotyczącą [rekordów DNS](/pages/web_cloud/domains/dns_zone_records) i [edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links/manager).
 
 Aktualizacja rekordu DNS w sposób "dynamiczny" może zapobiec przedłużającej się przerwie w dostępności Twoich usług, jeśli nie dysponujesz adresem IP zwanym "stałym" (który się nie zmienia).
 
@@ -134,4 +134,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

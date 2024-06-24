@@ -184,4 +184,4 @@ In the window that pops up, enter your database’s new password (defined at [st
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

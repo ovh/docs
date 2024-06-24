@@ -39,7 +39,7 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 >
 > Wenn Sie kein CMS verwenden, stellt Ihnen OVHcloud auch ein [Tutorial zum Schützen von Verzeichnissen oder des Verwaltungsinterface Ihrer Website über .htaccess Dateien](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password) zur Verfügung.
 >
-> Kontaktieren Sie bei Fragen unsere [User Community](https://community.ovh.com/en/) oder [OVHcloud Partner](/links/partner). Die Support-Teams von OVHcloud werden Ihnen zu diesen Themen keine Hilfe bieten können.
+> Kontaktieren Sie bei Fragen unsere [User Community](/links/community) oder [OVHcloud Partner](/links/partner). Die Support-Teams von OVHcloud werden Ihnen zu diesen Themen keine Hilfe bieten können.
 >
 
 ## FAQ
@@ -213,4 +213,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

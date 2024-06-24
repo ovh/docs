@@ -41,7 +41,7 @@ Geben Sie Ihren Domainnamen in die Suchleiste Ihres Webbrowsers ein.
 
 Wenn die Quelldateien von Pico erfolgreich in den Wurzelordner verschoben wurden, wird die folgende Seite angezeigt:
 
-![Pico installation](images/welcome_page.png){.thumbnail}
+![Pico installation](/pages/assets/screens/other/cms/pico/welcome_page.png){.thumbnail}
 
 Pico ist ein dateibasiertes CMS, was bedeutet, dass die gesamte Konfiguration und Erstellung von Inhalten direkt durch die Bearbeitung der Dateien auf dem Server erfolgt. Gehen Sie wie folgt vor, um Ihre Pico Website einzurichten und anzupassen.
 
@@ -120,4 +120,4 @@ Sie haben das CMS Pico manuell auf Ihrem OVHcloud Webhosting installiert. Nachde
  
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

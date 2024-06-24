@@ -113,7 +113,7 @@ La signature est ensuite chiffrée avec la clé privée en utilisant le chiffrem
 
 #### Pourquoi a-t-on besoin de configurer les serveurs DNS ? <a name="dns-and-dkim"></a>
 
-Pour que le destinataire puisse vérifier la signature DKIM de l'expéditeur, il aura besoin des paramètres DKIM et surtout de la clé publique pour la déchiffrer. La [zone DNS](/pages/web_cloud/domains/dns_zone_edit) d'un nom de domaine est publique, c'est pourquoi un enregistrement DNS est ajouté pour transmettre la clé publique et les paramètres DKIM au destinataire.
+Pour que le destinataire puisse vérifier la signature DKIM de l'expéditeur, il aura besoin des paramètres DKIM et surtout de la clé publique pour la déchiffrer. La [zone DNS](/pages/web_cloud/domains/dns_zone_general_information) d'un nom de domaine est publique, c'est pourquoi un enregistrement DNS est ajouté pour transmettre la clé publique et les paramètres DKIM au destinataire.
 
 #### Qu'est-ce qu'un sélecteur DKIM <a name="selector"></a>
 
@@ -887,4 +887,4 @@ Ci-dessous, vous retrouverez les états qui peuvent bloquer le fonctionnement de
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

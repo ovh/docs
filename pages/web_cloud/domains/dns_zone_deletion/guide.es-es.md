@@ -16,7 +16,7 @@ Para más información sobre las zonas y los servidores DNS, consulte las siguie
 
 - [Crear una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-- [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
+- [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 
 Por ejemplo, es posible que necesite eliminar una zona DNS para su dominio en OVHcloud en los siguientes casos (no en todos los casos):
 
@@ -47,7 +47,7 @@ Por ejemplo, es posible que necesite eliminar una zona DNS para su dominio en OV
 >
 > Efectúe un [WHOIS](/links/web/domains-whois) de su dominio para saber si la zona DNS activa de su dominio es la que tiene en OVHcloud o no.
 >
-> Si la zona DNS activa para su dominio es la que tiene en OVHcloud y desea sustituirla por una zona DNS alojada en otro proveedor, consulte nuestra guía "[Modificar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)" antes de eliminar cualquier zona DNS.
+> Si la zona DNS activa para su dominio es la que tiene en OVHcloud y desea sustituirla por una zona DNS alojada en otro proveedor, consulte nuestra guía "[Modificar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)" antes de eliminar cualquier zona DNS.
 >
 
 ### Etapa 1 - Iniciar la eliminación de una zona DNS de OVHcloud
@@ -101,7 +101,7 @@ Para confirmar la eliminación, se enviará un último mensaje de confirmación 
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Crear una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
@@ -109,4 +109,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

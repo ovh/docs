@@ -1,70 +1,70 @@
 ---
-title: 'Creating an autoresponder for your email addresses'
-excerpt: 'Find out how to set up automatic email replies'
-updated: 2021-04-20
+title: 'MX Plan - How to create an automatic reply on an email address'
+excerpt: 'Find out how to set up an automatic reply on an email address'
+updated: 2024-05-24
 ---
 
 ## Objective
 
-This OVHcloud feature allows you to set up an automatic email responder that will leave a message for people trying to contact you by email in your absence.
+This OVHcloud feature allows you to set up an automatic email responder (auto-reply) that sends a message to anyone trying to contact you by email in your absence.
 
 **This guide explains how to configure automatic replies for your email addresses.**
 
 ## Requirements
 
-- an MX Plan email solution or a [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An OVHcloud MX Plan, available as part of our [web hosting plans](/links/web/hosting), the [100M free hosting](/links/web/domains-free-hosting) included with a domain name (activated in advance), or ordered separately as a standalone solution
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 > [!primary]
 >
-> If your email account is hosted on [**Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/) or if the functionality is not available in your Control Panel, you can instead create responders from your OWA webmail using the guide "[Creating automatic replies in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies)".
+> If your email address is configured on [**Exchange**](/links/web/emails-hosted-exchange) or [**Email Pro**](/links/web/email-pro), or if there is no `Manage auto-replies`{.action} section in your MX Plan interface, you will need to create an automatic reply from your webmail using the documentation on [Setting up an automatic reply from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
 
-### Creating autoresponders
+### Creating an auto-reply
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action}. Select `Emails`{.action}, then choose the domain name concerned. Next, click on the button `Manage auto-replies`{.action} in the tab `Emails`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action} at the top. Select `Emails`{.action}, then choose the domain name concerned. Open the tab `Emails`{.action}, then click on the button `Manage auto-replies`{.action} on the right.
 
-You will be redirected to the `Manage auto-replies` section where all of the email responders for this domain are listed.
+You will be redirected to the `Manage auto-replies` section where all of the email responders for this domain name are listed.
 
 To create a new one, click on `Add an auto-reply`{.action}.
 
-![responder](images/email_responder01.png){.thumbnail}
+![autoreply](images/email_responder01.png){.thumbnail}
 
-In the popup window, fill out the form according to the information below:
+The window `Add an auto-reply` appears. Fill out the form according to the information below:
 
-#### `Auto-reply type` 
+- `Auto-replies type`:
 
-- **Linked to a mailbox**: to be used if it concerns an existing email account of your email solution.
-- **Free**: to be used for an alias address. An alias is not linked to an existing account.
+**Associated with an email inbox**: To use if it concerns an existing email account of your email solution.</br>
+**Free**: To use in the case of an email alias address. It is not linked to an existing account.
 
-#### `Mailbox` or `Auto-reply name` 
-
-- Select the email account concerned by the responder. 
-- For "Free" mode, enter the name of your alias address.
-
-#### `Auto-reply duration`
-
-- **Temporary**: Define a start and end date for the responder, for example if you are scheduling an absence.
-- **Permanent**: The automatic replies stay active until you delete or modify the responder.
-
-#### `Keep messages on the server` or `Send a copy`
-
-- Choose here whether emails received during your absence will be deleted or kept.
-    - **Message**: This will be the reply to incoming mails while the responder is active.
-    - **Address on copy** ("Free" mode only): if the receiving address is an alias, you need to select the email account incoming messages will be kept in.
+- `Mailbox` or `Auto-reply name`:  Select the email account or alias address concerned by the automatic reply.
+- `Auto-reply duration`:
+    - **Temporary**: Define a start and end date for the responder, for example if you are scheduling an absence.
+    - **Permanent**: The automatic replies stay active until you delete or modify the responder.
+- `Send a copy` or `Keep messages on the server`: Allows you to choose whether emails received during your absence will be deleted or stored in an account.
 
 > [!warning]
-> If you deselect this option, messages received during your absence will be automatically deleted.
+>
+> If you leave this box unchecked, messages received during your absence will be automatically deleted.
 
-If all the mandatory fields are filled out, you can click on `Confirm`{.action} to create the autoresponder.
+- `Address on copy` (only in "free" mode): If the receiving address is an alias, you need to select the email account incoming messages will be stored in.
+- `Message`: This will be the reply to incoming mails while the responder is active.
 
-### Modifying or deleting autoresponders
+Then click `Confirm`{.action} to finish configuring your automatic reply.
 
-Autoresponders are displayed in the table in the `Manage auto-replies` section of your email service. You can delete or modify a responder by clicking on `...`{.action} to the right of it.
+> [!success]
+>
+> If you would like to delegate the management of an automatic reply for an email address, please refer to our guide ["Delegating the management of your email accounts to another person"](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
 
-![responder](images/email_responder02.png){.thumbnail}
+### Modifying or deleting an automatic reply
+
+Once your automatic reply has been created, it will appear in the table in the `Manage auto-replies`{.action} section of your email service. You can delete or modify a responder by clicking on `...`{.action} to the right of it.
+
+![hosting](images/email_responder02.png){.thumbnail}
 
 ## Go further
 
-Join our community of users on https://community.ovh.com/en/
+[Email FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+
+Join our community of users on <https://community.ovh.com/en/>.

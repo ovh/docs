@@ -148,7 +148,7 @@ Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung
 
 > [!warning]
 >
-> Wenn die Optimierung Ihrer Datenbank nicht ausreicht, um den Zugriff auf Ihre Website zu entsperren, empfehlen wir Ihnen, unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Wenn die Optimierung Ihrer Datenbank nicht ausreicht, um den Zugriff auf Ihre Website zu entsperren, empfehlen wir Ihnen, unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 ### Überschreitungen der RAM-Kapazität
@@ -172,7 +172,7 @@ Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in 
 
 > [!primary]
 >
-> Wenn Sie Schwierigkeiten haben, die Ressourcennutzung auf Ihrem Datenbankserver zu reduzieren, und diese nicht erhöhen möchten, kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Wenn Sie Schwierigkeiten haben, die Ressourcennutzung auf Ihrem Datenbankserver zu reduzieren, und diese nicht erhöhen möchten, kontaktieren Sie unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 ### Fehler beim Import von Datenbanken
@@ -191,7 +191,7 @@ Sie können beim [Datenbank-Import](/pages/web_cloud/web_hosting/sql_importing_m
 
 ![database-import](images/import-empty-current-db.png){.thumbnail}
 
-Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/) oder einen [[spezialisierten Dienstleister](/links/partner)](/links/partner). Wir werden Sie in diesem Fall nicht unterstützen können.
+Kontaktieren Sie gegebenenfalls unsere [Community](/links/community) oder einen [[spezialisierten Dienstleister](/links/partner)](/links/partner). Wir werden Sie in diesem Fall nicht unterstützen können.
 
 > [!success]
 >
@@ -223,7 +223,7 @@ Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 
 - Erhöhung der [Arbeitsspeicherkapazität (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#wechseln-des-datenbank-angebots). Gehen Sie hierzu zum [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](/links/manager). Klicken Sie dann auf die Schaltfläche `...`{.action} im Bereich `RAM` und wählen Sie `RAM-Menge ändern`{.action}.
 
-- Splitten Sie Ihre Datenbank, um sie dann über mehrere Operationen zu importieren. (Für Fragen zu den durchzuführenden Operationen kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.)
+- Splitten Sie Ihre Datenbank, um sie dann über mehrere Operationen zu importieren. (Für Fragen zu den durchzuführenden Operationen kontaktieren Sie unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.)
 
 - [Optimieren](/pages/web_cloud/web_cloud_databases/configure-database-server#ihre-datenbanken-optimieren) Sie die Datenbank und wiederholen Sie die Export/Import-Operationen.
 
@@ -257,7 +257,7 @@ In dieser Situation müssen Sie [Ihre Datenbanken optimieren](/pages/web_cloud/w
 
 > [!warning]
 >
-> Wenn Sie Fragen zu den notwendigen Schritten zur Reduzierung der Anzahl aktiver Verbindungen auf Ihrer Datenbank haben, kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Wenn Sie Fragen zu den notwendigen Schritten zur Reduzierung der Anzahl aktiver Verbindungen auf Ihrer Datenbank haben, kontaktieren Sie unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 #### “Name or service not known“
@@ -285,4 +285,4 @@ Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](/pages/web_cloud/
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

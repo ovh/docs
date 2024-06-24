@@ -1,7 +1,7 @@
 ---
 title: "Configurer sa box à partir de l'espace client OVHcloud"
 excerpt: "Découvrez comment paramétrer à distance votre box OVHcloud depuis l'espace client"
-updated: 2023-03-29
+updated: 2024-06-18
 ---
 
 ## Objectif
@@ -14,15 +14,15 @@ Afin de faciliter la gestion de votre accès à Internet, vous avez la possibili
 
 - Disposer d'un [accès à Internet OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external}. 
 - Avoir activé la gestion de votre box à distance.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
 
-![espace client Telecom Accès Internet](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion de votre box
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action}, puis sélectionnez l'accès concerné.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action}, puis sélectionnez l'accès concerné.
 
 Positionnez-vous alors sur l'onglet `Mon modem`{.action}. Dans la page qui s'affiche, vérifiez que la case à côté de `Configuration à distance activée` est bien cochée. Dès lors, deux possibilités :
 
@@ -39,7 +39,7 @@ Positionnez-vous alors sur l'onglet `Mon modem`{.action}. Dans la page qui s'aff
 
 ### Étape 2 : personnaliser la configuration de votre box
 
-Pour paramétrer votre box depuis l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, assurez-vous d'être positionné sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné. **Pour rappel, il est impératif que la configuration à distance soit activée pour que cette gestion soit possible.**
+Pour paramétrer votre box depuis l'[espace client OVHcloud](/links/manager){.external}, assurez-vous d'être positionné sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné. **Pour rappel, il est impératif que la configuration à distance soit activée pour que cette gestion soit possible.**
 
 Depuis l'onglet `Mon modem`{.action}, vous retrouvez alors plusieurs sections. Chacune d'elles permet d'interagir avec la configuration de votre box. Poursuivez alors selon la manipulation que vous souhaitez effectuer :
 
@@ -148,7 +148,7 @@ Pour cela, cliquez sur le bouton `Ajouter une Redirection de Ports`{.action} pui
 |Information|Description|
 |---|---|
 |Nom|Spécifiez un nom vous permettant de mieux identifier la redirection de ports dans le tableau par la suite.|
-|IP source|Permet de restreindre le champ d'application de la redirection de ports à une seule IP source. Laissez cet espace vide pour que celle-ci s'applique qu'importe la source.|
+|IP source|Permet de restreindre le champ d'application de la redirection de ports à une seule IP source. Laissez cet espace vide (le champ se complète alors automatiquement avec l'IP par défaut 0.0.0.0) pour que celle-ci s'applique qu'importe la source.|
 |Port de début / Port de fin|Définissez le port ou la plage de ports sur lequel la redirection s'appliquera. Pour rediriger un seul port, renseignez-le en tant que port de début et de fin.|
 |Protocole|Précisez le protocole sur lequel votre redirection s'appliquera. Pour l'appliquer aux deux protocoles, vous devrez créer la redirection une seconde fois en sélectionnant l'autre protocole.|
 |IP de destination|Indiquez l'adresse IP sur le réseau local vers qui transmettre la redirection. Pour que celle-ci fonctionne, l'équipement cible doit posséder comme passerelle par défaut celle de la box qui transmet la redirection.|
@@ -171,7 +171,7 @@ Depuis cette partie, plusieurs possibilités s'offrent à vous.
 > [!primary]
 >
 > À utiliser uniquement dans le cas où vous disposez d'un équipement pouvant agir en tant que routeur sur votre réseau local. Il gérera alors intégralement votre connexion locale, OVHcloud ne pouvant pas intervenir sur celui-ci.
-Si votre modem est de marque Zyxel, veuillez suivre le guide [Comment activer le bridge sur un modem zyxel](/pages/web_cloud/internet/internet_access/comment_activer_bridge_zyxel).
+> Si votre modem est de marque Zyxel, consultez le guide « [Comment activer le bridge sur un modem zyxel](/pages/web_cloud/internet/internet_access/comment_activer_bridge_zyxel) ».
 >
 
 - **Configurer le MTU** : lors d'une transmission de données informatiques, le Maximum Transmission Unit (MTU) est la taille maximale d'un paquet pouvant être échangé en une seule fois (c'est-à-dire sans fragmentation) sur une interface. Le MTU par défaut d'un accès OVHcloud en PPPoe est de 1 492.

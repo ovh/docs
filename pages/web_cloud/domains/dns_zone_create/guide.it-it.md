@@ -18,7 +18,7 @@ Puoi, ad esempio, precisare:
 - I server di posta (record DNS di tipo *MX*) verso cui il tuo dominio deve reindirizzare le email che riceve. Per consultare i tuoi indirizzi email personalizzati con il tuo dominio.
 - Informazioni relative alla sicurezza/autenticazione dei tuoi servizi (hosting Web, server Web, server di posta, ecc...) associati al tuo dominio (record DNS di tipo *SPF*, *DKIM*, *DMARC*, ecc...).
 
-Se necessario, consulta la nostra documentazione su [i record DNS e la modifica di una zona DNS](/pages/web_cloud/domains/dns_zone_edit) dal tuo [Spazio Cliente OVHcloud](/links/manager).
+In caso di necessità, consulta la nostra documentazione relativa a [i record DNS](/pages/web_cloud/domains/dns_zone_records) e alla [modifica di una zona DNS](/pages/web_cloud/domains/dns_zone_edit) dal tuo [Spazio Cliente OVHcloud](/links/manager).
 
 Una zona DNS è ospitata/registrata su **server DNS**. I **server DNS** devono essere dichiarati presso il dominio per utilizzare la zona DNS ospitata. 
 
@@ -102,7 +102,7 @@ A sinistra è presente un logo a forma di globo, contrassegnato con il termine *
 > [!primary]
 > A questo punto, se hai un logo a forma di globo (senza il termine *DNS* scritto all'interno), è perché il dominio è già gestito nello Spazio Cliente OVHcloud. 
 >
-> Se sei il contatto *Amministratore* del dominio, puoi modificare direttamente i **server DNS** utilizzando la nostra [guida](/pages/web_cloud/domains/dns_server_general_information) sull'argomento.
+> Se sei il contatto *Amministratore* del dominio, puoi modificare direttamente i **server DNS** utilizzando la nostra [guida](/pages/web_cloud/domains/dns_server_edit) sull'argomento.
 >
 > Ti ricordiamo che, prima di modificare i **server DNS** dichiarati presso il tuo dominio, verifica che la configurazione della nuova zona DNS corrisponda alle tue aspettative.
 >
@@ -131,4 +131,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

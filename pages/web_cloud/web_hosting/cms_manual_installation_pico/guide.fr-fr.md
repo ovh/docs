@@ -1,6 +1,6 @@
 ---
-title: "Tutoriel - Installer manuellement Pico"
-excerpt: "Découvrez comment installer le CMS Pico sur un hébergement web OVHcloud"
+title: "Tutoriel - Installer Pico sur son hébergement web OVHcloud"
+excerpt: "Découvrez comment installer manuellement le CMS Pico sur un hébergement web OVHcloud"
 updated: 2024-03-21
 ---
 
@@ -37,7 +37,7 @@ Saisissez votre nom de domaine dans la barre de recherche de votre navigateur In
 
 Si les fichiers source de Pico ont été placés correctement dans votre dossier racine, la page suivante apparaît :
 
-![Pico installation](images/welcome_page.png){.thumbnail}
+![Pico installation](/pages/assets/screens/other/cms/pico/welcome_page.png){.thumbnail}
 
 Pico est un CMS basé sur des fichiers, ce qui signifie que toute la configuration et la création de contenu se font directement en modifiant les fichiers sur le serveur. Voici les étapes à suivre pour configurer et personnaliser votre site web Pico.
 
@@ -106,14 +106,14 @@ Vous venez d'installer manuellement le CMS Pico sur votre hébergement web OVHcl
 
 [Tutoriel - Installer manuellement PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 
-[Tutoriel - Installer manuellement Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+[Tutoriel - Installer Typo3 sur son hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
 
-[Tutoriel - Installer manuellement Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+[Tutoriel - Installer Grav sur son hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
 
-[Tutoriel - Installer manuellement SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
+[Tutoriel - Installer Spip sur son hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 [Tutoriel - Installer manuellement un CMS sur mon hébergement](/pages/web_cloud/web_hosting/cms_manual_installation)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

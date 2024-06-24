@@ -36,7 +36,7 @@ Permite, a partir de um terminal e graças a um comando Linux, copiar um ficheir
 
 ## Instruções
 
-Este guia explica de forma não exaustiva as funcionalidades disponíveis com o comando `scp`. Não hesite em trocar impressões com a nossa comunidade de utilizadores em <https://community.ovh.com/en/> se desejar aprofundar os seus conhecimentos sobre esta encomenda.
+Este guia explica de forma não exaustiva as funcionalidades disponíveis com o comando `scp`. Não hesite em trocar impressões com nossa [comunidade de utilizadores](/links/community). se desejar aprofundar os seus conhecimentos sobre esta encomenda.
 
 ### Etapa 1 - Recuperar os acessos SSH do seu alojamento web
 
@@ -145,4 +145,4 @@ Para verificar se algum conteúdo do seu alojamento web foi copiado localmente p
  
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

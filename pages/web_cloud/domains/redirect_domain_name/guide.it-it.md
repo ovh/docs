@@ -59,7 +59,7 @@ Sono disponibili tre opzioni di reindirizzamento dallo[Spazio Cliente OVHcloud](
 > La scheda `Reindirizzamento`{.action} presenta una quarta opzione che permette di far puntare rapidamente il tuo dominio verso i record DNS A, AAAA e CNAME.<br>
 > Dato che non si tratta di un "reindirizzamento", questa opzione non sarà precisata in questa guida.
 >
-> Per maggiori informazioni sui record DNS, consulta la nostra documentazione sui [record DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Per maggiori informazioni sui record DNS, consulta la nostra documentazione sui [record DNS](/pages/web_cloud/domains/dns_zone_records).
 >
 
 Di seguito trovi i tre tipi di reindirizzamenti dettagliati passo per passo.
@@ -396,4 +396,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

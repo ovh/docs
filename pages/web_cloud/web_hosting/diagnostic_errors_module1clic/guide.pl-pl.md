@@ -111,7 +111,7 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 >
 > W takiej sytuacji można wykonać kopię zapasową danych pojedynczej strony WWW za pomocą [skryptu PHP lub komendy SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> W przypadku pytań dotyczących wymaganych czynności skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/) lub jednym z [partnerów](/links/partner).<br>
+> W przypadku pytań dotyczących wymaganych czynności skontaktuj się z [społecznością OVHcloud](/links/community) lub jednym z [partnerów](/links/partner).<br>
 > Nie będziemy w stanie udzielić Ci pomocy w tej sprawie.
 >
 
@@ -157,7 +157,7 @@ W takiej sytuacji [zaloguj się przez FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 > [!primary]
 >
-> Jeśli masz pytania dotyczące usuwania danych, aby zmniejszyć ilość danych przechowywanych na Twoim hostingu, skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub z [partnerami OVHcloud](/links/partner).<br>
+> Jeśli masz pytania dotyczące usuwania danych, aby zmniejszyć ilość danych przechowywanych na Twoim hostingu, skontaktuj się z [społecznością użytkowników](/links/community) lub z [partnerami OVHcloud](/links/partner).<br>
 > Pomoc OVHcloud nie jest upoważniona do udzielania wsparcia w tym zakresie.
 >
 
@@ -209,7 +209,7 @@ Jeśli nie dysponujesz innymi bazami danych i nie chcesz zamówić pakietu dodat
 >
 > **Usunięcie elementów z bazy danych może spowodować przerwę w działaniu witryny.**
 >
-> W przypadku dodatkowych pytań skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub z [partnerami OVHcloud](/links/partner).<br>
+> W przypadku dodatkowych pytań skontaktuj się z [społecznością użytkowników](/links/community) lub z [partnerami OVHcloud](/links/partner).<br>
 > Nie będziemy w stanie udzielić Ci pomocy w tej sprawie.
 >
 
@@ -241,9 +241,9 @@ Taka nieprawidłowość może mieć kilka przyczyn:
 
 - Upewnij się, że odwiedzana przez Ciebie nazwa domeny ("domain.tld") jest nazwą domeny, dla której zainstalowałeś "moduł za 1 kliknięciem".
 
-- Jeśli ostatnio nastąpiła zmiana w [aktywnej strefie DNS](/pages/web_cloud/domains/dns_server_general_information)/[serwery DNS](/pages/web_cloud/domains/dns_zone_edit) Twojej domeny lub [transfer domeny](/pages/web_cloud/domains/transfer_incoming_generic_domain). Poczekaj, aż operacje zostaną zakończone (4-24 godziny na zmianę w strefie DNS i 24-48 godzin na zmianę serwerów DNS). Pamiętaj, aby również zrestartować swoje urządzenia (PC, smartphone, box, itp.) i wyczyścić pamięć podręczną przeglądarki internetowej.
+- Jeśli ostatnio nastąpiła zmiana w [aktywnej strefie DNS](/pages/web_cloud/domains/dns_zone_edit)/[serwery DNS](/pages/web_cloud/domains/dns_server_edit) Twojej domeny lub transfer [domeny](/pages/web_cloud/domains/transfer_incoming_generic_domain). Poczekaj, aż operacje zostaną zakończone (4-24 godziny na zmianę w strefie DNS i 24-48 godzin na zmianę serwerów DNS). Pamiętaj, aby również zrestartować swoje urządzenia (PC, smartphone, box, itp.) i wyczyścić pamięć podręczną przeglądarki internetowej.
 
-- Twoja domena jest zawsze powiązana z Twoim starym hostingiem. W tym przypadku zmień [strefę DNS active](/pages/web_cloud/domains/dns_zone_edit) powiązaną z Twoją domeną lub jej [serwery DNS](/pages/web_cloud/domains/dns_server_general_information). Jeśli aktywna strefa DNS Twojej domeny nie jest zarządzana w OVHcloud, skontaktuj się z dostawcą DNS w tej sprawie.
+- Twoja domena jest zawsze powiązana z Twoim starym hostingiem. W tym przypadku zmień [strefę DNS active](/pages/web_cloud/domains/dns_zone_edit) powiązaną z Twoją domeną lub jej [serwery DNS](/pages/web_cloud/domains/dns_server_edit). Jeśli aktywna strefa DNS Twojej domeny nie jest zarządzana w OVHcloud, skontaktuj się z dostawcą DNS w tej sprawie.
 
 ### Hasło "Administrator" dostępu do "interfejsu administracyjnego" modułu za pomocą 1 kliknięcia nie działa <a name="adminpassword"></a>
 
@@ -287,4 +287,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

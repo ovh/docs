@@ -140,7 +140,7 @@ Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodniki
 
 ![Webmail](images/webmail-login-interface.png){.thumbnail}
 
-Ta nieprawidłowość wskazuje na nieprawidłową konfigurację [serwery DNS](/pages/web_cloud/domains/dns_server_general_information) lub [strefa DNS](/pages/web_cloud/domains/dns_zone_edit) przypisanych do Twojej domeny.
+Ta nieprawidłowość wskazuje na nieprawidłową konfigurację [serwery DNS](/pages/web_cloud/domains/dns_server_edit) lub [strefa DNS](/pages/web_cloud/domains/dns_zone_edit) przypisanych do Twojej domeny.
 
 Najczęstszym przypadkiem jest: zamówiłeś oddzielnie domenę i hosting, więc nie są one ze sobą połączone za pomocą strefy DNS.
 
@@ -150,9 +150,9 @@ Następnie zapisz wskazane serwery DNS i przejdź do zakładki `Strefa DNS`{.act
 
 Porównaj `Adres docelowy` wpisów typu `NS` w zakładce `Strefa DNS`{.action} z `Serwery DNS` w zakładce o tej samej nazwie:
 
-- Jeśli elementy są identyczne, zamień cel `213.186.33.5` na czterocyfrowy kod zapisany w zakładce `Informacje ogólne` pod nagłówkiem `IPv4` (aby uzyskać więcej informacji na temat czynności, jakie należy wykonać, postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit#w-praktyce)).
+- Jeśli elementy są identyczne, zamień cel `213.186.33.5` na czterocyfrowy kod zapisany w zakładce `Informacje ogólne` pod nagłówkiem `IPv4` (aby uzyskać więcej informacji na temat czynności, jakie należy wykonać, postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_general_information#zresetuj-serwery-dns).
+- Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_edit).
 
 - Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), skontaktuj się z Webmasterem lub poszukaj [wyspecjalizowanego usługodawcy](/links/partner) na stronie [partnerów OVHcloud](/links/partner).
 
@@ -218,4 +218,4 @@ Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli Twoja dom
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

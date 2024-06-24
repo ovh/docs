@@ -51,7 +51,7 @@ Saisissez votre domaine dans la barre de recherche de votre navigateur Internet.
 
 Si les fichiers sources de WordPress ont été placés correctement dans votre dossier racine, la page WordPress permettant de sélectionner la langue apparaît :
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-select-language.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-select-language.png){.thumbnail}
 
 Sélectionnez la langue du site puis cliquez sur `Continuer`{.action}.
 
@@ -59,13 +59,13 @@ Sélectionnez la langue du site puis cliquez sur `Continuer`{.action}.
 
 WordPress va vous demander de récupérer les identifiants de connexion à votre base de données :
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-start.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-start.png){.thumbnail}
 
 Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](/pages/web_cloud/web_hosting/cms_manual_installation)) puis cliquez sur `C'est parti !`{.action} pour continuer.
 
 La page suivante apparaît :
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-config-db.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-config-db.png){.thumbnail}
 
 Renseignez les informations demandées concernant la base de données :
 
@@ -91,7 +91,7 @@ Cliquez sur `Soumettre`{.action} pour valider les informations de connexion à l
 
 Si tout s'est bien passé, la page suivante apparaît :
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-step-after-db-1.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-step-after-db-1.png){.thumbnail}
 
 Cliquez sur `Lancer l'installation`{.action}.
 
@@ -101,7 +101,7 @@ Une fois l'installation réalisée, WordPress va vous demander des informations 
 
 Ce dernier vous permettra ensuite d'accéder à l'espace d'administration, communément appelé « Back-office », de votre CMS WordPress.
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-config-admin-user.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-config-admin-user.png){.thumbnail}
 
 Renseignez les informations demandées :
 
@@ -117,7 +117,7 @@ Cliquez sur `Installer WordPress`{.action} dès que tout est correctement rensei
 
 L'installation est termninée si la page suivante s'affiche :
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-successfull.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-successfull.png){.thumbnail}
 
 Il ne vous reste plus qu'à cliquer sur le bouton `Se connecter`{.action} pour tester l'accès au « Back-office » de votre nouveau CMS WordPress à l'aide des identifiants Administrateur préalablement créés lors de l'étape 2.3 de ce tutoriel.
 
@@ -130,7 +130,7 @@ Il ne vous reste plus qu'à cliquer sur le bouton `Se connecter`{.action} pour t
 
 Une fois connecté, la page suivante apparaît :
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/admin-interface.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/admin-interface.png){.thumbnail}
 
 > [!success]
 >
@@ -145,4 +145,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

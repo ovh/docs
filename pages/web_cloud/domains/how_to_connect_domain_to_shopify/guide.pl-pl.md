@@ -99,7 +99,7 @@ Jeśli korzystasz z oferty e-mail OVHcloud lub zamierzasz zamówić jedną z [na
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Utworzenie strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
@@ -111,4 +111,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

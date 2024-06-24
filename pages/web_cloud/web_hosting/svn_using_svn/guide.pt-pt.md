@@ -153,4 +153,4 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

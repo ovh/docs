@@ -14,7 +14,7 @@ Vous pouvez, par exemple, y préciser :
 - Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
 - Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.)  associés à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
 
-Si besoin, consultez notre documentation sur [les enregistrements DNS et l'édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](/links/manager).
+Si besoin, consultez notre documentation sur [les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) et l'[édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](/links/manager).
 
 Une zone DNS est hébergée / enregistrée sur des **serveurs DNS**. Ce sont les **serveurs DNS** qui doivent être déclarés auprès du nom de domaine pour utiliser la zone DNS qu'ils hébergent. 
 
@@ -98,7 +98,7 @@ Elle porte le nom de votre nom de domaine et un logo en forme de globe étiquet�
 > [!primary]
 > A ce stade, si vous avez un logo en forme de globe uniquement (sans le terme *DNS* écrit à l'intérieur), c'est que le nom de domaine est déjà géré dans votre espace client OVHcloud. 
 >
-> Si vous êtes le contact *Administrateur* de ce dernier, vous pourrez dans ce cas directement changer les **serveurs DNS** à l'aide de notre [guide](/pages/web_cloud/domains/dns_server_general_information) sur le sujet.
+> Si vous êtes le contact *Administrateur* de ce dernier, vous pourrez dans ce cas directement changer les **serveurs DNS** à l'aide de notre [guide](/pages/web_cloud/domains/dns_server_edit) sur le sujet.
 >
 > Pour rappel, vérifiez bien, avant de changer les **serveurs DNS** déclarés auprès de votre nom de domaine, que la configuration de la nouvelle zone DNS correspond bien à vos attentes.
 >
@@ -127,4 +127,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

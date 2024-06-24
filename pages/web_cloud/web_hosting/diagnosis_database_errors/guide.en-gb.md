@@ -144,7 +144,7 @@ To optimise your database, follow the instructions in our guide "[Configuring yo
 
 > [!warning]
 >
-> If the advice on how to optimise your database is not sufficient to unblock the access to your website, we recommend you to contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
+> If the advice on how to optimise your database is not sufficient to unblock the access to your website, we recommend you to contact our [community](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
 >
 
 ### RAM overflows
@@ -168,7 +168,7 @@ You can also optimise your database by following the instructions of our guide "
 
 > [!primary]
 >
-> If you experience any difficulties in decreasing the use of resources on your database server, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.
+> If you experience any difficulties in decreasing the use of resources on your database server, please contact our [community of users](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.
 >
 
 ### Database import errors
@@ -187,7 +187,7 @@ You can also tick the `Empty the current database`{.action} box just before [lau
 
 ![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
-If necessary, contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner) for more information. We will not be able to assist you in correcting this issue.
+If necessary, contact our [user community](/links/community) or [OVHcloud partners](/links/partner) for more information. We will not be able to assist you in correcting this issue.
 
 > [!success]
 >
@@ -220,7 +220,7 @@ To resolve this issue, you can use the following methods:
 
 - Increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution): go to the [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerned in the `Databases` section of your [OVHcloud Control Panel](/links/manager). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
 
-- Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.)
+- Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.)
 
 - [Optimise your database](/pages/web_cloud/web_cloud_databases/configure-database-server#managing-your-databases), then repeat the export/import operations.
 
@@ -254,7 +254,7 @@ In this situation, you will need to [optimise your databases](/pages/web_cloud/w
 
 > [!warning]
 >
-> If you have any questions about the changes you need to make in order to reduce the number of active connections to your database, please contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
+> If you have any questions about the changes you need to make in order to reduce the number of active connections to your database, please contact our [community](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
 >
 
 ### "Name or service not known"
@@ -284,4 +284,4 @@ Check the server name for the relevant database service in your [OVHcloud Contro
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

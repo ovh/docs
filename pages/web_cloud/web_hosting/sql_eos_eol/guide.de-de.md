@@ -1,7 +1,7 @@
 ---
 title: "SQL Database Web Hosting EOL und EOS Ankündigungen"
 excerpt: "SQL Database Web Hosting EOL und EOS Ankündigungen"
-updated: 2024-05-27
+updated: 2024-06-06
 ---
 
 > [!primary]
@@ -15,3 +15,19 @@ Weitere Informationen finden Sie auf der Seite zur [EOL Policy für Managed Data
 |Version|EOL Ankündigung|End-of-Sale|End-of-Support|
 |---|---|---|---|
 |MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
+
+## Weiterführende Informationen
+
+[In das OVHcloud Kundencenter einloggen](/pages/account_and_service_management/account_information/ovhcloud-account-login)
+
+[Eine Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)
+
+[Backup einer Webhosting-Datenbank exportieren](/pages/web_cloud/web_hosting/sql_database_export)
+
+[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+
+Treten Sie unserer [User Community](/links/community) bei.

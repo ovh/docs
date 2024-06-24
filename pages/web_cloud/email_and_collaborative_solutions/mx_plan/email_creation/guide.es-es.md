@@ -1,7 +1,7 @@
 ---
 title: 'Crear una dirección de correo electrónico en un MX Plan'
 excerpt: 'Cómo crear una dirección de correo electrónico en la solución MX Plan'
-updated: 2022-10-11
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -16,21 +16,21 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 
 ## Requisitos
 
-- Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}, en un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} o contratada por separado).
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
+- Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud](/links/web/hosting), en un [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratada por separado).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 
 > [!primary]
 >
 > **Casos particulares**
 >
-> - En el caso del Alojamiento gratuito 100M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, accediendo al dominio correspondiente.
-> - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}, deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](/pages/web_cloud/web_hosting/activate-email-hosting).
+> - En el caso del Alojamiento gratuito 100M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](/links/manager), accediendo al dominio correspondiente.
+> - Si tiene un [alojamiento web](/links/web/hosting), deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](/pages/web_cloud/web_hosting/activate-email-hosting).
 
 ## Procedimiento <a name="instructions"></a>
 
-En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovhcloud.com/es-es/web-hosting/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+En función de cuándo haya activado su MX Plan o de si el servicio ha sido migrado recientemente, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -69,9 +69,9 @@ Repita el procedimiento descrito en este apartado para crear las cuentas que des
 
 #### Consultar los mensajes de correo
 
-Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa){.external}.
+La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 ![Correo electrónico](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -105,10 +105,29 @@ Para crear una dirección de correo, abra la pestaña `Correo electrónico`{.act
 
 A continuación, introduzca la información solicitada:
 
-- **Nombre de la cuenta**: Introduzca el nombre que quiera asignarle a la dirección de correo electrónico (por ejemplo, el nombre.apellido). El dominio en cuestión ya se ha completado por defecto.|  
-- **Descripción de la cuenta**: Introduzca una descripción que le permita diferenciar su cuenta del resto de cuentas de su área de cliente de OVHcloud.|  
-- **Tamaño de la cuenta**: Seleccione el tamaño de la cuenta de correo, es decir, Es el espacio del que dispondrá su dirección para almacenar los mensajes.|  
-- **Contraseña**: Introduzca una contraseña y luego confírmela en el último campo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que elija una que no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos y fecha de nacimiento, por ejemplo) y que la cambie regularmente.|
+- **Cuenta de correo electrónico**: El cuadro de texto ya contiene un nombre temporal. Reemplácelo por el nombre que desee para su dirección de correo electrónico (por ejemplo, su nombre.apellido). El dominio que compone la dirección de correo ya está preseleccionado en la lista.
+
+> [!warning]
+>
+> La elección del nombre de su dirección de correo electrónico debe respetar las siguientes condiciones:
+>
+> - Mínimo 2 caracteres
+> - Máximo 32 caracteres
+> - Sin caracteres acentuados
+> - Sin caracteres especiales, excepto los siguientes: `.`, `,`, `-` y `_`
+
+- **Nombre**: introduzca un nombre.
+- **Apellido**: introduzca un apellido.
+- **Nombre mostrado**: indique el nombre que se mostrará como remitente cuando se envíen mensajes desde esta dirección.
+- **Contraseña**: establezca una contraseña segura y confírmela. Por motivos de seguridad, no utilice la misma contraseña dos veces. Elija un nombre que no guarde relación con sus datos personales (por ejemplo, no incluya su nombre, apellidos ni fecha de nacimiento). Cámbielo regularmente.
+
+> [!warning]
+>
+> La elección de la contraseña debe respetar las siguientes condiciones:
+>
+> - Mínimo 9 caracteres
+> - Máximo 30 caracteres
+> - Sin caracteres acentuados
 
 Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}. 
 
@@ -120,9 +139,9 @@ Repita el procedimiento descrito en este apartado para crear las cuentas que des
 
 #### Consultar los mensajes de correo 
 
-Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}.
+A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
 ![Correo electrónico](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -167,20 +186,40 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 
+> [!alert]
+>
+> Asegúrese de que la bandera que aparece en la parte superior derecha de esta página de documentación corresponde a su país o región. **Los siguientes parámetros varían según el país o la región**.
+
 > [!tabs]
-> **Configuración en IMAP (recomendada)**
+> **Configuración IMAP (recomendada)**
 >>
->> |Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
->> |---|---|---|---|
->> |Entrante|SSL0.OVH.NET|993|143|
->> |Saliente|SSL0.OVH.NET|465|587|
+>> |Información|Descripción|
+>> |---|---|
+>> |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
+>> |Contraseña|Introduzca la contraseña de la dirección de correo|
+>> |Servidor (entrante)|imap.mail.ovh.net **o** ssl0.ovh.net|
+>> |Puerto|993|
+>> |Tipo de seguridad|SSL/TLS|
 >>
-> **Configuración en POP**
+> **Configuración POP**
 >>
->> |Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
->> |---|---|---|---|
->> |Entrante|SSL0.OVH.NET|995|110|
->> |Saliente|SSL0.OVH.NET|465|587|
+>> |Información|Descripción|
+>> |---|---|
+>> |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
+>> |Contraseña|Introduzca la contraseña de la dirección de correo|
+>> |Servidor (entrante)|pop.mail.ovh.net **o** ssl0.ovh.net|
+>> |Puerto|995|
+>> |Tipo de seguridad|SSL/TLS|
+>>
+> **Configuración SMTP**
+>>
+>> |Información|Descripción|
+>> |---|---|
+>> |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
+>> |Contraseña|Introduzca la contraseña de la dirección de correo|
+>> |Servidor (saliente)|smtp.mail.ovh.net **o** ssl0.ovh.net|
+>> |Puerto|465|
+>> |Tipo de seguridad|SSL/TLS|
 >>
 
 > [!warning]

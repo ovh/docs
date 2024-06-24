@@ -96,20 +96,6 @@ Pour résilier votre offre [Office 365 csp 1](https://www.ovhcloud.com/fr/collab
 
 Pour résilier votre offre [Office 365 csp 2](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/reseller/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gerer-vos-abonnements).
 
-#### Sharepoint <a name="sharepoint"></a>
-
-Vous pouvez soit **supprimer** un compte individuel de votre plateforme [Sharepoint](https://www.ovhcloud.com/fr/collaborative-tools/sharepoint/), soit résilier la plateforme Sharepoint entière.
-Si vous souhaitez résilier la plateforme entière, nous vous conseillons de commencer par la suppression préalable de chaque compte individuel.
-
-- Pour supprimer un compte Sharepoint individuel, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action}. Cliquez successivement sur `Microsoft`{.action}, `Sharepoint`{.action} puis sur votre plateforme Sharepoint.<br>
-Dans l'onglet `Utilisateurs`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à supprimer puis sur `Supprimer le compte`{.action}. Prenez connaissance des informations et cliquez sur `Valider`{.action}.
-
-- Pour résilier l'ensemble de votre plateforme Sharepoint, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite de la plateforme Sharepoint à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
-
 #### Certificat SSL Sectigo <a name="ssl_sectigo"></a>
 
 Il n'y a pas de résiliation possible avant échéance sur les offres [SSL sectigo](https://www.ovhcloud.com/fr/web-hosting/options/ssl/), étant donné qu'elles ne sont pas renouvelées automatiquement. Il vous suffira donc de ne pas les renouveler à la prochaine échéance.

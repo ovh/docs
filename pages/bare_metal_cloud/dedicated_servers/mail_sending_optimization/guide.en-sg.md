@@ -62,7 +62,7 @@ To further optimise email sending and lower the risk of your emails being blocke
 
 To begin, you first have to create an A record in the DNS Zone of your domain with the IP address of your server as a target.
 
-If your DNS servers are managed by OVHcloud, please refer to our guide on [editing an OVHcloud DNS zone via the OVHcloud Control Panel](/pages/web_cloud/domains/dns_zone_edit#access-the-area-for-managing-an-ovhcloud-dns-zone).
+If your DNS servers are managed by OVHcloud, please refer to our guide on [editing an OVHcloud DNS zone via the OVHcloud Control Panel](/pages/web_cloud/domains/dns_zone_edit).
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
@@ -74,13 +74,13 @@ If you wish to configure the reverse DNS on an Additional IP, click on the `Addi
 
 The drop-down menu underneath **"My public IP addresses and associated services"** allows you to filter your services according to category.
 
-![Reverse IP](images/selectservice2022.png){.thumbnail}
+![Reverse IP](images/filteripds.png){.thumbnail}
 
 Next, click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
 
 ![Reverse IP](images/addreverse2022.png){.thumbnail}
 
-Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.action}
+Enter your domain name on the `Reverse DNS` section and click on `Validate`{.action}.
 
 ![Reverse IP](images/enterreverse.png){.thumbnail}
 

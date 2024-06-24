@@ -56,7 +56,7 @@ In the **IPv6** box, copy the address and proceed to the next step.
 > Bear in mind that adding, modifying or deleting a DNS record in a domain name’s active DNS zone will take between **4 and 24 hours** to propagate fully.
 >
 
-In order for your browser to find the IPv6 address with your domain name, edit your domain’s active DNS zone. Use our guide “[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit#edit-your-domain-names-ovhcloud-dns-zone)” to create a DNS record of the type **AAAA**.
+In order for your browser to find the IPv6 address with your domain name, edit your domain’s active DNS zone. Use our guide “[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)” to create a DNS record of the type **AAAA**.
 
 In the `Web Cloud`{.action} section, click on `Domain names`{.action}. Select your domain name, then go to the `DNS zone`{.action} tab. Click the `Add an entry`{.action} button to the right of the table. 
 
@@ -66,10 +66,10 @@ Insert the previously copied IPv6 address using the **AAAA** record type.
 
 ## Go further <a name="go-further"></a>
 
-[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit#edit-your-domain-names-ovhcloud-dns-zone)
+[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

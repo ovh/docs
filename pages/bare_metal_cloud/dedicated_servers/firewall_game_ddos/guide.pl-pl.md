@@ -28,9 +28,9 @@ Serwery dedykowane Gaming Bare Metal wyposażone są w funkcję ochrony Anty-DDo
 - Dostęp do [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 > [!warning]
-> Ta funkcja może być niedostępna lub ograniczona na serwerach [**Eco** product line] (https://eco.ovhcloud.com/pl/about/).
+> Ta funkcja może być niedostępna lub ograniczona na serwerach [**Eco** product line](https://eco.ovhcloud.com/pl/about/).
 >
-> Aby uzyskać więcej informacji, odwiedź stronę pod adresem [comparison page] (https://eco.ovhcloud.com/pl/compare/).
+> Aby uzyskać więcej informacji, odwiedź stronę pod adresem [comparison page](https://eco.ovhcloud.com/pl/compare/).
 
 ## W praktyce
 

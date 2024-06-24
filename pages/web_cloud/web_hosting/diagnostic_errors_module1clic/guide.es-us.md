@@ -111,7 +111,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 >
 > En esta situación, puede realizar una copia de seguridad de los datos de un único sitio web utilizando un [script PHP o un comando SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> Si tiene cualquier duda sobre las operaciones que debe realizar, póngase en contacto con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con uno de nuestros [partners](/links/partner).<br>
+> Si tiene cualquier duda sobre las operaciones que debe realizar, póngase en contacto con la [comunidad de OVHcloud](/links/community) o con uno de nuestros [partners](/links/partner).<br>
 > No podremos asistirle.
 >
 
@@ -157,7 +157,7 @@ En este caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) 
 
 > [!primary]
 >
-> Si tiene preguntas sobre la eliminación de datos para reducir la cantidad de datos en su alojamiento web, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner).<br>
+> Si tiene preguntas sobre la eliminación de datos para reducir la cantidad de datos en su alojamiento web, póngase en contacto con nuestra [comunidad de usuarios](/links/community) o con los [partners de OVHcloud](/links/partner).<br>
 > El soporte de OVHcloud no está autorizado a asistirle.
 >
 
@@ -209,7 +209,7 @@ Si no dispone de otras bases de datos y no desea contratar una solución adicion
 >
 > **Eliminar elementos de la base de datos puede provocar la interrupción del sitio web.**
 >
-> Si tiene más preguntas, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner).<br>
+> Si tiene más preguntas, póngase en contacto con nuestra [comunidad de usuarios](/links/community) o con los [partners de OVHcloud](/links/partner).<br>
 > No podremos asistirle.
 >
 
@@ -241,9 +241,9 @@ Este fallo de funcionamiento puede deberse a varias causas:
 
 - Compruebe que el nombre de dominio ("domain.tld") es el que acaba de instalar el "módulo en un clic".
 
-- Si ha realizado recientemente un cambio en la [zona DNS activa](/pages/web_cloud/domains/dns_server_general_information)/[servidores DNS](/pages/web_cloud/domains/dns_zone_edit) de su nombre de dominio o una [transferencia de nombre de dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Espere a que se completen estas operaciones (4-24 horas para un cambio en la zona DNS y 24-48 horas para un cambio en los servidores DNS). No olvide reiniciar sus dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador de internet.
+- Si ha realizado recientemente un cambio en la [zona DNS activa](/pages/web_cloud/domains/dns_zone_edit)/[servidores DNS](/pages/web_cloud/domains/dns_server_edit) de su nombre de dominio o una [transferencia de nombre de dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Espere a que se completen estas operaciones (4-24 horas para un cambio en la zona DNS y 24-48 horas para un cambio en los servidores DNS). No olvide reiniciar sus dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador de internet.
 
-- Su dominio siempre está asociado a su antiguo alojamiento web. En ese caso, modifique la [zona DNS activa](/pages/web_cloud/domains/dns_zone_edit) asociada al dominio o a sus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information). Si la zona DNS activa de su dominio no está gestionada en OVHcloud, póngase en contacto con su proveedor DNS para que le informe.
+- Su dominio siempre está asociado a su antiguo alojamiento web. En ese caso, modifique la [zona DNS activa](/pages/web_cloud/domains/dns_zone_edit) asociada al dominio o a sus [servidores DNS](/pages/web_cloud/domains/dns_server_edit). Si la zona DNS activa de su dominio no está gestionada en OVHcloud, póngase en contacto con su proveedor DNS para que le informe.
 
 ### La contraseña "Administrador" de acceso a la "interfaz de administración" de su "módulo en un clic" no funciona <a name="adminpassword"></a>
 
@@ -287,4 +287,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
  
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
  
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

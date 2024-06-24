@@ -242,7 +242,7 @@ OVHcloud provides a collection of saved queries and dashboards that can be direc
 
 > [!primary]
 >
-> In the downloaded files, the keywords \<replace-with-your-alias-id\> and \<replace-with-your-audit-alias-id\> must be replaced with the alias ID of your data stream.
+> In the downloaded files, the keywords <replace-with-your-alias-id\> and <replace-with-your-audit-alias-id\> must be replaced with the alias ID of your data stream.
 >
 > In the case of you have only one data stream for your technical logs and your security audit logs, replace both keywords by the same value.
 >

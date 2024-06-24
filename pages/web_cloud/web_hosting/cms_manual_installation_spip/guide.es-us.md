@@ -39,23 +39,23 @@ Siga el **conjunto de pasos** descritos en nuestro tutorial sobre la [instalaci�
 
 Introduzca `your_domain/ecrire` en la barra de búsqueda de su navegador de Internet para iniciar la instalación de su sitio web Spip. Se abrirá la siguiente página:
 
-![Spip installation](images/installation_first_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_first_step.png){.thumbnail}
 
 Seleccione el idioma de su sitio web Spip y haga clic en `Next`{.action} para confirmar. Aparecerá la siguiente pantalla:
 
-![Spip installation](images/installation_second_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_second_step.png){.thumbnail}
 
 Introduzca los datos para conectarse a su SGBD (por ejemplo, MySQL). Una vez que se haya conectado correctamente a la base de datos, aparecerá la siguiente pantalla:
 
-![Spip installation](images/installation_third_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_third_step.png){.thumbnail}
 
 Seleccione la base de datos que desea utilizar para su sitio web o [cree una nueva](/pages/web_cloud/web_hosting/sql_create_database). Elija un prefijo para las tablas de la base de datos. Por defecto, se utiliza el prefijo `spip`. Haga clic en `Next`{.action} para validar la información. Aparecerá la siguiente pantalla:
 
-![Spip installation](images/installation_fourth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fourth_step.png){.thumbnail}
 
 Introduzca la información solicitada y haga clic en `Next`{.action} para confirmar. Aparecerá la siguiente pantalla:
 
-![Spip installation](images/installation_fifth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fifth_step.png){.thumbnail}
 
 La pantalla muestra la lista de plugins disponibles para su sitio web y le informa de que la instalación de Spip se ha realizado correctamente.
 
@@ -85,4 +85,4 @@ Acaba de instalar manualmente el CMS Spip en su alojamiento web de OVHcloud. Su 
  
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

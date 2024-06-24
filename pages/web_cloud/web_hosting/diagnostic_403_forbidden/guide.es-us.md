@@ -40,7 +40,7 @@ Tras la detección de un funcionamiento sospechoso, nuestros robots de seguridad
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner) y/o con nuestra [comunidad de usuarios](https://community.ovh.com/en/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner) y/o con nuestra [comunidad de usuarios](/links/community). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -145,7 +145,7 @@ SITE CHMOD 705 /
 
 Una respuesta **"200 Permissions changed on /"** confirma que la operación se ha realizado correctamente. Para comprobarlo, vuelva a intentar acceder al sitio web.
 
-> [warning]
+> [!warning]
 >
 > El cambio puede tardar unos minutos (máximo 20 minutos) en hacerse visible en el navegador de internet.
 >
@@ -180,7 +180,7 @@ y haga clic en el botón con forma de "V" verde.
 
 Una respuesta **"200 Permissions changed on /"** confirma que la operación se ha realizado correctamente. Para comprobarlo, vuelva a intentar acceder al sitio web.
 
-> [warning]
+> [!warning]
 >
 > El cambio puede tardar unos minutos (máximo 20 minutos) en hacerse visible en el navegador de internet.
 >
@@ -199,4 +199,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

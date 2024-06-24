@@ -39,7 +39,7 @@ Mit der automatisierten Sperrung werden Sie auch vor möglichen rechtlichen Kons
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [OVHcloud Community](/links/community) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
@@ -147,7 +147,7 @@ SITE CHMOD 705 /
 
 Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 
-> [warning]
+> [!warning]
 >
 > Es kann einige Minuten (maximal 20 Minuten) dauern, bis die Änderung über Ihren Webbrowser sichtbar ist.
 >
@@ -182,7 +182,7 @@ Klicken Sie dann auf den grünen "Haken".
 
 Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 
-> [warning]
+> [!warning]
 >
 > Es kann einige Minuten (maximal 20 Minuten) dauern, bis die Änderung über Ihren Webbrowser sichtbar ist.
 >
@@ -201,4 +201,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

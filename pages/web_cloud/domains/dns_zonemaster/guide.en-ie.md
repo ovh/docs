@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Using Zonemaster
-updated: 2024-03-08
+updated: 2024-06-18
 ---
 
 > [!warning]
@@ -16,7 +16,7 @@ updated: 2024-03-08
 
 > [!primary]
 >
-> To get a better understanding of DNS, please read the introduction to our guide on [configuring a DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+> To better understand the concept of DNS, please read our guide “[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)”.
 
 ## Requirements
 
@@ -80,4 +80,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

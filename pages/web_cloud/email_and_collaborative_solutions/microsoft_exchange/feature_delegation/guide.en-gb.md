@@ -1,7 +1,7 @@
 ---
 title: 'Delegating permissions on an email account'
 excerpt: 'Find out how to delegate permissions on your email account to another user'
-updated: 2020-10-24
+updated: 2024-06-19
 ---
 
 ## Objective
@@ -12,10 +12,15 @@ With the OVHcloud Exchange or Email Pro services, you can set up professional em
 
 ## Requirements
 
-- an [OVHcloud Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) solution already set up
-- at least two active email accounts, configured on the same OVHcloud Exchange or Email Pro platform
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- credentials for the email account that will be delegated new permissions
+- An [OVHcloud Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) solution already set up
+
+> [!warning]
+>
+> **For the [Email Pro](/links/web/email-pro) offer**, the delegation features described in this guide can only be used via [Webmail](/links/web/email). The protocols that allow them to be used via an email client require an [Exchange account](/links/web/emails-hosted-exchange).
+
+- At least two active email accounts, configured on the same OVHcloud Exchange or Email Pro platform
+- Access to the [OVHcloud Control Panel](/links/manager)
+- Credentials for the email account that will be delegated new permissions
 
 ## Instructions
 
@@ -36,9 +41,9 @@ When you have identified the account that you want to delegate permissions for, 
 
 ### Step 1: Setting up the delegation
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB): 
+To do this, log in to the [OVHcloud Control Panel](/links/manager):
 
-- **Exchange**: Click on `Microsoft`{.action}, then on `Exchange`{.action}. 
+- **Exchange**: Click on `Microsoft`{.action}, then on `Exchange`{.action}.
 - **Email Pro**: Click on `Email Pro`{.action}.
 
 Select the email service containing the account that you want to delegate permissions for. Next, go to the `Email accounts`{.action} tab.
@@ -78,7 +83,11 @@ In the window that pops up, enter the name for the account that holds the delega
 
 - **From the Outlook application for Windows**
 
-In the Outlook 2016 application, click `File`{.action} in the menu bar at the top of your screen, then `Account Settings`{.action}. In the drop-down menu, click again on `Account Settings`{.action}. In the window that pops up, select the account with the delegated permission, then click `Change`{.action}. 
+> [!warning]
+>
+> Use of this feature **via Outlook** is only available for an email account [Exchange](/links/web/emails-hosted-exchange).
+
+In the Outlook application, click `File`{.action} in the menu bar at the top of your screen, then `Account Settings`{.action}. In the drop-down menu, click again on `Account Settings`{.action}. In the window that pops up, select the account with the delegated permission, then click `Change`{.action}.
 
 ![delegation](images/delegation-step4.png){.thumbnail}
 
@@ -92,19 +101,23 @@ Next, click on `More Settings`{.action}. In the new window, go to the `Advanced`
 
 Log in via the [OVHcloud webmail](https://www.ovh.co.uk/mail) using the credentials for the email account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
-In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated that permission for). If the address is not listed, delete the one that is already displayed, and enter the address you want to appear. 
+In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated that permission for). If the address is not listed, delete the one that is already displayed, and enter the address you want to appear.
 
-At this stage, you are now ready to write and send your email. 
+At this stage, you are now ready to write and send your email.
 
 ![delegation](images/delegation-step6.png){.thumbnail}
 
 - **From the Outlook application for Windows**
 
-In your Outlook 2016 application, start editing a new email. Ensure that the `From`{.action} button is visible in the editing window. If it is not visible, go to the `Options`{.action} tab, then click `From`{.action}.
+> [!warning]
+>
+> Use of this feature **via Outlook** is only available for an [Exchange email account](/links/web/emails-hosted-exchange).
 
-Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it is not displayed, click `Other Email Address`{.action}, enter the email address you would like to appear as the sender, then confirm. 
+In your Outlook application, start editing a new email. Ensure that the `From`{.action} button is visible in the editing window. If it is not visible, go to the `Options`{.action} tab, then click `From`{.action}.
 
-At this stage, you are now ready to write and send your email. 
+Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it is not displayed, click `Other Email Address`{.action}, enter the email address you would like to appear as the sender, then confirm.
+
+At this stage, you are now ready to write and send your email.
 
 ![delegation](images/delegation-step7.png){.thumbnail}
 
@@ -114,23 +127,31 @@ At this stage, you are now ready to write and send your email.
 
 Log in via the [OVHcloud webmail](https://www.ovh.co.uk/mail) using the credentials for the email account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
-In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If the address is not listed, delete the one that is already displayed, and enter the address you want to appear. 
+In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If the address is not listed, delete the one that is already displayed, and enter the address you want to appear.
 
-At this stage, you are now ready to write and send your email. 
+At this stage, you are now ready to write and send your email.
 
 ![delegation](images/delegation-step6.png){.thumbnail}
 
 - **From the Outlook application for Windows**
 
-In your Outlook 2016 application, start editing a new email. Ensure that the `From`{.action} button is visible in the editing window. If it is not visible, go to the `Options`{.action} tab, then click `From`{.action}.
+> [!warning]
+>
+> Use of this feature **via Outlook** is only available for an email account [Exchange](/links/web/emails-hosted-exchange).
 
-Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it is not displayed, click `Other Email Address`{.action}, enter the email address you would like to appear as the sender, then confirm. 
+In your Outlook application, start editing a new email. Ensure that the `From`{.action} button is visible in the editing window. If it is not visible, go to the `Options`{.action} tab, then click `From`{.action}.
 
-At this stage, you are now ready to write and send your email. 
+Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it is not displayed, click `Other Email Address`{.action}, enter the email address you would like to appear as the sender, then confirm.
+
+At this stage, you are now ready to write and send your email.
 
 ![delegation](images/delegation-step7.png){.thumbnail}
 
-## Go further
+## Go further <a name="go-further"></a>
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 [Using the Outlook Web App with an email account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
@@ -138,4 +159,4 @@ At this stage, you are now ready to write and send your email.
 
 [Creating contact groups](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

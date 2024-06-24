@@ -32,11 +32,11 @@ Pour utiliser l'option de géolocalisation par IP, connectez-vous à votre [espa
 Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement concerné dans la liste.<br>
 Cliquez ensuite sur l'onglet `Multisite`{.action} puis sur le bouton `...`{.action} situé à droite de votre nom de domaine dans le tableau. Enfin, cliquez sur `Modifier le domaine`{.action}.
 
-![hosting multisites](images/modify-a-domain.png){.thumbnail}
+![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
 
 Dans la nouvelle fenêtre qui s'affiche, cochez la case `IP du pays`{.action} pour faire apparaître le menu déroulant.
 
-![geolocation option](images/country-ip-selection.png){.thumbnail}
+![geolocation option](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/country-ip-selection.png){.thumbnail}
 
 Choisissez l'adresse IP du pays pour lequel vous souhaitez géolocaliser votre site, parmi les 12 pays proposés : *République Tchèque, Finlande, France, Allemagne, Irlande, Italie, Littuanie, Pays-bas, Pologne, Portugal, Espagne, Royaumes-Uni*.
 
@@ -57,4 +57,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

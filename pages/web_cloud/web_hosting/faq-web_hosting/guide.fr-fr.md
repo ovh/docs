@@ -136,7 +136,7 @@ Si votre site comporte une base de données, consultez notre guide « [Restaurer
 
 ![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
 
-Cette anomalie indique une configuration erronée au niveau des [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) ou de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) associés à votre nom de domaine.
+Cette anomalie indique une configuration erronée au niveau des [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) ou de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) associés à votre nom de domaine.
 
 Le cas le plus courant est le suivant : vous avez commandé séparément votre nom de domaine et votre hébergement, ils ne sont donc pas reliés entre eux via leur zone DNS.
 
@@ -146,9 +146,9 @@ Notez ensuite les serveurs DNS indiqués puis rendez-vous dans l'onglet `Zone DN
 
 Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone DNS`{.action} avec les `Serveurs DNS` indiqués dans l'onglet du même nom :
 
-- Si les éléments sont identiques, remplacez la cible `213.186.33.5` par le code à quatre nombres noté dans l'onglet `Informations générales` sous la mention `IPv4` (pour plus de détails sur les manipulations à effectuer, suivez les instructions de [ce guide](/pages/web_cloud/domains/dns_zone_edit#en-pratique)).
+- Si les éléments sont identiques, remplacez la cible `213.186.33.5` par le code à quatre nombres noté dans l'onglet `Informations générales` sous la mention `IPv4` (pour plus de détails sur les manipulations à effectuer, suivez les instructions de [ce guide](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effectuez une réinitialisation en suivant les instructions de [ce guide](/pages/web_cloud/domains/dns_server_general_information#reinitialiser-les-serveurs-dns).
+- Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effectuez une réinitialisation en suivant les instructions de [ce guide](/pages/web_cloud/domains/dns_server_edit).
 
 - Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contactez votre Webmaster ou recherchez un [prestataire spécialisé](/links/partner) via la page des [partenaires OVHcloud](/links/partner).
 
@@ -214,4 +214,4 @@ Vous n'avez aucune action à mener dans cette situation. Même si votre domaine 
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

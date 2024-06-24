@@ -46,7 +46,7 @@ Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colo
 >
 > Para qualquer questão relativa à criação, utilização ou programação do seu website, o suporte da OVHcloud não poderá ajudá-lo nestas questões.
 >
-> Para isso, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os nossos [parceiros OVHcloud](/links/partner).
+> Para isso, contacte a nossa [comunidade de utilizadores](/links/community) ou os nossos [parceiros OVHcloud](/links/partner).
 >
 
 Vamos explicar-lhe as 4 etapas principais a realizar para proteger o acesso a um diretório ou a totalidade ou parte do seu website:
@@ -260,4 +260,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

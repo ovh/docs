@@ -53,7 +53,7 @@ Wybierz `SFTP`{.action} lub `Aktywny`{.action} (aby aktywować protokół SSH na
 
 Sprawdź najpierw, czy pliki i foldery Twojej strony są obecne w [katalogu głównym](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#3-zapisanie-plikow-na-przestrzeni-dyskowej) Twojego hostingu.
 
-Jeśli przeprowadziłeś zmianę w [serwerach lub strefie DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns) mniej niż 48 godziny temu, odczekaj chwilę i zrestartuj urządzenia, aby usunąć pamięć podręczną.
+Jeśli wprowadziłeś zmianę w [serwerach DNS](/pages/web_cloud/domains/dns_server_edit) lub [strefie DNS](/pages/web_cloud/domains/dns_zone_edit) mniej niż 48 godzin temu, zaczekaj i uruchom regularnie swoje urządzenia, aby wyczyścić pamięć podręczną.
 
 ### Moje identyfikatory FTP nie działają.
 
@@ -95,4 +95,4 @@ Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawanso
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

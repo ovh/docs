@@ -14,7 +14,7 @@ Vous pouvez, par exemple, y préciser :
 - Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
 - Des informations liées à la sécurité / l'authentification de vos services associés (hébergement web, serveur web, serveur e-mail, etc.) à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
 
-Si besoin, consultez [notre documentation sur les enregistrements DNS et l'édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](/links/manager).
+Si besoin, consultez notre documentation sur [les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) et l'[édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](/links/manager).
 
 La mise à jour de manière « dynamique » d'un enregistrement DNS peut éviter une interruption prolongée de l'un de vos services si vous ne disposez pas d'une adresse IP dite « fixe » (qui ne change pas).
 
@@ -130,4 +130,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

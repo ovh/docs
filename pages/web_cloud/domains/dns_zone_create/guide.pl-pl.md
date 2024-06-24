@@ -18,7 +18,7 @@ Możesz na przykład określić:
 - Serwery e-mail (rekordy DNS typu *MX*), na które Twoja domena musi przekierować otrzymane e-maile. Możesz sprawdzić je na spersonalizowanym adresie e-mail z Twoją domeną.
 - Informacje związane z bezpieczeństwem / uwierzytelnianiem usług (hosting, serwer www, serwer e-mail, itp.) powiązanych z Twoją domeną (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, itp.).
 
-W razie potrzeby zapoznaj się z naszą dokumentacją dotyczącą [rekordów DNS i edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links/manager).
+W razie potrzeby sprawdź dokumentację dotyczącą [rekordów DNS](/pages/web_cloud/domains/dns_zone_records) i [edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links/manager).
 
 Strefa DNS jest zainstalowana / zarejestrowana na **serwerach DNS**. Są to **serwery DNS**, które muszą być zadeklarowane u nazwy domeny, aby używać strefy DNS, którą hostują. 
 
@@ -102,7 +102,7 @@ Po lewej stronie widnieje nazwa Twojej domeny, a po lewej stronie widnieje logo 
 > [!primary]
 > W tym momencie, jeśli posiadasz tylko globalne logo (bez nazwy *DNS* napisanej wewnątrz), nazwa domeny jest już zarządzana w Panelu klienta OVHcloud. 
 >
-> Jeśli jesteś kontaktem *Administrator* tego kontaktu, w tym przypadku możesz zmienić serwery DNS** za pomocą naszego [przewodnika](/pages/web_cloud/domains/dns_server_general_information) na ten temat.
+> Jeśli jesteś kontaktem *Administrator* tego kontaktu, w tym przypadku możesz zmienić serwery DNS** za pomocą naszego [przewodnika](/pages/web_cloud/domains/dns_server_edit) na ten temat.
 >
 > Przypominamy, że przed zmianą* serwerów DNS** zadeklarowanych u Twojej domeny sprawdź, czy konfiguracja nowej strefy DNS odpowiada Twoim oczekiwaniom.
 >
@@ -131,4 +131,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

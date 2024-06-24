@@ -36,7 +36,7 @@ This device also legally protects you from actions resulting from a possible hac
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the [OVHcloud community](https://community.ovh.com/en/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the [OVHcloud community](/links/community) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -143,7 +143,7 @@ SITE CHMOD 705 /
 
 The response "**200 Permissions changed on /**" confirms that the change was successful. To check, try accessing your site again.
 
-> [warning]
+> [!warning]
 >
 > You may need to wait a few minutes (maximum 20 minutes) for the change to be visible in your web browser.
 >
@@ -178,7 +178,7 @@ Then click on the green "check mark" button.
 
 The response "**200 Permissions changed on /**" confirms that the change was successful. To check, try accessing your site again.
 
-> [warning]
+> [!warning]
 >
 > You may need to wait a few minutes (maximum 20 minutes) for the change to be visible in your web browser.
 >
@@ -197,4 +197,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -40,7 +40,7 @@ Certaines limites techniques sont liées à l’utilisation de produits physique
 > [!warning]
 > **À propos du RAID :**
 >
-> - Bring Your Own Image (BYOI) ne prend pas en charge la configuration RAID logicielle au moment de l'installation, mais vous pouvez utiliser le service [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux) pour le faire. Choisissez le type d'installation personnalisée le plus adapté : [Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux).
+> - Bring Your Own Image (BYOI) ne prend pas en charge la configuration RAID logicielle au moment de l'installation, mais vous pouvez utiliser le service [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux) pour le faire. Choisissez le type d'installation personnalisée le plus adapté : [Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux).
 >
 > - Le RAID matériel est pris en charge, si votre serveur le supporte, car il est configuré avant le déploiement de l'image sur le disque.
 >
