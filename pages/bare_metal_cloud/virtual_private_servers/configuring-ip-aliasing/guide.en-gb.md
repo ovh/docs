@@ -9,11 +9,16 @@ updated: 2024-03-27
 > Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This renaming has no effect on its technical features.
 >
 
+> [!primary]
+>
+> We introduced in 2024 Additionnal IPv6 that you can configure with vRack, please follow this guide [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838) in order to configure it.
+>
+
 ## Objective
 
 IP aliasing refers to a special network configuration for certain OVHcloud services. Additional IPs allow you to associate multiple IP addresses with a single network interface.
 
-**This guide explains how to add Additional IP addresses to your network configuration.**
+**This guide explains how to add Additional IP(v4) addresses to your network configuration.**
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
