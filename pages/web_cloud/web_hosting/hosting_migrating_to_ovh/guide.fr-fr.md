@@ -236,7 +236,7 @@ Remplacez les serveurs DNS actuels (du registrar d'origine) par les deux serveur
 
 ### Etape 10 : transférer votre nom de domaine chez OVHcloud <a name="step10"></a>
 
-Une fois la propagation DNS terminée, vérifiez que l'ensemble de votre site web est fonctionnel. Naviguez sur votre site internet pour vérifier que toutes les pages s'affichent correctement et qu'aucune erreur 404 ne soit renvoyée. Vérifiez également l'envoi et la réception des e-mails depuis vos adresses e-mail.
+Une fois la propagation DNS terminée, vérifiez que l'ensemble de votre site web est fonctionnel. Naviguez sur votre site internet pour vérifier que toutes les pages s'affichent correctement et qu'aucune erreur 404 n'est renvoyée. Vérifiez également l'envoi et la réception des e-mails depuis vos adresses e-mail.
 
 Si tout est en ordre, déverrouillez votre nom de domaine et récupérez son « code de transfert », « EPP » ou « AuthCode » depuis votre bureau d'enregistrement actuel.
 
