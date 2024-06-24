@@ -893,4 +893,4 @@ Di seguito sono riportati gli stati che possono bloccare il funzionamento della 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com).
+Contatta la nostra [Community di utenti](/links/community).
