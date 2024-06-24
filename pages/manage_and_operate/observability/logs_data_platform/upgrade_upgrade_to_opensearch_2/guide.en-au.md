@@ -1,7 +1,7 @@
 ---
 title: OpenSearch Upgrade to 2.X
 excerpt: Learn about the upgrade of OpenSearch from 1.3 to 2.x and its impact on the Logs Data Platform
-updated: 2024-06-06
+updated: 2024-06-24
 ---
 
 ## Objective
@@ -22,6 +22,32 @@ The main change for OpenSearch 2.X in terms of API is the [removal of type param
 >
 
 Another change for the OpenSearch API is the [Wildcard query behavior](https://opensearch.org/docs/latest/breaking-changes/#250){.external}. This change only affects users using the [wildcard query](https://opensearch.org/docs/latest/query-dsl/term/wildcard/){.external}.
+
+## Filebeat Deprecation
+
+New Filebeat versions are only compatible with Elasticsearch when using Elasticsearch output. Only Filebeat 7.10+ versions are compatible with OpenSearch 1.X. The OpenSearch version endpoint will now provide its proper version instead of 7.10.2. **This change breaks Filebeat compatibility**. We strongly encourage our users to migrate to an alternative such as [fluentbit](https://docs.fluentbit.io/manual/pipeline/outputs/opensearch){.external}, which supports OpenSearch 2.X with the **Suppress_Type_Name** option.
+
+We are still providing a way to make Filebeat 7.10+ versions compatible with our OpenSearch 2.X version by using a special header, **X-Es-Compat**, with the value "7.10". Here is a configuration snippet for this purpose:
+
+```yaml
+#-------------------------- OpenSearch output ------------------------------
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["<your-cluster>.logs.ovh.com:9200"]
+
+  # Protocol - either `http` (default) or `https`.
+  protocol: "https"
+
+  # Authentication credentials - either API key or username/password.
+  username: "<username>"
+  password: "<password>"
+  index: "ldp-logs"
+  # Header for OpenSearch 2.X
+  headers:
+    X-Es-Compat: "7.10"
+```
+
+This header can be used right now in your current Filebeat configuration and will ensure continuity of service after the upgrade.
 
 ## Graylog
 
