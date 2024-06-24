@@ -133,11 +133,9 @@ You can refer to this guide and find out how to manage your streams from the Log
 
 #### Via the OVHcloud API :
 
-Please use the following API calls to list subscriptions to your Hosted Private Cloud account:
+Please use the following API calls to list subscriptions to your Hosted Private Cloud account.
 
-![LDP Hosted Private Cloud Api Call](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp/images/LDP_API_CALL_LISTING.png){.thumbnail}
-
-**Referencing of all VMware Hosted Private Cloud API calls on OVHcloud**:
+**Referencing of all Hosted Private Cloud VMware on OVHcloud API calls**:
 
 | **Méthode** |                   **Chemin**                   |                     **Description**                     |
 |:-----------:|:----------------------------------------------:|:-------------------------------------------------------:|

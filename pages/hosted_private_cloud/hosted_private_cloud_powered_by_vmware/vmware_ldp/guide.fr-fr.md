@@ -130,9 +130,7 @@ Vous pouvez vous référer à ce guide et retrouver comment administrer vos flux
 
 #### Via l’API OVHcloud :
 
-Veuillez utiliser les appels API suivants pour établir la liste des abonnements de votre compte Hosted Private Cloud :
-
-![LDP Hosted Private Cloud Api Call](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp/images/LDP_API_CALL_LISTING.png){.thumbnail}
+Veuillez utiliser les appels API suivants pour établir la liste des abonnements de votre compte Hosted Private Cloud.
 
 **Référencement de tous les appels API Hosted Private Cloud VMware on OVHcloud :**
 
