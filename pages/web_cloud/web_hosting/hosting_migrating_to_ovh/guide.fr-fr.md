@@ -76,7 +76,7 @@ Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un 
 
 ### Etape 2 : créer et préconfigurer une zone DNS pour votre nom de domaine chez OVHcloud <a name="step2"></a>
 
-Si votre domaine se trouve chez un autre prestataire et que vous souhaitez le transférer chez OVHcloud, vous devez dans un premier temps créer et pré-configurer une zone DNS avant d'initier le transfert, afin d'éviter l'interruption de services.
+Si votre domaine se trouve chez un autre prestataire et que vous souhaitez le transférer chez OVHcloud, vous devez dans un premier temps créer et pré-configurer une zone DNS avant d'initier le transfert, afin d'éviter une interruption de services.
 
 Lorsque votre hébergement est créé, connectez-vous à votre [espace client OVHcloud](/links/manager) puis créez une zone DNS pour votre nom de domaine **sans les « www »**. Vous pouvez vous aider de notre guide sur la [création d'une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
