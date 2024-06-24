@@ -107,7 +107,7 @@ Once complete, you will be able to install a new 1-click module.
 >
 > In this situation, you can back up data from a single website using a [PHP script or an SSH command](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> If you have any questions on how to proceed, please contact the [OVHcloud community](https://community.ovh.com/en/) or one of our [partners](/links/partner).<br>
+> If you have any questions on how to proceed, please contact the [OVHcloud community](/links/community) or one of our [partners](/links/partner).<br>
 > We will not be able to assist you with this.
 >
 
@@ -153,7 +153,7 @@ In this situation, [log in via FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 > [!primary]
 >
-> If you have any questions about deleting data to reduce the amount of data on your web hosting plan, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner).<br>
+> If you have any questions about deleting data to reduce the amount of data on your web hosting plan, please contact our [community of users](/links/community) or [OVHcloud partners](/links/partner).<br>
 > OVHcloud support is not authorised to provide you with assistance in this regard.
 >
 
@@ -205,7 +205,7 @@ If you do not have any other databases and you do not want to order an additiona
 >
 > **Deleting items from your database can cause your website to go down.**
 >
-> If you have any further questions, please contact our [community of users](https://community.ovh.com/en/) or the [OVHcloud partners](/links/partner).<br>
+> If you have any further questions, please contact our [community of users](/links/community) or the [OVHcloud partners](/links/partner).<br>
 > We will not be able to assist you with this.
 >
 

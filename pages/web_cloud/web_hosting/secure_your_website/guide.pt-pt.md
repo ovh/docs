@@ -12,7 +12,7 @@ updated: 2024-01-29
 
 Este guia permite-lhe adquirir conhecimentos fundamentais para assegurar a disponibilidade dos seus serviços, proteger a integridade dos seus dados e proteger o acesso às suas soluções. Apenas diz respeito aos websites alojados nas [soluções partilhadas da OVHcloud](/links/web/hosting).
 
-É organizado por etapas, por ordem crescente de importância e de dificuldade técnica, o que significa que os primeiros passos são os mais indispensáveis. A segurança do seu site será medida pelo elemento que lhe diz respeito que está menos protegido. Recomendamos que realize o conjunto das ações descritas. No entanto, se encontrar dificuldades em realizar algumas das operações descritas aqui, não hesite em contactar a [comunidade OVHcloud](https://community.ovh.com/en/) ou os nossos [parceiros](/links/partner).
+É organizado por etapas, por ordem crescente de importância e de dificuldade técnica, o que significa que os primeiros passos são os mais indispensáveis. A segurança do seu site será medida pelo elemento que lhe diz respeito que está menos protegido. Recomendamos que realize o conjunto das ações descritas. No entanto, se encontrar dificuldades em realizar algumas das operações descritas aqui, não hesite em contactar a [comunidade OVHcloud](/links/community) ou os nossos [parceiros](/links/partner).
 
 **Descubra como proteger o seu website.**
 
@@ -63,7 +63,7 @@ Em caso de perda dos seus dados de acesso e/ou de indisponibilidade do endereço
 Primeiro, faça o backup dos dados que compõem o seu (ficheiros FTP **E** base de dados) seguindo as instruções deste [guia](/pages/web_cloud/web_hosting/exporter-son-site-web). Importe-os no seu computador ou num suporte externo, do tipo servidor NAS ou pen USB.
 
 Os softwares de gestão de websites (CMS) oferecem também a possibilidade de instalar plugins de backup automático.<br>
-Consulte os fóruns oficiais do seu CMS preferido ou contacte a [comunidade OVHcloud](https://community.ovh.com/en/) a este respeito.
+Consulte os fóruns oficiais do seu CMS preferido ou contacte a [comunidade OVHcloud](/links/community) a este respeito.
 
 ### Etapa 4 - Saiba como reconhecer e-mails fraudulentos
 
@@ -132,4 +132,4 @@ O ficheiro ".htaccess" é um ficheiro de configuração (HTTP) Apache executado 
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

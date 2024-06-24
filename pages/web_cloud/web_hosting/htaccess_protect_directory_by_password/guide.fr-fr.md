@@ -42,7 +42,7 @@ Ceci en utilisant deux fichiers de configuration (HTTP) Apache à placer dans [l
 >
 > Pour toute question relative à la création, l'utilisation ou la programmation de votre site web, le support OVHcloud ne sera pas en mesure de vous apporter une assistance sur ces sujets.
 >
-> Pour cela, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou nos [partenaires OVHcloud](/links/partner).
+> Pour cela, contactez notre [communauté d'utilisateurs](/links/community) ou nos [partenaires OVHcloud](/links/partner).
 >
 
 Nous allons vous expliquer les 4 étapes principales à réaliser pour protéger l'accès à un répertoire ou tout ou partie de votre site web :

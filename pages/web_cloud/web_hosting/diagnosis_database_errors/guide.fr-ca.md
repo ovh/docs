@@ -145,7 +145,7 @@ Pour optimiser votre base de données, suivez les instructions de notre guide «
 
 > [!warning]
 >
-> Si les conseils fournis sur l'optimisation de votre base de données ne suffisaient pas à débloquer l'accès à votre site, nous vous conseillons de contacter notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](/links/partner). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Si les conseils fournis sur l'optimisation de votre base de données ne suffisaient pas à débloquer l'accès à votre site, nous vous conseillons de contacter notre [communauté d'utilisateurs](/links/community) ou les [partenaires OVHcloud](/links/partner). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 ### Dépassements de la mémoire RAM
@@ -169,7 +169,7 @@ Vous pouvez également optimiser votre base de données en suivant les instructi
 
 > [!primary]
 >
-> Si vous rencontrez des difficultés à diminuer l'utilisation des ressources sur votre serveur de bases de données et que vous ne souhaitez pas les augmenter, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](/links/partner). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Si vous rencontrez des difficultés à diminuer l'utilisation des ressources sur votre serveur de bases de données et que vous ne souhaitez pas les augmenter, contactez notre [communauté d'utilisateurs](/links/community) ou les [partenaires OVHcloud](/links/partner). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 ### Erreurs d'import de bases de données
@@ -190,7 +190,7 @@ Vous pouvez également cocher la case `Vider la base de données actuelle`{.acti
 
 ![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
-Contactez si besoin notre [communauté d'utilisateurs](https://community.ovh.com) ou un [prestataire spécialisé](/links/partner) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
+Contactez si besoin notre [communauté d'utilisateurs](/links/community) ou un [prestataire spécialisé](/links/partner) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
 
 > [!faq]
 >
@@ -224,7 +224,7 @@ Pour résoudre cette anomalie, vous pouvez :
 
 - Augmenter la [quantité de mémoire vive (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerné dans la rubrique `Bases de données`{.action} de votre [espace client OVHcloud](/links/manager). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
 
-- Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](/links/partner). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
+- Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](/links/community) ou les [partenaires OVHcloud](/links/partner). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
 
 - [Optimisez votre base de données](/pages/web_cloud/web_cloud_databases/configure-database-server#optimiser-vos-bases-de-donnees) puis répétez les opérations d'export / import.
 
@@ -258,7 +258,7 @@ Dans cette situation, vous devrez [optimiser vos bases de données](/pages/web_c
 
 > [!warning]
 >
-> Pour toute question sur les manipulations à réaliser afin de réduire le nombre de connexions actives sur votre base de données, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](/links/partner). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Pour toute question sur les manipulations à réaliser afin de réduire le nombre de connexions actives sur votre base de données, contactez notre [communauté d'utilisateurs](/links/community) ou les [partenaires OVHcloud](/links/partner). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 #### « Name or service not known »
@@ -294,4 +294,4 @@ Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accè
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

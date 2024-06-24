@@ -111,7 +111,7 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 >
 > W takiej sytuacji można wykonać kopię zapasową danych pojedynczej strony WWW za pomocą [skryptu PHP lub komendy SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> W przypadku pytań dotyczących wymaganych czynności skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/) lub jednym z [partnerów](/links/partner).<br>
+> W przypadku pytań dotyczących wymaganych czynności skontaktuj się z [społecznością OVHcloud](/links/community) lub jednym z [partnerów](/links/partner).<br>
 > Nie będziemy w stanie udzielić Ci pomocy w tej sprawie.
 >
 
@@ -157,7 +157,7 @@ W takiej sytuacji [zaloguj się przez FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 > [!primary]
 >
-> Jeśli masz pytania dotyczące usuwania danych, aby zmniejszyć ilość danych przechowywanych na Twoim hostingu, skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub z [partnerami OVHcloud](/links/partner).<br>
+> Jeśli masz pytania dotyczące usuwania danych, aby zmniejszyć ilość danych przechowywanych na Twoim hostingu, skontaktuj się z [społecznością użytkowników](/links/community) lub z [partnerami OVHcloud](/links/partner).<br>
 > Pomoc OVHcloud nie jest upoważniona do udzielania wsparcia w tym zakresie.
 >
 
@@ -209,7 +209,7 @@ Jeśli nie dysponujesz innymi bazami danych i nie chcesz zamówić pakietu dodat
 >
 > **Usunięcie elementów z bazy danych może spowodować przerwę w działaniu witryny.**
 >
-> W przypadku dodatkowych pytań skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub z [partnerami OVHcloud](/links/partner).<br>
+> W przypadku dodatkowych pytań skontaktuj się z [społecznością użytkowników](/links/community) lub z [partnerami OVHcloud](/links/partner).<br>
 > Nie będziemy w stanie udzielić Ci pomocy w tej sprawie.
 >
 

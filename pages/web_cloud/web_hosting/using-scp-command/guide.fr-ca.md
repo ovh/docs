@@ -32,7 +32,7 @@ Il permet, depuis un terminal et à l'aide d'une commande Linux, de copier un fi
 
 ## En pratique
 
-Ce guide vous détaille de manière non exhaustive des fonctionnalités disponibles avec la commande `scp`. N'hésitez pas à échanger avec notre communauté d'utilisateurs sur <https://community.ovh.com/> si vous souhaitez approfondir vos connaissances sur cette commande.
+Ce guide vous détaille de manière non exhaustive des fonctionnalités disponibles avec la commande `scp`. N'hésitez pas à échanger avec notre [communauté d'utilisateurs](/links/community) si vous souhaitez approfondir vos connaissances sur cette commande.
 
 ### Étape 1 - Récupérer les accès SSH de votre hébergement web
 
@@ -141,4 +141,4 @@ Pour vérifier que du contenu présent sur votre hébergement web a bien été c
  
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
  
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

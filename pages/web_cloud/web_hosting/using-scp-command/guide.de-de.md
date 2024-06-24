@@ -35,7 +35,7 @@ Es ermöglicht über ein Terminal mit einem Linux-Befehl das Kopieren von Dateie
 
 ## In der praktischen Anwendung
 
-In dieser Anleitung erfahren Sie, welche Funktionen mit dem Befehl `scp` verfügbar sind. Für genauere Informationen kontaktieren Sie unsere User Community auf <https://community.ovh.com/en/>.
+In dieser Anleitung erfahren Sie, welche Funktionen mit dem Befehl `scp` verfügbar sind. Für genauere Informationen kontaktieren Sie unsere [User Community](/links/community).
 
 ### Schritt 1: SSH-Zugang Ihres Webhostings
 

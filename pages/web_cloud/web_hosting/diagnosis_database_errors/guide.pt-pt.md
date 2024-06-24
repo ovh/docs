@@ -149,7 +149,7 @@ Para otimizar a sua base de dados, siga as instruções do nosso guia "[Configur
 
 > [!warning]
 >
-> Se os conselhos fornecidos sobre a otimização da sua base de dados não bastam para desbloquear o acesso ao seu website, aconselhamos que contacte a nossa [comunidade](https://community.ovh.com/en/) ou os [parceiros da OVHcloud](/links/partner). De facto, a OVHcloud não lhe poderá fornecer assistência.
+> Se os conselhos fornecidos sobre a otimização da sua base de dados não bastam para desbloquear o acesso ao seu website, aconselhamos que contacte a nossa [comunidade](/links/community) ou os [parceiros da OVHcloud](/links/partner). De facto, a OVHcloud não lhe poderá fornecer assistência.
 >
 
 ### Capacidade de RAM excedida
@@ -173,7 +173,7 @@ Também pode otimizar a sua base de dados seguindo as instruções do nosso guia
 
 > [!primary]
 >
-> Se encontrar dificuldades em diminuir a utilização dos recursos no seu servidor de bases de dados e não pretender aumentá-las, contacte a nossa [comunidade](https://community.ovh.com/en/) ou os [parceiros OVHcloud](/links/partner). De facto, a OVHcloud não lhe poderá fornecer assistência.
+> Se encontrar dificuldades em diminuir a utilização dos recursos no seu servidor de bases de dados e não pretender aumentá-las, contacte a nossa [comunidade](/links/community) ou os [parceiros OVHcloud](/links/partner). De facto, a OVHcloud não lhe poderá fornecer assistência.
 >
 
 ### Erros de importação de bases de dados
@@ -194,7 +194,7 @@ Também pode selecionar a casa `Limpar a base de dados atual`{.action} imediatam
 
 ![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
-Contacte, se necessário, a nossa [comunidade](https://community.ovh.com/en/) ou um [fornecedor especializado](/links/partner) sobre este assumpto. Não poderemos prestar-lhe assistência na correção desta anomalia.
+Contacte, se necessário, a nossa [comunidade](/links/community) ou um [fornecedor especializado](/links/partner) sobre este assumpto. Não poderemos prestar-lhe assistência na correção desta anomalia.
 
 > [!faq]
 >
@@ -228,7 +228,7 @@ Para resolver esta anomalia, pode:
 
 - Aumentar a [quantidade de memória viva (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#acompanhar-a-ram-consumida). Para isso, aceda ao [servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) afetado na rubrica `Bases de dados`{.action} do seu [Espaço Cliente OVHcloud](/links/manager). A seguir, clique no botão `...`{.action} na parte `RAM`, e `Alterar quantidade de RAM`{.action}.
 
-- Transferir a base de dados para várias operações em vez de uma (para qualquer questão relativa às operações a realizar, contacte a nossa [comunidade](https://community.ovh.com/en/) ou os [parceiros da OVHcloud](/links/partner). De facto, a OVHcloud não lhe poderá fornecer assistência).
+- Transferir a base de dados para várias operações em vez de uma (para qualquer questão relativa às operações a realizar, contacte a nossa [comunidade](/links/community) ou os [parceiros da OVHcloud](/links/partner). De facto, a OVHcloud não lhe poderá fornecer assistência).
 
 - [Otimize a sua base de dados](/pages/web_cloud/web_cloud_databases/configure-database-server#otimizar-as-bases-de-dados) e depois repita as operações de exportação/importação.
 
@@ -262,7 +262,7 @@ Nesta situação, deverá [otimizar as suas bases de dados](/pages/web_cloud/web
 
 > [!warning]
 >
-> Para qualquer questão relativa às operações a realizar para reduzir o número de ligações ativas na sua base de dados, contacte a nossa [comunidade](https://community.ovh.com/en/) ou os [parceiros da OVHcloud](/links/partner). De facto, a OVHcloud não lhe poderá fornecer assistência.
+> Para qualquer questão relativa às operações a realizar para reduzir o número de ligações ativas na sua base de dados, contacte a nossa [comunidade](/links/community) ou os [parceiros da OVHcloud](/links/partner). De facto, a OVHcloud não lhe poderá fornecer assistência.
 >
 
 ### "Name or service not known"
@@ -290,4 +290,4 @@ Verifique o nome do servidor a inscrever no seu [Área de Cliente OVHcloud](/lin
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

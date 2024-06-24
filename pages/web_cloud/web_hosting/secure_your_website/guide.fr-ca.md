@@ -9,7 +9,7 @@ updated: 2024-01-26
 Ce guide vous permet d’acquérir des connaissances fondamentales visant à assurer la disponibilité de vos services, à protéger l'intégrité de vos données et à sécuriser l'accès à vos solutions. Il concerne uniquement les sites Web hébergés sur les [solutions mutualisées OVHcloud](/links/web/hosting).
 
 Ce guide est organisé par étapes dans un ordre croissant de difficulté technique. La sécurité de votre site se mesurera à l'élément le concernant qui est le moins protégé. Nous vous préconisons donc de réaliser l'ensemble des actions décrites ici.<br/>
-Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre elles, n'hésitez pas à contacter la [communauté OVHcloud](https://community.ovh.com/) ou nos [partenaires](/links/partner).
+Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre elles, n'hésitez pas à contacter la [communauté OVHcloud](/links/community) ou nos [partenaires](/links/partner).
 
 **Découvrez comment sécuriser votre site Web.**
 
@@ -59,7 +59,7 @@ En cas de perte de vos identifiants et/ou d'indisponibilité de l'adresse e-mail
 Commencez par sauvegarder les données qui composent votre site (fichiers FTP **ET** base de données) en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/exporter-son-site-web). Importez-les sur votre poste ou sur un support externe, de type serveur NAS ou clé USB.
 
 Les logiciels de gestion de site Web (CMS) offrent aussi la possibilité d'installer des plugins de sauvegarde automatique.<br>
-Consultez les forums officiels de votre CMS préféré ou contactez la [communauté OVHcloud](https://community.ovh.com/) à ce sujet.
+Consultez les forums officiels de votre CMS préféré ou contactez la [communauté OVHcloud](/links/community) à ce sujet.
 
 ### Étape 4 - Apprendre à reconnaître les e-mails frauduleux
 
@@ -128,4 +128,4 @@ Le fichier « .htaccess » est un fichier de configuration (HTTP) Apache exécut
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

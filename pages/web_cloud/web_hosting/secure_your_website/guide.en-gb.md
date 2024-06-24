@@ -10,7 +10,7 @@ This guide will provide you with basic knowledge to ensure that your services ar
 
 The recommendations below are ordered by decreasing importance and increasing technical difficulty, which means that the first steps are the most essential. The security of your site will be measured by the element least protected. We therefore recommend carrying out all of the actions described in this guide. 
 
-However, if you experience any difficulties carrying out some of them, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](/links/partner).
+However, if you experience any difficulties carrying out some of them, please do not hesitate to contact the [OVHcloud community](/links/community) or our [partners](/links/partner).
 
 **This guide explains how to improve the security your website.**
 
@@ -60,7 +60,7 @@ In the event of your login details being lost and/or the primary email address f
 Start by backing up the data that makes up your website (FTP **AND** database files), following the instructions in this [guide](/pages/web_cloud/web_hosting/exporter-son-site-web). Import them on your desktop or on an external device, such as a NAS server or a USB drive.
 
 Website management software (CMS) also provides the ability to install automatic backup plugins.<br>
-Check the official forums for your favourite CMS or contact the [OVHcloud community](https://community.ovh.com/en/).
+Check the official forums for your favourite CMS or contact the [OVHcloud community](/links/community).
 
 ### Step 4 - Find out how to recognise fraudulent emails
 
