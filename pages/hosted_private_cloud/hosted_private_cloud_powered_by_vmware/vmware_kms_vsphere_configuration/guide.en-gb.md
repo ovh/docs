@@ -42,7 +42,7 @@ Once in the security section, go to the `Virtual Machine Encryption Key Manageme
 >> - When the page loads, click the padlock icon to the left of the URL in the address bar. This will display the certificate information.
 >> - In the certificate information, look for the section that relates to the *fingerprint*. This section can be named differently depending on the browser you are using.<br>
 >>
->> ![Cadena Navigateur](images/fingerprint_sha.png){.thumbnail}
+>> ![Cadena Navigateur](images/padlock_website.png){.thumbnail}
 >>
 >> ![Empreinte SHA Navigateur](images/fingerprint_sha.png){.thumbnail}
 >>
