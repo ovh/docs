@@ -356,7 +356,7 @@
             + [Enabling promiscuous mode on a Virtual Machine](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_carp)
             + [Changing the MTU size for machines reaching the OVHcloud Gateway SSL](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/recommended_mtu_for_machines_reaching_ovh_gw_ssl)
         + [Maintenance and monitoring](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring)
-            + [Maintaining VMware on OVHcloud maintenance operations](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_maintenance)
+            + [Maintaining VMware on OVHcloud maintenance operations](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_maintenance)
             + [Rescheduling a maintenance on your Hosted Private Cloud](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling)
             + [Taking a snapshot](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creer_un_snapshot)
             + [Creating an alert](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_an_alert)

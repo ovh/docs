@@ -1,60 +1,68 @@
------
-title: 'Maintaining VMware on OVHcloud maintenance operations' 
+---
+title: 'VMware on OVHcloud maintenance operations' 
 excerpt: 'Find out more about the operations carried out to ensure the reliability and performance of your Hosted Private Cloud VMware on OVHcloud equipment' 
-updated: 2023-06-21
+updated: 2024-06-24
+flag: hidden
+---
 
 > [!warning]
 > 
-> If you require training or technical assistance in implementing our solutions, please contact your Technical Account Manager or go to [this page](/links/professional-services) for a quote and request a custom analysis of your project from our Professional Services team experts.
+> If you require training or technical assistance in implementing our solutions, please contact your Technical Account Manager or visit [this page](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
 ## Objective
 
-**This guide provides clarification on the maintenance operations carried out by the OVHcloud teams.**
+**This guide will explain the maintenance operations carried out by the OVHcloud teams.**
 
-## In practice
+## Requirements
+
+- You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) infrastructure.
+- You have access to the [OVHcloud Control Panel](/links/manager) or the [API console for your services](https://eu.api.ovh.com/).
+
+## Instructions
 
 Maintenance operations at OVHcloud are a testament to in-house expertise. It has been improved over the years to guarantee the reliability and performance of the equipment.
 
-## Access Hosted Private Cloud operations
+### Access Hosted Private Cloud operations
 
-### From the OVHcloud Control Panel :
+Log in to your [OVHcloud Control Panel](/links/manager) with an administrator account, and click on the `Hosted Private Cloud`{.action} tab.
 
-To access your maintenance operations from the [OVHcloud Control Panel](/links/manager), please refer to the beginning of the guide: [In practice - Access scheduled maintenance operations on your Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
+Select your infrastructure under `VMware`{.action} then click on the `Operations`{.action} tab.
 
 ![Maintenance Operation](/pages/assets/screens/manager/hosted_private_cloud/VMware/private_cloud/pcc/Maintenance.png){.thumbnail}
 
-To find out which operations are in progress, or refresh previous operations, you can update this
-operation section of the control panel by clicking `Rafraîchir`{.action} : ![Maintenance Operation Refresh Button](/pages/assets/screens/manager/hosted_private_cloud/VMware/private_cloud/operation/Maintenance_refresh_button.png){.thumbnail}
+To see the operations in progress or refresh the old operations, use the `Refresh`{.action} button located in the top right-hand corner of the operations table.
 
-You can change the processing date of an operation in progress by clicking `...`{.action}, then `Modifier la date de traitement`{.action}.
+You can change the processing date of an operation in progress by clicking on the `...`{.action} button to the right of an operation, then on `Modify the processing date`{.action}.
 
-For more information on the options available for rescheduling a maintenance operation, see the
-guide: [How to reschedule a maintenance operation on your Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
+For more information on rescheduling a maintenance operation, please read our guide on [Rescheduling a maintenance operation on your Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
 
-You can also apply a progressive order filter to your operations, thanks to the action criterion slot under the h2 "Operation":
+You can also filter operations by status via the dropdown menu above the table on the left.
 
-![Maintenance Operation Filtre](/pages/assets/screens/manager/hosted_private_cloud/VMware/private_cloud/operation/Maintenance_operation_filtre.png){.thumbnail}
+![Maintenance Operation Filter](/pages/assets/screens/manager/hosted_private_cloud/VMware/private_cloud/operation/Maintenance-filter.png){.thumbnail}
 
-## Access to details of maintenance operations
+### Access to details of maintenance operations
 
-### From the OVHcloud Control Panel :
+#### Via the OVHcloud Control Panel
 
 The OVHcloud Control Panel operation section has 11 sections.
 
 Here is an example of an export of VMware Hosted Private Cloud Control Panel operations on OVHcloud:
 
 | Reference | Name | Type | Progress | Comment | Affected services | Created by | Created By | Processing | End | Updated |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|---|---|---|---|---|---|--|--|---|---|---|
 | 44XXXXXX | provisionVcsaSolo | Generic | Completed | Infrastructure management provisions for customer | Task: 44XXXXXX | Information unavailable | Information unavailable | May XX, 2023 6:37:51 p.m. | XX May 2023 6:37:XX | XX May 2023 6:37:58 PM |
-|  |  |  |  |  |  |  |  |  |  |  |
 
 An operation referencing ID is always added on each operation, along with an assigned name, type, progress, comment, service, and processing dates.
 
 Of course, for each OVHcloud service (Bare Metal Cloud, Public Cloud, etc.) these names and references may change.
 
-#### Via the OVHcloud API :
+#### Via the OVHcloud API
 
-Read the [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide to get familiar with using OVHcloud APIv6.
+> [!success]
+>
+> Read the [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide to get familiar with using OVHcloud APIv6.
+
+Run the following API call to get the list of operations:
 
 > [!api]
 > 
@@ -63,10 +71,10 @@ Read the [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/firs
 
 > **Parameters:**
 > 
-> serviceName : Your Dedicated Cloud reference, (pcc-XXX-XXX-XXX-XXX).
+> - `serviceName`: Your Dedicated Cloud reference in the form `pcc-XXX-XXX-XXX-XXX`.
 >
 
-For example, this return pattern may vary and be quite long depending on the size of your infrastructure :
+Return example (the return scheme may vary and be quite long depending on the size of your infrastructure):
 
 ``` shell
 ...
@@ -77,7 +85,7 @@ For example, this return pattern may vary and be quite long depending on the siz
 ...
 ```
 
-To get the details of each robot :
+To get the details of each robot, run the following API call:
 
 > [!api]
 >
@@ -86,12 +94,11 @@ To get the details of each robot :
 
 > **Parameters :**
 > 
-> serviceName : Your Dedicated Cloud reference, (pcc-XXX-XXX-XXX-XXX).
-> 
-> name : The name of the robot, (maintenanceUpdateAntivirusConfiguration).
+> - `serviceName`: Your Dedicated Cloud reference in the form `pcc-XXX-XXX-XXX-XXX`.
+> - `name`: The name of the robot, e.g. `maintenanceUpdateAntivirusConfiguration`.
 >
 
-``` Shell
+``` shell
 {
   "type": "task",
   "enabled": true,
@@ -104,17 +111,19 @@ To get the details of each robot :
 ## Details of Hosted Private Cloud maintenance operations
 
 | Maintenance name | Goal | Reason | Preventive instructions | Impact | Approximate duration | Frequency | Can be rescheduled? | Reference to technical documentation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| windowsUpdateOnPcc | Windows update on virtual machines in the control plane managed by OVHcloud. | Security update. | None | Maintenance performed only if Veeam and/or Zerto options are subscribed to Control Plane which is unavailable during the maintenance slot. | 00H30 for Veeam.  00H30 for Zerto. | Monthly. | Yes |  |
-| upgradeSwitch | Software upgrade - upgrades of the switches to the latest version validated by the OVHcloud network department. | OVHcloud Arista lifecycle.   Security patches. | Verifying the host is dual-attached. | Switch from ToR (on Top of Rack) A (with A) to ToR (on Top of Rack) B (switch B). | 01H30 | Based on the publisher lifecycle. | Yes |  |
-| maintenanceGenericUpgradePackages | Operating system upgrade on control plane virtual machines managed by OVHcloud. | OVHcloud Security Patches lifecycle. | None | Control plane unavailable\* (management) during maintenance windows. | 02H00 | Monthly (standard). | Yes |  |
-| maintenanceRenewAndDeploySslCertificate | Checking, ordering and renewing SSL certificates on control plane virtual machines managed by OVHcloud. | Renewal of SSL certificates before the expiry date. | None | Control plane unavailable\* (management) during the maintenance lead time\*. | 01H00 | Quarterly (typical). | Yes |  |
-| maintenanceUpgradeHosts | ESXi software upgrade to the latest version offered by OVHcloud. This maintenance can install minor or major versions. | OVHcloud lifecycle.        Security patches. | During this maintenance, all hosts can be put into maintenance mode and all VMs can be evacuated automatically.   The customer must ensure that none of the following configurations prevent this action: No ISO media or mounted devices Anti-affinity rules Any other element that may prevent a virtual machine from being moved Third-party products are compliant and compatible with the new ESXi version. | Once hosts are in maintenance mode: all VMs are automatically evacuated with vMotion Hosts are rebooted  | 00H30 per host. | Based on the publisher lifecycle. | Yes |  |
-| maintenanceUpgradeVcenter | Upgrade (upgrade) the vCenter Server Appliance software to the latest version offered by OVHcloud. This maintenance can install minor or major versions. Option upgrades can also be triggered (Veeam Managed, zerto) to ensure the compatibility matrix is consistent. | OVHcloud lifecycle.        Security patches. | Third-party software is compliant with the new version of VCSA. | Control Plane unavailable\* (management) during maintenance windows. | 02H00 (May vary depending on number of users and time required to apply permissions). | Based on the publisher lifecycle. | Yes |  |
-| maintenanceUpgradeVrops | Upgrade (upgrade) of Aria Operations virtual machines (previously called vROps) to the latest version offered by OVHcloud. | OVHcloud Arista lifecycle.   Security patches. | None | vROps is unavailable during the maintenance timeout. | 01H30 | Based on the publisher lifecycle. | Yes |  |
-| maintenanceUpgradeNsxt | Upgrade from the NSX-T version to the latest version offered by OVHcloud. | OVHcloud lifecycle from VMware Security upgrade. | Sufficient resources (compute and storage) available on the customer’s infrastructure to host an NSX Edge (see prerequisites: [official VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/4.1/installation/GUID-22F87CA8-01A9-4F2E-B7DB-9350CA60EA4E.html) {.external} ). Resilience is ensured on the customer’s infrastructure to host the NSX-T Edge Gateways. | The NSX-T control plane is not available during the upgrade operation.  Edge vMotion can experience a slight flow disruption (reconnection required for statefull applications). | 02H30 | Based on the publisher lifecycle. | Yes |  |
-| maintenanceUpgradeVeeamManaged | Upgrade of the Veeam control plane virtual machines managed by OVHcloud (backup and replication virtual servers, backup proxy) to the latest version offered by OVHcloud. | Veeam OVHcloud lifecycle. | None | Restore and backup operations cannot be performed during maintenance. | 01H00 | Based on the publisher lifecycle. | Yes |  |
-| maintenanceUpgradeZvm | Update of Zerto virtual machines (Zerto Virtual Manager, VRA) to the latest version offered by OVHcloud. | Zerto lifecycle of OVHcloud. | None | The Zerto console is not available during maintenance, not all the associated zerto operations can be performed (failover, management of VPG...) / VRA is redeployed so that replication is interrupted and the RPO increases momentarily. | 01H30 | Based on the publisher lifecycle. | Yes |  |
+|---|---|---|---|---|---|---|---|
+| windowsUpdateOnPcc | Windows update on virtual machines in the control plane managed by OVHcloud. | Security update. | None | Maintenance performed only if Veeam and/or Zerto options are subscribed to Control Plane which is unavailable during the maintenance slot. | 00H30 for Veeam. 00H30 for Zerto. | Monthly. | Yes |
+| upgradeSwitch | Software upgrade - upgrades of the switches to the latest version validated by the OVHcloud network department. | OVHcloud Arista lifecycle Security patches. | Verifying the host is dual-attached. | Switch from ToR (on Top of Rack) A (with A) to ToR (on Top of Rack) B (switch B). | 01H30 | Based on the publisher lifecycle. | Yes |
+| maintenanceGenericUpgradePackages | Operating system upgrade on control plane virtual machines managed by OVHcloud. | OVHcloud Security Patches lifecycle. | None | Control plane unavailable\* (management) during maintenance windows. | 02H00 | Monthly (standard). | Yes |
+| maintenanceRenewAndDeploySslCertificate | Checking, ordering and renewing SSL certificates on control plane virtual machines managed by OVHcloud. | Renewal of SSL certificates before the expiry date. | None | Control plane unavailable\* (management) during the maintenance lead time\*. | 01H00 | Quarterly (typical). | Yes |
+| maintenanceUpgradeHosts | ESXi software upgrade to the latest version offered by OVHcloud. This maintenance can install minor or major versions. | OVHcloud lifecycle. Security patches. | During this maintenance, all hosts can be put into maintenance mode and all VMs can be evacuated automatically. The customer must ensure that none of the following configurations prevent this action: No ISO media or mounted devices Anti-affinity rules Any other element that may prevent a virtual machine from being moved Third-party products are compliant and compatible with the new ESXi version. | Once hosts are in maintenance mode: all VMs are automatically evacuated with vMotion Hosts are rebooted  | 00H30 per host. | Based on the publisher lifecycle. | Yes |
+| maintenanceUpgradeVcenter | Upgrade (upgrade) the vCenter Server Appliance software to the latest version offered by OVHcloud. This maintenance can install minor or major versions. Option upgrades can also be triggered (Veeam Managed, zerto) to ensure the compatibility matrix is consistent. | OVHcloud lifecycle. Security patches. | Third-party software is compliant with the new version of VCSA. | Control Plane unavailable\* (management) during maintenance windows. | 02H00 (May vary depending on number of users and time required to apply permissions). | Based on the publisher lifecycle. | Yes |
+| maintenanceUpgradeVrops | Upgrade (upgrade) of Aria Operations virtual machines (previously called vROps) to the latest version offered by OVHcloud. | OVHcloud Arista lifecycle.   Security patches. | None | vROps is unavailable during the maintenance timeout. | 01H30 | Based on the publisher lifecycle. | Yes |
+| maintenanceUpgradeNsxt | Upgrade from the NSX-T version to the latest version offered by OVHcloud. | OVHcloud lifecycle from VMware Security upgrade. | Sufficient resources (compute and storage) available on the customer’s infrastructure to host an NSX Edge (see prerequisites: [official VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/4.1/installation/GUID-22F87CA8-01A9-4F2E-B7DB-9350CA60EA4E.html) {.external}). Resilience is ensured on the customer’s infrastructure to host the NSX-T Edge Gateways. | The NSX-T control plane is not available during the upgrade operation.  Edge vMotion can experience a slight flow disruption (reconnection required for statefull applications). | 02H30 | Based on the publisher lifecycle. | Yes |
+| maintenanceUpgradeVeeamManaged | Upgrade of the Veeam control plane virtual machines managed by OVHcloud (backup and replication virtual servers, backup proxy) to the latest version offered by OVHcloud. | Veeam OVHcloud lifecycle. | None | Restore and backup operations cannot be performed during maintenance. | 01H00 | Based on the publisher lifecycle. | Yes |
+| maintenanceUpgradeZvm | Update of Zerto virtual machines (Zerto Virtual Manager, VRA) to the latest version offered by OVHcloud. | Zerto lifecycle of OVHcloud. | None | The Zerto console is not available during maintenance, not all the associated zerto operations can be performed (failover, management of VPG...) / VRA is redeployed so that replication is interrupted and the RPO increases momentarily. | 01H30 | Based on the publisher lifecycle. | Yes |
+
+\*: see explanations below.
 
 ## Glossary
 
@@ -130,14 +139,14 @@ This represents the following products/options in Hosted Private Cloud VMware on
 
 Any other tier products that you can use that require **VCSA** will also be affected.
 
-## Let us help you with the control plane
+## Control plane explanations
 
 The control plane is the part of the system responsible for managing and controlling resources in a virtualized environment. Specifically, the control plane is the software layer that manages operations and decisions related to the configuration, resource management, tracking, and orchestration of the virtual machines and associated infrastructure.
 
 - **Resource management**: It supports the configuration and management of physical (servers, storage, networking) and virtual (virtual machines) resources.
 - **Orchestration**: Coordinates operations between different infrastructure components, making it easy to deploy, migrate and manage virtual machines.
 - **Monitoring**: Collects performance, health and resource usage data for real-time monitoring and reporting.
-- **Security** - Manages security policies, including authentication, authorization, and access control, ensuring the security of virtualized resources.
+- **Security**: Manages security policies, including authentication, authorization, and access control, ensuring the security of virtualized resources.
 - **Automation**: Supports the automation of repetitive tasks, allowing administrators to define automated workflows and policies.
 
 In short, the control plane is the software layer that provides centralized management, coordination, and control.
@@ -146,4 +155,4 @@ In short, the control plane is the software layer that provides centralized mana
 
 For more information on rescheduling a maintenance operation, please read our guide: [Rescheduling a maintenance operation on your VMware on OVHcloud Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
 
-Chat on the Discord dedicated channel: <https://discord.gg/ovhcloud> or join our community of users on [this link](/links/community).
+Chat on the Discord dedicated channel: <https://discord.gg/ovhcloud> or join our [community of users](/links/community).
