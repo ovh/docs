@@ -98,4 +98,4 @@ Transfer jest darmowy. Data wygaśnięcia domeny po jego przeniesieniu będzie t
 
 [Transfer domeny do OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).
