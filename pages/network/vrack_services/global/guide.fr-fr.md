@@ -57,35 +57,34 @@ Ces 3 étapes sont réalisables soit via l'[API OVHcloud](#api), soit via [l'esp
 
 ### Via l'espace client OVHcloud <a name="manager"></a>
 
-<details>
-<summary> <b>Activation et configuration de vRack Services</b> </summary>
-<blockquote>
+
+/// details | Activation et configuration de vRack Services
 
 L'activation et le configuration de vRack Services se déroule en lui attribuant un nom et une région.
 
 vRack Services est un service régional. Vous devez donc choisir dans quelle région vous comptez l'utiliser. Pour bénéficier du Service Endpoint, vous devez sélectionner la région correspondante à votre service managé OVHcloud.
 
-<img src="/images/03-VRS-v4.png" alt="01"/>
+![Etape 01](images/03-VRS-v2.png){.thumbnail}
 <br/><br/>
 
 Pour activer vRack Services, vous devez avoir un vRack. Si vous n'en avez pas à ce stade, il est possible d'en commander un (via le bouton `Commander`{.action} dans l'espace client).
 Vous n'êtes pas obligé d'un commander un à ce stade, vous pouvez le faire plus tard et revenir sur le processus de création du vRack Service.
 
-<img src="/images/04-VRS-v2.png" alt="02"/>
+![Etape 02](images/04-VRS-v2.png){.thumbnail}
 <br/><br/>
 
 Une fois la demande d'activation de vRack Services effectuée, vous êtes redirigé sur la liste des vRack Services. Il est possible d'associer un vRack à un vRack Services directement à partir de cette page.
 
-<img src="/images/05-VRS-v2.png" alt="03"/>
+![Etape 03](images/05-VRS-v2.png){.thumbnail}
 <br/><br/>
 
 L'association à un vRack est simple, il suffit de sélectionner le vRack souhaité dans la liste proposée ici.
 
-<img src="/images/06-VRS-v2.png" alt="04"/>
+![Etape 04](images/06-VRS-v2.png){.thumbnail}
 <br/><br/>
-
-</blockquote>
-</details>
+ 
+ 
+///
 
 
 #### Création d'un sous-réseau
