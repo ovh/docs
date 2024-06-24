@@ -9,6 +9,11 @@ updated: 2022-12-20
 > Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This renaming has no effect on its technical features.
 >
 
+> [!primary]
+>
+> We introduced in 2024 Additionnal IPv6 that you can configure with vRack, please follow this guide [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838) in order to configure it.
+>
+
 ## Objective
 
 Additional IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.
@@ -20,7 +25,7 @@ With this technology, you can switch IP addresses from one solution to another i
 >
 > Migration only works for whole blocks, it is not possible to migrate individual IPs within a block.
 
-**This guide explains how to move an Additional IP in your OVHcloud Control Panel or via the OVHcloud API.**
+**This guide explains how to move an Additional IP(v4) in your OVHcloud Control Panel or via the OVHcloud API.**
 
 ## Requirements
 
