@@ -1,6 +1,6 @@
 ---
-title: Como migrar um site e e-mails para a OVHcloud?
-excerpt: "Saiba como migrar o seu website, e-mails e o seu domínio para a OVHcloud sem interromper os serviços"
+title: "Migrar o seu website e os seus serviços associados para a OVHcloud"
+excerpt: "Descubra como migrar o seu website, o seu nome de domínio, a sua base de dados e os seus e-mails para a OVHcloud sem interrupção de serviços"
 updated: 2024-06-24
 ---
 
@@ -10,7 +10,7 @@ updated: 2024-06-24
 
 ## Objetivo
 
-Este guia apresenta-lhe as diferentes ações a realizar para migrar o conjunto do seu website, do seu nome de domínio e dos seus endereços de e-mail para a OVHcloud, sem interrupção de serviços.
+Este guia apresenta-lhe as diferentes ações a realizar para migrar o conjunto do seu website, as suas pastas, o seu nome de domínio, a sua base de dados e os seus endereços de e-mail para a OVHcloud, sem interrupção de serviços.
 
 > [!warning]
 >

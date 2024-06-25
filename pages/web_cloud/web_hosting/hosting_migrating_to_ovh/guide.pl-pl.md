@@ -1,6 +1,6 @@
 ---
-title: Przeniesienie strony WWW i kont e-mail do OVHcloud
-excerpt: "Dowiedz się, jak migrować Twoją stronę WWW, konta e-mail i domenę do OVHcloud bez przerwy w dostępności usług"
+title: "Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud"
+excerpt: "Dowiedz się, jak migrować stronę WWW, nazwę domeny, bazę danych oraz konta e-mail do OVHcloud bez przerwy w dostępności usług"
 updated: 2024-06-24
 ---
 
@@ -10,7 +10,7 @@ updated: 2024-06-24
 
 ## Wprowadzenie
 
-Niniejszy przewodnik prezentuje działania, które należy przeprowadzić, aby przenieść całą stronę WWW, domenę i konta e-mail do OVHcloud bez przerwy w dostępności usług.
+Niniejszy przewodnik prezentuje różne działania, jakie należy przeprowadzić, aby bez przerwy w dostępie do usług przenieść całą stronę WWW, foldery, nazwę domeny, bazę danych oraz konta e-mail do OVHcloud.
 
 > [!warning]
 >

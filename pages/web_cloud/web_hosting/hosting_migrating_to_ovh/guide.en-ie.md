@@ -1,12 +1,12 @@
 ---
-title: Migrating your website and emails to OVH
-excerpt: Find out how to migrate your website, emails and domain name to OVHcloud without any service interruptions
+title: "Migrating your website and associated services to OVHcloud"
+excerpt: "Find out how to migrate your website, domain name, database and emails to OVHcloud without any service interruptions"
 updated: 2024-06-24
 ---
 
 ## Objective
 
-This guide will outline the steps you need to take to migrate your entire website, domain name and email addresses to OVHcloud, without any service interruptions.
+This guide will outline the steps you need to take to migrate your entire website, folders, domain name, database, and email addresses to OVHcloud, without any service interruptions.
 
 > [!warning]
 >
