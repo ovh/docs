@@ -1,7 +1,7 @@
 ---
 title: "VMware log forwading to an Logs Data Plateform stream" 
 excerpt: "Find out how to enable Hosted Private Cloud VMware on OVHcloud log forwarding to a Logs Data Platform stream" 
-updated: 2024-06-21
+updated: 2024-06-25
 ---
 
 ## Objective
@@ -105,11 +105,11 @@ To retrieve the **streamId** of your LDP account, follow our guide: Getting [sta
 >
 > **Settings:**
 > 
-> **serviceName**: Service name of your VMware Hosted Private Cloud on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
+> - **serviceName**: Service name of your VMware Hosted Private Cloud on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
 > 
-> **kind**: Name of the subscription log type, ["esxi","nsxtManager","vcsa","nsxtEdge"].
+> - **kind**: Name of the subscription log type, ["esxi","nsxtManager","vcsa","nsxtEdge"].
 > 
-> **streamId**: The destination stream identifier, (uuid:"ggb8d894-c491-433e-9c87-50a8bf6fe773").
+> - **streamId**: The destination stream identifier, (uuid:"ggb8d894-c491-433e-9c87-50a8bf6fe773").
 >
 
 Example:
@@ -155,9 +155,9 @@ Please use the following API calls to list subscriptions to your Hosted Private 
 > 
 > **Settings:**
 > 
-> **serviceName**: Service name of your VMware Hosted Private Cloud on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
+> - **serviceName**: Service name of your VMware Hosted Private Cloud on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
 > 
-> **kind**: Name of the Hosted Private Cloud subscription log type ("esxi").
+> - **kind**: Name of the Hosted Private Cloud subscription log type ("esxi").
 >
 
 Return example:
@@ -184,9 +184,9 @@ Disable your Hosted Private Cloud Log Data Platform subscription:
 > 
 > **Settings:**
 > 
-> **serviceName**: Service name of your VMware Hosted Private Cloud on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
+> - **serviceName**: Service name of your VMware Hosted Private Cloud on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
 > 
-> **subscriptionId**: The log type name of the subscription ("esxi").
+> - **subscriptionId**: The log type name of the subscription ("esxi").
 >
 
 You will get the **operationId**, which is the identifier that confirms that the deactivation
@@ -212,4 +212,4 @@ You can follow these guides to take advantage of the Hosted Private Cloud Logs D
 
 If you require training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/){.external} to get a quote and request a custom analysis of your project from our Professional Services team.
 
-Join our community of users on <https://community.ovh.com/>.
+Join our [community of users](/links/community).

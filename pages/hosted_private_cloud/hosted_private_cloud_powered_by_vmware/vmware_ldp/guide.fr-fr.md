@@ -1,7 +1,7 @@
 ---
 title: "Transfert des logs VMware vers un stream Logs Data Platform"
 excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-06-10
+updated: 2024-06-25
 ---
 
 ## Objectif
@@ -102,11 +102,11 @@ Pour récupérer le **streamId** de votre compte LDP, suivez le guide : [Premier
 >
 > **Paramètres :**
 >
-> **serviceName** : Nom de service de votre Hosted Private Cloud VMware on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
+> - **serviceName** : Nom de service de votre Hosted Private Cloud VMware on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
 > 
-> **kind** : Nom du type de journal de l'abonnement, ["esxi","nsxtManager","vcsa","nsxtEdge"].
+> - **kind** : Nom du type de journal de l'abonnement, ["esxi","nsxtManager","vcsa","nsxtEdge"].
 >
-> **streamId** : Identifiant du flux (stream) de destination, (uuid :"ggb8d894-c491-433e-9c87-50a8bf6fe773").
+> - **streamId** : Identifiant du flux (stream) de destination, (uuid :"ggb8d894-c491-433e-9c87-50a8bf6fe773").
 >
 
 Exemple :
@@ -152,9 +152,9 @@ Veuillez utiliser les appels API suivants pour établir la liste des abonnements
 >
 > **Paramètres :**
 >
-> **serviceName** : Nom de service de votre Hosted Private Cloud VMware on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
+> - **serviceName** : Nom de service de votre Hosted Private Cloud VMware on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
 >
-> **kind** : Nom du type de journal de l'abonnement Hosted Private Cloud ("esxi").
+> - **kind** : Nom du type de journal de l'abonnement Hosted Private Cloud ("esxi").
 >
 
 Exemple de retour :
@@ -180,9 +180,9 @@ Désactiver votre abonnement de souscription Hosted Private Cloud Log Data Platf
 >
 > **Paramètres :**
 >
-> **serviceName** : Nom de service de votre Hosted Private Cloud VMware on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
+> - **serviceName** : Nom de service de votre Hosted Private Cloud VMware on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
 >
-> **subscriptionId** : Nom de type de journal de l'abonnement ("esxi").
+> - **subscriptionId** : Nom de type de journal de l'abonnement ("esxi").
 >
 
 Vous obtiendrez l'**operationId**, qui est l'identifiant qui permet de confirmer que l'opération de désactivation s'est bien réalisé.
@@ -206,4 +206,4 @@ Vous pouvez suivre ces guides pour profiter des fonctionnalités Logs Data Platf
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/){.external} pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d’utilisateurs](/links/community.
