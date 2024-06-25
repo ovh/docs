@@ -72,25 +72,33 @@ Once the payment has been confirmed, the hosting plan installation will begin. A
 
 ### Step 2: Create and preconfigure a DNS zone for your domain name at OVHcloud <a name="step2"></a>
 
+If your domain is hosted by another service provider and you would like to transfer it to OVHcloud, you must first create and pre-configure a DNS zone before initiating the transfer, in order to avoid any service interruptions.
+
 After your hosting service is installed, log in to your [OVHcloud Control Panel](/links/manager) to create a DNS zone for your domain name. Do not use "**www**" when doing this. You can refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
-Once you have created a DNS zone, you can start configuring it with the help of our guide: [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit). Add the following records if they do not exist:
+Once you have created a DNS zone, you can manage it using our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
-- Your domain name without "www" as record type "MX", to the target: `mx1.mail.ovh.ca.`
-- Your domain name without "www" as record type "MX", to the target: `mx2.mail.ovh.ca.`
-- Your domain name without "www" as record type "MX", to the target: `mx3.mail.ovh.ca.`
-- Your domain name without "www" as record type "A", with the IP address of your OVHcloud hosting as target. To retrieve the correct IP address, please refer to our guide listing the [IP addresses of the shared hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- Your domain name **with** "www" as record type "CNAME", with your domain name (without "www") as target.
+If they are not present, enter the following information:
 
-**Example**: For the domain name "domain.tld", the result should be displayed as in the following image:
+**Example** (for the domain name "domain.tld"):
+
+|Domain|Record Type|Priority|Target|
+|---|---|---|---|
+|domain.tld.|MX|1|mx1.mail.ovh.ca.|
+|domain.tld.|MX|5|mx2.mail.ovh.ca.|
+|domain.tld.|MX|100|mx3.mail.ovh.ca.|
+|www.domain.tld.|CNAME|-|domain.tld.|
+|domain.tld.|A|-|<target_IP_address>|
+
+To retrieve the correct target IP address for your OVHcloud hosting plan, please refer to our guide listing the [IP addresses of the different shared hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+
+**Example**: For the domain name "domain.tld", the rendering of your domain name records must be as follows:
 
 ![hosting](images/dashboard-mx-a-cname-ca.png){.thumbnail}
 
 > [!success]
 >
-> Note the two target values of the two NS entries at the top of your zone. They will be used in [step 9](#step9) of this guide.
->
-> These values correspond to the DNS servers hosting the DNS zone for your domain name.
+> Note the two target values with record type "NS". These values, of type `dnsXX.ovh.ca` and `nsXX.ovh.ca`, correspond to the DNS servers associated with this DNS zone for your domain name. They will be used in [step 9](#step9) of this guide.
 >
 
 ### Step 3: Retrieve a full backup of your website <a name="step3"></a>

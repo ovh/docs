@@ -76,25 +76,33 @@ Depois de validar o pagamento, a instalação do alojamento vai iniciar. Um e-ma
 
 ### Etapa 2 : criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud <a name="step2"></a>
 
+Se o seu domínio se encontrar noutro prestador e pretender transferi-lo para a OVHcloud, deve num primeiro tempo criar e pré-configurar uma zona DNS antes de iniciar a transferência, a fim de evitar uma interrupção de serviços.
+
 Quando o alojamento estiver criado, aceda à [Área de Cliente OVHcloud](/links/manager) e crie uma zona DNS para o seu domínio **sem "www"**. Para mais informações, consulte o nosso manual sobre a [criação de uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
-Depois de criar a zona DNS, aceda à secção de gestão usando o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)". Se não estiverem presentes, introduza as seguintes entradas:
+Depois de criar a zona DNS, aceda à sua gestão através do nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
-- O seu domínio sem os "www", para o destino do tipo "MX": mx1.mail.ovh.net ".
-- O seu domínio sem os "www", para o destino do tipo "MX": mx2.mail.ovh.net ".
-- O seu domínio sem os "www", para o destino do tipo "MX": mx3.mail.ovh.net ".
-- O seu nome de domínio sem "www", para o endereço IP de destino do tipo "A" do seu alojamento OVHcloud. Para obter o endereço IP correto, consulte o nosso guia que lista os [endereços IP dos diferentes clusters de alojamento partilhado](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- O seu domínio **com** os "www", para o seu domínio sem os "www", com um registo do tipo "CNAME".
+Se não estiverem presentes, preencha as seguintes entradas:
 
-**Exemplo**: Para o nome de domínio "domain.tld", o resultado deve ser o seguinte:
+**Exemplo** (para o nome de domínio "domain.tld"):
+
+|Domínio|Tipo de registo|Prioridade|Destino|
+|---|---|---|---|
+|domain.tld.|MX|1|mx1.mail.ovh.net.|
+|domain.tld.|MX|5|mx2.mail.ovh.net.|
+|domain.tld.|MX|100|mx3.mail.ovh.net.|
+|www.domain.tld.|CNAME|-|domain.tld.|
+|domain.tld.|A|-|<endereço_IP_de_destino>|
+
+Para obter o endereço IP certo de destino do seu alojamento OVHcloud, consulte o guia que apresenta os [endereços IP dos diferentes clusters de alojamento partilhados](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+
+**Exemplo** : Para o nome de domínio "domain.tld", a rendição das entradas do seu nome de domínio deve ser a seguinte:
 
 ![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
-> Note os dois valores-alvo das duas primeiras entradas do tipo "NS". Elas servirão para a [etapa 9](#step9) deste manual.
->
-> Estes valores correspondem aos servidores DNS associados a esta zona DNS para o seu domínio.
+> Anote os dois valores alvo que têm como tipo de registo "NS". Estes valores, do tipo `dnsXX.ovh.net` e `nsXX.ovh.net` (ou `dns200.anycast.me` e `ns200.anycast.me`), correspondem aos servidores DNS associados a esta zona DNS para o seu domínio. Estas instruções serão utilizadas na [etapa 9](#step9) deste manual.
 >
 
 ### Etapa 3 : recuperar um backup completo do seu website <a name="step3"></a>

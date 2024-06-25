@@ -76,25 +76,33 @@ Una volta confermato il pagamento, l'installazione dell'hosting verrà avviata. 
 
 ### Step 2: creare e preconfigurare una zona DNS per il tuo dominio presso OVHcloud <a name="step2"></a>
 
+Se il dominio si trova presso un altro provider e vuoi trasferirlo in OVHcloud, è necessario creare e preconfigurare una zona DNS prima di avviare il trasferimento, per evitare un’interruzione del servizio.
+
 Una volta creato il tuo hosting, accedi allo [Spazio Cliente OVHcloud](/links/manager) e crea una zona DNS per il tuo dominio **senza le "www"**. Per maggiori informazioni, consulta la guida sulla [creazione di una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
-Una volta creata la zona DNS, consulta la guida [Modificare una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit). Se non sono presenti, inserisci le seguenti voci:
+Una volta creata la zona DNS, consulta la nostra guida "[Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
-- Il tuo dominio senza "www", verso la destinazione di tipo "MX": "mx1.mail.ovh.net.".
-- Il tuo dominio senza "www", verso la destinazione di tipo "MX": "mx2.mail.ovh.net.".
-- Il tuo dominio senza "www", verso la destinazione di tipo "MX": "mx3.mail.ovh.net.".
-- Il dominio senza "www", verso l'indirizzo IP di destinazione di tipo "A" del tuo hosting OVHcloud Per recuperare l'indirizzo IP corretto, consulta la guida che elenca gli [indirizzi IP dei diversi cluster di hosting condivisi](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- Il tuo dominio **con** i "www", verso il tuo dominio senza "www", con un record di tipo "CNAME".
+Se non sono presenti, inserisci queste informazioni:
 
-**Esempio**: Per il dominio "domain.tld", il rendering deve essere il seguente:
+**Esempio** (per il dominio "domain.tld"):
+
+|Dominio|Tipo di record|Priorità|Destinazione|
+|---|---|---|---|
+|domain.tld.|MX|1|mx1.mail.ovh.net.|
+|domain.tld.|MX|5|mx2.mail.ovh.net.|
+|domain.tld.|MX|100|mx3.mail.ovh.net.|
+|www.domain.tld.|CNAME|-|domain.tld.|
+|domain.tld.|A|-|<indirizzo_IP_di_destinazione>|
+
+Per recuperare l’indirizzo IP di destinazione corretto per il tuo hosting OVHcloud, consulta la nostra guida che elenca gli [indirizzi IP dei diversi cluster di hosting condivisi](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+
+**Esempio**: per il dominio "domain.tld", il rendering delle voci del dominio deve essere il seguente:
 
 ![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
-> Annotare i due valori di riferimento dei primi due record di tipo "NS". e verranno utilizzati nello [step 9](#step9) di questa guida.
->
-> Questi valori corrispondono ai server DNS associati a questa zona DNS per il tuo dominio.
+> Prendere nota dei due valori di destinazione con tipo di record "NS". Questi valori, di tipo `dnsXX.ovh.net` e `nsXX.ovh.net` (o `dns200.anycast.me` e `ns200.anycast.me`), corrispondono ai server DNS associati a questa zona DNS per il tuo dominio. e saranno utilizzati nello [step 9](#step9) di questa guida.
 >
 
 ### Step 3: recuperare un backup completo del tuo sito Web <a name="step3"></a>

@@ -76,25 +76,35 @@ Además de la solución MX Plan, OVHcloud ofrece otras soluciones de correo. Por
 
 ### Etapa 2: crear y preconfigurar una zona DNS para su dominio en OVHcloud <a name="step2"></a>
 
+Si su dominio está alojado en otro proveedor y desea transferirlo a OVHcloud, deberá crear y preconfigurar previamente una zona DNS antes de iniciar la transferencia para evitar una interrupción del servicio.
+
+Si su dominio está alojado en otro proveedor y desea transferirlo a OVHcloud, deberá crear y preconfigurar previamente una zona DNS antes de iniciar la transferencia para evitar una interrupción del servicio.
+
 Una vez creado el alojamiento, conéctese a su [área de cliente de OVHcloud](/links/manager) y cree una zona DNS para su dominio **sin los "www"**. Si lo necesita, consulte nuestra guía sobre la [creación de una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
-Una vez que haya creado la zona DNS, acceda a su gestión en la guía [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit). Si no están presentes, introduzca las siguientes entradas:
+Una vez creada la zona DNS, acceda a su gestión utilizando la guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
-- Su nombre de dominio sin los "www", hacia el destino de tipo "MX" : "mx1.mail.ovh.net.".
-- Su nombre de dominio sin los "www", hacia el destino de tipo "MX" : "mx2.mail.ovh.net.".
-- Su nombre de dominio sin los "www", hacia el destino de tipo "MX" : "mx3.mail.ovh.net.".
-- Su nombre de dominio sin los "www", hacia la dirección IP de destino de tipo "A" de su alojamiento OVHcloud. Para obtener la dirección IP correcta, consulte nuestra guía relativa a las [direcciones IP de los distintos clusters de alojamiento compartido](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- Su nombre de dominio **con** los "www", hacia su nombre de dominio sin los "www", mediante una entrada de tipo "CNAME".
+Si no están presentes, introduzca los siguientes datos:
 
-**Ejemplo**: Para el nombre de dominio "domain.tld", el renderizado debe ser el siguiente:
+**Ejemplo** (para el nombre de dominio "domain.tld"):
+
+|Dominio|Tipo de registro|Prioridad|Destino|
+|---|---|---|---|
+|domain.tld.|MX|1|mx1.mail.ovh.net.|
+|domain.tld.|MX|5|mx2.mail.ovh.net.|
+|domain.tld.|MX|100|mx3.mail.ovh.net.|
+|www.domain.tld.|CNAME|-|domain.tld.|
+|domain.tld.|A|-|<dirección_IP_de_destino>|
+
+Para conocer la dirección IP de destino de su alojamiento de OVHcloud, consulte nuestra guía que enumera las [direcciones IP de los distintos clusters de alojamiento compartido](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+
+**Ejemplo**: Para el nombre de dominio "domain.tld", la representación de las entradas de su dominio debe ser la siguiente:
 
 ![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
-> Anote los dos valores de destino de las dos primeras entradas de tipo "NS". Estas funciones se utilizarán durante la [etapa 9](#step9) de esta guía.
->
-> Estos valores corresponden a los servidores DNS asociados a esta zona DNS para su dominio.
+> Observe los dos valores de destino con el tipo de registro "NS". Estos valores, de tipo `dnsXX.ovh.net` y `nsXX.ovh.net` (o `dns200.anycast.me` y `ns200.anycast.me`), corresponden a los servidores DNS asociados a esta zona DNS para su dominio. Se utilizarán en la [etapa 9](#step9) de esta guía.
 >
 
 ### Etapa 3: obtener una copia de seguridad completa del sitio web <a name="step3"></a>

@@ -76,25 +76,33 @@ Po zatwierdzeniu płatności rozpocznie się instalacja hostingu. Na adres e-mai
 
 ### Etap 2: utworzyć i wstępnie skonfigurować strefę DNS dla Twojej domeny w OVHcloud <a name="step2"></a>
 
+Jeśli Twoja domena jest zarejestrowana u innego dostawcy i chcesz ją przenieść do OVHcloud, utwórz i skonfiguruj wstępnie strefę DNS przed rozpoczęciem transferu, aby uniknąć przerwy w dostępie do usług.
+
 Po utworzeniu hostingu zaloguj się do [Panelu klienta OVHcloud](/links/manager), następnie utwórz strefę DNS dla Twojej domeny **bez wpisywania jej na listę "www"**. Zapoznaj się z naszym przewodnikiem [dotyczącym tworzenia strefy DNS w OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
-Po utworzeniu strefy DNS zaloguj się do jej zarządzania, korzystając z naszego przewodnika "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)". Jeśli nie są obecne, wprowadź następujące wpisy:
+Po utworzeniu strefy DNS przejdź do interfejsu zarządzania strefą DNS "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
-- Twoja domena bez "www", do celu typu "MX": "mx1.mail.ovh.net.".
-- Twoja domena bez "www", do celu typu "MX": "mx2.mail.ovh.net.".
-- Twoja domena bez "www", do celu typu "MX": "mx3.mail.ovh.net.".
-- Twoja domena bez "www" na adres IP "A" na hostingu OVHcloud. Aby uzyskać poprawny adres IP, zapoznaj się z naszym przewodnikiem dotyczącym adresów IP [IP różnych klastrów hostingowych](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- Twoja domena **z** z "www", do Twojej domeny bez "www", przy użyciu wpisu typu "CNAME".
+Jeśli nie ma ich na liście, wprowadź następujące wpisy:
 
-**Przykład**: W przypadku domeny "domain.tld" należy podać następujący tekst:
+**Przykład** (dla domeny "domain.tld"):
+
+|Domena|Typ rekordu|Priorytet|Cel|
+|---|---|---|---|
+|domain.tld.|MX|1|mx1.mail.ovh.net.|
+|domain.tld.|MX|5|mx2.mail.ovh.net.|
+|domain.tld.|MX|100|mx3.mail.ovh.net.|
+|www.domain.tld.|CNAME|-|domain.tld.|
+|domain.tld.|A|-|<docelowy_adres_IP>|
+
+Aby dowiedzieć się, jaki adres IP jest odpowiedni dla Twojego hostingu OVHcloud, zapoznaj się z naszym przewodnikiem zawierającym [adresy IP różnych klastrów hostingu współdzielonego](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+
+**Przykład**: W przypadku domeny "domain.tld" wpisy domeny muszą być renderowane w następujący sposób:
 
 ![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
-> Zapisz dwie wartości docelowe pierwszych dwóch wpisów typu "NS". Zostaną one wykorzystane podczas [etap 9](#step9) niniejszego przewodnika.
->
-> Wartości te odpowiadają serwerom DNS przypisanym do tej strefy DNS dla Twojej domeny.
+> Zanotuj dwie wartości docelowe z typem rekordu "NS". Wartości te, typu `dnsXX.ovh.net` i `nsXX.ovh.net` (lub `dns200.anycast.me` i `ns200.anycast.me`), odpowiadają serwerom DNS przypisanym do tej strefy DNS dla Twojej domeny. Zostaną one użyte w [etapie 9](#step9) niniejszego przewodnika.
 >
 
 ### Etap 3: pobrać pełną kopię zapasową Twojej strony WWW <a name="step3"></a>
