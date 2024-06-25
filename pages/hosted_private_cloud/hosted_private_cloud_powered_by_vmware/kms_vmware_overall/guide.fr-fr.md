@@ -1,7 +1,7 @@
 ---
 title: 'Activer KMS avec Hosted Private Cloud VMware on OVHcloud'
 excerpt: 'Découvrez comment activer le service KMS OVHcloud pour sécuriser efficacement vos données sensibles Hosted Private Cloud VMware on OVHcloud'
-updated: 2023-06-18
+updated: 2023-06-25
 ---
 
 > [!warning]
