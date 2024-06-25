@@ -56,16 +56,20 @@ Se tale interruzione dovesse verificarsi, la guida deve essere costruita in modo
 
 ### Step 1: ordina l'hosting e gli indirizzi email in OVHcloud <a name="step1"></a>
 
-Diverse offerte di hosting condiviso OVHcloud contengono un'offerta email "MX Plan". Questa offerta email permette di creare indirizzi email con uno spazio di storage massimo di 5 GB per ogni indirizzo. Scegli tra le offerte di hosting qui sotto in base alla versione PHP, alla versione SQL, al numero di indirizzi email di cui hai bisogno e alla dimensione del tuo sito da migrare:
+Diverse [offerte di hosting condiviso OVHcloud](/links/web/hosting) contengono un'offerta email "[MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)". Questa offerta email permette di creare indirizzi email con uno spazio di storage massimo di 5 GB per ogni indirizzo. Scegli tra le offerte di hosting qui sotto in base alla versione PHP, alla versione SQL, al numero di indirizzi email di cui hai bisogno e alla dimensione del tuo sito da migrare:
 
 - L'hosting [Personale](/links/web/hosting-personal-offer) con **10 indirizzi email** "MX Plan"
 - Hosting [Pro](/links/web/hosting-professional-offer) con **100 indirizzi email** "MX Plan"
 - Hosting [Performance](/links/web/hosting-performance-offer) con **1000 indirizzi email** "MX Plan". Questa offerta è disponibile in 4 "sottolivello".
 - L'hosting [Cloud Web](/links/web/hosting-cloud-web-offer) con **200 indirizzi email** "MX Plan". Questa offerta è utilizzata dagli sviluppatori di applicazioni.
 
-Una volta scelta la soluzione di hosting, se non sei ancora cliente OVHcloud, clicca su `Ordine`{.action} nelle precedenti pagine commerciali. Segui gli step dell'ordine **senza richiedere il trasferimento del tuo dominio**.
+Una volta scelta la soluzione di hosting, se non sei ancora cliente OVHcloud, clicca su `Ordine`{.action} nelle precedenti pagine commerciali. Segui gli step dell'ordine **senza richiedere il trasferimento del tuo dominio** (questa operazione verrà eseguita nello step 10 di questa guida).
 
-L'ordine è disponibile anche nello Spazio Cliente OVHcloud (/links/manager). Accedi alla sezione `Web Cloud`{.action} e clicca su `Ordinare`{.action} > `Hosting`{.action}. Continua con gli step dell'ordine **senza richiedere il trasferimento del tuo dominio**.
+oppure accedi allo [Spazio Cliente OVHcloud](/links/manager). Una volta effettuato l’accesso, segui queste istruzioni:
+
+- Accedi alla scheda `Web Cloud`{.action}.
+- In alto a sinistra dell’interfaccia, clicca sul pulsante `Ordinare`{.action} e poi su `Hosting`{.action}.
+- Prosegui con l’ordine **senza richiedere il trasferimento del tuo dominio** (operazione che verrà eseguita allo Step 10 di questa guida).
 
 Una volta confermato il pagamento, l'installazione dell'hosting verrà avviata. Riceverai un'email al tuo indirizzo email di contatto. che contiene le credenziali di accesso allo spazio di storage FTP (File Transfert Protocol) del tuo hosting Web.
 

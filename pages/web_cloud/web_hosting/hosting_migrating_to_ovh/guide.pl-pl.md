@@ -56,16 +56,20 @@ W przypadku wystąpienia takiej przerwy przewodnik ten jest tak skonstruowany, a
 
 ### Etap 1: zamów hosting i konta e-mail w OVHcloud <a name="step1"></a>
 
-Kilka ofert hostingu OVHcloud zawiera ofertę e-mail "MX Plan". Ta oferta e-mail pozwala na tworzenie kont e-mail z przestrzenią dyskową do 5 GB dla każdego konta. Wybierz spośród poniższych pakietów hostingowych w zależności od wersji PHP, wersji SQL, liczby kont e-mail, których potrzebujesz oraz rozmiaru Twojej strony, którą chcesz przenieść:
+Kilka [ofert hostingu OVHcloud](/links/web/hosting) zawiera ofertę e-mail "[MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)". Ta oferta e-mail pozwala na tworzenie kont e-mail z przestrzenią dyskową do 5 GB dla każdego konta. Wybierz spośród poniższych pakietów hostingowych w zależności od wersji PHP, wersji SQL, liczby kont e-mail, których potrzebujesz oraz rozmiaru Twojej strony, którą chcesz przenieść:
 
 - Hosting [Perso](/links/web/hosting-personal-offer) z **10 adresów e-mail** "MX Plan"
 - Hosting [Pro](/links/web/hosting-professional-offer) z **100 adresów e-mail** "MX Plan"
 - Hosting [Performance](/links/web/hosting-performance-offer) z **1000 adresów e-mail** "MX Plan". Oferta jest podzielona na 4 "podoferty".
 - Hosting [Cloud Web](/links/web/hosting-cloud-web-offer) z **200 adresów e-mail** "MX Plan". Ta oferta jest używana przez programistów aplikacji.
 
-Po wybraniu oferty hostingu, jeśli nie jesteś jeszcze klientem OVHcloud, kliknij przycisk `Zamów`{.action} na powyższych stronach handlowych. Postępuj zgodnie z kolejnymi poleceniami **bez konieczności przenoszenia domeny*.
+Po wybraniu oferty hostingu, jeśli nie jesteś jeszcze klientem OVHcloud, kliknij przycisk `Zamów`{.action} na powyższych stronach handlowych. Postępuj zgodnie z kolejnymi poleceniami **bez konieczności przenoszenia domeny** (Operacja ta zostanie wykonana na etapie 10 niniejszego przewodnika).
 
-Zamówienie można złożyć w [Panelu klienta OVHcloud](/links/manager). Po zalogowaniu kliknij pozycję `Web Cloud`{.action}, następnie kliknij przycisk `Zamów`{.action} w lewym górnym rogu, a następnie kliknij `Hosting`{.action}. Przejdź przez kolejne etapy zamówienia **bez konieczności transferu domeny**.
+Zamówienie możesz również złożyć w [Panelu klienta OVHcloud](/links/manager). Po zalogowaniu wykonaj następujące instrukcje:
+
+- Przejdź do zakładki `Web Cloud`{.action}.
+- W lewym górnym rogu interfejsu kliknij przycisk `Zamów`{.action}, a następnie `Hosting`{.action}.
+- Wykonaj kolejne kroki zamówienia **bez żądania transferu domeny** (operacja ta zostanie wykonana na etapie 10 niniejszego przewodnika).
 
 Po zatwierdzeniu płatności rozpocznie się instalacja hostingu. Na adres e-mail do kontaktu zostanie wysłana wiadomość. Identyfikatory dostępu do przestrzeni dyskowej FTP (File Transfert Protocol) Twojego hostingu WWW.
 

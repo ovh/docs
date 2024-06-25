@@ -56,16 +56,20 @@ En caso de que se produzca dicha interrupción, la guía se construirá de forma
 
 ### Etapa 1: contratar el alojamiento y las direcciones de correo en OVHcloud <a name="step1"></a>
 
-Varios planes de hosting de OVHcloud contienen una solución de correo electrónico MX Plan. Esta solución de correo permite crear direcciones de correo con un espacio de almacenamiento de hasta 5 GB para cada dirección. Elija entre los siguientes planes de hosting en función de la versión PHP, la versión SQL, el número de direcciones de correo que necesite y el tamaño del sitio web que quiere migrar:
+Varios [planes de hosting de OVHcloud](/links/web/hosting) contienen una solución de correo electrónico [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities). Esta solución de correo permite crear direcciones de correo con un espacio de almacenamiento de hasta 5 GB para cada dirección. Elija entre los siguientes planes de hosting en función de la versión PHP, la versión SQL, el número de direcciones de correo que necesite y el tamaño del sitio web que quiere migrar:
 
 - El alojamiento [Personal](/links/web/hosting-personal-offer) con **10 direcciones de correo** "MX Plan"
 - El alojamiento [Pro](/links/web/hosting-professional-offer) con **100 direcciones de correo** "MX Plan"
 - El alojamiento [Performance](/links/web/hosting-performance-offer) con **1000 direcciones de correo** "MX Plan". Esta oferta se divide en 4 "subproductos".
 - El alojamiento [Cloud Web](/links/web/hosting-cloud-web-offer) con **200 direcciones de correo** "MX Plan". Esta oferta la utilizan los desarrolladores de aplicaciones.
 
-Si todavía no es cliente de OVHcloud, haga clic en el botón `Contratar`{.action} de las páginas comerciales anteriores. Siga los pasos del pedido **sin solicitar la transferencia del dominio**.
+Si todavía no es cliente de OVHcloud, haga clic en el botón `Contratar`{.action} de las páginas comerciales anteriores. Siga los pasos del pedido **sin solicitar la transferencia del dominio** (Esta acción se realizará en el paso 10 de esta guía).
 
-También puede realizar el pedido desde el [área de cliente de OVHcloud](/links/manager). Una vez que se haya conectado, haga clic en el menú `Web Cloud`{.action}, haga clic en el botón `Contratar`{.action}, en la parte superior izquierda y seleccione `Alojamiento`{.action}. Continúe con el pedido **sin solicitar la transferencia del dominio**.
+También puede realizar el pedido desde su [área de cliente de OVHcloud](/links/manager). Una vez conectado, siga estas instrucciones:
+
+- Acceda a la pestaña `Web Cloud`{.action}.
+- En la parte superior izquierda de la interfaz, haga clic en el botón `Contratar`{.action} y luego en `Alojamiento`{.action}.
+- Siga los pasos del pedido **sin solicitar la transferencia del dominio** (esta acción se realizará en el paso 10 de esta guía).
 
 Una vez validado el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico en su dirección de correo electrónico de contacto. que contendrá las claves de acceso al espacio de almacenamiento FTP (File Transfert Protocol) de su alojamiento web.
 

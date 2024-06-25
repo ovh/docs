@@ -56,16 +56,20 @@ Se tal interrupção ocorrer, este guia será construído de forma a minimizar a
 
 ### Etapa 1: encomendar o alojamento e os endereços de e-mail na OVHcloud <a name="step1"></a>
 
-Várias ofertas de alojamento partilhado OVHcloud incluem uma oferta de e-mail "MX Plan". Esta oferta de e-mail permite criar endereços de e-mail com um espaço de armazenamento de 5 GB no máximo para cada endereço. Escolha a seguir as ofertas de alojamento em função da versão PHP, da versão SQL, do número de endereços de e-mail que precisa e do tamanho do seu site a migrar:
+Várias ofertas de [alojamento partilhado OVHcloud](/links/web/hosting) incluem uma oferta de e-mail "[MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)". Esta oferta de e-mail permite criar endereços de e-mail com um espaço de armazenamento de 5 GB no máximo para cada endereço. Escolha a seguir as ofertas de alojamento em função da versão PHP, da versão SQL, do número de endereços de e-mail que precisa e do tamanho do seu site a migrar:
 
 - O alojamento [Perso](/links/web/hosting-personal-offer) com **10 endereços de e-mail** "MX Plan"
 - O alojamento [Pro](/links/web/hosting-professional-offer) com **100 endereços de e-mail** "MX Plan"
 - O alojamento [Performance](/links/web/hosting-performance-offer) com **1000 endereços de e-mail** "MX Plan". Esta oferta é indicada em 4 "subofertas".
 - O alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) com **200 endereços de e-mail** "MX Plan". Esta oferta é utilizada pelos programadores de aplicações.
 
-Depois de escolher a oferta de alojamento, se ainda não é cliente da OVHcloud, clique no botão `Encomendar`{.action} presente nas páginas comerciais acima. Siga os passos da encomenda **sem solicitar a transferência do seu nome de domínio**.
+Depois de escolher a oferta de alojamento, se ainda não é cliente da OVHcloud, clique no botão `Encomendar`{.action} presente nas páginas comerciais acima. Siga os passos da encomenda **sem solicitar a transferência do seu nome de domínio** (Esta ação será realizada na etapa 10 deste manual).
 
-Também pode efetuar a encomenda a partir do seu [Área de Cliente OVHcloud](/links/manager). Depois de estabelecer a ligação, clique na parte `Web Cloud`{.action} e, na parte superior esquerda, clique no botão `Encomendar`{.action}, e depois nos `Alojamento`{.action}. Siga as etapas da encomenda **sem solicitar a transferência do seu nome de domínio**.
+Também pode efetuar a encomenda a partir da sua [Área de Cliente OVHcloud](/links/manager). Uma vez ligado, siga as instruções seguintes:
+
+- Aceda ao separador `Web Cloud`{.action}.
+- No canto superior esquerdo da interface, clique no botão `Encomendar`{.action} e, a seguir, em `Alojamento`{.action}.
+- Prossiga com a encomenda **sem solicitar a transferência do domínio** (a transferência será efetuada na etapa 10 deste manual).
 
 Depois de validar o pagamento, a instalação do alojamento vai iniciar. Um e-mail será enviado para o seu endereço de e-mail de contacto. Este último conterá as credenciais de acesso ao espaço de armazenamento FTP (File Transfer Protocol) do seu alojamento Web.
 
