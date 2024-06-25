@@ -1965,6 +1965,7 @@
                 + [Tracking slow MySQL queries with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_mysql_slow_queries)
                 + [Supervising your HAProxy deployment with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_haproxy)
                 + [Analyzing Twitter with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_twitter)
+                + [Hosted Private Cloud VMware on OVHcloud -  Log forwading to an LDP stream](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp)
     + [KMS](manage-operate-kms)
         + [OVHcloud KMS Architecture overview](manage_and_operate/kms/architecture-overview)
 + OVHcloud Labs
