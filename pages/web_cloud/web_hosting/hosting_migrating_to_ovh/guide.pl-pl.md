@@ -171,7 +171,7 @@ Zmiana serwerów "MX" realizowana jest u aktualnego operatora DNS Twojej domeny.
 Oznacza to, że podczas propagacji DNS zmiany Twoje e-maile będą odejmowane coraz częściej na dotychczasowych kontach e-mail i coraz częściej na nowych kontach e-mail OVHcloud.<br>
 Po zakończeniu propagacji wszystkie nowe e-maile zostaną odebrane na Twoje konta e-mail OVHcloud.
 
-Zalecamy zmianę wpisów "MX" **przed**, aby wykonać migrację zawartości kont e-mail.
+Rekomendujemy zmianę wpisów "MX" **przed** rozpoczęciem migracji zawartości Twoich starych adresów e-mail.
 Dzięki tej metodzie unikasz ponownej migracji niektórych e-maili otrzymanych na poprzednich kontach e-mail podczas propagacji DNS.
 
 ### Etap 7: przenieść zawartość poprzednich kont e-mail do nowych adresów e-mail OVHcloud <a name="step7"></a>

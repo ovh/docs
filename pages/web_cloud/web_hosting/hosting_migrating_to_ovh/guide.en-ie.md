@@ -167,7 +167,7 @@ This change takes place at your current DNS provider. You will need to allow bet
 This means that during the DNS propagation, less and less emails will be received by the old email accounts, and emails will start to arrive at your new OVHcloud email accounts.<br>
 Once the propagation is complete, all new emails will be received by your OVHcloud email accounts.
 
-We recommend that you change the MX records **before** migrating the content of your email accounts.
+We recommend changing the MX records **before** migrating the content of your old email addresses.
 This method avoids you having to redo a migration for the few emails received on your old email accounts during DNS propagation.
 
 ### Step 7: Transfer the content of your old email accounts to your new accounts with OVHcloud <a name="step7"></a>

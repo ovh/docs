@@ -171,7 +171,7 @@ La modifica dei server "MX" si effettua presso l'attuale provider DNS del tuo do
 Questo significa che, durante la propagazione dei DNS della modifica, le tue email saranno ricevute sempre meno sui tuoi vecchi indirizzi email e sempre di più sui tuoi nuovi indirizzi email OVHcloud.<br>
 Una volta terminata la propagazione, tutte le nuove email ricevute saranno ricevute sugli indirizzi email OVHcloud.
 
-Ti consigliamo di modificare i record "MX" **prima** per effettuare la migrazione del contenuto degli indirizzi email.
+Ti consigliamo di modificare il record "MX" **prima** di effettuare la migrazione del contenuto dei tuoi vecchi indirizzi email.
 Questo metodo ti evita di effettuare una migrazione per le poche email ricevute sui tuoi vecchi indirizzi email durante la propagazione DNS.
 
 ### Step 7: trasferire il contenuto dei tuoi vecchi indirizzi email nei tuoi nuovi indirizzi presso OVHcloud <a name="step7"></a>
