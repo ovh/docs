@@ -76,15 +76,15 @@ After your hosting service is installed, log in to your [OVHcloud Control Panel]
 
 Once you have created a DNS zone, you can start configuring it with the help of our guide: [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit). Add the following records if they do not exist:
 
-- Your domain name without "www" as record type "MX", to the target: `mx1.mail.ovh.net.`
-- Your domain name without "www" as record type "MX", to the target: `mx2.mail.ovh.net.`
-- Your domain name without "www" as record type "MX", to the target: `mx3.mail.ovh.net.`
+- Your domain name without "www" as record type "MX", to the target: `mx1.mail.ovh.ca.`
+- Your domain name without "www" as record type "MX", to the target: `mx2.mail.ovh.ca.`
+- Your domain name without "www" as record type "MX", to the target: `mx3.mail.ovh.ca.`
 - Your domain name without "www" as record type "A", with the IP address of your OVHcloud hosting as target. To retrieve the correct IP address, please refer to our guide listing the [IP addresses of the shared hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 - Your domain name **with** "www" as record type "CNAME", with your domain name (without "www") as target.
 
 **Example**: For the domain name "domain.tld", the result should be displayed as in the following image:
 
-![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
+![hosting](images/dashboard-mx-a-cname-ca.png){.thumbnail}
 
 > [!success]
 >
@@ -132,7 +132,7 @@ Declare and authorise your external domain name on your OVHcloud web hosting pla
 
 **Example** for the "domain.tld" domain name:
 
-![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
+![hosting](images/dashboard-a-txt-cname-ca.png){.thumbnail}
 
 **The modification of DNS records of the type "A", "CNAME" and "TXT" must be done at your domain name’s current DNS provider and will take between 4 and 24 hours to propagate fully.**
 
@@ -151,9 +151,9 @@ This will result in you receiving new emails on your new OVHcloud email addresse
 
 Replace your current "MX" records with the following three records at your DNS provider (without keeping any of the old entries):
 
-- Your domain name without "www" as record type "MX", to the target: `mx1.mail.ovh.net.`
-- Your domain name without "www" as record type "MX", to the target: `mx2.mail.ovh.net.`
-- Your domain name without "www" as record type "MX", to the target: `mx3.mail.ovh.net.`
+- Your domain name without "www" as record type "MX", to the target: `mx1.mail.ovh.ca.`
+- Your domain name without "www" as record type "MX", to the target: `mx2.mail.ovh.ca.`
+- Your domain name without "www" as record type "MX", to the target: `mx3.mail.ovh.ca.`
 
 This change takes place at your current DNS provider. You will need to allow between **4 and 24 hours propagation time** for the changes to become active.<br>
 This means that during the DNS propagation, less and less emails will be received by the old email accounts, and emails will start to arrive at your new OVHcloud email accounts.<br>

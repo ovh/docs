@@ -87,7 +87,7 @@ Una vez que haya creado la zona DNS, acceda a su gestión en la guía [Editar un
 
 **Ejemplo**: Para el nombre de dominio "domain.tld", el renderizado debe ser el siguiente:
 
-![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
+![hosting](images/dashboard-mx-a-cname-ca.png){.thumbnail}
 
 > [!success]
 >
@@ -135,7 +135,7 @@ Declare/autorice su dominio externo en su alojamiento web de OVHcloud en la guí
 
 **Ejemplo**: para el dominio "domain.tld":
 
-![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
+![hosting](images/dashboard-a-txt-cname-ca.png){.thumbnail}
 
 **La modificación de los registros DNS "A", "CNAME" y "TXT" debe realizarse ante el actual proveedor DNS de su dominio y necesita un tiempo de propagación de 4 a 24 horas máximo antes de ser plenamente efectivo.**
 
