@@ -1,7 +1,7 @@
 ---
 title: Cómo utilizar las políticas IAM desde el área de cliente
 excerpt: Cómo conceder permisos de acceso específicos a los usuarios desde una cuenta de OVHcloud
-updated: 2024-06-03
+updated: 2024-06-25
 ---
 
 > [!primary]

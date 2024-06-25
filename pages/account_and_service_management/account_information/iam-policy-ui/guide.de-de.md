@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinie über Ihr Kundencenter
 excerpt: Erfahren Sie hier, wie Sie Benutzern im OVHcloud Kunden-Account spezifische Zugriffsrechte gewähren
-updated: 2024-06-03
+updated: 2024-06-25
 ---
 
 > [!primary]

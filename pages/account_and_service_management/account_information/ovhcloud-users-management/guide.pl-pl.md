@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie użytkowników lokalnych i zarządzanie nimi na koncie OVHcloud'
 excerpt: 'Dowiedz się, jak dodawać użytkowników lokalnych z poziomu konta OVHcloud'
-updated: 2024-06-03
+updated: 2024-06-25
 ---
 
 > [!primary]
