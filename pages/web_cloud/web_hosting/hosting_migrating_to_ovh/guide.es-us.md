@@ -215,7 +215,8 @@ Sustituya los servidores DNS actuales de su dominio por los dos servidores DNS d
 
 ### Etapa 10: transferir su dominio a OVHcloud <a name="step10"></a>
 
-Una vez finalizada la propagación DNS, pruebe su sitio web y verifique el envío y la recepción de los emails desde sus direcciones de correo.
+Una vez completada la propagación DNS, compruebe que todo su sitio web esté operativo. Navegue por su sitio web para comprobar que todas las páginas se muestran correctamente y que no se devuelve ningún error 404. Compruebe también el envío y la recepción de los emails desde sus direcciones de correo.
+
 Si todo está en orden, desbloquee su dominio y recupere su "código de transferencia", "EPP" o "AuthCode" desde su actual agente registrador.
 
 Transfiera su dominio con ayuda de nuestra guía sobre [transferencia de un dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).

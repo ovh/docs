@@ -228,7 +228,8 @@ Zastąp aktualne serwery DNS Twojej domeny dwoma serwerami DNS zadeklarowanymi w
 
 ### Etap 10: przenieść domenę do OVHcloud <a name="step10"></a>
 
-Po zakończeniu propagacji DNS przetestuj Twoją stronę WWW i sprawdź wysyłkę i odbiór e-maili z Twoich kont e-mail.
+Po zakończeniu propagacji DNS sprawdź, czy cała Twoja strona WWW działa poprawnie. Przeglądaj swoją stronę internetową, aby upewnić się, że wszystkie strony wyświetlają się poprawnie i nie są zwracane błędy 404. Sprawdź również, czy wysyłasz i odbierasz wiadomości e-mail z Twoich adresów e-mail.
+
 Jeśli wszystko jest w porządku, odblokuj domenę i pobierz jej "kod transferu", "EPP" lub "AuthCode" z dotychczasowego operatora.
 
 Przenieś domenę w naszym przewodniku dotyczącym [transferu domeny do OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).

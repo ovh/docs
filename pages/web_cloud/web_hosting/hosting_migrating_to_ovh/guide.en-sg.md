@@ -212,7 +212,8 @@ Replace your domain name’s current DNS servers with the two DNS servers declar
 
 ### Step 10: Transfer your domain name to OVHcloud <a name="step10"></a>
 
-Once the DNS propagation is complete, verify that your website works and that emails are being sent and received by your email addresses.
+Once the DNS propagation is complete, check that your entire website is functional. Browse your website to check that all pages are displaying correctly and that no 404 errors are returned. Also check the sending and receiving of emails from your email addresses.
+
 If everything is in order, unlock your domain name and retrieve its "transfer code", "EPP" or "AuthCode" from your current domain name registrar.
 
 Then transfer your domain name using our guide on [transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).
