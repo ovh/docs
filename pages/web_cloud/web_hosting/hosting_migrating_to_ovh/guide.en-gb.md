@@ -1,7 +1,7 @@
 ---
 title: Migrating your website and emails to OVHcloud
 excerpt: Find out how to migrate your website, emails and domain name to OVHcloud without any service interruptions
-updated: 2023-11-15
+updated: 2024-06-24
 ---
 
 ## Objective

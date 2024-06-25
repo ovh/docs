@@ -1,7 +1,7 @@
 ---
 title: 'Migrare un sito e un servizio di posta in OVHcloud'
 excerpt: "Come migrare il tuo sito Web, le tue email e il tuo dominio in OVHcloud senza interruzione di servizi"
-updated: 2023-11-15
+updated: 2024-06-24
 ---
 
 > [!primary]

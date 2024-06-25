@@ -1,7 +1,7 @@
 ---
 title: 'Migrar un sitio web y el correo a OVHcloud'
 excerpt: "Cómo migrar un sitio web, el correo electrónico y el dominio a OVHcloud sin cortes del servicio"
-updated: 2023-11-15
+updated: 2024-06-24
 ---
 
 > [!primary]

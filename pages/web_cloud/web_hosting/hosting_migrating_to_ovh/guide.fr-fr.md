@@ -1,7 +1,7 @@
 ---
-title: Migrer son site web et ses services associés vers OVHcloud
-excerpt: Découvrez comment migrer votre site web, votre nom de domaine, votre base de données et vos e-mails chez OVHcloud sans interruption de services
-updated: 2024-06-21
+title: "Migrer son site web et ses services associés vers OVHcloud"
+excerpt: "Découvrez comment migrer votre site web, votre nom de domaine, votre base de données et vos e-mails chez OVHcloud sans interruption de services"
+updated: 2024-06-24
 ---
 
 ## Objectif
@@ -102,7 +102,7 @@ Pour récupérer la bonne adresse IP cible de votre hébergement OVHcloud, consu
 
 > [!success]
 >
-> Notez les deux valeurs cibles ayant pour type d'enregistrement « NS ». Ces valeurs, de type `dnsXX.ovh.net` et `nsXX.ovh.net`, correspondent aux serveurs DNS associés à cette zone DNS pour votre nom de domaine. Elles serviront lors de l'[étape 9](#step9) de ce guide.
+> Notez les deux valeurs cibles ayant pour type d'enregistrement « NS ». Ces valeurs, de type `dnsXX.ovh.net` et `nsXX.ovh.net` (ou `dns200.anycast.me` et `ns200.anycast.me`), correspondent aux serveurs DNS associés à cette zone DNS pour votre nom de domaine. Elles serviront lors de l'[étape 9](#step9) de ce guide.
 >
 
 ### Etape 3 : récupérer une sauvegarde complète de votre site web <a name="step3"></a>

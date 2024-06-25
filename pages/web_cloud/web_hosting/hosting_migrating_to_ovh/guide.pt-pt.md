@@ -1,7 +1,7 @@
 ---
 title: Como migrar um site e e-mails para a OVHcloud?
 excerpt: "Saiba como migrar o seu website, e-mails e o seu domínio para a OVHcloud sem interromper os serviços"
-updated: 2023-11-15
+updated: 2024-06-24
 ---
 
 > [!primary]

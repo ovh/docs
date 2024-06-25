@@ -1,7 +1,7 @@
 ---
 title: Migrer son site et ses e-mails vers OVHcloud
 excerpt: Découvrez comment migrer votre site internet, vos e-mails et votre nom de domaine chez OVHcloud sans interruption de services
-updated: 2023-11-15
+updated: 2024-06-24
 ---
 
 ## Objectif
