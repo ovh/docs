@@ -23,9 +23,9 @@ This shared model can help relieve the customer’s operational burden.
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Learn about capabilities and limitations of the service (documentation, T&C) | RA | I |
-| Define and configure a domain name and has to own a domain for which an SSL will be delivered before service subscription | RA | I |
+| Define and configure a domain name and has to own a domain for which an SSL certificate will be delivered before service subscription | RA | I |
 | Define the version of Exchange and the virtual private server in support of the service |  | RA |
-| Choose service location in EU |  | RA |
+| Host the service in EU |  | RA |
 
 ### 2. Service availability
 
