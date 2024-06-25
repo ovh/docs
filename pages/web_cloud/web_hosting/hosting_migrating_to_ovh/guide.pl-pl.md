@@ -217,9 +217,9 @@ Po zakończeniu migracji Twoich poprzednich kont e-mail do OVHcloud możesz pono
 
 ### Etap 9: zastąpienie aktywnych serwerów DNS Twojej domeny serwerami OVHcloud <a name="step9"></a>
 
-Strefa DNS wstępnie skonfigurowana podczas [etap 2](#step2) nie została jeszcze zastosowana do Twojej domeny.
+Strefa DNS wstępnie skonfigurowana w trakcie [etapu 2](#step2) nie jest jeszcze zastosowana dla Twojej domeny. Aktualnie Twoja domena nadal używa serwerów DNS Twojego operatora.
 
-Zastąp aktualne serwery DNS Twojej domeny dwoma serwerami DNS zadeklarowanymi w strefie DNS OVHcloud.
+Zastąp aktualne serwery DNS (operatora) dwoma serwerami DNS zadeklarowanymi w strefie DNS OVHcloud (typu `dnsXX.ovh.net` i `nsXX.ovh.net` lub `dns200.anycast.me` i `ns200.anycast.me`). Operacja ta jest wykonywana w interfejsie zarządzania rejestratora.
 
 > [!warning]
 >

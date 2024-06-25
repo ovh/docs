@@ -217,9 +217,9 @@ Una volta migrati i vecchi indirizzi email in OVHcloud, è possibile riconfigura
 
 ### Step 9: sostituire i server DNS attivi del tuo dominio con quelli di OVHcloud <a name="step9"></a>
 
-La zona DNS preconfigurata durante lo [step 2](#step2) non è ancora applicata al tuo dominio.
+La zona DNS preconfigurata nello [step 2](#step2) non è ancora stata applicata al dominio. Al momento il dominio utilizza ancora i server DNS del provider di origine.
 
-Sostituisci i server DNS correnti del tuo dominio con i due server DNS dichiarati nella zona DNS OVHcloud.
+Sostituisci i server DNS correnti (del registrar di origine) con i due server DNS dichiarati nella zona DNS OVHcloud (di tipo `dnsXX.ovh.net` e `nsXX.ovh.net` o `dns200.anycast.me` e `ns200.anycast.me`). Questa operazione viene effettuata nell’interfaccia di gestione del registrar di origine.
 
 > [!warning]
 >

@@ -217,9 +217,9 @@ Consulte todas nuestras guías de ayuda a la configuración en `Configuración E
 
 ### Etapa 9: sustituir los servidores DNS activos de su dominio por los de OVHcloud <a name="step9"></a>
 
-La zona DNS preconfigurada durante el [etapa 2](#step2) todavía no se ha aplicado al dominio.
+La zona DNS preconfigurada en el [etapa 2](#step2) aún no se aplica a su dominio. Actualmente, su dominio sigue utilizando los servidores DNS de su proveedor de origen.
 
-Sustituya los servidores DNS actuales de su dominio por los dos servidores DNS declarados en la zona DNS de OVHcloud.
+Sustituya los servidores DNS actuales (del registrador de origen) por los dos servidores DNS declarados en la zona DNS de OVHcloud (de tipo `dnsXX.ovh.net` y `nsXX.ovh.net` o `dns200.anycast.me` y `ns200.anycast.me`). Esta operación se realiza en la interfaz de gestión del registrador de origen.
 
 > [!warning]
 >

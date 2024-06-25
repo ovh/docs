@@ -201,9 +201,9 @@ Once you have migrated your email accounts to OVHcloud, reconfigure your email s
 
 ## Step 9: Replace your domain name’s active DNS servers with those of OVHcloud <a name="step9"></a>
 
-The DNS zone preconfigured in [step 2](#step2) has not yet been applied to your domain name.
+The DNS zone pre-configured in [step 2](#step2) has not yet been applied to your domain name. Currently, your domain name still uses your original provider’s DNS servers.
 
-Replace your domain name’s current DNS servers with the two DNS servers declared in the OVHcloud DNS zone.
+Replace the current DNS servers (of the original registrar) with the two DNS servers declared in the OVHcloud DNS zone (of type `dnsXX.ovh.ca` and `nsXX.ovh.ca`). You can do this in the management interface of the original registrar.
 
 > [!warning]
 >
