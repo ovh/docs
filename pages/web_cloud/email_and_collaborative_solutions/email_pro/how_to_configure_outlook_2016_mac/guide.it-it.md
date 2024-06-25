@@ -64,7 +64,7 @@ Per verificare la corretta configurazione dell'account esegui un test di invio.
 
 ![emailpro](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-Se devi inserire manualmente le impostazioni nelle preferenze del tuo account, puoi trovare qui di seguito i parametri da utilizzare con il nostro servizio Email Pro - 
+Se devi inserire manualmente le impostazioni nelle preferenze del tuo account, puoi trovare qui di seguito i parametri da utilizzare con il nostro servizio Email Pro.
 
 |Tipo di server |Nome del server|SSL|Porta|
 |---|---|---|---|

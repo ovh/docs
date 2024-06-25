@@ -1,5 +1,5 @@
 ---
-title: 'Exchange – Konfigurieren Sie Ihr E-Mail-Konto in Outlook für macOS'
+title: 'Exchange - Konfigurieren Sie Ihr E-Mail-Konto in Outlook für macOS'
 excerpt: 'So konfigurieren Sie Ihren Exchange Account auf Outlook für macOS'
 updated: 2018-06-01
 ---
@@ -37,7 +37,7 @@ Klicken Sie nun auf Ihre E-Mail-Adresse und dann auf `Weiter`{.action}. Falls ei
 |---|---|
 |Methode|Lassen Sie **Benutzername und Kennwort** stehen (standardmäßig ausgewählt).|
 |E-Mail-Adresse|Geben Sie einen Namen für diesen Account ein, damit Sie ihn später von anderen Accounts in Ihrer Outlook App unterscheiden können.|
-|DOMAIN\\Benutzername oder E-Mail-Adresse|Geben Sie die vollständige E-Mail-Adresse ein.|
+|DOMAIN\Benutzername oder E-Mail-Adresse|Geben Sie die vollständige E-Mail-Adresse ein.|
 |Kennwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
 |Server|Je nach DNS-Konfiguration Ihrer Domain kann die Angabe des Servers optional sein. Falls notwendig, tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Angaben zum Server im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, indem Sie den entsprechenden Exchange Dienst auswählen, auf den Tab `Allgemeine Informationen`{.action} klicken und dort in den Bereich `Verbindung`{.action} gehen.|
 

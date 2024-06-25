@@ -64,7 +64,7 @@ Una vez introducidos los datos, haga clic en el botón `Agregar cuenta`{.action}
 
 Si lo desea, puede realizar una prueba de envío para comprobar que la cuenta esté bien configurada.
 
-En caso de que la aplicación le pida que introduzca de forma manual algunos datos técnicos en las preferencias de la cuenta, estos son los valores que debe utilizar para la solución Email Pro - 
+En caso de que la aplicación le pida que introduzca de forma manual algunos datos técnicos en las preferencias de la cuenta, estos son los valores que debe utilizar para la solución Email Pro.
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|

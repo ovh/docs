@@ -1,6 +1,6 @@
 ---
-title: 'Configuring your Exchange account in Outlook for Mac'
-excerpt: 'Find out how to configure your Exchange account in Outlook for Mac.'
+title: 'Exchange - Configure your email account on Outlook for macOS'
+excerpt: 'Find out how to configure your Exchange account in Outlook for macOS'
 updated: 2018-06-01
 ---
 

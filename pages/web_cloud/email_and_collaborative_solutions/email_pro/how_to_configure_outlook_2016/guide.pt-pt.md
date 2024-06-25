@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro -  configure uma conta de e-mail no Outlook para Windows'
+title: 'Email Pro - Configure uma conta de e-mail no Outlook para Windows'
 excerpt: 'Saiba como configurar uma conta Email Pro no Outlook para Windows'
 updated: 2021-07-05
 ---

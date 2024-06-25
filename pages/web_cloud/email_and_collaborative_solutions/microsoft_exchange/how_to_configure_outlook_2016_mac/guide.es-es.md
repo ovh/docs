@@ -1,5 +1,5 @@
 ---
-title: 'Exchange - configure su cuenta de correo electrónico en Outlook para macOS'
+title: 'Exchange - Configure su cuenta de correo electrónico en Outlook para macOS'
 excerpt: 'Cómo configurar una cuenta Exchange en Outlook para Mac'
 updated: 2018-06-01
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'Exchange - configura il tuo account di posta elettronica su Outlook per macOS'
+title: 'Exchange - Configura il tuo account di posta elettronica su Outlook per macOS'
 excerpt: 'Scopri come configurare un account Exchange su Outlook per macOS'
 updated: 2018-06-01
 ---
@@ -31,7 +31,7 @@ Una volta avviata l'applicazione Outlook sul tuo dispositivo, puoi aggiungere un
 
 ![exchange](images/configuration-outlook-2016-mac-step1.png){.thumbnail}
 
-Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}. Se ti viene chiesto di scegliere un provider, seleziona `Exchange`{.action}. A questo punto, compila i campi richiesti. 
+Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}. Se ti viene chiesto di scegliere un provider, seleziona `Exchange`{.action}. A questo punto, compila i campi richiesti.
 
 |Informazione|Descrizione|
 |---|---|
