@@ -45,6 +45,8 @@ The service allows you to focus on building and deploying cloud applications whi
 
 The service is fully managed by OVHcloud and accessible through the S3 API.
 
+![Cold Archive concept](images/restoring.png){.w-100}
+
 **5 steps operation**
 
 1. **Store (Active):** Your data is newly stored in a bucket within the Object Storage Bucket.
