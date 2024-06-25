@@ -1946,6 +1946,7 @@
                 + [Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit](manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit)
                 + [Pushing logs from OVHcloud account to Logs Data Platform](manage_and_operate/iam/iam-logs-forwarding)
                 + [Pushing logs from SAP to Logs Data Platform](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
+                + [Hosted Private Cloud VMware on OVHcloud log forwading to an LDP stream](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp)
             + [Visualizing, querying and exploiting your logs](observability-logs-data-platform-visualizing-querying-exploiting)
                 + [Exposing your logs to third-party tools via the OpenSearch API](manage_and_operate/observability/logs_data_platform/integration_opensearch_api)
                 + [Using OpenSearch Dashboards with Logs Data Platform](manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards)
