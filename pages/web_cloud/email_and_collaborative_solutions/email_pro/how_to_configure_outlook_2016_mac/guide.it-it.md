@@ -45,7 +45,7 @@ Una volta avviata l'applicazione Outlook sul tuo dispositivo, puoi aggiungere un
 
 ![emailpro](images/configuration-outlook-2016-mac-step1.png){.thumbnail}
 
-Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}. Come provider, seleziona IMAP/POP e compila i campi richiesti. 
+Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}. Come provider, seleziona IMAP/POP e compila i campi richiesti.
 
 |Informazione|Descrizione|
 |---|---|

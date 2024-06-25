@@ -66,7 +66,7 @@ Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skon
 
 ![emailpro](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta poniżej znajdziesz parametry, których należy użyć w przypadku oferty E-mail Pro:
+Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta poniżej znajdziesz parametry, których należy użyć w przypadku oferty E-mail Pro.
 
 |Typ serwera|Nazwa serwera|SSL|Port|
 |---|---|---|---|

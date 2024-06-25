@@ -63,7 +63,7 @@ To check that the account has been configured correctly, you can send a test ema
 
 ![emailpro](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-If you need to enter any settings manually in your account preferences, the technical settings you will need to use with our Email Pro solution are listed below:
+If you need to enter any settings manually in your account preferences, the technical settings you will need to use with our Email Pro solution are listed below.
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|

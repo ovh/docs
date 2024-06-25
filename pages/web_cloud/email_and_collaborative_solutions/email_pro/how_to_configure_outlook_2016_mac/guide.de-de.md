@@ -65,7 +65,7 @@ Sie können eine Test-E-Mail versenden, um zu überprüfen, ob der Account korre
 
 ![E-Mail Pro](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwenden Sie die folgenden technischen Einstellungen für unsere E-Mail Pro Lösung:
+Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwenden Sie die folgenden technischen Einstellungen für unsere E-Mail Pro Lösung.
 
 |Servertyp|Servername|SSL|Port|
 |---|---|---|---|
