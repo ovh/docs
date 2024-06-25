@@ -71,7 +71,7 @@ Exécutez l'appel API suivant pour obtenir la liste des opérations :
 
 > **Parameters:**
 >
-> - `serviceName` : La référence de votre PCC sous la forme `pcc-XXX-XXX-XXX-XXX`.
+> - **serviceName** : La référence de votre PCC sous la forme, (pcc-XXX-XXX-XXX-XXX).
 >
 
 Exemple de retour (e schéma de retour peut varier et être assez long en fonction de la taille de votre infrastructure) :
