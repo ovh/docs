@@ -34,7 +34,7 @@ Questa guida ti mostra le operazioni da effettuare per migrare tutti i tuoi siti
 > Le istruzioni di questa guida per utilizzare diversi prodotti dell'universo Web Cloud, ti consigliamo di seguire gli step riportati di seguito **prima** per effettuare la migrazione dei tuoi servizi.
 >
 
-Migrare un sito Internet e un servizio di posta in OVHcloud **senza interruzione di servizio** richiede una procedura precisa in 10 step:
+Per migrare l’intero sito Web e le email in OVHcloud **senza interruzione del servizio** è necessario seguire una procedura precisa in 10 step:
 
 - [Step 1: ordina l'hosting e gli indirizzi email in OVHcloud](#step1)
 - [Step 2: creare e preconfigurare una zona DNS per il tuo dominio in OVHcloud](#step2)

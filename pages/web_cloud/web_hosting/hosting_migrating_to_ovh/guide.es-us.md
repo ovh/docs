@@ -34,7 +34,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 > Las instrucciones de esta guía hacen referencia a varios productos del universo Web Cloud. Le recomendamos que lea todos los pasos que se indican a continuación **antes** para migrar sus servicios.
 >
 
-Migrar un sitio web y el correo a OVHcloud **sin interrupción del servicio** debe aplicar un procedimiento específico en 10 pasos:
+Migrar todo su sitio web y el correo a OVHcloud **sin interrupción del servicio** requiere un procedimiento específico en 10 pasos:
 
 - [Etapa 1: contratar el alojamiento y las direcciones de correo en OVHcloud](#step1)
 - [Etapa 2: crear y pre-configurar una zona DNS para su dominio en OVHcloud](#step2)

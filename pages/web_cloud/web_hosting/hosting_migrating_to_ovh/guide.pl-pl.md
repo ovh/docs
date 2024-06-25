@@ -34,7 +34,7 @@ Niniejszy przewodnik prezentuje działania, które należy przeprowadzić, aby p
 > Instrukcje zawarte w tym przewodniku odnoszą się do kilku produktów z usług WWW Cloud. Zalecamy zapoznanie się z poniższymi krokami **przed**, aby rozpocząć migrację Twoich usług.
 >
 
-Przeniesienie strony WWW i kont e-mail do OVHcloud **bez przerwy w działaniu usługi** wymaga zastosowania określonej procedury w 10 krokach:
+Przeniesienie całej strony WWW i kont e-mail do OVHcloud **bez przerwy w dostępie do usługi** wymaga zastosowania 10 konkretnych procedur:
 
 - [Etap 1: zamów hosting i konta e-mail w OVHcloud](#step1)
 - [Etap 2: utworzyć i wstępnie skonfigurować strefę DNS dla Twojej domeny w OVHcloud](#step2)

@@ -31,7 +31,7 @@ This guide will outline the steps you need to take to migrate your entire websit
 > The instructions in this guide reference several products from the Web Cloud universe. We recommend reading all the steps below **before** you begin migrating your services.
 >
 
-To migrate your website and emails to OVHcloud **without any service interruptions** you will need to follow a 10-step procedure:
+Migrating your entire website and emails to OVHcloud **without any service interruptions** requires a precise 10-step procedure:
 
 - [Step 1: Order the hosting plan and email accounts from OVHcloud](#step1)
 - [Step 2: Create and preconfigure a DNS zone for your domain name at OVHcloud](#step2)

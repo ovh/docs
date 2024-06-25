@@ -34,7 +34,7 @@ Este guia apresenta-lhe as diferentes ações a realizar para migrar o conjunto 
 > As instruções deste guia referem-se a vários produtos do universo Web Cloud, recomendamos que leia todos os passos em baixo **antes** de começar a migração dos seus serviços.
 >
 
-Migrar o seu website e os seus e-mails para a OVHcloud **sem interrupção de serviço** requer um procedimento preciso em 10 etapas:
+A migração do site e dos e-mails para a OVHcloud **sem interrupção do serviço** requer um procedimento preciso em 10 etapas:
 
 - [Etapa 1: encomendar o alojamento e os endereços de e-mail na OVHcloud](#step1)
 - [Etapa 2: criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud](#step2)
