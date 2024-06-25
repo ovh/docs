@@ -98,6 +98,7 @@
         + [Email Pro - Shared Responsibility](web_cloud/email_and_collaborative_solutions/email_pro/responsibility_model)
         + [Domains - Shared Responsibility](web_cloud/domains/responsibility_model_domains)
         + [Data Processing - Responsibility Model](public_cloud/data_analytics/data_processing/responsibility_model)
+        + [Managed E-mail Server on Mutualized Infrastructure - Responsibility Model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/responsibility_model_private_email_server_exchange)
 + Bare Metal Cloud
     + [Dedicated Servers](products/bare-metal-cloud-dedicated-servers)
         + [Getting started](bare-metal-cloud-dedicated-servers-getting-started)
