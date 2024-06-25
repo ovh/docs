@@ -100,7 +100,7 @@ This shared model can help relieve the customer’s operational burden.
 | Maintain in operational and security condition the Exchange service | I | RA |
 | Renew SSL certificate  | A | R |
 
-##### **3.1.7. Business continuity**
+##### **3.1.6. Business continuity**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
