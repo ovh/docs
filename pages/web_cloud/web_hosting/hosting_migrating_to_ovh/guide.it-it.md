@@ -235,6 +235,10 @@ In seguito, trasferisci il tuo dominio nella guida su [trasferisci un dominio in
 
 Una volta terminato il trasferimento dei tuoi dati e servizi, non ti resta che disattivare i tuoi servizi precedenti presso il tuo(i) precedente(i) provider.
 
+### Conclusione
+
+Dopo aver completato tutti e dieci gli step nell’ordine indicato, l’intero sito Web viene migrato in OVHcloud, senza interruzione del servizio.
+
 ## Per saperne di più <a name="go-further"></a>
 
 [Generalità sulle email condivise](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).

@@ -231,6 +231,10 @@ Then transfer your domain name using our guide on [transferring a domain name to
 
 Once you have transferred your data and services, you can cancel your old services with your service provider(s).
 
+### Conclusion
+
+After following the ten steps in order, your entire website is now migrated to OVHcloud, all without any service interruptions.
+
 ## Go further <a name="go-further"></a>
 
 [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).

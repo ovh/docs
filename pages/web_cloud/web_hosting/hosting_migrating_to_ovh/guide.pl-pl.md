@@ -235,6 +235,10 @@ Przenieś domenę w naszym przewodniku dotyczącym [transferu domeny do OVHcloud
 
 Po zakończeniu transferu danych i usług zrezygnuj ze starych usług u poprzedniego dostawcy.
 
+### Zakończenie
+
+Po wykonaniu 10 kroków w tej kolejności cała Twoja strona WWW zostanie przeniesiona do OVHcloud, bez przerwy w dostępie do usług.
+
 ## Sprawdź również <a name="go-further"></a>
 
 [Informacje ogólne na temat e-maili na hostingu](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).

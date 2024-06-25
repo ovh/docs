@@ -222,6 +222,10 @@ Transfiera su dominio con ayuda de nuestra guía sobre [transferencia de un domi
 
 Una vez que haya realizado la transferencia de los datos y servicios, solo tendrá que dar de baja los antiguos servicios que haya contratado con su(s) antiguo(s) proveedor(s).
 
+### Conclusión
+
+Una vez que haya realizado los diez pasos anteriores, podrá migrar a OVHcloud la totalidad de su sitio web, sin interrupción del servicio.
+
 ## Más información <a name="go-further"></a>
 
 [Información general sobre los mensajes de correo en alojamiento compartido](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).

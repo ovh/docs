@@ -235,6 +235,10 @@ De seguida, transfira o domínio para a OVHcloud através do nosso manual sobre 
 
 Uma vez concluída a transferência dos seus dados e serviços, só precisa de rescindir os seus antigos serviços no(s) seu(s) antigo(s) fornecedor(es).
 
+### Conclusão
+
+Após ter seguido as dez etapas em ordem, todo o seu website é agora migrado para a OVHcloud, tudo sem interrupção de serviço.
+
 ## Quer saber mais? <a name="go-further"></a>
 
 [Generalidades sobre os e-mails partilhados](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
