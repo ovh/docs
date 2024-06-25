@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie użytkowników lokalnych i zarządzanie nimi na koncie OVHcloud'
 excerpt: 'Dowiedz się, jak dodawać użytkowników lokalnych z poziomu konta OVHcloud'
-updated: 2024-03-05
+updated: 2024-06-25
 ---
 
 > [!primary]
@@ -36,10 +36,19 @@ Użytkownicy lokalni to jeden z typów tożsamości, które można skonfigurowa�
 
 #### Dodaj użytkownika
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w prawym górnym rogu kliknij `Twoją nazwę użytkownika`{.action} (1) i wybierz `Moje konto`{.action} (2).
-Następnie wybierz kartę `Zarządzanie użytkownikami`{.action} (3), a potem `Dodaj użytkownika`{.action} (4).
+Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie na pasku bocznym.
 
-![users-management](images/hubusers.png){.thumbnail}
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
+
+Aby uzyskać dostęp do menu IAM, przejdź do Panelu klienta.
+
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
+
+Następnie kliknij zakładkę `Tożsamości`{.action}, aby zarządzać użytkownikami lokalnymi.
+
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Następnie możesz kliknąć na `Dodaj użytkownika`{.action}.
 
 Pojawi się okno, w którym należy uzupełnić wymagane pola. Kliknij przycisk `Zatwierdź`{.action}, aby utworzyć użytkownika.
 
@@ -85,7 +94,7 @@ Edycja użytkownika pozwala na aktualizację jego adresu e-mail, uprawnień oraz
 
 #### Dodaj grupę
 
-W zakładce `Zarządzanie użytkownikami`{.action} kliknij `Zgłoś grupę`{.action}.
+W zakładce `Identifier`{.action} kliknij `Zgłoś grupę`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

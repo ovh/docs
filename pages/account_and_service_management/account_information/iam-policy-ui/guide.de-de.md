@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinie über Ihr Kundencenter
 excerpt: Erfahren Sie hier, wie Sie Benutzern im OVHcloud Kunden-Account spezifische Zugriffsrechte gewähren
-updated: 2024-02-19
+updated: 2024-06-25
 ---
 
 > [!primary]
@@ -153,9 +153,7 @@ Auf diese Weise können Sie die Benutzer oder Gruppen, für die die Richtlinie g
 
 ### Verwaltung von Identitäten
 
-Die für die Richtlinien verfügbaren Identitäten werden über den Tab `Verwaltung der Nutzer`{.action} im Menü `Mein Account`{.action} verwaltet.
-
-Der Tab `Identitäten`{.action} des IAM-Menüs leitet Sie zu diesem Bereich weiter.
+Die für die Richtlinien verfügbaren Identitäten werden über den Tab `Identitäten`{.action} verwaltet.
 
 Details zur Benutzerverwaltung finden Sie in [unserer Dokumentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

@@ -1,7 +1,7 @@
 ---
 title: SSO-Verbindungen zu Ihrem OVHcloud Account über Active Directory Federation Services (AD FS) aktivieren
 excerpt: "Erfahren Sie hier, wie Sie Active Directory Federation Services über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
-updated: 2024-03-05
+updated: 2024-06-25
 ---
 
 > [!primary]
@@ -125,17 +125,17 @@ Wenn die Entsprechungstabelle vollständig ist, vertraut Ihr AD FS nun OVHcloud 
 
 Das Hinzufügen Ihrer AD FS als vertrauenswürdiger Identity Provider erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), in dem Sie die Metadaten des Identity Providers hinterlegen können.
 
-Loggen Sie sich ein und klicken Sie oben rechts auf Ihren Account-Namen.
+Klicken Sie oben rechts auf den Namen Ihres Accounts und dann erneut in der Seitenleiste auf Ihren Namen.
 
-![OVHcloud Top Menü](images/ovhcloud_top_menu.png){.thumbnail}
+![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Klicken Sie auf die Initialen, um auf die Verwaltungsseite Ihres Accounts zuzugreifen.
+Sie können das IAM-Menü über den dedizierten Eintrag in Ihrem Kundencenter aufrufen.
 
-![OVHcloud Benutzerinformationen](images/ovhcloud_user_infos.png){.thumbnail}
+![IAM-Menüzugriff](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Öffnen Sie den Tab `Verwaltung der Nutzer`{.action}.
+Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der lokalen Benutzer zuzugreifen.
 
-![OVHcloud Menüprofil](images/ovhcloud_profile_menu.png){.thumbnail}
+![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Klicken Sie auf den Button `SSO-Verbindung`{.action}.
 

@@ -1,7 +1,7 @@
 ---
 title: "Lokale Benutzer auf einem OVHcloud Kunden-Account erstellen und verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Benutzer über Ihren OVHcloud Kunden-Account verwalten"
-updated: 2024-03-05
+updated: 2024-06-25
 ---
 
 > [!primary]
@@ -36,11 +36,19 @@ Lokale Benutzer sind einer der Identitätstypen, die in Ihrem OVHcloud Kunden-Ac
 
 #### Benutzer hinzufügen
 
-Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt sind, klicken Sie oben rechts auf Ihren `Account-Namen`{.action} (1) und klicken Sie dann auf die Initialen (2).
+Klicken Sie oben rechts auf den Namen Ihres Accounts und dann erneut in der Seitenleiste auf Ihren Namen.
 
-Klicken Sie anschließend auf den Tab `Verwaltung der Nutzer`{.action} (3) und dann auf `Nutzer hinzufügen`{.action} (4).
+![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-![Benutzerverwaltung](images/hubusers.png){.thumbnail}
+Sie können das IAM-Menü über den dedizierten Eintrag in Ihrem Kundencenter aufrufen.
+
+![IAM-Menüzugriff](images/access_to_the_IAM_menu_02.png){.thumbnail}
+
+Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der lokalen Benutzer zuzugreifen.
+
+![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Anschließend können Sie auf `Nutzer hinzufügen`{.action} klicken.
 
 Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken Sie auf `Bestätigen`{.action}, um den Benutzer zu erstellen.
 
@@ -86,7 +94,7 @@ Durch Bearbeiten des Benutzers können Sie dessen E-Mail-Adresse, Rechte und die
 
 #### Gruppe hinzufügen
 
-Klicken Sie im Tab `Verwaltung der Nutzer`{.action} auf `Gruppe deklarieren`{.action}.
+Klicken Sie im Tab `Identitäten`{.action} auf `Gruppe deklarieren`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

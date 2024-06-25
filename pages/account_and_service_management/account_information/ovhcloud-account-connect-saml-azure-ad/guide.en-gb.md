@@ -1,7 +1,7 @@
 ---
-title: Enabling Azure SSO connections with your OVHcloud account
+title: Enabling Entra ID SSO connections with your OVHcloud account
 excerpt: "Find out how to associate your Entra ID (formerly Azure Active Directory) to your OVHcloud account using SAML 2.0"
-updated: 2024-03-05
+updated: 2024-06-25
 ---
 
 ## Objective
@@ -203,17 +203,17 @@ Adding your Entra ID application as a trusted identity provider is done in the [
 
 #### Establish OVHcloud trust
 
-[Log in](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and click on your profile in the top-right corner.
+Click your account name in the top-right corner, then on your name again in the sidebar.
 
-![OVHcloud top menu](images/ovhcloud_top_menu.png){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Click on your name to access your profile management page.
+You can access the IAM menu via the dedicated entry in your Control Panel.
 
-![OVHcloud user infos](images/ovhcloud_user_infos.png){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Open the `User management`{.action} tab.
+Then click on the `Identities`{.action} tab to access local users management.
 
-![OVHcloud profile menu](images/ovhcloud_profile_menu.png){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Click on the `SSO connection`{.action} button.
 

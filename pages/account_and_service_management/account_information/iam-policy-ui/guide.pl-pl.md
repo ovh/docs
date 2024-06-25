@@ -1,7 +1,7 @@
 ---
 title: Jak korzystać z polityki IAM w Panelu klienta
 excerpt: Dowiedz się, jak przypisać użytkownikom uprawnienia dostępu do konta OVHcloud
-updated: 2024-02-19
+updated: 2024-06-25
 ---
 
 > [!primary]
@@ -153,9 +153,7 @@ Dzięki temu będziesz mógł dodawać i usuwać użytkowników lub grupy, do kt
 
 ### Zarządzanie tożsamością
 
-Tożsamość dostępna dla polityk jest zarządzana w zakładce `Zarządzanie użytkownikami`{.action} w menu `Moje konto`{.action}.
-
-Zakładka `Identifier`{.action} z menu IAM przekierowuje Cię do tego menu.
+Tożsamość dostępna dla polityk jest zarządzana w zakładce `Tożsamości`{.action}.
 
 Szczegóły zarządzania użytkownikami znajdziesz w [dokumentacji dedykowanej](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
