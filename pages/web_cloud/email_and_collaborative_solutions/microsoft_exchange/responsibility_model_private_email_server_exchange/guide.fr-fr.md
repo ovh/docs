@@ -59,7 +59,7 @@ Définition ## RACI
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Gestion de la confidentialité et de l’intégrité des données hébergées sur le service | RA | |
-| Gérer l'accessibilité du réseau et la disponibilité des données sur le service hébergé suivant le SLA OVHcloud | | RA |
+| Gérer l'accessibilité du réseau et la disponibilité des données sur le service hébergé suivant les SLA OVHcloud | | RA |
 | Gérer les risques liés au logiciel client utilisé (Outlook, Thunderbird, etc.) | RA | |
 | Administrer l’infrastructure de services (serveurs, OS, antivirus, stockage) | | RA |
 | Administrer le domaine, les boîtes aux lettres, les groupes de distribution, un connecteur d'envoi, etc. | RA | IR |
@@ -89,8 +89,8 @@ Définition ## RACI
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gestion du plan d’adressage IP et des systèmes réseau (architecture, protocoles, trafic réseau et accès au service) | | RA |
-| Filtre les flux réseau | RA | |
+| Gérer du plan d’adressage IP et des systèmes réseau (architecture, protocoles, trafic réseau et accès au service) | | RA |
+| Filtrer les flux réseau | RA | |
 
 ##### **3.1.5. Gestion **
 
@@ -100,7 +100,7 @@ Définition ## RACI
 | Maintenir en état de fonctionnement et de sécurité le service Exchange | I | RA |
 | Renouveler le certificat SSL | A | R |
 
-##### **3.1.7. Continuité d’activité**
+##### **3.1.6. Continuité d’activité**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
@@ -124,35 +124,35 @@ Définition ## RACI
 | Remplacer le matériel défectueux pour prendre en charge le service | | RA |
 
 
-### 4. Rétablissement
+### 4. Réversibilité
 
 #### 4.1. Modèle de réversibilité
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Choisir un outil de migration pour exporter les comptes e-mail de l'ancienne infrastructure | RA | |
-| Choisissez le format du fichier d'extraction en suivant le logiciel utilisé pour la migration | RA | |
+| Choisir le format du fichier d'extraction en suivant le logiciel utilisé pour la migration | RA | |
 
 
 #### 4.2. Récupération des données
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Définit et planifie les opérations de réversion | RA | I |
+| Définir et planifier les opérations de réversion | RA | I |
 
 ### 5. Fin de service
 
-#### 5.1. Suppression de la configuration
+#### 5.1. Effacement de la configuration
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Supprimer les configurations en fin de service suite à la résiliation du contrat| I | RA |
 
-#### 5.2. Suppression des données
+#### 5.2. Effacement des données
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Détruire les données du client | I | RA |
+| Effacer les données du client | I | RA |
 
 ## Aller plus loin
 
