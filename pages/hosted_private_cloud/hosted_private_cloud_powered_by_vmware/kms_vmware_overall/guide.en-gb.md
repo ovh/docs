@@ -53,7 +53,7 @@ With OVHcloud KMS, you get the benefits of a managed key management service (KMS
 For more information on the advantages of using the OVHcloud KMS, please refer to our guide : 
 - [KMS architecture](/pages/manage_and_operate/kms/architecture-overview).
 
-### OMK/CMK feature comparison
+### OKMS feature comparison
 
 |                                   | OMK (OVHcloud Managed Key)                                                                                                                                                                               | Customer Managed Key (CMK)              |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
@@ -65,7 +65,9 @@ For more information on the advantages of using the OVHcloud KMS, please refer t
 | Bring Your Own key                | n/a                                                                                                                                                                                                      | Yes                                     |
 | Key types                         | Symmetric keys of 128, 192 and 256 bits <br><br> Asymmetric keys using: RSA-1024, RSA-2048, RSA-3072 or RSA-4096 Elliptic curve keys using EC-256, EC-384, EC-521 with curves values P-256, P-384, P-521 |                                         |
 
-## Step 1 - If you already have a Key Management Service (KMS)
+## Step 1 - Without OKMS
+
+### If you already have a Key Management Service (KMS)
 
 If you already have a Key Management Service (KMS) and you want to use it on your Hosted Private Cloud VMware on OVHcloud.
 
@@ -74,16 +76,18 @@ If you already have a Key Management Service (KMS) and you want to use it on you
 To do this, you will need to configure KMS on your Hosted Private Cloud VMware on OVHcloud, follow the instructions below:
 - [Guide 1 - Configure virtual machine encryption on vSphere with my KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration).
 
-Some useful information is also available on the old guide :
+Some useful information is also available on this guide :
 - [Guide 5: Enabling VM Encryption](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt).
 
-## Step 2 - If you do not have a KMS key management service
+## Step 2 - With OVHcloud KMS (OKMS)
+
+### If you do not have a KMS key management service
 
 You do not have a key management service (KMS) and you want to use the one offered by OVHcloud to encrypt your VMware on OVHcloud Hosted Private Cloud data.
 
 ### How do I activate the OVHcloud KMS with my VMware Hosted Private Cloud on OVHcloud?
 
-If you do not have a KMS server and you want to use the OVHcloud server, you can follow the :
+If you do not have a KMS server, and you want to use the OVHcloud server (OKMS), you can follow the :
 - [Guide 3 - Order an OVHcloud KMS with your Hosted Private Cloud VMware on OVHcloud](/pages/manage_and_operate/kms/quick-start).
 
 Once you have ordered your KMS and enabled it with your Hosted Private Cloud, you will still need to synchronize with your VMware on OVHcloud environment to enable encryption. To do this, go to guide 1 :
@@ -98,16 +102,20 @@ Once you have ordered the OVHcloud KMS, you can configure it to work with your H
 
 For more information, follow the guide: [Guide 1 - Configure Virtual Machine Encryption with a KMS Server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration)
 
-## Step 3 - If you do not have a Key Management Service (KMS)
+## Step 3 - With vNKP
 
-### And you don't want to use OVHcloud's
+### If you do not have a Key Management Service (KMS)
 
-### How do I use the vSphere Native Key Management (vNKP) service?
+If you don't want to use OVHcloud's KMS.
+
+### How do I use the vSphere Native Key Management (vNKP) service ?
 
 > [!warning] 
+> 
 > OVHcloud provides you with services for which you are responsible, and for their configuration and management. You are therefore responsible for ensuring that it works properly.
+>
 
-If you would like to manage your encryption keys (KMS) personally with the KMIP protocol.
+If you would like to manage your encryption keys (KMS) personally with the VMware native protocol.
 
 You can do this with the Hosted Private Cloud VMWare on OVHcloud **vNKP** technology provided.
 
