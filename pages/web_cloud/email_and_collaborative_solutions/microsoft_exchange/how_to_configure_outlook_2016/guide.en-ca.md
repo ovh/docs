@@ -1,5 +1,5 @@
 ---
-title: 'Configuring your Exchange account in Outlook for Windows'
+title: 'Exchange - Configure your email account on Outlook for Windows'
 excerpt: 'Find out how to configure your Exchange account in Outlook for Windows'
 updated: 2021-07-05
 ---
@@ -17,13 +17,13 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 ## Requirements
 
 - an [OVHcloud Exchange account](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external}
-- Microsoft Outlook 2016 or later installed on your device
+- Microsoft Outlook or later installed on your device
 - login credentials for the email account to be configured
 - The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook 2016 for Mac.](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
+> Are you using Outlook for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook for Mac.](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
 >
 
 ## Instructions

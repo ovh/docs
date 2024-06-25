@@ -17,7 +17,7 @@ updated: 2024-02-16
 
 Les comptes MX Plan  peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
 
-**Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook 2016 ou ultérieur pour Windows.**
+**Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook ou ultérieur pour Windows.**
 
 > [!warning]
 >
@@ -29,12 +29,12 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
 ## Prérequis
 
 - Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}).
-- Disposer du logiciel Microsoft Outlook 2016 ou ultérieur.
+- Disposer du logiciel Microsoft Outlook ou ultérieur.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
  
 > [!primary]
 >
-> Vous utilisez Outlook 2016 pour Mac ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook 2016 pour Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}.
+> Vous utilisez Outlook pour Mac ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## En pratique

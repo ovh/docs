@@ -1,5 +1,5 @@
 ---
-title: 'Configurare un account Exchange su Outlook per Windows'
+title: 'Exchange - Configura il tuo account di posta elettronica su Outlook per Windows'
 excerpt: 'Scopri come configurare un account Exchange su Outlook per Windows'
 updated: 2021-07-05
 ---
@@ -25,13 +25,13 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 ## Prerequisiti
 
 - Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/){.external}
-- Aver installato il software Microsoft Outlook 2016 o successivo, sul tuo computer
+- Aver installato il software Microsoft Outlook o successivo, sul tuo computer
 - Disporre delle credenziali associate all’indirizzo email da configurare
 - Il record SRV di OVHcloud deve essere configurato correttamente nella zona DNS del nome di dominio, consulta la nostra guida [Aggiungere un dominio sul servizio Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 > [!primary]
 >
-> Utilizzi Outlook 2016 e poi per Mac? Consulta la nostra documentazione: [Configurare un account Exchange su Outlook 2016 per Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
+> Utilizzi Outlook e poi per Mac? Consulta la nostra documentazione: [Configurare un account Exchange su Outlook per Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
 >
 
 ## Procedura
@@ -78,8 +78,8 @@ Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei
 
 ## Per saperne di più
 
-[Configurare un account email su Outlook 2016 per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+[Configurare un account email su Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 
-[Configurare un account Email Pro su Outlook 2016 per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+[Configurare un account Email Pro su Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

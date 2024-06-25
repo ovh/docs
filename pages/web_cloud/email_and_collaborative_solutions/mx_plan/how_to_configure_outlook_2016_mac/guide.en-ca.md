@@ -1,6 +1,6 @@
 ---
-title: 'Configuring your email address in Outlook for macOS'
-excerpt: 'Find out how to configure your email address in Outlook 2016 for macOS'
+title: 'MX Plan - Configuring your email address in Outlook for macOS'
+excerpt: 'Find out how to configure your email address in Outlook for macOS'
 updated: 2018-05-31
 ---
 
@@ -16,7 +16,7 @@ You can configure email addresses on email clients, if they are compatible. This
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your email address in Outlook 2016 for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
+> Are you using Outlook for Windows? Read our guide: [Configuring your email address in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
 >
 
 ## Instructions
@@ -74,6 +74,6 @@ OVHcloud also offers a web application that you can use to consult your email fr
 
 ## Go further
 
-[Configuring your Exchange account in Outlook 2016 for Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
+[Configuring your Exchange account in Outlook for Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
 
 Join our community of users on <https://community.ovh.com/en/>.

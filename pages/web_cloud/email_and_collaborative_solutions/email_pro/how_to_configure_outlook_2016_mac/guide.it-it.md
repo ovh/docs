@@ -1,6 +1,6 @@
 ---
-title: 'Configurare un account Email Pro su Outlook 2016 per Mac'
-excerpt: 'Scopri come configurare un account Email Pro su Outlook 2016 per Mac'
+title: 'Email Pro - Configura il tuo account di posta elettronica su Outlook per macOS'
+excerpt: 'Scopri come configurare un account Email Pro su Outlook per Mac'
 updated: 2020-03-18
 ---
 
@@ -23,7 +23,7 @@ Gli account Email Pro possono essere configurati su diversi client di posta comp
 
 > [!primary]
 >
-> Se utilizzi Outlook 2016 per Windows, consulta la nostra guida: [Configurare un account Exchange su Outlook 2016 per Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
+> Se utilizzi Outlook per Windows, consulta la nostra guida: [Configurare un account Exchange su Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
 >
 
 ## Procedura
@@ -45,7 +45,7 @@ Una volta avviata l'applicazione Outlook sul tuo dispositivo, puoi aggiungere un
 
 ![emailpro](images/configuration-outlook-2016-mac-step1.png){.thumbnail}
 
-Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}. Come provider, seleziona IMAP/POP e compila i campi richiesti. 
+Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}. Come provider, seleziona IMAP/POP e compila i campi richiesti.
 
 |Informazione|Descrizione|
 |---|---|
@@ -64,7 +64,7 @@ Per verificare la corretta configurazione dell'account esegui un test di invio.
 
 ![emailpro](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-Se devi inserire manualmente le impostazioni nelle preferenze del tuo account, puoi trovare qui di seguito i parametri da utilizzare con il nostro servizio Email Pro: 
+Se devi inserire manualmente le impostazioni nelle preferenze del tuo account, puoi trovare qui di seguito i parametri da utilizzare con il nostro servizio Email Pro.
 
 |Tipo di server |Nome del server|SSL|Porta|
 |---|---|---|---|
@@ -79,8 +79,8 @@ OVHcloud propone anche un'applicazione Web con [funzionalità collaborative](htt
 
 ## Per saperne di più
 
-[Configurare un indirizzo email compreso nell'offerta MX Plan o in un'offerta di hosting Web su Outlook 2016 per Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
+[Configurare un indirizzo email compreso nell'offerta MX Plan o in un'offerta di hosting Web su Outlook per Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
 
-[Configurare un account Exchange su Outlook 2016 per Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
+[Configurare un account Exchange su Outlook per Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
 
 Contatta la nostra Community di utenti all'indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

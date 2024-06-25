@@ -1,5 +1,5 @@
 ---
-title: 'Konfiguracja konta E-mail Pro w programie Outlook na systemie Windows'
+title: 'Email Pro - Skonfiguruj konto e-mail w programie Outlook dla systemu Windows'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook na urządzeniu z systemem Windows'
 updated: 2021-07-05
 ---
@@ -94,8 +94,8 @@ Okno jest podzielone na dwie części, **Poczta przychodząca** i **Wychodząca*
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail w Outlook 2016 na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
+[Konfiguracja konta e-mail w Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
 
-[Konfiguracja konta Exchange w Outlook 2016 na systemie Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
+[Konfiguracja konta Exchange w Outlook na systemie Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,6 +1,6 @@
 ---
-title: 'Configurare un account email su Outlook per macOS'
-excerpt: 'Scopri come configurare il tuo indirizzo email MX Plan su Outlook 2016 per Mac'
+title: 'MX Plan - Configurare un indirizzo email su Outlook per macOS'
+excerpt: 'Scopri come configurare il tuo indirizzo email MX Plan su Outlook per Mac'
 updated: 2018-05-31
 ---
 
@@ -8,7 +8,7 @@ updated: 2018-05-31
 
 Gli indirizzi email dell’offerta MX Plan possono essere configurati su un programma di posta elettronica compatibile. Ciò ti consente di inviare e ricevere messaggi dall’applicazione che preferisci.
 
-Scopri come configurare il tuo indirizzo email MX Plan su Outlook 2016 per Mac.
+Scopri come configurare il tuo indirizzo email MX Plan su Outlook per Mac.
 
 ## Prerequisiti
 
@@ -18,7 +18,7 @@ Scopri come configurare il tuo indirizzo email MX Plan su Outlook 2016 per Mac.
 
 > [!primary]
 >
-> Se utilizzi Outlook 2016 per Windows, consulta la nostra guida per [Configurare un indirizzo email su Outlook 2016 per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
+> Se utilizzi Outlook per Windows, consulta la nostra guida per [Configurare un indirizzo email su Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
 >
 
 ## Procedura
@@ -76,8 +76,8 @@ OVHcloud propone un’applicazione Web con [funzionalità collaborative](https:/
 
 ## Per saperne di più
 
-[Configurare un account Email Pro su Outlook 2016 per Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac){.external}.
+[Configurare un account Email Pro su Outlook per Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac){.external}.
 
-[Configurare un account Exchange su Outlook 2016 per Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
+[Configurare un account Exchange su Outlook per Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

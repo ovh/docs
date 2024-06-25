@@ -52,7 +52,7 @@ En fin de configuration, assurez-vous de bien laisser `Mail`{.action} coché afi
 
 Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctement paramétré.
 
-Si vous êtes amené à renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre E-mail Pro :
+Si vous êtes amené à renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre E-mail Pro.
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|

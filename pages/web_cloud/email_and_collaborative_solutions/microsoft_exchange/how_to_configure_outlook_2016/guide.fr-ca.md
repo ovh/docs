@@ -1,6 +1,6 @@
 ---
-title: Configurer son compte Exchange sur Outlook 2016 pour Windows
-excerpt: Apprenez à configurer un compte Exchange sur Outlook 2016 pour Windows
+title: Exchange - Configurer son compte e-mail sur Outlook pour Windows
+excerpt: Apprenez à configurer un compte Exchange sur Outlook pour Windows
 updated: 2021-07-05
 ---
 
@@ -11,13 +11,13 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 ## Prérequis
 
 - Disposer d'une offre [Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}.
-- Disposer du logiciel Microsoft Outlook 2016 installé sur votre appareil.
+- Disposer du logiciel Microsoft Outlook installé sur votre appareil.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 - Le champ SRV d'OVHcloud doit être correctement configuré dans la zone DNS du nom de domaine.
 
 > [!primary]
 >
-> Vous utilisez Outlook 2016 pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
+> Vous utilisez Outlook pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## En pratique
@@ -45,7 +45,7 @@ Une fenêtre de sécurité vous demandant de renseigner le **mot de passe** de l
 
 Si la configuration de votre nom de domaine est correcte, un message vous demandant d'autoriser une connexion vers le serveur d'OVHcloud apparaît. Acceptez cette connexion afin de permettre la configuration automatique de votre compte Exchange.
 
-Une fois celui-ci correctement paramétré et accessible depuis votre logiciel Outlook 2016, vous pouvez effectuer un test d'envoi pour vérifier que le compte est fonctionnel.
+Une fois celui-ci correctement paramétré et accessible depuis votre logiciel Outlook, vous pouvez effectuer un test d'envoi pour vérifier que le compte est fonctionnel.
 
 ![exchange](images/configuration-outlook-2016-windows-exchange-step2.png){.thumbnail}
 

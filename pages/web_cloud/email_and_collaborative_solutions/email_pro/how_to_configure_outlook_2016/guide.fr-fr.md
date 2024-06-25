@@ -1,5 +1,5 @@
 ---
-title: 'Configurer un compte E-mail Pro sur Outlook'
+title: 'E-mail Pro - Configurer un compte e-mail sur Outlook pour Windows'
 excerpt: 'Découvrez comment configurer votre compte E-mail Pro sur Outlook pour Windows'
 updated: 2021-07-05
 ---
@@ -89,8 +89,8 @@ La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sor
 
 ## Aller plus loin
 
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook 2016 pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}
 
-[Configurer son compte Exchange sur Outlook 2016 pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
+[Configurer son compte Exchange sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

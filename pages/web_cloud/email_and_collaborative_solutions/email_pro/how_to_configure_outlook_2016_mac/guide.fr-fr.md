@@ -1,6 +1,6 @@
 ---
-title: 'Configurer son compte E-mail Pro sur Outlook 2016 pour Mac'
-excerpt: 'Apprenez à configurer un compte E-mail Pro sur Outlook 2016 pour Mac'
+title: 'E-mail Pro - Configurer son compte e-mail sur Outlook pour macOS'
+excerpt: 'Apprenez à configurer un compte E-mail Pro sur Outlook pour Mac'
 updated: 2020-03-18
 ---
 
@@ -8,7 +8,7 @@ updated: 2020-03-18
 
 Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
 
-**Apprenez à configurer un compte E-mail Pro sur Outlook 2016 pour Mac.**
+**Apprenez à configurer un compte E-mail Pro sur Outlook pour Mac.**
 
 > [!warning]
 >
@@ -25,7 +25,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!primary]
 >
-> Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook 2016 pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}.
+> Vous utilisez Outlook pour Windows ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}.
 >
 
 ## En pratique
@@ -66,7 +66,7 @@ Vous pouvez effectuer un test d'envoi pour vérifier que le compte est bien para
 
 ![emailpro](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-Si vous devez renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre E-mail Pro :
+Si vous devez renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre E-mail Pro.
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
@@ -81,8 +81,8 @@ OVHcloud propose également une application web disposant de [fonctions collabor
 
 ## Aller plus loin
 
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook 2016 pour Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
 
-[Configurer son compte Exchange sur Outlook 2016 pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
+[Configurer son compte Exchange sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

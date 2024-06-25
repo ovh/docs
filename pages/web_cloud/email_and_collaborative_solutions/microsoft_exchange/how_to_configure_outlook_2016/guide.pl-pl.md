@@ -1,5 +1,5 @@
 ---
-title: 'Konfiguracja konta Exchange w Outlook na systemie Windows'
+title: 'Exchange - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu Windows'
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook na urządzeniu z systemem Windows'
 updated: 2021-07-05
 ---
@@ -25,13 +25,13 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 ## Wymagania początkowe
 
 - Wykupienie usługi [Exchange](https://www.ovhcloud.com/pl/emails/){.external}.
-- Instalacja programu Microsoft Outlook 2016 lub nowszego oprogramowania na Twoim komputerze
+- Instalacja programu Microsoft Outlook lub nowszego oprogramowania na Twoim komputerze
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 - Pole SRV OVHcloud musi być poprawnie skonfigurowane w strefie DNS domeny. Sprawdź nasz przewodnik [Dodaj domenę do usługi Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 > [!primary]
 >
-> Używasz programu Outlook 2016 i później na urządzeniu Mac? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
+> Używasz programu Outlook i później na urządzeniu Mac? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## W praktyce
@@ -78,8 +78,8 @@ Jeśli musisz wykonać operację, która może spowodować utratę danych przypi
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w programie Outlook 2016 na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
+[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
 
-[Konfiguracja konta E-mail Pro w programie Outlook 2016 na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
+[Konfiguracja konta E-mail Pro w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
