@@ -184,7 +184,7 @@ En effet, cette méthode vous évite de refaire une migration pour les quelques 
 
 ### Etape 7 : transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles adresses chez OVHcloud <a name="step7"></a>
 
-Après la propagation DNS , vos nouveaux e-mails sont désormais tous reçus sur vos nouvelles adresses e-mail. Mais vos anciens e-mails sont toujours enregistrés sur votre ancien serveur e-mail.
+Après la propagation DNS, vos nouveaux e-mails sont désormais tous reçus sur vos nouvelles adresses e-mail. Mais vos anciens e-mails sont toujours enregistrés sur votre ancien serveur e-mail.
 
 Pour migrer le contenu de vos anciennes adresses e-mail, deux options s'offrent à vous.
 

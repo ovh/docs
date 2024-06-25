@@ -176,13 +176,13 @@ Este método permite evitar uma migração adicional para os poucos e-mails rece
 
 ### Etapa 7 : transferir o conteúdo dos endereços de e-mail antigos para os novos endereços OVHcloud <a name="step7"></a>
 
-Após a propagação DNS, os seus novos e-mails foram todos recebidos nos seus novos endereços de e-mail. No entanto, os seus antigos e-mails continuam registados no seu antigo servidor de e-mail.
+Após a propagação DNS, os seus novos e-mails são agora todos recebidos nos seus novos endereços de e-mail. Mas os e-mails antigos ainda estão a ser guardados no servidor de e-mail antigo.
 
-Para migrar o conteúdo dos endereços antigos, existem duas opções.
+Para migrar o conteúdo dos seus antigos endereços de e-mail, tem duas opções à sua disposição.
 
 **Opção 1**: utilize a nossa ferramenta [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} que permite copiar o conteúdo dos endereços de e-mail registados no seu antigo fornecedor para os criados na OVHcloud. Para mais informações, consulte o nosso manual "[Migrar contas de e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)".
 
-Sugerimos que não utilize o `Tipo de servidor`{.action} **POP** na parte `Conta source`{.action}. Este protocolo apaga os e-mails do seu antigo servidor para os enviar para o servidor OVHcloud de destino. Neste caso, já não poderá comparar o conteúdo do antigo e do novo endereço de e-mail.
+Sugerimos que não utilize o `Tipo de servidor`{.action} **POP** na parte `Conta source`{.action}. Este protocolo apaga os e-mails do seu antigo servidor para os enviar para o servidor OVHcloud de destino. Neste caso, já não será possível comparar o conteúdo do endereço de e-mail antigo e novo.
 
 Para a parte `Conta de destino`{.action}, introduza apenas o endereço de e-mail OVHcloud em questão e a respetiva palavra-passe. Isto permitindo o `Tipo de serviço`{.action} em `Hosted by OVH (Autodetect)`{.action}.
 

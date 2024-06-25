@@ -176,13 +176,13 @@ Este método permite evitar la migración de los pocos mensajes de correo recibi
 
 ### Etapa 7: transferir el contenido de sus antiguas direcciones de correo a sus nuevas direcciones en OVHcloud <a name="step7"></a>
 
-Tras la propagación de DNS, se le enviarán todos los mensajes de correo a las nuevas direcciones de correo. No obstante, su antiguo correo seguirá guardado en su antiguo servidor de correo.
+Tras la propagación DNS , todos los nuevos mensajes de correo se reciben en las nuevas direcciones de correo. Sin embargo, los mensajes de correo antiguos siempre se guardan en el servidor de correo antiguo.
 
-Existen dos opciones para migrar el contenido de sus antiguas direcciones:
+Existen dos opciones para migrar el contenido de sus antiguas direcciones de correo.
 
 **Opción 1**: utilice nuestra herramienta [OVH Mail Migrator (OMM)](https://omm.ovh.net/) {.external} que permite copiar el contenido de las direcciones de correo electrónico que tuviera con su anterior proveedor a las creadas en OVHcloud. Para más información, consulte nuestra guía [Migrar cuentas de correo electrónico a través de OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
-Le recomendamos que no utilice el `Tipo de servidor`{.action} **POP** en la sección `Cuenta de origen`{.action}. Este protocolo elimina los mensajes de correo de su antiguo servidor para enviarlos al servidor de destino de OVHcloud. No podrá comparar el contenido de la antigua dirección y la nueva dirección de correo electrónico.
+Le recomendamos que no utilice el `Tipo de servidor`{.action} **POP** en la sección `Cuenta de origen`{.action}. Este protocolo elimina los mensajes de correo de su antiguo servidor para enviarlos al servidor de destino de OVHcloud. En ese caso, no podrá comparar el contenido de la antigua dirección de correo con el de la nueva dirección.
 
 En la sección `Cuenta de destino`{.action}, introduzca únicamente la dirección de correo electrónico de OVHcloud correspondiente y su contraseña asociada, dejando el `Tipo de servidor`{.action} como `Hosted by OVH (Autodetect)`{.action}.
 

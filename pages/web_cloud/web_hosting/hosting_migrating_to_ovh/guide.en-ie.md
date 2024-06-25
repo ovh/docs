@@ -172,13 +172,13 @@ This method avoids you having to redo a migration for the few emails received on
 
 ### Step 7: Transfer the content of your old email accounts to your new accounts with OVHcloud <a name="step7"></a>
 
-After the DNS propagation, all your new emails are received by your new email accounts. However, your old emails are still stored on your previous email server.
+After DNS propagation , your new emails are now all received on your new email addresses. However, your old emails are still saved on your old email server.
 
-To migrate the content of your old accounts, you have two options.
+There are two ways of migrating the content of your old email addresses.
 
 **Option 1**: Use our [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} tool, which allows you to copy the content of email accounts at your old service provider to your new OVHcloud accounts. You can refer to our guide [Migrating email accounts using OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
-We recommend that you do not use the `Server type`{.action} **POP** in the `Source account`{.action} section. This protocol deletes emails from your old server, and sends them to the destination OVHcloud server. You will no longer be able to compare the content of the old accounts with the new email accounts.
+We recommend that you do not use the `Server type`{.action} **POP** in the `Source account`{.action} section. This protocol deletes emails from your old server, and sends them to the destination OVHcloud server. You will no longer be able to compare the content of the old and new email addresses.
 
 As for `Destination account`{.action}, enter only the relevant OVHcloud email address and password. Keep the `Server type`{.action} in `Hosted by OVH (Autodetect)`{.action}.
 
