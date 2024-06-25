@@ -1,5 +1,5 @@
 ---
-title: 'Exchange - configura il tuo account di posta elettronica su Outlook per Windows'
+title: 'Exchange - Configura il tuo account di posta elettronica su Outlook per Windows'
 excerpt: 'Scopri come configurare un account Exchange su Outlook per Windows'
 updated: 2021-07-05
 ---

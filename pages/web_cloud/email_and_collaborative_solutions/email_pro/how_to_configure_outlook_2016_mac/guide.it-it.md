@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - configura il tuo account di posta elettronica su Outlook per macOS'
+title: 'Email Pro - Configura il tuo account di posta elettronica su Outlook per macOS'
 excerpt: 'Scopri come configurare un account Email Pro su Outlook per Mac'
 updated: 2020-03-18
 ---
