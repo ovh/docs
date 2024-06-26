@@ -12,24 +12,11 @@ updated: 2024-06-26
 
 A zona **D**omain **N**ame **S**ystem (**DNS**) de um nome de domínio constitui o ficheiro de configuração deste último. É composta por informações técnicas, designadas *registos DNS*. A zona DNS é, de certa forma, como um centro de agulhas.
 
-Pode, por exemplo, especificar:
+Para mais explicações, consulte os seguintes guias:
 
-- O endereço de IP (registos DNS de tipo *A* e *AAAA*) do seu alojamento web para apresentar o seu website com o seu domínio.
-- Os servidores de e-mail (registos DNS de tipo *MX*) para os quais o seu nome de domínio deve reencaminhar os e-mails que recebe. Isto permite-lhe consultá-los no(s) seu(s) endereço(s) de e-mail(s) personalizado(s) com o seu nome de domínio.
-- Informações relacionadas com a segurança / a autenticação dos seus serviços (alojamento web, servidor web, servidor de e-mail, etc.) associados ao seu nome de domínio (registos DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
-
-Se necessário, consulte a nossa documentação sobre [os registos DNS](/pages/web_cloud/domains/dns_zone_records) e a [edição de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit) a partir da [Área de Cliente OVHcloud](/links/manager).
-
-Uma zona DNS está alojada/registada em **servidores DNS**. São os **servidores DNS** que devem ser declarados junto do nome de domínio para utilizar a zona DNS que alojam. 
-
-Os **servidores DNS** funcionam geralmente por par:
-
-- Um servidor DNS *principal*: reencaminha os fluxos de pedidos recebidos pelo nome de domínio para a zona DNS que aloja para este último. Isto permite efetuar a *resolução DNS* para reencaminhar os fluxos para os serviços certos (servidores, website, e-mails, etc.) associados ao domínio.
-- Um servidor DNS *secundário*: este servidor de *SOS* é utilizado se o servidor * principal estiver sobrecarregado com pedidos, estiver indisponível ou responder menos rapidamente que o servidor *secundário*.
-
-Certos fornecedores DNS propõem 3 **servidores DNS** ou mais a declarar junto do seu nome de domínio para ativar a zona DNS que alojam para este último.
-
-Para mais informações sobre os **servidores DNS**, consulte o nosso [guia](/pages/web_cloud/domains/dns_server_general_information) sobre o assumpto.
+- [Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Por várias razões, poderá ter de criar uma zona DNS para o seu domínio na OVHcloud.
 

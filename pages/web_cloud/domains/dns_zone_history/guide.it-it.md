@@ -12,13 +12,12 @@ updated: 2024-06-26
 
 La zona **D**omain **N**ame **S**ystem (**DNS**) di un dominio costituisce il file di configurazione di quest'ultimo. ed è composta da informazioni tecniche chiamate *record DNS*. La zona DNS è, in un certo senso, come un centro di scambi.
 
-Ad esempio, è possibile specificare:
+Per maggiori informazioni, consulta le nostre guide:
 
-- l’indirizzo IP (record DNS di tipo *A* e *AAAA*) dell’hosting Web per visualizzare il sito Web con il dominio.
-- I server di posta (record DNS di tipo *MX*) verso cui il tuo dominio deve reindirizzare le email che riceve. Questo ti permette di consultarle sul tuo o sui tuoi indirizzi email personalizzati con il tuo dominio.
-- informazioni relative alla sicurezza/autenticazione dei servizi (hosting Web, server Web, server di posta, ecc...) associati al dominio (record DNS di tipo *SPF*, *DKIM*, *DMARC*, ecc...).
+- [Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
 
-In caso di necessità, consulta la nostra documentazione relativa a [i record DNS](/pages/web_cloud/domains/dns_zone_records) e alla [modifica di una zona DNS](/pages/web_cloud/domains/dns_zone_edit) dal tuo [Spazio Cliente OVHcloud](/links/manager).
 Per diversi motivi, potresti aver bisogno di applicare una configurazione DNS precedente al tuo dominio.
 
 Da questo momento, la gestione dei DNS è semplificata grazie alla cronologia delle zone DNS.
