@@ -31,7 +31,6 @@ Vous pouvez commander un KMS depuis [l'espace client OVHcloud](/links/manager) e
 
 - Cliquez sur `Bare Metal Cloud`{.action} puis sur `Identité, Sécurité & Opérations`{.action}. Cliquez sur `Key Management Service`{.action} puis sur le bouton `Commander un KMS`{.action}.
 - Cliquez sur `Hosted Private Metal Cloud`{.action} puis sur `Identité, Sécurité & Opérations`{.action}. Cliquez sur `Key Management Service`{.action} puis sur le bouton `Commander un KMS`{.action}.
-- Cliquez sur `Public Cloud`{.action} puis sur `Identity, Security`{.action}. Cliquez sur `Key Management Service`{.action} puis sur le bouton `Commander un KMS`{.action}.
 
 ![Accès au menu KMS](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
