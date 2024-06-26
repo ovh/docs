@@ -1,7 +1,7 @@
 ---
 title: "How to reset the Windows Administrator password with the Windows customer rescue system"
 excerpt: "Find out how to use the OVHcloud Windows rescue mode to reset the password of the Administrator account on a Windows dedicated server"
-updated: 2024-06-21
+updated: 2024-06-26
 ---
 
 ## Objective
