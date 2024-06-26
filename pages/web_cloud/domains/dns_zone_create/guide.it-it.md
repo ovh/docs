@@ -125,6 +125,12 @@ Una volta in possesso delle informazioni, **modifica i server DNS del tuo domini
 
 ## Per saperne di più
 
+[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
+
 [Modifica una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).

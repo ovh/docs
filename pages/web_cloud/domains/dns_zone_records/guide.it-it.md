@@ -12,7 +12,7 @@ updated: 2024-06-17
 
 L'acronimo **DNS**, che sta per **D**omain **N**ame **S**ystem, è un insieme di elementi (server DNS, zone DNS, ecc...) che permettono di far corrispondere un nome di dominio con un indirizzo IP.
 
-Prima di iniziare, ti consigliamo di consultare le nostre guide "[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)" e "Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)" in questo ordine.
+Prima di iniziare, ti consigliamo di consultare le nostre guide "[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)" e "[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)" in questo ordine.
 
 La zona DNS di un dominio costituisce il file di configurazione. ed è composta da informazioni tecniche chiamate *record DNS*. La zona DNS è, in un certo senso, un centro di scambio per un nome di dominio.
 
@@ -185,7 +185,7 @@ Per questo motivo e nel caso specifico, non sarà possibile creare un record CNA
 
 [Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)
+[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
 [Aggiungere un record SPF alla configurazione di un dominio](/pages/web_cloud/domains/dns_zone_spf)
 

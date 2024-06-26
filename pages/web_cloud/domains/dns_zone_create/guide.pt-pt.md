@@ -125,6 +125,12 @@ Depois de obter as informações, **modifique os servidores DNS do seu nome de d
 
 ## Quer saber mais?
 
+[Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
+
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).

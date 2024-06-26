@@ -115,6 +115,12 @@ Graças a este guia, pode agora comparar duas zonas DNS, mas também visualizar,
 
 ## Quer saber mais?
 
+[Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
+
 [Aceder à Área de Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
 [Criar uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create)

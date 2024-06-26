@@ -121,6 +121,12 @@ Mit den Namen der DNS-Server können Sie nun **die DNS-Server Ihres Domainnamens
 
 ## Weiterführende Informationen
 
+[Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information)
+
+[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Alle Informationen zu DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records)
+
 [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).

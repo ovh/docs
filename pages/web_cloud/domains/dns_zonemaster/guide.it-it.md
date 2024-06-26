@@ -20,7 +20,7 @@ updated: 2024-06-18
 
 > [!primary]
 >
-> Per comprendere meglio il concetto di DNS, consulta la nostra guida "Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)".
+> Per comprendere meglio il concetto di DNS, consulta la nostra guida "[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
 ## Prerequisiti
 

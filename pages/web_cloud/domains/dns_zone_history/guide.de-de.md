@@ -111,6 +111,12 @@ Mit dieser Anleitung können Sie nun zwei DNS-Zonen vergleichen sowie eine DNS-Z
 
 ## Weiterführende Informationen
 
+[Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information)
+
+[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Alle Informationen zu DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records)
+
 [In das OVHcloud Kundencenter einloggen](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
 [DNS-Zone bei OVHcloud erstellen](/pages/web_cloud/domains/dns_zone_create)

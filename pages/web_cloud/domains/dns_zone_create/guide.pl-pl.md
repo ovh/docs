@@ -125,6 +125,12 @@ Po uzyskaniu informacji o domenie **modyfikuj serwery DNS Twojej domeny w interf
 
 ## Sprawdź również
 
+[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
+
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).

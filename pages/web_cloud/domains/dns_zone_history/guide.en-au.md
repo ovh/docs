@@ -107,6 +107,12 @@ With this guide, you can now compare two DNS zones, and also view, download, res
 
 ## Go further
 
+[Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+
+[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
+
 [Logging in to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
 [Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create)

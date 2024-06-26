@@ -55,7 +55,7 @@ Una zona DNS contiene informazioni tecniche chiamate *record DNS*. La zona DNS �
 
 > [!success]
 >
-> - Per maggiori informazioni sulle zone DNS, consulta la nostra guida "Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)".
+> - Per maggiori informazioni sulle zone DNS, consulta la nostra guida "[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 > - Consulta la nostra guida su [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records) per una migliore comprensione dell'insieme.
 >
 
@@ -75,7 +75,7 @@ A volte alcuni provider DNS offrono più di 2 **server DNS (Authoritative)** da 
 
 ## Per saperne di più
 
-Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information).
+[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
 
 [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records).
 

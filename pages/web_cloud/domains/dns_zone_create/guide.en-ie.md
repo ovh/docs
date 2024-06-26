@@ -115,6 +115,12 @@ Once you have the information, **edit your domain name’s DNS servers in the in
 
 ## Go further
 
+[Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+
+[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
+
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).

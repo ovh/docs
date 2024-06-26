@@ -125,6 +125,12 @@ Le recordamos que antes de cambiar los **servidores DNS** declarados con su domi
 
 ## Más información
 
+[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
+
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).

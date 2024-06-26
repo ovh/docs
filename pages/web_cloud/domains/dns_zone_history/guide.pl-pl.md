@@ -115,6 +115,12 @@ Dzięki niniejszemu przewodnikowi możesz teraz porównywać dwie strefy DNS ora
 
 ## Sprawdź również
 
+[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
+
 [Zaloguj się do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
 [Utworzenie strefy DNS w OVHcloud](/pages/web_cloud/domains/dns_zone_create)

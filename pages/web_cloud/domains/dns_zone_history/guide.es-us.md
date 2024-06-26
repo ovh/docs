@@ -115,6 +115,12 @@ Esta guía explica cómo comparar dos zonas DNS, ver, descargar, restaurar y eli
 
 ## Más información
 
+[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
+
 [Conectarse al área de cliente de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
 [Crear una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create)
