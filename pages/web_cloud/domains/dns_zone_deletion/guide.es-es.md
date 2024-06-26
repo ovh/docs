@@ -14,9 +14,9 @@ La zona **D**omain **N**ame **S**ystem (**DNS**) de un dominio es su fichero de 
 
 Para más información sobre las zonas y los servidores DNS, consulte las siguientes guías: 
 
-- [Crear una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_create).
-- [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-- [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit).
+- [Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Por ejemplo, es posible que necesite eliminar una zona DNS para su dominio en OVHcloud en los siguientes casos (no en todos los casos):
 

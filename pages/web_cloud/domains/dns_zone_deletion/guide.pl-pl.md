@@ -14,9 +14,9 @@ Strefa **D**omain **N**ame **S**ystem (**DNS**) jest plikiem konfiguracyjnym dom
 
 Więcej informacji o strefach DNS i serwerach DNS znajdziesz w przewodnikach: 
 
-- [Tworzenie strefy DNS OVHcloud dla domeny](/pages/web_cloud/domains/dns_zone_create).
-- [Modyfikacja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-- [Zmiana serwerów DNS domeny w OVHcloud](/pages/web_cloud/domains/dns_server_edit).
+- [Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w następujących przypadkach (lista nie jest wyczerpująca):
 
