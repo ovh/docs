@@ -1,6 +1,6 @@
 ---
-title: 'Démarrage avec la gestion de versions en utilisant les API OVHcloud'
-excerpt: 'Découvrez comment activer et gérer la gestion de versions pour vos buckets de stockage d'objets OVHcloud en utilisant les API. Les futures mises à jour couvriront le panneau de contrôle OVHcloud.'
+title: Démarrage avec la gestion de versions en utilisant les API OVHcloud
+Excerpt: Découvrez comment activer et gérer la gestion de versions pour vos buckets de stockage d'objets OVHcloud en utilisant les API. Les futures mises à jour couvriront le panneau de contrôle OVHcloud.
 updated: 2024-06-26
 ---
 
