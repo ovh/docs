@@ -1,7 +1,7 @@
 ---
 title: "Comment reinitialiser le mot de passe administrateur avec Rescue-Customer-Windows"
 excerpt: "Comment reinitialiser le mot de passe administrateur avec Rescue-Customer-Window"
-updated: 2024-06-21
+updated: 2024-06-26
 ---
 
 ## Objectif
