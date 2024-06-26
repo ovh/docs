@@ -45,6 +45,24 @@ Versioning adds a layer of protection to your data by keeping multiple versions 
 - **Modifying objects:** A new version ID is generated, and the previous version is retained.
 - **Deleting objects:** The deletion operation creates a delete marker but does not remove the previous versions. The object can be restored by removing the delete marker.
 
+### Version IDs
+
+Each object has a unique version ID, whether or not S3 Versioning is enabled. In a versioning-enabled bucket, this version ID distinguishes one version from other versions of the same object.
+
+- **Current version:** The most recently created version of an object (with the most recent LastModifiedDate metadata value).
+- **Noncurrent versions:** Versions previously created (with their own unique version IDs).
+
+When versioning is not enabled:
+
+- There are no noncurrent versions as OVHcloud Object Storage will always overwrite the current version with the latest created version when you PUT the same object (i.e., with the same key).
+
+![Cold Archive concept](images/Withversioningdisabled.png)
+
+- If you delete an object, it will be permanently deleted as only one version of your object exists at any given time.
+
+![Cold Archive concept](images/Withversioningdisabled2.png)
+
+
 ### How to Enable Versioning
 
 #### Using the AWS CLI
