@@ -1,7 +1,7 @@
 ---
-title: 'Créer des composants réseau depuis VCD on OVHcloud'
+title: 'Création de composants réseaux via VCD on OVHcloud'
 exerpt: 'Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud en suivant ce guide tutoriel qui déroule l'ensemble des étapes'
-updated: 2024-06-24
+updated: 2024-06-26
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> VCD on OVHcloud est actuellement en phase Alpha. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié. 
+> VCD on OVHcloud est actuellement en phase Alpha. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié : <https://discord.gg/ovhcloud>.
 > 
 
 ## Objectif
@@ -30,13 +30,14 @@ details[open]>summary::before {
 ## Prérequis
 
 >[!primary]
+> 
 > Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord le guide : [Comment se connecter à VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 >
 
-- Un navigateur Web (Firefox/Chrome : avec la traduction activée : EN).
+- Un navigateur Web (avec de préférence avec une base chromium et la traduction activée en FR).
 - Avoir un compte VMware Cloud Director on OVHcloud phase Alpha avec les droits suffisants.
 
-Avoir lu les guides : 
+Avoir lu les guides VCD : 
 - [VMware Cloud Director - Networking - Concepts réseau VMware Cloud Director on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
 - [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts).
 - [VMware Cloud Director - Se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
@@ -45,12 +46,10 @@ Avoir lu les guides :
 
 Le concept principal à comprendre avec VMware Cloud Director avant de créer un réseau est l’espace IP. Prenons en exemple celui par défaut créé avec votre organisation VCD :
 
-**Le périmètre interne (Internal Scope)** représente l'IP entière de votre futur réseau : Exemple, 192.168.0.0/24
+**Le périmètre interne (Internal Scope)** représente l'IP entière de votre futur réseau, e.g. : `192.168.0.0/24`{.action}.
 
 - Les plages d'IP sont des IP que vous pouvez demander individuellement pour vos services (VM n'utilisant pas de DHCP par exemple). Aucune ici.
-
 - Les préfixes IP sont le sous-réseau IP que vous pouvez utiliser dans votre Edge Gateway par exemple.
-
 - Les plages IP et les préfixes IP ne peuvent pas se chevaucher et doivent être inclus dans l'Internal Scope (périmètre interne).
 
 ## Instructions 
@@ -66,16 +65,15 @@ Le concept principal à comprendre avec VMware Cloud Director avant de créer un
 
 Pour vous connecter à votre environnement VCD, suivez le guide : [Comment se connecter à VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
-1. Ensuite, cliquez sur : `Réseaux | Espaces IP | Nouveau .`{.action}
+1. Ensuite, cliquez sur : `Réseaux | Espaces IP | Nouveau`{.action}.
 
 ![VCD Networking IP Spaces](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation/images/ESPACE_IP.png){.thumbnail}
 
 Vous retrouvez la fenêtre de création **d'Espace IP** pour votre réseau, nommez le de la manière dont vous le désirez :
 
-Exemple : 
-
-- `Nom : Espace IP 01`{.action}
-- `Description : Espace IP Privée | Publique`{.action}
+**Exemple :**
+- **Nom :** `Espace IP 01`{.action}.
+- **Description :** `Espace IP Privée | Publique`{.action}.
 
 ![VCD Networking IP Spaces 01](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation/images/ESPACE_IP_1_1.png){.thumbnail}
 
@@ -86,7 +84,6 @@ Exemple :
 3. Choisissez le périmètre (porté/étendu), (interne/externe), avec lequel vous souhaitez accéder à votre réseau :
 
 - **Internal Scope** : Représente les IP utilisées dans ce centre de données local, au sud de Provider Gateway. Les IP de ce périmètre sont utilisées pour la configuration des services et des réseaux.
-
 - **External Scope** : Représente les IP utilisées en dehors du datacenter, au nord de Provider Gateway. Cette valeur est utilisée lors de la génération automatique de règles SNAT par défaut.
 
 Puis, cliquez sur : `SUIVANT`{.action}.
@@ -95,7 +92,7 @@ Puis, cliquez sur : `SUIVANT`{.action}.
 
 Les plages IP doivent correspondre à la portée interne de cet espace IP (le range d'IP que vous souhaitez rendre disponible pour vos machines) :
 
-4. Puis, cliquez sur : `ADD`{.action}.
+4. Puis, cliquez sur : `AJOUTER`{.action}.
 
 Exemple : `172.19.0.2-172.19.0.100`{.action}.
 
@@ -105,13 +102,13 @@ Puis, cliquez sur : `SUIVANT`{.action}.
 
 Les préfixes IP doivent correspondre à la portée interne de cet espace IP :
 
-5. Cliquez sur : `ADD`{.action}.
+5. Cliquez sur : `AJOUTER`{.action}.
 
 Puis ajouter vos séquences et préfixes.
 
 Exemple : `10.0.0.0/23 | 1`{.action}.
 
-Vous pouvez augmenter ou diminuer vos nombres de préfixes avec la flèche haut / bas : ![ARROW](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation/images/ESPACE_IP_5_arrow.png)
+Vous pouvez augmenter ou diminuer vos nombres de préfixes avec la flèche (haut/bas) : ![ARROW](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation/images/ESPACE_IP_5_arrow.png)
 
 L'ajout de la séquence s'ajoute automatiquement en preview s'il est concluant.
 
@@ -125,7 +122,7 @@ Pour terminer l'étape n°5.
 
 ![VCD Networking IP Spaces 06](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation/images/ESPACE_IP_6.png){.thumbnail}
 
-Nous allons ensuite passer à la section de VCD : ` VCD | Réseau | Espace IP`{.action} à ` VCD  Réseau | Réseau`{.action}.
+Nous allons ensuite passer de la section de VCD : `Mise en Réseau | Espace IP`{.action} à `Mise en Réseau | Réseaux`{.action}.
 
 ///
 
@@ -186,12 +183,12 @@ Pour créer une nouvelle Passerelle Edge, cliquez sur : `NOUVEAU`{.action}.
 
 Vous retrouvez la fenêtre de création de **Passerelle Edge** pour votre environnement VCD :
 
-Vous avez ensuite le choix entre le : `Centre de données virtuel de l'organisation`{.action} ou `Groupe de datacenters`{.action}.
+Vous avez ensuite le choix entre le : `Centre de données virtuel d'organisation`{.action} ou `Groupe de centres de données`{.action}.
 
 - **Centre de données virtuel de l'organisation** : Fournit la connectivité pour les machines virtuelles dans le vDC sélectionné uniquement.
 - **Groupe de datacenters** : Fournit la connectivité pour les machines virtuelles de tous les contrôleurs de domaine virtuels participant au groupe de centres de données.
 
-1. Choisissez : `Centre de données virtuel de l'organisation`{.action} ou `Groupe de centre de données`{.action}.
+1. Choisissez : `Centre de données virtuel d'organisation`{.action} ou `Groupe de centres de données`{.action}.
 
 Pour sélectionner le centre de données virtuel avec lequel vous souhaitez installer votre nouvelle **Edge Gateway**.
 
@@ -199,12 +196,11 @@ Pour sélectionner le centre de données virtuel avec lequel vous souhaitez inst
 
 ![VCD Networking Edge Gateway 01_1](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation/images/EDGE_GATEWAY_1_1-optimized.png){.thumbnail}
 
-
 2. Vous pouvez après la section général, nommer votre **passerelle edge** de la manière dont vous le souhaitez :
 
 **Exemple :**
-- `Nom : ovh-Edge-GW-GRA `{.action}.
-- `Description : Passerelle Edge réseau privé dmz zone 1 (Graveline, Roubaix, etc..).`{.action}.
+- **Nom :** `ovh-Edge-GW-GRA `{.action}.
+- **Description :** `Passerelle Edge réseau privé dmz zone 1 (Graveline, Roubaix, etc..).`{.action}.
 
 Vous devez ensuite, cliquez sur : `Utiliser les espaces IP`{.action}.
 
@@ -235,7 +231,7 @@ Quand vous avez choisi vos réglages (étape 4), cliquez sur : `SUIVANT`{.action
 
 ![VCD Networking Edge Gateway 04](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation/images/EDGE_GATEWAY_4-optimized.png){.thumbnail}
 
-Une fois les réglages ajoutés, vous pouvez contrôler que tout est correct depuis la section 5 : `Prêt à completer`{.action}.
+Une fois les réglages ajoutés, vous pouvez contrôler que tout est correct depuis la section 5 : `Prêt à Completer`{.action}.
 
 Et pour finir (étape 5 : Création d'une Passerelle Edge), cliquez sur `TERMINER`{.action}.
 
@@ -249,7 +245,7 @@ Et pour finir (étape 5 : Création d'une Passerelle Edge), cliquez sur `TERMINE
 
 Nous allons à présent créer un nouveau réseau et joindre nos réglages preconfigurés.
 
-Allez donc dans la section Mise en réseau, en cliquant sur : `Mise en réseaux / Réseaux`{.action}.
+Allez donc dans la section Mise en réseau, en cliquant sur : `Mise en réseaux | Réseaux`{.action}.
 
 Puis, cliquez sur : `NOUVEAU`{.action}.
 
@@ -360,7 +356,7 @@ Pour continuer l'étape 5 (de création d'un réseau privé), veuillez cliquer s
 
 6. (Optionnel), Il est possible ici de définir des modèles de profil de segments. 
 
-Qui peuvent être utilisé pour des besoins avancés en matière de réseaux (par exemple avec pfSense : Promiscuous mode).
+Qui peuvent être utilisé pour des besoins avancés en matière de réseaux (e.g. avec pfSense : Promiscuous mode).
 
 Il existe **3 modes** :
 
@@ -395,12 +391,13 @@ Des profils de segments personnalisés sont nécessaires dans un certain nombre 
 
 7. Suivant le choix de votre configuration, vous pouvez arriver à l'étape 7 ou 8. 
 
+**Exemple :**
+- **Étape 7** : Avec "Modèle de profil de segment".
+- **Étape 8** : Sans "Modèle de profil de segment".
+
 Vous allez verifier ici les réglages et quand vous êtes prêt lancer la création du réseau.
 
 Si tout est bon, cliquez sur : `TERMINER`{.action}.
-
-- **Étape 7** : Avec "Modèle de profil de segment".
-- **Étape 8** : Sans "Modèle de profil de segment".
 
 ![VCD Networking Network 07](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation/images/NETWORK_7.png){.thumbnail}
 
@@ -412,8 +409,8 @@ Votre réseau est maintenant entièrement créé et prêt à l'emploi.
 
 Vous pouvez maintenant suivre les étapes du prochain : [ « Guide 3 : VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ? » ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_ipsec).
 
-Si vous rencontrez des difficultés avec le réseau au sein de VCD on OVHcloud, relisez :
-- « Guide 1 :  [VMware Cloud Director on OVHcloud - Network - Concepts »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
+Si vous rencontrez des difficultés avec le réseau au sein de VCD on OVHcloud, vous pouvez (re)consulter le guide :
+- [« Guide 1 - VMware Cloud Director on OVHcloud - Network - Concepts »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou [cliquez ici](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

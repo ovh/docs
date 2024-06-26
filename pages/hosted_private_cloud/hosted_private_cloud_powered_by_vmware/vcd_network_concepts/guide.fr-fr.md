@@ -1,7 +1,7 @@
 ---
 title: 'Concepts réseau VMware Cloud Director on OVHcloud'
 exerpt: 'Découvrez les puissantes capacités de mise en réseau de VMware Cloud Director on OVHcloud avec notre guide complet sur les concepts et fonctionnalités clés'
-updated: 2024-06-24
+updated: 2024-06-26
 ---
 <style>
 details>summary {
@@ -28,9 +28,11 @@ details[open]>summary::before {
 ## Prérequis
 
 >[!primary]
+> 
 > Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord le guide : [Comment se connecter à VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
+>
 
-- Un navigateur Web.
+- Un navigateur Web (avec de préférence avec une base chromium et la  traduction activée en FR).
 - Avoir un compte VMware Cloud Director avec des droits utilisateur requis (vérifiez que votre compte utilisateur dispose des droits suffisants).
 - Avoir suivi le guide : ["VMware Cloud Director - Les concepts fondamentaux de VCD"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts).
 
@@ -38,7 +40,7 @@ details[open]>summary::before {
 
 Dans ce guide d'introduction, nous allons explorer les différents concepts de mise en réseau au sein de VMware Cloud Director on OVHcloud. Et étudier des notions d'optimisation de l'espace réseau tel que l'espace IP, les passerelles Edge, les groupes de centres de données par exemple.
 
-/// details | Introduction de la pratique du réseau au sein de VCD on OVHcloud
+/// details | Introduction de la pratique du réseau au sein de VCD on OVHcloud.
 
 Pour assurer une infrastructure réseau flexible et sécurisée dans un environnement de cloud polyvalent, VMware Cloud Director utilise une architecture de mise en réseau superposée comprenant quatre catégories de réseaux :
 
@@ -51,7 +53,12 @@ La plupart de ces réseaux nécessitent des éléments d'infrastructure supplém
 
 Le control panel VCD dispose d'un bandeau réseau avec 5 sections :
 
-`Réseaux | Passerelles Edge | Passerelles de fournisseur | Espaces IP | Groupes de centres de données | Balises de sécurité `{.action}.
+- `Réseaux`{.action}.
+- `Passerelles Edge`{.action}.
+- `Passerelles de fournisseur`{.action}.
+- `Espaces IP`{.action}.
+- `Groupes de centres de données`{.action}.
+- `Balises de sécurité `{.action}.
 
 ![VCD Control Panel Network Overview Gif](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts/images/vcd_network_overview.gif){.thumbnail}
 
@@ -67,15 +74,15 @@ Ainsi qu'une section Réseau au sein de chaque vDC dans `Centres de données | M
 
 Voici les principales fonctionnalités réseau offertes avec les offres VCD on OVHcloud.
 
-| Features                        	| Standard 	| Advanced 	| Premium 	| Comments                                                                                                                                                                                           	          |
-|---------------------------------	|----------	|----------	|---------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Routing & Switching IPv4        	| ✅        	| ✅        	| ✅       	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	          |
-| Public IPv4 Range               	| ✅        	| ✅        	| ✅       	| 	                                                                                                                                                                                                             |
-| Private Network - vRack support 	| ✅        	| ✅        	| ✅       	| in Roadmap                                                                                                                                                                                                  	 |
-| Routing & Switching IPv6        	|          	|          	|         	| in Roadmap                                                                                                                                                                                         	          |
-| VPN                             	|          	| ✅        	| ✅       	| L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	          |
-| Load Balancing                  	|          	|          	|         	| Not supported with native VCD network capabilities                                                                                                                                                 	          |
-| Advanced Load Balancing         	|          	|          	|         	| in Roadmap                                                                                                                                                                                         	          |                                                                                          	|
+| Features                      | Standard | Advanced | Premium | Comments                                                                                                                                                                                                           |
+|-------------------------------|----------|----------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| IRoutage et commutation IPv4. | ✅        | ✅        | ✅       | Segments de réseau, routage distribué et non distribué, réseau routé avec ou sans NAT BGP/DHCP/DNS/routes statiques Réseautage de contrôleurs de domaine virtuels sur le même site. Non supporté : OSPF, VRF Lite. |
+| Public IPv4 Range.            | ✅        | ✅        | ✅       |                                                                                                                                                                                                                    |
+| Réseau privé - Support vRack. | ✅        | ✅        | ✅       | Dans la Roadmap.                                                                                                                                                                                                   |
+| Routage et commutation IPv6.  |          |          |         | Dans la Roadmap.                                                                                                                                                                                                   |
+| VPN.                          |          | ✅        | ✅       | L2VPN, VPN IPsec Policy Based not Supported : VPN SSL, VPN IPsec Routed Based VPN.                                                                                                                                 |
+| Load Balancing.               |          |          |         | Non pris en charge avec les fonctionnalités réseau VCD natives.                                                                                                                                                    |
+| Load balancing avancée.       |          |          |         | Dans la Roadmap.                                                                                                                                                                                                   |
 
 ## Fonctionnalités réseau des offres VCD on OVHcloud
 
@@ -99,8 +106,8 @@ Nous voyons ici qu'uniquement les fonctionnalités de réseau avancé et de séc
 
 | Design Recommendation                                                                                                                   | Design Justification                                                                            | Design Implication                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| Créez une ou plusieurs passerelles Edge (passerelles de niveau 1) par CDV d'organisation.                                               | Active les services de mise en réseau pour le CDV de l'organisation                             | Aucune.                                                                               |
-| Créer des groupes de centre de données, s'il est nécessaire d'avoir des réseaux OrgvDC couvrant plusieurs OrgVDC dans une organisation. | Simplifie la connectivité transversale OrgvDC                                                   | Nécessite la création de groupes de centre de données dans le tenant (locataire) VCD. |
+| Créez une ou plusieurs passerelles Edge (passerelles de niveau 1) par CDV d'organisation.                                               | Active les services de mise en réseau pour le vDC de l'organisation.                            | Aucune.                                                                               |
+| Créer des groupes de centre de données, s'il est nécessaire d'avoir des réseaux OrgvDC couvrant plusieurs OrgVDC dans une organisation. | Simplifie la connectivité transversale Org vDC.                                                 | Nécessite la création de groupes de centre de données dans le tenant (locataire) VCD. |
 | Utiliser la fonction Espaces IP plutôt que l'adressage par blocs IP traditionnel.                                                       | Note : La livraison de l'ensemble des fonctionnalités d'IP Spaces s'étend sur plusieurs phases. | Aucune.                                                                               |
 
 ### Le réseau au sein de VCD (concept)
@@ -137,10 +144,9 @@ Un espace IP se compose d'un ensemble de plages d'adresses IP qui ne se chevauch
 
 Depuis la version (10.4.1), les espaces IP font partie des nouvelles fonctionnalités. Et sont recommandées pour vos besoins en espace réseau.
 
-Il existe deux types d'espaces IP que vous pouvez utiliser en tant qu'utilisateur Administrateur d'organisation.
-
-- Espace IP public : Un espace IP public est utilisé par plusieurs organisations et est contrôlé par le Fournisseur de services par le biais d'un système basé sur les quotas.
-- Espace IP privé : Les espaces IP privés sont dédiés à un seul locataire : un espace IP privé est utilisé uniquement par une organisation spécifiée lors de la création de l'espace IP. Pour cette organisation, la consommation d'adresses IP est illimitée.
+Il existe deux types d'espaces IP que vous pouvez utiliser en tant qu'utilisateur Administrateur d'organisation :
+- **Espace IP public** : Un espace IP public est utilisé par plusieurs organisations et est contrôlé par le Fournisseur de services par le biais d'un système basé sur les quotas.
+- **Espace IP privé** : Les espaces IP privés sont dédiés à un seul locataire : un espace IP privé est utilisé uniquement par une organisation spécifiée lors de la création de l'espace IP. Pour cette organisation, la consommation d'adresses IP est illimitée.
 
 ![VCD Network IP Prefixe](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts/images/vcd_network_ipspace_banner.png){.thumbnail}
 
@@ -168,7 +174,7 @@ Si vous n’utilisez plus un préfixe IP qui a été alloué à votre espace IP,
 
 ### Les topologies réseau (concept)
 
-Vous retrouvez les topology réseau depuis le control panel VCD en cliquant sur : `Networking / IP Spaces / Mon Nom d'IP space / Topologie réseau`{action}
+Vous retrouvez les topology réseau depuis le control panel VCD en cliquant sur : `Mise en réseau | Espace ip  | Mon Nom d'IP space | Configuration | Topologie Réseau`{action}
 
 Les topology réseau sont utilisées pour configurer les espaces IP afin d'activer le trafic nord-sud.
 
@@ -237,7 +243,7 @@ D'un point de vue général, les seules limitations que vous pouvez retrouver au
 
 Un peu moins de granularité en matière de configuration bas niveau.
 
-Bien sûr cela peut avoir un impact sur les fonctionnalités avancées en matière de réseau, même si ces fonctionnalités peuvent être incluses dans les phases futures.
+Bien sûr, cela peut avoir un impact sur les fonctionnalités avancées en matière de réseau, même si ces fonctionnalités peuvent être incluses dans les phases futures.
 
 ### Limitations VPN IPsec
 
@@ -265,7 +271,7 @@ IAM n'est pas disponible au sein de VMware Cloud Director on OVHcloud à ce jour
 
 Vous pouvez maintenant suivre les étapes du guide suivant : [« Guide 2 - VMware Cloud Director on OVHcloud - Network - Créer des composants réseau via le control panel VCD on OVHcloud »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
 
-/// details | Aller plus loin avec les concepts réseau au sein d'OVHcloud
+/// details | Aller plus loin avec les concepts réseau au sein de l'univers OVHcloud.
 
 ### Networking pour VMware Cloud Director on OVHcloud - Index des guides :
 
@@ -285,4 +291,6 @@ Voici la liste des guides que vous pouvez lire pour renforcer vos connaissances 
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur la chaîne dédiée Discord : <https://discord.gg/ovhcloud>. Ou alors échanger avec notre [communauté d'utilisateurs](/links/community).
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur la chaîne dédiée Discord : <https://discord.gg/ovhcloud>. 
+
+Et vous pouvez aussi rejoindre ou alors échanger avec notre [communauté d'utilisateurs](/links/community).
