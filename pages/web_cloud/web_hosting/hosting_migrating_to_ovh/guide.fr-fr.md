@@ -1,7 +1,7 @@
 ---
-title: Migrer son site web et ses services associés vers OVHcloud
-excerpt: Découvrez comment migrer votre site web, votre nom de domaine, votre base de données et vos e-mails chez OVHcloud sans interruption de services
-updated: 2024-06-21
+title: "Migrer son site web et ses services associés vers OVHcloud"
+excerpt: "Découvrez comment migrer votre site web, votre nom de domaine, votre base de données et vos e-mails chez OVHcloud sans interruption de services"
+updated: 2024-06-24
 ---
 
 ## Objectif
@@ -92,7 +92,7 @@ Si elles ne sont pas présentes, renseignez les entrées suivantes :
 |domain.tld.|MX|5|mx2.mail.ovh.net.|
 |domain.tld.|MX|100|mx3.mail.ovh.net.|
 |www.domain.tld.|CNAME|-|domain.tld.|
-|domain.tld.|A|-|<adresse_IP_cible>|
+|domain.tld.|A|-|`adresse_IP_cible`|
 
 Pour récupérer la bonne adresse IP cible de votre hébergement OVHcloud, consultez notre guide listant les [adresses IP des différents clusters d'hébergement mutualisés](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 
@@ -102,7 +102,7 @@ Pour récupérer la bonne adresse IP cible de votre hébergement OVHcloud, consu
 
 > [!success]
 >
-> Notez les deux valeurs cibles ayant pour type d'enregistrement « NS ». Ces valeurs, de type `dnsXX.ovh.net` et `nsXX.ovh.net`, correspondent aux serveurs DNS associés à cette zone DNS pour votre nom de domaine. Elles serviront lors de l'[étape 9](#step9) de ce guide.
+> Notez les deux valeurs cibles ayant pour type d'enregistrement « NS ». Ces valeurs, de type `dnsXX.ovh.net` et `nsXX.ovh.net` (ou `dns200.anycast.me` et `ns200.anycast.me`), correspondent aux serveurs DNS associés à cette zone DNS pour votre nom de domaine. Elles serviront lors de l'[étape 9](#step9) de ce guide.
 >
 
 ### Etape 3 : récupérer une sauvegarde complète de votre site web <a name="step3"></a>
@@ -123,7 +123,7 @@ Pour la sauvegarde de votre base de données, [créez une nouvelle base de donn�
 
 > [!primary]
 >
-> OVHcloud propose des serveurs de base de données Web Cloud Databases. Si vous souhaitez utiliser cette offre avec votre site web, retrouvez l'ensemble de notre documentation sur ce produit sur notre page dédiée </products/web-cloud-clouddb>.
+> OVHcloud propose des serveurs de base de données Web Cloud Databases. Si vous souhaitez utiliser cette offre avec votre site web, retrouvez l'ensemble de notre documentation sur ce produit sur [notre page dédiée](/products/web-cloud-clouddb).
 >
 
 Liez ensuite votre base de données OVHcloud avec le fichier de configuration de votre site web présent dans l'espace de stockage FTP de votre hébergement OVHcloud.
@@ -184,7 +184,7 @@ En effet, cette méthode vous évite de refaire une migration pour les quelques 
 
 ### Etape 7 : transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles adresses chez OVHcloud <a name="step7"></a>
 
-Après la propagation DNS , vos nouveaux e-mails sont désormais tous reçus sur vos nouvelles adresses e-mail. Mais vos anciens e-mails sont toujours enregistrés sur votre ancien serveur e-mail.
+Après la propagation DNS, vos nouveaux e-mails sont désormais tous reçus sur vos nouvelles adresses e-mail. Mais vos anciens e-mails sont toujours enregistrés sur votre ancien serveur e-mail.
 
 Pour migrer le contenu de vos anciennes adresses e-mail, deux options s'offrent à vous.
 
