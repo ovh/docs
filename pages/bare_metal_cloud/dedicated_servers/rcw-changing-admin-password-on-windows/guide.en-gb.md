@@ -55,7 +55,7 @@ Please note that if you have several disk groups, the number of the Windows disk
 
 You also have to import the second disk to properly import your software RAID volume.
 
-##### 2. Importing local disk
+##### 2. Import local disks
 
 Right-click *Disk 1* and select `Online`{.action}.
 
@@ -94,7 +94,7 @@ You can see that the local disk is now accessible and that the Windows disk is d
 
 You can now reset the password by following the instructions below.
 
-#### B) Resetting the password <a name="sectionB"></a>
+#### B) Reset the password <a name="sectionB"></a>
 
 To reset passwords, the tool NTPWEdit is required.<br>
 Once you are connected via Remote Desktop, open the browser and download it from its [official website](http://www.cdslow.org.ru/files/ntpwedit/ntpwed07.zip).<br>
