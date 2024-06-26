@@ -1,7 +1,7 @@
 ---
 title: "Premier pas avec OVHcloud KMS"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2024-06-25
+updated: 2024-06-26
 ---
 
 > [!warning]

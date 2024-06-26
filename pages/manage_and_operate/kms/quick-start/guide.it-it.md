@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud KMS"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-06-25
+updated: 2024-06-26
 ---
 
 > [!warning]
