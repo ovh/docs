@@ -1,5 +1,5 @@
 ---
-title: "How to delete a DNS zone?"
+title: "How to delete an OVHcloud DNS zone?"
 excerpt: "Find out how to delete a DNS zone for your domain name via the OVHcloud Control Panel"
 updated: 2024-06-26
 ---
