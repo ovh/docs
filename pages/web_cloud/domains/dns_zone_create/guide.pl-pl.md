@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie strefy DNS OVHcloud dla domeny'
 excerpt: 'Dowiedz się, jak utworzyć strefę DNS w OVHcloud dla Twojej domeny w Panelu klienta'
-updated: 2024-05-16
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -12,24 +12,11 @@ updated: 2024-05-16
 
 Strefa **D**omain **N**ame **S**ystem (**DNS**) nazwy domeny stanowi jej plik konfiguracyjny. Zawiera on informacje techniczne nazywane *rekordy DNS*. Strefa DNS jest jak ośrodek sterowania.
 
-Możesz na przykład określić:
+Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami:
 
-- Adres IP (rekordy DNS typu *A* i *AAAA*) Twojego hostingu, aby wyświetlić Twoją stronę WWW z Twoją domeną.
-- Serwery e-mail (rekordy DNS typu *MX*), na które Twoja domena musi przekierować otrzymane e-maile. Możesz sprawdzić je na spersonalizowanym adresie e-mail z Twoją domeną.
-- Informacje związane z bezpieczeństwem / uwierzytelnianiem usług (hosting, serwer www, serwer e-mail, itp.) powiązanych z Twoją domeną (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, itp.).
-
-W razie potrzeby sprawdź dokumentację dotyczącą [rekordów DNS](/pages/web_cloud/domains/dns_zone_records) i [edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links/manager).
-
-Strefa DNS jest zainstalowana / zarejestrowana na **serwerach DNS**. Są to **serwery DNS**, które muszą być zadeklarowane u nazwy domeny, aby używać strefy DNS, którą hostują. 
-
-**serwery DNS** działają zwykle w parze:
-
-- Serwer DNS *główny*: przekierowuje strumienie zapytań otrzymanych przez domenę na strefę DNS, którą przechowuje dla domeny. Dzięki temu możesz wykonać *rozdzielczość DNS*, aby przekierować strumienie danych na prawidłowe usługi (serwery, stronę WWW, e-maile, itp.) powiązane z nazwą domeny.
-- Serwer DNS *secondary*: ten serwer zapasowy* jest używany, jeśli serwer *główny* jest nasycony zapytaniami, jest niedostępny lub reaguje mniej szybko niż serwer *secondary*.
-
-Niektórzy dostawcy DNS proponują 3 **serwery DNS** lub więcej do zadeklarowania w Twojej domenie, aby aktywować strefę DNS, którą hostują dla Twojej domeny.
-
-Aby uzyskać więcej informacji na temat **serwerów DNS*, zapoznaj się z naszym [przewodnik](/pages/web_cloud/domains/dns_server_general_information) na ten temat.
+- [Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Może zaistnieć konieczność utworzenia strefy DNS dla Twojej domeny w OVHcloud.
 
@@ -124,6 +111,12 @@ Po uzyskaniu informacji o domenie **modyfikuj serwery DNS Twojej domeny w interf
 >
 
 ## Sprawdź również
+
+[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 

@@ -1,29 +1,18 @@
 ---
 title: Creating an OVHcloud DNS zone for a domain name
 excerpt: Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel
-updated: 2024-05-16
+updated: 2024-06-26
 ---
 
 ## Objective
 
-The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configuration file. It consists of DNS **records** that map the domain name to various services and functions, for example:
+The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configuration file. It consists of DNS **records** that map the domain name to various services and functions.
 
-- The IP address (DNS records of type *A* and *AAAA*) of your web hosting must be provided in the zone in order to display your website when entering the domain name in a browser.
-- The email servers (DNS records of type *MX*) that should receive emails sent to addresses of this domain name. By configuring MX records, you can receive emails through custom email addresses using your domnain name.
-- Information related to the security/authentication of services (web hosting, web server, email server, etc.) associated with your domain name (DNS records of type *SPF*, *DKIM*, *DMARC*, etc.).
+For more information, please refer to our guides:
 
-If you need further assistance, please refer to our documentation on [DNS records](/pages/web_cloud/domains/dns_zone_records) and [editing a DNS zone](/pages/web_cloud/domains/dns_zone_edit) in your [OVHcloud Control Panel](/links/manager).
-
-A DNS zone is hosted/registered on **DNS servers**. **DNS servers** must be declared on the domain name's configuration in order to use the DNS zone they host.
-
-**DNS servers** usually work in pairs:
-
-- A *primary* DNS server: It redirects the requests received by the domain name to the DNS zone it hosts for the domain name. This way, you can perform *DNS resolution* to redirect traffic to the correct services (servers, website, emails, etc.) associated with the domain name.
-- A *secondary* DNS server: This *backup* server is used if the *primary* server is saturated with requests, unavailable, or responds less quickly than the *secondary* server.
-
-Some DNS providers offer 3 **DNS servers** or more to declare with your domain name, in order to activate the DNS zone they host for your domain name.
-
-For more details on **DNS servers**, see [our guide](/pages/web_cloud/domains/dns_server_general_information) on this topic.
+- [Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+- [Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
+- [Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
 
 For a number of reasons, you may need to create a DNS zone for your domain name at OVHcloud.
 
@@ -114,6 +103,12 @@ Once you have the information, **edit your domain name’s DNS servers in the in
 >
 
 ## Go further
+
+[Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+
+[Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 

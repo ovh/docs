@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja dynamicznego DNS (DynHost/DynDNS) dla Twojej domeny"
 excerpt: "Dowiedz się, jak skonfigurować dynamiczny rekord DNS dla Twojej domeny OVHcloud"
-updated: 2024-05-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -12,13 +12,11 @@ updated: 2024-05-22
 
 Strefa **D**omain **N**ame **S**ystem (**DNS**) nazwy domeny stanowi jej plik konfiguracyjny. Zawiera on informacje techniczne nazywane *rekordy DNS*. Strefa DNS jest jak ośrodek sterowania. 
 
-Możesz na przykład określić:
+Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami:
 
-- Adres IP (rekordy DNS typu *A* i *AAAA*) Twojego hostingu, aby wyświetlić Twoją stronę WWW z Twoją domeną.
-- Serwery e-mail (rekordy DNS typu *MX*), na które Twoja domena musi przekierować otrzymane e-maile. Możesz sprawdzić je na spersonalizowanym adresie e-mail z Twoją domeną.
-- Informacje związane z bezpieczeństwem / uwierzytelnianiem przypisanych usług (hosting, serwer www, serwer e-mail, itp.) do Twojej domeny (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, itp.).
-
-W razie potrzeby sprawdź dokumentację dotyczącą [rekordów DNS](/pages/web_cloud/domains/dns_zone_records) i [edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links/manager).
+- [Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Aktualizacja rekordu DNS w sposób "dynamiczny" może zapobiec przedłużającej się przerwie w dostępności Twoich usług, jeśli nie dysponujesz adresem IP zwanym "stałym" (który się nie zmienia).
 

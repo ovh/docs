@@ -1,7 +1,7 @@
 ---
 title: "Gerir o histórico de uma zona DNS"
 excerpt: "Saiba como consultar, comparar, descarregar e restaurar os seus backups de zona DNS"
-updated: 2024-05-23
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -12,13 +12,12 @@ updated: 2024-05-23
 
 A zona **D**omain **N**ame **S**ystem (**DNS**) de um domínio constitui o ficheiro de configuração deste último. É composta por informações técnicas, chamadas *registos DNS*. A zona DNS é, de certa forma, um centro de comando.
 
-Poderá, por exemplo, especificar:
+Para mais explicações, consulte os seguintes guias:
 
-- O endereço IP (registos DNS do tipo *A* e *AAAA*) do seu alojamento web para apresentar o seu website com o seu nome de domínio.
-- Os servidores de e-mail (registos DNS do tipo *MX*) para os quais o seu domínio deve reencaminhar os e-mails que recebe. Isto permite-lhe consultá-los no(s) seu(s) endereço(s) de e-mail(s) personalizado(s) com o seu nome de domínio.
-- Informações relacionadas com a segurança / autenticação dos seus serviços (alojamento web, servidor web, servidor de e-mail, etc.) associados ao seu nome de domínio (registos DNS do tipo *SPF*, *DKIM*, *DMARC*, etc.).
+- [Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
 
-Se necessário, consulte a nossa documentação sobre [os registos DNS](/pages/web_cloud/domains/dns_zone_records) e a [edição de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit) a partir da [Área de Cliente OVHcloud](/links/manager).
 Por várias razões, pode ser obrigado a aplicar uma antiga configuração DNS ao seu domínio.
 
 Agora, a gestão dos DNS é facilitada graças ao histórico das suas zonas DNS.
@@ -114,6 +113,12 @@ Você também pode atualizar as datas das versões que deseja comparar usando as
 Graças a este guia, pode agora comparar duas zonas DNS, mas também visualizar, descarregar, restaurar e eliminar uma zona DNS.
 
 ## Quer saber mais?
+
+[Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Aceder à Área de Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 

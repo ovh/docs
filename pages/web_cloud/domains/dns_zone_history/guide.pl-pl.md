@@ -1,7 +1,7 @@
 ---
 title: "Zarządzanie historią strefy DNS"
 excerpt: "Dowiedz się, jak sprawdzać, porównywać, pobierać i przywracać kopie zapasowe strefy DNS"
-updated: 2024-05-23
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -12,13 +12,12 @@ updated: 2024-05-23
 
 Strefa **D**omain **N**ame **S**ystem (**DNS**) jest plikiem konfiguracyjnym domeny. Zawiera on informacje techniczne nazywane *rekordami DNS*. Strefa DNS jest w pewnym sensie ośrodkiem prowadzącym.
 
-Możesz na przykład w nim określić:
+Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami:
 
-- Adres IP (rekordy DNS typu *A* i *AAAA*) Twojego hostingu, aby wyświetlał Twoją stronę WWW wraz z domeną.
-- Serwery email (rekordy DNS typu *MX*), na które Twoja domena powinna przekierowywać wiadomości e-mail. Możesz wyświetlić je na Twoim (Twoich) spersonalizowanym(ych) adresie(ach) e-mail(ów) wraz z nazwą domeny.
-- Informacje związane z bezpieczeństwem / uwierzytelnianie Twoich usług (hosting, serwer www, serwer e-mail, etc.) przypisane do Twojej domeny (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, etc.).
+- [Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
-W razie potrzeby sprawdź dokumentację dotyczącą [rekordów DNS](/pages/web_cloud/domains/dns_zone_records) i [edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links/manager).
 Może zajść konieczność zastosowania poprzedniej konfiguracji DNS dla Twojej domeny.
 
 Dzięki historii stref DNS zarządzanie serwerami DNS stało się łatwiejsze.
@@ -114,6 +113,12 @@ Możesz również zaktualizować daty wersji, które chcesz porównać, korzysta
 Dzięki niniejszemu przewodnikowi możesz teraz porównywać dwie strefy DNS oraz wyświetlać, pobierać, przywracać i usuwać strefę DNS.
 
 ## Sprawdź również
+
+[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Zaloguj się do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
