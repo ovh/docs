@@ -1,7 +1,7 @@
 ---
 title: "Managing the history of a DNS zone"
 excerpt: "Find out how to view, compare, download and restore your DNS zone backups"
-updated: 2024-05-23
+updated: 2024-06-26
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Den Versionsverlauf einer DNS-Zone verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Backups der DNS-Zone mithilfe der History-Funktion einsehen, vergleichen, herunterladen und wiederherstellen können"
-updated: 2024-05-23
+updated: 2024-06-26
 ---
 
 > [!primary]

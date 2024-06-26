@@ -1,7 +1,7 @@
 ---
 title: 'Crear una zona DNS de OVHcloud para un dominio'
 excerpt: 'Descubra cómo crear una zona DNS en OVHcloud para su dominio desde el área de cliente'
-updated: 2024-05-16
+updated: 2024-06-26
 ---
 
 > [!primary]

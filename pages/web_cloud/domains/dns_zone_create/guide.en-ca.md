@@ -1,7 +1,7 @@
 ---
 title: Creating an OVHcloud DNS zone for a domain name
 excerpt: Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel
-updated: 2024-05-16
+updated: 2024-06-26
 ---
 
 ## Objective

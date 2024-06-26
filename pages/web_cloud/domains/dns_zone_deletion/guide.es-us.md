@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo eliminar una zona DNS?"
 excerpt: "Descubra cómo eliminar una zona DNS para un dominio desde el área de cliente de OVHcloud"
-updated: 2024-02-19
+updated: 2024-06-26
 ---
 
 > [!primary]

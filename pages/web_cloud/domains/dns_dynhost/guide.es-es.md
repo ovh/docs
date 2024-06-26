@@ -1,7 +1,7 @@
 ---
 title: "Configurar un DNS dinámico (DynHost/DynDNS) para un dominio"
 excerpt: "Descubra cómo configurar un registro DNS dinámico para un dominio de OVHcloud"
-updated: 2024-05-22
+updated: 2024-06-26
 ---
 
 > [!primary]
