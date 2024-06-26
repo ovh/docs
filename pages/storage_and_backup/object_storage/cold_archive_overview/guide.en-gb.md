@@ -91,7 +91,7 @@ You can track the different steps of your data by the status of your bucket
 
 ## Network, upload and retrieval performances
 
-Cold Archive is a service based on Object Storage - S3 API. Performance and limitations (number of buckets, account, maximum bandwidth per connection, number of requests per second on bucket, maximum size per object / mpu / part, etc.) are available [here](/pages/storage_and_backup/object_storage/s3_limitations).
+Cold Archive is a service based on Object Storage - S3 API. Performance and limitations (number of buckets, account, maximum bandwidth per connection, number of requests per second on bucket, maximum size per object / mpu / part, etc.) are available [here](https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-optimizing-performance?id=kb_article_view&sysparm_article=KB0062314).
 
 To upload your data, the maximum bandwidth is **1 Gbps per logical connection** and the number of connections that can be used in parallel is **unlimited**.
 
