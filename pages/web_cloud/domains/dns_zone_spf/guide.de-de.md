@@ -1,6 +1,6 @@
 ---
-title: Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen
-excerpt: Erfahren Sie hier, wie Sie einen SPF-Eintrag für Ihre OVHcloud Domain konfigurieren
+title: E-Mail-Sicherheit durch SPF-Eintrag verbessern
+excerpt: Hier erfahren Sie, wie Sie einen SPF-Eintrag für Ihre Domain konfigurieren, um die Sicherheit Ihrer E-Mails zu verbessern
 updated: 2023-08-04
 ---
 
