@@ -1,6 +1,6 @@
 ---
 title: "Spécifications de sécurité du service Serveurs Dédiés"
-updated: 2024-05-06
+updated: 2024-06-26
 ---
 
 ## Objectif

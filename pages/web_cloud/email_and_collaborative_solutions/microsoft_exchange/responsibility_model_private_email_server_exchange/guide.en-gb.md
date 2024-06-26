@@ -1,7 +1,7 @@
 ---
 title: Responsibility model for the product Managed Email Server on Mutualized Infrastructure
 excerpt: Shared responsibilities between OVHcloud and the customer
-updated: 2024-6-25
+updated: 2024-06-26
 ---
 
 The RACI below details shared responsibilities between OVHcloud and the customer for the product Managed Email Server on Mutualized Infrastructure which is called Private Exchange service on OVHcloud.
@@ -76,7 +76,7 @@ This shared model can help relieve the customer’s operational burden.
 | Manage physical and logical access to infrastructures for OVHcloud teams |  | RA |
 
 ##### **3.1.3. Monitoring**
-    
+
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Monitor and manage alerts for the functioning of systems in support of the service | I | RA |
@@ -122,7 +122,6 @@ This shared model can help relieve the customer’s operational burden.
 | --- | --- | --- |
 | Plan and deploy updates and patches on the service, OS, and software in support of the service |  | RA |
 | Replace deficient hardware in support of the service |  | RA |
-
 
 ### 4. Reverting
 

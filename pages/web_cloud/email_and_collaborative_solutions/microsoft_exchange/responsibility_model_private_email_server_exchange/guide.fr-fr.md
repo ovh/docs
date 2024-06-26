@@ -1,10 +1,10 @@
 ---
-title : Modèle de responsabilité du produit Serveur de messagerie managé sur une infrastructure mutualisée
-extrait : « Modèle de responsabilités entre OVHcloud et le client »
-Mise à jour : 2024-6-25
+title: Partage de responsabilité du produit Serveur de messagerie managé sur une infrastructure mutualisée
+excerpt: "Modèle de responsabilités entre OVHcloud et le client"
+updated: 2024-06-26
 ---
 
-Le RACI ci-dessous détaille les responsabilités partagées entre OVHcloud et le client pour le produit Managed E-mail Server on Mutualized Infrastructure appelé service Private Exchange a OVHcloud.
+Le RACI ci-dessous détaille les responsabilités partagées entre OVHcloud et le client pour le produit *Managed E-mail Server on Mutualized Infrastructure* aussi appelé service **Private Exchange on OVHcloud**.
 Ce modèle partagé peut aider à alléger le fardeau opérationnel du client.
 
 Définition ## RACI
@@ -13,8 +13,8 @@ Définition ## RACI
 | --- |
 | R : Est en charge de la Réalisation du processus |
 | A : Approbateur de la réalisation du process |
-| C : Est consulté au cours du processus |
-| I : Est informé des résultats du processus |
+| C : Est Consulté au cours du processus |
+| I : Est Informé des résultats du processus |
 
 ### 1. Avant l'abonnement
 
@@ -36,7 +36,7 @@ Définition ## RACI
 | Installer, configurer et livrer des briques fonctionnelles du service | I | RA |
 | Fournir les licences de service et le certificat SSL | CI | RA |
 | Configurer le certificat SSL après livraison par OVHcloud | A | R |
-| Fournit un service préconfiguré avec le nombre demandé de boîtes aux lettres qui nécessitent une configuration supplémentaire par le client | I | RA |
+| Fournit un service préconfiguré avec le nombre demandé de d'adresses e-mail qui nécessitent une configuration supplémentaire par le client | I | RA |
 
 #### 2.2. Modèle de réversibilité
 
@@ -48,7 +48,7 @@ Définition ## RACI
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Personnaliser le service en fonction des besoins de l'entreprise (alertes domaine, quota de comptes, nombre de comptes, gestion des alias, définition de la politique de mot de passe, flux de mails...) | RA | I |
+| Personnaliser le service en fonction des besoins de l'entreprise (alertes domaine, quota de comptes, nombre de comptes, gestion des alias, définition de la politique de mot de passe, flux d' e-mails, etc) | RA | I |
 
 ### 3. Utilisation du service
 
@@ -62,9 +62,9 @@ Définition ## RACI
 | Gérer l'accessibilité du réseau et la disponibilité des données sur le service hébergé suivant les SLA OVHcloud | | RA |
 | Gérer les risques liés au logiciel client utilisé (Outlook, Thunderbird, etc.) | RA | |
 | Administrer l’infrastructure de services (serveurs, OS, antivirus, stockage) | | RA |
-| Administrer le domaine, les boîtes aux lettres, les groupes de distribution, un connecteur d'envoi, etc. | RA | IR |
+| Administrer le domaine, les adresses e-mail, les groupes de distribution, un connecteur d'envoi, etc. | RA | IR |
 | Gérer les sauvegardes sur le service | | RA |
-| Effectuer (en option) une sauvegarde des boîtes aux lettres à l'aide d'un logiciel tiers | RA | I |
+| Effectuer (en option) une sauvegarde des adresses e-mail à l'aide d'un logiciel tiers | RA | I |
 
 ##### **3.1.2. Gestion des accès**
 
@@ -79,17 +79,15 @@ Définition ## RACI
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Surveiller et gérer les alertes pour le fonctionnement des systèmes en support du service | I | RA |
-| Gérer le quota sur les boîtes aux lettres | RA | |
-| Gérer le dimensionnement du matériel sur le service |   | RA |
-| Tenir à jour les logs générés par le service |   | RA |
-
-
+| Gérer le quota sur les adresses e-mail | RA | |
+| Gérer le dimensionnement du matériel sur le service |  | RA |
+| Tenir à jour les logs générés par le service |  | RA |
 
 ##### **3.1.4. Connectivité **
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer du plan d’adressage IP et des systèmes réseau (architecture, protocoles, trafic réseau et accès au service) | | RA |
+| Gérer le plan d’adressage IP et les systèmes réseau (architecture, protocoles, trafic réseau et accès au service) | | RA |
 | Filtrer les flux réseau | RA | |
 
 ##### **3.1.5. Gestion **
@@ -106,7 +104,7 @@ Définition ## RACI
 | --- | --- | --- |
 | Définir et maintenir un plan de continuité et de reprise d’activité en fonction des besoins de l’entreprise | | RA |
 
-#### 3.2. Gestion des événements
+#### 3.2. Gestion des évènements
 
 ##### **3.2.1. Incidents**
 
@@ -123,7 +121,6 @@ Définition ## RACI
 | Planifier et déployer des mises à jour et des correctifs sur le service, le système d'exploitation et les logiciels en support du service | | RA |
 | Remplacer le matériel défectueux pour prendre en charge le service | | RA |
 
-
 ### 4. Réversibilité
 
 #### 4.1. Modèle de réversibilité
@@ -132,7 +129,6 @@ Définition ## RACI
 | --- | --- | --- |
 | Choisir un outil de migration pour exporter les comptes e-mail de l'ancienne infrastructure | RA | |
 | Choisir le format du fichier d'extraction en suivant le logiciel utilisé pour la migration | RA | |
-
 
 #### 4.2. Récupération des données
 
@@ -146,7 +142,7 @@ Définition ## RACI
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Supprimer les configurations en fin de service suite à la résiliation du contrat| I | RA |
+| Supprimer les configurations en fin de service suite à la résiliation du contrat | I | RA |
 
 #### 5.2. Effacement des données
 
@@ -158,4 +154,4 @@ Définition ## RACI
 
 [Toute notre documentation sur les solutions collaboratives Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
