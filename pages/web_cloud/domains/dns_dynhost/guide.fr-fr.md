@@ -8,13 +8,11 @@ updated: 2024-05-21
 
 La zone **D**omain **N**ame **S**ystem (**DNS**) d’un nom de domaine constitue le fichier de configuration de ce dernier. Elle se compose d’informations techniques, appelées *enregistrements DNS*. La zone DNS est, en quelque sorte, comme un centre d'aiguillage. 
 
-Vous pouvez, par exemple, y préciser :
+Pour plus d'explications, consultez nos guides suivants :
 
-- L'adresse IP (enregistrements DNS de type *A* et *AAAA*) de votre hébergement web pour afficher votre site web avec votre nom de domaine.
-- Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
-- Des informations liées à la sécurité / l'authentification de vos services associés (hébergement web, serveur web, serveur e-mail, etc.) à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
-
-Si besoin, consultez notre documentation sur [les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) et l'[édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](/links/manager).
+- [Tout savoir sur les serveurs DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
 La mise à jour de manière « dynamique » d'un enregistrement DNS peut éviter une interruption prolongée de l'un de vos services si vous ne disposez pas d'une adresse IP dite « fixe » (qui ne change pas).
 
