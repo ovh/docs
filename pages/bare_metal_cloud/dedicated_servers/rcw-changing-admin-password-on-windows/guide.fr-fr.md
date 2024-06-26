@@ -129,7 +129,7 @@ Puis redémarrez le serveur à partir de l'espace client:
 Click the `...`{.action} button near "Status" in the "Service Status" section and click `Restart`{.action}.
 Cliquez sur le bouton (`...`{.action}) près de la section "État des services" et sélectionnez `Redémarrer`{.action}.
 
-![reboot](images/reboot.png){.thumbnail}
+![reboot](/pages/assets/screens/control_panel/bare-metal-dedicated/cp_dedicated_restart.png){.thumbnail}
 
 ### Étape 4: Définir un nouvau mot de passe (IPMI) <a name="step4"></a>
 
@@ -154,7 +154,7 @@ Une fenêtre de ligne de commande (cmd) doit s'ouvrir lorsque la session KVM est
 
 Définissez le mot de passe de l'utilisateur actuel (« Administrator »):
 
-```
+```bash
 net user Administrator *
 ```
 
