@@ -71,7 +71,7 @@ Un ID de référencement d'opération est toujours ajouté sur chaque opération
 
 Ces noms et références sont bien évidemment différents pour chaque service OVHcloud (Bare Metal Cloud, Public Cloud, etc..) 
 
-#### Depuis l'API OVHcloud
+#### Depuis l'API OVHcloud :
 
 > [!success]
 > 
@@ -83,7 +83,7 @@ Exécutez l'appel API suivant pour obtenir la liste des opérations :
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/robot
 >
-
+>
 > **Parameters:**
 >
 > - `serviceName` : La référence de votre PCC sous la forme, `pcc-XXX-XXX-XXX-XXX`.
@@ -106,14 +106,14 @@ Pour avoir le détail de chaque robot, exécutez l'appel API suivant :
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/robot/{name}
 >
-
+>
 > **Parameters:**
 >
 > - `serviceName` : La référence de votre PCC sous la forme `pcc-XXX-XXX-XXX-XXX`.
 > - `name` : Le nom du robot, par exemple `maintenanceUpdateAntivirusConfiguration`.
 >
 
-Retour :
+**Retour :**
 
 ```shell
 {

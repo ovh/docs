@@ -28,6 +28,7 @@ details[open]>summary::before {
 
 ## Requirements
 
+- have to be connected to the [client space OVHcloud](/links/manager).
 - You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) infrastructure.
 - You have access to the [OVHcloud Control Panel](/links/manager) or the [API console for your services](https://eu.api.ovh.com/).
 
@@ -71,7 +72,7 @@ An operation referencing ID is always added on each operation, along with an ass
 
 Of course, for each OVHcloud service (Bare Metal Cloud, Public Cloud, etc.) these names and references may change.
 
-#### Via the OVHcloud API
+#### Via the OVHcloud API :
 
 > [!success]
 >
@@ -83,7 +84,7 @@ Run the following API call to get the list of operations:
 > 
 > @api {v1} /dedicatedCloud get /dedicatedCloud/{serviceName}/robot
 >
-
+>
 > **Parameters:**
 > 
 > - `serviceName`: Your Dedicated Cloud reference in the form `pcc-XXX-XXX-XXX-XXX`.
@@ -106,13 +107,14 @@ To get the details of each robot, run the following API call:
 >
 > @api {v1} /dedicatedCloud get /dedicatedCloud/{serviceName}/robot/{name}
 >
-
+>
 > **Parameters :**
 > 
 > - `serviceName`: Your Dedicated Cloud reference in the form `pcc-XXX-XXX-XXX-XXX`.
 > - `name`: The name of the robot, e.g. `maintenanceUpdateAntivirusConfiguration`.
 >
 
+**Return :**
 ``` shell
 {
   "type": "task",
