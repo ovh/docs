@@ -1,7 +1,7 @@
 ---
 title: 'Alterar a palavra-passe administrador num servidor dedicado Windows'
 excerpt: 'Saiba como alterar a palavra-passe de um administrador num servidor dedicado Windows'
-updated: 2023-09-18
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -14,10 +14,18 @@ Quando instalar ou reiniciar um sistema operativo Windows, irá receber uma pala
 
 **Este manual explica-lhe como alterar a palavra-passe "admin" do seu servidor através das configurações de modo rescue disponíveis para um sistema operativo Windows.**
 
+
+> [!warning]
+>
+> Este manual não se aplica ao arranque em modo rescue intitulado `Windows Customer Rescue System`.
+>
+> Consulte [este manual](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) aquando da utilização da opção `Windows Customer Rescue System (Windows2022-based)` na Área de Cliente OVHcloud.
+>
+
 ## Requisitos
 
-* Possuir um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} com o Windows instalado.
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Possuir um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} com o Windows instalado.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
