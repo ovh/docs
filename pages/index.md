@@ -98,6 +98,7 @@
         + [Email Pro - Shared Responsibility](web_cloud/email_and_collaborative_solutions/email_pro/responsibility_model)
         + [Domains - Shared Responsibility](web_cloud/domains/responsibility_model_domains)
         + [Data Processing - Responsibility Model](public_cloud/data_analytics/data_processing/responsibility_model)
+        + [Managed E-mail Server on Mutualized Infrastructure - Responsibility Model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/responsibility_model_private_email_server_exchange)
 + Bare Metal Cloud
     + [Dedicated Servers](products/bare-metal-cloud-dedicated-servers)
         + [Getting started](bare-metal-cloud-dedicated-servers-getting-started)
@@ -1500,6 +1501,7 @@
                 + [Adding a domain name to your Exchange service](web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
                 + [Creating a CNAME record to add an associated domain](web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
                 + [Hosted Exchange Responsibility model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/responsibility-model)
+                + [Managed E-mail Server on Mutualized Infrastructure - Responsibility Model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/responsibility_model_private_email_server_exchange)
             + [Exchange account features](web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features)
                 + [Creating contact groups](web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
                 + [Delegating permissions on an Exchange account](web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
@@ -1900,7 +1902,6 @@
             + [Manage a service account with OVHcloud API](manage_and_operate/api/manage-service-account)
             + [How to use the OVHcloud API with Oauth2](account_and_service_management/account_information/authenticate-api-with-service-account)
             + [How to enable OVHcloud account logs forwarding](manage_and_operate/iam/iam-logs-forwarding)
-            + [Getting started with OVHcloud KMS](manage_and_operate/kms/quick-start)
     + [User management & Federation](products/manage-operate-user)
         + [Getting started](manage-operate-user-getting-started)
             + [Presentation of identities that can interact within an OVHcloud account](manage_and_operate/iam/identities-management)
@@ -1965,6 +1966,8 @@
                 + [Tracking slow MySQL queries with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_mysql_slow_queries)
                 + [Supervising your HAProxy deployment with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_haproxy)
                 + [Analyzing Twitter with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_twitter)
+    + [KMS](manage-operate-kms)
+        + [Getting started with OVHcloud KMS](manage_and_operate/kms/quick-start)
         + [OVHcloud KMS Architecture overview](manage_and_operate/kms/architecture-overview)
 + OVHcloud Labs
     + [Data Collector](products/ovhcloud-labs-data-collector)
