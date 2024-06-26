@@ -62,6 +62,23 @@ When versioning is not enabled:
 
 ![Cold Archive concept](images/Withversioningdisabled2.png)
 
+### With Versioning Enabled
+
+When versioning is enabled:
+
+- Each time you upload the same object, a noncurrent version of the object is created, and the latest created version becomes the current version. Old versions are kept, and data is protected from accidental deletions or application failures. You can retrieve them anytime.
+
+
+![Cold Archive concept](images/Withversioningenabled.png)
+
+- If you delete an object, by default, OVHcloud will create a Delete Marker (DM) as the new current version, and all previous versions remain. The object is thus considered "deleted," and a GET object operation on that object will return a 404 error.
+
+![Cold Archive concept](images/Withversioningenabled2.png)
+
+- You can still download or delete a specific version of an object by specifying a version ID. Please note that deleting an object by specifying a version number is irreversible.
+
+
+![Cold Archive concept](images/Withversioningenabled3.png)
 
 ### How to Enable Versioning
 
