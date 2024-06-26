@@ -32,7 +32,7 @@ An Object Storage bucket can be in one of three states:
    
 [OVHcloud Cold Archive](https://confluence.ovhcloud.tools/display/PUOS/Versioning) is a class of storage designed for long-term storage of rarely accessed data.
 
-![Archive](images/restoring.PNG){.w-100}
+![Archive](images/versionning.png){.w-100}
 
 /!\ Once versioning is enabled, it cannot be disabled; it can only be suspended.
 
