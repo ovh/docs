@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud KMS"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-06-25
+updated: 2024-06-26
 ---
 
 > [!warning]
@@ -20,7 +20,7 @@ The purpose of this guide is to show you the steps you need to take to set up yo
 
 ## Instructions
 
-### Ordering your SMS
+### Ordering your KMS
 
 Each KMS is associated with a region, so the keys stored in that region are guaranteed to stay in that region.<br>
 You can order multiple KMSs, either in different regions or in the same region.
@@ -31,7 +31,6 @@ You can order a KMS from the [OVHcloud Control Panel](/links/manager) by going t
 
 - Click `Bare Metal Cloud`{.action} then `Identity, Security & Operations`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
 - Click `Hosted Private Metal Cloud`{.action} then `Identity, Security & Operations`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
-- Click `Public Cloud`{.action} then `Identity, Security`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
 
 ![Access to the KMS menu](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
