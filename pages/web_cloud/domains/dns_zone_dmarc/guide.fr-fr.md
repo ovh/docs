@@ -1,5 +1,5 @@
 ---
-title: Configurer un enregistrement DMARC pour améliorer la sécurité des emails
+title: Améliorer la sécurité des e-mails via un enregistrement DMARC
 excerpt: Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail
 updated: 2023-12-13
 ---

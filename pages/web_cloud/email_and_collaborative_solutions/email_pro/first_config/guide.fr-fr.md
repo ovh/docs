@@ -80,7 +80,7 @@ Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
 - **SRV** : enregistrement DNS permettant la configuration automatique de votre logiciel de messagerie lorsque vous y ajoutez votre adresse e-mail.
 - **MX** : enregistrement DNS des serveurs e-mail nécessaire à la réception des e-mails sur le nom de domaine concerné.
-- **DKIM** : Mise en place d'une signature numérique chiffrée pour sécuriser les échanges e-mails. Consultez notre guide « [Configurer un enregistrement DKIM pour améliorer la sécurité des emails](/pages/web_cloud/domains/dns_zone_dkim) » pour plus d'informations.
+- **DKIM** : Mise en place d'une signature numérique chiffrée pour sécuriser les échanges e-mails. Consultez notre guide « [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) » pour plus d'informations.
 
 **Pour un nom de domaine non géré par OVHcloud**, suivez l'étape 3.
 
@@ -98,8 +98,8 @@ La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS 
     - *Pour un enregistrement CNAME*, aidez-vous de notre guide « [Créer un champ CNAME à l’ajout d’un domaine associé](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname) ».
     - *Pour un enregistrement MX*, aidez-vous de notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_mx) ».
     - *Pour un enregistrement SRV*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille rouge. Vous pouvez vous aider du guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » pour ajouter cet enregistrement.
-    - *Pour un enregistrement SPF*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Configurer un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) » pour ajouter cet enregistrement.
-    *Pour un enregistrement DKIM*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Configurer un enregistrement DKIM pour améliorer la sécurité des emails](/pages/web_cloud/domains/dns_zone_dkim) » pour ajouter cet enregistrement.
+    - *Pour un enregistrement SPF*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) » pour ajouter cet enregistrement.
+    *Pour un enregistrement DKIM*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) » pour ajouter cet enregistrement.
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 

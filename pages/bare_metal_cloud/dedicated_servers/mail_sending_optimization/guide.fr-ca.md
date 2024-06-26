@@ -148,11 +148,11 @@ Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mai
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Configurer un enregistrement DKIM pour améliorer la sécurité des emails](/pages/web_cloud/domains/dns_zone_dkim)
+[Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-[Configurer un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf)
+[Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurer un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+[Améliorer la sécurité des e-mails via un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Pour être accompagné sur la mise en place de vos solutions OVHcloud, contactez notre [réseau de partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
