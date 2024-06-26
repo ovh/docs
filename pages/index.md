@@ -1500,6 +1500,7 @@
                 + [Adding a domain name to your Exchange service](web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
                 + [Creating a CNAME record to add an associated domain](web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
                 + [Hosted Exchange Responsibility model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/responsibility-model)
+                + [Managed E-mail Server on Mutualized Infrastructure - Responsibility Model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/responsibility_model_private_email_server_exchange)
             + [Exchange account features](web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features)
                 + [Creating contact groups](web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
                 + [Delegating permissions on an Exchange account](web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
