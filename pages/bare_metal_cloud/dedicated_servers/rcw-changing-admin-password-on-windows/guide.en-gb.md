@@ -1,12 +1,12 @@
 ---
-title: "How to reset the Windows Administrator password when using Rescue-Customer-Windows"
-excerpt: "Reset Administrator password when using Rescue-Customer-Windows"
+title: "How to reset the Windows Administrator password with the Windows customer rescue system"
+excerpt: "Find out how to use the OVHcloud Windows rescue mode to reset the password of the Administrator account on a Windows dedicated server"
 updated: 2024-06-21
 ---
 
 ## Objective
 
-This guide will help you to reset your `Administrator`'s password with the __*Windows customer rescue system*__.
+This guide will help you to reset your `Administrator` account password with the __*Windows customer rescue system*__.
 
 ## Requirements
 
@@ -16,26 +16,26 @@ This guide will help you to reset your `Administrator`'s password with the __*Wi
 
 > [!warning]
 >
-> This guide is not compatible with the `WinPE Rescue` mode.
-> Read [this guide](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows) if you are using the `WinPe Rescue` mode.
+> This guide is not applicable to the legacy `WinPE Rescue` mode.
 >
+> Follow [this guide](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows) instead when using the `WinPE Rescue` mode in the OVHcloud Control Panel.
 
 ## Instructions
 
-### Step 1 - Rebooting the server into rescue mode <a name="step1"></a>
+### Step 1 - Reboot the server into rescue mode <a name="step1"></a>
 
 The system has to be started in __*Windows customer rescue system*__ before the admin password can be changed.
 
 For detailed instructions, please refer to the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
 
-### Step 2 - Clearing the current password <a name="step2"></a>
+### Step 2 - Clear the current password <a name="step2"></a>
 
 Connect to your server in Remote Desktop using the credentials provided by email.
 
-Please note that the user name for the rescue is `Administrator`.
+Please note that the user name for the rescue mode is `Administrator`.
 
-- If you server uses software RAID on your Windows disk, you have to import your Windows local disk to be able to access it: follow the instructions of the section [A) Importing your local Windows disk](#sectionA).
-- If you server does not use software RAID on your Windows disk, you should be able to access directly access the local Windows disk as explained in the section [B) Resetting the pasword ](#sectionB).
+- If you server uses software RAID on your Windows disk, you have to import your Windows local disk to be able to access it: Follow the instructions of the section [A) Importing your local Windows disk](#sectionA).
+- If you server does not use software RAID on your Windows disk, you should be able to directly access the local Windows disk as explained in the section [B) Resetting the pasword](#sectionB).
 
 #### A) Importing your local Windows disk <a name="sectionA"></a>
 
@@ -49,8 +49,9 @@ You can then see the disks and volumes of the server.
 
 ![disk_manager_window](images/disk_manager_window1.png){.thumbnail}
 
-Your server's Windows disk is probably *disk 1*, so you must import it to be able to access it.
-Please note that if you have several disk groups, the number of the Windows disk may vary, you may have to import several disks to get the Windows one.
+Your server's Windows disk is probably *Disk 1*. You must import it to be able to access it.
+
+Please note that if you have several disk groups, the number of the Windows disk may vary. You may have to import several disks to get the Windows one.
 
 You also have to import the second disk to properly import your software RAID volume.
 
@@ -60,7 +61,7 @@ Right-click *Disk 1* and select `Online`{.action}.
 
 ![disk_import_disk1](images/disk_manager_disk1on.png){.thumbnail}
 
-Do the same thing for the second disk (Disk 2) to properly import your software RAID volume.
+Do the same thing for the second disk (*Disk 2*) to properly import your software RAID volume.
 
 Right-click *Disk 2* and select `Online`{.action}.
 
@@ -83,7 +84,8 @@ You can see that the local disk is now accessible and that the Windows disk is d
 ![disk_import_sync](images/disk_import_sync.png){.thumbnail}
 
 > [!primary]
-> In this example, the volume status is "Resynching" because the server was hard-rebooted in rescue mode. This is an expected status and it is not caused by the rescue itself.
+> In this example, the volume status is "Resynching" because the server was hard-rebooted into rescue mode. This is an expected status and it is not caused by the rescue mode itself.
+> 
 > This will not affect data on the volume and resynchronisation will continue once the server is rebooted on its installed OS.
 
 > [!warning]
@@ -94,7 +96,7 @@ You can now reset the password by following the instructions below.
 
 #### B) Resetting the password <a name="sectionB"></a>
 
-To reset passwords, the NTPWEdit tool is required.<br>
+To reset passwords, the tool NTPWEdit is required.<br>
 Once you are connected via Remote Desktop, open the browser and download it from its [official website](http://www.cdslow.org.ru/files/ntpwedit/ntpwed07.zip).<br>
 Navigate to the folder where the downloaded ZIP file is located and extract its content.<br>
 Next, open the `ntpwedit64` executable to start the application.
@@ -109,7 +111,7 @@ It usually is the `Windows (E:\)` drive.
 
 ![ntpwedit1](images/ntpwedit_1.png){.thumbnail}
 
-Browse to `E:\WINDOWS\SYSTEM32\CONFIG\`
+Browse to `E:\WINDOWS\SYSTEM32\CONFIG\`.
 
 Select and open the SAM file to display the user accounts by clicking `Open`{.action}.
 
@@ -119,11 +121,11 @@ Select the user account "admin" and click on `Change password`{.action}.
 
 ![ntpwedit2](images/ntpwedit_2.png){.thumbnail}
 
-In the pop-up window, leave the fields empty and click `OK`{.action}. Finish by clicking `Save changes and Exit`{.action}.
+In the popup window, leave the fields empty and click `OK`{.action}. Finish by clicking `Save changes and Exit`{.action}.
 
 After this, the server needs to be rebooted on the normal operating system.
 
-### Step 3 - Rebooting the server <a name="step3"></a>
+### Step 3 - Reboot the server <a name="step3"></a>
 
 First, change the netboot back to "Boot from the hard disk" in your OVHcloud Control Panel (see [step 1](#step1)).
 
@@ -131,9 +133,9 @@ Then restart the server from the Control Panel.
 
 Click the `...`{.action} button near "Status" in the "Service Status" section and click `Restart`{.action}.
 
-![reboot](images/reboot.png){.thumbnail}
+![reboot](/pages/assets/screens/control_panel/bare-metal-dedicated/cp_dedicated_restart.png){.thumbnail}
 
-### Step 4 - Setting a new password (IPMI) <a name="step4"></a>
+### Step 4 - Set a new password (IPMI) <a name="step4"></a>
 
 In your OVHcloud Control Panel, navigate to the IPMI tab to open a KVM session.
 
@@ -141,7 +143,7 @@ In your OVHcloud Control Panel, navigate to the IPMI tab to open a KVM session.
 
 #### For a newer version of Windows
 
-Once you have accessed your server through IPMI, click the start menu icon on the bottom-left. Start typing `Sign-in options` and click the `Sign-in options`{.action} button once it pops up.
+Once you have accessed your server through IPMI, click the start menu icon at the bottom left. Start typing `Sign-in options` and click the `Sign-in options`{.action} button once it pops up.
 
 ![adminpw7](images/adminpw7.png){.thumbnail}
 
@@ -161,7 +163,7 @@ net user Administrator *
 
 ![adminpw9](images/adminpw9.png){.thumbnail}
 
-We advise you to use the virtual keyboard when typing passwords in this interface.
+We advise you to use the virtual keyboard when typing passwords in this interface to avoid mistakes.
 
 ## Go further
 
