@@ -35,7 +35,7 @@ Une fois les fichiers et la base de données de votre site web WordPress sauvega
 
 > [!primary]
 >
-Nous vous recommandons d'utiliser le logiciel [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) pour transférer vos fichiers WordPress vers votre hébergement.
+> Nous vous recommandons d'utiliser le logiciel [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) pour transférer vos fichiers WordPress vers votre hébergement.
 >
 
 Pour pouvoir transférer les fichiers relatifs à votre site web WordPress, vous devez d'abord vous [connecter à l'espace de stockage FTP de votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_connection).
