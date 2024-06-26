@@ -96,7 +96,7 @@ Fügen Sie folgende Einträge hinzu, sofern diese nicht existieren:
 |domain.tld.|MX|5|mx2.mail.ovh.net.|
 |domain.tld.|MX|100|mx3.mail.ovh.net.|
 |www.domain.tld.|CNAME|-|domain.tld.|
-|domain.tld.|A|-|<Ziel_IP-Adresse>|
+|domain.tld.|A|-|`Ziel_IP-Adresse`|
 
 Die richtige Ziel-IP-Adresse Ihres OVHcloud Hostings finden Sie in unserer Anleitung [IP-Adressen der verschiedenen Shared Hosting Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 
@@ -127,7 +127,7 @@ Wenn Ihre Backup-Datei als komprimiertes Archiv vorliegt, entkomprimieren Sie es
 
 > [!primary]
 >
-> OVHcloud bietet auch Web Cloud Databases Datenbankserver an. Wenn Sie dieses Angebot mit Ihrer Website verwenden möchten, finden Sie unsere Dokumentation zu diesem Dienst auf unserer dedizierten Seite </products/web-cloud-clouddb>.
+> OVHcloud bietet auch Web Cloud Databases Datenbankserver an. Wenn Sie dieses Angebot mit Ihrer Website verwenden möchten, finden Sie unsere Dokumentation zu diesem Dienst auf [unserer dedizierten Seite](products/web-cloud-clouddb).
 >
 
 Ihre OVHcloud Datenbank muss mit der Konfigurationsdatei Ihrer Website im FTP-Speicherplatz Ihres OVHcloud Hostings verlinkt werden.

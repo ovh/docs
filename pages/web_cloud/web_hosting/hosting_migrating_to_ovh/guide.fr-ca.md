@@ -91,7 +91,7 @@ Si elles ne sont pas présentes, renseignez les entrées suivantes :
 |domain.tld.|MX|5|mx2.mail.ovh.ca.|
 |domain.tld.|MX|100|mx3.mail.ovh.ca.|
 |www.domain.tld.|CNAME|-|domain.tld.|
-|domain.tld.|A|-|<adresse_IP_cible>|
+|domain.tld.|A|-|`adresse_IP_cible`|
 
 Pour récupérer la bonne adresse IP cible de votre hébergement OVHcloud, consultez notre guide listant les [adresses IP des différents clusters d'hébergement mutualisés](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 
@@ -122,7 +122,7 @@ Pour la sauvegarde de votre base de données, [créez une nouvelle base de donn�
 
 > [!primary]
 >
-> OVHcloud propose des serveurs de base de données Web Cloud Databases. Si vous souhaitez utiliser cette offre avec votre site web, retrouvez l'ensemble de notre documentation sur ce produit sur notre page dédiée </products/web-cloud-clouddb>.
+> OVHcloud propose des serveurs de base de données Web Cloud Databases. Si vous souhaitez utiliser cette offre avec votre site web, retrouvez l'ensemble de notre documentation sur ce produit sur [notre page dédiée](/products/web-cloud-clouddb).
 >
 
 Liez ensuite votre base de données OVHcloud avec le fichier de configuration de votre site web présent dans l'espace de stockage FTP de votre hébergement OVHcloud.

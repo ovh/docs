@@ -63,7 +63,7 @@ Várias ofertas de [alojamento partilhado OVHcloud](/links/web/hosting) incluem 
 - O alojamento [Performance](/links/web/hosting-performance-offer) com **1000 endereços de e-mail** "MX Plan". Esta oferta é indicada em 4 "subofertas".
 - O alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) com **200 endereços de e-mail** "MX Plan". Esta oferta é utilizada pelos programadores de aplicações.
 
-Depois de escolher a oferta de alojamento, se ainda não é cliente da OVHcloud, clique no botão `Encomendar`{.action} presente nas páginas comerciais acima. Siga os passos da encomenda **sem solicitar a transferência do seu nome de domínio** (Esta ação será realizada na etapa 10 deste manual).
+Depois de escolher a oferta de alojamento, se ainda não é cliente da OVHcloud, clique no botão `Encomendar`{.action} presente nas páginas comerciais acima. Siga os passos da encomenda **sem solicitar a transferência do seu nome de domínio** (esta ação será realizada na etapa 10 deste manual).
 
 Também pode efetuar a encomenda a partir da sua [Área de Cliente OVHcloud](/links/manager). Uma vez ligado, siga as instruções seguintes:
 
@@ -96,7 +96,7 @@ Se não estiverem presentes, preencha as seguintes entradas:
 |domain.tld.|MX|5|mx2.mail.ovh.net.|
 |domain.tld.|MX|100|mx3.mail.ovh.net.|
 |www.domain.tld.|CNAME|-|domain.tld.|
-|domain.tld.|A|-|<endereço_IP_de_destino>|
+|domain.tld.|A|-|`endereço_IP_de_destino`|
 
 Para obter o endereço IP certo de destino do seu alojamento OVHcloud, consulte o guia que apresenta os [endereços IP dos diferentes clusters de alojamento partilhados](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 

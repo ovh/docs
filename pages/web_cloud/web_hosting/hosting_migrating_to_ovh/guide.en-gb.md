@@ -93,7 +93,7 @@ If they are not present, enter the following information:
 |domain.tld.|MX|5|mx2.mail.ovh.net.|
 |domain.tld.|MX|100|mx3.mail.ovh.net.|
 |www.domain.tld.|CNAME|-|domain.tld.|
-|domain.tld.|A|-|<target_IP_address>|
+|domain.tld.|A|-|`target_IP_address`|
 
 To retrieve the correct target IP address for your OVHcloud hosting plan, please refer to our guide listing the [IP addresses of the different shared hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 

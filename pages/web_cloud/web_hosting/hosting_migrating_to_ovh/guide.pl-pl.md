@@ -96,7 +96,7 @@ Jeśli nie ma ich na liście, wprowadź następujące wpisy:
 |domain.tld.|MX|5|mx2.mail.ovh.net.|
 |domain.tld.|MX|100|mx3.mail.ovh.net.|
 |www.domain.tld.|CNAME|-|domain.tld.|
-|domain.tld.|A|-|<docelowy_adres_IP>|
+|domain.tld.|A|-|`docelowy_adres_IP`|
 
 Aby dowiedzieć się, jaki adres IP jest odpowiedni dla Twojego hostingu OVHcloud, zapoznaj się z naszym przewodnikiem zawierającym [adresy IP różnych klastrów hostingu współdzielonego](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 
@@ -127,7 +127,7 @@ Do tworzenia kopii zapasowej bazy danych [utwórz nową bazę danych](/pages/web
 
 > [!primary]
 >
-> OVHcloud oferuje serwery baz danych Web Cloud Databases. Jeśli chcesz korzystać z tej oferty na swojej stronie internetowej, zapoznaj się z naszą dokumentacją dotyczącą tego produktu na naszej stronie </products/web-cloud-clouddb>.
+> OVHcloud oferuje serwery baz danych Web Cloud Databases. Jeśli chcesz korzystać z tej oferty na swojej stronie internetowej, zapoznaj się z naszą dokumentacją dotyczącą tego produktu [na naszej stronie](/products/web-cloud-clouddb).
 >
 
 Połącz następnie bazę danych OVHcloud z plikiem konfiguracyjnym Twojej strony WWW dostępnym w przestrzeni dyskowej FTP Twojego hostingu OVHcloud.

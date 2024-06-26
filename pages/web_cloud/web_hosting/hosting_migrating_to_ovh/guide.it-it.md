@@ -96,7 +96,7 @@ Se non sono presenti, inserisci queste informazioni:
 |domain.tld.|MX|5|mx2.mail.ovh.net.|
 |domain.tld.|MX|100|mx3.mail.ovh.net.|
 |www.domain.tld.|CNAME|-|domain.tld.|
-|domain.tld.|A|-|<indirizzo_IP_di_destinazione>|
+|domain.tld.|A|-|`indirizzo_IP_di_destinazione`|
 
 Per recuperare l’indirizzo IP di destinazione corretto per il tuo hosting OVHcloud, consulta la nostra guida che elenca gli [indirizzi IP dei diversi cluster di hosting condivisi](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 
@@ -127,7 +127,7 @@ Per il backup del tuo database, [crea un nuovo database](/pages/web_cloud/web_ho
 
 > [!primary]
 >
-> OVHcloud propone server di database Web Cloud Databases. Per utilizzare questa offerta con il tuo sito Web, consulta la nostra documentazione su questo prodotto nella nostra pagina dedicata </products/web-cloud-clouddb>.
+> OVHcloud propone server di database Web Cloud Databases. Per utilizzare questa offerta con il tuo sito Web, consulta la nostra documentazione su questo prodotto nella [nostra pagina dedicata](products/web-cloud-clouddb).
 >
 
 Associa il tuo database OVHcloud al file di configurazione del tuo sito presente nello spazio di storage FTP del tuo hosting OVHcloud.

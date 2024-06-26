@@ -63,7 +63,7 @@ Varios [planes de hosting de OVHcloud](/links/web/hosting) contienen una soluci�
 - El alojamiento [Performance](/links/web/hosting-performance-offer) con **1000 direcciones de correo** "MX Plan". Esta oferta se divide en 4 "subproductos".
 - El alojamiento [Cloud Web](/links/web/hosting-cloud-web-offer) con **200 direcciones de correo** "MX Plan". Esta oferta la utilizan los desarrolladores de aplicaciones.
 
-Si todavía no es cliente de OVHcloud, haga clic en el botón `Contratar`{.action} de las páginas comerciales anteriores. Siga los pasos del pedido **sin solicitar la transferencia del dominio** (Esta acción se realizará en el paso 10 de esta guía).
+Si todavía no es cliente de OVHcloud, haga clic en el botón `Contratar`{.action} de las páginas comerciales anteriores. Siga los pasos del pedido **sin solicitar la transferencia del dominio** (esta acción se realizará en el paso 10 de esta guía).
 
 También puede realizar el pedido desde su [área de cliente de OVHcloud](/links/manager). Una vez conectado, siga estas instrucciones:
 
@@ -75,7 +75,7 @@ Una vez validado el pago, se iniciará la instalación del alojamiento. Recibir�
 
 > [!primary]
 >
-Además de la solución MX Plan, OVHcloud ofrece otras soluciones de correo. Por ejemplo, puede combinar con direcciones de correo MX Plan direcciones ["Email-Pro"](/links/web/email-pro) y/o cuentas ["Exchange"](/links/web/emails-hosted-exchange).
+> Además de la solución MX Plan, OVHcloud ofrece otras soluciones de correo. Por ejemplo, puede combinar con direcciones de correo MX Plan direcciones ["Email-Pro"](/links/web/email-pro) y/o cuentas ["Exchange"](/links/web/emails-hosted-exchange).
 >
 
 ### Etapa 2: crear y preconfigurar una zona DNS para su dominio en OVHcloud <a name="step2"></a>
