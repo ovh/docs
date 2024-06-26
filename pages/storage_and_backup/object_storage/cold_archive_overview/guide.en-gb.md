@@ -89,8 +89,6 @@ You can track the different steps of your data by the status of your bucket
 | **`Deleting`** | Objects deletion from tapes (and disks if restored) in progress. | Listing | <48 hrs | Archive |
 | **`Flushed`** | Bucket is empty and can be removed safely. | Listing (empty bucket) | N/A | Archive |
 
-![Lifecycle](images/lifecycle.png)
-
 ## Network, upload and retrieval performances
 
 Cold Archive is a service based on Object Storage - S3 API. Performance and limitations (number of buckets, account, maximum bandwidth per connection, number of requests per second on bucket, maximum size per object / mpu / part, etc.) are available [here](/pages/storage_and_backup/object_storage/s3_limitations).
