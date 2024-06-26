@@ -85,5 +85,43 @@ Pour activer le versioning sur un bucket de stockage d'objets S3, utilisez la co
 
 ```sh
 aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
-
 ```
+
+
+**Explanation:**
+
+- **put-bucket-versioning:** AWS CLI command to configure versioning.
+- **--bucket my-bucket:** Replace `my-bucket` with the name of your bucket.
+- **--versioning-configuration Status=Enabled:** Enables versioning for the specified bucket.
+
+After enabling versioning, all objects added to the bucket will have a unique version ID. This means that every time an object is modified or deleted, a new version is created, which can be restored if needed.
+
+### How to Suspend Versioning
+
+#### Using the AWS CLI
+
+To suspend versioning, set the versioning configuration status to `Suspended`:
+
+
+```sh
+aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
+```
+
+**Explication:**
+
+- **put-bucket-versioning:** Commande AWS CLI pour configurer le versioning.
+- **--bucket my-bucket:** Remplacez `my-bucket` par le nom de votre bucket.
+- **--versioning-configuration Status=Suspended:**  Suspend le versioning pour le bucket spécifié.
+
+La suspension du versioning empêche les nouveaux objets de recevoir un identifiant de version. Les objets existants et leurs versions restent inchangés, mais les nouveaux objets n'auront pas d'identifiants de version jusqu'à ce que le versioning soit réactivé.
+
+### Considérations importantes
+
+- **Coûts de stockage:** Chaque version d'un objet est stockée comme un objet complet, ce qui entraîne des coûts de stockage S3 standard.
+- **Application:** Lorsque le versioning est activé, il s'applique à tous les objets dans le bucket, y compris ceux ajoutés avant l'activation du versioning.
+- **Suspension:** La suspension du versioning ne supprime pas les versions existantes ; elle empêche seulement la création de nouvelles versions.
+- **Permissions:** Seul le propriétaire du bucket peut activer ou suspendre le versioning.
+
+## Aller plus loin
+
+Rejoignez notre communauté d'utilisateurs sur  <https://community.ovh.com/en/>.
