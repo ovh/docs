@@ -1,7 +1,7 @@
 ---
-title: "VMware log forwading to an Logs Data Plateform stream" 
-excerpt: "Find out how to enable Hosted Private Cloud VMware on OVHcloud log forwarding to a Logs Data Platform stream" 
-updated: 2024-06-25
+title: "VMware logs forwarding to a Logs Data Plateform stream" 
+excerpt: "Find out how to enable Hosted Private Cloud VMware on OVHcloud logs forwarding to a Logs Data Platform stream" 
+updated: 2024-06-26
 ---
 
 ## Objective
@@ -10,43 +10,38 @@ The purpose of this guide is to show you how to enable log transfer from your Ho
 
 ## Requirements
 
-- A OVHcloud customer account.
-- You must have one or more Hosted Private Cloud resources.
-- an active Logs Data Platform stream with the same account and security level as your Hosted Private Cloud VMware on OVHcloud.
-- You need to have followed the guide on ["Introduction to the Logs Data Platform".](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
+- An OVHcloud customer account.
+- One or more Hosted Private Cloud resources.
+- An active Logs Data Platform stream with the same account and security level as your Hosted Private Cloud VMware on OVHcloud.
+- You need to have followed the guide [Introduction to the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
 
-## Concepts and Limitations
+## Gloassry
 
-### Glossary
-
-- **Logs Data Platform:** A log management platform fully managed and secured by OVHcloud. For more information, see the LDP <https://www.ovhcloud.com/fr/logs-data-platform/> overview page.
+- **Logs Data Platform (LDP):** A logs management platform fully managed and secured by OVHcloud. For more information, see the [LDP overview page](/links/manage-operate/ldp).
 - **Data Stream:** A logical partition of logs that you create in a Logs Data Platform account and use when ingesting, viewing or querying your logs. Multiple sources can be stored in the same data stream, and the unit can be used to define a log pipeline (retention policy, archiving, live streaming, etc.), access rights and alert policies.
-- **Log Transfer:** A feature built into an OVHcloud product to integrate logs for its services into the *Data Stream* of a Logs Data Platform account with the same OVHcloud account. This feature must be enabled by you, and for your service, please read this part of the guide to enable it: [Step 1 - How to enable log transfer via the OVHcloud API ?](#Activation)
-- **Log Redirection Subscription:** When enabling log forwarding for your OVHcloud service to a given *Data Stream* Logs Data Platform, a *subscription* must be created and attached to the *Data Stream* for future management.
+- **Log Transfer:** A feature built into an OVHcloud product to integrate logs for its services into the *Data Stream* of a Logs Data Platform account with the same OVHcloud account. This feature must be enabled by you and for your service, read this part of the guide to enable it: [Step 1 - How to enable logs transfer via the OVHcloud API](#activation).
+- **Log Redirection Subscription:** When enabling logs forwarding for your OVHcloud service to a given *Data Stream* Logs Data Platform, a *subscription* must be created and attached to the *Data Stream* for future management.
 
-## In practice
+## Instructions
 
 > [!primary]
 > 
 > Please note that **log forwarding** is free to enable, but you will be billed for using the Logs Data Platform service at the standard rate.
 > 
-> For pricing, go to the solution page : [OVHcloud Logs Data Platform.](https://www.ovhcloud.com/fr/logs-data-platform/){.external}.
+> For pricing information, refer to the solution page : [OVHcloud Logs Data Platform](/links/manage-operate/ldp).
 >
 
-By enabling log forwarding to a Logs Data Platform stream, you can collect, index and analyze Hosted
-Private Cloud VMware on OVHcloud data. Regardless of their origin, this platform offers a variety of
-access methods depending on the protocol, the level of security and the format desired. The data
-collected can be easily used, thanks to the multiple APIs and web interfaces available.
+By enabling logs forwarding to a Logs Data Platform stream, you can collect, index and analyze Hosted Private Cloud VMware on OVHcloud data. Regardless of their origin, this platform offers a variety of access methods depending on the protocol, the level of security and the format desired. The data collected can be easily used, thanks to the multiple APIs and web interfaces available.
 
-For further information on the technical specifications of the Logs Data Platform (ports, protocols, etc.), please refer to our guide: ["Getting started with the Logs Data Platform".](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
+For further information on the technical specifications of the Logs Data Platform (ports, protocols, etc.), please refer to our guide [Getting started with the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
 ### Logs and labels
 
-#### Kind available
+#### Available kinds
 
-A Kind is a "type" of log that your product generates.
+A *Kind* is a "type" of log that your product generates.
 
-These are the type of log you want to transfer to your Logs Data Platform. Here are examples that may be available depending on the components of your VMware on OVHcloud Hosted Private Cloud architecture :
+These are the types of log you want to transfer to your Logs Data Platform. Here are examples that may be available depending on the components of your VMware on OVHcloud Hosted Private Cloud architecture :
 
 - **esxi**: Filtered by application.
 - **nsxtEdge**: Everything is redirected, no filter.
@@ -56,6 +51,7 @@ These are the type of log you want to transfer to your Logs Data Platform. Here 
 It is perfectly acceptable that a product has only one category.
 
 **Notes**:
+
 - All VMware logs are collected and sent to the Logs Data Platform clusters.
 - All VMware appliance logs are processed and marked at the Logs Data Platform.
 
@@ -64,11 +60,12 @@ We put all the metadata for the identification of VMware Hosted Private Cloud on
 With Hosted Private Cloud (Dedicated Server), you can imagine 3 types of logs.
 
 For example :
+
 1.  Kernel logs.
 2.  Auth logs.
 3.  Cron logs.
 
-### Step 1 - Enable Hosted Private Cloud log transfer
+### Step 1 - Enable Hosted Private Cloud logs transfer
 
 > [!primary]
 > 
@@ -77,49 +74,44 @@ For example :
 
 ### Create a Logs Data Platform stream
 
-#### Via the OVHcloud Control Panel :
-
-You can refer to this guide and find out how to manage your streams from the Log Data Platform control panel : [Getting started](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) [|Getting started with the Logs Data Platform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
+You can refer to this guide and find out how to manage your streams from the Logs Data Platform section of the OVHcloud Control Panel: [Getting started with the Logs Data Platform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
 You can retrieve the **streamId** and set it aside (copy and paste). You will need it to activate your Hosted Private Cloud subscription with the Logs Data Platform in question.
 
-### Activate the Logs Data Platform Hosted Private Cloud subscription
+### Step 1 - Activate the Logs Data Platform Hosted Private Cloud subscription
 
-#### Via the OVHcloud Control Panel :
+#### Via the OVHcloud Control Panel
 
 This feature is not yet available in the Hosted Private Cloud control panel.
 
-#### Via the OVHcloud API : <a name="Activation"></a>
+#### Via the OVHcloud API <a name="activation"></a>
 
-> [!primary]
-> 
-> Find out more about OVHcloud API calls: [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+> [!success]
 >
+> Read the [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide to get familiar with using OVHcloud APIv6.
 
-To retrieve the **streamId** of your LDP account, follow our guide: Getting [started with the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+To retrieve the **streamId** of your LDP account, read our guide [Getting started with the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
 > [!api]
 > 
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 > 
->
-> **Settings:**
+
+> **Parameters:**
 > 
-> - **serviceName**: Service name of your VMware Hosted Private Cloud on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
-> 
-> - **kind**: Name of the subscription log type, ["esxi","nsxtManager","vcsa","nsxtEdge"].
-> 
-> - **streamId**: The destination stream identifier, (uuid:"ggb8d894-c491-433e-9c87-50a8bf6fe773").
+> - `serviceName`: Your Hosted Private Cloud reference in the form `pcc-XXX-XXX-XXX-XXX`.
+> - `kind`: Name of the subscription log type, e.g. "esxi", "nsxtManager", "vcsa", "nsxtEdge".
+> - `StreamId`: The destination stream identifier (uuid:"ggb8d894-c491-433e-9c87-50a8bf6fe773").
 >
 
 Example:
 
-``` shell
+```shell
 @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 
 {
-  "kind": "esxi", // Le label VMware, les valeurs supportées actuellement sont : ["esxi","nsxtManager","vcsa","nsxtEdge"].
-  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // L'identifiant du stream LDP.
+  "kind": "esxi", // The VMware label, the values currently supported are: ["esxi","nsxtManager","vcsa","nsxtEdge"].
+  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // The LDP stream ID.
 }
 ```
 
@@ -127,53 +119,52 @@ The GET request allows you to list your subscriptions.
 
 ### Step 2 - Manage your Data Logs Platform
 
-#### Via the OVHcloud Control Panel :
+#### Via the OVHcloud Control Panel
 
-You can refer to this guide and find out how to manage your streams from the Log Data Platform control panel: [Getting started](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) [Getting started with the Logs Data Platform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
+You can refer to this guide to find out how to manage your streams from the Logs Data Platform section of the OVHcloud Control Panel: [Getting started with the Logs Data Platform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
-#### Via the OVHcloud API :
+#### Via the OVHcloud API
 
-Please use the following API calls to list subscriptions to your Hosted Private Cloud account.
+Use the following API calls to list subscriptions to your Hosted Private Cloud account.
 
 **Referencing of all Hosted Private Cloud VMware on OVHcloud API calls**:
 
-| **Méthode** |                   **Chemin**                   |                     **Description**                     |
+| **Method** |                   **Path**                      |                     **Description**                     |
 |:-----------:|:----------------------------------------------:|:-------------------------------------------------------:|
-|     GET     |     /dedicatedCloud/{serviceName}/log/kind     |        Types of logs for your Dedicated Cloud.        |
-|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}  |          Get properties of this object.            |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription |        Log subscriptions for your dedicated cloud.        |
-|    POST     | /dedicatedCloud/{serviceName}/log/subscription |    Create a log subscription for your dedicated cloud.   |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind         |        Types of logs for your Hosted Private Cloud service |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}  |          Properties of this object.                     |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription |        Log subscriptions for your Hosted Private Cloud service        |
+|     POST    | /dedicatedCloud/{serviceName}/log/subscription |    Create a log subscription for your dHosted Private Cloud service   |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription |           Get this object properties.           |
-|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription |  Delete a log subscription for your dedicated cloud. |
+|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription |  Delete a log subscription for your Hosted Private Cloud service |
 
 
-#### Get "subscriptionId"
+- Get the "subscriptionId":
 
 > [!api]
 > 
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/subscription
+>
+
+> **Parameters:**
 > 
-> **Settings:**
-> 
-> - **serviceName**: Service name of your VMware Hosted Private Cloud on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
-> 
-> - **kind**: Name of the Hosted Private Cloud subscription log type ("esxi").
+> - `serviceName`: Service name of your VMware Hosted Private Cloud on OVHcloud service, in the form `pcc-XXX-XXX-XXX-XXX`.
+> - `kind`: Name of the Hosted Private Cloud subscription log type (e.g. "esxi").
 >
 
 Return example:
 
-``` shell
+```shell
 [
   "9a36b2ec-c7d2-411d-acf8-qb64ccffdb54"
 ]
 ```
 
-Disable your Hosted Private Cloud Log Data Platform subscription:
+- Disabling your Hosted Private Cloud Log Data Platform subscription:
 
 > [!primary]
 > 
-> Canceling your Hosted Private Cloud LDP subscription will not delete your streams. The storage
-> used at the time of deactivation is subject to billing.
+> Canceling your Hosted Private Cloud LDP subscription will not delete your streams. The storage used at the time of deactivation is subject to billing.
 > 
 > **Note**: It is only possible (to date) to delete an entire stream.
 >
@@ -181,20 +172,19 @@ Disable your Hosted Private Cloud Log Data Platform subscription:
 > [!api]
 > 
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
-> 
-> **Settings:**
-> 
-> - **serviceName**: Service name of your VMware Hosted Private Cloud on OVHcloud, (pcc-XXX-XXX-XXX-XXX).
-> 
-> - **subscriptionId**: The log type name of the subscription ("esxi").
 >
 
-You will get the **operationId**, which is the identifier that confirms that the deactivation
-operation has been successful.
+> **Parameters:**
+> 
+> - `serviceName`: Service name of your VMware Hosted Private Cloud on OVHcloud, in the form `pcc-XXX-XXX-XXX-XXX`.
+> - `subscriptionId`: The log type name of the subscription (e.g. "esxi").
+>
 
-Back:
+You will get the **operationId**, which is the identifier that confirms that the deactivation operation has been successful.
 
-``` Shell
+Return:
+
+```shell
 {
   "operationId": "456eb42e-58r6-4cfd-8r5c-ccr97273712r",
   "serviceName": "ldp-vg-XXXX"
@@ -205,11 +195,11 @@ Back:
 
 You can follow these guides to take advantage of the Hosted Private Cloud Logs Data Platform features :
 
-- [Logs Data Platform - Listing guides for getting started with Logs Data Platform](https://help.ovhcloud.com/csm/fr-documentation-observability-logs-data-platform-getting-started?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=e3eec38c1977a5d0476b930e789695d0&spa=1){.external}.
+- [Logs Data Platform - Listing guides for getting started with Logs Data Platform](/products/observability-logs-data-platform-getting-started).
 - [View your logs on a Grafana dashboard](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana).
 - [Use the "LDP Tail" cli to watch your Hosted Private Cloud logs live](/pages/manage_and_operate/observability/logs_data_platform/cli_ldp_tail).
 - [Push logs from Apache to LDP](/pages/manage_and_operate/observability/logs_data_platform/ingestion_apache).
 
-If you require training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/){.external} to get a quote and request a custom analysis of your project from our Professional Services team.
+If you require training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team.
 
 Join our [community of users](/links/community).
