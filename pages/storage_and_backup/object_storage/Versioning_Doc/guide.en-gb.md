@@ -29,7 +29,8 @@ An Object Storage bucket can be in one of three states:
 2. **Versioning-enabled**: Multiple versions of each object are kept.
 3. **Versioning-suspended**: Versions are not created for new objects, but existing versions are retained.
 
-![bucket versioning states](https://confluence.ovhcloud.tools/download/attachments/123456789/Bucket_Versioning_States.png?version=1&modificationDate=1568362102000&api=v2)
+   
+[OVHcloud Cold Archive](https://confluence.ovhcloud.tools/display/PUOS/Versioning) is a class of storage designed for long-term storage of rarely accessed data.
 
 /!\ Once versioning is enabled, it cannot be disabled; it can only be suspended.
 
