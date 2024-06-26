@@ -12,8 +12,9 @@ When you install or reinstall a Windows operating system, you are provided with 
 
 > [!warning]
 >
-> This guide is not compatible with the `Windows customer rescue system` boot mode.
-> Read [this guide](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows/) if you are using the `Windows customer rescue system` boot mode.
+> This guide is not applicable to the rescue boot mode `Windows customer rescue system`.
+> 
+> Follow [this guide](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows/) when using the option `Windows customer rescue system (Windows2022-based)` in the OVHcloud Control Panel.
 >
 
 ## Requirements
