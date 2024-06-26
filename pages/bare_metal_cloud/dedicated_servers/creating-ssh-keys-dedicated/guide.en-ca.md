@@ -1,7 +1,7 @@
 ---
 title: How to create and use SSH keys
 excerpt: Find out how to create SSH key pairs on your local device and use them to establish secure connections to your server
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 ## Objective
@@ -182,7 +182,7 @@ The key is ready when the progress bar is full.
 
 ![putty key](images/puttygen_03.png){.thumbnail}
 
-Copy the full key string to the clipboard in order to [add it to your server](#addserverkey) and optionally [import it into the OVHcloud Control Panel](#importkey). Save both keys as files by clicking the corresponding buttons and also enter a passphrase to protect them.
+Copy the full key string to the clipboard in order to [add it to your server](#addserverkey). Save both keys as files by clicking the corresponding buttons and also enter a passphrase to protect them.
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: SSH-Schlüssel erstellen und verwenden
 excerpt: Erfahren Sie hier, wie Sie SSH-Schlüssel auf Ihrem lokalen Gerät konfigurieren und für eine sichere Verbindung zu Ihrem Server verwenden
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -202,7 +202,7 @@ Der Schlüssel ist bereit, sobald die Statusanzeige voll ist.
 
 ![PuTTy Key](images/puttygen_03.png){.thumbnail}
 
-Kopieren Sie die vollständige Schlüsselzeichenfolge in die Zwischenablage, um sie [zum Server hinzufügen](#addserverkey) und optional [in Ihr Kundencenter importieren](#importkey). Speichern Sie beide Schlüssel als Dateien, indem Sie auf die entsprechenden Schaltflächen klicken. Geben Sie eine Passphrase ein, um die Dateien abzusichernn.
+Kopieren Sie die vollständige Schlüsselzeichenfolge in die Zwischenablage, um sie [zum Server hinzufügen](#addserverkey). Speichern Sie beide Schlüssel als Dateien, indem Sie auf die entsprechenden Schaltflächen klicken. Geben Sie eine Passphrase ein, um die Dateien abzusichernn.
 
 > [!warning]
 >
@@ -409,32 +409,6 @@ Um eine weitere Serververbindung einzurichten, wiederholen Sie die folgenden Sch
 - [Schlüsselpaar erstellen](#useputty).
 - [Den öffentlichen Schlüssel zu Ihrem Server hinzufügen](#addserverkey).
 - [Details des Servers eingeben und die Schlüsseldatei zu `PuTTY` hinzufügen](#puttykeys).
-
-### SSH-Schlüssel in das Kundencenter importieren <a name="importkey"></a>
-
-Im OVHcloud Kundencenter können Sie öffentliche Schlüssel speichern, wenn diese mit einem der unterstützten Verschlüsselungstypen erstellt wurden. Diese Funktion kann Ihnen bei der Konfiguration oder Neuinstallation eines neuen Servers Zeit sparen, da Sie [den öffentlichen Schlüssel nicht manuell zu Ihrem Server hinzufügen](#addserverkey) müssen. 
-
-Öffnen Sie die seitliche Navigationsleiste, indem Sie oben rechts auf Ihren Namen klicken und die Verknüpfung `Produkte und Dienstleistungen`{.action} verwenden.
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Gehen Sie in `Meine Dienste` auf den Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Wählen Sie im Drop-down-Menü die Option `Dedicated` aus.
-
-Geben Sie im neuen Fenster eine Kennung (einen Namen Ihrer Wahl) für den Schlüssel ein. Fügen Sie die Schlüsselzeichenfolge (kopiert aus [Ihrer `.pub`-Datei](#publickey) oder aus dem [`PuTTYgen`-Fenster)](#useputty) in das `Key`-Feld ein).
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_3.png){.thumbnail}
-
-Wenn Sie die vollständige Ausgabe kopiert haben, sollte die Benutzer-Information hinter dem Schlüssel bereits angefügt sein. Beachten Sie, dass Sie zum Import Ihres Schlüssels nach der Zeichenfolge eine (lokale) Benutzer-Identifikation angeben müssen. (Siehe oben stehendes Beispielformat.) Dies ist eine Anforderung des OVHcloud Kundencenters. Klicken Sie auf `Bestätigen`{.action}, um Ihren öffentlichen Schlüssel zu speichern.
-
-> [!primary]
->
-> Alle unter `Dedicated` registrierten Schlüssel sind zur Vorinstallation auf einem Dedicated Server oder VPS verfügbar. Informationen zu SSH-Schlüsseln für Public-Cloud-Dienste finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps).
->
-
 
 ## Weiterführende Informationen <a name="gofurther"></a> 
 

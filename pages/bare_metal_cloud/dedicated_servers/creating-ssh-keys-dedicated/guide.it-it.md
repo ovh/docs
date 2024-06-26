@@ -1,7 +1,7 @@
 ---
 title: Creare e utilizzare chiavi SSH
 excerpt: Scopri come creare una coppia di chiavi SSH sulla tua postazione di lavoro e utilizzarle per stabilire una connessione sicura al tuo server
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -188,7 +188,7 @@ La chiave è pronta quando la barra di avanzamento è piena.
 
 ![chiave PuTTy](images/puttygen_03.png){.thumbnail}
 
-Copiare la stringa di chiave completa negli Appunti per [aggiungerla al server](#addserverkey) ed eventualmente [importarla nello Spazio Cliente](#importkey). Salvare entrambe le chiavi come file facendo clic sui pulsanti corrispondenti e immettere anche una frase segreta (*passphrase*) per proteggerle.
+Copiare la stringa di chiave completa negli Appunti per [aggiungerla al server](#addserverkey). Salvare entrambe le chiavi come file facendo clic sui pulsanti corrispondenti e immettere anche una frase segreta (*passphrase*) per proteggerle.
 
 > [!warning]
 >
@@ -395,31 +395,6 @@ Per configurare un'altra connessione al server, ripetere i passaggi seguenti:
 - [Create la coppia di chiavi](#useputty).
 - [Aggiungi la chiave pubblica al tuo server](#addserverkey).
 - [Inserisci i dettagli del server e aggiungi il file di chiave in `PuTTY`](#puttykeys).
-
-### Importa la chiave SSH nello Spazio Cliente <a name="importkey"></a>
-
-Lo Spazio Cliente OVHcloud permette di archiviare chiavi pubbliche se sono state create con uno dei tipi di cifratura supportati. Questa funzionalità consente di risparmiare tempo durante la configurazione o la reinstallazione di un nuovo server in quanto non è necessario [aggiungere manualmente la chiave pubblica al server](#addserverkey).
-
-Apri la barra di navigazione laterale cliccando sul tuo nome nell’angolo in alto a destra e utilizza il tasto di scelta rapida `Prodotti e servizi`{.action}.
-
-![Spazio di gestione delle chiavi SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-In `I miei servizi`, seleziona la scheda `Chiavi SSH`{.action} e clicca su `Aggiungi una chiave SSH`{.action}.
-
-![Spazio di gestione delle chiavi SSH](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Seleziona `Dedicato` nel menu a tendina.
-
-Nella nuova finestra, inserisci un identificativo (un nome a tua scelta) per la chiave. Incollare la stringa di chiave (copiata dal [tuo file `.pub`](#publickey) o dal [finestra `PuTTYgen`](#useputty) nel campo `Key`).
-
-![Spazio di gestione delle chiavi SSH](images/SSH_keys_panel_3.png){.thumbnail}
-
-Se è stato copiato l'output completo, l'identificativo dopo la chiave deve essere già aggiunto. Per memorizzare la chiave, è necessario specificare l'identificativo locale dopo la chiave *incollata*. (Vedere il formato di esempio sopra). Questo è un requisito dello Spazio Cliente OVHcloud. Clicca su `Conferma`{.action} per salvare la chiave pubblica.
-
-> [!primary]
->
-> Tutte le chiavi registrate nella sezione `Dedicato` sono disponibili in preinstallazione su un server dedicato o un VPS. Per le chiavi SSH dei servizi Public Cloud, consulta la [presente guida](/pages/public_cloud/compute/public-cloud-first-steps).
->
 
 
 ## Per saperne di più  <a name="gofurther"></a>

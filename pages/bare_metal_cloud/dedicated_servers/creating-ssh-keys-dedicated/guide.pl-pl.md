@@ -1,7 +1,7 @@
 ---
 title: Twórz i używaj kluczy SSH
 excerpt: Dowiedz się, jak utworzyć parę kluczy SSH na Twoim komputerze i wykorzystać je do nawiązania bezpiecznego połączenia z serwerem
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -188,7 +188,7 @@ Klucz jest gotowy, gdy pasek postępu jest pełny.
 
 ![klucz PuTTy](images/puttygen_03.png){.thumbnail}
 
-Skopiuj kompletny ciąg klucza do Schowka, aby go [dodać do serwera](#addserverkey) i ewentualnie zaimportować [zaimportować do panelu klienta](#importkey). Zapisz oba klucze jako pliki, klikając odpowiednie przyciski i wprowadzając hasło (*passphrase*), aby je chronić.
+Skopiuj kompletny ciąg klucza do Schowka, aby go [dodać do serwera](#addserverkey). Zapisz oba klucze jako pliki, klikając odpowiednie przyciski i wprowadzając hasło (*passphrase*), aby je chronić.
 
 > [!warning]
 >
@@ -395,31 +395,6 @@ Aby skonfigurować inne połączenie z serwerem, powtórz następujące kroki:
 - [Utwórz parę kluczy](#useputty).
 - [Dodaj klucz publiczny do swojego serwera](#addserverkey).
 - [Podaj szczegóły dotyczące serwera i dodaj plik klucza do `PuTTY`](#puttykeys).
-
-### Importuj klucz SSH do Panelu klienta <a name="importkey"></a>
-
-Panel klienta OVHcloud umożliwia przechowywanie kluczy publicznych, jeśli zostały utworzone przy użyciu jednego z obsługiwanych typów szyfrowania. Ta funkcja może zaoszczędzić czas podczas konfigurowania lub reinstalacji nowego serwera, ponieważ nie musisz [dodawać klucza publicznego ręcznie do Twojego serwera](#addserverkey). 
-
-Otwórz boczny pasek nawigacyjny, klikając swoją nazwę w prawym górnym rogu i użyj skrótu `Produkty i usługi`{.action}.
-
-![Przestrzeń zarządzania kluczami SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-W `Moje usługi` przejdź do zakładki `Klucze SSH`{.action} i kliknij na `Dodaj klucz SSH`{.action}.
-
-![Przestrzeń zarządzania kluczami SSH](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Z menu rozwijanego wybierz opcję `Dedykowany`.
-
-W nowym oknie wpisz ID (wybraną nazwę) klucza. Wklej ciąg klucza (skopiowany z [Twojego pliku `.pub`](#publickey) lub z [okna `PuTTYgen`](#useputty) w polu `Key`).
-
-![Przestrzeń zarządzania kluczami SSH](images/SSH_keys_panel_3.png){.thumbnail}
-
-Jeśli pełne dane wyjściowe zostały skopiowane, identyfikator za kluczem musi już zostać dodany. Uwaga: aby zapisać klucz, po wklejonym kluczu *podaj swój lokalny identyfikator. (Zobacz przykład powyżej). Jest to wymagane w Panelu klienta OVHcloud. Kliknij przycisk `Potwierdź`{.action}, aby zapisać swój klucz publiczny.
-
-> [!primary]
->
-> Wszystkie klucze zarejestrowane w sekcji `Dedykowane` są wstępnie zainstalowane na serwerze dedykowanym lub VPS. Jeśli chodzi o klucze SSH dla usług Public Cloud, zapoznaj się z [tym przewodnikiem](/pages/public_cloud/compute/public-cloud-first-steps).
->
 
 ## Sprawdź również <a name="gofurther"></a>
 
