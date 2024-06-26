@@ -6,13 +6,14 @@ updated: 2024-06-26
 
 ## Objective
 
-The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configuration file. It consists of DNS **records** that map the domain name to various services and functions, for example:
+The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configuration file. It consists of DNS **records** that map the domain name to various services and functions.
 
-- The IP address (DNS records of type *A* and *AAAA*) of your web hosting must be provided in the zone in order to display your website when entering the domain name in a browser.
-- The email servers (DNS records of type *MX*) that should receive emails sent to addresses of this domain name. By configuring MX records, you can receive emails through custom email addresses using your domnain name.
-- Information related to the security/authentication of services (web hosting, web server, email server, etc.) associated with your domain name (DNS records of type *SPF*, *DKIM*, *DMARC*, etc.).
+For more information, please refer to our guides:
 
-If you need further assistance, please refer to our documentation on [DNS records](/pages/web_cloud/domains/dns_zone_records) and [editing a DNS zone](/pages/web_cloud/domains/dns_zone_edit) in your [OVHcloud Control Panel](/links/manager).
+- [Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+- [Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
+- [Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
+
 For various reasons, you may need to apply an old DNS configuration to your domain name.
 
 DNS management is now easier thanks to the history of your DNS zones.
