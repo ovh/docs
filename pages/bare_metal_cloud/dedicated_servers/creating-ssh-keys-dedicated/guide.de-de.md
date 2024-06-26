@@ -435,29 +435,6 @@ Wenn Sie die vollständige Ausgabe kopiert haben, sollte die Benutzer-Informatio
 > Alle unter `Dedicated` registrierten Schlüssel sind zur Vorinstallation auf einem Dedicated Server oder VPS verfügbar. Informationen zu SSH-Schlüsseln für Public-Cloud-Dienste finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps).
 >
 
-### Standard-SSH-Schlüssel festlegen (nur für den Bereich "Dedicated") <a name="cpsshkey"></a>
-
-Wenn Sie in Ihrem OVHcloud Kundencenter mehrere SSH-Schlüssel hinzugefügt haben, können Sie einen auswählen, der als Standardschlüssel für den Account verwendet werden soll. 
-
-> [!warning]
-> Hinweis: Sobald der Standardschlüssel festgelegt ist, wird er auch als Verbindungsmethode verwendet, wenn ein Server im Rescue-Modus neu gestartet wird. Um stattdessen ein Kennwort zu erhalten, muss der Standardschlüssel [deaktiviert](#disablesshkey) sein, bevor der Server im Rescue-Modus neu gestartet wird. Weitere Informationen hierzu finden Sie im Abschnitt [Weiterführende Informationen](#gofurther) dieser Anleitung.
-> 
-
-Öffnen Sie die seitliche Navigationsleiste, indem Sie oben rechts auf den Namen Ihres Accounts klicken und die Verknüpfung `Produkte und Dienstleistungen`{.action} verwenden, um zum Bereich `SSH-Schlüssel`{.action} zu gelangen.
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Klicken Sie in der Liste auf das `Schlüssel`-Symbol neben dem gewünschten SSH-Schlüssel, um diesen als Standardschlüssel festzulegen.
-
-![SSH-Schlüsselverwaltungsbereich](images/defaultsshkey.png){.thumbnail}
-
-Sobald dies erfolgt ist, wird eine Meldung angezeigt, die bestätigt, dass der Schlüssel als Standard eingestellt wurde, und das `Schlüssel`-Symbol wird hervorgehoben.
-
-![SSH-Schlüsselverwaltungsbereich](images/defaultsshkey1.png){.thumbnail}
-
-### Standard-SSH-Schlüssel <a name="disablesshkey"></a> deaktivieren
-
-Um den aktuellen **Standard**-SSH-Schlüssel zu deaktivieren, gehen Sie wie oben beschrieben in den Bereich `SSH-Schlüssel`{.action}. Klicken Sie auf das blaue `Schlüssel`-Symbol neben dem entsprechenden SSH-Schlüssel, um diese Einstellung zu ändern.
 
 ## Weiterführende Informationen <a name="gofurther"></a> 
 

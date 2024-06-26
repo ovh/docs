@@ -421,29 +421,6 @@ Se è stato copiato l'output completo, l'identificativo dopo la chiave deve esse
 > Tutte le chiavi registrate nella sezione `Dedicato` sono disponibili in preinstallazione su un server dedicato o un VPS. Per le chiavi SSH dei servizi Public Cloud, consulta la [presente guida](/pages/public_cloud/compute/public-cloud-first-steps).
 >
 
-### Definisci una chiave SSH di default (solo per la sezione "Dedicato") <a name="cpsshkey"></a>
-
-Se nello Spazio Cliente OVHcloud sono state aggiunte più chiavi SSH, è possibile definire una chiave da utilizzare come chiave predefinita sull’account.
-
-> [!warning]
-> Ti ricordiamo che, una volta configurata la chiave predefinita, questa verrà utilizzata anche come modalità di connessione al riavvio di un server in modalità Rescue. Per ricevere una password, la chiave predefinita deve essere [disattivata](#disablesshkey) prima di riavviare il server in modalità Rescue. Per maggiori informazioni, consulta la sezione [Per saperne di più](#gofurther) di questa guida.
->
-
-Apri la barra di navigazione laterale cliccando sul nome del tuo account nell’angolo in alto a destra e utilizza il tasto di scelta rapida `Prodotti e servizi`{.action} per accedere alla sezione `Chiavi SSH`{.action}.
-
-![Spazio di gestione delle chiavi SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Nell’elenco delle chiavi, clicca sull’icona `Chiave` accanto alla chiave SSH di tua scelta per impostarla come chiave predefinita.
-
-![Spazio di gestione delle chiavi SSH](images/defaultsshkey.png){.thumbnail}
-
-Una volta effettuata questa operazione, compare un messaggio che conferma che la chiave è stata impostata come predefinita e l’icona `Chiave` viene evidenziata.
-
-![Spazio di gestione delle chiavi SSH](images/defaultsshkey1.png){.thumbnail}
-
-### Disattiva la chiave SSH di default <a name="disablesshkey"></a>
-
-Per disattivare la chiave SSH per predefinita corrente, accedi alla sezione `Chiavi SSH`{.action} come descritto sopra. Clicca sull’icona `Chiave` blu accanto alla chiave SSH corrispondente per disattivare l’opzione predefinita.
 
 ## Per saperne di più  <a name="gofurther"></a>
 

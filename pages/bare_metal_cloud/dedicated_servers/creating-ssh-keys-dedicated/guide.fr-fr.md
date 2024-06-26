@@ -417,30 +417,6 @@ Si vous avez copié la sortie complète, l'identifiant après la clé doit déj�
 > Toutes les clés enregistrées dans la section `Dédié` sont disponibles en pré-installation sur un serveur dédié ou un VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](/pages/public_cloud/compute/public-cloud-first-steps).
 >
 
-### Définir une clé SSH par défaut (uniquement pour la section « Dédié ») <a name="cpsshkey"></a>
-
-Si vous avez ajouté plusieurs clés SSH dans votre espace client OVHcloud, il est possible de définir une clé à utiliser comme clé par défaut sur le compte. 
-
-> [!warning]
-> À noter qu’une fois la clé par défaut paramétrée, elle sera également utilisée comme moyen de connexion au redémarrage d’un serveur en mode rescue. Pour recevoir un mot de passe à la place, la clé par défaut doit être [désactivée](#disablesshkey) avant de redémarrer le serveur en mode rescue. Retrouvez plus d'informations à ce sujet dans la section [Aller plus loin](#gofurther) de ce guide.
-> 
-
-Ouvrez la barre de navigation latérale en cliquant sur le nom de votre compte dans le coin supérieur droit et utilisez le raccourci `Produits et services`{.action} pour accéder à la section `Clés SSH`{.action}.
-
-![Espace de gestion des clés SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Dans la liste des clés, cliquez sur l'icône `Clé` à côté de la clé SSH de votre choix pour la définir comme clé par défaut.
-
-![Espace de gestion des clés SSH](images/defaultsshkey.png){.thumbnail}
-
-Une fois ceci fait, un message confirmant que la clé a été définie par défaut apparaît et l'icône `Clé` est mise en surbrillance.
-
-![Espace de gestion des clés SSH](images/defaultsshkey1.png){.thumbnail}
-
-### Désactiver la clé SSH par défaut <a name="disablesshkey"></a>
-
-Pour désactiver la clé SSH par **défaut** actuelle, accédez à la section `Clés SSH`{.action} comme décrit ci-dessus. Cliquez sur l'icône `Clé` bleue à côté de la clé SSH correspondante pour désactiver l'option par défaut.
-
 ## Aller plus loin <a name="gofurther"></a>
 
 [Introduction au protocole SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)

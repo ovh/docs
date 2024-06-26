@@ -417,30 +417,6 @@ Si ha copiado el resultado completo, el identificador después de la clave ya de
 > Todas las claves registradas en la sección Dedicado están disponibles para preinstalación en un servidor dedicado o un VPS. Para más información sobre las claves SSH para los servicios Public Cloud, consulte [esta guía](/pages/public_cloud/compute/public-cloud-first-steps).
 >
 
-### Establecer una llave SSH predeterminada (solo para la sección «Dedicado») <a name="cpsshkey"></a>
-
-Si ha añadido varias llaves SSH en el área de cliente de OVHcloud, es posible definir una llave que deberá utilizar como llave por defecto en la cuenta. 
-
-> [!warning]
-> Tenga en cuenta que, una vez configurada la llave por defecto, también se utilizará como medio de conexión al reiniciar un servidor en modo de rescate. Para recibir una contraseña en su lugar, la clave por defecto debe ser [desactivada](#disablesshkey) antes de reiniciar el servidor en modo de rescate. Para más información, consulte la sección [Más información](#gofurther) de esta guía.
-> 
-
-Abra la barra de navegación lateral haciendo clic en el nombre de su cuenta en la esquina superior derecha y utilice el acceso directo `Productos y servicios`{.action} para acceder a la sección `Llaves SSH`{.action}.
-
-![Espacio de gestión de claves SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-En la lista de claves, haga clic en el icono « `Clave`» situado junto a la llave SSH que desee para definirla como llave por defecto.
-
-![Espacio de gestión de claves SSH](images/defaultsshkey.png){.thumbnail}
-
-Una vez hecho esto, aparecerá un mensaje confirmando que la llave se ha definido por defecto y el icono `Clave` se resaltará.
-
-![Espacio de gestión de claves SSH](images/defaultsshkey1.png){.thumbnail}
-
-### Desactivar la llave SSH predeterminada <a name="disablesshkey"></a>
-
-Para desactivar la llave SSH por default actual, acceda a la sección `Llaves SSH`{.action} como se ha descrito anteriormente. Haga clic en el icono `Llave` azul situado junto a la llave SSH correspondiente para desactivar la opción por defecto.
-
 ## Más información <a name="gofurther"></a>
 
 [Introducción al protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)

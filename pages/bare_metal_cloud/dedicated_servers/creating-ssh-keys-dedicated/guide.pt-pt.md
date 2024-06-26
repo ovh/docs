@@ -421,30 +421,6 @@ Se copiou a saída completa, o identificador após a chave já deve ser adiciona
 > Todas as chaves registadas na secção "Dedicado" estão disponíveis em pré-instalação num servidor dedicado ou num VPS. No que diz respeito às chaves SSH para os serviços Public Cloud, queira consultar [este manual](/pages/public_cloud/compute/public-cloud-first-steps).
 >
 
-### Definir uma chave SSH predefinida (apenas para a secção "Dedicado") <a name="cpsshkey"></a>
-
-Se adicionou várias chaves SSH na sua Área de Cliente OVHcloud, é possível definir uma chave a utilizar como chave predefinida na conta. 
-
-> [!warning]
-> Tenha em conta que, uma vez configurada a chave predefinida, esta também será utilizada como meio de ligação ao reiniciar um servidor em modo rescue. Para receber uma palavra-passe em vez disso, a chave predefinida tem de ser [desativada](#disablesshkey) antes de reiniciar o servidor em modo rescue. Encontre mais informações na secção [Ir mais longe](#gofurther) deste guia.
-> 
-
-Abra a barra de navegação lateral clicando no nome da sua conta no canto superior direito e utilize o atalho `Produtos e serviços`{.action} para aceder à secção `Chaves SSHcloud`{.action}.
-
-![Espaço de gestão das chaves SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Na lista das chaves, clique no ícone `Chave` ao lado da chave SSH à sua escolha para a definir como chave predefinida.
-
-![Espaço de gestão das chaves SSH](images/defaultsshkey.png){.thumbnail}
-
-Depois de fazer isso, uma mensagem confirmando que a chave foi definida por padrão será exibida e o ícone `Chave` será realçado.
-
-![Espaço de gestão das chaves SSH](images/defaultsshkey1.png){.thumbnail}
-
-### Desativar a chave SSH predefinida <a name="disablesshkey"></a>
-
-Para desativar a chave SSH por **default** atual, aceda à secção `Chaves SSH`{.action}, tal como descrito acima. Clique no ícone "Chave azul" junto da chave SSH correspondente para desativar a opção predefinida.
-
 ## Quer saber mais? <a name="gofurther"></a>
 
 [Introdução ao protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)

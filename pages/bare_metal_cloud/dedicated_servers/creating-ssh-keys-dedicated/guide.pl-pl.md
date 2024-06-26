@@ -421,30 +421,6 @@ Jeśli pełne dane wyjściowe zostały skopiowane, identyfikator za kluczem musi
 > Wszystkie klucze zarejestrowane w sekcji `Dedykowane` są wstępnie zainstalowane na serwerze dedykowanym lub VPS. Jeśli chodzi o klucze SSH dla usług Public Cloud, zapoznaj się z [tym przewodnikiem](/pages/public_cloud/compute/public-cloud-first-steps).
 >
 
-### Ustaw domyślny klucz SSH (tylko dla sekcji "Dedykowane") <a name="cpsshkey"></a>
-
-Jeśli dodałeś kilka kluczy SSH w Panelu klienta OVHcloud, możesz zdefiniować klucz, który będzie używany jako klucz domyślny dla konta. 
-
-> [!warning]
-> Pamiętaj, że po skonfigurowaniu klucza domyślnego będzie on używany również jako sposób połączenia podczas restartu serwera w trybie Rescue. Aby otrzymać hasło, przed zrestartowaniem serwera w trybie rescue należy [dezaktywować](#disablesshkey) klucz domyślny. Więcej informacji na ten temat znajdziesz w sekcji [Sprawdź również](#gofurther) niniejszego przewodnika.
-> 
-
-Otwórz pasek nawigacji bocznej, klikając nazwę konta w prawym górnym rogu i użyj skrótu `Produkty i usługi`{.action}, aby przejść do sekcji `Klucze SSH`{.action}.
-
-![Przestrzeń zarządzania kluczami SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Na liście kluczy kliknij ikonę `Klucz` obok wybranego klucza SSH, aby ustawić go jako klucz domyślny.
-
-![Przestrzeń zarządzania kluczami SSH](images/defaultsshkey.png){.thumbnail}
-
-Po wykonaniu tej czynności zostanie wyświetlony komunikat potwierdzający, że klucz jest ustawiony jako domyślny, a ikona `Klucz` zostanie podświetlona.
-
-![Przestrzeń zarządzania kluczami SSH](images/defaultsshkey1.png){.thumbnail}
-
-### Wyłącz domyślny klucz SSH <a name="disablesshkey"></a>
-
-Aby dezaktywować klucz SSH jako **domyślny**, przejdź do sekcji `Klucze SSH`{.action}, jak opisano powyżej. Kliknij ikonę `Niebieski` klucz obok odpowiedniego klucza SSH, aby wyłączyć opcję domyślną.
-
 ## Sprawdź również <a name="gofurther"></a>
 
 [Wprowadzenie do protokołu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
