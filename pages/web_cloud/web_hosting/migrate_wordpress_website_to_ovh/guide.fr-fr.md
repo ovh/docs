@@ -25,7 +25,7 @@ Ce tutoriel vous explique pas à pas comment migrer votre site web WordPress et 
 
 ### Étape 1 : sauvegarder les fichiers et la base de données de votre site web WordPress
 
-La première étape consiste à récupérer tous les fichiers relatifs à votre site web WordPress. Cela inclut les fichiers WordPress, ainsi que votre base de données. Consultez le guide vous expliquant comment [sauvegarder votre site WordPress](/pages/web_cloud/web_hosting/how_to_backup_your_wordpress).
+La première étape consiste à récupérer tous les fichiers relatifs à votre site web WordPress. Cela inclut les fichiers WordPress, ainsi que votre base de données. Consultez ensuite notre guide « [Sauvegarder votre site WordPress](/pages/web_cloud/web_hosting/how_to_backup_your_wordpress) ».
 
 ### Étape 2 : transférer votre site web WordPress vers OVHcloud
 
