@@ -42,7 +42,7 @@ Pour transférer les fichiers relatifs à votre site web WordPress, connectez-vo
 
 Une fois connecté à l'espace de stockage FTP de votre hébergement web OVHcloud, naviguez vers le répertoire racine « www » (ou dans un autre dossier racine que vous aurez préalablement créé). Si vos fichiers de sauvegarde sont compressés (zippés), décompressez-les dans un dossier vide sur votre ordinateur avant de les téléverser dans le répertoire racine de votre hébergement web OVHcloud.
 
-#### Étape 2.1 : importer la base de données de votre site web WordPress
+#### Étape 2.2 : importer la base de données de votre site web WordPress
 
 Si vous n'en avez pas encore, [créez une nouvelle base de données](/pages/web_cloud/web_hosting/sql_create_database) puis [importez votre sauvegarde dans votre nouvelle base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
 
