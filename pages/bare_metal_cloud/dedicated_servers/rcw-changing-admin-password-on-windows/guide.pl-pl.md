@@ -114,7 +114,7 @@ Kliknij przycisk `...`{.action} aby nawigować w dysku, na którym znajduje się
 
 Zwykle jest to czytnik `Windows (E:\)`
 
-![ntpwedit1](obrazy/ntpwedit_1.png){.thumbnail}
+![ntpwedit1](images/ntpwedit_1.png){.thumbnail}
 
 Przejdź do `E:\WINDOWS\SYSTEM32\CONFIG\`.
 
