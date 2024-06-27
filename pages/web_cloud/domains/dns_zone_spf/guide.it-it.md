@@ -1,8 +1,12 @@
 ---
-title: 'Aggiungere un record SPF alla configurazione di un dominio'
-excerpt: 'Come aggiungere un record SPF alla configurazione di un dominio presso OVHcloud'
+title: "Migliora la sicurezza delle email con un record SPF"
+excerpt: "Questa guida ti mostra come configurare un record SPF sul tuo dominio per migliorare la sicurezza delle email"
 updated: 2023-08-04
 ---
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
 
 ## Obiettivo
 

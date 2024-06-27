@@ -1,5 +1,5 @@
 ---
-title: MX-Eintrag konfigurieren
+title: MX-Eintrag für die E-Mail-Verwaltung konfigurieren
 excerpt: Erfahren Sie hier, wie Sie mit OVHcloud MX-Einträge für Ihren Domainnamen konfigurieren 
 updated: 2024-02-29
 ---
@@ -98,9 +98,9 @@ Wenn Sie alle Daten eingegeben haben, schließen Sie die Schritte ab und klicken
 
 [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
 
-[SPF-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_spf)
+[E-Mail-Sicherheit durch SPF-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_spf)
 
-[DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)
+[E-Mail-Sicherheit durch DKIM-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dkim)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

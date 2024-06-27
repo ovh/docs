@@ -137,7 +137,7 @@ Um die Verbindung zwischen Ihrem Domainnamen und Ihrem Webhosting zu überprüfe
 - [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite): In dieser Anleitung erfahren Sie, wie Sie mehrere Domainnamen zu einem Webhosting hinzufügen. Es kann Ihnen auch dabei helfen, zu überprüfen, ob die Angabe Ihres Domainnamens im Tab `Multisite`{.action} Ihres Webhostings korrekt ist. Bei Bedarf können Sie diese dann in der aktiven DNS-Zone Ihrer Domain ändern.
 - [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit): In dieser Anleitung erfahren Sie, wie Sie eine bei OVHcloud vorhandene DNS-Zone bearbeiten. Sie wird verwendet, wenn die aktive DNS-Zone Ihrer Domain auf einem anderen OVHcloud Account als Ihrem eingerichtet ist. Sie können damit auch auf die OVHcloud DNS-Zone Ihrer Domain zugreifen, um zu überprüfen, dass die für Ihre Domain in der DNS-Zone deklarierte IP-Adresse (Eintrag(e) vom Typ *A* und/oder *AAAA*) mit der IP-Adresse Ihres Webhostings übereinstimmt.
 
-Um die Verbindung zwischen Ihrem Domainnamen und Ihrem OVHcloud E-Mail-Angebot zu überprüfen und/oder zu ändern, lesen Sie die Anleitung „[MX-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_mx)“: Dort finden Sie die Namen der OVHcloud E-Mail-Server sowie die Vorgehensweise, um Ihren Domainnamen auf diese Server verweisen zu lassen.
+Um die Verbindung zwischen Ihrem Domainnamen und Ihrem OVHcloud E-Mail-Angebot zu überprüfen und/oder zu ändern, lesen Sie die Anleitung „[MX-Eintrag für die E-Mail-Verwaltung konfigurieren](/pages/web_cloud/domains/dns_zone_mx)“: Dort finden Sie die Namen der OVHcloud E-Mail-Server sowie die Vorgehensweise, um Ihren Domainnamen auf diese Server verweisen zu lassen.
 
 > [!primary]
 >
@@ -145,7 +145,7 @@ Um die Verbindung zwischen Ihrem Domainnamen und Ihrem OVHcloud E-Mail-Angebot z
 > 
 > - **Für die Verbindung zwischen Ihrem Domainnamen und Ihrem Webhosting**: Ziehen Sie die oben aufgeführten Anleitungen „[Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)“ und „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ zu Rate, um die IP-Adresse Ihres Webhostings abzurufen. Deklarieren Sie anschließend Ihren Domainnamen korrekt auf Ihrem Webhosting. Wenden Sie sich anschließend an die Organisation, die die aktive DNS-Zone Ihrer Domain verwaltet, damit diese auf Ihr Webhosting verweist.
 >
-> - **Für die Verbindung zwischen Ihrem Domainnamen und Ihrem OVHcloud E-Mail-Angebot**: Lesen Sie nur die Anleitung „[MX-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_mx)“, um die Namen der OVHcloud E-Mail-Server abzurufen, die in der aktiven DNS-Zone Ihrer Domain angegeben werden müssen. Wenden Sie sich anschließend an die Organisation, die die aktive DNS-Zone Ihrer Domain verwaltet, damit diese auf die OVHcloud E-Mail-Server verweist.
+> - **Für die Verbindung zwischen Ihrem Domainnamen und Ihrem OVHcloud E-Mail-Angebot**: Lesen Sie nur die Anleitung „[MX-Eintrag für die E-Mail-Verwaltung konfigurieren](/pages/web_cloud/domains/dns_zone_mx)“, um die Namen der OVHcloud E-Mail-Server abzurufen, die in der aktiven DNS-Zone Ihrer Domain angegeben werden müssen. Wenden Sie sich anschließend an die Organisation, die die aktive DNS-Zone Ihrer Domain verwaltet, damit diese auf die OVHcloud E-Mail-Server verweist.
 >
 
 ### Schritt 5 - Weitere Optionen für Webhostings <a name="other-options"></a>

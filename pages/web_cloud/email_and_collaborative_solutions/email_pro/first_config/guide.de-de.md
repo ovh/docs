@@ -84,7 +84,7 @@ Klicken Sie auf `Weiter`{.action}, um die Domain hinzuzufügen.
 
 - **SRV**: DNS-Eintrag für die automatische Konfiguration Ihrer E-Mail-Software, wenn Sie Ihre E-Mail-Adresse darin eintragen.
 - **MX**: Für den Empfang von E-Mails über Domainnamen notwendiger DNS-Eintrag für E-Mail-Server.
-- **DKIM**: Einrichtung einer verschlüsselten digitalen Signatur zur Sicherung des E-Mail-Verkehrs. Weitere Informationen finden Sie in unserer Anleitung „[Einen DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)“.
+- **DKIM**: Einrichtung einer verschlüsselten digitalen Signatur zur Sicherung des E-Mail-Verkehrs. Weitere Informationen finden Sie in unserer Anleitung „[E-Mail-Sicherheit durch DKIM-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dkim)“.
 
 **Für einen nicht von OVHcloud verwalteten Domainnamen** fahren Sie mit Schritt 3 fort.
 
@@ -102,8 +102,8 @@ In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der MX
     - *CNAME-Eintrag*: Folgen Sie unserer Anleitung „[CNAME-Eintrag erstellen, um eine assoziierte Domain hinzuzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)“.
     - *MX-Eintrag*: Folgen Sie unserer Anleitung „[MX-Eintrag zur Domainkonfiguration hinzufügen](/pages/web_cloud/domains/dns_zone_mx)“.
     - *SRV-Eintrag*: Geben Sie in Ihrer DNS-Zone die Informationen, die Sie beim Klicken auf das rote Feld erhalten haben, ein. Folgen Sie unserer Anleitung „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
-    - *SPF-Eintrag*: Geben Sie in Ihrer DNS-Zone die Informationen, die Sie beim Klicken auf das rote Feld erhalten haben, ein. Folgen Sie unserer Anleitung „[Einen SPF-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_spf)“.
-    - *DKIM-Eintrag*: Geben Sie in Ihrer DNS-Zone die Informationen, die Sie beim Klicken auf das rote Feld erhalten haben, ein. Folgen Sie unserer Anleitung „[Einen DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)“.
+    - *SPF-Eintrag*: Geben Sie in Ihrer DNS-Zone die Informationen, die Sie beim Klicken auf das rote Feld erhalten haben, ein. Folgen Sie unserer Anleitung „[E-Mail-Sicherheit durch SPF-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_spf)“.
+    - *DKIM-Eintrag*: Geben Sie in Ihrer DNS-Zone die Informationen, die Sie beim Klicken auf das rote Feld erhalten haben, ein. Folgen Sie unserer Anleitung „[E-Mail-Sicherheit durch DKIM-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dkim)“.
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 

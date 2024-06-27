@@ -5,7 +5,7 @@ updated: 2024-03-26
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
@@ -82,7 +82,7 @@ Segunda opción (regla):
 > [!primary]
 >
 > El SPF (Sender Policy Framework) permite que el servidor que recibe un mensaje de correo electrónico se asegure de que el mensaje se ha enviado desde un servidor de confianza.
-> Permite evitar posibles usurpaciones de identidad procedentes de direcciones de correo que utilizan su nombre de dominio (spoofing). Para más información sobre el SPF, consulte la guía «[Configurar un registro SPF en un dominio](/pages/web_cloud/domains/dns_zone_spf) ».
+> Permite evitar posibles usurpaciones de identidad procedentes de direcciones de correo que utilizan su nombre de dominio (spoofing). Para más información sobre el SPF, consulte la guía "[Mejorar la seguridad del correo electrónico mediante el registro SPF](/pages/web_cloud/domains/dns_zone_spf)".
 
 Tercera opción (valor):
 

@@ -1,6 +1,6 @@
 ---
-title: 'Añadir un registro MX a la configuración del dominio'
-excerpt: 'Cómo añadir un registro MX a la configuración de un dominio en OVHcloud'
+title: "Configurar un registro MX para la gestión del correo"
+excerpt: "Descubra cómo configurar un registro MX en un dominio en OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -98,9 +98,9 @@ Una vez que haya introducido toda la información, siga los pasos que se indican
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configurar un registro SPF en un dominio](/pages/web_cloud/domains/dns_zone_spf)
+[Mejorar la seguridad del correo electrónico mediante el registro SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurar un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Mejorar la seguridad del correo electrónico mediante el registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
 
