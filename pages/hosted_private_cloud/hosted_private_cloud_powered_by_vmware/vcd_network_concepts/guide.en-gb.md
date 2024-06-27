@@ -290,7 +290,7 @@ Here is the list of guides you can read to strengthen your network knowledge wit
 
 ///
 
-If you require training or technical assistance in implementing our solutions, please contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/){.external} for a quote and request a custom analysis of your project from our Professional Services team experts.
+If you require training or technical assistance in implementing our solutions, please contact your sales representative or click on [this link](/links/professional-services) for a quote and request a custom analysis of your project from our Professional Services team experts.
 
 Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated Discord channel : <https://discord.gg/ovhcloud>. 
 
