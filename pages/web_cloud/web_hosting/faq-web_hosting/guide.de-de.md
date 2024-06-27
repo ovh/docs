@@ -38,7 +38,7 @@ Folgen Sie den für die Erstellung Ihrer Website notwendigen Schritten auf [dies
 
 ### Wie übertrage ich meine Website, Datenbank, Domain und E-Mails ohne Dienstunterbrechung auf die Server von OVHcloud?
 
-Lesen Sie die Anleitung "[Website und zugehörige Dienste zu OVHcloud migrieren](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" finden Sie alle notwendigen Schritte.
+In der Anleitung "[Website und zugehörige Dienste zu OVHcloud migrieren](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" finden Sie alle notwendigen Schritte.
 
 ### Wie kann ich mehrere Websites auf demselben Webhosting hosten?
 
