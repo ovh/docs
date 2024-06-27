@@ -35,7 +35,7 @@ resource "openstack_compute_instance_v2" "front" {
   provider        = openstack.ovh
   name            = "front"
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
-  flavor_name     = "s1-2"
+  flavor_name     = "d2-2"
   image_id        = data.openstack_images_image_v2.archlinux.id
   security_groups = ["default"]
   network {
@@ -58,7 +58,7 @@ resource "openstack_compute_instance_v2" "back" {
   provider        = openstack.ovh
   name            = "back"
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
-  flavor_name     = "s1-2"
+  flavor_name     = "d2-2"
   image_id        = data.openstack_images_image_v2.archlinux.id
   security_groups = ["default"]
   network {
