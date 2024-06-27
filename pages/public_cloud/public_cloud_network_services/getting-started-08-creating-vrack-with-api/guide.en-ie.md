@@ -387,7 +387,7 @@ You will need to fill in at least the following fields:
 |Field|Description| 
 |---|---| 
 |serviceName|ID of the Public Cloud project|
-|flavorId|ID of the instance type (example: S1-2, B2-7, WIN-R2-15...)|
+|flavorId|ID of the instance type (example: D2-2, B2-7, WIN-R2-15...)|
 |imageId|ID of the image for the deployment (example: Debian 9, Centos 7...)|
 |name|name for your instance.|
 |networks|In the "networkId" section, indicate the public network identifier (Ext-Net) or your VLAN (pn-xxxxxx_yy). You can click the "+" button to add more networks.|
