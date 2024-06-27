@@ -78,28 +78,16 @@ Il contient aussi une section `Réseau`{.action} au sein de chaque vDC dans `Cen
 #### Capacités de mise en réseau VCD on OVHcloud
 
 Voici les principales fonctionnalités réseau offertes avec les offres VCD on OVHcloud.
-
-<<<<<<< HEAD
-| Fonctionnalité                      | Standard | Advanced | Premium | Comments                                                                                                                                                                                                           |
-|-------------------------------|----------|----------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IRoutage et commutation IPv4. | ✅        | ✅        | ✅       | Segments de réseau, routage distribué et non distribué, réseau routé avec ou sans NAT BGP/DHCP/DNS/routes statiques. Réseautage de contrôleurs de domaine virtuels sur le même site. Non supporté : OSPF, VRF Lite. |
-| Public IPv4 Range.            | ✅        | ✅        | ✅       |                                                                                                                                                                                                                    |
-| Réseau privé - Support vRack. | ✅        | ✅        | ✅       | Dans la Roadmap.                                                                                                                                                                                                   |
-| Routage et commutation IPv6.  |          |          |         | Dans la Roadmap.                                                                                                                                                                                                   |
-| VPN.                          |          | ✅        | ✅       | L2VPN, VPN IPsec Policy Based not Supported : VPN SSL, VPN IPsec Routed Based VPN.                                                                                                                                 |
-| Load Balancing.               |          |          |         | Non pris en charge avec les fonctionnalités réseau VCD natives.                                                                                                                                                    |
-| Load balancing avancée.       |          |          |         | Dans la Roadmap.                                                                                                                                                                                                   |
-=======
+q
 | Features                          | Standard | Advanced | Premium | Comments                                                                                                                                                                                                                        |
 |-----------------------------------|----------|----------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **IRoutage et commutation IPv4.** | ✅        | ✅        | ✅       | - Segments de réseau. <br> - Routage distribué et non distribué. <br> - Réseau routé avec ou sans NAT/BGP/DHCP/DNS/Routes statiques. <br> - Réseau vDC croisé sur le même site. <br> - **Non pris en charge** : OSPF, VRF Lite. |
+| **Routage et commutation IPv4.** | ✅        | ✅        | ✅       | - Segments de réseau. <br> - Routage distribué et non distribué. <br> - Réseau routé avec ou sans NAT/BGP/DHCP/DNS/Routes statiques. <br> - Réseau vDC croisé sur le même site. <br> - **Non pris en charge** : OSPF, VRF Lite. |
 | **Public IPv4 Range.**            | ✅        | ✅        | ✅       |                                                                                                                                                                                                                                 |
 | **Réseau privé - Support vRack.** | ✅        | ✅        | ✅       | - Dans la Roadmap.                                                                                                                                                                                                              |
 | **Routage et commutation IPv6.**  |          |          |         | - Dans la Roadmap.                                                                                                                                                                                                              |
 | **VPN.**                          |          | ✅        | ✅       | - L2VPN, VPN IPsec Policy Based Non pris en charge : VPN SSL, Routed based IPsec VPN.                                                                                                                                           |
 | **Load Balancing.**               |          |          |         | - Non pris en charge avec les fonctionnalités réseau VCD natives.                                                                                                                                                               |
 | **Load balancing avancée.**       |          |          |         | - Dans la Roadmap.                                                                                                                                                                                                              |
->>>>>>> 55e3a1c611 (Add tabs alignement with en-gb version for concept guide)
 
 #### Fonctionnalités réseau des offres VCD on OVHcloud
 
