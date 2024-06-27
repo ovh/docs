@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Znajdź najczęściej zadawane pytania dotyczące hostingu stron internetowych przez OVHcloud"
-updated: 2023-04-24
+updated: 2024-06-27
 ---
 
 > [!primary]
@@ -36,9 +36,9 @@ Aby dowiedzieć się, jak budować Twoją stronę, zapoznaj się z tym [przewodn
 
 **Wskazówki i porady**: OVHcloud, aby pomóc Ci w zbudowaniu strony WWW, modułu PrestaShop, Joomla! i Drupal, pozwala na zainstalowanie na Twoim hostingu oprogramowania do wspomagania tworzenia stron WordPress, PrestaShop, Joomla! i Drupal. Jest to możliwe dzięki funkcji [Moduły za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-### Jak mogę przenieść moją stronę WWW i konta e-mail na serwery OVHcloud? 
+### Jak mogę przenieść na serwery OVHcloud moją stronę WWW, bazę danych, domenę i e-maile bez przerwy w działaniu usługi?
 
-Zapoznaj się z przewodnikiem [Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+Wszystkie kolejne etapy znajdują się w przewodniku "[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 
 ### Jak zainstalować kilka stron WWW na tym samym hostingu?
 

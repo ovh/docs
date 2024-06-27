@@ -1,7 +1,7 @@
 ---
 title: "FAQ Webhosting"
 excerpt: "Hier finden Sie die Antworten zu den am häufigsten gestellten Fragen rund um OVHcloud Webhostings"
-updated: 2023-04-24
+updated: 2024-06-27
 ---
 
 > [!primary]
@@ -36,9 +36,9 @@ Folgen Sie den für die Erstellung Ihrer Website notwendigen Schritten auf [dies
 
 **Tipps und Tricks**: Um Ihnen bei der Erstellung Ihrer Website zu helfen, bietet Ihnen OVHcloud die Installation einer Software zur Erstellung von Webseiten (WordPress, PrestaShop, Joomla! und Drupal) auf Ihrem Hosting. Die Funktion [1 Klick-Module](/pages/web_cloud/web_hosting/cms_install_1_click_modules) bietet Ihnen diese Möglichkeit.
 
-### Wie überträgt man eine Website und E-Mails auf die OVHcloud Server? 
+### Wie übertrage ich meine Website, Datenbank, Domain und E-Mails ohne Dienstunterbrechung auf die Server von OVHcloud?
 
-Lesen Sie die Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+Lesen Sie die Anleitung "[Website und zugehörige Dienste zu OVHcloud migrieren](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" finden Sie alle notwendigen Schritte.
 
 ### Wie kann ich mehrere Websites auf demselben Webhosting hosten?
 
