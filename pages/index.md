@@ -1149,6 +1149,7 @@
             + [Tutorial - Backing up your WordPress website](web_cloud/web_hosting/how_to_backup_your_wordpress)
             + [Tutorial - Using the htaccess file with WordPress](web_cloud/web_hosting/htaccess_how_to_protect_wordpress)
             + [Tutorial - Using WooCommerce with WordPress](web_cloud/web_hosting/wordpress-woocommerce-first-steps)
+            + [Migrate your WordPress website to OVHcloud](pages/web_cloud/web_hosting/migrate_wordpress_website_to_ovh)
             + [Managing multiple WordPress websites with the MainWP plugin](web_cloud/web_hosting/mainwp_general)
             + [Back up your WordPress websites with MainWP](web_cloud/web_hosting/mainwp-backup)
             + [Improve your WordPress website's security with MainWP](web_cloud/web_hosting/mainwp-security)
