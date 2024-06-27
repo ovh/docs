@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud"
-updated: 2023-04-24
+updated: 2024-06-27
 ---
 
 ## Gestion de votre offre
@@ -32,9 +32,9 @@ Pour suivre les étapes nécessaires à la construction de votre site, consultez
 
 **Trucs et Astuces** : Pour vous aider à créer votre site, OVHcloud vous permet d'installer sur votre hébergement un logiciel d'assistance à la création de sites (WordPress, PrestaShop, Joomla! et Drupal), grâce la fonctionnalité [Modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-### Comment transférer mon site et mes e-mails sur les serveurs OVHcloud ? 
+### Comment transférer sans interruption de service mon site web, ma base de données, mon nom de domaine et mes e-mails sur les serveurs OVHcloud ? 
 
-Consultez le guide [Migrer son site et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+Consultez le guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » pour obtenir l'ensemble des étapes à suivre.
 
 ### Comment héberger plusieurs sites web sur un même hébergement mutualisé ?
 
