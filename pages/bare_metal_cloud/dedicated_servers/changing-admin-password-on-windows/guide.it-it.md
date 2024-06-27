@@ -1,7 +1,7 @@
 ---
 title: 'Modificare la password amministratore su un server dedicato Windows'
 excerpt: 'Come impostare una nuova password amministratore su un server Windows'
-updated: 2023-09-18
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -14,10 +14,17 @@ Durante l’installazione o la reinstallazione di una distribuzione Windows, vie
 
 **Questa guida ti mostra come modificare la password admin del tuo server utilizzando le configurazioni della modalità Rescue disponibili con un sistema operativo Windows.**
 
+> [!warning]
+>
+> Questa guida non si applica all’avvio in Rescue mode denominato `Windows Customer Rescue System`.
+>
+> Consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) quando utilizzi l’opzione `Windows Customer Rescue System (Windows2022-based)` nello Spazio Cliente OVHcloud.
+>
+
 ## Prerequisiti
 
-* Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} Windows
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} Windows
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
