@@ -28,7 +28,7 @@ In diesem Fall können Sie sich über den OVHcloud Rescue-Modus mit Ihrem Server
 
 > [!primary]
 >
-> Diese Anleitung gilt nicht für Installationen von **Windows** Server. Folgen Sie stattdessen unserer Anleitung zum [Ändern des Administratorpassworts auf einem Windows Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows) oder [Ändern des Administratorpassworts auf einem Windows VPS](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password).
+> Diese Anleitung gilt nicht für Installationen von **Windows** Server. Folgen Sie stattdessen unserer Anleitung zum [Ändern des Administratorpassworts auf einem Windows Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) oder [Ändern des Administratorpassworts auf einem Windows VPS](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password).
 >
 
 ## In der praktischen Anwendung

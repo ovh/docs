@@ -130,6 +130,7 @@
             + [How to configure user accounts and root access on a server](bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
             + [Changing a Windows Server product key](bare_metal_cloud/dedicated_servers/windows_key)
             + [Changing the admin password on a Windows dedicated server](bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
+            + [How to reset the Windows Administrator password with the Windows customer rescue system](bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)
             + [OVHcloud AntiSpam - Best Practices and Unblocking an IP](bare_metal_cloud/dedicated_servers/antispam_best_practices)
             + [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
             + [Bring Your Own Image (BYOI)](bare_metal_cloud/dedicated_servers/bring-your-own-image)

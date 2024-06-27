@@ -14,7 +14,7 @@ O modo *rescue-customer-windows* é uma ferramenta fornecida pela OVHcloud que l
 
 O modo rescue é geralmente adaptado às seguintes tarefas:
 
-- [Reinicialização da palavra-passe do administrador](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
+- [Reinicialização da palavra-passe do administrador](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)
 - Reparação de um sistema operativo avariado
 - Corrigido uma configuração incorreta de um firewall de software
 
