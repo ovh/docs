@@ -29,7 +29,7 @@ La première étape consiste à récupérer tous les fichiers relatifs à votre 
 
 ### Étape 2 : transférer votre site web WordPress vers OVHcloud
 
-Une fois les fichiers et la base de données de votre site web WordPress sauvegardés, vous devez les transférer vers votre hébergement web OVHcloud. Si vous ne possédez pas encore d'hébergement OVHcloud, suivez l'étape 1 du guide [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+Une fois les fichiers et la base de données de votre site web WordPress sauvegardés, transférez-les vers votre hébergement web OVHcloud. Si vous ne possédez pas encore d'hébergement web OVHcloud, suivez l'étape 1 du guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
 
 #### Étape 2.1 : transférer les fichiers de votre site web WordPress
 
