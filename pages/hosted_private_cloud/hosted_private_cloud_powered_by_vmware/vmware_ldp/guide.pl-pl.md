@@ -1,8 +1,13 @@
 ---
 title: "Pushing logs from VMware on OVHcloud to Logs Data Platform (EN)"
 excerpt: "Find out how to enable Hosted Private Cloud VMware on OVHcloud logs forwarding to a Logs Data Platform stream" 
-updated: 2024-06-26
+updated: 2024-06-28
 ---
+
+> [!primary]
+> 
+> This feature is currently in Beta phase. This guide may be incomplete. Our team remains available on our dedicated Discord channel: <https://discord.gg/ovhcloud>.
+>
 
 ## Objective
 
@@ -56,14 +61,6 @@ It is perfectly acceptable that a product has only one category.
 - All VMware appliance logs are processed and marked at the Logs Data Platform.
 
 We put all the metadata for the identification of VMware Hosted Private Cloud on OVHcloud.
-
-With Hosted Private Cloud (Dedicated Server), you can imagine 3 types of logs.
-
-For example :
-
-1.  Kernel logs.
-2.  Auth logs.
-3.  Cron logs.
 
 ### Step 1 - Enable Hosted Private Cloud logs transfer
 

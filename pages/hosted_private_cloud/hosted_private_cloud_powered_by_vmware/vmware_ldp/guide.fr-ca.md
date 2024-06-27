@@ -1,8 +1,13 @@
 ---
 title: "Transfert des logs VMware vers un stream Logs Data Platform"
 excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-06-26
+updated: 2024-06-28
 ---
+
+> [!primary]
+>
+> VCD on OVHcloud est actuellement en phase Bêta. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié : <https://discord.gg/ovhcloud>.
+>
 
 ## Objectif
 
@@ -56,14 +61,6 @@ Sachez qu'il est tout à fait acceptable qu'un produit ne possède qu'une seule 
 - Tous les logs des applications VMware sont traités et marqués au niveau de Logs Data Platform.
 
 Nous fournissons toutes les métadonnées pour l'identification de Hosted Private Cloud VMware on OVHcloud.
-
-Avec Hosted Private Cloud (Dedicated Server), il est possible d'imaginer 3 types de logs.
-
-Par exemple :
-
-1. Les logs Kernel.
-2. Les logs Auth.
-3. Les logs Cron.
 
 ### Etape 1 - Activation du transfert des logs Hosted Private Cloud
 
