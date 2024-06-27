@@ -92,7 +92,7 @@ L’offre Office 365 Pro Plus ne contient pas de licence Skype. Seul le logiciel
 
 ### Comment transférer sans interruption de service mes e-mails, mon site web, ma base de données et mon nom de domaine sur les serveurs OVHcloud ? 
 
-Consultez le guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » expliquant l'ensemble des étapes à suivre.
+Consultez le guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » pour obtenir l'ensemble des étapes à suivre.
 
 ## Aller plus loin <a name="go-further"></a>
 
