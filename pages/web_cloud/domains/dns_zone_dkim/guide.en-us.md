@@ -1,5 +1,5 @@
 ---
-title: Improve email security with DKIM logging
+title: How to improve email security with a DKIM record
 excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email platform
 updated: 2024-04-04
 ---

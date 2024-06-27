@@ -1,5 +1,5 @@
 ---
-title: Improve email security with a SPF record
+title: How to improve email security with an SPF record
 excerpt: Find out how to configure an SPF record on your domain name to improve email security
 updated: 2023-08-04
 ---

@@ -144,11 +144,11 @@ You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.e
 
 ## Go further
 
-[Improve email security via DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
+[How to improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
 
-[Improve email security via SPF record](/pages/web_cloud/domains/dns_zone_spf)
+[How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf)
 
-[Improve email security via DMARC record](/pages/web_cloud/domains/dns_zone_dmarc)
+[How to improve email security with a DMARC record](/pages/web_cloud/domains/dns_zone_dmarc)
 
 To get support setting up your OVHcloud solutions, contact our [network of OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 

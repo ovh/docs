@@ -93,9 +93,9 @@ Fill in the values, complete the steps, then click `Confirm`{.action}.
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-[Improve email security with a SPF record](/pages/web_cloud/domains/dns_zone_spf)
+[How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf)
 
-[Improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
+[How to improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
