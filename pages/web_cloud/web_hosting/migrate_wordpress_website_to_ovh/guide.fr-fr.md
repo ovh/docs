@@ -65,7 +65,7 @@ Vous venez de migrer vos fichiers et votre base de données WordPress. Si vous s
 
 [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
-[Importation d’une base de données MySQL](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
+[Importer une base de données MySQL](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
 
 [Gestion d’une base de données depuis un hébergement mutualisé](/pages/web_cloud/web_hosting/sql_create_database).
 
