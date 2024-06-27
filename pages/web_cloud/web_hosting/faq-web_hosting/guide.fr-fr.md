@@ -34,7 +34,7 @@ Pour suivre les étapes nécessaires à la construction de votre site, consultez
 
 ### Comment transférer sans interruption de service mon site web, ma base de données, mon nom de domaine et mes e-mails sur les serveurs OVHcloud ? 
 
-Consultez le guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » expliquant l'ensemble des étapes à suivre.
+Consultez le guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » pour obtenir l'ensemble des étapes à suivre.
 
 ### Comment héberger plusieurs sites web sur un même hébergement mutualisé ?
 
