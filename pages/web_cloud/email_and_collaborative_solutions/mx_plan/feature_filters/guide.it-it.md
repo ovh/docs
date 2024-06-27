@@ -82,7 +82,7 @@ Seconda scelta (regola):
 > [!primary]
 >
 > Il record SPF (Sender Policy Framework) permette al server di posta di verificare che le email in entrata provengano da server di fiducia.
-> Permette di prevenire potenziali furti di identità da parte di indirizzi email che utilizzano il tuo dominio (spoofing). Per maggiori informazioni sul record SPF, consulta la guida "[Configurare un record SPF sul dominio](/pages/web_cloud/domains/dns_zone_spf)".
+> Permette di prevenire potenziali furti di identità da parte di indirizzi email che utilizzano il tuo dominio (spoofing). Per maggiori informazioni sul record SPF, consulta la guida "[Migliora la sicurezza delle email con un record SPF](/pages/web_cloud/domains/dns_zone_spf)".
 
 Terza scelta (valore):
 

@@ -82,7 +82,7 @@ Una volta effettuata la scelta, clicca su `Continua`{.action}.
 
 - **SRV**: record DNS che consente di configurare automaticamente il tuo servizio di posta elettronica nel momento in cui aggiungi un indirizzo email.
 - **MX**: record DNS dei server di posta elettronica necessario per la ricezione delle email sul dominio interessato.
-- **DKIM** : Applicazione di una firma digitale cifrata per proteggere gli scambi di email. Per maggiori informazioni, consulta la nostra guida "[Configurare un record DKIM ](/pages/web_cloud/domains/dns_zone_dkim)".
+- **DKIM** : Applicazione di una firma digitale cifrata per proteggere gli scambi di email. Per maggiori informazioni, consulta la nostra guida "[Migliora la sicurezza delle email con un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)".
 
 **Se il dominio inserito non è gestito da OVHcloud**, segui lo Step 3 .
 
@@ -100,8 +100,8 @@ Nella colonna `Diagnostica`{.action} è possibile assicurarsi della corretta con
     - *Per creare un record CNAME*, consulta la nostra guida "[Creare un record CNAME per aggiungere un dominio associato](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)".
     - *Per un record MX*, consulta la nostra guida "[Aggiungere un record MX alla configurazione di un dominio](/pages/web_cloud/domains/dns_zone_mx)".
     - *Per un record SRV*, completa la zona DNS con le informazioni fornite quando clicchi sulla casellina rossa. Per aggiungere questo record, consulta la guida "[Modificare una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
-    - *Per un record SPF*, completa la zona DNS con le informazioni fornite quando clicchi sulla casellina. Per aggiungere questo record, consulta la guida "[Configurare un record SPF](/pages/web_cloud/domains/dns_zone_spf)".
-    *Per un record DKIM*, completa la zona DNS con le informazioni fornite quando clicchi sulla casellina. Per aggiungere questo record, consulta la guida "[Configurare un record DKIM ](/pages/web_cloud/domains/dns_zone_dkim)".
+    - *Per un record SPF*, completa la zona DNS con le informazioni fornite quando clicchi sulla casellina. Per aggiungere questo record, consulta la guida "[Migliora la sicurezza delle email con un record SPF](/pages/web_cloud/domains/dns_zone_spf)".
+    *Per un record DKIM*, completa la zona DNS con le informazioni fornite quando clicchi sulla casellina. Per aggiungere questo record, consulta la guida "[Migliora la sicurezza delle email con un record DKIM ](/pages/web_cloud/domains/dns_zone_dkim)".
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting FAQ"
 excerpt: "Find the answers to the most frequently asked questions about OVHcloud Web Hosting plans"
-updated: 2023-04-24
+updated: 2024-06-27
 ---
 
 ## Manage your solution
@@ -38,9 +38,9 @@ To order the web hosting plan that best suits your needs, you can view our web h
 
 Once you have made your choice, follow the instructions in our guide [Changing your web hosting plan offer](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer).
 
-### How do I transfer my website and emails to OVHcloud servers? 
+### How do I transfer my website, database, domain name and emails to OVHcloud servers without any service interruptions?
 
-Read our guide on [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+Refer to our guide on [Migrating your website and associated services to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh), for the full set of steps to follow.
 
 ### How do I host multiple websites on my Web Hosting plan? 
 

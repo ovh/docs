@@ -1,6 +1,6 @@
 ---
 title: FAQ email OVHcloud
-updated: 2024-06-18
+updated: 2024-06-27
 ---
 
 ## FAQ e-mail
@@ -93,6 +93,10 @@ Per modificare il tuo [servizio di posta](/links/web/emails) e usufruire di più
 ### La soluzione 365 Pro Plus include una licenza Skype?  
 
 La soluzione 365 Pro Plus non include una licenza Skype. È incluso solo il software Skype for Business.
+
+### Come trasferire senza interruzione di servizio email, sito Web, database e dominio sui server OVHcloud?
+
+Consulta la guida "[Migrare il proprio sito Web e i servizi associati a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" per visualizzare gli step successivi.
 
 ## Per saperne di più <a name="go-further"></a>
 

@@ -1,7 +1,7 @@
 ---
-title: Como migrar um site e e-mails para a OVHcloud?
-excerpt: "Saiba como migrar o seu website, e-mails e o seu domínio para a OVHcloud sem interromper os serviços"
-updated: 2023-11-15
+title: "Migrar o seu website e os seus serviços associados para a OVHcloud"
+excerpt: "Descubra como migrar o seu website, o seu nome de domínio, a sua base de dados e os seus e-mails para a OVHcloud sem interrupção de serviços"
+updated: 2024-06-24
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-11-15
 
 ## Objetivo
 
-Este guia apresenta-lhe as diferentes ações a realizar para migrar o conjunto do seu website, do seu nome de domínio e dos seus endereços de e-mail para a OVHcloud, sem interrupção de serviços.
+Este guia apresenta-lhe as diferentes ações a realizar para migrar o conjunto do seu website, as suas pastas, o seu nome de domínio, a sua base de dados e os seus endereços de e-mail para a OVHcloud, sem interrupção de serviços.
 
 > [!warning]
 >
@@ -34,7 +34,7 @@ Este guia apresenta-lhe as diferentes ações a realizar para migrar o conjunto 
 > As instruções deste guia referem-se a vários produtos do universo Web Cloud, recomendamos que leia todos os passos em baixo **antes** de começar a migração dos seus serviços.
 >
 
-Migrar o seu website e os seus e-mails para a OVHcloud **sem interrupção de serviço** requer um procedimento preciso em 10 etapas:
+A migração do site e dos e-mails para a OVHcloud **sem interrupção do serviço** requer um procedimento preciso em 10 etapas:
 
 - [Etapa 1: encomendar o alojamento e os endereços de e-mail na OVHcloud](#step1)
 - [Etapa 2: criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud](#step2)
@@ -56,16 +56,20 @@ Se tal interrupção ocorrer, este guia será construído de forma a minimizar a
 
 ### Etapa 1: encomendar o alojamento e os endereços de e-mail na OVHcloud <a name="step1"></a>
 
-Várias ofertas de alojamento partilhado OVHcloud incluem uma oferta de e-mail "MX Plan". Esta oferta de e-mail permite criar endereços de e-mail com um espaço de armazenamento de 5 GB no máximo para cada endereço. Escolha a seguir as ofertas de alojamento em função da versão PHP, da versão SQL, do número de endereços de e-mail que precisa e do tamanho do seu site a migrar:
+Várias ofertas de [alojamento partilhado OVHcloud](/links/web/hosting) incluem uma oferta de e-mail "[MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)". Esta oferta de e-mail permite criar endereços de e-mail com um espaço de armazenamento de 5 GB no máximo para cada endereço. Escolha a seguir as ofertas de alojamento em função da versão PHP, da versão SQL, do número de endereços de e-mail que precisa e do tamanho do seu site a migrar:
 
 - O alojamento [Perso](/links/web/hosting-personal-offer) com **10 endereços de e-mail** "MX Plan"
 - O alojamento [Pro](/links/web/hosting-professional-offer) com **100 endereços de e-mail** "MX Plan"
 - O alojamento [Performance](/links/web/hosting-performance-offer) com **1000 endereços de e-mail** "MX Plan". Esta oferta é indicada em 4 "subofertas".
 - O alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) com **200 endereços de e-mail** "MX Plan". Esta oferta é utilizada pelos programadores de aplicações.
 
-Depois de escolher a oferta de alojamento, se ainda não é cliente da OVHcloud, clique no botão `Encomendar`{.action} presente nas páginas comerciais acima. Siga os passos da encomenda **sem solicitar a transferência do seu nome de domínio**.
+Depois de escolher a oferta de alojamento, se ainda não é cliente da OVHcloud, clique no botão `Encomendar`{.action} presente nas páginas comerciais acima. Siga os passos da encomenda **sem solicitar a transferência do seu nome de domínio** (esta ação será realizada na etapa 10 deste manual).
 
-Também pode efetuar a encomenda a partir do seu [Área de Cliente OVHcloud](/links/manager). Depois de estabelecer a ligação, clique na parte `Web Cloud`{.action} e, na parte superior esquerda, clique no botão `Encomendar`{.action}, e depois nos `Alojamento`{.action}. Siga as etapas da encomenda **sem solicitar a transferência do seu nome de domínio**.
+Também pode efetuar a encomenda a partir da sua [Área de Cliente OVHcloud](/links/manager). Uma vez ligado, siga as instruções seguintes:
+
+- Aceda ao separador `Web Cloud`{.action}.
+- No canto superior esquerdo da interface, clique no botão `Encomendar`{.action} e, a seguir, em `Alojamento`{.action}.
+- Prossiga com a encomenda **sem solicitar a transferência do domínio** (a transferência será efetuada na etapa 10 deste manual).
 
 Depois de validar o pagamento, a instalação do alojamento vai iniciar. Um e-mail será enviado para o seu endereço de e-mail de contacto. Este último conterá as credenciais de acesso ao espaço de armazenamento FTP (File Transfer Protocol) do seu alojamento Web.
 
@@ -76,25 +80,33 @@ Depois de validar o pagamento, a instalação do alojamento vai iniciar. Um e-ma
 
 ### Etapa 2 : criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud <a name="step2"></a>
 
+Se o seu domínio se encontrar noutro prestador e pretender transferi-lo para a OVHcloud, deve num primeiro tempo criar e pré-configurar uma zona DNS antes de iniciar a transferência, a fim de evitar uma interrupção de serviços.
+
 Quando o alojamento estiver criado, aceda à [Área de Cliente OVHcloud](/links/manager) e crie uma zona DNS para o seu domínio **sem "www"**. Para mais informações, consulte o nosso manual sobre a [criação de uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
-Depois de criar a zona DNS, aceda à secção de gestão usando o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)". Se não estiverem presentes, introduza as seguintes entradas:
+Depois de criar a zona DNS, aceda à sua gestão através do nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
-- O seu domínio sem os "www", para o destino do tipo "MX": mx1.mail.ovh.net ".
-- O seu domínio sem os "www", para o destino do tipo "MX": mx2.mail.ovh.net ".
-- O seu domínio sem os "www", para o destino do tipo "MX": mx3.mail.ovh.net ".
-- O seu nome de domínio sem "www", para o endereço IP de destino do tipo "A" do seu alojamento OVHcloud. Para obter o endereço IP correto, consulte o nosso guia que lista os [endereços IP dos diferentes clusters de alojamento partilhado](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- O seu domínio **com** os "www", para o seu domínio sem os "www", com um registo do tipo "CNAME".
+Se não estiverem presentes, preencha as seguintes entradas:
 
-**Exemplo**: Para o nome de domínio "domain.tld", o resultado deve ser o seguinte:
+**Exemplo** (para o nome de domínio "domain.tld"):
+
+|Domínio|Tipo de registo|Prioridade|Destino|
+|---|---|---|---|
+|domain.tld.|MX|1|mx1.mail.ovh.net.|
+|domain.tld.|MX|5|mx2.mail.ovh.net.|
+|domain.tld.|MX|100|mx3.mail.ovh.net.|
+|www.domain.tld.|CNAME|-|domain.tld.|
+|domain.tld.|A|-|`endereço_IP_de_destino`|
+
+Para obter o endereço IP certo de destino do seu alojamento OVHcloud, consulte o guia que apresenta os [endereços IP dos diferentes clusters de alojamento partilhados](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+
+**Exemplo** : Para o nome de domínio "domain.tld", a rendição das entradas do seu nome de domínio deve ser a seguinte:
 
 ![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
-> Note os dois valores-alvo das duas primeiras entradas do tipo "NS". Elas servirão para a [etapa 9](#step9) deste manual.
->
-> Estes valores correspondem aos servidores DNS associados a esta zona DNS para o seu domínio.
+> Anote os dois valores alvo que têm como tipo de registo "NS". Estes valores, do tipo `dnsXX.ovh.net` e `nsXX.ovh.net` (ou `dns200.anycast.me` e `ns200.anycast.me`), correspondem aos servidores DNS associados a esta zona DNS para o seu domínio. Estas instruções serão utilizadas na [etapa 9](#step9) deste manual.
 >
 
 ### Etapa 3 : recuperar um backup completo do seu website <a name="step3"></a>
@@ -171,18 +183,18 @@ A alteração dos servidores "MX" efetua-se junto do fornecedor DNS atual do seu
 Isto significa que, durante a propagação DNS da modificação, os seus e-mails serão recebidos cada vez menos nos seus antigos endereços de e-mail e cada vez mais nos seus novos endereços de e-mail OVHcloud.<br>
 Depois de finalizar a propagação, todos os novos e-mails recebidos serão recebidos nos seus endereços de e-mail OVHcloud.
 
-Sugerimos que altere as entradas "MX" **antes** de efetuar a migração do conteúdo dos endereços de e-mail.
+Recomendamos que altere as entradas "MX" **antes** de efetuar a migração do conteúdo dos seus antigos endereços de e-mail.
 Este método permite evitar uma migração adicional para os poucos e-mails recebidos nos endereços de e-mail antigos durante a propagação do DNS.
 
 ### Etapa 7 : transferir o conteúdo dos endereços de e-mail antigos para os novos endereços OVHcloud <a name="step7"></a>
 
-Após a propagação DNS, os seus novos e-mails foram todos recebidos nos seus novos endereços de e-mail. No entanto, os seus antigos e-mails continuam registados no seu antigo servidor de e-mail.
+Após a propagação DNS, os seus novos e-mails são agora todos recebidos nos seus novos endereços de e-mail. Mas os e-mails antigos ainda estão a ser guardados no servidor de e-mail antigo.
 
-Para migrar o conteúdo dos endereços antigos, existem duas opções.
+Para migrar o conteúdo dos seus antigos endereços de e-mail, tem duas opções à sua disposição.
 
 **Opção 1**: utilize a nossa ferramenta [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} que permite copiar o conteúdo dos endereços de e-mail registados no seu antigo fornecedor para os criados na OVHcloud. Para mais informações, consulte o nosso manual "[Migrar contas de e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)".
 
-Sugerimos que não utilize o `Tipo de servidor`{.action} **POP** na parte `Conta source`{.action}. Este protocolo apaga os e-mails do seu antigo servidor para os enviar para o servidor OVHcloud de destino. Neste caso, já não poderá comparar o conteúdo do antigo e do novo endereço de e-mail.
+Sugerimos que não utilize o `Tipo de servidor`{.action} **POP** na parte `Conta source`{.action}. Este protocolo apaga os e-mails do seu antigo servidor para os enviar para o servidor OVHcloud de destino. Neste caso, já não será possível comparar o conteúdo do endereço de e-mail antigo e novo.
 
 Para a parte `Conta de destino`{.action}, introduza apenas o endereço de e-mail OVHcloud em questão e a respetiva palavra-passe. Isto permitindo o `Tipo de serviço`{.action} em `Hosted by OVH (Autodetect)`{.action}.
 
@@ -217,9 +229,9 @@ Depois de migrar os seus antigos endereços de e-mail para a OVHcloud, reconfigu
 
 ### Etapa 9: substituir os servidores DNS ativos do seu domínio pelos da OVHcloud <a name="step9"></a>
 
-A zona DNS pré-configurada na[etapa 2](#step2) ainda não é aplicada ao seu domínio.
+A zona DNS pré-configurada durante a [etapa 2](#step2) não é ainda aplicada ao seu domínio. Atualmente, o seu domínio utiliza sempre os servidores DNS do seu fornecedor de origem.
 
-Substitua os servidores DNS atuais do seu domínio pelos dois servidores DNS declarados na zona DNS da OVHcloud.
+Substitua os servidores DNS atuais (do registar de origem) pelos dois servidores DNS declarados na zona DNS da OVHcloud (de tipo `dnsXX.ovh.net` e `nsXX.ovh.net` ou `dns200.anycast.me` e `ns200.anycast.me`). Esta operação faz-se na interface de gestão do registar de origem.
 
 > [!warning]
 >
@@ -228,12 +240,17 @@ Substitua os servidores DNS atuais do seu domínio pelos dois servidores DNS dec
 
 ### Etapa 10 : transferir o domínio para a OVHcloud <a name="step10"></a>
 
-Depois de finalizar a propagação DNS, teste o seu site e verifique o envio e a receção dos e-mails a partir dos seus endereços de e-mail.
+Uma vez a propagação DNS terminada, verifique que o conjunto do seu website está funcional. Navegue no seu site para verificar se todas as páginas são apresentadas corretamente e se não foi reenviado nenhum erro 404. Verifique também o envio e a receção dos e-mails a partir dos seus endereços de e-mail.
+
 Se tudo estiver em ordem, desbloqueie o seu nome de domínio e recupere o seu "código de transferência", "EPP" ou "AuthCode" a partir do seu agente de registo atual.
 
 De seguida, transfira o domínio para a OVHcloud através do nosso manual sobre a [transferência de um domínio](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 
 Uma vez concluída a transferência dos seus dados e serviços, só precisa de rescindir os seus antigos serviços no(s) seu(s) antigo(s) fornecedor(es).
+
+### Conclusão
+
+Após ter seguido as dez etapas em ordem, todo o seu website é agora migrado para a OVHcloud, tudo sem interrupção de serviço.
 
 ## Quer saber mais? <a name="go-further"></a>
 

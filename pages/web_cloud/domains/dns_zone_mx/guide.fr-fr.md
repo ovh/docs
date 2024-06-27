@@ -1,6 +1,6 @@
 ---
-title: Configurer un enregistrement MX
-excerpt: Découvrez comment configurer un enregistrement MX sur votre nom de domaine chez OVHcloud
+title: "Configurer un enregistrement MX pour la gestion des emails"
+excerpt: "Découvrez comment configurer un enregistrement MX sur votre nom de domaine chez OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -93,9 +93,9 @@ Une fois les informations complétées, finalisez les étapes puis cliquez sur `
 
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configurer un enregistrement SPF sur son nom de domaine](/pages/web_cloud/domains/dns_zone_spf)
+[Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

@@ -1,14 +1,13 @@
 ---
-title: "Premier pas avec OVHcloud KMS"
+title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-flag: hidden
-updated: 2024-06-06
+updated: 2024-06-26
 ---
 
 > [!warning]
 >
 > Le KMS OVHcloud est actuellement en phase bêta. Ce guide peut donc être incomplet et sera mis à jour lors de la bêta.
-> N’hésitez pas à nous faire des retours sur le canal Discord dédié : https://discord.gg/ovhcloud.
+> N’hésitez pas à nous faire des retours sur le canal Discord dédié : <https://discord.gg/ovhcloud>.
 >
 
 ## Objectif
@@ -23,21 +22,19 @@ L'objectif de ce guide est de présenter les différentes étapes pour mettre en
 
 ### Commander votre KMS
 
-La commande d'un KMS se fait depuis [l'espace client OVHcloud](/links/manager).<br>
 Chaque KMS est associé à une région, ainsi les clés qui y sont stockées ont la garantie de rester dans cette région.<br>
 Il est possible de commander plusieurs KMS, que ce soit dans des régions différentes ou dans une même région.
 
 La facturation d'un KMS étant basée sur le nombre de clés y étant stocké, la commande d'un KMS ne génère pas de facturation en elle-même.
 
-Pour commander un KMS, cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre nom dans la barre latérale.
+Vous pouvez commander un KMS depuis [l'espace client OVHcloud](/links/manager) en vous rendant sur l'un des menus suivants :
+
+- Cliquez sur `Bare Metal Cloud`{.action} puis sur `Identité, Sécurité & Opérations`{.action}. Cliquez sur `Key Management Service`{.action} puis sur le bouton `Commander un KMS`{.action}.
+- Cliquez sur `Hosted Private Metal Cloud`{.action} puis sur `Identité, Sécurité & Opérations`{.action}. Cliquez sur `Key Management Service`{.action} puis sur le bouton `Commander un KMS`{.action}.
 
 ![Accès au menu KMS](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
-Vous pouvez accéder au menu KMS via l’entrée dédiée dans votre espace client.
-
-![Accès au menu KMS](images/access_to_the_KMS_menu_02.png){.thumbnail}
-
-Indiquez la région de votre KMS et acceptez les conditions d'utilisation.
+Indiquez la région de votre KMS.
 
 ![Commander le KMS](images/order_kms_01.png){.thumbnail}
 
@@ -599,4 +596,4 @@ Il est possible d'accéder au swagger correspondant à votre KMS en cliquant sur
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

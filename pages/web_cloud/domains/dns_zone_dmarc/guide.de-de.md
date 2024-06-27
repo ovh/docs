@@ -1,5 +1,5 @@
 ---
-title: DMARC-Eintrag für Ihre Domain konfigurieren
+title: E-Mail-Sicherheit durch DMARC-Eintrag verbessern
 excerpt: Erfahren Sie hier, wie DMARC funktioniert und für Ihren E-Mail-Dienst eingerichtet wird
 updated: 2023-12-13
 ---

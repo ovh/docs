@@ -1,7 +1,7 @@
 ---
 title: Cómo utilizar las políticas IAM desde el área de cliente
 excerpt: Cómo conceder permisos de acceso específicos a los usuarios desde una cuenta de OVHcloud
-updated: 2024-02-19
+updated: 2024-06-25
 ---
 
 > [!primary]
@@ -152,9 +152,7 @@ Esto le permitirá agregar y quitar los usuarios o grupos a los que se aplicará
 
 ### Gestión de identidades
 
-Las identidades disponibles para las políticas se gestionan a través de la pestaña `Gestión de los usuarios`{.action}, en el menú `Mi cuenta`{.action}.
-
-La pestaña `Identidades`{.action} del menú IAM le redirige a este menú.
+Las identidades disponibles para las políticas se gestionan a través de la pestaña `Identidades`{.action}.
 
 Para más información sobre la gestión de usuarios, consulte la [documentación dedicada](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

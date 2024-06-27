@@ -1,7 +1,7 @@
 ---
 title: Administrator-Passwort eines Windows Servers ändern
 excerpt: Erfahren Sie hier, wie Sie den OVHcloud Rescue-Modus verwenden, um das Passwort des Administrator-Accounts auf einem Windows Dedicated Server zurückzusetzen
-updated: 2023-09-18
+updated: 2024-06-26
 ---
 
 ## Ziel
@@ -9,6 +9,13 @@ updated: 2023-09-18
 Bei der Installation oder Neuinstallation eines Windows-Betriebssystems wird Ihnen ein Passwort für den Root-Zugriff zugeteilt. Wir empfehlen dringend, dass Sie dieses ursprüngliche Passwort ändern, wie in unserer Anleitung zum [Absichern eines Servers](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server) beschrieben. Wenn Sie Ihr Administrator-Passwort verloren haben, müssen Sie es im Rescue-Modus zurücksetzen.
 
 **Diese Anleitung erklärt, wie Sie das Kennwort des Administrator-Accounts eines Windows Server Betriebssystems über den OVHcloud Rescue-Modus zurücksetzen.**
+
+> [!warning]
+>
+> Diese Anleitung gilt nicht für den die Verwendung des Rescue-Modus `Windows Customer Rescue System`.
+>
+> Verwenden Sie stattdessen [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows), wenn Sie die Option `Windows Customer Rescue System (Windows2022-based)` im OVHcloud Kundencenter auswählen.
+>
 
 ## Voraussetzungen
 

@@ -1,7 +1,7 @@
 ---
 title: Come utilizzare le politiche IAM dallo Spazio Cliente
 excerpt: Come assegnare diritti di accesso specifici agli utenti da un account OVHcloud
-updated: 2024-02-19
+updated: 2024-06-25
 ---
 
 > [!primary]
@@ -153,9 +153,7 @@ In questo modo potrai aggiungere ed eliminare gli utenti o i gruppi a cui applic
 
 ### Gestione delle identità
 
-Le identità disponibili per le policy sono gestite tramite la scheda `Gestione degli utenti`{.action}, nel menu `Il mio account`{.action}.
-
-`Identità`{.action} del menu IAM ti reindirizza verso questo menu.
+Le identità disponibili per le policy sono gestite tramite la scheda `Identità`{.action}.
 
 Visualizza i dettagli della gestione degli utenti nella [documentazione dedicata](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

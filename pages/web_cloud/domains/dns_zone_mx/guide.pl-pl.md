@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja rekordu MX
-excerpt: Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud
+title: "Konfiguracja rekordu MX dla emaili"
+excerpt: "Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -98,9 +98,9 @@ Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.a
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Konfiguracja rekordu SPF w domenie](/pages/web_cloud/domains/dns_zone_spf)
+[Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Skonfiguruj rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Jeśli potrzebujesz specjalistycznych usług (SEO, programowanie, etc.), skontaktuj się z [partnerami OVHcloud](/links/partner).
 

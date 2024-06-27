@@ -152,11 +152,11 @@ Es kann hilfreich sein, eine Seite wie [Mail Tester](http://www.mail-tester.com/
 
 ## Weiterführende Informationen
 
-[DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)
+[E-Mail-Sicherheit durch DKIM-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dkim)
 
-[SPF-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_spf)
+[E-Mail-Sicherheit durch SPF-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_spf)
 
-[DMARC-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dmarc)
+[E-Mail-Sicherheit durch DMARC-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Kontaktieren Sie unser [OVHcloud Partner-Netzwerk](https://partner.ovhcloud.com/de/directory/), wenn Sie beim Einsatz Ihrer OVHcloud Lösungen Unterstützung benötigen.
 

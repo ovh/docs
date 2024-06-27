@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniach Mac'
-excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook 2016 na urządzeniu Mac'
+title: 'Exchange - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu macOS'
+excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook na urządzeniu macOS'
 updated: 2018-06-01
 ---
 
@@ -16,7 +16,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 > [!primary]
 >
-> Używasz programu Outlook 2016 na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}.
+> Używasz programu Outlook na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}.
 >
 
 ## W praktyce

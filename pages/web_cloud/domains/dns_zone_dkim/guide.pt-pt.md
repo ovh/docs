@@ -1,6 +1,6 @@
 ---
-title: Configurar um registo DKIM
-excerpt: Saiba como configurar um registo DKIM no seu domínio e na sua plataforma de e-mail OVHcloud
+title: "Melhorar a segurança dos e-mails através do registo DKIM"
+excerpt: "Saiba como configurar um registo DKIM no seu domínio e na sua plataforma de e-mail OVHcloud"
 updated: 2024-04-04
 ---
 

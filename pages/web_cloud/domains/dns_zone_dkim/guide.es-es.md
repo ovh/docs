@@ -1,5 +1,5 @@
 ---
-title: Configurar un registro DKIM
+title: Mejorar la seguridad del correo electrónico mediante un registro DKIM
 excerpt: Cómo configurar un registro DKIM en un dominio y una plataforma de correo electrónico de OVHcloud
 updated: 2024-04-04
 ---

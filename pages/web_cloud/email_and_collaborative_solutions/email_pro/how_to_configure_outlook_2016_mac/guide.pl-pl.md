@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja konta E-mail Pro w programie Outlook 2016 na urządzeniu Mac'
-excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook 2016 na urządzeniu Mac'
+title: 'Email Pro - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu macOS'
+excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook na urządzeniu Mac'
 updated: 2020-03-18
 ---
 
@@ -8,7 +8,7 @@ updated: 2020-03-18
 
 Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji.
 
-**Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook 2016 na urządzeniu Mac.**
+**Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook na urządzeniu Mac.**
 
 > [!warning]
 >
@@ -25,7 +25,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 > [!primary]
 >
-> Używasz programu Outlook 2016 na urządzeniu z systemem Windows ? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook 2016 na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}.
+> Używasz programu Outlook na urządzeniu z systemem Windows ? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}.
 >
 
 ## W praktyce
@@ -66,7 +66,7 @@ Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skon
 
 ![emailpro](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta poniżej znajdziesz parametry, których należy użyć w przypadku oferty E-mail Pro:
+Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta poniżej znajdziesz parametry, których należy użyć w przypadku oferty E-mail Pro.
 
 |Typ serwera|Nazwa serwera|SSL|Port|
 |---|---|---|---|
@@ -81,8 +81,8 @@ OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w programie Outlook 2016 na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
+[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
 
-[Konfiguracja konta Exchange w aplikacji Outlook 2016 na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
+[Konfiguracja konta Exchange w aplikacji Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

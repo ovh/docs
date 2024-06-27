@@ -1,6 +1,6 @@
 ---
-title: Configura un record MX
-excerpt: Come configurare un record MX su un dominio in OVHcloud
+title: "Configurare un record MX per la gestione delle email"
+excerpt: "Come configurare un record MX su un dominio in OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -98,9 +98,9 @@ Una volta inserite le informazioni, prosegui con gli step successivi e clicca su
 
 [Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configurare un record SPF su un dominio](/pages/web_cloud/domains/dns_zone_spf)
+[Migliora la sicurezza delle email con un record SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configura un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Migliora la sicurezza delle email con un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

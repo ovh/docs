@@ -1,7 +1,7 @@
 ---
 title: "Impostare un DNS dinamico (DynHost/DynDNS) per il tuo dominio"
 excerpt: "Questa guida ti mostra come configurare un record DNS dinamico per il tuo dominio OVHcloud"
-updated: 2024-05-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -12,13 +12,11 @@ updated: 2024-05-22
 
 La zona **D**omain **N**ame **S**ystem (**DNS**) di un dominio costituisce il file di configurazione di quest'ultimo. È composta da informazioni tecniche chiamate *record DNS*. La zona DNS è, in un certo senso, come un centro di deviazioni. 
 
-Puoi, ad esempio, precisare:
+Per maggiori informazioni, consulta le nostre guide:
 
-- L'indirizzo IP (record DNS di tipo *A* e *AAAA*) del tuo hosting web per visualizzare il tuo sito web con il tuo dominio.
-- I server di posta (record DNS di tipo *MX*) verso cui il tuo dominio deve reindirizzare le email che riceve. Per consultare i tuoi indirizzi email personalizzati con il tuo dominio.
-- Informazioni relative alla sicurezza/autenticazione dei servizi associati (hosting Web, server Web, server di posta, ecc...) al tuo dominio (record DNS di tipo *SPF*, *DKIM*, *DMARC*, ecc...).
-
-In caso di necessità, consulta la nostra documentazione relativa a [i record DNS](/pages/web_cloud/domains/dns_zone_records) e alla [modifica di una zona DNS](/pages/web_cloud/domains/dns_zone_edit) dal tuo [Spazio Cliente OVHcloud](/links/manager).
+- [Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
 
 L'aggiornamento "dinamico" di un record DNS può evitare un'interruzione prolungata di uno dei tuoi servizi se non disponi di un indirizzo IP detto "fisso" (che non cambia).
 

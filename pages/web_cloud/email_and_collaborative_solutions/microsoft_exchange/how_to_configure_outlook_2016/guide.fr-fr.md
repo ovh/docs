@@ -1,6 +1,6 @@
 ---
-title: Configurer son compte Exchange sur Outlook 2016 pour Windows
-excerpt: Découvrez comment configurer un compte Exchange sur Outlook 2016 pour Windows
+title: Exchange - Configurer son compte e-mail sur Outlook pour Windows
+excerpt: Découvrez comment configurer un compte Exchange sur Outlook pour Windows
 updated: 2021-07-05
 ---
 
@@ -20,13 +20,13 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 ## Prérequis
 
 - Disposer d'une offre [Exchange](https://www.ovhcloud.com/fr/emails/){.external}.
-- Disposer du logiciel Microsoft Outlook 2016 ou ultérieur, installé sur votre ordinateur.
+- Disposer du logiciel Microsoft Outlook ou ultérieur, installé sur votre ordinateur.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 - Le champ SRV d'OVHcloud doit être correctement configuré dans la zone DNS du nom de domaine, n'hésitez pas à consulter notre guide [Ajouter un nom de domaine sur son service Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 > [!primary]
 >
-> Vous utilisez Outlook 2016 et ultérieur pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
+> Vous utilisez Outlook et ultérieur pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## En pratique
@@ -73,8 +73,8 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 
 ## Aller plus loin
 
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook 2016 pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}
 
-[Configurer son compte E-mail Pro sur Outlook 2016 pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
+[Configurer son compte E-mail Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

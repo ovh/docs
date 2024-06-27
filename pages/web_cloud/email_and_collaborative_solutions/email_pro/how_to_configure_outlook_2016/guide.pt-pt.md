@@ -1,5 +1,5 @@
 ---
-title: 'Configurar uma conta Email Pro no Outlook para Windows'
+title: 'Email Pro - Configure uma conta de e-mail no Outlook para Windows'
 excerpt: 'Saiba como configurar uma conta Email Pro no Outlook para Windows'
 updated: 2021-07-05
 ---
@@ -94,8 +94,8 @@ A janela está dividida em duas partes, **Correio de entrada** e **Correio de sa
 
 ## Quer saber mais?
 
-[Configurar um endereço de e-mail no Outlook 2016 para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external} (versão em inglês).
+[Configurar um endereço de e-mail no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external} (versão em inglês).
 
-[Configurar uma conta Exchange no Outlook 2016 para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external} (versão em inglês).
+[Configurar uma conta Exchange no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external} (versão em inglês).
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

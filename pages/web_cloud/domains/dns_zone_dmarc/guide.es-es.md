@@ -1,6 +1,6 @@
 ---
-title: Configurar un registro DMARC en su dominio
-excerpt: Cómo funciona DMARC y cómo implementarlo para su servicio de correo
+title: "Mejorar la seguridad del correo electrónico mediante el registro DMARC"
+excerpt: "Descubra cómo funciona DMARC y cómo implementarlo para su servicio de correo"
 updated: 2023-12-13
 ---
 

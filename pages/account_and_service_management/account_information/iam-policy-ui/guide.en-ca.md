@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2024-02-19
+updated: 2024-06-25
 ---
 
 ## Objective
@@ -39,7 +39,7 @@ Click your account name in the top-right corner, then on your name again in the 
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-You can access the IAM menu via the dedicated entry in your customer account management.
+You can access the IAM menu via the dedicated entry in your Control Panel.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
@@ -147,9 +147,7 @@ This will allow you to add and delete the users or the groups to whom the policy
 
 ### Managing identities
 
-The identities available for policies are managed via the `User management`{.action} tab, in the `My account`{.action} menu.
-
-The `Identities`{.action} tab on the IAM menu will redirect you the this menu.
+The identities available for policies are managed via the `Identities`{.action} tab.
 
 Details about user management are available in the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

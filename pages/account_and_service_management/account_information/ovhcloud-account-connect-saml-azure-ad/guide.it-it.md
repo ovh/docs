@@ -1,7 +1,7 @@
 ---
-title: Attiva le connessioni SSO di Azure con il tuo account OVHcloud
+title: Attiva le connessioni SSO di Entra ID con il tuo account OVHcloud
 excerpt: "Scopri come associare il tuo Entra ID (precedentemente Azure Active Directory) al tuo account OVHcloud utilizzando SAML 2.0"
-updated: 2024-03-05
+updated: 2024-06-25
 ---
 
 > [!primary]
@@ -207,17 +207,17 @@ L'applicazione Entra ID viene aggiunta come provider di identità approvato tram
 
 #### Creare la fiducia di OVHcloud
 
-[Accedi allo Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sul tuo profilo in alto a destra.
+Clicca sul nome del tuo account in alto a destra e poi di nuovo sul tuo nome nella barra laterale.
 
-![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
+![Accesso al menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Clicca sul tuo nome per accedere alla pagina di gestione del tuo profilo.
+Accedi al menu IAM tramite la voce dedicata dello Spazio Cliente.
 
-![Informazioni utente OVHcloud](images/ovhcloud_user_infos.png){.thumbnail}
+![Accesso al menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Apri la scheda `Gestione utenti`{.action}.
+Clicca sulla scheda `Identità`{.action} per accedere alla gestione degli utenti locali.
 
-![Profilo menu OVHcloud](images/ovhcloud_profile_menu.png){.thumbnail}
+![Accesso al menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Clicca sul pulsante `Connessione SSO`{.action}.
 

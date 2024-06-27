@@ -1,7 +1,7 @@
 ---
 title: "Den Versionsverlauf einer DNS-Zone verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Backups der DNS-Zone mithilfe der History-Funktion einsehen, vergleichen, herunterladen und wiederherstellen können"
-updated: 2024-05-23
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -10,13 +10,14 @@ updated: 2024-05-23
 
 ## Ziel
 
-Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei eines Domainnamens, die sich aus **DNS-Einträgen** zusammensetzt. Das sind Datensätze, die dem Domainnamen verschiedene Dienste und Funktionen zuordnen, zum Beispiel:
+Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei eines Domainnamens, die sich aus **DNS-Einträgen** zusammensetzt. Das sind Datensätze, die dem Domainnamen verschiedene Dienste und Funktionen zuordnen.
 
-- Die IP-Adresse (DNS-Einträge vom Typ *A* und *AAAA*) Ihres Hostings muss in der Zone eingetragen sein, damit Ihre Webseite angezeigt wird, wenn der Domainname in einen Browser eingegeben wird.
-- Die E-Mail-Server (DNS-Einträge vom Typ *MX*), die E-Mails erhalten sollen, die an Adressen mit diesem Domainnamen versendet wurden. Wenn Sie die MX-Einträge Ihres Domainnamens konfigurieren, können Sie E-Mails über Ihre personalisierten E-Mail-Adressen empfangen.
-- Informationen zur Sicherheit/Authentifizierung von Diensten (Webhosting, Webserver, E-Mail-Server, etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC*, etc.).
+Weitere Informationen finden Sie in folgenden Anleitungen:
 
-Lesen Sie bei Bedarf unsere Dokumentation zu [DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records) und [Bearbeiten einer DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) über Ihr [OVHcloud Kundencenter](/links/manager).
+- [Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information)
+- [Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)
+- [Alle Informationen zu DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records)
+
 Es kann aus verschiedenen Gründen erforderlich sein, eine alte DNS-Konfiguration auf Ihre Domain anzuwenden.
 
 Die Verwaltung von DNS wird mit dem Zugriff auf den Verlauf Ihrer DNS-Zonen vereinfacht.
@@ -110,6 +111,12 @@ Sie können auch die Datumsangaben der Versionen, die Sie vergleichen möchten, 
 Mit dieser Anleitung können Sie nun zwei DNS-Zonen vergleichen sowie eine DNS-Zone anzeigen, herunterladen, wiederherstellen und löschen.
 
 ## Weiterführende Informationen
+
+[Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information)
+
+[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Alle Informationen zu DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records)
 
 [In das OVHcloud Kundencenter einloggen](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 

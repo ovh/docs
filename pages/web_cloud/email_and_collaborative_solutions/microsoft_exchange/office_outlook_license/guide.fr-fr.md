@@ -12,9 +12,9 @@ OVHcloud vous propose le client de messagerie Outlook au tarif de 2 euros HT par
 
 Après votre souscription, vous pouvez télécharger Outlook parmi l'une des 3 versions suivantes:
 
-- Outlook 2016 pour Windows 32 bits.
-- Outlook 2016 pour Windows 64 bits.
-- Outlook 2016 pour MAC 64 bits.
+- Outlook pour Windows 32 bits.
+- Outlook pour Windows 64 bits.
+- Outlook pour MAC 64 bits.
 
 **Découvrez comment souscrire une licence Outlook depuis votre plateforme Exchange OVHcloud et l'installer.**
 

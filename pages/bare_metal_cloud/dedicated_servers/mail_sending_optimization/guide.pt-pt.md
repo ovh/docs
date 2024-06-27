@@ -152,11 +152,11 @@ Pode ser interessante utilizar um site como o [Mail Tester](http://www.mail-test
 
 ## Quer saber mais?
 
-[Configurar um registo DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Melhorar a segurança dos e-mails através de um registo DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-[Configurar um registo SPF](/pages/web_cloud/domains/dns_zone_spf)
+[Melhorar a segurança dos e-mails através de um registo SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurar um registo DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+[Melhorar a segurança dos e-mails através de um registo DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Para ser acompanhado sobre a implementação das suas soluções OVHcloud, contacte a nossa [rede de parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
  

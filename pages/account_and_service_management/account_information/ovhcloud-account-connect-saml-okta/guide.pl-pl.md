@@ -1,7 +1,7 @@
 ---
 title: "Włącz połączenia Okta SSO z Twoim kontem OVHcloud"
 excerpt: "Dowiedz się, jak powiązać usługę Okta z kontem OVHcloud przy użyciu SAML 2.0"
-updated: 2024-03-05
+updated: 2024-06-25
 ---
 
 ## Wprowadzenie
@@ -80,17 +80,17 @@ Twoja usługa Okta jest od tej pory zaufana w OVHcloud jako dostawca usług. Nas
 
 Aby dodać Okta jako zaufanego dostawcę tożsamości, należy dostarczyć metadane dostawcy tożsamości w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Po zalogowaniu kliknij Twój profil w prawym górnym rogu.
+Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie na pasku bocznym.
 
-![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Kliknij Twoją nazwę, aby przejść do strony zarządzania profilem.
+Aby uzyskać dostęp do menu IAM, przejdź do Panelu klienta.
 
-![User Informacje OVHcloud](images/ovhcloud_user_infos.png){.thumbnail}
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Otwórz zakładkę `Zarządzanie użytkownikami`{.action}.
+Następnie kliknij zakładkę `Tożsamości`{.action}, aby zarządzać użytkownikami lokalnymi.
 
-![OVHcloud menu profile](images/ovhcloud_profile_menu.png){.thumbnail}
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Kliknij przycisk `Logowanie SSO`{.action}.
 

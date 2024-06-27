@@ -14,7 +14,7 @@ Tryb *rescue-customer-windows* jest dostarczanym przez OVHcloud narzędziem, kt�
 
 Tryb Rescue jest zazwyczaj dostosowany do następujących zadań:
 
-- [Reset hasła administratora](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
+- [Reset hasła administratora](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)
 - Naprawa wadliwego systemu operacyjnego
 - Naprawa nieprawidłowej konfiguracji zapory sieciowej
 

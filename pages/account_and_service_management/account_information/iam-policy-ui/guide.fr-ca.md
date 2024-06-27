@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les politiques IAM depuis votre espace client
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs depuis un compte OVHcloud"
-updated: 2024-02-19
+updated: 2024-06-25
 ---
 
 ## Objectif
@@ -150,9 +150,7 @@ Cela vous permettra d'ajouter et de supprimer les utilisateurs ou les groupes au
 
 ### Gestion des identités
 
-Les identités disponibles pour les politiques sont gérées via l'onglet `Gestion des utilisateurs`{.action}, dans le menu `Mon compte`{.action}.
-
-L'onglet `Identités`{.action} du menu IAM vous redirige vers ce menu.
+Les identités disponibles pour les politiques sont gérées via l'onglet `Identités`{.action}.
 
 Retrouvez les détails de la gestion des utilisateurs dans la [documentation dédiée](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

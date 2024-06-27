@@ -78,7 +78,7 @@ Deuxième choix (règle) :
 > [!primary]
 >
 > Le SPF (Sender Policy Framework) permet au serveur qui reçoit un e-mail de s’assurer que ce dernier a bien été envoyé depuis un serveur de confiance.
-> Il permet de prévenir les potentielles usurpations d'identité venant d'adresses e-mail utilisant votre nom de domaine (spoofing). Pour plus d'infos sur le SPF, reportez-vous au guide « [Configurer un enregistrement SPF sur son nom de domaine](/pages/web_cloud/domains/dns_zone_spf) ».
+> Il permet de prévenir les potentielles usurpations d'identité venant d'adresses e-mail utilisant votre nom de domaine (spoofing). Pour plus d'infos sur le SPF, reportez-vous au guide « [Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) ».
 
 Troisième choix (valeur) :
 
