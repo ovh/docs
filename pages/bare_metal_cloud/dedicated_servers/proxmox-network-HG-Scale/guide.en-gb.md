@@ -37,7 +37,7 @@ On the High Grade & SCALE ranges, it is not possible to operate Additional IPs i
 
 This configuration offers a better performance in terms of bandwidth, but is less flexible. With this configuration, the Additional IP has to be attached to a dedicated server. If you have multiple Proxmox hosts and want to migrate a VM from one host to another, you must also migrate the Additional IP linked to the VM. This can be done via the OVHcloud Control Panel or the OVHcloud API (you can automate this task by creating a script).
 
-In this mode Addtional IPv6 is not available, please see this [section](#additionalipvrack) just below in the article.
+In this mode Additional IPv6 can not be used. Please refer to [section](#additionalipvrack) for the IPv6 compatible mode.
 
 #### Target configuration schema
 
@@ -190,7 +190,7 @@ ADDITIONAL_IP    				# should return your additional ip
 
 This configuration is more flexible, you don't have to associate an Additional IP(v4) to a server but rather to a vRack. This means that if a VM wants to use an Additional IP, it can claim it directly without any additional configuration and independently of the host it is hosted on.
 
-For Addtional IPv6 you can see deeper in this article [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838)
+For Additional IPv6 specific configuration options, please refer this article: [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838)
 
 > [!warning]
 >
