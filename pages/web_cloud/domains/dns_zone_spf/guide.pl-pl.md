@@ -1,5 +1,5 @@
 ---
-title: Konfiguracja rekordu SPF w strefie DNS nazwy domeny
+title: "Poprawa bezpieczeństwa e-maili poprzez rekord SPF"
 excerpt: Zobacz, jak dodać rekord SPF w strefie DNS nazwy domeny na serwerze OVHcloud
 updated: 2023-08-04
 ---

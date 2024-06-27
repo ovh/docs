@@ -1,5 +1,5 @@
 ---
-title: Como configurar o registo SPF de um domínio
+title: "Melhorar a segurança dos e-mails através do registo SPF"
 excerpt: Saiba como adicionar um registo SPF à zona DNS do seu domínio
 updated: 2023-08-04
 ---
