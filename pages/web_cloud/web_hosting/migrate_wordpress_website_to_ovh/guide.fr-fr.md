@@ -59,7 +59,7 @@ Vous devez maintenant lier votre site web WordPress à votre base de données. C
 
 Vous venez de migrer vos fichiers et votre base de données WordPress. Si vous souhaitez migrer d'autres services comme vos e-mails, votre nom de domaine ou encore vos zones DNS, suivez les étapes du guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » en vous reportant aux étapes qui concernent les services que vous souhaitez migrer. En effet, plusieurs des étapes auront déjà été effectuées dans ce guide.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Généralités sur les e-mails mutualisés](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
