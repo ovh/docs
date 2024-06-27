@@ -1,5 +1,5 @@
 ---
-title: Configure a DMARC record on your domain name
+title: Improve email security with DMARC logging
 excerpt: Find out how DMARC works, and how to set it up for your email service
 updated: 2023-12-13
 ---
