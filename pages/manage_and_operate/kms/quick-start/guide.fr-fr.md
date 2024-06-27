@@ -1,5 +1,5 @@
 ---
-title: "Premier pas avec OVHcloud KMS"
+title: "Premier pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
 updated: 2024-06-26
 ---
