@@ -389,7 +389,7 @@ Vous devrez renseigner a minima les champs suivants :
 |Champ|Description| 
 |---|---| 
 |serviceName|Identifiant du projet Public Cloud concerné|
-|flavorId|Identifiant du type d'instance (ex : S1-2, B2-7, WIN-R2-15...)|
+|flavorId|Identifiant du type d'instance (ex : D2-2, B2-7, WIN-R2-15...)|
 |imageId|Identifiant du l'image de déploiement (ex : Debian 9, Centos 7...)|
 |name|Nom que vous donnez à votre instance.|
 |networks|Dans la partie « networkId » indiquez l'identifiant du réseau public (ext-net) ou celui de votre vLan (pn-xxxxxx_yy). Vous pouvez cliquer sur le bouton « + » pour ajouter d'autres réseaux.|

@@ -1,5 +1,5 @@
 ---
-title: Configurar um registo DMARC no seu domínio
+title: "Melhorar a segurança dos e-mails através do registo DMARC"
 excerpt: Saiba como o DMARC funciona e como configurá-lo para o seu serviço de e-mail
 updated: 2023-12-13
 ---

@@ -74,7 +74,7 @@ Second choice (Rule):
 > [!primary]
 >
 > SPF (Sender Policy Framework) allows the server that receives an email to ensure that it has been sent from a trusted server.
-> It helps prevent identity fraud from email addresses that use your domain name (spoofing). For more information on the SPF record, please refer to our guide on [Configuring an SPF record on a domain name](/pages/web_cloud/domains/dns_zone_spf).
+> It helps prevent identity fraud from email addresses that use your domain name (spoofing). For more information on the SPF record, please refer to our guide on [How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf).
 
 Third choice (Value):
 

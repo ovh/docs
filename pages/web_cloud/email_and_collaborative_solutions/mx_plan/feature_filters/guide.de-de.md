@@ -78,7 +78,7 @@ Zweite Auswahl (Regel):
 > [!primary]
 >
 > Mit SPF (Sender Policy Framework) kann der Server, der eine E-Mail empfängt, überprüfen, ob diese von einem vertrauenswürdigen Server stammt.
-> Dies verhindert Identitätsbetrug über E-Mail-Adressen mit Ihrem Domainnamen (Spoofing). Weitere Informationen zu SPF finden Sie in der Anleitung "[Einen SPF-Eintrag für Domainnamen konfigurieren](/pages/web_cloud/domains/dns_zone_spf)".
+> Dies verhindert Identitätsbetrug über E-Mail-Adressen mit Ihrem Domainnamen (Spoofing). Weitere Informationen zu SPF finden Sie in der Anleitung "[E-Mail-Sicherheit durch SPF-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_spf)".
 
 Dritte Auswahl (Wert):
 

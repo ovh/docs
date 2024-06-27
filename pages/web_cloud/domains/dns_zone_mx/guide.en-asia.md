@@ -1,5 +1,5 @@
 ---
-title: "Add an MX record to your domain name’s configuration"
+title: "Configure an MX record for email management"
 excerpt: "Find out how to add a MX record to your OVHcloud domain name’s configuration"
 updated: 2024-02-29
 ---
@@ -93,9 +93,9 @@ Fill in the values, complete the steps, then click `Confirm`{.action}.
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configuring an SPF record on your domain name](/pages/web_cloud/domains/dns_zone_spf)
+[How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configuring a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
+[How to improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

@@ -1,5 +1,5 @@
 ---
-title: Configurar um registo MX
+title: "Configurar um registo MX para a gestão dos e-mails"
 excerpt: Saiba como configurar um registo MX no seu domínio da OVHcloud
 updated: 2024-02-29
 ---
@@ -97,9 +97,9 @@ Conclua os passos e clique em `Validar`{.action}.
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configurar um registo SPF no domínio](/pages/web_cloud/domains/dns_zone_spf)
+[Melhorar a segurança dos e-mails através do registo SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurar um registo DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Melhorar a segurança dos e-mails através do registo DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 

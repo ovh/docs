@@ -137,7 +137,7 @@ Per verificare o modificare il collegamento tra il tuo dominio e il tuo hosting 
 - [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite): questa guida ti mostra come aggiungere più domini a un hosting Web. Può anche aiutarti a verificare che la dichiarazione del tuo dominio nella scheda `Multisito`{.action} del tuo hosting Web sia corretta. In questo modo è possibile apportare le modifiche necessarie alla zona DNS attiva del dominio.
 - [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit): questa guida ti mostra come modificare una zona DNS presente in OVHcloud. e sarà disponibile nel caso in cui la zona DNS attiva del dominio sia presente su un account cliente OVHcloud diverso dal proprio. Può anche servire ad accedere alla zona DNS OVHcloud del dominio, per verificare che l’indirizzo IP (record) di tipo *A* e/o *AAAA*) dichiarato per il dominio nella zona DNS corrisponda all’indirizzo IP dell’hosting Web.
 
-Per verificare e/o modificare il collegamento tra il dominio e il servizio di posta OVHcloud, consulta la guida "[Configura un record MX](/pages/web_cloud/domains/dns_zone_mx)". In questa guida trovi i nomi dei server di posta OVHcloud e la procedura da seguire per far puntare il dominio verso questi server.
+Per verificare e/o modificare il collegamento tra il dominio e il servizio di posta OVHcloud, consulta la guida "[Configurare un record MX per la gestione delle email](/pages/web_cloud/domains/dns_zone_mx)". In questa guida trovi i nomi dei server di posta OVHcloud e la procedura da seguire per far puntare il dominio verso questi server.
 
 > [!primary]
 >
@@ -145,7 +145,7 @@ Per verificare e/o modificare il collegamento tra il dominio e il servizio di po
 > 
 > - **Per il collegamento tra il dominio e l’hosting Web**: consulta le guide "[Lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)" e "[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)" citate in precedenza per recuperare l’indirizzo IP dell’hosting Web e dichiara correttamente il dominio sul tuo hosting Web. In seguito, contatta l’organismo che gestisce la zona DNS attiva del dominio per far puntare il dominio verso il tuo hosting Web.
 >
-> - **Per il collegamento tra il dominio e il servizio di posta OVHcloud**: consulta la guida "[Configura un record MX](/pages/web_cloud/domains/dns_zone_mx)" per recuperare i nomi dei server di posta elettronica OVHcloud da inserire nella zona DNS attiva del dominio. In seguito, contatta l’organismo che gestisce la zona DNS attiva del dominio per far puntare il dominio verso i server di posta OVHcloud.
+> - **Per il collegamento tra il dominio e il servizio di posta OVHcloud**: consulta la guida "[Configurare un record MX per la gestione delle email](/pages/web_cloud/domains/dns_zone_mx)" per recuperare i nomi dei server di posta elettronica OVHcloud da inserire nella zona DNS attiva del dominio. In seguito, contatta l’organismo che gestisce la zona DNS attiva del dominio per far puntare il dominio verso i server di posta OVHcloud.
 >
 
 ### Step 5 - Altre opzioni disponibili con gli hosting Web <a name="other-options"></a>

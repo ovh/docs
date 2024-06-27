@@ -152,12 +152,11 @@ Może być interesujące, aby korzystać ze strony jak [Mail Tester](http://www.
 
 ## Sprawdź również
 
-[Skonfiguruj rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Zwiększ bezpieczeństwo e-maili za pomocą rekordu DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-[Konfiguracja rekordu SPF](/pages/web_cloud/domains/dns_zone_spf)
+[Zwiększ bezpieczeństwo e-maili za pomocą rekordu SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Konfiguracja rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
-
+[Zwiększ bezpieczeństwo e-maili za pomocą rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Aby wesprzeć Cię w uruchomieniu Twoich rozwiązań OVHcloud, skontaktuj się z naszą [siecią partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

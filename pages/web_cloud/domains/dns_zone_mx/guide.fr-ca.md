@@ -1,6 +1,6 @@
 ---
-title: Ajouter un champ MX à la configuration de son nom de domaine
-excerpt: Apprenez à ajouter un champ MX à votre nom de domaine chez OVHcloud
+title: "Configurer un enregistrement MX pour la gestion des emails"
+excerpt: "Découvrez comment configurer un enregistrement MX sur votre nom de domaine chez OVHcloud"
 updated: 2024-02-29
 ---
 

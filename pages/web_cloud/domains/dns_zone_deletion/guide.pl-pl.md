@@ -1,5 +1,5 @@
 ---
-title: "Jak usunąć strefę DNS?"
+title: "Jak usunąć strefę DNS OVHcloud?"
 excerpt: "Dowiedz się, jak usunąć strefę DNS Twojej domeny z poziomu Panelu klienta OVHcloud"
 updated: 2024-06-26
 ---

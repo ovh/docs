@@ -120,7 +120,7 @@ Wählen Sie den gewünschten Eintrag in den Tabs aus:
 >> **D**omain**K**eys **I**dentified **M**ail <br><br>
 >> Ermöglicht die Überprüfung der Authentizität der Domain des Absenders und die Sicherstellung der Integrität der gesendeten E-Mail. Der DKIM-Eintrag ist ein aus mehreren Zeichen bestehender Schlüssel. Der DKIM-Schlüssel wird von Ihrem E-Mail-Anbieter bereitgestellt (falls diese Funktion angeboten wird). Sie können ihn in einem TXT-Eintrag eingeben.
 >>
->> Weitere Informationen finden Sie in unserer Dokumentation "[DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)".
+>> Weitere Informationen finden Sie in unserer Dokumentation "[E-Mail-Sicherheit durch DKIM-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dkim)".
 >>
 > **DMARC**
 >> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
