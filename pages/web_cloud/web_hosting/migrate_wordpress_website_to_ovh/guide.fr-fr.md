@@ -53,7 +53,7 @@ Si vous n'en avez pas encore, [créez une nouvelle base de données](/pages/web_
 
 ### Étape 3 : mettre à jour les informations de la base de données
 
-Vous devez maintenant lier votre site web WordPress à votre base de données. Ces modifications sont à effectuer dans le fichier de configuration **« wp-config.php »**. Retrouvez l'ensemble des actions à effectuer en suivant les étapes du guide [modifier le mot de passe de la base de données d'un hébergement web](/pages/web_cloud/web_hosting/sql_change_password).
+Vous devez maintenant lier votre site web WordPress à votre base de données. Ces modifications sont à effectuer dans le fichier de configuration **« wp-config.php »**. Retrouvez l'ensemble des actions à effectuer en suivant les étapes du guide « [Modifier le mot de passe de la base de données d'un hébergement web](/pages/web_cloud/web_hosting/sql_change_password) ».
 
 ### Migrer d'autres services associés à votre site web WordPress
 
