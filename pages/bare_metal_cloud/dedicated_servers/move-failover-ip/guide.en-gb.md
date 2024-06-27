@@ -11,7 +11,7 @@ updated: 2022-12-20
 
 > [!primary]
 >
-> We introduced in 2024 Additionnal IPv6 that you can configure with vRack, please follow this guide [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838) in order to configure it.
+> In 2024, we introduced Additional IPv6 that can be configured with vRack network. For more information, please follow this guide [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838).
 >
 
 ## Objective
