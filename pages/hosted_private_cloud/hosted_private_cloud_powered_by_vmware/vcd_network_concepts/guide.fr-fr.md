@@ -78,7 +78,7 @@ Il contient aussi une section `Réseau`{.action} au sein de chaque vDC dans `Cen
 #### Capacités de mise en réseau VCD on OVHcloud
 
 Voici les principales fonctionnalités réseau offertes avec les offres VCD on OVHcloud.
-q
+
 | Features                          | Standard | Advanced | Premium | Comments                                                                                                                                                                                                                        |
 |-----------------------------------|----------|----------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Routage et commutation IPv4.** | ✅        | ✅        | ✅       | - Segments de réseau. <br> - Routage distribué et non distribué. <br> - Réseau routé avec ou sans NAT/BGP/DHCP/DNS/Routes statiques. <br> - Réseau vDC croisé sur le même site. <br> - **Non pris en charge** : OSPF, VRF Lite. |
