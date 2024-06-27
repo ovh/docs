@@ -1,7 +1,7 @@
 ---
 title: Criar e utilizar chaves SSH
 excerpt: Descubra como criar um par de chaves SSH na sua estação de trabalho e como as utilizar para estabelecer uma ligação segura ao seu servidor
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -188,7 +188,7 @@ A chave está pronta quando a barra de progresso está cheia.
 
 ![PuTTy](images/puttygen_03.png){.thumbnail}
 
-Copie a cadeia de chaves completa para a área de transferência para [adicionar ao servidor](#addserverkey) e possivelmente para [importar na Área de Cliente](#importkey). Guarde ambas as chaves como ficheiros clicando nos botões correspondentes e introduza uma frase secreta (*passphrase*) para as proteger.
+Copie a cadeia de chaves completa para a área de transferência para [adicionar ao servidor](#addserverkey). Guarde ambas as chaves como ficheiros clicando nos botões correspondentes e introduza uma frase secreta (*passphrase*) para as proteger.
 
 > [!warning]
 >
@@ -396,54 +396,6 @@ Para configurar outra ligação ao servidor, repita os passos abaixo:
 - [Adicione a chave pública ao servidor](#addserverkey).
 - [Introduza os detalhes do servidor e adicione o ficheiro de chave em `PuTTY`](#puttykeys).
 
-### Importar a chave SSH para a Área de Cliente <a name="importkey"></a>
-
-A Área de Cliente OVHcloud permite-lhe armazenar chaves públicas, se estas tiverem sido criadas com um dos tipos de encriptação suportados. Esta funcionalidade pode poupar tempo quando configurar ou reinstalar um novo servidor, pois não necessita de [adicionar manualmente a chave pública ao servidor](#addserverkey). 
-
-Abra a barra de navegação lateral clicando no seu nome no canto superior direito e utilize o atalho "Produtos e serviços" {.action}.
-
-![Espaço de gestão das chaves SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Em "Meus serviços", aceda ao separador `Chaves SSH`{.action} e clique em `Adicionar uma chave SSH`{.action}.
-
-![Espaço de gestão das chaves SSH](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Selecione "Dedicado" no menu pendente.
-
-Na nova janela, introduza um identificador (um nome à sua escolha) para a chave. Cole a cadeia de chaves (copiada de [seu arquivo `.pub`](#publickey) ou de [a janela `PuTTYgen`](#useputty) no campo `Key`).
-
-![Espaço de gestão das chaves SSH](images/SSH_keys_panel_3.png){.thumbnail}
-
-Se copiou a saída completa, o identificador após a chave já deve ser adicionado. Note que, para armazenar a sua chave, deve especificar o seu identificador local após a chave *colada*. (Veja o exemplo de formato acima). Esta é uma exigência da Área de Cliente OVHcloud. Clique em `Confirmar`{.action} para armazenar a sua chave pública.
-
-> [!primary]
->
-> Todas as chaves registadas na secção "Dedicado" estão disponíveis em pré-instalação num servidor dedicado ou num VPS. No que diz respeito às chaves SSH para os serviços Public Cloud, queira consultar [este manual](/pages/public_cloud/compute/public-cloud-first-steps).
->
-
-### Definir uma chave SSH predefinida (apenas para a secção "Dedicado") <a name="cpsshkey"></a>
-
-Se adicionou várias chaves SSH na sua Área de Cliente OVHcloud, é possível definir uma chave a utilizar como chave predefinida na conta. 
-
-> [!warning]
-> Tenha em conta que, uma vez configurada a chave predefinida, esta também será utilizada como meio de ligação ao reiniciar um servidor em modo rescue. Para receber uma palavra-passe em vez disso, a chave predefinida tem de ser [desativada](#disablesshkey) antes de reiniciar o servidor em modo rescue. Encontre mais informações na secção [Ir mais longe](#gofurther) deste guia.
-> 
-
-Abra a barra de navegação lateral clicando no nome da sua conta no canto superior direito e utilize o atalho `Produtos e serviços`{.action} para aceder à secção `Chaves SSHcloud`{.action}.
-
-![Espaço de gestão das chaves SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Na lista das chaves, clique no ícone `Chave` ao lado da chave SSH à sua escolha para a definir como chave predefinida.
-
-![Espaço de gestão das chaves SSH](images/defaultsshkey.png){.thumbnail}
-
-Depois de fazer isso, uma mensagem confirmando que a chave foi definida por padrão será exibida e o ícone `Chave` será realçado.
-
-![Espaço de gestão das chaves SSH](images/defaultsshkey1.png){.thumbnail}
-
-### Desativar a chave SSH predefinida <a name="disablesshkey"></a>
-
-Para desativar a chave SSH por **default** atual, aceda à secção `Chaves SSH`{.action}, tal como descrito acima. Clique no ícone "Chave azul" junto da chave SSH correspondente para desativar a opção predefinida.
 
 ## Quer saber mais? <a name="gofurther"></a>
 
