@@ -4,6 +4,10 @@ excerpt: "Descubra cómo configurar un registro SPF en un dominio para mejorar l
 updated: 2023-08-04
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
 ## Objetivo
 
 El SPF (Sender Policy Framework) permite al servidor que recibe un mensaje de correo electrónico asegurarse de que este se ha enviado correctamente desde un servidor de confianza. 
