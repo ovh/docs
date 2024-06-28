@@ -1,7 +1,7 @@
 ---
 title: 'Transférer un nom de domaine de GoDaddy vers OVHcloud'
 excerpt: 'Découvrez les démarches spécifiques pour transférer un nom de domaine depuis GoDaddy vers OVHcloud'
-updated: 2024-04-10
+updated: 2024-06-28
 ---
 
 ## Objectif
@@ -58,6 +58,12 @@ Vous devez aussi :
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >
 > Vérifiez également que votre bureau d'enregistrement actuel ne va pas fermer d'autres services comme, par exemple, les adresses e-mails associées à votre nom de domaine.
+>
+> Si, en plus du transfert de votre nom de domaine, vous souhaitez migrer les services qui lui sont associés (site web, e-mail, etc.), consultez d'abord notre guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » avant de poursuivre.
+> Ce guide explique en détails comment migrer l'ensemble de vos services sans coupures.
+>
+> Si vous réalisez uniquement le transfert de votre nom de domaine sans déménager vos autres services, veillez à bien récupérer les serveur DNS actifs pour votre nom de domaine auprès de votre **bureau d'enregistrements** actuel pour les renseigner directement lors de l'étape 3 du guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) »
+> Cela vous évitera d'interrompre l'association entre votre nom de domaine et vos services externes associés.
 >
 
 ### Etape 1 - Déverrouiller le nom de domaine chez GoDaddy
