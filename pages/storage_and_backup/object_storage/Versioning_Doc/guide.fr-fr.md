@@ -9,10 +9,10 @@ updated: 2024-06-26
 **Ce guide explique comment activer et gérer la gestion de versions pour vos buckets de stockage d'objets OVHcloud en utilisant les API.**
 
 ## Prérequis
-- [Un projet Public Cloud dans votre compte OVHcloud](https://www.ovhcloud.com/en-ie/public-cloud/?_gl=1*15ms1jj*_gcl_au*NjU4OTMxNzYxLjE3MTU4NjYwMjYuMzMyNTY2MDM5LjE3MTk1OTA5ODcuMTcxOTU5MDk4Nw..)
-- Accès à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB&_gl=1*6cglkx*_gcl_au*NjU4OTMxNzYxLjE3MTU4NjYwMjYuMzMyNTY2MDM5LjE3MTk1OTA5ODcuMTcxOTU5MDk4Nw..)
-- [Un utilisateur S3 déjà créé](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-identity-access-management?id=kb_article_view&sysparm_article=KB0047351)
-- [AWS CLI installé et configuré](https://help.ovhcloud.com/csm/en-public-cloud-storage-s3-getting-started-object-storage?id=kb_article_view&sysparm_article=KB0047348)
+- [Un projet Public Cloud dans votre compte OVHcloud](https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-identity-access-management?id=kb_article_view&sysparm_article=KB0047375)
+- Accès à [l'espace client OVHcloud](https://www.ovh.com/manager/#/hub)
+- [Un utilisateur S3 déjà créé](https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-identity-access-management?id=kb_article_view&sysparm_article=KB0047375)
+- [AWS CLI installé et configuré](https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-getting-started-object-storage?id=kb_article_view&sysparm_article=KB0047354)
 
 
 ## Pratique
