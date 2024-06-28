@@ -156,7 +156,7 @@ You can  import and export your data  following recommendations provided by edit
 ### 9.1 Erasure of customer data
 
 Once you destroy your Public Cloud project (your Database project) in the OVHcloud Control Panel, all allocated resources are relased automtically, including used encryption keys.<br>
-As the encryption keys are unique for each project, they will be deleted after service decommmissioning. Data can not be retrieved after.
+As the encryption keys are unique for each project, they will be deleted after service decommissioning. Data can not be retrieved after.
 
 ## Go further
 

@@ -169,7 +169,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >> 5. Na stronie, która się wyświetli kliknij zakładkę `Strefa DNS`{.action}.
 >> 6. Po prawej stronie lub poniżej tabeli kliknij `Zresetuj strefę DNS`{.action}, następnie postępuj zgodnie z 2 kolejnymi instrukcjami, które się wyświetlą.
 >>
->> [dnszone](images/reset-my-dns-zone.png){.thumbnail}
+>> ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 >>
 >> **Etap 1**
 >>
