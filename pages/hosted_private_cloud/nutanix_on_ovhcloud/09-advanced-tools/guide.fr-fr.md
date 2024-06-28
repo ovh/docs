@@ -39,7 +39,7 @@ Ce guide vous présente l'ensemble des outils d'administration, autres que les i
 
 ### Outil acli
 
-La commmande acli est uniquement disponible sur les **CVM**. Elle est utilisée pour la gestion des hôtes des machines virtuelles, des réseaux et des snapshots. 
+La commande acli est uniquement disponible sur les **CVM**. Elle est utilisée pour la gestion des hôtes des machines virtuelles, des réseaux et des snapshots. 
 
 ### Extensions **Powershell** 
 
