@@ -65,7 +65,7 @@ The examples below presume you are logged in as a user with elevated permissions
 
 #### Using Linux
 
-Establish an [SSH connection to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance), then use the command below to list the attached disks.
+Establish an [SSH connection to your instance](#connect-to-instance), then use the command below to list the attached disks.
 
 ```bash
 lsblk

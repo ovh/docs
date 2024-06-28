@@ -1,7 +1,7 @@
 ---
 title: 'Deploying a GPU instance'
 excerpt: 'Find out how to deploy a GPU instance on Linux or Windows'
-updated: 2019-12-06
+updated: 2024-06-27
 ---
 
 ## Objective
@@ -12,14 +12,14 @@ The GPUs offered are the NVIDIA Tesla V100.
 
 > [!warning]
 >
-> At the moment, GPU instances are only available in the GRA3, GRA5, GRA7 and BHS3 datacentres. You may have to create a new project and choose the new 2017 range.
+> At the moment, most of our old GPU instances are only available in the GRA7, GRA9, GRA11, and BHS5 regions. The newer models are only available in the GRA11 region for now.
 >  
 
 **This guide explains how to deploy a GPU instance on Linux or Windows**
 
 ## Requirements
 
-- A Public Cloud project with access to the regions where GPUs are available (GRA3, GRA5 and BHS3)
+- A Public Cloud project with access to the regions where most GPUs are available (GRA7, GRA9, GRA11 and BHS5)
 
 ## Instructions
 
@@ -34,9 +34,9 @@ All the images we offer can be used on a GPU instance.
 > If you don’t feel comfortable with manually compiling a kernel module, we recommend using a distribution that is officially supported by Nvidia and for which they provide *turnkey* drivers: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Once you are logged in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, in your Public Cloud project, click on `Add server`{.action}and choose a GPU instance:
+Once you are logged in to the [OVHcloud Control Panel](/links/manager), in your Public Cloud project, click on `Add server`{.action}and choose a GPU instance:
 
-![public-cloud](images/EN-Flavors_2020.png){.thumbnail}
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
 The instance will start a few seconds later. You can then log in and check for the graphics card: 
 
@@ -91,11 +91,17 @@ The GPU instance is now fully functional and usable.
 
 ### On Windows
 
+
 There are incompatibilities between the NVIDIA driver and the *KVM/pci_passthrough* virtualisation solution. **Windows standard images do not work.**
 
 We offer special images, based on a virtual UEFI BIOS, which allow the driver to function correctly:
 
-![public-cloud](images/EN-WindowsImages_2020.png){.thumbnail}
+> [!warning]
+>
+> We only offer the possiblity to install the special images on a few selected models (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). Additionally, depending on the region selected, this option may not be available in the drop down menu.
+>
+
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
 > [!warning]
 >
