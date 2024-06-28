@@ -1,7 +1,7 @@
 ---
 title: 'Enregistrer une ligne SIP OVHcloud sur Zoiper'
 excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur le softphone Zoiper'
-updated: 2024-06-29
+updated: 2024-06-28
 ---
 
 <style>
