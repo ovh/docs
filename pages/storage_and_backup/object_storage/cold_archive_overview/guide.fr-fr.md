@@ -91,7 +91,7 @@ Vous pouvez suivre les différentes étapes de vos données par le statut de vot
 
 ## Performances réseau, téléchargement et récupération
 
-Cold Archive est un service basé sur Object Storage - API S3. Les performances et les limitations (nombre de buckets, compte, bande passante maximale par connexion, nombre de requêtes par seconde sur le bucket, taille maximale par objet / mpu / part, etc.) sont disponibles [ici](https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-optimizing-performance?id=kb_article_view&sysparm_article=KB0062314).
+Cold Archive est un service basé sur Object Storage - API S3. Les performances et les limitations (nombre de buckets, compte, bande passante maximale par connexion, nombre de requêtes par seconde sur le bucket, taille maximale par objet / mpu / part, etc.) sont disponibles [ici](/pages/storage_and_backup/object_storage/s3_limitations).
 
 Pour télécharger vos données, la bande passante maximale est de **1 Gbps par connexion logique** et le nombre de connexions utilisables en parallèle est **illimité**.
 
@@ -150,7 +150,7 @@ Il est possible de commencer à archiver un bucket avec moins de 1 To de donnée
 
 ## Aller plus loin
 
-Exploitez votre cycle de vie et apprenez à créer des buckets, archiver, récupérer des données, répertorier les métadonnées, en lisant [ce guide](https://help.ovhcloud.com/csm/en-public-cloud-storage-cold-archive-getting-started?id=kb_article_view&sysparm_article=KB0047338).
+Exploitez votre cycle de vie et apprenez à créer des buckets, archiver, récupérer des données, répertorier les métadonnées, en lisant [ce guide](/pages/storage_and_backup/object_storage/cold_archive_getting_started).
 
 [Toute la documentation Object Storage](/products/storage-object-storage).
 
