@@ -1,5 +1,5 @@
 ---
-title: 'VMware on OVHcloud maintenance operations' 
+title: 'VMware on OVHcloud maintenance operations (EN)' 
 excerpt: 'Find out more about the operations carried out to ensure the reliability and performance of your Hosted Private Cloud VMware on OVHcloud equipment' 
 updated: 2024-06-28
 ---
@@ -29,7 +29,7 @@ details[open]>summary::before {
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager).
-- You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) infrastructure.
+- You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) infrastructure.
 - You have access to the [OVHcloud Control Panel](/links/manager) or the [API console for your services](https://eu.api.ovh.com/).
 
 ## Instructions

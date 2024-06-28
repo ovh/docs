@@ -30,7 +30,7 @@ details[open]>summary::before {
 ## Prérequis
 
 - Être connecté à [l'espace client OVHcloud](/links/manager)
-- Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+- Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/).
 
 ## En pratique
 
