@@ -100,7 +100,7 @@ o find out the cluster and filer of your hosting, log in to your [OVHcloud Contr
 
 Then click on the `Multisite`{.action} tab to retrieve the cluster number where your shared hosting is located.
 
-![Recover cluster](images/find-cluster.png){.thumbnail}
+![Recover cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >

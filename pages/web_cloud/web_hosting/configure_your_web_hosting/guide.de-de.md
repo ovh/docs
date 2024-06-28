@@ -359,7 +359,7 @@ Lesen Sie bei Bedarf unsere Anleitung „[Multisites auf Ihrem Webhosting konfig
 > **Es ist nicht möglich, eine zweite [Laufzeitumgebung](#runtime-environment), einen zweiten [Entwicklungsmodus](#runtime-mod) und/oder eine zweite [PHP-Engine](#php-runtime)** auf demselben Webhosting einzurichten. Es werden nur die Werte berücksichtigt, die in der Datei “.ovhconfig“ im Wurzelverzeichnis Ihres [FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_connection) angegeben sind.
 >
 
-![ovhconfig](images/root-folders.png){.thumbnail}
+![ovhconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ## Weiterführende Informationen
 

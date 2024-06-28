@@ -34,7 +34,7 @@ Depending on which [SSL certificate](/links/web/hosting-options-ssl){.external} 
 
 The table displayed will contain all of the domain names that have been added to your web hosting plan. In the "SSL" column, you will see the activation status for secure SSL connections on your multisites. 
 
-![managessl](images/ssls.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
 There are three status types that may appear:
 
@@ -55,7 +55,7 @@ To activate SSL on a multisite, click on `...`{.action} icon to the right of the
 > Some **External** SSL certificates may be valid for several domain names at once. If you use one of them, the *Enabled* comment will not appear for all of your domain names declared in the “multisite” table. However, your SSL certificate will still be valid for the domain names it *includes*.
 >
 
-![managessl](images/modify-domain.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Once you have submitted the activation request, the SSL secure connection status for the multisite concerned should refresh in a few seconds, with the status changed to "To generate". Repeat this action as necessary if you would like to activate SSL for other multisites. 
 

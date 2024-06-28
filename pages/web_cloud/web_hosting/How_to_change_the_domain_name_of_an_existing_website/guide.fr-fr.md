@@ -68,7 +68,7 @@ Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
 Si l'ensemble des actions ont été correctement réalisées, les déclarations en multisites de vos domaines doivent être strictement identiques **sauf si vous utilisez un certificat SSL payant de type *Sectigo DV*, *Sectigo EV* ou *custom***.
 
-![multisites](images/all-domain-same-config-enable.png){.thumbnail}
+![multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >

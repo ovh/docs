@@ -53,7 +53,7 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 
 W [Panelu klienta OVHcloud](/links/manager) kliknij pozycję `Web Cloud`{.action}, a następnie wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę `Katalog główny` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
 
-![root-folders](images/root-folders.png){.thumbnail}
+![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 Następnie kliknij kartę `FTP-SSH`{.action}, a następnie przejdź do przestrzeni zawierającej pliki i foldery Twojej strony (*przestrzeń FTP*) klikając przycisk `FTP Explorer`{.action}.
 

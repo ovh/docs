@@ -72,7 +72,7 @@ Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
 Wenn alle Aktionen korrekt durchgeführt wurden, sind die Multisite-Einträge Ihrer Domains identisch, **außer Sie verwenden ein kostenpflichtiges SSL-Zertifikat vom Typ *Sectigo DV*, *Sectigo EV* oder *Custom***.
 
-![Multisites](images/all-domain-same-config-enable.png){.thumbnail}
+![Multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >

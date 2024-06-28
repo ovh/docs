@@ -90,7 +90,7 @@ Il se peut que vous trouviez sur votre espace de stockage un fichier s'intitulan
 >
 > Un fichier « index.php » prendra toujours le dessus sur un fichier « index.html ». Par conséquent, lorsque les deux sont présent, seul « index.php » sera appelé.
 
-![siteinstallation](images/root-folders.png){.thumbnail}
+![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Étape 3 : lier le site internet à une base de données
 

@@ -52,7 +52,7 @@ Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Schritte
 
 Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action} und schließlich auf das betreffende Hosting. Öffnen Sie den Tab `Multisite`{.action}. Identifizieren Sie den Namen des `Wurzelverzeichnisses` Ihrer Website (das Verzeichnis, in dem sich ihre Dateien und Ordner befinden).
 
-![root-folders](images/root-folders.png){.thumbnail}
+![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 Klicken Sie anschließend auf den Tab `FTP-SSH`{.action} und greifen Sie auf den Speicherplatz mit den Dateien und Ordnern Ihrer Seite (*FTP-Bereich*) zu, indem Sie auf den `FTP-Explorer`{.action} klicken.
 

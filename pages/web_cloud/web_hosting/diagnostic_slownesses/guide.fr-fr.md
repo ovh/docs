@@ -99,7 +99,7 @@ Pour connaître le cluster et le filer où se trouve votre hébergement mutualis
 
 Cliquez ensuite sur l'onglet `Multisites`{.action} pour récupérer le numéro du cluster où se trouve votre hébergement mutualisé.
 
-![Récupérer cluster](images/find-cluster.png){.thumbnail}
+![Récupérer cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >

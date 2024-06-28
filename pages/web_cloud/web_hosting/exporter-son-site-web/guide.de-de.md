@@ -50,7 +50,7 @@ Nachdem Sie sich in Ihren Speicherplatz eingeloggt haben, können Sie die Dateie
 
 Gehen Sie in Ihrem OVHcloud-Kundencenter auf den Tab `Multisite`{.action}, um herauszufinden, in welchem Ordner Ihre Webseite gespeichert ist. In der angezeigten Tabelle wird das Wurzelverzeichnis für die gewünschte Domain angegeben.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Schritt 2: Backup Ihrer Datenbank abrufen (optional)
 

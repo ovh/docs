@@ -94,7 +94,7 @@ Es posible que en el espacio de almacenamiento ya haya un archivo denominado ind
 >
 > Un archivo "index.php" siempre estará por encima de un archivo "index.html". Por lo tanto, cuando ambos están presentes, sólo se llamará "index.php".
 
-![Instalación de un sitio web](images/root-folders.png){.thumbnail}
+![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 3. Conectar el sitio web a una base de datos
 

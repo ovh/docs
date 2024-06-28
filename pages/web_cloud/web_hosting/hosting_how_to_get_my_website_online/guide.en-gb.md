@@ -83,7 +83,7 @@ You may find a file called “index.html” in your storage space. This file may
 >
 > An "index.php" file will always take over an "index.html" file. Therefore, when both are present, only "index.php" will be called.
 
-![websitesetup](images/root-folders.png){.thumbnail}
+![websitesetup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Step 3: Connect your website to a database
 

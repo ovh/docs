@@ -96,7 +96,7 @@ Per conoscere la cartella in cui pubblicare il sito, accedi alla scheda `Multisi
 >
 > Un file "index.php" sostituirà sempre il file "index.html". Pertanto, quando entrambi sono presenti, sarà chiamato solo "index.php".
 
-![Installazione sito](images/root-folders.png){.thumbnail}
+![Installazione sito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Step 3: associa il sito Web a un database
 

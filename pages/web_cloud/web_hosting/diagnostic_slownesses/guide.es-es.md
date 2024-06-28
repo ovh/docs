@@ -104,7 +104,7 @@ Para conocer el cluster y el filer en el que se encuentra su alojamiento compart
 
 A continuación, abra la pestaña `Multisitios`{.action} para obtener el número del cluster en el que se encuentra el alojamiento compartido.
 
-![Obtener cluster](images/find-cluster.png){.thumbnail}
+![Obtener cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >

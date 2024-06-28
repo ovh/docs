@@ -50,7 +50,7 @@ Una vez que se haya conectado al espacio de almacenamiento, solo tiene que desca
 
 Para consultar la carpeta en la que está almacenado el sitio web, abra la pestaña `Multisitio`{.action} del área de cliente de OVHcloud. Aparecerá una tabla en la que podrá consultar la `Carpeta raíz`{.action} del dominio correspondiente.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 2. recuperar la copia de seguridad de la base de datos (opcional)
 

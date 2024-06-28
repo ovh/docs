@@ -46,13 +46,13 @@ The table displayed will list all of the domain names and subdomains added to yo
 > If you are migrating your website and would like to avoid any service interruptions, follow [Step 3: Put your website online](#site-online).
 >
 
-![multisite](images/tab.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
 
 ### Step 2: Add a domain or subdomain <a name="add-domain"></a>
 
 To add a new domain or subdomain to your Web Hosting plan, click on `Actions`{.action} on the left of your screen then `Add a domain or sub-domain`{.action}, then select your domain in the window that appears.
 
-![actions](images/actions-menu.png){.thumbnail}
+![actions](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/actions-menu.png){.thumbnail}
 
 - **Adding an OVHcloud-registered domain**:
 
@@ -74,7 +74,7 @@ You will now need to customise the way you add your domain or subdomain. Some of
 > [!primary]
 > To add a subdomain, you must first select the primary domain from the list (example: domain.tld). In the next step, you can enter the subdomain (e.g. **blog**.domain.tld).
 
-![multisite](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Information|Description|
 |---|---|
@@ -93,7 +93,7 @@ You will now need to customise the way you add your domain or subdomain. Some of
 
 Once you have entered this information, click `Next`{.action}. Then check the summary that appears.
 
-![multisite](images/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
 
 Once you have selected an OVHcloud-registered domain, you can automatically or manually modify its DNS configuration.
 
@@ -120,7 +120,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 > |---|---|---|
 > |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.domain.tld) in the DNS zone authoritative for the domain name to be added.<br></br> It is important to note that if you want to add `blog.domain.tld` you have to create the record for the subdomain `ovhcontrol.domain.tld` and not `ovhcontrol.blog.domain.tld` <br></br>To find the right zone, find the [DNS servers](/pages/web_cloud/domains/dns_server_edit) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
 >
-> ![multisite](images/find-token.png){.thumbnail}
+> ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
 >
 > |Field|Where to find this information|Action to take|
 > |---|---|---|
@@ -139,11 +139,11 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 
 Once you have entered this information, click `Next`{.action}. Then check the summary that appears.
 
-![multisite](images/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 
 Attempting to attach a non-OVHcloud domain name requires additional validation. This allows us to ensure that the attachment of the external domain is legitimate. You will receive a message prompting you to modify the domain name's DNS configuration.
 
-![multisite](images/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 
 Check the information displayed, then click `Confirm`{.action}. Once you have done this, the domain name is added temporarily, until you have modified its DNS configuration.
 

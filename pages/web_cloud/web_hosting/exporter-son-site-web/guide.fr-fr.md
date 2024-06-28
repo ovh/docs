@@ -46,7 +46,7 @@ Une fois connecté à votre espace de stockage, il ne vous reste plus qu’à t�
 
 Pour vérifier le dossier dans lequel votre site internet est stocké, positionnez-vous sur l'onglet `Multisite`{.action} depuis votre espace client OVHcloud. Dans le tableau qui s'affiche, pour le domaine souhaité, regardez le `Dossier racine`{.action} qui s'affiche.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Étape 2 : récupérer la sauvegarde de votre base de données (facultative)
 

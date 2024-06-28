@@ -53,7 +53,7 @@ La modifica della password del database del tuo sito avviene in quattro step:
 
 Nello [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action} e su `Hosting`{.action} e infine sull'hosting interessato. Clicca sulla scheda `Multisito`{.action}. Identifica il nome della `Cartella di root` del tuo sito (la directory in cui si trovano file e cartelle).
 
-![root-folders](images/root-folders.png){.thumbnail}
+![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 Clicca sulla scheda `FTP-SSH`{.action} e poi clicca sul pulsante `FTP Explorer`{.action} per accedere allo spazio contenente i file e le cartelle del tuo sito (*spazio FTP*).
 

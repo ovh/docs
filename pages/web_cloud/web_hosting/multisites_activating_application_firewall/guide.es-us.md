@@ -45,17 +45,17 @@ En la nueva ventana, asegúrese de que la **aplicación firewall** esté activad
 
 Abra la pestaña `Multisitio`{.action} de su plan de hosting. Haga clic en el botón `...`{.action} a la derecha del dominio correspondiente y seleccione la opción `Cambiar el dominio`{.action}.
 
-![managemultisite](images/modify-a-domain.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
 
 En la ventana de configuración, marque la casilla `Activar firewall`{.action}. También puede incluir el subdominio `www` en esta configuración marcando la casilla situada en la parte superior.
 
 Haga clic en `Siguiente`{.action} y, a continuación, en `Confirmar`{.action} para cambiar la configuración multisitio.
 
-![modifydomain](images/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+![modifydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 
 ### Comprobar el estado de la tarea de activación
 
-![gestión en curso](images/firewall-planned.png){.thumbnail}
+![gestión en curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
 
 Las tareas de actualización de su configuración multisitio se mostrarán en la pestaña `Operaciones en curso`{.action} (el estado inicial es "Planificado"). El cortafuegos estará activo desde que su tarea de actualización deje de aparecer en la lista.
 
@@ -63,7 +63,7 @@ Las tareas de actualización de su configuración multisitio se mostrarán en la
 
 En la pestaña `Multisitio`{.action} de su plan de hosting podrá consultar los dominios en los que esté activada la opción de firewall.
 
-![gerageenabled](images/firewall-enabled.png){.thumbnail}
+![gerageenabled](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
 
 La tabla mostrada contiene todos los dominios añadidos al plan de hosting. En la columna "Cortafuegos", se muestra el estado de activación de cada dominio.
 

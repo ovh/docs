@@ -354,7 +354,7 @@ Refer to our guide on [Configuring a multisite on your web hosting plan](/pages/
 > **You cannot specify a second [runtime environment](#runtime-environment), a second [runtime mode](#runtime-mod) and/or a second [PHP runtime environment](#php-runtime)** on the same web hosting plan. Only those entered in the .ovhconfig file located in the **root folder** of your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) will be taken into account.
 >
 
-![ovhconfig](images/root-folders.png){.thumbnail}
+![ovhconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ## Go further
 

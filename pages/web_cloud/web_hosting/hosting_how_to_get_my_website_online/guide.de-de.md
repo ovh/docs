@@ -90,7 +90,7 @@ Gehen Sie in Ihrem OVHcloud Kundencenter auf den Tab `Multisite`{.action}, um zu
 
 Es kann sein, dass Sie auf Ihrem Speicherplatz eine Datei mit dem Namen „index.html“ finden. Diese wurde gegebenenfalls bei der Installation Ihres Hostings von OVHcloud erstellt, um für Ihre Domain zunächst eine Standardseite anzuzeigen. Vergessen Sie bitte nicht, diese Datei zu löschen, wenn Sie Ihre Dateien online stellen.
 
-![website installation](images/root-folders.png){.thumbnail}
+![website installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Schritt 3: Website mit einer Datenbank verbinden
 

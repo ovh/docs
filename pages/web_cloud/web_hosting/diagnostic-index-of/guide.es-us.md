@@ -52,11 +52,11 @@ Para apresentar o seu website, deverá ligar o seu domínio ao `Carpeta raíz` q
 
 Ha importado los archivos de su sitio **mydomain.ovh** a la carpeta `www` de su alojamiento por [FTP](/pages/web_cloud/web_hosting/ftp_connection). Su dominio no está asociado a esta carpeta en la columna `Carpeta raíz` de su `Multisitio`{.action}.
 
-![index_of_multisite](images/root-folders-empty.png){.thumbnail}
+![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
 Modifique la `Carpeta raíz` haciendo clic en el botón `...`{.action} a la derecha de la tabla y luego en `Modificar el dominio`{.action} :
 
-![modify_domain](images/modify-domain.png){.thumbnail}
+![modify_domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
 
 En la nueva ventana:
 
@@ -64,7 +64,7 @@ En la nueva ventana:
 * Indique el directorio que contiene el archivo **index.php** o **index.html** del sitio web como `Carpeta raíz` (2).
 * Haga clic en `Siguiente` (3).
 
-![change_root_folder](images/change-root-folder-step-1.png){.thumbnail}
+![change_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png){.thumbnail}
 
 > [!primary]
 >
@@ -73,11 +73,11 @@ En la nueva ventana:
 
 En la siguiente ventana, haga clic en `Aceptar`{.action}.
 
-![modify_root_folder_confirm](images/change-root-folder-step-2.png){.thumbnail}
+![modify_root_folder_confirm](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png){.thumbnail}
 
 En unos minutos (refrescando el navegador), obtendrá el siguiente resultado:
 
-![multisite_modified](images/root-folders-full-www.png){.thumbnail}
+![multisite_modified](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png){.thumbnail}
 
 Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie el dispositivo y vacie la caché del navegador si fuera necesario.
 

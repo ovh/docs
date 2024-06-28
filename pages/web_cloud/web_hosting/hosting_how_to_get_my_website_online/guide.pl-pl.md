@@ -97,7 +97,7 @@ Istnieje możliwość, że na Twojej przestrzeni dyskowej znajdziesz plik zatytu
 >
 > Plik "index.php" zawsze przejdzie przez plik "index.html". W związku z tym, gdy oba są obecne, wywoływany jest tylko "index.php".
 
-![instalacja strony www](images/root-folders.png){.thumbnail}
+![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Etap 3: 
 
