@@ -1,7 +1,7 @@
 ---
 title: 'Transférer son nom de domaine vers OVHcloud'
 excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine vers OVHcloud"
-updated: 2024-01-22
+updated: 2024-06-28
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mbyfj1JyK7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -27,7 +27,7 @@ En transférant votre nom de domaine, vous changerez de **bureau d'enregistremen
 > Si, en plus du transfert de votre nom de domaine, vous souhaitez migrer les services qui lui sont associés (site web, e-mail, etc.), consultez d'abord notre guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » avant de poursuivre.
 > Ce guide explique en détails comment migrer l'ensemble de vos services sans coupures.
 >
-> Si vous réalisez uniquement le transfert de votre nom de domaine sans déménager vos autres services, veillez à bien récupérer les serveur DNS actifs pour votre nom de domaine auprès de votre *bureau d'enregistrements* actuel pour les renseigner directement lors de l'étape 3 du présent guide.
+> Si vous réalisez uniquement le transfert de votre nom de domaine sans déménager vos autres services, veillez à bien récupérer les serveur DNS actifs pour votre nom de domaine auprès de votre **bureau d'enregistrements** actuel pour les renseigner directement lors de l'étape 3 du présent guide.
 > Cela vous évitera d'interrompre l'association entre votre nom de domaine et vos services externes associés.
 >
 
