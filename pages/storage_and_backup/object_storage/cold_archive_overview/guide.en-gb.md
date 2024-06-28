@@ -45,17 +45,17 @@ The service allows you to focus on building and deploying cloud applications whi
 
 The service is fully managed by OVHcloud and accessible through the S3 API.
 
-![Archive](images/restoring.PNG)
+![Archive](images/restoring.PNG){.thumbnail}
 
-**5 steps operation**
+**5 steps operation:**
 
 1. **Store (Active):** Your data is newly stored in a bucket within the Object Storage Bucket.
 2. **Archive (Archiving):**
-   - **Archiving:** Your data is currently being archived to tapes.
-   - **Archived:** Your data is now archived in tapes, stored in the Tape Archive (long-term archive) across dedicated data centers.
+    - **Archiving:** Your data is currently being archived to tapes.
+    - **Archived:** Your data is now archived in tapes, stored in the Tape Archive (long-term archive) across dedicated data centers.
 3. **Retrieve (48h) or Restore:**
-   - **Restoring:** Your data is being copied to a bucket.
-   - **Restored:** Your data is available in a bucket, read-only (immutable), within the Object Storage Bucket.
+    - **Restoring:** Your data is being copied to a bucket.
+    - **Restored:** Your data is available in a bucket, read-only (immutable), within the Object Storage Bucket.
 4. **Move / Suppress (Flushed):** The Object Storage Bucket is now empty.
 5. **Deleting (Optional):** Your data is being deleted from the tapes.
 
@@ -160,6 +160,6 @@ Operate your lifecycle and learn how to create buckets, archive, retrieve data, 
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback, and interact directly with the team that builds our Storage and Backup services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assistance on your specific use case or project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assistance on your specific use case or project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

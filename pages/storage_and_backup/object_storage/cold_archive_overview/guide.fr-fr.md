@@ -45,17 +45,17 @@ Le service vous permet de vous concentrer sur la création et le déploiement d'
 
 Le service est entièrement géré par OVHcloud et accessible via l'API S3.
 
-![Archive](images/restoring.PNG)
+![Archive](images/restoring.PNG){.thumbnail}
 
 **Opération en 5 étapes**
 
 1. **Stockage (Actif) :** Vos données sont nouvellement stockées dans un bucket au sein de l'Object Storage Bucket.
 2. **Archivage (En cours d'archivage) :**
-   - **Archivage :** Vos données sont en cours d'archivage sur des bandes.
-   - **Archivé :** Vos données sont maintenant archivées sur des bandes, stockées dans l'Archive sur bande (archive à long terme) à travers des centres de données dédiés.
+    - **Archivage :** Vos données sont en cours d'archivage sur des bandes.
+    - **Archivé :** Vos données sont maintenant archivées sur des bandes, stockées dans l'Archive sur bande (archive à long terme) à travers des datacentres dédiés.
 3. **Récupération (48h) ou Restauration :**
-   - **Restauration :** Vos données sont en cours de copie vers un bucket.
-   - **Restauré :** Vos données sont disponibles dans un bucket, en lecture seule (immuable), au sein de l'Object Storage Bucket.
+    - **Restauration :** Vos données sont en cours de copie vers un bucket.
+    - **Restauré :** Vos données sont disponibles dans un bucket, en lecture seule (immuable), au sein de l'Object Storage Bucket.
 4. **Déplacement / Suppression (Vidange) :** Le bucket de l'Object Storage est maintenant vide.
 5. **Suppression (Optionnelle) :** Vos données sont en cours de suppression des bandes.
 
@@ -156,6 +156,6 @@ Exploitez votre cycle de vie et apprenez à créer des buckets, archiver, récup
 
 Rendez-vous sur notre chaîne Discord dédiée : <https://discord.gg/ovhcloud>. Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/en-gb/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
