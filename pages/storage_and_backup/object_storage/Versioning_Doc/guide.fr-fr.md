@@ -96,12 +96,11 @@ aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration St
 
 After enabling versioning, all objects added to the bucket will have a unique version ID. This means that every time an object is modified or deleted, a new version is created, which can be restored if needed.
 
-### How to Suspend Versioning
+### Comment suspendre la gestion des versions
 
-#### Using the AWS CLI
+#### Utilisation de l'AWS CLI
 
-To suspend versioning, set the versioning configuration status to `Suspended`:
-
+Pour suspendre la gestion des versions, définissez l'état de la configuration de la gestion des versions sur `Suspended` :
 
 ```sh
 aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
@@ -124,4 +123,4 @@ La suspension du versioning empêche les nouveaux objets de recevoir un identifi
 
 ## Aller plus loin
 
-Rejoignez notre communauté d'utilisateurs sur  <https://community.ovh.com/en/>.
+Rejoignez notre communauté d'utilisateurs sur  <https://community.ovh.com>.
