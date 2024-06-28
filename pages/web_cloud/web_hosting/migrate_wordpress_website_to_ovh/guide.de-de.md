@@ -1,7 +1,7 @@
 ---
 title: "Migration Ihrer WordPress-Website zu OVHcloud"
 excerpt: "Erfahren Sie, wie Sie Ihre WordPress-Website und zugehörige Dienste zu OVHcloud migrieren"
-updated: 2024-06-27
+updated: 2024-06-28
 ---
 
 > [!primary]
