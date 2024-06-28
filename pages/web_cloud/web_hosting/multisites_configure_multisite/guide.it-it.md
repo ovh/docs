@@ -129,7 +129,7 @@ Ora che il dominio è stato aggiunto, passa allo [Step 3: mettere online](#site-
 > |---|---|---|
 > |A e AAAA|Nella scheda `Informazioni generali`{.action}, in corrispondenza di **IPv4** e **IPv6**.|Questi due record permettono che il dominio mostri il sito Internet ospitato nel tuo hosting Web.  Associa il tuo dominio o sottodominio all'indirizzo IP del tuo hosting.|
 >
-> ![multisito](images/find-ipv4-and-ipv6.png){.thumbnail}
+> ![multisito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
  Una volta selezionato il dominio che vuoi associare all’hosting, è necessario personalizzarne i parametri. Tieni presente che alcune delle opzioni incluse nel tuo piano di [hosting Web](/links/web/hosting){.external} non potranno essere attivate durante questo processo: sarà prima necessario aggiungere il dominio e modificare i parametri del multisito.

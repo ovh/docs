@@ -37,7 +37,7 @@ Ligue-se à sua [Área de Cliente OVHcloud](/links/manager){.external} e selecio
 
 Clique no separador `Informações gerais`{.action}. A `versão global de PHP` é apresentada na zona **Configuração**. Clique no botão `...`{.action} e selecione `Alterar configuração`{.action}. Na nova janela, selecione o elemento `Alterar configuração atual`{.action} e clique no botão `Seguinte`{.action}.
 
-![managephpconfig](images/application-firewall-step-2.png){.thumbnail}
+![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 
 Na nova janela, certifique-se de que a **Aplicação Firewall** está definida em `Ativado`{.action}. Para confirmar a configuração, clique no botão `Confirmar`{.action}.
 

@@ -125,7 +125,7 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 > |---|---|---|
 > |A et AAAA|Onglet `Informations générales`{.action} puis à côté de **IPv4** et **IPv6**|Permet à votre domaine d'afficher le site Internet que vous mettrez en ligne sur votre hébergement web. Associez votre nom de domaine ou sous-domaine à l'adresse IP de votre hébergement.|
 >
-> ![multisite](images/find-ipv4-and-ipv6.png){.thumbnail}
+> ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
  Vous devez à présent personnaliser l’ajout du domaine. À noter que certaines options comprises dans votre offre d'[hébergement web](/links/web/hosting){.external} ne peuvent pas être activées pendant ce processus. Vous devrez finaliser la manipulation avant de pouvoir les utiliser, en modifiant les paramètres du multisite lorsqu’il sera ajouté.

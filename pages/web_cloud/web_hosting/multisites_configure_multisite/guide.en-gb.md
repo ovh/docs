@@ -126,7 +126,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 > |---|---|---|
 > |A and AAAA|`General information`{.action} tab, under **IPv4** and **IPv6**|Makes your domain display the website you will put online using your Web Hosting plan. Attach your domain or subdomain to the IP address of your Web Hosting plan.|
 >
-> ![multisite](images/find-ipv4-and-ipv6.png){.thumbnail}
+> ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
  You will now need to customise the way you add your domain. Please note that some of the options included in your [Web Hosting plan](/links/web/hosting){.external} cannot be enabled during this process. You will need to finalise this operation in order to use them, by modifying the multisite settings once the domain is attached.

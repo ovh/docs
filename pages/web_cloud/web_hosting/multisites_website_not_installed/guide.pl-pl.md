@@ -69,7 +69,7 @@ Aby odnaleźć adres IP hostingu, zaloguj się do [Panelu klienta OVHcloud](/lin
 
 Adres `IPv4` znajdziesz w ramce `Informacje ogólne`{.action}.
 
-![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
+![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 
 Adres IP powiązany z Twoim hostingiem znajdziesz również w naszym przewodniku "[Lista adresów IP powiązanych z hostingiem WWW OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 

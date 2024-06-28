@@ -131,7 +131,7 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 > |---|---|---|
 > |A und AAAA|Tab `Allgemeine Informationen`{.action}, neben **IPv4** und **IPv6**|Dank diesen beiden Einträgen kann Ihre Domain die Website anzeigen, die Sie auf Ihrem Webhosting online stellen. Weisen Sie Ihre Domain oder Subdomain der IP-Adresse Ihres Hostings zu.|
 >
-> ![Multisite](images/find-ipv4-and-ipv6.png){.thumbnail}
+> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
  Passen Sie nun die Optionen zum Hinzufügen der Domain an. Einige Optionen Ihres [Webhostings](/links/web/hosting){.external} können nicht direkt beim Hinzufügen der Domain aktiviert werden. Sie können die Optionen erst im Anschluss verwenden, indem Sie die Multisite-Einstellungen ändern, nachdem die Domain hinzugefügt wurde.
