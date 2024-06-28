@@ -157,7 +157,7 @@ In questo caso, [accedi in FTP](/pages/web_cloud/web_hosting/ftp_connection) al 
 
 > [!primary]
 >
-> Per informazioni sulla cancellazione dei dati al fine di ridurre la quantità di dati sull’hosting Web, contatta la nostra [Community di utenti](/links/commmunity) o i [partner OVHcloud](/links/partner).<br>
+> Per informazioni sulla cancellazione dei dati al fine di ridurre la quantità di dati sull’hosting Web, contatta la nostra [Community di utenti](/links/community) o i [partner OVHcloud](/links/partner).<br>
 > Il supporto OVHcloud non è autorizzato a fornirti assistenza.
 >
 
