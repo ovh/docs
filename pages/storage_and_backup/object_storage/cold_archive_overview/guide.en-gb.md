@@ -41,7 +41,7 @@ The service allows you to focus on building and deploying cloud applications whi
 
 **This guide explains the concepts of the Cold Archive class of storage.**
 
-## Concepts
+### Concepts
 
 The service is fully managed by OVHcloud and accessible through the S3 API.
 
@@ -61,7 +61,7 @@ The service is fully managed by OVHcloud and accessible through the S3 API.
 
 ![Cold Archive concept](images/5_Steps.png){.w-100}
 
-## Uploading the data
+### Uploading the data
 
 Create an archive at a bucket level.
 
@@ -73,7 +73,7 @@ Archive and retrieve your data with the methodology of your choice:
 
 The bucket limitation is 100TB.
 
-## Data lifecycle
+### Data lifecycle
 
 During the lifecycle, data is placed at Object Storage level for a deposit or retrieval or stored on magnetic tape for long duration archive.
 
@@ -89,9 +89,9 @@ You can track the different steps of your data by the status of your bucket
 | **`Deleting`** | Objects deletion from tapes (and disks if restored) in progress. | Listing | <48 hrs | Archive |
 | **`Flushed`** | Bucket is empty and can be removed safely. | Listing (empty bucket) | N/A | Archive |
 
-## Network, upload and retrieval performances
+### Network, upload and retrieval performances
 
-Cold Archive is a service based on Object Storage - S3 API. Performance and limitations (number of buckets, account, maximum bandwidth per connection, number of requests per second on bucket, maximum size per object / mpu / part, etc.) are available [here](https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-optimizing-performance?id=kb_article_view&sysparm_article=KB0062314).
+Cold Archive is a service based on Object Storage - S3 API. Performance and limitations (number of buckets, account, maximum bandwidth per connection, number of requests per second on bucket, maximum size per object / mpu / part, etc.) are available [here](/pages/storage_and_backup/object_storage/s3_limitations)
 
 To upload your data, the maximum bandwidth is **1 Gbps per logical connection** and the number of connections that can be used in parallel is **unlimited**.
 
@@ -103,31 +103,31 @@ A few examples:
 - I have a 5 Gbps internet connection, I upload a 1TB archive, it will take 26 minutes.
 - I have a 5 Gbps internet connection, I upload a 100TB archive, it will take 1.9 days.
 
-### Time to retrieve data
+#### Time to retrieve data
 
 The time it takes to access data depends on its volume. For example, for a retrieval of several hundred TB, the average time is 48 hours. For a volume of a few TB, it can take a few minutes up to a few hours.
 
-## RSE, Certifications & Compliance
+### RSE, Certifications & Compliance
 
-### Compliance
+#### Compliance
 
 The service is HDS and ISO 27001 certified.
 
-### Low carbon consumption
+#### Low carbon consumption
 
 Outside the read and write phase, the cartridges do not consume electricity. This provides more than 95% power savings compared to a similar disk array.
 
-### Duration
+#### Duration
 
 Magnetic tapes are built to last for decades (as opposed to an average of five years for modern discs).
 
-### Security
+#### Security
 
 Using server-side encryption with customer-provided encryption keys (SSE-C) allows you to set your own encryption keys.
 
 When you upload an object, Object Storage - S3 API uses the encryption key you provide to apply AES-256 encryption to your data. When you retrieve an object, you must provide the same encryption key as part of your request. Object Storage - S3 API first verifies that the encryption key you provided matches and then decrypts the object before returning the object data to you.
 
-### Immutability by WORM
+#### Immutability by WORM
 
 Immutable storage is often mandatory for legal reasons and certification not to change or delete the data after it has been written.
 
@@ -135,11 +135,11 @@ Immutable storage is a means to be protected against malware and attacks.
 
 Cold archive service is WORM (**W**rite **O**nce, **R**ead **M**any) by design.
 
-### Private / public Network
+#### Private / public Network
 
 The Object Storage is available through a public endpoint (public IP).
 
-## Pricing
+### Pricing
 
 <!--
 Our prices are described [here](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
@@ -154,7 +154,7 @@ It is possible to start archiving a container with less than 1 TB of data, but t
 
 ## Go further
 
-Operate your lifecycle and learn how to create buckets, archive, retrieve data, list metadata, by reading [this guide](https://help.ovhcloud.com/csm/en-public-cloud-storage-cold-archive-getting-started?id=kb_article_view&sysparm_article=KB0047338).
+Operate your lifecycle and learn how to create buckets, archive, retrieve data, list metadata, by reading [this guide](/pages/storage_and_backup/object_storage/cold_archive_getting_started).
 
 [All the Object Storage documentation](/products/storage-object-storage).
 
