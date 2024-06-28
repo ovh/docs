@@ -12,10 +12,10 @@ updated: 2024-06-26
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/gb/en/public-cloud/getting-started-with-ovhcloud-public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://docs.ovh.com/gb/en/public-cloud/first-steps-to-cloud-storage/)
-- An [S3 user already created](https://docs.ovh.com/gb/en/public-cloud/getting-started-with-ovhcloud-s3-compatible-cloud-storage/)
-- [AWS CLI installed and configured](https://docs.ovh.com/gb/en/public-cloud/installing-and-configuring-the-aws-cli/)
+- A Public Cloud project in your OVHcloud account
+- Access to the OVHcloud Control Panel
+- An [S3 user already created](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-getting-started-object-storage?id=kb_article_view&sysparm_article=KB0047339)
+- [AWS CLI installed and configured](https://help.ovhcloud.com/csm/en-public-cloud-storage-s3-getting-started-object-storage?id=kb_article_view&sysparm_article=KB0047348)
 
 
 ## Instructions
