@@ -29,7 +29,7 @@ details[open]>summary::before {
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager).
-- You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) infrastructure.
+- You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/) infrastructure.
 - You have access to the [OVHcloud Control Panel](/links/manager) or the [API console for your services](https://eu.api.ovh.com/).
 
 ## Instructions
