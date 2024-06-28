@@ -49,13 +49,13 @@ Tabela, która się wyświetla zawiera listę wszystkich domen i subdomen dodany
 > Jeśli chcesz przenieść Twoją stronę WWW i uniknąć przerwy w działaniu usługi, postępuj zgodnie z [krokiem 3: umieszczenie strony WWW online](#site-online).
 >
 
-![MultiSite](images/tab.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
 
 ### Etap 2: dodanie domeny lub subdomeny <a name="add-domain"></a>
 
 Aby dodać nową domenę lub subdomenę do Twojego hostingu, kliknij przycisk `Operacje`{.action} po lewej stronie ekranu, a następnie `Dodaj domenę lub subdomenę`{.action} i wybierz domenę w oknie, które się wyświetli.
 
-![akcje](images/actions-menu.png){.thumbnail}
+![akcje](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/actions-menu.png){.thumbnail}
 
 - **Dodaj domenę zarejestrowaną w OVHcloud**:
 
@@ -77,7 +77,7 @@ Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego 
 > [!primary]
 > Aby dodać subdomenę, najpierw wybierz domenę główną z listy (przykład: domain.tld). Na kolejnym etapie podasz subdomenę (przykład: **blog**.domain.tld).
 
-![MultiSite](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Informacja|Opis|
 |---|---|
@@ -96,7 +96,7 @@ Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego 
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
-![MultiSite](images/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
 
 Po wybraniu domeny zarejestrowanej w OVHcloud możesz automatycznie lub ręcznie zmienić jej konfigurację DNS:
 
@@ -123,7 +123,7 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 > |---|---|---|
 > |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.domain.tld) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.domain.tld`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.domain.tld` i nie `ovhcontrol.blog.domain.tld`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_edit), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
 >
-> ![MultiSite](images/find-token.png){.thumbnail}
+> ![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
 >
 > |Pole|Gdzie znaleźć informację?|Działania|
 > |---|---|---|
@@ -142,11 +142,11 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
-![MultiSite](images/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 
 Dodanie domeny zewnętrznej wymaga obowiązkowej dodatkowej weryfikacji. Dzięki temu możemy upewnić się, że dodanie domeny zewnętrznej jest uprawnione. Pojawi się komunikat, w którym zostaniesz poproszony o zmianę konfiguracji DNS domeny.
 
-![MultiSite](images/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 
 Zanotuj elementy, które się wyświetlą, następnie kliknij przycisk `Zatwierdź`{.action}. Domena jest dodana tymczasowo, abyś mógł zmodyfikować jej konfigurację DNS.
 

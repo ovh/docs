@@ -46,7 +46,7 @@ Once you have logged in to your storage space, all you need to do upload your we
 
 To identify the folder that the website is stored on, go to the `Multi-site`{.action} tab in the OVHcloud Control Panel. In the table shown, check the `Root folder`{.action} listed for the domain in question.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Step 2: Retrieve your database backup (optional).
 

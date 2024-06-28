@@ -104,7 +104,7 @@ Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.
 
 Clicca sulla scheda `Multisito`{.action} per recuperare il numero del cluster in cui si trova il tuo hosting condiviso.
 
-![Recuperare cluster](images/find-cluster.png){.thumbnail}
+![Recuperare cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >

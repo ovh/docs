@@ -50,7 +50,7 @@ Po zalogowaniu się do przestrzeni dyskowej pobierz pliki Twojej witryny. **Zale
 
 Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, przejdź do karty `MultiSite`{.action} w panelu klienta OVHcloud. W tabeli, która się wyświetla dla wybranej domeny znajdź `Katalog główny`{.action}.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Etap 2: utworzenie i pobranie kopii bazy danych (opcjonalnie)
 

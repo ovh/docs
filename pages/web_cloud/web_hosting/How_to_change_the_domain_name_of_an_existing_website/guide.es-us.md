@@ -73,7 +73,7 @@ Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 
 Si todas las acciones se han realizado correctamente, las declaraciones en multisitio de sus dominios deben ser estrictamente idénticas **excepto si utiliza un certificado SSL de pago de tipo *Sectigo DV*, *Sectigo EV* o *custom***.
 
-![multisitios](images/all-domain-same-config-enable.png){.thumbnail}
+![multisitios](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >

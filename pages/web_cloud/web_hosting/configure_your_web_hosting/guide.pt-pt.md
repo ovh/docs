@@ -358,7 +358,7 @@ Consulte o guia "[Configurar um multisite no alojamento web](/pages/web_cloud/we
 > **Não é possível especificar um segundo [ambiente de execução](#runtime-environment), um segundo [modo de execução](#runtime-mod) e/ou um segundo [motor de execução PHP](#php-runtime)** num mesmo alojamento web. Apenas serão tidos em conta os que constam do ficheiro ".ovhconfig" que está na raiz do seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
-![ovhconfig](images/root-folders.png){.thumbnail}
+![ovhconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ## Quer saber mais?
 

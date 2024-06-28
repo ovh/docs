@@ -53,7 +53,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 En el [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action} y, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
 
-![root-folders](images/root-folders.png){.thumbnail}
+![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 A continuación, abra la pestaña `FTP-SSH`{.action} y acceda al espacio que contiene los archivos y carpetas de su sitio web (*espacio FTP*) haciendo clic en el botón `Explorador FTP`{.action}.
 

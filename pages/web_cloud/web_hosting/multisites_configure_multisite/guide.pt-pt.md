@@ -49,13 +49,13 @@ Aparecerá uma tabela com todos os domínios e subdomínios adicionados à sua s
 > Se migrar o seu website e pretender evitar qualquer interrupção do serviço, siga o [passo 3: colocar o seu website online](#site-online).
 >
 
-![multisite](images/tab.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
 
 ### 2 - Adicionar um domínio ou subdomínio <a name="add-domain"></a>
 
 Para adicionar um novo domínio ou subdomínio ao seu alojamento web, clique no botão `Ações`{.action} situado à esquerda do ecrã e, a seguir, em `Adicionar um domínio ou subdomínio`{.action} e faça a sua escolha na nova janela.
 
-![ações](images/actions-menu.png){.thumbnail}
+![ações](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/actions-menu.png){.thumbnail}
 
 - **Adicionar um domínio registado na OVHcloud**:
 
@@ -77,7 +77,7 @@ Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu
 > [!primary]
 > Para adicionar um subdomínio, deve primeiro selecionar o domínio principal na lista (exemplo: domain.tld). O passo seguinte permitir-lhe-á indicar o subdomínio (exemplo: **blog**.domain.tld).
 
-![multisite](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Informação|Descrição|
 |---|---|
@@ -96,7 +96,7 @@ Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
 
-![multisite](images/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
 
 Ao selecionar um domínio registado na OVHcloud, tem a possibilidade de modificar automaticamente ou manualmente a sua configuração DNS:
 
@@ -123,7 +123,7 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 > |---|---|---|
 > |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.domain.tld) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>É importante notar que se deseja adicionar `blog.domain.tld`, deve criar o registo para o subdomínio `ovhcontrol.domain.tld` e não `ovhcontrol.blog.domain.tld`. <br></br>Para consultar esta última, encontre os [servidores DNS](/pages/web_cloud/domains/dns_server_edit) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
 >
-> ![multisite](images/find-token.png){.thumbnail}
+> ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
 >
 > |Campo|Onde posso encontrar a informação?|Ação a realizar|
 > |---|---|---|
@@ -142,11 +142,11 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
 
-![multisite](images/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 
 A adição de um domínio externo à OVHcloud requer uma validação suplementar obrigatória. Isto permite-nos assegurar que a adição do domínio externo é legítima. Assim, receberá uma mensagem solicitando a alteração da configuração DNS do domínio.
 
-![multisite](images/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 
 Tenha em atenção os elementos apresentados e clique no botão `Validar`{.action}. A seguir, o domínio é adicionado temporariamente, até que a configuração DNS seja alterada.
 

@@ -103,7 +103,7 @@ Um Cluster und Filer Ihres Webhostings zu ermitteln, loggen Sie sich in Ihrem [O
 
 Klicken Sie anschließend auf den Tab `Multisite`{.action}, um die Cluster-Nummer Ihres Hostings zu ermitteln.
 
-![Cluster abrufen](images/find-cluster.png){.thumbnail}
+![Cluster abrufen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >

@@ -72,7 +72,7 @@ Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
 Se todas as ações foram corretamente realizadas, as declarações em multi-sites dos seus domínios devem ser estritamente idênticas **exceto se utilizar um certificado SSL pago de tipo *Sectigo DV*, *Sectigo EV* ou *custom**.
 
-![multi-sites](images/all-domain-same-config-enable.png){.thumbnail}
+![multi-sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >

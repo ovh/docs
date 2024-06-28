@@ -38,7 +38,7 @@ Según el [certificado SSL](/links/web/hosting-options-ssl){.external} que quier
 
 Se mostrará una tabla que contiene todos los dominios añadidos al alojamiento web. La columna SSL muestra el estado de activación de las conexiones SSL seguras en los multisitios.
 
-![Contratar un certificado SSL](images/ssls.png){.thumbnail}
+![Contratar un certificado SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
 Pueden aparecer tres estados:
 
@@ -59,7 +59,7 @@ Para activar el SSL en un multisitio, haga clic en el botón `...`{.action} situ
 > Algunos certificados SSL **Externos** pueden ser válidos para varios dominios al mismo tiempo. Si utiliza uno de ellos, la mención *Activado* no aparecerá para todos sus dominios declarados en la tabla "multisitio". No obstante, su certificado SSL seguirá siendo válido para los nombres de dominio que *engloba*.
 >
 
-![managessl](images/modify-domain.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Una vez enviada la solicitud de activación, el estado de la conexión segura SSL para el multisitio debe actualizarse al cabo de unos segundos, sustituyéndose el estado por "Por generar". Repita esta operación para todos los multisitios en los que quiera activar el SSL.
 

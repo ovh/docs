@@ -95,7 +95,7 @@ Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site
 >
 > Um ficheiro "index.php" tomará sempre o controlo sobre um ficheiro "index.html". Por conseguinte, quando ambos estiverem presentes, apenas será chamado "index.php".
 
-![siteinstallation](images/root-folders.png){.thumbnail}
+![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 3 - Associar o site a uma base de dados
 

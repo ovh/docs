@@ -38,7 +38,7 @@ W zależności od [certyfikatu SSL](/links/web/hosting-options-ssl){.external}, 
 
 Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "SSL" możesz sprawdzić stan aktywacji bezpiecznego połączenia SSL dla Twoich stron podpiętych w opcji MultiSite.
 
-![managessl](images/ssls.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
 Mogą pojawić się wówczas trzy statusy:
 
@@ -59,7 +59,7 @@ Aby aktywować certyfikat SSL na stronie podpiętej w opcji MultiSite, kliknij p
 > Niektóre certyfikaty SSL **Zewnętrzne** mogą być ważne dla kilku domen jednocześnie. Jeśli korzystasz z jednej z domen, informacja *Aktywny* nie pojawi się również dla wszystkich domen zadeklarowanych w tabeli "MultiSite". Certyfikat SSL będzie ważny dla domen, które *zawiera*.
 >
 
-![managessl](images/modify-domain.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Po zatwierdzeniu, status bezpiecznego połączenia SSL dla strony podpiętej w opcji MultiSite zaktualizuje się w ciągu kilku sekund, po czym zostaje wyświetlony komunikat "Do wygenerowania". Powtórz operację, jeśli chcesz aktywować SSL na innych stronach podpiętych w opcji MultiSite.
 

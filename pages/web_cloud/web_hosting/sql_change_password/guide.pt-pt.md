@@ -53,7 +53,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 
 Na sua [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.action} e em `Alojamentos`{.action} e, por fim, no alojamento em causa. De seguida, aceda ao separador `Multisite`{.action}. Identifique o nome da `Pasta raiz` do seu site (o diretório no qual se encontram os seus ficheiros e pastas).
 
-![root-folders](images/root-folders.png){.thumbnail}
+![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 A seguir, clique no separador `FTP-SSH`{.action} e aceda ao espaço que contém os ficheiros e as pastas do seu site (*espaço FTP*) clicando no botão `Explorador FTP`{.action}.
 

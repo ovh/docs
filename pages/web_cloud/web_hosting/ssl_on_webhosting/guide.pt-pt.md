@@ -38,7 +38,7 @@ Em função do [certificado SSL](/links/web/hosting-options-ssl){.external} que 
 
 Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento web. A coluna "SSL" mostra-lhe o estado de ativação das ligações SSL seguras nos seus multi-sites.
 
-![managessl](images/ssls.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
 Neste caso, podem surgir três estados:
 
@@ -59,7 +59,7 @@ Para ativar o SSL num multi-site, clique no botão `...`{.action} à direita do 
 > Alguns certificados SSL **Externos** podem ser válidos para vários domínios de uma só vez. Se utilizar um destes, o texto *Ativado* também não será apresentado para todos os domínios declarados na tabela "multisite". No entanto, o seu certificado SSL será válido para os nomes de domínios que ele *engloba*.
 >
 
-![managessl](images/modify-domain.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Uma vez que tenha submetido o pedido de ativação, o estado da ligação protegida SSL para o multi-site em causa deve ser atualizado ao fim de alguns segundos, sendo o estado substituído por "A gerar / atualizar". Repita este processo se pretender ativar um certificado SSL para outros multisites.
 

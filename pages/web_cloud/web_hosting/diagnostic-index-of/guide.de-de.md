@@ -51,11 +51,11 @@ Ihr Domainname muss daher im Bereich `Multisite`{.action} Ihres Webhostings mit 
 
 Sie haben die Dateien Ihrer Website **mydomain.ovh** per [FTP](/pages/web_cloud/web_hosting/ftp_connection) in den `www`-Ordner Ihres OVHcloud Webhostings importiert. Ihr Domainname ist jedoch nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` Ihrer `Multisite`-Konfiguration verknüpft.
 
-![index_multisite](images/root-folders-empty.png){.thumbnail}
+![index_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
 Ändern Sie das `Wurzelverzeichnis`, indem Sie in der Zeile des betreffenden Domainnames auf die Schaltfläche `...`{.action} klicken und dann `Domain bearbeiten`{.action} auswählen.
 
-![modify_domain](images/modify-domain.png){.thumbnail}
+![modify_domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
 
 Führen Sie im neuen Fenster die folgenden Aktionen aus:
 
@@ -63,7 +63,7 @@ Führen Sie im neuen Fenster die folgenden Aktionen aus:
 - Geben Sie den Ordnernamen Ihrer Webseite, der die **index.php** oder **index.html** enthält, als `Wurzelverzeichnis` (2) an.
 - Klicken Sie auf `Weiter`{.action} (3).
 
-![change_root_folder](images/change-root-folder-step-1.png){.thumbnail}
+![change_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png){.thumbnail}
 
 > [!primary]
 >
@@ -72,11 +72,11 @@ Führen Sie im neuen Fenster die folgenden Aktionen aus:
 
 Klicken Sie anschließend auf `Bestätigen`{.action}.
 
-![modify_root_folder_confirm](images/change-root-folder-step-2.png){.thumbnail}
+![modify_root_folder_confirm](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png){.thumbnail}
 
 Sie erhalten das Ergebnis innerhalb weniger Minuten (denken Sie daran, Ihren Browser zu aktualisieren) wie in der folgenden Abbildung dargestellt:
 
-![multisite_modified](images/root-folders-full-www.png){.thumbnail}
+![multisite_modified](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png){.thumbnail}
 
 Überprüfen Sie, ob Ihre Webseite korrekt angezeigt wird. Wenn dies nicht der Fall ist, starten Sie Ihr Gerät neu und leeren Sie den Cache Ihres Browsers.
 

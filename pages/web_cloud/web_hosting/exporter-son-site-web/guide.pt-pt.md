@@ -50,7 +50,7 @@ Depois de aceder ao espaço de armazenamento, apenas precisará de transferir os
 
 Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site`{.action} a partir da Área de Cliente OVHcloud. Aparecerá uma tabela onde poderá consultar a `Pasta raiz`{.action} do domínio pretendido.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Etapa 2: recuperar o backup da sua base de dados (opcional) 
 

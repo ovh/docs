@@ -50,7 +50,7 @@ Una volta connesso allo spazio di storage, non ti resta che caricare i file del 
 
 Per verificare la cartella in cui il tuo sito è ospitato clicca sulla scheda `Multisito`{.action} dello Spazio Cliente OVHcloud. e verifica nella tabella la `Cartella di root`{.action} relativa al dominio interessato.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Step 2: recuperare il backup del tuo database (facoltativo)
 
