@@ -14,7 +14,7 @@ updated: 2024-06-26
 
 - [A Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/?_gl=1*15ms1jj*_gcl_au*NjU4OTMxNzYxLjE3MTU4NjYwMjYuMzMyNTY2MDM5LjE3MTk1OTA5ODcuMTcxOTU5MDk4Nw..) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB&_gl=1*6cglkx*_gcl_au*NjU4OTMxNzYxLjE3MTU4NjYwMjYuMzMyNTY2MDM5LjE3MTk1OTA5ODcuMTcxOTU5MDk4Nw..)
-- An [S3 user already created](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-getting-started-object-storage?id=kb_article_view&sysparm_article=KB0047339)
+- An [S3 user ](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-identity-access-management?id=kb_article_view&sysparm_article=KB0047351) already created
 - [AWS CLI installed and configured](https://help.ovhcloud.com/csm/en-public-cloud-storage-s3-getting-started-object-storage?id=kb_article_view&sysparm_article=KB0047348)
 
 
