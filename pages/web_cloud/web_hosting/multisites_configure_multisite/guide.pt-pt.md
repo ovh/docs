@@ -65,7 +65,7 @@ Apenas aparecem aqui os nomes de domínio OVHcloud para os quais tem [contacto t
 
 No caso de um nome de domínio externo à sua conta de cliente (outro identificador de cliente) ou externo à OVHcloud (fornecedor de nome de domínio terceiro), selecione `Adicionar um nome de domínio externo`{.action} e clique em `Seguinte`{.action}. De seguida, consulte o passo [“2.2 - Adicionar um domínio externo”](#add-external-domain).
 
-![multisite](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### Etapa 2.1: adicionar um domínio registado na OVHcloud <a name="add-ovhcloud-domain"></a>
 

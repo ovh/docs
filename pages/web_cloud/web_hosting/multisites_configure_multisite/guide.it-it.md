@@ -65,7 +65,7 @@ Nello Spazio Cliente OVHcloud vengono mostrati solo i domini per i quali sei [co
 
 Nel caso di un dominio esterno al tuo account cliente (altro identificativo cliente) o esterno a OVHcloud (provider di domini terzi), seleziona `Aggiungi un dominio esterno`{.action} e clicca su `Seguente`{.action}. e prosegui seguendo lo[Step 2.2: aggiungi un dominio esterno](#add-external-domain).
 
-![multisito](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
+![multisito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### Step 2.1: aggiungere un dominio registrato in OVHcloud <a name="add-ovhcloud-domain"></a>
 

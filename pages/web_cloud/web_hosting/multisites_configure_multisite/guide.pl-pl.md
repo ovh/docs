@@ -65,7 +65,7 @@ W tym miejscu wyświetlają się jedynie domeny OVHcloud, dla których jesteś [
 
 W przypadku nazwy domeny zewnętrznej (inny identyfikator klienta) lub zewnętrznej dla OVHcloud (inny dostawca domeny) wybierz `Dodaj domenę zewnętrzną`{.action}, a następnie kliknij `Dalej`{.action}. Przejdź następnie do [etapu 2.2: „dodanie domeny zewnętrznej”](#add-external-domain).
 
-![MultiSite](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### Etap 2.1: dodaj domenę zarejestrowaną w OVHcloud <a name="add-ovhcloud-domain"></a>
 

@@ -61,7 +61,7 @@ Seuls s'affichent ici les noms de domaine OVHcloud pour lesquels vous êtes [con
 
 Dans le cas d'un nom de domaine externe à votre compte client (autre identifiant client) ou externe à OVHcloud (fournisseur de nom de domaine tiers), sélectionnez `Ajouter un domaine externe`{.action} puis cliquez sur `Suivant`{.action}. Poursuivez alors vers l'[étape 2.2: ajouter un nom de domaine externe](#add-external-domain).
 
-![multisite](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### Étape 2.1 : ajouter un domaine enregistré chez OVHcloud <a name="add-ovhcloud-domain"></a>
 

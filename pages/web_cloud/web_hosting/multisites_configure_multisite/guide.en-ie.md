@@ -62,7 +62,7 @@ Only OVHcloud domain names for which you are a [technical contact and/or adminis
 
 For a domain name that is external to your customer account (another NIC handle) or external to OVHcloud (third-party domain name provider), select `Add an external domain`{.action}, then click `Next`{.action}. Then continue to [Step 2.2: Adding an external domain](#add-external-domain).
 
-![multisite](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### Step 2.1: Adding an OVHcloud-registered domain <a name="add-ovhcloud-domain"></a>
 
