@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Overview
 excerpt: Discover the service, understand the capabilities and billing
-updated: 2024-02-20
+updated: 2024-06-28
 ---
 
 <style>
