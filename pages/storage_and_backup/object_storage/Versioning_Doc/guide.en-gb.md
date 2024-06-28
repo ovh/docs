@@ -35,8 +35,7 @@ An Object Storage bucket can be in one of three states:
 > [!warning]
 > Once versioning is enabled, it cannot be disabled; it can only be suspended.
 
-
-![Archive](images/versionning.png)
+![Versioning States](images/versionning.png){.thumbnail}
 
 Enabling and suspending versioning is done at the bucket level. Once enabled, all objects in the bucket will receive a unique version ID. Existing objects will have a version ID of null until they are modified.
 
@@ -59,11 +58,11 @@ When versioning is not enabled:
 
 - There are no noncurrent versions as OVHcloud Object Storage will always overwrite the current version with the latest created version when you PUT the same object (i.e., with the same key).
 
-![Cold Archive concept](images/Withversioningdisabled.png)
+![Versioning Disabled](images/Withversioningdisabled.png){.thumbnail}
 
 - If you delete an object, it will be permanently deleted as only one version of your object exists at any given time.
 
-![Cold Archive concept](images/Withversioningdisabled2.png)
+![Permanent Deletion Without Versioning](images/Withversioningdisabled2.png){.thumbnail}
 
 ### With Versioning Enabled
 
@@ -71,17 +70,16 @@ When versioning is enabled:
 
 - Each time you upload the same object, a noncurrent version of the object is created, and the latest created version becomes the current version. Old versions are kept, and data is protected from accidental deletions or application failures. You can retrieve them anytime.
 
-
-![Cold Archive concept](images/Withversioningenabled.png)
+![Versioning Enabled](images/Withversioningenabled.png){.thumbnail}
 
 - If you delete an object, by default, OVHcloud will create a Delete Marker (DM) as the new current version, and all previous versions remain. The object is thus considered "deleted," and a GET object operation on that object will return a 404 error.
 
-![Cold Archive concept](images/Withversioningenabled2.png)
+![Delete Marker With Versioning](images/Withversioningenabled2.png){.thumbnail}
 
 - You can still download or delete a specific version of an object by specifying a version ID. Please note that deleting an object by specifying a version number is irreversible.
 
+![Downloading or Deleting Specific Versions](images/Withversioningenabled3.png){.thumbnail}
 
-![Cold Archive concept](images/Withversioningenabled3.png)
 
 ### How to Enable Versioning
 
