@@ -39,7 +39,7 @@ An Object Storage bucket can be in one of three states:
 
 Enabling and suspending versioning is done at the bucket level. Once enabled, all objects in the bucket will receive a unique version ID. Existing objects will have a version ID of null until they are modified.
 
-### How Versioning Works
+#### How Versioning Works
 
 Versioning adds a layer of protection to your data by keeping multiple versions of an object in the same bucket. When you enable versioning for a bucket, every object in the bucket gets a unique version ID. This means that every time an object is modified or deleted, a new version is created, and the old version is retained. This allows you to recover previous versions of an object if necessary.
 
@@ -47,7 +47,7 @@ Versioning adds a layer of protection to your data by keeping multiple versions 
 - **Modifying objects:** A new version ID is generated, and the previous version is retained.
 - **Deleting objects:** The deletion operation creates a delete marker but does not remove the previous versions. The object can be restored by removing the delete marker.
 
-### Version IDs
+#### Version IDs
 
 Each object has a unique version ID, whether or not S3 Versioning is enabled. In a versioning-enabled bucket, this version ID distinguishes one version from other versions of the same object.
 
