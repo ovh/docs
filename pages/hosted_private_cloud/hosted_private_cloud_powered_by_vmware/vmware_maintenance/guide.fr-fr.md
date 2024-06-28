@@ -1,9 +1,10 @@
 ---
 title: 'VMware on OVHcloud - Les opérations de maintenance'
 excerpt: 'Apprenez-en plus sur les opérations effectuées pour assurer la fiabilité et la performance de vos équipements Hosted Private Cloud VMware on OVHcloud'
-updated: 2024-06-26
+updated: 2024-06-28
 flag: hidden
 ---
+
 <style>
 details>summary {
     color:rgb(33, 153, 232) !important;
@@ -71,7 +72,7 @@ Un ID de référencement d'opération est toujours ajouté sur chaque opération
 
 Ces noms et références sont bien évidemment différents pour chaque service OVHcloud (Bare Metal Cloud, Public Cloud, etc..) 
 
-#### Depuis l'API OVHcloud :
+#### Depuis l'API OVHcloud
 
 > [!success]
 > 
@@ -83,13 +84,13 @@ Exécutez l'appel API suivant pour obtenir la liste des opérations :
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/robot
 >
+
+> **Paramètres:**
 >
-> **Parameters:**
->
-> - `serviceName` : La référence de votre PCC sous la forme, `pcc-XXX-XXX-XXX-XXX`.
+> - `serviceName` : La référence de votre PCC sous la forme `pcc-XXX-XXX-XXX-XXX`.
 >
 
-Exemple de retour (e schéma de retour peut varier et être assez long en fonction de la taille de votre infrastructure) :
+Exemple de retour (le schéma de retour peut varier et être assez long en fonction de la taille de votre infrastructure) :
 
 ```shell
 ...
@@ -106,8 +107,8 @@ Pour avoir le détail de chaque robot, exécutez l'appel API suivant :
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/robot/{name}
 >
->
-> **Parameters:**
+
+> **Paramèters:**
 >
 > - `serviceName` : La référence de votre PCC sous la forme `pcc-XXX-XXX-XXX-XXX`.
 > - `name` : Le nom du robot, par exemple `maintenanceUpdateAntivirusConfiguration`.
@@ -127,7 +128,7 @@ Pour avoir le détail de chaque robot, exécutez l'appel API suivant :
 
 ///
 
-## Details des opérations de maintenance Hosted Private Cloud
+## Détails des opérations de maintenance Hosted Private Cloud
 
 /// details | Un exemple d'opérations de maintenance au sein de Hosted Private Cloud VMware on OVHcloud.
 

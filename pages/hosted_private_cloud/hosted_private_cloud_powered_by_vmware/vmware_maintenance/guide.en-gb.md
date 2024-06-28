@@ -1,9 +1,10 @@
 ---
 title: 'VMware on OVHcloud maintenance operations' 
 excerpt: 'Find out more about the operations carried out to ensure the reliability and performance of your Hosted Private Cloud VMware on OVHcloud equipment' 
-updated: 2024-06-26
+updated: 2024-06-28
 flag: hidden
 ---
+
 <style>
 details>summary {
     color:rgb(33, 153, 232) !important;
@@ -28,7 +29,7 @@ details[open]>summary::before {
 
 ## Requirements
 
-- have to be connected to the [client space OVHcloud](/links/manager).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) infrastructure.
 - You have access to the [OVHcloud Control Panel](/links/manager) or the [API console for your services](https://eu.api.ovh.com/).
 
@@ -56,7 +57,7 @@ You can also filter operations by status via the dropdown menu above the table o
 
 ### Access to details of maintenance operations
 
-/// details | How to have access to the details of maintenance operations ?
+/// details | How to access to the details of maintenance operations?
 
 #### Via the OVHcloud Control Panel
 
@@ -72,7 +73,7 @@ An operation referencing ID is always added on each operation, along with an ass
 
 Of course, for each OVHcloud service (Bare Metal Cloud, Public Cloud, etc.) these names and references may change.
 
-#### Via the OVHcloud API :
+#### Via the OVHcloud API
 
 > [!success]
 >
@@ -84,7 +85,7 @@ Run the following API call to get the list of operations:
 > 
 > @api {v1} /dedicatedCloud get /dedicatedCloud/{serviceName}/robot
 >
->
+
 > **Parameters:**
 > 
 > - `serviceName`: Your Dedicated Cloud reference in the form `pcc-XXX-XXX-XXX-XXX`.
@@ -107,8 +108,8 @@ To get the details of each robot, run the following API call:
 >
 > @api {v1} /dedicatedCloud get /dedicatedCloud/{serviceName}/robot/{name}
 >
->
-> **Parameters :**
+
+> **Parameters:**
 > 
 > - `serviceName`: Your Dedicated Cloud reference in the form `pcc-XXX-XXX-XXX-XXX`.
 > - `name`: The name of the robot, e.g. `maintenanceUpdateAntivirusConfiguration`.
@@ -176,6 +177,6 @@ In short, the control plane is the software layer that provides centralized mana
 
 ## Go further
 
-For more information on rescheduling a maintenance operation, please read our guide : [Rescheduling a maintenance operation on your VMware on OVHcloud Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
+For more information on rescheduling a maintenance operation, please read our guide: [Rescheduling a maintenance operation on your VMware on OVHcloud Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/maintenance-rescheduling).
 
 Chat on the Discord dedicated channel: <https://discord.gg/ovhcloud> or join our [community of users](/links/community).
