@@ -65,7 +65,7 @@ Nello Spazio Cliente OVHcloud vengono mostrati solo i domini per i quali sei [co
 
 Nel caso di un dominio esterno al tuo account cliente (altro identificativo cliente) o esterno a OVHcloud (provider di domini terzi), seleziona `Aggiungi un dominio esterno`{.action} e clicca su `Seguente`{.action}. e prosegui seguendo lo[Step 2.2: aggiungi un dominio esterno](#add-external-domain).
 
-![multisito](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
+![multisito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### Step 2.1: aggiungere un dominio registrato in OVHcloud <a name="add-ovhcloud-domain"></a>
 
@@ -129,7 +129,7 @@ Ora che il dominio è stato aggiunto, passa allo [Step 3: mettere online](#site-
 > |---|---|---|
 > |A e AAAA|Nella scheda `Informazioni generali`{.action}, in corrispondenza di **IPv4** e **IPv6**.|Questi due record permettono che il dominio mostri il sito Internet ospitato nel tuo hosting Web.  Associa il tuo dominio o sottodominio all'indirizzo IP del tuo hosting.|
 >
-> ![multisito](images/find-ipv4-and-ipv6.png){.thumbnail}
+> ![multisito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
  Una volta selezionato il dominio che vuoi associare all’hosting, è necessario personalizzarne i parametri. Tieni presente che alcune delle opzioni incluse nel tuo piano di [hosting Web](/links/web/hosting){.external} non potranno essere attivate durante questo processo: sarà prima necessario aggiungere il dominio e modificare i parametri del multisito.

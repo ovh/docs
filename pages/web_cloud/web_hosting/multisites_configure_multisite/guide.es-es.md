@@ -65,7 +65,7 @@ Solo se muestran los dominios de OVHcloud para los que usted es [contacto técni
 
 Para un dominio externo a su cuenta de cliente (otro identificador de cliente) o externo a OVHcloud (proveedor de un dominio externo), seleccione `Añadir un dominio externo`{.action} y haga clic en `Siguiente`{.action}. Continúe en el paso [2.2\. Añadir un dominio externo](#add-external-domain).
 
-![Multisitio](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
+![Multisitio](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### 2.1\. añadir un dominio registrado con OVHcloud <a name="add-ovhcloud-domain"></a>
 
@@ -129,7 +129,7 @@ Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet
 > |---|---|---|
 > |A y AAAA|Pestaña `Información general`{.action}, en **IPv4** e **IPv6**|Estos dos registros permiten que su dominio muestre el sitio web que usted haya subido a su alojamiento. Asocie su dominio o subdominio a la dirección IP de su alojamiento.|
 >
-> ![Multisitio](images/find-ipv4-and-ipv6.png){.thumbnail}
+> ![Multisitio](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
  Una vez seleccionado el dominio que quiera asociar al alojamiento, deberá personalizar su información. Tenga en cuenta que algunas opciones incluidas en su [plan de hosting de OVHcloud](/links/web/hosting){.external} no pueden activarse durante este proceso. Es necesario añadir el dominio en primer lugar y posteriormente activar dichas opciones modificando la configuración del multisitio.
