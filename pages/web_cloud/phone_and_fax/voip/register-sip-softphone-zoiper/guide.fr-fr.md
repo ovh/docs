@@ -28,7 +28,7 @@ Le logiciel [Zoiper](https://www.zoiper.com/){.external} est un softphone (logic
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## Prérequis
@@ -114,13 +114,12 @@ Vous pouvez dès lors être joint et composer des appels depuis votre ligne SIP 
 
 ### iOS - Installation manuelle <a name="ios-manual-installation"></a>
 
-/// details | Cliquez sur ce lien pour la procédure d'installation de Zoiper Lite sur iOS
-
-> [!warning]
+> [!primary]
 >
 > Sur iOS, la version gratuite de Zoiper est intitulée *Zoiper Lite* et ne propose pas d'assistant de configuration de ligne.
 > Les étapes ci-dessous décrivent comment configurer manuellement une ligne SIP OVHcloud dans Zoiper Lite pour iOS.
 
+/// details | Cliquez sur ce lien pour la procédure d'installation de Zoiper Lite sur iOS
 
 Une fois Zoiper Lite installé, sélectionnez `Réglages`{.action} en bas à droite.
 
