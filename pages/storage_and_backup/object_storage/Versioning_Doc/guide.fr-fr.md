@@ -86,15 +86,13 @@ Pour activer le versioning sur un bucket de stockage d'objets S3, utilisez la co
 ```sh
 aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
 ```
+**Explication :**
 
+- **put-bucket-versioning :** Commande AWS CLI pour configurer la gestion des versions.
+- **--bucket my-bucket :** Remplacez `my-bucket` par le nom de votre bucket.
+- **--versioning-configuration Status=Enabled :** Active la gestion des versions pour le bucket spécifié.
 
-**Explanation:**
-
-- **put-bucket-versioning:** AWS CLI command to configure versioning.
-- **--bucket my-bucket:** Replace `my-bucket` with the name of your bucket.
-- **--versioning-configuration Status=Enabled:** Enables versioning for the specified bucket.
-
-After enabling versioning, all objects added to the bucket will have a unique version ID. This means that every time an object is modified or deleted, a new version is created, which can be restored if needed.
+Après avoir activé la gestion des versions, tous les objets ajoutés au bucket auront un identifiant de version unique. Cela signifie que chaque fois qu'un objet est modifié ou supprimé, une nouvelle version est créée, pouvant être restaurée si nécessaire.
 
 ### Comment suspendre la gestion des versions
 
