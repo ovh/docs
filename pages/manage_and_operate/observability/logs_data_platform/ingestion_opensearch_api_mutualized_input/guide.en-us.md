@@ -1,7 +1,7 @@
 ---
 title: Mutualized input - OpenSearch API
 excerpt: Send your logs to the platform with the OpenSearch API.
-updated: 2022-06-13
+updated: 2024-06-29
 ---
 
 ## Overview
@@ -13,7 +13,7 @@ OpenSearch is the star component of our platform, making it possible to use [Ope
 The OpenSearch endpoint is a dedicated index where you can send a JSON document. The port used is the **9200**, the same HTTP port used for all other OpenSearch APIs of Logs Data Platform. The only fields needed are the **X-OVH-TOKEN** and an extra field (any custom field). Don't hesitate to go to the [Quick Start documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) if you are not familiar with this notion. This document log will be transformed into a valid GELF log and any missing field will be filled automatically. In order to respect the GELF convention, you can also use all the [GELF format reserved fields](https://docs.graylog.org/docs/gelf){.external}. Here is one example of the minimal message you can send:
 
 ```shell-session
-$ curl -H 'Content-Type: application/json' -u '<user>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "7f00cc33-1a7a-4464-830f-91be90dcc880" , "test_field" : "OVHcloud"}'
+$ curl -H 'Content-Type: application/json' -u '<user>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/_doc -d '{ "X-OVH-TOKEN" : "7f00cc33-1a7a-4464-830f-91be90dcc880" , "test_field" : "OVHcloud"}'
 ```
 
 Replace the `<user>`, `<password>` and `<ldp-cluster>` with your Logs Data Platform username, password and cluster. You can also use [tokens](/pages/manage_and_operate/observability/logs_data_platform/security_tokens) in place of your credentials.  Sending this payload will result in this log:
@@ -24,7 +24,7 @@ The system automatically set the timestamp at the date when the log was received
 Note that the payload follows the JSON specification (and not the GELF one). The system will still recognize any reserved field used by the [GELF specification](https://docs.graylog.org/docs/gelf){.external}. Here is another example:
 
 ```shell-session
-$ curl -H 'Content-Type: application/json' -u '<user>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "7f00cc33-1a7a-4464-830f-91be90dcc880" , "test_field" : "OVHcloud" , "short_message" : "Hello OS input", "host" : "OVHcloud_doc" }'
+$ curl -H 'Content-Type: application/json' -u '<user>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/_doc -d '{ "X-OVH-TOKEN" : "7f00cc33-1a7a-4464-830f-91be90dcc880" , "test_field" : "OVHcloud" , "short_message" : "Hello OS input", "host" : "OVHcloud_doc" }'
 ```
 
 This will create the following log:
@@ -36,7 +36,7 @@ The system used the reserved fields associated with GELF to create the message a
 Logs Data Platform will also detect any typed field in the original data and convert them accordingly to our [field naming convention](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention). This last example illustrates it:
 
 ```shell-session
-$ curl -H 'Content-Type: application/json' -u '<user>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "7f00cc33-1a7a-4464-830f-91be90dcc880" , "test_field" : "OVHcloud" , "short_message" : "Hello OS input", "host" : "OVHcloud_doc", "numeric_field" : 43.5  }'
+$ curl -H 'Content-Type: application/json' -u '<user>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/_doc -d '{ "X-OVH-TOKEN" : "7f00cc33-1a7a-4464-830f-91be90dcc880" , "test_field" : "OVHcloud" , "short_message" : "Hello OS input", "host" : "OVHcloud_doc", "numeric_field" : 43.5  }'
 ```
 
 The numeric field **numeric_field** will be detected as a number and will be suffixed to follow our naming conventions.
@@ -69,6 +69,7 @@ source = '''
 type = "elasticsearch" # required
 inputs = ["token"] # required
 mode = "bulk"
+api_version = "v7"
 compression = "gzip" # optional, default is none
 healthcheck = true # required
 endpoint = "https://<<ldp-cluster>>.logs.ovh.com:9200" # required
