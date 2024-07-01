@@ -1,8 +1,8 @@
 # Bare Metal Cloud
 
-## Dedicated Servers 
+## Bare Metal Cloud > Dedicated Servers 
 
-### Compute
+### Bare Metal Cloud > Dedicated Servers > Compute
 
 #### Getting started
 - [Get to know the OVHcloud Control Panel](https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-control-panel-guided-tour?id=kb_article_view&sysparm_article=KB0043463)
@@ -109,7 +109,7 @@
 - [OVHcloud 3-AZ Region - Service presentation](https://help.ovhcloud.com/csm/en-dedicated-servers-3az-cluster?id=kb_article_view&sysparm_article=KB0063271)
 - [Shared responsibility for Dedicated Servers](https://help.ovhcloud.com/csm/en-managing-billing-payments-services-raci-dedicated-server?id=kb_article_view&sysparm_article=KB0061754)
 
-### Network
+### Bare Metal Cloud > Dedicated Servers > Network
 
 #### Getting started
 - `EMPTY`
@@ -199,7 +199,7 @@
 - `EMPTY`
 
 
-### Storage
+### Bare Metal Cloud > Dedicated Servers > Storage
 #### Getting started
 - `EMPTY`
 #### Configuration
@@ -261,7 +261,7 @@
 #### Additional Resources
 - [Backup storage services](https://help.ovhcloud.com/csm/en-dedicated-servers-services-backup-storage?id=kb_article_view&sysparm_article=KB0043985)
 
-## Eco Dedicated Servers
+## Bare Metal Cloud > Eco Dedicated Servers
 ### Getting started
 - [Getting started with a Kimsufi, So You Start or Rise dedicated server](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-getting-started-dedicated-server-eco?id=kb_article_view&sysparm_article=KB0043490)
 ### Configuration
@@ -282,13 +282,11 @@
 ### Support / Troubleshooting
 - `EMPTY`
 ### Additional Resources
-- `EMPTY`
-
-## Managed Bare Metal        
+- `EMPTY`      
 
 # Network
 
-## Primary IP
+## Network > Primary IP
 #### Getting started
 - `EMPTY`
 #### Configuration
@@ -311,7 +309,7 @@
 #### Additional Resources
 - `EMPTY`
 
-## Additional IP
+## Network > Additional IP
 #### Getting started
 - `EMPTY`
 #### Configuration
@@ -335,7 +333,7 @@
 #### Additional Resources    
 - `EMPTY`
 
-## OVHcloud Load Balancer
+## Network > OVHcloud Load Balancer
 #### Getting started
 - `EMPTY`
 #### Configuration
@@ -358,7 +356,7 @@
 #### Additional Resources        
 - `EMPTY`
 
-## Private Network (vRack)
+## Network > Private Network (vRack)
 #### Getting started
 - [vRack Services - Global Concept](https://help.ovhcloud.com/csm/en-ie-network-vrack-services-global-concept?id=kb_article_view&sysparm_article=KB0062698)
 #### Configuration
@@ -392,7 +390,7 @@
 #### Additional Resources        
 - `EMPTY`
 
-## OVHcloud Link Aggregation
+## Network > OVHcloud Link Aggregation
 #### Getting started
 - [OLA Manager](https://help.ovhcloud.com/csm/en-dedicated-servers-ola-manager?id=kb_article_view&sysparm_article=KB0043836)
 #### Configuration
@@ -423,7 +421,7 @@
 #### Additional Resources        
 - `EMPTY`
 
-## OVHcloud Connect
+## Network > OVHcloud Connect
 #### Getting started
 - [Installation of OVHcloud Connect Direct from the OVHcloud Control Panel](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-occ-direct-control-panel-setup?id=kb_article_view&sysparm_article=KB0045228)
 - [Installation of OVHcloud Connect Provider from the OVHcloud Control Panel](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-provider-control-panel-setup?id=kb_article_view&sysparm_article=KB0045276)
@@ -459,7 +457,7 @@
 - [OVHcloud Connect FAQ](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-faq?id=kb_article_view&sysparm_article=KB0045283)
 - [OVHcloud Connect Limits](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-limits?id=kb_article_view&sysparm_article=KB0045257)
 
-## Bring Your Own IP (BYOIP)
+## Network > Bring Your Own IP (BYOIP)
 #### Getting started
 - [Bring Your Own IP](https://help.ovhcloud.com/csm/en-ie-network-bring-your-own-ip?id=kb_article_view&sysparm_article=KB0044851)
 #### Configuration
@@ -482,7 +480,7 @@
 #### Additional Resources        
 - `EMPTY`
 
-## Security
+## Network > Security
 #### Getting started
 - [OVHcloud Security Dashboard](https://help.ovhcloud.com/csm/en-ie-network-security-dashboard?id=kb_article_view&sysparm_article=KB0060698)
 #### Configuration
