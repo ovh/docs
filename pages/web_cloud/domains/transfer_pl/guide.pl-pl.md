@@ -1,7 +1,7 @@
 ---
 title: 'Transfer domeny .pl do OVHcloud'
 excerpt: "Dowiedz się, jak wykonać transfer domeny .pl do OVHcloud"
-updated: 2022-10-19
+updated: 2024-07-01
 ---
 
 > [!primary]
@@ -11,6 +11,15 @@ updated: 2022-10-19
 ## Wprowadzenie
 
 Twoja domena. pl jest aktualnie zarejestrowana u innego operatora i chcesz ją przenieść do OVHcloud? Jest to możliwe dzięki zastosowaniu procedury transferu.
+
+> [!warning]
+>
+> Jeśli oprócz transferu Twojej domeny chcesz przenieść usługi z nią powiązane (strona WWW, konto e-mail, etc.), zapoznaj się z naszym przewodnikiem "[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
+> Ten przewodnik wyjaśnia, jak migrować wszystkie usługi bez przerw w ciągłości usług.
+>
+> Jeśli wykonujesz wyłącznie transfer Twojej domeny bez przenoszenia innych usług, upewnij się, że pobrałeś serwery DNS aktywne dla Twojej domeny od aktualnego **operatora** i wypełnisz ten przewodnik podczas etapu 3 "[Transfer domeny do OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)"
+> Dzięki temu nie będziesz musiał przerywać przypisywania domeny do przypisanych usług zewnętrznych.
+>
 
 Transfer domeny umożliwia jej przeniesienie do innego operatora. Możesz przenieść domenę do OVHcloud, składając zamówienie. Zajmie to od jednego do pięciu dni.
 
