@@ -1,7 +1,7 @@
 ---
 title: 'Creating network components from the VCD control panel'
 excerpt: 'Find out how to easily create network components within the VCD on OVHcloud control panel'
-updated: 2024-06-26
+updated: 2024-07-01
 ---
 
 <style>
@@ -201,17 +201,15 @@ You can then choose between: `Organization Virtual Data Center`{.action} or `Dat
 
 Next, click on `Use IP Spaces`{.action}.
 
-Enabling this option will mean that `IP address management** | Use IP spaces | Edge Gateway`{.action} would only be able to connect to Provider Gateway using IP spaces.
-
-This represents the previously created gateway.
+This forces the use of IP spaces with the Provider gateways and optimize the application of new intelligent VCD network space management techniques.
 
 When done, click on `NEXT`{.action}.
 
-3\. We will now move to step 3: `Provider Gateways`{.action}.
+3\. We will now move to sub-part 3 of the Edge gateway creation. 
 
-Choose the default gateway for your vDC provider.
+The choice of the `Provider Gateways`{.action}.
 
-We will use the default gateway that we have here, in the alpha phase: `graveline-gateway`{.action}.
+Choose the default gateway for your vDC provider : `graveline-gateway`{.action}.
 
 Once you have chosen (step 3: Create an Edge Gateway), click `NEXT`{.action}.
 
@@ -241,7 +239,7 @@ Finally, (step 5: Create an Edge Gateway) click on `FINISH`{.action}.
 
 We will now create a new network and attach our preconfigured settings.
 
-Go to the Networking section by clicking: `Mise en réseaux | Réseaux`{.action}.
+Go to the Networking section by clicking: `Networking | Networks`{.action}.
 
 Then click on: `NEW`{.action}.
 
@@ -254,7 +252,7 @@ You can choose between:
 - **Organization Virtual Datacenter**: Provides connectivity for VMs in the selected vDC only.
 - **Datacentre Group**: Provides connectivity for the VMs of all virtual domain controllers participating in the datacentre group.
 
-Select **the vDC Virtual Datacenter Organization** where the **Datacenter Group** in the scope with which you want to create your network.
+Select **the vDC Virtual Datacenter Organization** or the **Datacenter Group** in the scope in which you want to create your network.
 
 ![VCD Networking Network 01](images/NETWORK_1.png){.thumbnail}
 
@@ -324,7 +322,7 @@ To continue (step 3: Create a private network), click on `NEXT`{.action}.
 Once your IP range has been allocated, check that there is no space before and after the dash
 between the two IP ranges:
 
-- **172.16.1.2**->-<-**172.16.1.100**.
+- `172.16.1.2**->-<-**172.16.1.100`{.action}.
 
 As well as at the beginning and end of your 2 IPs, ->**172.16.1.2**<- and ->**172.16.1.100**<-.
 
@@ -403,7 +401,8 @@ Your network is now fully created and ready to use.
 
 ## Go further
 
-You can now follow the steps of the next guide "[VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_ipsec)".
+You can now follow the steps of the next guide :
+- **Coming soon:** Guide 3 - VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud ?.
 
 If you experience any network issues within VCD on OVHcloud, please read our guide "[VMware Cloud Director on OVHcloud - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts)".
 
@@ -411,4 +410,4 @@ If you require training or technical assistance in implementing our solutions, c
 
 Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated Discord channel: <https://discord.gg/ovhcloud>.
 
-Join our [community of users](/links/community).
+To join and exchange with our [community of users](/links/community).

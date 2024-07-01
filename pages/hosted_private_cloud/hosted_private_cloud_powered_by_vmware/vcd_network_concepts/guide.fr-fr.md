@@ -1,7 +1,7 @@
 ---
 title: 'VMware Cloud Director - Concepts réseau'
 excerpt: 'Découvrez les puissantes capacités de mise en réseau de VMware Cloud Director on OVHcloud avec ce guide complet sur les concepts et fonctionnalités clés'
-updated: 2024-06-27
+updated: 2024-07-01
 ---
 
 <style>
@@ -287,9 +287,9 @@ Vous pouvez maintenant suivre les étapes du guide suivant : [Guide 2 - VMware C
 
 - Guide 1 : VMware Cloud Director on OVHcloud - Network - Concepts
 - Guide 2 : [« VMware Cloud Director on OVHcloud - Network - Créer des composants réseau via le control panel VCD on OVHcloud »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
-- Guide 3 : [« VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ? »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_ipsec).
-- Guide 4 : [« VMware Cloud Director on OVHcloud - Network - Comment exploiter un block IP avec VCD on OVHcloud ? »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_ipblock).
-- Guide 5 : [« VMware Cloud Director on OVHcloud - Network - Comment utiliser le distributed firewalling (East - Ouest) ? »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_firewall).
+- **Coming soon** : Guide 3 : « VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ?».
+- **Coming soon** : Guide 4 : « VMware Cloud Director on OVHcloud - Network - Comment exploiter un block IP avec VCD on OVHcloud ?».
+- **Coming soon** : Guide 5 : « VMware Cloud Director on OVHcloud - Network - Comment utiliser le distributed firewalling (East - Ouest) ?».
 
 ### Notions réseau utiles
 
@@ -304,4 +304,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur la chaîne dédiée Discord : <https://discord.gg/ovhcloud>. 
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Pour rejoindre et échanger avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: 'VMware Cloud Director - network concepts'
 excerpt: 'Discover the powerful networking capabilities of VMware Cloud Director on OVHcloud with this comprehensive guide (key concepts and features)'
-updated: 2024-06-27
+updated: 2024-07-01
 ---
 
 <style>
@@ -288,9 +288,9 @@ You can now follow the steps in the following guide: [“Guide 2 - VMware Cloud 
 
 - Guide 1: VMware Cloud Director on OVHcloud - Network - Concepts
 - Guide 2: [“VMware Cloud Director on OVHcloud - Network - Creating network components via the control panel VCD on OVHcloud”](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
-- Guide 3: [“VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud?”](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_ipsec).
-- Guide 4: [“VMware Cloud Director on OVHcloud - Network - How to operate an IP block with VCD on OVHcloud?”](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_ipblock).
-- Guide 5: [“VMware Cloud Director on OVHcloud - Network - How to use distributed firewalling (East - West)?”](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_firewall).
+- **Coming soon** : « Guide 3 - VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud ?».
+- **Coming soon** : « Guide 4 - VMware Cloud Director on OVHcloud - Network - How to operate an IP block with VCD on OVHcloud ?».
+- **Coming soon** : « Guide 5 - VMware Cloud Director on OVHcloud - Network - How to use distributed firewalling (East - West) ?».
 
 ### Useful network concept
 
@@ -305,4 +305,4 @@ If you require training or technical assistance in implementing our solutions, p
 
 Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated Discord channel: <https://discord.gg/ovhcloud>. 
 
-Join our [community of users](/links/community).
+To join and exchange with our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: 'VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud'
 excerpt: 'Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud'
-updated: 2024-06-26
+updated: 2024-07-01
 ---
 
 <style>
@@ -201,17 +201,17 @@ Vous avez ensuite le choix entre le : `Centre de données virtuel d'organisation
 
 Cliquez ensuite sur `Utiliser les espaces IP`{.action}.
 
-**Ce qui signifie que `Gestion des adresses IP** | Utiliser les espaces IP | **Edge Gateway`{.action} serait en mesure de se connecter uniquement à Provider Gateway en utilisant des espaces IP.
+**Pourquoi ?** 
 
-Cela représente la passerelle précédemment créée.
+Cela force l'utilisation des espaces IP aux passerelles Provider, et permet ainsi d'optimiser l'applications des nouvelles techniques intelligentes de gestion de l'espace réseau VCD.
 
 Quand vous avez fini, cliquez sur `SUIVANT`{.action}.
 
-3\. Nous arrivons à l'étape 3 : `Passerelle fournisseur`.
+3\. Nous arrivons à la sous partie 3, de l'étape de création d'une passerelle Edge. 
 
-Choisissez la passerelle par défaut de votre fournisseur vDC.
+Le choix des `Passerelles fournisseurs`{.action}.
 
-Nous utiliserons la passerelle par défaut que nous avons ici, dans la phase Alpha : `graveline-gateway`.
+Choisissez la passerelle par défaut de votre fournisseur vDC: `graveline-gateway`.
 
 Une fois votre choix effectué (étape 3 : Création d'une Passerelle Edge), cliquez sur `SUIVANT`{.action}.
 
@@ -254,7 +254,7 @@ Vous avez le choix entre :
 - **Centre de données virtuel de l'organisation** : fournit la connectivité pour les machines virtuelles dans le vDC sélectionné uniquement.
 - **Groupe de datacenters** : fournit la connectivité pour les machines virtuelles de tous les contrôleurs de domaine virtuels participant au groupe de centres de données.
 
-Sélectionnez **l'Organisation du Centre de Données Virtuel vDC** où le **Groupe de Centre de données** dans le scope avec lequel vous souhaitez créer votre réseau.
+Sélectionnez **l'Organisation du Centre de Données Virtuel vDC** ou le **Groupe de Centre de données** dans le scope avec lequel vous souhaitez créer votre réseau.
 
 ![VCD Networking Network 01](images/NETWORK_1.png){.thumbnail}
 
@@ -402,7 +402,8 @@ Votre réseau est maintenant entièrement créé et prêt à l'emploi.
 
 ## Aller plus loin
 
-Vous pouvez maintenant suivre les étapes du prochain guide : « [VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ?](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_ipsec) ».
+Vous pouvez maintenant suivre les étapes du prochain guide :
+- **Coming soon** : Guide 3 : « VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ?».
 
 Si vous rencontrez des difficultés avec le réseau au sein de VCD on OVHcloud, consultez le guide « [VMware Cloud Director on OVHcloud - Network Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) ».
 
@@ -410,4 +411,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le Discord channel dédié : <https://discord.gg/ovhcloud>.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Pour rejoindre et échanger avec notre [communauté d'utilisateurs](/links/community).
