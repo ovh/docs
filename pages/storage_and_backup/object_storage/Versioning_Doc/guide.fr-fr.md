@@ -9,10 +9,10 @@ updated: 2024-06-26
 **Ce guide explique comment activer et gérer la gestion de versions pour vos buckets de stockage d'objets OVHcloud en utilisant les API.**
 
 ## Prérequis
-- [Un projet Public Cloud](https://www.ovhcloud.com/en-ie/public-cloud/?_gl=1*15ms1jj*_gcl_au*NjU4OTMxNzYxLjE3MTU4NjYwMjYuMzMyNTY2MDM5LjE3MTk1OTA5ODcuMTcxOTU5MDk4Nw..) dans votre compte OVHcloud
+- [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud
 - Accès à [l'espace client OVHcloud](https://www.ovh.com/manager/#/hub)
-- [Un utilisateur S3](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-identity-access-management?id=kb_article_view&sysparm_article=KB0047351) déjà créé
-- [AWS CLI installé et configuré](https://help.ovhcloud.com/csm/en-public-cloud-storage-s3-getting-started-object-storage?id=kb_article_view&sysparm_article=KB0047348)
+- [Un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) déjà créé
+- [AWS CLI installé et configuré](pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
 
 
 ## Pratique
