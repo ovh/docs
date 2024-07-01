@@ -65,7 +65,7 @@ Acaba de migrar os seus ficheiros e a sua base de dados WordPress. Se pretender 
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Generalidades sobre os e-mails partilhados](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/email_generalities).
+[Generalidades sobre os e-mails partilhados](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 [Migrar o site e os serviços associados para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
