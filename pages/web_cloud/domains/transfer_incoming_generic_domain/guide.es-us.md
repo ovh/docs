@@ -28,6 +28,12 @@ Si OVHcloud ya es el *registrar* de su dominio **antes** para iniciar el procedi
 >
 Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](/pages/web_cloud/domains/trade_domain).
 >
+> Si, además de la transferencia del dominio, quiere migrar los servicios asociados al mismo (sitio web, correo electrónico...), consulte en primer lugar nuestra guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" antes de continuar.
+> Esta guía explica en detalle cómo migrar todos sus servicios sin cortes del servicio.
+>
+> Si solo va a transferir su dominio sin trasladar los demás servicios, recuerde recuperar los servidores DNS activos para su dominio en su actual **registrar** para informarlos directamente en el paso 3 de esta guía.
+> De este modo, no tendrá que interrumpir la asociación entre su dominio y los servicios externos asociados.
+>
 
 ## Requisitos
 

@@ -63,6 +63,12 @@ También debe:
 >
 > Asimismo, asegúrese de que su actual agente registrador no vaya a cerrar otros servicios, como las direcciones de correo asociadas al dominio.
 >
+> Si, además de la transferencia del dominio, quiere migrar los servicios asociados al mismo (sitio web, correo electrónico...), consulte en primer lugar nuestra guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" antes de continuar.
+> Esta guía explica en detalle cómo migrar todos sus servicios sin cortes del servicio.
+>
+> Si solo va a transferir su dominio sin trasladar los demás servicios, deberá obtener los servidores DNS activos para su dominio de su actual **registrar** para informarlos directamente en el paso 3 de la guía "[Transferir su dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
+> De este modo, no tendrá que interrumpir la asociación entre su dominio y los servicios externos asociados.
+>
 
 ### Etapa 1 - Desactivar el registro privado
 
