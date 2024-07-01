@@ -1,7 +1,7 @@
 ---
 title: 'KMS au sein de Hosted Private Cloud VMware on OVHcloud'
 excerpt: 'Découvrez comment mettre en place le service de gestion de clé OVHcloud (OKMS) au sein de Hosted Private Cloud VMware on OVHcloud pour sécuriser efficacement vos données sensibles'
-updated: 2023-06-27
+updated: 2023-07-01
 ---
 
 > [!warning]
@@ -31,7 +31,7 @@ updated: 2023-06-27
 >
 > Prenez en compte que l'activation de KMS est gratuite, mais vous serez facturé pour l'utilisation du service KMS OVHcloud selon le tarif standard.
 > Pour plus d'information, consultez la page [Labs KMS OVHcloud](https://labs.ovhcloud.com/en/key-management-service/).{.external}.
-
+>
 
 Le KMS OVHcloud est un service managé conçu pour :
 
@@ -60,19 +60,13 @@ Le KMS OVHcloud vous permet de profiter des avantages d'un service managé de ge
 Pour plus d'information sur les avantages de l'usage du KMS OVHcloud, consultez le guide :
 - [KMS architecture](/pages/manage_and_operate/kms/architecture-overview).
 
-### Comparaison des fonctionnalités OKMS
+### Comparaison des fonctionnalités KMIP
 
-|                                   | OMK (OVHcloud Managed Key)                                                                                                                                                                                | CMK (Customer Managed Key)               |
-|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| Use in OVHcloud eligible services | 	Yes	                                                                                                                                                                                                     | Yes                                      |
-| Use in external applications	     | n/a                                                                                                                                                                                                       | Yes via a REST API or a KMIP API         |
-| Key lifecycle management          | 	n/a (Managed by OVHcloud)                                                                                                                                                                                | 	Yes (creation, rotation, revocation...) |
-| Access management                 | 	n/a	                                                                                                                                                                                                     | Yes with OVHcloud lAM                    |
-| Logs access                       | n/a                                                                                                                                                                                                       | 	Yes with OVHcloud Logs Data Platform    |
-| Bring Your Own key                | 	n/a                                                                                                                                                                                                      | 	Yes                                     |
-| Key types                         | - Symmetric keys of 128, 192 and 256 bits <br> - Asymmetric keys using: RSA-1024, RSA-2048, RSA-3072 or RSA-4096  Elliptic curve keys using EC-256, EC-384, EC-521 with curves values P-256, P-384, P-521 |
+-> Tableau KMIP
 
-## Étape 1 - Sans l'OVHcloud KMS (OKMS)
+## Étape 1 - Apprenez comment faire l'intégration d'un KMS au sein d'OVHcloud
+
+### Sans l'OVHcloud KMS (OKMS)
 
 Si vous disposez déja d'un service de gestion de clés (KMS) et vous voulez l'utiliser sur votre Hosted Private Cloud VMware on OVHcloud. Pour chiffrer vos machines virtuelles vSphere par exemple.
 
@@ -84,7 +78,7 @@ Pour ça il vous faut configurer KMS sur votre Hosted Private Cloud VMware on OV
 Certaines informations utiles sont aussi disponible sur ce guide :
 - [Guide 5 : Activation du chiffrement des machines virtuelles (VM Encryption)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
 
-## Étape 2 - Avec l'OVHcloud KMS (OKMS)
+## Avec l'OVHcloud KMS (OKMS)
 
 ### Si vous n'avez pas de service de gestion de clé KMS
 
@@ -108,6 +102,14 @@ Certaines informations utiles sont aussi disponible sur l'ancien guide :
 Une fois le KMS d'OVHcloud commandé, vous avez la possibilité de le configurer pour qu'il puisse fonctionner en accord avec votre Hosted Private Cloud VMware on OVHcloud.
 
 Pour plus d'information, suivez le guide : [Guide 1 - Configurez le chiffrement des machines virtuelles grâce à un serveur KMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration)
+
+## Étape 2 - Créer votre KMS avec vNKP au sein de Hosted Private Cloud VMware on OVHcloud
+
+Si vous ne voulez pas profiter des avantages du service managé de KMS OVHcloud (OKMS) et que vous voulez créer votre propre KMS pour activer le chiffrement de vos données vSphere. Vous pouvez le faire avec vNKP.
+
+En ajoutant un `Native Key Provider`{.action}.
+
+Ce guide vous détaille comment le faire : [HPC - Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp).
 
 ## Aller plus loin
 
