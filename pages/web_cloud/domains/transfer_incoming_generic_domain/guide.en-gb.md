@@ -1,7 +1,7 @@
 ---
 title: 'Transferring a domain name to OVHcloud'
 excerpt: 'Find out how to transfer a generic domain name to OVHcloud'
-updated: 2024-01-31
+updated: 2024-06-28
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -23,6 +23,12 @@ By transferring your domain name, you will its **registrar**. You can transfer y
 > To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [our contact management guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
 > If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](/pages/web_cloud/domains/trade_domain).
+>
+> If, in addition to transferring your domain name, you would like to migrate the services associated with it (website, email, etc.), please read our guide on [Migrating your website and associated services to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh), before continuing.
+> This guide explains in detail how to migrate all your services without any service interruptions.
+>
+> If you only transfer your domain name without moving your other services, please ensure that you retrieve the active DNS servers for your domain name from your current **registrar**, to enter them directly in step 3 of this guide.
+> This will prevent the separation of your domain name from your associated external services.
 >
 
 ## Requirements
