@@ -25,7 +25,7 @@ This tutorial will show you step by step how to migrate your WordPress website a
 
 ### Step 1: Back up your WordPress website files and database
 
-The first step is to retrieve all the files related to your WordPress website. This includes WordPress files, as well as your database. Then refer to our guide on Backing up your WordPress website (/pages/web_cloud/web_hosting/how_to_backup_your_wordpress).
+The first step is to retrieve all the files related to your WordPress website. This includes WordPress files, as well as your database. Then refer to our guide on [Backing up your WordPress website](/pages/web_cloud/web_hosting/how_to_backup_your_wordpress).
 
 ### Step 2: Transfer your WordPress website to OVHcloud
 
@@ -40,7 +40,7 @@ Once you have backed up your WordPress website files and database, transfer them
 
 To transfer the files related to your WordPress website, first log in to [the FTP storage space of your OVHcloud web hosting plan](/pages/web_cloud/web_hosting/ftp_connection).
 
-Once you have logged in to your OVHcloud web hosting plan’s FTP storage space, browse to the root directory ‘www’ (or another root folder you have created beforehand). If your backup files are compressed (zipped), unzip them in an empty folder on your computer before uploading them to the root directory of your OVHcloud web hosting plan.
+Once you have logged in to your OVHcloud web hosting plan’s FTP storage space, browse to the root directory "www" (or another root folder you have created beforehand). If your backup files are compressed (zipped), unzip them in an empty folder on your computer before uploading them to the root directory of your OVHcloud web hosting plan.
 
 #### Step 2.2: Import the database from your WordPress website
 
@@ -53,7 +53,7 @@ If you do not have one yet, [create a new database](/pages/web_cloud/web_hosting
 
 ### Step 3: Update the database information
 
-You now need to link your WordPress website to your database. These changes should be made in the configuration file **“wp-config.php”**. You can find out what you need to do by following the steps in our guide on [Changing a Web Hosting plan database password](/pages/web_cloud/web_hosting/sql_change_password) .
+You now need to link your WordPress website to your database. These changes should be made in the configuration file **“wp-config.php”**. You can find out what you need to do by following the steps in our guide on [Changing a Web Hosting plan database password](/pages/web_cloud/web_hosting/sql_change_password).
 
 ### Migrate other services associated with your WordPress website
 
