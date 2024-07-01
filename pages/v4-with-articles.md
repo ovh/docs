@@ -56,7 +56,7 @@
 - [AMD SME and SEV](https://help.ovhcloud.com/csm/en-dedicated-servers-amd-sme-sev?id=kb_article_view&sysparm_article=KB0044018)
 - [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](https://help.ovhcloud.com/csm/en-dedicated-servers-bring-your-own-image-versus-bring-your-own-linux?id=kb_article_view&sysparm_article=KB0061597)
 
-### Network
+### BMC > Network
 
 #### Getting started
 - []()
