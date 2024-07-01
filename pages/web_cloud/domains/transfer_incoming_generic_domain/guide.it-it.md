@@ -1,7 +1,7 @@
 ---
 title: 'Trasferire un dominio in OVHcloud'
 excerpt: 'Questa guida ti mostra come avviare la procedura di trasferimento di un dominio generico verso OVHcloud'
-updated: 2024-01-31
+updated: 2024-07-01
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: 'Transferir um domínio Wix para a OVHcloud'
 excerpt: 'Descubra diferentes informações sobre a transferência de um nome de domínio Wix para a OVHcloud'
-updated: 2024-04-11
+updated: 2024-07-01
 ---
 
 > [!primary]

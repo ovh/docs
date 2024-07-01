@@ -1,7 +1,7 @@
 ---
 title: 'Transfer domeny Ionos do OVHcloud'
 excerpt: 'Dowiedz się więcej o transferze domeny z systemu Ionos do OVHcloud'
-updated: 2024-03-28
+updated: 2024-07-01
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: 'Transferir un dominio Hostinger a OVHcloud'
 excerpt: 'Descubra diferentes datos relativos a la transferencia de un dominio Hostinger a OVHcloud'
-updated: 2024-04-10
+updated: 2024-07-01
 ---
 
 > [!primary]

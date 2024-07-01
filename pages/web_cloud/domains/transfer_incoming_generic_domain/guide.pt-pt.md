@@ -1,7 +1,7 @@
 ---
 title: 'Transferir o nome de domínio para a OVHcloud'
 excerpt: 'Descubra como transferir um nome de domínio para a OVHcloud'
-updated: 2024-01-31
+updated: 2024-07-01
 ---
 
 > [!primary]

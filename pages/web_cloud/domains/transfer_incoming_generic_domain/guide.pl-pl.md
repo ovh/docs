@@ -1,7 +1,7 @@
 ---
 title: 'Transfer domeny do OVHcloud'
 excerpt: "Dowiedz się, jak wykonać transfer domeny do OVHcloud"
-updated: 2024-01-31
+updated: 2024-07-01
 ---
 
 > [!primary]

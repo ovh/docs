@@ -1,7 +1,7 @@
 ---
 title: 'Transferir un dominio .uk a OVHcloud'
 excerpt: 'En esta guía encontrará información relativa a la transferencia de un dominio .uk o asociado a OVHcloud'
-updated: 2022-10-19
+updated: 2024-07-01
 ---
 
 > [!primary]
