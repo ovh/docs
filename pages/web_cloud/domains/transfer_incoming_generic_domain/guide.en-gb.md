@@ -29,8 +29,8 @@ By transferring your domain name, you will its **registrar**. You can transfer y
 >
 > If you only transfer your domain name without moving your other services, please ensure that you retrieve the active DNS servers for your domain name from your current **registrar**, to enter them directly in step 3 of this guide.
 > This will prevent the separation of your domain name from your associated external services.
->
-> 
+
+
 ## Requirements
 
 - A domain name registered with another registrar.
