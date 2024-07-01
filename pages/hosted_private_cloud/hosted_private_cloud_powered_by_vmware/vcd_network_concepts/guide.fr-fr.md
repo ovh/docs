@@ -56,7 +56,7 @@ Pour assurer une infrastructure réseau flexible et sécurisée dans un environn
 
 La plupart de ces réseaux nécessitent des éléments d'infrastructure supplémentaires tels que les **Passerelles Edge** et les **Pools de réseaux**.
 
-Le control panel VCD dispose d'un bandeau réseau avec 5 sections :
+Le control panel VCD dispose d'un bandeau réseau avec 6 sections :
 
 - `Réseaux`{.action}.
 - `Passerelles Edge`{.action}.
