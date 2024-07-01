@@ -27,8 +27,8 @@ Transferring a .uk (or similar) domain name requires a specific approach.
 > If, in addition to transferring your domain name, you would like to migrate the services associated with it (website, email, etc.), please read our guide on [Migrating your website and associated services to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh), before continuing.
 > This guide explains in detail how to migrate all your services without any service interruptions.
 >
-> If you only transfer your domain name without moving your other services, please ensure that you retrieve the active DNS servers for your domain name from your current **registrar**, to enter them directly in step 3 of our guide on [Transferring your domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
-> This will prevent you from interrupting the association between your domain name and your associated external services.
+> If you only transfer your domain name without moving your other services, please ensure that you retrieve the active DNS servers for your domain name from your current **registrar**, to enter them directly in step 3 of our guide on [Transferring your domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).
+> This will prevent the separation of your domain name from your associated external services.
 >
 
 ## Requirements
