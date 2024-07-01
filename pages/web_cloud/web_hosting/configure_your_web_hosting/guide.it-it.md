@@ -120,7 +120,7 @@ Per conoscere la versione PHP in uso sull’hosting Web sono disponibili due dis
 
 - **Dallo Spazio Cliente OVHcloud**. Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella scheda `Informazioni generali`{.action}, individua la versione sotto *Versione PHP*. 
 
-![phpversion](images/change-php-version-step1.png){.thumbnail}
+![phpversion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/change-php-version-step1.png){.thumbnail}
 
 > [!primary]
 > Se è presente un cerchio blu, attendi qualche minuto fino all'aggiornamento della versione.
@@ -195,7 +195,7 @@ Ora che conosci i diversi parametri modificabili per il tuo hosting Web OVHcloud
 Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Assicurati di essere posizionato sulla scheda
 `Informazioni generali`{.action}. A destra della voce `Versione PHP`{.action}, situata quasi al centro della pagina, clicca sul pulsante `...`{.action} e poi su `Modifica la configurazione`{.action}.
 
-![hostingconfiguration](images/modify-hosting-configuration.png){.thumbnail}
+![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
 
 > [!primary]
 >
@@ -222,7 +222,7 @@ Nella nuova finestra, sono disponibili due opzioni. Seleziona quella che corrisp
 
 Clicca su `Conferma`{.action} per applicare la modifica. e attendi il tempo necessario alla loro propagazione.
 
-![hostingconfiguration](images/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
+![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 
 ### 3 - Metodo 2: modificare la configurazione dell’hosting Web dal file ".ovhconfig" <a name="setting-ovhconfig"></a>
 
@@ -233,13 +233,13 @@ Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external} e 
 
 Per conoscere la password associata a un utente FTP, consulta le istruzioni fornite nella nostra guida ["Modificare la password di un utente FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
-![ovhconfig](images/tab-perso.png){.thumbnail}
+![ovhconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 
 #### 3.2 - Recuperare o creare il file ".ovhconfig"
 
 Una volta effettuato l’accesso allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), visualizzi tutti i file attualmente ospitati su questo spazio. Rimani posizionato sulla root dell’hosting (simbolo "/"). dovrebbe essere presente il file ".ovhconfig".
 
-![ovhconfig](images/ovhconfig-file.png){.thumbnail}
+![ovhconfig](/pages/assets/screens/other/web-tools/net2ftp/ovhconfig-file.png){.thumbnail}
 
 A questo punto, si presentano due possibilità:
 
