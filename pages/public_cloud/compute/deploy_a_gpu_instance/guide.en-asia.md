@@ -1,7 +1,7 @@
 ---
 title: 'Deploying a GPU instance'
 excerpt: 'Find out how to deploy a GPU instance on Linux or Windows'
-updated: 2024-06-28
+updated: 2024-07-01
 ---
 
 ## Objective
@@ -113,14 +113,14 @@ In the next step, go to the `Windows operating systems` tab and click ont the dr
 
 ![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
+Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). This process may take a few minutes.
+
 > [!warning]
 >
 > We cannot guarantee that the solution will work with all future versions of the NVIDIA driver.
 >
 > Before performing any update of the NVIDIA driver, we strongly recommend that you take a snapshot that will allow you to do a rollback, if necessary.
 >
-
-Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). This process may take a few minutes.
 
 #### Connecting to a Windows OS instance
 
