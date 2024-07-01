@@ -18,7 +18,7 @@ A transferência de um nome de domínio Ionos requer um processo específico.
 >
 > O [agente de registo](/links/web/domains-what-is-registrar) de um domínio representa a organização/fornecedor acreditado junto do qual o domínio está registado/subscrito por um particular, uma associação ou uma organização. É nesse mesmo agente de registo que renova a subscrição do seu nome de domínio (geralmente uma vez por ano).
 >
-> Se a OVHcloud já é o agente registador do seu domínio **antes** de iniciar o procedimento que se seguirá, a transferência de entrada de domínio não é o procedimento adequado. O procedimento de transferência de domínio aplica-se *** apenas aos nomes de domínio registados noutro agente de registo que não a OVHcloud.
+> Se a OVHcloud já é o agente registador do seu domínio **antes** de iniciar o procedimento que se seguirá, a transferência de entrada de domínio não é o procedimento adequado. O procedimento de transferência de domínio aplica-se **apenas** aos nomes de domínio registados noutro agente de registo que não a OVHcloud.
 >
 > Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é uma **mudança de contactos**. O procedimento é descrito em [este guia](/pages/account_and_service_management/account_information/managing_contacts).
 > Se também necessitar de alterar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre [mudança de proprietário dos nomes de domínio](/pages/web_cloud/domains/trade_domain).
@@ -62,6 +62,12 @@ Deve também:
 > - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >
 > Certifique-se também de que o agente de registo atual não vai fechar outros serviços, como, por exemplo, os endereços de correio eletrónico associados ao domínio.
+>
+> Se, para além da transferência do seu domínio, pretender migrar os serviços que lhe estão associados (site, e-mail, etc.), consulte primeiro o guia "[Migrar o site e os serviços associados para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" antes de prosseguir.
+> Este guia explica em detalhe como migrar o conjunto dos seus serviços sem interrupções.
+>
+> Se apenas transferir o domínio sem mudar de serviço, certifique-se de que recupera os servidores DNS ativos para o domínio junto do seu **agente de registo** atual para os introduzir diretamente na etapa 3 do guia "[Transferir domínio para a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
+> Isto evitará que interrompa a associação entre o seu nome de domínio e os seus serviços externos associados.
 >
 
 ### Etapa 1 - Desativar o registo privado
