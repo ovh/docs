@@ -1,7 +1,7 @@
 ---
 title: 'Transfer domeny home.pl do OVHcloud'
 excerpt: 'Dowiedz się więcej o transferze domeny z systemu home.pl do OVHcloud'
-updated: 2024-04-11
+updated: 2024-07-01
 ---
 
 > [!primary]

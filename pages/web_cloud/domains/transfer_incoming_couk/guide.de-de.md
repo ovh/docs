@@ -1,7 +1,7 @@
 ---
 title: Transfer einer .uk-Domain zu OVHcloud
 excerpt: Erfahren Sie hier, wie Sie Domainnamen mit UK-Ländercode zu OVHcloud transferieren
-updated: 2024-07-01
+updated: 2024-06-28
 ---
 
 > [!primary]

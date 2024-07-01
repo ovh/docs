@@ -1,7 +1,7 @@
 ---
 title: 'Transferring a .uk domain name to OVHcloud'
 excerpt: 'Find out how to transfer a .uk or related domain name to OVHcloud'
-updated: 2024-07-01
+updated: 2024-06-28
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: 'Transfer domeny.uk do OVHcloud'
 excerpt: 'W tym przewodniku znajdziesz różne informacje dotyczące transferu domeny .uk lub podobnej do OVHcloud'
-updated: 2024-07-01
+updated: 2024-06-28
 ---
 
 > [!primary]

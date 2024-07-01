@@ -1,7 +1,7 @@
 ---
 title: Trasferire un dominio.uk in OVHcloud
 excerpt: Questa guida ti mostra come trasferire un dominio.uk o equiparato a OVHcloud.
-updated: 2024-07-01
+updated: 2024-06-28
 ---
 
 > [!primary]

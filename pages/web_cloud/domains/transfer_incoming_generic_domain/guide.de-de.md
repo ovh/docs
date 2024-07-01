@@ -1,7 +1,7 @@
 ---
 title: "Domainnamen zu OVHcloud transferieren"
 excerpt: "Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren"
-updated: 2024-07-01
+updated: 2024-06-28
 ---
 
 > [!primary]

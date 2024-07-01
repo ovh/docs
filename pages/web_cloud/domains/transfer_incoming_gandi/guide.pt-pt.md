@@ -1,7 +1,7 @@
 ---
 title: 'Transferir um domínio Gandi para a OVHcloud'
 excerpt: 'Descubra diferentes informações sobre a transferência de um nome de domínio Gandi para a OVHcloud'
-updated: 2024-07-01
+updated: 2024-06-28
 ---
 
 > [!primary]

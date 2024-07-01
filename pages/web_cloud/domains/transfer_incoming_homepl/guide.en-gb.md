@@ -1,7 +1,7 @@
 ---
 title: "Transferring a home.pl domain name to OVHcloud"
 excerpt: "Find out how to transfer a home.pl domain name to OVHcloud"
-updated: 2024-04-11
+updated: 2024-07-01
 flag: hidden
 ---
 
