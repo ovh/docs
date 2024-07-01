@@ -293,10 +293,7 @@ Vous pouvez maintenant suivre les étapes du guide suivant : [Guide 2 - VMware C
 
 ### Notions réseau utiles
 
-Voici la liste des guides que vous pouvez lire pour renforcer vos connaissances réseau au sein de l'univers OVHcloud :
-
-- [Bloc IP - Gérer et configurer un bloc IP /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29).
-- [Concepts - Réseau Public / Privé](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
+Pour renforcer vos connaissances réseau au sein de l'univers OVHcloud consultez la page : <https://www.ovhcloud.com/fr/network/>.
 
 ///
 

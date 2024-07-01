@@ -294,10 +294,7 @@ You can now follow the steps in the following guide: [“Guide 2 - VMware Cloud 
 
 ### Useful network concept
 
-Here is the list of guides you can read to strengthen your network knowledge within the OVHcloud universe:
-
-- [IP block - Manage and configure an IP block /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29).
-- [Concepts - Public/Private Network](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
+To strengthen your network knowledge within the OVHcloud universe, please visit: <https://www.ovhcloud.com/en-gb/network/>.
 
 ///
 
