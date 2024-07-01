@@ -15,7 +15,7 @@ Your .pl domain name is currently filed with a registrar, and you want to switch
 > This guide explains in detail how to migrate all your services without any service interruptions.
 >
 > If you only transfer your domain name without moving your other services, please ensure that you retrieve the active DNS servers for your domain name from your current **registrar**, to enter them directly in step 3 of our guide on [Transferring your domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
-> This will prevent you from interrupting the association between your domain name and your associated external services.
+> This will prevent the separation of your domain name from your associated external services.
 >
 
 By transferring your domain name, you will change your registry. You can transfer your domain name to OVHcloud by creating an order. This process usually takes between one and ten days.

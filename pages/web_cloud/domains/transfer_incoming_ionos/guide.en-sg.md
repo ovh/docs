@@ -61,7 +61,7 @@ To transfer a Ionos domain name, you will need to follow a specific procedure.
 > This guide explains in detail how to migrate all your services without any service interruptions.
 >
 > If you only transfer your domain name without moving your other services, please ensure that you retrieve the active DNS servers for your domain name from your current **registrar**, to enter them directly in step 3 of our guide on [Transferring your domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
-> This will prevent you from interrupting the association between your domain name and your associated external services.
+> This will prevent the separation of your domain name from your associated external services.
 >
 
 ### Step 1 - Disable private registration
