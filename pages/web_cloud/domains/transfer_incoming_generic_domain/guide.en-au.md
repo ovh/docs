@@ -24,6 +24,12 @@ By transferring your domain name, you will its **registrar**. You can transfer y
 >
 > If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](/pages/web_cloud/domains/trade_domain).
 >
+> If, in addition to transferring your domain name, you would like to migrate the services associated with it (website, email, etc.), please read our guide on [Migrating your website and associated services to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh), before continuing.
+> This guide explains in detail how to migrate all your services without any service interruptions.
+>
+> If you are only transferring your domain name without moving your other services, please ensure that you retrieve the active DNS servers for your domain name from your current **registrar**, so that you can enter them directly in step 3 of this guide.
+> This will prevent you from interrupting the association between your domain name and your associated external services.
+>
 
 ## Requirements
 
