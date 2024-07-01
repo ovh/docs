@@ -49,7 +49,7 @@ Accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}. Nella sezion
 
 Nel riquadro **IPv6**, copia l'record e passa allo step successivo.
 
-![IPv6](images/find-ipv6.png){.thumbnail}
+![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 
 ### Step 2: configurare la zona DNS attiva del dominio
 
@@ -66,7 +66,7 @@ Nella sezione `Web Cloud`{.action}, clicca su `Domini`{.action}. Seleziona il tu
 
 Inserisci l'indirizzo IPv6 precedentemente copiato utilizzando il tipo di record **AAAA**.
 
-![IPv6](images/add-dns-zone-entry-aaaa.png){.thumbnail}
+![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-dns-zone-entry-aaaa.png){.thumbnail}
 
 ## Per saperne di più <a name="go-further"></a>
 

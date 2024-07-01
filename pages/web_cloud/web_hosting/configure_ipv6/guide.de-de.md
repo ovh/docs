@@ -48,7 +48,7 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Si
 
 Kopieren Sie im Abschnitt **IPv6** die Adresse und gehen Sie zum nächsten Schritt über.
 
-![IPv6](images/find-ipv6.png){.thumbnail}
+![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 
 ### Schritt 2: DNS-Zone Ihres Domainnamens konfigurieren
 
@@ -65,7 +65,7 @@ Klicken Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen 
 
 Tragen Sie die zuvor kopierte IPv6-Adresse als Typ **AAAA** ein.
 
-![IPv6](images/add-dns-zone-entry-aaaa.png){.thumbnail}
+![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-dns-zone-entry-aaaa.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
