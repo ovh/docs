@@ -66,7 +66,7 @@ To log in to your storage space, you will need the following:
 
 These elements were sent to you in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
 
-![websitesetup](images/tab-pro.png){.thumbnail}
+![websitesetup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 The information associated with your storage space will now appear, and you should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_change_password). If you no longer have the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -115,7 +115,7 @@ If you want to create a new database with OVHcloud, log in to the [OVHcloud Cont
 
 Now click the `Create a database`{.action} button, or if this button is not visible, click on `Actions`{.action} and then `Create a database`{.action}. Now follow the information shown.
 
-![websitesetup](images/tab.png){.thumbnail}
+![websitesetup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 #### 3. Import the existing database
 
