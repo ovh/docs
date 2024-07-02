@@ -70,11 +70,11 @@ Connectez-vous à [l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_co
 
 Créez un fichier « crypt.php » dans ce « dossier racine ».
 
-![root_folder](images/root-folder.png){.thumbnail}
+![root_folder](/pages/assets/screens/other/web-tools/net2ftp/root-folder.png){.thumbnail}
 
 Ouvrez ou créez le dossier destiné à être protégé de votre site web. Dans notre exemple ci-dessous, il s'agira du dossier « admin ». Créez, dans ce répertoire, un fichier « .htpasswd » et un fichier « .htaccess ».
 
-![admin-folder](images/admin-folder.png){.thumbnail}
+![admin-folder](/pages/assets/screens/other/web-tools/net2ftp/admin-folder.png){.thumbnail}
 
 Pour utiliser correctement les fichiers « .htaccess » et « .htpasswd », vous devez connaître et respecter les règles suivantes : 
 

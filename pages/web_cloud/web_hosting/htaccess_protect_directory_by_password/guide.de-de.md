@@ -73,11 +73,11 @@ Loggen Sie sich im [FTP-Bereich](/pages/web_cloud/web_hosting/ftp_connection) Ih
 
 Erstellen Sie die Datei "crypt.php" in diesem Wurzelverzeichnis.
 
-![root_folder](images/root-folder.png){.thumbnail}
+![root_folder](/pages/assets/screens/other/web-tools/net2ftp/root-folder.png){.thumbnail}
 
 Öffnen oder erstellen Sie den Ordner, dessen Zugang Sie sichern möchten. Im folgenden Beispiel ist das der Ordner "admin". Erstellen Sie in diesem Verzeichnis die Dateien ".htpasswd" und ".htaccess".
 
-![admin-folder](images/admin-folder.png){.thumbnail}
+![admin-folder](/pages/assets/screens/other/web-tools/net2ftp/admin-folder.png){.thumbnail}
 
 Beachten Sie diese Regeln, um mit den Dateien ".htpasswd" und ".htaccess" korrekt umzugehen:
 
