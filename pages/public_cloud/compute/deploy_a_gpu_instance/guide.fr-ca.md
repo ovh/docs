@@ -64,7 +64,7 @@ sudo reboot
 
 > [!primary]
 >
-> La commande Linux peut varier en fonction de votre distribution. En cas de doute, consultez le guide officiel de votre version de Linux.
+> La commande Linux peut varier en fonction de votre distribution. En cas de doute, consultez la documentation officielle de votre version de Linux.
 > 
 
 Une fois l'instance redémarrée, la carte graphique apparaît dans l'utilitaire NVIDIA :
