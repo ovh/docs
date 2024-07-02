@@ -1,12 +1,12 @@
 ---
 title:'OKMS au sein de Hosted Private Cloud VMware on OVHcloud'
-      'Chiffrement de VM avec OKMS dans VMware on OVHcloud'
-      'Commande et activation de OKMS pour VMware on OVHcloud'
+'Chiffrement de VM avec OKMS dans VMware on OVHcloud'
+'Commande et activation de OKMS pour VMware on OVHcloud'
 excerpt:'Découvrez comment mettre en place le service de gestion de clé OVHcloud (OKMS) au sein de Hosted Private Cloud VMware on OVHcloud pour sécuriser efficacement vos données sensibles'
-        'Découvrez comment activer le chiffrement de données dans votre environnement VMware on OVHcloud grâce au KMS managé OVHcloud (OKMS)'
-        'Protégez votre confidentialité et assurez la sécurité de vos informations sensibles VMware on OVHcloud avec la solution avancée de gestion de clé KMS OVHcloud'
-        'Activation du chiffrement avec la solution KMS OVHcloud (OKMS) pour sécurisez votre Hosted Private Cloud VMware on OVHcloud'
-        'Confidentialité renforcée avec le KMS OVHcloud (OKMS) au sein de Hosted Private Cloud VMware on OVHcloud'
+'Découvrez comment activer le chiffrement de données dans votre environnement VMware on OVHcloud grâce au KMS managé OVHcloud (OKMS)'
+'Protégez votre confidentialité et assurez la sécurité de vos informations sensibles VMware on OVHcloud avec la solution avancée de gestion de clé KMS OVHcloud'
+'Activation du chiffrement avec la solution KMS OVHcloud (OKMS) pour sécurisez votre Hosted Private Cloud VMware on OVHcloud'
+'Confidentialité renforcée avec le KMS OVHcloud (OKMS) au sein de Hosted Private Cloud VMware on OVHcloud'
 updated: 2023-07-02
 ---
 <style>
@@ -25,13 +25,13 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> OVHcloud KMS (Okms) est disponible en bêta. Ce guide peut être incomplet et sera mis à jour lors de la bêta.
+> OVHcloud KMS (OKMS) est disponible en bêta. Ce guide peut être incomplet et sera mis à jour lors de la bêta.
 > N’hésitez pas à nous faire part de vos feedbacks sur le canal [Discord](https://discord.gg/ovhcloud){.external} dédié.
 >
 
 ## Objectif
 
-**Commander et configurer un KMS OVHcloud (Okms) pour activer le chiffrement de vos machines virtuelles Hosted Private Cloud VMware on OVHcloud.**
+**Commander et configurer un KMS OVHcloud (OKMS) pour activer le chiffrement de vos machines virtuelles Hosted Private Cloud VMware on OVHcloud.**
 
 ## Prérequis
 
@@ -42,41 +42,31 @@ details[open]>summary::before {
 - Une clef de chiffrement RSA
 - Un certificat SSL (PEM)
 
-or 
+or
 
 - Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Avoir souscrit une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 - Avoir accès à l’interface de gestion vSphere de votre PCC (Hosted Private Cloud VMware on OVHcloud).
-- Avoir lu les guides : 
-  - [Activer KMS au sein de Hosted Private Cloud VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_vmware_overall).
-  - [Premier pas (KMS + IAM + vSphere)](/pages/manage_and_operate/kms/quick-start).
+- Avoir lu les guides :
+    - [Activer KMS au sein de Hosted Private Cloud VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_vmware_overall).
+    - [Premier pas (KMS + IAM + vSphere)](/pages/manage_and_operate/kms/quick-start).
 
 ## En pratique
 
-/// details | Introduction, listing url, appels api okms
+/// details | Introduction
 
 Pour plus d'information sur les choix qui s'offre à vous avec KMS et Hosted Private Cloud VMware on OVHcloud, lisez le guide [Activer KMS au sein de Hosted Private Cloud VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_vmware_overall).
 
-Nous allons dans ce guide configurer le chiffrement de machines virtuelles avec le KMS OVHcloud OKMS au sein d'un environnement Hosted Private Cloud VMware on OVHcloud avec le KMS OVHcloud (OKMS).
+Nous allons ici configurer le chiffrement de machines virtuelles avec le KMS OVHcloud OKMS au sein d'un environnement Hosted Private Cloud VMware on OVHcloud.
 
-OVHcloud KMS (Okms) est le service centralisé de chiffrement entièrement managé pour sécuriser vos données dans vos applications et vos services OVHcloud.
+### Urls OKMS
 
-### Urls Okms
-
-| Type    | URL                              | Region              | OKMS Region enum |
-|---------|----------------------------------|---------------------|------------------|
-| KMIP    | eu-west-rbx.okms.ovh.net         | France - Roubaix    | EU_WEST_RBX      |
-| KMIP    | eu-west-rbx.okms.ovh.net         | France - Roubaix    | EU_WEST_RBX      |
-| REST    | eu-west-rbx.okms.ovh.net         | France - Roubaix    | EU_WEST_RBX      |
-| Swagger | swagger-eu-west-rbx.okms.ovh.net | France - Roubaix    | EU_WEST_RBX      |
-| KMIP    | eu-west-sbg.okms.ovh.net         | France - Strasbourg | EU_WEST_SBG      |
-| KMIP    | eu-west-sbg.okms.ovh.net         | France - Strasbourg | EU_WEST_SBG      |
-| REST    | eu-west-sbg.okms.ovh.net         | France - Strasbourg | EU_WEST_SBG      |
-| Swagger | swagger-eu-west-sbg.okms.ovh.net | France - Strasbourg | EU_WEST_SBG      |
-| KMIP    | eu-west-gra.okms.ovh.net         | France - Graveline | EU_WEST_SBG      |
-| KMIP    | eu-west-gra.okms.ovh.net         | France - Graveline  | EU_WEST_GRA      |
-| REST    | eu-west-gra.okms.ovh.net         | France - Graveline | EU_WEST_GRA      |
-| Swagger | swagger-eu-west-gra.okms.ovh.net | France - Graveline | EU_WEST_GRA      |
+| Type    | URL                              |
+|---------|----------------------------------|
+| KMIP    | eu-west-rbx.okms.ovh.net         |
+| KMIP    | eu-west-rbx.okms.ovh.net         |
+| REST    | eu-west-rbx.okms.ovh.net         |
+| Swagger | swagger-eu-west-rbx.okms.ovh.net |
 
 ## Listing des appels API KMS Hosted Private Cloud VMware on OVHcloud
 
@@ -114,100 +104,24 @@ OVHcloud KMS (Okms) est le service centralisé de chiffrement entièrement manag
 
 ///
 
-## Étape 1 - Commande d'un KMS OVHcloud (Okms) au sein de HPC VMware on OVHcloud
+# Guide KMS HPC
 
-/// details | Comment commander un KMS OVHcloud pour HPC VMware on OVHcloud?
+## Step 1 - Order an OVHcloud KMS (OKMS) within VMware on OVHcloud HPC
 
-### Via le control panel OVHcloud:
+/// details | Étape 1
 
-Pour commander un fournisseur de clés KMS OVHcloud depuis le control panel Hosted Private Cloud on OVHcloud.
-
-Vous devez vous connecter au [control panel OVHcloud](/links/manager).
-
-Vous êtes invité à vous rendre dans : `Hosted Private Cloud | Identité, Sécurité & Opérations | Key Management Service`.{.action}
-
-Si vous n'avez pas de serveur KMS, cliquez sur : `Commander un KMS`{.action}.
-
-Vous êtes dans "Commander un KMS", choisissez la région.
-
-Les clés de chiffrement et certificats d’accès de ce KMS seront stockées dans la région indiquée. Ils pourront être utilisés dans tous les produits OVHcloud sans distinction de région.
-
-Vous avez le choix à ce jour entre : 
-
-- `Europe - France Roubaix`{.action}.
-- `Europe - France Strasbourg`{.action}.
-- `Europe - France Graveline`{.action}.
-
-Une fois votre choix fait.
-
-Si vous n'avez pas pu completer la commande, lancez ce lien : <https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX))))>
-
-### Via l'api OVHcloud:
-
+///
+## Step 2 - Activate OVHcloud KMS (OKMS) with vCenter
+/// details | Étape 2
 
 ///
 
-## Étape 2 - Activation du KMS OVHcloud
+## Step 3 - Enabling VM encryption in vSphere with OKMS
 
-/// details | Comment activer le KMS OVHcloud avec HPC VMware on OVHcloud
-
-## Via le control panel OVHcloud:
-
-Pour créer ou Importer un service de gestion de clé KMS depuis le control panel Hosted Private Cloud on OVHcloud.
-
-Vous devez vous connecter au [control panel OVHcloud](/links/manager).
-
-Aller dans :  `Hosted Private Cloud | VMware | Votre PCC | Sécurité`.{.action}
-
-![Manager Hpc Security KMS](/pages/assets/screens/control_panel/).
-
-## Via l'api OVHcloud:
-
-> [!api]
->
-> POST /dedicatedCloud/{serviceName}/vmEncryption/kms
->
-> **Paramètres:**
->
-> - serviceName: La référence de votre PCC, `pcc-XX-XX-XX-XX`.
->
-> **REQUEST BODY** (application/json) :
-> - description: Description de l'Okms.
-> - ip: L'IP publique de l'Okms.
-> - sslThumbprint: L'empreinte ssl de l'Okms.
-    > REQUEST BODY * application/json
->
-> Copy-past (with the Okms parametres) :
-> ```Shell
-> {
->  "description": "string",
->  "ip": "192.0.2.0",
->  "sslThumbprint": "string"
-> }
-> ```
+/// details | Étape 3
 
 ///
 
-## Étape 3 - Activation du chiffrement des machines virtuelles dans vSphere avec Okms
+## Go further
 
-/// details | Comment activer le chiffrement de VM dans vSphere avec Okms.
-
-## Via le control panel OVHcloud:
-
-
-## Via l'api OVHcloud:
-
-> [!api]
-> 
-> POST /okms/resource/{okmsId}/credential
-> 
-> **Parametres:**
-> - okmsId: uuid du serveur Okms (Okms ID)
->
-> 
-
-///
-
-## Allez plus loin
-
-Rejoignez et échangez avec notre [communauté d'utilisateurs](/links/community).
+Join and chat with our [community of users](/links/community).
