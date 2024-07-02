@@ -1,7 +1,7 @@
 ---
 title: 'VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud'
 excerpt: 'Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud'
-updated: 2024-07-01
+updated: 2024-07-02
 ---
 
 <style>
@@ -171,7 +171,7 @@ Pour finir, cliquez sur `TERMINER`{.action}.
 
 Cette étape est nécessaire sinon vous ne pourrez pas finir de créer votre réseau à l'étape 3.
 
-Nous allons maintenant créer une **Passerelle Edge** pour que notre espace IP puisse être accédé depuis le réseau privé que nous allons créer dans la partie 3 de ce guide.
+Nous allons maintenant créer une **Passerelle Edge** pour que notre espace IP puisse être accédé depuis le réseau privé que nous allons créer dans la troisième partie de cette étape.
 
 Pour accéder à la section Passerelles Edge (Edge Gateway), cliquez sur : `Mise en réseaux | Passerelles Edge`{.action}.
 
@@ -207,11 +207,11 @@ Cela force l'utilisation des espaces IP aux passerelles Provider, et permet ains
 
 Quand vous avez fini, cliquez sur `SUIVANT`{.action}.
 
-3\. Nous arrivons à la sous partie 3, de l'étape de création d'une passerelle Edge. 
+3\. Nous arrivons à la sous partie 3 de l'étape de création d'une passerelle Edge.
 
-Le choix des `Passerelles fournisseurs`{.action}.
+Il s'agit du choix des `Passerelles fournisseurs`{.action}.
 
-Choisissez la passerelle par défaut de votre fournisseur vDC: `graveline-gateway`.
+Choisissez la passerelle par défaut de votre fournisseur vDC : `graveline-gateway`.
 
 Une fois votre choix effectué (étape 3 : Création d'une Passerelle Edge), cliquez sur `SUIVANT`{.action}.
 
@@ -403,7 +403,8 @@ Votre réseau est maintenant entièrement créé et prêt à l'emploi.
 ## Aller plus loin
 
 Vous pouvez maintenant suivre les étapes du prochain guide :
-- **Coming soon** : Guide 3 : « VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ?».
+
+- **Bientôt disponible** : Guide 3 : « VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ?».
 
 Si vous rencontrez des difficultés avec le réseau au sein de VCD on OVHcloud, consultez le guide « [VMware Cloud Director on OVHcloud - Network Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) ».
 
@@ -411,4 +412,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le Discord channel dédié : <https://discord.gg/ovhcloud>.
 
-Pour rejoindre et échanger avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

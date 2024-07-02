@@ -1,7 +1,7 @@
 ---
 title: 'VMware Cloud Director - network concepts'
 excerpt: 'Discover the powerful networking capabilities of VMware Cloud Director on OVHcloud with this comprehensive guide (key concepts and features)'
-updated: 2024-07-01
+updated: 2024-07-02
 ---
 
 <style>
@@ -288,13 +288,13 @@ You can now follow the steps in the following guide: [“Guide 2 - VMware Cloud 
 
 - Guide 1: VMware Cloud Director on OVHcloud - Network - Concepts
 - Guide 2: [“VMware Cloud Director on OVHcloud - Network - Creating network components via the control panel VCD on OVHcloud”](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
-- **Coming soon** : « Guide 3 - VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud ?».
-- **Coming soon** : « Guide 4 - VMware Cloud Director on OVHcloud - Network - How to operate an IP block with VCD on OVHcloud ?».
-- **Coming soon** : « Guide 5 - VMware Cloud Director on OVHcloud - Network - How to use distributed firewalling (East - West) ?».
+- **Coming soon** : "Guide 3 - VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud".
+- **Coming soon** : "Guide 4 - VMware Cloud Director on OVHcloud - Network - How to operate an IP block with VCD on OVHcloud".
+- **Coming soon** : "Guide 5 - VMware Cloud Director on OVHcloud - Network - How to use distributed firewalling (East - West)".
 
 ### Useful network concept
 
-To strengthen your network knowledge within the OVHcloud universe, please visit: <https://www.ovhcloud.com/en-gb/network/>.
+To strengthen your network knowledge within the OVHcloud universe, visit our website page: <https://www.ovhcloud.com/en-gb/network/>.
 
 ///
 

@@ -1,7 +1,7 @@
 ---
 title: 'Creating network components from the VCD control panel'
 excerpt: 'Find out how to easily create network components within the VCD on OVHcloud control panel'
-updated: 2024-07-01
+updated: 2024-07-02
 ---
 
 <style>
@@ -171,7 +171,7 @@ Finally, click on `FINISH`{.action}.
 
 This step is necessary, otherwise you will not be able to finish creating your network in step 3.
 
-We will now create an **Edge Gateway** so that our IP space can be accessed via the private network, which we will create in part 3 of this guide.
+We will now create an **Edge Gateway** so that our IP space can be accessed via the private network, which we will create in the third subpart of this step.
 
 To access the Edge Gateways section, click on `Networking | Edge Gateways`{.action}.
 
@@ -205,11 +205,9 @@ This forces the use of IP spaces with the Provider gateways and optimize the app
 
 When done, click on `NEXT`{.action}.
 
-3\. We will now move to sub-part 3 of the Edge gateway creation. 
+3\. We will now move to sub-part 3 of the Edge gateway creation which is the choice of the `Provider Gateways`{.action}.
 
-The choice of the `Provider Gateways`{.action}.
-
-Choose the default gateway for your vDC provider : `graveline-gateway`{.action}.
+Choose the default gateway for your vDC provider: `graveline-gateway`{.action}.
 
 Once you have chosen (step 3: Create an Edge Gateway), click `NEXT`{.action}.
 
@@ -239,7 +237,7 @@ Finally, (step 5: Create an Edge Gateway) click on `FINISH`{.action}.
 
 We will now create a new network and attach our preconfigured settings.
 
-Go to the Networking section by clicking: `Networking | Networks`{.action}.
+Go to the Networking section by clicking `Networking | Networks`{.action}.
 
 Then click on: `NEW`{.action}.
 
@@ -322,7 +320,7 @@ To continue (step 3: Create a private network), click on `NEXT`{.action}.
 Once your IP range has been allocated, check that there is no space before and after the dash
 between the two IP ranges:
 
-- `172.16.1.2**->-<-**172.16.1.100`{.action}.
+- `172.16.1.2**->-<-**172.16.1.100`.
 
 As well as at the beginning and end of your 2 IPs, ->**172.16.1.2**<- and ->**172.16.1.100**<-.
 
@@ -410,4 +408,4 @@ If you require training or technical assistance in implementing our solutions, c
 
 Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated Discord channel: <https://discord.gg/ovhcloud>.
 
-To join and exchange with our [community of users](/links/community).
+Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: 'VMware Cloud Director - Concepts réseau'
 excerpt: 'Découvrez les puissantes capacités de mise en réseau de VMware Cloud Director on OVHcloud avec ce guide complet sur les concepts et fonctionnalités clés'
-updated: 2024-07-01
+updated: 2024-07-02
 ---
 
 <style>
@@ -286,14 +286,14 @@ Vous pouvez maintenant suivre les étapes du guide suivant : [Guide 2 - VMware C
 ### Networking pour VMware Cloud Director on OVHcloud - Index des guides :
 
 - Guide 1 : VMware Cloud Director on OVHcloud - Network - Concepts
-- Guide 2 : [« VMware Cloud Director on OVHcloud - Network - Créer des composants réseau via le control panel VCD on OVHcloud »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
-- **Coming soon** : Guide 3 : « VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ?».
-- **Coming soon** : Guide 4 : « VMware Cloud Director on OVHcloud - Network - Comment exploiter un block IP avec VCD on OVHcloud ?».
-- **Coming soon** : Guide 5 : « VMware Cloud Director on OVHcloud - Network - Comment utiliser le distributed firewalling (East - Ouest) ?».
+- Guide 2 : [VMware Cloud Director on OVHcloud - Network - Créer des composants réseau via le control panel VCD on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
+- **Bientôt disponible** : Guide 3 : « VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ?».
+- **Bientôt disponible** : Guide 4 : « VMware Cloud Director on OVHcloud - Network - Comment exploiter un block IP avec VCD on OVHcloud ?».
+- **Bientôt disponible** : Guide 5 : « VMware Cloud Director on OVHcloud - Network - Comment utiliser le distributed firewalling (East - Ouest) ?».
 
 ### Notions réseau utiles
 
-Pour renforcer vos connaissances réseau au sein de l'univers OVHcloud consultez la page : <https://www.ovhcloud.com/fr/network/>.
+Pour renforcer vos connaissances réseau au sein de l'univers OVHcloud consultez la page <https://www.ovhcloud.com/fr/network/>.
 
 ///
 
