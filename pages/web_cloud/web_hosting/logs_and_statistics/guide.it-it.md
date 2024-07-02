@@ -36,13 +36,13 @@ La schermata visualizzata è composta da 4 sezioni:
 - [Statistiche dell'infrastruttura](#infra-stats): presenta statistiche grafiche (richieste HTTP e SQL, comandi FTP, utilizzo CPU, connessioni in uscita, ecc.)
 - [Gestione degli utenti](#admin-user): visualizza gli utenti autorizzati ad accedere alle statistiche
 
-![statistics and logs interface](images/tab.png){.thumbnail}
+![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 ### Statistiche delle visite <a name="website-stats"></a>
 
 Per controllare e gestire al meglio il traffico dei siti Web, è possibile utilizzare **OVHcloud Web Statistics**, uno strumento di statistiche delle visite e di misurazione dell'audience dei siti Web ospitati sul piano di hosting.
 
-![ows dashboard](images/ows-presentation.gif){.thumbnail}
+![ows dashboard](/pages/assets/screens/other/web-tools/logs/ows-presentation.gif){.thumbnail}
 
 La dashboard di**OVHcloud Web Statistics** presenta 7 sezioni:
 
@@ -67,7 +67,7 @@ Il campo `Period selection` in alto a destra ti permette di selezionare un perio
 
 Potrete visualizzare i log grezzi del vostro sito web con un ritardo di circa 5 minuti.
 
-![osl statistiques dashboard](images/osl-statistics-board.png){.thumbnail}
+![osl statistiques dashboard](/pages/assets/screens/other/web-tools/logs/osl-statistics-board.png){.thumbnail}
 
 Diversi tipi di log sono a tua disposizione:
 
@@ -83,7 +83,7 @@ Diversi tipi di log sono a tua disposizione:
 
 In questa sezione sono riportate le attività dell’infrastruttura del tuo hosting Web, per visualizzare il consumo delle risorse messe a disposizione.
 
-![infrastructure statistics](images/infrastructure-statistics-graph.png){.thumbnail}
+![infrastructure statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 Dal menu a comparsa in alto a sinistra è possibile visualizzare diversi tipi di grafici:
 
@@ -101,7 +101,7 @@ La creazione di un utente consente a una persona di accedere alle statistiche de
 
 Nella sezione `Gestione degli utenti`{.action}, clicca su `Crea un nuovo utente`{.action} e segui le istruzioni per completare la creazione di un nuovo utente.
 
-![create a new user](images/create-a-new-user.png){.thumbnail}
+![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
 
 Per accedere alle statistiche del tuo sito Web con un utente che hai creato, inserisci questo indirizzo sostituendo `000` con il numero del cluster del tuo hosting Web e `domain.tld` con il nome di dominio del tuo sito Web (senza i `www`):
 
@@ -119,7 +119,7 @@ Puoi anche recuperare il link di accesso alle statistiche / log direttamente dal
 6. Accedi alla sezione `Statistiche delle visite`{.action}.
 7. Clicca sul pulsante `Visualizza le statistiche`{.action}.
 
-![website visit statistics](images/view-statistics.png){.thumbnail}
+![website visit statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
 
 Nella nuova pagina, recupera l’URL che trovi nella barra degli indirizzi del tuo browser.
 
