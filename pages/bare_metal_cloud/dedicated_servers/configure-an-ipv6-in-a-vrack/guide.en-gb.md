@@ -61,9 +61,14 @@ While requesting a new Additional IPv6 block, it's important to note that the al
 
 **<ins>Actions</ins>**  
 
-<b>To request new Additional IPv6 block</b> please submit your participation request in Alpha product stage using [this form](https://survey.ovh.com/index.php/483751?lang=en).
+<details>
+<summary> <b>Request new Additional IPv6 block</b> </summary>
+<blockquote>
 
-Once your request will be processed, we will inform you via email about Additional IPv6 block delivery.
+Content of steps
+
+</blockquote>
+</details>
 
 <details>
 <summary> <b>Check the Status of Your IPv6 Block Request</b> </summary>
@@ -85,8 +90,19 @@ In this section we will present basic IPv6 setup for your vRack connected hosts.
 
 The example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belong to the first /64 subnet from a given public /56 Additional IPv6 block. Both leverage the vRack interface for public IPv6 connectivity.
 
+#### Manager configuration
 
-#### APIv6 setup
+<details>
+<summary> <b>Content on manager config</b></summary>
+<blockquote>
+
+content of steps
+<img src="/images/post-ipv6.png" alt="api post add block"/>
+
+</blockquote>
+</details>
+
+#### APIv6 setup (alternative way)
 
 <details>
 <summary> <b>Attributing Additional IPv6 to a vRack</b></summary>
