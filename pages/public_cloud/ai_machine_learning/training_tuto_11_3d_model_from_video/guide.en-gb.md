@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Turn a video into a 3D model using NVIDIA Neuralangelo
 excerpt: How to use AI Training to run NVIDIA Neuralangelo research project to extract a 3D model from a video
-updated: 2024-06-03
+updated: 2024-07-02
 ---
 
 ## Objective
@@ -32,7 +32,6 @@ The processing will follow 3 main steps :
 Each step will be run using an AI-Training job and these jobs will share their data using an AI-Training volume synced
 with a S3 bucket.
 
-![From video to 3D model](images/banner.png)
 
 ### Makefile
 
