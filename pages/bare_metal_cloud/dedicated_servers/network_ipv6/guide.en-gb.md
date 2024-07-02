@@ -12,7 +12,7 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 
 > [!primary]
 >
-> For the server that supports vRack, there is another option availabled which is more flexible configurinf Addtionnal Ipv6 in Vrack. You cans this find the instructions in this guide: [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838)
+> For the server that supports vRack, there is another option that provides more flexibility in configuring additional IPv6 in vRack. You can find the instructions in this guide: [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838).
 >
 
 > [!warning]
