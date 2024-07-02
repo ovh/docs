@@ -1,21 +1,22 @@
 ---
 title: Local Zone Compute - Features, Capabilities and Limitations
-excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
+excerpt: Find out the current features, capabilities and limitations of Local Zones for Public Cloud
 updated: 2024-04-08
 ---
 
 ## Objective
 
-Local Zones are an extension of Regions that bring OVHcloud services closer to specific locations, offering reduced latency and improved performances for applications.
-Local Zones are strategically placed in proximity to areas with high user demand. Their main goal is to minimize the time it takes to transfer data between the user and the cloud, in order to make services faster and more responsive, and meet Data residency requirements.
+Local Zones are an extension of [regions](/links/bare-metal/regions) that bring OVHcloud services closer to specific locations, offering reduced latency and improved performances for applications.
 
-Find more information on our [dedicated Local Zone Compute page](https://www.ovhcloud.com/en-au/public-cloud/local-zone-compute/).
+Local Zones are strategically placed in proximity to areas with high user demand. Their main goal is to minimize the time it takes to transfer data between the user and the cloud, in order to make services faster and more responsive, and meet data residency requirements.
+
+Find more information on our [dedicated Local Zone Compute page](/links/public-cloud/local-zones).
 
 **Explore the features and capabilities of current and future Local Zones instances.**
 
-## Available Features
+## Available features
 
-| Action | General Availability (March 2024) |
+| Action | General Availability |
 | --- | --- |
 | Instances | Yes |
 | User-data/cloud-init Support | Yes|
@@ -32,7 +33,7 @@ Find more information on our [dedicated Local Zone Compute page](https://www.ovh
 
 ## Capabilities and limitations
 
-All instance features which aren't listed here, like rebooting instances or Object Storage support will be released in the next couple months as the goal is to support the entire features set which is supported in global regions.
+All instance features which are not yet available in Local Zones will be implemented in the next months. Our goal is to support the entire feature set that is already available in global regions as soon as possible.
 
 ## Feedback
 

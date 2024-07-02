@@ -19,7 +19,7 @@ Więcej informacji znajdziesz na naszej [stronie poświęconej instancjom Local 
 
 ## Dostępne funkcje
 
-| Operacja | Ogólna dostępność (marzec 2024) |
+| Operacja | Ogólna dostępność |
 | --- | --- |
 | Instancje | Tak |
 | Pomoc User-data/cloud-init | Tak|

@@ -19,7 +19,7 @@ Para más información, consulte nuestra [página dedicada a las instancias de L
 
 ## Características disponibles
 
-| Acción | Disponibilidad general (marzo de 2024) |
+| Acción | Disponibilidad general |
 | --- | --- |
 | Instancias | Sí |
 | Soporte user-data/cloud-init | Sí|

@@ -19,7 +19,7 @@ Encontre mais informações na nossa [página dedicada às instâncias Local Zon
 
 ## Funcionalidades disponíveis
 
-| Ação | Disponibilidade geral (março de 2024) |
+| Ação | Disponibilidade geral |
 | --- | --- |
 | Instâncias | Sim |
 | Suporte User-data/cloud-init | Sim|

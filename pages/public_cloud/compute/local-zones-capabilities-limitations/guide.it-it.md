@@ -19,7 +19,7 @@ Per maggiori informazioni, accedi alla nostra [pagina dedicata alle istanze Loca
 
 ## Funzionalità disponibili
 
-| Azione | Disponibilità generale (marzo 2024) |
+| Azione | Disponibilità generale |
 | --- | --- |
 | Istanze | Sì |
 | Supporto user-data/cloud-init | Sì|

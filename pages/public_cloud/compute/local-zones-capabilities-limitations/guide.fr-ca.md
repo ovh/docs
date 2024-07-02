@@ -15,7 +15,7 @@ Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zon
 
 ## Fonctionnalités disponibles
 
-| Action | Disponibilité générale (mars 2024) |
+| Action | Disponibilité générale |
 | --- | --- |
 | Instances | Oui |
 | Support User-data/cloud-init | Oui|

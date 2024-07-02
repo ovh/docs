@@ -20,7 +20,7 @@ Weitere Informationen finden Sie auf unserer [Seite für Local Zones](https://ww
 
 ## Verfügbare Funktionen
 
-| Aktion | Allgemeine Verfügbarkeit (März 2024) |
+| Aktion | Allgemeine Verfügbarkeit |
 | --- | --- |
 | Instanzen | Ja |
 | User-data/cloud-init Support | Ja|
