@@ -36,7 +36,7 @@ Cliquez sur l'onglet `Security`{.action} pour afficher la liste des extensions l
 
 Dans le menu principal de MainWP, cliquez sur `Extensions`{.action} puis sur `Manage Extensions`{.action}. L'extension Sucuri précédemment installée apparaît.
 
-![mainWP security](images/sucuri_extension.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/sucuri_extension.png){.thumbnail}
 
 Si ce n'est pas déjà fait, cliquez sur `Enable`{.action} puis sur `License`{.action} pour pouvoir utiliser l'extension.
 
@@ -44,19 +44,19 @@ Si ce n'est pas déjà fait, cliquez sur `Enable`{.action} puis sur `License`{.a
 
 Dans le menu principal de MainWP, cliquez sur `Sites`{.action} puis sélectionnez le site enfant de votre choix. En haut de l'écran, cliquez sur l'onglet `Security`{.action}.
 
-![mainWP security](images/security_tab.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/security_tab.png){.thumbnail}
 
 Pour effectuer un scan de sécurité sur votre site web, cliquez sur `Scan Website`{.action}.
 
-![mainWP](images/sucuri_scanner.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/sucuri_scanner.png){.thumbnail}
 
 Une fois le scan de sécurité effectué, une nouvelle ligne s'affiche, correspondant au rapport du scan de sécurité.
 
-![mainWP security](images/report_security_line.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/report_security_line.png){.thumbnail}
 
 Cliquez sur `Show Report`{.action} pour visualiser le rapport de sécurité.
 
-![mainWP security](images/security_report_details.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/security_report_details.png){.thumbnail}
 
 Le rapport du scan de sécurité fournit de nombreuses informations importantes concernant la sécurité de votre site web :
 
@@ -72,15 +72,15 @@ Pensez à effectuer régulièrement des scans de sécurité. Avec Sucuri, il est
 
 Dans le menu principal de MainWP, cliquez sur `Sites`{.action} puis sélectionnez le site enfant de votre choix. En haut de l'écran, cliquez sur l'onglet `Security`{.action}. Sur le dashboard qui s'affiche, vous pouvez voir si des problèmes de sécurité ont été identifiés par Sucuri.
 
-![mainWP security](images/security_overview.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/security_overview.png){.thumbnail}
 
 Dans notre exemple, Sucuri nous indique que trois problèmes de sécurité ont été identifiés. Cliquez sur `Fix all issues`{.action} pour résoudre tous les problèmes de sécurité. Si vous voulez en savoir plus sur les problèmes identifiés, cliquez sur l'onglet `Security`{.action} en haut de l'interface. La liste des problèmes de sécurité s'affiche.
 
-![mainWP security](images/security_list.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/security_list.png){.thumbnail}
 
 Pour résoudre un problème, identifiez la ligne correspondante et cliquez sur le bouton `Fix`{.action} à droite de la ligne.
 
-![mainWP security](images/security_unfix.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/security_unfix.png){.thumbnail}
 
 Une fois le problème résolu, vous pouvez annuler les modifications apportées en cliquant sur le bouton `Unfix`{.action}.
 
