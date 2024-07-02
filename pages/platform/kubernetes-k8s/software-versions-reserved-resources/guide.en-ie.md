@@ -3,6 +3,8 @@ title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved r
 excerpt: ''
 slug: kubernetes-plugins-software-versions-reserved-resources
 section: Technical resources
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/kubernetes/kubernetes-plugins-software-versions-reserved-resources/'
 updated: 2023-03-24
 ---
 
@@ -122,8 +124,8 @@ This table sums up the reserved resources on b2 flavors:
 
 | Flavor | vCore | Reserved CPU (ms) | Total RAM | Reserved RAM (MB) | Total storage (GB) | Reserved storage (GB) |
 |-|-|-|-|-|-|-|
-| b2-7 | 2 | 160 | 7 | 1,85 | 50 | 22 |
-| b2-15 | 4 | 170 | 15 | 2,25 | 100 | 30 |
-| b2-30 | 8 | 190 | 30 | 3 | 200 | 43 |
-| b2-60 | 16 | 230 | 60 | 4,5 | 400 | 66 |
-| b2-120 | 32 | 310 | 120 | 7,5 | 400 | 66 |
+| b2-7 | 2 | 160 | 7 | 1,978 | 50 | 22 |
+| b2-15 | 4 | 170 | 15 | 2,378 | 100 | 30 |
+| b2-30 | 8 | 190 | 30 | 3,128 | 200 | 43 |
+| b2-60 | 16 | 230 | 60 | 4,628 | 400 | 66 |
+| b2-120 | 32 | 310 | 120 | 7,628 | 400 | 66 |
