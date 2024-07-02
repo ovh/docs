@@ -97,7 +97,7 @@ Pour récupérer la bonne adresse IP cible de votre hébergement OVHcloud, consu
 
 **Exemple** : Pour le nom de domaine « domain.tld », le rendu des entrées de votre nom de domaine doit être le suivant :
 
-![hosting](images/dashboard-mx-a-cname-ca.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-mx-a-cname-ca.png){.thumbnail}
 
 > [!success]
 >
@@ -148,7 +148,7 @@ Déclarez/autorisez votre nom de domaine externe sur votre hébergement web OVHc
 
 **Exemple** : pour le nom de domaine « domain.tld » :
 
-![hosting](images/dashboard-a-txt-cname-ca.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-a-txt-cname-ca.png){.thumbnail}
 
 **La modification des entrées DNS « A », « CNAME » et « TXT » doit être effectuée auprès du fournisseur DNS actuel de votre nom de domaine et nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effectif.**
 
