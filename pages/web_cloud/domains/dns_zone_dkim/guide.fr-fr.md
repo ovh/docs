@@ -397,7 +397,7 @@ Suivez les **5 étapes** en cliquant successivement sur chacun des 5 onglets ci-
 >>  ],
 >>  "activeSelector": "ovhmo3465680-selector1",
 >>  "autoconfig": true,
->  "status": "enabled"
+>>  "status": "enabled"
 >> }
 >>
 >> - Si vous constatez bien les valeurs `"status": "set"` sur les 2 sélecteurs, cela signifie qu'ils sont bien configurés.
@@ -1161,6 +1161,10 @@ Retrouvez ci-dessous les états qui peuvent bloquer le fonctionnement de votre D
 >> - `toConfigure` : La configuration du DKIM est en attente des paramètres DNS du nom de domaine. Vous devez renseigner manuellement les enregistrements DNS dans la zone du nom de domaine. Pour cela; appuyez-vous sur l'étape « [Configuration complète du DKIM](#confemail) » de ce guide. <br>
 >> - `error` : Le processus d'installation a rencontré une erreur. Nous vous invitons à ouvrir un [ticket auprès du support](https://help.ovhcloud.com/csm?id=csm_get_help) en précisant le nom de domaine concerné.
 >>
+>> Au niveau des sélecteurs vous avez également 2 états relatifs à une erreur:
+>>
+>> - `toSet` : le sélecteur n'est pas configuré dans la zone DNS du nom de domaine. Appuyez-vous sur [l'étape 4 de « la configuration complète du DKIM » pour E-mails (MX Plan)](#confemail).
+>> - `toFix` : le sélecteur a bien été configuré dans la zone DNS du nom de domaine mais les valeurs sont incorrectes. Appuyez-vous sur [l'étape 4 de « la configuration complète du DKIM » pour E-mails (MX Plan)](#confemail).
 
 ## Aller plus loin
 
