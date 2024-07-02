@@ -104,7 +104,7 @@ Para conocer la dirección IP de destino de su alojamiento de OVHcloud, consulte
 
 **Ejemplo**: Para el nombre de dominio "domain.tld", la representación de las entradas de su dominio debe ser la siguiente:
 
-![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
@@ -155,7 +155,7 @@ Declare/autorice su dominio externo en su alojamiento web de OVHcloud en la guí
 
 **Ejemplo**: para el dominio "domain.tld":
 
-![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-a-txt-cname.png){.thumbnail}
 
 **La modificación de los registros DNS "A", "CNAME" y "TXT" debe realizarse ante el actual proveedor DNS de su dominio y necesita un tiempo de propagación de 4 a 24 horas máximo antes de ser plenamente efectivo.**
 

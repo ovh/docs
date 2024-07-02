@@ -76,11 +76,11 @@ Conéctese al [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_c
 
 Cree un archivo "crypt.php" en esta carpeta raíz.
 
-![root_folder](images/root-folder.png){.thumbnail}
+![root_folder](/pages/assets/screens/other/web-tools/net2ftp/root-folder.png){.thumbnail}
 
 Abra o cree la carpeta destinada a la protección de su sitio web. En nuestro ejemplo, esta es la carpeta "admin". Cree un archivo ".htpasswd" y un archivo ".htaccess" en este directorio.
 
-![admin-folder](images/admin-folder.png){.thumbnail}
+![admin-folder](/pages/assets/screens/other/web-tools/net2ftp/admin-folder.png){.thumbnail}
 
 Para utilizar correctamente los archivos ".htaccess" y ".htpasswd", debe conocer y respetar las siguientes reglas: 
 

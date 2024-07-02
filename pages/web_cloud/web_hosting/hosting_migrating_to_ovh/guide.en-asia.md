@@ -96,7 +96,7 @@ To retrieve the correct target IP address for your OVHcloud hosting plan, please
 
 **Example**: For the domain name "domain.tld", the domain name records should look as follows:
 
-![hosting](images/dashboard-mx-a-cname-ca.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-mx-a-cname-ca.png){.thumbnail}
 
 > [!success]
 >
@@ -142,7 +142,7 @@ Declare and authorise your external domain name on your OVHcloud web hosting pla
 
 **Example** for the "domain.tld" domain name:
 
-![hosting](images/dashboard-a-txt-cname-ca.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-a-txt-cname-ca.png){.thumbnail}
 
 **The modification of DNS records of the type "A", "CNAME" and "TXT" must be done at your domain name’s current DNS provider and will take between 4 and 24 hours to propagate fully.**
 

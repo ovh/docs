@@ -102,7 +102,7 @@ Aby dowiedzieć się, jaki adres IP jest odpowiedni dla Twojego hostingu OVHclou
 
 **Przykład**: W przypadku domeny "domain.tld" wpisy domeny muszą być renderowane w następujący sposób:
 
-![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
@@ -153,7 +153,7 @@ Zarządzaj zewnętrzną domeną na hostingu OVHcloud za pomocą naszego przewodn
 
 **Przykład**: dla domeny "domain.tld":
 
-![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-a-txt-cname.png){.thumbnail}
 
 **Zmiana wpisów DNS "A", "CNAME" i "TXT" musi zostać wykonana przez aktualnego dostawcę DNS Twojej domeny. Czas propagacji wynosi maksymalnie 4-24 godzin, zanim stanie się w pełni skuteczny.**
 
