@@ -37,6 +37,10 @@ Introduzca un nombre para la copia de seguridad en la página siguiente. Lea la 
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
+No es posible seguir el progreso de la copia de seguridad en tiempo real, sin embargo, en la sección `Instance Backup`{.action} de la sección `Storage`{.action} del menú de la izquierda, el estado se mostrará como "Realizando el backup..." durante el proceso.
+
+![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+
 Una vez terminada la copia de seguridad, estará disponible en la sección `Instance Backup`{.action} en la sección `Storage`{.action} del menú de la izquierda.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}

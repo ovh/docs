@@ -37,6 +37,10 @@ Introduza um nome para o backup na página seguinte. Consulte as informações t
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
+Não é possível acompanhar o progresso do backup em tempo real, no entanto, na secção `Instance Backup`{.action} na rubrica `Storage`{.action} no menu à esquerda, o estado será apresentado como "Backup em curso" durante o processo.
+
+![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+
 Uma vez terminado o backup, este estará disponível na secção `Instance Backup`{.action} na rubrica `Storage`{.action} no menu à esquerda.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}

@@ -37,6 +37,10 @@ Geben Sie auf der folgenden Seite eine Bezeichnung für das Backup ein. Nehmen S
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
+Es ist nicht möglich, den Fortschritt des Backups in Echtzeit zu verfolgen, im Bereich `Instance Backup`{.action} unter `Storage`{.action} im linken Menü wird der Status während des Prozesses als "Backup wird ausgeführt" angezeigt.
+
+![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+
 Sobald das Backup bereit ist, wird es im Bereich `Instance Backup`{.action} unter `Storage`{.action} im linken Menü angezeigt.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}

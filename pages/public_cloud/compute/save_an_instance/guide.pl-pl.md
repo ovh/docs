@@ -37,6 +37,10 @@ Wpisz nazwę kopii zapasowej na następnej stronie. Zapoznaj się z informacjami
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
+Nie jest możliwe śledzenie postępu tworzenia kopii zapasowej w czasie rzeczywistym, jednak w sekcji `Instance Backup`{.action} w rubryce `Storage`{.action} w menu po lewej stronie status będzie wyświetlany jako "Trwa tworzenie kopii".
+
+![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+
 Po utworzeniu kopii zapasowej będzie ona dostępna w sekcji `Instance Backup`{.action} pod `Storage`{.action} w menu po lewej stronie.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
