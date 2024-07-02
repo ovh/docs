@@ -121,12 +121,13 @@ You have these kind of informations
 <img src="/images/101.png" alt="mange my vrack 01"/>
 <br/>
 
-Then select additional options and click `Next`{.action} button
-
 <img src="/images/102.png" alt="mange my vrack 02"/>
 <br/>
 
-In the right side, in the vRack column, you have a IP section and you can add a new sub network clicking `Add sud network`{.action} button
+On the left is listed possible options (eligible services to be configured).
+
+On the right you see what is already configured with your vRack.   
+You have a IP section and you can add a new subnet clicking `Add sud network`{.action} button
 
 <img src="/images/103.png" alt="vrack select"/>
 <br/>
@@ -136,7 +137,7 @@ In this way you have this modal to entrer your new address
 <img src="/images/107.png" alt="continue"/>
 <br/>
 
-You can activate/deactivate SLAAC at any time using this radio button
+You can also activate/deactivate SLAAC at any time using this radio button
 
 <img src="/images/104.png" alt="continue"/>
 <br/>
