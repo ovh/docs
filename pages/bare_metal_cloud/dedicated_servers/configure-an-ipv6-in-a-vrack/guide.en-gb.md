@@ -63,24 +63,11 @@ While requesting a new Additional IPv6 block, it's important to note that the al
 <summary> <b>Request new Additional IPv6 block</b> </summary>
 <blockquote>
 
-Select the IP address version you want, here the IPv6
+You can order your new addtional IPv6 block [here](https://feat-additional-ipv6-feature-manager.eu.dtci.ovhcloud.tools/container/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip)
 
-<img src="/images/011.png" alt="IPv6 select"/>
-<br/>
+All you have to do is follow the simple step-by-step instructions. At the end you need to select the right region to configure your new IPv6.
 
-Then select additional options and click `Next`{.action} button
-
-<img src="/images/02.png" alt="additional options"/>
-<br/>
-
-Then select the vrack for which you want to add this ip and click `Next`{.action} button
-
-<img src="/images/03.png" alt="vrack select"/>
-<br/>
-
-Click `Continue my order`{.action} button
-
-<img src="/images/010.png" alt="continue"/>
+<img src="/images/location.png" alt="location"/>
 <br/>
 </blockquote>
 </details>
