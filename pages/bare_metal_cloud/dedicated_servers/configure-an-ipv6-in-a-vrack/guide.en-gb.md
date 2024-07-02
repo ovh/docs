@@ -78,7 +78,7 @@ All you have to do is follow the simple step-by-step instructions. At the end yo
 <summary> <b>Control Panel </b> </summary>
 <blockquote>
 
-....
+You will see new prefix available for your vrack in specific vrack edit page (on the left)
 
 </blockquote>
 </details>
