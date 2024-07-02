@@ -64,11 +64,11 @@ The 3 main steps (prepare, process, extract) have their targets in the Makefile 
 
 ### Prepare projects
 
-Clone neuralangelo and init git repositories:
+Clone Neuralangelo and init git repositories:
 
-neuralangelo is the main project we will use, including neuralangelo itself and the tools configuration such as COLMAP
+Neuralangelo is the main project we will use, including Neuralangelo itself and the tools configuration such as COLMAP.
 
-We need BlenderNeuralangelo for its tooling on top of blender. We will use to adjust our input data
+We need BlenderNeuralangelo for its tooling on top of Blender. We will use it to adjust our input data.
 
 ```shell
 make neuralangelo BlenderNeuralangelo
@@ -98,8 +98,7 @@ gdown 1yWoZ4Hk3FgmV3pd34ZbW7jEqgqyJgzHy -O neuralangelo/input/
 
 ### Configure an S3 bucket for ovhai
 
-To be able to share data between the AI Training jobs we will run as well as providing code and data to our workloads,
-we need to configure an AI datastore pointing to a S3 endpoint.
+To be able to share data between the AI Training jobs we will run as well as providing code and data to our workloads, we need to configure an AI datastore pointing to an S3 endpoint.
 
 ```shell
 ovhai datastore add NEURALANGELO <s3_endpoint_url> <s3_region> <s3_access_key> --store-credentials-locally
@@ -135,8 +134,7 @@ make push-data
 
 Neuralangelo works on pictures of the Object. These pictures are extracted from the source video using [COLMAP](https://colmap.github.io/).
 
-We are here triggering the extraction of pictures from the input video and generate data allowing us in the next step
-to adjust the area of interest we will ask neuralangelo to work on.
+We are here triggering the extraction of pictures from the input video and generating data allowing us (in the next step) to adjust the area of interest we will ask Neuralangelo to work on.
 
 Read detailed documentation for data preparation [here](https://github.com/NVlabs/neuralangelo/blob/main/DATA_PROCESSING.md#self-captured-video-sequence).
 
@@ -158,7 +156,7 @@ make prepare
 >			bash projects/neuralangelo/scripts/preprocess.sh lego input/lego.mp4 2 object"
 > ```
 >
-> Note: It takes approximately 8 min to run on 1 `ai1-1-gpu` GPU (V100S).
+> **Note**: It takes approximately 8 minutes to run on 1 `ai1-1-gpu` GPU (V100S).
 > 
 
 You can follow the training job status using the following commands based on `ovhai job get` and `ovhai job logs`:
@@ -197,7 +195,7 @@ To get better results, we need to adjust the results bounding sphere.
 
 Detailed documentation is available [here](https://github.com/NVlabs/neuralangelo/blob/main/DATA_PROCESSING.md#inspect-and-adjust-colmap-results).
 
-Here we chose the blender from command line way:
+Here we chose the Blender from command line way:
 
 ```shell
 make adjust
@@ -212,7 +210,7 @@ make adjust
 
 Follow the process described [here](https://github.com/mli0603/BlenderNeuralangelo?tab=readme-ov-file#2-locating-the-control-panel) to adjust the bounding sphere.
 
-Push the adjusted configuration in the S3 bucket
+Push the adjusted configuration in the S3 bucket:
 
 ```shell
 make push-data
@@ -220,8 +218,7 @@ make push-data
 
 ### Process data and generate model
 
-Now we are triggering an AI Training job running Neuralangelo to train its model over the input data prepared in
-previous steps.
+Now we are triggering an AI Training job running Neuralangelo to train its model over the input data prepared in the previous steps.
 
 ```shell
 make process
@@ -271,7 +268,7 @@ Once the job is done, we can run the 3D model extraction that will work with the
 
 ### Extract meshes from model
 
-The AI Training job we are running now will generate a 3D meshes `.ply` file out of the model
+The AI Training job we are running will now generate a 3D mesh `.ply` file out of the model:
 
 ```shell
 make extract
@@ -324,7 +321,7 @@ Once the job is done, we get generated data from the S3 bucket:
 make pull-data
 ```
 
-The `.ply` file is now available in `neuralangelo/logs/experiments/lego/` and we are now able to open it with blender.
+The `.ply` file is now available in `neuralangelo/logs/experiments/lego/` and we are now able to open it with Blender.
 
 ## Go further
 
