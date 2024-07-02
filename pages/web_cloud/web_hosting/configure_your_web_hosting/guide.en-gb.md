@@ -116,7 +116,7 @@ You can find out which PHP version is currently used by your web hosting plan in
 
 - **In the OVHcloud Control Panel**: Log in to the [OVHcloud Control Panel](/links/manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information`{.action} tab, find the version below *Global PHP version*. 
 
-![phpversion](images/change-php-version-step1.png){.thumbnail}
+![phpversion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/change-php-version-step1.png){.thumbnail}
 
 > [!primary]
 > If a blue round symbol is present, wait a few minutes for the version to update.
@@ -190,7 +190,7 @@ Now that you know the different editable settings for your OVHcloud Web Hosting 
 Log in to your [OVHcloud Control Panel](/links/manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. Make sure you are positioned on the tab
 `General information`{.action}. On the right-hand side of `Global PHP version`{.action} located almost in the center of the page, click the `...`{.action} button, then `Modify configuration`{.action}.
 
-![hostingconfiguration](images/modify-hosting-configuration.png){.thumbnail}
+![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
 
 > [!primary]
 >
@@ -217,7 +217,7 @@ In the window that pops up, you can choose between two options. Select the one t
 
 Once you are ready, click `Confirm`{.action} to apply the modification. Wait a few moments for the process to complete.
 
-![hostingconfiguration](images/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
+![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 
 ### 3 - Method 2: Modify the web hosting plan configuration with the ".ovhconfig" file <a name="setting-ovhconfig"></a>
 
@@ -229,13 +229,13 @@ Log in to your [OVHcloud Control Panel](/links/manager){.external}, then go to t
 
 For the FTP user password, please refer to our guide on [Modifying an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password) if necessary.
 
-![ovhconfig](images/tab-perso.png){.thumbnail}
+![ovhconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 
 #### 3.2 - Create or open the .ovhconfig file
 
 Once you have logged in to your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection), you can view all of the files currently hosted on it. Inside the root directory of your hosting (which is indicated by a `/`) you should find the .ovhconfig file.
 
-![ovhconfig](images/ovhconfig-file.png){.thumbnail}
+![ovhconfig](/pages/assets/screens/other/web-tools/net2ftp/ovhconfig-file.png){.thumbnail}
 
 There are two ways of doing this:
 

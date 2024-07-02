@@ -15,7 +15,7 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 - Konfiguracja [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) Twojej domeny nie została poprawnie skonfigurowana w katalogu docelowym
 - Folder docelowy, do którego Twoja nazwa domeny nie zawiera plików **"index.html"** lub **"index.php"**
 
-![indeks](images/index-of.png){.thumbnail}
+![indeks](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
 
 **Dowiedz się, jak naprawić wyświetlanie strony "Index of".**
 

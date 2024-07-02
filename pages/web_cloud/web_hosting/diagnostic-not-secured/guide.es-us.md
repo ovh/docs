@@ -14,10 +14,10 @@ En caso de que su sitio web no sea accesible, puede aparecer varios mensajes de 
 
 |Navegador|Mensaje de error correspondiente|
 |-|---|
-|Chrome :<br>« La conexión no es privada »|![notsecured_chrome](images/notsecured-chrome.png){.thumbnail}|
-|Firefox :<br>« Advertencia: riesgo potencial de seguridad a continuación »|![notsecured_firefox](images/notsecured-firefox.png){.thumbnail}|
-|Edge :<br>« Su conexión no es privada »|![notsecured_edge](images/notsecured-edge.png){.thumbnail}|
-|Safari :<br>« Esta conexión no es privada »|![notsecured_safari](images/notsecured-safari.png){.thumbnail}|
+|Chrome :<br>« La conexión no es privada »|![notsecured_chrome](/pages/assets/screens/other/browsers/errors/notsecured-chrome.png){.thumbnail}|
+|Firefox :<br>« Advertencia: riesgo potencial de seguridad a continuación »|![notsecured_firefox](/pages/assets/screens/other/browsers/errors/notsecured-firefox.png){.thumbnail}|
+|Edge :<br>« Su conexión no es privada »|![notsecured_edge](/pages/assets/screens/other/browsers/errors/notsecured-edge.png){.thumbnail}|
+|Safari :<br>« Esta conexión no es privada »|![notsecured_safari](/pages/assets/screens/other/browsers/errors/notsecured-safari.png){.thumbnail}|
 
 **Descubra cómo resolver los errores del tipo « Su conexión no es privada ».**
 
@@ -50,7 +50,7 @@ Para encontrar la dirección IP de su [hosting OVHcloud](/links/web/hosting), ha
 
 En la pestaña `Información general`{.action}, indique la dirección IPV4 y/o IPV6 de su alojamiento.
 
-![hosting-general-informations](images/find-ipv4-and-ipv6.png){.thumbnail}
+![hosting-general-informations](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 
 #### Verificar la dirección IP en la zona DNS
 
@@ -60,7 +60,7 @@ Haga clic en `Dominios`{.action} de su [área de cliente de OVHcloud](/links/man
 
 Seleccione la pestaña `Zona DNS`{.action} y anote el destino del registro de tipo `A` para su dominio:
 
-![zone-dns-ip](images/dashboard-entry-a.png){.thumbnail}
+![zone-dns-ip](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
 
 #### Realizar las acciones necesarias
 
@@ -69,15 +69,15 @@ Seleccione la pestaña `Zona DNS`{.action} y anote el destino del registro de ti
 |La dirección IP indicada en la [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) corresponde a la de su alojamiento compartido.|pase a el [etapa 2](#step2).|
 |La dirección IP indicada en la zona no concierne ningún alojamiento de su [cuenta OVHcloud](/links/manager), pero aparece en la [lista de servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Compruebe que no tiene un alojamiento con esta dirección IP en cualquiera de sus otras [cuentas OVHcloud](/links/manager) si ha creado más de uno. Si lo necesita, contacte con su webmaster o los [partners de OVHcloud](/links/partner) a este respecto.|
 |La dirección IP indicada en la zona no es la de su alojamiento y tampoco aparece en la [lista de servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Contacte su webmaster o los [partners de OVHcloud](/links/partner) a este respecto.|
-|En la pestaña `Zona DNS`{.action}, un mensaje indica que su dominio utiliza otros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit) y estos aparecen en forma de « ns **?** .ovh.net » o « dns **?** .ovh.net » (sustituya el « **?** » por el número de servidor DNS correspondiente):<br><br>![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}|Modifique los servidores DNS de su dominio para que se ajusten a los inscritos en los registros de tipo `NS` de la zona. Para ello, siga las indicaciones de [esta guía](/pages/web_cloud/domains/dns_server_edit)|
-|En la pestaña `Zona DNS`{.action}, un mensaje indica que su dominio utiliza otros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit) y estos no aparecen en el formato « ns **?** .ovh.net » o « dns **?** .ovh.net »:<br><br>![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}|Contacte con su webmaster o los [partners de OVHcloud](/links/partner) al respecto.|
-|Su nombre de dominio no aparece en la sección `Dominios`{.action} de su [área de cliente OVHcloud](/links/manager).<br><br>O la pestaña `Zona DNS`{.action} de su dominio se muestra de la siguiente manera:<br><br>![zonedns_ndd_pas_en_lec2](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Significa que su dominio no es gestionado desde su [área de cliente de OVHcloud](/links/manager).<br><br>Compruebe que no esté gestionado desde cualquiera de sus [cuentas OVHcloud](/links/manager), si ha creado varias.<br><br>También puede determinar su agente registrador y los servidores DNS a los que está asociado a través de nuestro herramienta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Si es necesario, contacte con su webmaster o los [partners de OVHcloud](/links/partner) al respecto.|
+|En la pestaña `Zona DNS`{.action}, un mensaje indica que su dominio utiliza otros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit) y estos aparecen en forma de « ns **?** .ovh.net » o « dns **?** .ovh.net » (sustituya el « **?** » por el número de servidor DNS correspondiente):<br><br>![warning_other_ovh_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifique los servidores DNS de su dominio para que se ajusten a los inscritos en los registros de tipo `NS` de la zona. Para ello, siga las indicaciones de [esta guía](/pages/web_cloud/domains/dns_server_edit)|
+|En la pestaña `Zona DNS`{.action}, un mensaje indica que su dominio utiliza otros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit) y estos no aparecen en el formato « ns **?** .ovh.net » o « dns **?** .ovh.net »:<br><br>![warning_external_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}|Contacte con su webmaster o los [partners de OVHcloud](/links/partner) al respecto.|
+|Su nombre de dominio no aparece en la sección `Dominios`{.action} de su [área de cliente OVHcloud](/links/manager).<br><br>O la pestaña `Zona DNS`{.action} de su dominio se muestra de la siguiente manera:<br><br>![zonedns_ndd_pas_en_lec2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|Significa que su dominio no es gestionado desde su [área de cliente de OVHcloud](/links/manager).<br><br>Compruebe que no esté gestionado desde cualquiera de sus [cuentas OVHcloud](/links/manager), si ha creado varias.<br><br>También puede determinar su agente registrador y los servidores DNS a los que está asociado a través de nuestro herramienta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Si es necesario, contacte con su webmaster o los [partners de OVHcloud](/links/partner) al respecto.|
 
 ### Etapa 2: verificar el certificado SSL de su alojamiento <a name="step2"></a>
 
 En la pestaña `Información general`{.action} de su alojamiento OVHcloud, consulte el apartado `Certificado SSL`.
 
-![ssl-certificate-in-general-tab](images/no-ssl-certificate.png){.thumbnail}
+![ssl-certificate-in-general-tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png){.thumbnail}
 
 #### Escenario 1: su alojamiento no contiene certificado SSL
 
@@ -96,7 +96,7 @@ Si ha contratado uno de los **certificados SSL de pago** de nuestro partner [SEC
 >
 > Para consultar todos los mensajes enviados por nuestros servicios, haga clic en el botón superior derecha de su [área de cliente de OVHcloud](/links/manager) y seleccione `Emails de servicio`{.action}.
 >
->![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-email-button.png){.thumbnail}
 >
 
 ## Más información <a name="go-further"></a>

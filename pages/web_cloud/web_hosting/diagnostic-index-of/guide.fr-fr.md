@@ -11,7 +11,7 @@ Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 - La configuration [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) de votre nom de domaine n’est pas correctement paramétrée vers votre répertoire cible
 - Le dossier cible vers lequel votre nom de domaine pointe ne contient pas de fichiers **« index.html »** ou **« index.php »**
 
-![index_of](images/index-of.png){.thumbnail}
+![index_of](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
 
 **Découvrez comment corriger l’affichage d’une page « Index of ».**
 

@@ -12,7 +12,7 @@ updated: 2023-11-22
 
 Der Fehlertyp "500 Internal Server Error" kann Ihre gesamte Website oder nur Teile davon betreffen. Er kann dauerhaft sein, sporadisch auftreten oder zu einer leeren Seite führen.
 
-![error500](images/http-500.png){.thumbnail}
+![error500](/pages/assets/screens/other/browsers/errors/http-500.png){.thumbnail}
 
 Diese Fehler können auch durch Updates entstehen, die **automatisch** von Komponenten Ihrer Website durchgeführt werden und daher ohne jegliche Änderung Ihrerseits auftreten.
 
