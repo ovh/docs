@@ -90,7 +90,7 @@ Es kann verschiedene Gründe geben, warum Ihre Website nicht wie erwartet funkti
 
 ### Was kann ich tun, wenn nach dem Online-Stellen meiner Website die Seite “Under construction“ von OVHcloud weiterhin angezeigt wird?
 
-![site-en-construction](images/site-en-construction.png){.thumbnail}
+![site-en-construction](/pages/assets/screens/other/browsers/errors/site-en-construction.png){.thumbnail}
 
 Bei der Installation Ihres Webhostings richtet OVHcloud diese Seite in Form einer **index.html** Datei ein, die im Wurzelverzeichnis `www` Ihres FTP-Servers enthalten ist.
 
@@ -100,7 +100,7 @@ Wenn Sie sich [für die manuelle Installation Ihrer Website entschieden](/pages/
 
 ### Was ist zu tun, wenn meine Website unter einer Webadresse vom Typ “xxxxx.cluster0xx.hosting.ovh.net“ angezeigt wird?
 
-![url-cluster](images/url-cluster.png){.thumbnail}
+![url-cluster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
 Zwei Szenarien sind möglich. Entweder wurde Ihre Website mit dieser Adresse erstellt oder der Zustand ist nach einer Änderung aufgetreten.
 
@@ -113,11 +113,11 @@ Zwei Szenarien sind möglich. Entweder wurde Ihre Website mit dieser Adresse ers
 
 Im ersten Fall löschen Sie Ihr Modul nach Durchführung aller notwendigen Backups aus dem Bereich `Hosting-Pakete` in Ihrem OVHcloud Kundencenter:
 
-![delete-a-module](images/delete-a-module.png){.thumbnail}
+![delete-a-module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module.png){.thumbnail}
 
 Löschen Sie dann die Datenbank im Tab desselben Namens ebenfalls im Bereich `Hosting-Pakete`:
 
-![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
+![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
  
 Starten Sie schließlich die Installation auf der gewünschten Domain unter Verwendung der [1-Klick-Modul-Funktion](/pages/web_cloud/web_hosting/cms_manage_1_click_module) neu.
 
@@ -138,7 +138,7 @@ Wenn Ihre Webseite eine Datenbank enthält, lesen Sie unsere Anleitung [Backup i
 
 ### Was kann ich tun, wenn meine Website auf das OVHcloud Webmail umgeleitet wird?
 
-![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
+![webmail-login-interface](/pages/assets/screens/website/webmail/webmail-login-interface.png){.thumbnail}
 
 Diese Anomalie ist Folge einer fehlerhaften Konfiguration auf der Ebene der [DNS-Server](/pages/web_cloud/domains/dns_server_edit) oder der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), die Ihrer Domain zugewiesen sind.
 
@@ -158,7 +158,7 @@ Vergleichen Sie die **Ziele** der `NS`-Einträge im Tab `DNS-Zone`{.action} mit 
 
 ### Was tun, wenn meine Website einen Fehler “Die Seite leitet sich nicht richtig um“ zeigt?
 
-![the-page-isnt-redirecting-properly](images/the-page-isnt-redirecting-properly.png){.thumbnail}
+![the-page-isnt-redirecting-properly](/pages/assets/screens/other/browsers/errors/the-page-isnt-redirecting-properly.png){.thumbnail}
 
 > [!alert]
 >
@@ -177,7 +177,7 @@ Wenn Sie über die Wiederherstellungen den Zugang zu Ihrer Webseite nicht wieder
 
 ### Was soll ich tun, wenn meine Website einen Fehler “503 error Backend fetch failed (Varnish cache)“ anzeigt?
 
-![503_varnish](images/http-503-backend-varnish.png){.thumbnail}
+![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
 Wenn Sie die [CDN Option](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) Ihres Hostings aktiviert haben, deaktivieren Sie den *Wartungsmodus* für Ihr WordPress oder PrestaShop.
 
@@ -185,7 +185,7 @@ Wenn Sie diese Option nicht aktiviert oder den *Wartungsmodus* verwendet haben, 
 
 ### Was soll ich tun, wenn meine Website einen Fehler “Your request has been blocked“ zeigt?
 
-![your-request-has-been-blocked](images/your-request-has-been-blocked.png){.thumbnail}
+![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
 Diese Nachricht zeigt an, dass die Art der HTTP-Anfrage, die Sie auf Ihrer Seite durchführen möchten, für eine begrenzte Zeit verboten ist. Überprüfen Sie in diesem Fall die [Logs Ihrer Website](/pages/web_cloud/web_hosting/logs_and_statistics), um herauszufinden, welche Anfragen zu dieser Sperrung geführt haben.
 
@@ -193,7 +193,7 @@ Kontaktieren Sie Ihren Webmaster oder einen [unserer Partner](/links/partner), u
 
 ### Was soll ich tun, wenn meine Website einen Fehler “Your IP has been banned“ zeigt?
 
-![your-ip-has-been-banned](images/your-ip-has-been-banned.png){.thumbnail}
+![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
 Diese Nachricht zeigt an, dass die IP-Adresse, die Sie verwenden, um sich mit Ihrer Seite zu verbinden, für eine begrenzte Zeit gesperrt ist. 
 
@@ -203,7 +203,7 @@ Kontaktieren Sie einen [unserer Partner](/links/partner), um den Code Ihrer Webs
 
 ### Ich habe eine Domain mit Sonderzeichen bestellt, die in meinem Kundencenter auf ungewöhnliche Weise geschrieben wird. Was soll ich tun?
 
-![idn-notation](images/idn-notation.png){.thumbnail}
+![idn-notation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
 Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in Ihrem Kundencenter mit [internationaler Notation (IDN)](https://de.wikipedia.org/wiki/Internationalisierter_Domainname){.external} angezeigt wird, funktioniert sie und wird andernorts vollkommen normal angezeigt. Die Webadresse Ihrer Website wird wie von Ihnen gewünscht angezeigt. Ihre E-Mail-Adressen werden auch bei Ihren Kontakten wie gewünscht angezeigt.
 

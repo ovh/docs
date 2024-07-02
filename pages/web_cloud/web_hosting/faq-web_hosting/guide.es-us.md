@@ -83,7 +83,7 @@ Consulte a continuación los [eventos en curso en nuestra infraestructura](https
 
 ### ¿Qué hacer si, después de publicar mi sitio web, la página "Sitio en construcción" de OVHcloud sigue apareciendo?
 
-![site-en-construction](images/site-en-construction.png){.thumbnail}
+![site-en-construction](/pages/assets/screens/other/browsers/errors/site-en-construction.png){.thumbnail}
 
 Al instalar el alojamiento, OVHcloud coloca esta página de espera como un archivo **index.html** contenido en la carpeta `www` de su servidor FTP.
 
@@ -93,7 +93,7 @@ Si ha elegido [Web hosting: Instalar un CMS manualmente](/pages/web_cloud/web_ho
 
 ### ¿Qué hacer si mi sitio web aparece en una dirección web de tipo "xxxx.cluster0xx.hosting.ovh.net"?
 
-![url-cluster](images/url-cluster.png){.thumbnail}
+![url-cluster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
 Dos escenarios son posibles. O bien el sitio web se ha creado con esta dirección, o bien esta ha aparecido como consecuencia de un cambio.
 
@@ -106,11 +106,11 @@ Dos escenarios son posibles. O bien el sitio web se ha creado con esta direcció
 
 En primer lugar, después de realizar todas las copias de seguridad necesarias, elimine el módulo desde el área de `Alojamientos` de OVHcloud.
 
-![delete-a-module](images/delete-a-module.png){.thumbnail}
+![delete-a-module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module.png){.thumbnail}
 
 A continuación, elimine la base de datos desde la pestaña con el mismo nombre situada a la derecha de su pantalla, en la sección `Alojamientos`:
 
-![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
+![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
  
 Por último, reinicie la instalación en el dominio deseado, utilizando la funcionalidad [Módulo en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
@@ -131,7 +131,7 @@ Si su sitio web incluye una base de datos, consulte nuestra guía [Restaurar una
 
 ### ¿Qué hacer si mi sitio web redirige al webmail-login-interface de OVHcloud?
 
-![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
+![webmail-login-interface](/pages/assets/screens/website/webmail/webmail-login-interface.png){.thumbnail}
 
 Esta anomalía indica una configuración errónea a nivel de los [servidores DNS](/pages/web_cloud/domains/dns_server_edit) o de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) asociada a su dominio.
 
@@ -151,7 +151,7 @@ Compare los `Objetivos` de las entradas de tipo `NS` indicadas en la pestaña `Z
 
 ### ¿Qué hacer si mi sitio web muestra un error "La página no se redirige correctamente"?
 
-![the-page-isnt-redirecting-properly](images/the-page-isnt-redirecting-properly.png){.thumbnail}
+![the-page-isnt-redirecting-properly](/pages/assets/screens/other/browsers/errors/the-page-isnt-redirecting-properly.png){.thumbnail}
 
 > [!alert]
 >
@@ -170,7 +170,7 @@ Si las restauraciones no le permiten restablecer el acceso a su sitio web, conta
 
 ### ¿Qué hacer si mi sitio web muestra un error "503 error Backend fetch failed"?
 
-![503_varnish](images/http-503-backend-varnish.png){.thumbnail}
+![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
 Si ha activado la [opción CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) del alojamiento, desactive el modo de *mantenimiento* en su sitio web WordPress o PrestaShop.
 
@@ -178,7 +178,7 @@ Si no ha activado esta opción ni ha utilizado el modo de *mantenimiento*, póng
 
 ### ¿Qué hacer si mi sitio web muestra un error "Your request has been blocked"?
 
-![your-request-has-been-blocked](images/your-request-has-been-blocked.png){.thumbnail}
+![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
 Este mensaje indica que el tipo de petición HTTP que intenta realizar en su sitio web está prohibido durante un tiempo limitado. En ese caso, [consulte los logs](/pages/web_cloud/web_hosting/logs_and_statistics) de su sitio web para ver qué peticiones han provocado el bloqueo.
 
@@ -186,7 +186,7 @@ Para ayudarle a corregir estas anomalías, contacte con su Webmaster o con uno d
 
 ### ¿Qué hacer si mi sitio web muestra un error "Your IP has been banned"?
 
-![your-ip-has-been-banned](images/your-ip-has-been-banned.png){.thumbnail}
+![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
 Este mensaje indica que la dirección IP que utiliza para conectarse a su sitio web está bloqueada durante un tiempo limitado. 
 
@@ -196,7 +196,7 @@ Por último, puede contactar con uno de nuestros partners (/links/partner) para 
 
 ### He contratado un dominio con acentos que aparece escrito de forma extraña en mi área de cliente. ¿Qué debo hacer?
 
-![idn-notation](images/idn-notation.png){.thumbnail}
+![idn-notation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
 No tiene que hacer nada al respecto. Aunque su dominio se muestre en [notación internacionalizada (IDN)](https://es.wikipedia.org/wiki/Nombre_de_dominio_internacionalizado){.external} en su área de cliente, funcionará y se mostrará de forma totalmente normal en otro lugar. La dirección web del sitio web se mostrará tal y como usted lo haya solicitado. Sus direcciones de correo también se mostrarán como desee con sus interlocutores.
 
