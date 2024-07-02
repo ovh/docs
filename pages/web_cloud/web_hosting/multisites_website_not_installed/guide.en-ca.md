@@ -66,7 +66,7 @@ To find the IP address of your web hosting plan, log in to your [OVHcloud Contro
 
 You will find the `IPv4` address in the box `General information`{.action}.
 
-![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
+![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 
 You can also find the IP address associated with your web hosting plan by using our guide “[List of IP addresses associated with OVHcloud web hosting plans](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)”.
 

@@ -102,7 +102,7 @@ Per recuperare l’indirizzo IP di destinazione corretto per il tuo hosting OVHc
 
 **Esempio**: per il dominio "domain.tld", il rendering delle voci del dominio deve essere il seguente:
 
-![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
@@ -153,7 +153,7 @@ Dichiarare/autorizzare un dominio esterno su un hosting Web OVHcloud tramite la 
 
 **Esempio**: per il dominio "domain.tld":
 
-![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-a-txt-cname.png){.thumbnail}
 
 **La modifica dei record DNS "A", "CNAME" e "TXT" deve essere effettuata presso l'attuale provider del tuo dominio e richiede un tempo massimo di propagazione da 4 a 24 ore prima di essere pienamente efficace.**
 

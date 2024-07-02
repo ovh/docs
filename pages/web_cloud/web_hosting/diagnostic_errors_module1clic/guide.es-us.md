@@ -131,7 +131,7 @@ Este mensaje significa que la **Carpeta raíz** asociada al dominio ya contiene 
 
 Para asociar su dominio a otro directorio, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, haga clic en la pestaña `Multisitio`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al dominio y seleccione `Modificar el dominio`{.action}. Por último, indique el nombre de un nuevo **Carpeta raíz** (se creará automáticamente un directorio vacío en su alojamiento web).
 
-![modify_root_folder](images/modify-domain.png){.thumbnail}
+![modify_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
 
 También puede conectarse a su alojamiento web a través del protocolo [FTP](/pages/web_cloud/web_hosting/ftp_connection) y eliminar el contenido de la carpeta. Después de realizar una copia de seguridad local del archivo o de vaciarlo moviendo todo su contenido a otro directorio FTP.
 

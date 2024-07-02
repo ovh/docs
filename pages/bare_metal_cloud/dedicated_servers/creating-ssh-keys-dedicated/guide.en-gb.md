@@ -5,7 +5,7 @@ updated: 2024-06-26
 ---
 
 ## Objective
-importkey
+
 Using the SSH protocol enables a secure channel over an unsecured network in a client-server architecture, connecting an SSH client with an SSH server. Creating an SSH key set provides you with a public and a private key. You can place the public key on a server, and then connect to it with a client that has the corresponding private key. If the public and private SSH keys match up, you will be logged in without needing a password.
 
 This is generally the most secure and convenient connection method.

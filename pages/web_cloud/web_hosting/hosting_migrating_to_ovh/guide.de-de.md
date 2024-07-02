@@ -102,7 +102,7 @@ Die richtige Ziel-IP-Adresse Ihres OVHcloud Hostings finden Sie in unserer Anlei
 
 **Beispiel**: Für den Domainnamen "domain.tld" müssen die Einträge wie folgt aussehen:
 
-![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
@@ -153,7 +153,7 @@ Deklarieren und authorisieren Sie Ihren externen Domainnamen auf Ihrem OVHcloud 
 
 **Beispiel** für "domain.tld":
 
-![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-a-txt-cname.png){.thumbnail}
 
 **Die Änderung der DNS-Einträge vom Typ "A", "CNAME" und "TXT" muss beim aktuellen DNS-Provider Ihres Domainnamens durchgeführt werden und erfordert eine Propagationszeit von 4 bis maximal 24 Stunden, bis die Änderungen voll wirksam sind.**
 

@@ -56,7 +56,7 @@ Asimismo, deberá decidir el método de restauración que quiera utilizar:
 >
 > La cuota utilizada aparece en la página que aparece:
 >
-> ![ftp quota](images/find-disk-space.png){.thumbnail}
+> ![ftp quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >
 > Si el espacio de almacenamiento FTP utilizado es superior a la mitad del espacio de almacenamiento FTP total de su paquete de alojamiento, recupere localmente algunos de los elementos de gran tamaño de su sitio web (puede utilizar [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)). A continuación, elimínelos de su almacenamiento FTP. Esto reducirá el tamaño del espacio de almacenamiento FTP que está utilizando y entonces podrá lanzar su restauración desde el área de cliente de OVHcloud.
 >
@@ -89,7 +89,7 @@ Una vez que haya elegido el método de restauración más adecuado en función d
 
 Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Restaurar una copia de seguridad`{.action}.
 
-![backup ftp](images/restore-backup.png){.thumbnail}
+![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 
 Se abrirá una ventana en la que deberá seleccionar la fecha de restauración deseada en el menú desplegable.
 
@@ -103,7 +103,7 @@ Se abrirá una ventana en la que deberá seleccionar la fecha de restauración d
 
 Una vez seleccionada la fecha, haga clic en el botón `Siguiente`{.action}. 
 
-![backup ftp](images/restore-backup-step-1.png){.thumbnail}
+![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
 
 Asegúrese de que no se ha perdido ningún archivo en el proceso de restauración (por ejemplo, cualquier archivo que hubiera guardado en su espacio de almacenamiento después de la fecha de restauración seleccionada). Como ya hemos indicado, la restauración borrará todos los datos actuales para sustituirlos por los de la copia de seguridad.
 
@@ -133,7 +133,7 @@ En primer lugar, debe decidir qué programa o interfaz web va a utilizar para co
 
 - **FTP Explorer**: Puede acceder desde el [área de cliente de OVHcloud](/links/manager){.external}. Para ello, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
 
-![backup ftp](images/ftp-explorer.png){.thumbnail}
+![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 El explorador se abrirá en una nueva ventana. Introduzca sus claves de acceso y haga clic en `Iniciar`{.action} para conectarse.
 
@@ -143,7 +143,7 @@ Una vez en la interfaz web o el programa elegido, deberá conectarse a su espaci
 
 Puede consultar esta información en la pestaña `FTP - SSH`{.action} de su alojamiento. Si no tiene la contraseña FTP, siga las indicaciones de la guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
-![backup ftp](images/login-infos.png){.thumbnail}
+![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
 Al conectarse, deberá añadir a su nombre de usuario FTP el sufijo correspondiente a la copia de seguridad que desee, como se indica en la siguiente tabla:
 
@@ -159,7 +159,7 @@ En la tabla anterior, no olvide sustituir el valor **usuarioftp** por su nombre 
 
 La forma de conectarse al espacio de almacenamiento varía en función de la interfaz web o el programa que utilice. La imagen de abajo muestra la pantalla de conexión de FTP Explorer.
 
-![backup ftp](images/login-interface-snap0.png){.thumbnail}
+![backup ftp](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
 
 #### 3. Descargar los archivos
 

@@ -69,7 +69,7 @@ Para encontrar o endereço IP do seu alojamento web, aceda à [Área de Cliente 
 
 Poderá consultar o endereço `IPv4` na caixa `Informações gerais`{.action}.
 
-![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
+![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 
 Pode também consultar o endereço IP associado ao seu alojamento web no nosso guia "[Lista dos endereços IP associados aos alojamentos web da OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 

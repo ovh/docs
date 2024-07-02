@@ -69,7 +69,7 @@ Um die IP-Adresse Ihres Webhostings zu finden, loggen Sie sich in Ihrem [OVHclou
 
 Die `IPv4` Adresse finden Sie in der Box `Allgemeine Informationen`{.action}.
 
-![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
+![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 
 Die Ihrem Webhosting zugeordnete IP-Adresse finden Sie auch in unserer Anleitung „[Liste der IP-Adressen, die den OVHcloud Webhostings zugewiesen sind](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)“.
 

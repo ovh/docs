@@ -2,7 +2,6 @@
 title: 'VMware on OVHcloud maintenance operations' 
 excerpt: 'Find out more about the operations carried out to ensure the reliability and performance of your Hosted Private Cloud VMware on OVHcloud equipment' 
 updated: 2024-06-28
-flag: hidden
 ---
 
 <style>
@@ -19,7 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-> [!warning]
+> [!success]
 > 
 > If you require training or technical assistance in implementing our solutions, please contact your Technical Account Manager or visit [this page](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 

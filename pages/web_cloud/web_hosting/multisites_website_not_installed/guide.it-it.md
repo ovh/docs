@@ -69,7 +69,7 @@ Per recuperare l’indirizzo IP dell’hosting Web, accedi allo [Spazio Cliente 
 
 L’indirizzo `IPv4` è disponibile nel riquadro `Informazioni generali`{.action}.
 
-![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
+![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 
 L’indirizzo IP associato all’hosting Web è disponibile anche nella nostra guida "[Elenco degli indirizzi IP associati agli hosting Web OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
