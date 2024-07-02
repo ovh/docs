@@ -49,13 +49,13 @@ Dependendo do seu plano de [alojamento web da OVHcloud](/links/web/hosting), a a
 
 - **para as ofertas que não permitem criar um segundo utilizador FTP** (ofertas *Alojamento gratuito 100M* e *Perso*): clique no *pictograma em forma de lápis* na coluna `Palavra-passe`{.action} do quadro que aparece, introduza a nova palavra-passe **seguindo a política das palavras-passe** e confirme a alteração clicando no *botão verde* de validação.
 
-![change-ftp-password-step1-perso](images/change-password-perso.png){.thumbnail}
+![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
 
 - **para as ofertas que permitem criar vários utilizadores FTP** (ofertas *Pro* e *Performance*): clique nos três pontos à direita do utilizador FTP em causa e, a seguir, em `Alterar palavra-passe`{.action}. Na nova janela, introduza a nova palavra-passe pretendida, confirme introduzindo-a uma segunda vez e clique no botão `Validar`{.action}.
 
 clique no botão `...`{.action} à direita do utilizador FTP em questão, depois por `Alterar a palavra-passe`{.action}. Na nova janela, introduza a nova palavra-passe desejada *** seguindo a política de palavras-passe**, confirme introduzindo-a novamente e clique no botão `Validar`{.action}.
 
-![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
+![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
 
 > [!primary]
 >
