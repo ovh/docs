@@ -41,13 +41,13 @@ Pour retrouver toutes les extensions liées à la sauvegarde, rendez-vous sur la
 
 Dans cet exemple, nous choisissons l'extension gratuite UpdraftPlus, mais vous êtes libre de choisir l'extension de votre choix.
 
-![mainWP backup](images/install_updraftPlus.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/install_updraftPlus.png){.thumbnail}
 
 Une fois l'extension sélectionnée, cliquez sur `Install Selected Extensions`{.action}.
 
 Dans le menu principal de MainWP, cliquez sur `Extensions`{.action} puis sur `Manage Extensions`{.action}. L'extension UpdraftPlus précédemment installée apparaît.
 
-![mainWP backup](images/extensions_dashboard_updraftPlus.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/extensions_dashboard_updraftPlus.png){.thumbnail}
 
 Cliquez sur `Enable`{.action} pour activer l'extension. Si un message d'erreur vous indique que la licence n'est pas activée, cliquez simplement sur le bouton `License`{.action}. Avant de pouvoir utiliser UpdraftPlus, vous devez activer le plugin UpdraftPlus sur les sites enfants que vous souhaitez sauvegarder.
 
@@ -55,13 +55,13 @@ Cliquez sur `Enable`{.action} pour activer l'extension. Si un message d'erreur v
 
 Dans le menu principal de MainWP, cliquez sur `Sites`{.action} puis sur `Install Plugins`{.action}. Dans la barre de recherche, tapez « UpdraftPlus ».
 
-![mainWP backup](images/search_updraftplus.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/search_updraftplus.png){.thumbnail}
 
 Une fois le plugin « UpdraftPlus : WordPress Backup & Migration » identifié, cliquez sur `Install Plugin`{.action} puis, à droite de l'écran, sélectionnez le site enfant sur lequel vous souhaitez installer UpdraftPlus. Cliquez sur `Complete Installation`{.action}. N'oubliez pas de cocher `Activate after installation`{.action}.
 
 Une fois l'installation terminée, dirigez-vous dans le menu principal de MainWP. Cliquez sur `Sites`{.action}, `Plugins`{.action} puis `Manage Plugins`{.action}. Pour vérifier que UpdraftPlus est bien installé sur vos sites web, sélectionnez les sites enfants de votre choix, à droite de l'écran. Plus bas, dans le champ de recherche `Search Options`{.action}, tapez « UpdraftPlus » puis sélectionnez `Show Plugins`{.action}.
 
-![mainWP backup](images/show_plugins.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/show_plugins.png){.thumbnail}
 
 L'extension « MainWP UpdraftPlus Extension » et le plugin « UpdraftPlus – Backup/Retore » s'affichent, ce qui veut dire qu'ils sont bien installés sur les sites enfants concernés.
 
@@ -69,7 +69,7 @@ Sélectionnez l'extension « MainWP UpdraftPlus Extension » et le plugin « Upd
 
 Pour être sûr que les plugins sont bien activés sur votre site enfant, cliquez sur `Sync Dashboard with Sites`{.action}, en haut à droite de l'interface.
 
-![mainWP backup](images/sync_dashboard_sites.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/sync_dashboard_sites.png){.thumbnail}
 
 Vous pouvez désormais effectuer des sauvegardes de vos sites enfants avec UpdraftPlus.
 
@@ -77,15 +77,15 @@ Vous pouvez désormais effectuer des sauvegardes de vos sites enfants avec Updra
 
 Dans le menu principal de MainWP, cliquez sur `Sites`{.action} puis sur `Manage Sites`{.action}. Cliquez sur le site enfant sur lequel vous voulez effectuer votre sauvegarde puis cliquez sur l'onglet `UpdraftPlus Backups`{.action}.
 
-![mainWP backup](images/tab_updraftPlus.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/tab_updraftPlus.png){.thumbnail}
 
 Sur l'écran qui s'affiche, cliquez sur `Backup Now`{.action} et suivez les instructions. Pour valider la sauvegarde, cliquez sur `Backup Now`{.action}.
 
-![mainWP backup](images/backup_now.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/backup_now.png){.thumbnail}
 
 Une fois la sauvegarde achevée, cliquez sur l'onglet `ExistingBackups`{.action}.
 
-![mainWP backup](images/existing_backup.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/existing_backup.png){.thumbnail}
 
 Une nouvelle ligne correspondant à votre sauvegarde apparait. Vous pouvez effectuer différentes actions sur votre sauvegarde, dont la restauration.
 
@@ -95,17 +95,17 @@ Dans le menu principal de MainWP, cliquez sur `Extensions`{.action} puis sur `Up
 
 Pour restaurer votre site web, identifiez la ligne correspondant à votre sauvegarde puis cliquez sur `Restore`{.action}.
 
-![mainWP backup](images/restore_backup_line.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/restore_backup_line.png){.thumbnail}
 
 Une nouvelle fenêtre s'affiche. Elle contient un certain nombre d'informations dont la liste de vos sauvegardes.
 
 Identifiez la sauvegarde que vous souhaitez restaurer puis cliquez sur `Restore`{.action}. Pensez à vérifier la date pour éviter toute erreur.
 
-![mainWP backup](images/restoration_message.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/restoration_message.png){.thumbnail}
 
 Sélectionnez les éléments que vous souhaitez restaurer puis validez. Le message de confirmation suivant s'affiche :
 
-![mainWP backup](images/restoration_success.png){.thumbnail}
+![mainWP backup](/pages/assets/screens/other/cms/wordpress/mainwp/restoration_success.png){.thumbnail}
 
 ## Aller plus loin <a name="go-further"></a>
 
