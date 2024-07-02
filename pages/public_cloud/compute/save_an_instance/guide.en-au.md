@@ -33,6 +33,10 @@ Enter a name for the backup on the next page. Take note of the pricing informati
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
+It is not possible to track the progress of the backup in real time, however, in the `Instance Backup`{.action} section under `Storage`{.action} in the left-hand menu, the status will be displayed as "Backup in progress" during the process.
+
+![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+
 Once the backup is complete, it will be available in the `Instance Backup`{.action} section under `Storage`{.action} in the left-hand menu.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
