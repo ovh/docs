@@ -20,7 +20,7 @@ The purpose of this guide is to show you how to enable log transfer from your Ho
 - An active Logs Data Platform stream with the same account and security level as your Hosted Private Cloud VMware on OVHcloud.
 - You need to have followed the guide [Introduction to the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
 
-## Gloassry
+## Glossary
 
 - **Logs Data Platform (LDP):** A logs management platform fully managed and secured by OVHcloud. For more information, see the [LDP overview page](/links/manage-operate/ldp).
 - **Data Stream:** A logical partition of logs that you create in a Logs Data Platform account and use when ingesting, viewing or querying your logs. Multiple sources can be stored in the same data stream, and the unit can be used to define a log pipeline (retention policy, archiving, live streaming, etc.), access rights and alert policies.

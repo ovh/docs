@@ -62,7 +62,7 @@ Sachez qu'il est tout à fait acceptable qu'un produit ne possède qu'une seule 
 
 Nous fournissons toutes les métadonnées pour l'identification de Hosted Private Cloud VMware on OVHcloud.
 
-### Etape 1 - Activation du transfert des logs Hosted Private Cloud
+### Étape 1 - Activation du transfert des logs Hosted Private Cloud
 
 > [!primary]
 > 
@@ -79,7 +79,7 @@ Vous pouvez vous référer à ce guide pour retrouver comment administrer vos fl
 
 Récupérez le **streamId** et sauvegardez-le (copier-coller). Vous en aurez besoin pour activer votre souscription Hosted Private Cloud avec le stream Logs Data Platform en question.
 
-### Etape 1 - Activation de l'abonnement Logs Data Platform Hosted Private Cloud
+### Étape 1 - Activation de l'abonnement Logs Data Platform Hosted Private Cloud
 
 #### Via l'espace client OVHcloud
 
@@ -118,7 +118,7 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 
 La requête GET permet de lister vos souscriptions.
 
-### Etape 2 - Administrer vos stream Logs Data Platform
+### Étape 2 - Administrer vos stream Logs Data Platform
 
 #### Via l'espace client OVHcloud
 
