@@ -82,7 +82,7 @@ Then select the vrack for which you want to add this ip and click `Next`{.action
 
 Click `Continue my order`{.action} button
 
-<img src="/images/010.png" alt="vrack select"/>
+<img src="/images/010.png" alt="continue"/>
 <br/>
 </blockquote>
 </details>
@@ -110,11 +110,35 @@ The example above shows two hosts with their vRack-side interfaces configured wi
 #### Manager configuration
 
 <details>
-<summary> <b>Content on manager config</b></summary>
+<summary> <b>Manage my vRack</b></summary>
 <blockquote>
 
-content of steps
-<img src="/images/post-ipv6.png" alt="api post add block"/>
+Go to `Network > vRAck private network`{.action} section add select your vRack you want to manage
+
+You have these kibd of informations
+
+<img src="/images/101.png" alt="mange my vrack 01"/>
+<br/>
+
+Then select additional options and click `Next`{.action} button
+
+<img src="/images/102.png" alt="mange my vrack 02"/>
+<br/>
+
+In the right side, in the vRack column, you have a IP section and you can add a new sub network clicking `Add sud network`{.action} button
+
+<img src="/images/103.png" alt="vrack select"/>
+<br/>
+
+In this way you have this modal to entrer your new address
+
+<img src="/images/107.png" alt="continue"/>
+<br/>
+
+You can activate/deactivate SLAAC at any time using this radio button
+
+<img src="/images/104.png" alt="continue"/>
+<br/>
 
 </blockquote>
 </details>
