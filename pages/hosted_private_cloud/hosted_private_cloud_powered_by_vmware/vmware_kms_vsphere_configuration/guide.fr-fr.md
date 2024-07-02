@@ -1,7 +1,7 @@
 ---
 title: "Configurez le chiffrement des machines virtuelles grâce à un serveur KMS"
 excerpt: "Decouvrez comment chiffrer votre machine virtuelle sur vSphere grâce à un serveur KMS"
-updated: 2024-04-24
+updated: 2024-07-02
 ---
 
 ## Objectif
@@ -29,7 +29,8 @@ Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryp
 ![Creation KMS server](images/creation_kms_server.png){.thumbnail}
 
 > [!primary]
-> Pour récuperer votre empreintre SSL et l'IP publique de votre serveur KMS, suivez les instructions ci-dessous :
+> 
+> Pour récupérer votre empreinte SSL et l'IP publique de votre endpoint KMS, suivez les instructions ci-dessous :
 >
 
 > [!tabs]
@@ -45,14 +46,20 @@ Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryp
 >>
 >> ![Empreinte SHA Navigateur](images/fingerprint_sha.png){.thumbnail}
 >>
+>
 >> **IP Publique :**
 >>
->> - Pour récupérer l'IP publique de votre endpoint KMS, vous pouvez faire un ping ou un NSlookup, par exemple :
+>> - Pour récupérer l'IP publique de votre endpoint KMS, vous pouvez utiliser NetCat ou Telnet (ou avec n'importe quel outil d'exploration réseau avec lequel vous vous sentez confortable) par exemple :
+>> - Le nom de domaine de votre endpoint KMS est à vérifier en fonction de votre région, mais le port reste le même.
 >>
 >> ```shell
->> ping eu-west-rbx.okms.ovh.net
+>> netcat.exe eu-west-rbx.okms.ovh.net 5696
 >> or
->> nslookup eu-west-rbx.okms.ovh.net
+>> telnet eu-west-rbx.okms.ovh.net 5696
+>> ```
+>> - Retour nc :
+>> ```Shell
+>> Connection to eu-west-rbx.okms.ovh.net (91.134.128.102) 5696 port [tcp/*] succeeded!
 >> ```
 >>
 > **Linux / MacOs**
@@ -62,17 +69,22 @@ Depuis la partie sécurité, rendez-vous dans la section `Virtual Machine Encryp
 >> - Si vous êtes sur un hôte linux ou MacOs il vous suffit d'executer la commande ci-dessous dans un terminal.<br>
 >>
 >> ```shell
->> openssl s_client -connect 54.38.64.196:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
+>> openssl s_client -connect eu-west-rbx.okms.ovh.net:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 >> ```
->>
+>
 >> **IP Publique :**
 >>
->> - Pour récupérer l'IP publique de votre endpoint KMS, vous pouvez faire un ping ou un dig, par exemple :
+>> - Pour récupérer l'IP publique de votre endpoint KMS, vous pouvez utiliser NetCat ou Telnet (ou avec n'importe quel outil d'exploration réseau avec lequel vous vous sentez confortable) par exemple :
+>> - Le nom de domaine de votre endpoint KMS est à vérifier en fonction de votre région, mais le port reste le même. 
 >>
 >> ```shell
->> ping eu-west-rbx.okms.ovh.net
+>> nc -zv eu-west-rbx.okms.ovh.net 5696
 >> or
->> dig eu-west-rbx.okms.ovh.net
+>> telnet eu-west-rbx.okms.ovh.net 5696
+>> ```
+>> - Retour nc :
+>> ```Shell
+>> Connection to eu-west-rbx.okms.ovh.net (91.134.128.102) 5696 port [tcp/*] succeeded!
 >> ```
 >>
 
