@@ -120,7 +120,7 @@ ovhai bucket object upload neuralangelo-experiments-lego@NEURALANGELO .
 
 > [!primary]
 >
-> Note: As a bucket shall be unique in an S3 region, the Makefile uses the current username in the bucket name (`experiments` in this example).
+> As a bucket shall be unique in an S3 region, the Makefile uses the current username in the bucket name (`experiments` in this example).
 >
 
 #### Extract pictures from the video
@@ -150,7 +150,7 @@ ovhai job run \
 
 > [!primary]
 >
-> **Note**: It takes approximately 8 minutes to run on 1 `ai1-1-gpu` GPU (V100S).
+> It takes approximately 8 minutes to run on 1 `ai1-1-gpu` GPU (V100S).
 > 
 
 You can follow the training job status using the following commands based on `ovhai job get` and `ovhai job logs`:
