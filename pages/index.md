@@ -980,6 +980,7 @@
                 + [AI Training - Tutorial - Train a PyTorch model and export it to ONNX](public_cloud/ai_machine_learning/training_tuto_09_train_model_export_onnx)
                 + [AI Training - Tutorial - Train YOLOv8 to play rock paper scissors](public_cloud/ai_machine_learning/training_tuto_09_train_rock-paper-scissors)
                 + [AI Training - Tutorial - Get started with NVIDIA Triton Inference Server and AI Training](public_cloud/ai_machine_learning/training_tuto_10_triton_inference_server)
+                + [AI Training - Tutorial - Turn a video into a 3D model using NVIDIA Neuralangelo](public_cloud/ai_machine_learning/training_tuto_11_3d_model_from_video)
         + [AI Deploy](products/public-cloud-ai-and-machine-learning-ai-deploy)
             + [Guides](public-cloud-ai-and-machine-learning-ai-deploy-guides)
                 + [AI Deploy - Features, Capabilities and Limitations](public_cloud/ai_machine_learning/deploy_guide_01_capabilities)
