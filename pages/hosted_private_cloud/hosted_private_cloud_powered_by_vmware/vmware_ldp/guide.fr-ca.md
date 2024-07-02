@@ -1,7 +1,7 @@
 ---
 title: "Transfert des logs VMware vers un stream Logs Data Platform"
 excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-07-02
+updated: 2024-06-28
 ---
 
 > [!primary]

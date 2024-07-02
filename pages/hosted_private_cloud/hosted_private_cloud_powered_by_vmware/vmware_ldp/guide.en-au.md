@@ -1,7 +1,7 @@
 ---
 title: "Pushing logs from VMware on OVHcloud to Logs Data Platform"
 excerpt: "Find out how to enable Hosted Private Cloud VMware on OVHcloud logs forwarding to a Logs Data Platform stream" 
-updated: 2024-07-02
+updated: 2024-06-28
 ---
 
 > [!primary]
