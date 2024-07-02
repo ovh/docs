@@ -59,8 +59,6 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 
 While requesting a new Additional IPv6 block, it's important to note that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, defining where public traffic enters your vRack network (thus, where the gateway is located). 
 
-**<ins>Actions</ins>**  
-
 <details>
 <summary> <b>Request new Additional IPv6 block</b> </summary>
 <blockquote>
@@ -87,8 +85,19 @@ Click `Continue my order`{.action} button
 </blockquote>
 </details>
 
+**<ins>Check the Status of Your IPv6 Block Request</ins>** 
+
 <details>
-<summary> <b>Check the Status of Your IPv6 Block Request</b> </summary>
+<summary> <b>Control Panel </b> </summary>
+<blockquote>
+
+....
+
+</blockquote>
+</details>
+
+<details>
+<summary> <b>APIv6 (alternative way)</b> </summary>
 <blockquote>
 
 We can check services eligible for configuration using this GET API call:
@@ -107,15 +116,13 @@ In this section we will present basic IPv6 setup for your vRack connected hosts.
 
 The example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belong to the first /64 subnet from a given public /56 Additional IPv6 block. Both leverage the vRack interface for public IPv6 connectivity.
 
-#### Manager configuration
-
 <details>
-<summary> <b>Manage my vRack</b></summary>
+<summary> <b>Control Panel</b></summary>
 <blockquote>
 
-Go to `Network > vRAck private network`{.action} section add select your vRack you want to manage
+Go to `Network > vRack private network`{.action} section add select your vRack you want to manage
 
-You have these kibd of informations
+You have these kind of informations
 
 <img src="/images/101.png" alt="mange my vrack 01"/>
 <br/>
@@ -143,11 +150,12 @@ You can activate/deactivate SLAAC at any time using this radio button
 </blockquote>
 </details>
 
-#### APIv6 setup (alternative way)
 
 <details>
-<summary> <b>Attributing Additional IPv6 to a vRack</b></summary>
+<summary> <b>APIv6 (alternative way)</b></summary>
 <blockquote>
+
+### Attributing Additional IPv6 to a vRack
 
 The delivered IPv6 block (as seen previously with the /eligibleServices API call), can now be added to the vRack network configuration using this POST method:
 
@@ -157,37 +165,29 @@ The delivered IPv6 block (as seen previously with the /eligibleServices API call
 <img src="/images/20240418-04.png" alt="GET ipv6 call"/>
 <br/>Now, we see our block configured with a vRack. The next step is to configure your host or VMs.
 
-</blockquote>
-</details>
+### Static IP configuration
 
-<details>
-<summary> <b>Static IP configuration</b></summary>
-<blockquote>
-
-    Once the Additional IPv6 /56 block is attributed to a vRack network, there is always the first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
-    Let's check exactly which subnet is bridged:
+Once the Additional IPv6 /56 block is attributed to a vRack network, there is always the first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
+Let's check exactly which subnet is bridged:
 
 
-    <img src="/images/20240418-05.png" alt="API call get ipv6"/>)
+<img src="/images/20240418-05.png" alt="API call get ipv6"/>)
 
-    <br/>To get more details:
+<br/>To get more details:
 
-    <img src="/images/20240418-06.png" alt="API call get bridged"/>
-    <br/>Notice that IP autoconfiguration (SLAAC) is turned off by default.
+<img src="/images/20240418-06.png" alt="API call get bridged"/>
+<br/>Notice that IP autoconfiguration (SLAAC) is turned off by default.
 
-</blockquote>
-</details>
         
-<details>
-<summary> <b>Automatic IP configuration (SLAAC)</b></summary>
-<blockquote>
+### Automatic IP configuration (SLAAC)
+
     
-    To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:
+To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:
 
 
-    <img src="/images/20240418-07.png" alt="API call POST enable SLAAC"/>
+<img src="/images/20240418-07.png" alt="API call POST enable SLAAC"/>
 
-    <br/>Don't forget to configure SLAAC on your host machine.
+<br/>Don't forget to configure SLAAC on your host machine.
 
 </blockquote>
 </details>
