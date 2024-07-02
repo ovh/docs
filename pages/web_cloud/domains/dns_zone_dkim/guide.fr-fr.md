@@ -370,7 +370,7 @@ Suivez les **5 étapes** en cliquant successivement sur chacun des 5 onglets ci-
 >>
 > **5. Activation du DKIM**
 >>
->> Après propagation de votre configuration DNS, utilisez à nouveau l'appel API suivant pour activer le DKIM :<br>
+>> Après la propagation de votre configuration DNS, utilisez à nouveau l'appel API suivant pour activer le DKIM :<br>
 >>
 >> > [!api]
 >> >
@@ -380,7 +380,7 @@ Suivez les **5 étapes** en cliquant successivement sur chacun des 5 onglets ci-
 >>
 >> Cliquez sur `TRY`{.action} pour lancer l'activation.<br>
 >>
->> *Exemple de résultat:*
+>> *Exemple de résultat :*
 >>
 >> {
 >>  "selectors": [
@@ -429,7 +429,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer DKIM. <br>
 >>
->> *Exemple de résultat:*
+>> *Exemple de résultat :*
 >>
 >> ``` console
 >> "ovhex123456-selector1"
@@ -587,7 +587,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » . <br>
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel vous souhaitez activer DKIM. <br>
 >>
->> *Exemple de résultat:*
+>> *Exemple de résultat :*
 >>
 >> ```console
 >> "ovhemp123456-selector1"
@@ -743,7 +743,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 >>
 >> - `domain` : saisissez le nom de domaine attaché à votre service E-mail sur lequel le DKIM doit être présent.
 >>
->> Regardez ensuite la valeur `status:` général dans le résultat :
+>> Regardez ensuite la valeur `status:` générale dans le résultat :
 >>
 >> - `disabled` : le DKIM est désactivé, il n'a pas encore été configuré ou il a été désactivé par API. <br>
 >> - `modifying` : la configuration du DKIM est en cours, il est nécessaire de patienter jusqu'à la fin du processus.<br>
