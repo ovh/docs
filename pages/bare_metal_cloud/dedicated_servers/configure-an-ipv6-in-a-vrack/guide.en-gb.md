@@ -65,8 +65,25 @@ While requesting a new Additional IPv6 block, it's important to note that the al
 <summary> <b>Request new Additional IPv6 block</b> </summary>
 <blockquote>
 
-Content of steps
+Select the IP address version you want, here the IPv6
 
+<img src="/images/011.png" alt="IPv6 select"/>
+<br/>
+
+Then select additional options and click `Next`{.action} button
+
+<img src="/images/02.png" alt="additional options"/>
+<br/>
+
+Then select the vrack for which you want to add this ip and click `Next`{.action} button
+
+<img src="/images/03.png" alt="vrack select"/>
+<br/>
+
+Click `Continue my order`{.action} button
+
+<img src="/images/010.png" alt="vrack select"/>
+<br/>
 </blockquote>
 </details>
 
