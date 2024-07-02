@@ -15,7 +15,7 @@ Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 - Ihr Domainname ist in der [Multisite-Konfiguration](/pages/web_cloud/web_hosting/multisites_configure_multisite) nicht korrekt auf Ihr Zielverzeichnis eingestellt.
 - Das Zielverzeichnis, auf das Ihr Domainname verweist, enthält keine Datei namens **index.html** oder **index.php**.
 
-![index_of](images/index-of.png){.thumbnail}
+![index_of](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
 
 **Diese Anleitung erklärt, wie Sie die Anzeige einer "Index of"-Seite korrigieren.**
 
