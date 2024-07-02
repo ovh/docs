@@ -231,7 +231,7 @@ Une fois les réglages ajoutés, vous pouvez contrôler que tout est correct dep
 
 Cliquez enfin sur `TERMINER`{.action}.
 
-![VCD Networking Edge Gateway 05](images/EDGE_GATEWAY_5-optimizedrm cp.png){.thumbnail}
+![VCD Networking Edge Gateway 05](images/EDGE_GATEWAY_5-optimized.png){.thumbnail}
 
 ///
 

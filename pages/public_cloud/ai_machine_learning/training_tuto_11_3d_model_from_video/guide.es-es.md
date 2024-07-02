@@ -8,17 +8,14 @@ updated: 2024-07-02
 
 ### The project
 
-[Neuralangelo](https://research.nvidia.com/labs/dir/neuralangelo/) is a research project led by NVIDIA allowing to
-perform High-Fidelity Neural Surface Reconstruction.
-Starting from a video of a scene or an object, it recovers 3D surface structures from the video keyframes through an AI
-model.
+[Neuralangelo](https://research.nvidia.com/labs/dir/neuralangelo/) is a research project led by NVIDIA allowing to perform High-Fidelity Neural Surface Reconstruction.
+Starting from a video of a scene or an object, it recovers 3D surface structures from the video keyframes through an AI model.
 
 ### This tutorial
 
 This tutorial aims at showing how to run NVIDIA sample use case with OVHcloud AI-Training jobs.
 
-This tutorial scenario is based on Neuralangelo [git repository](https://github.com/NVlabs/neuralangelo) and
-[colab notebook](https://colab.research.google.com/drive/13u8DX9BNzQwiyPPCB7_4DbSxiQ5-_nGF#scrollTo=FUhJIThkeQoi).
+This tutorial scenario is based on Neuralangelo [git repository](https://github.com/NVlabs/neuralangelo) and [colab notebook](https://colab.research.google.com/drive/13u8DX9BNzQwiyPPCB7_4DbSxiQ5-_nGF#scrollTo=FUhJIThkeQoi).
 
 After getting a sample video of a toy vehicle, we see how to put it through Neuralangelo model until we get a 3D mesh
 file.
@@ -29,14 +26,11 @@ The processing will follow 3 main steps :
 - Data processing
 - 3D model extraction
 
-Each step will be run using an AI-Training job and these jobs will share their data using an AI-Training volume synced
-with a S3 bucket.
-
+Each step will be run using an AI-Training job and these jobs will share their data using an AI-Training volume synced with a S3 bucket.
 
 ### Makefile
 
-A Makefile is provided [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/neuralangelo/Makefile)
-to run each of these steps. For each step the command underneath will be described.
+A Makefile is provided [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/neuralangelo/Makefile) to run each of these steps. For each step the command underneath will be described.
 
 The 3 main steps (prepare, process, extract) have their targets in the Makefile built the same way:
 
@@ -74,15 +68,13 @@ We need BlenderNeuralangelo for its tooling on top of Blender. We will use it to
 make neuralangelo BlenderNeuralangelo
 ```
 
-> [!primary]
-> **Actual commands**
->
-> ```shell
-> git clone https://github.com/NVlabs/neuralangelo.git
-> git -C neuralangelo submodule update --init --recursive
-> git clone https://github.com/mli0603/BlenderNeuralangelo
-> ```
->
+**Actual commands:**
+
+```shell
+git clone https://github.com/NVlabs/neuralangelo.git
+git -C neuralangelo submodule update --init --recursive
+git clone https://github.com/mli0603/BlenderNeuralangelo
+```
 
 Install `gdown` to fetch a Lego™ sample video:
 
@@ -120,14 +112,15 @@ Data preparation relies on the process described in [Neuralangelo documentation]
 make push-data
 ```
 
+**Actual command:**
+
+```shell
+ovhai bucket object upload neuralangelo-experiments-lego@NEURALANGELO .
+```
+
 > [!primary]
-> **Actual command**
-> 
-> ```shell
-> ovhai bucket object upload neuralangelo-experiments-lego@NEURALANGELO .
-> ```
 >
-> Note: As a bucket shall be unique in an S3 region, the Makefile uses the current username in the bucket name (`experiments` in this example).
+> As a bucket shall be unique in an S3 region, the Makefile uses the current username in the bucket name (`experiments` in this example).
 >
 
 #### Extract pictures from the video
@@ -142,21 +135,22 @@ Read detailed documentation for data preparation [here](https://github.com/NVlab
 make prepare
 ```
 
+**Actual commands:**
+
+```shell
+ovhai job run \
+		-o json \
+		-g 1 \
+		-f ai1-1-gpu \
+		-v neuralangelo-experiments-lego@NEURALANGELO/neuralangelo:/neuralangelo:rw:cache \
+		docker.io/chenhsuanlin/colmap:3.8 -- \
+     		bash -c "cd /neuralangelo && \
+			bash projects/neuralangelo/scripts/preprocess.sh lego input/lego.mp4 2 object"
+```
+
 > [!primary]
-> **Actual command**
 >
-> ```shell
-> ovhai job run \
->		-o json \
->		-g 1 \
->		-f ai1-1-gpu \
->		-v neuralangelo-experiments-lego@NEURALANGELO/neuralangelo:/neuralangelo:rw:cache \
->		docker.io/chenhsuanlin/colmap:3.8 -- \
- >     		bash -c "cd /neuralangelo && \
->			bash projects/neuralangelo/scripts/preprocess.sh lego input/lego.mp4 2 object"
-> ```
->
-> **Note**: It takes approximately 8 minutes to run on 1 `ai1-1-gpu` GPU (V100S).
+> It takes approximately 8 minutes to run on 1 `ai1-1-gpu` GPU (V100S).
 > 
 
 You can follow the training job status using the following commands based on `ovhai job get` and `ovhai job logs`:
@@ -182,12 +176,11 @@ Once the job is done, we get generated data from the S3 bucket:
 make pull-data
 ```
 
-> [!primary]
-> **Actual command**
->
-> ```shell
-> ovhai bucket object download neuralangelo-experiments-lego@NEURALANGELO
-> ```
+**Actual command:**
+
+```shell
+ovhai bucket object download neuralangelo-experiments-lego@NEURALANGELO
+```
 
 #### Adjust COLMAP results
 
@@ -201,12 +194,11 @@ Here we chose the Blender from command line way:
 make adjust
 ```
 
-> [!primary]
-> **Actual command**
->
-> ```shell
-> blender --python BlenderNeuralangelo/start_blender_with_addon.py
-> ```
+**Actual command:**
+
+```shell
+blender --python BlenderNeuralangelo/start_blender_with_addon.py
+```
 
 Follow the process described [here](https://github.com/mli0603/BlenderNeuralangelo?tab=readme-ov-file#2-locating-the-control-panel) to adjust the bounding sphere.
 
@@ -224,25 +216,27 @@ Now we are triggering an AI Training job running Neuralangelo to train its model
 make process
 ```
 
+**Actual commands:**
+
+```shell
+ovhai job run \
+		-o json \
+		-g 1 \
+		-f ai1-1-gpu \
+		-v neuralangelo-experiments-lego@NEURALANGELO/neuralangelo:/neuralangelo:rw:cache \
+		docker.io/chenhsuanlin/neuralangelo:23.04-py3 -- \
+      		bash -c "cd /neuralangelo && \
+			torchrun --nproc_per_node=1 train.py \
+				--logdir=logs/experiments/lego \
+				--show_pbar \
+				--config=projects/neuralangelo/configs/custom/lego.yaml \
+				--max_iter=1000"
+```
+
+
 > [!primary]
-> **Actual command**
 >
-> ```shell
-> ovhai job run \
->		-o json \
->		-g 1 \
->		-f ai1-1-gpu \
->		-v neuralangelo-experiments-lego@NEURALANGELO/neuralangelo:/neuralangelo:rw:cache \
->		docker.io/chenhsuanlin/neuralangelo:23.04-py3 -- \
->      		bash -c "cd /neuralangelo && \
->			torchrun --nproc_per_node=1 train.py \
->				--logdir=logs/experiments/lego \
->				--show_pbar \
->				--config=projects/neuralangelo/configs/custom/lego.yaml \
->				--max_iter=1000"
-> ```
->
-> Note: To limit the time spent in processing, the iterations are set to 1000 but would need to be much more for a more detailed result (in Neuralangelo collab example, it is set to 20000).
+> To limit the time spent in processing, the iterations are set to 1000 but would need to be much more for a more detailed result (in Neuralangelo collab example, it is set to 20000).
 >
 > Here the step should take approximately 5 min to run on 1 ai1-1-gpu GPU (1 hour for 20000 iterations).
 >
@@ -274,26 +268,27 @@ The AI Training job we are running will now generate a 3D mesh `.ply` file out o
 make extract
 ```
 
+**Actual commands:**
+
+```shell
+ovhai job run \
+		-o json \
+		-g 1 \
+		-f ai1-1-gpu \
+		-v neuralangelo-experiments-lego@NEURALANGELO/neuralangelo:/neuralangelo:rw:cache \
+		docker.io/chenhsuanlin/neuralangelo:23.04-py3 -- \
+      		bash -c "cd /neuralangelo && \
+		 	torchrun --nproc_per_node=1 projects/neuralangelo/scripts/extract_mesh.py \
+				--config=logs/experiments/lego/config.yaml \
+				--checkpoint=logs/experiments/lego/epoch_00020_iteration_000001000_checkpoint.pt \
+				--output_file=logs/experiments/lego/lego.ply \
+				--resolution=2048 --block_res=128 \
+				--textured"
+```
+
 > [!primary]
-> **Actual command**
 >
-> ```shell
-> ovhai job run \
->		-o json \
->		-g 1 \
->		-f ai1-1-gpu \
->		-v neuralangelo-experiments-lego@NEURALANGELO/neuralangelo:/neuralangelo:rw:cache \
->		docker.io/chenhsuanlin/neuralangelo:23.04-py3 -- \
->      		bash -c "cd /neuralangelo && \
->		 	torchrun --nproc_per_node=1 projects/neuralangelo/scripts/extract_mesh.py \
->				--config=logs/experiments/lego/config.yaml \
->				--checkpoint=logs/experiments/lego/epoch_00020_iteration_000001000_checkpoint.pt \
->				--output_file=logs/experiments/lego/lego.ply \
->				--resolution=2048 --block_res=128 \
->				--textured"
-> ```
->
-> Note: The checkpoint should be set to the latest .pt file generated by process step in the `neuralangelo/logs/experiments/lego` directory (the filename is stored in `neuralangelo/logs/experiments/lego/latest_checkpoint.txt`)
+> The checkpoint should be set to the latest .pt file generated by process step in the `neuralangelo/logs/experiments/lego` directory (the filename is stored in `neuralangelo/logs/experiments/lego/latest_checkpoint.txt`).
 >
 > It takes approximately 3 min to run on 1 ai1-1-gpu GPU.
 >
