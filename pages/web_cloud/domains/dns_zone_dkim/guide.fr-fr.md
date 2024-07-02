@@ -38,7 +38,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 - Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir souscrit à une des offres e-mail :
-    - « E-mails » (MX Plan) OVHcloud. Celle-ci est disponible via une [offre d’hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/), un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou une offre MX Plan commandée séparément.
+    - « E-mails » (MX Plan) OVHcloud. Celle-ci est disponible via une [offre d’hébergement Web Cloud](/links/web/hosting)), un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou une offre MX Plan commandée séparément.
     - [Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
     - Une offre e-mail hors OVHcloud disposant du DKIM.
@@ -231,7 +231,7 @@ Cliquez sur l'onglet correspondant à votre offre :
 
 ##### **Pour E-mails (MX Plan)** <a name="confemail"></a>
 
-**Suivez les **étapes** en cliquant successivement sur chacun des 5 onglets ci-dessous.**
+Suivez les **5 étapes** en cliquant successivement sur chacun des 5 onglets ci-dessous :
 
 > [!tabs]
 > **1. Activer le DKIM sur votre nom de domaine**
@@ -295,7 +295,7 @@ Cliquez sur l'onglet correspondant à votre offre :
 >> }
 >> ```
 >> <br>
->> Dans l'exemple ci-dessus, la dernière ligne d'état `"status": "modifying"` signifie que la configuration est en cours. Il faut patienter environ **10 minutes** et relancer l'appel API.
+>> Dans l'exemple ci-dessus, la dernière ligne d'état `"status": "modifying"` signifie que la configuration est en cours. Patientez environ **10 minutes** et relancez l'appel API.
 >>
 >> - si la valeur est `"status": "enabled"`, votre configuration est terminée et fonctionnelle.
 >> - si la valeur est `"status": "disabled"`, votre configuration doit être complétée manuellement, passez à l'étape suivante.
@@ -713,7 +713,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 >>
 >> - `disabled` : le DKIM est désactivé, il n'a pas encore été configuré ou il a été désactivé par API. <br>
 >> - `modifying` : la configuration du DKIM est en cours, il est nécessaire de patienter jusqu'à la fin du processus.<br>
->> - `toConfigure` : la configuration du DKIM est en attente des paramètres DNS du nom de domaine. Vous devez renseigner manuellement les enregistrements DNS dans la zone du nom de domaine. Pour cela, appuyez-vous sur l'étape X de ce guide.<br>
+>> - `toConfigure` : la configuration du DKIM est en attente des paramètres DNS du nom de domaine. Vous devez renseigner manuellement les enregistrements DNS dans la zone du nom de domaine. Pour cela, appuyez-vous sur [l'étape 4 de « la configuration complète du DKIM » pour E-mails (MX Plan)](#confemail).<br>
 >> - `enabled` : le DKIM est configuré et fonctionnel.<br>
 >> - `error` : Le processus d'installation a rencontré une erreur. Nous vous invitons à ouvrir un [ticket auprès du support](https://help.ovhcloud.com/csm?id=csm_get_help) en précisant le nom de domaine concerné.<br>
 >>
