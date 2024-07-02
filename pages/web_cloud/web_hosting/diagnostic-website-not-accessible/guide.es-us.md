@@ -14,10 +14,10 @@ En caso de que su sitio web no sea accesible, pueden aparecer varios errores en 
 
 |Navegador|Mensaje de error|
 |-|---|
-|Chrome:<br>"No se puede acceder a este sitio web"|![cantbereached_crome](images/cant-be-reached-chrome.png){.thumbnail}|
-|Firefox :<br>"Uf. Tenemos problemas para encontrar ese sitio."|![cantbereached_firefox](images/cant-be-reached-firefox.png){.thumbnail}|
-|Edge :<br>"Vaya… no se puede obtener acceso a esta página"|![cantbereached_edge](images/cant-be-reached-edge.png){.thumbnail}|
-|Safari :<br>"Safari no puede conectarse al servidor"|![cantbereached_safari](images/cant-be-reached-safari.png){.thumbnail}|
+|Chrome:<br>"No se puede acceder a este sitio web"|![cantbereached_crome](/pages/assets/screens/other/browsers/errors/cant-be-reached-chrome.png){.thumbnail}|
+|Firefox :<br>"Uf. Tenemos problemas para encontrar ese sitio."|![cantbereached_firefox](/pages/assets/screens/other/browsers/errors/cant-be-reached-firefox.png){.thumbnail}|
+|Edge :<br>"Vaya… no se puede obtener acceso a esta página"|![cantbereached_edge](/pages/assets/screens/other/browsers/errors/cant-be-reached-edge.png){.thumbnail}|
+|Safari :<br>"Safari no puede conectarse al servidor"|![cantbereached_safari](/pages/assets/screens/other/browsers/errors/cant-be-reached-safari.png){.thumbnail}|
 
 **Cómo solucionar los errores del tipo "No se puede acceder a este sitio web"**
 
@@ -48,11 +48,11 @@ En caso de que su sitio web no sea accesible, pueden aparecer varios errores en 
 
 Para comprobar la validez de la suscripción relativa a su nombre de dominio, haga clic en su nombre en la esquina superior derecha del [área de cliente de OVHcloud](/links/manager) y seleccione `Productos y servicios`{.action}.
 
-![control-panel](images/control-panel.png){.thumbnail}|
+![control-panel](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-product-and-services.png){.thumbnail}|
 
 Renueve su dominio si es necesario a través del botón `...`{.action} a la derecha de la pantalla y luego `Renovar el servicio`{.action}.
 
-![renew-service-button](images/renew-service-button.png){.thumbnail}
+![renew-service-button](/pages/assets/screens/control_panel/product-selection/web-cloud/order/renew-service-button.png){.thumbnail}
 
 Una vez completada la renovación del plan, su sitio web estará disponible en un plazo máximo de 48 horas.
 
@@ -64,11 +64,11 @@ Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_s
 
 Compruebe los servidores indicados en la pestaña `Servidores DNS`{.action}:
 
-![srv-dns-ok2](images/name-dns-server.png){.thumbnail}
+![srv-dns-ok2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/name-dns-server.png){.thumbnail}
 
 Si son idénticos a los objetivos de las entradas de tipo `NS` en la `Zona DNS`{.action}, vaya al [Etapa 3](#step3):
 
-![srv-dns-ok](images/dashboard-entry-ns.png){.thumbnail}
+![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
 #### Situación 2: aparecerá un aviso por encima de la zona DNS
 
@@ -76,7 +76,7 @@ Una advertencia en la pestaña `Zona DNS`{.action} indica que los servidores DNS
 
 - Bajo la frase "Actualmente utiliza los siguientes servidores DNS:", los servidores indicados son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net" (sustituya "**?**" por cualquier número):
 
-![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}
+![warning_other_ovh_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}
 
 Modifique los servidores DNS siguiendo las instrucciones de [esta guía](/pages/web_cloud/domains/dns_server_edit) para que sean idénticos a los objetivos de los registros de tipo `NS` en la `Zona DNS`{.action}.
 
@@ -84,7 +84,7 @@ Su sitio web estará disponible en un plazo máximo de 48 horas.
 
 - Bajo la frase "Actualmente utiliza los siguientes servidores DNS:", los servidores indicados no son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net".
 
-![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}
+![warning_external_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}
 
 > [!warning]
 >
@@ -97,17 +97,17 @@ Su sitio web estará disponible en un plazo máximo de 48 horas.
 
 La `Zona DNS`{.action} de su dominio no contiene ningún registro de tipo `NS`:
 
-![srv_dns_missing](images/dashboard-entry-ns-missing.png){.thumbnail}
+![srv_dns_missing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns-missing.png){.thumbnail}
 
 Haga una copia de seguridad del área actual haciendo clic en el botón `Editar en modo de texto`{.action} situado a la derecha de su pantalla:
 
-![change_DNS_zone_change_text_format](images/change-in-text-format.png){.thumbnail}
+![change_DNS_zone_change_text_format](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format.png){.thumbnail}
 
 Copie y pegue el contenido de su `Zona DNS`{.action} en un documento de texto. Guarde el documento de forma local.
 
 A continuación, haga clic en `Restaurar mi zona DNS`{.action} y seleccione `No, pero quiero restaurar la zona DNS.`{.action}. Indique los servidores de correo y de alojamiento y haga clic en `Aceptar`{.action}.
 
-![change_DNS_zone_reset](images/reset-my-dns-zone.png){.thumbnail}
+![change_DNS_zone_reset](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
 
 Su sitio web estará disponible en un plazo máximo de 24 horas.
 
@@ -121,11 +121,11 @@ Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](/link
 
 En la pestaña `Información general`{.action}, copie la dirección IPV4 y/o IPV6 de su dominio.
 
-![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
+![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 
 A continuación, cópiela en la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) de su dominio modificando o creando uno o más registros de tipo `A`.
 
-![ipv4-DNSzone](images/dashboard-entry-a.png){.thumbnail}
+![ipv4-DNSzone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
 
 Su sitio web estará disponible en un plazo máximo de 24 horas.
 

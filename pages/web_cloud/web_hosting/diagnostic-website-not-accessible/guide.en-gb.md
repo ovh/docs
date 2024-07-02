@@ -10,10 +10,10 @@ Several error returns may appear on your browser if your website becomes inacces
 
 |Browser|Error Message|
 |-|---|
-|Chrome:<br>"This site can't be reached"|![cantbereached_chrome](images/cant-be-reached-chrome.png){.thumbnail}|
-|Firefox:<br>"Hmm. We're having trouble finding that site."|![cantbereached_firefox](images/cant-be-reached-firefox.png){.thumbnail}|
-|Edge:<br>"Hmmm... can't reach this page"|![cantbereached_edge](images/cant-be-reached-edge.png){.thumbnail}|
-|Safari:<br>"Safari Can't Find the Server"|![cantbereached_safari](images/cant-be-reached-safari.png){.thumbnail}|
+|Chrome:<br>"This site can't be reached"|![cantbereached_chrome](/pages/assets/screens/other/browsers/errors/cant-be-reached-chrome.png){.thumbnail}|
+|Firefox:<br>"Hmm. We're having trouble finding that site."|![cantbereached_firefox](/pages/assets/screens/other/browsers/errors/cant-be-reached-firefox.png){.thumbnail}|
+|Edge:<br>"Hmmm... can't reach this page"|![cantbereached_edge](/pages/assets/screens/other/browsers/errors/cant-be-reached-edge.png){.thumbnail}|
+|Safari:<br>"Safari Can't Find the Server"|![cantbereached_safari](/pages/assets/screens/other/browsers/errors/cant-be-reached-safari.png){.thumbnail}|
 
 **This guide explains how to resolve common "This site can't be reached" type errors.**
 
@@ -43,11 +43,11 @@ Several error returns may appear on your browser if your website becomes inacces
 
 To ensure that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then click on `Products and services`{.action} within the right-hand menu.
 
-![control-panel](images/control-panel.png){.thumbnail}|
+![control-panel](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-product-and-services.png){.thumbnail}|
 
 Renew your domain if necessary by clicking on the `...`{.action} button, then select `Renew service`{.action}.
 
-![renew-service-button](images/renew-service-button.png){.thumbnail}
+![renew-service-button](/pages/assets/screens/control_panel/product-selection/web-cloud/order/renew-service-button.png){.thumbnail}
 
 After the renewal of your offer is completed, your website will be available within a maximum of 48 hours.
 
@@ -59,11 +59,11 @@ To check that your [DNS servers](/pages/web_cloud/domains/dns_server_edit) are v
 
 Check the servers listed in the `DNS servers`{.action} tab:
 
-![srv-dns-ok2](images/name-dns-server.png){.thumbnail}
+![srv-dns-ok2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/name-dns-server.png){.thumbnail}
 
 If they are identical to the targets of the `NS` type entries in the `DNS zone`{.action}, go to [step 3](#step3):
 
-![srv-dns-ok](images/dashboard-entry-ns.png){.thumbnail}
+![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
 #### Scenario 2: A warning appears above the DNS zone
 
@@ -71,7 +71,7 @@ A warning in the `DNS zone`{.action} tab indicates that the DNS servers used by 
 
 - Under the sentence "You currently use the following DNS servers", the servers listed are "ns **?** .ovh.net" and "dns **?** .ovh.net" (in which "**?**" stands for a double-digit number):
 
-![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}
+![warning_other_ovh_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}
 
 Modify the DNS servers as described in [this guide](/pages/web_cloud/domains/dns_server_edit), so that they are identical to the targets of the `NS` type records in your `DNS zone`{.action}.
 
@@ -79,7 +79,7 @@ Your website will then be available within a maximum of 48 hours.
 
 - Under the sentence "You currently use the following DNS servers", the servers listed are not "ns **?** .ovh.net" and "dns **?** .ovh.net".
 
-![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}
+![warning_external_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}
 
 > [!warning]
 >
@@ -92,17 +92,17 @@ Your website will then be available within a maximum of 48 hours.
 
 Your domain’s `DNS zone`{.action} does not contain any `NS` record:
 
-![srv_dns_missing](images/dashboard-entry-ns-missing.png){.thumbnail}
+![srv_dns_missing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns-missing.png){.thumbnail}
 
 Back up the current zone by clicking on the `Change in text format`{.action} button:
 
-![change_DNS_zone_change_text_format](images/change-in-text-format.png){.thumbnail}
+![change_DNS_zone_change_text_format](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format.png){.thumbnail}
 
 Then copy and paste the content of your `DNS zone`{.action} into a text document on your computer.
 
 Then click on `Reset my DNS zone`{.action} and select `No, but I want to reset my DNS zone`{.action}. Select your email and hosting servers and click on `Confirm`{.action}.
 
-![change_DNS_zone_reset](images/reset-my-dns-zone.png){.thumbnail}
+![change_DNS_zone_reset](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
 
 Your website will then be available again within a maximum of 24 hours.
 
@@ -116,11 +116,11 @@ If your site is hosted on one of our [Web Hosting offers](/links/web/hosting), c
 
 In the `General information`{.action} tab, copy the IPv4 and/or IPv6 address of your domain name.
 
-![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
+![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 
 Then refer to it in your domain’s [DNS zone](/pages/web_cloud/domains/dns_zone_edit), by modifying or creating one or more `A` entries.
 
-![ipv4-DNSzone](images/dashboard-entry-a.png){.thumbnail}
+![ipv4-DNSzone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
 
 Your website will then be available within a maximum of 24 hours.
 
