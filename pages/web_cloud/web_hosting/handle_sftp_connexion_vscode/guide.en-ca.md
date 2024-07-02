@@ -38,7 +38,7 @@ If you have an OVHcloud web hosting plan, you can access a storage space that al
 
 After starting Visual Studio Code, go to the horizontal menu at the top of the interface, click `View`{.action} then `Extensions`{.action}.
 
-![hosting](images/view_extensions.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/view_extensions.png){.thumbnail}
 
 To do the same with the keyboard shortcut, select:
 
@@ -47,7 +47,7 @@ To do the same with the keyboard shortcut, select:
 
 In the top left of the interface, enter the name of the *Natizyskunk* “SFTP/FTP sync” extension, and click `Install`{.action}.
 
-![hosting](images/extensions.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/extensions.png){.thumbnail}
 
 You can also install [the "SFTP/FTP sync" extension](https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp#sftp-sync-extension-for-vs-code) from the Visual Studio Marketplace.
   
@@ -64,19 +64,19 @@ To do the same with the keyboard shortcut, select:
 
 Enter the following command: `SFTP: Config`.
 
-![hosting](images/SFTP_config.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/SFTP_config.png){.thumbnail}
 
 With this command, Visual Studio Code will create the configuration file "sftp.json" at the root of the local folder you created earlier. But because Visual Studio Code doesn't know where your project is locally, you should see the following message:
 
-![hosting](images/SFTP_folder.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/SFTP_folder.png){.thumbnail}
 
 Click `Open Folder`{.action}, navigate to the local folder location of your choice and click `Select Folder`{.action} to confirm.
 
-![hosting](images/select_folder.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/select_folder.png){.thumbnail}
 
 In Visual Studio Code, reenter the command `SFTP: Config`. A configuration file named "sftp.json" appears in Visual Studio Code.
 
-![hosting](images/sftp_json_default.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/sftp_json_default.png){.thumbnail}
 
 This file is located in the .vscode folder, which is located at the root of your local project.
 
@@ -90,7 +90,7 @@ In the "sftp.json" file, enter the values for the following entries:
 
 Locate it at the two locations highlighted in orange.
 
-![hosting](images/hosting_name.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
 
 > [!primary]
 >
@@ -101,7 +101,7 @@ Locate it at the two locations highlighted in orange.
 
 In the `FTP-SSH`{.action} tab, the host name (`host`) is visible under the mention `FTP and SFTP server`{.action}.
 
-![hosting](images/hostname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
 
 #### username
 
@@ -147,11 +147,11 @@ Once you have configured the “sftp.json” file, download the contents of your
 
 Visual Studio Code prompts you to select the folder that you want to upload to your Web Hosting plan. Enter the value `name` previously defined in the file “sftp.json” .
 
-![hosting](images/download_project.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/download_project.png){.thumbnail}
 
 If prompted, enter the user password entered in the “sftp.json” file, then click `enter`. After downloading, you view all of the folders and files in your project in the File Explorer located in the left column of the Visual Studio Code interface.
 
-![hosting](images/explorer.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/explorer.png){.thumbnail}
 
 > [!primary]
 >
@@ -168,7 +168,7 @@ To disable this feature, while keeping it in the "sftp.json" file, change the va
 
 So far, we have only mentioned the commands: `SFTP: Config` and `SFTP: Download Project`. There are other commands that you can observe by auto-completion by typing `SFTP:` in the command editor.
 
-![hosting](images/list_commands.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/list_commands.png){.thumbnail}
 
 Find the list of commands [here](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
 
