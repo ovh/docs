@@ -36,7 +36,7 @@ Managing multiple websites can be complex and time-consuming. If you manage mult
 
 If you are not already logged in, access the administration interface of your one-click module for which you want to install the MainWP dashboard.
 
-![mainWP](images/connect_WP_admin.png){.thumbnail}
+![mainWP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/access-the-module-s-administration-interface.png){.thumbnail}
 
 Enter your login and password to log in. The WordPress dashboard appears.
 
@@ -44,14 +44,14 @@ Enter your login and password to log in. The WordPress dashboard appears.
 
 Go to the main WordPress menu, on the left-hand side of the screen, and click `Plugins`{.action} then `Add New Plugin`{.action}.
 
-![mainWP](images/add_new_plugin.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/add_new_plugin.png){.thumbnail}
 
 A list of the most popular WordPress plugins is displayed. In the top right-hand corner of the search bar, type “MainWP”, then confirm. Among the results, several plugins offered by “MainWP” are displayed. Install the following two plugins:
 
 - MainWP Dashboard
 - Child MainWP
 
-![mainWP](images/plugins_mainwp_result.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/plugins_mainwp_result.png){.thumbnail}
 
 MainWP Dashboard is the main plugin you can use to manage your websites from a single dashboard.<br>
 MainWP Child enables you to connect your WordPress website (also called a "child site") to the MainWP Dashboard.
@@ -64,7 +64,7 @@ MainWP Child enables you to connect your WordPress website (also called a "child
 Once you have installed both plugins, please remember to enable them in order to use them.
 Once the two plugins are installed and enabled, the following warning message will appear at the top of your screen:
 
-![mainWP](images/warning_message_child.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/warning_message_child.png){.thumbnail}
 
 This message informs you that you have just activated the MainWP Child plugin, and that you now need to connect your child website to the MainWP Dashboard. For security reasons, disable the MainWP Child plugin if you do not want to connect your child website now. Reactivate the MainWP Child plugin when you are ready to connect your WordPress website to the MainWP dashboard.
 
@@ -72,26 +72,26 @@ This message informs you that you have just activated the MainWP Child plugin, a
 
 In the main menu on the left, click `Sites`{.action}, then `Add New`{.action}. The following screen appears:
 
-![mainWP](images/add_new_site.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/add_new_site.png){.thumbnail}
 
 Enter the URL of the child site you want to connect to the MainWP dashboard. Just below, select the button to indicate that you have installed and activated the MainWP Child plugin on your child website. The following two new fields are displayed:
 
 - `Administrator username`: log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Select the web hosting plan concerned, and click the `1-click modules`{.action} tab. In the table that pops up, identify the row that corresponds to your 1-click module. Your admin name is in the `Login`{.action} column.
 - `Site title`: enter the value you want. If you connect many child websites, remember to enter an explicit site title.
 
-![mainWP](images/add_site.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/add_site.png){.thumbnail}
 
 When all the fields of the form are filled in, click the `Add Site`{.action} button below the form to confirm. If there are no errors, you will receive the following confirmation message, confirming that your child site is now connected to the MainWP dashboard:
 
-![mainWP](images/add_site_success_message.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/add_site_success_message.png){.thumbnail}
 
 To check that your child website is available in the MainWP dashboard, click `Sites`{.action} in the main menu on the left-hand side, then `Manage Sites`{.action}.
 
-![mainWP](images/sites_dashboard.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/sites_dashboard.png){.thumbnail}
 
 In our example, the website "my website" will appear in the list of child sites connected to the MainWP dashboard. You can add as many child sites as you want.
 
-![mainWP](images/grid_all_sites.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/grid_all_sites.png){.thumbnail}
 
 > [!primary]
 >
@@ -109,16 +109,16 @@ If you use several plugins and themes for your websites, you may encounter error
 
 In the main menu on the left, click `Sites`{.action} then `Updates`{.action}. The following screen appears:
 
-![mainWP](images/updates_screen.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/updates_screen.png){.thumbnail}
 
 At the top of the interface, the tabs indicate that a plugin and four themes are available to update. Click on the tab of your choice to view the available updates. In our example, if you click on the `Themes Updates`{.action} tab, you will see a list of the four themes affected by the updates.
 
-![mainWP](images/update_themes.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/update_themes.png){.thumbnail}
 
 If you want to update several themes (or all the themes at the same time), select the corresponding lines (by ticking the box to the left of each line) then click `Update Selected Themes`{.action}.
 The following confirmation message appears, indicating the sites where the previously selected themes will be updated.
 
-![mainWP](images/update_confirmation_message.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/update_confirmation_message.png){.thumbnail}
 
 In our example, the selected themes will be updated for the websites "www.example.fr", "www.example2.ovh", "blog 1", "blog 2" and "blog 3". Click `Yes, proceed`{.action} to confirm. The progress window appears. It will close when the updates are complete.
 
@@ -140,7 +140,7 @@ Before you can install an extension, go to [MainWP.com](https://mainwp.com/my-ac
 
 Once you have created your MainWP account, go to the [MainWP.com extensions section](https://mainwp.com/mainwp-extensions/). For our example, we choose the free UpdraftPlus extension. Click the UpdraftPlus extension.
 
-![mainWP](images/updraftPlus_card.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/updraftPlus_card.png){.thumbnail}
 
 A page dedicated to the extension will appear. Click `Get the free Bundle`{.action}, then `Proceed to checkout`{.action}. You do not need to enter your payment details as this extension is free. Enter only the required information. Tick the required buttons, then finish by clicking `Place order`{.action}.
 
@@ -150,15 +150,15 @@ You will now need to retrieve the API key corresponding to your MainWP username,
 
 Go to [your MainWP account](https://mainwp.com/my-account/my-api-keys/) then copy the API key.
 
-![mainWP](images/API_key_mainwp.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/API_key_mainwp.png){.thumbnail}
 
 Go back to the MainWP dashboard and click on `Extensions`{.action} in the main menu on the left. In the top right-hand corner of the screen that appears, click `Install and Activate Extensions`{.action}.
 
-![mainWP](images/install_activate_extensions.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/install_activate_extensions.png){.thumbnail}
 
 In the `Enter your MainWP API Key`{.action} field, paste the API key you have previously copied, tick the `Remember MainWP Main API Key`{.action} box and click `Validate my MainWP Main API Key`{.action}. If there are no errors, the following confirmation message is displayed:
 
-![mainWP](images/API_key_valid.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/API_key_valid.png){.thumbnail}
 
 Finally, click `Install Extension`{.action} to install the extensions of your choice.
 
@@ -166,11 +166,11 @@ Finally, click `Install Extension`{.action} to install the extensions of your ch
 
 After clicking `Install Extensions`{.action}, a window will appear with a list of available extensions, sorted by category. In our example, we choose the free “UpdraftPlus” extension from the Backups category. After selecting UpdraftPlus, click `Install Selected Extensions`{.action}.
 
-![mainWP](images/install_updraftPlus.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/install_updraftPlus.png){.thumbnail}
 
 Once the installation is complete, UpdraftPlus is available in the list of extensions for your MainWP dashboard.
 
-![mainWP](images/extensions_dashboard_updraftPlus.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/extensions_dashboard_updraftPlus.png){.thumbnail}
 
 Click `Enable`{.action} to enable the extension. If an error message indicates that the license is not activated, simply click the `License`{.action} button.
 

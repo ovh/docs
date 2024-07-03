@@ -34,25 +34,25 @@ In the MainWP main menu, click `Clients`{.action}. On the screen that opens, the
 
 To get started, add your first customer. In the main menu of MainWP, click `Clients`{.action} then `Add Client`{.action}. In the form that appears, fill in your customer’s details. On the right-hand side of the screen, select the websites on which you want to create your new customer, then click `Add Client`{.action}.
 
-![mainWPClientMngt](images/add_client.png){.thumbnail}
+![mainWPClientMngt](/pages/assets/screens/other/cms/wordpress/mainwp/add_client.png){.thumbnail}
 
 ### View your customers
 
 In the main menu of MainWP, click `Clients`{.action} then `Clients`{.action}. A list of all your customers will appear. You can search for a specific customer (in the `Search`{.action} field in the top right-hand corner of the table) by entering the value of one of its fields, such as its name.
 
-![mainWPClientMngt](images/search_client.png){.thumbnail}
+![mainWPClientMngt](/pages/assets/screens/other/cms/wordpress/mainwp/search_client.png){.thumbnail}
 
 You can drag and drop the columns of your choice to highlight the relevant information of your customers, such as the email address (column `Customer Email`{.action}) or the number of websites to which your customer is attached (column `Websites`{.action}).
 
 From this table, you can delete any customer. Select the lines corresponding to the customers you want to delete, click `Bulk actions`{.action}, `Delete`{.action} then `Apply`{.action} to confirm.
 
-![mainWPClientMngt](images/delete_client.png){.thumbnail}
+![mainWPClientMngt](/pages/assets/screens/other/cms/wordpress/mainwp/delete_client.png){.thumbnail}
 
 Finally, click `Yes, proceed`{.action} to confirm the deletion of the customers.
 
 In the table representing your customers, identify the customer of your choice and click on the `...`{.action}.
 
-![mainWPClientMngt](images/more_client.png){.thumbnail}
+![mainWPClientMngt](/pages/assets/screens/other/cms/wordpress/mainwp/more_client.png){.thumbnail}
 
 You can:
 
@@ -65,15 +65,15 @@ You can:
 For each customer, many default fields are present, such as name, email, country, number or links to social networks. If you would like to add specific information that is not present by default, you can add the fields of your choice manually.
 In the main menu of MainWP, click `Clients`{.action} then `Clients Fields`{.action}. To create a new field, click `New Field`{.action}. In the window that appears, enter the name and description for your new field.
 
-![mainWPClientMngt](images/new_field_client.png){.thumbnail}
+![mainWPClientMngt](/pages/assets/screens/other/cms/wordpress/mainwp/new_field_client.png){.thumbnail}
 
 In our example, we create a new “loyalty” field, along with an associated description. To confirm the creation of the new field, click `Save Field`{.action}. Now, when creating a new customer, the new “loyalty” field will be available.
 
-![mainWPClientMngt](images/new_field_add_client.png){.thumbnail}
+![mainWPClientMngt](/pages/assets/screens/other/cms/wordpress/mainwp/new_field_add_client.png){.thumbnail}
 
 Once you have created your new customer, go to your customers list. Click the customer you just created. The new “loyalty” field and the corresponding value are displayed.
 
-![mainWPClientMngt](images/details_client.png){.thumbnail}
+![mainWPClientMngt](/pages/assets/screens/other/cms/wordpress/mainwp/details_client.png){.thumbnail}
 
 ## Go further <a name="go-further"></a>
 

@@ -27,7 +27,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 ### « Erreur lors de la connexion à la base de données »
 
-![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
+![error_establishing_a_DB_connection](/pages/assets/screens/other/browsers/errors/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Vérifier les incidents en cours
 
@@ -94,7 +94,7 @@ Dans votre [espace client OVHcloud](/links/manager), dans la partie `Hébergemen
 
 Vous avez reçu un e-mail de nos services indiquant que la quantité de données sur votre base dépasse la limite autorisée. Votre base est donc passée en lecture seule. Ceci empêche toute modification de votre site.
 
-![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
+![database-overquota-notification-email](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
 
 Trois méthodes vous permettront de débloquer votre base de données :
 
@@ -152,7 +152,7 @@ Pour optimiser votre base de données, suivez les instructions de notre guide «
 
 Le message suivant dans la partie `Bases de données`{.action} de votre [espace client OVHcloud](/links/manager) indique que votre serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](/links/web/databases) a consommé une quantité de ressources trop importantes sur l'infrastructure OVHcloud :
 
-![ram-exceeded](images/ram-exceeded.png){.thumbnail}
+![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
 Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifier-loffre-du-serveur-de-bases-de-donnees) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](/links/manager). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
 
@@ -188,7 +188,7 @@ Dans le cas contraire, [sauvegardez les données présentes](/pages/web_cloud/we
 
 Vous pouvez également cocher la case `Vider la base de données actuelle`{.action} juste avant de [lancer l'import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#importer-votre-propre-sauvegarde-depuis-lespace-client) :
 
-![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
+![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
 
 Contactez si besoin notre [communauté d'utilisateurs](/links/community) ou un [prestataire spécialisé](/links/partner) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
 
@@ -238,7 +238,7 @@ Pour résoudre cette anomalie, vous pouvez :
 
 Ce message d'erreur peut apparaître lors de la connexion à votre base de données par [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin). Elle indique que les identifiants renseignés sont erronés.
 
-![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
+![access_denied_for_user](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-1045.png){.thumbnail}
 
 Dans cette situation, [vérifiez les identifiants renseignés](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#en-pratique) et modifiez si besoin le [mot de passe de votre base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -269,7 +269,7 @@ Dans cette situation, vous devrez [optimiser vos bases de données](/pages/web_c
 
 Ce message d'erreur apparaît lors de la [connexion à PhpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#en-pratique) lorsque le nom de serveur renseigné est incorrect.
 
-![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
+![name_or_service_not_known](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-2002.png){.thumbnail}
 
 Vérifiez le nom du serveur à inscrire dans votre [espace client OVHcloud](/links/manager).
 
