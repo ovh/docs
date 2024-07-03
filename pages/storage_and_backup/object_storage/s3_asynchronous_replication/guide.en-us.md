@@ -81,11 +81,11 @@ At its core, the OVHcloud Object Storage S3 Asynchronous Replication is designed
 
 ### What is replicated and what is not
 
-The following table provides the default behavior of the OVHcloud Object Storage Asynchronous Replication feature:
+The following table provides the **default** behavior of the OVHcloud Object Storage Asynchronous Replication feature:
 
 | What is replicated                                           | What is not replicated                                       |
 |--------------------------------------------------------------|--------------------------------------------------------------|
-| Objects created *after* the upload of the replication configuration | Delete marker i.e. objects deleted in the source bucket are not automatically deleted in the destination bucket |
+| Objects created *after* the upload of the replication configuration | Delete marker i.e. objects deleted in the source bucket are not automatically deleted by default in the destination bucket |
 | Unencrypted objects                                          | Object replicas i.e. objects that are the result of a previous replication operation |
 | | Objects that have already been replicated to a previous destination |
 | Object metadata from the source objects to the replicas      | Objects that are stored in the Cold Archive temporary storage |
@@ -274,13 +274,13 @@ This configuration will replicate all objects (indicated by the empty `Filter` f
       "Destination": {
         "Bucket": "arn:aws:s3:::destination-bucket"
       },
-      "DeleteMarkerReplication": { "Status": "Disabled" },
+      "DeleteMarkerReplication": { "Status": "Enabled" },
     }
   ]
 }
 ```
 
-This configuration will replicate all objects that have the prefix "backup" and the tag "important" set to "true" to the bucket `destination-bucket`. Additionally, we indicate that deletion operations in the source bucket should also replicated.
+This configuration will replicate all objects that have the prefix "backup" and the tag "important" set to "true" to the bucket `destination-bucket`. Additionally, we indicate that deletion operations in the source bucket should also be replicated.
 
 #### Replicating source to multiple regions
 
