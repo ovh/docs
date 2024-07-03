@@ -286,10 +286,44 @@ In this section we will present a more advanced IPv6 setup, where your vRack con
 The traffic path is as follows: Inbound traffic to a given VM (with specified subnet) is routed through the customer's vRack, first to a specified host (with a next-hop address), then using a local link (or vSwitch - black link fd00::/64 on a diagram) to the particular VM.
 Traffic coming back from such a VM should use the default route via the first part of the local link (black one, fd00::1), then (possibly default) route from a host to its gateway.
 
-#### APIv6 commands
+#### Define routed subnet
 
 <details>
-<summary> <b>Define routed subnet</b> </summary>
+<summary> <b>Control Panel actions</b> </summary>
+<blockquote>
+
+Go to `Network > vRack private network`{.action} section add select your vRack you want to manage
+
+You have these kind of informations
+
+<img src="/images/101.png" alt="mange my vrack 01"/>
+<br/>
+
+<img src="/images/102.png" alt="mange my vrack 02"/>
+<br/>
+
+On the right you have a IP section and you can add a new subnet clicking `Add sud network`{.action} button
+
+<img src="/images/103.png" alt="vrack select"/>
+<br/>
+
+In this way you have this modal to entrer your new address
+
+<img src="/images/220.png" alt="continue"/>
+<br/>
+
+This created routed subnet aa::/64 reachable via next hop 2001:41d0:a800::123 IP inside the first (bridged) subnet
+
+<img src="/images/221.png" alt="continue"/>
+<br/>
+
+</blockquote>
+</details>
+
+
+
+<details>
+<summary> <b>APIv6 commands</b> </summary>
 <blockquote>
 
 To create a routed subnet, we must first define:
