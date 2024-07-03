@@ -1,7 +1,7 @@
 ---
 title: 'Deploying a GPU instance'
 excerpt: 'Find out how to deploy a GPU instance on Linux or Windows'
-updated: 2024-07-01
+updated: 2024-07-03
 ---
 
 ## Objective
@@ -35,7 +35,7 @@ All the images we offer can be used on a GPU instance.
 > If you don’t feel comfortable with manually compiling a kernel module, we recommend using a distribution that is officially supported by Nvidia and for which they provide *turnkey* drivers: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Once you have logged in to [your OVHcloud Control Panel](/links/manager), go to your Public Cloud project and click on `Instances`{.action} in the left-hand menu under the **Compute** tab. Next, click `Create an instance`{.action} and choose a compatible GPU instance:
+Once you have logged in to [your OVHcloud Control Panel](/links/manager), go to your Public Cloud project and click on `Instances`{.action} in the left-hand menu under the **Compute** tab. Next, click on `Create an instance`{.action} and choose a compatible GPU instance:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
@@ -49,7 +49,7 @@ lspci | grep -i nvidia
 00:06.0 Audio device: NVIDIA Corporation Device 10f1 (rev a1)
 ```
 
-The graphics card is there, but cannot be used yet. To do so, you must first install the NVIDIA driver. You can find the list of packages at this address: [List of available Linux packages](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+The graphics card is there, but cannot be used yet. To do so, you must first install the NVIDIA driver. You can find the list of packages at this address: [List of available Linux packages](https://developer.download.nvidia.com/compute/cuda/repos/){.external}.
 
 You will then need to enter the following commands:
 
@@ -119,7 +119,7 @@ Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud
 >
 > We cannot guarantee that the solution will work with all future versions of the NVIDIA driver.
 >
-> Before performing any update of the NVIDIA driver, we strongly recommend that you take a snapshot that will allow you to do a rollback, if necessary.
+> Before performing any update of the NVIDIA driver, we strongly recommend that you take a snapshot of your instnace, this will allow you to do a rollback if necessary.
 >
 
 #### Connecting to a Windows OS instance

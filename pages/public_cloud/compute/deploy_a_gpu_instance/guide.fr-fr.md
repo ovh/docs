@@ -49,7 +49,7 @@ lspci | grep -i nvidia
 00:06.0 Audio device: NVIDIA Corporation Device 10f1 (rev a1)
 ```
 
-La carte graphique est présente mais n'est pas encore utilisable. Il faut maintenant installer les drivers NVIDIA. Vous trouverez la liste des paquets à l'adresse suivante : [Liste des paquets Linux disponibles](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+La carte graphique est présente mais n'est pas encore utilisable. Il faut maintenant installer les drivers NVIDIA. Vous trouverez la liste des paquets à l'adresse suivante : [Liste des paquets Linux disponibles](https://developer.download.nvidia.com/compute/cuda/repos/){.external}.
 
 Il suffit ensuite de taper les commandes suivantes :
 
@@ -117,9 +117,9 @@ Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/pu
 
 > [!warning]
 >
-> Il ne nous est pas possible de garantir que la  solution fonctionnera avec toutes les versions futures du driver NVIDIA.
+> Il ne nous est pas possible de garantir que la solution fonctionnera avec toutes les versions futures du driver NVIDIA.
 >
-> Avant toute mise à jour du driver NVIDIA, il est fortement recommandé de prendre un snapshot qui vous permettra de revenir en arrière le cas échéant.
+> Avant toute mise à jour du driver NVIDIA, il est fortement recommandé de prendre un snapshot de votre instance, ce qui vous permettra de revenir en arrière le cas échéant.
 >
 
 #### Connexion à une instance Windows
@@ -149,7 +149,7 @@ Entrez l'adresse IPv4 de votre instance et `Administrator` en tant qu'utilisateu
 > Si vous rencontrez des problèmes avec cette procédure, vérifiez que les connexions distantes (RDP) sont autorisées sur votre machine en vérifiant les paramètres de votre système, les règles de pare-feu et les éventuelles restrictions réseau. 
 >
 
-Une fois connecté à votre instance, vous devrez installer le pilote NVIDIA depuis le [site officiel] (https://www.nvidia.com/Download/index.aspx){.external}.
+Une fois connecté à votre instance, vous devrez installer le pilote NVIDIA depuis le [site officiel](https://www.nvidia.com/Download/index.aspx){.external}.
 
 Il rester à installer le pilote nécessaire, qui apparaîtra ensuite ici :
 
