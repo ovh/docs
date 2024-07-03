@@ -118,20 +118,20 @@ This table sums up the reserved resources on b2 and b3 flavors:
 
 | Flavor | vCore | Reserved CPU (ms) | Total RAM | Reserved RAM (GB) | Total storage (GB) | Reserved storage (GB) |
 |-|-|-|-|-|-|-|
-| b2-7 | 2 | 160 | 7 | 1,85 | 50 | 22 |
-| b2-15 | 4 | 170 | 15 | 2,25 | 100 | 30 |
-| b2-30 | 8 | 190 | 30 | 3 | 200 | 43 |
-| b2-60 | 16 | 230 | 60 | 4,5 | 400 | 66 |
-| b2-120 | 32 | 310 | 120 | 7,5 | 400 | 66 |
-| b3-8 | 2 | 160 | 8 | 1,4 | 50 | 22 |
-| b3-16 | 4 | 170 | 16 | 1,8 | 100 | 30 |
-| b3-32 | 8 | 190 | 32 | 2,6 | 200 | 43 |
-| b3-64 | 16 | 230 | 64 | 4,2 | 400 | 66 |
-| b3-128 | 32 | 310 | 128 | 7,4 | 400 | 66 |
-| b3-256 | 64 | 470 | 256 | 13,8 | 400 | 66 |
+| b2-7 | 2 | 160 | 7 | 1,98 | 50 | 22 |
+| b2-15 | 4 | 170 | 15 | 2,4 | 100 | 30 |
+| b2-30 | 8 | 190 | 30 | 3,16 | 200 | 43 |
+| b2-60 | 16 | 230 | 60 | 4,7 | 400 | 66 |
+| b2-120 | 32 | 310 | 120 | 7,77 | 400 | 66 |
+| b3-8 | 2 | 160 | 8 | 2 | 50 | 22 |
+| b3-16 | 4 | 170 | 16 | 2,44 | 100 | 30 |
+| b3-32 | 8 | 190 | 32 | 3,26 | 200 | 43 |
+| b3-64 | 16 | 230 | 64 | 4,9 | 400 | 66 |
+| b3-128 | 32 | 310 | 128 | 8,18 | 400 | 66 |
+| b3-256 | 64 | 470 | 256 | 14,73 | 400 | 66 |
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).
