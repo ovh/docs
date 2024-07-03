@@ -32,7 +32,7 @@ In seguito al rilevamento di un funzionamento sospetto, i nostri sistemi di sicu
  
  *Se utilizzi un blocco di questo tipo, invia una notifica all'indirizzo email del contatto "amministratore" del tuo hosting Web*
 
-![http-403](images/http-403.png){.thumbnail}
+![http-403](/pages/assets/screens/other/browsers/errors/http-403.png){.thumbnail}
 
 **Questa guida ti mostra come sbloccare l'accesso al tuo sito in caso di visualizzazione "403 forbidden".**
 
@@ -135,7 +135,7 @@ Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provide
 
 Apri il software FileZilla e poi [collegati al tuo spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection). Clicca su `Server`{.action} nella barra del menu e poi su `Effettua un ordine FTP`{.action} (la denominazione può essere diversa in base alla versione di FileZilla utilizzata):
 
-![command_filezilla1](images/enter-custom-command-step-1.png){.thumbnail}
+![command_filezilla1](/pages/assets/screens/other/web-tools/filezilla/enter-custom-command-step-1.png){.thumbnail}
 
 Nella nuova finestra, inserisci il comando qui sotto e conferma:
 
@@ -143,7 +143,7 @@ Nella nuova finestra, inserisci il comando qui sotto e conferma:
 SITE CHMOD 705 /
 ```
 
-![command_filezilla2](images/enter-custom-command-step-2.png){.thumbnail}
+![command_filezilla2](/pages/assets/screens/other/web-tools/filezilla/enter-custom-command-step-2.png){.thumbnail}
 
 Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
@@ -168,7 +168,7 @@ Clicca su `FTP Explorer`{.action} e accedi al tuo [spazio di storage FTP](/pages
 
 Clicca sul pulsante `Funzioni avanzate`{.action} e poi sul pulsante `Esegui`{.action} accanto a "Send arbitrary FTP commands to the FTP server".
 
-![net2ftp](images/advanced-ftp-functions.png){.thumbnail}
+![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
 
 Nella parte superiore della pagina, inserisci questo comando:
 
@@ -178,7 +178,7 @@ SITE CHMOD 705 /
 
 Clicca su "V" verde.
 
-![result_command_on_net2ftp](images/ftp-command-result.png){.thumbnail}
+![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
 
 Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
