@@ -382,6 +382,7 @@ Suivez les **5 étapes** en cliquant successivement sur chacun des 5 onglets ci-
 >>
 >> *Exemple de résultat :*
 >>
+>> ```console
 >> {
 >>  "selectors": [
 >>    {
@@ -399,6 +400,7 @@ Suivez les **5 étapes** en cliquant successivement sur chacun des 5 onglets ci-
 >>  "autoconfig": true,
 >>  "status": "enabled"
 >> }
+>> ```
 >>
 >> - Si vous constatez bien les valeurs `"status": "set"` sur les 2 sélecteurs, cela signifie qu'ils sont bien configurés.
 >> - Si vous constatez les valeurs `"status": "toSet"` sur les 2 sélecteurs, cela signifie que vos modifications DNS ne sont pas visibles. Reprenez à l'onglet « **4. Configurer l'enregistrement DNS** ».
@@ -431,7 +433,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> *Exemple de résultat :*
 >>
->> ``` console
+>> ```console
 >> "ovhex123456-selector1"
 >> "ovhex123456-selector2"
 >> ```
@@ -443,7 +445,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domaine/{domainName}/dkim
+>> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim
 >> >
 >>
 >> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».
@@ -469,6 +471,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> "finishDate": null,
 >> "todoDate": "2023-05-05T11:32:07+02:00"
 >> ```
+>>
 >> > [!primary]
 >> >
 >> > Si votre nom de domaine est géré dans le même espace client que votre plateforme et que vous avez coché `autoEnableDKIM` et `configureDkim`, passez directement à la section [**Les différents états du DKIM**](#dkim-status) ci-dessous pour suivre l'activation du DKIM.
@@ -494,7 +497,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> *Exemple de résultat :*
 >>
->> ``` console
+>> ```console
 >> targetRecord: "ovhex123456-selector1._domainkey.1675.ac.dkim.mail.ovh.net"
 >> recordType: "CNAME"
 >> header: "from;to;subject;date"
@@ -605,7 +608,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/pro POST /email/pro/{service}/domaine/{domainName}/dkim
+>> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >>
 >> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » . <br>
@@ -842,7 +845,7 @@ Sélectionnez l'offre e-mail concernée parmi les onglets suivants :
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/pro POST /email/pro/{service}/domaine/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
 >> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » . <br>
