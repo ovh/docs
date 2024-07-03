@@ -10,7 +10,8 @@ updated: 2024-04-08
 
 ## Wprowadzenie
 
-Instancje Local Zones są rozszerzeniem regionów, które przybliżają usługi OVHcloud do konkretnych lokalizacji. Dzięki temu zapewniają krótszy czas odpowiedzi i większą wydajność aplikacji.
+Instancje Local Zones są rozszerzeniem [regionów](/links/public-cloud/regions-pci), które przybliżają usługi OVHcloud do konkretnych lokalizacji. Dzięki temu zapewniają krótszy czas odpowiedzi i większą wydajność aplikacji.
+
 Instancje Local Zones są strategicznie rozmieszczone w pobliżu obszarów o wysokim zapotrzebowaniu użytkowników. Ich głównym celem jest zminimalizowanie czasu potrzebnego na transfer danych między użytkownikiem a chmurą, aby usługi były szybsze i bardziej reaktywne oraz aby spełnić wymagania stawiane przez Data residency.
 
 Więcej informacji znajdziesz na naszej [stronie poświęconej instancjom Local Zone](https://www.ovhcloud.com/pl/public-cloud/local-zone-compute/).

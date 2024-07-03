@@ -6,7 +6,7 @@ updated: 2024-04-08
 
 ## Objective
 
-Local Zones are an extension of [regions](/links/bare-metal/regions) that bring OVHcloud services closer to specific locations, offering reduced latency and improved performances for applications.
+Local Zones are an extension of [regions](/links/public-cloud/regions-pci) that bring OVHcloud services closer to specific locations, offering reduced latency and improved performances for applications.
 
 Local Zones are strategically placed in proximity to areas with high user demand. Their main goal is to minimize the time it takes to transfer data between the user and the cloud, in order to make services faster and more responsive, and meet data residency requirements.
 
