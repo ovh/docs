@@ -46,7 +46,7 @@ Wenn Sie die Verbindungsdaten nicht zur Hand haben, loggen Sie sich in Ihr [OVHc
 
 Die Informationen zu Ihrem Speicherplatz sowie eine Tabelle mit den auf Ihrem Webhosting erstellten FTP- und SSH-Benutzern werden angezeigt.
 
-![ftp login](images/tab-pro.png){.thumbnail}
+![ftp login](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 > [!primary]
 >
@@ -76,7 +76,7 @@ Nachstehend finden Sie eine Beschreibung der wesentlichen Informationen, die auf
 
 Wenn Sie das Passwort eines FTP- oder SSH-Benutzers nicht mehr kennen, lesen Sie unsere Anleitung "[Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![ftp login](images/change-password.png){.thumbnail}
+![ftp login](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
 
 An diesem Punkt verfügen Sie über alle notwendigen Elemente, um sich mit Ihrem FTP-Speicherplatz zu verbinden.
 
@@ -97,11 +97,11 @@ Um den "FTP-Explorer" zu verwenden, loggen Sie sich in Ihr [OVHcloud Kundencente
 
 Klicken Sie links im Menü auf den Bereich `Hosting-Pakete`{.action}. Wählen Sie das betreffende Webhosting aus, gehen Sie auf den Tab `FTP - SSH`{.action} und klicken Sie dann auf den Button `FTP-Explorer`{.action}.
 
-![ftp login](images/ftp-explorer.png){.thumbnail}
+![ftp login](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 Geben Sie auf der neu geöffneten Seite Ihre FTP-Kennung und das zugehörige Passwort ein und klicken Sie auf `Anmeldung`{.action}. Wenn die Informationen korrekt sind, erscheint die Ansicht Ihres Speicherplatzes.
 
-![ftp login](images/login-interface.png){.thumbnail}
+![ftp login](/pages/assets/screens/other/web-tools/net2ftp/login-interface.png){.thumbnail}
 
 #### 2. Via FTP-Client verbinden <a name="ftpsoftware"></a>
 
@@ -160,7 +160,7 @@ Wenn die Informationen korrekt sind, werden Sie mit Ihrem FTP-Speicherplatz verb
 
 Wenn nötig lesen Sie unsere Anleitung "[SSH-Zugang Ihres Webhostings verwenden](/pages/web_cloud/web_hosting/ssh_on_webhosting)".
 
-![ftp login](images/terminal-ssh-connected.png){.thumbnail}
+![ftp login](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-connected.png){.thumbnail}
 
 ## Weiterführende Informationen
 
