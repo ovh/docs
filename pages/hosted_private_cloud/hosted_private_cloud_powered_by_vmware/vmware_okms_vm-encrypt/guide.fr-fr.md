@@ -214,10 +214,19 @@ Puis aller dans la section:
 
 Une fois dans `Sécurité`{.action}, allez toute en bas dans la section: `Virtual Machine Encryption Key Management Servers`{.action}.
 
+L'étape de l'ajout du KMS depuis le control panel HPC VMware on OVHcloud doit être réalisé en premier après l'achat et la livraison de votre KMS OVHcloud.
+
+Afin de permettre l'autorisation des flux au sein des pare-feux OVHcloud.
+
 ![Manager Hpc Security KMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add-optimized.webp)
 
 Vous pouvez ajouter votre Okms depuis le control panel HPC, en cliquant sur:
 - `Ajouter un nouveau serveur KMS`{.action}
+
+Une fois la fenêtre ouverte vous vez les champs suivant à remplir :
+- **IP:** Privilégier le nom de domaine de votre KMS plutôt que l'IP afin que si elle change le dns resolve l'ip quand même.
+- **Description:** Une description intelligente pour votre KMS.
+- **SSL Thumbprint:** La Thumbprint tls/ssl de votre KMS (voir plus bas comment la récupérer).
 
 ![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add_2-optimized.webp)
 
