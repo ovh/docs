@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-06-26
+updated: 2024-07-03
 ---
 
 > [!warning]
@@ -30,7 +30,7 @@ Since the billing for a KMS is based on the number of keys stored on it, orderin
 You can order a KMS from the [OVHcloud Control Panel](/links/manager) by going to one of the following menus:
 
 - Click `Bare Metal Cloud`{.action} then `Identity, Security & Operations`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
-- Click `Hosted Private Metal Cloud`{.action} then `Identity, Security & Operations`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
+- Click `Hosted Private Cloud`{.action} then `Identity, Security & Operations`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
 
 ![Access to the KMS menu](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
@@ -87,7 +87,7 @@ The following information is required:
 }
 ```
 
-The API then returns the certificate creation status
+The API then returns the certificate creation status:
 
 ```json
 {
@@ -120,7 +120,7 @@ Then copy the certificate ID and access its details via the API:
 > @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
 >
 
-The API now returns the public key of the certificate:
+The API returns the certificate in PEM:
 
 ```json
 {
@@ -139,7 +139,7 @@ The API now returns the public key of the certificate:
 }
 ```
 
-Copy the value of the **certificatePEM** field to a **client.tls** file.
+Copy the value of the **certificatePEM** field to a **client.cert** file.
 
 #### With a CSR
 
@@ -200,7 +200,7 @@ Copy the ID of the certificate and access its details via the API:
 > @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
 >
 
-The API now returns the public key of the certificate:
+The API returns the certificate in PEM:
 
 ```json
 {
@@ -219,7 +219,7 @@ The API now returns the public key of the certificate:
 }
 ```
 
-Copy the value of the **certificatePEM** field to a **client.tls** file.
+Copy the value of the **certificatePEM** field to a **client.cert** file.
 
 ### Contact the KMS
 
@@ -232,7 +232,7 @@ For example, for a KMS created in the **eu-west-rbx** region: <https://eu-west-r
 If you are using a browser, you will need to convert the certificate to pkcs12 format:
 
 ```bash
-openssl pkcs12 -export -inkey cert_key_pem.txt -in cert_key_pem.txt -out cert_key.p12
+openssl pkcs12 -export -inkey client.key -in client.cert -out client.p12
 ```
 
 #### Creating an encryption key
@@ -318,7 +318,7 @@ Depending on the key type, the possible sizes and operations are:
 
 When you create a key, you can import an existing key.
 
-To do this, you can add an additional **keys** field in the body of the API:
+To do this, you can add an additional **keys** field in the body of the request:
 
 ```json
 {
@@ -363,7 +363,7 @@ In order to manage encryption keys, several APIs are available:
 |POST|/v1/servicekey/{keyId}/deactivate|Deactivates an encryption key|
 
 Disabling an encryption key means that it will no longer be usable, even though the key remains in the KMS.<br>
-Deleting an encryption key is only possible on a key that has been previously disabled
+Deleting an encryption key is only possible on a key that has been previously disabled.
 
 > [!warning]
 >
@@ -375,7 +375,7 @@ Deleting an encryption key is only possible on a key that has been previously di
 #### KMS encryption
 
 The OVHcloud KMS has a dedicated encryption API for encrypting small volumes of data (less than 4 kB).<br>
-This is the fastest method, but it does not have the best performance.
+This is the easiest method, but it does not have the best performance.
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -418,7 +418,7 @@ The API expects the following values:
 |ciphertext|string|Data to decrypt|
 |context|string|Additional identification data to verify data authenticity|
 
-The **context** field must contain the same information as that given during encryption.
+The **context** field must have the same value as the one given during encryption.
 
 #### Encryption with a Data Key (DK)
 
@@ -480,7 +480,7 @@ And it returns the decrypted Data Key in a **plaintext** field.
 
 ### Sign with the KMS
 
-File signing is done using an asymmetric key
+File signing is done using the private key of an asymmetric key pair.
 
 #### Supported algorithms
 
