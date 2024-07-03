@@ -1,81 +1,84 @@
 ---
-title: "Änderung des SSH-Schlüssels bei Verlust"
-excerpt: "Erfahren Sie hier, wie Sie den SSH-Zugriff auf Ihre Public Cloud Instanz wiederherstellen können"
-updated: 2022-02-10
+title: "Ersetzen eines SSH-Schlüsselpaars einer Public Cloud-Instanz"
+excerpt: "Erfahren Sie hier, wie Sie den Server-Zugriff mit einem neuen SSH-Schlüsselpaar wiederherstellen, falls der private Schlüssel verloren ist"
+updated: 2024-06-13
 ---
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
 
 ## Ziel
 
-Bei einem Verlust des SSH-Schlüssels, zum Beispiel nach einer Reinstallation Ihres Computers, kann es vorkommen, dass Sie sich nicht mehr mit Ihrer Instanz verbinden können, wenn Sie keine alternative Zugangsmöglichkeit eingerichtet haben.
+Der Verlust Ihres privaten SSH-Schlüssels führt zum Verlust des Zugriffs auf Ihre Instanz, sofern Sie keinen alternativen Zugriffsweg konfiguriert haben.
 
-Um wieder Zugriff zu erhalten, stellen wir Ihnen den Rescue Modus zur Verfügung, über den Sie sich mit Ihrem Server verbinden und die notwendigen Dateien anpassen können.
+Sie können sich jedoch weiterhin über den OVHcloud Rescue-Modus mit einem provisorischen Passwort auf Ihrer Instanz einloggen und so Ihre Dateien bearbeiten.
 
-**In dieser Anleitung wird erklärt, wie Sie die Datei *authorized_keys* des Admin-Benutzers anpassen können, um einen neuen SSH-Schlüssel zur Verbindung mit Ihrer Instanz hinzuzufügen.**
+**Diese Anleitung erklärt, wie Sie Ihre SSH-Schlüssel ersetzen, wenn Sie keinen Zugang mehr zu Ihrer Instanz haben.**
+
+> [!warning]
+>
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung genereller Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie bei der Administration Ihres Systems Hilfe benötigen. 
+>
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
-- SSH-Zugriff auf Ihre Instanz [Rescue-Modus](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
+- Sie haben eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-> [!primary]
->
-Wenn Sie einen SSH-Schlüssel im OVHcloud Kundencenter speichern möchten, empfehlen wir Ihnen die Verwendung der RSA- oder ECDSA-Verschlüsselung. ED25519 wird derzeit nicht unterstützt.
->
+### Schritt 1: Erstellen eines neuen Schlüsselpaars
 
-Nachdem Sie die Disk der Instanz im [Rescue Modus](/pages/public_cloud/compute/put_an_instance_in_rescue_mode#schritt-2-auf-ihre-daten-zugreifen) gemountet haben, können Sie auf sämtliche darauf befindlichen Daten zugreifen.
+Erstellen Sie ein neues SSH-Schlüsselpaar auf Ihrem lokalen Gerät, wie im [ersten Abschnitt der Dokumentation zu SSH-Schlüsseln](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated) beschrieben.
 
-Ihre SSH-Schlüssel befinden sich in dieser Datei:
+### Schritt 2: Auf Ihre Instanz im Rescue-Modus zugreifen
 
+Folgen Sie den Anweisungen in der [Anleitung zum Rescue-Modus](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), um die Instanz im Rescue-Modus neu zu starten, sich mit ihr zu verbinden und Ihre Partitionen zu mounten.
+
+Wenn Sie den Befehl `mount` (wie in der Anleitung beschrieben) eingegeben haben und auf Ihre Systempartition zugegriffen werden kann, können Sie den folgenden Befehl verwenden:
+
+```bash
+chroot path/to/partition/mountpoint
 ```
-/mnt/home/USER_NAME/.ssh/authorized_keys
+
+Der Dateipfad hängt vom verwendeten Einhängepunkt ab. Wenn Sie Ihre Partition auf `/mnt` gemountet haben, müssen Sie Folgendes eingeben:
+
+```bash
+chroot /mnt/
 ```
 
-Editieren Sie diese Datei und fügen Sie Ihren neuen SSH-Schlüssel ein:
+Sie sollten nun vollen Schreibzugriff auf Ihre Dateien in diesem Ordner haben.
 
+### Schritt 3: Den Schlüssel ersetzen
+
+Öffnen Sie die relevante Datei "authorized_keys" mit einem Texteditor. Diese Datei speichert SSH-Schlüssel und befindet sich im Verzeichnis `home` des Benutzers, mit dem Sie sich auf Ihrer Instanz einloggen.
+
+Beispiel:
+
+```bash
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
-admin@instance:~$ sudo vim /mnt/home/USER_NAME/.ssh/authorized_keys
 
+Ersetzen Sie "USER_NAME" mit Ihrem verwendeten Benutzernamen.
+
+Kopieren Sie Ihren neuen öffentlichen Schlüssel (erstellt in Schritt 1) und fügen Sie ihn in die Datei ein. Es sollte dann ähnlich dem folgenden Beispiel aussehen:
+
+```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
 777777777778888888888999999900000000000000000000000000== old@sshkey
 ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
 EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
-Um den SSH-Schlüssel Ihres Standard-Benutzers zu ändern, begeben Sie sich einfach in dessen Home-Verzeichnis.
+Löschen Sie aus Sicherheitsgründen die obsolete "alte" Schlüsselzeichenfolge aus der Datei. Speichern Sie die Änderungen und schließen Sie den Editor.
 
-Für den Benutzer “admin” befindet sich die Datei zum Beispiel im Verzeichnis:
+Starten Sie die Instanz im "normalen" Modus über Ihr [OVHcloud Kundencenter](/links/manager) neu. Folgen Sie bei Bedarf der [Anleitung zum Rescue-Modus](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
 
-```
-/home/admin/.ssh/authorized_keys
-```
-
-Bei einer Ubuntu Instanz ist der Standard-Benutzer “ubuntu”, Sie finden die Datei also im Verzeichnis:
-
-```
-/home/ubuntu/.ssh/authorized_keys
-```
-
-Sie können im Rescue Modus auch das Passwort Ihres Standard-Benutzers mit folgenden Befehlen ändern (in diesem Beispiel für den Benutzer “admin”):
-
-- Mounten Sie das Dateisystem:
-
-```
-root@instance:/home/admin# mount /dev/vdb1 /mnt/
-root@instance:/home/admin# chroot /mnt/
-```
-
-- Ändern Sie das Passwort von “admin”:
-
-```
-root@instance:/# passwd admin
-```
-
-Nachdem Sie die Änderung durchgeführt und gespeichert haben, können Sie Ihre Instanz wieder von deren Festplatte starten und sich dann mit Ihrem neuen SSH-Schlüssel anmelden.
+Sie haben jetzt mit Ihrem neuen SSH-Schlüsselpaar wieder Zugriff auf die Instanz.
 
 ## Weiterführende Informationen
 
-[Root-Rechte erlangen und Passwort festlegen](/pages/public_cloud/compute/become_root_and_change_password)
-
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.
