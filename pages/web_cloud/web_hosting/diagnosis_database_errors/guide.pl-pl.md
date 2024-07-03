@@ -31,7 +31,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 ### "Błąd podczas logowania do bazy danych"
 
-![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
+![error_establishing_a_DB_connection](/pages/assets/screens/other/browsers/errors/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Zweryfikuj zdarzenia w trakcie
 
@@ -98,7 +98,7 @@ W [Panelu klienta OVHcloud](/links/manager), w części `Hosting`{.action}, klik
 
 Otrzymałeś e-mail z naszych usług informujący, że ilość danych na Twojej bazie przekracza dozwolony limit. Twoja baza została przeczytana w trybie tylko do odczytu. Dzięki temu nie można wprowadzać modyfikacji na Twojej stronie WWW.
 
-![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
+![database-overquota-notification-email](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
 
 Odblokuj bazę danych na trzy sposoby:
 
@@ -156,7 +156,7 @@ Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w p
 
 Poniższy komunikat w części `Bazy danych`{.action} Twojego [Panelu klienta OVHcloud](/links/manager) wskazuje, że Twój serwer [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
 
-![ram-exceeded](images/ram-exceeded.png){.thumbnail}
+![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
 W tej sytuacji możesz zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#zmiana-oferty-serwera-baz-danych) dostępny w części `Bazy danych`{.action} [Panelu klienta OVHcloud](/links/manager). W karcie `Informacje ogólne`{.action} kliknij przycisk `...`{.action} w rubryce `RAM`.
 
@@ -188,7 +188,7 @@ Upewnij się, że baza danych jest pusta w zakładce `Bazy danych`{.action} odpo
 
 Możesz również zaznaczyć kratkę `Wyczyść aktualną bazę danych`{.action} tuż przed [uruchomieniem importu](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-twojej-kopii-zapasowej-w-panelu-klienta):
 
-![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
+![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
 
 Ten komunikat błędu oznacza, że baza danych, którą chcesz importować zawiera nieautoryzowane elementy na infrastrukturze współdzielonej OVHcloud. W razie potrzeby skontaktuj się z [społecznością użytkowników](/links/community) lub [wyspecjalizowanym dostawcą](/links/partner). Nie będziemy w stanie udzielić wsparcia w zakresie korekty tej nieprawidłowości.
 
@@ -238,7 +238,7 @@ Aby usunąć tę anomalię, możesz:
 
 Ten komunikat błędu może pojawić się podczas logowania do bazy danych przez [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin). Wskazuje ona, że dane identyfikacyjne są błędne.
 
-![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
+![access_denied_for_user](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-1045.png){.thumbnail}
 
 W takiej sytuacji [sprawdź wpisane dane](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#w-praktyce) i w razie potrzeby zmień [hasło do bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -269,7 +269,7 @@ W takiej sytuacji powinieneś [zoptymalizować bazy danych](/pages/web_cloud/web
 
 Ten komunikat błędu pojawia się podczas [logowania do phpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#w-praktyce), gdy podana nazwa serwera jest nieprawidłowa.
 
-![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
+![name_or_service_not_known](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-2002.png){.thumbnail}
 
 Sprawdź nazwę serwera, który chcesz zarejestrować w [Panelu klienta OVHcloud](/links/manager).
 
