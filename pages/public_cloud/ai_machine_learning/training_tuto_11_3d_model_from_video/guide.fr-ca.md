@@ -1,7 +1,7 @@
 ---
 title : "AI Training - Tutoriel - Transformer une vidéo en modèle 3D grâce à NVIDIA Neuralangelo (EN)"
 excerpt : "Comment utiliser AI Training pour exécuter le projet de recherche NVIDIA Neuralangelo afin d'extraire un modèle 3D d'une vidéo"
-updated: 2024-07-02
+updated: 2024-07-03
 ---
 
 ## Objective
@@ -100,6 +100,8 @@ ovhai datastore add s3 NEURALANGELO <s3_endpoint_url> <s3_region> <s3_access_key
 > Data store information (endpoint, region, access_key and secret key) can refer to an OVHcloud S3 bucket or any other provider.
 >
 > Using `--store-credentials-locally` is needed here to be able to push/pull data from a bucket, using ovhai CLI in the next steps.
+>
+> See [this page](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance) for help about S3 usage.
 >
 
 ### Prepare model input using COLMAP
