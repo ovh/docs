@@ -27,17 +27,36 @@ The page that opens can be used to view the Instances that are currently launche
 
 ![createinstance](images/create-instance-step2.png){.thumbnail}
 
-You will then need to fill in the information requested. If you need to do so, you can use the table below to fill in the fields. Please note that this grid is not exhaustive. 
+You will then need to fill in the information requested. If you need to do so, you can use the table below to fill in the fields. Please note that this grid is not exhaustive.
+
+![createinstance](images/create-instance-step3.png){.thumbnail}
 
 |Information|Details|
 |---|---|
-|Availability zone|Leave "nova" (default choice).|
 |Instance name|Specify the name you want for the Instance that will be launched.|
-|Template (Flavor)|Select the type of Instance to launch.|
+|Description|This is Optional. Set a description if applicable.|
+|Availability zone|Leave "nova" (default choice).|
 |Count|Specify the number of Instances to launch.|
-|Instance launch source|Select the source for launching an instance (e.g. "Launch from an image" or "Launch from a snapshot").|
-|Image name|Select the Instance image (only when launching from an image).|
-|Instance snapshot|Choose an Instance snapshot (only for launching from a snapshot).|
+
+**Source**
+
+![createinstance](images/create-instance-step4.png){.thumbnail}
+
+
+|Information|Details|
+|---|---|
+|Select Boot Source|Click on the drop-down arrown to select the source for launching an instance (e.g. "Image" or "Instance snapshot").|
+|Create New Volume|You may choose to check this option if you wish to create a volume into which the specified operating system image is copied.|
+|Volume size (GB)|If you have choosen to create a volume, all the system to determine the size for you.|
+|Delete Volume on Instance Delete|You can leave the default option **No**. If **Yes** is selected, when the instance is deleted, so is the volume.|
+|Image name (only when launching from an image)|Select the Instance image by clicking on the upward arrow next to the image of your choice. In our example, we use selected Centos 7.|
+|Instance snapshot (only for launching from a snapshot)|Choose an Instance snapshot by clicking on the upward arrow next to the instance snapshot image of your choice.|
+
+**Flavor**
+
+![createinstance](images/create-instance-step5.png){.thumbnail}
+
+
 |Key pair|Select an SSH key to use for connecting to the Instance later (you can create a key by clicking the "+" sign).|
 |Security groups|Specify the security group for the Instance (authorisation for opening ports).|
 |Selected networks|Select the network(s) for the Instance you want to create, from the list of available networks.|
