@@ -294,15 +294,15 @@ Retour:
 
 ### Création d'un certificat d'accès
 
-Afin de communiquer avec votre KMS, il est nécessaire de créer un certificat d'accès. Celui-ci sera utilisé pour toute interaction avec le KMS, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec celles-ci.
+Afin de communiquer avec votre KMS, il est nécessaire de créer un certificat d'accès. Celui-ci sera utilisé pour toute interaction avec le KMS OVHcloud, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec celles-ci.
 
 Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
 
-Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre propre sécurité privée via une Certificate Signing Request (CSR).
+Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre propre clé de sécurité privée via une Certificate Signing Request (CSR).
 
 ### Sans CSR
 
-Créer un certificat d'accès et une clé privée avec l'appel api suivant:
+Vous pouvez créer un certificat d'accès et une clé privée avec l'appel api suivant:
 
 > [!api]
 >
@@ -386,11 +386,11 @@ L'API renvoie le certificat au format PEM:
 }
 ```
 
-Copiez la valeur du champ `"certificatePEM"`{.action} dans un fichier `client.crt`{.action} puis coller (printf) `"-----BEGIN YOUR_CERTIFICATE_PEM END_CERTIFICATE-----"`{.action} dans ce fichier `client.crt`{.action}.
+Copier la valeur du champ `"certificatePEM"`{.action} `"-----BEGIN YOUR_CERTIFICATE_PEM END_CERTIFICATE-----"`{.action} puis coller là (printf) dans un fichier `client.crt`{.action}.
 
 ### Avec CSR
 
-Suivez les mêmes étapes ci-dessus, mais avec le paramètre de l'api suivant:
+Suivez les mêmes étapes que ci-dessus, mais avec le paramètre `With CSR provided`{.action} de l'appel api suivant:
 
 Avec CSR : `With CSR provided`{.action}.
 > [!api]
@@ -416,6 +416,7 @@ Exemple de l'input avec CSR:
   "validity": 30
 }
 ```
+Coller la valeur du champ `"csr"`{.action}  `"-----BEGIN_CERTIFICATE_REQUEST----...-----REQUEST_CERTIFICATE_END-----"`{.action} récupérer de vSphere.
 
 ### Informations TLS utiles
 
