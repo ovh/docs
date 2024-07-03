@@ -56,53 +56,48 @@ OVHcloud KMS (Okms) est le service centralisé de chiffrement entièrement manag
 
 ### Urls Okms
 
-| Type    | URL                              | Region              | OKMS Region enum |
-|---------|----------------------------------|---------------------|------------------|
-| KMIP    | eu-west-rbx.okms.ovh.net         | France - Roubaix    | EU_WEST_RBX      |
-| KMIP    | eu-west-rbx.okms.ovh.net         | France - Roubaix    | EU_WEST_RBX      |
-| REST    | eu-west-rbx.okms.ovh.net         | France - Roubaix    | EU_WEST_RBX      |
-| Swagger | swagger-eu-west-rbx.okms.ovh.net | France - Roubaix    | EU_WEST_RBX      |
-| KMIP    | eu-west-sbg.okms.ovh.net         | France - Strasbourg | EU_WEST_SBG      |
-| KMIP    | eu-west-sbg.okms.ovh.net         | France - Strasbourg | EU_WEST_SBG      |
-| REST    | eu-west-sbg.okms.ovh.net         | France - Strasbourg | EU_WEST_SBG      |
-| Swagger | swagger-eu-west-sbg.okms.ovh.net | France - Strasbourg | EU_WEST_SBG      |
-| KMIP    | eu-west-gra.okms.ovh.net         | France - Graveline | EU_WEST_SBG      |
-| KMIP    | eu-west-gra.okms.ovh.net         | France - Graveline  | EU_WEST_GRA      |
-| REST    | eu-west-gra.okms.ovh.net         | France - Graveline | EU_WEST_GRA      |
-| Swagger | swagger-eu-west-gra.okms.ovh.net | France - Graveline | EU_WEST_GRA      |
+| **Type**    | **Url**                          | **Région**          | **Okms Région enum** | **IP**         |
+|-------------|----------------------------------|---------------------|----------------------|----------------|
+| **KMIP**    | eu-west-rbx.okms.ovh.net         | France - Roubaix    | EU_WEST_RBX          | 91.134.128.102 |
+| **KMIP**    | eu-west-rbx.okms.ovh.net         | France - Roubaix    | EU_WEST_RBX          | 91.134.128.102 |
+| **REST**    | eu-west-rbx.okms.ovh.net         | France - Roubaix    | EU_WEST_RBX          | 91.134.128.102 |
+| **Swagger** | swagger-eu-west-rbx.okms.ovh.net | France - Roubaix    | EU_WEST_RBX          | 91.134.128.102 |
+| **KMIP**    | eu-west-sbg.okms.ovh.net         | France - Strasbourg | EU_WEST_SBG          | 137.74.127.152 |
+| **KMIP**    | eu-west-sbg.okms.ovh.net         | France - Strasbourg | EU_WEST_SBG          | 137.74.127.152 |
+| **REST**    | eu-west-sbg.okms.ovh.net         | France - Strasbourg | EU_WEST_SBG          | 137.74.127.152 |
+| **Swagger** | swagger-eu-west-sbg.okms.ovh.net | France - Strasbourg | EU_WEST_SBG          | 137.74.127.152 |
 
 ## Listing des appels api KMS HPC VMware on OVHcloud
 
-| **Hosted Private Cloud API Calls**                                           | **Commentaires**                                                |
-|------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| **API V2**                                                                   |                                                                 |
-| **Credentials :**                                                            |                                                                 |
-| **GET** /okms/resource/{okmsId}/credential                                   | - List all access credentials.                                  |
-| **POST** /okms/resource/{okmsId}/credential                                  | - Request a new access credential.                              |
-| **GET** /okms/resource/{okmsId}/credential/{credentialId}                    | - Get an access credential.                                     |
-| **DEL** /okms/resource/{okmsId}/credential/{credentialId}                    | - Revoke and delete an access credential.                       |
-|                                                                              |                                                                 |
-| **Reference :**                                                              |                                                                 |
-| **GET** /okms/reference/serviceKey                                           | - Get service key type, size, curve and operations combination. |
-| ---                                                                          |                                                                 |
-| **Resources :**                                                              |                                                                 |
-| **GET** /okms/resource                                                       | - List OVHcloud KMS services.                                   |
-| **GET** /okms/resource/{okmsId}                                              | - Get an OVHcloud KMS service.                                  |
-|                                                                              |                                                                 |
-| **Service Keys :**                                                           |                                                                 |
-| **GET** /okms/resource/{okmsId}/serviceKey                                   | - List all keys.                                                |
-| **POST** /okms/resource/{okmsId}/serviceKey                                  | - Create or import a service key.                               |
-| **GET** /okms/resource/{okmsId}/serviceKey/{keyId}                           | - Retrieve a key.                                               |
-| **PUT** /okms/resource/{okmsId}/serviceKey/{keyId}                           | - Update a service key.                                         |
-| **DEL** /okms/resource/{okmsId}/serviceKey/{keyId}                           | - Delete the given service key.                                 |
-|                                                                              |                                                                 |
-| **API V1**                                                                   |                                                                 | 
-| **Authentification :**                                                       |                                                                 |
-| GET /dedicatedCloud/{serviceName}/vmEncryption/kms                           | - List virtual machine encryption KMS servers.                  |
-| POST /dedicatedCloud/{serviceName}/vmEncryption/kms                          | - Create virtual machine encryption KMS server.                 |
-| GET /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                   | - Get virtual machine encryption KMS server.                    |
-| DEL /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                   | - Remove virtual machine encryption KMS server.                 |
-| POST /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties | - Update virtual machine encryption KMS server.                 |
+| **Methode**        | **Api** | **Path**                                                                | **Commentaires**                                                |
+|--------------------|---------|-------------------------------------------------------------------------|-----------------------------------------------------------------|
+|                    |         |                                                                         |                                                                 |
+| **Credentials:**   |         |                                                                         |                                                                 |
+| **GET**            | v2      | /okms/resource/{okmsId}/credential                                      | - List all access credentials.                                  |
+| **POST**           | v2      | /okms/resource/{okmsId}/credential                                      | - Request a new access credential.                              |                                
+| **GET**            | v2      | /okms/resource/{okmsId}/credential/{credentialId}                       | - Get an access credential.                                     |                                
+| **DEL**            | v2      | /okms/resource/{okmsId}/credential/{credentialId}                       | - Revoke and delete an access credential.                       |
+|                    |         |                                                                         |                                                                 |
+| **Reference:**     |         |                                                                         |                                                                 |
+| **GET**            | v2      |  /okms/reference/serviceKey                                             | - Get service key type, size, curve and operations combination. |                                                
+|                    |         |                                                                         |                                                                 |
+| **Resources:**     |         |                                                                         |                                                                 |
+| **GET**            | v2      | /okms/resource                                                          | - List OVHcloud KMS services.                                   |                                                
+| **GET**            | v2      | /okms/resource/{okmsId}                                                 | - Get an OVHcloud KMS service.                                  |                                                
+|                    |         |                                                                         |                                                                 |
+| **Service Keys:**  |         |                                                                         |                                                                 |                                           
+| **GET**            | v2      | /okms/resource/{okmsId}/serviceKey                                      | - List all keys.                                                |
+| **POST**           | v2      | /okms/resource/{okmsId}/serviceKey                                      | - Create or import a service key.                               |
+| **GET**            | v2      | /okms/resource/{okmsId}/serviceKey/{keyId}                              | - Retrieve a key.                                               |
+| **PUT**            | v2      | /okms/resource/{okmsId}/serviceKey/{keyId}                              | - Update a service key.                                         |                                                
+| **DEL**            | v2      | /okms/resource/{okmsId}/serviceKey/{keyId}                              | - Delete the given service key.                                 |                                                
+|                    |         |                                                                         |                                                                 |
+| **Authentification :** |         |                                                                         |                                                                 |
+| **GET**            | v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms                          | - List virtual machine encryption KMS servers.                  |
+| **POST**           | v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms                          | - Create virtual machine encryption KMS server.                 |
+| **GET**            | v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                  | - Get virtual machine encryption KMS server.                    |
+| **DEL**            | v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                  | - Remove virtual machine encryption KMS server.                 |
+| **POST**           | v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties | - Update virtual machine encryption KMS server.                 |
 
 ///
 
@@ -130,7 +125,6 @@ Vous disposez des régions suivantes à ce jour :
 
 - `Europe - France Roubaix`{.action}.
 - `Europe - France Strasbourg`{.action}.
-- `Europe - France Graveline`{.action}.
 
 Une fois votre choix fait, cliquez sur `Commander`{.action}.
 
@@ -200,13 +194,21 @@ Vous constatez que vous disposez bien maintenance d'un serveur KMS OVHcloud disp
 
 /// details | Comment activer le KMS OVHcloud avec HPC VMware on OVHcloud?
 
+Afin de valider le KMS OVHloud (Okms) avec Hotesp Private CLoud VMware on OVHcloud, vous avez besoin d'ouvrir les flux pares-feux.
+
+Cette étape doit être réalisée en premier après commande de votre Okms (KMS OVHcloud).
+
+Et avant l'ajout du KMS à vSphere.
+
 ### Via le control panel OVHcloud
+
+### Étape d'ouverture des flux
 
 Pour créer ou Importer un service de gestion de clé KMS depuis le control panel Hosted Private Cloud on OVHcloud.
 
 Vous devez vous connecter au [control panel OVHcloud](/links/manager).
 
-Puis aller dans la section:
+Puis aller dans la section **Sécurité** de votre PCC HPC:
 
 - `Hosted Private Cloud | VMware | Votre PCC | Sécurité`{.action}.
 
@@ -224,11 +226,13 @@ Vous pouvez ajouter votre Okms depuis le control panel HPC, en cliquant sur:
 - `Ajouter un nouveau serveur KMS`{.action}
 
 Une fois la fenêtre ouverte vous vez les champs suivant à remplir :
-- **IP:** Privilégier le nom de domaine de votre KMS plutôt que l'IP afin que si elle change le dns resolve l'ip quand même.
-- **Description:** Une description intelligente pour votre KMS.
-- **SSL Thumbprint:** La Thumbprint tls/ssl de votre KMS (voir plus bas comment la récupérer).
+- **IP:** Privilégier l'IP car le nom de domaine ne peut pas être ajouté (Exemple région - Strasbourg:137.74.127.152, Roubaix:91.134.128.102).
+- **Description:** Une description intelligente pour votre Okms.
+- **SSL Thumbprint:** La Thumbprint tls/ssl de votre KMS (Lancer: `openssl s_client -connect eu-west-rbx.okms.ovh.net:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin`{.action})
 
 ![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add_2-optimized.webp)
+
+![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add_2_2.png)
 
 ### Via l'api OVHcloud
 
@@ -259,12 +263,15 @@ Pour récupérer l'empreinte SSL du serveur KMS, lancer la commande suivante:
 
 ```Shell
 openssl s_client -connect eu-west-rbx.okms.ovh.net:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
+---
+Retour:
+ SHA1 Fingerprint=FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47
 ```
 
-Pour récupérer l'IP publique du serveur KMS OVHcloud et verifier la connection, lancez la commande NetCat:
+Pour récupérer l'IP publique du serveur KMS OVHcloud et verifier la connection, avec un ping:
 
 ```Shell
-nc -zv eu-west-rbx.okms.ovh.net 5696
+ping eu-west-rbx.okms.ovh.net
 ```
 
 Pour mettre à jour votre serveur KMS avec un KMS OVHcloud:
@@ -273,6 +280,7 @@ Pour mettre à jour votre serveur KMS avec un KMS OVHcloud:
 >
 > @api {v1} /dedicatedcloud  POST /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties
 >
+
 > **Paramètres:**
 >
 > - serviceName: Le domaine pcc (pcc-XXX-XXX-XXX).
@@ -294,7 +302,7 @@ Retour:
 
 ### Création d'un certificat d'accès
 
-Afin de communiquer avec votre KMS, il est nécessaire de créer un certificat d'accès. Celui-ci sera utilisé pour toute interaction avec le KMS OVHcloud, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec celles-ci.
+Afin de communiquer avec votre Okms, il est nécessaire de créer un certificat d'accès. Celui-ci sera utilisé pour toute interaction avec le KMS OVHcloud, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec celles-ci.
 
 Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
 
@@ -304,20 +312,24 @@ Il est possible de générer ce certificat en laissant OVHcloud générer la cl�
 
 Vous pouvez créer un certificat d'accès et une clé privée avec l'appel api suivant:
 
+- `Without CSR Provided`{.action}
+
 > [!api]
 >
 > @api {v2} /okms POST /okms/resource/{okmsId}/credential
 >
+
 > **Paramètres:**
 >
 > - okmsId: L'ID de votre KMS OVHcloud (Okms).
+> - Avec/Sans CSR Provided
 >
 
 Il est nécessaire d'indiquer les informations suivantes :
-- **name:** Le nom du certificat
-- **identityURNs:** Liste des identités OVHcloud sous format d'URN qui seront fournies à l'IAM pour le calcul des droits d'accès
-- **description:** Description du certificat (optionnel)
-- **validity:** Durée de validité du certificat en jours - 365 jours par défaut (optionnel)
+- **name:** Le nom du certificat (obligatoire).
+  - **identityURNs:** L'identité OVHcloud sous format d'Urn qui sera fourni à IAM pour le calcul des droits d'accès (obligatoire).
+- **description:** Description du certificat (optionnel).
+- **validity:** Durée de validité du certificat en jours - 365 jours par défaut (optionnel).
 
 **Exemple de création de certificat:**
 ```Shell
@@ -332,7 +344,7 @@ Il est nécessaire d'indiquer les informations suivantes :
 }
 ```
 
-L'API retourne ensuite l'état de création du certificat:
+L'Api retourne ensuite l'état de création du certificat:
 ```Shell
 {
   "id": "1bc7830b-9c8e-4b45-af51-00a3543ba16c",
@@ -349,9 +361,11 @@ L'API retourne ensuite l'état de création du certificat:
   "expiredAt": "2024-08-01T15:54:18.390591+02:00"
 }
 ```
-Copier la valeur du champ (exemple ci-dessous) `"privateKeyPEM"`{.action} dans un fichier `domain.key`{.action} puis coller (printf) : `"----BEGIN EC YOUR_PRIVATE_KEY END EC YOUR_PRIVATE_KEY---"`{.action} dans le fichier `domain.key`{.action}.
+Copier la valeur du champ (exemple ci-dessus) `privateKeyPEM`{.action} puis coller là dans un fichier `domain.key`{.action}. Uniquement `-----BEGIN EC YOUR_PRIVATE_KEY-----\n......\n-----END EC YOUR_PRIVATE_KEY-----`{.action}.
 
-Puis copier l'ID généré et lancer l'appel api suivant avec l'id et l'okmsId :
+Enregistrer ce fichier afin de pouvoir le réutiliser pour truster votre Okms avec vSphere.
+
+Puis copier l'id généré et lancer l'appel api suivant avec l'id et l'okmsId :
 
 > [!Warning]
 >
@@ -362,6 +376,7 @@ Puis copier l'ID généré et lancer l'appel api suivant avec l'id et l'okmsId :
 >
 > @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
 >
+
 > **Paramètres:**
 >
 > - id: L'id généré par le POST /okms/resource/{okmsId}/credential (1bc7830b-9c8e-4b45-af51-00a3543ba16c).
@@ -397,6 +412,7 @@ Avec CSR : `With CSR provided`{.action}.
 >
 > @api {v2} /okms POST /okms/resource/{okmsId}/credential
 >
+
 > **Paramètres:**
 >
 > - okmsId: L'ID de votre KMS OVHcloud (Okms).
@@ -448,34 +464,27 @@ openssl x509 -in certificate.crt -pubkey -noout -outform pem | sha256sum
 openssl req -in CSR.csr -pubkey -noout -outform pem | sha256sum 
 ```
 
-#### SSL Converter
+### SSL Converter
 
 **OpenSSL Convert PEM**
-
-Convert PEM to DER : `openssl x509 -outform der -in certificate.pem -out certificate.der`
-
-Convert PEM to P7B : `openssl crl2pkcs7 -nocrl -certfile certificate.cer -out certificate.p7b -certfile CACert.cer`
-
-Convert PEM to PFX : `openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt -certfile CACert.crt`
+- Convert PEM to DER : `openssl x509 -outform der -in certificate.pem -out certificate.der`{.action}.
+- Convert PEM to P7B : `openssl crl2pkcs7 -nocrl -certfile certificate.cer -out certificate.p7b -certfile CACert.cer`{.action}.
+- Convert PEM to PFX : `openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt -certfile CACert.crt`{.action}.
 
 **OpenSSL Convert DER**
 
-**Convert DER to PEM:** 
+Convert DER to PEM:
+- `openssl x509 -inform der -in certificate.cer -out certificate.pem`{.action}.
 
-- `openssl x509 -inform der -in certificate.cer -out certificate.pem`
+**OpenSSL Convert P7B:**
+- Convert P7B to PEM : `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`{.action}.
 
-**OpenSSL Convert P7B**
+**Convert P7B to PFX:**
+- `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`{.action}.
+- `openssl pkcs12 -export -in certificate.cer -inkey privateKey.key -out certificate.pfx -certfile CACert.cer`{.action}.
 
-Convert P7B to PEM : `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
-
-**Convert P7B to PFX** 
-
-- `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
-- `openssl pkcs12 -export -in certificate.cer -inkey privateKey.key -out certificate.pfx -certfile CACert.cer`
-
-**OpenSSL Convert PFX**
-
-Convert PFX to PEM : `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+**OpenSSL Convert PFX:**
+- Convert PFX to PEM : `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`{.action}.
 
 ///
 
@@ -487,6 +496,8 @@ Convert PFX to PEM : `openssl pkcs12 -in certificate.pfx -out certificate.cer -n
 
 ![Manager Hpc General Information Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_vsphere.webp)
 
+#### 1. Ajouter le Key Provider OKMS dans vSphere
+
 ### Ajouter le key provider OKMS dans vSphere
 
 Pour que vCenter puisse truster votre serveur KMS OVHcloud, nous avons besoin d'accéder à la console vSphere de votre PCC HPC VMware on OVHcloud.
@@ -496,15 +507,21 @@ Pour accéder à l'url de connexion vSphere depuis un navigateur web (de prefere
 Vous pouvez y accéder depuis le control panel OVHcloud, en cliquant sur:
 - `Hosted Private Cloud | VMware | Votre PCC | Manager interface | Web interface`{.action}
 
-#### 1. Ajouter le Key Provider OKMS dans vSphere
+Une fois que vous avez cliquez sur Web interface, cliquez sur `vSphere HTML Client`{.action}
 
-Ouvrez votre navigateur web et rendez-vous à l'adresse fournie pour accéder à votre interface vSphere. Par exemple : `https://pcc-x.x.x.x.ovh.de/ui/`.
+![Manager Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_web_interface_pcc.png){.thumbnail}
 
-Selectionner `Configurer`{.action}
+Vous êtes maintenance sur l'url de votre pcc, par exemple : `https://pcc-x.x.x.x.ovh.de/ui/`.
 
-Puis `Key Providers`{.action}
+Connectez-vous avec un utilisateur local ou avec un utilisateur IAM selon les droits que vous avez mis en place au sein de votre compte OVHcloud et de votre PCC HPC.
 
-Cliquez sur `Ajouter un standard Key Provider`{.action}
+Vous être maintenant logué au coeur de vSphere
+
+Cliquez sur : `Configurer`{.action}
+
+Puis allez dans la section : `Key Providers`{.action}
+
+Et cliquez sur : `Ajouter un standard Key Provider`{.action}
 
 ![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_key_provider.png){.thumbnail}
 
@@ -514,21 +531,21 @@ Une fois que vous avez sélectionné l'option pour ajouter un Key Provider, une 
 
 Attendez que vSphere établisse la connexion avec le Key Provider que vous avez ajouté. Vous devriez voir une indication ou un message confirmant que la connexion a été établie avec succès.
 
-#### 2. Authentifier le Provider à vSphere
+#### 2. Authentifier le Provider Okms à vSphere
 
-Selectionner votre Key Provider que vous venez de créer et cliquer sur le bouton `TRUST VCENTER`.
+Sélectionner votre **Key Provider** Okms que vous venez d'ajouter et cliquer sur le bouton `TRUST VCENTER`{.action}.
 
 ![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms.png){.thumbnail}
 
-Nous recommandons la méthode : `Nouvelle demande de signature de certificat (CSR)`{.action), mais libre à vous de choisir celle qui vous convient le mieux.
+Nous recommandons la méthode avec CSR (plus sécurisé): `Nouvelle demande de signature de certificat (CSR)`{.action), mais libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
 
-Pour d'information sur l'avantage de chaque choix, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
+Pour plus d'information sur les avantages et inconvénients de l'utilisation d'une CSR, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
 
 > [!tabs]
 > 
 > **KMS certificate and private key**
 >>
->> - Selectionnez `KMS Certificate and private key to vCenter.`. Puis renseignez votre certificat KMS et votre clef privée du serveur KMS.
+>> - Sélectionnez `KMS Certificate and private key to vCenter.`{.action}. Puis renseignez votre certificat KMS et votre clef privée du serveur KMS.
 >>
 >> ![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter.png){.thumbnail}
 >>
@@ -536,17 +553,20 @@ Pour d'information sur l'avantage de chaque choix, lisez la documentation [KMS](
 >>
 > **New Certificate Signing Request (CSR)**
 >>
->> - Selectionnez `Nouvelle demande de signature de certificat (CSR)`{.action}. Puis Copiez ou téléchargez le CSR ci-dessous, mettez-le à la disposition de KMS et demandez à ce dernier de signer le certificat.
+>> - Sélectionnez `Nouvelle demande de signature de certificat (CSR)`{.action}. Puis Copiez ou téléchargez le CSR ci-dessous, mettez-le à la disposition de Okms et demandez à ce dernier de signer le certificat.
 >>
 >> ![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr.png){.thumbnail}
 >>
 >> ![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr_2.png){.thumbnail}
 >>
->> L'approbation ne sera pas établie une fois que vous aurez terminé cet Assistant. Rendez-vous dans le KMS pour télécharger le CSR, faites signer le certificat par le KMS et téléchargez-le sur le vCenter pour établir la confiance.
+>> L'approbation ne sera pas établie une fois que vous aurez terminé cet Assistant. Rendez-vous dans le Okms pour télécharger le CSR, faites signer le certificat par le Okms et téléchargez-le sur le vCenter pour établir la confiance.
 >>
->> Vous pouvez verifier que la connection à bien été établie en selectionnant votre Key Provider. L'option `Connected` doit être cochée.
+>> Vous pouvez verifier que la connection à bien était établie en sélectionnant votre Key Provider Okms.
+>> 
+>> L'option `Connected` doit être cochée.
 >>
 >> ![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_key_provider_3.png){.thumbnail}
+>>
 >>
 
 ### Chiffrement d'une Machine Virtuelle
