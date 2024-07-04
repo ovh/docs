@@ -514,7 +514,7 @@ Convert DER to PEM:
 
 ![Manager Hpc General Information Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_vsphere.webp)
 
-#### 1. Ajouter le Key Provider Okms dans vCenter/vSphere
+#### 1. Ajouter un fournisseur de clé Okms
 
 Pour que vCenter puisse truster votre serveur KMS OVHcloud, nous avons besoin d'accéder à la console vSphere de votre PCC HPC VMware on OVHcloud.
 
@@ -536,9 +536,9 @@ Vous êtes maintenant logué au sein de votre Hosted Private Cloud vSphere on OV
 
 Pour accéder à la gestion des serveurs KMS dans vSphere, cliquer sur: `Configurer`{.action} depuis votre **pcc-XXX-XXX-XXX-XXX**.
 
-Puis, allez dans la section **Security** : `Key Providers`{.action}.
+Puis, allez dans la section **Security** : `Fournisseurs de clés`{.action}.
 
-Et cliquez sur : `ADD > Add Standard Key Provider`{.action}.
+Et cliquez sur : `Ajouter > Ajouter un fournisseur de clé standard`{.action}.
 
 ![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_key_provider.png){.thumbnail}
 
@@ -557,35 +557,77 @@ Vous avez plus champs disponibles:
 
 Attendez que vSphere établisse la connexion avec le Key Provider que vous avez ajouté. Vous devriez voir une indication ou un message confirmant que la connexion a été établie avec succès.
 
-#### 2. Authentifier le Provider Okms à vSphere
-
-D'abord vous devez truster le Okms au sein de vCenter. Pour le faire cliquez sur `TRUST KMS`{.action}.
-
-![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vcenter_trust_kms_1.png){.thumbnail}
-
-![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vcenter_trust_kms.png){.thumbnail}
-
-Après ça, il faut que Okms trust vCenter.
-
-Sélectionner ainsi votre **Key Provider** Okms que vous venez d'ajouter et cliquer sur le bouton `TRUST VCENTER`{.action}.
-
-![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms.png){.thumbnail}
-
-Nous recommandons la méthode avec CSR (plus sécurisé): `Nouvelle demande de signature de certificat (CSR)`{.action), mais libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
-
-Pour plus d'information sur les avantages et inconvénients de l'utilisation d'une CSR, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
-
-#### 3. Authentifier vCenter à Okms
+### Okms approuve vCenter/vCenter approuve Okms
 
 > [!tabs]
-> 
-> **KMS certificate and private key**
 >>
->> Cliquez sur `Make KMS Trust vCenter`{.action}
+>> #### 2. Okms approuve vCenter
+>>
+>> **Faire que Okms approuve vCenter:**
+>>
+>> D'abord vous devez approuver le Okms au sein de vCenter. Pour le faire, cliquez sur: `Approuver le KMS`{.action}.
+>>
+>> vCenter va uploader automatiquement en principe le certificat KMS. Si il ne le fait pas vous pouvez le faire manuellement.
+>>
+>> ![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vcenter_trust_kms_1.png){.thumbnail}
+>>
+>> ![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vcenter_trust_kms.png){.thumbnail}
+>>
+>> Après ça, il faut que Okms approuve vCenter.
+>> 
+>> Sélectionner ainsi votre **Fournisseurs de clés** Okms que vous venez d'ajouter et cliquer sur le bouton `Approuver l'instance de VCENTER`{.action}.
+>>
+>> ![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms.png){.thumbnail}
+>>
+>> Nous recommandons la méthode avec CSR (plus sécurisé): `Nouvelle demande de signature de certificat (CSR)`{.action), mais libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
+>>
+>> Pour plus d'information sur les avantages et inconvénients de l'utilisation d'une CSR, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
+>>
+>> #### 3. vCenter approuve Okms
+>>
+>> **Établir une relation de confiance entre vCenter et Okms:**
+> 
+>> (optionnel)
+>> 
+>> Si en cliquant sur Approuver KMS vCenter a bien téléchargé le certificat publique, cette étape est optionnel.
+>>
+>> Car avant de générer votre CSR et/ou votre Certificat KMS et clé privée vous devez verifier que vCenter à bien télécharger le certificat publique du serveur Okms.
+>>
+>> Pour ça vous pouvez le récupérer depuis les endpoint fournis avec ce script par exemple ou une commande openssl:
+>>
+>> ```Shell
+>> openssl s_client -showcerts -connect eu-west-rbx.okms.ovh.net:443 </dev/null 2>/dev/null|openssl x509 -outform PEM | python3 -c "
+>> import sys
+>> import json
+>> body = {}
+>> body['cert'] = sys.stdin.read()
+>> json.dump(body, sys.stdout)
+>> " | python3 -c "
+>> import sys
+>> import json
+>> body = json.load(sys.stdin)
+>> print(body['cert'])
+>> " | openssl x509 -text; echo $?
+>> ```
+>> Copiez le retour depuis `-----BEGIN CERTIFICATE----- XXX -----END CERTIFICATE-----`{.action} dans vSphere.
+>> 
+>> Il faut cliquer sur: `Établir une realtion de confiance`{.action}.
+>> 
+>> Puis `Télécharger le certificat KMS`{.ction}.
+>> 
+>> Pour finir, coller le certificat publique Okms.
+>>
+>> ![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_upload_kms_cert.png){.thumbnail}
+>> 
+>> ![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_upload_kms_cert_2.png){.thumbnail}
+>>
+> **Certificat KMS et clé privée**
+>>
+>> Cliquez sur `Faire que KMS approuve vCenter`{.action}
 >>
 >> Puis, sélectionnez `KMS Certificate and private key to vCenter.`{.action}.
 >> 
->> Pour générer, puis signé votre certificat et clé privée lancez les appel api suivants:
+>> Pour générer, puis signé votre certificat et clé privé lancez les appels api suivants:
 >>
 >> [!api]
 >>
@@ -607,7 +649,7 @@ Pour plus d'information sur les avantages et inconvénients de l'utilisation d'u
 >> }
 >> ```
 >>
->> Récupérez le credential id du post ci-dessus ainsi que la clé privée généré **privateKeyPEM**. Puis collez là dans un fichier .pem afin de pouvoir l'uploader dans vSphere.
+>> Récupérez le credential id du post ci-dessus ainsi que la clé privée générée **privateKeyPEM**. Puis collez là dans un fichier .pem afin de pouvoir l'uploader dans vSphere.
 >>
 >> Puis lancer le get suivant pour signer vos clés:
 >> 
@@ -623,7 +665,7 @@ Pour plus d'information sur les avantages et inconvénients de l'utilisation d'u
 >>
 >> ![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_2.png){.thumbnail}
 >>
->> Afin d'utiliser la clés signé dans vSphere, vous devez le formater avec cette commande :
+>> Afin d'utiliser la clé signée dans vSphere, vous devez le formater avec cette commande :
 >>
 >> ```Shell
 >> # Clé signé (PEM):
@@ -632,16 +674,20 @@ Pour plus d'information sur les avantages et inconvénients de l'utilisation d'u
 >> # Certifiat signé (CRT):
 >> awk '{gsub(/\\n/,"\n")}1' cert.crt
 >> ```
+>> 
+>> Le format n'a pas de réelle importance car il n'est pas utilisé au sein de openssl à ce stade.
+>> 
 >> Relancer cette commande pour le certificat signé.
 >>
->> Et pour finir, collez les dans vSphere puis cliquez sur `ESTABLISH TRUST`{.action}.
+>> Et pour finir, collez les dans vSphere puis cliquez sur `Etablir une relation de confiance`{.action}.
 >>
+> **Nouvelle demande de signature de certificat (CSR)**
 >>
-> **New Certificate Signing Request (CSR)**
+>> Une fois votre Okms commandé, vCenter approuvé dans Okms, vous pouvez lancer la génération du `CSR`{.action} afin que Okms trust vCenter (signe le CSR).
 >>
->> Une fois votre Okms commandé, vCenter truster avec Okms, vous pouvez lancer la génération du `CSR`{.action} afin que Okms trust vCenter (signe le CSR) pour ça cliquez sur `Make KMS Trust vCenter`{.action}.
+>> Il faut alors, cliquer sur `Faire que KMS approuve vCenter`{.action}.
 >>
->> - Puis, sélectionnez `Nouvelle demande de signature de certificat (CSR)`{.action}. Copiez ou téléchargez le CSR ci-dessous, mettez-le à la disposition de Okms et demandez à ce dernier de signer le certificat.
+>> - Sélectionnez donc `Nouvelle demande de signature de certificat (CSR)`{.action}. Puis Copiez ou téléchargez le CSR ci-dessous, mettez-le à la disposition de Okms depuis l'api v2 /okms et demandez à ce dernier de signer le certificat.
 >>
 >> La signature ce fait avec l'appel api suivant : 
 >> 
@@ -716,9 +762,9 @@ Pour plus d'information sur les avantages et inconvénients de l'utilisation d'u
 >> ![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_okms_validation.png){.thumbnail}
 >>
 
-### Chiffrement d'une Machine Virtuelle
+### Activation du chiffrement d'une Machine Virtuelle
 
-Localisez la machine virtuelle (VM) que vous souhaitez chiffrer. Faites un clic droit sur la machine virtuelle sélectionnée pour afficher le menu contextuel. Sélectionnez `VM Policies` puis choisissez `Edit VM Storage Policies`. Cela ouvrira une fenêtre ou un panneau où vous pourrez modifier les politiques de stockage de la VM sélectionnée.
+Localisez la machine virtuelle (VM) que vous souhaitez chiffrer. Faites un clic droit sur la machine virtuelle sélectionnée pour afficher le menu contextuel. Sélectionnez `Stratégies de VM` puis choisissez `Modifier les stratégies de stockage VM`. Cela ouvrira une fenêtre ou un panneau où vous pourrez modifier les politiques de stockage de la VM sélectionnée.
 
 ![VM Storage Policies](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies.png){.thumbnail}
 
@@ -733,7 +779,7 @@ Lors du déploiement d'un template OVF, vous avez plusieurs choix pour chiffrer 
 
 Vous pouvez lire le guide... sur ce sujet.
 
-Il faut par contre bien cocher la case : `Chiffrer cette machine virtuelle`{.action}.
+Il faut par contre bien cocher la case : `Chiffrer cette VM`{.action}.
 
 ![VMS policies encrypt](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_deploy_vm_policies.png){.thumbnail}
 
