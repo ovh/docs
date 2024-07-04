@@ -363,7 +363,7 @@ Suppose the source bucket, `region1-destination-bucket` and `region2-destination
 
 ### Using the CLI
 
-#### Create source and destination bucket
+#### Create source and destination buckets
 
 The source bucket is the bucket whose objects are automatically replicated and the destination bucket is the bucket which will contain your object replicas.
 
