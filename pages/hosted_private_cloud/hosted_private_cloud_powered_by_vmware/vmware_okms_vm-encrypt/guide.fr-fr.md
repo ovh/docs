@@ -352,8 +352,8 @@ Il est nécessaire d'indiquer les informations suivantes :
 {
  "description": "My user reader credential",
  "identityURNs": [
- "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>/user" // L'utilisateur avec lequel vous vous connectez à vSphere au sein de votre PCC, il doit être admin ou avoir Encryption management activé au sein du PCC pour chiffrer des VM. 
- "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>/user" // Le groupe avec lequel vous accédez à vos PCC, pour activer le chiffrement sur les VM vous devez être admin ou activer Encryption management.
+ "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user" // L'utilisateur avec lequel vous vous connectez à vSphere au sein de votre PCC, il doit être admin ou avoir Encryption management activé au sein du PCC pour chiffrer des VM. 
+ "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user" // Le groupe avec lequel vous accédez à vos PCC, pour activer le chiffrement sur les VM vous devez être admin ou activer Encryption management.
  ],
  "name": "reader", // Nom du reader.
  "validity": 30 // Par defaut 365 jours.
@@ -367,8 +367,8 @@ L'Api retourne ensuite l'état de création du certificat:
   "name": "user",
   "description": "XXX",
   "identityURNs": [
-    "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>/user",
-    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>/group"
+    "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
+    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
   ],
   "status": "CREATING",
   "fromCSR": false,
@@ -407,8 +407,8 @@ L'API renvoie le certificat au format PEM:
   "name": "reader",
   "description": "XXX",
   "identityURNs": [
-    "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>/user", // L'utilisateur avec lequel vous vous connectez à vSphere au sein de votre PCC, il doit être admin ou avoir Encryption management activé au sein du PCC pour chiffrer des VM.
-    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>/group" // Le groupe avec lequel vous accédez à vos PCC, pour activer le chiffrement sur les VM vous devez être admin ou activer Encryption management.
+    "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user", // L'utilisateur OVHcloud avec lequel vous vous connectez à vSphere au sein de votre PCC, il doit être admin ou avoir Encryption management activé au sein du PCC pour chiffrer des VM.
+    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group" // Le groupe OVHcloud avec lequel vous accédez à vos PCC, pour activer le chiffrement sur les VM vous devez être admin ou activer Encryption management.
   ],
   "status": "READY",
   "fromCSR": false,
@@ -443,8 +443,8 @@ Exemple de l'input avec CSR:
   "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDzANBgNV\nBAcMBkxpbmRvbjEWMBQGA1UECgwNRGlnaUNlcnQgSW5jLjERMA8GA1UECwwIRGln\naUNlcnQxHTAbBgNVBAMMFGV4YW1wbGUuZGlnaWNlcnQuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8+To7d+2kPWeBv/orU3LVbJwDrSQbeKamCmo\nwp5bqDxIwV20zqRb7APUOKYoVEFFOEQs6T6gImnIolhbiH6m4zgZ/CPvWBOkZc+c\n1Po2EmvBz+AD5sBdT5kzGQA6NbWyZGldxRthNLOs1efOhdnWFuhI162qmcflgpiI\nWDuwq4C9f+YkeJhNn9dF5+owm8cOQmDrV8NNdiTqin8q3qYAHHJRW28glJUCZkTZ\nwIaSR6crBQ8TbYNE0dc+Caa3DOIkz1EOsHWzTx+n0zKfqcbgXi4DJx+C1bjptYPR\nBPZL8DAeWuA8ebudVT44yEp82G96/Ggcf7F33xMxe0yc+Xa6owIDAQABoAAwDQYJ\nKoZIhvcNAQEFBQADggEBAB0kcrFccSmFDmxox0Ne01UIqSsDqHgL+XmHTXJwre6D\nhJSZwbvEtOK0G3+dr4Fs11WuUNt5qcLsx5a8uk4G6AKHMzuhLsJ7XZjgmQXGECpY\nQ4mC3yT3ZoCGpIXbw+iP3lmEEXgaQL0Tx5LFl/okKbKYwIqNiyKWOMj7ZR/wxWg/\nZDGRs55xuoeLDJ/ZRFf9bI+IaCUd1YrfYcHIl3G87Av+r49YVwqRDT0VDV7uLgqn\n29XI1PpVUNCPQGn9p/eX6Qo7vpDaPybRtA2R7XLKjQaF9oXWeCUqy1hvJac9QFO2\n97Ob1alpHPoZ7mWiEuJwjBPii6a9M9G30nUo39lBi1w=\n-----END CERTIFICATE REQUEST-----",
   "description": "My reader credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>/user.name",
-    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>/user.name"
+    "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
+    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user"
   ],
   "name": "reader name",
   "validity": 365
@@ -506,9 +506,9 @@ Convert DER to PEM:
 
 ///
 
-## Étape 3 - Activation du chiffrement des machines virtuelles avec le kms OVHcloud (Okms)
+## Étape 3 - Ajout du Okms à vSphere/vCenter
 
-/// details | Comment activer le chiffrement de VM dans vSphere avec le kms OVHcloud (Okms) ?
+/// details | Comment ajouter le Okms dans vSphere/vCenter?
 
 ### Via le control panel OVHcloud
 
@@ -641,8 +641,8 @@ Attendez que vSphere établisse la connexion avec le Key Provider que vous avez 
 >> {
 >> "description": "My reader credential",
 >> "identityURNs": [
->> "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>/user",
->> "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>/group"
+>> "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
+>> "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
 >> ],
 >> "name": "reader",
 >> "validity": 365
@@ -704,8 +704,8 @@ Attendez que vSphere établisse la connexion avec le Key Provider que vous avez 
 >> "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDzANBgNV\nBAcMBkxpbmRvbjEWMBQGA1UECgwNRGlnaUNlcnQgSW5jLjERMA8GA1UECwwIRGln\naUNlcnQxHTAbBgNVBAMMFGV4YW1wbGUuZGlnaWNlcnQuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8+To7d+2kPWeBv/orU3LVbJwDrSQbeKamCmo\nwp5bqDxIwV20zqRb7APUOKYoVEFFOEQs6T6gImnIolhbiH6m4zgZ/CPvWBOkZc+c\n1Po2EmvBz+AD5sBdT5kzGQA6NbWyZGldxRthNLOs1efOhdnWFuhI162qmcflgpiI\nWDuwq4C9f+YkeJhNn9dF5+owm8cOQmDrV8NNdiTqin8q3qYAHHJRW28glJUCZkTZ\nwIaSR6crBQ8TbYNE0dc+Caa3DOIkz1EOsHWzTx+n0zKfqcbgXi4DJx+C1bjptYPR\nBPZL8DAeWuA8ebudVT44yEp82G96/Ggcf7F33xMxe0yc+Xa6owIDAQABoAAwDQYJ\nKoZIhvcNAQEFBQADggEBAB0kcrFccSmFDmxox0Ne01UIqSsDqHgL+XmHTXJwre6D\nhJSZwbvEtOK0G3+dr4Fs11WuUNt5qcLsx5a8uk4G6AKHMzuhLsJ7XZjgmQXGECpY\nQ4mC3yT3ZoCGpIXbw+iP3lmEEXgaQL0Tx5LFl/okKbKYwIqNiyKWOMj7ZR/wxWg/\nZDGRs55xuoeLDJ/ZRFf9bI+IaCUd1YrfYcHIl3G87Av+r49YVwqRDT0VDV7uLgqn\n29XI1PpVUNCPQGn9p/eX6Qo7vpDaPybRtA2R7XLKjQaF9oXWeCUqy1hvJac9QFO2\n97Ob1alpHPoZ7mWiEuJwjBPii6a9M9G30nUo39lBi1w=\n-----END CERTIFICATE REQUEST-----",
 >> "description": "My reader credential",
 >> "identityURNs": [
->> "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>/user",
->> "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>/group"
+>> "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
+>> "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
 >> ],
 >> "name": "reader",
 >> "validity": 30
@@ -762,7 +762,7 @@ Attendez que vSphere établisse la connexion avec le Key Provider que vous avez 
 >> ![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_okms_validation.png){.thumbnail}
 >>
 
-### Activation du chiffrement d'une Machine Virtuelle
+### Activation du chiffrement d'une Machine Virtuelle avec le Okms
 
 Localisez la machine virtuelle (VM) que vous souhaitez chiffrer. Faites un clic droit sur la machine virtuelle sélectionnée pour afficher le menu contextuel. Sélectionnez `Stratégies de VM` puis choisissez `Modifier les stratégies de stockage VM`. Cela ouvrira une fenêtre ou un panneau où vous pourrez modifier les politiques de stockage de la VM sélectionnée.
 
@@ -787,7 +787,7 @@ Après avoir apporté les modifications nécessaires, enregistrez les modificati
 
 Vous avez maintenant édité les politiques de stockage de la VM et activer le chiffrement KMS pour votre serveur. Un petit cadenas sur le résumé des informations de votre machine virtuelle le confirme.
 
-![VM Encrypt](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/vm_encrypt.png){.thumbnail}
+![VM Encrypt](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies_4.png){.thumbnail}
 
 ///
 
