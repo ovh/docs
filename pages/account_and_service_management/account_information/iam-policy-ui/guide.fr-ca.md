@@ -68,7 +68,7 @@ Le formulaire suivant s'affiche :
 ![Créer une politique](images/create_a_policy_01.png){.thumbnail}
 
 - **Nom de la politique** (obligatoire) : il s'agit du nom qui apparaîtra dans les interfaces. Le nom doit être unique et ne doit contenir aucun espace.
-- **Identités** : sélectionnez les identités concernées par cette politique. Il est possible d'indiquer plusieurs type d'identités
+- **Identités** : sélectionnez les identités concernées par cette politique. Il est possible d'indiquer plusieurs types d'identités.
 - **Types de produits** : sélectionnez les types de produits pour définir le champ d'application de la politique. Un ou plusieurs types de produit peuvent être inclus dans la même politique.
 - **Ressources** : ajoutez des ressources ou des groupes de ressources à couvrir par la politique. Les ressources disponibles sont filtrées par type de produit préalablement sélectionné.
 - **Actions**.

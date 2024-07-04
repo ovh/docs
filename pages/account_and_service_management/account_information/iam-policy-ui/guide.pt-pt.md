@@ -71,7 +71,7 @@ Clique no botão `Criar uma política`{.action}.
 ![Criar uma política](images/create_a_policy_01.png){.thumbnail}
 
 - **Nome da política** (obrigatório): trata-se do nome que aparecerá nas interfaces. O nome deve ser único e não deve conter qualquer espaço.
-- **Identidades**: Selecione as identidades abrangidas por esta política. É possível apontar mais do que um tipo de identidade
+- **Identidades**: Selecione as identidades abrangidas por esta política. É possível apontar mais do que um tipo de identidade.
 - **Tipos de produtos**: selecione os tipos de produtos para definir o âmbito de aplicação da política. Um ou mais tipos de produto podem ser incluídos na mesma política.
 - **Recursos**: adicione recursos ou grupos de recursos a serem cobertos pela política. Os recursos disponíveis são filtrados por tipo de produto previamente selecionado.
 - **Ações**.

@@ -71,7 +71,7 @@ Pojawi się następujący formularz:
 ![Tworzenie polityki](images/create_a_policy_01.png){.thumbnail}
 
 - **Nazwa polityki** (obowiązkowe): to nazwa, która pojawi się w interfejsach. Nazwa musi być unikalna i nie może zawierać spacji.
-- **Tożsamości** : Wybierz tożsamości, których dotyczą te zasady. Można wybrać więcej niż jeden typ tożsamości
+- **Tożsamości** : Wybierz tożsamości, których dotyczą te zasady. Można wybrać więcej niż jeden typ tożsamości.
 - **Rodzaje produktów**: wybierz rodzaje produktów, aby określić zakres polityki. Do tej samej polityki można włączyć jeden lub więcej rodzajów produktu.
 - **Zasoby**: dodaj zasoby lub grupy zasobów do pokrycia w ramach polityki. Dostępne zasoby są filtrowane według uprzednio wybranego typu produktu.
 - **Działania**.
