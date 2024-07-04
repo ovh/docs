@@ -40,7 +40,7 @@ Pour modifier votre abonnement, rendez-vous dans votre [espace client OVHcloud](
 
 Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `Offre` puis sur `Changer d'offre`{.action}.
 
-![change_plan](images/pro-change-plan.png){.thumbnail}
+![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 
 Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Envoyer`{.action}.
 
@@ -62,7 +62,7 @@ Dans le cas contraire, supprimez les bases de données inutilisées et réduisez
 
 Suite à la suppression de données sur vos bases, recalculez le quota utilisé. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergement web`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, rendez-vous sur l'onglet `Bases de données`{.action} puis cliquez sur le bouton `...`{.action} à droite de la base de données concernée puis sur `Recalculer le quota`{.action}.
 
-![quota](images/recalculate-quota.png){.thumbnail}
+![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 
 > [!primary]
 >
@@ -74,7 +74,7 @@ Suite à la suppression de données sur vos bases, recalculez le quota utilisé.
 Si vous utilisez l'offre [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluse avec votre hébergement web [Performance](/links/web/hosting-performance-offer) et que vous souhaitez passer votre hébergement web sur une offre [Pro](/links/web/hosting-professional-offer), vous devrez d'abord dissocier l'offre Web Cloud Databases de votre hébergement web.<br>
 Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergement web`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, restez sur l'onglet `Informations générales`{.action}. Dans la colonne centrale `Configuration`, cliquez sur le bouton `...`{.action} situé à droite de la mention `Web Cloud Databases`{.action} puis sur `Délier`{.action}.
 
-![Web Cloud Databases](images/wcdb-detach.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 
 Cette action vous permettra de commander une offre Web Cloud Databases indépendante de votre abonnement *Performance*. Les données de votre serveur seront conservées.
 
@@ -89,7 +89,7 @@ Assurez-vous que la nouvelle offre propose suffisamment [d'espace de stockage FT
 
 Pour vérifier le quota d'espace de stockage FTP utilisé sur votre hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page `Informations générales`{.action} qui s'affiche, retrouvez le quota sous la mention `Espace Disque`.
 
-![ftp](images/find-disk-space.png){.thumbnail}
+![ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 #### 4 - Adresses e-mail
 
@@ -97,7 +97,7 @@ Vérifiez que votre nouvelle offre propose un nombre suffisant d'adresses e-mail
 
 Si vous souhaitez conserver le même nombre de boîtes e-mail et **avant de passer votre hébergement web sur une offre inférieure**, il est également possible de commander une nouvelle offre de messagerie **MX Plan**. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `E-mails`{.action} puis sélectionnez l'offre e-mail concernée. Sur la page qui s'affiche, dans l'encadré `Abonnement`{.action} et à droite de la mention `Offre`{.action}, cliquez sur le bouton  `...`{.action} puis sur `Changer d'offre`{.action}.
 
-![mxplan](images/change-solution.png){.thumbnail}
+![mxplan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
 
 >[!primary]
 >
@@ -127,7 +127,7 @@ Dans la partie inférieure de la page qui apparaît, un tableau liste tous les u
 
 Pour supprimer des utilisateurs FTP, cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP que vous souhaitez supprimer puis sur `Supprimer`{.action}.
 
-![user FTP deletion](images/edit-ftp-user-2.png){.thumbnail} 
+![user FTP deletion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail} 
 
 #### Finalisation
 
@@ -155,13 +155,13 @@ Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les in
 > **Activer l'option Boost**
 >>
 >> Pour activer l'option Boost, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Dans l'encadré `Informations générales` de la page qui s'affiche, cliquez sur le bouton `...`{.action} à droite de `Boost` puis sur `Booster mon offre`{.action}.<br><br>
->> ![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
+>> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
 >>
 > **Désactiver l'option Boost**
 >>
 >> Pour désactiver l'option Boost, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, rendez-vous dans l'onglet `Plus` puis cliquez sur `Booster mon offre`{.action}.<br>
 >> Le tableau d'utilisation de l'option Boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}.<br><br>
->> ![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
+>> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
 
 #### La facturation en cas de changement d'offre <a name="billing"></a>
 
