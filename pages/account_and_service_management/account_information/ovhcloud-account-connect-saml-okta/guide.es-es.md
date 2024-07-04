@@ -96,7 +96,7 @@ Haga clic en el botón `Conexión SSO`{.action}.
 
 ![Conexión SSO OVHcloud etapa 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Introduzca los metadatos XML de su servicio Okta. Rellene el campo "Nombre de atributo de grupo" con el valor `groups`. Haga clic en `Confirmar`{.action}.
+Introduzca los metadatos XML de su servicio Okta. Rellene el campo "Nombre de atributo de usuario" con el valor `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` y el campo "Nombre de atributo de grupo" con el valor `Group`. Haga clic en `Confirmar`{.action}.
 
 Es posible conservar los usuarios locales marcando la casilla `Mantener los usuarios de OVHcloud activos`.
 
