@@ -728,8 +728,8 @@ Attendez que vSphere établisse la connexion avec le Key Provider que vous avez 
 >> "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
 >> "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
 >> ],
->> "name": "reader",
->> "validity": 30
+>> "name": "user",
+>> "validity": 365
 >> } 
 >> ```
 >>
