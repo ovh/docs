@@ -248,6 +248,27 @@ ping eu-west-rbx.okms.ovh.net
 
 Vous devez maintenant attendre que l'ouverture des flux se fasse et passe en livrer.
 
+Vous pouvez en attendant verifier vos droits au sein du PCC. En effet pour manipuler KMS, vous avez besoin de droits supplémentaire :
+
+Dans l'onglet Utilisateurs, cliquez sur `Modifier`{.action} l'utilisateur souhaité.
+
+![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_users_edit.png)
+
+Et verifiez bien que le `management du chiffrement`{.action} est activé.
+
+![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_users_edit_encryption.png)
+
+Si vous utilisez un role IAM au sein de votre PCC faite le pour ce rôle (si vous utilisez le rôle par defaut, il est admin).
+
+Si vous utilisez une policy avec le role IAM par defaut verifiez bien que les ressources PCC lui sont ajoutés, ainsi que les droits KMS et les droits IAM. 
+
+Exemple de politique IAM :
+- **Identité:** local user XX -> User local OVHcloud
+- **User groups:** ADMIN, XXXX-XX-XX/user_iam
+- **Resources:** pcc-XXX-XXX-XXX-XXX -> PCC XXX
+- **Product type:** iam_ressource_type_okms/kmip,
+- **Actions:** vSphere Admin, pccVMware:apiovh:vmEncryption/kms/changeProperties, pccVMware:vSphere:assumeRole?iam-admin -> User vSphere iam-admin, okms:kmip:get, okms:apikms:serviceKey/create etc..
+
 ### Via l'api OVHcloud
 
 **Étape d'ouverture des flux:**
@@ -764,7 +785,15 @@ Attendez que vSphere établisse la connexion avec le Key Provider que vous avez 
 
 ### Activation du chiffrement d'une Machine Virtuelle avec le Okms
 
-Localisez la machine virtuelle (VM) que vous souhaitez chiffrer. Faites un clic droit sur la machine virtuelle sélectionnée pour afficher le menu contextuel. Sélectionnez `Stratégies de VM` puis choisissez `Modifier les stratégies de stockage VM`. Cela ouvrira une fenêtre ou un panneau où vous pourrez modifier les politiques de stockage de la VM sélectionnée.
+Localisez la machine virtuelle (VM) que vous souhaitez chiffrer. Éteignez là si elle est allumé. 
+
+Et faites un clic droit sur la machine virtuelle sélectionnée pour afficher le menu contextuel ou cliquez sur `ACTIONS`{.action}. 
+
+Puis sélectionnez : `Stratégies de VM`{.action}, 
+
+Et choisissez `Modifier les stratégies de stockage VM`{.action}. 
+
+Cela ouvrira une fenêtre ou un panneau où vous pourrez modifier les politiques de stockage de la VM sélectionnée.
 
 ![VM Storage Policies](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies.png){.thumbnail}
 
@@ -772,12 +801,12 @@ Recherchez les options de chiffrement ou de sécurité dans les politiques de st
 
 ![VMS policies encrypt](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies_3.png){.thumbnail}
 
-Lors du déploiement d'un template OVF, vous avez plusieurs choix pour chiffrer votre VM :
+Si vous déployez une nouvelle VM depuis un template OVHcloud OVF, vous avez plusieurs choix pour chiffrer votre VM :
 - **Thick Provision Lazy Zeroed.**
 - **Thin Provision.**
 - **Thick Provision Eager Zeroed.**
 
-Vous pouvez lire le guide... sur ce sujet.
+Choisissez celle qui vous convient le mieux.
 
 Il faut par contre bien cocher la case : `Chiffrer cette VM`{.action}.
 
@@ -786,6 +815,10 @@ Il faut par contre bien cocher la case : `Chiffrer cette VM`{.action}.
 Après avoir apporté les modifications nécessaires, enregistrez les modifications et fermez la fenêtre.
 
 Vous avez maintenant édité les politiques de stockage de la VM et activer le chiffrement KMS pour votre serveur. Un petit cadenas sur le résumé des informations de votre machine virtuelle le confirme.
+
+Et vous constatez bien un petit cadenas dans a vue général de votre VM.
+
+Ceci confirme que votre politique fonctionne avec le serveur Okms et que le chiffrement est **activé**.
 
 ![VM Encrypt](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies_4.png){.thumbnail}
 
