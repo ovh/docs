@@ -71,7 +71,7 @@ Compare il seguente form:
 ![Crea una politica](images/create_a_policy_01.png){.thumbnail}
 
 - **Nome della politica** (obbligatorio): è il nome che comparirà nelle interfacce. Il nome deve essere unico e non deve contenere spazi.
-- **Identità**: selezionare le identità interessate da questo criterio. È possibile assegnare più tipi di identità
+- **Identità**: selezionare le identità interessate da questo criterio. È possibile assegnare più tipi di identità.
 - **Tipi di prodotti**: seleziona i tipi di prodotto per definire il campo di applicazione della politica. Uno o più tipi di prodotto possono essere inclusi nella stessa politica.
 - **Risorse**: aggiungete risorse o gruppi di risorse che saranno coperti dalla politica. Le risorse disponibili sono filtrate per tipo di prodotto selezionato in precedenza.
 - **Azioni**

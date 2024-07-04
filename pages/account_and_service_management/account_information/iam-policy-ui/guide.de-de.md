@@ -71,7 +71,7 @@ Das folgende Formular wird angezeigt:
 ![Richtlinie erstellen](images/create_a_policy_01.png){.thumbnail}
 
 - **Policy-Name** (erforderlich): Dies ist der Name, der in den Benutzer-Oberflächen angezeigt wird. Der Name muss eindeutig sein und darf keine Leerzeichen enthalten.
-- **Identitäten** : Wählen Sie die Identitäten aus, die von dieser Richtlinie betroffen sind. Es ist möglich, mehrere Identitätstypen als Ziel zu verwenden
+- **Identitäten** : Wählen Sie die Identitäten aus, die von dieser Richtlinie betroffen sind. Es ist möglich, mehrere Identitätstypen als Ziel zu verwenden.
 - **Produkttypen**: Wählen Sie die Produkttypen aus, um den Umfang der Richtlinie festzulegen. Mehrere Produkttypen können in derselben Richtlinie enthalten sein.
 - **Ressourcen**: Fügen Sie Ressourcen oder Ressourcengruppen hinzu, die durch die Richtlinie abgedeckt werden sollen. Die verfügbaren Ressourcen werden nach dem zuvor ausgewählten Produkttyp gefiltert.
 - **Aktionen**.
