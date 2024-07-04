@@ -1,7 +1,7 @@
 ---
 title: Włącz połączenia Entra ID SSO z Twoim kontem OVHcloud
 excerpt: "Dowiedz się, jak powiązać identyfikator Entra ID (dawniej Azure Active Directory) z kontem OVHcloud przy użyciu protokołu SAML 2.0"
-updated: 2024-06-25
+updated: 2024-07-04
 ---
 
 > [!primary]

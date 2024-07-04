@@ -1,7 +1,7 @@
 ---
 title: Activer les connexions Okta SSO avec votre compte OVHcloud
 excerpt: "Apprenez à associer votre service Okta à votre compte OVHcloud via SAML 2.0"
-updated: 2024-06-25
+updated: 2024-07-04
 ---
 
 ## Objectif
@@ -43,7 +43,7 @@ Cliquez sur `Create App Integration`{.action} et sélectionnez `SAML 2.0`{.actio
 
 ![Ajouter une application SAML, étape 3](images/OKTA_add_application_step3.png){.thumbnail}
 
-À l'étape « Configure SAML », complétez les champs `Single sign-on URL` et `Audience URI` avec les valeurs de votre région : 
+À l'étape « Configure SAML », complétez les champs `Single sign-on URL` et `Audience URI` avec les valeurs de votre région :
 
 - Région UE : **URL** d'authentification unique : `https://www.ovhcloud.com/eu/auth/saml/acs` et **Audience URI** : `https://www.ovhcloud.com/eu/auth/`
 - Région CA : **URL** d'authentification unique : `https://www.ovhcloud.com/ca/auth/saml/acs` et **Audience URI** : `https://www.ovhcloud.com/ca/auth/`
