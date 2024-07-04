@@ -35,13 +35,13 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 
 ## Requirements
 
-- Access to manage the domain name concerned in the [OVHcloud Control Panel](/links/manager), or via your DNS service provider if it is registered outside of OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager)
-- You need to have signed up to one of the email offers:
-- OVHcloud "Emails" (MX Plan). This is available via a [Cloud Web Hosting plan](/links/web/hosting), a [100M free hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or an MX Plan solution ordered separately.
-- [Exchange](/links/web/emails-hosted-exchange) or [Private Exchange](/links/web/emails-hosted-exchange).
-- [Email Pro](/links/web/email-pro).
-- An email solution outside of OVHcloud with DKIM.
+- You can manage the domain name concerned in the [OVHcloud Control Panel](/links/manager), or via your DNS service provider if it is registered outside of OVHcloud.
+- You have access to the [OVHcloud Control Panel](/links/manager).
+- You need to have signed up to one of these email offers:
+    - OVHcloud MX Plan Email. This is available via a [Web Hosting plan](/links/web/hosting), a [100M free hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or an MX Plan solution ordered separately.
+    - [Exchange](/links/web/emails-hosted-exchange) or [Private Exchange](/links/web/emails-hosted-exchange).
+    - [Email Pro](/links/web/email-pro).
+    - An email solution outside of OVHcloud with DKIM.
 
 > [!warning]
 >
