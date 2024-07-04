@@ -1712,6 +1712,7 @@
             + [Object Storage - Identity and access management](storage_and_backup/object_storage/s3_identity_and_access_management)
             + [Object Storage - Creating a bucket](storage_and_backup/object_storage/s3_create_bucket)
         + [Tutorials](storage-object-storage-tutorials)
+            + [Object Storage - Getting Started with Versioning Using OVHcloud APIs](/storage_and_backup/object_storage/Versioning_Doc)
             + [Object Storage - Encrypt your server-side objects with SSE-C](storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c)
             + [Object Storage - Optimise the sending of your files to S3 Object Storage](storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files)
             + [Object Storage - Optimising Performance](storage_and_backup/object_storage/s3_performance_optimization)
