@@ -1,7 +1,7 @@
 ---
 title: 'Guardar una instancia'
 excerpt: 'Cómo realizar el backup de una instancia de Public Cloud desde el área de cliente de OVHcloud'
-updated: 2024-05-06
+updated: 2024-07-03
 ---
 
 > [!primary]
@@ -37,7 +37,7 @@ Introduzca un nombre para la copia de seguridad en la página siguiente. Lea la 
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-No es posible seguir el progreso de la copia de seguridad en tiempo real, sin embargo, en la sección `Instance Backup`{.action} de la sección `Storage`{.action} del menú de la izquierda, el estado se mostrará como "Realizando el backup..." durante el proceso.
+No es posible supervisar el progreso de la copia de seguridad en tiempo real. Sin embargo, en la sección `Instance Backup`{.action} de `Storage`{.action} del menú de la izquierda, se mostrará el estado `Realizando el backup...` durante el proceso.
 
 ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
 
