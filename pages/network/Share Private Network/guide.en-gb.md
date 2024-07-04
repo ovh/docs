@@ -92,7 +92,7 @@ Example output:
 openstack port create --network shared_private_network --fixed-ip subnet=shared_subnet shared_port
  ```
 
-3. Create a port on the shared network:
+3. Create a instance on the shared network:
 
  ```sh
 openstack server create --flavor d2-2 --image "Ubuntu 22.04" --network shared_private_network --key-name <KEY_NAME> pong_server
