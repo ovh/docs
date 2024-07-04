@@ -715,7 +715,6 @@ Pour plus d'information sur les avantages et inconvénients de l'utilisation d'u
 >>
 >> ![Trust KMS server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_okms_validation.png){.thumbnail}
 >>
->>
 
 ### Chiffrement d'une Machine Virtuelle
 
