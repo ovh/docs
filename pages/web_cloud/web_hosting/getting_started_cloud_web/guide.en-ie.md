@@ -50,7 +50,7 @@ Depending on which [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan 
 
 Once you have done this, please ensure that you have the runtime software application (or applications) required for your project before you continue:
 
-![cloudweb](images/edit-runtime.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/edit-runtime.png){.thumbnail}
 
 ### Step 3: Create environment variables (optional).
 
@@ -60,7 +60,7 @@ For example, this way you can leave out the .env file in the PHP Laravel framewo
 
 To add an environment variable, stay in the section for the Cloud Web hosting plan concerned, and click on the `Environment variables`{.action} tab. A table will display the environment variables created for your solution. To add a new one, click on the `Actions`{.action} button, then `Add an environment variable`{.action}. Follow the appropriate instructions for the variable you would like to create:
 
-![cloudweb](images/add-environment-variable.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-environment-variable.png){.thumbnail}
 
 If you do not use a development framework that includes the environment variables, or would simply like to check that your variables are working properly, you can create a script to do this. Below are examples of two scripts that can help you with this process, although they are no substitute for the assistance of a webmaster:
 
@@ -105,7 +105,7 @@ We strongly advise taking special care when you enter the following information:
 
 Repeat this step if you would like to add several domain names to your Cloud Web hosting plan. For more information on adding a domain name as a multisite, please read the following guide: [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
 
-![cloudweb](images/add-domain-or-subdomain.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-domain-or-subdomain.png){.thumbnail}
 
 ### Step 5: Set up your project on the Cloud Web hosting plan.
 
@@ -124,7 +124,7 @@ If you need more information on OVHcloud 1-click modules, please read our guide:
 > In order to use these modules, you must use the PHP runtime software application.
 >
 
-![cloudweb](images/add-a-module.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/1-click-modules/add-a-module.png){.thumbnail}
 
 #### 2. Set up your project manually.
 

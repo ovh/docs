@@ -54,7 +54,7 @@ Je nach [Cloud Web](/links/web/hosting-cloud-web-offer) Angebot können Sie auch
 
 Überprüfen Sie daher, bevor Sie fortfahren, dass Sie über die für Ihr Projekt notwendigen Runtime Engines verfügen.
 
-![Cloud Web](images/edit-runtime.png){.thumbnail}
+![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/edit-runtime.png){.thumbnail}
 
 ### Schritt 3: Umgebungsvariablen erstellen (optional)
 
@@ -64,7 +64,7 @@ Dadurch ist es zum Beispiel möglich, keine .env-Datei im PHP-Framework Laravel 
 
 Um eine Umgebungsvariable hinzuzufügen, gehen Sie zum betreffenden Cloud Web Hosting und klicken Sie anschließend auf `Umgebungsvariablen`{.action}. Es wird eine Tabelle mit den für Ihr Angebot erstellten Umgebungsvariablen angezeigt. Um eine neue Variable hinzuzufügen, klicken Sie auf den Button `Aktionen`{.action} und anschließend auf `Umgebungsvariable hinzufügen`{.action}. Folgen Sie nun den Anweisungen für die Variable, die Sie erstellen möchten.
 
-![Cloud Web](images/add-environment-variable.png){.thumbnail}
+![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-environment-variable.png){.thumbnail}
 
 Wenn Sie kein Entwicklungsframework mit Umgebungsvariablen verwenden oder überprüfen möchten, ob Ihre Umgebungsvariablen funktionieren, können Sie hierfür ein Skript erstellen. Im Folgenden finden Sie zwei Beispiele, um Ihnen bei diesem Vorgang zu helfen. Sie ersetzen allerdings nicht die Hilfe eines Webmasters.
 
@@ -109,7 +109,7 @@ Füllen Sie die folgenden Informationen sorgfältig aus:
 
 Wiederholen Sie diesen Schritt, falls Sie mehrere Domains zu Ihrem Cloud Web Hosting hinzufügen möchten. Weitere Informationen zum Hinzufügen einer Domain als Multisite finden Sie in unserer Anleitung: [„Mehrere Websites auf einem Webhosting einrichten“](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
 
-![Cloud Web](images/add-domain-or-subdomain.png){.thumbnail}
+![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-domain-or-subdomain.png){.thumbnail}
 
 ### Schritt 5: Projekt auf Cloud Web Hosting einrichten
 
@@ -128,7 +128,7 @@ Wenn Sie mehr über die 1-Klick-Module von OVHcloud wissen möchten, werfen Sie 
 > Wenn Sie 1-Klick-Module nutzen möchten, muss unbedingt die PHP-Runtime-Engine verwendet werden.
 >
 
-![Cloud Web](images/add-a-module.png){.thumbnail}
+![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/1-click-modules/add-a-module.png){.thumbnail}
 
 #### 2. Projekt manuell einrichten
 
