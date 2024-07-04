@@ -97,7 +97,7 @@ Cliquez sur le bouton `Connexion SSO`{.action}.
 
 ![OVHcloud connexion SSO étape 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Renseignez les métadonnées XML de votre service Google Workspace. Complétez le champ « Nom d'attribut de groupe » avec la valeur `Group`. Cliquez sur `Confirmer`{.action}.
+Renseignez les métadonnées XML de votre service Google Workspace. Complétez le champ « Nom d'attribut d'utilisateur » avec la valeur `Name` et le champ « Nom d'attribut de groupe » avec la valeur `Group`. Cliquez sur `Confirmer`{.action}.
 
 Il est possible de conserver les utilisateurs locaux en cochant la case `Conserver les utilisateurs OVHcloud actifs`.
 
