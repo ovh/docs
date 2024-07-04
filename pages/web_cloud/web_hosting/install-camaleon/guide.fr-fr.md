@@ -27,7 +27,7 @@ Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connec
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d’exécution Ruby est bien activé. Si tel est le cas, poursuivez vers l’étape 2  *Associer Ruby à un multisite* 
 
-![Le moteur d'exécution Ruby doit être présent](images/tab-phpfpm7-4.png){.thumbnail} 
+![Le moteur d'exécution Ruby doit être présent](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-phpfpm7-4.png){.thumbnail} 
 
 Si ce n’est pas le cas, ajoutez-en un nouveau (si votre offre vous le permet) ou modifiez le moteur d’exécutionexistant.
 
@@ -46,7 +46,7 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées avec le
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Si vous souhaitez obtenir plus d’informations sur la gestion des moteurs d’exécution, reportez-vous à notre guide *[Gérer les moteurs d’exécution de Cloud Web](/pages/web_cloud/web_hosting/manage-runtime)*. 
 
-![Ajouter le moteur d'exécution Ruby](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail} 
+![Ajouter le moteur d'exécution Ruby](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png){.thumbnail} 
 
 ### Étape 2 : associer Ruby à un multisite
 
@@ -229,9 +229,7 @@ democld@cloudweb-ssh:~/camaleon $ RAILS_ENV=production rake assets:precompile
 
 Pour redémarrer le *daemon* Ruby, retournez sur votre [espace client OVHcloud](/links/manager). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action}, puis sur `Redémarrer`{.action}. 
 
-Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votremultisite. 
-
-![Redémarrer le *daemon* Ruby](images/change-password.png){.thumbnail} 
+Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votre multisite. 
 
 Félicitation, votre site utilisant Camaleon CMS est maintenant disponible ! Il ne vous reste plus qu'à le configurer.  
 

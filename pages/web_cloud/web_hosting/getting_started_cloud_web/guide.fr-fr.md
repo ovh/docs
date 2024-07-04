@@ -50,7 +50,7 @@ Vous pouvez également ajouter des moteurs d'exécution supplémentaires selon v
 
 Dès lors, assurez-vous de disposer du ou des moteurs d'exécution nécessaires à votre projet avant de poursuivre.
 
-![cloudweb](images/edit-runtime.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/edit-runtime.png){.thumbnail}
 
 ### Étape 3 : créer des variables d'environnement (facultatif)
 
@@ -60,7 +60,7 @@ Par exemple, cela permet de ne pas définir de fichier « .env » dans le framew
 
 Pour ajouter une variable d'environnement, cliquez sur l'onglet `Variables d'environnement`{.action}. Un tableau affiche les variables d'environnement créées sur votre offre. Pour en ajouter une nouvelle, cliquez sur le bouton `Actions`{.action}, puis sur `Ajouter une variable d'environnement`{.action}. Suivez alors les indications en fonction de la variable que vous souhaitez créer.
 
-![cloudweb](images/add-environment-variable.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-environment-variable.png){.thumbnail}
 
 Si vous n’utilisez pas de framework de développement intégrant les variables d’environnement ou si vous souhaitez simplement vérifier le bon fonctionnement de vos variables, vous pouvez créer un script qui effectuera cette vérification. Vous trouverez, ci-dessous, deux exemples pouvant vous aider dans votre démarche, mais ils ne se substituent pas à l’aide d’un webmaster.
 
@@ -105,7 +105,7 @@ Nous vous invitons à être vigilant lors de la complétion des informations sui
 
 Répétez cette manipulation si vous souhaitez ajouter plusieurs noms de domaine à votre hébergement Cloud Web. Pour obtenir plus d'informations sur l'ajout d'un nom de domaine en tant que Multisite, consultez notre documentation : [« Partager son hébergement entre plusieurs sites »](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
 
-![cloudweb](images/add-domain-or-subdomain.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-domain-or-subdomain.png){.thumbnail}
 
 ### Étape 5 : installer votre projet sur l'hébergement Cloud Web
 
@@ -124,7 +124,7 @@ Si vous désirez obtenir plus d'informations sur les modules en 1 clic OVHcloud,
 > Pour utiliser ces derniers, vous devez impérativement utiliser le moteur d'exécution PHP.
 >
 
-![cloudweb](images/add-a-module.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/1-click-modules/add-a-module.png){.thumbnail}
 
 #### 2. Installer manuellement votre projet
 
