@@ -218,15 +218,15 @@ Click on the tab corresponding to your solution:
 > [!tabs]
 > **Emails (MX Plan)**
 >>
->>![email](images/dns-dkim-api01.png){.thumbnail}
+>> ![email](images/dns-dkim-api01.png){.thumbnail}
 >>
 > **Exchange**
 >>
->>![email](images/dns-dkim-api012.png){.thumbnail}
+>> ![email](images/dns-dkim-api012.png){.thumbnail}
 >>
 > **Email Pro**
 >>
->>![email](images/dns-dkim-api013.png){.thumbnail}
+>> ![email](images/dns-dkim-api013.png){.thumbnail}
 >>
 
 ##### **For Emails (MX Plan)** <a name="confemail"></a>
@@ -932,7 +932,6 @@ Select the email solution concerned in the following tabs:
 >> - `selectorName`: Enter the name of the selector you want to delete. <br>
 >> - `domainName`: Enter the domain name attached to your Email Pro service. <br>
 >>
-
 
 ### Configuring DKIM for an email solution outside of your OVHcloud account <a name="external-dkim"></a>
 
