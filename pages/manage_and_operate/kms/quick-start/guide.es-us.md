@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-07-03
+updated: 2024-07-04
 ---
 
 > [!warning]
@@ -73,16 +73,29 @@ The following information is required:
 - **description**: certificate description (optional)
 - **validity**: certificate validity duration in days - 365 days by default (optional)
 
-**Example of certificate creation:**
+**Example of certificate creation with root account:**
 
 ```json
 {
-  "description": "My reader credential",
+  "description": "My root access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:account:xx1111-ovh"
   ],
-  "name": "reader",
+  "name": "root",
+  "validity": 30
+}
+```
+
+**Example of certificate creation with local user:**
+
+```json
+{
+  "description": "My access credential",
+  "identityURNs": [
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
+  ],
+  "name": "access",
   "validity": 30
 }
 ```
@@ -95,8 +108,8 @@ The API then returns the certificate creation status:
   "name": "reader",
   "description": "My reader credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "CREATING",
   "fromCSR": false,
@@ -128,8 +141,8 @@ The API returns the certificate in PEM:
   "name": "reader",
   "description": "My reader credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "READY",
   "fromCSR": false,
@@ -165,12 +178,12 @@ The following information is required:
 ```json
 {
   "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDzANBgNV\nBAcMBkxpbmRvbjEWMBQGA1UECgwNRGlnaUNlcnQgSW5jLjERMA8GA1UECwwIRGln\naUNlcnQxHTAbBgNVBAMMFGV4YW1wbGUuZGlnaWNlcnQuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8+To7d+2kPWeBv/orU3LVbJwDrSQbeKamCmo\nwp5bqDxIwV20zqRb7APUOKYoVEFFOEQs6T6gImnIolhbiH6m4zgZ/CPvWBOkZc+c\n1Po2EmvBz+AD5sBdT5kzGQA6NbWyZGldxRthNLOs1efOhdnWFuhI162qmcflgpiI\nWDuwq4C9f+YkeJhNn9dF5+owm8cOQmDrV8NNdiTqin8q3qYAHHJRW28glJUCZkTZ\nwIaSR6crBQ8TbYNE0dc+Caa3DOIkz1EOsHWzTx+n0zKfqcbgXi4DJx+C1bjptYPR\nBPZL8DAeWuA8ebudVT44yEp82G96/Ggcf7F33xMxe0yc+Xa6owIDAQABoAAwDQYJ\nKoZIhvcNAQEFBQADggEBAB0kcrFccSmFDmxox0Ne01UIqSsDqHgL+XmHTXJwre6D\nhJSZwbvEtOK0G3+dr4Fs11WuUNt5qcLsx5a8uk4G6AKHMzuhLsJ7XZjgmQXGECpY\nQ4mC3yT3ZoCGpIXbw+iP3lmEEXgaQL0Tx5LFl/okKbKYwIqNiyKWOMj7ZR/wxWg/\nZDGRs55xuoeLDJ/ZRFf9bI+IaCUd1YrfYcHIl3G87Av+r49YVwqRDT0VDV7uLgqn\n29XI1PpVUNCPQGn9p/eX6Qo7vpDaPybRtA2R7XLKjQaF9oXWeCUqy1hvJac9QFO2\n97Ob1alpHPoZ7mWiEXXXXXXXXXXXXX\n-----END CERTIFICATE REQUEST-----",
-  "description": "My reader credential",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
-  "name": "reader",
+  "name": "access",
   "validity": 30
 }
 ```
@@ -183,8 +196,8 @@ The API then returns the certificate creation status:
   "name": "reader",
   "description": "My reader credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "CREATING",
   "fromCSR": true,
@@ -208,8 +221,8 @@ The API returns the certificate in PEM:
   "name": "reader",
   "description": "My reader credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "READY",
   "fromCSR": true,
