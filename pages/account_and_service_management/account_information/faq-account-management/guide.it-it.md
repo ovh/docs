@@ -1,7 +1,7 @@
 ---
 title: "FAQ sulla gestione dell'account OVHcloud"
 excerpt: "Trovi le domande più frequenti sulla gestione dell'account OVHcloud"
-updated: 2022-11-21
+updated: 2024-07-04
 ---
 
 ## Obiettivo
@@ -161,6 +161,22 @@ Un membro del nostro team risponderà il prima possibile.
 ### Ho risposto all’email di Abuse di OVHcloud ma il servizio è sempre bloccato: cosa fare?
 
 Dallo Spazio Cliente è possibile inviare una richiesta di assistenza al servizio clienti di OVHcloud per ottenere maggiori informazioni sullo stato del ticket da parte del team Abuse. Per semplificare la gestione della richiesta, ricorda di riportare il numero di riferimento del ticket.
+
+### Come eliminare un account OVHcloud?
+
+La chiusura del tuo account cliente OVHcloud e la cancellazione dei tuoi dati personali è possibile solo se:
+
+1. Non disponi più di servizi visibili nella sezione "[I tuoi servizi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". In caso contrario, dovrai prima richiederne la disattivazione e attenderne l’eliminazione.
+2. Non ci sono fatture in attesa di pagamento. In caso contrario, è necessario procedere al loro pagamento cliccando sul pulsante `Salda subito`{.action} nelle azioni di massa nella pagina "[Le mie fatture](https://www.ovh.com/manager/#/dedicated/billing/history)".
+3. Non sono presenti ordini in corso. Verificatelo su [questa pagina](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Il tuo conto prepagato non è positivo. Verifica la tua password all’indirizzo [questa pagina](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Se le condizioni di cui sopra sono soddisfatte, puoi richiedere di eliminare il tuo account OVHcloud e i dati ad esso associati seguendo questi step:
+
+1. Connettiti al [Help Center di OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
+2. Clicca sul pulsante `Crea un ticket`{.action}
+3. Seleziona il motivo `Gestisci il tuo account cliente OVHcloud`{.action}.
+4. Indica `Voglio chiudere il mio account cliente OVHcloud`{.action} e segui gli step descritti.
 
 ## Per saperne di più
 
