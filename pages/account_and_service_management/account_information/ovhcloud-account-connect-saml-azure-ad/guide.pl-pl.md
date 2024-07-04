@@ -6,7 +6,7 @@ updated: 2024-06-25
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
+>
 
 ## Wprowadzenie
 
@@ -223,7 +223,7 @@ Następnie kliknij przycisk `Logowanie SSO`{.action}.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Uzupełnij pole **Group Atrybute Name** z wartością **Claim name** z wcześniej zarejestrowanych grup aplikacji Entra ID.
+Uzupełnij pole **Nazwa atrybutu użytkownika** nazwą oświadczenia aplikacji identyfikatora wewnętrznego **upn** oraz w polu **Nazwa atrybutu grupy** wartością nazwy oświadczenia **groups**, która została wcześniej zapisana.
 
 Wypełnij metadane XML aplikacji Entra ID z wcześniej zarejestrowanego pliku.
 

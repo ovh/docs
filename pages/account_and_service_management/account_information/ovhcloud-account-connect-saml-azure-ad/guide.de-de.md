@@ -223,7 +223,7 @@ Klicken Sie auf den Button `SSO-Verbindung`{.action}.
 
 ![OVHcloud verbindet SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Geben Sie im Feld **Group Attribute Name** den Wert des **Claim name** der Azure *Application*-Gruppe ein. Klicken Sie auf `Bestätigen`{.action}.
+Füllen Sie das Feld **Nutzerattributname** mit der Eintrags-ID-Anwendung **upn** Anspruchsname und das Feld **Name des Gruppenattributs** mit dem zuvor gespeicherten Wert **groups** Anspruchsname aus.
 
 Geben Sie die XML-Metadaten der Azure *Application* aus der zuvor gespeicherten Datei ein.
 

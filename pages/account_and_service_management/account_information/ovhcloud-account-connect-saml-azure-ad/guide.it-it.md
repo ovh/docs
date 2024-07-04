@@ -298,4 +298,3 @@ Se la tua email non compare sotto `Connected via SSO`, significa che non hai con
 [Come utilizzare le politiche IAM dallo Spazio Cliente](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
-
