@@ -1,4 +1,4 @@
-[---
+---
 title: 'Securing my OVHcloud account and managing my personal information'
 excerpt: 'Find out how to optimise your OVHcloud account security, manage your personal information, and delegate access to your account'
 updated: 2024-06-12
