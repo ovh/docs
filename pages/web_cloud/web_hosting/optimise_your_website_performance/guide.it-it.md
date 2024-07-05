@@ -102,7 +102,7 @@ Come accedere alle statistiche e ai log:
 2. Clicca sulla scheda `Statistiche e log`{.action}.
 3. Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle statistiche di visita del sito Web o su `Visualizza i log`{.action} per consultare i log disponibili per il tuo hosting Web.
 
-![logs](images/tab.png){.thumbnail}
+![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Come accedere ai grafici:
 
@@ -110,7 +110,7 @@ Come accedere ai grafici:
 2. Nella nuova pagina, clicca sulla scheda `Statistiche e log`{.action}. Sfoglia fino in fondo alla pagina in cui si trova il grafico associato all’utilizzo dell’hosting.
 3. Seleziona il **tipo** di informazioni e il **periodo** dei dati visualizzati.
 
-![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
+![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 Che tipo di informazioni è possibile visualizzare?
 

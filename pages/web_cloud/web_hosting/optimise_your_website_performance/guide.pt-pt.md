@@ -102,7 +102,7 @@ Como aceder às estatísticas e logs:
 2. Na página que se abrir, clique no separador `Estatísticas e logs`{.action}.
 3. De seguida, clique no botão `Ver estatísticas`{.action} apresentado para aceder às estatísticas de visita do website ou em `Consultar os logs`{.action} para consultar os logs disponíveis para o seu alojamento web.
 
-![logs](images/tab.png){.thumbnail}
+![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Como aceder aos gráficos:
 
@@ -110,7 +110,7 @@ Como aceder aos gráficos:
 2. Na página que se abrir, clique no separador `Estatísticas e logs`{.action}. Desloque-se até à parte inferior da página onde se encontra o gráfico relativo à utilização do seu alojamento.
 3. Selecione o **tipo** de informação bem como o **período** dos dados apresentados.
 
-![gráficos](images/infrastructure-statistics-graph.png){.thumbnail}
+![gráficos](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 Quais são os diferentes tipos de informação que podem ser visualizados?
 
