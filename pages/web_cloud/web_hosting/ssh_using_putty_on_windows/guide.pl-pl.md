@@ -25,7 +25,7 @@ Informacja ta jest dostępna w panelu klienta. Przejdź do sekcji FTP lub postę
 - Zaznacz SSH.
 - Kliknij na Open.
 
-![Putty](images/configuration.png){.thumbnail}
+![Putty](/pages/assets/screens/other/web-tools/putty/configuration.png){.thumbnail}
 
 ## Logowanie na hosting
 

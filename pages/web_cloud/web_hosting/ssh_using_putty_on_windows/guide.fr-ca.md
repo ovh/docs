@@ -35,7 +35,7 @@ Vous pouvez retrouver ces informations de connexion sur votre espace client, par
 - Cochez SSH .
 - Cliquez sur Open .
 
-![hosting](images/configuration.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/putty/configuration.png){.thumbnail}
 
 ### Connexion a votre hebergement
 - Dans l'invite de commande qui s'est ouvert, saisissez votre login FTP , puis tapez sur la touche "Entrée".
