@@ -6,7 +6,7 @@ updated: 2022-05-09
 
 ## Objectif
 
-Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode *bridged* (via des MAC virtuelles) n'est pas possible. Il est donc nécessaire de configurer les Additional IP en mode routé ou via le vRack.
+Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode *bridged* (via des MAC virtuelles) n'est pas possible. Il est en de même pour les nouveaux serveurs de derniere génération livrés avec les cpu AMD Epyc 4K et 8K. Il est donc nécessaire de configurer les Additional IP en mode routé ou via le vRack.
 
 > [!primary]
 >
