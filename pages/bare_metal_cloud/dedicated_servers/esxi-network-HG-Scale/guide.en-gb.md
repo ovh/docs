@@ -6,7 +6,7 @@ updated: 2022-05-09
 
 ## Objective
 
-On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
+On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in *bridged* mode (via virtual MACs). The same goes for the latest generation servers delivered with AMD Epyc 4K and 8K CPUs. It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
 
 > [!primary]
 >
