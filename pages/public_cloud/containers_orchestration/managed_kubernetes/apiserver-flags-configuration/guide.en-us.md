@@ -1,7 +1,7 @@
 ---
 title: Configuring the API server flags on an OVHcloud Managed Kubernetes cluster
 excerpt: 'Find out how to configure the managed components of your Kubernetes: CoreDNS, IPVS, and even API server admission plugins on an OVHcloud Managed Kubernetes cluster'
-updated: 2023-05-22
+updated: 2024-07-05
 ---
 
 <style>
