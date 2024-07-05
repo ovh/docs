@@ -15,22 +15,11 @@ updated: 2024-06-12
 
 ## Instructions
 
-### Step 1: Securing Your Account
+### Securing Your Account
 
-1. **Enable Two-Factor Authentication (2FA)**
-   - Log in to your OVHcloud Control Panel.
-   - Navigate to "My Account" and select "Security".
-   - Follow the instructions to set up 2FA using your preferred method (SMS, authenticator app).
+For detailed instructions on securing your OVHcloud account, please refer to the following [guide](https://help.ovhcloud.com/csm/en-gb-account-secure-account-personal-data?id=kb_article_view&sysparm_article=KB0042918).
 
-2. **Use Strong Passwords**
-   - Ensure your password is at least 12 characters long, includes a mix of letters, numbers, and special characters.
-   - Avoid using the same password across multiple sites.
-
-3. **Regularly Update Your Credentials**
-   - Periodically change your password to reduce the risk of unauthorized access.
-   - Update your security questions and contact information.
-
-### Step 2: Managing Personal Information
+### Managing Personal Information
 
 1. **Verify Your Personal Information**
    - Go to "My Account" and click on "Personal Information".
@@ -66,21 +55,13 @@ Use private networks and clear policies to protect sensitive data. Ensure traffi
 
 #### Consistent Tagging
 
-Implement a tagging strategy to categorize and manage resources efficiently. This helps in resource allocation, billing, and compliance tracking.
+Implement a tagging strategy to categorize and manage resources efficiently. This helps in resource allocation, billing, and compliance tracking. Note that tagging is currently only available for OS resources and cannot be added to MKS clusters at this time.
 
-### IAM and Multi-Tenancy Principles on OpenStack and Flexible Engine
+### IAM and Multi-Tenancy Principles on OpenStack
 
-#### Domain (OpenStack) / Account (Flexible Engine)
+#### Projects (OpenStack)
 
-Domains are the highest level of abstraction for resources and users in an OpenStack environment. A domain can contain users, user groups, and projects.
-
-#### Projects (OpenStack & Flexible Engine) / Tenant (deprecated)
-
-Projects are the second highest level of abstraction in OpenStack. They can contain user groups or users and resources.
-
-#### User Groups (OpenStack & Flexible Engine)
-
-User groups are collections of users. Assigning roles to a group grants all users in that group the permissions of those roles.
+Projects are the second highest level of abstraction in OpenStack. They can contain users and resources.
 
 #### Roles
 
@@ -92,18 +73,10 @@ Users are the active entities in the OpenStack system who can consume resources.
 
 #### Keystone v3
 
-Keystone v3 introduces true multi-tenancy with domains. Each domain has its own administrator, who can manage projects, users, groups, and roles within their domain.
+Keystone v3 introduces true multi-tenancy with domains. Each domain has its own administrator, who can manage projects, users, and roles within their domain.
 
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
 
-For detailed information and community support, refer to our [best practices guide](https://cloud.orange-business.com/en/best-practices-and-how-to/iam-multi-tenancy/) and join our community discussions on [Discord](https://discord.com/channels/850031577277792286/1222599406163853484).
-
-Feel free to reach out if you need further assistance!
-
-Sources:
-- [OVHcloud Documentation](https://docs.ovh.com)
-- [OVHcloud Public Cloud Guide](https://docs.ovh.com/gb/en/public-cloud/)
-- [IAM and Multi-Tenancy Principles on Flexible Engine](https://cloud.orange-business.com/en/best-practices-and-how-to/iam-multi-tenancy/)
-](https://chatgpt.com/c/72cb2138-5d8a-4bbd-9940-3e915e4a3722#:~:text=Copier%20le%20code-,%2D%2D%2D%0Atitle%3A%20%27Securing%20my%20OVHcloud%20account%20and%20managing%20my%20personal%20information%27%0Aexcerpt,community%20of%20users%20on%20%3Chttps%3A//community.ovh.com/en/%3E.,-For%20detailed%20information)
+For detailed information and community support, refer to our [best practices guide](https://docs.ovh.com/gb/en/public-cloud/) and join our community 
