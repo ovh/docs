@@ -1,12 +1,8 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2024-06-21
+updated: 2024-07-05
 ---
-
-> [!warning]
-> Usage of Asynchronous Replication across buckets is currently in Beta phase.
-> This guide may be incomplete and will be extended during the beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : https://discord.gg/ovhcloud. Ask questions, provide feedback and interact directly with the team that builds our Object Storage services.
 
 ## Introduction
 
@@ -280,7 +276,7 @@ This configuration will replicate all objects (indicated by the empty `Filter` f
 }
 ```
 
-This configuration will replicate all objects that have the prefix "backup" and the tag "important" set to "true" to the bucket `destination-bucket`. Additionally, we indicate that deletion operations in the source bucket should also be replicated.
+This configuration will replicate all objects that have the prefix "backup" and the tag "important" set to "true" to the bucket `destination-bucket`. Additionally, we indicate that deletion operations in the source bucket should be also replicated.
 
 #### Replicating source to multiple regions
 
@@ -369,6 +365,7 @@ The source bucket is the bucket whose objects are automatically replicated and t
 
 ```bash
 $ aws s3 mb s3://<bucket_name>
+
 ```
 
 **_Example:_** Creation of a source bucket and a destination bucket

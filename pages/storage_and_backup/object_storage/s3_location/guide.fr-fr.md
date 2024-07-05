@@ -45,19 +45,19 @@ OVHcloud Object Storage S3 est accessible via un point de terminaison unique : `
         <td>4</td>
     </tr>
     <tr>
-        <td>Frankfurt</td>
+        <td>Francfort</td>
         <td>de</td>
         <td>HTTPS</td>
         <td>4</td>
     </tr>
     <tr>
-        <td>London</td>
+        <td>Londres</td>
         <td>uk</td>
         <td>HTTPS</td>
         <td>4</td>
     </tr>
     <tr>
-        <td>Warsaw</td>
+        <td>Varsovie</td>
         <td>waw</td>
         <td>HTTPS</td>
         <td>4</td>

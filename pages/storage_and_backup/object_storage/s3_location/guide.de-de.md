@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpunkte und Objektspeicher mit Geo-Verfügbarkeit (EN)
-updated: 2024-06-11
+updated: 2024-07-05
 ---
 
 <style>
@@ -17,16 +17,73 @@ OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s
 
 ### List of available regions
 
-| Region name | Region<br><b><i>To be entered in lower case</i></b> | Protocol |  Signature version |
-| ------ | ------ | ------ | ------ |
-| Gravelines | gra | HTTPS | 4 |
-| Frankfurt | de | HTTPS | 4 |
-| Beauharnois | bhs | HTTPS | 4 |
-| Roubaix | rbx | HTTPS | 4 |
-| Warsaw | waw | HTTPS | 4 |
-| London | uk | HTTPS | 4 |
-| Strasbourg | sbg | HTTPS | 4 |
-| Singapore | sgp | HTTPS | 4 |
+<table>
+    <tr>
+        <th>Geographic zone</th>
+        <th>Region name</th>
+        <th>Region<br><b><i>To be entered in lower case</i></b></th>
+        <th>Protocol</th>
+        <th>Signature version</th>
+    </tr>
+    <tr>
+        <td rowspan=6>Europe</td>
+        <td>Gravelines</td>
+        <td>gra</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Roubaix</td>
+        <td>rbx</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Strasbourg</td>
+        <td>sbg</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Frankfurt</td>
+        <td>de</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>London</td>
+        <td>uk</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Warsaw</td>
+        <td>waw</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td rowspan=2>North America<br>(excluding USA)</td>
+        <td>Beauharnois</td>
+        <td>bhs</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Toronto</td>
+        <td>ca-east-tor</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Asia-Pacific</td>
+        <td>Singapore</td>
+        <td>sgp</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+</table>
+
 
 The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh.net` that represents a virtual host style endpoint.
 
