@@ -18,7 +18,7 @@ Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/h
 - One public IP, available on the target Hosted Private Cloud for the VPN endpoint
 - A Zerto platform installed on the on-premises platform
 - VRAs (Virtual Replication Appliances) on both sides that are able to connect to the counterpart on TCP ports 4007 and 4008
-- Zerto administration consoles or ZVMs (Zerto Virtual Managers) that are able to connect to the counterpart on TCP port 9081
+- Zerto administration consoles or ZVMs (Zerto Virtual Managers) that are able to connect to the counterpart on TCP port 9071
 
 > [!primary]
 >
@@ -246,7 +246,7 @@ For "Source" and "Destination", select "Single host or Network" type. The source
 
 ![](images/image-EN-28.png){.thumbnail}
 
-Destination TCP port is 9081. Click `Save`{.action} and `Apply Change`{.action}.
+Destination TCP port is 9071. Click `Save`{.action} and `Apply Change`{.action}.
 
 #### 4.2 vRAs opening.
 

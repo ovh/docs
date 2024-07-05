@@ -21,7 +21,7 @@ Para el segundo caso, consulte nuestra guía "[Zerto entre dos datacenters de OV
 - Una dirección IP pública disponible en el Private Cloud de destino para el punto de conexión VPN.
 - Una plataforma Zerto instalada y operativa en la infraestructura del cliente.
 - Las máquinas de replicación Zerto (VRA: Virtual Replication Appliance) tanto del lado del cliente como del lado de OVHcloud deben poder intercambiar datos en los puertos TCP 4007 y 4008.
-- Las máquinas de administración Zerto (ZVM: Zerto Virtual Manager) del lado del cliente y del lado de OVHcloud deben poder intercambiar datos en los puertos TCP 9081.
+- Las máquinas de administración Zerto (ZVM: Zerto Virtual Manager) del lado del cliente y del lado de OVHcloud deben poder intercambiar datos en los puertos TCP 9071.
 
 > [!primary]
 >
@@ -236,7 +236,7 @@ También puede consultar el archivo de log IPSec en /var/log/ipsec.log.
 
 Para permitir el emparejamiento de la infraestructura del cliente con la de OVHcloud, se debe autorizar el tráfico entre:
 
-- El puerto 9081 y las ZVM
+- El puerto 9071 y las ZVM
 - Los puertos 4007/4008 y las vRAs
 
 #### 4.1 Abrir puertos en ZVM
@@ -261,7 +261,7 @@ En los campos «Source» y «Destination» seleccione el tipo «Single host or N
 
 ![zerto vpn](images/image-EN-28.png){.thumbnail}
 
-El puerto TCP de destino autorizado es el 9081.
+El puerto TCP de destino autorizado es el 9071.
 
 Guarde la regla y aplique los cambios.
 
