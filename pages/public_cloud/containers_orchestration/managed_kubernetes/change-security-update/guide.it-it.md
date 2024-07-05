@@ -167,13 +167,13 @@ resource "ovh_cloud_project_kube" "cluster" {
   service_name = var.service_name
   name         = "my-super-cluster"
   region       = "GRA5"
-  version      = "1.24"
+  version      = "1.30"
 
   update_policy = "NEVER_UPDATE" # "ALWAYS_UPDATE" by default but you can choose also "MINIMAL_DOWNTIME" or "NEVER_UPDATE"
 }
 ```
 
-In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA5 region, using the Kubernetes version 1.24 (the last and recommended version at the time we wrote this tutorial), with a security update policy that equals to "Do not update".
+In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA5 region, using the Kubernetes version 1.30 (the last and recommended version at the time we wrote this tutorial), with a security update policy that equals to "Do not update".
 
 Now we need to initialise Terraform, generate a plan, and apply it.
 
@@ -241,7 +241,7 @@ Terraform will perform the following actions:
       + status                      = (known after apply)
       + update_policy               = "NEVER_UPDATE"
       + url                         = (known after apply)
-      + version                     = "1.24"
+      + version                     = "1.30"
     }
 
 Plan: 1 to add, 0 to change, 0 to destroy.
@@ -277,7 +277,7 @@ Terraform will perform the following actions:
       + status                      = (known after apply)
       + update_policy               = "NEVER_UPDATE"
       + url                         = (known after apply)
-      + version                     = "1.24"
+      + version                     = "1.30"
     }
 
 Plan: 1 to add, 0 to change, 0 to destroy.
@@ -325,7 +325,7 @@ resource "ovh_cloud_project_kube" "cluster" {
   service_name = var.service_name
   name         = "my-super-cluster"
   region       = "GRA5"
-  version      = "1.24"
+  version      = "1.30"
 
   update_policy = "ALWAYS_UPDATE" # "ALWAYS_UPDATE" by default but you can choose also "MINIMAL_DOWNTIME" or "NEVER_UPDATE"
 }
@@ -391,7 +391,7 @@ Terraform will perform the following actions:
       - status                      = "READY" -> null
       - update_policy               = "ALWAYS_UPDATE" -> null
       - url                         = "xxxxxx.c3.gra.k8s.ovh.net" -> null
-      - version                     = "1.24" -> null
+      - version                     = "1.30" -> null
     }
 
 Plan: 0 to add, 0 to change, 1 to destroy.
