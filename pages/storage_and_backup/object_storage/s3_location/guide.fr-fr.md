@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-06-11
+updated: 2024-07-05
 ---
 
 <style>
@@ -17,16 +17,72 @@ OVHcloud Object Storage S3 est accessible via un point de terminaison unique : `
 
 ### Liste des régions disponibles
 
-| Nom de la région | Région<br><b><i>À saisir en minuscules</i></b> | Protocole | Version de la signature |
-| ----- | ----- | ----- | ----- |
-| Gravelines | gra | HTTPS | 4 |
-| Francfort | de | HTTPS | 4 |
-| Beauharnois | bhs | HTTPS | 4 |
-| Roubaix | rbx | HTTPS | 4 |
-| Varsovie | waw | HTTPS | 4 |
-| Londres | uk | HTTPS | 4 |
-| Strasbourg | sbg | HTTPS | 4 |
-| Singapore | sgp | HTTPS | 4 |
+<table>
+    <tr>
+        <th>Zone géographique</th>
+        <th>Nom de la région</th>
+        <th>Région<br><b><i>A saisir en minuscules</i></b></th>
+        <th>Protocole</th>
+        <th>Version de la signature</th>
+    </tr>
+    <tr>
+        <td rowspan=6>Europe</td>
+        <td>Gravelines</td>
+        <td>gra</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Roubaix</td>
+        <td>rbx</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Strasbourg</td>
+        <td>sbg</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Francfort</td>
+        <td>de</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Londres</td>
+        <td>uk</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Varsovie</td>
+        <td>waw</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td rowspan=2>Amerique du nord<br>(hors USA)</td>
+        <td>Beauharnois</td>
+        <td>bhs</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Toronto</td>
+        <td>ca-east-tor</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Asie-Pacifique</td>
+        <td>Singapour</td>
+        <td>sgp</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+</table>
 
 Le point de terminaison de bucket est une URL, par exemple `https://my-bucket.s3.gra.io.cloud.ovh.net` qui représente un point de terminaison de style hôte virtuel.
 
