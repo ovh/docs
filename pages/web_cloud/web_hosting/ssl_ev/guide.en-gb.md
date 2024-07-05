@@ -61,7 +61,7 @@ Read our guide on how to [manage an SSL certificate on your web hosting plan](/p
 
 Fill in the information requested by **Sectigo** before you receive the EV SSL certificate.
 
-![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
+![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
 Click `Continue`{.action} after **all items** have been entered correctly.
 
@@ -80,19 +80,19 @@ Proceed with the order until payment in order to confirm the request to create t
 
 If you have not yet ordered your domain name and associated hosting package, go to our [OVHcloud homepage](/links/website), enter a domain name in the **search form** and click `Search`{.action} to start the order process.
 
-![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
+![SSL EV select domain](/pages/assets/screens/website/order/ssl-ev-search-bar.png){.thumbnail}
 
 Then select your domain name, choose your hosting package and your options until you reach the step `Configure your web hosting`.
 
 Select your choices for installing `1-click module`{.action} and `CDN`{.action}, then scroll down the page to the section `Secure your website with our SSL certificates`{.action}.
 
-![SSL EV order](images/ssl-ev-selection.png){.thumbnail}
+![SSL EV order](/pages/assets/screens/website/order/ssl-ev-selection.png){.thumbnail}
 
 Choose `Sectigo EV SSL`{.action} then click `Continue`{.action}.
 
 On the new page that pops up, enter exactly the information requested by **Sectigo** before the EV SSL certificate is delivered to you:
 
-![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
+![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
 Click `Continue`{.action} after **all items** have been entered correctly.
 
