@@ -1,6 +1,6 @@
 ---
-title: 'Activer KMS au sein de Hosted Private Cloud VMware on OVHcloud'
-excerpt: 'Découvrez comment activer le service de gestion de clé OVHcloud (OKMS) au sein de Hosted Private Cloud VMware on OVHcloud pour sécuriser efficacement vos données sensibles'
+title: 'Intégration d'un KMS pour VMware on OVHcloud'
+excerpt: 'Découvrez comment intégrer un KMS au sein de Hosted Private Cloud VMware on OVHcloud pour sécuriser efficacement vos données sensibles et chiffrer vos machines virtuelles'
 updated: 2023-07-01
 ---
 <style>
@@ -25,13 +25,13 @@ details[open]>summary::before {
 
 ## Objectif
 
-**Ce guide complet vous explique comment configurer et optimiser l'utilisation d'un service de gestion de clé (KMS) OVHcloud au sein votre infrastructure Hosted Private Cloud VMware on OVHcloud.**
+**Ce guide complet introduit les fonctionnalités KMS et vous explique comment configurer et optimiser l'utilisation d'un service de gestion de clé OVHcloud au sein votre infrastructure Hosted Private Cloud VMware on OVHcloud.**
 
 ## Prérequis
 - Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Avoir souscrit une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 - Avoir accès à l’interface de gestion vSphere de votre PCC (Hosted Private Cloud VMware on OVHcloud).
-- Disposez des droits IAM suffisant avec votre compte client OVHcloud et vos ressources Hosted Private Cloud VMware on OVHcloud, pour ça vous pouvez voir les guides :
+- Disposez des droits IAM suffisant avec votre compte de service OVHcloud et vos ressources KMS Hosted Private Cloud VMware on OVHcloud, pour ça vous pouvez voir les guides :
   - [IAM pour VMware on OVHcloud - Présentation et FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
   - [IAM pour VMware on OVHcloud - Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation).
   - [IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role).
