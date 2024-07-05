@@ -48,13 +48,13 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il t
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da ripristinare e seleziona `Ripristina un backup`{.action}. Ti ricordiamo che scegliendo questa opzione il contenuto del database verrà sostituito con quello del backup.
 
-![Importazione database](images/restore-backup.png){.thumbnail}
+![Importazione database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 Nella tabella sono elencati tutti i backup disponibili per il database selezionato, di cui viene mostrata la data di creazione e di cancellazione dal sistema OVHcloud.
 
 Clicca sui tre puntini in corrispondenza del database da ripristinare e seleziona `Ripristina un backup`{.action}. Verifica la correttezza delle informazioni e `Conferma`{.action} per avviare l’operazione. Attendi il completamento del processo.
 
-![Importazione database](images/restore-the-backup.png){.thumbnail}
+![Importazione database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
 
 ### Importazione dallo Spazio Cliente OVH
 
@@ -62,7 +62,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il t
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da importare e seleziona `Importa un file`{.action}.
 
-![Importazione database](images/import-file.png){.thumbnail}
+![Importazione database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-file.png){.thumbnail}
 
 Nella nuova finestra, seleziona `Importa un nuovo file`{.action} e poi clicca su `Seguente`{.action}.
 
@@ -71,13 +71,13 @@ Nella nuova finestra, seleziona `Importa un nuovo file`{.action} e poi clicca su
 > L’opzione `Utilizza un file esistente`{.action} permette di importare nuovamente i dati di un file già inviato nel tool di importazione. 
 >
 
-![Importazione database](images/database-import-step-1-new-file.png){.thumbnail}
+![Importazione database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-1-new-file.png){.thumbnail}
 
 Assegna un nome al tuo file di backup (per trovarlo più facilmente in un secondo momento) e clicca su `Browse...` per selezionare il file nel tuo computer. Clicca su `Seguente`{.action}.
 
 Attendi il completamento dell’operazione e poi clicca su `Seguente`{.action}.
 
-![Importazione database](images/database-import-step-2-new-file.png){.thumbnail}
+![Importazione database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-2-new-file.png){.thumbnail}
 
 Scegli se utilizzare o meno le opzioni aggiuntive proposte:
 
@@ -87,7 +87,7 @@ Scegli se utilizzare o meno le opzioni aggiuntive proposte:
 
 Una volta effettuata la tua scelta, clicca su `Conferma`{.action} e attendi la fine del processo. 
 
-![Importazione database](images/database-import-step-3.png){.thumbnail}
+![Importazione database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-3.png){.thumbnail}
 
 ### Interfaccia Web phpMyAdmin
 
@@ -95,7 +95,7 @@ Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVHcl
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database di cui vuoi importare il backup e seleziona `Accedi a phpMyAdmin`{.action}.
 
-![Importazione database](images/go-to-phpmyadmin.png){.thumbnail}
+![Importazione database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Nella pagina di phpMyAdmin, inserisci le informazioni relative al database, scegli dal menu a tendina se visualizzare i dati attuali del database ed effettua l’accesso.  Seleziona la scheda `Importa`{.action} e inserisci i dati richiesti. Ti ricordiamo che il file caricato non può superare la dimensione massima consentita.
 
