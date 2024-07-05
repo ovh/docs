@@ -8,7 +8,7 @@ updated: 2023-11-24
 
 You may see the error page **Site not installed** displayed on your web browser, particularly when your website is first installed.
 
-![website not installed](images/site-not-installed.png){.thumbnail}
+![website not installed](/pages/assets/screens/other/browsers/errors/site-not-installed.png){.thumbnail}
 
 **This guide explains how to identify and resolve the "Site not installed" error page.**
 
@@ -87,10 +87,10 @@ A table with different DNS records will appear.
 
 |Possible Scenarios|Action to Take|
 |---|---|
-|In the active DNS zone, your domain name or subdomain points to the IP address of your web hosting plan with an A record (for an IPv4) or an AAAA record (for an IPv6).<br><br>![DNS_IP2 zone](images/dashboard-entry-a.png){.thumbnail}|This indicates that your domain name is correctly configured.<br><br> Wait for the DNS propagation if the change is recent.<br><br> Also remember to restart your devices (PC, smartphone, box, etc.) and clear your browser cache. Your domain name’s previous configuration can be cached, which can delay the display of your update.|
+|In the active DNS zone, your domain name or subdomain points to the IP address of your web hosting plan with an A record (for an IPv4) or an AAAA record (for an IPv6).<br><br>![DNS_IP2 zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}|This indicates that your domain name is correctly configured.<br><br> Wait for the DNS propagation if the change is recent.<br><br> Also remember to restart your devices (PC, smartphone, box, etc.) and clear your browser cache. Your domain name’s previous configuration can be cached, which can delay the display of your update.|
 |The active DNS zone does not have A or AAAA records that link your domain or subdomain to your web hosting plan's IP address. Or the existing record points to a different IP address.|Add the new A or AAAA record or correct the existing record by following [this guide](/pages/web_cloud/domains/dns_zone_edit).|
-|Your domain does not appear in the `Domain names`{.action} section of your OVHcloud Control Panel.<br><br>Or the `DNS Zone`{.action} tab of your domain name appears as follows:<br><br>![zonedns_ndd_not_on_lec2](images/zone-without-domain-top-of-the-page.png){.thumbnail}|This means that your domain name is not managed from your OVHcloud Control Panel.<br><br>Determine its registrar via our [WHOIS tool](/links/web/domains-whois) and the DNS servers associated with it. <br><br>Find and modify the DNS zone concerned accordingly by following the dedicated section of the guide “[Hosting multiple websites on your web hosting plan - adding an external domain name](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.|
-|This warning appears in the `DNS Zone`{.action} tab:<br><br>![warning_zonedns_pas_sur_srv_dns](images/message-other-ovh-dns-servers.png){.thumbnail}|You will need to modify your domain name’s DNS servers accordingly by following our guide on [Modifying DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit).
+|Your domain does not appear in the `Domain names`{.action} section of your OVHcloud Control Panel.<br><br>Or the `DNS Zone`{.action} tab of your domain name appears as follows:<br><br>![zonedns_ndd_not_on_lec2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|This means that your domain name is not managed from your OVHcloud Control Panel.<br><br>Determine its registrar via our [WHOIS tool](/links/web/domains-whois) and the DNS servers associated with it. <br><br>Find and modify the DNS zone concerned accordingly by following the dedicated section of the guide “[Hosting multiple websites on your web hosting plan - adding an external domain name](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.|
+|This warning appears in the `DNS Zone`{.action} tab:<br><br>![warning_zonedns_pas_sur_srv_dns](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|You will need to modify your domain name’s DNS servers accordingly by following our guide on [Modifying DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit).
 
 ## Go further <a name="go-further"></a>
 
