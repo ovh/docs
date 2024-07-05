@@ -39,15 +39,25 @@ A well-architected environment is crucial for managing and scaling your OVHcloud
 
 #### Establish Landing Zones
 
-Create a scalable and secure multi-account environment as the foundation for your projects. This helps isolate resources and manage growth efficiently.
+Create a scalable and secure multi-account environment as the foundation for your projects. This helps isolate resources and manage growth efficiently. For more details, refer to the AWS best practices on [landing zones](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-aws-environment/understanding-landing-zones.html).
 
 #### Use Multiple Accounts
 
-Isolate resources and workloads into different accounts for better security and management. This includes setting up accounts for different business units, applications, or environments (development, staging, production).
+Isolate resources and workloads into different accounts for better security and management. This includes setting up accounts for different business units, applications, or environments (development, staging, production). Consider the AWS multi-account framework principles:
+- **Security controls:** Different applications might have different security profiles.
+- **Isolation:** An account is a unit of security protection.
+- **Data isolation:** Isolating data stores to an account limits access.
+- **Many teams:** Different teams have different responsibilities.
+- **Business process:** Different business units might have different processes.
+- **Billing:** Separate items at a billing level.
+- **Limit allocation:** Prevent workloads from consuming limits of others.
 
 #### Organize by Applications and Environments
 
-Segment your projects by applications and further divide them by environments. Use VRacks to securely connect resources across these environments.
+Segment your projects by applications and further divide them by environments. Use VRacks to securely connect resources across these environments. For example:
+- **Development:** Isolated for testing and development work.
+- **Staging:** For pre-production testing and validation.
+- **Production:** Live environment for end-users.
 
 #### Implement Network Segmentation
 
@@ -78,5 +88,3 @@ Keystone v3 introduces true multi-tenancy with domains. Each domain has its own 
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
-
-For detailed information and community support, refer to our [best practices guide](https://docs.ovh.com/gb/en/public-cloud/) and join our community 
