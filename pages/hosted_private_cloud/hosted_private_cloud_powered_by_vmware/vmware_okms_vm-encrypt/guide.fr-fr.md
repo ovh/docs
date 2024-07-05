@@ -1,12 +1,6 @@
 ---
-title:'OKMS au sein de Hosted Private Cloud VMware on OVHcloud'
-      'Chiffrement de VM avec OKMS dans VMware on OVHcloud'
-      'Commande et activation de OKMS pour VMware on OVHcloud'
-excerpt:'Découvrez comment mettre en place le service de gestion de clé OVHcloud (OKMS) au sein de Hosted Private Cloud VMware on OVHcloud pour sécuriser efficacement vos données sensibles'
-        'Découvrez comment activer le chiffrement de données dans votre environnement VMware on OVHcloud grâce au KMS managé OVHcloud (OKMS)'
-        'Protégez votre confidentialité et assurez la sécurité de vos informations sensibles VMware on OVHcloud avec la solution avancée de gestion de clé KMS OVHcloud'
-        'Activation du chiffrement avec la solution KMS OVHcloud (OKMS) pour sécurisez votre Hosted Private Cloud VMware on OVHcloud'
-        'Confidentialité renforcée avec le KMS OVHcloud (OKMS) au sein de Hosted Private Cloud VMware on OVHcloud'
+title:'Chiffrement de VM dans vSphere avec le KMS OVHcloud'
+excerpt:'Protégez votre confidentialité et activer le chiffrement de vos machines virtuelles Hosted Private Cloud VMware on OVHcloud avec la solution Okms'
 updated: 2023-07-05
 ---
 <style>
