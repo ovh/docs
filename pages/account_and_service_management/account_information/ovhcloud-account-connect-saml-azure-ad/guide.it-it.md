@@ -1,7 +1,7 @@
 ---
 title: Attiva le connessioni SSO di Entra ID con il tuo account OVHcloud
 excerpt: "Scopri come associare il tuo Entra ID (precedentemente Azure Active Directory) al tuo account OVHcloud utilizzando SAML 2.0"
-updated: 2024-06-25
+updated: 2024-07-05
 ---
 
 > [!primary]
@@ -298,4 +298,3 @@ Se la tua email non compare sotto `Connected via SSO`, significa che non hai con
 [Come utilizzare le politiche IAM dallo Spazio Cliente](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
-

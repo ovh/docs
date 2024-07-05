@@ -1,7 +1,7 @@
 ---
 title: SSO-Verbindungen zu Ihrem OVHcloud Account über Entra ID aktivieren
 excerpt: "Erfahren Sie hier, wie Sie Entra ID (vormals Azure Active Directory) über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
-updated: 2024-06-25
+updated: 2024-07-05
 ---
 
 > [!primary]
@@ -197,13 +197,13 @@ Kopieren und speichern Sie den Wert des **Claim name** (etwa in einem Texteditor
 
 Kopieren Sie aus `SAML certificates`{.action} den Wert im Feld `App Federation Metadata Url`{.action}.
 
-Verwenden Sie diesen Link zum Herunterladen der Metadaten-Datei der *Application* von Entra ID, um sie später im OVHcloud Kunden-Account zu verwenden.
+Verwenden Sie diesen Link zum Herunterladen der Metadaten-Datei der Entra ID *Application*, um sie später im OVHcloud Kunden-Account zu verwenden.
 
 ![Entra ID SSO Schritt 8](images/azure_ad_sso_8.png){.thumbnail}
 
 ### Das Vertrauen zum OVHcloud Account und die Verbindung konfigurieren
 
-Das Hinzufügen Ihres Google Workspace als vertrauenswürdiger Identity Provider erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), in dem Sie die Metadaten des Identity Providers hinterlegen können.
+Das Hinzufügen Ihrer Entra ID *Application* als vertrauenswürdiger Identity Provider erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), in dem Sie die Metadaten des Identity Providers hinterlegen können.
 
 #### OVHcloud Vertrauen aufbauen
 
@@ -221,13 +221,13 @@ Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der 
 
 Klicken Sie auf den Button `SSO-Verbindung`{.action}.
 
-![OVHcloud verbindet SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
+![OVHcloud SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Geben Sie im Feld **Group Attribute Name** den Wert des **Claim name** der Azure *Application*-Gruppe ein. Klicken Sie auf `Bestätigen`{.action}.
+Geben Sie im Feld **Nutzerattributname** den **UPN** der Entra ID *Application* ein und im Feld **Name des Gruppenattributs** den zuvor gespeicherten Wert des *Claim name* für **groups**.
 
-Geben Sie die XML-Metadaten der Azure *Application* aus der zuvor gespeicherten Datei ein.
+Geben Sie die XML-Metadaten der Entra ID *Application* aus der zuvor gespeicherten Datei ein.
 
-Sie können die lokalen Benutzer beibehalten, indem Sie das Kontrollkästchen `Aktive OVHcloud User beibehalten` aktivieren.
+Sie können die lokalen Benutzer beibehalten, indem Sie die Option `Aktive OVHcloud User beibehalten` aktivieren.
 
 Klicken Sie auf den Button `Bestätigen`{.action}.
 
