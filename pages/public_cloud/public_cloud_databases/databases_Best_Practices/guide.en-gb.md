@@ -78,3 +78,5 @@ Keystone v3 introduces true multi-tenancy with domains. Each domain has its own 
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
+
+For detailed information and community support, refer to our [best practices guide](https://docs.ovh.com/gb/en/public-cloud/) and join our community discussions on [Discord](https://discord.com/channels/850031577277792286/1222599406163853484).
