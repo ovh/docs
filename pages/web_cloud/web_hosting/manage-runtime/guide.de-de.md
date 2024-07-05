@@ -33,7 +33,7 @@ Um auf die Runtime Engines Ihres Cloud Web Hostings zuzugreifen, loggen Sie sich
 
 Es wird eine Tabelle angezeigt, die alle aktuell zu Ihrem Cloud Web Hosting hinzugefügten Runtime Engines enthält. Bitte beachten Sie, dass bei der Installation Ihres Hostings automatisch eine Engine erstellt wird.
 
-![cloudweb](images/tab-phpfpm7-4.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-phpfpm7-4.png){.thumbnail}
 
 ### Schritt 2: Runtime Engines verwalten
 
@@ -84,7 +84,7 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden).
 
-![cloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ##### **Ruby**
 
@@ -98,7 +98,7 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden).
 
-![cloudweb](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
 ##### **Python**
 
@@ -112,7 +112,7 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden).
 
-![cloudweb](images/modify-a-runtime-software-application-python3.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Schritt 3: Runtime Engine mit einer Multisite verbinden
 
@@ -126,7 +126,7 @@ Wenn Sie über die für Ihr Projekt notwendigen Runtime Engines verfügen, verge
 
 Überprüfen Sie in der Tabelle, dass für die betreffenden Domains in der Spalte `Runtime Engine` die richtige Engine angezeigt wird. Die angezeigten Namen entsprechen den „angepassten Namen“, die Sie zuvor festgelegt haben.
 
-![cloudweb](images/runtime-software-applications.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/runtime-software-applications.png){.thumbnail}
 
 Wenn Sie eine mit einer Multisite verbundene Engine ändern möchten, klicken Sie rechts neben der betreffenden Domain auf das Zahnradsymbol und dann auf `Ändern`{.action}.
 
@@ -134,7 +134,7 @@ Wählen Sie dann im angezeigten Fenster neben `Runtime Engine` die richtige Engi
 
 Wenn Sie die Engine ausgewählt haben, folgen Sie den angezeigten Schritten, bis der Vorgang abgeschlossen ist.
 
-![cloudweb](images/modify-a-domain-step-1.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/modify-a-domain-step-1.png){.thumbnail}
 
 ## Weiterführende Informationen
 

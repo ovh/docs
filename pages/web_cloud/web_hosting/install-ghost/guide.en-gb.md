@@ -33,7 +33,7 @@ To access your Cloud Web hosting plan’s runtime environments, log in to the [O
 
 The table that appears will list the runtime environments currently added. Check that Node.js has been enabled as the runtime environment. If it has been enabled, proceed to step 2: [Link Node.js to a multisite](./#step-2-link-nodejs-to-a-multisite).
 
-![ghostcloudweb](images/tab-nodejs8.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-nodejs8.png){.thumbnail}
 
 If it has not been enabled, add it as a new runtime environment (if possible with your solution) or modify the existing runtime environment.
 
@@ -52,13 +52,13 @@ In the window that pops up, enter the information requested with the values show
 
 Once you have entered this information, click `Confirm`{.action}. If you would like further information on managing runtime environments, please refer to our guide on [Managing Cloud Web runtime software applications](/pages/web_cloud/web_hosting/manage-runtime){.external}.
 
-![ghostcloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ### Step 2: Link Node.js to a multisite.
 
 Now that Node.js has been enabled as a runtime environment, you will need to link it to one of your multisites. To do this, go to the `Multisite`{.action} tab. The table that opens will contain all of the domain names that have been added to your web hosting plan. 
 
-![ghostcloudweb](images/tab-nodejs8-full-disabled.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/tab-nodejs8-full-disabled-2.png){.thumbnail}
 
 Two columns should stand out in the table below. Check that the Node.js runtime environment is correctly linked to the domain names concerned, and that the root file is correct. Use the information below if you need to. If it is correctly linked, go to step 3 - [Create a MySQL database](./#step-3-create-a-mysql-database).
 
@@ -82,7 +82,7 @@ Enter the information requested in the pop-up window, and adapt the information 
 
 From the additional options, select the ones you would like to enable. Once you have entered the information, click `Next`{.action}, then finish the operation. This addition may take up to an hour. However, modifying the DNS configuration may require up to 24 hours to take full effect. If you would would like further information on managing multisites, read our guide to [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
 
-![ghostcloudweb](images/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
 
 ### Step 3: Create a MySQL database.
 
@@ -92,13 +92,13 @@ Next, go to the 'Databases' tab. If this does not appear on the list, click on t
 
 - **If you have already created a database**, click on the `Actions`{.action} button, then `Create a database`{.action}.
 
-![ghostcloudweb](images/tab.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/databases/tab.png){.thumbnail}
 
 In the window that opens, Only `MySQL`, in version `5.6` is available.. Next, select “Stored in your Cloud Web instance”, and click `Next`{.action}.
 
 Then enter a custom username and password for the user. Once you have done so, click `Next`{.action}, then click `Confirm`{.action}. Wait a few moments for the process to finish.
 
-![ghostcloudweb](images/create-a-database-step-2.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/databases/create-a-database-step-2.png){.thumbnail}
 
 ### Step 4: Create environment variables.
 
@@ -108,7 +108,7 @@ For this tutorial, we will create environment variables and enter the informatio
 
 To do this, go to the `Environment variables`{.action} tab. The table will list the variables that have already been created. To add a new one, click on the `Actions`{.action} button below the table, then `Add an environment variable`{.action}.
 
-![ghostcloudweb](images/add-an-environment-variable.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 Enter the information requested in the pop-up window, adapting the information shown below to your own situation, then click `Confirm`{.action} to create the variable. Here is what we created for this tutorial:
 
@@ -133,7 +133,7 @@ First of all, ensure that you have the information you need to connect. To do th
 
 If you have forgotten your SSH user password, click on the `...`{.action} button to the right of the user concerned in the table, then `Change password`{.action}.
 
-![ghostcloudweb](images/change-password.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/change-password.png){.thumbnail}
 
 Now, to connect via SSH, you need to use a terminal. This tool is installed by default on macOS or Linux. With a Windows environment, you will need to install a program like PuTTY, or add the ‘OpenSSH’ feature. Since this aspect will vary depending on which operating system you are using, we cannot provide any further details in this tutorial.
 
@@ -247,7 +247,7 @@ To restart the Node.js daemon, go back to the [OVHcloud Control Panel](/links/ma
 
 Once you have done this, your application will be accessible via the domain name you have selected in your multisite’s configuration.
 
-![ghostcloudweb](images/tab-nodejs8.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-nodejs8.png){.thumbnail}
 
 ### Step 8: Use HTTPS.
 

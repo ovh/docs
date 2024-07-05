@@ -101,7 +101,7 @@ How to access statistics and logs:
 2. Click on the `Statistics and logs`{.action} tab.
 3. Click the `View statistics`{.action} button to access the website visit statistics or `View logs`{.action} to view the logs available for your web hosting plan.
 
-![logs](images/tab.png){.thumbnail}
+![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 How to access charts:
 
@@ -109,7 +109,7 @@ How to access charts:
 2. Click on the `Statistics and logs`{.action} tab. Scroll down to the bottom of the page, where you will find the graph of your hosting usage.
 3. Select the **type** of information as well as the **period** of the data displayed.
 
-![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
+![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 What are the different types of information that can be displayed?
 

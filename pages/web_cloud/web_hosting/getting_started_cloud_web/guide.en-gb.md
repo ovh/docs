@@ -60,7 +60,7 @@ For example, this way you can leave out the .env file in the PHP Laravel framewo
 
 To add an environment variable, stay in the section for the Cloud Web hosting plan concerned, and click on the `Environment variables`{.action} tab. A table will display the environment variables created for your solution. To add a new one, click on the `Actions`{.action} button, then `Add an environment variable`{.action}. Follow the appropriate instructions for the variable you would like to create:
 
-![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-environment-variable.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 If you do not use a development framework that includes the environment variables, or would simply like to check that your variables are working properly, you can create a script to do this. Below are examples of two scripts that can help you with this process, although they are no substitute for the assistance of a webmaster:
 

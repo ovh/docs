@@ -102,7 +102,7 @@ Dostęp do statystyk i logów:
 2. Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
 3. Kliknij przycisk `Wyświetl statystyki`{.action} wyświetlone, aby uzyskać dostęp do statystyk odwiedzin strony www lub `Sprawdź logi`{.action}, aby sprawdzić logi dostępne dla Twojego hostingu www.
 
-![logi](images/tab.png){.thumbnail}
+![logi](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Dostęp do wykresów:
 
@@ -110,7 +110,7 @@ Dostęp do wykresów:
 2. na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}. Przewiń w dół strony, na której znajduje się grafika związana z korzystaniem z hostingu.
 3. Wybierz **typ** informacji oraz **okres** wyświetlanych danych.
 
-![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
+![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 Jakie typy informacji można wyświetlić?
 

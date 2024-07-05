@@ -26,7 +26,7 @@ You can find this information in your control panel. Go to the FTP section or fo
 - Check SSH.
 - Click Open.
 
-![Putty](images/configuration.png){.thumbnail}
+![Putty](/pages/assets/screens/other/web-tools/putty/configuration.png){.thumbnail}
 
 ## Log on
 A command prompt will appear

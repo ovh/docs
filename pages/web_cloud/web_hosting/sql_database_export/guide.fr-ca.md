@@ -54,25 +54,25 @@ Le tableau qui s'affiche contient toutes les bases de données créées dans le 
 
 Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données à sauvegarder, puis sur `Créer une sauvegarde`{.action}.
 
-![databasedump](images/create-a-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
 
 Sur la fenêtre qui apparaît, sélectionnez la date souhaitée pour la sauvegarde, puis cliquez sur le bouton `Suivant`{.action}. Assurez-vous que les informations dans le récapitulatif sont correctes, puis cliquez sur `Valider`{.action} pour initier la manipulation.
 
 Patientez le temps que la sauvegarde se réalise. Dès que celle-ci est disponible, vous pourrez la récupérer.
 
-![databasedump](images/create-a-database-backup-step-1.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 
 #### Étape 2 : récupérer une sauvegarde de la base de données
 
 Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données à sauvegarder, puis sur `Restaurer une sauvegarde`{.action}.
 
-![databasedump](images/restore-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 Le tableau qui s'affiche contient toutes les sauvegardes disponibles de la base de données sélectionnée. Vous pourrez y visionner la date précise à laquelle les sauvegardes ont été réalisées ainsi que celle à laquelle ces dernières seront supprimées de l'outil d'OVHcloud.
 
 Pour télécharger une sauvegarde, cliquez sur le bouton `...`{.action} à droite de celle que vous souhaitez récupérer, puis sur `Télécharger la sauvegarde`{.action}. Une fenêtre vous invitant à l'enregistrer sur votre machine apparaît. Acceptez, puis patienter le temps que la sauvegarde soit téléchargée.
 
-![databasedump](images/download-the-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
 
 ### Récupérer une sauvegarde depuis l'interface web phpMyAdmin
 
@@ -80,7 +80,7 @@ Pour réaliser la manipulation, connectez-vous à *phpMyAdmin*. Pour connaître 
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Cliquez dans ce dernier sur le bouton `...`{.action} à droite de la base de données concernée puis sur `Accéder à phpMyAdmin`{.action}.
 
-![databasedump](images/go-to-phpmyadmin.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Une fois sur l'interface de connexion à *phpMyAdmin*, renseignez les informations de la base de données, puis connectez-vous. Une fois connecté, rendez-vous à présent sur l'onglet `Exporter`{.action} où deux méthodes d'exportation sont proposées :
 

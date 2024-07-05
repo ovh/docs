@@ -64,7 +64,7 @@ Dadurch ist es zum Beispiel möglich, keine .env-Datei im PHP-Framework Laravel 
 
 Um eine Umgebungsvariable hinzuzufügen, gehen Sie zum betreffenden Cloud Web Hosting und klicken Sie anschließend auf `Umgebungsvariablen`{.action}. Es wird eine Tabelle mit den für Ihr Angebot erstellten Umgebungsvariablen angezeigt. Um eine neue Variable hinzuzufügen, klicken Sie auf den Button `Aktionen`{.action} und anschließend auf `Umgebungsvariable hinzufügen`{.action}. Folgen Sie nun den Anweisungen für die Variable, die Sie erstellen möchten.
 
-![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-environment-variable.png){.thumbnail}
+![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 Wenn Sie kein Entwicklungsframework mit Umgebungsvariablen verwenden oder überprüfen möchten, ob Ihre Umgebungsvariablen funktionieren, können Sie hierfür ein Skript erstellen. Im Folgenden finden Sie zwei Beispiele, um Ihnen bei diesem Vorgang zu helfen. Sie ersetzen allerdings nicht die Hilfe eines Webmasters.
 

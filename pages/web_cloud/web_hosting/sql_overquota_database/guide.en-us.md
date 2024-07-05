@@ -58,13 +58,13 @@ Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.
 
 A table listing your databases will appear at the bottom of the screen.
 
-![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
+![phpMyAdmin Access](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Note that `User name` and `Server address` of your database are listed in the table.
 
 In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Enter the login information for your database, then click `Login`{.action}.
 
@@ -79,11 +79,11 @@ Enter the login information for your database, then click `Login`{.action}.
 
 Once connected, the following page is displayed:
 
-![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
+![phpMyAdmin Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png){.thumbnail}
 
 Click on `"Your database name"`{.action} in the left-hand column, then on `Size`{.action} in the top right-hand corner of the table that appears:
 
-![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
+![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
 The largest tables appear at the top of the sorted list. Identify them, then go to **Step 2**.
 
@@ -158,7 +158,7 @@ In the case of an overquota or large table, **three commands** are available.
 
 You can perform these requests from the **phpMyAdmin** interface, via the `SQL`{.action} tab:
 
-![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
+![phpMyAdmin SQL request](/pages/assets/screens/other/web-tools/phpmyadmin/pma-sql-menu.png){.thumbnail}
 
 - The **DELETE** command
 

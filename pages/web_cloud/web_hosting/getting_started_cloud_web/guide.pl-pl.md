@@ -64,7 +64,7 @@ Dzięki temu nie jest na przykład konieczne określanie pliku „.env” we fra
 
 Aby dodać zmienną środowiskową, zaznacz odpowiedni hosting Cloud Web i kliknij zakładkę `Zmienne środowiskowe`{.action}. Zmienne środowiskowe utworzone w ramach Twojej oferty wyświetlają się w tabeli. Aby dodać nową zmienną, kliknij przycisk `Operacje`{.action}, a następnie `Dodaj zmienną środowiskową`{.action}. Następnie postępuj zgodnie ze wskazówkami w zależności od zmiennej, którą chcesz utworzyć.
 
-![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-environment-variable.png){.thumbnail}
+![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 Jeśli nie używasz środowiska deweloperskiego zawierającej zmienne środowiskowe lub jeśli chcesz sprawdzić, czy zmienne działają poprawnie, możesz utworzyć skrypt, który przeprowadzi weryfikację. Poniżej przykład skryptu, który może być pomocny w przeprowadzanej przez Ciebie operacji, nie zastąpi on jednak pomocy technicznej webmastera.
 

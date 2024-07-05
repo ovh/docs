@@ -62,7 +62,7 @@ Esto permite, por ejemplo, no definir un archivo «.env» en el framework PHP La
 
 Para añadir una variable de entorno, una vez seleccionado el alojamiento Cloud Web en el área de cliente de OVHcloud, abra la pestaña `Variables de entorno`{.action}. Se mostrará una tabla que contiene las variables de entorno creadas en su alojamiento. Para añadir una nueva, haga clic en el botón `Acciones`{.action} y seleccione `Añadir una variable de entorno`{.action}. Siga las indicaciones en función de la variable que desee crear.
 
-![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-environment-variable.png){.thumbnail}
+![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 Si no utiliza ningún framework de desarrollo que incluya las variables de entorno, o si simplemente quiere comprobar que las variables funcionen correctamente, puede crear un script que realice dicha comprobación. A continuación ofrecemos dos ejemplos que le ayudarán en esta tarea (sin que estos sustituyan la ayuda de un webmaster).
 

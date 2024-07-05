@@ -24,7 +24,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud
 
 The table in this section contains all of the databases created with your web hosting plan.
 
-![databasecreation](images/tab.png){.thumbnail}
+![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Databases in the table can have several different types:
 
@@ -48,7 +48,7 @@ There are two ways to create a new database:
 
 In the window that opens, select the following information:
 
-![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
+![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
 
 |Information|Description|  
 |---|---|
@@ -60,7 +60,7 @@ Click on `Next`{.action}.
 
 A new window will appear:
 
-![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
+![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
 
 |Information|Description|
 |---|---|
@@ -88,7 +88,7 @@ A new window will appear:
 
 Fill in the required information and click `Next`{.action}.
 
-![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
+![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
 
 Verify that all information displayed in the summary is correct. If this is the case, click `Confirm`{.action} to launch the creation of your database.
 
@@ -146,7 +146,7 @@ OVHcloud provides an online database management tool, phpMyAdmin. To find the ac
 
 In the table on this page, click on the `...`{.action} button to the right of the database concerned, then click on `Go to phpMyAdmin`{.action} in the dropdown menu.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Enter the information for accessing your database, then click `Log in`{.action}.
 

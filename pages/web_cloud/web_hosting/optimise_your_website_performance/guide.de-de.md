@@ -92,7 +92,7 @@ Zugriff auf Statistiken und Logs:
 2. Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
 3. Klicken Sie anschließend auf den Button `Die Statistiken anzeigen`{.action} angezeigt, um auf die Besucherstatistiken der Website zuzugreifen, oder auf `Die Logs einsehen`{.action}, um die für Ihr Webhosting verfügbaren Logs anzuzeigen.
 
-![logs](images/tab.png){.thumbnail}
+![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Zugriff auf Nutzungsgraphen:
 
@@ -100,7 +100,7 @@ Zugriff auf Nutzungsgraphen:
 2. Klicken Sie auf den Tab `Statistiken und Logs`{.action}. Scrollen Sie bis zum Ende der Seite, um die Graphen zur Webhosting-Nutzung einzusehen.
 3. Wählen Sie den **Informationstyp** sowie den **Zeitraum** der angezeigten Daten aus.
 
-![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
+![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 Welche verschiedenen Arten von Informationen können angezeigt werden?
 

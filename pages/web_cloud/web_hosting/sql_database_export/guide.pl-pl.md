@@ -58,25 +58,25 @@ Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych 
 
 W zakładce `Bazy danych`{.action} kliknij przycisk `...`{.action} po prawej stronie bazy danych, którą chcesz skopiować, a następnie kliknij `Utwórz kopię zapasową`{.action}.
 
-![databasedump](images/create-a-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
 
 W oknie, które się pojawi wybierz datę utworzenia kopii zapasowej, następnie kliknij przycisk `Dalej`{.action}. Upewnij się, że informacje w podsumowaniu są poprawne, następnie kliknij `Zatwierdź`{.action}, aby rozpocząć operację.
 
 Odczekaj chwilę, aż kopia zapasowa zostanie utworzona. Kiedy kopia będzie już dostępna, będziesz mógł ją pobrać.
 
-![databasedump](images/create-a-database-backup-step-1.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 
 ### Etap 2: przywracanie kopii bazy danych
 
 W zakładce `Bazy danych`{.action} kliknij przycisk`...`{.action} po prawej stronie bazy danych, którą chcesz skopiować, a następnie kliknij `Przywróć kopię zapasową`{.action}.
 
-![databasedump](images/restore-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 Tabela, która się wyświetla zawiera wszystkie dostępne kopie zapasowe bazy danych. Możesz wyświetlić dokładną datę utworzenia kopii zapasowych, a także datę, kiedy zostaną one usunięte z narzędzia OVHcloud.
 
 Aby pobrać kopię zapasową, kliknij przycisk `...`{.action} po prawej stronie kopii, którą chcesz pobrać, a następnie kliknij `Pobierz kopię zapasową`{.action}. Pojawi się okno z prośbą, abyś zapisał ją na Twoim komputerze. Zaakceptuj, po czym odczekaj, aż kopia zapasowa zostanie pobrana.
 
-![databasedump](images/download-the-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
 
 ### Pobierz kopię zapasową, używając interfejsu phpMyAdmin
 
@@ -84,7 +84,7 @@ Aby przeprowadzić operację, zaloguj się do *phpMyAdmin*. Aby uzyskać link do
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij przycisk`...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie `Dostęp do phpMyAdmin`{.action}.
 
-![databasedump](images/go-to-phpmyadmin.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Po zalogowaniu się do *phpMyAdmin* wprowadź informacje dotyczące bazy danych, następnie zaloguj się. Po zalogowaniu przejdź do zakładki `Eksportuj`{.action}, gdzie dostępne są dwie metody eksportu:
 
