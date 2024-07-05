@@ -95,7 +95,7 @@ The following information is required:
     "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
     "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
-  "name": "access",
+  "name": "John Smith",
   "validity": 30
 }
 ```
@@ -105,8 +105,8 @@ The API then returns the certificate creation status:
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
     "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
     "urn:v1:eu:identity:group:xx1111-ovh/my_group"
@@ -138,8 +138,8 @@ The API returns the certificate in PEM:
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
     "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
     "urn:v1:eu:identity:group:xx1111-ovh/my_group"
@@ -183,7 +183,7 @@ The following information is required:
     "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
     "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
-  "name": "access",
+  "name": "John Smith",
   "validity": 30
 }
 ```
@@ -193,8 +193,8 @@ The API then returns the certificate creation status:
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
     "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
     "urn:v1:eu:identity:group:xx1111-ovh/my_group"
@@ -218,8 +218,8 @@ The API returns the certificate in PEM:
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
     "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
     "urn:v1:eu:identity:group:xx1111-ovh/my_group"
