@@ -1,12 +1,8 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2024-06-21
+updated: 2024-07-05
 ---
-
-> [!warning]
-> Usage of Asynchronous Replication across buckets is currently in Beta phase.
-> This guide may be incomplete and will be extended during the beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : https://discord.gg/ovhcloud. Ask questions, provide feedback and interact directly with the team that builds our Object Storage services.
 
 ## Introduction
 

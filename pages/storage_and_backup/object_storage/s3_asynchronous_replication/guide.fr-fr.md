@@ -1,12 +1,8 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2024-06-21
+updated: 2024-07-05
 ---
-
-> [!warning]
-> La fonctionnalité de réplication asynchrone entre buckets est actuellement en phase bêta.
-> Ce guide peut donc être incomplet et sera mis à jour lors de la bêta. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : https://discord.gg/ovhcloud. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Object Storage.
 
 ## Introduction
 
@@ -369,7 +365,7 @@ Le bucket source est le bucket dont les objets sont automatiquement répliqués 
 $ aws s3 mb s3://<bucket_name>
 ```
 
-**_Exemple:_** Création d'un bucket source et d'un bucket destinataire.
+**_Exemple :_** Création d'un bucket source et d'un bucket destinataire.
 
 ```bash
 $ aws s3 mb s3://my-source-bucket
@@ -383,7 +379,7 @@ $ aws s3api put-bucket-versioning --bucket <bucket_name> --versioning-configurat
 
 ```
 
-**_Example:_** Activation du versioning dans les buckets source et destinataire précédemment créés
+**_Exemple :_** Activation du versioning dans les buckets source et destinataire précédemment créés
 
 ```bash
 $ aws s3api put-bucket-versioning --bucket my-source-bucket --versioning-configuration Status=Enabled
@@ -398,7 +394,7 @@ $ aws s3api put-bucket-versioning --bucket my-destination-bucket --versioning-co
 $ aws s3api put-bucket-replication --bucket <source> --replication-configuration file://<conf.json>
 ```
 
-**_Exemple:_** : Répliquer tous les objets avec le préfixe « docs » ayant un tag « importance » avec la valeur « high » vers `my-destination-bucket` et répliquer les marqueurs de suppression, c'est-à-dire que les objets marqués comme supprimés dans la source seront marqués comme supprimés dans la destination.
+**_Exemple :_** : Répliquer tous les objets avec le préfixe « docs » ayant un tag « importance » avec la valeur « high » vers `my-destination-bucket` et répliquer les marqueurs de suppression, c'est-à-dire que les objets marqués comme supprimés dans la source seront marqués comme supprimés dans la destination.
 
 ```bash
 {
