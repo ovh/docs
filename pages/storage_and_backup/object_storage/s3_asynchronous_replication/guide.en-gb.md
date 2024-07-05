@@ -14,7 +14,7 @@ Object replication is a powerful feature that facilitates the automatic and asyn
 
 Destination buckets can reside within a single region or be dispersed across multiple regions, tailored to your specific requirements. This flexibility allows for strategic data placement and management across global infrastructure networks.
 
-## Objective
+## Objectives
 
 This guide aims to equip you with the knowledge and skills to:
 
@@ -81,11 +81,11 @@ At its core, the OVHcloud Object Storage S3 Asynchronous Replication is designed
 
 ### What is replicated and what is not
 
-The following table provides the default behavior of the OVHcloud Object Storage Asynchronous Replication feature:
+The following table provides the **default** behavior of the OVHcloud Object Storage Asynchronous Replication feature:
 
 | What is replicated                                           | What is not replicated                                       |
 |--------------------------------------------------------------|--------------------------------------------------------------|
-| Objects created *after* the upload of the replication configuration | Delete marker i.e. objects deleted in the source bucket are not automatically deleted in the destination bucket |
+| Objects created *after* the upload of the replication configuration | Delete marker i.e. objects deleted in the source bucket are not automatically deleted by default in the destination bucket |
 | Unencrypted objects                                          | Object replicas i.e. objects that are the result of a previous replication operation |
 | | Objects that have already been replicated to a previous destination |
 | Object metadata from the source objects to the replicas      | Objects that are stored in the Cold Archive temporary storage |
@@ -274,13 +274,13 @@ This configuration will replicate all objects (indicated by the empty `Filter` f
       "Destination": {
         "Bucket": "arn:aws:s3:::destination-bucket"
       },
-      "DeleteMarkerReplication": { "Status": "Disabled" },
+      "DeleteMarkerReplication": { "Status": "Enabled" },
     }
   ]
 }
 ```
 
-This configuration will replicate all objects that have the prefix "backup" and the tag "important" set to "true" to the bucket `destination-bucket`. Additionally, we indicate that deletion operations in the source bucket should also replicated.
+This configuration will replicate all objects that have the prefix "backup" and the tag "important" set to "true" to the bucket `destination-bucket`. Additionally, we indicate that deletion operations in the source bucket should be also replicated.
 
 #### Replicating source to multiple regions
 
@@ -363,36 +363,42 @@ Suppose the source bucket, `region1-destination-bucket` and `region2-destination
 
 ### Using the CLI
 
-#### Create source bucket
+#### Create source and destination buckets
 
-The source bucket is the bucket whose objects are automatically replicated.
+The source bucket is the bucket whose objects are automatically replicated and the destination bucket is the bucket which will contain your object replicas.
 
 ```bash
 $ aws s3 mb s3://<bucket_name>
-aws --profile default s3 mb s3://<bucket_name>
+
 ```
 
-**_Example:_** Creation of a source bucket in the SBG region in the "Standard" storage class.
+**_Example:_** Creation of a source bucket and a destination bucket
 
 ```bash
 $ aws s3 mb s3://my-source-bucket
-aws --endpoint-url https://s3.sbg.io.cloud.ovh.net --profile default s3 mb s3://my-source-bucket
+$ aws s3 mb s3://my-destination-bucket
 ```
 
 #### Activate versioning in source and destination bucket
 
 ```bash
-$ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
-$ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-source-bucket --versioning-configuration Status=Enabled
-
+$ aws s3api put-bucket-versioning --bucket <bucket_name> --versioning-configuration Status=Enabled
 ```
+
+**_Example:_** Activation of versioning in previously created source and destination buckets
+
+```bash
+$ aws s3api put-bucket-versioning --bucket my-source-bucket --versioning-configuration Status=Enabled
+$ aws s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
+```
+
 
 #### Apply replication configuration
 
 Using the AWS CLI, replication configuration is applied on the source bucket.
 
 ```bash
-$ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration file://<<conf.json>
+$ aws s3api put-bucket-replication --bucket <source> --replication-configuration file://<conf.json>
 ```
 
 **_Example:_**: Replicate all objects with prefix "docs" having a tag "importance" with value "high" to `my-destination-bucket` and replicate the delete markers i.e objects marked as deleted in source will be marked as deleted in destination.
@@ -407,7 +413,13 @@ $ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put
       "Priority": 1,
       "Filter": {
         "And": {
-          "Prefix": "docs"
+          "Prefix": "docs",
+          "Tags": [
+            {
+              "Key": "importance",
+              "Value": "high"
+            }
+          ]
         }
       },
       "Destination": {
