@@ -62,13 +62,13 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.a
 
 Visualizzi una tabella con tutti i database disponibili nella parte inferiore dello schermo.
 
-![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
+![phpMyAdmin Access](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Ti ricordiamo che **per un database saturo**, il suo `Nome utente` e il suo `Indirizzo del server` sono presenti nella tabella che elenca i tuoi database. 
 
 Sempre nella scheda `Database`{.action}, clicca sul pulsante `...`{.action} a destra del database che è pieno e poi su `Accedi a phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Inserisci le informazioni di accesso al database e clicca su `Connetti`{.action}.
 
@@ -83,11 +83,11 @@ Inserisci le informazioni di accesso al database e clicca su `Connetti`{.action}
 
 Una volta connesso, visualizzi questa pagina:
 
-![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
+![phpMyAdmin Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png){.thumbnail}
 
 Nella colonna di sinistra clicca su `"Nome del database"`{.action} e poi su `Taille`{.action} in alto a destra.
 
-![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
+![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
 Le tavole più voluminose appaiono in cima alla tabella. Identificalo e passa allo **step 2**.
 
@@ -162,7 +162,7 @@ In caso di sovrattassa o di tabella voluminosa, sono disponibili **tre comandi**
 
 Queste richieste possono essere effettuate direttamente dall'interfaccia **phpMyAdmin**, tramite la scheda `SQL`{.action}:
 
-![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
+![phpMyAdmin SQL request](/pages/assets/screens/other/web-tools/phpmyadmin/pma-sql-menu.png){.thumbnail}
 
 - Ordine **DELETE**: 
 
