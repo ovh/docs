@@ -30,7 +30,7 @@ Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connecte
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d'exécution Node.js est bien activé. Si tel est le cas, poursuivez vers l'étape 2 « [Associer Node.js à un multisite](./#etape-2-associer-nodejs-a-un-multisite) ».
 
-![etherpadcloudweb](images/tab-nodejs8.png){.thumbnail}
+![etherpadcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-nodejs8.png){.thumbnail}
 
 Si ce n'est pas le cas, ajoutez-en un nouveau, si votre offre vous le permet, ou modifiez le moteur d'exécution existant.
 
@@ -49,7 +49,7 @@ Dans la fenêtre qui s'affiche, complétez les informations demandées avec les 
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Si vous souhaitez obtenir plus d'informations sur la gestion des moteurs d'exécution, reportez-vous à notre guide « [Gérer les moteurs d’exécution de Cloud Web](/pages/web_cloud/web_hosting/manage-runtime){.external} ».
 
-![etherpadcloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
+![etherpadcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ### Étape 2 : associer Node.js à un multisite
 
@@ -62,7 +62,7 @@ Maintenant que Node.js est activé en tant que moteur d'exécution, vous devez l
 
 Dans le tableau, vérifiez que le moteur d'exécution Node.js est bien lié aux domaines concernés et que le dossier racine est correct. Si tel est le cas, poursuivez vers l'étape 3 « [Se connecter à votre Cloud Web via SSH](./#etape-3-se-connecter-a-cotre-cloud-web-via-ssh) ».
 
-![etherpadcloudweb](images/tab-nodejs8-full-disabled.png){.thumbnail}
+![etherpadcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/tab-nodejs8-full-disabled.png){.thumbnail}
 
 Si ce n'est pas le cas, ajoutez un nouveau multisite ou modifiez celui existant.
 
@@ -79,7 +79,7 @@ Dans la fenêtre qui s'affiche, complétez les informations demandées selon vot
 
 En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu'à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d'informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} ».
 
-![etherpadcloudweb](images/add-a-domain-or-sub-domain-step-2-nodejs.png){.thumbnail}
+![etherpadcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-a-domain-or-sub-domain-step-2-nodejs.png){.thumbnail}
 
 ### Étape 3 : se connecter à votre Cloud Web via SSH
 
@@ -152,7 +152,7 @@ Pour redémarrer le *daemon* Node.js, retournez sur votre [espace client OVHclou
 
 Une fois ceci fait, l'application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
 
-![etherpadcloudweb](images/restart-nodejs8.png){.thumbnail}
+![etherpadcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/restart-nodejs8.png){.thumbnail}
 
 ## Conclusion
 

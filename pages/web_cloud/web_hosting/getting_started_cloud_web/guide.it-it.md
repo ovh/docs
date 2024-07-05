@@ -64,7 +64,7 @@ Per esempio, questo consente di non definire file “.env” nel framework PHP L
 
 Per aggiungere una variabile d’ambiente, clicca quindi sulla scheda `Variabili d'ambiente`{.action}. Apparirà una tabella con le variabili d’ambiente create sulla tua soluzione. Per aggiungerne una nuova, clicca sul pulsante `Azioni`{.action}, poi su `Aggiungi una variabile d'ambiente`{.action}. Segui dunque le indicazioni in base alla variabile che vuoi creare.
 
-![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-environment-variable.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 Se non utilizzi framework di sviluppo che includono variabili d’ambiente o se semplicemente vuoi verificare il corretto funzionamento delle tue variabili, puoi creare uno script per effettuare queste funzioni. Di seguito trovi due esempi che possono esserti d’aiuto nel tuo percorso, ma non sostituiscono l’assistenza di un webmaster.
 
