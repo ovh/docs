@@ -199,29 +199,29 @@ Di nuovo, sono possibili due casi:
 
 Accedi alla sezione `Hosting`{.action} dello Spazio Cliente OVHcloud, clicca sulla scheda `Database`{.action} in corrispondenza del tuo schermo:
 
-![database-password-step1](images/tab.png){.thumbnail}
+![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Clicca sui tre puntini in corrispondenza del database del tuo sito e poi su `Modifica la password`{.action}.
 
-![database-password-step2](images/change-password.png){.thumbnail}
+![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 
 Nella nuova finestra, inserisci la nuova password del tuo database (definita allo [Step 3](#step3)), confermala e clicca su `Conferma`{.action}.
 
-![database-password-step3](images/change-password-window.png){.thumbnail}
+![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 #### Caso 2: il database del tuo sito fa parte di un'offerta Web Cloud Databases <a name="case2"></a>
 
 Accedi alla sezione `Database`{.action} del tuo Spazio Cliente e clicca sulla scheda `Utenti e diritti`{.action}:
 
-![userDBpassword-step1](images/wcdb-tab.png){.thumbnail}
+![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
 Per modificare la password del tuo database sul server, clicca sui tre puntini in corrispondenza del `Nome utente`{.action} identificato allo [Step 2](#step2) e seleziona `Modifica la password`{.action}.
 
-![userDBpassword-step2](images/wcdb-change-password.png){.thumbnail}
+![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
 Nella nuova finestra, inserisci la nuova password del tuo database (definita allo [Step 3](#step3)), confermala e clicca su `Conferma`{.action}.
 
-![userDBpassword-step3](images/wcdb-change-password-window.png){.thumbnail}
+![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
 
 ## Per saperne di più <a name="go-further"></a>
 
