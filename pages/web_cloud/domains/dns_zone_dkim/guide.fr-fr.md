@@ -1,7 +1,7 @@
 ---
 title: Améliorer la sécurité des e-mails via un enregistrement DKIM
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-updated: 2024-07-02
+updated: 2024-07-05
 ---
 
 <style>
@@ -451,15 +451,13 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».
 >> - `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM.
->> - `autoEnableDKIM` : le DKIM sera directement activé en cochant cette case. **Ne cochez pas cette case si votre nom de domaine n'est pas enregistré dans le même compte client OVHcloud ou dans un autre bureau d'enregistrement**.
->> - `configureDkim` : l'enregistrement CNAME sera automatiquement ajouté dans votre zone DNS de votre nom de domaine si celui-ci est géré dans le même compte client OVHcloud que votre plateforme Exchange. **Ne cochez pas cette case si votre nom de domaine n'est pas enregistré dans le même espace client OVHcloud ou dans un autre bureau d'enregistrement**.
 >> - `selectorName` : saisissez le nom d'un sélecteur que vous avez relevé à l'étape précédente (exemple: « ovhex123456-selector1 »). <br>
 >>
 >> Cliquez sur `Execute`{.action} pour lancer la création du sélecteur.<br>
->> 
+>>
 >> > [!primary]
 >> >
->> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera nécessaire. **Ne cochez pas la case `autoEnableDKIM`{.action} lorsque vous créez le deuxième sélecteur** pour ne pas créer un conflit avec l'activation du premier sélecteur. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clés DKIM »](#2selectors) lorsque vous souhaiterez basculer sur le deuxième sélecteur.
+>> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera nécessaire. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clés DKIM »](#2selectors) lorsque vous souhaiterez basculer sur le deuxième sélecteur.
 >> <br>
 >>
 >> *Exemple de résultat :*
@@ -472,16 +470,12 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> "todoDate": "2023-05-05T11:32:07+02:00"
 >> ```
 >>
->> > [!primary]
->> >
->> > Si votre nom de domaine est géré dans le même espace client que votre plateforme et que vous avez coché `autoEnableDKIM` et `configureDkim`, passez directement à la section [**Les différents états du DKIM**](#dkim-status) ci-dessous pour suivre l'activation du DKIM.
 >>
 > **3. Récupérer l'enregistrement DNS**
 >> Vous devez configurer manuellement la zone DNS de votre nom de domaine **dans les cas suivants** :
 >>
 >> - votre plateforme Exchange est liée à un nom de domaine qui est géré dans un autre compte client OVHcloud ;<br>
 >> - votre plateforme Exchange est liée à un nom de domaine qui est géré dans un autre bureau d'enregistrement ;<br>
->> - vous avez choisi de ne pas cocher la case `configureDkim` à l'étape précédente.<br>
 >>
 >> Pour configurez votre zone DNS, vous devez récupérer les valeurs de l'enregistrement DNS **pour chaque sélecteur si vous en avez créé deux**. Pour cela, utilisez l'appel API suivant :
 >>
@@ -613,15 +607,13 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » . <br>
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel vous souhaitez activer le DKIM.
->> - `autoEnableDKIM` : le DKIM sera directement activé en cochant cette case. **Ne cochez pas cette case si votre nom de domaine n'est pas enregistré dans le même compte client OVHcloud ou dans un autre bureau d'enregistrement**.
->> - `configureDkim` : l'enregistrement CNAME sera automatiquement ajouté dans votre zone DNS de votre nom de domaine si celui-ci est géré dans le même compte client OVHcloud que votre plateforme E-mail Pro. **Ne cochez pas cette case si votre nom de domaine n'est pas enregistré dans le même espace client OVHcloud ou dans un autre bureau d'enregistrement**.
 >> - `selectorName` : saisissez le nom d'un sélecteur que vous avez relevé à l'étape précédente. (exemple: « ovhemp123456-selector1 ») <br>
 >>
 >> Cliquez sur `Execute`{.action} pour lancer la création du sélecteur.<br>
->> 
+>>
 >> > [!primary]
 >> >
->> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera nécessaire. **Ne cochez pas la case `autoEnableDKIM`{.action} lorsque vous créez le deuxième sélecteur** pour ne pas créer un conflit avec l'activation du premier sélecteur. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clés DKIM »](#2selectors) lorsque vous souhaiterez basculer sur le deuxième sélecteur.
+>> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera nécessaire. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clés DKIM »](#2selectors) lorsque vous souhaiterez basculer sur le deuxième sélecteur.
 >> <br>
 >>
 >> *Exemple de résultat :*
@@ -634,16 +626,11 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> "todoDate": "2023-05-05T11:32:07+02:00"
 >> ```
 >>
->> > [!primary]
->> >
->> > Si votre nom de domaine est géré dans le même espace client que votre plateforme et que vous avez coché `autoEnableDKIM` et `configureDkim`, passez directement à la section [**Les différents états du DKIM**](#dkim-status) ci-dessous pour suivre l'activation du DKIM.
->>
 > **3. Récupérer l'enregistrement DNS**
 >> Vous devez configurer manuellement la zone DNS de votre nom de domaine **dans les cas suivants** :
 >>
 >> - votre plateforme E-mail Pro est liée à un nom de domaine qui est géré dans un autre compte client OVHcloud ;<br>
 >> - votre plateforme E-mail Pro est liée à un nom de domaine qui est géré dans un autre bureau d'enregistrement ;<br>
->> - vous avez choisi de ne pas cocher la case `configureDkim` à l'étape précédente.<br>
 >>
 >> Pour configurer votre zone DNS, vous devez récupérer les valeurs de l'enregistrement DNS **pour chaque sélecteur si vous en avez créé deux**. Pour cela, utilisez l'appel API suivant :
 >>
