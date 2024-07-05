@@ -1,7 +1,7 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2024-04-26
+updated: 2024-07-05
 ---
 
 > [!warning]
@@ -28,12 +28,12 @@ To be able to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/en/pu
 
 | Kubernetes versions |
 |-------------|
-| 1.24.17-7>= |
 | 1.25.16-7>= |
 | 1.26.4-3>=  |
 | 1.27.12-1>= |
 | 1.28.8-1>=  |
 | 1.29.3-3>=  |
+| 1.30.2-1 >= |
 #### Network prerequisite to expose your Load Balancers publicly
 
 The first step is to make sure that you have an existing vRack on your Public Cloud Project. To do so you can follow this guide that explains how to [Configure a vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
