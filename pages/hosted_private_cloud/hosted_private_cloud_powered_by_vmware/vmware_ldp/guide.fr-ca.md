@@ -6,7 +6,7 @@ updated: 2024-06-28
 
 > [!primary]
 >
-> VCD on OVHcloud est actuellement en phase Bêta. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié : <https://discord.gg/ovhcloud>.
+> Cette fonctionnalité est actuellement en phase Bêta. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié : <https://discord.gg/ovhcloud>.
 >
 
 ## Objectif
