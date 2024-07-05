@@ -1,22 +1,22 @@
 ---
-title: 'Getting Started with Versioning Using OVHcloud APIs'
-excerpt: 'Learn how to enable and manage versioning for your OVHcloud Object Storage buckets using APIs. Future updates will cover the OVHcloud Control Panel.'
-updated: 2024-06-26
+title: 'Object Storage - Getting Started with Versioning Using OVHcloud APIs'
+excerpt: 'Learn how to enable and manage versioning for your OVHcloud Object Storage buckets using APIs'
+updated: 2024-07-05
 ---
+
+> [!primaru]
+> This guide documents API usage only. Future updates will cover the OVHcloud Control Panel.
 
 ## Objective
 
 **This guide explains how to enable and manage versioning for your OVHcloud Object Storage buckets using APIs.**
 
-**Future updates will cover the OVHcloud Control Panel.**
-
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) already created
 - [AWS CLI installed and configured](pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
-
 
 ## Instructions
 
@@ -33,7 +33,7 @@ An Object Storage bucket can be in one of three states:
 3. **Versioning-suspended**: Versions are not created for new objects, but existing versions are retained.
 
 > [!warning]
-> Once versioning is enabled, it cannot be disabled; it can only be suspended.
+> Once versioning is enabled, it cannot be disabled, it can only be suspended.
 
 ![Versioning States](images/versionning.png){.thumbnail}
 
@@ -80,7 +80,6 @@ When versioning is enabled:
 
 ![Downloading or Deleting Specific Versions](images/Withversioningenabled3.png){.thumbnail}
 
-
 ### How to Enable Versioning
 
 #### Using the AWS CLI
@@ -105,7 +104,6 @@ After enabling versioning, all objects added to the bucket will have a unique ve
 
 To suspend versioning, set the versioning configuration status to `Suspended`:
 
-
 ```sh
 aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
 ```
@@ -122,9 +120,9 @@ Suspending versioning stops new objects from receiving a version ID. Existing ob
 
 - **Storage Costs:** Each version of an object is stored as a full object, incurring standard S3 storage costs.
 - **Application:** When versioning is enabled, it applies to all objects in the bucket, including those added before versioning was enabled.
-- **Suspension:** Suspending versioning does not delete existing versions; it only stops new versions from being created.
+- **Suspension:** Suspending versioning does not delete existing versions, it only stops new versions from being created.
 - **Permissions:** Only the bucket owner can enable or suspend versioning.
 
 ## Go Further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
