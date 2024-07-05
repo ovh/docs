@@ -1,4 +1,4 @@
----
+[---
 title: 'Securing my OVHcloud account and managing my personal information'
 excerpt: 'Find out how to optimise your OVHcloud account security, manage your personal information, and delegate access to your account'
 updated: 2024-06-12
@@ -106,3 +106,4 @@ Sources:
 - [OVHcloud Documentation](https://docs.ovh.com)
 - [OVHcloud Public Cloud Guide](https://docs.ovh.com/gb/en/public-cloud/)
 - [IAM and Multi-Tenancy Principles on Flexible Engine](https://cloud.orange-business.com/en/best-practices-and-how-to/iam-multi-tenancy/)
+](https://chatgpt.com/c/72cb2138-5d8a-4bbd-9940-3e915e4a3722#:~:text=Copier%20le%20code-,%2D%2D%2D%0Atitle%3A%20%27Securing%20my%20OVHcloud%20account%20and%20managing%20my%20personal%20information%27%0Aexcerpt,community%20of%20users%20on%20%3Chttps%3A//community.ovh.com/en/%3E.,-For%20detailed%20information)
