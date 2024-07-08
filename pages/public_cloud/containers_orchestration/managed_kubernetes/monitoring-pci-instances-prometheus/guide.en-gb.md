@@ -1,7 +1,7 @@
 ---
-title: Collect metrics from PCI instances with Prometheus on an OVHcloud Managed Kubernetes Service
-excerpt: 'Find out how to collect metrics from VPS, PCI instances or baremetal servers with Prometheus on an OVHcloud Managed Kubernetes Service'
-updated: 2024-07-05
+title: Collect metrics from Public Cloud instances with Prometheus on an OVHcloud Managed Kubernetes Service
+excerpt: 'Find out how to collect metrics from VPS, Public Cloud instances or baremetal servers with Prometheus on an OVHcloud Managed Kubernetes Service'
+updated: 2024-07-08
 ---
 
 ## Objective
@@ -12,24 +12,24 @@ This tutorial show you how to configure the Prometheus operator to monitor stati
 
 This tutorial presupposes the following:
 
-- That you already have a working Prometheus operator running on an OVHcloud Managed Kubernetes cluster. If you want to know more on those topics, take a look at the [Monitoring apps with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-monitoring-apps-prometheus-grafana?id=kb_article_view&sysparm_article=KB0049902) tutorial
-- That you have retrieved the `kubeconfig.yml` file [matching your Kubernetes cluster](https://help.ovhcloud.com/csm/en-public-cloud-kubernetes-configure-kubectl?id=kb_article_view&sysparm_article=KB0049661)
-- That you have exported the KUBECONFIG environment variable to your `kubeconfig.yml` file
-- That a node exporter agent is listening on the instances you want to monitor on public IP and port 9100
+- That you already have a working Prometheus operator running on an OVHcloud Managed Kubernetes cluster. If you want to know more on those topics, take a look at the [Monitoring apps with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/monitoring-apps-grafana-prometheus) tutorial.
+- That you have retrieved the `kubeconfig.yml` file [matching your Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster).
+- That you have exported the KUBECONFIG environment variable to your `kubeconfig.yml` file.
+- That a node exporter agent is listening on the instances you want to monitor on public IP and port 9100.
 
 > [!warning]
 > **Important information:**
 >
-> This node exporter process should be secured, this is not the subject of this tutorial.
+> - This node exporter process should be secured, this is not the subject of this tutorial.
 
 > [!warning]
 > **Important information:**
 >
-> Use at least the version `0.75.1` of the Prometheus operator [prometheus-community/kube-prometheus-stack](https://github.com/prometheus-community/helm-charts). You can use the option `--set prometheusOperator.image.tag="v0.75.1"` when installing the chart to set it.
+> - Use at least the version `0.75.1` of the Prometheus operator [prometheus-community/kube-prometheus-stack](https://github.com/prometheus-community/helm-charts). You can use the option `--set prometheusOperator.image.tag="v0.75.1"` when installing the chart to set it.
 
 > [!primary]
 >
-> This tutorial use as an example a node-exporter to scrape but it can be adapted to any exporter, by adjusting the IP and listening port.
+> This tutorial uses as an example a node-exporter to scrape but it can be adapted to any exporter, by adjusting the IP and listening port.
 
 In the next step, you need the release name of your chart. To get it, just use the following command:
 
@@ -65,7 +65,7 @@ spec:
               - prometheus.demo.do.prometheus.io:9090
 ```
 
-apply this custom resource (CR) using the following command:
+Apply this custom resource (CR) using the following command:
 
 ```console
 $ kubectl apply -f static.yaml
@@ -84,7 +84,7 @@ After a few minutes, by checking the Prometheus targets HTTP interface, you shou
 
 ### Generate the configuration for OpenStack
 
-Create a **dedicated** user inside your PCI project with the `Infrastructure Supervisor` role.
+Create a **dedicated** user inside your Public Cloud project with the `Infrastructure Supervisor` role.
 
 ![Add user description](images/add_user_1.png){.thumbnail}
 
@@ -109,7 +109,9 @@ Apply this secret to your Prometheus namespace inside your Kubernetes cluster wi
 kubectl apply -f openstack_user_password.yaml -n prometheus
 ```
 
-Retrieve your OpenStack user info from the command-line tool (refer to https://help.ovhcloud.com/csm/fr-public-cloud-compute-set-openstack-environment-variables?id=kb_article_view&sysparm_article=KB0050935) for the region you want to scrape. This example use GRA11 region.
+Retrieve your OpenStack user info from the command-line tool (refer to the [Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables) guide) for the region you want to scrape.
+
+This example uses the GRA11 region.
 
 ![Download OpenStack configuration file](images/download_openrc.png){.thumbnail}
 
@@ -132,9 +134,9 @@ $ openstack user show user-xxxxxxx
 +---------------------+----------------------------------+
 ```
 
-The `id` is used as `userid` in the openstack_sd_config
+The `id` is used as `userid` in the openstack_sd_config.
 
-Create a file named openstack.yaml with the following content:
+Create a file named `openstack.yaml` with the following content:
 
 ```yaml
 apiVersion: monitoring.coreos.com/v1alpha1
@@ -147,7 +149,7 @@ metadata:
 spec:
     openstackSDConfigs:
         - role: instance
-          # specify the PCI region to scrape
+          # specify the Public Cloud region to scrape
           region: "GRA11"
           identityEndpoint: "https://auth.cloud.ovh.net/v3"
           # userid can be found using the previously exposed command
@@ -191,14 +193,14 @@ After a few minutes, by checking the Prometheus targets HTTP interface, you shou
 
 ### Generate the configuration for OVHcloud VPS
 
-Create a **dedicated** _script credentials_ as [described here](https://github.com/ovh/go-ovh#supported-apis) as follow:
+Create a **dedicated** _script credentials_ (as [described here](https://github.com/ovh/go-ovh#supported-apis)) as follow:
 
 ![Create script credentials](images/ovh_creds.png){.thumbnail}
 
 > [!warning]
 > **Important information:**
 >
-> Subject is not covered in this tutorial but you **should** restrict the API routes the token have access to.
+> This subject is not covered in this tutorial but you **should** restrict the API routes the token has access to.
 
 Create a file named `ovhcloud_api_credentials.yaml` containing your API secrets:
 
@@ -251,7 +253,7 @@ spec:
 
 For more information, please refer to [the official Prometheus documentation](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#ovhcloud_sd_config).
 
-apply this CR using the following command:
+Apply this CR using the following command:
 
 ```console
 $ kubectl apply -f ovhcloud.yaml
@@ -279,3 +281,7 @@ For more information, please read the following links
 - [Prometheus operator StaticConfig API Reference](https://prometheus-operator.dev/docs/api-reference/api/#monitoring.coreos.com/v1alpha1.StaticConfig)
 - [Prometheus operator OpenStackSDConfig API Reference](https://prometheus-operator.dev/docs/api-reference/api/#monitoring.coreos.com/v1alpha1.OpenStackSDConfig)
 - [Prometheus operator OVHCloudSDConfig API Reference](https://prometheus-operator.dev/docs/api-reference/api/#monitoring.coreos.com/v1alpha1.OVHCloudSDConfig)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](/links/community).
