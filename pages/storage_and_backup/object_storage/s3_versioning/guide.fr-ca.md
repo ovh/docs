@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - Premiers pas avec la gestion de versions"
 excerpt: "Découvrez comment activer et gérer la gestion de versions pour vos buckets de stockage d'objets OVHcloud en utilisant les API"
-updated: 2024-07-05
+updated: 2024-07-08
 ---
 
 > [!primary]
