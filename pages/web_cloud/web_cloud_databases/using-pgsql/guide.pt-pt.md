@@ -52,7 +52,7 @@ psql --host=servidor --port=port --user=utilizador --password=password nome_da_b
 ### Ligacao atraves de um software (SQuirreL SQL)
 - Inicie o SQuirreL SQL e clique em `Aliases`{.action}, e depois em `+`{.action}
 
-![launch SQuirreL SQL](images/aliases.png){.thumbnail}
+![launch SQuirreL SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
 - Preencha os campos em baixo e valide com o botão `OK`{.action} :
     - **Name**: Escolha um nome
@@ -61,15 +61,15 @@ psql --host=servidor --port=port --user=utilizador --password=password nome_da_b
     - **User Name**: Indique o nome do utilizador
     - **Password**: Indique a password
 
-![config connection](images/add-alias-pgsql.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/add-alias-pgsql.png){.thumbnail}
 
 - Valide novamente com o botão `Connect`{.action}
 
-![valid connection](images/connect-to-pgsql.png){.thumbnail}
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-pgsql.png){.thumbnail}
 
 Está atualmente ligado à sua base de dados:
 
-![config connection](images/general-dashboard-pgsql.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard-pgsql.png){.thumbnail}
 
 ### Ligacao atraves de phppgAdmin
 *Em breve disponível num outro guia.*
