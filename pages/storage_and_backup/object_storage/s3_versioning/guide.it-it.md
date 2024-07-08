@@ -4,7 +4,7 @@ excerpt: 'Learn how to enable and manage versioning for your OVHcloud Object Sto
 updated: 2024-07-08
 ---
 
-> [!primaru]
+> [!primary]
 > This guide documents API usage only. Future updates will cover the OVHcloud Control Panel.
 
 ## Objective
