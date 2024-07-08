@@ -21,7 +21,7 @@ Per il secondo caso, consulta la nostra guida "[Zerto tra due datacenter OVHclou
 - Un indirizzo IP pubblico disponibile nel Private Cloud di destinazione, verso il punto di connessione VPN.
 - Una piattaforma Zerto installata e operativa nell'infrastruttura del cliente.
 - Le macchine di replica Zerto (VRA: Virtual Replication Appliance) lato cliente e lato OVHcloud devono essere in grado di comunicare tra di loro sulle porte TCP 4007 e 4008 
-- Le macchine di gestione Zerto (ZVM: Zerto Virtual Manager) lato cliente e lato OVHcloud devono essere in grado di comunicare tra loro sulle porte TCP 9081
+- Le macchine di gestione Zerto (ZVM: Zerto Virtual Manager) lato cliente e lato OVHcloud devono essere in grado di comunicare tra loro sulle porte TCP 9071
 
 > [!primary]
 >
@@ -236,7 +236,7 @@ Puoi anche consultare il file di log IPSEec in /var/log/ipsec.log
 
 Per consentire il collegamento tra l’infrastruttura del cliente e quella di OVHcloud, è necessario autorizzare:
 
-- La porta 9081 tra le ZVM
+- La porta 9071 tra le ZVM
 - Le porte 4007 e 4008 tra le vRAs
 
 #### 4.1 Apri le porte sulla ZVM
@@ -261,7 +261,7 @@ Le sezioni Sorgente e Destinazione sono di tipo “Single host o Network” e fa
 
 ![zerto vpn](images/image-EN-28.png){.thumbnail}
 
-La porta TCP di destinazione autorizzata è la 9081.
+La porta TCP di destinazione autorizzata è la 9071.
 
 Salva la regola e applicala.
 
@@ -337,7 +337,7 @@ Dopodiché sarai reindirizzato alla pagina di login della ZVM con il seguente me
 
 ![zerto vpn](images/image-EN-40.png){.thumbnail}
 
-La causa più probabile è che la ZVM OVHcloud non riesca a contattare la ZVM del cliente tramite la porta TCP 9081. La ZVM OVHcloud deve essere in grado di stabilire la connessione.
+La causa più probabile è che la ZVM OVHcloud non riesca a contattare la ZVM del cliente tramite la porta TCP 9071. La ZVM OVHcloud deve essere in grado di stabilire la connessione.
 
 ## Per saperne di più
 

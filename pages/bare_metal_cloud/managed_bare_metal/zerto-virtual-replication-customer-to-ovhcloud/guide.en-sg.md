@@ -16,7 +16,7 @@ We will use the OPNsense open-source VPN Solution as an example, and explain the
 - one public IP, available on the target Managed Bare Metal for the VPN endpoint
 - a Zerto platform installed on the on-premises platform
 - VRAs (Virtual Replication Appliances) on both sides that are able to connect to the counterpart on TCP ports 4007 and 4008
-- Zerto administration consoles or ZVMs (Zerto Virtual Managers) that are able to connect to the counterpart on TCP port 9081
+- Zerto administration consoles or ZVMs (Zerto Virtual Managers) that are able to connect to the counterpart on TCP port 9071
 
 ### Solution overview
 
@@ -205,7 +205,7 @@ You can check the IPSec logfile in /var/log/ipsec.log on the OPNsense appliance 
 
 To allow pairings of on-premises and OVHcloud instances, traffic must be authorised on the following ports:
 
-* TCP 9081 between ZVMs
+* TCP 9071 between ZVMs
 * TCP 4007/4008 between vRAs
 
 #### 4.1 ZVM opening.
@@ -230,7 +230,7 @@ For "Source" and "Destination", select "Single host or Network" type. The source
 
 ![zerto vpn](images/image-EN-28.png){.thumbnail}
 
-Destination TCP port is 9081. Click `Save`{.action} and `Apply Change`{.action}.
+Destination TCP port is 9071. Click `Save`{.action} and `Apply Change`{.action}.
 
 #### 4.2 vRAs opening.
 
@@ -299,7 +299,7 @@ You will then be brought back to the log-in screen, with the following error mes
 
 ![zerto vpn](images/image-EN-40.png){.thumbnail}
 
-The most probable cause is that the OVHcloud ZVM is not authorised to contact your on-premises ZVM on TCP 9081 (it needs to be able to initiate the connection).
+The most probable cause is that the OVHcloud ZVM is not authorised to contact your on-premises ZVM on TCP 9071 (it needs to be able to initiate the connection).
 
 ## Go further
 
