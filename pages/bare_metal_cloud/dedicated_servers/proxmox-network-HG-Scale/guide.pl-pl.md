@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja sieci na Proxmox VE w ofercie High Grade & SCALE'
 excerpt: 'Dowiedz się, jak skonfigurować sieć na Proxmox VE w ofercie High Grade & SCALE'
-updated: 2023-05-11
+updated: 2024-07-08
 ---
 
 > [!primary]
@@ -15,7 +15,12 @@ updated: 2023-05-11
 
 ## Wprowadzenie
 
-W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP w trybie bridged (poprzez wirtualne maszyny MAC). Konieczne jest zatem skonfigurowanie Additional IP w trybie routera lub vRack.
+W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP w trybie bridged (poprzez wirtualne maszyny MAC). To samo dotyczy serwerów nowej generacji, które są dostarczane z procesorami AMD Epyc 4K i 8K. Konieczne jest zatem skonfigurowanie Additional IP w trybie routera lub vRack.
+
+> [!primary]
+>
+> Do końca 2024 roku funkcja ta zostanie dostarczona dla wszystkich gam High Grade, SCALE & ADVANCE.
+>
 
 **Dowiedz się, jak skonfigurować sieć w programie Proxmox VE.**
 

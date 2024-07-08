@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le réseau sur Proxmox VE sur les gammes High Grade & SCALE'
 excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE sur les gammes High Grade & SCALE.'
-updated: 2023-05-11
+updated: 2024-07-08
 ---
 
 > [!primary]
@@ -15,7 +15,7 @@ Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode b
 
 > [!primary]
 >
-> D'ici la fin de l'année 2024 cette fonctionnalité sera livrée pour l'ensemble des gammes High Grade, SCALE & ADVANCE.
+> D'ici la fin de l'année 2024, cette fonctionnalité sera livrée pour l'ensemble des gammes High Grade, SCALE & ADVANCE.
 >
 
 **Découvrez comment configurer le réseau sous Proxmox VE.**

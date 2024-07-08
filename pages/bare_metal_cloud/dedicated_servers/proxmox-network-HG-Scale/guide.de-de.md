@@ -1,7 +1,7 @@
 ---
 title: 'Netzwerk auf Proxmox VE für die High Grade & SCALE Reihen konfigurieren'
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Proxmox VE für die High Grade & SCALE Reihen einrichten'
-updated: 2023-05-11
+updated: 2024-07-08
 ---
 
 > [!primary]
@@ -15,7 +15,12 @@ updated: 2023-05-11
 
 ## Ziel
 
-Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
+Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Das Gleiche gilt für die neuen Server der neuesten Generation, die mit den AMD Epyc 4K und 8K CPUs ausgeliefert werden. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
+
+> [!primary]
+>
+> Bis Ende 2024 wird diese Funktion für alle High Grade, SCALE und ADVANCE Reihen geliefert.
+>
 
 **Diese Anleitung erklärt, wie Sie das Netzwerk mit Proxmox VE konfigurieren.**
 
