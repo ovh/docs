@@ -14,7 +14,7 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Additional IPs im *Bridged
 
 > [!primary]
 >
-> Bis Ende 2024 wird diese Funktion für alle High Grade, SCALE und ADVANCE Reihen geliefert.
+> Bis Ende 2024 wird diese Funktion für die Reihen High Grade, SCALE und ADVANCE verfügbar sein.
 >
 > Die bisher existierende Dokumentation deckt lediglich die Lösung über das vRack ab.
 >
