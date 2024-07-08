@@ -1,31 +1,30 @@
 ---
 title: 'GPU Instanzen einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie unter Windows und Linux eine GPU Instanz einrichten'
-updated: 2019-12-06
+updated: 2024-07-08
 ---
 
 ## Ziel
 
-GPU Instanzen ähneln technisch den Instanzen aus der Produktreihe 2017, verfügen jedoch zusätzlich über eine Grafikkarte (Graphic Processing Unit oder GPU). Die verwendete Technik (*pci_passthrough*) ermöglicht es dem Betriebssystem der Instanz, die GPU genau wie eine physische Maschine zu steuern.
+Die GPU Instanzen sind den Instanzen aus der Produktreihe 2017 technisch ähnlich, verfügen jedoch zusätzlich über eine Grafikkarte (Graphic Processing Unit oder GPU). Die verwendete Technik (*pci_passthrough*) ermöglicht es dem Betriebssystem der Instanz, die GPU genau wie auf einer physischen Maschine zu steuern.
 
-Bei den eingesetzten GPUs handelt es sich um NVIDIA Tesla V100. 
+ei den eingesetzten GPUs handelt es sich um NVIDIA Tesla V100 und V100s.
 
 > [!warning]
 >
-> Derzeit sind GPU Instanzen nur in den Rechenzentren GRA3, GRA5, GRA7 und BHS3 verfügbar. Möglicherweise müssen Sie ein neues Projekt erstellen und die Reihe 2017 auswählen.
+> Derzeit sind die meisten unserer alten GPU-Instanzen nur in den Regionen GRA7, GRA9, GRA11 und BHS5 verfügbar. Neuere Modelle sind derzeit nur in der Region GRA11 verfügbar.
 > 
 
 **Diese Anleitung erläutert, wie Sie eine GPU Instanz unter Linux oder Windows einrichten.**
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) mit Zugriff auf die Regionen, in denen GPUs verfügbar sind (GRA3, GRA5, GRA7 und BHS3) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) mit Zugriff auf die Regionen, in denen GPUs verfügbar sind (GRA7, GRA9, GRA11 und BHS5) in Ihrem Kunden-Account.
+- Sie haben einen [SSH-Schlüssel](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys) für die Bereitstellung einer Linux GPU Instanz erstellt.
 
 ## In der praktischen Anwendung
 
-Nachfolgend finden Sie die Informationen, die zum Bereitstellen einer GPU Instanz unter Linux oder Windows erforderlich sind.
-Beachten Sie bitte, dass Sie das Instanz-Betriebssystem nicht ändern können, um von Linux auf Windows zu wechseln oder umgekehrt. Stellen Sie daher sicher, dass die Instanz in der Ausgangskonfiguration mit dem richtigen Betriebssystem erstellt wird.
+Nachfolgend finden Sie die Informationen, die zum Bereitstellen einer GPU Instanz unter Linux oder Windows erforderlich sind. Beachten Sie, dass Sie das Instanz-Betriebssystem nicht ändern können, um von Linux auf Windows zu wechseln oder umgekehrt. Stellen Sie daher sicher, dass die Instanz in der Ausgangskonfiguration mit dem richtigen Betriebssystem erstellt wird.
 
 ### Unter Linux
 
@@ -36,13 +35,11 @@ Alle von uns angebotenen Images können auf einer GPU Instanz verwendet werden.
 > Wenn Sie mit dem manuellen Kompilieren eines Kernelmoduls nicht vertraut sind, empfehlen wir die Verwendung einer Distribution, die offiziell von NVIDIA unterstützt wird und für die _turnkey_ Treiber angeboten werden: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Wenn Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet haben, klicken Sie im Dashboard Ihres Public Cloud Projekts auf `Instanz erstellen`{.action} und wählen Sie eine GPU Instanz:
+Wenn Sie sich im [OVHcloud Kundencenter](/links/manager) eingeloggt haben, klicken Sie auf `Public Cloud`{.action}. Wählen Sie Ihr Public Cloud Projekt aus und klicken Sie im linken Menü auf `Instances`{.action} im Bereich **Compute**. Klicken Sie anschließend auf `Instanz erstellen`{.action} und wählen Sie eine GPU-kompatible Instanz aus:
 
-![public-cloud](images/gpu.png){.thumbnail}
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-Wählen Sie die gewünschte Unix-Distribution aus:
-
-![public-cloud](images/linuxchoice.png){.thumbnail}
+Folgen Sie anschließend den verbleibenden Schritten, wie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance) beschrieben. Dieser Vorgang kann einige Minuten dauern.
 
 Die Instanz wird einige Sekunden später gestartet. Sie können sich dann anmelden und nach der Grafikkarte suchen: 
 
@@ -51,7 +48,7 @@ lspci | grep -i nvidia
 00:05.0 3D-Controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-Die Grafikkarte ist vorhanden, kann aber noch nicht verwendet werden. Dazu müssen Sie zuerst den NVIDIA-Treiber installieren. Die passenden Pakete finden Sie unter diesem Link: [Liste der verfügbaren Linux-Pakete](http://developer.download.nvidia.com/compute/cuda/repos/).
+Die Grafikkarte ist vorhanden, kann aber noch nicht verwendet werden. Dazu müssen Sie zuerst den NVIDIA-Treiber installieren. Die passenden Pakete finden Sie unter diesem Link: [Liste der verfügbaren Linux-Pakete](https://developer.download.nvidia.com/compute/cuda/repos/).
 
 Die folgenden Befehle sind noch erforderlich:
 
@@ -97,25 +94,67 @@ Die GPU Instanz ist jetzt voll funktionsfähig und verwendbar.
 ### Unter Windows
 
 Es gibt Inkompatibilitäten zwischen dem NVIDIA-Treiber und der Visualisierungslösung *KVM/pci_passthrough*. **Standard-Windows-Images funktionieren nicht.**
-Aus diesem Grund bieten wir spezielle Images an, die auf einem virtuellen UEFI-BIOS basieren und dem Treiber eine ordnungsgemäße Funktion ermöglichen (dies gilt nur für G1-, G2- und G3-Instanzen; Reihe 2017 und frühere).
 
-Wenn Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet haben, klicken Sie im Dashboard Ihres Public Cloud Projekts auf `Instanz erstellen`{.action} und wählen Sie eine GPU Instanz:
+Wir stellen spezielle Images auf Basis eines virtuellen UEFI-BIOS zur Verfügung, die den ordnungsgemäßen Betrieb des Treibers ermöglichen:
 
-![public-cloud](images/gpu.png){.thumbnail}
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
-Wählen Sie dann die gewünschte Windows-Distribution aus: 
+> [!warning]
+>
+> Sie haben die Möglichkeit, diese Images auf einigen ausgewählten Modellen (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180) zu installieren. Je nach ausgewählter Region sind diese speziellen Images möglicherweise nicht verfügbar.
+>
 
-![public-cloud](images/oschoice.png){.thumbnail}
+Wenn Sie in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt sind, gehen Sie in Ihr Public Cloud Projekt und klicken Sie im linken Menü im Tab **Compute** auf `Instances`{.action}. Klicken Sie anschließend auf `Instanz erstellen`{.action} und wählen Sie eine GPU-kompatible Instanz aus:
 
-Sobald Ihre GPU Instanz gestartet wurde, müssen Sie den NVIDIA-Treiber von der [offiziellen Webseite](https://www.nvidia.com/Download/index.aspx) installieren.
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-Starten Sie eine Instanz mit einem der verfügbaren GPU-Typ (t1-45, t1-90, t1-180 ...). Dieser Vorgang sollte nur wenige Minuten dauern.
+Gehen Sie im nächsten Schritt auf den Tab `Windows-Distributionen` und klicken Sie auf den Pfeil, um das kompatible Windows Image auszuwählen:
+
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
+
+Folgen Sie anschließend den verbleibenden Schritten, wie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance) beschrieben. Dieser Vorgang kann einige Minuten dauern.
+
+#### Mit einer Windows Instanz verbinden
+
+Nachdem die Instanz fertig erstellt ist, muss die Windows-Installation abgeschlossen werden (_sysprep_). Klicken Sie hierzu auf `...`{.action} und dann auf `Instanz-Details`{.action}. Wechseln Sie zum Tab `VNC-Konsole`{.action}. Die Konsole sollte bereits das Post-Installationsfenster anzeigen.
+
+![Windows sysprep](images/windows-connect-01.png){.thumbnail}
+
+Legen Sie im ersten Schritt Ihre Standorteinstellungen fest, indem Sie eine Region, eine Sprache sowie das Tastaturlayout auswählen. Klicken Sie auf `Weiter`{.action}, um fortzufahren.
+
+![Windows sysprep](images/windows-connect-02.png){.thumbnail}
+
+Im zweiten Schritt wird der native “Administrator”-Account eingerichtet. Geben Sie zweimal Ihre Passphrase ein und klicken Sie auf `Beenden`{.action}, um den Installationsvorgang abzuschließen. Verwenden Sie das Augen-Symbol, um zu überprüfen, dass alle im Feld eingegebenen Zeichen dem Layout Ihrer Tastatur entsprechen.
+
+Die Instanz wird neu gestartet und Sie können sich mithilfe dieser Login-Daten über einen Remote-Desktop-Client einloggen. 
+
+##### **Über Windows**
+
+Verwenden Sie falls nötig die Windows-Suche und öffnen Sie den Windows-Client für Remote-Desktopverbindungen.
+
+![Windows Remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
+
+Geben Sie die IPv4-Adresse Ihrer Instanz sowie “Administrator” als Benutzer und dann Ihre Passphrase ein. Normalerweise erscheint nun eine Warnungsmeldung, die Sie auffordert, die Verbindung aufgrund eines unbekannten Zertifikats zu bestätigen. Klicken Sie auf `Ja`{.action}, um sich mit Ihrer Instanz zu verbinden.
+
+> [!primary]
+>
+> Sollten bei diesem Vorgang Probleme auftreten, stellen Sie sicher, dass Remoteverbindungen (RDP) auf Ihrem Gerät erlaubt sind, indem Sie Ihre Systemeinstellungen, Firewall-Regeln und mögliche Netzwerkeinschränkungen kontrollieren.
+>
+
+Wenn Ihre GPU Instanz gestartet wurde, müssen Sie den NVIDIA-Treiber von der [offiziellen Webseite](https://www.nvidia.com/Download/index.aspx) installieren.
 
 Anschließend müssen Sie nur noch den erforderlichen Treiber installieren, der dann in den Windows-Einstellungen angezeigt wird:
 
 ![public-cloud](images/driverson.png){.thumbnail}
 
 ![public-cloud](images/devicemanager.png){.thumbnail}
+
+> [!warning]
+>
+> Wir können nicht garantieren, dass die Lösung mit allen zukünftigen Versionen des NVIDIA-Treibers funktioniert.
+>
+> Es wird dringend empfohlen, vor einem Update des NVIDIA-Treibers einen Snapshot Ihrer Instanz zu erstellen, damit Sie falls nötig zu einem vorherigen Zustand zurückkehren können.
+>
 
 ## Weiterführende Informationen
 

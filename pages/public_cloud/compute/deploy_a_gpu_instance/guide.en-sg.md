@@ -140,7 +140,7 @@ The instance will reboot and you will be able to log in with these credentials u
 
 Use the Windows Search if necessary and open the native "Remote Desktop Connection" client application.
 
-![windows remote](images/windows-connect-03.png){.thumbnail}
+![windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Enter the IPv4 address of your instance and "Administrator" as the user, then type your passphrase. Usually, a warning message will appear, asking to confirm the connection because of an unknown certificate. Click on `Yes`{.action} to log in to the instance.
 

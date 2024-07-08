@@ -140,7 +140,7 @@ L'instance redémarrera et vous pourrez vous connecter avec ces informations d'i
 
 Utilisez Windows Search si nécessaire et ouvrez l'application cliente native « Connexion Bureau à distance ».
 
-![windows remote](images/windows-connect-03.png){.thumbnail}
+![windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Entrez l'adresse IPv4 de votre instance et `Administrator` en tant qu'utilisateur, puis tapez votre mot de passe. Habituellement, un message d'avertissement s'affiche, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter à l'instance.
 
