@@ -39,7 +39,7 @@ Accedi alla tua interfaccia di amministrazione digitando `/wp-admin` o `/wp-logi
 
 Nel menu a sinistra, clicca su `Plugin`{.action} e poi su `Aggiungi nuovo`{.action}:
 
-![Dashboard, Plugins, Add new](images/plugins.png){.thumbnail}
+![Dashboard, Plugins, Add new](/pages/assets/screens/other/cms/wordpress/woocommerce/plugins.png){.thumbnail}
 
 Nella nuova pagina `Aggiungi plugin`{.action}, inserisci "Woocommerce" nella barra di ricerca in alto a destra e clicca su `Installa adesso`{.action} nel riquadro associato all'estensione **WooCommerce**:
 
@@ -85,7 +85,7 @@ Il tuo e-commerce è stato configurato con i parametri generali.
 
 Clicca su `Plugin`{.action} per visualizzare le estensioni installate e su `Plugin installati` Visualizzi una lista delle tue estensioni. Clicca su `Impostazioni`{.action} nel modulo **WooCommerce**:
 
-![Setup Wizard - Estensione, WooCommerce, Settings](images/plugins-woocommerce.png){.thumbnail}
+![Setup Wizard - Estensione, WooCommerce, Settings](/pages/assets/screens/other/cms/wordpress/woocommerce/plugins-woocommerce.png){.thumbnail}
 
 Per visualizzare le impostazioni, clicca su `WooCommerce`{.action} > `Impostazioni`{.action}:
 

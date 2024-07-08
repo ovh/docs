@@ -38,7 +38,7 @@ Loggen Sie sich in Ihren Administrationsbereich ein, indem Sie in der Adresszeil
 
 Gehen Sie im linken Menü in den Bereich `Plugins`{.action} und klicken Sie auf den Button `Installieren`{.action}:
 
-![Dashboard, Plugins, Add new](images/plugins.png){.thumbnail}
+![Dashboard, Plugins, Add new](/pages/assets/screens/other/cms/wordpress/woocommerce/plugins.png){.thumbnail}
 
 Auf der neuen Seite `Installierte Plugins`{.action}, geben Sie "woocommerce" oben rechts in die Suchleiste ein und klicken Sie dann auf `Jetzt installieren`{.action} im Feld für **WooCommerce**.
 
@@ -84,7 +84,7 @@ Ihr Webshop ist nun mit den allgemeinen Einstellungen konfiguriert.
 
 Gehen Sie im linken Menü in den Bereich `Plugins`{.action} und dann auf `Installierte Plugins`. Die Liste Ihrer Plugins wird angezeigt. Klicken Sie auf `Einstellungen`{.action} im Modul **WooCommerce**:
 
-![Setup Wizard - Extension, WooCommerce, Settings](images/plugins-woocommerce.png){.thumbnail}
+![Setup Wizard - Extension, WooCommerce, Settings](/pages/assets/screens/other/cms/wordpress/woocommerce/plugins-woocommerce.png){.thumbnail}
 
 Sie haben auch Zugriff auf diese Einstellungen, indem Sie direkt auf `WooCommerce`{.action} und dann auf `Einstellungen`{.action} klicken:
 

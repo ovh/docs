@@ -35,7 +35,7 @@ Connectez-vous sur votre interface d'administration en tapant `/wp-admin` ou `/w
 
 Dans le menu de gauche, rendez-vous dans `Extensions`{.action} puis cliquez sur `Ajouter`{.action} :
 
-![Dashboard, Plugins, Add new](images/plugins.png){.thumbnail}
+![Dashboard, Plugins, Add new](/pages/assets/screens/other/cms/wordpress/woocommerce/plugins.png){.thumbnail}
 
 Sur la nouvelle page `Ajouter des extensions`{.action}, saisissez « woocommerce » dans la barre de recherche en haut à droite puis cliquez sur `Installer maintenant`{.action} dans l'encadré lié à l'extension **WooCommerce** :
 
@@ -81,7 +81,7 @@ Votre boutique en ligne est désormais configurée avec les paramètres généra
 
 Cliquez sur `Extensions`{.action} pour lister les extensions installées puis sur `Extensions installées`. La liste de vos extensions s'affiche. Cliquez sur `Réglages`{.action} dans le module **WooCommerce** :
 
-![Setup Wizard - Extension, WooCommerce, Settings](images/plugins-woocommerce.png){.thumbnail}
+![Setup Wizard - Extension, WooCommerce, Settings](/pages/assets/screens/other/cms/wordpress/woocommerce/plugins-woocommerce.png){.thumbnail}
 
 Vous avez également accès à ces réglages en cliquant directement sur `WooCommerce`{.action} puis sur `Réglages`{.action} :
 

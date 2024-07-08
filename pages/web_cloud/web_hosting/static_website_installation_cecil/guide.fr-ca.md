@@ -137,7 +137,7 @@ php cecil.phar build
 
 Votre fichier se trouve dans le répertoire `_site/mypage/`:
 
-![Installation Cecil](images/static_website_installation_cecil06.png){.thumbnail}
+![Installation Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil06.png){.thumbnail}
 
 Vous pouvez le visualiser sur votre serveur en tapant l'URL de votre site, suivi de `/mypage/`:
 
