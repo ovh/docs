@@ -21,7 +21,7 @@ Lesen Sie hierzu unsere Anleitung zu "[Zerto zwischen zwei OVHcloud Rechenzentre
 - Die Ziel-Private-Cloud muss über mindestens eine verfügbare öffentliche IP-Adresse für den VPN-Endpunkt verfügen.
 - Der Kundenstandort muss über eine funktionsfähige Zerto-Installation verfügen.
 - Die von Zerto für die Replikation verwendeten virtuellen Maschinen (VRA: Virtual Replication Appliance) sowohl auf Kundenseite als auch bei OVHcloud müssen sich über die TCP-Ports 4007 und 4008 miteinander austauschen können.
-- Die Verwaltungsmaschinen von Zerto (ZVM: Zerto Virtual Manager) sowohl auf Kundenseite als auch bei OVHcloud müssen sich über den TCP-Port 9081 miteinander austauschen können.
+- Die Verwaltungsmaschinen von Zerto (ZVM: Zerto Virtual Manager) sowohl auf Kundenseite als auch bei OVHcloud müssen sich über den TCP-Port 9071 miteinander austauschen können.
 
 > [!primary]
 >

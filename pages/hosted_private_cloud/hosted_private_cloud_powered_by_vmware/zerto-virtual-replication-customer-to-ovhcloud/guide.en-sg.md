@@ -221,7 +221,7 @@ You can check the IPSec logfile in /var/log/ipsec.log on the OPNsense appliance 
 
 To allow pairings of on-premises and OVHcloud instances, traffic must be authorised on the following ports:
 
-* TCP 9081 between ZVMs
+* TCP 9071 between ZVMs
 * TCP 4007/4008 between vRAs
 
 #### 4.1 ZVM opening.
@@ -315,7 +315,7 @@ You will then be brought back to the log-in screen, with the following error mes
 
 ![](images/image-EN-40.png){.thumbnail}
 
-The most probable cause is that the OVHcloud ZVM is not authorised to contact your on-premises ZVM on TCP 9081 (it needs to be able to initiate the connection).
+The most probable cause is that the OVHcloud ZVM is not authorised to contact your on-premises ZVM on TCP 9071 (it needs to be able to initiate the connection).
 
 ## Go further
 

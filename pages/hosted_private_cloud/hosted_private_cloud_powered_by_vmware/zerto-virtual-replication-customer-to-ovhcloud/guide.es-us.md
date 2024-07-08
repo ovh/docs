@@ -337,7 +337,7 @@ Será redirigido a la pantalla de acceso a la ZVM con el siguiente mensaje de er
 
 ![zerto vpn](images/image-EN-40.png){.thumbnail}
 
-La causa más probable es que la ZVM OVHcloud no pueda comunicarse con la ZVM del cliente en el puerto TCP 9081. Es necesario que se pueda iniciar la conexión.
+La causa más probable es que la ZVM OVHcloud no pueda comunicarse con la ZVM del cliente en el puerto TCP 9071. Es necesario que se pueda iniciar la conexión.
 
 ## Más información
 
