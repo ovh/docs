@@ -82,13 +82,13 @@ The following table provides the **default** behavior of the OVHcloud Object Sto
 | What is replicated                                           | What is not replicated                                       |
 |--------------------------------------------------------------|--------------------------------------------------------------|
 | Objects created *after* the upload of the replication configuration | Delete marker i.e. objects deleted in the source bucket are not automatically deleted by default in the destination bucket |
-| Unencrypted objects                                          | Object replicas i.e. objects that are the result of a previous replication operation |
-| | Objects that have already been replicated to a previous destination |
-| Object metadata from the source objects to the replicas      | Objects that are stored in the Cold Archive temporary storage |
-| Objects in the source bucket the bucket owner has permissions to read and access ACLs | Bucket configurations i.e. lifecycle configuration, CORS configuration, bucket ACLs, etc. |
-| Object ACL updates                                           | Actions resulting from Lifecycle Configuration actions |
-| Object tags                                                  | Objects created *before* the upload of the replication configuration |
-| S3 Object Lock retention configuration                       | Replication to a bucket in a different Public Cloud Project i.e. source and destination buckets must be in the same project |
+| Unencrypted objects | Object replicas i.e. objects that are the result of a previous replication operation |
+| Object metadata from the source objects to the replicas | Objects that have already been replicated to a previous destination |
+| Objects in the source bucket the bucket owner has permissions to read and access ACLs | Objects that are stored in the Cold Archive temporary storage |
+| Object ACL updates | Bucket configurations i.e. lifecycle configuration, CORS configuration, bucket ACLs, etc. |
+| Object tags | Actions resulting from Lifecycle Configuration actions |
+| S3 Object Lock retention configuration | Objects created *before* the upload of the replication configuration |
+| | Replication to a bucket in a different Public Cloud Project i.e. source and destination buckets must be in the same project |
 
 
 ### Replication configuration
