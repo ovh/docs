@@ -1,7 +1,7 @@
 ---
 title:'Chiffrement de VM dans vSphere avec le KMS OVHcloud'
-excerpt:'Protégez votre confidentialité et activer le chiffrement de vos machines virtuelles Hosted Private Cloud VMware on OVHcloud avec la solution Okms'
-updated: 2023-07-05
+excerpt:'Protégez votre confidentialité et activer le chiffrement de vos machines virtuelles Hosted Private Cloud avec la solution KMS OVHcloud'
+updated: 2023-07-08
 ---
 <style>
 details>summary {
@@ -266,7 +266,7 @@ Exemple de politique IAM :
 - **Product type:** iam_ressource_type_okms/kmip,
 - **Actions:** vSphere Admin, pccVMware:apiovh:vmEncryption/kms/changeProperties, pccVMware:vSphere:assumeRole?iam-admin -> User vSphere iam-admin, okms:kmip:get, okms:apikms:serviceKey/create etc..
 
-Pour information le **domain id** correspond à l'urn de votre Okms.
+Pour information le **domain id** correspond à l'urn de votre KMS OVHcloud.
 
 ### Via l'api OVHcloud
 
@@ -334,19 +334,21 @@ Retour:
 }
 ```
 
-Vous devez maintenant attendre (statut: updating) que l'ouverture des flux se fasse et passe le statut en `livrer`{.action}.
+Vous devez maintenant attendre (statut: updating) que l'ouverture des flux se fasse et passe le statut en: `livré`{.action}.
+
+![Manager Hpc Security KMS Delivered](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add_delivered.png)
 
 ///
 
-## Étape 3 - Ajout de l'Okms à vSphere/vCenter (obligatoire)
+## Étape 3 - Ajout du KMS à vSphere/vCenter (obligatoire)
 
-/// details | Comment ajouter le Okms dans vSphere/vCenter?
+/// details | Comment ajouter le KMS dans vSphere/vCenter?
 
 ### Via le control panel OVHcloud
 
 ![Manager Hpc General Information Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_vsphere.webp)
 
-#### 1. Ajouter un fournisseur de clé Okms
+#### 1. Ajouter un fournisseur de clé KMS
 
 Pour que vCenter puisse truster votre serveur KMS OVHcloud, nous avons besoin d'accéder à la console vSphere de votre PCC HPC VMware on OVHcloud.
 
@@ -391,9 +393,9 @@ Vous avez ces champs disponibles:
 
 Attendez que vSphere établisse la connexion avec le Key Provider que vous avez ajouté. Vous devriez voir une indication ou un message confirmant que la connexion a été établie avec succès.
 
-### Okms approuve vCenter/vCenter approuve Okms
+### KMS approuve vCenter + vCenter approuve KMS
 
-Afin de communiquer avec votre Okms, il est nécessaire de créer un certificat d'accès. Celui-ci sera utilisé pour toute interaction avec le KMS OVHcloud et vSphere/vCenter, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec ceux-ci.
+Afin de communiquer avec votre KMS, il est nécessaire de créer un certificat d'accès. Celui-ci sera utilisé pour toute interaction avec le KMS OVHcloud et vSphere/vCenter, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec ceux-ci.
 
 Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
 
@@ -413,7 +415,7 @@ Vous pouvez créer un certificat d'accès et une clé privée avec l'appel api s
 > **Paramètres:**
 >
 > - okmsId: L'ID de votre KMS OVHcloud (Okms).
-> - Avec/Sans CSR Provided
+> - Avec/Sans CSR Provided.
 >
 
 Il est nécessaire d'indiquer les informations suivantes :
@@ -428,9 +430,9 @@ Il est nécessaire d'indiquer les informations suivantes :
  "description": "My user reader credential",
  "identityURNs": [
  "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user" // L'utilisateur avec lequel vous vous connectez à vSphere au sein de votre PCC, il doit être admin ou avoir Encryption management activé au sein du PCC pour chiffrer des VM. 
- "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user" // Le groupe avec lequel vous accédez à vos PCC, pour activer le chiffrement sur les VM vous devez être admin ou activer Encryption management.
+ "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group" // Le groupe avec lequel vous accédez à vos PCC, pour activer le chiffrement sur les VM vous devez être admin ou activer Encryption management.
  ],
- "name": "reader", // Nom du reader.
+ "name": "my_reader", // Nom du reader.
  "validity": 30 // Par defaut 365 jours.
 }
 ```
@@ -474,7 +476,7 @@ Puis copier aussi l'id généré et lancer l'appel api suivant avec l'id et l'ok
 > - okmsId: L'ID de votre KMS OVHcloud (Okms).
 >
 
-L'API renvoie le certificat au format PEM:
+L'API renvoie le certificat **"certificatePEM"** au format Json:
 
 ```Shell
 {
@@ -527,7 +529,7 @@ Coller la valeur du champ `"csr"`{.action}  `"-----BEGIN CERTIFICATE REQUEST----
 
 > [!tabs]
 >>
->> #### 2. KMS approuve vCenter
+>> #### 2. vCenter approuve KMS
 >>
 >> **Faire que vCenter approuve KMS:**
 >>
@@ -551,7 +553,7 @@ Coller la valeur du champ `"csr"`{.action}  `"-----BEGIN CERTIFICATE REQUEST----
 >>
 >> Pour plus d'information sur les avantages et inconvénients de l'utilisation d'une CSR, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
 >>
->> #### 3. vCenter approuve KMS
+>> #### 3.KMS approuve vCenter
 >>
 >> **Établir une relation de confiance entre vCenter et KMS:**
 > 
