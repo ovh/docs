@@ -1,7 +1,7 @@
 ---
 title: 'Netzwerk auf ESXi für die High Grade & SCALE Reihen konfigurieren'
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf VMware ESXi für die High Grade & SCALE Reihen einrichten'
-updated: 2022-05-09
+updated: 2024-07-08
 ---
 
 > [!primary]
@@ -13,6 +13,8 @@ updated: 2022-05-09
 Bei den High Grade & SCALE Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
 
 > [!primary]
+>
+> Bis Ende 2024 wird diese Funktion für alle High Grade, SCALE und ADVANCE Reihen geliefert.
 >
 > Die bisher existierende Dokumentation deckt lediglich die Lösung über das vRack ab.
 >

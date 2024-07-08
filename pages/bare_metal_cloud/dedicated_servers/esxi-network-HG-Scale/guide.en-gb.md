@@ -1,7 +1,7 @@
 ---
 title: 'Configuring the network on ESXi on the High Grade & SCALE ranges'
 excerpt: 'Find out how to configure the network on VMware ESXi on the High Grade & SCALE ranges'
-updated: 2022-05-09
+updated: 2024-07-08
 ---
 
 ## Objective
@@ -11,9 +11,6 @@ On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in
 > [!primary]
 >
 > By the end of 2024 this feature will be delivered for all the High Grade, SCALE & ADVANCE ranges.
->
-
-> [!primary]
 >
 > To date, the documentation only covers the solution via the vRack.
 >

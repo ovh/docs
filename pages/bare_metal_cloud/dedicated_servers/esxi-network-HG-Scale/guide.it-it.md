@@ -1,7 +1,7 @@
 ---
 title: Configurare la rete su ESXi sulle gamme High Grade & SCALE
 excerpt: Come configurare la rete su ESXi sulle gamme High Grade & SCALE
-updated: 2022-05-09
+updated: 2024-07-08
 ---
 
 > [!primary]
@@ -13,6 +13,8 @@ updated: 2022-05-09
 Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalità *bridged* (tramite MAC virtuali) non è possibile. È quindi necessario configurare gli Additional IP in modalità routing o tramite la vRack.
 
 > [!primary]
+>
+> Entro la fine del 2024 questa funzionalità sarà consegnata per tutte le gamme High Grade, SCALE & ADVANCE.
 >
 > Ad oggi, la documentazione include solo la soluzione tramite la vRack.
 >

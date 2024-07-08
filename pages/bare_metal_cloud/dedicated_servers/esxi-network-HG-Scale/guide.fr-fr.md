@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le réseau sur ESXi sur les gammes High Grade & SCALE'
 excerpt: 'Découvrez comment configurer le réseau sur ESXi sur les gammes High Grade & SCALE.'
-updated: 2022-05-09
+updated: 2024-07-08
 ---
 
 ## Objectif
@@ -11,9 +11,6 @@ Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode *
 > [!primary]
 >
 > D'ici la fin de l'année 2024 cette fonctionnalité sera livrée pour l'ensemble des gammes High Grade, SCALE & ADVANCE.
->
-
-> [!primary]
 >
 > À ce jour, la documentation ne couvre que la solution via le vRack.
 >

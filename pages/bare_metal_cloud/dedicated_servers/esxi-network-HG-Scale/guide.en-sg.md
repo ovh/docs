@@ -1,14 +1,16 @@
 ---
 title: 'Configuring the network on ESXi on the High Grade & SCALE ranges'
 excerpt: 'Find out how to configure the network on VMware ESXi on the High Grade & SCALE ranges'
-updated: 2022-05-09
+updated: 2024-07-08
 ---
 
 ## Objective
 
-On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
+On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in *bridged* mode (via virtual MACs). The same goes for the latest generation servers delivered with AMD Epyc 4K and 8K CPUs. It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
 
 > [!primary]
+>
+> By the end of 2024 this feature will be delivered for all the High Grade, SCALE & ADVANCE ranges.
 >
 > To date, the documentation only covers the solution via the vRack.
 >
