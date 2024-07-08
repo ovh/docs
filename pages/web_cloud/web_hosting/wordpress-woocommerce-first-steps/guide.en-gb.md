@@ -35,7 +35,7 @@ Log in to your admin interface by typing `/wp-admin` or `/wp-login` in your addr
 
 In the left-hand menu, go to `Plugins`{.action} then click on `Add New`{.action}:
 
-![Dashboard, Plugins, Add new](images/plugins.png){.thumbnail}
+![Dashboard, Plugins, Add new](/pages/assets/screens/other/cms/wordpress/woocommerce/plugins.png){.thumbnail}
 
 On the new `Add Plugins` page, type "woocommerce" in the search bar in the top right and click `Install Now`{.action} in the **WooCommerce** box:
 
@@ -81,7 +81,7 @@ Your online store is now configured with the general settings.
 
 Click `Plugins`{.action} to list the installed extensions and then click `Installed plugins`. You will see a list of your plugins. Click `Settings`{.action} in the **WooCommerce** module:
 
-![Setup Wizard - Extension, WooCommerce, Settings](images/plugins-woocommerce.png){.thumbnail}
+![Setup Wizard - Extension, WooCommerce, Settings](/pages/assets/screens/other/cms/wordpress/woocommerce/plugins-woocommerce.png){.thumbnail}
 
 You can also access these settings by clicking directly on `WooCommerce`{.action}, then `Settings`{.action}:
 
