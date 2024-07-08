@@ -35,7 +35,7 @@ Se ainda não o fez, recomendamos que coloque o seu website em HTTPS antes de pr
 
 Inicie sessão na sua interface de administração digitando `/wp-admin` ou `/wp-login` na sua barra de pesquisa após o URL do seu nome de domínio (o redireccionamento é feito automaticamente):
 
-![Admin page of WordPress](images/admin-login.png){.thumbnail}
+![Admin page of WordPress](/pages/assets/screens/other/cms/wordpress/woocommerce/admin-login.png){.thumbnail}
 
 No menu à esquerda, vá a `Plugins`{.action} e clique em `Adicionar novo`{.action}:
 
@@ -43,11 +43,11 @@ No menu à esquerda, vá a `Plugins`{.action} e clique em `Adicionar novo`{.acti
 
 Na nova página `Adicionar plugins`{.action}, introduza "woocommerce" na barra de pesquisa, no canto superior direito, e clique em `Installar`{.action} na caixa relativa à extensão **WooCommerce**:
 
-![Install WooCommerce](images/add-plugin-woocommerce-install-now.png){.thumbnail}
+![Install WooCommerce](/pages/assets/screens/other/cms/wordpress/woocommerce/add-plugin-woocommerce-install-now.png){.thumbnail}
 
 Clique agora em `Activar`{.action}:
 
-![Ativate WooCommerce](images/add-plugin-woocommerce-activate.png){.thumbnail}
+![Ativate WooCommerce](/pages/assets/screens/other/cms/wordpress/woocommerce/add-plugin-woocommerce-activate.png){.thumbnail}
 
 ### Configuração 
 
@@ -55,27 +55,27 @@ Clique agora em `Activar`{.action}:
 
 Se ainda não configurou a sua extensão **WooCommerce**, um assistente de configuração ajuda-o a introduzir as informações relativas ao seu site de vendas online. Introduza o formulário e clique em `Continuar`{.action}:
 
-![Setup Wizard - Store Details](images/woocommerce-store-details.png){.thumbnail}
+![Setup Wizard - Store Details](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-store-details.png){.thumbnail}
 
 De seguida, selecione o(s) seu(s) domínio(s) de atividade:
 
-![Setup Wizard - Industry](images/woocommerce-industry.png){.thumbnail}
+![Setup Wizard - Industry](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-industry.png){.thumbnail}
 
 Escolha o tipo de produtos que deseja vender no seu website (algumas opções são pagas):
 
-![Setup Wizard - Product Tipes](images/woocommerce-product-types.png){.thumbnail}
+![Setup Wizard - Product Tipes](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-product-types.png){.thumbnail}
 
 A seguir, especifique a natureza da sua atividade:
 
-![Setup Wizard - Business Details](images/woocommerce-business-details.png){.thumbnail}
+![Setup Wizard - Business Details](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-business-details.png){.thumbnail}
 
 Adicione funcionalidades opcionais (e gratuitas) se desejar:
 
-![Setup Wizard - Business Details, free feature](images/woocommerce-business-details-2.png){.thumbnail}
+![Setup Wizard - Business Details, free feature](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-business-details-2.png){.thumbnail}
 
 Por fim, selecione um dos temas propostos:
 
-![Setup Wizard - Choose a theme](images/woocommerce-theme.png){.thumbnail}
+![Setup Wizard - Choose a theme](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-theme.png){.thumbnail}
 
 **WooCommerce** solicita-lhe para criar uma conta a fim de utilizar a extensão **Jetpack**, extensão instalada automaticamente além da extensão **WooCommerce**. Esta criação de conta é facultativa, terá acesso às funções limitadas de **Jetpack** sem ter de se autenticar.
 
@@ -89,13 +89,13 @@ Clique em `Plugins`{.action} para listar as extensões instaladas e depois `Plug
 
 Também tem acesso a estas configurações ao clicar diretamente em `WooCommerce`{.action} e depois em `Opções`{.action}:
 
-![Setup Wizard - WooCommerce, Settings](images/dashboard-woocommerce-settings.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings](/pages/assets/screens/other/cms/wordpress/woocommerce/dashboard-woocommerce-settings.png){.thumbnail}
 
 ### Pagamentos
 
 A página de regulação compreende vários separadores:
 
-![Setup Wizard - WooCommerce, Settings, Tabs](images/woocommerce-general.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings, Tabs](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-general.png){.thumbnail}
 
 #### Geral
 
@@ -108,7 +108,7 @@ Este separador permite-lhe definir os seguintes elementos:
 - cupões
 - dados monetários (divisa do site, apresentação).
 
-![Setup Wizard - WooCommerce, Settings, General tab](images/woocommerce-general-currency.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings, General tab](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-general-currency.png){.thumbnail}
 
 #### Produtos
 

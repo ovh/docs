@@ -44,7 +44,7 @@ Pobierz te elementy, zanim przejdziesz dalej.
 
 Przejdź do linku dostępowego do interfejsu administracyjnego przesłanego e-mailem podczas instalacji CMS. Domyślnie adres URL kończy się na `wp-admin`. Jeśli nie jesteś autoryzowany w interfejsie administracyjnym, **WordPress** przekieruje automatycznie na adres URL kończący się na `wp-login`:
 
-![WordPress - Admin login](images/admin-login.png){.thumbnail}
+![WordPress - Admin login](/pages/assets/screens/other/cms/wordpress/admin-login.png){.thumbnail}
 
 > [!primary]
 > 
@@ -53,7 +53,7 @@ Przejdź do linku dostępowego do interfejsu administracyjnego przesłanego e-ma
 
 Wpisz login (lub "Nazwę administratora") dostarczony przez e-mail oraz "Hasło WordPress" wskazane w tym samym e-mailu. Pojawi się wówczas na dashboardzie:
 
-![WordPress - Dashboard](images/dashboard.png){.thumbnail}
+![WordPress - Dashboard](/pages/assets/screens/other/cms/wordpress/dashboard.png){.thumbnail}
 
 ### Zmień temat strony WordPress
 
@@ -61,11 +61,11 @@ Wpisz login (lub "Nazwę administratora") dostarczony przez e-mail oraz "Hasło 
 
 Aby zmienić hasło, w menu po lewej stronie dashboardu kliknij `Wygląd`{.action} a następnie `Motywy`{.action}:
 
-![WordPress - Appearance/Themes](images/dashboard-themes.png){.thumbnail}
+![WordPress - Appearance/Themes](/pages/assets/screens/other/cms/wordpress/dashboard-themes.png){.thumbnail}
 
 Wybierz temat spośród zaproponowanych i kliknij na `Włącz`{.action}:
 
-![WordPress - Appearance/Themes](images/themes.png){.thumbnail}
+![WordPress - Appearance/Themes](/pages/assets/screens/other/cms/wordpress/themes.png){.thumbnail}
 
 Możesz wyświetlić wynik na stronie WWW z nazwą domeny.
 
@@ -75,19 +75,19 @@ WordPress pozwala na łatwe tworzenie treści bez posiadania wiedzy z zakresu pr
 
 Aby utworzyć artykuł, przejdź do sekcji `Wpisy`{.action} w menu po lewej stronie, następnie kliknij `Dodaj nowy`{.action}:
 
-![WordPress - Posts/Add New](images/dashboard-add-new-post.png){.thumbnail}
+![WordPress - Posts/Add New](/pages/assets/screens/other/cms/wordpress/dashboard-add-new-post.png){.thumbnail}
 
 Od wersji 5 **WordPress** oferuje interfejs umożliwiający prostsze redagowanie i publikację artykułów: **Gutenberg**. Jest to edytor WYSIWYG ("*what you see is what you get*"). Umożliwia tworzenie strony bezpośrednio poprzez dodawanie elementów takich jak tytuły, akapity, listy, obrazy, etc. :
 
-![WordPress - Gutenberg](images/post-editor.png){.thumbnail}
+![WordPress - Gutenberg](/pages/assets/screens/other/cms/wordpress/post-editor.png){.thumbnail}
 
 Kliknij polecenie `Dodaj tytuł`{.action}, aby dodać tytuł na swojej stronie:
 
-![WordPress - Gutenberg, add title](images/post-editor-2.png){.thumbnail}
+![WordPress - Gutenberg, add title](/pages/assets/screens/other/cms/wordpress/post-editor-2.png){.thumbnail}
 
 Aby dodać zawartość, kliknij na znak `+`{.action} i wybierz, co chcesz wstawić:
 
-![WordPress - Gutenberg, add block](images/post-editor-3.png){.thumbnail}
+![WordPress - Gutenberg, add block](/pages/assets/screens/other/cms/wordpress/post-editor-3.png){.thumbnail}
 
 Z prawej strony Twojej strony możesz wykonać następujące operacje:
 
@@ -97,7 +97,7 @@ Z prawej strony Twojej strony możesz wykonać następujące operacje:
 
 W naszym **przykład** kliknij `Podgląd`{.action}, następnie `Podejrzyj w nowej zakladce`{.action}. Wybierz typ urządzenia, na którym wykonasz renderowanie (komputer, tablet lub smartfon):
 
-![WordPress - Preview](images/post-view.png){.thumbnail}
+![WordPress - Preview](/pages/assets/screens/other/cms/wordpress/post-view.png){.thumbnail}
 
 Aby powrócić do interfejsu administracyjnego **WordPress**, w lewym górnym rogu kliknij ikonę.
 
@@ -105,7 +105,7 @@ Aby powrócić do interfejsu administracyjnego **WordPress**, w lewym górnym ro
 
 **WordPress** pozwala na zdefiniowanie kategorii i powiązanie artykułów z jedną lub kilkoma z nich. Aby zarządzać kategoriami Twojej strony WWW, przejdź do sekcji `Wpisy`{.action}, a następnie do sekcji `Kategorie`{.action}:
 
-![WordPress - Categories](images/categories.png){.thumbnail}
+![WordPress - Categories](/pages/assets/screens/other/cms/wordpress/categories.png){.thumbnail}
 
 Wpisz teraz formularz, aby dodać nową kategorię:
 
@@ -114,25 +114,25 @@ Wpisz teraz formularz, aby dodać nową kategorię:
 - **Kategoria rodzicielska**: pozwala na hierarchizację kategorii (kategoria, którą tworzysz może być podkategorią istniejącej kategorii).
 - **Opis**: opis kategorii może być jednak widoczny w niektórych tematach.
 
-![WordPress - Categories filled](images/categories-2.png){.thumbnail}
+![WordPress - Categories filled](/pages/assets/screens/other/cms/wordpress/categories-2.png){.thumbnail}
 
 Po podaniu tych informacji kliknij przycisk `Utwórz kategorię`{.action}:
 
-![WordPress - Categories added](images/categories-3.png){.thumbnail}
+![WordPress - Categories added](/pages/assets/screens/other/cms/wordpress/categories-3.png){.thumbnail}
 
 Masz możliwość zarządzania hierarchią swoich kategorii. Nowa kategoria może być powiązana z istniejącą kategorią:
 
-![WordPress - SubcaKategoria added](images/categories-4.png){.thumbnail}
+![WordPress - SubcaKategoria added](/pages/assets/screens/other/cms/wordpress/categories-4.png){.thumbnail}
 
 ### przypisanie kategorii do artykułu
 
 Aby przypisać artykuł do jednej lub kilku kategorii, kliknij na `Wpisy` (Posty). Będziesz mieć listę zawierającą wszystkie artykuły i ich statusy. Przejdź do tematu artykułu, który chcesz sklasyfikować i kliknij na `Szybka edycja`{.action}:
 
-![WordPress - Categorize a post](images/posts-lists.png){.thumbnail}
+![WordPress - Categorize a post](/pages/assets/screens/other/cms/wordpress/posts-lists.png){.thumbnail}
 
 Możesz zmienić kategorie zaznaczając lub usuwając elementy wymienione w kolumnie `Kategorie`{.action}:
 
-![WordPress - Set new categories to an existing post](images/posts.png){.thumbnail}
+![WordPress - Set new categories to an existing post](/pages/assets/screens/other/cms/wordpress/posts.png){.thumbnail}
 
 > [!warning]
 >
@@ -145,7 +145,7 @@ Strony należy odróżnić od artykułów. Zasadniczo są one wykorzystywane do 
 
 Przejdź do strony `Strony`{.action}:
 
-![WordPress - Go to page](images/pages.png){.thumbnail}
+![WordPress - Go to page](/pages/assets/screens/other/cms/wordpress/pages.png){.thumbnail}
 
 > [!primary]
 >
@@ -154,15 +154,15 @@ Przejdź do strony `Strony`{.action}:
 
 Kliknij na `Dodaj nowy`{.action}. Wówczas pojawił się redaktor Gutenberg:
 
-![WordPress - Parges, Gutenberg page builder](images/pages-editor.png){.thumbnail}
+![WordPress - Parges, Gutenberg page builder](/pages/assets/screens/other/cms/wordpress/pages-editor.png){.thumbnail}
 
 Stwórz zawartość swojej strony i publikuj:
 
-![WordPress - Strony, content](images/post-editor-4.png){.thumbnail}
+![WordPress - Strony, content](/pages/assets/screens/other/cms/wordpress/post-editor-4.png){.thumbnail}
 
 Możesz powrócić na stronę główną Twojej strony WWW, otrzymasz link do nowej strony:
 
-![WordPress - Home page with new page link](images/main-page-view.png){.thumbnail}
+![WordPress - Home page with new page link](/pages/assets/screens/other/cms/wordpress/main-page-view.png){.thumbnail}
 
 ### Popraw permalię
 
@@ -170,11 +170,11 @@ Domyślnie linki na Twoich stronach **WordPress** są napisane z składnią typu
 
 Na stronie głównej dashboardu przejdź do `Ustawienia`{.action}, a następnie kliknij `Bezpośrednie odnośniki`{.action}:
 
-![WordPress - Settings/Permalinks](images/dashboard-users-permalinks.png){.thumbnail}
+![WordPress - Settings/Permalinks](/pages/assets/screens/other/cms/wordpress/dashboard-users-permalinks.png){.thumbnail}
 
 Masz wybór między kilkoma rodzajami permalinków. Wybierz "Tytuł publikacji" i zatwierdź na dole strony:
 
-![WordPress - Settings/Permalinks, select post name pattern](images/permalink-settings.png){.thumbnail}
+![WordPress - Settings/Permalinks, select post name pattern](/pages/assets/screens/other/cms/wordpress/permalink-settings.png){.thumbnail}
 
 Twoje linki zostaną zbudowane na podstawie wcześniej podanego sluga podczas edycji artykułów i stron.
 

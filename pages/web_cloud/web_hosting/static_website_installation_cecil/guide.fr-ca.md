@@ -67,7 +67,7 @@ Renseignez les éléments demandés:
 - l'URL de votre site web (par exemple, `https://mywebsite.ovh`)
 - une description de votre site web
 
-![Installation Cecil](images/static_website_installation_cecil01.png){.thumbnail}
+![Installation Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil01.png){.thumbnail}
 
 Une fois ces éléments renseignés, vous devez maintenant déployer le site en tapant la commande suivante:
 
@@ -77,11 +77,11 @@ php cecil.phar build
 
 En affichant le contenu du répertoire, vous constaterez la présence d'un répertoire `_site`. Ce répertoire contiendra l'ensemble des fichiers HTML et des assets:
 
-![Installation Cecil](images/static_website_installation_cecil02.png){.thumbnail}
+![Installation Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil02.png){.thumbnail}
 
 Vous pouvez maintenant voir le résultat en vous rendant sur votre nom de domaine:
 
-![Installation Cecil](images/static_website_installation_cecil03.png){.thumbnail}
+![Installation Cecil](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil03.png){.thumbnail}
 
 #### Configuration du pointage du domaine ou sous-domaine
 
@@ -99,7 +99,7 @@ nano config.yml
 
 Remplacez les informations par défaut par les vôtres et sauvegardez le fichier.
 
-![Fichier de configuration YAML](images/static_website_installation_cecil04.png){.thumbnail}
+![Fichier de configuration YAML](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil04.png){.thumbnail}
 
 ### Créer une nouvelle page
 
@@ -125,7 +125,7 @@ Un fichier `mypage.md` est alors créé à la racine du répertoire `/pages`.
 
 Remplacez `mypage` par le nom de votre propre page.
 
-![Installation Cecil](images/static_website_installation_cecil05.png){.thumbnail}
+![Installation Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil05.png){.thumbnail}
 
 #### Générer les fichiers statiques
 
@@ -141,7 +141,7 @@ Votre fichier se trouve dans le répertoire `_site/mypage/`:
 
 Vous pouvez le visualiser sur votre serveur en tapant l'URL de votre site, suivi de `/mypage/`:
 
-![Résultat navigateur](images/static_website_installation_cecil07.png){.thumbnail}
+![Résultat navigateur](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil07.png){.thumbnail}
 
 ### Personnaliser les fichiers de votre site
 
@@ -158,11 +158,11 @@ Les captures d'écran du présent tutoriel ont été réalisées sous **GNU nano
 
 Remplacez `mypage` par le nom de votre propre page.
 
-![Édition du fichier dans GNU nano](images/static_website_installation_cecil08.png){.thumbnail}
+![Édition du fichier dans GNU nano](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil08.png){.thumbnail}
 
 Ajoutez quelques lignes en respectant la syntaxe _Markdown_:
 
-![Ajout de contenu dans le fichier](images/static_website_installation_cecil09.png){.thumbnail}
+![Ajout de contenu dans le fichier](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil09.png){.thumbnail}
 
 Supprimez les fichiers dans le cache à l'aide de la commande suivante:
 
@@ -178,17 +178,17 @@ php cecil.phar build
 
 Puis retournez sur votre page pour voir le résultat:
 
-![Page mise à jour](images/static_website_installation_cecil10.png){.thumbnail}
+![Page mise à jour](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil10.png){.thumbnail}
 
 #### Modification sur votre poste de travail
 
 Si vous préférez utiliser votre éditeur de code habituel, connectez-vous avec un client FTP sur votre serveur pour récupérer les fichiers sur votre ordinateur:
 
-![Téléchargement avec FileZilla](images/cecil-folder.png){.thumbnail}
+![Téléchargement avec FileZilla](/pages/assets/screens/other/web-tools/filezilla/cecil-folder.png){.thumbnail}
 
 Vous pouvez maintenant éditer les fichiers dans votre I.D.E.:
 
-![Affichage dans Visual Studio Code](images/static_website_installation_cecil12.png){.thumbnail}
+![Affichage dans Visual Studio Code](/pages/assets/screens/other/web-tools/vscode/static_website_installation_cecil12.png){.thumbnail}
 
 Il vous suffit de renvoyer vos fichiers modifiés ou vos nouveaux fichiers sur votre serveur et de *rebuilder* pour avoir vos pages en ligne.
 

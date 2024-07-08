@@ -44,7 +44,7 @@ Consulte estos elementos antes de continuar.
 
 Acceda al enlace de acceso al panel de administración que le enviaremos por correo electrónico al instalar el CMS. Por defecto, la URL termina por `wp-admin`. Si no se ha autentificado en su panel de administración, **WordPress** le redirigirá automáticamente a su URL, que finalizará con `wp-login` :
 
-![WordPress - Admin login](images/admin-login.png){.thumbnail}
+![WordPress - Admin login](/pages/assets/screens/other/cms/wordpress/admin-login.png){.thumbnail}
 
 > [!primary]
 > 
@@ -53,7 +53,7 @@ Acceda al enlace de acceso al panel de administración que le enviaremos por cor
 
 Introduzca el usuario (o el "Nombre del administrador") que le haya proporcionado por correo electrónico y la "Contraseña de WordPress" que aparezca en el mismo mensaje de correo electrónico. Se abrirá el panel de control.
 
-![WordPress - Dashboard](images/dashboard.png){.thumbnail}
+![WordPress - Dashboard](/pages/assets/screens/other/cms/wordpress/dashboard.png){.thumbnail}
 
 ### Cambiar el tema de su sitio WordPress
 
@@ -61,11 +61,11 @@ Introduzca el usuario (o el "Nombre del administrador") que le haya proporcionad
 
 Para cambiar el tema, sitúese en el menú de la izquierda del panel, haga clic en `Aparienca`{.action} y seleccione `Temas`{.action}.
 
-![WordPress - Appearance/Temes](images/dashboard-themes.png){.thumbnail}
+![WordPress - Appearance/Temes](/pages/assets/screens/other/cms/wordpress/dashboard-themes.png){.thumbnail}
 
 Elija un tema de los propuestos y haga clic en `Activar`{.action} :
 
-![WordPress - Appearance/Temes](images/themes.png){.thumbnail}
+![WordPress - Appearance/Temes](/pages/assets/screens/other/cms/wordpress/themes.png){.thumbnail}
 
 Puede consultar el resultado en su sitio web con su dominio.
 
@@ -75,19 +75,19 @@ WordPress le permite crear fácilmente contenido sin tener conocimientos de desa
 
 Para crear un artículo, acceda a la sección `Entradas`{.action} del menú de la izquierda y haga clic en `Añadir nueva`{.action}.
 
-![WordPress - Posts/Add New](images/dashboard-add-new-post.png){.thumbnail}
+![WordPress - Posts/Add New](/pages/assets/screens/other/cms/wordpress/dashboard-add-new-post.png){.thumbnail}
 
 Desde la versión 5, **WordPress** propone una interfaz para simplificar la redacción y la puesta en forma de los artículos: **Gutenberg**. Se trata de un editor WYSIWYG ("*what you see is what you get*"). Le permite componer directamente su página añadiendo elementos como títulos, párrafos, listas, imágenes, etc. :
 
-![WordPress - Gutenberg](images/post-editor.png){.thumbnail}
+![WordPress - Gutenberg](/pages/assets/screens/other/cms/wordpress/post-editor.png){.thumbnail}
 
 Haga clic en `Escribe un título`{.action} para añadir un título a su página:
 
-![WordPress - Gutenberg, add title](images/post-editor-2.png){.thumbnail}
+![WordPress - Gutenberg, add title](/pages/assets/screens/other/cms/wordpress/post-editor-2.png){.thumbnail}
 
 Para añadir contenido, haga clic en el signo `+`{.action} y seleccione lo que desea insertar:
 
-![WordPress - Gutenberg, add block](images/post-editor-3.png){.thumbnail}
+![WordPress - Gutenberg, add block](/pages/assets/screens/other/cms/wordpress/post-editor-3.png){.thumbnail}
 
 A la derecha de su página, puede realizar las siguientes acciones:
 
@@ -97,7 +97,7 @@ A la derecha de su página, puede realizar las siguientes acciones:
 
 En nuestro **ejemplo**, haga clic en el botón `Vista previa`{.action} y, seguidamente, en `Previsualizar en nueva pestaña`{.action}. Elija el tipo de dispositivo a procesar (PC, tablet o smartphone):
 
-![WordPress - Preview](images/post-view.png){.thumbnail}
+![WordPress - Preview](/pages/assets/screens/other/cms/wordpress/post-view.png){.thumbnail}
 
 Para volver al panel de administración de **WordPress**, haga clic en el icono superior izquierdo.
 
@@ -105,7 +105,7 @@ Para volver al panel de administración de **WordPress**, haga clic en el icono 
 
 **WordPress** permite definir categorías y asociar sus artículos con una o más de ellas. Para gestionar las categorías de su sitio web, acceda a la sección `Entradas`{.action} y, seguidamente, a la sección `Categorías`{.action}.
 
-![WordPress - Categories](images/categories.png){.thumbnail}
+![WordPress - Categories](/pages/assets/screens/other/cms/wordpress/categories.png){.thumbnail}
 
 Introduzca el formulario para añadir una nueva categoría:
 
@@ -114,25 +114,25 @@ Introduzca el formulario para añadir una nueva categoría:
 - **Categoría parente**: permite jerarquizar las categorías (la categoría que se cree puede ser una subcategoría de una categoría existente).
 - **Descripción**: la descripción de su categoría, que no es aparente por defecto, puede hacerse visible por algunos temas.
 
-![WordPress - Categories filled](images/categories-2.png){.thumbnail}
+![WordPress - Categories filled](/pages/assets/screens/other/cms/wordpress/categories-2.png){.thumbnail}
 
 Una vez que haya introducido los datos, haga clic en el botón `Añadir una nueva categoría`{.action}.
 
-![WordPress - Categories added](images/categories-3.png){.thumbnail}
+![WordPress - Categories added](/pages/assets/screens/other/cms/wordpress/categories-3.png){.thumbnail}
 
 Puede administrar la jerarquía de las categorías. Una nueva categoría puede vincularse a una categoría existente:
 
-![WordPress - Sub-categories added](images/categories-4.png){.thumbnail}
+![WordPress - Sub-categories added](/pages/assets/screens/other/cms/wordpress/categories-4.png){.thumbnail}
 
 ### Asociar una categoría a un artículo
 
 Para asignar un artículo a una o más categorías, haga clic en `Entradas` (Posts). Tendrá una lista con todos los artículos y sus estados. Vuelva al título del artículo que desea clasificar y haga clic en `Edición rápida`{.action} :
 
-![WordPress - Categorize a post](images/posts-lists.png){.thumbnail}
+![WordPress - Categorize a post](/pages/assets/screens/other/cms/wordpress/posts-lists.png){.thumbnail}
 
 A continuación, puede modificar las categorías marcando o desmarcando los elementos listados en la columna `Categorías`{.action} :
 
-![WordPress - Set new categories to an existing post](images/posts.png){.thumbnail}
+![WordPress - Set new categories to an existing post](/pages/assets/screens/other/cms/wordpress/posts.png){.thumbnail}
 
 > [!warning]
 >
@@ -145,7 +145,7 @@ Las páginas deben distinguirse de los artículos. Sirven básicamente para escr
 
 Acceda a la página `Pages`{.action} :
 
-![WordPress - Go to pages](images/pages.png){.thumbnail}
+![WordPress - Go to pages](/pages/assets/screens/other/cms/wordpress/pages.png){.thumbnail}
 
 > [!primary]
 >
@@ -154,15 +154,15 @@ Acceda a la página `Pages`{.action} :
 
 Haga clic en `Añadir nueva`{.action}. El editor Gutenberg publicó lo siguiente:
 
-![WordPress - Pages, Gutenberg page builder](images/pages-editor.png){.thumbnail}
+![WordPress - Pages, Gutenberg page builder](/pages/assets/screens/other/cms/wordpress/pages-editor.png){.thumbnail}
 
 Cree el contenido de su página y póngala en su cuenta:
 
-![WordPress - Pages, content](images/post-editor-4.png){.thumbnail}
+![WordPress - Pages, content](/pages/assets/screens/other/cms/wordpress/post-editor-4.png){.thumbnail}
 
 Puede volver a la página de inicio de su sitio web, dispondrá de un enlace hacia su nueva página :
 
-![WordPress - Home page with new page link](images/main-page-view.png){.thumbnail}
+![WordPress - Home page with new page link](/pages/assets/screens/other/cms/wordpress/main-page-view.png){.thumbnail}
 
 ## Mejorar los permalienses
 
@@ -170,11 +170,11 @@ Por defecto, los enlaces de sus páginas **WordPress** se escriben con una sinta
 
 En la página de inicio del cuadro de mando, acceda a `Ajustes`{.action} y, seguidamente, a `Enlaces permanentes`{.action} :
 
-![WordPress - Settings/Permalinks](images/dashboard-users-permalinks.png){.thumbnail}
+![WordPress - Settings/Permalinks](/pages/assets/screens/other/cms/wordpress/dashboard-users-permalinks.png){.thumbnail}
 
 Puede elegir entre varios tipos de permalienses. Seleccione el "Título de la publicación" y acepte en la parte inferior de la página:
 
-![WordPress - Settings/Permalinks, select post name pattern](images/permalink-settings.png){.thumbnail}
+![WordPress - Settings/Permalinks, select post name pattern](/pages/assets/screens/other/cms/wordpress/permalink-settings.png){.thumbnail}
 
 Los enlaces se construirán a partir del slug que haya indicado anteriormente al editar sus artículos y páginas.
 
