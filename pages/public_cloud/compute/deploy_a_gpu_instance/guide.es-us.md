@@ -1,29 +1,31 @@
 ---
 title: 'Desplegar una instancia GPU'
 excerpt: 'Cómo desplegar una instancia GPU en Linux o Windows'
-updated: 2019-12-06
+updated: 2024-07-08
 ---
 
 ## Objetivo
 
-Las instancias de GPU son técnicamente similares a las instancias de la gama de 2017, pero también cuentan con una tarjeta gráfica (unidad de procesamiento gráfico o GPU). La tecnología usada (*pci_passthrough*) permite que el sistema operativo de la instancia controle la GPU de la misma forma en la que lo haría una máquina física.
+Las instancias GPU son técnicamente similares a las instancias de la gama 2017, pero disponen además de una tarjeta gráfica (Graphic Processing Unit o GPU). La tecnología utilizada (*pci_passthrough*) permite que el sistema operativo de la instancia controle la GPU exactamente igual que en una máquina física.
 
-Las GPU que se ofrecen son las NVIDIA Tesla V100. 
+Las GPU que se ofrecen son las NVIDIA Tesla V100 y V100s.
 
 > [!warning]
 >
-> Actualmente, las instancias de GPU solo están disponibles en los centros de datos GRA3, GRA5, GRA7 y BHS3. Puede que tenga que crear un nuevo proyecto y elegir la nueva gama de 2017. 
+> Actualmente, la mayoría de nuestras antiguas instancias GPU solo están disponibles en las regiones GRA7, GRA9, GRA11 y BHS5. Por el momento, los modelos más recientes sólo están disponibles en GRA11.
 > 
 
 **Esta guía explica cómo instrumentar una instancia de GPU en Linux o Windows**
 
 ## Requisitos
 
-- Un proyecto de Public Cloud con acceso a las regiones en las que las GPU están disponibles (GRA3, GRA5, GRA7 y BHS3)
+- Un proyecto Public Cloud con acceso a las regiones en las que están disponibles la mayoría de las GPU (GRA7, GRA9, GRA11 y BHS5).
+- [Una llave SSH](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys) creada para desplegar una instancia GPU Linux.
 
 ## Procedimiento
 
 A continuación, encontrará la información necesaria para instrumentar una instancia de GPU en Linux o Windows.
+
 Tenga en cuenta que no puede cambiar el sistema operativo de la instancia de Linux a Windows, o viceversa. Por tanto, asegúrese de crear la instancia con el sistema operativo correcto por defecto.
 
 ### En Linux
@@ -35,22 +37,20 @@ Todas las imágenes que ofrecemos pueden utilizarse en una instancia de GPU.
 > Si no se siente a gusto con la compilación manual de un módulo kernel, le recomendamos usar una distribución con soporte oficial de Nvidia y para la que se proporcionen controladores *listos para usar*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Una vez iniciada sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action}y elija una instancia de GPU:
+Una vez conectado a su [área de cliente de OVHcloud](/links/manager), haga clic en la pestaña `Public Cloud`{.action}. Seleccione su proyecto de Public Cloud y haga clic en `Instances`{.action} en el menú de la izquierda de la pestaña **Compute**. A continuación, haga clic en `Crear una instancia`{.action} y seleccione una instancia GPU compatible:
 
-![public-cloud](images/gpu.png){.thumbnail}
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-A continuación, seleccione el sistema operativo Linux de su elección:
+A continuación, siga los pasos que se describen en [esta guía](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). Este proceso puede tardar unos minutos.
 
-![public-cloud](images/linuxchoice.png){.thumbnail}
-
-La instancia se iniciará unos segundos más tarde. A continuación, puede iniciar sesión y buscar la tarjeta gráfica: 
+Una vez entregada la instancia, puede conectarse a ella y comprobar la presencia de la tarjeta gráfica:
 
 ```bash
 lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-La tarjeta gráfica está ahí, pero todavía no puede utilizarse. Para ello, primero debe instalar el controlador NVIDIA. Puede encontrar la lista de los paquetes en esta dirección: [Lista de paquetes Linux disponibles](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+La tarjeta gráfica está ahí, pero todavía no puede utilizarse. Para ello, primero debe instalar el controlador NVIDIA. Puede encontrar la lista de los paquetes en esta dirección: [Lista de paquetes Linux disponibles](https://developer.download.nvidia.com/compute/cuda/repos/){.external}.
 
 A continuación, deberá introducir los siguientes comandos:
 
@@ -68,7 +68,7 @@ sudo reboot
 > El comando de Linux puede variar en función de su distribución. Si tiene dudas, consulte la guía oficial de su versión de Linux.
 > 
 
-Cuando su instancia se haya reiniciado, la tarjeta gráfica aparecerá en el programa de utilidades de NVIDIA:
+Una vez reiniciada la instancia, la tarjeta gráfica aparecerá en la utilidad NVIDIA:
 
 ```sh
 nvidia-smi
@@ -96,25 +96,67 @@ A partir de ahí, la instancia de GPU estará completamente funcional y podrá u
 ### En Windows
 
 Existen incompatibilidades entre el controlador NVIDIA y la solución de virtualización *KVM/pci_passthrough*. **Las imágenes estándar de Windows no funcionan.**
-Por ello, ofrecemos imágenes especiales, basadas en una BIOS UEFI virtual que permite que el controlador funcione correctamente (solo en el caso de instancias de G1, G2 y G3, gama 2017 y anteriores).
 
-Una vez iniciada sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action} y elija una instancia de GPU:
+Proporcionamos imágenes especiales, basadas en una BIOS virtual UEFI, que permiten que el driver funcione correctamente:
 
-![public-cloud](images/gpu.png){.thumbnail}
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
-A continuación, seleccione el Windows de su elección: 
+> [!warning]
+>
+> Ofrecemos la posibilidad de instalar imágenes especiales en algunos modelos seleccionados (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). Además, en función de la región seleccionada, es posible que estas imágenes especiales no estén disponibles.
+>
 
-![public-cloud](images/oschoice.png){.thumbnail}
+Una vez conectado a [su área de cliente de OVHcloud](/links/manager), acceda a su proyecto Public Cloud y haga clic en `Instances`{.action} en el menú de la izquierda de la pestaña **Compute**. A continuación, haga clic en `Crear una instancia`{.action} y seleccione una instancia GPU compatible :
+
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
+
+En el siguiente paso, vaya a la pestaña `Distribuciones Windows` y haga clic en la flecha desplegable para seleccionar la imagen Windows compatible:
+
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
+
+A continuación, siga los pasos que se describen en [esta guía](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). Este proceso puede tardar unos minutos.
+
+#### Conexión a una instancia Windows
+
+Una vez creada su instancia, deberá completar la instalación de Windows (_sysprep_). Para ello, haga clic en el botón `...`{.action} y seleccione `Detalles de la instancia`{.action}. Acceda a la pestaña `Consola VNC`{.action}. La consola deberá mostrar la interfaz de post-instalación.
+
+![windows sysprep](images/windows-connect-01.png){.thumbnail}
+
+En primer lugar, seleccione el país, el idioma y la distribución del teclado. A continuación, haga clic en `Siguiente`{.action}.
+
+![windows sysprep](images/windows-connect-02.png){.thumbnail}
+
+En segundo lugar, deberá configurar la cuenta del administrador por defecto. Introduzca su contraseña y, por último, haga clic en `Finalizar`{.action} para completar el proceso de instalación. Puede utilizar el icono con forma de ojo para comprobar que los caracteres introducidos en el campo de la contraseña coinciden con la distribución de su teclado.
+
+La instancia se reiniciará y podrá conectarse utilizando sus claves desde un cliente de escritorio remoto. 
+
+##### **En Windows**
+
+Si lo necesita, utilice el cuadro de búsqueda de Windows y abra la aplicación de «Conexión a Escritorio remoto».
+
+![windows remote](images/windows-connect-03.png){.thumbnail}
+
+Indique la dirección IPv4 de su instancia y el usuario "Administrator" y, a continuación, introduzca su frase de contraseña. Al tratarse de un certificado desconocido, es probable que aparezca un mensaje de aviso pidiéndole que confirme la conexión. Confirme que quiere conectarse a la instancia.
+
+> [!primary]
+>
+Si tiene problemas para conectarse, compruebe que el dispositivo permite las conexiones remotas (RDP). Para ello, consulte la configuración de su sistema, las reglas de firewall y las posibles restricciones de red.
+>
 
 Cuando se haya iniciado su instancia de GPU, deberá instalar el controlador NVIDIA desde el [sitio web oficial](https://www.nvidia.com/Download/index.aspx){.external}.
-
-Inicie una instancia usando uno de los tipos de GPU disponibles (t1-45, t1-90, t1-180, etc.). Solo debería tardar unos minutos.
 
 Después, todo lo que falta por hacer es instalar el controlador necesario, el cual se mostrará aquí:
 
 ![public-cloud](images/driverson.png){.thumbnail}
 
 ![public-cloud](images/devicemanager.png){.thumbnail}
+
+> [!warning]
+>
+> No podemos garantizar que la solución funcione con todas las versiones futuras del driver NVIDIA.
+>
+> Antes de actualizar el driver NVIDIA, le recomendamos encarecidamente que realice un snapshot de su instancia para poder volver atrás en caso necesario.
+>
 
 ## Más información
 
