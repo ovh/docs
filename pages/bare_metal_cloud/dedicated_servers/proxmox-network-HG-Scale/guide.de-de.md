@@ -15,11 +15,11 @@ updated: 2024-07-08
 
 ## Ziel
 
-Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Das Gleiche gilt für die neuen Server der neuesten Generation, die mit den AMD Epyc 4K und 8K CPUs ausgeliefert werden. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
+Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Das Gleiche gilt für neue Server der neuesten Generation, die mit AMD Epyc 4K und 8K CPUs ausgeliefert werden. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
 
 > [!primary]
 >
-> Bis Ende 2024 wird diese Funktion für alle High Grade, SCALE und ADVANCE Reihen geliefert.
+> Bis Ende 2024 wird diese Funktion für die Reihen High Grade, SCALE und ADVANCE verfügbar sein.
 >
 
 **Diese Anleitung erklärt, wie Sie das Netzwerk mit Proxmox VE konfigurieren.**
