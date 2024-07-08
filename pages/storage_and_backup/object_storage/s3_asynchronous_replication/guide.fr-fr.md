@@ -82,12 +82,12 @@ Le tableau suivant présente le comportement **par défaut** de la fonctionnalit
 |-----------------------------------------------------------|--------------------------------------------------------------|
 | Objets créés *après* l'application de la configuration de réplication | Les marqueurs de suppression, c'est-à-dire que les objets supprimés dans le bucket source ne sont pas automatiquement supprimés par défaut dans le bucket destinataire |
 | Objets non chiffrés | Les réplicas d’objets, c’est-à-dire les objets résultant d’une opération de réplication précédente |
-|  | Objets déjà répliqués vers une destination précédente |
-| Métadonnées d'objet des objets sources vers les réplicas | Objets stockés dans le stockage temporaire Cold Archive |
-| Les objets du bucket source dont le propriétaire dispose des autorisations nécessaires pour lire et accéder aux ACL | Configurations de buckets, c’est-à-dire configuration du cycle de vie, configuration CORS, ACL de buckets, etc. |
-| Mises à jour de la liste de contrôle d'accès des objets | Actions résultant des actions de configuration du cycle de vie |
-| Tags d'objets | Objets créés *avant* l'upload de la configuration de réplication |
-| Configuration de la rétention des verrous d'objet S3 | Réplication vers un bucket dans un autre projet Public Cloud, c'est-à-dire que les buckets source et de destination doivent se trouver dans le même projet |
+| Métadonnées d'objet des objets sources vers les réplicas | Objets déjà répliqués vers une destination précédente |
+| Les objets du bucket source dont le propriétaire dispose des autorisations nécessaires pour lire et accéder aux ACL | Objets stockés dans le stockage temporaire Cold Archive |
+| Mises à jour de la liste de contrôle d'accès des objets | Configurations de buckets, c’est-à-dire configuration du cycle de vie, configuration CORS, ACL de buckets, etc. |
+| Tags d'objets | Actions résultant des actions de configuration du cycle de vie |
+| Configuration de la rétention des verrous d'objet S3 | Objets créés *avant* l'upload de la configuration de réplication |
+| | Réplication vers un bucket dans un autre projet Public Cloud, c'est-à-dire que les buckets source et de destination doivent se trouver dans le même projet |
 
 ### Configuration de la réplication
 
