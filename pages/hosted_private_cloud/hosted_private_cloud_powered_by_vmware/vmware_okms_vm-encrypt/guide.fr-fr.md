@@ -359,7 +359,7 @@ Une fois que vous avez cliqué sur Web interface, cliquez sur `vSphere HTML Clie
 
 ![Manager Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_web_interface_pcc.png){.thumbnail}
 
-Vous êtes maintenance sur l'url de votre pcc, par exemple : 
+Vous êtes maintenant sur l'url de votre pcc, par exemple: 
 - `<https://pcc-x.x.x.x.ovh.de/ui/>`{.action}
 
 Connectez-vous avec un utilisateur local ou avec un utilisateur IAM selon les droits que vous avez mis en place au sein de votre compte OVHcloud et de votre PCC HPC.
@@ -368,7 +368,7 @@ Vous êtes maintenant logué au sein de votre Hosted Private Cloud vSphere on OV
 
 Pour accéder à la gestion des serveurs KMS dans vSphere, cliquer sur: `Configurer`{.action} depuis votre **pcc-XXX-XXX-XXX-XXX**.
 
-Puis, allez dans la section **Security** : `Fournisseurs de clés`{.action}.
+Puis, allez dans la section **Securité** : `Fournisseurs de clés`{.action}.
 
 Il vous faut maintenant, cliquez sur: `Ajouter > Ajouter un fournisseur de clé standard`{.action}.
 
@@ -738,7 +738,7 @@ Pour activer le chiffrement au sein de vSphere, vous devez disposer des droits s
 
 Si vous n'avez pas déja de politique IAM crée, nous allons en créer une afin de lister les étapes nécessaires.
 
-Il faut vous connecter à votre [OVHcloud management console](/links/manager).
+Il faut vous connecter à votre [OVHcloud control panel](/links/manager).
 
 Aller dans IAM en cliquant en hait à droite sur: ` Mon compte > mon utilisateur > IAM > Créer une politique`{.action}.
 
@@ -774,13 +774,93 @@ Votre politique est créée, vous pouvez maintenant activer le chiffrement au se
 
 /// details | Comment activer le chiffrement dans vSphere et générer une clé Okms ?
 
+Nous allons dans l'étape 6 finaliser l'activation du KMS OVHcloud avec la mise en place du chiffrement sur une machine virtuelle gràce à une `Politique de stockage`{.action} précédemment créée.
+
+Cette politique de stockage utilise des règles basées au niveau de l'hôte. Vous devez donc avoir bien créé cette politique, activé `Règles basées sur l'hôte`{.action} dans les services basés sur l'hôte puis avoir aussi activé les composants de stratégie de stockage. 
+
+Si vous ne savez pas comment faire, nous allons ici detailer la création d'une politique ainsi que les éléments détaillés ci-dessus.
+
+Vous devez comment aux étapes précédentes vous connecter à votre [OVHcloud control panel](/links/manager)
+
+Puis à votre web interface pcc vSphere:
+
+![Manager Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_web_interface_pcc.png){.thumbnail}
+
+Vous êtes maintenant sur l'url de votre pcc, par exemple :
+- `<https://pcc-x.x.x.x.ovh.xx/ui/>`{.action}
+
+Connectez-vous avec un utilisateur local ou avec un utilisateur IAM selon les droits que vous avez mis en place au sein de votre compte OVHcloud et de votre PCC HPC.
+
+Vous êtes maintenant logué au sein de votre Hosted Private Cloud vSphere on OVHcloud.
+
+### Création d'une politique de stockage
+
+Pour créer une politique de stockage afin de pouvoir activer le chiffrement au sein de vos machines virtuelles avec un KMS OVHcloud. Il vous faut accéder au vSphere de votre PCC. Si vous avez suivi les étapes précédentes, vous devez être deja connectez à vSphere. Après avoir ajouté votre KMS OVHcloud.
+
+Vous devez maintenant, aller dans: `Politiques et profiles > Stratégies de stockage VM`{.action}.
+
+Vous devez maintenance créer une Stratégie.
+
+Cliquez sur: `CRÉER`{.action} dans **Stratégies de stockage VM**.
+
+La fenêtre de création de stratégie s'ouvre maintenant, vous êtes à l'étape 1: `Nom et description`{.action}.
+
+Vous devez determiner votre serveur vCenter, qui est votre PCC sur lequel vous voulez créer votre stratégie de stockage.
+
+Une fois votre `PCC-XXX-XXX-XXX-XXX.ovh.XX`{.action} choisie, votre `Nom`{.action} et `Description`{.action}.
+
+Vous pouvez cliquer sur: `SUIVANT`{.action} pour continuer.
+
+![VM Storage Policies Creation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie.png){.thumbnail}
+
+Vous arrivez à l'étape 2, **Structure de la stratégie.**
+
+Nous allons ici activer les **stratégies de règles basées sur l'hôte**. Cochez la case: `Activer les règles basées sur l'hôte`{.action}.
+
+Pour continuer, cliquez sur: `SUIVANT`{.action}.
+
+![VM Storage Policies Creation 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_2.png){.thumbnail}
+
+Pour l'étape 3, vous devez confirmer les choix de l'étape précédentes en activant la validation du composant de stratégie de stockages (la chiffrement).
+
+Nous allons pour les besoins de ce guide, laisser le réglage par défaut: `Default encryption properties`{.action}.
+
+Vous devez donc cliquer sur: `Chiffrement`, 
+
+Puis **utiliser le composant de stratégie de stockage:** `Default encryption properties`{.action}.
+
+- **Composant de stratégie de stockage:** Default encryption properties.
+- **Description:** Storage policy component for VM and virtual disk encryption.
+- **Fournisseur:** Chiffrement de VM VMware.
+- **Autoriser les filtres d'E/S avant le chiffrement:** False.
+
+Pour votre information, selon VMware: Ces services de données disponibles peuvent inclure le chiffrement, le contrôle d'E/S, la mise en cache, etc. / Les services basés sur l'hôte seront appliqués en complément des règles spécifiques aux banques de données.
+
+Pour terminer l'étape 3, cliquez sur: `SUIVANT`{.action}.
+
+![VM Storage Policies Creation 03](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_3.png){.thumbnail}
+
+Pour l'étape 4, compatibilité de stockage. Vous avez la compatibilité et l'incompatibilité de votre centre de données (PCC) Hosted Private Cloud VMware on OVHcloud.
+
+Quand vous avez terminé de verifier les compatibilités de votre espace de stockage, cliquez sur: `SUIVANT`{action}.
+
+![VM Storage Policies Creation 04](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_4.png){.thumbnail}
+
+Et pour terminer à la dernière étape, l'étape 5, cliquez sur: `TERMINER`{.action}.
+
+Votre stratégies étant créée, vous pouvez maintenance procéder à l'activation du chiffrement sur une de vos machines virtuelles.
+
+![VM Storage Policies Creation 05](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_5.png){.thumbnail}
+
+### Activation du chiffrement sur une machine virtuelle
+
 Localisez la machine virtuelle (VM) que vous souhaitez chiffrer. Éteignez là si elle est allumé (obligatoire).
 
 Et faites un clic droit sur la machine virtuelle sélectionnée pour afficher le menu contextuel ou cliquez sur `ACTIONS`{.action}. 
 
-Puis, séléctionnez: `Stratégies de VM`{.action};
+Puis, sélectionnez: `Stratégies de VM`{.action}.
 
-Et, choisissez: `Modifier les stratégies de stockage VM`{.action}. 
+À la suite de ça, choisissez: `Modifier les stratégies de stockage VM`{.action}. 
 
 Cela ouvrira une fenêtre ou un panneau où vous pourrez modifier les politiques de stockage de la VM sélectionnée.
  
@@ -831,7 +911,7 @@ Pour décoder votre CSR, vous pouvez executer cette commande openssl avec votre 
 
 - `openssl req -in mycsr.csr -noout -text`{.action}.
 
-Ou alors utiliser un outil web plus graphique pour l'oeil, tel que : [sslshopper](https://www.sslshopper.com/csr-decoder.html){.external}.
+Ou alors utiliser un outil web plus graphique, tel que : [sslshopper](https://www.sslshopper.com/csr-decoder.html){.external}.
 
 **Certificate decode:**
 
@@ -839,7 +919,7 @@ Ou alors utiliser un outil web plus graphique pour l'oeil, tel que : [sslshopper
 
 **Certificate Key Matcher:**
 
-Afin de verifier si le CSR match votre certificat vous pouvez le faire avec ces commandes:
+Afin de verifier si le CSR match votre certificat, vous pouvez le faire avec ces commandes openssl:
 
 ```Shell
 openssl pkey -in privateKey.key -pubout -outform pem | sha256sum
@@ -871,16 +951,20 @@ Convert DER to PEM:
 
 ### Formater les CSR
 
-Adaptez la commande avec votre fichier CSR:
+Adaptez la commande avec votre fichier CSR.
 ```Shell
-# Formater for API:
+# Formater pour l'OVHcloud api :
 awk '{printf "%s\\n", $0}' file
 
-# Formater pour VMware:
+# Formater pour vSphere :
 awk '{gsub(/\\n/,"\n")}1' file
 ```
 
 ### Récupérer le certificat Okms
+
+SI vous rencontrez des difficultés lors du trust KMS, vous pouvez le télécharger manuellement en le (copie-coller) collant dans vSphere.
+
+Vous pouvez lancer ce snippet (il faut avoir python et openssl d'installé). Il permet de d'exporter et formater le certificat publique Okms.
 
 Changez l'input Okms avec l'url de la bone région. Vous devez avoir Python et openssl installé:
 ```Shell
