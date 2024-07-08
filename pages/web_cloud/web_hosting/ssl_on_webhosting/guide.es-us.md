@@ -83,9 +83,9 @@ Antes de realizar esta configuración, asegúrese de que ha realizado correctame
 >
 > Antes de continuar, asegúrese también de que el registro o registros multisitio para los que está activando la opción SSL apuntan a la dirección IP del alojamiento web. Esta configuración se ofrece automáticamente al añadir o modificar una entrada multisitio, pero debe realizarse manualmente para un dominio que no esté gestionado en el área de cliente.
 > - Localice la dirección IP de su alojamiento en la pestaña `Información general`{.action}, debajo de `IPv4`.
-> ![manager](images/find-ipv4.png){.thumbnail}
+> ![manager](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4.png){.thumbnail}
 > - Configure la zona DNS del nombre de dominio declarado en multisitio, en la sección `Dominios`{.action}, pestaña `Zona DNS`{.action}. Modifique o añada un registro `A` correspondiente al registro multisitio e indique la dirección IP de su alojamiento en el campo `Destino`.
-> ![manager](images/modify-an-entry.png){.thumbnail}
+> ![manager](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-an-entry.png){.thumbnail}
 >
 > Para más información, consulte nuestras guías [sobre la configuración de un registro multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite) o [sobre la configuración de una zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 
@@ -101,11 +101,11 @@ Haga clic en el botón `···`{.action} situado junto a **Certificado SSL** y s
 
 Si, por el contrario, se indica "Sí", significa que ya hay un certificado SSL instalado y configurado en el alojamiento web. No es posible contratar un nuevo certificado mientras tenga uno instalado.
 
-![Contratar un certificado SSL](images/order-an-ssl-certificate.png){.thumbnail}
+![Contratar un certificado SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
 En el cuadro de diálogo, seleccione el tipo de certificado SSL que quiera contratar. Es posible que, en función del [plan de hosting](/links/web/hosting){.external} o de su configuración, algunas de las opciones que explicamos a continuación no estén disponibles. Una vez que haya seleccionado el tipo de certificado, haga clic en `Siguiente`{.action}.
 
-![Contratar un certificado SSL](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
+![Contratar un certificado SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
 En función del tipo de certificado seleccionado, puede ser necesario realizar más acciones:
 
@@ -117,7 +117,7 @@ En función del tipo de certificado seleccionado, puede ser necesario realizar m
 
 La configuración del certificado podría tardar desde unos minutos hasta varios días en función del tipo de certificado elegido. Para comprobar si el certificado SSL está configurado en el alojamiento web, vaya a la pestaña **Información general** del área de cliente de OVHcloud. Bajo el epígrafe **Certificado SSL** debería aparecer la indicación "Sí".
 
-![Contratar un certificado SSL](images/tab-ssl-le.png){.thumbnail}
+![Contratar un certificado SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
 ### 3. Regenerar el certificado SSL de un alojamiento <a name="regeneratessl"></a>
 
@@ -130,13 +130,13 @@ Una vez que haya activado la conexión segura SSL en uno o más multisitios, su 
 
 Para ello, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}. Haga clic en el botón `···`{.action} situado junto a **Certificado SSL** y seleccione `Regenerar el certificado SSL`{.action}.
 
-![Contratar un certificado SSL](images/regenerate-ssl-certificate.png){.thumbnail}
+![Contratar un certificado SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/regenerate-ssl-certificate.png){.thumbnail}
 
 En el cuadro de diálogo, lea la información que se muestra y haga clic en `Aceptar`{.action} para confirmar la operación. Espere hasta que se regenere su certificado SSL. La operación podría tardar varias horas.
 
 Tenga en cuenta que Let's Encrypt, la autoridad que emite el certificado SSL incluido con el alojamiento web, impone un [límite de cinco regeneraciones por semana](https://letsencrypt.org/docs/rate-limits/){.external}. Así pues, preste atención al número de veces que regenera su certificado para evitar un posible bloqueo temporal.
 
-![Contratar un certificado SSL](images/ssl-regeneration.png){.thumbnail}
+![Contratar un certificado SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 
 ### Eliminar el certificado SSL de un alojamiento <a name="deletessl"></a>
 
@@ -148,7 +148,7 @@ Una vez que esté listo para eliminar el certificado SSL, conéctese al [área d
 
 En el cuadro de diálogo, confirme que desea eliminar el certificado haciendo clic en `Aceptar`{.action}. La eliminación tardará unas horas en aplicarse.
 
-![Contratar un certificado SSL](images/delete-ssl.png){.thumbnail}
+![Contratar un certificado SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/delete-ssl.png){.thumbnail}
 
 > [!warning]
 >
