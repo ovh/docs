@@ -27,7 +27,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Clicca sulla s
 
 Clicca sulla scheda `Database` e infine su `Aggiungi un database`{.action}
 
-![web-cloud-databases](images/add-database.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
 
 Inserisci i campi rispettando i criteri indicati. È possibile creare un utente direttamente selezionando la casella **Creare un utente**:
 
@@ -38,7 +38,7 @@ Inserisci i campi rispettando i criteri indicati. È possibile creare un utente 
 
 Clicca su `Conferma`{.action}.
 
-![web-cloud-databases](images/add-database-confirmation.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
 
 ### Crea un utente
 
@@ -48,7 +48,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Clicca sulla s
 
 Clicca sulla scheda `Utenti e diritti` e poi su `Aggiungi un utente`{.action}
 
-![web-cloud-databases](images/add-user.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 
 Inserisci un "nome utente" e una "password" e clicca su `Conferma`{.action}.
 
@@ -60,7 +60,7 @@ Per gestire i diritti di ogni utente accedi al tuo [Spazio Cliente OVHcloud](/li
 
 Clicca sui tre puntini `...`{.action} in corrispondenza dell'utente interessato e seleziona `Gestisci i permessi`{.action}.
 
-![web-cloud-databases](images/manage-rights.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png){.thumbnail}
 
 Nella colonna di sinistra "**database**" è riportata la lista dei database presenti sul tuo database server.
 
@@ -75,7 +75,7 @@ Ecco la descrizione dei 3 tipi di diritti proposti:
 > 
 > La suddivisione dei diritti sopra indicati è specifica di OVHcloud. In questo modo, un utente con i diritti `Amministratore` potrà utilizzare il **DLL** (Data Definition Language) e il **DML** (Data Manipulation Language), mentre un utente con i diritti `Lettura/Scrittura` Farà solo del DML (Data Manipulation Language).
 
-![web-cloud-databases](images/changing-user-rights.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
 
 #### Elimina un database
 
@@ -91,7 +91,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Clicca sulla s
 
 Per eliminare un database sul tuo database server, vai nella scheda `Database`, poi clicca sul pulsante `...`{.action} a destra del database in questione e infine clicca su `Elimina il database`{.action}.
 
-![web-cloud-databases](images/delete-the-database.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
 
 ## Per saperne di più
 

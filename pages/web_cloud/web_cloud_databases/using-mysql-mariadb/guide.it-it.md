@@ -76,7 +76,7 @@ mysql --host=server --user=utente --port=porta --password=password nome_database
 
 - Avvia SQuirreL SQL, clicca su `Aliases`{.action} e poi su `+`{.action}.
 
-![launch SQuirreL SQL](images/aliases.png){.thumbnail}
+![launch SQuirreL SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
 - Completa i campi qui sotto e clicca su `OK`{.action} per confermare:
     - **Name**: scegli un nome
@@ -85,15 +85,15 @@ mysql --host=server --user=utente --port=porta --password=password nome_database
     - **User Name**: inserisci il nome utente
     - **Password**: inserisci la password
 
-![config connection](images/add-alias.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail}
 
 - Clicca su `Connect`{.action} per confermare.
 
-![valid connection](images/connect-to-mysql.png){.thumbnail}
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail}
 
 A questo punto, sei connesso al tuo database:
 
-![config connection](images/general-dashboard.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 #### Connessione con phpMyAdmin
 

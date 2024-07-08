@@ -31,7 +31,7 @@ Wenn Ihr Hosting-Angebot die Option "Web Cloud Databases" beinhaltet, können Si
 
 Klicken Sie im Tab `Allgemeine Informationen` im Rahmen `Konfiguration` auf `...`{.action} rechts von **Web Cloud Databases**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
 
-![Allgemeine Informationen](images/web-cloud-databases-enable.png){.thumbnail}
+![Allgemeine Informationen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
 
 Folgen Sie den Anweisungen, um Typ und Version Ihres Web Cloud Databases Servers zu bestimmen. Nach Abschluss des Vorgangs kann der Web Cloud Databases Dienst über die linke Menüspalte unter `Web Cloud Databases`{.action} eingesehen werden.
 
@@ -57,7 +57,7 @@ Hier können Sie wichtige Informationen zu Ihrer Instanz einsehen. Wir bitten Si
 |Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des OVHcloud Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
 |Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine inhärente Information zur OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](https://www.status-ovhcloud.com/){.external} verwendet werden kann.|
 
-![Web Cloud Databases](images/general-information.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 
 ### Datenbank erstellen
 
@@ -68,7 +68,7 @@ Hier können Sie wichtige Informationen zu Ihrer Instanz einsehen. Wir bitten Si
 
 Um die erste Datenbank auf Ihrer Web Cloud Databases Instanz anzulegen, klicken Sie auf den Tab `Datenbanken`{.action} und anschließend auf den Button `Datenbank hinzufügen`{.action}.
 
-![Web Cloud Databases](images/add-database.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
 
 Im angezeigten Fenster können Sie direkt bei Erstellung der Datenbank
 
@@ -91,7 +91,7 @@ Entsprechend Ihrer Auswahl geben Sie nun die angefragten Informationen ein und k
 > Aus Sicherheitsgründen halten Sie sich bitte an die bei der Eingabe der Informationen angezeigten Bedingungen.
 >
 
-![Web Cloud Databases](images/add-database-create-user-confirmation.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-create-user-confirmation.png){.thumbnail}
 
 ### Benutzer anlegen (optional)
 
@@ -104,7 +104,7 @@ Dieser Schritt ist optional, wenn Sie den Benutzer bereits zusammen mit der Date
 
 Wenn für Ihr Projekt kein zusätzlicher Benutzer notwendig ist, können Sie zum nächsten Schritt übergehen. Wenn Sie einen weiteren Benutzer auf Ihrer Web Cloud Databases Instanz anlegen möchten, klicken Sie auf den Tab `Benutzer und Rechte`{.action} und dann auf den Button `Benutzer hinzufügen`{.action}.
 
-![Web Cloud Databases](images/add-user.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster die angefragten Informationen ein und klicken Sie anschließend auf `Bestätigen`{.action}.
 
@@ -118,11 +118,11 @@ Geben Sie im angezeigten Fenster die angefragten Informationen ein und klicken S
 > Beachten Sie aus Sicherheitsgründen die bei Eingabe der Informationen angezeigten Richtlinien.
 >
 
-![Web Cloud Databases](images/add-user-confirmation.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user-confirmation.png){.thumbnail}
 
 Nachdem Sie einen Benutzer angelegt haben, weisen Sie ihm die entsprechenden Rechte für die Aufgaben zu, die er an Ihrer Datenbank vornehmen soll (zum Beispiel Lesen, Einfügen oder Löschen von Daten). Klicken Sie hierzu auf das Zahnrad-Symbol und anschließend auf `Rechte verwalten`{.action}. Auf der neuen Seite klicken Sie auf das Recht, das Sie dem Benutzer zuweisen möchten. Für eine standardmäßige Verwendung wählen Sie `Administrator`{.action} aus.
 
-![Web Cloud Databases](images/manage-rights.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights-2.png){.thumbnail}
 
 ### Datenbank importieren
 
@@ -139,13 +139,13 @@ In den nachstehenden Schritten beschreiben wir, wie Sie eine Datenbank mithilfe 
 
 Gehen Sie in den Tab `Datenbanken`{.action}, klicken Sie auf das Zahnrad-Symbol und dann auf `Datei importieren`{.action}. Im angezeigten Fenster setzen Sie einen Haken in dem Feld `Eine neue Datei importieren`{.action} und klicken anschließend auf `Weiter`{.action}.
 
-![Web Cloud Databases](images/import-file.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/import-file.png){.thumbnail}
 
 - **Schritt 2: Backup-Datei auswählen und senden**
 
 Geben Sie einen Dateinamen ein, mit dem Sie das Backup zu einem späteren Zeitpunkt finden und wiederherstellen können. Wählen Sie dann neben **Datei** die Backup-Datei der Datenbank auf Ihrem Rechner aus und klicken Sie anschließend auf `Absenden`{.action}. Warten Sie, bis die Meldung erscheint, dass die Datei erfolgreich übermittelt wurde, und klicken Sie dann auf `Weiter`{.action}.
 
-![Web Cloud Databases](images/database-import-new-file-step-2.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
 
 - **Schritt 3: Import der Datenbank starten**
 
@@ -156,17 +156,17 @@ Wenn Sie möchten, können Sie nun die nachstehenden Zusatzoptionen auswählen. 
 |Aktuelle Datenbank leeren|Der gesamte aktuelle Inhalt Ihrer Datenbank wird gelöscht und durch den Inhalt des Backups ersetzt.|
 |E-Mail-Benachrichtigung, wenn der Import abgeschlossen ist|Sie werden per E-Mail über den Abschluss des Datenbankimports benachrichtigt.|
 
-![Web Cloud Databases](images/database-import-new-file-step-3-send-email.png){.thumbnail} 
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-3-send-email.png){.thumbnail} 
 
 ### IP-Adresse autorisieren <a name="trustip"></a>
 
 Damit auf Ihre Web Cloud Databases Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen. Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
-![Web Cloud Databases](images/add-an-ip-address-mask.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-2.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse oder Maske ein, der Sie den Zugriff erlauben möchten. Legen Sie anschließend fest, ob Sie nur Zugriff auf die Datenbanken oder auch auf den SFTP-Port erlauben möchten. Klicken Sie dann auf `Bestätigen`{.action}.
 
-![Web Cloud Databases](images/add-an-ip-address-mask-confirmation.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
 #### Die Verbindung zu einem OVHcloud Webhosting erlauben<a name="trustip"></a> 
 
@@ -174,7 +174,7 @@ Ihre Web Cloud Databases Lösung wird automatisch an die Webhostings von OVHclou
 
 Klicken Sie hierzu auf den Tab `Autorisierte IP`{.action} und dann auf den Button `Zugang zu OVHcloud Webhostings`{.action}.
 
-![Web Cloud Databases](images/access-to-ovhcloud-web-hosting.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/access-to-ovhcloud-web-hosting.png){.thumbnail}
 
 ### Ihre Website mit der Datenbank verbinden
 
@@ -196,7 +196,7 @@ Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden k
 > Beispiel: Für den Hostnamen `zz1111111-002.eu.clouddb.ovh.net` mit dem SQL-Port `34567` müssen Sie `zz1111111-002.eu.clouddb.ovh.net:34567` als Hostname ("Name des Host-Servers") eingeben.
 >
 
-![Web Cloud Databases](images/login-information.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/login-information.png){.thumbnail}
 
 ### Die Logs Ihres Web Cloud Databases Servers abrufen
 

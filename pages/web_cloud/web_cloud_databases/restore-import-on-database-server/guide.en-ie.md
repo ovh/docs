@@ -35,7 +35,7 @@ Click the `...`{.action} button to the right of the database, then click `Show b
 
 The list of available backups will appear. Click on the `...`{.action} button to the right of the backup you want to restore, then `Restore the backup`{.action}.
 
-![Web Cloud Databases](images/restore-the-backup.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/restore-the-backup.png){.thumbnail}
 
 > [!warning]
 >
@@ -46,7 +46,7 @@ The list of available backups will appear. Click on the `...`{.action} button to
 
 Click on the `...`{.action} button to the right of the database, then click `Import file`{.action}.
 
-![Web Cloud Databases](images/import-file.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/import-file.png){.thumbnail}
 
 There are two ways of doing this:
 
@@ -61,7 +61,7 @@ Specify a name for your imported file, click `Browse`{.action} to select it, con
 > The file must be in .sql, .txt, or .gz format.
 > 
 
-![Web Cloud Databases](images/database-import-new-file-step-2.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
 
 If you wish, tick **Empty the current database** before importing, and **Send an email when importing is complete** to be informed of the completion of the operation using the primary email address of your OVHcloud account. Then click `Confirm`{.action}.
 
@@ -71,7 +71,7 @@ If you had already imported a file before, you can choose the **Use an existing 
 
 Then choose the file from the dropdown menu and click `Next`{.action}.
 
-![Web Cloud Databases](images/database-import-existing-file-step-2.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 
 If you wish, tick **Empty the current database** before importing, and **Send an email when importing is complete** to be informed of the completion of the operation using the primary email address of your OVHcloud account. Then click `Confirm`{.action}.
 
@@ -96,7 +96,7 @@ Select your backup file by clicking `Browse`{.action}. (Please note that the fil
 
 Keep the default options and click `Run`{.action} to start the import.
 
-![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Exporting a MySQL or MariaDB database from the command line
 
