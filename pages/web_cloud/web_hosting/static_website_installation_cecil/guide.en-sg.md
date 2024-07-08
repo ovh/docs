@@ -74,7 +74,7 @@ Enter the information requested:
 - Your website URL (e.g. `https://mywebsite.ovh`)
 - A description of your website
 
-![Cecil Installation](images/static_website_installation_cecil01.png){.thumbnail}
+![Cecil Installation](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil01.png){.thumbnail}
 
 Once you have entered this information, you will now need to deploy the website by typing the following command:
 
@@ -84,11 +84,11 @@ php cecil.phar build
 
 If you view the contents of the directory, you will see a `_site` directory. This directory will contain all HTML files and assets:
 
-![Cecil Installation](images/static_website_installation_cecil02.png){.thumbnail}
+![Cecil Installation](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil02.png){.thumbnail}
 
 You can now see the result by going to your domain name:
 
-![Cecil Installation](images/static_website_installation_cecil03.png){.thumbnail}
+![Cecil Installation](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil03.png){.thumbnail}
 
 #### Configuration of the pointing of the domain or subdomain
 
@@ -106,7 +106,7 @@ nano config.yml
 
 Replace the default information with your own and save the file.
 
-![YAML configuration file](images/static_website_installation_cecil04.png){.thumbnail}
+![YAML configuration file](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil04.png){.thumbnail}
 
 ### Create a new page
 
@@ -132,7 +132,7 @@ A file `mypage.md` is then created in the root directory `/pages`.
 
 Replace `mypage` with the name of your own page.
 
-![Cecil Installation](images/static_website_installation_cecil05.png){.thumbnail}
+![Cecil Installation](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil05.png){.thumbnail}
 
 #### Generate static files
 
@@ -148,7 +148,7 @@ Your file is located in the directory `_site/mypage/`:
 
 You can view it on your server by typing your website URL, followed by `/mypage/`:
 
-![Browser Result](images/static_website_installation_cecil07.png){.thumbnail}
+![Browser Result](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil07.png){.thumbnail}
 
 ### Customise your website files
 
@@ -165,11 +165,11 @@ nano pages/mypage.md
 
 Replace `mypage` with the name of your own page.
 
-![Editing file in GNU nano](images/static_website_installation_cecil08.png){.thumbnail}
+![Editing file in GNU nano](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil08.png){.thumbnail}
 
 Add a few lines using the Markdown syntax:
 
-![Adding content to file](images/static_website_installation_cecil09.png){.thumbnail}
+![Adding content to file](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil09.png){.thumbnail}
 
 Delete the files in the cache using the following command:
 
@@ -185,17 +185,17 @@ php cecil.phar build
 
 Then return to your page to see the result:
 
-![Page updated](images/static_website_installation_cecil10.png){.thumbnail}
+![Page updated](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil10.png){.thumbnail}
 
 #### Change your workstation
 
 If you prefer to use your usual code editor on your computer, log on to your server with an FTP client and retrieve the files:
 
-![FileZilla Download](images/cecil-folder.png){.thumbnail}
+![FileZilla Download](/pages/assets/screens/other/web-tools/filezilla/cecil-folder.png){.thumbnail}
 
 You can now edit the files in your I.D.E.:
 
-![View in Visual Studio Code](images/static_website_installation_cecil12.png){.thumbnail}
+![View in Visual Studio Code](/pages/assets/screens/other/web-tools/vscode/static_website_installation_cecil12.png){.thumbnail}
 
 Simply upload your modified files or new files to your server and rebuild to get your pages online.
 
