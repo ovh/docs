@@ -80,14 +80,7 @@ Le tableau suivant présente le comportement **par défaut** de la fonctionnalit
 
 | Ce qui est répliqué                                       | Ce qui n'est pas répliqué                                    |
 |-----------------------------------------------------------|--------------------------------------------------------------|
-| Objets créés *après* l'application de la configuration de réplication | Les marqueurs de suppression, c'est-à-dire que les objets supprimés dans le bucket source ne sont pas automatiquement supprimés par défaut dans le bucket destinataire |
-| Objets non chiffrés | Les réplicas d’objets, c’est-à-dire les objets résultant d’une opération de réplication précédente |
-| Métadonnées d'objet des objets sources vers les réplicas | Objets déjà répliqués vers une destination précédente |
-| Les objets du bucket source dont le propriétaire dispose des autorisations nécessaires pour lire et accéder aux ACL | Objets stockés dans le stockage temporaire Cold Archive |
-| Mises à jour de la liste de contrôle d'accès des objets | Configurations de buckets, c’est-à-dire configuration du cycle de vie, configuration CORS, ACL de buckets, etc. |
-| Tags d'objets | Actions résultant des actions de configuration du cycle de vie |
-| Configuration de la rétention des verrous d'objet S3 | Objets créés *avant* l'upload de la configuration de réplication |
-| | Réplication vers un bucket dans un autre projet Public Cloud, c'est-à-dire que les buckets source et de destination doivent se trouver dans le même projet |
+| - Objets créés *après* l'application de la configuration de réplication<br> - Objets non chiffrés et objets chiffrés avec SSE-S3 (clés managées par OVHcloud)<br> - Les objets du bucket source dont le propriétaire dispose des autorisations nécessaires pour lire et accéder aux ACL<br> - Métadonnées d'objet des objets sources vers les réplicas<br> - Configuration de la rétention des verrous d'objet S3<br> - Mises à jour de la liste de contrôle d'accès des objets<br> - Tags d'objets<br><br><br><br>| - Objets créés *avant* l'upload de la configuration de réplication<br> - Objets déjà répliqués vers une destination précédente<br> - Les réplicas d’objets, c’est-à-dire les objets résultant d’une opération de réplication précédente<br> - Objets chiffrés avec SSE-C (clés fournies par le client)<br> - Configurations de buckets, c’est-à-dire configuration du cycle de vie, configuration CORS, ACL de buckets, etc.<br> - Actions résultant des actions de configuration du cycle de vie<br> - Les marqueurs de suppression, c'est-à-dire que les objets supprimés dans le bucket source ne sont pas automatiquement supprimés par défaut dans le bucket destinataire<br> - Objets stockés dans le stockage temporaire Cold Archive<br> - Réplication vers un bucket dans un autre projet Public Cloud, c'est-à-dire que les buckets source et de destination doivent se trouver dans le même projet |
 
 ### Configuration de la réplication
 
