@@ -14,6 +14,8 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las Addition
 
 > [!primary]
 >
+> A finales de 2024, esta funcionalidad se entregará para todas las gamas High Grade, SCALE y ADVANCE.
+>
 > La documentación solo cubre la solución a través del vRack.
 >
 
