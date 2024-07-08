@@ -133,7 +133,7 @@ Instancja zostanie ponownie uruchomiona i będzie możliwe zalogowanie się za p
 
 Otwórz natywną aplikację kliencką “Podłączanie pulpitu zdalnego” (w razie potrzeby znajdź ją przy użyciu usługi Windows Search).
 
-![windows remote](images/windows-connect-03.png){.thumbnail}
+![windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Podaj adres IPv4 swojej instancji i nazwę użytkownika “Administrator”, a następnie wpisz hasło. Zwykle jest wyświetlany komunikat ostrzegawczy z monitem o potwierdzenie połączenia, ponieważ certyfikat jest nieznany. Kliknij przycisk `Tak`{.action}, aby zalogować się do instancji.
 

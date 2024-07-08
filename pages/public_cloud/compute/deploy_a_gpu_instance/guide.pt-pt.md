@@ -132,7 +132,7 @@ Depois de a instância ser reiniciada, poderá conectar-se com estas credenciais
 
 Use o Windows Search se necessário e abra a aplicação cliente nativa «Remote Desktop Connection».
 
-![windows remote](images/windows-connect-03.png){.thumbnail}
+![windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Introduza o endereço IPv4 da instância e indique «Administrator» como utilizador. Então, digite a frase de acesso. É possível que receba uma mensagem de aviso a pedir-lhe para confirmar a conexão devido a uma certificado desconhecido. Clique em `Sim`{.action} para se conectar à instância.
 

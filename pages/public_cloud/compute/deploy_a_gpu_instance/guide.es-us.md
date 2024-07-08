@@ -134,7 +134,7 @@ La instancia se reiniciará y podrá conectarse utilizando sus claves desde un c
 
 Si lo necesita, utilice el cuadro de búsqueda de Windows y abra la aplicación de «Conexión a Escritorio remoto».
 
-![windows remote](images/windows-connect-03.png){.thumbnail}
+![windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Indique la dirección IPv4 de su instancia y el usuario "Administrator" y, a continuación, introduzca su frase de contraseña. Al tratarse de un certificado desconocido, es probable que aparezca un mensaje de aviso pidiéndole que confirme la conexión. Confirme que quiere conectarse a la instancia.
 

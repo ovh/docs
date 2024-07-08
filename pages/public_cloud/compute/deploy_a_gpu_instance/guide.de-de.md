@@ -132,7 +132,7 @@ Die Instanz wird neu gestartet und Sie können sich mithilfe dieser Login-Daten 
 
 Verwenden Sie falls nötig die Windows-Suche und öffnen Sie den Windows-Client für Remote-Desktopverbindungen.
 
-![Windows Remote](images/windows-connect-03.png){.thumbnail}
+![Windows Remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Geben Sie die IPv4-Adresse Ihrer Instanz sowie “Administrator” als Benutzer und dann Ihre Passphrase ein. Normalerweise erscheint nun eine Warnungsmeldung, die Sie auffordert, die Verbindung aufgrund eines unbekannten Zertifikats zu bestätigen. Klicken Sie auf `Ja`{.action}, um sich mit Ihrer Instanz zu verbinden.
 

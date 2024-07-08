@@ -132,7 +132,7 @@ L’istanza si riavvierà e sarà possibile accedere con queste credenziali tram
 
 Se necessario, utilizza Windows Search e apri l’applicazione client “Remote Desktop Connection”. 
 
-![windows remote](images/windows-connect-03.png){.thumbnail}
+![windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Inserisci l’indirizzo IPv4 della tua istanza e seleziona l’utente “Amministrator”. A questo punto, inserisci la tua passphrase. Trattandosi di un certificato sconosciuto, potresti visualizzare un messaggio di avviso per confermare la connessione. Clicca `Sì`{.action} per accedere all’istanza.
 
