@@ -34,7 +34,7 @@ You can also view important information on your SQL instance. Please take a few 
 |Datacenter|Shows the data centre in which the instance has been created. Verify that your instance is hosted in is the same data centre as the OVHcloud Web Hosting plan that your website is based (or will be based) on.|
 |Host|Shows the OVHcloud server your instance has been created in. This information is inherent to the OVHcloud infrastructure, and can be used in our communications on [OVHcloud incidents](https://web-cloud.status-ovhcloud.com/).|
 
-![General information](images/general-information.png){.thumbnail}
+![General information](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 
 ### Manage your access
 
@@ -48,17 +48,17 @@ In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud Databases
 
 To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
-![Web Cloud Databases](images/add-an-ip-address-mask.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask.png){.thumbnail}
 
 In the window that pops up, enter the IP address or mask that you wish to authorise `IP/mask`{.action}, together with a description, if you wish. You can then decide if you want to grant access to the databases only, or to the SFTP as well. Finally, click `Confirm`{.action}.
 
-![Web Cloud Databases](images/add-an-ip-address-mask-confirmation.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
 #### Authorise connections to OVHcloud Web Hosting plans
 
 For an OVHcloud web hosting plan, you can simply tick `Authorise OVHcloud web hosting plans to access the database`.
 
-![Web Cloud Databases](images/tab-empty.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
 
 ### Modify your Web Cloud Databases offer <a name="modify-ram-web-cloud-db"></a>
 
@@ -77,7 +77,7 @@ To modify the solution for your Web Cloud Databases instance, go to your [OVHclo
 
 In the **General information** tab, displayed by default, click on `...`{.action} to the right of “RAM”, then on `Change the amount of RAM`{.action} to access the order for this modification.
 
-![Web Cloud Databases](images/change-the-amount-of-ram.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/change-the-amount-of-ram.png){.thumbnail}
 
 Choose the amount of RAM you want, then click `Next`{.action}. You can then choose the duration you want.
 
@@ -103,7 +103,7 @@ In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud` section,
 
 In the **General configuration of MySQL** box, you will see the configuration currently set for your database. You can modify it directly, then click `Apply`{.action}.
 
-![Web Cloud Databases](images/general-configuration-of-mysql.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
 
 - <b>Tmpdir</b>: Directory of temporary files. <b>"/dev/shm"</b> is the instance’s RAM. <b>"/tmp"</b> is the instance’s hard drive.
 - <b>MaxAllowedPacket</b>: The maximum packet size.
@@ -162,7 +162,7 @@ Make the necessary changes, then click `Confirm`{.action}.
 
 In the **General PostgreSQL configuration** box, you will find the configuration currently set for your database. You can modify it directly, then click `Apply`{.action}.
 
-![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-postgresql.png){.thumbnail}
 
 - **log_min_messages**: Controls the levels of messages to be logged in the server logs. The levels available for a Web Cloud Databases solution are: 
     - **WARNING**: Provides warning messages about potential problems.
@@ -177,7 +177,7 @@ By default, the value set is **WARNING** because it includes the values **ERROR*
 
 You can also enable extensions for your databases. To do this, go to the `Databases`{.action} tab, and click on the table icon for your database in the **Extensions** column.
 
-![Web Cloud Databases](images/extensions.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/extensions.png){.thumbnail}
 
 ### Change the MySQL, PostgreSQL or MariaDB version of the database server
 
@@ -187,7 +187,7 @@ The current version appears in the **Version** row.
 
 To edit this version, click `Update version`{.action}.
 
-![Web Cloud Databases](images/postgre-12-update-version.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
 
 #### How do I know the exact version of PostgreSQL I am using?
 
@@ -229,7 +229,7 @@ In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud` section,
 
 Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **RAM usage statistics**.
 
-![Web Cloud Databases](images/ram-memory-usage-statistics.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/ram-memory-usage-statistics.png){.thumbnail}
 
 #### Number of connections per minute
 
@@ -239,7 +239,7 @@ In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud` section,
 
 Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **Statistics for total connections per minute**.
 
-![Web Cloud Databases](images/statistics-for-total-connections-per-minute.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/statistics-for-total-connections-per-minute.png){.thumbnail}
 
 ### Managing your databases
 
