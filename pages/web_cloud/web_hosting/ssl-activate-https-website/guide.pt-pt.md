@@ -29,7 +29,7 @@ Quando visita um Web site com uma ligação segura, o browser da Internet inform
 
 O facto de o seu website possuir ou não uma ligação segura torna-se cada vez mais visível.
 
-![httpswebsite](images/url-not-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/url-not-secure.png){.thumbnail}
 
 **Tornar o website em *HTTPS* pode ser uma operação sensível**. De facto, a maior parte das ações a realizar serão efetuadas no código fonte do seu website. Se não forem efetuadas corretamente, poderá verificar uma diminuição do referenciamento (SEO) nos resultados propostos pelos motores de pesquisa (Google, Yahoo!, bing, etc.), ou mesmo uma inacessibilidade total do seu website.
 
@@ -71,7 +71,7 @@ Podem ser encontrados dois casos *Mixed Content*:
 
 Certifique-se de que todos os conteúdos carregados a partir do seu website provêm de uma fonte segura.
 
-![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/connection-isnt-secure.png){.thumbnail}
 
 Note que, mesmo que o seu alojamento disponha de um certificado SSL, o conteúdo alojado neste último pode ser carregado em *HTTP* ou em *HTTPS*. Isto depende da forma como identificou estes conteúdos no código do seu website. Verifique que todo o conteúdo carregado pelo seu website utiliza o protocolo *HTTPS*.
 
