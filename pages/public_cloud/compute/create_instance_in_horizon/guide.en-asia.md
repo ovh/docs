@@ -27,7 +27,9 @@ The page that opens can be used to view the Instances that are currently launche
 
 ![createinstance](images/create-instance-step2.png){.thumbnail}
 
-You will then need to fill in the information requested. If you need to do so, you can use the table below to fill in the fields. Please note that this grid is not exhaustive.
+You will then need to fill in the information requested. Please note that this grid is not exhaustive.
+
+**Details**
 
 ![createinstance](images/create-instance-step3.png){.thumbnail}
 
@@ -56,10 +58,15 @@ You will then need to fill in the information requested. If you need to do so, y
 
 ![createinstance](images/create-instance-step5.png){.thumbnail}
 
+Pre-built flavors are available for you, select the flavor of your choice underneath the `Available` tab.
 
-|Key pair|Select an SSH key to use for connecting to the Instance later (you can create a key by clicking the "+" sign).|
-|Security groups|Specify the security group for the Instance (authorisation for opening ports).|
-|Selected networks|Select the network(s) for the Instance you want to create, from the list of available networks.|
+**Networks**
+
+![createinstance](images/create-instance-step6á.png){.thumbnail}
+
+|Information|Details|
+|---|---|
+|Network|Select the network(s) for the Instance you want to create, from the list of available networks.|
 |Custom script source|Specify the source between a "direct entry" or a "file".|
 |Script data|Enter the script code in the input field (16KB maximum).|
 |Script file|Click ‘browse’ to select the post-installation script.|
