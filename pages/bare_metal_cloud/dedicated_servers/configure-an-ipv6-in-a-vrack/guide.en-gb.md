@@ -84,11 +84,7 @@ You can order your new addtional IPv6 block <a href="https://feat-additional-ipv
 
 You will see new prefix available for your vrack in specific vrack edit page, on the left, in the `Your eligible services`{.action} column.
 
-
-<img src="/images/101.png" alt="mange my vrack 01"/>
-<br/>
-
-<img src="/images/102.png" alt="mange my vrack 02"/>
+<img src="/images/102.png" alt="manage my vrack 02"/>
 <br/>
 
 </blockquote>
