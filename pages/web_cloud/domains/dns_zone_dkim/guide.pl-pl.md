@@ -42,7 +42,7 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
 - Posiadanie dostępu do interfejsu zarządzania domeną w [Panelu klienta OVHcloud](/links/manager) lub u operatora domeny, jeśli jest zarejestrowany poza OVHcloud.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Wykupienie jednej z ofert e-mail:
-    - "E-maile" (MX Plan) OVHcloud. Jest ona dostępna w ramach [oferty hostingu Cloud](/links/web/hosting), [bezpłatny hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub w ramach oferty MX Plan zamówionej oddzielnie.
+    - "E-maile" (MX Plan) OVHcloud. Jest ona dostępna w ramach [oferty hostingu Cloud](/links/web/hosting), [bezpłatny hosting 100M](/links/web/domains-free-hosting) lub w ramach oferty MX Plan zamówionej oddzielnie.
     - [Exchange](/links/web/emails-hosted-exchange) lub [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
     - Oferta e-mail poza OVHcloud z DKIM.
@@ -410,7 +410,7 @@ Postępuj zgodnie z instrukcjami **5 kroków**, klikając kolejno na 5 poniższy
 >>
 >> > [!success]
 >> >
->> > Wykonano teraz wszystkie operacje, aby aktywować DKIM. Aby upewnić się, że jest ono włączone, sprawdź jego stan, wracając do karty kroku "**2". Sprawdź stan operacji DKIM**", aby sprawdzić, czy wartość `status:` jest w `enabled`. Jeśli tak jest, Twój DKIM jest już aktywny.
+>> > Wykonano teraz wszystkie operacje, aby aktywować DKIM. Aby upewnić się, że jest ono włączone, sprawdź jego stan, wracając do karty kroku "**2. Sprawdź stan operacji DKIM**", aby sprawdzić, czy wartość `status:` jest w `enabled`. Jeśli tak jest, Twój DKIM jest już aktywny.
 >>
 
 ##### **Dla usługi Exchange** <a name="confex"></a>
@@ -745,8 +745,8 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >> Na selektorach masz również 3 możliwe stany:
 >>
 >> - `set` : przełącznik wyboru jest poprawnie skonfigurowany i aktywny.
->> - `toSet` : selektor nie jest skonfigurowany w strefie DNS domeny. Skorzystaj z [etapu 4 "pełnej konfiguracji DKIM" dla kont e-mail (MX Plan)] (#confemail).
->> - `toFix` : selektor został skonfigurowany w strefie DNS domeny, ale wartości są nieprawidłowe. Skorzystaj z [etapu 4 "pełnej konfiguracji DKIM" dla kont e-mail (MX Plan)] (#confemail).
+>> - `toSet` : selektor nie jest skonfigurowany w strefie DNS domeny. Skorzystaj z [etapu 4 "pełnej konfiguracji DKIM" dla kont e-mail (MX Plan)](#confemail).
+>> - `toFix` : selektor został skonfigurowany w strefie DNS domeny, ale wartości są nieprawidłowe. Skorzystaj z [etapu 4 "pełnej konfiguracji DKIM" dla kont e-mail (MX Plan)](#confemail).
 >>
 > **Exchange**
 >> Podczas wykonywania operacji na DKIM w Twojej platformie Exchange, skorzystaj z poniższego wywołania API, aby sprawdzić aktualny status DKIM.
@@ -1153,8 +1153,8 @@ Poniżej znajdziesz statusy, które mogą blokować działanie DKIM i odpowiedni
 >>
 >> Na selektorach masz również 2 stany związane z błędem:
 >>
->> - `toSet` : selektor nie jest skonfigurowany w strefie DNS domeny. Skorzystaj z [etapu 4 "pełnej konfiguracji DKIM" dla kont e-mail (MX Plan)] (#confemail).
->> - `toFix` : selektor został skonfigurowany w strefie DNS domeny, ale wartości są nieprawidłowe. Skorzystaj z [etapu 4 "pełnej konfiguracji DKIM" dla kont e-mail (MX Plan)] (#confemail).
+>> - `toSet` : selektor nie jest skonfigurowany w strefie DNS domeny. Skorzystaj z [etapu 4 "pełnej konfiguracji DKIM" dla kont e-mail (MX Plan)](#confemail).
+>> - `toFix` : selektor został skonfigurowany w strefie DNS domeny, ale wartości są nieprawidłowe. Skorzystaj z [etapu 4 "pełnej konfiguracji DKIM" dla kont e-mail (MX Plan)](#confemail).
 
 ## Sprawdź również
 

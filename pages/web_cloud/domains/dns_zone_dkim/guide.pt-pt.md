@@ -42,7 +42,7 @@ O registo DKIM (**D**omain**K**eys **I**dentified **M**ail) permite assinar os e
 - Ter acesso à secção de gestão do domínio na [Área de Cliente OVHcloud](/links/manager) ou na Área de Cliente, caso esteja registado fora da OVHcloud.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter subscrito uma das ofertas de e-mail:
-    - "E-mails" (MX Plan) OVHcloud. Esta última está disponível através de uma [oferta de alojamento Web Cloud](/links/web/hosting), um [alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou uma oferta MX Plan encomendada separadamente.
+    - "E-mails" (MX Plan) OVHcloud. Esta última está disponível através de uma [oferta de alojamento Web Cloud](/links/web/hosting), um [alojamento gratuito 100M](/links/web/domains-free-hosting) ou uma oferta MX Plan encomendada separadamente.
     - [Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
     - Uma oferta de e-mail fora da OVHcloud que dispõe do DKIM.
@@ -213,9 +213,9 @@ Certifique-se também de que o domínio que pretende utilizar para os seus e-mai
 
 Para configurar o DKIM, aceda ao website <https://api.ovh.com/console/>através do botão `Login`{.action} no canto superior direito e introduza as suas credenciais OVHcloud.
 
-> Apoie-se no nosso guia ["Descubra como utilizar as API OVHcloud"](/pages/manage_and_operate/api/first-steps) se nunca utilizou as API.
+> Apoie-se no nosso guia "[Descubra como utilizar as API OVHcloud](/pages/manage_and_operate/api/first-steps)" se nunca utilizou as API.
 
-Aceda à secção `/email/domain/`(ofertas E-mails (MXplan)) `/email/exchange` (ofertas Exchange) ou `/email/pro` (oferta E-mail Pro) das API e introduza « dkim » na caixa `Filter` para apresentar apenas as API relativas ao DKIM.
+Aceda à secção `/email/domain/`(ofertas E-mails (MXplan)) `/email/exchange` (ofertas Exchange) ou `/email/pro` (oferta E-mail Pro) das API e introduza "dkim" na caixa `Filter` para apresentar apenas as API relativas ao DKIM.
 
 Clique no separador da sua oferta:
 
@@ -346,8 +346,8 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >> Os valores `"status": "toSet"` e `"status": "disabled"` significam que os registos CNAME devem ser configurados. Guarde os 2 valores `cname` num ficheiro de texto e passe à etapa seguinte.
 >>
 > **4. Configurar o registo DNS**
->> A partir de [Área de Cliente OVHcloud](/links/manager), na qual está alojado o nome de domínio do seu serviço de e-mail, no separador "Web Cloud" {.action}, clique em "Domínios" {.action} na coluna da esquerda e selecione o domínio em causa.<br>
->> Aceda ao separador "Zona DNS" {.action} e clique em "Adicionar uma entrada" {.action} na janela que irá aparecer. Escolha "CNAME" e complete de acordo com os valores que obteve.
+>> A partir de [Área de Cliente OVHcloud](/links/manager), na qual está alojado o nome de domínio do seu serviço de e-mail, no separador `Web Cloud`.{.action}, clique em `Domínios`.{.action} na coluna da esquerda e selecione o domínio em causa.<br>
+>> Aceda ao separador `Zona DNS`.{.action} e clique em `Adicionar uma entrada`.{.action} na janela que irá aparecer. Escolha "CNAME" e complete de acordo com os valores que obteve.
 >>
 >> Decompõe-se os valores do exemplo na etapa "**3. Obter o registo DNS**":
 >>
@@ -405,12 +405,12 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >> }
 >>
 >> - Se verificar os valores `"status": "set"` nos 2 seletores, isso significa que eles estão bem configurados.
->> - Se verificar os valores `"status": "toSet"` nos 2 seletores, isso significa que as suas alterações DNS não são visíveis. Retomar no separador « **4. Configurar o registo DNS** ».
->> - Se verificar os valores `"status": "toFix"` nos 2 seletores, isso significa que os registos CNAME foram detetados na zona DNS do seu domínio, mas que os valores estão incorretos. Retomar no separador « **4. Configurar o registo DNS** ».
+>> - Se verificar os valores `"status": "toSet"` nos 2 seletores, isso significa que as suas alterações DNS não são visíveis. Retomar no separador "**4. Configurar o registo DNS**".
+>> - Se verificar os valores `"status": "toFix"` nos 2 seletores, isso significa que os registos CNAME foram detetados na zona DNS do seu domínio, mas que os valores estão incorretos. Retomar no separador "**4. Configurar o registo DNS**".
 >>
 >> > [!success]
 >> >
->> > Realizou agora todas as operações para ativar o DKIM. Para verificar se o servidor está ativo, verifique o estado retornando ao separador da etapa « **2. Verificar o estado da operação DKIM** » para verificar que o valor `status:` está em `enabled`. Se este for o caso, o seu DKIM está ativo.
+>> > Realizou agora todas as operações para ativar o DKIM. Para verificar se o servidor está ativo, verifique o estado retornando ao separador da etapa "**2. Verificar o estado da operação DKIM**" para verificar que o valor `status:` está em `enabled`. Se este for o caso, o seu DKIM está ativo.
 >>
 
 ##### **Para Exchange** <a name="confex"></a>
@@ -615,7 +615,7 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >>
 >> > [!primary]
 >> >
->> > Aconselhamos que efetue esta operação duas vezes para cada um dos seletores anteriormente listados. O segundo seletor permitirá que você faça uma mudança de par de chaves quando for necessário. Sugerimos que consulte o nosso caso de utilização [« Como alterar o par de chaves DKIM »](#2selectors) quando pretender migrar para o segundo seletor.
+>> > Aconselhamos que efetue esta operação duas vezes para cada um dos seletores anteriormente listados. O segundo seletor permitirá que você faça uma mudança de par de chaves quando for necessário. Sugerimos que consulte o nosso caso de utilização "[Como alterar o par de chaves DKIM](#2selectors)" quando pretender migrar para o segundo seletor.
 >>
 >> *Exemplo de resultado:*
 >>
@@ -738,15 +738,15 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >>
 >> - `disabled`: o DKIM está desativado, ainda não foi configurado ou foi desativado pela API. <br>
 >> - `modifying` : a configuração do DKIM está em curso, é necessário aguardar até ao fim do processo.<br>
->> - `toConfigure`: a configuração do DKIM está aguardando os parâmetros DNS do domínio. Os registos DNS devem ser preenchidos manualmente na zona do domínio. Para isso, clique em [etapa 4 de « a configuração completa do DKIM » for E-mails (MX Plan)](#confemail).<br>
+>> - `toConfigure`: a configuração do DKIM está aguardando os parâmetros DNS do domínio. Os registos DNS devem ser preenchidos manualmente na zona do domínio. Para isso, clique em [etapa 4 de "a configuração completa do DKIM" for E-mails (MX Plan)](#confemail).<br>
 >> - `enabled`: o DKIM está configurado e funcional.<br>
 >> - `error`: O processo de instalação encontrou um erro. Sugerimos que abra um [ticket junto do suporte](https://help.ovhcloud.com/csm?id=csm_get_help) especificando o domínio em causa.<br>
 >>
 >> Ao nível dos seletores também tem 3 estados possíveis:
 >>
 >> - `set`: o seletor está bem configurado e ativo.
->> - `toSet`: o seletor não está configurado na zona DNS do domínio. Pressione [etapa 4 « configuração completa do DKIM » for E-mails (MX Plan)](#confemail).
->> - `toFix`: o seletor foi corretamente configurado na zona DNS do domínio, mas os valores estão incorretos. Pressione [etapa 4 « configuração completa do DKIM » for E-mails (MX Plan)](#confemail).
+>> - `toSet`: o seletor não está configurado na zona DNS do domínio. Pressione [etapa 4 "configuração completa do DKIM" for E-mails (MX Plan)](#confemail).
+>> - `toFix`: o seletor foi corretamente configurado na zona DNS do domínio, mas os valores estão incorretos. Pressione [etapa 4 "configuração completa do DKIM" for E-mails (MX Plan)](#confemail).
 >>
 > **Exchange**
 >> Aquando das suas operações no DKIM da sua plataforma Exchange, utilize a chamada API abaixo para verificar o estado atual do DKIM.
@@ -1148,13 +1148,13 @@ Abaixo irá encontrar os estados que podem bloquear o funcionamento do seu DKIM 
 > **E-mails (MX Plan)**
 >> - `disabled`: O DKIM está desativado, ainda não foi configurado ou foi desativado pela API. <br>
 >> - `modifying` : A configuração do DKIM está em curso, é necessário aguardar até ao fim do processo.<br>
->> - `toConfigure`: A configuração do DKIM está aguardando os parâmetros DNS do domínio. Os registos DNS devem ser preenchidos manualmente na zona do domínio. Para isso, clique na etapa « [Configuração completa do DKIM](#confemail) » deste guia. <br>
+>> - `toConfigure`: A configuração do DKIM está aguardando os parâmetros DNS do domínio. Os registos DNS devem ser preenchidos manualmente na zona do domínio. Para isso, clique na etapa "[Configuração completa do DKIM](#confemail)" deste guia. <br>
 >> - `error`: O processo de instalação encontrou um erro. Sugerimos que abra um [ticket junto do suporte](https://help.ovhcloud.com/csm?id=csm_get_help) especificando o domínio em causa.
 >>
 >> Ao nível dos seletores também possui 2 estados relativos a um erro:
 >>
->> - `toSet`: o seletor não está configurado na zona DNS do domínio. Pressione [etapa 4 « configuração completa do DKIM » for E-mails (MX Plan)](#confemail).
->> - `toFix`: o seletor foi corretamente configurado na zona DNS do domínio, mas os valores estão incorretos. Pressione [etapa 4 « configuração completa do DKIM » for E-mails (MX Plan)](#confemail).
+>> - `toSet`: o seletor não está configurado na zona DNS do domínio. Pressione [etapa 4 "configuração completa do DKIM" for E-mails (MX Plan)](#confemail).
+>> - `toFix`: o seletor foi corretamente configurado na zona DNS do domínio, mas os valores estão incorretos. Pressione [etapa 4 "configuração completa do DKIM" for E-mails (MX Plan)](#confemail).
 
 ## Saiba mais
 

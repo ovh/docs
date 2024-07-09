@@ -42,7 +42,7 @@ El registro DKIM (**D**omain**K**eys **I**dentified **M**ail) permite firmar los
 - Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](/links/manager) o desde su proveedor de servicios si está registrado fuera de OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Haber contratado uno de los productos de correo:
-    - Correo electrónico (MX Plan) OVHcloud. Esta puede adquirirse a través de un [plan de hosting Web Cloud] (/links/web/hosting), un [alojamiento gratuito 100M](https://www.ovhcloud.com/es/domains/free-web-hosting/) o un MX Plan contratado por separado.
+    - Correo electrónico (MX Plan) OVHcloud. Esta puede adquirirse a través de un [plan de hosting Web Cloud](/links/web/hosting), un [alojamiento gratuito 100M](/links/web/domains-free-hosting) o un MX Plan contratado por separado.
     - [Exchange](/links/web/emails-hosted-exchange) o [Private Exchange](/links/web/emails-hosted-exchange).
     - [Email Pro](/links/web/email-pro).
     - Una solución de correo fuera de OVHcloud con DKIM.
@@ -151,7 +151,7 @@ El destinatario **recipient@otherdomain.ovh** podrá descifrar esta firma con la
 
 > [!primary]
 >
-> Si dispone de un servicio de correo electrónico (MX Plan) incluido con un [alojamiento Web Cloud] (/links/web/hosting), un [alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratado por separado, vaya a la etapa "[Configurar el DKIM manualmente para un servicio de correo electrónico de OVHcloud](#internal-dkim)".
+> Si dispone de un servicio de correo electrónico (MX Plan) incluido con un [alojamiento Web Cloud](/links/web/hosting), un [alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratado por separado, vaya a la etapa "[Configurar el DKIM manualmente para un servicio de correo electrónico de OVHcloud](#internal-dkim)".
 
 La configuración automática del DKIM está disponible para los servicios de correo [Exchange](/links/web/emails) y [E-mail Pro](/links/web/email-pro).
 
@@ -215,7 +215,7 @@ Para configurar el DKIM, acceda al sitio web <https://api.ovh.com/console/>, con
 
 > Si nunca ha utilizado la API, puede consultar nuestra guía ["Cómo utilizar las API de OVHcloud"](/pages/manage_and_operate/api/first-steps).
 
-Acceda a la sección `/email/domain/`(productos de correo (MXplan)) `/email/exchange` (productos Exchange) o `/email/pro` (producto Email Pro) de las API e introduzca " dkim " en la casilla "" Filter " para que solo aparezcan las API relativas al DKIM.
+Acceda a la sección `/email/domain/`(productos de correo (MXplan)) `/email/exchange` (productos Exchange) o `/email/pro` (producto Email Pro) de las API e introduzca " dkim " en la casilla "Filter " para que solo aparezcan las API relativas al DKIM.
 
 Haga clic en la pestaña que corresponde a su producto.
 
@@ -615,7 +615,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >>
 >> > [!primary]
 >> >
->> > Le recomendamos que realice esta operación dos veces para cada uno de los selectores que ha indicado anteriormente. El segundo selector le permitirá realizar un cambio de par de claves cuando sea necesario. Le invitamos a consultar nuestro caso de uso [«Cómo cambiar su par de claves DKIM»](#2selectors) cuando quiera cambiar al segundo selector.
+>> > Le recomendamos que realice esta operación dos veces para cada uno de los selectores que ha indicado anteriormente. El segundo selector le permitirá realizar un cambio de par de claves cuando sea necesario. Le invitamos a consultar nuestro caso de uso ["Cómo cambiar su par de claves DKIM"](#2selectors) cuando quiera cambiar al segundo selector.
 >>
 >> *Ejemplo de resultado:*
 >>
@@ -1148,13 +1148,13 @@ A continuación, encontrará los estados que pueden bloquear el funcionamiento d
 > **Correo electrónico (MX Plan)**
 >> - `disabled`: El DKIM está desactivado, todavía no se ha configurado o ha sido desactivado por API. <br>
 >> - `modifying`: La configuración del DKIM está en curso, es necesario esperar hasta que el proceso haya finalizado.<br>
->> - `toConfigure`: La configuración del DKIM está pendiente de los parámetros DNS del dominio. Debe introducir manualmente los registros DNS en la zona del nombre de dominio. Para ello, consulte el paso «[Configuración completa del DKIM](#confemail)» de esta guía. <br>
+>> - `toConfigure`: La configuración del DKIM está pendiente de los parámetros DNS del dominio. Debe introducir manualmente los registros DNS en la zona del nombre de dominio. Para ello, consulte el paso "[Configuración completa del DKIM](#confemail)" de esta guía. <br>
 >> - `error`: El proceso de instalación encontró un error. Le invitamos a abrir un [tíquet con el soporte](https://help.ovhcloud.com/csm?id=csm_get_help) indicando el dominio correspondiente.
 >>
 >> En el nivel de los selectores también tiene 2 estados de error:
 >>
->> - `toSet`: el selector no está configurado en la zona DNS del dominio. Haga clic en [Paso 4 de «Configuración completa de DKIM» para Correo electrónico (MX Plan)](#confemail).
->> - `toFix`: el selector se ha configurado correctamente en la zona DNS del dominio, pero los valores son incorrectos. Haga clic en [Paso 4 de «Configuración completa de DKIM» para Correo electrónico (MX Plan)](#confemail).
+>> - `toSet`: el selector no está configurado en la zona DNS del dominio. Haga clic en [Paso 4 de "Configuración completa de DKIM" para Correo electrónico (MX Plan)](#confemail).
+>> - `toFix`: el selector se ha configurado correctamente en la zona DNS del dominio, pero los valores son incorrectos. Haga clic en [Paso 4 de "Configuración completa de DKIM" para Correo electrónico (MX Plan)](#confemail).
 
 ## Más información <a name="go-further"></a>
 

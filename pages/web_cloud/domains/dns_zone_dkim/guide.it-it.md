@@ -42,7 +42,7 @@ Il record DKIM (**D**omain**K**eys **I**dentified **M**ail) permette di firmare 
 - Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links/manager) o dal provider del tuo dominio registrato al di fuori di OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver sottoscritto una delle soluzioni email disponibili:
-    - "Email" (MX Plan) OVHcloud. È disponibile tramite una [offerta di hosting Web Cloud](/links/web/hosting), un [hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o una soluzione MX Plan ordinata separatamente.
+    - "Email" (MX Plan) OVHcloud. È disponibile tramite una [offerta di hosting Web Cloud](/links/web/hosting), un [hosting gratuito 100M](/links/web/domains-free-hosting) o una soluzione MX Plan ordinata separatamente.
     - [Exchange](/links/web/emails-hosted-exchange) o [Private Exchange](/links/web/emails-hosted-exchange).
     - [Email Pro](/links/web/email-pro).
     - Offerta di posta elettronica esterna a OVHcloud con DKIM.
@@ -410,7 +410,7 @@ Segui i **5 step** cliccando su ognuna delle 5 schede qui sotto:
 >>
 >> > [!success]
 >> >
->> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, vérifiez son état en retournant à l'onglet de l'étape « **2. Vérifier l'état de l'opération DKIM** » pour vérifier que la valeur `status:` est bien en `enabled`. Si c'est bien le cas, votre DKIM est désormais actif.
+>> > A questo punto, hai eseguito tutte le operazioni per attivare il DKIM. Per verificare che il dominio sia attivo, consulta la scheda nel passaggio "**2 per verificare lo stato del dominio. Verifica lo stato dell’operazione DKIM**" per verificare che il valore `status:` sia in `enabled`. Se è così, il DKIM è attivo.
 >>
 
 ##### **Per Exchange** <a name="confex"></a>
