@@ -63,9 +63,9 @@ While requesting a new Additional IPv6 block, it's important to note that the al
 <summary> <b>Request new Additional IPv6 block</b> </summary>
 <blockquote>
 
-You can order your new addtional IPv6 block [here](https://feat-additional-ipv6-feature-manager.eu.dtci.ovhcloud.tools/container/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip)
+You can order your new addtional IPv6 block <a href="https://feat-additional-ipv6-feature-manager.eu.dtci.ovhcloud.tools/container/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip">here</a>
 
-All you have to do is follow the simple step-by-step instructions. At the end you need to select the right region to configure your new IPv6.
+All you have to do is follow the simple step-by-step instructions. At the end you need to select the right region to annonce your new Additional IPv6.
 
 <img src="/images/location.png" alt="location"/>
 <br/>
@@ -166,7 +166,7 @@ Once the Additional IPv6 /56 block is attributed to a vRack network, there is al
 Let's check exactly which subnet is bridged:
 
 
-<img src="/images/20240418-05.png" alt="API call get ipv6"/>)
+<img src="/images/20240418-05.png" alt="API call get ipv6"/>
 
 <br/>To get more details:
 
