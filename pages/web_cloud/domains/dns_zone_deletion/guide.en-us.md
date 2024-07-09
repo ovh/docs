@@ -57,11 +57,11 @@ To start deleting an OVHcloud DNS zone, perform the following actions:
 5. On the page that appears, click on the `DNS Zone`{.action} tab to access the table listing all the DNS records for the DNS zone.
 6. On the right-hand side (or below the table depending on your screen resolution), click the `Delete the DNS zone`{.action} button.
 
-![delete the DNS zone](images/delete-the-dns-zone.png){.thumbnail}
+![delete the DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone.png){.thumbnail}
 
 In the window that pops up, read the messages shown inside.
 
-![delete the DNS zone validation](images/delete-the-dns-zone-confirmation.png){.thumbnail}
+![delete the DNS zone validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone-confirmation.png){.thumbnail}
 
 Click the `Confirm`{.action} button to complete the first step of deleting the DNS zone.
 
@@ -85,7 +85,7 @@ Click the **validation link** to continue deleting the OVHcloud DNS zone, or cli
 
 If you click on the validation link, you will be redirected to a new OVHcloud page, which will ask you for the reason(s) for deleting the OVHcloud DNS zone.
 
-![cancel the service](images/cancel-my-service.png){.thumbnail}
+![cancel the service](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/cancel-my-service.png){.thumbnail}
 
 Once you have filled in the form, and are absolutely sure that you want to permanently delete the OVHcloud DNS zone, click `Confirm`{.action} at the bottom of the page.
 
