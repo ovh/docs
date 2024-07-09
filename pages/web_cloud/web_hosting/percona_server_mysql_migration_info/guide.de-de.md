@@ -40,7 +40,6 @@ Für Sie als Endbenutzer ist die Umstellung auf Percona Server für MySQL transp
 
 - **Keine Codeänderungen erforderlich**: Ihre Anwendungen funktionieren wie zuvor ohne Codeänderungen.
 - **Verbesserte Leistung**: Durch die Optimierung der InnoDB Storage-Engine und die erweiterten Monitoring-Tools eird eine Leistungssteigerung ermöglicht.
-- **Erweiterter Support**: Percona bietet umfassenden technischen Support, der eine effizientere Problemlösung ermöglichen kann.
 
 ### Fazit
 

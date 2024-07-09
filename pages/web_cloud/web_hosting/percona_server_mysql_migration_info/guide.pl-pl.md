@@ -39,7 +39,6 @@ Dla użytkownika końcowego przejście na Percona Server dla MySQL jest transpar
 
 - **Nie trzeba wprowadzać żadnych zmian w kodzie**: Twoje aplikacje będą działać tak samo jak wcześniej.
 - **Zwiększona wydajność**: wydajność można zwiększyć dzięki optymalizacji silnika przestrzeni dyskowej InnoDB i zaawansowanym narzędziom do monitoringu.
-- **Rozszerzona pomoc techniczna**: Percona oferuje obszerną pomoc techniczną, która może pomóc w bardziej efektywnym rozwiązywaniu problemów.
 
 ### Zakończenie
 

@@ -35,7 +35,6 @@ Pour vous, utilisateur final, le passage à Percona Server pour MySQL est transp
 
 - **Aucune modification de code nécessaire** : vos applications fonctionneront comme avant sans aucune modification du code.
 - **Performances améliorées** : vous pourriez observer une amélioration des performances grâce à l'optimisation du moteur de stockage InnoDB et aux outils de monitoring avancés.
-- **Support étendu** : Percona offre un support technique approfondi qui peut aider à résoudre les problèmes plus efficacement.
 
 ### Conclusion
 

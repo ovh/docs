@@ -39,7 +39,6 @@ Para usted, usuario final, el cambio a Percona Server para MySQL es transparente
 
 - **No es necesario modificar el código**: sus aplicaciones funcionarán como antes sin ninguna modificación del código.
 - **Rendimiento mejorado**: gracias a la optimización del motor de almacenamiento InnoDB y a las herramientas de monitorización avanzadas, podrá observar una mejora del rendimiento.
-- **Soporte ampliado**: Percona ofrece soporte técnico exhaustivo que puede ayudar a resolver los problemas de forma más eficaz.
 
 ### Conclusión
 

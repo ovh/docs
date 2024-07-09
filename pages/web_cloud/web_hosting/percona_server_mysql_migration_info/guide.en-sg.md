@@ -36,7 +36,6 @@ For you as the end user, the transition to Percona Server for MySQL is transpare
 
 - **No code changes required**: Your applications will work as before without any code changes.
 - **Improved performance**: You may see improved performance with the optimization of the InnoDB storage engine and advanced monitoring tools.
-- **Extended Support**: Percona provides in-depth technical support that can help resolve issues more efficiently.
 
 ### Conclusion
 
