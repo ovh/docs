@@ -26,7 +26,7 @@ This shared model can help relieve the customer’s operational burden.
 | Learn about capabilities and limitations of the service (documentation, T&C) | RA | I |
 | Define resilency level of the product before subscription | RA | I |
 | Define and configure a domain name and to own a domain for which an SSL certificate will be delivered before service subscription | RA | I |
-| Define the version of Exchange and the virtual private server in support of the service |  | RA |
+| Define the version of Exchange and the dedicated infrastructure in support of the service |  | RA |
 | Host the service in EU |  | RA |
 
 ### 2. Service availability
