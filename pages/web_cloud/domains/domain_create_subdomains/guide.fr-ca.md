@@ -22,7 +22,7 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 
 - Third Level Domain (**subdomain**). C'est à partir de ce troisième niveau que l'on parle de **sous-domaine**. Nous allons détailler sa définition dans ce guide et vous expliquer comment le mettre en place avec vos différents services.
 
-![URL content](images/url-composition.png){.thumbnail}
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
 
 **Découvrez les sous-domaines et comment en créer chez OVHcloud.**
 
