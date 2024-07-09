@@ -48,16 +48,16 @@ Sur la page qui apparaît, renseignez le nom de domaine (exemple : *domain.tld*)
 
 Si un message apparaît et vous indique que la zone DNS ne peut pas être créée, vérifiez que le nom de domaine respecte les prérequis nécessaires ou demandez à la personne gérant celui-ci de le faire pour vous. Dès que tout est correct, tentez de nouveau la manipulation.
 
-![dnszonecreate](images/adding-a-dns-zone.png){.thumbnail}
+![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone.png){.thumbnail}
 
 Dès que la vérification aboutit, choisissez d'activer ou non les entrées minimales pour la zone DNS que vous allez créer. Ce choix n'est pas définitif puisque vous pourrez toujours [éditer les enregistrements de la zone DNS](/pages/web_cloud/domains/dns_zone_edit) par la suite.
 
-![dnszonecreate](images/adding-a-dns-zone-step-2.png){.thumbnail}
+![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone-step-2.png){.thumbnail}
 
 |Activer les entrées minimales ?|Détails|
 |---|---|
-|Oui|Sélectionnez ce choix si vous souhaitez personnaliser vous-même la zone DNS par la suite.</br>![minimal-dns-entries](images/dashboard-minimal-entries.png){.thumbnail}|
-|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](/links/web/hosting){.external}, la zone étant préconfigurée à cet effet.</br>![no-minimal-dns-entries](images/dashboard-ovh-full-entries.png){.thumbnail}|
+|Oui|Sélectionnez ce choix si vous souhaitez personnaliser vous-même la zone DNS par la suite.</br>![minimal-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
+|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](/links/web/hosting){.external}, la zone étant préconfigurée à cet effet.</br>![no-minimal-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 
 Une fois votre choix effectué, poursuivez les étapes jusqu'à la création de la zone DNS.
 
@@ -92,7 +92,7 @@ Elle porte le nom de votre nom de domaine et un logo en forme de globe étiquet�
 
 Sur la page qui s'affiche, les serveurs DNS à utiliser avec votre nom de domaine pour activer la zone DNS OVHcloud apparaissent en dessous de `Name Servers`{.action}.
 
-![dnszonecreate](images/name-servers.png){.thumbnail}
+![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/name-servers.png){.thumbnail}
 
 Une fois les informations en votre possession, **modifiez les serveurs DNS de votre nom de domaine depuis l’interface du prestataire gérant ce dernier**. Une fois la manipulation effectuée, un temps de propagation de **48 heures** maximum est nécessaire afin que le changement soit pleinement effectif.
 

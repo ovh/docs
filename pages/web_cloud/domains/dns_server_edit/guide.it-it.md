@@ -60,7 +60,7 @@ Visualizzi una tabella con tutti i server DNS configurati da OVHcloud per il tuo
 >
 > Quando utilizzi i server DNS OVHcloud, i numeri presenti nei nomi dei server non hanno alcun legame con il servizio o i servizi che utilizzi. Solo l'opzione [DNS anycast](/links/web/domains-options) utilizza server DNS specifici che vengono automaticamente assegnati all'utente. 
 
-![dns-server](images/tab.png){.thumbnail}
+![dns-server](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
 
 ### Modifica i server DNS
 
@@ -81,7 +81,7 @@ Nei moduli di input, **Sostituisci** i valori correnti dei server DNS con le inf
 
 Una volta inserite queste informazioni, clicca su `Applica la configurazione`{.action}. Lo stato dei server DNS verrà aggiornato nella tabella con le nuove informazioni inserite.
 
-![dns-server](images/edit-dns-servers.png){.thumbnail}
+![dns-server](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/edit-dns-servers.png){.thumbnail}
 
 > [!success]
 >
@@ -92,7 +92,7 @@ Una volta inserite queste informazioni, clicca su `Applica la configurazione`{.a
 
 Il pulsante `Reinizializza i server DNS`{.action} permette di reinizializzare i server DNS correnti sostituendoli automaticamente con i server DNS OVHcloud di origine. Utilizzare questa opzione **solo** per riutilizzare i server DNS di OVHcloud (e la zona DNS di OVHcloud associata ai propri server DNS). 
 
-![dns-server](images/reset-the-dns-servers.png){.thumbnail}
+![dns-server](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/reset-the-dns-servers.png){.thumbnail}
 
 Una volta completata l’operazione attendi il tempo necessario alla sua elaborazione. Devono essere presi in considerazione due periodi successivi:
 
