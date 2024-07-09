@@ -63,7 +63,7 @@ While requesting a new Additional IPv6 block, it's important to note that the al
 <summary> <b>Request new Additional IPv6 block</b> </summary>
 <blockquote>
 
-You can order your new addtional IPv6 block <a href="https://feat-additional-ipv6-feature-manager.eu.dtci.ovhcloud.tools/container/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip">here</a>
+You can order your new addtional IPv6 block <a href="https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip">here</a>
 
 <br/><img src="/images/300.png" alt="configuration page"/>
 
