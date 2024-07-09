@@ -36,10 +36,10 @@ details[open]>summary::before {
 /// details | Introduction, concepts IAM au sein de HPC VMware on OVHcloud.
 
 Index des guides IAM globaux au sein de l'univers OVHcloud:
-- [Guide X -](). 
-- [Guide X -]().
-- [Guide X -]().
-- [Guide X -]().
+- [IAM - Présentation des identités pouvant interagir au sein d'un compte OVHcloud](/pages/manage_and_operate/iam/identities-management). 
+- [IAM - Comment utiliser les politiques IAM depuis votre espace client ](/pages/account_and_service_management/account_information/iam-control-panel-access).
+- [IAM - Liste des groupes de permissions d'OVHcloud](/pages/account_and_service_management/account_information/iam-permission-groups).
+- [IAM - Comment créer une politique IAM pour permettre à un utilisateur de se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 ### Introduction
 
@@ -55,7 +55,7 @@ L'activation de l'IAM OVHcloud délègue la gestion des accès au service IAM OV
 
 #### Role IAM vSphere
 
-Le concept d'IAM rôle au sein de HPC est très important. Pour simplifier :
+Le concept d'IAM rôle au sein de HPC est très important. Pour simplifier:
 - Un rôle IAM remplace un utilisateur local vSphere au sein du Hosted Private Cloud VMware on OVHcloud.
 - Une politique permet d'associer votre identité OVHcloud à ce rôle.
 
