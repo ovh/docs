@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar Backup Storage en un servidor dedicado'
 excerpt: 'Cómo activar y acceder al espacio de almacenamiento adicional'
-updated: 2023-07-28
+updated: 2024-07-09
 ---
 
 > [!primary]
@@ -248,7 +248,7 @@ En el comando anterior, sustituya las siguientes variables por el valor correspo
 * **LocalFolder**: Nombre del directorio local en el que quiere guardar el archivo
 * **File**: Ruta de acceso del archivo que quiere descargar
 
-####lftp (para Linux)
+#### lftp (para Linux)
 
 > [!primary]
 >
@@ -335,6 +335,16 @@ En el comando anterior, sustituya las siguientes variables por el valor correspo
 
 * **HostName**: Nombre del Backup Storage
 * **ServiceName**: Nombre del servidor (p. ej., ns0000000.ip-123-123-123.net)
+
+Puede aparecer el siguiente mensaje de error:
+
+```console
+System error 1272 has occurred.
+
+You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
+```
+
+Este problema se puede solucionar editando el Registro de Windows: abra la utilidad Windows *regedit* y busque la entrada `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Establezca el valor de `AllowInsecureGuestAuth` en "1". Más información sobre este tema en [páginas de soporte técnico de Microsoft](https://answer.microsoft.com/en-us/windows/forum/all/you-cant-access-this-shared-folder-because-your/01d15775-2cbe-41f8-beb8-84ce588b34ab).
 
 ##### Linux
 

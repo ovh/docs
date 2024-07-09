@@ -223,7 +223,7 @@ Następnie kliknij przycisk `Logowanie SSO`{.action}.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Uzupełnij pole **Nazwa atrybutu użytkownika** nazwą oświadczenia aplikacji identyfikatora wewnętrznego **upn** oraz w polu **Nazwa atrybutu grupy** wartością nazwy oświadczenia **groups**, która została wcześniej zapisana.
+Uzupełnij pole **Nazwa atrybutu użytkownika** nazwą oświadczenia aplikacji identyfikatora wewnętrznego **UPN** oraz w polu **Nazwa atrybutu grupy** wartością nazwy oświadczenia **groups**, która została wcześniej zapisana.
 
 Wypełnij metadane XML aplikacji Entra ID z wcześniej zarejestrowanego pliku.
 

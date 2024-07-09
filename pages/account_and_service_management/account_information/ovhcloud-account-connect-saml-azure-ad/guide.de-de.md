@@ -12,7 +12,7 @@ updated: 2024-07-05
 
 Sie können die Authentifizierungsmethode **Single Sign-On** (SSO) verwenden, um sich in Ihren OVHcloud Kunden-Account einzuloggen. Um diese Verbindungen zu aktivieren, müssen Ihr Account und Ihr Entra ID (vormals Azure Active Directory) mithilfe von SAML-Authentifizierungen (*Security Serving Markup Language*) konfiguriert werden.
 
-**Diese Anleitung erklärt, wie Sie Ihren OVHcloud Kunden-Account mit einem externen AD Azure verbinden.**
+**Diese Anleitung erklärt, wie Sie Ihren OVHcloud Kunden-Account mit einem externen Entra ID verbinden.**
 
 ## Voraussetzungen
 
@@ -51,7 +51,7 @@ Für dieses Beispiel wird der Benutzer **John Smith** verwendet.
 
 Bei Ausführung einer SSO-Authentifizierung wird die Identität von **John Smith** von Entra ID für den OVHcloud Account bereitgestellt. Diese Identität muss jedoch mindestens eine Gruppe enthalten. Wenn noch keine Gruppe existiert, fügen Sie den Benutzer **John Smith** wie folgt hinzu.
 
-#### Azure-AD-Gruppen
+#### Entra ID Gruppen
 
 Klicken Sie auf `Groups`{.action} im linken Menü.
 
@@ -117,7 +117,7 @@ Die Entra ID Anwendung wird nun erstellt. Benutzer, die SSO-Authentifizierungen 
 
 > [!primary]
 >
-> Damit ein Benutzer eine SSO-Authentifizierung von einer Entra ID-Anwendung aus durchführen kann, muss er zu dieser Anwendung hinzugefügt werden. Nachfolgend wird beschrieben, wie Sie einen Benutzer zu einer Entra ID Anwendung hinzufügen.
+> Damit ein Benutzer eine SSO-Authentifizierung von einer Entra ID Anwendung aus durchführen kann, muss er zu dieser Anwendung hinzugefügt werden. Nachfolgend wird beschrieben, wie Sie einen Benutzer zu einer Entra ID Anwendung hinzufügen.
 >
 > Wenn Sie über **Entra ID Premium** verfügen, ist es jedoch besser, eine Benutzergruppe statt Benutzern hinzuzufügen.
 >
@@ -197,13 +197,13 @@ Kopieren und speichern Sie den Wert des **Claim name** (etwa in einem Texteditor
 
 Kopieren Sie aus `SAML certificates`{.action} den Wert im Feld `App Federation Metadata Url`{.action}.
 
-Verwenden Sie diesen Link zum Herunterladen der Metadaten-Datei der Entra ID *Application*, um sie später im OVHcloud Kunden-Account zu verwenden.
+Verwenden Sie diesen Link zum Herunterladen der Metadaten-Datei der Entra ID Anwendung, um sie später im OVHcloud Kunden-Account zu verwenden.
 
 ![Entra ID SSO Schritt 8](images/azure_ad_sso_8.png){.thumbnail}
 
 ### Das Vertrauen zum OVHcloud Account und die Verbindung konfigurieren
 
-Das Hinzufügen Ihrer Entra ID *Application* als vertrauenswürdiger Identity Provider erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), in dem Sie die Metadaten des Identity Providers hinterlegen können.
+Das Hinzufügen Ihrer Entra ID Anwendung als vertrauenswürdiger Identity Provider erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), in dem Sie die Metadaten des Identity Providers hinterlegen können.
 
 #### OVHcloud Vertrauen aufbauen
 
@@ -223,9 +223,9 @@ Klicken Sie auf den Button `SSO-Verbindung`{.action}.
 
 ![OVHcloud SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Geben Sie im Feld **Nutzerattributname** den **UPN** der Entra ID *Application* ein und im Feld **Name des Gruppenattributs** den zuvor gespeicherten Wert des *Claim name* für **groups**.
+Geben Sie im Feld **Nutzerattributname** den **UPN** der Entra ID Anwendung ein und im Feld **Name des Gruppenattributs** den zuvor gespeicherten Wert des *Claim name* für **groups**.
 
-Geben Sie die XML-Metadaten der Entra ID *Application* aus der zuvor gespeicherten Datei ein.
+Geben Sie die XML-Metadaten der Entra ID Anwendung aus der zuvor gespeicherten Datei ein.
 
 Sie können die lokalen Benutzer beibehalten, indem Sie die Option `Aktive OVHcloud User beibehalten` aktivieren.
 
@@ -233,7 +233,7 @@ Klicken Sie auf den Button `Bestätigen`{.action}.
 
 ![SSO Step 1](images/ovhcloud_sso_1.png){.thumbnail}
 
-Ihre Entra ID *Application* gilt nun als vertrauenswürdiger Identity Provider. Dennoch müssen im OVHcloud Account Gruppen hinzugefügt werden.
+Ihre Entra ID Anwendung gilt nun als vertrauenswürdiger Identity Provider. Dennoch müssen im OVHcloud Account Gruppen hinzugefügt werden.
 
 > [!warning]
 > Wenn Sie sich in diesem Schritt über SSO verbinden, wird wahrscheinlich eine Fehlermeldung `Not in valid groups` angezeigt.
@@ -241,7 +241,7 @@ Ihre Entra ID *Application* gilt nun als vertrauenswürdiger Identity Provider. 
 > Ihr OVHcloud Account überprüft, ob der authentifizierende Benutzer zu einer bestehenden Gruppe auf dem Account gehört.
 >
 
-Um dies zu erreichen, überprüfen Sie das Attribut "Group", das von Ihrer Entra ID *Application* zurückgegeben wird: das Feld **Object Id**.
+Um dies zu erreichen, überprüfen Sie das Attribut "Group", das von Ihrer Entra ID Anwendung zurückgegeben wird: das Feld **Object Id**.
 
 #### Deklaration von Gruppen für OVHcloud
 
