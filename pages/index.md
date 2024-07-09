@@ -99,6 +99,7 @@
         + [Domains - Shared Responsibility](web_cloud/domains/responsibility_model_domains)
         + [Data Processing - Responsibility Model](public_cloud/data_analytics/data_processing/responsibility_model)
         + [Managed E-mail Server on Mutualized Infrastructure - Responsibility Model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/responsibility_model_private_email_server_exchange)
+        + [Managed Dedicated E-mail Infrastructure - Responsibility Model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/raci_dedicated_email_infrastructure)
 + Bare Metal Cloud
     + [Dedicated Servers](products/bare-metal-cloud-dedicated-servers)
         + [Getting started](bare-metal-cloud-dedicated-servers-getting-started)
@@ -1510,6 +1511,7 @@
                 + [Creating a CNAME record to add an associated domain](web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
                 + [Hosted Exchange Responsibility model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/responsibility-model)
                 + [Managed E-mail Server on Mutualized Infrastructure - Responsibility Model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/responsibility_model_private_email_server_exchange)
+                + [Managed Dedicated E-mail Infrastructure - Responsibility Model](web_cloud/email_and_collaborative_solutions/microsoft_exchange/raci_dedicated_email_infrastructure)
             + [Exchange account features](web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features)
                 + [Creating contact groups](web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
                 + [Delegating permissions on an Exchange account](web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
