@@ -1,7 +1,7 @@
 ---
-title: Using backup storage on a dedicated server
+title: How to use the backup storage on a dedicated server
 excerpt: 'Find out how to enable and access your additional storage space'
-updated: 2023-07-28
+updated: 2024-07-09
 ---
 
 ## Objective
@@ -241,7 +241,7 @@ The code example above contains variables, which you will need to substitute wit
 * **LocalFolder**: The name of the local folder where you want to save the file
 * **File**: The path to the file you want to download
 
-####lftp (for Linux)
+#### lftp (for Linux)
 
 > [!primary]
 >
@@ -329,6 +329,16 @@ The code example above contains variables, which you will need to substitute wit
 * **HostName**: The host name of your backup storage
 * **ServiceName**: The name of your server (e.g. ns0000000.ip-123-123-123.net)
 
+You might receive the following error message:
+
+```console
+System error 1272 has occurred.
+
+You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
+```
+
+This error should be resolvable by modifying the Windows Registry: Open the Windows utility *regedit* and locate the entry `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Set the value of `AllowInsecureGuestAuth` to "1". You can find more information on this issue on the [Microsoft support pages](https://answers.microsoft.com/en-us/windows/forum/all/you-cant-access-this-shared-folder-because-your/01d15775-2cbe-41f8-beb8-84ce588b34ab).
+
 ##### Linux
 
 Establish an SSH connection to your server, and type the following command:
@@ -345,4 +355,4 @@ The code example above contains variables, which you will need to substitute wit
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
