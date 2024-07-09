@@ -1,7 +1,7 @@
 ---
 title: Sign-up to Data Platform
 excerpt: ""
-updated: 2024-07-08
+updated: 2024-07-09
 ---
 
 ## How to access the Data Platform <sup><small>Beta</small></sup>

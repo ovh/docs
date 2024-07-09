@@ -1,7 +1,7 @@
 ---
 title: Data Platform documentation
 excerpt: ""
-updated: 2024-07-08
+updated: 2024-07-09
 ---
 
 <style>
