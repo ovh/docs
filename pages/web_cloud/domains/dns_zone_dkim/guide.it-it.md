@@ -215,7 +215,7 @@ Per configurare il DKIM, accedi al sito <https://api.ovh.com/console/> utilizzan
 
 > Clicca sulla nostra guida ["Scopri come utilizzare le API OVHcloud"](/pages/manage_and_operate/api/first-steps) se non hai mai utilizzato le API.
 
-Clicca sulla sezione `/email/dominio/`(offerte email (MXplan)) `/email/exchange` (offerte Exchanges) o `/email/pro` (offerta Email Pro) delle API e digita "dkim" nella casella `Filter` per visualizzare solo le API relative al DKIM.
+Clicca sulla sezione `/email/domain/`(offerte email (MXplan)) `/email/exchange` (offerte Exchanges) o `/email/pro` (offerta Email Pro) delle API e digita "dkim" nella casella `Filter` per visualizzare solo le API relative al DKIM.
 
 Clicca sulla scheda corrispondente alla tua offerta:
 
@@ -918,7 +918,7 @@ Seleziona il servizio di posta in questione nelle seguenti schede:
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/pro DELETE /email/pro/{service}/dominio/{domainName}/dkim/{selectorName}
+>> > @api {v1} /email/pro DELETE /email/pro/{service}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
 >> - `servizio` : inserisci il nome della tua piattaforma Email Pro nella forma "emailpro-zz111111-1". <br>
