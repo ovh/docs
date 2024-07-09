@@ -1,7 +1,7 @@
 ---
-title: 'Premiers pas avec la solution Visibilité Pro'
-excerpt: 'Découvrez comment bien débuter avec la solution Visibilité Pro'
-updated: 2018-09-19
+title: "Premiers pas avec la solution Visibilité Pro"
+excerpt: "Découvrez comment bien débuter avec la solution Visibilité Pro"
+updated: 2024-07-09
 ---
 
 ## Objectif
