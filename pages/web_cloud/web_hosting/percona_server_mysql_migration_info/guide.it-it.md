@@ -1,7 +1,7 @@
 ---
 title: "Migrazione da MySQL a Percona Server per MySQL"
 excerpt: "Scopri i vantaggi della migrazione da MySQL a Percona Server per MySQL"
-updated: 2024-05-22
+updated: 2024-07-09
 ---
 
 > [!primary]
@@ -51,4 +51,4 @@ La migrazione di MySQL da Oracle verso Percona Server per MySQL ha lo scopo di r
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).
