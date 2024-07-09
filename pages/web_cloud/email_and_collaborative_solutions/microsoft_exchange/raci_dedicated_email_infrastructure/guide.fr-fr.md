@@ -25,7 +25,7 @@ Définition ## RACI
 | Se rensigner sur les capacités et les limites du service (documentation, conditions d'utilisation) | RA | I |
 | Définir le modèle de résilience du produit avant souscription | RA | I |
 | Définir et configurer un nom de domaine et disposer d'un domaine pour lequel un certificat SSL sera fourni avant la souscription du service | RA | I |
-| Définit la version d'Exchange et le serveur privé virtuel en support du service | | RA |
+| Définit la version d'Exchange et l'infrastructure dédiée en support du service | | RA |
 | Héberger le service dans l'UE | | RA |
 
 ### 2. Disponibilité du service
