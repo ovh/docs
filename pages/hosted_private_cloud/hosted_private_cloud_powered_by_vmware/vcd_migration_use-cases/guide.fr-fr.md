@@ -65,7 +65,7 @@ Avec ce guide, vous serez équipé pour naviguer dans les complexités des migra
 
 **Schema PCC to VCD:**
 
-![VCD Migration Schema](images/vcd_mirgration_schema.png){.thumbnail}
+![VCD Migration Schema](images/vcd_migration_schema.png){.thumbnail}
 
 ### Critères d'acceptance
 
@@ -89,14 +89,15 @@ En tant qu'administrateur VCD, je veux pouvoir étendre les vlan 1000 et 2000 de
 - [x] Bridge to map vlan 2xxx to VCD instance vRACK with vlan id 2xxx.
 - [x] Robot côté PCC qui peut être déclenché depuis l'api avec l'id PCC + l'id vRACK VCD comme paramètres.
 
-![VCD Migration Schema](images/vcd_mirgration_schema_2.png){.thumbnail}
-
+![VCD Migration Schema](images/vcd_migration_schema_2.png){.thumbnail}
 
 ///
 
 ### Étape 2 - Les cas particuliers de migration PCC vers VCD
 
 /// details | Qu'elles sont les cas particuliers de migration PCC vers VCD ?
+
+Tableau de migration selon les cas d'utilisations:**
 
 | Étapes               | Check                                                                                 | Actions                                                                                                                                                                                                                                     | Durée | Client | OVHcloud | Commentaires |
 |----------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|--------|----------|--------------|
@@ -121,20 +122,28 @@ En tant qu'administrateur VCD, je veux pouvoir étendre les vlan 1000 et 2000 de
 | Pre-check            | 	Check NSX-v usage                                                                    | 	- La documentation publique ne peut pas être migrée si Edge et DFW, pour l'instant blocage de la migration, sont traités dans une autre vague (nous allons vérifier si elle peut être gérée manuellement → 15 occurrences avec utilisation) |       |        |          |              |
 | Pre-check            | 	Check HCX usage (erreur)                                                             | 	- Impossible de migrer la documentation publique. La fonctionnalité doit être désactivée avant la migration.                                                                                                                               |       |        |          |              |
 
-|                            |                                                    |
-|----------------------------|----------------------------------------------------|
+
+**Tableau de migration selon l'offre Hosted Private Cloud:**
+
+|                            |                                                    |                             |                       |                        |                        |
+|----------------------------|----------------------------------------------------|-----------------------------|-----------------------|------------------------|------------------------|
 | Source site*               | 	Destination site                                  |
-|                            | VMware Cloud Director site                         | 	On-premises vCenter Server  |	CDS-managed AVS SDDC  |	CDS-managed GCVE SDDC |	CDS-managed OCVS SDDC |	CDS-managed on-premises pVDC |	CDS-managed VMC SDDC |
-| VMware Cloud Director site | 	Yes                                               |	Yes                  |	Yes             |	Yes        |	Yes   |	Yes                  |	Future           |
-| On-premises vCenter Server | 	Yes                                               |	Yes**                |	Yes           |	Yes      |	Yes |	Yes                 |	Future         |
-| CDS-managed AVS SDDC       | 	Yes                                               | 	Yes                  |	Yes             |	Yes        |	Yes   |	Yes                   |	Future           |
-| CDS-managed GCVE SDDC      | 	Yes                                               |	Yes                  |	Yes             |	Yes         |	Yes   |	Yes                   |	Future           |
-| CDS-managed OCVS SDDC      | 	Yes                                               | 	Yes                  |	Yes             |	Yes         |	Yes   |	Yes                   |	Future           |
-| CDS-managed on-premises  pVDC           |	Yes  |	Yes  |	Yes | 	Yes        |	Yes                   |	Yes             |	Future |
-| CDS-managed VMC SDDC       | 	Future                                            |	Future |	Future |	Future |	Future | 	Future |	Future |
+|                            | VMware Cloud Director site                         | 	On-premises vCenter Server | 	CDS-managed AVS SDDC | 	CDS-managed GCVE SDDC | 	CDS-managed OCVS SDDC |	CDS-managed on-premises pVDC |	CDS-managed VMC SDDC |
+| VMware Cloud Director site | 	Yes                                               | 	Yes                        | 	Yes                  | 	Yes                   | 	Yes                   |	Yes                  |	Future           |
+| On-premises vCenter Server | 	Yes                                               | 	Yes**                      | 	Yes                  | 	Yes                   | 	Yes                   |	Yes                 |	Future         |
+| CDS-managed AVS SDDC       | 	Yes                                               | 	Yes                        | 	Yes                  | 	Yes                   | 	Yes                   |	Yes                   |	Future           |
+| CDS-managed GCVE SDDC      | 	Yes                                               | 	Yes                        | 	Yes                  | 	Yes                   | 	Yes                   |	Yes                   |	Future           |
+| CDS-managed OCVS SDDC      | 	Yes                                               | 	Yes                        | 	Yes                  | 	Yes                   | 	Yes                   |	Yes                   |	Future           |
+| CDS-managed on-premises  pVDC           |	Yes  | 	Yes                        | 	Yes                  | 	Yes                   | 	Yes                   |	Yes             |	Future |
+| CDS-managed VMC SDDC       | 	Future                                            | 	Future                     | 	Future               | 	Future                | 	Future                | 	Future |	Future |
 
-### Cas du multi vDC
+## Étape 3 - Les cas particuliers
 
+### Multi vDC
+
+| Étapes               | Check                                                                                 | Actions                                                                                                                                                                                                                                     | Durée | Client | OVHcloud | Commentaires |
+|----------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|--------|----------|--------------|
+| Pre-check            | Multi vDC (avertissement)                                                             | 	- Public documentation, if datacenter empty → ignore else only one customer, contact him and block                                                                                                                                         | ?     | Oui    | Oui      |              |
 
 
 ///
