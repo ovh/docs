@@ -137,7 +137,7 @@ Inizia sostituendo il netboot con `Avviare da hard disk`{.action} nello Spazio C
 
 Riavvia il server dallo Spazio Cliente. Clicca sul pulsante `...`{.action} vicino alla sezione "Stato dei servizi" e seleziona `Riavvia`{.action}.
 
-![reboot](/pages/assets/screens/control_panel/bare-metal-dedicated/cp_dedicated_restart.png){.thumbnail}
+![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
 
 ### Step 4 - Definisci una nuova password (IPMI) <a name="step4"></a>
 

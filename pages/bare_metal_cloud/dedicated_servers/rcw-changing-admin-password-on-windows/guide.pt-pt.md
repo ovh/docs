@@ -136,7 +136,7 @@ Comece por substituir o netboot por "Fazer boot" no disco rígido`{.action} na �
 
 A seguir, reinicie o servidor a partir da Área de Cliente. Clique no botão `...`{.action} junto da secção « Estado dos serviços » e selecione `Reiniciar`{.action}.
 
-![reboot](/pages/assets/screens/control_panel/bare-metal-dedicated/cp_dedicated_restart.png){.thumbnail}
+![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
 
 ### Etapa 4 - Definir uma nova palavra-passe (IPMI) <a name="step4"></a>
 
