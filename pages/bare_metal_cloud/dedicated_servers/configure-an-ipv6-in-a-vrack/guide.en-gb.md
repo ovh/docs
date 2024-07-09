@@ -138,12 +138,12 @@ You have an IP section and you can add a new subnet clicking Add sub network{.ac
 <img src="/images/103.png" alt="vrack select"/>
 <br/>
 
-In this way you have this modal to entrer your new address
+This way you reach-out to the subnet configuration.
 
 <img src="/images/107.png" alt="continue"/>
 <br/>
 
-You can also activate/deactivate SLAAC at any time using this radio button
+You can also activate/deactivate SLAAC option for the first /64 of your block (this one is always bridged) at any time using this radio button.
 
 <img src="/images/104.png" alt="continue"/>
 <br/>
