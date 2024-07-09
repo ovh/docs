@@ -162,19 +162,19 @@ Clicca sulla scheda qui sotto corrispondente alla tua offerta.
 > [!tabs]
 > **Exchange**
 >>
->> Dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/it/&ovhSubsidiary=it), nella scheda `Web Cloud`{.action}, clicca su `Microsoft`{.action}, poi su `Exchange`{.action}. Clicca sul nome del servizio Exchange interessato. Infine, clicca sulla scheda `Domini associati`{.action}.
+>> Dal tuo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Microsoft`{.action}, poi su `Exchange`{.action}. Clicca sul nome del servizio Exchange interessato. Infine, clicca sulla scheda `Domini associati`{.action}.
 >>
 >> A destra del dominio in questione, la casellina `DKIM` è grigia.
 >>
->>![email](images/dkim-auto01.png){.thumbnail}
+>> ![email](images/dkim-auto01.png){.thumbnail}
 >>
 > **Email Pro**
 >>
->> Dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/it/&ovhSubsidiary=it), nella scheda `Web Cloud`{.action}, clicca su `Email Pro`{.action}, poi sul nome del servizio Email Pro interessato. Infine, clicca sulla scheda `Domini associati`{.action}.
+>> Dal tuo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Email Pro`{.action}, poi sul nome del servizio Email Pro interessato. Infine, clicca sulla scheda `Domini associati`{.action}.
 >>
 >> A destra del dominio in questione, la casellina `DKIM` è grigia.
 >>
->>![email](images/dkim-auto01.png){.thumbnail}
+>> ![email](images/dkim-auto01.png){.thumbnail}
 
 Per attivare il DKIM, clicca sulla casellina `DKIM` grigia e poi su `Conferma`{.action} dalla finestra di attivazione che appare.
 
@@ -213,9 +213,9 @@ Assicurati anche che il dominio da utilizzare per le tue email sia attivo nella 
 
 Per configurare il DKIM, accedi al sito <https://api.ovh.com/console/> utilizzando il pulsante `Login`{.action} in alto a destra e inserisci le credenziali OVHcloud.
 
-> Clicca sulla nostra guida ["Scopri come utilizzare le API OVHcloud"](/pages/manage_and_operate/api/first-steps) se non hai mai utilizzato le API.
+> Clicca sulla nostra guida "[Scopri come utilizzare le API OVHcloud](/pages/manage_and_operate/api/first-steps)" se non hai mai utilizzato le API.
 
-Clicca sulla sezione `/email/domain/`(offerte email (MXplan)) `/email/exchange` (offerte Exchanges) o `/email/pro` (offerta Email Pro) delle API e digita "dkim" nella casella `Filter` per visualizzare solo le API relative al DKIM.
+Clicca sulla sezione `/email/domain/` (offerte email (MXplan)), `/email/exchange` (offerte Exchanges) o `/email/pro` (offerta Email Pro) delle API e digita "dkim" nella casella `Filter` per visualizzare solo le API relative al DKIM.
 
 Clicca sulla scheda corrispondente alla tua offerta:
 
@@ -245,7 +245,7 @@ Segui i **5 step** cliccando su ognuna delle 5 schede qui sotto:
 >> >
 >> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
 >>
->> - `dominio`: inserisci il dominio associato al servizio email su cui vuoi attivare DKIM.
+>> - `domain`: inserisci il dominio associato al servizio email su cui vuoi attivare DKIM.
 >>
 >> Clicca su `TRY`{.action} per avviare l’attivazione.<br>
 >>
@@ -352,7 +352,7 @@ Segui i **5 step** cliccando su ognuna delle 5 schede qui sotto:
 >> Se i valori dell'esempio vengono suddivisi nel passaggio "**3. Recupera il record DNS**":
 >>
 >> - `ovhmo3456789-selector1._domainkey.mydomain.ovh` corrisponde al sottodominio del record CNAME. Si conserva solo `ovhmo3456789-selector1._domainkey` perché il `.mydomain.ovh` è già precompilato. <br>
->> - `ovhmo3456789-selector1._domainkey.123403.aj.dkim.mail.ovh.net."` corrisponde alla destinazione del record. È necessario mantenere il punto alla fine per punteggiare il valore.<br>
+>> - `ovhmo3456789-selector1._domainkey.123403.aj.dkim.mail.ovh.net.` corrisponde alla destinazione del record. È necessario mantenere il punto alla fine per punteggiare il valore.<br>
 >>
 >> ![email](images/dns-dkim-api022.png){.thumbnail}
 >>
@@ -380,12 +380,13 @@ Segui i **5 step** cliccando su ognuna delle 5 schede qui sotto:
 >> >
 >> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
 >>
->> - `dominio`: inserisci il dominio associato al servizio email su cui vuoi attivare DKIM.
+>> - `domain`: inserisci il dominio associato al servizio email su cui vuoi attivare DKIM.
 >>
 >> Clicca su `TRY`{.action} per avviare l’attivazione.<br>
 >>
 >> *Esempio di risultato:*
 >>
+>> ```console
 >> {
 >>  "selectors": [
 >>    {
@@ -403,6 +404,7 @@ Segui i **5 step** cliccando su ognuna delle 5 schede qui sotto:
 >>  "autoconfig": true,
 >>  "status": "enabled"
 >> }
+>> ```
 >>
 >> - Se noti i valori `"status": "set"` sui 2 selettori, significa che sono configurati correttamente.
 >> - Se riscontri i i valori `"status": "toSet"` sui 2 selettori, significa che le modifiche DNS non sono visibili. Tornare alla scheda "**4. Configura il record DNS**".
@@ -732,7 +734,7 @@ Seleziona il servizio di posta in questione nelle seguenti schede:
 >> >
 >> > @api {v1} /email/domain/ GET /email/domain/{domain}/dkim
 >>
->> - `dominio`: inserisci il dominio associato al tuo servizio di posta elettronica su cui deve essere presente il DKIM.
+>> - `domain`: inserisci il dominio associato al tuo servizio di posta elettronica su cui deve essere presente il DKIM.
 >>
 >> Guarda poi il valore `status:` generale nel risultato:
 >>
@@ -864,7 +866,7 @@ Seleziona il servizio di posta in questione nelle seguenti schede:
 >> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/disable
 >> <br>
 >>
->> - `dominio`: inserisci il dominio associato al tuo servizio di posta elettronica su cui deve essere presente il DKIM. <br>
+>> - `domain`: inserisci il dominio associato al tuo servizio di posta elettronica su cui deve essere presente il DKIM. <br>
 >>
 >> *Esempio di risultato:*
 >>
@@ -1082,15 +1084,15 @@ Clicca sulla scheda qui sotto corrispondente alla tua offerta per verificare lo 
 > [!tabs]
 > **Exchange**
 >>
->> Dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/it/&ovhSubsidiary=it), nella scheda `Web Cloud`{.action}, clicca su `Microsoft`{.action} e poi su `Exchange`{.action}. Infine clicca sul nome del servizio Exchange interessato.<br><br> Nella sezione `Domini associati`{.action}, verifica il colore dell’icona `DKIM` a destra del dominio interessato (vedi l’immagine qui sotto).
+>> Dal tuo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Microsoft`{.action} e poi su `Exchange`{.action}. Infine clicca sul nome del servizio Exchange interessato.<br><br> Nella sezione `Domini associati`{.action}, verifica il colore dell’icona `DKIM` a destra del dominio interessato (vedi l’immagine qui sotto).
 >>
->>![email](images/red-dkim.png){.thumbnail}
+>> ![email](images/red-dkim.png){.thumbnail}
 >>
 > **Email Pro**
 >>
->> Dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/it/&ovhSubsidiary=it), nella scheda `Web Cloud`{.action}, clicca su `Email Pro`{.action} e poi sul nome del servizio Email Pro in questione.<br><br> Nella sezione `Domini associati`{.action}, verifica il colore dell’icona `DKIM` a destra del nome di dominio interessato (vedi l’immagine qui sotto).
+>> Dal tuo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Email Pro`{.action} e poi sul nome del servizio Email Pro in questione.<br><br> Nella sezione `Domini associati`{.action}, verifica il colore dell’icona `DKIM` a destra del nome di dominio interessato (vedi l’immagine qui sotto).
 >>
->>![email](images/red-dkim.png){.thumbnail}
+>> ![email](images/red-dkim.png){.thumbnail}
 
 Ecco i 4 stati che hanno come risultato l’icona DKIM in rosso nel tuo Spazio Cliente, clicca sulla scheda corrispondente al tuo codice di errore:
 

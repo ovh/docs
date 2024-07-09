@@ -162,7 +162,7 @@ Clique no separador seguinte da sua oferta.
 > [!tabs]
 > **Exchange**
 >>
->> A partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/pt/&ovhSubsidiary=pt), no separador `Web Cloud`{.action}, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Clique no nome do serviço Exchange em questão. Por fim, aceda ao separador `Domínios associados`{.action}.
+>> A partir da sua [Área de Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Clique no nome do serviço Exchange em questão. Por fim, aceda ao separador `Domínios associados`{.action}.
 >>
 >> À direita do domínio em causa, pode verificar que a etiqueta `DKIM` é cinzenta.
 >>
@@ -170,7 +170,7 @@ Clique no separador seguinte da sua oferta.
 >>
 > **E-mail Pro**
 >>
->> A partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/pt/&ovhSubsidiary=pt), no separador `Web Cloud`{.action}, clique em `E-mails Pro`{.action} e, a seguir, no nome do serviço E-mail Pro em causa. Por fim, aceda ao separador `Domínios associados`{.action}.
+>> A partir da sua [Área de Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `E-mails Pro`{.action} e, a seguir, no nome do serviço E-mail Pro em causa. Por fim, aceda ao separador `Domínios associados`{.action}.
 >>
 >> À direita do domínio em causa, pode verificar que a etiqueta `DKIM` é cinzenta.
 >>
@@ -215,7 +215,7 @@ Para configurar o DKIM, aceda ao website <https://api.ovh.com/console/>através 
 
 > Apoie-se no nosso guia "[Descubra como utilizar as API OVHcloud](/pages/manage_and_operate/api/first-steps)" se nunca utilizou as API.
 
-Aceda à secção `/email/domain/`(ofertas E-mails (MXplan)) `/email/exchange` (ofertas Exchange) ou `/email/pro` (oferta E-mail Pro) das API e introduza "dkim" na caixa `Filter` para apresentar apenas as API relativas ao DKIM.
+Aceda à secção `/email/domain/` (ofertas E-mails (MXplan)), `/email/exchange` (ofertas Exchange) ou `/email/pro` (oferta E-mail Pro) das API e introduza "dkim" na caixa `Filter` para apresentar apenas as API relativas ao DKIM.
 
 Clique no separador da sua oferta:
 
@@ -360,7 +360,7 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >>
 >> > [!primary]
 >> >
->> > **Répétez cette opération pour le deuxième sélecteur.**
+>> > **Repita este processo para o segundo seletor.**
 >>
 >> Se configurar a sua zona DNS numa interface de terceiros fora da OVHcloud, o registo CNAME deve ter a seguinte forma:
 >>
@@ -370,7 +370,7 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >>
 >> > [!warning]
 >> >
->> > N'oubliez pas qu'une modification dans une zone DNS est soumise à un délai de propagation. Il est généralement court mais peut s'étendre jusqu'à 24 heures.
+>> > Lembre-se de que a alteração de uma zona DNS está sujeita a um tempo de propagação. É geralmente curto, mas pode durar até 24 horas.
 >>
 > **5. Ativação do DKIM**
 >>
@@ -386,6 +386,7 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >>
 >> *Exemplo de resultado:*
 >>
+>> ```console
 >> {
 >>  "selectors": [
 >>    {
@@ -403,6 +404,7 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >>  "autoconfig": true,
 >>  "status": "enabled"
 >> }
+>> ```
 >>
 >> - Se verificar os valores `"status": "set"` nos 2 seletores, isso significa que eles estão bem configurados.
 >> - Se verificar os valores `"status": "toSet"` nos 2 seletores, isso significa que as suas alterações DNS não são visíveis. Retomar no separador "**4. Configurar o registo DNS**".
@@ -1081,13 +1083,13 @@ Clique no separador abaixo correspondente à sua oferta para verificar o estado 
 > [!tabs]
 > **Exchange**
 >>
->> A partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pt), no separador `Web Cloud`{.action}, clique em `Microsoft`{.action} e depois em `Exchange`{.action}. Por fim, clique no nome do serviço Exchange em questão.<br><br> Na rubrica `Domínios associados`{.action}, verifique a cor do ícone `DKIM` à direita do domínio em questão (ver a imagem abaixo).
+>> A partir da sua [Área de Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `Microsoft`{.action} e depois em `Exchange`{.action}. Por fim, clique no nome do serviço Exchange em questão.<br><br> Na rubrica `Domínios associados`{.action}, verifique a cor do ícone `DKIM` à direita do domínio em questão (ver a imagem abaixo).
 >>
 >> ![email](images/red-dkim.png){.thumbnail}
 >>
 > **E-mail Pro**
 >>
->> A partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/pt/&ovhSubsidiary=pt), no separador `Web Cloud`{.action}, clique em `E-mails Pro`{.action} e, a seguir, no nome do serviço E-mail Pro em causa.<br><br> Na rubrica `Domínios associados`{.action}, verifique a cor do ícone `DKIM` à direita do domínio em causa (ver imagem abaixo).
+>> A partir da sua [Área de Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `E-mails Pro`{.action} e, a seguir, no nome do serviço E-mail Pro em causa.<br><br> Na rubrica `Domínios associados`{.action}, verifique a cor do ícone `DKIM` à direita do domínio em causa (ver imagem abaixo).
 >>
 >> ![email](images/red-dkim.png){.thumbnail}
 
@@ -1147,7 +1149,7 @@ Abaixo irá encontrar os estados que podem bloquear o funcionamento do seu DKIM 
 >> - `todo`: a tarefa foi inicializada e deverá iniciar-se. Acima das 24 horas, se o seletor ainda estiver nesse estado, convidamo-lo a abrir um [ticket junto do suporte](https://help.ovhcloud.com/csm?id=csm_get_help) especificando o número do seletor em causa.
 > **E-mails (MX Plan)**
 >> - `disabled`: O DKIM está desativado, ainda não foi configurado ou foi desativado pela API. <br>
->> - `modifying` : A configuração do DKIM está em curso, é necessário aguardar até ao fim do processo.<br>
+>> - `modifying`: A configuração do DKIM está em curso, é necessário aguardar até ao fim do processo.<br>
 >> - `toConfigure`: A configuração do DKIM está aguardando os parâmetros DNS do domínio. Os registos DNS devem ser preenchidos manualmente na zona do domínio. Para isso, clique na etapa "[Configuração completa do DKIM](#confemail)" deste guia. <br>
 >> - `error`: O processo de instalação encontrou um erro. Sugerimos que abra um [ticket junto do suporte](https://help.ovhcloud.com/csm?id=csm_get_help) especificando o domínio em causa.
 >>

@@ -162,7 +162,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 > [!tabs]
 > **Exchange**
 >>
->> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij na `Microsoft`{.action}, a następnie na `Exchange`{.action}. Kliknij wybraną nazwę usługi Exchange. Na koniec przejdź do zakładki `Przypisane domeny`{.action}.
+>> W [Panelu klienta OVHcloud](/links/manager) w zakładce `Web Cloud`{.action} kliknij na `Microsoft`{.action}, a następnie na `Exchange`{.action}. Kliknij wybraną nazwę usługi Exchange. Na koniec przejdź do zakładki `Przypisane domeny`{.action}.
 >>
 >> Po prawej stronie wybranej domeny, możesz zauważyć, że przycisk `DKIM` jest szary.
 >>
@@ -213,24 +213,24 @@ Upewnij się również, czy domena, której chcesz używać do obsługi e-maili 
 
 Aby skonfigurować DKIM, wejdź na stronę <https://api.ovh.com/console/> WWW, zaloguj się przyciskiem `Login`{.action} w prawym górnym rogu i wprowadź dane identyfikacyjne OVHcloud.
 
-> Skorzystaj z naszego przewodnika ["Dowiedz się, jak korzystać z API OVHcloud"](/pages/manage_and_operate/api/first-steps), jeśli nigdy wcześniej nie korzystałeś z API.
+> Skorzystaj z naszego przewodnika "[Dowiedz się, jak korzystać z API OVHcloud](/pages/manage_and_operate/api/first-steps)", jeśli nigdy wcześniej nie korzystałeś z API.
 
-Przejdź do sekcji`/email/domain/`(oferty E-mail (MXplan))`/email/exchange` (oferty Exchange) lub`/email/pro` (oferta E-mail Pro) interfejsów API i wpisz "dkim" w polu `Filter`, aby wyświetlić tylko API związane z DKIM.
+Przejdź do sekcji`/email/domain/` (oferty E-mail (MXplan)), `/email/exchange` (oferty Exchange) lub`/email/pro` (oferta E-mail Pro) interfejsów API i wpisz "dkim" w polu `Filter`, aby wyświetlić tylko API związane z DKIM.
 
 Kliknij zakładkę odnoszącą się do Twojej oferty:
 
 > [!tabs]
 > **E-maile (MX Plan)**
 >>
->> ![email](obrazy/dns-dkim-api01.png){.thumbnail}
+>> ![email](images/dns-dkim-api01.png){.thumbnail}
 >>
 > **Exchange**
 >>
->> ![email](obrazy/dns-dkim-api012.png){.thumbnail}
+>> ![email](images/dns-dkim-api012.png){.thumbnail}
 >>
 > **E-mail Pro**
 >>
->> ![Email](obrazy/dns-dkim-api013.png){.thumbnail}
+>> ![Email](images/dns-dkim-api013.png){.thumbnail}
 >>
 
 #### **Dla E-maili (MX Plan)** <a name="confemail"></a>
@@ -343,7 +343,7 @@ Postępuj zgodnie z instrukcjami **5 kroków**, klikając kolejno na 5 poniższy
 >> }
 >> ```
 >>
->> Wartości`"status": "toSet"` i `"status": "disabled"` oznaczają, że rekordy CNAME muszą zostać skonfigurowane. Pobierz 2 wartości `cname` w pliku tekstowym i przejdź do następnego etapu.
+>> Wartości `"status": "toSet"` i `"status": "disabled"` oznaczają, że rekordy CNAME muszą zostać skonfigurowane. Pobierz 2 wartości `cname` w pliku tekstowym i przejdź do następnego etapu.
 >>
 > **4. Skonfiguruj rekord DNS**
 >> W [Panelu klienta OVHcloud](/links/manager), gdzie jest zainstalowana nazwa domeny Twojej usługi e-mail, w zakładce `Web Cloud`{.action} kliknij `Domeny`{.action} w kolumnie z lewej strony i wybierz odpowiednią domenę.<br>
@@ -352,9 +352,9 @@ Postępuj zgodnie z instrukcjami **5 kroków**, klikając kolejno na 5 poniższy
 >> Jeśli rozłożymy wartości z przykładu na krok "**3. Pobierz rekord DNS**":
 >>
 >> - `ovhmo3456789-selector1._domainkey.mydomain.ovh` to subdomena rekordu CNAME. Zachowasz tylko `ovhmo3456789-selector1._domainkey`, ponieważ domena`` jest już wstępnie napełniona. <br>
->> - `ovhmo3456789-selector1._domainkey.123403.aj.dkim.mail.ovh.net."` odnosi się do celu rejestracji. Należy pozostawić kropkę na końcu, aby nadać wartość.<br>
+>> - `ovhmo3456789-selector1._domainkey.123403.aj.dkim.mail.ovh.net.` odnosi się do celu rejestracji. Należy pozostawić kropkę na końcu, aby nadać wartość.<br>
 >>
->> ![email](obrazy/dns-dkim-api022.png){.thumbnail}
+>> ![email](images/dns-dkim-api022.png){.thumbnail}
 >>
 >> Po wpisaniu wartości kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 >>
@@ -386,6 +386,7 @@ Postępuj zgodnie z instrukcjami **5 kroków**, klikając kolejno na 5 poniższy
 >>
 >> *Przykład wyniku:*
 >>
+>> ```console
 >> {
 >> "selectors": [
 >>    {
@@ -403,6 +404,7 @@ Postępuj zgodnie z instrukcjami **5 kroków**, klikając kolejno na 5 poniższy
 >> "autoconfig": true,
 >> "status": "enabled"
 >> }
+>> ```
 >>
 >> - Jeśli zauważysz wartości `"status": "set"` na 2 selektorach, oznacza to, że są one poprawnie skonfigurowane.
 >> - Jeśli zauważysz wartości `"status": "toSet"` dla 2 selektorów, oznacza to, że zmiany DNS nie są widoczne. Przejdź do zakładki "**4. Konfiguracja rekordu DNS**".
@@ -1081,13 +1083,13 @@ Kliknij na poniższą zakładkę odnoszącą się do Twojej oferty, aby sprawdzi
 > [!tabs]
 > **Exchange**
 >>
->> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij na `Microsoft`{.action}, a następnie na `Exchange`{.action}. W kolejnym kroku kliknij na wybraną nazwę usługi Exchange.<br><br> W rubryce `Przypisane domeny`{.action}, sprawdź kolor ikony `DKIM` po prawej stronie odpowiedniej domeny (patrz obrazek poniżej).
+>> W [Panelu klienta OVHcloud](/links/manager) w zakładce `Web Cloud`{.action} kliknij na `Microsoft`{.action}, a następnie na `Exchange`{.action}. W kolejnym kroku kliknij na wybraną nazwę usługi Exchange.<br><br> W rubryce `Przypisane domeny`{.action}, sprawdź kolor ikony `DKIM` po prawej stronie odpowiedniej domeny (patrz obrazek poniżej).
 >>
 >> ![email](images/red-dkim.png){.thumbnail}
 >>
 > **E-mail Pro**
 >>
->> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij `E-mail Pro`{.action}, a następnie nazwę danej usługi E-mail Pro.<br><br> W rubryce `Przypisane domeny`{.action} sprawdź kolor ikony `DKIM` po prawej stronie odpowiedniej domeny (patrz obrazek poniżej).
+>> W [Panelu klienta OVHcloud](/links/manager) w zakładce `Web Cloud`{.action} kliknij `E-mail Pro`{.action}, a następnie nazwę danej usługi E-mail Pro.<br><br> W rubryce `Przypisane domeny`{.action} sprawdź kolor ikony `DKIM` po prawej stronie odpowiedniej domeny (patrz obrazek poniżej).
 >>
 >> ![email](images/red-dkim.png){.thumbnail}
 
