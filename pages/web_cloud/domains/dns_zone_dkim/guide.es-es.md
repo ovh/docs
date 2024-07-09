@@ -299,7 +299,6 @@ Siga los **5 pasos** haciendo clic en cada una de las 5 pestañas siguientes:
 >> }
 >> ```
 >>
->> <br>
 >> En el ejemplo anterior, la última línea de estado `"status": "modifying"` significa que la configuración está en curso. Espere unos **10 minutos** y reinicie la llamada API.
 >>
 >> - si el valor es `"status": "enabled"`, la configuración está terminada y funciona.
@@ -419,7 +418,7 @@ Siga los **5 pasos** haciendo clic en cada una de las 5 pestañas siguientes:
 Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de las pestañas.
 
 > [!tabs]
-> **1.Lista de votantes**
+> **1. Lista de votantes**
 >> Antes de crear uno de los selectores para su dominio, debe obtener el nombre que le asigna automáticamente la plataforma Exchange.<br>
 >> <br>
 >> Para ello, utilice la siguiente llamada a la API:<br>
@@ -441,7 +440,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> "ovhex123456-selector2"
 >> ```
 >>
-> **2.Crear un selector**
+> **2. Crear un selector**
 >> Va a crear un selector, generar su par de claves y el registro DNS asociado al dominio.<br>
 >> <br>
 >> Para ello, utilice la siguiente llamada a la API:<br>
@@ -457,7 +456,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> - `selectorName`: escriba el nombre de un selector que haya indicado en el paso anterior (por ejemplo: "ovhex123456-selector1"). <br>
 >>
 >> Haga clic en `Execute`{.action} para comenzar la creación del selector.<br>
->> 
+>>
 >> > [!primary]
 >> >
 >> > Le recomendamos que realice esta operación dos veces para cada uno de los selectores que ha indicado anteriormente. El segundo selector le permitirá realizar un cambio de par de claves cuando sea necesario. Le invitamos a consultar nuestro caso de uso ["Cómo cambiar su par de claves DKIM"](#2selectors) cuando quiera cambiar al segundo selector.
@@ -473,7 +472,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> "todoDate": "2023-05-05T11:32:07+02:00"
 >> ```
 >>
-> **3.Obtener el registro DNS**
+> **3. Obtener el registro DNS**
 >> Es necesario configurar manualmente la zona DNS del dominio **en los siguientes** casos:
 >>
 >> - su plataforma Exchange está asociada a un dominio gestionado en otra cuenta de cliente de OVHcloud ;<br>
@@ -511,7 +510,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> >
 >> > Es posible que el `status:` esté en `todo`, pero esto no tiene ningún efecto en la configuración de su zona DNS.
 >>
-> **4.Configurar el registro DNS**
+> **4. Configurar el registro DNS**
 >> Desde [el área de clientes de OVHcloud](/links/manager) donde el nombre de dominio de su Exchange, en la pestaña `Web Cloud`{.action}, haga clic en `Domain name`{.action} en la columna de la izquierda y seleccione el nombre de dominio correspondiente.<br>
 >> Acceda a la pestaña `Zona DNS`{.action} y haga clic en `Añadir un registro`{.action} en la nueva ventana. Seleccione `CNAME` y complete los valores que haya indicado.<br>
 >>
@@ -536,7 +535,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> >
 >> > Tenga en cuenta que cualquier modificación en una zona DNS conlleva un retraso en la propagación. Suele ser corto pero puede extenderse hasta las 24 horas.
 >>
-> **5.Activación del DKIM**
+> **5. Activación del DKIM**
 >> > [!warning]
 >> >
 >> > En la sección [**Estado del DKIM**](#dkim-status) de esta guía, compruebe que el valor `status:` está bien en `ready` antes de poder activar el DKIM.
@@ -587,7 +586,8 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> - `service`: introduzca el nombre de su plataforma Email Pro, que aparece en el formato "emailpro-zz11111-1" . <br>
 >> - `domainName`: introduzca el dominio asociado a la plataforma Email Pro en la que quiere activar DKIM. <br>
 >>
->> *Ejemplo de resultado:* 
+>> *Ejemplo de resultado:*
+>>
 >> ``` console
 >> "ovhemp123456-selector1"
 >> "ovhemp123456-selector2"
@@ -613,11 +613,9 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >>
 >> Haga clic en `Execute`{.action} para comenzar la creación del selector.<br>
 >>
->> >
 >> > [!primary]
 >> >
 >> > Le recomendamos que realice esta operación dos veces para cada uno de los selectores que ha indicado anteriormente. El segundo selector le permitirá realizar un cambio de par de claves cuando sea necesario. Le invitamos a consultar nuestro caso de uso [«Cómo cambiar su par de claves DKIM»](#2selectors) cuando quiera cambiar al segundo selector.
->> <br>
 >>
 >> *Ejemplo de resultado:*
 >>
@@ -670,7 +668,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> Desde [el área de clientes de OVHcloud](/links/manager) donde el nombre de dominio de su Exchange, en la pestaña `Web Cloud`{.action}, haga clic en `Domain name`{.action} en la columna de la izquierda y seleccione el nombre de dominio correspondiente.<br>
 >> Acceda a la pestaña `Zona DNS`{.action} y haga clic en `Añadir un registro`{.action} en la nueva ventana. Seleccione `CNAME` y complete los valores que haya indicado.<br>
 >>
->> Si se toman los valores del ejemplo en el paso "**3\. Obtener el registro DNS**":
+>> Si se toman los valores del ejemplo en el paso "**3. Obtener el registro DNS**":
 >>
 >> - `customerRecord: "ovhemp123456-selector1._domainkey.mydomain.ovh"` corresponde al subdominio del registro CNAME. Solo se conserva `ovhemp123456-selector1._domainkey`, ya que el `.mydomain.ovh`est ya se ha completado. <br>
 >> - `targetRecord: "ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corresponde al destino del registro. Se agrega un punto al final para calcular el valor. Esto da `ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
@@ -1045,11 +1043,10 @@ Haga clic en la pestaña que corresponde a su producto.
 > [!tabs]
 > **Exchange**
 >> Para cambiar al segundo selector, utilice la siguiente llamada a la API:
->> 
+>>
 >> > [!api]
->>
+>> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
->>
 >>
 >> - `organizationName`: introduzca el nombre de su plataforma Exchange con el formato "hosted-zz111111-1" o "private-zz111111-1". <br>
 >> - `selectorName`: escriba el nombre del selector al que desea cambiar. <br>
@@ -1093,7 +1090,6 @@ Haga clic en la pestaña que corresponde a su producto para comprobar el estado 
 >> Desde su [área de cliente de OVHcloud](/links/manager), en la pestaña `Web Cloud`{.action}, haga clic en `E-mails Pro`{.action} y seleccione el servicio E-mail Pro correspondiente.<br><br> En la sección `Dominios asociados`{.action}, compruebe el color del icono `DKIM` a la derecha del dominio en cuestión (ver la imagen siguiente).
 >>
 >> ![email](images/red-dkim.png){.thumbnail}
->>
 
 Estos son los cuatro estados cuyo resultado es el icono DKIM en rojo en el área de cliente. Haga clic en la pestaña correspondiente al código de error :
 
@@ -1103,6 +1099,7 @@ Estos son los cuatro estados cuyo resultado es el icono DKIM en rojo en el área
 >> "**Only one dkim selector has been initialized**"<br><br>
 >> Sólo hay un selector DKIM en la configuración. Para permitirnos cambiar a una nueva clave cuando sea necesario, se le solicita que configure los 2 selectores proporcionados por el servicio.<br><br>
 >> Para corregir este error :
+>>
 >> - compruebe el estado de los selectores de DKIM para determinar cuál debe configurarse. Para ello, consulte la sección "[Los diferentes estados del DKIM](#dkim-status)" de esta guía.
 >> - Una vez que haya identificado el selector que desea configurar, siga los pasos que se indican en el apartado "[Configuración completa del DKIM](#firststep)" de esta guía, en función del plan que tenga contratado (Exchange o Email Pro), aplicándolo únicamente al selector correspondiente.
 >> Espere un máximo de 24 horas después de configurar el selector.

@@ -84,7 +84,6 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
     - [Dlaczego ikona DKIM jest zaznaczona na czerwono w Panelu klienta?](#reddkim)
     - [W interfejsie API OVHcloud, jak zrozumieć stan DKIM, który nie działa?](#api-error)
 
-
 ### Jak działa DKIM? <a name="how-dkim-work"></a>
 
 Aby w pełni zrozumieć, dlaczego DKIM pozwala na zabezpieczenie wymiany wiadomości e-mail, należy zrozumieć, jak działa. DKIM używa "**hakowania**" i "**szyfrowania asymetrycznego**" do utworzenia bezpiecznego podpisu. **Platforma e-mail** oraz **Strefa DNS** Twojej domeny pomogą w przekazywaniu informacji z DKIM do Twoich odbiorców.
@@ -299,7 +298,7 @@ Postępuj zgodnie z instrukcjami **5 kroków**, klikając kolejno na 5 poniższy
 >>  "status": "modifying"
 >> }
 >> ```
->> <br>
+>>
 >> W powyższym przykładzie ostatni wiersz stanu `"status": "modifying"` oznacza, że trwa konfiguracja. Zaczekaj około **10 minut** i ponownie wywołaj API.
 >>
 >> - Jeśli wartością jest `"status": "enabled"`, konfiguracja jest ukończona i działa.
@@ -411,8 +410,9 @@ Postępuj zgodnie z instrukcjami **5 kroków**, klikając kolejno na 5 poniższy
 >>
 >> > [!success]
 >> >
-> > > Wykonano teraz wszystkie operacje, aby aktywować DKIM. Aby upewnić się, że jest ono włączone, sprawdź jego stan, wracając do karty kroku "**2". Sprawdź stan operacji DKIM**", aby sprawdzić, czy wartość `status:` jest w `enabled`. Jeśli tak jest, Twój DKIM jest już aktywny.
+>> > Wykonano teraz wszystkie operacje, aby aktywować DKIM. Aby upewnić się, że jest ono włączone, sprawdź jego stan, wracając do karty kroku "**2". Sprawdź stan operacji DKIM**", aby sprawdzić, czy wartość `status:` jest w `enabled`. Jeśli tak jest, Twój DKIM jest już aktywny.
 >>
+
 ##### **Dla usługi Exchange** <a name="confex"></a>
 
 Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
@@ -613,6 +613,10 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> Kliknij polecenie `Wykonaj`{.action}, aby rozpocząć tworzenie wyboru.<br>
 >>
+>> > [!primary]
+>> >
+>> > Zalecamy wykonanie tej operacji dwukrotnie dla każdego z wcześniej wymienionych selektorów. Drugi selektor umożliwi zmianę pary kluczy, gdy będzie to konieczne. Zapoznaj się z przykładem zastosowania ["Jak zmienić parę kluczy DKIM"](#2selectors), gdy chcesz przełączyć się na drugi selektor.
+>>
 >> *Przykład wyniku:*
 >>
 >> ```console
@@ -800,6 +804,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >> Not Found (404)
 >> { "message": "The requested object (selectorName = ovhemp123456-selector1) does not exist" }
 >> ```
+>>
 
 #### Włącz lub zmień selekcję DKIM <a name="enable-switch"></a>
 
@@ -843,6 +848,8 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 #### Wyłącz i usuń DKIM <a name="enable-switch"></a>
 
 > [!warning]
+>
+> **W przypadku oferty Exchange i E-mail Pro** <br>
 >
 > Wybieracz DKIM musi mieć status `inProduction` lub `ready`, zanim zostanie wyłączony.
 
@@ -918,7 +925,6 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >> - `selectorName`: wprowadź nazwę wybranego przełącznika, który chcesz usunąć. <br>
 >> - `domainName`: wprowadź nazwę domeny przypisanej do Twojej platformy E-mail Pro. <br>
 >>
-
 
 ### Konfiguracja DKIM w przypadku oferty e-mail poza Twoim kontem OVHcloud <a name="external-dkim"></a>
 
@@ -1037,11 +1043,10 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 > [!tabs]
 > **Exchange**
 >> Aby przełączyć się na drugi selektor, użyj następującego wywołania API:
->> 
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
->> >
 >>
 >> - `organizationName` : wprowadź nazwę platformy Exchange w formie "hosted-zz111111-1" lub "private-zz111111-1". <br>
 >> - `selectorName` : wprowadź nazwę przełącznika wyboru. <br>
