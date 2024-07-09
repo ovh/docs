@@ -32,7 +32,7 @@ To access this feature, log in to your [OVHcloud Control Panel](/links/manager) 
 
 The table that appears will show your domain name’s DNS zone. There, you will find the list of DNS records that it contains. On the right of the table, there are several buttons you can use to perform actions on your DNS zone. 
 
-![DNS history tool](images/dns-zone-history.png){.thumbnail}
+![DNS history tool](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
 
 Click `View your DNS zone history`{.action}. 
 
@@ -55,11 +55,11 @@ On the new page, a table displays the backup history for your DNS zone, ordered 
 
 To view the DNS zone of your choice, identify the corresponding row in the table, then click on the icon in the `View`{.action} column.
 
-![View a DNS zone](images/visualize-dns-eyes.png){.thumbnail}
+![View a DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/visualize-dns-eyes.png){.thumbnail}
 
 The data for the DNS zone concerned is displayed.
 
-![Details of a DNS zone](images/details-dns-zone.png){.thumbnail}
+![Details of a DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/details-dns-zone.png){.thumbnail}
 
 Click `Close`{.action} to return to the main page “DNS zone history”.
 
@@ -67,7 +67,7 @@ Click `Close`{.action} to return to the main page “DNS zone history”.
 
 To download the DNS zone of your choice, identify the corresponding row in the table, then click on the icon in the `Download`{.action} column.
 
-![Download a DNS zone](images/download-dns-zone.png){.thumbnail}
+![Download a DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/download-dns-zone.png){.thumbnail}
 
 The DNS zone is downloaded in *.txt* format.
 
@@ -75,11 +75,11 @@ The DNS zone is downloaded in *.txt* format.
 
 If you would like to replace your current DNS zone with another one, simply restore an older DNS zone. In the table containing the history of your DNS zones, identify the row corresponding to the DNS zone you want to restore (check the date on the left-hand side of the row), then click on the icon in the `Restore`{.action} column.
 
-![Restore a DNS zone](images/restore-dns-zone.png){.thumbnail}
+![Restore a DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/restore-dns-zone.png){.thumbnail}
 
 The following window will appear.
 
-![Confirmation restore DNS zone](images/confirmation-restore-dns-zone.png){.thumbnail}
+![Confirmation restore DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/confirmation-restore-dns-zone.png){.thumbnail}
 
 Check that the date indicated in the message corresponds to the DNS zone you want to restore. As the yellow banner will show, please remember that the current DNS zone (at the top of the DNS zone history list) will be deleted and replaced with the DNS zone that you want to restore.
 
@@ -94,7 +94,7 @@ Click `Restore`{.action} to confirm the restoration or `Cancel`{.action}.
 
 You can compare the contents of two DNS zones. In the table containing the history of your DNS zone, identify the two rows corresponding to the two DNS zones you want to compare (check the date to the left of each row), then select them. To compare these two DNS zone versions, click on `Compare versions`{.action} in the top left-hand corner.
 
-![Compare two DNS zones](images/compare-two-dns-zone.png){.thumbnail}
+![Compare two DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-two-dns-zone.png){.thumbnail}
 
 A new page will appear, displaying the content of the two DNS zones. Above each version, you will see the corresponding date. By default, the most recent DNS zone version is on the left and the oldest DNS zone version is on the right. Colour-coded content helps you identify differences in content.<br>
 On the left, the content highlighted in red has been modified or deleted on the newer version.<br>
@@ -102,7 +102,7 @@ On the right, the content highlighted in green has been changed or added from th
 
 You can also update the dates of the versions you want to compare by using the two drop-down lists.
 
-![Details comparing two DNS zones](images/compare-dns-zone-details.png){.thumbnail}
+![Details comparing two DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-dns-zone-details.png){.thumbnail}
 
 With this guide, you can now compare two DNS zones, and also view, download, restore and delete a DNS zone.
 

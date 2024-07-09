@@ -34,7 +34,7 @@ Sur la page qui s'affiche et si vous n'êtes pas déjà redirigé dans cet ongle
 
 Le tableau qui apparaît représente la zone DNS de votre nom de domaine. Vous y retrouvez la liste des enregistrements DNS qu'elle contient. Sur la droite du tableau, plusieurs boutons vous permettent d’effectuer des actions sur votre zone DNS. 
 
-![DNS history tool](images/dns-zone-history.png){.thumbnail}
+![DNS history tool](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
 
 Cliquez sur `Voir l’historique de ma zone DNS`{.action}. 
 
@@ -57,11 +57,11 @@ Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique 
 
 Pour visualiser la zone DNS de votre choix, identifiez la ligne correspondante dans le tableau puis cliquez sur l'icône présente dans la colonne `Voir`{.action}.
 
-![Visualiser une zone DNS](images/visualize-dns-eyes.png){.thumbnail}
+![Visualiser une zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/visualize-dns-eyes.png){.thumbnail}
 
 Les données de la zone DNS concernée s’affichent.
 
-![Détail d'une zone DNS](images/details-dns-zone.png){.thumbnail}
+![Détail d'une zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/details-dns-zone.png){.thumbnail}
 
 Cliquez sur `Fermer`{.action} pour revenir à la page principale « Historique de la zone DNS ».
 
@@ -69,7 +69,7 @@ Cliquez sur `Fermer`{.action} pour revenir à la page principale « Historique d
 
 Pour télécharger la zone DNS de votre choix, identifiez la ligne correspondante dans le tableau puis cliquez sur l'icône présente dans la colonne `Télécharger`{.action}.
 
-![Télécharger une zone DNS](images/download-dns-zone.png){.thumbnail}
+![Télécharger une zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/download-dns-zone.png){.thumbnail}
 
 La zone DNS se télécharge au format .txt.
 
@@ -77,11 +77,11 @@ La zone DNS se télécharge au format .txt.
 
 Si vous souhaitez remplacer votre zone DNS actuelle par une autre, il vous suffit de restaurer une zone DNS plus ancienne. Dans le tableau contenant l’historique de vos zones DNS, identifiez la ligne correspondant à la zone DNS que vous voulez restaurer (pensez à bien vérifier la date à gauche de la ligne) puis cliquez sur l'icône présente dans la colonne `Restaurer`{.action}.
 
-![Restaurer une zone DNS](images/restore-dns-zone.png){.thumbnail}
+![Restaurer une zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/restore-dns-zone.png){.thumbnail}
 
 La fenêtre suivante s’affiche.
 
-![Confirmation restauration zone DNS](images/confirmation-restore-dns-zone.png){.thumbnail}
+![Confirmation restauration zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/confirmation-restore-dns-zone.png){.thumbnail}
 
 Vérifiez que la date indiquée dans le message correspond à la zone DNS que vous voulez restaurer. Comme la bannière jaune l’indique, n’oubliez pas que la zone DNS actuelle (présente tout en haut dans la liste de l’historique des zones DNS) sera supprimée et remplacée par la zone DNS que vous souhaitez restaurer.
 
@@ -96,7 +96,7 @@ Cliquez sur `Restaurer`{.action} pour confirmer la restauration ou sur `Annuler`
 
 Vous pouvez comparer le contenu de deux zones DNS. Dans le tableau contenant l’historique de votre zone DNS, identifiez les deux lignes correspondant aux deux zones DNS que vous voulez comparer (vérifiez bien la date à gauche de chaque ligne) puis sélectionnez-les. Pour comparer ces deux versions de zone DNS, cliquez en haut à gauche sur `Comparer les versions`{.action}.
 
-![Comparer deux zones DNS](images/compare-two-dns-zone.png){.thumbnail}
+![Comparer deux zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-two-dns-zone.png){.thumbnail}
 
 Une nouvelle page apparaît, affichant le contenu des deux zones DNS. Au-dessus de chaque version s’affiche la date correspondante. Par défaut, la version de la zone DNS la plus récente se trouve à gauche et la plus ancienne à droite. Un code couleur vous aide à identifier les différences de contenu.<br>
 À gauche, le contenu surligné en rouge a été modifié ou supprimé sur la version plus récente.<br>
@@ -104,7 +104,7 @@ Une nouvelle page apparaît, affichant le contenu des deux zones DNS. Au-dessus 
 
 Vous avez également la possibilité de mettre à jour les dates des versions que vous souhaitez comparer grâce aux deux listes déroulantes.
 
-![Détails comparaison deux zones DNS](images/compare-dns-zone-details.png){.thumbnail}
+![Détails comparaison deux zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-dns-zone-details.png){.thumbnail}
 
 Grâce à ce guide, vous pouvez désormais comparer deux zones DNS, mais également visualiser, télécharger, restaurer et supprimer une zone DNS.
 
