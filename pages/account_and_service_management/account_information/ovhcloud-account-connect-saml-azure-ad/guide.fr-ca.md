@@ -219,7 +219,7 @@ Cliquez alors sur le bouton `Connexion SSO`{.action}.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Complétez le champ **Nom d'attribut d'utilisateur** avec la valeur de claim d'applications Entra ID **upn** et le champ **Nom d'attribut de groupe** avec la valeur de claim **groups** enregistrée précédemment.
+Complétez le champ **Nom d'attribut d'utilisateur** avec la valeur de claim d'applications Entra ID **UPN** et le champ **Nom d'attribut de groupe** avec la valeur de claim **groups** enregistrée précédemment.
 
 Remplissez les métadonnées XML de votre application Entra ID à partir du fichier enregistré précédemment.
 
