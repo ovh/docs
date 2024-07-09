@@ -130,10 +130,10 @@ You have these kind of informations
 <img src="/images/102.png" alt="mange my vrack 02"/>
 <br/>
 
-On the left is listed possible options (eligible services to be configured).
+On the left side possible options are listed (eligible services to be configured).
 
 On the right you see what is already configured with your vRack.   
-You have a IP section and you can add a new subnet clicking `Add sud network`{.action} button
+You have an IP section and you can add a new subnet clicking Add sub network{.action} button
 
 <img src="/images/103.png" alt="vrack select"/>
 <br/>
