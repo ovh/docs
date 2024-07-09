@@ -1,12 +1,26 @@
 ---
 title: "IAM pour VMware on OVHcloud - Comment activer IAM"
 excerpt: "Découvrez comment activer IAM pour votre offre VMware on OVHcloud via l'espace client OVHcloud ou par le biais de l'API OVHcloud"
-updated: 2024-05-23
+updated: 2024-07-09
 ---
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 > [!warning]
-> La fonctionnalité IAM pour VMware on OVHcloud est actuellement en phase bêta.
-> Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : <https://discord.gg/ovhcloud>. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud.
+>
+> Cette fonctionnalité IAM pour VMware on OVHcloud est actuellement en phase bêta. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : <https://discord.gg/ovhcloud>. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud.
+>
 
 ## Objectif
 
@@ -23,6 +37,8 @@ updated: 2024-05-23
 
 > [!primary]
 > Cette opération peut prendre jusqu’à 30 minutes.
+
+/// details | Comment activer IAM sur Hosted Private Cloud VMware on OVHcloud ?
 
 ### Via l'espace client OVHcloud
 
@@ -71,6 +87,7 @@ Retour de l'API :
   "identityProviderId": 275
 }
 ```
+///
 
 ## Aller plus loin
 
@@ -86,4 +103,4 @@ Vous pouvez maintenant suivre le guide « [IAM pour VMware on OVHcloud - Comment
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Rejoignez et échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,12 +1,26 @@
 ---
 title: "IAM pour VMware on OVHcloud - Comment associer un utilisateur à une politique IAM globale"
 excerpt: "Découvrez comment associer une identité OVHcloud à une politique IAM"
-updated: 2024-05-23
+updated: 2024-07-09
 ---
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 > [!warning]
-> La fonctionnalité IAM pour VMware on OVHcloud est actuellement en phase bêta.
-> Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : <https://discord.gg/ovhcloud>. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud.
+>
+> Cette fonctionnalité IAM pour VMware on OVHcloud est actuellement en phase bêta. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : <https://discord.gg/ovhcloud>. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud.
+>
 
 ## Objectif
 
@@ -20,7 +34,9 @@ updated: 2024-05-23
 
 ## En pratique
 
-### Comment associer un utilisateur à une politique IAM globale ?
+Vous avez la possibilité de créer ou modifier une politique éxistante.
+
+/// details | Comment associer un utilisateur local à une politique IAM globale ?
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur votre nom en haut à droite de l'espace client puis cliquez sur vos initiales pour accéder à la rubrique `Mon compte`{.action}.<br>
 Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action} et restez dans l'onglet `Politiques.`{.action}.
@@ -29,15 +45,23 @@ Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action} et
 
 Vous retrouverez vos politiques que vous avez déjà créées.
 
-Cliquez sur le bouton `...`{.action} à droite de la politique IAM concenée puis cliquez sur `Gérer les identités associées`{.action}.
+Cliquez sur:`Modifier la politique`{.action}.
 
 Renseignez alors l'identité souhaitée. Il peut s'agir d'utilisateurs, d'un NIC, d'une adresse e-mail, de groupes d'utilisateurs.
 
-Uniquement les Groupes IAM (et non les groupes IAM vSphere) apparaissent automatiquement, attention à bien copier-coller votre choix sans fautes.
+Vous devez cliquer sur `Ajouter des utilisateurs`{.action}.
 
-Validez votre choix en cliquant sur `Ajouter`{.action}.
+Dans le champ: **utilisateurs local**. Les utilisateurs apparaissent automatiquement, dans la liste déroulante. Vous retrouverez la même modale pour les groupes locaux.
+
+Validez votre choix en cliquant sur: `Ajouter`{.action}.
 
 ![IAM user policy](images/iam_user_policy_3.png){.thumbnail}
+
+![IAM user policy](images/iam_user_policy_2.png){.thumbnail}
+
+Et pour finir, cliquez sur: `Créer`{.action, ou alors: `Modifier`{.action} votre politique.
+
+///
 
 ## Aller plus loin
 
@@ -51,4 +75,4 @@ Validez votre choix en cliquant sur `Ajouter`{.action}.
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Rejoignez et échangez avec notre [communauté d'utilisateurs](/links/community).
