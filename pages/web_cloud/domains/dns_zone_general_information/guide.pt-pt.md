@@ -52,7 +52,7 @@ Consulte o nosso manual sobre [os registos DNS](/pages/web_cloud/domains/dns_zon
 
 Para melhor se representar o que é uma zona DNS, encontre abaixo um exemplo de zona DNS alojada na OVHcloud para o nome de domínio *domain.tld*. Esta última está configurada nos servidores DNS *dns200.anycast.me* e *ns200.anycast.me* da OVHcloud:
 
-![DNS zone dashboard](images/dns-zone-dashboard.png){.thumbnail}
+![DNS zone dashboard](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-dashboard.png){.thumbnail}
 
 Em comparação, eis o seu equivalente em « modo de texto »:
 

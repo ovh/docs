@@ -52,7 +52,7 @@ Weitere Informationen zu den verschiedenen Eintragstypen finden Sie in unserer A
 
 Nachstehend finden Sie ein Beispiel für eine bei OVHcloud gehostete DNS-Zone für die Domain *domain.tld*. Diese wird auf den DNS-Servern *dns200.anycast.me* und *ns200.anycast.me* von OVHcloud konfiguriert:
 
-![DNS zone dashboard](images/dns-zone-dashboard.png){.thumbnail}
+![DNS zone dashboard](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-dashboard.png){.thumbnail}
 
 Im Vergleich dazu ist hier die Entsprechung im Textmodus:
 
