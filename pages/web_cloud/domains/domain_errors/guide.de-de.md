@@ -25,7 +25,7 @@ Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web C
 
 Die hier angezeigte Tabelle zeigt alle Vorgänge im Zusammenhang mit den Domainnamen in Ihrem Kundencenter an.
 
-![domain](images/domain-name-operations-header.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-header.png){.thumbnail}
 
 - `Domain`: Domainname, der von der Operation betroffen ist
 - `Operation`: Laufende Operation für den Domainnamen
@@ -38,7 +38,7 @@ Die hier angezeigte Tabelle zeigt alle Vorgänge im Zusammenhang mit den Domainn
 Nicht alle in dieser Tabelle aufgeführten Operationen erfordern Ihren Eingriff, damit sie normal durchgeführt werden.<br>
 Diese Anleitung ist fokussiert auf **fehlerhafte** Operationen anhand von Beispielen häufig auftretender Sachverhalte.
 
-![domain](images/domain-name-operations-error-creating-domain-name-with-registry.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-error-creating-domain-name-with-registry.png){.thumbnail}
 
 ### Beispiele
 
@@ -57,41 +57,41 @@ Diese Anleitung ist fokussiert auf **fehlerhafte** Operationen anhand von Beispi
 
 Für bestimmte Domainendungen ist es notwendig, ihre Verwendung durch die Vorlage von Dokumenten zu begründen. Ist das der Fall, müssen Sie die Dokumente über das Fenster `Laufende Operationen`{.action} übermitteln.
 
-![domain](images/contacts-update-provide-us-with-the-documents-required.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/contacts-update-provide-us-with-the-documents-required.png){.thumbnail}
 
 Um die erforderlichen Dokumente bereitzustellen, klicken Sie rechts neben der betreffenden Operation auf den Button `...`{.action}. <br>
 Das folgende Fenster wird angezeigt. Im Bereich "Beschreibung" erhalten Sie Informationen zum nötigen Dokument sowie einen Button zum Hochladen der Datei.
 
-![domain](images/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
 
 #### Fehlende Informationen
 
 Wenn Sie Ihren Domainnamen registrieren, müssen die Kontaktdaten manchmal ergänzt werden. Wenn diese nicht den Kriterien für den Domainnamen entsprechen, können Sie den unten stehenden Fehler erhalten.
 
-![domain](images/domain-name-operations-complete-nic-admin-es-tld.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-complete-nic-admin-es-tld.png){.thumbnail}
 
 Klicken Sie rechts neben der Operation auf den Button `...`{.action}<br>
 Das folgende Fenster wird angezeigt. Füllen Sie die Felder mit den Details des betreffenden Kontakts aus.
 
-![domain](images/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
 
 #### Falscher Transfer-Code 
 
 Wenn Sie Ihre Domain zu OVHcloud transferieren, geben Sie normalerweise bei der Bestellung einen Transfer-Code (**authInfo**) ein. Wenn dieser Code nicht korrekt ist, wird die Operation unterbrochen. Sie können den Transfer jedoch neu starten, indem Sie den richtigen Code angeben.
 
-![domain](images/domain-name-operations-auth-code-missing.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-auth-code-missing.png){.thumbnail}
 
 Klicken Sie rechts neben der Operation auf den Button `...`{.action}. <br>
 Das folgende Fenster erscheint. Geben Sie den Transfer-Code (**authInfo**) ein und starten Sie den Vorgang neu.
 
-![domain](images/operation-data-auth-code-missing.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-auth-code-missing.png){.thumbnail}
 
 #### Fehler bei den DNS Servern
 
 Es kann ein Fehler auftreten, wenn die DNS-Server, die Sie einer Domain anhängen, nicht funktionieren.<br>
 Im folgenden Beispiel antwortet die IP-Adresse des DNS-Servers nicht.
 
-![domain](images/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
 
 Wählen Sie im Bereich `Domainnamen`{.action} die betreffende Domain aus und klicken Sie dann auf den Tab `DNS Server`{.action}. Bearbeiten Sie in diesem Tab [Ihre DNS Server](/pages/web_cloud/domains/dns_server_edit). 
 
@@ -105,7 +105,7 @@ Wenn Sie Ihre DNS-Server ändern, kann die Registry die neuen DNS-Server sowie d
 
 Um zu überprüfen, ob Ihr Domainname derart gesperrt ist, gehen Sie zur Tabelle unter `Laufende Operationen`{.action}.
 
-![domain](images/domain-name-operations-dns-update-error-occured-updating-domain.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-error-occured-updating-domain.png){.thumbnail}
 
 Um Ihre Domain zu überprüfen, empfehlen wir Ihnen die Verwendung des von der jeweiligen Registry bereitgestellten Tools, zum Beispiel:
 
@@ -129,7 +129,7 @@ Sie können unter Umständen einen Fehler mit dem Kommentar "interner Fehler" fe
 
 Wenn Sie eine Anomalie feststellen, die nicht mit der Konfiguration der DNS-Server oder der DNS-Zone zusammenhängt, können Sie ein Support-Ticket für den OVHcloud Support erstellen, um die Ursache der Störung zu ermitteln.
 
-![domain](images/domain-name-operations-renewal-internal-error.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-renewal-internal-error.png){.thumbnail}
 
 ## Weiterführende Informationen
 

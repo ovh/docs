@@ -25,7 +25,7 @@ Dallo [Spazio Cliente OVHcloud](/links/manager), seleziona la sezione `Web Cloud
 
 Una tabella ti permette di consultare tutte le operazioni relative ai domini del tuo Spazio Cliente.
 
-![dominio](images/domain-name-operations-header.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-header.png){.thumbnail}
 
 - `Dominio`: Dominio interessato all'operazione.
 - `Operazione`:  Operazione in corso sul dominio.
@@ -38,7 +38,7 @@ Una tabella ti permette di consultare tutte le operazioni relative ai domini del
 Tutte le operazioni elencate in questa tabella non richiedono il vostro intervento perché si svolgano normalmente.<br>
 In questa guida ci concentreremo sulle operazioni **in errore** attraverso esempi ricorrenti.
 
-![dominio](images/domain-name-operations-error-creating-domain-name-with-registry.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-error-creating-domain-name-with-registry.png){.thumbnail}
 
 ### Esempi
 
@@ -57,41 +57,41 @@ In questa guida ci concentreremo sulle operazioni **in errore** attraverso esemp
 
 Alcune estensioni di domini richiedono una documentazione per giustificarne l'utilizzo. In questo caso, trasmetterai i documenti dalla finestra `Operazioni in corso`{.action}.
 
-![dominio](images/contacts-update-provide-us-with-the-documents-required.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/contacts-update-provide-us-with-the-documents-required.png){.thumbnail}
 
 Per fornire il(i) documento(i) necessario(i), clicca sul pulsante `...`{.action} a destra dell'operazione in questione.<br>
 La finestra che segue mostra, nella sezione "Descrizione" puoi trovare i dettagli del documento da fornire e un pulsante per caricare il documento.
 
-![dominio](images/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
 
 #### Informazioni mancanti
 
 Quando registri il tuo dominio, è necessario completare i dati di "contatto". Se i record non corrispondono ai criteri del dominio, puoi recuperare l'errore qui sotto.
 
-![dominio](images/domain-name-operations-complete-nic-admin-es-tld.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-complete-nic-admin-es-tld.png){.thumbnail}
 
 Clicca sul pulsante `...`{.action} a destra dell'operazione.<br>
 Nella nuova finestra, inserisci le informazioni del contatto corrispondente.
 
-![dominio](images/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
 
 #### Codice di trasferimento errato 
 
 Al momento del trasferimento del dominio in OVHcloud è necessario inserire un codice di trasferimento (**authInfo**). Se il codice non è corretto, l'operazione è sospesa ma è possibile riavviarla inserendo il codice corretto.
 
-![dominio](images/domain-name-operations-auth-code-missing.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-auth-code-missing.png){.thumbnail}
 
 Clicca sul pulsante `...`{.action} a destra dell'operazione.<br>
 Nella finestra che segue, inserisci il codice di trasferimento (**authInfo**) e riavvia l'operazione.
 
-![dominio](images/operation-data-auth-code-missing.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-auth-code-missing.png){.thumbnail}
 
 #### Errore associato ai server DNS
 
 Si può verificare un errore se i server DNS associati a un dominio non funzionano.<br>
 Nell'esempio qui sotto, l'indirizzo IP del server DNS non risponde.
 
-![dominio](images/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
 
 Nella sezione `Domini`{.action}, seleziona il dominio e clicca sulla scheda `Server DNS`{.action}. Da questa scheda è possibile [modificare i server DNS](/pages/web_cloud/domains/dns_server_edit). 
 
@@ -105,7 +105,7 @@ Quando modifichi i tuoi server DNS, il registro può verificare i nuovi server D
 
 Per verificare che il tuo dominio sia bloccato, accedi alla tabella delle `Operazioni in corso`{.action}.
 
-![dominio](images/domain-name-operations-dns-update-error-occured-updating-domain.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-error-occured-updating-domain.png){.thumbnail}
 
 Per verificare il tuo dominio, ti consigliamo di utilizzare il tool di verifica rilasciato dal Registro:
 
@@ -129,7 +129,7 @@ Per prima cosa verifica che il tuo dominio e i server DNS siano attivi correttam
 
 Se riscontri un'anomalia non legata alla configurazione dei server DNS o della zona DNS, ti invitiamo ad aprire un ticket di assistenza presso il supporto OVHcloud per identificare l'origine del malfunzionamento.
 
-![dominio](images/domain-name-operations-renewal-internal-error.png){.thumbnail}
+![dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-renewal-internal-error.png){.thumbnail}
 
 ## Per saperne di più
 

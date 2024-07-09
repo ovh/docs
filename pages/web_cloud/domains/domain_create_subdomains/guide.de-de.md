@@ -27,7 +27,7 @@ Ein **Domainname** besteht aus Leveln. Diese Level sind in der Regel durch ein `
 
 - Third Level Domain (**Subdomain**): Ab dieser dritten Ebene spricht man von einer **Subdomain**. In dieser Anleitung erfahren Sie, wie Sie diese mit Ihren verschiedenen Diensten einrichten.
 
-![URL content](images/url-composition.png){.thumbnail}
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
   
 **Diese Anleitung erklärt, Sie mehr über Subdomains und wie Sie Subdomains bei OVHcloud erstellen.**
 

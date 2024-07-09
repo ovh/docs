@@ -48,7 +48,7 @@ To manage an OVHcloud DNS zone, perform the following actions:
 
 The table displays a DNS record linked to your OVHcloud domain name for each row. You can filter the table content by DNS record type or by domain name.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
 
 ### Edit your domain name’s OVHcloud DNS zone
 
@@ -109,7 +109,7 @@ From this point onwards, this guide will only cover configuration using our conf
 >>
 >> We recommend that you check beforehand if this record exists and already points to a different target. To do this, filter the contents of the table by record type or domain. If the record exists, modify it using the steps described below.
 >>
->> ![dnszone](images/add-an-entry.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry.png){.thumbnail}
 >>
 >> > When the target of your record is a URL, remember to punctuate it. If you do not do this, your domain name will be automatically added to the end of your target.
 >> >
@@ -129,7 +129,7 @@ From this point onwards, this guide will only cover configuration using our conf
 >> 6. In the table that appears, click on the symbol `...`{.action} to the right of the entry concerned.
 >> 7. Then click `Modify record`{.action} and follow the steps that appear.
 >>
->> ![dnszone](images/modify-record.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 >>
 > **Delete a DNS record**
 >>
@@ -145,7 +145,7 @@ From this point onwards, this guide will only cover configuration using our conf
 >>
 >> You can delete several entries at once by ticking them on the left-hand side of the table, then clicking on the `Delete`{.action} button.
 >>
->> ![dnszone](images/delete-record.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 >>
 > **Reset the DNS zone**
 >>
@@ -165,7 +165,7 @@ From this point onwards, this guide will only cover configuration using our conf
 >> 5. On the page that opens, click on the `DNS Zone`{.action} tab.
 >> 6. On the right or below the table, click `Reset my DNS zone`{.action}, then follow the 2 steps that appear.
 >>
->> ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
 >>
 >> **Step 1**
 >>
@@ -185,14 +185,14 @@ From this point onwards, this guide will only cover configuration using our conf
 >> - `Redirection`: Your domain name will point to the OVHcloud redirection server, which can be used to display an OVHcloud homepage, and thus avoid a DNS error.<br>
 >> - `OVHcloud web hosting`: Your domain name will point to the IP address of the Web Hosting plan associated with the domain name.<br>
 >> - `Custom`: Enter the IPv4 address ([A record](/pages/web_cloud/domains/dns_zone_records#pointer-records)) of the Web Hosting plan you want to point to. <br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-01.png){.thumbnail}
 >>
 >> **Mail server address**
 >>
 >> - `Redirection`: Your domain name will point to the email redirection servers. This is particularly useful if you do not have any email solutions, but would like to send emails to one or more email addresses outside of your domain name.<br>
 >> - `OVHcloud email server`: To be defined if you have a shared email solution.<br>
 >> - `Custom`: Enter the URL and priority of the email server ([MX record](/pages/web_cloud/domains/dns_zone_records#mail-records)) you want to point to.<br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 >>
 
 ### Propagation time

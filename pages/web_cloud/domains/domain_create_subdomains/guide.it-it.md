@@ -28,7 +28,7 @@ Un **dominio** è composto da diversi livelli. Questi livelli sono generalmente 
 
 - Third Level Domain (**subdomain**): è a partire da questo terzo livello che si parla di **sottodominio**. Descriveremo in dettaglio la definizione di servizio e ti spiegheremo come utilizzarlo con i tuoi diversi servizi.
 
-![URL content](images/url-composition.png){.thumbnail}
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
   
 **Questa guida ti mostra i sottodomini e come crearli in OVHcloud.**
 

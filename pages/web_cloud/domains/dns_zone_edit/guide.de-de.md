@@ -52,7 +52,7 @@ So greifen Sie auf die Verwaltung einer OVHcloud DNS-Zone zu:
 
 Die Tabelle zeigt für jede Zeile einen DNS-Eintrag zu Ihrer Domain bei OVHCloud an. Sie können die Einträge nach dem Eintragstyp oder der zugehörigen Domain filtern.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
 
 ### Bearbeiten der OVHcloud DNS-Zone Ihrer Domain
 
@@ -113,7 +113,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >>
 >> Überprüfen Sie zunächst, ob dieser Eintrag bereits vorhanden ist und auf ein anderes Ziel verweist. Filtern Sie hierzu den Inhalt der Tabelle nach Eintragstyp oder Domainname. Wenn der Eintrag bereits existiert, können Sie ihn mit den nachstehenden Angaben bearbeiten.
 >>
->> ![dnszone](images/add-an-entry.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry.png){.thumbnail}
 >>
 >> > Wenn das Ziel Ihrer Aufzeichnung eine URL ist, denken Sie daran, diese zu punktieren. Wenn Sie dies nicht tun, wird Ihr Domainname automatisch am Ende Ihres Ziels hinzugefügt.
 >> >
@@ -133,7 +133,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >> 6. Klicken Sie in der Tabelle auf das Symbol `...`{.action} rechts neben dem betreffenden Eintrag.
 >> 7. Klicken Sie dann auf `Eintrag bearbeiten`{.action} und folgen Sie den angezeigten Schritten.
 >>
->> ![dnszone](images/modify-record.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 >>
 > **DNS-Eintrag löschen**
 >>
@@ -149,7 +149,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >>
 >> Sie können mehrere Einträge auf einmal löschen, indem Sie links in der Tabelle einen Haken setzen und dann auf den Button `Löschen`{.action} klicken.
 >>
->> ![dnszone](images/delete-record.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 >>
 > **DNS-Zone zurücksetzen**
 >>
@@ -169,7 +169,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >> 5. Klicken Sie auf der angezeigten Seite auf den Tab `DNS Zone`{.action}.
 >> 6. Klicken Sie rechts oder unterhalb der Tabelle auf `Meine DNS-Zone zurücksetzen`{.action} und folgen Sie den 2 angezeigten Schritten.
 >>
->> ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
 >>
 >> **Schritt 1**
 >>
@@ -189,14 +189,14 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 >> - `Weiterleitung`: Ihr Domainname verweist auf den Weiterleitungsserver von OVHcloud, der es ermöglicht, eine OVHcloud Startseite anzuzeigen und so einen DNS-Fehler zu vermeiden.<br>
 >> - `OVHcloud Webhosting`: Ihr Domainname verweist auf die IP-Adresse des Webhostings, das mit dem Domainnamen verbunden ist.<br>
 >> - `Benutzerdefiniert`: Legen Sie die IPv4-Adresse ([A-Eintrag](/pages/web_cloud/domains/dns_zone_records#pointer-records)) des Webhostings fest, auf das verwiesen werden soll. <br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-01.png){.thumbnail}
 >>
 >> **Adresse Ihres Mailservers**
 >>
 >> - `Weiterleitung`: Ihr Domainname verweist auf Weiterleitungsserver für E-Mails. Dies ist besonders nützlich, wenn Sie keine E-Mail-Dienste nutzen, aber E-Mails an eine oder mehrere E-Mail-Adressen außerhalb Ihres Domainnamens weiterleiten möchten.<br>
 >> - `OVHcloud E-Mail-Server`: Zu verwenden, wenn Sie ein Webhosting-E-Mail-Angebot nutzen.<br>
 >> - `Benutzerdefiniert`: Legen Sie die URL und die Priorität des E-Mail-Servers ([MX-Eintrag](/pages/web_cloud/domains/dns_zone_records#mail-records)) fest, auf den verwiesen werden soll.<br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 >>
 
 ### Propagationszeit
