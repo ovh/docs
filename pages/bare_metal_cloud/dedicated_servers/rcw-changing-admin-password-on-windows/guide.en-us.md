@@ -133,7 +133,7 @@ Then restart the server from the Control Panel.
 
 Click the `...`{.action} button near "Status" in the "Service Status" section and click `Restart`{.action}.
 
-![reboot](/pages/assets/screens/control_panel/bare-metal-dedicated/cp_dedicated_restart.png){.thumbnail}
+![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
 
 ### Step 4 - Set a new password (IPMI) <a name="step4"></a>
 

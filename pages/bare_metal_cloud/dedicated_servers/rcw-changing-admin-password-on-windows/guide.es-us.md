@@ -136,7 +136,7 @@ En primer lugar, sustituya el netboot por `Booter en el disco duro`{.action} en 
 
 A continuación, reinicie el servidor desde el área de cliente. Haga clic en el botón `...`{.action} junto a "Estado de los servicios" y seleccione `Reiniciar`{.action}.
 
-![reboot](/pages/assets/screens/control_panel/bare-metal-dedicated/cp_dedicated_restart.png){.thumbnail}
+![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
 
 ### Paso 4 - Establecer una nueva contraseña (IPMI) <a name="step4"></a>
 

@@ -136,7 +136,7 @@ Rozpocznij od zmiany netbootu na `Boot from the hard disk`{.action} w Panelu kli
 
 Następnie zrestartuj serwer z poziomu panelu klienta. Kliknij przycisk `...`{.action} w pobliżu sekcji "Status usług" i wybierz `Restartuj`{.action}.
 
-![reboot](/pages/assets/screens/control_panel/bare-metal-dedicated/cp_dedicated_restart.png){.thumbnail}
+![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
 
 ### Etap 4 - Ustaw nowe hasło (IPMI) <a name="step4"></a>
 
