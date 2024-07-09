@@ -26,7 +26,7 @@ Questa rete DNS permette di facilitare agli utenti l'accesso a Internet e ai div
 
 In particolare, consentono l'utilizzo di [domini](/links/web/domains) per accedere al sito Web preferito senza dover ricordare l'indirizzo IP del server in cui Ã¨ ospitato il sito Web.
 
-![DNS resolution](images/dns-resolution.png){.thumbnail}
+![DNS resolution](/pages/assets/schemas/domains/dns-resolution.png){.thumbnail}
 
 Esistono 4 tipi di server DNS.
 
@@ -61,7 +61,7 @@ Una zona DNS contiene informazioni tecniche chiamate *record DNS*. La zona DNS Ã
 
 Per utilizzare la zona DNS ospitata, devono essere dichiarati i **server DNS (Authoritative)** (presso il Registrar di un dominio).
 
-![DNS](images/dns-server.png){.thumbnail}
+![DNS](/pages/assets/schemas/domains/dns-server.png){.thumbnail}
 
 ### Funzionamento di un server DNS (Authoritative) con un dominio
 

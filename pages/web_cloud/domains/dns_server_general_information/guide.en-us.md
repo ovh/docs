@@ -22,7 +22,7 @@ This DNS network makes it easier for users to access the Internet and the variou
 
 They allow you to use [domain names](/links/web/domains) to access your favorite website, without having to remember the IP address of the server that hosts it.
 
-![DNS resolution](images/dns-resolution.png){.thumbnail}
+![DNS resolution](/pages/assets/schemas/domains/dns-resolution.png){.thumbnail}
 
 There are 4 types of DNS servers.
 
@@ -57,7 +57,7 @@ A DNS zone contains technical information, called *DNS records*.
 
 As a result, the **DNS servers (Authoritative)** must be registered (with a domain name registrar) in order to use the DNS zone they host.
 
-![DNS](images/dns-server.png){.thumbnail}
+![DNS](/pages/assets/schemas/domains/dns-server.png){.thumbnail}
 
 ### How an Authoritative DNS server works with a domain name
 
