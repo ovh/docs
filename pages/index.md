@@ -1203,6 +1203,7 @@
             + [Importing a backup into a Web Hosting plan database](web_cloud/web_hosting/sql_importing_mysql_database)
             + [Tutorial - What do I do when my database is full?](web_cloud/web_hosting/sql_overquota_database)
             + [SQL Database EOS and EOL announcements](web_cloud/web_hosting/sql_eos_eol)
+            + [MySQL migration to Percona Server for MySQL](web_cloud/web_hosting/percona_server_mysql_migration_info)
         + [Website optimisation](web-cloud-hosting-website-optimisation)
             + [Optimising the security of your website](web_cloud/web_hosting/secure_your_website)
             + [Changing your web hosting plan offer](web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)
