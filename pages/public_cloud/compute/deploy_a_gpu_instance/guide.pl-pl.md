@@ -111,7 +111,7 @@ Po zalogowaniu się do [Twojego panelu klienta OVHcloud](/links/manager) przejd�
 
 W kolejnym kroku przejdź do zakładki `Dystrybucje  Windows` i kliknij strzałkę rozwijaną, aby wybrać zgodny obraz systemu Windows:
 
-![public-cloud](obrazy/EN-WindowsImages_2024.png){.thumbnail}
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
 Następnie wykonaj pozostałe etapy zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). Może to potrwać kilka minut.
 
