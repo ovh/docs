@@ -84,10 +84,11 @@ You can order your new addtional IPv6 block <a href="https://feat-additional-ipv
 <br/> Go to this section :
 <br/><img src="/images/301.png" alt="check status 01"/>
 
-You will see new prefix available for your vrack in specific vrack edit page, on the left, in the `Your eligible services`{.action} column.
+<br/> This will display your Additional IPv6. This confirms that your request has been validated.
+<br/><img src="/images/302.png" alt="check status 02"/>
 
-<img src="/images/102.png" alt="manage my vrack 02"/>
-<br/>
+<br/> Now you can start configuring it by adding it to your vRack.
+<br/><img src="/images/303.png" alt="check status 03"/>
 
 </blockquote>
 </details>
