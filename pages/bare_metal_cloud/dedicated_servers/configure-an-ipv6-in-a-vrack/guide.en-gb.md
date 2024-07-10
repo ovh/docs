@@ -130,14 +130,8 @@ You have these kind of informations
 On the left side possible options are listed (eligible services to be configured).
 
 On the right you see what is already configured with your vRack.   
-You have an IP section and you can add a new subnet clicking Add sub network{.action} button
 
 <img src="/images/103.png" alt="vrack select"/>
-<br/>
-
-This way you reach-out to the subnet configuration.
-
-<img src="/images/107.png" alt="continue"/>
 <br/>
 
 You can also activate/deactivate SLAAC option for the first /64 of your block (this one is always bridged) at any time using this radio button.
