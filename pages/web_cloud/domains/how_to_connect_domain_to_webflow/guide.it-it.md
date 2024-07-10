@@ -56,7 +56,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web C
 
 Visualizzi una tabella con tutti i record DNS del dominio selezionato.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Ogni record DNS può essere modificato cliccando sul pulsante `...`{.action} a destra della riga della tabella in questione e poi su `Modifica il record`{.action}.
 
@@ -66,7 +66,7 @@ Segui i passaggi in sequenza nelle seguenti schede:
 > **Step 1**
 >> **Record A**<br><br>
 >> Per identificare i record A esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `A`.<br>
->> ![dnszone](images/filter-a.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
 >> - Clicca sul pulsante `...`{.action} a destra della riga della tabella che corrisponde al tuo dominio, senza sottodominio (esempio: `mydomain.ovh.`), poi clicca su `Modifica il record`{.action}.<br>
 >> - Se è presente un record per il sottodominio "www" (esempio: `wwww.mydomain.ovh.`), è necessario eliminarlo affinché non entri in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo dominio con il sottodominio "www" e poi clicca su `Elimina il record`{.action}.<br>
@@ -77,7 +77,7 @@ Segui i passaggi in sequenza nelle seguenti schede:
 > **Step 2**
 >> **Record AAAA**<br><br>
 >> Per identificare i record AAAA esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `AAAA`.<br>
->> ![dnszone](images/filter-aaaa.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Clicca sul pulsante `...`{.action} a destra della riga della tabella che corrisponde al tuo dominio, senza sottodominio (esempio: `mydomain.ovh.`), poi clicca su `Elimina il record`{.action}.<br>
 >> - Se è presente un record per il sottodominio "www" (esempio: `wwww.mydomain.ovh.`), eliminalo in modo che non entri in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo dominio con il sottodominio "www" e poi clicca su `Elimina il record`{.action}.<br>
@@ -85,22 +85,22 @@ Segui i passaggi in sequenza nelle seguenti schede:
 > **Step 3**
 >> **Record TXT**<br><br>
 >> Per identificare i record TXT esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `TXT`.<br>
->> ![dnszone](images/filter-txt.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
 >> - Se sono presenti record "TXT" solo per il dominio (esempio: `mydomain.ovh.`) e per il suo sottodominio in "www" (esempio: `wwww.mydomain.ovh.`), è necessario eliminarli affinché non entrino in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo dominio con il sottodominio "www" e poi clicca su `Elimina il record`{.action}.<br>
 >> - È necessario creare un record TXT. Clicca sul pulsante `Aggiungi un record`{.action} in alto a destra e seleziona il "Record di puntamento" `TXT`{.action}.
 >> Inserisci nel campo **Sottodominio** il valore `_webflow` e inserisci nel campo **Destinazione** il valore presente nella sezione `Site settings > Publishing tab > Production`{.action} del tuo account Webflow, di tipo `one-time-verification=XXXXXXXX`. Sostituisci `XXXXXXXX` con il valore presente nel tuo account Webflow.<br>
->> ![dnszone](images/field-txt.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-txt-webflow.png){.thumbnail}<br><br>
 >> Clicca su `Avanti`{.action} per confermare il record "TXT" e andare al passaggio 4.
 > **Step 4**
 >> **Record CNAME**<br><br>
 >> Per identificare i record "CNAME" esistenti, clicca sul menu dei filtri in alto nella tabella dei record DNS e seleziona `CNAME`.<br>
->> ![dnszone](images/filter-cname.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
 >> - Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo sottodominio in "www." (esempio: `mydomain.ovh.`) e poi clicca su `Modifica il record`{.action}.<br>
 >> - Se non disponi di un record "CNAME", clicca sul pulsante `Aggiungi un record`{.action} in alto a destra e seleziona il "Record di puntamento" `CNAME`{.action}.
 >> Inserisci nel campo **Sottodominio** il valore `www` e inserisci `proxy-ssl.webflow.com` nel campo **Destinazione**.<br>
->> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-webflow.png){.thumbnail}<br><br>
 >> Clicca su `Avanti`{.action} per confermare la tua registrazione "CNAME".
 
 A questo punto la zona DNS è configurata per essere collegata a un hosting Webflow.
