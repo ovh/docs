@@ -1,13 +1,13 @@
 ---
 title: Partage de responsabilité du produit infrastructure de messagerie dédiée managée
 excerpt: "Modèle de responsabilités entre OVHcloud et le client"
-updated: 2024-07-09
+updated: 2024-07-10
 ---
 
 Le RACI ci-dessous détaille les responsabilités partagées entre OVHcloud et le client pour le produit *Managed Dedicated E-mail Infrastructure* qui correpond à l'offre **Trusted Exchange on OVHcloud**.
 Ce modèle de responsabilité peut aider à alléger la charge opérationnelle du client.
 
-Définition ## RACI
+## Définition du RACI
 
 | Rôles |
 | --- |
@@ -18,7 +18,7 @@ Définition ## RACI
 
 ### 1. Avant l'abonnement
 
-#### 1.1. Spécifiez le service selon vos besoins
+#### 1.1. Spécifier le service selon vos besoins
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
@@ -34,16 +34,16 @@ Définition ## RACI
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Installer, configurer et livrer des briques fonctionnelles du service | I | RA |
+| Installer, configurer et livrer les briques fonctionnelles du service | I | RA |
 | Fournir les licences de service et le certificat SSL | CI | RA |
 | Configurer le certificat SSL après livraison par OVHcloud | A | R |
-| Fournit un service préconfiguré avec le nombre demandé de d'adresses e-mail qui nécessitent une configuration supplémentaire par le client | I | RA |
+| Fournir un service préconfiguré avec le nombre demandé d'adresses e-mail qui nécessitent une configuration supplémentaire par le client | I | RA |
 
 #### 2.2. Modèle de réversibilité
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Choisir un outil de migration pour importer des comptes e-mail d'un autre service | RA | |
+| Choisir un outil de migration pour importer des comptes e-mail depuis un autre service | RA | |
 
 #### 2.3. Paramétrage du système d'information client
 
@@ -72,7 +72,7 @@ Définition ## RACI
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer les accès à l'espace client OVHcloud et à l'infrastructure dédiée suivant la politique de contrôle d'accès définie | RA | I |
+| Gérer les accès à l'espace client OVHcloud et à l'infrastructure dédiée en fonction de la politique de contrôle d'accès définie | RA | I |
 | Définir et implémenter des protocoles de sécurité en fonction des besoins de l'entreprise (IMAP, POP, MAPI, EWS, SMTP) et de la sécurité associée | I | RA |
 | Restreindre l'utilisation des protocoles de sécurité en fonction des besoins de l'entreprise (IMAP, POP, MAPI, EWS, SMTP) et de la sécurité associée | A | R |
 | Gérer les accès physiques et logiques aux infrastructures pour les équipes OVHcloud | | RA |
