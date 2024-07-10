@@ -1,7 +1,7 @@
 ---
 title: 'Cas de migration VMware Cloud Director on OVHcloud'
 excerpt: 'Découvrez comment effectuer votre migration VMware Cloud Director on OVHcloud ainsi que ces cas particuliers et complexes afin de garantir la sécurité de vos données'
-updated: 2024-07-09
+updated: 2024-07-10
 ---
 <style>
 details>summary {
@@ -25,20 +25,15 @@ details[open]>summary::before {
 ## Objectif
 
 **Découvrez comment effectuer votre migration au sein de VMware Cloud Director on OVHcloud ainsi que les cas particuliers à mettre au jour.**
-**L'objectif de ce guide est de d'écrire les scénarios les plus difficiles qui puvent compliquer les migrations au sein de VCD on OVHcloud.**
+or
+**L'objectif de ce guide est de d'écrire les scénarios les plus difficiles qui peuvent compliquer les migrations au sein de VCD on OVHcloud.**
 
 ## Prérequis
 
-
-> [!primary]
->
-> Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord le guide « [Comment se connecter à VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) ».
->
-
-- Un navigateur Web (avec de préférence une base Chromium et la traduction activée en Français).
+- Un navigateur Web (avec de préférence une base Chromium et la traduction activée en français).
 - Avoir un compte VMware Cloud Director avec des droits utilisateurs admin (vérifiez que votre compte utilisateur dispose des droits suffisants).
 - Avoir suivi le guide « [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) ».
-- Etre administrateur d'au moins deux organisations VCD sur la plateforme VCD on OVHcloud.
+- Étre administrateur d'au moins deux organisations VCD sur la plateforme VCD on OVHcloud.
 - Avoir réalisé l'appairage de ces deux organisations.
 
 ## En pratique
@@ -59,9 +54,9 @@ Avec ce guide, vous serez équipé pour naviguer dans les complexités des migra
 
 ///
 
-### Étape 1 - Migrer PCC vers VCD
+### Étape 1 - Critères de migrations
 
-/// details | Comment migrer PCC au sein de VCD ?
+/// details | Quelles sont les critères d'acceptations pour migrer les services Hosted Private Cloud vSphere managé au sein de VMware Cloud Director on OVHcloud ?
 
 **Schema PCC to VCD:**
 
@@ -97,40 +92,59 @@ En tant qu'administrateur VCD, je veux pouvoir étendre les vlan 1000 et 2000 de
  - [ ] Json containing all the subscription details (each line + nic)
 - [ ] PCC : calls an endpoint available on VCD side with 
  - [ ]pcc name
- - [ ]zone
- - [ ]json containing all the subscription details (each line + nic)
+ - [ ] Zone
+ - [ ] Json containing all the subscription details (each line + nic)
+
+**Inputs**
+Le paramètre à prendre: 
+
+- "PCC name"
+
+- [ ] Le robot vSphere va:
+  - [ ] Ajouter la route sur ESXi et vSphere.
+  - [ ] Ajouter la route sur vCenter.
+
+**Acteurs de la migration:**
+- [ ] L'équipe vSphere managé (Hosted Private Cloud on OVHcloud).
+- [ ] L'équipe Hosted Private Cloud VMware Cloud Director on OVHcloud.
+
+### Contraintes
+
+Customer will need to order new datastores after the migrations.
+Due to no storage solutions available, existing customers will continue to grow on PCC for datastores.
+- [ ] Une commande de nouveaux datastores après les migrations sera nécessaire pour les offres clients.
+- [ ] En raison de l’absence de solutions de stockage disponibles, les clients existants continueront à se développer sur Hosted Private Cloud vSphere managed on OVHcloud pour les datastores.
 
 ///
 
-### Étape 2 - Les cas particuliers de migration PCC vers VCD
+### Étape 2 - Les cas particuliers de migration
 
 /// details | Qu'elles sont les cas particuliers de migration PCC vers VCD ?
 
+Le but est de migrer toutes les instances Hosted Private Cloud VMware on OVHcloud existantes qui sont marqués avec le tag **"VCDMigrationPath"**.
+
+Ces instances clientes proviennent principalement des offres **Essential** et **SDDC** mais nous pouvons avoir des références **PRE/NSX/vSphere** et même vSAN pour les premiers hosts vSAN.
+
 Tableau de migration selon les cas d'utilisations:**
 
-| Étapes               | Check                                                                  | Actions                                                                                                                                                                                                                                      | Durée | Client | OVHcloud | Commentaires | Référence à une documentation technique |
-|----------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|--------|----------|--------------|-----------------------------------------|
-| Durant la migration  | - CARP (Common address redundancy protocol) to be coded.               | - Detection + Implementation coté VCD.                                                                                                                                                                                                       | ?     | Non    | Oui      |              |                                         |
-| Durant la migration  | 	- Scale0 on PCC (NSX-T 4.0.1) → ✅                                     | 	- Ignorer ce profile et les enlever.                                                                                                                                                                                                        | ?     | Non    | Oui      |              |                                         |
-| Durant la migration  | 	- Edge, Backup infra, zerto infra, private GW... (OVH vms) Virtual Machines → ✅ | 	- Ne pas migrer.                                                                                                                                                                                                                            | ?     | Non    | Oui      |              |                                         |
-| Pre-check            | - Multi vDC (avertissement)                                            | 	- Public documentation, if datacenter empty → ignore else only one customer, contact him and block                                                                                                                                          | ?     | Oui    | Oui      |              |                                         |
-| Pre-check            | - FT  ✅                                                                | - Detection + error + E-Mail or detection + E-Mail + Disable FT on PCC side + Migration                                                                                                                                                      |       |        |          |              |                                         |
-| Pre-check            | - DRS Affinity/Anti affinity rules (avertissement)                     | - Partial only VMs, distinction between required and preferred in VCD, what do we take by default → detection + VCD implementation side → (avertissement) public documentation VM ↔ host won't be migrated and migrate VMs affinity rules.   |       |        |          |              |                                         |
-| Pre-check            | 	- Check special devices (CD...) → ✅                                   | - Public documentation <br/> Notify customer + E-Mail.                                                                                                                                                                                       |       |        |          |              |                                         |
-| Pre-check            | - Datastores cluster → (coche)                                         | - Public documentation, notify customer and ignore.                                                                                                                                                                                          |       |        |          |              |                                         |
-| Pre-check            | - Memory over-commitment (avertissement)                               | - Public documentation, detect + error + mail to ask customer to add resources or add free resources.                                                                                                                                        |       |        |          |              |                                         |
-| Pre-check            | 	- Resource pools → 2 use cases, (avertissement)                       | - Public documentation, no notion on VCD, remove and document.                                                                                                                                                                               |       |        |          |              |                                         |
-| Pre-check            | 	- Security option (erreur)                                            | 	- Public documentation and detect security option linked to certification and block.                                                                                                                                                        |       |        |          |              |                                         |
-| Pre-check            | 	- Encrypted VM disks 	                                                | - Public documentation, detection and block.                                                                                                                                                                                                 |       |        |          |              |                                         |
-| Pre-check            | 	- Zerto (erreur) → list block (avertissement)                         | 	- 8 PCCs (avertissement) public documentation.                                                                                                                                                                                              |       |        |          |              |                                         |
-| Pre-check            | 	- Backup ✅	                                                           | - Detection + migration du scenario.                                                                                                                                                                                                         |       |        |          |              |                                         |
-| Pre-check            | 	- VM with IDE disk → ???                                              |                                                                                                                                                                                                                                              |       |        |          |              |                                         |
-| Pre-check            | 	- Hosts freespare and hourly                                          | - Documentation publique, prévenir le client et retenter la maintenance 01h24, passe in error state CCO to contact client.                                                                                                                   | 01h24 |        |          |              |                                         |
-| Pre-check            | 	- SQLServer usage                                                     | 	- 99 % des chances que SQLServer ne soit pas prêt à la date de disponibilité générale.                                                                                                                                                      |       |        |          |              |                                         |
-| Pre-check            | 	- Global zpools                                                       | 	- Verify only. Pas de blocage sauf dans le cas de plusieurs instances VCD.                                                                                                                                                                  |       |        |          |              |                                         |
-| Pre-check            | 	- Check NSX-v usage                                                   | 	- La documentation publique ne peut pas être migrée si Edge et DFW, pour l'instant blocage de la migration, sont traités dans une autre vague (nous allons vérifier si elle peut être gérée manuellement → 15 occurrences avec utilisation) |       |        |          |              |                                         |
-| Pre-check            | 	- Check HCX usage (erreur)                                            | 	- Impossible de migrer la documentation publique. La fonctionnalité doit être désactivée avant la migration.                                                                                                                                |       |        |          |              |                                         |
-
+| Étapes               | Input                | Check                                                                            | Actions manuel à lancer                                                                                                                                                                                                                      | Durée | Actions client | Actions OVHcloud | Commentaires                                                                                  | Référence à une documentation technique | Critères d'acceptations VCD                                                                                                                                                                   | Critères d'acceptations vSphere (PCC)                                                                                                                |
+|----------------------|----------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|----------------|------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Durant la migration  | pcc-xxx-xxx-xxx-xxx  | - CARP (Common address redundancy protocol) to be coded.                         | - Detection + Implementation coté VCD.                                                                                                                                                                                                       | ?     | Non            | Oui              |                                                                                               |                                         | - VCD endpoint available to ask for a tenant creation with the following parameters. <br/> - Pcc name <br/> - Zone <br/> Json containing all the subscription details (each line + nic) <br/> | - Calls an endpoint available on VCD side with. <br/> - PCC name <br/> - Zone <br/> - Json containing all the subscription details (each line + nic) |
+| Durant la migration  | pcc-xxx-xxx-xxx-xxx  | 	- Scale0 on PCC (NSX-T 4.0.1) → ✅                                               | 	- Ignorer ce profile et les enlever.                                                                                                                                                                                                        | ?     | Non            | Oui              |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Durant la migration  |                      | 	- Edge, Backup infra, zerto infra, private GW... (OVH vms) Virtual Machines → ✅ | 	- Ne pas migrer.                                                                                                                                                                                                                            | ?     | Non            | Oui              |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | - Multi vDC (avertissement)                                                      | 	- Public documentation, if datacenter empty → ignore else only one customer, contact him and block                                                                                                                                          | ?     | Oui            | Oui              |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | - FT  ✅                                                                          | - Detection + error + E-Mail or detection + E-Mail + Disable FT on PCC side + Migration                                                                                                                                                      | ?     |                |                  |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | - DRS Affinity/Anti affinity rules (avertissement)                               | - Partial only VMs, distinction between required and preferred in VCD, what do we take by default → detection + VCD implementation side → (avertissement) public documentation VM ↔ host won't be migrated and migrate VMs affinity rules.   | ?     |                |                  |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | 	- Check special devices (CD...) → ✅                                             | - Public documentation <br/> Notify customer + E-Mail.                                                                                                                                                                                       | ?     |                |                  |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | - Datastores cluster → ✅                                                         | - Public documentation                                                                                                                                                                                                                       | ?     | Oui            | Oui              | Notifier client et ignorer.                                                                   |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | - Memory over-commitment (avertissement)                                         | - Public documentation                                                                                                                                                                                                                       | ?     | Oui            | Oui              | Détecter + Erreurs + E-Mail <br/>  Demander au client pour ajouter ou libérer les ressources. |                                       
+| Pre-check            |                      | 	- Resource pools → 2 use cases, (avertissement)                                 | - Public documentation                                                                                                                                                                                                                       | ?     |                |                  | Pas de notion sur VCD <br/> Enlever et documenter.                                            |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | 	- Security option (erreur)                                                      | 	- Public documentation and detect security option linked to certification and block.                                                                                                                                                        | ?     |                |                  |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | 	- Encrypted VM disks 	                                                          | - Public documentation, detection and block.                                                                                                                                                                                                 | ?     |                |                  |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | 	- Zerto (erreur) → list block (avertissement)                                   | 	- 8 PCCs (avertissement) public documentation.                                                                                                                                                                                              | ?     |                |                  |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | 	- Hosts freespare and hourly                                                    | - Documentation publique, prévenir le client et retenter la maintenance 01h24, passe in error state CCO to contact client.                                                                                                                   | 01h24 |                |                  |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | 	- Check NSX-v usage                                                             | 	- La documentation publique ne peut pas être migrée si Edge et DFW, pour l'instant blocage de la migration, sont traités dans une autre vague (nous allons vérifier si elle peut être gérée manuellement → 15 occurrences avec utilisation) | ?     |                |                  |                                                                                               |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
+| Pre-check            |                      | 	- Check HCX usage (erreur)                                                      | 	                                                                                                                                                                                                                                            | ?     |                |                  |  - Impossible de migrer la documentation publique. La fonctionnalité doit être désactivée avant la migration.                                                                                             |                                         |                                                                                                                                                                                               |                                                                                                                                                      |
 
 **Tableau de migration selon l'offre Hosted Private Cloud:**
 
@@ -148,14 +162,37 @@ Tableau de migration selon les cas d'utilisations:**
 
 ## Étape 3 - Les cas particuliers
 
-### Multi vDC
+### Cas multi-vDC
 
 | Étapes               | Check                                                                                 | Actions                                                                                                                                                                                                                                     | Durée | Client | OVHcloud | Commentaires |
 |----------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|--------|----------|--------------|
 | Pre-check            | Multi vDC (avertissement)                                                             | 	- Public documentation, if datacenter empty → ignore else only one customer, contact him and block                                                                                                                                         | ?     | Oui    | Oui      |              |
+ 
+**Zones cas miulti-vDC:**
 
+|     |        |                          |      |
+|-----|--------|--------------------------|------|
+| PCC | id     | Zone                     | info |
+| 63  | 	lim1c | 2 vDC, 1 empty ✅         |      |
+| 144 | 	rbx2a | 	2 vDC, 1 empty ✅         |      |
+| 615 | 	rbx2a | 	migration in progress to NSX-T (avertissement) |      |
+| 677 | 	rbx2a | 	2 vDC, 1 empty ✅         |      |
+| 530 | 	rbx2b | 	3 vDC, 2 empty ✅         |      | 
+| 675 | 	rbx2b | 	2 vDC without NSX (erreur) |      |
+| 806 | 	rbx2b | 	migration in progress to NSX-T (avertissement) |      |
 
 ///
+
+### Glossaire
+
+- **Offres Essential** et **SDDC**:
+- **PRE/NSX/vSphere**:
+
+### Bibliography
+
+- [<https://docs.vmware.com/en/VMware-NSX-Migration-for-VMware-Cloud-Director/1.4.2/user-guide/GUID-index.html>](){.external}
+- [<https://blogs.vmware.com/cloudprovider/2023/09/alternative-solutions-for-unsupported-features-in-vmware-nsx-migration-for-vmware-cloud-director.html>](){.external}
+- [<https://blogs.vmware.com/cloudprovider/2023/09/end-of-nsx-migration-for-vmware-cloud-director-what-should-i-know.html>](){.external}
 
 ## Aller plus loin
 
