@@ -74,7 +74,7 @@ Follow the steps in order by browsing the following tabs:
 >> - Click the `...`{.action} button in the table row corresponding to your subdomain in “www” (example: `mydomain.ovh.`), then click `Modify record`{.action}.<br>
 >> - If you do not have an existing CNAME record, click the `Add an entry`{.action} button in the top right-hand corner of your screen, and select `CNAME`{.action}.
 >> Fill in **Sub-domain** with the value `www` and enter `verify.squarespace.com.` in the **Target** field.<br>
->> ![cname-entry](images/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
+>> ![cname-entry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
 >> Click `Next`{.action}, then confirm your CNAME record.
 >> Add the second CNAME record by typing `ext-cust.squarespace.com.` in the **Target** field.<br>
 

@@ -79,7 +79,7 @@ Segui i passaggi in sequenza nelle seguenti schede:
 >> - Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo sottodominio in "www" (esempio: `mydomain.ovh.`) e poi clicca su `Modifica il record`{.action}.<br>
 >> - Se non disponi di un record "CNAME", clicca sul pulsante `Aggiungi un record`{.action} in alto a destra e seleziona il "Campo di puntamento" `CNAME`{.action}.
 >> Inserisci nel campo **Sottodominio** il valore `www` e inserisci `verify.squarespace.com.` nel campo **Destinazione**.<br>
->> ![cname-entry](images/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
+>> ![cname-entry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
 >> Clicca su `Seguente`{.action} e conferma la registrazione "CNAME".
 >> Aggiungere il secondo record CNAME digitando `ext-cust.squarespace.com.` nel campo **Destinazione**.<br>
 
