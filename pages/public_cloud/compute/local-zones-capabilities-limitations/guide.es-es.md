@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funcionalidades, capacidades y límites
 excerpt: Descubra las funcionalidades, capacidades y límites actuales de las instancias de Local Zone
-updated: 2024-04-08
+updated: 2024-07-10
 ---
 
 > [!primary]
@@ -34,6 +34,7 @@ Para más información, consulte nuestra [página dedicada a las instancias de L
 | Snapshots de volúmenes | No |
 | Copias de seguridad de volúmenes | No |
 | Object Storage | No |
+| Imágenes de Windows | No |
 
 ## Capacidades y limitaciones
 

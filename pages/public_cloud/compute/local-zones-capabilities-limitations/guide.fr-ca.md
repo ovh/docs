@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Fonctionnalités, capacités et limites
 excerpt: Découvrez les fonctionnalités, les capacités et les limites actuelles des instances Local Zones
-updated: 2024-04-08
+updated: 2024-07-10
 ---
 
 ## Objectif
@@ -29,6 +29,7 @@ Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zon
 | Snapshots de volumes| Non |
 | Sauvegardes de volumes | Non |
 | Object Storage | Non |
+| Images Windows | Non |
 
 ## Capacités et limitations
 
