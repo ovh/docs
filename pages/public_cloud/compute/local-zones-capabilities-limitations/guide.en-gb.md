@@ -30,6 +30,7 @@ Find more information on our [dedicated Local Zone Compute page](/links/public-c
 | Volume Snapshots | No |
 | Volume Backups | No |
 | Object Storage | No |
+| Windows Images | No |
 
 ## Capabilities and limitations
 
