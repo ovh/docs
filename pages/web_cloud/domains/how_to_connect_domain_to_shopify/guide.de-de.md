@@ -57,7 +57,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www." und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn Sie noch keinen A-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `A`{.action}<br><br>
 >> Lassen Sie das Feld **Subdomain** leer und geben Sie die Shopify IPv4-Adresse `23.227.38.65` in das Feld **Ziel** ein.
->> ![dnszone](images/field-a.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/field-a.png){.thumbnail}<br><br>
 >> Klicken Sie auf `Weiter`{.action}, bestätigen Sie Ihren A-Eintrag und fahren Sie mit Schritt 2 fort.
 > **Schritt 2**
 >> **AAAA-Eintrag**<br><br>
@@ -67,7 +67,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www" und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn Sie noch keinen AAAA-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `AAAA`{.action}<br><br>
 >> Lassen Sie das Feld **Subdomain** leer und geben Sie die Shopify IPv6-Adresse `2620:0127:f00f:5::` in das Feld **Ziel** ein.
->> ![dnszone](images/field-aaaa.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/field-aaaa.png){.thumbnail}<br><br>
 >> Klicken Sie auf `Weiter`{.action}, bestätigen Sie Ihren AAAA-Eintrag und fahren Sie mit Schritt 3 fort.
 > **Schritt 3**
 >> **TXT-Eintrag**<br><br>
@@ -81,7 +81,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile zu Ihrer Subdomain "www" (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
 >> - Wenn Sie keinen existierenden CNAME-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `CNAME`{.action}.
 >> Vervollständigen Sie das Feld **Subdomain** mit dem Wert `www` und geben Sie `shops.myshopify.com.` in das Feld **Ziel** ein.<br>
->> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/field-cname-shopify.png){.thumbnail}<br><br>
 >> Klicken Sie auf `Weiter`{.action} und bestätigen Sie Ihren CNAME-Eintrag.
 
 Die DNS-Zone ist nun zur Verwendung mit einem Shopify Hosting konfiguriert.
