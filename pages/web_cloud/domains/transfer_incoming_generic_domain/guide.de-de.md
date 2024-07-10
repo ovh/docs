@@ -97,11 +97,11 @@ Bitte beachten Sie, dass OVHcloud zum Zeitpunkt der Einleitung des Transfervorga
 
 Sobald Ihr Domainname freigegeben und der Code verfügbar ist, können Sie den Transfer zu OVHcloud beantragen. Dazu führen Sie einfach eine [Bestellung über unsere Website aus](/links/web/domains){.external}. Geben Sie dort Ihren Domainnamen ein und folgen Sie den Bestellschritten.
 
-![domain](images/Domain_transfer_order.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/domain-transfer-order.png){.thumbnail}
 
 Wenn Sie zur Eingabe des AUTH/INFO-Code eingeben werden, können Sie ihn in das entsprechende Feld eintragen. Wenn Sie noch nicht über den Code verfügen, können Sie auch die Option auswählen, diesen nachzuliefern. Wir empfehlen jedoch, den Code verfügbar zu haben, bevor Sie die Bestellung ausführen. Denken Sie daran, dass der Transfer erst dann gestartet wird, wenn ein gültiger Code eingegeben wurde.
 
-![domain](images/step_authinfo_add.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/step_authinfo_add.png){.thumbnail}
 
 Sie können Ihre Bestellung auch mit einem [Webhosting](/links/web/hosting){.external} kombinieren. Unsere Anleitung "[Migration Ihrer Website zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}" beschreibt den optimalen Weg zum Migrieren Ihrer Dienste.
 
@@ -122,7 +122,7 @@ Sie können Ihre Bestellung auch mit einem [Webhosting](/links/web/hosting){.ext
 
 - In einigen Fällen kann der Transfer zusätzliche Informationen zum Inhaber des Domainnamens erfordern. Um diese Informationen hinzuzufügen, klicken Sie auf die Option `Kontakte/Inhaber verwalten`{.action}.
 
-![Domain](images/Order_summary.png){.thumbnail}
+![Domain](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
 #### Weiterverfolgung des Transfers nach der Bestellung
 

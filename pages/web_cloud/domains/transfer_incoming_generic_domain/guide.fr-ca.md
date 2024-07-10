@@ -94,11 +94,11 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 
 Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](/links/web/domains){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
 
-![domain](images/Domain_transfer_order.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/domain-transfer-order.png){.thumbnail}
 
 Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la zone en face de votre nom de domaine. Si vous ne disposez pas encore du code de transfert, vous pouvez cocher la case intitulée `Entrer le code de transfert ultérieurement`{.action}. Toutefois, nous vous conseillons vivement de vous assurer que vous disposez du code à remettre avant de continuer. N'oubliez pas que le transfert ne démarrera pas tant qu'un code valide n'aura pas été fourni.
 
-![domain](images/step_authinfo_add.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/step_authinfo_add.png){.thumbnail}
 
 Vous pouvez également terminer votre commande avec un [hébergement web](/links/web/hosting){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} » vous fournira des instructions sur la façon de procéder.
 
@@ -119,7 +119,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](/links
 
 - Dans certains cas, le processus de transfert peut nécessiter des informations supplémentaires concernant le propriétaire du nom de domaine. Pour ajouter ces informations, cliquez sur l'option `Gérer les contacts/le propriétaire`{.action}.
 
-![domaine](images/Order_summary.png){.thumbnail}
+![domaine](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
 #### Suivi du transfert après la commande
 

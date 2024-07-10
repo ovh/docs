@@ -57,11 +57,11 @@ In the `General information`{.action} tab, you can verify that the requirements 
 
 Click on the `Outgoing transfer tag`{.action} link in the section labelled **Security**.
 
-![outgoingtransfer](images/outgoing-transfer-tag.jpg){.thumbnail}
+![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.jpg){.thumbnail}
 
 In the popup window, enter the TAG of your future registrar, then click on `Confirm`{.action}.
 
-![outgoingtransfer](images/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
+![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
 
 If you are unable to modify your domain name's TAG in the OVHcloud Control Panel, you can request at the registry to modify it on your behalf. You can find more information on the official [Nominet website](https://www.nominet.uk/domain-support/).  
 

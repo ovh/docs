@@ -54,11 +54,11 @@ Dans l'onglet `Informations générales`{.action}, vous pouvez vérifier que les
 
 Cliquez sur le lien `Tag de transfert sortant`{.action} dans la section intitulée **Sécurité**.
 
-![transfert sortant](images/outgoing-transfer-tag.jpg){.thumbnail}
+![transfert sortant](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.jpg){.thumbnail}
 
 Dans la fenêtre qui s'affiche, renseignez le TAG de votre nouveau bureau d'enregistrement puis cliquez sur `Confirmer`{.action}.
 
-![transfert sortant](images/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
+![transfert sortant](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
 
 Si vous n'arrivez pas à modifier le TAG de votre nom de domaine depuis votre espace client, vous pouvez en demander la modification auprès du Registre Nominet. Retrouvez plus d’informations sur le [site officiel de Nominet](https://www.nominet.uk/domain-support/).
 
