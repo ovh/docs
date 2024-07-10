@@ -70,12 +70,12 @@ Siga as etapas em ordem nas seguintes guias:
 > **Etapa 3**
 >> **Registo TXT**<br><br>
 >> Para identificar os registos "TXT" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `TXT`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
 >> - Se existirem registos "TXT" para o nome de domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www" (exemplo: `www.mydomain.ovh.`), deverá eliminá-los para que não entrem em conflito com o registo CNAME que irá introduzir no passo 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio apenas com o subdomínio "www" e depois clique em `Eliminar entrada`{.action}.<br>
 > **Etapa 4**
 >> **Registo CNAME**<br><br>
 >> Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `CNAME`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www" (exemplo: `mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se não tiver um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" CNAME`{.action}.
 >> Preencha o campo **Subdomínio** com o valor `www` e introduza `verify.squarespace.com.` no campo **Alvo**.<br>

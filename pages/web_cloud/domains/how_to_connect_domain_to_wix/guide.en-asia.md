@@ -77,13 +77,13 @@ Follow the steps in order by browsing the following tabs:
 > **Step 3**
 >> **TXT record**<br><br>
 >>  To identify existing "TXT" records, click the filter menu at the top of the DNS records table and select `TXT`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
 >> - If "TXT" records are present for the domain name (e.g. `mydomain.ovh.`) and for its subdomain "www" (e.g. `www.mydomain.ovh.`), you must delete them so that they do not conflict with the CNAME record that you enter in step 4. Click on the `...`{.action} button in the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.<br>
 > **Step 4**
 >> **CNAME record**<br><br>
 >>  To identify existing CNAME records, click on the filter menu at the top of the DNS records table and select `CNAME`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
 >> - Click on the `...`{.action} button to the right of the table row corresponding to the subdomain "www" (example: `mydomain.ovh.`) then click `Edit record`{.action}.
 >> - If you do not have an existing CNAME record, click the `Add record`{.action} button in the top right-hand corner of your screen and select `CNAME`{.action}.

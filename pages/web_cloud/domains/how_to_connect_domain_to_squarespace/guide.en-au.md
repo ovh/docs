@@ -65,12 +65,12 @@ Follow the steps in order by browsing the following tabs:
 > **Step 3**
 >> **TXT record**<br><br>
 >> To identify existing "TXT" records, click the filter menu at the top of the DNS records table and select `TXT`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
 >> - If “TXT” records are present for the domain name (example: `mydomain.ovh.`) and for its subdomain “www” (example: `www.mydomain.ovh.`), you must delete them so that they do not conflict with the CNAME record that you enter in step 4. Click the `...`{.action} button in the table row for your domain name with the subdomain “www”, then click `Delete record`{.action}.<br>
 > **Step 4**
 >> **CNAME record**<br><br>
 >> To identify existing CNAME records, click the filter menu at the top of the DNS records table and select `CNAME`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >> - Click the `...`{.action} button in the table row corresponding to your subdomain in “www” (example: `mydomain.ovh.`), then click `Modify record`{.action}.<br>
 >> - If you do not have an existing CNAME record, click the `Add an entry`{.action} button in the top right-hand corner of your screen, and select `CNAME`{.action}.
 >> Fill in **Sub-domain** with the value `www` and enter `verify.squarespace.com.` in the **Target** field.<br>
