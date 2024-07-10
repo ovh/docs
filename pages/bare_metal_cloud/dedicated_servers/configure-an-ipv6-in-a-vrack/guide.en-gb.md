@@ -124,9 +124,6 @@ Go to `Network > vRack private network`{.action} section add select your vRack y
 
 You have these kind of informations
 
-<img src="/images/101.png" alt="mange my vrack 01"/>
-<br/>
-
 <img src="/images/102.png" alt="mange my vrack 02"/>
 <br/>
 
