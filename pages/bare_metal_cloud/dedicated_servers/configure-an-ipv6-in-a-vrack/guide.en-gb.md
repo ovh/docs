@@ -132,7 +132,7 @@ You have these kind of information
 
 <br/>On the right you see what is already configured with your vRack.    
 
-<br/> Select your new Addtional IPv6 and and it to your vRack
+<br/> Select your new Addtional IPv6 and add it to your vRack
 
 <img src="/images/701.png" alt="vrack select"/>
 <br/>
@@ -297,22 +297,22 @@ Go to `Network > vRack private network`{.action} section add select your vRack y
 
 You have these kind of information
 
-<img src="/images/221.png" alt="mange my vrack 02"/>
+<img src="/images/700.png" alt="mange my vrack 02"/>
 <br/>
 
 On the right you have a IP section and you can add a new subnet clicking `Add subnet`{.action} button
 
-<img src="/images/304.png" alt="vrack select"/>
+<img src="/images/600.png" alt="vrack select"/>
 <br/>
 
 In this way you have this modal to entrer your new address
 
-<img src="/images/220.png" alt="continue"/>
+<img src="/images/800.png" alt="continue"/>
 <br/>
 
-This created routed subnet aa::/64 reachable via next hop 2001:41d0:a800::123 IP inside the first (bridged) subnet
+This created routed subnet aa::/64 reachable via next hop 2001:41d0:abcd::ef00 IP inside the first (bridged) subnet
 
-<img src="/images/221.png" alt="continue"/>
+<img src="/images/801.png" alt="continue"/>
 <br/>
 
 </blockquote>
