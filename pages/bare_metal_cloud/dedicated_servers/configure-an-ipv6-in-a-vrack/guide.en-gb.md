@@ -65,7 +65,7 @@ While requesting a new Additional IPv6 block, it's important to note that the al
 
 You can order your new addtional IPv6 block <a href="https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip">here</a>
 
-<br/><img src="/images/300.png" alt="configuration page"/>
+<br/><img src="/images/500.png" alt="configuration page"/>
 
 <br/>Next you need to follow the simple step-by-step instructions. 
 <br/>At the end you need to select the right region to announce your new Additional IPv6.
