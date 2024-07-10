@@ -121,23 +121,26 @@ The example above shows two hosts with their vRack-side interfaces configured wi
 <summary> <b>Control Panel</b></summary>
 <blockquote>
 
-Go to `Network > vRack private network`{.action} section add select your vRack you want to manage
+Go to `Network > vRack private network`{.action} section and select your vRack you want to manage
 
 You have these kind of information
 
-<img src="/images/221.png" alt="mange my vrack 02"/>
+<img src="/images/700.png" alt="mange my vrack 02"/>
 <br/>
 
-On the left side possible options are listed (eligible services to be configured).
+<br/>On the left side possible options are listed (eligible services to be configured).
 
-On the right you see what is already configured with your vRack.   
+<br/>On the right you see what is already configured with your vRack.    
 
-<img src="/images/106.png" alt="vrack select"/>
+<br/> Select your new Addtional IPv6 and and it to your vRack
+
+<img src="/images/701.png" alt="vrack select"/>
 <br/>
 
-You can also activate/deactivate SLAAC option for the first /64 of your block (this one is always bridged) at any time using this radio button.
+<br/>After this action, you have now your new Addtional IPv6 added to you vRack.
+<br/>You can also activate/deactivate SLAAC option for the first /64 of your block (this one is always bridged) at any time using this radio button.
 
-<img src="/images/104.png" alt="continue"/>
+<img src="/images/702.png" alt="continue"/>
 <br/>
 
 </blockquote>
