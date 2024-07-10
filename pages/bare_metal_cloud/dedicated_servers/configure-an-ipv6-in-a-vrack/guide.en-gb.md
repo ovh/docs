@@ -122,7 +122,7 @@ The example above shows two hosts with their vRack-side interfaces configured wi
 
 Go to `Network > vRack private network`{.action} section add select your vRack you want to manage
 
-You have these kind of informations
+You have these kind of information
 
 <img src="/images/221.png" alt="mange my vrack 02"/>
 <br/>
@@ -291,7 +291,7 @@ Traffic coming back from such a VM should use the default route via the first pa
 
 Go to `Network > vRack private network`{.action} section add select your vRack you want to manage
 
-You have these kind of informations
+You have these kind of information
 
 <img src="/images/221.png" alt="mange my vrack 02"/>
 <br/>
