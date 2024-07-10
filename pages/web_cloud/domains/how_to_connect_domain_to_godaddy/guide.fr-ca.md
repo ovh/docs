@@ -50,7 +50,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} dans
 
 Le tableau qui s'affiche liste l'ensemble des enregistrements DNS du nom de domaine sélectionné.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Chaque enregistrement DNS peut être modifié en cliquant sur le bouton `...`{.action} à droite de la ligne du tableau concernée puis en cliquant sur `Modifier l'entrée`{.action}.
 

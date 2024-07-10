@@ -38,7 +38,7 @@ Log in to the [OVHcloud Control Panel](/links/manager){.external} in the `Web Cl
 
 The table lists all of the DNS records for the selected domain name.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Each DNS record can be modified by clicking on the `...`{.action} button to the right of the table row concerned, then clicking on `Modify record`{.action}.
 

@@ -43,7 +43,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web C
 
 Visualizzi una tabella con tutti i record DNS del dominio selezionato.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Ogni record DNS può essere modificato cliccando sul pulsante `...`{.action} a destra della riga della tabella in questione e poi su `Modifica il record`{.action}.
 

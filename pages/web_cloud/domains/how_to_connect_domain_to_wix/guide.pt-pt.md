@@ -56,7 +56,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web C
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Cada registo DNS pode ser alterado clicando no botão `...`{.action} à direita da linha da tabela em causa e, a seguir, clicando em `Modificar entrada`{.action}.
 

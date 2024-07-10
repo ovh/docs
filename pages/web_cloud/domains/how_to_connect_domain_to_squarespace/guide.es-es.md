@@ -43,7 +43,7 @@ Conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la se
 
 Se mostrará una tabla con todos los registros DNS del dominio seleccionado.
 
-![Zona DNS](images/tab.png){.thumbnail}
+![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Cada registro DNS puede modificarse haciendo clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente y haciendo clic en `Modificar el registro`{.action}.
 
