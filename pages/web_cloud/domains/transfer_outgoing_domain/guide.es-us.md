@@ -65,7 +65,7 @@ En la pestaña `Información general`{.action}, encontrará el cursor `Protecci�
 >
 > Si el botón `Protección contra la transferencia` no está presente, significa que la extensión del dominio no requiere un código de transferencia. A continuación, podrá lanzar la transferencia directamente.
 
-![protección activada](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
+![protección activada](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Haga clic en el cursor y confirme en la nueva ventana que desea eliminar la protección. Espere unos minutos a que el estado pase a `Desactivado`{.action}.
 
@@ -80,7 +80,7 @@ Haga clic en el cursor y confirme en la nueva ventana que desea eliminar la prot
 > En efecto, algunos *códigos de transferencia* son gestionados directamente por el *registro* de la extensión del dominio. Un *registro* es una organización que gestiona el conjunto de dominios para una extensión determinada. Por ejemplo, el **AFNIC** gestiona el conjunto de dominios con la extensión "*.fr*". En ese caso, deberá contactar directamente con el *registro*, que gestiona la extensión del dominio, para obtener el *código de transferencia*.
 >
 
-![desactivación de la protección](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+![desactivación de la protección](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -98,7 +98,7 @@ Una vez desbloqueada la protección contra la transferencia, deberá obtener el 
 
 Se abrirá una ventana en la que podrá consultar su código AUTH/INFO (también llamado código de transferencia, contraseña de dominio, AUTH-CODE o EPP-Code).
 
-![Transferencia saliente](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+![Transferencia saliente](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 El nuevo agente registrador solicitará el código para finalizar la transferencia. Puede consultar los detalles en el nuevo agente registrador.
 
