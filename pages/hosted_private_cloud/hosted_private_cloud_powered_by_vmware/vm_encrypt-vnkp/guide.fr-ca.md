@@ -175,7 +175,7 @@ Dans votre interface vSphere, positionnez-vous sur votre `cluster vSAN`{.action}
 Activez le `Chiffrement des données au repos`{.action}, cochez la case `Effacer les données résiduelles`{.action}, choisissez votre `Fournisseur de clés`{.action} et cliquez sur `APPLIQUER`{.action}.
 
 > [!primary]
-> Un avertissement vous informe qu'un problème de performance pourrais subvenir lors de l'activation de ces paramètres, n'en tenez pas compte.
+> Un avertissement vous informe qu'un problème de performance pourrait survenir lors de l'activation de ces paramètres, n'en tenez pas compte.
 >
 
 ![Activate vSAN data at rest encryption 02](images/04-activate-vsan-data-at-rest-encryption-02.png)
