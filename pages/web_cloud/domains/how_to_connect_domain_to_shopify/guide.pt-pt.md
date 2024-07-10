@@ -58,7 +58,7 @@ Siga as etapas em ordem nas seguintes guias:
 >> - Se existir um registo para o subdomínio "www." (exemplo: `www.mydomain.ovh.`), deverá eliminá-lo para que não entre em conflito com o registo CNAME que vai introduzir no etapa 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu nome de domínio apenas com o subdomínio "www." e clique em `Eliminar entrada`{.action}.<br>
 >> - Se não possui um registo "A" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `A`{.action}<br><br>
 >> Deixe o campo **Subdomínio** em branco e insira o endereço IPv4 do Shopify `23.227.38.65` no campo de **Alvo**.
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/field-a.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-a-shopify.png){.thumbnail}<br><br>
 >> Clique em `Seguinte`{.action}, valide o seu registo "A" e passe à etapa 2.
 > **Etapa 2**
 >> **Registo AAAA**<br><br>
@@ -68,7 +68,7 @@ Siga as etapas em ordem nas seguintes guias:
 >> - Se existir um registo para o subdomínio "www." (exemplo: `www.mydomain.ovh.`), deverá eliminá-lo para que não entre em conflito com o registo CNAME que vai introduzir no etapa 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu nome de domínio apenas com o subdomínio "www." e clique em `Eliminar entrada`{.action}.<br>
 >> - Se não possui um registo "AAAA" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `AAAA`{.action}<br><br>
 >> Deixe o campo **Subdomínio** vazio e insira o endereço IPv6 do Shopify `2620:0127:f00f:5::` no campo de **Alvo**.
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/field-aaaa.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-aaaa-shopify.png){.thumbnail}<br><br>
 >> Clique em `Seguinte`{.action}, valide o registo "AAAA" e passe à etapa 3.
 > **Etapa 3**
 >> **Registo TXT**<br><br>
@@ -82,7 +82,7 @@ Siga as etapas em ordem nas seguintes guias:
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www." (exemplo: `mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se não possui um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do seu ecrã e selecione o "Campo de apontamento" `CNAME`{.action}.
 >> Preencha o campo **Subdomínio** com o valor `www` e introduza `shops.myshopify.com.` no campo **Alvo**.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/field-cname-shopify.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-shopify.png){.thumbnail}<br><br>
 >> Clique em `Seguinte`{.action} e valide o seu registo "CNAME".
 
 A zona DNS está agora configurada para fazer a ligação a um alojamento Shopify.
