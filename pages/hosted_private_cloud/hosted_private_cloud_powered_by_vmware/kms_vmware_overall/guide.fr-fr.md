@@ -1,7 +1,7 @@
 ---
 title: 'Intégration d'un KMS pour VMware on OVHcloud'
 excerpt: 'Découvrez comment intégrer un KMS au sein de Hosted Private Cloud VMware on OVHcloud pour sécuriser efficacement vos données sensibles'
-updated: 2023-07-08
+updated: 2023-07-10
 ---
 <style>
 details>summary {
@@ -118,6 +118,8 @@ Une fois votre KMS commandé et activer avec votre Hosted Private Cloud il vous 
 
 Nous utiliserons pour cette option un `Standard Key Provider`{.action}.
 
+![Vnkp Key Provider](images/key_provider.webp){.thumbnail}
+
 ### Comment activer le chiffrement des machines virtuelles avec le KMS d'OVHcloud ?
 
 Une fois le KMS d'OVHcloud commandé, vous avez la possibilité de le configurer pour qu'il puisse fonctionner en accord avec votre Hosted Private Cloud VMware on OVHcloud.
@@ -128,13 +130,19 @@ Si vous avez quelques zones d'ombres sur l'ensemble des étapes à suivre, de la
 
 Nous utiliserons pour cette option un: `Standard Key Provider`{.action}.
 
+![Vnkp Key Provider](images/key_provider.webp){.thumbnail}
+
 ### Option 3 : Avec vNKP (sans OKMS) 
 
-### Créer votre propre KMS avec vNKP au sein de Hosted Private Cloud VMware on OVHcloud
+### Si vous n'avez pas de service de gestion de clé externe et que vous ne voulez pas utiliser celui de OVHcloud (OKMS).
+
+### Comment créer votre propre KMS avec vNKP au sein de Hosted Private Cloud VMware on OVHcloud ?
 
 Si vous ne voulez pas profiter des avantages du service managé de KMS OVHcloud (OKMS) et que vous voulez créer votre propre KMS pour activer le chiffrement de vos données vSphere. Vous pouvez le faire avec vNKP.
 
-Nous utiliserons pour cette option un: `Native Key Provider`{.action}.
+Vous pouvez utiliser l'option native de vSphere, vNKP, en ajoutant un fournisseur: `Native Key Provider`{.action}.
+
+![Vnkp Key Provider](images/key_provider.webp){.thumbnail}
 
 Ce guide vous détaille comment le faire: [HPC - Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp).
 
