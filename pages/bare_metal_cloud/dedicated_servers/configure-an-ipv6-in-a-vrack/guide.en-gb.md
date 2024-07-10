@@ -293,15 +293,12 @@ Go to `Network > vRack private network`{.action} section add select your vRack y
 
 You have these kind of informations
 
-<img src="/images/101.png" alt="mange my vrack 01"/>
+<img src="/images/221.png" alt="mange my vrack 02"/>
 <br/>
 
-<img src="/images/102.png" alt="mange my vrack 02"/>
-<br/>
+On the right you have a IP section and you can add a new subnet clicking `Add sudnet`{.action} button
 
-On the right you have a IP section and you can add a new subnet clicking `Add sud network`{.action} button
-
-<img src="/images/103.png" alt="vrack select"/>
+<img src="/images/304.png" alt="vrack select"/>
 <br/>
 
 In this way you have this modal to entrer your new address
