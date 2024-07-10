@@ -296,7 +296,7 @@ You have these kind of informations
 <img src="/images/221.png" alt="mange my vrack 02"/>
 <br/>
 
-On the right you have a IP section and you can add a new subnet clicking `Add sudnet`{.action} button
+On the right you have a IP section and you can add a new subnet clicking `Add subnet`{.action} button
 
 <img src="/images/304.png" alt="vrack select"/>
 <br/>
