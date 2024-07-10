@@ -88,7 +88,7 @@ You can order your new addtional IPv6 block <a href="https://www.ovh.com/manager
 <br/><img src="/images/299.png" alt="check status 02"/>
 
 <br/> This will display your Additional IPv6. This confirms that your request has been validated.
-<br/><img src="/images/302.png" alt="check status 03"/>
+<br/><img src="/images/710.png" alt="check status 03"/>
 
 <br/> Now you can start configuring it by adding it to your vRack.
 <br/><img src="/images/303.png" alt="check status 04"/>
