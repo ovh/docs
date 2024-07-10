@@ -92,6 +92,7 @@ You can order your new addtional IPv6 block <a href="https://www.ovh.com/manager
 
 <br/> Now you can start configuring it by adding it to your vRack.
 <br/><img src="/images/303.png" alt="check status 04"/>
+<br/><img src="/images/600.png" alt="check status 05"/>
 
 </blockquote>
 </details>
