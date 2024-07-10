@@ -39,7 +39,7 @@ Quando o endereço **sender@otherdomain.ovh** envia um e-mail para **contact@myd
 - **(1)** consultar a zona DNS do nome de domínio **mydomain.ovh** e ler os registos **MX**.
 - **(2)** reencaminhar o e-mail para o URL do registo **MX** lido.
 
-![email](/pages/assets/schemas/dns/mx-dns-resolution.png){.thumbnail}
+![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 O e-mail será enviado para o destino **mx0.mail.ovh.net**, precedido do valor **0**. Esse valor é chamado de prioridade. O valor mais baixo é inquirido em primeiro lugar e o mais alto em último. Isto significa que vários registos irão compensar a falta de resposta do registo MX com a prioridade mais baixa.
 

@@ -94,7 +94,7 @@ Il principio della **funzione trituratrice** è quello di generare una **firma**
 
 Nel seguente diagramma, potete constatare che l'uscita (Output) sarà sempre composta da 32 caratteri utilizzando un algoritmo di hash MD5 (**M**essage **D**igest **5**), mentre il testo di entrata (Input) può variare in base alla dimensione. La minima variazione di carattere nel dato d'ingresso cambia completamente la macinatura in uscita, rendendo la firma in uscita imprevedibile e non falsificabile. Nell'esempio che segue, il valore di input (Input) è passato nell'algoritmo di macinazione MD5 e presenta in output (Output) il suo valore di macinazione.
 
-![hash](images/dns-dkim-hash01.png){.thumbnail}
+![hash](/pages/web_cloud/domains/dns_zone_dkim//pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dns-dkim-hash01.png){.thumbnail}
 
 La funzione di scatto è utile per verificare l'integrità di un messaggio. Infatti, due dati apparentemente molto simili presentano un valore di macinazione completamente diverso con una lunghezza di caratteri uguale in uscita, qualunque sia la lunghezza d'ingresso.
 
@@ -108,11 +108,11 @@ Esistono due utilizzi della cifratura asimmetrica:
 
 - **L'input viene cifrato con la chiave pubblica e decifrato da chi possiede la chiave privata**. Ad esempio, vuoi che un terzo ti trasmetta dati in modo sicuro. Trasmetti la tua chiave pubblica senza preoccuparti che qualcuno la recuperi, questo terzo cripterà i suoi dati con la tua chiave pubblica. I dati numerici potranno essere decifrati solo dal proprietario della chiave privata.
 
-![hash](images/dns-dkim-crypto01.png){.thumbnail}
+![hash](/pages/web_cloud/domains/dns_zone_dkim//pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dns-dkim-crypto01.png){.thumbnail}
 
 - **Il dato d'ingresso è cifrato dal proprietario della chiave privata e decifrato dalla chiave pubblica**. Questo utilizzo si applica per autenticare uno scambio di dati. Ad esempio, i vostri destinatari desiderano assicurarsi che siate l'autore del messaggio che trasmettete loro. In questo caso, cripterai il tuo messaggio con la tua chiave privata. Questo messaggio potrà essere decifrato solo tramite la chiave pubblica che avrai trasmesso a tutti, garantendo così ai tuoi destinatari l'autenticità del tuo messaggio. Infatti, un messaggio decifrato dalla chiave pubblica può provenire soltanto dal proprietario della chiave privata.
 
-![hash](images/dns-dkim-crypto02.png){.thumbnail}
+![hash](/pages/web_cloud/domains/dns_zone_dkim//pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dns-dkim-crypto02.png){.thumbnail}
 
 #### Come vengono utilizzati la classificazione e la crittografia asimmetrica per il DKIM? <a name="encrypt-and-hash"></a>
 
@@ -141,11 +141,11 @@ Il valore del selettore è `s=ovhex123456-selector1`.
 
 Quando invii un'email da **contact@mydomain.ovh**, una firma cifrata con una chiave privata (private key) viene aggiunta nell'intestazione dell'email.
 
-![email](images/dns-dkim-send.gif){.thumbnail}
+![email](/pages/assets/schemas/emails/dns-dkim-send.gif){.thumbnail}
 
 Il destinatario **recipient@otherdomain.ovh** potrà decifrare questa firma con la chiave pubblica (Public key) visibile nella zona DNS di **mydomain.ovh**. La firma viene creata a partire dal contenuto dell'email inviata. Ciò significa che se l'email viene modificata durante il transito, la firma non corrisponde al contenuto e causerà quindi il fallimento della verifica DKIM sul server di destinazione.
 
-![email](images/dns-dkim-receive.gif){.thumbnail}
+![email](/pages/assets/schemas/emails/dns-dkim-receive.gif){.thumbnail}
 
 ### Configurare il DKIM automaticamente per un servizio di posta Exchange o Email Pro OVHcloud <a name="auto-dkim"></a>
 
@@ -166,7 +166,7 @@ Clicca sulla scheda qui sotto corrispondente alla tua offerta.
 >>
 >> A destra del dominio in questione, la casellina `DKIM` è grigia.
 >>
->> ![email](images/dkim-auto01.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail}
 >>
 > **Email Pro**
 >>
@@ -174,15 +174,15 @@ Clicca sulla scheda qui sotto corrispondente alla tua offerta.
 >>
 >> A destra del dominio in questione, la casellina `DKIM` è grigia.
 >>
->> ![email](images/dkim-auto01.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail}
 
 Per attivare il DKIM, clicca sulla casellina `DKIM` grigia e poi su `Conferma`{.action} dalla finestra di attivazione che appare.
 
-![email](images/dkim-auto02.png){.thumbnail}
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail}
 
 L'attivazione automatica del DKIM dura tra 30 minuti e 24 ore al massimo. Per verificare che la tua DKIM sia funzionante, è sufficiente tornare alla scheda `Domini associati`{.action} della tua piattaforma e assicurarti che la casellina `DKIM` sia diventata verde.
 
-![email](images/dkim-auto03.png){.thumbnail}
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail}
 
 Dopo le 24 ore, se la tua casellina `DKIM` è rossa, consulta la sezione ["Perché il DKIM non funziona e appare in rosso nello Spazio Cliente?"](#reddkim) di questa guida.
 
@@ -197,17 +197,17 @@ Clicca sulla scheda qui sotto corrispondente alla tua offerta.
 >>
 >> Dallo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Microsoft`{.action} e poi su `Exchange`{.action}. Infine clicca sul nome del servizio Exchange interessato. Di default, il nome della tua piattaforma corrisponde al suo riferimento o sarà visibile con il nome che le hai assegnato (vedi l'immagine qui sotto).
 >>
->> ![email](images/dns-dkim-platform-exchange.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/dns-dkim-platform-exchange.png){.thumbnail}
 >>
 > **Email Pro**
 >>
 >> Dallo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Email Pro`{.action} e poi sul nome del servizio Email Pro interessato. Di default, il nome della tua piattaforma corrisponde al suo riferimento o sarà visibile con il nome che le hai assegnato (vedi l'immagine qui sotto).
 >>
->> ![email](images/dns-dkim-platform-emailpro.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/email-pro/general-information/dns-dkim-platform-emailpro.png){.thumbnail}
 
 Assicurati anche che il dominio da utilizzare per le tue email sia attivo nella sezione `Domini associati`{.action}.
 
-![email](images/dns-dkim-domain.png){.thumbnail}
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dns-dkim-domain.png){.thumbnail}
 
 #### Configurazione completa del DKIM <a name="firststep"></a>
 
@@ -222,15 +222,15 @@ Clicca sulla scheda corrispondente alla tua offerta:
 > [!tabs]
 > **Email (MX Plan)**
 >>
->> ![email](images/dns-dkim-api01.png){.thumbnail}
+>> ![email](/pages/assets/screens/api/get-email-domain-domain-dkim.png){.thumbnail}
 >>
 > **Exchange**
 >>
->> ![email](images/dns-dkim-api012.png){.thumbnail}
+>> ![email](/pages/assets/screens/api/get-email-exchange-organizationname-service-exchangeservice-domain-domainname-dkim.png){.thumbnail}
 >>
 > **Email Pro**
 >>
->> ![email](images/dns-dkim-api013.png){.thumbnail}
+>> ![email](/pages/assets/screens/api/get-email-pro-service-domain-domainname-dkim.png){.thumbnail}
 >>
 
 ##### **Per Email (MX Plan)** <a name="confemail"></a>
@@ -354,7 +354,7 @@ Segui i **5 step** cliccando su ognuna delle 5 schede qui sotto:
 >> - `ovhmo3456789-selector1._domainkey.mydomain.ovh` corrisponde al sottodominio del record CNAME. Si conserva solo `ovhmo3456789-selector1._domainkey` perché il `.mydomain.ovh` è già precompilato. <br>
 >> - `ovhmo3456789-selector1._domainkey.123403.aj.dkim.mail.ovh.net.` corrisponde alla destinazione del record. È necessario mantenere il punto alla fine per punteggiare il valore.<br>
 >>
->> ![email](images/dns-dkim-api022.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api022.png){.thumbnail}
 >>
 >> Una volta inseriti i valori, clicca su `Seguente`{.action} e poi su `Conferma`{.action}.
 >>
@@ -521,7 +521,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >> - `customerRecord: "ovhex123456-selector1._domainkey.mydomain.ovh"` corrisponde al sottodominio del record CNAME. Si tiene `ovhex123456-selector1._domainkey` perché il `.mydomain.ovh` è già precompilato. <br>
 >> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corrisponde al bersaglio della registrazione. Aggiungiamo un punto alla fine per mettere a segno il valore. Questo da `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
 >>
->> ![email](images/dns-dkim-api02.png){.thumbnail} <br>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api02.png){.thumbnail} <br>
 >> 
 >> Una volta inseriti i valori, clicca su `Seguente`{.action} e poi `Conferma`{.action}.
 >>
@@ -675,7 +675,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >> - `customerRecord: "ovhemp123456-selector1._domainkey.mydomain.ovh"` corrisponde al sottodominio del record CNAME. Si tiene `ovhemp123456-selector1._domainkey` perché il `.mydomain.ovh`è già precompilato. <br>
 >> - `targetRecord: "ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corrisponde al bersaglio della registrazione. Aggiungiamo un punto alla fine per mettere a segno il valore. Questo da `ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
 >>
->> ![email](images/dns-dkim-api02.png){.thumbnail} <br>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api02.png){.thumbnail} <br>
 >> 
 >> Una volta inseriti i valori, clicca su `Seguente`{.action} e poi `Conferma`{.action}.<br>
 >>
@@ -944,7 +944,7 @@ Clicca sulla scheda `Zona DNS`{.action} e poi su `Aggiungi un record`{.action}. 
 
 Questo record è chiamato DKIM sull'interfaccia ma in realtà è un record TXT in uscita. Il record DKIM ha lo scopo di facilitare la lettura dei diversi elementi di configurazione del DKIM, presentando questi elementi sotto forma di caselle indipendenti.
 
-![email](images/dns-dkim-add.png){.thumbnail}
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-add.png){.thumbnail}
 
 - **Sottodominio**: inserisci il nome del selettore DKIM e aggiungi `._domainkey` in suffisso, il tuo dominio si aggiunge automaticamente alla fine.
 
@@ -1086,13 +1086,13 @@ Clicca sulla scheda qui sotto corrispondente alla tua offerta per verificare lo 
 >>
 >> Dal tuo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Microsoft`{.action} e poi su `Exchange`{.action}. Infine clicca sul nome del servizio Exchange interessato.<br><br> Nella sezione `Domini associati`{.action}, verifica il colore dell’icona `DKIM` a destra del dominio interessato (vedi l’immagine qui sotto).
 >>
->> ![email](images/red-dkim.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/red-dkim.png){.thumbnail}
 >>
 > **Email Pro**
 >>
 >> Dal tuo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Email Pro`{.action} e poi sul nome del servizio Email Pro in questione.<br><br> Nella sezione `Domini associati`{.action}, verifica il colore dell’icona `DKIM` a destra del nome di dominio interessato (vedi l’immagine qui sotto).
 >>
->> ![email](images/red-dkim.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/red-dkim.png){.thumbnail}
 
 Ecco i 4 stati che hanno come risultato l’icona DKIM in rosso nel tuo Spazio Cliente, clicca sulla scheda corrispondente al tuo codice di errore:
 
@@ -1118,7 +1118,7 @@ Ecco i 4 stati che hanno come risultato l’icona DKIM in rosso nel tuo Spazio C
 >> Il valore del record CNAME necessario per la configurazione del DKIM non è stato immesso correttamente. È necessario configurare correttamente la zona DNS del dominio associato.
 >> Per configurare la zona DNS, recupera i valori del record CNAME che appare :
 >>
->> ![email](images/dkim-503.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-503.png){.thumbnail}
 >>
 >> Se prendiamo l'esempio dell'acquisizione di cui sopra, il dominio è "**mydomain.ovh**" ed è richiesto di configurare il selettore "**2**". È necessario aggiungere un record CNAME con sottodominio `ovhex1234567-selector2.domainkey.mydomain.ovh` e destinazione `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br>
 >> Una volta configurata la zona DNS, attendi il tempo di propagazione della stessa (massimo 24 ore)
@@ -1129,7 +1129,7 @@ Ecco i 4 stati che hanno come risultato l’icona DKIM in rosso nel tuo Spazio C
 >> Il record CNAME necessario per la configurazione del DKIM è mancante. È necessario configurare la zona DNS del dominio associato.
 >> Per configurare la zona DNS, recupera i valori del record CNAME che appare :
 >>
->> ![email](images/dkim-503.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-503.png){.thumbnail}
 >>
 >> Se prendiamo l'esempio dell'acquisizione di cui sopra, il dominio è "**mydomain.ovh**" ed è richiesto di configurare il selettore "**2**". A questo punto è necessario aggiungere un record CNAME con sottodominio `ovhex1234567-selector2.domainkey.mydomain.ovh` e destinazione `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br>
 >> Una volta configurata la zona DNS, attendi il tempo di propagazione della stessa (massimo 24 ore)
