@@ -65,7 +65,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 > **Schritt 1**
 >> **A-Eintrag**<br><br>
 >> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü, und wählen Sie `A`.<br> aus, um die vorhandenen A-Einträge zu identifizieren
->> ![dnszone](images/filter-a.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrer Domain ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
 >> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht in Konflikt mit dem CNAME-Eintrag steht, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} Tabellenzeile zu Ihrer Domain mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
@@ -76,7 +76,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 > **Schritt 2**
 >> **AAAA-Eintrag**<br><br>
 >> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü, und wählen Sie `AAAA`.<br> aus, um die vorhandenen AAAA-Einträge zu identifizieren.
->> ![dnszone](images/filter-aaaa.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrer Domain ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), löschen Sie diesen ebenfalls, damit er nicht in Konflikt mit dem CNAME-Eintrag steht, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile Ihrer Domain mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
@@ -84,7 +84,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 > **Schritt 3**
 >> **TXT-Eintrag**<br><br>
 >> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü, und wählen Sie `TXT`.<br> aus, um vorhandene TXT-Einträge zu identifizieren.
->> ![dnszone](images/filter-txt.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Sind für den Domainnamen (Beispiel: `mydomain.ovh.`) und für dessen Subdomain "www" (Beispiel: `www.mydomain.ovh.`) TXT-Einträge vorhanden, müssen diese gelöscht werden, damit sie nicht in Konflikt mit dem CNAME-Eintrag stehen, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in den Tabellenzeile für den Domainnamen und der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
 >> - Sie müssen einen Eintrag vom Typ TXT erstellen. Klicken Sie auf den Button `Einen Eintrag hinzufügen`{.action} oben rechts und wählen Sie `TXT`{.action}.
@@ -94,7 +94,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 > **Schritt 4**
 >> **CNAME-Eintrag**<br><br>
 >> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü und wählen Sie `CNAME`.<br>
->> ![dnszone](images/filter-cname.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile der Subdomain "www" (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
 >> - Wenn Sie keinen existierenden CNAME-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} oben rechts und wählen Sie `CNAME`{.action}.

@@ -66,7 +66,7 @@ Siga as etapas em ordem nas seguintes guias:
 > **Etapa 1**
 >> **Registo A**<br><br>
 >> Para identificar os registos "A" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `A`.<br>
->>![dnszone](images/filter-a.png){.thumbnail}
+>>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
 >> - Clique no botão `...`{.action} à direita da linha da tabela que corresponde ao seu nome de domínio apenas, sem subdomínio (exemplo: `mydomain.ovh.`), e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se estiver presente um registo para o subdomínio "www" (exemplo: `www.mydomain.ovh.`), deverá eliminá-lo para que não entre em conflito com o registo CNAME que irá introduzir no passo 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio apenas com o subdomínio "www" e depois clique em `Eliminar entrada`{.action}.<br>
@@ -77,7 +77,7 @@ Siga as etapas em ordem nas seguintes guias:
 > **Etapa 2**
 >> **Registo AAAA**<br><br>
 >> Para identificar os registos "AAAA" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `AAAA`.<br>
->>![dnszone](images/filter-aaaa.png){.thumbnail}
+>>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Clique no botão `...`{.action} à direita da linha da tabela que corresponde ao seu nome de domínio apenas, sem subdomínio (exemplo: `mydomain.ovh.`), e depois clique em `Eliminar entrada`{.action}.<br>
 >> - Se estiver presente um registo para o subdomínio "www" (exemplo: `www.mydomain.ovh.`), elimine-o também para que não entre em conflito com o registo CNAME que vai introduzir no passo 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio com o subdomínio "www" e depois clique em `Eliminar entrada`{.action}.<br>
@@ -85,7 +85,7 @@ Siga as etapas em ordem nas seguintes guias:
 > **Etapa 3**
 >> **Registo TXT**<br><br>
 >> Para identificar os registos "TXT" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `TXT`.<br>
->>![dnszone](images/filter-txt.png){.thumbnail}
+>>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Se existirem registos "TXT" para o nome de domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www" (exemplo: `www.mydomain.ovh.`), deverá eliminá-los para que não entrem em conflito com o registo CNAME que irá introduzir no passo 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio apenas com o subdomínio "www" e depois clique em `Eliminar entrada`{.action}.<br>
 >> - É necessário criar um registo do tipo "TXT". Clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo" apontador "TXT" {.action}.
@@ -95,7 +95,7 @@ Siga as etapas em ordem nas seguintes guias:
 > **Etapa 4**
 >> **Registo CNAME**<br><br>
 >> Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `CNAME`.<br>
->>![dnszone](images/filter-cname.png){.thumbnail}
+>>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www.» (exemplo: `mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se não tiver um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Registo de apontamento" CNAME`{.action}.
