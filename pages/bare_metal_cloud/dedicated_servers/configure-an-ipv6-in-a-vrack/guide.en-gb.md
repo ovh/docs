@@ -19,8 +19,8 @@ details[open]>summary::before {
 </style>
 
 > [!warning]
-> Usage of this feature is currently in Alpha phase.
-> This guide may be incomplete and will be extended during this Alpha phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Network services.
+> Usage of this feature is currently in Beta phase.
+> This guide may be incomplete and will be extended during this Beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Network services.
 
 ## Objective
 
