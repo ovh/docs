@@ -90,7 +90,7 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >> - Si existen registros "TXT" para el dominio solo (p. ej.: `mydomain.ovh.`) y para su subdominio en "www" (p. ej.: `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con el registro CNAME que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su dominio solo con el subdominio "www" y seleccione "`Eliminar el registro`{.action}.<br>
 >> - Debe crear un registro de tipo TXT. Haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de la pantalla y seleccione el "Registro de direccionamiento" `TXT`{.action}.
 >> Complete el campo **Subdominio** con el valor `_webflow` e introduzca en el campo **Destino** el valor presente en la sección `Site settings > Publishing tab > Production`{.action} de su cuenta Webflow, de tipo `one-time-verification=XXXXXXXX`. Sustituya `XXXXXXXX` por el valor de su cuenta de Webflow.<br>
->>![dnszone](images/field-txt.png){.thumbnail}<br><br>
+>>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-txt-webflow.png){.thumbnail}<br><br>
 >> Haga clic en `Siguiente`{.action} para validar su registro TXT y continúe en el paso 4.
 > **Paso 4**
 >> **Registro CNAME**<br><br>
@@ -100,7 +100,7 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente a su subdominio en "www." (por ejemplo: `mydomain.ovh.`) y seleccione `Modificar el registro`{.action}.<br>
 >> - Si no tiene un registro "CNAME" existente, haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de su pantalla y seleccione el "Registro de direccionamiento" `CNAME`{.action}.
 >> Complete el campo **Subdominio** con el valor `www` e introduzca `proxy-ssl.webflow.com` en el campo **Destino**.<br>
->>![dnszone](images/field-cname.png){.thumbnail}<br><br>
+>>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-webflow.png){.thumbnail}<br><br>
 >> Haga clic en `Siguiente`{.action} para validar su registro CNAME.
 
 La zona DNS ya está configurada para asociarse a un alojamiento Webflow.

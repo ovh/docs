@@ -90,7 +90,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> - Jeśli dla samej domeny istnieją rekordy "TXT" (na przykład: `mydomain.ovh.`), a dla jej subdomeny na "www" (na przykład: `www.mydomain.ovh.`), musisz je usunąć, aby nie kolidowały z rekordem CNAME, który wprowadzisz w etapie 4. Kliknij przycisk`...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej domeny wraz z subdomeną "www", a następnie kliknij `Usuń rekord`{.action}.<br>
 >> - Należy utworzyć rekord typu "TXT". Kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pola rozszerzone" `TXT`{.action}.
 >> Uzupełnij pole **Subdomena** o wartość`_webflow` i wprowadź w polu **Obiekt docelowy** wartość z sekcji `Site settings > Publishing tab > Production`{.action} Twojego konta Webflow, typu `one-time-verification=XXXXXXXX`. Zamień `XXXXXXXX` na wartość na koncie Webflow.<br>
->> ![dnszone](images/field-txt.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-txt-webflow.png){.thumbnail}<br><br>
 >> Kliknij na `Dalej`{.action}, aby potwierdzić rejestrację "TXT" i przejść do etapu 4.
 > **Etap 4**
 >> **Rekord CNAME**<br><br>
@@ -100,7 +100,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej subdomenie '.' (przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.<br>
 >> - Jeśli nie posiadasz istniejącego rekordu "CNAME", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wskazania" `CNAME`{.action}.
 >> Uzupełnij pole **Subdomena** wartością `www` i wpisz `proxy-ssl.webflow.com` w polu **Adres**.<br>
->> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-webflow.png){.thumbnail}<br><br>
 >> Kliknij na `Dalej`{.action}, aby potwierdzić rejestrację "CNAME".
 
 Strefa DNS jest teraz skonfigurowana do łączenia z hostingiem Webflow.

@@ -89,7 +89,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> - Sind für den Domainnamen (Beispiel: `mydomain.ovh.`) und für dessen Subdomain "www" (Beispiel: `www.mydomain.ovh.`) TXT-Einträge vorhanden, müssen diese gelöscht werden, damit sie nicht in Konflikt mit dem CNAME-Eintrag stehen, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in den Tabellenzeile für den Domainnamen und der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
 >> - Sie müssen einen Eintrag vom Typ TXT erstellen. Klicken Sie auf den Button `Einen Eintrag hinzufügen`{.action} oben rechts und wählen Sie `TXT`{.action}.
 >> Füllen Sie das Feld **Subdomain** mit dem Wert `_webflow` aus, und geben Sie den Wert im Feld **Ziel** im Bereich `Site settings > Publishing tab > Production`{.action} Ihres Webflow Accounts vom Typ `one-time-verification=XXXXXXXX` ein. Ersetzen Sie `XXXXXXXX` durch den Wert in Ihrem Webflow-Konto.<br>
->> ![dnszone](images/field-txt.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-txt-webflow.png){.thumbnail}<br><br>
 >> Klicken Sie auf `Weiter`{.action}, um Ihren TXT-Eintrag zu bestätigen und mit Schritt 4 fortzufahren.
 > **Schritt 4**
 >> **CNAME-Eintrag**<br><br>
@@ -99,7 +99,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile der Subdomain "www" (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
 >> - Wenn Sie keinen existierenden CNAME-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} oben rechts und wählen Sie `CNAME`{.action}.
 >> Geben Sie im Feld **Subdomain** `www` ein und `proxy-ssl.webflow.com` im Feld **Ziel**.<br>
->> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-webflow.png){.thumbnail}<br><br>
 >> Klicken Sie auf `Weiter`{.action}, um Ihren CNAME-Eintrag zu bestätigen.
 
 Die DNS-Zone ist nun zur Verwendung mit einem Webflow Hosting konfiguriert.

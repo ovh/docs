@@ -90,7 +90,7 @@ Siga as etapas em ordem nas seguintes guias:
 >> - Se existirem registos "TXT" para o nome de domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www" (exemplo: `www.mydomain.ovh.`), deverá eliminá-los para que não entrem em conflito com o registo CNAME que irá introduzir no passo 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio apenas com o subdomínio "www" e depois clique em `Eliminar entrada`{.action}.<br>
 >> - É necessário criar um registo do tipo "TXT". Clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo" apontador "TXT" {.action}.
 >> Preencha o campo **Subdomínio** com o valor `_webflow` e introduza no campo **Alvo** o valor presente na secção `Site settings > Publishing tab > Production`{.action} da sua conta Webflow, de tipo `one-time-verification=XXXXXXXX`. Substitua `XXXXXXXX` pelo valor presente na sua conta Webflow.<br>
->>![dnszone](images/field-txt.png){.thumbnail}<br><br>
+>>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-txt-webflow.png){.thumbnail}<br><br>
 >> Clique em `Seguinte`{.action} para validar o seu registo "TXT" e passe à etapa 4.
 > **Etapa 4**
 >> **Registo CNAME**<br><br>
@@ -100,7 +100,7 @@ Siga as etapas em ordem nas seguintes guias:
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www.» (exemplo: `mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se não tiver um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Registo de apontamento" CNAME`{.action}.
 >> Preencha o campo **Subdomínio** com o valor `www` e introduza `proxy-ssl.webflow.com` no campo **Alvo**.<br>
->>![dnszone](images/field-cname.png){.thumbnail}<br><br>
+>>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-webflow.png){.thumbnail}<br><br>
 >> Clique em `Seguinte`{.action} para validar o seu registo "CNAME".
 
 A zona DNS está configurada para fazer a ligação a um alojamento Webflow.

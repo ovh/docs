@@ -85,7 +85,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www » (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Vous devez créer un enregistrement de type « TXT ». Cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `TXT`{.action}.
 >> Complétez le champ **Sous-domaine** avec la valeur `_webflow` et saisissez dans le champ **Cible** la valeur présente dans la section `Site settings > Publishing tab > Production`{.action} de votre compte Webflow, de type `one-time-verification=XXXXXXXX`. Remplacez `XXXXXXXX` par la valeur présente dans votre compte Webflow.<br>
->> ![dnszone](images/field-txt.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-txt-webflow.png){.thumbnail}<br><br>
 >> Cliquez sur `Suivant`{.action} pour valider votre enregistrement « TXT » et passez à l'étape 4.
 > **Etape 4**
 >> **Enregistrement CNAME**<br><br>
@@ -95,7 +95,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `CNAME`{.action}.
 >> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez `proxy-ssl.webflow.com` dans le champ **Cible**.<br>
->> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-webflow.png){.thumbnail}<br><br>
 >> Cliquez sur `Suivant`{.action} pour valider votre enregistrement « CNAME ».
 
 La zone DNS est maintenant configurée pour faire le lien avec un hébergement Webflow.
