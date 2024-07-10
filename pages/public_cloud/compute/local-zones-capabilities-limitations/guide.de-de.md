@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funktionen, Kapazitäten und Einschränkungen
 excerpt: Informieren Sie sich über die aktuellen Funktionen, Kapazitäten und Einschränkungen von Local Zones Instanzen
-updated: 2024-04-08
+updated: 2024-07-10
 ---
 
 > [!primary]
@@ -34,6 +34,7 @@ Weitere Informationen finden Sie auf unserer [Seite für Local Zones](https://ww
 | Volume-Snapshots | Nein |
 | Volume-Backups | Nein |
 | Object Storage | Nein |
+| Windows-Images | Nein |
 
 ## Kapazitäten und Einschränkungen
 
