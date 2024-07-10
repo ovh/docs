@@ -124,14 +124,14 @@ Go to `Network > vRack private network`{.action} section add select your vRack y
 
 You have these kind of informations
 
-<img src="/images/102.png" alt="mange my vrack 02"/>
+<img src="/images/221.png" alt="mange my vrack 02"/>
 <br/>
 
 On the left side possible options are listed (eligible services to be configured).
 
 On the right you see what is already configured with your vRack.   
 
-<img src="/images/103.png" alt="vrack select"/>
+<img src="/images/106.png" alt="vrack select"/>
 <br/>
 
 You can also activate/deactivate SLAAC option for the first /64 of your block (this one is always bridged) at any time using this radio button.
