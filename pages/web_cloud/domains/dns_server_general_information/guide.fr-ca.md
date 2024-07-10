@@ -22,7 +22,7 @@ Ce réseau DNS permet de faciliter, pour les utilisateurs, l'accès à Internet 
 
 Ils permettent notamment l'utilisation des [noms de domaine](/links/web/domains) pour accéder à votre site web préféré sans être obligé de retenir l'adresse IP du serveur où est hébergé ce site web.
 
-![DNS resolution](/pages/assets/schemas/domains/dns-resolution.png){.thumbnail}
+![DNS resolution](/pages/assets/schemas/dns/dns-resolution.png){.thumbnail}
 
 Il existe 4 types de serveurs DNS.
 
@@ -57,7 +57,7 @@ Une zone DNS contient des informations techniques, appelées *enregistrements DN
 
 De ce fait, ce sont les **serveurs DNS (Authoritative)** qui doivent être déclarés (auprès du bureau d'enregistrement d'un nom de domaine) pour utiliser la zone DNS qu'ils hébergent. 
 
-![DNS](/pages/assets/schemas/domains/dns-server.png){.thumbnail}
+![DNS](/pages/assets/schemas/dns/dns-server.png){.thumbnail}
 
 ### Fonctionnement d'un serveur DNS (Authoritative) avec un nom de domaine
 

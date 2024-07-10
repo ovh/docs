@@ -40,7 +40,7 @@ Von der Adresse **sender@otherdomain.ovh** wird eine E-Mail an **contact@mydomai
 - **(1)** Die DNS-Zone von **mydomain.ovh** auf deren **MX**-Einträge abfragen.
 - **(2)** Die E-Mail an die URL des gelesenen **MX**-Eintrags weiterleiten.
 
-![E-Mail](/pages/assets/schemas/dns/mx-dns-resolution.png){.thumbnail}
+![E-Mail](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 Die E-Mail wird an das Ziel **mx0.mail.ovh.net** gesendet, dem der Wert **0** vorangestellt ist. Dieser Wert wird als *Priorität* bezeichnet. Der niedrigste Wert wird zuerst abgefragt, der höchste zuletzt. Dies bedeutet, dass das Vorhandensein mehrerer Datensätze eine ausbleibende Antwort des MX-Datensatzes mit der niedrigsten Priorität ausgleicht.
 

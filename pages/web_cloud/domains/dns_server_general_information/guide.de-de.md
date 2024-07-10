@@ -26,7 +26,7 @@ Dieses DNS-Netzwerk erleichtert den Benutzern den Zugriff auf das Internet und d
 
 Sie ermöglichen insbesondere die Verwendung von [Domainnamen](/links/web/domains), um auf Websites zuzugreifen, ohne dass Sie sich die IP-Adresse des Servers merken müssen, auf dem diese Website gehostet ist.
 
-![DNS-Auflösung](/pages/assets/schemas/domains/dns-resolution.png){.thumbnail}
+![DNS-Auflösung](/pages/assets/schemas/dns/dns-resolution.png){.thumbnail}
 
 Es gibt 4 Arten von DNS-Servern.
 
@@ -61,7 +61,7 @@ Eine DNS-Zone enthält technische Informationen, die als *DNS-Einträge* bezeich
 
 Aus diesem Grund müssen **DNS-Server (Authoritative)** bei der zuständigen Domainnamen-Registry angemeldet werden, um die von ihnen gehostete DNS-Zone zu verwenden.
 
-![DNS](/pages/assets/schemas/domains/dns-server.png){.thumbnail}
+![DNS](/pages/assets/schemas/dns/dns-server.png){.thumbnail}
 
 ### Funktionsweise eines DNS-Servers (Authoritative) mit einem Domainnamen
 
