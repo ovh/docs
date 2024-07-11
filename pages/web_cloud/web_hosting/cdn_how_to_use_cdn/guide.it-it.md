@@ -98,7 +98,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 Dopo aver scelto le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-option-settings.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-option-settings.png){.thumbnail}
 
 ##### **Crea una regola di inserimento in cache** <a name="cacherules"></a>
 
@@ -106,7 +106,7 @@ Per aggiungere una regola di cache su uno degli elementi del tuo sito, vai alla 
 
 Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-create-cache-rule.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-create-cache-rule.png){.thumbnail}
 
 - **Regola**: Assegna un nome alla tua regola.
 
@@ -120,7 +120,7 @@ Una volta effettuate le scelte, clicca sul pulsante `Crea la regola`{.action}.
 
 Le regole figurano in un elenco. Per modificare una regola, clicca sui tre puntini `...`{.action} in corrispondenza della regola in questione e seleziona `Modifica la regola`{.action}. o eliminarla cliccando su `Elimina la regola`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-cache-rules.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-cache-rules.png){.thumbnail}
 
 Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
 
@@ -139,7 +139,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 	Una volta attivata la funzione, clicca su `Modifica l'elenco delle risorse esterne`{.action} per aggiungere i domini autorizzati a condividere le tue risorse.
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/security-cors.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-cors.png){.thumbnail}
 
 	Una volta completata la lista, clicca su `Conferma`{.action}.
 
@@ -151,13 +151,13 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 	Una volta attivata la funzione, clicca sul menu a tendina per scegliere tra `Reindirizzamento permanente (301)` o `Reindirizzamento temporaneo (302)`.
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/security-https-redirect.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-https-redirect.png){.thumbnail}
 
 - **HTTP Strict Transport Security (HSTS)**: Imposta l'accesso al tuo sito in HTTPS. In questo modo la tua soluzione Web è protetta contro gli attacchi di declassamento (o attacchi di ripiego).
 
 	Una volta attivata la funzione, determina la durata di vita durante la quale il browser applicherà la funzione HSTS sul tuo sito Web. 
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/security-hsts.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-hsts.png){.thumbnail}
 
 > [!primary]
 > 
@@ -217,7 +217,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 	Una lista si forma nel riquadro inferiore, con tutti i link che hai elencato, potrai eliminare quello che preferisci selezionandolo e poi cliccando su `Rimuovi`{.action}.
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-prewarm.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-prewarm.png){.thumbnail}
 
 - **Cache rule**: Crea fino a 100 regole. che definiscono la frequenza di aggiornamento della cache per alcune risorse specifiche del tuo sito. Prosegui nella lettura di questa guida [nella fase](#cacherulesadv) successiva per maggiori informazioni.
 
@@ -229,7 +229,7 @@ Per aggiungere una regola di cache su uno degli elementi del tuo sito, vai alla 
 
 Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-create-cache-rule.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-create-cache-rule.png){.thumbnail}
 
 * **Regola**: Assegna un nome alla tua regola.
 * **Tipo di risorsa**: Scegli tra le seguenti opzioni:
@@ -245,7 +245,7 @@ Una volta effettuate le scelte, clicca sul pulsante `Crea la regola`{.action}.
 
 Le regole figurano in un elenco. Per modificare una regola, clicca sui tre puntini `...`{.action} in corrispondenza della regola in questione e seleziona `Modifica la regola`{.action}. Per eliminarla, clicca su `Elimina la regola`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-cache-rules.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-cache-rules.png){.thumbnail}
 
 Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
 
@@ -253,7 +253,7 @@ Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la 
 
 Nella scheda `Multisito`{.action} del tuo hosting, sotto la tabella, puoi visualizzare le statistiche della tua CDN, indicando il numero di richieste al minuto misurate su di esso.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/statistics.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/statistics.png){.thumbnail}
 
 ### In che modo è possibile conservare in cache i file nella CDN?
 
