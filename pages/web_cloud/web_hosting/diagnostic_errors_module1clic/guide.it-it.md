@@ -123,7 +123,7 @@ Dopo aver effettuato tutti i backup necessari, [elimina il "modulo in 1 click"](
 
 ### "La directory di installazione non è vuota"
 
-![folder_not_empty](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/folder-not-empty.png){.thumbnail}
+![folder_not_empty](/pages/assets/screens/email-sending-to-customer/webhosting/folder-not-empty.png){.thumbnail}
 
 Dopo aver avviato la creazione del "modulo in 1 click", hai ricevuto un’email che ti informa che la directory di installazione del "modulo in 1 click" non è vuota.
 
@@ -176,7 +176,7 @@ Le offerte [Pro](/links/web/hosting-professional-offer) e [Performance](/links/w
 
 ### "Impossibile connettersi al database" <a name="delete-the-module"></a>
 
-![wrong_id_database](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-connection-failed.png){.thumbnail}
+![wrong_id_database](/pages/assets/screens/email-sending-to-customer/databases/db-connection-failed.png){.thumbnail}
 
 Dopo aver avviato l’installazione del "modulo in 1 click" in modalità avanzata, ricevi un’email che indica che il "modulo in 1 click" non può connettersi al database indicato.
 
@@ -197,7 +197,7 @@ Riavvia l’installazione del "modulo in 1 click".
 
 ### "You have insufficient rights on this database".
 
-![insufficient_rights](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-insufficient-rights.png){.thumbnail}
+![insufficient_rights](/pages/assets/screens/email-sending-to-customer/databases/db-insufficient-rights.png){.thumbnail}
 
 Questo messaggio viene visualizzato solo quando si installa un "modulo in 1 click" in **modalità avanzata**. Impossibile modificare il database perché la quantità di dati in esso contenuti supera il limite consentito. In questo caso, il database è bloccato in sola lettura.
 
@@ -215,7 +215,7 @@ Se non disponi di altri database e non vuoi ordinare un piano aggiuntivo, [impor
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
 
-![cant_connect](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-cant-connect-access-denied.png){.thumbnail}
+![cant_connect](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-access-denied.png){.thumbnail}
 
 Hai avviato l’installazione di un "modulo in 1 click" in [modalità avanzata](/pages/web_cloud/web_hosting/cms_install_1_click_modules) su un database situato su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Questo messaggio di errore è stato ricevuto via email. Significa che l’utente indicato al momento dell’installazione non dispone dei diritti sufficienti sul database o che gli identificativi indicati non sono corretti.
 
@@ -225,7 +225,7 @@ Verifica le credenziali di accesso [accedi direttamente](/pages/web_cloud/web_cl
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
-![cant_connect_server](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-cant-connect-server.png){.thumbnail}
+![cant_connect_server](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-server.png){.thumbnail}
 
 Hai avviato l’installazione di un "modulo in 1 click" in [modalità avanzata](/pages/web_cloud/web_hosting/cms_install_1_click_modules) su un database situato su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Questo messaggio di errore è stato ricevuto via email. Significa che il nome del database server specificato non è corretto.
 

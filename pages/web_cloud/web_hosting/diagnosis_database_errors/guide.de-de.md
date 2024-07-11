@@ -97,7 +97,7 @@ In Ihrem [OVHcloud Kundencenter](/links/manager) klicken Sie im Bereich `Hosting
 
 Sie haben eine E-Mail darüber erhalten, dass die Datenmenge Ihrer Datenbank die erlaubte Grenze überschreitet. Ihre Datenbank wurde deshalb auf Read-only gesetzt, was Änderungen an der Website verhindert.
 
-![overquota](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
+![overquota](/pages/assets/screens/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
 
 Sie können Ihre Datenbank mit drei Methoden entsperren:
 

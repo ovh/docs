@@ -123,7 +123,7 @@ Po wykonaniu wszystkich niezbędnych kopii zapasowych [usuń moduł za pomocą 1
 
 ### "Katalog instalacyjny nie jest pusty"
 
-![folder_not_empty](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/folder-not-empty.png){.thumbnail}
+![folder_not_empty](/pages/assets/screens/email-sending-to-customer/webhosting/folder-not-empty.png){.thumbnail}
 
 Po uruchomieniu tworzenia "modułu za pomocą 1 kliknięcia" otrzymałeś wiadomość e-mail z informacją, że katalog instalacyjny "modułu za pomocą 1 kliknięcia" nie jest pusty.
 
@@ -176,7 +176,7 @@ Oferty [Pro](/links/web/hosting-professional-offer) i [Performance](/links/web/h
 
 ### "Nie można połączyć się z bazą danych" <a name="delete-the-module"></a>
 
-![wrong_id_database](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-connection-failed.png){.thumbnail}
+![wrong_id_database](/pages/assets/screens/email-sending-to-customer/databases/db-connection-failed.png){.thumbnail}
 
 Po uruchomieniu instalacji "modułu za pomocą 1 kliknięcia" w trybie zaawansowanym otrzymałeś wiadomość e-mail z informacją, że Twój "moduł za pomocą 1 kliknięcia" nie może połączyć się z wskazaną bazą danych.
 
@@ -197,7 +197,7 @@ Następnie rozpocznij od nowa instalację "modułu za pomocą 1 kliknięcia".
 
 ### "You have insufficient rights on this database.".
 
-![insufficient_rights](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-insufficient-rights.png){.thumbnail}
+![insufficient_rights](/pages/assets/screens/email-sending-to-customer/databases/db-insufficient-rights.png){.thumbnail}
 
 Ten komunikat pojawia się wyłącznie podczas instalacji "modułu za pomocą 1 kliknięcia" w **trybie zaawansowanym**. Nie można już edytować bazy danych, ponieważ ilość danych w bazie przekracza dozwolony limit. W takim przypadku baza danych zostanie zablokowana w trybie tylko do odczytu.
 
@@ -215,7 +215,7 @@ Jeśli nie dysponujesz innymi bazami danych i nie chcesz zamówić pakietu dodat
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
 
-![cant_connect](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-cant-connect-access-denied.png){.thumbnail}
+![cant_connect](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-access-denied.png){.thumbnail}
 
 Rozpoczęto instalację "modułu za 1 kliknięciem" w [trybie zaawansowanym](/pages/web_cloud/web_hosting/cms_install_1_click_modules) w bazie danych znajdującej się na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ten komunikat o błędzie został wysłany na e-mail. Oznacza to, że użytkownik wskazany podczas instalacji nie ma wystarczających uprawnień do bazy danych lub że podane dane logowania są nieprawidłowe.
 
@@ -225,7 +225,7 @@ Sprawdź również dane logowania, logując się [bezpośrednio](/pages/web_clou
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
-![cant_connect_server](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-cant-connect-server.png){.thumbnail}
+![cant_connect_server](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-server.png){.thumbnail}
 
 Rozpoczęto instalację "modułu za 1 kliknięciem" w [trybie zaawansowanym](/pages/web_cloud/web_hosting/cms_install_1_click_modules) w bazie danych znajdującej się na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ten komunikat o błędzie został wysłany na e-mail. Oznacza to, że podana nazwa serwera baz danych jest nieprawidłowa.
 

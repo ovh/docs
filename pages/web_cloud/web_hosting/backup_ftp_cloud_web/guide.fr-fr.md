@@ -71,7 +71,7 @@ La génération de la sauvegarde prend entre 10 et 15 minutes pour être réalis
 Une fois la génération de la sauvegarde finalisée, vous recevez un e-mail sur l'adresse e-mail associée à l'identifiant administrateur de votre hébergement Cloud Web.<br>
 Cet e-mail contient un lien de téléchargement **valable 9 jours** à compter de la réception de l'e-mail :
 
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 Le fichier ainsi téléchargé est au format *.tar.gz*.
 

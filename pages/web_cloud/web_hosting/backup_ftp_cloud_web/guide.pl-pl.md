@@ -76,7 +76,7 @@ Tworzenie kopii zapasowej zajmuje od 10 do 15 minut.
 Po sfinalizowaniu tworzenia kopii zapasowej otrzymasz e-mail na adres e-mail powiązany z identyfikatorem administratora Twojego hostingu Cloud Web.<br>
 E-mail ten zawiera link do pobrania **ważny przez 9 dni** od otrzymania wiadomości e-mail:
 
-![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 Pobrany plik jest w formacie *.tar.gz*.
 
