@@ -43,7 +43,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.a
 > 
 > Se hai un'opzione CDN precedente al 19/11/2020, puoi ordinare la nuova offerta Shared CDN cliccando su `Aggiorna la CDN verso la versione superiore`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/order.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
 
 Sarai reindirizzato verso una pagina in cui è possibile generare un buono d’ordine. Una volta effettuato il pagamento, il tuo servizio sarà disponibile in pochi minuti.
 
@@ -311,7 +311,7 @@ Questa operazione consente di eliminare l’opzione CDN per l’intero hosting W
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. e seleziona il tuo servizio nella sezione `Hosting`{.action}. Clicca sui tre puntini `...`{.action} in corrispondenza di "Opzione CDN" e poi su `Disattiva la CDN`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/resiliation.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
 
 Clicca su `Conferma`{.action} per completare l’operazione.
 

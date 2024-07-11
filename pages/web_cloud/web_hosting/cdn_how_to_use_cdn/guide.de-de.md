@@ -43,7 +43,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken S
 > 
 > Wenn Sie eine CDN-Option von vor dem 19.11.2020 haben, können Sie das neue "Shared CDN" Angebot bestellen, indem Sie auf `CDN auf die neue Version updaten`{.action} klicken.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/order.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
 
 Sie werden zum Bestellformular weitergeleitet. Sobald die Bestellung bezahlt wurde, ist Ihre Dienstleistung innerhalb weniger Minuten verfügbar.
 
@@ -311,7 +311,7 @@ Sie können hiermit die CDN-Option für Ihr gesamtes Webhosting kündigen.
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie auf `...`{.action} rechts neben "CDN-Option" und danach auf `CDN kündigen`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/resiliation.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
 
 Bestätigen Sie die Kündigung, indem Sie auf `Bestätigen`{.action} klicken.
 

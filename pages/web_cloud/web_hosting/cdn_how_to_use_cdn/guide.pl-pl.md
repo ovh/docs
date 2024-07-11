@@ -43,7 +43,7 @@ Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{
 > 
 > Jeśli posiadasz opcję CDN sprzed 19/11/2020, możesz zamówić nową usługę Shared CDN klikając na `Aktualizuj CDN do wyższej`{.action} wersji.
 
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/order.png){.thumbnail}
+![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
 
 Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana kilka minut po jej opłaceniu.
 
@@ -311,7 +311,7 @@ Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
 
 Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Rezygnacja z GeoCache`{.action}.
 
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/resiliation.png){.thumbnail}
+![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
 
 Kliknij `Zatwierdź`{.action}, aby potwierdzić rezygnację.
 
