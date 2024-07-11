@@ -107,7 +107,8 @@ Pour commander un fournisseur de clés KMS OVHcloud depuis le control panel Host
 
 Vous devez vous connecter au: [Control Panel OVHcloud](/links/manager).
 
-Vous êtes invité à vous rendre dans le service KMS: `Hosted Private Cloud > Identité, Sécurité & Opérations > Key Management Service`.{.action}
+Vous êtes invité à vous rendre dans le service KMS: 
+- `Hosted Private Cloud > Identité, Sécurité & Opérations > Key Management Service`.{.action}
 
 Si vous n'avez pas de serveur KMS, cliquez sur: `Commander un KMS`{.action}.
 
@@ -385,7 +386,7 @@ Les noms de domaines et le port (KMIP) ne changent pas.
 
 Vous avez ces champs disponibles:
 
-| Champ       |                                                         | Description                                                                  |
+| Champ       | Input                                                   | Description                                                                  |
 |-------------|---------------------------------------------------------|------------------------------------------------------------------------------|
 | **Name**    |                                                         | - Un champ qui permet de nommer votre cluster au sein de vCenter.            |
 | **KMS**     |                                                         | - Le nom qui apparaitra au sein de Vsphere pour votre Okms.                  |
