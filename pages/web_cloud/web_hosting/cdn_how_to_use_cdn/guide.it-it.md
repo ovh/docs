@@ -202,7 +202,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 	Nella scheda Multisito, clicca sui tre puntini `...`{.action} in corrispondenza del record multisito e seleziona `Purger CDN`{.action}. 
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-clear-cache-step-1.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
 - **Query String**: Gestione della messa in cache di contenuto, basata sulle impostazioni (chiamate anche *Query String*) della richiesta URL. In base alla tua configurazione, scegli il comportamento della cache CDN:
 	- *Disattivato*: La risorsa viene salvata in cache con i parametri non selezionati. Creerà, ad esempio, 2 iterazioni nella cache della CDN per 2 URL con le stesse impostazioni in ordine diverso.

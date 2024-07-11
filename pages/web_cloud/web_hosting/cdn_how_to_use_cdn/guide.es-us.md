@@ -203,7 +203,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 	En la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} a la derecha de la entrada multisitio y, seguidamente, en `Purgar la CDN`{.action}.
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-clear-cache-step-1.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
 - **Query String**: Gestión del almacenamiento en caché del contenido, basado en la configuración (también llamada *Query String*) de la consulta URL. En función de su configuración, elija el comportamiento de la caché CDN:
 	- *Desactivado*: El recurso se guarda en caché con los parámetros no ordenados. Esto creará, por ejemplo, 2 iteraciones en la caché de la CDN para 2 URL que tengan los mismos parámetros en un orden diferente.

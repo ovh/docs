@@ -202,7 +202,7 @@ Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`
 
 	Klicken Sie im Tab Multisite auf den Button `...`{.action}. rechts neben dem Multisite-Eintrag und dann auf `Cache leeren`{.action}. 
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-clear-cache-step-1.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
 - **Query String**: Verwaltung des Inhalte-Caching basierend auf den Parametern (auch *Query String* genannt) der Anfrage-URL. Wählen Sie abhängig von Ihrer Konfiguration das Verhalten des CDN Caches aus:
 	- *Deaktiviert*: Die Ressource wird mit unsortierten Parametern in den Cache gelegt. Dies führt zum Beispiel zu 2 Iterationen im CDN Cache für 2 URLs mit den gleichen Einstellungen in einer anderen Reihenfolge.

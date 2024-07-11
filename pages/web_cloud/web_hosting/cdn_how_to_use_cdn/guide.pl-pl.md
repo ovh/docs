@@ -202,7 +202,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 	W zakładce MultiSite kliknij przycisk `...`{.action} po prawej stronie wpisu MultiSite, a następnie `Wyczyść CDN`{.action}. 
 
-	![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-clear-cache-step-1.png){.thumbnail}
+	![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
 - **Query String**: Zarządzanie umieszczeniem w pamięci cache treści, w oparciu o parametry (zwane również *Query String*) zapytania URL. W zależności od konfiguracji wybierz zachowanie pamięci cache CDN:
 	- *Wyłączone*: Zasoby są umieszczane w pamięci cache z ustawieniami bez sortowania. Co spowoduje na przykład utworzenie 2 iteracji w pamięci cache CDN dla 2 URL o tych samych parametrach w innej kolejności.

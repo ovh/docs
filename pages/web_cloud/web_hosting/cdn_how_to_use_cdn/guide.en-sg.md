@@ -198,7 +198,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 	In the `Multisite`{.action} tab, click on the `...`{.action} button to the right of the multisite entry, then on `Purge CDN`{.action}.
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-clear-cache-step-1.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
 - **Query String**: Content caching management, based on the parameters (also called *Query String*) of the URL query. Depending on your configuration, choose the behaviour of the CDN cache:
 	- *Disabled*: The resource is cached with its unsorted parameters. This will create, for example, 2 iterations in the CDN cache for 2 URLs with the same parameters in a different order.
