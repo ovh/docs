@@ -74,7 +74,7 @@ Es ist manchmal nützlich, den CDN-Cache zu leeren, insbesondere, wenn Sie Ihre 
 
 Gehen Sie zum Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN leeren`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Shared CDN-Optionen konfigurieren
 
@@ -84,7 +84,7 @@ Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`
 > 
 > Einige Optionen sind für das Hosting-Angebot "Basic" nicht verfügbar und erfordern die Aktivierung von [CDN Security](/links/web/hosting-options-cdn) oder [CDN Advanced](/links/web/hosting-options-cdn).
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 - **Always online**: Erlaubt die Online-Speicherung der CDN Daten im Fall eines Serverausfalls.
 

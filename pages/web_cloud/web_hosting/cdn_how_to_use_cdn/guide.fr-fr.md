@@ -70,7 +70,7 @@ Il est parfois utile de vider le cache du CDN, notamment lorsque vous modifiez v
 
 Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Purger le CDN`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Configurer les options du Shared CDN
 
@@ -80,7 +80,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 > 
 > Certaines options sont verrouillées sur l'offre Basic et nécessitent la souscription au [CDN security](/links/web/hosting-options-cdn) ou au [CDN Advanced](/links/web/hosting-options-cdn)
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 - **Toujours en ligne** : Permet le maintien des données du CDN en ligne en cas de panne serveur.
 

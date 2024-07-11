@@ -74,7 +74,7 @@ Ogni tanto è utile cancellare la cache della CDN, specialmente quando effettui 
 
 Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini `...`{.action} a destra del record multisito e poi `Purger la CDN`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Configura le opzioni della CDN Shared
 
@@ -84,7 +84,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 > 
 > Alcune opzioni sono bloccate sull'offerta Basic e richiedono la sottoscrizione della [CDN security](/links/web/hosting-options-cdn) o della [CDN Advanced](/links/web/hosting-options-cdn)
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 - **Sempre online**: Permette il mantenimento dei dati della CDN online in caso di guasto del server.
 

@@ -74,7 +74,7 @@ En ocasiones, resulta útil vaciar la caché de la CDN, principalmente cuando se
 
 Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego `Purgar la CDN`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Configurar las opciones del Shared CDN
 
@@ -84,7 +84,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 >
 > Algunas opciones están bloqueadas en la solución Basic y requieren la suscripción a la [CDN Security](/links/web/hosting-options-cdn) o a la [CDN Advanced](/links/web/hosting-options-cdn)
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 - **Sigue en línea**: Permite mantener en línea los datos de la CDN en caso de avería del servidor.
 

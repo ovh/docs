@@ -73,7 +73,7 @@ Czasem konieczne może okazać się usunięcie pamięci podręcznej z GeoCache, 
 
 Przejdź do karty `MultiSite`{.action} Twojego hostingu, kliknij `...`{.action} po prawej stronie wpisu MultiSite, a następnie `Wyczyść CDN`{.action}.
 
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Konfiguracja opcji usługi Shared CDN
 
@@ -83,7 +83,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 > 
 > Niektóre opcje są zablokowane dla oferty Basic i wymagają zamówienia usługi [CDN security](/links/web/hosting-options-cdn) lub [CDN Advanced](/links/web/hosting-options-cdn)
 
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 - **Zawsze online**: Umożliwia przechowywanie danych CDN online w przypadku awarii serwera.
 

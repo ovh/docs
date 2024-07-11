@@ -74,7 +74,7 @@ No que diz respeito ao SEO (referenciamento nos motores de pesquisa), a velocida
 
 Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita da entrada multisite e, a seguir, `Purgar o CDN`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Configurar as opções do Shared CDN
 
@@ -84,7 +84,7 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 > 
 > Algumas opções estão bloqueadas na oferta Basic e requerem a subscrição do [CDN security](/links/web/hosting-options-cdn) ou do [CDN Advanced](/links/web/hosting-options-cdn).
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 - **Ainda online**: Permite a manutenção dos dados do CDN online em caso de falha do servidor.
 

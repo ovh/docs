@@ -70,7 +70,7 @@ It is sometimes useful to clear the CDN cache, particularly when you modify stat
 
 Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the Multisite entry, then select `Clear CDN`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Configuring Shared CDN options
 
@@ -80,7 +80,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 >
 > Some options are locked on the Basic solution and require you to sign up to [CDN Security](/links/web/hosting-options-cdn) or [CDN Advanced](/links/web/hosting-options-cdn).
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 - **Always online**: Allows CDN data to be kept online in the event of a server failure.
 
