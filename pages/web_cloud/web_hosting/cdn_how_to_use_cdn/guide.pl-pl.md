@@ -303,7 +303,7 @@ Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.act
 
 Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/deactivation.png){.thumbnail}
+![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
 
 ### Usuń opcję CDN na Twoim hostingu
 

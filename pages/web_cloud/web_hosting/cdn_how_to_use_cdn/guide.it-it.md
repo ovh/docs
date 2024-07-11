@@ -303,7 +303,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.a
 
 A questo punto, deseleziona la voce "Attiva la CDN", clicca su `Seguente`{.action} e infine su`Conferma`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/deactivation.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
 
 ### Elimina l'opzione CDN sul tuo hosting
 
