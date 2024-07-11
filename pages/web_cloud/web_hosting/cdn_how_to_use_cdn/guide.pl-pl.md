@@ -53,7 +53,7 @@ Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{
 
 Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/activation.png){.thumbnail}
+![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
 
 > [!warning]
 > 

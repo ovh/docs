@@ -49,7 +49,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.
 
 Select the "Activate the CDN" option, click `Next`{.action} and then `Confirm`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/activation.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
 
 > [!warning]
 >
