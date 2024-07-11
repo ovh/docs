@@ -92,7 +92,7 @@ If you **imported a SSL certificate** from another provider, contact its support
 >
 > To check all the e-mails sent by OVHcloud teams, click on the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then on `Service emails`{.action}:
 >
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
 >
 
 ## Go further <a name="go-further"></a>

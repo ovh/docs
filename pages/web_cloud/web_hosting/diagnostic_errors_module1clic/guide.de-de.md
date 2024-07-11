@@ -124,7 +124,7 @@ Nachdem Sie alle notwendigen Backups durchgeführt haben, [löschen Sie Ihr 1-Kl
 
 ### „Das Installationsverzeichnis ist nicht leer“
 
-![folder_not_empty](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/folder-not-empty.png){.thumbnail}
+![folder_not_empty](/pages/assets/screens/email-sending-to-customer/webhosting/folder-not-empty.png){.thumbnail}
 
 Nachdem Sie mit der Erstellung Ihres 1-Klick-Moduls begonnen haben, haben Sie eine E-Mail erhalten, die besagt, dass das Installationsverzeichnis Ihres 1-Klick-Moduls nicht leer ist.
 
@@ -177,7 +177,7 @@ Die Angebote [Pro](/links/web/hosting-professional-offer) und [Performance](/lin
 
 ### „Verbindung zur Datenbank kann nicht hergestellt werden“ <a name="delete-the-module"></a>
 
-![wrong_id_database](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-connection-failed.png){.thumbnail}
+![wrong_id_database](/pages/assets/screens/email-sending-to-customer/databases/db-connection-failed.png){.thumbnail}
 
 Nachdem Sie mit der Installation Ihres 1-Klick-Moduls im fortgeschrittenen Modus begonnen haben, haben Sie eine E-Mail erhalten, dass sich Ihr 1-Klick-Modul nicht mit der angegebenen Datenbank verbinden kann.
 
@@ -198,7 +198,7 @@ Starten Sie dann die Installation eines neuen 1-Klick-Moduls.
 
 ### „You have insufficient rights on this database.“
 
-![insufficient_rights](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-insufficient-rights.png){.thumbnail}
+![insufficient_rights](/pages/assets/screens/email-sending-to-customer/databases/db-insufficient-rights.png){.thumbnail}
 
 Diese Meldung erscheint nur bei der Installation eines 1-Klick-Moduls im **Erweiterten Modus**. Die Datenbank kann nicht mehr geändert werden, da die Datenmenge in der Datenbank den zulässigen Grenzwert überschreitet. In diesem Fall ist die Datenbank schreibgeschützt gesperrt.
 
@@ -216,7 +216,7 @@ Wenn Sie keine anderen Datenbanken haben und kein zusätzliches Angebot bestelle
 
 ### „Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)“
 
-![cant_connect](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-cant-connect-access-denied.png){.thumbnail}
+![cant_connect](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-access-denied.png){.thumbnail}
 
 Sie haben die Installation eines 1-Klick-Moduls im [erweiterten Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules) auf einer Datenbank auf einem [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) Server gestartet. Sie haben diese Fehlermeldung per E-Mail erhalten. Dies bedeutet, dass der bei der Installation angegebene Benutzer nicht über ausreichende Rechte für die Datenbank verfügt oder dass die angegebenen Anmeldeinformationen falsch sind.
 
@@ -226,7 +226,7 @@ Sie haben die Installation eines 1-Klick-Moduls im [erweiterten Modus](/pages/we
 
 ### „Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'“
 
-![cant_connect_server](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/db-cant-connect-server.png){.thumbnail}
+![cant_connect_server](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-server.png){.thumbnail}
 
 Sie haben die Installation eines 1-Klick-Moduls im [erweiterten Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules) auf einer Datenbank auf einem [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) Server gestartet. Sie haben diese Fehlermeldung per E-Mail erhalten. Dies bedeutet, dass der eingegebene Name des Datenbankservers falsch ist.
 

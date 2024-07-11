@@ -97,7 +97,7 @@ Se encomendou um dos **certificados SSL pagos** do nosso parceiro [SECTIGO](http
 >
 > Para encontrar o conjunto dos e-mails enviados pelos nossos serviços, clique no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager), depois em `E-mails de serviço`{.action}:
 >
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
 >
 
 ## Quer saber mais? <a name="go-further"></a>

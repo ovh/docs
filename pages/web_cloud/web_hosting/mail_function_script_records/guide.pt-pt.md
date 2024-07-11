@@ -129,7 +129,7 @@ Este estado ocorre quando os e-mails considerados como SPAM são enviados a part
 
 Geralmente, este bloqueio é acompanhado pelo envio de um e-mail intitulado **"Abuso com o seu alojamento domain.tld"** gerado automaticamente pelos nossos robôs de segurança:
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 São possíveis três casos relativamente a esta situação:
 

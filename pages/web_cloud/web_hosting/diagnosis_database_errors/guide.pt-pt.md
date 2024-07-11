@@ -98,7 +98,7 @@ No seu [Espaço Cliente OVHcloud](/links/manager), na parte `Alojamentos`{.actio
 
 Recebeu um e-mail dos nossos serviços indicando que a quantidade de dados na sua base de dados ultrapassa o limite autorizado. A sua base de dados passou então a ler sozinha. Isto impede qualquer modificação do seu site.
 
-![database-overquota-notification-email](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
+![database-overquota-notification-email](/pages/assets/screens/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
 
 Três métodos irão permitir-lhe desbloquear a sua base de dados:
 

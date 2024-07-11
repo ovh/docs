@@ -92,7 +92,7 @@ Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire 
 >
 > Pour retrouver l'ensemble des e-mails envoyés par nos services, cliquez en haut à droite de votre [espace client OVHcloud](/links/manager), puis sur `E-mails de service`{.action}) :
 >
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
 >
 
 ## Aller plus loin <a name="go-further"></a>

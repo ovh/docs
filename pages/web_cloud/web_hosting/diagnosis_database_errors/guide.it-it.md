@@ -95,7 +95,7 @@ Nello Spazio Cliente OVHcloud (/links/manager), sezione `Hosting`{.action}, clic
 
 Hai ricevuto un'email dai nostri servizi che indica che la quantità di dati sul tuo database supera il limite autorizzato. Il tuo database è quindi passato in sola lettura. In questo modo il sito non può essere modificato.
 
-![database-overquota-notification-email](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
+![database-overquota-notification-email](/pages/assets/screens/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
 
 Tre metodi ti permettono di sbloccare il tuo database:
 
