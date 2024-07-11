@@ -48,7 +48,7 @@ Se il tuo sito non è raggiungibile, sul tuo browser potrebbero comparire divers
 
 Per verificare la validità dell'abbonamento relativo al tuo dominio, clicca sul tuo nome in alto a destra del tuo [Spazio Cliente OVHcloud](/links/manager) e poi su `Prodotti e servizi`{.action}.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-product-and-services.png){.thumbnail}|
+![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-product-and-services.png){.thumbnail}|
 
 Rinnova il tuo dominio se necessario cliccando `...`{.action} a destra dello schermo e poi `Rinnova il servizio`{.action}.
 

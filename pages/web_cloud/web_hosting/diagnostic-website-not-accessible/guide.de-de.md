@@ -46,7 +46,7 @@ Wenn Ihre Website nicht erreichbar ist, können in Ihrem Browser mehrere Fehlerm
 
 Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](/links/manager) auf Ihren Namen, um das Kontextmenü anzuzeigen, und dann auf `Produkte und Dienstleistungen`{.action}.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-product-and-services.png){.thumbnail}
+![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-product-and-services.png){.thumbnail}
 
 Wenn nötig verlängern Sie Ihre Domain mit Klick auf den Button `...`{.action} rechts und dann auf `Dienst verlängern`{.action}.
 

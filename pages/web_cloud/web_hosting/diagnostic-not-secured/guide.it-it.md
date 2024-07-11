@@ -96,7 +96,7 @@ Se hai ordinato uno dei **certificati SSL a pagamento** del nostro partner [SECT
 >
 > Per visualizzare tutte le email inviate dai nostri servizi, clicca in alto a destra del tuo [Spazio Cliente OVHcloud](/links/manager) e poi su `Email di servizio`{.action}:
 >
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
 >
 
 ## Per saperne di più <a name="go-further"></a>
