@@ -99,7 +99,7 @@ OVHcloud KMS (Okms) est le service centralisé de chiffrement entièrement manag
 
 /// details | Comment commander un KMS OVHcloud pour HPC VMware on OVHcloud?
 
-![Manager kms Menu Order Animated Gif](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_order.gif){.thumbnail}.
+![Manager kms Menu Order Animated Gif](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_order_2-optimized.webp){.thumbnail}.
 
 ### Via le control panel OVHcloud
 
@@ -114,8 +114,6 @@ Si vous n'avez pas de serveur KMS, cliquez sur: `Commander un KMS`{.action}.
 Vous êtes dans "Commander un KMS", choisissez la région.
 
 Les clés de chiffrement et certificats d’accès de ce KMS seront stockées dans la région indiquée. Ils pourront être utilisés dans tous les produits OVHcloud sans distinction de région.
-
-![Manager kms Menu Order 02 Webp](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_order_2-optimized.webp){.thumbnail}.
 
 Vous disposez des régions suivantes à ce jour disponible : 
 
