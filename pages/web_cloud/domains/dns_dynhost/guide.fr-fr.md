@@ -83,7 +83,7 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, repositionnez-vous
 
 > [!warning]
 >
-> Pour la mise en place d'un enregistrement DNS dynamique (DynHost) et contrairement à l'[étape 1](#step1), l'utilisation d'un *wildcard* (en placant uniquement le caractère `*` dans le formulaire `Sous-domaine`{.action}) est indisponible.
+> Pour la mise en place d'un enregistrement DNS dynamique (DynHost), l'utilisation d'un *wildcard* (en placant uniquement le caractère `*`) dans le formulaire `Sous-domaine`{.action} est indisponible.
 >
 
 ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
