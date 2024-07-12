@@ -12,9 +12,9 @@ updated: 2024-07-08
 
 - Avoir 2 projets ou plus.
 - Référez-vous aux guides suivants :
-  - [Débuter avec l’API OpenStack](https://help.ovhcloud.com/csm/fr-public-cloud-compute-starting-nova-api?id=kb_article_view&sysparm_article=KB0051257)
-  - [Attacher une adresse Floating IP à une instance Public Cloud](https://help.ovhcloud.com/csm/fr-public-cloud-network-attach-floating-ip-to-instance?id=kb_article_view&sysparm_article=KB0050237)
-  - [Gestion des règles de firewall et port security sur les réseaux utilisant OpenStack CLI](https://help.ovhcloud.com/csm/fr-public-cloud-compute-firewall-security?id=kb_article_view&sysparm_article=KB0051169)
+  - [Débuter avec l’API OpenStack](/pages/public_cloud/compute/starting_with_nova)
+  - [Attacher une adresse Floating IP à une instance Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance)
+  - [Gestion des règles de firewall et port security sur les réseaux utilisant OpenStack CLI](/pages/public_cloud/compute/security_group_private_network)
 
 ## En pratique
 
