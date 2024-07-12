@@ -68,7 +68,7 @@ You can order your new addtional IPv6 block <a href="https://www.ovh.com/manager
 <br/><img src="/images/500.png" alt="configuration page"/>
 
 <br/>Next you need to follow the simple step-by-step instructions. 
-<br/>Then you new Additional IPv6 will be available on your vRAck configuration page.
+<br/>Then you new Additional IPv6 will be available on your vRack configuration page.
 
 </blockquote>
 </details>
