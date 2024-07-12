@@ -68,10 +68,6 @@ You can order your new addtional IPv6 block <a href="https://www.ovh.com/manager
 <br/><img src="/images/500.png" alt="configuration page"/>
 
 <br/>Next you need to follow the simple step-by-step instructions. 
-<br/>At the end you need to select the right region to announce your new Additional IPv6.
-
-<br/><img src="/images/location.png" alt="location"/>
-<br/>
 </blockquote>
 </details>
 
