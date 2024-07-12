@@ -1,7 +1,7 @@
 ---
 title: Configurer le pare-feu sous Linux avec Iptables
 excerpt: Découvrez comment sécuriser un serveur avec Iptables
-updated: 2024-05-30
+updated: 2024-07-12
 ---
 
 ## Objectif
@@ -60,10 +60,8 @@ sudo apt-get install iptables-persistent
 
 Une fois ce paquet installé, le dossier iptables contiendra deux fichiers pour les règles IPV4 et IPV6 :
 
-```bash
-sudo /etc/iptables/rules.v4
-sudo /etc/iptables/rules.v6
-```
+- /etc/iptables/rules.v4
+- /etc/iptables/rules.v6
 
 En général, une commande Iptables se présente comme suit :
 
