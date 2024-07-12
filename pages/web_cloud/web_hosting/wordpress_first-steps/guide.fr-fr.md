@@ -184,7 +184,7 @@ Vos liens seront alors construits à partir du slug précédemment renseigné lo
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, éditeur du constructeur de thèmes Divi.
     - [Elementor](https://elementor.com/){.external}, un autre éditeur de thèmes.
 - Le site officiel [WordPress](https://wordpress.org/){.external}.
-- [Utiliser le SFTP pour transférer des fichiers ou pages vers votre WordPress](https://wordpress.com/fr/support/sftp/).
+- [Utiliser le SFTP pour transférer des fichiers ou pages vers votre WordPress](https://wordpress.com/fr/support/sftp/){.external}.
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
