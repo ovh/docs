@@ -117,7 +117,9 @@ You have these kind of information
 
 ### Attributing Additional IPv6 to a vRack
 
-The delivered IPv6 block (as seen previously with the /eligibleServices API call), can now be added to the vRack network configuration using this POST method:
+When you request an additional IPv6, it is automatically assigned to your vRack.
+
+But if you removed this new Addtional IPv6 from your vRack you can assign it again using this POST method:
 
 <img src="/images/post-ipv6.png" alt="api post add block"/>
 
