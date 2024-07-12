@@ -209,7 +209,7 @@ Follow the **5 steps** by clicking on each of the 5 tabs below:
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/domaine/ PUT /email/domaine/{domain}/dkim/enable
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
 >>
 >> - `domain`: Enter the domain name attached to the email service on which you want to enable DKIM.
 >>
@@ -344,7 +344,7 @@ Follow the **5 steps** by clicking on each of the 5 tabs below:
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/domaine/ PUT /email/domaine/{domain}/dkim/enable
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
 >>
 >> - `domain`: Enter the domain name attached to your email service on which you want to enable DKIM.
 >>
@@ -625,7 +625,7 @@ Select the email solution concerned in the following tabs:
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/domaine/ PUT /email/domaine/{domain}/dkim/disable
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/disable
 >> <br>
 >>
 >> - `domain` : enter the domain name attached to your email service on which the DKIM must be present. <br>

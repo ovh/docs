@@ -239,7 +239,7 @@ Suivez les **5 étapes** en cliquant successivement sur chacun des 5 onglets ci-
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/domaine/ PUT /email/domaine/{domain}/dkim/enable
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
 >>
 >> - `domain` : saisissez le nom de domaine attaché à votre service E-mail sur lequel vous souhaitez activer DKIM.
 >>
@@ -374,7 +374,7 @@ Suivez les **5 étapes** en cliquant successivement sur chacun des 5 onglets ci-
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/domaine/ PUT /email/domaine/{domain}/dkim/enable
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
 >>
 >> - `domain` : saisissez le nom de domaine attaché à votre service e-mail sur lequel vous souhaitez activer DKIM.
 >>
@@ -725,7 +725,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 
 > [!tabs]
 > **E-mail (MX Plan)**
->> Lors de vos opérations sur le DKIM de votre plateforme Exchange, utilisez l'appel API ci-dessous pour vérifier le statut actuel du DKIM.
+>> Lors de vos opérations sur le DKIM de votre plateforme E-mail, utilisez l'appel API ci-dessous pour vérifier le statut actuel du DKIM.
 >>
 >> > [!api]
 >> >
@@ -860,7 +860,7 @@ Sélectionnez l'offre e-mail concernée parmi les onglets suivants :
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/domaine/ PUT /email/domaine/{domain}/dkim/disable
+>> > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/disable
 >> <br>
 >>
 >> - `domain` : saisissez le nom de domaine attaché à votre service E-mail sur lequel le DKIM doit être présent. <br>
@@ -1159,3 +1159,5 @@ Retrouvez ci-dessous les états qui peuvent bloquer le fonctionnement de votre D
 ## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+Dans le cadre de la mise en place d'un enregistrement DNS dynamique (DynHost), l'utilisation d'un wildcard (caractère `*`) dans la case `sous-domaine`{.action} du formulaire d'un enregistrement DNS est indisponible.
