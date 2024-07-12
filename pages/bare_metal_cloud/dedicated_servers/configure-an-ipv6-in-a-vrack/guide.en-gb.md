@@ -71,40 +71,6 @@ You can order your new addtional IPv6 block <a href="https://www.ovh.com/manager
 </blockquote>
 </details>
 
-**<ins>Check the Status of Your IPv6 Block Request</ins>** 
-
-<details>
-<summary> <b>Control Panel </b> </summary>
-<blockquote>
-
-<br/> Go to this section :
-<br/><img src="/images/301.png" alt="check status 01"/>
-
-<br/> And select the vRack concerned by this new Addtionnal IPv6
-<br/><img src="/images/299.png" alt="check status 02"/>
-
-<br/> This will display your Additional IPv6. This confirms that your request has been validated.
-<br/><img src="/images/710.png" alt="check status 03"/>
-
-<br/> Now you can start configuring it by adding it to your vRack.
-<br/><img src="/images/303.png" alt="check status 04"/>
-<br/><img src="/images/600.png" alt="check status 05"/>
-
-</blockquote>
-</details>
-
-<details>
-<summary> <b>APIv6 (alternative way)</b> </summary>
-<blockquote>
-
-We can check services eligible for configuration using this GET API call:
-<img src="/images/get-eligibleServices.png" alt="api get eligible services"/>
-<br/>New IPv6 block is there, let's configure it now!
-
-</blockquote>
-</details>
-
-
 ### Configuring IPv6 in a vRack (basic mode)
 
 In this section we will present basic IPv6 setup for your vRack connected hosts.
