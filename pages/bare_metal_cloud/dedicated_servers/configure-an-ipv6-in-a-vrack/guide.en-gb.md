@@ -283,6 +283,8 @@ In this section we will present a more advanced IPv6 setup, where your vRack con
 The traffic path is as follows: Inbound traffic to a given VM (with specified subnet) is routed through the customer's vRack, first to a specified host (with a next-hop address), then using a local link (or vSwitch - black link fd00::/64 on a diagram) to the particular VM.
 Traffic coming back from such a VM should use the default route via the first part of the local link (black one, fd00::1), then (possibly default) route from a host to its gateway.
 
+For routed subnet definition any prefix size can be used between /57 and /64.
+
 #### Define routed subnet
 
 <details>
