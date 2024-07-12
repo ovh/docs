@@ -728,7 +728,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 
 > [!tabs]
 > **Correo electrónico (MX Plan)**
->> Durante sus operaciones en el DKIM de su plataforma Exchange, utilice la llamada API que aparece a continuación para comprobar el estado actual del DKIM.
+>> Durante sus operaciones en el DKIM de su plataforma E-mail, utilice la llamada API que aparece a continuación para comprobar el estado actual del DKIM.
 >>
 >> > [!api]
 >> >
@@ -1059,7 +1059,7 @@ Haga clic en la pestaña que corresponde a su producto.
 >> Para cambiar al segundo selector, utilice la siguiente llamada a la API:
 >>
 >> > [!api]
->>
+>> >
 >> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >>
 >>
