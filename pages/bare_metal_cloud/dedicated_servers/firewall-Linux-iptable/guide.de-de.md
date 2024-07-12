@@ -1,7 +1,7 @@
 ---
 title: Konfiguration der Linux Firewall mit iptables
 excerpt: Erfahren Sie hier, wie Sie einen Server mit iptables sichern
-updated: 2024-06-03
+updated: 2024-07-12
 ---
 
 > [!primary]
@@ -63,10 +63,8 @@ sudo apt-get install iptables-persistent
 
 Sobald dieses Paket installiert ist, wird der *iptables*-Ordner zwei Dateien für die IPV4- und IPV6-Regeln enthalten:
 
-```bash
-sudo /etc/iptables/rules.v4
-sudo /etc/iptables/rules.v6
-```
+- /etc/iptables/rules.v4
+- /etc/iptables/rules.v6
 
 Ein *iptables*-Befehl ist im Allgemeinen folgendermaßen aufgebaut:
 

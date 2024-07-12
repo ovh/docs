@@ -1,7 +1,7 @@
 ---
 title: Configurar el firewall de Linux con iptables
 excerpt: Cómo proteger un servidor con iptables
-updated: 2024-06-03
+updated: 2024-07-12
 ---
 
 > [!primary]
@@ -65,10 +65,8 @@ sudo apt-get install iptables-persistent
 
 Una vez instalado este paquete, la carpeta iptables contendrá dos archivos para las reglas IPV4 e IPV6:
 
-```bash
-sudo /etc/iptables/rules.v4
-sudo /etc/iptables/rules.v6
-```
+- /etc/iptables/rules.v4
+- /etc/iptables/rules.v6
 
 Por lo general, el comando iptables es el siguiente:
 
