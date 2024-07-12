@@ -43,24 +43,20 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) et effectuez le
 - Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire que vous souhaitez associer à Git.
 - Cliquez sur le bouton `...`{.action} puis sélectionnez `Associer Git`{.action}.
 
---Screenshot placeholder--
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/associate-git.png){.thumbnail}
 
-Le formulaire d'association de Git s'affiche.
-
---Screenshot placeholder--
-
-Plusieurs éléments doivent être configurés :
+Le formulaire d'association de Git s'affiche. Plusieurs éléments doivent être configurés :
 
 - Clé SSH
-- Dépôt
-- Branche
+- Dépôt Github
+- Branche du dépôt
 - Webhook (optionnel)
 
 #### Associer une clé SSH à Github
 
 > [!primary]
 >
-> La génération d'une clé SSH est une étape cruciale, car elle établit une connexion sécurisée et cryptée entre le répertoire de votre site web et le dépôt Git. Cette clé assure que les transferts de données et les modifications de code se font de manière sûre et authentifiée, prévenant les accès non autorisés et garantissant l'intégrité du code.
+> La génération d'une clé SSH est une étape cruciale, car elle établit une connexion sécurisée et cryptée entre le répertoire de votre site web et le dépôt GitHub. Cette clé assure que les transferts de données et les modifications de code se font de manière sûre et authentifiée, prévenant les accès non autorisés et garantissant l'intégrité du code.
 >
 
 Cliquez sur `Générer une clé`{.action} pour générer votre clé SSH, puis copiez-là. Vous devez maintenant enregistrer la clé SSH sur votre compte GitHub. Cela permet d'établir une connexion sécurisée sans nécessiter de saisie de mot de passe à chaque opération Git que vous serez amenés à effectuer.
@@ -85,7 +81,7 @@ Dans le menu principal de GitHub, cliquez sur `Your repositories`{.action} puis,
 
 Copiez l'adresse de votre dépôt. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name>`{.action}. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît.
 
---Screenshot placeholder--
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 
 Vous devez maintenant définir la branche de votre dépôt GitHub. La branche par défaut est « Main, mais si vous voulez utiliser une autre branche, créez-en une sur Github en suivant les étapes suivantes :
 
@@ -116,13 +112,13 @@ Pour valider les informations du formulaire d'association de Git, appuyez sur `A
 
 #### Succès de l'association de Git
 
-Après avoir validé le formulaire s'association de Git, dirigez-vous sur l'onglet Multisite.
+Après avoir validé le formulaire s'association de Git, vous êtes redirigés sur l'onglet Multisite.
 
---Screenshot placeholder--
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/banner-git-activation-ongoing.png){.thumbnail}
 
 Une bannière verte vous indique que Git est en cours d'activation. Suivez l'activation de Git en cliquant sur le lien `Tâche en cours`{.action}.
 
---Screenshot placeholder--
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ongoing-task-git-activation.png){.thumbnail}
 
 Le statut Ongoing`{.action} indique que l'association de Git est en cours. Le processus peut prendre plusieurs minutes. Lorsque la tâche est achevée, le statut « Activé`{.action} s'affiche.
 
