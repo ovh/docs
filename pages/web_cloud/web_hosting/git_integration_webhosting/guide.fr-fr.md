@@ -120,7 +120,7 @@ Une bannière verte vous indique que Git est en cours d'activation. Suivez l'act
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ongoing-task-git-activation.png){.thumbnail}
 
-Le statut Ongoing`{.action} indique que l'association de Git est en cours. Le processus peut prendre plusieurs minutes. Lorsque la tâche est achevée, le statut « Activé`{.action} s'affiche.
+Le statut `Ongoing`{.action} indique que l'association de Git est en cours. Le processus peut prendre plusieurs minutes. Lorsque la tâche est achevée, le statut « Activé`{.action} s'affiche.
 
 Vous pouvez également suivre l'évolution de l'activation de Git en vous dirigeant sur l'onglet `Multisite`{.action}. Dans le tableau, identifiez les lignes correspondant au répertoire que vous voulez associer à Git. Pour chacune des lignes concernées, dans la colonne `Git`{.action}, la mention `OnGoing`{.action} vous indique que Git est en cours d'activation. Dans notre exemple, les domaines 1 et 2 reliés au répertoire `www`{.action} sont en cours d'association à Git.
 
@@ -130,35 +130,18 @@ Lorsque l'association de Git est effectuée, le statut `Enabled`{.action} appara
 
 #### Erreurs de l'association de Git
 
-Plusieurs erreurs peuvent survenir lors de l'association de Git.
+Dans le tableau de l'onglet `Multisite`{.action}, identifiez les lignes correspondant au répertoire que vous voulez associer à Git. Dans la colonne `Git`, si `Error` apparaît, cela signifie qu'au moins une des erreurs suivantes est survenue :
 
-##### Erreurs liées au dépôt Git
-
-Après avoir validé le formulaire s'association de Git, dirigez-vous sur l'onglet `Multisite`{.action}.
-
---Screenshot placeholder--
-
-Dans le tableau, identifiez les lignes correspondant au répertoire que vous voulez associer à Git. Dans la colonne `Git`, une erreur `Initial error` apparaît. Cela signifie qu'au moins une des erreurs suivantes est survenue :
-
-- Le dépôt Git n'est pas vide.
-- L'adresse du dépôt Git n'existe pas ou est erronée.
-- La branche du dépôt Git n'existe pas ou son nom est erronée.
+- La clé SSH n'a pas été enregistrée dans votre compte Github.
+- Le répertoire d'installation n'est pas vide.
+- L'adresse du dépôt Github n'existe pas ou est erronée.
+- La branche du dépôt n'existe pas ou son nom est erroné.
 
 Pour connaître la cause exacte de l'erreur, consultez les informations du dernier déploiement. Dans le tableau, identifiez la ligne correspondant au domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur `...`{.action} puis sur `informations du dernier déploiement`{.action}.
 
-Une fois l'erreur identifiée, associez Git à nouveau. Recommencez l'opération en cliquant sur `...`{.action} de la ligne correspondante, puis sur `Associer Git`{.action}.
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
 
-##### Erreurs liées à la clé SSH
-
-Après avoir validé le formulaire s'association de Git, dirigez-vous sur l'onglet `Multisite`{.action}. Une bannière verte vous indique que Git est en cours d'activation. Cela signifie qu'aucune erreur liée au dépôt Git n'a été détectée. Dans le tableau, identifiez les lignes correspondant au répertoire que vous voulez associer à Git. Pour chacune des lignes concernées, dans la colonne `Git`{.action}, la mention `OnGoing`{.action} indique que Git est en cours d'activation.
-
-Pendant le processus d'association de Git, si le système détecte une erreur liée à la clé SSH, alors le statut `Initial error`{.action} apparaît dans la colonne `Git`{.action} du tableau. Pour en savoir plus sur l'erreur, cliquez sur `...`{.action} de la ligne correspondante puis sur `Informations du dernier déploiement`{.action}.
-
-Pour résoudre l'erreur liée à la clé SSH, dirigez-vous sur l'onglet `Multisite`{.action}, identifiez la ligne correspondant au répertoire que vous voulez associer à Git, cliquez sur `...`{.action} puis sélectionnez `Configurer Git`{.action}.
-
---Screenshot placeholder--
-
-Dans le formulaire qui s'affiche, copiez la clé SSH et enregistrez-là sur votre compte GitHub. Pour plus d'informations, suivez les étapes pour [associer une clé SSH à GitHub](#associer-une-clé-ssh-à-github).
+Une fois le(s) erreur(s) identifiée(s), associez Git à nouveau. Recommencez l'opération en cliquant sur `...`{.action} de la ligne correspondante, puis sur `Associer Git`{.action}.
 
 ### Déployer son site web avec Git
 
