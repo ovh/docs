@@ -1,7 +1,7 @@
 ---
 title: 'Migration uses cases in VMware Cloud Director'
-excerpt: 'Découvrez comment effectuer votre migration VMware Cloud Director on OVHcloud ainsi que ces cas particuliers et complexes afin de garantir la sécurité de vos données'
-updated: 2024-07-10
+excerpt: 'Find out how to migrate your Hosted Private Cloud VMware on OVHcloud workflows on VCD as well as these specific and complex cases, to guarantee security for your data'
+updated: 2024-07-15
 ---
 <style>
 details>summary {
