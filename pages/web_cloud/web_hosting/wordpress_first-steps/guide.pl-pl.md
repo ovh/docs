@@ -188,6 +188,7 @@ Twoje linki zostaną zbudowane na podstawie wcześniej podanego sluga podczas ed
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, producent szablonu Divi.
     - [Elementor](https://elementor.com/){.external}, inny edytor tematów.
 - Oficjalna strona [WordPress](https://wordpress.org/){.external}.
+- [Użyj SFTP do przesyłania plików lub stron do WordPressa](https://developer.wordpress.com/docs/developer-tools/sftp/){.external}.
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
