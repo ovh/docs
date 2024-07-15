@@ -188,6 +188,7 @@ I tuoi link saranno costruiti utilizzando lo slug inserito precedentemente duran
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, editore del produttore di temi Divi.
     - [Elementor](https://elementor.com/){.external}, un altro editor di temi.
 - Il sito ufficiale [WordPress](https://wordpress.org/){.external}.
+- [Utilizzare SFTP per trasferire file o pagine verso WordPress](https://wordpress.com/it/support/sftp/){.external}.
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
