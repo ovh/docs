@@ -263,7 +263,7 @@ With the following parameters:
 
 #### Linux payload example
 
-The following payload will install Debian 12 (Bookworm) with SSH key-based authentication and a custom bash post-installation script.
+The following payload will install Debian 12 (Bookworm) with SSH key-based authentication and a custom bash post-installation script:
 
 ```json
 {
@@ -284,7 +284,7 @@ The following payload will install Debian 12 (Bookworm) with SSH key-based authe
 }
 ```
 
-Even though the post-installation script could be sent to API directly in clear text by escaping special characters, it is recommended to send to API base64-encoded script. You can use the following UNIX/Linux command to encode your script:
+Even though the post-installation script could be sent to API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your script:
 
 ```bash
 cat my-script.sh | base64 -w0`
@@ -327,7 +327,7 @@ The following payload will install Windows Server 2022 Standard (Core) in French
 }
 ```
 
-Even though the post-installation script could be sent to API directly in clear text by escaping special characters, it is recommended to send to API base64 encoded script. You can use the following PowerShell command to encode your script:
+Even though the post-installation script could be sent to API directly in clear text by escaping special characters, it is recommended to send a base64 encoded script to the API. You can use the following PowerShell command to encode your script:
 
 ```ps1
 [System.Convert]::ToBase64String((Get-Content -Path .\my-script.ps1 -Encoding Byte))
@@ -341,7 +341,7 @@ Here is the clear-text post-installation PowerShell script from the example abov
 (Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss") | Out-File -FilePath "$($Env:SystemRoot)\TEMP\coucou.txt" -Append
 ```
 
-As you can see this PowerShell script for Windows is equivalent to the previous bash script for Linux.
+As you can see, this PowerShell script for Windows is equivalent to the previous bash script for Linux.
 
 > [!primary]
 >
@@ -350,8 +350,8 @@ As you can see this PowerShell script for Windows is equivalent to the previous 
 
 While running Windows post-installation script, the following files while remain:
 
-- script itself: `c:\ovhupd\script\custrun.ps1` (or `c:\ovhupd\script\custrun.cmd` if batch script),
-- log file: `c:\ovhupd\script\customerscriptlog.txt`.
+- The script itself: `c:\ovhupd\script\custrun.ps1` (or `c:\ovhupd\script\custrun.cmd` if batch script).
+- Log file: `c:\ovhupd\script\customerscriptlog.txt`.
 
 Those 2 absolute paths are accessible in your script respectively via the following environnement variables: `postInstallationScriptPath` and `postInstallationScriptLogPath`.
 
@@ -404,4 +404,4 @@ You can also monitor the progress of the installation process with the following
 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
-Join our user community on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

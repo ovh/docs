@@ -279,7 +279,7 @@ Ce payload permet d'installer Debian 12 (Bookworm) avec une clé SSH publique et
 }
 ```
 
-Même si le script de post-installation peut-être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
+Même si le script de post-installation peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
 
 ```bash
 cat my-script.sh | base64 -w0`
@@ -322,7 +322,7 @@ Ce payload permet d'installer Windows Server 2022 Standard (Core) en français a
 }
 ```
 
-Même si le script de post-installation peut-être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande Powershell suivante:
+Même si le script de post-installation peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande Powershell suivante :
 
 ```ps1
 [System.Convert]::ToBase64String((Get-Content -Path .\my-script.ps1 -Encoding Byte))
@@ -345,8 +345,8 @@ Comme vous pouvez le constater, le script PowerShell pour Windows est similaire 
 
 Lors de l'exécution du script de post-installation Windows, les fichiers suivants persistent :
 
-- le script lui-même: `c:\ovhupd\script\custrun.ps1` (ou `c:\ovhupd\script\custrun.cmd` si script batch),
-- le fichier de logs du script: `c:\ovhupd\script\customerscriptlog.txt`.
+- Le script lui-même : `c:\ovhupd\script\custrun.ps1` (ou `c:\ovhupd\script\custrun.cmd` si script batch).
+- Le fichier de logs du script: `c:\ovhupd\script\customerscriptlog.txt`.
 
 Ces 2 chemins absolus sont accessibles dans l'exécution de votre script respectivement via les variables d'environnement suivantes : `postInstallationScriptPath` et `postInstallationScriptLogPath`.
 
@@ -399,4 +399,4 @@ Sinon vous pouvez aussi avoir un état détaillé de chaque étape de l'installa
 
 [Gestion du RAID matériel](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
