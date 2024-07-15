@@ -96,14 +96,16 @@ You have these kind of information
 
 <br/>On the right you see what is already configured with your vRack.    
 
-### Static IP configuration   
-
 <br/> Select your new Addtional IPv6 and add it to your vRack
 
 <img src="/images/701.png" alt="vrack select"/>
 <br/>
 
 <br/>After this action, you have now your new Addtional IPv6 added to you vRack.
+
+### Static IP configuration   
+
+Once the Additional IPv6 /56 block is attributed to a vRack network, there is always the first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts with static IP configuration on vRack interfaces (see the next section for host-side configuration example).
 
 ### Automatic IP configuration (SLAAC)
 
