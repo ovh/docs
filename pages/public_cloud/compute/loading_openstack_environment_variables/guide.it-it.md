@@ -1,7 +1,7 @@
 ---
 title: "Impostare le variabili d'ambiente OpenStack"
 excerpt: 'Come impostare le variabili d’ambiente per utilizzare l’API  di Openstack'
-updated: 2023-11-29
+updated: 2024-07-15
 ---
 
 ## Obiettivo
@@ -53,24 +53,6 @@ Se le CLI sono già state installate, verifica che funzionino correttamente.
 | 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
-
-È possibile salvare la password utente Horizon sul disco rigido. Per farlo, sostituisci:
-
-```bash
-echo "Please enter your OpenStack Password: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
-```
-
-Con:
-
-```bash
-#echo "Please enter your OpenStack Password: "
-#read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD="Password dell’utente Horizon"
-```
-
-Sarà necessario impostare questo ambiente, di default, all’avvio di ogni sessione nell’ambiente corrente. È possibile renderlo permanente aggiungendo la sorgente openrc.sh al file bashrc. Per effettuare questa operazione, è necessario salvare la password nel file.
 
 #### **Con Windows**
 
