@@ -188,6 +188,7 @@ Os seus links serão construídos a partir do slug indicado anteriormente aquand
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, editor do projeto temático Divi.
     - [Elementor](https://elementor.com/){.external}, outro editor de temas.
 - O site oficial [WordPress](https://wordpress.org/){.external}.
+- [Utilizar SFTP para transferir ficheiros ou páginas para o seu WordPress](https://developer.wordpress.com/docs/developer-tools/sftp/){.external}.
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
