@@ -151,6 +151,35 @@ Don't forget to configure SLAAC on your host machine.
 
 #### Host-side commands
 
+/// details | Static IP configuration   
+
+In a basic configuration, you may want to setup an IP address and routing manually. This is also the suggested way when your machine acts as a router (see <a href="#configuring-an-ipv6-in-a-vrack-for-routed-mode">configuring routed subnet</a>) and has ipv6.forwarding mode enabled.   
+
+First, let's add an IP address on the vrack interface (in our example "eth1"):   
+
+``` bash
+$ sudo ip address add 2001:41d0:abcd:ef00::2/64 dev eth1
+```   
+(Please note that the first IP address in a block, 2001:41d0:abcd:ef00::1/64 is gateway IP address and must not be used for host addressing).   
+
+Optionally, if you want to use the vRack interface as the main one for IPv6 traffic, the default route can be configured the following way:   
+
+``` bash
+$ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1/64 dev eth1
+```   
+
+Finally, bring up the interface (and verify the configured IP on it):   
+
+``` bash
+$ sudo ip link set up dev eth1
+$ ip -6 addr list dev eth1
+4: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    inet6 2001:41d0:abcd:ef00::2/64 scope global static
+```   
+ 
+ 
+///
+
 <details>
 <summary> <b>Static IP configuration</b></b> </summary>
 <blockquote>
