@@ -305,21 +305,19 @@ Here, we defined a routed subnet 2001:41d0:abcd:ef10::/60 which will be delegate
 
 #### Host-side configuration
 
-<details>
-<summary> <b>Static IP configuration for a host (recommended)</b> </summary>
-<blockquote>
+/// details | Static IP configuration for a host (recommended)   
+When hosting Virtual Machines, we strongly recommend to use static configuration on your host.   
 
-When hosting Virtual Machines, we strongly recommend to use static configuration on your host.
+Set up an IPv6 address, bring up the interface and (optionally) add the default route over the vRack interface:   
 
-<br/><br/>Set up an IPv6 address, bring up the interface and (optionally) add the default route over the vRack interface:
 ``` bash
 $ sudo ip addr add 2001:41d0:abcd:ef00::2/64 dev eth1
 $ sudo ip link set dev eth1 up
 $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
-```
+```    
+ 
+///
 
-</blockquote>
-</details>
 
 <details>
 <summary> <b>Automatic IP configuration (SLAAC) for a host</b></summary>
