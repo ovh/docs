@@ -728,7 +728,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 
 > [!tabs]
 > **E-mail (MX Plan)**
->> Podczas operacji na DKIM Twojej platformy Exchange użyj poniższego wywołania API, aby sprawdzić aktualny status DKIM.
+>> Podczas operacji na DKIM Twojej platformy Email użyj poniższego wywołania API, aby sprawdzić aktualny status DKIM.
 >>
 >> > [!api]
 >> >

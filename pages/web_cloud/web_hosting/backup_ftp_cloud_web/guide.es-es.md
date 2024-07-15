@@ -76,7 +76,7 @@ La generación de la copia de seguridad tarda entre 10 y 15 minutos en realizars
 Una vez finalizada la generación del backup, recibirá un mensaje de correo electrónico en la dirección asociada al usuario de administrador de su hosting Cloud Web.<br>
 El mensaje de correo electrónico incluye un enlace de descarga **válido durante 9 días** desde la recepción del mensaje de correo electrónico:
 
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 El archivo así descargado está en formato *.tar.gz*.
 

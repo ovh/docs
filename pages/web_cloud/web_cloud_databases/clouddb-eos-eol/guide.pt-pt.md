@@ -1,6 +1,6 @@
 ---
 title: 'Anúncios de fim de venda/vida Web Cloud Databases'
-updated: 2024-06-26
+updated: 2024-07-11
 ---
 
 > [!primary]
@@ -14,7 +14,6 @@ Para mais informações, consulte a [política de fim de vida das bases de dados
 
 |Versão|Anúncio de fim de vida|Fim da venda|Fim do suporte|
 |---|---|---|---|
-|MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|2023-07-26|2024-12-23|2025-06-24|
 |MariaDB 10.6|A definir|A definir|A definir|
 |MariaDB 10.11|A definir|A definir|A definir|

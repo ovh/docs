@@ -6,7 +6,7 @@ updated: 2024-07-15
 
 ## Objective
 
-Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bit addresses instead of 32-bit addresses. The High Grade, Scale and Advance range servers (since July 2024) are delivered with a /56 IPv6 block, whereas the older servers are delivered with a /64 IPv6 block. A server delivered with a /56 IPv6 block provides up to 18 quintillion IP addresses.
+Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bit addresses instead of 32-bit addresses. Most OVHcloud dedicated servers are delivered with a /64 IPv6 block, with the exception of High Grade and Scale servers, which are delivered with a /56 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
 
 **This guide explains how to configure IPv6 addresses on your server using various examples.**
 

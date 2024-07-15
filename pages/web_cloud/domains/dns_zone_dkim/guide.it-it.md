@@ -151,7 +151,7 @@ Il destinatario **recipient@otherdomain.ovh** potrà decifrare questa firma con 
 
 > [!primary]
 >
-> Se disponi di un’offerta "Email" (MX Plan) inclusa con un [hosting Web Cloud](/links/web/hosting), un [hosting gratuito 100M](/links/web/domains-free-hosting) o ordinata separatamente, passa allo step "[Configura il DKIM manualmente per un’offerta e-mail OVHcloud](#internal-dkim)".
+> Se disponi di un’offerta "Email" (MX Plan) inclusa con un [hosting Web Cloud](/links/web/hosting), un [hosting gratuito 100M](/links/web/domains-free-hosting) o ordinata separatamente, passa allo step "[Configura il DKIM manualmente per un’offerta email OVHcloud](#internal-dkim)".
 
 La configurazione automatica di DKIM è accessibile per le offerte di posta elettronica [Exchange](/links/web/emails) e [Email Pro](/links/web/email-pro).
 
@@ -667,7 +667,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >> > È possibile che lo `status:` o in `todo`, questo non influisce sulla configurazione della tua zona DNS.
 >>
 > **4. Configura il record DNS**
->> Da [l'area clienti OVHcloud](/links/manager) dove il nome del dominio del tuo Piattaforma E-mail Pro, nella scheda `Web Cloud`{.action}, fai clic su `Nomi di dominio`{.action} nella colonna di sinistra e seleziona il nome di dominio pertinente.<br>
+>> Da [l'area clienti OVHcloud](/links/manager) dove il nome del dominio del tuo Piattaforma Email Pro, nella scheda `Web Cloud`{.action}, fai clic su `Nomi di dominio`{.action} nella colonna di sinistra e seleziona il nome di dominio pertinente.<br>
 >> Clicca sulla scheda `Zona DNS`{.action} e poi su `Aggiungi un record`{.action} nella finestra che appare. Scegli `CNAME` e completa in base ai valori rilevati.<br>
 >>
 >> Se prendiamo i valori dell'esempio nello step "**3. Recupera il record DNS**":
@@ -728,7 +728,7 @@ Seleziona il servizio di posta in questione nelle seguenti schede:
 
 > [!tabs]
 > **Email (MX Plan)**
->> Durante le operazioni sulla DKIM del tuo servizio Exchange, utilizza la chiamata API qui sotto per verificare lo stato attuale della DKIM.
+>> Durante le operazioni sulla DKIM del tuo servizio Email, utilizza la chiamata API qui sotto per verificare lo stato attuale della DKIM.
 >>
 >> > [!api]
 >> >

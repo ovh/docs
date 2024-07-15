@@ -125,7 +125,7 @@ Cet état survient lorsque des mails considérés comme du SPAM ont été émis 
 
 Généralement, ce blocage est accompagné par l'envoi d'un e-mail intitulé **« Abus avec votre hébergement domain.tld »** généré automatiquement par nos robots de sécurité :
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Trois cas de figure sont possibles par rapport à cette situation :
 

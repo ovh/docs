@@ -76,7 +76,7 @@ A geração do backup demora entre 10 e 15 minutos para ser realizado.
 Uma vez finalizada a geração do backup, receberá um e-mail no endereço de e-mail associado ao identificador administrador do seu alojamento Cloud Web.<br>
 Este e-mail contém um link de download **válido para 9 dias** a contar a partir da receção do e-mail:
 
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 O ficheiro assim descarregado está no formato *.tar.gz*.
 

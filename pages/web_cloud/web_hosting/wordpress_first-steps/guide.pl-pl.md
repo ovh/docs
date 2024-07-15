@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Pierwsze kroki w WordPress"
 excerpt: "Dowiedz się, jak utworzyć stronę WWW przy użyciu CMS WordPress"
-updated: 2023-02-17
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -188,6 +188,7 @@ Twoje linki zostaną zbudowane na podstawie wcześniej podanego sluga podczas ed
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, producent szablonu Divi.
     - [Elementor](https://elementor.com/){.external}, inny edytor tematów.
 - Oficjalna strona [WordPress](https://wordpress.org/){.external}.
+- [Użyj SFTP do przesyłania plików lub stron do WordPress](https://developer.wordpress.com/docs/developer-tools/sftp/){.external}.
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

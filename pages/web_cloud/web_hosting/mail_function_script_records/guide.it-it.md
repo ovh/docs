@@ -129,7 +129,7 @@ Questo stato di cose si verifica quando le email considerate SPAM sono state eme
 
 In genere, questo blocco è accompagnato dall'invio di un'email intitolata **"Abuso con il tuo hosting domain.tld"** generato automaticamente dai nostri sistemi di sicurezza:
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 A fronte di questa situazione, sono possibili tre casi:
 

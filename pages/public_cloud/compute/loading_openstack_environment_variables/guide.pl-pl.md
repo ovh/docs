@@ -1,7 +1,7 @@
 ---
 title: 'Zmienne środowiskowe OpenStack'
 excerpt: 'Zarządzaj środowiskiem OpenStack z linii komend'
-updated: 2023-11-29
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -57,24 +57,6 @@ Jeśli CLI są już zainstalowane, sprawdź, czy działają prawidłowo:
 | 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
-
-Hasło użytkownika Horizon można zaszyć w kodzie. W tym celu zastąp element:
-
-```bash
-echo "Please enter your OpenStack Password: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
-```
-
-elementem:
-
-```bash
-#echo "Please enter your OpenStack Password: "
-#read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD="Hasło użytkownika Horizon"
-```
-
-Domyślnie trzeba będzie załadować to środowisko po każdym otwarciu sesji w bieżącym środowisku. Można to zrobić na stałe, dodając źródło openrc.sh do pliku bashrc. Wymaga to ustawienia hasła w pliku.
 
 #### **Windows**
 

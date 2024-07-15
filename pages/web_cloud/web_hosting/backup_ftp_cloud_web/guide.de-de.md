@@ -76,7 +76,7 @@ Die Erstellung des Backups dauert zwischen 10 und 15 Minuten.
 Wenn das Backup bereit ist, erhalten Sie eine E-Mail an die E-Mail-Adresse, die der Administrator-Kundenkennung Ihres Cloud Web Hostings zugewiesen ist.<br>
 Diese E-Mail enthält einen Download-Link, der **9 Tage** ab Eingang der E-Mail gültig ist:
 
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 Die heruntergeladene Datei ist im Format *.tar.gz*.
 

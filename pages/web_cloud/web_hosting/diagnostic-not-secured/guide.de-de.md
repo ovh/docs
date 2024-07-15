@@ -94,7 +94,7 @@ Wenn Sie über ein **importiertes SSL-Zertifikat** verfügen, kontaktieren Sie d
 >
 > Um alle von unseren Diensten versendeten E-Mails einzusehen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](/links/manager) und dann auf `E-Mails von OVHcloud`{.action}:
 >
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
 >
 
 ## Weiterführende Informationen <a name="go-further"></a>

@@ -1,7 +1,7 @@
 ---
 title: 'Modalità bridge IP'
 excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzando la modalità bridge
-updated: 2024-06-19
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -32,7 +32,7 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 >
 > Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 >
-> Questa guida non si applica ai server di gamma [Scale](https://www.ovhcloud.com/it/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/).
+> Questa guida non si applica ai server di gamma [Scale](https://www.ovhcloud.com/it/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/). Lo stesso vale per la gamma di server Advance con le cpu AMD Epyc 4K e 8K lanciate a partire dal luglio 2024.
 >
 > Consulta le guide seguenti: [Configurare la rete su ESXi sulle gamme High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Configurare la rete su Proxmox VE sulle gamme High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) e [Configurare la rete su Windows Server con Hyper-V sulle gamme High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 

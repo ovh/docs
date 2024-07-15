@@ -48,7 +48,7 @@ Vários feedbacks de erro podem aparecer no seu navegador em caso de inacessibil
 
 Para verificar a validade da assinatura relativa ao seu domínio, clique no seu nome (no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager)) no menu contextual e, a seguir, em `Produtos e serviços`{.action}.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-product-and-services.png){.thumbnail}|
+![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-product-and-services.png){.thumbnail}|
 
 Renove o domínio se necessário através do botão `...`{.action} à direita do ecrã e `Renovar o serviço`{.action}.
 

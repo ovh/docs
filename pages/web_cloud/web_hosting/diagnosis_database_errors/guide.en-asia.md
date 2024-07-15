@@ -93,7 +93,7 @@ In your [OVHcloud Control Panel](/links/manager), open the `Hosting plans`{.acti
 
 You have received an email notification stating that the amount of data on your database exceeds the authorised limit. Your database has therefore been switched to read-only mode. This will prevent your website from being modified.
 
-![database-overquota-notification-email](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
+![database-overquota-notification-email](/pages/assets/screens/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
 
 There are three ways you can unblock your database in this situation.
 

@@ -96,7 +96,7 @@ Jeśli zamówiłeś jeden z płatnych **certyfikatów SSL** od naszego partnera 
 >
 > Aby odnaleźć wszystkie e-maile wysłane przez nasze usługi, kliknij w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager), następnie kliknij `E-maile od działu wsparcia`{.action}):
 >
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
 >
 
 ## Sprawdź również <a name="go-further"></a>

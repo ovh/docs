@@ -1,7 +1,7 @@
 ---
 title: 'Cargar las variables de entorno necesarias para OpenStack'
 excerpt: 'Cómo cargar sus variables de entorno para utilizar la API de OpenStack'
-updated: 2023-11-29
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -58,24 +58,6 @@ Si las interfaces de línea de comandos (CLI) ya están instaladas, solo comprue
 | 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
-
-Tenga en cuenta que puede guardar la contraseña predefinida del usuario de Horizon. Para ello, sustituya:
-
-```bash
-echo "Please enter your OpenStack Password: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
-```
-
-Por:
-
-```bash
-#echo "Please enter your OpenStack Password: "
-#read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD="Contraseña del usuario Horizon"
-```
-
-Por defecto, deberá cargar este entorno cada vez que abra una sesión en el entorno actual. Si desea que sea permanente, añada la fuente openrc.sh al archivo bashrc. Para ello, debe predefinir la contraseña en el archivo.
 
 #### **En Windows**
 
