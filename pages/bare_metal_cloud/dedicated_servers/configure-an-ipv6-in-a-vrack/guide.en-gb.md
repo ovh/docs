@@ -319,25 +319,26 @@ $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
 ///
 
 
-<details>
-<summary> <b>Automatic IP configuration (SLAAC) for a host</b></summary>
-<blockquote>
+/// details | Automatic IP configuration (SLAAC) for a host   
+In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together.   
 
-In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
-<br/>Please note that this brings additional risks (such as losing access not only to the host but also to all VMs) and is not recommended.
+Please note that this brings additional risks (such as losing access not only to the host but also to all VMs) and is not recommended.   
 
-<br/><br/>Ensuring IPv6 forwarding is enabled:
+Ensuring IPv6 forwarding is enabled:   
+
 ``` bash
 $ sudo sysctl -w net.ipv6.conf.all.forwarding=1
-```
+```   
 
-<br/>Configuring Router Advertisements to be accepted (on vRack eth1 interface in our example):
+Configuring Router Advertisements to be accepted (on vRack eth1 interface in our example):   
+
 ``` bash
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=2
-```
+```   
+ 
+///
 
-</blockquote>
-</details>
+
 
 
 <details>
