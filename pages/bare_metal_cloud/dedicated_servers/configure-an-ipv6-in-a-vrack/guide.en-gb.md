@@ -207,27 +207,24 @@ After a moment (the configuration must propagate), specific IPv6 address (with t
         
 #### Setup verification
 
-<details>
-<summary> <b>Local</b> </summary>
-<blockquote>
-
-The most basic test is to ping a local IP address on a host:
+/// details | Local   
+The most basic test is to ping a local IP address on a host:   
 
 ``` bash
 debian@host:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
 PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c166) 56 data bytes
 64 bytes from 2001:41d0:900:2100:fe34:97ff:feb0:c166: icmp_seq=1 ttl=64 time=0.043 ms
 64 bytes from 2001:41d0:900:2100:fe34:97ff:feb0:c166: icmp_seq=2 ttl=64 time=0.034 ms
-```
+```   
 
-</blockquote>
-</details>
+ 
+///
 
-<details>
-<summary> <b>Remote</b> </summary>
-<blockquote>
+
+/// details | Remote      
 
 Next, let's verify the connectivity from remote:    
+
 ``` bash
 ubuntu@remote-test:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
 PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c166) 56 data bytes
@@ -235,9 +232,9 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 64 bytes from 2001:41d0:900:2100:fe34:97ff:feb0:c166: icmp_seq=2 ttl=55 time=6.90 ms
 64 bytes from 2001:41d0:900:2100:fe34:97ff:feb0:c166: icmp_seq=3 ttl=55 time=6.92 ms
 ```
+ 
+///
 
-</blockquote>
-</details>
 
 ### Configuring an IPv6 in a vRack for routed mode
 
