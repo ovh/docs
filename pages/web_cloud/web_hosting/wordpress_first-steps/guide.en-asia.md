@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Getting started with WordPress"
 excerpt: "Find out how to create a website with the WordPress CMS"
-updated: 2023-02-17
+updated: 2024-07-15
 ---
 
 ## Objective

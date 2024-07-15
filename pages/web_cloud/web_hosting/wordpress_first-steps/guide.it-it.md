@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Iniziare a utilizzare WordPress"
 excerpt: "Questa guida ti mostra come creare un sito Web con CMS WordPress"
-updated: 2023-02-17
+updated: 2024-07-15
 ---
 
 > [!primary]

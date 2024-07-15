@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Primeiros passos no WordPress"
 excerpt: "Descubra como criar um website com o CMS WordPress"
-updated: 2023-02-17
+updated: 2024-07-15
 ---
 
 > [!primary]
