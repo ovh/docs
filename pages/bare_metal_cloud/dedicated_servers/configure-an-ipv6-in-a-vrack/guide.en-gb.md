@@ -261,14 +261,7 @@ For routed subnet definition any prefix size can be used between /57 and /64.
 <summary> <b>Control Panel actions</b> </summary>
 <blockquote>
 
-Go to `Network > vRack private network`{.action} section add select your vRack you want to manage
-
-You have these kind of information
-
-<img src="/images/700.png" alt="mange my vrack 02"/>
-<br/>
-
-On the right you have a IP section and you can add a new subnet clicking `Add subnet`{.action} button
+After adding Additional IP to your vRack you can manage routed subnet by clicking `Add subnet`{.action} button   
 
 <img src="/images/600.png" alt="vrack select"/>
 <br/>
