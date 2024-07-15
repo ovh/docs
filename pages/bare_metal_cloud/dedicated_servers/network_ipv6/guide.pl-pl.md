@@ -1,7 +1,7 @@
 ---
 title: 'Konfigurowanie adresu IPv6 na serwerach dedykowanych'
 excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHcloud'
-updated: 2024-03-05
+updated: 2024-07-15
 ---
 
 > [!primary]
