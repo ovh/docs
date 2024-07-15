@@ -184,6 +184,7 @@ Your links will then be built from the slug you entered when you edited your art
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, editor of the theme builder Divi
     - [Elementor](https://elementor.com/){.external}, another theme editor
 - Find more resources on the official [WordPress] website (https://wordpress.org/){.external}.
+- [Use SFTP to transfer files or pages to your WordPress](https://developer.wordpress.com/docs/developer-tools/sftp/){.external}.
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
