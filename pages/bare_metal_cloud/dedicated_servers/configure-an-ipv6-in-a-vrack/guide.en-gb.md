@@ -276,7 +276,7 @@ To create a routed subnet, we must first define:
 <img src="/images/800.png" alt="continue"/>
 <br/>
 
-This created routed subnet aa::/64 reachable via next hop 2001:41d0:abcd::ef00 IP inside the first (bridged) subnet
+This created routed subnet 2001:41d0:abcd::ef10::/60 reachable via next hop 2001:41d0:abcd::ef00::2 
 
 <img src="/images/801.png" alt="continue"/>
 <br/>
