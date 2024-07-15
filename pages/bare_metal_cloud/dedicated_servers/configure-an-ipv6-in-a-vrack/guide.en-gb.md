@@ -58,19 +58,18 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 
 While requesting a new Additional IPv6 block, it's important to note that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, defining where public traffic enters your vRack network (thus, where the gateway is located). 
 
-<details>
-<summary> <b>Request new Additional IPv6 block</b> </summary>
-<blockquote>
 
-You can order your new addtional IPv6 block <a href="https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip">here</a>
+/// details | Request new Additional IPv6 block   
+You can order your new addtional IPv6 block <a href="https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip">here</a>   
+ 
+![Configuration Page](images/500.png){.thumbnail}
+   
+Next you need to follow the simple step-by-step instructions.    
+Then you new Additional IPv6 will be available on your vRack configuration page.
 
-<br/><img src="/images/500.png" alt="configuration page"/>
+ 
+///
 
-<br/>Next you need to follow the simple step-by-step instructions. 
-<br/>Then you new Additional IPv6 will be available on your vRack configuration page.
-
-</blockquote>
-</details>
 
 ### Configuring IPv6 in a vRack (basic mode)
 
@@ -80,78 +79,75 @@ In this section we will present basic IPv6 setup for your vRack connected hosts.
 
 The example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belong to the first /64 subnet from a given public /56 Additional IPv6 block. Both leverage the vRack interface for public IPv6 connectivity.
 
-<details>
-<summary> <b>Control Panel</b></summary>
-<blockquote>
+/// details | Control Panel   
 
-Go to `Network > vRack private network`{.action} section and select your vRack you want to manage
+Go to `Network > vRack private network`{.action} section and select your vRack you want to manage   
 
-You have these kind of information
+You have these kind of information   
 
-<img src="/images/700.png" alt="mange my vrack 02"/>
-<br/>
+![manage my vrack 02](images/700.png){.thumbnail}
 
-<br/>On the left side possible options are listed (eligible services to be configured).
+On the left side possible options are listed (eligible services to be configured).   
 
-<br/>On the right you see what is already configured with your vRack.    
+On the right you see what is already configured with your vRack.   
 
-<br/> Select your new Addtional IPv6 and add it to your vRack
+Select your new Addtional IPv6 and add it to your vRack   
 
-<img src="/images/701.png" alt="vrack select"/>
-<br/>
+![vrack select](images/701.png){.thumbnail}
 
-<br/>After this action, you have now your new Addtional IPv6 added to you vRack.
-<br/>You can also activate/deactivate SLAAC option for the first /64 of your block (this one is always bridged) at any time using this radio button.
+After this action, you have now your new Addtional IPv6 added to you vRack.   
+You can also activate/deactivate SLAAC option for the first /64 of your block (this one is always bridged) at any time using this radio button.   
 
-<img src="/images/702.png" alt="continue"/>
-<br/>
+![continue](images/702.png){.thumbnail}
+ 
 
-</blockquote>
-</details>
+ 
+///
 
-
-<details>
-<summary> <b>APIv6 (alternative way)</b></summary>
-<blockquote>
+/// details | APIv6 (alternative way)   
 
 ### Attributing Additional IPv6 to a vRack
 
-When you request an additional IPv6, it is automatically assigned to your vRack.
+When you request an additional IPv6, it is automatically assigned to your vRack.   
 
-But if you removed this new Addtional IPv6 from your vRack you can assign it again using this POST method:
+But if you removed this new Addtional IPv6 from your vRack you can assign it again using this POST method:   
 
-<img src="/images/post-ipv6.png" alt="api post add block"/>
+![api post add block](images/post-ipv6.png){.thumbnail}
 
-<br/>It can be also verified this way:
-<img src="/images/20240418-04.png" alt="GET ipv6 call"/>
-<br/>Now, we see our block configured with a vRack. The next step is to configure your host or VMs.
+It can be also verified this way:   
+
+![GET ipv6 call](images/20240418-04.png){.thumbnail}
+
+Now, we see our block configured with a vRack. The next step is to configure your host or VMs.   
 
 ### Static IP configuration
 
-Once the Additional IPv6 /56 block is attributed to a vRack network, there is always the first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
-Let's check exactly which subnet is bridged:
+Once the Additional IPv6 /56 block is attributed to a vRack network, there is always the first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts.   
+Let's check exactly which subnet is bridged:   
 
 
-<img src="/images/20240418-05.png" alt="API call get ipv6"/>
+![API call get ipv6](images/20240418-05.png){.thumbnail}
 
-<br/>To get more details:
+To get more details:   
 
-<img src="/images/20240418-06.png" alt="API call get bridged"/>
-<br/>Notice that IP autoconfiguration (SLAAC) is turned off by default.
+![API call get bridged](images/20240418-06.png){.thumbnail}
+
+Notice that IP autoconfiguration (SLAAC) is turned off by default.   
 
         
 ### Automatic IP configuration (SLAAC)
-
     
-To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:
+To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:   
+
+![API call POST enable SLAAC](images/20240418-07.png){.thumbnail}
+
+Don't forget to configure SLAAC on your host machine.   
 
 
-<img src="/images/20240418-07.png" alt="API call POST enable SLAAC"/>
+ 
+///
 
-<br/>Don't forget to configure SLAAC on your host machine.
 
-</blockquote>
-</details>
 
 #### Host-side commands
 
