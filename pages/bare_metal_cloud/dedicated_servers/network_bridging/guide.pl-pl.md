@@ -1,7 +1,7 @@
 ---
 title: 'Tryb bridge IP'
 excerpt: 'Dowiedz się, jak używać trybu bridge do konfiguracji dostępu do Internetu Twoich wirtualnych maszyn'
-updated: 2024-06-19
+updated: 2024-07-15
 ---
 
 > [!primary]

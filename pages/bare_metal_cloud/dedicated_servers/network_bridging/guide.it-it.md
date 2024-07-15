@@ -1,7 +1,7 @@
 ---
 title: 'Modalità bridge IP'
 excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzando la modalità bridge
-updated: 2024-06-19
+updated: 2024-07-15
 ---
 
 > [!primary]

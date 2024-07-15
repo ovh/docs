@@ -1,7 +1,7 @@
 ---
 title: Network Bridge einrichten
 excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang Ihrer virtuellen Maschinen konfigurieren
-updated: 2024-06-19
+updated: 2024-07-15
 ---
 
 > [!primary]

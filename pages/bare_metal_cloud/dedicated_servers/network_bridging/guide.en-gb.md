@@ -1,7 +1,7 @@
 ---
 title: 'Configuring a network bridge'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2024-07-10
+updated: 2024-07-15
 ---
 
 > [!primary]

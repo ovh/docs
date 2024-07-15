@@ -1,7 +1,7 @@
 ---
 title: Modo Bridge IP
 excerpt: El modo bridge IP se utiliza para configurar las maquinas virtuales. Es necesario realizar diversas modificaciones en las MV para que la configuracion de red este operativa.
-updated: 2024-06-19
+updated: 2024-07-15
 ---
 
 > [!primary]

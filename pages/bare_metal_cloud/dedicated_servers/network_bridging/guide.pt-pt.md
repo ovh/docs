@@ -1,7 +1,7 @@
 ---
 title: 'Modo bridge IP'
 excerpt: 'Saiba como utilizar o modo bridge para configurar o acesso à Internet das suas máquinas virtuais'
-updated: 2024-06-19
+updated: 2024-07-15
 ---
 
 > [!primary]
