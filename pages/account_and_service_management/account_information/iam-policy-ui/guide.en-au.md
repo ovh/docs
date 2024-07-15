@@ -66,12 +66,12 @@ The following form will be displayed:
 ![Create a policy](images/create_a_policy_01.png){.thumbnail}
 
 - **Policy name** (mandatory): This is the name that will appear in the interfaces. The name should be unique and must not contain any spaces.
-- **Identities** : Select the identities concern by this policy. It's possible to target more than one identity type.
-- **Product types**: Select the types of product to define the scope of the policy. One or more product types can be included in the same policy.
+- **Identities**: Select the identities affected by this policy. It's possible to target more than one identity type.
+- **Product types**: Select the type of product to define the scope of the policy. One or more product types can be included in the same policy.
 - **Resources**: Add resources or resource groups to be covered by the policy. The resources available are filtered by the product type selected beforehand.
 - **Actions**.
 
-There are 3 different ways to add actions:
+There are 4 different ways to add actions:
 
 - Activating the `Authorise all actions`{.action} option
 
@@ -124,7 +124,7 @@ A search field is available to help identify a specific action on the list.
 
 #### Editing a policy
 
-To edit an existing policy, click the `...`{.action} button to the right of the policy and click `Edit policy`{.action}.
+To edit an existing policy, click the `...`{.action} button to the right of the policy and click `Modify policy`{.action}.
 
 ![Edit a policy](images/editing_a_policy.png){.thumbnail}
 
