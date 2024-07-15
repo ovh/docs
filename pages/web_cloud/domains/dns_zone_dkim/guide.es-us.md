@@ -42,7 +42,7 @@ El registro DKIM (**D**omain**K**eys **I**dentified **M**ail) permite firmar los
 - Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](/links/manager) o desde su proveedor de servicios si está registrado fuera de OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Haber contratado uno de los productos de correo:
-    - Correo electrónico (MX Plan) OVHcloud. Esta puede adquirirse a través de un [plan de hosting Web Cloud](/links/web/hosting), un [alojamiento gratuito 100M](/links/web/domains-free-hosting) o un MX Plan contratado por separado.
+    - Correo electrónico (MX Plan) OVHcloud. Esta puede adquirirse a través de un [plan de hosting Web Cloud](/links/web/hosting) o un MX Plan contratado por separado.
     - [Exchange](/links/web/emails-hosted-exchange) o [Private Exchange](/links/web/emails-hosted-exchange).
     - Una solución de correo fuera de OVHcloud con DKIM.
 
@@ -149,7 +149,7 @@ El destinatario **recipient@otherdomain.ovh** podrá descifrar esta firma con la
 
 > [!primary]
 >
-> Si dispone de un servicio de correo electrónico (MX Plan) incluido con un [alojamiento Web Cloud](/links/web/hosting), un [alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratado por separado, vaya a la etapa "[Configurar el DKIM manualmente para un servicio de correo electrónico de OVHcloud](#internal-dkim)".
+> Si dispone de un servicio de correo electrónico (MX Plan) incluido con un [alojamiento Web Cloud](/links/web/hosting) o contratado por separado, vaya a la etapa "[Configurar el DKIM manualmente para un servicio de correo electrónico de OVHcloud](#internal-dkim)".
 
 La configuración automática del DKIM está disponible para los servicios de correo [Exchange](/links/web/emails).
 
