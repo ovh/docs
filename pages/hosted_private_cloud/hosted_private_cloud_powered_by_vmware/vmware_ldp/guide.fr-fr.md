@@ -42,7 +42,7 @@ Pour plus d'informations concernant les caractéristiques techniques de Logs Dat
 
 ### Les logs et labels
 
-#### Les *kinds* dispnibles
+#### Les *kinds* disponibles
 
 Un *kind* est un « type » de logs que votre produit génère.
 
