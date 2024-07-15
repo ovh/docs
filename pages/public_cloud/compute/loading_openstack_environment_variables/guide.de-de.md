@@ -1,7 +1,7 @@
 ---
 title: 'OpenStack Umgebungsvariablen einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Umgebungsvariablen für die Nutzung der OpenStack API einrichten'
-updated: 2023-11-29
+updated: 2024-07-15
 ---
 
 ## Ziel
@@ -54,24 +54,6 @@ Wenn die CLIs schon installiert sind, überprüfen Sie deren Funktion wie folgt:
 | 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
-
-Das Passwort des Horizon-Nutzers kann fest gespeichert werden. Dazu ersetzen Sie den folgenden Abschnitt:
-
-```bash
-echo "Please enter your OpenStack Password: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
-```
-
-Fügen Sie Folgendes ein:
-
-```bash
-#echo "Please enter your OpenStack Password: "
-#read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD="Ihr Benutzerpasswort"
-```
-
-Diese Umgebung muss für jede neue Sitzung in der bestehenden Umgebung geladen werden. Sie können dies aber auch auf permanente Weise einrichten, indem die Quelle (*openrc.sh*) zur Datei *bashrc* hinzugefügt wird. Dazu muss das Passwort in die Datei geschrieben werden. 
 
 #### **Mit Windows**
 
