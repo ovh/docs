@@ -266,7 +266,12 @@ After adding Additional IP to your vRack you can manage routed subnet by clickin
 <img src="/images/600.png" alt="vrack select"/>
 <br/>
 
-In this way you have this modal to entrer your new address
+To create a routed subnet, we must first define:
+<br/>- <b>subnet in CIDR notation</b> (size between /57 and /64)
+<br/>- <b>next-hop address</b> (so the host's IPv6 address)
+
+<br/><br/>Please note that a given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
+<br/>
 
 <img src="/images/800.png" alt="continue"/>
 <br/>
