@@ -96,16 +96,23 @@ You have these kind of information
 
 <br/>On the right you see what is already configured with your vRack.    
 
+### Static IP configuration   
+
 <br/> Select your new Addtional IPv6 and add it to your vRack
 
 <img src="/images/701.png" alt="vrack select"/>
 <br/>
 
 <br/>After this action, you have now your new Addtional IPv6 added to you vRack.
-<br/>You can also activate/deactivate SLAAC option for the first /64 of your block (this one is always bridged) at any time using this radio button.
+
+### Automatic IP configuration (SLAAC)
+
+<br/>To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled for the first /64 of your block (this one is always bridged) at any time using this radio button:
 
 <img src="/images/702.png" alt="continue"/>
 <br/>
+
+<br/>Don't forget to configure SLAAC on your host machine.
 
 </blockquote>
 </details>
