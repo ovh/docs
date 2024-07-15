@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Primeiros passos no WordPress"
 excerpt: "Descubra como criar um website com o CMS WordPress"
-updated: 2023-02-17
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -188,6 +188,7 @@ Os seus links serão construídos a partir do slug indicado anteriormente aquand
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, editor do projeto temático Divi.
     - [Elementor](https://elementor.com/){.external}, outro editor de temas.
 - O site oficial [WordPress](https://wordpress.org/){.external}.
+- [Utilizar SFTP para transferir ficheiros ou páginas para o seu WordPress](https://developer.wordpress.com/docs/developer-tools/sftp/){.external}.
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 

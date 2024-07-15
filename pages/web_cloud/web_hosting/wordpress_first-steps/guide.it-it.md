@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Iniziare a utilizzare WordPress"
 excerpt: "Questa guida ti mostra come creare un sito Web con CMS WordPress"
-updated: 2023-02-17
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -188,6 +188,7 @@ I tuoi link saranno costruiti utilizzando lo slug inserito precedentemente duran
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, editore del produttore di temi Divi.
     - [Elementor](https://elementor.com/){.external}, un altro editor di temi.
 - Il sito ufficiale [WordPress](https://wordpress.org/){.external}.
+- [Utilizzare SFTP per trasferire file o pagine verso WordPress](https://wordpress.com/it/support/sftp/){.external}.
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

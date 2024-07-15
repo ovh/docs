@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Erste Schritte mit WordPress"
 excerpt: "Erfahren Sie hier, wie Sie eine Website mit dem CMS WordPress erstellen"
-updated: 2023-02-17
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -185,6 +185,7 @@ Ihre Links werden auf dem *Slug* basierend erstellt, der zuvor beim Editieren Ih
     - [Elegant Themes](https://www.elegantthemes.com/){.external}
     - [Elementor](https://elementor.com/){.external}
 - Finden Sie mehr Informationen auf der offiziellen Website von [WordPress](https://wordpress.org/){.external}.
+- [Verwenden Sie SFTP, um Dateien oder Seiten auf Ihr WordPress zu übertragen](https://wordpress.com/de/support/sftp/){.external}.
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
