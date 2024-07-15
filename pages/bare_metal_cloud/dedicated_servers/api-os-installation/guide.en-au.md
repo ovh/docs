@@ -321,7 +321,7 @@ The following payload will install Windows Server 2022 Standard (Core) in French
     },
     {
       "key": "postInstallationScript",
-      "value": "ImNvdWNvdSBwb3N0SW5zdGFsbGF0aW9uU2NyaXB0UG93ZXJTaGVsbCIgfCBPdXQtRmlsZSAtRmlsZVBhdGggIiQoJEVudjpTeXN0ZW1Sb290KVxURU1QXGNvdWNvdS50eHQiCihHZXQtSXRlbVByb3BlcnR5IC1MaXRlcmFsUGF0aCAiUmVnaXN0cnk6OkhLRVlfTE9DQUxfTUFDSElORVxTT0ZUV0FSRVxNaWNyb3NvZnRcQ3J5cHRvZ3JhcGh5IiAtTmFtZSAiTWFjaGluZUd1aWQiKS5NYWNoaW5lR3VpZCB8IE91dC1GaWxlIC1GaWxlUGF0aCAiJCgkRW52OlN5c3RlbVJvb3QpXFRFTVBcY291Y291LnR4dCIgLUFwcGVuZAooR2V0LURhdGUpLlRvVW5pdmVyc2FsVGltZSgpLlRvU3RyaW5nKCJ5eXl5LU1NLWRkIEhIOm1tOnNzIikgfCBPdXQtRmlsZSAtRmlsZVBhdGggIiQoJEVudjpTeXN0ZW1Sb290KVxURU1QXGNvdWNvdS50eHQiIC1BcHBlbmQK"
+      "value": "ImNvdWNvdSBwb3N0SW5zdGFsbGF0aW9uU2NyaXB0UG93ZXJTaGVsbCIgfCBPdXQtRmlsZSAtRmlsZVBhdGggImM6XG92aHVwZFxzY3JpcHRcY291Y291LnR4dCIKKEdldC1JdGVtUHJvcGVydHkgLUxpdGVyYWxQYXRoICJSZWdpc3RyeTo6SEtMTVxTT0ZUV0FSRVxNaWNyb3NvZnRcQ3J5cHRvZ3JhcGh5IiAtTmFtZSAiTWFjaGluZUd1aWQiKS5NYWNoaW5lR3VpZCB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCihHZXQtRGF0ZSkuVG9Vbml2ZXJzYWxUaW1lKCkuVG9TdHJpbmcoInl5eXktTU0tZGQgSEg6bW06c3MiKSB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCg=="
     }
   ]
 }
@@ -336,9 +336,9 @@ Even though the post-installation script could be sent to API directly in clear 
 Here is the clear-text post-installation PowerShell script from the example above:
 
 ```ps1
-"coucou postInstallationScriptPowerShell" | Out-File -FilePath "$($Env:SystemRoot)\TEMP\coucou.txt"
-(Get-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography" -Name "MachineGuid").MachineGuid | Out-File -FilePath "$($Env:SystemRoot)\TEMP\coucou.txt" -Append
-(Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss") | Out-File -FilePath "$($Env:SystemRoot)\TEMP\coucou.txt" -Append
+"coucou postInstallationScriptPowerShell" | Out-File -FilePath "c:\ovhupd\script\coucou.txt"
+(Get-ItemProperty -LiteralPath "Registry::HKLM\SOFTWARE\Microsoft\Cryptography" -Name "MachineGuid").MachineGuid | Out-File -FilePath "c:\ovhupd\script\coucou.txt" -Append
+(Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss") | Out-File -FilePath "c:\ovhupd\script\coucou.txt" -Append
 ```
 
 As you can see, this PowerShell script for Windows is equivalent to the previous bash script for Linux.
@@ -353,7 +353,10 @@ While running Windows post-installation script, the following files while remain
 - The script itself: `c:\ovhupd\script\custrun.ps1` (or `c:\ovhupd\script\custrun.cmd` if batch script).
 - Log file: `c:\ovhupd\script\customerscriptlog.txt`.
 
-Those 2 absolute paths are accessible in your script respectively via the following environnement variables: `postInstallationScriptPath` and `postInstallationScriptLogPath`.
+> [!warning]
+>
+> The Windows post-installation script is run as the `Administrator` local account. You can finish your script with a `shutdown /l` command to logoff the Windows session, although the `Administrator` local account is locked and cannot be accessed remotely (via RDP connexion).
+>
 
 #### Example reply
 
