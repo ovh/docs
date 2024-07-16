@@ -13,6 +13,12 @@ updated: 2024-07-16
 
 Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode bridged (via des MAC Virtuelles) n'est pas possible. Il en est de même pour les nouveaux serveurs de dernière génération livrés avec les cpu AMD Epyc 4K et 8K. Il est donc nécessaire de configurer les Additional IP en mode routé ou via le vRack.
 
+> [!warning]
+>
+> Il n'est pas possible d'utiliser une IP Failover (/32) directement dans le vRack. Pour utiliser une IP Failover, elle doit être configurée sur une interface publique et ne peut pas être directement intégrée au vRack.
+>
+
+
 > [!primary]
 >
 > D'ici la fin de l'année 2024, cette fonctionnalité sera livrée pour l'ensemble des gammes High Grade, SCALE & ADVANCE.
