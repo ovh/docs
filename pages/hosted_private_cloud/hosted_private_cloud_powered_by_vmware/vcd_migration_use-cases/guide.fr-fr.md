@@ -35,7 +35,8 @@ details[open]>summary::before {
   - « [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) ».
   - « [VMware Cloud Director - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) ».
 - Avoir une bonne connaissance du réseau au sein de l'univers OVHcloud, vous pouvez consulter la page: <https://www.ovhcloud.com/fr/network/>.
-- Être administrateur d'au moins une ou deux organisations VCD sur la plateforme VCF on OVHcloud et les services vSphere managé (Hosted Private Cloud VMware on OVHcloud ou PCC) afin d'avoir les droits suffisant pour effectuer la migration des données (déchiffrement, etc..). 
+- Être administrateur d'au moins une ou deux organisations VCD sur la plateforme VCF on OVHcloud et les services vSphere managé (Hosted Private Cloud VMware on OVHcloud ou PCC) afin d'avoir les droits suffisant pour effectuer la migration des données (déchiffrement, etc..).
+- Être connecté à l'espace client.
 
 ## En pratique
 
@@ -53,6 +54,8 @@ Vous serez ainsi équipé pour naviguer dans les complexités des migrations de 
 
 ///
 
+## Étape 1 - Migration entre des systèmes vCenter Server
+or
 ## Étape 1 - Migration hybride vSphere/vCenter managé vers du VCD managé (OVHcloud)
 
 /// details | Comment va s'effectuer la migration vSphere/vCenter vers VCD ?
@@ -61,19 +64,77 @@ Le but est de migrer toutes les instances vSphere managé on OVHcloud existantes
 
 Ces instances clientes proviennent principalement des offres **Essential** et **SDDC** mais nous pouvons avoir des références **PRE/NSX/vSphere** et même vSAN pour les premiers hosts vSAN.
 
-Voici ici l'exemple d'une migration de machines virtuelles vSphere vers VCD.
+### Les schémas cibles
+
+**ÉTAPE 1**
+![Schema 1](images/shema_1.png){.thumbnail}
+
+**Étape 2**
+![Schema 2](images/shema_2.png){.thumbnail}
+
+**Étape 3**
+![Schema 3](images/shema_3.png){.thumbnail}
+
+En tant que propriétaire de la migration VCD, nous souhaitons configurer vCenter et ESXi sur le vSphere managé OVHcloud et le routeur sur le VCD afin de pouvoir ensuite effectuer une migration vCenter croisée (cross vCenter).
+
+### Résumé des scenarios OVHcloud
+
+**ESS (easy):**
+- Public network
+- vlan vRack
+
+**SDDC 2016 (hard if NSX-v usage):**
+- Public network
+- vxlan
+- vlan vRack
+
+**SDDC 2018 (hard if NSX-v usage):**
+- Public network
+- vxlan
+- vlan vRack
+
+**RE (hard if NSX-v usage):**
+- Public network
+- vxlan
+- vlan vRack
+
+**vSphere (easy):**
+- Public network
+- vlan vRack
+
+**NSX (very hard):**
+- pre created networks
+- Public network
+- vlan vRack
+
+Voici ici l'exemple d'une migration de machines virtuelles vSphere managé (réseau publique + vlan vRack) vers VCD.
 
 ### Depuis le control panel OVHcloud
 
 Pour accéder au vSphere managé (Hosted Private Cloud VMware on OVHcloud) web interface.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) avec un compte administrateur et cliquez sur l'onglet `Hosted Private Cloud`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) avec un compte administrateur.
 
-Sélectionnez votre infrastructure: `VMware > ... > Informations générales`{.action}.
+Et cliquez sur l'onglet de la bar de navigation du menu principal: `Hosted Private Cloud`{.action}.
+
+Sélectionnez votre infrastructure: `VMware > Mon vSphere managé (pcc) > Informations générales`{.action}.
 
 Puis cliquez sur le lien de redirection: `Interface web`{.action}.
 
 Une fois connecté sur l'interface web vSphere/vCenter. Nous pouvons commencer les réglages nécessaires à la migration de nos VM d'un point A (vSphere/vCenter managé pcc) à un point B (vSphere/vCenter managé VCD).
+
+Votre utilisateur vSphere ou role IAM vSphere a besoin des droits suivants:
+
+| **Droit**                  | **Rôle**  |
+|----------------------------|-----------|
+| **Accès vSphere**          | Opérateur |
+| **Accès au vmNetwork**     | Opérateur |
+| **Accès au V(x)Lans**      | Opérateur |
+| **Ip FailOver**            | oui       |
+| **IP**                     | oui       |
+| **Interface NSX**          | oui       |
+| **Gestion du chiffrement** | oui       |
+
 
 #### Politique de stockage (non vMotion)
 
@@ -83,8 +144,7 @@ Pour que la politique de stockage puisse taguer les disques souhaités, il faut 
 
 Le Storage vMotion permet de modifier l'emplacement de stockage des fichiers de la machine virtuelle et cela en conservant la machine virtuelle sous tension. Il est possible de déplacer la machine virtuelle complètement ou disque par disque.
 
-
-#### La migration de VM
+#### Migration de VM (à chaud)
 
 ![VCD Migration](images/manager_web-interface.png){.thumbnail}
 
