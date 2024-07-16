@@ -1,7 +1,7 @@
 ---
 title: "Webhosting: Laufzeitumgebung, PHP-Version, .ovhconfig"
 excerpt: "Erfahren Sie hier, wie Sie die Einstellungen von Laufzeitumgebung, PHP-Version, Firewall, Engine, Modus und .ovhconfig ändern"
-updated: 2024-03-12
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -12,6 +12,7 @@ updated: 2024-03-12
 
 [OVHcloud Webhostings](/links/web/hosting){.external} erlauben das Hosten von Websites aller Art, solange sie mit der [Konfiguration unserer Shared Hosting Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel sind.
 
+Die Änderung der Datei **php.ini** ist bei den Webhosting Angeboten nicht verfügbar. Das liegt daran, dass die PHP-Konfiguration global für die gesamte Shared Hosting Infrastruktur ist.
 Sie können jedoch die folgenden Einstellungen für Ihr Webhosting ändern:
 
 - [Laufzeitumgebung](#runtime-environment)
