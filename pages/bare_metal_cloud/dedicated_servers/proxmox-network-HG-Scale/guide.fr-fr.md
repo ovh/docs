@@ -53,7 +53,7 @@ Proxmox est basé sur une distribution Debian. Dans ce guide, la configuration r
 Il faut :
 
 - se connecter en SSH sur Proxmox ;
-- créer un agrégat (linux bond) ;
+- créer un agrégat (linux bond), uniquement pour les gammes High Grade & SCALE ;
 - créer un bridge ;
 - autoriser le forwarding ;
 - autoriser le proxy_arp ;
