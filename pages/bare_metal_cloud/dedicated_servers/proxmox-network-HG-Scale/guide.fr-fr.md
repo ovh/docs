@@ -74,88 +74,104 @@ Tout se passe dans le fichier `/etc/network/interfaces` :
 vi /etc/network/interfaces
 ```
 
-```bash
-auto lo
-iface lo inet loopback
-  # Activation de l'ip_forward et du proxy_arp
-  up echo "1" > /proc/sys/net/ipv4/ip_forward
-  # Activation du proxy_arp pour le bond public uniquement
-  up echo "1" > /proc/sys/net/ipv4/conf/bond0/proxy_arp
+> [!tabs]
+> Gammes High Grade & SCALE
+>> ```bash
+>> auto lo
+>> iface lo inet loopback
+>>   # Activation de l'ip_forward et du proxy_arp
+>>   up echo "1" > /proc/sys/net/ipv4/ip_forward
+>>   # Activation du proxy_arp pour le bond public uniquement
+>>   up echo "1" > /proc/sys/net/ipv4/conf/bond0/proxy_arp
+>> 
+>> # interface publique 1
+>> auto ens33f0
+>> iface ens33f0 inet manual
+>> 	bond-master bond0
+>> 
+>> # interface publique 2
+>> auto ens33f1
+>> iface ens33f1 inet manual
+>> 	bond-master bond0
+>> 
+>> # interface privée 1
+>> auto ens35f0
+>> iface ens35f0 inet manual
+>> 
+>> # interface privée 2
+>> auto ens35f1
+>> iface ens35f1 inet manual
+>> 
+>> # Agrégat LACP sur les interfaces publiques
+>> # configuré en mode DHCP sur cet exemple
+>> # Porte l'IP publique du serveur
+>> auto bond0
+>> iface bond0 inet static
+>>  address PUB_IP_DEDICATED_SERVER/32
+>> 	gateway 100.64.0.1
+>> 	bond-slaves ens33f0 ens33f1
+>> 	bond-mode 4
+>> 	bond-miimon 100
+>> 	bond-downdelay 200
+>> 	bond-updelay 200
+>> 	bond-lacp-rate 1
+>> 	bond-xmit-hash-policy layer3+4
+>> 	# Ici il faut renseigner l'adresse MAC d'une des deux interface publiques
+>> 	hwaddress AB:CD:EF:12:34:56
+>>     
+>> #Private
+>> auto bond1
+>> iface bond1 inet static
+>> 	bond-slaves ens35f0 ens35f1
+>> 	bond-mode 4
+>> 	bond-miimon 100
+>> 	bond-downdelay 200
+>> 	bond-updelay 200
+>> 	bond-lacp-rate 1
+>> 	bond-xmit-hash-policy layer3+4
+>> 	# Ici il faut renseigner l'adresse MAC d'une des deux interface privées
+>> 	hwaddress GH:IJ:KL:12:34:56
+>>
+>> auto vmbr0
+>> # Configuration du bridge avec une adresse privée et l'ajout de route(s) pour y envoyer les Additional IP
+>> # A.B.C.D/X  => Subnet des Additional IP affectées au serveur, cela peut être un host avec du /32
+>> auto vmbr0
+>> iface vmbr0 inet dhcp
+>> 	# Définissez une IP privée, elle ne doit pas chevaucher vos réseaux privés existants sur le vRack par exemple
+>> 	address 192.168.0.1/24 
+>> 	bridge-ports none
+>> 	bridge-stp off
+>> 	bridge-fd 0
+>> 	# Ajoutez une Additional IP unique
+>> 	up ip route add A.B.C.D/32 dev vmbr0
+>> 	# Ajoutez un bloc IP
+>> 	up ip route add A.B.C.D/28 dev vmbr0
+>> 
+>> # Bridge utilisé pour les réseaux privés sur le vRack 
+>> # La fonctionnalité VLAN est activée
+>> auto vmbr1
+>> iface vmbr1 inet manual
+>>         bridge-ports bond1
+>>         bridge-stp off
+>>         bridge-fd 0
+>>         bridge-vlan-aware yes
+>>         bridge-vids 2-4094
+>> 
+>> ```
+> Gamme ADVANCE
+>> Pour les serveurs de la gamme ADVANCE qui ne possèdent pas 4 interfaces réseau, il est inutile de configurer le bonding. Vous pouvez passer directement à la configuration des interfaces disponibles.
+>> 
+>> ```bash
+>> auto vmbr0
+>> iface vmbr0 inet static
+>>     address 192.168.1.2
+>>     netmask 255.255.255.0
+>>     gateway 192.168.1.1
+>>     bridge_ports eth0
+>>     bridge_stp off
+>>     bridge_fd 0 
+>> ```
 
-# interface publique 1
-auto ens33f0
-iface ens33f0 inet manual
-	bond-master bond0
-
-# interface publique 2
-auto ens33f1
-iface ens33f1 inet manual
-	bond-master bond0
-
-# interface privée 1
-auto ens35f0
-iface ens35f0 inet manual
-
-# interface privée 2
-auto ens35f1
-iface ens35f1 inet manual
-
-# Agrégat LACP sur les interfaces publiques
-# configuré en mode DHCP sur cet exemple
-# Porte l'IP publique du serveur
-auto bond0
-iface bond0 inet static
-    address PUB_IP_DEDICATED_SERVER/32
-	gateway 100.64.0.1
-	bond-slaves ens33f0 ens33f1
-	bond-mode 4
-	bond-miimon 100
-	bond-downdelay 200
-	bond-updelay 200
-	bond-lacp-rate 1
-	bond-xmit-hash-policy layer3+4
-	# Ici il faut renseigner l'adresse MAC d'une des deux interface publiques
-	hwaddress AB:CD:EF:12:34:56
-    
-#Private
-auto bond1
-iface bond1 inet static
-	bond-slaves ens35f0 ens35f1
-	bond-mode 4
-	bond-miimon 100
-	bond-downdelay 200
-	bond-updelay 200
-	bond-lacp-rate 1
-	bond-xmit-hash-policy layer3+4
-	# Ici il faut renseigner l'adresse MAC d'une des deux interface privées
-	hwaddress GH:IJ:KL:12:34:56
-
-auto vmbr0
-# Configuration du bridge avec une adresse privée et l'ajout de route(s) pour y envoyer les Additional IP
-# A.B.C.D/X  => Subnet des Additional IP affectées au serveur, cela peut être un host avec du /32
-auto vmbr0
-iface vmbr0 inet dhcp
-	# Définissez une IP privée, elle ne doit pas chevaucher vos réseaux privés existants sur le vRack par exemple
-	address 192.168.0.1/24 
-	bridge-ports none
-	bridge-stp off
-	bridge-fd 0
-	# Ajoutez une Additional IP unique
-	up ip route add A.B.C.D/32 dev vmbr0
-	# Ajoutez un bloc IP
-	up ip route add A.B.C.D/28 dev vmbr0
-
-# Bridge utilisé pour les réseaux privés sur le vRack 
-# La fonctionnalité VLAN est activée
-auto vmbr1
-iface vmbr1 inet manual
-        bridge-ports bond1
-        bridge-stp off
-        bridge-fd 0
-        bridge-vlan-aware yes
-        bridge-vids 2-4094
-
-```
 
 A ce stade, relancez les services réseau ou redémarrez le serveur :
 
