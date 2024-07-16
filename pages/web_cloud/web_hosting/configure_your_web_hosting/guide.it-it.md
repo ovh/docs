@@ -11,6 +11,8 @@ updated: 2024-07-16
 ## Obiettivo
 
 Le offerte di [hosting Web OVHcloud](/links/web/hosting){.external} permettono di ospitare il sito Web che si desidera, purché sia compatibile con la [configurazione delle nostre infrastrutture condivise](https://webhosting-infos.hosting.ovh.net){.external}.
+
+La modifica del file **php.ini** non è disponibile sulle offerte di hosting Web. Questo perché la configurazione PHP è globale all'intera infrastruttura condivisa.
 Tuttavia, sulle nostre infrastrutture condivise, è possibile modificare i seguenti parametri per il tuo hosting Web:
 
 - [ambiente di esecuzione](#runtime-environment)
