@@ -7,6 +7,8 @@ updated: 2024-07-16
 ## Objective
 
 The [OVHcloud Web Hosting](/links/web/hosting){.external} offers allow you to host your websites, provided they are compatible with the [configuration of our shared infrastructure](https://webhosting-infos.hosting.ovh.net){.external}.
+
+Editing the **php.ini** file is not available on Web Hosting plans. This is because the PHP configuration is global to the entire shared infrastructure.
 However, on our shared infrastructure, you can modify the following settings for your web hosting plan:
 
 - [Runtime environment](#runtime-environment)
