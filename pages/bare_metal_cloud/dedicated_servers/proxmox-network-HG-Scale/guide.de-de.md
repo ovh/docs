@@ -1,7 +1,7 @@
 ---
-title: 'Netzwerk auf Proxmox VE für die High Grade & SCALE Reihen konfigurieren'
-excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Proxmox VE für die High Grade & SCALE Reihen einrichten'
-updated: 2024-07-08
+title: 'Netzwerk auf Proxmox VE einrichten'
+excerpt: 'Erfahren Sie hier, wie Sie das Netzwerk auf Proxmox VE konfigurieren'
+updated: 2024-07-16
 ---
 
 > [!primary]
