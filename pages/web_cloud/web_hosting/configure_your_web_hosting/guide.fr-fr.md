@@ -1,12 +1,14 @@
 ---
 title: "Hébergement web : environnement, version PHP, « .ovhconfig »"
 excerpt: "Découvrez comment modifier l'environnement d'exécution, la version PHP, le pare-feu applicatif, le moteur, le mode et le « .ovhconfig » d'un hébergement web"
-updated: 2024-03-12
+updated: 2024-07-16
 ---
 
 ## Objectif
 
 Les offres d'[hébergement web OVHcloud](/links/web/hosting){.external} permettent d’héberger le site web que vous souhaitez, tant que celui-ci est compatible avec la [configuration de nos infrastructures mutualisées](https://webhosting-infos.hosting.ovh.net){.external}.
+
+La modification du fichier **php.ini** est indisponible sur les offres d'hébergements web. Ceci du fait que la configuration PHP est globale à l'ensemble de l'infrastructure mutualisée.
 Toutefois, sur nos infrastructures mutualisées, vous pouvez modifier les paramètres suivants pour votre hébergement web :
 
 - [l'environnement d'exécution](#runtime-environment)
