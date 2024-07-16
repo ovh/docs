@@ -238,11 +238,6 @@ ADDITIONAL_IP    				# doit retourner votre additional ip
 
 Cette configuration est plus souple, vous n'avez pas à associer d'Additional IP à un serveur mais au vRack. Cela signifie que si une machine virtuelle souhaite utiliser une adresse Additional IP, elle peut la réclamer directement sans aucune configuration supplémentaire et quel que soit l'hôte sur lequel elle est hébergée.
 
-> [!warning]
->
-> Cette configuration est limitée à 600 Mb/s pour le trafic sortant.
->
-
 #### Prérequis
 
 * Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses. Le bloc doit être pointé vers le vRack.
