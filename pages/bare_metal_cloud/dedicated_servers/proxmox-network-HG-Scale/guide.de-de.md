@@ -1,5 +1,5 @@
 ---
-title: 'Netzwerk auf Proxmox VE'
+title: 'Netzwerk auf Proxmox VE einrichten'
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Proxmox VE'
 updated: 2024-07-16
 ---
