@@ -59,7 +59,7 @@ Récap étapes :
 7. Associer l'utilisateur local à la politique IAM (No user_access).
 8. Confirmation av une connexion au control panel OVHcloud et avoir le message d'erreur + une connexion à vSphere OK.
 
-Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action} et restez dans l'onglet `Politiques.`{.action}.
+Depuis `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action} et restez dans l'onglet `Politiques.`{.action}.
 
 Cliquez sur: `Créer une politique`{.action}
 
