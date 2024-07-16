@@ -81,6 +81,8 @@ Pour que la politique de stockage puisse taguer les disques souhaités, il faut 
 
 #### Politique de stockage (vMotion)
 
+Le Storage vMotion permet de modifier l'emplacement de stockage des fichiers de la machine virtuelle et cela en conservant la machine virtuelle sous tension. Il est possible de déplacer la machine virtuelle complètement ou disque par disque.
+
 
 #### La migration de VM
 
