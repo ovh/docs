@@ -17,7 +17,7 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 ## Wymagania początkowe
 
 - Posiadanie [domeny](/links/web/domains){.external}i możliwość zarządzania nią w Panelu klienta
-- Posiadanie [hostingu WWW](/links/web/hosting){.external}.
+- Posiadanie [hostingu WWW](/links/web/hosting){.external} (poza ofertami "Darmowy hosting 100M" i "Start 10M").
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 > [!warning]
