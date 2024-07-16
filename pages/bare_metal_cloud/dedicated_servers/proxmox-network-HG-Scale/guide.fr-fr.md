@@ -254,7 +254,7 @@ Cette configuration est plus souple, vous n'avez pas à associer d'Additional IP
 
 Il vous faut:
 
-* créer un agrégat;
+* créer un agrégat, uniquement pour les gammes High Grade & SCALE;
 * créer un bridge raccordé à l’agrégat;
 
 Premièrement, ajoutez votre bloc public d’adresses IP au vRack. Pour ce faire, allez dans la section `Bare Metal Cloud`{.action} de votre espace client OVHcloud et ouvrez le menu `vRack`{.action}.
