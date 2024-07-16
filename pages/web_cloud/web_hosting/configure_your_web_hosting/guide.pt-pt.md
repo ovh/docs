@@ -11,6 +11,8 @@ updated: 2024-07-16
 ## Objetivo
 
 As ofertas de [alojamento web da OVHcloud](/links/web/hosting){.external} permitem alojar o site que quiser, desde que seja compatível com a [configuração das nossas infraestruturas partilhadas](https://webhosting-infos.hosting.ovh.net){.external}.
+
+A modificação do ficheiro **php.ini** não está disponível nas ofertas de alojamento web. Isto porque a configuração PHP é global para o conjunto da infraestrutura partilhada.
 No entanto, nas nossas infraestruturas partilhadas, pode modificar os seguintes parâmetros para o seu alojamento web:
 
 - [o ambiente de execução](#runtime-environment)
