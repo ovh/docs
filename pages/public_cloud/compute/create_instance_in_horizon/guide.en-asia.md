@@ -17,6 +17,8 @@ You can create multiple Instances directly in the Horizon interface, and also co
 
 ## Instructions
 
+As a general rule, we recommend creating your networks first before you begin with the creation of your instance.
+
 To start creating an Instance, log in to the Horizon interface. If you are unsure about how to do this, please refer to our [guide](/pages/public_cloud/compute/introducing_horizon).
 
 Next, click `Compute`{.action} in the left-hand menu, then `Instances`{.action}.
@@ -62,7 +64,34 @@ Pre-built flavors are available for you, select the flavor of your choice undern
 
 **Networks**
 
-![createinstance](images/create-instance-step6á.png){.thumbnail}
+In this section, you can create a private network to attach to your instance. To access this tab, click on the `Networks`{.action} tab underneath `Project`{.action}.
+
+![createinstance](images/create-instance-step6.png){.thumbnail}
+
+> [!tabs]
+> 1. **Network**
+>>
+>> **Network Name:** Enter a name for your network.<br>
+>> **Enable Admin State:** Leave this option checked to activate the network.<br>
+>> **Create Subnet:** Leave this option checked to create the subnet.<br>
+>> **Availability Zone Hints:** Leave the default option.<br><br>
+>>![network](images/network_information.png){.thumbnail}<br>
+>>
+> 2. **Subnet**
+>>
+>> **Subnet Name:** Enter a name for your subnet.<br>
+>> **Network Address:** Choose a private network range. For example: `192.168.0.0/24`.<br>
+>> **IP Version:** Leave this value at IPv4.<br>
+>> **Gateway IP:** This option is optional. If it is not defined, a Gateway IP is automatically selected.<br>
+>> **Disable Gateway:** This option is optional. For more information, consult [this article](https://www.ovhcloud.com/en-asia/public-cloud/gateway/). Please note that if you decide to use this option, there will be additional charges when.<br><br>
+>>![subnet](images/subnet_information.png){.thumbnail}<br>
+>>
+> 3. **Subnet Details**
+>>
+>> Windows will apply your settings and then display the login screen. Click on the `Send CtrlAltDel`{.action} button in the top right corner to sign in.<br><br>
+>>![KVM](images/setup-05.png){.thumbnail}<br>
+>>
+
 
 |Information|Details|
 |---|---|
