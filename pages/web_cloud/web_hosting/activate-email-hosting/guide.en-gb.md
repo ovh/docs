@@ -13,7 +13,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 ## Requirements
 
 - A [domain name](/links/web/domains){.external} registered with OVHcloud or a [DNS zone](https://www.ovhcloud.com/en-gb/domains/dns-subdomain/){.external} of a domain name not registered with OVHcloud 
-- An [OVHcloud Web Hosting plan](/links/web/hosting) (excluding "100 MB free hosting" and "Start10m" offers)
+- An [OVHcloud Web Hosting plan](/links/web/hosting) (excluding free 100M hosting and STARTER offers)
 - Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the Web Hosting plan
 
 > [!warning]
