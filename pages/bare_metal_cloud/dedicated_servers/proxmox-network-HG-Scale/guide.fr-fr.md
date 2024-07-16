@@ -74,21 +74,38 @@ ssh PUB_IP_DEDICATED_SERVER
 # vous pouvez aussi utiliser l'IP privée configurée sur le vRack
 ```
 
-Tout se passe dans le fichier `/etc/network/interfaces` :
-
-```bash
-vi /etc/network/interfaces
-```
-
 > [!tabs]
 > Gammes High Grade & SCALE
+>>
+>> ### Activation de l'ip_forward et du proxy_arp
+>> 
+>> Il faut activer `ip_forward` et `proxy_arp`. Pour ce faire il est recommandé de modifier le fichier de configuration `sysctl` pour une gestion plus propre et pérenne.
+>> 
+>> Ajoutez les lignes suivantes dans `/etc/sysctl.conf`:
+>> 
+>> ```bash
+>> # Activation de l'ip_forward
+>> net.ipv4.ip_forward = 1
+>> 
+>> # Activation du proxy_arp pour le bond public
+>> net.ipv4.conf.bond0.proxy_arp = 1
+>> ```
+>> 
+>> Ensuite, rechargez la configuration sysctl:
+>> 
+>> ```bash
+>> sysctl -p
+>> ```
+>> 
+>> ### Modification du fichier `/etc/network/interfaces` :
+>> 
+>> ```bash
+>> vi /etc/network/interfaces
+>> ```
+>> 
 >> ```bash
 >> auto lo
 >> iface lo inet loopback
->>   # Activation de l'ip_forward et du proxy_arp
->>   up echo "1" > /proc/sys/net/ipv4/ip_forward
->>   # Activation du proxy_arp pour le bond public uniquement
->>   up echo "1" > /proc/sys/net/ipv4/conf/bond0/proxy_arp
 >> 
 >> # interface publique 1
 >> auto ens33f0
@@ -166,6 +183,12 @@ vi /etc/network/interfaces
 >> ```
 > Gamme ADVANCE
 >> Pour les serveurs de la gamme ADVANCE qui ne possèdent pas 4 interfaces réseau, il est inutile de configurer le bonding. Vous pouvez passer directement à la configuration des interfaces disponibles.
+>>
+>> Tout se passe dans le fichier `/etc/network/interfaces` :
+>> 
+>> ```bash
+>> vi /etc/network/interfaces
+>> ``` 
 >> 
 >> ```bash
 >> auto vmbr0
