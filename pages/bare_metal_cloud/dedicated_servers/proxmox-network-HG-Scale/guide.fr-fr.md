@@ -1,6 +1,6 @@
 ---
 title: 'Configurer le réseau sur Proxmox VE'
-excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE.'
+excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE'
 updated: 2024-07-16
 ---
 

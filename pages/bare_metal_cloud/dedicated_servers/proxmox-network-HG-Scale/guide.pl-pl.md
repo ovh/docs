@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguracja sieci na Proxmox VE w ofercie High Grade & SCALE'
-excerpt: 'Dowiedz się, jak skonfigurować sieć na Proxmox VE w ofercie High Grade & SCALE'
-updated: 2024-07-08
+title: 'Konfiguracja sieci na Proxmox VE'
+excerpt: 'Dowiedz się, jak skonfigurować sieć na Proxmox VE'
+updated: 2024-07-16
 ---
 
 > [!primary]

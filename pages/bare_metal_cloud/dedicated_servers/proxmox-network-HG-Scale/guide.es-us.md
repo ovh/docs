@@ -1,7 +1,7 @@
 ---
-title: 'Configurar la red en Proxmox VE en las gamas High Grade & SCALE'
-excerpt: 'Cómo configurar la red en Proxmox VE en las gamas High Grade & SCALE'
-updated: 2024-07-08
+title: 'Configurar la red en Proxmox VE'
+excerpt: 'Cómo configurar la red en Proxmox VE'
+updated: 2024-07-16
 ---
 
 > [!primary]
