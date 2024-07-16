@@ -77,7 +77,14 @@ Pour valider les informations, cliquez sur `Ajouter une clé SSH`{.action}. Si v
 
 Retournez sur le formulaire d'association de Git de votre espace client OVHcloud. Vous devez renseigner l'adresse de votre dépôt GitHub. Si vous n'avez pas encore de dépôt GitHub pour votre projet, créez-en un.
 
-Dans le menu principal de GitHub, cliquez sur `Your repositories`{.action} puis, à droite de l'écran, cliquez `New`{.action}. Définissez un nom pour votre dépôt et remplissez les informations demandées. Enfin, cliquez sur `Create Repository-.
+Dans le menu principal de GitHub, cliquez sur `Your repositories`{.action} puis, à droite de l'écran, cliquez `New`{.action}. Définissez un nom pour votre dépôt et remplissez les informations demandées.
+
+> [!warning]
+>
+> Cochez l'option vous proposant de créer un fichier `README` pour que Github initialise correctement votre répertoire.
+>
+
+ Enfin, cliquez sur `Create Repository`.
 
 Copiez l'adresse de votre dépôt. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name>`{.action}. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît.
 
@@ -145,7 +152,7 @@ Une fois le(s) erreur(s) identifiée(s), associez Git à nouveau. Recommencez l'
 
 ### Déployer son site web avec Git
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez déployer sur Git. Assurez-vous que le statut de la colonne Git soit `Enabled`{.action}. Cliquez sur `...`{.action} puis sur `Déployer Git`{.action}.
+Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez déployer avec Git. Assurez-vous que le statut de la colonne Git soit `Enabled`{.action}. Cliquez sur `...`{.action} puis sur `Déployer Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
 
@@ -156,43 +163,53 @@ Un message de confirmation s'affiche, ainsi qu'une case à cocher vous indiquant
 > Pour éviter de perdre vos modifications locales, pensez à les enregistrer avant de les écraser par les modifications de la branche distante.
 >
 
-Au-dessus du tableau, un message de succès s'affiche vous indiquant que le repository a bien été déployé.
-
---Screenshot placeholder--
-
-La nouvelle version de votre site web a bien été déployée sur votre dépôt GitHub. Si d'autres personnes travaillent sur le même projet et qu'ils ont configuré un webhook, ils seront notifiés de votre déploiement, et leur branche locale sera synchronisée avec vos modifications. Retrouvez plus d'information en consultant la section [Configurer un webhook sur GitHub](#lienwebhook).
+La nouvelle version de votre site web a bien été déployée sur votre hébergement OVHcloud. Si d'autres personnes travaillent sur le même projet et qu'ils apportent des modifications sur le répertoire Github, alors vous pouvez [configurer un webhook sur GitHub](#lienwebhook) pour que leurs modifications soient déployées automatiquement sur votre hébergement web. Cela vous évite de déployer Git manuellement, et votre hébergement web restera toujours à jour.
 
 ### Modifier un domaine
 
 Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez modifier. Cliquez sur `...`{.action} puis sur `Modifier le domaine`{.action}. Deux scénarios sont possibles :
 
-- Si votre domaine est le seul du répertoire associé à Git, alors le détachement entrainera la suppression de l'association Git pour le domaine et le répertoire.
-- Si d'autres domaines sont rattachés au même répertoire, alors le détachement entrainera la suppression de l'association Git pour ce domaine.
+#### Le domaine n'est pas le seul attaché au même répertoire
 
-#### Le domaine n'est pas le seul du répertoire
+La fenêtre suivante s'affiche.
 
-Même processus que pour détachement du domaine. En attente des maquettes.
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step1.png){.thumbnail}
 
-#### Le domaine est le seul du répertoire
+Modifiez les informations de votre choix et cliquez sur `Suivant`{.action}.
 
-Même processus que pour détachement du domaine. En attente des maquettes.
+Une deuxième fenêtre de confirmation s'affiche avec le récapitulatif de vos changements.
+
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
+
+Cliquez sur `Confirmer`{.action} pour validez les modifications de votre domaine.
+
+#### Le domaine est le seul attaché au répertoire
+
+La fenêtre suivante s'affiche.
+
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-alone-domain-step1.png){.thumbnail}
+
+Comme le message l'indique, [supprimez votre association Git](#supprimer-lassociation-de-git) dans un premier temps avant de modifier votre domaine.
 
 ### Détacher un domaine de Git
 
 Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez détacher de Git. Cliquez sur `...`{.action} puis sur `Détacher le domaine`{.action}. Deux scénarios sont possibles :
 
-- Si votre domaine est le seul du répertoire associé à Git, alors le détachement entrainera la suppression de l'association Git pour le domaine et le répertoire.
-- Si d'autres domaines sont rattachés au même répertoire, alors le détachement entrainera la suppression de l'association Git pour ce domaine.
+#### Le domaine n'est pas le seul attaché au même répertoire
 
-#### Le domaine n'est pas le seul du répertoire
+La fenêtre suivante s'affiche.
 
-Attente des maquettes
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 
-#### Le domaine est le seul du répertoire
+Cliquez sur `Confirmer`{.action} pour validez le détachement de votre domaine.
 
---Screenshot placeholder--
+#### Le domaine est le seul attaché au répertoire
 
-Cochez la case `J'ai compris, je souhaite détacher mon nom de domaine`{.action} puis appuyez sur `Confirmer`{.action}.
+La fenêtre suivante s'affiche.
+
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
+
+Comme le message l'indique, [supprimez votre association Git](#supprimer-lassociation-de-git) dans un premier temps avant de détacher votre domaine.
 
 ### Configurer Git
 
