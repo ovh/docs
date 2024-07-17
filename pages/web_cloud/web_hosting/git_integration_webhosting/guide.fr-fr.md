@@ -242,7 +242,7 @@ La fenêtre suivante s'affiche.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
 
-Le message vous informe que la suppression s'appliquera sur l'ensemble des domaines attachés à votre répertoire. Cochez la case `Souhaitez-vous vider le contenu du répertoire <votre_repertoire>`{.action} si vous voulez également supprimer le contenu (dossiers et fichiers) du répertoire.
+Le message vous informe que la suppression s'appliquera sur l'ensemble des noms de domaine attachés à votre répertoire. Cochez la case `Souhaitez-vous vider le contenu du répertoire <votre_repertoire>`{.action} si vous voulez également supprimer le contenu (dossiers et fichiers) du répertoire.
 
 1.	Si vous cochez la case, la fenêtre suivante s'affiche.
 
