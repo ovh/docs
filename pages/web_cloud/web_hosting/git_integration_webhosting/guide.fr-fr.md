@@ -102,7 +102,7 @@ Retournez sur le formulaire d'association de Git de votre espace client OVHcloud
 
 #### Configurer le déploiement automatique
 
-En bas du formulaire d'association de Git, une section `Configuration du déploiement automatique`{.action} s'affiche, accompagnée de l'URL de webhook. Configurer un webhook permet à votre dépôt GitHub de notifier automatiquement votre hébergement OVHcloud des événements qui se produisent sur le dépôt Github (nouveau déploiement, changement dans le code, etc.). Cette fonctionnalité est particulièrement utile si vous travaillez en groupe sur le même projet et que vous souhaitez restez à jour de toutes les modifications du dépôt Github. Pour en savoir plus, découvrez comment [configurer un webhook sur GitHub](#configureWebhook).
+En bas du formulaire d'association de Git, une section `Configuration du déploiement automatique`{.action} s'affiche, accompagnée de l'URL de webhook. Configurer un webhook permet à votre dépôt GitHub de notifier automatiquement votre hébergement web OVHcloud des événements qui se produisent sur le dépôt Github (nouveau déploiement, changement dans le code, etc.). Cette fonctionnalité est particulièrement utile si vous travaillez en groupe sur le même projet et que vous souhaitez restez à jour de toutes les modifications du dépôt Github. Pour en savoir plus, découvrez comment [configurer un webhook sur GitHub](#configureWebhook).
 
 #### Valider l'association de Git
 
