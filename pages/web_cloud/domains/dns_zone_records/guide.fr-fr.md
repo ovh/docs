@@ -171,7 +171,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 >> Cet enregistrement est utilisé dans le cadre du protocole **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
 >>
->> Le protocole DANE permet a un client (navigateur internet, client de messagerie email, client FTP, client SSH, etc.) de consulter l'enregistrement TLSA. Ainsi, il s'assure qu'un certificat SSL/TLS utilisé pour un nom de domaine est bien celui certifiant ce même nom de domaine.
+>> Le protocole DANE permet a un client (navigateur internet, client de messagerie e-mail, client FTP, client SSH, etc.) de consulter l'enregistrement TLSA. Ainsi, il s'assure qu'un certificat SSL/TLS utilisé pour un nom de domaine est bien celui certifiant ce même nom de domaine.
 >>
 >> Si besoin, retrouvez plus de détails sur le site de l' [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
 >>
