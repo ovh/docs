@@ -201,7 +201,7 @@ La fenêtre suivante s'affiche.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 
-Cliquez sur `Confirmer`{.action} pour validez le détachement de votre domaine.
+Cliquez sur `Confirmer`{.action} pour validez le détachement de votre nom de domaine.
 
 #### Le domaine est le seul attaché au répertoire
 
