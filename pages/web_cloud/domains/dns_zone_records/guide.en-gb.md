@@ -1,7 +1,7 @@
 ---
 title: "Everything you need to know about DNS records"
 excerpt: "Discover the different types of DNS records available in an OVHcloud DNS zone"
-updated: 2024-06-17
+updated: 2024-07-17
 ---
 
 ## Objective
@@ -167,7 +167,14 @@ Select the record you want by clicking each of the following tabs.
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Used to fill in the fingerprint of an SSL/TLS certificate.
+>> Used to fill in the fingerprint of an SSL/TLS certificate. You can use it to save the *hash* of a certificate directly in your domain name’s DNS zone via a DNS record.
+>>
+>> This record is used for the **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE) protocol.
+>>
+>> The DANE protocol allows a client (internet browser, email client, FTP client, SSH client, etc.) to view the TLSA record. This way, they can ensure that an SSL/TLS certificate used for a domain name is the one certifying the same domain name.
+>>
+>> If you need further information, please visit the [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} website.
+>>
 
 #### Special use case: CNAME records <a name="cnameusecase"></a>
 

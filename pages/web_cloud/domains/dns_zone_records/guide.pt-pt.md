@@ -1,7 +1,7 @@
 ---
 title: "Saber tudo sobre os registos DNS"
 excerpt: "Descubra os diferentes tipos de registos DNS disponíveis numa zona DNS da OVHcloud"
-updated: 2024-06-17
+updated: 2024-07-17
 ---
 
 > [!primary]
