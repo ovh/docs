@@ -165,7 +165,7 @@ Un message de confirmation s'affiche, ainsi qu'une case à cocher vous indiquant
 
 La nouvelle version de votre site web a bien été déployée sur votre hébergement OVHcloud. Si d'autres personnes travaillent sur le même projet et qu'ils apportent des modifications sur le dépôt Github, alors vous pouvez [configurer un webhook sur GitHub](#configureWebhook) pour que leurs modifications soient déployées automatiquement sur votre hébergement web. Cela vous évite de déployer Git manuellement, et votre hébergement web restera toujours à jour.
 
-### Modifier un domaine
+### Modifier un nom de domaine
 
 Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez modifier. Cliquez sur `...`{.action} puis sur `Modifier le domaine`{.action}. Deux scénarios sont possibles :
 
