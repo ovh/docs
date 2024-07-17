@@ -1,7 +1,7 @@
 ---
 title: "Comment installer OverTheBox ?"
 excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox"
-updated: 2024-07-16
+updated: 2024-07-17
 ---
 
 ## Objectif
