@@ -183,7 +183,7 @@ Une deuxième fenêtre de confirmation s'affiche avec le récapitulatif de vos c
 
 Cliquez sur `Confirmer`{.action} pour validez les modifications de votre nom de domaine.
 
-#### Le domaine est le seul attaché au répertoire
+#### Le nom de domaine est le seul attaché au répertoire
 
 La fenêtre suivante s'affiche.
 
