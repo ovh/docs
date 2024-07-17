@@ -303,22 +303,22 @@ Sélectionnez votre vRack dans la liste pour afficher la liste des services éli
 Dans le cas du vRack, la première, l'avant-dernière et la dernière adresses d'un bloc d'IP donné sont toujours réservées respectivement à l'adresse réseau, la passerelle réseau et au *broadcast* du réseau. Cela signifie que la première adresse utilisable est la deuxième adresse du bloc, comme indiqué ci-dessous :
 
 ```sh
-46.105.135.96   # Réservée : adresse réseau
-46.105.135.97   # Première IP utilisable
-46.105.135.98
-46.105.135.99
-46.105.135.100
-46.105.135.101
-46.105.135.102
-46.105.135.103
-46.105.135.104
-46.105.135.105
-46.105.135.106
-46.105.135.107
-46.105.135.108
-46.105.135.109   # Dernière IP utilisable
-46.105.135.110   # Réservée : passerelle réseau
-46.105.135.111   # Réservée : broadcast réseau
+123.456.789.96   # Réservée : adresse réseau
+123.456.789.97   # Première IP utilisable
+123.456.789.98
+123.456.789.99
+123.456.789.100
+123.456.789.101
+123.456.789.102
+123.456.789.103
+123.456.789.104
+123.456.789.105
+123.456.789.106
+123.456.789.107
+123.456.789.108
+123.456.789.109   # Dernière IP utilisable
+123.456.789.110   # Réservée : passerelle réseau
+123.456.789.111   # Réservée : broadcast réseau
 ```
 
 Pour configurer la première adresse IP utilisable, vous devez éditer le fichier de configuration réseau comme indiqué ci-dessous. Dans cet exemple, utilisez un masque de sous-réseau de **255.255.255.240**.
