@@ -63,15 +63,15 @@ Copiez et enregistrez la clé SSH sur votre compte GitHub. Cela permet d'établi
 
 - Connectez-vous à votre compte GitHub.
 - Dans le menu principal, cliquez sur `Settings`{.action} puis sur `SSH and GPG keys`{.action}.
-- Sélectionnez `Nouvelle clé SSH`{.action} ou `Ajouter une clé SSH`{.action}.
+- Sélectionnez `New SSH key`{.action} ou `Add SSH key`{.action}.
 
 Le formulaire d'ajout d'une nouvelle clé SSH s'affiche :
 
-- **Titre** : ajoutez une description pour votre clé SSH. Par exemple, vous pouvez nommer cette clé « OVHcloud ». 
-- **Type de clé** : laissez la valeur par défaut `authentication key`{.action}
-- **Clé** : collez votre clé SSH.
+- **Title** : ajoutez une description pour votre clé SSH. Par exemple, vous pouvez nommer cette clé « OVHcloud ». 
+- **Type of key** : laissez la valeur par défaut `authentication key`{.action}
+- **Key** : collez votre clé SSH.
 
-Pour valider les informations, cliquez sur `Ajouter une clé SSH`{.action}. Si vous y êtes invité, confirmez l'accès à votre compte dans GitHub.
+Pour valider les informations, cliquez sur `Add SSH key`{.action}. Si vous y êtes invité, confirmez l'accès à votre compte dans GitHub.
 
 #### Définir le dépôt GitHub
 
@@ -81,7 +81,7 @@ Dans le menu principal de GitHub, cliquez sur `Your repositories`{.action} puis,
 
 > [!warning]
 >
-> Cochez l'option vous proposant de créer un fichier `README` pour que GitHub initialise correctement votre dépôt.
+> Cochez l'option `Add a README file` pour que GitHub initialise correctement votre dépôt.
 >
 
 Enfin, cliquez sur `Create Repository`{.action}.
@@ -273,7 +273,7 @@ En bas du formulaire qui s'affiche, identifiez l'adresse du champ `URL de webhoo
 
 #### Configurer le webhook <a name="configureWebhook"></a>
 
-Connectez-vous à votre compte GitHub et accédez au dépôt sur lequel vous souhaitez configurer le webhook. Dirigez-vous sur l'onglet `Paramètres`{.action} puis, dans le menu latéral des paramètres, cliquez sur `Webhooks`{.action}. Cliquez sur le bouton `Ajouter un webhook`{.action} pour accéder au formulaire :
+Connectez-vous à votre compte GitHub et accédez au dépôt sur lequel vous souhaitez configurer le webhook. Dirigez-vous sur l'onglet `Settings`{.action} puis, dans le menu latéral des paramètres, cliquez sur `Webhooks`{.action}. Cliquez sur le bouton `Add webhook`{.action} pour accéder au formulaire :
 
 - **Payload URL** : entrez l'URL fournie dans le formulaire d'association de Git (`URL de webhook`{.action}).
 - **Content type** : choisissez `application/json`{.action} comme type de contenu pour les données envoyées.
@@ -282,7 +282,7 @@ Connectez-vous à votre compte GitHub et accédez au dépôt sur lequel vous sou
 - **Which events would you like to trigger this webhook ?** : sélectionnez les événements qui déclencheront l'envoi du webhook. Pour un déploiement automatique, `Just the push event`{.action} (Juste l'événement push) est souvent suffisant, mais vous pouvez choisir `Send me everything`{.action} pour recevoir des notifications pour tous les événements.
 - **Active** : assurez-vous que la case est cochée pour activer le webhook.
 
-Cliquez sur `Ajouter un webhook`{.action} pour enregistrer et activer votre nouveau webhook.
+Cliquez sur `Add webhook`{.action} pour enregistrer et activer votre nouveau webhook.
 
 #### Tester votre webhook
 
