@@ -248,6 +248,8 @@ network:
       routes:
         - to: default
           via: 192.168.0.1
+          # Pour que les paquets à destination d'Internet aient comme source
+          # l'IP publique et non l'IP privée 192.168.0.3
           from: ADDITIONAL_IP  
 ```
 
