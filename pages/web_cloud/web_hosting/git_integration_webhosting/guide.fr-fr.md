@@ -5,6 +5,10 @@ updated: 2024-07-17
 flag: hidden
 ---
 
+> [!alert]
+>
+> La fonctionnalité Git sur un hébergement web OVHcloud n'est pas encore disponible à ce jour. Ce guide sera mis à jour lorsque la fonctionnalité sera mise à disposition du public.
+
 ## Objectif
 
 Dans le paysage numérique actuel, les sociétés sont de plus en plus dynamiques et innovantes. La capacité à gérer et à déployer efficacement le code de son site web est essentielle pour maintenir la compétitivité et la pérennité de votre marque. Git, système de gestion de versions le plus utilisé au monde, permet de stocker le code de votre site web sur des plateformes comme GitHub, permettant une meilleure traçabilité des modifications, ainsi qu'une automatisation et des déploiements plus rapides. En tant que client OVHcloud, vous bénéficiez d'une infrastructure robuste pour héberger votre site web, tout en exploitant les nombreux avantages de Git et de GitHub pour le développement et l'évolution de votre site web.
