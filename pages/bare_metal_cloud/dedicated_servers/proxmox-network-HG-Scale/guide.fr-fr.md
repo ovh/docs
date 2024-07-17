@@ -32,13 +32,9 @@ Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode b
 > Aucune MAC virtuelle ne doit être appliquée sur les Additional IP dans l'espace client OVHcloud.
 >
 
-## En pratique
+## En pratique   
 
-> [!primary]
->
-> Sur ces gammes de serveurs, il y a 4 cartes réseaux. Les deux premières pour le public, les deux dernières pour le privé. Pour profiter de l'ensemble de la bande passante, des agrégats doivent être créés.
->
-
+   
 ### Additional IP en mode routé sur les interfaces réseau publiques <a name="additionalipmoderoute"></a>
 
 Cette configuration offre de meilleures performances en termes de bande passante mais s'avère moins flexible. Avec cette configuration, les adresses Additional IP doivent être attachées à un serveur dédié. Si vous disposez de plusieurs serveurs de virtualisation Proxmox et que vous souhaitez migrer une VM d'un serveur à l'autre, vous devrez également migrer l'adresse Additional IP  vers le serveur de destination, via l'espace client OVHcloud ou via l'API OVHcloud. Vous pouvez automatiser cette étape en écrivant un script qui utilise les API d'OVHcloud.  
