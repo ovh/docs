@@ -171,7 +171,14 @@ Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Utilizzato per inserire l'impronta di un certificato SSL/TLS.
+>> Utilizzato per inserire l'impronta di un certificato SSL/TLS. che permette di conservare il *hash* di un certificato direttamente nella zona DNS del dominio tramite un record DNS.
+>>
+>> Questa registrazione è utilizzata nel quadro del protocollo **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
+>>
+>> Il protocollo DANE permette a un cliente (browser Internet, client di posta, client FTP, client SSH, ecc.) di consultare il record TLSA. In questo modo, si assicura che un certificato SSL/TLS utilizzato per un dominio sia effettivamente quello che certifica lo stesso dominio.
+>>
+>> Se necessario, consulta i dettagli sul sito dell' [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>>
 
 #### Casi d'uso particolari: l'utilizzo dei record CNAME <a name="cnameusecase"></a>
 
