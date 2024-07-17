@@ -1,7 +1,7 @@
 ---
 title: 'Cas de migration vers VCD on OVHcloud'
 excerpt: 'Découvrez comment effectuer une migration vers VMware Cloud Director on OVHcloud ainsi que ces cas particuliers et complexes afin de garantir la sécurité de vos données'
-updated: 2024-07-15
+updated: 2024-07-17
 ---
 <style>
 details>summary {
