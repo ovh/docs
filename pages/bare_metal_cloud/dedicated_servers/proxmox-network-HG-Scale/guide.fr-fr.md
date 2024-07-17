@@ -218,45 +218,47 @@ systemctl restart networking.service
 
 Lorsque vous redémarrez les services réseau, les bridges (vmbr0 par exemple) peuvent être à l'état inactif. Cela est dû au fait que Proxmox déconnecte chaque VM des bridges et ne les reconnecte pas. Pour forcer la reconnexion des VM aux bridges, vous pouvez redémarrer les VM.
 
-#### Exemple de configuration VM cliente Debian
+#### Exemple de configuration VM cliente 
 
-Contenu du fichier `/etc/network/interfaces` :
-
-```bash
-auto lo
-iface lo inet loopback
-
-auto eth0
-
-iface eth0 inet static
-  address 192.168.0.2/24
-
-iface eth0 inet static
-  address ADDITIONAL_IP/32
-  # L'option "src" doit être définie afin que les paquets à destination d'Internet
-  # aient comme source l'IP publique et non l'IP privée 192.168.0.2
-  up ip route replace default via 192.168.0.1 dev $IFACE onlink src ADDITIONAL_IP  
-```
-
-#### Exemple de configuration VM cliente Ubuntu
-
-Contenu du fichier `/etc/netplan/01-eth0.yaml` :
-
-```yaml
-network:
-  version: 2
-  ethernets:
-    eth0:
-      addresses:
-        - 192.168.0.3/24
-        - ADDITIONAL_IP/32 
-      routes:
-        - to: default
-          via: 192.168.0.1
-          # Pour que les paquets à destination d'Internet aient comme source
-          # l'IP publique et non l'IP privée 192.168.0.3
-          from: ADDITIONAL_IP  
-```
+> [!tabs]
+> Debian
+>> Contenu du fichier `/etc/network/interfaces` :
+>> 
+>> ```bash
+>> auto lo
+>> iface lo inet loopback
+>> 
+>> auto eth0
+>> 
+>> iface eth0 inet static
+>>   address 192.168.0.2/24
+>> 
+>> iface eth0 inet static
+>>   address ADDITIONAL_IP/32
+>>   # L'option "src" doit être définie afin que les paquets à destination d'Internet
+>>   # aient comme source l'IP publique et non l'IP privée 192.168.0.2
+>>   up ip route replace default via 192.168.0.1 dev $IFACE onlink src ADDITIONAL_IP  
+>> ```
+>> 
+> Ubuntu
+>> Contenu du fichier `/etc/netplan/01-eth0.yaml` :
+>> 
+>> ```yaml
+>> network:
+>>   version: 2
+>>   ethernets:
+>>     eth0:
+>>       addresses:
+>>         - 192.168.0.3/24
+>>         - ADDITIONAL_IP/32 
+>>       routes:
+>>         - to: default
+>>           via: 192.168.0.1
+>>           # Pour que les paquets à destination d'Internet aient comme source
+>>           # l'IP publique et non l'IP privée 192.168.0.3
+>>           from: ADDITIONAL_IP  
+>> ```
+>> 
 
 
 #### Test et validation
