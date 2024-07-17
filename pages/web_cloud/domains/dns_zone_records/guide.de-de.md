@@ -171,7 +171,7 @@ Wählen Sie den gewünschten Eintrag in den Tabs aus:
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Verwendet, um den Fingerprint eines SSL/TLS-Zertifikats einzugeben. Damit können Sie den *hash* eines Zertifikats direkt in der DNS-Zone Ihrer Domain über einen DNS-Eintrag speichern.
+>> Verwendet, um den Fingerprint eines SSL/TLS-Zertifikats einzugeben. Damit können Sie den *Hash* eines Zertifikats direkt in der DNS-Zone Ihrer Domain über einen DNS-Eintrag speichern.
 >>
 >> Dieser Eintrag wird im Rahmen des Protokolls **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE) verwendet.
 >>
