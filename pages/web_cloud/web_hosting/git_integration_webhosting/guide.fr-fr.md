@@ -181,7 +181,7 @@ Une deuxième fenêtre de confirmation s'affiche avec le récapitulatif de vos c
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 
-Cliquez sur `Confirmer`{.action} pour validez les modifications de votre domaine.
+Cliquez sur `Confirmer`{.action} pour validez les modifications de votre nom de domaine.
 
 #### Le domaine est le seul attaché au répertoire
 
