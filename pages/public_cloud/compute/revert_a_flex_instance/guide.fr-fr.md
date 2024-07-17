@@ -2,7 +2,7 @@
 title: "Basculer d'une instance flex à une instance classique"
 excerpt: Apprenez à modifier une instance flex depuis l'interface OpenStack Horizon
 order : 10
-updated: 2021-11-15
+updated: 2024-07-16
 ---
 
 ## Objectif
@@ -17,6 +17,14 @@ Une instance *flex* est une instance à disque unique (50 Go) offrant un process
 - [Créer un accès à l'interface Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## En pratique
+
+> [!warning] 
+> - Si vous passez d'une instance flex à une instance classique avec plus de ressources, cela est considéré comme une mise à niveau. Dans ce cas, la différence vous sera facturée. A la fin de votre période de facturation, vous recevrez deux factures.
+>
+> - Si vous passez d'une instance flex à une instance classique avec moins de ressources, il s'agit d'un déclassement. Dans ce cas, vous ne serez pas facturé.
+>
+> - Si vous passez d'une instance flex à une instance classique avec les mêmes ressources, vous ne serez pas facturé.
+>
 
 Connectez-vous à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et assurez-vous d'être dans la bonne région. Vous pouvez le vérifier en haut à gauche. 
 
