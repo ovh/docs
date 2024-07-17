@@ -13,11 +13,6 @@ updated: 2024-07-16
 
 Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode bridged (via des MAC Virtuelles) n'est pas possible. Il en est de même pour les nouveaux serveurs de dernière génération livrés avec les cpu AMD Epyc 4K et 8K. Il est donc nécessaire de configurer les Additional IP en mode routé ou via le vRack.
 
-> [!warning]
->
-> Il n'est pas possible d'utiliser une IP Failover (/32) directement dans le vRack. Pour utiliser une IP Failover, elle doit être configurée sur une interface publique et ne peut pas être directement intégrée au vRack.
->
-
 
 > [!primary]
 >
@@ -44,7 +39,7 @@ Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode b
 > Sur ces gammes de serveurs, il y a 4 cartes réseaux. Les deux premières pour le public, les deux dernières pour le privé. Pour profiter de l'ensemble de la bande passante, des agrégats doivent être créés.
 >
 
-### Additional IP en mode routé sur les interfaces réseau publiques
+### Additional IP en mode routé sur les interfaces réseau publiques <a name="additionalipmoderoute"></a>
 
 Cette configuration offre de meilleures performances en termes de bande passante mais s'avère moins flexible. Avec cette configuration, les adresses Additional IP doivent être attachées à un serveur dédié. Si vous disposez de plusieurs serveurs de virtualisation Proxmox et que vous souhaitez migrer une VM d'un serveur à l'autre, vous devrez également migrer l'adresse Additional IP  vers le serveur de destination, via l'espace client OVHcloud ou via l'API OVHcloud. Vous pouvez automatiser cette étape en écrivant un script qui utilise les API d'OVHcloud.  
 
@@ -246,6 +241,12 @@ ADDITIONAL_IP    				# doit retourner votre additional ip
 ### Additional IP via le vRack
 
 Cette configuration est plus souple, vous n'avez pas à associer d'Additional IP à un serveur mais au vRack. Cela signifie que si une machine virtuelle souhaite utiliser une adresse Additional IP, elle peut la réclamer directement sans aucune configuration supplémentaire et quel que soit l'hôte sur lequel elle est hébergée.
+
+
+> [!warning]
+>
+> Il n'est pas possible d'utiliser une IP Failover (/32) directement dans le vRack. Pour utiliser une IP Failover, elle doit être [configurée sur une interface publique](#additionalipmoderoute) et ne peut pas être directement intégrée au vRack.
+>
 
 #### Prérequis
 
