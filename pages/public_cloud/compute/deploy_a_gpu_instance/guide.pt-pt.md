@@ -1,19 +1,21 @@
 ---
 title: 'Criar uma instância GPU'
 excerpt: 'Saiba como criar uma instância GPU em Linux ou Windows'
-updated: 2024-07-08
+updated: 2024-07-17
 ---
+
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
 ## Objetivo
 
 As instâncias GPU são tecnicamente semelhantes às instâncias da gama 2017, mas dispõem também de uma placa gráfica (Unidade de Processamento Gráfico ou GPU). A tecnologia utilizada (*pci_passthrough*) permite ao sistema operativo da instância controlar a GPU tal como faria uma máquina física.
 
-As GPU disponibilizadas são as NVIDIA Tesla V100 e V100s. 
-
 > [!warning]
 >
-> Atualmente, a maior parte das nossas antigas instâncias GPU só estão disponíveis nas regiões GRA7, GRA9, GRA11 e BHS5. Os modelos mais recentes estão apenas disponíveis na região GRA11.
-> 
+> Atualmente, a maior parte das nossas antigas instâncias GPU (Tesla V100 and V100s) só estão disponíveis nas regiões GRA7, GRA9, GRA11 e BHS5. Os modelos mais recentes (A100, H100, L4 and L40s) estão apenas disponíveis na região GRA11.
+>
 
 **Este guia explica como criar uma instância GPU em Linux ou Windows**
 

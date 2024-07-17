@@ -1,18 +1,16 @@
 ---
 title: 'Déployer une instance GPU'
 excerpt: 'Découvrez comment déployer une instance GPU sous Linux ou Windows'
-updated: 2024-07-03
+updated: 2024-07-17
 ---
 
 ## Objectif
 
 Les instances GPU sont techniquement similaires aux instances de la gamme 2017 mais disposent en plus d'une carte graphique (Graphic Processing Unit ou GPU). La technologie utilisée (*pci_passthrough*) permet au système d'exploitation de l'instance de contrôler le GPU exactement comme sur une machine physique.
 
-Les GPU proposés sont les NVIDIA Tesla V100 et V100s. 
-
 > [!warning]
 >
-> Actuellement, la plupart de nos anciennes instances GPU sont uniquement disponibles dans les régions GRA7, GRA9, GRA11 et BHS5. Les modèles plus récents ne sont pour le moment disponibles que dans la région GRA11.
+> Actuellement, la plupart de nos anciennes instances GPU (Tesla V100 and V100s) sont uniquement disponibles dans les régions GRA7, GRA9, GRA11 et BHS5. Les modèles plus récents (A100, H100, L4 and L40s) ne sont pour le moment disponibles que dans la région GRA11.
 >
 
 **Ce guide vous explique comment déployer une instance GPU sous Linux ou sous Windows**
