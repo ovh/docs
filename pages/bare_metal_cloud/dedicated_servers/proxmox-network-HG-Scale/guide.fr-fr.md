@@ -162,7 +162,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> iface vmbr0 inet dhcp
 >> 	# Définissez une IP privée, elle ne doit pas chevaucher vos réseaux privés existants sur le vRack par exemple
 >> 	address 192.168.0.1/24 
->> 	bridge-ports none
+>> 	bridge-ports bond0
 >> 	bridge-stp off
 >> 	bridge-fd 0
 >> 	# Ajoutez une Additional IP unique
