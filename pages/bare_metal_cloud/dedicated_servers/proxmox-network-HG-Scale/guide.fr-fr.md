@@ -11,7 +11,7 @@ updated: 2024-07-16
 
 ## Objectif
 
-**Découvrez comment configurer le réseau sous Proxmox VE.**
+**Découvrez deux manières de configurer une _additional IP_ sous Proxmox VE : via les interfaces publiques et via les interfaces privées (vRack).**
 
 ## Prérequis
 
