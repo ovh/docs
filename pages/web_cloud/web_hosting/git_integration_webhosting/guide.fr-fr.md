@@ -56,7 +56,7 @@ Le formulaire d'association de Git s'affiche. Plusieurs éléments doivent être
 
 > [!primary]
 >
-> La génération d'une clé SSH est une étape cruciale, car elle établit une connexion sécurisée et cryptée entre le répertoire de votre site web et le dépôt GitHub. Cette clé assure que les transferts de données et les modifications de code se font de manière sûre et authentifiée, prévenant les accès non autorisés et garantissant l'intégrité du code.
+> La génération d'une clé SSH est une étape cruciale, car elle établit une connexion sécurisée et chiffrée entre le répertoire de votre site web et le dépôt GitHub. Cette clé assure que les transferts de données et les modifications de code se font de manière sûre et authentifiée, prévenant les accès non autorisés et garantissant l'intégrité du code.
 >
 
 Copiez et enregistrez la clé SSH sur votre compte GitHub. Cela permet d'établir une connexion sécurisée sans nécessiter de saisie de mot de passe à chaque opération Git que vous serez amenés à effectuer.
