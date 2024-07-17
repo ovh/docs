@@ -1,7 +1,7 @@
 ---
 title: "Die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren"
 excerpt: "Diese Anleitung erklärt, wie Sie die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren können"
-updated: 2024-07-16
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -16,7 +16,7 @@ Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu 
 ## Voraussetzungen
 
 - Sie verfügen über einen [Domainnamen](/links/web/domains) in Ihrem OVHcloud Kundencenter.
-- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account (mit Ausnahme der Angebote: Kostenloses Hosting 100M und STARTER).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account (mit Ausnahme der Angebote: Kostenloses Hosting 100M und Start10m).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
