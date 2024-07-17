@@ -19,30 +19,22 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> VCD on OVHcloud est actuellement en phase alpha. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié: <https://discord.gg/ovhcloud>.
+> VCD on OVHcloud est actuellement en phase alpha. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal [Discord](https://discord.gg/ovhcloud) dédié.
 >
 
 ## Objectif
 
-**Découvrez comment effectuer la migration d'un service vSphere managé au sein de VMware Cloud Director on OVHcloud, ainsi que les cas particuliers à mettre au jour.**
+**Découvrez comment effectuer les étapes de verification pour migrer un service vSphere managé (HPC ou PCC) au sein de VMware Cloud Director on OVHcloud, ainsi que les cas particuliers à mettre au jour.**
 
 ## Prérequis
 
-- Un navigateur Web (avec de préférence une base Chromium et la traduction activée en français).
-- Avoir souscrit à une offre et être contact administrateur ou technique de l'infrastructure [Hosted Private Cloud VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
-- Avoir un compte VMware Cloud Director avec des droits utilisateurs admin (vérifiez que votre compte utilisateur dispose des droits suffisants).
-- Avoir suivi les guides : 
-  - « [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) ».
-  - « [VMware Cloud Director - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) ».
-- Avoir une bonne connaissance du réseau au sein de l'univers OVHcloud, vous pouvez consulter la page: <https://www.ovhcloud.com/fr/network/>.
-- Être administrateur d'au moins une ou deux organisations VCD sur la plateforme VCF on OVHcloud et les services vSphere managé (Hosted Private Cloud VMware on OVHcloud ou PCC) afin d'avoir les droits suffisant pour effectuer la migration des données (déchiffrement, etc..).
-- Être connecté à [l'espace client](/links/manager).
+- Avoir effectué les étapes de verifications du guide suivant avant le lancement d'une migration vers VCD.
 
 ## En pratique
 
 > [!primary]
 > 
-> Attention cette migration peut prendre jusqu'à plusieurs heures, cela dépend du volume de données à migrer. 
+> Attention les étapes de verification sont nécessaires avant toute migration possible vers VCD. 
 > 
 
 Bienvenue dans le guide complet sur la migration vers VMware Cloud Director au sein de l'écosystème VMware on OVHcloud. 
@@ -55,17 +47,13 @@ Notre objectif est aussi de nous attaquer à ce cas de migration et aux scénari
 
 Vous serez ainsi équipé pour naviguer dans les complexités des migrations de VMware Cloud Director on OVHcloud en toute confiance et avec efficacité.
 
-## Étape 1 - Migration entre des systèmes vCenter Server
-or
-## Étape 1 - Migration hybride vSphere/vCenter managé vers du VCD managé (OVHcloud)
+## Étape 1 - Les prérequis de migration vers VCD
 
-/// details | Comment va s'effectuer la migration vSphere/vCenter vers VCD ?
+/// details | Quelles sont les étapes de vérification avant de migrer vers VCD ?
 
-Le but est de migrer toutes les instances vSphere managé on OVHcloud existantes qui sont marqués avec le tag **"VCDMigrationPath"**.
+Avant de pouvoir migrer vers VCD, des étapes et des prérequis sont nécessaires. En effet beaucoup de notions et cas d'utilisations PCC ne sont pas disponible avec VCD et doivent être prise en compte.
 
-Ces instances clientes proviennent principalement des offres **Essential** et **SDDC** mais nous pouvons avoir des références **PRE/NSX/vSphere** et même vSAN pour les premiers hosts vSAN.
-
-### Les schémas de migration vers VCD
+### Schémas de migration avant/après
 
 **ÉTAPE 1**
 ![Schema 1](images/shema_1.png){.thumbnail}
@@ -78,308 +66,58 @@ Ces instances clientes proviennent principalement des offres **Essential** et **
 
 En tant que propriétaire de la migration VCD, nous souhaitons configurer vCenter et ESXi sur le vSphere managé OVHcloud et le routeur sur le VCD afin de pouvoir ensuite effectuer une migration vCenter croisée (cross vCenter).
 
-### Résumé des scenarios et offres pour la migration vers VCD
+### Tableau de migration - Tous les cas d'utilisations
 
-**Offres ESS**
+Vérifiez bien avant migration que chaque pre-check pour chaque cas ci-dessous ont bien été effectués pour tout ces usages.
 
-Cas de migration facile:
-- Réseau public
-- vlan vRack
+| Steps   | Done   | Warning | Migration use case with                                 | Requirements checks                                                                                                                                                                                                                                                                | Comments during checks | Référence to external documentation                                                                                                        |
+|---------|--------|----|---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| Step 1  | - [x]  | ✅  | **Multi vDC**                                           | - Can only be migrated if it has only one datacentre in a PCC. If not make shur to migrate your data in the datacenter that will be migrated.                                                                                                                                      |                        | [Migrer une infrastructure vers un nouveau vDC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc). |                                                                                                                                                                                                                                                                                                                                                 
+| Step 2  | - [x]  | ✅  | **FT (fault tolerance)**                                | - Can only be migrated if disabled on PCC side.                                                                                                                                                                                                                                    |                        |                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                 
+| Step 3  | - [x]  | ✅  | **DRS Affinity/Anti affinity**                          | - Between VMs can be migrated, but between VM and host cannot be migrated (warning, be carefull with migration). Make shur to adapt or remove them for this use case for VCD.                                                                                                      |                        |                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                   
+| Step 4  | - [x]  | ✅  | **Special devices (CD, DVD etc..)**                     | - All special devices (CD, DVD etc..) must be deleted or removed before migration, otherwise they will be deleted (lost) after migration.                                                                                                                                          |                        |                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                   
+| Step 5  | - [x]  | ✅  | **Datastores clusters**                                 | - Clustering rules will be lost after migration because this notion do not exist on VCD side.                                                                                                                                                                                      |                        |                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                   
+| Step 6  | - [x]  | ✅  | **Memory over-commitment**                              | - Foresee more resources on the VCD side or resize/optimize the VMs before migration on the vSphere side. Because this notion is not usable with VCD, it consume more ressources.                                                                                                  |                        |                                                                                                                                            |    
+| Step 7  | - [x]  | ✅  | **Ressource pools** (sharing)                           | - Ressource pools will be lost after migration because this notion no longer exists on the VCD side.                                                                                                                                                                               |                        |                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                   
+| Step 8  | - [x]  | ✅  | **Security options (certifications PCI-DSS, HDS, SNC)** | - Cannot be migrated with certified PCIDSS, HDS, SNC PCC. If migrated certifications will be lost on VCD side instances.                                                                                                                                                           |                        |                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                    
+| Step 9  | - [x]  | ✅  | **KMS (Encrypted data)**                                | - Not possible to migrate with vSphere encrypted KMS related data. It depend what kind of KMS you are using (vNKP, OKMS, external KMS). Each cases can be problematic. So for now we recommend you decipher data before migration in order to make shur it can be migrated to VCD. |                        |                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                   
+| Step 10 | - [x]  | ✅  | **Zerto**                                               | - Errors with Zerto use cases, if you use Zerto, you cannot be migrated to VCD for now.                                                                                                                                                                                            |                        |                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                   
+| Step 11 | - [x]  | ✅  | **Hosts / Zpool**                                       | - Release ressources (hosts + zpool) freespare and hourly before migration. Or convert it in monthly ressources.                                                                                                                                                                   |                        |                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                   
+| Step 12 | - [x]  | ✅  | **HCX**                                                 | - If HCX usage on PCC, it can not be migrated to VCD.                                                                                                                                                                                                                              |                        |                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                
 
-**Offres SDDC 2016**
+### Foire aux questions
 
-Cas de migration avec usage de NSX-v:
-- Réseau public
-- vxlan
-- vlan vRack
+#### Dans quel ordre dois-je effectuer mes verifications pour migrer vers VCD ?
 
-**Offres SDDC 2018 
+En regardant le tableau ci-dessus, vous remarquez qu'un bon nombre de verification doivent être effectués. Nous vous conseillons de lancer ces pre-check pour votre PCC.
 
-Cas de migration avec usage de NSX-v:
-- Réseau public
-- vxlan
-- vlan vRack
+Déroulez le tableau en vous posant la question, par exemple:
 
-**Offres RE**
+1. Est-ce que mon infrastructure VMware on OVHcloud utilise du Multi-VDC ? 
 
-Cas de migration avec usage de NSX-v:
-- Réseau public
-- vxlan
-- vlan vRack
+Oui, je dois migrer toutes mes données dans un seul datacenter afin de migrer vers VCD.
 
-**Offres vSphere**
+Non, je passe à l'étape suivante.
 
-Cas de migration facile):
-- Réseau public
-- vlan vRack
+2. Est-ce que mon infrastructure VMware on OVHcloud utilise de la fault-tolerance ? Oui, je doit donc la désactiver avant migration sinon je ne pourrait pas migrer vers VCD. / Non, je passe à l'étape suivant.
 
-**Offres NSX**
+3. Ainsi de suite...
 
-Cas de migration très difficile):
-- pre created networks
-- Réseau public
-- vlan vRack
+#### Est-ce que VCD est compatible avec les certifications PCI-DSS, SHC, HDS ?
 
-Nous allons démarrer avec une procédure d'exemple de migration de machines virtuelles vSphere managé (réseau public + vlan vRack) vers VCD. 
+Non VCD on OVHcloud n'est pas encore compatible avec les options de sécurités PCI-DSS, SHC, HDS.
 
-Un cas facile, qui vous permet de voir comment fonctionne le processus de migration.
+#### Qu'elle type de migration sera utilisé ?
 
-### Depuis le control panel OVHcloud
+Le type de migration utilisé est à chaud en cross vCenter.
 
-Pour accéder au vSphere managé (Hosted Private Cloud VMware on OVHcloud) depuis le control panel OVHcloud, vous devez vous rendre dans la "web interface".
+#### Est-ce que les PCC seront conservés après la migration ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) avec un compte administrateur.
+Non, toutes les configurations, données PCC seront supprimées après la migration.
 
-Et cliquez sur l'onglet de la bar de navigation du menu principal: `Hosted Private Cloud`{.action}.
+#### Est-ce que j'ai accès à la console VCD après la migration ?
 
-Sélectionnez votre infrastructure: `VMware > Mon vSphere managé (pcc) > Informations générales`{.action}.
-
-Puis cliquez sur le lien de redirection: `Interface web`{.action}.
-
-Une fois connecté sur l'interface web vSphere/vCenter. Nous pouvons commencer les réglages nécessaires à la migration de nos VM d'un point A (vSphere/vCenter managé pcc) à un point B (vSphere/vCenter managé VCD).
-
-Votre utilisateur vSphere ou role IAM vSphere a besoin des droits suivants:
-
-| **Droit**                           | **Rôle**             |
-|-------------------------------------|----------------------|
-| **Accès vSphere**                   | Opérateur            |
-| **Accès au vmNetwork**              | Opérateur            |
-| **Accès au V(x)Lans**  (si NSX)     | Opérateur            |
-| **Ip FailOver**                     | oui (si nécessaire)  |
-| **IP**                              | oui (si nécessaire)  |
-| **Interface NSX** (si NSX)          | oui (si nécessaire)  |
-| **Gestion du chiffrement** (si KMS) | oui  (si nécessaire) |
-
-
-#### Politique de stockage (non vMotion)
-
-Pour que la politique de stockage puisse taguer les disques souhaités, il faut l'avoir configuré au préalable.
-
-#### Politique de stockage (vMotion)
-
-#### Comment créer un tag (une balise) pour vos datastore afin de les migrer ?
-
-Le Storage vMotion permet de modifier l'emplacement de stockage des fichiers de la machine virtuelle et cela en conservant la machine virtuelle sous tension. Il est possible de déplacer la machine virtuelle complètement ou disque par disque.
-
-Pour la création de la politique de tag (balise).
-
-Allez dans la console vSphere, puis cliquez en haut à gauche sur: ![VCD Migration Tag](images/vcd_migration_tag.png){.thumbnail}
-
-Ensuite, cliquez sur : `Balises et attributs personnalisés`{.action}
-
-Et pour créer une balise, cliquez sur : `NOUVEAU`{.action}
-
-![VCD Migration Tag](images/vcd_migration_tag_2.png){.thumbnail}
-
-Vous devez créer une nouvelle catégorie si vous n'en avez pas. 
-
-Cliquez donc sur: `créer une nouvelle catégorie`{.action}
-
-- **Nom:** tag_migration
-- **Description:** Politique de tag pour migration VCD
-
-![VCD Migration Tag](images/vcd_migration_tag_3.png){.thumbnail}
-
-Sélectionnez uniquement le type d'objet associé à la balise **"Datastore"** pour cette catégorie: `Datastore`{.action}
-
-Choisissez un nom de préference avec une convention de nommage (minuscule et _ pour les éspaces )et une description.
-
-- **Nom:** category_datastore
-- **Description:** Catégorie datastore pour migration vers VCD
-
-Puis cliquez sur: `CREER`{.action}
-
-![VCD Migration Tag](images/vcd_migration_tag_4.png){.thumbnail}
-
-Et pour terminer encore sur: `CREER`{.action}
-
-![VCD Migration Tag](images/vcd_migration_tag_3.png){.thumbnail}
-
-Votre balise (tag) est créé.
-
-![VCD Migration Tag](images/vcd_migration_tag_5.png){.thumbnail}
-
-#### Comment tagger vos datastore ?
-
-Pour attribuer le tag aux ressources souhaitées pour la migration.
-
-Sélectionnez vos ressources souhaitées depuis l'inventaire disques et cliquez sur: `Actions`{.action}
-
-Puis cliquez sur: `Balises et attributs personnalisés > Assigner une balise`{.action}
-
-![VCD Migration Tag](images/vcd_migration_tag_6.png){.thumbnail}
-
-Il en vous reste plus qu'ajouter la balise que vous avez précédemment créé: `tag_migration`{.action}
-
-![VCD Migration Tag](images/vcd_migration_tag_7.png){.thumbnail}
-
-Et cliquer sur: `ASSIGNER`{.action}
-
-Vous pouvez confirmer que le tag est bien assigné, depuis l'inventaire global du datastore, dans le sous-menu:  `Liste de l'inventaire globale > Ressources > Datastores`{.action} 
-
-![VCD Migration Tag](images/vcd_migration_tag_10.png){.thumbnail}
-
-![VCD Migration Tag](images/vcd_migration_tag_9.png){.thumbnail}
-
-Et en cliquant sur un de vos disques: `ssd-XXXXXXX`{.action}
-
-![VCD Migration Tag](images/vcd_migration_tag_11.png){.thumbnail}
-
-Vous constaterez que dans le sommaire de votre disque datastore, vous avez la balise associée ("assigned Tag").
-
-![VCD Migration Tag](images/vcd_migration_tag_8.png){.thumbnail}
-
-Faite le pour l'ensemble de vos datastores à migrer.
-
-#### Comment tagger vos datastore avec une policy ?
-
-#### Migration de VM (à chaud)
-
-![VCD Migration](images/manager_web-interface.png){.thumbnail}
-
-Vous pouvez vous connecter avec IAM ou en utilisateur local.
-
-![VCD Migration](images/manager_web-interface_iam.png){.thumbnail}
-
-Nous vous invitons parallèlement à lancer des: `ping`{.action} depuis des invites de commandes (avec **openssh** par exemple), afin de verifier que vous n'avez pas de perte de connexion entre vos VM et internet.
-
-![VCD Migration](images/manager_web-interface_iam_2.png){.thumbnail}
-
-Vous devez ensuite choisir les machines virtuelles que vous voulez migrer. Sélectionnez votre cluster vSphere/vCenter, allez dans `VM`{.action}.
-
-Cochez (sélectionnez) les machines virtuelles que vous souhaitez migrer.
-
-![VCD Migration](images/vcd_migration.png){.thumbnail}
-
-Puis, faites un clic droit sur les VM sélectionnnés et cliquez sur `Migrer...`{.action}
-
-![VCD Migration 02](images/vcd_migration_2.png){.thumbnail}
-
-Une fois que vous avez cliquez sur: `Migrer...`{.action}
-
-![VCD Migration 03](images/vcd_migration_3.png){.thumbnail}
-
-Une fenêtre vous demande si vous voulez migrer toutes les VM selectionnées.
-
-Cliquez sur: `Oui`{.action}
-
-![VCD Migration 04](images/vcd_migration_4.png){.thumbnail}
-
-Vous arrivez à l'interface de migration vSphere/vCenter. Dans le cas actuel, nous voulons migrer les machines virtuelles vers un serveur vCenter Server non lié au domaine SSO actuel.
-
-Choisissez donc: `Exportation entre vCenter Server`{.action}
-
-Puis cliquez sur: `SUIVANT`{.action}
-
-![VCD Migration Etape 01](images/vcd_migration_5.png){.thumbnail}
-
-La configuration vCenter à utiliser pour VCD est:
-
-- **Vcenter Server adresse:** exemple (**vcenter-gra.vcd.priv.ovhcloud.beta**).
-- **Nom d'utilisateur: exemple (**admin@domain.local) -> si vous utilisez IAM (IAM.OVHCLOUD.COM\user123.il1234-ovh)
-- **Mot de passe:** XXX -> Avec IAM, le mot de passe doit être celui du control panel manager OVHcloud.
-
-![VCD Migration Etape 01](images/vcd_migration_step_1_5.png){.thumbnail}
-
-Vous devez ici, choisir le centre de données de destination.
-
-![VCD Migration Etape 02](images/vcd_migration_step_2_6.png){.thumbnail}
-
-Vous avez à cette étape les hôtes, cluster et vSphere managé (pcc) de destination disponible pour la migration.
-
-Sélectionnez les ressources que vous souhaitez, puis cliquez sur: `SUIVANT`{.action}
-
-Vous pouvez verifier l'origine des machines virtuelles en cliquant sur `VM Origin`{.action}
-
-Un test de compatibilité est effectué lors de la selections des ressources de destination. Dans le cadre de compatibilité.
-
-Si tout est bon vous constaterez que les check sont en `Réussite`{.action}
-
-Cliquez ensuite sur: `SUIVANT`{.action}
-
-Vous devez sélectionner ici le datastore cible. Choisissez celui que vous souhaitez, puis cliquez sur `SUIVANT`{.action}
-
-![VCD Migration Step 02](images/vcd_migration_step_2_7.png){.thumbnail}
-
-![VCD Migration Step 03](images/vcd_migration_step_3_8.png){.thumbnail}
-
-Nous arrivons à l'étape de sélection du réseau cible. Vous avez préalablement branché le réseau publique VCD avec le réseau vSphere managé (pcc) afin de pouvoir migrer les données (VM).
-
-Il ne vous reste plus qu'à importer ces réseaux dans les sources de destination de la migration.
-
-![VCD Migration Step 04](images/vcd_migration_step_4_9.png){.thumbnail}
-
-![VCD Migration Step 06](images/vcd_migration_step_5_10.png){.thumbnail}
-
-Choisissez le bon réseau puis cliquez sur: `OK`{.action}
-
-Et pour terminer l'étape du réseau cible lors de cette migration de VM, cliquez sur: `SUIVANT`{.action}
-
-![VCD Migration Step 07](images/vcd_migration_step_5_11.png){.thumbnail}
-
-#### Import des VM vSphere dans VCD
-
-Depuis le control panel VCD, allez dans: `Centre de données`{.action}, puis dans `Calculer > vApp`{.action}
-
-Cliquez sur `NOUVEAU`{.action}, `Import depuis vCenter`{.action}
-
-![VCD Migration Vcd Import VM](images/vcd_migration_vcd_import.png){.thumbnail}
-
-///
-
-## Étape 2 - Les cas particuliers
-
-/// details | Quelles sont les cas particuliers de migration ?
-
-**Tableau de migration - Tous les cas d'utilisations:**
-
-| Steps            | Migration type  | Stockage  | Use cases                                                                                          | Manual actions to launch                                                                                                                                                                                                                   | Client actions | OVHcloud actions | Commentaires                                                                                                                                                                | Référence à une documentation technique |
-|------------------|-----------------|-----------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - CARP (Common address redundancy protocol) to be coded.                                           | - Detection + Implementation on VCD side for this use cases.                                                                                                                                                                               | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         | 
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Scale0 on PCC (NSX-T 4.0.1) → ✅  (can be migrated)                                               | 	- Ignore this profil and remove them (pcc ?), in relation to this use cases.                                                                                                                                                              | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         |                                                                                                                                                                                                                                                                                                                                                  
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Edge, Backup infra, zerto infra, private GW... (OVH vms) Virtual Machines → ✅  (can be migrated) | 	- Do not migrate this uses cases, to difficult.                                                                                                                                                                                           | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         |                                                                                                                                                                                                                                                                                                                                               
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Multi vDC -> Warning with this use case (check comments).                                        | 	- Read this guide, if datacenter is empty → Ignore other only if only one case (client) should migrate to VCD. Lets contact and block the relation with this use cases.                                                                   | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         |                                                                                                                                                                                                                                                                                                                                                 
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - FT  ✅ -> Can be migrated                                                                         | - Detection + Errors + E-Mail or detection + E-Mail + Disable FT on PCC side + Migration in relation with this use cases.                                                                                                                  | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         |                                                                                                                                                                                                                                                                                                                                                 
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - DRS Affinity/Anti affinity rules (warning, be carefull with migration).                          | - Partial only VMs, distinction between required and preferred in VCD, what do we take by default → detection + VCD implementation side → (avertissement) public documentation VM ↔ host won't be migrated and migrate VMs affinity rules. | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         |                                                                                                                                                                                                                                                                                                                                                   
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Check special devices (CD...) → ✅                                                                | - Read this guide informations <br/> And notify customer, send E-Mail before migration to this related use cases.                                                                                                                          | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         |                                                                                                                                                                                                                                                                                                                                                   
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Datastores cluster → ✅   (read guide, this cases are validated).                                 | - Read this guide, informations in relation to this use cases.                                                                                                                                                                             | Yes            | Yes              | Notifier client et ignorer. After migration the vSphere managed hosts won't exist anymore. After migration the vSphere managed hosts won't exist anymore.                   |                                         |                                                                                                                                                                                                                                                                                                                                                   
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Memory over-commitment (warning, be carefull with this use case).                                | - Read this guide, informations in relation to this use cases.                                                                                                                                                                             | Yes            | Yes              | Détecter + Erreurs + E-Mail <br/>  Demander au client pour ajouter ou libérer les ressources. After migration the vSphere managed hosts won't exist anymore.                |                                       
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Resource pools → 2 use cases, (warning, be carefull with migration, check comments).             | - Read this guide, informations in relation to this use cases.                                                                                                                                                                             | None           | Yes              | Pas de notion sur VCD <br/> Enlever et documenter.  After migration the vSphere managed hosts won't exist anymore.                                                          |                                         |                                                                                                                                                                                                                                                                                                                                                   
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Security option (erreur, check comments)                                                         | 	- Read this guide and detect security option linked to certification and block, in relation to this use cases.                                                                                                                            | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         |                                                                                                                                                                                                                                                                                                                                                    
-| During migration | vMotion (hot)   | NFS/VMFS  | - Encrypted VM disks (check comments)	                                                             | - Decipher data before migration, detection and block (limit the time the data is deciphered). In relation to this use cases.                                                                                                              | Yes            | Yes              | Uncipher VM. After migration the vSphere managed hosts won't exist anymore.                                                                                                 |                                         |                                                                                                                                                                                                                                                                                                                                                   
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Zerto (errors with Zerto use cases) → list block (warning, be carefull on migration with Zerto)  | 	- Warning with 8 use cases like this. Also read this guide informations related to this use case. In relation to this use cases.                                                                                                          | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         |                                                                                                                                                                                                                                                                                                                                                   
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Hosts freespare and hourly                                                                       | - Ask client for migration. After 01h24 it passes in error state CCO. Ask client in relation to this use cases.                                                                                                                            | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         |                                                                                                                                                                                                                                                                                                                                                   
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Check NSX-v usage (warning, be carefull with migration in some NSX-v cases)                      | 	- Read this guide. And becareful because cannot be migrated if Edge and DFW, currently blocking migration, are processed in another wave (we will check if it can be managed manually → 15 occurrences with usage).                       | None           | Yes              | After migration the vSphere managed hosts won't exist anymore.                                                                                                              |                                         |                                                                                                                                                                                                                                                                                                                                                  
-| Pre-check        | vMotion (hot)   | NFS/VMFS  | - Check HCX usage (can not be migrated).                                                           | 	- Read this guide information in relation to this use cases.                                                                                                                                                                              | None           | Yes              | - Impossible de migrer la documentation publique. La fonctionnalité doit être désactivée avant la migration. After migration the vSphere managed hosts won't exist anymore. |                                         |                                                                                                                                                                                                                                                                                                                                                                            
-
-### Listing des cas particuliers
-
-### Multi vDC
-
-Dans le cas d'une migration multi-vDC, 
-
-Multi nic vMotion
-
-### Le chiffrement/déchiffrement de VM avant/après migration
-
-Si vos données sont chiffrées, vous devez les déchiffrer avant la migration. Voici la procédure de déchiffrement des machines virtuelles avant migration:
-
-Le même service vSphere Trust Authority doit être configuré sur l'hôte de destination ?
-
-### DRS Affinity/Anti affinity rules
-
-DRS Affinity/Anti affinity rules ?
-
-### Zerto 
-
-Car Zerto (erreur) → list block  ?
-
-
-### Resource pools 
-
-→ 2 use cases ?
-
-### Memory over-commitment (avertissement)
+Oui, l'action est effectué par OVHcloud et vous permet d'avoir accès aux données après la migration depuis la console VCD on OVHcloud.
 
 ///
 ## Aller plus loin
