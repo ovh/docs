@@ -205,7 +205,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> ```
 
 
-A ce stade, relancez les services réseau ou redémarrez le serveur :
+À ce stade, relancez les services réseau ou redémarrez le serveur :
 
 ```bash
 systemctl restart networking.service
