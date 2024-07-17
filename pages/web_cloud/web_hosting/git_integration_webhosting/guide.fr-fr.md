@@ -167,7 +167,7 @@ La nouvelle version de votre site web a bien été déployée sur votre héberge
 
 ### Modifier un nom de domaine
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez modifier. Cliquez sur `...`{.action} puis sur `Modifier le domaine`{.action}. Deux scénarios sont possibles :
+Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez modifier. Cliquez sur le bouton `...`{.action} puis sur `Modifier le domaine`{.action}. Deux scénarios sont possibles :
 
 #### Le domaine n'est pas le seul attaché au même répertoire
 
