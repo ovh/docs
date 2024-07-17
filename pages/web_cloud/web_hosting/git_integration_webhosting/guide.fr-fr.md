@@ -62,7 +62,8 @@ Le formulaire d'association de Git s'affiche. Plusieurs éléments doivent être
 Copiez et enregistrez la clé SSH sur votre compte GitHub. Cela permet d'établir une connexion sécurisée sans nécessiter de saisie de mot de passe à chaque opération Git que vous serez amenés à effectuer.
 
 - Connectez-vous à votre compte GitHub.
-- Dans le menu principal, cliquez sur `Settings`{.action} puis sur `SSH and GPG keys`{.action}.
+- Cliquez sur votre image de profil en haut à droite, puis sur `Settings`{.action}.
+- Sur la nouvelle page, cliquez sur `SSH and GPG keys`{.action} dans la colonne de gauche.
 - Sélectionnez `New SSH key`{.action} ou `Add SSH key`{.action}.
 
 Le formulaire d'ajout d'une nouvelle clé SSH s'affiche :
@@ -77,7 +78,13 @@ Pour valider les informations, cliquez sur `Add SSH key`{.action}. Si vous y êt
 
 Retournez sur le formulaire d'association de Git de votre espace client OVHcloud. Vous devez renseigner l'adresse de votre dépôt GitHub. Si vous n'avez pas encore de dépôt GitHub pour votre projet, créez-en un.
 
-Dans le menu principal de GitHub, cliquez sur `Your repositories`{.action} puis, à droite de l'écran, cliquez sur `New`{.action}. Définissez un nom pour votre dépôt et remplissez les informations demandées.
+Pour créer un nouveau dépôt :
+
+- Connectez-vous à votre compte GitHub.
+- Cliquez sur votre image de profil en haut à droite, puis sur `Your repositories`{.action}.
+- Sur la droite de l'écran qui s'affiche, cliquez sur `New`{.action}.
+
+Définissez un nom pour votre dépôt et remplissez les informations demandées.
 
 > [!warning]
 >
@@ -92,7 +99,8 @@ Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme `https
 
 Définissez maintenant la branche de votre dépôt GitHub. La branche par défaut est `main`, mais si vous voulez utiliser une autre branche, créez-en une sur GitHub en suivant les étapes ci-dessous :
 
-- Dans le menu principal de GitHub, cliquez sur `Your repositories`{.action}.
+- Connectez-vous à votre compte GitHub.
+- Cliquez sur votre image de profil en haut à droite, puis sur `Your repositories`{.action}.
 - Dirigez-vous dans le dépôt GitHub concerné.
 - Cliquez sur `Main`{.action}, puis sur `View all branches`{.action}, ou cliquez directement sur l'onglet `x Branch`{.action}.
 - À droite de l'écran qui s'affiche, cliquez sur `New branch`{.action}. 
