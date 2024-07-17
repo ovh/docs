@@ -34,7 +34,7 @@ details[open]>summary::before {
 
 > [!primary]
 > 
-> Attention les étapes de verification sont obligatoire avant toute migration possible vers VCD. 
+> Attention les étapes de verification sont obligatoires avant toute migration possible vers VCD. 
 > 
 
 Bienvenue dans le guide complet sur la migration vers VMware Cloud Director au sein de l'écosystème VMware on OVHcloud. 
