@@ -124,7 +124,7 @@ Next, we will move on to the VCD section: `VCD | Network | IP Space`{.action} to
 
 ///
 
-## Step 2 - Create a datacentre group (optional)
+### Step 2 - Create a datacentre group (optional)
 
 > [!primary]
 > 

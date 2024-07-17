@@ -124,7 +124,7 @@ Nous allons ensuite passer de la section de VCD `Mise en Réseau | Espace IP`{.a
 
 ///
 
-## Étape 2 - Création d'un groupe de centre de donnée (optionnel)
+### Étape 2 - Création d'un groupe de centre de donnée (optionnel)
 
 > [!primary]
 >
