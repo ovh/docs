@@ -234,6 +234,25 @@ iface eth0 inet static
   up ip route replace default via 192.168.0.1 dev $IFACE onlink src ADDITIONAL_IP  
 ```
 
+#### Exemple de configuration VM cliente Ubuntu
+
+Contenu du fichier `/etc/netplan/01-eth0.yaml` :
+
+```yaml
+network:
+  version: 2
+  ethernets:
+    eth0:
+      addresses:
+        - 192.168.0.3/24
+        - ADDITIONAL_IP/32 
+      routes:
+        - to: default
+          via: 192.168.0.1
+          from: ADDITIONAL_IP  
+```
+
+
 #### Test et validation
 
 Désormais, vos machines virtuelles devraient pouvoir joindre un service public sur Internet. De plus, vos machines virtuelles peuvent également être jointes directement sur Internet via l'adresse Additional IP. La bande passante disponible correspond à la bande passante disponible sur les interfaces publiques de votre serveur et n'affectera pas les interfaces privées utilisées pour le vRack. Cette bande passante est partagée avec les autres machines virtuelles sur le même hôte qui utilisent une adresse Additional IP et l'hôte Proxmox pour l'accès public.
