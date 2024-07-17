@@ -202,7 +202,6 @@ ssh PUB_IP_DEDICATED_SERVER
 >>     bridge-fd 0
 >>     up ip route add ADDITIONAL_IP/32 dev $IFACE
 >>     up ip route add ADDITIONAL_IP/28 dev $IFACE  
->> 
 >> ```
 
 
