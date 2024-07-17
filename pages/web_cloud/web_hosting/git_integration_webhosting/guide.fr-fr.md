@@ -144,7 +144,7 @@ Dans le tableau de l'onglet `Multisite`{.action}, identifiez les lignes correspo
 - L'adresse du dépôt Github n'existe pas ou est erronée.
 - La branche du dépôt Github n'existe pas ou son nom est erroné.
 
-Pour connaître la cause exacte de l'erreur, consultez les informations du dernier déploiement. Dans le tableau, identifiez la ligne correspondant au domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur `...`{.action} puis sur `Informations du dernier déploiement`{.action}.
+Pour connaître la cause exacte de l'erreur, consultez les informations du dernier déploiement. Dans le tableau, identifiez la ligne correspondant au nom de domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur le bouton `...`{.action} puis sur `Informations du dernier déploiement`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
 
