@@ -219,12 +219,19 @@ Lorsque vous redémarrez les services réseau, les bridges (vmbr0 par exemple) p
 Contenu du fichier `/etc/network/interfaces` :
 
 ```bash
-auto lo ens18
+auto lo
 iface lo inet loopback
-iface ens18 inet static
-    address ADDITIONAL_IP
-    netmask 255.255.255.255
-    gateway 192.168.0.1
+
+auto eth0
+
+iface eth0 inet static
+  address 192.168.0.2/24
+
+iface eth0 inet static
+  address ADDITIONAL_IP/32
+  # Le champ "src" doit être défini afin que les paquets à destination d'Internet
+  # aient comme source l'IP publique et non l'IP privée 192.168.0.2
+  up ip route replace default via 192.168.0.1 dev $IFACE onlink src ADDITIONAL_IP  
 ```
 
 #### Test et validation
