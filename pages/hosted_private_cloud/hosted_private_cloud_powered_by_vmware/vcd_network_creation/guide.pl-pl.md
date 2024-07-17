@@ -53,7 +53,7 @@ Before creating a network, the main concept to understand with VMware Cloud Dire
 - IP prefixes are the IP subnet that you can use in your Edge Gateway, for example.
 - IP ranges and IP prefixes cannot overlap and must be within the Internal Scope.
 
-### Step 1: Create the IP space (recommended)
+## Step 1: Create the IP space (recommended)
 
 > [!primary]
 > 
@@ -165,7 +165,7 @@ Finally, click on `FINISH`{.action}.
 
 ///
 
-### Step 3 - Create an Edge Gateway (optional)
+## Step 3 - Create an Edge Gateway (optional)
 
 /// details | How do I create an Edge Gateway with VMware Cloud Director on OVHcloud?
 
@@ -231,7 +231,7 @@ Finally, (step 5: Create an Edge Gateway) click on `FINISH`{.action}.
 
 ///
 
-### Step 4 - Create a private network
+## Step 4 - Create a private network
 
 /// details | How do I create a network with VMware Cloud Director on OVHcloud?
 

@@ -53,7 +53,7 @@ Avant de créer un réseau, le concept principal à comprendre avec VMware Cloud
 - Les préfixes IP sont le sous-réseau IP que vous pouvez utiliser dans votre Edge Gateway par exemple.
 - Les plages IP et les préfixes IP ne peuvent pas se chevaucher et doivent être inclus dans l'Internal Scope (périmètre interne).
 
-### Étape 1 - Création de l'Espace IP (recommandé)
+## Étape 1 - Création de l'Espace IP (recommandé)
 
 > [!primary]
 >
@@ -235,7 +235,7 @@ Cliquez enfin sur `TERMINER`{.action}.
 
 ///
 
-### Étape 4 - Création d'un réseau privé
+## Étape 4 - Création d'un réseau privé
 
 /// details | Comment créer un réseau avec VMware Cloud Director on OVHcloud ?
 
