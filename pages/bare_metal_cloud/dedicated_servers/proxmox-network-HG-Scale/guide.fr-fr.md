@@ -44,8 +44,13 @@ Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode b
 Cette configuration offre de meilleures performances en termes de bande passante mais s'avère moins flexible. Avec cette configuration, les adresses Additional IP doivent être attachées à un serveur dédié. Si vous disposez de plusieurs serveurs de virtualisation Proxmox et que vous souhaitez migrer une VM d'un serveur à l'autre, vous devrez également migrer l'adresse Additional IP  vers le serveur de destination, via l'espace client OVHcloud ou via l'API OVHcloud. Vous pouvez automatiser cette étape en écrivant un script qui utilise les API d'OVHcloud.  
 
 #### Schéma de la configuration cible
-
-![schema route](images/schema_route2022.png){.thumbnail}
+> [!tabs]
+> Gammes High Grade & SCALE
+>>![schema route](images/schema_route2022.png){.thumbnail}<br>
+>>
+> Gamme ADVANCE
+>>![schema route](images/gamme-advance-01.png){.thumbnail}<br>
+>>
 
 #### Explications
 
