@@ -166,9 +166,9 @@ ssh PUB_IP_DEDICATED_SERVER
 >> 	bridge-stp off
 >> 	bridge-fd 0
 >> 	# Ajoutez une Additional IP unique
->> 	up ip route add A.B.C.D/32 dev vmbr0
+>> 	up ip route add ADDITIONAL_IP/32 dev vmbr0
 >> 	# Ajoutez un bloc IP
->> 	up ip route add A.B.C.D/28 dev vmbr0
+>> 	up ip route add ADDITIONAL_IP/28 dev vmbr0
 >> 
 >> # Bridge utilisé pour les réseaux privés sur le vRack 
 >> # La fonctionnalité VLAN est activée
@@ -191,14 +191,23 @@ ssh PUB_IP_DEDICATED_SERVER
 >> ``` 
 >> 
 >> ```bash
+>> auto lo
+>> iface lo inet loopback
+>> 
+>> auto enp8s0f0np0
+>> iface enp8s0f0np0 inet static
+>>     address PUB_IP_DEDICATED_SERVER/32
+>>     gateway 100.64.0.1
+>> 
 >> auto vmbr0
 >> iface vmbr0 inet static
->>     address 192.168.1.2
->>     netmask 255.255.255.0
->>     gateway 192.168.1.1
->>     bridge_ports enp8s0f0np0
->>     bridge_stp off
->>     bridge_fd 0 
+>>     address 192.168.0.1/24
+>>     bridge-ports none
+>>     bridge-stp off
+>>     bridge-fd 0
+>>     up ip route add ADDITIONAL_IP/32 dev $IFACE
+>>     up ip route add ADDITIONAL_IP_BLOCK/30 dev $IFACE  
+>> 
 >> ```
 
 
