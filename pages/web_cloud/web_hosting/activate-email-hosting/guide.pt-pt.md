@@ -1,7 +1,7 @@
 ---
 title: "Ativar os endereços de e-mail incluídos no seu alojamento web"
 excerpt: "Saiba como ativar os endereços de e-mail incluídos na sua oferta de alojamento web"
-updated: 2024-03-21
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Se adquiriu um alojamento web sem o associar diretamente a um nome de domínio, 
 ## Requisitos
 
 - Dispor de um [nome de domínio](https://www.ovh.com/pt/dominios/){.external} na sua Área de Cliente OVHcloud.
-- Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting){.external}.
+- Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting){.external} (exceto ofertas "Alojamento gratuito 100M" e "Start10m").
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 > [!warning]

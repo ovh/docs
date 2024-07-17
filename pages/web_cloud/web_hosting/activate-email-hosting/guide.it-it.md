@@ -1,7 +1,7 @@
 ---
 title: "Attivare gli indirizzi email inclusi in un hosting Web"
 excerpt: "Questa guida ti mostra come attivare gli account di posta inclusi nella tua soluzione di hosting Web"
-updated: 2024-03-21
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’
 ## Prerequisiti
 
 - Aver registrato un [dominio](/links/web/domains){.external} nello Spazio Cliente OVHcloud
-- Disporre di una soluzione di [hosting Web](/links/web/hosting){.external} attiva
+- Disporre di una soluzione di [hosting Web](/links/web/hosting){.external} attiva (escluse le offerte "Hosting gratuito 100M" e "Start10m")
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 > [!warning]
