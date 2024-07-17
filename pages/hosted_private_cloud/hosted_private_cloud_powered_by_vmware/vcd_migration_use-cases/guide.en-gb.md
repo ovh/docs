@@ -1,6 +1,6 @@
 ---
 title: 'Migration uses cases in VMware Cloud Director'
-excerpt: 'Find out how to migrate your Hosted Private Cloud VMware on OVHcloud workflows on VCD as well as these specific and complex cases, to guarantee security for your data'
+excerpt: 'Find out how to check if your Hosted Private Cloud VMware on OVHcloud workflows can be migrated to VCD as well as these specific and complex cases, to guarantee security for your data'
 updated: 2024-07-17
 ---
 <style>
