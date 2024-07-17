@@ -197,6 +197,7 @@
             + [Assigning a Virtual MAC to a Failover IP](bare_metal_cloud/dedicated_servers/network_virtual_mac)
             + [Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges](bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
             + [Configuring the network on Proxmox VE](bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale)
+            + [Configuring the network on Proxmox VE with Advance servers](bare_metal_cloud/dedicated_servers/proxmox-network-advance-gen3)
             + [Configuring the network on ESXi on the High Grade & SCALE ranges](bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale)
             + [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](bare_metal_cloud/dedicated_servers/ola-enable-manager)
             + [How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](bare_metal_cloud/dedicated_servers/ola-enable-debian9)
