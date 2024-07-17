@@ -148,7 +148,7 @@ Pour connaître la cause exacte de l'erreur, consultez les informations du derni
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
 
-Une fois le(s) erreur(s) identifiée(s), associez Git à nouveau. Recommencez l'opération en cliquant sur `...`{.action} de la ligne correspondante, puis sur `Associer Git`{.action}.
+Une fois le(s) erreur(s) identifiée(s), associez Git à nouveau. Recommencez l'opération en cliquant sur le bouton `...`{.action} de la ligne correspondante, puis sur `Associer Git`{.action}.
 
 ### Déployer votre dépôt Github sur votre hébergement web OVHcloud
 
