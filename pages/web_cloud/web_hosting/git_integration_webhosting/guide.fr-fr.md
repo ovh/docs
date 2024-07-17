@@ -191,7 +191,7 @@ La fenêtre suivante s'affiche.
 
 Comme le message l'indique, [supprimez votre association Git](#deleteGitAssociation) dans un premier temps avant de modifier votre nom de domaine.
 
-### Détacher un domaine
+### Détacher un nom de domaine
 
 Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez détacher de votre hébergement web OVHcloud. Cliquez sur le bouton `...`{.action} puis sur `Détacher le nom de domaine`{.action}. Deux scénarios sont possibles :
 
