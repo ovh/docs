@@ -195,7 +195,7 @@ Comme le message l'indique, [supprimez votre association Git](#deleteGitAssociat
 
 Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez détacher de votre hébergement web OVHcloud. Cliquez sur le bouton `...`{.action} puis sur `Détacher le nom de domaine`{.action}. Deux scénarios sont possibles :
 
-#### Le domaine n'est pas le seul attaché au même répertoire
+#### Le nom de domaine n'est pas le seul attaché au même répertoire
 
 La fenêtre suivante s'affiche.
 
