@@ -11,14 +11,6 @@ updated: 2024-07-16
 
 ## Objectif
 
-Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode bridged (via des MAC Virtuelles) n'est pas possible. Il en est de même pour les nouveaux serveurs de dernière génération livrés avec les cpu AMD Epyc 4K et 8K. Il est donc nécessaire de configurer les Additional IP en mode routé ou via le vRack.
-
-
-> [!primary]
->
-> D'ici la fin de l'année 2024, cette fonctionnalité sera livrée pour l'ensemble des gammes High Grade, SCALE & ADVANCE.
->
-
 **Découvrez comment configurer le réseau sous Proxmox VE.**
 
 ## Prérequis
