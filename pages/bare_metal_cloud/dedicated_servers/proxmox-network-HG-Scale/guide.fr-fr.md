@@ -83,7 +83,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> 
 >> Ajoutez les lignes suivantes dans `/etc/sysctl.conf`:
 >> 
->> ```bash
+>> ```text
 >> # Activation de l'ip_forward
 >> net.ipv4.ip_forward = 1
 >> 
