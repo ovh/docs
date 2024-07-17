@@ -234,7 +234,7 @@ Retrouvez sur cet écran toutes les informations relatives au dernier déploieme
 
 ### Supprimer l'association de Git <a name="deleteGitAssociation"></a>
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire dont vous souhaitez supprimer l'association avec Git. Cliquez sur `...`{.action} puis sur `Supprimer Git`{.action}.
+Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire dont vous souhaitez supprimer l'association avec Git. Cliquez sur le bouton `...`{.action} puis sur `Supprimer Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-button.png){.thumbnail}
 
