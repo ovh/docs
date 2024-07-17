@@ -1,7 +1,7 @@
 ---
 title: "Comment installer OverTheBox ?"
 excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox"
-updated: 2024-05-29
+updated: 2024-07-16
 ---
 
 ## Objectif
@@ -80,31 +80,36 @@ Lors de votre première connexion, un assistant d'installation se lance. **Nous 
 
 #### Manuellement
 
-- Cliquez sur **"Register"**.
+- Cliquez sur le bouton `Enregistrement`{.action}.
 
 ![overthebox](images/installationV2-step3-1.png){.thumbnail}
 
-- Identifiez-vous sur l'espace client.
-- Cliquez sur le **service OverTheBox** que vous souhaitez associer à votre appareil.
+- Sur l'écran d'enregistrement, cliquez sur le bouton `Connexion`{.action} pour vous connecter à votre compte OVHcloud.
+
+![overthebox](images/step3-login.png){.thumbnail}
+
+- Renseignez vos identifiants OVHcloud puis cliquez sur `Continue`{.action} puis autorisez la connexion API.
+
+- Une fois connecté, cliquez sur le **service OverTheBox** que vous souhaitez associer à votre appareil.
 
 ![overthebox](images/installationV2-step3-2.png){.thumbnail}
 
-- Faites au préalable un copier-coller du nouveau **Device ID** sur l'interface **OverTheBox**.
+- Une fois le service associé, activez-le en cliquant sur le bouton `Activation`{.action}.
 
-![overthebox](images/installationV2-step3-3.png){.thumbnail}
-
-- Modifiez l'**Identifiant du périphérique** en indiquant le **"Device ID"**.
-
-![overthebox](images/installationV2-step3-4.png){.thumbnail}
-
-- Validez.
+![overthebox](images/step3-activation-service.png){.thumbnail}
 
 > [!success]
 >
-> L'enregistrement est terminé et votre offre est désormais activée.
+> L'enregistrement est terminé et votre offre est désormais activée. Pour revenir à la page d'accueil,  cliquez sur `OverTheBox`{.action} en haut à gauche de l'interface.
 >
 
+![overthebox](images/step3-register-done.png){.thumbnail}
+
 ### Étape 4 : vérifier le bon fonctionnement de votre service
+
+Le service OverTheBox est actif et opérationnel.
+
+![overthebox](images/step4-service-ok.png){.thumbnail}
 
 > [!warning]
 >
