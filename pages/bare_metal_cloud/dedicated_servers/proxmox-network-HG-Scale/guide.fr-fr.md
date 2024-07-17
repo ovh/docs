@@ -228,7 +228,7 @@ iface eth0 inet static
 
 iface eth0 inet static
   address ADDITIONAL_IP/32
-  # Le champ "src" doit être défini afin que les paquets à destination d'Internet
+  # L'option "src" doit être définie afin que les paquets à destination d'Internet
   # aient comme source l'IP publique et non l'IP privée 192.168.0.2
   up ip route replace default via 192.168.0.1 dev $IFACE onlink src ADDITIONAL_IP  
 ```
