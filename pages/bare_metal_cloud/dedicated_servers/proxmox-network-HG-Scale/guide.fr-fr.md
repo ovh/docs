@@ -67,7 +67,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >>
 >> ### Activation de l'ip_forward et du proxy_arp
 >> 
->> Il faut activer `ip_forward` et `proxy_arp`. Pour ce faire il est recommandé de modifier le fichier de configuration `sysctl` pour une gestion plus propre et pérenne.
+>> Il faut activer les paramètres `sysctl` `ip_forward` et `proxy_arp`. Pour ce faire il est recommandé de modifier le fichier de configuration `sysctl.conf`.
 >> 
 >> Ajoutez les lignes suivantes dans `/etc/sysctl.conf`:
 >> 
