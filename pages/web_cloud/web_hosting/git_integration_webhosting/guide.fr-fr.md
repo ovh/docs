@@ -19,7 +19,7 @@ Dans le paysage numérique actuel, les sociétés sont de plus en plus dynamique
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie Web Cloud.
-- Posséder un compte [GitHub](https://github.com/) et y être connecté.
+- Posséder un compte [GitHub](https://github.com/){.external} et y être connecté.
 
 ## En pratique
 
@@ -201,7 +201,7 @@ Comme le message l'indique, [supprimez votre association Git](#deleteGitAssociat
 
 ### Détacher un nom de domaine
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez détacher de votre hébergement web OVHcloud. Cliquez sur le bouton `...`{.action} puis sur `Détacher le nom de domaine`{.action}. Deux scénarios sont possibles :
+Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez détacher de votre hébergement web OVHcloud. Cliquez sur le bouton `...`{.action} puis sur `Détacher le domaine`{.action}. Deux scénarios sont possibles :
 
 #### Le nom de domaine n'est pas le seul attaché au même répertoire
 

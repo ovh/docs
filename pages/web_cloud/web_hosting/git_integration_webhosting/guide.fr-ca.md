@@ -19,7 +19,7 @@ Dans le paysage numérique actuel, les sociétés sont de plus en plus dynamique
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie Web Cloud.
-- Posséder un compte [GitHub](https://github.com/) et y être connecté.
+- Posséder un compte [GitHub](https://github.com/){.external} et y être connecté.
 
 ## En pratique
 
@@ -160,7 +160,7 @@ Une fois le(s) erreur(s) identifiée(s), associez Git à nouveau. Recommencez l'
 
 ### Déployer votre dépôt GitHub sur votre hébergement web OVHcloud
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au nom de domaine que vous souhaitez déployer avec Git. Assurez-vous que le statut de la colonne Git soit `Activé`{.action}. Cliquez sur le bouton `...`{.action} puis sur `Déployer Git`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Séletionnez l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au nom de domaine que vous souhaitez déployer avec Git. Assurez-vous que le statut de la colonne Git soit `Activé`{.action}. Cliquez sur le bouton `...`{.action} puis sur `Déployer Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
 
@@ -175,7 +175,7 @@ La nouvelle version de votre site web a bien été déployée sur votre héberge
 
 ### Modifier un nom de domaine
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez modifier. Cliquez sur le bouton `...`{.action} puis sur `Modifier le domaine`{.action}. Deux scénarios sont possibles :
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Séletionnez l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez modifier. Cliquez sur le bouton `...`{.action} puis sur `Modifier le domaine`{.action}. Deux scénarios sont possibles :
 
 #### Le nom de domaine n'est pas le seul attaché au même répertoire
 
@@ -201,7 +201,7 @@ Comme le message l'indique, [supprimez votre association Git](#deleteGitAssociat
 
 ### Détacher un nom de domaine
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez détacher de votre hébergement web OVHcloud. Cliquez sur le bouton `...`{.action} puis sur `Détacher le nom de domaine`{.action}. Deux scénarios sont possibles :
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Séletionnez l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez détacher de votre hébergement web OVHcloud. Cliquez sur le bouton `...`{.action} puis sur `Détacher le domaine`{.action}. Deux scénarios sont possibles :
 
 #### Le nom de domaine n'est pas le seul attaché au même répertoire
 
@@ -221,7 +221,7 @@ Comme le message l'indique, [supprimez votre association Git](#deleteGitAssociat
 
 ### Configurer Git
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire que vous voulez configurer avec Git. Cliquez sur le bouton `...`{.action} puis sur `Configurer Git`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Séletionnez l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire que vous voulez configurer avec Git. Cliquez sur le bouton `...`{.action} puis sur `Configurer Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
 
@@ -234,7 +234,9 @@ Les informations suivantes s'affichent :
 
 ### Informations du dernier déploiement
 
-Après avoir déployé votre dépôt GitHub sur votre hébergement web, vous pouvez consulter les informations sur le dernier déploiement, comme les erreurs, les tests ou toute information utile. Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur le bouton `...`{.action} puis sur `informations du dernier déploiement`{.action}.
+Après avoir déployé votre dépôt GitHub sur votre hébergement web, vous pouvez consulter les informations sur le dernier déploiement, comme les erreurs, les tests ou toute information utile. 
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Séletionnez l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur le bouton `...`{.action} puis sur `informations du dernier déploiement`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
 
@@ -242,7 +244,7 @@ Retrouvez sur cet écran toutes les informations relatives au dernier déploieme
 
 ### Supprimer l'association de Git <a name="deleteGitAssociation"></a>
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire dont vous souhaitez supprimer l'association avec Git. Cliquez sur le bouton `...`{.action} puis sur `Supprimer Git`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Séletionnez l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire dont vous souhaitez supprimer l'association avec Git. Cliquez sur le bouton `...`{.action} puis sur `Supprimer Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-button.png){.thumbnail}
 
@@ -273,7 +275,7 @@ Cliquez sur `Confirmer`{.action} pour valider la suppression de l'association Gi
 > Si vous êtes déjà dans le formulaire d'association de Git, copiez l'URL du webhook et passez à l'étape « [Configurer le webhook](#configureWebhook) ».
 >
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire sur lequel vous voulez configurer un webhook. Cliquez sur le bouton `...`{.action} puis sur `Configurer Git`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Séletionnez l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire sur lequel vous voulez configurer un webhook. Cliquez sur le bouton `...`{.action} puis sur `Configurer Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
 
