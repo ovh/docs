@@ -265,7 +265,7 @@ Cliquez sur `Confirmer`{.action} pour valider la suppression de l'association Gi
 > Si vous êtes déjà dans le formulaire d'association de Git, copiez l'URL du webhook et passez à l'étape «[Configurer le webhook](#configureWebhook)»
 >
 
-Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire sur lequel vous voulez configurer un webhook. Cliquez sur `...`{.action} puis sur `Configurer Git`{.action}.
+Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire sur lequel vous voulez configurer un webhook. Cliquez sur le bouton `...`{.action} puis sur `Configurer Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
 
