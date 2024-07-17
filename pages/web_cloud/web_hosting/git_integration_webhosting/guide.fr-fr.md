@@ -32,7 +32,7 @@ Dans le paysage numérique actuel, les sociétés sont de plus en plus dynamique
 
 > [!warning]
 >
-> Lorsque vous associez un répertoire à Git, tous les domaines présents sur ce répertoire sont également associés à Git. Par exemple, si le répertoire correspondant au site web que vous associez est `www`, alors tous les domaines associés au répertoire `www` seront associés à Git.
+> Lorsque vous associez un répertoire à Git, tous les noms de domaine présents sur ce répertoire seront également associés à Git. Par exemple, si le répertoire correspondant au site web que vous associez est `www`, alors tous les noms de domaine associés au répertoire `www` seront également associés à Git.
 >
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager) et effectuez les actions suivantes :
