@@ -1,13 +1,9 @@
 ---
 title: "Configurer et utiliser Git avec son hébergement web OVHcloud"
 excerpt: "Découvrez comment configurer et utiliser Git avec votre hébérgement web dans votre espace client OVHcloud"
-updated: 2024-07-25
+updated: 2024-07-17
 flag: hidden
 ---
-
-> [!primary]
-> Cette page est un espace réservé temporaire pour la prochaine documentation sur la fonctionnalité Git Integration pour Web Hosting.
->
 
 ## Objectif
 
@@ -19,13 +15,13 @@ Dans le paysage numérique actuel, les sociétés sont de plus en plus dynamique
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie Web Cloud.
-- Posséder un compte [Github](https://github.com/) et y être connecté.
+- Posséder un compte [GitHub](https://github.com/) et y être connecté.
 
 ## En pratique
 
 > [!primary]
 >
-> Pour l'association et la configuration de Git, vous devrez effectuer des modifications dans votre compte Github. Avant de commencer le guide, connectez-vous à votre compte Github.
+> Pour l'association et la configuration de Git, vous devrez effectuer des modifications dans votre compte GitHub. Avant de commencer le guide, connectez-vous à votre compte GitHub.
 >
 
 ### Associer un répertoire à Git <a name="associateGitRepo"></a>
@@ -48,11 +44,11 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) et effectuez le
 Le formulaire d'association de Git s'affiche. Plusieurs éléments doivent être configurés :
 
 - Clé SSH
-- Dépôt Github
-- Branche du dépôt Github
+- Dépôt GitHub
+- Branche du dépôt GitHub
 - Webhook (optionnel)
 
-#### Associer une clé SSH à Github <a name="linkSSHKey"></a>
+#### Associer une clé SSH à GitHub <a name="linkSSHKey"></a>
 
 > [!primary]
 >
@@ -61,7 +57,7 @@ Le formulaire d'association de Git s'affiche. Plusieurs éléments doivent être
 
 Copiez et enregistrez la clé SSH sur votre compte GitHub. Cela permet d'établir une connexion sécurisée sans nécessiter de saisie de mot de passe à chaque opération Git que vous serez amenés à effectuer.
 
-- Connectez-vous à votre compte Github.
+- Connectez-vous à votre compte GitHub.
 - Dans le menu principal, cliquez sur `Settings`{.action} puis sur `SSH and GPG keys`{.action}.
 - Sélectionnez `Nouvelle clé SSH`{.action} ou `Ajouter une clé SSH`{.action}.
 
@@ -73,24 +69,24 @@ Le formulaire d'ajout d'une nouvelle clé SSH s'affiche :
 
 Pour valider les informations, cliquez sur `Ajouter une clé SSH`{.action}. Si vous y êtes invité, confirmez l'accès à votre compte dans GitHub.
 
-#### Définir le dépôt Github
+#### Définir le dépôt GitHub
 
 Retournez sur le formulaire d'association de Git de votre espace client OVHcloud. Vous devez renseigner l'adresse de votre dépôt GitHub. Si vous n'avez pas encore de dépôt GitHub pour votre projet, créez-en un.
 
-Dans le menu principal de GitHub, cliquez sur `Your repositories`{.action} puis, à droite de l'écran, cliquez `New`{.action}. Définissez un nom pour votre dépôt et remplissez les informations demandées.
+Dans le menu principal de GitHub, cliquez sur `Your repositories`{.action} puis, à droite de l'écran, cliquez sur `New`{.action}. Définissez un nom pour votre dépôt et remplissez les informations demandées.
 
 > [!warning]
 >
-> Cochez l'option vous proposant de créer un fichier `README` pour que Github initialise correctement votre dépôt.
+> Cochez l'option vous proposant de créer un fichier `README` pour que GitHub initialise correctement votre dépôt.
 >
 
- Enfin, cliquez sur `Create Repository`{.action}.
+Enfin, cliquez sur `Create Repository`{.action}.
 
-Copiez l'adresse de votre dépôt Github. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name>`{.action}. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît.
+Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name>`{.action}. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 
-Définissez maintenant la branche de votre dépôt GitHub. La branche par défaut est `main`, mais si vous voulez utiliser une autre branche, créez-en une sur Github en suivant les étapes suivantes :
+Définissez maintenant la branche de votre dépôt GitHub. La branche par défaut est `main`, mais si vous voulez utiliser une autre branche, créez-en une sur GitHub en suivant les étapes ci-dessous :
 
 - Dans le menu principal de GitHub, cliquez sur `Your repositories`{.action}.
 - Dirigez-vous dans le dépôt GitHub concerné.
@@ -102,7 +98,7 @@ Retournez sur le formulaire d'association de Git de votre espace client OVHcloud
 
 #### Configurer le déploiement automatique
 
-En bas du formulaire d'association de Git, une section `Configuration du déploiement automatique`{.action} s'affiche, accompagnée de l'URL de webhook. Configurer un webhook permet à votre dépôt GitHub de notifier automatiquement votre hébergement web OVHcloud des événements qui se produisent sur le dépôt Github (nouveau déploiement, changement dans le code, etc.). Cette fonctionnalité est particulièrement utile si vous travaillez en groupe sur le même projet et que vous souhaitez restez à jour de toutes les modifications du dépôt Github. Pour en savoir plus, découvrez comment [configurer un webhook sur GitHub](#configureWebhook).
+En bas du formulaire d'association de Git, une section `Configuration du déploiement automatique`{.action} s'affiche, accompagnée de l'URL de webhook. Configurer un webhook permet à votre dépôt GitHub de notifier automatiquement votre hébergement web OVHcloud des événements qui se produisent sur le dépôt GitHub (nouveau déploiement, changement dans le code, etc.). Cette fonctionnalité est particulièrement utile si vous travaillez en groupe sur le même projet et que vous souhaitez rester à jour de toutes les modifications du dépôt GitHub. Pour en savoir plus, découvrez comment [configurer un webhook sur GitHub](#configureWebhook).
 
 #### Valider l'association de Git
 
@@ -113,13 +109,13 @@ Avant de valider le formulaire d'association de Git, assurez-vous que :
 - Le nom de la branche du dépôt GitHub est correct.
 - Votre répertoire d'installation est vide.
 
-Pour valider les informations du formulaire d'association de Git, appuyez sur `Appliquez la configuration`{.action}.
+Pour valider les informations du formulaire d'association de Git, cliquez sur `Appliquez la configuration`{.action}.
 
 ### Activation de l'association de Git
 
 #### Succès de l'association de Git
 
-Après avoir validé le formulaire s'association de Git, vous êtes redirigés sur l'onglet Multisite.
+Après avoir validé le formulaire s'association de Git, vous êtes redirigé sur l'onglet Multisite.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/banner-git-activation-ongoing.png){.thumbnail}
 
@@ -129,7 +125,7 @@ Une bannière verte vous indique que Git est en cours d'activation. Suivez l'act
 
 Le statut `En cours`{.action} indique que l'association de Git est en cours. Le processus peut prendre plusieurs minutes. Lorsque la tâche est achevée, le statut `Activé`{.action} s'affiche.
 
-Vous pouvez également suivre l'évolution de l'activation de Git en vous dirigeant sur l'onglet `Multisite`{.action}. Dans le tableau, identifiez les lignes correspondant au répertoire que vous voulez associer à Git. Pour chacune des lignes concernées, dans la colonne `Git`{.action}, la mention `En cours`{.action} vous indique que Git est en cours d'activation.
+Vous pouvez également suivre l'évolution de l'activation de Git depuis l'onglet `Multisite`{.action}. Dans le tableau, identifiez les lignes correspondant au répertoire que vous voulez associer à Git. Pour chacune des lignes concernées, dans la colonne `Git`{.action}, la mention `En cours`{.action} vous indique que Git est en cours d'activation.
 
 Lorsque l'association de Git est effectuée, le statut `Activé`{.action} apparaît dans la colonne `Git`{.action} pour les lignes concernées.
 
@@ -137,12 +133,12 @@ Lorsque l'association de Git est effectuée, le statut `Activé`{.action} appara
 
 #### Erreurs de l'association de Git
 
-Dans le tableau de l'onglet `Multisite`{.action}, identifiez les lignes correspondant au répertoire que vous voulez associer à Git. Dans la colonne `Git`, si `Erreur` apparaît, cela signifie qu'au moins une des erreurs suivantes est survenue :
+Dans le tableau de l'onglet `Multisite`{.action}, identifiez les lignes correspondant au répertoire que vous voulez associer à Git. Dans la colonne `Git`, si la mention `Erreur` apparaît, cela signifie qu'au moins une des erreurs suivantes est survenue :
 
-- La clé SSH n'a pas été enregistrée dans votre compte Github.
+- La clé SSH n'a pas été enregistrée dans votre compte GitHub.
 - Le répertoire d'installation n'est pas vide.
-- L'adresse du dépôt Github n'existe pas ou est erronée.
-- La branche du dépôt Github n'existe pas ou son nom est erroné.
+- L'adresse du dépôt GitHub n'existe pas ou est erronée.
+- La branche du dépôt GitHub n'existe pas ou son nom est erroné.
 
 Pour connaître la cause exacte de l'erreur, consultez les informations du dernier déploiement. Dans le tableau, identifiez la ligne correspondant au nom de domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur le bouton `...`{.action} puis sur `Informations du dernier déploiement`{.action}.
 
@@ -150,28 +146,28 @@ Pour connaître la cause exacte de l'erreur, consultez les informations du derni
 
 Une fois le(s) erreur(s) identifiée(s), associez Git à nouveau. Recommencez l'opération en cliquant sur le bouton `...`{.action} de la ligne correspondante, puis sur `Associer Git`{.action}.
 
-### Déployer votre dépôt Github sur votre hébergement web OVHcloud
+### Déployer votre dépôt GitHub sur votre hébergement web OVHcloud
 
 Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au nom de domaine que vous souhaitez déployer avec Git. Assurez-vous que le statut de la colonne Git soit `Activé`{.action}. Cliquez sur le bouton `...`{.action} puis sur `Déployer Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
 
-Un message de confirmation s'affiche, ainsi qu'une case à cocher vous indiquant qu'en cas de conflit lors du déploiement, vous pouvez forcer les modifications distantes (du dépôt Github) sur votre dépôt local. Cochez ou non la case selon votre choix, puis cliquez sur `Confirmer`{.action} pour valider le déploiement.
+Un message de confirmation s'affiche, ainsi qu'une case à cocher vous indiquant qu'en cas de conflit lors du déploiement, vous pouvez forcer les modifications distantes (du dépôt GitHub) sur votre dépôt local. Cochez ou non la case selon votre choix, puis cliquez sur `Confirmer`{.action} pour valider le déploiement.
 
 > [!warning]
 >
 > Pour éviter de perdre vos modifications locales, pensez à les enregistrer avant de les écraser par les modifications de la branche distante.
 >
 
-La nouvelle version de votre site web a bien été déployée sur votre hébergement OVHcloud. Si d'autres personnes travaillent sur le même projet et qu'ils apportent des modifications sur le dépôt Github, alors vous pouvez [configurer un webhook sur GitHub](#configureWebhook) pour que leurs modifications soient déployées automatiquement sur votre hébergement web. Cela vous évite de déployer Git manuellement, et votre hébergement web restera toujours à jour.
+La nouvelle version de votre site web a bien été déployée sur votre hébergement OVHcloud. Si d'autres personnes travaillent sur le même projet et qu'ils apportent des modifications sur le dépôt GitHub, alors vous pouvez [configurer un webhook sur GitHub](#configureWebhook) pour que leurs modifications soient déployées automatiquement sur votre hébergement web. Cela vous évite de déployer Git manuellement, et votre hébergement web restera toujours à jour.
 
 ### Modifier un nom de domaine
 
 Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine que vous souhaitez modifier. Cliquez sur le bouton `...`{.action} puis sur `Modifier le domaine`{.action}. Deux scénarios sont possibles :
 
-#### Le domaine n'est pas le seul attaché au même répertoire
+#### Le nom de domaine n'est pas le seul attaché au même répertoire
 
-La fenêtre suivante s'affiche.
+La fenêtre suivante s'affiche :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step1.png){.thumbnail}
 
@@ -185,7 +181,7 @@ Cliquez sur `Confirmer`{.action} pour validez les modifications de votre nom de 
 
 #### Le nom de domaine est le seul attaché au répertoire
 
-La fenêtre suivante s'affiche.
+La fenêtre suivante s'affiche :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-alone-domain-step1.png){.thumbnail}
 
@@ -205,7 +201,7 @@ Cliquez sur `Confirmer`{.action} pour validez le détachement de votre nom de do
 
 #### Le nom de domaine est le seul attaché au répertoire
 
-La fenêtre suivante s'affiche.
+La fenêtre suivante s'affiche :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 
@@ -221,12 +217,12 @@ Les informations suivantes s'affichent :
 
 - Clé SSH : si vous ne l'avez pas déjà fait, [enregistrez votre clé SSH dans votre compte GitHub](#linkSSHKey).
 - Dépôt : adresse de votre dépôt Git. Ce champ est grisé car vous ne pouvez pas modifier l'adresse du dépôt Git. Pour changer l'URL du dépôt Git, vous devez [supprimer l'association Git de votre répertoire](#deleteGitAssociation) puis à nouveau [associer le répertoire à Git](#associateGitRepo).
-- Branche : nom de la branche du dépôt Github. Vous pouvez modifier ce champ.
+- Branche : nom de la branche du dépôt GitHub. Vous pouvez modifier ce champ.
 - URL de webhook : si vous souhaitez optimisez vos déploiements sur Git, [configurez le webhook sur GitHub](#configureWebhook).
 
 ### Informations du dernier déploiement
 
-Après avoir déployé votre dépôt Github sur votre hébergement web, vous pouvez consulter les informations sur le dernier déploiement, comme les erreurs, les tests ou toute information utile. Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur le bouton `...`{.action} puis sur `informations du dernier déploiement`{.action}.
+Après avoir déployé votre dépôt GitHub sur votre hébergement web, vous pouvez consulter les informations sur le dernier déploiement, comme les erreurs, les tests ou toute information utile. Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur le bouton `...`{.action} puis sur `informations du dernier déploiement`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
 
@@ -238,19 +234,19 @@ Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, pu
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-button.png){.thumbnail}
 
-La fenêtre suivante s'affiche.
+La fenêtre suivante s'affiche :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
 
 Le message vous informe que la suppression s'appliquera sur l'ensemble des noms de domaine attachés à votre répertoire. Cochez la case `Souhaitez-vous vider le contenu du répertoire <votre_repertoire>`{.action} si vous voulez également supprimer le contenu (dossiers et fichiers) du répertoire.
 
-1.	Si vous cochez la case, la fenêtre suivante s'affiche.
+1\.	Si vous cochez la case, la fenêtre suivante s'affiche :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-with-folder-popup-confirm.png){.thumbnail}
 
 Cliquez sur `Confirmer`{.action} pour valider la suppression de l'association Git de votre répertoire ainsi que son contenu.
 
-2.	Si vous ne cochez pas la case, la fenêtre suivante s'affiche.
+2\.	Si vous ne cochez pas la case, la fenêtre suivante s'affiche :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup-confirm.png){.thumbnail}
 
@@ -262,18 +258,18 @@ Cliquez sur `Confirmer`{.action} pour valider la suppression de l'association Gi
 
 > [!primary]
 >
-> Si vous êtes déjà dans le formulaire d'association de Git, copiez l'URL du webhook et passez à l'étape «[Configurer le webhook](#configureWebhook)»
+> Si vous êtes déjà dans le formulaire d'association de Git, copiez l'URL du webhook et passez à l'étape « [Configurer le webhook](#configureWebhook) ».
 >
 
 Dans votre espace client OVHcloud, accédez à l'onglet `Web Cloud`{.action}, puis cliquez sur `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire sur lequel vous voulez configurer un webhook. Cliquez sur le bouton `...`{.action} puis sur `Configurer Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
 
-En bas du formulaire qui s'affiche, identifiez l'adresse du champ `URL de webhook`{.action} et copiez-là. Vous devez maintenant enregistrez l'URL et configurer le webhook sur votre compte GitHub.
+En bas du formulaire qui s'affiche, identifiez l'adresse du champ `URL de webhook`{.action} et copiez-la. Vous devez maintenant enregistrer l'URL et configurer le webhook sur votre compte GitHub.
 
 #### Configurer le webhook <a name="configureWebhook"></a>
 
-Connectez-vous à votre compte Github et accédez au dépôt sur lequel vous souhaitez configurer le webhook. Dirigez-vous sur l'onglet `Paramètres`{.action}, puis dans le menu latéral des paramètres, cliquez sur `Webhooks`{.action}. Cliquez sur le bouton `Ajouter un webhook`{.action} pour accéder au formulaire :
+Connectez-vous à votre compte GitHub et accédez au dépôt sur lequel vous souhaitez configurer le webhook. Dirigez-vous sur l'onglet `Paramètres`{.action} puis, dans le menu latéral des paramètres, cliquez sur `Webhooks`{.action}. Cliquez sur le bouton `Ajouter un webhook`{.action} pour accéder au formulaire :
 
 - **Payload URL** : entrez l'URL fournie dans le formulaire d'association de Git (`URL de webhook`{.action}).
 - **Content type** : choisissez `application/json`{.action} comme type de contenu pour les données envoyées.
@@ -284,13 +280,13 @@ Connectez-vous à votre compte Github et accédez au dépôt sur lequel vous sou
 
 Cliquez sur `Ajouter un webhook`{.action} pour enregistrer et activer votre nouveau webhook.
 
-#### Testez votre webhook
+#### Tester votre webhook
 
 Après avoir créé votre webhook dans GitHub, dirigez-vous dans la liste de vos webhooks et sélectionnez celui que vous venez de créer, ou cliquez sur `Edit`{.action}.
 
 Sur l'écran qui s'affiche, cliquez sur l'onglet `Recent Deliveries`{.action}. Pour envoyer un événement test spécifiquement, GitHub envoie généralement un événement `ping` lors de la création du webhook, et vous pouvez utiliser le bouton `Redeliver`{.action} à côté de cet événement pour le tester.
 
-Si le test a fonctionné, l'onglet `Response`{.action} renvoit un code 200. Si un code d'erreur est retourné (généralement 500 ou 400), cela signifie que votre webhook a été mal configuré. Retournez dans le formulaire d'ajout d'un webhook et vérifiez les informations, spécifiquement l'URL du webhook fournie par OVHcloud.
+Si le test a fonctionné, l'onglet `Response`{.action} renvoie un code 200. Si un code d'erreur est retourné (généralement 500 ou 400), cela signifie que votre webhook a été mal configuré. Retournez dans le formulaire d'ajout d'un webhook et vérifiez les informations, spécifiquement l'URL du webhook fournie par OVHcloud.
 
 #### Utiliser le webhook
 
@@ -298,7 +294,7 @@ Une fois votre webhook configuré, le code de votre site web sera mis à jour au
 
 ### Conclusion
 
-Vous venez d'associer le code de votre site web avec Git, via votre dépôt GitHub. Vous pouvez désormais déployer les modifications apportées sur le dépôt Github vers votre hébergement web ou les déployer de façon automatisée grâce au webhook, consulter les logs de vos déploiements et effectuer de multiples actions, tout ça depuis votre espace client, en quelques clics seulement.
+Vous venez d'associer le code de votre site web avec Git, via votre dépôt GitHub. Vous pouvez désormais déployer les modifications apportées sur le dépôt GitHub vers votre hébergement web ou les déployer de façon automatisée grâce au webhook, consulter les logs de vos déploiements et effectuer de multiples actions, tout cela depuis votre espace client, en quelques clics seulement.
 
 ## Aller plus loin
 
