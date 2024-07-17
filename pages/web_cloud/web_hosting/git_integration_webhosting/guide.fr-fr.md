@@ -203,7 +203,7 @@ La fenêtre suivante s'affiche.
 
 Cliquez sur `Confirmer`{.action} pour validez le détachement de votre nom de domaine.
 
-#### Le domaine est le seul attaché au répertoire
+#### Le nom de domaine est le seul attaché au répertoire
 
 La fenêtre suivante s'affiche.
 
