@@ -90,7 +90,7 @@ Copiez l'adresse de votre dépôt Github. Celle-ci doit être de la forme `https
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 
-Vous devez maintenant définir la branche de votre dépôt GitHub. La branche par défaut est `main`, mais si vous voulez utiliser une autre branche, créez-en une sur Github en suivant les étapes suivantes :
+Définissez maintenant la branche de votre dépôt GitHub. La branche par défaut est `main`, mais si vous voulez utiliser une autre branche, créez-en une sur Github en suivant les étapes suivantes :
 
 - Dans le menu principal de GitHub, cliquez sur `Your repositories`{.action}.
 - Dirigez-vous dans le dépôt GitHub concerné.
