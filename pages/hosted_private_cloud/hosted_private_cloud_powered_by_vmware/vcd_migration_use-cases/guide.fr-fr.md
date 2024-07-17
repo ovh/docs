@@ -80,11 +80,11 @@ Vérifiez bien avant migration que chaque les 12 étapes (pre-check) ci-dessous 
 
 #### Dans quel ordre dois-je effectuer mes verifications pour migrer vers VCD ?
 
-En regardant le tableau ci-dessus, vous remarquez qu'un bon nombre de verification doivent être effectués. Nous vous conseillons de lancer ces pre-check pour votre PCC de haut en bas comme le suggère la colonne étape. Vous pouvez imprimer ce guide et cocher la case effectué (done) pour chaque étape réalisé.
+En regardant le tableau ci-dessus, vous remarquez qu'un bon nombre de verifications doivent être effectués par vos soins avant d'envisager un passage vers VCD. Nous vous conseillons de lancer ces pre-check pour votre PCC de haut en bas comme le suggère la colonne étape. Vous pouvez imprimer ce guide et cocher la case effectué (done) pour les étapes réalisées.
 
 Nous vous invitons à vous poser les questions, par exemple:
 
-1. Est-ce que mon infrastructure VMware on OVHcloud utilise du Multi-VDC ? 
+1. Est-ce que mon infrastructure VMware on OVHcloud (PCC) utilise du multi-vDC ? 
 
 Oui, je dois migrer toutes mes données dans un seul datacenter afin de pouvoir migrer vers VCD.
 Non, je passe à l'étape suivante.
@@ -98,19 +98,19 @@ Non, je passe à l'étape suivante.
 
 #### Est-ce que VCD est compatible avec les certifications PCI-DSS, SHC, HDS ?
 
-Non VCD on OVHcloud n'est pas encore compatible avec les options de sécurités PCI-DSS, SHC, HDS.
+Non VCD on OVHcloud n'est pas encore compatible avec les options de sécurités PCI-DSS, SHC, HDS. Vous ne pourrez donc pas conserver vos certifications de sécurité à ce jour au sein de VCD.
 
 #### Qu'elle type de migration sera utilisé ?
 
-Le type de migration utilisé est à chaud en cross vCenter.
+Le type de migration utilisé est à chaud en cross vCenter vMotion pour la plupart des cas. Nous n'utilisons pas les outils VMware de migrations classiques.
 
 #### Est-ce que les PCC seront conservés après la migration ?
 
-Non, toutes les configurations, données PCC seront supprimées après la migration.
+Non, toutes les configurations, données PCC, seront supprimées après la migration. Vous n'aurez plus accès à vos ressources PCC, uniquement au control panel VCD.
 
 #### Est-ce que j'ai accès à la console VCD après la migration ?
 
-Oui, l'action est effectué par OVHcloud et vous permet d'avoir accès aux données après la migration depuis la console VCD on OVHcloud.
+Oui, l'action est effectué par OVHcloud et vous permet d'avoir accès aux données après la migration depuis la console VCD on OVHcloud dans des VM par exemple.
 
 #### Par qui est réalisée la migration VCD ?
 
