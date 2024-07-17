@@ -196,7 +196,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >>     address 192.168.1.2
 >>     netmask 255.255.255.0
 >>     gateway 192.168.1.1
->>     bridge_ports eth0
+>>     bridge_ports enp8s0f0np0
 >>     bridge_stp off
 >>     bridge_fd 0 
 >> ```
