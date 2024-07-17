@@ -91,9 +91,9 @@ No, I'll move on to the next step.
 
 3. And so on...
 
-#### Is VCD compatible with PCI-DSS, SHC, HDS certifications?
+#### Is VCD compatible with PCI-DSS, SNC, HDS certifications?
 
-No VCD on OVHcloud is not yet compatible with PCI-DSS, SHC, HDS security options.
+No VCD on OVHcloud is not yet compatible with PCI-DSS, SNC, HDS security options.
 
 #### What type of migration will it be used for?
 
