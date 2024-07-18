@@ -1,7 +1,7 @@
 ---
 title: Revert a flex instance
 excerpt: Find out how to revert a flex instance from the OpenStack Horizon interface
-updated: 2021-11-15
+updated: 2024-07-17
 ---
 
 ## Objective
@@ -17,6 +17,14 @@ As your infrastructure is constantly evolving, you may need to increase the stor
 - [Access to the Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instructions
+
+> [!warning] 
+> - If you switch from a flex instance to a classic instance with more resources, this is considered an upgrade. In this case, you will be billed for the difference. At the end of your billing period, you will receive two invoices.
+>
+> - If you switch from a flex instance to a classic instance with fewer resources, this is a downgrade. In this case, you will not be billed.
+>
+> - If you switch from a flex instance to a classic instance with the same resources, you will not be billed.
+>
 
 Log into the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and make sure you are in the correct region. You can verify this on the top left corner. 
 
