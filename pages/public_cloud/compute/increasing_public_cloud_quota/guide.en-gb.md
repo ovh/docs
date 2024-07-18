@@ -1,5 +1,5 @@
 ---
-title: 'Increasing Public Cloud quotas'
+title: 'How to increase Public Cloud quotas'
 excerpt: 'Find out how to apply for a Public Cloud quota extension'
 updated: 2024-05-21
 ---

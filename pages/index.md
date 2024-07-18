@@ -553,7 +553,7 @@
             + [Public Cloud FAQ - Change of monthly billing method](public_cloud/compute/faq_change_of_monthly_billing_method)
             + [Local Zone Compute - Features, Capabilities and Limitations](public_cloud/compute/local-zones-capabilities-limitations)
         + [Project management](public-cloud-compute-project-management)
-            + [Increasing Public Cloud quotas](public_cloud/compute/increasing_public_cloud_quota)
+            + [How to increase Public Cloud quotas](public_cloud/compute/increasing_public_cloud_quota)
             + [Deleting a Public Cloud project](public_cloud/compute/delete_a_project)
             + [Delegating projects](public_cloud/compute/delegate_projects)
             + [Changing project contacts](public_cloud/compute/change_project_contacts)
