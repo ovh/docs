@@ -1,32 +1,30 @@
 ---
 title: "Kafka - Python 101"
 excerpt: "Code your first Python applications using Public Cloud Databases for Kafka"
-updated: 2024-06-14
+updated: 2024-07-18
 ---
- 
+
 ## Objective
 
-Public Cloud Databases for Kafka allow you to focus on building and deploying cloud applications while OVHcloud takes care of the Kafka infrastructure and maintenance in operational conditions.  
+Public Cloud Databases for Kafka allow you to focus on building and deploying cloud applications while OVHcloud takes care of the Kafka infrastructure and maintenance in operational conditions.
 
 Kafka is a platform used for processing streams. It is fundamentally a massively scalable pub/sub message queue.
 
-The purpose of this tutorial is to show you the steps to be able to have your first Python applications that will use Kafka. 
-One application will be able to subscribe to a topic and consume messsages, the other one will be able to produce and publish messages in a topic.
-You will end up with all the basics to develop your own solution using Kafka. 
-
+The purpose of this tutorial is to show you the steps to be able to have your first Python applications that will use Kafka.<br>
+One application will be able to subscribe to a topic and consume messsages, the other one will be able to produce and publish messages in a topic.<br>
+You will end up with all the basics to develop your own solution using Kafka.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- A Public Cloud Databases for Kafka service running and configured ([this guide](/pages/public_cloud/public_cloud_databases/kafka_02_getting_started) can help you to meet this requirement)
+- Access to the [OVHcloud Control Panel](/links/manager).
+- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account.
+- A Public Cloud Databases for Kafka service running and configured. [This guide](/pages/public_cloud/public_cloud_databases/kafka_02_getting_started) can help you to meet this requirement.
 - Following the previous guide, save all certificates in a dedicated folder: 
-    - the server certificate as ```ca.pem```
-    - the user certificate as ```service.cert```
-    - the user access key as ```service.key```
+    - the server certificate as `ca.pem`
+    - the user certificate as `service.cert`
+    - the user access key as `service.key`
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.12.2.
 
-  
 ## Instructions
 
 > [!primary]
@@ -34,10 +32,9 @@ You will end up with all the basics to develop your own solution using Kafka.
 > All source code is available on the GitHub repository [public-cloud-examples](https://github.com/ovh/public-cloud-examples/tree/main/databases-analytics/databases/kafka-basics/python).
 >
 
-
 ### Step 1
 
-One of the application will subscribe to a topic of your Kafka service and wait to consumme any incoming message.  
+One of the application will subscribe to a topic of your Kafka service and wait to consume any incoming message.
 
 ```python
 import os
@@ -65,9 +62,9 @@ conf = {
 consumer = Consumer(conf)
 ```
 
-As you can see, the first lines of code define the configuration to be used to subscribe to your Kafka service.  
-Do not forget to set an environment variable called ```KAFKA_SERVICE_URI```that will point to your service.  
-The library ```confluent-kafka```provides a class called ```Consumer``` that will represent your connection to your Kafka service.
+As you can see, the first lines of code define the configuration to be used to subscribe to your Kafka service.<br>
+Do not forget to set an environment variable called `KAFKA_SERVICE_URI` that will point to your service.<br>
+The library `confluent-kafka` provides a class called `Consumer` that will represent your connection to your Kafka service.
 
 ```Python
 # create a console instance to display messages in a TUI
@@ -80,10 +77,10 @@ local_count = 0
 consumer.subscribe(["heroes"])
 ```
 
-You then prepare the tool that will help you to have a nice exposition of messages.  
-All you need to do to at that point is to use the ```Consumer```object to subscribe to your Kafka service.
+You then prepare the tool that will help you to have a nice exposition of messages.<br>
+All you need to do to at that point is to use the `Consumer` object to subscribe to your Kafka service.
 
-```Python
+```python
 with console.status("Waiting for messages..."):
     while not finished:
         if (msg := consumer.poll(timeout=1.0)) is None:
@@ -96,14 +93,14 @@ with console.status("Waiting for messages..."):
             finished = local_count == 2
 ```
 
-The final piece of code will wait for incoming messages through the ```poll``` function.  
-You will be able to use the ```Console```object to show the content of the messages.
-  
+The final piece of code will wait for incoming messages through the `poll` function.<br>
+You will be able to use the `Console` object to show the content of the messages.
+
 ### Step 2
-  
+
 Now that you have an application waiting for messages, let's create one to produce and publish them.
 
-```Python 
+```python 
 import os
 from confluent_kafka import Producer
 
@@ -126,9 +123,9 @@ conf = {
 producer = Producer(conf)
 ```
 
-This is done in a very similar way as your Consumer, and this time you will use a ```Producer``` object.  
+This is done in a very similar way as for your Consumer, and this time you will use a `Producer` object.
 
-```Python
+```python
 # when the message is published, this callback will be triggered
 def delivery_callback(err, msg):
     if err:
@@ -151,15 +148,17 @@ producer.produce(
 producer.flush()
 ```
 
-It is now time to prepare the elements used to publish a message.  
-The ```delivery_callback``` allows you to have a control on what to do once your ```Producer``` published the message.  
+It is now time to prepare the elements used to publish a message.<br>
+The ```delivery_callback``` allows you to have a control on what to do once your ```Producer``` published the message.<br>
 The publishing action is in fact done in two steps:
-- first prepare the message in the format needed by Kafka and set the callback function.
-- then use ```flush``` to use your connection to Kafka and publish the message.
+
+- First prepare the message in the format needed by Kafka and set the callback function.
+- Then use `flush` to use your connection to Kafka and publish the message.
 
 ## Go further
-  
-[Kafka Official documentation](https://kafka.apache.org/documentation/){.external}  
-[Confluent Kafka Python library](https://github.com/confluentinc/confluent-kafka-python){.external}  
 
-Join our community of users on <https://community.ovh.com/en/>.
+[Kafka Official documentation](https://kafka.apache.org/documentation/){.external}
+
+[Confluent Kafka Python library](https://github.com/confluentinc/confluent-kafka-python){.external}
+
+Join our [community of users](/links/community).
