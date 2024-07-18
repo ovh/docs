@@ -37,6 +37,8 @@ Per maggiori informazioni, consulta le nostre guide "Iniziare a muovere i primi 
 
 Per maggiori informazioni, consulta la guida introduttiva del [protocollo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
+<a name="create-ssh-key"></a>
+
 ### Creazione di una coppia di chiavi SSH
 
 Le istruzioni seguenti riguardano due metodi di utilizzo delle chiavi SSH:

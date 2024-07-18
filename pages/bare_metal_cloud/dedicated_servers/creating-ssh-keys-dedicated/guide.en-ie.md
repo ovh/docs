@@ -33,6 +33,8 @@ Be sure to consult our "Getting started" guides: <a name="getstarted"></a>
 
 We recommend reading the [SSH introduction guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) as well.
 
+<a name="create-ssh-key"></a>
+
 ### Creating an SSH key pair
 
 The following instructions cover two methods of using SSH keys:
