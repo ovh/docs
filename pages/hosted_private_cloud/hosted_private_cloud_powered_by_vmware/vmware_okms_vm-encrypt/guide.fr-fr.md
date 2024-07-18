@@ -99,7 +99,7 @@ OVHcloud KMS (Okms) est le service centralisé de chiffrement entièrement manag
 
 /// details | Comment commander un KMS OVHcloud pour HPC VMware on OVHcloud?
 
-![Manager kms Menu Order Animated Gif](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_order_2.gif){.thumbnail}.
+![Manager kms Menu Order Animated Gif](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_order.gif){.thumbnail}.
 
 ### Via le control panel OVHcloud
 
