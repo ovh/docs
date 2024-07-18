@@ -42,6 +42,8 @@ Pour récupérer le nom de votre hébergement web, effectuez les actions suivant
 3. Dans la colonne de gauche, cliquez sur le menu déroulant `Hébergements`{.action}.
 4. Sélectionnez l'hébergement web concerné.
 5. En haut à gauche de la page qui s'affiche, retrouvez le nom de votre hébergement web à droite de la mention `Hébergements /`{.action}.
+
+![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
   
 ### Étape 2 - Se connecter aux APIs OVHcloud et leur permettre l'accès à vos services
 
@@ -51,6 +53,9 @@ Pour cela, effectuez les actions suivantes :
 - Sur la page qui s'affiche, cliquez au centre sur `Explore the OVHcloud API`{.action}.
 - Sur la nouvelle page qui apparaît et dans la partie gauche de la page, positionnez-vous sur le formulaire situé à droite du formulaire `v1`{.action}, puis sélectionnez/saisissez le choix `/hosting/web`{.action}.
 - Parmi la liste d'APIs qui apparaît en dessous dans la colonne de gauche, recherchez et cliquez sur l'API suivante : **GET /hosting/web/{serviceName}/dump**.
+
+    ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-research.png){.thumbnail}
+
 - Sur la partie droite de la page s'affiche alors l'API avec ses différents formulaires à remplir.
 - Cliquez sur le bouton situé en haut à droite intitulé `Authenticate`{.action}, puis sur le bouton `Login with OVHcloud SSO`{.action}.
 - L'interface de connexion à votre [espace client OVHcloud](/links/manager) s'ouvre.
@@ -72,9 +77,13 @@ Pour cela, remplissez les différents formulaires comme suit :
     - **deletionDate.to** : Laissez le formulaire vide.
     - **orphan** : Saisissez en minuscule la valeur : `true`.
 
+![API](/pages/assets/screens/api/get-hosting-web-servicename-dump.png){.thumbnail}
+
 Une fois les différents formulaires remplis, cliquez sur le bouton bleu `Try`{.action} situé en bas à droite des deux sections préalablement remplies.
 
 Si tout a été renseigné correctement et que des sauvegardes sont disponibles pour la base de données supprimée, une liste de numéros d'identifiant de sauvegarde apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page en dessous du bouton `Try`{.action}.
+
+![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-response.png){.thumbnail}
 
 Chacun de ses numéros correspond à un identifiant de sauvegarde disponible (ID). Ces numéros d'identifiant de sauvegarde apparaissent du plus récent au plus ancien. **Copiez l'ID le plus haut de la liste** (sans la `,` à la fin) si vous souhaitez récupérer la toute dernière sauvegarde de votre base de données supprimée lors de l'étape 4 de ce guide.
 
@@ -90,6 +99,9 @@ Pour cela, restez sur notre site [APIs OVHcloud](/links/apis) et effectuez les a
 
 - Dans la partie gauche de la page, positionnez-vous sur le formulaire situé à droite du formulaire `v1`{.action}, puis sélectionnez/saisissez le choix `/hosting/web`{.action}.
 - Parmi la liste d'APIs qui apparaît en dessous dans la colonne de gauche, recherchez et cliquez sur l'API suivante : **GET /hosting/web/{serviceName}/dump/{id}**.
+
+    ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-research.png){.thumbnail}
+
 - Sur la partie droite de la page s'affiche alors l'API avec ses différents formulaires à remplir.
 
 Remplissez les différents formulaires de la partie **PATH PARAMETERS** comme suit :
@@ -97,9 +109,13 @@ Remplissez les différents formulaires de la partie **PATH PARAMETERS** comme su
 - **id** : Copiez le numéro d'identifiant de sauvegarde récupéré lors de l'étape 3. Si vous n'étiez pas déconnecté de notre site APIs OVHcloud, l'interface peut directement vous proposer les différents numéros d'ID de sauvegarde disponibles. Si tel est le cas, vous pouvez directement cliquer sur le premier numéro d'ID de la liste présente juste en dessous du formulaire **id**.
 - **serviceName** : Renseignez le nom de votre hébergement web précédemment récupéré lors de l'étape 1 de ce guide.
 
+![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
+
 Une fois les différents formulaires remplis, cliquez sur le bouton bleu `Try`{.action} situé en bas à droite de la section préalablement remplie.
 
 Si tout a été renseigné correctement, le résultat suivant apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page en dessous du bouton `Try`{.action} :
+
+![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-response.png){.thumbnail}
 
 ```bash
 {
