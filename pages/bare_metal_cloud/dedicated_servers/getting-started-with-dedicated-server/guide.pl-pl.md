@@ -162,7 +162,7 @@ W zależności od Twoich potrzeb w zakresie bezpieczeństwa, mobilności i wygod
 
 Po zakończeniu instalacji otrzymasz wiadomość e-mail z danymi do logowania w systemie Windows. Połączenie z serwerem można kontynuować za pomocą protokołu RDP (**R**emote **D**esktop **P**rotocol). Na lokalnym urządzeniu z systemem Windows otwórz aplikację `Remote Desktop Connection`.
 
-![Windows remote](images/windows-connect-03.png){.thumbnail}
+![Windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Wprowadź adres IPv4 Twojego serwera, nazwę użytkownika oraz hasło. Zazwyczaj pojawia się komunikat ostrzegawczy z prośbą o potwierdzenie logowania z powodu nieznanego certyfikatu. Kliknij na `Tak`{.action}, aby się zalogować.
 
@@ -189,17 +189,17 @@ Aby je włączyć, na kartach wykonaj następujące kroki:
 > 2. **Otwórz narzędzi "Run"**
 >>
 >> Otwórz menu Start systemu Windows i kliknij polecenie `Uruchom`{.action}.<br><br>
->>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. ***Otwórz "msconfig"**
 >>
 >> Wpisz "msconfig" i kliknij na `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Włącz logi**
 >>
 >> W nowym oknie włącz opcję logi obok `Boot log`. Kliknij przycisk `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 Po kolejnym uruchomieniu Twojego serwera logi będą zapisywane w pliku `.txt`. Droga do pliku to `C:\Windows\ntbtlog.txt`.

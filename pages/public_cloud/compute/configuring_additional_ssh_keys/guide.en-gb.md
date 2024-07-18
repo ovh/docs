@@ -1,5 +1,5 @@
 ---
-title: 'Configuring additional SSH keys'
+title: "How to configure additional SSH keys on an instance"
 excerpt: 'Find out how to configure additional SSH keys for your Public Cloud instance'
 updated: 2024-01-08
 ---

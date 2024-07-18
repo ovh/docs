@@ -149,7 +149,7 @@ A seconda delle esigenze in termini di sicurezza, mobilità e praticità, le chi
 
 Una volta completata l’installazione, riceverai un’email con le credenziali Windows. Accedi al tuo server via RDP (**R**emote **D**esktop **P**rotocol). Nel dispositivo Windows locale, aprire l'applicazione `Remote Desktop Connection`.
 
-![Windows remote](images/windows-connect-03.png){.thumbnail}
+![Windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Inserisci l’indirizzo IPv4 del server, poi il nome utente e la passphrase. In genere viene visualizzato un messaggio di avviso che richiede di confermare la connessione a causa di un certificato sconosciuto. Clicca su `Sì`{.action} per accedere.
 
@@ -176,17 +176,17 @@ Per attivarli, segui i passaggi seguenti scorrendo le schede:
 > 2. **Apri utilità "Run"**
 >>
 >> Apri il menu Start di Windows e clicca su `Esegui`{.action}.<br><br>
->>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Apri "msconfig"**
 >>
 >> Inserisci "msconfig" e clicca su `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Attiva i log**
 >>
 >> Nella nuova finestra, seleziona l’opzione log accanto a `Boot log`. Clicca su `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 Al successivo avvio del server, i log verranno salvati in un file `.txt`. Il percorso del file è `C:\Windows\ntbtlog.txt`.

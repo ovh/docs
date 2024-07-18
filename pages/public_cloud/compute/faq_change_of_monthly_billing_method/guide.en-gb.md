@@ -1,6 +1,6 @@
 ---
 title: FAQ - Change of monthly billing method
-excerp: ""
+excerpt: ""
 updated: 2023-12-15
 ---
 

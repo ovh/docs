@@ -37,6 +37,8 @@ Beachten Sie auch unsere Anleitungen zu "Ersten Schritten": <a name="getstarted"
 
 Lesen Sie auch die Einführung zum [SSH Protokoll](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
+<a name="create-ssh-key"></a>
+
 ### SSH-Schlüsselpaar erzeugen
 
 Die folgenden Erläuterungen behandeln zwei Methoden zum Verwenden von SSH-Schlüsseln:
