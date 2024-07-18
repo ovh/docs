@@ -76,7 +76,7 @@ Vérifiez bien avant migration que chaque les 12 étapes (pre-check) ci-dessous 
 
 ///
 
-### Foire aux questions
+### FAQ - Foire aux questions
 
 #### Dans quel ordre dois-je effectuer mes verifications pour migrer vers VCD ?
 
