@@ -62,7 +62,7 @@ Pour cela, effectuez les actions suivantes :
 Pour cela, remplissez les différents formulaires comme suit :
 
 - Pour la section intitulée **PATH PARAMETERS** :
-    -  **serviceName** : Renseignez le nom de votre hébergement web précédemment récupéré lors de l'étape 1 de ce guide.
+    - **serviceName** : Renseignez le nom de votre hébergement web précédemment récupéré lors de l'étape 1 de ce guide.
 
 - Pour la section intitulée **QUERY-STRING PARAMETERS** :
     - **creationDate.from** : Laissez le formulaire vide.
@@ -84,9 +84,65 @@ Si malgré tout aucun numéro d'identifiant n'apparaît, c'est qu'il n'y a pas o
 
 ### Étape 4 - Récupérer la dernière sauvegarde
 
+Grâce au numéro d'identifiant de sauvegarde récupéré lors de l'étape 3, vous allez pouvoir télécharger à l'aide d'un lien la dernière sauvegarde de votre base de données supprimée.
 
-  
+Pour cela, restez sur notre site [APIs OVHcloud](/links/apis) et effectuez les actions suivantes :
+
+- Dans la partie gauche de la page, positionnez-vous sur le formulaire situé à droite du formulaire `v1`{.action}, puis sélectionnez/saisissez le choix `/hosting/web`{.action}.
+- Parmi la liste d'APIs qui apparaît en dessous dans la colonne de gauche, rechercher et cliquez sur l'API suivante : **GET /hosting/web/{serviceName}/dump/{id}**.
+- Sur la partie droite de la page s'affiche alors l'API avec ses différents formulaires à remplir.
+
+Remplissez les différents formulaires de la partie **PATH PARAMETERS** comme suit :
+
+- **id** : Copiez le numéro d'identifiant de sauvegarde récupéré lors de l'étape 3. Si vous ne vous étiez pas déconnecté de notre site APIs OVHcloud, l'interface peut directement vous proposer les différents numéros d'identifiant de sauvegarde disponibles. Si tel est le cas, vous pouvez alors directement cliquer sur le premier numéro de la liste présente directement en dessous du formulaire **id**.
+- **serviceName** : Renseignez le nom de votre hébergement web précédemment récupéré lors de l'étape 1 de ce guide.
+
+Une fois les différents formulaires remplis, cliquez sur le bouton bleu `Try`{.action} situé en bas à droite des deux sections préalablement remplies.
+
+Si tout a été renseigné correctement, le résultat suivant apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page et en dessous du bouton `Try`{.action} :
+
+```bash
+{
+  "taskId": null,
+  "orphan": true,
+  "status": "created",
+  "deletionDate": "2024-07-18T20:02:00+02:00",
+  "databaseName": "deleteDatabase.mysql.db",
+  "url": "Find here the complete URL to download the deleted database backup",
+  "type": "now",
+  "creationDate": "2024-06-17T22:17:42+02:00",
+  "id": 2237494888
+}
+```
+
+> [!warning]
+>
+> Les lignes présentes dans le résultat ci-dessus n'apparaissent pas toujours forcément dans cet ordre.
+>
+
+Dans ce résultat, copiez l'intégralité de l'URL en « HTTPS » **sans les guillements** présente à droite de la mention `"url":`, puis collez-là dans la barre de recherche de votre navigateur internet pour initier le téléchargement de la sauvegarde.
+
+### Étape 5 - Créer une nouvelle base de données, importer le fichier de sauvegarde et rétablir la liaison entre votre site web et la nouvelle base de données
+
+Une fois la sauvegarde de votre base de données récupérée, vous devrez créer une nouvelle base de données. Pour cela, consultez notre guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) ».
+
+Lorsque cette nouvelle base de données sera créée, importer la sauvegarde à l'aide de notre guide « [Importer une sauvegarde dans la base de données d'un hébergement web](/pages/web_cloud/web_hosting/sql_importing_mysql_database) ».
+
+Pour terminer, liez votre base de données OVHcloud avec le fichier de configuration de votre site web présent dans l'[espace de stockage FTP de votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_connection).
+Pour cela, remplacez les informations de connexion de la base de données supprimée accidentellement par celles de votre nouvelle base de données OVHcloud. Ces informations se trouvent dans le fichier de « configuration/connexion à votre base de données » de votre site web.
+
+> [!success]
+>
+> Pour lier votre nouvelle base de données si vous utilisez un Content Management System (CMS) comme WordPress, Joomla!, Drupal ou PrestaShop, retrouvez les informations sur leurs fichiers de configuration depuis **l'étape 2** du guide « [modification du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password) ».
+>
+
 ## Aller plus loin <a name="go-further"></a>
+
+[Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database).
+
+[Importer une sauvegarde dans la base de données d'un hébergement web](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
+
+[modification du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
  
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
  
