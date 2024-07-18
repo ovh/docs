@@ -51,7 +51,7 @@ Create a new NFS partition in your Zpool:
 
 ![Create an NFS partition](images/create-nfs-partition.png){.thumbnail}
 
-#### Your cluster is installed with Public Network or with a private network without a gateway
+#### Your cluster is installed with Public Network or with a private network without a OVHcloud Internet Gateway (or a defaultVrackGateway if you are using OVHcloud APIv6)
 Once the partition is created, we need to allow our Kubernetes nodes to access our newly created partition.
 
 Get our Kubernetes nodes IP:
@@ -64,14 +64,23 @@ $ kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="Intern
 51.77.204.175 51.77.205.79
 ```
 
-#### Your cluster is installed with Private Network with a gateway
+#### Your cluster is installed with Private Network with a OVHcloud Internet Gateway (or a defaultVrackGateway if you are using OVHcloud APIv6)
 
-Because your nodes are configured to be routed by the private network gateway, you need to allow the gateway IP address to the ACLs.
-By using Public Cloud Gateway through our Managed Kubernetes Service, Public IPs on nodes are only for management purposes : [MKS Known Limits](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits)
+Because your nodes are configured to be routed by the private network gateway, you need to add the gateway IP address to the ACLs.
+By using Public Cloud Gateway through our Managed Kubernetes Service, Public IPs on nodes are only for management purposes: [MKS Known Limits](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits)
 
-Get your Gateway's Public IP :
+You can get your OVHcloud Internet Gateway's Public IP by navigating through the OVHcloud Manager:
 
 Public Cloud > Select your tenant > Network / Gateway > Public IP
+
+You can also get your OVHcloud Internet Gateway's Public IP by using our APIs:
+
+> [!api]
+>
+> @api {v1} /cloud GET  /cloud/project/{serviceName}/region/{regionName}/gateway/{id}
+>
+
+You can find more details about how using OVHcloud APIs with this guide: [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps)
 
 Click on the *Manage Access* menu of our newly created partition:
 ![Manage Access of the NFS partition](images/manage-nfs-partition-access.png){.thumbnail}
@@ -149,12 +158,12 @@ mountOptions:
 
 > [!primary]
 >
-> The `rsize` parameter and `wsize` parameters defines the maximum number of bytes of data that the NFS client can receive for each READ or WRITE request.
+> The `rsize` and `wsize` parameters define the maximum number of bytes of data that the NFS client can receive for each READ or WRITE request.
 >
 > The `tcp` parameter instructs the NFS mount to use the TCP protocol.
 >
 
-Then apply the YAML file to create the StorageClass 
+Then apply the YAML file to create the StorageClass: 
 
 ```bash
 kubectl apply -f nfs-storageclass.yaml
@@ -191,7 +200,8 @@ You can find more information about the PVC by running this command:
 kubectl describe pvc nfs-pvc
 ```
 
-```console $ kubectl describe pvc nfs-pvc
+```console 
+$ kubectl describe pvc nfs-pvc
 Name:          nfs-pvc
 Namespace:     default
 StorageClass:  nfs-csi
@@ -207,7 +217,8 @@ Events:
 
 The external provisioner (here the HA-NAS) is provisioning your volume. Wait a bit and the volume should appear:
 
-```console $ kubectl describe pvc nfs-pvc
+```console 
+$ kubectl describe pvc nfs-pvc
 Name:          nfs-pvc
 Namespace:     default
 StorageClass:  nfs-csi
@@ -223,7 +234,7 @@ Events:
 ```
 
 
-If you have errors like: 
+If you encounter errors such as: 
 ```console
 Warning  ProvisioningFailed    3s (x3 over 7s)  nfs2.csi.k8s.io_nodepool-c7ef08a9-2a22-40fd-9c-node-993f96_7078d019-f44a-42a1-8e7f-c6ee36f3f466  failed to provision volume with StorageClass "nfs-csi": rpc error: code = Internal desc = failed to make subdirectory: mkdir /tmp/pvc-31210848-7f3f-40e6-aa7a-fafa616da4e7/pvc-31210848-7f3f-40e6-aa7a-fafa616da4e7: input/output error
 ```
@@ -235,14 +246,14 @@ Mounting arguments: -t nfs -o nfsvers=4.1 [ZPOOL_IP]:/[ZPOOL_NAME]/[PARTITION_NA
 Output: mount.nfs: access denied by server while mounting [ZPOOL_IP]:/[ZPOOL_NAME]/[PARTITION_NAME]
 ```
 
-It mostly means that something went wrong with the HA-NAS ACLs. Check the authorized IPs which can access the wanted partition on the ACLs list.
+It mostly means that something went wrong with the HA-NAS ACLs. Check the authorized IPs which can access to the wanted partition on the ACLs list.
 
 > [!warning]
-> If the number of __PersistentVolumes__ to schedule simultaneously is too important, some slowness can be encountered and volume creation delayed
+> If the number of __PersistentVolumes__ to schedule simultaneously is too important, some slowness can be encountered and volume creation delayed.
 
 Let’s now create a DaemonSet of Nginx pods using the persistent volume claim as their webroot folder.
 Using a DaemonSet will create a pod on each deployed node and makes troubleshoot easier in case of a misconfiguration or to isolate a node issue. 
-Let's create a file named `nginx-daemonset.yaml`
+Let's create a file named `nginx-daemonset.yaml`:
 
 ```yaml
 apiVersion: apps/v1
@@ -302,20 +313,20 @@ root@nfs-nginx-1:/# mount -l | grep zpool
 [ZPOOL_IP]:/[ZPOOL_NAME]/[PARTITION_NAME]/[PV_NAME] on /usr/share/nginx/html type nfs4 (rw,relatime,vers=4.1,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=[NODE_IP],local_lock=none,addr=[ZPOOL_IP])
 ```
 
-You can test HA-NAS IOPS and speed by installing and running FIO tool:
+You can test HA-NAS IOPS and speed by installing and running FIO tool inside a container:
 ```bash
 apt update
 apt install fio
 ```
 
-and then running those commands (don't forget to move into the folder mounted from the HA-NAS):
+And then running those commands (don't forget to move into the folder mounted from the HA-NAS):
 
 ```bash
 cd /usr/share/nginx/html/
 fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=testfiofrommks --filename=random_read_write.fio --bs=128k --iodepth=64 --size=10G --readwrite=randrw --rwmixread=75
 ```
 
-At the end of the test, you should have an output like this:
+At the end of the bench, you should have an output like this:
 ```console
 End of the FIO test:
 
@@ -329,7 +340,7 @@ testfiofrommks: (groupid=0, jobs=1): err= 0: pid=748: Tue May 21 15:22:14 2024
   [...]
 ```
 
-Now, we will test if the HA-NAS is properly shared between the deployed pods.
+Now, we will check if the HA-NAS is properly shared between the deployed pods.
 Create a new `index.html` file:
 
 ```bash
