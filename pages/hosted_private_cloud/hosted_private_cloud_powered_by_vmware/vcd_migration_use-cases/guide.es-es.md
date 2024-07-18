@@ -1,7 +1,7 @@
 ---
 title: 'Auditoría casos de uso difíciles de la migración a VCD'
 excerpt: 'Descubra los métodos de análisis de los complicados escenarios de sus flujos de servicios vSphere/vCenter managed on OVHcloud, como preparación para una migración a VCD'
-updated: 2024-07-17
+updated: 2024-07-18
 ---
 <style>
 details>summary {
