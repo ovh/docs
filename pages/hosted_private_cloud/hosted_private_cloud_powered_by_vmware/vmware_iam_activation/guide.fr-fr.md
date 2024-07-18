@@ -30,6 +30,7 @@ details[open]>summary::before {
 
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - Avoir un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware).
+- Avoir un vSphere managé OVHcloud compatible (sans les fonctionnalités NSX ou les options de sécurités PCi-DSS, HDS, SNC).
 
 ## En pratique
 
@@ -59,15 +60,21 @@ Sous la section `IAM OVHcloud`{.action}, cliquez sur `Activer l'IAM OVHcloud`{.a
 
 > [!success]
 > Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+>
 
 > [!warning]
 > Veillez à remplacer le `serviceName` par la référence de votre service PCC, sous la forme `pcc-XXX-XXX-XXX-XXX`.
+>
 
 Pour activer l'option IAM, exécutez l'appel API suivant :
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/iam/enable
+>
+> **Paramètre** :
+> 
+> **serviceName :** le service de votre vSphere managé, exemple (pcc-XXX-XXX-XXX-XXX).
 >
 
 #### Pour vérifier si IAM est activé

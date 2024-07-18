@@ -20,7 +20,9 @@ updated: 2024-05-23
 
 ## En pratique
 
-### Créer ou modifier une politique
+## Étape 1 - Créer ou modifier une politique
+
+/// details | Création ou modification d'une politique IAM.
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur votre nom en haut à droite de l'espace client puis cliquez sur vos initiales pour accéder à la rubrique `Mon compte`{.action}.<br>
 Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action].
@@ -62,6 +64,39 @@ pccVMware:vSphere:assumeRole?{nom_du_rôle}
 Veillez à bien cliquer sur le bouton `Ajouter +`{.action} pour ajouter l'action.
 
 Pour finir, cliquez sur `Créer une politique`{.action} (ou sur `Modifier la politique`{.action} le cas échéant).
+
+Vous avez la possibilité de créer ou modifier une politique éxistante.
+
+///
+
+## Étape 1 - Ajouter un utilisateur local OVHcloud à une politique globale
+
+/// details | Comment associer un utilisateur local à une politique IAM globale ?
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur votre nom en haut à droite de l'espace client puis cliquez sur vos initiales pour accéder à la rubrique `Mon compte`{.action}.<br>
+Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action} et restez dans l'onglet `Politiques.`{.action}.
+
+![IAM USER POLICY](images/iam_user_policy_4.png){.thumbnail}
+
+Vous retrouverez vos politiques que vous avez déjà créées.
+
+Cliquez sur:`Modifier la politique`{.action}.
+
+Renseignez alors l'identité souhaitée. Il peut s'agir d'utilisateurs, d'un NIC, d'une adresse e-mail, de groupes d'utilisateurs.
+
+Vous devez cliquer sur `Ajouter des utilisateurs`{.action}.
+
+Dans le champ: **utilisateurs local**. Les utilisateurs apparaissent automatiquement, dans la liste déroulante. Vous retrouverez la même modale pour les groupes locaux.
+
+Validez votre choix en cliquant sur: `Ajouter`{.action}.
+
+![IAM user policy](images/iam_user_policy_3.png){.thumbnail}
+
+![IAM user policy](images/iam_user_policy_2.png){.thumbnail}
+
+Et pour finir, cliquez sur: `Créer`{.action, ou alors: `Modifier`{.action} votre politique.
+
+///
 
 ## Aller plus loin
 

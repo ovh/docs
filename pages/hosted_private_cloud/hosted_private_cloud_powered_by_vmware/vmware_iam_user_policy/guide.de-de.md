@@ -25,7 +25,7 @@ updated: 2024-05-23
 Log in to your [OVHcloud Control Panel](/links/manager). Click on your name in the top right-hand corner of the OVHcloud Control Panel, then click on your initials to go to the `My account`{.action} section.<br>
 Under `My account`{.action}, click `Identity and Access Management (IAM)`{.action} and stay in the `Policies.`{.action} tab.
 
-![IAM USER POLICY](images/iam_user_policy_4.png){.thumbnail}
+![IAM USER POLICY](../vmware_iam_role_policy/images/iam_user_policy_4.png){.thumbnail}
 
 You will find your policies if you have created some.
 
@@ -37,7 +37,7 @@ Only IAM Groups (not vSphere IAM Groups) appear automatically, so be sure to cop
 
 Confirm your choice by clicking `Add`{.action}.
 
-![IAM user policy](images/iam_user_policy_3.png){.thumbnail}
+![IAM user policy](../vmware_iam_role_policy/images/iam_user_policy_3.png){.thumbnail}
 
 ## Go further
 

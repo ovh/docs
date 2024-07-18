@@ -25,7 +25,7 @@ updated: 2024-05-23
 Connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur votre nom en haut à droite de l'espace client puis cliquez sur vos initiales pour accéder à la rubrique `Mon compte`{.action}.<br>
 Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action} et restez dans l'onglet `Politiques.`{.action}.
 
-![IAM USER POLICY](images/iam_user_policy_4.png){.thumbnail}
+![IAM USER POLICY](../vmware_iam_role_policy/images/iam_user_policy_4.png){.thumbnail}
 
 Vous retrouverez vos politiques que vous avez déjà créées.
 
@@ -37,7 +37,7 @@ Uniquement les Groupes IAM (et non les groupes IAM vSphere) apparaissent automat
 
 Validez votre choix en cliquant sur `Ajouter`{.action}.
 
-![IAM user policy](images/iam_user_policy_3.png){.thumbnail}
+![IAM user policy](../vmware_iam_role_policy/images/iam_user_policy_3.png){.thumbnail}
 
 ## Aller plus loin
 
