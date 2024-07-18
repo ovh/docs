@@ -1,6 +1,6 @@
 ---
 title: FAQ - Zmiana w miesięcznych rozliczeniach
-excerp: ""
+excerpt: ""
 updated: 2023-12-15
 ---
 

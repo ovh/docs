@@ -1,6 +1,6 @@
 ---
 title: FAQ - Alteração do regime de faturação mensal
-excerp: ""
+excerpt: ""
 updated: 2023-12-15
 ---
 

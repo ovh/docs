@@ -1,6 +1,6 @@
 ---
 title: FAQ - Änderung des Abrechnungsmodus für Instanzen mit monatlicher Abrechnung
-excerp: ""
+excerpt: ""
 updated: 2024-03-21
 ---
 

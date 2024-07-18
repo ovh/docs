@@ -1,6 +1,6 @@
 ---
 title: FAQ - Modificación de las modalidades de facturación mensual
-excerp: ""
+excerpt: ""
 updated: 2024-03-21
 ---
 

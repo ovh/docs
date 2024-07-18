@@ -1,6 +1,6 @@
 ---
 title: FAQ - Modificación de las modalidades de facturación mensual
-excerp: ""
+excerpt: ""
 updated: 2023-12-15
 ---
 
