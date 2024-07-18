@@ -1,5 +1,5 @@
 ---
-title: 'Caso de migration a VCD on OVHcloud'
+title: 'Auditoría vSphere casos de uso difíciles de la migración a VCD'
 excerpt: 'Este documentatión explica cómo migrar a VMware Cloud Director on OVHcloud, y los casos particulares y complejos a garantizar para la seguridad'
 updated: 2024-07-17
 ---
@@ -19,12 +19,12 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> El VCD on OVHcloud está actualmente en fase alfa. Esta documentation puede estar incompleta. Nuestro equipo sigue disponible en nuestro canal [Discord](https://discord.gg/ovhcloud)dedicado.
->
+> El VCD on OVHcloud está actualmente en fase alfa. Esta documentation puede estar incompleta y una actualización esta possible en el futuro.
+> 
 
 ## Objetivo
 
-**Esta documentación explica cómo realizar las comprobaciones necesarias para migrar un servicio vSphere/Vcenter (HPC o PCC) a VMware Cloud Director on OVHcloud, así como los casos específicos que son bloqueantes.**
+**El objetivo de esta documentation es de auditar los casos especiales de vSphere managed HPC que pueden plantear problemas para la migración a VCD on OVHcloud.**
 
 ## Requisitos
 
