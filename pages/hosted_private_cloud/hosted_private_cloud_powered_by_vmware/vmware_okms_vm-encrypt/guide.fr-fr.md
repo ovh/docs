@@ -1,7 +1,7 @@
 ---
 title:'Activation du chiffrement de VM avec le KMS OVHcloud'
 excerpt:'Découvrez comment protégez votre confidentialité et activer le chiffrement de vos machines virtuelles Hosted Private Cloud avec la solution KMS OVHcloud'
-updated: 2023-07-08
+updated: 2024-07-18
 ---
 <style>
 details>summary {
@@ -99,7 +99,7 @@ OVHcloud KMS (Okms) est le service centralisé de chiffrement entièrement manag
 
 /// details | Comment commander un KMS OVHcloud pour HPC VMware on OVHcloud?
 
-![Manager kms Menu Order Animated Gif](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_order_2-optimized.webp){.thumbnail}.
+![Manager kms Menu Order Animated Gif](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_order_2.gif){.thumbnail}.
 
 ### Via le control panel OVHcloud
 
@@ -123,17 +123,17 @@ Vous disposez des régions suivantes à ce jour disponible :
 
 Une fois votre choix fait, cliquez sur: `Commander`{.action}.
 
-Si vous n'avez pas pu completer la commande, lancez [ce lien](<https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX))))>){.external}.
+Si vous n'avez pas pu completer la commande, lancez [ce lien](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX))))).
 
 Puis, pour finir sur: `Terminer`{.action}.
 
-![Manager kms Menu Okms Order Finish](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_order_finish-optimized.webp){.thumbnail}
+![Manager kms Menu Okms Order Finish](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_order_finish-optimized.png){.thumbnail}
 
 Une fois votre commande validée, vous retrouverez avec votre KMS, le **Nom**, l'**Id** et la **Région**.
 
-![Manager kms Menu Kms All 01](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_okms_all-optimized.webp){.thumbnail}
+![Manager kms Menu Kms All 01](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_okms_all-optimized.png){.thumbnail}
 
-Vous pouvez récupérer (copier-coller) votre "**okmsId**", en cliquant sur le bouton de droite qui le permet (copier) : ![Manager kms Menu](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_okms_copy_id-optim-resize.webp){.thumbnail}
+Vous pouvez récupérer (copier-coller) votre "**okmsId**", en cliquant sur le bouton de droite qui le permet (copier) : ![Manager kms Menu](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_okms_copy_id-optim-resize.png){.thumbnail}
 
 L'id resemble à un **uuid** classique et vous sera utile par la suite pour la demande de nouvelles informations d'identification d'accès avec et/ou sans CSR ainsi que pour lister vos ressources Okms.
 
@@ -149,7 +149,7 @@ L'id resemble à un **uuid** classique et vous sera utile par la suite pour la d
 
 Nous verrons dans l'étape 3 comment effectuer cette requête. 
 
-![Manager kms Menu](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_okms_id-optimized-optim-resize.webp){.thumbnail}
+![Manager kms Menu](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_okms_id-optimized-optim-resize.png){.thumbnail}
 
 ### Via l'api OVHcloud
 
@@ -207,13 +207,13 @@ Puis aller dans la section **Sécurité** de votre PCC HPC:
 
 - `Hosted Private Cloud > VMware > Votre PCC > Sécurité`{.action}.
 
-![Manager Hpc Security KMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_security-opti.webp){.thumbnail}
+![Manager Hpc Security KMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_security-opti.png){.thumbnail}
 
 Une fois dans `Sécurité`{.action}, allez toute en bas dans la section: `Virtual Machine Encryption Key Management Servers`{.action}.
 
 L'étape de l'ajout du KMS depuis le control panel HPC VMware on OVHcloud doit être réalisé en premier après l'achat et la livraison de votre KMS OVHcloud. Afin de permettre l'autorisation des flux au sein des pare-feux OVHcloud.
 
-![Manager Hpc Security KMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add-optimized.webp){.thumbnail}
+![Manager Hpc Security KMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add-optimized.png){.thumbnail}
 
 Vous pouvez ajouter votre Okms depuis le control panel HPC, en cliquant sur:
 - `Ajouter un nouveau serveur KMS`{.action}
@@ -237,11 +237,11 @@ ping eu-west-rbx.okms.ovh.net
 ```
 Il s'agit ici de l'IP du KMS de Roubaix et de son empreinte tls. Si vous utilisez Strasbourg ou une autre région faites les changements.
 
-![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add_2-optim-resize.webp){.thumbnail}
+![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add_2-optim-resize.png){.thumbnail}
 
 Vous devez bien cocher la case: **"J’ai lu et j’ai compris la documentation VM Encryption et les actions que je vais devoir effectuer de mon côté"**. Avant de passer à l'étape suivante.
 
-![Manager Hpc Security KMS Add 02_2](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add_2_2.webp){.thumbnail}
+![Manager Hpc Security KMS Add 02_2](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add_2_2.png){.thumbnail}
 
 Vous devez maintenant attendre que l'ouverture des flux se fasse et passe en **"livré"**.
 
@@ -249,11 +249,11 @@ Vous pouvez en attendant verifier vos droits au sein du PCC. En effet, pour mani
 
 Dans l'onglet Utilisateurs, cliquez sur: `Modifier`{.action}, l'utilisateur souhaité.
 
-![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_users_edit.webp){.thumbnail}
+![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_users_edit.png){.thumbnail}
 
-Et verifiez bien que le `management du chiffrement`{.action} est activé.
+Et vérifiez bien que le `management du chiffrement`{.action} est activé.
 
-![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_users_edit_encryption.webp){.thumbnail}
+![Manager Hpc Security KMS Add 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_users_edit_encryption.png){.thumbnail}
 
 Si vous utilisez un role IAM au sein de votre PCC faite le pour ce rôle (si vous utilisez le rôle par defaut, il est admin).
 
@@ -338,7 +338,7 @@ Retour:
 
 Vous devez maintenant attendre (statut: updating) que l'ouverture des flux se fasse et passe le statut passe en: `livré`{.action} (optionnel).
 
-![Manager Hpc Security KMS Delivered](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add_delivered.webp){.thumbnail}
+![Manager Hpc Security KMS Delivered](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_kms_add_delivered.png){.thumbnail}
 
 ///
 
@@ -348,7 +348,7 @@ Vous devez maintenant attendre (statut: updating) que l'ouverture des flux se fa
 
 ### Via le control panel OVHcloud
 
-![Manager Hpc General Information Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_vsphere.webp){.thumbnail}
+![Manager Hpc General Information Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_hpc_vsphere.png){.thumbnail}
 
 #### 1. Ajouter un fournisseur de clé KMS
 
@@ -361,7 +361,7 @@ Vous pouvez y accéder depuis le control panel OVHcloud, en cliquant sur:
 
 Une fois que vous avez cliqué sur Web interface, cliquez sur `vSphere HTML Client`{.action}.
 
-![Manager Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_web_interface_pcc.webp){.thumbnail}
+![Manager Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_web_interface_pcc.png){.thumbnail}
 
 Vous êtes maintenant sur l'url de votre pcc, par exemple: 
 - `<https://pcc-x.x.x.x.ovh.de/ui/>`{.action}
@@ -376,13 +376,13 @@ Puis, allez dans la section **Sécurité**: `Fournisseurs de clés`{.action}.
 
 Il vous faut maintenant, cliquez sur: `Ajouter > Ajouter un fournisseur de clé standard`{.action}.
 
-![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/kms_key_provider.webp){.thumbnail}
+![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/kms_key_provider.png){.thumbnail}
 
 Une fois que vous avez sélectionné l'option pour ajouter un Key Provider, une fenêtre ou un formulaire s'ouvrira pour saisir les détails du Key Provider que vous souhaitez ajouter. Cela peut inclure des informations telles que l'adresse IP ou le nom de domaine (DNS) du serveur Okms, ainsi que le port utilisé (5696).
 
 Les noms de domaines et le port (KMIP) ne changent pas.
 
-![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_add_standard_key_provider.webp){.thumbnail}
+![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_add_standard_key_provider.png){.thumbnail}
 
 Vous avez ces champs disponibles:
 
@@ -533,7 +533,7 @@ Coller la valeur du champ `"csr"`{.action}: `"-----BEGIN CERTIFICATE REQUEST----
 >>
 >> **Faire que vCenter approuve KMS**
 >>
->> ![Trust KMS server with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms.png){.thumbnail}
+>> ![Trust KMS server with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms..png){.thumbnail}
 >>
 >> D'abord, vous devez approuver le kMS au sein de vCenter. Pour le faire, cliquez sur: `Approuver le KMS`{.action}.
 >>
@@ -541,15 +541,15 @@ Coller la valeur du champ `"csr"`{.action}: `"-----BEGIN CERTIFICATE REQUEST----
 >>
 >> L'approbation entre vCenter et KMS peut être conflictuelle, attendez quelques minutes avant de recommencer ou rafraichissez votre page vSphere avec le bouton en haut (flèche en forme de rond).
 >>
->> ![KMS Key Provider with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vcenter_trust_kms_1-optim-resize.webp){.thumbnail}
+>> ![KMS Key Provider with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vcenter_trust_kms_1-optim-resize.png){.thumbnail}
 >>
->> ![KMS Key Provider with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vcenter_trust_kms-optim-resize.webp){.thumbnail}
+>> ![KMS Key Provider with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vcenter_trust_kms-optim-resize.png){.thumbnail}
 >>
 >> Après ça, il faut que le **KMS approuve vCenter**.
 >> 
 >> Sélectionner votre **Fournisseurs de clés** KMS (Okms) que vous venez d'ajouter et cliquer sur le bouton: `Approuver l'instance de VCENTER`{.action}.
 >>
->> ![Trust KMS server with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms.png){.thumbnail}
+>> ![Trust KMS server with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms..png){.thumbnail}
 >>
 >> Nous recommandons la méthode avec CSR (plus sécurisé): `Nouvelle demande de signature de certificat (CSR)`{.action), mais libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
 >>
@@ -587,9 +587,9 @@ Coller la valeur du champ `"csr"`{.action}: `"-----BEGIN CERTIFICATE REQUEST----
 >> 
 >> Pour finir, coller le certificat public KMS.
 >>
->> ![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_upload_kms_cert-ptim-resize.webp){.thumbnail}
+>> ![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_upload_kms_cert-ptim-resize.png){.thumbnail}
 >> 
->> ![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_upload_kms_cert_2-optim-resize.webp){.thumbnail}
+>> ![KMS Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_upload_kms_cert_2-optim-resize.png){.thumbnail}
 >>
 > **Certificat KMS et clé privée (without CSR)**
 >>
@@ -631,9 +631,9 @@ Coller la valeur du champ `"csr"`{.action}: `"-----BEGIN CERTIFICATE REQUEST----
 >> - **credentialId:** L'id de la requête d'accès à votre Okms.
 >> - **okmsId:** L'id de la commande de votre Okms.
 >>
->> ![Trust KMS server without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter.png){.thumbnail}
+>> ![Trust KMS server without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter..png){.thumbnail}
 >>
->> ![Trust KMS server without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_2.png){.thumbnail}
+>> ![Trust KMS server without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_2..png){.thumbnail}
 >>
 >> Afin d'utiliser la clé signée dans vSphere, vous devez le formater avec cette commande:
 >>
@@ -686,9 +686,9 @@ Coller la valeur du champ `"csr"`{.action}: `"-----BEGIN CERTIFICATE REQUEST----
 >>
 >> Attention votre CSR doit être compatible en format json afin de l'utiliser dans l'api v2 OVHcloud.
 >>
->> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr.png){.thumbnail}
+>> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr..png){.thumbnail}
 >>
->> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr_2.png){.thumbnail}
+>> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr_2..png){.thumbnail}
 >>
 >> Copier votre CSR dans un fichier `csr.pem`{.action} afin de pouvoir le faire signer par le KMS.
 >>
@@ -702,7 +702,7 @@ Coller la valeur du champ `"csr"`{.action}: `"-----BEGIN CERTIFICATE REQUEST----
 >> 
 >> Afin de signer le CSR, cliquez sur: `ESTABLISH TRUST > Upload Signed CSR Certificate`{.action}.
 >> 
->> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_upload_signed_csr-optim-resize.webp){.thumbnail}
+>> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_upload_signed_csr-optim-resize.png){.thumbnail}
 >>
 >> Vous devez maintenant copier le CSR signé de l'appel api suivant:
 >> 
@@ -723,13 +723,13 @@ Coller la valeur du champ `"csr"`{.action}: `"-----BEGIN CERTIFICATE REQUEST----
 >>
 >> Copier le retour de la commande et coller là dans vSphere on OVHcloud.
 >> 
->> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_upload_signed_csr_2-optim-resize.webp){.thumbnail}
+>> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_upload_signed_csr_2-optim-resize.png){.thumbnail}
 >>
 >> Vous pouvez verifier que la connection à bien était établie en sélectionnant votre fournisseur de clé KMS OVHcloud.
 >> 
 >> L'option `Connecté`{.action} doit être cochée.
 >>
->> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_okms_validation.webp){.thumbnail}
+>> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_okms_validation.png){.thumbnail}
 >>
 
 ## Étape 5 - Création d'une politique IAM
@@ -744,7 +744,7 @@ Il faut vous connecter à votre [OVHcloud control panel](/links/manager).
 
 Aller dans IAM en cliquant en haut à droite sur: `Mon compte > mon utilisateur > IAM > Créer une politique`{.action}.
 
-![Manager IAM Policy](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_iam-resize-optim.webp){.thumbnail}
+![Manager IAM Policy](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_iam-resize-optim.png){.thumbnail}
 
 Ajoutez le nom de votre politique sinon vous ne pourrez pas la créer à la fin.
 
@@ -752,7 +752,7 @@ Ainsi qu'une description intelligente de votre stratégie IAM.
 
 Dans `Identités`{.action}, ajoutez votre utilisateur local OVHcloud. Celui avec lequel vous avez généré le CSR depuis l'api. En cliquant sur: `Ajouter un utilisateur`{.action}.
 
-![Manager IAM Policy 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_iam_2.webp){.thumbnail}
+![Manager IAM Policy 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_iam_2.png){.thumbnail}
 
 Vous devez ensuite, ajouter les actions afin de pouvoir générer les clés pour votre politique de chiffrement vSphere.
 
@@ -760,11 +760,11 @@ Cliquez dans le champ Type de produits, puis ajouter: `iam_ressource_type_okms`{
 
 Vous pouvez choisir d'ajouter toutes les actions ou filtrer plus finement selon vos besoins utilisateurs.
 
-![Manager IAM Policy 03](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_iam_3.webp){.thumbnail}
+![Manager IAM Policy 03](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_iam_3.png){.thumbnail}
 
 Pour terminer, cliquez sur: `Créer la politique`{.action}.
 
-![Manager IAM Policy 04](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_iam_4.webp){.thumbnail}
+![Manager IAM Policy 04](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_iam_4.png){.thumbnail}
 
 Votre politique est créée, vous pouvez maintenant activer le chiffrement au sein de PCC en changeant la **"stratégie VM"** de vos machines virtuelles.
 
@@ -784,7 +784,7 @@ Vous devez comment aux étapes précédentes vous connecter à votre [OVHcloud c
 
 Puis à votre web interface pcc vSphere:
 
-![Manager Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_web_interface_pcc.webp){.thumbnail}
+![Manager Web Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/manager_web_interface_pcc.png){.thumbnail}
 
 Vous êtes maintenant sur l'url de votre pcc, par exemple :
 - `<https://pcc-x.x.x.x.ovh.xx/ui/>`{.action}
@@ -811,7 +811,7 @@ Une fois votre `PCC-XXX-XXX-XXX-XXX.ovh.XX`{.action} choisie, votre `Nom`{.actio
 
 Vous pouvez cliquer sur: `SUIVANT`{.action} pour continuer.
 
-![VM Storage Policies Creation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie.png){.thumbnail}
+![VM Storage Policies Creation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie..png){.thumbnail}
 
 Vous arrivez à l'étape 2, **Structure de la stratégie.**
 
@@ -819,7 +819,7 @@ Nous allons ici activer les **stratégies de règles basées sur l'hôte**. Coch
 
 Pour continuer, cliquez sur: `SUIVANT`{.action}.
 
-![VM Storage Policies Creation 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_2-optim-resize.webp){.thumbnail}
+![VM Storage Policies Creation 02](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_2-optim-resize.png){.thumbnail}
 
 Pour l'étape 3, vous devez confirmer les choix de l'étape précédente en activant la validation du composant de stratégie de stockages (le chiffrement).
 
@@ -838,19 +838,19 @@ Pour votre information: Ces services de données disponibles peuvent inclure le 
 
 Pour terminer l'étape 3, cliquez sur: `SUIVANT`{.action}.
 
-![VM Storage Policies Creation 03](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_3-optim-resize.webp){.thumbnail}
+![VM Storage Policies Creation 03](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_3-optim-resize.png){.thumbnail}
 
 Pour l'étape 4, compatibilité de stockage. Vous avez la compatibilité et l'incompatibilité de votre centre de données (PCC) Hosted Private Cloud VMware on OVHcloud.
 
 Quand vous avez terminé de verifier les compatibilités de votre espace de stockage, cliquez sur: `SUIVANT`{action}.
 
-![VM Storage Policies Creation 04](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_4-optim-resize.webp){.thumbnail}
+![VM Storage Policies Creation 04](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_4-optim-resize.png){.thumbnail}
 
 Et pour terminer à la dernière étape, l'étape 5, cliquez sur: `TERMINER`{.action}.
 
 Votre stratégie étant créée, vous pouvez maintenance procéder à l'activation du chiffrement sur une de vos machines virtuelles.
 
-![VM Storage Policies Creation 05](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_5_optim-resize.webp){.thumbnail}
+![VM Storage Policies Creation 05](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/vsphere_vm_policie_5_optim-resize.png){.thumbnail}
 
 ### Activation du chiffrement sur une machine virtuelle
 
@@ -864,11 +864,11 @@ Puis, sélectionnez: `Stratégies de VM`{.action}.
 
 Cela ouvrira une fenêtre ou un panneau où vous pourrez modifier les politiques de stockage de la VM sélectionnée.
  
-![VM Storage Policies Encryption](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies-optim-resize.webp){.thumbnail}
+![VM Storage Policies Encryption](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies-optim-resize.png){.thumbnail}
 
 Recherchez les options de chiffrement ou de sécurité dans les politiques de stockage pour activer le chiffrement KMS pour cette VM.
 
-![VM Storage Policies Encryption 03](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies_3-optim-resize.webp){.thumbnail}
+![VM Storage Policies Encryption 03](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies_3-optim-resize.png){.thumbnail}
 
 Si vous déployez une nouvelle VM depuis un template OVHcloud OVF, vous avez plusieurs choix pour chiffrer votre VM:
 - **Thick Provision Lazy Zeroed.**
@@ -881,7 +881,7 @@ Et cocher la case: `Chiffrer cette VM`{.action}.
 
 Pour en revenir au cas d'une VM déja existante et éteinte.
 
-![VM Storage Policies Encryption](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_deploy_vm_policies.webp){.thumbnail}
+![VM Storage Policies Encryption](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_deploy_vm_policies.png){.thumbnail}
 
 Après avoir apporté les modifications nécessaires, enregistrez les modifications et fermez la fenêtre.
 
@@ -891,7 +891,7 @@ Et vous constatez bien un petit cadenas dans la vue général de votre VM ainsi 
 
 Ceci confirme que votre politique fonctionne avec le serveur Okms et que le chiffrement est **activé**.
 
-![VM Storage Policies Encryption Confirmation 04](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies_4-optim-resize.webp){.thumbnail}
+![VM Storage Policies Encryption Confirmation 04](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt/images/okms_vsphere_vm_policies_4-optim-resize.png){.thumbnail}
 
 ///
 
@@ -911,7 +911,7 @@ Pour décoder votre CSR, vous pouvez exécuter cette commande openssl avec votre
 
 - `openssl req -in mycsr.csr -noout -text`{.action}.
 
-Ou alors utiliser un outil web plus graphique, tel que: [sslshopper](https://www.sslshopper.com/csr-decoder.html){.external}.
+Ou alors utiliser un outil web plus graphique, tel que: [sslshopper](https://www.sslshopper.com/csr-decoder.html).
 
 **Certificate decode:**
 

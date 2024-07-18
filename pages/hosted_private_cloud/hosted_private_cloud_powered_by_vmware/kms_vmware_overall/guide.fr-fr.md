@@ -1,7 +1,7 @@
 ---
 title: 'Intégration d'un KMS pour VMware on OVHcloud'
 excerpt: 'Découvrez comment intégrer un KMS au sein de Hosted Private Cloud VMware on OVHcloud pour sécuriser efficacement vos données sensibles'
-updated: 2023-07-10
+updated: 2024-07-18
 ---
 <style>
 details>summary {
@@ -124,7 +124,7 @@ Une fois votre KMS commandé et activé avec votre Hosted Private Cloud il vous 
 
 Nous utiliserons pour cette option un `Standard Key Provider`{.action}.
 
-![Vnkp Key Provider](images/key_provider.webp){.thumbnail}
+![Vnkp Key Provider](images/key_provider.png){.thumbnail}
 
 ### Comment activer le chiffrement avec le KMS d'OVHcloud ?
 
