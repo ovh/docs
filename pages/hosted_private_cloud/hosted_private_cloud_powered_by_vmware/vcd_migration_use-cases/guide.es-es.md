@@ -32,32 +32,26 @@ details[open]>summary::before {
 
 ## En práctica
 
-> [!primary]
+> [!warning]
 >
 > Antes de migrar a VCD, es necesario de realizar estas verificaciónes.
 >
 
-Bienvenido a la guía completa sobre la migración a VMware Cloud Director en el ecosistema VMware on OVHcloud.
+Le damos la bienvenida a esta guía práctica que explica cómo migrar sus servicios Hosted Private Cloud vSphere/vCenter administrados a un ecosistema VMware Cloud Director on OVHcloud.
 
-Esta guía explica los casos de uso más complicados y matizados que pueden surgir durante un proceso de migración en caliente.
+Este documento también detalla los requisitos de migración y, si procede, le explica cómo cumplirlos.
 
-Las cargas de trabajo migradas aquí son entornos vSphere administrados on OVHcloud (Hosted Private Cloud VMware on OVHcloud) que deben migrar a una infraestructura VMware Cloud Director (VCD). Esta guía explica paso a paso cómo crear una vMotion de sus máquinas virtuales en caliente entre las redes públicas y privadas sin perder la conectividad.
+## Paso 1 - Requisitos y casos especiales (obligatorio)
 
-Nuestro objetivo también es de abordar a este casos de migración y los escenarios difíciles que a menudo complican la migración (caliente vMotion ), ofreciendo perspectivas y estrategias basadas en la experiencia real.
+/// details | Cuáles son los requisitos y las etapas de verificación para su uso de HPC antes de poder migrar a VCD?
 
-De este modo, estará listo para navegar por las complejidades de las migraciones de VMware Cloud Director on OVHcloud con total confianza y eficacia.
+Una vez verificados estos requisitos, el equipo de OVHcloud migrará sus máquinas virtuales en caliente y las completará.
 
-## Paso 1 - Requisitos y casos particulares (obligatorio)
+Esta migración en caliente permitirá limitar al mínimo los cortes de sus redes públicas o privadas. Las redes privadas son las que tienen más probabilidades de verse afectadas, por lo que se cortan en unos minutos.
 
-// details | Cuál son los verificación a hacer antes de migrar a VCD on OVHcloud?
+### Tabla - Casos especiales
 
-Antes de migrar a VCD, es necesario de realizar algunos pasos y requisitos. En efecto, muchos conceptos y casos de uso de vSphere managed on OVHcloud no están disponibles con VCD y deben tenerse en cuenta.
-
-Como propietario de la migración de VCD, queremos configurar vCenter y ESXi en el vSphere managed on OVHcloud y el router en el VCD para poder realizar una migración cruzada entre vCenter (cross vCenter).
-
-### Tabla de migración - Todos los casos de uso
-
-Antes de la migración, asegúrese de haber completado todos los 12 pasos (pre-check) que se indican a continuación antes de la migración.
+La tabla siguiente muestra cada uno de los bloqueos de migración, junto con su nivel de criticidad, que debe cumplir antes de iniciar la migración.
 
 | **Steps**   | **Done** | **Warning** | **Use-cases**                                           | **Requirements**                                                                                                         | **Comments**                                                                                                                                                                                                                                                                                    | **Référence to external documentation**                                                                                                                                      |
 |-------------|----------|-------------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

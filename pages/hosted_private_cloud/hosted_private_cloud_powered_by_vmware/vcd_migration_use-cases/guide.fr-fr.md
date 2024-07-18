@@ -1,6 +1,6 @@
 ---
 title: 'Audit des cas spéciaux de migration vers VCD'
-excerpt: 'Découvrez comment effectuer les étapes d'analyse avant une migration vers VCD ainsi que les précautions à prendre pour les cas particuliers et complexes vSphere managé'
+excerpt: 'Découvrez comment effectuer les étapes d'analyses et de vérifications avant une migration vSphere managé on OVHcloud vers VCD ainsi que les cas particuliers difficiles'
 updated: 2024-07-18
 ---
 <style>
@@ -49,7 +49,7 @@ Suite à la vérification de ces prérequis, la migration de vos machines virtue
 
 Ce déplacement à chaud permettra de limiter au minimum les coupures de vos réseaux publiques ou privées. Les réseaux privés sont les plus susceptibles d'être impactés, de l'ordre de quelques minutes de coupure.
 
-### Tableau - Tous les cas particuliers
+### Tableau - Cas particuliers
 
 Le tableau ci-dessous vous présente chacun des points bloquants à la migration, ainsi que leur niveau de criticité, qu'il convient de mettre en conformité avant que la migration ne puisse débuter.
 

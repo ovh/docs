@@ -1,6 +1,6 @@
 ---
 title: 'Audit vSphere tricky use-cases of migration to VCD'
-excerpt: 'Find out how to check if your Hosted Private Cloud VMware on OVHcloud workflows can be migrated to VCD as well the specific and complex tricky use cases'
+excerpt: 'Find out how to audit if your Hosted Private Cloud vSphere/vCenter managed workflows can be migrated to VCD on OVHcloud and also the specific and complex tricky use cases'
 updated: 2024-07-18
 ---
 <style>
@@ -49,7 +49,7 @@ Once you have checked these requirements, your virtual machines will be hot-migr
 
 This hot migration will minimize disruptions to your public or private networks. Private networks are the most likely to be affected, with downtime of the order of a few minutes.
 
-### Table - All special cases
+### Table - All special use cases
 
 The table below lists each of the migration bottlenecks and criticality levels that must be remediated before the migration can begin.
 
@@ -112,7 +112,7 @@ The migration is carried out by OVHcloud in full, but the necessary steps before
 
 ## Go further
 
-If you require training or technical support to implement your migration with VCD, please contact your TAM or [go here](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
+If you require training or technical support to implement your migration with VCD, please contact your TAM or [click in here](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
 Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](<https://discord.gg/ovhcloud>).
 
