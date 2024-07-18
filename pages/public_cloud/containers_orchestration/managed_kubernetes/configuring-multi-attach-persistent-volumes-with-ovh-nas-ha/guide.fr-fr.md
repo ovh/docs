@@ -1,11 +1,6 @@
 ---
 title: Configuring multi-attach persistent volumes with OVHcloud NAS-HA
-slug: configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha
 excerpt: 'Find out how to configure a multi-attach persistent volume using OVHcloud NAS-HA'
-section: Storage
-order: 4
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/'
 updated: 2024-07-17
 ---
 
@@ -31,7 +26,6 @@ updated: 2024-07-17
  }
 </style>
 
-**Last updated July 17<sup>th</sup>, 2024.**
 
 ## Objective
 
@@ -39,11 +33,11 @@ OVHcloud Managed Kubernetes natively integrates Block Storage as persistent volu
 
 ## Requirements
 
-This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](https://www.ovhcloud.com/fr/public-cloud/kubernetes/) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](https://www.ovhcloud.com/fr/public-cloud/kubernetes/) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world/) documentation.
 
 It also assumes you have an OVHcloud NAS-HA already available. If you don't, you can [order one in the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/nas).
 
-You also need to have [Helm](https://docs.helm.sh/) installed on your workstation, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installed on your workstation, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm/) tutorial.
 
 ## Instructions
 
@@ -65,14 +59,15 @@ Get our Kubernetes nodes IP:
 kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="InternalIP")].address }'
 ```
 
-<pre class="console"><code>$ kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="InternalIP")].address }'
+```console
+$ kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="InternalIP")].address }'
 51.77.204.175 51.77.205.79
-</code></pre>
+```
 
 #### Your cluster is installed with Private Network with a gateway
 
 Because your nodes are configured to be routed by the private network gateway, you need to allow the gateway IP address to the ACLs.
-By using Public Cloud Gateway through our Managed Kubernetes Service, Public IPs on nodes are only for management purposes : [MKS Known Limits](https://help.ovhcloud.com/csm/fr-public-cloud-kubernetes-using-vrack?id=kb_article_view&sysparm_article=KB0055392#known-limits)
+By using Public Cloud Gateway through our Managed Kubernetes Service, Public IPs on nodes are only for management purposes : [MKS Known Limits](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits)
 
 Get your Gateway's Public IP :
 
@@ -100,7 +95,8 @@ helm repo add csi-driver-nfs https://raw.githubusercontent.com/kubernetes-csi/cs
 helm install csi-driver-nfs csi-driver-nfs/csi-driver-nfs --namespace kube-system --version v4.7.0 --set driver.name="nfs2.csi.k8s.io" --set controller.name="csi-nfs2-controller" --set rbac.name=nfs2
 ```
 
-<pre class="console"><code>$ helm install csi-driver-nfs -n kube-system csi-driver-nfs/csi-driver-nfs --version v4.7.0 --set driver.name="nfs2.csi.k8s.io" --set rbac.name=nfs --set controller.name="csi-nfs2-controller"
+```console
+$ helm install csi-driver-nfs -n kube-system csi-driver-nfs/csi-driver-nfs --version v4.7.0 --set driver.name="nfs2.csi.k8s.io" --set rbac.name=nfs --set controller.name="csi-nfs2-controller"
 NAME: csi-driver-nfs
 LAST DEPLOYED: Thu Jul 11 15:13:34 2024
 NAMESPACE: kube-system
@@ -113,7 +109,7 @@ The CSI NFS Driver is getting deployed to your cluster.
 To check CSI NFS Driver pods status, please run:
 
   kubectl --namespace=kube-system get pods --selector="app.kubernetes.io/instance=csi-driver-nfs" --watch
-</code></pre>
+```
 
 Let's verify our installation:
 
@@ -121,12 +117,13 @@ Let's verify our installation:
 kubectl --namespace=kube-system get pods --selector="app.kubernetes.io/instance=csi-driver-nfs"
 ```
 
-<pre class="console"><code>$ kubectl --namespace=kube-system get pods --selector="app.kubernetes.io/instance=csi-driver-nfs"
+```console
+$ kubectl --namespace=kube-system get pods --selector="app.kubernetes.io/instance=csi-driver-nfs"
 NAME                                   READY   STATUS    RESTARTS   AGE
 csi-nfs-node-2qczs                     3/3     Running   0          16s
 csi-nfs-node-tw77p                     3/3     Running   0          16s
 csi-nfs2-controller-58b8b4cf7f-nk727   4/4     Running   0          16s
-</code></pre>
+```
 
 ### Step 3 - Create the NFS StorageClass Object
 
@@ -152,9 +149,9 @@ mountOptions:
 
 > [!primary]
 >
-The `rsize` parameter and `wsize` parameters defines the maximum number of bytes of data that the NFS client can receive for each READ or WRITE request.
+> The `rsize` parameter and `wsize` parameters defines the maximum number of bytes of data that the NFS client can receive for each READ or WRITE request.
 >
-The `tcp` parameter instructs the NFS mount to use the TCP protocol.
+> The `tcp` parameter instructs the NFS mount to use the TCP protocol.
 >
 
 Then apply the YAML file to create the StorageClass 
@@ -193,7 +190,8 @@ You can find more information about the PVC by running this command:
 ```bash
 kubectl describe pvc nfs-pvc
 ```
-<pre class="console"><code>$ kubectl describe pvc nfs-pvc
+
+```console $ kubectl describe pvc nfs-pvc
 Name:          nfs-pvc
 Namespace:     default
 StorageClass:  nfs-csi
@@ -205,11 +203,11 @@ Events:
   ----    ------                 ----                  ----                                                                                             -------
   Normal  Provisioning           2m25s                 nfs2.csi.k8s.io_nodepool-c7ef08a9-2a22-40fd-9c-node-993f96_7078d019-f44a-42a1-8e7f-c6ee36f3f466  External provisioner is provisioning volume for claim "default/nfs-pvc"
   Normal  ExternalProvisioning   15s (x10 over 2m25s)  persistentvolume-controller                                                                      Waiting for a volume to be created either by the external provisioner 'nfs2.csi.k8s.io' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
-</code></pre>
+```
 
 The external provisioner (here the HA-NAS) is provisioning your volume. Wait a bit and the volume should appear:
 
-<pre class="console"><code>$ kubectl describe pvc nfs-pvc
+```console $ kubectl describe pvc nfs-pvc
 Name:          nfs-pvc
 Namespace:     default
 StorageClass:  nfs-csi
@@ -222,18 +220,20 @@ Events:
   Normal  Provisioning           2m25s                 nfs2.csi.k8s.io_nodepool-c7ef08a9-2a22-40fd-9c-node-993f96_7078d019-f44a-42a1-8e7f-c6ee36f3f466  External provisioner is provisioning volume for claim "default/nfs-pvc"
   Normal  ExternalProvisioning   15s (x10 over 2m25s)  persistentvolume-controller                                                                      Waiting for a volume to be created either by the external provisioner 'nfs2.csi.k8s.io' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
   Normal  ProvisioningSucceeded  14s                   nfs2.csi.k8s.io_nodepool-c7ef08a9-2a22-40fd-9c-node-993f96_7078d019-f44a-42a1-8e7f-c6ee36f3f466  Successfully provisioned volume pvc-a213e1a9-2fee-4632-ae9e-c952fab74e38
-</code></pre>
+```
 
 
 If you have errors like: 
-<pre class="console"><code>Warning  ProvisioningFailed    3s (x3 over 7s)  nfs2.csi.k8s.io_nodepool-c7ef08a9-2a22-40fd-9c-node-993f96_7078d019-f44a-42a1-8e7f-c6ee36f3f466  failed to provision volume with StorageClass "nfs-csi": rpc error: code = Internal desc = failed to make subdirectory: mkdir /tmp/pvc-31210848-7f3f-40e6-aa7a-fafa616da4e7/pvc-31210848-7f3f-40e6-aa7a-fafa616da4e7: input/output error
-</code></pre>
+```console
+Warning  ProvisioningFailed    3s (x3 over 7s)  nfs2.csi.k8s.io_nodepool-c7ef08a9-2a22-40fd-9c-node-993f96_7078d019-f44a-42a1-8e7f-c6ee36f3f466  failed to provision volume with StorageClass "nfs-csi": rpc error: code = Internal desc = failed to make subdirectory: mkdir /tmp/pvc-31210848-7f3f-40e6-aa7a-fafa616da4e7/pvc-31210848-7f3f-40e6-aa7a-fafa616da4e7: input/output error
+```
 or like this:
-<pre class="console"><code>Warning  ProvisioningFailed    1s (x3 over 4s)  nfs2.csi.k8s.io_nodepool-8bdec3f1-f54a-4de8-ad-node-091e7d_15634ab1-b7e2-45b5-9565-3a775490c4e3  failed to provision volume with StorageClass "nfs-csi": rpc error: code = Internal desc = failed to mount nfs server: rpc error: code = Internal desc = mount failed: exit status 32
+```console
+Warning  ProvisioningFailed    1s (x3 over 4s)  nfs2.csi.k8s.io_nodepool-8bdec3f1-f54a-4de8-ad-node-091e7d_15634ab1-b7e2-45b5-9565-3a775490c4e3  failed to provision volume with StorageClass "nfs-csi": rpc error: code = Internal desc = failed to mount nfs server: rpc error: code = Internal desc = mount failed: exit status 32
 Mounting command: mount
 Mounting arguments: -t nfs -o nfsvers=4.1 [ZPOOL_IP]:/[ZPOOL_NAME]/[PARTITION_NAME] /tmp/pvc-f7693542-a817-472d-bb55-de7af91306b5
 Output: mount.nfs: access denied by server while mounting [ZPOOL_IP]:/[ZPOOL_NAME]/[PARTITION_NAME]
-</code></pre>
+```
 
 It mostly means that something went wrong with the HA-NAS ACLs. Check the authorized IPs which can access the wanted partition on the ACLs list.
 
@@ -289,7 +289,7 @@ nfs-nginx-1   1/1     Running   0          14m
 nfs-nginx-2   1/1     Running   0          14m
 ```
 
-Let’s enter inside the first Nginx container to check if the zpool is properly mounted and create a file on the NFS presistent volume:
+Let’s enter inside the first Nginx container to check if the zpool is properly mounted and create a file on the NFS persistent volume:
 
 ```bash
 kubectl exec -it nfs-nginx-1 -n default -- bash
@@ -357,6 +357,8 @@ Congratulations, you have successfully set up a multi-attach persistent volume w
 
 ## Go further
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](https://community.ovh.com/en/).
