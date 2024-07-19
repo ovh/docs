@@ -22,7 +22,7 @@ Lors d'une migration, l'adresse IP de votre service est conservée et votre appa
 - Disposer d'un service OverTheBox actif.
 - Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
 
-![espace client Telecom OverTheBox](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-05-fr-otb){.thumbnail}
+![espace client Telecom OverTheBox](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-05-fr-otb.png){.thumbnail}
 
 ## En pratique
 
