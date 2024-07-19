@@ -1,7 +1,7 @@
 ---
 title: "IAM pour VMware on OVHcloud - Présentation et FAQ"
 excerpt: "Découvrez comment fonctionne IAM avec vSphere"
-updated: 2024-07-09
+updated: 2024-07-19
 ---
 <style>
 details>summary {
@@ -18,13 +18,15 @@ details[open]>summary::before {
 </style>
 
 > [!warning]
-> 
-> Cette fonctionnalité IAM pour VMware on OVHcloud est actuellement en phase bêta. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : <https://discord.gg/ovhcloud>. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud.
+>
+> Cette fonctionnalité IAM pour VMware on OVHcloud est actuellement en phase bêta. Ce guide peut donc être incomplet et mise à jour. L'activation d'IAM est gratuite.
+>
+> Les infrastructures bénéficiant d'options de réseau NSX et sécurité renforcée ou d'un service certifié ([HDS](/links/conformity-and-certifications/hds), [PCI-DSS](/links/conformity-and-certifications/pci-dss) ou [SNC](/links/conformity-and-certifications/secnumcloud)) ne peuvent actuellement pas utiliser l'IAM OVHcloud.
 >
 
 ## Objectif
 
-**Ce guide vous présente les principes de fontionnement de IAM au sein de votre Hosted Private Cloud - VMware on OVHcloud**.
+**Ce guide vous présente les principes de fonctionnement de IAM au sein de votre Hosted Private Cloud - VMware on OVHcloud**.
 
 ## Prérequis
 
@@ -36,14 +38,14 @@ details[open]>summary::before {
 /// details | Introduction, concepts IAM au sein de HPC VMware on OVHcloud.
 
 Index des guides IAM globaux au sein de l'univers OVHcloud:
-- [IAM - Présentation des identités pouvant interagir au sein d'un compte OVHcloud](/pages/manage_and_operate/iam/identities-management). 
-- [IAM - Comment utiliser les politiques IAM depuis votre espace client ](/pages/account_and_service_management/account_information/iam-control-panel-access).
-- [IAM - Liste des groupes de permissions d'OVHcloud](/pages/account_and_service_management/account_information/iam-permission-groups).
-- [IAM - Comment créer une politique IAM pour permettre à un utilisateur de se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
+- [« IAM - Présentation des identités pouvant interagir au sein d'un compte OVHcloud »](/pages/manage_and_operate/iam/identities-management). 
+- [« IAM - Comment utiliser les politiques IAM depuis votre espace client »](/pages/account_and_service_management/account_information/iam-control-panel-access).
+- [« IAM - Liste des groupes de permissions d'OVHcloud »](/pages/account_and_service_management/account_information/iam-permission-groups).
+- [« IAM - Comment créer une politique IAM pour permettre à un utilisateur de se connecter à l'espace client OVHcloud »](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 ### Introduction
 
-IAM (Identity and Access Management) for Hosted Private Cloud VMware on OVHcloud est une solution de sécurité robuste et complète conçue pour rationaliser la gestion des identités des utilisateurs et leur accès aux ressources au sein de l’environnement vSphere/vCenter. 
+[IAM (Identity and Access Management)](/links/identity-security/iam) for Hosted Private Cloud VMware on OVHcloud est une solution de sécurité robuste et complète conçue pour rationaliser la gestion des identités des utilisateurs et leur accès aux ressources au sein de l’environnement vSphere/vCenter. 
 
 Ce produit fournit une plateforme centralisée pour définir et appliquer des stratégies, s'assurer que seuls les utilisateurs autorisés ont accès à des **ressources/actions** spécifiques et simplifier le processus de gestion des utilisateurs (federation/groupes). 
 
@@ -53,18 +55,18 @@ En intégrant IAM à votre environnement HPC VMware on OVHcloud, vous pouvez am�
 
 L'activation de l'IAM OVHcloud délègue la gestion des accès au service IAM OVHcloud. La gestion des rôles associés et leurs autorisations dans vSphere s'effectue depuis cette page. La gestion des politiques et accès s'effectue depuis l'IAM OVHcloud.
 
-#### Role IAM vSphere
+#### Roles
 
-Le concept d'IAM rôle au sein de HPC est très important. Pour simplifier:
+Le concept d'IAM rôle au sein de HPC est très important. Pour simplifier :
 - Un rôle IAM remplace un utilisateur local vSphere au sein du Hosted Private Cloud VMware on OVHcloud.
 - Une politique permet d'associer votre identité OVHcloud à ce rôle.
 
 Voici les éléments nécessaires au bon fonctionnement d'IAM avec Hosted Private Cloud VMware on OVHcloud :
 
-- Produits : **vSphere / VMware (Hosted Private Cloud, service pack)**.
-- Ressources : **PCC-XXX**.
-- Actions : **Managées ou manuelles**.
-- Utilisateurs : **Utilisateur 1/2/3**.
+- **Produits** : vSphere / VMware (Hosted Private Cloud, service pack).
+- **Ressources** : PCC-XXX.
+- **Actions** : Managées ou manuelles.
+- **Utilisateurs** : Utilisateur local OVHcloud.
 
 Pour les actions, vous avez le choix d'autoriser toutes les actions (all actions) ou alors de cocher chaque action nécessaire à votre stratégie.
 
@@ -80,6 +82,23 @@ Les actions sont au centre du fonctionnement de IAM dans l'univers OVHcloud.
 Le diagramme ci-dessous permet de comprendre comment fonctionne IAM avec l'ensemble des ressources OVHcloud :
 
 ![IAM Policies](images/iam_policies.png){.thumbnail}
+
+#### Roles IAM-ADMIN et IAM-AUDITOR
+
+Lors de l'activation d'IAM au sein du vSphere managé OVHcloud, 2 roles IAM sont créés par défaut :
+
+Les roles : `iam-admin`{.action} et `iam-auditor`{.action}
+
+Ces roles ont les droits suivants et permettent donc de gérer les droits dans vSphere directement :
+
+|                        | iam-admin | iam-auditor |
+|------------------------|-----------|-------------|
+| IP                     | ✅         | ✅           |
+| IP Failover            | ✅         | ❌           |
+| Gestion du chiffrement | ✅         | ❌           |
+| Token validator        | ❌         | ❌           |
+
+Vous pouvez utiliser ces roles avec une politique IAM, ou en créer d'autre et modifier les permissions depuis le control panel vSphere managé OVHcloud.
 
 ## Foire aux questions (FAQ)
 
