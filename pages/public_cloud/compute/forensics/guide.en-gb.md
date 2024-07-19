@@ -190,7 +190,7 @@ drwxr-xr-x 2 debian debian 4.0K Jul 16 10:18 the-disk
 -rw-r--r-- 1 debian debian  25G Jul 16 10:24 my_local_file.raw
 ```
 
->[!primary]
+> [!primary]
 >
 > Note that the output `raw` file size of this command will be the actual size of the instance's disk. Although the `qcow2` file format supports dynamic allocation, this is not the case for the `raw` file format.
 
