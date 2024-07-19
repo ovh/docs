@@ -1,7 +1,7 @@
 ---
 title: 'FAQ OverTheBox'
 excerpt: 'Foire aux questions sur la solution OverTheBox'
-updated: 2024-07-18
+updated: 2024-07-19
 ---
 
 ## FAQ OverTheBox
@@ -25,11 +25,12 @@ Tous les réseaux informatiques (même les plus basiques) sont compatibles avec 
 ### Quel débit maximum pourrai-je avoir ?
 
 Le débit total (après addition de vos connexions) dépend du type d'offre à laquelle vous avez souscrit :
-* Service v1 : Le débit ne pourra pas dépasser 250 Mb/s pour le service OTB seul et 130 Mb/s avec le matériel fourni par OVHcloud.
-* Service IT : Le débit ne pourra pas dépasser 100 Mb/s.
-* Service Plus : Le débit ne pourra pas dépasser 400 Mb/s.
-* Service Starter : Le débit ne pourra pas dépasser 500 Mb/s.
-* Service Business : Le débit ne pourra pas dépasser 1000 Mb/s.
+
+- Service v1 : Le débit ne pourra pas dépasser 250 Mb/s pour le service OTB seul et 130 Mb/s avec le matériel fourni par OVHcloud.
+- Service IT : Le débit ne pourra pas dépasser 100 Mb/s.
+- Service Plus : Le débit ne pourra pas dépasser 400 Mb/s.
+- Service Starter : Le débit ne pourra pas dépasser 500 Mb/s.
+- Service Business : Le débit ne pourra pas dépasser 1000 Mb/s.
 
 ### Est-ce que mon IP publique va changer ?
 
