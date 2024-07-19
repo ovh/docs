@@ -138,7 +138,7 @@ You will have first to enable the _Network Block Device (NBD)_ on your system to
 $ sudo modprobe nbd max_part=8
 ```
 
-You can now connect to the image as a network block device:
+You can now connect the image as a network block device:
 
 ```bash
 $ sudo qemu-nbd --connect /dev/nbd0 my_local_file.qcow2
