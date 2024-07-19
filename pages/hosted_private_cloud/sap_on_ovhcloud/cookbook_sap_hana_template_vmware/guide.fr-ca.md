@@ -55,7 +55,7 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
 > Une problématique actuelle sur la Content Library et la fonctionnalité de disque dynamique (comme documenté [KB85842](https://kb.vmware.com/s/article/85842)) nous oblige à passer via le lien direct du template OVF.
 >
 
-1\. Pour démarrer le processus de déploiement, allez sur votre interface vSphere etsélectionnez votre datacenter. Puis, cliquez sur le menu `Action`{.action} et sélectionnez `Déployer un modèle OVF`{.action}.
+1\. Pour démarrer le processus de déploiement, allez sur votre interface vSphere et sélectionnez votre datacenter. Puis, cliquez sur le menu `Action`{.action} et sélectionnez `Déployer un modèle OVF`{.action}.
 
 ![new-virtual-machine](images/step-1.png){.thumbnail}
 
