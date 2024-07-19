@@ -56,7 +56,7 @@ Pour cela, effectuez les actions suivantes :
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-research.png){.thumbnail}
 
-Vous pouvez aussi cliquez directement sur l'API pour y accéder :
+Vous pouvez aussi cliquer directement sur l'API pour y accéder :
 
 > [!api]
 >
@@ -109,7 +109,7 @@ Pour cela, restez sur notre site [API OVHcloud](/links/api) et effectuez les act
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-research.png){.thumbnail}
 
-Vous pouvez aussi cliquez directement sur l'API pour y accéder :
+Vous pouvez aussi cliquer directement sur l'API pour y accéder :
 
 > [!api]
 >
