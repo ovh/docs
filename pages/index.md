@@ -760,6 +760,7 @@
                 + [Kafka - Capabilities and Limitations](public_cloud/public_cloud_databases/kafka_01_capabilities)
                 + [Kafka - Getting started](public_cloud/public_cloud_databases/kafka_02_getting_started)
                 + [Kafka - Advanced parameters references](public_cloud/public_cloud_databases/kafka_03_advanced_parameters_references)
+                + [Kafka - Python 101](public_cloud/public_cloud_databases/kafka_04_dev_python_basics)
         + [Kafka Connect](products/public-cloud-databases-kafka-connect)
             + [Guides](public-cloud-databases-kafka-connect-guides)
                 + [Kafka Connect - Capabilities and Limitations](public_cloud/public_cloud_databases/kafkaconnect_01_capabilities)
