@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image (BYOI)
 excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
-updated: 2024-04-23
+updated: 2024-07-19
 ---
 
 ## Objectif
@@ -127,10 +127,38 @@ Le contenu de la requête API de Bring Your Own Image (BYOI) doit être similair
     },
     {
       "key": "configDriveUserData",
-      "value": "#!/bin/bash\necho \"Hi, sounds that BYOI is a success!\" > /etc/motd\n"
+      "value": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
     }
   ]
 }
+```
+
+Même si le configDrive user data peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
+
+```bash
+cat my-data.yaml | base64 -w0
+```
+
+Voici le configDrive user data en clair avec l'exemple ci-dessus :
+
+```yaml
+#cloud-config
+ssh_authorized_keys:
+  - ssh-rsa AAAAB8djYiw== myself@mydomain.net
+
+users:
+  - name: patient0
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, sudo
+    shell: /bin/bash
+    lock_passwd: false
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB8djYiw== myself@mydomain.net
+disable_root: false
+packages:
+  - vim
+  - tree
+final_message: The system is finally up, after $UPTIME seconds
 ```
 
 Une fois les champs complétés, démarrez le déploiement en cliquant sur `Execute`{.action}.
