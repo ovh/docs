@@ -1576,6 +1576,8 @@
                 + [Premiers pas avec OverTheBox](web_cloud/internet/overthebox/start-with-overthebox)
                 + [Comment installer OverTheBox ?](web_cloud/internet/overthebox/plus_itv2_installation)
                 + [FAQ OverTheBox](web_cloud/internet/overthebox/install_faq)
+            + [Managing your offer](web-cloud-internet-overthebox-managing-your-offer)
+                + [Comment changer mon offre OverTheBox](web_cloud/internet/overthebox/offer_migration)
             + [Initial setup](web-cloud-internet-overthebox-initial-setup)
                 + [Comment mettre à jour OverTheBox ?](web_cloud/internet/overthebox/config_upgrade)
                 + [Ajouter un accès à distance sur OverTheBox](web_cloud/internet/overthebox/middle_acces_a_distance)
