@@ -11,14 +11,7 @@ updated: 2024-07-16
 
 ## Objective
 
-On the High Grade & SCALE ranges, it is not possible to operate Additional IPs in *bridged* mode (via virtual MACs). The same goes for the latest generation servers delivered with AMD Epyc 4K and 8K CPUs. It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
-
-> [!primary]
->
-> By the end of 2024 this feature will be delivered for all the High Grade, SCALE & ADVANCE ranges.
->
-
-**This guide explains how to configure the network in Proxmox VE.**
+**Find out about two ways of configuring an _additional IP_ on Proxmox VE: via the public interfaces and via the private interfaces (vRack).**
 
 ## Requirements
 
@@ -38,7 +31,7 @@ On the High Grade & SCALE ranges, it is not possible to operate Additional IPs i
 > On these server ranges, there are 4 network cards. The first two for the public, the last two for the private network. To get all the bandwidth, aggregates must be created.
 >
 
-### Additional IP in routed mode on public network interfaces
+### Additional IP in routed mode on public network interfaces <a name="additionalipmoderoute"></a>
 
 This configuration offers a better performance in terms of bandwidth, but is less flexible. With this configuration, the Additional IP has to be attached to a dedicated server. If you have multiple Proxmox hosts and want to migrate a VM from one host to another, you must also migrate the Additional IP linked to the VM. This can be done via the OVHcloud Control Panel or the OVHcloud API (you can automate this task by creating a script).
 
