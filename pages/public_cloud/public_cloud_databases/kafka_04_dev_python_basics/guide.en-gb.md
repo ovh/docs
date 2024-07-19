@@ -1,7 +1,7 @@
 ---
 title: "Kafka - Python 101"
 excerpt: "Code your first Python applications using Public Cloud Databases for Kafka"
-updated: 2024-07-18
+updated: 2024-07-19
 ---
 
 ## Objective
@@ -32,7 +32,7 @@ You will end up with all the basics to develop your own solution using Kafka.
 > All source code is available on the GitHub repository [public-cloud-examples](https://github.com/ovh/public-cloud-examples/tree/main/databases-analytics/databases/kafka-basics/python).
 >
 
-### Consume messages
+### Step 1 - Consume messages
 
 One of the application will subscribe to a topic of your Kafka service and wait to consume any incoming message.
 
@@ -96,7 +96,7 @@ with console.status("Waiting for messages..."):
 The final piece of code will wait for incoming messages through the `poll` function.<br>
 You will be able to use the `Console` object to show the content of the messages.
 
-### Publish messages
+### Step 2 - Publish messages
 
 Now that you have an application waiting for messages, let's create one to produce and publish them.
 
