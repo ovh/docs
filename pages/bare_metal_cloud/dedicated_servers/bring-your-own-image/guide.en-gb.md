@@ -133,7 +133,7 @@ The Bring Your Own Image (BYOI) payload should be similar to the following:
 }
 ```
 
-Even though the configDrive user data could be sent to API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your data:
+Even though the configDrive user data could be sent to the API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your data:
 
 ```bash
 cat my-data.yaml | base64 -w0
