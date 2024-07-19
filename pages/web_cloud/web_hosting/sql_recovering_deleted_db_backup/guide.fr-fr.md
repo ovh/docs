@@ -52,9 +52,16 @@ Pour cela, effectuez les actions suivantes :
 - Rendez-vous sur notre site [API OVHcloud](/links/api) (vérifiez bien que vous êtes sur `https://eu.api.ovh.com` si vos services sont hébergés en Europe et sur `https://ca.api.ovh.com` s'ils sont hébergés en dehors de l'Europe).
 - Sur la page qui s'affiche, cliquez au centre sur `Explore the OVHcloud API`{.action}.
 - Sur la nouvelle page qui apparaît et dans la partie gauche de la page, positionnez-vous sur le formulaire situé à droite du formulaire `v1`{.action}, puis sélectionnez/saisissez le choix `/hosting/web`.
-- Parmi la liste d'API qui apparaît en dessous dans la colonne de gauche, recherchez et cliquez sur l'API suivante : **GET /hosting/web/{serviceName}/dump**.
+- Parmi la liste d'API qui apparaît en dessous dans la colonne de gauche, recherchez et cliquez sur l'API suivante :
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-research.png){.thumbnail}
+
+Vous pouvez aussi cliquez directement sur l'API pour y accéder :
+
+> [!api]
+>
+> @api {v1} /hosting/web GET /hosting/web/{serviceName}/dump
+>
 
 - Sur la partie droite de la page s'affiche alors l'API avec ses différents formulaires à remplir.
 - Cliquez sur le bouton situé en haut à droite intitulé `Authenticate`{.action}, puis sur le bouton `Login with OVHcloud SSO`{.action}.
@@ -66,16 +73,16 @@ Pour cela, effectuez les actions suivantes :
 
 Pour cela, remplissez les différents formulaires comme détaillé ci-dessous :
 
-- Pour la section intitulée **PATH PARAMETERS** :
-    - **serviceName** : Renseignez le nom de votre hébergement web précédemment récupéré lors de l'étape 1 de ce guide.
+- Pour la section intitulée `PATH PARAMETERS` :
+    - `serviceName` : Renseignez le nom de votre hébergement web précédemment récupéré lors de l'étape 1 de ce guide.
 
-- Pour la section intitulée **QUERY-STRING PARAMETERS** :
-    - **creationDate.from** : Laissez le formulaire vide.
-    - **creationDate.to** : Laissez le formulaire vide.
-    - **databaseName** : Saisissez le nom de la base de donnée supprimée accidentellement. (exemple : **deletedDatabase.mysql.db**).
-    - **deletionDate.from** : Laissez le formulaire vide.
-    - **deletionDate.to** : Laissez le formulaire vide.
-    - **orphan** : Saisissez en minuscule la valeur : `true`.
+- Pour la section intitulée `QUERY-STRING PARAMETERS` :
+    - `creationDate.from` : Laissez le formulaire vide.
+    - `creationDate.to` : Laissez le formulaire vide.
+    - `databaseName` : Saisissez le nom de la base de donnée supprimée accidentellement. (exemple : **deletedDatabase.mysql.db**).
+    - `deletionDate.from` : Laissez le formulaire vide.
+    - `deletionDate.to` : Laissez le formulaire vide.
+    - `orphan` : Saisissez en minuscule la valeur : `true`.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump.png){.thumbnail}
 
@@ -98,16 +105,23 @@ Grâce au numéro d'identifiant de sauvegarde récupéré lors de l'étape 3, vo
 Pour cela, restez sur notre site [API OVHcloud](/links/api) et effectuez les actions suivantes :
 
 - Dans la partie gauche de la page, positionnez-vous sur le formulaire situé à droite du formulaire `v1`{.action}, puis sélectionnez/saisissez le choix `/hosting/web`{.action}.
-- Parmi la liste d'API qui apparaît en dessous dans la colonne de gauche, recherchez et cliquez sur l'API suivante : **GET /hosting/web/{serviceName}/dump/{id}**.
+- Parmi la liste d'API qui apparaît en dessous dans la colonne de gauche, recherchez et cliquez sur l'API suivante :
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-research.png){.thumbnail}
 
+Vous pouvez aussi cliquez directement sur l'API pour y accéder :
+
+> [!api]
+>
+> @api {v1} /hosting/web GET /hosting/web/{serviceName}/dump/{id}
+>
+
 - Sur la partie droite de la page s'affiche alors l'API avec ses différents formulaires à remplir.
 
-Remplissez les différents formulaires de la partie **PATH PARAMETERS** ainsi :
+Remplissez les différents formulaires de la partie `PATH PARAMETERS` ainsi :
 
-- **id** : Copiez le numéro d'identifiant de sauvegarde récupéré lors de l'étape 3. Si vous n'étiez pas déconnecté de notre site API OVHcloud, l'interface peut directement vous proposer les différents numéros d'ID de sauvegarde disponibles. Si tel est le cas, vous pouvez directement cliquer sur le premier numéro d'ID de la liste présente juste en dessous du formulaire **id**.
-- **serviceName** : Renseignez le nom de votre hébergement web précédemment récupéré lors de l'étape 1 de ce guide.
+- `id` : Copiez le numéro d'identifiant de sauvegarde récupéré lors de l'étape 3. Si vous n'étiez pas déconnecté de notre site API OVHcloud, l'interface peut directement vous proposer les différents numéros d'ID de sauvegarde disponibles. Si tel est le cas, vous pouvez directement cliquer sur le premier numéro d'ID de la liste présente juste en dessous du formulaire **id**.
+- `serviceName` : Renseignez le nom de votre hébergement web précédemment récupéré lors de l'étape 1 de ce guide.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
 
