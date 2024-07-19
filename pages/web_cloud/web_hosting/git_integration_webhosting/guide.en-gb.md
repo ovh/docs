@@ -17,8 +17,8 @@ In today’s digital landscape, companies are becoming increasingly dynamic and 
 
 ## Requirements
 
-- An [OVHcloud Web Hosting](/links/web/hosting) plan.
-- Be login to your [OVHcloud Control Panel](/links/manager), in the Web Cloud section.
+- You have an [OVHcloud Web Hosting](/links/web/hosting) plan.
+- Access to the [OVHcloud Control Panel](/links/manager), in the Web Cloud section.
 - You must have an account [GitHub](https://github.com/){.external} and be logged in.
 
 ## Instructions
@@ -40,7 +40,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) and perform the followin
 - Go to the `Web Cloud`{.action} tab.
 - Select your web hosting plan in the `Hosting plans`{.action} section on the left.
 - Click on the `Multisite`{.action} tab.
-- In the table that pops up, identify the row corresponding to the directory you want to associate with Git.
+- In the table that appears, identify the row corresponding to the directory you want to associate with Git.
 - Click on the button `...`{.action} then select `Associate Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/associate-git.png){.thumbnail}
@@ -56,7 +56,7 @@ The Git association form is displayed. There are several elements that need to b
 
 > [!primary]
 >
-> Generating an SSH key is a crucial step, as it establishes a secure and encrypted connection between your website’s directory and the GitHub repository. This key ensures that data transfers and code changes are done in a secure and authenticated manner, preventing unauthorized access and ensuring code integrity.
+> Generating an SSH key is a crucial step, as it establishes a secure and encrypted connection between your website’s directory and the GitHub repository. This key ensures that data transfers and code changes are done in a secure and authenticated manner, preventing unauthorised access and ensuring code integrity.
 >
 
 Copy and save the SSH key to your GitHub account. This way, you can establish a secure connection without having to enter a password each time you perform a Git operation.
@@ -68,8 +68,8 @@ Copy and save the SSH key to your GitHub account. This way, you can establish a 
 
 The form for adding a new SSH key will open:
 
-- **Title** : add a description for your SSH key. For example, you can name this key “OVHcloud”.
-- **Type of key**: leave the default value `authentication key`{.action}
+- **Title** : Add a description for your SSH key. For example, you can name this key “OVHcloud”.
+- **Type of key**: Leave the default value `authentication key`{.action}
 - **Key**: Paste your SSH key.
 
 To confirm the information, click `Add SSH key`{.action}. If prompted, confirm access to your account in GitHub.
@@ -88,7 +88,7 @@ Define a name for your deposit and fill in the requested information.
 
 > [!warning]
 >
-> Tick the option `Add a README file` for GitHub to correctly initialize your repository.
+> Tick the option `Add a README file` for GitHub to correctly initialise your repository.
 >
 
 Finally, click `Create Repository`{.action}.
@@ -160,7 +160,7 @@ Once you have identified the error(s), associate Git again. Retry the operation 
 
 ### Deploy your GitHub repository on your OVHcloud web hosting plan
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that pops up, identify the row for the domain name that you want to deploy with Git. Ensure that the status of the Git column is `Enabled`{.action}. Click the `...`{.action} button, then `Deploy Git`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain name that you want to deploy with Git. Ensure that the status of the Git column is `Enabled`{.action}. Click the `...`{.action} button, then `Deploy Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
 
@@ -175,7 +175,7 @@ The new version of your website has been deployed on your OVHcloud hosting plan.
 
 ### Modify a domain name
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that opens, identify the row for the domain you want to modify. Click the `...`{.action} button, then `Modify the domain`{.action}. There are two possible scenarios:
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain you want to modify. Click the `...`{.action} button, then `Modify the domain`{.action}. There are two possible scenarios:
 
 #### The domain name is not the only one attached to the same directory
 
@@ -201,7 +201,7 @@ As the message states, [delete your Git association](#deleteGitAssociation) firs
 
 ### Detach a domain name
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that pops up, identify the line corresponding to the domain that you want to detach from your OVHcloud web hosting plan. Click the `...`{.action} button, then `Detach domain`{.action}. There are two possible scenarios:
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the line corresponding to the domain that you want to detach from your OVHcloud web hosting plan. Click the `...`{.action} button, then `Detach domain`{.action}. There are two possible scenarios:
 
 #### The domain name is not the only one attached to the same directory
 
@@ -227,16 +227,16 @@ Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.
 
 The following information is displayed:
 
-- SSH key: if you have not already done so, [save your SSH key in your GitHub account](#linkSSHKey).
-- Deposit: address of your Git deposit. This field is grayed out because you cannot change the address of the Git repository. To change the Git repository URL, you must [remove Git association from your directory](#deleteGitAssociation) and then [associate directory to Git](#associateGitRepo) again.
-- Branch: name of the branch of the GitHub repository. You can edit this field.
-- Webhook URL: If you want to optimize your deployments on Git, [configure the webhook on GitHub](#configureWebhook).
+- SSH key: If you have not already done so, [save your SSH key in your GitHub account](#linkSSHKey).
+- Deposit: Address of your Git deposit. This field is grayed out because you cannot change the address of the Git repository. To change the Git repository URL, you must [remove Git association from your directory](#deleteGitAssociation) and then [associate directory to Git](#associateGitRepo) again.
+- Branch: Name of the branch of the GitHub repository. You can edit this field.
+- Webhook URL: If you want to optimise your deployments on Git, [configure the webhook on GitHub](#configureWebhook).
 
 ### Latest deployment information
 
 Once you have deployed your GitHub repository on your web hosting plan, you can view information on the latest deployment, such as errors, tests and any useful information. 
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that pops up, identify the row for the domain whose logs you want to view from the last deployment. To the right of the line, click the `...`{.action} button, then `information on the last deployment`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain whose logs you want to view from the last deployment. To the right of the line, click the `...`{.action} button, then `information on the last deployment`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
 
@@ -252,7 +252,7 @@ The following window appears:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
 
-The message informs you that the deletion will apply to all domain names attached to your directory. Tick the `Do you want to empty the contents of the <your_directory>`{.action} directory if you also want to delete the contents (folders and files) of the directory.
+The message informs you that the deletion will apply to all domain names attached to your directory. Tick the `Do you want to empty the contents of the <your_directory>`{.action} option if you also want to delete the contents (folders and files) of the directory.
 
 1\.	If you select the check box, the following window appears:
 
@@ -286,11 +286,11 @@ At the bottom of the form that opens, identify the address of the `Webhook URL`{
 Log in to your GitHub account, and go to the repository where you want to configure the webhook. Go to the `Settings`{.action} tab, then in the settings side menu, click `Webhooks`{.action}. Click the `Add webhook`{.action} button to access the form:
 
 - **Payload URL**: Enter the URL provided in the Git association form (`Webhook URL`{.action}).
-- **Content type**: choose `application/json`{.action} as the content type for the data sent.
-- **Secret**: the secret is optional. GitHub will use it to sign messages sent by the webhook, enhancing security.
+- **Content type**: Choose `application/json`{.action} as the content type for the data sent.
+- **Secret**: The secret is optional. GitHub will use it to sign messages sent by the webhook, enhancing security.
 - **SSL verification**: If your website supports HTTPS, leave this option enabled for increased security.
-- **Which events would you like to trigger this webhook?**: select the events that will trigger the webhook to be sent. For automatic deployment, `Just the push event`{.action} is often enough, but you can choose `Send me everything`{.action} to receive notifications for all events.
-- **Active**: make sure that the box is ticked to enable the webhook.
+- **Which events would you like to trigger this webhook?**: Select the events that will trigger the webhook to be sent. For automatic deployment, `Just the push event`{.action} is often enough, but you can choose `Send me everything`{.action} to receive notifications for all events.
+- **Active**: Make sure that the box is ticked to enable the webhook.
 
 Click `Add webhook`{.action} to save and activate your new webhook.
 
@@ -298,7 +298,7 @@ Click `Add webhook`{.action} to save and activate your new webhook.
 
 Once you have created your webhook in GitHub, go to the list of your webhooks and select the one you have just created, or click `Edit`{.action}.
 
-On the screen that pops up, click on the `Recent Deliveries`{.action} tab. To send a test event specifically, GitHub usually sends a `ping` event when creating the webhook, and you can use the `Redeliver`{.action} button next to this event to test it.
+On the screen that appears, click on the `Recent Deliveries`{.action} tab. To send a test event specifically, GitHub usually sends a `ping` event when creating the webhook, and you can use the `Redeliver`{.action} button next to this event to test it.
 
 If the test has worked, the `Response`{.action} tab returns a code of 200. If an error code is returned (usually 500 or 400), this means that your webhook has been misconfigured. Return to the form for adding a webhook, and check the information, specifically the webhook URL provided by OVHcloud.
 
