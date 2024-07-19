@@ -1,47 +1,52 @@
 ---
-title: 'Forensics: how to deal with Public Cloud instances ?'
-excerpt: 'In case of a Security Incident, performing forensics on the disk(s) and/or the RAM of a Public Cloud instance(s) could be required. This guide will help you to do so.'
-updated: 2024-07-16
+title: 'Forensics: How to deal with Public Cloud instances'
+excerpt: 'Learn how to perform forensics on the disk(s) and/or the RAM of a Public Cloud instance in case of a security incident'
+updated: 2024-07-19
 ---
 
 ## Objective
 
 In case of a Security Incident, performing forensics on the disk(s) of a Public Cloud instance(s) could be required as well as investigating the RAM to recover important artefacts.
+
 This guide aims to detail how to do so step by step.
 
 ## Requirements
 
 - Make sure you are investigating a Public Cloud instance since this guide is only working for Public Cloud instances.
-- The [OpenStack CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api/) ready to be used on your system.
-- An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user/) has been created with - at least - the _Compute Operator_ and _Backup Operator_ roles.
+- The [OpenStack CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) ready to be used on your system.
+- An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) has been created with (at least) the _Compute Operator_ and _Backup Operator_ roles.
 
-## Recovering the RAM of a running Public Cloud instance
+## Instructions
+
+### Recovering the RAM of a running Public Cloud instance
 
 OVHcloud has no access to your instance and OpenStack has no feature to dump the RAM of a running instance. Consequently in this situation, we recommend you to connect to the instance and run a memory capture tool.
 
-## Recovering the disk of a Public Cloud instance
+### Recovering the disk of a Public Cloud instance
 
-In order to recover the disk of a Public Cloud instance, the easiest way is to use the [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-overview.html). If the tool is not installed on your system, you can read the [following guide](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api/) as well as the [the guide to create an OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user).
+In order to recover the disk of a Public Cloud instance, the easiest way is to use the [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-overview.html). If the tool is not installed on your system, you can read the [following guide](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) as well as [the guide to create an OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user).
 
-### Perform a backup
+#### Perform a backup
 
-First, we are going to perform a backup of the Public Cloud instance. The operation can be done either using [the OVHcloud Control Panel](/pages/public_cloud/compute/save_an_instance/) or using the OpenStack CLI. We are going to use the latter one.
+First, we are going to perform a backup of the Public Cloud instance. The operation can be done either [using the OVHcloud Control Panel](/pages/public_cloud/compute/save_an_instance) or using the OpenStack CLI. We are going to use the latter one.
 
->[!primary]
+> [!primary]
 >
->Except for Metal instances, this action is transparent and won't reboot your instance.
+> Except for Metal instances, this action is transparent and won't reboot your instance.
 
-You need to recover the `openrc.sh` file. In the `Users & Roles`{.action} on the left-hand menu under "Project Management", click on `...`{.action} and then `Download OpenStack's RC file`{.action}. A popup will ask you to choose the _Region_ the configuration file should be configured with. Pick the same _Region_ as the Public Cloud instance you want to investigate.
+You need to recover the `openrc.sh` file. In the `Users & Roles`{.action} section of the left-hand menu under "Project Management", click the `...`{.action} button and then `Download OpenStack's RC file`{.action}. A popup will ask you to choose the _Region_ the configuration file should be configured with. Pick the same _Region_ as the Public Cloud instance you want to investigate.
 
 ![rc-file](images/rc-file.png){.thumbnail}
 
->[!warning]
->This file cannot be used on Windows. We recommend to use WSL on Windows to run the OpenStack CLI since it does solve several issues such as this one.
->This [documentation](/pages/public_cloud/compute/loading_openstack_environment_variables/) can help you deal with the required environment variables on Windows.
+> [!warning]
+> This file cannot be used on Windows. We recommend using WSL on Windows to run the OpenStack CLI since it does solve several issues such as this one.
+>
+> This [documentation](/pages/public_cloud/compute/loading_openstack_environment_variables) can help you deal with the required environment variables on Windows.
 
 The `openrc.sh` file can now be loaded using the command `source openrc.sh`. A prompt will ask you for the OpenStack password you configured when creating the user.
 
 Once you're done, you can run the command `openstack list server` which should list all the instances deployed on the previously selected region:
+
 ```bash
 $ source openrc.sh
 Please enter your OpenStack Password:
@@ -56,7 +61,8 @@ $ openstack server list
 +--------------------------------+------------------------+---------+----------------------------------+-----------+-----------+
 ```
 
-In order to perform a backup of the instance `pwned-instance`, run the command:
+In order to perform a backup of the instance `pwned-instance`, run the following command:
+
 ```bash
 $ openstack server image create --name "the-instance-backup-name" "pwned-instance"
 +------------+-------------------------------------------------------------------------------------------------------------------------+
@@ -84,7 +90,8 @@ $ openstack server image create --name "the-instance-backup-name" "pwned-instanc
 +------------+-------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Depending on the size of the instance's disk, the backup process can take up to 15min. In this example, the backup of the D2-2 flavour took less than a minute. Unfortunately OpenStack does not provide a way to track the progression. You can only run the following command periodically and wait the image to have the status `active` :
+Depending on the size of the instance's disk, the backup process can take up to 15min. In this example, the backup of the D2-2 flavour took less than a minute. Unfortunately OpenStack does not provide a way to track the progress. You can only run the following command periodically and wait for the image to have the `active` status:
+
 ```bash
 $ openstack image list --private
 +--------------------------------------+------------------------------+--------+
@@ -102,10 +109,10 @@ $ openstack image list --private
 +--------------------------------------+------------------------------+--------+
 ```
 
-
-### Download the snapshot
+#### Download the snapshot
 
 Now the backup has been performed, we can download the image file to work locally. The following command will download the image on your system:
+
 ```bash
 $ openstack image save --file my_local_file.qcow2 the-instance-backup-name
 $ ls -lrth
@@ -116,26 +123,29 @@ total 1.2G
 
 This command won't show any progress bar. Wait a bit until the process quits and you should see the image on your system. It is entirely possible that the file size is smaller than the instance's disk size. Automatic provisioning of the disk size may occur.
 
-### How to deal with qcow2 images
+#### How to deal with qcow2 images
 
 The `qcow2` file format stands for _QEMU Copy On Write_. As you may guess this is the default disk image format used by _QEMU_.
 To deal with these files, _QEMU_ provides several tools that you will probably need.
 
-#### Mount qcow2 images
+##### Mounting qcow2 images
 
 To mount `qcow2` images, make sure _QEMU_ is available on your system.
 
-You will have first to enable the _Network Block Device (NBD)_ on your system to be able to use `qemu-nbd`. To do so, run the command
+You will have first to enable the _Network Block Device (NBD)_ on your system to be able to use `qemu-nbd`. To do so, run this command:
+
 ```bash
 $ sudo modprobe nbd max_part=8
 ```
 
-You can now connect the image using as a network block device:
+You can now connect to the image as a network block device:
+
 ```bash
 $ sudo qemu-nbd --connect /dev/nbd0 my_local_file.qcow2
 ```
 
 The device can now be used as any other device and mounted:
+
 ```bash
 $ fdisk -l /dev/nbd0
 Disk /dev/nbd0: 25 GiB, 26843545600 bytes, 52428800 sectors
@@ -158,17 +168,19 @@ bin  boot  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  root  
 ```
 
 Once you're done, you can disconnect the image:
+
 ```bash
 $ sudo umount ./the-disk
 $ sudo qemu-nbd --disconnect /dev/nbd0
 /dev/nbd0 disconnected
 ```
 
-#### From qcow2 to raw image
+##### From qcow2 to raw image
 
-Unfortunately the `qcow2` file format is not supported by the forensics softwares. If you want to use such software, you'll need to convert the `qcow2` file to a `raw` file.
+Unfortunately the `qcow2` file format is not supported by the forensics softwares. If you want to use such a software, you'll need to convert the `qcow2` file to a `raw` file.
 
 _QEMU_ provides a converter you can use by entering the following command:
+
 ```bash
 $ qemu-img convert -f qcow2 my_local_file.qcow2 -O raw my_local_file.raw
 $ ls -lrth
@@ -180,8 +192,12 @@ drwxr-xr-x 2 debian debian 4.0K Jul 16 10:18 the-disk
 
 >[!primary]
 >
->Note that the output `raw` file size of this command will be the actual size of the instance's disk. Although the `qcow2` file format supports dynamic allocation, this is not the case for the `raw` file format.
+> Note that the output `raw` file size of this command will be the actual size of the instance's disk. Although the `qcow2` file format supports dynamic allocation, this is not the case for the `raw` file format.
 
 ## Go further
 
-The _QEMU_ convertion tool supports many output file format as explained in this documentation: <https://docs.openstack.org/image-guide/convert-images.html>
+The _QEMU_ convertion tool supports many output file formats as explained in this documentation: <https://docs.openstack.org/image-guide/convert-images.html>
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](/links/community).

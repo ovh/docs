@@ -632,6 +632,7 @@
             + [How to retrieve databases in rescue mode](bare_metal_cloud/dedicated_servers/restore-bdd-rescue)
             + [How to set up a web server (LAMP) on Debian or Ubuntu](bare_metal_cloud/dedicated_servers/installing_lamp_debian9_ubuntu18)
             + [Resizing the file system in FreeBSD 12](public_cloud/compute/resize_freebsd_file_system_after_install)
+            + [Forensics: How to deal with Public Cloud instances](public_cloud/compute/forensics)
     + [Public Cloud Network Services](products/public-cloud-network)
         + [Concepts](public-cloud-network-concepts)
             + [Concepts - Public Cloud Networking](public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts)
