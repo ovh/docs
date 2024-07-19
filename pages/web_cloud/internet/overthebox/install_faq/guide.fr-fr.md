@@ -86,4 +86,4 @@ Oui, c'est possible via différentes méthodes expliquées dans ce guide : [Réi
 
 N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)
 
-Plus d'informations sur [les offres OverTheBox](https://www.ovhtelecom.fr/overthebox/)
+Retrouvez plus d'informations sur les offres OverTheBox sur [notre page OverTheBox](https://www.ovhtelecom.fr/overthebox/).
