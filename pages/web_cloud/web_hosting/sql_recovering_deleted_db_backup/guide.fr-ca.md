@@ -52,11 +52,7 @@ Pour cela, effectuez les actions suivantes :
 - Rendez-vous sur notre site [API OVHcloud](/links/api) (vérifiez bien que vous êtes sur `https://eu.api.ovh.com` si vos services sont hébergés en Europe et sur `https://ca.api.ovh.com` s'ils sont hébergés en dehors de l'Europe).
 - Sur la page qui s'affiche, cliquez au centre sur `Explore the OVHcloud API`{.action}.
 - Sur la nouvelle page qui apparaît et dans la partie gauche de la page, positionnez-vous sur le formulaire situé à droite du formulaire `v1`{.action}, puis sélectionnez/saisissez le choix `/hosting/web`.
-- Parmi la liste d'API qui apparaît en dessous dans la colonne de gauche, recherchez et cliquez sur l'API suivante :
-
-![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-research.png){.thumbnail}
-
-Vous pouvez aussi cliquer directement sur l'API pour y accéder :
+- Parmi la liste d'API qui apparaît en dessous dans la colonne de gauche, recherchez et cliquez sur l'API suivante : **GET /hosting/web/{serviceName}/dump**. Vous pouvez aussi cliquer directement sur l'API pour y accéder :
 
 > [!api]
 >
@@ -105,11 +101,7 @@ Grâce au numéro d'identifiant de sauvegarde récupéré lors de l'étape 3, vo
 Pour cela, restez sur notre site [API OVHcloud](/links/api) et effectuez les actions suivantes :
 
 - Dans la partie gauche de la page, positionnez-vous sur le formulaire situé à droite du formulaire `v1`{.action}, puis sélectionnez/saisissez le choix `/hosting/web`{.action}.
-- Parmi la liste d'API qui apparaît en dessous dans la colonne de gauche, recherchez et cliquez sur l'API suivante :
-
-![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-research.png){.thumbnail}
-
-Vous pouvez aussi cliquer directement sur l'API pour y accéder :
+- Parmi la liste d'API qui apparaît en dessous dans la colonne de gauche, recherchez et cliquez sur l'API suivante : **GET /hosting/web/{serviceName}/dump/{id}**. Vous pouvez aussi cliquer directement sur l'API pour y accéder :
 
 > [!api]
 >
