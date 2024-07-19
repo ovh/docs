@@ -8,18 +8,16 @@ updated: 2024-06-20
 
 This guide will show you how to connect two projects on an internal network. It allows you to synchronize production and preproduction environments across several projects.
 
-## Capabilities and limitations
-
-### Prerequisites
+### Requirements
 
 - Have 2 or more projects.
 - Refer to [Getting started with the OpenStack API](/pages/public_cloud/compute/starting_with_nova)
 - Refer to [Attaching a Floating IP to a Public Cloud instance ](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance)
 - Refer to [Managing firewall rules and port security on networks using OpenStack CLI ](/pages/public_cloud/compute/security_group_private_network)
 
-### Procedure
+## Instructions
 
-#### On our first project
+#### In our first project
 
 1. **List the project IDs:**
 
@@ -74,7 +72,6 @@ Example output:
 ```
 
 #### For the Project 2 (shared):
-
 
 ```sh
 openstack subnet create --subnet-range 10.0.3.0/24 --network shared_private_network --allocation-pool start=10.0.3.2,end=10.0.3.254 shared_subnet_v2
