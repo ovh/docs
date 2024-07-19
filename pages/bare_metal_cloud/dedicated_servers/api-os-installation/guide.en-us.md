@@ -287,7 +287,7 @@ The following payload will install Debian 12 (Bookworm) with SSH key-based authe
 Even though the post-installation script could be sent to API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your script:
 
 ```bash
-cat my-script.sh | base64 -w0`
+cat my-script.sh | base64 -w0
 ```
 
 Here is the clear-text post-installation bash script from the example above:
@@ -306,7 +306,7 @@ date "+%Y-%m-%d %H:%M:%S" --utc >> /opt/coucou
 
 #### Windows payload example
 
-The following payload will install Windows Server 2022 Standard (Core) in French with a custom bash post-installation script.
+The following payload will install Windows Server 2022 Standard (Core) in French with a custom PowerShell post-installation script.
 
 ```json
 {
