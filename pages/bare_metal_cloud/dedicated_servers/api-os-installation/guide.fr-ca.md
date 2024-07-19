@@ -282,7 +282,7 @@ Ce payload permet d'installer Debian 12 (Bookworm) avec une clé SSH publique et
 Même si le script de post-installation peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
 
 ```bash
-cat my-script.sh | base64 -w0`
+cat my-script.sh | base64 -w0
 ```
 
 Voici le script bash de post-installation en clair avec l'exemple ci-dessus :
