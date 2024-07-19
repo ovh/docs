@@ -196,6 +196,4 @@ drwxr-xr-x 2 debian debian 4.0K Jul 16 10:18 the-disk
 
 Le convertisseur de _QEMU_ supporte un grand nombre de formats de fichier en sortie, comme expliqué dans la documentation suivante : <https://docs.openstack.org/image-guide/convert-images.html>
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
-
 Échangez avec notre [communauté d'utilisateurs](/links/community).

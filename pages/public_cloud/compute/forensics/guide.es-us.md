@@ -198,6 +198,4 @@ drwxr-xr-x 2 debian debian 4.0K Jul 16 10:18 the-disk
 
 The _QEMU_ convertion tool supports many output file formats as explained in this documentation: <https://docs.openstack.org/image-guide/convert-images.html>
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
-
 Join our [community of users](/links/community).
