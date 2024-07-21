@@ -23,7 +23,7 @@ updated: 2024-07-20
 1. Connectez-vous au panneau de contrôle OVHcloud et ouvrez la section **Public Cloud**.
 2. Accédez à **Instances** sous la section **Compute**.
 3. Cliquez sur le bouton **Create an instance**.
-4. Suivez les instructions du guide [OVHcloud Public Cloud Compute Getting Started](https://help.ovhcloud.com/csm/fr-public-cloud-compute-getting-started?id=kb_article_view&sysparm_article=KB0051011) pour créer votre clé SSH si nécessaire.
+4. Suivez les instructions du guide [OVHcloud Public Cloud Compute Getting Started](/pages/public_cloud/compute/public-cloud-first-steps) pour créer votre clé SSH si nécessaire.
 
 5. Choisissez un modèle d'instance . 
 
