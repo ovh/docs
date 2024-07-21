@@ -24,17 +24,41 @@ updated: 2024-07-20
 2. Accédez à **Instances** sous la section **Compute**.
 3. Cliquez sur le bouton **Create an instance**.
 4. Suivez les instructions du guide [OVHcloud Public Cloud Compute Getting Started](https://help.ovhcloud.com/csm/fr-public-cloud-compute-getting-started?id=kb_article_view&sysparm_article=KB0051011) pour créer votre clé SSH si nécessaire.
-5. Choisissez un modèle d'instance . ![Select your Instance](images/creationmodel.png)
-6. Sélectionnez une Local Zone. ![Select your region](images/regionlocalzone.png)
-7. Choisissez une image.  ![Select your region](images/image.png)
-8. Sélectionnez votre clé SSH.![Select your region](images/sshnb.png)
-9. Indiquez `3` comme nombre d'instances à créer et changez le nom des instances (`lz-kube` par exemple).![Select your region](images/nbinstance.png)
-10. Cochez les cases **Private network** et **Public network** (pour avoir une IP publique).![Select your region](images/networkconfig.png)
-11. Les instances prendront quelques minutes pour se créer.![Select your region](images/instancepret.png)
+
+5. Choisissez un modèle d'instance . 
+
+![Select your Instance](images/creationmodel.png)
+
+6. Sélectionnez une Local Zone. 
+
+![Select your region](images/regionlocalzone.png)
+
+7. Choisissez une image.  
+
+![Select your region](images/image.png)
+
+8. Sélectionnez votre clé SSH.
+
+![Select your region](images/sshnb.png)
+
+9. Indiquez `3` comme nombre d'instances à créer et changez le nom des instances (`lz-kube` par exemple).
+
+![Select your region](images/nbinstance.png)
+
+10. Cochez les cases **Private network** et **Public network** (pour avoir une IP publique).
+
+![Select your region](images/networkconfig.png)
+
+11. Les instances prendront quelques minutes pour se créer.
+
+![Select your region](images/instancepret.png)
 
 ### Étape 2 : Déployer un Managed Rancher
 
-1. Dans le panneau de contrôle OVHcloud, cliquez sur le bouton **Create a Managed Rancher Service**.![Select your region](images/rancher.png)
+1. Dans le panneau de contrôle OVHcloud, cliquez sur le bouton **Create a Managed Rancher Service**.
+
+![Select your region](images/rancher.png)
+
 2. Remplissez un nom (`my_lz_rancher` par exemple), choisissez le plan **Standard**, la version recommandée, puis cliquez sur le bouton **Create a Managed Rancher Service**.
 3. Une fois le service créé, dans la liste des Managed Rancher Service, cliquez sur votre instance, puis cliquez sur le bouton **Generate access code** pour générer le login et le mot de passe pour accéder à Rancher. Enregistrez le login et le mot de passe et cliquez sur le bouton **Go to Rancher**.
 4. Copiez/collez le mot de passe dans le champ **password** et cliquez sur le bouton **Log in with Local User**.
