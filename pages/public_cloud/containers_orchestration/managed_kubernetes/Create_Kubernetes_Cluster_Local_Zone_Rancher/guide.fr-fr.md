@@ -1,6 +1,6 @@
 ---
 title: Créer un cluster Kubernetes dans une Local Zone via Rancher
-excerpt: Apprenez à déployer un cluster Kubernetes en utilisant Rancher sur une Local Zone d\'OVHcloud.
+excerpt: Apprenez à déployer un cluster Kubernetes en utilisant Rancher sur une Local Zone d'OVHcloud.
 updated: 2024-07-20
 ---
 
