@@ -25,7 +25,7 @@ updated: 2024-07-20
 3. Cliquez sur le bouton **Create an instance**.
 4. Suivez les instructions du guide [OVHcloud Public Cloud Compute Getting Started](https://help.ovhcloud.com/csm/fr-public-cloud-compute-getting-started?id=kb_article_view&sysparm_article=KB0051011) pour créer votre clé SSH si nécessaire.
 5. Choisissez un modèle d'instance . ![Select your Instance](images/creationmodel.png)
-6. Sélectionnez une Local Zone. ![Select your region](imagesregionlocalzone.png)
+6. Sélectionnez une Local Zone. ![Select your region](images/regionlocalzone.png)
 7. Choisissez une distribution.
 8. Sélectionnez votre clé SSH.
 9. Indiquez `3` comme nombre d'instances à créer et changez le nom des instances (`lz-kube` par exemple).
