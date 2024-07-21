@@ -60,8 +60,15 @@ updated: 2024-07-20
 ![Select your region](images/rancher.png)
 
 2. Remplissez un nom (`my_lz_rancher` par exemple), choisissez le plan **Standard**, la version recommandée, puis cliquez sur le bouton **Create a Managed Rancher Service**.
+
+![Select your region](images/menurancher.png)
+
 3. Une fois le service créé, dans la liste des Managed Rancher Service, cliquez sur votre instance, puis cliquez sur le bouton **Generate access code** pour générer le login et le mot de passe pour accéder à Rancher. Enregistrez le login et le mot de passe et cliquez sur le bouton **Go to Rancher**.
+
+![Select your region](images/generationCode.png)
+
 4. Copiez/collez le mot de passe dans le champ **password** et cliquez sur le bouton **Log in with Local User**.
+
 5. Un nouveau mot de passe sera généré, enregistrez-le ! Enregistrez également l'URL du serveur, cochez la case **End User License Agreement** et cliquez sur le bouton **Continue**.
 
 ### Étape 3 : Configurer Rancher pour déployer un cluster Kubernetes
@@ -72,6 +79,8 @@ updated: 2024-07-20
 2. Remplissez un nom de cluster (`lz-k3s` par exemple).
 3. Dans la liste des versions de Kubernetes, choisissez la version `1.27.14` de k3s.
 4. Cliquez sur le bouton **Create**.
+
+![Select your region](images/customCluster.png)
 
 #### Configurer le cluster
 
