@@ -167,8 +167,6 @@ lz-kube-3   Ready    worker                      9m      v1.27.14+k3s1
 
 Vous devriez voir la liste des pods, services et autres ressources déployées dans votre cluster Kubernetes.
 
-### Conclusion
-
-En suivant ce guide, vous avez créé un cluster Kubernetes dans une Local Zone via Rancher. Vous avez maintenant un cluster fonctionnel que vous pouvez gérer et utiliser pour vos besoins de développement et de production.
-
-N'hésitez pas à consulter les ressources supplémentaires fournies au début de ce guide pour en savoir plus sur l'utilisation de Rancher et des Local Zones d'OVHcloud.
+## Aller plus loin
+ 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
