@@ -12,9 +12,7 @@ updated: 2024-07-20
 
 - Have an OVHcloud project with available instances.
 - Refer to the following guides:
-  - [Getting Started with the OpenStack API](/pages/public_cloud/compute/starting_with_nova)
-  - [Attaching a Floating IP to a Public Cloud Instance](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance)
-  - [Managing Firewall Rules and Port Security on Networks using OpenStack CLI](/pages/public_cloud/compute/security_group_private_network)
+  - [OVHcloud Public Cloud Compute Getting Started](/pages/public_cloud/compute/public-cloud-first-steps)
 
 ## Instructions
 
