@@ -41,7 +41,7 @@ Pour des instructions détaillées sur la sécurisation de votre compte OVHcloud
    - **Exemple** : Si vous déménagez à une nouvelle adresse, mettez immédiatement à jour votre profil avec les nouvelles coordonnées.
 
 2. **Changer l'Adresse Email Principale**
-   - **Processus** : Validez le changement en utilisant un code envoyé à votre email actuel. Entrez le code dans le Tableau de Bord pour confirmer la mise à jour&#8203;:citation[oaicite:6]{index=6}&#8203;.
+   - **Processus** : Validez le changement en utilisant un code envoyé à votre email actuel. Entrez le code dans le Tableau de Bord pour confirmer la mise à jour.
    - **Exemple** : Si vous devez changer votre email de `ancien@example.com` à `nouveau@example.com`, OVHcloud enverra un code de validation à `ancien@example.com` pour confirmer le changement.
 
 ### Étape 3: Déléguer l'Accès
