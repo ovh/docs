@@ -41,7 +41,7 @@
 - [How to set up a web server (LAMP) on Debian or Ubuntu](https://help.ovhcloud.com/csm/en-dedicated-servers-setup-lamp-debian-ubuntu?id=kb_article_view&sysparm_article=KB0043611)
 - [OVHcloud 3-AZ Region - Service presentation](https://help.ovhcloud.com/csm/en-dedicated-servers-3az-cluster?id=kb_article_view&sysparm_article=KB0063271)
 - [OVHcloud API and OS Installation](https://help.ovhcloud.com/csm/en-dedicated-servers-api-os-installation?id=kb_article_view&sysparm_article=KB0061951)
-##### Conceptions
+##### Concepts
 - `EMPTY`
 ##### Performances
 - [Hardware upgrade on a High Grade or Scale dedicated server](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-hardware-upgrade-hg-scale?id=kb_article_view&sysparm_article=KB0060745)
@@ -137,7 +137,7 @@
 - [Tutorial - Configuring pfSense network bridge](https://help.ovhcloud.com/csm/en-dedicated-servers-pfsense-bridging?id=kb_article_view&sysparm_article=KB0043897)
 - [Using an IP Block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043339)
 - [Using Jumbo Frames on a dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-network-jumbo?id=kb_article_view&sysparm_article=KB0043202)
-##### Conceptions
+##### Concepts
 - [ESXi Network configuration on HG and Scale servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-esxi-network-hg-scale?id=kb_article_view&sysparm_article=KB0043420)
 - [Proxmox Network configuration on HG and Scale servers](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-proxmox-network-hg-scale?id=kb_article_view&sysparm_article=KB0043909)
 ##### Performances
@@ -179,7 +179,7 @@
 - [OLA for Netboot](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-ola-netboot?id=kb_article_view&sysparm_article=KB0057768)
 - [OLA for SLES 15](https://help.ovhcloud.com/csm/en-dedicated-servers-ola-sles15?id=kb_article_view&sysparm_article=KB0057041)
 - [OLA for Windows Server 2019](https://help.ovhcloud.com/csm/en-dedicated-servers-ola-w2k19?id=kb_article_view&sysparm_article=KB0043856)
-###### Conceptions
+###### Concepts
 - `EMPTY`
 ###### Performances
 - `EMPTY`
@@ -234,7 +234,7 @@
 - [OVHcloud API & Partitioning](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-api-partitioning?id=kb_article_view&sysparm_article=KB0043895)
 - [Store and retrieve data via SFTP](https://help.ovhcloud.com/csm/en-dedicated-servers-store-retrieve-data-via-sftp?id=kb_article_view&sysparm_article=KB0043326)
 - [Veeam Enterprise Server Backup Preparation](https://help.ovhcloud.com/csm/en-veeam-enterprise-server-backup-preparation?id=kb_article_view&sysparm_article=KB0062499)
-##### Conceptions
+##### Concepts
 - `EMPTY`
 ##### Performances        
 - [Configuring MegaRAID for RAID Level 0](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-using-the-maximum-amount-of-disk-space?id=kb_article_view&sysparm_article=KB0043648)
@@ -294,7 +294,7 @@
 - `EMPTY`
 ##### Deployments
 - `EMPTY`
-##### Conceptions
+##### Concepts
 - `EMPTY`
 ##### Performances
 - `EMPTY`
@@ -318,7 +318,7 @@
 ##### Deployments
 - [Cancelling an Additional IP](https://help.ovhcloud.com/csm/en-ie-network-additional-ip-cancel?id=kb_article_view&sysparm_article=KB0054512)
 - [Network IP aliasing](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-network-ipaliasing?id=kb_article_view&sysparm_article=KB0043752)
-##### Conceptions
+##### Concepts
 - `EMPTY`
 ##### Performances
 - `EMPTY`
@@ -396,7 +396,7 @@
 - [Network IPv6](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-network-ipv6?id=kb_article_view&sysparm_article=KB0030803)
 - [Using an IP Block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043339)
 - [vRack for PCI DSS](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-vrack-pci-ds?id=kb_article_view&sysparm_article=KB0043354)
-##### Conceptions
+##### Concepts
 - [vRack Services - Global Concept](https://help.ovhcloud.com/csm/en-ie-network-vrack-services-global-concept?id=kb_article_view&sysparm_article=KB0062698)
 ##### Performances
 - [Using Jumbo Frames on a dedicated server](https://help.ovhcloud.com/csm/en-dedicated-servers-network-jumbo?id=kb_article_view&sysparm_article=KB0043202)
@@ -424,7 +424,7 @@
 - [OLA for Netboot](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-ola-netboot?id=kb_article_view&sysparm_article=KB0057768)
 - [OLA for SLES 15](https://help.ovhcloud.com/csm/en-dedicated-servers-ola-sles15?id=kb_article_view&sysparm_article=KB0057041)
 - [OLA for Windows Server 2019](https://help.ovhcloud.com/csm/en-dedicated-servers-ola-w2k19?id=kb_article_view&sysparm_article=KB0043856)
-##### Conceptions
+##### Concepts
 - `EMPTY`
 ##### Performances
 - `EMPTY`
@@ -459,7 +459,7 @@
 - [OVHcloud Connect - Layer 2](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-layer2?id=kb_article_view&sysparm_article=KB0045242)
 - [OVHcloud Connect - Layer 3](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-layer3?id=kb_article_view&sysparm_article=KB0045254)
 - [OVHcloud Connect Overview](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-overview?id=kb_article_view&sysparm_article=KB0045216)
-##### Conceptions
+##### Concepts
 - [OVHcloud Connect - Layer 2](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-layer2?id=kb_article_view&sysparm_article=KB0045242)
 - [OVHcloud Connect - Layer 3](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-layer3?id=kb_article_view&sysparm_article=KB0045254)
 - [OVHcloud Connect Limits](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-limits?id=kb_article_view&sysparm_article=KB0045257)
@@ -487,7 +487,7 @@
 - `EMPTY`
 ##### Deployments
 - [Bring Your Own IP](https://help.ovhcloud.com/csm/en-ie-network-bring-your-own-ip?id=kb_article_view&sysparm_article=KB0044851)
-##### Conceptions
+##### Concepts
 - `EMPTY`
 ##### Performances
 - `EMPTY`
@@ -512,7 +512,7 @@
 - [OVHcloud Security Dashboard](https://help.ovhcloud.com/csm/en-ie-network-security-dashboard?id=kb_article_view&sysparm_article=KB0060698)
 ##### Deployments
 - `EMPTY`
-##### Conceptions
+##### Concepts
 - `EMPTY`
 ##### Performances
 - `EMPTY`
