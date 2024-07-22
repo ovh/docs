@@ -44,20 +44,16 @@ To manage users and delegate access to your OVHcloud account, please refer to th
 ### Step 4: Best Practices for Structuring Public Cloud Projects
 
 1. **Establish Landing Zones**
-   - **Purpose**: Create scalable and secure multi-account environments to isolate resources and manage growth efficiently. [Guide on creating Public Cloud projects](https://help.ovhcloud.com/csm/en-public-cloud-compute-create-project?id=kb_article_view&sysparm_article=KB0050599).
+   - **Purpose**: Create scalable and secure multi-account environments to isolate resources and manage growth efficiently. [Guide on creating Public Cloud projects](/pages/public_cloud/compute/create_a_public_cloud_project/).
    - **Example**: Set up separate accounts for different departments like HR, Finance, and Development to ensure data isolation and security.
-
-![Landing Zone Diagram](https://www.ovhcloud.com/cdn/www.ovhcloud.com/images/content/OVHcloud_public_cloud_diagram.jpg)
 
 2. **Use Multiple Accounts**
    - **Strategy**: Separate resources and workloads into different accounts based on business units, applications, or environments (development, staging, production).
    - **Example**: Use one account for development and another for production to prevent accidental interference between environments.
 
 3. **Organize by Applications and Environments**
-   - **Implementation**: Use VRacks to securely connect resources across different environments. Implement network segmentation to protect sensitive data. [Guide on connecting Public Cloud instances](https://help.ovhcloud.com/csm/en-gb-public-cloud-compute-getting-started?id=kb_article_view&sysparm_article=KB0051017).
+   - **Implementation**: Use VRacks to securely connect resources across different environments. Implement network segmentation to protect sensitive data. [Guide on connecting Public Cloud instances](/pages/public_cloud/compute/public-cloud-first-steps/).
    - **Example**: Segment your CRM application into development, testing, and production environments, each with its own network policies and security controls.
-
-![Network Segmentation Diagram](https://www.ovhcloud.com/cdn/www.ovhcloud.com/images/content/OVHcloud_network_segmentation.jpg)
 
 4. **Consistent Tagging**
    - **Usage**: Tag resources for efficient management, billing, and compliance tracking. Note that tagging is currently available only for certain resources.
@@ -66,10 +62,7 @@ To manage users and delegate access to your OVHcloud account, please refer to th
 ### Complete Documentation on VRacks and Private Networks
 
 For more details on VRack and private network configurations, refer to the following guides:
-- [Using VRacks with Public Cloud](https://docs.ovh.com/gb/en/public-cloud/using-vrack-public-cloud/)
-- [VRack Guide](https://docs.ovh.com/gb/en/dedicated/vrack/)
-
-![VRack Configuration](https://www.ovhcloud.com/cdn/www.ovhcloud.com/images/content/OVHcloud_vrack_configuration.jpg)
+- [Using VRacks with Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack/)
 
 ## Go further
 
