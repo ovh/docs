@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Audit des cas particuliers de migration vers VCD"
 excerpt: "Découvrez les méthodes d'examen des scénarios difficiles au sein de vos services vSphere/vCenter managé OVHcloud, en préparation à une migration vers VCD"
-updated: 2024-07-19
+updated: 2024-07-22
 ---
 
 <style>
