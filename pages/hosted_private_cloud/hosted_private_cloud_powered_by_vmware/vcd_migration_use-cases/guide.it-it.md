@@ -1,7 +1,7 @@
 ---
 title: 'VMware Cloud Director - Audit tricky use cases of migration to VCD'
 excerpt: 'Discover the methods for examining the tricky scenarios within your vSphere/vCenter OVHcloud managed workflows, in preparation for a VCD migration'
-updated: 2024-07-19
+updated: 2024-07-22
 ---
 
 <style>
