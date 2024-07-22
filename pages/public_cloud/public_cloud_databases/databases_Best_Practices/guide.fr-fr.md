@@ -38,9 +38,8 @@ Pour vérifier et mettre à jour vos informations personnelles ou pour changer v
 
 ### Étape 3: Déléguer l'Accès
 
-1. **Gestion des Utilisateurs**
-   - **Délégation** : Utilisez la fonctionnalité "Gestion des Utilisateurs" dans le Tableau de Bord pour accorder des accès aux membres de l'équipe avec les autorisations appropriées. Cela aide à maintenir la sécurité tout en permettant un accès nécessaire.
-   - **Exemple** : Accordez un accès "lecture seule" à un comptable pour consulter les informations de facturation sans lui donner la possibilité de modifier quoi que ce soit.
+Pour gérer les utilisateurs et déléguer l'accès à votre compte OVHcloud, veuillez vous référer au guide officiel : [Gestion des utilisateurs OVHcloud](https://docs.ovh.com/fr/customer/ovhcloud-users-management/).
+
 
 ### Étape 4: Meilleures Pratiques pour Structurer les Projets Cloud Publics
 
