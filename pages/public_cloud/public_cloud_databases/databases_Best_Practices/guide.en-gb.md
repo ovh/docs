@@ -1,6 +1,6 @@
 ---
-title: Securing my OVHcloud account and managing my personal information
-excerpt: Find out how to optimise your OVHcloud account security, manage your personal information, and delegate access to your account
+title: 'Securing my OVHcloud account and managing my personal information'
+excerpt: 'Find out how to optimise your OVHcloud account security, manage your personal information, and delegate access to your account'
 updated: 2023-12-08
 ---
 
@@ -17,22 +17,7 @@ updated: 2023-12-08
 
 ### Step 1: Securing Your Account
 
-For detailed instructions on securing your OVHcloud account, please refer to the [official guide](https://help.ovhcloud.com/csm/en-gb-account-secure-account-personal-data?id=kb_article_view&sysparm_article=KB0042918).
-
-#### Enable Two-Factor Authentication (2FA)
-- **What it does**: Adds an extra layer of security by requiring a second form of verification (e.g., mobile app, security key) in addition to your password.
-- **How to enable**: Log in to your OVHcloud Control Panel, navigate to the Security tab, and follow the steps to set up 2FA using a mobile app or security key. Ensure you store your backup codes securely. [Detailed 2FA guide](https://support.us.ovhcloud.com/hc/en-us/articles/360013968099-Securing-an-Account-with-Two-Factor-Authentication).
-- **Example**: If you use a U2F security key, you will plug it into your USB port each time you log in, providing an additional security measure beyond your password.
-
-#### Set Strong Passwords
-- **Requirements**: At least nine characters, including upper and lower case letters, numbers, and special characters. Avoid personal information and dictionary words.
-- **Management**: Use a password manager like KeePass or Bitwarden to store and generate strong passwords. Regularly update your password and ensure it is unique for each service. [Password management guide](https://help.ovhcloud.com/csm/en-account-manage-password?id=kb_article_view&sysparm_article=KB0042985).
-- **Example**: A strong password could be `A1b2C3!d4#e5F6`.
-
-#### Add a Backup Email Address
-- **Importance**: Helps recover access to your account if the primary email is inaccessible.
-- **Configuration**: Add a backup email in the OVHcloud Control Panel under your profile settings, ensuring it differs from your primary email address. [Guide on managing personal information](https://help.ovhcloud.com/csm/en-gb-account-secure-account-personal-data?id=kb_article_view&sysparm_article=KB0042918).
-- **Example**: If your primary email is `user@example.com`, use a different email like `user.backup@example.com` as a backup.
+For detailed instructions on securing your OVHcloud account with two-factor authentication (2FA), please refer to the official guide: [Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/gb/en/customer/securing-ovhcloud-account-with-2fa/).
 
 ### Step 2: Managing Personal Information
 
