@@ -8,6 +8,19 @@ updated: 2023-12-08
 
 **This guide explains how to secure your OVHcloud account, manage your personal information, and implement best practices for structuring your Public Cloud projects.**
 
+#### Enable Two-Factor Authentication (2FA)
+- **What it does**: Adds an extra layer of security by requiring a second form of verification (e.g., mobile app, security key) in addition to your password.
+- **How to enable**: Log in to your OVHcloud Control Panel, go to the Security tab, and follow the steps to set up 2FA using a mobile app or security key. Ensure you store your backup codes securely. [Detailed 2FA guide](https://support.us.ovhcloud.com/hc/en-us/articles/360013968099-Securing-an-Account-with-Two-Factor-Authentication).
+- **Example**: If you use a U2F security key, you will plug it into your USB port each time you log in, providing an additional security measure beyond your password.
+
+#### Set Strong Passwords
+- **Requirements**: At least nine characters, including upper and lower case letters, numbers, and special characters. Avoid personal information and dictionary words.
+- **Management**: Use a password manager like KeePass or Bitwarden to store and generate strong passwords. Regularly update your password and ensure it is unique for each service. [Password management guide](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+#### Add a Backup Email Address
+- **Importance**: Helps recover access to your account if the primary email is inaccessible.
+- **Configuration**: Add a backup email in the OVHcloud Control Panel under your profile settings, ensuring it differs from your primary email address. [Guide on managing personal information](pages/account_and_service_management/account_information/all_about_username/).
+
 ## Requirements
 
 - An active OVHcloud account
@@ -17,11 +30,11 @@ updated: 2023-12-08
 
 ### Step 1: Securing Your Account
 
-For detailed instructions on securing your OVHcloud account with two-factor authentication (2FA), please refer to the official guide: [Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/gb/en/customer/securing-ovhcloud-account-with-2fa/).
+For detailed instructions on securing your OVHcloud account with two-factor authentication (2FA), please refer to the official guide: [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/all_about_username).
 
 ### Step 2: Managing Personal Information
 
-To verify and update your personal information or to change your primary email address, please refer to the official guide: [All about username](https://docs.ovh.com/gb/en/customer/all-about-username/).
+To verify and update your personal information or to change your primary email address, please refer to the official guide: [All about username](/pages/account_and_service_management/account_information/all_about_username).
 
 ### Step 3: Delegating Access
 
