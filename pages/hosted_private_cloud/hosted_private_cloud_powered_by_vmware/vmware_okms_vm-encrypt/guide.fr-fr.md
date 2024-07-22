@@ -1,7 +1,7 @@
 ---
-title:'Activation du chiffrement de VM avec le KMS OVHcloud'
+title:'Enabling VM encryption with OVHcloud KMS'
 excerpt:'Découvrez comment protégez votre confidentialité et activer le chiffrement de vos machines virtuelles Hosted Private Cloud avec la solution KMS OVHcloud'
-updated: 2024-07-18
+updated: 2024-07-22
 ---
 <style>
 details>summary {

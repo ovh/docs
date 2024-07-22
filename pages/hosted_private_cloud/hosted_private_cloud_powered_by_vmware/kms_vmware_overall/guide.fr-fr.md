@@ -1,7 +1,7 @@
 ---
 title: 'Intégration d'un KMS pour VMware on OVHcloud'
 excerpt: 'Découvrez comment intégrer un KMS au sein de Hosted Private Cloud VMware on OVHcloud pour sécuriser efficacement vos données sensibles'
-updated: 2024-07-18
+updated: 2024-07-22
 ---
 <style>
 details>summary {
