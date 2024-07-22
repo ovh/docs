@@ -1,14 +1,12 @@
 ---
 title: "Comment utiliser la console IPMI avec un serveur dédié"
 excerpt: "Découvrez comment vous connecter à votre serveur depuis votre espace client sans utiliser de logiciel externe"
-updated: 2024-03-01
+updated: 2024-07-23
 ---
 
 ## Objectif
 
-La console IPMI (Intelligent Platform Management Interface) permet d’établir une connexion directe à votre serveur dédié sans utiliser un logiciel externe (un terminal ou PuTTY, par exemple). Ce guide vous explique comment démarrer cette console.
-
-À noter que vous y rencontrerez aussi le terme KVM (Keyboard Video and Mouse), qui est notamment employé par les VPS pour cette solution.
+La console IPMI (Intelligent Platform Management Interface) permet d’établir une connexion directe à votre serveur dédié sans dépendre de l'état de connectivité du système d'exploitation. Ce guide vous explique comment démarrer cette console.
 
 ## Prérequis
 
@@ -23,68 +21,94 @@ La console IPMI (Intelligent Platform Management Interface) permet d’établir 
 
 ## En pratique
 
-La connexion à l’IPMI peut s’effectuer principalement via plusieurs méthodes : l’applet Java (conseillé) ou le navigateur (Serial over LAN).
+La connexion à l’IPMI peut s’effectuer via plusieurs méthodes¹. En voici un tableau récapitulatif :
 
-- **Applet Java** : permet d'utiliser un outil KVM (clavier, vidéo, souris) via une console Java pour effectuer les actions souhaitées. Il existe ici deux options, à savoir clavier et souris.
+|Nom Méthode|Autre Nom|Description|Copier-Coller|Lecteur ISO Virtuel²|Exemples de cas d'utilisation|
+|---|---|---|---|---|---|
+|**KVM**³ via **navigateur Web**|**KVM HTML**|Emulation de l'écran vidéo à travers un **canvas HTML**, exactement comme si vous connectiez physiquement un clavier/souris en USB et un écran vidéo en VGA à votre serveur dédié.|❌|⚠️⁴|- Diagnostiquer un problème de boot du serveur dédié.|
+|**KVM**³ via **applet Java**|**KVM Java**|Idem que pour le KVM HTML, à l'exception que l'émulation s'effectue via un **applet Java** à la place du canvas HTML.|❌|✅|- Diagnostiquer un problème de boot du serveur dédié<br />- Effectuer une installation d'un OS spécifique (hors [catalogue](https://www.ovhcloud.com/fr/bare-metal/os/)) manuellement⁵.|
+|**SoL**⁶ via **navigateur Web**|**SoL JavaScript**|Emulation d'une liaison série via le navigateur web, exactement comme si vous connectiez un console série physiquement en RS-232 à votre serveur dédié.|✅|❌|- Diagnostiquer un problème réseau : récupérer les logs et manipuler les fichiers de configuration.|
+|**SoL**⁶ via **SSH**|**SoL SSH**|Idem que pour le SoL JavaScript, à l'exception que l'émulation s'effectue via une passerelle SSH. Vous vous connectez avec votre client SSH favoris à un serveur distant en SSH, qui transpose ensuite les commandes en liaison série au serveur dédié.|✅|❌|- Idem SoL JavaScript mais depuis une machine qui n'a pas d'interface graphique.|
 
-- **Navigateur (Serial over LAN)** : permet d'accéder à distance à la console du serveur, via un navigateur web.
+¹ Selon la compatibilité matérielle de votre serveur dédié (certaines méthodes ne seront pas affichées dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).<br />
+² Fonctionnalité permettant de monter une image ISO stockée localement sur votre machine au serveur dédié distant, et donc d'installer un OS via l'IPMI.<br />
+³ KVM = Keyboard Video and Mouse<br />
+⁴ Selon la compatibilité matérielle de votre serveur dédié : utiliser le KVM Java à la place si incompatible.<br />
+⁵ Si l'OS que vous souhaitez installer n'est pas disponible dans le [catalogue des systèmes d'exploitation disponibles sur les serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/os/), notez que vous pouvez aussi utiliser une image personnalisée: voir [Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) pour plus de détails.<br />
+⁶ SoL = Serial over Lan
 
-- Une troisième méthode, uniquement disponible pour les serveurs les plus récents, permet d'utiliser un outil KVM depuis un navigateur web.
+Pour activer l'une de ces méthodes, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans la partie `Bare Metal Cloud`{.action}, cliquez sur `Serveurs dédiés`{.action} et sélectionnez votre serveur puis cliquez sur l'onglet `IPMI/KVM`{.action}.
 
-Pour activer l'une de ces méthodes, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans la partie `Bare Metal Cloud`{.action}, cliquez sur `Serveurs dédiés`{.action} et sélectionnez votre serveur puis cliquez sur l'onglet `IPMI`{.action}.
-
-### Se connecter avec l’applet Java <a name="applet-java"></a>
+### Ouvrir un KVM via applet Java <a name="applet-java"></a>
 
 Pour que l’applet Java fonctionne, il faut que Java soit installé sur votre poste. Si ce n’est pas déjà fait, rendez-vous sur la [page officielle](https://www.java.com/en/download/){.external}.
 
-Dans la partie `IPMI`{.action} de votre espace client OVHcloud, cliquez sur `Depuis une applet Java (KVM)`{.action} :
+Dans la section `Remote KVM`{.action} de votre espace client OVHcloud, cliquez sur `Depuis une applet Java (KVM)`{.action} :
 
-![IPMI Java initié](images/java_ipmi_initiate_2022.png){.thumbnail}
+![Accès KVM Java](images/ipmi-kvm-java-01.png){.thumbnail}
 
 Téléchargez le fichier `kvm.jnlp` lorsque vous y êtes invité, puis lancez-le :
 
-![Ouverture IPMI Java](images/java_ipmi_activation.png){.thumbnail}
+![Ouverture KVM Java](images/ipmi-kvm-java-02.png){.thumbnail}
 
 Vous accédez alors à la page de connexion. Entrez vos identifiants `root`, comme lors d’une connexion par un terminal ou un logiciel externe :
 
-![Connexion Java IPMI](images/java_ipmi_login.png){.thumbnail}
+![Aperçu KVM Java](images/ipmi-kvm-java-03.png){.thumbnail}
 
 Vous pouvez désormais gérer votre serveur.
 
-### Utiliser le KVM via votre navigateur web (uniquement pour les serveurs les plus récents) <a name="kvm-browser"></a>
+### Ouvrir un KVM via navigateur Web <a name="kvm-browser"></a>
 
-Dans la partie `IPMI`{.action} de votre espace client OVHcloud, cliquez sur `Depuis votre navigateur (KVM)`{.action} :
+Dans la section `Remote KVM`{.action} de votre espace client OVHcloud, cliquez sur `Depuis votre navigateur (KVM)`{.action} :
 
-![IPMI navigateur](images/KVM-web-browser01.png){.thumbnail}
+![Accès KVM HTML](images/ipmi-kvm-html-01.png){.thumbnail}
 
 L'activation prend quelques secondes. Un message vous informera de la disponibilité de la connexion via IPMI.
 
-![IPMI navigateur](images/KVM-web-browser02.png){.thumbnail}
+![Ouverture KVM HTML](images/ipmi-kvm-html-02.png){.thumbnail}
 
 Cliquez alors sur `Accéder à la console (KVM)`{.action} pour ouvrir la console dans votre navigateur.
 
-![IPMI navigateur](images/KVM-web-browser03b.png){.thumbnail}
+![Aperçu KVM HTML](images/ipmi-kvm-html-03.png){.thumbnail}
 
-### Se connecter depuis votre navigateur en Serial over LAN (SoL)
+### Ouvrir SoL via SSH <a name="sol-ssh"></a>
 
-Même si nous vous recommandons de vous connecter via l'applet Java, vous pouvez également utiliser l'IPMI en Serial over LAN (SoL). Pour ce faire, cliquez sur `Depuis votre navigateur (SoL)`{.action} dans la partie `IPMI`{.action} de votre espace client.
+Pour plus de détails concernant la création de paires de clés SSH, voir [cette page](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
 
-![Activation de la déclaration d'intégrité IPMI](images/sol_ipmi_activation_2022.png){.thumbnail}
+Dans la section `Serial over LAN (SoL)`{.action} de votre espace client OVHcloud, cliquez sur `Ajouter la clé SSH`{.action}.
 
-> [!warning]
->
-> La connexion en SoL peut nécessiter plusieurs minutes, raison pour laquelle l’applet Java est conseillée.
->
+![Accès SoL SSH](images/ipmi-sol-sshkey-01.png){.thumbnail}
 
-### Tester et redémarrer l'IPMI
+Une popup s'ouvre alors afin que vous puissiez saisir la clé publique SSH avec laquelle vous souhaitez vous authentifier pour vous connecter. Ensuite, cliquez sur `Lancer la session SoL via SSH`{.action}.
+
+![SoL SSH clé publique SSH](images/ipmi-sol-sshkey-02.png){.thumbnail}
+
+Lorsque la session est prête un message de confirmation et une URI apparaît alors, afin que vous puissiez établir une connexion série à votre serveur dédié via SSH. Copier cette URI dans votre presse-papier.
+
+![Ouverture SoL SSH](images/ipmi-sol-sshkey-03.png){.thumbnail}
+
+Pour plus de détails concernant l'utilisation d'une clé SSH pour se connecter en SSH, voir [cette page](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys).
+
+### Ouvrir SoL via navigateur Web <a name="sol-browser"></a>
+
+Dans la section `Serial over LAN (SoL)`{.action} de votre espace client OVHcloud, cliquez sur `Depuis votre navigateur (SoL)`{.action}.
+
+![Accès SoL JavaScript](images/ipmi-sol-html-01.png){.thumbnail}
+
+> [!primary]
+> Si la bascule vers la popup ne se fait pas automatiquement, vous pouvez toujours cliquez sur le bouton `Accéder à la console (SoL)`{.action}.
+
+![Ouverture SoL JavaScript](images/ipmi-sol-html-02.png){.thumbnail}
+
+### Tester et redémarrer l'IPMI <a name="ipmi-test-reboot"></a>
 
 Il est possible que l’IPMI ne réponde plus. Si vous n’arrivez pas à y accéder, vous pouvez effectuer un test dans un premier temps en cliquant sur `Tester IPMI`{.action} et visualiser le résultat du diagnostic :
 
-![Test IPMI](images/ipmi_test_2022.png){.thumbnail}
+![Test IPMI](images/ipmi-test.png){.thumbnail}
 
 Si tout est normal comme dans notre exemple, vous faites probablement face à un souci local (connexion à Internet, poste local). Si l’IPMI rencontre effectivement une difficulté, vous avez la possibilité de le redémarrer en cliquant sur `Redémarrer IPMI`{.action}.
 
-![Test IPMI](images/ipmi_reboot_2022.png){.thumbnail}
+![Reboot IPMI](images/ipmi-reboot.png){.thumbnail}
 
 Le redémarrage de l'IPMI prend quelques minutes.
 
