@@ -335,26 +335,48 @@
 
 ## Network > OVHcloud Load Balancer
 #### Getting started
-- `EMPTY`
+- [Introduction to Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-loadbalancer-introduction?id=kb_article_view&sysparm_article=KB0044252)
 #### Configuration
 ##### Administration
-- `EMPTY`
+- [Introduction to Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-loadbalancer-introduction?id=kb_article_view&sysparm_article=KB0044252)
+- [IP Load Balancer API Reference](https://help.ovhcloud.com/csm/fr-load-balancer-iplb-api-reference?id=kb_article_view&sysparm_article=KB0044241)
+- [IP Load Balancer API Details](https://help.ovhcloud.com/csm/fr-load-balancer-api-details?id=kb_article_view&sysparm_article=KB0044237)
+- [Order a Free Certificate for IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-order-freecertificate?id=kb_article_view&sysparm_article=KB0044212)
+- [Retrieve the state of servers with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-retrieve-servers-state?id=kb_article_view&sysparm_article=KB0044218)
+- [Balancing traffic with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-balancing?id=kb_article_view&sysparm_article=KB0044142)
+- [Configure IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-configure-iplb?id=kb_article_view&sysparm_article=KB0044165)
+- [Configure IP Load Balancer with vRack](https://help.ovhcloud.com/csm/fr-load-balancer-configure-vrack?id=kb_article_view&sysparm_article=KB0044261)
+- [Configuring Probes with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-probes?id=kb_article_view&sysparm_article=KB0044170)
 ##### Deployments
-- `EMPTY`
-##### Conceptions
-- `EMPTY`
+- [Using IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-using-iplb?id=kb_article_view&sysparm_article=KB0044229)
+- [HTTP/2 support for IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-lb-http2?id=kb_article_view&sysparm_article=KB0044123)
+- [Configuring IP Load Balancer for SMTP traffic](https://help.ovhcloud.com/csm/fr-load-balancer-case-smtp?id=kb_article_view&sysparm_article=KB0044134)
+- [HTTP headers configuration with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-http-headers?id=kb_article_view&sysparm_article=KB0044159)
+- [Redirect location with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-redirect-location?id=kb_article_view&sysparm_article=KB0044184)
+- [IP Load Balancer Zones](https://help.ovhcloud.com/csm/fr-load-balancer-zones?id=kb_article_view&sysparm_article=KB0044269)
+- [Routing FO IP with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-routing-foip?id=kb_article_view&sysparm_article=KB0044209)
+- [Configuring Routes with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-routes?id=kb_article_view&sysparm_article=KB0044195)
+##### Concepts
+- [HTTP/2 support for IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-lb-http2?id=kb_article_view&sysparm_article=KB0044123)
+- [HTTP headers configuration with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-http-headers?id=kb_article_view&sysparm_article=KB0044159)
+- [IP Load Balancer Stickiness](https://help.ovhcloud.com/csm/fr-load-balancer-iplb-stickiness?id=kb_article_view&sysparm_article=KB0044201)
+- [Proxy Protocol with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-proxyprotocol?id=kb_article_view&sysparm_article=KB0044180)
 ##### Performances
 - `EMPTY`
 #### Migrations
 - `EMPTY`
 #### Tutorials
-- `EMPTY`
+- [Blue-Green Deployment with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-blue-green?id=kb_article_view&sysparm_article=KB0044116)
+- [Configuring IP Load Balancer for SMTP traffic](https://help.ovhcloud.com/csm/fr-load-balancer-case-smtp?id=kb_article_view&sysparm_article=KB0044134)
 #### Security
 - `EMPTY`
 #### Support / Troubleshooting
-- `EMPTY`
+- [IP Load Balancer FAQ](https://help.ovhcloud.com/csm/fr-load-balancer-iplb-faq?id=kb_article_view&sysparm_article=KB0044152)
+- [Retrieve the state of servers with IP Load Balancer](https://help.ovhcloud.com/csm/fr-load-balancer-retrieve-servers-state?id=kb_article_view&sysparm_article=KB0044218)
 #### Additional Resources        
-- `EMPTY`
+- [IP Load Balancer API Reference](https://help.ovhcloud.com/csm/fr-load-balancer-iplb-api-reference?id=kb_article_view&sysparm_article=KB0044241)
+- [IP Load Balancer API Details](https://help.ovhcloud.com/csm/fr-load-balancer-api-details?id=kb_article_view&sysparm_article=KB0044237)
+
 
 ## Network > Private Network (vRack)
 #### Getting started
