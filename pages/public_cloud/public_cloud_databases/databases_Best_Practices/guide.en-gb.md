@@ -1,7 +1,7 @@
 ---
-title: 'Securing my OVHcloud account and managing my personal information'
-excerpt: 'Find out how to optimise your OVHcloud account security, manage your personal information, and delegate access to your account'
-updated: 2023-12-08
+title: 'Best Practices for Structuring OVHcloud Public Cloud Projects'
+excerpt: 'Learn how to optimize your OVHcloud account security, manage your personal information, and efficiently structure your Public Cloud projects'
+updated: 2024-07-22
 ---
 
 ## Objective
