@@ -55,10 +55,6 @@ Pour gérer les utilisateurs et déléguer l'accès à votre compte OVHcloud, ve
    - **Mise en œuvre** : Utilisez les VRacks pour connecter les ressources de manière sécurisée à travers différents environnements. Mettez en œuvre la segmentation du réseau pour protéger les données sensibles. [Guide sur la connexion des instances Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps/).
    - **Exemple** : Segmentez votre application CRM en environnements de développement, de test et de production, chacun avec ses propres politiques et contrôles de sécurité réseau.
 
-4. **Tagging Consistant**
-   - **Utilisation** : Étiquetez les ressources pour une gestion efficace, la facturation et le suivi de conformité. Notez que le tagging est actuellement disponible uniquement pour certaines ressources.
-   - **Exemple** : Utilisez des tags comme `Projet:CRM`, `Environnement:Production`, et `Propriétaire:Marketing` pour organiser et suivre les ressources.
-
 ### Documentation Complète sur les VRacks et les Réseaux Privés
 
 Pour plus de détails sur les configurations de VRacks et de réseaux privés, veuillez consulter les guides suivants :
