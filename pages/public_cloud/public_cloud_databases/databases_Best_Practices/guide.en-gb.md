@@ -21,13 +21,7 @@ For detailed instructions on securing your OVHcloud account with two-factor auth
 
 ### Step 2: Managing Personal Information
 
-1. **Verify and Update Information**
-   - **Steps**: Go to "My Account" in the Control Panel, click on "Personal Information," and ensure all details are accurate. Regularly update these details to avoid issues with support or service access.
-   - **Example**: If you move to a new address, update your profile immediately with the new address details.
-
-2. **Change Primary Email Address**
-   - **Process**: Validate the change using a code sent to your current email. Enter the code in the Control Panel to confirm the update.
-   - **Example**: If you need to change your email from `old@example.com` to `new@example.com`, OVHcloud will send a validation code to `old@example.com` to confirm the change.
+To verify and update your personal information or to change your primary email address, please refer to the official guide: [All about username](https://docs.ovh.com/gb/en/customer/all-about-username/).
 
 ### Step 3: Delegating Access
 
