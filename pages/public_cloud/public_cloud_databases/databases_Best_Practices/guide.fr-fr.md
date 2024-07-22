@@ -30,7 +30,7 @@ Pour des instructions détaillées sur la sécurisation de votre compte OVHcloud
 
 #### Ajouter une Adresse Email de Secours
 - **Importance** : Aide à récupérer l'accès à votre compte si l'email principal est inaccessible.
-- **Configuration** : Ajoutez une adresse email de secours dans le Tableau de Bord OVHcloud sous les paramètres de votre profil, en veillant à ce qu'elle diffère de votre adresse principale. [Guide sur la gestion des informations personnelles](https://help.ovhcloud.com/csm/en-gb-account-secure-account-personal-data?id=kb_article_view&sysparm_article=KB0042918).
+- **Configuration** : Ajoutez une adresse email de secours dans le Tableau de Bord OVHcloud sous les paramètres de votre profil, en veillant à ce qu'elle diffère de votre adresse principale. [Guide sur la gestion des informations personnelles](/pages/account_and_service_management/account_information/all_about_username/).
 
 ### Étape 2: Gérer les Informations Personnelles
 
@@ -38,7 +38,7 @@ Pour vérifier et mettre à jour vos informations personnelles ou pour changer v
 
 ### Étape 3: Déléguer l'Accès
 
-Pour gérer les utilisateurs et déléguer l'accès à votre compte OVHcloud, veuillez vous référer au guide officiel : [Gestion des utilisateurs OVHcloud](https://docs.ovh.com/fr/customer/ovhcloud-users-management/).
+Pour gérer les utilisateurs et déléguer l'accès à votre compte OVHcloud, veuillez vous référer au guide officiel : [Gestion des utilisateurs OVHcloud](pages/account_and_service_management/account_information/ovhcloud-users-management/).
 
 
 ### Étape 4: Meilleures Pratiques pour Structurer les Projets Cloud Publics
