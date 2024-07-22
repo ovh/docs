@@ -25,9 +25,8 @@ To verify and update your personal information or to change your primary email a
 
 ### Step 3: Delegating Access
 
-1. **User Management**
-   - **Delegation**: Use the "User Management" feature in the Control Panel to grant access to team members with appropriate permissions. This helps maintain security while allowing necessary access.
-   - **Example**: Grant "read-only" access to an accountant to view billing information without giving them the ability to make changes.
+To manage users and delegate access to your OVHcloud account, please refer to the official guide: [OVHcloud Users Management](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+
 
 ### Step 4: Best Practices for Structuring Public Cloud Projects
 
