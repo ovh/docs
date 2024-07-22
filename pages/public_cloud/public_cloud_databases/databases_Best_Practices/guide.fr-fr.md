@@ -27,7 +27,6 @@ Pour des instructions détaillées sur la sécurisation de votre compte OVHcloud
 #### Définir des Mots de Passe Robustes
 - **Exigences** : Au moins neuf caractères, incluant des lettres majuscules et minuscules, des chiffres et des caractères spéciaux. Évitez les informations personnelles et les mots du dictionnaire.
 - **Gestion** : Utilisez un gestionnaire de mots de passe comme KeePass ou Bitwarden pour stocker et générer des mots de passe robustes. Mettez régulièrement à jour votre mot de passe et assurez-vous qu'il est unique pour chaque service. [Guide sur les mots de passe](/pages/account_and_service_management/account_information/manage-ovh-password).
-- **Exemple** : Un mot de passe robuste pourrait être `A1b2C3!d4#e5F6`.
 
 #### Ajouter une Adresse Email de Secours
 - **Importance** : Aide à récupérer l'accès à votre compte si l'email principal est inaccessible.
