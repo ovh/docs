@@ -17,7 +17,7 @@ updated: 2023-12-08
 
 ### Étape 1: Sécuriser Votre Compte
 
-Pour des instructions détaillées sur la sécurisation de votre compte OVHcloud, veuillez consulter le [guide officiel](https://help.ovhcloud.com/csm/en-gb-account-secure-account-personal-data?id=kb_article_view&sysparm_article=KB0042918).
+Pour des instructions détaillées sur la sécurisation de votre compte OVHcloud, veuillez consulter le [guide officiel](/pages/account_and_service_management/account_information/all_about_username).
 
 #### Activer l'Authentification à Deux Facteurs (2FA)
 - **Ce que cela fait** : Ajoute une couche de sécurité supplémentaire en demandant une deuxième forme de vérification (par exemple, une application mobile, une clé de sécurité) en plus de votre mot de passe.
@@ -26,7 +26,7 @@ Pour des instructions détaillées sur la sécurisation de votre compte OVHcloud
 
 #### Définir des Mots de Passe Robustes
 - **Exigences** : Au moins neuf caractères, incluant des lettres majuscules et minuscules, des chiffres et des caractères spéciaux. Évitez les informations personnelles et les mots du dictionnaire.
-- **Gestion** : Utilisez un gestionnaire de mots de passe comme KeePass ou Bitwarden pour stocker et générer des mots de passe robustes. Mettez régulièrement à jour votre mot de passe et assurez-vous qu'il est unique pour chaque service. [Guide sur les mots de passe](https://help.ovhcloud.com/csm/en-account-manage-password?id=kb_article_view&sysparm_article=KB0042985).
+- **Gestion** : Utilisez un gestionnaire de mots de passe comme KeePass ou Bitwarden pour stocker et générer des mots de passe robustes. Mettez régulièrement à jour votre mot de passe et assurez-vous qu'il est unique pour chaque service. [Guide sur les mots de passe](/pages/account_and_service_management/account_information/manage-ovh-password).
 - **Exemple** : Un mot de passe robuste pourrait être `A1b2C3!d4#e5F6`.
 
 #### Ajouter une Adresse Email de Secours
@@ -34,15 +34,10 @@ Pour des instructions détaillées sur la sécurisation de votre compte OVHcloud
 - **Configuration** : Ajoutez une adresse email de secours dans le Tableau de Bord OVHcloud sous les paramètres de votre profil, en veillant à ce qu'elle diffère de votre adresse principale. [Guide sur la gestion des informations personnelles](https://help.ovhcloud.com/csm/en-gb-account-secure-account-personal-data?id=kb_article_view&sysparm_article=KB0042918).
 - **Exemple** : Si votre email principal est `utilisateur@example.com`, utilisez un email différent comme `utilisateur.secours@example.com` comme adresse de secours.
 
+
 ### Étape 2: Gérer les Informations Personnelles
 
-1. **Vérifier et Mettre à Jour les Informations**
-   - **Étapes** : Allez dans "Mon Compte" dans le Tableau de Bord, cliquez sur "Informations Personnelles" et assurez-vous que tous les détails sont exacts. Mettez régulièrement à jour ces informations pour éviter des problèmes avec le support ou l'accès au service.
-   - **Exemple** : Si vous déménagez à une nouvelle adresse, mettez immédiatement à jour votre profil avec les nouvelles coordonnées.
-
-2. **Changer l'Adresse Email Principale**
-   - **Processus** : Validez le changement en utilisant un code envoyé à votre email actuel. Entrez le code dans le Tableau de Bord pour confirmer la mise à jour.
-   - **Exemple** : Si vous devez changer votre email de `ancien@example.com` à `nouveau@example.com`, OVHcloud enverra un code de validation à `ancien@example.com` pour confirmer le changement.
+Pour vérifier et mettre à jour vos informations personnelles ou pour changer votre adresse email principale, veuillez vous référer au guide officiel : [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](/pages/account_and_service_management/account_information/all_about_username).
 
 ### Étape 3: Déléguer l'Accès
 
