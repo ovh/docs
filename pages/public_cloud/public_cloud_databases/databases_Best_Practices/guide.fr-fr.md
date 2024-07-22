@@ -32,8 +32,6 @@ Pour des instructions détaillées sur la sécurisation de votre compte OVHcloud
 #### Ajouter une Adresse Email de Secours
 - **Importance** : Aide à récupérer l'accès à votre compte si l'email principal est inaccessible.
 - **Configuration** : Ajoutez une adresse email de secours dans le Tableau de Bord OVHcloud sous les paramètres de votre profil, en veillant à ce qu'elle diffère de votre adresse principale. [Guide sur la gestion des informations personnelles](https://help.ovhcloud.com/csm/en-gb-account-secure-account-personal-data?id=kb_article_view&sysparm_article=KB0042918).
-- **Exemple** : Si votre email principal est `utilisateur@example.com`, utilisez un email différent comme `utilisateur.secours@example.com` comme adresse de secours.
-
 
 ### Étape 2: Gérer les Informations Personnelles
 
