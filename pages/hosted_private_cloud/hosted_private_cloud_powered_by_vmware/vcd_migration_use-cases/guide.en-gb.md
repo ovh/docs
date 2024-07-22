@@ -1,7 +1,7 @@
 ---
 title: 'VMware Cloud Director - Audit tricky use cases of migration to VCD'
 excerpt: 'Discover the methods for examining the tricky scenarios within your vSphere/vCenter OVHcloud managed workflows, in preparation for a VCD migration'
-updated: 2024-07-22
+updated: 2024-07-19
 ---
 
 <style>
@@ -42,7 +42,7 @@ Welcome to this how-to guide to provide you with information on the process of m
 
 This document also details the requirements for the migration, and if applicable, explains how to comply with them.
 
-### Step 1 - Requirements and tricky use cases (mandatory)
+## Step 1 - Requirements and tricky use cases (mandatory)
 
 /// details | What are the verification steps before you can migrate to VCD ?
 
@@ -50,9 +50,9 @@ Once you have checked these requirements, your virtual machines will be hot-migr
 
 This hot migration will minimize disruptions to your public or private networks. Private networks are the most likely to be affected, with downtime of the order of a few minutes.
 
-#### Table - All special use cases
+### Table - All special use cases
 
-| **Steps**   | **Done** | **Warning** | **Special use cases**                    | **Requirements**                                                       | **Comments**                                                                                                                                                                                                          | **Reference to external documentation**                                                                                                                                      |
+| **Steps**   | **Done** | **Warning** | **Special use-cases**                    | **Requirements**                                                       | **Comments**                                                                                                                                                                                                          | **Reference to external documentation**                                                                                                                                      |
 |-------------|----------|-------------|------------------------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Step 1**  | ?        | ❌           | **Multi-vDC**                            | **No multi-vDC (multiple data centres, only one possible).**           | - Can only be migrated if it has only one data centre in a vSphere managed on OVHcloud. <br/> - If not make sure to migrate your data in the data centre that will be migrated.                                       | [Migrating an infrastructure to a new vDC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc).                                   |                                                                                                                                                                                                                                                                                                                                                  
 | **Step 2**  | ?        | ❎           | **FT (fault tolerance)**                 | **No fault tolerance.**                                                | - Does my vSphere managed on OVHcloud service have VMs with FT (fault tolerance) activated ?                                                                                                                          | [VMware Fault Tolerance](/pages/bare_metal_cloud/managed_bare_metal/vmware_fault_tolerance).                                                                                 |                                                                                                                                                                                                                                                                                                                                                            
@@ -91,19 +91,19 @@ We invite you to ask yourself questions, such as:
 
 No, VCD on OVHcloud is not yet compatible with PCI-DSS, SNC, HDS security options.
 
-#### What type of migration will be used?
+#### What type of migration will be used ?
 
 This will be a hot cross vCenter migration.
 
-#### Will the Dedicated Cloud be retained after the migration?
+#### Will the Dedicated Cloud be retained after the migration ?
 
 No, all configurations and Dedicated Cloud data will be deleted after the migration.
 
-#### Do I have access to the VCD console after the migration?
+#### Do I have access to the VCD console after the migration ?
 
 Yes, the action is performed by OVHcloud and allows you to access the data after the migration from the VCD on OVHcloud console.
 
-#### Who does the VCD migration?
+#### Who does the VCD migration ?
 
 The migration is carried out by OVHcloud in full, but the necessary steps before the migration must be carried out by you. These steps will evolve as the VCD product advances, and will help to alleviate the necessary requirements.
 
@@ -111,6 +111,6 @@ The migration is carried out by OVHcloud in full, but the necessary steps before
 
 If you require training or technical support to implement your migration with VCD, please contact your TAM or [click here](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
-Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](https://discord.gg/ovhcloud) channel.
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](https://discord.gg/ovhcloud) canal.
 
 Join our [community of users](/links/community).
