@@ -192,7 +192,7 @@ Ci-dessous, les paramètres de la règle que nous conseillons de créer pour SAP
 | Niveau de stockage                         | Intégralement Flash               |
 
 <sup>* Pour la solution SAP HANA on Private Cloud.</sup>  
-<sup>Cette valeur va dépendre du nombre de disques (vSAN Capacity) dans votre cluster vSAN.</sup>
+<sup>Cette valeur va dépendre du nombre de disques (vSAN Capacity) sur vos hosts.</sup>
 
 Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes
 /hana/data (Hard disk 4) et /hana/log (Hard disk 5) de votre machine virtuelle.

@@ -190,7 +190,7 @@ Find below the parameters for the rule that we advise creating for SAP HANA:
 | Storage tier                      | All flash                      |
 
 <sup>* For a SAP HANA on Private Cloud solution.</sup>  
-<sup>The value for this rule will depend on the number of capacity disks (vSAN Capacity) in your vSAN cluster.</sup>
+<sup>The value for this rule will depend on the number of capacity disks (vSAN Capacity) on your hosts.</sup>
 
 This VM Storage Policy must be applied to the disks that host the /hana/data (on Hard Disk 4) and /hana/log (on Hard Disk 5) volumes of your virtual machine.
 
