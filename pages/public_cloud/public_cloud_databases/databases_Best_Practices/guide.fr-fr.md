@@ -1,7 +1,7 @@
 ---
-title: Sécuriser votre compte OVHcloud et gérer vos informations personnelles
-excerpt: Apprenez à optimiser la sécurité de votre compte OVHcloud, à gérer vos informations personnelles et à déléguer l'accès à votre compte
-updated: 2023-12-08
+title: Meilleures pratiques pour la structuration des projets Public Cloud OVHcloud
+excerpt: Découvrez comment optimiser la sécurité de votre compte OVHcloud, gérer vos informations personnelles et structurer efficacement vos projets Public Cloud
+updated: 2024-07-22
 ---
 
 ## Objectif
