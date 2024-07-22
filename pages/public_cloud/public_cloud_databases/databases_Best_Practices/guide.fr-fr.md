@@ -44,20 +44,16 @@ Pour gérer les utilisateurs et déléguer l'accès à votre compte OVHcloud, ve
 ### Étape 4: Meilleures Pratiques pour Structurer les Projets Cloud Publics
 
 1. **Établir des Zones de Départ**
-   - **But** : Créez des environnements multi-comptes évolutifs et sécurisés pour isoler les ressources et gérer la croissance de manière efficace. [Guide sur la création de projets Public Cloud](https://help.ovhcloud.com/csm/en-public-cloud-compute-create-project?id=kb_article_view&sysparm_article=KB0050599).
+   - **But** : Créez des environnements multi-comptes évolutifs et sécurisés pour isoler les ressources et gérer la croissance de manière efficace. [Guide sur la création de projets Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project/).
    - **Exemple** : Configurez des comptes séparés pour différents départements comme RH, Finance et Développement pour garantir l'isolement et la sécurité des données.
-
-![Diagramme de Zones de Départ](https://www.ovhcloud.com/cdn/www.ovhcloud.com/images/content/OVHcloud_public_cloud_diagram.jpg)
 
 2. **Utiliser Plusieurs Comptes**
    - **Stratégie** : Séparez les ressources et les charges de travail dans différents comptes en fonction des unités commerciales, des applications ou des environnements (développement, mise en scène, production).
    - **Exemple** : Utilisez un compte pour le développement et un autre pour la production pour éviter les interférences accidentelles entre les environnements.
 
 3. **Organiser par Applications et Environnements**
-   - **Mise en œuvre** : Utilisez les VRacks pour connecter les ressources de manière sécurisée à travers différents environnements. Mettez en œuvre la segmentation du réseau pour protéger les données sensibles. [Guide sur la connexion des instances Public Cloud](https://help.ovhcloud.com/csm/en-gb-public-cloud-compute-getting-started?id=kb_article_view&sysparm_article=KB0051017).
+   - **Mise en œuvre** : Utilisez les VRacks pour connecter les ressources de manière sécurisée à travers différents environnements. Mettez en œuvre la segmentation du réseau pour protéger les données sensibles. [Guide sur la connexion des instances Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps/).
    - **Exemple** : Segmentez votre application CRM en environnements de développement, de test et de production, chacun avec ses propres politiques et contrôles de sécurité réseau.
-
-![Schéma de segmentation réseau](https://www.ovhcloud.com/cdn/www.ovhcloud.com/images/content/OVHcloud_network_segmentation.jpg)
 
 4. **Tagging Consistant**
    - **Utilisation** : Étiquetez les ressources pour une gestion efficace, la facturation et le suivi de conformité. Notez que le tagging est actuellement disponible uniquement pour certaines ressources.
@@ -66,10 +62,7 @@ Pour gérer les utilisateurs et déléguer l'accès à votre compte OVHcloud, ve
 ### Documentation Complète sur les VRacks et les Réseaux Privés
 
 Pour plus de détails sur les configurations de VRacks et de réseaux privés, veuillez consulter les guides suivants :
-- [Utilisation des VRacks avec le Cloud Public](https://docs.ovh.com/gb/en/public-cloud/using-vrack-public-cloud/)
-- [Guide sur les VRacks](https://docs.ovh.com/gb/en/dedicated/vrack/)
-
-![Configuration VRack](https://www.ovhcloud.com/cdn/www.ovhcloud.com/images/content/OVHcloud_vrack_configuration.jpg)
+- [Utilisation des VRacks avec le Cloud Public](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack/)
 
 ## Aller plus loin
 
