@@ -40,7 +40,7 @@ To verify and update your personal information or to change your primary email a
 
 **Definition**: IAM is a framework for managing user identities and their access to resources securely.
 
-**Implementation **: Use IAM to create users, groups, and policies in OVHcloud IAM.
+**Implementation**: Use IAM to create users, groups, and policies in OVHcloud IAM.
 
 **Key Components**:
 1. **Users**: Individual accounts for people who need access to OVHcloud resources.
