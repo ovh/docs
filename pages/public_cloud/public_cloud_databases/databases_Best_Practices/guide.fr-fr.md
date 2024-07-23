@@ -1,7 +1,7 @@
 ---
 title: 'Meilleures Pratiques pour Structurer les Projets Public Cloud OVHcloud'
 excerpt: 'Optimisez la sécurité de votre compte OVHcloud, gérez vos informations personnelles et structurez efficacement vos projets Public Cloud'
-updated: 2023-12-08
+updated: 2024-07-23
 ---
 
 ## Objectif
