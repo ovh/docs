@@ -51,7 +51,7 @@ Create a new NFS partition in your Zpool:
 
 ![Create an NFS partition](images/create-nfs-partition.png){.thumbnail}
 
-#### Your cluster is installed with Public Network or with a private network without a OVHcloud Internet Gateway (or a defaultVrackGateway if you are using OVHcloud APIv6)
+#### Your cluster is installed with Public Network or with a private network without using an OVHcloud Internet Gateway (Openstack Router) or a custom one as your default route for your MKS cluster
 Once the partition is created, we need to allow our Kubernetes nodes to access our newly created partition.
 
 Get our Kubernetes nodes IP:
@@ -64,7 +64,7 @@ $ kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="Intern
 51.77.204.175 51.77.205.79
 ```
 
-#### Your cluster is installed with Private Network with a OVHcloud Internet Gateway (or a defaultVrackGateway if you are using OVHcloud APIv6)
+#### Your cluster is installed with Private Network and a default route via your Private Network (OVHcloud Internet Gateway/OpenStack Router or a custom one)
 
 Because your nodes are configured to be routed by the private network gateway, you need to add the gateway IP address to the ACLs.
 By using Public Cloud Gateway through our Managed Kubernetes Service, Public IPs on nodes are only for management purposes: [MKS Known Limits](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits)
@@ -81,6 +81,24 @@ You can also get your OVHcloud Internet Gateway's Public IP by using our APIs:
 >
 
 You can find more details about how using OVHcloud APIs with this guide: [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps)
+
+If you want to use your Kubernetes cluster to know your Gateway Public's IP, you can run this command:
+
+```bash
+kubectl run get-gateway-ip --image=ubuntu:latest -i --tty --rm 
+```
+
+This command will create you a temporary pod and open its shell
+
+You may have to wait a bit to let the container be created, and then once the shell has appeared, you can run this command : 
+
+```bash
+apt update && apt upgrade -y && apt install -y curl && curl ifconfig.me
+```
+
+The Public IP of the Gateway you're using should appear.
+
+
 
 Click on the *Manage Access* menu of our newly created partition:
 ![Manage Access of the NFS partition](images/manage-nfs-partition-access.png){.thumbnail}
