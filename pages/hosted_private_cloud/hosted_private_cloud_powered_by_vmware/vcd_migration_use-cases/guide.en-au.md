@@ -20,8 +20,8 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> VCD on OVHcloud is currently in alpha phase. This guide may therefore be incomplete and can be updated in the future. 
-> 
+> VCD on OVHcloud is currently in alpha phase. This guide may therefore be incomplete and can be updated in the future.
+>
 
 ## Objective
 
@@ -78,12 +78,12 @@ Looking at the table above, you will notice that a number of checks need to be p
 We invite you to ask yourself questions, such as:
 
 - Does my vSphere managed on OVHcloud infrastructure use multi-vDC?
-    - Yes, I need to migrate all my data to one data centre in order to migrate to VCD.
-    - No, I'll move on to the next step.
+  - Yes, I need to migrate all my data to one data centre in order to migrate to VCD.
+  - No, I'll move on to the next step.
 
 - Does my VMware on OVHcloud infrastructure use fault tolerance (FT)?
-    - Yes, so I have to disable it before migrating, otherwise I won't be able to migrate to VCD.
-    - No, I'll move on to the next step.
+  - Yes, so I have to disable it before migrating, otherwise I won't be able to migrate to VCD.
+  - No, I'll move on to the next step.
 
 - And so on...
 
