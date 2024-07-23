@@ -97,12 +97,18 @@ To manage users and delegate access to your OVHcloud account, please refer to th
 **Definition**: A Landing Zone is a pre-configured, secure, scalable, and multi-account environment based on best practices. It acts as a starting point for deploying workloads in a cloud environment.
 
 **Implementation at OVHcloud**:
-- Although primarily an AWS concept, the same principles can be applied. Create a structured environment with predefined network configurations, security controls, and account structures to serve as the foundation for deploying applications.
+- Local Zones are strategically positioned near specific users or locations to significantly shorten the physical distance data needs to travel, providing low latency and high performance. These zones ensure full compliance with data location regulations and enhance customer experience with fast response times.
+- OVHcloud Local Zones offer flexibility and scalability, allowing you to add or remove resources on demand. These instances are adapted to various needs, from long-term archiving to high-performance storage solutions.
 - **Guide**: [Creating Public Cloud projects](/pages/public_cloud/compute/create_a_public_cloud_project/).
 
-**Example**:
-- Set up separate accounts for different departments like HR, Finance, and Development to ensure data isolation and security.
-- Utilize OVHcloud VRack to connect these accounts securely.
+**Examples**:
+- **Low Latency and Proximity**: Position Local Zones near specific user bases to minimize latency and improve application performance.
+- **Data Residency**: Use Local Zones to comply with data location regulations, ensuring data is processed within specific geographical boundaries.
+- **International Coverage**: OVHcloud aims to deploy 150 Local Zones globally over the next three years, enhancing performance and compliance.
+
+**Further Reading**:
+- [OVHcloud Local Zones Overview](https://www.ovhcloud.com/en/about-us/global-infrastructure/local-zone/?_gl=1*1qvadba*_gcl_au*NTIyMTcxNjkwLjE3MTU5NTg5ODIuMTQxNzQ4MDM5NS4xNzIxNjY0Nzk2LjE3MjE2NjQ3OTY.)
+- [Local Zones Capabilities and Limitations](/pages/public_cloud/compute/local-zones-capabilities-limitations/)
 
 #### Use Multiple Accounts
 
