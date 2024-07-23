@@ -52,7 +52,10 @@ To verify and update your personal information or to change your primary email a
 - **Grouping Users**: Create groups such as "Developers", "Admins", and "Auditors" to simplify permissions management.
 - **Defining Policies**: Assign policies to users and groups to restrict or grant access. For example, a developer might have permissions to deploy applications but not to manage billing information.
 
-**Further Reading**: [OVHcloud IAM Guide](https://www.ovhcloud.com/en/identity-security/identity-access-management/)
+**Further Reading**: 
+- [OVHcloud IAM Guide](https://www.ovhcloud.com/en/identity-security/identity-access-management/)
+- [How to use IAM policies using the OVHcloud Control Panel](/pages/account_and_service_management/account_information/iam-policy-ui/)
+- [How to use IAM policies using the OVHcloud API](/pages/account_and_service_management/account_information/iam-policies-api/)
 
 #### Role-Based Access Control (RBAC)
 
