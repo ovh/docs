@@ -64,10 +64,11 @@ L'interface vous informera si le réseau privé ou le sous-réseau ne sont pas c
 
 - Dans un premier temps, choisissez le protocole et le port du listener en fonction du trafic que vous allez recevoir. Notez qu'un listener spécifique appelé `Prometheus` est disponible pour monitorer votre Load Balancer. Dans ce cas, il n'est pas possible d'ajouter des membres. Pour plus d'informations sur ce listener, consultez [cette page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
 - Choisissez ensuite le type de moniteur d'intégrité (Health Monitor). Notez que certains types de health monitors n'étant pas compatibles avec certains protocoles, l'interface utilisateur filtre ces types afin que vous puissiez uniquement choisir des éléments compatibles. Pour plus d'informations sur la compatibilité du health monitor, consultez [cette page](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
-- Enfin, parmi les instances de votre région, choisissez l'IP et le port membre qui feront partie du pool.
+- Enfin, parmi les instances de votre région, choisissez l'adresse IP et le port membre qui feront partie du pool.
 
-> [!primary] 
-> Pour simplifier le processus de configuration, votre pool doit avoir le même protocole que le listener et le membre ne peut être choisi qu'à partir d'une instance. De plus, l'algorithme de load balancing est par défaut `ROUND_ROBIN`.
+> [!primary]
+>
+> Pour simplifier le processus de configuration, votre pool doit avoir le même protocole que le listener et le membre ne peut être choisi qu'à partir d'une instance. De plus, l'algorithme de load balancing par défaut est : `ROUND_ROBIN`.
 > Ces limitations peuvent être contournées en ignorant cette partie de la configuration et en utilisant la configuration du pool/membre une fois le Load Balancer créé. 
 >
 
