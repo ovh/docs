@@ -1,7 +1,7 @@
 ---
 title: "Configurer et utiliser Git avec son hébergement web OVHcloud"
 excerpt: "Découvrez comment configurer et utiliser Git avec votre hébérgement web dans votre espace client OVHcloud"
-updated: 2024-07-17
+updated: 2024-07-23
 flag: hidden
 ---
 
@@ -43,7 +43,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) et effectuez le
 - Dans le tableau qui s'affiche, identifiez la ligne correspondant au répertoire que vous souhaitez associer à Git.
 - Cliquez sur le bouton `...`{.action} puis sélectionnez `Associer Git`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/associate-git.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/link-git.png){.thumbnail}
 
 Le formulaire d'association de Git s'affiche. Plusieurs éléments doivent être configurés :
 
