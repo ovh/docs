@@ -78,6 +78,16 @@ To verify and update your personal information or to change your primary email a
 
 To manage users and delegate access to your OVHcloud account, please refer to the official guide: [OVHcloud Users Management](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
+#### Creating and Managing Local Users
+
+**Overview**: With OVHcloud, you can create additional local users with read or write access to your customer account. This allows you to grant other members of your company access to your OVHcloud services without sharing passwords or two-factor authentication details.
+
+**Examples**:
+- **Create a Local User**: Add a user for a new developer joining your team, giving them access to the necessary resources without exposing sensitive information.
+- **User Groups**: Assign the new user to a "Developers" group that has restricted admin access, enabling them to manage applications but not user accounts.
+
+**Further Reading**: For detailed steps on adding and managing local users, refer to the [OVHcloud Users Management Guide](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+
 ### Step 4: Best Practices for Structuring Public Cloud Projects
 
 #### Establish Landing Zones
