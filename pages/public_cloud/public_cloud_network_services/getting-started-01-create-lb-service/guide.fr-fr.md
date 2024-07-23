@@ -68,7 +68,7 @@ L'interface vous informera si le réseau privé ou le sous-réseau ne sont pas c
 
 > [!primary]
 >
-> Pour simplifier le processus de configuration, votre pool doit avoir le même protocole que le listener et le membre ne peut être choisi qu'à partir d'une instance. De plus, l'algorithme de load balancing est par défaut `ROUND_ROBIN`.
+> Pour simplifier le processus de configuration, votre pool doit avoir le même protocole que le listener et le membre ne peut être choisi qu'à partir d'une instance. De plus, l'algorithme de load balancing par défaut est : `ROUND_ROBIN`.
 > Ces limitations peuvent être contournées en ignorant cette partie de la configuration et en utilisant la configuration du pool/membre une fois le Load Balancer créé. 
 >
 
