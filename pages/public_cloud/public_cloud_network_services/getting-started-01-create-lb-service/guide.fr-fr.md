@@ -66,7 +66,8 @@ L'interface vous informera si le réseau privé ou le sous-réseau ne sont pas c
 - Choisissez ensuite le type de moniteur d'intégrité (Health Monitor). Notez que certains types de health monitors n'étant pas compatibles avec certains protocoles, l'interface utilisateur filtre ces types afin que vous puissiez uniquement choisir des éléments compatibles. Pour plus d'informations sur la compatibilité du health monitor, consultez [cette page](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 - Enfin, parmi les instances de votre région, choisissez l'adresse IP et le port membre qui feront partie du pool.
 
-> [!primary] 
+> [!primary]
+>
 > Pour simplifier le processus de configuration, votre pool doit avoir le même protocole que le listener et le membre ne peut être choisi qu'à partir d'une instance. De plus, l'algorithme de load balancing est par défaut `ROUND_ROBIN`.
 > Ces limitations peuvent être contournées en ignorant cette partie de la configuration et en utilisant la configuration du pool/membre une fois le Load Balancer créé. 
 >
