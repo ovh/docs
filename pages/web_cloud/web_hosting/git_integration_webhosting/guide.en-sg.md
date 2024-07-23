@@ -1,7 +1,7 @@
 ---
 title: "Configuring and using Git with an OVHcloud web hosting plan"
 excerpt: "Find out how to configure and use Git with your web hosting plan in the OVHcloud Control Panel"
-updated: 2024-07-17
+updated: 2024-07-23
 flag: hidden
 ---
 
@@ -41,9 +41,9 @@ Log in to your [OVHcloud Control Panel](/links/manager) and perform the followin
 - Select your web hosting plan in the `Hosting plans`{.action} section on the left.
 - Click on the `Multisite`{.action} tab.
 - In the table that appears, identify the row corresponding to the directory you want to associate with Git.
-- Click on the button `...`{.action} then select `Associate Git`{.action}.
+- Click on the button `...`{.action} then select `Link Git`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/associate-git.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/link-git.png){.thumbnail}
 
 The Git association form is displayed. There are several elements that need to be configured:
 
@@ -93,9 +93,9 @@ Define a name for your deposit and fill in the requested information.
 
 Finally, click `Create Repository`{.action}.
 
-Copy the address of your GitHub repository. It must be of the form `https://github.com/<username>/<repository_name>`{.action}. Return to the Git association form and paste the address of your GitHub repository into the `Repository`{.action} field. If the address format is not correct, the following error message appears:
+Copy the address of your GitHub repository. It must be of the form `https://github.com/<username>/<repository_name>`{.action}. Return to the Git association form and paste the address of your GitHub repository into the `Deposit`{.action} field. If the address format is not correct, the following error message appears:
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-repository-name.png){.thumbnail}
 
 Now define the branch of your GitHub repository. The default branch is `main`, but if you want to use another branch, create one on GitHub by following the steps below:
 
@@ -131,13 +131,13 @@ After validating the Git association form, you are redirected to the Multisite t
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/banner-git-activation-ongoing.png){.thumbnail}
 
-A green banner will show you that Git is being enabled. Follow the activation of Git by clicking on the `Ongoing tasks`{.action} link.
+A green banner will show you that Git is being enabled. Follow the activation of Git by clicking on the `Current tasks`{.action} link.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ongoing-task-git-activation.png){.thumbnail}
 
 The status `Running`{.action} indicates that the Git association is in progress. The process may take several minutes. When the task is complete, the status `Enabled`{.action} is displayed.
 
-You can also track the progress of Git activation from the `Multisite`{.action} tab. In the table, identify the rows that correspond to the directory you want to associate with Git. For each of the rows concerned, in the `Git`{.action} column, the phrase `Ongoing`{.action} tells you that Git is being enabled.
+You can also track the progress of Git activation from the `Multisite`{.action} tab. In the table, identify the rows that correspond to the directory you want to associate with Git. For each of the rows concerned, in the `Git`{.action} column, the phrase `In progress`{.action} tells you that Git is being enabled.
 
 When the Git association is complete, the status `Enabled`{.action} appears in the `Git`{.action} column for the rows concerned.
 
@@ -156,7 +156,7 @@ For the exact cause of the error, see the information from the last deployment. 
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
 
-Once you have identified the error(s), associate Git again. Retry the operation by clicking on the `...`{.action} button on the corresponding line, then on `Associate Git`{.action}.
+Once you have identified the error(s), associate Git again. Retry the operation by clicking on the `...`{.action} button on the corresponding line, then on `Link Git`{.action}.
 
 ### Deploy your GitHub repository on your OVHcloud web hosting plan
 
@@ -175,7 +175,7 @@ The new version of your website has been deployed on your OVHcloud hosting plan.
 
 ### Modify a domain name
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain you want to modify. Click the `...`{.action} button, then `Modify the domain`{.action}. There are two possible scenarios:
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain you want to modify. Click the `...`{.action} button, then `Modify domain`{.action}. There are two possible scenarios:
 
 #### The domain name is not the only one attached to the same directory
 
@@ -236,7 +236,7 @@ The following information is displayed:
 
 Once you have deployed your GitHub repository on your web hosting plan, you can view information on the latest deployment, such as errors, tests and any useful information. 
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain whose logs you want to view from the last deployment. To the right of the line, click the `...`{.action} button, then `information on the last deployment`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain whose logs you want to view from the last deployment. To the right of the line, click the `...`{.action} button, then `Latest deployment information`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
 
@@ -252,7 +252,7 @@ The following window appears:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
 
-The message informs you that the deletion will apply to all domain names attached to your directory. Tick the `Do you want to empty the contents of the <your_directory>`{.action} option if you also want to delete the contents (folders and files) of the directory.
+The message informs you that the deletion will apply to all domain names attached to your directory. Tick the `Do you want to empty the contents of the <your_directory> directory?`{.action} option if you also want to delete the contents (folders and files) of the directory.
 
 1\.	If you select the check box, the following window appears:
 
