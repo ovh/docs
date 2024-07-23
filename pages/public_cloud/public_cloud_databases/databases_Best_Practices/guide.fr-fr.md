@@ -96,7 +96,7 @@ Pour gérer les utilisateurs et déléguer l'accès à votre compte OVHcloud, ve
 
 **Définition** : Une Landing Zone est un environnement pré-configuré, sécurisé, évolutif et multi-compte basé sur les meilleures pratiques. Elle sert de point de départ pour déployer des charges de travail dans un environnement cloud.
 
-**Mise en œuvre chez OVHcloud** :
+**Mise en œuvre** :
 - Les Local Zones sont positionnées stratégiquement près d'utilisateurs ou de localisations spécifiques pour réduire significativement la distance physique que doivent parcourir les données, offrant ainsi une faible latence et une haute performance. Ces zones assurent une conformité totale avec les régulations de localisation des données et améliorent l'expérience client avec des temps de réponse rapides.
 - Les Local Zones OVHcloud offrent flexibilité et évolutivité, permettant d'ajouter ou de retirer des ressources à la demande. Ces instances sont adaptées à divers besoins, allant de l'archivage à long terme aux solutions de stockage haute performance.
 - **Guide** : [Créer des projets Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project/).
