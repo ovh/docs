@@ -537,7 +537,7 @@ Understanding the constraints of using **Additional IPv6** within the **vRack** 
 - **Public bandwidth cap**: Outbound traffic from OVHcloud to the internet is capped at 5Gbps per region location.
 - **IPv6 block allocation limits**: Single Additional IPv6 block per vRack in a region location. Maximum of 3 blocks (/56) per region location.
 - **Mobility of Additional IPv6 blocks**: Due to the hierarchical design of the IPv6 address space, Additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend.
-- **No direct VLAN 802.1Q support in vRack by Additional IPv6**: configuration can only be done with native vlan of your vRack network. For packet forwarding inside specific vlan (of a vRack) a dedicated host on customer side will be needed.
+- **No direct VLAN 802.1Q support in vRack by Additional IPv6**: Configuration can only be done with native vlan of your vRack network. For packet forwarding inside specific vlan (of a vRack) a dedicated host on customer side will be needed.
 - **APAC, TOR and 3AZ regions are not supported for the moment.**
 
 ## Go further
