@@ -21,7 +21,7 @@ Pour des instructions détaillées sur la sécurisation de votre compte OVHcloud
 
 #### Activer l'authentification à deux facteurs (2FA)
 - **Ce que cela fait** : Ajoute une couche de sécurité supplémentaire en nécessitant une seconde forme de vérification (ex. : application mobile, clé de sécurité) en plus de votre mot de passe.
-- **Comment l'activer** : Connectez-vous à votre panneau de contrôle OVHcloud, allez dans l'onglet Sécurité et suivez les étapes pour configurer le 2FA à l'aide d'une application mobile ou d'une clé de sécurité. Assurez-vous de stocker vos codes de sauvegarde en lieu sûr. [Guide détaillé 2FA](https://support.us.ovhcloud.com/hc/en-us/articles/360013968099-Securing-an-Account-with-Two-Factor-Authentication).
+- **Comment l'activer** : Connectez-vous à votre panneau de contrôle OVHcloud, allez dans l'onglet Sécurité et suivez les étapes pour configurer le 2FA à l'aide d'une application mobile ou d'une clé de sécurité. Assurez-vous de stocker vos codes de sauvegarde en lieu sûr. [Guide détaillé 2FA](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa/).
 - **Exemple** : Si vous utilisez une clé de sécurité U2F, vous devrez la brancher à votre port USB à chaque connexion, offrant une mesure de sécurité supplémentaire au-delà de votre mot de passe.
 
 #### Définir des mots de passe forts
@@ -40,7 +40,7 @@ Pour vérifier et mettre à jour vos informations personnelles ou pour changer v
 
 **Définition** : IAM est un cadre pour gérer les identités des utilisateurs et leur accès aux ressources de manière sécurisée.
 
-**Mise en œuvre chez OVHcloud** : Utilisez IAM pour créer des utilisateurs, des groupes et des politiques dans OVHcloud.
+**Mise en œuvre** : Utilisez IAM pour créer des utilisateurs, des groupes et des politiques dans OVHcloud IAM.
 
 **Éléments clés** :
 1. **Utilisateurs** : Comptes individuels pour les personnes ayant besoin d'accéder aux ressources OVHcloud.
@@ -53,7 +53,7 @@ Pour vérifier et mettre à jour vos informations personnelles ou pour changer v
 - **Définir des politiques** : Attribuez des politiques aux utilisateurs et aux groupes pour restreindre ou accorder des accès. Par exemple, un développeur peut avoir des permissions pour déployer des applications mais pas pour gérer les informations de facturation.
 
 **Pour en savoir plus** : 
-- [Guide IAM OVHcloud](https://www.ovhcloud.com/en/identity-security/identity-access-management/)
+- [Guide IAM OVHcloud](https://www.ovhcloud.com/fr/identity-security/identity-access-management/)
 - [Comment utiliser les politiques IAM via le panneau de contrôle OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui/)
 - [Comment utiliser les politiques IAM via l'API OVHcloud](/pages/account_and_service_management/account_information/iam-policies-api/)
 
@@ -72,7 +72,7 @@ Pour vérifier et mettre à jour vos informations personnelles ou pour changer v
 - **Attribuer des rôles** : Attribuez le rôle "Lecture seule" aux auditeurs qui ont seulement besoin de consulter les ressources, et le rôle "Développeur" aux utilisateurs qui doivent déployer et gérer des applications.
 - **Utiliser les attributions de rôles** : Liez les rôles aux utilisateurs et aux groupes pour appliquer les permissions nécessaires.
 
-**Pour en savoir plus** : [Guide RBAC OVHcloud](https://www.ovhcloud.com/en/identity-security/identity-access-management/)
+**Pour en savoir plus** : [Guide RBAC OVHcloud](https://www.ovhcloud.com/fr/identity-security/identity-access-management/)
 
 ### Étape 3 : Délégation d'accès
 
@@ -107,7 +107,7 @@ Pour gérer les utilisateurs et déléguer l'accès à votre compte OVHcloud, ve
 - **Couverture internationale** : OVHcloud vise à déployer 150 Local Zones globalement dans les trois prochaines années, améliorant la performance et la conformité.
 
 **Pour en savoir plus** :
-- [Vue d'ensemble des Local Zones OVHcloud](https://www.ovhcloud.com/en/about-us/global-infrastructure/local-zone/?_gl=1*1qvadba*_gcl_au*NTIyMTcxNjkwLjE3MTU5NTg5ODIuMTQxNzQ4MDM5NS4xNzIxNjY0Nzk2LjE3MjE2NjQ3OTY.)
+- [Vue d'ensemble des Local Zones OVHcloud](https://www.ovhcloud.com/fr/about-us/global-infrastructure/local-zone/?_gl=1*1qvadba*_gcl_au*NTIyMTcxNjkwLjE3MTU5NTg5ODIuMTQxNzQ4MDM5NS4xNzIxNjY0Nzk2LjE3MjE2NjQ3OTY.)
 - [Capacités et limitations des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations/)
 
 #### Utiliser plusieurs comptes
