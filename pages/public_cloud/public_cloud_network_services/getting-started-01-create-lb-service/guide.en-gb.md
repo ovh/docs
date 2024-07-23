@@ -63,7 +63,12 @@ The interface will inform you if the private network / subnet is not compliant w
 
 - First, choose the listener protocol & the port according to the traffic you will receive. Note that a specific listener called `Prometheus` is available to monitor your Load Balancer. In that case, it is not possible to add members. For more information on this listener, read [this page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
 - Then, choose the Health Monitor type. Note that since some health monitor types are not compatible with some protocols, the user interface filters those types so that you can only choose compatible items. For more information on the health monitor compatibility, read [this page](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
-- Finally, from the instances of your region, choose the member IP & port that will be part of the pool. Note that in order to simplify the configuration workflow, it is only possible to have a pool with the same protocol as the listener, and that the member can only be chosen from the instance. Those limitations can be bypassed by skipping this part of configuration and use the pool / member configuration once the Load Balancer is created. 
+- Finally, from the instances of your region, choose the member IP & port that will be part of the pool. 
+
+> [!primary]
+> In order to simplify the Load Balancer configuration workflow, it is only possible to have a pool with the same protocol as the listener and the member can only be chosen from the instance. Furthermore the pool load balancing algorithm is by default set to `ROUND_ROBIN`.
+> Those limitations can be bypassed by skipping this part of configuration and use the pool / member configuration once the Load Balancer is created. 
+>
 
 #### Step 6 Define the name of Load Balancer 
 
