@@ -21,7 +21,7 @@ For detailed instructions on securing your OVHcloud account with two-factor auth
 
 #### Enable Two-Factor Authentication (2FA)
 - **What it does**: Adds an extra layer of security by requiring a second form of verification (e.g., mobile app, security key) in addition to your password.
-- **How to enable**: Log in to your OVHcloud Control Panel, go to the Security tab, and follow the steps to set up 2FA using a mobile app or security key. Ensure you store your backup codes securely. [Detailed 2FA guide](https://support.us.ovhcloud.com/hc/en-us/articles/360013968099-Securing-an-Account-with-Two-Factor-Authentication).
+- **How to enable**: Log in to your OVHcloud Control Panel, go to the Security tab, and follow the steps to set up 2FA using a mobile app or security key. Ensure you store your backup codes securely. [Detailed 2FA guide](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa/).
 - **Example**: If you use a U2F security key, you will plug it into your USB port each time you log in, providing an additional security measure beyond your password.
 
 #### Set Strong Passwords
@@ -40,7 +40,7 @@ To verify and update your personal information or to change your primary email a
 
 **Definition**: IAM is a framework for managing user identities and their access to resources securely.
 
-**Implementation at OVHcloud**: Use IAM to create users, groups, and policies in OVHcloud.
+**Implementation **: Use IAM to create users, groups, and policies in OVHcloud IAM.
 
 **Key Components**:
 1. **Users**: Individual accounts for people who need access to OVHcloud resources.
