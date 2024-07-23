@@ -41,6 +41,7 @@ In addition, a VPN Secure Private Network (VPN-SPN) can be deployed to ensure se
 Under no circumstances should your SAP environment be accessible from the internet without passing through several filtered gateways and a DMZ. This DMZ must not be bypassed.
 
 For SAProuter, used primarily to connect your SAP environment to SAP support, its installation should be done on a dedicated virtual machine that is not used for any other purpose, in a DMZ. The SAPROUTTAB should be filled with a high level of vigilance.
+However, ANSSI strongly recommends not opening the SecNumCloud environment to external support that is not SecNumCloud-qualified. In this scenario, the external support takes control of a deskop or server through a shared screen, with visual control from the administrator.
 
 Similarly, the SAP Web Dispatcher, used primarily to publish HTTP(s) endpoints for your SAP environment, should be installed on a dedicated virtual machine that is not used for any other purpose, in a DMZ. Only the HTTPS protocol should be enabled. Access Control Lists (ACL), Authentication Handler, and HTTP Rewrite Handler should be configured with a high level of vigilance. We recommend implementing a Web Application Firewall (WAF) to protect the SAP Web Dispatcher from common web-based attacks, such as SQL injection and cross-site scripting (XSS).
 
@@ -149,6 +150,8 @@ The distinction between single-region and two-region setups lies in the recovery
 To ensure connection continuity with SAP Support during a disaster recovery scenario, it's recommended to configure a secondary SAProuter located in the secondary OVHcloud region. This setup enables SAP Support personnel to establish a secure connection with your SAP systems within the secondary region during a disaster, without disruptions or extended downtimes.
 
 In the event of a disaster recovery activation, the public IP address in the SAP Support LaunchPad should only be updated to re-establish the connection.
+
+As a reminder, ANSSI strongly recommends not opening the SecNumCloud environment to external support that is not SecNumCloud-qualified.
 
 That said, even during non-disaster situations, the secondary SAProuter must still be configured and managed with the same care and vigilance as if it were the primary route. Consequently, all best practices and guidelines mentioned in the [Network connectivity](#network-connectivity) and [SAP Support connection](#sap-support-connection) chapters must be carefully observed. Proper security measures, logging, and monitoring should be implemented to ensure the security of your SAP infrastructure and maintain a high level of connection reliability with SAP Support.
 
