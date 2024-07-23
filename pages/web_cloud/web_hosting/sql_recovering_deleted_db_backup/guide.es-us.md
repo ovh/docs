@@ -114,7 +114,7 @@ Para ello, puede permanecer en nuestro sitio web [API OVHcloud](/links/api) y re
 
 - En la parte derecha de la página se muestra la API con sus diferentes formularios a rellenar.
 
-Rellene los distintos formularios de la sección « PATH PARAMETERS » del siguiente modo:
+Rellene los distintos formularios de la sección "PATH PARAMETERS" del siguiente modo:
 
 - `id`: Copie el número de identificador de backup recuperado en el paso 3. Si no ha sido desconectado de nuestro sitio API OVHcloud, la interfaz le puede proponer directamente los diferentes números de ID de copia de seguridad disponibles. En ese caso, puede hacer clic directamente en el primer número de ID de la lista que aparece debajo del formulario **id**.
 - `serviceName`: Introduzca el nombre de su alojamiento web obtenido anteriormente en el paso 1 de esta guía.
