@@ -8,7 +8,6 @@ updated: 2024-07-22
 
 **This guide explains how to secure your OVHcloud account, manage your personal information, and implement best practices for structuring your Public Cloud projects.**
 
-
 ## Requirements
 
 - An active OVHcloud account
@@ -33,7 +32,6 @@ For detailed instructions on securing your OVHcloud account with two-factor auth
 - **Importance**: Helps recover access to your account if the primary email is inaccessible.
 - **Configuration**: Add a backup email in the OVHcloud Control Panel under your profile settings, ensuring it differs from your primary email address. [Guide on managing personal information](pages/account_and_service_management/account_information/all_about_username/).
 
-
 ### Step 2: Managing Personal Information
 
 To verify and update your personal information or to change your primary email address, please refer to the official guide: [All about username](/pages/account_and_service_management/account_information/all_about_username).
@@ -42,20 +40,52 @@ To verify and update your personal information or to change your primary email a
 
 To manage users and delegate access to your OVHcloud account, please refer to the official guide: [OVHcloud Users Management](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
-
 ### Step 4: Best Practices for Structuring Public Cloud Projects
 
-1. **Establish Landing Zones**
-   - **Purpose**: Create scalable and secure multi-account environments to isolate resources and manage growth efficiently. [Guide on creating Public Cloud projects](/pages/public_cloud/compute/create_a_public_cloud_project/).
-   - **Example**: Set up separate accounts for different departments like HR, Finance, and Development to ensure data isolation and security.
+#### Establish Landing Zones
 
-2. **Use Multiple Accounts**
-   - **Strategy**: Separate resources and workloads into different accounts based on business units, applications, or environments (development, staging, production).
-   - **Example**: Use one account for development and another for production to prevent accidental interference between environments.
+**Purpose**: Create scalable and secure multi-account environments to isolate resources and manage growth efficiently.
 
-3. **Organize by Applications and Environments**
-   - **Implementation**: Use VRacks to securely connect resources across different environments. Implement network segmentation to protect sensitive data. [Guide on connecting Public Cloud instances](/pages/public_cloud/compute/public-cloud-first-steps/).
-   - **Example**: Segment your CRM application into development, testing, and production environments, each with its own network policies and security controls.
+**Definition**: A Landing Zone is a pre-configured, secure, scalable, and multi-account environment based on best practices. It acts as a starting point for deploying workloads in a cloud environment.
+
+**Implementation at OVHcloud**: 
+- Although primarily an AWS concept, the same principles can be applied at OVHcloud. Create a structured environment with predefined network configurations, security controls, and account structures to serve as the foundation for deploying applications. 
+- **Guide**: [Creating Public Cloud projects](/pages/public_cloud/compute/create_a_public_cloud_project/).
+
+**Example**: 
+- Set up separate accounts for different departments like HR, Finance, and Development to ensure data isolation and security.
+- Utilize OVHcloud VRack to connect these accounts securely.
+
+#### Use Multiple Accounts
+
+**Strategy**: Separate resources and workloads into different accounts based on business units, applications, or environments (development, staging, production).
+
+**Implementation at OVHcloud**:
+- At OVHcloud, this can be achieved by creating separate accounts for each environment or project. Each account can have its own resources, billing, and management policies.
+- **Example**: Use one account for development and another for production to prevent accidental interference between environments.
+- **Guide**: [OVHcloud IAM Guide](https://docs.ovh.com/gb/en/public-cloud/identity-and-access-management/).
+
+#### Organize by Applications and Environments
+
+**Implementation**: Use VRacks to securely connect resources across different environments. Implement network segmentation to protect sensitive data.
+
+**Example**:
+- Segment your CRM application into development, testing, and production environments, each with its own network policies and security controls.
+- **Guide**: [Connecting Public Cloud instances](/pages/public_cloud/compute/public-cloud-first-steps/).
+
+#### Implement Identity and Access Management (IAM) and Role-Based Access Control (RBAC)
+
+**IAM**:
+- **Definition**: A framework for managing user identities and their access to resources securely.
+- **Implementation at OVHcloud**: Use IAM to create users, groups, and policies in OVHcloud.
+- **Example**: Create an IAM policy that allows developers to deploy applications but restricts them from managing billing.
+- **Guide**: [OVHcloud IAM Guide](https://docs.ovh.com/gb/en/public-cloud/identity-and-access-management/).
+
+**RBAC**:
+- **Definition**: Regulating access to resources based on user roles.
+- **Implementation at OVHcloud**: Assign roles to users and groups in OVHcloud.
+- **Example**: Create a "Read-Only" role for auditors and assign it to users who need to view resources but not modify them.
+- **Guide**: [OVHcloud RBAC Guide](https://docs.ovh.com/gb/en/public-cloud/role-based-access-control/).
 
 ### Complete Documentation on VRacks and Private Networks
 
