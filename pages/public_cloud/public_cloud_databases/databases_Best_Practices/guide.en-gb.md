@@ -32,9 +32,44 @@ For detailed instructions on securing your OVHcloud account with two-factor auth
 - **Importance**: Helps recover access to your account if the primary email is inaccessible.
 - **Configuration**: Add a backup email in the OVHcloud Control Panel under your profile settings, ensuring it differs from your primary email address. [Guide on managing personal information](pages/account_and_service_management/account_information/all_about_username/).
 
-### Step 2: Managing Personal Information
+### Step 2: Managing Personal Information and Implementing IAM and RBAC
 
 To verify and update your personal information or to change your primary email address, please refer to the official guide: [All about username](/pages/account_and_service_management/account_information/all_about_username).
+
+#### Identity and Access Management (IAM)
+
+**Definition**: IAM is a framework for managing user identities and their access to resources securely.
+
+**Implementation at OVHcloud**: Use IAM to create users, groups, and policies in OVHcloud.
+
+**Key Components**:
+1. **Users**: Individual accounts for people who need access to OVHcloud resources.
+2. **Groups**: Collections of users with common access needs.
+3. **Policies**: Rules that define what actions users and groups can perform on which resources.
+
+**Examples**:
+- **Creating Users**: Create individual accounts for each team member. Ensure each user has a unique set of credentials.
+- **Grouping Users**: Create groups such as "Developers", "Admins", and "Auditors" to simplify permissions management.
+- **Defining Policies**: Assign policies to users and groups to restrict or grant access. For example, a developer might have permissions to deploy applications but not to manage billing information.
+
+**Further Reading**: [OVHcloud IAM Guide](https://www.ovhcloud.com/en/identity-security/identity-access-management/)
+
+#### Role-Based Access Control (RBAC)
+
+**Definition**: RBAC regulates access to resources based on the roles assigned to individual users.
+
+**Implementation at OVHcloud**: Assign roles to users and groups to control their permissions within the cloud environment.
+
+**Key Components**:
+1. **Roles**: Define a set of permissions.
+2. **Role Bindings**: Assign roles to users or groups.
+
+**Examples**:
+- **Creating Roles**: Define roles such as "Read-Only", "Developer", and "Administrator". Each role has a specific set of permissions.
+- **Assigning Roles**: Assign the "Read-Only" role to auditors who only need to view resources, and the "Developer" role to users who need to deploy and manage applications.
+- **Using Role Bindings**: Link roles to users and groups to apply the necessary permissions.
+
+**Further Reading**: [OVHcloud RBAC Guide](https://www.ovhcloud.com/en/identity-security/identity-access-management/)
 
 ### Step 3: Delegating Access
 
@@ -48,11 +83,11 @@ To manage users and delegate access to your OVHcloud account, please refer to th
 
 **Definition**: A Landing Zone is a pre-configured, secure, scalable, and multi-account environment based on best practices. It acts as a starting point for deploying workloads in a cloud environment.
 
-**Implementation at OVHcloud**: 
-- Although primarily an AWS concept, the same principles can be applied at OVHcloud. Create a structured environment with predefined network configurations, security controls, and account structures to serve as the foundation for deploying applications. 
+**Implementation at OVHcloud**:
+- Although primarily an AWS concept, the same principles can be applied. Create a structured environment with predefined network configurations, security controls, and account structures to serve as the foundation for deploying applications.
 - **Guide**: [Creating Public Cloud projects](/pages/public_cloud/compute/create_a_public_cloud_project/).
 
-**Example**: 
+**Example**:
 - Set up separate accounts for different departments like HR, Finance, and Development to ensure data isolation and security.
 - Utilize OVHcloud VRack to connect these accounts securely.
 
@@ -72,20 +107,6 @@ To manage users and delegate access to your OVHcloud account, please refer to th
 **Example**:
 - Segment your CRM application into development, testing, and production environments, each with its own network policies and security controls.
 - **Guide**: [Connecting Public Cloud instances](/pages/public_cloud/compute/public-cloud-first-steps/).
-
-#### Implement Identity and Access Management (IAM) and Role-Based Access Control (RBAC)
-
-**IAM**:
-- **Definition**: A framework for managing user identities and their access to resources securely.
-- **Implementation at OVHcloud**: Use IAM to create users, groups, and policies in OVHcloud.
-- **Example**: Create an IAM policy that allows developers to deploy applications but restricts them from managing billing.
-- **Guide**: [OVHcloud IAM Guide](https://docs.ovh.com/gb/en/public-cloud/identity-and-access-management/).
-
-**RBAC**:
-- **Definition**: Regulating access to resources based on user roles.
-- **Implementation at OVHcloud**: Assign roles to users and groups in OVHcloud.
-- **Example**: Create a "Read-Only" role for auditors and assign it to users who need to view resources but not modify them.
-- **Guide**: [OVHcloud RBAC Guide](https://docs.ovh.com/gb/en/public-cloud/role-based-access-control/).
 
 ### Complete Documentation on VRacks and Private Networks
 
