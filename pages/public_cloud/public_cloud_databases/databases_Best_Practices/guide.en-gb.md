@@ -61,7 +61,7 @@ To verify and update your personal information or to change your primary email a
 
 **Definition**: RBAC regulates access to resources based on the roles assigned to individual users.
 
-**Implementation at OVHcloud**: Assign roles to users and groups to control their permissions within the cloud environment.
+**Implementation**: Assign roles to users and groups to control their permissions within the cloud environment.
 
 **Key Components**:
 1. **Roles**: Define a set of permissions.
@@ -96,7 +96,7 @@ To manage users and delegate access to your OVHcloud account, please refer to th
 
 **Definition**: A Landing Zone is a pre-configured, secure, scalable, and multi-account environment based on best practices. It acts as a starting point for deploying workloads in a cloud environment.
 
-**Implementation at OVHcloud**:
+**Implementation**:
 - Local Zones are strategically positioned near specific users or locations to significantly shorten the physical distance data needs to travel, providing low latency and high performance. These zones ensure full compliance with data location regulations and enhance customer experience with fast response times.
 - OVHcloud Local Zones offer flexibility and scalability, allowing you to add or remove resources on demand. These instances are adapted to various needs, from long-term archiving to high-performance storage solutions.
 - **Guide**: [Creating Public Cloud projects](/pages/public_cloud/compute/create_a_public_cloud_project/).
@@ -114,7 +114,7 @@ To manage users and delegate access to your OVHcloud account, please refer to th
 
 **Strategy**: Separate resources and workloads into different accounts based on business units, applications, or environments (development, staging, production).
 
-**Implementation at OVHcloud**:
+**Implementation**:
 - At OVHcloud, this can be achieved by creating separate accounts for each environment or project. Each account can have its own resources, billing, and management policies.
 - **Example**: Use one account for development and another for production to prevent accidental interference between environments.
 - **Guide**: [OVHcloud Users Management Guide](/pages/account_and_service_management/account_information/ovhcloud-users-management/).
