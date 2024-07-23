@@ -3,7 +3,6 @@ title: Creating a Kubernetes Cluster in a Local Zone using Rancher
 excerpt: Learn how to deploy a Kubernetes cluster using Rancher in an OVHcloud Local Zone.
 updated: 2024-07-20
 ---
-
 ## Objective
 
 **Discover how to deploy a Kubernetes cluster using Rancher in an OVHcloud Local Zone.**
@@ -11,8 +10,57 @@ updated: 2024-07-20
 ## Requirements
 
 - Have an OVHcloud project with available instances.
-- Refer to the following guides:
+- Have an existing Rancher setup. Refer to the following guide for creating a Managed Rancher service:
+  - [Getting Started with Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/getting-started/)
+- Refer to the following guide for creating instances:
   - [OVHcloud Public Cloud Compute Getting Started](/pages/public_cloud/compute/public-cloud-first-steps)
+
+### Pre-Configuration
+
+#### Understanding the Process
+
+In this guide, we will create instances in an OVHcloud Local Zone, which will then be used by Rancher to deploy a Kubernetes cluster in "custom cluster" mode. This involves a few key steps:
+
+1. **Create Instances in Local Zone**: We will start by creating virtual machine instances in a specific Local Zone within OVHcloud. A Local Zone is a specific geographical area with its own dedicated resources and infrastructure, offering low-latency and high-performance computing.
+
+2. **Deploy Managed Rancher**: After creating the instances, we will deploy a Managed Rancher service. Rancher is a powerful open-source platform that provides a comprehensive suite of tools to manage Kubernetes clusters.
+
+3. **Set Up a Custom Kubernetes Cluster**: Using Rancher, we will set up a Kubernetes cluster in custom mode. This involves registering our previously created instances with Rancher, which will configure them as Kubernetes nodes.
+
+#### Why This Approach?
+
+This method is a temporary workaround until a dedicated Local Zone driver becomes available. A Local Zone driver would allow Rancher to directly manage and deploy resources and instances within the Local Zone without manual intervention. Until then, this step-by-step process ensures that you can still leverage the benefits of Local Zones for your Kubernetes clusters.
+
+#### Detailed Steps
+
+Here’s a more detailed breakdown of what each step involves:
+
+1. **Creating Instances in Local Zone**:
+    - Log in to your OVHcloud control panel.
+    - Navigate to the Public Cloud section and create instances in the desired Local Zone.
+    - Choose the appropriate instance type, image, and network settings.
+
+2. **Deploying Managed Rancher**:
+    - Refer to the [Getting Started with Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/getting-started/) guide to set up a Managed Rancher service.
+
+3. **Configuring a Custom Kubernetes Cluster**:
+    - In the Rancher interface, create a new cluster using the Custom driver.
+    - Register each instance by running a Rancher-provided registration command on them.
+    - Verify that the cluster is active and all nodes are correctly configured.
+
+#### Benefits of Using Local Zones
+
+- **Low Latency**: By running workloads in a Local Zone, you benefit from reduced latency, which is crucial for real-time applications and services.
+- **High Performance**: Local Zones are designed to offer high-performance computing with dedicated resources.
+- **Geographical Proximity**: They allow you to place your applications closer to your users, enhancing user experience.
+
+#### Future Improvements
+
+In the future, with the introduction of a Local Zone driver, the process will become more streamlined:
+- Rancher will be able to directly manage the lifecycle of instances within Local Zones.
+- Automated scaling and management of resources will be possible, reducing manual intervention.
+
+By following this guide, you can set up a robust Kubernetes environment in an OVHcloud Local Zone, leveraging the current capabilities while anticipating future enhancements.
 
 ## Instructions
 
@@ -50,24 +98,7 @@ updated: 2024-07-20
 
 ![Select your region](images/instancepret.png)
 
-### Step 2: Deploy a Managed Rancher
-
-1. In the OVHcloud control panel, click on the **Create a Managed Rancher Service** button.
-
-![Select your region](images/rancher.png)
-
-2. Fill in a name (e.g., `my_lz_rancher`), choose the **Standard** plan, the recommended version, and then click on the **Create a Managed Rancher Service** button.
-
-![Select your region](images/menurancher.png)
-
-3. Once the service is created, in the list of Managed Rancher Services, click on your instance, then click on the **Generate access code** button to generate the login and password for accessing Rancher. Save the login and password and click on the **Go to Rancher** button.
-
-![Select your region](images/generationCode.png)
-
-4. Copy/paste the password into the **password** field and click on the **Log in with Local User** button.
-5. A new password will be generated, save it! Also save the server URL, check the **End User License Agreement** box, and click on the **Continue** button.
-
-### Step 3: Configure Rancher to Deploy a Kubernetes Cluster
+### Step 2: Configure Rancher to Deploy a Kubernetes Cluster
 
 #### Create a Cluster
 
@@ -86,6 +117,7 @@ updated: 2024-07-20
 
 1. Retrieve the public IP of the first instance in the OVHcloud control panel.
 2. SSH into the first instance from your local terminal and run the registration command.
+
 
 ```bash
 $ ssh root@xxx.xxx.xxx.xxx
