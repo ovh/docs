@@ -111,7 +111,7 @@ To manage users and delegate access to your OVHcloud account, please refer to th
 **Implementation at OVHcloud**:
 - At OVHcloud, this can be achieved by creating separate accounts for each environment or project. Each account can have its own resources, billing, and management policies.
 - **Example**: Use one account for development and another for production to prevent accidental interference between environments.
-- **Guide**: [OVHcloud IAM Guide](https://docs.ovh.com/gb/en/public-cloud/identity-and-access-management/).
+- **Guide**: [OVHcloud Users Management Guide](/pages/account_and_service_management/account_information/ovhcloud-users-management/).
 
 #### Organize by Applications and Environments
 
