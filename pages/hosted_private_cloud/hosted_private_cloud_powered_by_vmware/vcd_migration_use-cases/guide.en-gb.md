@@ -42,7 +42,7 @@ Welcome to this how-to guide to provide you with information on the process of m
 
 This document also details the requirements for the migration, and if applicable, explains how to comply with them.
 
-## Step 1 - Requirements and tricky use cases (mandatory)
+### Step 1 - Requirements and tricky use cases (mandatory)
 
 /// details | What are the verification steps before you can migrate to VCD ?
 
@@ -50,7 +50,7 @@ Once you have checked these requirements, your virtual machines will be hot-migr
 
 This hot migration will minimize disruptions to your public or private networks. Private networks are the most likely to be affected, with downtime of the order of a few minutes.
 
-### Table - All special use cases
+#### Table - All special use cases
 
 | **Steps**   | **Done** | **Warning** | **Special use-cases**                    | **Requirements**                                                       | **Comments**                                                                                                                                                                                                           | **Reference to external documentation**                                                                                                                                      |
 |-------------|----------|-------------|------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

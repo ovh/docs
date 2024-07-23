@@ -42,7 +42,7 @@ Ce guide pratique a pour but de vous fournir des informations sur le processus d
 
 Ce document détaille également les prérequis à la migration et le cas échéant, vous explique comment vous conformer à ceux-ci.
 
-## Étape 1 - Les prérequis et cas particuliers (obligatoire)
+### Étape 1 - Les prérequis et cas particuliers (obligatoire)
 
 /// details | Quels sont les prérequis et étapes de vérification pour vos usages HPC avant de pouvoir migrer vers VCD ?
 
@@ -50,7 +50,7 @@ Suite à la vérification de ces prérequis, la migration de vos machines virtue
 
 Ce déplacement à chaud permettra de limiter au minimum les coupures de vos réseaux publics ou privés. Les réseaux privés sont les plus susceptibles d'être impactés, de l'ordre de quelques minutes de coupure.
 
-### Tableau - Cas particuliers
+#### Tableau - Cas particuliers
 
 Le tableau ci-dessous vous présente chacun des points bloquants à la migration, ainsi que leur niveau de criticité, qu'il convient de mettre en conformité avant que la migration ne puisse débuter.
 
