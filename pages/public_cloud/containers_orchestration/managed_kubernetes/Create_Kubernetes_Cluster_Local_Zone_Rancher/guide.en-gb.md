@@ -31,23 +31,6 @@ In this guide, we will create instances in an OVHcloud Local Zone, which will th
 
 This method is a temporary workaround until a dedicated Local Zone driver becomes available. A Local Zone driver would allow Rancher to directly manage and deploy resources and instances within the Local Zone without manual intervention. Until then, this step-by-step process ensures that you can still leverage the benefits of Local Zones for your Kubernetes clusters.
 
-#### Detailed Steps
-
-Here’s a more detailed breakdown of what each step involves:
-
-1. **Creating Instances in Local Zone**:
-    - Log in to your OVHcloud control panel.
-    - Navigate to the Public Cloud section and create instances in the desired Local Zone.
-    - Choose the appropriate instance type, image, and network settings.
-
-2. **Deploying Managed Rancher**:
-    - Refer to the [Getting Started with Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/getting-started/) guide to set up a Managed Rancher service.
-
-3. **Configuring a Custom Kubernetes Cluster**:
-    - In the Rancher interface, create a new cluster using the Custom driver.
-    - Register each instance by running a Rancher-provided registration command on them.
-    - Verify that the cluster is active and all nodes are correctly configured.
-
 #### Benefits of Using Local Zones
 
 - **Low Latency**: By running workloads in a Local Zone, you benefit from reduced latency, which is crucial for real-time applications and services.
@@ -86,7 +69,9 @@ By following this guide, you can set up a robust Kubernetes environment in an OV
 
 ![Select your region](images/sshnb.png)
 
-9. Indicate `3` as the number of instances to create and rename the instances (e.g., `lz-kube`).
+9. Indicate the number of instances to create and rename the instances (e.g., `lz-kube`).
+    - For a demo, you can use a single instance for the control plane.
+    - For production, it is recommended to follow Kubernetes best practices and use at least 3 instances for the control plane. Refer to [Kubernetes Best Practices](https://kubernetes.io/docs/setup/best-practices/) for more information.
 
 ![Select your region](images/nbinstance.png)
 
@@ -111,7 +96,9 @@ By following this guide, you can set up a robust Kubernetes environment in an OV
 
 #### Configure the Cluster
 
-- **For the etcd and control plane node:**
+- **For the control plane and etcd nodes:**
+  - For a demo setup, you can use a single node for both control plane and etcd.
+  - For production, follow best practices and use at least 3 nodes for the control plane and etcd. Refer to [Kubernetes Best Practices](https://kubernetes.io/docs/setup/best-practices/).
   - Check the **etcd** and **control plane** boxes.
   - Copy the registration command provided by Rancher.
 
