@@ -48,7 +48,7 @@ Si vous n'en avez pas encore, [créez une nouvelle base de données](/pages/web_
 
 > [!primary]
 >
-> OVHcloud propose des serveurs de base de données Web Cloud Databases. Si vous souhaitez utiliser cette offre avec votre site web, retrouvez l'ensemble de notre documentation sur ce produit sur notre [page dédiée](/links/web/databases).
+> OVHcloud propose des serveurs de base de données Web Cloud Databases. Si vous souhaitez utiliser cette offre avec votre site web, retrouvez l'ensemble des informations sur ce produit sur notre [page dédiée](/links/web/databases).
 >
 
 ### Étape 3 : mettre à jour les informations de la base de données
