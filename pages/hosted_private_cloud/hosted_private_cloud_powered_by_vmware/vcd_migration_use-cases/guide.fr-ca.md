@@ -1,7 +1,7 @@
 ---
-title: "VMware Cloud Director - Audit des cas particuliers de migration vers VCD"
-excerpt: "Découvrez les méthodes d'examen des scénarios difficiles au sein de vos services vSphere/vCenter managé OVHcloud, en préparation à une migration vers VCD"
-updated: 2024-07-22
+title: 'VMware Cloud Director - Audit des cas complexes de migration'
+excerpt: 'Découvrez les méthodes d'examen des scénarios les plus complexes au sein de vos services VMware on OVHcloud dans le but de vous préparer à migrer vers VCD'
+updated: 2024-07-24
 ---
 
 <style>
@@ -21,32 +21,35 @@ details[open]>summary::before {
 > [!primary]
 >
 > VCD on OVHcloud est actuellement en phase alpha. Ce guide peut donc être incomplet et mis à jour à l'avenir.
-> 
+>
 
 ## Objectif
 
-**L'objectif de ce guide est d'auditer les cas particuliers vSphere managé on OVHcloud qui peuvent poser problèmes pour une migration vers VCD.**
+**L’objectif est de fournir une liste des cas d’utilisation complexes et les solutions à mettre en place pour migrer vers VCD.**
 
 ## Prérequis
 
+- Posséder un produit Hosted Private Cloud managé on OVHcloud.
+- Access au [control panel](/links/manager) OVHcloud.
 - Avoir effectué les étapes de verifications du guide suivant avant le lancement d'une migration vers VCD.
+- Ne pas utiliser les solutions de replication Zerto.
+- Ne pas nécessiter une certification PCI-DSS, SNC, HDS.
+- Ne pas avoir de données (VM, vApp) à migrer vers VCD sur plusieurs datacenters (cas multi-vDC, solution ci-dessous) avec votre offre de produit VMware on OVHcloud.
 
 ## En pratique
 
 > [!warning]
-> 
+>
 > Attention cet audit est obligatoire avant toute migration possible vers VCD on OVHcloud.
 >
 
-Ce guide pratique a pour but de vous fournir des informations sur le processus de la migration de vos services Hosted Private Cloud vSphere/vCenter managé vers un écosystème VMware Cloud Director on OVHcloud.
+Ce guide pratique a pour but de vous fournir des informations et des solutions sur le processus de migration de vos services VMware on OVHcloud vers un écosystème VMware Cloud Director on OVHcloud.
 
-Ce document détaille également les prérequis à la migration et le cas échéant, vous explique comment vous conformer à ceux-ci.
+Ce document détaille également les prérequis pour chaque cas d'utilisation et le cas échéant, vous explique comment vous conformer à ceux-ci.
 
 ### Étape 1 - Les prérequis et cas particuliers (obligatoire)
 
-/// details | Quels sont les prérequis et étapes de vérification pour vos usages HPC avant de pouvoir migrer vers VCD ?
-
-Suite à la vérification de ces prérequis, la migration de vos machines virtuelles sera effectuée à chaud et entièrement opérée par les équipes OVHcloud.
+Une fois que vous aurez rempli ces exigences, les équipes d'OVHcloud migreront les VMs du datacenter vSphere principal en utilisant un chemin de migration à chaud.
 
 Ce déplacement à chaud permettra de limiter au minimum les coupures de vos réseaux publics ou privés. Les réseaux privés sont les plus susceptibles d'être impactés, de l'ordre de quelques minutes de coupure.
 
@@ -54,60 +57,20 @@ Ce déplacement à chaud permettra de limiter au minimum les coupures de vos ré
 
 Le tableau ci-dessous vous présente chacun des points bloquants à la migration, ainsi que leur niveau de criticité, qu'il convient de mettre en conformité avant que la migration ne puisse débuter.
 
-| **Étapes**   | **Avertissement** | **Cas d’usages spéciaux**                   | **Solutions**                                                                                  | **Commentaires**                                                                                                                                                                                                  | **Référence à une documentation interne**                                                                                                                                                  |
-|--------------|-------------------|---------------------------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Étape 1**  | ❌                 | **Multi-vDC**                               | **Migrer les données vers un seul datacenter.**                                                | - Ne peut être migré que s'il n'a qu'un seul datacenter dans un vSphere géré sur OVHcloud. Si ce n’est pas le cas, assurez-vous de migrer vos données dans le datacentre qui sera migré.                          | [Migration d'une infrastructure vers un nouveau vDC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)                                             |
-| **Étape 2**  | ❎                 | **FT (tolérance aux pannes)**               | **Pas de tolérance aux pannes.**                                                               | - Mon service vSphere managé chez OVHcloud a-t-il des VM avec FT (Fault Tolerance) activé ?                                                                                                                       | [VMware Fault Tolerance](/pages/bare_metal_cloud/managed_bare_metal/vmware_fault_tolerance)                                                                                                |
-| **Étape 3**  | ❎                 | **Rêgles d'affinité/anti-affinité DRS**     | **Reconstitution des règles d’affinités/anti-affinités DRS dans VCD.**                         | - Pour être conservé, les règles d’affinité/anti-affinité DRS devront être recrées manuellement par vos soins dans VCD après migration. Si vous n'avez pas la necessité de les garder, vous pouvez les supprimer. | [VMware DRS distributed resource scheduler](/pages/bare_metal_cloud/managed_bare_metal/vmware_drs_distributed_resource_scheduler)                                                          |
-| **Étape 4**  | ❎                 | **Périphériques spéciaux (CD, DVD, etc..)** | **Aucun équipement spécial ne doit être branché au datacenter vSphere on OVHcloud migré.**     | - Tous les périphériques spéciaux (CD, DVD, etc.) doivent être retirés avant la migration, sinon ils seront retirés de force par le processus de migration et perdus.                                             |                                                                                                                                                                                            |
-| **Étape 5**  | ❎                 | **Clusters de datastores**                  | **Assurez-vous que toutes les règles de clustering sont supprimées dans vSphere on OVHcloud.** | - Les règles de clustering devront être supprimés avant la migration car cette notion n'existe pas côté VCD.                                                                                                      |                                                                                                                                                                                            |
-| **Étape 6**  | ❎                 | **Sur-engagement mémoire**                  | **Revoir à la hauteur les ressources VCD.**                                                    | - Prévoyez plus de ressources côté VCD ou redimensionnez/optimisez les VMs avant la migration côté vSphere on OVHcloud. Car vous ne pourrez pas sur-engager (over commit) de ressources.                          | [Modification des ressources de la machine virtuelle](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/modify_hardware_configuration_of_vm)                              |
-| **Étape 7**  | ❎                 | **Pools de ressources** (partage)           | **Pas besoin de pools de ressources.**                                                         | - Les pools de ressources seront perdus après la migration car cette notion n'existe plus côté VCD.                                                                                                               |                                                                                                                                                                                            |
-| **Étape 8**  | ❎                 | **Options de sécurité (PCI-DSS, HDS, SNC)** | **Ne pas avoir de vSphere on OVHcloud certifiés PCI-DSS, HDS, SNC.**                           | - Ne peut pas être migré si le vSphere managé on OVHcloud est certifié PCI-DSS, HDS, SNC (vSphere on OVHcloud avec options de sécurité).                                                                          |                                                                                                                                                                                            |
-| **Étape 9**  | ❌                 | **Encrypted VMs**                           | **Déchiffrer les VMs dans vSphere on OVHcloud.**                                               | - Impossible de migrer avec des données (VMs, vApp) chiffrées vSphere managé on OVHcloud.                                                                                                                         |                                                                                                                                                                                            |
-| **Étape 10** | ❌                 | **Solutions de sauvegarde Zerto**           | **Pas de Zerto.**                                                                              | - Si vous utilisez Zerto, vous ne pouvez pas migrer vers VCD pour le moment.                                                                                                                                      | [Mise en place de Zerto Virtual Replication entre deux centres de données OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service) |
-| **Étape 11** | ❎                 | **Hosts / ZP (ZFS pool)**                   | **Libération des ressources (hôtes + ZP).**                                                    | - Les ressources (hôtes + ZP zpool) gratuites "Freespare" et à l'heure "Hourly" doivent être libérées avant la migration. <br/> Ou convertit en ressources mensuelles ("Monthly").                                | [Informations de facturation du Hosted Private Cloud](/pages/account_and_service_management/manage_billing_payment_and_services/facturation_private_cloud)                                 |
-| **Étape 12** | ❌                 | **HCX**                                     | **Pas d’utilisation de HCX.**                                                                  | - Si tel est le cas, impossible de migrer vers VCD.                                                                                                                                                               |                                                                                                                                                                                            |
-
-///
-
-### FAQ - Foire aux questions
-
-#### Dans quel ordre dois-je effectuer mes vérifications pour migrer vers VCD ?
-
-En regardant le tableau ci-dessus, vous remarquez qu'un bon nombre de vérifications doivent être effectuées par vos soins avant d'envisager un passage vers VCD. Nous vous conseillons de lancer ces vérifications pour votre infrastructure vSPhere managé on OVHcloud de haut en bas comme le suggère la colonne étape. Vous pouvez imprimer ce guide et cocher la case *done* « (effectué) pour les étapes réalisées.
-
-Nous vous invitons à vous poser un certain nombre de questions, par exemple :
-
-- Est-ce que mon infrastructure vSphere managé Hosted Private Cloud VMware on OVHcloud utilise du multi-vDC (plusieurs datacenters) ? 
-    - Oui, je dois migrer toutes mes données dans un seul datacenter afin de pouvoir migrer vers VCD.
-    - Non, je passe à l'étape suivante.
-
-- Est-ce que les machines virtuelles utilisent de la FT (fault-tolerance) ? 
-    - Oui, je dois donc la désactiver avant la migration sinon je ne pourrai pas migrer vers VCD.
-    - Non, je passe à l'étape suivante.
-
-- Et ainsi de suite...
-
-#### Est-ce que VCD est compatible avec les certifications PCI-DSS, SNC, HDS ?
-
-Non, VCD on OVHcloud n'est pas encore compatible avec les options de sécurité PCI-DSS, SNC, HDS. Vous ne pourrez donc pas conserver vos certifications de sécurité à ce jour au sein de VCD.
-
-#### Quel type de migration sera utilisé lors de la bascule vers VCD on OVHcloud ?
-
-Il s'agit d'une migration à chaud en cross vCenter dans la plupart des cas.
-
-#### Est-ce que les datacenters HPC seront conservés après la migration ?
-
-Non, toutes les configurations et infrastructures vSphere managés on OVHcloud seront supprimées après la migration. Vous n'aurez plus accès à vos datacenters, uniquement au control panel VCD avec vos données migrées.
-
-#### Est-ce que j'ai accès à la console VCD après la migration ?
-
-Oui, l'action est effectué par OVHcloud et vous permet d'avoir accès aux données après la migration depuis la console VCD on OVHcloud dans des VM par exemple.
-
-#### Par qui est réalisée la migration VCD ?
-
-La migration est réalisée par OVHcloud dans son intégralité, mais les étapes nécessaires avant la migration doivent être réalisées par vos soins. Ces étapes évolueront en fonction des avancées du produit VCD et permettront d'alléger les prérequis nécessaires.
+| **Étapes**   | **Avertissement** | **Cas d'utilisation**                      | **Solutions**                                                                                                                                                        | **Informations complémentaires**                                                                                                                                                                                                        | **Aide et références**                                                                                                                                                                                 |
+|--------------|-------------------|--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Étape 1**  | ⚠️ ⚠️ ⚠️          | **Multi-vDC**                              | Migrer les VMs, vApp vers un seul datacenter.                                                                                                                        | - Ne peut être migré que s'il n'a qu'un seul datacenter. <br/> Si ce n’est pas le cas, assurez-vous avant, de transférer toutes vos données (VMs, vApp) dans le datacenter qui sera utilisé pour la migration par les équipes OVHcloud. | [Migration d'une infrastructure vers un nouveau vDC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)                                                         |
+| **Étape 2**  | ⚠️ ⚠️             | **VMware vSphere FT (fault tolerance)**    | Désactiver la VMware vSphere FT des VMs.                                                                                                                             |                                                                                                                                                                                                                                         | [VMware Fault Tolerance](/pages/bare_metal_cloud/managed_bare_metal/vmware_fault_tolerance)                                                                                                            |
+| **Étape 3**  | ⚠️ ⚠️             | **Règles d'affinité/anti-affinité DRS**    | Reconstitution des règles d’affinités/anti-affinités dans VCD.                                                                                                       | - Pour être conservé, les règles d’affinité/anti-affinité DRS devront être recrées manuellement par vos soins dans VCD après migration.                                                                                                 | [VMware DRS distributed resource scheduler](/pages/bare_metal_cloud/managed_bare_metal/vmware_drs_distributed_resource_scheduler)                                                                      |
+| **Étape 4**  | ⚠️ ⚠️             | **Périphériques spéciaux (CD, DVD, etc..)** | Débrancher tous les équipements spéciaux.                                                                                                                            | - Tous les périphériques spéciaux (CD, DVD, etc.) doivent être retirés avant la migration, sinon ils seront retirés de force par le processus de migration et perdus.                                                                   |                                                                                                                                                                                                        |
+| **Étape 5**  | ⚠️ ⚠️             | **Clusters de datastore**                  | Supprimer toutes les règles de clustering.                                                                                                                           | - Les règles de clustering devront être supprimés avant la migration car cette notion n'existe pas côté VCD.                                                                                                                            |                                                                                                                                                                                                        |
+| **Étape 6**  | ⚠️                | **Sur-engagement mémoire**                 | Prévoyez ou faites évoluer vos besoins en ressources dans VCD (côté control panel VCD). <br/> Ou optimisez vos besoins avant de migrer (côté control panel vSphere). | - Car vous ne pourrez pas sur-engager (over commit) de ressources au sein de VCD, ce concept n'existe pas.                                                                                                                              | [Modification des ressources de la machine virtuelle](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/modify_hardware_configuration_of_vm)                                          |
+| **Étape 7**  | ⚠️                | **Pools de ressources (partage)**          | Pas de solution à ce jour.                                                                                                                                           | - Les pools de ressources seront perdus après la migration car cette notion n'existe plus côté VCD. Nous recommandons à la place l'utilisation des concepts de vApp au sein du control panel VCD on OVHcloud.                           | [Utilisation de vApps dans le portail client VCD on OVHcloud](https://docs.vmware.com/en/VMware-Cloud-Director/10.6/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html) |
+| **Étape 8**  | ⚠️ ⚠️             | **Certifications PCI-DSS, HDS, SNC**       |                                                                                                                                                                      | - Ne peut pas être migré si vos charges de travail sont certifié PCI-DSS, HDS, SNC (options de sécurité).                                                                                                                               |                                                                                                                                                                                                        |
+| **Étape 9**  | ⚠️ ⚠️ ⚠️          | **Encrypted VMs**                          | Déchiffrer les VMs.                                                                                                                                                  | - Impossible d'effectuer la migration avec des VMs, vApp chiffrées.                                                                                                                                                                     |                                                                                                                                                                                                        |
+| **Étape 10** | ⚠️ ⚠️ ⚠️          | **Zerto (disaster recovery)**              | Pas de solution à ce jour.                                                                                                                                           | - Si vous utilisez Zerto (solution de replication de données pour la reprise d'activé en cas de désastre), vous ne pouvez pas migrer vers VCD pour le moment.                                                                           | [Mise en place de Zerto Virtual Replication entre deux centres de données OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)         |
+| **Étape 11** | ⚠️                | **Hosts / ZP (ZFS pool)**                  | Libération des ressources (hôtes + ZP).                                                                                                                              | - Les ressources (hôtes + ZP zpool) gratuites "Freespare" et à l'heure "Hourly" doivent être libérées avant la migration. <br/> Ou convertit en ressources mensuelles ("Monthly").                                                      | [Informations de facturation du Hosted Private Cloud](/pages/account_and_service_management/manage_billing_payment_and_services/facturation_private_cloud)                                             |
+| **Étape 12** | ⚠️ ⚠️ ⚠️          | **HCX (migration de charge de travail)**   | Pas de solution à ce jour.                                                                                                                                           | - Si tel est le cas, impossible de migrer vers VCD.                                                                                                                                                                                     |                                                                                                                                                                                                        |
 
 ## Aller plus loin
 
