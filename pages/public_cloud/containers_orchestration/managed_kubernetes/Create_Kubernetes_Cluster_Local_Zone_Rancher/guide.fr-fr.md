@@ -6,15 +6,45 @@ updated: 2024-07-20
 
 ## Objectif
 
-**Découvrez comment déployer un cluster Kubernetes en utilisant Rancher sur une Local Zone d'OVHcloud.**
+**Découvrez comment déployer un cluster Kubernetes avec Rancher dans une Local Zone d'OVHcloud.**
 
-## Prérequis
+## Pré-requis
 
 - Avoir un projet OVHcloud avec des instances disponibles.
-- Référez-vous aux guides suivants :
-  - [Débuter avec l’API OpenStack](/pages/public_cloud/compute/starting_with_nova)
-  - [Attacher une adresse Floating IP à une instance Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance)
-  - [Gestion des règles de firewall et port security sur les réseaux utilisant OpenStack CLI](/pages/public_cloud/compute/security_group_private_network)
+- Avoir un Rancher existant. Référez-vous au guide suivant pour créer un service Rancher géré :
+  - [Guide de démarrage avec le service Rancher géré](/pages/public_cloud/containers_orchestration/managed_rancher_service/getting-started/)
+- Référez-vous au guide suivant pour créer des instances :
+  - [Démarrage avec OVHcloud Public Cloud Compute](/pages/public_cloud/compute/public-cloud-first-steps)
+
+### Pré-Configuration
+
+#### Comprendre le Processus
+
+Dans ce guide, nous allons créer des instances dans une Local Zone d'OVHcloud, qui seront ensuite utilisées par Rancher pour déployer un cluster Kubernetes en mode "custom cluster". Les étapes clés sont :
+
+1. **Créer des Instances dans la Local Zone** : Nous allons commencer par créer des instances virtuelles dans une Local Zone spécifique au sein d'OVHcloud. Une Local Zone est une zone géographique spécifique avec ses propres ressources et infrastructures dédiées, offrant une informatique à faible latence et haute performance.
+
+2. **Déployer un Rancher géré** : Après avoir créé les instances, nous déploierons un service Rancher géré. Rancher est une puissante plateforme open-source qui fournit une suite complète d'outils pour gérer les clusters Kubernetes.
+
+3. **Configurer un Cluster Kubernetes personnalisé** : Avec Rancher, nous configurerons un cluster Kubernetes en mode personnalisé. Cela implique d'enregistrer nos instances créées précédemment avec Rancher, qui les configurera en tant que nœuds Kubernetes.
+
+#### Pourquoi cette Approche ?
+
+Cette méthode est une solution temporaire en attendant la disponibilité d'un driver Local Zone dédié. Un driver Local Zone permettrait à Rancher de gérer et de déployer directement les ressources et instances dans la Local Zone sans intervention manuelle. En attendant, ce processus étape par étape permet de tirer parti des avantages des Local Zones pour vos clusters Kubernetes.
+
+#### Avantages des Local Zones
+
+- **Faible Latence** : En exécutant les workloads dans une Local Zone, vous bénéficiez d'une latence réduite, cruciale pour les applications et services en temps réel.
+- **Performances Élevées** : Les Local Zones sont conçues pour offrir des performances de calcul élevées avec des ressources dédiées.
+- **Proximité Géographique** : Elles permettent de placer vos applications plus près de vos utilisateurs, améliorant ainsi l'expérience utilisateur.
+
+#### Améliorations Futures
+
+À l'avenir, avec l'introduction d'un driver Local Zone, le processus sera simplifié :
+- Rancher pourra gérer directement le cycle de vie des instances dans les Local Zones.
+- La mise à l'échelle et la gestion automatisées des ressources seront possibles, réduisant l'intervention manuelle.
+
+En suivant ce guide, vous pouvez configurer un environnement Kubernetes robuste dans une Local Zone d'OVHcloud, en profitant des capacités actuelles tout en anticipant les améliorations futures.
 
 ## En pratique
 
@@ -53,43 +83,26 @@ updated: 2024-07-20
 
 ![Select your region](images/instancepret.png)
 
-### Étape 2 : Déployer un Managed Rancher
+### Étape 2 : Configurer Rancher pour Déployer un Cluster Kubernetes
 
-1. Dans le panneau de contrôle OVHcloud, cliquez sur le bouton **Create a Managed Rancher Service**.
-
-![Select your region](images/rancher.png)
-
-2. Remplissez un nom (`my_lz_rancher` par exemple), choisissez le plan **Standard**, la version recommandée, puis cliquez sur le bouton **Create a Managed Rancher Service**.
-
-![Select your region](images/menurancher.png)
-
-3. Une fois le service créé, dans la liste des Managed Rancher Service, cliquez sur votre instance, puis cliquez sur le bouton **Generate access code** pour générer le login et le mot de passe pour accéder à Rancher. Enregistrez le login et le mot de passe et cliquez sur le bouton **Go to Rancher**.
-
-![Select your region](images/generationCode.png)
-
-4. Copiez/collez le mot de passe dans le champ **password** et cliquez sur le bouton **Log in with Local User**.
-
-5. Un nouveau mot de passe sera généré, enregistrez-le ! Enregistrez également l'URL du serveur, cochez la case **End User License Agreement** et cliquez sur le bouton **Continue**.
-
-### Étape 3 : Configurer Rancher pour déployer un cluster Kubernetes
-
-#### Créer un cluster
+#### Créer un Cluster
 
 1. Dans l'interface Rancher, cliquez sur le bouton **Create** puis sur le driver **Custom**.
-2. Remplissez un nom de cluster (`lz-k3s` par exemple).
+2. Remplissez le nom du cluster (par ex., `lz-k3s`).
 3. Dans la liste des versions de Kubernetes, choisissez la version `1.27.14` de k3s.
 4. Cliquez sur le bouton **Create**.
 
-![Select your region](images/customCluster.png)
+![Sélectionner votre région](images/customCluster.png)
 
-#### Configurer le cluster
+#### Configurer le Cluster
 
-- **Pour le nœud etcd et control plane :**
+- **Pour les nœuds du plan de contrôle et etcd** :
+  - Pour la production, suivez les bonnes pratiques et utilisez au moins 3 nœuds pour le plan de contrôle et etcd.
   - Cochez les cases **etcd** et **control plane**.
-  - Copiez la commande d'enregistrement proposée par Rancher.
+  - Copiez la commande d'enregistrement fournie par Rancher.
 
 1. Récupérez l'IP publique de la première instance dans le panneau de contrôle OVHcloud.
-2. Connectez-vous en SSH à la première instance depuis votre terminal local et exécutez la commande d'enregistrement.
+2. SSH dans la première instance depuis votre terminal local et exécutez la commande d'enregistrement.
 
 ```bash
 $ ssh root@xxx.xxx.xxx.xxx
