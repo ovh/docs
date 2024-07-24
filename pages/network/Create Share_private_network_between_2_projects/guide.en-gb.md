@@ -1,35 +1,36 @@
 ---
-title: Network - How to share a private network between 2 public cloud projects
-excerpt: Learn how to share a private network between two public cloud projects on OVH Cloud
+title: Network - How to share a private network between 2 Public Cloud projects
+excerpt: Find out how to share a private network between two OVHcloud Public Cloud projects
 updated: 2024-06-20
 ---
 
 ## Objective
 
-This guide will show you how to connect two projects on an internal network. It allows you to synchronize production and preproduction environments across several projects.
+This tutorial will show you how to connect two projects on an internal network. It allows you to synchronize production and preproduction environments across several projects.
 
-### Requirements
+## Requirements
 
-- Have 2 or more projects.
-- Refer to [Getting started with the OpenStack API](/pages/public_cloud/compute/starting_with_nova)
-- Refer to [Attaching a Floating IP to a Public Cloud instance ](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance)
-- Refer to [Managing firewall rules and port security on networks using OpenStack CLI ](/pages/public_cloud/compute/security_group_private_network)
+- You have 2 or more Public Cloud projects.
+- Refer to [Getting started with the OpenStack API](/pages/public_cloud/compute/starting_with_nova).
+- Refer to [Attaching a Floating IP to a Public Cloud instance](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance).
+- Refer to [Managing firewall rules and port security on networks using OpenStack CLI ](/pages/public_cloud/compute/security_group_private_network).
 
 ## Instructions
 
-#### In our first project
+### In the first project
 
-1. **List the project IDs:**
+#### 1. List the project IDs
 
 ```sh
 openstack project list -c ID -f value
 ```
+
 Example output:
 ```sh
 abc123def456ghi789jkl0mnopqr1234
 ```
 
-2. Create the network that will be shared:
+#### 2. Create the network that will be shared
 
 ```sh
 openstack network create shared_private_network
@@ -49,12 +50,14 @@ Example output:
 
 ```
 
-3. Create two subnets, one for instances on our project and one shared with another project:
-For the Project 1 (local)
+#### 3. Create two subnets, one for instances on our project and one shared with another project
+
+**For project 1 (local):**
 
 ```sh
 openstack subnet create --subnet-range 10.0.2.0/24 --network shared_private_network --allocation-pool start=10.0.2.2,end=10.0.2.254 local_subnet_v2
 ```
+
 Example output:
 
 ```sh
@@ -71,13 +74,14 @@ Example output:
 
 ```
 
-#### For the Project 2 (shared):
+**For project 2 (shared):**
 
 ```sh
 openstack subnet create --subnet-range 10.0.3.0/24 --network shared_private_network --allocation-pool start=10.0.3.2,end=10.0.3.254 shared_subnet_v2
 ```
 
 Example output:
+
 ```sh
 +----------------------+--------------------------------------+
 | Field                | Value                                |
@@ -92,13 +96,14 @@ Example output:
 
 ```
 
-4. Share this network (and associated subnets) with the second project:
+#### 4. Share this network (and associated subnets) with the second project
 
 ```sh
 NETWORK_ID=$(openstack network list --name shared_private_network -c ID -f value)
 openstack network rbac create --target-project def456ghi789jkl0mnopqr1234 --action access_as_shared --type network ${NETWORK_ID}
 
 ```
+
 Example output:
 
 ```sh
@@ -113,7 +118,9 @@ Example output:
 +-------------------+--------------------------------------+
 
 ```
-5. Create a port on the local subnet and an instance associated with it:
+
+####  5. Create a port on the local subnet and an instance associated with it
+
 ```sh
 openstack port create --network shared_private_network --fixed-ip subnet=local_subnet_v2 local_port_v2
 ```
@@ -135,26 +142,35 @@ Example output:
 ```sh
 openstack server create --port 99cb41a8-3639-4717-81e0-e75618bd7775 --security-group default --key-name my_key --flavor d2-2 --image "Ubuntu 22.04" local_instance
 ```
-On our second project:
-1. Switch to the second project:
+
+### In the second project
+
+#### 1. Switch to the second project
    
 ```sh
 export OS_PROJECT_ID=def456ghi789jkl0mnopqr1234
 ```
-2. List the project IDs:
+
+#### 2. List the project IDs
+
 ```sh
 openstack project list -c ID -f value
 ```
+
 Example output:
 
 ```sh
 def456ghi789jkl0mnopqr1234
 ```
-3. Create a port on the shared network:
+
+#### 3. Create a port on the shared network
+
 ```sh
 openstack port create --network shared_private_network --fixed-ip subnet=shared_subnet_v2 shared_port
 ```
+
 Example output:
+
 ```sh
 +-------------------------+--------------------------------------+
 | Field                   | Value                                |
@@ -166,12 +182,15 @@ Example output:
 +-------------------------+--------------------------------------+
 
 ```
-4. Create an instance on the shared network:
+
+#### 4. Create an instance on the shared network
+
 ```sh
 openstack server create --port f6446f46-ce57-47c4-b3bc-42fa28e7d4ff --security-group default --key-name my_key --flavor d2-2 --image "Ubuntu 22.04" pong_server
 
 ```
 Example output:
+
 ```sh
 +--------------------------------------+-----------------------------------------------------+
 | Field                                | Value                                               |
@@ -182,14 +201,17 @@ Example output:
 +--------------------------------------+-----------------------------------------------------+
 
 ```
-#### Verify connectivity
-1. Connect to the first instance:
+
+### Verify connectivity
+
+####  1. Connect to the first instance
+
 ```sh
 ssh -i ~/.ssh/id_rsa ubuntu@<floating_ip>
 
 ```
 
-2. Ping the second instance from the first instance:
+#### 2. Ping the second instance from the first instance
 
 ```sh
 ping -c1 10.0.3.12
@@ -210,4 +232,4 @@ rtt min/avg/max/mdev = 0.292/0.292/0.292/0.000 ms
  
 ## Go further
  
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
