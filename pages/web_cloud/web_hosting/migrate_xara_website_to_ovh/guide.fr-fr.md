@@ -38,7 +38,7 @@ Une fois les fichiers et la base de données de votre site web Xara sauvegardés
 > Nous vous recommandons d'utiliser le logiciel [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) pour transférer vos fichiers Xara vers votre hébergement web.
 >
 
-Pour transférer les fichiers relatifs à votre site web Xara, connectez-vous d'abord à [l'espace de stockage FTP de votre hébergement web OVHcloud](/pages/web_cloud/web_hosting/ftp_connection).
+Pour transférer les fichiers relatifs à votre site web Xara, connectez-vous  à l'[espace de stockage FTP de votre hébergement web OVHcloud](/pages/web_cloud/web_hosting/ftp_connection).
 
 Une fois connecté à l'espace de stockage FTP de votre hébergement web OVHcloud, naviguez vers le répertoire racine « www » (ou dans un autre dossier racine que vous aurez préalablement créé). Si vos fichiers de sauvegarde sont compressés (zippés), décompressez-les dans un dossier vide sur votre ordinateur avant de les téléverser dans le répertoire racine de votre hébergement web OVHcloud.
 
