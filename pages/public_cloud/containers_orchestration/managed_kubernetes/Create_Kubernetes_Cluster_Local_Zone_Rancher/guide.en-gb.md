@@ -97,7 +97,6 @@ By following this guide, you can set up a robust Kubernetes environment in an OV
 #### Configure the Cluster
 
 - **For the control plane and etcd nodes:**
-  - For a demo setup, you can use a single node for both control plane and etcd.
   - For production, follow best practices and use at least 3 nodes for the control plane and etcd.
   - Check the **etcd** and **control plane** boxes.
   - Copy the registration command provided by Rancher.
