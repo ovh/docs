@@ -13,8 +13,8 @@ This guide provides instructions for deploying a SLES for SAP virtual machine wi
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - A [SAP HANA on Private Cloud solution](https://www.ovhcloud.com/asia/hosted-private-cloud/sap-hana/) deployed
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account with:
-    - [An S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) and [an S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with *read* right
-    - [A second S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) and [an S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with *read/write* rights
+    - [An S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) and [an S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read right
+    - [A second S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) and [an S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read/write rights
 
 ## Instructions
 
@@ -88,7 +88,7 @@ Note that the advanced configurations in the OVF template may trigger a warning 
 
 7\. From the list of available networks, select the one where you want to deploy your SAP HANA database. Then, click '`Next`{.action} to continue.
 
-Note that you will have the opportunity to add another network card to your virtual machine after the deployment is complete, if necessary."
+Note that you will have the opportunity to add another network card to your virtual machine after the deployment is complete, if necessary.
 
 ![network](images/step-7.png){.thumbnail}
 
@@ -124,7 +124,7 @@ If you want to use our automated installation process for SAP HANA, check the bo
 
 ![sap-hana-installation](images/step-9.png){.thumbnail}
 
-10\. To use our automated installation process for the OVHcloud Backint Agent for SAP HANA, check the box to enable installation and fill in the required information in the `OVHcloud Backint Agent installation`{.action}` category.
+10\. To use our automated installation process for the OVHcloud Backint Agent for SAP HANA, check the box to enable installation and fill in the required information in the `OVHcloud Backint Agent installation`{.action} category.
 
 > [!warning]
 >
@@ -133,7 +133,7 @@ If you want to use our automated installation process for SAP HANA, check the bo
 
 ![ovhcloud-backint-agent-installation](images/step-10.png){.thumbnail}
 
-11\. To use our automated installation process for forwarding SAP logs to the OVHcloud Logs Data Platform, check the box to enable installation and fill in the required information in the `SAP logs on OVHcloud Logs Data Platform`{.action}` category.
+11\. To use our automated installation process for forwarding SAP logs to the OVHcloud Logs Data Platform, check the box to enable installation and fill in the required information in the `SAP logs on OVHcloud Logs Data Platform`{.action} category.
 
 ![sap-ldp-installation](images/step-11.png){.thumbnail}
 
