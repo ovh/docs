@@ -43,7 +43,7 @@ details[open]>summary::before {
 > This audit is mandatory before any possible migration to VCD on OVHcloud.
 >
 
-This how-to guide will provide you information and solutions with the purpose of migrating your OVHcloud managed VMware vSphere services to a VMware Cloud Director on OVHcloud ecosystem.
+This how-to guide will provide you information and solutions with the purpose of migrating your OVHcloud managed VMware vSphere services to a OVHcloud managed VMware Cloud Director ecosystem.
 
 This document also details the requirements for each use-cases, and if applicable, explains how to comply with them.
 
