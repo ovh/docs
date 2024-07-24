@@ -61,7 +61,7 @@ Vous venez de migrer vos fichiers et votre base de données Xara. Si vous souhai
 
 > [!warning]
 >
-> Si vous souhaitez migrer votre nom de domaine Xara vers OVHcloud, consultez la partie 3 de cette [page du site officiel de Xara](https://www.xara-online.com/fr/domaines-faq.152.html){.external} pour obtenir des informations détaillées sur les étapes administratives nécessaires, comme le déblocage de votre nom de domaine et l'obtention du code de transfert.
+> Si vous souhaitez migrer votre nom de domaine Xara vers OVHcloud, consultez la partie 3 de cette [page du site officiel de Xara](https://www.xara-online.com/fr/domaines-faq.152.html){.external}. Vous-y trouverez des informations détaillées sur les étapes administratives nécessaires, comme le déblocage de votre nom de domaine et l'obtention du code de transfert.
 >
 
 ## Aller plus loin <a name="go-further"></a>
