@@ -1,7 +1,7 @@
 ---
 title: "SAP infrastructure with VMware on OVHcloud SecNumCloud-qualified solution"
 excerpt: "This concept page demonstrates an architecture using the VMware on OVHcloud SAP HANA pack solution in a SecNumCloud context"
-updated: 2024-06-20
+updated: 2024-07-24
 ---
  
 ## Objective
@@ -12,7 +12,7 @@ The following concept enables you to build an architecture with an SAP HANA data
   
 | Objective | Description |
 |---|---|
-| Objective #1 | Building a SAP infrastructure based on existing SecNumCloud-qualified SAP HANA on Private Cloud solution. |
+| Objective #1 | Building an SAP infrastructure based on existing SecNumCloud-qualified SAP HANA on Private Cloud solution. |
 | Objective #2 | Compliance requirements with SecNumCloud regulation. |
 | Objective #3 | An Infrastructure Recovery Point Objective (RPO) of 60 minutes. |
 | Objective #4 (optional) | An SAP infrastructure available in a second region which can be activated in the event of a major issue impacting the primary region. This second region offers an Infrastructure Recovery Point Objective (RPO) near to zero. |
@@ -32,6 +32,8 @@ The following concept enables you to build an architecture with an SAP HANA data
   
 ## Concept elements
 
+<a name="network-connectivity"></a>
+
 ### Network connectivity
 
 To ensure optimal communication quality between your local site and your SAP infrastructure hosted on OVHcloud, we recommend using OVHcloud Connect. This solution offers a secure and high-performance connection between your offices and OVHcloud. For more information, please refer to the [OVHcloud Connect product page](https://www.ovhcloud.com/en-gb/network/ovhcloud-connect/).
@@ -45,7 +47,7 @@ However, ANSSI strongly recommends not opening the SecNumCloud environment to ex
 
 Similarly, the SAP Web Dispatcher, used primarily to publish HTTP(s) endpoints for your SAP environment, should be installed on a dedicated virtual machine that is not used for any other purpose, in a DMZ. Only the HTTPS protocol should be enabled. Access Control Lists (ACL), Authentication Handler, and HTTP Rewrite Handler should be configured with a high level of vigilance. We recommend implementing a Web Application Firewall (WAF) to protect the SAP Web Dispatcher from common web-based attacks, such as SQL injection and cross-site scripting (XSS).
 
-Document all connections and only open the necessary connections. Additionally, connection logs should be externalized in the event of suspicious behavior of the SAProuter or the SAP Web Dispatcher, allowing for its readability without loss, even in the event of service deletion.
+Document all connections and only open the necessary connections. Additionally, connection logs should be externalised in the event of suspicious behaviour of the SAProuter or the SAP Web Dispatcher, allowing for its readability without loss, even in the event of service deletion.
 
 Please note that all communications with a SaaS SAP service, such as the SAP Business Technology Platform (SAP BTP) or SAP Analytics Cloud (SAC), are considered outside the scope of SecNumCloud.
 
@@ -57,15 +59,15 @@ It's important to regularly review and test your security measures to ensure tha
 
 We advise to take consideration of the [SAP Note 2161991](https://me.sap.com/notes/2161991), especially chapter 2 and 3, the [SAP Note 2015392](https://me.sap.com/notes/2015392), and the [SAP Help Portal](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=517013587), to set a compliant configuration between SAP and virtual machines.
 
-For virtualized SAP environments, it is essential to ensure that the NUMA (Non-Uniform Memory Access) sharing is configured appropriately. Failure to do so can result in poor performance and system instability. For more information on NUMA sharing and how to configure it properly, please refer to the [SAP Help Portal](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/SAP+HANA+on+VMware+vSphere) and [SAP Note 2470289](https://me.sap.com/notes/2470289).
+For virtualised SAP environments, it is essential to ensure that the NUMA (Non-Uniform Memory Access) sharing is configured appropriately. Failure to do so can result in poor performance and system instability. For more information on NUMA sharing and how to configure it properly, please refer to the [SAP Help Portal](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/SAP+HANA+on+VMware+vSphere) and [SAP Note 2470289](https://me.sap.com/notes/2470289).
 
 The Fault Tolerance feature provided by VMware is not suitable to protect the SAP HANA virtual machine due to the resource limitation of Fault Tolerance. However, we advise to enable the feature vSphere HA which monitors the health of each ESXi host in the cluster, and automatically restarts the virtual machines hosted on the impacted ESXi host.
 
 For optimal disaster recovery and business continuity, we recommend implementing an SAP HANA cluster with SUSE in a single OVHcloud region. This allows for reduced recovery time objective (RTO) and recovery point objective (RPO) times. We provide a [dedicated documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_sap_hana_cluster) to guide you through the configuration process. When implementing an SAP HANA cluster, it is important to create an anti-affinity rule to avoid running both SAP HANA databases on the same ESXi host.
 
-Data and log volumes in the SAP HANA database must be encrypted using the SAP HANA encryption provided by SAP. Starting with SAP HANA Platform 2.0 SPS 07, data and log encryption and backup encryption parameters are enabled by default during new installations. However, it is important to note that these parameters are not modified during upgrades from previous versions. We strongly recommend enabling virtual machine encryption on the hypervisor level for added security. Our [Virtual Machine Encryption on vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt) documentation provides a step-by-step guide on how to enable this feature. You can also utilize the vSphere Native Key Provider (vNKP) for encryption key management if you do not already have a Key Management Service (KMS). Our [documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp) provides instructions on how to use vNKP for this purpose."
+Data and log volumes in the SAP HANA database must be encrypted using the SAP HANA encryption provided by SAP. Starting with SAP HANA Platform 2.0 SPS 07, data and log encryption and backup encryption parameters are enabled by default during new installations. However, it is important to note that these parameters are not modified during upgrades from previous versions. We strongly recommend enabling virtual machine encryption on the hypervisor level for added security. Our [Virtual Machine Encryption on vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt) documentation provides a step-by-step guide on how to enable this feature. You can also utilise the vSphere Native Key Provider (vNKP) for encryption key management if you do not already have a Key Management Service (KMS). Our [documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp) provides instructions on how to use vNKP for this purpose.
 
-Authentication to the SAP HANA database can be performed using various methods, including password, SAML, X.509 certificate, and Kerberos. We recommend using a strong authentication mechanism to prevent unauthorized access to the database. It is also essential to review and update roles and privileges regularly to ensure appropriate access control. Enabling audit logs is also critical in detecting and responding to suspicious behavior. We recommend externalizing audit logs in the event of a compromising behavior, as outlined in [SAP Note 2624117](https://me.sap.com/notes/0002624117).
+Authentication to the SAP HANA database can be performed using various methods, including password, SAML, X.509 certificate, and Kerberos. We recommend using a strong authentication mechanism to prevent unauthorised access to the database. It is also essential to review and update roles and privileges regularly to ensure appropriate access control. Enabling audit logs is also critical in detecting and responding to suspicious behaviour. We recommend externalising audit logs in the event of a compromising behaviour, as outlined in [SAP Note 2624117](https://me.sap.com/notes/0002624117).
 
 To further enhance security, access to the SAP HANA database for administrative purposes should be restricted and overseen via controlled and monitored entry points. It is also recommended to implement a robust access control policy and regularly review and update it to ensure optimal security.
 
@@ -81,7 +83,7 @@ Additionally, the vSphere Distributed Resource Scheduler (DRS) can also be activ
 
 All external and internal exchanges with your SAP environment must be encrypted using the SAP Secure Network Communications (SNC) protocol for RFC type 3 communication and HTTPS for RFC type H/G. We recommend consulting the SAP documentation [Securing Remote Function Call (RFC)](https://support.sap.com/content/dam/support/en_us/library/ssp/security-whitepapers/securing_remote-function-calls.pdf) for best practices and instructions. Also, your SAP Application Server virtual machines themselves must be encrypted on the hypervisor level. To learn how to enable Virtual Machine Encryption on vSphere, please refer to our dedicated documentation: [Enable Virtual Machine Encryption on vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt).
 
-Authentication can be performed using various methods, including password, Single Sign-On (SSO) with Kerberos, LDAP, or SAML. For optimal security, use a strong authentication mechanism to prevent unauthorized access to the SAP system. Regularly review and update roles and privileges to ensure appropriate access control. Additionally, enable and externalize audit logs to detect and respond to compromising behavior. Refer to the [SAP Help Portal](https://help.sap.com/docs/ABAP_PLATFORM_NEW/025d1fb2f02c42c097f04f45df09106a/f64babd8c8a0489caf61c48d8bdc9478.html) for more information on configuring and managing audit logs in your SAP environment.
+Authentication can be performed using various methods, including password, Single Sign-On (SSO) with Kerberos, LDAP, or SAML. For optimal security, use a strong authentication mechanism to prevent unauthorised access to the SAP system. Regularly review and update roles and privileges to ensure appropriate access control. Additionally, enable and externalise audit logs to detect and respond to compromising behaviour. Refer to the [SAP Help Portal](https://help.sap.com/docs/ABAP_PLATFORM_NEW/025d1fb2f02c42c097f04f45df09106a/f64babd8c8a0489caf61c48d8bdc9478.html) for more information on configuring and managing audit logs in your SAP environment.
 
 ### Backup infrastructure
 
@@ -91,7 +93,7 @@ To ensure the security and compliance of your SAP infrastructure, we highly reco
 
 With Veeam Backup and Replication, you can easily create and manage backups and snapshots of your virtual machines. This ensures a quick recovery time objective (RTO) in the event of any issue with your VMware on OVHcloud solution.
 
-Furthermore, Veeam Backup and Replication provides a Veeam Plug-in for SAP HANA, allowing you to leverage all Backint features proposed by SAP for SAP HANA. This ensures that backups of your SAP HANA databases can be taken in a compliant manner, and that the backup process is optimized for the performance and scalability requirements of these databases.
+Furthermore, Veeam Backup and Replication provides a Veeam Plug-in for SAP HANA, allowing you to leverage all Backint features proposed by SAP for SAP HANA. This ensures that backups of your SAP HANA databases can be taken in a compliant manner, and that the backup process is optimised for the performance and scalability requirements of these databases.
 
 For detailed instructions on how to set up this backup infrastructure, please refer to our documentation: [Backup SAP HANA with Veeam Backup and Replication](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_veeam_backup_sap_hana).
 
@@ -103,11 +105,11 @@ Finally, when implementing your backup infrastructure, be sure to follow best pr
 
 ### SAP Support connection
 
-In line with our previous chapter on network connectivity, the SAProuter must be deployed in a demilitarized zone (DMZ) and the SAPROUTTAB must be configured with stringent vigilance. SAP's connections are encrypted by design, utilizing the SAP Secure Network Communications (SNC) protocol.
+In line with our previous chapter on network connectivity, the SAProuter must be deployed in a demilitarised zone (DMZ) and the SAPROUTTAB must be configured with stringent vigilance. SAP's connections are encrypted by design, utilising the SAP Secure Network Communications (SNC) protocol.
 
-Proper documentation and limiting connections to only those deemed absolutely necessary are essential security measures. Connection logs are crucial for monitoring and detecting any suspicious activities; they should be externalized to enable readability and archival purposes, even if deletion of the SAProuter service is necessary. For more information on best practices, see [SAP Note 1895350](https://me.sap.com/notes/1895350/E).
+Proper documentation and limiting connections to only those deemed absolutely necessary are essential security measures. Connection logs are crucial for monitoring and detecting any suspicious activities; they should be externalised to enable readability and archival purposes, even if deletion of the SAProuter service is necessary. For more information on best practices, see [SAP Note 1895350](https://me.sap.com/notes/1895350/E).
 
-Placing the SAProuter behind security devices such as firewalls and intrusion detection systems (IDS) is advisable. These devices can filter, analyze, and control connections toward the SAProuter to enhance security.
+Placing the SAProuter behind security devices such as firewalls and intrusion detection systems (IDS) is advisable. These devices can filter, analyse, and control connections toward the SAProuter to enhance security.
 
 ### Dual regions (optional)
 
@@ -131,7 +133,7 @@ In the event of a takeover to your secondary OVHcloud region, it is crucial to s
 
 Currently, no SecNumCloud-qualified solutions in the OVHcloud portfolio support real-time replication of virtual machines. The Continuous Data Protection (CDP) solution included in Veeam Backup & Replication does not yet have compatibility with the VMware on OVHcloud solution.
 
-Should a Recovery Point Objective (RPO) with an infrastructure delay of several hours be deemed acceptable, you can consider using Veeam Backup & Replication to maintain a synchronized copy between your VMware services. This approach provides a reduced minimum Recovery Time Objective (RTO) that significantly shortens the recovery process for the secondary region.
+Should a Recovery Point Objective (RPO) with an infrastructure delay of several hours be deemed acceptable, you can consider using Veeam Backup & Replication to maintain a synchronised copy between your VMware services. This approach provides a reduced minimum Recovery Time Objective (RTO) that significantly shortens the recovery process for the secondary region.
 
 However, it is strongly advised against scheduling snapshots of virtual machines during periods of high activity, as doing so may result in negative performance impacts. For an optimal balance between backup and performance, carefully plan and configure your snapshot schedule outside peak hours.
 
@@ -143,7 +145,9 @@ The primary concept remains similar to a single-region setup that includes a Sec
 
 In this second region with a SecNumCloud-qualified SAP HANA on Private Cloud service, you can restore backups and snapshots of your SAP application servers, execute a takeover operation on your secondary SAP HANA databases, and eventually restart your SAP systems within a controllable time frame.
 
-The distinction between single-region and two-region setups lies in the recovery capabilities and accelerated timeframes. With the two-region setup, you not only reduce the recovery time but also minimize the service disruption risk due to infrastructure delivery constraints. This design provides quicker recovery, continuous operation, and enhanced business resilience.
+The distinction between single-region and two-region setups lies in the recovery capabilities and accelerated timeframes. With the two-region setup, you not only reduce the recovery time but also minimise the service disruption risk due to infrastructure delivery constraints. This design provides quicker recovery, continuous operation, and enhanced business resilience.
+
+<a name="sap-support-connection"></a>
 
 #### SAP Support connection
 
@@ -153,10 +157,10 @@ In the event of a disaster recovery activation, the public IP address in the SAP
 
 As a reminder, ANSSI strongly recommends not opening the SecNumCloud environment to external support that is not SecNumCloud-qualified.
 
-That said, even during non-disaster situations, the secondary SAProuter must still be configured and managed with the same care and vigilance as if it were the primary route. Consequently, all best practices and guidelines mentioned in the [Network connectivity](#network-connectivity) and [SAP Support connection](#sap-support-connection) chapters must be carefully observed. Proper security measures, logging, and monitoring should be implemented to ensure the security of your SAP infrastructure and maintain a high level of connection reliability with SAP Support.
+That said, even during non-disaster situations, the secondary SAProuter must still be configured and managed with the same care and vigilance as if it was the primary route. Consequently, all best practices and guidelines mentioned in the [Network connectivity](#network-connectivity) and [SAP Support connection](#sap-support-connection) chapters must be carefully observed. Proper security measures, logging, and monitoring should be implemented to ensure the security of your SAP infrastructure and maintain a high level of connection reliability with SAP Support.
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
   
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
