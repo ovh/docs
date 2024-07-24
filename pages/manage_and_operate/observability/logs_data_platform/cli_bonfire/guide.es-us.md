@@ -1,6 +1,6 @@
 ---
 title: CLI - bonfire, querying graylog from a CLI
-updated: 2020-07-27
+updated: 2024-07-24
 ---
 
 ## Objective
@@ -28,21 +28,11 @@ $ pip install --user bonfire
 ### tail -f
 
 ```shell-session
-$ bonfire -h "<your_cluster>.logs.ovh.com" --endpoint "/api" -u "<your_ldp_username>" --tls -f
+$ bonfire -h "<your_cluster>.logs.ovh.com" --port 443 --endpoint "/api" -u "<your_ldp_username>" --tls -f
 Enter password for logs-username@<your_cluster>.logs.ovh.com/api:443:
 Please select a stream to query:
 0: Stream 'My stream' (id: 55210a04e4b09e9fa4fa0209)
 Enter stream number: [0]:
-```
-
-### /tmp/what.log
-
-```shell-session
-$ bonfire -h "<your_cluster>.logs.ovh.com" --endpoint "/api" -u "<your_ldp_username>" --tls -@ "2 minutes ago" "*" -o "/tmp/what.log"
-Enter password for logs-username@<your_cluster>.logs.ovh.com/api:443:
-Please select a stream to query:
-0: Stream 'My stream' (id: 55210a04e4b09e9fa4fa0209)
-Enter stream number: [0]: 0
 ```
 
 ### Password management
@@ -131,7 +121,8 @@ $ bonfire --node sadev -@ 2015-07-20 -k :libceph
 
 ### Parametric queries
 
-You can also define queries with parameters and define this parameter from the command line:
+You can also define queries with parameters and define this parameter from the command line. For example if you want to use a parametric query **uuid** for a field named **container_uuid**, you can do:
+
 
 **.bonfire.cfg**
 
