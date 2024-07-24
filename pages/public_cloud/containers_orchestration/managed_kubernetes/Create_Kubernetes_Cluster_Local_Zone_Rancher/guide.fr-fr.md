@@ -16,6 +16,9 @@ updated: 2024-07-20
 - Référez-vous au guide suivant pour créer des instances :
   - [Démarrage avec OVHcloud Public Cloud Compute](/pages/public_cloud/compute/public-cloud-first-steps)
 
+- Référez-vous à l'article de blog : [Comment créer un cluster Kubernetes dans une Local Zone avec le service Rancher géré](https://blog.ovhcloud.com/how-to-create-a-kubernetes-cluster-in-a-local-zone-through-managed-rancher-service/) pour des informations supplémentaires et des instructions étape par étape.
+
+
 ### Pré-Configuration
 
 #### Comprendre le Processus
