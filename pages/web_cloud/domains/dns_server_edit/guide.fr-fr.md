@@ -81,10 +81,10 @@ Une nouvelle page apparaît et trois options de modification s'offrent à vous.
 
 Cette option permet d'appliquer automatiquement la configuration de la zone DNS OVHcloud existante pour votre nom de domaine. Au préalable, assurez-vous qu'une zone DNS existe bien chez OVHcloud pour votre nom de domaine.
 
-Si besoin, consultez les guides suivants pour vérifier si une zone DNS OVHcloud existe ou non pour votre nom de domaine :
-
-- [Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-- [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+> [!primary]
+>
+> Si besoin, consultez les guides « [Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » et/ou « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) » pour vérifier si une zone DNS OVHcloud existe ou non pour votre nom de domaine.
+>
 
 Pour utiliser les serveurs DNS par défaut d'OVHcloud, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 
@@ -99,9 +99,7 @@ S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer
 
 Ainsi, les serveurs DNS déclarés dans les enregistrements de type NS de la zone DNS OVHcloud seront utilisés pour votre nom de domaine. 
 
-Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient seront inactifs pour votre nom de domaine.
-
-La zone DNS OVHcloud deviendra la zone DNS active pour votre nom de domaine.
+Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient seront inactifs pour votre nom de domaine. La zone DNS OVHcloud deviendra la zone DNS active pour votre nom de domaine.
 
 #### Option 2 - Utiliser mes propres DNS
 
@@ -139,7 +137,7 @@ Elle vous indique le nom des serveurs DNS qui vont être appliqués à votre nom
 
 S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
 
-La zone DNS présente sur vos propres serveurs DNS deviendra la zone DNS active pour votre nom de domaine.
+Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient seront inactifs pour votre nom de domaine. La zone DNS présente sur vos propres serveurs DNS deviendra la zone DNS active pour votre nom de domaine.
 
 #### Option 3 - Utiliser les DNS OVHcloud et mes propres DNS
 
@@ -149,7 +147,7 @@ La zone DNS présente sur vos propres serveurs DNS deviendra la zone DNS active 
 >
 > 1 : Soyez vigilant si vous décidez d'utiliser cette dernière option. En effet, elle nécessite des connaissances avancées sur le fonctionnement du réseau DNS, des serveurs DNS et des zones DNS.
 >
-> 2 : L'option [DNSSEC](/pages/web_cloud/domains/dns_dnssec) doit être désactivée pour utiliser combiner l'utilisation de vos propres serveurs DNS avec les DNS d'OVHcloud.
+> 2 : L'option [DNSSEC](/pages/web_cloud/domains/dns_dnssec) doit être désactivée pour combiner l'utilisation de vos propres serveurs DNS avec les DNS d'OVHcloud.
 >
 > 3 : Veillez à ne pas mélanger un groupe de serveurs DNS avec un autre.
 >
@@ -157,7 +155,6 @@ La zone DNS présente sur vos propres serveurs DNS deviendra la zone DNS active 
 >
 > Chez OVHCloud, les groupes de serveurs DNS sont identifiables à l'aide du numéro présent dans les noms des serveurs. Deux serveurs DNS OVHcloud font partie d'un même groupe de serveurs dès lors qu'ils partagent le même numéro. Par exemple, *dns19.ovh.net* et *ns19.ovh.net*.
 >
-
 
 ### Prise en compte des modifications DNS
 
