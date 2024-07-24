@@ -22,7 +22,7 @@ Créez une instance sur OVHcloud et installez un serveur web qui servira de back
 
 1. **Créer une instance sur OVHcloud** :
    
-   Accédez à votre espace client OVHcloud, allez dans la section "Public Cloud", puis créez une nouvelle instance. Pour des instructions détaillées, consultez la documentation officielle : [Créer une instance sur OVHcloud](https://docs.ovh.com/fr/public-cloud/creer-installer-vm/).
+   Accédez à votre espace client OVHcloud, allez dans la section "Public Cloud", puis créez une nouvelle instance. Pour des instructions détaillées, consultez la documentation officielle : [Créer une instance sur OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps/).
 
 2. **Installer NGINX sur l'instance** :
 
