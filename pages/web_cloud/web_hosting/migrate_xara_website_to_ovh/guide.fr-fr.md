@@ -25,7 +25,7 @@ Ce tutoriel vous explique pas à pas comment migrer votre site web Xara et tous 
 
 ### Étape 1 : sauvegarder les fichiers et la base de données de votre site web Xara
 
-La première étape consiste à récupérer tous les fichiers relatifs à votre site web Xara. Cela inclut les fichiers Xara, ainsi que votre base de données si vous en avez une. Pour plus de détail, consultez la page [Exporting a Website](https://webdesigner.xara.com/bhavtest/test1/xara_desktop/product_support/web_features/exporting_website.html?rhhlterm=website){.external} ou encore l'étape 3 du guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
+La première étape consiste à récupérer tous les fichiers relatifs à votre site web Xara. Cela inclut les fichiers Xara, ainsi que votre base de données si vous en avez une. Pour plus de détails, consultez la page « [Exporting a Website](https://webdesigner.xara.com/bhavtest/test1/xara_desktop/product_support/web_features/exporting_website.html?rhhlterm=website){.external} » ou encore l'étape 3 du guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
 
 ### Étape 2 : transférer votre site web Xara vers OVHcloud
 
