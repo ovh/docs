@@ -45,13 +45,13 @@ You also need to have [Helm](https://docs.helm.sh/) installed on your workstatio
 
 Your NAS-HA can expose multiple partitions, and supports a variety of protocols. Each partition is accessible only from a specific range of IPs. We will create one exposing NFS and make it accessible from your Kubernetes worker nodes.
 
-Access the UI for OVHcloud NAS-HA by clicking the *NAS and CDN* menu in the [Server section of the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated)
+Access the UI for OVHcloud NAS-HA by clicking the *HA-NAS and CDN* menu in the [Server section of the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated)
 
-Create a new NFS partition in your Zpool:
+Click on your NAS, then on "Partitions" tab, then on the "Create a partition" button and create the new NFS partition with the following content:
 
 ![Create an NFS partition](images/create-nfs-partition.png){.thumbnail}
 
-#### Your cluster is installed with Public Network or with a private network without using an OVHcloud Internet Gateway (Openstack Router) or a custom one as your default route for your MKS cluster
+#### Your cluster is installed with Public Network or a private network without using an OVHcloud Internet Gateway or a custom one as your default route
 Once the partition is created, we need to allow our Kubernetes nodes to access our newly created partition.
 
 Get our Kubernetes nodes IP:
@@ -156,6 +156,12 @@ csi-nfs2-controller-58b8b4cf7f-nk727   4/4     Running   0          16s
 
 Let's create a `nfs-storageclass.yaml` file:
 
+
+> [!primary]
+>
+> Don't forget to replace `[ZPOOL_IP]`, `[ZPOOL_NAME]` and `[PARTITION_NAME]` with the correct information.
+>
+
 ```yaml
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -200,7 +206,7 @@ metadata:
 spec:
   accessModes:
   - ReadWriteOnce
-  storageClassName: nfs
+  storageClassName: nfs-csi
   resources:
     requests:
       storage: 1Gi
@@ -314,20 +320,21 @@ Both pods should be running:
 ```bash 
 kubectl get pods
 NAME          READY   STATUS    RESTARTS   AGE
-nfs-nginx-1   1/1     Running   0          14m
-nfs-nginx-2   1/1     Running   0          14m
+nfs-nginx-29r49   1/1     Running   0          14m
+nfs-nginx-f5j92   1/1     Running   0          14m
 ```
 
-Let’s enter inside the first Nginx container to check if the zpool is properly mounted and create a file on the NFS persistent volume:
+Let’s enter inside the first Nginx pod and container to check if the zpool is properly mounted and create a file on the NFS persistent volume:
 
 ```bash
-kubectl exec -it nfs-nginx-1 -n default -- bash
+FIRST_POD=$(kubectl get pod -l name=nginx --no-headers=true -o custom-columns=:metadata.name | head -1)
+kubectl exec -it $FIRST_POD -n default -- bash
 ```
 
 Check if the zpool is mounted on the Nginx pod:
 
 ```bash
-root@nfs-nginx-1:/# mount -l | grep zpool
+root@nfs-nginx-29r49:/# mount -l | grep zpool
 [ZPOOL_IP]:/[ZPOOL_NAME]/[PARTITION_NAME]/[PV_NAME] on /usr/share/nginx/html type nfs4 (rw,relatime,vers=4.1,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=[NODE_IP],local_lock=none,addr=[ZPOOL_IP])
 ```
 
@@ -377,9 +384,22 @@ Let’s try to access our new web page:
 kubectl proxy
 ```
 
-And open the URL [http://localhost:8001/api/v1/namespaces/default/pods/http:nfs-nginx-1:/proxy/](http://localhost:8001/api/v1/namespaces/default/pods/http:nfs-nginx-1:/proxy/)
+Generate the URL to open in your broswer:
+```bash
+URL=$(echo "http://localhost:8001/api/v1/namespaces/default/pods/http:$FIRST_POD:/proxy/")
+echo $URL
+```
+You can open the URL which is displayed to access the Nginx Service.
 
-Now let’s try to see if the data is shared with the second pod (if you have more than one node deployed). Open the URL [http://localhost:8001/api/v1/namespaces/default/pods/http:nfs-nginx-2:/proxy/](http://localhost:8001/api/v1/namespaces/default/pods/http:nfs-nginx-2:/proxy/)
+Now let’s try to see if the data is shared with the second pod (if you have more than one node deployed).
+```bash
+$ SECOND_POD=$(kubectl get pod -l name=nginx --no-headers=true -o custom-columns=:metadata.name | head -2 | tail -1)
+URL2=$(echo "http://localhost:8001/api/v1/namespaces/default/pods/http:$SECOND_POD:/proxy/")
+echo $URL2
+```
+
+You can open the URL which is displayed to access the Nginx Service on the other pod. 
+
 
 As you can see the data is correctly shared between the two Nginx pods running on two different Kubernetes nodes.
 Congratulations, you have successfully set up a multi-attach persistent volume with OVHcloud NAS-HA!
