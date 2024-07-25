@@ -107,13 +107,16 @@ It is important to note that a resource (instance) remains fully private in this
 > Gateway currently supports single-region private networks only. This is the recommended private network scope for production grade setups with this service (including public-to-private Load Balancer which requires a Gateway). Other setups are not supported.
 >
 
+> [!primary]
+> The public IP used by a Public Cloud Gateway is not a Floating IP: this IP lifecycle is bound to the Gateway lifecycle
+>
+
+
 #### Load Balancer inside private networking <a name="loadbalancer"></a>
 
 OVHcloud offers a Load Balancer as part of the Public Cloud ecosystem. This provides the most flexibility for scaling your applications.
 
 The Public Cloud Load Balancer remains fully private, therefore it needs a Gateway service to access the public network and Floating IP for outbound service exposure.
-
-![PCI Networking](images/netcon4.png){.thumbnail}
 
 Read more about it on our [Load Balancer guide page](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
 

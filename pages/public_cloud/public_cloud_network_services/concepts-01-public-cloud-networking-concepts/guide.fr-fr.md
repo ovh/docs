@@ -107,6 +107,10 @@ Il est important de noter qu’une ressource (instance) reste totalement privée
 > La Gateway ne prend actuellement en charge que les réseaux privés mono-région. Il s'agit du mode de réseau privé recommandé pour les configurations de niveau « production » avec ce service (y compris le Load Balancer public-privé qui nécessite une Gateway). Les autres configurations ne sont pas prises en charge.
 >
 
+> [!primary]
+> L'adresse IP public utilisée par la Gateway n'est pas une floating IP : le cycle de vie de cette IP est lié à la durée de vie de la Gateway
+>
+
 #### Load Balancer dans un réseau privé <a name="loadbalancer"></a>
 
 OVHcloud propose un Load Balancer dans le cadre de l'écosystème Public Cloud. Il offre la plus grande flexibilité pour faire évoluer vos applications.
