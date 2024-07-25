@@ -51,7 +51,7 @@ To verify and update your personal information or to change your primary email a
 - **Creating Users**: Create individual accounts for each team member. Ensure each user has a unique set of credentials. You can either:
     * create 'local' users. See [Creating and managing local users on an OVHcloud account](https://help.ovhcloud.com/csm/en-gb-account-managing-users?id=kb_article_view&sysparm_article=KB0030017)
     * set up Identity federation. Multiple protocols / providers are documented : [AD FS](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-adfs?id=kb_article_view&sysparm_article=KB0043008), [Google Workspace](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-googleworkspace?id=kb_article_view&sysparm_article=KB0057482), [Entra ID](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-azure-ad?id=kb_article_view&sysparm_article=KB0057535) or [OKTA](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-okta?id=kb_article_view&sysparm_article=KB0057681)
-- **Grouping Users**: Create groups such as "Developers", "Admins", and "Auditors" to simplify permissions management.
+- **Grouping Users**: Create groups such as "Developers", "Admins", and "Auditors" to simplify permissions management. If you have chosen to create local users, then use this [documentation page](https://help.ovhcloud.com/csm/en-gb-account-managing-users?id=kb_article_view&sysparm_article=KB0030017#group-management) to create local groups. If you have chosen Identity Federation, then the group shall be defined in your identity provider.
 - **Defining Policies**: Assign policies to users and groups to restrict or grant access. For example, a developer might have permissions to deploy applications but not to manage billing information.
 
 **Further Reading**: 
