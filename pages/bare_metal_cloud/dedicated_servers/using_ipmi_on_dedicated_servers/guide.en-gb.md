@@ -6,16 +6,16 @@ updated: 2024-07-23
 
 ## Objective
 
-With the IPMI (Intelligent Platform Management Interface) console, you can access your Dedicated Server directly, without depending on the operating system connectivity state. This guide will explain how to boot this console.
+With the IPMI (Intelligent Platform Management Interface) console, you can access your dedicated server directly, without depending on the operating system connectivity state. This guide will explain how to boot this console.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 <a name="procedure"></a>
 
@@ -26,18 +26,18 @@ You can access the IPMI using several different methods¹. Here is a summary:
 |Method Name|Short Name|Description|Copy-Paste|Virtual ISO reader²|Use Case Example|
 |---|---|---|---|---|---|
 |**KVM**³ via **web browser**|**HTML KVM**|Redirection of the video screen to an **HTML canvas**, exactly as if you were physically connecting a keyboard/mouse via USB and a screen via VGA to your dedicated server.|❌|⚠️⁴|- Troubleshoot a boot issue on your dedicated server.|
-|**KVM**³ via **Java applet**|**Java KVM**|Same as HTML KVM, except that it is in **Java applet** rather than HTML canvas.|❌|✅|- Troubleshoot a boot issue on your dedicated server<br />- Perform a manual installation of a specific OS (not in the [catalog](https://www.ovhcloud.com/en-gb/bare-metal/os/))⁵.|
-|**SoL**⁶ via **web browser**|**JavaScript SoL**|Redirection of a serial connexion to the web browser, exactly as if you were physically connecting a serial console via RS-232 to your dedicated server.|✅|❌|- Troubleshoot a network issue: get system logs and manipulate configuration files.|
-|**SoL**⁶ via **SSH**|**SSH SoL**|Same as JavaScript SoL, except redirection is done to a SSH gateway. You then connect via your favorite SSH client to a remote SSH server, that converts SSH commands to serial commands to the dedicated server.|✅|❌|- Same as JavaScript SoL but from a machine that doesn't have any graphical interface.|
+|**KVM**³ via **Java applet**|**Java KVM**|Same as HTML KVM, except that it uses **Java applet** rather than HTML canvas.|❌|✅|- Troubleshoot a boot issue on your dedicated server. <br />- Perform a manual installation of a specific OS (not in the [catalog](/links/bare-metal/os))⁵.|
+|**SoL**⁶ via **web browser**|**JavaScript SoL**|Redirection of a serial connection to the web browser, exactly as if you were physically connecting a serial console via RS-232 to your dedicated server.|✅|❌|- Troubleshoot a network issue: get system logs and manipulate configuration files.|
+|**SoL**⁶ via **SSH**|**SSH SoL**|Same as JavaScript SoL, except redirection is done to an SSH gateway. You then connect via your preferred SSH client to a remote SSH server that converts SSH commands to serial commands to the dedicated server.|✅|❌|- Same as JavaScript SoL but from a machine without any graphical interface.|
 
-¹ Depending on your dedicated server hardware compatibility (some methods will not be shown in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).<br />
+¹ Depending on your dedicated server hardware compatibility (some methods will not be shown in the [OVHcloud Control Panel](/links/manager)).<br />
 ² Feature that enables the user to mount an ISO image stored locally on your machine to your remote dedicated server, so you can install an OS via IPMI.<br />
 ³ KVM = Keyboard Video and Mouse<br />
 ⁴ Depending on your dedicated server hardware compatibility: use Java KVM instead if not compatible.<br />
-⁵ If the OS you want to install is not in the list of [operating systems available with OVHcloud Bare Metal servers](https://www.ovhcloud.com/en-gb/bare-metal/os/), please note that you can also use a custom image: see [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) for more details.<br />
+⁵ If the OS you want to install is not in the list of [operating systems available with OVHcloud Bare Metal servers](/links/bare-metal/os), please note that you can also use a custom image: See [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) for more details.<br />
 ⁶ SoL = Serial over Lan
 
-To enable one of these methods, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click on the `IPMI/KVM`{.action} tab.
+To enable one of these methods, log in to your [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click on the `IPMI/KVM`{.action} tab.
 
 ### Open KVM via Java applet <a name="applet-java"></a>
 
@@ -87,7 +87,7 @@ When the session is ready, a success message and an URI will appear so you can c
 
 ![SSH SoL Opening](images/ipmi-sol-sshkey-03.png){.thumbnail}
 
-For more details about using SSH keys to establish a SSH connexion, see [this page](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys).
+For more details about using SSH keys to establish an SSH connection, see [this page](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys).
 
 ### Open SoL via web browser <a name="sol-browser"></a>
 
@@ -97,7 +97,7 @@ Click on `From your browser (SoL)`{.action} in the `Serial over LAN (SoL)`{.acti
 
 > [!primary]
 >
-> If the switch to the popup isn't done automatically, you can still click the `Go to console (SoL)`{.action} button.
+> If the switch to the popup does not happen automatically, you can still click the `Go to console (SoL)`{.action} button.
 >
 
 ![JavaScript SoL Opening](images/ipmi-sol-html-02.png){.thumbnail}
@@ -115,7 +115,7 @@ If everything appears to be normal, as per our example, you may be experiencing 
 It will take several minutes for the IPMI to reboot.
 
 > [!primary]
-> This operation doesn't affect the applications, data and services running on your dedicated server.
+> This operation will not affect the applications, data and services running on your dedicated server.
 >
 
 ### Installing an OS using IPMI v1
@@ -125,7 +125,7 @@ It will take several minutes for the IPMI to reboot.
 >
 > 64-bit versions of Java can prevent the `Redirect ISO`/`Redirect CDROM` menus from opening and cause JViewer to crash.
 
-To begin, open [IPMI in a Java applet](./#applet-java) from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then, click `Device`{.action} from the menu bar and select `Redirect ISO`{.action} from the drop-down menu.
+To begin, open [IPMI in a Java applet](./#applet-java) from the [OVHcloud Control Panel](/links/manager). Then, click `Device`{.action} from the menu bar and select `Redirect ISO`{.action} from the drop-down menu.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
@@ -147,7 +147,7 @@ Complete the steps required to install the operating system. Do not forget to re
 > OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
 >
 
-To begin, open [IPMI in a Java applet](./#applet-java) from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then, click `Virtual Media`{.action} and select `Virtual Storage`{.action}.
+To begin, open [IPMI in a Java applet](./#applet-java) from the [OVHcloud Control Panel](/links/manager). Then, click `Virtual Media`{.action} and select `Virtual Storage`{.action}.
 
 ![Virtual_Storage](images/virtual_storage.png){.thumbnail}
 
@@ -180,7 +180,7 @@ Lastly, press the `F4` key to save your changes and restart the server.
 > OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
 >
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), open the [KVM web browser console](./#kvm-browser).
+In the [OVHcloud Control Panel](/links/manager), open the [KVM web browser console](./#kvm-browser).
 
 Here you have access to the same information and functionalities as in the Java-based IPMI modules.
 
@@ -235,12 +235,12 @@ Then reboot the server with this command:
 ipmiutil reset -b
 ```
 
-Afterwards, access the [IPMI console](#procedure) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). You should see the server's BIOS menu displayed.
+Afterwards, access the [IPMI console](#procedure) in your [OVHcloud Control Panel](/links/manager). You should see the server's BIOS menu displayed.
 
 ![KVM BIOS](images/kvm_bios.png){.thumbnail}
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
