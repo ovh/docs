@@ -26,7 +26,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-**Ce guide vous détaille comment activer IAM avec Hosted Private Cloud - VMware on OVHcloud via l'espace client OVHcloud ou par le biais de l'API OVHcloud**.
+**Ce guide vous détaille comment activer IAM au sein de votre VMware vSphere managé on OVHcloud**.
 
 ## Prérequis
 
@@ -89,7 +89,7 @@ Sous la section `IAM OVHcloud`{.action}, cliquez sur `Activer l'IAM OVHcloud`{.a
 
 ### Via l'API OVHcloud
 
-> [!success
+> [!success]
 > 
 > Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 >

@@ -39,12 +39,6 @@ The diagram below shows how IAM works with all OVHcloud resources:
 
 ![IAM Policies](images/iam_policies.png){.thumbnail}
 
-The diagrams below are dedicated to usage of with Hosted Private Cloud - VMware on OVHcloud:
-
-![IAM Schema 2](images/iam_vmware_schema_2.png){.thumbnail}
-
-![IAM 3 Schema](images/iam_vmware_schema_3.png){.thumbnail}
-
 ## FAQ
 
 ### What are the limitations of IAM with Hosted Private Cloud - VMware on OVHcloud?

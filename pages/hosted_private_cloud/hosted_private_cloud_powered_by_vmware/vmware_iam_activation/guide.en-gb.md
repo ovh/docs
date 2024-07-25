@@ -10,7 +10,7 @@ updated: 2024-05-23
 
 ## Objective
 
-**This guide details how to activate IAM with Hosted Private Cloud - VMware on OVHcloud via the OVHcloud Control Panel or with the OVHcloud API**.
+**This guide details how to enable IAM within your OVHcloud managed VMware vSphere.**
 
 ## Requirements
 
@@ -86,4 +86,4 @@ You can now follow the guide [IAM for VMware on OVHcloud - How to create an IAM 
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community)
