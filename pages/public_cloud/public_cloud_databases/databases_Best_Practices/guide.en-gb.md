@@ -68,48 +68,24 @@ To verify and update your personal information or to change your primary email a
 
 ### Step 4: Best Practices for Structuring Public Cloud Projects
 
-#### Establish Landing Zones
+Public Cloud projects is your way to separate the access rights to the different Public Cloud ressources included in those projects between your identities. 
 
-**Purpose**: Create scalable and secure multi-account environments to isolate resources and manage growth efficiently.
+The pattern to split the projects can be :
+* `Domain` : the domain inside your company e.g. Finance, IT, Marketting, Sales...
+* `Application id` : the identifier of the application. It could be its name or an id from the Application Portfolio of your entreprise.
+* `Environment` : the environement e.g. dev, QA, staging, prod.
 
-**Definition**: A Landing Zone is a pre-configured, secure, scalable, and multi-account environment based on best practices. It acts as a starting point for deploying workloads in a cloud environment.
+This would give 
+* finance-ecommerce-dev
+* finance-invoicing-qa
+* it-collaboration-staging
+* it-monitoring-prod
+* marketing-analytics-dev
+* marketing-automation-qa
+* sales-cpq-staging
+* sales-pricing-prod
 
-**Implementation**:
-- Local Zones are strategically positioned near specific users or locations to significantly shorten the physical distance data needs to travel, providing low latency and high performance. These zones ensure full compliance with data location regulations and enhance customer experience with fast response times.
-- OVHcloud Local Zones offer flexibility and scalability, allowing you to add or remove resources on demand. These instances are adapted to various needs, from long-term archiving to high-performance storage solutions.
-- **Guide**: [Creating Public Cloud projects](/pages/public_cloud/compute/create_a_public_cloud_project/).
-
-**Examples**:
-- **Low Latency and Proximity**: Position Local Zones near specific user bases to minimize latency and improve application performance.
-- **Data Residency**: Use Local Zones to comply with data location regulations, ensuring data is processed within specific geographical boundaries.
-- **International Coverage**: OVHcloud aims to deploy 150 Local Zones globally over the next three years, enhancing performance and compliance.
-
-**Further Reading**:
-- [OVHcloud Local Zones Overview](https://www.ovhcloud.com/en/about-us/global-infrastructure/local-zone/?_gl=1*1qvadba*_gcl_au*NTIyMTcxNjkwLjE3MTU5NTg5ODIuMTQxNzQ4MDM5NS4xNzIxNjY0Nzk2LjE3MjE2NjQ3OTY.)
-- [Local Zones Capabilities and Limitations](/pages/public_cloud/compute/local-zones-capabilities-limitations/)
-
-#### Use Multiple Accounts
-
-**Strategy**: Separate resources and workloads into different accounts based on business units, applications, or environments (development, staging, production).
-
-**Implementation**:
-- At OVHcloud, this can be achieved by creating separate accounts for each environment or project. Each account can have its own resources, billing, and management policies.
-- **Example**: Use one account for development and another for production to prevent accidental interference between environments.
-- **Guide**: [OVHcloud Users Management Guide](/pages/account_and_service_management/account_information/ovhcloud-users-management/).
-
-#### Organize by Applications and Environments
-
-**Implementation**: Use VRacks to securely connect resources across different environments. Implement network segmentation to protect sensitive data.
-
-**Example**:
-- Segment your CRM application into development, testing, and production environments, each with its own network policies and security controls.
-- **Guide**: [Connecting Public Cloud instances](/pages/public_cloud/compute/public-cloud-first-steps/).
-
-### Complete Documentation on VRacks and Private Networks
-
-For more details on VRack and private network configurations, refer to the following guides:
-- [Using VRacks with Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack/)
-
+On each public cloud project, you could create a policy TODO add policy
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
