@@ -32,9 +32,13 @@ For detailed instructions on securing your OVHcloud account with two-factor auth
 - **Importance**: Helps recover access to your account if the primary email is inaccessible.
 - **Configuration**: Add a backup email in the OVHcloud Control Panel under your profile settings, ensuring it differs from your primary email address. [Guide on managing personal information](pages/account_and_service_management/account_information/all_about_username/).
 
-### Step 2: Managing Personal Information and Implementing IAM and RBAC
+
+### Step 2: Managing Personal Information
 
 To verify and update your personal information or to change your primary email address, please refer to the official guide: [All about username](/pages/account_and_service_management/account_information/all_about_username).
+
+
+### Step 3: Implementing IAM and RBAC
 
 #### Identity and Access Management (IAM)
 
@@ -52,43 +56,15 @@ To verify and update your personal information or to change your primary email a
     * create 'local' users. See [Creating and managing local users on an OVHcloud account](https://help.ovhcloud.com/csm/en-gb-account-managing-users?id=kb_article_view&sysparm_article=KB0030017)
     * set up Identity federation. Multiple protocols / providers are documented : [AD FS](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-adfs?id=kb_article_view&sysparm_article=KB0043008), [Google Workspace](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-googleworkspace?id=kb_article_view&sysparm_article=KB0057482), [Entra ID](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-azure-ad?id=kb_article_view&sysparm_article=KB0057535) or [OKTA](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-okta?id=kb_article_view&sysparm_article=KB0057681)
 - **Grouping Users**: Create groups such as "Developers", "Admins", and "Auditors" to simplify permissions management. If you have chosen to create local users, then use this [documentation page](https://help.ovhcloud.com/csm/en-gb-account-managing-users?id=kb_article_view&sysparm_article=KB0030017#group-management) to create local groups. If you have chosen Identity Federation, then the group shall be defined in your identity provider.
-- **Defining Policies**: Assign policies to users and groups to restrict or grant access. For example, a developer might have permissions to deploy applications but not to manage billing information.
+- **Defining Policies**: Assign policies to users and groups to restrict or grant access. For example, a developer might have permissions to deploy applications but not to manage billing information. This [documentation page](https://help.ovhcloud.com/csm/en-gb-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058725) defines how to use IAM policies using the OVHcloud Control Panel
 
-**Further Reading**: 
-- [OVHcloud IAM Guide](https://www.ovhcloud.com/en/identity-security/identity-access-management/)
-- [How to use IAM policies using the OVHcloud Control Panel](/pages/account_and_service_management/account_information/iam-policy-ui/)
-- [How to use IAM policies using the OVHcloud API](/pages/account_and_service_management/account_information/iam-policies-api/)
 
 #### Role-Based Access Control (RBAC)
 
-**Definition**: RBAC regulates access to resources based on the roles assigned to individual users.
+**Definition**: RBAC regulates access to resources based on the roles assigned to local users, federated users or services accounts.
 
-**Implementation**: Assign roles to users and groups to control their permissions within the cloud environment.
+**Implementation**: Thanks to the IAM `users`, `groups` and `policies` you are able to define access control that are based on the role. For instance, the "Developer" group can have read-only access to the prod environment but read-write to the dev environment.
 
-**Key Components**:
-1. **Roles**: Define a set of permissions.
-2. **Role Bindings**: Assign roles to users or groups.
-
-**Examples**:
-- **Creating Roles**: Define roles such as "Read-Only", "Developer", and "Administrator". Each role has a specific set of permissions.
-- **Assigning Roles**: Assign the "Read-Only" role to auditors who only need to view resources, and the "Developer" role to users who need to deploy and manage applications.
-- **Using Role Bindings**: Link roles to users and groups to apply the necessary permissions.
-
-**Further Reading**: [OVHcloud RBAC Guide](https://www.ovhcloud.com/en/identity-security/identity-access-management/)
-
-### Step 3: Delegating Access
-
-To manage users and delegate access to your OVHcloud account, please refer to the official guide: [OVHcloud Users Management](/pages/account_and_service_management/account_information/ovhcloud-users-management).
-
-#### Creating and Managing Local Users
-
-**Overview**: With OVHcloud, you can create additional local users with read or write access to your customer account. This allows you to grant other members of your company access to your OVHcloud services without sharing passwords or two-factor authentication details.
-
-**Examples**:
-- **Create a Local User**: Add a user for a new developer joining your team, giving them access to the necessary resources without exposing sensitive information.
-- **User Groups**: Assign the new user to a "Developers" group that has restricted admin access, enabling them to manage applications but not user accounts.
-
-**Further Reading**: For detailed steps on adding and managing local users, refer to the [OVHcloud Users Management Guide](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
 ### Step 4: Best Practices for Structuring Public Cloud Projects
 
