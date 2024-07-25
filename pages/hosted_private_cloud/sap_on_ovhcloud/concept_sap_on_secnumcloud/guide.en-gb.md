@@ -6,7 +6,7 @@ updated: 2024-07-25
  
 ## Objective
 
-The following concept enables you to build an architecture with SAP HANA databases up to 1.5 TB, and take advantage of all VMware features on OVHcloud (including templates OVF/OVA, NSX, DRS, Fault Tolerance, or else vSphere High Availability) for your SAP infrastructure in a single OVHcloud location or across multiple OVHcloud locations in a SecNumCloud context.
+The following concept enables you to build an architecture with SAP HANA databases up to 1.5 TB, and take advantage of all VMware features on OVHcloud (including OVF/OVA templates, NSX, DRS, Fault Tolerance, or else vSphere High Availability) for your SAP infrastructure in a single OVHcloud location or across multiple OVHcloud locations in a SecNumCloud context.
 
 ![schema](images/concept-sap-vmware-secnumcloud.png){.thumbnail}
   
