@@ -14,8 +14,9 @@ updated: 2024-05-23
 
 ## Requirements
 
-- An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- One or more Hosted Private Cloud products - VMware on OVHcloud linked to this account (Hosted Private Cloud powered by VMware, VMware Service Pack)
+- An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+- Have access to the OVHcloud [control panel](/links/manager).
+- One or more Hosted Private Cloud products - VMware on OVHcloud linked to this account (Hosted Private Cloud powered by VMware, VMware Service Pack).
 
 ## Instructions
 

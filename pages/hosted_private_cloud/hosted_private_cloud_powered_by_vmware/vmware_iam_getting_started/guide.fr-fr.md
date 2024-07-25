@@ -4,19 +4,15 @@ excerpt: "Découvrez comment fonctionne IAM avec vSphere"
 updated: 2024-05-23
 ---
 
-> [!warning]
-> La fonctionnalité IAM pour VMware on OVHcloud est actuellement en phase bêta.
-> Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : <https://discord.gg/ovhcloud>. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud.
-
-
 ## Objectif
 
-**Ce guide vous présente les principes de fontionnement de IAM au sein de votre Hosted Private Cloud - VMware on OVHcloud**.
+**Ce guide vous présente les principes de fonctionnement de IAM au sein de votre offre VMware on OVHcloud**.
 
 ## Prérequis
 
-- Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Avoir un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware)
+- Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+- Avoir accès au [control panel](/links/manager) OVHcloud.
+- Avoir un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware).
 
 ## En pratique
 
