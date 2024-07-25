@@ -1,7 +1,7 @@
 ---
 title: "Recuperar la copia de seguridad de una base de datos eliminada"
 excerpt: "Descubra cómo encontrar la copia de seguridad de una base de datos eliminada desde el área de cliente de OVHcloud"
-updated: 2024-07-23
+updated: 2024-07-25
 ---
 
 > [!primary]

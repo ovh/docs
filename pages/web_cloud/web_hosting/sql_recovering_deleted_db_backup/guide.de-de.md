@@ -1,7 +1,7 @@
 ---
 title: "Backup einer gelöschten Datenbank wiederherstellen"
 excerpt: "Erfahren Sie hier, wie Sie das Backup einer im OVHcloud Kundencenter gelöschten Datenbank wiederherstellen können"
-updated: 2024-07-23
+updated: 2024-07-25
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Odzyskiwanie kopii usuniętej bazy danych"
 excerpt: "Dowiedz się, jak odzyskać kopię zapasową bazy danych po jej usunięciu z Panelu klienta OVHcloud"
-updated: 2024-07-23
+updated: 2024-07-25
 ---
 
 > [!primary]

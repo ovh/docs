@@ -1,7 +1,7 @@
 ---
 title: "Recuperare il backup di un database eliminato"
 excerpt: "Scopri come recuperare il backup di un database eliminato dal tuo Spazio Cliente OVHcloud"
-updated: 2024-07-23
+updated: 2024-07-25
 ---
 
 > [!primary]

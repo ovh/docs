@@ -1,7 +1,7 @@
 ---
 title: "Recuperar o backup de uma base de dados eliminada"
 excerpt: "Saiba como recuperar o backup de uma base de dados quando esta foi eliminada a partir da Área de Cliente OVHcloud"
-updated: 2024-07-23
+updated: 2024-07-25
 ---
 
 > [!primary]

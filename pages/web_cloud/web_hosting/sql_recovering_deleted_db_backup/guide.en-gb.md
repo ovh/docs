@@ -1,7 +1,7 @@
 ---
 title: "How to recover a deleted database backup"
 excerpt: "Find out how to retrieve a database backup once it has been deleted from your OVHcloud Control Panel"
-updated: 2024-07-23
+updated: 2024-07-25
 ---
 
 ## Objective
