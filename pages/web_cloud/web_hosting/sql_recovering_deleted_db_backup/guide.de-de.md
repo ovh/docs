@@ -1,6 +1,6 @@
 ---
 title: "Backup einer gelöschten Datenbank wiederherstellen"
-excerpt: "Diese Anleitung erklärt, wie Sie das Backup einer Datenbank, wenn diese über Ihr OVHcloud Kundencenter gelöscht wurde"
+excerpt: "Erfahren Sie hier, wie Sie das Backup einer im OVHcloud Kundencenter gelöschten Datenbank wiederherstellen können"
 updated: 2024-07-23
 ---
 
@@ -12,27 +12,26 @@ updated: 2024-07-23
 
 Die meisten unserer [Webhosting](/links/web/hosting) Angebote beinhalten Datenbanken. Wenn Sie versehentlich eine mit Ihrem Webhosting verbundene Datenbank löschen, können Sie versuchen, über unsere API ein Backup dieser Datenbank wiederherzustellen.
 
-**Diese Anleitung erklärt, wie Sie über die OVHcloud API das Backup einer Datenbank, wenn diese über Ihr OVHcloud Kundencenter gelöscht wurde.**
+**Diese Anleitung erklärt, wie Sie über die OVHcloud API das Backup einer Datenbank abrufen können, wenn diese über Ihr OVHcloud Kundencenter gelöscht wurde.**
 
 > [!warning]
->
-> OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit in Ihrer Verantwortung, sicherzustellen, dass diese ordnungsgemäß funktionieren.
->
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei gängigen Aufgaben bestmöglich zu begleiten. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren. Für APIs können wir Ihnen leider keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie im Abschnitt [„Weiterführende Informationen“](#go-further) dieser Anleitung.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten. Leider können wir Ihnen zur API-Verwendung keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über ein aktives [OVHcloud Webhosting](/links/web/hosting) Angebot, das eine oder mehrere verbundene(n) OVHcloud Shared-Datenbank(n) umfasst.
-- Die Löschung der Datenbank muss weniger als 30 Tage alt sein.
+- Sie verfügen über ein aktives [OVHcloud Webhosting](/links/web/hosting) Angebot mit mindestens einer OVHcloud Shared-Datenbank.
+- Die Löschung der Datenbank muss weniger als 30 Tage her sein.
 
 ## In der praktischen Anwendung
 
-Die OVHcloud APIs werden Entwicklern oder Integratoren zur Verfügung gestellt, um beispielsweise Funktionen, die im OVHcloud Kundencenter vorhanden sind oder nicht, direkt in ihren Anwendungen oder Lösungen zu kombinieren.
+Die OVHcloud API wird Entwicklern zur Verfügung gestellt, um alle verfügbaren Dienst-Funktionen direkt in ihren Anwendungen anzusteuern.
 
 > [!warning]
 >
-> Die von OVHcloud angebotenen Backups für Shared Hosting und die dazugehörigen Datenbanken sind unvertraglich. Wir bieten Ihnen diese als Ergänzung zu Ihren Dienstleistungen an, um Ihnen in Notsituationen zu helfen. Wir empfehlen Ihnen, regelmäßig Ihre eigenen Sicherheitssicherungen durchzuführen, um eventuelle Datenverluste zu vermeiden.
+> Die von OVHcloud angebotenen Backups für Shared Hosting und die dazugehörigen Datenbanken sind unvertraglich. Wir bieten Ihnen diese als Ergänzung zu Ihren Dienstleistungen an, um Ihnen in Notsituationen zu helfen. Wir empfehlen Ihnen, regelmäßig Ihre eigenen Ssicherungen durchzuführen, um Datenverluste zu vermeiden.
 >
 > Darüber hinaus kann OVHcloud, wenn eine Datenbank von ihrem Benutzer oder Administrator gelöscht wird, aus den oben genannten Gründen keine Garantie für die Wiederherstellung des Backups der Datenbank übernehmen.
 >
@@ -41,89 +40,89 @@ Die OVHcloud APIs werden Entwicklern oder Integratoren zur Verfügung gestellt, 
 
 So rufen Sie den Namen Ihres Webhostings ab:
 
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
-2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
+1. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein.
+2. Klicken Sie oben im Kundencenter auf `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
-5. Oben links auf der angezeigten Seite finden Sie den Namen Ihres Webhostings rechts unter `Hosting-Pakete /`{.action}.
+5. Oben links auf der angezeigten Seite finden Sie den Namen Ihres Webhostings rechts unter `Hosting-Pakete`{.action}.
 
 ![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
 
-### Schritt 2 - Verbindung zu den OVHcloud APIs herstellen und ihnen den Zugriff auf Ihre Dienste erlauben
+### Schritt 2 - Einloggen, um die OVHcloud API zu verwenden und Zugriff auf Ihre Dienste zu erlauben
 
-Gehen Sie hierzu wie folgt vor:
+Gehen Sie wie folgt vor:
 
-- Besuchen Sie unsere Website [OVHcloud API](/links/api) (überprüfen Sie, ob Sie sich auf `https://eu.api.ovh.com` befinden, wenn Ihre Dienste in Europa gehostet werden, und auf `https://ca.api.ovh.com`, wenn sie außerhalb Europas gehostet werden).
-- Klicken Sie auf der angezeigten Seite in der Mitte auf `Explore the OVHcloud API`{.action}.
-- Gehen Sie auf der neu angezeigten Seite und links auf der Seite auf das Formular rechts neben dem Formular `v1`{.action} und wählen Sie die Option `/hosting/web` aus.
-- Suchen Sie in der Liste der APIs in der linken Spalte nach der folgenden API, und klicken Sie auf diese: **GET /hosting/web/{serviceName}/dump**. Sie können auch direkt auf die API klicken, um darauf zuzugreifen:
+- Öffnen Sie die korrekte Webseite für Ihre [OVHcloud API](/links/api) (`https://eu.api.ovh.com` wenn Ihre Dienste in Europa gehostet werden oder `https://ca.api.ovh.com`, wenn sie außerhalb Europas gehostet werden).
+- Klicken Sie auf `Explore the OVHcloud API`{.action}.
+- Gehen Sie auf der neuen Seite rechts neben `v1`{.action} auf das Auswahlfeld und wählen Sie `/hosting/web` aus.
+- Klicken Sie in der Liste links auf diesen Endpunkt: **GET /hosting/web/{serviceName}/dump**. Sie können auch direkt den Pfad über folgenden Link öffnen:
 
 > [!api]
 >
 > @api {v1} /hosting/web GET /hosting/web/{serviceName}/dump
 >
 
-- Auf der rechten Seite wird dann die API mit den verschiedenen auszufüllenden Formularen angezeigt.
+- Auf der rechten Seite werden dann alle Parameter des API-Pfads angezeigt.
 - Klicken Sie oben rechts auf `Authenticate`{.action} und dann auf `Login with OVHcloud SSO`{.action}.
 - Das Login-Interface für Ihr [OVHcloud Kundencenter](/links/manager) wird geöffnet.
-- Loggen Sie sich mit Ihrer Kundenkennung ein und klicken Sie auf `Authorize`{.action}, um die OVHcloud APIs mit den Diensten in Ihrem Kundencenter zu verwenden.
-- Sie werden dann automatisch auf die vorherige Seite der API weitergeleitet **GET /hosting/web/{serviceName}/dump**, während Sie in Ihrem OVHcloud Kundencenter eingeloggt sind.
+- Loggen Sie sich mit Ihrer Kundenkennung ein und klicken Sie auf `Authorize`{.action}, um der OVHcloud API Zugriff auf Ihre Dienste zu erlauben.
+- Sie werden dann automatisch wieder auf die vorherige Seite geleitet: **GET /hosting/web/{serviceName}/dump**.
 
 ### Schritt 3 - Verfügbarkeit der Backups überprüfen und die ID des letzten Backups abrufen
 
-Füllen Sie hierzu die verschiedenen Formulare wie folgt aus:
+Füllen Sie hierzu die verschiedenen Felder wie folgt aus:
 
 - Für den Abschnitt `PATH PARAMETERS`:
-- `serviceName`: Geben Sie den Namen Ihres Webhostings ein, den Sie zuvor in Schritt 1 dieser Anleitung erhalten haben.
+    - `serviceName`: Geben Sie den Namen Ihres Webhostings ein, den Sie in Schritt 1 dieser Anleitung erhalten haben.
 
 - Für den Abschnitt `QUERY-STRING PARAMETERS`:
-- `creationDate.from`: Lassen Sie das Formular leer.
-- `creationDate.to`: Lassen Sie das Formular leer.
-- `databaseName`: Geben Sie den Namen der Datenbank ein, die versehentlich gelöscht wurde. (Beispiel: **deletedDatabase.mysql.db**).
-- `deletionDate.from`: Lassen Sie das Formular leer.
-- `deletionDate.to`: Lassen Sie das Formular leer.
-- `Orphan`: Geben Sie den Wert: `true` in Kleinbuchstaben ein.
+    - `creationDate.from`: Lassen Sie das Feld leer.
+    - `creationDate.to`: Lassen Sie das Feld leer.
+    - `databaseName`: Geben Sie den Namen der Datenbank ein, die versehentlich gelöscht wurde (Beispiel: **deletedDatabase.mysql.db**).
+    - `deletionDate.from`: Lassen Sie das Feld leer.
+    - `deletionDate.to`: Lassen Sie das Feld leer.
+    - `Orphan`: Geben Sie den Wert `true` ein.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump.png){.thumbnail}
 
-Wenn Sie die Formulare ausgefüllt haben, klicken Sie unten rechts in den beiden zuvor ausgefüllten Abschnitten auf die blaue Schaltfläche `Try`{.action}.
+Wenn Sie die Felder ausgefüllt haben, klicken Sie unten rechts auf die blaue Schaltfläche `TRY`{.action}.
 
-Wenn alles korrekt angegeben wurde und Backups für die gelöschte Datenbank verfügbar sind, erscheint eine Liste der Backup-IDs im Fenster `RESPONSE`{.action}, wenn Sie auf die Seite unter der Schaltfläche `Try`{.action} gehen.
+Wenn alles korrekt angegeben wurde und Backups für die gelöschte Datenbank verfügbar sind, erscheint eine Liste der Backup-IDs im Fenster `RESPONSE`{.action} unter der Schaltfläche `TRY`{.action}.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-response.png){.thumbnail}
 
-Jede dieser Nummern entspricht einer verfügbaren Backup-ID (ID). Diese Backup-IDs erscheinen von der neuesten zur ältesten. **Kopieren Sie die höchste ID aus der Liste** (ohne die `,` am Ende), wenn Sie (in Schritt 4 dieser Anleitung) das neueste Backup Ihrer gelöschten Datenbank wiederherstellen möchten.
+Jede dieser Nummern entspricht einer verfügbaren Backup-ID. Diese Backup-IDs erscheinen von der neuesten zur ältesten. **Kopieren Sie die oberste ID aus der Liste** (ohne `,` am Ende), wenn Sie (in Schritt 4 dieser Anleitung) das jüngste Backup Ihrer gelöschten Datenbank wiederherstellen möchten.
 
-Wenn im Fenster keine ID angezeigt wird, überprüfen Sie, ob Sie mit der richtigen OVHcloud Kundenkennung eingeloggt sind (wenn Sie mehrere haben). Überprüfen Sie außerdem die Informationen, die Sie in die Abschnitte **PATH PARAMETERS** und **QUERY-STRING PARAMETERS** eingeben. Wiederholen Sie dann den Vorgang.
+Wenn im Fenster keine ID angezeigt wird, überprüfen Sie, ob Sie mit der richtigen OVHcloud Kundenkennung eingeloggt sind (wenn Sie mehrere haben). Überprüfen Sie außerdem die Informationen in den Abschnitten **PATH PARAMETERS** und **QUERY-STRING PARAMETERS**. Wiederholen Sie dann den Vorgang.
 
-Wenn Sie trotzdem noch keine ID sehen, dann sind keine oder mehrere Backups für die gelöschte Datenbank auf unserer Infrastruktur verfügbar.
+Wenn Sie trotzdem noch keine ID sehen, sind keine Backups für die gelöschte Datenbank auf unserer Infrastruktur verfügbar.
 
 ### Schritt 4 - Letzte Sicherung wiederherstellen
 
 Anhand der in Schritt 3 ermittelten Backup-ID können Sie über einen von der API generierten Link das letzte Backup Ihrer Datenbank herunterladen, das gelöscht wurde.
 
-Bleiben Sie hierzu auf unserer Website [OVHcloud API](/links/api) und führen Sie folgende Aktionen aus:
+Führen Sie dazu auf [OVHcloud API](/links/api) folgende Aktionen aus:
 
-- Gehen Sie auf der linken Seite auf das Formular rechts neben dem Formular `v1`{.action} und wählen Sie die Option `/hosting/web`{.action} aus.
-- Suchen Sie in der Liste der APIs in der linken Spalte nach der folgenden API, und klicken Sie auf diese: **GET /hosting/web/{serviceName}/dump/{id}**. Sie können auch direkt auf die API klicken, um darauf zuzugreifen:
+- Gehen Sie auf der neuen Seite rechts neben `v1`{.action} auf das Auswahlfeld und wählen Sie `/hosting/web` aus.
+- Klicken Sie in der Liste links auf diesen Endpunkt: **GET /hosting/web/{serviceName}/dump/{id}**. Sie können auch direkt den Pfad über folgenden Link öffnen:
 
 > [!api]
 >
 > @api {v1} /hosting/web GET /hosting/web/{serviceName}/dump/{id}
 >
 
-- Auf der rechten Seite wird dann die API mit den verschiedenen auszufüllenden Formularen angezeigt.
+- Auf der rechten Seite werden dann alle Parameter des API-Pfads angezeigt.
 
-Füllen Sie die verschiedenen Formulare im Teil `PATH PARAMETERS` aus:
+Füllen Sie die Felder im Teil `PATH PARAMETERS` wie folgt aus:
 
-- `id`: Kopieren Sie die Backup-ID aus Schritt 3. Wenn Sie nicht von unserer OVHcloud API-Seite abgemeldet sind, kann das Interface Ihnen direkt die verschiedenen verfügbaren Backup-IDs anzeigen. Ist das der Fall, können Sie direkt auf die erste ID-Nummer in der Liste direkt unter dem Formular **id** klicken.
-- `serviceName`: Geben Sie den Namen Ihres Webhostings ein, den Sie zuvor in Schritt 1 dieser Anleitung erhalten haben.
+- `id`: Kopieren Sie die Backup-ID aus Schritt 3. Wenn Sie nicht zwischenzeitlich von der OVHcloud API-Seite ausgeloggt wurden, kann das Interface Ihnen direkt die verfügbaren Backup-IDs anzeigen. Ist das der Fall, können Sie auf die erste ID-Nummer in der Liste unter dem Feld **id** klicken.
+- `serviceName`: Geben Sie den Namen Ihres Webhostings ein, den Sie in Schritt 1 dieser Anleitung erhalten haben.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
 
-Wenn Sie alle Formulare ausgefüllt haben, klicken Sie unten rechts im zuvor ausgefüllten Abschnitt auf die blaue Schaltfläche `Try`{.action}.
+Wenn Sie die Felder ausgefüllt haben, klicken Sie unten rechts auf die blaue Schaltfläche `TRY`{.action}.
 
-Wenn alles korrekt angegeben wurde, erscheint das folgende Ergebnis im Fenster `RESPONSE`{.action}, wenn Sie nach unten auf die Seite unterhalb der Schaltfläche `Try`{.action} gehen:
+Wenn alles korrekt angegeben wurde, erscheint das folgende Ergebnis im Fenster `RESPONSE`{.action} unterhalb der Schaltfläche `TRY`{.action}:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-response.png){.thumbnail}
 
@@ -143,10 +142,10 @@ Wenn alles korrekt angegeben wurde, erscheint das folgende Ergebnis im Fenster `
 
 > [!warning]
 >
-> Die Zeilen im obigen Ergebnis werden nicht immer in dieser Reihenfolge angezeigt.
+> Die Zeilen im obigen Ergebnisbeispiel werden nicht immer in dieser Reihenfolge angezeigt.
 >
 
-Kopieren Sie in diesem Ergebnis die gesamte URL in „HTTPS“ **ohne Anführungszeichen** rechts neben dem Begriff `"url":` und fügen Sie sie in die Suchleiste Ihres Internetbrowsers ein, um den Download des Backups zu starten.
+Kopieren Sie in Ihrer Ergebnisausgabe die gesamte URL in HTTPS **ohne Anführungszeichen** aus der Zeile `"url":` und fügen Sie diese in die Adresszeile Ihres Browsers ein, um den Download des Backups zu starten.
 
 ### Schritt 5 - Neue Datenbank erstellen, Backup-Datei importieren und Verbindung zwischen Ihrer Website und der neuen Datenbank wiederherstellen
 
@@ -155,7 +154,7 @@ Nachdem Sie das Backup Ihrer Datenbank wiederhergestellt haben, müssen Sie eine
 Importieren Sie nach der Erstellung dieser neuen Datenbank das Backup mithilfe unserer Anleitung „[Backup in eine Webhosting-Datenbank importieren](/pages/web_cloud/web_hosting/sql_importing_mysql_database)“.
 
 Verbinden Sie zum Schluss Ihre OVHcloud-Datenbank mit der Konfigurationsdatei Ihrer Website im [FTP-Speicherplatz Ihres OVHcloud Hostings](/pages/web_cloud/web_hosting/ftp_connection).
-Ersetzen Sie hierzu die Login-Daten der versehentlich gelöschten Datenbank durch die Login-Daten Ihrer neuen OVHcloud Datenbank. Diese Informationen finden Sie in der Datei „Konfiguration/Verbindung mit Ihrer Datenbank“ auf Ihrer Website.
+Ersetzen Sie hierzu die Login-Daten der versehentlich gelöschten Datenbank durch die Login-Daten Ihrer neuen OVHcloud Datenbank. Diese Informationen finden Sie in der Datei „Konfiguration/Verbindung mit Ihrer Datenbank“ Ihrer Website.
 
 > [!success]
 >
