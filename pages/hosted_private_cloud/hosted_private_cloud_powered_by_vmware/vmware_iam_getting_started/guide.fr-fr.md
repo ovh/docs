@@ -45,7 +45,7 @@ Index des guides IAM globaux au sein de l'univers OVHcloud:
 
 ### Introduction
 
-[IAM (Identity and Access Management)](/links/identity-security/iam) pour Hosted Private Cloud VMware on OVHcloud est une solution de sécurité robuste et complète conçue pour rationaliser la gestion des identités des utilisateurs et leur accès aux ressources au sein de l’environnement OVHcloud. 
+[IAM (Identity and Access Management)](/links/identity-security/iam) est une solution de sécurité robuste et complète conçue pour rationaliser la gestion des identités des utilisateurs et leur accès aux ressources au sein de l’environnement OVHcloud. 
 
 Ce produit fournit une plateforme centralisée pour définir et appliquer des stratégies, s'assurer que seuls les utilisateurs autorisés ont accès à des **ressources/actions** spécifiques et simplifier le processus de gestion des utilisateurs (federation/groupes). 
 
@@ -105,11 +105,11 @@ Vous pouvez utiliser ces roles avec une politique IAM, ou en créer d'autre et m
 
 ### Quelles sont les limitations de IAM HPC ?
 
-IAM est compatible uniquement avec vSphere managé on OVHcloud non certifiés HDS, PCI-DSS ou SecNumCloud (SNC).
+IAM n'est pas compatible avec les options de sécurités HDS, PCI-DSS ou SecNumCloud (SNC).
 
 ### Est-ce que IAM au sein de HPC est compatible avec NSX ?
 
-Non, IAM n'est pas compatible pour fonctionner avec les technologies réseau NSX-T managé sur OVHcloud. Le login "avec IAM" sur NSX-T n'est pas disponible.
+Non, IAM n'est pas compatible pour fonctionner avec les technologies réseau NSX-T/NSX-v managé sur OVHcloud. Le login "avec IAM" dans NSX-T on OVHcloud n'est pas disponible.
 
 ### Est-ce que je peux activer IAM facilement ?
 
