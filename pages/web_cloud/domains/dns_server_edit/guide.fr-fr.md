@@ -1,7 +1,7 @@
 ---
 title: "Modifier les serveurs DNS d'un nom de domaine OVHcloud"
 excerpt: 'Apprenez à modifier les serveurs DNS de votre nom de domaine enregistré chez OVHcloud'
-updated: 2024-07-24
+updated: 2024-07-26
 ---
 
 ## Objectif
@@ -90,7 +90,7 @@ Pour utiliser les serveurs DNS par défaut d'OVHcloud, cliquez sur `Appliquer la
 
 //////// Placer screen EN ici 
 
-Elle vous indique le nom des deux serveurs DNS qui vont être appliqués à votre nom de domaine. Ils doivent avoir l'une des deux formes suivantes :
+Elle vous indique le nom des 2 serveurs DNS qui vont être appliqués à votre nom de domaine. Ils doivent avoir l'une des 2 formes suivantes :
 
 - `nsXX.ovh.net` et `dnsXX.ovh.net` (où chaque `X` représente un chiffre compris entre **0** et **9**)
 - `ns200.anycast.me` et `dns200.anycast.me` (si vous avez souscrit à l'option [DNS anycast](/links/web/domains-options))
@@ -111,28 +111,26 @@ Cela peut être les serveurs DNS externes fournis par l'un de nos concurrents vo
 
 > [!warning]
 >
-> Chaque encadré de saisie ne peut contenir qu'un seul serveur DNS à la fois. Un serveurs DNS correspond donc à un encadré.
+> Chaque encadré de saisie (visible dans la capture écran précédente) ne peut contenir qu'un seul serveur DNS à la fois. Un serveurs DNS correspond donc à un encadré.
 >
 > De plus, une note d'information sur fond bleu, située juste au dessus du premier encadré de saisie, vous indique le nombre minimum et le nombre maximum de serveurs DNS que vous pouvez utiliser pour votre nom de domaine. Ces valeurs varient selon l'extension de votre nom de domaine.
 >
 
 Pour renseigner votre propre serveur DNS, remplissez les 2 formulaires de l'encadré comme suit :
 
-- `Serveur DNS` : renseignez le nom du serveur DNS à appliquer à votre nom e domaine
-- `IP associée (facultatif)` : saisissez l'adresse IP du serveur DNS renseigné.
+- `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
+- `IP associée (facultatif)` : adresse IP du serveur DNS renseigné.
 
 Cliquez sur le bouton `+`{.action} situé à droite des 2 formulaires. Il permet d'ajouter le serveur DNS et de faire apparaître un nouvel encadré de saisie juste en dessous du précédent.
 
 Réitérez l'opération autant de fois que vous avez de serveurs DNS à ajouter. Ceci en respectant les limites indiquées dans la note d'information. 
-
-N'oubliez pas de cliquer sur le bouton `+`{.action} pour valider la saisie du serveur DNS à ajouter.
+N'oubliez pas de cliquer sur le bouton `+`{.action} pour chaque serveur DNS afin de valider la saisie du serveur DNS à ajouter.
 
 Une fois tous vos propres serveurs DNS ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 
 //////// Placer screen EN ici 
 
 Elle vous indique le nom des serveurs DNS qui vont être appliqués à votre nom de domaine.
-
 S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
 
 Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient seront inactifs pour votre nom de domaine. La zone DNS présente sur vos propres serveurs DNS deviendra la zone DNS active pour votre nom de domaine.
@@ -151,35 +149,35 @@ Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient 
 >
 > Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils vont de pair et sont synchronisés. Si vous y ajoutez des serveurs DNS externes à OVHcloud (ou d'un groupe de serveurs DNS OVHcloud différent), la résolution DNS se fera de manière aléatoire entre les serveurs DNS OVHcloud et les serveurs DNS externes renseignés.
 >
-> Chez OVHCloud, les groupes de serveurs DNS sont identifiables à l'aide du numéro présent dans les noms des serveurs. Deux serveurs DNS OVHcloud font partie d'un même groupe de serveurs dès lors qu'ils partagent le même numéro. Par exemple, *dns19.ovh.net* et *ns19.ovh.net*.
+> Chez OVHCloud, les groupes de serveurs DNS sont identifiables à l'aide du numéro présent dans les noms des serveurs. Deux serveurs DNS OVHcloud font partie d'un même groupe de serveurs DNS dès lors qu'ils partagent le même numéro. Par exemple, *dns19.ovh.net* et *ns19.ovh.net*.
 >
 
-Cette option permet de combiner l'utilisation de vos propres serveurs DNS tout en conservant les serveurs DNS OVHcloud actifs pour votre nom de domaine.
+Cette option permet de combiner l'utilisation de vos propres serveurs DNS tout en conservant les serveurs DNS OVHcloud actifs pour votre nom de domaine. En réalisant cette combinaison, cela permet, par exemple, d'assurer d'avantage l'accès à aux différents services associés à votre nom de domaine (hébergement web, serveurs e-mail, etc.). En effet et toujours par exemple, si un groupe de serveurs DNS devient indisponible pendant quelques minutes, les autres serveurs DNS déclarés peuvent prendre le relais.
+
+Cependant, vérifiez bien que les configurations des zones DNS présentes sur les différents serveurs DNS concernés sont correctement paramétrées pour fonctionner toutes ensemble. Effectivement, la plupart du temps, tous les serveurs DNS seront opérationnels. Ils seront tous en capacité de répondre aux demandes qui leurs seront faites et ce, aléatoirement sur le réseau DNS.
 
 > [!warning]
 >
-> Chaque encadré de saisie ne peut contenir qu'un seul serveur DNS à la fois. Un serveurs DNS correspond donc à un encadré.
+> Chaque encadré de saisie (visible dans la capture écran précédente) ne peut contenir qu'un seul serveur DNS à la fois. Un serveurs DNS correspond donc à un encadré.
 >
 > De plus, une note d'information sur fond bleu, située juste au dessus du premier encadré de saisie, vous indique le nombre minimum et le nombre maximum de serveurs DNS que vous pouvez utiliser pour votre nom de domaine. Ces valeurs varient selon l'extension de votre nom de domaine.
 >
 
 Pour renseigner votre propre serveur DNS, remplissez les 2 formulaires de l'encadré comme suit :
 
-- `Serveur DNS` : renseignez le nom du serveur DNS à appliquer à votre nom e domaine
-- `IP associée (facultatif)` : saisissez l'adresse IP du serveur DNS renseigné.
+- `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
+- `IP associée (facultatif)` : adresse IP du serveur DNS renseigné.
 
 Cliquez sur le bouton `+`{.action} situé à droite des 2 formulaires. Il permet d'ajouter le serveur DNS et de faire apparaître un nouvel encadré de saisie juste en dessous du précédent.
 
 Réitérez l'opération autant de fois que vous avez de serveurs DNS à ajouter. Ceci en respectant les limites indiquées dans la note d'information. 
-
-N'oubliez pas de cliquer sur le bouton `+`{.action} pour valider la saisie du serveur DNS à ajouter.
+N'oubliez pas de cliquer sur le bouton `+`{.action} pour chaque serveur DNS afin de valider la saisie du serveur DNS à ajouter.
 
 Une fois tous vos propres serveurs DNS ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 
 //////// Placer screen EN ici 
 
 Elle vous indique le nom des serveurs DNS qui vont être appliqués à votre nom de domaine.
-
 S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
 
 Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient seront inactifs pour votre nom de domaine. Les zones DNS présentes sur vos propres serveurs DNS mais ausi celle présente sur les serveurs DNS OVHcloud deviendront les zones DNS actives pour votre nom de domaine.
