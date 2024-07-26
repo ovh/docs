@@ -98,16 +98,33 @@ By following this guide, you can set up a robust Kubernetes environment in an OV
 
 ![Select your region](images/customCluster.png)
 
-#### Configure the Cluster
+### Configure the Cluster
+
+
+For production environments, it is crucial to follow Kubernetes best practices to ensure high availability and reliability. This involves setting up separate instances for control plane nodes and worker nodes.
+
+#### What is a Control Plane Instance?
+
+A control plane instance is a node that runs the control plane components of Kubernetes, which are responsible for maintaining the desired state of the cluster, managing the workload, and ensuring that the cluster operates correctly. The control plane includes the API server, etcd (a key-value store), controller manager, and scheduler. In a production setup, it is recommended to use at least 3 separate instances for the control plane to ensure redundancy and high availability.
+
+#### What is a Worker Instance?
+
+A worker instance is a node that runs the application workloads in the cluster. Worker nodes are responsible for running the containers that host your applications and providing the resources needed for those applications to run. It is recommended to use separate instances for worker nodes to ensure that the workload is properly distributed and that the performance of the control plane is not impacted by application load.
+
+### Production Setup Recommendations
+
+For production, follow these guidelines to ensure a robust and reliable Kubernetes cluster:
+
+- Use at least 3 separate instances for the control plane and etcd.
+- Use at least 2 separate instances for the worker nodes.
+- Do not reuse control plane instances for worker nodes to ensure proper load distribution and stability.
+
+#### Steps to Configure the Cluster
 
 - **For the control plane and etcd nodes:**
-  - For production, follow best practices and use at least 3 nodes for the control plane and etcd.
-  - Check the **etcd** and **control plane** boxes.
+  - In the Rancher interface, check the **etcd** and **control plane** boxes.
   - Copy the registration command provided by Rancher.
-
-1. Retrieve the public IP of the first instance in the OVHcloud control panel.
-2. SSH into the first instance from your local terminal and run the registration command.
-
+  
 
 ```bash
 $ ssh root@xxx.xxx.xxx.xxx
@@ -122,7 +139,6 @@ root@lz-kube-1:~# curl -fL https://dsqdsqdqsd.p7mg.rancher.ovh.net/system-agent-
 100 30794    0 30794    0     0   156k      0 --:--:-- --:--:-- --:--:--  157k
 [INFO]  Label: cattle.io/os=linux
 ...
-
 ```
 
 ### For the worker nodes:
@@ -147,7 +163,7 @@ root@lz-kube-2:~# curl -fL https://dsqdsqdqsd.p7mg.rancher.ovh.net/system-agent-
 [INFO]  Label: cattle.io/os=linux
 ...
 ```
-1. Wait for the cluster to be in **Active** state.
+Wait for the cluster to be in **Active** state.
 
 ### Step 4: Connect to the Cluster with the kubectl CLI
 
