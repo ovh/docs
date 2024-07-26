@@ -23,26 +23,26 @@ In this guide we will use a PostgreSQL database engine as an example, but the pr
 
 You can learn more about how backups works on the [Automated backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups).
 
-Restoration of a backup is done by creating a new service and pushing the backup data to this new service. This full process is called forking and is fully automated. Once this process is done, you will have two independent service running, the one from which the backup comes from, and a new one on which the backup data has been imported.
+Restoration of a backup is done by creating a new service and pushing the backup data to this new service. This full process is called forking and is fully automated. Once this process is done, you will have two independent services running, the one from which the backup comes from, and a new one on which the backup data has been imported.
 
 ## Instructions
 
 ### Step 1: Select the database service you want to restore data from
 
-First you need to go on the overview page of the service you want to restore the backup from.
+First, you need to go to the overview page of the service you want to restore the backup from.
 
 ![Select service](images/service-selection-20230331.png){.thumbnail}
 
 ### Step 2: Go to the backup tab
 
-In the tab list click on `Backups`{.action}.
+In the tab list, click on `Backups`{.action}.
 
 ![Service overview](images/service-overview-20230331.png){.thumbnail}
 
 ### Step 3: Select the backup to restore from
 
-Select the backup from which you want to restore from. To help you choose, observe the dates at which the backups have been performed in the "Creation date" column.
-Click on the `...`{.action} button corresponding to the chosen backup. Then click on `Duplicate (Fork)`{.action} to go on the configuration page of the new service.
+Select the backup from which you want to restore. To help you choose, observe the dates at which the backups have been performed in the "Creation date" column.
+Click on the `...`{.action} button corresponding to the chosen backup. Then click on `Duplicate (Fork)`{.action} to go to the configuration page of the new service.
 
 > [!warning]
 > The MongoDB service has the option to restore a backup in place, meaning restoring the backup on the same service. This option will rollback ALL data to the state it was in when the backup was done. This can induce data loss.
@@ -51,17 +51,21 @@ Click on the `...`{.action} button corresponding to the chosen backup. Then clic
 
 ### Step 4: Configure the target service
 
-As seen before, when restoring a backup you create a new separate database service on which the backup data will be imported. You are able to configure this new service as you wish.
+As seen before, when restoring a backup, you create a new separate database service on which the backup data will be imported. You are able to configure this new service as you wish.
 
 #### Immutable options
 
 For obvious reasons, you cannot change the engine, this option is not offered. The same goes for the engine version, you will be able to update it once the new service is running.
 
-The region is not modifiable as well, your new service will be on the same region as the old one.
-
 You will find a reminder of all these options in the order summary.
 
 ![Immutable options](images/immutable-options.png){.thumbnail}
+
+#### Region
+
+You can choose a different region for your new service. This allows you to optimize performance and comply with data residency requirements.
+
+![Select Region](images/select-region-20230726.png){.thumbnail}
 
 #### Restore point
 
@@ -85,7 +89,7 @@ You will also be offered the ease to choose the most recent date directly.
 
 #### Plan
 
-When restoring a backup you can select another service plan.
+When restoring a backup, you can select another service plan.
 
 ![Plan selection](images/plan-selection-20230331.png){.thumbnail}
 
@@ -113,12 +117,12 @@ You can update the network options.
 
 ![Options selection](images/option-selection-20230331.png){.thumbnail}
 
-Now click on `Create a fork`{.action} and the new service will be created. Please note that depending on the backup size it can take some time before the service is available.
+Now click on `Create a fork`{.action} and the new service will be created. Please note that depending on the backup size, it can take some time before the service is available.
 
 ### Step 5: Wait for service creation
 
 You now just have to wait for your service to be ready.
-This new service is now completly independent from the one you forked the backup from. You can safely delete the old service without impacting the new one.
+This new service is now completely independent from the one you forked the backup from. You can safely delete the old service without impacting the new one.
 
 > [!warning]
 > The newly created service does not duplicate IP restrictions nor users which were created on the old service. You will have to recreate those before using your new service.
