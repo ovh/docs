@@ -121,10 +121,14 @@ For production, follow these guidelines to ensure a robust and reliable Kubernet
 
 #### Steps to Configure the Cluster
 
+
 - **For the control plane and etcd nodes:**
   - In the Rancher interface, check the **etcd** and **control plane** boxes.
+  - ![Select Control Plane](images/selectControl.png)
   - Copy the registration command provided by Rancher.
   
+1. Retrieve the public IP of the first control plane instance in the OVHcloud control panel.
+2. SSH into the first control plane instance from your local terminal and run the registration command.
 
 ```bash
 $ ssh root@xxx.xxx.xxx.xxx
@@ -141,12 +145,16 @@ root@lz-kube-1:~# curl -fL https://dsqdsqdqsd.p7mg.rancher.ovh.net/system-agent-
 ...
 ```
 
-### For the worker nodes:
+#### For the worker nodes:
 
-1. Uncheck the boxes and check only the **Worker** box.
-2. Copy the registration command provided by Rancher.
-3. Retrieve the public IPs of the other two instances in the OVHcloud control panel.
-4. SSH into each instance from your local terminal and run the registration command for the worker nodes.
+- **For the worker nodes:**
+  - In the Rancher interface, uncheck the **etcd** and **control plane** boxes and check only the **Worker** box.
+  - ![Select Worker Nodes](images/selectWorkers.png)
+  - Copy the registration command provided by Rancher.
+
+1. Retrieve the public IPs of the worker instances in the OVHcloud control panel.
+2. SSH into each worker instance from your local terminal and run the registration command.
+
 
 ```bash
 $ ssh root@xxx.xxx.xxx.xxx
