@@ -509,6 +509,7 @@
         + [Concepts](hosted-private-cloud-sap-ovhcloud-concepts)
             + [SAP HANA on Bare Metal and SAP Application Servers on VMware on OVHcloud](hosted_private_cloud/sap_on_ovhcloud/concept_dedicated_server_and_hpc)
             + [SAP infrastructure with VMware on OVHcloud solution](hosted_private_cloud/sap_on_ovhcloud/concept_vmware_for_sap)
+            + [SAP infrastructure with SecNumCloud-qualified SAP HANA on Private Cloud](hosted_private_cloud/sap_on_ovhcloud/concept_sap_on_secnumcloud)
         + [Getting started](hosted-private-cloud-sap-ovhcloud-getting-started)
             + [Install SAP HANA on Bare Metal with SLES 15 for SAP](hosted_private_cloud/sap_on_ovhcloud/cookbook_install_sles_sap_hana_dedicated_server)
             + [Shared responsibility for SAP on OVHcloud solutions](hosted_private_cloud/sap_on_ovhcloud/sap_raci)
