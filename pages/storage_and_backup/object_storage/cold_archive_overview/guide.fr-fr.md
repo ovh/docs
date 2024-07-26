@@ -1,6 +1,6 @@
 ---
-title: Cold Archive - Présentation
-excerpt: Découvrez le service, ses fonctionnalités et sa facturation
+title: Cold Archive - Overview
+excerpt: Discover the service, its features, and billing
 updated: 2024-06-28
 ---
 
@@ -10,152 +10,154 @@ updated: 2024-06-28
 }
 </style>
 
-## Objectif
+## Objective
 
-[OVHcloud Cold Archive](https://www.ovhcloud.com/en-gb/public-cloud/cold-archive/) est une classe de stockage conçue pour un stockage à long terme des données rarement accédées.
+[OVHcloud Cold Archive](https://www.ovhcloud.com/en-gb/public-cloud/cold-archive/) is a storage class designed for long-term storage of rarely accessed data.
 
-Ses principales caractéristiques sont :
+Its main characteristics are:
 
-- Rétention à long terme : conservation des données pour une durée > 8 mois
-- Immuabilité des données : les données ne peuvent pas être mises à jour après archivage
-- Durabilité (99,999%) et protection contre le bit-rot (dégradation des données sur de longues périodes)
-- À tout moment, vous avez accès aux métadonnées toujours en ligne pour consultation. Vous pouvez récupérer les données à la demande dans un délai de 48 heures.
+- Long-term retention: keeping data for more than 8 months
+- Data immutability: data cannot be updated after archiving
+- Durability (99.999%) and protection against bit-rot (data degradation over long periods)
+- At any time, you have access to always-online metadata for consultation. You can retrieve the data on demand within 48 hours.
 
-La conception matérielle est spécifiquement conçue pour ce cas d'utilisation, afin de fournir une plate-forme de confiance avec le meilleur rapport résilience/prix :
+The hardware design is specifically crafted for this use case, providing a reliable platform with the best resilience/price ratio:
 
-- Sans limite de volume, jusqu'à plusieurs pétaoctets de données
-- Basée sur le stockage sur bande magnétique pour une longue durée (> 10 ans) et une faible empreinte carbone
-- Au sein d'une architecture hautement résiliente de plusieurs centres de données
+- No volume limit, up to several petabytes of data
+- Based on magnetic tape storage for long duration (> 10 years) and low carbon footprint
+- Within a highly resilient architecture across multiple data centers
 
-Ce service est adapté à votre entreprise pour les besoins suivants :
+This service is suitable for your business for the following needs:
 
-- Archivage réglementaire et de conformité
-- Préservation des actifs multimédias
-- Stockage de données scientifiques
-- Conservation des données sensibles
-- Archivage des informations de santé
-- Archivage des informations financières
-- Archivage des informations du secteur public
+- Regulatory and compliance archiving
+- Preservation of media assets
+- Storage of scientific data
+- Preservation of sensitive data
+- Archiving healthcare information
+- Archiving financial information
+- Archiving public sector information
 
-Le service vous permet de vous concentrer sur la création et le déploiement d'applications cloud tandis qu'OVHcloud s'occupe de l'infrastructure et de la maintenance du service.
+The service allows you to focus on creating and deploying cloud applications while OVHcloud takes care of the infrastructure and service maintenance.
 
-**Ce guide explique les concepts de la classe de stockage Cold Archive.**
+**This guide explains the concepts of the Cold Archive storage class.**
 
 ## Concepts
 
-Le service est entièrement géré par OVHcloud et accessible via l'API S3.
+The service is fully managed by OVHcloud and accessible via the S3 API.
 
 ![Archive](images/restoring.PNG){.thumbnail}
 
-**Opération en 5 étapes**
+**Operation in 5 Steps**
 
-1. **Stockage (Actif) :** Vos données sont nouvellement stockées dans un bucket au sein de l'Object Storage Bucket.
-2. **Archivage (En cours d'archivage) :**
-    - **Archivage :** Vos données sont en cours d'archivage sur des bandes.
-    - **Archivé :** Vos données sont maintenant archivées sur des bandes, stockées dans l'Archive sur bande (archive à long terme) à travers des datacentres dédiés.
-3. **Récupération (48h) ou Restauration :**
-    - **Restauration :** Vos données sont en cours de copie vers un bucket.
-    - **Restauré :** Vos données sont disponibles dans un bucket, en lecture seule (immuable), au sein de l'Object Storage Bucket.
-4. **Déplacement / Suppression (Vidange) :** Le bucket de l'Object Storage est maintenant vide.
-5. **Suppression (Optionnelle) :** Vos données sont en cours de suppression des bandes.
+1. **Storage (Active):** Your data is newly stored in a bucket within the Object Storage Bucket.
+2. **Archiving (In Progress):**
+    - **Archiving:** Your data is being archived to tapes.
+    - **Archived:** Your data is now archived to tapes, stored in long-term tape archive across dedicated data centers.
+3. **Retrieval (48h) or Restoration:**
+    - **Restoration:** Your data is being copied to a bucket.
+    - **Restored:** Your data is available in a bucket, read-only (immutable), within the Object Storage Bucket.
+4. **Move / Deletion (Flushed):** The Object Storage bucket is now empty.
+5. **Deletion (Optional):** Your data is being deleted from the tapes.
 
 ![Concept Cold Archive](images/5_Steps.png){.w-100}
 
-## Téléchargement des données
+## Data Upload
 
-Créez une archive au niveau du bucket.
+Create an archive at the bucket level.
 
-Archivez et récupérez vos données avec la méthodologie de votre choix :
+Archive and retrieve your data using the method of your choice:
 
-- par CLI
-- avec rClone
-- avec les outils du marché
+- via CLI
+- with rClone
+- with market tools
 
-La limite d'un bucket est de 100 To.
+The limit for a bucket is 100 TB.
 
-## Cycle de vie des données
+## Data Lifecycle
 
-Au cours du cycle de vie, les données sont placées au niveau d'Object Storage pour un dépôt ou une récupération ou stockées sur bande magnétique pour une archive de longue durée.
+During the lifecycle, data is placed at the Object Storage level for deposit or retrieval or stored on magnetic tape for long-term archive.
 
-Vous pouvez suivre les différentes étapes de vos données par le statut de votre bucket
+You can track the different stages of your data by the status of your bucket.
 
-| État de l'archive (=bucket) | Description | Permissions des objets | Durée | Tarification des données |
+| Archive State (=bucket) | Description | Object Permissions | Duration | Data Pricing |
 | --- | --- | --- | --- | --- |
-| **`None`** | Aucune configuration Intelligent-Tiering appliquée au bucket pour l'instant. | Tous | illimité | Standard |
-| **`Archiving`** | Archivage en cours sur bandes. | Listing | <48h | Archive |
-| **`Archived`** | Objets archivés sur bandes uniquement. | Listing | illimité | Archive |
-| **`Restoring`** | Restauration en cours à partir des bandes. | Listing | <48h | Archive |
-| **`Restored`** | Objets restaurés et accessibles. | Lecture seule + Listing | 30 jours | Archive |
-| **`Deleting`** | Suppression des objets des bandes (et des disques si restaurés) en cours. | Listing | <48h | Archive |
-| **`Flushed`** | Le bucket est vide et peut être supprimé en toute sécurité. | Listing (bucket vide) | N/A | Archive |
+| **`None`** | No Intelligent-Tiering configuration applied to the bucket yet. | All | unlimited | Standard |
+| **`Archiving`** | Archiving in progress to tapes. | Listing | <48h | Archive |
+| **`Archived`** | Objects archived to tapes only. | Listing | unlimited | Archive |
+| **`Restoring`** | Restoring from tapes in progress. | Listing | <48h | Archive |
+| **`Restored`** | Objects restored and accessible. | Read-only + Listing | 30 days | Archive |
+| **`Deleting`** | Deleting objects from tapes (and disks if restored) in progress. | Listing | <48h | Archive |
+| **`Flushed`** | The bucket is empty and can be safely deleted. | Listing (empty bucket) | N/A | Archive |
 
-## Performances réseau, téléchargement et récupération
+## Network Performance, Upload, and Retrieval
 
-Cold Archive est un service basé sur Object Storage - API S3. Les performances et les limitations (nombre de buckets, compte, bande passante maximale par connexion, nombre de requêtes par seconde sur le bucket, taille maximale par objet / mpu / part, etc.) sont disponibles [ici](/pages/storage_and_backup/object_storage/s3_limitations).
+Cold Archive is a service based on Object Storage - S3 API. The performance and limitations (number of buckets, account, maximum bandwidth per connection, number of requests per second on the bucket, maximum size per object/mpu/part, etc.) are available [here](/pages/storage_and_backup/object_storage/s3_limitations).
 
-Pour télécharger vos données, la bande passante maximale est de **1 Gbps par connexion logique** et le nombre de connexions utilisables en parallèle est **illimité**.
+For data upload, the maximum bandwidth is **1 Gbps per logical connection** and the number of parallel connections is **unlimited**.
 
-La durée de téléchargement dépend de votre connexion Internet.
+The download duration depends on your internet connection.
 
-Quelques exemples :
+Some examples:
 
-- J'ai une connexion Internet de 1 Gbps, je télécharge une archive de 1 To, cela prendra 2,2 heures.
-- J'ai une connexion Internet de 5 Gbps, je télécharge une archive de 1 To, cela prendra 26 minutes.
-- J'ai une connexion Internet de 5 Gbps, je télécharge une archive de 100 To, cela prendra 1,9 jours.
+- I have a 1 Gbps internet connection, I download a 1 TB archive, it will take 2.2 hours.
+- I have a 5 Gbps internet connection, I download a 1 TB archive, it will take 26 minutes.
+- I have a 5 Gbps internet connection, I download a 100 TB archive, it will take 1.9 days.
 
-### Temps de récupération des données
+### Data Retrieval Time
 
-Le délai d'accessibilité des données dépend du volume de données. Par exemple, pour une récupération de plusieurs centaines de To, le délai moyen est de 48 heures. Pour un volume de quelques To, cela peut prendre de quelques minutes à quelques heures.
+The time to access data depends on the volume of data. For example, for a retrieval of several hundred TB, the average time is 48 hours. For a volume of a few TB, it can take from a few minutes to a few hours.
 
-## RSE, Certifications & Conformité
+## CSR, Certifications & Compliance
 
-### Conformité
+### Compliance
 
-Le service est certifié HDS et ISO 27001.
+The service is HDS and ISO 27001 certified.
 
-### Faible empreinte carbone
+### Low Carbon Footprint
 
-En dehors des phases de lecture et d'écriture, les cartouches ne consomment pas d'électricité. Cela permet d'économiser plus de 95 % d'énergie par rapport à une baie de disques similaire.
+Apart from read and write phases, the cartridges consume no electricity. This saves more than 95% energy compared to a similar disk array.
 
-### Durée
+### Duration
 
-Les bandes magnétiques sont conçues pour durer des décennies (par opposition à une moyenne de cinq ans pour les disques modernes).
+Magnetic tapes are designed to last for decades (as opposed to an average of five years for modern disks).
 
-### Sécurité
+### Security
 
-L'utilisation du chiffrement côté serveur avec des clés de chiffrement fournies par le client (SSE-C) vous permet de définir vos propres clés de chiffrement.
+Using server-side encryption with customer-provided encryption keys (SSE-C) allows you to set your own encryption keys.
 
-Lorsque vous chargez un objet, Object Storage - API S3 utilise la clé de chiffrement que vous fournissez pour appliquer le chiffrement AES-256 à vos données. Lorsque vous récupérez un objet, vous devez fournir la même clé de chiffrement dans le cadre de votre demande. Object Storage - API S3 vérifie d'abord que la clé de chiffrement que vous avez fournie correspond puis déchiffre l'objet avant de vous renvoyer les données de l'objet.
+When you upload an object, Object Storage - S3 API uses the encryption key you provide to apply AES-256 encryption to your data. When you retrieve an object, you must provide the same encryption key as part of your request. Object Storage - S3 API first verifies that the encryption key you provided matches and then decrypts the object before returning the object data to you.
 
-### Immuabilité par WORM
+### Immutability by WORM
 
-Le stockage immuable est souvent obligatoire pour des raisons légales et est l'assurance de ne pas modifier ou supprimer les données après leur écriture.
+Immutable storage is often mandatory for legal reasons and ensures that data cannot be modified or deleted after writing.
 
-Le stockage immuable est un moyen de se protéger contre les logiciels malveillants et les attaques.
+Immutable storage is a way to protect against malware and attacks.
 
-Le service Cold Archive est WORM (**W**rite **O**nce, **R**ead **M**any) par conception.
+The Cold Archive service is WORM (**W**rite **O**nce, **R**ead **M**any) by design.
 
-### Réseau privé / public
+### Private / Public Network
 
-Object Storage est disponible via un point de terminaison public (IP publique).
+Object Storage is available via a public endpoint (public IP).
 
-## Tarification
+## Billing
 
-La solution Cold Archive est facturée en fonction de l'espace d'archivage utilisé (sur bandes magnétiques) et de l'espace de dépôt utilisé (espace Object Storage) avec une granularité de 1 Go. Pour assurer sa lisibilité, le prix est affiché en Go/mois, mais la granularité de facturation est au Go/heure, considérant qu'il y a en moyenne 720 heures dans un mois.
+The Cold Archive solution is billed based on the archived storage space used (on magnetic tapes) and the deposit space used (Object Storage space) with a granularity of 1 GB. To ensure readability, the price is displayed in GB/month, but the billing granularity is per GB/hour, considering there are an average of 720 hours in a month.
 
-La durée minimale d'archivage est de 180 jours. En cas de suppression d'une archive dans ce délai d'engagement, le client se verra facturer un supplément calculé comme suit :
-(180 jours moins le nombre de jours pendant lesquels le service a été utilisé) x prix de la classe de stockage.
+The minimum archiving duration is 180 days. If an archive is deleted within this commitment period, the customer will be charged an additional fee calculated as follows:
+(180 days minus the number of days the service was used) x storage class price.
 
-Il est possible de commencer à archiver un bucket avec moins de 1 To de données, mais l'action d'archivage sera facturée au prix de 1 To.
+It is possible to start archiving a bucket with less than 1 TB of data, but the archiving action will be billed at the price of 1 TB.
 
-## Aller plus loin
+Billing is done in arrears, meaning the customer is billed for the storage consumed in the past month.
 
-Exploitez votre cycle de vie et apprenez à créer des buckets, archiver, récupérer des données, répertorier les métadonnées, en lisant [ce guide](/pages/storage_and_backup/object_storage/cold_archive_getting_started).
+## Go further
 
-[Toute la documentation Object Storage](/products/storage-object-storage).
+Leverage your lifecycle and learn to create buckets, archive, retrieve data, list metadata, by reading [this guide](/pages/storage_and_backup/object_storage/cold_archive_getting_started).
 
-Rendez-vous sur notre chaîne Discord dédiée : <https://discord.gg/ovhcloud>. Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
+[All Object Storage documentation](/products/storage-object-storage).
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Join our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback, and interact directly with the team building our storage and backup services.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+If you need training or technical assistance for implementing our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services experts.
+
+Engage with our [user community](/links/community).
