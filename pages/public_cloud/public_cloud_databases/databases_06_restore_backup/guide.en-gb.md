@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - How to restore a backup
 excerpt: Find out how to restore a backup
-updated: 2023-05-11
+updated: 2023-07-26
 ---
 
 ## Objective
@@ -16,14 +16,6 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A [Public Cloud database service](https://www.ovhcloud.com/en-gb/public-cloud/databases/) up and running
-
-## Before we begin
-
-In this guide we will use a PostgreSQL database engine as an example, but the procedure is exactly the same for all other engines.
-
-You can learn more about how backups works on the [Automated backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups).
-
-Restoration of a backup is done by creating a new service and pushing the backup data to this new service. This full process is called forking and is fully automated. Once this process is done, you will have two independent services running, the one from which the backup comes from, and a new one on which the backup data has been imported.
 
 ## Instructions
 
@@ -65,7 +57,7 @@ You will find a reminder of all these options in the order summary.
 
 You can choose a different region for your new service. This allows you to optimize performance and comply with data residency requirements.
 
-![Select Region](images/select-region-20230726.png){.thumbnail}
+![Select Region](images/select-region.png){.thumbnail}
 
 #### Restore point
 
@@ -129,10 +121,6 @@ This new service is now completely independent from the one you forked the backu
 
 ![Forked service](images/forked-service-20230331.png){.thumbnail}
 
-## We want your feedback!
+## Go further
 
-We would love to help answer questions and appreciate any feedback you may have.
-
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
-
-Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
+Join our community of users on <https://community.ovh.com/en/>.
