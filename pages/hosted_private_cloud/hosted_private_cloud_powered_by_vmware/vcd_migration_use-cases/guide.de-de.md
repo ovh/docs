@@ -1,6 +1,6 @@
 ---
-title: 'VMware Cloud Director - Audit tricky use cases of migration'
-excerpt: 'Discover how to examine the most tricky use cases within your VMware on OVHcloud workflows, for the purpose of beeing prepared for a migration to VCD'
+title: "VMware Cloud Director - Audit tricky use cases of migration"
+excerpt: "Discover how to examine the most tricky use cases within your VMware on OVHcloud workflows, for the purpose of beeing prepared for a migration to VCD"
 updated: 2024-07-24
 ---
 
@@ -53,7 +53,7 @@ Once you have fulfilled these requirements, the OVHcloud teams will migrate the 
 
 This hot migration will minimize disruptions from your public or private networks. Private networks are the most likely to be affected, with downtime of the order of a few minutes.
 
-#### Table - Special cases
+##### Table - Special cases
 
 The table below lists each of the migration bottlenecks and criticality levels that must be remediated before the migration can begin.
 

@@ -1,6 +1,6 @@
 ---
-title: 'VMware Cloud Director - Audit tricky use cases of migration'
-excerpt: 'Discover how to examine the most tricky use cases within your VMware on OVHcloud workflows, for the purpose of beeing prepared for a migration to VCD'
+title: "VMware Cloud Director - Audit tricky use cases of migration"
+excerpt: "Discover how to examine the most tricky use cases within your VMware on OVHcloud workflows, for the purpose of beeing prepared for a migration to VCD"
 updated: 2024-07-24
 ---
 
