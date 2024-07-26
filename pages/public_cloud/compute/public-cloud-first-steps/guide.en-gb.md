@@ -435,7 +435,7 @@ ssh ubuntu@203.0.113.101
 
 [Depending on your setup](#create-ssh), you will have to enter a passphrase that protects your private key or specify the path to your key file. Consult our [SSH keys guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys) for detailed information on this topic.
 
-If you use an alternative SSH client software, refer to its user documentation. A usage example for the open-source solution `PuTTY` are available in [this guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+If you use an alternative SSH client software, refer to its user documentation. A usage example for the open-source solution `PuTTY` is available in [this guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
 
 Continue with [Step 6 below](#manage-access).
 
