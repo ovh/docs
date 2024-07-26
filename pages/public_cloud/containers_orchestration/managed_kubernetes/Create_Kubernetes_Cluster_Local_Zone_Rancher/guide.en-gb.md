@@ -124,7 +124,7 @@ For production, follow these guidelines to ensure a robust and reliable Kubernet
 
 - **For the control plane and etcd nodes:**
   - In the Rancher interface, check the **etcd** and **control plane** boxes.
-  - ![Select Control Plane](images/selectControl.png)
+  - ![Select Control Plane](images/selectControle.png)
   - Copy the registration command provided by Rancher.
   
 1. Retrieve the public IP of the first control plane instance in the OVHcloud control panel.
@@ -149,7 +149,7 @@ root@lz-kube-1:~# curl -fL https://dsqdsqdqsd.p7mg.rancher.ovh.net/system-agent-
 
 - **For the worker nodes:**
   - In the Rancher interface, uncheck the **etcd** and **control plane** boxes and check only the **Worker** box.
-  - ![Select Worker Nodes](images/selectWorkers.png)
+  - ![Select Worker Nodes](images/selectworkers.png)
   - Copy the registration command provided by Rancher.
 
 1. Retrieve the public IPs of the worker instances in the OVHcloud control panel.
