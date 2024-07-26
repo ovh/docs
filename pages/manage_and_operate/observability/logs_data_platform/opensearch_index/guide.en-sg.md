@@ -140,11 +140,11 @@ The first thing to do is to index some clients information. The snippet below is
 To index several documents at once, it is more efficient to use the bulk api. Here is a small snippet of 3 users you can use to test it.
 
 ```json
-{ "index" : { "_index" : "logs-<username>-i-<suffix>", "_type" : "_doc" } }
+{ "index" : { "_index" : "logs-<username>-i-<suffix>" } }
 { "userId": "1", "firstName": "Jon","lastName": "Snow", "age": 22, "address": { "streetAddress": "21 2nd Street", "city": "Winterfell", "state": "North", "postalCode": "14578",  "geolocation": { "lat": 54.369488, "long": -5.574768 } },"phoneNumber": [ { "type": "home", "number": "212 555-1234" }, { "type": "mobile", "number": "102 555-4567" } ] }
-{ "index" : { "_index" : "logs-<username>-i-<suffix>", "_type" : "_doc" } }
+{ "index" : { "_index" : "logs-<username>-i-<suffix>" } }
 { "userId": "2", "firstName": "Cersei","lastName": "Lannister", "age": 43, "address": { "streetAddress": "1 Palace Street", "city": "King's Landing", "state": "The Crownlands", "postalCode": "26863",  "geolocation": { "lat": 42.639758, "long": 18.1094725 } },"phoneNumber": [ { "type": "home", "number": "212 555-6789" }, { "type": "mobile", "number": "102 555-8901" } ] }
-{ "index" : { "_index" : "logs-<username>-i-<suffix>", "_type" : "_doc" } }
+{ "index" : { "_index" : "logs-<username>-i-<suffix>" } }
 { "userId": "3", "firstName": "Daenerys","lastName": "Targaryen", "age": 22, "address": { "streetAddress": "3 Blackwater Bay Ave", "city": "Dragonstone", "state": "Dragonstone", "postalCode": "75197",  "geolocation": { "lat": 43.300097, "long": -2.261580 } },"phoneNumber": [ { "type": "home", "number": "212 555-1234" }, { "type": "mobile", "number": "102 555-2345" } ] }
 ```
 
@@ -160,10 +160,10 @@ A bulk request is a succession of JSON objects with this structure:
  optional_source\n
 ```
 
-You can in one request ask OpenSearch to index, update, delete several documents. Save the content of the previous commands in a file named **bulk** and use the following call to index these 3 users:
+You can in one request ask OpenSearch to index, update, delete several documents. Save the content of the previous JSON lines in a file named **bulk** and use the following call to index these 3 users:
 
 ```shell-session
-$ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
+$ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/x-ndjson' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
 ```
 
 This call will take the content of the bulk file and execute each index operation. Note that you have to use the option **--data-binary** and no **-d** to preserve the newline after each JSON. You can check that your data are properly indexed with the following call:
@@ -296,7 +296,7 @@ tcp {
 
 The most important part in this configuration is the filter part:
 
-```ruby 
+```ruby
 elasticsearch {
     hosts => ["https://gra2.logs.ovh.com:9200"]
     index => "logs-<username>-i-<suffix>"
@@ -359,16 +359,16 @@ The **maximum size** of your index is fixed and is dependent on the number of sh
 > [!warning]
 >
 > It is not possible to change the number of shards of one index.
-> So you will have to be careful of the storage used by your index.
+> Therefore, it is important to be mindful of the storage used by your index.
 > **Once your index is full, It will be blocked on write requests** and you will have no choice but to use
 > [_Delete By query_](https://opensearch.org/docs/latest/opensearch/rest-api/document-apis/delete-by-query/)
 > requests to free space on your index.
 >
 
-Note that you can monitor yourself the size of the index by using the following curl query:
+Note that you can monitor the size of the index by using the following curl query:
 
 ```shell-session
-$ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty' --data-binary "@bulk"
+$ curl -u token:<your-token-value> -XGET -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty'
 ```
 
 This command will give you a document with the following format:
