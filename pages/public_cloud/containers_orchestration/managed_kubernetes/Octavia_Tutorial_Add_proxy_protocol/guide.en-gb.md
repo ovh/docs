@@ -197,7 +197,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
 
 ## Additional Resources
 
-- Official OVHcloud documentation on [creating an instance](https://docs.ovh.com/en/public-cloud/create-vm/).
+- Official OVHcloud documentation on [creating an instance](/pages/public_cloud/compute/public-cloud-first-steps/).
 - Documentation on [managing subnets in OpenStack](https://docs.openstack.org/neutron/latest/admin/deploy-ovs-selfservice.html).
 - Documentation on [Octavia Load Balancer](https://docs.openstack.org/octavia/latest/).
 
