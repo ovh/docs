@@ -169,6 +169,51 @@ aws s3 rb s3://<bucket_name>
 aws s3 rb s3://<bucket_name> --force
 ```
 
+### Example for MPU (Multi-Part Upload) Objects
+
+Multi-Part Upload (MPU) allows you to upload a single object as a set of parts. This can be particularly useful for uploading large files.
+
+**1. Initiate a Multi-Part Upload**
+
+```bash
+aws s3api create-multipart-upload --bucket <bucket_name> --key <object_name>
+```
+**2. Upload Parts**
+
+```bash
+aws s3api upload-part --bucket <bucket_name> --key <object_name> --part-number <part_number> --body <file_path> --upload-id <upload_id>
+```
+**3. Upload Parts**
+
+```bash
+aws s3api complete-multipart-upload --bucket <bucket_name> --key <object_name> --upload-id <upload_id> --multipart-upload file://<json_file>
+```
+
+The JSON file contains the parts information in the following format:
+
+```json
+{
+  "Parts": [
+    {
+      "ETag": "<etag_value>",
+      "PartNumber": 1
+    },
+    {
+      "ETag": "<etag_value>",
+      "PartNumber": 2
+    }
+  ]
+}
+
+```
+**4. Abort a Multi-Part Upload**
+
+If you need to abort a multi-part upload, you can use the following command:
+
+```bash
+aws s3api abort-multipart-upload --bucket <bucket_name> --key <object_name> --upload-id <upload_id>
+```
+
 **Deleting objects and buckets with versioning enabled**
 
 If versioning is enabled, a simple delete operation on your objects will not permanently remove them.
