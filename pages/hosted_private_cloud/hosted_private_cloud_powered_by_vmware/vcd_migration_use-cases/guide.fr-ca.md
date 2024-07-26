@@ -4,20 +4,6 @@ excerpt: "Découvrez les méthodes d'examen des scénarios les plus complexes au
 updated: 2024-07-24
 ---
 
-<style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
-    cursor: pointer;
-}
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
-}
-details[open]>summary::before {
-    content:'\25BC';
-}
-</style>
-
 > [!primary]
 >
 > VCD on OVHcloud est actuellement en phase alpha. Ce guide peut donc être incomplet et mis à jour à l'avenir.
@@ -76,6 +62,6 @@ Le tableau ci-dessous vous présente chacun des points bloquants à la migration
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou [rendez-vous ici](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](<https://discord.gg/ovhcloud>) dédié.
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud>) dédié.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
