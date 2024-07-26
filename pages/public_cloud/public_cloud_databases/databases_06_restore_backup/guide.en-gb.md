@@ -57,7 +57,7 @@ You will find a reminder of all these options in the order summary.
 
 You can choose a different region for your new service.
 
-![selectRegion](images/select-region.png){.thumbnail}
+![selec tRegion](images/selectRegion.png){.thumbnail}
 
 #### Restore point
 
