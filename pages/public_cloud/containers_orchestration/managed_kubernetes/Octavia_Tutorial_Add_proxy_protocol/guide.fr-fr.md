@@ -1,7 +1,7 @@
 ---
 title: Obtenir l'IP source dans Octavia
 excerpt: Découvrez comment configurer Octavia pour obtenir l\'IP source du client dans le contexte d'OVHcloud, sans utiliser Kubernetes CCM.
-updated: 2023-12-08
+updated: 2024-07-26
 ---
 
 ## Objectif
