@@ -55,9 +55,9 @@ You will find a reminder of all these options in the order summary.
 
 #### Region
 
-You can choose a different region for your new service. This allows you to optimize performance and comply with data residency requirements.
+You can choose a different region for your new service.
 
-![Select Region](images/select-region.png){.thumbnail}
+![selectRegion](images/select-region.png){.thumbnail}
 
 #### Restore point
 
