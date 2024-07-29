@@ -1154,6 +1154,7 @@
             + [Tutorial - Add dynamic content to a static web page generated with Cecil](web_cloud/web_hosting/static_website_installation_cecil_api_call)
             + [Installing Composer on a Web Hosting plan](web_cloud/web_hosting/composer_install_composer)
             + [Configuring and using Git with an OVHcloud web hosting plan](web_cloud/web_hosting/git_integration_webhosting)
+            + [Migrate your Xara website to OVHcloud](web_cloud/web_hosting/migrate_xara_website_to_ovh)
         + [Tutorials - WordPress](web-cloud-hosting-tutorials-wordpress)
             + [Tutorial - First steps with Wordpress](web_cloud/web_hosting/wordpress_first-steps)
             + [Tutorial - Backing up your WordPress website](web_cloud/web_hosting/how_to_backup_your_wordpress)
