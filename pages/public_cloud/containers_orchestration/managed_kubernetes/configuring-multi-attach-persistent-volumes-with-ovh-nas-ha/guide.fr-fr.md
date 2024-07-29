@@ -1,7 +1,7 @@
 ---
 title: Configuring multi-attach persistent volumes with OVHcloud NAS-HA
 excerpt: 'Find out how to configure a multi-attach persistent volume using OVHcloud NAS-HA'
-updated: 2024-07-17
+updated: 2024-07-29
 ---
 
 <style>
@@ -45,7 +45,7 @@ You also need to have [Helm](https://docs.helm.sh/) installed on your workstatio
 
 Your NAS-HA can expose multiple partitions, and supports a variety of protocols. Each partition is accessible only from a specific range of IPs. We will create one exposing NFS and make it accessible from your Kubernetes worker nodes.
 
-Access the UI for OVHcloud NAS-HA by clicking the *HA-NAS and CDN* menu in the [Server section of the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated)
+Access the UI for OVHcloud NAS-HA by clicking the *HA-NAS and CDN* menu in the [Bare Metal Cloud section of the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated)
 
 Click on your NAS, then on "Partitions" tab, then on the "Create a partition" button and create the new NFS partition with the following content:
 
@@ -283,7 +283,7 @@ Let's create a file named `nginx-daemonset.yaml`:
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-    name: nfs-nginx-1
+    name: nfs-nginx
     namespace: default
 spec:
     selector:
