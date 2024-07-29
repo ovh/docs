@@ -26,19 +26,15 @@ Create an instance on OVHcloud and install a web server that will serve as the b
 
 2. **Install NGINX on the instance**:
 
-    Connect to the instance via SSH:
-
-    ```bash
-    ssh almalinux@<instance_ip>
-    ```
-
+    Connect to the instance via SSH
+   
     Update packages and install NGINX:
 
     ```bash
     sudo dnf install -y nginx
     ```
 
-3. **Configure NGINX to display request information**:
+4. **Configure NGINX to display request information**:
 
     Modify the NGINX configuration to display request information, including the client's IP address and headers:
 
