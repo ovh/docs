@@ -1,6 +1,6 @@
 ---
-title: "Migrare un sito Web WordPress in OVHcloud"
-excerpt: "Questa guida ti mostra come migrare il tuo sito Web WordPress e i servizi associati in OVHcloud"
+title: "Migrare un sito Web Xara in OVHcloud"
+excerpt: "Questa guida ti mostra come migrare il tuo sito Web Xara e i servizi associati in OVHcloud"
 updated: 2024-07-29
 ---
 
@@ -10,7 +10,7 @@ updated: 2024-07-29
 
 ## Obiettivo
 
-Questa guida ti mostra come migrare passo per passo il sito Web WordPress e tutti i servizi associati a OVHcloud.
+Questa guida ti mostra come migrare passo per passo il sito Web Xara e tutti i servizi associati a OVHcloud.
 
 > [!warning]
 >
@@ -19,34 +19,34 @@ Questa guida ti mostra come migrare passo per passo il sito Web WordPress e tutt
 > Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o [sito ufficiale di Xara Web designer](https://www.xara.com/webdesigner-plus/){.external}. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
-**Questa guida ti mostra come migrare il tuo sito Web WordPress e i servizi associati in OVHcloud.**
+**Questa guida ti mostra come migrare il tuo sito Web Xara e i servizi associati in OVHcloud.**
 
 ## Prerequisiti
 
-- Essere connesso all’interfaccia di amministrazione di WordPress
+- Essere connesso all’interfaccia di amministrazione di Xara
 
 ## Procedura
 
-### Step 1: salva i file e il database del tuo sito Web WordPress
+### Step 1: salva i file e il database del tuo sito Web Xara
 
 Il primo step consiste nel recuperare tutti i file relativi al sito Web Xara. Include i file Xara e, se presente, il database. Per maggiori informazioni, consulta la pagina "[Exporting a Website](https://webdesigner.xara.com/bhavtest/test1/xara_desktop/product_support/web_features/exporting_website.html?rhhlterm=website){.external}" o ancora lo step 3 della guida "[Migrare il proprio sito Web e i servizi associati in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 
-### Step 2: trasferisci il tuo sito Web WordPress in OVHcloud
+### Step 2: trasferisci il tuo sito Web Xara in OVHcloud
 
-Dopo aver effettuato il backup dei file e del database del sito Web WordPress, trasferiscili sul tuo hosting Web OVHcloud. Se non hai ancora attivato un hosting Web OVHcloud, segui lo step 1 della guida "[Migrare un sito Web e i servizi associati a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
+Dopo aver effettuato il backup dei file e del database del sito Web Xara, trasferiscili sul tuo hosting Web OVHcloud. Se non hai ancora attivato un hosting Web OVHcloud, segui lo step 1 della guida "[Migrare un sito Web e i servizi associati a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 
-#### Step 2.1: trasferire i file del sito Web WordPress
+#### Step 2.1: trasferire i file del sito Web Xara
 
 > [!primary]
 >
-> Per trasferire i file WordPress sull’hosting Web, ti consigliamo di utilizzare il software [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
+> Per trasferire i file Xara sull’hosting Web, ti consigliamo di utilizzare il software [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 >
 
-Per trasferire i file relativi al sito Web WordPress, accedi prima allo [spazio di storage FTP del tuo hosting Web OVHcloud](/pages/web_cloud/web_hosting/ftp_connection).
+Per trasferire i file relativi al sito Web Xara, accedi prima allo [spazio di storage FTP del tuo hosting Web OVHcloud](/pages/web_cloud/web_hosting/ftp_connection).
 
 Una volta effettuato l’accesso allo spazio di storage FTP dell’hosting Web OVHcloud, accedi alla directory radice "www" (o a un’altra cartella radice creata in precedenza). Se i file di backup sono compressi (zip), decomprimeteli in una cartella vuota sul computer prima di caricarli nella directory radice dell’hosting Web OVHcloud.
 
-#### Step 2.2: importa il database dal tuo sito Web WordPress
+#### Step 2.2: importa il database dal tuo sito Web Xara
 
 Se ancora non ne disponi, [crea un nuovo database](/pages/web_cloud/web_hosting/sql_create_database) e [importa il backup nel nuovo database](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
 
@@ -57,11 +57,11 @@ Se ancora non ne disponi, [crea un nuovo database](/pages/web_cloud/web_hosting/
 
 ### Step 3: aggiorna le informazioni del database
 
-A questo punto, è necessario collegare il sito Web WordPress al database. Queste modifiche devono essere effettuate nel file di configurazione **"wp-config.php"**. Tutte le azioni da effettuare sono disponibili nella guida "[Modificare la password del database di un hosting Web](/pages/web_cloud/web_hosting/sql_change_password)".
+A questo punto, è necessario collegare il sito Web Xara al database. Queste modifiche devono essere effettuate nel file di configurazione **"wp-config.php"**. Tutte le azioni da effettuare sono disponibili nella guida "[Modificare la password del database di un hosting Web](/pages/web_cloud/web_hosting/sql_change_password)".
 
-### Migrare altri servizi associati al sito Web WordPress
+### Migrare altri servizi associati al sito Web Xara
 
-I file e i database WordPress sono stati migrati di recente. Per migrare altri servizi come email, domini e zone DNS, segui gli step della guida "[Migrare un sito Web e i servizi associati in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" e consulta gli step relativi ai servizi da migrare. In effetti, molti degli step saranno già stati effettuati in questa guida.
+I file e i database Xara sono stati migrati di recente. Per migrare altri servizi come email, domini e zone DNS, segui gli step della guida "[Migrare un sito Web e i servizi associati in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" e consulta gli step relativi ai servizi da migrare. In effetti, molti degli step saranno già stati effettuati in questa guida.
 
 ## Per saperne di più <a name="go-further"></a>
 
