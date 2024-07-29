@@ -51,7 +51,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     pid /run/nginx.pid;
 
     events {
-        worker_connections 1024;
+    worker_connections 1024;
     }
 
     http {
@@ -62,24 +62,24 @@ Create an instance on OVHcloud and install a web server that will serve as the b
                           '"$http_user_agent" "$http_x_forwarded_for"';
         access_log /var/log/nginx/access.log main;
 
-        sendfile on;
-        tcp_nopush on;
-        tcp_nodelay on;
-        keepalive_timeout 65;
-        types_hash_max_size 2048;
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+    keepalive_timeout 65;
+    types_hash_max_size 2048;
 
-        server {
-            listen 80 proxy_protocol;
-            server_name localhost;
+    server {
+        listen 80;
+        server_name localhost;
 
-            set_real_ip_from 0.0.0.0/0;
-            real_ip_header proxy_protocol;
-
-            location / {
-                return 200 "Client IP: $proxy_protocol_addr\nHeaders: $http_x_forwarded_for\n";
-            }
+        location / {
+            add_header X-Forwarded-For $http_x_forwarded_for;
+            add_header X-Forwarded-Proto $http_x_forwarded_proto;
+            return 200 "Client IP: $http_x_forwarded_for\nHeaders: $http_x_forwarded_proto\n";
         }
     }
+    }
+
     ```
 
     Restart NGINX to apply the changes:
