@@ -59,11 +59,6 @@ Vous devez maintenant lier votre site web Xara à votre base de données. Ces mo
 
 Vous venez de migrer vos fichiers et votre base de données Xara. Si vous souhaitez migrer d'autres services comme vos e-mails, votre nom de domaine ou encore vos zones DNS, suivez les étapes du guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » en vous reportant aux étapes qui concernent les services que vous souhaitez migrer. En effet, plusieurs des étapes auront déjà été effectuées dans ce guide.
 
-> [!warning]
->
-> Si vous souhaitez migrer votre nom de domaine Xara vers OVHcloud, consultez la partie 3 de cette [page du site officiel de Xara](https://www.xara-online.com/fr/domaines-faq.152.html){.external}. Vous-y trouverez des informations détaillées sur les étapes administratives nécessaires, comme le déblocage de votre nom de domaine et l'obtention du code de transfert.
->
-
 ## Aller plus loin <a name="go-further"></a>
 
 [Généralités sur les e-mails mutualisés](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
