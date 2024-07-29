@@ -1,7 +1,7 @@
 ---
 title: "Migrer son site web Xara vers OVHcloud"
 excerpt: "Découvrez comment migrer votre site web Xara et ses services associés vers OVHcloud"
-updated: 2024-07-24
+updated: 2024-07-29
 ---
 
 ## Objectif
