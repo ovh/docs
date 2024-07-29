@@ -34,8 +34,7 @@ Click on `Create`{.action} button.
 
 ![OVHcloud Managed Rancher Service Create MKS UI](images/rancher-create.png){.thumbnail}
 
-We will create a cluster in a **hosted Kubernetes provider**. 
-Click on `OVHcloud MKS`{.action} provider.
+In Rancher you can create a Kubernetes cluster in different manner. To create a MKS cluster, use the **hosted Kubernetes provider** way and click on `OVHcloud MKS`{.action} provider.
 
 First, enter a MKS cluster name, for example `my-mks-cluster`:
 
