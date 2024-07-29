@@ -1,7 +1,7 @@
 ---
 title: 'Obtaining Source IP in Octavia'
 excerpt: 'Learn how to configure Octavia to obtain the client source IP in the context of OVHcloud without using Kubernetes CCM.'
-updated: 2024-07-26
+updated: 2024-07-29
 ---
 
 ## Objective
@@ -40,7 +40,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
 
 3. **Configure NGINX to display request information**:
 
-    Modify the NGINX configuration to display request information, including the client's IP address:
+    Modify the NGINX configuration to display request information, including the client's IP address and headers:
 
     ```bash
     sudo nano /etc/nginx/nginx.conf
@@ -49,17 +49,40 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     Add the following directives in the `http` block:
 
     ```nginx
+    user nginx;
+    worker_processes auto;
+    error_log /var/log/nginx/error.log;
+    pid /run/nginx.pid;
+
+    events {
+        worker_connections 1024;
+    }
+
     http {
-        ...
+        include /etc/nginx/mime.types;
+        default_type application/octet-stream;
+        log_format main '$remote_addr - $remote_user [$time_local] "$request" '
+                          '$status $body_bytes_sent "$http_referer" '
+                          '"$http_user_agent" "$http_x_forwarded_for"';
+        access_log /var/log/nginx/access.log main;
+
+        sendfile on;
+        tcp_nopush on;
+        tcp_nodelay on;
+        keepalive_timeout 65;
+        types_hash_max_size 2048;
+
         server {
             listen 80 proxy_protocol;
+            server_name localhost;
+
             set_real_ip_from 0.0.0.0/0;
             real_ip_header proxy_protocol;
+
             location / {
-                return 200 "Client IP: $proxy_protocol_addr\n";
+                return 200 "Client IP: $proxy_protocol_addr\nHeaders: $http_x_forwarded_for\n";
             }
         }
-        ...
     }
     ```
 
@@ -69,7 +92,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     sudo systemctl restart nginx
     ```
 
-### Step 2: Create the LoadBalancer with PROXY Protocol on OVHcloud
+### Step 2: Create the LoadBalancer with HTTP Protocol on OVHcloud
 
 1. **Create the Octavia LoadBalancer**:
 
@@ -91,10 +114,10 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     +---------------------+--------------------------------------+
     ```
 
-2. **Add a listener with the PROXY protocol**:
+2. **Add a listener with the HTTP protocol and required headers**:
 
     ```bash
-    openstack loadbalancer listener create --name my-listener --protocol TCP --protocol-port 80 my-loadbalancer
+    openstack loadbalancer listener create --name my-listener --protocol HTTP --protocol-port 80 --insert-headers "X-Forwarded-For=True,X-Forwarded-Proto=True" <loadbalancer_id>
     ```
 
     **Example Result:**
@@ -104,7 +127,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     +-----------------------------+--------------------------------------+
     | admin_state_up              | True                                 |
     | ...                         | ...                                  |
-    | id                          | f4fdba2e-b8b3-4882-bd7b-85198885133f |
+    | id                          | <listener_id>                        |
     | ...                         | ...                                  |
     +-----------------------------+--------------------------------------+
     ```
@@ -112,7 +135,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
 3. **Create a backend pool**:
 
     ```bash
-    openstack loadbalancer pool create --name my-pool --lb-algorithm ROUND_ROBIN --listener my-listener --protocol TCP
+    openstack loadbalancer pool create --name my-pool --lb-algorithm ROUND_ROBIN --listener my-listener --protocol HTTP
     ```
 
     **Example Result:**
@@ -122,7 +145,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     +----------------------+--------------------------------------+
     | admin_state_up       | True                                 |
     | ...                  | ...                                  |
-    | id                   | cd68fa45-14d8-40ba-8e59-691e2bf7ac5f |
+    | id                   | <pool_id>                            |
     | ...                  | ...                                  |
     +----------------------+--------------------------------------+
     ```
@@ -139,7 +162,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     +---------------------+--------------------------------------+
     | Field               | Value                                |
     +---------------------+--------------------------------------+
-    | address             | 192.168.0.2                          |
+    | address             | 192.168.0.27                         |
     | ...                 | ...                                  |
     +---------------------+--------------------------------------+
     ```
@@ -148,30 +171,12 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     +---------------------+--------------------------------------+
     | Field               | Value                                |
     +---------------------+--------------------------------------+
-    | address             | 192.168.0.3                          |
+    | address             | 192.168.0.96                         |
     | ...                 | ...                                  |
     +---------------------+--------------------------------------+
     ```
 
-### Step 3: Configure the Health Monitor
-
-1. **Create a health monitor**:
-
-    ```bash
-    HOME="/c/Users/dell" openstack loadbalancer healthmonitor create --delay 5 --timeout 3 --max-retries 3 --type HTTP --url-path / --name my-health-monitor my-pool
-    ```
-
-    **Example Result:**
-    ```plaintext
-    +-------------------+--------------------------------------+
-    | Field             | Value                                |
-    +-------------------+--------------------------------------+
-    | id                | 3a118bb8-91de-4be7-99d6-1bd40a12b7b8 |
-    | ...               | ...                                  |
-    +-------------------+--------------------------------------+
-    ```
-
-### Step 4: Verify the Configuration
+### Step 3: Verify the Configuration
 
 1. **Get the VIP address of the LoadBalancer**:
 
@@ -192,7 +197,8 @@ Create an instance on OVHcloud and install a web server that will serve as the b
 
     **Example Result:**
     ```plaintext
-    Client IP: <your_public_ip>
+    Client IP: <your_source_ip>
+    Headers: <forwarded_headers>
     ```
 
 ## Additional Resources
