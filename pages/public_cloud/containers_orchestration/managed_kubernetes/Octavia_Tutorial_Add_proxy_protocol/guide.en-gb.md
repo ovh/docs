@@ -95,7 +95,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     Access the OpenStack interface on OVHcloud, then create a LoadBalancer:
 
     ```bash
-    openstack loadbalancer create --name my-loadbalancer --vip-subnet-id <subnet-id>
+    openstack loadbalancer listener create --name <nom-du-listener> --protocol HTTP --protocol-port <port-protocole> --insert-headers "X-Forwarded-For=True,X-Forwarded-Proto=True" <id-du-loadbalancer>
     ```
 
     **Example Result:**
@@ -110,28 +110,10 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     +---------------------+--------------------------------------+
     ```
 
-2. **Add a listener with the HTTP protocol and required headers**:
+2. **Create a backend pool**:
 
     ```bash
-    openstack loadbalancer listener create --name my-listener --protocol HTTP --protocol-port 80 --insert-headers "X-Forwarded-For=True,X-Forwarded-Proto=True" <loadbalancer_id>
-    ```
-
-    **Example Result:**
-    ```plaintext
-    +-----------------------------+--------------------------------------+
-    | Field                       | Value                                |
-    +-----------------------------+--------------------------------------+
-    | admin_state_up              | True                                 |
-    | ...                         | ...                                  |
-    | id                          | <listener_id>                        |
-    | ...                         | ...                                  |
-    +-----------------------------+--------------------------------------+
-    ```
-
-3. **Create a backend pool**:
-
-    ```bash
-    openstack loadbalancer pool create --name my-pool --lb-algorithm ROUND_ROBIN --listener my-listener --protocol HTTP
+   openstack loadbalancer pool create --name <nom-du-pool> --lb-algorithm ROUND_ROBIN --listener <nom-du-listener> --protocol HTTP
     ```
 
     **Example Result:**
@@ -146,11 +128,12 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     +----------------------+--------------------------------------+
     ```
 
-4. **Add members to the pool (the backend instances)**:
+3. **Add members to the pool (the backend instances)**:
 
     ```bash
-    openstack loadbalancer member create --subnet-id <subnet-id> --address <instance_ip1> --protocol-port 80 my-pool
-    openstack loadbalancer member create --subnet-id <subnet-id> --address <instance_ip2> --protocol-port 80 my-pool
+    openstack loadbalancer member create --subnet-id <id-du-sous-reseau> --address <ip-de-l-instance-1> --protocol-port <port-protocole> <id-du-pool>
+    openstack loadbalancer member create --subnet-id <id-du-sous-reseau> --address <ip-de-l-instance-2> --protocol-port <port-protocole> <id-du-pool>
+
     ```
 
     **Example Result:**
