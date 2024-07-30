@@ -8,7 +8,7 @@ updated: 2024-07-29
 
 Routine firmware updates play a pivotal role in upholding your drives performance, stability, and security. Such updates often encompass critical bug fixes, enhanced compatibility, and advanced security features that are indispensable for preserving your data integrity and maintaining optimal operational efficiency.
 
-An important patch has been introduced in this new firmware (version BPGNB969). We strongly recommend to update your firmware to avoid any premature end-of-life.
+An important patch has been introduced in this new firmware (version BPGNB969). We strongly recommend that you update your firmware to avoid premature end-of-life.
 
 Firmware Release Notes: <https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/SS530/PCN-005196-A01.pdf>
 
@@ -136,8 +136,8 @@ In our example, 2 disks need to be updated (:0 and :1). 0/1 is the disk slot num
 
 ```bash
 root@labo:~# /opt/MegaRAID/storcli/storcli64 /c0 /sall show | grep -i 'WUSTR6440ASS201\|WUSTR6416ASS201\|WUSTR1538ASS201\|WUSTR1515ASS201'
-:0       2 UGood -  3.492 TB SAS  SSD -   -  512B WUSTR1538ASS201  -
-:1       3 UGood -  3.492 TB SAS  SSD -   -  512B WUSTR1538ASS201  -
+ :0       2 UGood -  3.492 TB SAS  SSD -   -  512B WUSTR1538ASS201  -
+ :1       3 UGood -  3.492 TB SAS  SSD -   -  512B WUSTR1538ASS201  -
 ```
 
 #### Step 4 - Firmware update
@@ -318,7 +318,7 @@ Execute the following command for each identified disk displayed in step 3:
 > [!primary]
 > x is the ID of the controller managing the disks to be updated; y is the disk enclosure ID; z is the disk slot number (see above).
 
-In our previous example, 2 disks need a firmware update to the latest firmware version **BPGNB969.** Here's how we update the 2 disks and the command line returns:
+In our previous example, 2 disks need a firmware update to the latest firmware version **BPGNB969**. Here's how we update the 2 disks and the command line returns:
 
 ```bash
 [root@labo:~] /opt/lsi/storcli64/storcli64 /c0 /s0 download src=BPGNB969.bin
