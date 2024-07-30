@@ -95,7 +95,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     Access the OpenStack interface on OVHcloud, then create a LoadBalancer:
 
     ```bash
-    openstack loadbalancer listener create --name <nom-du-listener> --protocol HTTP --protocol-port <port-protocole> --insert-headers "X-Forwarded-For=True,X-Forwarded-Proto=True" <id-du-loadbalancer>
+    openstack loadbalancer listener create --name <listener-name> --protocol HTTP --protocol-port <protocol-port> --insert-headers "X-Forwarded-For=True,X-Forwarded-Proto=True" <loadbalancer-id>
     ```
 
     **Example Result:**
@@ -113,7 +113,7 @@ Create an instance on OVHcloud and install a web server that will serve as the b
 2. **Create a backend pool**:
 
     ```bash
-   openstack loadbalancer pool create --name <nom-du-pool> --lb-algorithm ROUND_ROBIN --listener <nom-du-listener> --protocol HTTP
+   openstack loadbalancer pool create --name <pool-name> --lb-algorithm ROUND_ROBIN --listener <listener-name> --protocol HTTP
     ```
 
     **Example Result:**
@@ -131,8 +131,8 @@ Create an instance on OVHcloud and install a web server that will serve as the b
 3. **Add members to the pool (the backend instances)**:
 
     ```bash
-    openstack loadbalancer member create --subnet-id <id-du-sous-reseau> --address <ip-de-l-instance-1> --protocol-port <port-protocole> <id-du-pool>
-    openstack loadbalancer member create --subnet-id <id-du-sous-reseau> --address <ip-de-l-instance-2> --protocol-port <port-protocole> <id-du-pool>
+    openstack loadbalancer member create --subnet-id <subnet-id> --address <instance-ip-1> --protocol-port <protocol-port> <pool-id>
+    openstack loadbalancer member create --subnet-id <subnet-id> --address <instance-ip-2> --protocol-port <protocol-port> <pool-id>
 
     ```
 
