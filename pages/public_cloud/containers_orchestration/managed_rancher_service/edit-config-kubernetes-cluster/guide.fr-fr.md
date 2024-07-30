@@ -1,6 +1,6 @@
 ---
 title: Edit configuration of a Kubernetes cluster
-excerpt: 'Find out how to edit a Kubernetes cluster on a Managed Rancher Service'
+excerpt: 'Find out how to edit the configuration of a Kubernetes cluster on a Managed Rancher Service'
 updated: 2024-07-30
 ---
 
