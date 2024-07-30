@@ -10,7 +10,7 @@ Le sigle **DNS** (**D**omain **N**ame **S**ystem), est un ensemble d'éléments 
 
 Consultez nos guides « [Tout savoir sur les serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) » et « [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information) » pour plus d'informations.
 
-**Découvrez comment modifier les serveurs DNS pour votre nom de domaine OVHcloud.**
+**Découvrez comment modifier les serveurs DNS pour votre nom de domaine OVHcloud en 3 étapes.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -22,7 +22,7 @@ Consultez nos guides « [Tout savoir sur les serveurs DNS](/pages/web_cloud/doma
 
 > [!primary]
 >
-> Un **bureau d'enregistrements** est une organisation autorisée à vendre des noms de domaines. OVHcloud fait partie de ces **bureaux d'enregistrements**.
+> Un **bureau d'enregistrements** est une organisation autorisée à vendre des noms de domaine. OVHcloud fait partie de ces **bureaux d'enregistrements**.
 >
 > Si votre nom de domaine n'est pas enregistré auprès d'OVHcloud, vous devrez modifier les serveurs DNS auprès du **bureau d'enregistrements** où est actuellement enregistré votre nom de domaine.
 >
@@ -34,7 +34,6 @@ Consultez nos guides « [Tout savoir sur les serveurs DNS](/pages/web_cloud/doma
 > **Faites attention lorsque vous modifiez les serveurs DNS d’un nom de domaine.**
 >
 > Une erreur de manipulation peut rendre votre site web inaccessible ou empêcher vos adresses de messagerie de recevoir de nouveaux e-mails. Comprendre les conséquences d’une telle modification vous permettra de mieux appréhender les changements que vous allez opérer.
->
 
 Lorsque vous modifiez les serveurs DNS de votre nom de domaine, vous changez sa configuration DNS. La nouvelle configuration DNS remplace l'ancienne et est stockée sur les serveurs DNS nouvellement définis. Techniquement, le nom de domaine utilise ensuite une nouvelle zone DNS.
 
@@ -44,7 +43,7 @@ Toutefois, il est essentiel de prendre en compte les points suivants :
 - Si vous ne souhaitez pas modifier les serveurs DNS mais un ou plusieurs enregistrements de votre configuration / zone DNS actuelle, consultez notre guide : « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 - Certaines organisations, les registres, qui gèrent les extensions de noms de domaine, ont des exigences particulières concernant les serveurs DNS (quantité de serveurs de noms, valeur des enregistrements, etc.). En cas de doute, vérifiez auprès du registre responsable du domaine.
 
-### Accéder à la gestion des serveurs DNS OVHcloud <a name="access-dns-servers"></a>
+### Étape 1 - Accéder à la gestion des serveurs DNS OVHcloud <a name="access-dns-servers"></a>
 
 Pour cela, effectuez les actions suivantes :
 
@@ -62,11 +61,11 @@ Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVH
 
 ![dns-server](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
 
-### Modifier les serveurs DNS <a name="modify-dns-servers"></a>
+### Étape 2 - Modifier les serveurs DNS <a name="modify-dns-servers"></a>
 
 > [!primary]
 >
-> Toutes les fonctionnalités décrites ci-après s'effectuent depuis l'onglet `Serveurs DNS`{.action} mentionné dans la [partie précédente](#access-dns-servers) de ce guide.
+> Toutes les fonctionnalités décrites ci-après s'effectuent depuis l'onglet `Serveurs DNS`{.action} mentionné dans l'[étape 1](#access-dns-servers) de ce guide.
 >
 
 Pour modifier les serveurs DNS, cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
@@ -111,7 +110,7 @@ Cela peut être, par exemple :
 - les serveurs DNS externes fournis par l'un de nos concurrents ;
 - vos propres serveurs DNS si vous hébergez votre zone DNS sur l'un de vos serveurs. Ces serveurs DNS peuvent aussi être hébergés sur une infrastructure OVHcloud (serveur dédié, VPS, etc.).
 
-Pour renseigner votre propre serveur DNS, remplissez les 2 formulaires de l'encadré comme suit :
+Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme suit :
 
 - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
 - `IP associée (facultatif)` : adresse IP du serveur DNS renseigné.
@@ -120,14 +119,14 @@ Pour renseigner votre propre serveur DNS, remplissez les 2 formulaires de l'enca
 >
 > Chaque encadré de saisie (visible dans la capture écran précédente) ne peut contenir qu'**un seul** serveur DNS à la fois. Un serveurs DNS correspond donc à un encadré.
 >
-> De plus, une note d'information sur fond bleu, située au dessus du premier encadré, indique l'intervale de serveurs DNS que vous pouvez déclarer pour votre nom de domaine. Ces valeurs varient selon l'extension de votre nom de domaine.
+> De plus, une note d'information sur fond bleu, située au dessus du premier encadré, indique l'intervale de serveurs DNS que vous pouvez déclarer pour votre nom de domaine. Ces valeurs varient selon l'extension du nom de domaine.
 
 Une fois les informations reneignées, cliquez sur le bouton `+`{.action} situé à droite des 2 formulaires. Il permet d'ajouter le serveur DNS et fait apparaître un nouvel encadré de saisie en dessous du précédent.
 
 Réitérez l'opération autant de fois que vous avez de serveurs DNS à ajouter. Ceci en respectant les limites indiquées dans la note d'information. 
 Cliquez sur le bouton `+`{.action} pour chaque serveur DNS afin d'en valider la saisie et l'ajout.
 
-Une fois tous vos propres serveurs DNS ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
+Dès que tous vos propres serveurs DNS sont ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 
 //////// Placer screen EN ici 
 
@@ -152,7 +151,7 @@ Cependant, vérifiez bien que les configurations des zones DNS présentes sur le
 >
 > 3. Veillez à ne pas mélanger un groupe de serveurs DNS OVHcloud avec un autre groupe de serveurs DNS OVHcloud. Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils vont de pair et sont synchronisés. Chez OVHCloud, les groupes de serveurs DNS sont identifiables à l'aide du numéro présent dans les noms des serveurs. Deux serveurs DNS OVHcloud font partie d'un même groupe de serveurs DNS dès lors qu'ils partagent le même numéro. Par exemple, *dns19.ovh.net* et *ns19.ovh.net*.
 
-Pour renseigner votre propre serveur DNS, remplissez les 2 formulaires de l'encadré comme suit :
+Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme suit :
 
 - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
 - `IP associée (facultatif)` : adresse IP du serveur DNS renseigné.
@@ -161,14 +160,14 @@ Pour renseigner votre propre serveur DNS, remplissez les 2 formulaires de l'enca
 >
 > Chaque encadré de saisie (visible dans la capture écran précédente) ne peut contenir qu'**un seul** serveur DNS à la fois. Un serveurs DNS correspond donc à un encadré.
 >
-> De plus, une note d'information sur fond bleu, située au dessus du premier encadré, indique l'intervale de serveurs DNS que vous pouvez déclarer pour votre nom de domaine. Ces valeurs varient selon l'extension de votre nom de domaine.
+> De plus, une note d'information sur fond bleu, située au dessus du premier encadré, indique l'intervale de serveurs DNS que vous pouvez déclarer pour votre nom de domaine. Ces valeurs varient selon l'extension du nom de domaine.
 
 Une fois les informations reneignées, cliquez sur le bouton `+`{.action} situé à droite des 2 formulaires. Il permet d'ajouter le serveur DNS et fait apparaître un nouvel encadré de saisie en dessous du précédent.
 
 Réitérez l'opération autant de fois que vous avez de serveurs DNS à ajouter. Ceci en respectant les limites indiquées dans la note d'information. 
 Cliquez sur le bouton `+`{.action} pour chaque serveur DNS afin d'en valider la saisie et l'ajout.
 
-Une fois tous vos propres serveurs DNS ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
+Dès que tous vos propres serveurs DNS sont ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 
 //////// Placer screen EN ici 
 
@@ -177,12 +176,12 @@ S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer
 
 Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient seront désactivés pour votre nom de domaine. Les zones DNS présentes sur vos propres serveurs DNS et sur les serveurs DNS OVHcloud deviendront celles actives pour votre nom de domaine.
 
-### Prise en compte des modifications DNS
+### Étape 3 - Prise en compte de la modification des serveurs DNS
 
 Une fois vos modifications effectuées, deux périodes successives doivent être prises en compte :
 
-- La modification apportée côté OVHcloud doit être récupérée par le *registre* qui gère votre extension de nom de domaine (par exemple, le regitre des extensions en *.fr*). Vous pouvez suivre la progression de cette opération dans votre [espace client OVHcloud](/links/manager). Pour cela, rendez-vous dans la partie `Web Cloud`{.action}, accédez à la section `Noms de domaine`{.action} dans la colonne de gauche, puis cliquez sur `Opérations en cours`{.action}.
-- Une fois la modification prise en compte par l'organisation qui gère votre extension de nom de domaine, patientez un maximum de **48 heures** pour que les modifications apportées soient entièrement propagées et effectives.
+- Le *registre* qui gère votre extension de nom de domaine (par exemple, le regitre des extensions en *.fr*) doit être informé de la modification DNS apportée côté OVHcloud. Suivez la progression de cette opération dans votre [espace client OVHcloud](/links/manager). Pour cela, rendez-vous dans la partie `Web Cloud`{.action}, accédez à la section `Noms de domaine`{.action} dans la colonne de gauche, puis cliquez sur `Opérations en cours`{.action}.
+- Une fois les informations du *registre* à jour, patientez un maximum de **48 heures** pour que les modifications apportées soient entièrement propagées et effectives.
 
 ## Aller plus loin
 
