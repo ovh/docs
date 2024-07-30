@@ -1,7 +1,7 @@
 ---
 title: Pushing logs from software - Apache
 excerpt: Get to know what is happening on your websites in real time.
-updated: 2020-07-27
+updated: 2024-07-30
 ---
 
 ## Objective
@@ -45,9 +45,14 @@ In order to follow this guide you will need:
 
 #### Global Apache configuration
 
-We will configure one virtual Host to send all of its logs to your stream, you will have to repeat this configuration to every stream in order to make it work.
+We will first configure Apache2 to send all Virtual Hosts logs to one stream.
 
-We use the CustomLog format directive to transform Apache logs in LTSV format and ship them to the Logs Data Platform with the proper OVHcloud token. Note that 3 fields are mandatory with the LTSV format; host, message and time (in the RFC 3339 format). Refer to the examples below to learn how to fill in these fields. Please create the file **/etc/httpd/conf.d/ldp.conf** or **/etc/apache2/conf.d/ldp.conf** (it depends of your distribution) and insert the following:
+> [!warning]
+>
+> If you have any log related configuration in your virtual hosts, you must remove them or head to the next section to add a specific virtual host configuration.
+>
+
+We use the CustomLog format directive to transform Apache logs in LTSV format and ship them to the Logs Data Platform with the proper OVHcloud token. Note that 3 fields are mandatory with the LTSV format; host, message and time (in the RFC 3339 format). Refer to the examples below to learn how to fill in these fields. Please create the file **/etc/httpd/conf-enabled/ldp.conf** or **/etc/apache2/conf-enabled/ldp.conf** (the location of the file depends on your distribution and on your Apache version) and insert the following:
 
 ```ApacheConf
  LogFormat "X-OVH-TOKEN:XXXXXXXXXXX\tdomain:%V\thost:%h\tserver:%A\ttime:%{sec}t\tident:%l\tuser:%u\tmethod:%m\tpath:%U%q\tprotocol:%H\tstatus_int:%>s\tsize_int:%b\treferer:%{Referer}i\tagent:%{User-Agent}i\tresponse_time_int:%D\tcookie:%{cookie}i\tset_cookie:%{Set-Cookie}o\tmessage:%h %l %u %t \"%r\" %>s %b\n" combined_ltsv
@@ -55,6 +60,8 @@ We use the CustomLog format directive to transform Apache logs in LTSV format an
  ErrorLog syslog:local1
 ```
 
+
+If you need to send your logs to an additional stream, you would need to repeat this snippet and change the LogFormat name **combined_ltsv** of your new snippet to a new name.
 Note that you will have to replace the address and the port of `<your_cluster>.logs.ovh.com` with the one you have been assigned to (Check the **Home** page to retrieve it). Ensure that the full path of openssl is correct for your system or it won't work. Also ensure that your `X-OVH-TOKEN` is properly written. This tutorial covers only how to send your access logs to the Logs Data platform. To send your Error logs, [you should configure your syslog template to send logs to Logs Data platform](/pages/manage_and_operate/observability/logs_data_platform/ingestion_syslog_ng). Finally, check that you don't use any CustomLog option in your VirtualHost configuration since the VirtualHost configuration has precedence over global configuration.
 
 #### VirtualHost configuration
