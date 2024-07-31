@@ -37,7 +37,6 @@ Permette, da un terminale e con l’aiuto di un comando Linux, di copiare un fil
 ## Procedura
 
 Questa guida ti mostra in modo dettagliato le funzionalità disponibili con il comando `scp`. Per maggiori informazioni, contatta la nostra [Community di utenti](/links/community).
-
 ### Step 1 - Recupera gli accessi SSH del tuo hosting Web
 
 Per recuperare gli accessi SSH del tuo hosting Web, consulta la nostra guida "[Utilizzare l’accesso SSH del tuo hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting)".

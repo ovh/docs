@@ -61,7 +61,6 @@ Start by backing up the data that makes up your (FTP **AND** database files), fo
 
 Website management software (CMS) also provides the ability to install automatic backup plugins.<br>
 Check the official forums for your favourite CMS or contact the [OVHcloud community](/links/community).
-
 ### Step 4 - Find out how to recognise fraudulent emails
 
 Phishing emails are a security threat to your website because they can contain or lead to the installation of malwares. To learn how to recognise and protect yourself from them, see this [guide](/pages/account_and_service_management/account_information/phishing_care).
