@@ -64,6 +64,7 @@ Wykonaj kopię zapasową danych (plików FTP **I** bazy danych) zgodnie z instru
 
 Oprogramowanie do zarządzania witryną internetową (CMS) umożliwia również instalację wtyczek do automatycznych kopii zapasowych.<br>
 Sprawdź oficjalne fora swojego ulubionego CMS-a lub skontaktuj się z [społecznością OVHcloud](/links/community).
+
 ### Etap 4 - Dowiedz się, jak rozpoznawać fałszywe e-maile
 
 Wiadomości typu phishing stanowią zagrożenie dla bezpieczeństwa Twojej strony, ponieważ mogą zawierać lub powodować instalację złośliwego oprogramowania. Aby dowiedzieć się, jak je rozpoznawać i chronić, zapoznaj się z tym [przewodnikiem](/pages/account_and_service_management/account_information/phishing_care).
