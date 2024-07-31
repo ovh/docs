@@ -1,7 +1,7 @@
 ---
 title: Creating, updating and accessing a Managed Rancher Service
 excerpt: 'Find out how to create, update and use a Managed Rancher Service on OVHcloud'
-updated: 2024-07-26
+updated: 2024-07-31
 ---
 
 > [!warning]
@@ -17,14 +17,14 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Creating a Managed Rancher Service
 
-To initiate your journey, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open the `Public Cloud`{.action} section.
+To initiate your journey, log in to the [OVHcloud Control Panel](/links/manager) and open the `Public Cloud`{.action} section.
 Then access the `Managed Rancher Service`{.action} under the `Containers & Orchestration` section.
 Using the OVHcloud Control Panel you can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
 
@@ -109,6 +109,6 @@ This web-based interface serves as your command center for orchestrating contain
 
 - To have an overview of OVHcloud Managed Rancher service, you can go to the [OVHcloud Managed Rancher page](https://www.ovhcloud.com/en-ie/public-cloud/managed-rancher-service/).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.
