@@ -1159,5 +1159,4 @@ Retrouvez ci-dessous les états qui peuvent bloquer le fonctionnement de votre D
 ## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
-
 Dans le cadre de la mise en place d'un enregistrement DNS dynamique (DynHost), l'utilisation d'un wildcard (caractère `*`) dans la case `sous-domaine`{.action} du formulaire d'un enregistrement DNS est indisponible.
