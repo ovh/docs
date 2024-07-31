@@ -77,7 +77,7 @@ In this example, the title field will be colored in red, and the body will be co
 With our demo stream, we can use this kind of filter and the **rating_num** numeric attribute to display in yellow every joke rated above 100.
 
 ```shell-session
-$ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --pattern "My Title: {{color \"red\"}} {{ ._title }} , {{noColor }} The Joke: {{if (lt (._rating_num) 100)}}{{ color \"blue\" }}{{else}}{{color \"yellow\"}} {{ .short_message }} {{ noColor }}"
+$ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --pattern "My Title: {{color \"red\"}} {{ ._title }} , {{noColor }} The Joke: {{if (lt (._rating_num) 100.0 )}}{{ color \"blue\" }} {{ .short_message}} {{else}}{{color \"yellow\"}} {{ .short_message }} {{ noColor }} {{end }}"
 ```
 
 #### The match option
@@ -94,7 +94,7 @@ You can of course combine multiple matches by issuing **ldp-tail --match <COND_1
 
 #### TOML Configuration file
 
-Here is an example of a [TOML](https://github.com/toml-lang/toml){.external} configuration file for ldp-tail
+Here is an example of a [TOML](https://github.com/toml-lang/toml){.external} configuration file for ldp-tail. You can save it into a file named **myfile.toml**.
 
 ```text
 Address = "wss://gra1.logs.ovh.com/tail/?tk=demo"
@@ -103,14 +103,15 @@ Pattern = "{{ ._title}} The Joke: {{ .short_message }}"
 [[Match]]
 Key="_rating_num"
 Operator="gt"
-Value=100
+Value=100.0
 Not=false
 
 [[Match]]
 Key="_title"
-Operator="begin"
-Value="another"
+Operator="contain"
+Value="the"
 Not=false
+
 ```
 
 If you are not familiar with TOML, here are some explanations. **Address** and **pattern** are similar to the options you have in the command line. **Match option** is a little bit different. Since you can have multiple conditions, **Match** is an array of tables where every object is a full condition with the field, the operator, the value and the negation of this condition if needed. Note that the **Value** attribute can be a string or a number. The **Not** attribute must be the boolean true or false.
