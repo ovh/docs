@@ -1,12 +1,12 @@
 ---
 title: Public Cloud Databases - How to restore a backup
 excerpt: Find out how to restore a backup
-updated: 2023-07-26
+updated: 2024-07-31
 ---
 
 ## Objective
 
-OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance. 
+OVHcloud Databases as-a-service (DBaaS) allows you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance. 
 
 **This guide explains how to restore a backup of a database solution in the OVHcloud Control Panel.**
 
@@ -14,7 +14,7 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud database service](https://www.ovhcloud.com/en-gb/public-cloud/databases/) up and running
 
 ## Instructions
@@ -34,6 +34,7 @@ In the tab list, click on `Backups`{.action}.
 ### Step 3: Select the backup to restore from
 
 Select the backup from which you want to restore. To help you choose, observe the dates at which the backups have been performed in the "Creation date" column.
+
 Click on the `...`{.action} button corresponding to the chosen backup. Then click on `Duplicate (Fork)`{.action} to go to the configuration page of the new service.
 
 > [!warning]
@@ -69,7 +70,7 @@ The most common option is to restore from a backup.
 
 ![Restore point from backup](images/restore-point-selection-backup.png){.thumbnail}
 
-##### Specific date and latest
+##### **Specific date and latest**
 
 If your service supports point in time recovery (see [Automated Backup guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more details), you will also be offered the option to restore from a specific date and time.
 
@@ -113,7 +114,7 @@ Now click on `Create a fork`{.action} and the new service will be created. Pleas
 
 ### Step 5: Wait for service creation
 
-You now just have to wait for your service to be ready.
+Now all you have to do is wait for your service to be ready.
 This new service is now completely independent from the one you forked the backup from. You can safely delete the old service without impacting the new one.
 
 > [!warning]
@@ -123,4 +124,4 @@ This new service is now completely independent from the one you forked the backu
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
