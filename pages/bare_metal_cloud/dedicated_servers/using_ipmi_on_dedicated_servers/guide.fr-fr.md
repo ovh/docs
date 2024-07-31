@@ -10,10 +10,10 @@ La console IPMI (Intelligent Platform Management Interface) permet d’établir 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud]((/links/manager)).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
-> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**]((/links/bare-metal/eco-about).
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
 >
 > Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 
