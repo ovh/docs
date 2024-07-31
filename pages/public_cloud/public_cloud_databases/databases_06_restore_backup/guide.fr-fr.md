@@ -15,7 +15,7 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [Public Cloud database service](https://www.ovhcloud.com/en-gb/public-cloud/databases/) up and running
+- A [Public Cloud database service](https://www.ovhcloud.com/fr-fr/public-cloud/databases/) up and running
 
 ## Instructions
 
