@@ -1,6 +1,6 @@
 ---
-title: Creating, Updating and Access to a Managed Rancher Service
-excerpt: 'Find out how to create, update and using a Managed Rancher Service on OVHcloud'
+title: Creating, updating and accessing a Managed Rancher Service
+excerpt: 'Find out how to create, update and use a Managed Rancher Service on OVHcloud'
 updated: 2024-07-26
 ---
 
