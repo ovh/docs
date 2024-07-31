@@ -1,12 +1,12 @@
 ---
-title: 'Comprehensive Guide to OVH Rancher'
-excerpt: 'A complete guide including release calendar, supported versions, responsibility model, and lifecycle policies for OVH Rancher.'
-updated: 2023-12-08
+title: 'Comprehensive Guide to OVHcloud Managed Rancher Service'
+excerpt: 'A complete guide including release calendar, supported versions, responsibility model, and lifecycle policies for OVHcloud Managed Rancher Service.'
+updated: 2024-07-31
 ---
 
 ## Objective
 
-**This guide explains how to use and manage OVH Rancher with our comprehensive documentation.**
+**This guide explains how to use and manage OVHcloud Managed Rancher Service with our comprehensive documentation.**
 
 ## Instructions
 
@@ -24,7 +24,6 @@ The Rancher release calendar is as follows:
 | 1.25               | 2022-08-23            | 2022-12-08       | Q4-2024        | Q1-2025     |
 | 1.24               | 2022-05-03            | 2023-08-19       | 2023-12-06     | 2024-06-19  |
 
-
 *MKS release date:* Estimated date when this Kubernetes version is available for OVHcloud Managed Kubernetes Service.
 
 *End of support:* For clusters running minor versions that have reached End of Support, OVHcloud will not provide any technical assistance and will advise you to upgrade your cluster to a supported version. Please note that versions that have reached their End of Support date are not available for MKS Cluster creation.
@@ -37,7 +36,7 @@ The **Date format** follows the [international standard for numeric dates](https
 
 **TBD** abbreviation is used when a date is to be determined.
 
-### Step 2: MKS Supported Version Matrix
+### Step 2: MKS Supported Version Matrix in MRS
 
 The supported versions of MKS are as follows:
 
@@ -61,11 +60,11 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 For more details, see the full responsibility model [here](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-responsibility-model?id=kb_article_view&sysparm_article=KB0058760).
 
-### Step 4: MRS Lifecycle Policies
+### Step 4: MKS Lifecycle Policies
 
 OVHcloud's Managed Kubernetes Service offers software-compliant Kubernetes, certified by the CNCF. New stable versions are provided regularly by the CNCF. Earlier versions provided by OVHcloud may reach their End-of-Sale (EoS) or End-of-Life (EoL) due to the lifecycle of the underlying support from the Kubernetes community. This policy helps customers understand the lifecycle of the OVHcloud Managed Kubernetes Service and prepare for transitions to newer versions.
 
-For more details, see the MRS lifecycle policies [here](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-eos-eol-policies?id=kb_article_view&sysparm_article=KB0049743).
+For more details, see the MKS lifecycle policies [here](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-eos-eol-policies?id=kb_article_view&sysparm_article=KB0049743).
 
 ## Go further
 
