@@ -1,7 +1,7 @@
 ---
 title: Import an existing Kubernetes cluster
 excerpt: 'Find out how to import an existing Kubernetes on a Managed Rancher Service'
-updated: 2024-07-26
+updated: 2024-07-30
 ---
 
 > [!warning]
@@ -17,12 +17,12 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-An OVHcloud Managed Rancher Service (see the [creating a Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
+- An OVHcloud Managed Rancher Service (see the [creating a Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 - An access to the Rancher UI to operate it (see the [connecting to the Rancher UI](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 
 ## Instructions
 
-##### Importing an existing OVHcloud Managed Kubernetes Service cluster
+#### Importing an existing OVHcloud Managed Kubernetes Service cluster
 
 If you already use our [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/asia/public-cloud/kubernetes/), you can easily import an existing cluster.
 
@@ -30,11 +30,11 @@ Log in your Managed Rancher Service UI.
 
 ![OVHcloud Managed Rancher Service UI](images/rancher-ui.png){.thumbnail}
 
-Click on `Import Existing`{.action} button and then select **Generic** driver to import any Kubernetes cluster.
+Click on the `Import Existing`{.action} button and select **Generic** driver to import any Kubernetes cluster.
 
 ![OVHcloud Managed Rancher Service UI generic](images/generic-driver.png){.thumbnail}
 
-Enter the Cluster Name (it is not mandatory to match the name of your existing MKS cluster), then click on `Create`{.action} button (at the bottom right of the screen).
+Enter the Cluster Name (it is not mandatory to match the name of your existing MKS cluster), then click on `Create`{.action} (at the bottom right of the screen).
 
 ![OVHcloud Managed Rancher Service UI MKS name](images/mks-name.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Now you can click on the **Explore** button to manage your MKS cluster.
 
 #### Importing an existing Kubernetes cluster
 
-For organizations with pre-existing Kubernetes clusters, Rancher simplifies integration. Import your clusters seamlessly, wherever they are deployed, allowing Rancher to take over the management responsibilities. This process facilitates the transition to Rancher without disrupting your existing infrastructure.
+For organizations with pre-existing Kubernetes clusters, Rancher simplifies integration. Import your clusters seamlessly, wherever they're deployed, and let Rancher take over management responsibilities. This process facilitates the transition to Rancher without disrupting your existing infrastructure.
 
 You can refer to the official Rancher documentation on how to [Register Existing Cluster](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/register-existing-clusters).
 
