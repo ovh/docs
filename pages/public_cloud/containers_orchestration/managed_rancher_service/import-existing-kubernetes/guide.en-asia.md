@@ -1,7 +1,7 @@
 ---
 title: Import an existing Kubernetes cluster
 excerpt: 'Find out how to import an existing Kubernetes on a Managed Rancher Service'
-updated: 2024-07-30
+updated: 2024-07-31
 ---
 
 > [!warning]
@@ -16,7 +16,7 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An OVHcloud Managed Rancher Service (see the [creating a Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 - An access to the Rancher UI to operate it (see the [connecting to the Rancher UI](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 
@@ -24,7 +24,7 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 
 #### Importing an existing OVHcloud Managed Kubernetes Service cluster
 
-If you already use our [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/asia/public-cloud/kubernetes/), you can easily import an existing cluster.
+If you already use our [OVHcloud Managed Kubernetes Service](/links/public-cloud/kubernetes), you can easily import an existing cluster.
 
 Log in your Managed Rancher Service UI.
 
@@ -79,8 +79,8 @@ You can refer to the official Rancher documentation on how to [Register Existing
 
 ## Go further
 
-- To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/asia/public-cloud/kubernetes/).
+- To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.
