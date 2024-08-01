@@ -6,9 +6,20 @@ updated: 2024-08-01
 
 ## Objectif
 
-Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode *bridged* (via des MAC Virtuelles) n'est pas possible. Il est donc nécessaire de configurer les Additional IP en mode routé ou via le vRack.
-
 **Découvrez comment configurer le réseau sous Windows Server avec Hyper-V.**
+
+### Gammes High Grade & SCALE
+
+Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode *bridged* (via des MAC Virtuelles) n'est pas possible. Il est donc nécessaire de configurer les Additional IP en mode routé ou via le vRack.   
+
+### Gamme Advance
+
+Les serveurs Advance ne disposant que de deux interfaces réseaux, il est conseillé de configurer le serveur en mode privé en créant un teaming avec les deux interfaces connectées au vRack. Un second serveur peut alors servir de passerelle internet avec une interface connectée au réseau privé et une autre connectée sur le réseau public.   
+
+Pour ce type de configuration il est possible d’utiliser la fonctionnalité IP en alias décrite dans l’article [Configurer son adresse IP en alias](https://help.ovhcloud.com/csm/fr-dedicated-servers-network-ipaliasing?id=kb_article_view&sysparm_article=KB0043761)
+
+Il est également possible de mettre en place cette configuration sur chacun des serveurs hyperV (une interface privée / une interface publique sur chaque serveur) et ne pas configurer d’agrégation de port mais dans ce cas le réseau privé disposera de moins de bande passante et d’aucune haute disponibilité des interfaces réseaux.
+
 
 ## Prérequis
 
