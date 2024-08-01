@@ -31,8 +31,13 @@ updated: 2024-07-16
 This configuration offers a better performance in terms of bandwidth, but is less flexible. With this configuration, the Additional IP has to be attached to a dedicated server. If you have multiple Proxmox hosts and want to migrate a VM from one host to another, you must also migrate the Additional IP linked to the VM. This can be done via the OVHcloud Control Panel or the OVHcloud API (you can automate this task by creating a script).
 
 #### Target configuration schema
-
-![route diagram](images/schema_route2022.png){.thumbnail}
+> [!tabs]
+> High Grade & SCALE ranges
+>>![route diagram](images/schema_route2022.png){.thumbnail}<br>
+>>
+> ADVANCE range
+>>![route diagram](images/gamme-advance-01.png){.thumbnail}<br>
+>>
 
 #### Explanations
 
