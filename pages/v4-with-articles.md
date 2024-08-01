@@ -479,29 +479,6 @@
 - [OVHcloud Connect FAQ](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-faq?id=kb_article_view&sysparm_article=KB0045283)
 - [OVHcloud Connect Limits](https://help.ovhcloud.com/csm/en-ie-network-ovhcloud-connect-limits?id=kb_article_view&sysparm_article=KB0045257)
 
-## Network > Bring Your Own IP (BYOIP)
-#### Getting started
-- [Bring Your Own IP](https://help.ovhcloud.com/csm/en-ie-network-bring-your-own-ip?id=kb_article_view&sysparm_article=KB0044851)
-#### Configuration
-##### Administration
-- `EMPTY`
-##### Deployments
-- [Bring Your Own IP](https://help.ovhcloud.com/csm/en-ie-network-bring-your-own-ip?id=kb_article_view&sysparm_article=KB0044851)
-##### Concepts
-- `EMPTY`
-##### Performances
-- `EMPTY`
-#### Migrations
-- `EMPTY`
-#### Tutorials
-- `EMPTY`
-#### Security
-- `EMPTY`
-#### Support / Troubleshooting
-- `EMPTY`
-#### Additional Resources        
-- `EMPTY`
-
 ## Network > Security
 #### Getting started
 - [OVHcloud Security Dashboard](https://help.ovhcloud.com/csm/en-ie-network-security-dashboard?id=kb_article_view&sysparm_article=KB0060698)
