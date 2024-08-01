@@ -1,7 +1,7 @@
 ---
-title: 'Configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE'
-excerpt: 'Découvrez comment configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE'
-updated: 2023-08-31
+title: 'Configurer le réseau sur Windows Server avec Hyper-V'
+excerpt: 'Découvrez comment configurer le réseau sur Windows Server'
+updated: 2024-08-01
 ---
 
 ## Objectif
