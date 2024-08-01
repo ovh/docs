@@ -38,7 +38,7 @@ So now Logs Data Platform knows which stream you want to browse. Now let's confi
 
 ### Access your OpenSearch Dashboards instance
 
-To create your OpenSearch Dashboards instance, click on OpenSearch Dashboards tab, Click on `Add a instance`{.action}, put a description and click on **Order** to launch the creation of your instance. Your instance will be created and delivered in approximatively 20 minutes.
+To create your OpenSearch Dashboards instance, click on OpenSearch Dashboards tab, Click on `Add a instance`{.action}, put a description and click on **Order** to launch the creation of your instance. Your instance will be created and delivered in approximately 20 minutes.
 
 ![osd creation](images/osd_created.png){.thumbnail}
 
