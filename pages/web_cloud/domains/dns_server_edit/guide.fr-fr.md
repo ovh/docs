@@ -1,7 +1,7 @@
 ---
 title: "Modifier les serveurs DNS d'un nom de domaine OVHcloud"
 excerpt: "Découvrez comment modifier les serveurs DNS de votre nom de domaine enregistré chez OVHcloud"
-updated: 2024-07-30
+updated: 2024-07-31
 ---
 
 ## Objectif
@@ -59,7 +59,7 @@ Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVH
 >
 > Lorsque vous utilisez les serveurs DNS OVHcloud, les numéros présents dans les noms des serveurs n'ont aucun lien avec le ou les services que vous utilisez. Seule l'option [DNS anycast](/links/web/domains-options) utilise des serveurs DNS spécifiques (`ns200.anycast.me` et `dns200.anycast.me`). Lorsqu'ils sont souscrits, ils vous sont automatiquement attribués.
 
-![dns-server](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
+//////// Placer Screen EN ici ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ### Étape 2 - Modifier les serveurs DNS <a name="modify-dns-servers"></a>
 
@@ -72,11 +72,11 @@ Pour modifier les serveurs DNS, cliquez sur le bouton `Modifier les serveurs DNS
 
 Une nouvelle page apparaît et trois options de modification s'offrent à vous.
 
-//////// Placer Screen EN ici
+//////// Placer Screen EN ici ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #### Option 1 - Utiliser les DNS par défaut d'OVHcloud
 
-//////// Placer screen EN ici 
+//////// Placer Screen EN ici ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Cette option permet d'appliquer automatiquement la configuration de la zone DNS OVHcloud existante pour votre nom de domaine. Au préalable, assurez-vous qu'une zone DNS existe bien chez OVHcloud pour votre nom de domaine.
 
@@ -86,7 +86,7 @@ Cette option permet d'appliquer automatiquement la configuration de la zone DNS 
 
 Pour utiliser les serveurs DNS par défaut d'OVHcloud, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 
-//////// Placer screen EN ici 
+//////// Placer Screen EN ici ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Elle résume le nom des 2 serveurs DNS qui vont être appliqués à votre nom de domaine. Ils doivent avoir l'une des 2 formes suivantes :
 
@@ -101,7 +101,7 @@ Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient 
 
 #### Option 2 - Utiliser mes propres DNS
 
-//////// Placer screen EN ici 
+//////// Placer Screen EN ici ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Cette option permet de déclarer les serveurs DNS d'une zone DNS non gérée depuis l'espace client OVHcloud.
 
@@ -128,7 +128,7 @@ Cliquez sur le bouton `+`{.action} pour chaque serveur DNS afin d'en valider la 
 
 Dès que tous vos propres serveurs DNS sont ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 
-//////// Placer screen EN ici 
+//////// Placer Screen EN ici ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Elle résume les noms des serveurs DNS qui vont être appliqués à votre nom de domaine.
 S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
@@ -137,7 +137,7 @@ Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient 
 
 #### Option 3 - Utiliser les DNS OVHcloud et mes propres DNS
 
-//////// Placer screen EN ici 
+//////// Placer Screen EN ici ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Cette option permet de combiner l'utilisation de vos propres serveurs DNS tout en conservant les serveurs DNS OVHcloud actifs pour votre nom de domaine. En réalisant cette combinaison, cela permet, par exemple, d'assurer d'avantage l'accès à aux différents services associés à votre nom de domaine (hébergement web, serveurs e-mail, etc.). En effet et toujours par exemple, si un groupe de serveurs DNS devient indisponible pendant quelques minutes, les autres serveurs DNS déclarés peuvent prendre le relais.
 
@@ -169,7 +169,7 @@ Cliquez sur le bouton `+`{.action} pour chaque serveur DNS afin d'en valider la 
 
 Dès que tous vos propres serveurs DNS sont ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 
-//////// Placer screen EN ici 
+//////// Placer Screen EN ici ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Elle résume les noms des serveurs DNS qui vont être appliqués à votre nom de domaine.
 S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
