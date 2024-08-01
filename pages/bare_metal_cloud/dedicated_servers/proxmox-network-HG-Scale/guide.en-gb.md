@@ -46,7 +46,7 @@ Since Proxmox is based on the Debian distribution, we will update the network co
 You need to:
 
 - Have administrative access (root) via SSH.
-- Create an aggregation (linux bond).
+- Create an aggregation (linux bond), only for High Grade & SCALE ranges.
 - Create a bridge.
 - Allow forwarding.
 - Allow proxy_arp.
