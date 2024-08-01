@@ -1,7 +1,7 @@
 ---
-title: Use Rancher CLI
+title: Tutorial - How to use Rancher CLI
 excerpt: 'Find out how to use the Rancher CLI to handle a Managed Rancher Service'
-updated: 2024-07-30
+updated: 2024-08-01
 ---
 
 > [!warning]
@@ -12,11 +12,11 @@ updated: 2024-07-30
 
 ## Objective
 
-Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. In this guide we will discover that in addition to the Rancher UI you can handle your Kubernetes clusters through the Ranhcer CLI.
+Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. In this tutorial we will discover that in addition to the Rancher UI you can handle your Kubernetes clusters through the Ranhcer CLI.
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An OVHcloud Managed Rancher Service (see the [creating a Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 - An access to the Rancher UI to operate it (see the [connecting to the Rancher UI](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 
@@ -28,7 +28,7 @@ The [Rancher CLI (Command Line Interface)](https://ranchermanager.docs.rancher.c
 
 ### Downoad and install Rancher CLI
 
-To download the Rancher CLI, log in your Managed Rancher Service UI, click on the `About`{action} link at the bottom of the navigation sidebar menu:
+To download the Rancher CLI, log in your Managed Rancher Service UI and click on the `About`{action} link at the bottom of the navigation sidebar menu:
 
 ![OVHcloud Managed Rancher Service UI](images/rancher-about-link.png){.thumbnail}
 
@@ -42,7 +42,7 @@ Under the **CLI Downloads** section, click to download the binaries for your OS 
 
 To use the Rancher CLI and login to our OVHcloud MRS, you need to create an API Key.
 
-On the top right, click on your avatar and then on `Account & API Keys`{.action} button menu. 
+On the top right, click on your avatar and then on the `Account & API Keys`{.action} button menu. 
 
 ![OVHcloud Managed Rancher Service UI](images/rancher-avatar-menu.png){.thumbnail}
 
@@ -52,20 +52,20 @@ The Account and API Keys page is displayed.
 
 Click on the `Create API Key`{.action} button to create an API key.
 
-Define a description that will identify your API Key (`CLI` for example), keep the scope `No Scope` by default, define the expiration date.
+Define a description that will identify your API Key (`CLI` for example), keep the scope value to `No Scope` by default and define the expiration date.
 
 ![OVHcloud Managed Rancher Service UI](images/rancher-apikey-creation.png){.thumbnail}
 
 > [!warning]
 >
-> You can change the scope to allow the Rancher CLI to access only to one of your Kubernetes cluster if you want.
+> You can change the scope to allow the Rancher CLI to access only one of your Kubernetes clusters if you wish.
 
 Then click on the `Create`{.action} button.
 
 A new API Key has been created. 
 Copy and paste in a password manager the `Access Key`, the `Secret Key` and the `Bearer Token`.
 
-### Use the Rancher CLI
+### Using the Rancher CLI
 
 Login with the CLI to your MRS:
 
@@ -99,7 +99,7 @@ CURRENT   ID             STATE     NAME                     PROVIDER   NODES    
 
 As you can see, in our example, we have one MKS cluster and one existing cluster we imported before.
 
-Select one of the Kubernetes cluster:
+Select one of the Kubernetes clusters:
 
 ```bash
 rancher context switch
@@ -116,7 +116,7 @@ INFO[0004] Saving config to /Users/avache/.rancher/cli2.json
 
 By choosing 3, you switched in the `my-kube` cluster.
 
-List the pods in the `my_kube` cluster directly through Rancher CLI:
+List the pods in the `my_kube` cluster directly through the Rancher CLI:
 
 ```bash
 rancher kubectl get pod -A
@@ -161,6 +161,6 @@ velero                velero-55f979c9c-hmb7v                         1/1     Run
 
 - To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/pl/public-cloud/managed-rancher-service/).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
