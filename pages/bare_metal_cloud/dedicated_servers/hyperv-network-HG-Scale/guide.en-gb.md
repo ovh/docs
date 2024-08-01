@@ -1,14 +1,25 @@
 ---
-title: 'Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges'
-excerpt: 'Find out how to configure the network on  Windows Server with Hyper-V on the High Grade & SCALE ranges'
-updated: 2023-08-31
+title: 'Configuring the network on Windows Server with Hyper-V'
+excerpt: 'Find out how to configure the network on  Windows Server with Hyper-V'
+updated: 2024-08-01
 ---
 
 ## Objective
 
+**This guide explains how to configure the network in  Windows Server with Hyper-V.**
+
+### High Grade & SCALE ranges
+
 On the High Grade & SCALE ranges, it is not possible to operate Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
 
-**This guide explains how to configure the network in  Windows Server with Hyper-V.**
+### Advance range
+
+As Advance range only have 2 network interfaces, it’s advised to configure the server in full private mode with both interfaces in teaming connected to the vRack. A second server can act as internet gateway with one interface connected to the private network and another connected to the public network. 
+
+For this type of configuration, it is possible to use the IP aliasing as described in the article [Configuring IP aliasing ](https://help.ovhcloud.com/csm/en-gb-dedicated-servers-network-ipaliasing?id=kb_article_view&sysparm_article=KB0043753)
+
+It is also possible to set up such configuration (one interface on private network, the second on the public network) for each HyperV server and therefore not configure any teaming. In this case, the private network bandwidth is reduced and there’s no high availability on network interfaces.
+
 
 ## Requirements
 
