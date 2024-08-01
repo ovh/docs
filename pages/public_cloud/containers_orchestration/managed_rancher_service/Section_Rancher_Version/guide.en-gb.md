@@ -14,15 +14,15 @@ updated: 2024-07-31
 
 The Rancher release calendar is as follows:
 
-| Kubernetes version | Upstream release date | MKS release date | End of support | End of life |
-|--------------------|-----------------------|------------------|----------------|-------------|
-| 1.30               | 2024-04-17            | Q4-2024          | TBD            | TBD         |
-| 1.29               | 2023-12-13            | 2024-03-25       | TBD            | TBD         |
-| 1.28               | 2023-08-15            | 2023-12-06       | TBD            | TBD         |
-| 1.27               | 2023-04-11            | 2023-08-31       | TBD            | TBD         |
-| 1.26               | 2022-12-06            | 2023-05-09       | Q4-2024        | Q1-2025     |
-| 1.25               | 2022-08-23            | 2022-12-08       | Q4-2024        | Q1-2025     |
-| 1.24               | 2022-05-03            | 2023-08-19       | 2023-12-06     | 2024-06-19  |
+| Kubernetes version | Upstream release date | MKS release date | End of life |
+|--------------------|-----------------------|------------------|-------------|
+| 1.30               | 2024-04-17            | Q4-2024          | TBD         |
+| 1.29               | 2023-12-13            | 2024-03-25       | TBD         |
+| 1.28               | 2023-08-15            | 2023-12-06       | TBD         |
+| 1.27               | 2023-04-11            | 2023-08-31       | TBD         |
+| 1.26               | 2022-12-06            | 2023-05-09       | Q1-2025     |
+| 1.25               | 2022-08-23            | 2022-12-08       | Q1-2025     |
+| 1.24               | 2022-05-03            | 2023-08-19       | 2024-06-19  |
 
 *MKS release date:* Estimated date when this Kubernetes version is available for OVHcloud Managed Kubernetes Service.
 
