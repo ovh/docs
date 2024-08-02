@@ -31,6 +31,43 @@ In this guide we will explore how to **use OVHcloud as an Infrastructure Provide
 
 ## Instructions
 
+### Creating OVHcloud Public Cloud credentials
+
+To create OVHcloud Public Cloud credential, you need to have an existing **OpenStack user** with `Compute Operator` role in minimum. Please follow this guide to [create an OpenStack user](https://help.ovhcloud.com/csm/en-gb-public-cloud-compute-openstack-users?id=kb_article_view&sysparm_article=KB0050636) if you don't have one yet. 
+
+Log in your Managed Rancher Service UI.
+
+![OVHcloud Managed Rancher Service UI](images/rancher-ui.png){.thumbnail}
+
+Click on `Cluster Management`{.action} in the menu.
+Then click on `Cloud Credentials`{.action}.
+
+![OVHcloud Managed Rancher Service Credentials UI](images/rancher-creds.png){.thumbnail}
+
+If you don't have any **OVHcloud Public Cloud** credentials yet, click on the `Create`{.action} button.
+Else, you can jump to the next chapter.
+
+Click on the `OVHcloud Public Cloud` button.
+
+![OVHcloud Managed Rancher Service PCI credentials UI](images/pci-creds.png){.thumbnail}
+
+Define a name for the credentials, `pci` for example ans then fill the OpenStack user's username and password.
+
+![OVHcloud Managed Rancher Service Create Credentials](images/rancher-create-pci-creds.png){.thumbnail}
+
+Click on `Get projects list`{.action}:
+
+![OVHcloud Managed Rancher Service Create Credentials](images/rancher-pci-creds-project.png){.thumbnail}
+
+Select your Public Cloud Project in this list and then click on `Create`{.action} button.
+
+> [!warning]
+>
+> You don't have to click on the `Edit Auth Config`{.action} button.
+
+The OVHcloud Public Cloud credential have been created, now you can use it to create a Kubernetes clusters based on Public Cloud Instances (PCI). This credentials will be used to provision nodes in your clusters.
+You can use this credential to create several Kubernetes clusters.
+
 ### Creating a Kubernetes cluster on Compute Instances
 
 Log in your Managed Rancher Service UI.
@@ -43,23 +80,11 @@ Click on `Create`{.action} button.
 
 In Rancher you can create a Kubernetes cluster in different manner. To create a Kubernetes cluster running in Compute Instances, use the **Provision new nodes and create a cluster using RKE2/K3s** way and click on `OVHcloud Public Cloud`{.action} driver.
 
-To create cloud credential, you need to have an existing **OpenStack user** with `` and `` roles in minimum. Please follow this guide to [create an OpenStack user](https://help.ovhcloud.com/csm/en-gb-public-cloud-compute-openstack-users?id=kb_article_view&sysparm_article=KB0050636) if you don't have one yet. 
+Select an OVHcloud Public Cloud credential:
 
-Fill the OpenStack user's username and password and click on `Get projects list`{.action} button.
+![OVHcloud Managed Rancher Service Create Kubernetes PCI](images/rancher-select-creds.png){.thumbnail}
 
-![OVHcloud Managed Rancher Service Create Credentials](images/rancher-create-credentials.png){.thumbnail}
-
-Select your Public Cloud Project in this list and then click on `Continue`{.action} button.
-
-![OVHcloud Managed Rancher Service Create Credentials](images/rancher-create-credentials-project.png){.thumbnail}
-
-> [!warning]
->
-> You don't have to click on the `Edit Auth Config`{.action} button.
-
-Once created, the cloud credentials will be used to provision nodes in your cluster. You can reuse these credentials for other node templates or in other clusters.
-
-Define the cluster name.
+Then, define the cluster name.
 
 ![OVHcloud Managed Rancher Service Cluster Name](images/rancher-cluster-name.png){.thumbnail}
 
@@ -115,7 +140,7 @@ After creating the cluster, you can also add members.
 
 Finally, click on the `Create`{.action} button to create your Kubernetes cluster with OVHcloud PCI driver.
 
-The cluster creation can take several minutes.
+The cluster creation can take several minutes (depending on the OS and on the number of nodes you want).
 
 ![OVHcloud Managed Rancher Service Cluster Created](images/rancher-cluster-created.png){.thumbnail}
 
@@ -138,6 +163,8 @@ List the namespaces:
 ```bash
 kubectl get ns
 ```
+
+![OVHcloud Managed Rancher Service Test Cluster](images/kubectl-get-ns.png){.thumbnail}
 
 You can now install applications in your Kubernetes cluster though the `kubectl` CLI or the Rancher UI.
 
