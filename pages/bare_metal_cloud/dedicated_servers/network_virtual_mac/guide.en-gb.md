@@ -21,7 +21,7 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
 > Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
 >
-> This feature will be available soon for all servers in the High Grade, Scale and Advance ranges from December 2024.
+> This feature will soon be available for all High Grade, Scale and Advance servers from December 2024.
 > 
 
 > [!primary]
