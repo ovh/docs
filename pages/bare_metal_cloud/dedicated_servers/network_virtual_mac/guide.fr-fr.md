@@ -19,8 +19,10 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
->
 > Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
+>
+> Cette fonctionnalité sera prochainement disponible pour les serveurs des gammes High Grade, SCALE et ADVANCE Gen3.
+> 
 
 > [!primary]
 > Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
