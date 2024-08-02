@@ -82,23 +82,20 @@ You can also get your OVHcloud Internet Gateway's Public IP by using our APIs:
 
 You can find more details about how using OVHcloud APIs with this guide: [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps)
 
-If you want to use your Kubernetes cluster to know your Gateway Public's IP, you can run this command:
+If you want to use your Kubernetes cluster to know your Gateway Public's IP, you can run these commands:
 
 ```bash
 kubectl run get-gateway-ip --image=ubuntu:latest -i --tty --rm 
 ```
 
-This command will create you a temporary pod and open its shell
-
-You may have to wait a bit to let the container be created, and then once the shell has appeared, you can run this command : 
+This command will create you a temporary pod and open a console.
+You may have to wait a bit to let the pod be created and then once the shell has appeared, you can run this command:
 
 ```bash
 apt update && apt upgrade -y && apt install -y curl && curl ifconfig.me
 ```
 
 The Public IP of the Gateway you're using should appear.
-
-
 
 Click on the *Manage Access* menu of our newly created partition:
 ![Manage Access of the NFS partition](images/manage-nfs-partition-access.png){.thumbnail}
@@ -256,7 +253,6 @@ Events:
   Normal  ExternalProvisioning   15s (x10 over 2m25s)  persistentvolume-controller                                                                      Waiting for a volume to be created either by the external provisioner 'nfs2.csi.k8s.io' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
   Normal  ProvisioningSucceeded  14s                   nfs2.csi.k8s.io_nodepool-c7ef08a9-2a22-40fd-9c-node-993f96_7078d019-f44a-42a1-8e7f-c6ee36f3f466  Successfully provisioned volume pvc-a213e1a9-2fee-4632-ae9e-c952fab74e38
 ```
-
 
 If you encounter errors such as: 
 ```console
