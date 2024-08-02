@@ -915,6 +915,8 @@
         + [Managed Rancher Service (MRS)](products/public-cloud-containers-orchestration-managed-rancher-service)
             + [Getting started](public-cloud-containers-orchestration-managed-rancher-service-getting-started)
                 + [Getting started with Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/getting-started)
+            + [Creating or importing a Kubernetes cluster](public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes)
+                + [Create a Kubernetes cluster based on OVHcloud Public Cloud Compute Instances](public_cloud/containers_orchestration/managed_rancher_service/creating-kubernetes-pci-compute-instances)
     + [AI & Machine Learning](products/public-cloud-ai-and-machine-learning)
         + [General information](public-cloud-ai-and-machine-learning-general-information)
             + [Comparative tables - AI Notebooks, AI Training, AI Deploy](public_cloud/ai_machine_learning/gi_00_ai_comparative-table)

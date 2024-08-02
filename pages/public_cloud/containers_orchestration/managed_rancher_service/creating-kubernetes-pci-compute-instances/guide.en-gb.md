@@ -1,7 +1,7 @@
 ---
 title: Create a Kubernetes cluster based on OVHcloud Public Cloud Compute Instances
 excerpt: 'Find out how to create a Kubernetes cluster based on OVHcloud Public Cloud Compute Instances (PCI) on a Managed Rancher Service'
-updated: 2024-08-01
+updated: 2024-08-02
 ---
 
 > [!warning]
@@ -27,6 +27,7 @@ In this guide we will explore how to **use OVHcloud as an Infrastructure Provide
 - An OVHcloud Managed Rancher Service (see the [creating a Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 - An access to the Rancher UI to operate it (see the [connecting to the Rancher UI](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 - An [OpenStack user](https://help.ovhcloud.com/csm/en-gb-public-cloud-compute-openstack-users?id=kb_article_view&sysparm_article=KB0050636)
+- A [private network with a Gateway](https://help.ovhcloud.com/csm/en-public-cloud-network-create-private-network-gateway?id=kb_article_view&sysparm_article=KB0050213)
 
 ## Instructions
 
@@ -48,83 +49,91 @@ Fill the OpenStack user's username and password and click on `Get projects list`
 
 ![OVHcloud Managed Rancher Service Create Credentials](images/rancher-create-credentials.png){.thumbnail}
 
-Select your Public Cloud Project in this list and then click on `Edit Auth Config`{.action} button.
+Select your Public Cloud Project in this list and then click on `Continue`{.action} button.
 
 ![OVHcloud Managed Rancher Service Create Credentials](images/rancher-create-credentials-project.png){.thumbnail}
 
-Finally, click on `Continue`{.action} button.
-
-
-
-
-TODO: xxxx
-
-
+> [!warning]
+>
+> You don't have to click on the `Edit Auth Config`{.action} button.
 
 Once created, the cloud credentials will be used to provision nodes in your cluster. You can reuse these credentials for other node templates or in other clusters.
 
+Define the cluster name.
 
+![OVHcloud Managed Rancher Service Cluster Name](images/rancher-cluster-name.png){.thumbnail}
 
-TODO: xxxxx
+In the **Machine Pools** section you will configure your cluster.
 
-
-TODO: xxxxx
-First, enter a MKS cluster name, for example `my-mks-cluster`:
-
-![OVHcloud Managed Rancher Service Create MKS UI](images/rancher-mks-name.png){.thumbnail}
-
-(Optionnal) You can configure **Member Roles** to control who has access to the cluster and what permission they have to change it. If you want to change the default parameters, click the `Add Member`{.action} button to add users that can access the cluster and use the Role drop-down menu to set permissions for each user.
-
-(Optionnal) You can add **Labels & Annotations** on your cluster. If you want, click on `Add Label`{.action} button if you want to add some labels and on `Add Annotation`{.action} button if you want to add some annotations.
-
-For the **Account Configuration** you need to provide your OVH API credentials (`Application Key`, `Application Secret` and `Consumer Key`).
-If you don't have OVHcloud API credentials, you can follow our guide on how to [Generate your OVHcloud API keys](/pages/manage_and_operate/api/first-steps#advanced-usage-pair-ovhcloud-apis-with-an-application).
-
-Provide also your `Public Cloud project ID`. The project ID is where your Managed Kubernetes Service (MKS) cluster will be deployed. You can follow the guide on [How to create your first Project](/pages/public_cloud/compute/create_a_public_cloud_project) or if already existing, you can copy/paste it from the OVHcloud Control Panel or [API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project).
-
-![OVHcloud Project ID](images/project-id.png){.thumbnail}
-
-Finally, for this step, choose an `OVH API Endpoint`, depending on your location (EU, US or CA).
-
-For the **Cluster Configuration**, you need to select the `Region` where your cluster will be deployed. Then, select the `Kubernetes Version`. Note that only versions supported by Rancher current version are listed (you can refer to the [Official Support Matrix](https://www.suse.com/suse-rancher/support-matrix/all-supported-versions)). Then, select `Update Policy` information. If you want further infirmation, refet to the [Managed Kubernetes Update Policies](/pages/public_cloud/containers_orchestration/managed_kubernetes/change-security-update) guide).
-
-![OVHcloud Managed Rancher Service Cluster Configuration](images/cluster-config.png){.thumbnail}
-
-For the **Network Configuration**, in the `Private Network ID` field, select an existing OVHcloud Public Cloud private network or choose `None` if you want to create a cluster with nodes using only public interfaces.
-
-![OVHcloud Managed Rancher Service Network Configuration](images/network-config.png){.thumbnail}
-
-For the **NodePools Configuration**, for every NodePool you want:
-- Enter the **Name** of the NodePool. The name must be unique inside a same MKS cluster.
-- Choose an OVHcloud Instance **Flavor** used by this NodePool.
-- Enable or disable the Autoscaling.
-- Enter the number of nodes you want, it's the **Size** of your NodePool. If the autoscaling is enabled, then choose the minimum and maximum number of nodes.
-- Enable the **Monthly Billing** (Hourly billing by default).
-- click on the `Add Node Pool`{.action} button to add the node pool in the list below.
-
-You can add multiple Node Pools and then manage your list of Node Pools. Note that the "Delete" button (represented by a garbage icon) of your first NodePool is grayed out until a second one is created.
-
-![OVHcloud Managed Rancher Service Node Pool](images/nodepool.png){.thumbnail}
-
-Click on `Finish & Create Cluster`{.action} button.
-
-Your MKS cluster is provisioning, the creation will take several minutes. 
-
-![OVHcloud Managed Rancher Service MKS creating](images/mks-creating.png){.thumbnail}
-
-![OVHcloud Managed Rancher Service MKS Active](images/mks-active.png){.thumbnail}
-
-When the MKS cluster become `Active`, click on the name of your cluster in order to jump into the **Cluster** view and have more information.
-
-![OVHcloud Managed Rancher Service Node Pool](images/mycluster.png){.thumbnail}
-
-You can click on the `Explore`{.action} button to manage your MKS Cluster.
-
-> [!warning]
+> [!primary]
 >
-> Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/en-gb/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/en-gb/public-cloud/prices/) pricing pages.
-> Once your Managed Kubernetes clusters are created, we do recommend performing all actions (upgrade, nodepool management, cluster modification) from the Rancher console and not performing any action directly via the OVHcloud API, OVHcloud Terraform provider or the OVHcloud Control Panel as this can lead to desynchronizations.
+> In Rancher when you configure a machine pool, there are three roles that can be assigned to nodes: `etcd`, `Control Plane` and `Worker`.
+
+There are some good practices:
+
+- At least 3 machines/nodes with the role `etcd` are needed to survive a loss of 1 node and have a minimum high availability configuration for etcd. 3 `etcd` nodes are generally sufficient for smaller and medium clusters, and 5 `etcd` nodes for large clusters.
+- At least 2 machines/nodes with the role `Control Plane` for master component high availability.
+- You can set both the `etcd` and `Control Plane` roles for one instance.
+- The `Worker` role should not be used or added to nodes with the `etcd` or `Control Plane` role.
+- At least 2 machines/nodes with the `Worker` role for workload rescheduling upon node failure.
+
+In this guide we will:
+
+- Create a machine pool with 3 compute instances for `etcd` and `Control Plane`
+- Create a machine pool with 2 compute instances for `Worker` 
+
+For each of the machine pool, you have to define:
+- the pool name (`node-pool-1` for example for the first machine pool)
+- machine count (3 for example for the first machine pool)
+- select roles (check `etcd` and `Control Plane` for the first machine pool)
+- choose the region (`GRA9` for exmple for the first machine pool). If you want to check the availability of specific products that you plan to use alongside Kubernetes, you can refer to the [Availability of Public Cloud Product](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/) page.
+- choose the flavor (`b2-7` for example for ). You can refer to the [OVHcloud Flavor list](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+- choose the image for the Operating System (OS) used for your machines/nodes. Please refer to [Rancher Operating Systems and Container Runtime Requirements](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters).
+- choose a Key Pair (optionnal). It's the SSH Key Pair that will be used to access your nodes. Please refer to this guide on [how to create a SSH KeyPair and add it to your Public Cloud project](https://help.ovhcloud.com/csm/en-gb-public-cloud-compute-getting-started?id=kb_article_view&sysparm_article=KB0051017). If you leave this field empty, a new keypair will be generated automatically.
+- choose the Security Group that will be applied to created instances. You can leave the field empty.
+- choose the Availability Zone (Only `nova` is supported at the moment).
+- choose the Floating IP Pools (Only `Ext-Net` is supported at the moment)
+- choose the Networks. You need to choose a private network (with a gateway). The compute instances will be created in this private network.
+
+![OVHcloud Managed Rancher Service Machine Pool 1](images/rancher-machine-pool-1.png){.thumbnail}
+
+At the bottom of the **Machine Pools** section, click on the `+`{.action} button to add the second machine pool with 2 `workers` machines/nodes and the same configuration.
+
+![OVHcloud Managed Rancher Service Machine Pool 2](images/rancher-machine-pool-2.png){.thumbnail}
+
+In the **Cluster Configuration** section, choose the Kubernetes version. You need to choose between RKE2 and K3s Kubernetes Operating System (OS). For production environment, we recommend to choose RKE2.
+Select the `Container Network`, choose if you want to activate a Project Network isolation and the System Services tooling you want to isntall in your cluster.
+
+![OVHcloud Managed Rancher Service Cluster Configuration](images/rancher-cluster-config.png){.thumbnail}
+
+> [!primary]
 >
+> Follow the [RKE2 cluster configuration reference](https://ranchermanager.docs.rancher.com/reference-guides/cluster-configuration/rancher-server-configuration/rke2-cluster-configuration) for the Cluster Configuration.
+
+In the **Member Roles** tab, you can add member for users that need to access the cluster.
+After creating the cluster, you can also add members.
+
+Finally, click on the `Create`{.action} button to create your Kubernetes cluster with OVHcloud PCI driver.
+
+The cluster creation can take several minutes.
+
+![OVHcloud Managed Rancher Service Cluster Created](images/rancher-cluster-created.png){.thumbnail}
+
+### Testing the Kubernetes cluster 
+
+To test your cluster, on the Rancher UI, in the **Cluster** menu, after selecting your cluster, you can simply click on the `Kubectl Shell`{.action} icon to open a terminal.
+
+![OVHcloud Managed Rancher Service Cluster Created](images/rancher-cluster-created.png){.thumbnail}
+
+List the nodes:
+
+```bash
+kubectl get nodes
+```
+
+![OVHcloud Managed Rancher Service Test Cluster](images/kubectl-get-nodes.png){.thumbnail}
+
+
 
 ## Go further
 
