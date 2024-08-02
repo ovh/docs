@@ -19,11 +19,11 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 - Bare-metal servers, cloud hosted or on premise.
 - Virtual machines, cloud hosted or on premise
 
-In this guide we will explore how to **use OVHcloud as an Infrastructure Provider** and create a Kubernetes cluster based on [OVHcloud Compute Instances](https://www.ovhcloud.com/en-gb/public-cloud/compute/).
+In this guide we will explore how to **use OVHcloud as an Infrastructure Provider** and create a Kubernetes cluster based on [OVHcloud Compute Instances](https://www.ovhcloud.com/de/public-cloud/compute/).
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
 - An OVHcloud Managed Rancher Service (see the [creating a Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 - An access to the Rancher UI to operate it (see the [connecting to the Rancher UI](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 - An [OpenStack user](https://help.ovhcloud.com/csm/en-gb-public-cloud-compute-openstack-users?id=kb_article_view&sysparm_article=KB0050636)
@@ -86,8 +86,8 @@ For each of the machine pool, you have to define:
 - the pool name (`node-pool-1` for example for the first machine pool)
 - machine count (3 for example for the first machine pool)
 - select roles (check `etcd` and `Control Plane` for the first machine pool)
-- choose the region (`GRA9` for exmple for the first machine pool). If you want to check the availability of specific products that you plan to use alongside Kubernetes, you can refer to the [Availability of Public Cloud Product](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/) page.
-- choose the flavor (`b2-7` for example for ). You can refer to the [OVHcloud Flavor list](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+- choose the region (`GRA9` for exmple for the first machine pool). If you want to check the availability of specific products that you plan to use alongside Kubernetes, you can refer to the [Availability of Public Cloud Product](https://www.ovhcloud.com/de/public-cloud/regions-availability/) page.
+- choose the flavor (`b2-7` for example for ). You can refer to the [OVHcloud Flavor list](https://www.ovhcloud.com/de/public-cloud/prices/).
 - choose the image for the Operating System (OS) used for your machines/nodes. Please refer to [Rancher Operating Systems and Container Runtime Requirements](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters).
 - choose a Key Pair (optionnal). It's the SSH Key Pair that will be used to access your nodes. Please refer to this guide on [how to create a SSH KeyPair and add it to your Public Cloud project](https://help.ovhcloud.com/csm/en-gb-public-cloud-compute-getting-started?id=kb_article_view&sysparm_article=KB0051017). If you leave this field empty, a new keypair will be generated automatically.
 - choose the Security Group that will be applied to created instances. You can leave the field empty.
@@ -143,8 +143,8 @@ You can now install applications in your Kubernetes cluster though the `kubectl`
 
 ## Go further
 
-- To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/en-gb/public-cloud/managed-rancher-service/).
+- To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/de/public-cloud/managed-rancher-service/).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.
