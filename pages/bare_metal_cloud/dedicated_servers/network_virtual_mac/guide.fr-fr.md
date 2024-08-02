@@ -1,7 +1,7 @@
 ---
 title: 'Assigner une adresse MAC virtuelle à une Additional IP'
 excerpt: 'Découvrez comment créer une adresse MAC virtuelle et comment l’associer à une Additional IP'
-updated: 2022-12-20
+updated: 2024-08-02
 ---
 
 ## Objectif
