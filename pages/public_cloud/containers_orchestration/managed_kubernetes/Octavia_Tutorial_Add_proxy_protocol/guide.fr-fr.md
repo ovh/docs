@@ -53,11 +53,11 @@ Créez une instance sur OVHcloud et installez un serveur web qui servira de back
     worker_processes auto;
     error_log /var/log/nginx/error.log;
     pid /run/nginx.pid;
-
+    
     events {
         worker_connections 1024;
     }
-
+    
     http {
         include /etc/nginx/mime.types;
         default_type application/octet-stream;
@@ -71,11 +71,11 @@ Créez une instance sur OVHcloud et installez un serveur web qui servira de back
         tcp_nodelay on;
         keepalive_timeout 65;
         types_hash_max_size 2048;
-
+    
         server {
             listen 80;
             server_name localhost;
-
+    
             location / {
                 add_header X-Forwarded-For $http_x_forwarded_for;
                 add_header X-Forwarded-Proto $http_x_forwarded_proto;
@@ -83,6 +83,7 @@ Créez une instance sur OVHcloud et installez un serveur web qui servira de back
             }
         }
     }
+
     ```
 
     Redémarrez NGINX pour appliquer les modifications :
