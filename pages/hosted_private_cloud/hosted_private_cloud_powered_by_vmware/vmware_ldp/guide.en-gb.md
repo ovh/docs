@@ -33,7 +33,7 @@ The purpose of this guide is to show you how to enable log transfer from your Ho
 > 
 > Please note that **log forwarding** is free to enable, but you will be billed for using the Logs Data Platform service at the standard rate.
 > 
-> For pricing information, refer to the solution page : [OVHcloud Logs Data Platform](/links/manage-operate/ldp).
+> For pricing information, refer to the solution page: [OVHcloud Logs Data Platform](/links/manage-operate/ldp).
 >
 
 By enabling logs forwarding to a Logs Data Platform stream, you can collect, index and analyze Hosted Private Cloud VMware on OVHcloud data. Regardless of their origin, this platform offers a variety of access methods depending on the protocol, the level of security and the format desired. The data collected can be easily used, thanks to the multiple APIs and web interfaces available.
@@ -46,7 +46,7 @@ For further information on the technical specifications of the Logs Data Platfor
 
 A *Kind* is a "type" of log that your product generates.
 
-These are the types of log you want to transfer to your Logs Data Platform. Here are examples that may be available depending on the components of your VMware on OVHcloud Hosted Private Cloud architecture :
+These are the types of logs you want to transfer to your Logs Data Platform. Here are examples that may be available depending on the components of your VMware on OVHcloud Hosted Private Cloud architecture:
 
 - **esxi**: Filtered by application.
 - **nsxtEdge**: Everything is redirected, no filter.
@@ -60,7 +60,7 @@ It is perfectly acceptable that a product has only one category.
 - All VMware logs are collected and sent to the Logs Data Platform clusters.
 - All VMware appliance logs are processed and marked at the Logs Data Platform.
 
-We put all the metadata for the identification of VMware Hosted Private Cloud on OVHcloud.
+We provide all the metadata for the identification of VMware Hosted Private Cloud on OVHcloud.
 
 ### Step 1 - Enable Hosted Private Cloud logs transfer
 
@@ -75,7 +75,7 @@ You can refer to this guide and find out how to manage your streams from the Log
 
 You can retrieve the **streamId** and set it aside (copy and paste). You will need it to activate your Hosted Private Cloud subscription with the Logs Data Platform in question.
 
-### Step 1 - Activate the Logs Data Platform Hosted Private Cloud subscription
+### Step 2 - Activate the Logs Data Platform Hosted Private Cloud subscription
 
 #### Via the OVHcloud Control Panel
 
@@ -114,7 +114,7 @@ Example:
 
 The GET request allows you to list your subscriptions.
 
-### Step 2 - Manage your Data Logs Platform
+### Step 3 - Manage your Data Logs Platform
 
 #### Via the OVHcloud Control Panel
 
@@ -132,8 +132,8 @@ Use the following API calls to list subscriptions to your Hosted Private Cloud a
 |     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}  |          Properties of this object.                     |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription |        Log subscriptions for your Hosted Private Cloud service        |
 |     POST    | /dedicatedCloud/{serviceName}/log/subscription |    Create a log subscription for your dHosted Private Cloud service   |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription |           Get this object properties.           |
-|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription |  Delete a log subscription for your Hosted Private Cloud service |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId} |           Get this object properties.           |
+|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId} |  Delete a log subscription for your Hosted Private Cloud service |
 
 
 - Get the "subscriptionId":
@@ -190,7 +190,7 @@ Return:
 
 ## Go further
 
-You can follow these guides to take advantage of the Hosted Private Cloud Logs Data Platform features :
+You can follow these guides to take advantage of the Hosted Private Cloud Logs Data Platform features:
 
 - [Logs Data Platform - Listing guides for getting started with Logs Data Platform](/products/observability-logs-data-platform-getting-started).
 - [View your logs on a Grafana dashboard](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana).
