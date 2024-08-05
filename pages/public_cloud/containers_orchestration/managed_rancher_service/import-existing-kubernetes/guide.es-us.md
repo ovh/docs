@@ -1,7 +1,7 @@
 ---
-title: Import an existing Kubernetes cluster (EN)
+title: Managed Rancher Service - Importing an existing Kubernetes cluster (EN)
 excerpt: 'Find out how to import an existing Kubernetes on a Managed Rancher Service'
-updated: 2024-07-31
+updated: 2024-08-05
 ---
 
 > [!warning]
