@@ -1,7 +1,7 @@
 ---
 title: Concepts - Réseau Public Cloud
 excerpt: "Découvrez quels sont les concepts de base du Public Cloud Networking"
-updated: 2022-11-02
+updated: 2024-08-05
 ---
 
 ## Objectif
@@ -18,9 +18,9 @@ Les réseaux privés du Public Cloud permettent de configurer votre réseau de m
 
 ### Réseaux privés du Public Cloud
 
-Les réseaux privés du Public Cloud sont construits au-dessus d’un [vRack](https://www.ovh.com/fr/solutions/vrack/), un service OVHcloud fournissant un réseau privé global pouvant être affecté à un projet Public Cloud.
+Les réseaux privés du Public Cloud sont construits au-dessus d’un [vRack](/links/network/vrack), un service OVHcloud fournissant un réseau privé global pouvant être affecté à un projet Public Cloud.
 
-Le réseau privé Public Cloud est une ressource régionale qui peut être configurée de deux manières différentes : **mono-région** ou **multi-région**, où le terme « région » désigne les régions de disponibilité du Public Cloud. Retrouvez plus d'informations [sur notre site](https://www.ovhcloud.com/fr/public-cloud/regions-availability/).
+Le réseau privé Public Cloud est une ressource régionale qui peut être configurée de deux manières différentes : **mono-région** ou **multi-région**, où le terme « région » désigne les régions de disponibilité du Public Cloud. Retrouvez plus d'informations [sur notre site](/links/public-cloud/regions-pci).
 
 - En mode **mono-région**, un seul réseau privé est créé (une région sélectionnée), sans possibilité de connectivité inter-région.
 - En mode **multi-région**, un réseau privé est créé dans chaque région sélectionnée. La connectivité entre les régions est rendue possible par la configuration d'un domaine de broadcast unique sur tous les réseaux privés (c'est-à-dire la configuration d'un même vRack, VLAN et sous-réseau sur les réseaux privés dans toutes les régions).
@@ -44,7 +44,7 @@ Le service DHCP de Public Cloud permet la configuration automatique des Floating
 
 ### Réseau vRack OVHcloud
 
-Le vRack OVHcloud est un réseau privé transverse. Il est conçu pour permettre des architectures privées complexes de plusieurs datacenters à l’échelle mondiale, interconnectant différents produits dans différents datacenters répartis dans différentes régions. Pour en savoir plus, rendez-vous sur la page web du [vRack](https://www.ovh.com/fr/solutions/vrack/).
+Le vRack OVHcloud est un réseau privé transverse. Il est conçu pour permettre des architectures privées complexes de plusieurs datacenters à l’échelle mondiale, interconnectant différents produits dans différents datacenters répartis dans différentes régions. Pour en savoir plus, rendez-vous sur la page web du [vRack](/links/network/vrack).
 
 ### Réseau privé Public Cloud vs vRack OVHcloud
 
@@ -108,7 +108,7 @@ Il est important de noter qu’une ressource (instance) reste totalement privée
 >
 
 > [!primary]
-> L'adresse IP public utilisée par la Gateway n'est pas une floating IP : le cycle de vie de cette IP est lié à la durée de vie de la Gateway
+> L'adresse IP publique utilisée par la Gateway n'est pas une Floating IP : le cycle de vie de cette IP est lié à la durée de vie de la Gateway.
 >
 
 #### Load Balancer dans un réseau privé <a name="loadbalancer"></a>
@@ -147,6 +147,6 @@ Apprenez-en plus sur les Additional IP et Floating IP sur la [page concept dédi
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

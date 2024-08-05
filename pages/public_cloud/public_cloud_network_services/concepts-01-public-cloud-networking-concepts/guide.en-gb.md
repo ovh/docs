@@ -1,7 +1,7 @@
 ---
 title: Concepts - Public Cloud Networking
 excerpt: Find out what the basic concepts of Public Cloud Networking are
-updated: 2022-11-02
+updated: 2024-08-05
 ---
 
 ## Objective
@@ -18,9 +18,9 @@ Public Cloud private networks provide the ability to configure your network in a
 
 ### Public Cloud private networks
 
-Public Cloud private networks are being created on top of a [vRack](https://www.ovh.co.uk/solutions/vrack/) - an OVHcloud service providing a global private network that can be assigned to a Public Cloud project.
+Public Cloud private networks are being created on top of a [vRack](/links/network/vrack) - an OVHcloud service providing a global private network that can be assigned to a Public Cloud project.
 
-Public Cloud private network is a regional ressource that can be configured in two different ways: **single-region** or **multi-region**, in which the term "region" refers to Public Cloud availability regions. (Find more information [on our website](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/).)
+Public Cloud private network is a regional ressource that can be configured in two different ways: **single-region** or **multi-region**, in which the term "region" refers to Public Cloud availability regions. (Find more information [on our website](/links/public-cloud/regions-pci).)
 
 - In **single-region** mode, only one private network is created (one region selected), with no capacity for inter-region connectivity.
 - In **multi-region** mode, a private network is created in each selected region. Connectivity between regions is made possible by configuring a single broadcast domain over all private networks (i.e. configuring the same vRack, VLAN and subnet on the private networks in all regions).
@@ -44,7 +44,7 @@ The Public Cloud DHCP service allows autoconfiguration for Floating IPs. It can 
 
 ### OVHcloud vRack network
 
-OVHcloud vRack a transversal private network. It is designed to allow for complex private architectures on a global scale of multiple data centres, interconnecting different products in different data centres spread over different regions. You can read more about it on the [vRack web page](https://www.ovh.co.uk/solutions/vrack/).
+OVHcloud vRack a transversal private network. It is designed to allow for complex private architectures on a global scale of multiple data centres, interconnecting different products in different data centres spread over different regions. You can read more about it on the [vRack web page](/links/network/vrack).
 
 ### Public Cloud private network vs OVHcloud vRack
 
@@ -110,7 +110,6 @@ It is important to note that a resource (instance) remains fully private in this
 > [!primary]
 > The public IP used by a Public Cloud Gateway is not a Floating IP: this IP lifecycle is bound to the Gateway lifecycle.
 >
-
 
 #### Load Balancer inside private networking <a name="loadbalancer"></a>
 
