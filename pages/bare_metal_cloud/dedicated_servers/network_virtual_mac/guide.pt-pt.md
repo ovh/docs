@@ -1,7 +1,7 @@
 ---
 title: 'Atribuir um endereço MAC virtual a um Additional IP'
 excerpt: 'Saiba como criar um endereço MAC virtual e como associá-lo a um Additional IP'
-updated: 2022-12-20
+updated: 2024-08-05
 ---
 
 > [!primary]
@@ -22,9 +22,10 @@ A OVHcloud permite-lhe associar um endereço MAC virtual a um endereço de IP, d
 - O seu servidor deve suportar os MAC virtuais. Consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) para saber mais.
 
 > [!warning]
-> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
+> Para mais informações, consulte o nosso [comparativo](/links/bare-metal/eco-compare).
 >
-> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+> Esta funcionalidade estará brevemente disponível para o conjunto dos servidores das gamas High Grade, Scale e Advance a partir de dezembro de 2024.
 
 > [!primary]
 > Se não está familiarizado com a utilização da API OVHcloud, consulte o nosso guia [Primeiros passos com as API OVHcloud](/pages/manage_and_operate/api/first-steps).
