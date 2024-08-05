@@ -1,7 +1,7 @@
 ---
 title: 'Obtaining Source IP in Octavia'
 excerpt: 'Learn how to configure Octavia to obtain the client source IP in the context of OVHcloud without using Kubernetes CCM.'
-updated: 2024-07-29
+updated: 2024-08-05
 ---
 
 ## Objective
@@ -18,33 +18,33 @@ updated: 2024-07-29
 
 ### Step 1: Configure the Backend Server on OVHcloud
 
-Create an instance on OVHcloud and install a web server that will serve as the backend. For example, we will use an NGINX server:
+Create an instance on OVHcloud and install a web server that will serve as the backend. For example, we will use an NGINX server.
 
-1. **Create an instance on OVHcloud**:
+#### 1. Create an instance on OVHcloud
    
-   Access your OVHcloud Control Panel, go to the "Public Cloud" section, and create a new instance. For detailed instructions, see the official documentation: [Creating an instance on OVHcloud](https://docs.ovh.com/en/public-cloud/create-vm/).
+Access your [OVHcloud Control Panel](/links/manager), go to the "Public Cloud" section and create a new instance. For detailed instructions, see the official documentation: [Creating an instance on OVHcloud](https://docs.ovh.com/en/public-cloud/create-vm/).
 
-2. **Install NGINX on the instance**:
+#### 2. Install NGINX on the instance
 
-    Connect to the instance via SSH
+Connect to the instance via SSH
    
-    Update packages and install NGINX:
+Update packages and install NGINX:
 
-    ```bash
-    sudo dnf install -y nginx
-    ```
+```bash
+sudo dnf install -y nginx
+```
 
-4. **Configure NGINX to display request information**:
+#### 3. Configure NGINX to display request information
 
-    Modify the NGINX configuration to display request information, including the client's IP address and headers:
+Modify the NGINX configuration to display request information, including the client's IP address and headers:
 
-    ```bash
-    sudo nano /etc/nginx/nginx.conf
-    ```
+```bash
+sudo nano /etc/nginx/nginx.conf
+```
 
-    Add the following directives in the `http` block:
+Add the following directives in the `http` block:
 
-    ```nginx
+```nginx
     user nginx;
     worker_processes auto;
     error_log /var/log/nginx/error.log;
@@ -81,112 +81,114 @@ Create an instance on OVHcloud and install a web server that will serve as the b
     }
 
 
-    ```
+```
 
-    Restart NGINX to apply the changes:
+Restart NGINX to apply the changes:
 
-    ```bash
-    sudo systemctl restart nginx
-    ```
+```bash
+sudo systemctl restart nginx
+```
 
 ### Step 2: Create the LoadBalancer with HTTP Protocol on OVHcloud
 
-1. **Create the Octavia LoadBalancer**:
+#### 1. Create the Octavia LoadBalancer
 
-    Access the OpenStack interface on OVHcloud, then create a LoadBalancer:
+Access the OpenStack interface on OVHcloud, then create a LoadBalancer:
 
-    ```bash
-    openstack loadbalancer listener create --name <listener-name> --protocol HTTP --protocol-port <protocol-port> --insert-headers "X-Forwarded-For=True,X-Forwarded-Proto=True" <loadbalancer-id>
-    ```
+```bash
+openstack loadbalancer listener create --name <listener-name> --protocol HTTP --protocol-port <protocol-port> --insert-headers "X-Forwarded-For=True,X-Forwarded-Proto=True" <loadbalancer-id>
+```
 
-    **Example Result:**
-    ```plaintext
-    +---------------------+--------------------------------------+
-    | Field               | Value                                |
-    +---------------------+--------------------------------------+
-    | admin_state_up      | True                                 |
-    | ...                 | ...                                  |
-    | vip_address         | 192.168.0.57                         |
-    | ...                 | ...                                  |
-    +---------------------+--------------------------------------+
-    ```
+**Example Result:**
 
-2. **Create a backend pool**:
+```plaintext
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| admin_state_up      | True                                 |
+| ...                 | ...                                  |
+| vip_address         | 192.168.0.57                         |
+| ...                 | ...                                  |
++---------------------+--------------------------------------+
+```
 
-    ```bash
-   openstack loadbalancer pool create --name <pool-name> --lb-algorithm ROUND_ROBIN --listener <listener-name> --protocol HTTP
-    ```
+#### 2. Create a backend pool
 
-    **Example Result:**
-    ```plaintext
-    +----------------------+--------------------------------------+
-    | Field                | Value                                |
-    +----------------------+--------------------------------------+
-    | admin_state_up       | True                                 |
-    | ...                  | ...                                  |
-    | id                   | <pool_id>                            |
-    | ...                  | ...                                  |
-    +----------------------+--------------------------------------+
-    ```
+```bash
+openstack loadbalancer pool create --name <pool-name> --lb-algorithm ROUND_ROBIN --listener <listener-name> --protocol HTTP
+```
 
-3. **Add members to the pool (the backend instances)**:
+**Example Result:**
 
-    ```bash
-    openstack loadbalancer member create --subnet-id <subnet-id> --address <instance-ip-1> --protocol-port <protocol-port> <pool-id>
-    openstack loadbalancer member create --subnet-id <subnet-id> --address <instance-ip-2> --protocol-port <protocol-port> <pool-id>
+```plaintext
++----------------------+--------------------------------------+
+| Field                | Value                                |
++----------------------+--------------------------------------+
+| admin_state_up       | True                                 |
+| ...                  | ...                                  |
+| id                   | <pool_id>                            |
+| ...                  | ...                                  |
++----------------------+--------------------------------------+
+```
 
-    ```
+#### 3. Add members to the pool (the backend instances)
 
-    **Example Result:**
-    ```plaintext
-    +---------------------+--------------------------------------+
-    | Field               | Value                                |
-    +---------------------+--------------------------------------+
-    | address             | 192.168.0.27                         |
-    | ...                 | ...                                  |
-    +---------------------+--------------------------------------+
-    ```
+```bash
+openstack loadbalancer member create --subnet-id <subnet-id> --address <instance-ip-1> --protocol-port <protocol-port> <pool-id>
+openstack loadbalancer member create --subnet-id <subnet-id> --address <instance-ip-2> --protocol-port <protocol-port> <pool-id>
+```
 
-    ```plaintext
-    +---------------------+--------------------------------------+
-    | Field               | Value                                |
-    +---------------------+--------------------------------------+
-    | address             | 192.168.0.96                         |
-    | ...                 | ...                                  |
-    +---------------------+--------------------------------------+
-    ```
+**Example Result:**
+
+```plaintext
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| address             | 192.168.0.27                         |
+| ...                 | ...                                  |
++---------------------+--------------------------------------+
+```
+
+```plaintext
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| address             | 192.168.0.96                         |
+| ...                 | ...                                  |
++---------------------+--------------------------------------+
+```
 
 ### Step 3: Verify the Configuration
 
-1. **Get the VIP address of the LoadBalancer**:
+#### 1. Get the VIP address of the LoadBalancer
 
-    ```bash
-    openstack loadbalancer show my-loadbalancer -c vip_address -f value
-    ```
+```bash
+openstack loadbalancer show my-loadbalancer -c vip_address -f value
+```
 
-    **Example Result:**
-    ```plaintext
-    192.168.0.57
-    ```
+**Example Result:**
 
-2. **Send an HTTP request to the LoadBalancer's VIP address**:
+```plaintext
+192.168.0.57
+```
 
-    ```bash
-    curl http://192.168.0.57
-    ```
+#### 2. Send an HTTP request to the LoadBalancer's VIP address
 
-    **Example Result:**
-    ```plaintext
-    Client IP: <your_source_ip>
-    Headers: <forwarded_headers>
-    ```
+```bash
+curl http://192.168.0.57
+```
 
-## Additional Resources
+**Example Result:**
 
-- Official OVHcloud documentation on [creating an instance](/pages/public_cloud/compute/public-cloud-first-steps/).
-- Documentation on [managing subnets in OpenStack](https://docs.openstack.org/neutron/latest/admin/deploy-ovs-selfservice.html).
-- Documentation on [Octavia Load Balancer](https://docs.openstack.org/octavia/latest/).
+```plaintext
+Client IP: <your_source_ip>
+Headers: <forwarded_headers>
+```
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+- [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps/).
+- [Managing subnets in OpenStack](https://docs.openstack.org/neutron/latest/admin/deploy-ovs-selfservice.html){.external}.
+- [Octavia Load Balancer](https://docs.openstack.org/octavia/latest/){.external}.
+
+Join our [community of users](/links/community).
