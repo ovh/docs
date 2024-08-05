@@ -5,7 +5,7 @@ updated: 2023-01-16
 
 ## Objective
 
-At OVHcloud, we love Microsoft products too. So it is important for us to provide you a way to send your Windows Logs to Logs Data Platform. All you need is 15 minutes and one software : [NXLog](http://nxlog.co){.external}. NXLog is one of the leader of the log management tools. Its configuration is fairly simple and can get you started in a few minutes.
+At OVHcloud, we love Microsoft products too. So it is important for us to provide you a way to send your Windows Logs to Logs Data Platform. All you need is 15 minutes and one software: [NXLog](http://nxlog.co){.external}. NXLog is one of the leaders of the log management tools. Its configuration is fairly simple and can get you started in a few minutes.
 
 ## Requirements
 
@@ -16,7 +16,7 @@ For this tutorial you will need to have completed the following steps :
 
 ## NXLog
 
-You can find NXLog, at its official website [nxlog.co](http://nxlog.co){.external}. Please go to the official website and download the latest version for Windows (2.10.2150 at the time of writing). Be sure to have Administrator rights before proceding. Once you have it, install it on your system. By default the program will install itself in **C:\\Program Files(x86)\\nxlog\\**. Navigate to this folder to edit the configuration file **nxlog.conf** present in the folder **conf**.
+You can find NXLog at its official website [nxlog.co](http://nxlog.co){.external}. Please go to the official website and download the latest version for Windows (2.10.2150 at the time of writing). Be sure to have Administrator rights before proceeding. Once you have it, install it on your system. By default, the program will install itself in **C:\\Program Files\\nxlog\\**. Navigate to this folder to edit the configuration file **nxlog.conf** present in the folder **conf**.
 
 ## Configuration
 
@@ -24,7 +24,7 @@ To configure NXLog, you will need to copy and store the LDP cluster certificate.
 
 ![LDP certificate](images/ssl.png){.thumbnail}
 
-Please put this file under the **C:\\Program Files(x86)\\nxlog\\cert** folder.
+You will need to copy the certificate, then paste and save it as a file. Ensure the file is named **ldp.cert** and put this file under the **C:\\Program Files\\nxlog\\cert** folder.
 
 The configuration is pretty much straightforward. Here is the configuration file that allows you to configure your NXLog.
 
@@ -76,18 +76,18 @@ The configuration is pretty much straightforward. Here is the configuration file
  </Route>
 ```
 
-Let's explain the few important points in this configuration :
+Let's explain a few important points in this configuration:
 
 - The line **define CERTDIR %ROOT%\cert** is mandatory to indicate to NXLog where it will find the certificate of Logs Data Platform.
 - The **Input** part is the same as the default configuration. Do not touch it ;-).
-- The **Processor** module is where the OVHcloud Token magic happens : Replace your token here.
-- The **Extension** activate the built-in GELF module that encode the log in the GELF format
+- The **Processor** module is where the OVHcloud Token magic happens: Replace your token here.
+- The **Extension** activates the built-in GELF module that encodes the log in the GELF format
 - The **Output** module is the one that will send the logs to Logs Data Platform by defining the CA certificate used to trust the server and the encoding used. Note that you will have to use the address of your assigned cluster. This is also where you use the path of the certificate downloaded just before. This module also define that we use the Gelf Encoding.
-- The **Route** setting put all these things together by building a pipeline using the source, processing and the ouput modules.
+- The **Route** setting puts all these things together by building a pipeline using the source, processing and the output modules.
 
 ## Start NXLog
 
-You have two ways to start NXLog. The first one is to launch the main Executable : **C:\Program Files(x86)\nxlog\nxlog.exe**. This is convenient when you are pretty sure that your configuration is correct. But if you want to be able to start, stop or restart the nxlog service, It would be better to use the Windows Service Manager. This Manager is located deep in the Configuration Panel of Windows.
+You have two ways to start NXLog. The first one is to launch the main Executable: **C:\Program Files\nxlog\nxlog.exe**. This is convenient when you are pretty sure that your configuration is correct. But if you want to be able to start, stop or restart the nxlog service, it would be better to use the Windows Service Manager. This Manager is located deep in the Configuration Panel of Windows.
 
 Go to **Control Panel**, then locate **Administrative Tools** and then double-click on **Services** to display the manager. In this menu you should find the service nxlog in the list. There is a start, stop and restart action available in the contextual menu (Right-click on it).
 
@@ -95,7 +95,7 @@ Excuse my French screenshot detailing where to find it:
 
 ![Restart Screenshot](images/panel_config.png){.thumbnail}
 
-If something bad happens, you will find the logs and a pretty good explanation in the file : **C:\Program Files(x86)\nxlog\data\nxlog.log**. If everything is correct you should find these kind of lines in the same file :
+If something bad happens, you will find the logs and a pretty good explanation in the file: **C:\Program Files\nxlog\data\nxlog.log**. If everything is correct you should find these kinds of lines in the same file:
 
 ```text
  2016-04-08 19:53:26 INFO connecting to <your_cluster>.logs.ovh.com:12202
@@ -108,7 +108,7 @@ Jump to Graylog (use the Graylog access button in the Manager) and to the stream
 
 I think that's pretty much it. I know, it didn't even take 10 minutes :-).
 
-If you want to go further, don't hesitate to fly to the [NXlog documentation](https://docs.nxlog.co/userguide/documentation.html){.external}
+If you want to go further, don't hesitate to try the [NXlog documentation](https://docs.nxlog.co/userguide/documentation.html){.external}
 
 ## Getting Help
 
