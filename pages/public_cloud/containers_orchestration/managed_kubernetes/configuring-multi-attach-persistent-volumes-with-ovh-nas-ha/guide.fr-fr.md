@@ -1,7 +1,7 @@
 ---
 title: Configuring multi-attach persistent volumes with OVHcloud NAS-HA
 excerpt: 'Find out how to configure a multi-attach persistent volume using OVHcloud NAS-HA'
-updated: 2024-07-29
+updated: 2024-08-05
 ---
 
 <style>
@@ -29,15 +29,15 @@ updated: 2024-07-29
 
 ## Objective
 
-OVHcloud Managed Kubernetes natively integrates Block Storage as persistent volumes. This technology may however not be suited to some legacy or non cloud-native applications, often requiring to share this persistent data accross different pods on multiple worker nodes (ReadWriteMany or RWX). If you would need to do this for some of your workloads, one solution is to use NFS volumes. [OVHcloud NAS-HA](https://www.ovh.co.uk/nas/) is a managed solution that lets you easily configure an NFS server and multiple NFS volumes. In this tutorial we are going to see how to configure your OVHcloud Managed Kubernetes cluster to use [OVHcloud NAS-HA](https://www.ovh.co.uk/nas/) as an NFS provider for [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+OVHcloud Managed Kubernetes natively integrates Block Storage as persistent volumes. This technology may however not be suited to some legacy or non cloud-native applications, often requiring to share this persistent data accross different pods on multiple worker nodes (ReadWriteMany or RWX). If you would need to do this for some of your workloads, one solution is to use NFS volumes. [OVHcloud NAS-HA](/links/storage/nas-ha) is a managed solution that lets you easily configure an NFS server and multiple NFS volumes. In this tutorial we are going to see how to configure your OVHcloud Managed Kubernetes cluster to use [OVHcloud NAS-HA](/links/storage/nas-ha) as an NFS provider for [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
 
 ## Requirements
 
-This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](https://www.ovhcloud.com/fr/public-cloud/kubernetes/) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world/) documentation.
+This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](/links/public-cloud/kubernetes) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation.
 
 It also assumes you have an OVHcloud NAS-HA already available. If you don't, you can [order one in the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/nas).
 
-You also need to have [Helm](https://docs.helm.sh/) installed on your workstation, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installed on your workstation, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
 ## Instructions
 
@@ -47,14 +47,16 @@ Your NAS-HA can expose multiple partitions, and supports a variety of protocols.
 
 Access the UI for OVHcloud NAS-HA by clicking the *HA-NAS and CDN* menu in the [Bare Metal Cloud section of the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated)
 
-Click on your NAS, then on "Partitions" tab, then on the "Create a partition" button and create the new NFS partition with the following content:
+Click on your NAS, then on the `Partitions`{.action} tab, then on the `Create a partition`{.action} button and create the new NFS partition with the following content:
 
 ![Create an NFS partition](images/create-nfs-partition.png){.thumbnail}
 
 #### Your cluster is installed with Public Network or a private network without using an OVHcloud Internet Gateway or a custom one as your default route
+
 Once the partition is created, we need to allow our Kubernetes nodes to access our newly created partition.
 
 Get our Kubernetes nodes IP:
+
 ```bash
 kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="InternalIP")].address }'
 ```
@@ -67,11 +69,12 @@ $ kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="Intern
 #### Your cluster is installed with Private Network and a default route via your Private Network (OVHcloud Internet Gateway/OpenStack Router or a custom one)
 
 Because your nodes are configured to be routed by the private network gateway, you need to add the gateway IP address to the ACLs.
+
 By using Public Cloud Gateway through our Managed Kubernetes Service, Public IPs on nodes are only for management purposes: [MKS Known Limits](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits)
 
-You can get your OVHcloud Internet Gateway's Public IP by navigating through the OVHcloud Manager:
+You can get your OVHcloud Internet Gateway's Public IP by navigating through the OVHcloud Control Panel:
 
-Public Cloud > Select your tenant > Network / Gateway > Public IP
+`Public Cloud`{.action} > Select your tenant > `Network / Gateway`{.action} > `Public IP`{.action}
 
 You can also get your OVHcloud Internet Gateway's Public IP by using our APIs:
 
@@ -80,7 +83,7 @@ You can also get your OVHcloud Internet Gateway's Public IP by using our APIs:
 > @api {v1} /cloud GET  /cloud/project/{serviceName}/region/{regionName}/gateway/{id}
 >
 
-You can find more details about how using OVHcloud APIs with this guide: [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps)
+You can find more details about how to use OVHcloud APIs with this guide: [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps)
 
 If you want to use your Kubernetes cluster to know your Gateway Public's IP, you can run these commands:
 
@@ -88,8 +91,9 @@ If you want to use your Kubernetes cluster to know your Gateway Public's IP, you
 kubectl run get-gateway-ip --image=ubuntu:latest -i --tty --rm 
 ```
 
-This command will create you a temporary pod and open a console.
-You may have to wait a bit to let the pod be created and then once the shell has appeared, you can run this command:
+This command will create a temporary pod and open a console.
+
+You may have to wait a bit to let the pod be created. Once the shell appears, you can run this command:
 
 ```bash
 apt update && apt upgrade -y && apt install -y curl && curl ifconfig.me
@@ -97,13 +101,16 @@ apt update && apt upgrade -y && apt install -y curl && curl ifconfig.me
 
 The Public IP of the Gateway you're using should appear.
 
-Click on the *Manage Access* menu of our newly created partition:
+Click on the `Manage Access`{.action} menu of our newly created partition:
+
 ![Manage Access of the NFS partition](images/manage-nfs-partition-access.png){.thumbnail}
 
 Add either the nodes' IPs one by one or the Gateway's Public IP depending on your configuration:
+
 ![Allow nodes IP to access the NFS partition](images/manage-nfs-partition-access-ip.png){.thumbnail}
 
 You should now have something similar to this:
+
 ![Zpool-configuration](images/manage-nfs-zpool.png){.thumbnail}
 
 In this example our `ZPOOL_IP` is `10.201.18.33`, our `ZPOOL_NAME` is `zpool-127659`, and our `PARTITION_NAME` is `kubernetes`. Please modify this accordingly in the later steps.
@@ -184,7 +191,7 @@ mountOptions:
 > The `tcp` parameter instructs the NFS mount to use the TCP protocol.
 >
 
-Then apply the YAML file to create the StorageClass: 
+Then apply the YAML file to create the StorageClass:
 
 ```bash
 kubectl apply -f nfs-storageclass.yaml
@@ -221,7 +228,7 @@ You can find more information about the PVC by running this command:
 kubectl describe pvc nfs-pvc
 ```
 
-```console 
+```console
 $ kubectl describe pvc nfs-pvc
 Name:          nfs-pvc
 Namespace:     default
@@ -254,11 +261,14 @@ Events:
   Normal  ProvisioningSucceeded  14s                   nfs2.csi.k8s.io_nodepool-c7ef08a9-2a22-40fd-9c-node-993f96_7078d019-f44a-42a1-8e7f-c6ee36f3f466  Successfully provisioned volume pvc-a213e1a9-2fee-4632-ae9e-c952fab74e38
 ```
 
-If you encounter errors such as: 
+If you encounter errors such as:
+
 ```console
 Warning  ProvisioningFailed    3s (x3 over 7s)  nfs2.csi.k8s.io_nodepool-c7ef08a9-2a22-40fd-9c-node-993f96_7078d019-f44a-42a1-8e7f-c6ee36f3f466  failed to provision volume with StorageClass "nfs-csi": rpc error: code = Internal desc = failed to make subdirectory: mkdir /tmp/pvc-31210848-7f3f-40e6-aa7a-fafa616da4e7/pvc-31210848-7f3f-40e6-aa7a-fafa616da4e7: input/output error
 ```
-or like this:
+
+or such as:
+
 ```console
 Warning  ProvisioningFailed    1s (x3 over 4s)  nfs2.csi.k8s.io_nodepool-8bdec3f1-f54a-4de8-ad-node-091e7d_15634ab1-b7e2-45b5-9565-3a775490c4e3  failed to provision volume with StorageClass "nfs-csi": rpc error: code = Internal desc = failed to mount nfs server: rpc error: code = Internal desc = mount failed: exit status 32
 Mounting command: mount
@@ -269,10 +279,12 @@ Output: mount.nfs: access denied by server while mounting [ZPOOL_IP]:/[ZPOOL_NAM
 It mostly means that something went wrong with the HA-NAS ACLs. Check the authorized IPs which can access to the wanted partition on the ACLs list.
 
 > [!warning]
-> If the number of __PersistentVolumes__ to schedule simultaneously is too important, some slowness can be encountered and volume creation delayed.
+> If the number of __PersistentVolumes__ to schedule simultaneously is too important, some slowness can be encountered and volume creation can be delayed.
 
 Let’s now create a DaemonSet of Nginx pods using the persistent volume claim as their webroot folder.
-Using a DaemonSet will create a pod on each deployed node and makes troubleshoot easier in case of a misconfiguration or to isolate a node issue. 
+
+Using a DaemonSet will create a pod on each deployed node and make troubleshooting easier in case of a misconfiguration or to isolate a node issue.
+
 Let's create a file named `nginx-daemonset.yaml`:
 
 ```yaml
@@ -311,7 +323,7 @@ And apply this to create the Nginx DaemonSet:
 kubectl apply -f nginx-daemonset.yaml
 ```
 
-Both pods should be running: 
+Both pods should be running:
 
 ```bash 
 kubectl get pods
@@ -335,6 +347,7 @@ root@nfs-nginx-29r49:/# mount -l | grep zpool
 ```
 
 You can test HA-NAS IOPS and speed by installing and running FIO tool inside a container:
+
 ```bash
 apt update
 apt install fio
@@ -348,6 +361,7 @@ fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=testfiofr
 ```
 
 At the end of the bench, you should have an output like this:
+
 ```console
 End of the FIO test:
 
@@ -362,6 +376,7 @@ testfiofrommks: (groupid=0, jobs=1): err= 0: pid=748: Tue May 21 15:22:14 2024
 ```
 
 Now, we will check if the HA-NAS is properly shared between the deployed pods.
+
 Create a new `index.html` file:
 
 ```bash
@@ -381,29 +396,32 @@ kubectl proxy
 ```
 
 Generate the URL to open in your broswer:
+
 ```bash
 URL=$(echo "http://localhost:8001/api/v1/namespaces/default/pods/http:$FIRST_POD:/proxy/")
 echo $URL
 ```
+
 You can open the URL which is displayed to access the Nginx Service.
 
 Now let’s try to see if the data is shared with the second pod (if you have more than one node deployed).
+
 ```bash
 $ SECOND_POD=$(kubectl get pod -l name=nginx --no-headers=true -o custom-columns=:metadata.name | head -2 | tail -1)
 URL2=$(echo "http://localhost:8001/api/v1/namespaces/default/pods/http:$SECOND_POD:/proxy/")
 echo $URL2
 ```
 
-You can open the URL which is displayed to access the Nginx Service on the other pod. 
-
+You can open the URL which is displayed to access the Nginx Service on the other pod.
 
 As you can see the data is correctly shared between the two Nginx pods running on two different Kubernetes nodes.
+
 Congratulations, you have successfully set up a multi-attach persistent volume with OVHcloud NAS-HA!
 
 ## Go further
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our [community of users](https://community.ovh.com/en/).
+Join our [community of users](/links/community).
