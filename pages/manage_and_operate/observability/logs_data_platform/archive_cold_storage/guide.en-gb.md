@@ -1,7 +1,7 @@
 ---
 title: Archiving your logs - Cold-storage
 excerpt: This long-term storage feature keeps your logs safely and cost efficiently over several years.
-updated: 2023-01-16
+updated: 2024-08-05
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ On this page you will find the long-term storage toggle. Once enabled, you will 
 
 - The compression algorithm. We currently support [GZIP](http://www.gzip.org/){.external}, [DEFLATE (AKA zip)](http://www.zlib.net/feldspar.html){.external}, [Zstandard](https://facebook.github.io/zstd/){.external} or [LZMA (used by 7-Zip)](http://www.7-zip.org/7z.html){.external}.
 - The retention duration of your archives (from one year to ten years).
-- The storage backend for your logs (on [OVH Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/){.external} or [OVH Public Archive](https://www.ovhcloud.com/fr/public-cloud/cloud-archive/){.external}).
+- The storage backend for your logs (on [OVHcloud Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/){.external} or [OVHcloud Public Archive](https://www.ovhcloud.com/fr/public-cloud/cloud-archive/){.external}).
 - The content of your archives: GELF, one special field [X-OVH-TO-FREEZE](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention), or both (you will get two separate archives in this case)
 - The activation of the notification for each new archive available.
 
@@ -47,18 +47,19 @@ As soon as you click on `Save`{.action}, the cold storage is activated. Here are
 
 ### Retrieving the archives
 
-#### Using the OVHcloud Manager
+#### Using the OVHcloud Control Panel
 
 On a cold storage enabled stream (you can quickly see if they are with the archive checkbox), you have a new `Archives`{.action} item on the bottom of the stream menu. Click on it to navigate to the archives pages. On this page, you have a list of the archives produced. Each archive is named after its date, so you can quickly retrieve an archive of a particular day.
 
 ![Archive page](images/archive-1.png){.thumbnail}
 
-From this page you can launch the "unfreezing" process of your archive and make it available for download. This delay varies between 10 minutes to 4 hours depending on multiple factors like the size of the archive. There is no delay in the case you choose the **OVH Object Storage** backend for your archives.
+From this page you can launch the "unfreezing" process of your archive and make it available for download. This delay varies between 10 minutes to 4 hours depending on multiple factors like the size of the archive. There is no delay in the case you choose the **OVHcloud Object Storage** backend for your archives.
+
 Once available, its status changes and a new `Download`{.action} action appears.
 
 #### Using the API
 
-If you want to download your logs using the API (to use them in a Big Data analysis platform for example), you can do all these steps by using the OVHcloud api available at [https://api.ovh.com](https://api.ovh.com){.external}. You can try all these steps with the [OVH API Console](https://api.ovh.com/){.external}.
+If you want to download your logs using the API (to use them in a Big Data analysis platform for example), you can do all these steps by using the OVHcloud api available at [https://api.ovh.com](https://api.ovh.com){.external}. You can try all these steps with the [OVHcloud API Console](https://api.ovh.com/){.external}.
 
 You will need your OVHcloud service name associated with your account. Your service name is the login logs-xxxxx that is displayed in the left of the OVHcloud Manager.
 
@@ -106,13 +107,16 @@ You will need your OVHcloud service name associated with your account. Your serv
 > - `archiveId`: The archive you want details from.
 >
 **Example result:**
+
 ```shell-session
 {
   "expirationDate": "2024-07-31T12:27:22.797Z",
   "url": "string"
 }
 ```
+
 It will take some time (depending on the size of your archive file) for your archive to unfreeze. Once it has, you will need to use the API call again. If your archive is available, you will see a result like this:
+
 ```shell-session
 {
   "expirationDate": "2024-08-01T15:16:21.914370+00:00",
