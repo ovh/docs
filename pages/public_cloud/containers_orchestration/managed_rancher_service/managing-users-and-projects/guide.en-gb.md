@@ -1,5 +1,5 @@
 ---
-title: 'MRS - Managing users and projects'
+title: 'Managed Rancher Service - Managing users and projects'
 excerpt: 'Find out how to manage users and projects in your OVHcloud Managed Rancher Service'
 updated: 2024-08-05
 ---
