@@ -117,8 +117,6 @@ OVHcloud propose un Load Balancer dans le cadre de l'écosystème Public Cloud. 
 
 Le Public Cloud Load Balancer reste entièrement privé, il a donc besoin d'un service Gateway pour accéder au réseau public et d'une Floating IP pour l'exposition du service sortant.
 
-![PCI Networking](images/netcon4.png){.thumbnail}
-
 Pour en savoir plus, consultez notre guide [Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) .
 
 ### Adresses IP publiques
