@@ -197,7 +197,7 @@ Cette étape doit être réalisée en premier après commande de votre KMS (OVHc
 
 ### Via le control panel OVHcloud
 
-### Étape d'ouverture des flux (obligatoire)
+##### **Ouverture des flux (obligatoire)**
 
 Pour créer ou Importer un service de gestion de clé KMS depuis le control panel Hosted Private Cloud on OVHcloud.
 
