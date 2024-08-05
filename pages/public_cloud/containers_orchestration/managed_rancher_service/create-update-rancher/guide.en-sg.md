@@ -1,7 +1,7 @@
 ---
 title: Creating, updating and accessing a Managed Rancher Service
 excerpt: 'Find out how to create, update and use a Managed Rancher Service on OVHcloud'
-updated: 2024-07-31
+updated: 2024-08-05
 ---
 
 > [!warning]
@@ -51,7 +51,7 @@ Access the administration UI for your OVHcloud Managed Rancher instances by clic
 
 ![List of OVHcloud Managed Rancher Services](images/rancher-list.png){.thumbnail}
 
-Click on the `...`{.action} button to the right of your Rancher instance and choose `Manage` or click on the name of your Rancher instance.
+Click on the `...`{.action} button to the right of your Rancher instance and choose `Manage`{.action} or click on the name of your Rancher instance.
 
 ![OVHcloud Managed Rancher Services to update](images/rancher-to-update.png){.thumbnail}
 
@@ -67,7 +67,7 @@ Choose the version and click on `Update`{.action} button.
 
 > [!warning]
 >
->  You can read the changelog before updating a cluster by clicking on the `View the changelog{.action}` button.
+>  You can read the changelog before updating a cluster by clicking on the `View the changelog`{.action} button.
 
 A popup appear, click on the `Confirm`{.action} button to update your Rancher.
 
@@ -79,7 +79,7 @@ The Rancher instance is now updating. It should be updated within a few minutes.
 
 Access the administration UI for your OVHcloud Managed Rancher instances by clicking on `Managed Rancher Service`{.action} in the left-hand menu.
 
-Click on the `...`{.action} button to the right of your Rancher instance and choose `Manage` or click on the name of your Rancher instance.
+Click on the `...`{.action} button to the right of your Rancher instance and choose `Manage`{.action} or click on the name of your Rancher instance.
 
 ![OVHcloud Managed Rancher Service access](images/rancher-access.png){.thumbnail}
 
