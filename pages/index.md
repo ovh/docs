@@ -917,6 +917,7 @@
             + [Getting started](public-cloud-containers-orchestration-managed-rancher-service-getting-started)
                 + [Getting started with Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/getting-started)
                 + [Creating, Updating and Accessing a Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher)
+                + [Managed Rancher Service - Managing users and projects](public_cloud/containers_orchestration/managed_rancher_service/managing-users-and-projects)
     + [AI & Machine Learning](products/public-cloud-ai-and-machine-learning)
         + [General information](public-cloud-ai-and-machine-learning-general-information)
             + [Comparative tables - AI Notebooks, AI Training, AI Deploy](public_cloud/ai_machine_learning/gi_00_ai_comparative-table)
