@@ -43,7 +43,7 @@ De plus, un VPN Secure Private Network (VPN-SPN) peut être déployé pour assur
 
 Votre environnement SAP ne doit en aucun cas être accessible depuis Internet sans passer par plusieurs passerelles filtrées et une zone démilitarisée (DMZ). Cette DMZ ne doit pas être contournable.
 
-Pour le SAProuter, utilisé principalement pour connecter votre environnement SAP au support SAP, son installation doit se faire sur une machine virtuelle dédiée qui n'est utilisée à aucune autre fin, au sein d'une DMZ. La SAPROUTTAB doit être configurée avec une grande vigilance.  
+Pour le SAProuter, utilisé principalement pour connecter votre environnement SAP au support SAP, son installation doit se faire sur une machine virtuelle dédiée qui n'est utilisée à aucune autre fin, au sein d'une DMZ. La SAPROUTTAB doit être configurée avec une grande vigilance.
 L'ANSSI recommande cependant de ne pas ouvrir l'environnement SecNumCloud à un support externe non qualifié SecNumCloud. Dans ce scénario, le support externe prend le contrôle de l'ordinateur d'un administrateur ou d'un serveur via un écran partagé, avec un contrôle visuel de l'administrateur.
 
 De même, le SAP Web Dispatcher, utilisé principalement pour publier des services HTTP(s) pour votre environnement SAP, doit être installé sur une machine virtuelle dédiée qui n'est utilisée à aucune autre fin, au sein d'une DMZ. Seul le protocole HTTPS doit être activé. Les listes de contrôle d'accès (ACL), le gestionnaire d'authentification et le gestionnaire de réécriture HTTP doivent être configurés avec une grande vigilance. Nous vous recommandons d'implémenter un pare-feu d'application web (WAF) pour protéger votre SAP Web Dispatcher des attaques web courantes, telles que l'injection SQL et le cross-site scripting (XSS).
@@ -52,7 +52,7 @@ Documentez toutes les connexions et n'ouvrez que les connexions nécessaires. Pa
 
 À noter que toutes les communications avec un service SAP en mode SaaS, comme SAP Business Technology Platform (SAP BTP) ou SAP Analytics Cloud (SAC), sont considérées comme étant en dehors du périmètre qualifié SecNumCloud.
 
-L'ANSSI exige que le même hôte ESXi soit utilisé pour les services au sein d'une même zone de confiance. Cela signifie qu'il n'est pas possible d'utiliser le même hôte ESXi pour exécuter un service se trouvant dans votre DMZ et un service se trouvant dans votre zone de confiance, comme vos base de données SAP HANA.
+L'ANSSI exige que le même hôte ESXi soit utilisé pour les services au sein d'une même zone de confiance. Cela signifie qu'il n'est pas possible d'utiliser le même hôte ESXi pour exécuter un service se trouvant dans votre DMZ et un service se trouvant dans votre zone de confiance, comme vos bases de données SAP HANA.
 
 Il est important d'effectuer une revue et de tester régulièrement vos mesures de sécurité pour vous assurer qu'elles sont efficaces et à jour. Effectuez régulièrement :
 
@@ -66,10 +66,10 @@ Tout cela afin de garantir la conformité avec les exigences et les recommandati
 
 Afin de définir une configuration conforme entre SAP et machines virtuelles, prenez connaissance des éléments suivants :
 
-- [SAP Note 2161991](https://me.sap.com/notes/2161991){.external} (En particulier les chapitres 2 et 3) ;
-- [SAP Note 2015392](https://me.sap.com/notes/2015392){.external} ;
-- [SAP Note 2937606](https://me.sap.com/notes/2937606){.external} ;
-- [SAP Note 3102813](https://me.sap.com/notes/3102813){.external}.
+- [SAP Note 2161991](https://me.sap.com/notes/2161991){.external} (En particulier les chapitres 2 et 3)
+- [SAP Note 2015392](https://me.sap.com/notes/2015392){.external}
+- [SAP Note 2937606](https://me.sap.com/notes/2937606){.external}
+- [SAP Note 3102813](https://me.sap.com/notes/3102813){.external}
 
 Pour les environnements SAP virtualisés, il est essentiel de s'assurer que le partage NUMA (Non-Uniform Memory Access) est correctement configuré. À défaut, les performances risquent d'être impactées et le système instable. Pour plus d'informations sur le partage NUMA et sa configuration, consultez [SAP Help Portal](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/SAP+HANA+on+VMware+vSphere){.external} ainsi que la [SAP Note 2470289](https://me.sap.com/notes/2470289){.external}.
 
@@ -91,9 +91,9 @@ La fonctionnalité Fault Tolerance fournie par VMware garantit la haute disponib
 
 Pour activer Fault Tolerance, la machine virtuelle ne peut pas avoir plus de 8 vCPU et 128 Go de mémoire. Pour les serveurs d'application SAP qui n'hébergent pas de services critiques, la fonctionnalité vSphere High Availability (HA) est recommandée.
 
-La fonctionnalité vSphere Distributed Resource Scheduler (DRS) peut également être activée avec des règles VM/Host pour éviter d'exécuter tous les serveurs d'application SAP sur le même hôte ESXi. Cette fonctionnalité permet d'équilibrer la charge sur les hôtes ESXi du cluster. Retrouvez plus de détails sur cette fonctionnalité, consultez notre documentation [VMware DRS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new){.external}.
+La fonctionnalité vSphere Distributed Resource Scheduler (DRS) peut également être activée avec des règles VM/Host pour éviter d'exécuter tous les serveurs d'application SAP sur le même hôte ESXi. Cette fonctionnalité permet d'équilibrer la charge sur les hôtes ESXi du cluster. Retrouvez plus de détails sur cette fonctionnalité dans notre documentation [VMware DRS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new){.external}.
 
-Tous les échanges externes et internes avec votre environnement SAP doivent être chiffrés à l'aide du protocole SAP Secure Network Communications (SNC) pour les communications RFC de type 3 et du protocole HTTPS pour les communications RFC de type H/G. Consultez la documentation SAP [Securing Remote Function Call (RFC)](https://support.sap.com/content/dam/support/en_us/library/ssp/security-whitepapers/securing_remote-function-calls.pdf){.external} pour connaître les meilleures pratiques et obtenir des instructions. De plus, vos machines virtuelles SAP Application Server elles-mêmes doivent être chiffrées au niveau de l'hyperviseur. Pour savoir comment activer le chiffrement de machine virtuelle sur vSphere, référez-vous à notre [documentation dédiée](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt).
+Tous les échanges externes et internes avec votre environnement SAP doivent être chiffrés à l'aide du protocole SAP Secure Network Communications (SNC) pour les communications RFC de type 3 et du protocole HTTPS pour les communications RFC de type H/G. Consultez la documentation SAP [Securing Remote Function Call (RFC)](https://support.sap.com/content/dam/support/en_us/library/ssp/security-whitepapers/securing_remote-function-calls.pdf){.external} pour connaître les meilleures pratiques et obtenir des instructions. De plus, vos machines virtuelles SAP Application Server elles-mêmes doivent être chiffrées au niveau de l'hyperviseur. Pour savoir comment activer le chiffrement de machines virtuelles sur vSphere, référez-vous à notre [documentation dédiée](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt).
 
 L'authentification au système SAP peut être effectuée à l'aide de diverses méthodes, mot de passe, l'authentification unique (SSO) avec Kerberos, LDAP ou SAML. Pour une sécurité optimale, utilisez un mécanisme d'authentification fort pour empêcher tout accès non autorisé au système SAP. Revoyez et mettez à jour régulièrement les rôles et les privilèges pour garantir un contrôle d'accès. Activez et externalisez les journaux d'audit pour détecter les comportements suspects. Reportez-vous au [SAP Help Portal](https://help.sap.com/docs/ABAP_PLATFORM_NEW/025d1fb2f02c42c097f04f45df09106a/f64babd8c8a0489caf61c48d8bdc9478.html){.external} pour plus d'informations sur la configuration et la gestion des journaux d'audit dans votre environnement SAP.
 
@@ -107,7 +107,7 @@ Avec Veeam Backup and Replication, créez et gérez facilement des sauvegardes e
 
 De plus, Veeam Backup and Replication fournit un Plug-in Veeam pour SAP HANA, vous permettant d'exploiter toutes les fonctionnalités de Backint proposées par SAP pour SAP HANA.
 
-Pour des instructions détaillées sur la configuration de cette infrastructure de sauvegarde, veuillez consulter notre documentation : [Backup SAP HANA with Veeam Backup and Replication](/pages/hosted_private_cloud/sap_on_ovhcloud/Cookbook_veeam_backup_sap_hana).
+Pour des instructions détaillées sur la configuration de cette infrastructure de sauvegarde, consultez notre documentation : [Backup SAP HANA with Veeam Backup and Replication](/pages/hosted_private_cloud/sap_on_ovhcloud/Cookbook_veeam_backup_sap_hana).
 
 Mettez en œuvre des sauvegardes régulières et testez le processus de restauration pour garantir la récupération des données en cas de sinistre.
 
@@ -141,17 +141,17 @@ Pour les systèmes SAP HANA fonctionnant dans un environnement OVHcloud avec deu
 
 À partir de la version SAP HANA Platform 2.0 SPS 07, le SSL (Secure Sockets Layer) est activé par défaut à l'aide de TLS/SSL pour les communications entre les sites principaux et secondaires. Si vous utilisez une version inférieure de SAP HANA, assurez-vous que cette fonction de sécurité est activée comme décrit dans la [documentation SAP](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/ec50b815f5b740d7a9777d80f7104a2c?html=US){.external}.
 
-En cas de reprise de votre région secondaire OVHcloud, il est primodial de basculer les serveurs d'application SAP. Cette bascule permet de garantir des performances constantes entre les serveurs d’application SAP et la base de données SAP HANA lors des procédures de reprise d’activité.
+En cas de reprise de votre région secondaire OVHcloud, il est primordial de basculer les serveurs d'application SAP. Cette bascule permet de garantir des performances constantes entre les serveurs d’application SAP et la base de données SAP HANA lors des procédures de reprise d’activité.
 
 #### 6.3 - Serveurs d'application SAP
 
 Actuellement, aucune solution qualifiée SecNumCloud chez OVHcloud ne prend en charge la réplication en temps réel des machines virtuelles. La solution Continuous Data Protection (CDP) incluse dans Veeam Backup & Replication n'est pas encore compatible avec l'infrastructure SAP HANA on Private Cloud qualifiée SecNumCloud.
 
-Si une perte de données admissible maximale (RPO) de quelques heures est jugée acceptable, vous pouvez envisager d'utiliser Veeam Backup & Replication pour maintenir une copie des snaphosts de vos machines virtuelles entre vos infrastructures qualifiée SecNumCloud. Cette approche offre une reprise d'activité (RTO) minimale et raccourcit considérablement le processus de récupération pour la région secondaire.
+Si une perte de données admissible maximale (RPO) de quelques heures est jugée acceptable, vous pouvez envisager d'utiliser Veeam Backup & Replication pour maintenir une copie des snapshots de vos machines virtuelles entre vos infrastructures qualifiées SecNumCloud. Cette approche offre une reprise d'activité (RTO) minimale et raccourcit considérablement le processus de récupération pour la région secondaire.
 
 Cependant, il est fortement déconseillé de planifier des snapshots de machines virtuelles pendant les périodes de forte activité, cela pourrait avoir un impact négatif sur les performances. Pour un équilibre optimal entre la sauvegarde et les performances, planifiez et configurez soigneusement votre planification de snapshots.
 
-Vous pouvez coupler ces snapshots par une sauvegarde plus régulière des volumes critiques de vos serveurs d'application SAP comme, par exemple, les volumes qui hébergent /sapmnt, /usr/sap/trans. Ces sauvegardes à une fréquence plus courte n'impactera pas votre activité et réduira considérablement votre perte de données.
+Vous pouvez coupler ces snapshots par une sauvegarde plus régulière des volumes critiques de vos serveurs d'application SAP comme, par exemple, les volumes qui hébergent /sapmnt, /usr/sap/trans. Ces sauvegardes à une fréquence plus courte n'impacteront pas votre activité et réduiront considérablement votre perte de données.
 
 Consultez le [User Guide for VMware vSphere](https://helpcenter.veeam.com/docs/backup/vsphere/replication.html?ver=120){.external} pour obtenir des informations détaillées sur l’utilisation de Veeam Backup & Replication pour maintenir des copies entre vos infrastructures VMware et les meilleures pratiques pour équilibrer la protection des données et les performances.
 
