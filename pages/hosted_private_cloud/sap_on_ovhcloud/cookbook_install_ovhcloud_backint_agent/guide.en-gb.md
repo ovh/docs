@@ -1,7 +1,7 @@
 ---
 title: "Install and use OVHcloud Backint Agent for SAP HANA"
 excerpt: "This guide provides instructions for installing OVHcloud Backint Agent for SAP HANA and its usage"
-updated: 2024-02-15
+updated: 2024-08-05
 ---
 
 ## Objective
@@ -17,7 +17,7 @@ OVHcloud Backint Agent for SAP HANA has been certified by SAP, you can find cert
 - [SAP Certified Solutions Directory](https://www.sap.com/dmc/exp/2013_09_adpd/enEN/#/solutions?search=backint&id=s:c5927e8a-cf79-40c1-84ad-cdd354554389)
 - [SAP Note 2031547](https://me.sap.com/notes/0002031547)
 - [SAP Note 3344150](https://me.sap.com/notes/3344150)
-  
+
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager).
@@ -26,7 +26,7 @@ OVHcloud Backint Agent for SAP HANA has been certified by SAP, you can find cert
 - A SAP HANA database installed.
 
 ## Instructions
-  
+
 > [!primary]
 >
 > [** Quick access to OVHcloud Backint Agent download URL**](#ovhcloud-backint-agent-for-sap-hana)
@@ -40,15 +40,15 @@ With SAP HANA backups, the versioning allows you to trigger several backups with
 
 You can check the versioning status of your Object Storage S3 bucket by following these steps:
 
-1. Go to your [OVHcloud Control Panel](/links/manager).
-2. Click on the `Public Cloud`{.action} universe. Then, `Object Storage`{.action}.
+1. Log in to the [OVHcloud Control Panel](/links/manager).
+2. Click `Public Cloud`{.action} and select your Public Cloud project. Then click `Object Storage`{.action}.
 3. Click on the Object Storage bucket that will host backups of your SAP HANA database.
 4. Check the value of the `Versioning`{.action} parameter, it must have the value `Enabled`{.action}. If the value of this parameter is `Disabled`{.action}, click on `Enable versioning`{.action}.
 
 | Versioning enabled | Versioning disabled |
 | --- | --- |
 | ![versioning_enabled](images/versioning_enabled.png){.thumbnail} | ![versioning_disabled](images/versioning_disabled.png){.thumbnail} |
-  
+
 ### OVHcloud Backint Agent for SAP HANA
 
 From your SAP HANA server, go to the repository `/usr/sap/<SID>/SYS/global/hdb/opt/` and [download the OVHcloud Backint Agent for SAP HANA archive](https://ovhcloud-backint-agent.s3.rbx.io.cloud.ovh.net/ovhcloud-backint-agent.zip) which contains:
