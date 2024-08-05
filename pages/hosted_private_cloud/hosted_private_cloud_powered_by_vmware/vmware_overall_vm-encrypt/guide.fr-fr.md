@@ -1,5 +1,5 @@
 ---
-title: 'OKMS - Chiffrement de VM avec ou sans KMS OVHcloud'
+title: "Présentation des solutions pour chiffrer des VM"
 excerpt: "Découvrez les solutions qui s'offrent à vous pour chiffrer des VM avec ou sans KMS OVHcloud au sein de Hosted Private Cloud VMware on OVHcloud"
 updated: 2024-08-05
 ---
