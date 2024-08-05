@@ -1,7 +1,7 @@
 ---
 title: Tutorial - How to use Rancher CLI
 excerpt: 'Find out how to use the Rancher CLI to handle a Managed Rancher Service'
-updated: 2024-08-01
+updated: 2024-08-05
 ---
 
 > [!warning]
