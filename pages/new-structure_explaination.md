@@ -2,6 +2,8 @@
 
 - **Getting Started** : Articles introductifs pour les nouveaux utilisateurs.
 - **Configuration** : Instructions détaillées sur la mise en place et la gestion des services.
+  - **Simple** : ....
+  - **Avancée** : ...
 - **Migrations** : Guides pour déplacer des données ou des services.
 - **Tutorials** : Étapes détaillées pour accomplir des tâches spécifiques, souvent en utilisant des produits tiers.
 - **Security** : Conseils et configurations pour sécuriser les services.
