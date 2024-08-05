@@ -657,6 +657,7 @@
             + [Configuring IPv6 on a Public Cloud instance](public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6)
             + [Changing the MTU size for an existing network using OpenStack CLI/API](public_cloud/public_cloud_network_services/configuration-03-change-mtu-size)
             + [Update a subnet properties](public_cloud/public_cloud_network_services/configuration-04-update_subnet)
+            + [Network - How to share a private network between 2 Public Cloud projects](public_cloud/public_cloud_network_services/configuration-05-create-share-private-network-between-projects)
         + [Technical resources](public-cloud-network-technical-resources)
             + [Deploying a Public Cloud Load Balancer](public_cloud/public_cloud_network_services/technical-resources-01-using-lbaas-in-openstack-environment)
             + [How to create and manage a Health Monitor for OVHcloud Public Cloud Load Balancer](public_cloud/public_cloud_network_services/technical-resources-03-lbaas-create-health-monitor)

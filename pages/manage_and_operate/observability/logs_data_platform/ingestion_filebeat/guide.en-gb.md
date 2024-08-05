@@ -7,7 +7,7 @@ updated: 2024-06-24
 
 [Filebeat](https://github.com/elastic/beats/tree/master/filebeat){.external} is an open source file harvester, used to fetch logs files and can be easily setup to feed them into Logs Data Platform.
 
-The main benefits of Filebeat are it's resilient protocol to send logs, and a variety of modules ready-to-use for most of the common applications.
+The main benefits of Filebeat are its resilient protocol to send logs, and a variety of ready-to-use modules for most of the common applications.
 
 This guide will describe how to setup Filebeat OSS on your system for forwarding your logs on Logs Data Platform. It will also present you with some configuration setup useful to further structure your logs.
 
