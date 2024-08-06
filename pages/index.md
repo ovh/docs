@@ -185,6 +185,7 @@
             + [Advance Dedicated Servers - Upgrading your Samsung NVMe PM9A1 firmware](bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
         + [Network and IP management](bare-metal-cloud-dedicated-servers-network-and-ip-management)
             + [High Grade Dedicated Servers - Upgrading your SSD SAS Western Digital SS300 firmware](bare_metal_cloud/dedicated_servers/wd-sas-fw-upgrade)
+            + [High Grade Dedicated Servers - Upgrading your SSD SAS Western Digital SS530 firmware](bare_metal_cloud/dedicated_servers/wdc-sas-ss530-fw-upgrade)
             + [Configuring an IPv6 block in a vRack](bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)
             + [Moving an Additional IP](bare_metal_cloud/dedicated_servers/move-failover-ip)
             + [Configuring the Edge Network Firewall](bare_metal_cloud/dedicated_servers/firewall_network)
