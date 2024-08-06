@@ -923,6 +923,7 @@
             + [Creating or importing a Kubernetes cluster](public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes)
                 + [Managed Rancher Service - Importing an existing Kubernetes cluster](public_cloud/containers_orchestration/managed_rancher_service/import-existing-kubernetes)
                 + [Managed Rancher Service - Creating a Managed Kubernetes Service (MKS) cluster](public_cloud/containers_orchestration/managed_rancher_service/creating-mks-kubernetes-cluster)
+                + [Managed Rancher Service - Creating a Kubernetes cluster based on OVHcloud Public Cloud Compute Instances](public_cloud/containers_orchestration/managed_rancher_service/creating-kubernetes-pci-compute-instances)
     + [AI & Machine Learning](products/public-cloud-ai-and-machine-learning)
         + [General information](public-cloud-ai-and-machine-learning-general-information)
             + [Comparative tables - AI Notebooks, AI Training, AI Deploy](public_cloud/ai_machine_learning/gi_00_ai_comparative-table)
