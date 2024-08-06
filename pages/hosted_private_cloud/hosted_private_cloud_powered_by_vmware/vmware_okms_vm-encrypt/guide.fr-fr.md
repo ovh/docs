@@ -432,33 +432,20 @@ Patientez le temps que vSphere établisse la connexion avec le fournisseur de cl
 
 > [!tabs] 
 >
-> > **Étape 1** :
+> **Étape 1**
 >>
->> **vCenter Trust KMS**
->>
->> > [!primary]
->> >
->> > Si, en cliquant sur `Approuver KMS - TRUST KMS`, vCenter a bien téléchargé le certificat public, l'étape suivante d'upload manuel est optionnelle.
->> >
->>
->> Effectivement, avant de générer votre CSR et/ou votre Certificat KMS, puis votre clé privée, vous devez verifier que vCenter a bien téléchargé le certificat public du serveur KMS OVHcloud.
->> 
->> **Faire que vCenter approuve KMS**
+>> **vCenter Trust KMS - Faire que vCenter approuve KMS**
 >>
 >> > [!primary]
 >> >
 >> > L'approbation entre vCenter et KMS peut être conflictuelle, patientez quelques minutes avant de recommencer ou rafraichissez votre page vSphere avec le bouton en forme de flèche circulaire situé en haut et légèrement à droite.
->> >
+>> > Si ça ne fonctionne toujours pas faite un upload manuel (optionnel).
 >>
->> Une fois votre KMS importé dans vSphere, vous devez valider la relation de confiance entre chaque éléments.
+>> Effectivement, avant de générer votre CSR et/ou votre Certificat KMS, puis votre clé privée, vous devez verifier que vCenter a bien téléchargé le certificat public du serveur KMS OVHcloud. Une fois votre KMS importé dans vSphere, vous devez valider la relation de confiance entre chaques éléments.
 >>
 >> ![Trust KMS server with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms.png){.thumbnail}
 >>
->> Cliquez sur `Approuver le KMS - TRUST KMS`{.action} pour approuver le KMS au sein de vCenter.
->>
->> En principe, vCenter télécharge automatiquement le certificat public KMS. S'il ne le fait pas, faites-le manuellement en cliquant sur `Établir une relation de confiance` > vCenter approuve Kms > Télécharger le certificat KMS`{.action}.
->>
->> - `Établir une relation de confiance > vCenter approuve Kms > Télécharger le vertificat KMS`{.action}.
+>> Cliquez sur `Établir une relation de confiance > vCenter approuve Kms > Télécharger le vertificat KMS`{.action}.
 >>
 >> ![KMS Key Provider with or without CSR](images/trust_kms_2.png){.thumbnail}
 >>
@@ -466,7 +453,9 @@ Patientez le temps que vSphere établisse la connexion avec le fournisseur de cl
 >>
 >> Cliquez ensuite sur `TRUST`{.action}.
 >>
->> Si l'import ne fonctionne pas automatiquement, vous pouvez le récupérer depuis les endpoints fournis avec ce snippet :
+>> En principe, vCenter télécharge automatiquement le certificat public KMS. S'il ne le fait pas, faites-le manuellement.
+>> 
+>> Vous pouvez le récupérer depuis les endpoints fournis avec ce snippet :
 >>
 >> ```Shell
 >> openssl s_client -showcerts -connect eu-west-rbx.okms.ovh.net:443 </dev/null 2>/dev/null|openssl x509 -outform PEM | python3 -c "
@@ -487,25 +476,25 @@ Patientez le temps que vSphere établisse la connexion avec le fournisseur de cl
 >>
 >> Puis cliquez sur `Établir une relation de confiance > Télécharger le certificat KMS`{.action}.
 >>
->> Pour terminer, collez le certificat public KMS récupéré depuis le snippet.
->>
 >> ![KMS Key Provider](images/okms_vsphere_upload_kms_cert-ptim-resize.png){.thumbnail}
+>>
+>> Pour terminer, collez le certificat public KMS récupéré depuis le snippet.
 >>
 >> ![KMS Key Provider](images/okms_vsphere_upload_kms_cert_2-optim-resize.png){.thumbnail}
 >>
-> **Étape 2** :
+>> Attendez un petit moment et rafraichissez la page web vSphere comme expliqué auparavant. 
 > 
->>Ensuite, il faut que le **KMS approuve vCenter**.
+> **Étape 2**
+>
+>> **KMS approuve vCenter - Make KMS Trust vCenter**
 >>
 >> Sélectionnez votre **Fournisseur de clés** KMS (OKMS) que vous venez d'ajouter et cliquez sur le bouton `Approuver l'instance de vCenter`{.action}.
 >>
 >> ![Trust KMS server with or without CSR](images/trust_kms.png){.thumbnail}
 >>
->> Nous recommandons la méthode avec CSR (plus sécurisée) en cliquant sur `Nouvelle demande de signature de certificat (CSR)`{.action). Cependant, libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
+>> Nous recommandons la méthode "Avec CSR" (plus sécurisée) en cliquant sur `Nouvelle demande de signature de certificat (CSR)`{.action). Cependant, libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
 >>
 >> Pour plus d'information sur les avantages et inconvénients de l'utilisation d'un CSR, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
->>
->> **KMS Trust vCenter**
 >>
 >> **Avec CSR (recommandé)** :
 >>
