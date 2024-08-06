@@ -1,7 +1,7 @@
 ---
 title: Backing up and restoring a Kubernetes cluster
 excerpt: 'Find out how to backup and restore a Kubernetes cluster and configure recurring etcd backups to an OVHcloud Object Storage S3 on a Managed Rancher Service'
-updated: 2024-08-05
+updated: 2024-08-06
 ---
 
 > [!warning]
@@ -35,7 +35,7 @@ The advantages of configuring S3 is that if all `etcd` nodes are lost, your snap
 
 ### Create an OVHcloud Object Storage S3 backup
 
-First, you need to have an Object Storage container, if you don't already have one, you can follow the [Creating an Object Storage container](/pages/storage_and_backup/object_storage/pcs_create_container) guide.
+First, you need to have an Object Storage container. If you don't already have one, you can follow the [Creating an Object Storage container](/pages/storage_and_backup/object_storage/pcs_create_container) guide.
 
 Note that you need to create a `S3 API` object:
 
@@ -49,7 +49,7 @@ In this guide, our Object Storage container is named `etcd-rancher` and its regi
 > 
 > Save the S3 credentials, you will use the `S3 access key` and the `S3 secret key` in the configuration of the upcoming etcd backup.
 
-Click on the name of your object storage bucket to see its information:
+Click the name of your object storage bucket to see its information:
 
 ![OVHcloud S3 Rancher S3 bucket information](images/s3-details.png){.thumbnail}
 
@@ -70,23 +70,23 @@ For the chosen cluster, click on the three-dot button and then on the `Edit Conf
 ![OVHcloud Managed Rancher Service UI](images/rancher-edit-config.png){.thumbnail}
 
 In the **Cluster Configuration** section, click on the **etcd** tab.<br>
-In **Automatic Snapshots**, change the radio button `Disable` to `Enable` and change the `Cron Schedule` according to your needs.
+In **Automatic Snapshots**, change the radio button from `Disable` to `Enable` and change the `Cron Schedule` according to your needs.
 
 ![Rancher automatic snapshots](images/automatic-snapshots.png){.thumbnail}
 
 In this configuration of automatic etcd snapshots, you will have a snapshot every hour at hh:35 minutes and you will keep the last 5 snapshots per nodes.
 
-In **Backup Snapshots to S3**, change the radio button `Disable` to `Enable`.
+In **Backup Snapshots to S3**, change the radio button from `Disable` to `Enable`.
 
 In the Authentication list, select the `Create a S3-Compatible Auth Secret`.
-Fill the S3 Access Key, the S3 Secret Key and the bucket name.
-Fill the `Region` (in lowercase).
+Fill in the S3 Access Key, the S3 Secret Key and the bucket name.
+Also fill in the `Region` (in lowercase).
 
 > [!warning]
 >
-> The region must be typed in lowercase. So if your bucket is in the `GRA` region, you must enter `gra`.
+> The region must be typed in lowercase. If your bucket is in the `GRA` region, you must enter `gra`.
 
-Fill the endpoint `s3.gra.io.cloud.ovh.net`: 
+Fill in the endpoint `s3.gra.io.cloud.ovh.net`: 
 
 > [!warning]
 >
@@ -94,7 +94,7 @@ Fill the endpoint `s3.gra.io.cloud.ovh.net`:
 
 ![OVHcloud S3 Rancher](images/rancher-etcd-config.png){.thumbnail}
 
-Finally, click to activate the checkbox `Accept any certificate (insecure)` and click on the Save`{.action} button. 
+Finally, click to activate the checkbox `Accept any certificate (insecure)` and click the `Save`{.action} button. 
 
 ### Check the etcd snapshots
 
@@ -104,10 +104,11 @@ In **Cluster Management**, click on your cluster.
 
 To check and retrieve the backup snapshots, click on the **Snapshots** tab.
 
-![OVHcloud S3 Rancher snapshots local](images/rancher-backup-local.png){.thumbnail}<br>
+![OVHcloud S3 Rancher snapshots local](images/rancher-backup-local.png){.thumbnail}
+
 ![OVHcloud S3 Rancher snapshots s3](images/rancher-backup-s3.png){.thumbnail}
 
-The name of the snapshot is auto-generated, it is based on the type (whether the snapshot is manual: `on-demand` or recurring: `etcd-snapshot`). The naming convention is as follows:
+The name of the snapshot is automatically generated, it is based on the type (whether the snapshot is manual: `on-demand` or recurring: `etcd-snapshot`). The naming convention is as follows:
 
 `<name>-<node>-<timestamp>`
 
@@ -118,9 +119,10 @@ You can also verify in your bucket in the OVHcloud Control Panel that the snapsh
 ### Create a one-time snapshot
 
 In addition to recurring snapshots, you may want to take a "one-time" snapshot.
+
 It can be useful, for example, before upgrading the Kubernetes version of a cluster and ugrading the Service Mesh version of a cluster. In general, it is recommended to backup the state of the cluster to protect against upgrade failure.
 
-On the **Cluster Management** view on Rancher UI, click on the checkbox near your Kubernetes cluster and click on the `Take Snapshot`{.action} button.
+On the **Cluster Management** view on Rancher UI, click on the checkbox near your Kubernetes cluster and click the `Take Snapshot`{.action} button.
 
 ![Rancher Take Snapshot](images/take-snapshot.png){.thumbnail}
 
@@ -128,7 +130,7 @@ On the **Cluster Management** view on Rancher UI, click on the checkbox near you
 
 ### Restore from a snapshot
 
-On the **Snapshots** tab of your Kubernetes cluster in the Rancher UI, click on the `Restore`{.action} button.
+On the **Snapshots** tab of your Kubernetes cluster in the Rancher UI, click the `Restore`{.action} button.
 
 ![Rancher etcd snapshots](images/snapshots.png){.thumbnail}
 
@@ -138,17 +140,17 @@ On Rancher, you can choose different restore types:
 - Kubernetes version and etcd
 - Cluster config, Kubernetes version and etcd
 
-In the **Restore Snapshot** popup, click on the restore type you want to do and click on the `Restore`{.action} button.
+In the **Restore Snapshot** popup, click on the restore type you want to do and click the `Restore`{.action} button.
 
 ![Rancher Restore Snapshot](images/restore-snapshot.png){.thumbnail}
 
-After clicking on the button, the restore from the snapshot is in progress.
+After clicking the button, the restore from the snapshot is in progress.
 
 ![Rancher restore progressing](images/restore-in-progress.png){.thumbnail}
 
 ![Rancher restore in progress](images/restore-in-progress-2.png){.thumbnail}
 
-The restoration of a cluster can take few minutes.
+The restoration of a cluster can take a few minutes.
 
 ### Known issues
 
@@ -164,7 +166,7 @@ A correct S3 endpoint should be `s3.gra.io.cloud.ovh.net`.
 
 - Follow the Rancher official documentation to know more about [backup and restore](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/backup-restore-and-disaster-recovery/back-up-rancher-launched-kubernetes-clusters).
 
-- To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/es-es/public-cloud/managed-rancher-service/).
+- To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](/links/public-cloud/rancher).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
