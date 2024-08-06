@@ -345,7 +345,7 @@ Pour récupérer l'IP publique du KMS OVHcloud, effectuez un ping en adaptant la
 ping eu-west-rbx.okms.ovh.net
 ```
 
-Pour mettre à jour votre KMS avec un KMS OVHcloud:
+Pour mettre à jour votre KMS avec un KMS OVHcloud :
 
 > [!api]
 >
@@ -429,144 +429,149 @@ Attendez que vSphere établisse la connexion avec le Key Provider que vous avez 
 
 Patientez le temps que vSphere établisse la connexion avec le fournisseur de clés que vous venez d'ajouter. Vous devriez voir apparaitre un message confirmant que la connexion a été établie avec succès.
 
-#### Approbation du serveur KMS par vCenter et inversement
-
-Afin de communiquer avec votre KMS, vous devez créer un certificat d'accès. Celui-ci sera utilisé pour l'ensemble des interactions avec le KMS OVHcloud et vSphere, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec ceux-ci.
-
-Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
-
-Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre propre clé de sécurité privée via une **"Certificate Signing Request (CSR)"**.
-
-**Sans CSR (non recommandé)** :
-
-Vous pouvez créer un certificat d'accès et une clé privée avec l'appel API suivant : `Sans CSR`{.action}
-
-> [!api]
->
-> @api {v2} /okms POST /okms/resource/{okmsId}/credential
->
-
-> **Paramètres:**
->
-> - `okmsId`: L'ID de votre KMS OVHcloud (OKMS).
-> - Avec/Sans CSR Provided.
->
-
-Il est nécessaire d'indiquer les informations suivantes :
-
-- `name` : nom du certificat (obligatoire).
-- `identityURNs` : Identité OVHcloud sous format d'URN qui sera fourni à IAM pour le calcul des droits d'accès (obligatoire).
-- `description` : Description du certificat (optionnel).
-- `validity` : Durée de validité du certificat en jours - 365 jours par défaut (optionnel).
-
-**Voici un exemple de création de certificat** :
-
-```Shell
-{
- "description": "My user reader credential",
- "identityURNs": [
- "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user" // L'utilisateur avec lequel vous vous connectez à vos ressources vSphere managé et avec lequel vous avez les droits sur les produits (HPC, OKMS) en questions.
- "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group" // Si vous utilisez des groupes vous pouvez les ajouter ici. Le principe étant le même qu'avec un utilisateur au sein de l'écosysteme OVHcloud.
- ],
- "name": "my_reader", // Nom du reader.
- "validity": 30 // Par defaut 365 jours.
-}
-```
-
-L'API retourne ensuite l'état de création du certificat :
-
-```Shell
-{
-  "id": "1bc7830b-9c8e-4b45-af51-00a3543ba16c",
-  "name": "user",
-  "description": "XXX",
-  "identityURNs": [
-    "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
-    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
-  ],
-  "status": "CREATING",
-  "fromCSR": false,
-  "privateKeyPEM": "-----BEGIN EC PRIVATE KEY-----\nXXcCAQEEIEs+RwZG0JLs5bmzxVxZtli15RLGU/cXXHtoVoOrwDzuoAoGCCqGSM49\nAwEHoUQDQgAExC+jRLpucMcNUcXXhxHNMA78EjrmmKnMgeEaRzAvX2dY4GVap5lU\nM76nD1WRnNvceYHZUOxGcPDCuXXKNV1/8A==\n-----END EC PRIVATE KEY-----\n",
-  "createdAt": "2024-07-02T15:54:18.390593+02:00",
-  "expiredAt": "2024-08-01T15:54:18.390591+02:00"
-}
-```
-
-Copiez la valeur du champ (exemple ci-dessus) : `privateKeyPEM`{.action}, puis collez-la dans un fichier `domain.key`{.action}. Uniquement de `-----BEGIN EC YOUR_PRIVATE_KEY-----\n` à `\n-----END EC YOUR_PRIVATE_KEY-----`{.action}.
-
-Enregistrez ce fichier afin de le réutiliser pour le **KMS trust vCenter** ultérieurement.
-
-Copiez également l'ID généré et lancer l'appel API suivant avec l'ID et l'okmsId :
-
-> [!Warning]
->
-> La clé privée ne sera plus accessible par la suite. En cas de perte, vous devrez re-générer un certificat.
->
-
-> [!api]
->
-> @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
->
->
-> **Paramètres** :
->
-> - `id` : ID généré par le **POST /okms/resource/{okmsId}/credential**. Exemple : 2bc7830b-9c8e-4b45-af51-00a3543ba16c.> - okmsId: L'id de votre KMS OVHcloud (Okms).
-> - `okmsId` : ID de votre KMS OVHcloud (OKMS).
->
-
-L'API renvoie le certificat **"certificatePEM"** au format json:
-
-```Shell
-{
-  "id": "06ef14a0-7635-4f17-8748-accfadbd6203",
-  "name": "reader",
-  "description": "XXX",
-  "identityURNs": [
-    "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user", // L'utilisateur OVHcloud avec lequel vous vous connectez à vSphere au sein de votre PCC, il doit être admin ou avoir Encryption management activé au sein du PCC pour chiffrer des VM.
-    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group" // Le groupe OVHcloud avec lequel vous accédez à vos PCC, pour activer le chiffrement sur les VM vous devez être admin ou activer Encryption management.
-  ],
-  "status": "READY",
-  "fromCSR": false,
-  "certificatePEM": "-----BEGIN CERTIFICATE-----\nMXXBqTCCAU+gAwIBAgIQBu8UoHY1TxeHSKzPrb1iAzAKBggqhkjOPXXDAjAVMRMw\nEQYDVQQDEwpDQ01Vc2Vyc0NBMB4XDTI0MDcwMjEzNTQxOFoXDTI0MDgwMTEzNTQx\nOFowLzEtMCsGA1UEAxMkZTkwYzU4NDEtZjM5ZSXXOTgzLTg1OTYtNjJmZjBjNTM4\nYjZiMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExC+jRLpucMcNUc84hxHNMA78\nEjrmmKnMgeEaRzAvX2dY4GVap5lUM76nD1WRnNvceYHZUOxGcPDCu33KNV1/8KNn\nMGUwTgYDVR0RAQH/BEQwQqBABgorBgEEAYI3FAIDoDIMMG9rbXMuZG9tYWluOmU5\nMGM1ODQxLWYzOWUtNDk4My04NTk2LTYyZmYwYzUzOGI2YjATBgNVHSUEDDAKBggr\nBgEFBQcDAjAKBggqhkjOPQQDAgNIADBFAiBD9GOB4c+7IVQzlJBCP8TZ9O3M4pHS\nVJTyEYxld5eXYQIhAL/1fe5qGBZib4vlaPss6zgJoentyMUq+zTCMUn5wXcP\n-----END CERTIFICATE-----",
-  "createdAt": "2024-07-02T15:54:18.390593+02:00",
-  "expiredAt": "2024-08-01T15:54:18.390591+02:00"
-}
-```
-
-Copiez la valeur du champ `"certificatePEM"`{.action} `"-----BEGIN CERTIFICATE-----\nYOUR_CERTIFICATE\n-----END CERTIFICATE-----"`{.action}, puis collez-la (printf) dans un fichier `client.pem`{.action}.
-
-##### **Avec CSR (recommandé)**
-
-Suivez les mêmes étapes que ci-dessus, mais avec le champ `With CSR provided`{.action} de l'appel api suivant:
-
-> [!api]
->
-> @api {v2} /okms POST /okms/resource/{okmsId}/credential
->
->
-> **Paramètres** :
->
-> - `okmsId`: ID de votre KMS OVHcloud (OKMS).
-
-Exemple de l'input avec CSR formaté en json:
-
-```Shell
-{
-  "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDzANBgNV\nBAcMBkxpbmRvbjEWMBQGA1UECgwNRGlnaUNlcnQgSW5jLjERMA8GA1UECwwIRGln\naUNlcnQxHTAbBgNVBAMMFGV4YW1wbGUuZGlnaWNlcnQuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8+To7d+2kPWeBv/orU3LVbJwDrSQbeKamCmo\nwp5bqDxIwV20zqRb7APUOKYoVEFFOEQs6T6gImnIolhbiH6m4zgZ/CPvWBOkZc+c\n1Po2EmvBz+AD5sBdT5kzGQA6NbWyZGldxRthNLOs1efOhdnWFuhI162qmcflgpiI\nWDuwq4C9f+YkeJhNn9dF5+owm8cOQmDrV8NNdiTqin8q3qYAHHJRW28glJUCZkTZ\nwIaSR6crBQ8TbYNE0dc+Caa3DOIkz1EOsHWzTx+n0zKfqcbgXi4DJx+C1bjptYPR\nBPZL8DAeWuA8ebudVT44yEp82G96/Ggcf7F33xMxe0yc+Xa6owIDAQABoAAwDQYJ\nKoZIhvcNAQEFBQADggEBAB0kcrFccSmFDmxox0Ne01UIqSsDqHgL+XmHTXJwre6D\nhJSZwbvEtOK0G3+dr4Fs11WuUNt5qcLsx5a8uk4G6AKHMzuhLsJ7XZjgmQXGECpY\nQ4mC3yT3ZoCGpIXbw+iP3lmEEXgaQL0Tx5LFl/okKbKYwIqNiyKWOMj7ZR/wxWg/\nZDGRs55xuoeLDJ/ZRFf9bI+IaCUd1YrfYcHIl3G87Av+r49YVwqRDT0VDV7uLgqn\n29XI1PpVUNCPQGn9p/eX6Qo7vpDaPybRtA2R7XLKjQaF9oXWeCUqy1hvJac9QFO2\n97Ob1alpHPoZ7mWiEuJwjBPii6a9M9G30nUo39lBi1w=\n-----END CERTIFICATE REQUEST-----",
-  "description": "My reader credential",
-  "identityURNs": [
-    "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
-    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
-  ],
-  "name": "reader name",
-  "validity": 365
-}
-```
-
-Collez la valeur du champ `"csr"`{.action} : `"-----BEGIN CERTIFICATE REQUEST-----\nYOUR_CERTIFICATE\n-----END CERTIFICATE REQUEST-----"`{.action} récupérée de vSphere on OVHcloud.
-
 > [!tabs]
 > 
+>> **Approbation du serveur KMS par vCenter et inversement**
+>>
+>> Afin de communiquer avec votre KMS, vous devez créer un certificat d'accès. Celui-ci sera utilisé pour l'ensemble des interactions avec le KMS OVHcloud et vSphere, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec ceux-ci.
+>>
+>> Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
+>> 
+>> Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre propre clé de sécurité privée via une **"Demande de signature de certificat (CSR)"**.
+>> 
+> **Sans CSR (non recommandé)** :
+>>
+>> Vous pouvez créer un certificat d'accès et une clé privée avec l'appel API suivant : 
+>> 
+>> - `Sans CSR`{.action}
+>>
+>> > [!api]
+>> >
+>> > @api {v2} /okms POST /okms/resource/{okmsId}/credential
+>> >
+>> >
+>> > **Paramètres** :
+>> >
+>> > - `okmsId`: L'ID de votre KMS OVHcloud (OKMS).
+>> > - `Avec/Sans CSR fourni` : Chaine de confiance entre OKMS et VCenter avec ou sans CSR.
+>> >
+>>
+>> Il est nécessaire d'indiquer les informations suivantes :
+>>
+>> - `name` : Nom du certificat (obligatoire).
+>> - `identityURNs` : Identité OVHcloud sous format d'URN qui sera fourni à IAM pour le calcul des droits d'accès (obligatoire).
+>> - `description` : Description du certificat (optionnel).
+>> - `validity` : Durée de validité du certificat en jours - 365 jours par défaut (optionnel).
+>> 
+>> **Voici un exemple de création de certificat** :
+>>
+>> ```Shell
+>> {
+>> "description": "My user reader credential",
+>> "identityURNs": [
+>> "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user" // L'utilisateur avec lequel vous vous connectez à vos ressources vSphere managé et avec lequel vous avez les droits sur les produits (HPC, OKMS) en questions.
+>> "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group" // Si vous utilisez des groupes vous pouvez les ajouter ici. Le principe étant le même qu'avec un utilisateur au sein de l'écosysteme OVHcloud.
+>> ],
+>> "name": "my_reader", // Nom du reader.
+>> "validity": 30 // Par defaut 365 jours.
+>> }
+>> ```
+>>
+>> L'API retourne ensuite l'état de création du certificat :
+>>
+>> ```Shell
+>> {
+>>  "id": "1bc7830b-9c8e-4b45-af51-00a3543ba16c",
+>>  "name": "user",
+>>  "description": "XXX",
+>>  "identityURNs": [
+>>    "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
+>>    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
+>>  ],
+>>  "status": "CREATING",
+>>  "fromCSR": false,
+>>  "privateKeyPEM": "-----BEGIN EC PRIVATE KEY-----\nXXcCAQEEIEs+RwZG0JLs5bmzxVxZtli15RLGU/cXXHtoVoOrwDzuoAoGCCqGSM49\nAwEHoUQDQgAExC+jRLpucMcNUcXXhxHNMA78EjrmmKnMgeEaRzAvX2dY4GVap5lU\nM76nD1WRnNvceYHZUOxGcPDCuXXKNV1/8A==\n-----END EC PRIVATE KEY-----\n",
+>>  "createdAt": "2024-07-02T15:54:18.390593+02:00",
+>>  "expiredAt": "2024-08-01T15:54:18.390591+02:00"
+>> }
+>> ```
+>>
+>> Copiez la valeur du champ (exemple ci-dessus) : `privateKeyPEM`{.action}, puis collez-la dans un fichier `domain.key`{.action}. Uniquement de `-----BEGIN EC YOUR_PRIVATE_KEY-----\n` à `\n-----END EC YOUR_PRIVATE_KEY-----`{.action}.
+>>
+>> Enregistrez ce fichier afin de le réutiliser pour le **KMS trust vCenter** ultérieurement.
+>>
+>> Copiez également l'ID généré et lancer l'appel API suivant avec l'ID et l'okmsId :
+>>
+>> > [!Warning]
+>> >
+>> > La clé privée ne sera plus accessible par la suite. En cas de perte, vous devrez re-générer un certificat.
+>> >
+>>
+>> > [!api]
+>> >
+>> > @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
+>> >
+>> >
+>> > **Paramètres** :
+>> >
+>> > - `id` : ID généré par le **POST /okms/resource/{okmsId}/credential**. Exemple : 2bc7830b-9c8e-4b45-af51-00a3543ba16c.> - okmsId: L'id de votre KMS OVHcloud (Okms).
+>> > - `okmsId` : ID de votre KMS OVHcloud (OKMS).
+>> >
+>>
+>> L'API renvoie le certificat **"certificatePEM"** au format json :
+>>
+>> ```Shell
+>> {
+>> "id": "06ef14a0-7635-4f17-8748-accfadbd6203",
+>> "name": "reader",
+>> "description": "XXX",
+>> "identityURNs": [
+>> "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user", // L'utilisateur OVHcloud avec lequel vous vous connectez à vSphere au sein de votre PCC, il doit être admin ou avoir Encryption management activé au sein du PCC pour chiffrer des VM.
+>> "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group" // Le groupe OVHcloud avec lequel vous accédez à vos PCC, pour activer le chiffrement sur les VM vous devez être admin ou activer Encryption management.
+>>  ],
+>>  "status": "READY",
+>>  "fromCSR": false,
+>>  "certificatePEM": "-----BEGIN CERTIFICATE-----\nMXXBqTCCAU+gAwIBAgIQBu8UoHY1TxeHSKzPrb1iAzAKBggqhkjOPXXDAjAVMRMw\nEQYDVQQDEwpDQ01Vc2Vyc0NBMB4XDTI0MDcwMjEzNTQxOFoXDTI0MDgwMTEzNTQx\nOFowLzEtMCsGA1UEAxMkZTkwYzU4NDEtZjM5ZSXXOTgzLTg1OTYtNjJmZjBjNTM4\nYjZiMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExC+jRLpucMcNUc84hxHNMA78\nEjrmmKnMgeEaRzAvX2dY4GVap5lUM76nD1WRnNvceYHZUOxGcPDCu33KNV1/8KNn\nMGUwTgYDVR0RAQH/BEQwQqBABgorBgEEAYI3FAIDoDIMMG9rbXMuZG9tYWluOmU5\nMGM1ODQxLWYzOWUtNDk4My04NTk2LTYyZmYwYzUzOGI2YjATBgNVHSUEDDAKBggr\nBgEFBQcDAjAKBggqhkjOPQQDAgNIADBFAiBD9GOB4c+7IVQzlJBCP8TZ9O3M4pHS\nVJTyEYxld5eXYQIhAL/1fe5qGBZib4vlaPss6zgJoentyMUq+zTCMUn5wXcP\n-----END CERTIFICATE-----",
+>>  "createdAt": "2024-07-02T15:54:18.390593+02:00",
+>>  "expiredAt": "2024-08-01T15:54:18.390591+02:00"
+>> }
+>> ```
+>>
+>> Copiez la valeur du champ `"certificatePEM"`{.action} `"-----BEGIN CERTIFICATE-----\nYOUR_CERTIFICATE\n-----END CERTIFICATE-----"`{.action}, puis collez-la (printf) dans un fichier `client.pem`{.action}.
+>>
+>
+> **Avec CSR (recommandé)** :
+> 
+>>
+>> Suivez les mêmes étapes que ci-dessus, mais avec le champ `Avec CSR fourni`{.action} de l'appel API suivant :
+>>
+>> > [!api]
+>> >
+>> > @api {v2} /okms POST /okms/resource/{okmsId}/credential
+>> >
+>> >
+>> > **Paramètres** :
+>> >
+>> > - `okmsId`: ID de votre KMS OVHcloud (OKMS).
+>> >
+>>
+>> Exemple de l'input avec CSR formaté en json :
+>>
+>> ```Shell
+>> {
+>>  "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDzANBgNV\nBAcMBkxpbmRvbjEWMBQGA1UECgwNRGlnaUNlcnQgSW5jLjERMA8GA1UECwwIRGln\naUNlcnQxHTAbBgNVBAMMFGV4YW1wbGUuZGlnaWNlcnQuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8+To7d+2kPWeBv/orU3LVbJwDrSQbeKamCmo\nwp5bqDxIwV20zqRb7APUOKYoVEFFOEQs6T6gImnIolhbiH6m4zgZ/CPvWBOkZc+c\n1Po2EmvBz+AD5sBdT5kzGQA6NbWyZGldxRthNLOs1efOhdnWFuhI162qmcflgpiI\nWDuwq4C9f+YkeJhNn9dF5+owm8cOQmDrV8NNdiTqin8q3qYAHHJRW28glJUCZkTZ\nwIaSR6crBQ8TbYNE0dc+Caa3DOIkz1EOsHWzTx+n0zKfqcbgXi4DJx+C1bjptYPR\nBPZL8DAeWuA8ebudVT44yEp82G96/Ggcf7F33xMxe0yc+Xa6owIDAQABoAAwDQYJ\nKoZIhvcNAQEFBQADggEBAB0kcrFccSmFDmxox0Ne01UIqSsDqHgL+XmHTXJwre6D\nhJSZwbvEtOK0G3+dr4Fs11WuUNt5qcLsx5a8uk4G6AKHMzuhLsJ7XZjgmQXGECpY\nQ4mC3yT3ZoCGpIXbw+iP3lmEEXgaQL0Tx5LFl/okKbKYwIqNiyKWOMj7ZR/wxWg/\nZDGRs55xuoeLDJ/ZRFf9bI+IaCUd1YrfYcHIl3G87Av+r49YVwqRDT0VDV7uLgqn\n29XI1PpVUNCPQGn9p/eX6Qo7vpDaPybRtA2R7XLKjQaF9oXWeCUqy1hvJac9QFO2\n97Ob1alpHPoZ7mWiEuJwjBPii6a9M9G30nUo39lBi1w=\n-----END CERTIFICATE REQUEST-----",
+>>  "description": "My reader credential",
+>>  "identityURNs": [
+>>	"urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
+>>	"urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
+>>  ],
+>>  "name": "reader name",
+>>  "validity": 365
+>> }
+>> ```
+>>
+>> Collez la valeur du champ `"csr"`{.action} : `"-----BEGIN CERTIFICATE REQUEST-----\nYOUR_CERTIFICATE\n-----END CERTIFICATE REQUEST-----"`{.action} récupérée de vSphere on OVHcloud.
+>>
 > **Faire que vCenter approuve KMS**
 >>
 >> ![Trust KMS server with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms.png){.thumbnail}
@@ -641,7 +646,10 @@ Collez la valeur du champ `"csr"`{.action} : `"-----BEGIN CERTIFICATE REQUEST---
 >> 
 >> ![KMS Key Provider](images/okms_vsphere_upload_kms_cert_2-optim-resize.png){.thumbnail}
 >>
-> **Certificat KMS et clé privée (sans CSR)**
+> 
+> **Sans CSR**
+>
+>> **Certificat KMS et clé privée**
 >>
 >>
 >> Pour cela, cliquez sur `Faire que KMS approuve vCenter`{.action}.
@@ -704,7 +712,7 @@ Collez la valeur du champ `"csr"`{.action} : `"-----BEGIN CERTIFICATE REQUEST---
 >>
 >> Pour terminer, collez-le dans vSphere, puis cliquez sur `Établir une relation de confiance`{.action}.
 >>
->> **Nouvelle demande de signature de certificat (avec CSR/sans CSR)**
+> **Nouvelle demande de signature de certificat (avec CSR/sans CSR)**
 >>
 >> Une fois que votre KMS est commandé et que vCenter approuve le KMS. Lancez la génération du `CSR`{.action} afin que KMS approuve vCenter et signe le CSR.
 >>
