@@ -11,7 +11,9 @@ Ce tutoriel vous montre comment connecter deux projets sur un réseau interne. I
 ## Prérequis
 
 - Vous avez 2 projets Public Cloud ou plus.
-- Référez-vous aux guides suivants :
+
+Référez-vous aux guides suivants :
+
   - [Débuter avec l’API OpenStack](/pages/public_cloud/compute/starting_with_nova).
   - [Attacher une adresse Floating IP à une instance Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance).
   - [Gestion des règles de firewall et port security sur les réseaux utilisant OpenStack CLI](/pages/public_cloud/compute/security_group_private_network).
@@ -24,12 +26,13 @@ Ce tutoriel vous montre comment connecter deux projets sur un réseau interne. I
 
 ```sh
 openstack project list -c ID -f value
- ```
+```
+
 Exemple de résultat :
 
 ```sh
 abc123def456ghi789jkl0mnopqr1234
- ```
+```
 
 #### 2. Créer le réseau qui sera partagé
 
@@ -174,7 +177,7 @@ def456ghi789jkl0mnopqr1234
 
 ```sh
 openstack port create --network shared_private_network --fixed-ip subnet=shared_subnet_v2 shared_port
-```y
+```
 
 Exemple de résultat :
 
