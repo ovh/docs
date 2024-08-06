@@ -1,7 +1,7 @@
 ---
 title: Alerting - Using ElastAlert 2 with Logs Data Platform
 excerpt: Deploy in a few minutes one of the most complete alert system.
-updated: 2023-06-05
+updated: 2024-08-06
 ---
 
 ## Objective
@@ -42,15 +42,21 @@ ElastAlert configuration consists in three steps:
 
 ### Installation
 
-Installing ElastAlert can be done in different ways as described in their [documentation.](https://elastalert2.readthedocs.io/en/latest/elastalert.html#running-elastalert){.external}. You can either use the docker image or install the python 3 packages.
+Installing ElastAlert can be done in different ways as described in their [documentation.](https://elastalert2.readthedocs.io/en/latest/elastalert.html#running-elastalert){.external}. You can either use the docker image or install the python 3 packages. You must check that your Python version is the one compatible with ElastAlert. Check the documentation to verify which version of Python is compatible. Be sure also to meet all the [requirements](https://elastalert2.readthedocs.io/en/latest/running_elastalert.html#requirements) before attempting the installation.
 
-You must clone the Jertel ElastAlert repository for the most recent changes:
+You can either install the latest released version of ElastAlert 2 using pip:
+
+```shell-session
+$ pip install elastalert2
+```
+
+or you can first clone the ElastAlert2 repository for the most recent changes:
 
 ```shell-session
 $ git clone https://github.com/jertel/elastalert2.git
 ```
 
-Install the module:
+And then install the module:
 
 ```shell-session
 $ pip install "setuptools>=11.3"
@@ -91,12 +97,12 @@ This command will prompt you with different questions:
 Verify TLS certificates? t/f: t
 Enter optional OpenSearch URL prefix (prepends a string to the URL of every request):
 Name of existing index to copy? (Default None)
-Reading Elastic 7 index mappings:
-Reading index mapping 'es_mappings/7/silence.json'
-Reading index mapping 'es_mappings/7/elastalert_status.json'
-Reading index mapping 'es_mappings/7/elastalert.json'
-Reading index mapping 'es_mappings/7/past_elastalert.json'
-Reading index mapping 'es_mappings/7/elastalert_error.json'
+Reading Elastic 8 index mappings:
+Reading index mapping 'es_mappings/8/silence.json'
+Reading index mapping 'es_mappings/8/elastalert_status.json'
+Reading index mapping 'es_mappings/8/elastalert.json'
+Reading index mapping 'es_mappings/8/past_elastalert.json'
+Reading index mapping 'es_mappings/8/elastalert_error.json'
 New index logs-**-*****-i-***** created
 Done!
 ```
@@ -105,7 +111,8 @@ This will then create 5 indices and place the mapping on them. All you need afte
 
 ### ElastAlert configuration file.
 
-Without further delay here is a sample config.yml file you can use for your configuration:
+Create a configuration directory (for example /opt/elastalert/) and a rule directory before continuing (like /opt/elastalert/rules). This rule directory will be used in the configuration below.
+Without further delay here is a sample **config.yml** file you can use for your configuration in your configuration directory:
 
 ```yaml
 rules_folder: /opt/elastalert/rules
@@ -126,7 +133,7 @@ alert_time_limit:
 
 You can find all the available options [here](https://elastalert2.readthedocs.io/en/latest/running_elastalert.html#downloading-and-configuring){.external}.
 
-- **rules_folder** is where ElastAlert will load rule configuration files from. It will attempt to load every .yaml file in the folder. Without any valid rules, ElastAlert will not start. In this folder.
+- **rules_folder** is where ElastAlert will load rule configuration files from. It will attempt to load every .yaml file in the folder. Without any valid rules in this folder, ElastAlert will not start.
 - **run_every** is how often ElastAlert will query OpenSearch.
 - **buffer_time** is the size of the query window, stretching backwards from the time each query is run.
 - **es_host** is the address of an OpenSearch cluster where ElastAlert will store data about its state, queries run, alerts, and errors. Each rule may also use a different OpenSearch host to query against.
@@ -140,7 +147,7 @@ You can find all the available options [here](https://elastalert2.readthedocs.io
 
 ### Rules configuration
 
-In this example, we will create a [frequency.yml](https://elastalert2.readthedocs.io/en/latest/ruletypes.html#frequency){.external} rule which will send a email if the field **user** with the value **Oles** appears more than **3** times in less than **4 hours** and send an **email**. If your machine cannot send an email, you can still test the rule (it will just fail at the sending step).
+In this example, we will create a [frequency.yml](https://elastalert2.readthedocs.io/en/latest/ruletypes.html#frequency){.external} rule which will send a email if the field **user** with the value **Oles** appears more than **3** times in less than **4 hours** and use the debug logger **debug**.
 
 ```yaml
 name: Example frequency rule
@@ -180,12 +187,8 @@ filter:
 # (Required)
 # The alert is used when a match is found
 alert:
-- "email"
+- "debug"
 
-# (required, email specific)
-# a list of email addresses to send alerts to
-email:
-- "elastalert@example.com"
 ```
 
 We won't detail all the parameters since most of them are self-explanatory. However, please pay attention to the **index** parameter. This index or alias is the one containing the logs or documents you want to be alerted from.
@@ -197,16 +200,36 @@ It's also important to customize the timestamp parameters according to the times
 To launch ElastAlert, use the following command:
 
 ```shell-session
-$ elastalert --config config.yml
+$ elastalert --config config.yml --debug
 ```
+
+config.yml is the main configuration file described earlier. The **--debug** option is here to ensure everything is working correctly. You can deactivate it in production when ElastAlert is fully configured.
 
 To test your alert you can use the following curl command sending logs to our [OpenSearch endpoint](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input):
 
 ```shell-session
-$ curl -H 'Content-Type: application/json' -u '<username>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "stream-token>" , "test_field" : "OVHcloud" , "user": "Oles", "short_message" : "Hello OpenSearch input", "host" : "OVHcloud_elastalert" }'
+$ curl -H 'Content-Type: application/json' -u '<username>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/_doc -d '{ "X-OVH-TOKEN" : "<stream-token>" , "test_field" : "OVHcloud" , "user": "Oles", "short_message" : "Hello OpenSearch input", "host" : "OVHcloud_elastalert" }'
 ```
 
-If you send this event more than 3 times, the elastalert process will try to send an alert to the configured email address.
+If you send this event more than 3 times, the elastalert process will print the triggered alert.
+
+
+```shell-session
+user01@test:~/rules$ elastalert --config config.yml --debug
+INFO:elastalert:Note: In debug mode, alerts will be logged to console but NOT actually sent.
+To send them but remain verbose, use --verbose instead.
+INFO:elastalert:Note: In debug mode, alerts will be logged to console but NOT actually sent.
+To send them but remain verbose, use --verbose instead.
+INFO:elastalert:1 rules loaded
+INFO:elastalert:Starting up
+INFO:elastalert:Disabled rules are: []
+INFO:elastalert:Sleeping for 299.999899 seconds
+INFO:elastalert:Queried rule Example frequency rule from 2024-08-06 04:03 EDT to 2024-08-06 10:03 EDT: 16 / 16 hits
+INFO:elastalert:Skipping writing to ES: {'exponent': 0, 'rule_name': 'Example frequency rule', '@timestamp': '2024-08-06T14:03:25.155726Z', 'until': '2024-08-06T14:04:25.155713Z'}
+INFO:elastalert:Alert for Example frequency rule at 2024-08-06T13:46:26.335Z:
+INFO:elastalert:Example frequency rule
+```
+
 
 ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGenie, SNS, HipChat, Slack, MS Teams, PagerDuty, Zabbix, custom commands and [many more](https://elastalert2.readthedocs.io/en/latest/ruletypes.html#alerts){.external}.
 

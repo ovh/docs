@@ -1,7 +1,7 @@
 ---
 title: OpenSearch Index as a Service
 excerpt: Use the power of OpenSearch without managing a cluster.
-updated: 2022-10-13
+updated: 2024-08-06
 ---
 
 ## Objective
@@ -169,7 +169,7 @@ $ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/x-ndjson'
 This call will take the content of the bulk file and execute each index operation. Note that you have to use the option **--data-binary** and no **-d** to preserve the newline after each JSON. You can check that your data are properly indexed with the following call:
 
 ```shell-session
-$ curl -u token:<your-token-value> -XGET 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/_search?pretty=true'
+$ curl -u token:<your-token-value> -XGET 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_search?pretty=true'
 ```
 
 This will give you back the documents of your index:
@@ -297,11 +297,11 @@ tcp {
 The most important part in this configuration is the filter part:
 
 ```ruby
-elasticsearch {
+opensearch {
     hosts => ["https://gra2.logs.ovh.com:9200"]
     index => "logs-<username>-i-<suffix>"
-    user => "token"
-    password => "y762pm8j2yhge9c2idpdaqs456dshr78nb2313eaze4656oue45psla"
+    user => "<username>"
+    password => "<password>"
     enable_sort => false
     query => "userId:%{[userId]}"
     fields  => {
@@ -451,7 +451,9 @@ $ curl -u <username>:<password> -XPUT -H 'Content-Type: application/json' 'https
 
 This call create a individual alias on one index you have previously created.
 
-You can also use the generic aliases call to create aliases:
+If you need more information on aliases, you can check the [OpenSearch Documentation](https://opensearch.org/docs/latest/api-reference/index-apis/alias/).
+
+We also support the aliases API to create aliases:
 
 ```shell-session
 $ curl -XPOST "https://gra2.logs.ovh.com:9200/_aliases?pretty" -H 'Content-Type: application/json' -d'
@@ -481,7 +483,7 @@ $ curl -u <username>:<password> -XPUT -H 'Content-Type: application/json' 'https
 {
 	"index_patterns" : [ "logs-ab-12345-i-debug*","logs-ab-12345-i-test*"  ],
 	"settings": {
-		"number_of_shards" : 1,
+		"number_of_shards" : 1
 	},
 	"aliases" : {
 		"logs-ab-12345-a-all" : {},

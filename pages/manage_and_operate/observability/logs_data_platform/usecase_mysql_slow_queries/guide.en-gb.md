@@ -1,7 +1,7 @@
 ---
 title: Tracking slow MySQL queries with Logs Data Platform
 excerpt: Keep your MySQL database at high speed with Logs Data Platform!
-updated: 2019-04-11
+updated: 2024-08-06
 ---
 
 ## Objective
@@ -99,16 +99,31 @@ filebeat.config.modules:
   # Set to true to enable config reloading
   reload.enabled: false
 
+#================================ General =====================================
+
+# Optional fields that you can specify to add additional information to the
+# output.
+fields_under_root: true
+fields:
+  X-OVH-TOKEN: '<X-OVH-TOKEN-VALUE>'
+
+
 #----------------------------- Logstash output --------------------------------
 output.logstash:
+  # Boolean flag to enable or disable the output module.
+  enabled: true
+
   # The Logstash hosts
   hosts: ["<your_cluster>.logs.ovh.com:5044"]
 
+  # Enable SSL support. SSL is automatically enabled if any SSL setting is set.
   ssl.enabled: true
 
 ```
 
-Enable filebeat MySQL support with following command:
+Do not forget to modify **<X-OVH-TOKEN-VALUE>** to the write token value of your log stream.
+
+Enable filebeat MySQL support with the following command:
 
 ```shell-session
 $ ldp@ubuntu:~$ sudo filebeat modules enable mysql
@@ -135,7 +150,9 @@ It will generate a new module file: **/etc/filebeat/modules.d/mysql.yml**, pleas
     var.paths: ["/var/log/mysql-slow.log"]
 ```
 
-Launch Filebeat and try to run some slow queries in your database. For this you can use this [database sample](https://github.com/datacharmer/test_db){.external} and use join and like queries.
+Launch Filebeat:
+
+Use:
 
 ```shell-session
 $ ldp@ubuntu:~$ sudo systemctl restart filebeat.service
@@ -145,6 +162,14 @@ or
 
 ```shell-session
 $ ldp@ubuntu:~$ sudo /etc/init.d/filebeat restart
+```
+
+depending on your distribution.
+
+Try to run some slow queries in your database. For this you can use this [database sample](https://github.com/datacharmer/test_db){.external} and use join and like queries. Alternatively, you can use the MySQL Sleep query:
+
+```
+SELECT SLEEP(2);
 ```
 
 ### Exploit your results in Graylog

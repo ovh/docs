@@ -1,6 +1,6 @@
 ---
 title: CLI - bonfire, querying graylog from a CLI
-updated: 2024-07-24
+updated: 2024-08-06
 ---
 
 ## Objective
@@ -53,7 +53,7 @@ port=443
 default_stream=<your_graylog_stream_id>
 ```
 
-You can define other named nodes and call them with the --node switch.
+You can define other named **nodes** and call them with the --node switch.
 
 ```conf
 [node:sadev]
@@ -65,7 +65,7 @@ port=443
 default_stream=<your_graylog_stream_id>
 ```
 
-You can now call named node:
+You can now call named node **sadev**:
 
 ```shell-session
 $ bonfire --node sadev -k
@@ -81,72 +81,81 @@ $ bonfire --node sadev -k
  WARNING [2015-07-27 12:11:44.66] libceph: mon0 10.99.176.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
 ```
 
+Note that the listing will contain only your logs.
+
 ### Stored queries
 
-You can define named queries and call them from the command line:
+You can define named queries and call them from the command line.
 
-**.bonfire.cfg**
+You can index some logs first by using the following curl command. Don't forget to replace **<YOUR-WRITE-TOKEN>** by the X-OVH-TOKEN of your stream and **<YOUR-CLUSTER>** by the adress of your cluster.
+
+
+```shell-session
+$ ubuntu@server:~$ echo -e '{"version":"1.1",  "_X-OVH-TOKEN":"<YOUR-WRITE-TOKEN>", "host": "example.org", "short_message": "A short message that helps you identify what is going on", "full_message": "Backtrace here\n\nmore stuff", "level": 1, "_user_id": 9001, "_some_info": "foo", "some_metric_num": 42.0 }\0' | \
+openssl s_client -quiet -no_ign_eof -connect <YOUR-CLUSTER>.logs.ovh.com:12202
+```
+
+Use this command multiple time to generate multiple logs.
+
+Add the following to your previous configuration file **.bonfire.cfg**:
 
 ```conf
-[query:libceph]
-query=program:kernel AND libceph
+[query:ldp]
+query=user_id:9001 AND some_metric_num:>40
 limit=20
 ```
 
-**Call**
+Here is how you call bonfire with the **ldp** query.
 
 ```shell-session
-$ bonfire --node sadev -@ 2015-07-20 -k :libceph
- WARNING [2015-07-27 12:13:54.87] libceph: mon0 10.99.176.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:14:04.89] libceph: mon0 10.99.176.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:14:14.90] libceph: mon0 10.99.176.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:14:24.92] libceph: mon1 10.99.180.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:14:34.93] libceph: mon1 10.99.180.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:14:44.95] libceph: mon0 10.99.176.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:14:54.97] libceph: mon0 10.99.176.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:15:04.98] libceph: mon1 10.99.180.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:15:15.00] libceph: mon1 10.99.180.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:15:25.01] libceph: mon0 10.99.176.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:15:35.03] libceph: mon1 10.99.180.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:15:45.04] libceph: mon2 10.99.184.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:15:55.06] libceph: mon0 10.99.176.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:16:05.08] libceph: mon1 10.99.180.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:16:15.09] libceph: mon2 10.99.184.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:16:25.11] libceph: mon0 10.99.176.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:16:35.12] libceph: mon2 10.99.184.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:16:45.14] libceph: mon1 10.99.180.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:16:55.16] libceph: mon0 10.99.176.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
- WARNING [2015-07-27 12:17:05.17] libceph: mon2 10.99.184.46:6789 socket closed (con state CONNECTING) # source:172.17.42.1; facility:gelf-rb; line:; module:
+$ bonfire :ldp
+Enter password for <USERNAME>@<YOUR-CLUSTER>.logs.ovh.com:443/api:
+1[2024-08-05 18:56:40.81] A short message that helps you identify what is going on # source:example.org; facility:; line:; module:
+1[2024-08-05 18:56:42.30] A short message that helps you identify what is going on # source:example.org; facility:; line:; module:
+1[2024-08-05 18:56:42.69] A short message that helps you identify what is going on # source:example.org; facility:; line:; module:
+1[2024-08-05 18:56:43.62] A short message that helps you identify what is going on # source:example.org; facility:; line:; module:
+1[2024-08-05 18:56:44.69] A short message that helps you identify what is going on # source:example.org; facility:; line:; module:
+1[2024-08-05 18:56:44.67] A short message that helps you identify what is going on # source:example.org; facility:; line:; module:
+1[2024-08-05 18:56:45.70] A short message that helps you identify what is going on # source:example.org; facility:; line:; module:
 ```
 
 ### Parametric queries
 
-You can also define queries with parameters and define this parameter from the command line. For example if you want to use a parametric query **uuid** for a field named **container_uuid**, you can do:
+You can also define queries with parameters and define this parameter from the command line.
 
+You can index some logs first by using the following curl command. Don't forget to replace **<YOUR-WRITE-TOKEN>** by the X-OVH-TOKEN of your stream and **<YOUR-CLUSTER>** by the adress of your cluster.
 
-**.bonfire.cfg**
+```shell-session
+$ ubuntu@server:~$ echo -e '{"version":"1.1",  "_X-OVH-TOKEN":"<YOUR-WRITE-TOKEN>", "host": "example.org", "short_message": "A short message that helps you identify what is going on", "full_message": "Backtrace here\n\nmore stuff", "level": 1, "_user_id": 9001, "_some_info": "foo", "some_metric_num": 42.0 }\0' | \
+openssl s_client -quiet -no_ign_eof -connect <YOUR-CLUSTER>.logs.ovh.com:12202
+```
+
+Use this command multiple time to generate multiple logs.
+
+If you want to use a parametric query **user_id** for a field named **user_id**, you can use the following form for your query in your **.bonfire.cfg**:
+
 
 ```conf
-[query:containerlogs]
-query=_exists_:containerlog_message AND container_uuid:"${uuid}"
-fields=container_uuid,containerlog_message
-limit=10
+[query:user_id]
+query=user_id:"${user_id}"
+fields=short_message,user_id
 ```
 
 **Call**
 
 ```shell-session
-$ bonfire --node sadev -k -x "uuid=08bce56b-9e85-4daa-9c8d-5b39c0d75d69" :containerlogs
- INFO    [2015-07-27 12:22:38.60] container_uuid:08bce56b-9e85-4daa-9c8d-5b39c0d75d69; containerlog_message:2015-07-27 10:22:36 URL:http://proof.ovh.net/ [2272/2272] -> "/dev/null" [1]
- INFO    [2015-07-27 12:22:38.61] container_uuid:08bce56b-9e85-4daa-9c8d-5b39c0d75d69; containerlog_message:nameserver   213.186.33.99
- INFO    [2015-07-27 12:22:38.61] container_uuid:08bce56b-9e85-4daa-9c8d-5b39c0d75d69; containerlog_message:search   app.preprod.containers-ovh.io
- INFO    [2015-07-27 12:22:38.61] container_uuid:08bce56b-9e85-4daa-9c8d-5b39c0d75d69; containerlog_message:bash: dig: command not found
- INFO    [2015-07-27 12:22:38.62] container_uuid:08bce56b-9e85-4daa-9c8d-5b39c0d75d69; containerlog_message:2015-07-27 10:22:37 URL:http://proof.ovh.net/ [2272/2272] -> "/dev/null" [1]
- INFO    [2015-07-27 12:22:38.62] container_uuid:08bce56b-9e85-4daa-9c8d-5b39c0d75d69; containerlog_message:nameserver   213.186.33.99
- INFO    [2015-07-27 12:22:38.62] container_uuid:08bce56b-9e85-4daa-9c8d-5b39c0d75d69; containerlog_message:search   app.preprod.containers-ovh.io
- INFO    [2015-07-27 12:22:38.62] container_uuid:08bce56b-9e85-4daa-9c8d-5b39c0d75d69; containerlog_message:bash: dig: command not found
- INFO    [2015-07-27 12:22:38.63] container_uuid:08bce56b-9e85-4daa-9c8d-5b39c0d75d69; containerlog_message:2015-07-27 10:22:38 URL:http://proof.ovh.net/ [2272/2272] -> "/dev/null" [1]
- INFO    [2015-07-27 12:22:38.63] container_uuid:08bce56b-9e85-4daa-9c8d-5b39c0d75d69; containerlog_message:bash: dig: command not found
+$ bonfire :user_id -x user_id=9001
+Enter password for <USERNAME>@<YOUR-CLUSTER>.logs.ovh.com:443/api:
+1[2024-08-05 19:22:13.56] A short message that helps you identify what is going on # short_message:; user_id:9001
+1[2024-08-05 19:22:13.94] A short message that helps you identify what is going on # short_message:; user_id:9001
+1[2024-08-05 19:22:14.29] A short message that helps you identify what is going on # short_message:; user_id:9001
+1[2024-08-05 19:22:14.65] A short message that helps you identify what is going on # short_message:; user_id:9001
+1[2024-08-05 19:22:15.70] A short message that helps you identify what is going on # short_message:; user_id:9001
+1[2024-08-05 19:22:16.29] A short message that helps you identify what is going on # short_message:; user_id:9001
+1[2024-08-05 19:22:16.74] A short message that helps you identify what is going on # short_message:; user_id:9001
+1[2024-08-05 19:22:17.12] A short message that helps you identify what is going on # short_message:; user_id:9001
+1[2024-08-05 19:22:17.56] A short message that helps you identify what is going on # short_message:; user_id:9001
+1[2024-08-05 19:22:17.93] A short message that helps you identify what is going on # short_message:; user_id:9001
 ```
 
 ## Go further
