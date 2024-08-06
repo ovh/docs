@@ -922,6 +922,7 @@
                 + [Managed Rancher Service - Backing up and Restore a Kubernetes cluster](public_cloud/containers_orchestration/managed_rancher_service/backup-restore-etcd-s3)
                 + [Tutorial - How to use Rancher CLI](public_cloud/containers_orchestration/managed_rancher_service/using-rancher-cli)
                 + [Managed Rancher Service - Editing the configuration of a Kubernetes cluster](public_cloud/containers_orchestration/managed_rancher_service/edit-config-kubernetes-cluster)
+                + [Managed Rancher Service - Deploying a monitoring stack (Prometheus & Grafana) in a Kubernetes cluster](public_cloud/containers_orchestration/managed_rancher_service/deploy-monitoring-prometheus-grafana-metrics)
             + [Creating or importing a Kubernetes cluster](public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes)
                 + [Managed Rancher Service - Importing an existing Kubernetes cluster](public_cloud/containers_orchestration/managed_rancher_service/import-existing-kubernetes)
                 + [Managed Rancher Service - Creating a Managed Kubernetes Service (MKS) cluster](public_cloud/containers_orchestration/managed_rancher_service/creating-mks-kubernetes-cluster)
