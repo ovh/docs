@@ -34,6 +34,11 @@ In this guide we will explore how to create a RKE2 or K3s Kubernetes cluster usi
 TODO: xxxx
 
 
+
+
+### Create 
+
+
 ### Creating a Kubernetes cluster with existing nodes 
 
 Log in your Managed Rancher Service UI.
@@ -45,6 +50,14 @@ Click on `Create`{.action} button.
 ![OVHcloud Managed Rancher Service Create Kubernetes PCI](images/rancher-create-custom.png){.thumbnail}
 
 Click on the **Custom** driver 
+
+Fill a cluster name (`custom-kube-cluster` for example).
+
+In the Kubernetes version list, choose the latest version of the wanted OS. You can choose between K3s and RKE2. For production needs we recommend RKE2 instead.
+
+TODO: print screen a copier/coller ici
+
+Click on the `Create`{.action} button.
 
 TODO: xxx
 
