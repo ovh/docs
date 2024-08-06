@@ -1,7 +1,7 @@
 ---
 title: High Grade Dedicated Servers - Upgrading your SSD SAS Western Digital SS530 firmware (EN)
 excerpt: Learn how to upgrade your SSD SAS Western Digital SS530 firmware for Linux, ESXi and Windows Dedicated Servers
-updated: 2024-07-29
+updated: 2024-08-06
 ---
 
 ## Objective
@@ -24,10 +24,8 @@ Disk Part Number:
 ## Requirements
 
 - A bare metal server with SSD SAS Western Digital SS530, from the following:
-
     - High Grade HCI
     - mHG/HG/BHG 2019
-
 
 ## Instructions
 
@@ -666,6 +664,6 @@ Firmware Revision = B969
 
 ## Go further <a name="gofurther"></a>
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our user community on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
