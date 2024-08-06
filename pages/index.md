@@ -1071,6 +1071,7 @@
             + [Prefect - Tutorial - Emails notification with blocks and automations](public_cloud/integrations/prefect_tuto_02_block_automation)
             + [Prefect - Tutorial - AI pipeline with training job](public_cloud/integrations/prefect_tuto_03_ai_pipeline)
     + [Data Platform](products/public-cloud-data-platform)
+        + [Data Platform 10 min video demo](public_cloud/data_platform/general-data-platform-video-demo)
         + [Data Platform documentation](public_cloud/data_platform/general-what_is_the_data_platform)
         + [Sign-up to Data Platform](public_cloud/data_platform/general-signin_signup)
 + Web Cloud
