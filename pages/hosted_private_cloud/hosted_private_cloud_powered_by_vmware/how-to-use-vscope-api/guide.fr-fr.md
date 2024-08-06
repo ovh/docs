@@ -1,7 +1,7 @@
 ---
 title: 'Comment utiliser l’API de vScope'
 excerpt: 'L’API vScope vous permet d’utiliser les données de monitoring dans vos applications'
-updated: 2020-06-29
+updated: 2024-08-06
 ---
 
 ## Objectif
@@ -54,41 +54,12 @@ L'utilisation de l'API se fait via ces trois appels APIv6 :
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
 > 
 
-#### Machine virtuelles
+#### Machines virtuelles
 
 > [!api]
 > 
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
-
-### Collecter les données historiques (Graphs)
-
-Pour collecter et utiliser les données historiques (Graphs), nous utilisons le produit **Metrics Data Platforms**.
-
-Via les protocoles Opentsdb ou WARP10, vous allez pouvoir récupérer vos données sous forme de points. Vous pourrez exploiter ces points via votre application ou directement les afficher selon le rendu souhaité.
-
-Cet article couvrira l'utilisation du protocole Opentsdb pour un affichage brut des données (pas de rendu graphique).
-
-Pour pouvoir utiliser **Metrics Data Platforms**, vous aurez besoin d'obtenir un token de lecture. Avec la nouvelle version du vScope, chaque utilisateur de l'infrastructure possède un token de lecture. 
-
-Pour l'utilisateur souhaité, utilisez l'appel APIv6 suivant pour récupérer le token de lecture :
-
-> [!api]
-> 
-> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
-> 
-
-Votre token se trouve dans le champ **token** du résultat.
-
-```json
-{
-    "warpEndpoint": "https://warp10.gra1-ovh.metrics.ovh.net",
-    "token": "XXXXXXXXXXXX_XXXXXXXXXXXZZZZZZZZZZZ_YYYYYYYYYYYYYY-XXXXXXXXX",
-    "opentsdbEndpoint": "https://opentsdb.gra1-ovh.metrics.ovh.net"
-}
-```
-
-Pour chaque type de composant, une liste de métriques est disponible et nécessite un nombre de paramètres (aussi appelé labels) très précis.
 
 #### Filers
 
