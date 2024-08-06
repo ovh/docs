@@ -229,4 +229,4 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 
 [Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit){.external}.
 
-Dołącz do [grona naszych użytkowników](/links/community)
+Dołącz do [grona naszych użytkowników](/links/community).
