@@ -46,7 +46,7 @@ details[open]>summary::before {
 - [Introduction - Listes des endpoints KMS OVHcloud](#introduction)
 - [Étape 1 - Commande d'un KMS OVHcloud (obligatoire)](#commande-okms)
 - [Étape 2 - Activation du KMS OVHcloud (obligatoire)](#activation-okms)
-- [Étape 3 - Ajout du KMS à vSphere et validation des échanges avec OKMS (obligatoire)](#ajout-okms)
+- [Étape 3 - Configuration de OKMS avec vSphere (obligatoire)](#ajout-okms)
 - [Étape 4 - Création d'une politique IAM (obligatoire)](#iam-creation)
 - [Étape 5 - Création d'une stratégie de stockage VM (obligatoire)](#politique-stockage)
 - [Étape 6 - Activation du chiffrement sur une VM (obligatoire)](#activation-chiffrement)
@@ -357,6 +357,7 @@ Pour mettre à jour votre KMS avec un KMS OVHcloud :
 >
 > - `serviceName` : Renseignez le nom de votre vSphere managé. Exemple : pcc-XX-XX-XX-XX.
 > - `kmsId` : Saisissez l'ID de votre serveur OKMS. (Exemple : 350)
+>
 
 Retour :
 
@@ -379,60 +380,62 @@ Attendez (statut : updating) que l'ouverture des flux s'effectue et que le statu
 
 ///
 
-### Étape 3 - Ajout du KMS à vSphere et validation des échanges avec OKMS  (obligatoire) <a name="ajout-okms"></a>
+### Étape 3 - Configuration de OKMS avec vSphere (obligatoire) <a name="ajout-okms"></a>
 
 /// details | Comment ajouter le KMS OVHcloud dans votre vSphere managé OVHcloud ?
 
-#### Via l'espace client OVHcloud
+Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere managé OVHcloud. Il ne vous reste plus qu'à configurer l'import au sein de vSphere et installer la relation de confiance entre vCenter et OKMS.
 
-![Manager HPC General Information Web Interface](images/manager_hpc_vsphere.png){.thumbnail}
-
-##### 1. Ajouter un fournisseur de clé KMS
-
-Pour que vCenter puisse truster votre serveur KMS OVHcloud, nous avons besoin d'accéder à l'interface web de votre vSphere managé HPC VMware on OVHcloud.
-
-Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Hosted Private Cloud`{.action}. Dans la colonne de gauche, cliquez sur `VMware`{.action} et sélectionnez le datacentre concerné.
-
-Sur la page qui s'affiche et dans l'encadré `Informations générales`, descendez jusqu'à retrouver la mention `Interfaces de gestion`{.action}, puis cliquez en dessous sur `Interface web`{.action}.
-
-Sur la nouvelle page qui apparaît, cliquez sur le carré intitulé `vSphere HTML Client`{.action}.
-
-![Manager Web Interface](images/manager_web_interface_pcc.png){.thumbnail}
-
-Vous êtes désormais sur la page de login ou d'accueil de votre vSphere managé. L'URL en haut de votre navigateur doit ressembler à ceci :
-
-- `<https://pcc-x.x.x.x.ovh.de/ui/>`
-
-Connectez-vous avec un **utilisateur local** ou avec **un utilisateur IAM** selon les droits que vous avez mis en place au sein de votre [espace client OVHcloud](/links/manager) et de votre vSphere managé HPC on OVHcloud.
-
-Vous êtes maintenant connecté au sein de votre vSphere managé on OVHcloud.
-
-Pour accéder à la gestion des fournisseurs de clés depuis vSphere, cliquez sur : `Configurer`{.action} depuis votre **pcc-XXX-XXX-XXX-XXX**. Rendez-vous dans la section `Sécurité`{.action}, puis cliquez sur `Fournisseurs de clés`{.action}. Sur la page qui apparaît, cliquez sur le bouton `Ajouter`{.action}, puis sur `Ajouter un fournisseur de clé standard`{.action}.
-
-![KMS Key Provider](images/kms_key_provider.png){.thumbnail}
-
-Une fois l'option sélectionnée pour ajouter un Key Provider, une fenêtre ou un formulaire s'ouvre pour saisir les détails du **Key Provider** que vous souhaitez ajouter. Cela peut inclure des informations telles que l'adresse IP ou le nom de domaine (DNS) du serveur OKMS, mais aussi le port utilisé (5696).
-
-Les noms de domaine et le port (KMIP) ne changent pas.
-
-![KMS Key Provider](images/okms_vsphere_add_standard_key_provider.png){.thumbnail}
-
-Vous y retrouvez les champs suivants :
-
-| Champ       | Input                                                   | Description                                                                                   |
-|-------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| **Name**    |                                                         | - Permet de nommer votre cluster au sein de vCenter.                                          |
-| **KMS**     |                                                         | - Nom qui apparaitra au sein de Vsphere pour votre OKMS.                                      |
-| **Address** | eu-west-rbx.okms.ovh.net <br/> eu-west-sbg.okms.ovh.net | - **Endpoint** du serveur OKMS. Privilégiez le nom de domaine plutôt que l'IP (dans vSphere). |
-| **Port**    | 5696                                                    | - Port utilisé par KMIP (ne change pas).                                                      |
-
-Attendez que vSphere établisse la connexion avec le Key Provider que vous avez ajouté. Vous devriez voir une indication ou un message confirmant que la connexion a été établie avec succès.
-
-Patientez le temps que vSphere établisse la connexion avec le fournisseur de clés que vous venez d'ajouter. Vous devriez voir apparaitre un message confirmant que la connexion a été établie avec succès.
-
-> [!tabs] 
+> [!tabs]
 >
-> **Étape 1**
+> **Étape 1** 
+>> 
+>> **Ajout de OKMS à vSphere** :
+>>
+>> Pour que vCenter puisse truster votre serveur KMS OVHcloud, nous avons besoin d'accéder à l'interface web de votre vSphere managé HPC VMware on OVHcloud.
+>>
+>> Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Hosted Private Cloud`{.action}. Dans la colonne de gauche, cliquez sur `VMware`{.action} et sélectionnez le datacentre concerné.
+>>
+>> ![Manager HPC General Information Web Interface](images/manager_hpc_vsphere.png){.thumbnail}
+>>
+>> Sur la page qui s'affiche et dans l'encadré `Informations générales`, descendez jusqu'à retrouver la mention `Interfaces de gestion`{.action}, puis cliquez en dessous sur `Interface web`{.action}.
+>> 
+>> Sur la nouvelle page qui apparaît, cliquez sur le carré intitulé `vSphere HTML Client`{.action}.
+>>
+>> ![Manager Web Interface](images/manager_web_interface_pcc.png){.thumbnail}
+>>
+>> Vous êtes désormais sur la page de login ou d'accueil de votre vSphere managé. L'URL en haut de votre navigateur doit ressembler à ceci :
+>>
+>> - `<https://pcc-x.x.x.x.ovh.de/ui/>`
+>> 
+>> Connectez-vous avec un **utilisateur local** ou avec **un utilisateur IAM** selon les droits que vous avez mis en place au sein de votre [espace client OVHcloud](/links/manager) et de votre vSphere managé HPC on OVHcloud.
+>>
+>> Vous êtes maintenant connecté au sein de votre vSphere managé on OVHcloud.
+>> 
+>> Pour accéder à la gestion des fournisseurs de clés depuis vSphere, cliquez sur : `Configurer`{.action} depuis votre **pcc-XXX-XXX-XXX-XXX**. Rendez-vous dans la section `Sécurité`{.action}, puis cliquez sur `Fournisseurs de clés`{.action}. Sur la page qui apparaît, cliquez sur le bouton `Ajouter`{.action}, puis sur `Ajouter un fournisseur de clé standard`{.action}.
+>> 
+>> ![KMS Key Provider](images/kms_key_provider.png){.thumbnail}
+>>
+>> Une fois l'option sélectionnée pour ajouter un Key Provider, une fenêtre ou un formulaire s'ouvre pour saisir les détails du **Key Provider** que vous souhaitez ajouter. Cela peut inclure des informations telles que l'adresse IP ou le nom de domaine (DNS) du serveur OKMS, mais aussi le port utilisé (5696).
+>> 
+>> Les noms de domaine et le port (KMIP) ne changent pas.
+>>
+>> ![KMS Key Provider](images/okms_vsphere_add_standard_key_provider.png){.thumbnail}
+>>
+>> Vous y retrouvez les champs suivants :
+>>
+>> | Champ       | Input                                                   | Description                                                                                   |
+>> |-------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+>> | **Name**    |                                                         | - Permet de nommer votre cluster au sein de vCenter.                                          |
+>> | **KMS**     |                                                         | - Nom qui apparaitra au sein de Vsphere pour votre OKMS.                                      |
+>> | **Address** | eu-west-rbx.okms.ovh.net <br/> eu-west-sbg.okms.ovh.net | - **Endpoint** du serveur OKMS. Privilégiez le nom de domaine plutôt que l'IP (dans vSphere). |
+>> | **Port**    | 5696                                                    | - Port utilisé par KMIP (ne change pas).                                                      |
+>>
+>> Attendez que vSphere établisse la connexion avec le Key Provider que vous avez ajouté. Vous devriez voir une indication ou un message confirmant que la connexion a été établie avec succès.
+>>
+>> Patientez le temps que vSphere établisse la connexion avec le fournisseur de clés que vous venez d'ajouter. Vous devriez voir apparaitre un message confirmant que la connexion a été établie avec succès.
+>>
+> **Étape 2**
 >>
 >> **vCenter Trust KMS - Faire que vCenter approuve KMS**
 >>
@@ -484,7 +487,7 @@ Patientez le temps que vSphere établisse la connexion avec le fournisseur de cl
 >>
 >> Attendez un petit moment et rafraichissez la page web vSphere comme expliqué auparavant. 
 > 
-> **Étape 2**
+> **Étape 3**
 >
 >> **KMS approuve vCenter - Make KMS Trust vCenter**
 >>
