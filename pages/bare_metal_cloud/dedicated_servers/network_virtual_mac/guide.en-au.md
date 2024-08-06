@@ -18,9 +18,11 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 - Your server must support virtual MACs. To determine this, consult [this guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-au/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-au/compare/) for more information.
+> This feature will soon be available for all High Grade, Scale and Advance servers from December 2024.
+> 
 
 > [!primary]
 > If you are not familiar with using the OVHcloud API, please refer to our guide on [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).

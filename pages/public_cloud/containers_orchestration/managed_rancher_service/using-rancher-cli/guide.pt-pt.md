@@ -12,7 +12,7 @@ updated: 2024-08-05
 
 ## Objective
 
-Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. In this tutorial we will discover that in addition to the Rancher UI you can handle your Kubernetes clusters through the Ranhcer CLI.
+Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. In this tutorial we will discover that in addition to the Rancher UI you can handle your Kubernetes clusters through the Rancher CLI.
 
 ## Requirements
 
