@@ -1,7 +1,7 @@
 ---
 title: Network - How to share a private network between 2 Public Cloud projects
 excerpt: Find out how to share a private network between two OVHcloud Public Cloud projects
-updated: 2024-06-20
+updated: 2024-07-31
 ---
 
 ## Objective
@@ -26,6 +26,7 @@ openstack project list -c ID -f value
 ```
 
 Example output:
+
 ```sh
 abc123def456ghi789jkl0mnopqr1234
 ```
@@ -47,7 +48,6 @@ Example output:
 | name                      | shared_private_network               |
 | project_id                | abc123def456ghi789jkl0mnopqr1234     |
 +---------------------------+--------------------------------------+
-
 ```
 
 #### 3. Create two subnets, one for instances on our project and one shared with another project
@@ -71,7 +71,6 @@ Example output:
 | network_id           | 3d2ee28e-88a9-46ff-b768-3bf6734b8742 |
 | project_id           | abc123def456ghi789jkl0mnopqr1234     |
 +----------------------+--------------------------------------+
-
 ```
 
 **For project 2 (shared):**
@@ -93,7 +92,6 @@ Example output:
 | network_id           | 3d2ee28e-88a9-46ff-b768-3bf6734b8742 |
 | project_id           | abc123def456ghi789jkl0mnopqr1234     |
 +----------------------+--------------------------------------+
-
 ```
 
 #### 4. Share this network (and associated subnets) with the second project
@@ -101,7 +99,6 @@ Example output:
 ```sh
 NETWORK_ID=$(openstack network list --name shared_private_network -c ID -f value)
 openstack network rbac create --target-project def456ghi789jkl0mnopqr1234 --action access_as_shared --type network ${NETWORK_ID}
-
 ```
 
 Example output:
@@ -116,7 +113,6 @@ Example output:
 | target_project_id | def456ghi789jkl0mnopqr1234           |
 | type              | network                              |
 +-------------------+--------------------------------------+
-
 ```
 
 ####  5. Create a port on the local subnet and an instance associated with it
@@ -136,7 +132,6 @@ Example output:
 | network_id              | 3d2ee28e-88a9-46ff-b768-3bf6734b8742 |
 | fixed_ips               | ip_address='10.0.2.185', subnet_id='aa5d399a-6acf-4328-a7a8-e962fa16b792' |
 +-------------------------+--------------------------------------+
-
 ```
 
 ```sh
@@ -180,15 +175,14 @@ Example output:
 | network_id              | 3d2ee28e-88a9-46ff-b768-3bf6734b8742 |
 | fixed_ips               | ip_address='10.0.3.12', subnet_id='441d0d65-2e1b-413c-ad28-2876f1c14025' |
 +-------------------------+--------------------------------------+
-
 ```
 
 #### 4. Create an instance on the shared network
 
 ```sh
 openstack server create --port f6446f46-ce57-47c4-b3bc-42fa28e7d4ff --security-group default --key-name my_key --flavor d2-2 --image "Ubuntu 22.04" pong_server
-
 ```
+
 Example output:
 
 ```sh
@@ -199,7 +193,6 @@ Example output:
 | name                                 | pong_server                                         |
 | status                               | BUILD                                               |
 +--------------------------------------+-----------------------------------------------------+
-
 ```
 
 ### Verify connectivity
@@ -208,14 +201,12 @@ Example output:
 
 ```sh
 ssh -i ~/.ssh/id_rsa ubuntu@<floating_ip>
-
 ```
 
 #### 2. Ping the second instance from the first instance
 
 ```sh
 ping -c1 10.0.3.12
-
 ```
 
 Example output:
@@ -227,7 +218,6 @@ PING 10.0.3.12 (10.0.3.12) 56(84) bytes of data.
 --- 10.0.3.12 ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 0.292/0.292/0.292/0.000 ms
-
 ```
  
 ## Go further
