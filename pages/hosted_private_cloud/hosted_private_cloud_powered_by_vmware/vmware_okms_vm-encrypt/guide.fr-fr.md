@@ -1,7 +1,7 @@
 ---
 title: "OKMS - Chiffrement de machines virtuelles"
 excerpt: "Découvrez comment protéger votre confidentialité et activer le chiffrement de vos machines virtuelles vSphere managé on OVHcloud avec la solution OKMS"
-updated: 2024-08-05
+updated: 2024-08-06
 ---
 <style>
 details>summary {
@@ -38,7 +38,7 @@ details[open]>summary::before {
 - Avoir une clef de chiffrement RSA ou ECDSA (sans CSR) et/ou un CSR (avec CSR).
 - Disposer du certificat public TLS du serveur OKMS afin de le faire signer par l'OKMS.
 
-## En pratique
+## En pratique <a name="sommaire"></a>
 
 **Sommaire des étapes du guide** :
 
