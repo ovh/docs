@@ -113,7 +113,7 @@ For each of the machine pools, you have to:
 - Define machine count (3 for example for the first machine pool).
 - Select roles (check `etcd` and `Control Plane` for the first machine pool)/
 - Choose the region (`GRA9` for example for the first machine pool). If you want to check the availability of specific products that you plan to use alongside Kubernetes, you can refer to the [Availability of Public Cloud Product](/links/public-cloud/regions-pci) page.
-- Choose the flavor (`b2-7` for example for ). You can refer to the [OVHcloud Flavor list](https://www.ovhcloud.com/en-au/public-cloud/prices/).
+- Choose the flavor (`b2-7` for example). You can refer to the [OVHcloud Flavor list](https://www.ovhcloud.com/en-au/public-cloud/prices/).
 - Choose the image for the Operating System (OS) used for your machines/nodes. Please refer to [Rancher Operating Systems and Container Runtime Requirements](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters).
 - Choose a Key Pair (optional). It's the SSH Key Pair that will be used to access your nodes. Please refer to this guide on [how to create a SSH KeyPair and add it to your Public Cloud project](/pages/public_cloud/compute/public-cloud-first-steps). If you leave this field empty, a new keypair will be generated automatically.
 - Choose the Security Group that will be applied to created instances. You can leave the field empty.
