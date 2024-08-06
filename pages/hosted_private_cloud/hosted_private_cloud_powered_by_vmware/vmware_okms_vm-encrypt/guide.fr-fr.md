@@ -1,6 +1,6 @@
 ---
-title: "OKMS - Chiffrement de machines virtuelles"
-excerpt: "Découvrez comment protéger votre confidentialité et activer le chiffrement de vos machines virtuelles vSphere managé on OVHcloud avec la solution OKMS"
+title: "KMS - Chiffrement de VM avec un KMS OVHcloud (OKMS)"
+excerpt: "Découvrez comment activer le chiffrement de vos VM au sein de votre vSphere managé Hosted Private Cloud avec la solution KMS OVHcloud (OKMS)"
 updated: 2024-08-06
 ---
 <style>
@@ -24,7 +24,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-**Découvrez comment commander, activer et configurer un KMS OVHcloud (OKMS) au sein de vSphere pour gérer la politique de chiffrement de vos machines virtuelles Hosted Private Cloud VMware on OVHcloud.**
+**Découvrez comment commander, activer et configurer un KMS OVHcloud (OKMS) au sein vSphere pour gérer la politique de chiffrement de vos VM.**
 
 ## Prérequis
 
@@ -57,8 +57,6 @@ details[open]>summary::before {
 /// details | Introduction, liste des URLs et des appels API OKMS disponibles.
 
 Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted Private Cloud VMware on OVHcloud, consultez le guide « [Intégration d'un KMS pour VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_vmware_overall) ».
-
-Nous allons, dans ce guide, configurer le chiffrement de machines virtuelles avec le KMS OVHcloud (OKMS) au sein d'un environnement Hosted Private Cloud VMware on OVHcloud.
 
 OVHcloud KMS (OKMS) est un service centralisé de chiffrement entièrement managé pour sécuriser vos données dans vos applications et vos services OVHcloud.
 
@@ -219,11 +217,11 @@ Vous disposez désormais d'un serveur KMS OVHcloud à mettre en place au sein de
 
 ### Étape 2 - Activation du KMS OVHcloud (obligatoire) <a name="activation-okms"></a>
 
-/// details | Comment activer le KMS OVHcloud (OKMS) avec HPC vSphere managé on OVHcloud ?
+/// details | Comment activer le KMS OVHcloud (OKMS) en ouvrant les flux au sein de votre HPC vSphere managé on OVHcloud ?
 
 Pour valider le KMS OVHcloud (OKMS) avec Hosted Private Cloud VMware on OVHcloud, créez une règle d'ouverture de flux entrant au sein de la gateway OVHcloud pour votre HPC VMware on OVHcloud.
 
-Cette étape doit être réalisée **immédiatement** après commande de votre KMS (OVHcloud) **et avant** l'ajout du KMS à vSphere.
+Cette étape doit être réalisée **immédiatement** après commande de votre KMS (OVHcloud) **et avant** l'ajout du KMS à l'interface web vSphere managé.
 
 #### Via l'espace client OVHcloud
 
