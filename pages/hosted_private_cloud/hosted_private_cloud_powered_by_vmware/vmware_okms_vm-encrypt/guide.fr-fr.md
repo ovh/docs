@@ -515,9 +515,9 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> Sélectionnez `Nouvelle demande de signature de certificat (CSR)`{.action}, puis copiez ou téléchargez le CSR ci-dessous. Mettez-le à disposition du KMS OVHcloud depuis l'API v2 /okms et demandez à ce dernier de signer le certificat.
 >>
->> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr.png){.thumbnail}
+>> ![Trust KMS server with CSR](images/kms_trust_vcenter_csr.png){.thumbnail}
 >>
->> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr_2.png){.thumbnail}
+>> ![Trust KMS server with CSR](images/kms_trust_vcenter_csr_2.png){.thumbnail}
 >>
 >> Copiez votre CSR dans un fichier `csr.pem`{.action} afin de pouvoir le faire signer par le KMS OVHcloud.
 >>
@@ -527,9 +527,9 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> awk '{printf "%s\\n", $0}' csr.pem
 >> ```
 >>
->> Collez le retour de cette commande dans l'appel API plus haut, pour faire signer votre CSR auprès du KMS.
+>> Collez le retour de cette commande dans l'appel API plus bas, pour faire signer votre CSR auprès du KMS OVHcloud.
 >>
->> La demande de signature ce fait avec l'appel API suivant :
+>> La demande de signature du CSR ce fait avec l'appel API POST suivant :
 >>
 >> > [!api]
 >> >
@@ -554,16 +554,9 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> > } 
 >> > ```
 >>
->> L'approbation ne sera pas établie une fois que vous aurez terminé cet Assistant. Rendez-vous dans vSphere KMS pour télécharger le CSR, faites ensuite signer le certificat par le KMS OVHcloud (depuis l'API v2) et re-uploadez le dans vSphere pour établir la relation de confiance globale.
+>> Un identifiant ("credentialId") de signature vous sera donné. Il vous vos le récupérer avec le okmsId afin de lancer le GET (voir ci-dessous) et récupérer le CSR signé. Il ne vous restaera plus qu'a l'uploader dans vSphere.
 >>
->> Attention votre CSR doit être compatible en format json afin de pouvoir l'utiliser dans la console web API v2 OVHcloud.
->>
->> 
->> Il ne vous reste plus qu'à uploader le CSR signé.
->>
->> Pour signer le CSR, cliquez sur `Établir la relation de confiance`{.action}, puis sur `Upload Signed CSR Certificate`{.action}.
->>
->> ![Trust KMS server with CSR](images/okms_vsphere_upload_signed_csr-optim-resize.png){.thumbnail}
+>> Pour signer le CSR, cliquez sur `Établir la relation de confiance`{.action}, puis sur `Télécharger le certificat CSR signé - Upload Signed CSR Certificate`{.action}.
 >>
 >> Copiez maintenant le CSR signé de l'appel API suivant :
 >>
@@ -584,6 +577,8 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> ```
 >>
 >> Copiez le retour de la commande et collez-le dans vSphere on OVHcloud.
+>>
+>> ![Trust KMS server with CSR](images/okms_vsphere_upload_signed_csr-optim-resize.png){.thumbnail}
 >>
 >> ![Trust KMS server with CSR](images/okms_vsphere_upload_signed_csr_2-optim-resize.png){.thumbnail}
 >>
