@@ -65,7 +65,7 @@ OVHcloud KMS (OKMS) est un service centralisé de chiffrement entièrement manag
 
 > [!Warning]
 >
-> Ces éléments sont susceptibles d'évoluer dans le temps. Nous les énumérons ici afin de faciliter votre compréhension et de vous permettre d'avoir une vision globale des paramètres au sein du HPC.
+> Ces éléments sont susceptibles d'évoluer dans le temps. Nous les énumérons ici afin de faciliter votre compréhension et de vous permettre d'avoir une vision globale des paramètres.
 >
 
 | **Type**    | **URL**                          | **Région**          | **OKMS Région enum** | **IP**         |
@@ -83,7 +83,7 @@ OVHcloud KMS (OKMS) est un service centralisé de chiffrement entièrement manag
 
 > [!Warning]
 >
-> Ces éléments sont susceptibles d'évoluer dans le temps. Nous les énumérons ici afin de faciliter votre compréhension et de vous permettre d'avoir une vision globale des paramètres au sein du HPC.
+> Ces éléments sont susceptibles d'évoluer dans le temps. Nous les énumérons ici afin de faciliter votre compréhension et de vous permettre d'avoir une vision globale des paramètres.
 >
 
 | **Methode**           | **API** | **Path**                                                                | **Commentaires**                                                |
