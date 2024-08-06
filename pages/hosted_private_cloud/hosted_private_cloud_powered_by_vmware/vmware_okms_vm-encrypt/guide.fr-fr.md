@@ -36,16 +36,17 @@ details[open]>summary::before {
   - [Intégration d'un KMS pour VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_vmware_overall).
   - [Premiers pas avec OVHcloud Key Management Service (KMS + IAM + vSphere)](/pages/manage_and_operate/kms/quick-start).
 - Avoir une clef de chiffrement RSA ou ECDSA (sans CSR) et/ou un CSR (avec CSR).
-- Disposer du certificat public TLS du serveur OKMS afin de le faire signer par l'OKMS.
+- Certificat public du fournisseur de gestion clés OVHcloud (OKMS).
+- Une demande de signature de certificat (CSR) généré par vSphere pour valider/truster l'import ainsi que les échanges entre le KMS OVHcloud et vCenter.
 
 ## En pratique <a name="sommaire"></a>
 
 **Sommaire des étapes du guide** :
 
-- [Introduction - Listing endpoints OKMS](#introduction)
+- [Introduction - Listes des endpoints KMS OVHcloud](#introduction)
 - [Étape 1 - Commande d'un KMS OVHcloud (obligatoire)](#commande-okms)
 - [Étape 2 - Activation du KMS OVHcloud (obligatoire)](#activation-okms)
-- [Étape 3 - Ajout du KMS à vSphere (obligatoire)](#ajout-okms)
+- [Étape 3 - Ajout du KMS à vSphere et validation des échanges avec OKMS (obligatoire)](#ajout-okms)
 - [Étape 4 - Création d'une politique IAM (obligatoire)](#iam-creation)
 - [Étape 5 - Création d'une stratégie de stockage VM (obligatoire)](#politique-stockage)
 - [Étape 6 - Activation du chiffrement sur une VM (obligatoire)](#activation-chiffrement)
@@ -378,7 +379,7 @@ Attendez (statut : updating) que l'ouverture des flux s'effectue et que le statu
 
 ///
 
-### Étape 3 - Ajout de l'OKMS à vSphere (obligatoire) <a name="ajout-okms"></a>
+### Étape 3 - Ajout du KMS à vSphere et validation des échanges avec OKMS  (obligatoire) <a name="ajout-okms"></a>
 
 /// details | Comment ajouter le KMS OVHcloud dans votre vSphere managé OVHcloud ?
 
@@ -429,193 +430,43 @@ Attendez que vSphere établisse la connexion avec le Key Provider que vous avez 
 
 Patientez le temps que vSphere établisse la connexion avec le fournisseur de clés que vous venez d'ajouter. Vous devriez voir apparaitre un message confirmant que la connexion a été établie avec succès.
 
-> [!tabs]
-> 
->> **Approbation du serveur KMS par vCenter et inversement**
->>
->> Afin de communiquer avec votre KMS, vous devez créer un certificat d'accès. Celui-ci sera utilisé pour l'ensemble des interactions avec le KMS OVHcloud et vSphere, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec ceux-ci.
->>
->> Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
->> 
->> Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre propre clé de sécurité privée via une **"Demande de signature de certificat (CSR)"**.
->> 
-> **Sans CSR (non recommandé)** :
->>
->> Vous pouvez créer un certificat d'accès et une clé privée avec l'appel API suivant : 
->> 
->> - `Sans CSR`{.action}
->>
->> > [!api]
->> >
->> > @api {v2} /okms POST /okms/resource/{okmsId}/credential
->> >
->> >
->> > **Paramètres** :
->> >
->> > - `okmsId`: L'ID de votre KMS OVHcloud (OKMS).
->> > - `Avec/Sans CSR fourni` : Chaine de confiance entre OKMS et VCenter avec ou sans CSR.
->> >
->>
->> Il est nécessaire d'indiquer les informations suivantes :
->>
->> - `name` : Nom du certificat (obligatoire).
->> - `identityURNs` : Identité OVHcloud sous format d'URN qui sera fourni à IAM pour le calcul des droits d'accès (obligatoire).
->> - `description` : Description du certificat (optionnel).
->> - `validity` : Durée de validité du certificat en jours - 365 jours par défaut (optionnel).
->> 
->> **Voici un exemple de création de certificat** :
->>
->> ```Shell
->> {
->> "description": "My user reader credential",
->> "identityURNs": [
->> "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user" // L'utilisateur avec lequel vous vous connectez à vos ressources vSphere managé et avec lequel vous avez les droits sur les produits (HPC, OKMS) en questions.
->> "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group" // Si vous utilisez des groupes vous pouvez les ajouter ici. Le principe étant le même qu'avec un utilisateur au sein de l'écosysteme OVHcloud.
->> ],
->> "name": "my_reader", // Nom du reader.
->> "validity": 30 // Par defaut 365 jours.
->> }
->> ```
->>
->> L'API retourne ensuite l'état de création du certificat :
->>
->> ```Shell
->> {
->>  "id": "1bc7830b-9c8e-4b45-af51-00a3543ba16c",
->>  "name": "user",
->>  "description": "XXX",
->>  "identityURNs": [
->>    "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
->>    "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
->>  ],
->>  "status": "CREATING",
->>  "fromCSR": false,
->>  "privateKeyPEM": "-----BEGIN EC PRIVATE KEY-----\nXXcCAQEEIEs+RwZG0JLs5bmzxVxZtli15RLGU/cXXHtoVoOrwDzuoAoGCCqGSM49\nAwEHoUQDQgAExC+jRLpucMcNUcXXhxHNMA78EjrmmKnMgeEaRzAvX2dY4GVap5lU\nM76nD1WRnNvceYHZUOxGcPDCuXXKNV1/8A==\n-----END EC PRIVATE KEY-----\n",
->>  "createdAt": "2024-07-02T15:54:18.390593+02:00",
->>  "expiredAt": "2024-08-01T15:54:18.390591+02:00"
->> }
->> ```
->>
->> Copiez la valeur du champ (exemple ci-dessus) : `privateKeyPEM`{.action}, puis collez-la dans un fichier `domain.key`{.action}. Uniquement de `-----BEGIN EC YOUR_PRIVATE_KEY-----\n` à `\n-----END EC YOUR_PRIVATE_KEY-----`{.action}.
->>
->> Enregistrez ce fichier afin de le réutiliser pour le **KMS trust vCenter** ultérieurement.
->>
->> Copiez également l'ID généré et lancer l'appel API suivant avec l'ID et l'okmsId :
->>
->> > [!Warning]
->> >
->> > La clé privée ne sera plus accessible par la suite. En cas de perte, vous devrez re-générer un certificat.
->> >
->>
->> > [!api]
->> >
->> > @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
->> >
->> >
->> > **Paramètres** :
->> >
->> > - `id` : ID généré par le **POST /okms/resource/{okmsId}/credential**. Exemple : 2bc7830b-9c8e-4b45-af51-00a3543ba16c.> - okmsId: L'id de votre KMS OVHcloud (Okms).
->> > - `okmsId` : ID de votre KMS OVHcloud (OKMS).
->> >
->>
->> L'API renvoie le certificat **"certificatePEM"** au format json :
->>
->> ```Shell
->> {
->> "id": "06ef14a0-7635-4f17-8748-accfadbd6203",
->> "name": "reader",
->> "description": "XXX",
->> "identityURNs": [
->> "urn:v1:labeu:identity:account:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user", // L'utilisateur OVHcloud avec lequel vous vous connectez à vSphere au sein de votre PCC, il doit être admin ou avoir Encryption management activé au sein du PCC pour chiffrer des VM.
->> "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group" // Le groupe OVHcloud avec lequel vous accédez à vos PCC, pour activer le chiffrement sur les VM vous devez être admin ou activer Encryption management.
->>  ],
->>  "status": "READY",
->>  "fromCSR": false,
->>  "certificatePEM": "-----BEGIN CERTIFICATE-----\nMXXBqTCCAU+gAwIBAgIQBu8UoHY1TxeHSKzPrb1iAzAKBggqhkjOPXXDAjAVMRMw\nEQYDVQQDEwpDQ01Vc2Vyc0NBMB4XDTI0MDcwMjEzNTQxOFoXDTI0MDgwMTEzNTQx\nOFowLzEtMCsGA1UEAxMkZTkwYzU4NDEtZjM5ZSXXOTgzLTg1OTYtNjJmZjBjNTM4\nYjZiMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExC+jRLpucMcNUc84hxHNMA78\nEjrmmKnMgeEaRzAvX2dY4GVap5lUM76nD1WRnNvceYHZUOxGcPDCu33KNV1/8KNn\nMGUwTgYDVR0RAQH/BEQwQqBABgorBgEEAYI3FAIDoDIMMG9rbXMuZG9tYWluOmU5\nMGM1ODQxLWYzOWUtNDk4My04NTk2LTYyZmYwYzUzOGI2YjATBgNVHSUEDDAKBggr\nBgEFBQcDAjAKBggqhkjOPQQDAgNIADBFAiBD9GOB4c+7IVQzlJBCP8TZ9O3M4pHS\nVJTyEYxld5eXYQIhAL/1fe5qGBZib4vlaPss6zgJoentyMUq+zTCMUn5wXcP\n-----END CERTIFICATE-----",
->>  "createdAt": "2024-07-02T15:54:18.390593+02:00",
->>  "expiredAt": "2024-08-01T15:54:18.390591+02:00"
->> }
->> ```
->>
->> Copiez la valeur du champ `"certificatePEM"`{.action} `"-----BEGIN CERTIFICATE-----\nYOUR_CERTIFICATE\n-----END CERTIFICATE-----"`{.action}, puis collez-la (printf) dans un fichier `client.pem`{.action}.
->>
+> [!tabs] 
 >
-> **Avec CSR (recommandé)** :
-> 
+> > **Étape 1** :
 >>
->> Suivez les mêmes étapes que ci-dessus, mais avec le champ `Avec CSR fourni`{.action} de l'appel API suivant :
+>> **vCenter Trust KMS**
 >>
->> > [!api]
+>> > [!primary]
 >> >
->> > @api {v2} /okms POST /okms/resource/{okmsId}/credential
->> >
->> >
->> > **Paramètres** :
->> >
->> > - `okmsId`: ID de votre KMS OVHcloud (OKMS).
+>> > Si, en cliquant sur `Approuver KMS - TRUST KMS`, vCenter a bien téléchargé le certificat public, l'étape suivante d'upload manuel est optionnelle.
 >> >
 >>
->> Exemple de l'input avec CSR formaté en json :
->>
->> ```Shell
->> {
->>  "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDzANBgNV\nBAcMBkxpbmRvbjEWMBQGA1UECgwNRGlnaUNlcnQgSW5jLjERMA8GA1UECwwIRGln\naUNlcnQxHTAbBgNVBAMMFGV4YW1wbGUuZGlnaWNlcnQuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8+To7d+2kPWeBv/orU3LVbJwDrSQbeKamCmo\nwp5bqDxIwV20zqRb7APUOKYoVEFFOEQs6T6gImnIolhbiH6m4zgZ/CPvWBOkZc+c\n1Po2EmvBz+AD5sBdT5kzGQA6NbWyZGldxRthNLOs1efOhdnWFuhI162qmcflgpiI\nWDuwq4C9f+YkeJhNn9dF5+owm8cOQmDrV8NNdiTqin8q3qYAHHJRW28glJUCZkTZ\nwIaSR6crBQ8TbYNE0dc+Caa3DOIkz1EOsHWzTx+n0zKfqcbgXi4DJx+C1bjptYPR\nBPZL8DAeWuA8ebudVT44yEp82G96/Ggcf7F33xMxe0yc+Xa6owIDAQABoAAwDQYJ\nKoZIhvcNAQEFBQADggEBAB0kcrFccSmFDmxox0Ne01UIqSsDqHgL+XmHTXJwre6D\nhJSZwbvEtOK0G3+dr4Fs11WuUNt5qcLsx5a8uk4G6AKHMzuhLsJ7XZjgmQXGECpY\nQ4mC3yT3ZoCGpIXbw+iP3lmEEXgaQL0Tx5LFl/okKbKYwIqNiyKWOMj7ZR/wxWg/\nZDGRs55xuoeLDJ/ZRFf9bI+IaCUd1YrfYcHIl3G87Av+r49YVwqRDT0VDV7uLgqn\n29XI1PpVUNCPQGn9p/eX6Qo7vpDaPybRtA2R7XLKjQaF9oXWeCUqy1hvJac9QFO2\n97Ob1alpHPoZ7mWiEuJwjBPii6a9M9G30nUo39lBi1w=\n-----END CERTIFICATE REQUEST-----",
->>  "description": "My reader credential",
->>  "identityURNs": [
->>	"urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
->>	"urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
->>  ],
->>  "name": "reader name",
->>  "validity": 365
->> }
->> ```
->>
->> Collez la valeur du champ `"csr"`{.action} : `"-----BEGIN CERTIFICATE REQUEST-----\nYOUR_CERTIFICATE\n-----END CERTIFICATE REQUEST-----"`{.action} récupérée de vSphere on OVHcloud.
->>
-> **Faire que vCenter approuve KMS**
->>
->> ![Trust KMS server with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms.png){.thumbnail}
->>
->> Cliquez sur `Approuver le KMS`{.action} pour approuver le KMS au sein de vCenter.
->>
->> En principe, vCenter télécharge automatiquement le certificat public KMS. S'il ne le fait pas, faites-le manuellement en cliquant sur `Établir une relation de confiannce` > vCenter approuve Kms > Télécharger le certificat KMS`{.action}.
+>> Effectivement, avant de générer votre CSR et/ou votre Certificat KMS, puis votre clé privée, vous devez verifier que vCenter a bien téléchargé le certificat public du serveur KMS OVHcloud.
 >> 
->> - `Établir une relation de confiannce > vCenter approuve Kms > Télécharger le vertificat KMS`{.action}.
->>
->> ![Upload KMS Cert](images/okms_vsphere_upload_kms_cert.png){.thumbnail}
+>> **Faire que vCenter approuve KMS**
 >>
 >> > [!primary]
 >> >
 >> > L'approbation entre vCenter et KMS peut être conflictuelle, patientez quelques minutes avant de recommencer ou rafraichissez votre page vSphere avec le bouton en forme de flèche circulaire situé en haut et légèrement à droite.
 >> >
 >>
->> ![KMS Key Provider with or without CSR](images/okms_vsphere_vcenter_trust_kms_1-optim-resize.png){.thumbnail}
->>
->> ![KMS Key Provider with or without CSR](images/okms_vsphere_vcenter_trust_kms-optim-resize.png){.thumbnail}
->>
->> Ensuite, il faut que le **KMS approuve vCenter**.
->>
->> Sélectionnez votre **Fournisseur de clés** KMS (OKMS) que vous venez d'ajouter et cliquez sur le bouton `Approuver l'instance de vCenter`{.action}.
+>> Une fois votre KMS importé dans vSphere, vous devez valider la relation de confiance entre chaque éléments.
 >>
 >> ![Trust KMS server with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms.png){.thumbnail}
 >>
->> Nous recommandons la méthode avec CSR (plus sécurisée) en cliquant sur `Nouvelle demande de signature de certificat (CSR)`{.action). Cependant, libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
+>> Cliquez sur `Approuver le KMS - TRUST KMS`{.action} pour approuver le KMS au sein de vCenter.
 >>
->> Pour plus d'information sur les avantages et inconvénients de l'utilisation d'un CSR, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
+>> En principe, vCenter télécharge automatiquement le certificat public KMS. S'il ne le fait pas, faites-le manuellement en cliquant sur `Établir une relation de confiance` > vCenter approuve Kms > Télécharger le certificat KMS`{.action}.
 >>
-> 
-> **Faire que KMS approuve vCenter**
->
->> **Établir une relation de confiance entre vCenter et KMS**
+>> - `Établir une relation de confiance > vCenter approuve Kms > Télécharger le vertificat KMS`{.action}.
 >>
->> > [!primary]
->> >
->> > Si, en cliquant sur `Approuver KMS`, vCenter a bien téléchargé le certificat public, cette étape est optionnelle.
->> >
+>> ![KMS Key Provider with or without CSR](images/trust_kms_2.png){.thumbnail}
 >>
->> Effectivement, avant de générer votre CSR et/ou votre Certificat KMS, puis votre clé privée, vous devez verifier que vCenter a bien téléchargé le certificat public du serveur KMS OVHcloud.
+>> ![KMS Key Provider with or without CSR](images/okms_vsphere_vcenter_trust_kms-optim-resize.png){.thumbnail}
 >>
->> Si besoin, vous pouvez le récupérer depuis les endpoints fournis avec ce script ou une commande OpenSSL :
+>> Cliquez ensuite sur `TRUST`{.action}.
+>>
+>> Si l'import ne fonctionne pas automatiquement, vous pouvez le récupérer depuis les endpoints fournis avec ce snippet :
 >>
 >> ```Shell
 >> openssl s_client -showcerts -connect eu-west-rbx.okms.ovh.net:443 </dev/null 2>/dev/null|openssl x509 -outform PEM | python3 -c "
@@ -633,86 +484,40 @@ Patientez le temps que vSphere établisse la connexion avec le fournisseur de cl
 >> ```
 >>
 >> Copiez le retour depuis `-----BEGIN CERTIFICATE----- XXX -----END CERTIFICATE-----`{.action} dans votre web interface vSphere managé.
->> 
->> Cliquez ensuite sur `Établir une relation de confiance`{.action}.
 >>
->> Il faut cliquer sur : `Établir une realtion de confiance`{.action}.
->> 
->> Puis cliquez sur `Télécharger le certificat KMS`{.action}.
+>> Puis cliquez sur `Établir une relation de confiance > Télécharger le certificat KMS`{.action}.
 >>
->> Pour terminer, collez le certificat public KMS.
+>> Pour terminer, collez le certificat public KMS récupéré depuis le snippet.
 >>
 >> ![KMS Key Provider](images/okms_vsphere_upload_kms_cert-ptim-resize.png){.thumbnail}
->> 
+>>
 >> ![KMS Key Provider](images/okms_vsphere_upload_kms_cert_2-optim-resize.png){.thumbnail}
 >>
+> **Étape 2** :
 > 
-> **Sans CSR**
->
->> **Certificat KMS et clé privée**
+>>Ensuite, il faut que le **KMS approuve vCenter**.
 >>
+>> Sélectionnez votre **Fournisseur de clés** KMS (OKMS) que vous venez d'ajouter et cliquez sur le bouton `Approuver l'instance de vCenter`{.action}.
 >>
->> Pour cela, cliquez sur `Faire que KMS approuve vCenter`{.action}.
->> Il vous faut cliquer maintenant sur `Faire que KMS approuve vCenter`{.action}
+>> ![Trust KMS server with or without CSR](images/trust_kms.png){.thumbnail}
 >>
->> Puis, sélectionnez : `KMS Certificate and private key to vCenter.`{.action}.
+>> Nous recommandons la méthode avec CSR (plus sécurisée) en cliquant sur `Nouvelle demande de signature de certificat (CSR)`{.action). Cependant, libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
 >>
->> Pour générer, puis signer votre certificat public et la clé privée, lancez les appels API suivants:
+>> Pour plus d'information sur les avantages et inconvénients de l'utilisation d'un CSR, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
 >>
->> > [!api]
->> >
->> > @api {v2} /okms POST /okms/resource/{okmsId}/credential
->> >
->> > **Paramètres** :
->> >
->> > **Sans CSR**
->> >
->> > ```Shell
->> > {
->> > "description": "My reader credential",
->> > "identityURNs": [
->> > "urn:v1:eu:identity:user:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/user",
->> > "urn:v1:eu:identity:group:<<PASTE_YOUR_NICHANDLE_HERE>>-ovh/group"
->> > ],
->> > "name": "reader",
->> > "validity": 365 (exemple)
->> > }
->> > ```
+>> **KMS Trust vCenter**
 >>
->> Récupérez le **credential id** du post ci-dessus, ainsi que la clé privée générée **privateKeyPEM**. Collez-la ensuite dans un fichier **XXX.pem** pour la télécharger (uploader) dans vSphere.
+>> **Avec CSR (recommandé)** :
 >>
->> Lancez ensuite l'appel API suivant pour signer vos clés :
+>> Afin de communiquer avec votre KMS, vous devez créer une demande de signature de certificat d'accès (CSR). Celle-ci sera utilisé pour l'ensemble des interactions avec le KMS OVHcloud et vSphere, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec ceux-ci.
 >>
->> > [!api]
->> >
->> > @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
->> >
->> > **Paramètres** :
->> >
->> > - `credentialId` : ID de la requête d'accès à votre OKMS.
->> > - `okmsId` : ID de la commande de votre OKMS.
->>
->> ![Trust KMS server without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter.png){.thumbnail}
->>
->> ![Trust KMS server without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_2.png){.thumbnail}
->>
->> Afin d'utiliser la clé signée dans vSphere, formatez-la avec cette commande :
->>
->> ```Shell
->> # Clé signé (PEM):
->> awk '{gsub(/\\n/,"\n")}1' cle.pem
+>> Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
 >> 
->> # Certifiat signé (CRT):
->> awk '{gsub(/\\n/,"\n")}1' cert.crt
->> ```
+>> Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre propre clé de sécurité privée via une **"Demande de signature de certificat (CSR)"**.
 >>
->> Le format n'a pas de réelle importance, car il n'est pas utilisé au sein d'OpenSSL à ce stade.
->> 
->> Relancez cette commande awk avec le certificat signé, puis copiez-le.
+>> Suivez les mêmes étapes que sans CSR, mais avec le champ `Avec CSR fourni`{.action} de l'appel API suivant :
 >>
->> Pour terminer, collez-le dans vSphere, puis cliquez sur `Établir une relation de confiance`{.action}.
->>
-> **Nouvelle demande de signature de certificat (avec CSR/sans CSR)**
+>> **Nouvelle demande de signature de certificat (avec CSR)**
 >>
 >> Une fois que votre KMS est commandé et que vCenter approuve le KMS. Lancez la génération du `CSR`{.action} afin que KMS approuve vCenter et signe le CSR.
 >>
@@ -720,15 +525,31 @@ Patientez le temps que vSphere établisse la connexion avec le fournisseur de cl
 >>
 >> Sélectionnez `Nouvelle demande de signature de certificat (CSR)`{.action}, puis copiez ou téléchargez le CSR ci-dessous. Mettez-le à disposition du KMS OVHcloud depuis l'API v2 /okms et demandez à ce dernier de signer le certificat.
 >>
->> La signature ce fait avec l'appel API suivant : 
->> 
->> > [!api] 
+>> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr.png){.thumbnail}
+>>
+>> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr_2.png){.thumbnail}
+>>
+>> Copiez votre CSR dans un fichier `csr.pem`{.action} afin de pouvoir le faire signer par le KMS OVHcloud.
+>>
+>> Pour formater le CSR, lancer la commande awk ci-dessous :
+>>
+>> ```Shell
+>> awk '{printf "%s\\n", $0}' csr.pem
+>> ```
+>>
+>> Collez le retour de cette commande dans l'appel API plus haut, pour faire signer votre CSR auprès du KMS.
+>>
+>> La demande de signature ce fait avec l'appel API suivant :
+>>
+>> > [!api]
 >> >
 >> > @api {v2} /okms POST /okms/resource/{okmsId}/credential
 >> >
+>> >
 >> > **Paramètres** :
 >> >
->> > **Avec CSR (with CSR)**
+>> > - `okmsId`: ID de votre KMS OVHcloud (OKMS).
+>> > - `Avec CSR fourni` : Chaine de confiance entre OKMS et VCenter avec ou sans CSR.
 >> >
 >> > ```Shell
 >> > {
@@ -747,36 +568,24 @@ Patientez le temps que vSphere établisse la connexion avec le fournisseur de cl
 >>
 >> Attention votre CSR doit être compatible en format json afin de pouvoir l'utiliser dans la console web API v2 OVHcloud.
 >>
->> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr.png){.thumbnail}
->>
->> ![Trust KMS server with CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/kms_trust_vcenter_csr_2.png){.thumbnail}
->>
->> Copiez votre CSR dans un fichier `csr.pem`{.action} afin de pouvoir le faire signer par le KMS OVHcloud.
->>
->> Pour formater le CSR, lancer la commande awk ci-dessous :
 >> 
->> ```Shell
->> awk '{printf "%s\\n", $0}' csr.pem
->> ```
->> 
->> Collez le retour de cette commande dans l'appel API plus haut, pour faire signer votre CSR auprès du KMS.
->>
 >> Il ne vous reste plus qu'à uploader le CSR signé.
 >>
->> Pour signer le CSR, cliquez sur `ESTABLISH TRUST`{.action}, puis sur `Upload Signed CSR Certificate`{.action}.
->> 
+>> Pour signer le CSR, cliquez sur `Établir la relation de confiance`{.action}, puis sur `Upload Signed CSR Certificate`{.action}.
+>>
 >> ![Trust KMS server with CSR](images/okms_vsphere_upload_signed_csr-optim-resize.png){.thumbnail}
 >>
->> Copiez maintenant le CSR signé de l'appel API suivant:
->> 
+>> Copiez maintenant le CSR signé de l'appel API suivant :
+>>
 >> > [!api]
 >> >
 >> > @api v2 /okms GET /okms/resource/{okmsId}/credential/{credentialId}
 >> >
->> > **Paramètre** :
+>> > **Paramètres** :
 >> >
->> > - `credentialId` : ID généré lors de votre appel API POST with CSR ("fromCSR": true,)
+>> > - `credentialId` : ID généré lors de votre appel API POST /okms/resource/{okmsId}/credential avec CSR ("fromCSR": true,)
 >> > - `okmsId` : ID de votre KMS OVHcloud.
+>> >
 >>
 >> Lancez ensuite la commande awk ci-dessous pour le formater afin que vSphere puisse le lire :
 >>
@@ -785,15 +594,17 @@ Patientez le temps que vSphere établisse la connexion avec le fournisseur de cl
 >> ```
 >>
 >> Copiez le retour de la commande et collez-le dans vSphere on OVHcloud.
->> 
+>>
 >> ![Trust KMS server with CSR](images/okms_vsphere_upload_signed_csr_2-optim-resize.png){.thumbnail}
 >>
 >> Vérifiez que la connexion a bien été établie en sélectionnant votre fournisseur de clé KMS OVHcloud.
->> 
+>>
 >> L'option `Connecté`{.action} doit être confirmé avec un crochet de validation vert (comme sur la capture ci-dessous)
 >>
 >> ![Trust KMS server with CSR](images/okms_vsphere_okms_validation.png){.thumbnail}
 >>
+
+///
 
 ### Étape 4 - Création d'une politique IAM <a name="iam-creation"></a>
 

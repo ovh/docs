@@ -30,13 +30,12 @@ details[open]>summary::before {
 - Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Avoir souscrit une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 - Avoir accès à l’interface de gestion vSphere de votre Hosted Private Cloud VMware on OVHcloud).
-- Disposer des droits IAM suffisants avec votre compte de service OVHcloud et vos ressources KMS Hosted Private Cloud VMware on OVHcloud. Pour plus d'informations, consultez les guides suivants :
+- Disposer des droits IAM suffisants avec votre compte de service OVHcloud et vos ressources KMS Hosted Private Cloud VMware on OVHcloud. Consultez les guides suivants :
 
   - [IAM pour VMware on OVHcloud - Présentation et FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
   - [IAM pour VMware on OVHcloud - Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation).
   - [IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role).
-  - [IAM pour VMware on OVHcloud - Comment associer un rôle vSphere à une politique IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy).
-  - [IAM pour VMware on OVHcloud - Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy).
+  - [IAM pour VMware on OVHcloud - Comment associer un rôle vSphere et un utilisateur à une politique IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy).
 
 ## En pratique
 
