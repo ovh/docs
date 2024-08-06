@@ -1,6 +1,6 @@
 ---
 title: Managed Rancher Service - Deploying a monitoring stack (Prometheus & Grafana) in a Kubernetes cluster
-excerpt: 'Find out how to deploy monitoring applications (Prometheus & Grafana) in a Kubernetes cluster an display metrics and dashboards on a Managed Rancher Service'
+excerpt: 'Find out how to deploy monitoring applications (Prometheus & Grafana) in a Kubernetes cluster and display metrics and dashboards on a Managed Rancher Service'
 updated: 2024-08-06
 ---
 
@@ -14,9 +14,9 @@ updated: 2024-08-06
 
 Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. 
 
-In this guide, in Rancher, you will deploy monitoring stack (Prometheus & Grafana) to monitor your Kubernetes cluster.
+This guide will show you how to deploy, in Rancher, a monitoring stack (Prometheus & Grafana) to monitor your Kubernetes cluster.
 
-The `rancher-monitoring` operator, is powered by [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/grafana/), [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/), the [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator), and the [Prometheus adapter](https://github.com/DirectXMan12/k8s-prometheus-adapter).
+The `rancher-monitoring` operator is powered by [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/grafana/), [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/), the [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator), and the [Prometheus adapter](https://github.com/DirectXMan12/k8s-prometheus-adapter).
 
 The monitoring application allows you to:
 
@@ -24,10 +24,10 @@ The monitoring application allows you to:
 - Define alerts based on metrics collected via Prometheus
 - Create custom Grafana dashboards
 - Configure alert-based notifications via Email, Slack, PagerDuty, etc. using Prometheus Alertmanager
-- Defines precomputed, frequently needed or computationally expensive expressions as new time series based on metrics collected via Prometheus
+- Define precomputed, frequently needed or computationally expensive expressions as new time series based on metrics collected via Prometheus
 - Expose collected metrics from Prometheus to the Kubernetes Custom Metrics API via Prometheus Adapter for use in HPA
 
-![Monitoring stack](images/monitoring-stack.png)
+![Monitoring stack](images/monitoring-stack.png){.thumbnail}
 
 ## Requirements
 
@@ -42,7 +42,7 @@ In this guide you will deploy the monitoring Helm chart that is based on the ups
 
 ### Install the monitoring stack (Prometheus & Grafana)
 
-Log into your Managed Rancher Service UI.
+Log in to your Managed Rancher Service UI.
 
 ![OVHcloud Managed Rancher Service UI](images/rancher-ui.png){.thumbnail}
 
@@ -54,27 +54,27 @@ Click on `Install Monitoring`{.action}.
 
 ![OVHcloud Managed Rancher Service Cluster](images/rancher-cluster-tools.png){.thumbnail}
 
-Click on the `Install`{.action} in the **Monitoring** app to install Prometheus.
+Click on `Install`{.action} in the **Monitoring** app to install Prometheus.
 
 ![OVHcloud Managed Rancher Service Cluster](images/rancher-install-prom.png){.thumbnail}
 
-You can customize Helm chart options if you want by clicking on the `Customize Helm options before install` checkbox.
+You can customize Helm chart options if you want by ticking the `Customize Helm options before install` checkbox.
 
-Click on the `Next`{.action} button to jump into the second step.
+Click the `Next`{.action} button to jump into the second step.
 
 Choose the `Cluster Type`.
 
-> [!warning
+> [!warning]
 >
 > Select `K3s` or `RKE2` if you installed the Kubernetes cluster nodes with Rancher or `Other` for a MKS cluster.
 
 ![OVHcloud Managed Rancher Service RKE2 Cluster Type](images/rancher-rke2.png){.thumbnail}
 
-In the `Prometheus` tab you can configure scrapping interval, retention and resource memory and limits.
+In the `Prometheus` tab you can configure scrapping intervals, retention and resource memory and limits.
 
 ![OVHcloud Managed Rancher Service RKE2 Cluster Type](images/rancher-prometheus.png){.thumbnail}
 
-In the `Alerting` tab you can configure if you want to deploy Alertmanager.
+In the `Alerting` tab you can configure and deploy Alertmanager.
 
 ![OVHcloud Managed Rancher Service Alertmanager](images/rancher-alertmanager.png){.thumbnail}
 
@@ -82,13 +82,13 @@ In the `Grafana` tab you can view the chart info and configure Grafana storage.
 
 ![OVHcloud Managed Rancher Service Grafana](images/rancher-grafana.png){.thumbnail}
 
-Click on the `Install`{.action} button to install the monitoring stack.
+Click the `Install`{.action} button to install the monitoring stack.
 
-The Logs will be displayed and showing you that the Helm chart have been installed.
+The Logs will be displayed and showing you that the Helm chart has been installed.
 
 ![OVHcloud Managed Rancher Service Grafana](images/rancher-logs.png){.thumbnail}
 
-Click on the `Kubectl Shell` icon to open a terminal inside rancher and then execute the following command to list the monitoring pods installed:
+Click the `Kubectl Shell` icon to open a terminal inside Rancher and then execute the following command to list the monitoring pods installed:
 
 ```bash
 kubectl get po -n cattle-monitoring-system
@@ -99,20 +99,21 @@ kubectl get po -n cattle-monitoring-system
 ### View metrics and Grafana dashboards
 
 By default, the monitoring application deploys:
-- Grafana dashboards (curated by the kube-prometheus project) onto a cluster.
-- an Alertmanager UI and a Prometheus UI.
-- exporters (such as node-exporter and kube-state-metrics).
-- some alerts by default
 
-On the Rancher UI, click in the `Cluster Management`{.action} menu and then for the cluster you want to visualize the metrics click on `Explore`{.action} button.
+- Grafana dashboards (curated by the kube-prometheus project) onto a cluster.
+- An Alertmanager UI and a Prometheus UI.
+- Exporters (such as node-exporter and kube-state-metrics).
+- Some alerts by default.
+
+On the Rancher UI, click the `Cluster Management`{.action} menu, then click the `Explore`{.action} button for the cluster which metrics you want to visualize.
 
 ![OVHcloud Managed Rancher Service Explore Cluster](images/rancher-explore.png){.thumbnail}
 
-In the left navigation bar, click on `Monitoring`{.action} .
+In the left navigation bar, click on `Monitoring`{.action}.
 
 ![OVHcloud Managed Rancher Service Monitoring Menu](images/rancher-monitoring-menu.png){.thumbnail}
 
-In this page you can see the links to the Alertmanager,  Grafana dashboard and also active prometheus alerts.
+In this page you can see the links to the Alertmanager, Grafana dashboard and also active Prometheus alerts.
 
 ![OVHcloud Managed Rancher Service Monitoring](images/rancher-monitoring.png){.thumbnail}
 
@@ -121,9 +122,10 @@ By clicking on the Grafana link you can see the Grafana dashboards:
 ![OVHcloud Managed Rancher Grafana](images/grafana.png){.thumbnail}
 
 You can also execute PromQL queries.
+
 Without doing anything on your side, several built-in metrics are already available. You can test them by typing `sum(kube_pod_owner{job="kube-state-metrics"}) by (namespace)` in the search bar.
 
-Click on the `Execute`{.action} button to determine if the Kubernetes metrics are visible:
+Click the `Execute`{.action} button to determine if the Kubernetes metrics are visible:
 
 ![OVHcloud Managed Rancher Grafana](images/promql.png){.thumbnail}
 

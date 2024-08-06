@@ -928,7 +928,7 @@
                 + [Managed Rancher Service - Creating a Kubernetes cluster based on OVHcloud Public Cloud Compute Instances](public_cloud/containers_orchestration/managed_rancher_service/creating-kubernetes-pci-compute-instances)
                 + [Managed Rancher Service - Creating a Kubernetes cluster with existing nodes (Generic)](public_cloud/containers_orchestration/managed_rancher_service/creating-kubernetes-custom-nodes)
             + [Deploying applications with Rancher](public-cloud-containers-orchestration-managed-rancher-service-deploy-applications)
-                + [Deploying a monitoring stack (Prometheus & Grafana) in a Kubernetes cluster](public_cloud/containers_orchestration/managed_rancher_service/deploy-monitoring-prometheus-grafana-metrics)
+                + [Managed Rancher Service - Deploying a monitoring stack (Prometheus & Grafana) in a Kubernetes cluster](public_cloud/containers_orchestration/managed_rancher_service/deploy-monitoring-prometheus-grafana-metrics)
     + [AI & Machine Learning](products/public-cloud-ai-and-machine-learning)
         + [General information](public-cloud-ai-and-machine-learning-general-information)
             + [Comparative tables - AI Notebooks, AI Training, AI Deploy](public_cloud/ai_machine_learning/gi_00_ai_comparative-table)
