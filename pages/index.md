@@ -918,6 +918,7 @@
                 + [Getting started with Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/getting-started)
                 + [Creating, Updating and Accessing a Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher)
                 + [Managed Rancher Service - Managing users and projects](public_cloud/containers_orchestration/managed_rancher_service/managing-users-and-projects)
+                + [Managed Rancher Service - Backing up and Restore a Kubernetes cluster](public_cloud/containers_orchestration/managed_rancher_service/backup-restore-etcd-s3)
                 + [Tutorial - How to use Rancher CLI](public_cloud/containers_orchestration/managed_rancher_service/using-rancher-cli)
                 + [Managed Rancher Service - Editing the configuration of a Kubernetes cluster](public_cloud/containers_orchestration/managed_rancher_service/edit-config-kubernetes-cluster)
             + [Creating or importing a Kubernetes cluster](public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes)
