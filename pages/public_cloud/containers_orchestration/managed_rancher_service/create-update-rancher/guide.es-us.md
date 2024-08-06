@@ -32,7 +32,8 @@ Using the OVHcloud Control Panel you can trigger the creation of a Rancher which
 
 Click on the `Create a Managed Rancher Service`{.action} button.
 
-Fill the name:
+Fill in the name:
+
 ![Create an OVHcloud Managed Rancher Service](images/rancher-name.png){.thumbnail}
 
 Choose your plan between **OVHcloud Edition** (coming soon) and **Standard**.
@@ -61,7 +62,7 @@ Click on the `Update`{.action} button.
 
 ![OVHcloud Managed Rancher Services update](images/rancher-update.png){.thumbnail}
 
-Choose the version and click on `Update`{.action} button.
+Choose the version and click the `Update`{.action} button.
 
 ![OVHcloud Managed Rancher Services update](images/rancher-update-popup.png){.thumbnail}
 
