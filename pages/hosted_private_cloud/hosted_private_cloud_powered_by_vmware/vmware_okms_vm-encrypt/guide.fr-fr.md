@@ -43,7 +43,7 @@ details[open]>summary::before {
 **Sommaire des étapes du guide** :
 
 - [Introduction - Listing endpoints OKMS](#introduction)
-- [Étape 1 - Commander un KMS OVHcloud (obligatoire)](#commander-un-okms)
+- [Étape 1 - Commande d'un KMS OVHcloud (obligatoire)](#commande-okms)
 - [Étape 2 - Activation du KMS OVHcloud (obligatoire)](#activation-okms)
 - [Étape 3 - Ajout du KMS à vSphere (obligatoire)](#ajout-okms)
 - [Étape 4 - Création d'une politique IAM (obligatoire)](#iam-creation)
@@ -118,9 +118,9 @@ OVHcloud KMS (OKMS) est un service centralisé de chiffrement entièrement manag
 
 ///
 
-### Étape 1 - Commander un KMS OVHcloud (OKMS) au sein de HPC VMware on OVHcloud (obligatoire) <a name="commander-un-okms"></a>
+### Étape 1 - Commande d'un KMS OVHcloud (obligatoire) <a name="commande-okms"></a>
 
-/// details | Comment commander un KMS OVHcloud pour HPC VMware on OVHcloud?
+/// details | Comment commander un KMS OVHcloud (OKMS) pour HPC VMware on OVHcloud ?
 
 ![Manager KMS Menu Order Animated Gif](images/okms_order.gif){.thumbnail}.
 
@@ -190,7 +190,7 @@ Pour lister vos commandes KMS OVHcloud, utilisez l'appel API suivant :
 > @api {v2} /okms GET /okms/resource
 >
 >
-> **Paramètres:**
+> **Paramètres** :
 >
 > - `okmsId` : L'ID de votre KMS OVHcloud (Okms).
 >
@@ -216,7 +216,7 @@ Vous disposez désormais d'un serveur KMS OVHcloud à mettre en place au sein de
 
 ///
 
-### Étape 2 - Activation du OKMS (obligatoire) <a name="activation-okms"></a>
+### Étape 2 - Activation du KMS OVHcloud (obligatoire) <a name="activation-okms"></a>
 
 /// details | Comment activer le KMS OVHcloud (OKMS) avec HPC vSphere managé on OVHcloud ?
 
