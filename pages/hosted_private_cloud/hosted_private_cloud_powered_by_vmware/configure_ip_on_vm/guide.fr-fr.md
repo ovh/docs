@@ -65,7 +65,7 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 >>
 >> Voici un exemple de configuration sur la distribution Debian :
 >>
->> ![Interface IP](images/config_ip_interfaces.jpg){.thumbnail}
+>> ![Interface IP](images/config_ip_interfaces.png){.thumbnail}
 >>
 >> ```sh
 >> auto eth0
@@ -97,7 +97,7 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 >>
 >> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et sélectionner `Propriétés`{.action). Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur `Properties`{.action) puis renseignez les informations de votre IP comme suit :
 >>
->> ![Configuration Windows](images/config_ip_windows.jpg){.thumbnail}
+>> ![Configuration Windows](images/config_ip_windows.png){.thumbnail}
 >>
 >>```sh
 >> Adresse IP : 46.105.220.xxx
@@ -110,7 +110,7 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 >>
 >> Voici un exemple de configuration sur la distribution Debian :
 >>
->> ![Interface IPv6](images/config_ip_interfaces_v6.jpg){.thumbnail}
+>> ![Interface IPv6](images/config_ip_interfaces_v6.png){.thumbnail}
 >>
 >> ```sh
 >> auto eth0
@@ -140,7 +140,7 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 >>
 >> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et sélectionner `Propriétés`{.action). Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur `Properties`{.action) puis renseignez les informations de votre IP comme suit :
 >>
->> ![Configuration Windows IPv6](images/config_ip_windows_v6.jpg){.thumbnail}
+>> ![Configuration Windows IPv6](images/config_ip_windows_v6.png){.thumbnail}
 >>
 >> ```sh
 >> Adresse IP : 2001:41d0:xxxx:xxxx::
