@@ -155,15 +155,15 @@ Si vous n'avez pas de service de gestion de clé externe et que vous ne voulez p
 
 **Comment activer le chiffrement de VM avec vNKP** ?
 
-Si vous ne voulez pas profiter des avantages du service managé de KMS OVHcloud (OKMS) et que vous voulez activer le chiffrement de vos VMs. Vous pouvez le faire avec vNKP.
+Si vous ne voulez pas profiter des avantages du KMS OVHcloud (OKMS) et que vous voulez quand même activer le chiffrement de vos VMs.
 
-Vous pouvez utiliser l'option native de vSphere, vNKP, en ajoutant un fournisseur :
+Vous pouvez le faire en ajoutant un :
 
 - **Fournisseur de clés natives.**
 
 ![Native Key Provider](images/key_provider.png){.thumbnail}
 
-Ce guide vous détaille comment le faire :
+Ce guide vous détaille en précision les étapes à suivre :
 
 - « [Guide 4 - HPC - Activation du chiffrement de VM avec un vNKP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp) ».
 
