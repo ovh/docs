@@ -1,7 +1,7 @@
 ---
 title: 'Configurer une IP sur une machine virtuelle'
 excerpt: 'Apprenez à configurer une IP sur une machine virtuelle'
-updated: 2024-08-08
+updated: 2024-08-07
 ---
 
 ## Objectif
@@ -27,12 +27,7 @@ Après avoir créé une machine virtuelle (VM) dans votre infrastructure, vous p
 >> ![Configuration sur l'OVHcloud Network](images/01config_ip_ovh_network.png){.thumbnail}
 >>
 >> Sur chaque bloc livré par OVHcloud, 5 adresses IP sont réservées à la configuration du réseau et ne doivent jamais être utilisées pour vos machines virtuelles. Il s'agit de la première et des quatre dernières IP du bloc.
->> Un bloc IP Private Cloud est organisé comme suit :
->>
->> - la première adresse IP marquée comme réservée (`Reserved`) correspond à l'adresse de réseau ;
->> - les IP suivantes sont utilisables pour vos machines virtuelles. Elles sont indiquées comme disponibles (`Available`) si aucune VM ne les exploite ou comme utilisées (`Used`) dans le cas contraire ;
->> - les quatre dernières IP du bloc sont réservées, deux sont dédiées aux routeurs OVHcloud pour le fonctionnement du bloc et les deux autres sont employées pour la passerelle et le broadcast.
->>
+>
 >> Un bloc IP Private Cloud est organisé comme suit :
 >>
 >> - la première adresse IP marquée comme réservée (`Reserved`) correspond à l'adresse de réseau ;
@@ -45,12 +40,13 @@ Après avoir créé une machine virtuelle (VM) dans votre infrastructure, vous p
 >>
 >>> [!warning]
 >>>
->>> Par défaut, le bloc IPv6 livré avec votre PCC n'est pas activé, il est requis d'ouvrir une demande au support technique pour demander son activation.
+>>> Par défaut, le bloc IPv6 livré avec votre PCC n'est pas activé, il est donc nécessaire d'ouvrir une [demande d'assistance auprès du support technique]((https://help.ovhcloud.com/csm?id=csm_get_help)) pour demander son activation.
 >>>
 >>
 >> Vous pouvez récupérer les informations de votre bloc d'adresse IPv6 publiques depuis votre espace client, depuis la page [Gérer mes IPs](https://www.ovh.com/manager/#/dedicated/ip?serviceType=pcc&page=1).
 >>
 >> Avant de débuter, et afin d’utiliser les mêmes terminologies durant les manipulations, nous vous invitons à prendre connaissance du tableau ci-dessous. Il référence des termes que nous utiliserons dans cette documentation :
+>>
 >> |Terme|Description|Exemple|
 >> |---|---|---|
 >> |YOUR_IPV6|Il s'agit d'une adresse IPv6 du bloc IPv6 attribué à votre service|2001:41d0:xxxx:xxxx::1|
@@ -91,15 +87,15 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 >>
 >> Voici un exemple de configuration sur Windows :
 >>
->> Dans le `panneau de configuration`{.action} vous devrez aller dans `Réseau et Internet`{.action} puis `Centre réseau et partage`{.action} et enfin `Modifier l'adaptateur réseau`{.action}.
+>> Dans le `Panneau de configuration`{.action}, rendez-vous dans `Réseau et Internet`{.action} puis `Centre réseau et partage`{.action} et enfin `Modifier l'adaptateur réseau`{.action}.
 >>
->> Pour aller plus vite, vous pouvez cliquer sur le champ de recherche Windows et écrire `Run` (ce qui correspond à appuyer simultanément sur la touche *Windows* de votre clavier et la touche *R*). La console d’exécution Windows s’ouvrira et vous pourrez entrer la commande suivante :
+>> Pour aller plus vite, vous pouvez cliquer sur le champ de recherche Windows et écrire `Run` (ce qui correspond à appuyer simultanément sur la touche *Windows* et la touche *R* de votre clavier). La console d’exécution Windows s’ouvrira et vous pourrez entrer la commande suivante :
 >>
 >> ```shell
 >> ncpa.cpl
 >> ```
 >>
->> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et `Propriétés`{.action). Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur 'Properties' puis renseignez les informations de votre IP comme suit :
+>> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et sélectionner `Propriétés`{.action). Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur `Properties`{.action) puis renseignez les informations de votre IP comme suit :
 >>
 >> ![Configuration Windows](images/config_ip_windows.jpg){.thumbnail}
 >>
@@ -134,15 +130,15 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 >>
 >> Voici un exemple de configuration sur Windows :
 >>
->> Dans le `panneau de configuration`{.action} vous devrez aller dans `Réseau et Internet`{.action} puis `Centre réseau et partage`{.action} et enfin `Modifier l'adaptateur réseau`{.action}.
+>> Dans le `Panneau de configuration`{.action}, rendez-vous dans `Réseau et Internet`{.action} puis `Centre réseau et partage`{.action} et enfin `Modifier l'adaptateur réseau`{.action}.
 >>
->> Pour aller plus vite, vous pouvez cliquer sur le champ de recherche Windows et écrire `Run` (ce qui correspond à appuyer simultanément sur la touche *Windows* de votre clavier et la touche *R*). La console d’exécution Windows s’ouvrira et vous pourrez entrer la commande suivante :
+>> Pour aller plus vite, vous pouvez cliquer sur le champ de recherche Windows et écrire `Run` (ce qui correspond à appuyer simultanément sur la touche *Windows* et la touche *R* de votre clavier). La console d’exécution Windows s’ouvrira et vous pourrez entrer la commande suivante :
 >>
 >> ```shell
 >> ncpa.cpl
 >> ```
 >>
->> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et `Propriétés`{.action). Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur 'Properties' puis renseignez les informations de votre IP comme suit :
+>> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et sélectionner `Propriétés`{.action). Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur `Properties`{.action) puis renseignez les informations de votre IP comme suit :
 >>
 >> ![Configuration Windows IPv6](images/config_ip_windows_v6.jpg){.thumbnail}
 >>
