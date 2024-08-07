@@ -42,6 +42,10 @@ Il mittente (sender) trasmette l’email alla mailing list. Il moderatore (moder
 
 ### Crea la tua mailing list
 
+> [!success]
+>
+> Una mailing list si comporta come un indirizzo email e non è possibile modificarne il nome. Se il nome di una mailing list non corrisponde più alle tue esigenze, è necessario crearne una nuova ed eliminare la vecchia.
+
 Per creare la tua mailing list, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona la scheda`Web Cloud`{.action} in alto.
 
 Una volta connesso, clicca su `Email`{.action} e poi sul dominio interessato. Vai alla scheda `Mailing list`{.action}del tuo servizio di posta elettronica.
