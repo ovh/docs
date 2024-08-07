@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar y utilizar las listas de difusión'
 excerpt: 'Cómo utilizar las listas de difusión'
-updated: 2023-08-01
+updated: 2024-08-07
 ---
 
 ## Objetivo

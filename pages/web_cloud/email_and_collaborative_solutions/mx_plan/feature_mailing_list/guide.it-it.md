@@ -1,7 +1,7 @@
 ---
 title: 'Gestire e utilizzare una mailing list'
 excerpt: 'Come gestire e utilizzare una mailing list'
-updated: 2023-08-01
+updated: 2024-08-07
 ---
 
 ## Obiettivo

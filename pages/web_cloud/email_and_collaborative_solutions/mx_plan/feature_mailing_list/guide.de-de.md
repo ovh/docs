@@ -1,7 +1,7 @@
 ---
 title: 'Mailinglisten verwalten und nutzen'
 excerpt: 'Erfahren Sie hier, wie Sie Mailinglisten verwenden'
-updated: 2023-08-01
+updated: 2024-08-07
 ---
 
 ## Ziel
@@ -43,7 +43,7 @@ Der Absender (sender) sendet die E-Mail an die Mailingliste. Der Moderator (mode
 
 > [!success]
 >
-> Une mailing list se comporte comme une adresse e-mail, il n'est pas possible de modifier son nom. Vous devez en créer une nouvelle et supprimer l'ancienne.
+> Eine Mailingliste verhält sich wie eine E-Mail-Adresse, es ist nicht möglich, ihren Namen zu ändern. Wenn der Name einer Mailingliste nicht mehr Ihren Vorstellungen entspricht, müssen Sie eine neue erstellen und die alte löschen.
 
 Um Ihre Mailingliste zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie oben die Kategorie `Web Cloud`{.action}.
 

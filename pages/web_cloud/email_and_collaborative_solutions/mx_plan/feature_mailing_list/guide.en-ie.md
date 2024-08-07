@@ -1,7 +1,7 @@
 ---
 title: 'Managing and using mailing lists'
 excerpt: 'Find out how to use mailing lists'
-updated: 2023-08-01
+updated: 2024-08-07
 ---
 
 ## Objective
