@@ -6,7 +6,7 @@ updated: 2024-08-07
 
 ## Objective
 
-[ElastAlert 2](https://github.com/jertel/elastalert){.external} is an alerting framework originally designed by Yelp. It is able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch/OpenSearch ecosystem. Their mojo is : "If you can see it in your dashboards, ElastAlert 2 can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with OpenSearch through [aliases](/pages/manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards) and [indexes](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input). Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
+[ElastAlert 2](https://github.com/jertel/elastalert){.external} is an alerting framework originally designed by Yelp. It is able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch/OpenSearch ecosystem. Their motto is: "If you can see it in your dashboards, ElastAlert 2 can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compatibility with OpenSearch through [aliases](/pages/manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards) and [indexes](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input). Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform.
 
 ## Requirements
 
@@ -18,7 +18,7 @@ Note that in order to complete this tutorial, you should have at least:
 
 ## Preparation
 
-In order to deploy ElastAlert, it is important that you have data on which you want to alert things on. If you only have Graylog stream, you can use aliases to enable the OpenSearch API on your stream data. Here is how:
+In order to deploy ElastAlert, it is important that you have data for which you can see alerts. If you only have Graylog stream, you can use aliases to enable the OpenSearch API on your stream data. Here is how:
 
 1. Go to the Logs Data Platform manager.
 2. In the Alias panel, click the `Add an alias`{.action} button.
@@ -34,7 +34,7 @@ If you only have [indices](/pages/manage_and_operate/observability/logs_data_pla
 
 ## Instructions
 
-ElastAlert configuration consists in three steps:
+ElastAlert configuration consists of three steps:
 
 - Installing ElastAlert and its metadata indices.
 - Configuring the main configuration file.
@@ -42,7 +42,7 @@ ElastAlert configuration consists in three steps:
 
 ### Installation
 
-Installing ElastAlert can be done in different ways as described in their [documentation.](https://elastalert2.readthedocs.io/en/latest/elastalert.html#running-elastalert){.external}. You can either use the docker image or install the python 3 packages. You must check that your Python version is the one compatible with ElastAlert. Check the documentation to verify which version of Python is compatible. Be sure also to meet all the [requirements](https://elastalert2.readthedocs.io/en/latest/running_elastalert.html#requirements) before attempting the installation.
+Installing ElastAlert can be done in different ways as described in their [documentation](https://elastalert2.readthedocs.io/en/latest/elastalert.html#running-elastalert){.external}. You can either use the docker image or install the python 3 packages. You must check that your Python version is the one compatible with ElastAlert. Check the documentation to verify which version of Python is compatible. Be sure also to meet all the [requirements](https://elastalert2.readthedocs.io/en/latest/running_elastalert.html#requirements) before attempting the installation.
 
 You can either install the latest released version of ElastAlert 2 using pip:
 
@@ -75,7 +75,7 @@ ElastAlert needs **5** indices to operate:
 - The **generic** index containing all active alerts.
 - The **status** index containing the queries run to trigger the alerts.
 - The **error** index with all the errors encountered.
-- The **silence** index indicating if a reoccuring alert should be triggered or silenced.
+- The **silence** index indicating if a recurring alert should be triggered or silenced.
 - The **past** index with all the alerts triggered and closed.
 
 The following command will create the indices on Logs Data Platform directly from OpenSearch API.
@@ -84,7 +84,7 @@ The following command will create the indices on Logs Data Platform directly fro
 $ elastalert-create-index --host <ldp-cluster>.logs.ovh.com --port 9200 --username <username> --password <password> --ssl --index <username>-i-<suffix>
 ```
 
-Tou should pay attention to the following points:
+You should pay attention to the following points:
 
 - The `<ldp-cluster>` must be the one assigned to you (find on the **Home** page of the LDP Manager).
 - `<username>` is the username used to connect to the API or to the Logs Data Platform interfaces (Graylog or OpenSearch Dashboards).
