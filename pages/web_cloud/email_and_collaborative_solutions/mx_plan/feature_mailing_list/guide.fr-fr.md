@@ -41,7 +41,7 @@ L'expéditeur (sender) transmet l'e-mail à la mailing list. Le modérateur (mod
 
 ### Créer sa mailing list
 
-> [!warning]
+> [!success]
 >
 > Une mailing list se comporte comme une adresse e-mail, il n'est pas possible de modifier son nom. Si le nom d'une mailing list ne vous convient plus, vous devez en créer une nouvelle et supprimer l'ancienne.
 
