@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial on Stormshield Network Security: securing your OVHcloud Public Cloud infrastructure'
-excerpt: 'Find out how to securing your OVHcloud Public Cloud infrastructure with Stormshield Network Security'
+title: 'Tutorial on Stormshield Network Security: securing your OVHcloud infrastructure'
+excerpt: 'Find out how to securing your OVHcloud infrastructure with Stormshield Network Security'
 updated: 2024-08-08
 ---
 
@@ -8,7 +8,7 @@ updated: 2024-08-08
 
 In today's rapidly evolving digital landscape, securing cloud infrastructure has become a top priority for organizations of all sizes. As businesses increasingly rely on cloud solutions for their operations, ensuring the protection of sensitive data and maintaining network integrity are critical tasks. **S**tormshield **N**etwork **S**ecurity (SNS) is a comprehensive security solution designed to protect cloud environments from a wide range of threats. This guide provides step-by-step instructions for deploying and configuring SNS on the OVHcloud Public Cloud, covering key features such as network firewalls, IPSec VPNs, and SSL/TLS VPNs. By following this guide, you will enhance the security of your OVHcloud Public Cloud infrastructure and ensure safe and secure operations.
 
-**This guide explains how to securing your OVHcloud Public Cloud infrastructure with Stormshield Network Security.**
+**This guide explains how to securing your OVHcloud infrastructure with Stormshield Network Security deployed on Public Cloud.**
 
 ## Requirements
 
@@ -16,6 +16,7 @@ In today's rapidly evolving digital landscape, securing cloud infrastructure has
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional)
 - Basic networking knowledge
+- Stormshield account on the [Stormshield website](https://www.stormshield.com/en/){.external}
 - Stormshield License BYOL (**B**ring **Y**our **O**wn **L**icense) : have a valid Stormshield license, as you will need to provide it during the installation and configuration process.
 
 ## Instructions
@@ -109,7 +110,7 @@ openstack server create --flavor b2-15 --image stormshield-SNS-EVA-4.7.6 --netwo
 ```
 
 > [!primary]
-> In this tutorial, we use the `b2-15` instance. To avoid compatibility problems, don't use the following instance types : b3, c3, r3.
+> In this tutorial, we use the `b2-15` instance. To avoid compatibility problems, we suggest to not use the following instance types : b3, c3, r3.
 >
 
 #### Configure the Stormshield instances
@@ -230,7 +231,7 @@ If everything was configured properly, after the reboot of the second Stormshiel
 #### Configure and secure the Stormshield management
 
 > [!tabs]
-> **Étape 1**
+> **Step 1**
 >>
 >> Get your public IP :
 >> ```console
@@ -238,21 +239,19 @@ If everything was configured properly, after the reboot of the second Stormshiel
 >> <ip_address>
 >> ```
 >>
-> **Étape 2**
+> **Step 2**
 >>
 >> Create a host object for your public IP :
 >>![SNS](./images/configure-management-1.png)
 >>
-> **Étape 3**
+> **Step 3**
 >>
 >> Limit the access to the GUI to your public IP and enable SSH :
->>
 >> ![SNS](./images/configure-management-2.png)
 >>
-> **Étape 4**
+> **Step 4**
 >>
 >> Limit the access to the SSH to your public IP
->>
 >> ![SNS](./images/configure-management-3.png)
 
 ##### Re-synchronize the HA configuration
@@ -275,9 +274,12 @@ You need to do this each time you update the configuration.
 
 ### Usecases configuration
 
-After installing and configuring your Stormshield instances, you can implement advanced security solutions such as IPSec VPNs, network gateways for inbound and outbound traffic, and SSL/TLS VPNs.
+After deploying Stormshield **E**lastic **V**irtual **A**ppliance (EVA) firewall, it can be used in multiple advanced security scenarios such as IPsec VPN, SSL/TLS VPN, network gateways (IN or OUT) as described below.
+Thanks to the vRack private network, listed VLANs can also be used outside Public Cloud environment : across BareMetal or PrivateCloud products.
 
 #### Configure Stormshield to be used as a gateway for the VLAN200
+
+In this example, virtual firewall appliance will act as a secure gateway for private instances (or any other servers) inside VLAN200 of given vRack network. Such traffic can be a subject for URL filtering on the firewall.
 
 ![SNS](./images/stormshield-gateway.png)
 
@@ -333,24 +335,31 @@ HTTP/2 200
 
 #### Configure a NAT to access a private HTTP service from outside
 
+In this example, Internet should be able to reach-out to the private webserver installed inside VLAN200. The goal of such setup is to protect webserver with network firewall.
+
 ![SNS](./images/stormshield-nat-http.png)
 
-* Install Nginx on the ubuntu-webserver instance :
-
-```console
-sudo apt-get update
-sudo apt-get install -y nginx
-```
-* Create a host object for the ubuntu-webserver :
-
+> [!tabs]
+> **Step 1**
+>>
+>> Install Nginx on the ubuntu-webserver instance :
+>> ```console
+>>sudo apt-get update
+>> sudo apt-get install -y nginx
+>> ```
+> **Step 2**
+>>
+>> Create a host object for the ubuntu-webserver :
 ![SNS](./images/nat-1.png)
-
-* Create a NAT rule like this one :
-
+>>
+> **Step 3**
+>>
+>> Create a NAT rule like this one :
 ![SNS](./images/nat-2.png)
-
-* Create a filter rule like this one :
-
+>>
+> **Step 4**
+>>
+>> Create a filter rule like this one :
 ![SNS](./images/nat-3.png)
 
 * Test to access the website from outside :
@@ -369,6 +378,8 @@ hasyn
 
 #### IPsec tunnel
 
+In this example, IPsec tunnel is configured to interconnect two different PCI regions: SBG7 (network VLAN200) and GRA11 (network VLAN201), but any of those sites can be a remote site like an office or data center.
+
 ![SNS](./images/stormshield-ipsec.png)
 
 * Re-do all the steps in another region using the VLAN 201 instead of the VLAN 200 and different IP ranges for the stormshield-ext and stormshield-ha subnet.
@@ -379,28 +390,29 @@ hasyn
 
 * [Create a standard site-to-site tunnel](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/IPSec_VPN/Encryption_policy-Tunnels_tab-Site_to_Site-Creating.htm){.external}.
 
-Add the local and the remote private network :
-
+> [!tabs]
+> **Step 1**
+>>
+>> Add the local and the remote private network :
 ![SNS](./images/ipsec-3.png)
-
-Create the remote gateway :
-
+> **Step 2**
+>>
+>> Create the remote gateway :
 ![SNS](./images/ipsec-4.png)
-
-Choose a pre-shared key :
-
+>>
+> **Step 3**
+>>
+>> Choose a pre-shared key :
 ![SNS](./images/ipsec-5.png)
-
-Create the tunnel :
-
-![SNS](./images/ipsec-6.png)
-
-Activate the tunnel :
-
+>>
+> **Step 4**
+>>
+>> Create and activate the tunnel :
 ![SNS](./images/ipsec-7.png)
-
-* Add a filter rule like this one to allow traffic through the tunnel :
-
+>>
+> **Step 5**
+>>
+>> Add a filter rule like this one to allow traffic through the tunnel :
 ![SNS](./images/ipsec-8.png)
 
 * Synchronize the two HA stormshield instances :
@@ -438,15 +450,19 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 64 bytes from <ip_address>: icmp_seq=3 ttl=64 time=16.4 ms
 ```
 
-#### SSL VPN
+#### SSL/TLS VPN
+
+In this example, a remote OpenVPN client will connect with private network inside VLAN200.
 
 ![SNS](./images/stormshield-ssl-vpn.png)
+
+##### Configuring the LDAP directory
 
 * [Create a internal LDAP directory](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Directory_configuration/Creating_an_internal_LDAP.htm){.external} to manage the VPN users. In a production scenario, this LDAP/AD should be remote and not local.
 
 ![SNS](./images/ssl-vpn-1.png)
 
-Create the user directory :
+* Create the user directory :
 
 ![SNS](./images/ssl-vpn-2.png)
 
@@ -454,11 +470,13 @@ Create the user directory :
 
 ![SNS](./images/ssl-vpn-3.png)
 
-Choose a password for the new user :
+* Choose a password for the new user :
 
 ![SNS](./images/ssl-vpn-4.png)
 
-* Create two network object for the SSL VPN client.
+##### Configuring VPN network objects
+
+* Create two network objects for the SSL VPN client.
 
 UDP client network :
 
@@ -468,23 +486,31 @@ TCP client newtwork :
 
 ![SNS](./images/ssl-vpn-6.png)
 
+##### SSL VPN server configuration
+
 * Configure the SSL VPN server :
 
 ![SNS](./images/ssl-vpn-7.png)
 
+##### Managing user permissions
+
 * Add permission to your user to use the SSL VPN server (Configuration -> Users -> Access privileges -> Detailed Access -> Add)
 
-Search your user :
+* Search your user :
 
 ![SNS](./images/ssl-vpn-8.png)
 
-Allow SSL VPN :
+* Allow SSL VPN :
 
 ![SNS](./images/ssl-vpn-9.png)
+
+##### Configuring filter rules
 
 * Add a filter rule like this one to let VPN client access the VLAN200 :
 
 ![SNS](./images/ssl-vpn-10.png)
+
+##### Synchronization of Stormshield instances
 
 * Synchronize the two HA stormshield instances :
 
@@ -493,7 +519,11 @@ ssh admin@<ip_address>
 hasync
 ```
 
-##### Test the SSL VPN
+##### Test the SSL/TLS VPN
+
+> [!primary]
+> To test SSL/TLS connectivity, you can use any device with OpenVPN installed. This example includes test of OpenVPN client on top of OpenStack instance in another region.
+>
 
 * Download the VPN configuration file (Configuration->VPN->SSL VPN->Advanced configuration->Export the configuration file).
 
