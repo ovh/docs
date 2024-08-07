@@ -1,7 +1,7 @@
 ---
-title: 'Configurar a rede em Windows Server com Hyper-V nas gamas High Grade & SCALE'
-excerpt: 'Descubra como configurar a rede no Windows Server com Hyper-V nas gamas High Grade & SCALE'
-updated: 2023-08-31
+title: 'Configurar a rede em Windows Server com Hyper-V'
+excerpt: 'Descubra como configurar a rede no Windows Server com Hyper-V'
+updated: 2024-08-07
 ---
 
 > [!primary]
@@ -10,9 +10,19 @@ updated: 2023-08-31
 
 ## Objetivo
 
+**Saiba como configurar a rede em Windows Server com Hyper-V.**
+
+### Gamas High Grade & SCALE
+
 Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo *bridged* (através de MAC virtuais) não é possível. Por isso, é necessário configurar os Additional IP em modo roteado ou através do vRack.
 
-**Saiba como configurar a rede em Windows Server com Hyper-V.**
+### Gama Advance
+
+Uma vez que os servidores Advance apenas dispõem de duas interfaces de rede, aconselhamos que configure o servidor em modo privado ao criar um "teaming" com as duas interfaces ligadas ao vRack. Um segundo servidor pode então servir de gateway da Internet com uma interface ligada à rede privada e outra ligada à rede pública.
+
+Para este tipo de configuração, é possível utilizar a funcionalidade IP como alias descrita no artigo [Como configurar um IP alias](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+
+Também é possível implementar esta configuração em cada um dos servidores Hyper-V (uma interface privada/uma interface pública em cada servidor) e não configurar uma agregação de portas. No entanto, neste caso, a rede privada disporá de menos largura de banda e de uma alta disponibilidade das interfaces de rede.
 
 ## Requisitos
 
