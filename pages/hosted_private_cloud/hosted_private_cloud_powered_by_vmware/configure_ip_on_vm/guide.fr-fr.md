@@ -1,7 +1,7 @@
 ---
 title: 'Configurer une IP sur une machine virtuelle'
 excerpt: 'Apprenez à configurer une IP sur une machine virtuelle'
-updated: 2020-10-13
+updated: 2024-08-08
 ---
 
 ## Objectif
@@ -43,14 +43,19 @@ Après avoir créé une machine virtuelle (VM) dans votre infrastructure, vous p
 >>
 > IPv6
 >>
+>>> [!warning]
+>>>
+>>> Par défaut, le bloc IPv6 livré avec votre PCC n'est pas activé, il est requis d'ouvrir une demande au support technique pour demander son activation.
+>>>
+>>
 >> Vous pouvez récupérer les informations de votre bloc d'adresse IPv6 publiques depuis votre espace client, depuis la page [Gérer mes IPs](https://www.ovh.com/manager/#/dedicated/ip?serviceType=pcc&page=1).
 >>
 >> Avant de débuter, et afin d’utiliser les mêmes terminologies durant les manipulations, nous vous invitons à prendre connaissance du tableau ci-dessous. Il référence des termes que nous utiliserons dans cette documentation :
 >> |Terme|Description|Exemple|
 >> |---|---|---|
->> |YOUR_IPV6|Il s'agit d'une adresse IPv6 du bloc IPv6 attribué à votre service|2607:5300:xxxx:xxxx::1|
->> |IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6, généralement de 64|2607:5300:xxxx:xxxx::/56|
->> |IPv6_GATEWAY|Il s'agit de la passerelle (ou *gateway*) de votre bloc IPv6|2607:5300:xxxx:xxxx:ffff:ffff:ffff:ffff|
+>> |YOUR_IPV6|Il s'agit d'une adresse IPv6 du bloc IPv6 attribué à votre service|2001:41d0:xxxx:xxxx::1|
+>> |IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6, généralement de 64|2001:41d0:xxxx:xxxx::/56|
+>> |IPv6_GATEWAY|Il s'agit de la passerelle (ou *gateway*) de votre bloc IPv6|2001:41d0:xxxx:xxxx:ffff:ffff:ffff:ffff|
 >>
 
 ### Configurer une IP publique
@@ -76,9 +81,9 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 >> dns-nameservers 213.186.33.99
 >> ```
 >>
->> Montez la carte à l’aide d’un `ifup` de votre interface.
+>> Redémarrez votre système réseau avec `systemctl restart networking`.
 >>
->> Vous pourrez vérifier également la configuration avec un `ifconfig`.
+>> Vous pourrez vérifier la configuration avec un `ip a`.
 >>
 >> Si votre machine virtuelle ne trouve pas le réseau, pensez à vérifier que la carte réseau est configurée sur *VMNetwork* et non sur *LocalPortGroup* ou un VLAN et que la case de connexion de la carte est cochée.
 >>
@@ -106,7 +111,48 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 >> ```
 >>
 > IPv6 Linux
+>>
+>> Voici un exemple de configuration sur la distribution Debian :
+>>
+>> ![Interface IPv6](images/config_ip_interfaces_v6.jpg){.thumbnail}
+>>
+>> ```sh
+>> auto eth0
+>> iface eth0 inet6 static
+>> address 2001:41d0:xxxx:xxxx::
+>> netmask 56
+>> gateway 2001:41d0:xxxx:xxxx:ffff:ffff:ffff:ffff
+>> ```
+>>
+>> Redémarrez votre système réseau avec `systemctl restart networking`.
+>>
+>> Vous pourrez vérifier la configuration avec un `ip a`.
+>>
+>> Si votre machine virtuelle ne trouve pas le réseau, pensez à vérifier que la carte réseau est configurée sur *VMNetwork* et non sur *LocalPortGroup* ou un VLAN et que la case de connexion de la carte est cochée.
+>>
 > IPv6 Windows
+>>
+>> Voici un exemple de configuration sur Windows :
+>>
+>> Dans le `panneau de configuration`{.action} vous devrez aller dans `Réseau et Internet`{.action} puis `Centre réseau et partage`{.action} et enfin `Modifier l'adaptateur réseau`{.action}.
+>>
+>> Pour aller plus vite, vous pouvez cliquer sur le champ de recherche Windows et écrire `Run` (ce qui correspond à appuyer simultanément sur la touche *Windows* de votre clavier et la touche *R*). La console d’exécution Windows s’ouvrira et vous pourrez entrer la commande suivante :
+>>
+>> ```shell
+>> ncpa.cpl
+>> ```
+>>
+>> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et `Propriétés`{.action). Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur 'Properties' puis renseignez les informations de votre IP comme suit :
+>>
+>> ![Configuration Windows IPv6](images/config_ip_windows_v6.jpg){.thumbnail}
+>>
+>> ```sh
+>> Adresse IP : 2001:41d0:xxxx:xxxx::
+>> Masque de sous-réseau : 56
+>> Paserelle par défaut : 2001:41d0:xxxx:xxxx:ffff:ffff:ffff:ffff
+>> Serveur DNS : 2001:41d0:3:163::1
+>> ```
+>>
 
 ### Configurer une IP privée
 
@@ -141,9 +187,9 @@ netmask 255.255.255.0
 gateway 192.168.70.254
 ```
 
-Montez la carte à l’aide d’un `ifup` de votre interface.
+Redémarrez votre système réseau avec `systemctl restart networking`.
 
-Vous pouvez également vérifier la configuration avec un `ifconfig`.
+Vous pourrez vérifier la configuration avec un `ip a`.
 
 #### Windows
 
