@@ -1,5 +1,5 @@
 ---
-title: Managed Rancher Service - Creating a Managed Kubernetes Service (MKS) cluster (EN)
+title: Creating a Managed Kubernetes Service (MKS) cluster in MRS
 excerpt: 'Find out how to create a Managed Kubernetes Service (MKS) cluster on a Managed Rancher Service'
 updated: 2024-08-06
 ---
@@ -47,7 +47,7 @@ First, enter an MKS cluster name, for example `my-mks-cluster`:
 For the **Account Configuration**, you need to provide your OVHcloud API credentials (`Application Key`, `Application Secret` and `Consumer Key`).
 If you don't have OVHcloud API credentials, you can follow our guide on how to [Generate your OVHcloud API keys](/pages/manage_and_operate/api/first-steps#advanced-usage-pair-ovhcloud-apis-with-an-application).
 
-Also provide your `Public Cloud project ID`. The project ID is where your Managed Kubernetes Service (MKS) cluster will be deployed. You can follow the guide on [How to create your first Project](/pages/public_cloud/compute/create_a_public_cloud_project) or if already existing, you can copy/paste it from the [OVHcloud Control Panel](/links/manager) or [API](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project).
+Also provide your `Public Cloud project ID`. The project ID is where your Managed Kubernetes Service (MKS) cluster will be deployed. You can follow the guide on [How to create your first Project](/pages/public_cloud/compute/create_a_public_cloud_project) or if already existing, you can copy/paste it from the [OVHcloud Control Panel](/links/manager) or [API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project).
 
 ![OVHcloud Project ID](images/project-id.png){.thumbnail}
 

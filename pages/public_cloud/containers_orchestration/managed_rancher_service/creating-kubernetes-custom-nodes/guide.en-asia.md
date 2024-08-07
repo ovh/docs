@@ -1,5 +1,5 @@
 ---
-title: Managed Rancher Service - Create a Kubernetes cluster with existing nodes (Generic)
+title: Creating a Kubernetes cluster with existing nodes (Generic) in MRS
 excerpt: 'Find out how to create a RKE2/K3s Kubernetes cluster with existing nodes on a Managed Rancher Service'
 updated: 2024-08-06
 ---

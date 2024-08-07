@@ -1,5 +1,5 @@
 ---
-title: Managed Rancher Service - Creating a Managed Kubernetes Service (MKS) cluster
+title: Creating a Managed Kubernetes Service (MKS) cluster in MRS
 excerpt: 'Find out how to create a Managed Kubernetes Service (MKS) cluster on a Managed Rancher Service'
 updated: 2024-08-06
 ---

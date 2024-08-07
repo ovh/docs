@@ -1,5 +1,5 @@
 ---
-title: Managed Rancher Service - Backing up and restoring a Kubernetes cluster
+title: Backing up and restoring a Kubernetes cluster in Managed Rancher Service
 excerpt: 'Find out how to backup and restore a Kubernetes cluster and configure recurring etcd backups to an OVHcloud Object Storage S3 on a Managed Rancher Service'
 updated: 2024-08-06
 ---

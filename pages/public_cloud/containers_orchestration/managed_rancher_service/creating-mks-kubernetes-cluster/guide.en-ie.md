@@ -1,5 +1,5 @@
 ---
-title: Managed Rancher Service - Creating a Managed Kubernetes Service (MKS) cluster
+title: Creating a Managed Kubernetes Service (MKS) cluster in MRS
 excerpt: 'Find out how to create a Managed Kubernetes Service (MKS) cluster on a Managed Rancher Service'
 updated: 2024-08-06
 ---
@@ -97,7 +97,7 @@ You can click on the `Explore`{.action} button to manage your MKS Cluster.
 
 ## Go further
 
-- To have an overview of the OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/en-iw/public-cloud/managed-rancher-service/).
+- To have an overview of the OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/en-ie/public-cloud/managed-rancher-service/).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
