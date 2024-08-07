@@ -6,7 +6,7 @@ updated: 2024-08-07
 
 ## Objective
 
-[ElastAlert 2](https://github.com/jertel/elastalert){.external} is an alerting framework originally designed by Yelp. It is able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch/OpenSearch ecosystem. Their motto is: "If you can see it in your dashboards, ElastAlert 2 can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compatability with OpenSearch through [aliases](/pages/manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards) and [indexes](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input). Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform.
+[ElastAlert 2](https://github.com/jertel/elastalert){.external} is an alerting framework originally designed by Yelp. It is able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch/OpenSearch ecosystem. Their motto is: "If you can see it in your dashboards, ElastAlert 2 can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compatibility with OpenSearch through [aliases](/pages/manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards) and [indexes](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input). Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform.
 
 ## Requirements
 
