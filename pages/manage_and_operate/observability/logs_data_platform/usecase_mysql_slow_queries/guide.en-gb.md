@@ -1,7 +1,7 @@
 ---
 title: Tracking slow MySQL queries with Logs Data Platform
 excerpt: Keep your MySQL database at high speed with Logs Data Platform!
-updated: 2024-08-06
+updated: 2024-08-07
 ---
 
 ## Objective
@@ -121,7 +121,7 @@ output.logstash:
 
 ```
 
-Do not forget to modify **<X-OVH-TOKEN-VALUE>** to the write token value of your log stream.
+Do not forget to replace **<X-OVH-TOKEN-VALUE>** with the write token value of your log stream.
 
 Enable filebeat MySQL support with the following command:
 

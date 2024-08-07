@@ -1,6 +1,6 @@
 ---
 title: Pushing logs with a logging library - Rust - gelf_logger and log4rs-gelf
-updated: 2024-08-06
+updated: 2024-08-07
 ---
 
 ## Objective
@@ -23,14 +23,15 @@ Those loggers will:
 
 To complete this guide you will need:
 
-- Rust, we recommend the last stable version.
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- Rust. We recommend the last stable version.
+- [An activated Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
 - [To create at least one Stream and get its token.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
-- Install the [**serde**](https://serde.rs/){.external} crate with the **derive** feature.
-- Install the [**log**](https://crates.io/crates/log){.external} crate with the **serde** feature.
+- To install the [**serde**](https://serde.rs/){.external} crate with the **derive** feature.
+- To install the [**log**](https://crates.io/crates/log){.external} crate with the **serde** feature.
 
+## Instructions
 
-## First method: gelf_logger
+### First method: gelf_logger
 
 You can install the **gelf_logger** crate by adding the dependency to your `Cargo.toml`:
 
@@ -113,7 +114,7 @@ Don't forget to modify the placeholder **<YOUR-WRITE-TOKEN>** to the actual valu
 
 You could also look at the [generated API documentaton](https://docs.rs/gelf_logger/*){.external}.
 
-## Second method: log4rs-gelf
+### Second method: log4rs-gelf
 
 This method is an alternative to the previous one. Please consider the following as a different rust project. You need to be familiar with the [log4rs framework](https://docs.rs/log4rs/latest/log4rs/){.external}
 
@@ -142,9 +143,9 @@ $ cargo add log4rs-gelf -F ovh-ldp
 ```
 
 
-### Examples
+#### Examples
 
-#### From a YAML configuration file
+##### From a YAML configuration file
 
 Copy the content of this yaml file in a file **log4rs.yaml**. This file will be retrieved by the rust program to configure the framework.
 
@@ -171,11 +172,12 @@ root:
   level: info
 ```
 
-Don't forget to modify the placeholder **<YOUR-LDP-CLUSTER-ADDRESS>** to the cluster where your stream resides. There is no need to put the Gelf port. Example: "gra3.logs.ovh.com".
+Don't forget to replace the placeholder **<YOUR-LDP-CLUSTER-ADDRESS>** with the cluster where your stream resides. There is no need to put the Gelf port. Example: "gra3.logs.ovh.com".
 
-Don't forget to modify the placeholder **<YOUR-WRITE-TOKEN>** to the actual value of the write token of your stream
+Don't forget to replace the placeholder **<YOUR-WRITE-TOKEN>** with the actual value of the write token of your stream
 
 Replace the X-OVH-TOKEN value with your X-OVH-TOKEN stream value and the hostname with your cluster.
+
 Use this configuration in your project:
 
 ```rust

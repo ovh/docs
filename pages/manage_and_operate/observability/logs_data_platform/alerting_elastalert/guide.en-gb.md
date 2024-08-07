@@ -1,7 +1,7 @@
 ---
 title: Alerting - Using ElastAlert 2 with Logs Data Platform
 excerpt: Deploy in a few minutes one of the most complete alert system.
-updated: 2024-08-06
+updated: 2024-08-07
 ---
 
 ## Objective

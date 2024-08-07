@@ -1,7 +1,7 @@
 ---
 title: CLI - ldp-tail, a tool to follow your logs in real-time
 excerpt: This super-powered tail will follow and format your logs with flying colors.
-updated: 2023-08-06
+updated: 2023-08-07
 ---
 
 ## Objective
@@ -155,7 +155,7 @@ Sample:
 $ ldp@ubuntu:~$ ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo&begin=<BEGIN>&end=<END>" --pattern "{{date .timestamp}}: {{ ._category }}"
 ```
 
-To make the magic happen, replace begin and end values with UNIX timestamps that have been in the last few hours. For example, for the 5th August 2024 between 09:00:00 UTC and 11:00:00 UTC
+To make the magic happen, replace the `<BEGIN>` and `<END>` values with UNIX timestamps from the last few hours. For example, for the 5th August 2024 between 09:00:00 UTC and 11:00:00 UTC:
 
 
 ```shell-session

@@ -1,7 +1,7 @@
 ---
 title: OpenSearch Index as a Service
 excerpt: Use the power of OpenSearch without managing a cluster.
-updated: 2024-08-06
+updated: 2024-08-07
 ---
 
 ## Objective
