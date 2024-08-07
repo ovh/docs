@@ -30,9 +30,9 @@ After you have created a virtual machine (VM), you can assign to it a public or 
 >
 >> A Private Cloud IP block is organized as follows:
 >>
->> - the first IP address marked as `reserved` corresponds to the network address;
->> - the following IPs can be used for your virtual machines. They are marked as `Available` if no VM is using them, or as `Used` if they are being used;
->> - the last four IPs in the block are reserved, two are dedicated to OVHcloud routers for operating the block, and the other two are used for gateway and broadcast.
+>> - The first IP address marked as `reserved` corresponds to the network address.
+>> - The following IPs can be used for your virtual machines. They are marked as `Available` if no VM is using them, or as `Used` if they are being used.
+>> - The last four IPs in the block are reserved, two are dedicated to OVHcloud routers for operating the block, and the other two are used for gateway and broadcast.
 >>
 >> ![Advanced configuration on the OVH Network](images/02config_ip_ovh_network_advanced.png){.thumbnail}
 >>
@@ -43,7 +43,7 @@ After you have created a virtual machine (VM), you can assign to it a public or 
 >>> By default, the IPv6 block delivered with your Dedicated Cloud is not activated, so you will need to open a [support request](https://help.ovhcloud.com/csm?id=csm_get_help) to request its activation.
 >>>
 >>
->> You can retrieve your public IPv6 address block information via the OVHcloud Control Panel by going to [Manage my IPs](https://www.ovh.com/manager/#/dedicated/ip?serviceType=pcc&page=1).
+>> You can retrieve your public IPv6 address block information via the OVHcloud Control Panel by going to the [Manage my IPs](https://www.ovh.com/manager/#/dedicated/ip?serviceType=pcc&page=1) section.
 >>
 >> Before you begin, and in order to use the same terminology during the changes, please read the table below. It references terms that we will use in this documentation:
 >>
@@ -95,7 +95,7 @@ To configure a public IP address on your virtual machine, you must first choose 
 >> ncpa.cpl
 >> ```
 >>
->> Then right-click on the network adapter corresponding to the VMNetwork and select `Properties`{.action). Then select `TCP/IP v4 protocol`{.action} and click on `Properties`{.action) and enter your IP information as follows:
+>> Then right-click the network adapter corresponding to the VMNetwork and select `Properties`{.action). Then select `TCP/IP v4 protocol`{.action} and click on `Properties`{.action) and enter your IP information as follows:
 >>
 >> ![Windows Configuration](images/config_ip_windows.jpg){.thumbnail}
 >>
@@ -138,7 +138,7 @@ To configure a public IP address on your virtual machine, you must first choose 
 >> ncpa.cpl
 >> ```
 >>
->> Then right-click on the network adapter corresponding to the VMNetwork and select `Properties`{.action). Then select `TCP/IP v4 protocol`{.action} and click on `Properties`{.action) and enter your IP information as follows:
+>> Then right-click the network adapter corresponding to the VMNetwork and select `Properties`{.action). Then select `TCP/IP v4 protocol`{.action} and click on `Properties`{.action) and enter your IP information as follows:
 >>
 >> ![Windows IPv6 Configuration](images/config_ip_windows_v6.jpg){.thumbnail}
 >>
