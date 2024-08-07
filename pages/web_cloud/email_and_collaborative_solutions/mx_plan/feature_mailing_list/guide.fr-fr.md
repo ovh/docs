@@ -43,7 +43,7 @@ L'expéditeur (sender) transmet l'e-mail à la mailing list. Le modérateur (mod
 
 > [!warning]
 >
-> Une mailing list se comporte comme une adresse e-mail, il n'est pas possible de modifier son nom. Vous devez en créer une nouvelle et supprimer l'ancienne.
+> Une mailing list se comporte comme une adresse e-mail, il n'est pas possible de modifier son nom. Si le nom d'une mailing list ne vous convient plus, vous devez en créer une nouvelle et supprimer l'ancienne.
 
 Afin de créer votre mailing list, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}  et sélectionnez l'onglet `Web Cloud`{.action} en haut.
 
