@@ -6,7 +6,7 @@ updated: 2024-08-07
 
 ## Objective
 
-MySQL is one of the most popular database software. It has many features and can answer to complex queries with great performance. But with time, your database expands itself, its complexity grows, and the performance will naturally decline. There are many tips available to improve the speed of your queries but to rectify this you will have to know which queries are slow.
+MySQL is one of the most popular options in database software. It has many features and can answer complex queries with great performance. But with time, your database expands itself, its complexity grows, and the performance will naturally decline. There are many tips available to improve the speed of your queries but to rectify this you will have to know which queries are slow.
 
 This guide will help you to track your slowest queries and send them to Logs Data Platform for further analysis.
 
@@ -23,7 +23,7 @@ Before, you must read these three guides:
 ### Configure the MySQL slow query logs
 To send your logs to Logs Data Platform you first need to activate the slow query logs in your MySQL configuration.
 
-I recommend you to refer to the official [MySQL documentation](http://dev.mysql.com/doc/){.external} for your own version of MySQL. For example here is a working configuration on MySQL 5.6:
+We recommend you refer to the official [MySQL documentation](http://dev.mysql.com/doc/){.external} for your own version of MySQL. For example here is a working configuration on MySQL 5.6:
 
 ```ini
 # Here you can see queries with especially long duration
@@ -32,7 +32,7 @@ slow_query_log_file = /var/log/mysql/slow-queries.log
 long_query_time = 0.5
 ```
 
-If you add theses lines to your MySQL configuration file and restart it, MySQL will then log any query taking longer than 0.5 second to complete in the file */var/log/mysql/slow-queries.log*
+If you add these lines to your MySQL configuration file and restart it, MySQL will then log any query taking longer than 0.5 seconds to complete in the file */var/log/mysql/slow-queries.log*
 
 Here is a sample of the lines produced by the slow query log:
 
