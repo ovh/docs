@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguracja sieci w systemie Windows Server z Hyper-V w ofercie High Grade & SCALE'
-excerpt: 'Dowiedz się, jak skonfigurować sieć w systemie Windows Server z Hyper-V w ofercie High Grade & SCALE'
-updated: 2023-08-31
+title: 'Konfiguracja sieci w systemie Windows Server z Hyper-V'
+excerpt: 'Dowiedz się, jak skonfigurować sieć w systemie Windows Server z Hyper-V'
+updated: 2024-08-07
 ---
 
 > [!primary]
@@ -10,9 +10,19 @@ updated: 2023-08-31
 
 ## Wprowadzenie
 
+**Dowiedz się, jak skonfigurować sieć w systemie Windows Server przy użyciu Hyper-V.**
+
+### Gamy High Grade & Scale
+
 W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP w trybie *bridged* (za pomocą wirtualnych adresów MAC). Konieczne jest zatem skonfigurowanie Additional IP w trybie routera lub vRack.
 
-**Dowiedz się, jak skonfigurować sieć w systemie Windows Server przy użyciu Hyper-V.**
+### Gama Advance
+
+Ponieważ serwery Advance mają tylko dwa interfejsy sieciowe, zalecane jest skonfigurowanie serwera w trybie prywatnym poprzez utworzenie streamingu z dwoma interfejsami podłączonymi do sieci vRack. Drugi serwer może pełnić rolę bramy internetowej, przy czym jeden interfejs jest podłączony do sieci prywatnej, a drugi do sieci publicznej.
+
+W przypadku tego typu konfiguracji można skorzystać z funkcji IP jako aliasu opisanej w artykule [Konfiguracja adresu Additional IP jako aliasu](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+
+Konfiguracja ta może zostać wdrożona na każdym z serwerów Hyper-V (interfejs prywatny / interfejs publiczny na każdym serwerze) i nie można skonfigurować agregacji portów. Niemniej jednak, w takim przypadku sieć prywatna będzie dysponować mniejszą przepustowością i brakiem wysokiej dostępności interfejsów sieciowych.
 
 ## Wymagania początkowe
 
