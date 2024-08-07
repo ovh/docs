@@ -1,7 +1,7 @@
 ---
 title: "Présentation des solutions pour chiffrer des VM"
 excerpt: "Découvrez les solutions qui s'offrent à vous pour chiffrer des VM avec ou sans KMS OVHcloud au sein de Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-08-06
+updated: 2024-08-07
 ---
 <style>
 details>summary {
@@ -84,7 +84,7 @@ Cette architecture est redondante et permet ainsi de subir des pannes sans que c
 
 #### KMIP
 
-KMIP pour VMware on OVHcloud fournit un service de gestion des clés compatibles avec le chiffrement VMware on OVHcloud vSAN et le chiffrement basé sur l'hôte au sein de vSphere.
+KMIP fournit un service compatible avec le chiffrement vSAN et le chiffrement basé sur l'hôte au sein de VMware vSphere on OVHcloud.
 
 ///
 
@@ -161,7 +161,7 @@ Vous pouvez le faire en ajoutant un :
 
 - **Fournisseur de clés natives.**
 
-![Native Key Provider](images/key_provider.png){.thumbnail}
+![Native Key Provider](images/key_provider_native.png){.thumbnail}
 
 Ce guide vous détaille en précision les étapes à suivre :
 
