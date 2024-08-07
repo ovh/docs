@@ -34,7 +34,7 @@ La connexion à l’IPMI peut s’effectuer via plusieurs méthodes¹. En voici 
 ² Fonctionnalité permettant de monter une image ISO stockée localement sur votre machine au serveur dédié distant, et donc d'installer un OS via l'IPMI.<br />
 ³ KVM = Keyboard Video and Mouse<br />
 ⁴ Selon la compatibilité matérielle de votre serveur dédié : utiliser le KVM Java à la place si incompatible.<br />
-⁵ Si l'OS que vous souhaitez installer n'est pas disponible dans le [catalogue des systèmes d'exploitation disponibles sur les serveurs dédiés OVHcloud](/links/bare-metal/os), notez que vous pouvez aussi utiliser une image personnalisée: voir [Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) pour plus de détails.<br />
+⁵ Si l'OS que vous souhaitez installer n'est pas disponible dans le [catalogue des systèmes d'exploitation disponibles sur les serveurs dédiés OVHcloud](/links/bare-metal/os), notez que vous pouvez aussi utiliser une image personnalisée: voir [Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) pour plus de détails.<br />
 ⁶ SoL = Serial over Lan
 
 Pour activer l'une de ces méthodes, connectez-vous à votre [espace client OVHcloud](/links/manager). Dans la partie `Bare Metal Cloud`{.action}, cliquez sur `Serveurs dédiés`{.action} et sélectionnez votre serveur puis cliquez sur l'onglet `IPMI/KVM`{.action}.
@@ -124,7 +124,7 @@ Le redémarrage de l'IPMI prend quelques minutes.
 > Les versions 64 bits de Java peuvent empêcher l'ouverture des menus `Redirect ISO`/`Redirect CDROM` et provoquer le blocage de JViewer.
 >
 
-Pour commencer, ouvrez [IPMI depuis une applet Java](./#applet-java) via votre [espace client OVHcloud](/links/manager). Cliquez ensuite sur `Device`{.action} dans la barre de menus et sélectionnez `Redirect ISO`{.action} dans le menu déroulant.
+Pour commencer, ouvrez [IPMI depuis une applet Java](#applet-java) via votre [espace client OVHcloud](/links/manager). Cliquez ensuite sur `Device`{.action} dans la barre de menus et sélectionnez `Redirect ISO`{.action} dans le menu déroulant.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
@@ -146,7 +146,7 @@ Suivez les étapes requises pour installer le système d'exploitation. N'oubliez
 > OVHcloud ne garantit pas la fonctionnalité des systèmes d'exploitation installés via IPMI. Cette méthode ne doit être envisagée que par un administrateur de serveurs expérimenté.
 >
 
-Pour commencer, ouvrez [IPMI depuis une applet Java](./#applet-java) via votre [espace client OVHcloud](/links/manager). Cliquez ensuite sur `Virtual Media`{.action} puis sur `Virtual Storage`{.action}.
+Pour commencer, ouvrez [IPMI depuis une applet Java](#applet-java) via votre [espace client OVHcloud](/links/manager). Cliquez ensuite sur `Virtual Media`{.action} puis sur `Virtual Storage`{.action}.
 
 ![Virtual storage](images/virtual_storage.png){.thumbnail}
 

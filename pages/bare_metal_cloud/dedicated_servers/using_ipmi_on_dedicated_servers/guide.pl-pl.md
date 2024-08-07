@@ -38,7 +38,7 @@ Przyłącz się do społeczności [user community](/links/community).Konsola IPM
 ² Funkcja pozwalająca na zamontowanie obrazu ISO przechowywanego lokalnie na Twojej maszynie na zdalnym serwerze dedykowanym i tym samym na zainstalowanie systemu operacyjnego za pośrednictwem IPMI.<br />
 ³ KVM = Keyboard Video and Mouse<br />
 ⁴ w zależności od kompatybilności sprzętowej Twojego serwera dedykowanego: użyj KVM Java zamiast niego, jeśli jest on niekompatybilny.<br />
-⁵ Jeśli system operacyjny, który chcesz zainstalować, nie jest dostępny w [katalogu systemów operacyjnych dostępnych na serwerach dedykowanych OVHcloud](/links/bare-metal/os), możesz również użyć spersonalizowanego obrazu: zobacz [Porównanie Bring Your Own Image (BYOI) i Bring Your Own Linux (BYOLinux)](pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)], aby uzyskać więcej informacji.<br />
+⁵ Jeśli system operacyjny, który chcesz zainstalować, nie jest dostępny w [katalogu systemów operacyjnych dostępnych na serwerach dedykowanych OVHcloud](/links/bare-metal/os), możesz również użyć spersonalizowanego obrazu: zobacz [Porównanie Bring Your Own Image (BYOI) i Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)], aby uzyskać więcej informacji.<br />
 ⁶ SoL = numer seryjny
 
 Aby aktywować jedną z tych metod, zaloguj się do [Panelu klienta OVHcloud](/links/manager). W sekcji `Bare Metal Cloud`{.action} kliknij `Serwery dedykowane`{.action} i wybierz swój serwer, a następnie kliknij zakładkę `IPMI/KVM`{.action}.
@@ -49,15 +49,15 @@ Aby aplet Java działał, na komputerze musi być zainstalowana Java. Jeśli jes
 
 W sekcji `Remote KVM`{.action} Panelu klienta OVHcloud kliknij `Z apletu Java (KVM)`{.action}:
 
-![Dostęp KVM Java](obrazy/ipmi-kvm-java-01.png){.thumbnail}
+![Dostęp KVM Java](images/ipmi-kvm-java-01.png){.thumbnail}
 
 Pobierz plik `kvm.jnlp`, gdy zostaniesz zaproszony, a następnie uruchom go:
 
-![Otwarcie KVM Java](obrazy/ipmi-kvm-java-02.png){.thumbnail}
+![Otwarcie KVM Java](images/ipmi-kvm-java-02.png){.thumbnail}
 
 Następnie przejdź do strony logowania. Wprowadź dane dostępowe `root`, tak jak przy logowaniu przy użyciu terminala lub programu zewnętrznego:
 
-![Podgląd KVM Java](obrazy/ipmi-kvm-java-03.png){.thumbnail}
+![Podgląd KVM Java](images/ipmi-kvm-java-03.png){.thumbnail}
 
 Możesz teraz zarządzać serwerem.
 
@@ -65,15 +65,15 @@ Możesz teraz zarządzać serwerem.
 
 W sekcji `Remote KVM`{.action} Panelu klienta OVHcloud kliknij `Z przeglądarki (KVM)`{.action}:
 
-![Dostęp KVM HTML](obrazy/ipmi-kvm-html-01.png){.thumbnail}
+![Dostęp KVM HTML](images/ipmi-kvm-html-01.png){.thumbnail}
 
 Aktywacja zajmie kilka sekund. Pojawi się komunikat o dostępności połączenia przez IPMI.
 
-![Otwarcie KVM HTML](obrazy/ipmi-kvm-html-02.png){.thumbnail}
+![Otwarcie KVM HTML](images/ipmi-kvm-html-02.png){.thumbnail}
 
 Kliknij `Dostęp do konsoli (KVM)`{.action}, aby otworzyć konsolę w przeglądarce.
 
-![Podgląd KVM HTML](obrazy/ipmi-kvm-html-03.png){.thumbnail}
+![Podgląd KVM HTML](images/ipmi-kvm-html-03.png){.thumbnail}
 
 ### Otwórz SoL przez SSH <a name="sol-ssh"></a>
 
@@ -127,7 +127,7 @@ Ponowne uruchomienie IPMI zajmuje kilka minut.
 >
 > 64-bitowe wersje Javy mogą uniemożliwić otwarcie menu `Redirect ISO`/`Redirect CDROM` i spowodować zablokowanie JViewera.
 
-Aby rozpocząć, otwórz [IPMI z poziomu apletu Java](./#applet-java) w [Panelu klienta OVHcloud](/links/manager). Następnie kliknij `Device`{.action} na pasku menu i wybierz `Redirect ISO`{.action} z rozwijanego menu.
+Aby rozpocząć, otwórz [IPMI z poziomu apletu Java](#applet-java) w [Panelu klienta OVHcloud](/links/manager). Następnie kliknij `Device`{.action} na pasku menu i wybierz `Redirect ISO`{.action} z rozwijanego menu.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
@@ -149,7 +149,7 @@ Postępuj zgodnie z instrukcjami potrzebnymi do zainstalowania systemu operacyjn
 > OVHcloud nie gwarantuje funkcjonalności systemów operacyjnych zainstalowanych za pomocą IPMI. Metoda ta powinna być rozważana tylko przez doświadczonego administratora serwerów.
 >
 
-Aby rozpocząć, otwórz [IPMI z poziomu apletu Java](./#applet-java) w [Panelu klienta OVHcloud](/links/manager). Kliknij `Virtual Media`{.action}, a następnie `Virtual Storage`{.action}.
+Aby rozpocząć, otwórz [IPMI z poziomu apletu Java](#applet-java) w [Panelu klienta OVHcloud](/links/manager). Kliknij `Virtual Media`{.action}, a następnie `Virtual Storage`{.action}.
 
 ![Virtual storage](images/virtual_storage.png){.thumbnail}
 

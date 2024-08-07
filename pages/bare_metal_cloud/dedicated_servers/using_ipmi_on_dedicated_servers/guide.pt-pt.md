@@ -38,10 +38,10 @@ A ligação ao IPMI pode ser efetuada através de vários métodos¹. Aqui está
 ² Funcionalidade que permite montar uma imagem ISO armazenada localmente na sua máquina ao servidor dedicado remoto e, assim, instalar um SO através do IPMI.<br />
 ³ KVM = Keyboard Video and Mouse<br />
 ⁴ De acordo com a compatibilidade material do seu servidor dedicado : utilizar o KVM Java em vez disso se incompatível.<br />
-⁵ Se o SO que deseja instalar não estiver disponível no [catálogo de sistemas operativos disponíveis nos servidores dedicados OVHcloud](/links/bare-metal/os), tenha em conta que também pode utilizar uma imagem personalizada: consulte [Comparação entre Bring Your Own Image (BYOI) e Bring Your Own Linux (BYOLinux)](pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) para mais pormenores.<br />
+⁵ Se o SO que deseja instalar não estiver disponível no [catálogo de sistemas operativos disponíveis nos servidores dedicados OVHcloud](/links/bare-metal/os), tenha em conta que também pode utilizar uma imagem personalizada: consulte [Comparação entre Bring Your Own Image (BYOI) e Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) para mais pormenores.<br />
 ⁶ SoL = Serial over Lan
 
-Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](/links/manager). Na parte "Bare Metal Cloud" {.action}, clique em `Servidores dedicados`{.action} e selecione o seu servidor, em seguida, clique no separador `IPMI/KVM`{.action}.
+Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](/links/manager). Na parte `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} e selecione o seu servidor, em seguida, clique no separador `IPMI/KVM`{.action}.
 
 ### Abrir um KVM através de applet Java <a name="applet-java"></a>
 
@@ -127,7 +127,7 @@ A reinicialização do IPMI demora alguns minutos.
 >
 > As versões 64 bits de Java podem impedir a abertura dos menus `Redirect ISO`/`Redirect CDROM` e provocar o bloqueio do JViewer.
 
-Para começar, abra o [IPMI a partir de uma applet Java](./#applet-java) através da sua [Área de Cliente OVHcloud](/links/manager). A seguir, clique em `Device`{.action} na barra de menus e selecione `Redirect ISO`{.action} no menu pendente.
+Para começar, abra o [IPMI a partir de uma applet Java](#applet-java) através da sua [Área de Cliente OVHcloud](/links/manager). A seguir, clique em `Device`{.action} na barra de menus e selecione `Redirect ISO`{.action} no menu pendente.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
@@ -149,7 +149,7 @@ Siga os passos necessários para instalar o sistema operativo. Não se esqueça 
 > A OVHcloud não garante a funcionalidade dos sistemas operativos instalados através do IPMI. Este método só deve ser considerado por um administrador de servidores experiente.
 >
 
-Para começar, abra o [IPMI a partir de uma applet Java](./#applet-java) através da sua [Área de Cliente OVHcloud](/links/manager). A seguir, clique em `Virtual Media`{.action} e, a seguir, em `Virtual Storage`{.action}.
+Para começar, abra o [IPMI a partir de uma applet Java](#applet-java) através da sua [Área de Cliente OVHcloud](/links/manager). A seguir, clique em `Virtual Media`{.action} e, a seguir, em `Virtual Storage`{.action}.
 
 ![Virtual storage](images/virtual_storage.png){.thumbnail}
 

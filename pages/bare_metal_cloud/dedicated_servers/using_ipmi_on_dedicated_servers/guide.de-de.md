@@ -38,7 +38,7 @@ Die Verbindung mit IPMI kann auf verschiedene Arten hergestellt werden¹. Hier e
 ² Funktion zum Mounten eines lokal auf Ihrem Rechner gespeicherten ISO-Images auf einen dedizierten Server an einer entfernten Stelle, mit der Sie ein Betriebssystem über IPMI installieren können.<br />
 ³ KVM = Keyboard Video and Mouse<br />
 ⁴ Je nach Hardware-Kompatibilität Ihres Dedicated Servers : wenn nicht kompatibel, Java KVM verwenden.<br />
-⁵ Wenn das Betriebssystem, das Sie installieren möchten, nicht im [Katalog der für die OVHcloud Dedicated Server verfügbaren Betriebssysteme](/links/bare-metal/os) verfügbar ist, können Sie auch ein personalisiertes Image verwenden: siehe [Vergleich von Bring Your Own Image (BYOI) und Bring Your Own Linux (BYOLinux)](pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) für weitere Details.<br />
+⁵ Wenn das Betriebssystem, das Sie installieren möchten, nicht im [Katalog der für die OVHcloud Dedicated Server verfügbaren Betriebssysteme](/links/bare-metal/os) verfügbar ist, können Sie auch ein personalisiertes Image verwenden: siehe [Vergleich von Bring Your Own Image (BYOI) und Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) für weitere Details.<br />
 ⁶ SoL = Serial over LAN
 
 Um eine dieser Methoden zu aktivieren, loggen Sie sich in Ihrem [OVHcloud Kundencenter] ein (/links/manager). Klicken Sie im Bereich `Bare Metal Cloud`{.action} auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus und klicken Sie dann auf den Tab `IPMI/KVM`{.action}.
@@ -75,7 +75,7 @@ Klicken Sie dann auf `Zur Konsole (KVM)`, um die Konsole in Ihrem Browser zu öf
 
 ![KVM HTML-Vorschau](images/ipmi-kvm-html-03.png){.thumbnail}
 
-### SoL via SSH öffnen <a name=„sol-ssh“></a>
+### SoL via SSH öffnen <a name="sol-ssh"></a>
 
 Weitere Informationen zum Erstellen von SSH-Schlüsselpaaren finden Sie auf [dieser Seite](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
 
@@ -127,7 +127,7 @@ Der Neustart des IPMI dauert einige Minuten.
 >
 > 64-Bit-Versionen von Java können das Öffnen der Menüs `Redirect ISO`/`Redirect CDROM` verhindern und JViewer zum Absturz bringen.
 
-Um zu beginnen, öffnen Sie [IPMI über Java-Applet](./#applet-java) in Ihrem [OVHcloud Kundencenter](/links/manager). Klicken Sie anschließend im Menü auf `Device`{.action} und wählen Sie im Drop-down-Menü `Redirect ISO`{.action} aus.
+Um zu beginnen, öffnen Sie [IPMI über Java-Applet](#applet-java) in Ihrem [OVHcloud Kundencenter](/links/manager). Klicken Sie anschließend im Menü auf `Device`{.action} und wählen Sie im Drop-down-Menü `Redirect ISO`{.action} aus.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
@@ -149,7 +149,7 @@ Folgen Sie den notwendigen Schritten für die Installation des Betriebssystems. 
 > OVHcloud garantiert nicht die Funktionalität der über IPMI installierten Betriebssysteme. Diese Methode sollte nur von einem erfahrenen Server-Administrator erwogen werden.
 >
 
-Um zu beginnen, öffnen Sie [IPMI mit einem Java-Applet](./#applet-java) über Ihr [OVHcloud Kundencenter](/links/manager). Klicken Sie dann auf `Virtual Media`{.action} und auf `Virtual Storage`{.action}.
+Um zu beginnen, öffnen Sie [IPMI mit einem Java-Applet](#applet-java) über Ihr [OVHcloud Kundencenter](/links/manager). Klicken Sie dann auf `Virtual Media`{.action} und auf `Virtual Storage`{.action}.
 
 ![Virtual Storage](images/virtual_storage.png){.thumbnail}
 
@@ -244,4 +244,4 @@ Anschließend rufen Sie die [IPMI-Konsole](#procedure) in Ihrem [OVHcloud Kunden
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
-Für den Austausch mit unserer User Community gehen Sie auf [User Community](/links/Community).
+Für den Austausch mit unserer User Community gehen Sie auf [User Community](/links/community).

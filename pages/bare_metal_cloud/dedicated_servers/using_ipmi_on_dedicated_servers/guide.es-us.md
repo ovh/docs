@@ -103,7 +103,7 @@ El reinicio del IPMI tarda unos minutos.
 >
 > Las versiones de 64 bits de Java pueden impedir que se abran los menús `Redirect ISO`/`Redirect CDROM` y provocar el bloqueo de JViewer.
 
-En primer lugar, abra [IPMI desde un applet Java](./#applet-java) desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). A continuación, haga clic en `Device`{.action} en la barra de menú y seleccione `Redirect ISO`{.action} en el menú desplegable.
+En primer lugar, abra [IPMI desde un applet Java](#applet-java) desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). A continuación, haga clic en `Device`{.action} en la barra de menú y seleccione `Redirect ISO`{.action} en el menú desplegable.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
@@ -125,7 +125,7 @@ Siga los pasos necesarios para instalar el sistema operativo. No olvide eliminar
 > OVHcloud no garantiza la funcionalidad de los sistemas operativos instalados mediante IPMI. Este método solo debe ser considerado por un administrador de servidores con experiencia.
 >
 
-En primer lugar, abra [IPMI desde un applet Java](./#applet-java) desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en `Virtual Media`{.action} y seleccione `Virtual Storage`{.action}.
+En primer lugar, abra [IPMI desde un applet Java](#applet-java) desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en `Virtual Media`{.action} y seleccione `Virtual Storage`{.action}.
 
 ![Virtual storage](images/virtual_storage.png){.thumbnail}
 
