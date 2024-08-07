@@ -1,5 +1,5 @@
 ---
-title: Managed Rancher Service - Deploying a monitoring stack (Prometheus & Grafana) in a Kubernetes cluster
+title: Deploying a monitoring stack (Prometheus & Grafana) in a Kubernetes cluster in MRS
 excerpt: 'Find out how to deploy monitoring applications (Prometheus & Grafana) in a Kubernetes cluster and display metrics and dashboards on a Managed Rancher Service'
 updated: 2024-08-06
 ---

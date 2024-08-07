@@ -1,5 +1,5 @@
 ---
-title: Creating a Kubernetes cluster based on OVHcloud Public Cloud Compute Instances
+title: Creating a Kubernetes cluster based on OVHcloud Public Cloud Compute Instances in MRS
 excerpt: 'Find out how to create a Kubernetes cluster based on OVHcloud Public Cloud Compute Instances (PCI) on a Managed Rancher Service'
 updated: 2024-08-05
 ---
