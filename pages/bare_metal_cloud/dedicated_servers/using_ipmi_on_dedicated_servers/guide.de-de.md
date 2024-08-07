@@ -19,7 +19,7 @@ Die IPMI-Konsole (Intelligent Platform Management Interface) ermöglicht eine di
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
 >
-> Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-about).
+> Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 
 <a name="procedure"></a>
 
