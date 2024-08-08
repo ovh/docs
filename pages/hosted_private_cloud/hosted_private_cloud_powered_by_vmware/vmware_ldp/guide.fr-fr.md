@@ -1,13 +1,13 @@
 ---
 title: "Transfert des logs VMware vers un stream Logs Data Platform"
 excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-06-28
+updated: 2024-08-08
 ---
 
 > [!primary]
 >
-> Cette fonctionnalité est actuellement en phase Bêta. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié : <https://discord.gg/ovhcloud>.
->
+> Cette fonctionnalité est actuellement en phase Bêta. Ce guide peut donc être incomplet et mise à jour.
+> 
 
 ## Objectif
 
@@ -15,10 +15,11 @@ L'objectif de ce guide est de vous montrer comment activer le transfert des logs
 
 ## Prérequis
 
-- Disposer d'un compte client OVHcloud.
+- Disposer d'un [compte client OVHcloud](/links/manager).
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud.
 - Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud.
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
+- Avoir les options de sécurités activées, pour verifier lancer l'appel API [suivant](#security-options)
 
 ## Glossaire
 
@@ -90,6 +91,7 @@ Cette fonctionnalité n'est pas encore disponible dans la section Hosted Private
 > [!success]
 >
 > Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+>
 
 Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Premiers pas Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) ».
 
@@ -100,7 +102,7 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 
 > **Paramètres :**
 >
-> - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud, sous la forme `pcc-XXX-XXX-XXX-XXX`.
+> - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud, sous la forme "pcc-XXX-XXX-XXX-XXX".
 > - `kind` : nom du type de journal de l'abonnement, par exemple `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
 > - `streamId` : identifiant du flux (stream) de destination, (uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
@@ -128,7 +130,7 @@ Vous pouvez vous référer à ce guide pour retrouver comment administrer vos fl
 
 Utilisez les appels API suivants pour établir la liste des abonnements de votre compte Hosted Private Cloud.
 
-**Référencement de tous les appels API Hosted Private Cloud VMware on OVHcloud :**
+**Référencement de tous les appels API Hosted Private Cloud VMware on OVHcloud** :
 
 | **Méthode** |                   **Chemin**                   |                     **Description**                     |
 |:-----------:|:----------------------------------------------:|:-------------------------------------------------------:|
@@ -147,9 +149,9 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/subscription
 >
 
-> **Paramètres :**
+> **Paramètres** :
 >
-> - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud sous la forme `pcc-XXX-XXX-XXX-XXX`
+> - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud sous la forme "pcc-XXX-XXX-XXX-XXX".
 > - `kind` : nom du type de log de l'abonnement Hosted Private Cloud (par exemple `esxi`).
 >
 
@@ -175,9 +177,9 @@ Exemple de retour :
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 >
 
-> **Paramètres :**
+> **Paramètres** :
 >
-> - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloudsous la forme `pcc-XXX-XXX-XXX-XXX`.
+> - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud sous la forme "pcc-XXX-XXX-XXX-XXX".
 > - `subscriptionId` : nom du type de log de l'abonnement (par exemple `esxi`).
 >
 
@@ -191,6 +193,40 @@ Retour :
   "serviceName": "ldp-vg-XXXX"
 }
 ```
+
+### Étape 3 - Vérification des options de sécurités <a name="security-options"></a>
+
+#### Via l'API OVHcloud :
+
+Pour verifier si les options de sécurity sont activés au sein de votre HPC vSphere managé on OVHcloud, lancez l'appel API suivant :
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions
+>
+
+> **Paramètre** : 
+> 
+> - `serviceName` : Votre PCC sous la forme, "pcc-XXX-XXX-XXX-XXX". 
+>
+
+Exemple de retour si l'option est "activé" :
+
+> 
+> ```Shell
+> {
+> "state": "delivered"
+> }
+> ```
+
+Exemple de retour si l'option est en cours "d'activation" :
+
+>
+> ```Shell
+> {
+> "state": "creating"
+> }
+> ```
 
 ## Aller plus loin
 
