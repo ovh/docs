@@ -63,7 +63,55 @@ Sachez qu'il est tout à fait acceptable qu'un produit ne possède qu'une seule 
 
 Nous fournissons toutes les métadonnées pour l'identification de Hosted Private Cloud VMware on OVHcloud.
 
-### Étape 1 - Activation du transfert des logs Hosted Private Cloud
+### Étape 1 - Vérification des options de sécurités <a name="security-options"></a>
+
+> [!warning]
+>
+> Si le call API renvoi "disabled", contactez le support OVHcloud.
+>
+
+#### Via l'API OVHcloud :
+
+Pour vérifier si les options de sécurité sont présentes pour permettre l'activation de la fonctionnalité au sein de votre HPC VMware vSphere managé on OVHcloud, lancer l'appel API suivant :
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions
+>
+>
+> **Paramètre** :
+>
+> - `serviceName` : Votre PCC sous la forme, "pcc-XXX-XXX-XXX-XXX".
+>
+
+Exemple de retour si l'option est "activé" :
+
+
+```Shell
+ {
+ "state": "delivered"
+ }
+```
+
+Exemple de retour si l'option est en cours "d'activation" :
+
+
+```Shell
+ {
+ "state": "creating"
+ }
+```
+
+Exemple de retour si l'option n'est "pas activé" :
+
+
+```Shell
+ {
+ "state": "disabled"
+ }
+```
+
+### Étape 2 - Activation du transfert des logs Hosted Private Cloud
 
 > [!primary]
 > 
@@ -120,7 +168,7 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 
 La requête GET permet de lister vos souscriptions.
 
-### Étape 2 - Administrer vos stream Logs Data Platform
+### Étape 3 - Administrer vos stream Logs Data Platform
 
 #### Via l'espace client OVHcloud
 
@@ -193,40 +241,6 @@ Retour :
   "serviceName": "ldp-vg-XXXX"
 }
 ```
-
-### Étape 3 - Vérification des options de sécurités <a name="security-options"></a>
-
-#### Via l'API OVHcloud :
-
-Pour verifier si les options de sécurity sont activés au sein de votre HPC VMware vSphere managé on OVHcloud, lancez l'appel API suivant :
-
-> [!api]
->
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions
->
-
-> **Paramètre** : 
-> 
-> - `serviceName` : Votre PCC sous la forme, "pcc-XXX-XXX-XXX-XXX". 
->
-
-Exemple de retour si l'option est "activé" :
-
-> 
-> ```Shell
-> {
-> "state": "delivered"
-> }
-> ```
-
-Exemple de retour si l'option est en cours "d'activation" :
-
->
-> ```Shell
-> {
-> "state": "creating"
-> }
-> ```
 
 ## Aller plus loin
 

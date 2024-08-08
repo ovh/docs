@@ -62,7 +62,55 @@ It is perfectly acceptable that a product has only one category.
 
 We provide all the metadata for the identification of VMware Hosted Private Cloud on OVHcloud.
 
-### Step 1 - Enable Hosted Private Cloud logs transfer
+### Step 1 - Verifying security options <a name="security-options"></a>
+
+> [!warning]
+>
+> If call API reference "disabled", contact the OVHcloud support.
+>
+
+#### Via the OVHcloud API:
+
+To check if the security options are present to enable the activation of the feature within your managed OVHcloud HPC VMware vSphere, launch the following API call:
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions
+>
+>
+> **Parameter**:
+>
+> - `serviceName`: Your Dedicated Cloud in the form, "pcc-XXX-XXX-XXX-XXX".
+>
+
+Example of a return if the option is "enabled":
+
+```Shell
+ {
+ "state": "delivered"
+ }
+ "
+```
+
+Return example if the option will be "enabled":
+
+```Shell
+ {
+ "state": "creating"
+ }
+ “
+```
+
+Example of a return if the option is "disabled":
+
+```Shell
+ {
+  "state": "disabled"
+ }
+ “
+```
+
+### Step 2 - Enable Hosted Private Cloud logs transfer
 
 > [!primary]
 > 
@@ -75,7 +123,7 @@ You can refer to this guide and find out how to manage your streams from the Log
 
 You can retrieve the **streamId** and set it aside (copy and paste). You will need it to activate your Hosted Private Cloud subscription with the Logs Data Platform in question.
 
-### Step 2 - Activate the Logs Data Platform Hosted Private Cloud subscription
+### Step 3 - Activate the Logs Data Platform Hosted Private Cloud subscription
 
 #### Via the OVHcloud Control Panel
 
@@ -114,7 +162,7 @@ Example:
 
 The GET request allows you to list your subscriptions.
 
-### Step 3 - Manage your Data Logs Platform
+### Step 4 - Manage your Data Logs Platform
 
 #### Via the OVHcloud Control Panel
 
