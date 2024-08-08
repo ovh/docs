@@ -471,28 +471,31 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> Attendez que vSphere établisse la connexion avec le Key Provider que vous avez ajouté. Vous devriez voir une indication ou un message confirmant que la connexion a été établie avec succès.
 >>
->> Patientez le temps que vSphere établisse la connexion avec le fournisseur de clés que vous venez d'ajouter. Vous devriez voir apparaitre un message confirmant que la connexion a été établie avec succès.
+>> Patientez le temps que vSphere établisse la connexion avec le fournisseur de clés que vous venez d'ajouter. Vous devriez voir apparaitre un message confirmant que l'ajout a été établi avec succès.
 >>
 >
-> **Faire que vCenter trust KMS** <a name="trust-okms"></a>
+> **APPROUVER LE KMS** <a name="trust-okms"></a>
 >
 >>
 >> > [!primary]
 >> >
 >> > L'approbation entre vCenter et KMS peut être conflictuelle, patientez quelques minutes avant de recommencer ou rafraichissez votre page vSphere avec le bouton en forme de flèche circulaire situé en haut et légèrement à droite.
+>> >
 >> > Si ça ne fonctionne toujours pas faite un upload manuel (optionnel).
+>> 
+>> Une fois votre KMS ajouté, ajoutez le par défaut si vous avez plusieurs fournisseurs de clés.
+>> 
+>> Passez sur la partie inférieure `Provider OKMS 1 - Serveurs de gestion de clés` en cliquant sur le petit rond et aussi sur la flèche de droite afin de dérouler et faire apparaitre votre KMS. 
+>> 
+>> Si vous ne voyez pas que la relation de confiance passe au vert automatiquement, cliquez sur `APPROUVER LE KMS`{.action}.
 >>
->> Effectivement, avant de générer votre CSR et/ou votre Certificat KMS, puis votre clé privée, vous devez verifier que vCenter a bien téléchargé le certificat public du serveur KMS OVHcloud. Une fois votre KMS importé dans vSphere, vous devez valider la relation de confiance entre chaques éléments.
+>> ![TRUST KMS](images/trust_kms.png){.thumbnail}
 >>
->> ![Trust KMS server with or without CSR](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration/images/trust_kms.png){.thumbnail}
+>> Puis ensuite, sur `APPROUVER`{.action}
+>> 
+>> ![TRUST KMS](images/okms_vsphere_vcenter_trust_kms-optim-resize.png){.thumbnail}
 >>
->> Cliquez sur `Établir une relation de confiance > vCenter approuve Kms > Télécharger le vertificat KMS`{.action}.
->>
->> ![KMS Key Provider with or without CSR](images/trust_kms_2.png){.thumbnail}
->>
->> ![KMS Key Provider with or without CSR](images/okms_vsphere_vcenter_trust_kms-optim-resize.png){.thumbnail}
->>
->> Cliquez ensuite sur `TRUST`{.action}.
+>> ![TRUST KMS](images/trust_kms_3.png){.thumbnail}
 >>
 >> En principe, vCenter télécharge automatiquement le certificat public KMS. S'il ne le fait pas, faites-le manuellement.
 >> 
@@ -526,12 +529,11 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> Attendez un petit moment et rafraichissez la page web vSphere comme expliqué auparavant. 
 >> 
 >
-> **Faire que KMS Trust vCenter**
+> **APPROUVER L'INSTANCE DE VCENTER (Avec CSR)**
 >
 >>
 >> Sélectionnez votre **Fournisseur de clés** KMS (OKMS) que vous venez d'ajouter et cliquez sur le bouton `Approuver l'instance de vCenter`{.action}.
 >>
->> ![Trust KMS server with or without CSR](images/trust_kms.png){.thumbnail}
 >>
 >> Nous recommandons la méthode "Avec CSR" (plus sécurisée) en cliquant sur `Nouvelle demande de signature de certificat (CSR)`{.action). Cependant, libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
 >>
@@ -545,13 +547,9 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> 
 >> Il est possible de générer ce certificat en fournissant votre propre clé de sécurité privée ("credentialId") via une **"Demande de signature de certificat (CSR)"**.
 >>
->
-> **Nouvelle demande de signature de certificat (avec CSR)**
->
->>
 >> Une fois que votre KMS est commandé et que vCenter approuve le KMS. Lancez la génération du `CSR`{.action} afin que KMS approuve vCenter et signe le CSR.
 >>
->> Cliquez sur `Faire que KMS approuve vCenter`{.action}.
+>> Cliquez sur `APPROUVER L'INSTANCE DE VCENTER`{.action} ou `ÉTABLIR UNE RELATION DE CONFIANCE > Faire que KMS approuve vCenter`{.action}
 >>
 >> Sélectionnez `Nouvelle demande de signature de certificat (CSR)`{.action}, puis copiez ou téléchargez le CSR ci-dessous. Mettez-le à disposition du KMS OVHcloud depuis l'API v2 /okms et demandez à ce dernier de signer le certificat.
 >>
@@ -596,7 +594,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> Un identifiant ("credentialId") de signature vous sera donné. Il vous faut le récupérer avec le `okmsId` afin de lancer le GET (voir ci-dessous) et récupérer le CSR signé. Il ne vous restera plus qu'à l'uploader dans vSphere.
 >>
->> Pour signer le CSR, cliquez sur `Établir la relation de confiance`{.action}, puis sur `Télécharger le certificat CSR signé - Upload Signed CSR Certificate`{.action}.
+>> Pour signer le CSR, cliquez sur `ÉTABLIR UNE RELATION DE CONFIANCE`{.action}, puis sur `Télécharger le certificat de CSR signé`{.action}.
 >>
 >> Copiez maintenant le CSR signé de l'appel API suivant :
 >>
