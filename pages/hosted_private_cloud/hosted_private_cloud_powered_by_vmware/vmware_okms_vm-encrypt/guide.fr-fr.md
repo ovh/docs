@@ -37,7 +37,7 @@ details[open]>summary::before {
 - Le certificat public du KMS OVHcloud (OKMS) (étape [vCenter Trust KMS](#trust-okms)).
 - Une demande de signature de certificat (CSR) généré par vSphere et signé par OKMS pour valider/truster l'import ainsi que les échanges entre le KMS OVHcloud et vCenter.
 
-## En pratique <a name="sommaire"></a>
+## En pratique <a name="summary"></a>
 
 **Sommaire des étapes du guide** :
 
