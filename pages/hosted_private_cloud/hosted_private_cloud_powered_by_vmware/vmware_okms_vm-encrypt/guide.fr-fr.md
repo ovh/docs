@@ -1,7 +1,7 @@
 ---
-title: "KMS - Chiffrement de VM avec un KMS OVHcloud (OKMS)"
-excerpt: "Découvrez comment activer le chiffrement de vos VM au sein de votre VMware vSphere managé Hosted Private Cloud grace à la solution KMS OVHcloud (OKMS)"
-updated: 2024-08-07
+title: "KMS - Chiffrement de VM avec OKMS"
+excerpt: "Découvrez comment activer le chiffrement de vos VMs au sein de votre VMware vSphere managé Hosted Private Cloud grâce à la solution KMS OVHcloud (OKMS)"
+updated: 2024-08-08
 ---
 <style>
 details>summary {
@@ -20,8 +20,7 @@ details[open]>summary::before {
 > [!primary]
 >
 > Cette fonctionnalité est disponible en version bêta. Ce guide peut donc être incomplet et sera mis à jour pendant cette période.
-> 
-
+>
 ## Objectif
 
 **Découvrez comment commander, activer et configurer un KMS OVHcloud (OKMS) au sein d'un VMware vSphere managé on OVHcloud pour activer la politique de chiffrement de vos machines virtuelles.**
@@ -136,7 +135,7 @@ Une fois votre choix fait, cliquez sur le bouton `Commander`{.action}.
 
 > [!primary]
 > 
-> Si vous n'avez pas réussi à completer la commande, lancez [ce lien](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX))))).
+> Si vous n'arrivez pas à completer la commande, relancez là manuellement en cliquant sur [ce lien](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX))))).
 >
 
 Enfin, cliquez sur `Terminer`{.action} pour finaliser la commande.
@@ -428,7 +427,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 
 > [!tabs]
 >
-> **Ajout de OKMS à vSphere**
+> **Ajout du KMS à vSphere**
 >>
 >> Pour que vCenter puisse truster votre serveur KMS OVHcloud, connectez-vous à votre [control panel](/links/manager), puis allez dans la partie `Hosted Private Cloud`{.action}. Dans la colonne de gauche, cliquez sur `VMware`{.action} et sélectionnez le datacentre concerné.
 >>
