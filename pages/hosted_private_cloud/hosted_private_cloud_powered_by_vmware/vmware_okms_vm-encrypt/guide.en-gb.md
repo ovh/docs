@@ -276,7 +276,7 @@ To do this, go to the `Users`{.action} tab of your HPC managed vSphere. In the t
 
 ![Manager HPC Security KMS Add 02](images/manager_users_edit.png){.thumbnail}
 
-Verify that the `encryption management`{.action} is enabled.
+Verify that the `Encryption management`{.action} is enabled.
 
 ![Manager HPC Security KMS Add 02](images/manager_users_edit_encryption.png){.thumbnail}
 
@@ -473,7 +473,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >> Wait for vSphere to establish a connection with the key provider you have just added. You should see a message confirming that the connection has been established successfully.
 >>
 >
-> **vCenter Trust KMS - Have vCenter approve KMS** <a name="trust-kms"></a>
+> **vCenter Trust KMS** <a name="trust-kms"></a>
 >
 >>
 >> > [!primary]
@@ -526,7 +526,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >> Wait a little while and refresh the vSphere webpage as explained before.
 >>
 >
-> **KMS approve vCenter - Make KMS Trust vCenter**
+> **Make KMS Trust vCenter**
 >
 >>
 >> Select your **Key Provider** KMS (OKMS) that you have just added, and click the `Approve vCenter Instance`{.action} button.

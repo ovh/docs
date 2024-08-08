@@ -21,6 +21,7 @@ details[open]>summary::before {
 >
 > Cette fonctionnalité est disponible en version bêta. Ce guide peut donc être incomplet et sera mis à jour pendant cette période.
 >
+
 ## Objectif
 
 **Découvrez comment commander, activer et configurer un KMS OVHcloud (OKMS) au sein d'un VMware vSphere managé on OVHcloud pour activer la politique de chiffrement de vos machines virtuelles.**
@@ -263,7 +264,7 @@ Il s'agit ici de l'IP du KMS de Roubaix et de son empreinte TLS. Adaptez la comm
 
 ![Manager HPC Security KMS Add 02](images/manager_hpc_kms_add_2-optim-resize.png){.thumbnail}
 
-Vérifiez bien que la confirmation de lecture : **"J’ai lu et j’ai compris la documentation VM Encryption et les actions que je vais devoir effectuer de mon côté"** est bien cochée avant de poursuivre.
+Vérifiez bien que la confirmation de lecture : **"J’ai lu et j’ai compris la documentation chiffrement de VMs et les actions que je vais devoir effectuer de mon côté"** et bien cochée avant de poursuivre.
 
 ![Manager HPC Security KMS Add 02_2](images/manager_hpc_kms_add_2_2.png){.thumbnail}
 
@@ -471,7 +472,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> Patientez le temps que vSphere établisse la connexion avec le fournisseur de clés que vous venez d'ajouter. Vous devriez voir apparaitre un message confirmant que la connexion a été établie avec succès.
 >>
 >
-> **vCenter Trust KMS - Faire que vCenter approuve KMS** <a name="trust-okms"></a>
+> **Faire que vCenter trust KMS** <a name="trust-okms"></a>
 >
 >>
 >> > [!primary]
@@ -523,7 +524,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> Attendez un petit moment et rafraichissez la page web vSphere comme expliqué auparavant. 
 >> 
 >
-> **KMS approuve vCenter - Make KMS Trust vCenter**
+> **Faire que KMS Trust vCenter**
 >
 >>
 >> Sélectionnez votre **Fournisseur de clés** KMS (OKMS) que vous venez d'ajouter et cliquez sur le bouton `Approuver l'instance de vCenter`{.action}.

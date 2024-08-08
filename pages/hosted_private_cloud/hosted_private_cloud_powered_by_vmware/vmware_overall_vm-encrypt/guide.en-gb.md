@@ -68,7 +68,7 @@ To date, authentication is only possible within the OVHcloud KMS (OKMS), thanks 
 - Encryption and decryption of Hosted Private VMware on OVHcloud data (VM encryption strategies within vSphere, vApp, etc.).
 - Generate KMS keys from vSphere with OVHcloud KMS.
 - Storage of encryption keys with the OVHcloud KMS in a VMware on OVHcloud Hosted Private Cloud environment.
-- Management of the lifecycle of your keys (use, rotation, revocation, etc...) KMS.
+- Management of the lifecycle of your keys (use, rotation, revocation, etc...) within the OVHcloud ecosystem.
 - Using IAM and OVHcloud KMS (OKMS) with your VMware on OVHcloud Hosted Private Cloud.
 - Interconnection of OVHcloud services or not with the KMS.
 
