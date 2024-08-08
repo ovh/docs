@@ -198,7 +198,7 @@ Retour :
 
 #### Via l'API OVHcloud :
 
-Pour verifier si les options de sécurity sont activés au sein de votre HPC vSphere managé on OVHcloud, lancez l'appel API suivant :
+Pour verifier si les options de sécurity sont activés au sein de votre HPC VMware vSphere managé on OVHcloud, lancez l'appel API suivant :
 
 > [!api]
 >
