@@ -76,16 +76,16 @@ Pour vérifier si les options de sécurité sont présentes pour permettre l'act
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree
 >
 >
 > **Paramètre** :
 >
 > - `serviceName` : Votre PCC sous la forme, "pcc-XXX-XXX-XXX-XXX".
->
+> - `option` : Avec `sendLogToCustomer` allowed.
+> 
 
 Exemple de retour si l'option est "activé" :
-
 
 ```Shell
  {
@@ -95,7 +95,6 @@ Exemple de retour si l'option est "activé" :
 
 Exemple de retour si l'option est en cours "d'activation" :
 
-
 ```Shell
  {
  "state": "creating"
@@ -103,7 +102,6 @@ Exemple de retour si l'option est en cours "d'activation" :
 ```
 
 Exemple de retour si l'option n'est "pas activé" :
-
 
 ```Shell
  {
