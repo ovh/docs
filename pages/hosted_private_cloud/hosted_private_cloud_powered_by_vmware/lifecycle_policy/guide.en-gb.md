@@ -15,18 +15,18 @@ updated: 2024-08-08
 
 Hosted Private Cloud VMware on OVHcloud services proposes dedicated infrastructure based on SDDC technologies as well as other editors' technologies (such as Veeam or Zerto).
 
-OVHcloud has a lifecycle policy for the service in order to take into account several factors, such as :
+OVHcloud has a lifecycle policy for the service in order to take into account several factors, such as:
 
-* the lifecycle policy of integrated software components as determined by their editors (VMware, Veeam, Zerto, etc.) ;
-* the lifecycle of the hardware components ;
-* the compatibility between hardware and/or software components ;
+* the lifecycle policy of integrated software components as determined by their editors (VMware, Veeam, Zerto, etc.);
+* the lifecycle of the hardware components;
+* the compatibility between hardware and/or software components;
 * any factor affecting the quality of the service.
 
 This lifecycle policy is provided to help clients understand the underlying reasons for version or range changes and the impact of each phase of the lifecycle on the service, and anticipate and prepare the transition to a newer version or range.
 
 ### Commercial range concerned
 
-**Hosted Private Cloud VMware on OVHcloud** :
+**Hosted Private Cloud VMware on OVHcloud**:
 
 - DC2011 & DC2013 (AMD Opteron, AMD Bulldozer). 
 - DC2014 & DC2016 (AMD PileDriver).
@@ -119,17 +119,17 @@ VMware extended the support of NSX Datacenter for vSphere on OVHcloud infrastruc
 
 ### Veeam Backup & Replication lifecycle policy
 
-To know the lifecycle policy of Veeam products, please refer to the editor's publications accessible at the following URLs :
+To know the lifecycle policy of Veeam products, please refer to the editor's publications accessible at the following URLs:
 
 - [Veeam Version release](https://www.veeam.com/releasestatus_rn.pdf)
 - [Veeam Product Version Lifecycle](https://www.veeam.com/product-lifecycle.html)
 
 ### Zerto lifecycle policy
 
-To know the lifecycle policy of Zerto products, please refer to the editor's publication accessible at the following URL :
+To know the lifecycle policy of Zerto products, please refer to the editor's publication accessible at the following URL:
 
 - [Zerto Virtual Replication Product Version Lifecycle Matrix](https://help.zerto.com/bundle/Lifecycle.Matrix.HTML/page/Content/Lifecycle_Matrix/Lifecycle_Matrix.htm#zerto_virtual_replication_product_version_lifecycle_matrix_r_893035264_1010900)
 
 ## Go further
 
-Join our [community of users](/links/manager).
+Join our [community of users](/links/community).
