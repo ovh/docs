@@ -747,7 +747,7 @@ Ceci confirme que votre politique fonctionne avec le serveur OKMS et que le chif
 
 ///
 
-### Informations utiles - TLS/KMS <a name="informations-utiles"></a>
+### Informations utiles - TLS/KMS <a name="useful-information"></a>
 
 /// details | Informations utiles afin de manipuler vos certificats TLS avec OpenSSL.
 

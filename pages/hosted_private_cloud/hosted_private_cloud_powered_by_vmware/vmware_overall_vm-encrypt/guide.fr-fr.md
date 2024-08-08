@@ -130,7 +130,7 @@ Vous pouvez suivre les instructions du guide ci-dessous :
 
 Une fois votre KMS commandé et activé avec votre Hosted Private Cloud il vous reste à effectuer la synchronisation avec votre environnement VMware on OVHcloud pour activer le chiffrement. Pour cela, suivez les instructions du guide ci-dessous :
 
-- « [Guide 2 - HPC - Activer le chiffrement de VM avec OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt#ajout-okms) »
+- « [Guide 2 - HPC - Activer le chiffrement de VM avec OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt#add-okms) »
 
 Nous utiliserons pour cette option un :
 
