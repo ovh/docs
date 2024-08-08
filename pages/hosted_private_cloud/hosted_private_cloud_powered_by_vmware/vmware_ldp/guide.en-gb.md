@@ -19,6 +19,7 @@ The purpose of this guide is to show you how to enable log transfer from your Ho
 - One or more Hosted Private Cloud resources.
 - An active Logs Data Platform stream with the same account and security level as your Hosted Private Cloud VMware on OVHcloud.
 - You need to have followed the guide [Introduction to the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
+- You must have security options enabled, to check launch [this](#security-options) API call.
 
 ## Glossary
 
