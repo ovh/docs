@@ -6,7 +6,7 @@ updated: 2024-08-08
 
 > [!primary]
 > 
-> This feature is currently in Beta phase. This guide may be incomplete. Our team remains available on our dedicated Discord channel: <https://discord.gg/ovhcloud>.
+> This feature is currently in Beta phase. This guide may be incomplete and updated.
 >
 
 ## Objective
