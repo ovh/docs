@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on a VPS'
 excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
-updated: 2024-02-15
+updated: 2024-08-08
 ---
 
 ## Objective
@@ -215,11 +215,14 @@ network:
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
             routes:
+# If IPV6_PREFIX is 128 then add link route to gateway
+#              - to: IPv6_GATEWAY
+#                scope: link
               - to: ::/0
                 via: IPv6_GATEWAY
 ```
 
-**Configuration example**:
+**Configuration example** (with prefix /128):
 
 ```yaml
 network:
@@ -232,6 +235,8 @@ network:
             addresses:
               - 2607:5300:201:abcd::7c5/128
             routes:
+              - to: 2607:5300:201:abcd::1
+                scope: link
               - to: ::/0
                 via: 2607:5300:201:abcd::1
 ```
