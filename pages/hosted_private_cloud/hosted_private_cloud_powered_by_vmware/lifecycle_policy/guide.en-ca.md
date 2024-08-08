@@ -1,7 +1,7 @@
 ---
-title: Hosted Private Cloud VMware Lifecycle Policy
-excerpt: 'Lifecycle policy for VMware on OVHcloud'
-updated: 2024-01-22
+title: "Hosted Private Cloud VMware Lifecycle Policy"
+excerpt: "Lifecycle policy for VMware on OVHcloud"
+updated: 2024-08-08
 ---
 
 > [!warning]
@@ -11,29 +11,29 @@ updated: 2024-01-22
 
 ## Objective
 
-**This page provides an overview of the lifecycle policy of VMware on OVHcloud services.**
+**This page provides an overview of the lifecycle policy of Hosted Private Cloud VMware on OVHcloud services.**
 
-OVHcloud's Hosted Private Cloud VMware service proposes dedicated infrastructure based on VMware SDDC technologies as well as other editors' technologies (such as Veeam or Zerto).
+Hosted Private Cloud VMware on OVHcloud services proposes dedicated infrastructure based on SDDC technologies as well as other editors' technologies (such as Veeam or Zerto).
 
-OVHcloud has a lifecycle policy for the service in order to take into account several factors, such as:
+OVHcloud has a lifecycle policy for the service in order to take into account several factors, such as :
 
-* the lifecycle policy of integrated software components as determined by their editors (VMware, Veeam, Zerto, etc.);
-* the lifecycle of the hardware components;
-* the compatibility between hardware and/or software components;
+* the lifecycle policy of integrated software components as determined by their editors (VMware, Veeam, Zerto, etc.) ;
+* the lifecycle of the hardware components ;
+* the compatibility between hardware and/or software components ;
 * any factor affecting the quality of the service.
 
 This lifecycle policy is provided to help clients understand the underlying reasons for version or range changes and the impact of each phase of the lifecycle on the service, and anticipate and prepare the transition to a newer version or range.
 
 ### Commercial range concerned
 
-Hosted Private Cloud
+**Hosted Private Cloud VMware on OVHcloud** :
 
-* DC2011 & DC2013 (AMD Opteron, AMD Bulldozer)
-* DC2014 & DC2016 (AMD PileDriver)
-* SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell)
-* SDDC2018 (Intel Broadwell, Intel Haswell)
-* Essentials (Intel Broadwell)
-* Premier (Intel Xeon Gold)
+- DC2011 & DC2013 (AMD Opteron, AMD Bulldozer).
+- DC2014 & DC2016 (AMD PileDriver).
+- SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell).
+- SDDC2018 (Intel Broadwell, Intel Haswell).
+- Essentials (Intel Broadwell).
+- Premier (Intel Xeon Gold).
 
 ## Lifecycle timeframe and definitions
 
@@ -57,11 +57,11 @@ The End of Sales are usually announced with a thirty (30) days minimum warning.
 
 A commercial range or version will typically reach its End of Growth five (5) years after the beginning of the General Availability phase.
 
-#### End of Life 
+#### End of Life
 
 This refers to the date when a commercial range or version is being shut down.
 
-The End of Life may involve the unapplicability of SLAs, the absence of support services, and the absence of spares.
+The End of Life may involve the inapplicability of SLAs, the absence of support services, and the absence of spares.
 
 Following the End of Life, the servers concerned will be shut down definitively. OVHcloud may offer a grace period of a few months to allow for the last clients using servers of this range to move onto newer ranges.
 
@@ -75,32 +75,32 @@ Clients should anticipate the range change by testing in advance and making sure
 
 This table presents a summary of the different phases of the lifecycle of the service. The impact for each commercial range may differ.
 
-| Phases | General Availability | General Support | Grace Period / Decommissionning |
-|:-----:|:-----:|:-----:|:-----:|
-| Sales (start new services) | X |  |  |
-| Growth (existing services) | X | X |  |
-| Maintenance updates and upgrades | X | X |  |
-| Support | X | X |  |
-| SLA | X | X |  |
-| bug fixes | X | X |  |
-| Hardware support (spares) | X | X |  |
-| Security patches | X | X | X |
-| Knowledge Base | X | X | X |
+|              Phases              | General Availability | General Support | Grace Period / Decommissionning |
+|:--------------------------------:|:--------------------:|:---------------:|:-------------------------------:|
+|    Sales (start new services)    |          X           |                 |                                 |
+|    Growth (existing services)    |          X           |        X        |                                 |
+| Maintenance updates and upgrades |          X           |        X        |                                 |
+|             Support              |          X           |        X        |                                 |
+|               SLA                |          X           |        X        |                                 |
+|            bug fixes             |          X           |        X        |                                 |
+|    Hardware support (spares)     |          X           |        X        |                                 |
+|         Security patches         |          X           |        X        |                X                |
+|          Knowledge Base          |          X           |        X        |                X                |
 
 ## OVHcloud Commercial Range status
 
 ### Hosts (compute)
 
-| Commercial Range | General Availability | End of Sales | End of Growth  | End of Life |
-|:-----:|:-----:|:-----:|:-----:|:-----:|
-| DC2011 (AMD Opteron) | 2011 | 28/02/2015 | 28/02/2022 | 30/09/2022 |
-| DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 30/09/2022 |
-| DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 30/09/2022 |
-| DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/09/2022 |
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/09/2024 | 31/08/2025 |
-| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/09/2024 | 31/08/2025 |
-| Essentials (Intel Broadwell) | 2020 |            |            |            |
-| Premier (Intel Xeon Gold) | 2020 |            |            |            |
+|                   Commercial Range                    | General Availability | End of Sales | End of Growth  | End of Life |
+|:-----------------------------------------------------:|:----------------------:|:------------:|:-------------:|:-----------:|
+|                 DC2011 (AMD Opteron)                  |          2011          |  28/02/2015  |  28/02/2022   | 30/09/2022  |
+|                DC2013 (AMD Bulldozer)                 |          2013          |  28/02/2015  |  28/02/2022   | 30/09/2022  |
+|                DC2014 (AMD PileDriver)                |          2014          |  31/08/2017  |  28/02/2022   | 30/09/2022  |
+|                DC2016 (AMD PileDriver)                |          2016          |  30/11/2018  |  28/02/2022   | 30/09/2022  |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016          |  30/04/2017  |  30/03/2026   | 31/07/2026  |
+|              SDDC2018 (Intel Broadwell)               |          2018          |  30/11/2018  |  30/03/2026   | 31/07/2026  |
+|             Essentials (Intel Broadwell)              |          2020          |  30/09/2025  |  30/03/2026   | 31/07/2026  |
+|               Premier (Intel Xeon Gold)               |          2020          |              |               |             |
 
 ## Integrated Software
 
@@ -108,7 +108,7 @@ This table presents a summary of the different phases of the lifecycle of the se
 
 To know the lifecycle policy of VMware products, please refer to the editor's publication accessible at the following URL:
 
-[VMware Product Lifecycle](https://lifecycle.vmware.com/#/)
+- [VMware Product Lifecycle](https://lifecycle.vmware.com/#/)
 
 #### NSX Datacenter for vSphere (NSX-v)
 
@@ -119,18 +119,17 @@ VMware extended the support of NSX Datacenter for vSphere on OVHcloud infrastruc
 
 ### Veeam Backup & Replication lifecycle policy
 
-To know the lifecycle policy of Veeam products, please refer to the editor's publications accessible at the following URLs:
+To know the lifecycle policy of Veeam products, please refer to the editor's publications accessible at the following URLs :
 
-[Veeam Version release](https://www.veeam.com/releasestatus_rn.pdf)
-
-[Veeam Product Version Lifecycle](https://www.veeam.com/product-lifecycle.html)
+- [Veeam Version release](https://www.veeam.com/releasestatus_rn.pdf)
+- [Veeam Product Version Lifecycle](https://www.veeam.com/product-lifecycle.html)
 
 ### Zerto lifecycle policy
 
-To know the lifecycle policy of Zerto products, please refer to the editor's publication accessible at the following URL:
+To know the lifecycle policy of Zerto products, please refer to the editor's publication accessible at the following URL :
 
-[Zerto Virtual Replication Product Version Lifecycle Matrix](https://help.zerto.com/bundle/Lifecycle.Matrix.HTML/page/Content/Lifecycle_Matrix/Lifecycle_Matrix.htm#zerto_virtual_replication_product_version_lifecycle_matrix_r_893035264_1010900)
+- [Zerto Virtual Replication Product Version Lifecycle Matrix](https://help.zerto.com/bundle/Lifecycle.Matrix.HTML/page/Content/Lifecycle_Matrix/Lifecycle_Matrix.htm#zerto_virtual_replication_product_version_lifecycle_matrix_r_893035264_1010900)
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/manager).
