@@ -1,7 +1,7 @@
 ---
 title: 'Gérer la facturation de vos comptes Exchange'
 excerpt: 'Découvrez comment gérer la facturation de votre service Exchange'
-updated: 2020-04-20
+updated: 2020-08-08
 ---
 
 ## Objectif
@@ -70,6 +70,10 @@ Dirigez-vous dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `Act
 ![billing_exchange](images/billing-exchange-06.png){.thumbnail}
 
 #### Supprimer des comptes
+
+> [!warning]
+>
+> Pour pouvoir supprimer un compte e-mail sur une plateforme Private Exchange, **il est nécessaire que celui-ci est été créé** et attaché à un nom de domaine.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur `...`{.action} à droite du compte concerné puis cliquez sur `Supprimer`{.action}. Le compte sera immédiatement retiré de la plateforme, il n'y a pas de résiliation à effectuer.
 
