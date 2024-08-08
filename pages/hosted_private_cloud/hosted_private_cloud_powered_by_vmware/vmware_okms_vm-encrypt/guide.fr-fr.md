@@ -28,7 +28,7 @@ details[open]>summary::before {
 
 ## Prérequis
 
-- Être connecté à votre au [control panel](/links/manager).
+- Être connecté à [l'espace client OVHcloud](/links/manager).
 - Disposer d'une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 - Disposer des droits nécessaires pour manipuler les ressources HPC VMware et KMS OVHcloud avec IAM.
 - Avoir lu les guides : 
@@ -60,7 +60,7 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 
 > [!Primary]
 >
-> Cette fonctionnalité est disponible en version bêta. Ces liens seront mis à jour pendant cette période.
+> Ces liens peuvent être changés et mis à jour.
 > 
 
 | **Type**    | **URL**                          | **Région**          | **OKMS Région enum** | **IP**         |
@@ -78,7 +78,7 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 
 > [!Primary]
 >
-> Cette fonctionnalité est disponible en version bêta. Ces appels API peuvent évoluer avec le temps et être mis à jour pendant cette période.
+> Ces appels API peuvent être changés et mis à jour.
 >
 
 | **Methode**           | **API** | **Path**                                                                | **Commentaires**                                                |
