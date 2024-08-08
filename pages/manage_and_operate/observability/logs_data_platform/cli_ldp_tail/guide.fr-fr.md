@@ -8,7 +8,7 @@ updated: 2023-08-07
 
 This guide will show you how to use the Logs Data Platform to stream your logs in real time.
 
-The Logs Data Platform allows you to connect different applications or servers to one unique endpoint and make all of them appear in one stream if needed. **ldp-tail** is able to follow one your stream in real-time with sub-second latency by using one of the exclusive feature of the platform: the WebSocket endpoint.
+The Logs Data Platform allows you to connect different applications or servers to one unique endpoint and make all of them appear in one stream if needed. **ldp-tail** is able to follow one of your streams in real-time with sub-second latency by using one of the exclusive features of the platform: the WebSocket endpoint.
 
 ## Requirements
 
@@ -20,7 +20,7 @@ The Logs Data Platform allows you to connect different applications or servers t
 
 ### Download and test ldp-tail in two minutes
 
-**ldp-tail** is derived from a internal tool used by OVHcloud engineers to follow in real time hundreds of applications and servers logs. It is written in Go and is completely open-source. So if you're curious enough, you can check the code at [https://github.com/ovh/ldp-tail](https://github.com/ovh/ldp-tail){.external}. You can also download binary releases from this website. Go to [https://github.com/ovh/ldp-tail/releases](https://github.com/ovh/ldp-tail/releases){.external} to download the release for your platform. 64 bits versions of Linux, Windows and Mac OS X are currently supported. Decompress the archive obtained and you will get the **ldp-tail** binary.
+**ldp-tail** is derived from an internal tool used by OVHcloud engineers to follow in real time hundreds of applications and servers logs. It is written in Go and is completely open-source. So if you're curious enough, you can check the code at [https://github.com/ovh/ldp-tail](https://github.com/ovh/ldp-tail){.external}. You can also download binary releases from this website. Go to [https://github.com/ovh/ldp-tail/releases](https://github.com/ovh/ldp-tail/releases){.external} to download the release for your platform. 64-bit versions of Linux, Windows and Mac OS X are currently supported. Decompress the archive obtained and you will get the **ldp-tail** binary.
 
 You can test it right away on our demo stream by using this command in a terminal.
 

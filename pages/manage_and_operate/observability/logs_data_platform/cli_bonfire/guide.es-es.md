@@ -87,7 +87,7 @@ Note that the listing will contain only your logs.
 
 You can define named queries and call them from the command line.
 
-You can index some logs first by using the following curl command. Don't forget to replace **<YOUR-WRITE-TOKEN>** by the X-OVH-TOKEN of your stream and **<YOUR-CLUSTER>** by the address of your cluster.
+You can index some logs first by using the following curl command. Don't forget to replace **<YOUR-WRITE-TOKEN>** with the X-OVH-TOKEN of your stream and **<YOUR-CLUSTER>** with the address of your cluster.
 
 ```shell-session
 $ ubuntu@server:~$ echo -e '{"version":"1.1",  "_X-OVH-TOKEN":"<YOUR-WRITE-TOKEN>", "host": "example.org", "short_message": "A short message that helps you identify what is going on", "full_message": "Backtrace here\n\nmore stuff", "level": 1, "_user_id": 9001, "_some_info": "foo", "some_metric_num": 42.0 }\0' | \
@@ -120,9 +120,9 @@ Enter password for <USERNAME>@<YOUR-CLUSTER>.logs.ovh.com:443/api:
 
 ### Parametric queries
 
-You can also define queries with parameters and define this parameter from the command line.
+You can also define queries with parameters and define parameters from the command line.
 
-You can index some logs first by using the following curl command. Don't forget to replace **<YOUR-WRITE-TOKEN>** by the X-OVH-TOKEN of your stream and **<YOUR-CLUSTER>** by the address of your cluster.
+You can index some logs first by using the following curl command. Don't forget to replace **<YOUR-WRITE-TOKEN>** with the X-OVH-TOKEN of your stream and **<YOUR-CLUSTER>** with the address of your cluster.
 
 ```shell-session
 $ ubuntu@server:~$ echo -e '{"version":"1.1",  "_X-OVH-TOKEN":"<YOUR-WRITE-TOKEN>", "host": "example.org", "short_message": "A short message that helps you identify what is going on", "full_message": "Backtrace here\n\nmore stuff", "level": 1, "_user_id": 9001, "_some_info": "foo", "some_metric_num": 42.0 }\0' | \
