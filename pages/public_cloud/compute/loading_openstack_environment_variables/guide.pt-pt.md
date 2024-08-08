@@ -1,7 +1,7 @@
 ---
 title: 'Carregar as variáveis de ambiente OpenStack'
 excerpt: 'Aprenda a carregar as suas variáveis de ambiente para utilizar a API do OpenStack'
-updated: 2023-11-29
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -57,24 +57,6 @@ Se as CLI já tiverem sido instaladas, basta verificar o bom funcionamento:
 | 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
-
-É possível guardar no disco rígido a palavra-passe do utilizador Horizon. Para isso, substitua:
-
-```bash
-echo "Please enter your OpenStack Password: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
-```
-
-Por:
-
-```bash
-#echo "Please enter your OpenStack Password: "
-#read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD="Palavra-passe do utilizador Horizon"
-```
-
-Por defeito, é preciso carregar este ambiente depois de cada início de sessão no ambiente normal. É possível tornar isso permanente adicionando o source openrc.sh ao ficheiro bashrc. Isto requer a fixação da palavra-passe no ficheiro.
 
 #### **Em Windows**
 

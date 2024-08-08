@@ -48,7 +48,7 @@ There are four steps to changing your website’s database password:
 
 In the [OVHcloud Control Panel](/links/manager), click on `Web Cloud`{.action}, then on `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
 
-![root-folders](images/root-folders.png){.thumbnail}
+![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 Then click on the `FTP-SSH`{.action} tab and go to the space containing your website’s files and folders (the *FTP space*) by clicking `FTP Explorer`{.action}.
 
@@ -164,15 +164,15 @@ Save this change.
 
 In the `Hosting Plans`{.action} section of the OVHcloud Control Panel, go to the `Databases`{.action} tab on the right-hand side of your screen:
 
-![database-password-step1](images/tab.png){.thumbnail}
+![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Next, click on the three dots to the right of your website’s database, then on `Change password`{.action}.
 
-![database-password-step2](images/change-password.png){.thumbnail}
+![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 
 In the window that pops up, enter your database’s new password (defined at [step 3](#step3)), confirm it, then click on `Confirm`{.action}.
 
-![database-password-step3](images/change-password-window.png){.thumbnail}
+![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 ## Go further <a name="go-furtherr"></a>
 

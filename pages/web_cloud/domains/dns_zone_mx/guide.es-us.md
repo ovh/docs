@@ -1,6 +1,6 @@
 ---
-title: 'Añadir un registro MX a la configuración del dominio'
-excerpt: 'Cómo añadir un registro MX a la configuración de un dominio en OVHcloud'
+title: "Configurar un registro MX para la gestión del correo"
+excerpt: "Descubra cómo configurar un registro MX en un dominio en OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -40,7 +40,7 @@ Cuando la dirección **sender@otherdomain.ovh** envía un correo electrónico a 
 - **(1)** consultar la zona DNS del dominio **mydomain.ovh** y leer los registros **MX**.
 - **(2)** reenviar el mensaje de correo electrónico a la URL del registro **MX** leído.
 
-![Correo electrónico](/pages/assets/schemas/dns/mx-dns-resolution-apac-ca.png){.thumbnail}
+![Correo electrónico](/pages/assets/schemas/emails/mx-dns-resolution-apac-ca.png){.thumbnail}
 
 El mensaje se enviará al destino **mx0.mail.ovh.ca**, precedido del valor **0**. Este valor se denomina prioridad. El valor más bajo se consulta primero y el más alto después. Esto significa que la presencia de varios registros permite paliar la falta de respuesta del registro MX de menor prioridad.
 
@@ -98,12 +98,12 @@ Una vez que haya introducido toda la información, siga los pasos que se indican
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configurar un registro SPF en un dominio](/pages/web_cloud/domains/dns_zone_spf)
+[Mejorar la seguridad del correo electrónico mediante el registro SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurar un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Mejorar la seguridad del correo electrónico mediante el registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
 
 Si necesita ayuda sobre el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras diferentes [ofertas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

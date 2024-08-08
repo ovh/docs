@@ -239,22 +239,22 @@ Per completare la configurazione iniziale di un VPS Windows, esegui i passaggi s
 > 1. **Impostazioni internazionali**
 >>
 >> Una volta stabilita la sessione KVM, è possibile completare la configurazione iniziale di Windows configurando il proprio **paese**, la **lingua Windows** preferita e il **layout di tastiera**. Clicca sul pulsante `Avanti`{.action} in basso a destra.<br><br>
->>![KVM](images/setup-03.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_locale.png){.thumbnail}<br>
 >>
 > 2. **Password amministratore**
 >>
 >> Definisci una password per il tuo account Windows `Administrator` / `admin` e confermala, poi clicca su `Termina`{.action}.<br><br>
->>![KVM](images/setup-04.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_admin.png){.thumbnail}<br>
 >>
 > 3. **Schermata di connessione**
 >>
 >> Windows applicherà le impostazioni e visualizzerà la schermata di accesso. Clicca sul pulsante `Send CtrlAltDel`{.action} in alto a destra per accedere.<br><br>
->>![KVM](images/setup-05.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_vnc.png){.thumbnail}<br>
 >>
 > 4. **Login amministratore**
 >>
 >> Immettere la password `Administrator` creata nel passaggio precedente e fare clic sulla `freccia`.<br><br>
->>![KVM](images/setup-06.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}<br>
 >>
 
 
@@ -262,7 +262,7 @@ Per completare la configurazione iniziale di un VPS Windows, esegui i passaggi s
 
 Sul dispositivo Windows locale, è possibile utilizzare l'applicazione client `Remote Desktop Connection` per connettersi al VPS.
 
-![Windows remote](images/windows-connect-03.png){.thumbnail}
+![Windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Inserisci l’indirizzo IPv4 del VPS, l’identificativo e la password. In genere viene visualizzato un messaggio di avviso che richiede di confermare la connessione a causa di un certificato sconosciuto. Fare clic su `Sì`{.action} per accedere.
 
@@ -287,17 +287,17 @@ Per attivarli, segui i passaggi seguenti scorrendo le schede:
 > 2. **Apri l'utility "Esegui"**
 >>
 >> Apri il menu Start di Windows e clicca su `Esegui`{.action}.<br><br>
->>![KVM](images/windowsboot1.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Apri "msconfig"**
 >>
 >> Inserisci "msconfig" e clicca su `OK`{.action}.<br><br>
->>![KVM](images/windowsboot2.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Attiva i log**
 >>
 >> Nella nuova finestra, seleziona l’opzione log accanto a `Boot log`. Clicca su `OK`{.action}.<br><br>
->>![KVM](images/windowsboot3.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 Al successivo avvio del server, i log verranno salvati in un file `.txt`. Il percorso del file è `C:\Windows\ntbtlog.txt`.

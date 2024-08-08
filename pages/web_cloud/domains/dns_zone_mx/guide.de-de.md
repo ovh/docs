@@ -1,5 +1,5 @@
 ---
-title: MX-Eintrag konfigurieren
+title: MX-Eintrag für die E-Mail-Verwaltung konfigurieren
 excerpt: Erfahren Sie hier, wie Sie mit OVHcloud MX-Einträge für Ihren Domainnamen konfigurieren 
 updated: 2024-02-29
 ---
@@ -40,7 +40,7 @@ Von der Adresse **sender@otherdomain.ovh** wird eine E-Mail an **contact@mydomai
 - **(1)** Die DNS-Zone von **mydomain.ovh** auf deren **MX**-Einträge abfragen.
 - **(2)** Die E-Mail an die URL des gelesenen **MX**-Eintrags weiterleiten.
 
-![E-Mail](/pages/assets/schemas/dns/mx-dns-resolution.png){.thumbnail}
+![E-Mail](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 Die E-Mail wird an das Ziel **mx0.mail.ovh.net** gesendet, dem der Wert **0** vorangestellt ist. Dieser Wert wird als *Priorität* bezeichnet. Der niedrigste Wert wird zuerst abgefragt, der höchste zuletzt. Dies bedeutet, dass das Vorhandensein mehrerer Datensätze eine ausbleibende Antwort des MX-Datensatzes mit der niedrigsten Priorität ausgleicht.
 
@@ -98,12 +98,12 @@ Wenn Sie alle Daten eingegeben haben, schließen Sie die Schritte ab und klicken
 
 [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
 
-[SPF-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_spf)
+[E-Mail-Sicherheit durch SPF-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_spf)
 
-[DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)
+[E-Mail-Sicherheit durch DKIM-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dkim)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

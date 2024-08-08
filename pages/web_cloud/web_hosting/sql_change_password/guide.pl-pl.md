@@ -53,7 +53,7 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 
 W [Panelu klienta OVHcloud](/links/manager) kliknij pozycję `Web Cloud`{.action}, a następnie wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę `Katalog główny` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
 
-![root-folders](images/root-folders.png){.thumbnail}
+![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 Następnie kliknij kartę `FTP-SSH`{.action}, a następnie przejdź do przestrzeni zawierającej pliki i foldery Twojej strony (*przestrzeń FTP*) klikając przycisk `FTP Explorer`{.action}.
 
@@ -199,29 +199,29 @@ Ponownie, możliwe są dwa przypadki:
 
 W części `Hosting`{.action} w Panelu klienta przejdź do zakładki `Bazy danych`{.action} po prawej stronie ekranu:
 
-![database-password-step1](images/tab.png){.thumbnail}
+![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Kliknij trzy kropki po prawej stronie bazy danych, a następnie `Zmień hasło`{.action}.
 
-![database-password-step2](images/change-password.png){.thumbnail}
+![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 
 W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zdefiniowane w [Etap 3](#step3)), potwierdź je, następnie kliknij przycisk `Zatwierdź`{.action}.
 
-![database-password-step3](images/change-password-window.png){.thumbnail}
+![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 #### Przypadek nr 2: baza danych strony jest częścią oferty Web Cloud Databases <a name="case2"></a>
 
 Przejdź do części `Bazy danych`{.action} w Panelu klienta i na odpowiedni serwer, kliknij zakładkę `Użytkownicy i uprawnienia`{.action}:
 
-![userDBpassword-step1](images/wcdb-tab.png){.thumbnail}
+![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
 Aby zmienić hasło do bazy danych, kliknij trzy kropki po prawej stronie `nazwy użytkownika`{.action} zidentyfikowanej w [Etap 2](#step2), a następnie `Zmień hasło`{.action}.
 
-![userDBpassword-step2](images/wcdb-change-password.png){.thumbnail}
+![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
 W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zdefiniowane w [Etap 3](#step3)), potwierdź je, następnie kliknij przycisk `Zatwierdź`{.action}.
 
-![userDBpassword-step3](images/wcdb-change-password-window.png){.thumbnail}
+![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
 
 ## Sprawdź <a name="go-further"></a>
 
@@ -233,4 +233,4 @@ W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zde
 
 Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: Configura un record MX
-excerpt: Come configurare un record MX su un dominio in OVHcloud
+title: "Configurare un record MX per la gestione delle email"
+excerpt: "Come configurare un record MX su un dominio in OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -40,7 +40,7 @@ Quando l'indirizzo **sender@otherdomain.ovh** invia un’email a **contact@mydom
 - **(1)** interrogare la zona DNS del dominio **mydomain.ovh** e leggere i record **MX**.
 - **(2)** trasmettere l’email verso l’URL del record **MX** letto.
 
-![email](/pages/assets/schemas/dns/mx-dns-resolution.png){.thumbnail}
+![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 L’email sarà inviata verso la destinazione **mx0.mail.ovh.net**, preceduta dal valore **0**. Questo valore viene denominato priorità. Il valore più basso viene interrogato per primo e il valore più alto per ultimo. Ciò significa che la presenza di più record consente di compensare un'assenza di risposta da parte del record MX con la priorità più bassa.
 
@@ -98,12 +98,12 @@ Una volta inserite le informazioni, prosegui con gli step successivi e clicca su
 
 [Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configurare un record SPF su un dominio](/pages/web_cloud/domains/dns_zone_spf)
+[Migliora la sicurezza delle email con un record SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configura un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Migliora la sicurezza delle email con un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -1,12 +1,12 @@
 ---
-title: Activar las conexiones SSO de Azure con su cuenta OVHcloud
+title: Activar las conexiones SSO de Entra ID con su cuenta OVHcloud
 excerpt: "Esta guía explica cómo asociar su Entra ID (antes Azure Active Directory) a su cuenta de OVHcloud utilizando SAML 2.0"
-updated: 2024-03-05
+updated: 2024-07-05
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
 ## Objetivo
 
@@ -207,23 +207,23 @@ La adición de su aplicación Entra ID como proveedor de identidad aprobado se r
 
 #### Creación de confianza en OVHcloud
 
-[Conéctese al área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y haga clic en su perfil en la parte superior derecha.
+Haga clic en el nombre de su cuenta en la esquina superior derecha y, a continuación, vuelva a hacer clic en su nombre en la barra lateral.
 
-![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
+![Acceso al menú IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Haga clic en su nombre para acceder a la página de gestión de su perfil.
+Puede acceder al menú IAM desde la entrada dedicada del área de cliente.
 
-![Información de usuario de OVHcloud](images/ovhcloud_user_infos.png){.thumbnail}
+![Acceso al menú IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Abra la pestaña `Gestión de usuarios`{.action}.
+A continuación, haga clic en la pestaña `Identidades`{.action} para acceder a la gestión de los usuarios locales.
 
-![Perfil del menú OVHcloud](images/ovhcloud_profile_menu.png){.thumbnail}
+![Acceso al menú IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Haga clic en el botón `Conexión SSO`{.action}.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Complete el campo **Group Attribute Name** con el valor de **Claim name** de los grupos de aplicaciones Entra ID guardado anteriormente.
+Rellene el campo **Nombre de Atributo de Usuario** con el nombre de reclamación de la aplicación de identificación inicial **UPN** y en el campo **Nombre de Atributo de Grupo** con el valor del nombre de reclamación de **groups** guardado antes.
 
 Rellene los metadatos XML de su aplicación Entra ID desde el archivo guardado anteriormente.
 

@@ -32,7 +32,7 @@ I prodotti contemplati da questa politica di fine vita sono:
 
 ### Definizioni e orientamenti della politica di fine vita
 
-![timeline](images/ovhcloud-eol-policy-for-managed-databases-timeline.png)
+![timeline](/pages/assets/schemas/web-cloud-databases/ovhcloud-eol-policy-for-managed-databases-timeline.png)
 
 EOL = End Of Life
 

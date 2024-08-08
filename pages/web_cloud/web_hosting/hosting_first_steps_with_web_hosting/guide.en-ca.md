@@ -133,7 +133,7 @@ To check and/or modify the link between your domain name and your web hosting pl
 - [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite): This guide explains how to add multiple domain names to a Web Hosting plan. It can also help you check that your domain name declaration in the `Multisite`{.action} tab of your Web Hosting plan is correct. If necessary, you can then modify it and take the necessary measures in your domain name’s active DNS zone.
 - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit): This guide explains how to edit an OVHcloud DNS zone. It will be useful to you in the event that your domain name’s active DNS zone is present on a different OVHcloud customer account than your own. You can also use it to access your domain name’s OVHcloud DNS zone, in order to verify that the IP address (entry(s) of type *A* and/or *AAAA*) declared for your domain name in the DNS zone corresponds to your Web Hosting plan’s IP address.
 
-To check and/or modify the link between your domain name and your OVHcloud email solution, please read our guide on "[Configure an MX record](/pages/web_cloud/domains/dns_zone_mx)". You will find the names of the OVHcloud email servers, as well as the procedure to follow in order to point your domain name to these same servers.
+To check and/or modify the link between your domain name and your OVHcloud email solution, please read our guide on "[Configure an MX record for email management](/pages/web_cloud/domains/dns_zone_mx)". You will find the names of the OVHcloud email servers, as well as the procedure to follow in order to point your domain name to these same servers.
 
 > [!primary]
 >
@@ -141,7 +141,7 @@ To check and/or modify the link between your domain name and your OVHcloud email
 > 
 > - **For linking your domain name to your web hosting plan**: Please refer only to the guides “[IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)” and “[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)” mentioned above to retrieve your web hosting plan’s IP address, then declare your domain name correctly on your web hosting plan. Then contact the organization that manages your domain name’s active DNS zone to point it to your web hosting plan.
 >
-> - **For the link between your domain name and your OVHcloud email solution**: Only refer to our guide "[Configure an MX record](/pages/web_cloud/domains/dns_zone_mx)" to retrieve the names of the OVHcloud email servers that need to be entered in your domain name’s active DNS zone. Then contact the organization that manages your domain name’s active DNS zone, and point it to the OVHcloud email servers.
+> - **For the link between your domain name and your OVHcloud email solution**: Only refer to our guide "[Configure an MX record for email management](/pages/web_cloud/domains/dns_zone_mx)" to retrieve the names of the OVHcloud email servers that need to be entered in your domain name’s active DNS zone. Then contact the organization that manages your domain name’s active DNS zone, and point it to the OVHcloud email servers.
 >
 
 ### Step 5 - Other options available with web hosting plans <a name="other-options"></a>

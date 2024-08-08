@@ -1,7 +1,7 @@
 ---
 title: 'Konfigurowanie adresu IPv6 na serwerach dedykowanych'
 excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHcloud'
-updated: 2024-03-05
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-03-05
 
 ## Wprowadzenie
 
-IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetowego (IP, ang. Internet Protocol). Umożliwia rozwiązanie problemów z wyczerpywaniem się dostępnych adresów swojego poprzednika, protokołu IPv4, ponieważ korzysta z adresów 128-bitowych zamiast 32-bitowych. Większość serwerów dedykowanych OVHcloud jest dostarczana z blokiem /64 IPv6, z wyjątkiem serwerów High Grade i Scale, które są dostarczane z blokiem /56 IPv6. Oznacza to, że użytkownik ma do dyspozycji 18 trylionów adresów IP.
+IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetowego (IP, ang. Internet Protocol). Umożliwia rozwiązanie problemów z wyczerpywaniem się dostępnych adresów swojego poprzednika, protokołu IPv4, ponieważ korzysta z adresów 128-bitowych zamiast 32-bitowych. Os servidores das gamas High Grade, Scale e Advance (desde julho de 2024) são entregues com um bloco /56 IPv6. Já os antigos servidores são entregues com um bloco /64 IPv6. Um servidor entregue com um bloco /56 IPv6 permite dispor de até 18 quintilhões de endereços IP.
 
 **Dowiedz się, jak skonfigurować adresy IPv6 na serwerze na podstawie różnych przykładów.**
 

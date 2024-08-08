@@ -269,7 +269,7 @@ You can now access your instance through a command line interface (Terminal) via
 
 ![instances page](images/instance-connect-02.png){.thumbnail}
 
-Type the passphrase for your private key when prompted. 
+Type the passphrase for your private key when prompted.
 
 ```bash
 ssh username@IPv4_of_your_instance

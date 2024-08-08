@@ -129,7 +129,7 @@ Este estado ocorre quando os e-mails considerados como SPAM são enviados a part
 
 Geralmente, este bloqueio é acompanhado pelo envio de um e-mail intitulado **"Abuso com o seu alojamento domain.tld"** gerado automaticamente pelos nossos robôs de segurança:
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 São possíveis três casos relativamente a esta situação:
 
@@ -227,4 +227,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

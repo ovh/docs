@@ -1,7 +1,7 @@
 ---
 title: 'Configurar IPv6 en un servidor dedicado'
 excerpt: 'Descubra cómo configurar direcciones IPv6 en nuestra infraestructura'
-updated: 2024-03-05
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -10,7 +10,8 @@ updated: 2024-03-05
 
 ## Objetivo
 
-El protocolo de internet versión 6 (IPv6) es la última versión del protocolo de internet (IP). Ha sido diseñado para hacer frente a la creciente escasez de direcciones de su predecesor, el IPv4, utilizando direcciones de 128 bits en vez de 32 bits. La mayoría de los servidores dedicados de OVHcloud vienen con un bloque /64 de IPv6, excepto los servidores High Grade y Scaledo que vienen con un bloque /56 de IPv6. Esto representa más de 18 trillones de direcciones IP a su disposición.
+El protocolo de internet versión 6 (IPv6) es la última versión del protocolo de internet (IP). Ha sido diseñado para hacer frente a la creciente escasez de direcciones de su predecesor, el IPv4, utilizando direcciones de 128 bits en vez de 32 bits. 
+Los servidores de las gamas High Grade, Scale y Advance (desde julio de 2024) se entregan con un bloque /56 IPv6, mientras que los antiguos servidores se entregan con un bloque/64 IPv6. Un servidor entregado con un bloque /56 IPv6, permite disponer de hasta 18 quintillones de direcciones IP.
 
 **Esta guía explica cómo configurar las direcciones IPv6 en su servidor siguiendo varios ejemplos.**
 

@@ -72,7 +72,7 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 
 |Windows|Outlook|Apple|Android|Otros|
 |---|---|---|---|---|
-|[Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}|[Outlook 2016](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}|[Mail de macOS (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos){.external}|[Android (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android){.external}|[Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail){.external}|
+|[Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}|[Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}|[Mail de macOS (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos){.external}|[Android (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android){.external}|[Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail){.external}|
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 
@@ -140,7 +140,7 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 
 |Windows|Outlook|Apple|Android|Otros|
 |---|---|---|---|---|
-|[Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}|[Outlook 2016](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}|[Mail de macOS (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos){.external}|[Android (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android){.external}|[Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail){.external}|
+|[Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}|[Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}|[Mail de macOS (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos){.external}|[Android (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android){.external}|[Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail){.external}|
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 

@@ -26,7 +26,7 @@ Questa rete DNS permette di facilitare agli utenti l'accesso a Internet e ai div
 
 In particolare, consentono l'utilizzo di [domini](/links/web/domains) per accedere al sito Web preferito senza dover ricordare l'indirizzo IP del server in cui è ospitato il sito Web.
 
-![DNS resolution](images/dns-resolution.png){.thumbnail}
+![DNS resolution](/pages/assets/schemas/dns/dns-resolution.png){.thumbnail}
 
 Esistono 4 tipi di server DNS.
 
@@ -55,13 +55,13 @@ Una zona DNS contiene informazioni tecniche chiamate *record DNS*. La zona DNS �
 
 > [!success]
 >
-> - Per maggiori informazioni sulle zone DNS, consulta la nostra guida "Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)".
+> - Per maggiori informazioni sulle zone DNS, consulta la nostra guida "[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 > - Consulta la nostra guida su [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records) per una migliore comprensione dell'insieme.
 >
 
 Per utilizzare la zona DNS ospitata, devono essere dichiarati i **server DNS (Authoritative)** (presso il Registrar di un dominio).
 
-![DNS](images/dns-server.png){.thumbnail}
+![DNS](/pages/assets/schemas/dns/dns-server.png){.thumbnail}
 
 ### Funzionamento di un server DNS (Authoritative) con un dominio
 
@@ -75,7 +75,7 @@ A volte alcuni provider DNS offrono più di 2 **server DNS (Authoritative)** da 
 
 ## Per saperne di più
 
-Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information).
+[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
 
 [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records).
 

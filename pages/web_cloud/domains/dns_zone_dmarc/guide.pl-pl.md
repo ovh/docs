@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja rekordu DMARC w Twojej domenie
-excerpt: Dowiedz się, jak działa DMARC i jak wdrożyć go dla Twojej usługi e-mail
+title: "Poprawa bezpieczeństwa e-maili dzięki rejestracji DMARC"
+excerpt: "Dowiedz się, jak działa DMARC i jak wdrożyć go dla Twojej usługi e-mail"
 updated: 2023-12-13
 ---
 
@@ -184,4 +184,4 @@ Jeśli potrzebujesz specjalistycznych usług (SEO, programowanie, etc.), skontak
 
 Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

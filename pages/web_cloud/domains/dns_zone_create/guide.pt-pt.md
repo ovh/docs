@@ -1,7 +1,7 @@
 ---
 title: 'Criar uma zona DNS da OVHcloud para um domínio'
 excerpt: 'Saiba como criar uma zona DNS na OVHcloud para o seu domínio através da Área de Cliente'
-updated: 2024-05-16
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -12,24 +12,11 @@ updated: 2024-05-16
 
 A zona **D**omain **N**ame **S**ystem (**DNS**) de um nome de domínio constitui o ficheiro de configuração deste último. É composta por informações técnicas, designadas *registos DNS*. A zona DNS é, de certa forma, como um centro de agulhas.
 
-Pode, por exemplo, especificar:
+Para mais explicações, consulte os seguintes guias:
 
-- O endereço de IP (registos DNS de tipo *A* e *AAAA*) do seu alojamento web para apresentar o seu website com o seu domínio.
-- Os servidores de e-mail (registos DNS de tipo *MX*) para os quais o seu nome de domínio deve reencaminhar os e-mails que recebe. Isto permite-lhe consultá-los no(s) seu(s) endereço(s) de e-mail(s) personalizado(s) com o seu nome de domínio.
-- Informações relacionadas com a segurança / a autenticação dos seus serviços (alojamento web, servidor web, servidor de e-mail, etc.) associados ao seu nome de domínio (registos DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
-
-Se necessário, consulte a nossa documentação sobre [os registos DNS](/pages/web_cloud/domains/dns_zone_records) e a [edição de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit) a partir da [Área de Cliente OVHcloud](/links/manager).
-
-Uma zona DNS está alojada/registada em **servidores DNS**. São os **servidores DNS** que devem ser declarados junto do nome de domínio para utilizar a zona DNS que alojam. 
-
-Os **servidores DNS** funcionam geralmente por par:
-
-- Um servidor DNS *principal*: reencaminha os fluxos de pedidos recebidos pelo nome de domínio para a zona DNS que aloja para este último. Isto permite efetuar a *resolução DNS* para reencaminhar os fluxos para os serviços certos (servidores, website, e-mails, etc.) associados ao domínio.
-- Um servidor DNS *secundário*: este servidor de *SOS* é utilizado se o servidor * principal estiver sobrecarregado com pedidos, estiver indisponível ou responder menos rapidamente que o servidor *secundário*.
-
-Certos fornecedores DNS propõem 3 **servidores DNS** ou mais a declarar junto do seu nome de domínio para ativar a zona DNS que alojam para este último.
-
-Para mais informações sobre os **servidores DNS**, consulte o nosso [guia](/pages/web_cloud/domains/dns_server_general_information) sobre o assumpto.
+- [Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Por várias razões, poderá ter de criar uma zona DNS para o seu domínio na OVHcloud.
 
@@ -65,16 +52,16 @@ Na nova página, introduza o domínio (exemplo: *domínio.tld*) para o qual dese
 
 Se aparecer uma mensagem a indicar que a zona DNS não pode ser criada, verifique se o nome de domínio cumpre os requisitos necessários ou peça à pessoa que o gere que o faça por si. Assim que tudo estiver correto, tente novamente.
 
-![dnszonecreate](images/adding-a-dns-zone.png){.thumbnail}
+![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone.png){.thumbnail}
 
 Assim que a verificação chegar ao fim, escolha ativar ou não as entradas mínimas para a zona DNS que vai criar. Esta escolha não é definitiva pois poderá sempre [editar os registos da zona DNS](/pages/web_cloud/domains/dns_zone_edit) mais tarde.
 
-![dnszonecreate](images/adding-a-dns-zone-step-2.png){.thumbnail}
+![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone-step-2.png){.thumbnail}
 
 |Ativar entradas mínimas?|Detalhes|
 |---|---|
-|Sim|Selecione esta escolha se deseja personalizar você mesmo a zona DNS.</br>![mínimo-entries](images/dashboard-minimal-entries.png){.thumbnail}
-|Não|Selecione esta escolha se pretende utilizar serviços da OVHcloud como [alojamento web](/links/web/hosting){.external}, sendo a zona pré-configurada para este efeito.</br>![no-mínimo-dentro-entries](images/dashboard-ovh-full-entries.png){.thumbnail}|
+|Sim|Selecione esta escolha se deseja personalizar você mesmo a zona DNS.</br>![mínimo-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}
+|Não|Selecione esta escolha se pretende utilizar serviços da OVHcloud como [alojamento web](/links/web/hosting){.external}, sendo a zona pré-configurada para este efeito.</br>![no-mínimo-dentro-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 
 Depois de escolher, siga os passos até criar a zona DNS.
 
@@ -109,7 +96,7 @@ Ela tem o nome do seu domínio e um logótipo em forma de globo etiquetado com o
 
 Na página que aparece, os servidores DNS a utilizar com o seu nome de domínio para ativar a zona DNS da OVHcloud estão apostos abaixo de `Name Servers`{.action}.
 
-![dnszonecreate](images/name-servers.png){.thumbnail}
+![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/name-servers.png){.thumbnail}
 
 Depois de obter as informações, **modifique os servidores DNS do seu nome de domínio a partir da interface do prestador que gere o domínio**. Depois de efetuar a operação, é necessário um tempo máximo de propagação de **48 horas** para que a alteração seja totalmente efetiva.
 
@@ -125,10 +112,16 @@ Depois de obter as informações, **modifique os servidores DNS do seu nome de d
 
 ## Quer saber mais?
 
+[Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
+
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

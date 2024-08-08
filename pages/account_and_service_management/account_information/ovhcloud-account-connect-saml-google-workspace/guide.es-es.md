@@ -1,7 +1,7 @@
 ---
 title: Activar las conexiones SSO de Google Workspace con su cuenta OVHcloud
 excerpt: "Cómo asociar el servicio Google Workspace a su cuenta de OVHcloud a través de SAML 2.0"
-updated: 2024-03-05
+updated: 2024-07-05
 ---
 
 > [!primary]
@@ -51,8 +51,8 @@ En la pestaña "Google Identity Provider details", descargue el archivo de metad
 
 En el apartado "Service provider details", complete los campos `ACS URL` y `Entity ID` con los valores de su región: 
 
- - Región UE: **ACS URL**: `https://www.ovhcloud.com/eu/auth/saml/acs` y **Entity ID**: `https://www.ovhcloud.com/eu/auth/`
- - Región CA: **ACS URL**: `https://www.ovhcloud.com/ca/auth/saml/acs` y **Entity ID**: `https://www.ovhcloud.com/ca/auth/`
+- Región UE: **ACS URL**: `https://www.ovhcloud.com/eu/auth/saml/acs` y **Entity ID**: `https://www.ovhcloud.com/eu/auth/`
+- Región CA: **ACS URL**: `https://www.ovhcloud.com/ca/auth/saml/acs` y **Entity ID**: `https://www.ovhcloud.com/ca/auth/`
 
 Haga clic en `Continue`{.action}.
 
@@ -85,23 +85,23 @@ El servicio Google Workspace ya confía en OVHcloud como proveedor de servicios.
 
 El Google workspace se añadirá como proveedor de identidad de confianza al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), donde podrá proporcionar los metadatos del proveedor de identidad.
 
-[Conéctese](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y haga clic en su perfil en la parte superior derecha.
+Haga clic en el nombre de su cuenta en la esquina superior derecha y, a continuación, vuelva a hacer clic en su nombre en la barra lateral.
 
-![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
+![Acceso al menú IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Haga clic en su nombre para acceder a la página de gestión de su perfil.
+Puede acceder al menú IAM desde la entrada dedicada del área de cliente.
 
-![Información de usuario de OVHcloud](images/ovhcloud_user_infos.png){.thumbnail}
+![Acceso al menú IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Abra la pestaña `Gestión de usuarios`{.action}.
+A continuación, haga clic en la pestaña `Identidades`{.action} para acceder a la gestión de los usuarios locales.
 
-![Perfil del menú OVHcloud](images/ovhcloud_profile_menu.png){.thumbnail}
+![Acceso al menú IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Haga clic en el botón `Conexión SSO`{.action}.
 
 ![OVHcloud conexión SSO etapa 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Introduzca los metadatos XML del servicio Google Workspace. Rellene el campo "Nombre de atributo de grupo" con el valor `Group`. Haga clic en `Confirmar`{.action}.
+Introduzca los metadatos XML del servicio Google Workspace. Rellene el campo "Nombre de atributo de usuario" con el valor `Name` y el campo "Nombre de atributo de grupo" con el valor `Group`. Haga clic en `Confirmar`{.action}.
 
 Es posible conservar los usuarios locales marcando la casilla `Mantener los usuarios de OVHcloud activos`.
 

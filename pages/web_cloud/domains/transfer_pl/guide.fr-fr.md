@@ -9,6 +9,15 @@ updated: 2022-10-19
 
 Votre nom de domaine en .pl est actuellement déposé dans un bureau d’enregistrement et vous souhaitez le basculer vers OVHcloud ? C'est possible, via une procédure de transfert.
 
+> [!warning]
+>
+> Si, en plus du transfert de votre nom de domaine, vous souhaitez migrer les services qui lui sont associés (site web, e-mail, etc.), consultez d'abord notre guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » avant de poursuivre.
+> Ce guide explique en détails comment migrer l'ensemble de vos services sans coupures.
+>
+> Si vous réalisez uniquement le transfert de votre nom de domaine sans déménager vos autres services, veillez à bien récupérer les serveur DNS actifs pour votre nom de domaine auprès de votre **bureau d'enregistrements** actuel pour les renseigner directement lors de l'étape 3 du guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) »
+> Cela vous évitera d'interrompre l'association entre votre nom de domaine et vos services externes associés.
+>
+
 En transférant votre nom de domaine, vous changerez de registre pour celui-ci. Vous pouvez transférer votre nom de domaine vers OVHcloud en créant une commande. Ce processus prend généralement entre un et dix jours.
 
 **Découvrez comment transférer un nom de domaine générique vers OVHcloud.**
@@ -132,4 +141,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

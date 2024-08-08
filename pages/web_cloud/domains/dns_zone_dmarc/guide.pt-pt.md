@@ -1,5 +1,5 @@
 ---
-title: Configurar um registo DMARC no seu domínio
+title: "Melhorar a segurança dos e-mails através do registo DMARC"
 excerpt: Saiba como o DMARC funciona e como configurá-lo para o seu serviço de e-mail
 updated: 2023-12-13
 ---
@@ -183,4 +183,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

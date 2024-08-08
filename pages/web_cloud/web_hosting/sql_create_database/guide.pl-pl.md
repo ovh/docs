@@ -28,7 +28,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `
 
 Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego hostingu.
 
-![databasecreation](images/tab.png){.thumbnail}
+![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 W tabeli bazy danych mogą mieć kilka różnych Opcje:
 
@@ -52,7 +52,7 @@ Istnieją dwa sposoby tworzenia nowej bazy danych:
 
 W wyświetlonym oknie wybierz następujące informacje:
 
-![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
+![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
 
 |Informacje|Opis|  
 |---|---| 
@@ -64,7 +64,7 @@ Następnie kliknij przycisk `Dalej`{.action}.
 
 Pojawi się nowe okno:
 
-![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
+![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
 
 |Informacje|Opis|
 |---|---| 
@@ -92,7 +92,7 @@ Pojawi się nowe okno:
 
 Uzupełnij wymagane informacje i kliknij na `Dalej`{.action}.
 
-![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
+![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
 
 Sprawdź, czy wszystkie wyświetlane informacje są poprawne. Jeśli tak, kliknij przycisk `Zatwierdź`{.action}, aby uruchomić proces tworzenia bazy danych.
 
@@ -148,7 +148,7 @@ W zależności od używanego oprogramowania może być konieczne ręczne skonfig
 
 OVHcloud udostępnia narzędzie online do zarządzania bazami danych "phpMyAdmin". Aby odnaleźć link dostępu do tej aplikacji, zaloguj się do [panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz pobrać dane do połączenia z bazą danych, następnie kliknij zakładkę `Bazy danych`{.action}. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie z menu rozwijanego kliknij `Dostęp do phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.action}.
 

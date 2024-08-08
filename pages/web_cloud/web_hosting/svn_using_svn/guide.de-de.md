@@ -50,7 +50,7 @@ ls -la
 
 Sie sollten die Verzeichnisse wie unten dargestellt erhalten:
 
-![Hosting](images/terminal-ls-la-svn.png){.thumbnail}
+![Hosting](/pages/assets/screens/other/web-tools/terminal/terminal-ls-la-svn.png){.thumbnail}
 
 ### Erstellung öffentlicher/privater Schlüssel
 
@@ -82,7 +82,7 @@ command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user
 > Weitere Informationen finden Sie in unserer Anleitung [SSH-Zugang Ihres Webhostings verwenden](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
-![Hosting](images/terminal-homez-folder.png){.thumbnail}
+![Hosting](/pages/assets/screens/other/web-tools/terminal/terminal-homez-folder.png){.thumbnail}
 
 Sie können den Inhalt des Repositorys abrufen, ohne sich direkt über SSH mit dem Hosting zu verbinden.
 
@@ -108,7 +108,7 @@ svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 - Erstellen Sie ein Verzeichnis, klicken Sie mit der rechten Maustaste darauf und wählen Sie "SVN Checkout". 
 - Geben Sie `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` in das Feld "URL of repository" ein und klicken Sie auf `OK`:
 
-![Hosting](images/checkout.png){.thumbnail}
+![Hosting](/pages/assets/screens/other/web-tools/tortoisesvn/checkout.png){.thumbnail}
 
 Subversion bietet eine sehr gute Dokumentation auf Englisch: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 

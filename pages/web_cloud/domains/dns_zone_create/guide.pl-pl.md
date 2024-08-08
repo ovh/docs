@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie strefy DNS OVHcloud dla domeny'
 excerpt: 'Dowiedz się, jak utworzyć strefę DNS w OVHcloud dla Twojej domeny w Panelu klienta'
-updated: 2024-05-16
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -12,24 +12,11 @@ updated: 2024-05-16
 
 Strefa **D**omain **N**ame **S**ystem (**DNS**) nazwy domeny stanowi jej plik konfiguracyjny. Zawiera on informacje techniczne nazywane *rekordy DNS*. Strefa DNS jest jak ośrodek sterowania.
 
-Możesz na przykład określić:
+Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami:
 
-- Adres IP (rekordy DNS typu *A* i *AAAA*) Twojego hostingu, aby wyświetlić Twoją stronę WWW z Twoją domeną.
-- Serwery e-mail (rekordy DNS typu *MX*), na które Twoja domena musi przekierować otrzymane e-maile. Możesz sprawdzić je na spersonalizowanym adresie e-mail z Twoją domeną.
-- Informacje związane z bezpieczeństwem / uwierzytelnianiem usług (hosting, serwer www, serwer e-mail, itp.) powiązanych z Twoją domeną (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, itp.).
-
-W razie potrzeby sprawdź dokumentację dotyczącą [rekordów DNS](/pages/web_cloud/domains/dns_zone_records) i [edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links/manager).
-
-Strefa DNS jest zainstalowana / zarejestrowana na **serwerach DNS**. Są to **serwery DNS**, które muszą być zadeklarowane u nazwy domeny, aby używać strefy DNS, którą hostują. 
-
-**serwery DNS** działają zwykle w parze:
-
-- Serwer DNS *główny*: przekierowuje strumienie zapytań otrzymanych przez domenę na strefę DNS, którą przechowuje dla domeny. Dzięki temu możesz wykonać *rozdzielczość DNS*, aby przekierować strumienie danych na prawidłowe usługi (serwery, stronę WWW, e-maile, itp.) powiązane z nazwą domeny.
-- Serwer DNS *secondary*: ten serwer zapasowy* jest używany, jeśli serwer *główny* jest nasycony zapytaniami, jest niedostępny lub reaguje mniej szybko niż serwer *secondary*.
-
-Niektórzy dostawcy DNS proponują 3 **serwery DNS** lub więcej do zadeklarowania w Twojej domenie, aby aktywować strefę DNS, którą hostują dla Twojej domeny.
-
-Aby uzyskać więcej informacji na temat **serwerów DNS*, zapoznaj się z naszym [przewodnik](/pages/web_cloud/domains/dns_server_general_information) na ten temat.
+- [Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Może zaistnieć konieczność utworzenia strefy DNS dla Twojej domeny w OVHcloud.
 
@@ -65,16 +52,16 @@ Na stronie, która się wyświetla wprowadź nazwę domeny (przykład: *domain.t
 
 Jeśli pojawi się komunikat informujący, że strefa DNS nie może zostać utworzona, sprawdź, czy domena spełnia niezbędne wymagania lub poproś osobę, która ją zarządza, o zrobienie tego dla Ciebie. Kiedy wszystko jest poprawne, spróbuj ponownie.
 
-![dnszonecreate](images/adding-a-dns-zone.png){.thumbnail}
+![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone.png){.thumbnail}
 
 Po zakończeniu weryfikacji, wybierz opcję aktywacji lub nie dodawania wpisów minimalnych w strefie DNS, którą utworzysz. Wybór ten nie jest ostateczny, ponieważ w przyszłości będziesz mógł [edytować rekordy strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
 
-![dnszonecreate](images/adding-a-dns-zone-step-2.png){.thumbnail}
+![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone-step-2.png){.thumbnail}
 
 |Włącz minimalne wpisy?|Szczegóły|
 |---|---|
-|Tak|Wybierz ten wybór, jeśli chcesz samodzielnie spersonalizować strefę DNS.</br>![minimum-dns-entries](images/dashboard-minimal-entries.png){.thumbnail}|
-|Nie|Wybierz ten wybór, jeśli planujesz korzystać z usług OVHcloud takich jak [hosting WWW](/links/web/hosting){.external}, strefa jest wstępnie skonfigurowana do tego celu.</br>![no-minimum-dns-entries](images/dashboard-ovh-full-entries.png){.thumbnail}|
+|Tak|Wybierz ten wybór, jeśli chcesz samodzielnie spersonalizować strefę DNS.</br>![minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
+|Nie|Wybierz ten wybór, jeśli planujesz korzystać z usług OVHcloud takich jak [hosting WWW](/links/web/hosting){.external}, strefa jest wstępnie skonfigurowana do tego celu.</br>![no-minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 
 Po dokonaniu wyboru wykonaj kolejne kroki, aż do utworzenia strefy DNS.
 
@@ -109,7 +96,7 @@ Po lewej stronie widnieje nazwa Twojej domeny, a po lewej stronie widnieje logo 
 
 Na stronie, która się wyświetla, serwery DNS używane z Twoją domeną do aktywowania strefy DNS OVHcloud wyświetlają się poniżej `Name Servers`{.action}.
 
-![dnszonecreate](images/name-servers.png){.thumbnail}
+![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/name-servers.png){.thumbnail}
 
 Po uzyskaniu informacji o domenie **modyfikuj serwery DNS Twojej domeny w interfejsie dostawcy zarządzającego domeną**. Czas propagacji **48 godziny** jest niezbędny, aby modyfikacja stała się efektywna.
 
@@ -125,10 +112,16 @@ Po uzyskaniu informacji o domenie **modyfikuj serwery DNS Twojej domeny w interf
 
 ## Sprawdź również
 
+[Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
+
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

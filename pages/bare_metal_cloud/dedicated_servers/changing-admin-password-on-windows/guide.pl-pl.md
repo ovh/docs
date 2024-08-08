@@ -1,7 +1,7 @@
 ---
 title: 'Zmiana hasła administratora na serwerze dedykowanym z systemem Windows'
 excerpt: 'Dowiedz się, jak zmienić hasło administratora na serwerze dedykowanym z systemem Windows'
-updated: 2023-09-18
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -14,10 +14,17 @@ Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz has
 
 **Niniejszy przewodnik ułatwi Ci przeprowadzenie przez cały proces zmiany hasła administratora Twojego serwera poprzez konfiguracje trybu Rescue dostępne dla systemu operacyjnego Windows.**
 
+> [!warning]
+>
+> Ten przewodnik nie dotyczy uruchamiania w trybie rescue o nazwie `Windows Customer Rescue System`.
+>
+> Sprawdź [ten przewodnik](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows), gdy w Panelu klienta OVHcloud jest używana opcja `Windows Customer Rescue System (Windows2022-based)`.
+>
+
 ## Wymagania początkowe
 
-* Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} z zainstalowanym systemem Windows
-* Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} z zainstalowanym systemem Windows
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 

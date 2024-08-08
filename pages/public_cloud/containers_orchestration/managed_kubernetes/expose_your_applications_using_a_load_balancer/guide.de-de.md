@@ -28,12 +28,12 @@ To be able to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/de/pu
 
 | Kubernetes versions |
 |-------------|
-| 1.24.17-7>= |
 | 1.25.16-7>= |
 | 1.26.4-3>=  |
 | 1.27.12-1>= |
 | 1.28.8-1>=  |
 | 1.29.3-3>=  |
+| 1.30.2-1 >= |
 
 #### Network prerequisite to expose your Load Balancers publicly
 

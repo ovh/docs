@@ -1,7 +1,7 @@
 ---
 title: "Alle Informationen zu DNS-Einträgen"
 excerpt: "Entdecken Sie die verschiedenen Arten von DNS-Einträgen, die in einer OVHcloud DNS-Zone verfügbar sind"
-updated: 2024-06-17
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -120,7 +120,7 @@ Wählen Sie den gewünschten Eintrag in den Tabs aus:
 >> **D**omain**K**eys **I**dentified **M**ail <br><br>
 >> Ermöglicht die Überprüfung der Authentizität der Domain des Absenders und die Sicherstellung der Integrität der gesendeten E-Mail. Der DKIM-Eintrag ist ein aus mehreren Zeichen bestehender Schlüssel. Der DKIM-Schlüssel wird von Ihrem E-Mail-Anbieter bereitgestellt (falls diese Funktion angeboten wird). Sie können ihn in einem TXT-Eintrag eingeben.
 >>
->> Weitere Informationen finden Sie in unserer Dokumentation "[DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)".
+>> Weitere Informationen finden Sie in unserer Dokumentation "[E-Mail-Sicherheit durch DKIM-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dkim)".
 >>
 > **DMARC**
 >> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
@@ -171,7 +171,14 @@ Wählen Sie den gewünschten Eintrag in den Tabs aus:
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Verwendet, um den Fingerprint eines SSL/TLS-Zertifikats einzugeben.
+>> Verwendet, um den Fingerprint eines SSL/TLS-Zertifikats einzugeben. Damit können Sie den *Hash* eines Zertifikats direkt in der DNS-Zone Ihrer Domain über einen DNS-Eintrag speichern.
+>>
+>> Dieser Eintrag wird im Rahmen des Protokolls **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE) verwendet.
+>>
+>> Mit dem DANE-Protokoll kann ein Client (Webbrowser, E-Mail-Client, FTP-Client, SSH-Client usw.) auf den TLSA-Eintrag zugreifen. So stellt er sicher, dass ein für einen Domainnamen verwendetes SSL/TLS-Zertifikat mit dem Zertifikat des gleichen Domainnamens identisch ist.
+>>
+>> Weitere Informationen finden Sie bei Bedarf auf der Website der [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>>
 
 #### Anwendungsbeispiel: Verwendung von CNAME-Einträgen <a name="cnameusecase"></a>
 

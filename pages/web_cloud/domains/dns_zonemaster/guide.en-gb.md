@@ -30,7 +30,7 @@ The Zonemaster tool allows you to check a DNS configuration in place on a domain
 
 To check the current configuration of a domain name, enter your domain name, then click `Run`{.action}.
 
-![Screenshot of the Zonemaster input form. The domain "domain.tld" has been entered and is now ready to be tested.](images/run-domain-test.png){.thumbnail}
+![Screenshot of the Zonemaster input form. The domain "domain.tld" has been entered and is now ready to be tested.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
 
 To check a DNS configuration that has been prepared but not yet applied to the domain name concerned, select the `Options`{.action} box, and then enter the following information:
 
@@ -44,12 +44,12 @@ You can also force checks on a specific IP protocol by using the `Disable IPv6` 
 > You have configured a DNS zone for this domain name on the DNS servers "dns1.test.tld" and "dns2.test.tld".<br>
 > Before you change the DNS servers, you can perform an advanced search by enabling `Options`{.action}, then entering "dns1.test.tld" and "dns2.test.tld" into the `Nameservers` fields.<br>
 > Zonemaster will perform a test as if you were using the servers "dns1.test.tld" and "dns2.test.tld" on domain.tld.<br>
-> ![Screenshot of the advanced options of Zonemaster form. The two nameservers "dns1.test.tld" and "dns2.test.tld" have been entered in the Nameservers section of the form.](images/run-domain-test-nameservers-option.png){.thumbnail}
+> ![Screenshot of the advanced options of Zonemaster form. The two nameservers "dns1.test.tld" and "dns2.test.tld" have been entered in the Nameservers section of the form.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > When you enter a domain name and click on `Fetch NS from parent zone`{.action} and `Fetch DS from parent zone`{.action}, the DNS servers associated with the domain name will appear, along with the DS record information (DNSSEC) if it has been configured.
-> ![Screenshot of the advanced options of Zonemaster form. The "Fetch NS from parent zone" button is highlighted and the nameservers of the domain "domain.tld" are prefilled in the Nameservers section of the form.](images/fetch-ns-from-parent-zone.png){.thumbnail}
+> ![Screenshot of the advanced options of Zonemaster form. The "Fetch NS from parent zone" button is highlighted and the nameservers of the domain "domain.tld" are prefilled in the Nameservers section of the form.](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Result
 
@@ -62,7 +62,7 @@ Once the form has been validated, the results are grouped by type of test. Tests
 
 For each test, it is possible to get more details, for instance, to understand why a test failed.
 
-![Screenshot of the result page of Zonemaster for the domain "domain.tld". The "Address" section is expanded.](images/domain-analysis.png){.thumbnail}
+![Screenshot of the result page of Zonemaster for the domain "domain.tld". The "Address" section is expanded.](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
 
 ### Useful information
 
@@ -80,4 +80,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: SSO-Verbindungen zu Ihrem OVHcloud Account über Okta aktivieren
 excerpt: "Erfahren Sie hier, wie Sie Okta Dienste über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
-updated: 2024-03-05
+updated: 2024-07-05
 ---
 
 ## Ziel
@@ -80,25 +80,25 @@ Ihr Okta Dienst vertraut nun OVHcloud als Service Provider. Stellen Sie im näch
 
 Um Okta als vertrauenswürdigen Identity Provider hinzuzufügen, liefern Sie die Metadaten des Identity Providers in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-Wenn Sie eingeloggt sind, klicken Sie oben rechts auf Ihren Account-Namen.
+Klicken Sie oben rechts auf den Namen Ihres Accounts und dann erneut in der Seitenleiste auf Ihren Namen.
 
-![OVHcloud Top Menü](images/ovhcloud_top_menu.png){.thumbnail}
+![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Klicken Sie auf die Initialen, um auf die Verwaltungsseite Ihres Accounts zuzugreifen.
+Sie können das IAM-Menü über den dedizierten Eintrag in Ihrem Kundencenter aufrufen.
 
-![OVHcloud User Information](images/ovhcloud_user_infos.png){.thumbnail}
+![IAM-Menüzugriff](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Öffnen Sie den Tab `Verwaltung der Nutzer`{.action}.
+Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der lokalen Benutzer zuzugreifen.
 
-![OVHcloud Menü Profil](images/ovhcloud_profile_menu.png){.thumbnail}
+![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Klicken Sie auf den Button `SSO-Verbindung`{.action}.
 
 ![OVHcloud SSO-Verbindung Schritt 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Geben Sie die XML-Metadaten Ihres Okta Dienstes ein. Geben Sie `groups` als "Group Attribute Name" ein und klicken Sie auf `Bestätigen`{.action}.
+Geben Sie die XML-Metadaten Ihres Okta Dienstes ein. Geben Sie den Wert `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` im Feld **Nutzerattributname** und den Wert `Group` im Feld **Name des Gruppenattributs** ein und klicken Sie auf `Bestätigen`{.action}.
 
-Sie können die lokalen Benutzer beibehalten, indem Sie das Kontrollkästchen `Aktive OVHcloud User beibehalten` aktivieren.
+Sie können die lokalen Benutzer beibehalten, indem Sie die Option `Aktive OVHcloud User beibehalten` aktivieren.
 
 ![OVHcloud SSO-Verbindung Schritt 2](images/ovhcloud_add_federation.png){.thumbnail}
 

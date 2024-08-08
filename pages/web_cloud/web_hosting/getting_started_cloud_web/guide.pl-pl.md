@@ -54,7 +54,7 @@ Możesz również dodawać frameworki, jeśli pozwala na to wybrana oferta [Clou
 
 Zanim przejdziesz do kolejnych kroków, upewnij się, że posiadasz framework lub frameworki niezbędne do Twojego projektu.
 
-![cloudweb hosting ssd](images/edit-runtime.png){.thumbnail}
+![cloudweb hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/edit-runtime.png){.thumbnail}
 
 ### Etap 3: utworzenie zmiennych środowiskowych (opcjonalnie)
 
@@ -64,7 +64,7 @@ Dzięki temu nie jest na przykład konieczne określanie pliku „.env” we fra
 
 Aby dodać zmienną środowiskową, zaznacz odpowiedni hosting Cloud Web i kliknij zakładkę `Zmienne środowiskowe`{.action}. Zmienne środowiskowe utworzone w ramach Twojej oferty wyświetlają się w tabeli. Aby dodać nową zmienną, kliknij przycisk `Operacje`{.action}, a następnie `Dodaj zmienną środowiskową`{.action}. Następnie postępuj zgodnie ze wskazówkami w zależności od zmiennej, którą chcesz utworzyć.
 
-![cloud web hosting ssd](images/add-environment-variable.png){.thumbnail}
+![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 Jeśli nie używasz środowiska deweloperskiego zawierającej zmienne środowiskowe lub jeśli chcesz sprawdzić, czy zmienne działają poprawnie, możesz utworzyć skrypt, który przeprowadzi weryfikację. Poniżej przykład skryptu, który może być pomocny w przeprowadzanej przez Ciebie operacji, nie zastąpi on jednak pomocy technicznej webmastera.
 
@@ -109,7 +109,7 @@ Zalecamy szczególną ostrożność podczas wypełniania następujących danych:
 
 Powtórz tę operację, jeśli chcesz dodać kilka domen do Twojego hostingu Cloud Web. Aby uzyskać więcej informacji o dodawaniu domeny w opcji MultiSite, zapoznaj się z naszą dokumentacją: [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
 
-![cloud web hosting ssd](images/add-domain-or-subdomain.png){.thumbnail}
+![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-domain-or-subdomain.png){.thumbnail}
 
 ### Etap 5: instalacja Twojego projektu na hostingu Cloud Web
 
@@ -128,7 +128,7 @@ Jeśli chcesz uzyskać więcej informacji o modułach CMS OVHcloud, zapoznaj si�
 > Aby skorzystać z modułu CMS, konieczne jest użycie frameworku PHP. 
 >
 
-![cloud web hosting ssd](images/add-a-module.png){.thumbnail}
+![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/1-click-modules/add-a-module.png){.thumbnail}
 
 #### 2. Ręczna instalacja projektu
 

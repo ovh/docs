@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2024-02-19
+updated: 2024-07-04
 ---
 
 ## Objective
@@ -39,7 +39,7 @@ Click your account name in the top-right corner, then on your name again in the 
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-You can access the IAM menu via the dedicated entry in your customer account management.
+You can access the IAM menu via the dedicated entry in your Control Panel.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
@@ -66,11 +66,12 @@ The following form will be displayed:
 ![Create a policy](images/create_a_policy_01.png){.thumbnail}
 
 - **Policy name** (mandatory): This is the name that will appear in the interfaces. The name should be unique and must not contain any spaces.
-- **Product types**: Select the types of product to define the scope of the policy. One or more product types can be included in the same policy.
+- **Identities**: Select the identities affected by this policy. It's possible to target more than one identity type.
+- **Product types**: Select the type of product to define the scope of the policy. One or more product types can be included in the same policy.
 - **Resources**: Add resources or resource groups to be covered by the policy. The resources available are filtered by the product type selected beforehand.
 - **Actions**.
 
-There are 3 different ways to add actions:
+There are 4 different ways to add actions:
 
 - Activating the `Authorise all actions`{.action} option
 
@@ -123,7 +124,7 @@ A search field is available to help identify a specific action on the list.
 
 #### Editing a policy
 
-To edit an existing policy, click the `...`{.action} button to the right of the policy and click `Edit policy`{.action}.
+To edit an existing policy, click the `...`{.action} button to the right of the policy and click `Modify policy`{.action}.
 
 ![Edit a policy](images/editing_a_policy.png){.thumbnail}
 
@@ -135,21 +136,9 @@ To delete an existing policy, click the `...`{.action} button to the right of th
 
 A popup window will ask you to confirm the deletion.
 
-### Linking an identity to a policy
-
-To link an identity to a policy, click the `...`{.action} button to the right of the policy and click `Manage linked identities`{.action}.
-
-![Edit a policy](images/editing_a_policy.png){.thumbnail}
-
-This will allow you to add and delete the users or the groups to whom the policy should apply.
-
-![Link an identity](images/link_identity_to_policy.png){.thumbnail}
-
 ### Managing identities
 
-The identities available for policies are managed via the `User management`{.action} tab, in the `My account`{.action} menu.
-
-The `Identities`{.action} tab on the IAM menu will redirect you the this menu.
+The identities available for policies are managed via the `Identities`{.action} tab.
 
 Details about user management are available in the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

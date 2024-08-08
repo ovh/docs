@@ -1,7 +1,7 @@
 ---
 title: 'Configurar IPv6 em servidores dedicados'
 excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
-updated: 2024-03-05
+updated: 2024-07-15
 ---
 
 > [!primary]

@@ -52,7 +52,7 @@ Aby uzyskać dostęp do interfejsu zarządzania strefą DNS OVHcloud, wykonaj na
 
 W tabeli, która się wyświetla dla każdego wiersza wyświetlony zostanie rekord DNS powiązany z Twoją domeną w OVHCloud. Możesz sortować ich zawartość według typu rekordu lub nazwy domeny.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
 
 ### Edycja strefy DNS OVHcloud dla Twojej domeny
 
@@ -113,7 +113,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >>
 >> Sprawdź wcześniej, czy ten rekord już nie istnieje i nie wskazuje na inny cel. W tym celu włącz sortowanie zawartości tabeli według typu rekordu i nazwy domeny. Jeśli rekord już istnieje, rekomendujemy jego modyfikację zgodnie z procedurą opisaną poniżej.
 >>
->> ![dnszone](images/add-an-entry.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry.png){.thumbnail}
 >>
 >> > Gdy celem rekordu jest adres URL, pamiętaj, aby go wpisać. W przeciwnym razie domena zostanie automatycznie dodana na końcu grupy docelowej.
 >> >
@@ -133,7 +133,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >> 6. W tabeli, która się wyświetli kliknij piktogram `...`{.action} po prawej stronie odpowiedniego wpisu.
 >> 7. Następnie kliknij `Zmień rekord`{.action} i postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 >>
->> ![dnszone](images/modify-record.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 >>
 > **Usunięcie rekordu DNS**
 >>
@@ -149,7 +149,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >>
 >> Możesz usunąć kilka rekordów za jednym razem, zaznaczając je wcześniej w lewej części tabeli i klikając przycisk `Usuń`{.action}.
 >>
->> ![dnszone](images/delete-record.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 >>
 > **Zresetuj strefę DNS**
 >>
@@ -169,7 +169,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >> 5. Na stronie, która się wyświetli kliknij zakładkę `Strefa DNS`{.action}.
 >> 6. Po prawej stronie lub poniżej tabeli kliknij `Zresetuj strefę DNS`{.action}, następnie postępuj zgodnie z 2 kolejnymi instrukcjami, które się wyświetlą.
 >>
->> [dnszone](images/reset-my-dns-zone.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
 >>
 >> **Etap 1**
 >>
@@ -189,14 +189,14 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 >> - `Przekierowanie`: Twoja domena będzie wskazywać na serwer przekierowania OVHcloud. Pomaga to w wyświetleniu strony głównej OVHcloud, co pozwala uniknąć błędu DNS.<br>
 >> - `Hosting WWW OVHcloud`: Twoja domena będzie wskazywać na adres IP hostingu powiązanego z domeną <br>
 >> - `Niestandardowy`: ustaw wartość IPv4 ([rekord A](/pages/web_cloud/domains/dns_zone_records#pointer-records)) hostingu, który chcesz wskazywać. <br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-01.png){.thumbnail}
 >>
 >> **Adres email**
 >>
 >> - `Przekierowanie`: Twoja domena będzie wskazywać na serwery przekierowań email. Ten wybór. Jest to szczególnie przydatne, jeśli nie masz żadnej oferty e-mail, ale chcesz, aby e-maile były wysyłane na jeden lub więcej adresów e-mail poza Twoją domeną.<br>
 >> - `Serwer E-mail OVHcloud`: do ustawienia, gdy posiadasz ofertę e-mail na hostingu.<br>
 >> - `Niestandardowy`: ustaw adres URL i priorytet serwera e-mail ([rekord MX](/pages/web_cloud/domains/dns_zone_records#mail-records)), który chcesz wskazać.<br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 >>
 
 ### Czas propagacji

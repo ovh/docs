@@ -16,9 +16,9 @@ OVHcloud oferuje program pocztowy Outlook w cenie 2 euro netto miesięcznie. Zos
 
 Po zamówieniu programu Outlook możesz pobrać jedną z 3 wersji:
 
-- Outlook 2016 na Windows 32 bit.
-- Outlook 2016 na Windows 64 bit.
-- Outlook 2016 na 64-bitowy MAC.
+- Outlook na Windows 32 bit.
+- Outlook na Windows 64 bit.
+- Outlook na 64-bitowy MAC.
 
 **Dowiedz się, jak zamówić licencję Outlook z platformy Exchange OVHcloud i zainstalować ją.**
 

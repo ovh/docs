@@ -49,11 +49,11 @@ W zależności od pakietu [hostingowego OVHcloud](/links/web/hosting) zmiana has
 
 - **w przypadku pakietów, które nie pozwalają na utworzenie drugiego użytkownika FTP** (oferty *Darmowy hosting 100M* i *Perso*): kliknij *piktogram w formie ołówka* w kolumnie `Hasło`{.action} tabeli, która się wyświetla, wprowadź nowe hasło **zgodnie z polityką haseł**, a następnie potwierdź zmianę, klikając *zielony przycisk* do zatwierdzenia.
 
-![change-ftp-password-step1-perso](images/change-password-perso.png){.thumbnail}
+![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
 
 - **w przypadku pakietów umożliwiających utworzenie kilku użytkowników FTP** (oferty *Pro* i *Performance*): kliknij przycisk `...`{.action} po prawej stronie odpowiedniego użytkownika FTP a następnie kliknij `Zmień hasło`{.action}. W oknie, które się wyświetla wprowadź nowe hasło **zgodnie z polityką haseł**, potwierdź, wprowadzając je ponownie i klikając przycisk `Zatwierdź`{.action}.
 
-![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
+![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
 
 > [!primary]
 >

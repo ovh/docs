@@ -43,7 +43,7 @@ Der Datentransfer erfolgt über einen FTP-Client, z.B. FileZilla. Weitere Inform
 
 Wenn Sie mit Ihrem Server über FTP verbunden sind, kopieren Sie den Inhalt des Verzeichnisses `www` (per Drag & Drop) zu einem lokalen Ordner. Dieses Verzeichnis enthält alle Dateien und Verzeichnisse Ihrer WordPress Installation (Einstellungen, Themes, Medien, etc.).
 
-![Übersicht der WordPress Dateien und Ordner](images/wordpress-into-www.png){.thumbnail}
+![Übersicht der WordPress Dateien und Ordner](/pages/assets/screens/other/web-tools/filezilla/wordpress-into-www.png){.thumbnail}
 
 Klicken Sie auf das Verzeichnis `www` und ziehen Sie es zum linken Fenster auf das Verzeichnis Ihrer Wahl. Der Dateitransfer beginnt automatisch.
 
@@ -57,17 +57,17 @@ Um Ihre Datenbank zu exportieren, loggen Sie sich Sie sich über die URL, die Si
 >
 > Folgen Sie unserer Anleitung zum [Export einer Datenbank](/pages/web_cloud/web_hosting/sql_database_export).
 
-![PHPMyAdmin Zugang - Empfang](images/pma-main-page.png){.thumbnail}
+![PHPMyAdmin Zugang - Empfang](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png){.thumbnail}
 
 Klicken Sie oben auf `Export`{.action}:
 
-![PHPMyAdmin-Zugang - Exportieren](images/pma-export.png){.thumbnail}
+![PHPMyAdmin-Zugang - Exportieren](/pages/assets/screens/other/web-tools/phpmyadmin/pma-export.png){.thumbnail}
 
 Übernehmen Sie die Voreinstellungen zum schnellen Export und SQL-Format.
 
 Klicken Sie auf `Go`{.action}, um die gesamte Datenbank im SQL-Format (Structured Query Language) herunterzuladen.
 
-![PHPMyAdmin Zugang - Exportieren - Download](images/dowload-successfull.png){.thumbnail}
+![PHPMyAdmin Zugang - Exportieren - Download](/pages/assets/screens/other/browsers/web-pages/dowload-successfull.png){.thumbnail}
 
 ### Methode 2: Backups über Plugin erstellen
 
@@ -79,43 +79,43 @@ Laden Sie das Plugin im Format `.zip` herunter. Die heruntergeladene Datei wurde
 
 Standardmäßig handelt es sich um Ihren Domainnamen gefolgt von `/wp-admin`:
 
-![Administrator-Anbindung an wp-admin](images/login-interface.png){.thumbnail}
+![Administrator-Anbindung an wp-admin](/pages/assets/screens/other/cms/wordpress/login-interface.png){.thumbnail}
 
 Gehen Sie auf der Startseite in den Bereich `Plugins`{.action} und klicken Sie dann auf `Installieren`{.action}:
 
-![Plugin hinzufügen](images/plugins-add-new.png){.thumbnail}
+![Plugin hinzufügen](/pages/assets/screens/other/cms/wordpress/plugins-add-new.png){.thumbnail}
 
 Wählen Sie das Plugin aus, indem Sie auf den Button `Durchsuchen`{.action} klicken:
 
-![Plugin hochladen](images/plugins-add-new-updraftplus.png){.thumbnail}
+![Plugin hochladen](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-add-new-updraftplus.png){.thumbnail}
 
 Klicken Sie auf `Jetzt installieren`{.action}:
 
-![Plugin installieren](images/plugins-browse-updraftplus.png){.thumbnail}
+![Plugin installieren](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-browse-updraftplus.png){.thumbnail}
 
 Nach der Installation können Sie das Plugin aktivieren:
 
-![Installationsbestätigung](images/plugins-activate-updraftplus.png){.thumbnail}
+![Installationsbestätigung](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-activate-updraftplus.png){.thumbnail}
 
 Sobald die Erweiterung aktiviert ist, erscheint sie in der Liste der Plugins:
 
-![Liste der installierten Domainendungen](images/plugins-list-updraftplus.png){.thumbnail}
+![Liste der installierten Domainendungen](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-list-updraftplus.png){.thumbnail}
 
 #### 2.2 Backups konfigurieren
 
 Klicken Sie auf der oben genannten Seite auf `Einstellungen`{.action} und dann auf der Seite `UpdraftPlus Backup/Restore` auf den Tab `Einstellungen`{.action}:
 
-![Seite UpdraftPlus Backup/Restore](images/updraftplus-settings.png){.thumbnail}
+![Seite UpdraftPlus Backup/Restore](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings.png){.thumbnail}
 
 Legen Sie das tägliche Backup für Ihre Dateien und Datenbanken fest:
 
-![UpdraftPlus Einstellungen Seite](images/updraftplus-settings-2.png){.thumbnail}
+![UpdraftPlus Einstellungen Seite](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings-2.png){.thumbnail}
 
 Wählen Sie E-Mail als Methode aus.
 
 Die Backups werden an die E-Mail-Adresse des Administrator-Accounts (den von Ihnen verwendeten Account) versendet:
 
-![Sicherung per E-Mail](images/email-setting.png){.thumbnail}
+![Sicherung per E-Mail](/pages/assets/screens/other/cms/wordpress/email-setting.png){.thumbnail}
 
 Klicken Sie am Ende der Seite auf `Änderungen speichern`{.action}, um zu bestätigen.
 
@@ -123,11 +123,11 @@ Klicken Sie am Ende der Seite auf `Änderungen speichern`{.action}, um zu bestä
 
 Gehen Sie auf den Tab `Sichern/Wiederherstellen`{.action} und klicken Sie auf den Button `Jetzt sichern`{.action}:
 
-![Seite UpdraftPlus Sichern/Wiederherstellen](images/updraftplus-backup-now.png){.thumbnail}
+![Seite UpdraftPlus Sichern/Wiederherstellen](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-backup-now.png){.thumbnail}
 
 Klicken Sie im neuen Fenster auf `Jetzt sichern`{.action}:
 
-![Seite Sicherung/Wiederherstellung](images/updraftplus-perform-backup.png){.thumbnail}
+![Seite Sicherung/Wiederherstellung](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-perform-backup.png){.thumbnail}
 
 Sobald Ihre Backups abgeschlossen sind, erhalten Sie eine E-Mail mit den Dateien Ihres WordPress und eine mit der Datenbank Ihrer Website.
 Wenn Sie die E-Mails nicht erhalten, überprüfen Sie die E-Mail-Adresse des von Ihnen verwendeten Accounts (im Bereich `Benutzer`{.action}). Überprüfen Sie auch Ihre Ordner "Spam" oder "Junk".

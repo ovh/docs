@@ -28,7 +28,7 @@ Internet składa się z serwerów i urządzeń, które współdziałają ze sob�
 
 - Third Level Domain (**subdomain**): Od tego trzeciego poziomu mówimy o **subdomenie**. W tym przewodniku wyjaśnimy szczegółowo jego definicję i wyjaśnimy, jak wdrożyć je w ramach Twoich różnych usług.
 
-![URL content](images/url-composition.png){.thumbnail}
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
   
 **Poznaj subdomeny i dowiedz się, jak je utworzyć w OVHcloud.**
 
@@ -197,4 +197,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

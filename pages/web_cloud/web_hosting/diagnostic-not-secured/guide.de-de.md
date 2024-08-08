@@ -14,10 +14,10 @@ Es können verschiedene Fehlermeldungen auftreten, wenn Ihre Website nicht errei
 
 |Browser|Betreffende Fehlermeldung|
 |-|---|
-|Chrome:<br>"Dies ist keine sichere Verbindung"|![notsecured_chrome](images/notsecured-chrome.png){.thumbnail}|
-|Firefox:<br>"Warnung: Mögliches Sicherheitsrisiko erkannt"|![notsecured_firefox](images/notsecured-firefox.png){.thumbnail}|
-|Edge:<br>"Ihre Verbindung ist nicht privat"|![notsecured_edge](images/notsecured-edge.png){.thumbnail}|
-|Safari:<br>"Diese Verbindung ist nicht privat"|![notsecured_safari](images/notsecured-safari.png){.thumbnail}|
+|Chrome:<br>"Dies ist keine sichere Verbindung"|![notsecured_chrome](/pages/assets/screens/other/browsers/errors/notsecured-chrome.png){.thumbnail}|
+|Firefox:<br>"Warnung: Mögliches Sicherheitsrisiko erkannt"|![notsecured_firefox](/pages/assets/screens/other/browsers/errors/notsecured-firefox.png){.thumbnail}|
+|Edge:<br>"Ihre Verbindung ist nicht privat"|![notsecured_edge](/pages/assets/screens/other/browsers/errors/notsecured-edge.png){.thumbnail}|
+|Safari:<br>"Diese Verbindung ist nicht privat"|![notsecured_safari](/pages/assets/screens/other/browsers/errors/notsecured-safari.png){.thumbnail}|
 
 **Diese Anleitung erklärt, wie Sie Fehler der Art "Keine sichere Verbindung" beheben.**
 
@@ -49,7 +49,7 @@ Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinde
 
 Im Tab `Allgemeine Informationen`{.action} wird Ihnen die IPv4- und IPv6-Adresse Ihres Hostings angezeigt.
 
-![hosting-general-informations](images/find-ipv4-and-ipv6.png){.thumbnail}
+![hosting-general-informations](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 
 #### IP-Adresse in der DNS Zone überprüfen
 
@@ -59,7 +59,7 @@ Loggen Sie Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und  un
 
 Wechseln Sie zum Tab `DNS-Zone`{.action} aus und notieren Sie das "Ziel" des Eintrags vom Typ `A` Ihres Domainnamens:
 
-![zone-dns-ip](images/dashboard-entry-a.png){.thumbnail}
+![zone-dns-ip](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
 
 #### Die notwendigen Aktionen durchführen
 
@@ -68,15 +68,15 @@ Wechseln Sie zum Tab `DNS-Zone`{.action} aus und notieren Sie das "Ziel" des Ein
 |Die in der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) gelistete IP-Adresse entspricht der IP-Adresse Ihres Webhostings.|Fortfahren mit [Schritt 2](#step2)|
 |Die in der Zone angegebene IP-Adresse betrifft keines der Webhostings in Ihrem [OVHcloud Kundencenter](/links/manager), aber erscheint in der [Adressliste unserer Web Server](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Überprüfen Sie, ob die betreffende IP Adresse zu einem Ihrer Webhostings in einem anderen [OVHcloud Kunden-Account](/links/manager) gehört, falls Sie mehrere haben. Für mehr Informationen kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](/links/partner).|
 |Die in der Zone eingertragene IP-Adresse ist nicht die Ihres Webhostings und erscheint auch nicht in der [Adressliste unserer Web Server](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](/links/partner) für mehr Informationen.|
-|Im Tab `DNS-Zone`{.action} gibt ein Warnhinweis an, dass Ihre Domain andere [DNS-Server](/pages/web_cloud/domains/dns_zone_edit) verwendet. Diese werden in der Form "ns **?** .ovh.net" oder "dns **?** .ovh.net" angezeigt ("**?**" zu ersetzen mit der entsprechenden DNS-Servernummer):<br><br>![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}|Sie müssen die DNS-Server Ihrer Domain bearbeiten, damit sie mit den `NS`-Einträgen der DNS-Zone übereinstimmen. Befolgen Sie hierzu die Anweisungen in [dieser Anleitung](/pages/web_cloud/domains/dns_server_edit).|
-|Im Tab `DNS-Zone`{.action} gibt eine Nachricht an, dass Ihre Domain andere [DNS-Server](/pages/web_cloud/domains/dns_zone_edit) verwendet, die nicht dem Format "ns **?** .ovh.net" oder "dns **?** .ovh.net" entsprechen :<br><br>![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}|Kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](/links/partner) für mehr Informationen.|
-|Ihre Domain ist nicht im Bereich `Domainnamen`{.action} im [OVHcloud Kundencenter](/links/manager) aufgelistet.<br><br>Oder der Tab `DNS-Zone`{.action} Ihrer Domainname erscheint wie folgt:<br><br>![dns](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Das bedeutet, dass dieser Domainname nicht in diesem [OVHcloud Kunden-Account](/links/manager) verwaltet wird.<br><br>Überprüfen Sie, ob er zu einem Ihrer anderen [OVHcloud Kunden-Accounts](/links/manager) gehört, falls Sie mehrere davon erstellt haben.<br><br>Sie können auch, um den Registrar Ihres Domainnamens herauszufinden sowie die tatsächlich verwendeten DNS-Server zu überprüfen, das [WHOIS Tool](https://www.ovh.de/support/werkzeuge/check_whois.pl) verwenden.<br><br>Falls nötig kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](/links/partner).|
+|Im Tab `DNS-Zone`{.action} gibt ein Warnhinweis an, dass Ihre Domain andere [DNS-Server](/pages/web_cloud/domains/dns_zone_edit) verwendet. Diese werden in der Form "ns **?** .ovh.net" oder "dns **?** .ovh.net" angezeigt ("**?**" zu ersetzen mit der entsprechenden DNS-Servernummer):<br><br>![warning_other_ovh_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Sie müssen die DNS-Server Ihrer Domain bearbeiten, damit sie mit den `NS`-Einträgen der DNS-Zone übereinstimmen. Befolgen Sie hierzu die Anweisungen in [dieser Anleitung](/pages/web_cloud/domains/dns_server_edit).|
+|Im Tab `DNS-Zone`{.action} gibt eine Nachricht an, dass Ihre Domain andere [DNS-Server](/pages/web_cloud/domains/dns_zone_edit) verwendet, die nicht dem Format "ns **?** .ovh.net" oder "dns **?** .ovh.net" entsprechen :<br><br>![warning_external_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}|Kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](/links/partner) für mehr Informationen.|
+|Ihre Domain ist nicht im Bereich `Domainnamen`{.action} im [OVHcloud Kundencenter](/links/manager) aufgelistet.<br><br>Oder der Tab `DNS-Zone`{.action} Ihrer Domainname erscheint wie folgt:<br><br>![dns](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|Das bedeutet, dass dieser Domainname nicht in diesem [OVHcloud Kunden-Account](/links/manager) verwaltet wird.<br><br>Überprüfen Sie, ob er zu einem Ihrer anderen [OVHcloud Kunden-Accounts](/links/manager) gehört, falls Sie mehrere davon erstellt haben.<br><br>Sie können auch, um den Registrar Ihres Domainnamens herauszufinden sowie die tatsächlich verwendeten DNS-Server zu überprüfen, das [WHOIS Tool](https://www.ovh.de/support/werkzeuge/check_whois.pl) verwenden.<br><br>Falls nötig kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](/links/partner).|
 
 ### Schritt 2: Das SSL-Zertifikat Ihres Hostings überprüfen <a name="step2"></a>
 
 Überprüfen Sie im Tab `Allgemeine Informationen`{.action} Ihres OVHcloud Hostings den Abschnitt `SSL-Zertifikat`:
 
-![ssl-certificate-in-general-tab](images/no-ssl-certificate.png){.thumbnail}
+![ssl-certificate-in-general-tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png){.thumbnail}
 
 #### Szenario 1: Ihr Hosting enthält kein SSL-Zertifikat
 
@@ -94,7 +94,7 @@ Wenn Sie über ein **importiertes SSL-Zertifikat** verfügen, kontaktieren Sie d
 >
 > Um alle von unseren Diensten versendeten E-Mails einzusehen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](/links/manager) und dann auf `E-Mails von OVHcloud`{.action}:
 >
->![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
 >
 
 ## Weiterführende Informationen <a name="go-further"></a>

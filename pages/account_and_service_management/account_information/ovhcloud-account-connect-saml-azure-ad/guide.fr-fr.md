@@ -1,7 +1,7 @@
 ---
-title: Activer les connexions Azure SSO avec votre compte OVHcloud
+title: Activer les connexions Entra ID SSO avec votre compte OVHcloud
 excerpt: "Découvrez comment associer votre Entra ID (anciennement Azure Active Directory) à votre compte OVHcloud en utilisant SAML 2.0"
-updated: 2024-03-05
+updated: 2024-07-05
 ---
 
 ## Objectif
@@ -203,23 +203,23 @@ L'ajout de votre application Entra ID en tant que fournisseur d'identité approu
 
 #### Établir la confiance OVHcloud
 
-[Connectez-vous sur votre espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et cliquez sur votre profil en haut à droite.
+Cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre nom dans la barre latérale.
 
-![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
+![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Cliquez sur votre nom pour accéder à la page de gestion de votre profil.
+Vous pouvez accéder au menu IAM via l’entrée dédiée dans votre espace client.
 
-![Informations utilisateur OVHcloud](images/ovhcloud_user_infos.png){.thumbnail}
+![Accès au menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Ouvrez l'onglet `Gestion des utilisateurs`{.action}.
+Cliquez ensuite sur l'onglet `Identités`{.action} pour accéder à la gestion des utilisateurs locaux.
 
-![Profil menu OVHcloud](images/ovhcloud_profile_menu.png){.thumbnail}
+![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Cliquez alors sur le bouton `Connexion SSO`{.action}.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Complétez le champ **Group Attribute Name** avec la valeur de **Claim name** des groupes d'applications Entra ID enregistrée précédemment.
+Complétez le champ **Nom d'attribut d'utilisateur** avec la valeur de claim d'applications Entra ID **UPN** et le champ **Nom d'attribut de groupe** avec la valeur de claim **groups** enregistrée précédemment.
 
 Remplissez les métadonnées XML de votre application Entra ID à partir du fichier enregistré précédemment.
 

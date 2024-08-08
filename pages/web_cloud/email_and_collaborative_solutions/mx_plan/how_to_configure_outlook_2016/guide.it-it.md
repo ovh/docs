@@ -34,7 +34,7 @@ Gli account MX Plan possono essere configurati su client di posta compatibili, p
 ## Prerequisiti
 
 - Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
-- Disporre di un software Microsoft Outlook 2016 o successivo
+- Disporre di un software Microsoft Outlook o successivo
 - Disporre delle credenziali associate all’indirizzo email da configurare
  
 > [!primary]
@@ -179,8 +179,8 @@ Per comprendere la differenza tra l'utilizzo del protocollo POP e IMAP, andremo 
 
 ## Per saperne di più
 
-[Configurare un account Email Pro su Outlook 2016 per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
+[Configurare un account Email Pro su Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
 
-[Configurare un account Exchange su Outlook 2016 per Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
+[Configurare un account Exchange su Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

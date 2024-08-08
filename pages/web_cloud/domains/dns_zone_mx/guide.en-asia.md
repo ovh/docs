@@ -1,5 +1,5 @@
 ---
-title: "Add an MX record to your domain name’s configuration"
+title: "Configure an MX record for email management"
 excerpt: "Find out how to add a MX record to your OVHcloud domain name’s configuration"
 updated: 2024-02-29
 ---
@@ -35,7 +35,7 @@ When the address **sender@otherdomain.ovh** sends an email to **contact@mydomain
 - **(1)** Query the DNS zone of the domain name **mydomain.ovh** and read the **MX** records.
 - **(2)** Forward the email to the URL of the **MX** record it has found.
 
-![email](/pages/assets/schemas/dns/mx-dns-resolution-apac-ca.png){.thumbnail}
+![email](/pages/assets/schemas/emails/mx-dns-resolution-apac-ca.png){.thumbnail}
 
 The email will be sent to the target **mx0.mail.ovh.ca**, which is preceded by a value of **0**. This value is called *priority*. The lowest value is queried first and the highest value is queried last. This means that the presence of several records makes it possible to compensate for an absence of response from the MX record having the lowest priority.
 
@@ -93,12 +93,12 @@ Fill in the values, complete the steps, then click `Confirm`{.action}.
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configuring an SPF record on your domain name](/pages/web_cloud/domains/dns_zone_spf)
+[How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configuring a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
+[How to improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

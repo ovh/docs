@@ -201,7 +201,7 @@ options=403bb<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,JUMBO_MTU,VLAN_HWCSUM,TSO4,T
 ether xx:xx:xx:xx:xx:xx
 ```
 
-3\. Exécutez la commmande `gpart show`, vous pouvez repérer et associer les partitions/noms :
+3\. Exécutez la commande `gpart show`, vous pouvez repérer et associer les partitions/noms :
 
 ```bash
 root@rescue-bsd:~ # gpart show

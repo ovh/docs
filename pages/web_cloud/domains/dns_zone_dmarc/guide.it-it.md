@@ -1,6 +1,6 @@
 ---
-title: Configurare un record DMARC sul dominio
-excerpt: Come funziona DMARC e come configurarlo per il tuo servizio di posta
+title: "Migliora la sicurezza delle email con un record DMARC"
+excerpt: "Questa guida ti mostra come funziona DMARC e come configurarlo per il tuo servizio di posta"
 updated: 2023-12-13
 ---
 
@@ -183,4 +183,4 @@ Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

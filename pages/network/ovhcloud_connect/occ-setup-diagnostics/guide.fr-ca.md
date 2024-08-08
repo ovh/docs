@@ -95,7 +95,7 @@ Si le peering ne peut pas être établi (DOWN) d'un côté ou des deux côtés, 
 
 Des valeurs optiques **UP** mais pas de lien Ethernet (interface **DOWN**) sont un symptôme d'un SFP mal configuré.
 
-Le SFP à utiliser sur l'équipement client pour une liaison OVHcloud Connect dépend du lien commmandé. Vous devez utiliser un SFP conforme à la bande-passante commandée.
+Le SFP à utiliser sur l'équipement client pour une liaison OVHcloud Connect dépend du lien commandé. Vous devez utiliser un SFP conforme à la bande-passante commandée.
 
 Si vous avez commandé un lien 1 Gbit/s, le SFP sera: 1000Base-LX/LH. Utilisez la commande suivante :
 

@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Domande più frequenti sugli hosting web OVHcloud"
-updated: 2023-04-24
+updated: 2024-06-27
 ---
 
 > [!primary]
@@ -36,9 +36,9 @@ Per seguire gli step necessari alla costruzione del tuo sito, consulta [questa p
 
 **Consigli e suggerimenti**: Per aiutarti a creare il tuo sito, OVHcloud ti permette di installare sul tuo hosting un software di assistenza alla creazione di siti (WordPress, PrestaShop, Joomla! e Drupal), grazie alla funzionalità [CMS in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-### Come trasferire un sito e un servizio di posta sui server OVHcloud? 
+### Come trasferire il tuo sito Web, database, dominio ed email sui server OVHcloud senza interruzione di servizio?
 
-Consulta la guida [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+Consulta la guida "[Migrare il proprio sito Web e i servizi associati a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" per visualizzare gli step successivi.
 
 ### Come ospitare diversi siti Web su uno stesso hosting condiviso?
 
@@ -90,7 +90,7 @@ Consulta gli [eventi in corso sulla nostra infrastruttura](https://www.status-ov
 
 ### Cosa fare se, dopo la pubblicazione del tuo sito, la pagina "Sito in costruzione" di OVHcloud resta visualizzata?
 
-![Sito in costruzione](images/site-en-construction.png){.thumbnail}
+![Sito in costruzione](/pages/assets/screens/other/browsers/errors/site-en-construction.png){.thumbnail}
 
 Al momento dell'installazione del tuo hosting, OVHcloud installa questa pagina come file **index.html** contenuto nella cartella `www` del tuo server FTP.
 
@@ -100,7 +100,7 @@ Se hai scelto di [installare manualmente](/pages/web_cloud/web_hosting/cms_manua
 
 ### Cosa fare se il tuo sito viene visualizzato su un indirizzo Web di tipo "xxxxx.cluster0xx.hosting.ovh.net"?
 
-![url-cluster](images/url-cluster.png){.thumbnail}
+![url-cluster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
 Sono possibili due scenari. Il tuo sito è stato creato con questo indirizzo Web o è stato creato in seguito a una modifica.
 
@@ -113,11 +113,11 @@ Sono possibili due scenari. Il tuo sito è stato creato con questo indirizzo Web
 
 Nel primo caso, dopo aver effettuato tutti i backup necessari, elimina il tuo modulo dalla sezione `Hosting` dello Spazio Cliente OVHcloud:
 
-![delete-a-module](images/delete-a-module.png){.thumbnail}
+![delete-a-module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module.png){.thumbnail}
 
 Rimuovi il database dalla scheda con lo stesso nome a destra del tuo schermo, sempre nella sezione `Hosting`:
 
-![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
+![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
  
 Riavvia l'installazione sul dominio che vuoi, utilizzando la funzionalità [Modulo in 1 click](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
@@ -138,7 +138,7 @@ Se il tuo sito contiene un database, consulta la guida [Importare un backup nel 
 
 ### Cosa fare se il tuo sito reindirizza verso la Webmail OVHcloud?
 
-![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
+![webmail-login-interface](/pages/assets/screens/website/webmail/webmail-login-interface.png){.thumbnail}
 
 Questa anomalia indica una configurazione errata dei [server DNS](/pages/web_cloud/domains/dns_server_edit) o della [zona DNS](/pages/web_cloud/domains/dns_zone_edit) associati al dominio.
 
@@ -158,7 +158,7 @@ Confronta i `Destinazione` degli record di tipo `NS` indicati nella scheda `Zona
 
 ### Cosa fare se il tuo sito mostra un errore "La pagina non si reindirizza correttamente"?
 
-![the-page-isnt-redirecting-properly](images/the-page-isnt-redirecting-properly.png){.thumbnail}
+![the-page-isnt-redirecting-properly](/pages/assets/screens/other/browsers/errors/the-page-isnt-redirecting-properly.png){.thumbnail}
 
 > [!alert]
 >
@@ -177,7 +177,7 @@ Se il ripristino non ti consente di ripristinare l'accesso al tuo sito, contatta
 
 ### Cosa fare se il tuo sito mostra un errore "503 error Backend fetch failed (Varnish cache)"?
 
-![503_varnish](images/http-503-backend-varnish.png){.thumbnail}
+![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
 Se hai attivato l'[opzione CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) del tuo hosting, disattiva la modalità *Maintenance* sul tuo sito WordPress o PrestaShop.
 
@@ -185,7 +185,7 @@ Se non hai attivato questa opzione o utilizzato la modalità *Maintenance*, cont
 
 ### Cosa fare se il tuo sito mostra un errore "Your request has been blocked"?
 
-![your-request-has-been-blocked](images/your-request-has-been-blocked.png){.thumbnail}
+![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
 Questo messaggio indica che il tipo di richiesta HTTP che stai cercando di effettuare sul tuo sito è vietato per un periodo di tempo limitato. In questa situazione, [controlla i log](/pages/web_cloud/web_hosting/logs_and_statistics) del tuo sito per determinare quali richieste abbiano causato il blocco.
 
@@ -193,7 +193,7 @@ Per risolvere eventuali problemi, contatta il tuo Webmaster o uno dei nostri [pa
 
 ### Cosa fare se il tuo sito mostra un errore "Your IP has been banned"?
 
-![your-ip-has-been-banned](images/your-ip-has-been-banned.png){.thumbnail}
+![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
 Questo messaggio indica che l'indirizzo IP utilizzato per connetterti al tuo sito è bloccato per un periodo di tempo limitato. 
 
@@ -203,7 +203,7 @@ contatta uno dei [nostri partner](/links/partner) per verificare il codice infor
 
 ### Ho ordinato un dominio con accenti e si affigge in modo strano nel mio Spazio Cliente. Cosa devo fare?
 
-![notebook_idn](images/idn-notation.png){.thumbnail}
+![notebook_idn](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
 Non c'è nulla da fare in questa situazione. Anche se il tuo dominio compare con [rating internazionale (IDN)](https://it.wikipedia.org/wiki/Nome_di_dominio_internazionalizzato){.external} nello Spazio Cliente, funzionerà e verrà visualizzato in modo del tutto normale. L'indirizzo Web del tuo sito verrà visualizzato come richiesto. I tuoi indirizzi email saranno visualizzati come desideri presso i tuoi interlocutori.
 
@@ -218,4 +218,4 @@ Non c'è nulla da fare in questa situazione. Anche se il tuo dominio compare con
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](/links/support).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

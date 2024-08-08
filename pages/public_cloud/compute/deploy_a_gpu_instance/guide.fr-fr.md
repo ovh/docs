@@ -1,30 +1,28 @@
 ---
 title: 'Déployer une instance GPU'
 excerpt: 'Découvrez comment déployer une instance GPU sous Linux ou Windows'
-updated: 2019-12-06
+updated: 2024-07-17
 ---
 
 ## Objectif
 
-Les instances GPU sont techniquement similaires aux instances de la gamme 2017, mais elles disposent en plus d’une carte graphique (processeur graphique ou GPU). La technologie utilisée (*pci_passthrough*) permet au système d’exploitation de l’instance de contrôler le processeur graphique exactement comme le ferait une machine physique.
-
-Les processeurs graphiques proposés sont des NVIDIA Tesla V100. 
+Les instances GPU sont techniquement similaires aux instances de la gamme 2017 mais disposent en plus d'une carte graphique (Graphic Processing Unit ou GPU). La technologie utilisée (*pci_passthrough*) permet au système d'exploitation de l'instance de contrôler le GPU exactement comme sur une machine physique.
 
 > [!warning]
 >
-> Actuellement, les instances GPU ne sont disponibles qu’avec les datacenters des régions GRA3, GRA5, GRA7 et BHS3. Il vous faudra probablement créer un nouveau projet et choisir la nouvelle de gamme 2017.
-> 
+> Actuellement, la plupart de nos anciennes instances GPU (Tesla V100 and V100s) sont uniquement disponibles dans les régions GRA7, GRA9, GRA11 et BHS5. Les modèles plus récents (A100, H100, L4 and L40s) ne sont pour le moment disponibles que dans la région GRA11.
+>
 
-**Ce guide explique comment déployer une instance GPU sous Linux ou Windows**
+**Ce guide vous explique comment déployer une instance GPU sous Linux ou sous Windows**
 
 ## Prérequis
 
-- Avoir créé un projet Public Cloud qui a accès aux régions où le GPU est disponible (GRA3, GRA5, GRA7 et BHS3)
+- Un projet Public Cloud avec accès aux régions où la plupart des GPU sont disponibles (GRA7, GRA9, GRA11 et BHS5).
+- [Une clé SSH](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys) créée pour déployer une instance GPU Linux.
 
 ## En pratique
 
-Vous trouverez ci-dessous les instructions à suivre pour déployer une instance GPU sous Linux ou Windows.
-Veuillez noter que vous ne pouvez pas changer le système d’exploitation d’une instance, la faisant passer, par exemple, de Linux à Windows ou l’inverse. Par conséquent, vous devez prendre soin de choisir le bon système d’exploitation par défaut de votre instance au moment de sa création.
+Vous trouverez ci-dessous les informations pour déployer une instance GPU via Linux ou via Windows.
 
 ### Sous Linux
 
@@ -32,30 +30,29 @@ Toutes les images que nous proposons peuvent être utilisées sur une instance G
 
 > [!primary]
 >
-> Si vous n’êtes pas à l’aise avec la compilation manuelle de module noyau, nous vous recommandons d’utiliser une distribution officiellement prise en charge par Nvidia, et pour laquelle ce dernier fournit des drivers *clé-en-main* :<https://developer.nvidia.com/cuda-downloads>.
+> Si vous n'êtes pas à l'aise avec la compilation manuelle de module noyau, nous vous recommandons d'utiliser une distribution officiellement supportée par Nvidia, pour laquelle ils fournissent des drivers « clé en main » : <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Une fois connecté à [votre espace client OVHcloud](https://www.ovh.com/auth/?action=alleraugestionnaire){.external} dans votre projet Public Cloud, cliquez sur `Créer une instance`{.action} et choisissez une instance GPU :
+Une fois connecté à votre [espace client OVHcloud](/links/manager), cliquez sur l'onglet `Public Cloud`{.action}. Sélectionnez votre projet Public Cloud et cliquez sur `Instances`{.action} dans le menu de gauche sous l'onglet **Compute**. Ensuite, cliquez sur `Créer une instance`{.action} et choisissez une instance GPU compatible :
 
-![public-cloud](images/gpu.png){.thumbnail}
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-Sélectionnez ensuite la distribution Linux de votre choix :
+Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). Ce processus peut prendre quelques minutes.
 
-![public-cloud](images/linuxchoice.png){.thumbnail}
-
-L’instance démarre quelques secondes plus tard. Vous pourrez ensuite vous y connecter et vérifier la présence de la carte graphique : 
+Une fois l'instance livrée, vous pouvez vous y connecter et vérifier la présence de la carte graphique :
 
 ```bash
 lspci | grep -i nvidia
-Contrôleur 00:05.0 3D : NVIDIA Corporation GV100GL [Tesla V100 PCIe 16 Go] (rév. a1)
+00:05.0 VGA compatible controller: NVIDIA Corporation Device 1c03 (rev a1)
+00:06.0 Audio device: NVIDIA Corporation Device 10f1 (rev a1)
 ```
 
-La carte graphique est présente mais pas encore utilisable. Pour pouvoir l’utiliser, vous devrez d’abord installer un driver NVIDIA. Vous trouverez la liste des paquets à l’adresse suivante : [Liste des paquets Linux disponibles](https://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+La carte graphique est présente mais n'est pas encore utilisable. Il faut maintenant installer les drivers NVIDIA. Vous trouverez la liste des paquets à l'adresse suivante : [Liste des paquets Linux disponibles](https://developer.download.nvidia.com/compute/cuda/repos/){.external}.
 
-Il vous faudra ensuite saisir les commandes suivantes :
+Il suffit ensuite de taper les commandes suivantes :
 
 ```sh
-wget URL_of_packet_to_download
+wget URL_du_paquet_à_télécharger
 sudo dpkg -i cuda-repo-XXXX-XXXXXX
 sudo apt-get update
 sudo apt-get upgrade
@@ -65,56 +62,98 @@ sudo reboot
 
 > [!primary]
 >
-> La commande Linux peut varier en fonction de votre distribution. En cas de doute, veuillez consulter le guide officiel de votre version.
+> La commande Linux peut varier en fonction de votre distribution. En cas de doute, consultez la documentation officielle de votre version de Linux.
 > 
 
-Une fois l’instance redémarrée, la carte graphique apparaît dans l’utilitaire NVIDIA :
+Une fois l'instance redémarrée, la carte graphique apparaît dans l'utilitaire NVIDIA :
 
 ```sh
 nvidia-smi
-Vendredi 6 décembre  12:32:25 2019       
+Wed Apr 26 13:05:25 2017
 +-----------------------------------------------------------------------------+
-| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+| NVIDIA-SMI 375.51                 Driver Version: 375.51                    |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |===============================+======================+======================|
-|   0  Tesla V100-PCIE...  On   | 00000000:00:05.0 Off |                    0 |
-| N/A   26 C    P0    35 W / 250 W |      0 MiB / 16130 MiB |      5%      Par défaut |
+|   0  GeForce GTX 106...  Off  | 0000:00:05.0     Off |                  N/A |
+|  0%   22C    P0    26W / 120W |      0MiB /  6072MiB |      0%      Default |
 +-------------------------------+----------------------+----------------------+
-                                                                               
+
 +-----------------------------------------------------------------------------+
 | Processes:                                                       GPU Memory |
-|  GPU       PID   Type   Process name                             Usage      |
+|  GPU       PID  Type  Process name                               Usage      |
 |=============================================================================|
 |  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
 ```
 
-L’instance GPU est maintenant pleinement fonctionnelle et prête à l’emploi.
+L'instance GPU est désormais pleinement fonctionelle et utilisable.
 
 ### Sous Windows
 
-Il existe des incompatibilités entre le pilote NVIDIA et la solution de virtualisation *KVM/pci_passthrough*. **Les images Windows standard ne fonctionnent pas.**
-Pour cette raison, nous fournissons des images spéciales, reposant sur BIOS virtuel UEFI, qui permettent au driver de fonctionner correctement (s’applique uniquement aux instances G1, G2 et G3 - gamme 2017 ou antérieure).
+Des incompatibilités existent entre le driver NVIDIA et la solution de virtualisation *KVM/pci_passthrough*. **Les images Windows standard ne fonctionnent pas.**
 
-Une fois connecté à [votre espace client OVHcloud](https://www.ovh.com/auth/?action=alleraugestionnaire){.external} dans votre projet Public Cloud, cliquez sur `Créer une instance`{.action} et choisissez une instance GPU :
+Nous fournissons des images spéciales, reposant sur un BIOS virtuel UEFI, qui permettent au driver de fonctionner correctement :
 
-![public-cloud](images/gpu.png){.thumbnail}
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
-Sélectionnez ensuite la version Windows de votre choix : 
+> [!warning]
+>
+> Nous offrons la possibilité d'installer les images spéciales sur quelques modèles sélectionnés (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). En outre, selon la région sélectionnée, ces images spéciales peuvent ne pas être disponibles.
+>
 
-![public-cloud](images/oschoice.png){.thumbnail}
+Une fois connecté à [votre espace client OVHcloud](/links/manager), rendez-vous dans votre projet Public Cloud et cliquez sur `Instances`{.action} dans le menu de gauche sous l'onglet **Compute**. Ensuite, cliquez sur `Créer une instance`{.action} et choisissez une instance GPU compatible :
 
-Une fois votre instance GPU démarrée, il vous faudra installer le pilote NVIDIA depuis le [site web officiel](https://www.nvidia.com/Download/index.aspx){.external}.
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-Démarrez une instance en utilisant l’un des types de GPU disponibles (t1-45, t1-90, t1-180, etc.). Cette opération ne devrait prendre que quelques minutes.
+Dans l'étape suivante, rendez-vous dans l'onglet `Systèmes d'exploitation Windows` et cliquez sur la flèche déroulante pour sélectionner l'image Windows compatible :
 
-Ensuite, il ne reste plus qu’à installer le pilote requis, qui s’affichera ensuite ici :
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
-![public-cloud](images/driverson.png){.thumbnail}
+Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). Ce processus peut prendre quelques minutes.
 
-![public-cloud](images/devicemanager.png){.thumbnail}
+> [!warning]
+>
+> Il ne nous est pas possible de garantir que la solution fonctionnera avec toutes les versions futures du driver NVIDIA.
+>
+> Avant toute mise à jour du driver NVIDIA, il est fortement recommandé de prendre un snapshot de votre instance, ce qui vous permettra de revenir en arrière le cas échéant.
+>
+
+#### Connexion à une instance Windows
+
+Une fois l'instance créée, l'installation de Windows doit être finalisée (sysprep). Cliquez sur le bouton `...`{.action}, puis sur `Détails de l'instance`{.action}. Dirigez-vous sur l'onglet `Console VNC`{.action}. La console doit déjà afficher l'interface de post-installation.
+
+![windows sysprep](images/windows-connect-01.png){.thumbnail}
+
+Dans la première étape, choisissez vos paramètres de localisation en sélectionnant une région, une langue et une configuration de clavier. Cliquez sur `Suivant`{.action} pour continuer.
+
+![windows sysprep](images/windows-connect-02.png){.thumbnail}
+
+La deuxième étape nécessite la configuration du compte « Administrator » par défaut. Entrez votre mot de passe deux fois et cliquez sur `Terminer`{.action} pour valider le processus d'installation. Utilisez le symbole de l'oeil pour vérifier si tous les caractères saisis dans les champs correspondent à la configuration réelle de votre clavier.
+
+L'instance redémarrera et vous pourrez vous connecter avec ces informations d'identification à l'aide d'un logiciel de bureau distant RDP (*Remote Desktop Protocol*).
+
+##### **Depuis Windows**
+
+Utilisez Windows Search si nécessaire et ouvrez l'application cliente native « Connexion Bureau à distance ».
+
+![windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
+
+Entrez l'adresse IPv4 de votre instance et `Administrator` en tant qu'utilisateur, puis tapez votre mot de passe. Habituellement, un message d'avertissement s'affiche, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter à l'instance.
+
+> [!primary]
+>
+> Si vous rencontrez des problèmes avec cette procédure, vérifiez que les connexions distantes (RDP) sont autorisées sur votre machine en vérifiant les paramètres de votre système, les règles de pare-feu et les éventuelles restrictions réseau. 
+>
+
+Une fois connecté à votre instance, vous devrez installer le pilote NVIDIA depuis le [site officiel](https://www.nvidia.com/Download/index.aspx){.external}.
+
+Il rester à installer le pilote nécessaire, qui apparaîtra ensuite ici :
+
+![public-cloud](images/WindowsDriverVersion.png){.thumbnail}
+
+![public-cloud](images/WindowsDeviceManager.png){.thumbnail}
 
 ## Aller plus loin
 

@@ -32,7 +32,7 @@ Após a deteção de um funcionamento suspeito, os nossos robôs de segurança p
  
  *Se este tipo de bloqueio for afetado, é-lhe enviada uma notificação para o endereço de e-mail do contacto "administrador" do seu alojamento web*
 
-![http-403](images/http-403.png){.thumbnail}
+![http-403](/pages/assets/screens/other/browsers/errors/http-403.png){.thumbnail}
 
 **Descubra como desbloquear o acesso ao seu site em caso de apresentação "403 forbidden".**
 
@@ -40,7 +40,7 @@ Após a deteção de um funcionamento suspeito, os nossos robôs de segurança p
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) e/ou que troque informações com a nossa [comunidade de utilizadores](https://community.ovh.com/en/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) e/ou que troque informações com a nossa [comunidade de utilizadores](/links/community). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 >
 
 ## Requisitos
@@ -135,7 +135,7 @@ Se o seu alojamento foi encerrado há mais de duas semanas, contacte um [fornece
 
 Abra o FileZilla e depois [ligue-se ao seu espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection). A seguir, clique em `Servidor`{.action} na barra de menu e depois em `Indicar comando personalizado`{.action} (o título pode ser diferente segundo a versão do FileZilla que utiliza):
 
-![command_filezilla1](images/enter-custom-command-step-1.png){.thumbnail}
+![command_filezilla1](/pages/assets/screens/other/web-tools/filezilla/enter-custom-command-step-1.png){.thumbnail}
 
 Na nova janela, insira o seguinte comando e valide:
 
@@ -143,7 +143,7 @@ Na nova janela, insira o seguinte comando e valide:
 SITE CHMOD 705 /
 ```
 
-![command_filezilla2](images/enter-custom-command-step-2.png){.thumbnail}
+![command_filezilla2](/pages/assets/screens/other/web-tools/filezilla/enter-custom-command-step-2.png){.thumbnail}
 
 Uma resposta **"200 Permissions changed on /"** confirma que a operação foi bem realizada. Para o verificar, tente novamente aceder ao seu site.
 
@@ -168,7 +168,7 @@ Carregue no botão `Explorador FTP`{.action} e ligue-se ao seu [espaço de armaz
 
 Clique no botão `Avançado`{.action} e, a seguir, no botão `Go`{.action} junto de "Send arbitrary FTP commands to the FTP server".
 
-![net2ftp](images/advanced-ftp-functions.png){.thumbnail}
+![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
 
 Na parte superior da página, insira o seguinte comando:
 
@@ -178,7 +178,7 @@ SITE CHMOD 705 /
 
 Clique no botão que representa um "V" verde.
 
-![result_command_on_net2ftp](images/ftp-command-result.png){.thumbnail}
+![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
 
 Uma resposta **"200 Permissions changed on /"** confirma que a operação foi bem realizada. Para o verificar, tente novamente aceder ao seu site.
 

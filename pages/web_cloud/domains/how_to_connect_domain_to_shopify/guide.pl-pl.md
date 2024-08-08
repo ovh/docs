@@ -43,7 +43,7 @@ Zaloguj się do Twojego panelu [klienta OVHcloud](/links/manager){.external} w s
 
 Tabela, która się wyświetla zawiera listę wszystkich rekordów DNS wybranej domeny.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Każdy rekord DNS można zmienić, klikając przycisk `...`{.action} znajdujący się po prawej stronie odpowiedniego wiersza tabeli, a następnie klikając `Zmień rekord`{.action}.
 
@@ -53,36 +53,36 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 > **Etap 1**
 >> **Rekord A**<br><br>
 >> Aby zidentyfikować istniejące rekordy "A", kliknij menu filtrów w górnej części tabeli rekordów DNS i wybierz opcję `A`.<br>
->> ![dnszone](images/filter-a.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}<br>
 >> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli, który odnosi się tylko do Twojej domeny, bez subdomeny (na przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.<br>
 >> - Jeśli istnieje rekord dla subdomeny "www." (przykład: `www.mydomain.ovh.`), należy go usunąć, aby nie kolidował z rekordem CNAME, który wprowadzisz w etapie 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej domeny z subdomeną "www.", a następnie kliknij `Usuń rekord`{.action}.<br>
 >> - Jeśli nie masz istniejącego rekordu "A", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wskaźnika" `A`{.action}<br><br>
 >> Pozostaw pole **Subdomena** puste i wprowadź adres IPv4 Shopify 23.`227.38.65` w polu **Adres docelowy**.
->> ![dnszone](images/field-a.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-a-shopify.png){.thumbnail}<br><br>
 >> Kliknij `Dalej`{.action}, zatwierdź rekord "A" i przejdź do etapu 2.
 > **Etap 2**
 >> **Rekord AAAA**<br><br>
 >>  Aby zidentyfikować istniejące rekordy "AAAA", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `AAAA`.<br>
->> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
 >> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie domeny bez subdomeny (przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.<br>
 >> - Jeśli istnieje rekord dla subdomeny "www." (przykład: `www.mydomain.ovh.`), należy go usunąć, aby nie kolidował z rekordem CNAME, który wprowadzisz w etapie 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej domeny z subdomeną "www.", a następnie kliknij `Usuń rekord`{.action}.<br>
 >> - Jeśli nie masz istniejącego rekordu "AAAA", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wskaźnika" `AAAA`{.action}<br><br>
 >> Pozostaw pole **Subdomena** puste i wprowadź adres IPv6 Shopify 2620:`0127:f00f:5::` w polu **Adres docelowy**.
->> ![dnszone](images/field-aaaa.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-aaaa-shopify.png){.thumbnail}<br><br>
 >> Kliknij `Dalej`{.action}, zatwierdź rekord "AAAA" i przejdź do etapu 3.
 > **Etap 3**
 >> **Rekord TXT**<br><br>
 >>  Aby zidentyfikować istniejące rekordy "TXT", kliknij menu filtrów na górze tabeli rekordów DNS i wybierz opcję `TXT`.<br>
->> ![dnszone](images/filter-txt.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
 >> - Jeśli rekordy "TXT" są obecne tylko dla domeny (na przykład: `mydomain.ovh.`) i dla jej subdomeny "www." (na przykład: `www.mydomain.ovh.`), należy je usunąć, aby nie kolidowały z rekordem CNAME, który podasz w etapie 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej domeny z subdomeną "www.", a następnie kliknij `Usuń rekord`{.action}.<br>
 > **Etap 4**
 >> **Rekord CNAME**<br><br>
 >>  Aby zidentyfikować istniejące rekordy "CNAME", kliknij menu filtrów na górze tabeli rekordów DNS i wybierz opcję `CNAME`.<br>
->> ![dnszone](images/filter-cname.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej subdomenie "www." (przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.<br>
 >> - Jeśli nie posiadasz istniejącego rekordu "CNAME", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wpisu" `CNAME`{.action}.
 >> Uzupełnij pole **Subdomena** wartością `www` i wpisz `shops.myshopify.com` w polu **Adres docelowy**.<br>
->> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-shopify.png){.thumbnail}<br><br>
 >> Kliknij `Dalej`{.action}, po czym zatwierdź rekord "CNAME".
 
 Strefa DNS jest teraz skonfigurowana tak, aby wskazywała na hosting Shopify.
@@ -111,4 +111,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

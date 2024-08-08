@@ -57,7 +57,7 @@ W tym tutorialu użyjemy interfejsu API dostarczonego przez stronę [OpenWeather
 Załóż konto na <https://home.openweathermap.org/users/sign_up><br>
 Po zatwierdzeniu konta (wysyłając e-mail z potwierdzeniem) przejdź do menu "My API keys". Klucz został wygenerowany domyślnie. Uzyskaj go i zachowaj do końca tego tutoriala.
 
-![Open Weather API key](images/static_website_installation_cecil_api_call01.png){.thumbnail}
+![Open Weather API key](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil_api_call01.png){.thumbnail}
 
 ### Dodanie kodu HTML
 
@@ -109,7 +109,7 @@ php cecil.phar build
 
 Sprawdź wynik w swojej przeglądarce i kliknij link "Weather", który został dodany w menu głównym:
 
-![Test nowej strony](images/static_website_installation_cecil_api_call02.png){.thumbnail}
+![Test nowej strony](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil_api_call02.png){.thumbnail}
 
 ### Dodaj kod JavaScript
 
@@ -125,11 +125,11 @@ ls -la layouts
 
 Plik zawiera katalog `blog` i plik `index.html.twig`:
 
-![layouts directory](images/static_website_installation_cecil_api_call03.png){.thumbnail}
+![layouts directory](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil_api_call03.png){.thumbnail}
 
 Otwórz plik `index.html.twig`:
 
-![Cecil layouts index file](images/static_website_installation_cecil_api_call04.png){.thumbnail}
+![Cecil layouts index file](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil_api_call04.png){.thumbnail}
 
 Plik odnosi się do szablonu, który nie jest obecny w katalogu. Ten plik (i inne) są w rzeczywistości w pliku `cecil.phar`. Rozszerzenia `.phar` to archiwa plików PHP, które można obsłużyć bez rozpakowania.
 Rozłącz pliki tego archiwum, aby były widoczne:
@@ -140,7 +140,7 @@ php cecil.phar util:extract
 
 Wyświetl ponownie zawartość katalogu `layouts`:
 
-![Cecil layouts directory including uncomessed files](images/static_website_installation_cecil_api_call05.png){.thumbnail}
+![Cecil layouts directory including uncomessed files](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil_api_call05.png){.thumbnail}
 
 Zmień domyślny szablon, aby wstawić tag `<script>` zawierający kod umożliwiający wywołanie API:
 
@@ -230,13 +230,13 @@ function getTemperature(city) {
 
 Teraz możesz sprawdzić Twoją stronę WWW za pomocą przeglądarki internetowej:
 
-![Strona internetowa with JavaScript running](images/static_website_installation_cecil_api_call06.png){.thumbnail}
+![Strona internetowa with JavaScript running](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil_api_call06.png){.thumbnail}
 
 Kliknij na "Zmień miasto" i wpisz nazwę gminy:
 
-![Select Nowojorski](images/static_website_installation_cecil_api_call07.png){.thumbnail}
+![Select Nowojorski](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil_api_call07.png){.thumbnail}
 
-![Strona updated](images/static_website_installation_cecil_api_call08.png){.thumbnail}
+![Strona updated](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil_api_call08.png){.thumbnail}
 
 ### Podsumowanie
 

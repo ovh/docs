@@ -33,7 +33,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il t
 
 Visualizzi una tabella con tutti i motori di esecuzione aggiunti alla tua soluzione di hosting Cloud Web. Considera che durante l’installazione dell’hosting, sul tuo servizio viene creato automaticamente un motore.
 
-![cloudweb](images/tab-phpfpm7-4.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-phpfpm7-4.png){.thumbnail}
 
 ### Step 2: gestisci i motori di esecuzione
 
@@ -84,7 +84,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 
 Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external}.
 
-![cloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ##### **Ruby**
 
@@ -98,7 +98,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 
 Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web_cloud/web_hosting/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
 
-![cloudweb](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
 ##### **Python**
 
@@ -112,7 +112,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 
 Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web_cloud/web_hosting/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
 
-![cloudweb](images/modify-a-runtime-software-application-python3.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Step 3: associa il motore di esecuzione a un multisito
 
@@ -127,7 +127,7 @@ Una volta impostati i motori di esecuzione per il tuo progetto, assicurati che s
 
 e verifica che i nomi mostrati nella colonna `Motore di esecuzione` della tabella corrispondano ai nomi personalizzati indicati durante la creazione del motore.
 
-![cloudweb](images/runtime-software-applications.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/runtime-software-applications.png){.thumbnail}
 
 Per modificare un motore associato a un multisito, clicca sull’icona a forma di ingranaggio in corrispondenza del dominio in questione e clicca su `Modifica`{.action}.
 
@@ -135,7 +135,7 @@ Nella nuova finestra, accanto a `Motore di esecuzione`, seleziona il motore corr
 
 Una volta selezionato il motore, segui gli step fino al completamento dell’operazione.
 
-![cloudweb](images/modify-a-domain-step-1.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/modify-a-domain-step-1.png){.thumbnail}
 
 ## Per saperne di più
 
@@ -143,4 +143,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -65,7 +65,7 @@ No separador `Informações gerais`{.action}, encontrará o cursor `Proteção c
 >
 > Se o botão `Proteção contra transferência` não estiver presente, tal significa que a extensão do domínio não requer nenhum código de transferência. Poderá então lançar diretamente a sua transferência.
 
-![proteção ativada](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
+![proteção ativada](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Clique no cursor e confirme, na nova janela, que pretende eliminar esta proteção. Aguarde alguns minutos para que o estado passe para `Desativado`{.action}.
 
@@ -80,7 +80,7 @@ Clique no cursor e confirme, na nova janela, que pretende eliminar esta proteç�
 > De facto, alguns *códigos de transferência* são geridos diretamente pelo *registry* da extensão do seu nome de domínio. Um *registry* é uma organização que gere o conjunto dos domínios para uma determinada extensão. Por exemplo, a **AFNIC** gere o conjunto dos nomes de domínio com a extensão "*.fr*". Se for este o caso, deverá contactar diretamente o *registry* que gere a extensão do seu nome de domínio a fim de recuperar o *código de transferência*.
 >
 
-![desativação proteção](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+![desativação proteção](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -98,7 +98,7 @@ Uma vez levantada a proteção contra a transferência, pode recuperar o código
 
 Aparecerá uma janela com o seu código AUTH/INFO (também conhecido como código de transferência, palavra-passe de domínio, AUTH-CODE ou EPP-Code).
 
-![outgoingtransfer](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 O código será pedido pelo seu novo agente de registo para concluir o processo de transferência. Pode verificar os detalhes junto do seu novo agente de registo.
 
@@ -125,4 +125,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

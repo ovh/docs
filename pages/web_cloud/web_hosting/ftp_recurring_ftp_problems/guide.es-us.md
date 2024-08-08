@@ -30,7 +30,7 @@ El uso de software FTP durante la conexión a su [hosting Web Cloud](/links/web/
 
 ### "Este servidor no soporta FTP en TLS" (FileZilla)
 
-![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
+![doesnt-support-ftp-on-tls](/pages/assets/screens/other/web-tools/filezilla/doesnt-support-ftp-on-tls.png){.thumbnail}
 
 Este mensaje en el programa [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) indica que no ha activado la opción SFTP o SSH desde el [área de cliente de OVHcloud](/links/manager). Por ese motivo, la información intercambiada entre el servidor de hosting de OVHcloud y su ordenador no se cifrará.
 
@@ -67,7 +67,7 @@ Para comprobar el espacio de almacenamiento restante del alojamiento, conéctese
 
 La cantidad de datos almacenados en el servidor de alojamiento (excluyendo las bases de datos) se muestra en la sección `Información general`{.action} > `Espacio en disco`.
 
-![disk_space](images/find-disk-space.png){.thumbnail}
+![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 ### No puedo transferir mis archivos al servidor FTP.
 
@@ -83,7 +83,7 @@ Si dispone de una [fórmula Pro](/links/web/hosting-professional-offer) o [Perfo
 
 Este enlace se instala por defecto en los alojamientos compartidos de OVHcloud. El cartel dice:
 
-![site-under-construction](images/site-under-construction.png){.thumbnail}
+![site-under-construction](/pages/assets/screens/other/browsers/errors/site-under-construction.png){.thumbnail}
 
 Si no ha utilizado la funcionalidad "[Módulo en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear su sitio web, deberá utilizar el programa [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#21-conexion-mediante-un-explorador-ftp) accesible desde el [área de cliente de OVHcloud](/links/manager) para eliminar manualmente la página "Sitio en construcción".
 

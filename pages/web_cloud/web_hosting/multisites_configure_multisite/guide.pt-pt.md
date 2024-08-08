@@ -49,13 +49,13 @@ Aparecerá uma tabela com todos os domínios e subdomínios adicionados à sua s
 > Se migrar o seu website e pretender evitar qualquer interrupção do serviço, siga o [passo 3: colocar o seu website online](#site-online).
 >
 
-![multisite](images/tab.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
 
 ### 2 - Adicionar um domínio ou subdomínio <a name="add-domain"></a>
 
 Para adicionar um novo domínio ou subdomínio ao seu alojamento web, clique no botão `Ações`{.action} situado à esquerda do ecrã e, a seguir, em `Adicionar um domínio ou subdomínio`{.action} e faça a sua escolha na nova janela.
 
-![ações](images/actions-menu.png){.thumbnail}
+![ações](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/actions-menu.png){.thumbnail}
 
 - **Adicionar um domínio registado na OVHcloud**:
 
@@ -65,7 +65,7 @@ Apenas aparecem aqui os nomes de domínio OVHcloud para os quais tem [contacto t
 
 No caso de um nome de domínio externo à sua conta de cliente (outro identificador de cliente) ou externo à OVHcloud (fornecedor de nome de domínio terceiro), selecione `Adicionar um nome de domínio externo`{.action} e clique em `Seguinte`{.action}. De seguida, consulte o passo [“2.2 - Adicionar um domínio externo”](#add-external-domain).
 
-![multisite](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### Etapa 2.1: adicionar um domínio registado na OVHcloud <a name="add-ovhcloud-domain"></a>
 
@@ -77,7 +77,7 @@ Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu
 > [!primary]
 > Para adicionar um subdomínio, deve primeiro selecionar o domínio principal na lista (exemplo: domain.tld). O passo seguinte permitir-lhe-á indicar o subdomínio (exemplo: **blog**.domain.tld).
 
-![multisite](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Informação|Descrição|
 |---|---|
@@ -96,7 +96,7 @@ Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
 
-![multisite](images/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
 
 Ao selecionar um domínio registado na OVHcloud, tem a possibilidade de modificar automaticamente ou manualmente a sua configuração DNS:
 
@@ -123,13 +123,13 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 > |---|---|---|
 > |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.domain.tld) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>É importante notar que se deseja adicionar `blog.domain.tld`, deve criar o registo para o subdomínio `ovhcontrol.domain.tld` e não `ovhcontrol.blog.domain.tld`. <br></br>Para consultar esta última, encontre os [servidores DNS](/pages/web_cloud/domains/dns_server_edit) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
 >
-> ![multisite](images/find-token.png){.thumbnail}
+> ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
 >
 > |Campo|Onde posso encontrar a informação?|Ação a realizar|
 > |---|---|---|
 > |A e AAAA|Na secção `Informações gerais`{.action} e junto de **IPv4** e **IPv6**|Permite que o seu domínio apresente o site web publicado no seu alojamento web. Associe o seu nome de domínio ou subdomínio ao endereço IP do seu alojamento.|
 >
-> ![multisite](images/find-ipv4-and-ipv6.png){.thumbnail}
+> ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
  Aqui, deverá personalizar a adição do domínio. Tenha em atenção que algumas opções incluídas na sua oferta de [alojamento web](/links/web/hosting){.external} não podem ser ativadas durante este processo. Deverá finalizar esta operação antes de as poder utilizar, alterando as definições dos parâmetros do multisite quando este for adicionado.
@@ -142,11 +142,11 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
 
-![multisite](images/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 
 A adição de um domínio externo à OVHcloud requer uma validação suplementar obrigatória. Isto permite-nos assegurar que a adição do domínio externo é legítima. Assim, receberá uma mensagem solicitando a alteração da configuração DNS do domínio.
 
-![multisite](images/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 
 Tenha em atenção os elementos apresentados e clique no botão `Validar`{.action}. A seguir, o domínio é adicionado temporariamente, até que a configuração DNS seja alterada.
 
@@ -182,4 +182,4 @@ Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recu
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

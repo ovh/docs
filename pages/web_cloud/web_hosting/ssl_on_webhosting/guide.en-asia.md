@@ -34,7 +34,7 @@ Depending on which [SSL certificate](/links/web/hosting-options-ssl){.external} 
 
 The table displayed will contain all of the domain names that have been added to your web hosting plan. In the "SSL" column, you will see the activation status for secure SSL connections on your multisites. 
 
-![managessl](images/ssls.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
 There are three status types that may appear:
 
@@ -55,7 +55,7 @@ To activate SSL on a multisite, click on `...`{.action} icon to the right of the
 > Some **External** SSL certificates may be valid for several domain names at once. If you use one of them, the *Enabled* comment will not appear for all of your domain names declared in the “multisite” table. However, your SSL certificate will still be valid for the domain names it *includes*.
 >
 
-![managessl](images/modify-domain.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Once you have submitted the activation request, the SSL secure connection status for the multisite concerned should refresh in a few seconds, with the status changed to "To generate". Repeat this action as necessary if you would like to activate SSL for other multisites. 
 
@@ -79,9 +79,9 @@ Before you configure this, make sure that the previous step of [Activating an SS
 >
 > Before you continue, please also ensure that the multisite record(s) for which you are enabling the SSL option point to the web hosting plan’s IP address. This configuration is automatically offered when you add or modify a multisite entry, but must be done manually for a domain name that is not managed in your control panel.<br>
 > - Find the IP address of your hosting from the tab `General information`{.action}, under the mention `IPv4`.
-> ![manager](images/find-ipv4.png){.thumbnail}
+> ![manager](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4.png){.thumbnail}
 > - Configure the DNS zone of the domain name declared in multisite, in the section `Domains`{.action}, tab `DNS zone`{.action}. Modify or add an `A` record corresponding to your multisite entry and enter your hosting plan’s IP address in the `Target`.
-> ![manager](images/modify-an-entry.png){.thumbnail}
+> ![manager](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-an-entry.png){.thumbnail}
 >
 > For more details, please refer to our guides [on configuring a multisite record](/pages/web_cloud/web_hosting/multisites_configure_multisite) or [on configuring a DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
@@ -97,11 +97,11 @@ Click on `...`{.action} next to "SSL certificate", then `Order an SSL certificat
 
 If the word "Yes" is visible, an SSL certificate has already been set up on the web hosting plan. As a result, you will not be able to order another certificate while the existing one is active.
 
-![managessl](images/order-an-ssl-certificate.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
 In the window that appears, select the SSL certificate you would like to order. Depending on the [web hosting plan](/links/web/hosting){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
 
-![managessl](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
 Depending on which solution you have selected, there may be additional steps.
 
@@ -113,7 +113,7 @@ Depending on which solution you have selected, there may be additional steps.
 
 Certificate setup may take between several minutes and several days, depending on the type of certificate you have chosen. To check if the SSL certificate has been set up on your web hosting plan, go to the `General information`{.action} tab in the OVHcloud Control Panel. The word "Yes" should then appear below "SSL certificate". 
 
-![managessl](images/tab-ssl-le.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
 ### 3. Regenerating SSL certificates on a web hosting plan <a name="regeneratessl"></a>
 
@@ -126,13 +126,13 @@ Once you have activated a secure SSL connection across one or more of your multi
 
 To do this, log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `General information`{.action} tab. Then click on `...`{.action} next to "SSL certificate", then `Regenerate SSL certificate`{.action}.
 
-![managessl](images/regenerate-ssl-certificate.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/regenerate-ssl-certificate.png){.thumbnail}
 
 Read the information listed in the window that appears, then click `Confirm`{.action}. Then wait for your SSL certificate to be regenerated. This may take several hours.
 
 Please note that Let's Encrypt, the authority that delivers the SSL certificate offered free with your web hosting plan, has a [limit of five regenerations per week](https://letsencrypt.org/docs/rate-limits/){.external}. As a result, we advise taking care with regenerations over a short-term period, so you can avoid being temporarily blocked.
 
-![managessl](images/ssl-regeneration.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 
 ### Deleting SSL certificates on a web hosting plan <a name="deletessl"></a>
 
@@ -144,7 +144,7 @@ Once you are ready to delete the SSL certificate, log in to the [OVHcloud Contro
 
 On the page that appears, confirm the deletion. The deletion will take effect within a few hours. 
 
-![managessl](images/delete-ssl.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/delete-ssl.png){.thumbnail}
 
 > [!warning]
 >

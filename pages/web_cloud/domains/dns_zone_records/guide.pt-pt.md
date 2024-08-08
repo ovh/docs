@@ -1,7 +1,7 @@
 ---
 title: "Saber tudo sobre os registos DNS"
 excerpt: "Descubra os diferentes tipos de registos DNS disponíveis numa zona DNS da OVHcloud"
-updated: 2024-06-17
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -170,7 +170,14 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Utilizado para indicar o cunho de um certificado SSL/TLS.
+>> Utilizado para indicar o cunho de um certificado SSL/TLS. Vai permitir conservar o *hash* de um certificado diretamente na zona DNS do seu domínio através de um registo DNS.
+>>
+>> Este registo é utilizado no âmbito do protocolo **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
+>>
+>> O protocolo DANE permite a um cliente (browser, cliente de e-mail, cliente FTP, cliente SSH, etc.) consultar o registo TLSA. Desta forma, garante que um certificado SSL/TLS utilizado para um nome de domínio é o que certifica esse mesmo nome de domínio.
+>>
+>> Se necessário, pode consultar mais pormenores no website da [**I**nternet **E**ngineering **T**ask **F**orce (**IETF***)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>>
 
 #### Casos particulares de utilização: a utilização dos registos CNAME <a name="cnameusecase"></a>
 

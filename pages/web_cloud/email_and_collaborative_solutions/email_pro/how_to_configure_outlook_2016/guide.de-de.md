@@ -1,5 +1,5 @@
 ---
-title: 'Konfiguration von E-Mail Pro mit Outlook für Windows'
+title: 'Email Pro - Richten Sie ein E-Mail-Konto in Outlook für Windows ein'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account in Outlook für Windows einrichten'
 updated: 2021-07-05
 ---
@@ -12,7 +12,7 @@ updated: 2021-07-05
 
 E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden.
 
-**Diese Anleitung erklärt, wie Sie Ihre E-Mail Pro Adresse in Windows Outlook 2016 oder neuer einrichten.**
+**Diese Anleitung erklärt, wie Sie Ihre E-Mail Pro Adresse in Windows Outlook oder neuer einrichten.**
  
 
 > [!warning]
@@ -95,6 +95,6 @@ Das Fenster ist in zwei Bereiche unterteilt, für **eingehende** und **ausgehend
 
 [Konfiguration Ihrer MX Plan Adresse mit Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 
-[Konfiguration von Exchange auf Outlook 2016 für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
+[Konfiguration von Exchange auf Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

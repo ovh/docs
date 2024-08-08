@@ -1,20 +1,18 @@
 ---
 title: "Paramétrer un DNS dynamique (DynHost/DynDNS) pour votre nom de domaine"
 excerpt: "Découvrez comment paramétrer un enregistrement DNS dynamique pour votre nom de domaine OVHcloud"
-updated: 2024-05-21
+updated: 2024-07-12
 ---
 
 ## Objectif
 
 La zone **D**omain **N**ame **S**ystem (**DNS**) d’un nom de domaine constitue le fichier de configuration de ce dernier. Elle se compose d’informations techniques, appelées *enregistrements DNS*. La zone DNS est, en quelque sorte, comme un centre d'aiguillage. 
 
-Vous pouvez, par exemple, y préciser :
+Pour plus d'explications, consultez nos guides suivants :
 
-- L'adresse IP (enregistrements DNS de type *A* et *AAAA*) de votre hébergement web pour afficher votre site web avec votre nom de domaine.
-- Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
-- Des informations liées à la sécurité / l'authentification de vos services associés (hébergement web, serveur web, serveur e-mail, etc.) à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
-
-Si besoin, consultez notre documentation sur [les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) et l'[édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](/links/manager).
+- [Tout savoir sur les serveurs DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
 La mise à jour de manière « dynamique » d'un enregistrement DNS peut éviter une interruption prolongée de l'un de vos services si vous ne disposez pas d'une adresse IP dite « fixe » (qui ne change pas).
 
@@ -53,7 +51,7 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 
 Pour créer un utilisateur DynHost, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} puis rendez-vous dans la partie `Web cloud`{.action}. Dans la colonne de gauche, cliquez sur l'onglet `Noms de domaine`{.action} puis sélectionnez le nom de domaine concerné. Sur la page qui s'affiche, cliquez sur l'onglet `DynHost`{.action}.
 
-![dynhost](images/tab.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 
 Cliquez sur le bouton `Gérer les accès`{.action} puis sur `Créer un identifiant`{.action}. Dans la fenêtre qui s'affiche, complétez les informations demandées :
 
@@ -70,7 +68,7 @@ Cliquez sur le bouton `Gérer les accès`{.action} puis sur `Créer un identifia
 
 Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'identifiant apparaît alors dans le tableau présent sur la page actuelle. Répétez cette étape autant de fois que nécessaire si vous avez besoin de créer plusieurs identifiants DynHost.
 
-![dynhost](images/create-a-dynhost-username.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost-username.png){.thumbnail}
 
 ### Étape 2 : créer l'enregistrement DNS dynamique (DynHost) <a name="step2"></a>
 
@@ -83,7 +81,12 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, repositionnez-vous
 |Sous-domaine|Renseignez le sous-domaine dont l'enregistrement DNS devra être mis à jour dynamiquement. Ce sous-domaine doit correspondre à celui renseigné lors de la création de l'utilisateur DynHost. **Si vous souhaitez mettre en place un DynHost directement pour votre nom de domaine, laissez ce formulaire de saisie vide**|
 |IP de destination|Renseignez l'adresse IP (IPv4 ou IPv6) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé. Selon le principe du DynHost, celle-ci sera mise à jour automatiquement par la suite.|
 
-![dynhost](images/create-a-dynhost.png){.thumbnail}
+> [!warning]
+>
+> Pour la mise en place d'un enregistrement DNS dynamique (DynHost), l'utilisation d'un *wildcard* (en placant uniquement le caractère `*`) dans le formulaire `Sous-domaine`{.action} est indisponible.
+>
+
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
 Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau présent sur la page actuelle. Répétez cette étape autant de fois que nécessaire si vous avez besoin d'enregistrements DynHost supplémentaires.
 
@@ -122,7 +125,7 @@ Vous pouvez vérifier si l'adresse IP de destination a bien été mise à jour. 
 > Toute modification dans la zone DNS active d'un nom de domaine via DynDNS peut entraîner un délai de propagation de la mise à jour de plusieurs minutes.
 >
 
-![dynhost](images/target.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 
 ## Aller plus loin <a name="go-further"></a>
 
@@ -130,4 +133,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

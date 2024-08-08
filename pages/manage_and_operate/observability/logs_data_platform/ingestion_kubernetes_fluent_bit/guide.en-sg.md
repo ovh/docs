@@ -1,7 +1,7 @@
 ---
 title: Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit
 excerpt: All the logs of your pods in one place
-updated: 2023-09-08
+updated: 2024-07-18
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ Note that in order to complete this tutorial, you should have at least:
 
 ## Preparation
 
-Before we dive into this tutorial, it is important to understand how we will deploy Fluent Bit. The configuration of Fluent Bit will be similar to the one you can find in the [official documentation](https://docs.fluentbit.io/manual/installation/kubernetes). Fluent Bit will be deployed as a *DaemonSet* in every node of the kubernetes cluster through a [Helm installation](https://helm.sh). Helm is a package manager for Kubernetes which can simplify the deployment of applications on Kubernetes. Fluent Bit will read, parse and ship every log of every pod of your cluster by default. It will also enrich each log with precious metadata like pod name and id, container name and ids, labels and annotations. As stated in the Fluent Bit documentation, a built-in Kubernetes filter will use Kubernetes API to gather some of this information. This configuration has been tested with kubernetes 1.28 and Fluent Bit image 2.1.8
+Before we dive into this tutorial, it is important to understand how we will deploy Fluent Bit. The configuration of Fluent Bit will be similar to the one you can find in the [official documentation](https://docs.fluentbit.io/manual/installation/kubernetes). Fluent Bit will be deployed as a *DaemonSet* in every node of the kubernetes cluster through a [Helm installation](https://helm.sh). Helm is a package manager for Kubernetes which can simplify the deployment of applications on Kubernetes. Fluent Bit will read, parse and ship every log of every pod of your cluster by default. It will also enrich each log with precious metadata like pod name and id, container name and ids, labels and annotations. As stated in the Fluent Bit documentation, a built-in Kubernetes filter will use Kubernetes API to gather some of this information. This configuration has been tested with kubernetes 1.30 and Fluent Bit image 2.2.2
 
 ## Instructions
 
@@ -90,7 +90,7 @@ We now need to add several filters in order to add the token and format logs rec
         Match *
         Record X-OVH-TOKEN ${FLUENT_LDP_TOKEN}
 
-      [FILTER]
+    [FILTER]
         Name nest
         Match *
         Wildcard pod_name

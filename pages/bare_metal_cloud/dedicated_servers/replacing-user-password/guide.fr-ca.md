@@ -23,7 +23,7 @@ Dans ce cas, vous pouvez vous connecter à votre serveur via le mode rescue d’
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 > [!primary]
-> Ce guide ne s'applique pas aux installations de **Windows** Server. Consultez nos guides « [Comment changer le mot de passe administrateur sur un serveur dédié Windows](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows) » et « [Comment changer le mot de passe administrateur sur un VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password) ».
+> Ce guide ne s'applique pas aux installations de **Windows** Server. Consultez nos guides « [Comment changer le mot de passe administrateur sur un serveur dédié Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) » et « [Comment changer le mot de passe administrateur sur un VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password) ».
 >
 
 ## En pratique

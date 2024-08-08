@@ -34,7 +34,7 @@ A ferramenta Zonemaster permite verificar uma configuração DNS instalada num n
 
 Para verificar a configuração atual de um nome de domínio, introduza o seu nome de domínio e clique em `Run`{.action}
 
-![Captura de ecrã do formulário de introdução do Zonemaster. O domínio "domain.tld" já foi introduzido e está pronto para ser testado.](images/run-domain-test.png){.thumbnail}
+![Captura de ecrã do formulário de introdução do Zonemaster. O domínio "domain.tld" já foi introduzido e está pronto para ser testado.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
 
 Para verificar uma configuração DNS que foi preparada, mas ainda não aplicada ao domínio em causa, selecione a opção `Options`{.action} e introduza as seguintes informações:
 
@@ -47,12 +47,12 @@ Também pode forçar as verificações num protocolo IP específico através das
 > Configurou uma zona DNS para este domínio nos servidores DNS "dns1.test.tld" e "dns2.test.tld".<br>
 > Antes de alterar os servidores DNS, pode efetuar uma pesquisa avançada através da opção `Options`{.action} introduzindo "dns1.test.tld" e "dns2.test.tld" nas casas `Nameservers`.<br>
 > Zonemaster realizará um teste como se estivesse a utilizar os servidores "dns1.test.tld" e "dns2.test.tld" em "domain.tld".<br>
-> ![Captura de tela das opções avançadas do formulário Zonemaster. Os dois servidores de nomes "dns1.test.tld" e "dns2.test.tld" foram introduzidos na secção "SNameservers" do formulário.](images/run-domain-test-nameservers-option.png){.thumbnail}
+> ![Captura de tela das opções avançadas do formulário Zonemaster. Os dois servidores de nomes "dns1.test.tld" e "dns2.test.tld" foram introduzidos na secção "SNameservers" do formulário.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > Ao introduzir um domínio e ao clicar no botão `Fetch NS from parent zone`{.action} e `Fetch DS from parent zone`{.action}, aparecerão os servidores DNS associados ao domínio, bem como as informações do registo DS (DNSSEC), se este tiver sido configurado.
-> ![Captura de ecrã das opções avançadas do formulário Zonemaster. O botão "Fetch NS from parent zone" (Obter NS da zona-mãe) está realçado e os servidores de nomes do domínio "domain.tld" são pré-preenchidos na secção Nameservers (Servidores de nomes) do formulário.](images/fetch-ns-from-parent-zone.png){.thumbnail}
+> ![Captura de ecrã das opções avançadas do formulário Zonemaster. O botão "Fetch NS from parent zone" (Obter NS da zona-mãe) está realçado e os servidores de nomes do domínio "domain.tld" são pré-preenchidos na secção Nameservers (Servidores de nomes) do formulário.](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Resultado
 
@@ -65,7 +65,7 @@ Depois de validado o formulário, os resultados são classificados por código d
 
 Para cada teste, é possível obter mais pormenores, por exemplo para compreender o erro no caso de uma anomalia, ou apenas a título indicativo.
 
-![dominios](images/domain-analysis.png){.thumbnail}
+![dominios](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
 
 ### Informações úteis
 
@@ -83,4 +83,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
+Fale com nossa [comunidade de utilizadores](/links/community)

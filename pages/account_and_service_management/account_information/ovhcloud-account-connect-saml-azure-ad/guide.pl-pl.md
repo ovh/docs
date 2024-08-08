@@ -1,12 +1,12 @@
 ---
-title: Włącz połączenia Azure SSO z Twoim kontem OVHcloud
+title: Włącz połączenia Entra ID SSO z Twoim kontem OVHcloud
 excerpt: "Dowiedz się, jak powiązać identyfikator Entra ID (dawniej Azure Active Directory) z kontem OVHcloud przy użyciu protokołu SAML 2.0"
-updated: 2024-03-05
+updated: 2024-07-05
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
+>
 
 ## Wprowadzenie
 
@@ -207,23 +207,23 @@ Aplikacja Entra ID zostaje dodana jako zatwierdzony dostawca danych w Panelu [kl
 
 #### Zaufanie OVHcloud
 
-[Zaloguj się do Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i kliknij Twój profil w prawym górnym rogu.
+Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie na pasku bocznym.
 
-![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Kliknij Twoją nazwę, aby przejść do strony zarządzania profilem.
+Aby uzyskać dostęp do menu IAM, przejdź do Panelu klienta.
 
-![Informacje o użytkowniku OVHcloud](images/ovhcloud_user_infos.png){.thumbnail}
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Otwórz zakładkę `Zarządzanie użytkownikami`{.action}.
+Następnie kliknij zakładkę `Tożsamości`{.action}, aby zarządzać użytkownikami lokalnymi.
 
-![Profil menu OVHcloud](images/ovhcloud_profile_menu.png){.thumbnail}
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Następnie kliknij przycisk `Logowanie SSO`{.action}.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Uzupełnij pole **Group Atrybute Name** z wartością **Claim name** z wcześniej zarejestrowanych grup aplikacji Entra ID.
+Uzupełnij pole **Nazwa atrybutu użytkownika** nazwą oświadczenia aplikacji identyfikatora wewnętrznego **UPN** oraz w polu **Nazwa atrybutu grupy** wartością nazwy oświadczenia **groups**, która została wcześniej zapisana.
 
 Wypełnij metadane XML aplikacji Entra ID z wcześniej zarejestrowanego pliku.
 

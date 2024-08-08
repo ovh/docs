@@ -36,7 +36,7 @@ Permite copiar un archivo o una carpeta que contiene uno o varios archivos desde
 
 ## Procedimiento
 
-Esta guía explica en detalle las funcionalidades disponibles con el comando `scp`. No dude en interactuar con nuestra comunidad de usuarios en <https://community.ovh.com/en/> si desea profundizar sus conocimientos sobre este pedido.
+Esta guía explica en detalle las funcionalidades disponibles con el comando `scp`. No dude en interactuar con nuestra [comunidad de usuarios](/links/community) si desea profundizar sus conocimientos sobre este pedido.
 
 ### Etapa 1 - Obtener los accesos SSH de su alojamiento web
 

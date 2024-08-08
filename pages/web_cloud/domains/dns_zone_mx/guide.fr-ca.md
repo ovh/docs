@@ -1,6 +1,6 @@
 ---
-title: Ajouter un champ MX à la configuration de son nom de domaine
-excerpt: Apprenez à ajouter un champ MX à votre nom de domaine chez OVHcloud
+title: "Configurer un enregistrement MX pour la gestion des emails"
+excerpt: "Découvrez comment configurer un enregistrement MX sur votre nom de domaine chez OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -35,7 +35,7 @@ Lorsque l'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@myd
 - **(1)** interroger la zone DNS du nom de domaine **mydomain.ovh** et lire les enregistrements **MX**.
 - **(2)** transmettre l'e-mail vers l'URL de l'enregistrement **MX** lu.
 
-![email](/pages/assets/schemas/dns/mx-dns-resolution-apac-ca.png){.thumbnail}
+![email](/pages/assets/schemas/emails/mx-dns-resolution-apac-ca.png){.thumbnail}
 
 L'e-mail sera envoyé vers la cible **mx0.mail.ovh.ca** qui est précédée de la valeur **0**. Cette valeur est appelée priorité. La plus faible valeur est interrogée en premier et la plus élevée en dernier. Cela signifie que la présence de plusieurs enregistrements permet de pallier une absence de réponse de l'enregistrement MX ayant la plus faible priorité.
 
@@ -93,12 +93,12 @@ Une fois les informations complétées, finalisez les étapes puis cliquez sur `
 
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configurer un enregistrement SPF sur son nom de domaine](/pages/web_cloud/domains/dns_zone_spf)
+[Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

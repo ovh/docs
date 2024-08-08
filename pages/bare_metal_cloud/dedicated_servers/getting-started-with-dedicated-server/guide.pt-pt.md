@@ -162,7 +162,7 @@ Consoante as suas necessidades em termos de segurança, mobilidade e comodidade,
 
 Terminada a instalação, irá receber uma mensagem de correio eletrónico com as credenciais do Windows. Pode de seguida ligar-se ao seu servidor através de RDP (**R**emote **D**esktop **P**rotocol). No seu dispositivo Windows local, abra a aplicação `Remote Desktop Connection`.
 
-![Windows remote](images/windows-connect-03.png){.thumbnail}
+![Windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Insira o endereço IPv4 do seu servidor, depois o seu nome de utilizador e a sua passphrase. Normalmente, é apresentada uma mensagem a avisar-lhe para confirmar a ligação devido a um certificado desconhecido. Clique em `Sim`{.action} para iniciar sessão.
 
@@ -189,17 +189,17 @@ Para os ativar, percorra os separadores abaixo:
 > 2. **Abrir utilitário "Run"**
 >>
 >> Abra o Menu Iniciar do Windows e clique em `Executar`{.action}.<br><br>
->>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Abrir "msconfig"**
 >>
 >> Introduza "msconfig" e clique em `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Ativar os logs**
 >>
 >> Na nova janela, ative a opção logs ao lado de `Boot log`. Clique em `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 Na próxima vez que iniciar o seu servidor, os logs serão guardados num ficheiro `.txt`. O caminho para o ficheiro é: `C:\Windows\ntbtlog.txt`.

@@ -1,6 +1,6 @@
 ---
 title: FAQ e-mail OVHcloud
-updated: 2024-06-18
+updated: 2024-06-27
 ---
 
 ## Najczęściej zadawane pytania dotyczące kont e-mail
@@ -93,6 +93,10 @@ Chcesz zmienić [ofertę e-mail](/links/web/emails) na większą przestrzeń i w
 ### Czy oferta Office 365 Pro Plus zawiera licencję Skype?
 
 Oferta Office 365 Pro Plus nie zawiera licencji Skype. W ofercie zawarty jest jedynie program Skype for Business.
+
+### Jak mogę przenieść na serwery OVHcloud moje e-maile, stronę WWW, bazę danych i domenę bez przerwy w dostępności usług?
+
+Wszystkie kolejne etapy znajdują się w przewodniku "[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 
 ## Sprawdź również <a name="go-further"></a>
 

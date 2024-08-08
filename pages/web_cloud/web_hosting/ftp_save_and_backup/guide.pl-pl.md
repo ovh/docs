@@ -56,7 +56,7 @@ Określ również metodę przywracania, której użyjesz.
 >
 > Wykorzystany limit pojawia się na stronie, która się wyświetla:
 >
->![ftp quota](images/find-disk-space.png){.thumbnail}
+>![ftp quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >
 > Jeśli używana przestrzeń dyskowa FTP jest większa niż połowa całkowitej przestrzeni dyskowej FTP w Twojej ofercie hostingu, możesz lokalnie pobrać duże elementy Twojej strony WWW (w tym celu możesz użyć [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)). Usuń je z przestrzeni FTP. Zmniejszy to rozmiar przestrzeni dyskowej FTP, której używasz i będziesz mógł przywrócić dane z Panelu klienta OVHcloud.
 >
@@ -89,7 +89,7 @@ Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestr
 
 Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action} , następnie wybierz nazwę odpowiedniego hostingu. Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `Przywróć kopię zapasową`{.action}.
 
-![kopia zapasowa](images/restore-backup.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 
 W oknie, które się wyświetla wybierz z rozwijanego menu odpowiednią dla Ciebie datę:
 
@@ -103,7 +103,7 @@ W oknie, które się wyświetla wybierz z rozwijanego menu odpowiednią dla Cieb
 
 Po wybraniu daty, kliknij przycisk `Dalej`{.action}. 
 
-![kopia zapasowa](images/restore-backup-step-1.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
 
 Poświęć chwilę, aby upewnić się, że żaden plik nie zostanie usunięty w wyniku przywrócenia przestrzeni dyskowej, np. plik, który zapisałeś na przestrzeni po wybranej dacie przywrócenia. Jak zostało wspomniane wyżej, przywrócenie przestrzeni dyskowej spowoduje usunięcie wszystkich aktualnych danych, które zostaną zastąpione danymi z kopii zapasowej.
 
@@ -135,7 +135,7 @@ Na wstępie określ program lub interfejs, którego będziesz używał do łącz
 
 Kiedy jesteś gotowy do rozpoczęcia operacji, przejdź do następnego etapu.
 
-![kopia zapasowa](images/ftp-explorer.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### Etap 2: logowanie do kopii zapasowej przestrzeni dyskowej
 
@@ -143,7 +143,7 @@ W wybranym interfejsie lub programie zaloguj się do przestrzeni dyskowej, aby u
 
 Możesz odnaleźć te informacje w zakładce `FTP - SSH`{.action} na Twoim hostingu. Jeśli nie posiadasz hasła dla użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
-![kopia zapasowa](images/login-infos.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
 Uzupełnij Twoją nazwę głównego użytkownika („login”) FTP sufiksem wskazującym kopię zapasową, do której chcesz się zalogować. W uzyskaniu dostępu do wybranej kopii zapasowej pomogą Ci poniższe wskazówki:
 
@@ -159,7 +159,7 @@ Pamiętaj, aby zastąpić informację ogólną „uzytkownikftp” Twoją nazw�
 
 Metoda logowania do Twojej przestrzeni dyskowej jest różna w zależności od używanego interfejsu lub programu. Poniżej obrazek przedstawiający logowanie do przestrzeni przez interfejs FTP Explorer. 
 
-![kopia zapasowa](images/login-interface-snap0.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
 
 #### Etap 3: pobieranie wybranego pliku lub plików
 

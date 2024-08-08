@@ -56,7 +56,7 @@ Da mesma forma, deverá definir o método de restauração que vai utilizar:
 >
 > A quota utilizada aparece na página que aparece:
 >
->![ftp quota](images/find-disk-space.png){.thumbnail}
+>![ftp quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >
 > Se o espaço de armazenamento FTP utilizado for superior a metade do espaço de armazenamento FTP total do seu plano de alojamento, recupere localmente determinados elementos volumosos do seu website (para isso, pode utilizar [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)). De seguida, elimine-os do seu espaço de armazenamento FTP. Isto diminuirá o tamanho do espaço de armazenamento FTP que utiliza e poderá então lançar o seu restauro a partir da Área de Cliente OVHcloud.
 >
@@ -89,7 +89,7 @@ Aceda à informação correspondente ao método de restauração escolhido.
 
 Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Restaurar um backup`{.action}.
 
-![backupftp](images/restore-backup.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 
 Na janela que vai aparecer, terá de selecionar a data de restauração pretendida no menu pendente:
 
@@ -103,7 +103,7 @@ Na janela que vai aparecer, terá de selecionar a data de restauração pretendi
 
 Depois de selecionar a data, clique no botão `Seguinte`{.action}. 
 
-![backupftp](images/restore-backup-step-1.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
 
 Certifique-se de que não perdeu nenhum ficheiro no processo de restauração (por exemplo, qualquer ficheiro que guardou no seu espaço de armazenamento após a data de restauração selecionada). Tal como indicado, a restauração vai apagar todos os dados atuais para os substituir pelos dados da cópia de segurança.
 
@@ -135,7 +135,7 @@ Em primeiro lugar, deve decidir qual o programa ou interface que vai utilizar pa
 
 Assim que estiver pronto para continuar a operação, avance para o passo seguinte.
 
-![backupftp](images/ftp-explorer.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### 2 - Ligar-se à cópia de segurança
 
@@ -143,7 +143,7 @@ A partir da interface ou do programa selecionado, deverá ligar-se ao seu espaç
 
 Pode consultar estas informações na janela `FTP - SSH`{.action} do seu alojamento. Caso não tenha a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
-![backupftp](images/login-infos.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
 Deverá adicionar um sufixo ao seu nome de utilizador (ou “login”) FTP principal, especificando a cópia de segurança à qual quer aceder. A seguir, poderá encontrar alguns exemplos sobre como aceder à cópia de segurança desejada.
 
@@ -159,7 +159,7 @@ Substitua a informação genérica “utilizadorftp” pelo seu nome de utilizad
 
 A forma de se ligar ao espaço de armazenamento varia em função da interface ou do programa que utiliza. Abaixo, poderá ver uma imagem da janela de ligação da interface FTP Explorer.
 
-![backupftp](images/login-interface-snap0.png){.thumbnail}
+![backupftp](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
 
 #### 3 - Recuperar os ficheiros
 

@@ -12,7 +12,7 @@ updated: 2023-11-22
 
 Gli errori 500 "Internal Server Error" possono riguardare la totalità o parte del tuo sito, essere casuali o permanenti. Possono anche apparire sotto forma di una pagina bianca.
 
-![error500](images/http-500.png){.thumbnail}
+![error500](/pages/assets/screens/other/browsers/errors/http-500.png){.thumbnail}
 
 A volte provengono anche da un aggiornamento effettuato **automaticamente** da un componente del tuo sito e quindi possono verificarsi senza intervento da parte tua.
 

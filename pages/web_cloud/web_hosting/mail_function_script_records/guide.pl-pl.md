@@ -129,7 +129,7 @@ Status ten występuje, gdy e-maile uznawane za SPAM zostały wysłane z Twojego 
 
 Na ogół blokadą tą towarzyszy wysłanie e-maila o nazwie **"Nadużycie na hostingu domain.tld"** wygenerowanego automatycznie przez nasze roboty związane z bezpieczeństwem:
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 W porównaniu z tą sytuacją możliwe są trzy przypadki:
 

@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z Backup Storage na serwerze dedykowanym'
 excerpt: 'Dowiedz się, jak aktywować i uzyskać dostęp do dodatkowej przestrzeni dyskowej'
-updated: 2023-07-28
+updated: 2024-07-09
 ---
 
 > [!primary]
@@ -249,7 +249,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 * **LocalFolder**\: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
 * **File**\: ścieżka dostępu pliku do pobrania
 
-####lftp (na Linux)
+#### lftp (na Linux)
 
 > [!primary]
 >
@@ -355,7 +355,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 * **LocalFolder**: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
 * **File**: ścieżka dostępu pliku do pobrania. 
 
-####lftp (Linux)
+#### lftp (Linux)
 
 > [!primary]
 >
@@ -442,6 +442,16 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 
 * **HostName**: nazwa Twojej usługi Backup Storage.
 * **ServiceName**: nazwa Twojego serwera (np: ns0000000.ip-123-123-123.net).
+
+Może pojawić się następujący komunikat o błędzie:
+
+```console
+System error 1272 has occurred.
+
+You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
+```
+
+Ten problem można rozwiązać, modyfikując rejestr systemu Windows: otwórz narzędzie systemu Windows *regedit* i wyszukaj wpis `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Ustaw dla parametru `AllowInsecureGuestAuth` wartość "1". Więcej informacji na ten temat można znaleźć na [stronach pomocy technicznej firmy Microsoft](https://answer.microsoft.com/en-us/windows/forum/all/you-cant-access-this-shared-folder-because-your/01d15775-2cbe-41f8-beb8-84ce588b34ab).
 
 ##### Linux
 

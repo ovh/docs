@@ -201,11 +201,11 @@ Zalecenia dotyczące najlżejszych plików:
 
 Ze względu na czytelność, obrazy przechowuje się w dedykowanym katalogu:
 
-![Drzewo plików i folderów](images/create_your_personal_webpage_1.png){.thumbnail}
+![Drzewo plików i folderów](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_1.png){.thumbnail}
 
 Weźmy przykład pliku w formacie *PNG*. Umieść go w katalogu "images":
 
-![Drzewo plików i folderów z obrazem](images/create_your_personal_webpage_2.png){.thumbnail}
+![Drzewo plików i folderów z obrazem](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_2.png){.thumbnail}
 
 Teraz utworzymy nowy punkt, w którym umieścimy obraz (w tym przykładzie nie określamy wielkości wyświetlania obrazu w pikselach. Przeglądarka wyświetla go w zależności od oryginalnego rozmiaru, w formie pliku).
 
@@ -229,7 +229,7 @@ Teraz utworzymy nowy punkt, w którym umieścimy obraz (w tym przykładzie nie o
 
 Wynik w przeglądarce powinien być następujący:
 
-![Wynik kodu HTML w przeglądarce](images/create_your_personal_webpage_3_pl.png){.thumbnail}
+![Wynik kodu HTML w przeglądarce](/pages/assets/screens/other/browsers/web-pages/create_your_personal_webpage_3_pl.png){.thumbnail}
 
 ### Aplikuj na Twoje treści korzystając ze stylów CSS
 
@@ -242,7 +242,7 @@ Arkusze stylów umożliwiają zmianę wyglądu i zachowania elementów zakodowan
 
 Podobnie jak w przypadku plików HTML, pliki CSS mogą być tworzone z dowolnym edytorem tekstu. Rozszerzenie tych plików musi być dostępne w formacie *.css*.
 
-![Umieszczenie pliku CSS](images/create_your_personal_webpage_4.png){.thumbnail}
+![Umieszczenie pliku CSS](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_4.png){.thumbnail}
 
 Teraz musimy powiązać ten plik CSS, który nazwaliśmy konwencją *style.css*, z naszą stroną HTML. Link ten jest wykonywany poprzez dodanie znacznika `<link>` do znacznika `<head>` w pliku index.html:
 
@@ -301,7 +301,7 @@ Zauważcie, że teksty są teraz przyklejone do krawędzi przeglądarki.
 
 Własność padding definiuje obracającą krawędź (wewnętrzny margines), czyli przestrzeń poza blokiem, który zawiera tekst (lub jakikolwiek element). Poniższy schemat ilustruje zgodność tych terminów w tzw. modelu pudełek w CSS:
 
-![Model pudełka CSS](images/create_your_personal_webpage_5.png){.thumbnail}
+![Model pudełka CSS](/pages/assets/schemas/web-hosting/create_your_personal_webpage_5.png){.thumbnail}
 
 ### Poprawa struktury HTML dokumentu
 
@@ -449,4 +449,4 @@ Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawanso
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

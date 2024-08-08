@@ -65,11 +65,11 @@ W zakładce `Informacje ogólne`{.action} możesz sprawdzić, czy spełnione są
 
 Kliknij link `Tag transferu wychodzącego`{.action} w sekcji zatytułowanej **Bezpieczeństwo**.
 
-![transfer wychodzący](images/outgoing-transfer-tag.jpg){.thumbnail}
+![transfer wychodzący](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.jpg){.thumbnail}
 
 W oknie, które się wyświetli wprowadź TAG nowego operatora, po czym kliknij `Zatwierdź`{.action}.
 
-![transfer wychodzący](images/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
+![transfer wychodzący](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
 
 Jeśli nie możesz zmienić wpisu TAG Twojej domeny w Panelu klienta, możesz zlecić jego zmianę w rejestrze Nominet. Więcej informacji znajduje się na oficjalnej [stronie internetowej Nominet](https://www.nominet.uk/domain-support/).
 
@@ -87,4 +87,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

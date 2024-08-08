@@ -47,20 +47,20 @@ First of all, log in to your [OVHcloud Control Panel](/links/manager){.external}
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now click on the three dots to the right of the database that you want to restore to an earlier version, then `Restore backup`{.action}. Please note that this will replace the current contents of the database with the contents of the backup.
 
-![databaseimport](images/restore-backup.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 All available backups for the database you have selected will now be diplayed. You can view the exact date of each backup, and the date on which they will be deleted from the OVHcloud tool.
 
 Click on the three dots to the right of the backup that you would like to restore, then on `Restore the backup`{.action}. In the popup window, check that the information is correct, then click `Confirm`{.action}. Then wait for the restore process to complete.
 
-![databaseimport](images/restore-the-backup.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
 
 ### Import your own backup via your Control Panel.
 First of all, log in to your [OVHcloud Control Panel](/links/manager){.external}, click `Hosting plans`{.action}, then select the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now click on the three dots to the right of the database you want to import data into, then on `Import file`{.action}.
 
-![databaseimport](images/import-file.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-file.png){.thumbnail}
 
 On the window that opens, select `Import a new file`{.action}, then click `Next`{.action}.
 
@@ -69,13 +69,13 @@ On the window that opens, select `Import a new file`{.action}, then click `Next`
 > By clicking the `Use an existing file`{.action} button, you can reimport data from a file you have already sent to the import tool.
 >
 
-![databaseimport](images/database-import-step-1-new-file.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-1-new-file.png){.thumbnail}
 
 Enter a filename (which you can use to identify this backup at a later date, if you wish to restore it again), then next to `File`, select the database backup file on your computer. Click on `Send`{.action}.
 
 Wait until the interface confirms that the file has been sent successfully, then click `Next`{.action}.
 
-![databaseimport](images/database-import-step-2-new-file.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-2-new-file.png){.thumbnail}
 
 Finally, you can choose whether or not to apply the additional options displayed:
 
@@ -85,7 +85,7 @@ Finally, you can choose whether or not to apply the additional options displayed
 
 Once you have made your choice, click the `Confirm`{.action} button, and wait for the import process to finish.
 
-![databaseimport](images/database-import-step-3.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-3.png){.thumbnail}
 
 ### Carry out the import from the phpMyAdmin web interface.
 
@@ -93,7 +93,7 @@ To carry out this procedure, you will need to log in to phpMyAdmin. To get the a
 
 The table shown contains all the databases created as part of your Web Hosting plan. In the table, click on the three dots to the right of the database concerned, then on `Go to phpMyAdmin`{.action}.
 
-![databaseimport](images/go-to-phpmyadmin.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Once you are on the phpMyAdmin page, enter the database information, use the drop-down menu to access the data from the current version of the database, then log in. Once you have logged in, go to the `Import`{.action} tab, and enter the information requested. As a reminder, there is a limit to the size of the backup file you can use.
 

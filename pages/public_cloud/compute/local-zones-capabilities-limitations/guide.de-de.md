@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funktionen, Kapazitäten und Einschränkungen
 excerpt: Informieren Sie sich über die aktuellen Funktionen, Kapazitäten und Einschränkungen von Local Zones Instanzen
-updated: 2024-04-08
+updated: 2024-07-10
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-04-08
 
 ## Ziel
 
-Local Zones sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen.
+Local Zones sind eine Erweiterung von [Regionen](/links/public-cloud/regions-pci), die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen.
 
 Die Local Zones Instanzen befinden sich strategisch in der Nähe von Bereichen mit hoher Benutzeranforderung. Ihr Hauptziel ist es, die für die Übertragung von Daten zwischen dem Benutzer und der Cloud erforderliche Zeit zu minimieren, um die Dienste reaktionsschneller zu machen und Anforderungen für Data Residency zu erfüllen.
 
@@ -20,7 +20,7 @@ Weitere Informationen finden Sie auf unserer [Seite für Local Zones](https://ww
 
 ## Verfügbare Funktionen
 
-| Aktion | Allgemeine Verfügbarkeit (März 2024) |
+| Aktion | Allgemeine Verfügbarkeit |
 | --- | --- |
 | Instanzen | Ja |
 | User-data/cloud-init Support | Ja|
@@ -34,6 +34,7 @@ Weitere Informationen finden Sie auf unserer [Seite für Local Zones](https://ww
 | Volume-Snapshots | Nein |
 | Volume-Backups | Nein |
 | Object Storage | Nein |
+| Windows-Images | Nein |
 
 ## Kapazitäten und Einschränkungen
 

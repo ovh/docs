@@ -1,7 +1,7 @@
 ---
 title: Changing the admin password on a Windows dedicated server
 excerpt: Find out how to use the OVHcloud rescue mode to reset the password of the Administrator account on a Windows dedicated server
-updated: 2023-09-18
+updated: 2024-06-26
 ---
 
 ## Objective
@@ -9,6 +9,13 @@ updated: 2023-09-18
 When you install or reinstall a Windows operating system, you are provided with a password for administrative access. We strongly recommend that you change this initial password, as detailed in our guide about [securing a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server). In case you have lost your admin password, it needs to be reset using rescue mode.
 
 **This guide explains how to reset the password of the admin account of a Windows Server OS via the OVHcloud rescue mode.**
+
+> [!warning]
+>
+> This guide is not applicable to the rescue boot mode `Windows customer rescue system`.
+> 
+> Follow [this guide](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) when using the option `Windows customer rescue system (Windows2022-based)` in the OVHcloud Control Panel.
+>
 
 ## Requirements
 

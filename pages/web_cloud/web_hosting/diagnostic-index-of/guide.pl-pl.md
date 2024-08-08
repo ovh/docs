@@ -15,7 +15,7 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 - Konfiguracja [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) Twojej domeny nie została poprawnie skonfigurowana w katalogu docelowym
 - Folder docelowy, do którego Twoja nazwa domeny nie zawiera plików **"index.html"** lub **"index.php"**
 
-![indeks](images/index-of.png){.thumbnail}
+![indeks](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
 
 **Dowiedz się, jak naprawić wyświetlanie strony "Index of".**
 
@@ -53,11 +53,11 @@ Aby wyświetlić Twoją stronę WWW, w części hostingu `Multisite`{.action} na
 
 Przeprowadziłeś pliki strony **mydomain.ovh** do katalogu `www` hostingu przez [FTP](/pages/web_cloud/web_hosting/ftp_connection). Poza tym Twoja domena nie jest powiązana z tym folderem w kolumnie `Katalog główny` Twojej strony w opcji `MultiSite`{.action}.
 
-![index_of_multisite](images/root-folders-empty.png){.thumbnail}
+![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
 Zmień `Katalog główny` klikając przycisk `...`{.action} po prawej stronie tabeli, a następnie `Zmień domenę`{.action}:
 
-![modify_domain](images/modify-domain.png){.thumbnail}
+![modify_domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
 
 W oknie, które się wyświetla:
 
@@ -65,7 +65,7 @@ W oknie, które się wyświetla:
 * Wskaż katalog zawierający plik **index.php** lub **index.html** Twojej strony jako `Katalog główny` (2);
 * Kliknij `Dalej` (3).
 
-![change_root_folder](images/change-root-folder-step-1.png){.thumbnail}
+![change_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png){.thumbnail}
 
 > [!primary]
 >
@@ -74,11 +74,11 @@ W oknie, które się wyświetla:
 
 W następnym oknie kliknij `Zatwierdź`{.action}.
 
-![modify_root_folder_confirm](images/change-root-folder-step-2.png){.thumbnail}
+![modify_root_folder_confirm](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png){.thumbnail}
 
 W ciągu kilku minut (odświeżając przeglądarkę) otrzymasz następujący wynik:
 
-![multisite_modified](images/root-folders-full-www.png){.thumbnail}
+![multisite_modified](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png){.thumbnail}
 
 Sprawdź, czy Twoja strona wyświetla się poprawnie. W przeciwnym razie zrestartuj urządzenie i w razie potrzeby wyczyść cache przeglądarki.
 

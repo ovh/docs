@@ -1,12 +1,12 @@
 ---
 title: "API OVHcloud et installation d'un OS"
 excerpt: "Découvrez comment l'API OVHcloud vous permet d'installer ou de réinstaller un OS sur votre serveur"
-updated: 2024-04-04
+updated: 2024-07-16
 ---
 
 ## Objectif
 
-Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation d'un système d'exploitation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](https://www.ovhcloud.com/fr-ca/bare-metal/) à l'aide de l'[API OVHcloud](https://ca.api.ovh.com/).
+Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation d'un système d'exploitation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](https://www.ovhcloud.com/fr-ca/bare-metal/) à l'aide de l'[API OVHcloud](https://api.ovh.com/).
 
 ## Prérequis
 
@@ -22,7 +22,7 @@ Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'ins
 
 ### Compatibilité OS <a name="os-compatibility"></a>
 
-Connectez-vous sur [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}.
+Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}.
 
 Pour lister tous vos [serveurs dédiés](https://www.ovhcloud.com/fr-ca/bare-metal/) :
 
@@ -88,12 +88,20 @@ Exemple de valeurs pour la clef `inputs`{.action} pour Debian 12 (Bookworm) :
 {
     "inputs": [
         {
-            "default": "",
             "name": "sshKey",
-            "mandatory": false,
-            "enum": [],
             "description": "SSH Public Key",
-            "type": "sshPubKey"
+            "default": "",
+            "mandatory": false,
+            "type": "sshPubKey",
+            "enum": []
+        },
+        {
+            "name": "postInstallationScript",
+            "description": "Post-Installation Script",
+            "default": "",
+            "mandatory": false,
+            "type": "text",
+            "enum": []
         }
     ]
 }
@@ -105,14 +113,33 @@ Exemple de valeurs pour la clef `inputs`{.action} pour Windows Server 2022 Stand
 {
     "inputs": [
         {
+            "name": "language",
+            "description": "Display Language",
             "default": "en-us",
             "mandatory": false,
             "type": "enum",
-            "name": "language",
-            "description": "Display Language",
             "enum": [
                 "en-us",
                 "fr-fr"
+            ]
+        },
+        {
+            "name": "postInstallationScript",
+            "description": "Post-Installation Script",
+            "default": "",
+            "mandatory": false,
+            "type": "text",
+            "enum": []
+        },
+        {
+            "name": "postInstallationScriptExtension",
+            "description": "Post-Installation Script File Extension",
+            "default": "ps1",
+            "mandatory": true,
+            "type": "enum",
+            "enum": [
+                "ps1",
+                "cmd"
             ]
         }
     ]
@@ -229,7 +256,9 @@ Avec les paramètres suivants :
 - La clé doit contenir le nom (`name`{.action}) de la question.
 - La valeur doit contenir la réponse à la question, dans le format qui correspond au `type`{.action} requis.
 
-Exemple d'un payload pour installer Debian 12 (Bookworm) avec une authentification par clé SSH :
+#### Exemple d'un payload pour installer Linux
+
+Ce payload permet d'installer Debian 12 (Bookworm) avec une clé SSH publique et un script bash de post-installation.
 
 ```json
 {
@@ -241,12 +270,38 @@ Exemple d'un payload pour installer Debian 12 (Bookworm) avec une authentificati
     {
       "key": "sshKey",
       "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+    },
+    {
+      "key": "postInstallationScript",
+      "value": "IyEvYmluL2Jhc2gKZWNobyAiY291Y291IHBvc3RJbnN0YWxsYXRpb25TY3JpcHQiID4gL29wdC9jb3Vjb3UKY2F0IC9ldGMvbWFjaGluZS1pZCAgPj4gL29wdC9jb3Vjb3UKZGF0ZSAiKyVZLSVtLSVkICVIOiVNOiVTIiAtLXV0YyA+PiAvb3B0L2NvdWNvdQo="
     }
   ]
 }
 ```
 
-Exemple d'un payload pour installer Windows Server 2022 Standard (Core) en français :
+Même si le script de post-installation peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
+
+```bash
+cat my-script.sh | base64 -w0
+```
+
+Voici le script bash de post-installation en clair avec l'exemple ci-dessus :
+
+```bash
+#!/bin/bash
+echo "coucou postInstallationScript" > /opt/coucou
+cat /etc/machine-id  >> /opt/coucou
+date "+%Y-%m-%d %H:%M:%S" --utc >> /opt/coucou
+```
+
+> [!primary]
+>
+> Pour les OS UNIX/Linux, vous pouvez fournir des scripts dans le language de programmation de votre choix (sous réserve que l'environnement d'exécution soit installé sur l'OS cible), à condition de mettre le shebang approprié.
+>
+
+#### Exemple d'un payload pour installer Windows
+
+Ce payload permet d'installer Windows Server 2022 Standard (Core) en français avec un script PowerShell de post-installation.
 
 ```json
 {
@@ -258,12 +313,47 @@ Exemple d'un payload pour installer Windows Server 2022 Standard (Core) en fran�
     {
       "key": "language",
       "value": "fr-fr"
+    },
+    {
+      "key": "postInstallationScript",
+      "value": "ImNvdWNvdSBwb3N0SW5zdGFsbGF0aW9uU2NyaXB0UG93ZXJTaGVsbCIgfCBPdXQtRmlsZSAtRmlsZVBhdGggImM6XG92aHVwZFxzY3JpcHRcY291Y291LnR4dCIKKEdldC1JdGVtUHJvcGVydHkgLUxpdGVyYWxQYXRoICJSZWdpc3RyeTo6SEtMTVxTT0ZUV0FSRVxNaWNyb3NvZnRcQ3J5cHRvZ3JhcGh5IiAtTmFtZSAiTWFjaGluZUd1aWQiKS5NYWNoaW5lR3VpZCB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCihHZXQtRGF0ZSkuVG9Vbml2ZXJzYWxUaW1lKCkuVG9TdHJpbmcoInl5eXktTU0tZGQgSEg6bW06c3MiKSB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCg=="
     }
   ]
 }
 ```
 
-Exemple de retour :
+Même si le script de post-installation peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande Powershell suivante :
+
+```ps1
+[System.Convert]::ToBase64String((Get-Content -Path .\my-script.ps1 -Encoding Byte))
+```
+
+Voici le script PowerShell de post-installation en clair avec l'exemple ci-dessus :
+
+```ps1
+"coucou postInstallationScriptPowerShell" | Out-File -FilePath "c:\ovhupd\script\coucou.txt"
+(Get-ItemProperty -LiteralPath "Registry::HKLM\SOFTWARE\Microsoft\Cryptography" -Name "MachineGuid").MachineGuid | Out-File -FilePath "c:\ovhupd\script\coucou.txt" -Append
+(Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss") | Out-File -FilePath "c:\ovhupd\script\coucou.txt" -Append
+```
+
+Comme vous pouvez le constater, le script PowerShell pour Windows est similaire à l'exemple ci-dessus de script bash pour Linux.
+
+> [!primary]
+>
+> Pour les OS Windows, vous pouvez fournir des scripts PowerShell ou batch. Si vous souhaitez fournir un script batch, vous devez le préciser en spécifiant la valeur `cmd` à la clé `postInstallationScriptExtension` dans le payload `userMetadata`.
+>
+
+Lors de l'exécution du script de post-installation Windows, les fichiers suivants persistent :
+
+- Le script lui-même : `c:\ovhupd\script\custrun.ps1` (ou `c:\ovhupd\script\custrun.cmd` si script batch).
+- Le fichier de logs du script: `c:\ovhupd\script\customerscriptlog.txt`.
+
+> [!warning]
+>
+> Le script Windows de post-installation est exécuté avec le compte local `Administrator`. Vous pouvez terminer votre script de post-installation avec la commande `shutdown /l` afin de fermer la session Windows, bien que le compte local `Administrator` soit verrouillé et ne soit pas accessible à distance (via une connexion RDP).
+>
+
+#### Exemple de retour
 
 ```json
 {
@@ -312,4 +402,4 @@ Sinon vous pouvez aussi avoir un état détaillé de chaque étape de l'installa
 
 [Gestion du RAID matériel](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

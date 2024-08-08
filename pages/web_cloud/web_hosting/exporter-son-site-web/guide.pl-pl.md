@@ -34,7 +34,7 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 
 Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [panelu klienta OVHcloud](/links/manager){.external} w sekcji „Web” i kliknij `Hostingi`{.action} . Wybierz odpowiedni hosting i przejdź do karty `FTP - SSH`{.action}. 
 
-![export-website](images/tab-pro.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [„Logowanie do przestrzeni dyskowej hostingu WWW”](/pages/web_cloud/web_hosting/ftp_connection){.external}. W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku[„Zmiana hasła do konta FTP”](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
@@ -50,7 +50,7 @@ Po zalogowaniu się do przestrzeni dyskowej pobierz pliki Twojej witryny. **Zale
 
 Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, przejdź do karty `MultiSite`{.action} w panelu klienta OVHcloud. W tabeli, która się wyświetla dla wybranej domeny znajdź `Katalog główny`{.action}.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Etap 2: utworzenie i pobranie kopii bazy danych (opcjonalnie)
 
@@ -71,7 +71,7 @@ Jeśli chcesz pobrać historię logów Twojej witryny, możesz to zrobić z pozi
 
 Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij zakładkę `Statystyki i logi`{.action}. Następnie kliknij link pod napisem `Zobacz logi`{.action}:
 
-![export-website](images/view-logs.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 
 Pojawi się okno z różnymi typami dostępnych logów. Są one podzielone według miesięcy:
 
@@ -85,11 +85,11 @@ Pojawi się okno z różnymi typami dostępnych logów. Są one podzielone wedł
 | ssh   	| te logi przedstawiają różne połączenia zrealizowane za pomocą protokołu SSH.                                                                                                                      	|
 | cron  	| wynik realizacji zaplanowanych przez Ciebie zadań.                                                                                                                                                	|
 
-![export-website](images/raw-logs-general.png){.thumbnail}
+![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
 
 Po wybraniu logów danego typu i z konkretnego miesiąca, są one prezentowane dzień po dniu:
 
-![export-website](images/raw-logs.png){.thumbnail}
+![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
 
 ## Sprawdź również
 

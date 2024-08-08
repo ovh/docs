@@ -1,7 +1,7 @@
 ---
-title: 'Configurar la red en Proxmox VE en las gamas High Grade & SCALE'
-excerpt: 'Cómo configurar la red en Proxmox VE en las gamas High Grade & SCALE'
-updated: 2023-05-11
+title: 'Configurar la red en Proxmox VE'
+excerpt: 'Cómo configurar la red en Proxmox VE'
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -15,7 +15,12 @@ updated: 2023-05-11
 
 ## Objetivo
 
-En las gamas High Grade & SCALE, no es posible el funcionamiento de las Additional IP en modo bridged (a través de MAC Virtuales). Por lo tanto, es necesario configurar las Additional IP en modo enrutado o a través del vRack.
+En las gamas High Grade & SCALE, no es posible el funcionamiento de las Additional IP en modo bridged (a través de MAC Virtuales). Lo mismo ocurre con los nuevos servidores de última generación que se entregan con las CPU AMD Epyc 4K y 8K. Por lo tanto, es necesario configurar las Additional IP en modo enrutado o a través del vRack.
+
+> [!primary]
+>
+> A finales de 2024, esta funcionalidad se entregará para todas las gamas High Grade, SCALE y ADVANCE.
+>
 
 **Esta guía explica cómo configurar la red en Proxmox VE.**
 

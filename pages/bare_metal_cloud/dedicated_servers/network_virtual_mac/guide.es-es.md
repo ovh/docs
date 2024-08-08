@@ -1,7 +1,7 @@
 ---
 title: 'Asignar una MAC virtual a una Additional IP'
 excerpt: 'Cómo crear una dirección MAC virtual y asociarle una Additional IP'
-updated: 2022-12-20
+updated: 2024-08-05
 ---
 
 > [!primary]
@@ -22,9 +22,10 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 - Su servidor debe soportar las MAC virtuales. Para ello, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 
 > [!warning]
-> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
+> Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
 >
-> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
+> Esta funcionalidad pronto estará disponible para todos los servidores de las gamas High Grade, Scale y Advance a partir de diciembre de 2024.
 
 > [!primary]
 > Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](/pages/manage_and_operate/api/first-steps).

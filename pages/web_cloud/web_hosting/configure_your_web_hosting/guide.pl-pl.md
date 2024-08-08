@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW : środowisko, wersja PHP, .ovhconfig"
 excerpt: "Dowiedz się, jak zmienić środowisko uruchomieniowe, wersję PHP, zaporę aplikacyjną, silnik, tryb i .ovhconfig na hostingu WWW"
-updated: 2024-03-12
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -11,6 +11,8 @@ updated: 2024-03-12
 ## Wprowadzenie
 
 Oferty hostingu [OVHcloud](/links/web/hosting){.external} umożliwiają hostowanie wybranej strony WWW, o ile jest ona kompatybilna z [konfiguracją infrastruktury współdzielonej](https://webhosting-infos.hosting.ovh.net){.external}.
+
+Modyfikacja pliku **php.ini** nie jest dostępna w ofercie hostingu. Wynika to z faktu, że konfiguracja PHP jest globalna dla całej infrastruktury współdzielonej.
 Na serwerach współdzielonych możesz zmienić następujące parametry hostingu:
 
 - [środowisko uruchomieniowe](#runtime-environment)
@@ -120,7 +122,7 @@ W razie potrzeby sprawdź wersję PHP aktualnie używaną przez Twój hosting na
 
 - **W Panelu klienta OVHcloud**. Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdź wersję poniżej *Ogólna wersja PHP*. 
 
-![phpversion](images/change-php-version-step1.png){.thumbnail}
+![phpversion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/change-php-version-step1.png){.thumbnail}
 
 > [!primary]
 > Jeśli pojawiło się niebieskie kółko aktualizacji, odczekaj kilka minut, aż aktualizacja wersji się zakończy.
@@ -194,7 +196,7 @@ Teraz już znasz różne modyfikowalne ustawienia Twojego hostingu WWW OVHcloud,
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. Następnie przejdź do zakładki `Informacje ogólne`{.action}. Z prawej strony wzmianki `Ogólna wersja PHP`{.action} znajdującej się prawie na środku strony, kliknij przycisk `...`{.action}, a następnie `Zmień konfigurację`{.action}.
 
-![HostingConfiguration](images/modify-hosting-configuration.png){.thumbnail}
+![HostingConfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
 
 > [!primary]
 >
@@ -221,7 +223,7 @@ W oknie, które się pojawi, masz do wyboru dwie opcje. Wybierz opcję odpowiada
 
 Kiedy wszystko jest gotowe, kliknij `Zatwierdź`{.action}, aby zastosować modyfikację. Odczekaj kilka chwil, aż zmiany staną się widoczne.
 
-![HostingConfiguration](images/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
+![HostingConfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 
 ### 3 - Metoda 2: zmiana konfiguracji hostingu WWW z poziomu pliku ".ovhconfig" <a name="setting-ovhconfig"></a>
 
@@ -232,13 +234,13 @@ W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} 
 
 Jeśli chodzi o hasło użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku OVH ["Zmiana hasła do konta FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
-![ovhconfig](images/tab-perso.png){.thumbnail}
+![ovhconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 
 #### 3.2 - Odzyskaj lub utwórz plik ".ovhconfig"
 
 Po zalogowaniu się do [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection) możesz wyświetlić wszystkie aktualnie hostowane na niej pliki. Pozostań w katalogu głównym Twojego hostingu (oznaczonym "/"). Powinieneś w nim odnaleźć plik ".ovhconfig".
 
-![ovhconfig](images/ovhconfig-file.png){.thumbnail}
+![ovhconfig](/pages/assets/screens/other/web-tools/net2ftp/ovhconfig-file.png){.thumbnail}
 
 Istnieją dwie możliwości:
 
@@ -357,7 +359,7 @@ Zapoznaj się z naszym przewodnikiem "[Konfiguracja MultiSite na Twoim hostingu]
 > **Nie można określić drugiego [środowisko uruchomieniowe](#runtime-environment), drugiego [tryb wykonywania](#runtime-mod) i/lub drugiego [framework PHP](#php-runtime)** na tym samym hostingu. Uwzględnione zostaną tylko dane podane w pliku ".ovhconfig" znajdującym się w katalogu głównym Twojej [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
-![ovhconfig](images/root-folders.png){.thumbnail}
+![ovhconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ## Sprawdź również
 

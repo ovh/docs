@@ -129,7 +129,7 @@ Este estado se produce cuando se han enviado mensajes considerados de spam desde
 
 Por lo general, el bloqueo se acompaña por el envío de un email titulado **"Abuso con su alojamiento dominio.tld"** generado automáticamente por nuestros robots de seguridad:
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Existen tres posibles situaciones en relación con esta situación:
 

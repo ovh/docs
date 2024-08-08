@@ -1,5 +1,5 @@
 ---
-title: DMARC-Eintrag für Ihre Domain konfigurieren
+title: E-Mail-Sicherheit durch DMARC-Eintrag verbessern
 excerpt: Erfahren Sie hier, wie DMARC funktioniert und für Ihren E-Mail-Dienst eingerichtet wird
 updated: 2023-12-13
 ---
@@ -184,4 +184,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

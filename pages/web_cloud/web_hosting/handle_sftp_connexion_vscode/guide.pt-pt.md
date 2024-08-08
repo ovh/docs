@@ -42,7 +42,7 @@ Se dispõe de um alojamento web OVHcloud, pode aceder a um espaço de armazename
 
 Depois de iniciar o Visual Studio Code, aceda ao menu horizontal na parte superior da interface e clique em `View`{.action} e `Extensions`{.action}.
 
-![hosting](images/view_extensions.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/view_extensions.png){.thumbnail}
 
 Para executar a mesma ação com a combinação de teclas de atalho do teclado, selecione:
 
@@ -51,7 +51,7 @@ Para executar a mesma ação com a combinação de teclas de atalho do teclado, 
 
 No canto superior esquerdo da interface, introduza o nome da extensão "SFTP/FTP sync" de *Natizyskunk* e clique em `Install`{.action}.
 
-![hosting](images/extensions.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/extensions.png){.thumbnail}
 
 Também é possível instalar [a extensão "SFTP/FTP sync"](https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp#sftp-sync-extension-for-vs-code) a partir da marketplace do Visual Studio.
   
@@ -68,19 +68,19 @@ Para executar a mesma ação com a combinação de teclas de atalho do teclado, 
 
 Introduza o seguinte comando: `SFTP: Config`.
 
-![hosting](images/SFTP_config.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/SFTP_config.png){.thumbnail}
 
 Através deste comando, o Visual Studio Code irá criar o ficheiro de configuração "sftp.json" na raiz da pasta local anteriormente criada. No entanto, visto que o Visual Studio Code ainda não sabe onde o seu projeto se encontra localmente, deverá aparecer a seguinte mensagem:
 
-![hosting](images/SFTP_folder.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/SFTP_folder.png){.thumbnail}
 
 Clique em `Open Folder`{.action}, dirija-se a um local da pasta local à sua escolha e clique em `Select Folder`{.action} para confirmar.
 
-![hosting](images/select_folder.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/select_folder.png){.thumbnail}
 
 No Visual Studio Code, introduza novamente o comando `SFTP: Config`. Um arquivo de configuração chamado "sftp.json" aparece no Visual Studio Code.
 
-![hosting](images/sftp_json_default.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/sftp_json_default.png){.thumbnail}
 
 Este ficheiro está presente na pasta .vscode, que por sua vez está posicionado na raiz do seu projeto local.
 
@@ -94,7 +94,7 @@ ficheiro "sftp.json", insira os valores para as seguintes entradas:
 
 Localize-o em ambas as localizações realçadas a laranja.
 
-![hosting](images/hosting_name.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
 
 > [!primary]
 >
@@ -105,7 +105,7 @@ Localize-o em ambas as localizações realçadas a laranja.
 
 Ainda no separador `FTP-SSH`{.action}, o nome do host (`host`) é visível sob a menção `Servidor FTP e SFTP`{.action}.
 
-![hosting](images/hostname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
 
 #### username
 
@@ -151,11 +151,11 @@ Depois de configurar o ficheiro "" sftp.json, transfira o conteúdo do seu proje
 
 Visual Studio Code irá pedir-lhe que selecione a pasta que deseja descarregar para o seu alojamento web. Introduza o valor `name` previamente definido no ficheiro "sftp.json" .
 
-![hosting](images/download_project.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/download_project.png){.thumbnail}
 
 Se for solicitado, introduza a palavra-passe associada ao utilizador indicado no ficheiro "sftp.json" e, em seguida, clique em `enter`. Após o download, visualize o conjunto das pastas e ficheiros do seu projeto no explorador de ficheiros situado na coluna à esquerda da interface Visual Studio Code.
 
-![hosting](images/explorer.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/explorer.png){.thumbnail}
 
 > [!primary]
 >
@@ -172,7 +172,7 @@ Para desativar esta função, mantendo-a no ficheiro "sftp.json", substitua o va
 
 Até agora, só mencionámos os comandos: `SFTP: Config` e `SFTP: Download Project`. Existem outros comandos que pode consultar por autocompletação introduzindo `SFTP:` no editor de comandos.
 
-![hosting](images/list_commands.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/list_commands.png){.thumbnail}
 
 Encontre a lista dos comandos [aqui](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
 

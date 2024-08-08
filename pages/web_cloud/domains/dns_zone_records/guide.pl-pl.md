@@ -1,7 +1,7 @@
 ---
 title: "Wszystko o rekordach DNS"
 excerpt: "Poznaj różne typy rekordów DNS dostępnych w strefie DNS OVHcloud"
-updated: 2024-06-17
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -171,7 +171,14 @@ Select the record you want by clicking each of the following tabs.
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Używane, gdy wpisujemy odcisk palca certyfikatu SSL/TLS.
+>> Używane, gdy wpisujemy odcisk palca certyfikatu SSL/TLS. Umożliwi to zachowanie *hash* certyfikatu bezpośrednio w strefie DNS Twojej domeny poprzez rekord DNS.
+>>
+>> Rekord ten jest objęty protokołem **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
+>>
+>> Protokół DANYCH pozwala klientowi (przeglądarce internetowej, klientowi poczty elektronicznej, klientowi FTP, klientowi SSH, etc.) sprawdzić rekord TLSA. W ten sposób zyskuje pewność, że certyfikat SSL/TLS używany dla danej domeny jest certyfikatem potwierdzającym tą samą nazwę domeny.
+>>
+>> W razie potrzeby sprawdź więcej szczegółów na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>>
 
 #### Specjalne zastosowania: użycie rekordów CNAME <a name="cannamesecase"></a>
 

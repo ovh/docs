@@ -40,7 +40,7 @@ I file **.htaccess** possono essere creati e modificati con editor di testo come
 >
 > Se non utilizzi un CMS, OVHcloud mette a tua disposizione un tutorial sulla [protezione di una directory o dell'interfaccia di gestione del tuo sito Web tramite file .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> Per qualsiasi domanda relativa alla creazione, all'utilizzo o alla programmazione del tuo sito Web, contatta la nostra [community di utenti](https://community.ovh.com/en/) o i nostri [partner OVHcloud](/links/partner). I team del supporto OVHcloud non saranno in grado di fornirti assistenza su questi argomenti.
+> Per qualsiasi domanda relativa alla creazione, all'utilizzo o alla programmazione del tuo sito Web, contatta la nostra [community di utenti](/links/community) o i nostri [partner OVHcloud](/links/partner). I team del supporto OVHcloud non saranno in grado di fornirti assistenza su questi argomenti.
 >
 
 ## FAQ

@@ -100,11 +100,11 @@ Para ter a certeza de que os seus serviços (alojamento partilhado **e** base de
 
 Para conhecer o cluster e filer onde se encontra o alojamento partilhado, aceda ao seu [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Information gerais`{.action}, localize o `datacenter` do seu alojamento partilhado bem como o `filer` onde está.
 
-![Recuperar Filer](images/find-filer.png){.thumbnail}
+![Recuperar Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
 
 A seguir, clique no separador `Multisites`{.action} para obter o número do cluster onde está o seu alojamento partilhado.
 
-![Recuperar o cluster](images/find-cluster.png){.thumbnail}
+![Recuperar o cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >
@@ -159,7 +159,7 @@ Se utiliza uma base de dados numa oferta **Web Cloud Databases**, consulte o nos
 
 Se a ligação for bem-sucedida, poderá aceder à seguinte interface:
 
-![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
+![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -242,7 +242,7 @@ Com efeito, quanto menos o número de pedidos for elevado, menos os recursos atr
 >
 > Para isso, carregue na tecla `F12` quando estiver no seu browser Firefox e selecione o separador `rede`. Carregue a sua página web com os teclados `Ctrl + Maj + R` para que a ferramenta lhe mostrar os pedidos executados para carregar a sua página. Identifique os elementos mais longos a carregar para depois os otimizar.
 >
->![Análise de rede Firefox](images/F12.png){.thumbnail}
+>![Análise de rede Firefox](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
 >
 
 Para diminuir o fluxo de pedidos a cada um dos carregamentos das suas páginas, pode também implementar um Content Delivery Network (CDN). que permitirá colocar em cache o conteúdo estático do seu website. O seu alojamento web será menos solicitado e disporá de mais recursos para tratar o resto dos pedidos que não podem ser colocados em cache.

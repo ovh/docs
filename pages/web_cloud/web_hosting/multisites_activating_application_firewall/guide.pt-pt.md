@@ -37,7 +37,7 @@ Ligue-se à sua [Área de Cliente OVHcloud](/links/manager){.external} e selecio
 
 Clique no separador `Informações gerais`{.action}. A `versão global de PHP` é apresentada na zona **Configuração**. Clique no botão `...`{.action} e selecione `Alterar configuração`{.action}. Na nova janela, selecione o elemento `Alterar configuração atual`{.action} e clique no botão `Seguinte`{.action}.
 
-![managephpconfig](images/application-firewall-step-2.png){.thumbnail}
+![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 
 Na nova janela, certifique-se de que a **Aplicação Firewall** está definida em `Ativado`{.action}. Para confirmar a configuração, clique no botão `Confirmar`{.action}.
 
@@ -45,17 +45,17 @@ Na nova janela, certifique-se de que a **Aplicação Firewall** está definida e
 
 Clique no separador `Multisite`{.action} da sua oferta de alojamento. Clique no botão `...`{.action} à direita do nome de domínio em causa e selecione a opção `Alterar o domínio`{.action}.
 
-![managemultisite](images/modify-a-domain.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
 
 Na janela de configuração, selecione a caixa `Ativar a firewall`{.action}. Também pode incluir o subdomínio `www` nesta configuração, selecionando a opção no topo.
 
 Clique em `Seguinte`{.action} e, a seguir, em `Confirmar`{.action} para modificar os parâmetros multisite.
 
-![modifydomain](images/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+![modifydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 
 ### Verificar o estado da tarefa de ativação
 
-![gestão em curso](images/firewall-planned.png){.thumbnail}
+![gestão em curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
 
 As tarefas de atualização da sua configuração multi-site serão listadas no separador `Operações em curso`{.action} (o estado inicial é "Planificado"). A firewall estará ativa assim que a sua tarefa de atualização deixar de aparecer na lista.
 
@@ -63,7 +63,7 @@ As tarefas de atualização da sua configuração multi-site serão listadas no 
 
 O separador `Multisite`{.action} da sua oferta de alojamento fornece informações sobre os domínios para os quais a opção de firewall está ativa.
 
-![gerageenabled](images/firewall-enabled.png){.thumbnail}
+![gerageenabled](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
 
 A tabela apresentada contém todos os domínios adicionados ao alojamento web. Na coluna "Firewall", apresenta-se o estado de ativação de cada nome de domínio.
 

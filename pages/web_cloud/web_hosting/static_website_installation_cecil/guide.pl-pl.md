@@ -71,7 +71,7 @@ Wpisz wymagane elementy:
 - adres strony internetowej (np. `https://mywebsite.ovh`)
 - opis strony
 
-![Instalacja Cecil](images/static_website_installation_cecil01.png){.thumbnail}
+![Instalacja Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil01.png){.thumbnail}
 
 Po wprowadzeniu tych elementów uruchom stronę, wpisując następujące polecenie:
 
@@ -81,11 +81,11 @@ php cecil.phar build
 
 Wyświetlając zawartość katalogu, zobaczysz obecność katalogu `_site`. Katalog ten będzie zawierał wszystkie pliki HTML i assets:
 
-![Instalacja Cecil](images/static_website_installation_cecil02.png){.thumbnail}
+![Instalacja Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil02.png){.thumbnail}
 
 Teraz możesz zobaczyć wynik wyświetlając nazwę Twojej domeny:
 
-![Instalacja Cecil](images/static_website_installation_cecil03.png){.thumbnail}
+![Instalacja Cecil](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil03.png){.thumbnail}
 
 #### Konfiguracja wskazania domeny lub subdomeny
 
@@ -103,7 +103,7 @@ nano config.yml
 
 Zastąp Twoje domyślne informacje i zapisz plik.
 
-![Plik konfiguracji YAML](images/static_website_installation_cecil04.png){.thumbnail}
+![Plik konfiguracji YAML](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil04.png){.thumbnail}
 
 ### Utwórz nową stronę
 
@@ -129,7 +129,7 @@ Następnie plik `mypage.md` jest tworzony w katalogu `/pages`.
 
 Zastąp `mypage` nazwą swojej strony.
 
-![Instalacja Cecil](images/static_website_installation_cecil05.png){.thumbnail}
+![Instalacja Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil05.png){.thumbnail}
 
 #### Wygeneruj pliki statyczne
 
@@ -141,11 +141,11 @@ php cecil.phar build
 
 Twój plik znajduje się w katalogu `_site/mypage/`:
 
-![Instalacja Cecil](images/static_website_installation_cecil06.png){.thumbnail}
+![Instalacja Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil06.png){.thumbnail}
 
 Możesz wyświetlić go na Twoim serwerze, wpisując adres URL strony, a następnie `/mypage/`:
 
-![Wynik przeglądarki](images/static_website_installation_cecil07.png){.thumbnail}
+![Wynik przeglądarki](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil07.png){.thumbnail}
 
 ### Personalizacja plików strony
 
@@ -162,11 +162,11 @@ Edytuj plik `mypage.md` znajdujący się w katalogu `pages`, wpisując następuj
 
 Zastąp `mypage` nazwą swojej strony.
 
-![Edycja pliku w GNU nano](images/static_website_installation_cecil08.png){.thumbnail}
+![Edycja pliku w GNU nano](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil08.png){.thumbnail}
 
 Dodaj kilka linii zgodnie z składnią _Markdown_:
 
-![Dodaj zawartość do pliku](images/static_website_installation_cecil09.png){.thumbnail}
+![Dodaj zawartość do pliku](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil09.png){.thumbnail}
 
 Usuń pliki w cache za pomocą polecenia:
 
@@ -182,17 +182,17 @@ php cecil.phar build
 
 Następnie wróć na stronę, aby zobaczyć wynik:
 
-![Strona zaktualizowana](images/static_website_installation_cecil10.png){.thumbnail}
+![Strona zaktualizowana](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil10.png){.thumbnail}
 
 #### Zmiana dla Twojego stanowiska pracy
 
 Jeśli wolisz używać Twojego zwykłego edytora kodu, zaloguj się z klientem FTP do Twojego serwera, aby pobrać pliki na komputerze:
 
-![Do pobrania z FileZilla](images/cecil-folder.png){.thumbnail}
+![Do pobrania z FileZilla](/pages/assets/screens/other/web-tools/filezilla/cecil-folder.png){.thumbnail}
 
 Teraz możesz edytować pliki I.D.E. w swoim repozytorium:
 
-![Wyświetlanie w Visual Studio Code](images/static_website_installation_cecil12.png){.thumbnail}
+![Wyświetlanie w Visual Studio Code](/pages/assets/screens/other/web-tools/vscode/static_website_installation_cecil12.png){.thumbnail}
 
 Wystarczy przesłać na serwer pliki zmienione lub nowe pliki i *rebuilder*, aby móc udostępniać swoje strony online.
 

@@ -70,7 +70,7 @@ Para conectarse al espacio de almacenamiento, necesitará lo siguiente:
 
 Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la sección **Web** y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
 
-![Instalación de un sitio web](images/tab-pro.png){.thumbnail}
+![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection). Si no recuerda la contraseña, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -94,7 +94,7 @@ Es posible que en el espacio de almacenamiento ya haya un archivo denominado ind
 >
 > Un archivo "index.php" siempre estará por encima de un archivo "index.html". Por lo tanto, cuando ambos están presentes, sólo se llamará "index.php".
 
-![Instalación de un sitio web](images/root-folders.png){.thumbnail}
+![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 3. Conectar el sitio web a una base de datos
 
@@ -119,7 +119,7 @@ Si quiere crear una nueva base de datos en OVHcloud, conéctese al [área de cli
 
 A continuación, haga clic en `Crear una base de datos`{.action} o, si este botón no aparece, en `Acciones`{.action} > `Crear una base de datos`{.action}. Introduzca la información solicitada.
 
-![Instalación de un sitio web](images/tab.png){.thumbnail}
+![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 #### 3.3. Importar una base de datos existente 
 

@@ -24,7 +24,7 @@ To recover access to a server that you log in to with an SSH key, refer to our g
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 > [!primary]
-> This guide is not applicable for **Windows** server installations. Please refer to our guides on [How to change the admin password on a Windows dedicated server](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows) and [How to change the admin password on a Windows VPS](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password).
+> This guide is not applicable for **Windows** server installations. Please refer to our guides on [How to change the admin password on a Windows dedicated server](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) and [How to change the admin password on a Windows VPS](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password).
 >
 
 ## Instructions

@@ -14,7 +14,7 @@ Diese Anleitung bietet Ihnen grundlegendes Wissen, um die Verfügbarkeit Ihrer D
 
 Die nachstehenden Empfehlungen sind nach abnehmender Wichtigkeit und zunehmendem technischen Schwierigkeitsgrad angeordnet. Die zuerst beschriebenen Schritte sind also am wichtigsten. Die Sicherheit Ihrer Website kann danach bemessen werden, welches Element am wenigsten geschützt ist. Wir empfehlen deshalb, möglichst alle Maßnahmen durchzuführen.
 
-Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operationen durchzuführen, wenden Sie sich an die [OVHcloud Community](https://community.ovh.com/en/) oder [unsere Partner](/links/partner).
+Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operationen durchzuführen, wenden Sie sich an die [OVHcloud Community](/links/community) oder [unsere Partner](/links/partner).
 
 **Diese Anleitung erklärt, wie Sie Ihre Website schützen.**
 
@@ -64,7 +64,7 @@ Wenn Ihre Zugangsdaten verloren gehen und/oder die Haupt-E-Mail-Adresse Ihres OV
 Speichern Sie zunächst die Daten Ihrer Datenbank (FTP **UND** Datenbank-Dateien), indem Sie die Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/exporter-son-site-web) befolgen. Importieren Sie diese auf Ihrem lokalen Gerät oder einem externen Datenträger, zum Beispiel auf einem NAS oder einem USB Laufwerk.
 
 Webseitensoftware (CMS) bietet die Möglichkeit, automatische Backup-Plugins zu installieren.<br>
-Konsultieren Sie die offiziellen Foren Ihres bevorzugten CMS oder kontaktieren Sie die [OVHcloud Community](https://community.ovh.com/en/) zu diesem Thema.
+Konsultieren Sie die offiziellen Foren Ihres bevorzugten CMS oder kontaktieren Sie die [OVHcloud Community](/links/community) zu diesem Thema.
 
 ### Schritt 4: Betrügerische E-Mails erkennen
 
@@ -131,4 +131,4 @@ Die Datei “.htaccess“ ist eine Apache-Konfigurationsdatei (HTTP), die vom We
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Für den Austausch mit unserer User Community besuchen Sie <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

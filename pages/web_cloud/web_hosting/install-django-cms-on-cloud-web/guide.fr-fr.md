@@ -29,7 +29,7 @@ Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connec
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d’exécution Python est bien activé. Si tel est le cas, poursuivez vers l’étape 2 : [« Associez Python à un multisite »](./#etape-2-associez-python-a-un-multisite).
 
-![django-cloud-web](images/tab-python3.png){.thumbnail}
+![django-cloud-web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-python3.png){.thumbnail}
 
 Si ce n’est pas le cas, ajoutez-en un nouveau (si votre offre vous le permet) ou modifiez le moteur d’exécution existant.
 
@@ -48,13 +48,13 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées avec le
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Si vous souhaitez obtenir plus d’informations sur la gestion des moteurs d’exécution, reportez-vous à notre guide [« Gérer les moteurs d’exécution de Cloud Web »](/pages/web_cloud/web_hosting/manage-runtime).
 
-![django-cloud-web](images/modify-a-runtime-software-application-python3.png){.thumbnail}
+![django-cloud-web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Étape 2 : associez Python à un multisite
 
 Maintenant que Python est activé en tant que moteur d’exécution, vous devez l’associer à l’un de vos multisites. Pour cela, positionnez-vous sur l’onglet `Multisite`{.action}. Le tableau qui s’affiche contient tous les noms de domaine qui ont été ajoutés en tant que multisite.
 
-![django-cloud-web](images/tab-python3-full-disabled.png){.thumbnail}
+![django-cloud-web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/tab-python3-full-disabled.png){.thumbnail}
 
 Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifiez alors que le moteur d’exécution Python est bien lié aux domaines concernés et que le dossier racine est correct ; aidez-vous des informations ci-dessous si nécessaire. Si tel est le cas, poursuivez vers l’étape 3 : [« Connectez-vous à votre Cloud Web via SSH »](./#etape-3-se-connecter-a-votre-cloud-web-via-ssh).
 
@@ -78,7 +78,7 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées selon v
 
 En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS nécessite jusqu’à 24 heures avant d’être pleinement effective. Si vous désirez obtenir plus d’informations sur la gestion des multisites, reportez-vous à notre guide [« Partager son hébergement entre plusieurs sites »](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-![django-cloud-web](images/add-a-domain-or-sub-domain-step-2-django.png){.thumbnail}
+![django-cloud-web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-a-domain-or-sub-domain-step-2-django.png){.thumbnail}
 
 ### Étape 3 : connectez-vous à votre Cloud Web via SSH
 
@@ -91,7 +91,7 @@ Récupérez d’abord les informations vous permettant de vous connecter. Pour c
 
 Si vous ne connaissez plus le mot de passe de l’utilisateur SSH, cliquez sur le bouton `...`{.action} à droite de l’utilisateur concerné dans le tableau, puis sur `Changer le mot de passe`{.action}.
 
-![django-cloud-web](images/change-password.png){.thumbnail}
+![django-cloud-web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/change-password.png){.thumbnail}
 
 À présent, pour vous connecter en SSH, vous devez utiliser un terminal. Cet outil est installé par défaut sur macOS ou Linux. Un environnement Windows nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité « OpenSSH ». Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
 
@@ -283,11 +283,11 @@ Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVHclou
 
 Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
     
-![django-cloud-web](images/restart-python3.png){.thumbnail}
+![django-cloud-web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/restart-python3.png){.thumbnail}
     
 Félicitations, votre site utilisant Django CMS est maintenant disponible ! Un compte administrateur a été créé par défaut, avec pour login/password « admin »/« admin ». Pensez à changer ce mot de passe.
     
-![django-cloud-web](images/installation-successfull.png){.thumbnail}
+![django-cloud-web](/pages/assets/screens/other/cms/django/installation-successfull.png){.thumbnail}
     
 ### Étape 8 : utilisez HTTPS
 

@@ -1,14 +1,14 @@
 ---
 title: CLI - ldp-tail, a tool to follow your logs in real-time
 excerpt: This super-powered tail will follow and format your logs with flying colors.
-updated: 2023-01-16
+updated: 2023-08-07
 ---
 
 ## Objective
 
 This guide will show you how to use the Logs Data Platform to stream your logs in real time.
 
-The Logs Data Platform allows you to connect different applications or servers to one unique endpoint and make all of them appear in one stream if needed. **ldp-tail** is able to follow one your stream in real-time with sub-second latency by using one of the exclusive feature of the platform: the WebSocket endpoint.
+The Logs Data Platform allows you to connect different applications or servers to one unique endpoint and make all of them appear in one stream if needed. **ldp-tail** is able to follow one of your streams in real-time with sub-second latency by using one of the exclusive features of the platform: the WebSocket endpoint.
 
 ## Requirements
 
@@ -20,7 +20,7 @@ The Logs Data Platform allows you to connect different applications or servers t
 
 ### Download and test ldp-tail in two minutes
 
-**ldp-tail** is derived from a internal tool used by OVHcloud engineers to follow in real time hundreds of applications and servers logs. It is written in Go and is completely open-source. So if you're curious enough, you can check the code at [https://github.com/ovh/ldp-tail](https://github.com/ovh/ldp-tail){.external}. You can also download binary releases from this website. Go to [https://github.com/ovh/ldp-tail/releases](https://github.com/ovh/ldp-tail/releases){.external} to download the release for your platform. 64 bits versions of Linux, Windows and Mac OS X are currently supported. Decompress the archive obtained and you will get the **ldp-tail** binary.
+**ldp-tail** is derived from an internal tool used by OVHcloud engineers to follow in real time hundreds of applications and servers logs. It is written in Go and is completely open-source. So if you're curious enough, you can check the code at [https://github.com/ovh/ldp-tail](https://github.com/ovh/ldp-tail){.external}. You can also download binary releases from this website. Go to [https://github.com/ovh/ldp-tail/releases](https://github.com/ovh/ldp-tail/releases){.external} to download the release for your platform. 64-bit versions of Linux, Windows and Mac OS X are currently supported. Decompress the archive obtained and you will get the **ldp-tail** binary.
 
 You can test it right away on our demo stream by using this command in a terminal.
 
@@ -77,7 +77,7 @@ In this example, the title field will be colored in red, and the body will be co
 With our demo stream, we can use this kind of filter and the **rating_num** numeric attribute to display in yellow every joke rated above 100.
 
 ```shell-session
-$ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --pattern "My Title: {{color \"red\"}} {{ ._title }} , {{noColor }} The Joke: {{if (lt (._rating_num) 100)}}{{ color \"blue\" }}{{else}}{{color \"yellow\"}} {{ .short_message }} {{ noColor }}"
+$ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --pattern "My Title: {{color \"red\"}} {{ ._title }} , {{noColor }} The Joke: {{if (lt (._rating_num) 100.0 )}}{{ color \"blue\" }} {{ .short_message}} {{else}}{{color \"yellow\"}} {{ .short_message }} {{ noColor }} {{end }}"
 ```
 
 #### The match option
@@ -94,7 +94,7 @@ You can of course combine multiple matches by issuing **ldp-tail --match <COND_1
 
 #### TOML Configuration file
 
-Here is an example of a [TOML](https://github.com/toml-lang/toml){.external} configuration file for ldp-tail
+Here is an example of a [TOML](https://github.com/toml-lang/toml){.external} configuration file for ldp-tail. You can save it into a file named **myfile.toml**.
 
 ```text
 Address = "wss://gra1.logs.ovh.com/tail/?tk=demo"
@@ -103,14 +103,15 @@ Pattern = "{{ ._title}} The Joke: {{ .short_message }}"
 [[Match]]
 Key="_rating_num"
 Operator="gt"
-Value=100
+Value=100.0
 Not=false
 
 [[Match]]
 Key="_title"
-Operator="begin"
-Value="another"
+Operator="contain"
+Value="the"
 Not=false
+
 ```
 
 If you are not familiar with TOML, here are some explanations. **Address** and **pattern** are similar to the options you have in the command line. **Match option** is a little bit different. Since you can have multiple conditions, **Match** is an array of tables where every object is a full condition with the field, the operator, the value and the negation of this condition if needed. Note that the **Value** attribute can be a string or a number. The **Not** attribute must be the boolean true or false.
@@ -151,10 +152,18 @@ To proceed, give the begin & end as uri query parameter. begin and end must be i
 Sample:
 
 ```shell-session
-$ ldp@ubuntu:~$ ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo&begin=1553601030&end=1553611040" --pattern "{{date .timestamp}}: {{ ._category }}"
+$ ldp@ubuntu:~$ ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo&begin=<BEGIN>&end=<END>" --pattern "{{date .timestamp}}: {{ ._category }}"
 ```
 
-To make the magic happens, replace begin and end values with timestamps that have been in the last few weeks.
+To make the magic happen, replace the `<BEGIN>` and `<END>` values with UNIX timestamps from the last few hours. For example, for the 5th August 2024 between 09:00:00 UTC and 11:00:00 UTC:
+
+
+```shell-session
+$ ldp@ubuntu:~$ ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo&begin=1722841200&end=1722848400" --pattern "{{date .timestamp}}: {{ ._category }}"
+```
+
+You can use the website [https://www.unixtimestamp.com/](https://www.unixtimestamp.com/){.external} to easily convert dates to unix timestamps.
+
 
 ## Go further
 

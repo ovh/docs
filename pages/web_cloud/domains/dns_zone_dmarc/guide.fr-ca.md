@@ -1,5 +1,5 @@
 ---
-title: Configurer un enregistrement DMARC sur votre nom de domaine
+title: Améliorer la sécurité des e-mails via un enregistrement DMARC
 excerpt: Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail
 updated: 2023-12-13
 ---
@@ -179,4 +179,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

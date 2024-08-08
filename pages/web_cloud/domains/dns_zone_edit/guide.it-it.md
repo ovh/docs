@@ -14,7 +14,7 @@ updated: 2024-06-17
 
 L'acronimo **DNS**, che sta per **D**omain **N**ame **S**ystem, è un insieme di elementi (server DNS, zone DNS, ecc...) che permettono di far corrispondere un nome di dominio con un indirizzo IP.
 
-Per maggiori spiegazioni, consulta le nostre guide "[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)" e "Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)".
+Per maggiori spiegazioni, consulta le nostre guide "[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)" e "[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
 **Questa guida ti mostra come modificare la zona DNS OVHcloud dallo Spazio Cliente.**
 
@@ -52,7 +52,7 @@ Per accedere alla gestione di una zona DNS OVHcloud, esegui queste operazioni:
 
 Visualizzi una tabella con tutti i record DNS associati al tuo dominio in OVHcloud. Il contenuto può essere filtrato per tipo di record o dominio.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
 
 ### Modifica la zona DNS OVHcloud del dominio
 
@@ -113,7 +113,7 @@ Questa guida descrive la procedura relativa alla configurazione guidata.
 >>
 >> Verifica che il record non esista già e non punti a un target differente. filtrando il contenuto della tabella per tipo di record o dominio. Se il record esiste già, ti consigliamo di modificarlo seguendo la procedura descritta.
 >>
->> ![dnszone](images/add-an-entry.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry.png){.thumbnail}
 >>
 >> > Quando la destinazione del record è un URL, ricordati di punteggiare quest'ultimo. In caso contrario, il dominio verrà aggiunto automaticamente alla fine del target.
 >> >
@@ -133,7 +133,7 @@ Questa guida descrive la procedura relativa alla configurazione guidata.
 >> 6. Nella tabella che appare, clicca sul pittogramma `...`{.action} a destra della voce interessata.
 >> 7. Clicca su `Modifica il record`{.action} e segui gli step.
 >>
->> ![dnszone](images/modify-record.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 >>
 > **Elimina un record DNS**
 >>
@@ -149,7 +149,7 @@ Questa guida descrive la procedura relativa alla configurazione guidata.
 >>
 >> Per eliminare più record contemporaneamente è sufficiente selezionare le caselle corrispondenti e cliccare sul pulsante `Elimina`{.action}.
 >>
->> ![dnszone](images/delete-record.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 >>
 > **Reinizializza la zona DNS**
 >>
@@ -169,7 +169,7 @@ Questa guida descrive la procedura relativa alla configurazione guidata.
 >> 5. Clicca sulla scheda `Zona DNS`{.action}.
 >> 6. Clicca sul pulsante `Ripristina la tua zona DNS`{.action} e segui gli step 2.
 >>
->> ![dnszone](images/reset-my-dns-zone.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
 >>
 >> **Step 1**
 >>
@@ -189,14 +189,14 @@ Questa guida descrive la procedura relativa alla configurazione guidata.
 >> - `Reindirizzamento`: il dominio punterà verso il server di reindirizzamento OVHcloud. In questo modo viene visualizzata una home page di OVHcloud e si evita un errore DNS.<br>
 >> - `Hosting Web OVHcloud`: il dominio punterà verso l’indirizzo IP dell’hosting Web associato al dominio <br>
 >> - `Personalizzato`: definisci il valore IPv4 ([record A](/pages/web_cloud/domains/dns_zone_records#pointer-records)) dell’hosting Web che vuoi puntare. <br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-01.png){.thumbnail}
 >>
 >> **Indirizzo del tuo server mail**
 >>
 >> - `Reindirizzamento`: il tuo dominio punterà verso i server di reindirizzamento email. Questa scelta. È particolarmente utile se non disponi di offerte email ma vuoi inoltrare le email verso uno o più indirizzi email esterni al tuo dominio.
 >> - `Server Di Posta Elettronica OVHcloud`: da definire quando si possiede un servizio di posta elettronica condiviso.
 >> - `Personalizzato`: definisci l’URL e la priorità del server di posta ([record MX](/pages/web_cloud/domains/dns_zone_records#mail-records)) che desideri puntare.<br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 >>
 
 ### Tempo di propagazione
@@ -218,7 +218,7 @@ Per ridurre il tempo di propagazione per le prossime modifiche della zona DNS, �
 
 [Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)
+[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
 [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
 

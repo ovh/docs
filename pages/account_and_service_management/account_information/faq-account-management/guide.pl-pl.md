@@ -1,7 +1,7 @@
 ---
 title: FAQ dotyczący zarządzania kontem OVHcloud
 excerpt: Najczęściej zadawane pytania dotyczące zarządzania kontem OVHcloud
-updated: 2022-11-21
+updated: 2024-07-04
 ---
 
 ## Wprowadzenie
@@ -169,6 +169,22 @@ Pracownik naszego zespołu odpowie na Twoją wiadomość w najkrótszym możliwy
 ### Wysłałem wiadomość do działu Abuse OVHcloud, ale moja usługa jest nadal zablokowana. Co mogę zrobić?
 
 W Panelu klienta OVHcloud możesz zwrócić się do Biura Obsługi Klienta o udzielenie dodatkowych informacji dotyczących przetwarzania Twojego zgłoszenia Abuse. Aby usprawnić obsługę Twojego zapytania, podaj numer zgłoszenia Abuse.
+
+### Jak usunąć moje konto OVHcloud?
+
+Zamknięcie konta klienta OVHcloud i usunięcie danych osobowych jest możliwe tylko wtedy, gdy:
+
+1. Nie masz już widocznych usług w sekcji "[Moje usługi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". W przeciwnym razie najpierw poproś o ich rozwiązanie i zaczekaj na ich usunięcie.
+2. Nie masz faktur oczekujących na płatność. W przeciwnym razie należy uregulować należność, klikając przycisk `Zapłać teraz`{.action} w akcjach masowych na stronie "[Moje faktury](https://www.ovh.com/manager/#/dedicated/billing/history)".
+3. Nie posiadasz zamówień w trakcie realizacji. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Twoje konto przedpłacone nie jest dodatnie. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Jeśli powyższe warunki są spełnione, możesz zażądać usunięcia konta OVHcloud i powiązanych z nim danych, wykonując następujące kroki:
+
+1. Zaloguj się do [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+2. Kliknij przycisk `Utwórz zgłoszenie`{.action}.
+3. Wybierz motyw `Zarządzaj kontem klienta OVHcloud`{.action}.
+4. Prosimy o sprecyzowanie opcji `Chcę zamknąć konto klienta OVHcloud`{.action} i postępowanie zgodnie z instrukcjami zawartymi w tej operacji.
 
 ## Sprawdź również
  

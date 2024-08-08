@@ -1,7 +1,7 @@
 ---
 title: 'Charger les variables d’environnement OpenStack'
 excerpt: 'Apprenez à charger vos variables d’environnement pour utiliser l’API d’OpenStack'
-updated: 2023-11-29
+updated: 2024-07-15
 ---
 
 ## Objectif
@@ -53,24 +53,6 @@ Si les CLI ont déjà été installés, vérifiez simplement le bon fonctionneme
 | 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
-
-Il est possible de stocker en dur le mot de passe de l'utilisateur Horizon. Pour cela, remplacez :
-
-```bash
-echo "Please enter your OpenStack Password: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
-```
-
-Par :
-
-```bash
-#echo "Please enter your OpenStack Password: "
-#read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD="Mot de passe de l'utilisateur Horizon"
-```
-
-Par défaut, il faudra charger cet environnement après chaque ouverture de session dans l'environnement courant. Il est possible de rendre cela permanent en ajoutant le source openrc.sh au fichier bashrc. Cela requiert de fixer le mot de passe dans le fichier.
 
 #### **Sous Windows**
 

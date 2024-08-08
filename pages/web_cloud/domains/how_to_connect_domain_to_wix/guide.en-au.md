@@ -51,7 +51,7 @@ Log in to the [OVHcloud Control Panel](/links/manager){.external} in the `Web Cl
 
 The table lists all of the DNS records for the selected domain name.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Each DNS record can be modified by clicking on the `...`{.action} button to the right of the table row concerned, then clicking on `Modify record`{.action}.
 
@@ -61,7 +61,7 @@ Follow the steps in order by browsing the following tabs:
 > **Step 1**
 >> **"A" Record**<br><br>
 >> To identify existing "A" records, click the filter menu at the top of the DNS records table and select `A`.<br>
->> ![dnszone](images/filter-a.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
 >> - Click the `...`{.action} button in the table row that corresponds to your domain name (e.g. `mydomain.ovh.`) without a subdomain, then click `Edit record`{.action}.
 >> - If a record for the subdomain "www" is present (e.g.: `www.mydomain.ovh.`), delete it so that it does not conflict with the CNAME record you enter in step 4. Click on the `...`{.action} button in the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.
@@ -71,19 +71,19 @@ Follow the steps in order by browsing the following tabs:
 > **Step 2**
 >> **AAAA record**<br><br>
 >>  To identify the existing "AAAA" records, click on the filter menu at the top of the DNS records table and select `AAAA`.<br>
->> ![dnszone](images/filter-aaaa.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - If there are "AAAA" records for the domain name (e.g. `mydomain.ovh.`) and for its subdomain "www." (e.g. `www.mydomain.ovh.`), you will need to delete them so that they do not conflict with the "A" and "CNAME" records that you will enter in step 4. Click on the `...`{.action} button in the table row corresponding to your domain name and the "www." subdomain, then click `Delete record`{.action}.<br>
 > **Step 3**
 >> **TXT record**<br><br>
 >>  To identify existing "TXT" records, click the filter menu at the top of the DNS records table and select `TXT`.<br>
->> ![dnszone](images/filter-txt.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
 >> - If "TXT" records are present for the domain name (e.g. `mydomain.ovh.`) and for its subdomain "www" (e.g. `www.mydomain.ovh.`), you must delete them so that they do not conflict with the CNAME record that you enter in step 4. Click on the `...`{.action} button in the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.<br>
 > **Step 4**
 >> **CNAME record**<br><br>
 >>  To identify existing CNAME records, click on the filter menu at the top of the DNS records table and select `CNAME`.<br>
->> ![dnszone](images/filter-cname.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
 >> - Click on the `...`{.action} button to the right of the table row corresponding to the subdomain "www" (example: `mydomain.ovh.`) then click `Edit record`{.action}.
 >> - If you do not have an existing CNAME record, click the `Add record`{.action} button in the top right-hand corner of your screen and select `CNAME`{.action}.
@@ -112,4 +112,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

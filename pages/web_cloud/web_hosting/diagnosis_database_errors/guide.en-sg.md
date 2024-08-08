@@ -26,7 +26,7 @@ Your database usage may result in anomalies on your website or error messages in
 
 ### "Error establishing a database connection"
 
-![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
+![error_establishing_a_DB_connection](/pages/assets/screens/other/browsers/errors/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Check ongoing incidents
 
@@ -93,7 +93,7 @@ In your [OVHcloud Control Panel](/links/manager), open the `Hosting plans`{.acti
 
 You have received an email notification stating that the amount of data on your database exceeds the authorised limit. Your database has therefore been switched to read-only mode. This will prevent your website from being modified.
 
-![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
+![database-overquota-notification-email](/pages/assets/screens/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
 
 There are three ways you can unblock your database in this situation.
 
@@ -144,14 +144,14 @@ To optimise your database, follow the instructions in our guide "[Configuring yo
 
 > [!warning]
 >
-> If the advice on how to optimise your database is not sufficient to unblock the access to your website, we recommend you to contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
+> If the advice on how to optimise your database is not sufficient to unblock the access to your website, we recommend you to contact our [community](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
 >
 
 ### RAM overflows
 
 The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](/links/manager) indicates that your [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) server has consumed too much resources on the OVHcloud infrastructure:
 
-![ram-exceeded](images/ram-exceeded.png){.thumbnail}
+![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
 In this situation, you can increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution) available from the `Databases`{.action} section of your [OVHcloud Control Panel](/links/manager). In the `General information`{.action} tab, click on the `...`{.action} in the `RAM` section.
 
@@ -168,7 +168,7 @@ You can also optimise your database by following the instructions of our guide "
 
 > [!primary]
 >
-> If you experience any difficulties in decreasing the use of resources on your database server, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.
+> If you experience any difficulties in decreasing the use of resources on your database server, please contact our [community of users](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.
 >
 
 ### Database import errors
@@ -185,9 +185,9 @@ First make sure that your database is empty from the `Databases`{.action} tab of
 
 You can also tick the `Empty the current database`{.action} box just before [launching the import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-your-own-backup-via-your-control-panel):
 
-![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
+![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
 
-If necessary, contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner) for more information. We will not be able to assist you in correcting this issue.
+If necessary, contact our [user community](/links/community) or [OVHcloud partners](/links/partner) for more information. We will not be able to assist you in correcting this issue.
 
 > [!success]
 >
@@ -220,7 +220,7 @@ To resolve this issue, you can use the following methods:
 
 - Increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution): go to the [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerned in the `Databases` section of your [OVHcloud Control Panel](/links/manager). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
 
-- Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.)
+- Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.)
 
 - [Optimise your database](/pages/web_cloud/web_cloud_databases/configure-database-server#managing-your-databases), then repeat the export/import operations.
 
@@ -234,7 +234,7 @@ To resolve this issue, you can use the following methods:
 
 This error message may appear when connecting to your database by [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface). It indicates that the credentials entered are incorrect.
 
-![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
+![access_denied_for_user](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-1045.png){.thumbnail}
 
 In this situation, [check the credentials entered](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#instructions) and change your [database password](/pages/web_cloud/web_hosting/sql_change_password) if necessary.
 
@@ -254,7 +254,7 @@ In this situation, you will need to [optimise your databases](/pages/web_cloud/w
 
 > [!warning]
 >
-> If you have any questions about the changes you need to make in order to reduce the number of active connections to your database, please contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
+> If you have any questions about the changes you need to make in order to reduce the number of active connections to your database, please contact our [community](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
 >
 
 ### "Name or service not known"
@@ -265,7 +265,7 @@ In this situation, you will need to [optimise your databases](/pages/web_cloud/w
 
 This error message appears when [connecting to phpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) if the server name entered is incorrect.
 
-![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
+![name_or_service_not_known](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-2002.png){.thumbnail}
 
 Check the server name for the relevant database service in your [OVHcloud Control Panel](/links/manager).
 

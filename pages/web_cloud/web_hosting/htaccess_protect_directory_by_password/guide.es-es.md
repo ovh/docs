@@ -47,7 +47,7 @@ Si utiliza un CMS WordPress, OVHcloud también pone a su disposición un tutoria
 >
 > Si tiene cualquier duda relativa a la creación, el uso o la programación de su sitio web, el soporte de OVHcloud no podrá ofrecerle soporte sobre estos temas.
 >
-> Para ello, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o nuestros [partners de OVHcloud](/links/partner).
+> Para ello, contacte con nuestra [comunidad de usuarios](/links/community) o nuestros [partners de OVHcloud](/links/partner).
 >
 
 A continuación explicamos los 4 pasos principales que debe seguir para proteger el acceso a un directorio o a la totalidad o parte de su sitio web:
@@ -76,11 +76,11 @@ Conéctese al [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_c
 
 Cree un archivo "crypt.php" en esta carpeta raíz.
 
-![root_folder](images/root-folder.png){.thumbnail}
+![root_folder](/pages/assets/screens/other/web-tools/net2ftp/root-folder.png){.thumbnail}
 
 Abra o cree la carpeta destinada a la protección de su sitio web. En nuestro ejemplo, esta es la carpeta "admin". Cree un archivo ".htpasswd" y un archivo ".htaccess" en este directorio.
 
-![admin-folder](images/admin-folder.png){.thumbnail}
+![admin-folder](/pages/assets/screens/other/web-tools/net2ftp/admin-folder.png){.thumbnail}
 
 Para utilizar correctamente los archivos ".htaccess" y ".htpasswd", debe conocer y respetar las siguientes reglas: 
 

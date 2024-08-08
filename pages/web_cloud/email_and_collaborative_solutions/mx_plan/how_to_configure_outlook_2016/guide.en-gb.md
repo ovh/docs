@@ -28,7 +28,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 ## Requirements
 
 - an MX Plan email address (included in the MX Plan solution and in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external})
-- Microsoft Outlook 2016 or later installed on your device
+- Microsoft Outlook or later installed on your device
 - login credentials for the email account to be configured
 
 > [!primary]
@@ -173,8 +173,8 @@ To understand the difference between POP and IMAP, we will detail the elements t
 
 ## Go further <a name="gofurther"></a>
 
-[Configuring your Email Pro account in Outlook 2016 for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+[Configuring your Email Pro account in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
-[Configuring your Exchange account in Outlook 2016 for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
+[Configuring your Exchange account in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 
 Join our community of users on <https://community.ovh.com/en/>.

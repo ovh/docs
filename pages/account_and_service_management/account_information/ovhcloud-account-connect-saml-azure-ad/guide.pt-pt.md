@@ -1,7 +1,7 @@
 ---
-title: Ativar as ligações Azure SSO com a sua conta OVHcloud
+title: Ativar as ligações Entra ID SSO com a sua conta OVHcloud
 excerpt: "Saiba como associar o seu Entra ID (anteriormente Azure Active Directory) à sua conta OVHcloud utilizando SAML 2.0"
-updated: 2024-03-05
+updated: 2024-07-05
 ---
 
 > [!primary]
@@ -207,23 +207,23 @@ A adição da sua aplicação Entra ID como fornecedor de identidade aprovado é
 
 #### Criar confiança na OVHcloud
 
-[Aceda à Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e clique no seu perfil (canto superior direito).
+Clique no nome da sua conta no canto superior direito e, a seguir, no seu nome na barra lateral.
 
-![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
+![Para aceder ao menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Clique no seu nome para aceder à página de gestão do seu perfil.
+Pode aceder ao menu IAM através da entrada dedicada na sua Área de Cliente.
 
-![Informações do utilizador OVHcloud](images/ovhcloud_user_infos.png){.thumbnail}
+![Para aceder ao menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Abra o separador `Gestão dos utilizadores`{.action}.
+De seguida, clique no separador `Identidades`{.action} para aceder à gestão dos utilizadores locais.
 
-![Perfil menu da OVHcloud](images/ovhcloud_profile_menu.png){.thumbnail}
+![Para aceder ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 A seguir, clique no botão `Ligação SSO`{.action}.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Complete o campo **Group Atribute Name** com o valor de **Claim name** dos grupos de aplicações Entra ID registado anteriormente.
+Complete o campo **Nome de Atributo de utilizador** com a aplicação Entra ID **UPN** nome do pedido e no campo **Nome de atributo de grupo** com o valor de nome de pedido **groups** guardado antes.
 
 Preencha os metadados XML da sua aplicação Entra ID a partir do ficheiro anteriormente registado.
 

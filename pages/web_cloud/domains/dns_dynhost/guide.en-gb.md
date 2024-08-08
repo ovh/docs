@@ -1,18 +1,18 @@
 ---
 title: "Configure dynamic DNS (DynHost/DynDNS) for your domain name"
 excerpt: "Find out how to configure a dynamic DNS record for your OVHcloud domain name"
-updated: 2024-05-22
+updated: 2024-07-12
 ---
 
 ## Objective
 
-The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configuration file. It consists of DNS **records** that map the domain name to various services and functions, for example:
+The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configuration file. It consists of DNS **records** that map the domain name to various services and functions.
 
-- The IP address (DNS records of type *A* and *AAAA*) of your web hosting must be provided in the zone in order to display your website when entering the domain name in a browser.
-- The email servers (DNS records of type *MX*) that should receive emails sent to addresses of this domain name. By configuring MX records, you can receive emails through custom email addresses using your domnain name.
-- Information related to the security/authentication of services (web hosting, web server, email server, etc.) associated with your domain name (DNS records of type *SPF*, *DKIM*, *DMARC*, etc.).
+For more information, please refer to our guides:
 
-If you need further assistance, please refer to our documentation on [DNS records](/pages/web_cloud/domains/dns_zone_records) and [editing a DNS zone](/pages/web_cloud/domains/dns_zone_edit) in your [OVHcloud Control Panel](/links/manager).
+- [Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+- [Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
+- [Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
 
 Dynamically updating a DNS record can prevent interruptions of your web services, in case you do not use a static IP address.
 
@@ -51,7 +51,7 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 
 To create a DynHost user, log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Domain names`{.action} tab, then select the domain name concerned. On the page that appears, click on the `DynHost`{.action} tab.
 
-![dynhost](images/tab.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 
 Click on the `Manage access`{.action} button, then `Create a username`{.action}. In the popup window, enter the following information:
 
@@ -68,7 +68,7 @@ Click on the `Manage access`{.action} button, then `Create a username`{.action}.
 
 Once you have filled in all of the required fields, click `Confirm`{.action}. The username will then appear in the table on the current page. Repeat this step if you need additional DynHost usernames.
 
-![dynhost](images/create-a-dynhost-username.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost-username.png){.thumbnail}
 
 ### Step 2: Create the dynamic DNS record (DynHost) <a name="step2"></a>
 
@@ -81,7 +81,12 @@ Once you are ready to create the DynHost record, go to the `DynHost`{.action} ta
 |Subdomain|Enter the subdomain that the DNS record must be dynamically updated for. This subdomain must be identical to the one you entered when you created the DynHost username. **If you would like to set up a DynHost directly for your domain name, leave this form blank**|
 |Target IP|Enter the IP address (IPv4 or IPv6) currently mapped in the DNS record. This is usually the public IP address of your Internet access box or your self-hosted server. In accordance with the DynHost principle, the IP will from now on be updated automatically.|
 
-![dynhost](images/create-a-dynhost.png){.thumbnail}
+> [!warning]
+>
+> To set up a dynamic DNS record (DynHost), the use of a *wildcard* (by placing only the character `*`) in the form `Sub-domain`{.action} is unavailable.
+>
+
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
 Once you have filled in all of the required fields, click `Confirm`{.action}. The DynHost record will then appear in the table on the current page. Repeat this step if you need additional DynHost records.
 
@@ -120,7 +125,7 @@ You can check if the destination IP address has been updated. To do this, log in
 > Any changes made to a domain name’s active DNS zone via DynDNS can cause the update to propagate for several minutes.
 >
 
-![dynhost](images/target.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 
 ## Go further <a name="go-further"></a>
 
@@ -128,4 +133,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our [community of users](/links/community). 

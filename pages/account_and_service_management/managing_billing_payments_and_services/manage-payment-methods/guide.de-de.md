@@ -54,7 +54,7 @@ Folgen Sie den Schritten für die Eintragung der Zahlungsart. Im ersten Schritt 
 
 > [!warning]
 >
-> - Die Verwendung der SEPA-Lastschrift ist nur für französische, deutsche, spanische, irische, niederländische und italienische Kunden-Accounts möglich.
+> - Die Verwendung der SEPA-Lastschrift ist nur für französische, belgische, deutsche, spanische, irische, niederländische und italienische Kunden-Accounts möglich.
 >
 > - Der Inhaber des Bankkontos muss mit dem Inhaber des OVHcloud Kunden-Accounts identisch sein.
 >

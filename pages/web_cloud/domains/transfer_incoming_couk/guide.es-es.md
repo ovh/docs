@@ -1,7 +1,7 @@
 ---
 title: 'Transferir un dominio .uk a OVHcloud'
 excerpt: 'En esta guía encontrará información relativa a la transferencia de un dominio .uk o asociado a OVHcloud'
-updated: 2022-10-19
+updated: 2024-06-28
 ---
 
 > [!primary]
@@ -28,6 +28,12 @@ La transferencia de un dominio .uk (o asimilado) debe respetar un procedimiento 
 > Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](/pages/account_and_service_management/account_information/managing_contacts).
 >
 Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](/pages/web_cloud/domains/trade_domain).
+>
+> Si, además de la transferencia del dominio, quiere migrar los servicios asociados al mismo (sitio web, correo electrónico...), consulte en primer lugar nuestra guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" antes de continuar.
+> Esta guía explica en detalle cómo migrar todos sus servicios sin cortes del servicio.
+>
+> Si solo va a transferir su dominio sin trasladar los demás servicios, deberá obtener los servidores DNS activos para su dominio de su actual **registrar** para informarlos directamente en el paso 3 de la guía "[Transferir su dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
+> De este modo, no tendrá que interrumpir la asociación entre su dominio y los servicios externos asociados.
 >
 
 ## Requisitos
@@ -98,4 +104,4 @@ La transferencia es gratuita, por lo que la fecha de expiración del dominio tra
 
 [Transferir un dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -34,19 +34,19 @@ Falls nicht bereits vorhanden, installieren Sie ein [SSL-Zertifikat](/pages/web_
 
 Loggen Sie sich in Ihren Administrationsbereich ein, indem Sie in der Adresszeile die URL Ihres Domainnamens gefolgt von `/wp-admin` oder `/wp-login` eingeben (die Weiterleitung erfolgt automatisch).
 
-![Admin page of WordPress](images/admin-login.png){.thumbnail}
+![Admin page of WordPress](/pages/assets/screens/other/cms/wordpress/woocommerce/admin-login.png){.thumbnail}
 
 Gehen Sie im linken Menü in den Bereich `Plugins`{.action} und klicken Sie auf den Button `Installieren`{.action}:
 
-![Dashboard, Plugins, Add new](images/plugins.png){.thumbnail}
+![Dashboard, Plugins, Add new](/pages/assets/screens/other/cms/wordpress/woocommerce/plugins.png){.thumbnail}
 
 Auf der neuen Seite `Installierte Plugins`{.action}, geben Sie "woocommerce" oben rechts in die Suchleiste ein und klicken Sie dann auf `Jetzt installieren`{.action} im Feld für **WooCommerce**.
 
-![Install WooCommerce](images/add-plugin-woocommerce-install-now.png){.thumbnail}
+![Install WooCommerce](/pages/assets/screens/other/cms/wordpress/woocommerce/add-plugin-woocommerce-install-now.png){.thumbnail}
 
 Klicken Sie auf `Aktivieren`{.action}.
 
-![WooCommerce Activate](images/add-plugin-woocommerce-activate.png){.thumbnail}
+![WooCommerce Activate](/pages/assets/screens/other/cms/wordpress/woocommerce/add-plugin-woocommerce-activate.png){.thumbnail}
 
 ### Konfiguration 
 
@@ -54,27 +54,27 @@ Klicken Sie auf `Aktivieren`{.action}.
 
 Wenn Sie das Plugin für **WooCommerce** noch nicht eingerichtet haben, hilft Ihnen ein Konfigurationsassistent, die Informationen Ihres Online-Shops einzugeben. Füllen Sie das Formular aus und klicken Sie auf `Weiter`{.action}.   
 
-![Setup Wizard - Store Details](images/woocommerce-store-details.png){.thumbnail}
+![Setup Wizard - Store Details](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-store-details.png){.thumbnail}
 
 Wählen Sie dann einen oder mehrere Geschäftsbereiche aus.
 
-![Setup Wizard - Industry](images/woocommerce-industry.png){.thumbnail}
+![Setup Wizard - Industry](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-industry.png){.thumbnail}
 
 Wählen Sie die Produktart aus, die Sie auf Ihrer Website anbieten möchten (einige Optionen sind kostenpflichtig).
 
-![Setup Wizard - Product Typen](images/woocommerce-product-types.png){.thumbnail}
+![Setup Wizard - Product Typen](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-product-types.png){.thumbnail}
 
 Geben Sie anschließend den Typ Ihrer Geschäftstätigkeit an.
 
-![Setup Wizard - Business Details](images/woocommerce-business-details.png){.thumbnail}
+![Setup Wizard - Business Details](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-business-details.png){.thumbnail}
 
 Fügen Sie optionale (und kostenlose) Funktionen hinzu, wenn Sie möchten.
 
-![Setup Wizard - Business Details, free features](images/woocommerce-business-details-2.png){.thumbnail}
+![Setup Wizard - Business Details, free features](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-business-details-2.png){.thumbnail}
 
 Wählen Sie aus den angebotenen Themes eines aus.
 
-![Setup Wizard - Choose a theme](images/woocommerce-theme.png){.thumbnail}
+![Setup Wizard - Choose a theme](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-theme.png){.thumbnail}
 
 **WooCommerce** fordert Sie nun auf, ein Konto zu erstellen, um die Erweiterung **Jetpack** zu nutzen, die zusätzlich zu **WooCommerce** automatisch installiert wird. Die Erstellung eines Accounts ist optional. Sie haben Zugriff auf die eingeschränkten Funktionen von **Jetpack**, ohne sich authentifizieren zu müssen.
 
@@ -84,17 +84,17 @@ Ihr Webshop ist nun mit den allgemeinen Einstellungen konfiguriert.
 
 Gehen Sie im linken Menü in den Bereich `Plugins`{.action} und dann auf `Installierte Plugins`. Die Liste Ihrer Plugins wird angezeigt. Klicken Sie auf `Einstellungen`{.action} im Modul **WooCommerce**:
 
-![Setup Wizard - Extension, WooCommerce, Settings](images/plugins-woocommerce.png){.thumbnail}
+![Setup Wizard - Extension, WooCommerce, Settings](/pages/assets/screens/other/cms/wordpress/woocommerce/plugins-woocommerce.png){.thumbnail}
 
 Sie haben auch Zugriff auf diese Einstellungen, indem Sie direkt auf `WooCommerce`{.action} und dann auf `Einstellungen`{.action} klicken:
 
-![Setup Wizard - WooCommerce, Settings](images/dashboard-woocommerce-settings.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings](/pages/assets/screens/other/cms/wordpress/woocommerce/dashboard-woocommerce-settings.png){.thumbnail}
 
 ### Einstellungen
 
 Die Seite mit den Einstellungen enthält mehrere Tabs:
 
-![Setup Wizard - WooCommerce, Settings, Tabs](images/woocommerce-general.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings, Tabs](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-general.png){.thumbnail}
 
 #### General
 
@@ -107,7 +107,7 @@ In diesem Tab können Sie folgende Elemente festlegen:
 - Gutscheine
 - Monetäre Daten (Währung der Website, Anzeige)
 
-![Setup Wizard - WooCommerce, Settings, General tab](images/woocommerce-general-currency.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings, General tab](/pages/assets/screens/other/cms/wordpress/woocommerce/woocommerce-general-currency.png){.thumbnail}
 
 #### Produkte
 

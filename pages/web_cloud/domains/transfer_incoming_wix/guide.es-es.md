@@ -1,7 +1,7 @@
 ---
 title: 'Transferir un dominio Wix a OVHcloud'
 excerpt: 'Descubra diferentes datos relativos a la transferencia de un dominio Wix a OVHcloud'
-updated: 2024-04-11
+updated: 2024-06-28
 ---
 
 > [!primary]
@@ -63,6 +63,12 @@ También debe:
 >
 > Asimismo, asegúrese de que su actual agente registrador no vaya a cerrar otros servicios, como las direcciones de correo asociadas al dominio.
 >
+> Si, además de la transferencia del dominio, quiere migrar los servicios asociados al mismo (sitio web, correo electrónico...), consulte en primer lugar nuestra guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" antes de continuar.
+> Esta guía explica en detalle cómo migrar todos sus servicios sin cortes del servicio.
+>
+> Si solo va a transferir su dominio sin trasladar los demás servicios, deberá obtener los servidores DNS activos para su dominio de su actual **registrar** para informarlos directamente en el paso 3 de la guía "[Transferir su dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
+> De este modo, no tendrá que interrumpir la asociación entre su dominio y los servicios externos asociados.
+>
 
 ### Desbloquear el dominio y obtener el código de transferencia
 
@@ -82,4 +88,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

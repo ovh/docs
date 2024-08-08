@@ -28,7 +28,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cl
 
 A tabela desta secção contém todas as bases de dados criadas com o seu alojamento web.
 
-![databasecreation](images/tab.png){.thumbnail}
+![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Na tabela, as bases de dados podem ter vários Status diferentes:
 
@@ -52,7 +52,7 @@ Pode criar uma nova base de dados de duas formas:
 
 Na nova janela, selecione as seguintes informações:
 
-![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
+![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
 
 |Informação|Descrição|  
 |---|---| 
@@ -64,7 +64,7 @@ De seguida, clique em `Seguinte`{.action}.
 
 Ser-lhe-á exibida uma nova janela:
 
-![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
+![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
 
 |Informação|Descrição|
 |---|---| 
@@ -92,7 +92,7 @@ Ser-lhe-á exibida uma nova janela:
 
 Preencha as informações necessárias e clique em `Seguinte`{.action}.
 
-![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
+![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
 
 Certifique-se de que todas as informações apresentadas no resumo estão corretas. Se for o caso, clique em `Validar`{.action} para lançar a criação da sua base de dados.
 
@@ -148,7 +148,7 @@ Em função do software utilizado, é possível que esta ligação tenha de ser 
 
 A OVHcloud fornece uma ferramenta online para a gestão das bases de dados, "phpMyAdmin". Para encontrar o link de acesso a esta aplicação, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha a oferta de alojamento para a qual pretende recuperar as informações de ligação à base de dados e clique no separador `Bases de dados`{.action}. No quadro que se abrir, clique no botão `...`{.action} à direita da base de dados em causa e, a seguir, clique em `Aceder ao phpMyAdmin`{.action} no menu pendente.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Introduza as informações de acesso à sua base de dados e depois clique em `Entrada`{.action}.
 

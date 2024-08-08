@@ -1,29 +1,32 @@
 ---
-title: Signin signup to Data Platform
+title: Sign-up to Data Platform
 excerpt: ""
-updated: 2024-04-30
+updated: 2024-07-09
 ---
 
 ## How to access the Data Platform <sup><small>Beta</small></sup>
 
 > [!warning]
 >
-> Data Platform is currently only deployed as a beta version. If you experience any difficulties and/or would like to discuss your experience with other users, please contact us on discord <https://discord.gg/ovhcloud>, or get in touch on our community platform: <https://community.ovh.com/en/>.
+> Data Platform is currently only deployed as a beta version. If you experience any difficulties and/or would like to discuss your experience with other users, you can ask for support by reaching out to us on the Data Platform Channel within the [Discord Server](https://discord.com/channels/850031577277792286/1163465539981672559). You can also find a step by step guide towards joining our Discord server in the [support](https://docs.forepaas.io/#/en/support/index) section.
 > 
 
 ### Signin
 
-Click [here](https://hq-fp.dataintegration.ovh.net) to access the Data Platform.
+Click [here](https://eu.dataplatform.ovh.net/) to access the Data Platform.
 
 ![Data PLatform Connect](images/data_platform_connect.png)
 
-- If you are an administrator, click on `USE MY OVHCLOUD ACCOUNT` link, then fill the form with your account ID or email address and your password:
+If you are accessing the Data Platform for the first time, you need:
+
+- either to sign up with an existing or new OVHcloud account.
+- or to sign up wth a local Data Platform account, only if you have received an invitation to join an existing Data Platform Organization by an admin from your company beforehand.
 
 ![OVHcloud Connect](images/ovhcloud-connect.png)
 
 > [!primary]
 >
-> The administration account needs to be linked to a NIC.
+> The administration account needs to be linked to an OVHcloud account.
 >
 
 - If you are a regular user, fill the Login/Password form [here](https://hq-fp.dataintegration.ovh.net):
@@ -35,8 +38,4 @@ Click [here](https://hq-fp.dataintegration.ovh.net) to access the Data Platform.
 > Regular users do not need an OVHcloud account to onboard.
 >
 
-### Signup
-
-If you are not an OVHcloud customer, click [here](https://hq-fp.dataintegration.ovh.net) to access the Data Platform, then on the `USE MY OVHCLOUD ACCOUNT` link and fill the form with your own information as follows:
-
-![OVHcloud create account](images/ovhcloud_create_account.png)
+To get more information, please click [here](https://docs.forepaas.io/#/en/product/organisations/create-account) to access our complete account creation guide.

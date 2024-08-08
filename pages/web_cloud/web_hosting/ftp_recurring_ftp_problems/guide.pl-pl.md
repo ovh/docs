@@ -30,7 +30,7 @@ Korzystanie z oprogramowania FTP podczas logowania do [hostingu Cloud](/links/we
 
 ### "Ten serwer nie obsługuje FTP na TLS" (FileZilla)
 
-![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
+![doesnt-support-ftp-on-tls](/pages/assets/screens/other/web-tools/filezilla/doesnt-support-ftp-on-tls.png){.thumbnail}
 
 Ten komunikat w programie [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) wskazuje, że nie włączyłeś opcji SFTP lub SSH w [Panelu klienta OVHcloud](/links/manager). W związku z tym informacje wymieniane między serwerem hostingowym OVHcloud a komputerem nie będą szyfrowane.
 
@@ -67,7 +67,7 @@ Aby sprawdzić pozostałą przestrzeń dyskową Twojego hostingu, zaloguj się d
 
 Ilość danych zapisanych na serwerze hostingowym (poza bazami danych) wyświetla się w części `Informacje ogólne`{.action} > `Przestrzeń dyskowa`.
 
-![disk_space](images/find-disk-space.png){.thumbnail}
+![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 ### Nie mogę przenieść moich plików na serwer FTP.
 
@@ -83,7 +83,7 @@ Jeśli dysponujesz [formułą Pro](/links/web/hosting-professional-offer) lub [P
 
 Link jest domyślnie zainstalowany na hostingu OVHcloud. Wyświetla się go:
 
-![site-under-construction](images/site-under-construction.png){.thumbnail}
+![site-under-construction](/pages/assets/screens/other/browsers/errors/site-under-construction.png){.thumbnail}
 
 Jeśli nie korzystałeś z funkcji "[Moduł za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" do tworzenia Twojej strony WWW, powinieneś użyć oprogramowania [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-logowanie-przez-ftp-explorer) dostępnego w [Panelu klienta OVHcloud](/links/manager), aby ręcznie usunąć stronę "Strona w budowie".
 
@@ -95,4 +95,4 @@ Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawanso
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguration von Exchange auf Outlook 2016 für Mac'
-excerpt: 'So konfigurieren Sie Ihren Exchange Account auf Outlook 2016 für Mac'
+title: 'Exchange - Konfigurieren Sie Ihr E-Mail-Konto in Outlook für macOS'
+excerpt: 'So konfigurieren Sie Ihren Exchange Account auf Outlook für macOS'
 updated: 2018-06-01
 ---
 
@@ -16,7 +16,7 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 
 > [!primary]
 >
-> Sie verwenden Outlook 2016 für Windows? Die entsprechende Dokumentation finden Sie hier: [Konfiguration von Exchange auf Outlook 2016 für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
+> Sie verwenden Outlook für Windows? Die entsprechende Dokumentation finden Sie hier: [Konfiguration von Exchange auf Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
 >
 
 ## Beschreibung
@@ -37,7 +37,7 @@ Klicken Sie nun auf Ihre E-Mail-Adresse und dann auf `Weiter`{.action}. Falls ei
 |---|---|
 |Methode|Lassen Sie **Benutzername und Kennwort** stehen (standardmäßig ausgewählt).|
 |E-Mail-Adresse|Geben Sie einen Namen für diesen Account ein, damit Sie ihn später von anderen Accounts in Ihrer Outlook App unterscheiden können.|
-|DOMAIN\\Benutzername oder E-Mail-Adresse|Geben Sie die vollständige E-Mail-Adresse ein.|
+|DOMAIN\Benutzername oder E-Mail-Adresse|Geben Sie die vollständige E-Mail-Adresse ein.|
 |Kennwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
 |Server|Je nach DNS-Konfiguration Ihrer Domain kann die Angabe des Servers optional sein. Falls notwendig, tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Angaben zum Server im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, indem Sie den entsprechenden Exchange Dienst auswählen, auf den Tab `Allgemeine Informationen`{.action} klicken und dort in den Bereich `Verbindung`{.action} gehen.|
 
@@ -55,8 +55,8 @@ OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot auf Outlook 2016 für Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
+[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot auf Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
 
-[Konfiguration von E-Mail Pro auf Outlook 2016 für Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac){.external}
+[Konfiguration von E-Mail Pro auf Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

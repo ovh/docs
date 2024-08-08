@@ -1,5 +1,5 @@
 ---
-title: Configurar um registo MX
+title: "Configurar um registo MX para a gestão dos e-mails"
 excerpt: Saiba como configurar um registo MX no seu domínio da OVHcloud
 updated: 2024-02-29
 ---
@@ -39,7 +39,7 @@ Quando o endereço **sender@otherdomain.ovh** envia um e-mail para **contact@myd
 - **(1)** consultar a zona DNS do nome de domínio **mydomain.ovh** e ler os registos **MX**.
 - **(2)** reencaminhar o e-mail para o URL do registo **MX** lido.
 
-![email](/pages/assets/schemas/dns/mx-dns-resolution.png){.thumbnail}
+![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 O e-mail será enviado para o destino **mx0.mail.ovh.net**, precedido do valor **0**. Esse valor é chamado de prioridade. O valor mais baixo é inquirido em primeiro lugar e o mais alto em último. Isto significa que vários registos irão compensar a falta de resposta do registo MX com a prioridade mais baixa.
 
@@ -97,12 +97,12 @@ Conclua os passos e clique em `Validar`{.action}.
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configurar um registo SPF no domínio](/pages/web_cloud/domains/dns_zone_spf)
+[Melhorar a segurança dos e-mails através do registo SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurar um registo DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Melhorar a segurança dos e-mails através do registo DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

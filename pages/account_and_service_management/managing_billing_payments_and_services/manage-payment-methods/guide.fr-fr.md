@@ -52,7 +52,7 @@ Suivez les étapes successives d'enregistrement du moyen de paiement. A la premi
 
 > [!warning]
 >
-> - L'utilisation du prélèvement bancaire n'est possible que pour les comptes clients français, allemands, espagnols, irlandais, italiens et néerlandais.
+> - L'utilisation du prélèvement bancaire n'est possible que pour les comptes clients français, belges, allemands, espagnols, irlandais, italiens et néerlandais.
 >
 > - Le propriétaire du compte bancaire doit être identique au propriétaire du compte OVHcloud.
 

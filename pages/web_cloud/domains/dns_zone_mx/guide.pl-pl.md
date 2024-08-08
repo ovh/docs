@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja rekordu MX
-excerpt: Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud
+title: "Konfiguracja rekordu MX dla emaili"
+excerpt: "Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -40,7 +40,7 @@ Gdy adres **sender@otherdomain.ovh** wysyła wiadomość na adres **contact@modo
 - **(1)** odpytywanie strefy DNS domeny **mydomain.ovh** i odczytywanie rekordów **MX**.
 - **(2)** Prześlij wiadomość e-mail na adres URL odczytanego rekordu **MX**.
 
-![email](/pages/assets/schemas/dns/mx-dns-resolution.png){.thumbnail}
+![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 Wiadomość e-mail zostanie wysłana na adres docelowy **mx0.mail.ovh.net** poprzedzony wartością **0**. Ta wartość jest nazywana priorytetem. Najniższa jest odpytywana w pierwszej kolejności, a najwyższa w ostatniej. Oznacza to, że obecność wielu rekordów może zapobiec brakowi odpowiedzi rekordu MX o najniższym priorytecie.
 
@@ -98,12 +98,12 @@ Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.a
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Konfiguracja rekordu SPF w domenie](/pages/web_cloud/domains/dns_zone_spf)
+[Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Skonfiguruj rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Jeśli potrzebujesz specjalistycznych usług (SEO, programowanie, etc.), skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: OVHcloud account management FAQ
 excerpt: Find the most frequently asked questions about managing your OVHcloud account
-updated: 2023-09-28
+updated: 2024-07-04
 ---
 
 ## Objective
@@ -174,6 +174,22 @@ A member of our team will reply as soon as possible.
 ### I replied to the OVHcloud Abuse team, but my service is still blocked. What should I do?
 
 From the OVHcloud Control Panel, you can open a support ticket to OVHcloud Customer Service for further information on how to process your Abuse ticket. To make your request easier to process, please ensure that you include the reference to this Abuse ticket in your support request.
+
+### How do I delete my OVHcloud account?
+
+Closing your OVHcloud customer account and deleting your personal data is only possible if:
+
+1. You no longer have any services listed in the “[My services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)” section. Otherwise, you will need to request their termination and wait for their deletion.
+2. You do not have any invoices awaiting payment. Otherwise, you will need to pay for them by clicking the `Pay immediately`{.action} button in the bulk actions section of the “[My bills](https://www.ovh.com/manager/#/dedicated/billing/history)” page.
+3. You have no pending orders. Check it on [this page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Your prepaid account has no credit balance. Check it on [this page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+If the above conditions are met, you can request to delete your OVHcloud account and the related data by following these steps:
+
+1. Log in to the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
+2. Click the `Create ticket`{.action} button.
+3. Select the reason `Manage your OVHcloud customer account`{.action}.
+4. Specify `I want to close my OVHcloud account`{.action} and follow the steps described.
 
 ## Go further
   

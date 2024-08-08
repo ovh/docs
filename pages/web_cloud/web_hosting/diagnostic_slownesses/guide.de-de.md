@@ -99,11 +99,11 @@ Um sicherzustellen, dass Ihre Dienste (Webhosting **und** Datenbank) derzeit von
 
 Um Cluster und Filer Ihres Webhostings zu ermitteln, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Im Tab `Allgemeine Informationen`{.action} können Sie `Rechenzentrum` und `Filer` des Webhostings einsehen.
 
-![Filer abrufen](images/find-filer.png){.thumbnail}
+![Filer abrufen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
 
 Klicken Sie anschließend auf den Tab `Multisite`{.action}, um die Cluster-Nummer Ihres Hostings zu ermitteln.
 
-![Cluster abrufen](images/find-cluster.png){.thumbnail}
+![Cluster abrufen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >
@@ -158,7 +158,7 @@ Wenn Sie eine Datenbank mit **Web Cloud Databases** nutzen, lesen Sie unsere Anl
 
 Wenn die Verbindung erfolgreich war, gelangen Sie auf folgendes Interface:
 
-![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
+![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -241,7 +241,7 @@ Je weniger Anfragen es gibt, desto weniger werden die Ressourcen für Ihr Hostin
 >
 > Klicken Sie hierzu auf die Taste `F12` im Browserfenster und wählen Sie dann den Tab `Netzwerk` aus. Laden Sie Ihre Webseite neu idem Sie `Ctrl + Shift + R` drücken. Das Tool listet die beim Laden Ihrer Seite durchgeführten Anfragen auf. Identifizieren Sie die Elemente, deren Aufruf Ladezeit erzeugt, um diese anschließend zu optimieren.
 >
->![Firefox Netzwerk-Analyse](images/F12.png){.thumbnail}
+>![Firefox Netzwerk-Analyse](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
 >
 
 Um das Aufkommen an Abfragen für jeden Seitenaufbau zu reduzieren, können Sie auch ein Content Delivery Network (CDN) einsetzen. Es legt den statischen Inhalt Ihrer Website im Cache ab. Ihr Webhosting wird somit weniger beansprucht und verfügt über mehr Ressourcen für die Bearbeitung der übrigen Anfragen, die nicht für den Cache geeignet sind.

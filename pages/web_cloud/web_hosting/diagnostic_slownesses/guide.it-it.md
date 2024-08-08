@@ -100,11 +100,11 @@ Per garantire che i tuoi servizi (hosting condiviso **e** database) non siano og
 
 Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action}, seleziona il cluster e il file in cui si trova il tuo hosting condiviso, clicca su `Hosting`{.action} e seleziona l'hosting Web corrispondente. Nella scheda `Informazioni generali`{.action}, clicca su `datacenter` del tuo hosting condiviso e `filer` dov'è.
 
-![Recupera Filer](images/find-filer.png){.thumbnail}
+![Recupera Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
 
 Clicca sulla scheda `Multisito`{.action} per recuperare il numero del cluster in cui si trova il tuo hosting condiviso.
 
-![Recuperare cluster](images/find-cluster.png){.thumbnail}
+![Recuperare cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >
@@ -159,7 +159,7 @@ Se utilizzi un database su un'offerta **Web Cloud Databases**, consulta la nostr
 
 Se la connessione è andata a buon fine, accedi all'interfaccia seguente:
 
-![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
+![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -242,7 +242,7 @@ Infatti, meno il numero di richieste sarà elevato, meno saranno richieste le ri
 >
 > cliccando sul tasto `F12` quando sei sul tuo browser Firefox e poi seleziona la scheda `Rete`. Ricarica la tua pagina Web con i tasti `Ctrl + Maj + R` per visualizzare le richieste eseguite per caricare la tua pagina. Identifica gli elementi più lunghi da caricare e ottimizzarli.
 >
->![Analisi di rete Firefox](images/F12.png){.thumbnail}
+>![Analisi di rete Firefox](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
 >
 
 Per diminuire il flusso di richieste a ogni caricamento delle tue pagine, puoi anche impostare una Content Delivery Network (CDN). che permetterà di mettere in cache il contenuto statico del tuo sito Web. Il tuo hosting Web sarà meno sollecitato e disporrà di maggiori risorse per gestire le altre richieste che non possono essere salvate in cache.

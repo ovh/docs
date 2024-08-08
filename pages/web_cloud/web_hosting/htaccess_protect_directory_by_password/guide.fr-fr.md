@@ -42,7 +42,7 @@ Ceci en utilisant deux fichiers de configuration (HTTP) Apache à placer dans [l
 >
 > Pour toute question relative à la création, l'utilisation ou la programmation de votre site web, le support OVHcloud ne sera pas en mesure de vous apporter une assistance sur ces sujets.
 >
-> Pour cela, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou nos [partenaires OVHcloud](/links/partner).
+> Pour cela, contactez notre [communauté d'utilisateurs](/links/community) ou nos [partenaires OVHcloud](/links/partner).
 >
 
 Nous allons vous expliquer les 4 étapes principales à réaliser pour protéger l'accès à un répertoire ou tout ou partie de votre site web :
@@ -70,11 +70,11 @@ Connectez-vous à [l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_co
 
 Créez un fichier « crypt.php » dans ce « dossier racine ».
 
-![root_folder](images/root-folder.png){.thumbnail}
+![root_folder](/pages/assets/screens/other/web-tools/net2ftp/root-folder.png){.thumbnail}
 
 Ouvrez ou créez le dossier destiné à être protégé de votre site web. Dans notre exemple ci-dessous, il s'agira du dossier « admin ». Créez, dans ce répertoire, un fichier « .htpasswd » et un fichier « .htaccess ».
 
-![admin-folder](images/admin-folder.png){.thumbnail}
+![admin-folder](/pages/assets/screens/other/web-tools/net2ftp/admin-folder.png){.thumbnail}
 
 Pour utiliser correctement les fichiers « .htaccess » et « .htpasswd », vous devez connaître et respecter les règles suivantes : 
 

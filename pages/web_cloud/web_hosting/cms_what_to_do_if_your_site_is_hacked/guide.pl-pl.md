@@ -223,4 +223,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Przyłącz się do społeczności naszych użytkowników na <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

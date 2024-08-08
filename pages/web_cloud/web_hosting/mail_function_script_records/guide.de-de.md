@@ -129,7 +129,7 @@ Dieser Zustand tritt ein, wenn Ihr Hosting E-Mails sendet, die als SPAM eingestu
 
 Normalerweise wird diese Sperrung begleitet von einer E-Mail der Art **"Missbrauch mit Ihrem Hosting domain.tld"**, die automatisch von unseren Sicherheitsrobotern generiert wird.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Drei Szenarien sind möglich:
 

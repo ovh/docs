@@ -36,7 +36,7 @@ Za pomocą terminala i polecenia Linux można skopiować plik lub folder zawiera
 
 ## W praktyce
 
-Niniejszy przewodnik zawiera niewyczerpujące informacje na temat funkcji dostępnych za pomocą polecenia `scp`. Zachęcamy do kontaktu z naszą społecznością użytkowników pod adresem <https://community.ovh.com/en/>, jeśli chcesz dowiedzieć się więcej na temat tego zamówienia.
+Niniejszy przewodnik zawiera niewyczerpujące informacje na temat funkcji dostępnych za pomocą polecenia `scp`. Zachęcamy do kontaktu z [naszych użytkowników](/links/community), jeśli chcesz dowiedzieć się więcej na temat tego zamówienia.
 
 ### Etap 1 - Pobieranie dostępów SSH do hostingu WWW
 

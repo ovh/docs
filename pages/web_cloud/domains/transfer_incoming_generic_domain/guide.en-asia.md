@@ -1,7 +1,7 @@
 ---
 title: 'Transferring a domain name to OVHcloud'
 excerpt: 'Find out how to transfer a generic domain name to OVHcloud'
-updated: 2024-01-31
+updated: 2024-06-28
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -23,6 +23,12 @@ By transferring your domain name, you will its **registrar**. You can transfer y
 > To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [our contact management guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
 > If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](/pages/web_cloud/domains/trade_domain).
+>
+> If, in addition to transferring your domain name, you would like to migrate the services associated with it (website, email, etc.), please read our guide on [Migrating your website and associated services to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh), before continuing.
+> This guide explains in detail how to migrate all your services without any service interruptions.
+>
+> If you only transfer your domain name without moving your other services, please ensure that you retrieve the active DNS servers for your domain name from your current **registrar**, to enter them directly in step 3 of this guide.
+> This will prevent the separation of your domain name from your associated external services.
 >
 
 ## Requirements
@@ -87,11 +93,11 @@ Please note that OVHcloud is not your current domain name registrar. We are ther
 
 Now that your domain name is unlocked and you have your AUTH/INFO, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](/links/web/domains-transfer){.external}. Enter your domain name, and follow the order process.
 
-![domain](images/Domain_transfer_order.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/domain-transfer-order.png){.thumbnail}
 
 When you are asked to provide your transfer code, enter it into the field. If you do not have the transfer code yet, you can tick a box labelled `Enter the authentication code later in the OVHcloud Control Panel`{.action}. However, we advise to have the code ready before you continue. Keep in mind that transfer will not start until a valid code is provided.
 
-![domain](images/step_authinfo_add.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/step_authinfo_add.png){.thumbnail}
 
 Domains can also be ordered in addition to a [Web Hosting plan](/links/web/hosting). Our guide on [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} provides useful information for an optimised approach.
 
@@ -112,7 +118,7 @@ Domains can also be ordered in addition to a [Web Hosting plan](/links/web/hosti
 
 - In some cases, the transfer process may require additional information regarding the domain name owner. To add this information, click on the option `Manage contacts/owner`{.action}.
 
-![domain](images/Order_summary.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
 #### Tracking a transfer after the order
 
@@ -173,4 +179,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

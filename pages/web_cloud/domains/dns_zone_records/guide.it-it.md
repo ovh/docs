@@ -1,7 +1,7 @@
 ---
 title: "Scopri tutto sui record DNS"
 excerpt: "Questa guida ti mostra i diversi tipi di record DNS disponibili in una zona DNS di OVHcloud"
-updated: 2024-06-17
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2024-06-17
 
 L'acronimo **DNS**, che sta per **D**omain **N**ame **S**ystem, è un insieme di elementi (server DNS, zone DNS, ecc...) che permettono di far corrispondere un nome di dominio con un indirizzo IP.
 
-Prima di iniziare, ti consigliamo di consultare le nostre guide "[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)" e "Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)" in questo ordine.
+Prima di iniziare, ti consigliamo di consultare le nostre guide "[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)" e "[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)" in questo ordine.
 
 La zona DNS di un dominio costituisce il file di configurazione. ed è composta da informazioni tecniche chiamate *record DNS*. La zona DNS è, in un certo senso, un centro di scambio per un nome di dominio.
 
@@ -171,7 +171,14 @@ Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Utilizzato per inserire l'impronta di un certificato SSL/TLS.
+>> Utilizzato per inserire l'impronta di un certificato SSL/TLS. che permette di conservare il *hash* di un certificato direttamente nella zona DNS del dominio tramite un record DNS.
+>>
+>> Questa registrazione è utilizzata nel quadro del protocollo **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
+>>
+>> Il protocollo DANE permette a un cliente (browser Internet, client di posta, client FTP, client SSH, ecc.) di consultare il record TLSA. In questo modo, si assicura che un certificato SSL/TLS utilizzato per un dominio sia effettivamente quello che certifica lo stesso dominio.
+>>
+>> Se necessario, consulta i dettagli sul sito dell' [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>>
 
 #### Casi d'uso particolari: l'utilizzo dei record CNAME <a name="cnameusecase"></a>
 
@@ -185,7 +192,7 @@ Per questo motivo e nel caso specifico, non sarà possibile creare un record CNA
 
 [Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-Sapere tutto sulla zona DNS(/pages/web_cloud/domains/dns_zone_general_information)
+[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
 [Aggiungere un record SPF alla configurazione di un dominio](/pages/web_cloud/domains/dns_zone_spf)
 

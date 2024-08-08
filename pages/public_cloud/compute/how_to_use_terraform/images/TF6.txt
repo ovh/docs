@@ -27,7 +27,7 @@
    provider     = openstack.ovh
    name         = "proxy_instance"
    image_name   = "Debian 10"
-   flavor_name  = "s1-2"
+   flavor_name  = "d2-2"
    key_pair     = openstack_compute_keypair_v2.test_keypair.name
    network {
         name    = "Ext-Net"

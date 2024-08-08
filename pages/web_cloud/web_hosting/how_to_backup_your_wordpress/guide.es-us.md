@@ -44,7 +44,7 @@ La recuperación se realiza a través de un cliente FTP como FileZilla. Para má
 
 Al conectarse al servidor por FTP, deberá cargar (arrastrar/soltar) el contenido del directorio `www` en el panel de la derecha. Este directorio contiene todos los archivos y directorios de su sitio web WordPress (configuración, temas, multimedia, etc.).
 
-![Vista raíz de los archivos y directorios WordPress](images/wordpress-into-www.png){.thumbnail}
+![Vista raíz de los archivos y directorios WordPress](/pages/assets/screens/other/web-tools/filezilla/wordpress-into-www.png){.thumbnail}
 
 Haga clic en el directorio `www` y arrástrelo al directorio que desee en la ventana de la izquierda. La transferencia de archivos comenzará automáticamente.
 
@@ -58,17 +58,17 @@ Para exportar su base de datos, acceda a la interfaz _PHPMyAdmin_ a través de l
 >
 > No dude en consultar nuestra guía sobre [la exportación de una base de datos](/pages/web_cloud/web_hosting/sql_database_export).
 
-![Acceso PHPMyAdmin - Inicio](images/pma-main-page.png){.thumbnail}
+![Acceso PHPMyAdmin - Inicio](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png){.thumbnail}
 
 Haga clic en `Exportar`{.action} en la parte superior de la página:
 
-![Acceso PHPMyAdmin - Exportar](images/pma-export.png){.thumbnail}
+![Acceso PHPMyAdmin - Exportar](/pages/assets/screens/other/web-tools/phpmyadmin/pma-export.png){.thumbnail}
 
 Deje las opciones ofrecidas por defecto: método de exportación rápido y formato SQL.
 
 Haga clic en `Ejecutar`{.action} y descargue la base de datos completa en formato SQL (Structured Query Language).
 
-![Acceso PHPMyAdmin - Exportar - Descarga](images/dowload-successfull.png){.thumbnail}
+![Acceso PHPMyAdmin - Exportar - Descarga](/pages/assets/screens/other/browsers/web-pages/dowload-successfull.png){.thumbnail}
 
 ### Método n°2 - Realizar una copia de seguridad con una extensión
 
@@ -80,43 +80,43 @@ Descargue la extensión en formato directo `.zip` en su equipo. En aras de la cl
 
 Por defecto, se trata de su nombre de dominio seguido de `wp-admin` :
 
-![Acceso de administrador a wp-admin](images/login-interface.png){.thumbnail}
+![Acceso de administrador a wp-admin](/pages/assets/screens/other/cms/wordpress/login-interface.png){.thumbnail}
 
 En la página de inicio, acceda a la sección `Plugins`{.action} y haga clic en `Añadir nuevo`{.action}.
 
-![Añadir una extensión](images/plugins-add-new.png){.thumbnail}
+![Añadir una extensión](/pages/assets/screens/other/cms/wordpress/plugins-add-new.png){.thumbnail}
 
 Descargue la extensión haciendo clic en el botón `Recorrer`{.action} :
 
-![Subir la extensión](images/plugins-add-new-updraftplus.png){.thumbnail}
+![Subir la extensión](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-add-new-updraftplus.png){.thumbnail}
 
 Haga clic en `Instalar ahora`{.action} :
 
-![Instalar la extensión](images/plugins-browse-updraftplus.png){.thumbnail}
+![Instalar la extensión](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-browse-updraftplus.png){.thumbnail}
 
 Una vez instalada, deberá activar la extensión:
 
-![Confirmación de la instalación](images/plugins-activate-updraftplus.png){.thumbnail}
+![Confirmación de la instalación](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-activate-updraftplus.png){.thumbnail}
 
 Una vez activada, aparecerá en la lista de extensiones:
 
-![Lista de extensiones instaladas](images/plugins-list-updraftplus.png){.thumbnail}
+![Lista de extensiones instaladas](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-list-updraftplus.png){.thumbnail}
 
 #### 2.2 - Configure sus copias de seguridad
 
 En la página de configuración, haga clic en el botón `Ajustes`{.action} > `UpdraftPlus Backup/Restore` y seleccione la pestaña `Ajustes`{.action}.
 
-![Página UpdraftPlus Backup/Restore](images/updraftplus-settings.png){.thumbnail}
+![Página UpdraftPlus Backup/Restore](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings.png){.thumbnail}
 
 Establezca la copia de seguridad diaria de sus archivos y su base de datos:
 
-![Página UpdraftPlus Ajustes](images/updraftplus-settings-2.png){.thumbnail}
+![Página UpdraftPlus Ajustes](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings-2.png){.thumbnail}
 
 Seleccione la copia de seguridad por correo electrónico.
 
 Las copias de seguridad se enviarán a la dirección de correo electrónico de la cuenta de administrador (la cuenta que utilice):
 
-![Backup por correo electrónico](images/email-setting.png){.thumbnail}
+![Backup por correo electrónico](/pages/assets/screens/other/cms/wordpress/email-setting.png){.thumbnail}
 
 Al final de la página, haga clic en `Guardar cambios`{.action} para aceptar.
 
@@ -124,11 +124,11 @@ Al final de la página, haga clic en `Guardar cambios`{.action} para aceptar.
 
 Vuelva a la pestaña `Copia de seguridad/Restaurar`{.action} y haga clic en el botón `Hacer ahora una copia de seguridad`{.action}.
 
-![Página Updraft Plus Guardar/Restaurar](images/updraftplus-backup-now.png){.thumbnail}
+![Página Updraft Plus Guardar/Restaurar](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-backup-now.png){.thumbnail}
 
 En la nueva ventana, vuelva a hacer clic en el botón `Hacer ahora una copia de seguridad`{.action}.
 
-![Página UpdraftPlus modal Guardar/Restaurar](images/updraftplus-perform-backup.png){.thumbnail}
+![Página UpdraftPlus modal Guardar/Restaurar](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-perform-backup.png){.thumbnail}
 
 Una vez completadas las copias de seguridad, recibirá dos mensajes de correo electrónico: uno con el contenido de su WordPress y el otro con la base de datos de su sitio web.
 Si no recibe los mensajes de correo, compruebe la dirección de correo electrónico de la cuenta que utiliza (en la sección `Usuarios`{.action}). Compruebe también sus carpetas "SPAM / Correo no deseado".

@@ -44,7 +44,7 @@ Il recupero viene effettuato tramite un client FTP come FileZilla. Per maggiori 
 
 Quando ti connetti sul tuo server tramite FTP, devi recuperare (trascinando/depositando) il contenuto della directory `www` sul lato destro. Questa directory contiene tutti i file e le directory del tuo sito WordPress (configurazione, temi, media, ecc...).
 
-![Visualizza file e directory WordPress alla radice](images/wordpress-into-www.png){.thumbnail}
+![Visualizza file e directory WordPress alla radice](/pages/assets/screens/other/web-tools/filezilla/wordpress-into-www.png){.thumbnail}
 
 Clicca sulla directory `www` e trascina sulla directory che scegli nella finestra di sinistra. Il trasferimento dei file inizierà automaticamente.
 
@@ -58,17 +58,17 @@ Per esportare il tuo database, accedi all'interfaccia _PHPMyAdmin_ tramite l'URL
 >
 > Consulta la nostra guida su [esportare un database](/pages/web_cloud/web_hosting/sql_database_export).
 
-![Accesso PHPMyAdmin - Home](images/pma-main-page.png){.thumbnail}
+![Accesso PHPMyAdmin - Home](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png){.thumbnail}
 
 Clicca su `Esportare`{.action} in alto a pagina:
 
-![Accesso PHPMyAdmin - Esporta](images/pma-export.png){.thumbnail}
+![Accesso PHPMyAdmin - Esporta](/pages/assets/screens/other/web-tools/phpmyadmin/pma-export.png){.thumbnail}
 
 Scegli come predefinito: metodo di esportazione rapido e formato SQL.
 
 Clicca su `Esegui`{.action} per scaricare il database completo in formato SQL (Structured Query Language).
 
-![Accesso PHPMyAdmin - Esporta - Scaricamento](images/dowload-successfull.png){.thumbnail}
+![Accesso PHPMyAdmin - Esporta - Scaricamento](/pages/assets/screens/other/browsers/web-pages/dowload-successfull.png){.thumbnail}
 
 ### Metodo n°2 - Effettuare un backup con estensione
 
@@ -80,43 +80,43 @@ Scarica l'estensione in `.zip` sul tuo computer. Per motivi di chiarezza, il fil
 
 Di default, si tratta del dominio seguito da `/wp-admin`:
 
-![Accesso amministratore su wp-admin](images/login-interface.png){.thumbnail}
+![Accesso amministratore su wp-admin](/pages/assets/screens/other/cms/wordpress/login-interface.png){.thumbnail}
 
 Accedi alla sezione `Plugin`{.action} e clicca su `Aggiungi nuovo`{.action}
 
-![Aggiungi un'estensione](images/plugins-add-new.png){.thumbnail}
+![Aggiungi un'estensione](/pages/assets/screens/other/cms/wordpress/plugins-add-new.png){.thumbnail}
 
 Seleziona l'estensione cliccando su `Percorrere`{.action}:
 
-![Carica l'estensione](images/plugins-add-new-updraftplus.png){.thumbnail}
+![Carica l'estensione](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-add-new-updraftplus.png){.thumbnail}
 
 Clicca su `Installa adesso`{.action}:
 
-![Installare l'estensione](images/plugins-browse-updraftplus.png){.thumbnail}
+![Installare l'estensione](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-browse-updraftplus.png){.thumbnail}
 
 Dopo l'installazione, ti verrà chiesto di attivare l'estensione:
 
-![Conferma di installazione](images/plugins-activate-updraftplus.png){.thumbnail}
+![Conferma di installazione](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-activate-updraftplus.png){.thumbnail}
 
 Una volta attivata, comparirà nella lista delle estensioni:
 
-![Elenco delle estensioni installate](images/plugins-list-updraftplus.png){.thumbnail}
+![Elenco delle estensioni installate](/pages/assets/screens/other/cms/wordpress/updraftplus/plugins-list-updraftplus.png){.thumbnail}
 
 #### 2.2 - Configura i tuoi backup
 
 Nella pagina seleziona `Impostazioni`{.action} e, nella pagina `UpdraftPlus Backup/Restore`, clicca su `Impostazioni`{.action}:
 
-![Pagina UpdraftPlus Backup/Restore](images/updraftplus-settings.png){.thumbnail}
+![Pagina UpdraftPlus Backup/Restore](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings.png){.thumbnail}
 
 Definisci il backup giornaliero dei tuoi file e del tuo database:
 
-![Pagina UpdraftPlus](images/updraftplus-settings-2.png){.thumbnail}
+![Pagina UpdraftPlus](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings-2.png){.thumbnail}
 
 Scegli il backup via email.
 
 I backup saranno inviati all'indirizzo email dell'account amministratore (l'account che utilizzi):
 
-![Backup via email](images/email-setting.png){.thumbnail}
+![Backup via email](/pages/assets/screens/other/cms/wordpress/email-setting.png){.thumbnail}
 
 In fondo alla pagina, clicca su `Salva le modifiche`{.action} per confermare l'operazione.
 
@@ -124,11 +124,11 @@ In fondo alla pagina, clicca su `Salva le modifiche`{.action} per confermare l'o
 
 Accedi alla scheda `Backup/Ripristino`{.action} e clicca su `Esegui il backup adesso`{.action}:
 
-![Pagina UpdraftPlus Salvare/Ripristinare](images/updraftplus-backup-now.png){.thumbnail}
+![Pagina UpdraftPlus Salvare/Ripristinare](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-backup-now.png){.thumbnail}
 
 Nella nuova finestra, clicca su `Esegui il backup adesso`{.action}:
 
-![Pagina UpdraftPlus modale Salva/Ripristina](images/updraftplus-perform-backup.png){.thumbnail}
+![Pagina UpdraftPlus modale Salva/Ripristina](/pages/assets/screens/other/cms/wordpress/updraftplus/updraftplus-perform-backup.png){.thumbnail}
 
 Una volta terminati i backup, riceverai due email: uno con il contenuto del tuo Wordpress, l'altro con il database del tuo sito Web.
 Se non ricevi le email, verifica l'indirizzo email dell'account che utilizzi (nella sezione `Utenti`{.action}). Verifica anche le cartelle "SPAM / Posta indesiderata".

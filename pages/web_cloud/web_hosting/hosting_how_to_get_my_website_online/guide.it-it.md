@@ -70,7 +70,7 @@ Questi dati sono indicati nell’email di conferma dell’installazione dell'hos
 
 Se hai necessità di recuperarli, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `FTP - SSH`{.action}. 
 
-![Installazione sito](images/tab-pro.png){.thumbnail}
+![Installazione sito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 In questa interfaccia sono disponibili le informazioni di accesso allo spazio di storage. In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection).
 
@@ -96,7 +96,7 @@ Per conoscere la cartella in cui pubblicare il sito, accedi alla scheda `Multisi
 >
 > Un file "index.php" sostituirà sempre il file "index.html". Pertanto, quando entrambi sono presenti, sarà chiamato solo "index.php".
 
-![Installazione sito](images/root-folders.png){.thumbnail}
+![Installazione sito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Step 3: associa il sito Web a un database
 
@@ -120,7 +120,7 @@ Se disponi già di un database (incluso, ad esempio, in una soluzione di [hostin
 Per creare un nuovo database accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
 Inserisci le informazioni richieste.
 
-![Installazione sito](images/tab.png){.thumbnail}
+![Installazione sito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 #### 3. Importare il database esistente 
 

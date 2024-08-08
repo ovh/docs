@@ -40,7 +40,7 @@ Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Wy�
 
 Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} po prawej stronie wybranej kopii zapasowej, a następnie kliknij `Przywróć kopię zapasową`{.action}.
 
-![Web Cloud Databases](images/restore-the-backup.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/restore-the-backup.png){.thumbnail}
 
 > [!warning]
 >
@@ -51,7 +51,7 @@ Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} 
 
 Kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, a następnie kliknij `Importuj plik`{.action}.
 
-![Web Cloud Databases](images/import-file.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/import-file.png){.thumbnail}
 
 Masz dwie możliwości:
 
@@ -66,7 +66,7 @@ Wpisz nazwę pliku importowanego, kliknij `Przeglądaj`{.action}, aby go wybrać
 > Plik musi mieć format ".sql", ".txt" lub ".gz".
 > 
 
-![Web Cloud Databases](images/database-import-new-file-step-2.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
 
 Zaznacz, jeśli chcesz, **"Wyczyść aktualną bazę danych"** przed importem i **"Wyślij e-mail po zakończeniu importu"**, aby otrzymać informacje o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij `Zatwierdź`{.action}.
 
@@ -76,7 +76,7 @@ Jeśli wcześniej zaimportowałeś plik, możesz wybrać opcję **"Import istnie
 
 Wybierz plik w rozwijanym menu i kliknij `Dalej`{.action}.
 
-![Web Cloud Databases](images/database-import-existing-file-step-2.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 
 Zaznacz, jeśli chcesz, **"Wyczyść aktualną bazę danych"** przed importem i **"Wyślij e-mail po zakończeniu importu"**, aby otrzymać informacje o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij `Zatwierdź`{.action}.
 
@@ -101,7 +101,7 @@ Wybierz plik kopii zapasowej, klikając `Przeglądaj`{.action} (uwaga, plik nie 
 
 Pozostaw domyślne opcje i kliknij `Uruchom`{.action} import.
 
-![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Importuj bazę MySQL lub MariaDB za pomocą wiersza poleceń
 

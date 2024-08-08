@@ -1,5 +1,5 @@
 ---
-title: 'Public Cloud Quote erhöhen'
+title: 'Public Cloud Quota erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
 updated: 2024-05-21
 ---

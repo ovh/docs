@@ -61,7 +61,7 @@ Sous l'onglet `Informations générales`{.action}, vous trouverez le curseur `Pr
 >
 > Si le bouton `Protection contre le transfert` n'est pas présent, cela signifie que votre extension de nom de domaine ne nécessite pas de code de transfert. Vous pouvez alors lancer directement votre transfert.
 
-![protection activée](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
+![protection activée](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous souhaitez supprimer cette protection. Patientez quelques minutes pour que l'état passe à `Désactivée`{.action}.
 
@@ -76,7 +76,7 @@ Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous so
 > En effet, certains *codes de transfert* sont directement gérés par le *registre* de l'extension de votre nom de domaine. Un *registre* est une organisation qui gère l'ensemble des domaines pour une extension donnée. Par exemple, l'**AFNIC** gère l'ensemble des noms de domaine ayant pour extension "*.fr*". Si tel est le cas, vous devez contactez directement le *registre* qui gère l'extension de votre nom de domaine afin de récupérer le *code de transfert*.
 >
 
-![désactivation protection](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+![désactivation protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -94,7 +94,7 @@ Une fois la protection contre le transfert levée, vous pouvez récupérer le co
 
 Une fenêtre s'affiche alors et contient votre code AUTH/INFO (également appelé code de transfert, mot de passe de domaine, AUTH-CODE ou EPP-Code).
 
-![outgoingtransfer](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 Le code sera demandé par votre nouveau bureau d'enregistrement pour terminer le processus de transfert. Vous pouvez vérifier les détails auprès de votre nouveau bureau d'enregistrement.
 
@@ -121,4 +121,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

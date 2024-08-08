@@ -140,7 +140,7 @@ Pour créer une instance simple, vous avez besoin de 4 éléments :
 * Un type d'instance (flavor)
 * Une clé SSH
 
-A des fins d'exemple, nous allons créer une instance simple sur **Debian 10** avec la flavor **s1-2**, et importer une clé SSH. Ajoutez les lignes suivantes dans un fichier nommé *simple_instance.tf* :
+A des fins d'exemple, nous allons créer une instance simple sur **Debian 10** avec la flavor **d2-2**, et importer une clé SSH. Ajoutez les lignes suivantes dans un fichier nommé *simple_instance.tf* :
 
 ```python
 # Création d'une ressource de paire de clés SSH
@@ -155,7 +155,7 @@ resource "openstack_compute_instance_v2" "test_terraform_instance" {
   name        = "terraform_instance"    # Nom de l'instance
   provider    = openstack.ovh           # Nom du fournisseur
   image_name  = "Debian 10"             # Nom de l'image
-  flavor_name = "s1-2"                  # Nom du type d'instance
+  flavor_name = "d2-2"                  # Nom du type d'instance
   # Nom de la ressource openstack_compute_keypair_v2 nommée test_keypair
   key_pair    = openstack_compute_keypair_v2.test_keypair.name
   network {
@@ -202,7 +202,7 @@ Terraform will perform the following actions:
       + all_tags            = (known after apply)
       + availability_zone   = (known after apply)
       + flavor_id           = (known after apply)
-      + flavor_name         = "s1-2"
+      + flavor_name         = "d2-2"
       + force_delete        = false
       + id                  = (known after apply)
       + image_id            = (known after apply)
@@ -252,7 +252,7 @@ Comme vous pouvez le voir, votre instance nommée "terraform_instance" est en tr
 
 #### Créer des instances multiples
 
-Dans cette partie, nous souhaitons créer une instance sous Ubuntu avec la flavor « s1-2 » dans chaque région.
+Dans cette partie, nous souhaitons créer une instance sous Ubuntu avec la flavor « d2-2 » dans chaque région.
 
 Vous pouvez rechercher tous les noms de régions en utilisant cet appel API OVHcloud :
 
@@ -298,7 +298,7 @@ Pour ce faire, vous pouvez créer un fichier nommé `multiple_instance.tf`. Vous
    count = length(var.region)
    provider = openstack.ovh                         # Nom du fournisseur
    name = "terraform_instances"                     # Nom de l'instance
-   flavor_name = "s1-2"                             # Nom du type d'instance
+   flavor_name = "d2-2"                             # Nom du type d'instance
    image_name = "Debian 10"                         # Nom de l'image
    # element est une fonction qui accède à l'élément à la position
    # count.index de la liste var.region. Il permet d'itérer entre les régions
@@ -412,7 +412,7 @@ variable "region" {
    provider     = openstack.ovh                             # Nom du fournisseur
    name         = "proxy_instance"                              # Nom de l'instance
    image_name   = "Debian 10"                           # Nom de l'image
-   flavor_name  = "s1-2"                                # Nom du type d'instance
+   flavor_name  = "d2-2"                                # Nom du type d'instance
    # Nom de la ressource openstack_compute_keypair_v2 nommée test_keypair
    key_pair     = openstack_compute_keypair_v2.test_keypair.name
    # Ajout du réseau public et privé
@@ -504,7 +504,7 @@ resource "openstack_compute_instance_v2" "front" {
   provider        = openstack.ovh                               # Nom du fournisseur
   name            = "front"                                     # Nom de l'instance
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
-  flavor_name     = "s1-2"                                      # Nom du type d'instance
+  flavor_name     = "d2-2"                                      # Nom du type d'instance
   image_id        = data.openstack_images_image_v2.archlinux.id # Identifiant de l'image de l'instance
   security_groups = ["default"]                                 # Ajoute l'instance au groupe de sécurité
   network {
@@ -531,7 +531,7 @@ resource "openstack_compute_instance_v2" "back" {
   provider        = openstack.ovh                                        # Nom du fournisseur
   name            = "back"                                               # Nom de l'instance
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
-  flavor_name     = "s1-2"                                               # Nom du type d'instance
+  flavor_name     = "d2-2"                                               # Nom du type d'instance
   image_id        = data.openstack_images_image_v2.archlinux.id          # Identifiant de l'image de l'instance
   security_groups = ["default"]                                          # Ajoute l'instance au groupe de sécurité
   network {

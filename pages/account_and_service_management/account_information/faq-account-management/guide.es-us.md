@@ -1,10 +1,9 @@
 ---
 title: Preguntas frecuentes sobre la gestión de la cuenta de OVHcloud
 excerpt: Consulte las preguntas más frecuentes sobre la gestión de la cuenta de OVHcloud
-updated: 2022-11-21
+updated: 2024-07-04
 ---
 
-  
 ## Objetivo
 
 Consulte las preguntas más frecuentes sobre la gestión de la cuenta de OVHcloud.
@@ -164,6 +163,22 @@ Nuestro equipo le responderá lo antes posible.
 ### He respondido al mensaje que me envió el equipo de Abuse de OVHcloud, pero mi servicio sigue bloqueado. ¿Qué puedo hacer?
 
 Puede crear un tíquet de asistencia desde su área de cliente de OVHcloud para solicitar información adicional sobre el tratamiento de su tíquet de Abuse. Por favor, incluya la referencia de su tíquet de Abuse para facilitar el tratamiento del tíquet de asistencia.
+
+### ¿Cómo eliminar una cuenta de OVHcloud?
+
+Solo es posible cerrar su cuenta de cliente de OVHcloud y eliminar sus datos personales si:
+
+1. Ya no tiene servicios visibles en la sección "[Mis servicios](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". En caso contrario, deberá solicitar en primer lugar la baja del servicio y esperar a su eliminación.
+2. No hay facturas pendientes de pago. En caso contrario, deberá abonarlos haciendo clic en el botón `Abonar inmediatamente`{.action} en las acciones de masa de la página "[Mis facturas](https://www.ovh.com/manager/#/dedicated/billing/history)".
+3. No hay pedidos en curso. Consúltelo en [esta página](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Su cuenta de prepago no es positiva. Consúltelo en [esta página](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Si cumple las condiciones anteriores, puede solicitar la eliminación de su cuenta de OVHcloud y de los datos asociados siguiendo estos pasos:
+
+1. Conéctese al [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
+2. Haga clic en el botón `Crear un tíquet`{.action}
+3. Seleccione el motivo `Gestione su cuenta de cliente OVHcloud`{.action}.
+4. Indique `Quiero cerrar mi cuenta de cliente OVHcloud`{.action} y siga los pasos que se indican.
 
 ## Más información
 

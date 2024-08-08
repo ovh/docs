@@ -1,6 +1,6 @@
 ---
 title: "Spécifications de sécurité du service Serveurs Dédiés"
-updated: 2024-05-06
+updated: 2024-06-26
 ---
 
 ## Objectif
@@ -14,10 +14,10 @@ En complément au [modèle de responsabilité entre OVHcloud et le client sur le
 - ISO/IEC 27017
 - ISO/IEC 27018
 - HDS
-- SOC 1 type 1
-- SOC 2 type 1
-- CSA type 1
-- C5 type 1
+- SOC 1 type II
+- SOC 2 type II
+- CSA type II
+- C5 type II
 - CISPE
 
 ## 2 - Bonnes pratiques à déployer sur le service

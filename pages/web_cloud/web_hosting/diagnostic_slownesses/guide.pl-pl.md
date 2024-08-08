@@ -100,11 +100,11 @@ Aby mieć pewność, że Twoje usługi (hosting współdzielony **i** baza danyc
 
 Aby dowiedzieć się, gdzie znajduje się Twój hosting, zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action} i wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdziesz `centrum` danych hostingu współdzielonego oraz `filer`, w którym znajduje się ono.
 
-![Pobierz Filer](images/find-filer.png){.thumbnail}
+![Pobierz Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
 
 Następnie kliknij zakładkę `MultiSite`{.action}, aby pobrać numer klastra, na którym znajduje się Twój hosting.
 
-![Pobranie klastra](images/find-cluster.png){.thumbnail}
+![Pobranie klastra](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >
@@ -159,7 +159,7 @@ Jeśli korzystasz z bazy danych w ofercie **Web Cloud Databases**, zapoznaj się
 
 Jeśli logowanie się powiodło się, otrzymasz następujący interfejs:
 
-![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
+![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -242,7 +242,7 @@ Im mniejsza liczba zapytań, tym mniej zasobów przypisanych do hostingu.
 >
 > W tym celu naciśnij klawisz `F12`, gdy jesteś w przeglądarce Firefox, a następnie wybierz kartę `Sieć`. Przeładuj swoją stronę www za pomocą klawiszy `Ctrl + Maj + R`, aby narzędzie wyświetlało zapytania wykonane w celu załadowania strony. Wyszukaj najdłuższe elementy do załadowania i następnie zoptymalizuj.
 >
->![Analiza sieci Firefox](images/F12.png){.thumbnail}
+>![Analiza sieci Firefox](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
 >
 
 Aby zmniejszyć przepływ zapytań do każdego załadowania strony, możesz również uruchomić usługę Content Delivery Network (CDN). Pozwoli to na umieszczenie w pamięci cache statycznej zawartości Twojej strony WWW. Twój hosting WWW będzie mniej obciążony i będzie dysponował większą liczbą zasobów do obsługi pozostałych zapytań, które nie mogą być zapisane w pamięci cache.

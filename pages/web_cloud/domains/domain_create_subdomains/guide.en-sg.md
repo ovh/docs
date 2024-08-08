@@ -23,7 +23,7 @@ A **domain name** is made up of levels. These levels are usually separated by a 
 
 - Third Level Domain (**subdomain**): Labels from this third level on are called **subdomain**. In this guide, we will describe its definition, and explain how you can implement it with your various services.
 
-![URL content](images/url-composition.png){.thumbnail}
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
   
 **Find out more about subdomains and how to create one with OVHcloud.**
 
@@ -192,4 +192,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

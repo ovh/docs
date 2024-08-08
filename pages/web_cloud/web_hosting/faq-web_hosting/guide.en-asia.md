@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting FAQ"
 excerpt: "Find the answers to the most frequently asked questions about OVHcloud Web Hosting plans"
-updated: 2023-04-24
+updated: 2024-06-27
 ---
 
 ## Manage your solution
@@ -38,9 +38,9 @@ To order the web hosting plan that best suits your needs, you can view our web h
 
 Once you have made your choice, follow the instructions in our guide [Changing your web hosting plan offer](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer).
 
-### How do I transfer my website and emails to OVHcloud servers? 
+### How do I transfer my website, database, domain name and emails to OVHcloud servers without any service interruptions?
 
-Read our guide on [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+Refer to our guide on [Migrating your website and associated services to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh), for the full set of steps to follow.
 
 ### How do I host multiple websites on my Web Hosting plan? 
 
@@ -79,7 +79,7 @@ Then check out the [current events on our infrastructure](https://www.status-ovh
 
 ### What do I do if, after my website has been put online, the OVHcloud "Website under construction" page remains displayed?
 
-![site-en-construction](images/site-en-construction.png){.thumbnail}
+![site-en-construction](/pages/assets/screens/other/browsers/errors/site-en-construction.png){.thumbnail}
 
 When you install a Web Hosting plan, OVHcloud implements this page as an **index.html** file, contained in your FTP server’s root folder `www`.
 
@@ -89,7 +89,7 @@ If you have chosen [to install your website manually](/pages/web_cloud/web_hosti
 
 ### What do I do if my website appears on a xxxxx.cluster0xx.hosting.ovh.net-type website?
 
-![url-cluster](images/url-cluster.png){.thumbnail}
+![url-cluster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
 There are two scenarios. Either your website was created with this web address or it appeared following a modification.
 
@@ -102,11 +102,11 @@ There are two scenarios. Either your website was created with this web address o
 
 In the first case, after you have completed all the necessary backups, delete your module in the `Hosting plans` section of the OVHcloud Control Panel:
 
-![delete-a-module](images/delete-a-module.png){.thumbnail}
+![delete-a-module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module.png){.thumbnail}
 
 Then delete its database from the database tab on the right-hand side of your screen, in the section `Hosting plans`:
 
-![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
+![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
  
 Finally, retry the installation on the domain name you want, using the [1-click module](/pages/web_cloud/web_hosting/cms_manage_1_click_module) feature.
 
@@ -127,7 +127,7 @@ If your website has a database, please refer to our guide on [Restoring a backup
 
 ### What do I do if my website redirects to the OVHcloud webmail-login-interface?
 
-![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
+![webmail-login-interface](/pages/assets/screens/website/webmail/webmail-login-interface.png){.thumbnail}
 
 This anomaly indicates an incorrect configuration in the [DNS servers](/pages/web_cloud/domains/dns_server_edit) or the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) associated with your domain name.
 
@@ -147,7 +147,7 @@ Compare the `Target` of the `NS` type records listed in the `DNS zone`{.action} 
 
 ### What do I do if my website displays a page does not redirect correctly error?
 
-![the-page-isnt-redirecting-properly](images/the-page-isnt-redirecting-properly.png){.thumbnail}
+![the-page-isnt-redirecting-properly](/pages/assets/screens/other/browsers/errors/the-page-isnt-redirecting-properly.png){.thumbnail}
 
 > [!alert]
 >
@@ -166,7 +166,7 @@ If the restores do not allow you to restore access to your site, contact your we
 
 ### What do I do if my website displays a "503 error Backend fetch failed (Varnish cache)" error?
 
-![503_varnish](images/http-503-backend-varnish.png){.thumbnail}
+![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
 If you have enabled the [CDN option](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) on your Web Hosting plan, disable *Maintenance* mode on your WordPress or PrestaShop website.
 
@@ -174,7 +174,7 @@ If you have not enabled this option or used *Maintenance* mode, please contact y
 
 ### What do I do if my website displays a "Your request has been blocked" error?
 
-![your-request-has-been-blocked](images/your-request-has-been-blocked.png){.thumbnail}
+![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
 This message indicates that the type of HTTP request you are trying to make on your website is prohibited for a limited time. In this situation, [examine your website’s logs](/pages/web_cloud/web_hosting/logs_and_statistics) to determine which requests caused this block.
 
@@ -182,7 +182,7 @@ To help you correct these anomalies, contact your webmaster or one of our [partn
 
 ### What should I do if my website has a "Your IP has been banned" error?
 
-![your-ip-has-been-banned](images/your-ip-has-been-banned.png){.thumbnail}
+![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
 This message indicates that the IP address you use to log on to your website is blocked for a limited time. 
 
@@ -192,7 +192,7 @@ You can also contact one of our [partners](/links/partner) to check your website
 
 ### I have ordered a domain name with special characters, and it appears written in a strange way in my Control Panel. What should I do?
 
-![idn-notation](images/idn-notation.png){.thumbnail}
+![idn-notation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
 You have no action to take in this situation. Even if your domain appears in [internationalised notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name){.external} in your Control Panel, it will work and display in a completely normal way elsewhere. Your website's web address will be displayed as you requested. Your email addresses will also appear as you wish to your contacts.
 
