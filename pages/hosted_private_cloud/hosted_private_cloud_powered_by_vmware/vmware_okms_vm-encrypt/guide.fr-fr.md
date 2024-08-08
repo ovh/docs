@@ -58,10 +58,10 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 
 #### URLs OKMS
 
-> [!Warning]
+> [!Primary]
 >
-> Ces éléments sont susceptibles d'évoluer dans le temps. Nous les énumérons ici afin de faciliter votre compréhension et de vous permettre d'avoir une vision globale des paramètres.
->
+> Cette fonctionnalité est disponible en version bêta. Ces liens seront mis à jour pendant cette période.
+> 
 
 | **Type**    | **URL**                          | **Région**          | **OKMS Région enum** | **IP**         |
 |-------------|----------------------------------|---------------------|----------------------|----------------|
@@ -76,9 +76,9 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 
 #### Liste des appels API v1 et v2 KMS  <a name="listing-api"></a>
 
-> [!Warning]
+> [!Primary]
 >
-> Ces éléments sont susceptibles d'évoluer dans le temps. Nous les énumérons ici afin de faciliter votre compréhension et de vous permettre d'avoir une vision globale des paramètres.
+> Cette fonctionnalité est disponible en version bêta. Ces appels API peuvent évoluer avec le temps et être mis à jour pendant cette période.
 >
 
 | **Methode**           | **API** | **Path**                                                                | **Commentaires**                                                |
@@ -227,7 +227,7 @@ Cette étape doit être réalisée **immédiatement** après commande de votre K
 
 **Ouverture des flux (obligatoire)** :
 
-Pour créer ou Importer un service de gestion de clé KMS, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Hosted Private Cloud`.{.action}. Dans la colonne de gauche, cliquez sur `VMware`.{.action}, puis puis sélectionnez votre PCC concerné. Sur la page qui s'affiche, cliquez sur l'onglet `Sécurité`.{.action}.
+Pour créer ou Importer un service de gestion de clé KMS, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Hosted Private Cloud`.{.action}. Dans la colonne de gauche, cliquez sur `VMware`.{.action}, puis sélectionnez votre PCC concerné. Sur la page qui s'affiche, cliquez sur l'onglet `Sécurité`.{.action}.
 
 ![Manager Hpc Security KMS](images/manager_hpc_security-opti.png){.thumbnail}
 
@@ -343,14 +343,21 @@ Pour mettre à jour votre KMS avec un KMS OVHcloud :
 
 > [!api]
 >
-> @api {v1} /dedicatedcloud  POST /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties
+> @api {v1} /dedicatedCloud  POST /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties
 >
 >
 > **Paramètres** :
 >
-> - `serviceName` : Renseignez le nom de votre vSphere managé. Exemple : pcc-XX-XX-XX-XX.
 > - `kmsId` : Saisissez l'ID de votre serveur OKMS. (Exemple : 350)
+> - `serviceName` : Renseignez le nom de votre vSphere managé. Exemple : pcc-XX-XX-XX-XX.
 >
+> Exemple :
+> ```Shell
+> {
+> "description": "string",
+> "sslThumbprint": "string"
+> }
+> ```
 
 Retour :
 
@@ -409,7 +416,7 @@ Pour terminer, cliquez sur `Créer la politique`{.action}.
 
 Votre politique est créée, vous pouvez maintenant activer le chiffrement au sein de PCC en changeant la **"stratégie VM"** de vos machines virtuelles.
 
-Si vous ne disposez d'aucune stratégie préétablie, l'étape 5 vous indiquera comment en concevoir une. Dans le cas contraire, veuillez passer immédiatement à l'étape 6.
+Si vous ne disposez d'aucune stratégie préétablie, je vous invite à consulter le control panel API et determiner les IAM actions nécessaires à la politique. Si vous disposez déja d'un politique IAM vous pouvez la modifier et ajouter les actions indispensables. 
 
 ///
 

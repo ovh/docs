@@ -90,11 +90,21 @@ KMIP fournit un service compatible avec le chiffrement vSAN et le chiffrement ba
 
 ### Étape 1 - Présentation des choix qui s'offrent à vous
 
+> [!Primary]
+> 
+> À partir de la mise à jour 2 de vSphere 7.0, les machines virtuelles chiffrées et les TPM virtuels peuvent continuer à fonctionner même lorsque le serveur de clés est temporairement hors connexion ou indisponible.
+>
+> Vérifiez que le serveur de clés (KMS) figure dans le Guide de compatibilité VMware pour les serveurs de gestion de clés (KMS) et qu'il est conforme à KMIP 1.1, et qu'il peut s'agir d'un serveur et d'une fonderie de clés symétriques.
+> 
+
 /// details | Quelles options s'offrent à vous pour activer le chiffrement de VM au sein de vSphere managé on OVHcloud ?
 
 #### Option 1 - Avec un KMS externe (non OVHcloud)
 
-Vous disposez déja d'un service de gestion de clés (KMS) et vous voulez l'utiliser sur votre Hosted Private Cloud VMware on OVHcloud, par exemple pour chiffrer vos machines virtuelles vSphere par exemple.
+> [!Warning]
+>
+> Réfléchissez bien aux dépendances de votre infrastructure par rapport au serveur clé. Certaines solutions KMS sont livrées comme des appliances virtuelles, ce qui permet de créer une boucle de dépendance ou d'autres problèmes de disponibilité avec un mauvais emplacement de l'appliance KMS. Vous disposez déja d'un service de gestion de clés (KMS) et vous voulez l'utiliser sur votre Hosted Private Cloud VMware on OVHcloud, par exemple pour chiffrer vos machines virtuelles vSphere par exemple.
+>
 
 **Comment activer le chiffrement des disques sur vos VM** ?
 
