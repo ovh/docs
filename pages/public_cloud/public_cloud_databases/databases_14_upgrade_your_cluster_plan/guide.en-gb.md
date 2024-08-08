@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - How to update your service plan
 excerpt: Find out how to upgrade the service plan of your cluster
-updated: 2024-04-17
+updated: 2024-08-08
 ---
 
 ## Objective
@@ -14,10 +14,12 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 
 ## Requirements
 
-- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
-## UI Instructions
+## Instructions
+
+### Using the OVHcloud Control Panel
 
 To upgrade the service plan of your cluster, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar and select your engine instance.
 
@@ -27,11 +29,14 @@ In the `General information`{.action} tab, click `Upgrade your plan`{.action} an
 
 ![Change solution](images/plan_change_view.png)
 
-Curently the UI do not allow downgrading plan for some engine but you can do it with API
+Curently the OVHcloud Control Panel does not allow downgrading the service plan for some engines but you can do it using the API.
 
-## API Instructions
+### Using the OVHcloud API
 
-To upgrade or downgrade the service plan of your cluster, Use the following API call:
+> [!success]
+> If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+
+To upgrade or downgrade the service plan of your cluster, use the following API call:
 
 > [!api]
 >
@@ -44,12 +49,12 @@ body : {
 }
 ```
 
-In the case you downgrade to essential and that your current flavor and/or number of node is superior of the essential max flavor and/or number of node, you will see an auto downgrade of these two parameters to match essential plan requirement
+If you downgrade to an Essential plan, your current flavor and/or number of nodes will be downgraded automatically if they exceed the limits of the Essential plan.
 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
