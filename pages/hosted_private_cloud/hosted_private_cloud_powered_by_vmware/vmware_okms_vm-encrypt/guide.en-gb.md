@@ -42,13 +42,13 @@ content:'\25BC';
 **Summary of guide steps**:
 
 - [Introduction - Lists of OVHcloud KMS endpoints](#introduction)
-- [Step 1 - Order an OVHcloud KMS (mandatory)](#commande-okms)
+- [Step 1 - Order an OVHcloud KMS (mandatory)](#order-okms)
 - [Step 2 - OVHcloud KMS activation (mandatory)](#activation-okms)
 - [Step 3 - Create an IAM policy (required)](#iam-creation)
 - [Step 4 - Configuring OKMS with vSphere (mandatory)](#add-okms)
-- [Step 5 - Create a VM storage policy (mandatory)](#politique-stockage)
-- [Step 6 - Enabling encryption on a VM (mandatory)](#activation-chiffrement)
-- [End - Useful information TLS OKMS]()
+- [Step 5 - Create a VM storage policy (mandatory)](#storage-policy)
+- [Step 6 - Enabling encryption on a VM (mandatory)](#activation-encryption)
+- [End - Useful information TLS OKMS](#useful-information)
 
 ### Introduction <a name="introduction"></a>
 
@@ -247,18 +247,18 @@ In the new window that pops up, fill out the following forms:
 
 To retrieve the TLS fingerprint, launch the following OpenSSL command (adapt your OKMS endpoint to the right region (e.g. eu-west-rbx/sbg), which includes your OVHcloud KMS):
 
-Shell
+```Shell
 openssl s_client -connect eu-west-rbx.okms.ovh.net:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 ---
-Back:
+Return:
 SHA1 Fingerprint=FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47
-“
+```
 
 To retrieve the public IP of the OVHcloud KMS server, launch a ping. For example:
 
-Shell
+```Shell
 ping eu-west-rbx.okms.ovh.net
-“
+```
 
 This is the IP of the Roubaix KMS and its TLS fingerprint. Adapt the command above to suit the region where your KMS is located (Strasbourg, for example).
 
@@ -315,29 +315,28 @@ If you have already opened the streams from the [control panel](/links/manager),
 
 Copy and paste (with KMS settings):
 
->
-> Shell
-> {
-> "description": "Okms demo",
-> "ip": "91.134.128.102",
-> "sslThumbprint": "FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47"
-> }
-> “
+```Shell
+{
+"description": "Okms demo",
+"ip": "91.134.128.102",
+"sslThumbprint": "FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47"
+}
+ ```
 
 To retrieve the KMS TLS fingerprint, run the following command **OpenSSL**, adapting the command to the region where your KMS is located:
 
-Shell
+```Shell
 openssl s_client -connect eu-west-rbx.okms.ovh.net:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 ---
 Back:
 SHA1 Fingerprint=FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47
-“
+```
 
 To retrieve the public IP of the OVHcloud KMS, ping it by adapting the order to the region where your KMS is located:
 
-Shell
+```Shell
 ping eu-west-rbx.okms.ovh.net
-“
+```
 
 To update your KMS with an OVHcloud KMS:
 
@@ -351,28 +350,30 @@ To update your KMS with an OVHcloud KMS:
 > - `kmsId`: Enter the ID of your OKMS server. (Example: 350)
 > - `serviceName`: Enter the name of your managed vSphere. Example: pcc-XX-XX-XX-XX.
 >
-> Example:
-> Shell
-> {
-> "description": "string",
-> "sslThumbprint": "string"
-> }
-> “
 
-Back:
+Example:
+
+```Shell
+ {
+"description": "description test",
+"sslThumbprint": "FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47"
+}
+```
+
+Return:
 
 After running the API, you should see the following result in response:
 
-Shell
+```Shell
 {
-"kmsId": XXX,
-"kmsTcpPort": 5696,
-"sslThumbprint": "Null",
-"description": "OKMS description",
-"state": "delivered",
-"ip": "Null"
+  "kmsId": XXX,
+  "kmsTcpPort": 5696,
+  "sslThumbprint": "Null",
+  "description": "OKMS description",
+  "state": "delivered",
+  "ip": "Null"
 }
-“
+```
 
 Wait (status: updating) for the streams to open and for the status to change to the "delivered" state (optional).
 
@@ -581,7 +582,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >> > - `okmsId`: ID of your OVHcloud KMS (OKMS).
 >> > - `With CSR provided`: Trust chain between OKMS and VCenter with or without CSR.
 >> >
->> > Shell
+>> > ```Shell
 >> > {
 >> > "csr": "------BEGIN CERTIFICATE REQUEST----\nMIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDzANBgNV\nBAcMBkxpbmRvbjEWMBQGA1UECgwNRGlnaUNQgSW5jERMA8GA1UECIRGIRGna\nlnlxGUNGMGBUb lnaWNlcnQuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8+To7d+2kPWeBv/orU3LVbJwDrSQbeKamCmo\nwp5bqDxIwV20zqRb7APUOKYoVEFFOEQs6T6gImnIolhbiH6m4zgZ/CPvWOBkcc2c\EmctttGb ldxRthNLOs1efOhdnWFuhI162qmcflgpiI\nWDuwq4C9f+YkeJhNn9dF5+owm8cOQmDrV8NNdiTqin8q3qYAHHJRW28glJUCZkTZ\nwIaSR6crBQ8TbYNE0dc+Caa3DOIkz1EOsHWTx+n0KfqbxXxXxXxDxDxDxDxBt4 yEp82G96/Ggcf7F33xMxe0yc+Xa6owIDAQABoAAwDQYJ\nKoZIhvcNAQEFBQADggEBAB0kcrFccSmFDmxox0Ne01UIqSsDqHgL+XmHTXJwre6D\nhJSZwbvEtOK0G3+dr4Fs11WuUNLsc5Lsx6a6a6a6a6a4aMMMGyMMMMMMGyXMYQmMMYQmM T3ZoCGpIXbw+iP3lmEEXgaQL0Tx5LFl/okKbKYwIqNiyKWOMj7ZR/wxWg/\nZDGRs55xuoeLDJ/ZRFf9bI+IaCUd1YrfYcHIl3G87Av+r49YVwqRDT0VDV7uLgqn\n29XI1VUNCPQGn/e7p6PyoXoXoeaRaaQo Uqy1hvJac9QFO2\n97Ob1alpHPoZ7mWiEuJwjBPii6a9M9G30nUo39lBi1w=\n------END CERTIFICATE REQUEST-------",
 >> > "description": "My user reader credential",
@@ -592,7 +593,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >> > "name": "user",
 >> > "validity": 365
 >> > }
->> > “
+>> > ```
 >>
 >> A signature ID ("credentialId") will be given to you. You need to retrieve it with the `okmsId` in order to launch the GET (see below) and retrieve the signed CSR. All you need to do now is upload it to vSphere.
 >>
@@ -747,7 +748,7 @@ This confirms that your policy works with the OKMS server and that encryption is
 
 ///
 
-### Useful information - TLS/KMS <a name="Useful information"></a>
+### Useful information - TLS/KMS <a name="useful-information"></a>
 
 /// details | Useful information for manipulating your TLS certificates with OpenSSL.
 
@@ -773,11 +774,11 @@ Or use a more graphical web tool, such as: [sslshopper](https://www.sslshopper.c
 
 To check if the CSR matches your certificate, you can do so with these OpenSSL commands:
 
-Shell
+```Shell
 openssl pkey -in privateKey.key -pubout -outform pem | sha256sum
 openssl x509 -in certificate.crt -pubkey -noout -outform pem | sha256sum
 openssl req -in CSR.csr -pubkey -noout -outform pem | sha256sum
-“
+```
 
 #### SSL Converter
 
@@ -810,13 +811,13 @@ Convert DER to PEM:
 
 Adapt the command with your CSR file.
 
-Shell
+```Shell
 # Format for the OVHcloud API:
 awk '{printf "%s\\n", $0}' file
 
 # Format for vSphere:
 awk '{gsub(/\\n/,"\n")}1' file
-“
+```
 
 #### Retrieve the OKMS public certificate manually (not mandatory)
 

@@ -46,9 +46,9 @@ details[open]>summary::before {
 - [Étape 2 - Activation du KMS OVHcloud (obligatoire)](#activation-okms)
 - [Étape 3 - Création d'une politique IAM (obligatoire)](#iam-creation)
 - [Étape 4 - Configuration de OKMS avec vSphere (obligatoire)](#add-okms)
-- [Étape 5 - Création d'une stratégie de stockage VM (obligatoire)](#politique-stockage)
-- [Étape 6 - Activation du chiffrement sur une VM (obligatoire)](#activation-chiffrement)
-- [Fin - Informations utiles TLS OKMS]()
+- [Étape 5 - Création d'une stratégie de stockage VM (obligatoire)](#storage-policy)
+- [Étape 6 - Activation du chiffrement sur une VM (obligatoire)](#activation-encryption)
+- [Fin - Informations utiles TLS OKMS](#useful-information)
 
 ### Introduction <a name="introduction"></a>
 
@@ -315,14 +315,14 @@ Si vous avez déjà réalisé l'ouverture des flux depuis le [control panel](/li
 
 Copier-coller (avec les paramètres KMS) :
 
->  
-> ```Shell
-> {
->  "description": "Okms demo",
->  "ip": "91.134.128.102",
->  "sslThumbprint": "FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47"
-> }
-> ```
+  
+```Shell
+{
+"description": "Okms demo",
+"ip": "91.134.128.102",
+"sslThumbprint": "FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47"
+}
+```
 
 Pour récupérer l'empreinte TLS du KMS, lancer la commande **OpenSSL** suivante en adaptant la commande à la région où se trouve votre KMS :
 
@@ -351,12 +351,14 @@ Pour mettre à jour votre KMS avec un KMS OVHcloud :
 > - `kmsId` : Saisissez l'ID de votre serveur OKMS. (Exemple : 350)
 > - `serviceName` : Renseignez le nom de votre vSphere managé. Exemple : pcc-XX-XX-XX-XX.
 >
-> Exemple :
-> ```Shell
-> {
-> "description": "string",
-> "sslThumbprint": "string"
-> }
+
+Exemple :
+
+```Shell
+{
+"description": "Description test",
+"sslThumbprint": "FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47"
+}
 > ```
 
 Retour :
@@ -631,7 +633,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 
 ///
 
-## Étape 5 - Création d'une stratégie de stockage VM (obligatoire) <a name="politique-stockage"></a>
+## Étape 5 - Création d'une stratégie de stockage VM (obligatoire) <a name="storage-policy"></a>
 
 /// details | Comment créer une stratégie de stockage VM pour activer le chiffrement dans VMware vSphere ?
 
@@ -700,7 +702,7 @@ Votre stratégie étant créée, vous pouvez maintenance procéder à l'activati
 
 ///
 
-### Étape 6 - Activation du chiffrement sur une VM (obligatoire) <a name="activation-chiffrement"></a>
+### Étape 6 - Activation du chiffrement sur une VM (obligatoire) <a name="activation-encryption"></a>
 
 /// details | Comment activer le chiffrement dans une VM avec la politique de stockage ?
 
