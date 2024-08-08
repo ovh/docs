@@ -91,7 +91,7 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 
 ### Hôtes (calcul)
 
-|                   Gamme commerciale                   | Disponibilité générale | End of Sales | End of Growth | End of Life |
+|                   Commercial Range                    | Disponibilité générale | End of Sales | End of Growth | End of Life |
 |:-----------------------------------------------------:|:----------------------:|:------------:|:-------------:|:-----------:|
 |                 DC2011 (AMD Opteron)                  |          2011          |  28/02/2015  |  28/02/2022   | 30/09/2022  |
 |                DC2013 (AMD Bulldozer)                 |          2013          |  28/02/2015  |  28/02/2022   | 30/09/2022  |

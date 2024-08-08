@@ -91,15 +91,15 @@ This table presents a summary of the different phases of the lifecycle of the se
 
 ### Hosts (compute)
 
-|                   Commercial Range                    | General Availability | End of Sales | End of Growth  | End of Life |
+|                   Commercial Range                    | General Availability | End of Sales | End of Growth | End of Life |
 |:-----------------------------------------------------:|:----------------------:|:------------:|:-------------:|:-----------:|
-|                 DC2011 (AMD Opteron)                  |          2011          |  28/02/2015  |  28/02/2022   | 30/09/2022  |
-|                DC2013 (AMD Bulldozer)                 |          2013          |  28/02/2015  |  28/02/2022   | 30/09/2022  |
-|                DC2014 (AMD PileDriver)                |          2014          |  31/08/2017  |  28/02/2022   | 30/09/2022  |
-|                DC2016 (AMD PileDriver)                |          2016          |  30/11/2018  |  28/02/2022   | 30/09/2022  |
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016          |  30/04/2017  |  30/03/2026   | 31/07/2026  |
-|              SDDC2018 (Intel Broadwell)               |          2018          |  30/11/2018  |  30/03/2026   | 31/07/2026  |
-|             Essentials (Intel Broadwell)              |          2020          |  30/09/2025  |  30/03/2026   | 31/07/2026  |
+|                 DC2011 (AMD Opteron)                  |          2011          |  2015-02-28  |  28-02-2022   | 2022-09-30  |
+|                DC2013 (AMD Bulldozer)                 |          2013          |  2015-02-28  |  28-02-2022   | 2022-09-30  |
+|                DC2014 (AMD PileDriver)                |          2014          |  2017-08-31  |  28-02-2022   | 2022-09-30  |
+|                DC2016 (AMD PileDriver)                |          2016          |  2018-11-30  |  28-02-2022   | 2022-09-30  |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016          |  2017-04-30  |  2026-03-30   | 2026-07-31  |
+|              SDDC2018 (Intel Broadwell)               |          2018          |  2018-11-30  |  2026-03-30   | 2026-07-31  |
+|             Essentials (Intel Broadwell)              |          2020          |  2025-09-30  |  2026-03-30   | 2026-07-31  |
 |               Premier (Intel Xeon Gold)               |          2020          |              |               |             |
 
 ## Integrated Software
