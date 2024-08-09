@@ -12,13 +12,9 @@ updated: 2024-08-09
 
 Najczęściej zadawane pytania znajdziesz w pomocy OVHcloud.
 
-### Co zrobić, kiedy nie mogę połączyć się z działem wsparcia klienta przez telefon?
-
-Aby nie przedłużać oczekiwania na pomoc przez telefon, prosimy o utworzenie zgłoszenia w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Kliknij przycisk `Utwórz zgłoszenie`{.action}.
-
-Możesz również zapoznać się z całością naszej dokumentacji (FAQ, przewodniki, narzędzia do diagnostyki, ...) dostępnej w [Centrum Pomocy](https://help.ovhcloud.com/csm/pl-documentation?id=kb_home).
-
 <a name="sso"></a>
+
+## FAQ
 
 ## Co zrobić w sytuacji, gdy mam problem z zalogowaniem się do centrum pomocy lub do interfejsu zarządzania zgłoszeniami?
 
@@ -30,12 +26,11 @@ Możliwe przyczyny tego problemu:
 
 Oto rozwiązania, których należy wypróbować:
 
-1. **Hasło** : upewnij się, że wprowadzono poprawne hasło lub zresetuj hasło, postępując zgodnie z [tą dokumentacją](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
-2. **Pliki cookie** : upewnij się, że zezwalasz na pliki cookie w przeglądarce.
-3. **Kraj, w którym obowiązuje rozliczenie** : możesz spróbować zalogować się za pomocą jednej z dwóch odpowiednich bram w zależności od Twojej lokalizacji i kraju, w którym zarejestrowane jest rozliczenie:
-
-- [Unia Europejska (UE)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
-- [Kanada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
+- **Hasło** : upewnij się, że wprowadzono poprawne hasło lub zresetuj hasło, postępując zgodnie z [tą dokumentacją](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
+- **Pliki cookie** : upewnij się, że zezwalasz na pliki cookie w przeglądarce.
+- **Kraj, w którym obowiązuje rozliczenie** : możesz spróbować zalogować się za pomocą jednej z dwóch odpowiednich bram w zależności od Twojej lokalizacji i kraju, w którym zarejestrowane jest rozliczenie:
+    - [Unia Europejska (UE)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
+    - [Kanada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
 
 Jeśli problem będzie się powtarzać, skontaktuj się z naszym zespołem pomocy technicznej, aby uzyskać dalszą pomoc.
 
@@ -47,6 +42,12 @@ Jeśli masz trudności z zalogowaniem się do Panelu klienta, możesz również 
 - Kanada (CA): <https://ca.ovh.com/auth/>
 
 Może to rozwiązać niektóre problemy z połączeniem.
+
+### Co zrobić, kiedy nie mogę połączyć się z działem wsparcia klienta przez telefon?
+
+Aby nie przedłużać oczekiwania na pomoc przez telefon, prosimy o utworzenie zgłoszenia w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Kliknij przycisk `Utwórz zgłoszenie`{.action}.
+
+Możesz również zapoznać się z całością naszej dokumentacji (FAQ, przewodniki, narzędzia do diagnostyki, ...) dostępnej w [Centrum Pomocy](https://help.ovhcloud.com/csm/pl-documentation?id=kb_home).
 
 ### Dlaczego formularz otwierania zgłoszenia został zmieniony?
 

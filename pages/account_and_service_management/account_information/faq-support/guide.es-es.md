@@ -12,13 +12,9 @@ updated: 2024-08-09
 
 Encuentre aquí las preguntas más frecuentes sobre el soporte de OVHcloud
 
-### ¿Qué hacer si no consigo contactar con el soporte por teléfono?
-
-Para evitar tener que esperar por teléfono, le invitamos a crear una solicitud de soporte desde el [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Haga clic en el botón `Crear tíquet`{.action}.
-
-También puede consultar toda nuestra documentación (FAQ, guías, herramientas de diagnóstico, etc.) en el [Centro de ayuda](https://help.ovhcloud.com/csm/es-es-documentation?id=kb_home).
-
 <a name="sso"></a>
+
+## FAQ
 
 ### ¿Qué hago si tengo problemas para conectarme al centro de ayuda o a la interfaz de gestión de mis tíquets?
 
@@ -30,12 +26,11 @@ Las causas posibles de este problema pueden ser las siguientes:
 
 Estas son las soluciones que debe probar:
 
-1. **Contraseña**: Compruebe que ha introducido la contraseña correcta o restablezca la contraseña siguiendo [esta documentación](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
-2. **Cookies**: Asegúrese de permitir las cookies en su navegador.
-3. **País de facturación** : Puede intentar conectarse utilizando una de las dos pasarelas adecuadas en función de su localización y de su país de facturación:
-
-- [Unión Europea (UE)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
-- [Canadá (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
+- **Contraseña**: Compruebe que ha introducido la contraseña correcta o restablezca la contraseña siguiendo [esta documentación](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
+- **Cookies**: Asegúrese de permitir las cookies en su navegador.
+- **País de facturación** : Puede intentar conectarse utilizando una de las dos pasarelas adecuadas en función de su localización y de su país de facturación:
+    - [Unión Europea (UE)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
+    - [Canadá (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
 
 Si el problema continúa, póngase en contacto con nuestro equipo de soporte para obtener ayuda.
 
@@ -47,6 +42,12 @@ Si tiene problemas para conectarse al área de cliente, también puede intentar 
 - Canadá (CA): <https://ca.ovh.com/auth/>
 
 Esto puede resolver algunos problemas de conexión.
+
+### ¿Qué hacer si no consigo contactar con el soporte por teléfono?
+
+Para evitar tener que esperar por teléfono, le invitamos a crear una solicitud de soporte desde el [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Haga clic en el botón `Crear tíquet`{.action}.
+
+También puede consultar toda nuestra documentación (FAQ, guías, herramientas de diagnóstico, etc.) en el [Centro de ayuda](https://help.ovhcloud.com/csm/es-es-documentation?id=kb_home). 
 
 ### ¿Por qué ha cambiado el formulario de creación de tíquets?
 

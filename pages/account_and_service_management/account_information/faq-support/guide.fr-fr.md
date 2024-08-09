@@ -8,13 +8,9 @@ updated: 2024-08-09
 
 Retrouvez ici les questions les plus fréquemment posées sur le support OVHcloud.
 
-### Que dois-je faire si je n'arrive pas à joindre le support par téléphone ?
-
-Pour éviter d'attendre au téléphone, nous vous invitons à créer une demande de support depuis le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Cliquez sur le bouton `Création de ticket`{.action}.
-
-Vous pouvez également consulter l'ensemble de notre documentation (FAQ, guides, outils de diagnostic…) dans le [Centre d'aide](https://help.ovhcloud.com/csm/fr-documentation?id=kb_home).
-
 <a name="sso"></a>
+
+## FAQ
 
 ### Que faire si je rencontre des difficultés pour me connecter au centre d'aide ou à l'interface de gestion de mes tickets ?
 
@@ -26,12 +22,11 @@ Les causes possibles de cette problématique peuvent être les suivantes :
 
 Voici les solutions à essayer :
 
-1. **Mot de passe** : vérifiez que vous avez saisi le mot de passe correct ou réinitialisez votre mot de passe en suivant [cette documentation](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
-2. **Cookies** : assurez-vous d'autoriser les cookies sur votre navigateur.
-3. **Pays de facturation** : vous pouvez essayer de vous connecter en utilisant l'une des deux passerelles appropriées en fonction de votre localisation et de votre pays de facturation :
-
-- [Union européenne (UE)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
-- [Canada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
+- **Mot de passe** : vérifiez que vous avez saisi le mot de passe correct ou réinitialisez votre mot de passe en suivant [cette documentation](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
+- **Cookies** : assurez-vous d'autoriser les cookies sur votre navigateur.
+- **Pays de facturation** : vous pouvez essayer de vous connecter en utilisant l'une des deux passerelles appropriées en fonction de votre localisation et de votre pays de facturation :
+    - [Union européenne (UE)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
+    - [Canada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
 
 Si le problème persiste, n'hésitez pas à contacter notre équipe d'assistance pour obtenir de l'aide.
 
@@ -43,6 +38,12 @@ Si vous rencontrez des difficultés pour vous connecter à votre espace client, 
 - Canada (CA) : <https://ca.ovh.com/auth/>
 
 Cela peut résoudre certains problèmes de connexion.
+
+### Que dois-je faire si je n'arrive pas à joindre le support par téléphone ?
+
+Pour éviter d'attendre au téléphone, nous vous invitons à créer une demande de support depuis le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Cliquez sur le bouton `Création de ticket`{.action}.
+
+Vous pouvez également consulter l'ensemble de notre documentation (FAQ, guides, outils de diagnostic…) dans le [Centre d'aide](https://help.ovhcloud.com/csm/fr-documentation?id=kb_home). 
 
 ### Pourquoi le formulaire de création de ticket a-t-il évolué ?
 

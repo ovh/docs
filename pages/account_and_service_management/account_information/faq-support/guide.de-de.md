@@ -12,15 +12,9 @@ updated: 2024-08-09
 
 Hier finden Sie Antworten zu den häufigsten Fragen zum OVHcloud Support.
 
-## Voraussetzungen
-
-### Was kann ich tun, wenn ich den Support telefonisch nicht erreiche?
-
-Um Wartezeiten am Telefon zu vermeiden, erstellen Sie eine Support-Anfrage über das [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help). Klicken Sie auf `Ticket erstellen`{.action}.
-
-Sie können auch unsere gesamte Dokumentation (FAQ, Anleitungen, Diagnosetools, etc.) im [Help Center](https://help.ovhcloud.com/csm/de-documentation?id=kb_home) einsehen.
-
 <a name="sso"></a>
+
+## Voraussetzungen
 
 ### Was kann ich tun, wenn ich Schwierigkeiten habe, mich mit dem Help Center oder dem Interface zur Verwaltung meiner Tickets zu verbinden?
 
@@ -32,12 +26,11 @@ Mögliche Ursachen für dieses Problem:
 
 Hier sind die Lösungen, die Sie ausprobieren können:
 
-1. **Passwort**: Überprüfen Sie, ob Sie das richtige Passwort eingegeben haben, oder setzen Sie Ihr Passwort zurück, indem Sie [diese Anleitung](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password) befolgen.
-2. **Cookies**: Stellen Sie sicher, dass Cookies in Ihrem Browser zugelassen sind.
-3. **Abrechnungsland**: Sie können versuchen, sich mit einem der beiden je nach Standort und Abrechnungsland geeigneten Gateways zu verbinden:
-
-- [Europäische Union (EU)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
-- [Kanada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
+- **Passwort**: Überprüfen Sie, ob Sie das richtige Passwort eingegeben haben, oder setzen Sie Ihr Passwort zurück, indem Sie [diese Anleitung](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password) befolgen.
+- **Cookies**: Stellen Sie sicher, dass Cookies in Ihrem Browser zugelassen sind.
+- **Abrechnungsland**: Sie können versuchen, sich mit einem der beiden je nach Standort und Abrechnungsland geeigneten Gateways zu verbinden:
+    - [Europäische Union (EU)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
+    - [Kanada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
 
 Wenn das Problem weiterhin besteht, wenden Sie sich bitte an unser Support-Team.
 
@@ -49,6 +42,12 @@ Sollten Sie Probleme bei der Verbindung mit Ihrem Kundencenter haben, können Si
 - Kanada (CA): <https://ca.ovh.com/auth/>
 
 Dies kann einige Verbindungsprobleme beheben.
+
+### Was kann ich tun, wenn ich den Support telefonisch nicht erreiche?
+
+Um Wartezeiten am Telefon zu vermeiden, erstellen Sie eine Support-Anfrage über das [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help). Klicken Sie auf `Ticket erstellen`{.action}.
+
+Sie können auch unsere gesamte Dokumentation (FAQ, Anleitungen, Diagnosetools, etc.) im [Help Center](https://help.ovhcloud.com/csm/de-documentation?id=kb_home) einsehen.
 
 ### Warum hat sich das Support-Anfrage-Formular geändert?
 
