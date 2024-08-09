@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - FAQ
 excerpt: Frequently Asked Questions on Public Cloud Network Services
-updated: 2024-01-30
+updated: 2024-08-09
 ---
 
 ## Objective
@@ -14,9 +14,10 @@ Here are the most frequently asked questions about Public Cloud Network Services
 
 Load Balancer is offered in different sizes (S/M/L) to best fit our customer needs. These different sizes are defined via flavours. As of today, to change the size of your Load Balancer, you will need to spawn a new one, configure it the same way (with the same backends as the old one) and reconnect the Floating IP to the new one. Then the old Load Balancer can be deleted.
 
-### Can I use my Load Balancer with bare metal servers as a backends? Can I use my Load Balancer with backends in different Public Cloud regions?
-Yes, provided you configure the network connectivity between the Load Balancer and your bare metal server (either through the private network (vrack) or through the public IP).
-If your network is configured correctly, a Load Balancer can redirect traffic to member in different Public Cloud regions.
+### Can I use my Load Balancer with bare metal servers as backends? Can I use my Load Balancer with backends in different Public Cloud regions?
+
+Yes, provided you configure the network connectivity between the Load Balancer and your bare metal server (either through the private network (vRack) or through the public IP).
+If your network is configured correctly, a Load Balancer can redirect traffic to members in different Public Cloud regions.
 
 ### Can I connect my Load Balancer to my Managed Kubernetes Service (MKS)?
 
@@ -44,9 +45,9 @@ First of all, the values shown are only a rough estimate of the Load Balancer's 
 
 It is up to the customer to monitor the load balancer using the metrics feature and to change the flavor accordingly.
 
-### In a Public to Public architecture, which component shall be sized for the outbound traffic ?
+### In a Public to Public architecture, which component shall be sized for the outbound traffic?
 
-In a Public to Public architecture, the outbound traffic is managed by the Gateway component. Hence if you use that architecture, you should size Gateway accordingly.
+In a Public to Public architecture, the outbound traffic is managed by the Gateway component. If you use that architecture, you should size Gateway accordingly.
 
 ## Gateway
 
@@ -61,8 +62,10 @@ Gateway is offered in different sizes (S/M/L) to best fit our customer needs. Th
 ### Can the Gateway be used with instances of Load Balancer in other regions?
 
 No, a Gateway can be used only in one region.
-If you have a private network that spreads over multiple regions (thanks to the same VLAN id), you need to spawn a Gateway in each region. 
-For instance the following architecture can be used:
+
+If you have a private network that spreads over multiple regions (thanks to the same VLAN id), you need to spawn a Gateway in each region.
+
+For instance, the following architecture can be used:
 
 | Region | Private Network VLAN id | Subnet CIDR | DHCP | Gateway IP | Subnet DHCP Allocation Pool | 
 -------|----|------------|------|----------|-----------------------|
@@ -75,13 +78,13 @@ For instance the following architecture can be used:
 
 Yes, that's exactly the use case for Gateway (L3 router with SNAT option). Currently, only instances in **private mode** of networking that are connected to a single-region private network are supported. For more information, please refer to our [concept guide on Public Cloud Networking](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 
-### Can I use a L3 router to route traffic between different subnets inside a Public Cloud region ?
+### Can I use a L3 router to route traffic between different subnets inside a Public Cloud region?
 
 Yes, you can use a L3 router without SNAT option through the Openstack GUI / CLI / Terraform. In that case, the bandwidth limits are driven by the quality of service on the instance private bandwidth. Hence, choosing an `S` flavor would not impact the performances.
 
-### Can I use a L3 router to route traffic between different subnets between multiples Public Cloud regions ?
+### Can I use an L3 router to route traffic between different subnets in multiple Public Cloud regions?
 
-No the inter region routing is not supported.
+No the inter-region routing is not supported.
 
 ### Will Gateway be provided with a public IP and port?
 

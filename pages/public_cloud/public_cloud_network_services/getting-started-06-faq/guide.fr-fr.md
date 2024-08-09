@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - FAQ
 excerpt: Foire aux questions sur les services réseau Public Cloud
-updated: 2024-01-30
+updated: 2024-08-09
 ---
 
 ## Objectif
@@ -15,8 +15,9 @@ Retrouvez ici les questions les plus fréquemment posées concernant les service
 Le Load Balancer est proposé en différentes tailles (S/M/L) pour répondre au mieux aux besoins de nos clients. Ces différentes tailles sont définies par des flavors. À ce jour, pour modifier la taille de votre Load Balancer, il vous faudra en créer un nouveau, le configurer de la même manière (avec les mêmes backends que l'ancien) et reconnecter l'adresse Floating IP au nouveau Load Balancer. Vous pourrez alors supprimer l'ancien Load Balancer.
 
 ### Puis-je utiliser mon Load Balancer avec des serveurs Bare Metal comme backends ? Puis-je utiliser mon Load Balancer avec des backends dans différentes régions Public Cloud ?
-Oui, à condition de configurer la connectivité réseau entre le Load Balancer et votre serveur dédié (soit via le réseau privé vrack ou via l'adresse IP publique).
-Si votre réseau est correctement configuré, un Load Balancer peut rediriger le trafic vers les membres situés dans des régions différentes de Cloud public.
+
+Oui, à condition de configurer la connectivité réseau entre le Load Balancer et votre serveur dédié (soit via le réseau privé vRack, soit via l'adresse IP publique).
+Si votre réseau est correctement configuré, un Load Balancer peut rediriger le trafic vers les membres situés dans des régions Public Cloud différentes.
 
 ### Puis-je connecter mon Load Balancer à mon Managed Kubernetes Service (MKS) ?
 
@@ -44,10 +45,9 @@ Tout d'abord, les valeurs indiquées ne sont qu'une estimation des capacités du
 
 Il vous revient en tant que client de surveiller le Load Balancer à l'aide de la fonction de metrics et de modifier la flavor en conséquence.
 
+### Dans une architecture Public-to-Public, quel composant doit être dimensionné pour le trafic sortant ?
 
-# Dans une architecture Public-to-Public, quel composant doit être dimensionné pour le traffic sortante ?
-
-Dans une architecture Public-to-Public, le traffic sortante est gérée par le composant Gateway. Par conséquent, si vous utilisez cette architecture, vous devez dimensionner la Gateway en fonction de votre cas d'utilisation.
+Dans une architecture Public-to-Public, le trafic sortant est géré par le composant Gateway. Par conséquent, si vous utilisez cette architecture, vous devez dimensionner la Gateway en fonction de votre cas d'usage.
 
 ## Gateway
 
@@ -59,9 +59,12 @@ La Gateway est le nom de produit du composant Distributed Virtual Router (DvR) d
 
 La solution Gateway est proposée en différentes tailles (S/M/L) pour répondre au mieux aux besoins de nos clients. Ces différentes tailles sont définies au travers de règles de QoS. À ce jour, pour modifier la taille de la passerelle, un changement de politique QoS entre S/M/L peut être effectué.
 
-### Est-ce que une Gateway peut être utilisé avec des instances Load Balancer dans d'autres régions ?
-Non, une gateway doit être instanciée dans chaque région. 
+### Est-ce que une Gateway peut être utilisée avec des instances Load Balancer dans d'autres régions ?
+
+Non, une gateway doit être instanciée dans chaque région.
+
 Si vous disposez d'un réseau privé s'étendant sur plusieurs régions (grâce à l'ID de VLAN id identique), vous devez lancer une Gateway dans chaque région.
+
 Par exemple, l'architecture suivante peut être utilisée :
 
 | Region | Private Network VLAN id | Subnet CIDR | DHCP | Gateway IP | Subnet DHCP Allocation Pool | 
@@ -79,7 +82,7 @@ Oui, c'est le cas pour une Gateway (routeur L3 avec option SNAT). Actuellement, 
 
 Oui, vous pouvez utiliser un routeur L3 sans option SNAT via l’interface graphique OpenStack / CLI / Terraform. Dans ce cas, les limites de bande passante sont déterminées par la qualité de service sur la bande passante privée de l'instance. Par conséquent, le choix d'une flavor `S` n'aurait pas d'impact sur les performances.
 
-### Puis-je utiliser un routeur L3 pour router le trafic entre différents sous-réseaux entre plusieurs régions de Cloud public ?
+### Puis-je utiliser un routeur L3 pour router le trafic entre différents sous-réseaux dans plusieurs régions Public Cloud ?
 
 Non, le routage inter-régions n'est pas supporté.
 
