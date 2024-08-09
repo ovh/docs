@@ -1,7 +1,7 @@
 ---
 title: "KMS - Overview of solutions for encrypting VMs"
-excerpt: "Discover the solutions available to you for encrypting VMs with or without OVHcloud KMS within Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-08-08
+excerpt: "Discover the solutions available to you for encrypting VMs with or without OVHcloud KMS in Hosted Private Cloud VMware on OVHcloud"
+updated: 2024-08-09
 ---
 <style>
 details>summary {
@@ -103,20 +103,22 @@ KMIP provides a service compatible with vCenter and host-based encryption within
 
 > [!Warning]
 >
-> Think carefully about the dependencies of your infrastructure on the key server. Some KMS solutions are delivered as virtual appliances, creating a dependency loop or other availability issues with the wrong KMS appliance location. You already have a key management service (KMS) and you want to use it on your Hosted Private Cloud VMware on OVHcloud, for example to encrypt your vSphere virtual machines.
+> Think carefully about the dependencies of your infrastructure on the key server. Some KMS solutions are delivered as virtual images, creating a dependency loop or other availability issues with the wrong KMS appliance location.
 >
 
 **How do I enable disk encryption on my VMs**?
 
 You need to configure KMS on your Hosted Private Cloud VMware on OVHcloud, following the instructions in the anchor in the following guide:
 
-- « [Guide 5 - HPC - Enabling VM encryption with an external KMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)”.
+- « [Guide 5 - HPC - Enabling VM encryption with an external KMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt) »
 
 Here, you can access the API calls required to check and enable encryption on your Hosted Private Cloud VMware on OVHcloud virtual machines.
 
 As well as settings for adding an external KMS cluster:
 
-- « [Guide 2 - HPC - Enable VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt)”.
+- « [Guide 2 - HPC - Enable VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt) »
+
+- « [KMS compatibility guide](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms) »
 
 #### Option 2 - With an OVHcloud KMS (OKMS)
 
@@ -191,9 +193,9 @@ KMS for Hosted Private Cloud VMware on OVHcloud - Guide index:
 
 Official documentation:
 
-- [Introducing VMware vSphere Native Key Provider](https://docs.vmware.com/gb/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html#GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97).
-- [VMware documentation of the encryption process on vSphere](https://docs.vmware.com/gb/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html#GUID-4A8FA061-0F20-4338-914A-2B7A57051495).
+- « [Introducing VMware vSphere Native Key Provider](https://docs.vmware.com/gb/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html#GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97) »
+- « [VMware documentation of the encryption process on vSphere](https://docs.vmware.com/gb/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html#GUID-4A8FA061-0F20-4338-914A-2B7A57051495) »
 
-You can also follow the OVHcloud KMS labs: [OVHcloud KMS labs](https://labs.ovhcloud.com/en/key-management-service/).
+You can also follow the OVHcloud KMS labs: « [OVHcloud KMS labs](https://labs.ovhcloud.com/en/key-management-service/) »
 
 Join our [community of users](/links/community).

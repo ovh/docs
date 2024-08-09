@@ -1,7 +1,7 @@
 ---
 title: "KMS - Présentation des solutions pour chiffrer des VM"
 excerpt: "Découvrez les solutions qui s'offrent à vous pour chiffrer des VM avec ou sans KMS OVHcloud au sein de Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-08-08
+updated: 2024-08-09
 ---
 <style>
 details>summary {
@@ -103,7 +103,9 @@ KMIP fournit un service compatible avec vCenter et le chiffrement basé sur l'h�
 
 > [!Warning]
 >
-> Réfléchissez bien aux dépendances de votre infrastructure par rapport au serveur clé. Certaines solutions KMS sont livrées comme des appliances virtuelles, ce qui permet de créer une boucle de dépendance ou d'autres problèmes de disponibilité avec un mauvais emplacement de l'appliance KMS. Vous disposez déja d'un service de gestion de clés (KMS) et vous voulez l'utiliser sur votre Hosted Private Cloud VMware on OVHcloud, par exemple pour chiffrer vos machines virtuelles vSphere par exemple.
+> Réfléchissez bien aux dépendances de votre infrastructure par rapport au serveur clé. 
+> 
+> Certaines solutions KMS sont livrées comme des images virtuelles, ce qui permet de créer une boucle de dépendance ou d'autres problèmes de disponibilité avec un mauvais emplacement de l'appliance KMS.
 >
 
 **Comment activer le chiffrement des disques sur vos VM** ?
@@ -117,6 +119,9 @@ Vous disposez ici des appels API nécessaires à la verification et l'activation
 Ainsi que des paramètres à l'ajout d'un cluster KMS externe :
 
 - « [Guide 2 - HPC - Activer le chiffrement de VM avec OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt) »
+
+- « [Guide de compatibilité KMS](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms) »
+
 
 #### Option 2 - Avec un KMS OVHcloud (OKMS)
 
@@ -191,9 +196,9 @@ KMS pour Hosted Private Cloud VMware on OVHcloud - Index des guides :
 
 Documentation officielle :
 
-- [Présentation VMware de vSphere Native Key Provider](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html#GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97).
-- [Documentation VMware du processus de chiffrement sur vSphere](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html#GUID-4A8FA061-0F20-4338-914A-2B7A57051495).
+- « [Présentation VMware de vSphere Native Key Provider](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html#GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97) »
+- « [Documentation VMware du processus de chiffrement sur vSphere](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html#GUID-4A8FA061-0F20-4338-914A-2B7A57051495) »
 
-Vous pouvez aussi suivre le labs KMS OVHcloud : [Labs KMS OVHcloud](https://labs.ovhcloud.com/en/key-management-service/).
+Vous pouvez aussi suivre le labs KMS OVHcloud : « [Labs KMS OVHcloud](https://labs.ovhcloud.com/en/key-management-service/) »
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
