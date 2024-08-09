@@ -1,22 +1,22 @@
 ---
-title: "VMware Cloud Director - Backup with Veeam Data Platform"
-excerpt: "Find out how to perform backups and restores with Veeam Data Platform integration"
-updated: 2024-05-23
+title: "VMware Cloud Director - Backups with Veeam Data Protection"
+excerpt: "Find out how to perform backups and restores with the Veeam Plug-in for VMware vCloud Director managed on OVHcloud"
+updated: 2024-08-09
 ---
 
 ## Objective
 
-**This guide will show you how to back up and restore the Veeam Data Platform VCD plugin.**
+**This guide will show you how to back up and restore with the Veeam Plug-in for VMware vCloud Director managed on OVHcloud.**
 
 ## Requirements
 
-- An administrator vCloud Director account with a VCD Organization
+- An administrator vCloud Director account with a VCD Organization.
 - A user with the Organization Administrator role to connect to the Veeam Data Platform Self-Service Portal (the new admin user in a virtual datacentre has the default role).
 - You need to have read the VCD guides:
     - [VCD Basic concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
     - [How to log in to your organization](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
     - [How to use the VCD user interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
-- You must be familiar with how Veeam Backup works
+- You must be familiar with how Veeam Backup works.
 
 ## Instructions
 
@@ -69,13 +69,16 @@ The vApp/VM metadata is stored with the virtual machine content. Capturing vApp/
 
 #### Repositories
 
-By default, you have the following **repositories**:
+By default, you have the following repositories:
 
-1. **Bronze Repository**: Standard Object Storage.
-2. **Silver Repository**: Standard Object Storage + Offsite Backup.
-3. **Gold Repository**: High Performance Object Storage + Offsite Backup.
+1. **Bronze Repository**: This repository is based on [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class, we will be using a bucket closer to your VCD environment.
+2. **Silver Repository**: This repository is based on [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class, we will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your VCD environment. And a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
 
-These repositories have a storage size of **100GB**.
+From the manager, you can activate the Gold Repository.
+
+3. **Gold Repository**: This repository is based on [OVHcloud Object Storage High performance](/links/public-cloud/object-storage) class, we will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your VCD environment. And a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
+
+All these repositories have a storage quota of 100To. You can reach out to support to increase them.
 
 #### Backup jobs
 
@@ -85,10 +88,6 @@ Backup jobs require 4 default settings:
 2. Virtual machines (VMs): Add or exclude virtual machines/vApp/vCloud Organization
 3. Guest Processing: Application-aware processing / Guest file system indexing / Guest operating system credentials
 4. Email notifications: Enabling email notifications
-
-For virtual machines managed by VMware Cloud Director, Veeam Backup & Replication offers a special type of backup job: VMware Cloud Director backup jobs. VMware Cloud Director backup jobs process VMware Cloud Director objects, ensure their proper recovery, and support for Cloud Director-specific functionality.
-
-We recommend using the VMware Cloud Director backup jobs to back up the virtual machines managed by VMware Cloud Director. If you back up VMs managed by VMware Cloud Director using a regular backup job, Veeam Backup & Replication will perform a backup at the underlying vCenter server and will not capture the vApp metadata. As a result, you will not be able to restore a fully functional virtual machine on VMware Cloud Director.
 
 #### How do I create a backup job with the Veeam Data Platform?
 
@@ -141,7 +140,7 @@ If necessary, you can add monitoring options for your backup tasks. Finally, cli
 
 The backup job is listed.
 
-### How do I back up a virtual machine with Veeam?
+### How do I back up a VM?
 
 > [!primary]
 >
@@ -158,18 +157,14 @@ Choose a VM. Click `Actions`{.action}, then `Data Protection with Veeam`{.action
 
 ![VM Backup](images/vcd_veeam_backup_vm.png){.thumbnail}
 
-### Step 2 - Restore
+### Step 2 - Restoration
 
-#### How do I restore a VM with the Veeam VCD plugin?
+#### How do I restore a VM?
 
 Veeam Backup has several restore features:
 
-- File Level Restoration
-- Instant Recovery
 - Application Awareness
 - The strategy per VM (Policies)
-- The 3 repositories with storage class
-- Immutability (optional)
 
 #### Data included in restores
 
@@ -177,13 +172,13 @@ Veeam Backup & Replication enables full recovery of VMs to VMware Cloud Director
 
 For recovery, Veeam Backup & Replication uses VM metadata stored in a backup file and restores VM-specific attributes. As a result, you get a fully functional virtual machine in VMware Cloud Director, you do not need to import the restored virtual machine into VMware Cloud Director and adjust the settings manually.
 
-The backed-up objects can be restored to the same VMware Cloud Director hierarchy or to a different VMware Cloud Director environment. Restore options include:
+The backed-up objects can be restored to the same VMware Cloud Director hierarchy or to a different VMware Cloud Director environment. 
 
-- Instant Recovery: **Instant Recovery**
+Restore options include:
+
 - Full restore for vApps and VMs: **Full restore for vApps and VMs**
 - Restoration of VM disks: **VM files**
 - Restoration of VM files: **VM disks**
-- Restoring guest OS files for VMs: **Item recovery**
 
 In this case, perform a **Full (full/full)** restore.
 
@@ -196,7 +191,7 @@ When you restore normal or standalone VMs in the vCloud Director hierarchy, the 
 - Veeam uses the captured vApp metadata to define the vApp settings and the original location of the virtual machine in the VMware Cloud Director hierarchy.
 - Veeam restores the VMs in the backup file to their original location or to another location. In addition, Veeam restores all VM settings.
 
-#### How do I restore a virtual machine using the Veeam Data Platform VCD plugin?
+#### How do I restore a VM?
 
 To perform a full restore, click `Entire VM Restore`{.action}
 
@@ -218,4 +213,4 @@ This process is simplified with VCD, Veeam and OVHcloud.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
