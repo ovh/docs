@@ -215,7 +215,7 @@ Si vous ne disposez plus de périphériques valides ni de codes de secours valid
 Tout d'abord, accédez à [la page d'authentification à l'espace client OVHcloud](/links/manager).
 
 Renseignez votre identifiant OVHcloud et votre mot de passe pour accéder à l'étape de la double authentification. Cliquez alors sur le bouton `Je n'ai plus accès à mes périphériques, ni mes codes de secours`{.action}.<br>
-Si vous ne voyez pas ce bouton, cliquez sur le bouton `Essayer une autre méthde`{.action} puis sur `Je n'ai plus accès à mes périphériques, ni mes codes de secours`{.action}.
+Si vous ne voyez pas ce bouton, cliquez sur le bouton `Essayer une autre méthode`{.action} puis sur `Je n'ai plus accès à mes périphériques, ni mes codes de secours`{.action}.
 
 L'interface suivante vous permet de téléverser et d'envoyer à nos équipes les documents nécessaires pour désactiver la double authentification sur votre compte.
 
