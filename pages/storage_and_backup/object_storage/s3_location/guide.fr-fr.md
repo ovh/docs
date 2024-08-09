@@ -150,7 +150,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 > [!warning]
 > Contrairement à AWS, Express One Zone sera traité comme une classe de stockage régulière par OVHcloud et toutes les fonctionnalités S3 et les opérations d'API seront disponibles.
 
-![Schema 1](images/io-mapping.png)
+![Schema 1](images/io-mapping-v2.png)
 
 > [!warning]
 > - La classe de stockage ne sera plus définie au niveau de la création du bucket, mais au niveau de l'upload d'objets individuels.
@@ -219,7 +219,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     </tr>
 </table>
 
-![Schema 2](images/perf-mapping.png)
+![Schema 2](images/perf-mapping-v2.png)
 
 ## Object Storage Swift
 
