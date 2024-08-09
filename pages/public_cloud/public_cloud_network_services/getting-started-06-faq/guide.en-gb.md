@@ -44,10 +44,6 @@ First of all, the values shown are only a rough estimate of the Load Balancer's 
 
 It is up to the customer to monitor the load balancer using the metrics feature and to change the flavor accordingly.
 
-### I don't see the Load Balancer interface in the OVHcloud Control Panel. Where can I create services and modify settings?
-
-Load Balancer is available through the OpenStack CLI, Horizon UI and OVHcloud APIv6. The user interface in the OVHcloud Control Panel will be available soon.
-
 ### In a Public to Public architecture, which component shall be sized for the outbound traffic ?
 
 In a Public to Public architecture, the outbound traffic is managed by the Gateway component. Hence if you use that architecture, you should size Gateway accordingly.
