@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser son compte OVHcloud avec la double authentification'
 excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud en activant la double authentification (2FA)'
-updated: 2024-03-18
+updated: 2024-08-09
 ---
 
 ## Objectif
@@ -210,9 +210,26 @@ Une fois tous vos périphériques supprimés, désactivez les codes de secours e
 
 #### Si vous n'avez plus accès à votre espace client OVHcloud <a name="2FA-deletion"></a>
 
-Si vous ne disposez plus de périphériques valides et si vous ne disposez plus de codes de secours valides, vous pouvez demander la désactivation de la double authentification en contactant nos équipes support.
+Si vous ne disposez plus de périphériques valides ni de codes de secours valides, vous devez alors demander la désactivation de la double authentification en fournissant des documents de justification d'identité correspondant à votre compte OVHcloud.
 
-Avant de nous contacter, vous devez réunir les éléments justificatifs suivants :
+Tout d'abord, accédez à [la page d'authentification à l'espace client OVHcloud](/links/manager).
+
+Renseignez votre identifiant OVHcloud et votre mot de passe pour accéder à l'étape de la double authentification. Cliquez alors sur le bouton `Je n'ai plus accès à mes périphériques, ni mes codes de secours`{.action}.<br>
+Si vous ne voyez pas ce bouton, cliquez sur le bouton `Essayer une autre méthde`{.action} puis sur `Je n'ai plus accès à mes périphériques, ni mes codes de secours`{.action}.
+
+L'interface suivante vous permet de téléverser et d'envoyer à nos équipes les documents nécessaires pour désactiver la double authentification sur votre compte.
+
+> [!warning]
+>
+> - Attention, veuillez vous assurer que tous vos documents sont corrects et lisibles avant envoi.
+> - **Formats acceptés** : jpg, jpeg, pdf, png. La taille maximale du fichier pour chaque document est de 10 Mo.
+> - En cas de documents non valides, cette procédure sera annulée et vous devrez en effectuer une nouvelle.
+
+Une fois vos documents ajoutés, cliquez sur le bouton `Envoyer mes documents`{.action}.
+
+Dans un délai de 72 heures, vous recevrez la confirmation de la désactivation de la double authentification par e-mail.
+
+/// details | Liste des justificatifs
 
 |Type de compte OVHcloud|Justificatifs à fournir|
 |---|---|
@@ -222,14 +239,18 @@ Avant de nous contacter, vous devez réunir les éléments justificatifs suivant
 |Association|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du président de l'association<br><br>- Copie du dernier PV d'assemblée générale de l'association<br><br>- Copie du récépissé de déclaration de l'association<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services|
 |Profession libérale|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Avis de situation Sirene INSEE|
 
-Une fois vos justificatifs réunis, contactez le support OVHcloud par téléphone :
+///
 
-- Canada : 1-855-684-5463.
-- France : 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France).
+En cas de difficultés, après avoir réuni vos documents justificatifs, vous pouvez contacter le support OVHcloud par téléphone :
+
+- Canada : 1-855-684-5463. (ouvert 24h/24, 7j/7)
+- France : 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) (ouvert de 09h à 18h du lundi au vendredi).
 
 Après vérification de vos documents, un conseiller pourra désactiver manuellement la double authentification sur votre compte OVHcloud et reviendra vers vous une fois cette action effectuée.
 
-A des fins de sécurité, une fois l'accès à votre compte rétabli, nous vous recommandons de réactiver la double authentification dès que possible.
+> [!success]
+>
+> À des fins de sécurité, une fois l'accès à votre compte rétabli, nous vous recommandons de réactiver la double authentification dès que possible.
 
 ## Aller plus loin
 
