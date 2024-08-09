@@ -59,9 +59,17 @@ La Gateway est le nom de produit du composant Distributed Virtual Router (DvR) d
 
 La solution Gateway est proposée en différentes tailles (S/M/L) pour répondre au mieux aux besoins de nos clients. Ces différentes tailles sont définies au travers de règles de QoS. À ce jour, pour modifier la taille de la passerelle, un changement de politique QoS entre S/M/L peut être effectué.
 
-### Est-ce que Gateway peut être utilisé avec des instances Load Balancer dans d'autres régions ?
+### Est-ce que une Gateway peut être utilisé avec des instances Load Balancer dans d'autres régions ?
+Non, une gateway doit être instanciée dans chaque région. 
+Si vous disposez d'un réseau privé s'étendant sur plusieurs régions (grâce à l'ID de VLAN id identique), vous devez lancer une Gateway dans chaque région.
+Par exemple, l'architecture suivante peut être utilisée :
 
-Ce mode n'est actuellement pas pris en charge. À ce jour, la Gateway prend uniquement en charge les réseaux privés en mono-région pour Public Cloud et il s'agit du seul mode de réseau privé recommandé pour les configurations en environnement de production pour ce produit. Cela inclut également le cas d'usage du Load Balancer public-privé qui nécessite Gateway. Les autres configurations (y compris l'utilisation avec des serveurs bare metal ou multi-région) ne sont pas prises en charge.
+| Region | Private Network VLAN id | Subnet CIDR | DHCP | Gateway IP | Subnet DHCP Allocation Pool | 
+-------|----|------------|------|----------|-----------------------|
+ GRA11 | 42 | 10.0.0.0/8 | true | 10.0.0.1 | 10.0.0.2 - 10.0.0.254 |
+| SGB5 | 42 | 10.0.0.0/8 | true | 10.0.1.1 | 10.0.1.2 - 10.0.1.254 |
+| BHS5 | 42 | 10.0.0.0/8 | true | 10.0.2.1 | 10.0.2.2 - 10.0.2.254 |
+
 
 ### Le routeur virtuel L3 (Gateway) peut-il m'aider si je souhaite avoir une Gateway d'accès à Internet pour toutes les VMs de mon vRack ?
 
@@ -70,6 +78,10 @@ Oui, c'est le cas pour une Gateway (routeur L3 avec option SNAT). Actuellement, 
 ### Puis-je utiliser un routeur L3 pour router le trafic entre différents sous-réseaux dans une région Public Cloud ?
 
 Oui, vous pouvez utiliser un routeur L3 sans option SNAT via l’interface graphique OpenStack / CLI / Terraform. Dans ce cas, les limites de bande passante sont déterminées par la qualité de service sur la bande passante privée de l'instance. Par conséquent, le choix d'une flavor `S` n'aurait pas d'impact sur les performances.
+
+### Puis-je utiliser un routeur L3 pour router le trafic entre différents sous-réseaux entre plusieurs régions de Cloud public ?
+
+Non, le routage inter-régions n'est pas supporté.
 
 ### Le service Gateway sera-t-il fourni avec une IP et un port publics ?
 
