@@ -1,136 +1,133 @@
 ---
-title: 'Meilleures Pratiques pour Structurer les Projets Public Cloud OVHcloud'
-excerpt: 'Optimisez la sécurité de votre compte OVHcloud, gérez vos informations personnelles et structurez efficacement vos projets Public Cloud'
-updated: 2024-07-23
+title: 'Meilleures pratiques pour structurer les projets Public Cloud d'OVHcloud'
+excerpt: 'Apprenez à sécuriser votre compte OVHcloud, à gérer les identités, à mettre en œuvre les meilleures pratiques pour structurer vos projets Public Cloud et à utiliser les politiques IAM pour restreindre les droits d'accès'
+updated: 2023-12-08
 ---
 
 ## Objectif
 
-**Découvrez comment sécuriser votre compte OVHcloud, gérer vos informations personnelles et implémenter les meilleures pratiques pour structurer vos projets Public Cloud.**
+**Découvrez comment sécuriser votre compte OVHcloud, gérer les identités, mettre en œuvre les meilleures pratiques pour structurer vos projets Public Cloud et utiliser les politiques IAM pour restreindre les droits d'accès.**
 
 ## Prérequis
 
 - Un compte OVHcloud actif
-- Accès à votre panneau de contrôle OVHcloud
+- Accès à votre tableau de bord OVHcloud
 
 ## En pratique
 
 ### Étape 1 : Sécurisation de votre compte
 
-Pour des instructions détaillées sur la sécurisation de votre compte OVHcloud avec l'authentification à deux facteurs (2FA), veuillez consulter le guide officiel : [Sécuriser votre compte OVHcloud avec l'authentification à deux facteurs](/pages/account_and_service_management/account_information/all_about_username).
+Le guide officiel "Sécuriser mon compte OVHcloud et gérer mes informations personnelles" fournit les meilleures pratiques générales pour la gestion des comptes. C'est un bon point de départ.
 
 #### Activer l'authentification à deux facteurs (2FA)
-- **Ce que cela fait** : Ajoute une couche de sécurité supplémentaire en nécessitant une seconde forme de vérification (ex. : application mobile, clé de sécurité) en plus de votre mot de passe.
-- **Comment l'activer** : Connectez-vous à votre panneau de contrôle OVHcloud, allez dans l'onglet Sécurité et suivez les étapes pour configurer le 2FA à l'aide d'une application mobile ou d'une clé de sécurité. Assurez-vous de stocker vos codes de sauvegarde en lieu sûr. [Guide détaillé 2FA](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa/).
-- **Exemple** : Si vous utilisez une clé de sécurité U2F, vous devrez la brancher à votre port USB à chaque connexion, offrant une mesure de sécurité supplémentaire au-delà de votre mot de passe.
+
+- **Ce que cela fait :** Ajoute une couche de sécurité supplémentaire en exigeant une deuxième forme de vérification (par exemple, application mobile, clé de sécurité) en plus de votre mot de passe.
+- **Comment l'activer :** Connectez-vous à votre tableau de bord OVHcloud, allez dans l'onglet Sécurité, et suivez les étapes pour configurer la 2FA en utilisant une application mobile ou une clé de sécurité. Assurez-vous de stocker vos codes de secours en lieu sûr. Plus de détails dans le guide 2FA.
+- **Exemple :** Si vous utilisez une clé de sécurité U2F, vous la connecterez à votre port USB à chaque connexion, fournissant ainsi une mesure de sécurité supplémentaire en plus de votre mot de passe.
 
 #### Définir des mots de passe forts
-- **Exigences** : Au moins neuf caractères, incluant des majuscules, des minuscules, des chiffres et des caractères spéciaux. Évitez les informations personnelles et les mots du dictionnaire.
-- **Gestion** : Utilisez un gestionnaire de mots de passe comme KeePass ou Bitwarden pour stocker et générer des mots de passe forts. Mettez régulièrement à jour votre mot de passe et assurez-vous qu'il est unique pour chaque service. [Guide de gestion des mots de passe](/pages/account_and_service_management/account_information/manage-ovh-password).
 
-#### Ajouter une adresse email de secours
-- **Importance** : Aide à récupérer l'accès à votre compte si l'email principal est inaccessible.
-- **Configuration** : Ajoutez une adresse email de secours dans le panneau de contrôle OVHcloud sous les paramètres de votre profil, en vous assurant qu'elle diffère de votre adresse email principale. [Guide sur la gestion des informations personnelles](pages/account_and_service_management/account_information/all_about_username/).
+Le guide de gestion des mots de passe fournit les meilleures pratiques en matière de gestion des mots de passe.
 
-### Étape 2 : Gestion des informations personnelles et mise en œuvre de IAM et RBAC
+#### Ajouter une adresse e-mail de secours
 
-Pour vérifier et mettre à jour vos informations personnelles ou pour changer votre adresse email principale, veuillez consulter le guide officiel : [Tout sur le nom d'utilisateur](/pages/account_and_service_management/account_information/all_about_username).
+- **Importance :** Aide à récupérer l'accès à votre compte si l'e-mail principal est inaccessible.
+- **Configuration :** Ajoutez un e-mail de secours dans le tableau de bord OVHcloud sous les paramètres de votre profil, en vous assurant qu'il est différent de votre adresse e-mail principale. Voir le guide sur la gestion des informations personnelles.
 
-#### Gestion des identités et des accès (IAM)
+### Étape 2 : Comprendre la gestion des identités et des accès (IAM) et créer des identités
 
-**Définition** : IAM est un cadre pour gérer les identités des utilisateurs et leur accès aux ressources de manière sécurisée.
+**Définition :** IAM est un cadre de gestion des identités des utilisateurs et de leur accès aux ressources de manière sécurisée.
 
-**Mise en œuvre** : Utilisez IAM pour créer des utilisateurs, des groupes et des politiques dans OVHcloud IAM.
+**Mise en œuvre :** Utilisez les fonctionnalités IAM pour gérer les identités, les groupes, et les politiques dans OVHcloud IAM.
 
-**Éléments clés** :
-1. **Utilisateurs** : Comptes individuels pour les personnes ayant besoin d'accéder aux ressources OVHcloud.
-2. **Groupes** : Collections d'utilisateurs ayant des besoins d'accès communs.
-3. **Politiques** : Règles définissant les actions que les utilisateurs et les groupes peuvent effectuer sur quelles ressources.
+#### Composants clés :
 
-**Exemples** :
-- **Créer des utilisateurs** : Créez des comptes individuels pour chaque membre de l'équipe. Assurez-vous que chaque utilisateur a un ensemble de données d'identification unique.
-- **Regrouper les utilisateurs** : Créez des groupes tels que "Développeurs", "Admins" et "Auditeurs" pour simplifier la gestion des permissions.
-- **Définir des politiques** : Attribuez des politiques aux utilisateurs et aux groupes pour restreindre ou accorder des accès. Par exemple, un développeur peut avoir des permissions pour déployer des applications mais pas pour gérer les informations de facturation.
+1. **Identités :** Comptes individuels pour les personnes (utilisateurs) ou comptes de service qui nécessitent un accès aux ressources OVHcloud.
+2. **Groupes :** Collections d'utilisateurs ou de ressources ayant des besoins d'accès communs.
+3. **Politiques :** Règles définissant quelles actions les utilisateurs et les groupes peuvent effectuer sur quelles ressources.
 
-**Pour en savoir plus** : 
-- [Guide IAM OVHcloud](https://www.ovhcloud.com/fr/identity-security/identity-access-management/)
-- [Comment utiliser les politiques IAM via le panneau de contrôle OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui/)
-- [Comment utiliser les politiques IAM via l'API OVHcloud](/pages/account_and_service_management/account_information/iam-policies-api/)
+**Exemples :**
 
-#### Contrôle d'accès basé sur les rôles (RBAC)
+- **Gestion des identités :** 3 types d'identités sont supportés et présentés dans cette page de documentation.
+  - **Utilisateurs locaux :** Représentent une personne dans votre organisation et sont associés à votre compte OVHcloud. Voir la création et la gestion des utilisateurs locaux sur un compte OVHcloud.
+  - **Comptes de service :** Utilisés pour les interactions de type "machine à machine". Les comptes de service sont également associés à votre compte OVHcloud.
+  - **Identités fédérées :** Plusieurs protocoles/fournisseurs de fédération sont supportés et documentés : AD FS, Google Workspace, Entra ID ou OKTA.
+- **Regroupement des utilisateurs :** Créez des groupes tels que "Développeurs", "Admins" et "Auditeurs" pour simplifier la gestion des permissions. Si vous avez choisi de créer des utilisateurs locaux, utilisez cette page de documentation pour créer des groupes d'utilisateurs locaux. Si vous avez choisi la Fédération d'identités, alors le groupe doit être défini dans votre fournisseur d'identité, fourni dans le ticket SAML et mappé à un groupe OVHcloud. Cette étape est détaillée dans chaque page de documentation du fournisseur d'identité.
+- **Définir des politiques :** Assignez des politiques aux identités et aux groupes pour restreindre ou accorder l'accès. Par exemple, un développeur pourrait avoir la permission de déployer des applications mais pas de gérer les informations de facturation. Cette page de documentation définit comment utiliser les politiques IAM en utilisant le tableau de bord OVHcloud.
 
-**Définition** : RBAC régule l'accès aux ressources basé sur les rôles assignés aux utilisateurs individuels.
+### Étape 3 : Meilleures pratiques pour structurer les projets Public Cloud
 
-**Mise en œuvre chez OVHcloud** : Assignez des rôles aux utilisateurs et aux groupes pour contrôler leurs permissions au sein de l'environnement cloud.
+Les projets Public Cloud permettent de séparer les ressources et les droits d'accès associés à ces ressources.
 
-**Éléments clés** :
-1. **Rôles** : Définissent un ensemble de permissions.
-2. **Attribution des rôles** : Assignez des rôles aux utilisateurs ou aux groupes.
+**Le modèle pour diviser les projets peut être :**
 
-**Exemples** :
-- **Créer des rôles** : Définissez des rôles tels que "Lecture seule", "Développeur" et "Administrateur". Chaque rôle a un ensemble spécifique de permissions.
-- **Attribuer des rôles** : Attribuez le rôle "Lecture seule" aux auditeurs qui ont seulement besoin de consulter les ressources, et le rôle "Développeur" aux utilisateurs qui doivent déployer et gérer des applications.
-- **Utiliser les attributions de rôles** : Liez les rôles aux utilisateurs et aux groupes pour appliquer les permissions nécessaires.
+- **Domaine :** Le domaine au sein de votre entreprise, par exemple Finance, IT, Marketing, Ventes...
+- **Identifiant de l'application :** L'identifiant de l'application. Cela peut être son nom ou un identifiant du portefeuille d'applications de votre entreprise.
+- **Environnement :** L'environnement, par exemple dev, QA, staging, prod.
 
-**Pour en savoir plus** : [Guide RBAC OVHcloud](https://www.ovhcloud.com/fr/identity-security/identity-access-management/)
+Un préfixe peut être utilisé pour faciliter la gestion des ressources. Par exemple, si nous utilisons le modèle défini ci-dessus, nous pourrions avoir les noms de projets cloud suivants :
 
-### Étape 3 : Délégation d'accès
+- cloud_project_finance_invoicing_qa
+- cloud_project_it_collaboration_staging
+- cloud_project_it_monitoring_prod
+- cloud_project_marketing_analytics_dev
+- cloud_project_marketing_automation_qa
+- cloud_project_sales_cpq_staging
+- cloud_project_sales_ecommerce_dev
 
-Pour gérer les utilisateurs et déléguer l'accès à votre compte OVHcloud, veuillez consulter le guide officiel : [Gestion des utilisateurs OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+### Étape 4 : Fournir un contrôle d'accès basé sur les rôles (RBAC) aux projets Public Cloud via les politiques IAM
 
-#### Création et gestion des utilisateurs locaux
+Maintenant que vous avez des identités et des projets, vous pouvez définir les droits d'accès pour chaque projet. Nous recommandons d'utiliser des groupes plutôt que des identités individuelles lors de la définition des politiques, car cela facilite la gestion du cycle de vie des politiques.
 
-**Vue d'ensemble** : Avec OVHcloud, vous pouvez créer des utilisateurs locaux supplémentaires avec des accès en lecture ou écriture à votre compte client. Cela vous permet d'accorder à d'autres membres de votre entreprise l'accès à vos services OVHcloud sans partager les mots de passe ou les détails d'authentification à deux facteurs.
+Dans l'exemple suivant, nous utiliserons deux groupes appelés **finance_developer_group** et **finance_SRE_group**, qui contiennent les identités des utilisateurs qui développent et ceux qui s'assurent que l'application financière est en production dans un état sain.
 
-**Exemples** :
-- **Créer un utilisateur local** : Ajoutez un utilisateur pour un nouveau développeur rejoignant votre équipe, en lui donnant accès aux ressources nécessaires sans exposer des informations sensibles.
-- **Groupes d'utilisateurs** : Attribuez le nouvel utilisateur à un groupe "Développeurs" qui a un accès administratif restreint, lui permettant de gérer les applications mais pas les comptes utilisateurs.
+**Pour cet exemple, nous prendrons un outil utilisé par l'équipe finance pour effectuer leur planification et analyse financière (FPA).** Dans ce cas fictif, nous aurons 3 projets cloud publics gérant les ressources de trois environnements (développement, staging et production). Les projets sont nommés :
 
-**Pour en savoir plus** : Pour des étapes détaillées sur l'ajout et la gestion des utilisateurs locaux, consultez le [Guide de gestion des utilisateurs OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+- cloud_project_finance_fpa_dev
+- cloud_project_finance_fpa_staging
+- cloud_project_finance_fpa_prod
 
-### Étape 4 : Meilleures pratiques pour structurer les projets Public Cloud
+Le tableau suivant résume les droits d'accès que nous fournirons à chaque groupe dans cet exemple. Les politiques d'accès sont fournies à des fins éducatives et doivent être adaptées à votre contexte.
 
-#### Établir des Landing Zones
+| Nom du projet Public Cloud | finance_developer_group | finance_SRE_group |
+|----------------------------|-------------------------|-------------------|
+| cloud_project_finance_fpa_dev | lecture-écriture | aucun accès |
+| cloud_project_finance_fpa_staging | lecture | lecture-écriture |
+| cloud_project_finance_fpa_prod | aucun accès | lecture-écriture |
 
-**Objectif** : Créer des environnements multi-comptes sécurisés et évolutifs pour isoler les ressources et gérer la croissance efficacement.
+#### Fournir un accès au tableau de bord
 
-**Définition** : Une Landing Zone est un environnement pré-configuré, sécurisé, évolutif et multi-compte basé sur les meilleures pratiques. Elle sert de point de départ pour déployer des charges de travail dans un environnement cloud.
+Pour fournir un accès au tableau de bord OVHCloud, vous devez créer une politique spécifique comme décrit sur cette page et, dans Ajouter des groupes d'utilisateurs, choisissez les groupes finance_developer_group et finance_SRE_group.
 
-**Mise en œuvre** :
-- Les Local Zones sont positionnées stratégiquement près d'utilisateurs ou de localisations spécifiques pour réduire significativement la distance physique que doivent parcourir les données, offrant ainsi une faible latence et une haute performance. Ces zones assurent une conformité totale avec les régulations de localisation des données et améliorent l'expérience client avec des temps de réponse rapides.
-- Les Local Zones OVHcloud offrent flexibilité et évolutivité, permettant d'ajouter ou de retirer des ressources à la demande. Ces instances sont adaptées à divers besoins, allant de l'archivage à long terme aux solutions de stockage haute performance.
-- **Guide** : [Créer des projets Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project/).
+![Add user groups](img/Add_user_groups.png){.thumbnail}
 
-**Exemples** :
-- **Faible latence et proximité** : Positionnez les Local Zones près des bases d'utilisateurs spécifiques pour minimiser la latence et améliorer la performance des applications.
-- **Résidence des données** : Utilisez les Local Zones pour respecter les régulations de localisation des données, assurant que les données soient traitées dans des frontières géographiques spécifiques.
-- **Couverture internationale** : OVHcloud vise à déployer 150 Local Zones globalement dans les trois prochaines années, améliorant la performance et la conformité.
+Grâce à cette politique, les utilisateurs appartenant à ces 2 groupes auront accès au tableau de bord, mais avec cette seule politique, ils n'auront pas le droit de voir ou de gérer des ressources. Le chapitre suivant ajoute ces droits.
 
-**Pour en savoir plus** :
-- [Vue d'ensemble des Local Zones OVHcloud](https://www.ovhcloud.com/fr/about-us/global-infrastructure/local-zone/?_gl=1*1qvadba*_gcl_au*NTIyMTcxNjkwLjE3MTU5NTg5ODIuMTQxNzQ4MDM5NS4xNzIxNjY0Nzk2LjE3MjE2NjQ3OTY.)
-- [Capacités et limitations des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations/)
+#### Fournir des droits spécifiques aux projets Public Cloud
 
-#### Utiliser plusieurs comptes
+Continuons en créant des politiques afin d'activer les droits d'accès décrits ci-dessus. Pour cela, nous allons créer 4 politiques résumées ci-dessous.
 
-**Stratégie** : Séparez les ressources et les charges de travail en différents comptes basés sur les unités d'affaires, les applications ou les environnements (développement, staging, production).
+| Nom de la politique | Identités | Actions | Ressources |
+|---------------------|-----------|---------|------------|
+| cloud_project_finance_fpa_dev-RW | finance_developer_group | globalWriteAccess | cloud_project_finance_fpa_dev |
+| cloud_project_finance_fpa_staging-RO | finance_developer_group | globalReadAccess | cloud_project_finance_fpa_staging |
+| cloud_project_finance_fpa_staging-RW | finance_SRE_group | globalWriteAccess | cloud_project_finance_fpa_staging |
+| cloud_project_finance_fpa_prod-RW | finance_SRE_group | globalWriteAccess | cloud_project_finance_fpa_prod |
 
-**Mise en œuvre chez OVHcloud** :
-- Chez OVHcloud, cela peut être réalisé en créant des comptes séparés pour chaque environnement ou projet. Chaque compte peut avoir ses propres ressources, facturation et politiques de gestion.
-- **Exemple** : Utilisez un compte pour le développement et un autre pour la production afin de prévenir toute interférence accidentelle entre les environnements.
-- **Guide** : [Guide de gestion des utilisateurs OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-users-management/).
+La nomenclature des politiques suit le modèle suivant : `<Nom de la ressource>-RO/RW`.
 
-#### Organiser par applications et environnements
+**Voici un guide étape par étape pour créer la première politique :**
 
-**Mise en œuvre** : Utilisez les VRacks pour connecter en toute sécurité les ressources à travers différents environnements. Implémentez une segmentation réseau pour protéger les données sensibles.
+- Accédez à la page IAM, créez une politique, remplissez le nom `cloud_project_finance_fpa_dev-RW` et une description.
+- Cliquez ensuite sur Ajouter des groupes d'utilisateurs, choisissez le groupe **finance_developer_group**.
+- Sous Types de produits, choisissez **Projet Public Cloud**.
+- Sous Ressources, sélectionnez le projet Public Cloud cible **cloud_project_finance_fpa_dev**.
+![Add Product types & resources](img/Product_types_resources.png){.thumbnail}
 
-**Exemple** :
-- Segmentez votre application CRM en environnements de développement, de test et de production, chacun avec ses propres politiques réseau et contrôles de sécurité.
-- **Guide** : [Connexion des instances Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps/).
+- Sous Actions dans Groupes de permissions gérés, laissez **Autoriser toutes les actions** décoché et choisissez **globalWriteAccess**.
+![Actions](img/Actions.png){.thumbnail}
 
-### Documentation complète sur les VRacks et les réseaux privés
-
-Pour plus de détails sur les configurations VRack et réseau privé, consultez les guides suivants :
-- [Utilisation des VRacks avec Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack/)
+Les utilisateurs appartenant au groupe **finance_developer_group** auront désormais accès uniquement au tableau de bord et au projet Public Cloud sélectionné en écriture.
 
 ## Aller plus loin
 
