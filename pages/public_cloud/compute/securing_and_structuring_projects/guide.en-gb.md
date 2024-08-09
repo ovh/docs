@@ -53,7 +53,7 @@ The [Password management guide](/pages/account_and_service_management/account_in
 - **Defining Policies**: Assign policies to identities and groups to restrict or grant access. For example, a developer might have permissions to deploy applications but not to manage billing information. This [documentation page](https://help.ovhcloud.com/csm/en-gb-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058725) defines how to use IAM policies using the OVHcloud Control Panel
 
 
-### Step 4: Best Practices for Structuring Public Cloud Projects
+### Step 3: Best Practices for Structuring Public Cloud Projects
 
 Public Cloud projects enables to separate resources and the access rights associated to those resources.
 
@@ -73,7 +73,7 @@ For example, if we use the pattern defined above, we could have the following cl
 * cloud_project_sales_ecommerce_dev
 
 
-### Step 5: Providing Role-Based Access Control (RBAC) to Public Cloud projects through IAM Policies 
+### Step 4: Providing Role-Based Access Control (RBAC) to Public Cloud projects through IAM Policies 
 
 Now that you have identities and projects, you can define the access right for each projects. We recommend to use groups and not individual identities when defining policy since this makes the policy lifecycle management easier. 
 
