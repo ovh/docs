@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints and Object Storage geoavailability
-updated: 2024-07-05
+updated: 2024-08-09
 ---
 
 <style>
@@ -98,34 +98,34 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
         <th>OVHcloud mapping from 2024-06-17</th>
     </tr>
     <tr>
-        <td>Express One Zone</td> 
+        <td>EXPRESS_ONEZONE</td> 
         <td rowspan=9>Standard</td>
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>Standard</td>
+        <td>STANDARD</td>
         <td rowspan=8>Standard</td>
     </tr>
     <tr>
         <td>default*</td>
     </tr>
     <tr>
-         <td>Standard IA</td>     
+         <td>STANDARD_IA</td>     
     </tr>
     <tr>
-        <td>Intelligent Tiering</td>
+        <td>INTELLIGENT_TIERING</td>
     </tr>
     <tr>
-        <td>One Zone IA</td>
+        <td>ONEZONE_IA</td>
     </tr>
     <tr>
-        <td>Glacier Instant Retrieval</td>
+        <td>GLACIER_IR</td>
     </tr>
     <tr>
-        <td>Glacier Flexible</td>
+        <td>GLACIER</td>
     </tr>
     <tr>
-        <td>Glacier Deep Archive</td>
+        <td>DEEP_ARCHIVE</td>
     </tr>
 </table>
 
@@ -139,11 +139,11 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
         <th>OVHcloud mapping from 2024-06-17</th>
     </tr>
     <tr>
-        <td>Express One Zone</td> 
+        <td>EXPRESS_ONEZONE</td> 
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>Standard</td>
+        <td>STANDARD</td>
         <td>Standard</td>
     </tr>
 </table>
@@ -151,7 +151,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 > [!warning]
 > Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all S3 features and API operations will be available.
 
-![Schema 1](images/io-mapping.png)
+![Schema 1](images/io-mapping-v2.png)
 
 > [!warning]
 > - The storage class will no longer be defined at the bucket creation level, but at individual object upload level.
@@ -170,34 +170,34 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
         <th>OVHcloud mapping from 2024-06-17</th>
     </tr>
     <tr>
-        <td>Express One Zone</td> 
+        <td>EXPRESS_ONEZONE</td> 
         <td rowspan=9>High Performance</td>
         <td rowspan=3>High Performance</td>
     </tr>
     <tr>
-        <td>Standard</td>
+        <td>STANDARD</td>
     </tr>
     <tr>
         <td>default*</td>
     </tr>
     <tr>
-         <td>Standard IA</td>
+         <td>STANDARD_IA</td>
         <td rowspan=6>Standard</td>
     </tr>
     <tr>
-        <td>Intelligent Tiering</td>
+        <td>INTELLIGENT_TIERING</td>
     </tr>
     <tr>
-        <td>One Zone IA</td>
+        <td>ONEZONE_IA</td>
     </tr>
     <tr>
-        <td>Glacier Instant Retrieval</td>
+        <td>GLACIER_IR</td>
     </tr>
     <tr>
-        <td>Glacier Flexible</td>
+        <td>GLACIER</td>
     </tr>
     <tr>
-        <td>Glacier Deep Archive</td>
+        <td>DEEP_ARCHIVE</td>
     </tr>
 </table>
 
@@ -211,16 +211,16 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
         <th>OVHcloud mapping from 2024-06-10</th>
     </tr>
     <tr>
-        <td>Standard</td> 
+        <td>STANDARD</td> 
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>Standard IA</td>
+        <td>STANDARD_IA</td>
         <td>Standard</td>
     </tr>
 </table>
 
-![Schema 2](images/perf-mapping.png)
+![Schema 2](images/perf-mapping-v2.png)
 
 ## Object Storage Swift
 
