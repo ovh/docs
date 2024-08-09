@@ -33,9 +33,9 @@ Lorsqu'un service est généré dans un sous-réseau, il utilise certaines IP du
 | Public Cloud Gateway | 1 | 1 |
 | Public Cloud Load Balancer (Octavia) | 3 | |
 
-## Traffic ICMP sur les IPs du Load Balancer
+## Trafic ICMP sur les IPs du Load Balancer
 
-Le traffic ICMP est bloqué sur les IPs (privées et publique via floating IP) du Load Balancer. Le `ping` sur ces IPs ne répondra donc pas.
+Le trafic ICMP est bloqué sur les IPs (privées et publique via floating IP) du Load Balancer. Le `ping` sur ces IPs ne répondra donc pas.
 
 ## Nous voulons vos retours !
 
