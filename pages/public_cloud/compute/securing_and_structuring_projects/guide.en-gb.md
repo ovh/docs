@@ -1,5 +1,5 @@
 ---
-title: 'Best Practices for structuring OVHcloud Public Cloud Projects'
+title: 'Best Practices for securing & structuring OVHcloud Public Cloud Projects'
 excerpt: 'Learn how to secure your OVHcloud account, manage identities, implement best practices for structuring your Public Cloud projects and use IAM policies to restrict access rights'
 updated: 2024-07-22
 ---
