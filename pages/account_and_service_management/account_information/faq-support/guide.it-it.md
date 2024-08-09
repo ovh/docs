@@ -12,13 +12,9 @@ updated: 2024-08-09
 
 Le domande più frequenti sul supporto OVHcloud.
 
-### Cosa fare in caso di difficoltà a contattare il supporto telefonicamente?
-
-Per evitare di aspettare al telefono, ti invitiamo a creare una richiesta di supporto dal [Centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Clicca sul pulsante `Creazione ticket`{.action}.
-
-Per consultare tutta la nostra documentazione (FAQ, guide, strumenti di diagnostica, ecc.), accedi al [Centro assistenza](https://help.ovhcloud.com/csm/it-documentation?id=kb_home).
-
 <a name="sso"></a>
+
+## FAQ
 
 ### Cosa fare se si verificano dei problemi di connessione al centro assistenza o all'interfaccia di gestione dei ticket?
 
@@ -30,12 +26,11 @@ Le possibili cause di questo problema possono essere:
 
 Ecco le soluzioni da provare:
 
-1. **Password**: verifica di aver inserito la password corretta o reimposta la password seguendo [questa documentazione](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
-2. **Cookie**: assicurati di abilitare i cookie sul tuo browser.
-3. **Paese di fatturazione**: puoi provare a connetterti utilizzando uno dei due gateway appropriati in funzione della tua localizzazione e del tuo paese di fatturazione:
-
-- [Unione europea (UE)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
-- [Canada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
+- **Password**: verifica di aver inserito la password corretta o reimposta la password seguendo [questa documentazione](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
+- **Cookie**: assicurati di abilitare i cookie sul tuo browser.
+- **Paese di fatturazione**: puoi provare a connetterti utilizzando uno dei due gateway appropriati in funzione della tua localizzazione e del tuo paese di fatturazione:
+    - [Unione europea (UE)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
+    - [Canada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
 
 Se il problema persiste, contatta il nostro team di supporto per assistenza.
 
@@ -47,6 +42,12 @@ In caso di difficoltà di accesso allo Spazio Cliente, è possibile provare a es
 - Canada (CA): <https://ca.ovh.com/auth/>
 
 Questo può risolvere alcuni problemi di connessione.
+
+### Cosa fare in caso di difficoltà a contattare il supporto telefonicamente?
+
+Per evitare di aspettare al telefono, ti invitiamo a creare una richiesta di supporto dal [Centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Clicca sul pulsante `Creazione ticket`{.action}.
+
+Per consultare tutta la nostra documentazione (FAQ, guide, strumenti di diagnostica, ecc.), accedi al [Centro assistenza](https://help.ovhcloud.com/csm/it-documentation?id=kb_home).
 
 ### Perché il modulo per la creazione dei ticket è stato aggiornato?
 

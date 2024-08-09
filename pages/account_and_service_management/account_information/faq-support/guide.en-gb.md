@@ -8,13 +8,9 @@ updated: 2024-08-09
 
 Find the most frequently asked questions about the OVHcloud support.
 
-### What should I do if I can't reach support by phone?
-
-To avoid waiting on the phone, please create a support request via the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help). Click on the button `Create a ticket`{.action}.
-
-You can also refer to our documentation (FAQs, guides, diagnostic tools, etc.) in the [Help Centre](https://help.ovhcloud.com/csm/en-gb-documentation?id=kb_home).
-
 <a name="sso"></a>
+
+## FAQ
 
 ### What should I do if I experience any difficulties logging in to the Help Center or the ticket management interface?
 
@@ -26,12 +22,11 @@ If you are having trouble connecting to our support center or ticket management 
 
 Here are some solutions to try:
 
-1. **Password**: Check that you have entered the correct password or reset your password using [this documentation](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
-2. **Cookies**: Make sure to enable cookies on your browser.
-3. **Billing country**: Try connecting using one of the two appropriate gateways based on your location and billing country:
-
-- [European Union (EU)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
-- [Canada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
+- **Password**: Check that you have entered the correct password or reset your password using [this documentation](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
+- **Cookies**: Make sure to enable cookies on your browser.
+- **Billing country**: Try connecting using one of the two appropriate gateways based on your location and billing country:
+    - [European Union (EU)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
+    - [Canada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
 
 If the problem persists, please contact our assistance team for help.
 
@@ -43,6 +38,12 @@ If you have trouble connecting to the OVHcloud Control Panel, you can also try c
 - Canada (CA): <https://ca.ovh.com/auth/>
 
 This may solve some login problems.
+
+### What should I do if I can't reach support by phone?
+
+To avoid waiting on the phone, please create a support request via the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help). Click on the button `Create a ticket`{.action}.
+
+You can also refer to our documentation (FAQs, guides, diagnostic tools, etc.) in the [Help Centre](https://help.ovhcloud.com/csm/en-gb-documentation?id=kb_home).
 
 ### Why has the ticket creation form changed?
 
