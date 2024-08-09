@@ -1,7 +1,7 @@
 ---
 title: "KMS - Chiffrement de VM avec OKMS"
 excerpt: "Découvrez comment activer le chiffrement de vos VMs au sein de votre VMware vSphere managé Hosted Private Cloud grâce à la solution KMS OVHcloud (OKMS)"
-updated: 2024-08-08
+updated: 2024-08-09
 ---
 <style>
 details>summary {
@@ -48,7 +48,9 @@ details[open]>summary::before {
 - [Étape 4 - Configuration de OKMS avec vSphere (obligatoire)](#add-okms)
 - [Étape 5 - Création d'une stratégie de stockage VM (obligatoire)](#storage-policy)
 - [Étape 6 - Activation du chiffrement sur une VM (obligatoire)](#activation-encryption)
-- [Fin - Informations utiles TLS OKMS](#useful-information)
+- [Étape 7 - Informations utiles TLS OKMS](#useful-information)
+- [Aller plus loin](#going-further)
+
 
 ### Introduction <a name="introduction"></a>
 
@@ -400,7 +402,7 @@ Ajoutez le nom de votre politique sinon vous ne pourrez pas la créer à la fin.
 
 Ainsi qu'une description intelligente de votre stratégie IAM.
 
-Dans `Identités`{.action}, ajoutez votre utilisateur local OVHcloud. Celui avec lequel vous avez généré le CSR depuis l'api. En cliquant sur: `Ajouter un utilisateur`{.action}.
+Dans `Identités`{.action}, ajoutez votre utilisateur local OVHcloud. Celui avec lequel vous avez généré le CSR depuis l'api. En cliquant sur `Ajouter un utilisateur`{.action}.
 
 ![Manager IAM Policy 02](images/manager_iam_2.png){.thumbnail}
 
@@ -450,7 +452,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> Vous êtes maintenant connecté au sein de votre vSphere managé on OVHcloud.
 >> 
->> Pour accéder à la gestion des fournisseurs de clés depuis vSphere, cliquez sur : `Configurer`{.action} depuis votre **pcc-XXX-XXX-XXX-XXX**. Rendez-vous dans la section `Sécurité`{.action}, puis cliquez sur `Fournisseurs de clés`{.action}. Sur la page qui apparaît, cliquez sur le bouton `Ajouter`{.action}, puis sur `Ajouter un fournisseur de clé standard`{.action}.
+>> Pour accéder à la gestion des fournisseurs de clés depuis vSphere, cliquez sur `Configurer`{.action} depuis votre **pcc-XXX-XXX-XXX-XXX**. Puis rendez-vous dans la section `Sécurité`{.action}, et cliquez sur `Fournisseurs de clés`{.action}. Sur la page qui apparaît, cliquez sur le bouton `Ajouter`{.action}, puis sur `Ajouter un fournisseur de clé standard`{.action}.
 >> 
 >> ![KMS Key Provider](images/kms_key_provider.png){.thumbnail}
 >>
@@ -471,7 +473,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> Attendez que vSphere établisse la connexion avec le Key Provider que vous avez ajouté. Vous devriez voir une indication ou un message confirmant que la connexion a été établie avec succès.
 >>
->> Patientez le temps que vSphere établisse la connexion avec le fournisseur de clés que vous venez d'ajouter. Vous devriez voir apparaitre un message confirmant que l'ajout a été établi avec succès.
+>> Patientez quelques minutes le temps que vSphere établisse la connexion avec le fournisseur de clés que vous venez d'ajouter. Vous devriez voir apparaitre un message confirmant que l'ajout a été établi avec succès.
 >>
 >
 > **APPROUVER LE KMS** <a name="trust-okms"></a>
@@ -491,7 +493,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> ![TRUST KMS](images/trust_kms.png){.thumbnail}
 >>
->> Puis ensuite, sur `APPROUVER`{.action}
+>> Ensuite, sur `APPROUVER`{.action}
 >> 
 >> ![TRUST KMS](images/okms_vsphere_vcenter_trust_kms-optim-resize.png){.thumbnail}
 >>
@@ -516,7 +518,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> " | openssl x509 -text; echo $?
 >> ```
 >>
->> Copiez le retour depuis `-----BEGIN CERTIFICATE----- XXX -----END CERTIFICATE-----`{.action} dans votre web interface vSphere managé.
+>> Copiez le retour depuis `-----BEGIN CERTIFICATE-----...-----END CERTIFICATE-----` dans votre web interface vSphere managé.
 >>
 >> Puis cliquez sur `Établir une relation de confiance > Télécharger le certificat KMS`{.action}.
 >>
@@ -534,7 +536,6 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> Sélectionnez votre **Fournisseur de clés** KMS (OKMS) que vous venez d'ajouter et cliquez sur le bouton `Approuver l'instance de vCenter`{.action}.
 >>
->>
 >> Nous recommandons la méthode "Avec CSR" (plus sécurisée) en cliquant sur `Nouvelle demande de signature de certificat (CSR)`{.action). Cependant, libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
 >>
 >> Pour plus d'information sur les avantages et inconvénients de l'utilisation d'un CSR, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
@@ -547,9 +548,9 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> 
 >> Il est possible de générer ce certificat en fournissant votre propre clé de sécurité privée ("credentialId") via une **"Demande de signature de certificat (CSR)"**.
 >>
->> Une fois que votre KMS est commandé et que vCenter approuve le KMS. Lancez la génération du `CSR`{.action} afin que KMS approuve vCenter et signe le CSR.
+>> Une fois que votre KMS est commandé et que vCenter approuve le KMS. Lancez la génération du `CSR` afin que KMS approuve vCenter et signe le CSR.
 >>
->> Cliquez sur `APPROUVER L'INSTANCE DE VCENTER`{.action} ou `ÉTABLIR UNE RELATION DE CONFIANCE > Faire que KMS approuve vCenter`{.action}
+>> Cliquez sur `APPROUVER L'INSTANCE DE VCENTER`{.action} ou alors `ÉTABLIR UNE RELATION DE CONFIANCE > Faire que KMS approuve vCenter`{.action}
 >>
 >> Sélectionnez `Nouvelle demande de signature de certificat (CSR)`{.action}, puis copiez ou téléchargez le CSR ci-dessous. Mettez-le à disposition du KMS OVHcloud depuis l'API v2 /okms et demandez à ce dernier de signer le certificat.
 >>
@@ -557,7 +558,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> ![Trust KMS server with CSR](images/kms_trust_vcenter_csr_2.png){.thumbnail}
 >>
->> Copiez votre CSR dans un fichier `csr.pem`{.action} afin de pouvoir le faire signer par le KMS OVHcloud.
+>> Copiez votre CSR dans un fichier `csr.pem` afin de pouvoir le faire signer par le KMS OVHcloud (le format n'a pas d'importance sauf si vous souhaitez executer des commandes OpenSSL).
 >>
 >> Pour formater le CSR en json afin de fonctionner dans la console API OVHcloud, lancez la commande **AWK** ci-dessous :
 >>
@@ -565,9 +566,9 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> awk '{printf "%s\\n", $0}' csr.pem
 >> ```
 >>
->> Collez le retour de cette commande dans l'appel API POST suivant, dans le champ `"csr"` , pour faire signer votre CSR auprès du KMS OVHcloud.
+>> Collez le retour de cette commande dans l'appel API POST suivant, dans le champ `"csr":` , pour faire signer votre CSR auprès du KMS OVHcloud.
 >>
->> Attention à bien remplir la suite des champs (URN, DESCRIPTION, etc..) avec les bons droits IAM.
+>> Attention à bien remplir la suite des champs ("urn", "description", etc..) avec les bons droits IAM.
 >>
 >> > [!api]
 >> >
@@ -659,7 +660,7 @@ Vous pouvez cliquer sur `SUIVANT`{.action} pour continuer.
 
 ![VM Storage Policies Creation](images/vsphere_vm_policie-optim-resize.png){.thumbnail}
 
-Vous arrivez à l'étape 2, **Structure de la stratégie.**
+Vous arrivez à l'étape 2, **Structure de la stratégie**.
 
 Nous allons ici activer les **stratégies de règles basées sur l'hôte**. Cochez la case `Activer les règles basées sur l'hôte`{.action}.
 
@@ -745,7 +746,7 @@ Ceci confirme que votre politique fonctionne avec le serveur OKMS et que le chif
 
 ///
 
-### Informations utiles - TLS/KMS <a name="useful-information"></a>
+### Étape 7 - Informations utiles TLS OKMS <a name="useful-information"></a>
 
 /// details | Informations utiles afin de manipuler vos certificats TLS avec OpenSSL.
 
