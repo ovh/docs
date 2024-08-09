@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - Limites connues
 excerpt: 'Prérequis et limites à respecter'
-updated: 2024-04-03
+updated: 2024-08-09
 ---
 
 ## Projets Vrack et Public Cloud
@@ -32,6 +32,10 @@ Lorsqu'un service est généré dans un sous-réseau, il utilise certaines IP du
 | DHCP | 2 | |
 | Public Cloud Gateway | 1 | 1 |
 | Public Cloud Load Balancer (Octavia) | 3 | |
+
+## Traffic ICMP sur les IPs du Load Balancer
+
+Le traffic ICMP est bloqué sur les IPs (privées et publique via floating IP) du Load Balancer. Le `ping` sur ces IPs ne répondra donc pas.
 
 ## Nous voulons vos retours !
 
