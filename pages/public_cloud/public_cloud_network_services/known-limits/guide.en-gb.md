@@ -33,6 +33,10 @@ When a service is spawned in a subnet, it is using some IPs from the subnet CIDR
 | Public Cloud Gateway | 1	| 1 |
 | Public Cloud Load Balancer (Octavia)	| 3 | |	
 
+
+## ICMP traffic towards Load Balancer IP
+The traffic towards Load Balancer IP (private IP or floating IP) is filtered. Hence, The `ping` on those IPs will not answer.
+
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
