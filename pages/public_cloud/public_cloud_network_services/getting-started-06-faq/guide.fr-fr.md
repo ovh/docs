@@ -15,9 +15,8 @@ Retrouvez ici les questions les plus fréquemment posées concernant les service
 Le Load Balancer est proposé en différentes tailles (S/M/L) pour répondre au mieux aux besoins de nos clients. Ces différentes tailles sont définies par des flavors. À ce jour, pour modifier la taille de votre Load Balancer, il vous faudra en créer un nouveau, le configurer de la même manière (avec les mêmes backends que l'ancien) et reconnecter l'adresse Floating IP au nouveau Load Balancer. Vous pourrez alors supprimer l'ancien Load Balancer.
 
 ### Puis-je utiliser mon Load Balancer avec des serveurs Bare Metal comme backends ? Puis-je utiliser mon Load Balancer avec des backends dans différentes régions Public Cloud ?
-
-Actuellement, ces modes ne sont pas pris en charge. Pour du load balancing public-privé, les produits Gateway devaient être reliés entre eux. À ce jour, Gateway ne prend en charge que le scope mono-région dans les réseaux privés. Cela signifie également que le scope est limité au Public Cloud, seul périmètre suggéré pour des architectures de type production.<br>
-À ce jour, les autres configurations (y compris l'utilisation interunivers avec des serveurs bare metal ou interrégion) ne sont pas prises en charge.
+Oui, à condition de configurer la connectivité réseau entre le Load Balancer et votre serveur dédié (soit via le réseau privé vrack ou via l'adresse IP publique).
+Si votre réseau est correctement configuré, un Load Balancer peut rediriger le trafic vers les membres situés dans des régions différentes de Cloud public.
 
 ### Puis-je connecter mon Load Balancer à mon Managed Kubernetes Service (MKS) ?
 
@@ -45,9 +44,10 @@ Tout d'abord, les valeurs indiquées ne sont qu'une estimation des capacités du
 
 Il vous revient en tant que client de surveiller le Load Balancer à l'aide de la fonction de metrics et de modifier la flavor en conséquence.
 
-### Je ne vois pas l'interface du Load Balancer dans l'espace client OVHcloud. Où créer des services et modifier des paramètres ?
 
-Load Balancer est disponible via l'interface CLI OpenStack, l'interface utilisateur Horizon et l'APIv6 OVHcloud. L’interface utilisateur de votre espace client sera disponible prochainement.
+# Dans une architecture Public-to-Public, quel composant doit être dimensionné pour le traffic sortante ?
+
+Dans une architecture Public-to-Public, le traffic sortante est gérée par le composant Gateway. Par conséquent, si vous utilisez cette architecture, vous devez dimensionner la Gateway en fonction de votre cas d'utilisation.
 
 ## Gateway
 
