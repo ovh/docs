@@ -1,7 +1,7 @@
 ---
 title: "Transfert des logs VMware vers un stream Logs Data Platform"
 excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-08-08
+updated: 2024-08-09
 ---
 
 > [!primary]
@@ -72,14 +72,14 @@ Nous fournissons toutes les métadonnées pour l'identification de Hosted Privat
 
 #### Via l'API OVHcloud :
 
-Pour vérifier si les options de sécurité sont présentes pour permettre l'activation de la fonctionnalité au sein de votre HPC VMware vSphere managé on OVHcloud, lancer l'appel API suivant :
+Pour vérifier si les options de sécurité sont présentes pour permettre l'activation de la fonctionnalité Rsyslog au sein de votre VMware vSphere managé on OVHcloud, lancer l'appel API suivant :
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree
 >
 >
-> **Paramètre** :
+> **Paramètres** :
 >
 > - `serviceName` : Votre PCC sous la forme, "pcc-XXX-XXX-XXX-XXX".
 > - `option` : Avec `sendLogToCustomer` allowed.
@@ -126,7 +126,7 @@ Vous pouvez vous référer à ce guide pour retrouver comment administrer vos fl
 
 Récupérez le **streamId** et sauvegardez-le (copier-coller). Vous en aurez besoin pour activer votre souscription Hosted Private Cloud avec le stream Logs Data Platform en question.
 
-### Étape 1 - Activation de l'abonnement Logs Data Platform Hosted Private Cloud
+### Étape 3 - Activation de l'abonnement Logs Data Platform Hosted Private Cloud
 
 #### Via l'espace client OVHcloud
 
@@ -146,7 +146,7 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
 
-> **Paramètres :**
+> **Paramètres** :
 >
 > - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud, sous la forme "pcc-XXX-XXX-XXX-XXX".
 > - `kind` : nom du type de journal de l'abonnement, par exemple `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
@@ -166,7 +166,7 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 
 La requête GET permet de lister vos souscriptions.
 
-### Étape 3 - Administrer vos stream Logs Data Platform
+### Étape 4 - Administrer vos stream Logs Data Platform
 
 #### Via l'espace client OVHcloud
 
