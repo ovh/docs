@@ -55,14 +55,14 @@ La fenêtre du Plugin Veeam VCD s'ouvrira avec un bandeau gris/noir.
 
 Par défaut, vous disposez des repository suivants :
 
-- **Repository Bronze** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un bucket le plus proche de votre environnement VCD.
-- **Repository Silver** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-out Backup Repository) avec des compartiments de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
+- **Bronze Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un bucket le plus proche de votre environnement VCD.
+- **Silver Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-out Backup Repository) avec des compartiments de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
 
-Troisième choix, le **Gold repository** inclut les options précédentes + OVHcloud Object Storage High performance :
+Troisième choix : Ce repository (Gold) inclut les options précédentes + OVHcloud Object Storage "High performance".
 
-- **Repository Gold** : Ce repository est basé sur la classe [OVHcloud Object Storage High performance](/links/public-cloud/object-storage).
+- **Gold Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage High performance](/links/public-cloud/object-storage).
 
-Depuis votre espace client, vous pouvez activer le "Gold repository".
+Depuis votre espace client, vous pouvez activer le "Gold Repository".
 
 Tous ces repository ont un quota de stockage de 100 To. Vous pouvez contacter les [équipes de support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
 
