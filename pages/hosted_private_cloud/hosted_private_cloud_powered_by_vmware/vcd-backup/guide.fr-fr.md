@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Sauvegarde avec Veeam Data Platform"
 excerpt: "Découvrez comment effectuer des sauvegardes et restaurations avec l'intégration Veeam Data Platform"
-updated: 2024-05-23
+updated: 2024-08-12
 ---
 
 ## Objectif
