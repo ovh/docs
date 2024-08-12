@@ -1,7 +1,7 @@
 ---
 title: OVHcloud API and OS Installation
 excerpt: Use OVHcloud API to install or re-install an OS on your dedicated server
-updated: 2024-07-16
+updated: 2024-08-13
 ---
 
 ## Objective
@@ -62,7 +62,7 @@ You can find interesting information such as the following:
 |license/os|Information about OS license: licensing contract URL and licensing type|
 |license/usage|Same as license/os, but at the software layer if applicable|
 |filesystems|Compatible file systems types|
-|hardRaidConfiguration,softRaidOnlyMirroring,lvmReady|Compatibility with hardware raids, software raids and LVM²|
+|softRaidOnlyMirroring,lvmReady|Compatibility with hardware raids, software raids and LVM²|
 |inputs|OS specific questions (see explanation below)|
 
 ¹ Customers that don't use images from the OVHcloud catalogue (installation from a custom image ([BYOI](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)/[BYOLinux](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)), installation over the network, or manually via IPMI) are not affected by this limitation.<br />
