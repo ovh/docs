@@ -1,11 +1,24 @@
 ---
-title: Configurer Veeam Backup pour Nutanix
+title: "Configurer Veeam Backup pour Nutanix"
 excerpt: "Installation de la sauvegarde Veeam Backup sur un cluster Nutanix"
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Backups
-updated: 2022-05-31
+updated: 2024-08-12
 ---
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -33,7 +46,7 @@ Veeam Backup est un logiciel de sauvegarde disponible pour Nutanix.
 
 Nous allons personnaliser **Veeam Backup & Replication** pour l'utilisation sur un cluster Nutanix, avec un dépôt distant de ce cluster chez OVHcloud grâce à la solution [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/).
 
-### Ajouter un utilisateur dans Prism Element pour Veeam Backup
+### Étape 1 - Ajouter un utilisateur dans Prism Element pour Veeam Backup
 
 Il faut tout d'abord créer un utilisateur spécifique dans Prism Element pour l'utilisation de Veeam Backup.
 
@@ -76,7 +89,7 @@ Ce compte utilisateur est créé et il est ajouté dans la liste des utilisateur
 
 ![Create User VEEAM PE 07](images/01-create-pe-veeamuser07.png){.thumbnail}
 
-### Télécharger et installer l'extension pour un cluster Nutanix sous AHV
+### Étape 2 - Télécharger et installer l'extension pour un cluster Nutanix sous AHV
 
 Connectez-vous sur la machine virtuelle où se trouve Veeam Backup.
 
@@ -108,7 +121,7 @@ Une fois l'installation terminée, cliquez sur `Finish`{.action}.
 
 ![Addon Installation 06](images/02-install-addon-nutanix-veeam06.png){.thumbnail}
 
-### Intégrer le cluster Nutanix dans la configuration de **Veeam Backup**
+### Étape 3 - Intégrer le cluster Nutanix dans la configuration de **Veeam Backup**
 
 Lors de La configuration de Veeam Backup pour Nutanix, une nouvelle machine virtuelle est ajoutée dans le cluster, elle sert d'interface entre le logiciel de sauvegarde **Veeam Backup** et le cluster.
 
@@ -289,7 +302,7 @@ Dans l'onglet `Contrôle d'accès (ACL)`{.action}, cliquez sur `Ajouter un nouve
 
 ![Create Enterprise Storage Volume 05](images/04-create-enterprise-storage-volume05.png){.thumbnail}
 
-Saisisissez, dans le champ « Access à », l'adresse IP publique utilisée sur la VM Veeam Backup qui sert de passerelle Internet.
+Saisissez, dans le champ « Access à », l'adresse IP publique utilisée sur la VM Veeam Backup qui sert de passerelle Internet.
 Choisissez, dans le champ « Autorisations d'accès », `Read and write`{.action}.
 
 ![Create Enterprise Storage Volume 06](images/04-create-enterprise-storage-volume06.png){.thumbnail}
@@ -307,7 +320,7 @@ Dans l'onglet `Informations générales`{.action}, cliquez maintenant sur l'icô
 
 ![Create Enterprise Storage Volume 08](images/04-create-enterprise-storage-volume08.png){.thumbnail}
 
-### Ajouter le dépôt Enterprise File Storage dans Veeam Backup
+### Étape 4 - Ajouter le dépôt Enterprise File Storage dans Veeam Backup
 
 Via la console **Veeam Backup**, cliquez en bas à droite sur `Backup Infrastructure`{.action}, choisissez `Backup Repositories`{.action} et cliquez sur `Add repository`{.action}. 
 
@@ -461,12 +474,93 @@ Un aperçu de l'état de la restauration se lance, il faut patienter quelques te
 
 ![Restore VM 15](images/07-restorevm15.png){.thumbnail}
 
+### Étape 5 - Enregistrer le serveur Veeam Backup
+
+#### Depuis l'espace client OVHcloud
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Hosted Private Cloud`{.action} et sélectionnez `Plateformes et services`{.action}. Sélectionnez alors votre service **backupserverenterprise** puis cliquez sur `Activer la licence`{.action} dans la section `Raccourcis`.
+
+Pour configurer votre environnement, assurez-vous d'avoir ouvert les ports d'OVHcloud vers vos serveurs Veeam Backup and Replication :
+
+- `Port 9392/TCP`
+- `Port 9405/TCP`
+
+![installation Veeam](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication/images/architecture.png){.thumbnail}
+
+![espace client OVHcloud](images/veeam001.png){.thumbnail}
+
+Dans la nouvelle fenêtre, saisissez les informations suivantes :
+
+* L'adresse IP publique par laquelle votre serveur **Veeam Backup & Replication** peut être contacté.
+* le login du compte de service précédemment créé.
+* le mot de passe du compte de service.
+
+Puis validez avec `OK`{.action}.
+
+![activation licence](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication/images/veeam03.png){.thumbnail}
+
+Lorsque l'activation est faite, vous retrouvez les informations principales sur la page du service.
+
+![licence activée](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication/images/veeam02.png){.thumbnail}
+
+#### Avec l'API OVHcloud
+
+D'abord, récupérez votre serviceName :
+
+> [!api]
+>
+> @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise
+>
+
+Puis effectuez l'enregistrement :
+
+> [!api]
+>
+> @api {v1} /veeam/veeamEnterprise POST /veeam/veeamEnterprise/{serviceName}/register
+>
+
+Vous devez vous munir des informations suivantes :
+
+* L'adresse IP publique par laquelle votre serveur **Veeam Backup & Replication** peut-etre contacté.
+* Le port de votre veeam backup (usuellement **9392/TCP**)
+* le login du compte de service précédemment crée
+* le mot de passe du compte de service
+
+Vous pouvez obtenir l'adresse IP publique utilisée par Veeam Enterprise pour contacter votre serveur **Veeam Backup & Replication** via :
+
+> [!api]
+>
+> @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise/{serviceName}
+>
+
+> [!primary]
+> L'activation de votre serveur Veeam Backup & Replication peut prendre plusieurs heures.
+
+### Étape 5 - Vérifier l'enregistrement
+
+Lancez la console Veeam.
+
+![console Veeam](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication/images/veeamBandR_use_12.png){.thumbnail}
+
+Allez dans le menu, puis cliquez sur `Licence`{.action}.
+
+![Licence Veeam](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication/images/veeamBandR_lic_1.png){.thumbnail}
+
+Dans les informations, vérifiez qu'il s'agit bien de votre licence OVHcloud.
+
+Si tout s'est bien passé, vous devriez voir "Edition : Entreprise Plus".
+
+> [!primary]
+> Vous pouvez maintenant désactiver l'utilisateur que vous avez créé pour créer l'enregistrement.
+
+![licence OVHcloud](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication/images/veeamBandR_lic_2.png){.thumbnail}
+
 ## Aller plus loin <a name="gofurther"></a>
 
-[Documentation VEEAM sur l'installation de VEEAM Backup pour Nutanix AHV](https://helpcenter.veeam.com/docs/van/userguide/installing.html?ver=30)
+[Documentation VEEAM sur l'installation de VEEAM Backup pour Nutanix AHV](<https://helpcenter.veeam.com/docs/van/userguide/installing.html?ver=30>)
 
 [Les solutions de stockage OVHcloud](/products/storage-backup)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

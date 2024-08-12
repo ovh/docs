@@ -1,25 +1,38 @@
 ---
-title: 'Installer Veeam Backup & Replication'
-excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise'
-updated: 2023-06-23
+title: "Installer Veeam Backup & Replication"
+excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
+updated: 2024-08-12
 ---
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
-
-Veeam Backup & Replication est un logiciel de protection des données. Il offre diverses possibilités de sauvegarde, de réplication et de restauration.
 
 **Apprenez à installer un serveur Veeam Backup & Replication, puis à l'enregistrer auprès du serveur de licences Veeam Enterprise de OVHcloud.**
 
 ## Prérequis
 
-* Posséder une [offre Veeam Enterprise](https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/){.external}.
-* Avoir à disposition une machine Windows Server 2012 ou une version plus récente.
+- Posséder une [offre Veeam Enterprise](/links/storage/veeam).
+- Avoir à disposition une machine Windows Server 2022 (voir requirements).
 
 ## En pratique
 
+Veeam Backup & Replication est un logiciel de protection des données. Il offre diverses possibilités de sauvegarde, de réplication et de restauration.
+
 ### Installer Veeam Backup & Replication
 
-Téléchargez la solution **Veeam Backup & Replication** depuis le site de [Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Si vous n'avez pas de compte, il sera nécessaire d'en créer un (celui-ci est gratuit).
+Téléchargez la solution **Veeam Backup & Replication** depuis le site de [Veeam](<https://www.veeam.com/downloads.html?ad=top-sub-menu>). Si vous n'avez pas de compte, il sera nécessaire d'en créer un (celui-ci est gratuit).
 
 Le fichier se présente sous la forme d'une image disque au format ISO. Après l'avoir transférée sur votre serveur, sélectionnez le lecteur CD de la machine puis choisissez l'image.
 
@@ -69,7 +82,7 @@ Vous serez redirigé vers l'assistant d'installation, il vous suffit de fermer l
 
 ### Créer un compte de service Veeam Enterprise
 
-#### Etape 1 - Lancer un compte de service
+### Étape 1 - Lancer un compte de service
 
 Au préalable, il est nécessaire de générer un mot de passe **complexe**.
 
@@ -86,7 +99,7 @@ Notez que le nom du compte et le mot de passe correspondent à un exemple et doi
  * Nom du compte : OVHVeeamEnterprise
  * Mot de passe : P@ssword01
 
-####  Etape 2 - Définir les autorisations du compte de service
+### Étape 2 - Définir les autorisations du compte de service
 
 Lancez la console Veeam.
 
@@ -112,7 +125,7 @@ De retour dans la fenêtre **Security**, vous pouvez vérifier que le compte est
 
 ![](images/veeamBandR_conf_5.png){.thumbnail}
 
-####  Etape 3 - Autorisations d'exécution et d'activation
+### Étape 3 - Autorisations d'exécution et d'activation
 
 L'utilisateur OVHVeeamEntreprise est accessible uniquement en local, il faut donc ajouter les permissions dans l’interface graphique d’utilisateur Windows pour l'activation de la connexion à distance.
 
@@ -143,11 +156,11 @@ Via l’interface graphique d’utilisateur :
 
 Votre utilisateur OVHVeeamEntreprise est maintenant accessible en local et à distance.
 
-###  Etape 4 - Enregistrer le serveur Veeam Backup
+### Étape 4 - Enregistrer le serveur Veeam Backup
 
-## Depuis l'espace client OVHcloud
+#### Depuis l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Hosted Private Cloud`{.action} et sélectionnez `Plateformes et services`{.action}. Sélectionnez alors votre service **backupserverenterprise** puis cliquez sur `Activer la licence`{.action} dans la section `Raccourcis`.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Hosted Private Cloud`{.action} et sélectionnez `Plateformes et services`{.action}. Sélectionnez alors votre service **backupserverenterprise** puis cliquez sur `Activer la licence`{.action} dans la section `Raccourcis`.
 
 Pour configurer votre environnement, assurez-vous d'avoir ouvert les ports d'OVHcloud vers vos serveurs Veeam Backup and Replication :
 
@@ -172,7 +185,7 @@ Lorsque l'activation est faite, vous retrouvez les informations principales sur 
 
 ![licence activée](images/veeam02.png){.thumbnail}
 
-## Avec l'API OVHcloud
+#### Avec l'API OVHcloud
 
 D'abord, récupérez votre serviceName :
 
@@ -205,7 +218,7 @@ Vous pouvez obtenir l'adresse IP publique utilisée par Veeam Enterprise pour co
 > [!primary]
 > L'activation de votre serveur Veeam Backup & Replication peut prendre plusieurs heures.
 
-###  Etape 5 - Vérifier l'enregistrement
+### Étape 5 - Vérifier l'enregistrement
 
 Lancez la console Veeam.
 
@@ -226,6 +239,6 @@ Si tout s'est bien passé, vous devriez voir "Edition : Entreprise Plus".
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur Discord : <https://discord.gg/ovhcloud>
+Échangez avec notre communauté d’utilisateurs sur le canal dédié [Discord]<https://discord.gg/ovhcloud>
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d’utilisateurs](/links/community).

@@ -1,6 +1,6 @@
 ---
 title: 'Installer Veeam Backup & Replication'
-excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise'
+excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
 updated: 2023-06-23
 ---
 
@@ -205,7 +205,7 @@ Vous pouvez obtenir l'adresse IP publique utilisée par Veeam Enterprise pour co
 > [!primary]
 > L'activation de votre serveur Veeam Backup & Replication peut prendre plusieurs heures.
 
-###  Etape 5 - Vérifier l'enregistrement
+###  Étape 5 - Vérifier l'enregistrement
 
 Lancez la console Veeam.
 
