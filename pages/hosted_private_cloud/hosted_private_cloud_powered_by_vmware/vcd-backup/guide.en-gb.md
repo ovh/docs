@@ -58,7 +58,7 @@ By default, you have the following repositories:
 - **Bronze Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class, we will be using a bucket closer to your VCD environment.
 - **Silver Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your VCD environment, and a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
 
-From the OVHcloud Control Panel, you can activate the **Gold repository** :
+From the OVHcloud Control Panel, you can activate the **Gold repository**:
 
 - **Gold Repository**: This repository is based on the [OVHcloud Object Storage High performance](/links/public-cloud/object-storage) class. We will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your VCD environment, and a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
 
