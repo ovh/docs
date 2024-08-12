@@ -51,16 +51,18 @@ The Veeam VCD Plugin window will open with a grey/black headband.
 
 ### Back up with Veeam Data Platform
 
-#### Repositories
+#### Repository
 
 By default, you have the following repositories:
 
-- **Bronze Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class, we will be using a bucket closer to your VCD environment.
+- **Bronze Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a bucket closer to your VCD environment.
 - **Silver Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your VCD environment, and a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
 
-From the OVHcloud Control Panel, you can activate the **Gold repository**:
+Third choice, the **Gold repository** options include:
 
-- **Gold Repository**: This repository is based on the [OVHcloud Object Storage High performance](/links/public-cloud/object-storage) class. We will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your VCD environment, and a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
+- **Gold Repository**: This repository is based on the [OVHcloud Object Storage High performance](/links/public-cloud/object-storage) class. 
+
+From the OVHcloud Control Panel, you can activate the "Gold repository".
 
 All these repositories have a storage quota of 100To. You can reach out to the [support teams](https://help.ovhcloud.com/csm?id=csm_get_help) to increase this quota.
 

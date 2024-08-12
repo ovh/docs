@@ -55,12 +55,14 @@ La fenêtre du Plugin Veeam VCD s'ouvrira avec un bandeau gris/noir.
 
 Par défaut, vous disposez des repository suivants :
 
-- **Repository Bronze** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage), nous utiliserons un bucket le plus proche de votre environnement VCD.
+- **Repository Bronze** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un bucket le plus proche de votre environnement VCD.
 - **Repository Silver** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-out Backup Repository) avec des compartiments de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
 
-Depuis votre espace client, vous pouvez activer le **Gold repository** :
+Troisième choix, le **Gold repository** inclut les options suivantes :
 
-- **Repository Gold** : Ce repository est basé sur la classe [OVHcloud Object Storage High performance](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-out Backup Repository) avec des compartiments de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
+- **Repository Gold** : Ce repository est basé sur la classe [OVHcloud Object Storage High performance](/links/public-cloud/object-storage).
+
+Depuis votre espace client, vous pouvez activer le "Gold repository".
 
 Tous ces repository ont un quota de stockage de 100 To. Vous pouvez contacter les [équipes de support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
 
@@ -161,18 +163,14 @@ Choisissez une VM. Cliquez sur `Actions`{.action}, puis sur `Protection des donn
 
 ![Backup VM](images/vcd_veeam_backup_vm.png){.thumbnail}
 
-### Etape 2 - Restauration
+### Étape 2 - Restauration
 
-#### Comment restaurer une VM avec le Plugin Veeam VCD ?
+#### Comment restaurer une VM ?
 
 Veeam Backup dispose de plusieurs fonctionnalités de restauration :
 
-- La restauration au niveau des fichiers (File Level Restoration)
-- La récupération instantanée (Instant Recovery)
 - La connaissance des applications (Application Awareness)
 - La stratégie par VM (Policies)
-- Les 3 référentiels avec classe de stockage (repositories)
-- L'immutabilité (optionnel)
 
 #### Données incluses dans les restaurations
 
@@ -180,13 +178,11 @@ Veeam Backup & Replication permet une restauration complète des VM vers VMware 
 
 Pour la restauration, Veeam Backup & Replication utilise les métadonnées de la VM enregistrées dans un fichier de sauvegarde et restaure des attributs spécifiques de la VM. En conséquence, vous obtenez une machine virtuelle pleinement opérationnelle dans VMware Cloud Director, vous n'avez pas besoin d'importer la machine virtuelle restaurée dans VMware Cloud Director et d'ajuster les paramètres manuellement.
 
-Les objets sauvegardés peuvent être restaurés dans la même hiérarchie VMware Cloud Director ou dans un environnement VMware Cloud Director différent. Les options de restauration sont les suivantes :
+La restauration inclut les options suivantes :
 
-- Récupération instantanée : **Instant Recovery**
 - Restauration complète pour les vApps et les VM : **Full restore for vApps and VMs**
 - Restauration des disques des VM : **VM files**
 - Restauration des fichiers VM : **VM disks**
-- Restauration des fichiers du système d'exploitation invité pour les VMs : **Item recovery**
 
 Dans ce cas, faites une restauration de type **Full (entière/complète)**.
 
@@ -221,4 +217,4 @@ Ce processus est simplifié grâce à VCD, Veeam et OVHcloud.
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
