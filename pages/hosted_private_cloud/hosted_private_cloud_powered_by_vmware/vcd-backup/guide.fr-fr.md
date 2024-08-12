@@ -51,6 +51,18 @@ La fenêtre du Plugin Veeam VCD s'ouvrira avec un bandeau gris/noir.
 
 ### Sauvegarder avec Veeam Data Platform
 
+#### Repository
+
+Par défaut, vous disposez des repository suivants :
+
+1. **Repository Bronze** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage), nous utiliserons un bucket le plus proche de votre environnement VCD.
+2. **Repository Silver** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-out Backup Repository) avec des compartiments de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
+3. **Repository Gold** : Ce repository est basé sur la classe [OVHcloud Object Storage High performance](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-out Backup Repository) avec des compartiments de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
+
+Depuis votre espace client, vous pouvez l'activer.
+
+Tous ces repository ont un quota de stockage de 100 To. Vous pouvez contacter les [équipes de support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
+
 #### Données incluses dans les sauvegardes
 
 Lorsque Veeam Backup & Replication réalise des sauvegardes de vApp et de VM, il capture en plus les métadonnées de vApp.
@@ -66,16 +78,6 @@ Les métadonnées des applications virtuelles (vApp) et VM incluent :
 - Les Modèles de stockages (Templates).
 
 Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle. La capture des métadonnées vApp/VM est importante pour la restauration : sans elle, vous ne serez pas en mesure de restaurer les vApp et les VM vers VMware Cloud Director.
-
-##### Les dépôts (repository)
-
-Par défaut, vous avez **les dépôts** suivants :
-
-1. **Bronze Repository** : Standard Object Storage.
-2. **Silver Repository** : Standard Object Storage + Copie de sauvegarde hors site (offsite).
-3. **Gold Repository** : High Performance Object Storage + Copie de sauvegarde hors site (offsite).
-
-Ces dépôts disposent d'un stockage d'une taille de **100GB**.
 
 #### Les tâches de sauvegardes (*jobs*)
 
