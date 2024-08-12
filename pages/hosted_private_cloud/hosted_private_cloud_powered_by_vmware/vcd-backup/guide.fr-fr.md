@@ -86,7 +86,7 @@ Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle
 
 Les tâches de sauvegarde nécessitent 4 paramètres par défaut :
 
-1. Les paramètres de tâches *(jobs*) : Nom / Dépôt ou Quota (Bronze/Silver/Gold : 100GB) / Description / Rétention (Jours/point de restauration)
+1. Les paramètres de tâches (jobs) : Nom / Dépôt ou Quota (Bronze/Silver/Gold : 100GB) / Description / Rétention (Jours/point de restauration)
 2. Machines virtuelles (VM) : Ajout ou exclusion de machines virtuelles / vApp / vCloud Organisation
 3. Traitement invité : Traitement prenant en charge les applications / Indexation du système de fichiers invité / Informations d'identification du système d'exploitation invité (credentials)
 4. Notifications e-mail : Activation de notifications e-mail
@@ -215,6 +215,6 @@ Ce processus est simplifié grâce à VCD, Veeam et OVHcloud.
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
