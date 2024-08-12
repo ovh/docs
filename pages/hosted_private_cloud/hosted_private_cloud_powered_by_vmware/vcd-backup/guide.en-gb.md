@@ -1,6 +1,6 @@
 ---
-title: "VMware Cloud Director - Backups with Veeam Data Protection"
-excerpt: "Find out how to perform backups and restores with the Veeam Plug-in for VMware vCloud Director managed on OVHcloud"
+title: "VMware Cloud Director - Backups with Veeam Data Plateform"
+excerpt: "Find out how to perform backups and restoration with Veeam (Plug-in) Data Plateform / Protection for managed VCD on OVHcloud"
 updated: 2024-08-12
 ---
 

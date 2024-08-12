@@ -1,6 +1,6 @@
 ---
 title: "VMware Cloud Director - Sauvegarde avec Veeam Data Platform"
-excerpt: "Découvrez comment effectuer des sauvegardes et restaurations avec l'intégration Veeam Data Platform"
+excerpt: "Découvrez comment effectuer des sauvegardes et des restaurations avec Veeam (Plug-In) Data Platform / Protection pour votre VCD managé on OVHcloud"
 updated: 2024-08-12
 ---
 
