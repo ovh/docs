@@ -1,23 +1,27 @@
 ---
-title: Deploying a virtual machine
-excerpt: Find out how to deploy a virtual machine in the vSphere interface
-updated: 2020-06-29
+title: "Deploying a virtual machine"
+excerpt: "Find out how to deploy a virtual machine in the vSphere interface"
+updated: 2024-08-13
 ---
 
 ## Objective
-
-In the vSphere interface, you have multiple possibilities to deploy a virtual machine (VM). 
 
 **This guide explains the deployment of a virtual machine by means of an example.**
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- A [Hosted Private Cloud infrastructure](<https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/>)
+- A user account with access to [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
+In the vSphere interface, you have multiple possibilities to deploy a virtual machine (VM).
+
 ### Deploying a virtual machine
+
+Log in to your [OVHcloud Control Panel](/links/manager). If you do not know how to access it, please read our guide ["Logging in to the vSphere web interface"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion).
+
+Once connected, the new virtual machine is deployed from the vSphere client, in the `Hosts and clusters` view.
 
 A new VM can be deployed from the vSphere client. Right-click on your data centre (or use the  `ACTIONS`{.action} button) and select `New Virtual Machine`{.action}.
 
@@ -25,7 +29,6 @@ A new VM can be deployed from the vSphere client. Right-click on your data centr
 
 You have multiple possibilities regarding the creation of a new VM:
 
-- It is possible to create it and select an ISO from your datastore in the process. You can upload ISO files by connecting [via SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion).
 - You can deploy a VM from your own template, an external template or an [OVHcloud template](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 - You can clone an existing VM (be careful to avoid IP address conflicts).
 - You can clone a VM into a template, so that you can deploy your next virtual machine more quickly.
@@ -103,4 +106,4 @@ The console will open in a new tab and after you have completed the installation
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
