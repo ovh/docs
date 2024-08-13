@@ -1,7 +1,7 @@
 ---
 title: 'Rendere sicuro il tuo account OVHcloud con la doppia autenticazione'
 excerpt: 'Come rendere più sicuro il tuo account OVHcloud attivando la doppia autenticazione (2FA)'
-updated: 2024-03-18
+updated: 2024-08-09
 ---
 
 > [!primary]
@@ -213,21 +213,42 @@ Una volta eliminati tutti i dispositivi, disattiva i codici di sicurezza cliccan
 
 #### Se non hai più accesso allo Spazio Cliente OVHcloud <a name="2FA-deletion"></a>
 
-Se non disponi più di periferiche valide e non disponi più di codici di sicurezza validi, puoi richiedere la disattivazione della doppia autenticazione contattando il nostro supporto.
+Se non disponi più di dispositivi validi o di codici di sicurezza validi, è necessario richiedere la disattivazione dell’autenticazione a due fattori, fornendo i documenti di prova dell’identità corrispondenti al tuo account OVHcloud.
 
-Prima di contattarci, dovete raccogliere i seguenti elementi giustificativi:
+Per prima cosa, accedi alla [pagina di autenticazione dello Spazio Cliente OVHcloud](/links/manager).
+
+Inserisci identificativo cliente OVHcloud e password per accedere alla fase di doppia autenticazione. Clicca sul pulsante `Non ho più accesso alle periferiche e ai codici di sicurezza`{.action}.<br>
+Se non vedi questo pulsante, clicca sul pulsante `Prova un altro metodo`{.action} e poi su `Non ho più accesso alle mie periferiche, né ai miei codici di sicurezza`{.action}.
+
+L’interfaccia seguente ti permette di caricare e inviare ai nostri team i documenti necessari a disattivare l’autenticazione a due fattori sul tuo account.
+
+> [!warning]
+>
+> - Attenzione, prima di spedire i tuoi documenti assicurati che siano corretti e leggibili.
+> - **Formati accettati**: jpg, jpeg, pdf, png. La dimensione massima del file per ogni documento è di 10 MB.
+> - In caso di documenti non validi, questa procedura verrà annullata e sarà necessario ripeterla.
+
+Una volta aggiunti i documenti, clicca sul pulsante `Invia i tuoi documenti`{.action}.
+
+Entro 72 ore, riceverai un’email di conferma della disattivazione dell’autenticazione a due fattori.
+
+/// dettagli | Elenco dei giustificativi
 
 |Tipo di account OVHcloud|Giustificativi da fornire|
 |---|---|
 |Privato|- Documento d'identità (carta d'identità, patente di guida, passaporto) con indicazione del nome completo, della data di nascita e di scadenza, a nome del titolare dell'account OVHcloud|
 |Società|- Documenti d'identità di una persona autorizzata a rappresentare l'impresa (carta d'identità, patente di guida, passaporto) con indicazione del nome completo, della data di nascita e di scadenza.<br><br>- Documenti comprovanti le coordinate della società e la persona che rappresenta la società.|
 
-Una volta raccolti i giustificativi, contatta il supporto OVHcloud al +39 02 5560 0423. 
+///
+
+Una volta raccolti i giustificativi, contatta il supporto OVHcloud al +39 02 5560 0423.
 
 > [!warning]
 > I giustificativi da inviare devono provenire da un indirizzo email registrato sul tuo account OVHcloud.
 
-Dopo aver verificato i documenti, un consulente può disattivare manualmente la doppia autenticazione sul tuo account OVHcloud.
+> [!success]
+>
+> Dopo aver verificato i documenti, un consulente può disattivare manualmente la doppia autenticazione sul tuo account OVHcloud.
 
 ## Per saperne di più
 

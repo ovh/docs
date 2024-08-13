@@ -1,7 +1,7 @@
 ---
 title: 'Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern'
 excerpt: 'Erfahren Sie hier, wie Sie die Sicherheit Ihres Accounts bei OVHcloud steigern können, indem Sie die Zwei-Faktor-Authentifizierung (2FA) aktivieren'
-updated: 2024-03-18
+updated: 2024-08-09
 ---
 
 > [!primary]
@@ -212,14 +212,33 @@ Wenn alle Ihre Geräte gelöscht sind, deaktivieren Sie die Notfall-Codes, indem
 
 #### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kundencenter haben <a name="2FA-deletion"></a>
 
-Wenn keinen Zugriff auf validierte Geräte und auch keine gültigen Notfall-Codes mehr haben, können Sie die Zwei-Faktor-Authentifizierung deaktivieren, indem Sie unsere Support-Teams kontaktieren.
+Wenn Sie über keine gültigen Geräte oder Notfall-Codes mehr verfügen, müssen Sie die Deaktivierung der Zwei-Faktor-Authentifizierung anfordern. Geben Sie hierzu die für Ihren OVHcloud-Account erforderlichen Identitätsnachweise an.
 
-Bevor Sie uns kontaktieren, halten Sie folgende Unterlagen bereit:
+Gehen Sie zunächst auf [die Authentifizierungsseite im OVHcloud Kundencenter](/links/manager).
+
+Geben Sie Ihre OVHcloud ID und Ihr Passwort ein, um auf den Schritt der Zwei-Faktor-Authentifizierung zuzugreifen. Klicken Sie nun auf den Button `Ich habe keinen Zugriff mehr auf meine Peripheriegeräte und meine Notfall-Codes`{.action}.<br>
+Wenn diese Schaltfläche nicht angezeigt wird, klicken Sie auf die Schaltfläche `Andere Methode testen`{.action} und dann auf `Ich habe keinen Zugriff mehr auf meine Peripheriegeräte und meine Notfall-Codes`{.action}.
+
+Über das folgende Interface können Sie die notwendigen Dokumente hochladen und an unsere Teams senden, um die Zwei-Faktor-Authentifizierung für Ihren Account zu deaktivieren.
+
+> [!warning]
+>
+> - Achtung, stellen Sie bitte sicher, dass alle Dokumente korrekt und lesbar sind, bevor Sie sie versenden.
+> - **Akzeptierte Formate**: jpg, jpeg, pdf, png. Die maximale Dateigröße für jedes Dokument beträgt 10 MB.
+> - Bei ungültigen Dokumenten wird dieser Vorgang abgebrochen und Sie müssen einen neuen durchführen.
+
+Wenn Sie Ihre Dokumente hinzugefügt haben, klicken Sie auf `Meine Dokumente senden`{.action}.
+
+Innerhalb von 72 Stunden erhalten Sie eine Bestätigung der Deaktivierung der Zwei-Faktor-Authentifizierung per E-Mail.
+
+/// Details | Liste der Belege
 
 |OVHcloud Account-Typ|Vorzulegende Nachweise|
 |---|---|
 |Privatperson|- Beidseitige Kopie eines Identitätsnachweises (Personalausweis, Führerschein, Reisepass), ausgestellt auf den Inhaber des OVHcloud Kunden-Accounts|
 |Unternehmen|- Identitätsnachweis (Personalausweis, Führerschein, Reisepass) der zur Vetretung des Unternehmens berechtigten Person (sensible Daten können unkenntlich gemacht werden, nur der vollständige Name und das Ablaufdatum müssen sichtbar sein)<br><br>- Handelsregisterauszug des Unternehmens|
+
+///
 
 Kontaktieren Sie den OVHcloud Support unter +49 681 906730, sobald Ihre entsprechenden Nachweise vollständig vorliegen.
 
@@ -227,7 +246,9 @@ Kontaktieren Sie den OVHcloud Support unter +49 681 906730, sobald Ihre entsprec
 >
 >  Die Dokumente müssen uns von einer E-Mail-Adresse aus übermittelt werden, die in Ihrem OVHcloud Kunden-Account hinterlegt ist.
 
-Nach Überprüfung Ihrer Unterlagen kann ein Support-Mitarbeiter die Zwei-Faktor-Authentifizierung manuell aus Ihrem OVHcloud Kunden-Account entfernen.
+> [!success]
+>
+> Nach Überprüfung Ihrer Unterlagen kann ein Support-Mitarbeiter die Zwei-Faktor-Authentifizierung manuell aus Ihrem OVHcloud Kunden-Account entfernen.
 
 ## Weiterführende Informationen
 

@@ -1,7 +1,7 @@
 ---
 title: 'Securing your OVHcloud account with two-factor authentication'
 excerpt: 'Find out how to improve security for your OVHcloud account by enabling two-factor authentication (2FA)'
-updated: 2024-03-18
+updated: 2024-08-09
 ---
 
 ## Objective
@@ -208,16 +208,35 @@ Once you have removed all your devices, disable the emergency codes by clicking 
 
 #### If you no longer have access to your OVHcloud Control Panel <a name="2FA-deletion"></a>
 
-If you no longer have valid devices and if you no longer have valid emergency codes, you can request that two-factor authentication be disabled by contacting our support teams.
+If you no longer have valid devices or valid backup codes, then you must request for two-factor authentication to be disabled by providing proof of identity documents corresponding to your OVHcloud account.
 
-Before contacting us, you must gather the following documents:
+First, go to [the login page in the OVHcloud Control Panel](/links/manager).
+
+Enter your OVHcloud ID and password to access the two-factor authentication step. Then click the `I no longer have access to my devices and backup codes`{.action} button.<br>
+If you do not see this button, click the `Try another method`{.action} button, then `I no longer have access to my devices and backup codes`{.action}.
+
+The following interface allows you to upload and send to our teams the necessary documents to disable two-factor authentication on your account.
+
+> [!warning]
+>
+> - Warning, please ensure that all your documents are correct and readable before sending.
+> - **Accepted formats**: jpg, jpeg, pdf, png. The maximum file size for each document is 10 MB.
+> - If there are invalid documents, this procedure will be canceled and you will need to perform a new procedure.
+
+Once you have added your documents, click `Send my documents`{.action}.
+
+Within 72 hours, you will receive confirmation by email that two-factor authentication has been disabled.
+
+/// details | List of supporting documents
 
 |OVHcloud account type|Needed documents|
 |---|---|
 |Private individual|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder|
 |Company|- Company registration documents<br><br>- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder, or in the name of a person authorized to represent the company.|
 
-Once you have gathered your supporting documents, contact our OVHcloud support teams:
+///
+
+If you encounter any difficulties after gathering your supporting documents, you can contact OVHcloud support by phone:
 
 - UK: +44333 370 0425
 - Ireland: +353 (0) 1 691 72 83
@@ -231,7 +250,9 @@ Once you have gathered your supporting documents, contact our OVHcloud support t
 >
 > Your documents must be sent to us from an email address **registered in your OVHcloud account**.
 
-After verifying your documents, a support agent will manually disable two-factor authentication on your OVHcloud account.
+> [!success]
+>
+> After verifying your documents, a support agent will manually disable two-factor authentication on your OVHcloud account.
 
 ## Go further
 

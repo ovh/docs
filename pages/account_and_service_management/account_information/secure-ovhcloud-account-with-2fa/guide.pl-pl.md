@@ -1,7 +1,7 @@
 ---
 title: 'Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej'
 excerpt: 'Dowiedz się, jak poprawić bezpieczeństwo Twojego konta OVHcloud dzięki aktywacji weryfikacji dwuetapowej (2FA)'
-updated: 2024-03-18
+updated: 2024-08-09
 ---
 
 > [!primary]
@@ -212,21 +212,43 @@ Po usunięciu wszystkich urządzeń, wyłącz kody zapasowe, klikając przycisk 
 
 #### Jeśli nie masz już dostępu do Panelu klienta OVHcloud <a name="2FA-deletion"></a>
 
-Jeśli nie posiadasz już dostępu do narzędzi podwójnej autoryzacji  i nie masz już poprawnych kodów zapasowych, możesz zlecić wyłączenie weryfikacji dwuetapowej, kontaktując się z zespołem pomocy.
+Jeśli nie dysponujesz już prawidłowymi urządzeniami lub prawidłowymi kodami zapasowymi, poproś o dezaktywację weryfikacji dwuetapowej, dostarczając dokumenty potwierdzające tożsamość powiązane z Twoim kontem OVHcloud.
 
-Przed skontaktowaniem się z nami, należy przygotować dokumenty:
+Najpierw przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](/links/manager).
+
+Aby przejść do etapu weryfikacji dwuetapowej, wprowadź identyfikator OVHcloud i hasło. Kliknij przycisk `Nie mam dostępu do moich urządzeń ani do kodów zapasowych`{.action}.<br>
+Jeśli nie widzisz tego przycisku, kliknij przycisk `Wypróbuj inną metodę`{.action}, a następnie `Nie mam dostępu do moich urządzeń ani do kodów zapasowych`{.action}.
+
+Poniższy interfejs umożliwia przesłanie i wysłanie do naszych pracowników dokumentów niezbędnych do wyłączenia weryfikacji dwuetapowej na Twoim koncie.
+
+> [!warning]
+>
+> - Uwaga: upewnij się, że wszystkie dokumenty są poprawne i czytelne przed wysłaniem.
+> - **Akceptowane formaty** : jpg, jpeg, pdf, png. Maksymalny rozmiar pliku dla każdego dokumentu to 10 MB.
+> - W przypadku nieprawidłowych dokumentów procedura ta zostanie anulowana i będziesz musiał przeprowadzić nową procedurę.
+
+Po dodaniu dokumentów kliknij przycisk `Wyślij dokumenty`{.action}.
+
+W ciągu 72 godzin otrzymasz e-mail z potwierdzeniem dezaktywacji weryfikacji dwuetapowej.
+
+/// Szczegóły | Lista dokumentów potwierdzających
 
 |Typ konta OVHcloud|Wymagane dokumenty|
 |---|---|
 |Osoba prywatna|- Dowód tożsamości (dowód tożsamości, prawo jazdy, paszport) zawierający nazwisko, datę urodzenia i datę ważności na nazwisko posiadacza konta OVHcloud|
 |Firma|- Dokument potwierdzający tożsamość (dowód tożsamości, prawo jazdy, paszport) zawierający nazwisko, datę urodzenia i datę ważności, osoby upoważnionej do reprezentowania firmy.<br><br>- Dokumenty potwierdzające dane firmy - kopia nadania NIPu lub Regonu lub aktualny odpis z KRS, wydruk z CEIDG|
 
+///
+
 Po skomplementowaniu dokumentów skontaktuj się z pomocą OVHcloud +48 71 750 02 00.
 
 > [!warning]
+>
 > Dokumenty należy przesłać z adresu e-mail przypisanego do konta klienta OVHcloud.
 
-Po sprawdzeniu dokumentów konsultant może ręcznie wyłączyć weryfikację dwuetapową na Twoim koncie OVHcloud.
+> [!success]
+>
+> Po sprawdzeniu dokumentów konsultant może ręcznie wyłączyć weryfikację dwuetapową na Twoim koncie OVHcloud.
 
 ## Sprawdź również
 

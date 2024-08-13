@@ -1,7 +1,7 @@
 ---
 title: 'Proteger a sua conta OVHcloud com a dupla autenticação'
 excerpt: 'Descubra como melhorar a segurança da sua conta OVHcloud ao ativar a dupla autenticação (2FA)'
-updated: 2024-03-18
+updated: 2024-08-09
 ---
 
 > [!primary]
@@ -212,21 +212,43 @@ Depois de eliminar todos os periféricos, desative os códigos de segurança cli
 
 #### Se já não tem acesso à Área de Cliente OVHcloud <a name="2FA-deletion"></a>
 
-Se já não dispõe de periféricos válidos e se já não dispõe de códigos de segurança válidos, pode solicitar a desativação da dupla autenticação contactando as nossas equipas de suporte.
+Se já não dispõe de dispositivos válidos nem de códigos de segurança válidos, deve pedir a desativação da dupla autenticação ao fornecer documentos de justificação de identidade correspondentes à sua conta OVHcloud.
 
-Antes de nos contactar, deverá apresentar os seguintes elementos comprovativos:
+Em primeiro lugar, aceda a [a página de autenticação na Área de Cliente OVHcloud](/links/manager).
+
+Introduza o seu identificador OVHcloud e a sua palavra-passe para aceder à etapa da dupla autenticação. Clique no botão `Já não tenho acesso aos meus periféricos nem aos meus códigos de segurança`{.action}.<br>
+Se não vir este botão, clique no botão `Experimentar outro método`{.action} e, a seguir, em `Já não tenho acesso aos meus periféricos, nem aos meus códigos de segurança`{.action}.
+
+A interface seguinte permite-lhe descarregar e enviar às nossas equipas os documentos necessários para desativar a dupla autenticação na sua conta.
+
+> [!warning]
+>
+> - Atenção, certifique-se de que todos os seus documentos estão corretos e legíveis antes do envio.
+> - **Formatos aceites**: jpg, jpeg, pdf, png. O tamanho máximo do ficheiro para cada documento é de 10 MB.
+> - No caso de documentos inválidos, este procedimento será anulado e deverá efetuar um novo.
+
+Depois de adicionar os documentos, clique no botão `Enviar os meus documentos`{.action}.
+
+Num prazo de 72 horas, receberá a confirmação da desativação da dupla autenticação por e-mail.
+
+/// detalhes | Lista dos documentos comprovativos
 
 |Tipo de conta OVHcloud|Documentos a apresentar|
 |---|---|
 |Particular|- Documento de identidade (cartão de cidadão, carta de condução, passaporte) do titular da conta OVHcloud<br><br>- Comprovativo de morada recente<br>**Se, após uma mudança de residência, não tiver atualizado o seu endereço na Área de Cliente OVHcloud, deverá fornecer:**<br>- Um comprovativo de morada no antigo endereço<br>- Um comprovativo de morada recente no novo endereço<br>Se vive agora num terceiro, deverá fornecer:<br>- Um comprovativo de morada recente em nome da pessoa que o aloja<br>- Certificado de alojamento assinado pela pessoa que o aloja|
 |Empresa|- Documento de identidade (cartão de cidadão, carta de condução, passaporte) do gerente da empresa<br><br>- Documento comprovativo do registo da empresa ou o código da certidão permanente<br><br>- Comprovativo de morada em nome da empresa|
 
-Quando os seus documentos estiverem reunidos, contacte o suporte da OVHcloud em +351 213 155 642. 
+///
+
+Quando os seus documentos estiverem reunidos, contacte o suporte da OVHcloud em +351 213 155 642.
 
 > [!warning]
+>
 > Os documentos comprovativos devem ser-nos enviados a partir de um endereço de e-mail registado na sua conta OVHcloud.
 
-Após verificação dos seus documentos, um consultor poderá desativar manualmente a dupla autenticação na sua conta OVHcloud.
+> [!success]
+>
+> Após verificação dos seus documentos, um consultor poderá desativar manualmente a dupla autenticação na sua conta OVHcloud.
 
 ## Quer saber mais?
 
