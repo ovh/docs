@@ -73,7 +73,7 @@ Dirigez-vous dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `Act
 
 > [!warning]
 >
-> Pour pouvoir supprimer un compte e-mail sur une plateforme Private Exchange, **il est nécessaire que celui-ci ait été créé** et attaché à un nom de domaine.
+> Pour pouvoir supprimer un compte e-mail sur une plateforme Private Exchange, **il est nécessaire que celui-ci ait été créé** (attaché à un nom de domaine de votre plateforme Exchange). Un compte non-configuré ne peut pas être supprimé.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur `...`{.action} à droite du compte concerné puis cliquez sur `Supprimer`{.action}. Le compte sera immédiatement retiré de la plateforme, il n'y a pas de résiliation à effectuer.
 
