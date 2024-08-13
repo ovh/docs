@@ -214,8 +214,8 @@ Si vous ne disposez plus de périphériques valides ni de codes de secours valid
 
 Tout d'abord, accédez à [la page d'authentification à l'espace client OVHcloud](/links/manager).
 
-Renseignez votre identifiant OVHcloud et votre mot de passe pour accéder à l'étape de la double authentification. Cliquez alors sur le bouton `Je n'ai plus accès à mes périphériques, ni mes codes de secours`{.action}.<br>
-Si vous ne voyez pas ce bouton, cliquez sur le bouton `Essayer une autre méthode`{.action} puis sur `Je n'ai plus accès à mes périphériques, ni mes codes de secours`{.action}.
+Renseignez votre identifiant OVHcloud et votre mot de passe pour accéder à l'étape de la double authentification. Cliquez alors sur le bouton `Je n’ai plus accès à mon mobile, à la clé de sécurité U2F ou à mes codes de secours`{.action}.<br>
+Si vous ne voyez pas ce bouton, cliquez sur le bouton `Essayer une autre méthode`{.action} puis sur `Je n’ai plus accès à mon mobile, à la clé de sécurité U2F ou à mes codes de secours`{.action}.
 
 L'interface suivante vous permet de téléverser et d'envoyer à nos équipes les documents nécessaires pour désactiver la double authentification sur votre compte.
 
@@ -225,9 +225,7 @@ L'interface suivante vous permet de téléverser et d'envoyer à nos équipes le
 > - **Formats acceptés** : jpg, jpeg, pdf, png. La taille maximale du fichier pour chaque document est de 10 Mo.
 > - En cas de documents non valides, cette procédure sera annulée et vous devrez en effectuer une nouvelle.
 
-Une fois vos documents ajoutés, cliquez sur le bouton `Envoyer mes documents`{.action}.
-
-Dans un délai de 72 heures, vous recevrez la confirmation de la désactivation de la double authentification par e-mail.
+Dans un délai de 72 heures, sous réserve que vos documents soient sont corrects et lisibles, vous recevrez la confirmation de la désactivation de la double authentification par e-mail.
 
 /// details | Liste des justificatifs
 
