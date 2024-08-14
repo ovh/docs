@@ -1,7 +1,7 @@
 ---
 title: "Déploiement d’une machine virtuelle"
 excerpt: "Découvrez comment déployer une machine virtuelle depuis l'interface vSphere"
-updated: 2024-08-12
+updated: 2024-08-14
 ---
 
 ## Objectif
@@ -29,7 +29,8 @@ Faites un clic-droit sur le cluster de votre choix et cliquez sur `Nouvelle mach
 
 Vous avez plusieurs possibilités lors de la création d’une machine virtuelle :
 
-- Vous pouvez également déployer une machine virtuelle depuis un template que vous pouvez avoir ou un [template OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)
+- La création depuis un ISO, qui sera dans votre datastore et que vous aurez pu importer en suivant [Connecter une image ISO à une VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_connect_an_iso_image_to_a_vm).
+- Vous pouvez également déployer une machine virtuelle depuis un template que vous pouvez avoir ou un [template OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 - Vous pouvez cloner une machine virtuelle déjà existante (attention toutefois au risque de conflit d’adresses IP).
 - Vous pouvez cloner une machine virtuelle en template, en vue d’un déploiement plus rapide de vos prochaines machines virtuelles.
 - Vous pouvez cloner un template en un autre template pour, par exemple, avoir le template sur différents datastores et ne pas subir de baisse de performances lors d’un déploiement massif.
