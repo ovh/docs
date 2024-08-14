@@ -61,6 +61,6 @@ When adding a persistent volume though Kubernetes API (or `kubectl`), it will ac
 All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device. They are distributed transparently, on three physical local replicas.
 
 High Speed performance is theoretically best for volumes up to 100GB. Above 100GB per volume, you will get enhanced performance with a High Speed Gen2 volume.
-This is detailed in the [Persistent Volumes ](/pages/public_cloud/containers_orchestration/managed_kubernetes/persistent-volumes-on-ovh-managed-kubernetes) guide.
+This is detailed in the [Persistent Volumes](/pages/public_cloud/containers_orchestration/managed_kubernetes/persistent-volumes-on-ovh-managed-kubernetes) guide.
 
 We will support future classes as soon they are made available in OVHcloud Public Cloud.
