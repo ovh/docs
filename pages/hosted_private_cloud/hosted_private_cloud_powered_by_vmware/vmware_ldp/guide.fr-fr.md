@@ -1,7 +1,7 @@
 ---
 title: "Transfert des logs VMware vers un stream Logs Data Platform"
 excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-08-09
+updated: 2024-08-14
 ---
 
 > [!primary]
@@ -11,7 +11,7 @@ updated: 2024-08-09
 
 ## Objectif
 
-L'objectif de ce guide est de vous montrer comment activer le transfert des logs de votre Hosted Private Cloud VMware on OVHcloud vers Logs Data Platform (LDP), une plateforme qui vous aide à stocker, archiver, interroger et visualiser vos logs.
+**Découvrez comment activer le transfert des logs VMware Hosted Private Cloud vers un stream Logs Data Platform**.
 
 ## Prérequis
 
@@ -100,7 +100,7 @@ Exemple de retour si l'option n'est "pas activé" :
  }
 ```
 
-### Étape 2 - Activation du transfert des logs Hosted Private Cloud
+### Étape 2 - Création d'un stream Logs Data Platform
 
 > [!primary]
 > 
@@ -109,9 +109,7 @@ Exemple de retour si l'option n'est "pas activé" :
 > Vous devez avoir préalablement créer un stream Logs Data Platform.
 >
 
-#### Création d'un stream Logs Data Platform
-
-**Via l'espace client OVHcloud** :
+#### Via l'espace client OVHcloud**
 
 Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
