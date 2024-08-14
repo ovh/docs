@@ -216,8 +216,8 @@ Jeśli nie dysponujesz już prawidłowymi urządzeniami lub prawidłowymi kodami
 
 Najpierw przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](/links/manager).
 
-Aby przejść do etapu weryfikacji dwuetapowej, wprowadź identyfikator OVHcloud i hasło. Kliknij przycisk `Nie mam dostępu do moich urządzeń ani do kodów zapasowych`{.action}.<br>
-Jeśli nie widzisz tego przycisku, kliknij przycisk `Wypróbuj inną metodę`{.action}, a następnie `Nie mam dostępu do moich urządzeń ani do kodów zapasowych`{.action}.
+Aby przejść do etapu weryfikacji dwuetapowej, wprowadź identyfikator OVHcloud i hasło. Kliknij przycisk `Nie mam dostępu do telefonu komórkowego, klucza bezpieczeństwa U2F ani kodów zapasowych`{.action}.<br>
+Jeśli nie widzisz tego przycisku, kliknij przycisk `Wypróbuj inną metodę`{.action}, a następnie `Nie mam dostępu do telefonu komórkowego, klucza bezpieczeństwa U2F ani kodów zapasowych`{.action}.
 
 Poniższy interfejs umożliwia przesłanie i wysłanie do naszych pracowników dokumentów niezbędnych do wyłączenia weryfikacji dwuetapowej na Twoim koncie.
 
@@ -226,8 +226,6 @@ Poniższy interfejs umożliwia przesłanie i wysłanie do naszych pracowników d
 > - Uwaga: upewnij się, że wszystkie dokumenty są poprawne i czytelne przed wysłaniem.
 > - **Akceptowane formaty** : jpg, jpeg, pdf, png. Maksymalny rozmiar pliku dla każdego dokumentu to 10 MB.
 > - W przypadku nieprawidłowych dokumentów procedura ta zostanie anulowana i będziesz musiał przeprowadzić nową procedurę.
-
-Po dodaniu dokumentów kliknij przycisk `Wyślij dokumenty`{.action}.
 
 W ciągu 72 godzin otrzymasz e-mail z potwierdzeniem dezaktywacji weryfikacji dwuetapowej.
 

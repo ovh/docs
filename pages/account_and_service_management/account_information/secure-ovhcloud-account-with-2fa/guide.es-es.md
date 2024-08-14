@@ -219,8 +219,8 @@ Si ya no dispone de dispositivos válidos ni de códigos de seguridad válidos, 
 
 En primer lugar, acceda a [la página de autenticación en el área de cliente de OVHcloud](/links/manager).
 
-Introduzca su usuario y contraseña de OVHcloud para acceder a la fase de doble autenticación. Haga clic en el botón ` Ya no tengo acceso a mis dispositivos ni a mis códigos de seguridad`{.action}.<br>
-Si no ve este botón, haga clic en el botón `Probar con otro método`{.action} y luego en `Ya no tengo acceso a mis dispositivos, ni a mis códigos de seguridad`{.action}.
+Introduzca su usuario y contraseña de OVHcloud para acceder a la fase de doble autenticación. Haga clic en el botón `No tengo acceso a mi móvil, a la llave de seguridad U2F ni a mis códigos de seguridad`{.action}.<br>
+Si no ve este botón, haga clic en el botón `Probar con otro método`{.action} y luego en `No tengo acceso a mi móvil, a la llave de seguridad U2F ni a mis códigos de seguridad`{.action}.
 
 La siguiente interfaz le permite descargar y enviar a nuestro equipo los documentos necesarios para desactivar la doble autenticación en su cuenta.
 
@@ -229,8 +229,6 @@ La siguiente interfaz le permite descargar y enviar a nuestro equipo los documen
 > - Atención, asegúrese de que todos sus documentos son correctos y legibles antes de enviarlos.
 > - **Se aceptan formatos**: jpg, jpeg, pdf, png. El tamaño máximo del archivo para cada documento es de 10 MB.
 > - En caso de documentos no válidos, este procedimiento se cancelará y deberá realizar uno nuevo.
-
-Una vez que haya añadido los documentos, haga clic en el botón `Enviar mis documentos`{.action}.
 
 En un plazo de 72 horas, recibirá la confirmación de la desactivación de la doble autenticación por correo electrónico.
 

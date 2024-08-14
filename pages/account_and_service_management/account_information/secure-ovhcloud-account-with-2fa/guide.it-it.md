@@ -217,8 +217,8 @@ Se non disponi più di dispositivi validi o di codici di sicurezza validi, è ne
 
 Per prima cosa, accedi alla [pagina di autenticazione dello Spazio Cliente OVHcloud](/links/manager).
 
-Inserisci identificativo cliente OVHcloud e password per accedere alla fase di doppia autenticazione. Clicca sul pulsante `Non ho più accesso alle periferiche e ai codici di sicurezza`{.action}.<br>
-Se non vedi questo pulsante, clicca sul pulsante `Prova un altro metodo`{.action} e poi su `Non ho più accesso alle mie periferiche, né ai miei codici di sicurezza`{.action}.
+Inserisci identificativo cliente OVHcloud e password per accedere alla fase di doppia autenticazione. Clicca sul pulsante `Non ho più accesso al cellulare, alla chiave di sicurezza U2F o ai codici di backup`{.action}.<br>
+Se non vedi questo pulsante, clicca sul pulsante `Prova un altro metodo`{.action} e poi su `Non ho più accesso al cellulare, alla chiave di sicurezza U2F o ai codici di backup`{.action}.
 
 L’interfaccia seguente ti permette di caricare e inviare ai nostri team i documenti necessari a disattivare l’autenticazione a due fattori sul tuo account.
 
@@ -227,8 +227,6 @@ L’interfaccia seguente ti permette di caricare e inviare ai nostri team i docu
 > - Attenzione, prima di spedire i tuoi documenti assicurati che siano corretti e leggibili.
 > - **Formati accettati**: jpg, jpeg, pdf, png. La dimensione massima del file per ogni documento è di 10 MB.
 > - In caso di documenti non validi, questa procedura verrà annullata e sarà necessario ripeterla.
-
-Una volta aggiunti i documenti, clicca sul pulsante `Invia i tuoi documenti`{.action}.
 
 Entro 72 ore, riceverai un’email di conferma della disattivazione dell’autenticazione a due fattori.
 
