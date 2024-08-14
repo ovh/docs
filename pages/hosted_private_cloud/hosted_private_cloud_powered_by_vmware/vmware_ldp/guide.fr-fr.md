@@ -21,13 +21,6 @@ L'objectif de ce guide est de vous montrer comment activer le transfert des logs
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
 - Avoir les options de sécurités activées, pour verifier lancer l'appel API [suivant](#security-options)
 
-## Glossaire
-
-- **Logs Data Platform :** plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez [la page de présentation de la solution LDP](/links/manage-operate/ldp).
-- **Data Stream :** partition logique de logs que vous créez dans un compte Logs Data Platform et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
-- **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans le *Data Stream* d’un compte Logs Data Platform du même compte OVHcloud. Cette fonctionnalité doit être activée par vos soins et pour votre service. Consultez cette partie du guide pour l'activer : [Etape 1 - Comment activer le transfert des journaux via l'API OVHcloud](#activation)
-- **Abonnement à la redirection de logs :** lors de l'activation du transfert de logs pour votre service OVHcloud vers un *Data Stream* Logs Data Platform donné, un *abonnement* doit être créé et rattaché au *Data Stream* pour une gestion ultérieure.
-
 ## En pratique
 
 > [!primary]
@@ -41,9 +34,7 @@ L'activation du transfert des logs vers un stream Logs Data Platform permet de c
 
 Pour plus d'informations concernant les caractéristiques techniques de Logs Data Platform (ports, protocoles, etc.), nous vous invitons à consulter le guide « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
-### Les logs et labels
-
-#### Les *kinds* disponibles
+**Les logs et labels - Les *kinds* disponibles** :
 
 Un *kind* est un « type » de logs que votre produit génère.
 
@@ -70,7 +61,7 @@ Nous fournissons toutes les métadonnées pour l'identification de Hosted Privat
 > Si le call API renvoi "disabled", contactez le support OVHcloud.
 >
 
-#### Via l'API OVHcloud :
+#### Via l'API OVHcloud
 
 Pour vérifier si les options de sécurité sont présentes pour permettre l'activation de la fonctionnalité Rsyslog au sein de votre VMware vSphere managé on OVHcloud, lancer l'appel API suivant :
 
@@ -118,15 +109,15 @@ Exemple de retour si l'option n'est "pas activé" :
 > Vous devez avoir préalablement créer un stream Logs Data Platform.
 >
 
-### Création d'un stream Logs Data Platform
+#### Création d'un stream Logs Data Platform
 
-#### Via l'espace client OVHcloud
+**Via l'espace client OVHcloud** :
 
 Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
 Récupérez le **streamId** et sauvegardez-le (copier-coller). Vous en aurez besoin pour activer votre souscription Hosted Private Cloud avec le stream Logs Data Platform en question.
 
-### Étape 3 - Activation de l'abonnement Logs Data Platform Hosted Private Cloud
+### Étape 3 - Activation de l'abonnement LDP Hosted Private Cloud
 
 #### Via l'espace client OVHcloud
 
@@ -153,7 +144,7 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 > - `streamId` : identifiant du flux (stream) de destination, (uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
 
-- Exemple :
+Exemple :
 
 ```shell
 @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
@@ -188,13 +179,13 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 |   DELETE    | /dedicatedCloud/{serviceName}/log/subscription | Supprimer un abonnement log pour votre service Hosted Private Cloud |
 
 
-- Obtenir le `subscriptionId`
+**Comment obtenir le `subscriptionId`** ?
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/subscription
 >
-
+>
 > **Paramètres** :
 >
 > - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud sous la forme "pcc-XXX-XXX-XXX-XXX".
@@ -209,7 +200,7 @@ Exemple de retour :
 ]
 ```
 
-- Désactiver votre abonnement de souscription Hosted Private Cloud Log Data Platform :
+**Comment désactiver votre abonnement de souscription Hosted Private Cloud Log Data Platform** ?
 
 > [!primary]
 > 
@@ -222,7 +213,7 @@ Exemple de retour :
 >
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 >
-
+>
 > **Paramètres** :
 >
 > - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud sous la forme "pcc-XXX-XXX-XXX-XXX".
@@ -239,6 +230,13 @@ Retour :
   "serviceName": "ldp-vg-XXXX"
 }
 ```
+
+**Glossaire** 
+
+- **Logs Data Platform :** plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez [la page de présentation de la solution LDP](/links/manage-operate/ldp).
+- **Data Stream :** partition logique de logs que vous créez dans un compte Logs Data Platform et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
+- **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans le *Data Stream* d’un compte Logs Data Platform du même compte OVHcloud. Cette fonctionnalité doit être activée par vos soins et pour votre service. Consultez cette partie du guide pour l'activer : [Etape 1 - Comment activer le transfert des journaux via l'API OVHcloud](#activation)
+- **Abonnement à la redirection de logs :** lors de l'activation du transfert de logs pour votre service OVHcloud vers un *Data Stream* Logs Data Platform donné, un *abonnement* doit être créé et rattaché au *Data Stream* pour une gestion ultérieure.
 
 ## Aller plus loin
 
