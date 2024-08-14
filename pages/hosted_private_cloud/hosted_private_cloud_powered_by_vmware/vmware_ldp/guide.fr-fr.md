@@ -5,7 +5,6 @@ updated: 2024-08-14
 ---
 
 > [!primary]
->
 > Cette fonctionnalité est actuellement en phase Bêta. Ce guide peut donc être incomplet et mise à jour.
 > 
 
@@ -17,26 +16,24 @@ updated: 2024-08-14
 
 - Disposer d'un [compte client OVHcloud](/links/manager).
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud.
-- Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud.
+- Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud (pour verifier lancer l'appel API [suivant](#security-options))
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
-- Avoir les options de sécurités activées, pour verifier lancer l'appel API [suivant](#security-options)
 
 ## En pratique
 
 > [!primary]
->
 > Prenez en compte que l'activation du **transfert de logs (Log Forwarding)** est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard.
 >
-> Pour plus d'informations sur la tarification, consultez la page de l'offre [Logs Data Platform OVHcloud](/links/manage-operate/ldp).
+> Vos journaux sont manoeuvrés à des fins de sécurité et d'observabilité dans les clusters privées LDP.
+> 
+> Pour plus d'informations sur la tarification LDP, consultez la [page de l'offre](/links/manage-operate/ldp).
 >
 
 L'activation du transfert des logs vers un stream Logs Data Platform permet de collecter, d'indexer et d'analyser les données d'un service Hosted Private Cloud VMware on OVHcloud. Peu importe leur origine, cette plateforme offre une diversité de moyens d'accès en fonction du protocole, du niveau de sécurité et du format désiré. Les données recueillies peuvent être aisément exploitées grâce aux multiples API et interfaces web mises à disposition.
 
 Pour plus d'informations concernant les caractéristiques techniques de Logs Data Platform (ports, protocoles, etc.), nous vous invitons à consulter le guide « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
-**Les logs et labels - Les *kinds* disponibles** :
-
-Un *kind* est un « type » de logs que votre produit génère.
+- **Les logs et labels - Les *kinds* disponibles** : Un **kind** est un « type » de logs que votre produit génère.
 
 Ils sont les types de logs que vous voulez transférer à votre stream Logs Data Platform. Voici des exemples qui peuvent être disponibles en fonction des composants de votre architecture Hosted Private Cloud VMware on OVHcloud :
 
@@ -49,21 +46,19 @@ Sachez qu'il est tout à fait acceptable qu'un produit ne possède qu'une seule 
 
 **Remarques** :
 
-- Tous les logs VMware sont collectés et envoyés aux clusters Logs Data Platform.
-- Tous les logs des applications VMware sont traités et marqués au niveau de Logs Data Platform.
+- Tous les logs VMware sont collectés et envoyés aux clusters LDP. Puis traités et marqués par Logs Data Platform.
 
 Nous fournissons toutes les métadonnées pour l'identification de Hosted Private Cloud VMware on OVHcloud.
 
-### Étape 1 - Vérification des options de sécurités <a name="security-options"></a>
+### Étape 1 - Vérification des options de sécurités
 
 > [!primary]
->
-> Si vous avez le `vrliForwarder` exigé pour fonctionner avec la fonctionnalité Log2Customer au sein de vos options de sécurité, contactez le support OVHcloud.
+> Si le `vrliForwarder` est exigé aux options de sécurités afin de fonctionner avec la fonctionnalité **sendLogToCustomer**, contactez le support OVHcloud.
 >
 
-#### Via l'API OVHcloud
+#### Via l'API OVHcloud <a name="security-options"></a>
 
-Pour vérifier si l'option exige le vrliForwarder pour permettre l'activation de la fonctionnalité `Log2Customer` au sein de votre VMware vSphere managé on OVHcloud. Lancer l'appel API suivant :
+Pour vérifier les options exigées pour permettre le fonctionnement de la fonctionnalité `sendLogToCustomer` au sein de votre VMware vSphere managé on OVHcloud. Lancer l'appel API suivant :
 
 > [!api]
 >
@@ -73,7 +68,7 @@ Pour vérifier si l'option exige le vrliForwarder pour permettre l'activation de
 > **Paramètres** :
 >
 > - `serviceName` : Votre PCC sous la forme, (`pcc-XXX-XXX-XXX-XXX`).
-> - `Allowed` : Option sécurité cible nécessaire (`sendLogToCustomer`).
+> - `Allowed` : Option de sécurité de la feature cible nécessaire (`sendLogToCustomer`).
 > 
 
 Exemple de retour si l'option est exigé pour fonctionner au sein de votre vSphere managé on OVHcloud :
@@ -87,15 +82,35 @@ Exemple de retour si l'option est exigé pour fonctionner au sein de votre vSphe
   "conflicts": []
 }
 ```
-> [!warning]
+
+**Appel API n°2** :
+
+Pour vérifier l'énumération des options qui n'appartiennent pas à `SecurityOptionEnum` pour permettre le fonctionnement de la fonctionnalité `sendLogToCustomer` au sein de votre VMware vSphere managé on OVHcloud. Lancer l'appel API suivant :
+
+> [!api]
 >
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
+>
+>
+> **Paramètres** :
+>
+> - `showIncompatible` : true.
+> - `showInternal` : true
+>
+
+```Shell
+{
+  "message": "[(compatibilityMatrix return)[4].name] Given data (logForwarder) does not belong to the SecurityOptionEnum enumeration"
+}
+```
+
+> [!warning]
 > Contacter donc le support OVHcloud avant de créer un stream et souscrire à l'offre LDP Hosted Private Cloud.
 > 
 
 ### Étape 2 - Création d'un stream Logs Data Platform
 
 > [!primary]
-> 
 > Les ressources Hosted Private Cloud et LDP doivent appartenir au même compte OVHcloud.
 >
 > Vous devez avoir préalablement créer un stream Logs Data Platform.
@@ -116,7 +131,6 @@ Cette fonctionnalité n'est pas encore disponible dans la section Hosted Private
 #### Via l’API OVHcloud <a name="activation"></a>
 
 > [!success]
->
 > Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 >
 
@@ -193,7 +207,6 @@ Exemple de retour :
 **Comment désactiver votre abonnement de souscription Hosted Private Cloud Log Data Platform** ?
 
 > [!primary]
-> 
 > La résiliation de votre abonnement Hosted Private Cloud LDP ne signifie pas la suppression de vos stream. Le stockage consommé au moment de la désactivation reste soumis à facturation.
 >
 > **Remarque** : Il n'est possible (à ce jour) de supprimer qu'un stream en entier.
