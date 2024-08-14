@@ -1,7 +1,7 @@
 ---
 title: Setting-up a Persistent Volume on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Volumes (PV), attach a Pod to a PVC, change PV reclaim policy and delete created objects'
-updated: 2022-11-28
+updated: 2024-08-14
 ---
 
 In this tutorial we are going to guide you through a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
@@ -178,13 +178,22 @@ Events:
 
 ## Storage Classes
 
-We currently support two [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes: `csi-cinder-high-speed` and `csi-cinder-classic`, both based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}, the OpenStack Block Storage service. The difference between them is the associated physical storage device. `csi-cinder-high-speed` uses SSD, while `csi-cinder-classic` uses traditional spinning disks. Both are distributed transparently, on three physical local replicas.
+We currently support three [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes:
+
+* `csi-cinder-high-speed-gen2` storage class is based on hardware that includes SSD disks with NVMe interfaces. The performance allocation is progressive and linear (30 IOPS allocated per GB and 0.5MB/s allocated per GB) with a maximum of 20k IOPS and 1GB/s per volume. The IOPS and bandwidth performance will increase as  scale up the storage space.
+* `csi-cinder-high-speed` performance is fixed. You will get up to 3,000 IOPS per volume, regardless of the volume size. 
+* `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). 
+
+All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device. They are distributed transparently, on three physical local replicas.
+
+High Speed performance is theoretically best for volumes up to 100GB. Above 100GB per volume, you will get enhanced performance with a High Speed Gen2 volume.
 
 ```console
 $ kubectl get sc
 NAME                              PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
-csi-cinder-classic                cinder.csi.openstack.org   Delete          Immediate           true                   67d
-csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   67d
+csi-cinder-classic                cinder.csi.openstack.org   Delete          Immediate           true                   12d
+csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   12d
+csi-cinder-high-speed-gen2        cinder.csi.openstack.org   Delete          Immediate           true                   5h11m
 ```
 
 When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/){.external}.
