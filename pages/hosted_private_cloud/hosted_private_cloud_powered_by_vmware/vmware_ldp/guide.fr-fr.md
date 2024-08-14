@@ -56,14 +56,14 @@ Nous fournissons toutes les métadonnées pour l'identification de Hosted Privat
 
 ### Étape 1 - Vérification des options de sécurités <a name="security-options"></a>
 
-> [!warning]
+> [!primary]
 >
-> Si le call API renvoi "disabled", contactez le support OVHcloud.
+> Si vous avez le `vrliForwarder` exigé pour fonctionner avec la fonctionnalité Log2Customer au sein de vos options de sécurité, contactez le support OVHcloud.
 >
 
 #### Via l'API OVHcloud
 
-Pour vérifier si les options de sécurité sont présentes pour permettre l'activation de la fonctionnalité Rsyslog au sein de votre VMware vSphere managé on OVHcloud, lancer l'appel API suivant :
+Pour vérifier si l'option exige le vrliForwarder pour permettre l'activation de la fonctionnalité `Log2Customer` au sein de votre VMware vSphere managé on OVHcloud. Lancer l'appel API suivant :
 
 > [!api]
 >
@@ -72,33 +72,25 @@ Pour vérifier si les options de sécurité sont présentes pour permettre l'act
 >
 > **Paramètres** :
 >
-> - `serviceName` : Votre PCC sous la forme, "pcc-XXX-XXX-XXX-XXX".
-> - `option` : Avec `sendLogToCustomer` allowed.
+> - `serviceName` : Votre PCC sous la forme, (`pcc-XXX-XXX-XXX-XXX`).
+> - `Allowed` : Option sécurité cible nécessaire (`sendLogToCustomer`).
 > 
 
-Exemple de retour si l'option est "activé" :
+Exemple de retour si l'option est exigé pour fonctionner au sein de votre vSphere managé on OVHcloud :
 
 ```Shell
- {
- "state": "delivered"
- }
+{
+  "depends": [],
+  "requires": [
+    "vrliForwarder"
+  ],
+  "conflicts": []
+}
 ```
-
-Exemple de retour si l'option est en cours "d'activation" :
-
-```Shell
- {
- "state": "creating"
- }
-```
-
-Exemple de retour si l'option n'est "pas activé" :
-
-```Shell
- {
- "state": "disabled"
- }
-```
+> [!warning]
+>
+> Contacter donc le support OVHcloud avant de créer un stream et souscrire à l'offre LDP Hosted Private Cloud.
+> 
 
 ### Étape 2 - Création d'un stream Logs Data Platform
 
