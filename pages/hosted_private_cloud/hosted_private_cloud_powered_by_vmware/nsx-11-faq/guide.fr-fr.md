@@ -11,7 +11,7 @@ updated: 2024-08-15
 ## Foire aux questions - FAQ
 
 > [!faq] 
-> **Quels sont les différents packs d’assistance ? Quelles sont les différences entre les packs ** ? <a name="diffencepack"></a>
+> Quels sont les différents packs d’assistance ? Quelles sont les différences entre les packs ? <a name="diffencepack"></a>
 > > Tous les packs sont basés sur des jours (1 jour = 8 heures). 1 jour, 2 jours (parfois plus).
 > > La première approche est la même pour tous les packs avec une phase de découverte, mais la durée du pack dépendra de la complexité de l'environnement et de la maturité du client.
 > > Cette question sera étudiée avec l'équipe PS lors d'un premier appel d'évaluation.
