@@ -1,7 +1,7 @@
 ---
-title: "Terraform sur vSphere managé on OVHcloud"
-excerpt: "Ce guide fournit des instructions de l'utilisation de Terraform (modules et providers) dans un écosystem Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-08-14
+title: "Terraform - Premiers pas avec VMware"
+excerpt: "Ce guide fournit les premieres instructions pour l'utilisation de Terraform (modules et providers) dans un écosystem Hosted Private Cloud VMware on OVHcloud"
+updated: 2024-08-15
 ---
 <style>
 details>summary {
