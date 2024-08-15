@@ -4,33 +4,39 @@ excerpt: "Ce guide fournit des instructions de l'utilisation de Terraform ou Ope
 updated: 2024-08-14
 ---
 
+> [!primary]
+> Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+>
+
 ## Objectif
 
-**Ce guide fournit des instructions sur l'utilisation de Terraform et de ses modules et providers dans l'écosysteme OVHcloud**.
+**Ce guide fournit des instructions sur l'utilisation de Terraform, de ses modules et providers dans un écosystem Hosted Private Cloud**.
 
 ## Prérequis
 
-- Être connecté à [l'espace client OVHcloud](/links/manager).
-- Une offre VMware on OVHcloud.
-- Configurer un accès utilisateur à VMware on OVHcloud.
+- Avoir accès à [l'espace client OVHcloud](/links/manager).
+- Posséder une offre Hosted Private Cloud VMware on OVHcloud.
+- Configurer un accès avec utilisateur Terraform ou un utilisateur unique (à sécuriser avec sudo au sein de Terraform).
 - Binaire Terraform (version >= 1.4).
-- Un bucket S3 Object storage OVHcloud pour stocker le state Terraform.
-- Le provider Terraform vSphere. 
-- Le provider Terraform nsxt (<https://registry.terraform.io/providers/vmware/nsxt/latest/docs>) (non-obligatoire).
-- Le provider OVHcloud Terraform et/ou le module vSphere OVHcloud [inspiré de celui de SAP on OVHcloud](<https://github.com/ovh/terraform-vsphere-sap-application-server/tree/master/examples/>).
+- Un bucket S3 Object storage OVHcloud pour stocker le state Terraform avec les bon droits utilisateurs pour Terraform et le bucket.
+- Le provider Terraform VMware vSphere (<https://registry.terraform.io/providers/hashicorp/vsphere/latest/docs>) 
+- Un endpoint `https://nsxt` si vous voulez utiliser NSX-T avec Terraform au sein de OVHcloud (endpoint configuré par défaut avec toutes les offres NSX HPC). En effet L’API NSX est indépendante et non liée à l’API vSphere. C'est pourquoi nous avons créé un endpoint dédié pour l'atteindre.
+- le module Terraform [SAP OVHcloud](<https://github.com/ovh/terraform-vsphere-sap-application-server/tree/master/examples/>).
 - Le provider Docker [Kreuzwerker](<https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs>) Terraform pour deployer des conteneurs dans les VM (non-obligatoire).
 
 ### Étape 1 - Terraform au sein de Hosted Private Cloud
 
 **State Terraform**
 
-La création du state Terraform peut-être réaliser à l'aide d'un bucket OVHcloud. Vous avez le guide [Gérer un bucket S3 avec Terraform](/pages/storage_and_backup/object_storage/s3_terraform) qui vous explique comment faire.
+La création d'un state Terraform peut-être réaliser à l'aide d'un bucket OVHcloud. Vous avez le guide [Gérer un bucket S3 avec Terraform](/pages/storage_and_backup/object_storage/s3_terraform) qui vous explique comment faire.
 
 **Backend config**
 
 Une fois votre bucket configuré, il vous faudra créer votre dossier terraform et initier votre config backend. Vous pouvez inclure directement votre config backend dans votre projet ou module et simplement lancer un `terraform init`.
 
-Exemple :
+`Terraform init`
+
+Ou par exemple avec une configuration différente `Terraform init -backend-config=...` :
 
 ```Shell
 terraform init \
@@ -48,7 +54,7 @@ Dans le but de gérer les ressources (création, modification et destruction) su
 | Accès au vmNetwork | Opérateur        |
 | Accès au V(x)Lans  | Opérateur        |
 
-Pour les mots de passes, nous vous conseillons d'utiliser un fichier xxx.tf que vous utiliserez uniquement au sein de votre machine d'execution. Ce fichier utilisera des variables Terraform classique avec les mots de passes mais ne sera pas inclu dans votre répértoire global afin d'éviter le leak des mots de passe dans votre CI.
+Pour les mots de passes, nous vous conseillons d'utiliser un fichier `xxx.tf` que vous utiliserez uniquement au sein de votre machine d'exécution. Ce fichier utilisera des variables Terraform classique avec les mots de passes, mais ne sera pas inclus dans votre répértoire global afin d'éviter le leak des mots de passe dans votre CI.
 
 **Binaire Terraform**
 
@@ -60,9 +66,9 @@ Plusieurs exemples sont disponibles dans le [repository GitHub](<https://github.
 
 Trois principaux fichiers sont requis pour utiliser comme attendu ce module Terraform :
 
-- main.tf
-- outputs.tf
-- versions.tf
+- `main.tf`
+- `outputs.tf`
+- `versions.tf`
 
 **main.tf**
 
@@ -71,7 +77,7 @@ Ce fichier contient le code pour appeler le module Terraform développé par OVH
 - Le bloc « provider » est nécessaire pour être en capacité d’interagir avec votre solution VMware on OVHcloud.
 - Le bloc « module » regroupe toutes les variables que vous souhaitez passer au module Terraform développé par OVHcloud.
 
-```python
+```Go
 provider "vsphere" {
   vsphere_server = "pcc-xx-xx-xx-xx.ovh.com"
 }
@@ -111,7 +117,7 @@ Par exemple, vous ne pouvez pas appliquer le type « chaîne de caractères » p
 
 Dans ce cas, le fichier main.tf pourrait être comme ceci :
 
-```python
+```Go
 provider "vsphere" {
   vsphere_server = var.vsphere_server
 }
@@ -128,7 +134,7 @@ module "sap-application-server" {
 
 Le fichier variables.tf devrait être similaire à cela :
 
-```python
+```Go
 variable "vsphere_server" {
   type        = string
   description = "Nom du serveur vSphere"
@@ -157,7 +163,7 @@ variable "sap_application_servers" {
 
 Enfin, dans le but d'éviter de devoir fournir chaque valeur à travers la console, vous avez la possibilité de créer un fichier nommé terraform.tfvars dans lequel vous pouvez mettre les valeurs souhaitées pour chaque variable.
 
-```python
+```Go
 # vSphere
 vsphere_datacenter      = "pcc-xx-xx-xx-xx_datacenterxxxx"
 vsphere_compute_cluster = "Cluster1"
@@ -207,7 +213,7 @@ terraform apply
 
 La sortie de l'exécution devrait être similaire à celle-ci :
 
-```python
+```Go
 Plan: 1 to add, 0 to change, 0 to destroy.
  
 Changes to Outputs:
@@ -246,7 +252,7 @@ terraform destroy
 
 La sortie de l'exécution devrait ressembler à celle-ci :
 
-```python
+```Go
 Plan: 0 to add, 0 to change, 1 to destroy.
 
 Changes to Outputs:
@@ -272,7 +278,7 @@ Destroy complete! Resources: 1 destroyed.
 > @api {v1} /dedicatedCloud/ GET /dedicatedCloud
 >
 
-Cet appel API permet de récupérer votre url PCC :
+Cet appel API permet de récupérer votre url vSphere managé on OVHcloud :
 
 > [!api]
 >
@@ -281,10 +287,54 @@ Cet appel API permet de récupérer votre url PCC :
 >**Paramètre** :
 > 
 > - `serviceName` : votre datacentre sous la form (pcc-XXX-XXX-XXX-XXX).
-> 
+>
+
+Cet appel API permet de récupérer votre "datacenterId" :
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud/ GET /dedicatedCloud/{serviceName}/datacenter
+>
+>**Paramètre** :
+>
+> - `serviceName` : votre datacentre sous la form (pcc-XXX-XXX-XXX-XXX).
+>
+
+Cet appel API permet de récupérer vos informations NSX-T :
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud/ GET /dedicatedCloud/{serviceName}/nsx{{t}} -> Si NSX-V enlever le "t"
+>
+>**Paramètre** :
+>
+> - `serviceName` : votre datacentre sous la form (pcc-XXX-XXX-XXX-XXX).
+>
+
+Retour :
+
+```Shell
+{
+  "version": "4.1.1.0.0-XXXXX",
+  "datacentersState": [
+    {
+      "state": "enabled",
+      "id": XXXX
+    }
+  ],
+  "url": "https://nsxt.pcc-XXX-XXX-XXX-XXX.ovh.de",
+  "state": "enabled"
+}
+```
+Retour avec NSX-V :
+
+```Shell
+{
+  "state": "disabled",
+  "url": "https://nsx.pcc-XXX-XXX-XXX-XXX.ovh.de/api"
+}
+```
 
 ## Aller plus loin
-
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
