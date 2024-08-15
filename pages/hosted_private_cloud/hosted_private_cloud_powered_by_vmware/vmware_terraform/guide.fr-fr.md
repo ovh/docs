@@ -1,8 +1,21 @@
 ---
 title: "Terraform sur vSphere managé on OVHcloud"
-excerpt: "Ce guide fournit des instructions de l'utilisation de Terraform ou Opentofu (modules et providers) dans un écosysteme VMware on OVHcloud"
+excerpt: "Ce guide fournit des instructions de l'utilisation de Terraform (modules et providers) dans un écosystem Hosted Private Cloud VMware on OVHcloud"
 updated: 2024-08-14
 ---
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 > [!primary]
 > Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
@@ -25,6 +38,8 @@ updated: 2024-08-14
 - Le provider Docker [Kreuzwerker](<https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs>) Terraform pour deployer des conteneurs dans les VM (non-obligatoire).
 
 ### Étape 1 - Terraform au sein de Hosted Private Cloud
+
+/// details | Comment configurer Terraform au sein de OVHcloud ?
 
 **State Terraform**
 
@@ -205,7 +220,7 @@ Ce fichier permet de fixer la version des binaires utilisés lors de l'exécutio
 
 Une fois que votre repository avec ces trois fichiers (minimum) est prêt, vous pouvez lancer l'exécution avec les commandes suivantes :
 
-```bash
+```Bash
 terraform init
 terraform plan
 terraform apply
@@ -267,9 +282,11 @@ vsphere_virtual_machine.sap_application_server["terraform-vm-1"]: Destruction co
 Destroy complete! Resources: 1 destroyed.
 ```
 
+///
+
 ### Étape 2 - Terraform et l'API OVHcloud
 
-**Comment récupérer les informations VMware de votre infrastructure OVHcloud** ?
+/// details | Comment récupérer les informations VMware de votre infrastructure OVHcloud ?
 
 **Depuis l'API OVHcloud**
 
@@ -334,6 +351,7 @@ Retour avec NSX-V :
   "url": "https://nsx.pcc-XXX-XXX-XXX-XXX.ovh.de/api"
 }
 ```
+///
 
 ## Aller plus loin
 
