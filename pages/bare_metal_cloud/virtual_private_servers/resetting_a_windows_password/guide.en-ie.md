@@ -15,7 +15,7 @@ If you have lost your Administrator password, you can reset it via the OVHcloud 
 ## Requirements
 
 - A [VPS](https://www.ovhcloud.com/en-ie/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

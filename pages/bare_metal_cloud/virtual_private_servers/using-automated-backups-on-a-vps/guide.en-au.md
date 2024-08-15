@@ -17,13 +17,13 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An OVHcloud [VPS service](https://www.ovhcloud.com/en-au/vps/) already set up
 - Administrative access (sudo) via SSH to your VPS (optional)
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), open the `Bare Metal Cloud`{.action} section, and select your server under `Virtual Private Servers`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} section, and select your server under `Virtual Private Servers`{.action}.
 
 ### Step 1: Activating the automated backup option
 

@@ -38,7 +38,7 @@ Pode alugar um servidor Minecraft pré-construído ou configurá-lo você mesmo 
 ### Etapa 1: preparar o servidor
 
 O primeiro passo consiste em configurar o seu VPS para uma instalação de Minecraft.
-<br>É recomendado encomendar um novo VPS ou reinstalar um já existente a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), usando a última versão disponível do Ubuntu ou Debian. Consulte o nosso guia [Primeiros passos](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps), se necessário.
+<br>É recomendado encomendar um novo VPS ou reinstalar um já existente a partir do seu [Área de Cliente OVHcloud](/links/manager), usando a última versão disponível do Ubuntu ou Debian. Consulte o nosso guia [Primeiros passos](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps), se necessário.
 
 Depois de instalar o sistema operativo, ligue-se ao VPS em SSH, conforme descrito no manual "[VPS - primeira utilização](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
 

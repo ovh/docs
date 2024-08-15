@@ -21,12 +21,12 @@ Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e
 
 ## Requisitos
 
-- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- acesso à [Área de Cliente OVHcloud](/links/manager)
 - um [serviço VPS](https://www.ovhcloud.com/pt/vps/) OVHcloud já instalado
 
 ## Instruções
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 ### Passo 1: Subscrever a opção snapshot
 
@@ -63,7 +63,7 @@ A snapshot em curso pode ser recuperada através de um link de download. Clique 
 
 > [!primary]
 >
-> Se o seu VPS é de uma gama antiga, é possível que receba uma mensagem de erro, pois a opção não está disponível nos VPS antigos. O seu VPS é de uma gama antiga se o seu modelo de atribuição for semelhante a: *vpsXXXX.ovh.net* (em que *X* representa um número). Pode verificar esta referência de servidor no separador `Página Inicial`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> Se o seu VPS é de uma gama antiga, é possível que receba uma mensagem de erro, pois a opção não está disponível nos VPS antigos. O seu VPS é de uma gama antiga se o seu modelo de atribuição for semelhante a: *vpsXXXX.ovh.net* (em que *X* representa um número). Pode verificar esta referência de servidor no separador `Página Inicial`{.action} da [Área de Cliente OVHcloud](/links/manager).
 >
 
 Na nova janela, clique em `Gerar o link de download`{.action}.

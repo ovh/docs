@@ -18,7 +18,7 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kunden-Account.
 - Sie haben eine [zusätzliche Disk konfiguriert](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben administrativen Zugriff auf Ihren VPS über SSH (Linux) oder RDP (Windows).
 
 ## In der praktischen Anwendung
@@ -27,7 +27,7 @@ In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzlich
 
 ### Größe der Disk ändern <a name="extend"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Bare Metal Cloud`{.action}. Wählen Sie Ihren Server unter `Virtual Private Server`{.action} aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Bare Metal Cloud`{.action}. Wählen Sie Ihren Server unter `Virtual Private Server`{.action} aus.
 
 Klicken Sie im Rahmen **Zusammenfassung der Optionen** auf den Button `...`{.action} im Bereich `Zusätzliche Festplatten`{.action}. Wählen Sie `Festplattengröße erhöhen`{.action} aus.
  

@@ -18,12 +18,12 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An OVHcloud [VPS service](https://www.ovhcloud.com/en-sg/vps/) already set up
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), open the `Bare Metal Cloud`{.action} section, and select your server under `Virtual Private Servers`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} section, and select your server under `Virtual Private Servers`{.action}.
 
 ### Step 1: Subscribing to the snapshot option
 
@@ -59,7 +59,7 @@ The current snapshot can be retrieved via download link. Click on `...`{.action}
 
 > [!primary]
 >
-> If your VPS is of an older product range, you might receive an error message because the option is not available for a legacy VPS. These older services have the following naming scheme: *vpsXXXX.ovh.net* (in which *X* stands for a number). You can verify this server reference on the `Home`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+> If your VPS is of an older product range, you might receive an error message because the option is not available for a legacy VPS. These older services have the following naming scheme: *vpsXXXX.ovh.net* (in which *X* stands for a number). You can verify this server reference on the `Home`{.action} tab in your [OVHcloud Control Panel](/links/manager).
 >
 
 In the popup window, click on `Generate download link`{.action}. 

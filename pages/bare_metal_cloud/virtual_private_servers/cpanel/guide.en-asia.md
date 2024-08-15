@@ -21,11 +21,11 @@ This simplifies website hosting, thanks to a graphical interface for automating 
 ## Requirements
 
 - A [VPS](https://www.ovhcloud.com/asia/vps) solution with a [compatible distribution](https://www.ovhcloud.com/asia/vps/os/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) via a [cPanel-compatible OS](https://www.ovhcloud.com/asia/vps/os/).
+If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](/links/manager) via a [cPanel-compatible OS](https://www.ovhcloud.com/asia/vps/os/).
 
 > [!warning]
 >

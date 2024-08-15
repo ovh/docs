@@ -21,12 +21,12 @@ Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- dostęp do [Panelu klienta OVHcloud](/links/manager)
 - skonfigurowana [usługa VPS](https://www.ovhcloud.com/pl/vps/) OVHcloud
 
 ## W praktyce
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
+Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 ### Krok 1: subskrybowanie opcji kopii zapasowej
 
@@ -63,7 +63,7 @@ Trwa zapisywanie snapshota można pobrać za pomocą linka do pobrania. Kliknij 
 
 > [!primary]
 >
-> Jeśli Twój VPS pochodzi ze starej gamy, możliwe, że otrzymasz komunikat o błędzie, ponieważ opcja nie jest dostępna na starych serwerach VPS. Twój VPS pochodzi z poprzedniej gamy serwerów, jeśli jego model nazewnictwa jest podobny do: *vpsXXXX.ovh.net* (gdzie *X* oznacza liczbę). Możesz sprawdzić ten adres IP serwera w zakładce `Strona główna`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> Jeśli Twój VPS pochodzi ze starej gamy, możliwe, że otrzymasz komunikat o błędzie, ponieważ opcja nie jest dostępna na starych serwerach VPS. Twój VPS pochodzi z poprzedniej gamy serwerów, jeśli jego model nazewnictwa jest podobny do: *vpsXXXX.ovh.net* (gdzie *X* oznacza liczbę). Możesz sprawdzić ten adres IP serwera w zakładce `Strona główna`{.action} w [Panelu klienta OVHcloud](/links/manager).
 >
 
 W oknie, które się wyświetli kliknij `Wygeneruj link do pobrania`{.action}.

@@ -17,7 +17,7 @@ Un server privato virtuale (VPS) è un server dedicato virtualizzato. A differen
 ## Prerequisiti
 
 - Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) nello Spazio Cliente OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -30,7 +30,7 @@ Un server privato virtuale (VPS) è un server dedicato virtualizzato. A differen
 - [Metti in sicurezza il tuo VPS](#secure)
 - [Associa un dominio](#domain)
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Bare Metal Cloud`{.action} e seleziona il server nella sezione `Server privati virtuali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Bare Metal Cloud`{.action} e seleziona il server nella sezione `Server privati virtuali`{.action}.
 
 <a name="controlpanel"></a>
 
@@ -137,7 +137,7 @@ Le reinstallazioni possono essere effettuate direttamente dallo Spazio Cliente. 
 
 Nella nuova finestra, seleziona un sistema operativo dall’elenco a discesa. Le opzioni proposte sono immagini compatibili [con un VPS OVHcloud](/pages/public_cloud/compute/image-life-cycle) e attive immediatamente dopo l'installazione.
 
-Se una **chiave SSH** è stata precedentemente archiviata nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), è possibile selezionarne una da installare sul sistema. Per saperne di più, consulta la nostra guida [Creare e utilizzare le chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Se una **chiave SSH** è stata precedentemente archiviata nello [Spazio Cliente OVHcloud](/links/manager), è possibile selezionarne una da installare sul sistema. Per saperne di più, consulta la nostra guida [Creare e utilizzare le chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 > [!primary]
 >
@@ -158,7 +158,7 @@ Potrebbe essere necessario riavviare il sistema per applicare configurazioni agg
 sudo reboot
 ```
 
-È comunque possibile effettuare un "riavvio hardware" in qualsiasi momento dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Home`{.action}, clicca su `...`{.action} accanto a `Boot` nella sezione **Il tuo VPS**. Seleziona `Riavvia il tuo VPS`{.action} e clicca su `Conferma`{.action} nella finestra che appare.
+È comunque possibile effettuare un "riavvio hardware" in qualsiasi momento dallo [Spazio Cliente OVHcloud](/links/manager). Nella scheda `Home`{.action}, clicca su `...`{.action} accanto a `Boot` nella sezione **Il tuo VPS**. Seleziona `Riavvia il tuo VPS`{.action} e clicca su `Conferma`{.action} nella finestra che appare.
 
 ![Riavvio](images/reboot-vps01.png){.thumbnail}
 

@@ -14,7 +14,7 @@ This guide explains how to increase the size of an additional disk and extend th
 
 - A [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
 - An [additional disk](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) configured on the VPS
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access via SSH or RDP to your VPS
 
 ## Instructions
@@ -23,7 +23,7 @@ The following steps presume that you have configured an additional disk accordin
 
 ### Modifying the size of the disk <a name="extend"></a>
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
 In the box **Summary of options**, click on `...`{.action} in the section "Additional disks". Select `Increase the disk size`{.action}.
 
