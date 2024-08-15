@@ -144,4 +144,4 @@ If problems arise with the KVM, here is the recommended API for accessing the KV
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

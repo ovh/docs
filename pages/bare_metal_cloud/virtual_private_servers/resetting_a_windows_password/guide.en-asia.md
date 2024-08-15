@@ -144,4 +144,4 @@ You can now log in as "Administrator" with this new password.
 ## Go further
 
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

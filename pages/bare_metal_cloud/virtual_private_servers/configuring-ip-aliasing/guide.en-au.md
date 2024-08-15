@@ -493,4 +493,4 @@ To test the connection, simply ping your Additional IP from the outside. If it r
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

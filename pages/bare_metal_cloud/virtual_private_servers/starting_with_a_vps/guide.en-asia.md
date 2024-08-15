@@ -333,4 +333,4 @@ You can install this SSL certificate manually, directly on the VPS. Please refer
 
 [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -123,4 +123,4 @@ Your VPS can be migrated to the current range automatically. Find out the benefi
 
 [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

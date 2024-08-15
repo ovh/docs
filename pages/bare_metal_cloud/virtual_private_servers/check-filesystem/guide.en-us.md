@@ -153,4 +153,4 @@ ntfsfix /dev/sdb2
 
 [Activating Rescue Mode on VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -154,4 +154,4 @@ If you encounter errors when rebooting a VPS, use the following procedure:
 
 [Checking the file system on a VPS](/pages/bare_metal_cloud/virtual_private_servers/check-filesystem)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

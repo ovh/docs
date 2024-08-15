@@ -99,4 +99,4 @@ For a list of available commands, see the "Basic Usage" section of [LinuxGSM](ht
 
 [OVHcloud VPS FAQ](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

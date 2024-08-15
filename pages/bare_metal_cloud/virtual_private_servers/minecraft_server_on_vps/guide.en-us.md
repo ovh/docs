@@ -170,4 +170,4 @@ Please note that this installation guide should also work on an OVHcloud [dedica
 
 For add-ons, mods and to personalise your Minecraft experience, please consult this official documentation: <https://help.mojang.com/>.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
