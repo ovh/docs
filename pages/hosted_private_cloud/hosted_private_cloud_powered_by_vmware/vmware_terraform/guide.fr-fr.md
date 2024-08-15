@@ -30,7 +30,7 @@ details[open]>summary::before {
 - Avoir accès à [l'espace client OVHcloud](/links/manager).
 - Posséder une offre Hosted Private Cloud VMware on OVHcloud.
 - Configurer un accès avec utilisateur Terraform ou un utilisateur unique (à sécuriser avec sudo au sein de Terraform).
-- Binaire Terraform (version >= 1.4).
+- Le binaire Terraform (version >= 1.4).
 - Un bucket S3 Object storage OVHcloud pour stocker le state Terraform avec les bon droits utilisateurs pour Terraform et le bucket.
 - Le provider Terraform VMware vSphere (<https://registry.terraform.io/providers/hashicorp/vsphere/latest/docs>) 
 - Un endpoint `https://nsxt` si vous voulez utiliser NSX-T avec Terraform au sein de OVHcloud (endpoint configuré par défaut avec toutes les offres NSX HPC). En effet L’API NSX est indépendante et non liée à l’API vSphere. C'est pourquoi nous avons créé un endpoint dédié pour l'atteindre.
