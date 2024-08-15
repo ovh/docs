@@ -1,18 +1,19 @@
 ---
-title: Object Storage - Utilizar S3 Object Storage con Veeam (EN)
-updated: 2022-01-03
+title: "Object Storage - Use S3 Object Storage with Veeam"
+excerpt: "Find out how to use S3 object storage within OVHcloud with Veeam"
+updated: 2024-08-15
 ---
+
+> [!warning]
+>
+> OVHcloud provides services that you are responsible for configuration, compatibility and management. It is therefore up to you to ensure that it works properly.
+>
+> If you require training or technical support to implement our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
+>
 
 ## Objective
 
 This guide is intended to show you how to configure Veeam to use your S3 Object Storage.
-
-> [!warning]
->
-> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
->
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
->
 
 ## Requirements
 
@@ -94,6 +95,6 @@ At the **Summary** step of the wizard, complete the object storage repository co
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our [community of users](/links/community).

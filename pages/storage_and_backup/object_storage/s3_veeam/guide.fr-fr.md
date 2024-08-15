@@ -1,6 +1,7 @@
 ---
-title: Object Storage - Utiliser S3 Object Storage avec Veeam
-updated: 2022-01-03
+title: "Object Storage - Utiliser S3 Object Storage avec Veeam"
+excerpt: "Découvrez comment utiliser le stockage objet S3 au sein de OVHcloud avec Veeam"
+updated: 2024-08-15
 ---
 
 ## Objectif
@@ -11,7 +12,7 @@ Ce guide a pour objectif de vous montrer comment configurer Veeam pour utiliser 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 >
 
 ## Prérequis
@@ -98,4 +99,4 @@ Pour définir une limite souple qui peut être dépassée temporairement pour vo
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
