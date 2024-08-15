@@ -1,7 +1,7 @@
 ---
 title: "Installer Veeam Backup & Replication"
 excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
-updated: 2024-08-12
+updated: 2024-08-15
 ---
 <style>
 details>summary {
@@ -239,6 +239,6 @@ Si tout s'est bien passé, vous devriez voir "Edition : Entreprise Plus".
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur le canal dédié [Discord]<https://discord.gg/ovhcloud>
+Échangez avec notre communauté d’utilisateurs sur le canal dédié [Discord](<https://discord.gg/ovhcloud>).
 
 Échangez avec notre [communauté d’utilisateurs](/links/community).

@@ -4,7 +4,7 @@ excerpt: "Installation de la sauvegarde Veeam Backup sur un cluster Nutanix"
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Backups
-updated: 2024-08-12
+updated: 2024-08-15
 ---
 <style>
 details>summary {
