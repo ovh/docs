@@ -1,7 +1,7 @@
 ---
 title: 'Comment renouveler ses noms de domaine OVHcloud'
-excerpt: 'Découvrez pourquoi et comment renouveler automatiquement vos noms de domaine OVHcloud'
-updated: 2024-08-14
+excerpt: 'Découvrez pourquoi et comment renouveler vos noms de domaine OVHcloud'
+updated: 2024-08-19
 ---
 
 ## Objectif 
@@ -16,7 +16,7 @@ Vous trouverez toutes les informations pour :
 - Résilier un nom de domaine
 - Accéder à la facture du renouvellement du nom de domaine
 
-**Découvrez pourquoi et comment renouveler automatiquement vos noms de domaine OVHcloud**
+**Découvrez pourquoi et comment renouveler vos noms de domaine OVHcloud**
 
 ## Prérequis
 
@@ -38,7 +38,7 @@ En effet, une fois le nom de domaine supprimé, le renouvellement n'est plus pos
 Enfin, si vous ne souhaitez pas conserver votre nom de domaine, il sera automatiquement disponible sur le marché et pourra de nouveau être enregistré par quelqu'un d'autre.
 Si le nom de domaine comporte votre nom de marque, soyez vigilent. Une personne malveillante pourrait utiliser votre ancien nom de domaine pour du phishing ou des arnaques en se faisant passer pour votre entreprise.
 
-Si vous souhaitez conserver votre nom de domaine, nous vous conseillons l'enregistrement ou le renouvellement sur plusieurs années, ou l'activation du renouvellement automatique. 
+Si vous souhaitez conserver votre nom de domaine, nous vous conseillons l'enregistrement et le renouvellement sur plusieurs années, ou l'activation du renouvellement automatique. 
 Si le renouvellement automatique est activé, votre moyen de paiement doit être valide pour que le prélèvement puisse être effectué.
 
 ### Les différents types de renouvellement
@@ -65,10 +65,10 @@ Ce mode de renouvellement peut être utile :
 - Si vous n'êtes pas certain de vouloir conserver le service à échéance ;
 - Si vous ne souhaitez pas que vos factures soient prélevées automatiquement sur votre moyen de paiement.
 
-Si vous choisissez le renouvellement manuel, vous recevrez plusieurs relances par e-mail avant échéance, contenant un lien permettant de renouveler en ligne le service arrivant à expiration.
+Si vous choisissez le renouvellement manuel, vous recevrez plusieurs relances avant échéance, contenant un lien permettant de renouveler en ligne le service arrivant à expiration.
 Vous pourrez aussi simplement effectuer le règlement depuis votre espace client.
 
-**Attention**, si vous n'effectuez pas de paiement pour le service en renouvellement manuel, celui-ci sera **suspendu** à sa date d'expiration puis **supprimé** au bout de quelques jours.
+**Attention**, si vous n'effectuez pas de paiement pour le service en renouvellement manuel, vous risquez de perdre votre nom de domaine ou de régler des frais de restauration (si le nom de domaine est suspendu).
 En revanche, si vous ne souhaitez pas conserver ce service, il n'est pas nécessaire d'en demander la résiliation.
 
 ### Changer le mode de renouvellement de mes noms de domaine
@@ -90,7 +90,7 @@ Effectuez les action suivantes :
 
 Effectuez les action suivantes :
 
-- Dans le tableau, identifiez les nom de domaine dont vous voulez changer le mode de renouvellement
+- Dans le tableau, identifiez les noms de domaine dont vous voulez changer le mode de renouvellement
 - Sélectionnez les lignes correspondantes dans le tableau en cochant les cases en début de ligne
 - Cliquez sur le bouton `Actions`{.action} en haut à gauche du tableau
 - Sélectionnez `Activer le paiement automatique`{.action} ou `Désactiver le paiement automatique`{.action}
@@ -123,6 +123,13 @@ Cette action est proposée pour les services paramétrés en **renouvellement au
 Pour plus d'informations sur la résiliation des services OVHcloud, suivez les instructions du guide « **[Comment résilier vos services OVHcloud ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)** ».
 
 ### Accéder à la facture du renouvellement de mon nom de domaine
+
+Une mention `Facture à payer` s'affiche lorsqu'une facture est en attente de règlement et lorsque :
+
+- vous possédez des services en renouvellement automatique.
+- vous n'avez pas enregistré de moyen de paiement permettant d'effectuer un prélèvement pour le règlement de vos factures.
+
+Il vous suffit alors de choisir l'action `Régler ma facture`{.action} qui vous redirigera vers une plateforme de paiement en ligne.
 
 ## FAQ
 
