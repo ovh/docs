@@ -41,7 +41,7 @@ Para ello, no solo nos basaremos en las funciones a bordo que ofrece VMware, sin
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 - Tener un servidor dedicado con la solución ESXi desplegada.
 - Tener contratado un servicio compatible con nuestra funcionalidad de [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) si quiere utilizarlo para filtrar.
 

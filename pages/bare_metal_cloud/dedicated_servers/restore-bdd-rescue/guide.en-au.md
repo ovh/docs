@@ -13,7 +13,7 @@ With rescue mode, you can always access your data, even if the server's OS or th
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/), a [VPS](https://www.ovhcloud.com/en-au/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account (excluding Windows systems)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.

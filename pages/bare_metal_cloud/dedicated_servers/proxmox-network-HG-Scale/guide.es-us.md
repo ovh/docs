@@ -28,7 +28,7 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las Addition
 
 - Tener un [servidor dedicado de OVHcloud](https://www.ovhcloud.com/es/bare-metal/).
 - Disponer de [Additional IP](https://www.ovhcloud.com/es/bare-metal/ip/).
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -208,7 +208,7 @@ Esta configuración es más flexible. No tiene que asociar ninguna IP adicional 
 - Haber elegido un rango de direcciones IP privadas.
 - Tener un [servidor compatible con el vRack](https://www.ovhcloud.com/es/bare-metal/).
 - Haber activado un servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/).
-- Tienes acceso a tu [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 
 #### Esquema de la configuración de destino
 

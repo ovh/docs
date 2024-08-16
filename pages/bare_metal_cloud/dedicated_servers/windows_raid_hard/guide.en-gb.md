@@ -14,7 +14,7 @@ When you install Windows on a server with a hardware RAID configuration, the RAI
 
 - a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external} with Windows installed and a hardware RAID card (LSI MegaRaid)
 - at least two identical disks
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- access to the [OVH Control Panel](/links/manager){.external}
 
 ## Instructions
 

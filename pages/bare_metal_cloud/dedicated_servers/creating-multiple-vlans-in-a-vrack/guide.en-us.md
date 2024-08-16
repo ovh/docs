@@ -15,7 +15,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 * An active [vRack](https://www.ovh.com/world/solutions/vrack/){.external} service in your account
 * Two or more [vRack-compatible servers](https://www.ovh.com/world/dedicated-servers/){.external}
 * Administrative (sudo) access to the server via SSH
-* Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
+* Access to the [OVHcloud Control Panel](/links/manager){.external}
 * Your chosen private IP address range
 * You must have completed the [vRack configuration guide](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
 

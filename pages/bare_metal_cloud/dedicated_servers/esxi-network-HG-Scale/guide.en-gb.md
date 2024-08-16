@@ -23,7 +23,7 @@ On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in
 - Your chosen private IP address range.
 - A [vRack compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}.
 - A [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -42,7 +42,7 @@ On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in
 
 ### Additional IP via vRack
 
-First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open the `vRack`{.action} menu.
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager) and open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click on the IP block you want to add to the vRack and then click the `Add`{.action} button.
 
@@ -59,7 +59,7 @@ A first vSwitch exists but only has a `vmnic2` interface.
 
 > [!primary]
 >
-> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or via the OVHcloud API.
+> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](/links/manager) or via the OVHcloud API.
 >
 
 #### Explanations

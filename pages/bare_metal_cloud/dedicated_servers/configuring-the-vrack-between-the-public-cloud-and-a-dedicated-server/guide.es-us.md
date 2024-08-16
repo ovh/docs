@@ -19,7 +19,7 @@ El [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} de OVHclou
 * Haber creado una [instancia de Public Cloud de OVHcloud.](/pages/public_cloud/compute/public-cloud-first-steps)
 * Haber activado un servicio [vRack.](https://www.ovh.com/world/es/soluciones/vrack/){.external}
 * Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) compatible con el vRack.
-* Estar conectado al [área de cliente de OVHcloud.](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+* Estar conectado al [área de cliente de OVHcloud.](/links/manager)
 * Un rango de direcciones IP privadas que elija.
 
 > [!warning]

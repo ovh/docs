@@ -19,7 +19,7 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 * Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Aktywowanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/)
 * Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) kompatybilnego z usługą vRack
-* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+* Dostęp do [Panelu klienta OVHcloud](/links/manager)
 * Wybrany zakres prywatnych adresów IP
 
 > [!warning]

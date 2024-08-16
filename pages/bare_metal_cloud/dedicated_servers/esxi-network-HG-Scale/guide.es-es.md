@@ -27,7 +27,7 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las Addition
 * Haber elegido un rango de direcciones IP privadas.
 * Tener un [servidor dedicado compatible con el vRack](https://www.ovhcloud.com/es-es/bare-metal/){.external}.
 * Haber activado un servicio [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
-* Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+* Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
@@ -46,7 +46,7 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las Addition
 
 ### Additional IP a través del vRack
 
-En primer lugar, añada su bloque público de direcciones IP al vRack. Para ello, acceda a la sección `Bare Metal Cloud`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y abra el menú `vRack`{.action}.
+En primer lugar, añada su bloque público de direcciones IP al vRack. Para ello, acceda a la sección `Bare Metal Cloud`{.action} de su [área de cliente de OVHcloud](/links/manager){.external} y abra el menú `vRack`{.action}.
 
 Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga clic en el bloque público de direcciones IP que quiera añadir al vRack y, seguidamente, en el botón `Añadir`{.action}.
 
@@ -63,7 +63,7 @@ Un primer vSwitch existe, pero solo tiene una interfaz `vmnic2`.
 
 > [!primary]
 >
-> Compruebe que la configuración es similar. Si dispone de información relativa a las MAC e interfaces públicas o privadas, puede hacerlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o a través de la API de OVHcloud.
+> Compruebe que la configuración es similar. Si dispone de información relativa a las MAC e interfaces públicas o privadas, puede hacerlo desde el [área de cliente de OVHcloud](/links/manager) o a través de la API de OVHcloud.
 >
 
 #### Explicaciones

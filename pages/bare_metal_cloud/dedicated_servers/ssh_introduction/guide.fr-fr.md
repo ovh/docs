@@ -33,7 +33,7 @@ Plusieurs méthodes existent pour authentifier une connexion à un périphériqu
 Les instructions suivantes concernent la méthode d'authentification via un nom d'utilisateur et un mot de passe.<br>
 Vous pouvez également configurer des clés SSH pour activer les connexions sécurisées sans mot de passe. Retrouvez plus de détails dans notre [guide des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Les identifiants de connexion (identifiant et mot de passe) vous sont envoyés par e-mail après une installation ou une réinstallation de serveur effectuée depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br>
+Les identifiants de connexion (identifiant et mot de passe) vous sont envoyés par e-mail après une installation ou une réinstallation de serveur effectuée depuis votre [espace client OVHcloud](/links/manager).<br>
 Le nom d'utilisateur correspond au système d'exploitation, par exemple `ubuntu` ou `debian`.<br>
 Pour vous connecter, vous devez également spécifier l'adresse IPv4 ou le nom d'hôte du serveur. Ces informations sont disponibles dans l’e-mail d’installation et dans l'espace client.
 

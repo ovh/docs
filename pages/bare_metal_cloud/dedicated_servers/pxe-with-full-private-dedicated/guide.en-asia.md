@@ -81,7 +81,7 @@ Here is a (logical) Netboot boot schema:
 - You must have all of the network interfaces for this server in **private** mode, which implies that you have already configured [our OLA feature](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).<br>
 
 >
-> To check that your machine is eligible for our procedure, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and click on the `Bare Metal Cloud`{.action} tab.
+> To check that your machine is eligible for our procedure, log in to the [OVHcloud Control Panel](/links/manager) and click on the `Bare Metal Cloud`{.action} tab.
 >
 > Select your server and check that it is eligible for `OLA: OVHcloud Link Aggregation` in the `Network interfaces`{.action} tab.
 >

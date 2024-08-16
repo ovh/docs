@@ -15,7 +15,7 @@ Esta guía explica el panel de control de seguridad de la red y proporciona una 
 ## Requisitos
 
 - Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](https://www.ovhcloud.com/es/bare-metal/), [VPS](https://www.ovhcloud.com/es/vps/), [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), [IP adicional](https://www.ovhcloud.com/es-es/network/additional-ip/), etc.)
-- Acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Acceso al [área de cliente de OVHcloud](/links/manager)
 
 ## Instrucciones
 

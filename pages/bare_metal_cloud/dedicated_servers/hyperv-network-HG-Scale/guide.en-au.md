@@ -23,7 +23,7 @@ It is also possible to set up such configuration (one interface on private netwo
 ## Requirements
 
 - An [OVHcloud dedicated server](https://www.ovhcloud.com/en-au/bare-metal/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An [Additional IP](https://www.ovhcloud.com/en-au/bare-metal/ip/)
 
 > [!warning]
@@ -70,7 +70,7 @@ In our example:
 
 > [!primary]
 >
-> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or via the OVHcloud API.
+> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](/links/manager) or via the OVHcloud API.
 >
 
 Now go back to the Server Manager and go to `Local Server`{.action} and click on `Disabled`{.action} opposite `NIC Teaming`.
@@ -248,7 +248,7 @@ network:
 - Your chosen private IP address range
 - A [vRack compatible server](https://www.ovhcloud.com/en-au/bare-metal/){.external}
 - A [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 #### Explanations
 
@@ -279,7 +279,7 @@ In our example:
 
 > [!primary]
 >
-> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or via the OVHcloud API.
+> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](/links/manager) or via the OVHcloud API.
 >
 
 Now go back to the Server Manager, go to `Local Server` and click on `Disabled`{.action} besides NIC Teaming.

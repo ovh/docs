@@ -23,7 +23,7 @@ On the High Grade & SCALE ranges, it is not possible to operate Additional IPs i
 ## Requirements
 
 - An [OVHcloud dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An [Additional IP](https://www.ovhcloud.com/en-sg/bare-metal/ip/)
 
 > [!warning]
@@ -204,7 +204,7 @@ This configuration is more flexible, you don't have to associate an Additional I
 - Your chosen private IP address range.
 - A [vRack compatible server](https://www.ovhcloud.com/en-sg/bare-metal/){.external}.
 - A [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} service activated in your account.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 #### Target configuration schema
 
@@ -217,7 +217,7 @@ You need to:
 - Create an aggregate.
 - Create a bridge connected to the aggregate.
 
-First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open the `vRack`{.action} menu.
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager) and open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click on the IP block you want to add to the vRack and then click the `Add`{.action} button.
 

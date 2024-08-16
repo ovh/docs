@@ -8,7 +8,7 @@ updated: 2023-09-08
 
 Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/), vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). Cela vous donne des possibilités de configuration assez vastes lors de l'installation du système d'exploitation. ESXi ne le permet pas à cause de ses spécificités car il s'agit d'un système propriétaire UNIX avec un installateur propriétaire. Par conséquent, OVHcloud est dépendant de l'éditeur pour l'installation de l'OS. Depuis ESXi 7.0, il est possible de choisir entre 4 schémas de partitionnement prédéfinis par l'éditeur.
 
-**Cet article a pour objectif de vous montrer comment choisir un schéma de partitionnement dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou l'[API OVHcloud](https://ca.api.ovh.com/).**
+**Cet article a pour objectif de vous montrer comment choisir un schéma de partitionnement dans l'[espace client OVHcloud](/links/manager) ou l'[API OVHcloud](https://ca.api.ovh.com/).**
 
 > [!primary]
 >
@@ -18,7 +18,7 @@ Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/
 ## Prérequis
 
 - Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre compte OVHcloud, **prêt à être installé/réinstallé**.
-- Avoir accès à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et/ou à l'[API OVHcloud](https://ca.api.ovh.com/).
+- Avoir accès à l'[espace client OVHcloud](/links/manager) et/ou à l'[API OVHcloud](https://ca.api.ovh.com/).
 
 > [!alert]
 >
@@ -64,7 +64,7 @@ Comme vous pouvez le deviner, si le schéma n'est pas spécifié, le schéma de 
 > Cette procédure est très similaire à celle [des autres OS](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server), à l'exception qu'il n'est pas possible de sélectionner `Personnaliser la configuration des partitions`{.action} et qu'il y a une liste déroulante permettant de sélectionner le schéma de partitionnment à la quatrième et dernière étape.
 >
 
-Dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation puis cliquez sur `Installer`{.action}.
+Dans l'[espace client OVHcloud](/links/manager), sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation puis cliquez sur `Installer`{.action}.
 
 ![Bouton Réinstaller](images/reinstalling-your-server-00.png){.thumbnail}
 

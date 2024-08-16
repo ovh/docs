@@ -34,7 +34,7 @@ From here, you can keep reading to learn how to set up S3 Object Storage as your
 
 ### Setting up your Object Storage
 
-Object Storage creation and configuration can be done in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+Object Storage creation and configuration can be done in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 
 If you don't have already a Public Cloud project in your OVHcloud account, read our [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) guide.
 
@@ -74,7 +74,7 @@ Give the S3 user rights to the container by copying and pasting the text below i
 
 Make sure to replace `container name` with your actual Object Storage container name.
 
-From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), select `Public Cloud`{.action} and then `Object Storage`{.action} under the `Storage` section. Click on the more options `...`{.action} button to the right of the S3 user and choose `Import S3 Policy (JSON)`{.action}.
+From the [OVHcloud Control Panel](/links/manager), select `Public Cloud`{.action} and then `Object Storage`{.action} under the `Storage` section. Click on the more options `...`{.action} button to the right of the S3 user and choose `Import S3 Policy (JSON)`{.action}.
 
 Select the JSON file you just edited and click `Import`{.action}.
 
@@ -100,7 +100,7 @@ Give the new repository a **Name** and click `Next`{.action}.
 
 Enter the **Service point** (Endpoint) and **Region** information for your S3 storage service.
 
-> You can find this information in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+> You can find this information in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 > Click `Object Storage`{.action} then click the `...`{.action} button to the right of your container and click `Display objects`{.action}.
 >
 > ![Object storage - display objects](images/backup-preparation-06.png){.thumbnail}

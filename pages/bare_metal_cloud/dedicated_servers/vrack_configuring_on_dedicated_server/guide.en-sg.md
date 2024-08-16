@@ -17,7 +17,7 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 - A [vRack](https://www.ovh.com/sg/solutions/vrack/) service activated in your account
 - Two or more [dedicated servers](https://www.ovhcloud.com/en-sg/bare-metal/) (compatible with vRack)
 - Administrative access (sudo) to the server via SSH or RDP
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A private IP address range of your choice
 
 > [!warning]
@@ -37,7 +37,7 @@ You will be redirected to another page to validate the order, it will take a few
 
 ### Step 2: Adding your servers to the vRack
 
-Once the vRack is activated in your account, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), click on `Network`{.action} and open the `vRack`{.action} menu.
+Once the vRack is activated in your account, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager), click on `Network`{.action} and open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click on each server you want to add to the vRack and then click the `Add`{.action} button.
 
@@ -60,7 +60,7 @@ You can use any private IP range of your choice and any address within that rang
 
 The network interface names of your servers are not always the same. Whenever used in the following examples, replace NETWORK_INTERFACE with the appropriate interface name.
 
-The sure way to verify the correct interface for the vRack is to check the tab `Network interfaces`{.action} of your server in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). In the table at the bottom, take note of the MAC address which is also the **Name** of the **Private** interface.
+The sure way to verify the correct interface for the vRack is to check the tab `Network interfaces`{.action} of your server in the [OVHcloud Control Panel](/links/manager). In the table at the bottom, take note of the MAC address which is also the **Name** of the **Private** interface.
 
 ![vRack interface](images/private_interface.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Once connected to your server via SSH, you can list your network interfaces with
 ip a
 ```
 
-In the line that begins with ```link ether```, you can verify that this interface matches the **Private** interface listed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Use this interface name to replace `NETWORK_INTERFACE` in the configurations below (example: `eno2`).
+In the line that begins with ```link ether```, you can verify that this interface matches the **Private** interface listed in your [OVHcloud Control Panel](/links/manager). Use this interface name to replace `NETWORK_INTERFACE` in the configurations below (example: `eno2`).
 
 ```console
 link ether f0:00:00:ef:0e:f0

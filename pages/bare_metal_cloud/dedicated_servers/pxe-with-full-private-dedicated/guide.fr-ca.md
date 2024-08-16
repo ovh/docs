@@ -81,7 +81,7 @@ Voici un schéma (logique) de démarrage Netboot :
 - Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez préalablement configuré [notre fonctionnalité OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).<br>
 
 >
-> Pour vérifier que votre machine est éligible à notre procédure, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et cliquez sur l'onglet `Bare Metal Cloud`{.action}.
+> Pour vérifier que votre machine est éligible à notre procédure, connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur l'onglet `Bare Metal Cloud`{.action}.
 >
 > Sélectionnez votre serveur et vérifiez son éligibilité à `OLA: OVHcloud Link Aggregation` dans l'onglet `Interfaces réseau`{.action}.
 >

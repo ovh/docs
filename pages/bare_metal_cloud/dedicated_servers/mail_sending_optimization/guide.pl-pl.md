@@ -73,7 +73,7 @@ Po zmianie strefy DNS Twojej domeny konieczny jest czas propagacji wynoszący ma
 
 Następnie dodaj rekordu PTR (znany również jako rewers):
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie otwórz `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
+W [Panelu klienta OVHcloud](/links/manager){.external} przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie otwórz `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
 Jeśli chcesz skonfigurować Rewers DNS na adresie Additional IP, kliknij zakładkę `Additional IP`{.action}.
 

@@ -14,7 +14,7 @@ Cuando instala Windows en un servidor con una configuración RAID de hardware, l
 
 - un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/ {.external} con Windows instalado y una tarjeta RAID de hardware (LSI MegaRaid)
 - al menos dos discos idénticos
-- acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+- acceso al [panel de control de OVHcloud](/links/manager){.external}
 
 ## Procedimiento
 

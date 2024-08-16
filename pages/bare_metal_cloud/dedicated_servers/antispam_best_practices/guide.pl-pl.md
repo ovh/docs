@@ -66,7 +66,7 @@ Po rozwiązaniu problemu możesz odblokować Destination IP wykonując następuj
 
 #### Odblokuj adres IP w Panelu klienta
 
-W [Panelu klienta OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
+W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
 W żółtym ramce dla alertów kliknij rozwijaną strzałkę `Wyświetl wszystkie moje alerty`{.action}, aby wyświetlić wszystkie alerty na Twoim adresie IP.
 

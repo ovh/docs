@@ -38,7 +38,7 @@ Es gibt mehrere Methoden, um eine Verbindung zu einem Remote-Host mittels SSH zu
 Die folgenden Anweisungen beziehen sich auf die Authentifizierungsmethode über Benutzername und Passwort.<br>
 Sie können auch SSH-Schlüssel konfigurieren, um gesicherte Verbindungen ohne Passwort zu aktivieren. Weitere Informationen dazu finden Sie in unserer [Anleitung zu SSH-Schlüsseln](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Die Login-Daten (Benutzername und Passwort) werden Ihnen per E-Mail gesendet, immer wenn eine Installation oder Reinstallation eines Servers über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erfolgt.
+Die Login-Daten (Benutzername und Passwort) werden Ihnen per E-Mail gesendet, immer wenn eine Installation oder Reinstallation eines Servers über Ihr [OVHcloud Kundencenter](/links/manager) erfolgt.
 
 Der Benutzername entspricht dem Betriebssystem, also etwa `ubuntu` oder `debian`.
 Zum Verbindungsaufbau wird zweitens die IPv4-Adresse oder der Hostname des Servers benötigt. Diese Informationen finden Sie in der Installationsmail sowie im Kundencenter.

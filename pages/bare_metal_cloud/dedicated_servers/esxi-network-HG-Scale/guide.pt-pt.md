@@ -27,7 +27,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo *bridged
 * Ter acesso ao intervalo de endereços de IP privados escolhidos.
 * Dispor de um [servidor dedicado compatível com o vRack](https://www.ovhcloud.com/pt/bare-metal/){.external}.
 * Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+* Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
@@ -46,7 +46,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo *bridged
 
 ### Additional IP através do vRack
 
-Primeiro, adicione o seu bloco público de endereços IP ao vRack. Para isso, aceda à secção `Bare Metal Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e abra o menu `vRack`{.action}.
+Primeiro, adicione o seu bloco público de endereços IP ao vRack. Para isso, aceda à secção `Bare Metal Cloud`{.action} da [Área de Cliente OVHcloud](/links/manager){.external} e abra o menu `vRack`{.action}.
 
 Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique no bloco público de endereços IP que deseja adicionar ao vRack e, a seguir, clique no botão `Adicionar`{.action}.
 
@@ -63,7 +63,7 @@ Um primeiro vSwitch existe mas inclui apenas uma interface `vmnic2`.
 
 > [!primary]
 >
-> Verifique que a sua configuração é semelhante. Dispõe das informações relativas aos MAC e interfaces públicas ou privadas na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou através da API OVHcloud.
+> Verifique que a sua configuração é semelhante. Dispõe das informações relativas aos MAC e interfaces públicas ou privadas na sua [Área de Cliente OVHcloud](/links/manager) ou através da API OVHcloud.
 >
 
 #### Explicações

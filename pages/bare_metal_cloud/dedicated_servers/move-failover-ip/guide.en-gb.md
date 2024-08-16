@@ -26,7 +26,7 @@ With this technology, you can switch IP addresses from one solution to another i
 
 - A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
 - An [Additional IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
@@ -55,7 +55,7 @@ With this technology, you can switch IP addresses from one solution to another i
 > Only a single size block (/32) can be moved from a dedicated server to a VPS.
 >
 
-Log in to the [OVHcloud Control](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} menu and click on `Network`{.action}. Next, click on `IP`{.action}.
+Log in to the [OVHcloud Control](/links/manager), go to the `Bare Metal Cloud`{.action} menu and click on `Network`{.action}. Next, click on `IP`{.action}.
 
 Click the `Additional IP`{.action} tab.
 

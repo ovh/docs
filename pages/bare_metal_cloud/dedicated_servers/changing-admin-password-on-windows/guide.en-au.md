@@ -20,7 +20,7 @@ When you install or reinstall a Windows operating system, you are provided with 
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) with Windows installed in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -229,7 +229,7 @@ Write hive files? (y/n) [n] : y
 
 ### Step 4: Rebooting the server 
 
-First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode)).
+First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](/links/manager) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode)).
 
 Back in the CLI, unmount the partition and restart the server with these commands:
 
@@ -253,7 +253,7 @@ The system is going down for reboot NOW!
 
 ### Step 5: Setting a new password (IPMI)
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), navigate to the `IPMI`{.action} tab to open a KVM session.
+In your [OVHcloud Control Panel](/links/manager), navigate to the `IPMI`{.action} tab to open a KVM session.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -298,7 +298,7 @@ For detailed instructions, please refer to the [rescue mode guide](/pages/bare_m
 
 #### Step 2: Clearing the current password
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), navigate to the `IPMI`{.action} tab to open a KVM session.
+In your [OVHcloud Control Panel](/links/manager), navigate to the `IPMI`{.action} tab to open a KVM session.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -318,7 +318,7 @@ After this, the server needs to be rebooted again.
 
 #### Step 3: Rebooting the server 
 
-First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode)).
+First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](/links/manager) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode)).
 
 Back in the KVM window, select the shutdown option `Restart`{.action} via the Windows "Start" button on the bottom left.
 

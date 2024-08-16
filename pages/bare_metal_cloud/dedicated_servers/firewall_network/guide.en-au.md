@@ -21,7 +21,7 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 ## Requirements
 
 - An OVHcloud service exposed on a dedicated public IP address ([Dedicated server](https://www.ovhcloud.com/en-au/bare-metal/), [VPS](https://www.ovhcloud.com/en-au/vps/), [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/en-au/network/additional-ip/), etc.)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).

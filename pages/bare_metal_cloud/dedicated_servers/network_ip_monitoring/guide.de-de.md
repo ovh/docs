@@ -50,7 +50,7 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 
 ### Monitoring aktivieren oder deaktivieren
 
-Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und gehen Sie zum Bereich `Bare Metal Cloud`{.action}. Wählen Sie den betreffenden Server unter `Dedicated Server`{.action} aus.
+Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](/links/manager) und gehen Sie zum Bereich `Bare Metal Cloud`{.action}. Wählen Sie den betreffenden Server unter `Dedicated Server`{.action} aus.
 
 Sie können den Monitoring-Status eines Servers vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
 

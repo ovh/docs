@@ -510,7 +510,7 @@ root@rescue:~#
 2\. Créez à nouveau le fichier `70-persistent-net.rules` et ajoutez :  
 
 - Le nom de l'interface réseau trouvé dans le fichier `/mnt/etc/network/interfaces`.
-- La nouvelle adresse MAC (visible dans l'onglet `Interfaces réseau`{.action} de l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou dans le retour de la commande `ip link`).
+- La nouvelle adresse MAC (visible dans l'onglet `Interfaces réseau`{.action} de l'[espace client OVHcloud](/links/manager) ou dans le retour de la commande `ip link`).
 
 ```bash
 root@rescue:~# cat /mnt/etc/udev/rules.d/70-persistent-net.rules

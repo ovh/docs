@@ -37,7 +37,7 @@ We will do this using the on-board features offered by VMware, as well as those 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}
 - A dedicated server with the ESXi solution deployed
 - An offer compatible with our [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) feature, if you would like to use it for filtering
 

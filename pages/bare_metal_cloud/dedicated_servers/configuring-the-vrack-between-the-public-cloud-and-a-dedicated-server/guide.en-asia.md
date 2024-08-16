@@ -15,7 +15,7 @@ The OVHcloud [vRack](https://www.ovh.com/asia/solutions/vrack) allows you to con
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - A [vRack](https://www.ovh.com/asia/solutions/vrack) service activated in your account
 - A [Dedicated Server](https://www.ovhcloud.com/asia/bare-metal/){.external} compatible with the vRack
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A private IP address range of your choice
 
 > [!warning]

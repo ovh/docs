@@ -28,7 +28,7 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalit�
 
 - Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
 - Disporre di un [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -208,7 +208,7 @@ Questa configurazione è più flessibile: non è necessario associare un Additio
 * Aver selezionato un intervallo di indirizzi IP privati
 * Disporre di un [server compatibile con la vRack](https://www.ovhcloud.com/it/bare-metal/){.external}
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 #### Schema della configurazione di destinazione
 

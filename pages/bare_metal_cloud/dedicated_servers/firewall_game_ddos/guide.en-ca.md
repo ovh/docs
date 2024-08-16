@@ -21,7 +21,7 @@ Our dedicated Bare Metal gaming servers include a DDoS protection specifically d
 ## Requirements
 
 - An [OVHcloud **Game** dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/prices/#filterType=range_element&filterValue=game)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ca/about/).

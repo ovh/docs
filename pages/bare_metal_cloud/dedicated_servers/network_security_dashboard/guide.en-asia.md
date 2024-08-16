@@ -11,7 +11,7 @@ This guide explains the Network Security Dashboard and provides an overview of c
 ## Requirements
 
 - An OVHcloud service exposed on a dedicated public IP address ([Dedicated Server](https://www.ovhcloud.com/asia/bare-metal/), [VPS](https://www.ovhcloud.com/asia/vps/), [Public Cloud instance](https://www.ovhcloud.com/asia/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/asia/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/asia/network/additional-ip/), etc.)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

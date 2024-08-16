@@ -24,7 +24,7 @@ Il est également possible de mettre en place cette configuration sur chacun des
 
 * Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
 * Disposer d'une adresse [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+* Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -70,7 +70,7 @@ Dans cet exemple :
 
 > [!primary]
 >
-> Vérifiez que votre configuration est similaire. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou via l'API OVHcloud.
+> Vérifiez que votre configuration est similaire. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](/links/manager) ou via l'API OVHcloud.
 >
 
 Retournez à présent dans le Server Manager, allez dans `Local Server`{.action} et cliquez sur `Disabled`{.action} à côté de « NIC Teaming ».
@@ -248,7 +248,7 @@ network:
 - Préparer votre plage d'adresses IP privées choisies.
 - Posséder un [serveur compatible vRack](https://www.ovhcloud.com/fr/bare-metal/){.external}.
 - Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 #### Explications
 
@@ -279,7 +279,7 @@ Dans cet exemple :
 
 > [!primary]
 >
-> Vérifiez que votre configuration est similaire. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou via l'API OVHcloud.
+> Vérifiez que votre configuration est similaire. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](/links/manager) ou via l'API OVHcloud.
 >
 
 Retournez à présent dans le Server Manager, allez dans `Local Server`{.action} et cliquez sur `Disabled`{.action} à côté de « NIC Teaming ».

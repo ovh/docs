@@ -27,7 +27,7 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 ### Using the OVHcloud Control Panel
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} menu and then select your server from `Dedicated Servers`{.action} in the left-hand sidebar. 
+In the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} menu and then select your server from `Dedicated Servers`{.action} in the left-hand sidebar. 
 
 From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
@@ -61,7 +61,7 @@ df -h
 
 ### Using rescue mode
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} menu and then select your server from `Dedicated Servers`{.action} in the left-hand sidebar. 
+In the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} menu and then select your server from `Dedicated Servers`{.action} in the left-hand sidebar. 
 
 In the **General Information** tab, look for `Boot` and click on `...`{.action}. Then click the `Edit`{.action} button to change the boot system.
 
