@@ -103,6 +103,21 @@ aws s3 ls
 aws s3 cp /datas/test1 s3://<bucket_name>
 ```
 
+> [!primary]
+>
+> The `aws s3 cp` command will use STANDARD as default storage class for uploading objects.
+> To store objects in the High Performance tier, use the `aws s3api put-object` command instead, as `aws s3 cp` does not support the EXPRESS_ONEZONE storage class which is used to map the High Performance storage tier.
+> To learn more about the storage class mapping between OVHcloud storage tiers and AWS storage classes, you can check our documentation [here](/pages/storage_and_backup/object_storage/s3_location).
+>
+
+```bash
+# upload an object to High Performance tier
+aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/test1 --storage-class EXPRESS_ONEZONE
+
+# explicitly upload an object to Standard tier
+aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/test1 --storage-class STANDARD
+```
+
 **Copying Objects**
 
 You can use the aws s3 cp or aws s3api copy-object commands to copy objects within or between buckets. This is useful for duplicating objects or reorganizing your storage structure. For example, to copy an object from one bucket to another, you can use:
@@ -125,20 +140,6 @@ aws s3api copy-object --copy-source <bucket_name>/<object_name> --bucket <bucket
 ```
 This operation keeps the object in the same location but updates its storage class, helping you manage costs and access performance.
 
-> [!primary]
->
-> The `aws s3 cp` command will use STANDARD as default storage class for uploading objects.
-> To store objects in the High Performance tier, use the `aws s3api put-object` command instead, as `aws s3 cp` does not support the EXPRESS_ONEZONE storage class which is used to map the High Performance storage tier.
-> To learn more about the storage class mapping between OVHcloud storage tiers and AWS storage classes, you can check our documentation [here](/pages/storage_and_backup/object_storage/s3_location).
->
-
-```bash
-# upload an object to High Performance tier
-aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/test1 --storage-class EXPRESS_ONEZONE
-
-# explicitly upload an object to Standard tier
-aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/test1 --storage-class STANDARD
-```
 
 **By default, objects are named after files, but can be renamed**
 
