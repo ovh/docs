@@ -71,4 +71,4 @@ If you have created the mount point according to the guide, the data will be loc
 
 [Securing a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

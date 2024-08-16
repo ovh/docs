@@ -108,4 +108,4 @@ Vous observerez que la valeur de l'attribut `bootScript` est désormais nulle.
 
 [iPXE - open source boot firmware [EN]](https://ipxe.org/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

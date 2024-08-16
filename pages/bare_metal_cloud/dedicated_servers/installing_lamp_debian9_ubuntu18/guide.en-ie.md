@@ -272,4 +272,4 @@ Certbot will automatically renew the certificates. There are no further steps ne
 
 [NGINX documentation](https://nginx.org/en/docs/) (Apache alternative)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

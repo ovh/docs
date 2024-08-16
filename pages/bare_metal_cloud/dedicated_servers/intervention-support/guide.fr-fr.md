@@ -899,4 +899,4 @@ L'image ci-dessous est un résumé des actions citées plus haut :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

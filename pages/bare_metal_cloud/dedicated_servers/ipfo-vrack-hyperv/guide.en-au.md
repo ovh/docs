@@ -144,4 +144,4 @@ You can also see in the example below how the `ifcfg-eth0` file should appear.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

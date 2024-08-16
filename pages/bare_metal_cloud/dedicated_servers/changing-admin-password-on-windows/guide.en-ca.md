@@ -330,4 +330,4 @@ Continue with [Step 5: Setting a new password (IPMI)](./#step-5-setting-a-new-pa
 
 [Using the IPMI with dedicated servers](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

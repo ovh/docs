@@ -401,4 +401,4 @@ It is best not to restart the server until the rebuild process is complete.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

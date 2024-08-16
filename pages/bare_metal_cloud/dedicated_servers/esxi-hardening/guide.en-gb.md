@@ -294,4 +294,4 @@ cat /path-to-my-key/key-ecdsa.pub | ssh root@esxi-host-ip 'cat >> /etc/ssh/keys-
 
 You can find even more details on security best practices in [this VMware suggested guide](https://core.vmware.com/security-configuration-guide).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

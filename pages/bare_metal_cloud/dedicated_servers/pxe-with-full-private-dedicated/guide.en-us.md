@@ -351,4 +351,4 @@ It is strongly recommended that you use an NTP service, especially if your infra
 [Discovering and understanding NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol)<br>
 [Discovering and understanding Dnsmasq](https://wiki.debian.org/dnsmasq)<br>
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

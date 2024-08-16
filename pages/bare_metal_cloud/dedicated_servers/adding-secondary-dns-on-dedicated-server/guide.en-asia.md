@@ -70,4 +70,4 @@ After successfully adding the TXT record to the domain name's DNS zone, repeat t
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

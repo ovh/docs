@@ -229,4 +229,4 @@ Si vous n'avez pas l'intention d'utiliser Proxmox, nous vous suggérons de consu
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

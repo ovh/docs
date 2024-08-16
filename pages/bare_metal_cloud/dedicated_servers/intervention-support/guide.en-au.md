@@ -901,4 +901,4 @@ The image below is a summary of the actions mentioned above:
 
 ## Go further <a name="go-further"></a>
   
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

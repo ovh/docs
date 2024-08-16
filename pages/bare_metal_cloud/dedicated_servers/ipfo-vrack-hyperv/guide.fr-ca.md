@@ -151,4 +151,4 @@ L'exemple ci-dessous montre comment le fichier `ifcfg-eth0` doit apparaître.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

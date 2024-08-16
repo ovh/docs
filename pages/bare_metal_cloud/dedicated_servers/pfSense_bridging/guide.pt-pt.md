@@ -220,4 +220,4 @@ For choosing the correct virtual interfaces, OS type, etc. for Proxmox, we were 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

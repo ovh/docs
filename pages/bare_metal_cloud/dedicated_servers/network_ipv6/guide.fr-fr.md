@@ -622,4 +622,4 @@ Dans tous les cas, n'hésitez pas à [contacter notre équipe de support](https:
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

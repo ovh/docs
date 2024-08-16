@@ -202,4 +202,4 @@ After reading this tutorial, you should be able to configure the Edge Network Fi
 
 - [Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

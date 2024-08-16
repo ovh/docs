@@ -49,4 +49,4 @@ The result will show a "vmac / supported" entry which can be "true" or "false" (
 
 [First Steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

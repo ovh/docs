@@ -63,4 +63,4 @@ This may take a few minutes.
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

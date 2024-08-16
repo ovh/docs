@@ -73,4 +73,4 @@ Après avoir correctement ajouté l'enregistrement TXT à la zone DNS du domaine
 
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

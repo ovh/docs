@@ -74,4 +74,4 @@ If you would like to schedule an upgrade in RAM and storage during the same inte
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

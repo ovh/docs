@@ -81,4 +81,4 @@ You have now access to the server with your new SSH key pair.
 
 [VPS rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

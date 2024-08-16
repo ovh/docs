@@ -101,4 +101,4 @@ Configurez ensuite les interfaces réseau sur votre nouvelle instance Public Clo
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

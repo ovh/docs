@@ -101,4 +101,4 @@ Next, configure the network interfaces on your new [Public Cloud instance](https
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -143,4 +143,4 @@ Redémarrez le serveur pour appliquer les modifications effectuées.
 
 [Configurer un vRack entre une instance Public Cloud et un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server){.external}
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

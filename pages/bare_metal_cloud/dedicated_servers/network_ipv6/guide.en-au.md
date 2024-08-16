@@ -615,4 +615,4 @@ In any case, feel free to [contact our support team](https://help.ovhcloud.com/c
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -152,4 +152,4 @@ You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.e
 
 To get support setting up your OVHcloud solutions, contact our [network of OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

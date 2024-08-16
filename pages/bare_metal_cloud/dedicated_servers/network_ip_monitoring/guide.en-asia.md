@@ -65,4 +65,4 @@ Click on `Confirm`{.action} to update your monitoring configuration.
 
 [Configure the Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

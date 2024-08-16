@@ -75,4 +75,4 @@ stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

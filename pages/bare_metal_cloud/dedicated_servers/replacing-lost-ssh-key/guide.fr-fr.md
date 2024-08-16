@@ -68,4 +68,4 @@ Vous avez maintenant accès au serveur avec votre nouvelle paire de clés SSH.
 
 [Utiliser le mode rescue sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

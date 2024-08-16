@@ -258,4 +258,4 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

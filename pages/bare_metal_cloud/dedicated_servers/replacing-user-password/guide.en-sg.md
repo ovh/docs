@@ -97,4 +97,4 @@ You have now access to the server with your new password.
 
 [How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -216,4 +216,4 @@ To go further (develop your own application, register for remote attestation, et
 - [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
 - [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -198,4 +198,4 @@ Finally, click the `OK`{.action} button to save the changes, then reboot your se
 
 [Configuring the vRack on your Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -170,4 +170,4 @@ In any case where adjustments to our Anti-DDoS system will be necessary, it is m
 
 [Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

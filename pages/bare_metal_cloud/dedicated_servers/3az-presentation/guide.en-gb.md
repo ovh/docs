@@ -40,4 +40,4 @@ The interface is still the same, there aren't any other changes at this level:
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

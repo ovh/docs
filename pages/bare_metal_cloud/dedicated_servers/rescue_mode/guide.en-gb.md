@@ -231,4 +231,4 @@ The following tools are already installed in this mode:
 
 [Changing the admin password on a Windows dedicated server](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

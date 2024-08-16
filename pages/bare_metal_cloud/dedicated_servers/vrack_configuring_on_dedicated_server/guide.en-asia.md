@@ -213,4 +213,4 @@ Repeat this process for your other server(s) and assign an unused IP address fro
 
 [Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

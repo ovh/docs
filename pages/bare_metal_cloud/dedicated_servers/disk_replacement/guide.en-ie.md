@@ -204,4 +204,4 @@ If you have a server that uses soft RAID, we recommend that you resync your disk
 
 [Rescue Mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
