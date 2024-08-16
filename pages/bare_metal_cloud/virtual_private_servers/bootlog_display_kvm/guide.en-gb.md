@@ -168,4 +168,4 @@ Once you have done the modifications, reboot your VPS in 'normal' mode in your [
 
 [Activating rescue mode on a VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Join our community of users at <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
