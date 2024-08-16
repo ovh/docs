@@ -103,6 +103,28 @@ aws s3 ls
 aws s3 cp /datas/test1 s3://<bucket_name>
 ```
 
+**Copying Objects**
+
+You can use the aws s3 cp or aws s3api copy-object commands to copy objects within or between buckets. This is useful for duplicating objects or reorganizing your storage structure. For example, to copy an object from one bucket to another, you can use:
+
+```bash
+aws s3 cp s3://<source_bucket>/<object_name> s3://<destination_bucket>/<object_name>
+```
+Or with the copy-object command:
+
+```bash
+aws s3api copy-object --copy-source <source_bucket>/<object_name> --bucket <destination_bucket> --key <object_name>
+```
+This command is more flexible, allowing you to modify metadata or apply server-side encryption during the copy operation.
+
+**Changing Storage Class via Copy Operation**
+
+To change the storage class of an existing object, you can copy the object to itself while specifying a new storage class. This allows you to adjust your storage costs and performance based on your needs. For example, to change an object's storage class to STANDARD_IA:
+```bash
+aws s3api copy-object --copy-source <bucket_name>/<object_name> --bucket <bucket_name> --key <object_name> --storage-class STANDARD_IA
+```
+This operation keeps the object in the same location but updates its storage class, helping you manage costs and access performance.
+
 > [!primary]
 >
 > The `aws s3 cp` command will use STANDARD as default storage class for uploading objects.
