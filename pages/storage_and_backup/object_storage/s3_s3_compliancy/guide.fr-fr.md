@@ -158,16 +158,12 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
   </tr>
   <tr>
     <td rowspan="8">Immutability</td>
-    <td rowspan="3">Versioning</td>
+    <td rowspan="2">Versioning</td>
     <td>get bucket versioning</td>
     <td>yes</td>
   </tr>
   <tr>
     <td>put bucket versioning</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>list object versions</td>
     <td>yes</td>
   </tr>
   <tr>
@@ -197,16 +193,16 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
   </tr>
   <tr>
     <td rowspan="7">Encryption at rest</td>
-    <td rowspan="1">SSE-C</td>
+    <td>SSE-C</td>
     <td>n/c</td>
     <td>yes</td>
   </tr>
-  <tr>
+<tr>
     <td rowspan="3">SSE-S3</td>
     <td>put bucket encryption</td>
     <td>yes</td>
-  </tr>
-  <tr>
+</tr>
+ <tr>
     <td>delete bucket encryption</td>
     <td>yes</td>
   </tr>
@@ -215,7 +211,7 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
     <td>yes</td>
   </tr>
   <tr>
-    <td rowspan="3">SSE-KMS</td>
+    <td rowspan="3">SSE-KMS </td>
     <td>put bucket encryption</td>
     <td>no</td>
   </tr>
@@ -251,7 +247,7 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
   </tr>
   <tr>
     <td>copy object</td>
-    <td>yes</td>
+    <td>no</td>
   </tr>
   <tr>
     <td>put object tagging</td>
@@ -407,21 +403,21 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
     <td>yes</td>
   </tr>
   <tr>
-    <td rowspan="3">Pre-signed urls</td>
-    <td>GET</td>
-    <td>yes</td>
+    <td rowspan=3>Pre-signed urls</td>
+      <td>GET</td>
+      <td>yes</td>
+  </tr>
+    <tr>
+        <td>PUT</td>
+        <td>yes</td>
+  </tr>
+    <tr>
+        <td>POST</td>
+        <td>no</td>
   </tr>
   <tr>
-    <td>PUT</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>POST</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="1">Data analytics</td>
-    <td rowspan="1">S3 Select</td>
+    <td>Data analytics</td>
+    <td>S3 Select</td>
     <td>select object content</td>
     <td>no</td>
   </tr>
