@@ -118,6 +118,28 @@ aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/tes
 aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/test1 --storage-class STANDARD
 ```
 
+**Copier des objets**
+
+Vous pouvez utiliser les commandes aws s3 cp ou aws s3api copy-object pour copier des objets au sein d'un même bucket ou entre différents buckets. Cela est utile pour dupliquer des objets ou réorganiser votre structure de stockage. Par exemple, pour copier un objet d'un bucket à un autre, vous pouvez utiliser :
+
+```bash
+aws s3 cp s3://<source_bucket>/<object_name> s3://<destination_bucket>/<object_name>
+```
+Ou avec la commande copy-object :
+
+```bash
+aws s3api copy-object --copy-source <source_bucket>/<object_name> --bucket <destination_bucket> --key <object_name>
+```
+Cette commande est plus flexible, vous permettant de modifier les métadonnées ou d'appliquer un chiffrement côté serveur lors de l'opération de copie.
+
+**Changer de classe de stockage via une opération de copie**
+Pour changer la classe de stockage d'un objet existant, vous pouvez copier l'objet sur lui-même tout en spécifiant une nouvelle classe de stockage. Cela vous permet d'ajuster vos coûts de stockage et les performances en fonction de vos besoins. Par exemple, pour changer la classe de stockage d'un objet en STANDARD_IA :
+
+```bash
+aws s3api copy-object --copy-source <bucket_name>/<object_name> --bucket <bucket_name> --key <object_name> --storage-class STANDARD_IA
+```
+Cette opération conserve l'objet au même emplacement mais met à jour sa classe de stockage, vous aidant ainsi à gérer les coûts et les performances d'accès.
+
 **Par défaut, les objets prennent le nom des fichiers mais ils peuvent être renommés**
 
 ```bash
