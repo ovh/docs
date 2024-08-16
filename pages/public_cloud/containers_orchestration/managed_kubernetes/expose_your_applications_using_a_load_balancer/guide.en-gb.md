@@ -1,7 +1,7 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2024-08-13
+updated: 2024-08-16
 ---
 
 > [!warning]
@@ -49,10 +49,10 @@ If you have an existing/already deployed cluster and if:
 - **The subnet does not have an IP reserved for a Gateway**, you will have to provide or create a compatible subnet. Three options are available:
   - Edit an existing subnet to reserve an IP for a Gateway : please refer to the [Update a subnet properties](/pages/public_cloud/public_cloud_network_services/configuration-04-update_subnet) documentation.
   - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/))
-  - Use a subnet dedicated for your load balancer: this option can be used in the OVHcloud Control Panel under `Advanced parameters` > `LoadbalancerS ubnet` or using APIs/Infra as Code using the 'LoadBalancerSubnetID' parameter.
+  - Use a subnet dedicated for your load balancer: this option can be used in the OVHcloud Control Panel under `Advanced parameters` > `Loadbalancer Subnet` or using APIs/Infra as Code using the 'loadBalancersSubnetId' parameter.
 - **The GatewayIP is already assigned to a non-OVHcloud Gateway (OpenStack Router)**. Two options are available:
   - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/))
-  - Use a subnet dedicated for your load balancers: this option can be used in the OVHcloud Control Panel under `Advanced parameters` > `Loadbalancer Subnet` or using APIs/Infra as Code with the 'LoadBalancerSubnetID' parameter.
+  - Use a subnet dedicated for your load balancers: this option can be used in the OVHcloud Control Panel under `Advanced parameters` > `Loadbalancer Subnet` or using APIs/Infra as Code with the 'loadBalancersSubnetId' parameter.
 
 ## Limitations
 
@@ -224,8 +224,8 @@ spec:
 
 > [!warning]
 >
-> A single OpenStack Gateway is spawn for all your LoadBalancers. Even the flavors choose for yours LoadBalancers spawn in this mode, the Gateway is, by default, a small one.
-> In Public-To-Public mode, the gateway may throttle your LoadBalancers's capacity. To increase the capacity of an OpenStack router, use the OVHcloud Manager to modify your gateway in a larger size.
+> A single OpenStack Gateway is spawned for all your LoadBalancers, the Gateway is a small one by default.
+> In Public-To-Public mode, the gateway may throttle your LoadBalancers's capacity. To increase the capacity of an OpenStack router, use the OVHcloud Manager to modify your gateway with a larger size.
 >
 
 ## Supported Annotations & Features
@@ -317,7 +317,7 @@ spec:
 
   This annotation is automatically added to the Service if it's not specified when creating. After the Service is created successfully it shouldn't be changed, otherwise the Service won't behave as expected.
 
-  If this annotation is specified with a valid cloud load balancer ID when creating Service, the Service is reusing this load balancer rather than creating another one. You can share up to two Kubernetes Services on the same Octavia LoadBalancer. The exposed port(s) must be available on the Octavia LoadBalancer (you cannot share two applications on the same Octavia Listener) and yours MKS clusters must be in the OpenStack Subnet. [Sharing load balancer with multiple Services (Github)](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services)
+  If this annotation is specified with a valid cloud load balancer ID when creating Service, the Service is reusing this load balancer rather than creating another one. More detail [below](#sharing-a-octavia-loadbalancer-between-multiple-kubernetes-loadbalancer-service).
 
   If this annotation is specified, the other annotations which define the load balancer features will be ignored.
 
@@ -338,7 +338,7 @@ spec:
 
 - `loadbalancer.openstack.org/x-forwarded-for`
 
-  If you want perform Layer 7 load balancing we do recommend using the official Octavia Ingress-controller: <https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md>
+  If you want to perform Layer 7 load balancing we do recommend using the official Octavia Ingress-controller: <https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md>
 
 ### Features
 
@@ -425,6 +425,105 @@ kubectl apply -f your-service-manifest.yaml
 >
 > As [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer-kubernetes/) and [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) do not use the same solution for Public IP allocation, **it is not possible to keep the existing public IP** of your Loadbalancer for Kubernetes.
 > Changing the LoadBalancer class of your Service will lead to the creation of a new Loadbalancer and the allocation of a new Public IP (Floating IP).
+>
+
+### Use an existing FloatingIP in the tenant
+
+To use an available FloatingIP to your K8S LoadBalancer, use the field `.spec.loadBalancerIP` to find this FloatingIP in your tenant.
+
+- If the FloatingIP is not found, the LoadBalancer will be stuck during the provisionning
+- If the FloatingIP is already assigned to another component, the LoadBalancer will be provisioned. The FloatingIP will only be assigned when the FloatingIP becomes available.
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: octavia-keepip-with-existing-ip
+  annotations:
+    loadbalancer.ovhcloud.com/class: "octavia"
+    #loadbalancer.openstack.org/keep-floatingip: "true" # Useless, since the FIP was provided, the FIP will not be managed by the MKS cluster
+spec:
+  loadBalancerIP: 1.2.3.4
+  type: LoadBalancer
+```
+
+> [!primary]
+>
+> Note: the FloatingIP must be in the same region as the MKS cluster. A FloatingIP cannot be moved to another OpenStack region.
+>
+
+### Use a fixed Virtual-IP (VIP) for the LoadBalancer in the subnet
+
+To assign a fixed VIP to the LoadBalancer in the OpenStack subnet, you have to create an OpenStack Port. e.g. with the OpenStack CLI:
+
+```shell
+openstack port create --network <network> --fixed-ip subnet=<subnet>,ip-address=10.2.3.4 my-fixed-octavia-vip
+```
+
+Then use the annotation `loadbalancer.openstack.org/port-id` with the OpenStack port's UUID:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: octavia-with-fixed-vip
+  annotations:
+    loadbalancer.ovhcloud.com/class: "octavia"
+    loadbalancer.openstack.org/port-id: "<openstack-port-uuid>"
+spec:
+  type: LoadBalancer
+```
+
+> [!warning]
+>
+> This feature is only supported when the MKS cluster is attached to a private network. (Public MKS is not supported)
+> The port needs to belong to the same network/subnet as the MKS cluster.
+> This feature is not compatible when the MKS cluster is configured with a LoadBalancerSubnetId (except if is the same as the NodeSubnetID).
+>
+
+### Restrict access for a LoadBalancer Service
+
+To apply IP restriction to the K8S LoadBalancer Service, you can define the array `.spec.loadBalancerSourceRanges` with a list of CIDR ranges.
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: octavia-ip-restrictions
+  annotations:
+    loadbalancer.ovhcloud.com/class: "octavia"
+spec:
+  loadBalancerSourceRanges:
+  - 1.2.3.4/32
+  - 5.6.7.0/24
+  type: LoadBalancer
+```
+
+If no value is assigned to this spec, no restriction will be applyed.
+
+### Sharing a Octavia LoadBalancer between multiple Kubernetes LoadBalancer Services
+
+You can share an Octavia LoadBalancer with up to two Kubernetes Services. These Services can be deployed on different MKS clusters (clusters must be in the same network).
+
+K8S services must expose different protocol/port (you cannot set the same protocol/port on both K8S Services). [Sharing load balancer with multiple Services (Github)](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services)
+
+To allow another K8S LoadBalancer Service to use an existing Octavia (created via MKS or via OpenStack), use the annotation `loadbalancer.openstack.org/load-balancer-id`:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: octavia-basic-shared
+  annotations:
+    loadbalancer.ovhcloud.com/class: "octavia"
+    loadbalancer.openstack.org/load-balancer-id: "<existing-octavia-uuid>"
+spec:
+  type: LoadBalancer
+```
+
+> [!warning]
+>
+> If you want to delete a MKS cluster which is using SharedLoadBalancer feature, we strongly recommend you to delete the K8S Service which using it to avoid any issue (like remaining Octavia LoadBalancer, configuration not removed, ...).
 >
 
 ## Resources Naming Convention <a name="namingconvention"></a>
