@@ -10,418 +10,100 @@ This guide lists the S3 API features supported by S3 Object Storage.
 
 ## Instructions
 
-<table>
-  <tr>
-    <th>Theme</th>
-    <th>Feature</th>
-    <th>Operation</th>
-    <th>Supported ?</th>
-  </tr>
-  <tr>
-    <td rowspan="8">Bucket management</td>
-    <td rowspan="8">Bucket creation</td>
-    <td>create bucket</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>delete bucket</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>list buckets</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get bucket location</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>head bucket</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>put bucket tagging</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get bucket tagging</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>delete bucket tagging</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="7">Lifecycle operations</td>
-    <td rowspan="4">Intelligent tiering</td>
-    <td>delete intelligent tiering conf</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>put intelligent tiering conf</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>list intelligent tiering conf</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get intelligent tiering conf</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Lifecycle policy</td>
-    <td>put bucket lifecycle conf</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get bucket lifecycle conf</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>delete bucket lifecycle conf</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="17">Access control</td>
-    <td rowspan="4">ACL</td>
-    <td>put bucket ACL</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get bucket ACL</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>put object ACL</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get object ACL</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Block public access</td>
-    <td>put public block</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get public access block</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>delete public block status</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="4">Bucket policy</td>
-    <td>put bucket policy</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>delete bucket policy</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get bucket policy status</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get bucket policy</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="3">CORS</td>
-    <td>put bucket cors</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get bucket cors</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>delete bucket cors</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Object ownership</td>
-    <td>put ownership controls</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get ownership controls</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>delete ownership controls</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="8">Immutability</td>
-    <td rowspan="2">Versioning</td>
-    <td>get bucket versioning</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>put bucket versioning</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="6">Object lock</td>
-    <td>put object lock configuration</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get object lock configuration</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>put object legal hold</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get object legal hold</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>put object retention</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get object retention</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="7">Encryption at rest</td>
-    <td>SSE-C</td>
-    <td>n/c</td>
-    <td>yes</td>
-  </tr>
-<tr>
-    <td rowspan="3">SSE-S3</td>
-    <td>put bucket encryption</td>
-    <td>yes</td>
-</tr>
- <tr>
-    <td>delete bucket encryption</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get bucket encryption</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="3">SSE-KMS </td>
-    <td>put bucket encryption</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>delete bucket encryption</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get bucket encryption</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="18">Object management</td>
-    <td rowspan="9">Single object creation</td>
-    <td>put object</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>delete object</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>list objects v2</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get object</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>delete objects</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>copy object</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>put object tagging</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get object tagging</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>delete object tagging</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="6">Multipart upload</td>
-    <td>create mpu</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>upload part</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>list mpus</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>complete mpu</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>abort mpu</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>list parts</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Metadata mgt</td>
-    <td>get attributes</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>head object</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>list object versions</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Event driven architectures</td>
-    <td rowspan="2">Event notification</td>
-    <td>put bucket notification configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get bucket notification configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Resiliency</td>
-    <td rowspan="3">Async replication</td>
-    <td>get bucket replication</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>delete bucket replication</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>put bucket replication</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="15">Observability</td>
-    <td rowspan="3">Server access logging</td>
-    <td>get bucket logging</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>delete bucket logging</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>put bucket logging</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan="4">Bucket metrics</td>
-    <td>put bucket metrics configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get bucket metrics configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>list bucket metrics configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>delete bucket metrics configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="4">Storage class analytics</td>
-    <td>put bucket analytics configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get bucket analytics configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>list bucket analytics configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>delete bucket analytics configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="4">Bucket inventory</td>
-    <td>put bucket inventory configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>get bucket inventory configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>list bucket inventory configurations</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td>delete bucket inventory configuration</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td rowspan="6">Web content</td>
-    <td rowspan="3">Static web site</td>
-    <td>put bucket website</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>get bucket website</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td>delete bucket website</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td rowspan=3>Pre-signed urls</td>
-      <td>GET</td>
-      <td>yes</td>
-  </tr>
-    <tr>
-        <td>PUT</td>
-        <td>yes</td>
-  </tr>
-    <tr>
-        <td>POST</td>
-        <td>no</td>
-  </tr>
-  <tr>
-    <td>Data analytics</td>
-    <td>S3 Select</td>
-    <td>select object content</td>
-    <td>no</td>
-  </tr>
-</table>
+| Theme                  | Feature             | Operation                       | Supported? |
+|-------------------------|---------------------|----------------------------------|------------|
+| **Bucket management**   | **Bucket creation** | create bucket                   | yes        |
+|                         |                     | delete bucket                   | yes        |
+|                         |                     | list buckets                    | yes        |
+|                         |                     | get bucket location             | yes        |
+|                         |                     | head bucket                     | yes        |
+|                         |                     | put bucket tagging              | yes        |
+|                         |                     | get bucket tagging              | yes        |
+|                         |                     | delete bucket tagging           | yes        |
+| **Lifecycle operations**| **Intelligent tiering** | delete intelligent tiering conf | no         |
+|                         |                     | put intelligent tiering conf    | no         |
+|                         |                     | list intelligent tiering conf   | no         |
+|                         |                     | get intelligent tiering conf    | no         |
+|                         | **Lifecycle policy**| put bucket lifecycle conf       | no         |
+|                         |                     | get bucket lifecycle conf       | no         |
+|                         |                     | delete bucket lifecycle conf    | no         |
+| **Access control**      | **ACL**             | put bucket ACL                  | yes        |
+|                         |                     | get bucket ACL                  | yes        |
+|                         |                     | put object ACL                  | yes        |
+|                         |                     | get object ACL                  | yes        |
+|                         | **Block public access** | put public block              | no         |
+|                         |                     | get public access block         | no         |
+|                         |                     | delete public block status      | no         |
+|                         | **Bucket policy**   | put bucket policy               | no         |
+|                         |                     | delete bucket policy            | no         |
+|                         |                     | get bucket policy status        | no         |
+|                         |                     | get bucket policy               | no         |
+|                         | **CORS**            | put bucket cors                 | yes        |
+|                         |                     | get bucket cors                 | yes        |
+|                         |                     | delete bucket cors              | yes        |
+|                         | **Object ownership**| put ownership controls          | no         |
+|                         |                     | get ownership controls          | no         |
+|                         |                     | delete ownership controls       | no         |
+| **Immutability**        | **Versioning**      | get bucket versioning           | yes        |
+|                         |                     | put bucket versioning           | yes        |
+|                         | **Object lock**     | put object lock configuration   | yes        |
+|                         |                     | get object lock configuration   | yes        |
+|                         |                     | put object legal hold           | yes        |
+|                         |                     | get object legal hold           | yes        |
+|                         |                     | put object retention            | yes        |
+|                         |                     | get object retention            | yes        |
+| **Encryption at rest**  | **SSE-C**           | n/c                             | yes        |
+|                         | **SSE-S3**          | put bucket encryption           | yes        |
+|                         |                     | delete bucket encryption        | yes        |
+|                         |                     | get bucket encryption           | yes        |
+|                         | **SSE-KMS**         | put bucket encryption           | no         |
+|                         |                     | delete bucket encryption        | no         |
+|                         |                     | get bucket encryption           | no         |
+| **Object management**   | **Single object creation** | put object                  | yes        |
+|                         |                     | delete object                   | yes        |
+|                         |                     | list objects v2                 | yes        |
+|                         |                     | get object                      | yes        |
+|                         |                     | delete objects                  | yes        |
+|                         |                     | copy object                     | yes        |
+|                         |                     | put object tagging              | yes        |
+|                         |                     | get object tagging              | yes        |
+|                         |                     | delete object tagging           | yes        |
+|                         | **Multipart upload**| create mpu                      | yes        |
+|                         |                     | upload part                     | yes        |
+|                         |                     | list mpus                       | yes        |
+|                         |                     | complete mpu                    | yes        |
+|                         |                     | abort mpu                       | yes        |
+|                         |                     | list parts                      | yes        |
+|                         | **Metadata mgt**    | get attributes                  | no         |
+|                         |                     | head object                     | yes        |
+|                         |                     | list object versions            | yes        |
+| **Event driven architectures** | **Event notification** | put bucket notification configuration | no |
+|                         |                     | get bucket notification configuration | no   |
+| **Resiliency**          | **Async replication** | get bucket replication         | yes        |
+|                         |                     | delete bucket replication       | yes        |
+|                         |                     | put bucket replication          | yes        |
+| **Observability**       | **Server access logging** | get bucket logging          | yes        |
+|                         |                     | delete bucket logging           | yes        |
+|                         |                     | put bucket logging              | yes        |
+|                         | **Bucket metrics**  | put bucket metrics configuration | no        |
+|                         |                     | get bucket metrics configuration | no        |
+|                         |                     | list bucket metrics configuration | no       |
+|                         |                     | delete bucket metrics configuration | no      |
+|                         | **Storage class analytics** | put bucket analytics configuration | no   |
+|                         |                     | get bucket analytics configuration | no       |
+|                         |                     | list bucket analytics configuration | no      |
+|                         |                     | delete bucket analytics configuration | no     |
+|                         | **Bucket inventory** | put bucket inventory configuration | no      |
+|                         |                     | get bucket inventory configuration | no       |
+|                         |                     | list bucket inventory configurations | no     |
+|                         |                     | delete bucket inventory configuration | no     |
+| **Web content**         | **Static web site** | put bucket website              | yes        |
+|                         |                     | get bucket website              | yes        |
+|                         |                     | delete bucket website           | yes        |
+|                         | **Pre-signed urls** | GET                             | yes        |
+|                         |                     | PUT                             | yes        |
+|                         |                     | POST                            | no         |
+| **Data analytics**      | **S3 Select**       | select object content           | no         |
 
 ## Go further
 
