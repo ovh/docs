@@ -10,7 +10,6 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
 
 ## En pratique
 
-
 <table>
   <tr>
     <th>Theme</th>
@@ -198,16 +197,16 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
   </tr>
   <tr>
     <td rowspan="7">Encryption at rest</td>
-    <td>SSE-C</td>
+    <td rowspan="1">SSE-C</td>
     <td>n/c</td>
     <td>yes</td>
   </tr>
-<tr>
+  <tr>
     <td rowspan="3">SSE-S3</td>
     <td>put bucket encryption</td>
     <td>yes</td>
-</tr>
- <tr>
+  </tr>
+  <tr>
     <td>delete bucket encryption</td>
     <td>yes</td>
   </tr>
@@ -216,7 +215,7 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
     <td>yes</td>
   </tr>
   <tr>
-    <td rowspan="3">SSE-KMS </td>
+    <td rowspan="3">SSE-KMS</td>
     <td>put bucket encryption</td>
     <td>no</td>
   </tr>
@@ -408,21 +407,21 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
     <td>yes</td>
   </tr>
   <tr>
-    <td rowspan=3>Pre-signed urls</td>
-      <td>GET</td>
-      <td>yes</td>
-  </tr>
-    <tr>
-        <td>PUT</td>
-        <td>yes</td>
-  </tr>
-    <tr>
-        <td>POST</td>
-        <td>no</td>
+    <td rowspan="3">Pre-signed urls</td>
+    <td>GET</td>
+    <td>yes</td>
   </tr>
   <tr>
-    <td>Data analytics</td>
-    <td>S3 Select</td>
+    <td>PUT</td>
+    <td>yes</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>no</td>
+  </tr>
+  <tr>
+    <td rowspan="1">Data analytics</td>
+    <td rowspan="1">S3 Select</td>
     <td>select object content</td>
     <td>no</td>
   </tr>
@@ -430,6 +429,6 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
