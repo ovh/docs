@@ -24,7 +24,7 @@ updated: 2024-08-19
 > [!primary]
 > Prenez en compte que l'activation du **transfert de logs (Log Forwarding)** est gratuite, mais vous serez facturé pour l'utilisation d'un stream Logs Data Platform selon le tarif standard de stockage dans une base de données as a service (dbaas).
 >
-> Vos journaux sont manoeuvrés à des fins de sécurité et d'observabilité dans les clusters privés Logs Data Plateform.
+> Vos journaux sont manoeuvrés à des fins de sécurité et d'observabilité dans les clusters privés Logs Data Platform.
 > 
 > Pour plus d'informations sur la tarification LDP, consultez la [page de l'offre](/links/manage-operate/ldp).
 >
