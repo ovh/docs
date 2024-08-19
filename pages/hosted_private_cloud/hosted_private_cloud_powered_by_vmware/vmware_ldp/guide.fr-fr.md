@@ -192,7 +192,7 @@ Exemple de retour :
 > [!primary]
 > La résiliation de votre abonnement Hosted Private Cloud LDP ne signifie pas la suppression de vos stream. Le stockage consommé au moment de la désactivation reste soumis à facturation.
 >
-> **Remarque** : Il n'est possible (à ce jour) de supprimer qu'un stream en entier.
+> **Remarque** : Il n'est possible (à ce jour) que de supprimer un stream, en entier.
 >
 
 > [!api]

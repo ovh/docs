@@ -197,7 +197,7 @@ Return example:
 > 
 > Canceling your Hosted Private Cloud LDP subscription will not delete your streams. The storage used at the time of deactivation is subject to billing.
 > 
-> **Note**: It is only possible (to date) to delete an entire stream.
+> **Note**: It is only possible (from this date) to delete a stream, in full, only.
 >
 
 > [!api]
