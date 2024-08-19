@@ -21,20 +21,14 @@ The purpose of this guide is to show you how to enable log transfer from your Ho
 - You need to have followed the guide [Introduction to the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
 - You must have security options enabled, to check launch [this](#security-options) API call.
 
-## Glossary
-
-- **Logs Data Platform (LDP):** A logs management platform fully managed and secured by OVHcloud. For more information, see the [LDP overview page](/links/manage-operate/ldp).
-- **Data Stream:** A logical partition of logs that you create in a Logs Data Platform account and use when ingesting, viewing or querying your logs. Multiple sources can be stored in the same data stream, and the unit can be used to define a log pipeline (retention policy, archiving, live streaming, etc.), access rights and alert policies.
-- **Log Transfer:** A feature built into an OVHcloud product to integrate logs for its services into the *Data Stream* of a Logs Data Platform account with the same OVHcloud account. This feature must be enabled by you and for your service. Read this part of the guide to enable it: [Step 1 - How to enable logs transfer via the OVHcloud API](#activation).
-- **Log Redirection Subscription:** When enabling logs forwarding for your OVHcloud service to a given *Data Stream* Logs Data Platform, a *subscription* must be created and attached to the *Data Stream* for future management.
-
 ## Instructions
 
 > [!primary]
-> 
-> Please note that **log forwarding** is free to enable, but you will be billed for using the Logs Data Platform service at the standard rate.
-> 
-> For pricing information, refer to the solution page: [OVHcloud Logs Data Platform](/links/manage-operate/ldp).
+> Please note that enabling **log forwarding** is free to enable, but you will be billed for using a Logs Data Platform stream, based on the standard rate for storing logs in Database as a Service (dbaas).
+>
+> Your logs are manipulated for security and observability reasons in the Logs Data Platform private clusters.
+>
+> For more information on LDP pricing, see [solution page](/links/manage-operate/ldp).
 >
 
 By enabling logs forwarding to a Logs Data Platform stream, you can collect, index and analyze Hosted Private Cloud VMware on OVHcloud data. Regardless of their origin, this platform offers a variety of access methods depending on the protocol, the level of security and the format desired. The data collected can be easily used, thanks to the multiple APIs and web interfaces available.
@@ -168,7 +162,7 @@ You can refer to this guide to find out how to manage your streams from the Logs
 
 Use the following API calls to list subscriptions to your Hosted Private Cloud account.
 
-**Referencing of all Hosted Private Cloud VMware on OVHcloud API calls**:
+**Referencing all HPC LDP* API calls**:
 
 | **Method** | **Path**                                                        | **Description**                                                  |
 |:-----------:|:----------------------------------------------------------------|:-----------------------------------------------------------------|
@@ -180,6 +174,7 @@ Use the following API calls to list subscriptions to your Hosted Private Cloud a
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId} | Get this object properties                                       |
 |   DELETE    | /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId} | Delete a log subscription for your Hosted Private Cloud service  |
 
+**HPC LDP**: Logs Data Platform within Hosted Private Cloud.
 
 - Get the "subscriptionId":
 
@@ -232,6 +227,13 @@ Return:
   "serviceName": "ldp-vg-XXXX"
 }
 ```
+
+**Glossary**
+
+- **Logs Data Platform (LDP):** A logs management platform fully managed and secured by OVHcloud. For more information, see the [LDP overview page](/links/manage-operate/ldp).
+- **Data Stream:** A logical partition of logs that you create in a Logs Data Platform account and use when ingesting, viewing or querying your logs. Multiple sources can be stored in the same data stream, and the unit can be used to define a log pipeline (retention policy, archiving, live streaming, etc.), access rights and alert policies.
+- **Log Transfer:** A feature built into an OVHcloud product to integrate logs for its services into the *Data Stream* of a Logs Data Platform account with the same OVHcloud account. This feature must be enabled by you and for your service. Read this part of the guide to enable it: [Step 1 - How to enable logs transfer via the OVHcloud API](#activation).
+- **Log Redirection Subscription:** When enabling logs forwarding for your OVHcloud service to a given *Data Stream* Logs Data Platform, a *subscription* must be created and attached to the *Data Stream* for future management.
 
 ## Go further
 

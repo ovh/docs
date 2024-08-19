@@ -22,9 +22,9 @@ updated: 2024-08-19
 ## En pratique
 
 > [!primary]
-> Prenez en compte que l'activation du **transfert de logs (Log Forwarding)** est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard.
+> Prenez en compte que l'activation du **transfert de logs (Log Forwarding)** est gratuite, mais vous serez facturé pour l'utilisation d'un stream Logs Data Platform selon le tarif standard de stockage dans une base de données as a service (dbaas).
 >
-> Vos journaux sont manoeuvrés à des fins de sécurité et d'observabilité dans les clusters privées LDP.
+> Vos journaux sont manoeuvrés à des fins de sécurité et d'observabilité dans les clusters privés Logs Data Plateform.
 > 
 > Pour plus d'informations sur la tarification LDP, consultez la [page de l'offre](/links/manage-operate/ldp).
 >
@@ -50,7 +50,7 @@ Sachez qu'il est tout à fait acceptable qu'un produit ne possède qu'une seule 
 
 Nous fournissons toutes les métadonnées pour l'identification de Hosted Private Cloud VMware on OVHcloud.
 
-### Étape 1 - Activation des options de sécurités
+### Étape 1 - Activation des options de sécurité
 
 > [!primary]
 > Si le `logForwarder` n'est pas activé au sein de votre pack d'options de sécurités "advancedSecurity" pour votre environnement vSphere managé, contactez le support OVHcloud.
