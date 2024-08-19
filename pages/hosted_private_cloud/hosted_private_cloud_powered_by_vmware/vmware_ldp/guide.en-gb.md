@@ -63,53 +63,38 @@ It is perfectly acceptable that a product has only one category.
 
 We provide all the metadata for the identification of VMware Hosted Private Cloud on OVHcloud.
 
-### Step 1 - Verifying security options <a name="security-options"></a>
+### Step 1 - Enable security options
 
-> [!warning]
+> [!primary]
+> If the `logForwarder` is not enabled within your security options (advancedSecurity option enum) for your managed vSphere environment, contact OVHcloud support.
 >
-> If call API reference "disabled", contact the OVHcloud support.
->
 
-#### Via the OVHcloud API:
+#### Via the OVHcloud API <a name="security-options"></a>
 
-To check if the security options are present to enable the activation of the feature within your managed OVHcloud HPC VMware vSphere, launch the following API call:
+To check the options required to enable the `advancedSecurity` feature to work within your VMware vSphere managed on OVHcloud. Launch the following API call:
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree
 >
 >
-> **Parameter**:
+> **Settings**:
 >
-> - `serviceName`: Your Dedicated Cloud in the form, "pcc-XXX-XXX-XXX-XXX".
+> - `serviceName`: Your Dedicated Cloud in the form, (`pcc-XXX-XXX-XXX-XXX`).
+> -`option`: Target feature security option required (`advancedSecurity`).
 >
 
-Example of a return if the option is "enabled":
+Return example if the option is required to work within your managed vSphere on OVHcloud is not activated:
 
 ```Shell
- {
- "state": "delivered"
- }
- "
+{
+  "message": "[(dependenciesTree return).depends[8]] Given data (logForwarder) does not belong to the SecurityOptionEnum enumeration"
+}
 ```
 
-Return example if the option will be "enabled":
-
-```Shell
- {
- "state": "creating"
- }
- “
-```
-
-Example of a return if the option is "disabled":
-
-```Shell
- {
-  "state": "disabled"
- }
- “
-```
+> [!warning]
+> Contact OVHcloud support if you do not have the logForwarder security option before creating a stream and subscribing to the Hosted Private Cloud LDP solution.
+>
 
 ### Step 2 - Enable Hosted Private Cloud logs transfer
 

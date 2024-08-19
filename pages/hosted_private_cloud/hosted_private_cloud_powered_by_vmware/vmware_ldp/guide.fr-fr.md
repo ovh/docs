@@ -50,15 +50,15 @@ Sachez qu'il est tout à fait acceptable qu'un produit ne possède qu'une seule 
 
 Nous fournissons toutes les métadonnées pour l'identification de Hosted Private Cloud VMware on OVHcloud.
 
-### Étape 1 - Vérification des options de sécurités
+### Étape 1 - Activation des options de sécurités
 
 > [!primary]
-> Si le `vrliForwarder` est exigé aux options de sécurités afin de fonctionner avec la fonctionnalité **sendLogToCustomer**, contactez le support OVHcloud.
+> Si le `logForwarder` n'est pas activé au sein de vos options de sécurités (advancedSecurity option enum) pour votre environnement vSphere managé, contactez le support OVHcloud.
 >
 
 #### Via l'API OVHcloud <a name="security-options"></a>
 
-Pour vérifier les options exigées pour permettre le fonctionnement de la fonctionnalité `sendLogToCustomer` au sein de votre VMware vSphere managé on OVHcloud. Lancer l'appel API suivant :
+Pour vérifier les options exigées pour permettre le fonctionnement de la fonctionnalité `advancedSecurity` au sein de votre VMware vSphere managé on OVHcloud. Lancer l'appel API suivant :
 
 > [!api]
 >
@@ -68,44 +68,19 @@ Pour vérifier les options exigées pour permettre le fonctionnement de la fonct
 > **Paramètres** :
 >
 > - `serviceName` : Votre PCC sous la forme, (`pcc-XXX-XXX-XXX-XXX`).
-> - `Allowed` : Option de sécurité de la feature cible nécessaire (`sendLogToCustomer`).
+> - `option` : Option de sécurité de la feature cible nécessaire (`advancedSecurity`).
 > 
 
-Exemple de retour si l'option est exigé pour fonctionner au sein de votre vSphere managé on OVHcloud :
+Exemple de retour si l'option est exigé pour fonctionner au sein de votre vSphere managé on OVHcloud n'est pas activé :
 
 ```Shell
 {
-  "depends": [],
-  "requires": [
-    "vrliForwarder"
-  ],
-  "conflicts": []
-}
-```
-
-**Appel API n°2** :
-
-Pour vérifier l'énumération des options qui n'appartiennent pas à `SecurityOptionEnum` pour permettre le fonctionnement de la fonctionnalité `sendLogToCustomer` au sein de votre VMware vSphere managé on OVHcloud. Lancer l'appel API suivant :
-
-> [!api]
->
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
->
->
-> **Paramètres** :
->
-> - `showIncompatible` : true.
-> - `showInternal` : true
->
-
-```Shell
-{
-  "message": "[(compatibilityMatrix return)[4].name] Given data (logForwarder) does not belong to the SecurityOptionEnum enumeration"
+  "message": "[(dependenciesTree return).depends[8]] Given data (logForwarder) does not belong to the SecurityOptionEnum enumeration"
 }
 ```
 
 > [!warning]
-> Contacter donc le support OVHcloud avant de créer un stream et souscrire à l'offre LDP Hosted Private Cloud.
+> Contacter donc le support OVHcloud si vous ne disposez pas de l'option de sécurité logForwarder avant de créer un stream et souscrire à l'offre LDP Hosted Private Cloud.
 > 
 
 ### Étape 2 - Création d'un stream Logs Data Platform
