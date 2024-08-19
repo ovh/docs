@@ -24,7 +24,7 @@ IPv6 to najnowsza wersja *Internet Protocol* (IP). Każdy serwer VPS OVHcloud je
 - Posiadanie [serwera VPS OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}.
 - Połączenie z serwerem VPS przez SSH (dostęp root) lub przez zdalny pulpit (Windows).
 - Posiadanie podstawowej wiedzy w zakresie sieci.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [API OVHcloud](https://api.ovh.com/).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external} lub [API OVHcloud](https://api.ovh.com/).
 
 ## W praktyce
 
@@ -54,7 +54,7 @@ Pierwszy etap polega na pobraniu adresu IPv6 oraz bramy IPv6 przypisanych do Two
 
 #### W panelu klienta <a name="viacontrolpanel"></a>
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
+Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 Adres IPv6 i brama IPv6 przypisane do Twojego serwera wyświetlają się w sekcji `IP`. Zapisz adres i bramę, po czym przejdź do etapu 2 “[Konfiguracja adresu IPv6](#applyipv6)”.
 

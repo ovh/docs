@@ -13,7 +13,7 @@ A Virtual Private Server (VPS) is a virtualised dedicated server. Unlike OVHclou
 ## Requirements
 
 - A [Virtual Private Server](https://www.ovhcloud.com/en/vps) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -26,7 +26,7 @@ A Virtual Private Server (VPS) is a virtualised dedicated server. Unlike OVHclou
 - [Securing your VPS](#secure)
 - [Attaching a domain name](#domain)
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
 <a name="controlpanel"></a>
 
@@ -132,7 +132,7 @@ You can carry out reinstallations in your Control Panel. Click on `...`{.action}
 
 In the popup window, choose an operating system from the drop-down list. The options offered represent [images compatible with an OVHcloud VPS](/pages/public_cloud/compute/image-life-cycle) and are immediately functional after installation.
 
-You can also select an **SSH key** to install on the system, if you have stored one previously in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). To find out all about this topic, please consult our guide [Creating and using SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+You can also select an **SSH key** to install on the system, if you have stored one previously in your [OVHcloud Control Panel](/links/manager). To find out all about this topic, please consult our guide [Creating and using SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 
 > [!primary]
@@ -154,7 +154,7 @@ A reboot might become necessary in order to apply updated configurations or to f
 sudo reboot
 ```
 
-However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). From the `Home`{.action} tab, click on `...`{.action} next to `Boot` in the **Your VPS** section. Select `Reboot my VPS`{.action} and click on `Confirm`{.action} in the popup window.
+However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](/links/manager). From the `Home`{.action} tab, click on `...`{.action} next to `Boot` in the **Your VPS** section. Select `Reboot my VPS`{.action} and click on `Confirm`{.action} in the popup window.
 
 ![Reboot](images/reboot-vps01.png){.thumbnail}
 
@@ -335,4 +335,4 @@ To automate this process, OVHcloud also offers the SSL Gateway solution. Please 
 
 [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
