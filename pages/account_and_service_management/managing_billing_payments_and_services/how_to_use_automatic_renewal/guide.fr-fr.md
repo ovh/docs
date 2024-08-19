@@ -1,7 +1,7 @@
 ---
 title: Comment renouveler mes services OVHcloud
 excerpt: Découvrez comment gérer vos services et leur renouvellement dans votre espace client
-updated: 2024-01-26
+updated: 2024-08-19
 ---
 
 ## Objectif
@@ -190,14 +190,8 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 >> Pour que le renouvellement automatique puisse être activé sur vos services, vous devez avoir ajouté un moyen de paiement valide dans votre compte OVHcloud. Si ce n'est pas le cas ou si le moyen de paiement est expiré, un message d'erreur appparaîtra dans l'espace client lors de vos tentatives d'activation du renouvellement automatique. Consultez notre guide « [Gérer vos moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) » pour vérifier ou ajouter un moyen de paiement.
 > Mon moyen de paiement n'est plus valide. Comment ajouter un nouveau moyen de paiement ?
 >> Consultez notre guide « [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) ». Avant de pouvoir supprimer un moyen de paiement obsolète, vous devez ajouter un nouveau moyen de paiement valide dans votre compte OVHcloud.
-> J'ai oublié de renouveler mon nom de domaine à temps, que faire ?
->> Commencez par vérifier le statut du nom de domaine en utilisant l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/).
->> S'il s'agit d'un nom de domaine générique (.com, .org. net, etc.), celui-ci vous reste « réservé » pendant une période dite « de « *grâce* » (environ 7 jours) puis pendant celle de « *rédemption* » (environ 35 à 40 jours supplémentaires). Ces délais sont variables et dépendent de l'extension et des règles du registre détenant l'extension. Pendant ces deux périodes, vous seul serez en mesure de renouveler le nom de domaine.
->> Pendant la période de grâce, vous pourrez le renouveler via l'espace client, en suivant les étapes de ce guide.
->> Pendant la periode de rédemption, le domaine n'est plus géré par OVHcloud. Son renouvellement via votre espace client occasionnera des frais supplémentaires (qui varient en fonction de l'extension).
->> Au delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de retomber dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/) pour vérifier sa disponibilité régulièrement.
-> Je ne souhaite pas renouveler mon nom de domaine mais le transférer vers un autre bureau d'entregistrement que OVHcloud. Comment faire ?
->> Suivez les instructions de notre guide « [Transférer un nom de domaine vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) ».
+> J'ai une question concernant le renouvellement de mon nom de domaine 
+>> Consultez notre guide « [Comment renouveler ses noms de domaine OVHcloud](/pages/web_cloud/domains/autorenew_domain_name) ».
 > Je ne veux plus de prélèvement automatique mais je ne veux pas résilier mon service. Que dois-je faire ?
 >> Si votre service le permet, vous pouvez utiliser l'action [Configurer le renouvellement](#actions) et ainsi choisir un renouvellement manuel.
 > J'ai renouvelé mon service pour 12 mois. Est-ce que je peux revenir sur mon choix ?
@@ -215,6 +209,8 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 ## Aller plus loin
 
 Ce guide n'a pas répondu à votre question ? Consultez notre [FAQ sur la facturation et le paiement](/pages/account_and_service_management/managing_billing_payments_and_services/faq-billing)
+
+[Comment renouveler ses noms de domaine OVHcloud](/pages/web_cloud/domains/autorenew_domain_name)
 
 [Gérer vos moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)
 
