@@ -52,6 +52,6 @@ Vous avez dorénavant accès à tout l'ecosystème Public Cloud OVHcloud, décou
 - [Supprimer un projet Public Cloud](/pages/public_cloud/compute/delete_a_project)
 - [Informations concernant le mode de facturation cloud](/pages/public_cloud/compute/analyze_billing)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
