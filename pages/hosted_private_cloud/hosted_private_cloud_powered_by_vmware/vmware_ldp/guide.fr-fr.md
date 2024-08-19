@@ -18,6 +18,7 @@ updated: 2024-08-19
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud.
 - Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud (pour verifier lancer l'appel API [suivant](#security-options))
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
+- Vous devez avoir les options de sécurités avancées du pack « logForwarder ». Pour vérifier, lancez l'appel API [suivant](#security-options).
 
 ## En pratique
 
