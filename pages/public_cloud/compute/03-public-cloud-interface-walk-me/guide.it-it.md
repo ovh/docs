@@ -16,7 +16,7 @@ Hai appena creato il tuo progetto Public Cloud e vuoi saperne di più sull'inter
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}.
 - Aver creato un [primo progetto Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project).
 
 ## Procedura

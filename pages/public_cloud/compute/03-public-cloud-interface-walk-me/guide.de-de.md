@@ -16,7 +16,7 @@ Sie haben gerade Ihr Public Cloud Projekt erstellt und möchten mehr über das B
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben ein erstes [Public Cloud Projekt](/pages/public_cloud/compute/create_a_public_cloud_project) erstellt.
 
 ## In der praktischen Anwendung

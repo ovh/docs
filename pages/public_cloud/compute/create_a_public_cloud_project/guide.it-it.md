@@ -16,11 +16,11 @@ La creazione di un progetto è il primo passo nella distribuzione delle [istanze
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) poi clica sul menu `Public Cloud`{.action}.
+Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) poi clica sul menu `Public Cloud`{.action}.
 
 Leggi le condizioni contrattuali selezionando la casella corrispondente e clicca su `Scopri l’universo Public Cloud`{.action}.
 

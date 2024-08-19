@@ -16,11 +16,11 @@ Crear un proyecto es el primer paso para implementar [instancias Public Cloud](h
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Tener acceso al [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección`Public Cloud`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda a la sección`Public Cloud`{.action}.
 
 Una vez que haya consultado la documentación disponible, acepte los términos del contrato marcando la casilla correspondiente y haga clic en `Descubrir el universo Public Cloud`{.action}.
 

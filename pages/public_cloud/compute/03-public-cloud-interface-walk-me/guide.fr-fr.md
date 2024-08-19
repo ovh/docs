@@ -12,7 +12,7 @@ Vous venez de créer votre projet Public Cloud et vous souhaitez en savoir un pe
 
 ## Prérequis
 
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être connecté à l’[espace client OVHcloud](/links/manager){.external}.
 - Avoir créé un [premier projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project).
 
 ## En pratique

@@ -15,7 +15,7 @@ Access to Horizon and the OpenStack APIs is established via username/password pa
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -47,7 +47,7 @@ With the OpenStack user created, you can use its credentials to log into the [Ho
 
 ### Deleting an OpenStack user
 
-You can remove an OpenStack user in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Click on `Users & Roles`{.action} the left-hand menu under "Project management". 
+You can remove an OpenStack user in the [OVHcloud Control Panel](/links/manager). Click on `Users & Roles`{.action} the left-hand menu under "Project management". 
 
 ![public-cloud](images/delete.png){.thumbnail}
 

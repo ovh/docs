@@ -19,7 +19,7 @@ Nous vous apportons une première approche de Heat et des *stacks* représentant
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVH](/links/manager).
 - Avoir créé un projet Public Cloud.
 - Posséder un compte utilisateur OpenStack.
 - Savoir manipuler un fichier YAML.

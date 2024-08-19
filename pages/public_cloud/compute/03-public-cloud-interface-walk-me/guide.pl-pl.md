@@ -16,7 +16,7 @@ Właśnie utworzyłeś Twój projekt Public Cloud i chcesz dowiedzieć się wię
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 - Utworzenie [pierwszego projekt Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project).
 
 ## W praktyce

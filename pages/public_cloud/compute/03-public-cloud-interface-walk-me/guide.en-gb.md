@@ -12,7 +12,7 @@ You have just created your Public Cloud project, and you would like to find out 
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- access to the [OVHcloud Control Panel](/links/manager){.external}.
 - You need to have created your [first Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project).
 
 ## Instructions

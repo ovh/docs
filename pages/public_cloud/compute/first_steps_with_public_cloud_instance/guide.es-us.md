@@ -10,7 +10,7 @@ updated: 2024-02-20
 
 ## Objetivo
 
-Puede gestionar sus instancias de Public Cloud desde el [Panel de configuración](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Puede gestionar sus instancias de Public Cloud desde el [Panel de configuración](/links/manager).
 
 **Esta guía explica las acciones disponibles en el área de cliente de OVHcloud para una instancia de Public Cloud.**
 
@@ -18,11 +18,11 @@ Puede gestionar sus instancias de Public Cloud desde el [Panel de configuración
 
 - Un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
 - Una [instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) en su proyecto
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager)
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y abra su proyecto de `Public Cloud`{.action}. 
+Conéctese al [Panel de configuración de OVHcloud](/links/manager) y abra su proyecto de `Public Cloud`{.action}. 
 
 ### Utilizar la interfaz de gestión de instancias
 

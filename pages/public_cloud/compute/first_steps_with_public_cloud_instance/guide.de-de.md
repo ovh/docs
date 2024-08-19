@@ -10,7 +10,7 @@ updated: 2024-02-20
 
 ## Ziel
 
-Sie können Ihre Public Cloud Instanzen in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten.
+Sie können Ihre Public Cloud Instanzen in Ihrem [Kundencenter](/links/manager) verwalten.
 
 **In dieser Anleitung werden die im OVHcloud Kundencenter für eine Public Cloud Instanz verfügbaren Aktionen beschrieben.**
 
@@ -18,11 +18,11 @@ Sie können Ihre Public Cloud Instanzen in Ihrem [Kundencenter](https://www.ovh.
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Kunden-Account.
 - Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) in Ihrem Projekt erstellt.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 ### Das Instanzen-Verwaltungsinterface verwenden
 

@@ -16,7 +16,7 @@ Usted acaba de crear su proyecto de Public Cloud y quiere saber más sobre la in
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
 - Haber creado su [primer proyecto de Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project).
 
 ## Procedimiento

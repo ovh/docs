@@ -19,7 +19,7 @@ We will help you get started using Heat, and the *stacks* that represent orchest
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
+- access to the [OVHcloud Control Panel](/links/manager){.external}
 - a Public Cloud project
 - an OpenStack user account
 - how to manipulate YAML files

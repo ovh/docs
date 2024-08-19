@@ -18,7 +18,7 @@ Ce fonctionnement ressemble à celui de certains opérateurs téléphoniques qui
 
 * Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVHcloud
 * Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external}
-* Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+* Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
 ## Principe général
 

@@ -32,7 +32,7 @@ Before following this tutorial, please refer to these guides:
 
 ## Requirements
 
-- A [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/prices/){.external} in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} with Ubuntu 18.04 installed
+- A [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/prices/){.external} in the [OVHcloud Control Panel](/links/manager){.external} with Ubuntu 18.04 installed
 - Root SSH access on the Instance
 - [Object Storage](https://www.ovhcloud.com/en-ie/public-cloud/object-storage/){.external} in the same datacentre as your Public Cloud Instance (optional)
 - [High-performance additional disk](https://www.ovhcloud.com/en-ie/public-cloud/block-storage/){.external} in the same datacentre as your Public Cloud Instance (optional)

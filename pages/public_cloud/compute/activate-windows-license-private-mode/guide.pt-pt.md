@@ -18,7 +18,7 @@ Neste caso, deverá ativar a licença manualmente para ter acesso a todos os ser
 ## Requisitos
 
 - Dispor de um [projeto Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - [Ter criado um utilizador OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
 
 Recomendamos que consulte o guia "[Aceder à interface Horizon](/pages/public_cloud/compute/introducing_horizon)" para se familiarizar com o Horizon.

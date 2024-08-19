@@ -13,7 +13,7 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 ## Prérequis
 
 * [Avoir créé une instance Public Cloud dans votre compte](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance)
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+* Être connecté à votre [espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 
@@ -64,7 +64,7 @@ Entrez ensuite le mot de passe root.
 
 Pour commencer, [définissez le mot de passe root](#settingtherootpassword).
 
-Ensuite, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et rendez-vous dans la partie `Public Cloud`{.action}. Allez dans la rubrique `Instances`{.action}.
+Ensuite, connectez-vous à votre [espace client OVHcloud](/links/manager) et rendez-vous dans la partie `Public Cloud`{.action}. Allez dans la rubrique `Instances`{.action}.
 
 Cliquez sur les `...`{.action} à droite de l’instance correspondante puis cliquez sur `Détail de l'instance`{.action}. 
 

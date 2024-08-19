@@ -6,7 +6,7 @@ updated: 2024-02-20
 
 ## Objective
 
-You can manage your Public Cloud instances in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+You can manage your Public Cloud instances in the [OVHcloud Control Panel](/links/manager).
 
 **This guide explains the available Control Panel actions for a Public Cloud instance.**
 
@@ -14,11 +14,11 @@ You can manage your Public Cloud instances in the [OVHcloud Control Panel](https
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) in your project
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. 
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. 
 
 ### Using the management interface for instances
 

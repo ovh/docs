@@ -24,11 +24,11 @@ As a result of increased activity, or simply new needs, your instance may not be
 ## Requirements
 
 - A [Public Cloud instance](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-- [Access to the OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- [Access to the OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log into the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu. Click on `...`{.action} in the row of the instance concerned and select `Edit`{.action}.
+Log into the [OVHcloud Control Panel](/links/manager), and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu. Click on `...`{.action} in the row of the instance concerned and select `Edit`{.action}.
 
 ![public-cloud](images/editinstance.png){.thumbnail}
 

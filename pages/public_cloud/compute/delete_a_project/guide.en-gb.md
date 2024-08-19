@@ -6,7 +6,7 @@ updated: 2022-10-14
 
 ## Objective
 
-When you no longer need your [Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/) project, you can delete it directly from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+When you no longer need your [Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/) project, you can delete it directly from the [OVHcloud Control Panel](/links/manager).
 
 When you delete your Public Cloud project, a final invoice is issued for the outstanding amount.
 
@@ -20,11 +20,11 @@ Please note that deleting a project is not the same as deactivating your Public 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section.
+Log in to the [OVHcloud Control Panel](/links/manager) and switch to the `Public Cloud`{.action} section.
 
 Open the `Project settings`{.action} under **Project Management** in the left-hand menu.
 

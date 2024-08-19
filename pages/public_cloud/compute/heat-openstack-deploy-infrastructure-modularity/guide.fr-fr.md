@@ -12,7 +12,7 @@ Nous avons vu dans le guide intitulé « [Déployer une infrastructure simple av
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVH](/links/manager).
 - Avoir créé un projet Public Cloud.
 - Posséder un compte utilisateur OpenStack.
 - Savoir manipuler un fichier YAML.

@@ -17,7 +17,7 @@ This can be useful in cases where:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows)
 
@@ -30,7 +30,7 @@ This can be useful in cases where:
 
 ### Attaching a new volume
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open your `Public Cloud`{.action} project. Then open `Block Storage`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then open `Block Storage`{.action} in the left-hand menu.
 
 In this section, click on the button `Create a volume`{.action}.
 

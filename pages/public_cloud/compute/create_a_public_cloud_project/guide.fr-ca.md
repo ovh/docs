@@ -12,11 +12,11 @@ La création d’un projet est la première étape indispensable pour déployer 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), et cliquez sur le menu `Public Cloud`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), et cliquez sur le menu `Public Cloud`{.action}.
 
 Après en avoir pris connaissance, validez les termes des contrats en cochant la case correspondante puis cliquez sur `Découvrir l'univers Public Cloud`{.action}.
 

@@ -18,7 +18,7 @@ In questo caso, è necessario attivare manualmente la licenza per avere accesso 
 ## Prerequisiti
 
 - Disporre di un [progetto Public Cloud OVHcloud](/pages/public_cloud/compute/create_a_public_cloud_project)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - [Aver creato un utente OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
 
 Per familiarizzare con Horizon, consulta la guida [Accedere all'interfaccia Horizon](/pages/public_cloud/compute/introducing_horizon).

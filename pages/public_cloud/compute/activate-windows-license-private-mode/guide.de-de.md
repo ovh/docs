@@ -18,7 +18,7 @@ In diesem Fall müssen Sie die Lizenz manuell aktivieren, um Zugriff auf alle Wi
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/){.external} in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user).
 
 Wir empfehlen, die [Einführung in das Horizon Interface](/pages/public_cloud/compute/introducing_horizon) zu lesen, um sich mit Horizon vertraut zu machen.

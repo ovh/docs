@@ -18,7 +18,7 @@ This system is similar to the one used by certain telephone operators, where the
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/){.external} in your OVHcloud account
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps){.external}
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}
 
 ## General design
 

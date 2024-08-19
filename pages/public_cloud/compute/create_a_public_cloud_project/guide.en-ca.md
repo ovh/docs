@@ -12,11 +12,11 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and go to the `Public Cloud`{.action} section.
+Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Public Cloud`{.action} section.
 
 Once you have read and understood the terms of the contracts, tick the corresponding box, then click `Discover the Public Cloud universe`{.action}.
 

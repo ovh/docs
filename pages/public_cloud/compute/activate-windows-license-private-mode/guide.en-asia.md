@@ -14,7 +14,7 @@ In this case, you must activate the licence manually to access all Windows servi
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OpenStack user account](/pages/public_cloud/compute/create_and_delete_a_user)
 
 We recommend that you read our guide on [Accessing the Horizon interface](/pages/public_cloud/compute/introducing_horizon) to familiarise yourself with Horizon.

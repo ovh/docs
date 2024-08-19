@@ -14,7 +14,7 @@ In some cases you might need to repair the GRUB bootloader. This guide will show
 
 ## Instructions
 
-Connect to the instance, either via VNC in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or via SSH.
+Connect to the instance, either via VNC in the [OVHcloud Control Panel](/links/manager) or via SSH.
 
 Type the following commands to mount the remote file system and start GRUB repairs:
 

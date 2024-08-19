@@ -20,7 +20,7 @@ OVHcloud offre aux clients Public Cloud des images d'applications préinstallée
 
 #### Installez l'application préinstallée de votre choix
 
-Depuis [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), les API OVHcloud ou de l'API OpenStack Horizon, installez l'application de votre choix sur votre instance Public Cloud.
+Depuis [l'espace client OVHcloud](/links/manager), les API OVHcloud ou de l'API OpenStack Horizon, installez l'application de votre choix sur votre instance Public Cloud.
 
 #### Détails de connexion à l'application
 

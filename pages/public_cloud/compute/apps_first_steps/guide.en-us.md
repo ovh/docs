@@ -20,7 +20,7 @@ OVHcloud offers Public Cloud customers pre-installed application images for quic
 
 #### Install your chosen pre-installed application
 
-Using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) / API or the OpenStack Horizon / API, install your chosen application on your Public Cloud instance.
+Using the [OVHcloud Control Panel](/links/manager) / API or the OpenStack Horizon / API, install your chosen application on your Public Cloud instance.
 
 #### Application login details
 
