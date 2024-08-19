@@ -21,11 +21,20 @@ In today's rapidly evolving digital landscape, securing cloud infrastructure has
 
 ## Instructions
 
-### Install and configure Stormshield Network Security on your Public Cloud environment
+In addition to the installation and configuration of Stormshield Network Security, this tutorial offers different use cases based on your needs :
+
+- [Install and configure Stormshield Network Security on your Public Cloud environment](#step1)
+- [Usecase 1 : configure Stormshield to be used as a gateway](#step2)
+- [Usecase 2 : configure a NAT to access a private HTTP service from outside](#step3)
+- [Usecase 3 : IPsec tunnel (site-to-site)](#step4)
+- [Usecase 4 : SSL/TLS VPN (client-to-site)](#step5)
+
+### Install and configure Stormshield Network Security on your Public Cloud environment <a name="step1"></a>
 
 > [!primary]
 > In this tutorial, the installation and configuration of Stormshield Network Security is done primarily via the command line. Open a terminal to execute the instructions.
 >
+> Please note that all sections related to « High Availability », « stormshield-2 », or « vlan199 » are optional. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. Normally, it can also function with just one instance if that is sufficient for your needs.
 
 #### Configure your vRack
 
@@ -277,7 +286,7 @@ You need to do this each time you update the configuration.
 After deploying Stormshield **E**lastic **V**irtual **A**ppliance (EVA) firewall, it can be used in multiple advanced security scenarios such as IPsec VPN, SSL/TLS VPN, network gateways (IN or OUT) as described below.
 Thanks to the vRack private network, listed VLANs can also be used outside Public Cloud environment : across BareMetal or PrivateCloud products.
 
-#### Configure Stormshield to be used as a gateway for the VLAN200
+#### Usecase 1 : configure Stormshield to be used as a gateway <a name="step2"></a>
 
 In this example, virtual firewall appliance will act as a secure gateway for private instances (or any other servers) inside VLAN200 of given vRack network. Such traffic can be a subject for URL filtering on the firewall.
 
@@ -300,7 +309,7 @@ ssh admin@<ip_address>
 hasyn
 ```
 
-#### Verify if an instance can reach Internet from VLAN200
+##### Verify if an instance can reach Internet from VLAN200
 
 * [Import your SSH public key](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html){.external} :
 
@@ -333,7 +342,7 @@ curl -I https://www.ovh.com/manager/
 HTTP/2 200
 ```
 
-#### Configure a NAT to access a private HTTP service from outside
+#### Usecase 2 : configure a NAT to access a private HTTP service from outside <a name="step3"></a>
 
 In this example, Internet should be able to reach-out to the private webserver installed inside VLAN200. The goal of such setup is to protect webserver with network firewall.
 
@@ -376,7 +385,7 @@ ssh admin@<ip_address>
 hasyn
 ```
 
-#### IPsec tunnel
+#### Usecase 3 : IPsec tunnel (site-to-site) <a name="step4"></a>
 
 In this example, IPsec tunnel is configured to interconnect two different PCI regions: SBG7 (network VLAN200) and GRA11 (network VLAN201), but any of those sites can be a remote site like an office or data center.
 
@@ -450,7 +459,7 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 64 bytes from <ip_address>: icmp_seq=3 ttl=64 time=16.4 ms
 ```
 
-#### SSL/TLS VPN
+#### Usecase 4 : SSL/TLS VPN (client-to-site) <a name="step5"></a>
 
 In this example, a remote OpenVPN client will connect with private network inside VLAN200.
 
