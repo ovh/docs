@@ -1,6 +1,6 @@
 ---
-title: "Pushing logs from VMware on OVHcloud to Logs Data Platform"
-excerpt: "Find out how to enable Hosted Private Cloud VMware on OVHcloud logs forwarding to a Logs Data Platform stream" 
+title: "Logs Data Platform - VMware log forwarding"
+excerpt: "Find out how to enable VMware on OVHcloud logs forwarding to a Logs Data Platform stream" 
 updated: 2024-08-19
 ---
 
@@ -94,15 +94,18 @@ Return example if the option is required to work within your managed vSphere on 
 ### Step 2 - Create Logs Data Platform stream
 
 > [!primary]
-> 
-> Hosted Private Cloud and LDP resources must belong to the same OVHcloud account. You will need to create a Logs Data Platform beforehand.
+> Hosted Private Cloud and LDP resources must belong to the same OVHcloud account.
+>
+> You will need to create a Data Logs Stream beforehand.
 >
 
-### Create a Logs Data Platform stream
+#### Via the OVHcloud control panel
 
-You can refer to this guide and find out how to manage your streams from the Logs Data Platform section of the OVHcloud Control Panel: [Getting started with the Logs Data Platform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+You can refer to this guide to find out how to manage your streams via the Logs Data Platform control panel: “[Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)” (EN).
 
-You can retrieve the **streamId** and set it aside (copy and paste). You will need it to activate your Hosted Private Cloud subscription with the Logs Data Platform in question.
+Retrieve the **streamId** and save (copy and paste) it. You will need it to activate your Hosted Private Cloud subscription with the Logs Data Platform stream in question.
+
+In the next step, we will look at how to create a stream
 
 ### Step 3 - Activate the Logs Data Platform Hosted Private Cloud subscription
 
@@ -112,7 +115,7 @@ This feature is not yet available in the Hosted Private Cloud control panel.
 
 #### Via the OVHcloud API <a name="activation"></a>
 
-> [!success]
+> [!primary]
 >
 > Read the [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide to get familiar with using OVHcloud APIv6.
 
@@ -126,8 +129,8 @@ To retrieve the **streamId** of your LDP account, read our guide [Getting starte
 > **Parameters:**
 > 
 > - `serviceName`: Your Hosted Private Cloud reference in the form `pcc-XXX-XXX-XXX-XXX`.
-> - `kind`: Name of the subscription log type, e.g. "esxi", "nsxtManager", "vcsa", "nsxtEdge".
-> - `StreamId`: The destination stream identifier (uuid:"ggb8d894-c491-433e-9c87-50a8bf6fe773").
+> - `kind`: Name of the subscription log type, e.g. `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
+> - `StreamId`: The destination stream identifier (uuid:`ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
 
 Example:

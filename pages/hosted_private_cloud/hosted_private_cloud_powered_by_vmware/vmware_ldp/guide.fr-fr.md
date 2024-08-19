@@ -1,6 +1,6 @@
 ---
-title: "Transfert des logs VMware vers un stream Logs Data Platform"
-excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) Hosted Private Cloud VMware on OVHcloud vers un stream Logs Data Platform"
+title: "Logs Data Platform - Transfert de logs VMware"
+excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) VMware on OVHcloud vers un stream Logs Data Platform"
 updated: 2024-08-19
 ---
 
@@ -98,7 +98,6 @@ Exemple de retour si l'option est exigé pour fonctionner au sein de votre vSphe
 > Vous devez avoir préalablement créer un stream Logs Data Platform.
 >
 
-
 Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
 Récupérez le **streamId** et sauvegardez-le (copier-coller). Vous en aurez besoin pour activer votre souscription Hosted Private Cloud avec le stream Logs Data Platform en question.
@@ -113,7 +112,7 @@ Cette fonctionnalité n'est pas encore disponible dans la section Hosted Private
 
 #### Via l’API OVHcloud <a name="activation"></a>
 
-> [!success]
+> [!primary]
 > Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 >
 
@@ -123,11 +122,11 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 > 
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
-
+>
 > **Paramètres** :
 >
-> - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud, sous la forme "pcc-XXX-XXX-XXX-XXX".
-> - `kind` : nom du type de journal de l'abonnement, par exemple `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
+> - `serviceName` : nom de service, sous la forme `pcc-XXX-XXX-XXX-XXX`.
+> - `kind` : Type de filtrage journal VMware, par exemple `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
 > - `streamId` : identifiant du flux (stream) de destination, (uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
 
