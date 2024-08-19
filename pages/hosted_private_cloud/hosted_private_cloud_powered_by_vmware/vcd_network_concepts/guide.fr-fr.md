@@ -67,7 +67,7 @@ Le control panel VCD dispose d'un bandeau réseau avec 6 sections :
 
 ![VCD Control Panel Network Overview Gif](images/vcd_network_overview.gif){.thumbnail}
 
-Il contient aussi une section `Réseau`{.action} au sein de chaque vDC dans `Centres de données > Mon VDC > Mise en réseau > Réseau > Dispositif Edge`{.action}.
+Il contient aussi une section `Réseau`{.action} au sein de chaque vDC dans `Centres de données > Mon VDC > Mise en réseau > Réseau > Dispositif Edge`.
 
 ///
 
@@ -75,7 +75,7 @@ Il contient aussi une section `Réseau`{.action} au sein de chaque vDC dans `Cen
 
 /// details | Quelles sont les capacités, les fonctionnalités proposées et offertes ?
 
-**Capacités de mise en réseau VCD on OVHcloud**
+**Capacités de mise en réseau**
 
 Voici les principales fonctionnalités réseau offertes avec les offres VCD on OVHcloud.
 
@@ -105,7 +105,7 @@ Les fonctionnalités de réseau avancé et de sécurité au sein de VCD on OVHcl
 
 ### Étape 2 - Concepts et bonnes pratiques
 
-/// details | Quels sont les concepts et les recommandations d'une bonne utilisation du réseau ?
+/// details | Quels sont les bonnes pratiques depuis l'espace client VCD ?
 
 **Recommandation dans la conception et l'administration de l'espace réseau**
 
@@ -156,7 +156,7 @@ Il existe deux types d'espaces IP que vous pouvez utiliser en tant qu'utilisateu
 
 ![VCD Network IP Prefixe](images/vcd_network_ipspace_banner.png){.thumbnail}
 
-**Via le control panel VCD** :
+#### Via l'espace client VCD**
 
 ![VCD Network IP Prefixe 02](images/vcd_network_ipspace.gif){.thumbnail}
 
@@ -279,21 +279,19 @@ Les fonctionnalités de Load Balancing au sein de VCD on OVHcloud ne sont pas di
 
 ## Aller plus loin
 
-Vous pouvez maintenant suivre les étapes du guide suivant : [Guide 2 - VMware Cloud Director on OVHcloud - Network - Créer des composants réseau via le control panel VCD on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
+Vous pouvez maintenant suivre les étapes du guide suivant : [« Guide 2 - VMware Cloud Director on OVHcloud - Network - Créer des composants réseau via le control panel VCD on OVHcloud »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
 
 **Networking pour VMware Cloud Director on OVHcloud - Index des guides** :
 
-- Guide 1 : VMware Cloud Director on OVHcloud - Network - Concepts
-- Guide 2 : [VMware Cloud Director on OVHcloud - Network - Créer des composants réseau via le control panel VCD on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
-- **Bientôt disponible** : Guide 3 : « VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ?».
-- **Bientôt disponible** : Guide 4 : « VMware Cloud Director on OVHcloud - Network - Comment exploiter un block IP avec VCD on OVHcloud ?».
-- **Bientôt disponible** : Guide 5 : « VMware Cloud Director on OVHcloud - Network - Comment utiliser le distributed firewalling (East - Ouest) ?».
+- Guide 1 : « VMware Cloud Director on OVHcloud - Network - Concepts »
+- Guide 2 : « [VMware Cloud Director on OVHcloud - Network - Créer des composants réseau via le control panel VCD on OVHcloud »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
+- **Bientôt disponible** : « Guide 3 : VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ? »
+- **Bientôt disponible** : « Guide 4 : VMware Cloud Director on OVHcloud - Network - Comment exploiter un block IP avec VCD on OVHcloud ? »
+- **Bientôt disponible** : « Guide 5 : VMware Cloud Director on OVHcloud - Network - Comment utiliser le distributed firewalling (East - Ouest) ? »
 
 **Notions réseau utiles OVHcloud**
 
 Pour renforcer vos connaissances réseau au sein de l'univers OVHcloud consultez la page <https://www.ovhcloud.com/fr/network/>.
-
-///
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
