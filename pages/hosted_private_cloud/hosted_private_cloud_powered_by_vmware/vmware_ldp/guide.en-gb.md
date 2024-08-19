@@ -81,7 +81,7 @@ To check the options required to enable the `advancedSecurity` feature to work w
 > **Settings**:
 >
 > - `serviceName`: Your Dedicated Cloud in the form, (`pcc-XXX-XXX-XXX-XXX`).
-> -`option`: Target feature security option required (`advancedSecurity`).
+> - `option`: Target feature security option required (`advancedSecurity`).
 >
 
 Return example if the option is required to work within your managed vSphere on OVHcloud is not activated:
