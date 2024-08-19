@@ -48,7 +48,7 @@ Para implementar uma firewall restritiva, nomeadamente no ICMP, e continuar a be
 
 ### Ativar ou desativar o monitoring
 
-Em primeiro lugar, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione o separador `Bare Metal Cloud`{.action}. Selecione o servidor em causa no menu pendente dos `Servidores Dedicados`{.action}.
+Em primeiro lugar, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione o separador `Bare Metal Cloud`{.action}. Selecione o servidor em causa no menu pendente dos `Servidores Dedicados`{.action}.
 
 Pode ativar ou desativar o monitoring de um servidor dedicado a partir do separador `Informações gerais`{.action}. A opção situa - se na secção `Estado dos serviços`.
 

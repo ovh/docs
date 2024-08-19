@@ -80,4 +80,4 @@ Our customers using [VMware on OVHcloud](https://www.ovhcloud.com/en-gb/hosted-p
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

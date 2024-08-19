@@ -21,7 +21,7 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 - Un servizio [vRack](https://www.ovh.it/soluzioni/vrack/) attivato nel tuo account
 - Diversi [server dedicati](https://www.ovhcloud.com/it/bare-metal/) (compatibili con la vRack)
 - Avere accesso amministratore (sudo) al server via SSH o RDP
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver selezionato una gamma di indirizzi IP privati
 
 > [!warning]
@@ -41,7 +41,7 @@ Verrai reindirizzato verso un'altra pagina per confermare l'ordine. L'operazione
 
 ### Step 2: aggiungi i tuoi server alla vRack
 
-Una volta attivata la vRack, accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Network`{.action} e apri il menu `vRack`{.action}.
+Una volta attivata la vRack, accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.action} e apri il menu `vRack`{.action}.
 
 Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca su ciascun server che vuoi aggiungere alla vRack e poi clicca sul pulsante `Aggiungi`{.action}.
 
@@ -64,7 +64,7 @@ Puoi utilizzare qualsiasi gamma di IP privati di tua scelta e qualsiasi indirizz
 
 I nomi delle interfacce di rete dei tuoi server non sono sempre gli stessi. Nei seguenti esempi, sostituisci NETWORK_INTERFACE con il nome di interfaccia appropriato.
 
-Per verificare la corretta interfaccia della vRack è necessario verificare la scheda `Interfacce di rete`{.action} del server nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella tabella in basso, indica l'indirizzo MAC, che è anche il **Nome** dell'interfaccia **Privata**.
+Per verificare la corretta interfaccia della vRack è necessario verificare la scheda `Interfacce di rete`{.action} del server nello [Spazio Cliente OVHcloud](/links/manager). Nella tabella in basso, indica l'indirizzo MAC, che è anche il **Nome** dell'interfaccia **Privata**.
 
 ![Interfaccia vRack](images/private_interface.png){.thumbnail}
 
@@ -74,7 +74,7 @@ Una volta effettuato l'accesso al server via SSH, è possibile visualizzare le i
 ip a
 ```
 
-Sulla linea che inizia con ```link ether```, verifica che questa interfaccia corrisponda all'interfaccia **Private** inserita nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Utilizza questo nome di interfaccia per sostituire `NETWORK_INTERFACE` nelle configurazioni seguenti (esempio: `eno2`).
+Sulla linea che inizia con ```link ether```, verifica che questa interfaccia corrisponda all'interfaccia **Private** inserita nel tuo [Spazio Cliente OVHcloud](/links/manager). Utilizza questo nome di interfaccia per sostituire `NETWORK_INTERFACE` nelle configurazioni seguenti (esempio: `eno2`).
 
 ```console
 link ether f0:00:00:ef:0e:f0

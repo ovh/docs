@@ -18,7 +18,7 @@ Un server dedicato è un server fisico ("bare metal") situato in uno dei nostri 
 
 - Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) di gamma Kimsufi, So You Start o Rise nello Spazio Cliente OVHcloud
 - Essere connesso al tuo server in SSH con Linux o tramite un desktop remoto con Windows
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -43,7 +43,7 @@ Un server dedicato è un server fisico ("bare metal") situato in uno dei nostri 
 > Per maggiori informazioni sui sistemi operativi dei server, accedi alla [pagina Web](https://www.ovhcloud.com/it/bare-metal/os/).
 >
 
-Reinstalla facilmente il tuo server o scegli un'altra immagine del sistema operativo da installare nel tuo  [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
+Reinstalla facilmente il tuo server o scegli un'altra immagine del sistema operativo da installare nel tuo  [Spazio Cliente OVHcloud](/links/manager). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
 
 ![Pulsante Reinstalla](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -55,7 +55,7 @@ Nella nuova finestra, seleziona una delle opzioni di installazione:
 
 > [!primary]
 >
-> Alcuni sistemi operativi o piattaforme proprietarie come Plesk o Windows richiedono licenze che generano costi aggiuntivi. È possibile acquistare licenze [da OVHcloud](https://www.ovhcloud.com/it/bare-metal/os/) o da un rivenditore esterno. In seguito, la licenza dovrà essere applicata nel sistema operativo stesso o dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> Alcuni sistemi operativi o piattaforme proprietarie come Plesk o Windows richiedono licenze che generano costi aggiuntivi. È possibile acquistare licenze [da OVHcloud](https://www.ovhcloud.com/it/bare-metal/os/) o da un rivenditore esterno. In seguito, la licenza dovrà essere applicata nel sistema operativo stesso o dallo [Spazio Cliente OVHcloud](/links/manager).
 >
 > Tutte le licenze sono disponibili nella sezione `Bare Metal Cloud`{.action} con `Licenze`{.action}. In questa sezione è possibile anche ordinare licenze o aggiungere licenze esistenti tramite il pulsante `Actions`{.action}.
 >
@@ -203,7 +203,7 @@ Il riavvio può essere necessario per applicare configurazioni aggiornate o riso
 reboot
 ```
 
-Tuttavia, puoi effettuare un "hard reboot" in qualsiasi momento nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca `...`{.action} in corrispondenza di "Stato" nella sezione **Stato dei servizi** e poi clicca su `Riavvia`{.action} e `Conferma`{.action} nella finestra contestuale.
+Tuttavia, puoi effettuare un "hard reboot" in qualsiasi momento nel tuo [Spazio Cliente OVHcloud](/links/manager). Nella scheda `Informazioni generali`{.action}, clicca `...`{.action} in corrispondenza di "Stato" nella sezione **Stato dei servizi** e poi clicca su `Riavvia`{.action} e `Conferma`{.action} nella finestra contestuale.
 
 ![Riavvia](images/rebooting-your-server.png){.thumbnail}
 
@@ -219,7 +219,7 @@ Se utilizzi un server Windows, consulta [questa guida](/pages/bare_metal_cloud/d
 
 ### Monitoraggio OVHcloud
 
-È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). L'opzione si trova nella sezione `Stato dei servizi`.
+È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](/links/manager). L'opzione si trova nella sezione `Stato dei servizi`.
 
 ![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
@@ -271,7 +271,7 @@ Tutti i server dedicati OVHcloud vengono consegnati con un blocco /64 IPv6. Per 
 
 ### Modalità Rescue
 
-Per risolvere qualsiasi problema, riavvia il server in modalità Rescue dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). È importante identificare i problemi del server in questa modalità, per escludere i problemi legati al software prima di contattare il nostro team di supporto.
+Per risolvere qualsiasi problema, riavvia il server in modalità Rescue dallo [Spazio Cliente OVHcloud](/links/manager). È importante identificare i problemi del server in questa modalità, per escludere i problemi legati al software prima di contattare il nostro team di supporto.
 
 Consulta la guida [Attivare e utilizzare il Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 

@@ -26,7 +26,7 @@ No entanto, pode ligar-se ao seu servidor através do [modo rescue OVHcloud](/pa
 ## Requisitos
 
 - Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
@@ -60,7 +60,7 @@ EEFFFFFFFFFFFFFFFFFFFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGHhhhhhhhhhhhhhhhhhhhh
 
 Por razões de segurança, elimine a cadeia de chaves « antiga » (atualmente obsoleta) do ficheiro. Registe e saia do editor.
 
-Volte para o modo de arranque "normal" e reinicie o servidor na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Consulte o guia ["Ativar e utilizar o modo rescue"](#step2), se necessário.
+Volte para o modo de arranque "normal" e reinicie o servidor na sua [Área de Cliente OVHcloud](/links/manager). Consulte o guia ["Ativar e utilizar o modo rescue"](#step2), se necessário.
 
 Agora tem acesso ao servidor com o novo par de chaves SSH.
 

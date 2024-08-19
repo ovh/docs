@@ -28,7 +28,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo bridged 
 
 - Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/)
 - Dispor de [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -208,7 +208,7 @@ Esta configuração é mais flexível, não precisa de associar um IP adicional 
 * Ter acesso ao intervalo de endereços de IP privados escolhidos.
 * Dispor de um [servidor compatível com o vRack](https://www.ovhcloud.com/pt/bare-metal/){.external}.
 * Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+* Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 #### Esquema da configuração alvo
 

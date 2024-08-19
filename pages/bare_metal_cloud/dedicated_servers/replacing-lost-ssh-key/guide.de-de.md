@@ -25,7 +25,7 @@ Sie können sich jedoch weiterhin über den [OVHcloud Rescue-Modus](/pages/bare_
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -59,7 +59,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== neu@sshkey
 
 Löschen Sie aus Sicherheitsgründen die obsolete "alte" Schlüsselzeichenfolge aus der Datei. Speichern Sie die Änderungen und schließen Sie den Editor.
 
-Stellen Sie den Boot-Modus wieder auf "normal" um und starten Sie den Server in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu. Folgen Sie bei Bedarf der [Anleitung zum Rescue-Modus](#step2).
+Stellen Sie den Boot-Modus wieder auf "normal" um und starten Sie den Server in Ihrem [OVHcloud Kundencenter](/links/manager) neu. Folgen Sie bei Bedarf der [Anleitung zum Rescue-Modus](#step2).
 
 Sie haben jetzt mit Ihrem neuen SSH-Schlüsselpaar wieder Zugriff auf den Server.
 

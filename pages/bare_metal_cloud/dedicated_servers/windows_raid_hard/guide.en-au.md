@@ -14,7 +14,7 @@ When you install Windows on a server with a hardware RAID configuration, the RAI
 
 - a [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/){.external} with Windows installed and a hardware RAID card (LSI MegaRaid)
 - at least two identical disks
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
+- access to the [OVHcloud Control Panel](/links/manager){.external}
 
 ## Instructions
 
@@ -241,4 +241,4 @@ Once the system is installed, log in to your Windows system and open up the util
 
 [Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

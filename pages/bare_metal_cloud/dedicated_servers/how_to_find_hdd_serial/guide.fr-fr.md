@@ -167,4 +167,4 @@ Le numéro du périphérique sg sera affiché comme suit : `/dev/sg0`, `/dev/sg
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

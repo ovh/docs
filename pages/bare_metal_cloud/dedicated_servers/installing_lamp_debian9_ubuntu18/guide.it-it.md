@@ -17,7 +17,7 @@ La realizzazione di un server Web e dei software associati permette al tuo serve
 ## Prerequisiti
 
 - Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/), un [VPS](https://www.ovhcloud.com/it/vps/) o un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud (Windows escluso)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Un accesso amministrativo al tuo servizio tramite SSH
 
 > [!warning]
@@ -28,7 +28,7 @@ La realizzazione di un server Web e dei software associati permette al tuo serve
 
 ## Procedura
 
-Se una distribuzione Debian o Ubuntu non è già installata sul tuo server, effettua una reinstallazione dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). È il modo migliore per avere un sistema proprio per il tuo server Web e le applicazioni che vi eseguono.
+Se una distribuzione Debian o Ubuntu non è già installata sul tuo server, effettua una reinstallazione dal tuo [Spazio Cliente OVHcloud](/links/manager). È il modo migliore per avere un sistema proprio per il tuo server Web e le applicazioni che vi eseguono.
 
 Per installare una distribuzione sul tuo servizio OVHcloud, segui questa guida in [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
@@ -227,7 +227,7 @@ Con l'UFW, ad esempio, puoi fare di più se vuoi limitare gli attacchi per *deni
 
 ### Step 6: configurazione DNS (facoltativo)
 
-Per accedere all'installazione del tuo server Web tramite un dominio è necessario associarlo al tuo servizio. Per effettuare questa operazione è necessario modificare la zona DNS accessibile dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), a condizione che OVHcloud sia il Registrar **e** che il dominio utilizzi i server DNS di OVHcloud.
+Per accedere all'installazione del tuo server Web tramite un dominio è necessario associarlo al tuo servizio. Per effettuare questa operazione è necessario modificare la zona DNS accessibile dallo [Spazio Cliente OVHcloud](/links/manager), a condizione che OVHcloud sia il Registrar **e** che il dominio utilizzi i server DNS di OVHcloud.
 
 Per saperne di più, consulta la guida [Modificare una zona DNS](/pages/web_cloud/domains/dns_zone_edit). Se il dominio è utilizzato, configura i DNS solo dopo che il tuo sito Web o la tua applicazione è pronta.
 

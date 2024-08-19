@@ -382,4 +382,4 @@ mount /dev/md4 /home
 
 [Hot Swap - Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

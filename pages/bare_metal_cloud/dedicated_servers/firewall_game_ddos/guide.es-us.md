@@ -25,7 +25,7 @@ Nuestros servidores dedicados Bare Metal para juegos incluyen una protección DD
 ## Requerimientos
 
 - Un [servidor dedicado OVHcloud **Game**](https://www.ovhcloud.com/es/bare-metal/prices/#filterType=range_element&filterValue=game)
-- Acceso al área de cliente de [OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Acceso al área de cliente de [OVHcloud](/links/manager)
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los servidores de la [**Eco** línea de productos](https://eco.ovhcloud.com/es/about/).

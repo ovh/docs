@@ -28,7 +28,7 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP
 
 - Posiadanie [serwera dedykowanego OVHcloud](https://www.ovhcloud.com/pl/bare-metal/)
 - Posiadanie adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -208,7 +208,7 @@ Konfiguracja ta jest bardziej elastyczna. Nie musisz przypisywać żadnego Addit
 * Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
 * Posiadanie [serwera kompatybilnego z vRack](https://www.ovhcloud.com/pl/bare-metal/){.external}
 * Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
-* Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+* Dostęp do [Panelu client OVHcloud](/links/manager)
 
 #### Schemat konfiguracji docelowej
 

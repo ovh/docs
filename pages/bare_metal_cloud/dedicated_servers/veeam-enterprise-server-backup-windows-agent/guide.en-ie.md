@@ -133,4 +133,4 @@ On the Veeam Backup and Recovery server, the backup job will appear:
 
 [Veeam support site](https://www.veeam.com/knowledge-base.html)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

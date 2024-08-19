@@ -30,7 +30,7 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} en el área de cliente de OVHcloud.
 - Tener una [dirección Additional IP](https://www.ovhcloud.com/es/bare-metal/ip/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
@@ -59,7 +59,7 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 > Sólo se podrá trasladar un bloque de tamaño único (/32) de un servidor dedicado a un VPS.
 >
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en el menú `Bare Metal Cloud`{.action} y abra la sección `Network`{.action}. A continuación, haga clic en `IP`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en el menú `Bare Metal Cloud`{.action} y abra la sección `Network`{.action}. A continuación, haga clic en `IP`{.action}.
 
 Haga clic en la pestaña `Additional IP`{.action}.
 

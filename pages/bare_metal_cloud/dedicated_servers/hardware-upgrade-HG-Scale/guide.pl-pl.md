@@ -20,11 +20,11 @@ Nasze serwery High Grade i Scale oferują opcję skalowalną, która pozwala na 
 ## Wymagania początkowe
 
 - Serwer [High Grade](https://www.ovhcloud.com/pl/bare-metal/high-grade/) lub [SCALE](https://www.ovhcloud.com/pl/bare-metal/scale/)
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 
 W sekcji `Bare Metal Cloud`{.action} wybierz serwer spośród **Serwery dedykowane**.
 

@@ -289,4 +289,4 @@ Fri May 17 15:37:53 2019
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
