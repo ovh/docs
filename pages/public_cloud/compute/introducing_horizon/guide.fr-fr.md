@@ -110,4 +110,4 @@ En haut à droite de l'interface Horizon, un menu utilisateur vous permet notamm
 
 [Se familiariser avec l’interface Public Cloud](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)
  
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

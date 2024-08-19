@@ -47,4 +47,4 @@ Prenez connaissance de ces dernières et cochez la case d'acceptation des contra
 
 [Documentation Public Cloud](/products/public-cloud-compute)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -66,4 +66,4 @@ Cliquez sur le bouton `...`{.action} pour `Supprimer`{.action} un snapshot ou `C
 
 [Augmenter la taille d’un disque supplémentaire](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

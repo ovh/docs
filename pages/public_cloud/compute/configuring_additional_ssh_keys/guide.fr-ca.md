@@ -86,4 +86,4 @@ user2@server:~$
 
 [Changer sa clé SSH en cas de perte](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

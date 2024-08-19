@@ -55,4 +55,4 @@ Une fois votre mot de passe saisi et confirmé, votre projet entrera en phase de
 
 [Créer une première instance Public Cloud et s’y connecter](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

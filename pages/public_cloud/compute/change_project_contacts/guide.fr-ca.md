@@ -49,4 +49,4 @@ Pour une explication plus détaillée de cette procédure, nous vous invitons à
 
 [Déléguer des projets](/pages/public_cloud/compute/delegate_projects)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

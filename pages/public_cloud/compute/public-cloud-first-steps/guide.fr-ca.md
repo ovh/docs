@@ -377,4 +377,4 @@ Si un message de certificat apparaît, cliquez sur `Oui`{.action}. Entrez ensuit
 
 [Configurer des clés SSH supplémentaires](/pages/public_cloud/compute/configuring_additional_ssh_keys)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

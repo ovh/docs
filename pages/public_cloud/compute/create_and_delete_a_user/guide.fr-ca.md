@@ -62,4 +62,4 @@ Cliquez sur `...`{.action} et sélectionnez `Supprimer`{.action}.
 
 [Présentation de Horizon](/pages/public_cloud/compute/introducing_horizon)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
