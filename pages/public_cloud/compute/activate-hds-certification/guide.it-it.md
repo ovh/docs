@@ -47,4 +47,4 @@ Review the information and check the box for accepting the contracts. Finally, c
 
 [Public Cloud documentation](/products/public-cloud-compute)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

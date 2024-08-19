@@ -157,4 +157,4 @@ The resized volume now includes the additional disk space.
 
 [Creating and configuring an additional disk on an instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

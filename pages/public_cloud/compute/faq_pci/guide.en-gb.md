@@ -140,4 +140,4 @@ See the [linux-kvm limitations](https://www.linux-kvm.org/page/Nested_Guests#Lim
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

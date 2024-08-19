@@ -84,4 +84,4 @@ The instance will have the status `Re-installation` until the process is complet
 
 [Creating instance backups](/pages/public_cloud/compute/save_an_instance)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

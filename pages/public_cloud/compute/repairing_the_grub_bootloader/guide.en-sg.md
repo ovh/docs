@@ -46,4 +46,4 @@ You can now leave the rescue mode and boot normally (see [How to activate rescue
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

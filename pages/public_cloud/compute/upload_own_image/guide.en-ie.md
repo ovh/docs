@@ -95,4 +95,4 @@ Once your image is ready to upload, you can use the following steps to upload it
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

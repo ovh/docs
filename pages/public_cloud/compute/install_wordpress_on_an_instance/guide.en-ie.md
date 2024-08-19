@@ -258,4 +258,4 @@ Certbot will automatically renew the certificates. There are no further steps re
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

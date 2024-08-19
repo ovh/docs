@@ -48,4 +48,4 @@ When you click on the button, an email will be sent to your contact email addres
 
 [Getting started with Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

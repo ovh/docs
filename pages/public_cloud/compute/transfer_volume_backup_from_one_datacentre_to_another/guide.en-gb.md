@@ -192,4 +192,4 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 
 [Transferring an instance backup from one OpenStack region to another](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -166,4 +166,4 @@ Vérifiez que vos applications fonctionnent comme prévu. En cas de problème, n
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

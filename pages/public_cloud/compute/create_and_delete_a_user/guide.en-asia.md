@@ -63,4 +63,4 @@ Click on `...`{.action} and select `Delete`{.action}.
 
 [Introducing Horizon](/pages/public_cloud/compute/introducing_horizon)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

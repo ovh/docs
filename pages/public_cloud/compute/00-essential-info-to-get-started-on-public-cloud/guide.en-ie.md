@@ -150,4 +150,4 @@ One of the big advantages of using standard and open technologies, like OpenStac
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -180,4 +180,4 @@ Il est possible d'aller plus loin ([voir la documentation d'OpenStack](https://d
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

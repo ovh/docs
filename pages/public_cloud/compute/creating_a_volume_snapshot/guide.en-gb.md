@@ -62,4 +62,4 @@ Click on the button `...`{.action} to `Delete`{.action} a snapshot or to `Create
 
 [Increasing the size of an additional disk](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

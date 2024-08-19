@@ -75,4 +75,4 @@ set OS_PASSWORD="Your Horizon user password"
 
 To learn how to use OpenStack: [OpenStack documentation](https://docs.openstack.org/){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

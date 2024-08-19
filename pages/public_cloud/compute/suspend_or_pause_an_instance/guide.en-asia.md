@@ -234,4 +234,4 @@ To unpause the instance, type the following at the command line:
 
 [OpenStack documentation](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -47,4 +47,4 @@ For a more detailed explanation of this process, please consult our guide [Manag
 
 [Delegating projects](/pages/public_cloud/compute/delegate_projects)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

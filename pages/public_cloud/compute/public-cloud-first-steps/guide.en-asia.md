@@ -371,4 +371,4 @@ If a certificate message appears, click on `Yes`{.action}. Next, enter username 
 
 [Configuring additional SSH keys](/pages/public_cloud/compute/configuring_additional_ssh_keys)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -110,4 +110,4 @@ In the top right-hand corner of the Horizon interface, a user menu allows you to
 
 [Familiarise yourself with the Public Cloud interface](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)
  
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

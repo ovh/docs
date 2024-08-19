@@ -86,4 +86,4 @@ user2@server:~$
 
 [Replacing your lost SSH key pair](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -147,4 +147,4 @@ Now you can define your Terraform configuration files and providers and after ru
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
