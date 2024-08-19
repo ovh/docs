@@ -71,6 +71,16 @@ We provide all the metadata for the identification of VMware Hosted Private Clou
 
 #### Via the OVHcloud API <a name="security-options"></a>
 
+**Referencing all API calls for security packs**:
+
+| **Méthode** | **Chemin**                                                          | **Description**                           |
+|:-----------:|:--------------------------------------------------------------------|:------------------------------------------|
+|     GET     | /dedicatedCloud/{serviceName}/securityOptions                       | Get security options                      |
+|     GET     | /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix   | Get security options compatibility matrix |
+|     GET     | /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree      | Get security options dependencies tree    |
+|     GET     | /dedicatedCloud/{serviceName}/securityOptions/pendingOptions        | Get pending activation security options   |
+|    POST     | /dedicatedCloud/{serviceName}/securityOptions/resumePendingEnabling | Retry pending security option activation  |
+
 To check the options required to enable the `advancedSecurity` feature to work within your VMware vSphere managed on OVHcloud. Launch the following API call:
 
 > [!api]
@@ -160,14 +170,15 @@ Use the following API calls to list subscriptions to your Hosted Private Cloud a
 
 **Referencing of all Hosted Private Cloud VMware on OVHcloud API calls**:
 
-| **Method** |                   **Path**                      |                     **Description**                     |
-|:-----------:|:----------------------------------------------:|:-------------------------------------------------------:|
-|     GET     | /dedicatedCloud/{serviceName}/log/kind         |        Types of logs for your Hosted Private Cloud service |
-|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}  |          Properties of this object.                     |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription |        Log subscriptions for your Hosted Private Cloud service        |
-|     POST    | /dedicatedCloud/{serviceName}/log/subscription |    Create a log subscription for your dHosted Private Cloud service   |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId} |           Get this object properties.           |
-|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId} |  Delete a log subscription for your Hosted Private Cloud service |
+| **Method** | **Path**                                                        | **Description**                                                  |
+|:-----------:|:----------------------------------------------------------------|:-----------------------------------------------------------------|
+|     GET     | /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree  | Get security options dependencies tree                           |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind                          | Types of logs for your Hosted Private Cloud service              |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                   | Properties of this object                                        |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription                  | Log subscriptions for your Hosted Private Cloud service          |
+|     POST    | /dedicatedCloud/{serviceName}/log/subscription                  | Create a log subscription for your dHosted Private Cloud service |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId} | Get this object properties                                       |
+|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId} | Delete a log subscription for your Hosted Private Cloud service  |
 
 
 - Get the "subscriptionId":

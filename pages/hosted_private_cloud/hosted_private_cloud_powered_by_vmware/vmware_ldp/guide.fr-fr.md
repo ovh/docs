@@ -53,12 +53,22 @@ Nous fournissons toutes les métadonnées pour l'identification de Hosted Privat
 ### Étape 1 - Activation des options de sécurités
 
 > [!primary]
-> Si le `logForwarder` n'est pas activé au sein de vos options de sécurités (advancedSecurity option enum) pour votre environnement vSphere managé, contactez le support OVHcloud.
+> Si le `logForwarder` n'est pas activé au sein de votre pack d'options de sécurités "advancedSecurity" pour votre environnement vSphere managé, contactez le support OVHcloud.
 >
 
 #### Via l'API OVHcloud <a name="security-options"></a>
 
-Pour vérifier les options exigées pour permettre le fonctionnement de la fonctionnalité `advancedSecurity` au sein de votre VMware vSphere managé on OVHcloud. Lancer l'appel API suivant :
+**Référencement de tous les appels API les packs de sécurités** :
+
+| **Méthode** | **Chemin**                                                          | **Description**                                                             |
+|:-----------:|:--------------------------------------------------------------------|:----------------------------------------------------------------------------|
+|     GET     | /dedicatedCloud/{serviceName}/securityOptions                       | Lister/Obtenir les options de sécurité                                      |
+|     GET     | /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix   | Obtenir la matrice de compatibilité des options de sécurité                 |
+|     GET     | /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree      | Obtenir l'arborescence des dépendances des options de sécurité              |
+|     GET     | /dedicatedCloud/{serviceName}/securityOptions/pendingOptions        | Obtenir les options de sécurité  en attente  d'activation                   |
+|    POST     | /dedicatedCloud/{serviceName}/securityOptions/resumePendingEnabling | Réessayer l'activation de l'option de sécurité en attente                   |
+
+Pour vérifier les options exigées pour permettre le fonctionnement de la fonctionnalité `logForwarder` au sein de votre VMware vSphere managé on OVHcloud. Lancer l'appel API suivant :
 
 > [!api]
 >
@@ -148,14 +158,15 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 
 **Référencement de tous les appels API Hosted Private Cloud VMware on OVHcloud** :
 
-| **Méthode** |                   **Chemin**                   |                     **Description**                     |
-|:-----------:|:----------------------------------------------:|:-------------------------------------------------------:|
-|     GET     |     /dedicatedCloud/{serviceName}/log/kind     |        Types de logs pour votre service Hosted Private Cloud        |
-|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}  |          Obtenir les propriétés de cet objet.           |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription |       Inscrivez-vous pour votre service Hosted Private Cloud        |
-|    POST     | /dedicatedCloud/{serviceName}/log/subscription |   Créez un abonnement log pour votre service Hosted Private Cloud   |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription |          Obtenir les propriétés de cet objet.           |
-|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription | Supprimer un abonnement log pour votre service Hosted Private Cloud |
+| **Méthode** | **Chemin**                                                     | **Description**                                                      |
+|:-----------:|:---------------------------------------------------------------|:---------------------------------------------------------------------|
+|     GET     | /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree | Obtenir l'arborescence des dépendances des options de sécurité       |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind                         | Types de logs pour votre service Hosted Private Cloud                |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                  | Obtenir les propriétés de cet objet.                                 |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Inscrivez-vous pour votre service Hosted Private Cloud               |
+|    POST     | /dedicatedCloud/{serviceName}/log/subscription                 | Créez un abonnement log pour votre service Hosted Private Cloud      |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Obtenir les propriétés de cet objet.                                 |
+|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription                 | Supprimer un abonnement log pour votre service Hosted Private Cloud  |
 
 
 **Comment obtenir le `subscriptionId`** ?
