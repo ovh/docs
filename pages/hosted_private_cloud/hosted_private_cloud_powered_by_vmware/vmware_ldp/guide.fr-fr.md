@@ -10,7 +10,7 @@ updated: 2024-08-19
 
 ## Objectif
 
-**Découvrez comment activer le transfert des logs VMware Hosted Private Cloud vers un stream Logs Data Platform**.
+**Découvrez comment activer le transfert des logs VMware on OVHcloud vers un stream Logs Data Platform**.
 
 ## Prérequis
 
@@ -33,7 +33,11 @@ L'activation du transfert des logs vers un stream Logs Data Platform permet de c
 
 Pour plus d'informations concernant les caractéristiques techniques de Logs Data Platform (ports, protocoles, etc.), nous vous invitons à consulter le guide « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
-- **Les logs et labels - Les *kinds* disponibles** : Un **kind** est un « type » de logs que votre produit génère.
+**Les logs et labels**
+
+**Les kinds disponibles**
+
+Un kind est un « type » de logs que votre produit génère.
 
 Ils sont les types de logs que vous voulez transférer à votre stream Logs Data Platform. Voici des exemples qui peuvent être disponibles en fonction des composants de votre architecture Hosted Private Cloud VMware on OVHcloud :
 
@@ -41,14 +45,6 @@ Ils sont les types de logs que vous voulez transférer à votre stream Logs Data
 - **nsxtEdge** : tout est redirigé, pas de filtre.
 - **vcsa** : filtré par application.
 - **nsxtManager** : filtré par application.
-
-Sachez qu'il est tout à fait acceptable qu'un produit ne possède qu'une seule catégorie.
-
-**Remarques** :
-
-- Tous les logs VMware sont collectés et envoyés aux clusters LDP. Puis traités et marqués par Logs Data Platform.
-
-Nous fournissons toutes les métadonnées pour l'identification de Hosted Private Cloud VMware on OVHcloud.
 
 ### Étape 1 - Activation des options de sécurité
 
@@ -101,11 +97,12 @@ Exemple de retour si l'option est exigé pour fonctionner au sein de votre vSphe
 > Vous devez avoir préalablement créer un stream Logs Data Platform.
 >
 
-#### Via l'espace client OVHcloud**
 
 Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
 Récupérez le **streamId** et sauvegardez-le (copier-coller). Vous en aurez besoin pour activer votre souscription Hosted Private Cloud avec le stream Logs Data Platform en question.
+
+Nous allons voir dans l'étape suivante comment créer un stream
 
 ### Étape 3 - Activation de l'abonnement LDP Hosted Private Cloud
 

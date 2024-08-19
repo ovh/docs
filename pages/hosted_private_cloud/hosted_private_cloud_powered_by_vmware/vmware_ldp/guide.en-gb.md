@@ -11,7 +11,7 @@ updated: 2024-08-19
 
 ## Objective
 
-The purpose of this guide is to show you how to enable log transfer from your Hosted Private Cloud VMware on OVHcloud to Logs Data Platform (LDP), a platform that helps you store, archive, query and view your logs.
+**Find out how to enable VMware on OVHcloud log forwarding to a Logs Data Platform stream**.
 
 ## Requirements
 
@@ -35,9 +35,9 @@ By enabling logs forwarding to a Logs Data Platform stream, you can collect, ind
 
 For further information on the technical specifications of the Logs Data Platform (ports, protocols, etc.), please refer to our guide [Getting started with the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
-### Logs and labels
+**Logs and labels**
 
-#### Available kinds
+**Available kinds**
 
 A *Kind* is a "type" of log that your product generates.
 
@@ -47,15 +47,6 @@ These are the types of logs you want to transfer to your Logs Data Platform. Her
 - **nsxtEdge**: Everything is redirected, no filter.
 - **vcsa**: Filtered by application.
 - **nsxtManager**: Filtered by application.
-
-It is perfectly acceptable that a product has only one category.
-
-**Notes**:
-
-- All VMware logs are collected and sent to the Logs Data Platform clusters.
-- All VMware appliance logs are processed and marked at the Logs Data Platform.
-
-We provide all the metadata for the identification of VMware Hosted Private Cloud on OVHcloud.
 
 ### Step 1 - Enable security options
 
@@ -100,7 +91,7 @@ Return example if the option is required to work within your managed vSphere on 
 > Contact OVHcloud support if you do not have the logForwarder security option before creating a stream and subscribing to the Hosted Private Cloud LDP solution.
 >
 
-### Step 2 - Enable Hosted Private Cloud logs transfer
+### Step 2 - Create Logs Data Platform stream
 
 > [!primary]
 > 
@@ -152,7 +143,7 @@ Example:
 
 The GET request allows you to list your subscriptions.
 
-### Step 4 - Manage your Data Logs Platform
+### Step 4 - Manage your Data Logs Platform streams
 
 #### Via the OVHcloud Control Panel
 
