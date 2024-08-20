@@ -36,7 +36,7 @@ Dans le cas où vous n'avez pas renouvelé votre nom de domaine avant la date d'
 En effet, une fois le nom de domaine supprimé, le renouvellement n'est plus possible et vous devez alors restaurer votre nom de domaine. Pour que la restauration puisse être effective, des frais de restauration seront appliqués. 
 
 Enfin, si vous ne souhaitez pas conserver votre nom de domaine, il sera automatiquement disponible sur le marché et pourra de nouveau être enregistré par quelqu'un d'autre.
-Si le nom de domaine comporte votre nom de marque, soyez vigilent. Une personne malveillante pourrait utiliser votre ancien nom de domaine pour du phishing ou des arnaques en se faisant passer pour votre entreprise.
+Si le nom de domaine comporte votre nom de marque, soyez vigilant. Une personne malveillante pourrait utiliser votre ancien nom de domaine pour du phishing ou des arnaques en se faisant passer pour votre entreprise.
 
 Si vous souhaitez conserver votre nom de domaine, nous vous conseillons l'enregistrement et le renouvellement sur plusieurs années, ou l'activation du renouvellement automatique. 
 Si le renouvellement automatique est activé, votre moyen de paiement doit être valide pour que le prélèvement puisse être effectué.
