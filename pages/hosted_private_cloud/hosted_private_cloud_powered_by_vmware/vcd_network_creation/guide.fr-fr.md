@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud"
 excerpt: "Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud"
-updated: 2024-08-15
+updated: 2024-08-20
 ---
 
 <style>
@@ -20,12 +20,12 @@ details[open]>summary::before {
 
 > [!primary]
 > 
-> VCD on OVHcloud est actuellement en phase Alpha. Ce guide peut donc être incomplet et mise à jour.
+> VCD on OVHcloud est actuellement en phase Alpha. Ce guide peut donc être incomplet et sera mis à jour.
 >
 
 ## Objectif
 
-**Créer, configurer et gérer efficacement votre réseau (espaces IP, les passerelles Edge et fournisseurs et réseau privé) depuis le control panel VCD on OVHcloud.**
+**Ce guide vous montre comment créer, configurer et gérer efficacement votre réseau (espaces IP, les passerelles Edge et fournisseurs et réseau privé) depuis l'interface VCD on OVHcloud.**
 
 ## Prérequis
 
@@ -64,7 +64,7 @@ Avant de créer un réseau, le concept principal à comprendre avec VMware Cloud
 
 Pour vous connecter à votre environnement VCD, suivez le guide : [Comment se connecter à VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
-1\. Cliquez sur : `Réseaux > Espaces IP > Nouveau`{.action}.
+1\. Cliquez sur : `Réseaux`{.action} > `Espaces IP`{.action} > `Nouveau`{.action}.
 
 ![VCD Networking IP Spaces](images/ESPACE_IP.png){.thumbnail}
 
@@ -139,7 +139,7 @@ Cette étape est optionnelle, mais recommandée pour la grande majorité des cas
 
 Nous allons à présent créer un groupe de centre de donnée pour optimiser la gestion de notre réseau grâce à cette nouvelle fonctionnalité VCD.
 
-Allez donc dans la section Mise en réseau en cliquant sur : `Mise en réseaux > Groupe de centre de données`{.action}.
+Allez donc dans la section Mise en réseau en cliquant sur : `Mise en réseaux`{.action} > `Groupe de centre de données`{.action}.
 
 Puis, cliquez sur `NOUVEAU`{.action}.
 
@@ -173,7 +173,7 @@ Cette étape est nécessaire sinon vous ne pourrez pas finir de créer votre ré
 
 Nous allons maintenant créer une **Passerelle Edge** pour que notre espace IP puisse être accédé depuis le réseau privé que nous allons créer dans la troisième partie de cette étape.
 
-Pour accéder à la section Passerelles Edge (Edge Gateway), cliquez sur : `Mise en réseaux > Passerelles Edge`{.action}.
+Pour accéder à la section Passerelles Edge (Edge Gateway), cliquez sur : `Mise en réseaux`{.action} > `Passerelles Edge`{.action}.
 
 Pour créer une nouvelle Passerelle Edge, cliquez sur `NOUVEAU`{.action}.
 
@@ -241,7 +241,7 @@ Cliquez enfin sur `TERMINER`{.action}.
 
 Nous allons à présent créer un nouveau réseau et joindre nos réglages préconfigurés.
 
-Rendez-vous dans la section Mise en réseau, en cliquant sur `Mise en réseaux > Réseaux`{.action}.
+Rendez-vous dans la section Mise en réseau, en cliquant sur `Mise en réseaux`{.action} > `Réseaux`{.action}.
 
 Puis, cliquez sur `NOUVEAU`{.action}.
 
@@ -398,9 +398,9 @@ Vérifiez les réglages définis puis lancee la création du réseau en cliquant
 
 Votre réseau est maintenant entièrement créé et prêt à l'emploi.
 
-**Glossaire**
+**Glossaire :**
 
-- `CIDR` : CIDR est l’abréviation de Classless Inter-Domain Routing (routage inter domaines sans classe).
+- `CIDR` : CIDR est l’abréviation de Classless Inter-Domain Routing (routage inter domaines sans classes).
 
 ///
 
@@ -414,6 +414,4 @@ Si vous rencontrez des difficultés avec le réseau au sein de VCD on OVHcloud, 
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou [cliquez ici](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le [Discord]<https://discord.gg/ovhcloud>.
-
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur [Discord](https://discord.gg/ovhcloud).
