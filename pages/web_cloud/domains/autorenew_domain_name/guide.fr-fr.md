@@ -39,7 +39,7 @@ Enfin, si vous ne souhaitez pas conserver votre nom de domaine, il sera automati
 Si le nom de domaine comporte votre nom de marque, soyez vigilant. Une personne malveillante pourrait utiliser votre ancien nom de domaine pour du phishing ou des arnaques en se faisant passer pour votre entreprise.
 
 Si vous souhaitez conserver votre nom de domaine, nous vous conseillons l'enregistrement et le renouvellement sur plusieurs années, ou l'activation du renouvellement automatique. 
-Si le renouvellement automatique est activé, votre moyen de paiement doit être valide pour que le prélèvement puisse être effectué.
+Si le renouvellement automatique est activé, votre moyen de paiement doit être valide afin que le prélèvement automatique puisse être effectué.
 
 ### Les différents types de renouvellement
 
