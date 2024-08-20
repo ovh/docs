@@ -12,7 +12,7 @@ You have just created your Public Cloud project, and you would like to find out 
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
+- access to the [OVHcloud Control Panel](/links/manager){.external}.
 - You need to have created your [first Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project).
 
 ## Instructions
@@ -86,5 +86,5 @@ There are several management tools available in your Public Cloud project, they 
 
 [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
-Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+Join our [community of users](/links/community).

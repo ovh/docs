@@ -157,4 +157,4 @@ Il rester à installer le pilote nécessaire, qui apparaîtra ensuite ici :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

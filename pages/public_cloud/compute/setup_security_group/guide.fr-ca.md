@@ -109,4 +109,4 @@ Pour supprimer un groupe de sécurité, sélectionnez-le en cochant la case corr
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

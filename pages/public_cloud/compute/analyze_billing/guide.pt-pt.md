@@ -22,7 +22,7 @@ Este sistema é semelhante ao de certas operadoras que faturam ao final do mês 
 
 * um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) criado na sua conta OVHcloud
 * uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}
-* ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+* ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Princípio geral
 

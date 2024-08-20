@@ -16,11 +16,11 @@ Utworzenie projekt jest pierwszym krokiem we wdrażaniu [instancji Public Cloud]
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## Wskazówki
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), i kliknij menu `Public Cloud`{.action}.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](/links/manager), i kliknij menu `Public Cloud`{.action}.
 
 Zapoznaj się z nimi i zaakceptuj warunki umów, zaznaczając odpowiednie pole, następnie kliknij `Poznaj naszą ofertę Public Cloud`{.action}.
 
@@ -56,6 +56,6 @@ Od tej pory będziesz miał dostęp do całego ekosystemu Public Cloud OVHcloud.
 - [Usuwanie projektu Public Cloud](/pages/public_cloud/compute/delete_a_project)
 - [Rozliczanie należności za usługę Public Cloud](/pages/public_cloud/compute/analyze_billing)
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

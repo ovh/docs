@@ -13,7 +13,7 @@ When creating an instance, only one SSH key for the initial connection can be co
 ## Requirements
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access (sudo) to your instance via SSH
 
 ## Instructions
@@ -86,4 +86,4 @@ user2@server:~$
 
 [Replacing your lost SSH key pair](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

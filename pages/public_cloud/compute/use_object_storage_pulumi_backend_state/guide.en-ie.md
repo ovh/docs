@@ -128,4 +128,4 @@ Now you can code your Pulumi program and after running the `pulumi up` command, 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

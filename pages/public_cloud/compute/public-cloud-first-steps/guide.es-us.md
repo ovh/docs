@@ -17,7 +17,7 @@ Las instancias del servicio Public Cloud de OVHcloud requieren un enfoque difere
 ## Requisitos
 
 - Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener acceso al [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -148,7 +148,7 @@ Una vez creadas las claves SSH por cualquiera de los métodos anteriormente desc
 Guardar sus claves SSH le permitirá crear sus instancias más rápidamente. Para modificar los pares de claves y añadir usuarios posteriormente, consulte nuestra guía [Configurar llaves SSH adicionales](/pages/public_cloud/compute/configuring_additional_ssh_keys).
 >
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Haga clic en `SSH Keys`{.action}, en la sección «Project Management» del menú de la izquierda.
+Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Haga clic en `SSH Keys`{.action}, en la sección «Project Management» del menú de la izquierda.
 
 Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá una nueva ventana en la que deberá introducir el nombre de la clave y pegarla en el campo correspondiente. Puede copiar la clave desde el archivo de la clave pública o la ventana de PuTTYgen, tal como explicamos en el [paso 1](./#1-crear-claves-ssh). Haga clic en `Añadir`{.action}.
 
@@ -163,7 +163,7 @@ Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá
 Es preferible crear una red privada antes de crear una instancia. Para más información sobre la creación de una red privada, consulte la guía [Configuración del vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 >
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Desde la página de inicio, haga clic en el botón `Crear una instancia`{.action}. También puede crear su instancia desde el menú `Instancias`{.action}, en la sección «Compute» del menú de la izquierda.
+Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Desde la página de inicio, haga clic en el botón `Crear una instancia`{.action}. También puede crear su instancia desde el menú `Instancias`{.action}, en la sección «Compute» del menú de la izquierda.
 
 ![instance select](images/instance-creation-2024.png){.thumbnail}
 
@@ -252,7 +252,7 @@ Una vez que haya confirmado que todos los datos introducidos son correctos, haga
 
 ### 4. Conectarse a una instancia <a name="connect-to-instance"></a>
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Haga clic en `Instances`{.action}, en la sección «Compute» del menú de la izquierda. Su instancia estará activada cuando se muestre el estado «Activa». Para comprobarlo, haga clic en el botón «Refrescar» que aparece en la parte superior, junto al buscador.
+Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Haga clic en `Instances`{.action}, en la sección «Compute» del menú de la izquierda. Su instancia estará activada cuando se muestre el estado «Activa». Para comprobarlo, haga clic en el botón «Refrescar» que aparece en la parte superior, junto al buscador.
 
 ![instances page](images/instance-connect-01.png){.thumbnail}
 
@@ -270,7 +270,7 @@ Si ha creado una instancia sin llave SSH, a través de la API OVHcloud o la inte
 
 #### Conexión a una instancia Linux en Linux o Mac
 
-Puede acceder a su instancia en línea de comandos (Terminal) por SSH. Para ello, sustituya el «username» en los siguientes ejemplos por su nombre de usuario. También puede copiar el comando de acceso completo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Para ello, acceda al «Panel de Control» de la instancia y copie los datos de conexión en su terminal.
+Puede acceder a su instancia en línea de comandos (Terminal) por SSH. Para ello, sustituya el «username» en los siguientes ejemplos por su nombre de usuario. También puede copiar el comando de acceso completo desde el [área de cliente de OVHcloud](/links/manager). Para ello, acceda al «Panel de Control» de la instancia y copie los datos de conexión en su terminal.
 
 ![instances page](images/instance-connect-02.png){.thumbnail}
 
@@ -288,7 +288,7 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
-Ya puede utilizar estas claves para conectarse a través de la `consola VNC`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). A continuación, todavía como usuario «root», establezca una contraseña. Una vez hecho esto, vuelva al usuario anterior.
+Ya puede utilizar estas claves para conectarse a través de la `consola VNC`{.action} de su [área de cliente de OVHcloud](/links/manager). A continuación, todavía como usuario «root», establezca una contraseña. Una vez hecho esto, vuelva al usuario anterior.
 
 ```bash
 $ sudo su -
@@ -308,7 +308,7 @@ Para ello, abra PuTTY y despliegue «SSH» en el menú de la izquierda. A contin
 
 ![using putty](images/puttyconnect-01.png){.thumbnail}
 
-Haga clic en el botón `Browse`{.action} para seleccionar la carpeta en la que almacenó su archivo de clave privada (.ppk) y abrirlo. A continuación, acceda a la sección «Session» en el menú de la izquierda y seleccione sus claves de acceso (usuario@dirección_IPv4). Sustituya «ubuntu», en el ejemplo, por el usuario por defecto que aparezca en el panel de control de su instancia, en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Para abrir este panel, haga clic en `Instances`{.action}, en la sección «Compute» del menú de la izquierda, y vuelva a hacer clic en el nombre de su instancia.
+Haga clic en el botón `Browse`{.action} para seleccionar la carpeta en la que almacenó su archivo de clave privada (.ppk) y abrirlo. A continuación, acceda a la sección «Session» en el menú de la izquierda y seleccione sus claves de acceso (usuario@dirección_IPv4). Sustituya «ubuntu», en el ejemplo, por el usuario por defecto que aparezca en el panel de control de su instancia, en el [área de cliente de OVHcloud](/links/manager). Para abrir este panel, haga clic en `Instances`{.action}, en la sección «Compute» del menú de la izquierda, y vuelva a hacer clic en el nombre de su instancia.
 
 Le recomendamos que guarde esta sesión para poder utilizarla en futuras conexiones. Introduzca una descripción en el campo «Saved Sessions» y haga clic en `Save`{.action} para guardarla.
 
@@ -352,7 +352,7 @@ Si tiene problemas para conectarse, compruebe que el dispositivo permite las con
 
 ##### **En Linux**
 
-Es posible acceder a las instancias de Public Cloud desde la consola VNC del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Desde su dispositivo local, deberá conectarse mediante una aplicación cliente compatible con el protocolo RDP.
+Es posible acceder a las instancias de Public Cloud desde la consola VNC del [área de cliente de OVHcloud](/links/manager). Desde su dispositivo local, deberá conectarse mediante una aplicación cliente compatible con el protocolo RDP.
 
 Por ejemplo, Remmina Remote Desktop Client es una aplicación compatible que debe incluirse en cualquier instalación Ubuntu Desktop. Si no encuentra la aplicación Remmina en su entorno, puede descargarla desde el [sitio web oficial](https://remmina.org/).
 

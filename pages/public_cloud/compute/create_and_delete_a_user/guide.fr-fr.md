@@ -15,7 +15,7 @@ L’accès à Horizon et aux API OpenStack s’effectue via des combinaisons ide
 ## Prérequis
 
 - Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
@@ -47,7 +47,7 @@ Une fois l'utilisateur OpenStack créé, vous pourrez utiliser ses identifiants 
 
 ### Suppression de l'utilisateur OpenStack
 
-La suppression de l'utilisateur OpenStack se fait depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Users & Roles`{.action} dans le menu de gauche sous « Project management ». 
+La suppression de l'utilisateur OpenStack se fait depuis [l'espace client OVHcloud](/links/manager). Cliquez sur `Users & Roles`{.action} dans le menu de gauche sous « Project management ». 
 
 ![public-cloud](images/delete.png){.thumbnail}
 
@@ -62,4 +62,4 @@ Cliquez sur `...`{.action} et sélectionnez `Supprimer`{.action}.
 
 [Présentation de Horizon](/pages/public_cloud/compute/introducing_horizon)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
