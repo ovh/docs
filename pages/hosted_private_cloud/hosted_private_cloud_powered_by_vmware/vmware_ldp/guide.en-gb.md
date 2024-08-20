@@ -1,7 +1,7 @@
 ---
-title: "Logs Data Platform - VMware log forwarding"
-excerpt: "Find out how to enable VMware on OVHcloud logs forwarding to a Logs Data Platform stream" 
-updated: 2024-08-19
+title: "Logs Data Platform - VMware logs forwarding"
+excerpt: "Find out how to enable managed VMware on OVHcloud logs forwarding to a Logs Data Platform stream" 
+updated: 2024-08-20
 ---
 
 > [!primary]
@@ -19,7 +19,7 @@ updated: 2024-08-19
 - One or more Hosted Private Cloud resources.
 - An active Logs Data Platform stream with the same account and security level as your Hosted Private Cloud VMware on OVHcloud.
 - You need to have followed the guide [Introduction to the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
-- You must have advanced security pack options "logForwarder" enabled. To check launch [this](#security-options) API call.
+- You must have "logForwarder" enabled. To check launch [this](#security-options) API call.
 
 ## Instructions
 
@@ -43,15 +43,17 @@ A *Kind* is a "type" of log that your product generates.
 
 These are the types of logs you want to transfer to your Logs Data Platform. Here are examples that may be available depending on the components of your VMware on OVHcloud Hosted Private Cloud architecture:
 
-- **esxi**: Filtered by application.
-- **nsxtEdge**: Everything is redirected, no filter.
-- **vcsa**: Filtered by application.
-- **nsxtManager**: Filtered by application.
+- **esxi**: only some applications are filtered
+- **nsxtEdge**: everything is forwarded, no filter
+- **vcsa**: only some applications are forwarded
+- **nsxtManager**: only some applications are filtered
 
 ### Step 1 - Enable security options
 
-> [!primary]
-> If the `logForwarder` is not enabled within your security options (advancedSecurity option enum) for your managed vSphere environment, contact OVHcloud support.
+> [!alert]
+> If the "logForwarder" is not enabled within your security options pack, contact OVHcloud support.
+>
+> If you want the `logForwarder` feature without advanced security options, contact OVHcloud support.
 >
 
 #### Via the OVHcloud API <a name="security-options"></a>
@@ -60,35 +62,40 @@ These are the types of logs you want to transfer to your Logs Data Platform. Her
 
 | **Méthode** | **Chemin**                                                          | **Description**                           |
 |:-----------:|:--------------------------------------------------------------------|:------------------------------------------|
-|     GET     | /dedicatedCloud/{serviceName}/securityOptions                       | Get security options                      |
 |     GET     | /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix   | Get security options compatibility matrix |
 |     GET     | /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree      | Get security options dependencies tree    |
 |     GET     | /dedicatedCloud/{serviceName}/securityOptions/pendingOptions        | Get pending activation security options   |
 |    POST     | /dedicatedCloud/{serviceName}/securityOptions/resumePendingEnabling | Retry pending security option activation  |
 
-To check the options required to enable the `advancedSecurity` feature to work within your VMware vSphere managed on OVHcloud. Launch the following API call:
+To check the options required to enable the `logForwarder` feature to work within your managed VMware vSphere. Launch the following API call:
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree
->
->
-> **Settings**:
->
-> - `serviceName`: Your Dedicated Cloud in the form, (`pcc-XXX-XXX-XXX-XXX`).
-> - `option`: Target feature security option required (`advancedSecurity`).
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
 >
 
-Return example if the option is required to work within your managed vSphere on OVHcloud is not activated:
-
-```Shell
-{
-  "message": "[(dependenciesTree return).depends[8]] Given data (logForwarder) does not belong to the SecurityOptionEnum enumeration"
-}
-```
+Leave the 2 booleans "showIncompatible", "showInternal" empty.
 
 > [!warning]
-> Contact OVHcloud support if you do not have the logForwarder security option before creating a stream and subscribing to the Hosted Private Cloud LDP solution.
+>
+> Here is an example of a return, if the option required to work is not enabled:
+>
+> ```Shell
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
+>
+> [
+>  {
+>   description: "Deploy a syslog forwarder to gather all VMware logs of a Private Cloud"
+>   state: "disabled"
+>   name: "logForwarder"
+>   compatible: true
+>   enabled: false
+>   reason: null
+>  }
+> ]
+> ```
+> 
+> Please contact OVHcloud support if you do not have the `logForwarder` enabled before you create a stream and subscribe to the Hosted Private Cloud LDP solution.
 >
 
 ### Step 2 - Create Logs Data Platform stream
@@ -160,7 +167,6 @@ Use the following API calls to list subscriptions to your Hosted Private Cloud a
 
 | **Method** | **Path**                                                        | **Description**                                                  |
 |:-----------:|:----------------------------------------------------------------|:-----------------------------------------------------------------|
-|     GET     | /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree  | Get security options dependencies tree                           |
 |     GET     | /dedicatedCloud/{serviceName}/log/kind                          | Types of logs for your Hosted Private Cloud service              |
 |     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                   | Properties of this object                                        |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription                  | Log subscriptions for your Hosted Private Cloud service          |

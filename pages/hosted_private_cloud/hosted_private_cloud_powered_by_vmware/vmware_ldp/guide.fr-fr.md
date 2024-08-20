@@ -1,7 +1,7 @@
 ---
 title: "Logs Data Platform - Transfert de logs VMware"
-excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) VMware on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-08-19
+excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) VMware managé on OVHcloud vers un stream Logs Data Platform"
+updated: 2024-08-20
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ updated: 2024-08-19
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud.
 - Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud (pour verifier lancer l'appel API [suivant](#security-options))
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
-- Vous devez avoir les options de sécurités avancées du pack « logForwarder ». Pour vérifier, lancez l'appel API [suivant](#security-options).
+- Vous devez avoir le « logForwarder » activé. Pour vérifier, lancez l'appel API [suivant](#security-options).
 
 ## En pratique
 
@@ -42,15 +42,17 @@ Un kind est un « type » de logs que votre produit génère.
 
 Ils sont les types de logs que vous voulez transférer à votre stream Logs Data Platform. Voici des exemples qui peuvent être disponibles en fonction des composants de votre architecture Hosted Private Cloud VMware on OVHcloud :
 
-- **esxi** : filtré par application.
-- **nsxtEdge** : tout est redirigé, pas de filtre.
-- **vcsa** : filtré par application.
-- **nsxtManager** : filtré par application.
+- **esxi** : seulement certaines applications sont redirigées
+- **nsxtEdge** : tout est redirigé, pas de filtre
+- **vcsa** : filtré par application
+- **nsxtManager** : filtré par application
 
 ### Étape 1 - Activation des options de sécurité
 
 > [!primary]
-> Si le `logForwarder` n'est pas activé au sein de votre pack d'options de sécurités "advancedSecurity" pour votre environnement vSphere managé, contactez le support OVHcloud.
+> Si le `logForwarder` n'est pas activé au sein de votre pack d'options de sécurités, contactez le support OVHcloud.
+> 
+> Si vous voulez la fonctionnalité `logForwarder` sans les options de pack sécurités avancées, contactez le support OVHcloud. 
 >
 
 #### Via l'API OVHcloud <a name="security-options"></a>
@@ -59,7 +61,6 @@ Ils sont les types de logs que vous voulez transférer à votre stream Logs Data
 
 | **Méthode** | **Chemin**                                                          | **Description**                                                             |
 |:-----------:|:--------------------------------------------------------------------|:----------------------------------------------------------------------------|
-|     GET     | /dedicatedCloud/{serviceName}/securityOptions                       | Lister/Obtenir les options de sécurité                                      |
 |     GET     | /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix   | Obtenir la matrice de compatibilité des options de sécurité                 |
 |     GET     | /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree      | Obtenir l'arborescence des dépendances des options de sécurité              |
 |     GET     | /dedicatedCloud/{serviceName}/securityOptions/pendingOptions        | Obtenir les options de sécurité  en attente  d'activation                   |
@@ -69,25 +70,32 @@ Pour vérifier les options exigées pour permettre le fonctionnement de la fonct
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
 >
 >
-> **Paramètres** :
->
-> - `serviceName` : Votre PCC sous la forme, (`pcc-XXX-XXX-XXX-XXX`).
-> - `option` : Option de sécurité de la feature cible nécessaire (`advancedSecurity`).
-> 
 
-Exemple de retour si l'option est exigé pour fonctionner au sein de votre vSphere managé on OVHcloud n'est pas activé :
-
-```Shell
-{
-  "message": "[(dependenciesTree return).depends[8]] Given data (logForwarder) does not belong to the SecurityOptionEnum enumeration"
-}
-```
+Laissez les 2 booleans "showIncompatible", "showInternal" vide.
 
 > [!warning]
-> Contacter donc le support OVHcloud si vous ne disposez pas de l'option de sécurité logForwarder avant de créer un stream et souscrire à l'offre LDP Hosted Private Cloud.
+>
+> Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activé :
+>
+> ```Shell
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
+>
+> [
+>  {
+>   description: "Deploy a syslog forwarder to gather all VMware logs of a Private Cloud"
+>   state: "disabled"
+>   name: "logForwarder"
+>   compatible: true
+>   enabled: false
+>   reason: null
+>  }
+> ]
+> ```
+> 
+> Contactez bien le support OVHcloud si vous ne disposez pas du `logForwarder` activé avant de créer un stream et souscrire à l'offre LDP Hosted Private Cloud.
 > 
 
 ### Étape 2 - Création d'un stream Logs Data Platform
@@ -157,7 +165,6 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 
 | **Méthode** | **Chemin**                                                     | **Description**                                                      |
 |:-----------:|:---------------------------------------------------------------|:---------------------------------------------------------------------|
-|     GET     | /dedicatedCloud/{serviceName}/securityOptions/dependenciesTree | Obtenir l'arborescence des dépendances des options de sécurité       |
 |     GET     | /dedicatedCloud/{serviceName}/log/kind                         | Types de logs pour votre service Hosted Private Cloud                |
 |     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                  | Obtenir les propriétés de cet objet.                                 |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Inscrivez-vous pour votre service Hosted Private Cloud               |
