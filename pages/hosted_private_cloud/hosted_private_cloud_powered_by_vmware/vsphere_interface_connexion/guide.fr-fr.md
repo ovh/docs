@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l’interface web vSphere"
 excerpt: "Découvrez les différentes façons de se connecter à votre interface web vSphere managé depuis le control panel Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-08-12
+updated: 2024-08-20
 ---
 
 ## Objectif
@@ -11,7 +11,7 @@ updated: 2024-08-12
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](/links/hosted-private-cloud/vmware), pour recevoir des identifiants de connexion.
-- Avoir ajouté des adresses IP dans la partie `Sécurité`{.action} de votre [espace client OVHcloud](/links/manager). Pour plus d'informations, consultez notre guide « [Autoriser des IP à se connecter au vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter) ».
+- Avoir ajouté des adresses IP dans la section `Sécurité` de votre [espace client OVHcloud](/links/manager). Pour plus d'informations, consultez notre guide « [Autoriser des IP à se connecter au vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter) ».
 
 Pour utiliser IAM, vous devez activer la fonctionnalité afin de déléguer la gestion des droits avec un rôle, veuillez lire les guides :
 
@@ -21,9 +21,11 @@ Pour utiliser IAM, vous devez activer la fonctionnalité afin de déléguer la g
 
 ## En pratique
 
-### Gestion des identifiants
+Pour se connecter à la console web vSphere managé, vous avez besoin d'identifiants de connexion OVHcloud, ainsi que d'un utilisateur vSphere (IAM ou local).
 
-### Via l'espace client OVHcloud
+### Étape 1 - Gestion des utilisateurs
+
+#### Via l'espace client OVHcloud
 
 Vous pouvez gérer vos identifiants de connexion depuis l'espace client OVHcloud de votre produit VMware managé on OVHcloud.
 
@@ -41,7 +43,51 @@ En cliquant sur les `...`{.action} à votre droite (espace client VMware) de la 
 
 Ce document de VMware répertorie les différents ports que vous devez ouvrir sur votre pare-feu pour, par exemple, accéder à la console : [Accès console](https://kb.vmware.com/kb/1012382){.external-link}
 
-### Utilisation du web client HTML5
+#### Via l'API OVHcloud
+
+La gestion des utilisateurs est possible depuis l'API OVHcloud au sein de Hosted Private Cloud. Voici quelques exemples d'appels API :
+
+Créer un utilisateur :
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud  POST /dedicatedCloud/{serviceName}/user
+>
+> **Paramètres** :
+> 
+> - `serviceName` : votre service sous la forme pcc-XX-XX-XX-XX.
+> - `name` : le nom de votre utilisateur sous la forme ci-dessous.
+> 
+> Exemple :
+> ```shell
+> {
+> "name": "User name"
+> }
+> ```
+
+Changer le mot de passe de votre utilisateur :
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud  POST /dedicatedCloud/{serviceName}/user/{userId}/changePassword
+>
+> **Paramètres** :
+>
+> - `serviceName` : votre service sous la forme pcc-XX-XX-XX-XX.
+> - `password` : le nom de votre utilisateur sous la forme ci-dessous.
+>
+> Exemple :
+> ```shell
+> {
+> "password": "XXX"
+> }
+> ```
+
+### Étape 2 - Connexion à l'interface web vSphere
+
+#### Via l'espace client OVHcloud
+
+**Utilisation du web client HTML5**
 
 Le web client HTML5 est disponible sur l’interface web de votre Hosted Private Cloud à l’adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Hosted Private Cloud).
 
