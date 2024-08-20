@@ -1,7 +1,7 @@
 ---
 title: 'Proteger a sua conta OVHcloud com a dupla autenticação'
 excerpt: 'Descubra como melhorar a segurança da sua conta OVHcloud ao ativar a dupla autenticação (2FA)'
-updated: 2024-08-09
+updated: 2024-08-21
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ Este manual permitir-lhe-á:
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor de um telemóvel (para o método por SMS), um smartphone ou um tablet (para o método via aplicação móvel) ou uma chave de segurança Universal Second Factor (U2F).
 - Ter tomado conhecimento das [recomendações sobre a gestão da sua palavra-passe de acesso à sua conta](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -76,7 +76,7 @@ Existem quatro métodos diferentes (clique nos separadores abaixo para ver a apr
 
 ### Etapa 1 - Ativar o seu primeiro método de autenticação dupla <a name="enabling-2fa"></a>
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no seu nome no canto superior direito (1) e nas iniciais (2). Em seguida, clique em `Segurança`{.action} (3) e, por fim, em `Ativar a dupla autenticação`{.action} (4).
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no seu nome no canto superior direito (1) e nas iniciais (2). Em seguida, clique em `Segurança`{.action} (3) e, por fim, em `Ativar a dupla autenticação`{.action} (4).
 
 ![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
@@ -142,7 +142,7 @@ Pode regenerar ou eliminar os códigos de segurança a partir da Área de Client
 
 ### Etapa 3 - Aceder à Área de Cliente OVHcloud com a dupla autenticação <a name="login-2fa"></a>
 
-Aceda à [página de autenticação da Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e introduza o seu identificador (ou o seu endereço de e-mail principal) e a palavra-passe.
+Aceda à [página de autenticação da Área de Cliente OVHcloud](/links/manager){.external} e introduza o seu identificador (ou o seu endereço de e-mail principal) e a palavra-passe.
 
 O ecrã de acesso mostra o último método de autenticação dupla utilizado ou introduzido. Se desejar utilizar outro método, clique no botão `Experimentar outro método`{.action}.
 
@@ -183,7 +183,7 @@ Se o seu periférico (telemóvel/smartphone/chave de segurança) estiver perdido
 > - códigos de segurança válidos.
 >
 
-Para eliminar um periférico, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no seu nome no canto superior direito e depois nas iniciais.
+Para eliminar um periférico, aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no seu nome no canto superior direito e depois nas iniciais.
 
 A seguir, clique em `Segurança`{.action}, depois nos `...`{.action} à direita do seu periférico a eliminar e, por fim, em `Eliminar`{.action}.
 
@@ -229,7 +229,7 @@ A interface seguinte permite-lhe descarregar e enviar às nossas equipas os docu
 
 Num prazo de 72 horas, receberá a confirmação da desativação da dupla autenticação por e-mail.
 
-/// detalhes | Lista dos documentos comprovativos
+/// details | Lista dos documentos comprovativos
 
 |Tipo de conta OVHcloud|Documentos a apresentar|
 |---|---|
@@ -244,9 +244,11 @@ Quando os seus documentos estiverem reunidos, contacte o suporte da OVHcloud em 
 >
 > Os documentos comprovativos devem ser-nos enviados a partir de um endereço de e-mail registado na sua conta OVHcloud.
 
+Após verificação dos seus documentos, um consultor poderá desativar manualmente a dupla autenticação na sua conta OVHcloud.
+
 > [!success]
 >
-> Após verificação dos seus documentos, um consultor poderá desativar manualmente a dupla autenticação na sua conta OVHcloud.
+> Para efeitos de segurança, e uma vez restabelecido o acesso à sua conta, recomendamos que reative a dupla autenticação logo que possível.
 
 ## Quer saber mais?
 

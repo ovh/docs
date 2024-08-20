@@ -1,7 +1,7 @@
 ---
 title: 'Securing your OVHcloud account with two-factor authentication'
 excerpt: 'Find out how to improve security for your OVHcloud account by enabling two-factor authentication (2FA)'
-updated: 2024-08-09
+updated: 2024-08-21
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ This guide will help you:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A phone (for the SMS method), a smartphone or tablet (for the mobile application method), or a Universal Second Factor (U2F) security key
 - An understanding of the [password management recommendations for accessing your account](/pages/account_and_service_management/account_information/manage-ovh-password)
 
@@ -72,7 +72,7 @@ We offer four different methods (click on the tabs below to view their explanati
 
 ### Step 1 - Enable your first two-factor authentication method <a name="enabling-2fa"></a>
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click your name in the top right-hand corner (1), then click your initials (2). Then click `Security`{.action} (3) and finally `Enable two-factor authentication`{.action} (4).
+Log in to the [OVHcloud Control Panel](/links/manager){.external}, click your name in the top right-hand corner (1), then click your initials (2). Then click `Security`{.action} (3) and finally `Enable two-factor authentication`{.action} (4).
 
 ![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
@@ -138,7 +138,7 @@ You can regenerate or delete backup codes from your Control Panel:
 
 ### Step 3 - Log in to the OVHcloud Control Panel with two-factor authentication <a name="login-2fa"></a>
 
-Go to the [login page for the OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and enter your ID (or primary email address) and password.
+Go to the [login page for the OVHcloud Control Panel](/links/manager){.external} and enter your ID (or primary email address) and password.
 
 The login screen displays the last two-factor authentication method used or entered. If you would like to use another method, click the `Try another method`{.action} button.
 
@@ -179,7 +179,7 @@ If your device (mobile phone/smartphone/security key) is lost, stolen or no long
 > - Valid backup codes
 >
 
-To remove a device, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click your name in the top right-hand corner, then click your initials.
+To remove a device, log in to your [OVHcloud Control Panel](/links/manager){.external}. Click your name in the top right-hand corner, then click your initials.
 
 Next, click `Security`{.action} then the `...`{.action} button to the right of the device you want to delete, then click `Delete`{.action}.
 
@@ -225,7 +225,7 @@ The following interface allows you to upload and send to our teams the necessary
 
 Within 72 hours, you will receive confirmation by email that two-factor authentication has been disabled.
 
-/// details | List of supporting documents
+/// details | Needed documents
 
 |OVHcloud account type|Needed documents|
 |---|---|
@@ -248,9 +248,11 @@ If you encounter any difficulties after gathering your supporting documents, you
 >
 > Your documents must be sent to us from an email address **registered in your OVHcloud account**.
 
+After verifying your documents, a support agent will manually disable two-factor authentication on your OVHcloud account.
+
 > [!success]
 >
-> After verifying your documents, a support agent will manually disable two-factor authentication on your OVHcloud account.
+> For security purposes, once access to your account has been restored, we recommend that you re-enable two-factor authentication as soon as possible.
 
 ## Go further
 

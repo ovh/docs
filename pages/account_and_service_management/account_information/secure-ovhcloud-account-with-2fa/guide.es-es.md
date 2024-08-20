@@ -1,7 +1,7 @@
 ---
 title: 'Proteger su cuenta de OVHcloud con la doble autenticación'
 excerpt: 'Cómo mejorar la seguridad de su cuenta de OVHcloud activando la doble autenticación (2FA)'
-updated: 2024-08-09
+updated: 2024-08-21
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ Esta guía explica cómo:
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Disponer de un móvil (para el método por SMS), un teléfono inteligente o una tableta (para el método a través de la aplicación móvil) o una llave de seguridad U2F (Universal Second Factor).
 - Haber consultado las [recomendaciones sobre la gestión de la contraseña de acceso a su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -76,7 +76,7 @@ Le proponemos cuatro métodos diferentes (haga clic en las fichas siguientes par
 
 ### Etapa 1 - Activar su primer método de doble autenticación <a name="enabling-2fa"></a>
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en su nombre en la esquina superior derecha (1) y seleccione sus iniciales (2). A continuación, haga clic en `Seguridad`{.action} (3) y luego en `Activar la doble autenticación`{.action} (4).
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en su nombre en la esquina superior derecha (1) y seleccione sus iniciales (2). A continuación, haga clic en `Seguridad`{.action} (3) y luego en `Activar la doble autenticación`{.action} (4).
 
 ![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
@@ -142,7 +142,7 @@ Puede regenerar o eliminar los códigos de seguridad desde su área de cliente:
 
 ### Etapa 3 - Conectarse al área de cliente de OVHcloud con la doble autenticación <a name="login-2fa"></a>
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} e introduzca su identificador (o dirección de correo electrónico principal) y contraseña.
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external} e introduzca su identificador (o dirección de correo electrónico principal) y contraseña.
 
 La pantalla de identificación muestra el último método de doble autenticación utilizado o introducido. Si desea utilizar otro método, haga clic en el botón `Probar con otro método`{.action}.
 
@@ -185,7 +185,7 @@ Si el dispositivo (teléfono móvil, smartphone o llave de seguridad) se pierde,
 > - Códigos de seguridad válidos.
 > 
 
-Para eliminar un dispositivo, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en su nombre en la esquina superior derecha y luego en sus iniciales.
+Para eliminar un dispositivo, conéctese al [área de cliente de OVHcloud](/links/manager){.external}. Haga clic en su nombre en la esquina superior derecha y luego en sus iniciales.
 
 A continuación, haga clic en `Seguridad`{.action}, luego en los `...`{.action} a la derecha de su dispositivo que quiera eliminar y, por último, en `Eliminar`{.action}.
 
@@ -232,7 +232,7 @@ La siguiente interfaz le permite descargar y enviar a nuestro equipo los documen
 
 En un plazo de 72 horas, recibirá la confirmación de la desactivación de la doble autenticación por correo electrónico.
 
-/// detalles | Lista de justificantes
+/// details | Lista de justificantes
 
 |Tipo de cuenta OVHcloud|Justificantes a adjuntar|
 |---|---|
@@ -250,9 +250,11 @@ Una vez que haya reunido los documentos justificativos, póngase en contacto con
 >
 > Los justificantes deberán enviarnos desde una dirección de correo electrónico registrada en su cuenta de OVHcloud.
 
+Tras comprobar sus documentos, un asesor podrá desactivar manualmente la doble autenticación en su cuenta de OVHcloud.
+
 > [!success]
 >
-> Tras comprobar sus documentos, un asesor podrá desactivar manualmente la doble autenticación en su cuenta de OVHcloud.
+> Por motivos de seguridad, una vez restablecido el acceso a su cuenta, le recomendamos que reactive la doble autenticación lo antes posible.
 
 ## Más información
 

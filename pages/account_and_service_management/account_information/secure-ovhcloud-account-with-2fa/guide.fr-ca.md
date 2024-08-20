@@ -23,7 +23,7 @@ Ce guide vous permettra de :
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Posséder un téléphone mobile (pour la méthode par SMS), un smartphone ou une tablette (pour la méthode via application mobile) ou une clé de sécurité Universal Second Factor (U2F).
 - Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -66,7 +66,7 @@ Nous vous proposons trois méthodes différentes (cliquez sur les onglets ci-de
 
 ### Étape 1 - Activer votre première méthode de double authentification <a name="enabling-2fa"></a>
 
-Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur votre nom en haut à droite (1) puis sur vos initiales (2). Cliquez ensuite sur `Sécurité`{.action} (3) et enfin sur `Activer la double authentification`{.action} (4).
+Connectez-vous à l'[espace client OVHcloud](/links/manager){.external}, cliquez sur votre nom en haut à droite (1) puis sur vos initiales (2). Cliquez ensuite sur `Sécurité`{.action} (3) et enfin sur `Activer la double authentification`{.action} (4).
 
 ![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
@@ -119,7 +119,7 @@ Vous pouvez regénérer ou supprimer les code de secours depuis votre espace cli
 
 ### Étape 3 - Se connecter à l'espace client OVHcloud avec la double authentification <a name="login-2fa"></a>
 
-Rendez-vous sur la [page d'authentification à l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et saisissez votre identifiant (ou votre adresse e-mail principale) et votre mot de passe.
+Rendez-vous sur la [page d'authentification à l'espace client OVHcloud](/links/manager){.external} et saisissez votre identifiant (ou votre adresse e-mail principale) et votre mot de passe.
 
 L'écran d'identification affiche la dernière méthode de double authentification utilisée ou renseignée. Si vous souhaitez en utiliser une autre, cliquez sur le bouton `Essayer une autre méthode`{.action}.
 
@@ -164,7 +164,7 @@ Si votre périphérique (téléphone mobile/smartphone/clé de sécurité) est p
 > - de codes de secours valides.
 >
 
-Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Cliquez sur votre nom en haut à droite, puis sur vos initiales.
+Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur votre nom en haut à droite, puis sur vos initiales.
 
 Cliquez ensuite sur `Sécurité`{.action} puis sur les `...`{.action} à droite de votre périphérique à supprimer et enfin sur `Supprimer`{.action}.
 
@@ -213,7 +213,8 @@ Une fois vos justificatifs réunis, contactez le support OVHcloud par téléphon
 
 Après vérification de vos documents, un conseiller pourra désactiver manuellement la double authentification sur votre compte OVHcloud et reviendra vers vous une fois cette action effectuée.
 
-A des fins de sécurité, une fois l'accès à votre compte rétabli, nous vous recommandons de réactiver la double authentification dès que possible.
+> [!success]
+> A des fins de sécurité, une fois l'accès à votre compte rétabli, nous vous recommandons de réactiver la double authentification dès que possible.
 
 ## Aller plus loin
 

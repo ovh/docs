@@ -1,7 +1,7 @@
 ---
 title: 'Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej'
 excerpt: 'Dowiedz się, jak poprawić bezpieczeństwo Twojego konta OVHcloud dzięki aktywacji weryfikacji dwuetapowej (2FA)'
-updated: 2024-08-09
+updated: 2024-08-21
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ Z tego przewodnika dowiesz się:
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
 - Posiadanie telefonu komórkowego (w przypadku metody SMS-owej), smartfona lub tabletu (w przypadku aplikacji mobilnej), bądź klucza sprzętowego Universal Second Factor (U2F).
 - Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -76,7 +76,7 @@ Proponujemy cztery różne metody (kliknij na poniższe zakładki, aby wyświetl
 
 ### Etap 1 - Aktywuj Twoją pierwszą metodę weryfikacji dwuetapowej <a name="enabling-2fa"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij Twoją nazwę w prawym górnym rogu (1), a następnie Twoje inicjały (2). Następnie kliknij przycisk `Bezpieczeństwo`{.action} (3), a na koniec `Włącz weryfikację dwuetapową`{.action} (4).
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}, kliknij Twoją nazwę w prawym górnym rogu (1), a następnie Twoje inicjały (2). Następnie kliknij przycisk `Bezpieczeństwo`{.action} (3), a na koniec `Włącz weryfikację dwuetapową`{.action} (4).
 
 ![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
@@ -142,7 +142,7 @@ Możesz wygenerować lub usunąć kody zapasowe w Panelu klienta:
 
 ### Etap 3 - Logowanie do Panelu klienta OVHcloud z weryfikacją dwuetapową <a name="login-2fa"></a>
 
-Przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wpisz swój identyfikator (lub główny adres e-mail) oraz hasło.
+Przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](/links/manager){.external} i wpisz swój identyfikator (lub główny adres e-mail) oraz hasło.
 
 Na ekranie identyfikacji wyświetlana jest ostatnia użyta lub podana metoda weryfikacji dwuetapowej. Jeśli chcesz skorzystać z innej metody, kliknij przycisk `Wypróbuj inną metodę`{.action}.
 
@@ -183,7 +183,7 @@ Jeśli Twoje urządzenie (telefon komórkowy/smartfon/klucz sprzętowy) zostanie
 > - prawidłowymi kodami zapasowymi.
 >
 
-Aby usunąć urządzenie, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij Twoją nazwę w prawym górnym rogu, a następnie Twoje inicjały.
+Aby usunąć urządzenie, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}. Kliknij Twoją nazwę w prawym górnym rogu, a następnie Twoje inicjały.
 
 Następnie kliknij przycisk `Bezpieczeństwo`{.action}, po czym kliknij `...`{.action} po prawej stronie Twojego urządzenia do usunięcia, a na koniec wybierz `Usuń`{.action}.
 
@@ -229,7 +229,7 @@ Poniższy interfejs umożliwia przesłanie i wysłanie do naszych pracowników d
 
 W ciągu 72 godzin otrzymasz e-mail z potwierdzeniem dezaktywacji weryfikacji dwuetapowej.
 
-/// Szczegóły | Lista dokumentów potwierdzających
+/// details | Lista dokumentów potwierdzających
 
 |Typ konta OVHcloud|Wymagane dokumenty|
 |---|---|
@@ -244,9 +244,11 @@ Po skomplementowaniu dokumentów skontaktuj się z pomocą OVHcloud +48 71 750 0
 >
 > Dokumenty należy przesłać z adresu e-mail przypisanego do konta klienta OVHcloud.
 
+Po sprawdzeniu dokumentów konsultant może ręcznie wyłączyć weryfikację dwuetapową na Twoim koncie OVHcloud.
+
 > [!success]
 >
-> Po sprawdzeniu dokumentów konsultant może ręcznie wyłączyć weryfikację dwuetapową na Twoim koncie OVHcloud.
+> Ze względów bezpieczeństwa, po przywróceniu dostępu do konta, zalecamy jak najszybsze ponowne włączenie weryfikacji dwuetapowej.
 
 ## Sprawdź również
 

@@ -1,7 +1,7 @@
 ---
 title: 'Rendere sicuro il tuo account OVHcloud con la doppia autenticazione'
 excerpt: 'Come rendere più sicuro il tuo account OVHcloud attivando la doppia autenticazione (2FA)'
-updated: 2024-08-09
+updated: 2024-08-21
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ Questa guida ti mostra come:
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un cellulare (per il metodo SMS), uno smartphone o un tablet (per il metodo applicazione mobile) o una chiave di sicurezza Universal Second Factor (U2F).
 - Aver letto i [consigli su come gestire la password di accesso al tuo account](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -77,7 +77,7 @@ Ti proponiamo quattro diversi metodi (clicca sulle schede qui sotto per visualiz
 
 ### Step 1 - Attiva il primo metodo di doppia autenticazione <a name="enabling-2fa"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome in alto a destra (1) e poi sulle tue iniziali (2). Clicca su `Sicurezza`{.action} (3) e infine su `Attiva l'autenticazione a due fattori`{.action} (4).
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, clicca sul tuo nome in alto a destra (1) e poi sulle tue iniziali (2). Clicca su `Sicurezza`{.action} (3) e infine su `Attiva l'autenticazione a due fattori`{.action} (4).
 
 ![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
@@ -143,7 +143,7 @@ I codici di sicurezza possono essere rigenerati o eliminati direttamente dallo S
 
 ### Step 3 - Accedi allo Spazio Cliente OVHcloud con la doppia autenticazione <a name="login-2fa"></a>
 
-Accedi alla [pagina di accesso allo Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e inserisci identificativo (o indirizzo email principale) e password.
+Accedi alla [pagina di accesso allo Spazio Cliente OVHcloud](/links/manager){.external} e inserisci identificativo (o indirizzo email principale) e password.
 
 Nella schermata di login viene visualizzato l’ultimo metodo di autenticazione a due fattori utilizzato o inserito. Per utilizzarne un altro, clicca sul pulsante `Prova un altro metodo`{.action}.
 
@@ -184,7 +184,7 @@ Se il dispositivo (telefono cellulare/smartphone/chiave di sicurezza) viene smar
 > - codici di sicurezza validi.
 >
 
-Per rimuovere un dispositivo, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sul tuo nome in alto a destra e poi sulle tue iniziali.
+Per rimuovere un dispositivo, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Clicca sul tuo nome in alto a destra e poi sulle tue iniziali.
 
 Clicca su `Sicurezza`{.action} e poi sui `...`{.action} a destra del dispositivo da rimuovere e infine su `Eliminare`{.action}.
 
@@ -230,7 +230,7 @@ L’interfaccia seguente ti permette di caricare e inviare ai nostri team i docu
 
 Entro 72 ore, riceverai un’email di conferma della disattivazione dell’autenticazione a due fattori.
 
-/// dettagli | Elenco dei giustificativi
+/// details | Elenco dei giustificativi
 
 |Tipo di account OVHcloud|Giustificativi da fornire|
 |---|---|
@@ -244,9 +244,11 @@ Una volta raccolti i giustificativi, contatta il supporto OVHcloud al +39 02 556
 > [!warning]
 > I giustificativi da inviare devono provenire da un indirizzo email registrato sul tuo account OVHcloud.
 
+Dopo aver verificato i documenti, un consulente può disattivare manualmente la doppia autenticazione sul tuo account OVHcloud.
+
 > [!success]
 >
-> Dopo aver verificato i documenti, un consulente può disattivare manualmente la doppia autenticazione sul tuo account OVHcloud.
+> Per motivi di sicurezza, una volta ripristinato l’accesso al tuo account, ti consigliamo di riattivare l’autenticazione a due fattori il prima possibile.
 
 ## Per saperne di più
 
