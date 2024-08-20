@@ -1,7 +1,7 @@
 ---
 title: "Creating network components from the VCD control panel"
 excerpt: "Find out how to easily create network components within the VCD on OVHcloud control panel"
-updated: 2024-08-21
+updated: 2024-08-20
 ---
 
 <style>

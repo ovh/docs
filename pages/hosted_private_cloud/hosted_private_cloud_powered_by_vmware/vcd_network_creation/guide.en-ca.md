@@ -1,7 +1,7 @@
 ---
 title: "Creating network components from the VCD control panel"
 excerpt: "Find out how to easily create network components within the VCD on OVHcloud control panel"
-updated: 2024-08-15
+updated: 2024-08-20
 ---
 
 <style>
@@ -19,9 +19,9 @@ details[open]>summary::before {
 </style>
 
 > [!primary]
->
-> VCD on OVHcloud is currently in Alpha phase. This guide may be incomplete and updated.
->
+> 
+> VCD on OVHcloud is currently in Alpha phase. This guide may be incomplete and will be updated.
+> 
 
 ## Objective
 
@@ -30,7 +30,7 @@ details[open]>summary::before {
 ## Requirements
 
 > [!primary]
->
+> 
 > If you are unsure how to log in to your organization's web portal, first refer to the guide: [How to log in to VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 >
 
@@ -56,7 +56,7 @@ Before creating a network, the main concept to understand with VMware Cloud Dire
 ### Step 1: Create the IP space (recommended)
 
 > [!primary]
->
+> 
 > You can use a new method of managing your IP space in VMware Cloud Director with the new IP space management subsystem.
 >
 
@@ -64,7 +64,7 @@ Before creating a network, the main concept to understand with VMware Cloud Dire
 
 To connect to your VCD environment, follow the guide: [How to connect to VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
-1\. Next, click `Network > IP Spaces > New`{.action}.
+1\. Next, click `Network`{.action} > `IP Spaces`{.action} > `New`{.action}.
 
 ![VCD Networking IP Spaces](images/ESPACE_IP.png){.thumbnail}
 
@@ -120,14 +120,14 @@ Click `NEXT`{.action} to complete step 5.
 
 ![VCD Networking IP Spaces 06](images/ESPACE_IP_6.png){.thumbnail}
 
-Next, we will move on to the VCD section `VCD > Network > IP Space`{.action} and/or `VCD Network > Network`{.action}.
+Next, we will move on to the VCD section `VCD`{.action} > `Network`{.action} > `IP Space`{.action} and/or `VCD Network`{.action} > `Network`{.action}.
 
 ///
 
 ### Step 2 - Create a datacentre group (optional)
 
 > [!primary]
->
+> 
 > You can use a new method of managing your IP space in VMware Cloud Director with the new IP space management subsystem.
 >
 
@@ -139,7 +139,7 @@ This step is optional, but recommended for the vast majority of use cases (e.g. 
 
 We will now create a datacentre group to optimize the management of our network with this new VCD feature.
 
-Go to the Networking section by clicking `Networking > Data Center Groups`{.action}.
+Go to the Networking section by clicking `Networking` > `Data Center Groups`{.action}.
 
 Then click on `NEW`{.action}.
 
@@ -237,9 +237,9 @@ Finally, (step 5: Create an Edge Gateway) click on `FINISH`{.action}.
 
 We will now create a new network and attach our preconfigured settings.
 
-Go to the Networking section by clicking `Networking > Networks`{.action}.
+Go to the Networking section by clicking `Networking`{.action} > `Networks`{.action}.
 
-Then click on: `NEW`{.action}.
+Then click on `NEW`{.action}.
 
 ![VCD Networking Network 00](images/NETWORK_0.png){.thumbnail}
 
@@ -266,13 +266,13 @@ The **"routed"** allows incoming traffic, while the **"isolated"** forbids it.
 
 **VCD definition:**
 
-- **Routed**: This type of network provides controlled access to machines and networks outsides of the vDC or vDC group through an edge gateway.
+- **Routed**: This type of network provides controlled access to machines and networks outside of the vDC or vDC group through an edge gateway.
 - **Isolated**: This type of network provides a fully isolated environment, accessible only by this organization's vDC or vDC group.
 
 For a routed network, if your `VDC-FR/US/CA-GRA-XXX-XXX` vDC does not have an Edge Gateway available, you will get this error:
 
 > [!warning]
->
+> 
 > The vDC “vDC-FR-GRA-XXXX-Corp” has no Edge Gateway available.
 >
 
@@ -303,7 +303,7 @@ If it has been created, it will automatically appear in the list (see next scree
 **Dual-Stack Mode**: Enables the network to have one IPv4 subnet and one IPv6 subnet.
 
 > [!warning]
->
+> 
 > You cannot undo the activation of dual stack networking mode.
 >
 
@@ -395,7 +395,7 @@ Do a final check of the settings you defined, then click `FINISH`{.action}.
 
 Your network is now fully created and ready to use.
 
-**Glossary**
+**Glossary:**
 
 - `CIDR`: CIDR stands for Classless Inter-Domain Routing.
 
@@ -410,6 +410,6 @@ If you experience any network issues within VCD on OVHcloud, please read our gui
 
 If you require training or technical assistance in implementing our solutions, contact your sales representative or [click here](/links/professional-services) for a quote and request a custom analysis of your project from our Professional Services team experts.
 
-Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated channel [Discord](<https://discord.gg/ovhcloud>).
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord channel](https://discord.gg/ovhcloud).
 
 Join our [community of users](/links/community).
