@@ -141,7 +141,7 @@ Il vous suffit alors de choisir l'action `Régler ma facture`{.action} qui vous 
 >> Pendant la période de grâce, vous pourrez le renouveler via l'espace client, en suivant les étapes de ce guide.
 >> Pendant la période de rédemption, le domaine n'est plus géré par OVHcloud. Son renouvellement via votre espace client occasionnera des frais supplémentaires (frais de restauration, qui varient en fonction de l'extension. Voir les tarifs en cliquant sur l'extension concernée [ici](https://www.ovhcloud.com/fr/domains/tld/){.external}.).
 >> Au-delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de redevenir disponible dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/) pour vérifier sa disponibilité régulièrement.
-> Je ne souhaite pas renouveler mon nom de domaine mais le transférer vers un autre bureau d'entregistrement que OVHcloud. Comment faire ?
+> Je ne souhaite pas renouveler mon nom de domaine mais le transférer vers un autre bureau d'enregistrement que OVHcloud. Comment faire ?
 >> Suivez les instructions de notre guide « [Transférer un nom de domaine vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) ».
 
 ## Aller plus loin
