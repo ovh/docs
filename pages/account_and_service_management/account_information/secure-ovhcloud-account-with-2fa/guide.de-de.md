@@ -212,19 +212,19 @@ Wenn alle Ihre Geräte gelöscht sind, deaktivieren Sie die Notfall-Codes, indem
 
 #### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kundencenter haben <a name="2FA-deletion"></a>
 
-Wenn Sie über keine gültigen Geräte oder Notfall-Codes mehr verfügen, müssen Sie die Deaktivierung der Zwei-Faktor-Authentifizierung anfordern. Geben Sie hierzu die für Ihren OVHcloud-Account erforderlichen Identitätsnachweise an.
+Wenn Sie über keine gültigen Geräte oder Notfall-Codes mehr verfügen, müssen Sie die Deaktivierung der Zwei-Faktor-Authentifizierung anfordern. Sie benötigen hierzu die für Ihren OVHcloud Kunden-Account erforderlichen Identitätsnachweise.
 
-Gehen Sie zunächst auf [die Authentifizierungsseite im OVHcloud Kundencenter](/links/manager).
+Gehen Sie zunächst auf [die Authentifizierungsseite des OVHcloud Kundencenters](/links/manager).
 
-Geben Sie Ihre OVHcloud ID und Ihr Passwort ein, um auf den Schritt der Zwei-Faktor-Authentifizierung zuzugreifen. Klicken Sie nun auf den Button `Ich habe keinen Zugang zu meinem Mobiltelefon, zum U2F-Sicherheitsschlüssel oder zu meinen Ersatzcodes mehr`{.action}.<br>
+Geben Sie Ihre OVHcloud Kundenkennung und Ihr Passwort ein, um auf den Schritt der Zwei-Faktor-Authentifizierung zuzugreifen. Klicken Sie nun auf den Button `Ich habe keinen Zugang zu meinem Mobiltelefon, zum U2F-Sicherheitsschlüssel oder zu meinen Ersatzcodes mehr`{.action}.<br>
 Wenn diese Schaltfläche nicht angezeigt wird, klicken Sie auf die Schaltfläche `Andere Methode testen`{.action} und dann auf `Ich habe keinen Zugang zu meinem Mobiltelefon, zum U2F-Sicherheitsschlüssel oder zu meinen Ersatzcodes mehr`{.action}.
 
-Über das folgende Interface können Sie die notwendigen Dokumente hochladen und an unsere Teams senden, um die Zwei-Faktor-Authentifizierung für Ihren Account zu deaktivieren.
+Über dieses Interface können Sie die notwendigen Dokumente hochladen und an unsere Teams senden, um die Zwei-Faktor-Authentifizierung für Ihren Account zu deaktivieren.
 
 > [!warning]
 >
 > - Achtung, stellen Sie bitte sicher, dass alle Dokumente korrekt und lesbar sind, bevor Sie sie versenden.
-> - **Akzeptierte Formate**: jpg, jpeg, pdf, png. Die maximale Dateigröße für jedes Dokument beträgt 10 MB.
+> - **Akzeptierte Formate**: jpg, jpeg, pdf, png. Die maximale Dateigröße für jede Datei beträgt 10 MB.
 > - Bei ungültigen Dokumenten wird dieser Vorgang abgebrochen und Sie müssen einen neuen durchführen.
 
 Innerhalb von 72 Stunden erhalten Sie eine Bestätigung der Deaktivierung der Zwei-Faktor-Authentifizierung per E-Mail.
