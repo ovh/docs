@@ -102,7 +102,7 @@ Effectuez les action suivantes :
 - Dans le tableau, identifiez le nom de domaine que vous souhaitez renouveler
 - Cliquez à droite de la ligne sur le bouton `...`{.action}
 - Cliquez sur l'action `Anticiper le paiement`{.action}
-- Après avoir été redirigé vers une interface de paiement en ligne, suivez les instructions
+- Vous êtes alors redirigé vers une interface de paiement en ligne, suivez les instructions fournies.
 
 Vous pouvez renouveler le service à tout moment avant son expiration, ainsi que choisir la durée de renouvellement.
 Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
