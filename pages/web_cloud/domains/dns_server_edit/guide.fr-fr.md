@@ -1,7 +1,7 @@
 ---
 title: "Modifier les serveurs DNS d'un nom de domaine OVHcloud"
 excerpt: "Découvrez comment modifier les serveurs DNS de votre nom de domaine enregistré chez OVHcloud"
-updated: 2024-08-19
+updated: 2024-08-20
 ---
 
 ## Objectif
@@ -113,7 +113,7 @@ Cela peut être, par exemple :
 Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme suit :
 
 - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
-- `IP associée (facultatif)` : adresse IP du serveur DNS renseigné.
+- `IP associée (facultatif)` : adresse IP (IPv4 ou IPv6) du serveur DNS renseigné. Vous ne pouvez renseigner qu'**une seule adresse IP** dans ce formulaire.
 
 > [!warning]
 >
@@ -154,7 +154,7 @@ Cependant, vérifiez bien que les configurations des zones DNS présentes sur le
 Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme suit :
 
 - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
-- `IP associée (facultatif)` : adresse IP du serveur DNS renseigné.
+- `IP associée (facultatif)` : adresse IP (IPv4 ou IPv6) du serveur DNS renseigné. Vous ne pouvez renseigner qu'**une seule adresse IP** dans ce formulaire.
 
 > [!warning]
 >
