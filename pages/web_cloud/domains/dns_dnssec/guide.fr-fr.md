@@ -16,7 +16,7 @@ Le **D**omain **N**ame **S**ystem **SEC**urity extensions (**DNSSEC**), permet d
 
 **Découvrez comment activer le DNSSEC pour votre nom de domaine afin de le protéger contre le « Cache poisoning ».**
 
-> [!warning]
+> [!primary]
 >
 > L'option DNSSEC est indisponible pour les noms de domaine dont l'extension est en **.it**.
 >
