@@ -16,6 +16,11 @@ In einigen Fällen können Daten, die über DNS-Server laufen, von Hackern abgef
 
 Die **D**omain **N**ame **S**ystem **SEC**urity Extensions (**DNSSEC**) ermöglichen es, die DNS-Konfiguration Ihres Domainnamens durch Überprüfung und Authentifizierung der DNS-Antworten vor "Cache Poisoning" zu schützen.
 
+> [!primary]
+>
+> Die DNSSEC Option ist für Domainnamen mit der Endung **.it** nicht verfügbar.
+>
+
 **Diese Anleitung erklärt, wie Sie DNSSEC für Ihren Domainnamen aktivieren, um ihn vor "Cache Poisoning" zu schützen.**
 
 Weitere Informationen zur Funktionsweise von **DNSSEC** finden Sie auf unserer Seite "[DNSSEC verstehen](/links/web/domains-dnssec){.external}".
