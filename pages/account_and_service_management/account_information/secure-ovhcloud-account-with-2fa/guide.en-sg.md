@@ -193,7 +193,7 @@ Once you have removed all your devices, disable the emergency codes by clicking 
 
 If you no longer have valid devices or valid backup codes, then you must request for two-factor authentication to be disabled by providing proof of identity documents corresponding to your OVHcloud account.
 
-First, go to [the login page in the OVHcloud Control Panel](/links/manager).
+First, go to [the login page of the OVHcloud Control Panel](/links/manager).
 
 Enter your OVHcloud ID and password to access the two-factor authentication step. Then click the `I have lost access to my mobile phone, U2F security key or emergency codes`{.action} button.<br>
 If you do not see this button, click the `Try another method`{.action} button, then `I have lost access to my mobile phone, U2F security key or emergency codes`{.action}.
@@ -204,7 +204,7 @@ The following interface allows you to upload and send to our teams the necessary
 >
 > - Warning, please ensure that all your documents are correct and readable before sending.
 > - **Accepted formats**: jpg, jpeg, pdf, png. The maximum file size for each document is 10 MB.
-> - If there are invalid documents, this procedure will be canceled and you will need to perform a new procedure.
+> - If there are invalid documents, this procedure will be cancelled and you will need to perform a new procedure.
 
 Within 72 hours, you will receive confirmation by email that two-factor authentication has been disabled.
 
