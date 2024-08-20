@@ -104,7 +104,7 @@ Effectuez les action suivantes :
 - Cliquez sur l'action `Anticiper le paiement`{.action}
 - Vous êtes alors redirigé vers une interface de paiement en ligne, suivez les instructions fournies.
 
-Vous pouvez renouveler le service à tout moment avant son expiration, ainsi que choisir la durée de renouvellement.
+Vous pouvez renouveler le service à tout moment avant son expiration et également choisir la durée de renouvellement.
 Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
 
 ### Résilier mon nom de domaine
