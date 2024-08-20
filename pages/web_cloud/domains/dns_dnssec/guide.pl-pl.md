@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczenie domeny za pomocą DNSSEC"
 excerpt: "Dowiedz się, jak zabezpieczyć domenę przed atakiem DNSSEC"
-updated: 2023-07-26
+updated: 2024-08-20
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Ihren Domainnamen mit DNSSEC absichern"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Domainnamen durch die Aktivierung von DNSSEC vor Cache Poisoning schützen können"
-updated: 2023-07-26
+updated: 2024-08-20
 ---
 
 > [!primary]
