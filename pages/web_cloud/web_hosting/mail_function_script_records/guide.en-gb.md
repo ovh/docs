@@ -1,7 +1,7 @@
 ---
 title: "Monitoring and managing automated emails in your web hosting plan"
 excerpt: "Find out how to monitor and manage automated emails sent from your OVHcloud web hosting plan"
-updated: 2023-12-04
+updated: 2024-08-20
 ---
 
 ## Objective
