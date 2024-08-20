@@ -33,7 +33,7 @@ Renouveler correctement votre nom de domaine est crucial pour maintenir votre vi
 Le nom de domaine est l'adresse permettant à vos contacts de se rendre sur votre site internet et d'échanger avec vous par e-mail. Si votre nom de domaine n'est pas renouvelé, votre site web et vos adresses e-mails ne seront plus accessibles. Un site web non-accessible pendant quelques temps peut avoir des impacts sur votre visibilité web et sur votre référencement naturel.
 
 Dans le cas où vous n'avez pas renouvelé votre nom de domaine avant la date d'anniversaire de ce dernier alors que vous souhaitiez tout de même le conserver, des frais additionnels peuvent être associés.
-En effet, une fois le nom de domaine supprimé, le renouvellement n'est plus possible et vous devez  restaurer votre nom de domaine. Pour que la restauration puisse être effective, des frais de restauration seront appliqués. 
+En effet, une fois le nom de domaine supprimé, le renouvellement n'est plus possible et vous devez alors restaurer votre nom de domaine. Pour que la restauration puisse être effective, des frais de restauration seront appliqués. 
 
 Enfin, si vous ne souhaitez pas conserver votre nom de domaine, il sera automatiquement disponible sur le marché et pourra de nouveau être enregistré par quelqu'un d'autre.
 Si le nom de domaine comporte votre nom de marque, soyez vigilent. Une personne malveillante pourrait utiliser votre ancien nom de domaine pour du phishing ou des arnaques en se faisant passer pour votre entreprise.
