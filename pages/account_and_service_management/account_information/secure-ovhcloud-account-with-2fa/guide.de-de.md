@@ -216,8 +216,8 @@ Wenn Sie über keine gültigen Geräte oder Notfall-Codes mehr verfügen, müsse
 
 Gehen Sie zunächst auf [die Authentifizierungsseite im OVHcloud Kundencenter](/links/manager).
 
-Geben Sie Ihre OVHcloud ID und Ihr Passwort ein, um auf den Schritt der Zwei-Faktor-Authentifizierung zuzugreifen. Klicken Sie nun auf den Button `Nie mam dostępu do telefonu komórkowego, klucza bezpieczeństwa U2F ani kodów zapasowych`{.action}.<br>
-Wenn diese Schaltfläche nicht angezeigt wird, klicken Sie auf die Schaltfläche `Andere Methode testen`{.action} und dann auf `Nie mam dostępu do telefonu komórkowego, klucza bezpieczeństwa U2F ani kodów zapasowych`{.action}.
+Geben Sie Ihre OVHcloud ID und Ihr Passwort ein, um auf den Schritt der Zwei-Faktor-Authentifizierung zuzugreifen. Klicken Sie nun auf den Button `Ich habe keinen Zugang zu meinem Mobiltelefon, zum U2F-Sicherheitsschlüssel oder zu meinen Ersatzcodes mehr`{.action}.<br>
+Wenn diese Schaltfläche nicht angezeigt wird, klicken Sie auf die Schaltfläche `Andere Methode testen`{.action} und dann auf `Ich habe keinen Zugang zu meinem Mobiltelefon, zum U2F-Sicherheitsschlüssel oder zu meinen Ersatzcodes mehr`{.action}.
 
 Über das folgende Interface können Sie die notwendigen Dokumente hochladen und an unsere Teams senden, um die Zwei-Faktor-Authentifizierung für Ihren Account zu deaktivieren.
 
@@ -242,7 +242,7 @@ Kontaktieren Sie den OVHcloud Support unter +49 681 906730, sobald Ihre entsprec
 
 > [!warning]
 >
->  Die Dokumente müssen uns von einer E-Mail-Adresse aus übermittelt werden, die in Ihrem OVHcloud Kunden-Account hinterlegt ist.
+> Die Dokumente müssen uns von einer E-Mail-Adresse aus übermittelt werden, die in Ihrem OVHcloud Kunden-Account hinterlegt ist.
 
 > [!success]
 >
