@@ -73,7 +73,7 @@ En revanche, si vous ne souhaitez pas conserver ce service, il n'est pas nécess
 
 ### Changer le mode de renouvellement de mes noms de domaine
 
-Dans votre espace client, cliquez sur votre nom en haut à droite de votre écran puis sur `Produits et services`{.action}. Dans le tableau qui s'affiche, identifiez le ou les noms de domaine dont vous souhaitez changer le mode de renouvellement.
+Dans votre [espace client](/links/manager), cliquez sur votre nom en haut à droite de votre écran puis sur `Produits et services`{.action}. Dans le tableau qui s'affiche, identifiez le ou les noms de domaine dont vous souhaitez changer le mode de renouvellement.
 
 #### Pour un seul nom de domaine
 
