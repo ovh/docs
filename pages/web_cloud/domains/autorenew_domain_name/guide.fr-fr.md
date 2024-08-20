@@ -80,9 +80,9 @@ Dans votre espace client, cliquez sur votre nom en haut à droite de votre écra
 Effectuez les action suivantes :
 
 - Dans le tableau, identifiez le nom de domaine dont vous voulez changer le mode de renouvellement
-- Cliquez à droite de la ligne sur le bouton `...`{.action}
-- Cliquez sur l'action `Configurer le renouvellement`{.action}
-- Paramétrez le renouvellement en `Manuel`{.action} ou `Automatique`{.action}
+- Cliquez à droite de la ligne sur le bouton `...`{.action}.
+- Cliquez sur l'action `Configurer le renouvellement`{.action}.
+- Paramétrez le renouvellement en `Manuel`{.action} ou `Automatique`{.action}.
 - Si vous optez pour le renouvellement automatique, choisissez la fréquence de renouvellement automatique.
 - Validez et payez.
 
@@ -90,28 +90,28 @@ Effectuez les action suivantes :
 
 Effectuez les action suivantes :
 
-- Dans le tableau, identifiez les noms de domaine dont vous voulez changer le mode de renouvellement
-- Sélectionnez les lignes correspondantes dans le tableau en cochant les cases en début de ligne
-- Cliquez sur le bouton `Actions`{.action} en haut à gauche du tableau
-- Sélectionnez `Activer le paiement automatique`{.action} ou `Désactiver le paiement automatique`{.action}
+- Dans le tableau, identifiez les noms de domaine dont vous voulez changer le mode de renouvellement.
+- Sélectionnez les lignes correspondantes dans le tableau en cochant les cases en début de ligne.
+- Cliquez sur le bouton `Actions`{.action} en haut à gauche du tableau.
+- Sélectionnez `Activer le paiement automatique`{.action} ou `Désactiver le paiement automatique`{.action}.
 
 ### Renouveler mon nom de domaine avant la date d'échéance
 
 Effectuez les action suivantes :
 
-- Dans le tableau, identifiez le nom de domaine que vous souhaitez renouveler
-- Cliquez à droite de la ligne sur le bouton `...`{.action}
-- Cliquez sur l'action `Anticiper le paiement`{.action}
-- Après avoir été redirigé vers une interface de paiement en ligne, suivez les instructions
+- Dans le tableau, identifiez le nom de domaine que vous souhaitez renouveler.
+- Cliquez à droite de la ligne sur le bouton `...`{.action}.
+- Cliquez sur l'action `Anticiper le paiement`{.action}.
+- Après avoir été redirigé vers une interface de paiement en ligne, suivez les instructions.
 
 Vous pouvez renouveler le service à tout moment avant son expiration, ainsi que choisir la durée de renouvellement.
 Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
 
 ### Résilier mon nom de domaine
 
-- Dans le tableau, identifiez le nom de domaine que vous souhaitez renouveler
-- Cliquez à droite de la ligne sur le bouton `...`{.action}
-- Cliquez sur l'action `Résilier`{.action}
+- Dans le tableau, identifiez le nom de domaine que vous souhaitez renouveler.
+- Cliquez à droite de la ligne sur le bouton `...`{.action}.
+- Cliquez sur l'action `Résilier`{.action}.
 
 Cette action est proposée pour les services paramétrés en **renouvellement automatique**. En choisissant cette action, le renouvellement et le prélèvement automatiques sont désactivés pour le service que vous avez sélectionné.
 
@@ -126,8 +126,8 @@ Pour plus d'informations sur la résiliation des services OVHcloud, suivez les i
 
 Une mention `Facture à payer` s'affiche lorsqu'une facture est en attente de règlement et lorsque :
 
-- vous possédez des services en renouvellement automatique.
-- vous n'avez pas enregistré de moyen de paiement permettant d'effectuer un prélèvement pour le règlement de vos factures.
+- Vous possédez des services en renouvellement automatique.
+- Vous n'avez pas enregistré de moyen de paiement permettant d'effectuer un prélèvement pour le règlement de vos factures.
 
 Il vous suffit alors de choisir l'action `Régler ma facture`{.action} qui vous redirigera vers une plateforme de paiement en ligne.
 
