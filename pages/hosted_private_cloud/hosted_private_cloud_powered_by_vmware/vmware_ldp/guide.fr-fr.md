@@ -18,7 +18,7 @@ updated: 2024-08-21
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud.
 - Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud (pour vérifier lancer l'appel API [suivant](#security-options))
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
-- Vous devez avoir le « logForwarder » activé. Pour vérifier, lancez l'appel API [suivant](#security-options).
+- Vous devez avoir le `logForwarder` activé. Pour vérifier, lancez l'appel API [suivant](#security-options).
 
 ## En pratique
 
@@ -122,12 +122,12 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
 > {
->  "kind": "esxi", // Le label VMware, les valeurs supportées actuellement sont : ["esxi","nsxtManager","vcsa","nsxtEdge"].
->  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // L'identifiant du stream LDP.
+>  "kind": "esxi", // Le label VMware, les valeurs supportées actuellement sont : `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
+>  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // L'identifiant du stream Logs Data Platform.
 > }
 > ```
 
-La requête GET permet de lister vos souscriptions.
+La requête GET permet de lister vos IDs de souscriptions.
 
 ### Étape 3 - Création d'un stream Logs Data Platform HPC
 
@@ -141,7 +141,7 @@ Récupérez le **streamId** et sauvegardez-le (copier-coller). Vous en aurez bes
 
 Nous allons voir dans l'étape suivante comment créer un stream.
 
-### Étape 4 - Administrer vos stream Logs Data Platform
+### Étape 4 - Administrer vos flux Logs Data Platform
 
 #### Via l'espace client OVHcloud
 
@@ -151,7 +151,7 @@ Vous pouvez vous référer à ce guide pour retrouver comment administrer vos fl
 
 Utilisez les appels API suivants pour établir la liste des abonnements de votre compte Hosted Private Cloud.
 
-**Référencement de tous les appels API Hosted Private Cloud VMware on OVHcloud** :
+**Référencement de tous les appels API LDP pour un VMware vSphere managé** :
 
 | **Méthode** | **Chemin**                                                     | **Description**                                                      |
 |:-----------:|:---------------------------------------------------------------|:---------------------------------------------------------------------|

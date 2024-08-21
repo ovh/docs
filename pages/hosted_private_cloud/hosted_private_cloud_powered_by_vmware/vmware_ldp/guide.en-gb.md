@@ -19,7 +19,7 @@ updated: 2024-08-20
 - One or more Hosted Private Cloud resources.
 - An active Logs Data Platform stream with the same account and security level as your Hosted Private Cloud VMware on OVHcloud.
 - You need to have followed the guide [Introduction to the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
-- You must have "logForwarder" enabled. To check launch [this](#security-options) API call.
+- You must have `logForwarder` enabled. To check launch [this](#security-options) API call.
 
 ## Instructions
 
@@ -123,12 +123,12 @@ To retrieve the **streamId** of your LDP account, read our guide [Getting starte
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
 > {
->  "kind": "esxi", // Le label VMware, les valeurs supportées actuellement sont : ["esxi","nsxtManager","vcsa","nsxtEdge"].
->  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // L'identifiant du stream LDP.
+>  "kind": "esxi", // The VMware label, the values currently supported are: `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
+>  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // The Logs Data Platfrom stream ID.
 > }
 > ```
 
-The GET request allows you to list your subscriptions.
+The GET request allows you to list your subscriptions IDs.
 
 ### Step 3 - Create Logs Data Platform stream
 
@@ -144,7 +144,7 @@ Retrieve the **streamId** and save (copy and paste) it. You will need it to acti
 
 In the next step, we will look at how to create a stream.
 
-### Step 4 - Manage your Data Logs Platform streams
+### Step 4 - Administer your Data Logs Platform streams
 
 #### Via the OVHcloud Control Panel
 
@@ -154,7 +154,7 @@ You can refer to this guide to find out how to manage your streams from the Logs
 
 Use the following API calls to list subscriptions to your Hosted Private Cloud account.
 
-**Referencing all HPC LDP* API calls**:
+**Referencing all LDP API calls for managed VMware vSphere**:
 
 | **Method** | **Path**                                                        | **Description**                                                  |
 |:-----------:|:----------------------------------------------------------------|:-----------------------------------------------------------------|
