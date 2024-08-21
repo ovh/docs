@@ -11,7 +11,7 @@ updated: 2024-08-20
 
 ## Objective
 
-**Find out how to enable VMware on OVHcloud log forwarding to a Logs Data Platform stream**.
+**The goal is to show you how to enable log forwarding from managed VMware vSphere on OVHcloud to a Logs Data Platform stream.**
 
 ## Requirements
 
@@ -24,11 +24,9 @@ updated: 2024-08-20
 ## Instructions
 
 > [!primary]
-> Please note that enabling **log forwarding** is free to enable, but you will be billed for using a Logs Data Platform stream, based on the standard rate for storing logs in Database as a Service (dbaas).
+> Please note that enabling **log forwarding** is free to enable, but you will be billed for using a Logs Data Platform stream, based on the standard rate for storing logs in a "Database as a Service" (dbaas).
 >
-> Your logs are manipulated for security and observability reasons in the Logs Data Platform private clusters.
->
-> For more information on LDP pricing, see [solution page](/links/manage-operate/ldp).
+> Your logs are manipulated for security and observability reasons in the Logs Data Platform private clusters. For more information on LDP pricing, see the page LDP on [this link](/links/manage-operate/ldp).
 >
 
 By enabling logs forwarding to a Logs Data Platform stream, you can collect, index and analyze Hosted Private Cloud VMware on OVHcloud data. Regardless of their origin, this platform offers a variety of access methods depending on the protocol, the level of security and the format desired. The data collected can be easily used, thanks to the multiple APIs and web interfaces available.
@@ -43,17 +41,17 @@ A *Kind* is a "type" of log that your product generates.
 
 These are the types of logs you want to transfer to your Logs Data Platform. Here are examples that may be available depending on the components of your VMware on OVHcloud Hosted Private Cloud architecture:
 
-- **esxi**: only some applications are filtered
-- **nsxtEdge**: everything is forwarded, no filter
-- **vcsa**: only some applications are forwarded
-- **nsxtManager**: only some applications are filtered
+- `esxi`: Only some applications are filtered.
+- `nsxtEdge`: Everything is forwarded, no filter.
+- `vcsa`: Only some applications are forwarded.
+- `nsxtManager`: Only some applications are filtered.
 
-### Step 1 - Enable security options
+### Step 1 - Enable Log Forwarder in managed vSphere
 
 > [!alert]
-> If the "logForwarder" is not enabled within your security options pack, contact OVHcloud support.
+> If the `logForwarder` pack is not enabled within your pack options (base or advanced security), contact OVHcloud support.
 >
-> If you want the `logForwarder` feature without advanced security options, contact OVHcloud support.
+> If you want the `logForwarder` feature without the advanced security and base packs, contact OVHcloud support to enable it manually.
 >
 
 #### Via the OVHcloud API <a name="security-options"></a>
@@ -74,7 +72,7 @@ To check the options required to enable the `logForwarder` feature to work withi
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
 >
 
-Leave the 2 booleans "showIncompatible", "showInternal" empty.
+Leave the 2 booleans "showIncompatible", "showInternal", available empty.
 
 > [!warning]
 >
@@ -95,26 +93,8 @@ Leave the 2 booleans "showIncompatible", "showInternal" empty.
 > ]
 > ```
 > 
-> Please contact OVHcloud support if you do not have the `logForwarder` enabled before you create a stream and subscribe to the Hosted Private Cloud LDP solution.
->
 
-### Step 2 - Create Logs Data Platform stream
-
-> [!primary]
-> Hosted Private Cloud and LDP resources must belong to the same OVHcloud account.
->
-> You will need to create a Data Logs Stream beforehand. And enable the logForwarder as indicated previously.
->
-
-#### Via the OVHcloud control panel
-
-You can refer to this guide to find out how to manage your streams via the Logs Data Platform control panel: “[Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)” (EN).
-
-Retrieve the **streamId** and save (copy and paste) it. You will need it to activate your Hosted Private Cloud subscription with the Logs Data Platform stream in question.
-
-In the next step, we will look at how to create a stream.
-
-### Step 3 - Activate the Logs Data Platform Hosted Private Cloud subscription
+### Step 2 - Logs Data Platform subscription for managed vSphere
 
 #### Via the OVHcloud Control Panel
 
@@ -135,23 +115,34 @@ To retrieve the **streamId** of your LDP account, read our guide [Getting starte
 
 > **Parameters:**
 > 
-> - `serviceName`: Your Hosted Private Cloud reference in the form `pcc-XXX-XXX-XXX-XXX`.
-> - `kind`: Name of the subscription log type, e.g. `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
-> - `StreamId`: The destination stream identifier (uuid:`ggb8d894-c491-433e-9c87-50a8bf6fe773`).
+> - `serviceName`: Your Hosted Private Cloud reference, e.g. (`pcc-XXX-XXX-XXX-XXX`).
+> - `kind`: Name of the subscription log filter type, e.g. (`esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`).
+> - `StreamId`: The destination stream identifier, e.g.  (uuid:`ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
-
-Example:
-
-```shell
-@api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
-
-{
-  "kind": "esxi", // The VMware label, the values currently supported are: ["esxi","nsxtManager","vcsa","nsxtEdge"].
-  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // The LDP stream ID.
-}
-```
+> ```shell
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
+>
+> {
+>  "kind": "esxi", // Le label VMware, les valeurs supportées actuellement sont : ["esxi","nsxtManager","vcsa","nsxtEdge"].
+>  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // L'identifiant du stream LDP.
+> }
+> ```
 
 The GET request allows you to list your subscriptions.
+
+### Step 3 - Create Logs Data Platform stream
+
+> [!primary]
+> Hosted Private Cloud and LDP resources must belong to the same OVHcloud account.
+>
+
+#### Via the OVHcloud control panel
+
+You can refer to this guide to find out how to manage your streams via the Logs Data Platform control panel: “[Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)” (EN).
+
+Retrieve the **streamId** and save (copy and paste) it. You will need it to activate your Hosted Private Cloud subscription with the Logs Data Platform stream in question.
+
+In the next step, we will look at how to create a stream.
 
 ### Step 4 - Manage your Data Logs Platform streams
 
@@ -176,7 +167,7 @@ Use the following API calls to list subscriptions to your Hosted Private Cloud a
 
 **HPC LDP**: Logs Data Platform within Hosted Private Cloud.
 
-- Get the "subscriptionId":
+**How to get the `subscriptionId`** ?
 
 > [!api]
 > 
@@ -188,22 +179,21 @@ Use the following API calls to list subscriptions to your Hosted Private Cloud a
 > - `serviceName`: Service name of your VMware Hosted Private Cloud on OVHcloud service, in the form `pcc-XXX-XXX-XXX-XXX`.
 > - `kind`: Name of the Hosted Private Cloud subscription log type (e.g. "esxi").
 >
+> Return example:
+>
+> ```shell
+> [
+> "9a36b2ec-c7d2-411d-acf8-qb64ccffdb54"
+> ]
+> ```
 
-Return example:
-
-```shell
-[
-  "9a36b2ec-c7d2-411d-acf8-qb64ccffdb54"
-]
-```
-
-- Disabling your Hosted Private Cloud Log Data Platform subscription:
+**How to disable your Hosted Private Cloud Log Data Platform subscription**?
 
 > [!primary]
 > 
 > Canceling your Hosted Private Cloud LDP subscription will not delete your streams. The storage used at the time of deactivation is subject to billing.
 > 
-> **Note**: It is only possible (from this date) to delete a stream, in full, only.
+> **Note**: It is only possible (for now) to delete a stream in full.
 >
 
 > [!api]
@@ -216,26 +206,25 @@ Return example:
 > - `serviceName`: Service name of your VMware Hosted Private Cloud on OVHcloud, in the form `pcc-XXX-XXX-XXX-XXX`.
 > - `subscriptionId`: The log type name of the subscription (e.g. "esxi").
 >
+> Return:
+>
+> ```shell
+> {
+>  "operationId": "456eb42e-58r6-4cfd-8r5c-ccr97273712r",
+>  "serviceName": "ldp-vg-XXXX"
+> }
+> ```
 
 You will get the **operationId**, which is the identifier that confirms that the deactivation operation has been successful.
 
-Return:
-
-```shell
-{
-  "operationId": "456eb42e-58r6-4cfd-8r5c-ccr97273712r",
-  "serviceName": "ldp-vg-XXXX"
-}
-```
+## Go further
 
 **Glossary**
 
 - **Logs Data Platform (LDP):** A logs management platform fully managed and secured by OVHcloud. For more information, see the [LDP overview page](/links/manage-operate/ldp).
 - **Data Stream:** A logical partition of logs that you create in a Logs Data Platform account and use when ingesting, viewing or querying your logs. Multiple sources can be stored in the same data stream, and the unit can be used to define a log pipeline (retention policy, archiving, live streaming, etc.), access rights and alert policies.
-- **Log Transfer:** A feature built into an OVHcloud product to integrate logs for its services into the *Data Stream* of a Logs Data Platform account with the same OVHcloud account. This feature must be enabled by you and for your service. Read this part of the guide to enable it: [Step 1 - How to enable logs transfer via the OVHcloud API](#activation).
+- **Log Transfer:** A feature built into an OVHcloud product to integrate logs for its services into the *Data Stream* of a Logs Data Platform account with the same OVHcloud account. This feature must be enabled by you and for your service. Read this part of the guide to enable it: [Step 2 - Logs Data Platform subscription for managed vSphere via the API](#activation).
 - **Log Redirection Subscription:** When enabling logs forwarding for your OVHcloud service to a given *Data Stream* Logs Data Platform, a *subscription* must be created and attached to the *Data Stream* for future management.
-
-## Go further
 
 You can follow these guides to take advantage of the Hosted Private Cloud Logs Data Platform features:
 
