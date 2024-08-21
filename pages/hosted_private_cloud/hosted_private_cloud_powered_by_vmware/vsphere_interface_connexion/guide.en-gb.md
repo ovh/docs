@@ -6,7 +6,7 @@ updated: 2024-08-21
 
 ## Objective
 
-**The objective is to show you how to log in to your managed vSphere Web interface from the HPC* VMware on OVHcloud control panel.**
+**The objective is to show you how to log in to your managed vSphere Web interface from the HPC VMware on OVHcloud control panel.**
 
 ## Requirements
 
