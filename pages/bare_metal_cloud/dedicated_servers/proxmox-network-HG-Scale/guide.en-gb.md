@@ -6,7 +6,7 @@ updated: 2024-08-21
 
 > [!primary]
 >
-> Since 06 October 2022, our failover IP solution has been named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This has no impact on its features.
+> Since 06 October 2022, our Additionnal IP solution has been named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This has no impact on its features.
 >
 
 ## Objective
@@ -267,7 +267,7 @@ This configuration is more flexible. You do not need to associate Additional IP 
 
 > [!warning]
 >
-> It is not possible to use a failover IP (/32) directly in the vRack. To use a failover IP, it must be [configured on a public interface](#additionalipmoderoute) and cannot be directly integrated into the vRack.
+> It is not possible to use a Addtionnal IP (/32) directly in the vRack. To use a Additionnal IP, it must be [configured on a public interface](#additionalipmoderoute) and cannot be directly integrated into the vRack.
 >
 
 #### Requirements
