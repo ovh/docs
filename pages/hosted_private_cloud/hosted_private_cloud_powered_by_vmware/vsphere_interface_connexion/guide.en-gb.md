@@ -6,12 +6,12 @@ updated: 2024-08-21
 
 ## Objective
 
-**The objective is to show you how to log in to your managed vSphere Web interface from the HPC VMware on OVHcloud control panel.**
+**This guide will show you how to log in to your managed vSphere Web interface from the HPC VMware on OVHcloud control panel.**
 
 ## Requirements
 
-- You must be administrator of the [Hosted Private Cloud](/links/hosted-private-cloud/vmware) infrastructure.
-- You need to have added IP addresses in the `Sécurity` section of your [OVHcloud Control Panel](/links/manager). For more information, please read our guide on [Authorizing IPs to connect to vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter).
+- You must be the administrator of the [Hosted Private Cloud](/links/hosted-private-cloud/vmware) infrastructure.
+- IP addresses added in the `Security`{.action}  section of your [OVHcloud Control Panel](/links/manager). For more information, please read our guide on [Authorizing IPs to connect to vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter).
 
 To use IAM, you must enable the feature in order to delegate rights management with a role. Please read the guides:
 
@@ -21,37 +21,37 @@ To use IAM, you must enable the feature in order to delegate rights management w
 
 ## Instructions
 
-To log in to the managed vSphere Web interface, you need OVHcloud login credentials. A vSphere user (with a local user), or a vSphere rôle (with IAM).
+To log in to the managed vSphere Web interface, you need OVHcloud login credentials. It can be either a vSphere user (with a local user), or a vSphere rôle (with IAM).
 
-### Step 1 - User management with vSphere and OVHcloud
+### Step 1 - Users management with vSphere and OVHcloud
 
 #### From the OVHcloud Control Panel
 
 You can manage your login credentials via the OVHcloud Control Panel for your VMware product managed on OVHcloud.
 
-Log in to the [OVHcloud Control Panel](/links/manager) and click on the `Hosted Private Cloud`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager) and click the `Hosted Private Cloud`{.action} tab.
 
 Click on the `VMware`{.action} section, select your infrastructure, then go to the `Users`{.action} tab.
 
 Under the `Manage user permissions in the vSphere client`{.action} section, click `Create a user`{.action} or `Edit`{.action} an existing user.
 
-![Connexion à l'interface vSphere HTML5](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/vmware_users.png){.thumbnail}
+![Logging in to vSphere HTML5](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/vmware_users.png){.thumbnail}
 
-For your knowledge, if you edit an existing user by clicking on the `...`{.action} button to the right of a user. You can modify the users or the IAM roles, modify the permissions by DC, change the password or delete the users.
+When clicking  the `...`{.action} button to the right of a user, you can modify the users or the IAM roles, modify the permissions per DC, change the password or delete a user.
 
-![Connexion à l'interface vSphere HTML5](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/vmware_user_modification.png){.thumbnail}
+![Logging in to vSphere HTML5](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/vmware_user_modification.png){.thumbnail}
 
 #### From the OVHcloud API
 
-You can manage users via the OVHcloud API, within Hosted Private Cloud.
+You can manage users via the OVHcloud API.
 
 > [!primary] 
-> If you are unfamiliar using the OVHcloud API, please refer to our [Getting started guide with OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
+> If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 >
 
 Here are some examples of API calls:
 
-- Create a user:
+- Creating a user:
 
 > [!api]
 >
@@ -63,7 +63,7 @@ Here are some examples of API calls:
 > - `serviceName`: your service in the form of pcc-XX-XX-XX-XX.
 > - ` userId`: the name of your user in the form below.
 >
-> Example:
+> **Example**:
 >
 > ```shell
 > {
@@ -71,7 +71,7 @@ Here are some examples of API calls:
 > }
 > ```
 
-- Change a user password:
+- Changing a user password:
 
 > [!api]
 >
@@ -83,7 +83,7 @@ Here are some examples of API calls:
 > - `serviceName`: your service in the form of pcc-XX-XX-XX-XX.
 > - `userId`: the password of your user in the form below.
 >
-> Example:
+> **Example**:
 >
 > ```shell
 > {
@@ -93,37 +93,35 @@ Here are some examples of API calls:
 
 ### Step 2 - Log in to the managed vSphere Web interface
 
-#### From the OVHcloud Control Panel
-
 **Using the HTML5 Web Client**
 
 The HTML5 web client link is available on your Hosted Private Cloud VMware on OVHcloud control panel at this url: <https://pcc-xxx-xxx-xxx-xxx.ovh.xxx/ui> (replace pcc-xxx-xx-xx-xxx.ovh.xxx) with your IP and region.
 
-![Connexion à l'interface vSphere HTML5](images/vsphere_web_client_all.png){.thumbnail}
+![Logging in to vSphere HTML5](images/vsphere_web_client_all.png){.thumbnail}
 
 You will then access this Web interface:
 
-![Connexion à l'interface vSphere HTML5](images/vsphere_web_client_iam_vs_local.png){.thumbnail}
+![Logging in to vSphere HTML5](images/vsphere_web_client_iam_vs_local.png){.thumbnail}
 
 With an IAM user:
 
-![Connexion à l'interface vSphere HTML5](images/vsphere_web_client_iam.png){.thumbnail}
+![Logging in to vSphere HTML5](images/vsphere_web_client_iam.png){.thumbnail}
 
 With a local user:
 
-![Connexion à l'interface vSphere HTML5](images/vsphere_web_client_local.png){.thumbnail}
+![Logging in to vSphere HTML5](images/vsphere_web_client_local.png){.thumbnail}
 
 On the `Home`{.action} page, you can view your managed vSphere's main menus.
 
-![Connexion à l'interface vSphere HTML5](images/vsphere_web_client_pcc_home.png){.thumbnail}
+![Logging in to vSphere HTML5](images/vsphere_web_client_pcc_home.png){.thumbnail}
 
-**Glossaire**
+**Glossary**
 
 - **HPC** : Hosted Private Cloud
 
 ## Go further
 
-This VMware document lists the different ports that you must open on your firewall to, for example, [Console access](https://kb.vmware.com/kb/1012382).
+To ensure access, please refer to the VMware documentation, in which the different ports to be opened in your firewall are listed: [Client access](https://kb.vmware.com/kb/1012382){.external}.
 
 If you require training or technical support to implement our solutions, please contact your Technical Account Manager or visit [this page](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 

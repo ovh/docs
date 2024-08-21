@@ -1,12 +1,12 @@
 ---
 title: "Se connecter à l’interface web vSphere"
-excerpt: "Découvrez les différentes façons de se connecter à votre interface web vSphere managé depuis l'interface Hosted Private Cloud VMware on OVHcloud"
+excerpt: "Découvrez les différentes façons de se connecter à votre interface web vSphere managée depuis l'interface Hosted Private Cloud VMware on OVHcloud"
 updated: 2024-08-21
 ---
 
 ## Objectif
 
-**L'objectif est de vous montrer comment vous connecter à votre interface Web vSphere managée depuis l'espace client HPC VMware on OVHcloud.**
+**Ce guide a pour objectif de vous montrer comment vous connecter à votre interface Web vSphere managée depuis l'espace client HPC VMware on OVHcloud.**
 
 ## Prérequis
 
@@ -21,7 +21,7 @@ Pour utiliser IAM, vous devez activer la fonctionnalité afin de déléguer la g
 
 ## En pratique
 
-Pour se connecter à la console web vSphere managé, vous avez besoin d'identifiants de connexion OVHcloud. Un utilisateur vSphere (avec utilisateur local), ou un rôle vSphere (avec IAM).
+Pour se connecter à la console web vSphere managée, vous avez besoin d'identifiants de connexion OVHcloud. Il peut s'agir d'un utilisateur vSphere (avec un utilisateur local), ou d'un rôle vSphere (avec IAM).
 
 ### Étape 1 - Gestion des utilisateurs avec vSphere et OVHcloud
 
@@ -37,7 +37,7 @@ Sous la section `Gestion des autorisations utilisateur dans le vSphere client`{.
 
 ![Connexion à l'interface vSphere HTML5](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/vmware_users.png){.thumbnail}
 
-Pour information, en cliquant sur le bouton `...`{.action} à droite d'un utilisateur, vous pouvez modifier les utilisateurs ou les rôles IAM, modifier les droits par DC, changer le mot de passe ou supprimer les utilisateurs.
+En cliquant sur le bouton `...`{.action} à droite d'un utilisateur, vous pouvez modifier les utilisateurs ou les rôles IAM, modifier les droits par DC, changer un mot de passe ou supprimer les utilisateurs.
 
 ![Connexion à l'interface vSphere HTML5](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/vmware_user_modification.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Voici quelques exemples d'appels API :
 > - `serviceName` : votre service sous la forme pcc-XX-XX-XX-XX.
 > - `name` : le nom de votre utilisateur sous la forme ci-dessous.
 > 
-> Exemple :
+> **Exemple** :
 >
 > ```shell
 > {
@@ -83,7 +83,7 @@ Voici quelques exemples d'appels API :
 > - `serviceName` : votre service sous la forme pcc-XX-XX-XX-XX.
 > - `userId` : le nom de votre utilisateur sous la forme ci-dessous.
 >
-> Exemple :
+> **Exemple** :
 >
 > ```shell
 > {
@@ -93,11 +93,9 @@ Voici quelques exemples d'appels API :
 
 ### Étape 2 - Connexion à l'interface Web vSphere managé
 
-#### Via l'espace client OVHcloud
-
 **Utilisation du Web client HTML5**
 
-Le lien du client Web HTML5 est disponible depuis l’espace client de votre Hosted Private Cloud VMware on OVHcloud à l’adresse url : <https://pcc-xxx-xxx-xxx-xxx.ovh.xxx/ui> (remplacez pcc-xxx-xx-xx-xxx.ovh.xxx) par votre IP et région.
+Le lien du client Web HTML5 est disponible depuis l’espace client de votre Hosted Private Cloud VMware on OVHcloud à l'URL <https://pcc-xxx-xxx-xxx-xxx.ovh.xxx/ui> (remplacez pcc-xxx-xx-xx-xxx.ovh.xxx) par votre IP et région.
 
 ![Connexion à l'interface vSphere HTML5](images/vsphere_web_client_all.png){.thumbnail}
 
