@@ -49,8 +49,7 @@ Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous ête
 >>
 > **iOS**
 >>
->> ![Install Softcall](images/assistant_ios_android.png
-){.thumbnail}
+>> ![Install Softcall](images/assistant_ios_android.png){.thumbnail}
 >>
 
 Récupérez le code ou le QR CODE de configuration vous permettant de télécharger votre configuration Softcall. Retrouvez le code et le QR CODE de configuration dans l'e-mail que vous avez reçu après avoir souscrit à l'offre Softcall.
