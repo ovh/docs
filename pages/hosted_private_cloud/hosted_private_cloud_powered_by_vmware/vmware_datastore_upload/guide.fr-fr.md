@@ -1,18 +1,17 @@
 ---
 title: "Utilisation de l'explorateur de fichiers Datastore"
 excerpt: "Découvrez comment utiliser l'uploader de fichiers Datastore VMware vSphere dédié afin de pouvoir importer des données dans un vSphere managé on OVHcloud"
-updated: 2024-08-20
+updated: 2024-08-21
 ---
 
 ## Objectif
 
 **L'objectif est d'uploader des fichiers (ISO, VMDK, OVA etc..) avec le client Web datastore vSphere managé.**
 
-
 ## Prérequis
 
 - Être connecté à [l'espace client OVHcloud](/links/manager)
-- Être administrateur technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+- Être administrateur technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
 
 ## En pratique
 
@@ -24,7 +23,9 @@ Suivez le guide suivant pour vous connecter l'interface web vSphere : [Se connec
 
 ### Étape 2 - Upload d'un ISO dans le datastore
 
-Cliquez sur `Stockage`{.action} dans l'inventaire VMware Host Client et cliquez sur `Banques de données`{.action}
+Vous devez ensuite accéder aux repertoires sur lequel vous voulez stocker vos fichiers et ISO. L'objectif étant de créer une arboréscence équilibré afin de retrouver facilement vos éléments au sein de votre cluster vSphere managé.
+
+Cliquez sur `Stockage`{.action} dans l'inventaire VMware de votre hôte et cliquez sur `Banques de données`{.action}
 
 ![Datastore Upload 02](images/datastore_inventory_2.png){.thumbnail}
 
