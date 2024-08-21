@@ -120,7 +120,7 @@ SSH PUB_IP_DEDICATED_SERVER
 >> iface bond0 inet static
 >> address PUB_IP_DEDICATED_SERVER/32
 >> 	gateway 100.64.0.1
->> 	    bond-slaves ens33f0 ens33f1
+>>         bond-slaves ens33f0 ens33f1
 >> 	bond-mode 4
 >> 	bond-miimon 100
 >> 	bond-downdelay 200
@@ -355,19 +355,19 @@ iface ens35f1 inet manual
 
 auto bond0
 iface bond0 inet dhcp
-bond-slaves ens33f0 ens33f1
-bond-miimon 100
-bond-mode 802.3ad
-post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
-post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+        bond-slaves ens33f0 ens33f1
+        bond-miimon 100
+        bond-mode 802.3ad
+        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
+        post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 auto bond1
 # LACP aggregate on private interfaces
 # No IP on it
 iface bond1 inet manual
-bond-slaves ens35f0 ens35f1
-bond-miimon 100
-bond-mode 802.3ad
+        bond-slaves ens35f0 ens35f1
+        bond-miimon 100
+        bond-mode 802.3ad
 
 #Private
 
@@ -375,9 +375,9 @@ auto vmbr1
 # Bridge connected on bond1 aggregate
 # No need for IPs
 iface vmbr1 inet manual
-bond1 bridge-ports
-bridge-stp off
-bridge-fd 0
+        bond1 bridge-ports
+        bridge-stp off
+        bridge-fd 0
 
 ```
 
@@ -391,9 +391,9 @@ Contents of file `/etc/network/interfaces`:
 auto lo ens18
 iface lo inet loopback
 iface ens18 inet static
-address 46.105.135.97
-netmask 255.255.255.240
-gateway 46.105.135.110
+        address 46.105.135.97
+        netmask 255.255.255.240
+        gateway 46.105.135.110
 ```
 
 ## Go further
