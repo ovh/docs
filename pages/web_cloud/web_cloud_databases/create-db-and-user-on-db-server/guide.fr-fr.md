@@ -27,7 +27,7 @@ Dirigez-vous dans l'onglet `Bases de données` et enfin sur `Ajouter une base de
 
 > [!primary]
 >
-> L'utilisation des schémas est actuellement indisponible sur les serveurs Web Cloud Databases en PostgreSQL.
+> La création de schémas PostgreSQL est actuellement indisponible sur les serveurs Web Cloud Databases.
 >
 
 Renseignez les champs en respectant les critères indiqués. Il est possible de créer directement un utilisateur en cochant la case **«Créer un utilisateur»** :
