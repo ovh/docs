@@ -6,11 +6,11 @@ updated: 2024-08-21
 
 ## Objectif
 
-**Ce guide vous présente comment se connecter à votre console web vSphere managé.**
+**L'objectif est de vous montrer comment vous connecter à votre interface Web vSphere managée depuis l'espace client HPC* VMware on OVHcloud.**
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](/links/hosted-private-cloud/vmware), pour recevoir des identifiants de connexion.
+- Être administrateur de l'infrastructure [Hosted Private Cloud](/links/hosted-private-cloud/vmware).
 - Avoir ajouté des adresses IP dans la section `Sécurité` de votre [espace client OVHcloud](/links/manager). Pour plus d'informations, consultez notre guide « [Autoriser des IP à se connecter au vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter) ».
 
 Pour utiliser IAM, vous devez activer la fonctionnalité afin de déléguer la gestion des droits avec un rôle. Veuillez lire les guides :
@@ -21,9 +21,9 @@ Pour utiliser IAM, vous devez activer la fonctionnalité afin de déléguer la g
 
 ## En pratique
 
-Pour se connecter à la console web vSphere managé, vous avez besoin d'identifiants de connexion OVHcloud, ainsi que d'un utilisateur vSphere (IAM ou local).
+Pour se connecter à la console web vSphere managé, vous avez besoin d'identifiants de connexion OVHcloud. Un utilisateur vSphere (avec utilisateur local), ou un rôle vSphere (avec IAM).
 
-### Étape 1 - Gestion des utilisateurs
+### Étape 1 - Gestion des utilisateurs avec vSphere et OVHcloud
 
 #### Via l'espace client OVHcloud
 
@@ -37,7 +37,7 @@ Sous la section `Gestion des autorisations utilisateur dans le vSphere client`{.
 
 ![Connexion à l'interface vSphere HTML5](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/vmware_users.png){.thumbnail}
 
-En cliquant sur le bouton `...`{.action} à droite d'un utilisateur, vous pouvez modifier celui-ci ou un rôle IAM, modifier les droits par DC, changer le mot de passe ou supprimer l'utilisateur.
+Pour information, en cliquant sur le bouton `...`{.action} à droite d'un utilisateur, vous pouvez modifier les utilisateurs ou les rôles IAM, modifier les droits par DC, changer le mot de passe ou supprimer les utilisateurs.
 
 ![Connexion à l'interface vSphere HTML5](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/vmware_user_modification.png){.thumbnail}
 
@@ -69,6 +69,7 @@ Voici quelques exemples d'appels API :
 > "name": "User name"
 > }
 > ```
+> 
 
 - Changer le mot de passe de votre utilisateur :
 
@@ -80,7 +81,7 @@ Voici quelques exemples d'appels API :
 > **Paramètres** :
 >
 > - `serviceName` : votre service sous la forme pcc-XX-XX-XX-XX.
-> - `password` : le nom de votre utilisateur sous la forme ci-dessous.
+> - `userId` : le nom de votre utilisateur sous la forme ci-dessous.
 >
 > Exemple :
 >
@@ -90,11 +91,13 @@ Voici quelques exemples d'appels API :
 > }
 > ```
 
-### Étape 2 - Connexion à l'interface web vSphere
+### Étape 2 - Connexion à l'interface Web vSphere managé
 
-**Utilisation du web client HTML5**
+#### Via l'espace client OVHcloud
 
-Le web client HTML5 est disponible sur l’interface web de votre Hosted Private Cloud à l’adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Hosted Private Cloud).
+**Utilisation du Web client HTML5**
+
+Le lien du client Web HTML5 est disponible depuis l’espace client de votre Hosted Private Cloud VMware on OVHcloud à l’adresse url : <https://pcc-xxx-xxx-xxx-xxx.ovh.xxx/ui> (remplacez pcc-xxx-xx-xx-xxx.ovh.xxx) par votre IP et région.
 
 ![Connexion à l'interface vSphere HTML5](images/vsphere_web_client_all.png){.thumbnail}
 
@@ -114,8 +117,14 @@ La page `Home`{.action} permet de retrouver les grands menus de votre vCenter.
 
 ![Connexion à l'interface vSphere HTML5](images/vsphere_web_client_pcc_home.png){.thumbnail}
 
+**Glossaire**
+
+- **HPC** : Hosted Private Cloud
+
 ## Aller plus loin
 
-Ce document de VMware répertorie les différents ports que vous devez ouvrir sur votre pare-feu pour, par exemple, accéder à la console : [Accès console](https://kb.vmware.com/kb/1012382).
+Ce document de VMware répertorie les différents ports que vous devez ouvrir sur votre pare-feu pour, par exemple, [accéder à la console](https://kb.vmware.com/kb/1012382).
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou rendez-vous sur [cette page](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
