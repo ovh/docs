@@ -126,7 +126,7 @@ Les actions et les URNs peuvent finir par un caractère *wildcard* `*`. Cela per
     - **allow**: Ensemble des actions autorisées pour les identités concernant les ressources. Toutes les actions sont refusées par défaut.
     - **deny**: Ensemble des actions explicitement interdites pour les identitités concernant les ressources. Une action interdite sera refusée quelque soient les actions autorisées dans d'autres politiques.
     - **except**: Extension du paramètre d'autorisation **allow**. Ensemble d'actions à ne pas autoriser même si elles sont incluses dans les actions **allow**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard. Contrairement au **deny**, **except** est limité au périmètre d'une seule politique.
-- **permissionsGroups**: Liste des [groupes de permissions](/pages/account_and_service_management/account_information/iam-permission-groups/) appliqués à cette politique.
+- **permissionsGroups**: Liste des [groupes de permissions](/pages/account_and_service_management/account_information/iam-permission-groups) appliqués à cette politique.
 - **expiredAt**: Date après laquelle la politique sera désactivée.
 - **createdAt**: Date de création de la politique.
 - **updateAt**: Dernière mise à jour de la politique.
