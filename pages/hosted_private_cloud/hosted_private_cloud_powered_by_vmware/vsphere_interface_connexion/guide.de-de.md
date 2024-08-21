@@ -61,7 +61,7 @@ Here are some examples of API calls:
 > **Parameters**:
 >
 > - `serviceName`: your service in the form of pcc-XX-XX-XX-XX.
-> - ` userId`: the name of your user in the form below.
+> - `name`: the name of your user in the form below.
 >
 > **Example**:
 >

@@ -81,7 +81,7 @@ Voici quelques exemples d'appels API :
 > **Paramètres** :
 >
 > - `serviceName` : votre service sous la forme pcc-XX-XX-XX-XX.
-> - `userId` : le nom de votre utilisateur sous la forme ci-dessous.
+> - `userId` : le mot de passer de votre utilisateur sous la forme ci-dessous.
 >
 > **Exemple** :
 >
