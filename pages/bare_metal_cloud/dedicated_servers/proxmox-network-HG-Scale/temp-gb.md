@@ -37,7 +37,7 @@ With this configuration, Additional IP addresses must be attached to a dedicated
 >>![schema route](images/schema_route2022.png){.thumbnail}<br>
 >>
 > ADVANCE range
->>![schema route](images/range-advance-01.png){.thumbnail}<br>
+>>![schema route](images/gamme-advance-01.png){.thumbnail}<br>
 >>
 
 #### Explanations
