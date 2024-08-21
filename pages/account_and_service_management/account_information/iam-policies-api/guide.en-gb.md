@@ -126,7 +126,7 @@ The URNs and actions can end with a `*` wildcard character. This allows referrin
   - **deny**: Array of actions explicitely denied for the identities regarding the resources. A denied action will be prevent no matter what others policies could allow
   - **except**: Extension of the **allow** parameter. Array of actions not to allow even though they are included in the **allow** actions. For instance, this is useful when there is a wildcard allow action but it is necessary to exclude a specific action that otherwise would be included in the wildcard. Contrary to **deny**, **except** is limited to the current policy scope.
 - **permissionsGroups**: List of [permissions groups](/pages/account_and_service_management/account_information/iam-permission-groups/) applied to this policy.
-- **expiredAt**: Date after wich the policy will be disable.
+- **expiredAt**: Date after which the policy will be disable.
 - **createdAt**: Creation date of the policy.
 - **updateAt**: Last update date of the policy.
 
