@@ -57,10 +57,10 @@ You need to:
 
 Log in to the Proxmox server via SSH:
 
-‘bash
+```bash
 SSH PUB_IP_DEDICATED_SERVER
 # you can also use the private IP configured on the vRack
-“
+```
 
 > [!tabs]
 > High Grade & SCALE ranges
@@ -71,27 +71,27 @@ SSH PUB_IP_DEDICATED_SERVER
 >>
 >> Add the following lines to `/etc/sysctl.conf`:
 >>
->> "text
+>> ```text
 >> # Enable ip_forward
 >> net.ipv4.ip_forward = 1
 >>
 >> # Enabling proxy_arp for public bond
 >> net.ipv4.conf.bond0.proxy_arp = 1
->> “
+>> ```
 >>
 >> Next, reload the sysctl configuration:
 >>
->> "bash
+>> ```bash
 >> sysctl -p
->> “
+>> ```
 >>
 >> ### Modifying file `/etc/network/interfaces`:
 >>
->> "bash
+>> ```bash
 >> vi /etc/network/interfaces
->> “
+>> ```
 >>
->> "bash
+>> ```bash
 >> auto lo
 >> iface lo inet loopback
 >>
@@ -168,17 +168,17 @@ SSH PUB_IP_DEDICATED_SERVER
 >>         bridge-vlan-aware yes
 >>         bridge-vids 2-4094
 >>
->> “
+>> ```
 > ADVANCE range
 >>> For servers from the ADVANCE range that do not have 4 network interfaces, there is no need to configure bonding. You can go directly to configuring the available interfaces.
 >>
 >> Everything happens in the file `/etc/network/interfaces`:
 >>
->> "bash
+>> ```bash
 >> vi /etc/network/interfaces
->> “
+>> ```
 >>
->> "bash
+>> ```bash
 >> auto lo
 >> iface lo inet loopback
 >>
@@ -195,14 +195,14 @@ SSH PUB_IP_DEDICATED_SERVER
 >>     bridge-fd 0
 >>     up ip route add ADDITIONAL_IP/32 dev $IFACE
 >>     up ip route add ADDITIONAL_IP_BLOCK/28 dev $IFACE
->> “
+>> ```
 
 
 At this point, restart the network services or reboot the server:
 
-‘bash
+```bash
 systemctl restart networking.service
-“
+```
 
 When you restart the network services, the bridges (for example, vmbr0) may be in the idle state. This is because Proxmox disconnects each VM from the bridges and does not reconnect them. To force the VMs to reconnect to the bridges, you can restart the VMs.
 
@@ -212,7 +212,7 @@ When you restart the network services, the bridges (for example, vmbr0) may be i
 > Debian
 >> Contents of file `/etc/network/interfaces`:
 >>
->> "bash
+>> ```bash
 >> auto lo
 >> iface lo inet loopback
 >>
@@ -226,12 +226,12 @@ When you restart the network services, the bridges (for example, vmbr0) may be i
 >>   # The "src" option must be set in order for packets to reach the Internet
 >>   # have public IP as source, not private IP 192.168.0.2
 >>   up ip route replace default via 192.168.0.1 dev $IFACE onlink src ADDITIONAL_IP
->> “
+>> ```
 >>
 > Ubuntu
 >> Contents of file `/etc/netplan/01-eth0.yaml`:
 >>
->> "yaml
+>> ```yaml
 >> network:
 >>   version: 2
 >>   ethernets:
@@ -245,7 +245,7 @@ When you restart the network services, the bridges (for example, vmbr0) may be i
 >>           # So that packets destined for the Internet have as their source
 >>           # the public IP and not the private IP 192.168.0.3
 >>           from: ADDITIONAL_IP
->> “
+>> ```
 >>
 
 
@@ -255,10 +255,10 @@ From now on, your virtual machines should be able to join a public service on th
 
 To check your public IP, from the VM:
 
-‘bash
+```bash
 curl ifconfig.io
 ADDITIONAL_IP    				# must return your additional ip
-“
+```
 
 ### Additional IP via the vRack
 
@@ -297,7 +297,7 @@ Select your vRack from the list to view the list of eligible services. Click on 
 
 In the case of the vRack, the first, penultimate and last addresses of a given IP block are always reserved for the network address, network gateway and network *broadcast* respectively. This means that the first usable address is the second address in the block, as shown below:
 
-“sh
+```sh
 46,105,135,96   # Reserved: network address
 46,105,135,97   # First usable IP
 46,105,135,98
@@ -314,7 +314,7 @@ In the case of the vRack, the first, penultimate and last addresses of a given I
 46,105,135,109   # Last usable IP
 46,105,135,110   # Reserved: network gateway
 46,105,135,111   # Reserved: Network broadcast
-“
+```
 
 To configure the first usable IP address, you must edit the network configuration file as shown below. In this example, use a subnet mask of **255.255.255.240**.
 
@@ -327,13 +327,13 @@ To configure the first usable IP address, you must edit the network configuratio
 
 Everything happens in the file `/etc/network/interfaces`:
 
-‘bash
+```bash
 vi /etc/network/interfaces
-“
+```
 
 What matters here is the `bond1` and `vmbr1` configuration:
 
-‘bash
+```bash
 auto-lo
 iface lo inet loopback
 
@@ -379,7 +379,7 @@ bond1 bridge-ports
 bridge-stp off
 bridge-fd 0
 
-“
+```
 
 At this point, restart the network services or reboot the server.
 
@@ -387,14 +387,14 @@ At this point, restart the network services or reboot the server.
 
 Contents of file `/etc/network/interfaces`:
 
-‘bash
+```bash
 auto lo ens18
 iface lo inet loopback
 iface ens18 inet static
 address 46.105.135.97
 netmask 255.255.255.240
 gateway 46.105.135.110
-“
+```
 
 ## Go further
 
