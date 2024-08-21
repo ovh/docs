@@ -120,7 +120,7 @@ SSH PUB_IP_DEDICATED_SERVER
 >> iface bond0 inet static
 >> address PUB_IP_DEDICATED_SERVER/32
 >> 	gateway 100.64.0.1
->> 	bond-slaves ens33f0 ens33f1
+>> 	    bond-slaves ens33f0 ens33f1
 >> 	bond-mode 4
 >> 	bond-miimon 100
 >> 	bond-downdelay 200
