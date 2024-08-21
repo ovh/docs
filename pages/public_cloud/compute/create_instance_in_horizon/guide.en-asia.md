@@ -175,4 +175,4 @@ Please note that these options are not mandatory for the creation of a basic ins
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
