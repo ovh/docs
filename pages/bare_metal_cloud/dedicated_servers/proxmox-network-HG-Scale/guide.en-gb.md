@@ -298,22 +298,22 @@ Select your vRack from the list to view the list of eligible services. Click on 
 In the case of the vRack, the first, penultimate and last addresses of a given IP block are always reserved for the network address, network gateway and network *broadcast* respectively. This means that the first usable address is the second address in the block, as shown below:
 
 ```sh
-46,105,135,96   # Reserved: network address
-46,105,135,97   # First usable IP
-46,105,135,98
-46,105,135,99
-46,105,135,100
-46,105,135,101
-46,105,135,102
-46,105,135,103
-46,105,135,104
-46,105,135,105
-46,105,135,106
-46,105,135,107
-46,105,135,108
-46,105,135,109   # Last usable IP
-46,105,135,110   # Reserved: network gateway
-46,105,135,111   # Reserved: Network broadcast
+46.105.135.96   # Reserved: network address
+46.105.135.97   # First usable IP
+46.105.135.98
+46.105.135.99
+46.105.135.100
+46.105.135.101
+46.105.135.102
+46.105.135.103
+46.105.135.104
+46.105.135.105
+46.105.135.106
+46.105.135.107
+46.105.135.108
+46.105.135.109   # Last usable IP
+46.105.135.110   # Reserved: network gateway
+46.105.135.111   # Reserved: Network broadcast
 ```
 
 To configure the first usable IP address, you must edit the network configuration file as shown below. In this example, use a subnet mask of **255.255.255.240**.
