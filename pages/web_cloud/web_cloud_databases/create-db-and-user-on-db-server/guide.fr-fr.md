@@ -1,7 +1,7 @@
 ---
 title: 'Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données'
 excerpt: 'Découvrez comment créer une base de données sur votre serveur de bases de données.'
-updated: 2023-02-15
+updated: 2024-08-21
 ---
 
 ## Objectif
@@ -19,11 +19,16 @@ Une base de données (*database*, « DB » ou « BDD ») permet de stocker des �
 
 ### Créer une base de données
 
-Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
 Dirigez-vous dans l'onglet `Bases de données` et enfin sur `Ajouter une base de données`{.action}
 
 ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
+
+> [!primary]
+>
+> La création de schémas PostgreSQL est actuellement indisponible sur les serveurs Web Cloud Databases.
+>
 
 Renseignez les champs en respectant les critères indiqués. Il est possible de créer directement un utilisateur en cochant la case **«Créer un utilisateur»** :
 
