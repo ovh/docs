@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-07-05
+updated: 2024-08-09
 ---
 
 <style>
@@ -97,34 +97,34 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
         <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
-        <td>Express One Zone</td> 
+        <td>EXPRESS_ONEZONE</td> 
         <td rowspan=9>Standard</td>
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>Standard</td>
+        <td>STANDARD</td>
         <td rowspan=8>Standard</td>
     </tr>
     <tr>
         <td>Par défaut *</td>
     </tr>
     <tr>
-         <td>Standard IA</td>     
+         <td>STANDARD_IA</td>     
     </tr>
     <tr>
-        <td>Intelligent Tiering</td>
+        <td>INTELLIGENT_TIERING</td>
     </tr>
     <tr>
-        <td>One Zone IA</td>
+        <td>ONEZONE_IA</td>
     </tr>
     <tr>
-        <td>Glacier Instant Retrieval</td>
+        <td>GLACIER_IR</td>
     </tr>
     <tr>
-        <td>Glacier Flexible</td>
+        <td>GLACIER</td>
     </tr>
     <tr>
-        <td>Glacier Deep Archive</td>
+        <td>DEEP_ARCHIVE</td>
     </tr>
 </table>
 
@@ -138,11 +138,11 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
         <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
-        <td>Express One Zone</td> 
+        <td>EXPRESS_ONEZONE</td> 
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>Standard</td>
+        <td>STANDARD</td>
         <td>Standard</td>
     </tr>
 </table>
@@ -150,7 +150,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 > [!warning]
 > Contrairement à AWS, Express One Zone sera traité comme une classe de stockage régulière par OVHcloud et toutes les fonctionnalités S3 et les opérations d'API seront disponibles.
 
-![Schema 1](images/io-mapping.png)
+![Schema 1](images/io-mapping-v2.png)
 
 > [!warning]
 > - La classe de stockage ne sera plus définie au niveau de la création du bucket, mais au niveau de l'upload d'objets individuels.
@@ -169,34 +169,34 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
         <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
-        <td>Express One Zone</td> 
+        <td>EXPRESS_ONEZONE</td> 
         <td rowspan=9>High Performance</td>
         <td rowspan=3>High Performance</td>
     </tr>
     <tr>
-        <td>Standard</td>
+        <td>STANDARD</td>
     </tr>
     <tr>
         <td>Par défaut *</td>
     </tr>
     <tr>
-         <td>Standard IA</td>
+         <td>STANDARD_IA</td>
         <td rowspan=6>Standard</td>
     </tr>
     <tr>
-        <td>Intelligent Tiering</td>
+        <td>INTELLIGENT_TIERING</td>
     </tr>
     <tr>
-        <td>One Zone IA</td>
+        <td>ONEZONE_IA</td>
     </tr>
     <tr>
-        <td>Glacier Instant Retrieval</td>
+        <td>GLACIER_IR</td>
     </tr>
     <tr>
-        <td>Glacier Flexible</td>
+        <td>GLACIER</td>
     </tr>
     <tr>
-        <td>Glacier Deep Archive</td>
+        <td>DEEP_ARCHIVE</td>
     </tr>
 </table>
 
@@ -210,16 +210,16 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
         <th>Mapping OVHcloud à partir du 10/06/2024</th>
     </tr>
     <tr>
-        <td>Standard</td> 
+        <td>STANDARD</td> 
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>Standard IA</td>
+        <td>STANDARD_IA</td>
         <td>Standard</td>
     </tr>
 </table>
 
-![Schema 2](images/perf-mapping.png)
+![Schema 2](images/perf-mapping-v2.png)
 
 ## Object Storage Swift
 

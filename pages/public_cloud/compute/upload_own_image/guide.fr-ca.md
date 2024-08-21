@@ -95,4 +95,4 @@ Une fois que votre image est prête à être importée, suivez les étapes ci-de
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

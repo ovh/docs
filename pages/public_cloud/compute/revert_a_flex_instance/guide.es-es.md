@@ -1,7 +1,7 @@
 ---
 title: Cambiar de una instancia flex a una instancia clásica
 excerpt: Cómo cambiar una instancia flex desde el panel de control de OpenStack Horizon
-updated: 2021-11-15
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -20,6 +20,14 @@ Una instancia *flex* es una instancia de disco único (50 GB) que ofrece un proc
 - [Crear un acceso a Horizon](/pages/public_cloud/compute/introducing_horizon).
 
 ## Procedimiento
+
+> [!warning] 
+> - Si actualiza de una instancia flex a una instancia clásica con más recursos, esto se considera una actualización. En este caso, se le facturará la diferencia. Al final del periodo de facturación, recibirá dos facturas.
+>
+> Si pasa de una instancia flexible a una instancia clásica con menos recursos, se considera un downgrade. En este caso, no se le facturará.
+>
+> - Si cambia de una instancia flexible a una instancia clásica con los mismos recursos, no se le facturará.
+>
 
 Conéctese a la [interfaz Horizon](https://horizon.cloud.ovh.net/auth/login/) y asegúrese de estar en la zona adecuada. Puede comprobarlo en la parte superior izquierda. 
 

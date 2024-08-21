@@ -17,7 +17,7 @@ Podczas tworzenia instancji można skonfigurować tylko jeden klucz SSH do pocz�
 ## Wymagania początkowe
 
 - Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 - Dostęp do instancji przez SSH jako administrator (sudo)
 
 ## W praktyce

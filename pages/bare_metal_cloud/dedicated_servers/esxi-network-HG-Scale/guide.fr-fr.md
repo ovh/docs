@@ -23,7 +23,7 @@ Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode *
 * Préparer votre plage d'adresses IP privées choisies.
 * Disposer d'un [serveur dédié compatible vRack](https://www.ovh.com/fr/serveurs_dedies/){.external}.
 * Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
-* Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+* Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
@@ -42,7 +42,7 @@ Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode *
 
 ### Additional IP via le vRack
 
-Premièrement, ajoutez votre bloc public d'adresses IP au vRack. Pour ce faire, allez dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et ouvrez le menu `vRack`{.action}.
+Premièrement, ajoutez votre bloc public d'adresses IP au vRack. Pour ce faire, allez dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](/links/manager){.external} et ouvrez le menu `vRack`{.action}.
 
 Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur le bloc public d'adresses IP que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
@@ -59,7 +59,7 @@ Un premier vSwitch existe mais ne comporte qu'une interface `vmnic2`.
 
 > [!primary]
 >
-> Vérifiez que votre configuration est semblable. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou via l'API OVHcloud.
+> Vérifiez que votre configuration est semblable. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](/links/manager) ou via l'API OVHcloud.
 >
 
 #### Explications

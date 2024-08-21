@@ -28,7 +28,7 @@ In dieser Anleitung erfahren Sie Schritt für Schritt, wie Sie Ihre WordPress We
 
 ### Schritt 1: Backup der Dateien und Datenbanken Ihrer WordPress Website
 
-Der erste Schritt besteht darin, alle Dateien zu Ihrer WordPress Website abzurufen. Dazu gehören WordPress Dateien und Ihre Datenbank. Dann lesen Sie unsere Anleitung "[Backup Ihrer WordPress Website](/pages/web_cloud/web_hosting/how_to_backup_your_wordpress)".
+Der erste Schritt besteht darin, alle Dateien zu Ihrer WordPress Website abzurufen. Dazu gehören die Dateien von WordPress und Ihre Datenbank. Folgen Sie unserer Anleitung "[Backup Ihrer WordPress Website](/pages/web_cloud/web_hosting/how_to_backup_your_wordpress)".
 
 ### Schritt 2: Ihre WordPress Website zu OVHcloud übertragen
 

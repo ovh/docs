@@ -234,4 +234,4 @@ N'hésitez pas à expérimenter car vous pouvez toujours supprimer les règles d
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

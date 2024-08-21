@@ -118,4 +118,4 @@ Attached disks may be displayed as `Dynamic Volumes`. To access them, please ref
 
 [How to activate and use rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

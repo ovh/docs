@@ -1,18 +1,20 @@
 ---
 title: 'GPU Instanzen einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie unter Windows und Linux eine GPU Instanz einrichten'
-updated: 2024-07-08
+updated: 2024-07-17
 ---
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
 
 ## Ziel
 
 Die GPU Instanzen sind den Instanzen aus der Produktreihe 2017 technisch ähnlich, verfügen jedoch zusätzlich über eine Grafikkarte (Graphic Processing Unit oder GPU). Die verwendete Technik (*pci_passthrough*) ermöglicht es dem Betriebssystem der Instanz, die GPU genau wie auf einer physischen Maschine zu steuern.
 
-ei den eingesetzten GPUs handelt es sich um NVIDIA Tesla V100 und V100s.
-
 > [!warning]
 >
-> Derzeit sind die meisten unserer alten GPU-Instanzen nur in den Regionen GRA7, GRA9, GRA11 und BHS5 verfügbar. Neuere Modelle sind derzeit nur in der Region GRA11 verfügbar.
+> Derzeit sind die meisten unserer alten GPU-Instanzen (Tesla V100 and V100s) nur in den Regionen GRA7, GRA9, GRA11 und BHS5 verfügbar. Neuere Modelle (A100, H100, L4 and L40s) sind derzeit nur in der Region GRA11 verfügbar.
 > 
 
 **Diese Anleitung erläutert, wie Sie eine GPU Instanz unter Linux oder Windows einrichten.**

@@ -26,7 +26,7 @@ Aby chronić usługi dostępne dla klientów korzystających z publicznych adres
 ## Wymagania początkowe
 
 - Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated server](https://www.ovhcloud.com/pl/bare-metal/), [VPS](https://www.ovhcloud.com/pl/vps/), [Public Cloud instance](https://www.ovhcloud.com/pl/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/) itd.)
-- Dostęp do [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > Ta funkcja może być niedostępna lub ograniczona na serwerach [**Eco** product line](https://eco.ovhcloud.com/pl/about/).

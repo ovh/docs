@@ -1,18 +1,20 @@
 ---
 title: 'Uruchomienie instancji GPU'
 excerpt: 'Dowiedz się, jak uruchomić instancję GPU z systemem Linux lub Windows'
-updated: 2024-07-08
+updated: 2024-07-17
 ---
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji” na tej stronie.
+>
 
 ## Wprowadzenie
 
 Instancje GPU są technicznie podobne do instancji z oferty 2017, ale mają też kartę graficzną (procesor graficzny, GPU — Graphic Processing Unit). Zastosowana technologia (*pci_passthrough*) umożliwia systemowi operacyjnemu instancji sterowanie procesorem graficznym dokładnie tak samo, jak w przypadku komputera fizycznego.
 
-Oferowane procesory graficzne to NVIDIA Tesla V100 i V100s.
-
 > [!warning]
 >
-> Obecnie większość starych instancji GPU jest dostępna tylko w regionach GRA7, GRA9, i BHS5. Najnowsze modele są obecnie dostępne tylko w regionie.
+> Obecnie większość starych instancji GPU (Tesla V100 and V100s) jest dostępna tylko w regionach GRA7, GRA9, i BHS5. Najnowsze modele (A100, H100, L4 and L40s) są obecnie dostępne tylko w regionie.
 > 
 
 **Dowiedz się, jak uruchomić instancję GPU w systemie Linux lub Windows**

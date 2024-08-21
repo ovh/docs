@@ -6,7 +6,7 @@ updated: 2022-10-14
 
 ## Objectif
 
-Lorsque vous n’avez plus besoin d'un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), vous pouvez le supprimer directement depuis votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Lorsque vous n’avez plus besoin d'un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), vous pouvez le supprimer directement depuis votre espace client [OVHcloud](/links/manager).
 
 Lorsque vous supprimez un projet Public Cloud, une facture finale est émise qui contient le montant restant à payer.
 
@@ -21,11 +21,11 @@ Lorsque vous supprimez un projet, les ressources qu'il contient sont définitive
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Public Cloud`{.action} dans la barre de menu supérieure.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Public Cloud`{.action} dans la barre de menu supérieure.
 
 Sélectionnez votre projet puis cliquez sur `Project settings`{.action} dans la partie `Project Management` tout en bas du menu latéral de gauche.
 
@@ -55,4 +55,4 @@ Une fois votre mot de passe saisi et confirmé, votre projet entrera en phase de
 
 [Créer une première instance Public Cloud et s’y connecter](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

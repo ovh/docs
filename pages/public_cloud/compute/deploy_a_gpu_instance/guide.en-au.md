@@ -1,19 +1,17 @@
 ---
 title: 'Deploying a GPU instance'
 excerpt: 'Find out how to deploy a GPU instance on Linux or Windows'
-updated: 2024-07-03
+updated: 2024-07-17
 ---
 
 ## Objective
 
 GPU instances are technically similar to the instances from the older range, but they also have a graphics card (Graphic Processing Unit or GPU). The technology used (*pci_passthrough*) allows the instance’s operating system to control the GPU in exactly the same way a physical machine would.
 
-The GPUs offered are the NVIDIA Tesla V100 and V100s. 
-
 > [!warning]
 >
-> At the moment, most of our old GPU instances are only available in the GRA7, GRA9, GRA11, and BHS5 regions. The newer models are only available in the GRA11 region for now.
->  
+> At the moment, most of our old GPU instances (Tesla V100 and V100s) are only available in the GRA7, GRA9, GRA11, and BHS5 regions. The newer models (A100, H100, L4 and L40s) are only available in the GRA11 region for now.
+>
 
 **This guide explains how to deploy a GPU instance on Linux or Windows**
 
@@ -159,4 +157,4 @@ Afterwards, all that’s left to do is to install the required driver, which wil
 
 ## Going further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

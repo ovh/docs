@@ -21,7 +21,7 @@ Nos serveurs dédiés Game incluent une protection anti-DDoS spécialement conç
 ## Prérequis
 
 - Un [serveur dédié OVHcloud **Game**](https://www.ovhcloud.com/fr/bare-metal/prices/#filterType=range_element&filterValue=game)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les serveurs de la [**gamme Eco**](https://eco.ovhcloud.com/fr/about/).

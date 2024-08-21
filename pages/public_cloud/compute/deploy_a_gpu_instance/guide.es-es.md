@@ -1,18 +1,20 @@
 ---
 title: 'Desplegar una instancia GPU'
 excerpt: 'Cómo desplegar una instancia GPU en Linux o Windows'
-updated: 2024-07-08
+updated: 2024-07-17
 ---
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
 
 ## Objetivo
 
 Las instancias GPU son técnicamente similares a las instancias de la gama 2017, pero disponen además de una tarjeta gráfica (Graphic Processing Unit o GPU). La tecnología utilizada (*pci_passthrough*) permite que el sistema operativo de la instancia controle la GPU exactamente igual que en una máquina física.
 
-Las GPU que se ofrecen son las NVIDIA Tesla V100 y V100s.
-
 > [!warning]
 >
-> Actualmente, la mayoría de nuestras antiguas instancias GPU solo están disponibles en las regiones GRA7, GRA9, GRA11 y BHS5. Por el momento, los modelos más recientes sólo están disponibles en GRA11.
+> Actualmente, la mayoría de nuestras antiguas instancias GPU (Tesla V100 and V100s) solo están disponibles en las regiones GRA7, GRA9, GRA11 y BHS5. Por el momento, los modelos más recientes (A100, H100, L4 and L40s) sólo están disponibles en GRA11.
 > 
 
 **Esta guía explica cómo instrumentar una instancia de GPU en Linux o Windows**

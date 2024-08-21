@@ -37,6 +37,8 @@ No olvide consultar nuestras guías Primeros pasos: <a name="getstarted"></a>
 
 Para más información, consulte la guía de presentación del [protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
+<a name="create-ssh-key"></a>
+
 ### Crear un par de claves SSH
 
 Las siguientes instrucciones cubren dos métodos de uso de llaves SSH:

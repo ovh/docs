@@ -68,7 +68,7 @@ Once you have modified your domain name’s DNS zone, you will need to allow a m
 
 Once done, add the PTR record (also known as the reverse):
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Bare Metal Cloud`{.action} section and open `Network`{.action}. Next, click on `IP`{.action}.
+In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Bare Metal Cloud`{.action} section and open `Network`{.action}. Next, click on `IP`{.action}.
 
 If you wish to configure the reverse DNS on an Additional IP, click on the `Additional IP`{.action} tab.
 
@@ -152,4 +152,4 @@ You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.e
 
 To get support setting up your OVHcloud solutions, contact our [network of OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

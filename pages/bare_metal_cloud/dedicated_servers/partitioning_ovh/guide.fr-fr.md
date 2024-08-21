@@ -299,4 +299,4 @@ Afin d'améliorer l'expérience client, réduire la charge de travail du support
 
 [Configurer votre MegaRAID en RAID 0](/pages/bare_metal_cloud/dedicated_servers/megaraid_config)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

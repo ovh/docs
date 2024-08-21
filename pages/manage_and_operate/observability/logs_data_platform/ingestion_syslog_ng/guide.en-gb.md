@@ -136,7 +136,7 @@ Let's recap: you have a Linux instance, and it's sending log locally and remotel
 
 The last step is to create a dashboard displaying the results:
 
-- Connect to the Logs Data Platform manager, ensure you that you have a Stream and that the token in the syslog configuration file is OK. Ensure that you have a Dashboard created.
+- Connect to the Logs Data Platform manager, ensure that you have a Stream and that the token in the syslog configuration file is OK. Ensure that you have a Dashboard created.
 - Head to your stream by using the button `Graylog access`{.action} located in the **...** menu of your stream, or head directly to the graylog access of your cluster.
 - Once in Graylog, Go in Stream Tab, click on your stream. In the top-left corner, chose a 1 Day range and click on the green button to search.
 - You should have some results like this:
@@ -145,7 +145,7 @@ The last step is to create a dashboard displaying the results:
 
 - On the top right corner of the histogram, click on `Add to dashboard`{.action}.
 
-Alright, you just created the first widget in you dashboard. Now, let's create a Pie chart:
+Alright, you just created the first widget in your dashboard. Now, let's create a Pie chart:
 
 - On the left, click on the small blue triangle before "facility"
 - Click on "Quick Values"

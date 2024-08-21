@@ -19,7 +19,7 @@ We will help you get started using Heat, and the *stacks* that represent orchest
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- access to the [OVHcloud Control Panel](/links/manager){.external}
 - a Public Cloud project
 - an OpenStack user account
 - how to manipulate YAML files
@@ -214,4 +214,4 @@ Are you sure you want to delete this stack(s) [y/N]? y
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

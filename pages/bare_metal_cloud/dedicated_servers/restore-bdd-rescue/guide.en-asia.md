@@ -13,7 +13,7 @@ With rescue mode, you can always access your data, even if the server's OS or th
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/), a [VPS](https://www.ovhcloud.com/asia/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account (excluding Windows systems)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
@@ -258,4 +258,4 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

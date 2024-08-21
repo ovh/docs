@@ -276,7 +276,7 @@ Cette configuration est plus souple, vous n'avez pas à associer d'Additional IP
 * Préparer votre plage d'adresses IP privées choisies.
 * Posséder un [serveur compatible vRack](https://www.ovhcloud.com/fr/bare-metal/){.external}.
 * Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
-* Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+* Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 #### Schéma de la configuration cible
 

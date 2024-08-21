@@ -1,7 +1,7 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2024-07-05
+updated: 2024-08-08
 ---
 
 > [!warning]
@@ -262,7 +262,7 @@ spec:
 
 - `loadbalancer.openstack.org/keep-floatingip`
 
-  If 'true', the floating IP will **NOT** be deleted upon load balancer deletion. Default is 'false'. Useful if you want to keep your floating API after Load Balancer deletion.
+  If 'true', the floating IP will **NOT** be deleted upon load balancer deletion. Default is 'false'. Useful if you want to keep your Floating IP after Load Balancer deletion.
 
 - `loadbalancer.openstack.org/proxy-protocol`
 
@@ -312,7 +312,8 @@ spec:
 
   This annotation is automatically added to the Service if it's not specified when creating. After the Service is created successfully it shouldn't be changed, otherwise the Service won't behave as expected.
 
-  If this annotation is specified with a valid cloud load balancer ID when creating Service, the Service is reusing this load balancer rather than creating another one. Again, it shouldn't be changed after the Service is created.
+  If this annotation is specified with a valid cloud load balancer ID when creating Service, the Service is reusing this load balancer rather than creating another one. Please make sure that your load balancer is correctly named according to the [Naming Convention](#namingconvention) using 'kube_service_' as load balancer's name prefix.
+. Again, it shouldn't be changed after the Service is created.
 
   If this annotation is specified, the other annotations which define the load balancer features will be ignored.
 
@@ -388,7 +389,7 @@ test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 
 When exposing services like nginx-ingress-controller, it's a common requirement that the client connection information could pass through proxy servers and load balancers, therefore visible to the backend services. Knowing the originating IP address of a client may be useful for setting a particular language for a website, keeping a denylist of IP addresses, or simply for logging and statistics purposes. You can follow the official Cloud Controller Manager documentation on how to [Use PROXY protocol to preserve client IP](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#use-proxy-protocol-to-preserve-client-ip).
 
-### Migrate from Loadbalancer for Kubernetes to Public Cloud Load Balancer
+#### Migrate from Loadbalancer for Kubernetes to Public Cloud Load Balancer
 
 In order to migrate from an existing [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-sg/public-cloud/load-balancer-kubernetes/) to a [Public Cloud Load Balancer](https://www.ovhcloud.com/en-sg/public-cloud/load-balancer/) you will have to modify an existing Service and change its LoadBalancer class.
 
@@ -399,14 +400,14 @@ annotations:
   loadbalancer.ovhcloud.com/class: "iolb"
 ```
 
-#### Step 1 - Edit your Service to change the LoadBalancer class to 'octavia'
+##### Step 1 - Edit your Service to change the LoadBalancer class to 'octavia'
 
 ```yaml
 annotations:
   loadbalancer.ovhcloud.com/class: "octavia"
 ```
 
-#### Step 2 - Apply the change
+##### Step 2 - Apply the change
 
 ```yaml
 kubectl apply -f your-service-manifest.yaml
@@ -422,9 +423,9 @@ kubectl apply -f your-service-manifest.yaml
 
 #### Sharing load balancer with multiple Services
 
-By default, different Services of LoadBalancer type should have different corresponding cloud load balancers. However, the Cloud Controller Manager (CCM) allows multiple Services to share a single load balancer. We are currently working to provide this feature for General Availability laucnh. Official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services).
+By default, different Services of LoadBalancer type should have different corresponding cloud load balancers. However, the Cloud Controller Manager (CCM) allows multiple Services to share a single load balancer. We are currently working to provide this feature shortly. Official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services).
 
-## Resources Naming
+## Resources Naming Convention <a name="namingconvention"></a>
 
 When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, the Cloud Controller Manager (CCM) implementation will automatically create Public Cloud resources (LoadBalancer, Listener, Pool, Health-monitor, Gateway, Network, Subnet,...). In order to easily identify those resources, here are the naming templates:
 

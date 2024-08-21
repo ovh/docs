@@ -39,7 +39,7 @@ Minecraft è un videogioco da costruzione di successo globale. Per giocare in mo
 
 Il primo step consiste nella configurazione del tuo VPS per un'installazione di Minecraft.
 <br>
-Si raccomanda di ordinare un nuovo VPS o di reinstallarne uno esistente dal vostro [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), utilizzando l'ultima versione disponibile di Ubuntu o Debian. Si prega di fare riferimento alla nostra guida "[Iniziare a utilizzare un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps)" se necessario.
+Si raccomanda di ordinare un nuovo VPS o di reinstallarne uno esistente dal vostro [Spazio Cliente OVHcloud](/links/manager), utilizzando l'ultima versione disponibile di Ubuntu o Debian. Si prega di fare riferimento alla nostra guida "[Iniziare a utilizzare un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps)" se necessario.
 
 Una volta installato il sistema operativo, accedi al tuo VPS in SSH come descritto nella guida "[Iniziare a utilizzare un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps)".
 

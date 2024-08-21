@@ -58,4 +58,4 @@ Dès que vous êtes prêt à lancer la ou les instances souhaitées, cliquez sur
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

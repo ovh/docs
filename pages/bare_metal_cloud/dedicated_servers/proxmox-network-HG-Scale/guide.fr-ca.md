@@ -19,6 +19,7 @@ updated: 2024-08-21
 - Disposer d'adresses [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
+
 > [!warning]
 >
 > Aucune MAC virtuelle ne doit être appliquée sur les Additional IP dans l'espace client OVHcloud.
@@ -275,8 +276,8 @@ Cette configuration est plus souple, vous n'avez pas à associer d'Additional IP
 * Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses. Le bloc doit être pointé vers le vRack.
 * Préparer votre plage d'adresses IP privées choisies.
 * Posséder un [serveur compatible vRack](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
-* Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
-* Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+* Activer un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
+* Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 #### Schéma de la configuration cible
 

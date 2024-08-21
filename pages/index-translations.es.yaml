@@ -116,6 +116,9 @@ public-cloud-containers-orchestration-managed-private-registry-getting-started: 
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
 public-cloud-containers-orchestration-managed-rancher-service-getting-started: Getting started
+public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes: Creating or importing a Kubernetes cluster
+public-cloud-containers-orchestration-managed-rancher-service-operations-kubernetes: Operations on a Kubernetes cluster
+public-cloud-containers-orchestration-managed-rancher-service-deploy-applications: Deploying applications with Rancher
 public-cloud-data-analytics: Data Analytics
 public-cloud-data-analytics-data-processing: Data Processing
 public-cloud-data-analytics-data-processing-concepts: Conceptos
@@ -228,6 +231,7 @@ web-cloud-internet-internet-access-managing-your-options: Gestionar las opciones
 web-cloud-internet-internet-access-setting-up-your-access: Configurar los accesos
 web-cloud-internet-internet-access-troubleshooting: Resolución de problemas
 web-cloud-internet-overthebox: OverTheBox
+web-cloud-internet-overthebox-managing-your-offer: Gestionar las soluciones
 web-cloud-internet-overthebox-advanced-setup: Configuración avanzada
 web-cloud-internet-overthebox-getting-started: Primeros pasos
 web-cloud-internet-overthebox-initial-setup: Configuración inicial
@@ -342,7 +346,6 @@ network-load-balancer-getting-started: Primeros pasos
 network-load-balancer-setting-up: Configuración
 network-load-balancer-use-cases: Casos de uso
 network-load-balancer-viewing-statuses: Consultar los estados
-network-vrack-services: vRack Services
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6
 manage-operate-api-getting-started: Primeros pasos

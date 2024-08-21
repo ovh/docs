@@ -31,8 +31,7 @@ Create a new SSH key pair on your local device, as described in the first part o
 
 ### Step 2: Access your instance in rescue mode
 
-Follow the steps in the [rescue mode guide](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) to reboot the instance into rescue mode, connect to it and 
-mount your partitions.
+Follow the steps in the [rescue mode guide](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) to reboot the instance into rescue mode, connect to it and mount your partitions.
 
 Once you have used the `mount` command as described in the guide and your system partition is accessible, you can use the following command:
 

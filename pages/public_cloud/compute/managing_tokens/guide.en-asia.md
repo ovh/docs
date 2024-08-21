@@ -173,4 +173,4 @@ There are many libraries in different languages. For more information, see [the 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

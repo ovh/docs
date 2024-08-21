@@ -18,7 +18,7 @@ Este suele ser el método de conexión más seguro y práctico.
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
 - Instalar previamente una aplicación cliente SSH (línea de comandos o GUI)
 - Tener acceso de administrador (sudo) por SSH
@@ -36,6 +36,8 @@ No olvide consultar nuestras guías Primeros pasos: <a name="getstarted"></a>
 - para un [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
 Para más información, consulte la guía de presentación del [protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+<a name="create-ssh-key"></a>
 
 ### Crear un par de claves SSH
 

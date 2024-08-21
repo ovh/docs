@@ -18,7 +18,7 @@ Si configura su servidor dedicado como servidor DNS, puede utilizar el DNS de OV
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external}.
 - Tener un [dominio](https://www.ovhcloud.com/es/domains/){.external} gestionado administrativa o técnicamente.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
 
 > [!warning]
 >
@@ -31,7 +31,7 @@ Si configura su servidor dedicado como servidor DNS, puede utilizar el DNS de OV
 
 ### Añadir un dominio <a name="ajoutdomaine"></a>
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor bajo `Servidores dedicados`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor bajo `Servidores dedicados`{.action}.
 
 A continuación, abra la pestaña `DNS secundaria`{.action} y haga clic en el botón `Añadir un dominio`{.action}.
 
@@ -67,7 +67,7 @@ Es necesario confirmar la autorización para gestionar el dominio antes de poder
 
 - Si el dominio es gestionado por un agente registrador externo o utiliza servidores DNS externos en esta etapa, conéctese al área de cliente de su proveedor DNS y añada un registro TXT con el subdominio "ownercheck" y el valor proporcionado en el paso 2 de la [adición de dominio"](#ajoutdomaine).
 
-- Si el dominio es gestionado por OVHcloud como servidor de registro y utiliza servidores DNS de OVHcloud, cierre la ventana haciendo clic en `Cancelar`{.action}. A continuación, siga las indicaciones de [esta guía](/pages/web_cloud/domains/dns_zone_edit) para añadir el registro TXT al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Si el dominio es gestionado por OVHcloud como servidor de registro y utiliza servidores DNS de OVHcloud, cierre la ventana haciendo clic en `Cancelar`{.action}. A continuación, siga las indicaciones de [esta guía](/pages/web_cloud/domains/dns_zone_edit) para añadir el registro TXT al [área de cliente de OVHcloud](/links/manager).
 
 ![DNS secundario](images/cp-04.png){.thumbnail}
 

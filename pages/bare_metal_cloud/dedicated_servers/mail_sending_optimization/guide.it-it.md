@@ -72,7 +72,7 @@ Una volta modificata la zona DNS del dominio, la propagazione delle modifiche po
 
 Aggiungi il record PTR (alias noto come reverse):
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}. 
+Nello [Spazio Cliente OVHcloud](/links/manager){.external}, accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}. 
 
 Per configurare il Reverse DNS su un indirizzo Additional IP, clicca sulla scheda `Additional IP`{.action}.
 

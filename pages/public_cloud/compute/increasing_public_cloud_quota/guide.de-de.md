@@ -1,5 +1,5 @@
 ---
-title: 'Public Cloud Quote erhöhen'
+title: 'Public Cloud Quota erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
 updated: 2024-05-21
 ---
@@ -18,7 +18,7 @@ Um zusätzliche Ressourcen und Instanzen nutzen zu können, müssen deren Quotas
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben eine [gültige Zahlungsart](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) in Ihrem OVHcloud Kundencenter hinterlegt.
 
 ## In der praktischen Anwendung
@@ -33,7 +33,7 @@ Sie können Ihre Ressourcenquote manuell oder automatisch erhöhen.
 
 Dieses Verfahren ermöglicht Ihnen, eine Quotenerhöhung manuell anzufordern und mit einer Vorauszahlung (Public Cloud Credit) zu bestätigen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 Klicken Sie im linken Menü auf `Quota and Regions`{.action}.
 
@@ -73,7 +73,7 @@ Mit dieser Option können Sie eine automatische und schrittweise Erhöhung Ihrer
 
 Dies ist kein sofortiger Prozess; die Ressourcenquote wird im Laufe der Zeit erhöht.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Public Cloud`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wechseln Sie zum Bereich `Public Cloud`{.action}.
 
 Klicken Sie im linken Menü auf `Quota and Regions`{.action}.
 

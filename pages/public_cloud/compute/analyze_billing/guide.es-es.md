@@ -22,7 +22,7 @@ Este mecanismo es similar al de algunos operadores telefónicos que facturan a f
 
 * Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
 * Una [instancia Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external}.
-* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+* Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Principio general
 

@@ -621,4 +621,4 @@ Next, ping your Additional IP address from an external device.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

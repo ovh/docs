@@ -25,4 +25,4 @@ This documentation will share the end of life (EOL) roadmap for OVHcloud images.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

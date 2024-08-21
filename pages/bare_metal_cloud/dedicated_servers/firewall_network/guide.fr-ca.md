@@ -22,7 +22,7 @@ Pour protéger les services des clients exposés sur les adresses IP publiques, 
 ## Prérequis
 
 - Un service OVHcloud exposé et utilisant une adresse IP publique dédiée ([Serveur Dédié](https://www.ovhcloud.com/fr-ca/bare-metal/), [VPS](https://www.ovhcloud.com/fr-ca/vps/),[instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/), etc.)
-- Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Avoir accès à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
@@ -40,7 +40,7 @@ Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en per
 > Le Edge Network Firewall protège une IP spécifique associée à un serveur (ou service). Par conséquent, si vous avez un serveur avec plusieurs adresses IP, vous devez configurer chaque IP séparément.
 > 
 
-Connectez-vous à[ l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Bare Metal Cloud`{.action} puis au menu `Network`{.action} et ouvrez les `Adresses IP publiques`{.action}. Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** pour filtrer vos services par catégorie.
+Connectez-vous à[ l’espace client OVHcloud](/links/manager), accédez à la section `Bare Metal Cloud`{.action} puis au menu `Network`{.action} et ouvrez les `Adresses IP publiques`{.action}. Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** pour filtrer vos services par catégorie.
 
 ![filtrer les service](images/selectservice_cut.png){.thumbnail}
 

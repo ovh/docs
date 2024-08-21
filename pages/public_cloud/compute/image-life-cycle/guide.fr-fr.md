@@ -25,4 +25,4 @@ Cette page documente la roadmap de fin de vie (*End of Life* ou EOL) des images 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Todo sobre los registros DNS"
 excerpt: "Descubra los diferentes tipos de registro DNS disponibles en una zona DNS de OVHcloud"
-updated: 2024-06-17
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -171,7 +171,14 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Utilizado para indicar la huella de un certificado SSL/TLS.
+>> Utilizado para indicar la huella de un certificado SSL/TLS. Permite conservar el *hash* de un certificado directamente en la zona DNS de su dominio a través de un registro DNS.
+>>
+>> Este registro se utiliza en el marco del protocolo **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
+>>
+>> El protocolo DANE permite que un cliente (navegador de internet, cliente de correo electrónico, cliente FTP, cliente SSH, etc.) consulte el registro TLSA. Así, se asegura de que un certificado SSL/TLS utilizado para un nombre de dominio sea el que certifique el mismo nombre de dominio.
+>>
+>> Si lo necesita, puede consultar más información en la página web del [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>>
 
 #### Caso particular de uso: el uso de los registros CNAME <a name="cnameusecase"></a>
 

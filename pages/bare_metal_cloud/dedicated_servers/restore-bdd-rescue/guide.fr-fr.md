@@ -13,7 +13,7 @@ Le mode Rescue permet d'accéder à vos données en permanence, même si le syst
 ## Prérequis
 
 - Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/), un [VPS](https://www.ovhcloud.com/fr/vps/) ou une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud (hors systèmes Windows)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -259,4 +259,4 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

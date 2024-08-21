@@ -17,7 +17,7 @@ As instâncias Public Cloud OVHcloud requerem uma abordagem diferente da de uma 
 ## Requisitos
 
 - um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) criado na sua conta OVHcloud.
-- ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -148,7 +148,7 @@ Independentemente do método usado para criar chaves SSH, agora já dispõe de u
 As chaves SSH armazenadas propiciam uma criação de instâncias mais rápida. Se desejar alterar pares de chaves e adicionar utilizadores ulteriormente, consulte o guia [Configurar as chaves SSH suplementares](/pages/public_cloud/compute/configuring_additional_ssh_keys).
 >
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. A seguir, clique em `Chaves SSH`{.action}, na barra de navegação à esquerda, sob «Gestão de projetos».
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. A seguir, clique em `Chaves SSH`{.action}, na barra de navegação à esquerda, sob «Gestão de projetos».
 
 Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, introduza um nome para a chave e cole a cadeia (copiada na [etapa 1](./#etapa-1-criacao-de-chaves-ssh) do ficheiro público ou da janela PuTTYgen) no campo «Chave». Para confirmar, clique em `Adicionar`{.action}.
 
@@ -163,7 +163,7 @@ Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, int
 > Antes de criar uma instância, é preferível criar uma rede privada. Para mais informações sobre a criação de uma rede privada, consulte o guia [Configuração do vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 >
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. Na página «Home», clique em `Criar uma instância`{.action}. (Encontrará a mesma funcionalidade na página «Instâncias», clicando em `Instâncias`{.action} na barra de navegação à esquerda, sob «Compute».)
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. Na página «Home», clique em `Criar uma instância`{.action}. (Encontrará a mesma funcionalidade na página «Instâncias», clicando em `Instâncias`{.action} na barra de navegação à esquerda, sob «Compute».)
 
 ![instance select](images/instance-creation-2024.png){.thumbnail}
 
@@ -252,7 +252,7 @@ Depois de ter verificado que a configuração está correta, clique no botão `C
 
 ### Etapa 4: Conexão à instância <a name="connect-to-instance"></a>
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. A seguir, clique em `Instâncias`{.action}, na barra de navegação à esquerda, sob «Compute». A instância estará pronta quando a coluna «Estado» da tabela passar a «Ativada». Pode verificar clicando no botão «Refresh», situado junto de `Criar uma instância`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. A seguir, clique em `Instâncias`{.action}, na barra de navegação à esquerda, sob «Compute». A instância estará pronta quando a coluna «Estado» da tabela passar a «Ativada». Pode verificar clicando no botão «Refresh», situado junto de `Criar uma instância`{.action}.
 
 ![instances page](images/instance-connect-01.png){.thumbnail}
 
@@ -270,7 +270,7 @@ Se criou uma instância sem chave SSH, através da API OVHcloud ou da interface 
 
 #### Conexão a uma instância Linux a partir de Linux/Mac
 
-Agora já pode aceder à sua instância a partir de uma interface de linhas de comandos (Terminal) via SSH. Nos exemplos seguintes, substitua «username» pelo seu utilizador predefinido, como explicado acima. Também pode simplesmente completar o comando de conexão a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): basta clicar nele no «Painel de Controlo» da instância e a seguir colá-lo no Terminal.
+Agora já pode aceder à sua instância a partir de uma interface de linhas de comandos (Terminal) via SSH. Nos exemplos seguintes, substitua «username» pelo seu utilizador predefinido, como explicado acima. Também pode simplesmente completar o comando de conexão a partir da [Área de Cliente OVHcloud](/links/manager): basta clicar nele no «Painel de Controlo» da instância e a seguir colá-lo no Terminal.
 
 ![instances page](images/instance-connect-02.png){.thumbnail}
 
@@ -288,7 +288,7 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
-Agora pode usar estas credenciais para se conectar através da `Consola VNC`{.action}, na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). De seguida, passe para o utilizador «root» e crie uma palavra-passe segura. Então, volte para o utilizador anterior:
+Agora pode usar estas credenciais para se conectar através da `Consola VNC`{.action}, na [Área de Cliente OVHcloud](/links/manager). De seguida, passe para o utilizador «root» e crie uma palavra-passe segura. Então, volte para o utilizador anterior:
 
 ```bash
 $ sudo su -
@@ -308,7 +308,7 @@ Abra o PuTTY e expanda «SSH» no menu à esquerda. De seguida, clique em «Auth
 
 ![using putty](images/puttyconnect-01.png){.thumbnail}
 
-Clique no botão `Browse`{.action} para navegar até à pasta onde se encontra o ficheiro da chave privada (.ppk) e abra-o. No menu à esquerda, passe para «Session» e introduza as suas credenciais de conexão (username@IPv4_address). Substitua «ubuntu» nos exemplos abaixo pelo utilizador predefinido adequado, segundo o «Painel de Controlo» da instância, na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). (Clique em `Instâncias`{.action}, na barra de navegação à esquerda, e a seguir clique no nome da instância.)
+Clique no botão `Browse`{.action} para navegar até à pasta onde se encontra o ficheiro da chave privada (.ppk) e abra-o. No menu à esquerda, passe para «Session» e introduza as suas credenciais de conexão (username@IPv4_address). Substitua «ubuntu» nos exemplos abaixo pelo utilizador predefinido adequado, segundo o «Painel de Controlo» da instância, na [Área de Cliente OVHcloud](/links/manager). (Clique em `Instâncias`{.action}, na barra de navegação à esquerda, e a seguir clique no nome da instância.)
 
 Para conexões futuras, pode guardar esta sessão para a ter disponível na lista desta interface. Introduza um nome descritivo sob «Saved Sessions» e clique em `Save`{.action} para a adicionar.
 
@@ -352,7 +352,7 @@ Se encontrar problemas, verifique se a sua máquina permite conexões remotas (R
 
 ##### **A partir de Linux**
 
-Pode aceder às instâncias Public Cloud através da consola VNC integrada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A partir da sua máquina local, as conexões deverão estabelecer-se através de uma aplicação cliente compatível com o Remote Desktop Protocol (RDP).
+Pode aceder às instâncias Public Cloud através da consola VNC integrada na [Área de Cliente OVHcloud](/links/manager). A partir da sua máquina local, as conexões deverão estabelecer-se através de uma aplicação cliente compatível com o Remote Desktop Protocol (RDP).
 
 Por exemplo, o Remmina Remote Desktop Client é uma aplicação compatível que costuma estar incluída nas instalações Ubuntu Desktop. Se não encontrar o Remmina no seu ambiente, pode obtê-lo no [site oficial](https://remmina.org/).
 

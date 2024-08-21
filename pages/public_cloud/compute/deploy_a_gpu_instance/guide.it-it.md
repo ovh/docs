@@ -1,18 +1,20 @@
 ---
 title: 'Creare un’istanza GPU'
 excerpt: 'Scopri come creare un’istanza GPU con Linux o Windows'
-updated: 2024-07-08
+updated: 2024-07-17
 ---
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
 
 ## Obiettivo
 
 Le istanze GPU sono tecnicamente simili alle istanze della gamma 2017 ma dispongono anche di una scheda grafica (Graphic Processing Unit o GPU). La tecnologia utilizzata (*pci_passthrough*) permette al sistema operativo dell’istanza di controllare la GPU esattamente come su una macchina fisica.
 
-Le GPU proposte da OVHcloud sono le NVIDIA Tesla V100 e V100s. 
-
 > [!warning]
 >
-> Per il momento, la maggior parte delle nostre istanze GPU precedenti sono disponibili solo nelle Region GRA7, GRA9, GRA11 e BHS5. I modelli più recenti sono attualmente disponibili solo nell'area GRA11.
+> Per il momento, la maggior parte delle nostre istanze GPU precedenti (Tesla V100 and V100s) sono disponibili solo nelle Region GRA7, GRA9, GRA11 e BHS5. I modelli più recenti (A100, H100, L4 and L40s) sono attualmente disponibili solo nell'area GRA11.
 > 
 
 **Questa guida ti mostra come creare un’istanza GPU con Linux o Windows.**

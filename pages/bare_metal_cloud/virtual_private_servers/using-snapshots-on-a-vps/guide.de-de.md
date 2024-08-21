@@ -21,12 +21,12 @@ Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](h
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus.
 
 ### Schritt 1: Snapshot-Option aktivieren
 
@@ -64,7 +64,7 @@ Der aktuelle Snapshot kann über einen Download-Link abgerufen werden. Klicken S
 
 > [!primary]
 >
-> Wenn Ihr VPS aus einer älteren Produktreihe stammt, erhalten Sie möglicherweise eine Fehlermeldung, da die Option für einen Legacy VPS nicht verfügbar ist. Diese älteren Dienste erkennen Sie am folgenden Namensschema: *vpsXXXX.ovh.net* (wobei *X* für eine Zahl steht). Sie können diese Server-Referenz im Tab `Start`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen.
+> Wenn Ihr VPS aus einer älteren Produktreihe stammt, erhalten Sie möglicherweise eine Fehlermeldung, da die Option für einen Legacy VPS nicht verfügbar ist. Diese älteren Dienste erkennen Sie am folgenden Namensschema: *vpsXXXX.ovh.net* (wobei *X* für eine Zahl steht). Sie können diese Server-Referenz im Tab `Start`{.action} Ihres [OVHcloud Kundencenters](/links/manager) überprüfen.
 >
 
 Klicken Sie im Popup-Fenster auf `Download-Link erstellen`{.action}. 

@@ -1,7 +1,7 @@
 ---
-title: Configurare la rete su Windows Server con Hyper-V sulle gamme High Grade & SCALE
-excerpt: Come configurare la rete su Windows Server con Hyper-V sulle gamme High Grade & SCALE
-updated: 2023-08-31
+title: Configurare la rete su Windows Server con Hyper-V
+excerpt: Come configurare la rete su Windows Server con Hyper-V
+updated: 2024-08-07
 ---
 
 > [!primary]
@@ -10,15 +10,25 @@ updated: 2023-08-31
 
 ## Obiettivo
 
+**Questa guida ti mostra come configurare la rete con Windows Server con Hyper-V.**
+
+### Gamme High Grade & SCALE
+
 Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalità *bridged* (tramite MAC Virtuali) non è possibile. È quindi necessario configurare gli Additional IP in modalità routing o tramite la vRack.
 
-**Questa guida ti mostra come configurare la rete con Windows Server con Hyper-V.**
+### Gamma Advance
+
+Poiché i server Advance dispongono di due sole interfacce di rete, ti consigliamo di configurare il server in modalità privata creando un teaming con le due interfacce connesse alla vRack. Un secondo server può quindi fungere da gateway Internet con un'interfaccia connessa alla rete privata e un'altra connessa alla rete pubblica.
+
+Per questo tipo di configurazione è possibile utilizzare la funzionalità IP in alias descritta nell'articolo [Configurare un Alias IP](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+
+Puoi installare questa configurazione su ogni server Hyper-V (un'interfaccia privata o un'interfaccia pubblica su ogni server) e non configurare aggregazioni di porte. Tuttavia, in questo caso, la rete privata disporrà di una banda passante minore e di nessuna alta disponibilità delle interfacce di rete.
 
 ## Prerequisiti
 
 * Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
 * Disporre di un indirizzo [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/)
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -64,7 +74,7 @@ In questo esempio:
 
 > [!primary]
 >
-> Verifica che la tua configurazione sia simile. Le informazioni relative ai MAC e alle interfacce pubbliche o private sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o tramite l'API OVHcloud.
+> Verifica che la tua configurazione sia simile. Le informazioni relative ai MAC e alle interfacce pubbliche o private sono disponibili nello [Spazio Cliente OVHcloud](/links/manager) o tramite l'API OVHcloud.
 >
 
 Torna al Server Manager, vai su `Local Server`{.action} e clicca su `Disabled`{.action} accanto a "NIC Teaming".
@@ -242,7 +252,7 @@ network:
 - Aver selezionato un intervallo di indirizzi IP privati
 - Disporre di un [server compatibile con la vRack](https://www.ovhcloud.com/it/bare-metal/){.external}
 - Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 #### Spiegazioni
 
@@ -272,7 +282,7 @@ In questo esempio:
 
 > [!primary]
 >
-> Verifica che la tua configurazione sia simile. Le informazioni relative ai MAC e alle interfacce pubbliche o private sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o tramite l'API OVHcloud.
+> Verifica che la tua configurazione sia simile. Le informazioni relative ai MAC e alle interfacce pubbliche o private sono disponibili nello [Spazio Cliente OVHcloud](/links/manager) o tramite l'API OVHcloud.
 >
 
 Torna al Server Manager, vai su `Local Server`{.action} e clicca su `Disabled`{.action} accanto a "NIC Teaming".

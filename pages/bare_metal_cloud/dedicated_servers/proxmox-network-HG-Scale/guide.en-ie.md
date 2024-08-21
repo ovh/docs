@@ -288,7 +288,8 @@ You need to:
 * create an aggregate (only for the High Grade & SCALE ranges)
 * create a bridge connected to the aggregate;
 
-First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of the OVHcloud Control Panel, and open the `vRack`{.action} menu.
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager) and open the `vRack`{.action} menu.
+
 
 Select your vRack from the list to view the list of eligible services. Click on the public block of IP addresses you want to add to the vRack, then click the `Add`{.action} button.
 
@@ -397,4 +398,4 @@ iface ens18 inet static
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com>.
+Join our [community of users](/links/community).

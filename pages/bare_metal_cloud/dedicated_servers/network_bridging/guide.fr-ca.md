@@ -612,4 +612,4 @@ Ensuite, il vous suffit d'effectuer un ping sur votre Additional IP depuis l'ext
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

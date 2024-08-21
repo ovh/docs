@@ -1,7 +1,7 @@
 ---
 title: "API OVHcloud et installation d'un OS"
 excerpt: "Découvrez comment l'API OVHcloud vous permet d'installer ou de réinstaller un OS sur votre serveur"
-updated: 2024-07-16
+updated: 2024-08-13
 ---
 
 ## Objectif
@@ -62,7 +62,7 @@ Vous y trouverez des informations pertinentes comme par exemple :
 |license/os|Informations de l'OS sur la licence : URL du contrat de licence et type de licence|
 |license/usage|Idem que license/os, mais sur la couche logicielle si applicable|
 |filesystems|Liste des systèmes de fichiers compatibles|
-|hardRaidConfiguration,softRaidOnlyMirroring,lvmReady|Compatibilité ou non avec les raids matériels, logiciels et le LVM²|
+|softRaidOnlyMirroring,lvmReady|Compatibilité ou non avec les raids matériels, logiciels et le LVM²|
 |inputs|Liste des questions spécifiques de l'OS (voir explication ci-dessous)|
 
 ¹ Les clients n'utilisant pas les images du catalogue OVHcloud (installation via une image personnalisée ([BYOI](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)/[BYOLinux](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)), installation par le réseau, ou  manuellement avec l'IPMI) ne sont pas concernés par cette limitation.<br />
@@ -282,7 +282,7 @@ Ce payload permet d'installer Debian 12 (Bookworm) avec une clé SSH publique et
 Même si le script de post-installation peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
 
 ```bash
-cat my-script.sh | base64 -w0`
+cat my-script.sh | base64 -w0
 ```
 
 Voici le script bash de post-installation en clair avec l'exemple ci-dessus :

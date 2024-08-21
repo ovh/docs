@@ -50,7 +50,7 @@ Aceda à ligação <https://api.ovh.com/console/> e conecte-se com o seu ID de c
 > @api {v1} /vrack GET /vrack
 > 
 
-Esta API permite recuperar a lista dos serviços vRack. Caso não consigo identificar o serviço afetado através destas referências, consulte a [Área de Cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para o consultar. Para isso, aceda à secção `Bare Metal Cloud`{.action}, depois `Network`{.action} e selecione “vRack”. 
+Esta API permite recuperar a lista dos serviços vRack. Caso não consigo identificar o serviço afetado através destas referências, consulte a [Área de Cliente de OVHcloud](/links/manager){.external} para o consultar. Para isso, aceda à secção `Bare Metal Cloud`{.action}, depois `Network`{.action} e selecione “vRack”. 
 
 > [!api]
 >

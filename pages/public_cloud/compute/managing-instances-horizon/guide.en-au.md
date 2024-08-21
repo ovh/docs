@@ -211,4 +211,4 @@ Then click `Confirm`{.action} to start the process.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

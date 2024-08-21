@@ -242,4 +242,4 @@ You can find all information on the available backup solutions for your service 
 
 [Network Firewall guide](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
