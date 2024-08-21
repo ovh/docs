@@ -62,14 +62,14 @@ Voici quelques exemples d'appels API :
 > - `serviceName` : votre service sous la forme pcc-XX-XX-XX-XX.
 > - `name` : le nom de votre utilisateur sous la forme ci-dessous.
 > 
-> **Exemple** :
->
-> ```shell
-> {
-> "name": "User name"
-> }
-> ```
-> 
+
+**Exemple** :
+
+```shell
+{
+"name": "User name"
+}
+```
 
 - Changer le mot de passe de votre utilisateur :
 
@@ -83,13 +83,14 @@ Voici quelques exemples d'appels API :
 > - `serviceName` : votre service sous la forme pcc-XX-XX-XX-XX.
 > - `userId` : l' ID de votre utilisateur sous la forme XXXXX.
 >
-> **Exemple** :
->
-> ```shell
-> {
-> "password": "XXX"
-> }
-> ```
+
+**Exemple** :
+
+```shell
+{
+"password": "XXX"
+}
+```
 
 ### Étape 2 - Connexion à l'interface Web vSphere managé
 
