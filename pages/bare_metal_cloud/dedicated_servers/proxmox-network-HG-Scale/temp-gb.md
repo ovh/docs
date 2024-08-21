@@ -170,7 +170,7 @@ SSH PUB_IP_DEDICATED_SERVER
 >>
 >> ```
 > ADVANCE range
->>> For servers from the ADVANCE range that do not have 4 network interfaces, there is no need to configure bonding. You can go directly to configuring the available interfaces.
+>> For servers from the ADVANCE range that do not have 4 network interfaces, there is no need to configure bonding. You can go directly to configuring the available interfaces.
 >>
 >> Everything happens in the file `/etc/network/interfaces`:
 >>
