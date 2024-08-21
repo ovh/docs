@@ -6,7 +6,7 @@ updated: 2024-08-21
 
 > [!primary]
 >
-> Since 06 October 2022, our Additionnal IP solution has been named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This has no impact on its features.
+> Since October 6th, 2022 our service "Failover IP" has been named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This renaming has no impact on its technical features.
 >
 
 ## Objective
@@ -15,29 +15,31 @@ updated: 2024-08-21
 
 ## Requirements
 
-- a [OVHcloud dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/)
-- You must have [Additional IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
-- access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=fr)
+- an [OVHcloud dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/)
+- You must have [Additional IP addresses](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >
 > No virtual MAC address must be applied to Additional IPs in the OVHcloud Control Panel.
 >
 
-## In practice
-
+## Instructions
 
 ### Additional IP in routed mode on public network interfaces <a name="additionalipmoderoute"></a>
 
 With this configuration, Additional IP addresses must be attached to a dedicated server. If you have multiple Proxmox virtualization servers and you want to migrate a VM from one server to another, you will also need to migrate the Additional IP address to the destination server, via the OVHcloud Control Panel or via the OVHcloud API. You can automate this step by writing a script that uses the OVHcloud APIs.
 
 #### Target configuration schema
+
 > [!tabs]
 > High Grade & SCALE ranges
->>![schema route](images/schema_route2022.png){.thumbnail}<br>
+>>
+>> ![schema route](images/schema_route2022.png){.thumbnail}
 >>
 > ADVANCE range
->>![schema route](images/gamme-advance-01.png){.thumbnail}<br>
+>>
+>> ![schema route](images/gamme-advance-01.png){.thumbnail}
 >>
 
 #### Explanations
@@ -46,12 +48,12 @@ Proxmox is based on a Debian distribution. In this guide, the network configurat
 
 You need to:
 
-- connect via SSH on Proxmox;
-- create an aggregate (linux bond), only for the High Grade & SCALE ranges;
-- create a bridge;
-- authorize forwarding;
-- authorize proxy_arp;
-- add routes.
+- connect via SSH on Proxmox
+- create an aggregate (linux bond), only for the High Grade & SCALE ranges
+- create a bridge
+- authorize forwarding
+- authorize proxy_arp
+- add routes
 
 #### Configure the hypervisor
 
@@ -65,7 +67,7 @@ SSH PUB_IP_DEDICATED_SERVER
 > [!tabs]
 > High Grade & SCALE ranges
 >>
->> ### Enable ip_forward and proxy_arp
+>> - **Enable ip_forward and proxy_arp**:
 >>
 >> Enable the `sysctl` `ip_forward` and `proxy_arp` parameters. To do this, we recommend modifying the `sysctl.conf` configuration file.
 >>
@@ -85,7 +87,7 @@ SSH PUB_IP_DEDICATED_SERVER
 >> sysctl -p
 >> ```
 >>
->> ### Modifying file `/etc/network/interfaces`:
+>> - **Edit the `/etc/network/interfaces` file**:
 >>
 >> ```bash
 >> vi /etc/network/interfaces
@@ -130,7 +132,7 @@ SSH PUB_IP_DEDICATED_SERVER
 >> 	# Enter the MAC address of one of the two public interfaces
 >> 	hwaddress AB:CD:EF:12:34:56
 >>
->> #Private
+>> # Private
 >> auto bond1
 >> iface bond1 inet static
 >> 	bond-slaves ens35f0 ens35f1
@@ -197,20 +199,19 @@ SSH PUB_IP_DEDICATED_SERVER
 >>     up ip route add ADDITIONAL_IP_BLOCK/28 dev $IFACE
 >> ```
 
-
 At this point, restart the network services or reboot the server:
 
 ```bash
 systemctl restart networking.service
 ```
 
-When you restart the network services, the bridges (for example, vmbr0) may be in the idle state. This is because Proxmox disconnects each VM from the bridges and does not reconnect them. To force the VMs to reconnect to the bridges, you can restart the VMs.
+When you restart the network services, the bridges (for example, vmbr0) may be in an idle state. This is because Proxmox disconnects each VM from the bridges and does not reconnect them. To force the VMs to reconnect to the bridges, you can restart the VMs.
 
 #### Client VM configuration example
 
 > [!tabs]
 > Debian
->> Contents of file `/etc/network/interfaces`:
+>> Content of the `/etc/network/interfaces` file:
 >>
 >> ```bash
 >> auto lo
@@ -223,13 +224,13 @@ When you restart the network services, the bridges (for example, vmbr0) may be i
 >>
 >> iface eth0 inet static
 >>   address ADDITIONAL_IP/32
->>   # The "src" option must be set in order for packets to reach the Internet
->>   # have public IP as source, not private IP 192.168.0.2
+>>   # The "src" option must be set so that packets reaching the Internet
+>>   # have the public IP as source, not the private IP 192.168.0.2
 >>   up ip route replace default via 192.168.0.1 dev $IFACE onlink src ADDITIONAL_IP
 >> ```
 >>
 > Ubuntu
->> Contents of file `/etc/netplan/01-eth0.yaml`:
+>> Content of the `/etc/netplan/01-eth0.yaml` file:
 >>
 >> ```yaml
 >> network:
@@ -248,7 +249,6 @@ When you restart the network services, the bridges (for example, vmbr0) may be i
 >> ```
 >>
 
-
 #### Testing and validation
 
 From now on, your virtual machines should be able to join a public service on the internet. In addition, your virtual machines can also be reached directly on the internet via the Additional IP address. The available bandwidth corresponds to the bandwidth available on your server’s public interfaces, and will not affect the private interfaces used for the vRack. This bandwidth is shared with other virtual machines on the same host that use an Additional IP address and the Proxmox host for public access.
@@ -262,21 +262,20 @@ ADDITIONAL_IP    				# must return your additional ip
 
 ### Additional IP via the vRack
 
-This configuration is more flexible. You do not need to associate Additional IP with a server, but with the vRack. This means that if a virtual machine wants to use an Additional IP address, it can claim it directly without any additional configuration, and regardless of the host on which it is hosted.
-
+This configuration is more flexible. You do not need to associate an Additional IP with a server, but with the vRack. This means that if a virtual machine wants to use an Additional IP address, it can claim it directly without any additional configuration, and regardless of the host on which it is hosted.
 
 > [!warning]
 >
-> It is not possible to use a Addtionnal IP (/32) directly in the vRack. To use a Additionnal IP, it must be [configured on a public interface](#additionalipmoderoute) and cannot be directly integrated into the vRack.
+> It is not possible to use an Additional IP (/32) directly in the vRack. To use an Additional IP, it must be [configured on a public interface](#additionalipmoderoute) and cannot be directly integrated into the vRack.
 >
 
 #### Requirements
 
-*You must have reserved a public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
+* You must have reserved a public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
 * Prepare your chosen range of private IP addresses.
-* You must have a [server compatible with vRack](https://www.ovhcloud.com/en-gb/bare-metal/){.external}.
-* Activate a [vRack service](https://www.ovhcloud.com/en-gb/network/vrack/){.external}.
-* You must be logged in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=fr){.external}.
+* You must have a [server compatible with vRack](https://www.ovhcloud.com/en-gb/bare-metal/).
+* Activate a [vRack service](https://www.ovhcloud.com/en-gb/network/vrack/).
+* You must be logged in to the [OVHcloud Control Panel](/links/manager).
 
 #### Target configuration schema
 
@@ -284,12 +283,12 @@ This configuration is more flexible. You do not need to associate Additional IP 
 
 #### Explanations
 
-You need:
+You need to:
 
-* create an aggregate, only for the High Grade & SCALE ranges;
+* create an aggregate (only for the High Grade & SCALE ranges)
 * create a bridge connected to the aggregate;
 
-First, add your public block of IP addresses to the vRack. To do this, go to the `Bare Metal Cloud`{.action} section of the OVHcloud Control Panel, and open the `vRack`{.action} menu.
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of the OVHcloud Control Panel, and open the `vRack`{.action} menu.
 
 Select your vRack from the list to view the list of eligible services. Click on the public block of IP addresses you want to add to the vRack, then click the `Add`{.action} button.
 
@@ -313,7 +312,7 @@ In the case of the vRack, the first, penultimate and last addresses of a given I
 46.105.135.108
 46.105.135.109   # Last usable IP
 46.105.135.110   # Reserved: network gateway
-46.105.135.111   # Reserved: Network broadcast
+46.105.135.111   # Reserved: network broadcast
 ```
 
 To configure the first usable IP address, you must edit the network configuration file as shown below. In this example, use a subnet mask of **255.255.255.240**.
@@ -325,7 +324,7 @@ To configure the first usable IP address, you must edit the network configuratio
 
 #### Configure the hypervisor
 
-Everything happens in the file `/etc/network/interfaces`:
+The entire configuration is done in the `/etc/network/interfaces` file:
 
 ```bash
 vi /etc/network/interfaces
@@ -383,9 +382,9 @@ iface vmbr1 inet manual
 
 At this point, restart the network services or reboot the server.
 
-#### Debian Client VM Configuration Example
+#### Configuration example of a client VM on Debian
 
-Contents of file `/etc/network/interfaces`:
+Content of the file `/etc/network/interfaces`:
 
 ```bash
 auto lo ens18

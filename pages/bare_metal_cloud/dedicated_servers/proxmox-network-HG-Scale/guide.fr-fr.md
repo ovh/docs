@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le réseau sur Proxmox VE'
 excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE'
-updated: 2024-07-16
+updated: 2024-08-21
 ---
 
 > [!primary]
@@ -11,33 +11,35 @@ updated: 2024-07-16
 
 ## Objectif
 
-**Découvrez deux manières de configurer une _additional IP_ sous Proxmox VE : via les interfaces publiques et via les interfaces privées (vRack).**
+**Découvrez deux manières de configurer une *Additional IP* sous Proxmox VE : via les interfaces publiques et via les interfaces privées (vRack).**
 
 ## Prérequis
 
 - Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
-- Disposer d'[Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'adresses [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
 >
 > Aucune MAC virtuelle ne doit être appliquée sur les Additional IP dans l'espace client OVHcloud.
 >
 
-## En pratique   
+## En pratique
 
-   
 ### Additional IP en mode routé sur les interfaces réseau publiques <a name="additionalipmoderoute"></a>
 
-Avec cette configuration, les adresses Additional IP doivent être attachées à un serveur dédié. Si vous disposez de plusieurs serveurs de virtualisation Proxmox et que vous souhaitez migrer une VM d'un serveur à l'autre, vous devrez également migrer l'adresse Additional IP  vers le serveur de destination, via l'espace client OVHcloud ou via l'API OVHcloud. Vous pouvez automatiser cette étape en écrivant un script qui utilise les API d'OVHcloud.  
+Avec cette configuration, les adresses Additional IP doivent être attachées à un serveur dédié. Si vous disposez de plusieurs serveurs de virtualisation Proxmox et que vous souhaitez migrer une VM d'un serveur à l'autre, vous devrez également migrer l'adresse Additional IP vers le serveur de destination, via l'espace client OVHcloud ou via l'API OVHcloud. Vous pouvez automatiser cette étape en écrivant un script qui utilise les API d'OVHcloud.
 
 #### Schéma de la configuration cible
+
 > [!tabs]
 > Gammes High Grade & SCALE
->>![schema route](images/schema_route2022.png){.thumbnail}<br>
+>>
+>> ![schema route](images/schema_route2022.png){.thumbnail}
 >>
 > Gamme ADVANCE
->>![schema route](images/gamme-advance-01.png){.thumbnail}<br>
+>>
+>> ![schema route](images/gamme-advance-01.png){.thumbnail}
 >>
 
 #### Explications
@@ -65,12 +67,12 @@ ssh PUB_IP_DEDICATED_SERVER
 > [!tabs]
 > Gammes High Grade & SCALE
 >>
->> ### Activation de l'ip_forward et du proxy_arp
+>> - **Activation de l'ip_forward et du proxy_arp** :
 >> 
->> Il faut activer les paramètres `sysctl` `ip_forward` et `proxy_arp`. Pour ce faire il est recommandé de modifier le fichier de configuration `sysctl.conf`.
+>> Il faut activer les paramètres `sysctl` `ip_forward` et `proxy_arp`. Pour ce faire, il est recommandé de modifier le fichier de configuration `sysctl.conf`.
 >> 
->> Ajoutez les lignes suivantes dans `/etc/sysctl.conf`:
->> 
+>> Ajoutez les lignes suivantes dans `/etc/sysctl.conf` :
+>>
 >> ```text
 >> # Activation de l'ip_forward
 >> net.ipv4.ip_forward = 1
@@ -79,13 +81,13 @@ ssh PUB_IP_DEDICATED_SERVER
 >> net.ipv4.conf.bond0.proxy_arp = 1
 >> ```
 >> 
->> Ensuite, rechargez la configuration sysctl:
+>> Ensuite, rechargez la configuration sysctl :
 >> 
 >> ```bash
 >> sysctl -p
 >> ```
 >> 
->> ### Modification du fichier `/etc/network/interfaces` :
+>> **Modification du fichier `/etc/network/interfaces`** :
 >> 
 >> ```bash
 >> vi /etc/network/interfaces
@@ -130,7 +132,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> 	# Ici il faut renseigner l'adresse MAC d'une des deux interface publiques
 >> 	hwaddress AB:CD:EF:12:34:56
 >>     
->> #Private
+>> # Private
 >> auto bond1
 >> iface bond1 inet static
 >> 	bond-slaves ens35f0 ens35f1
@@ -197,7 +199,6 @@ ssh PUB_IP_DEDICATED_SERVER
 >>     up ip route add ADDITIONAL_IP_BLOCK/28 dev $IFACE  
 >> ```
 
-
 À ce stade, relancez les services réseau ou redémarrez le serveur :
 
 ```bash
@@ -248,7 +249,6 @@ Lorsque vous redémarrez les services réseau, les bridges (vmbr0 par exemple) p
 >> ```
 >> 
 
-
 #### Test et validation
 
 Désormais, vos machines virtuelles devraient pouvoir joindre un service public sur Internet. De plus, vos machines virtuelles peuvent également être jointes directement sur Internet via l'adresse Additional IP. La bande passante disponible correspond à la bande passante disponible sur les interfaces publiques de votre serveur et n'affectera pas les interfaces privées utilisées pour le vRack. Cette bande passante est partagée avec les autres machines virtuelles sur le même hôte qui utilisent une adresse Additional IP et l'hôte Proxmox pour l'accès public.
@@ -267,7 +267,7 @@ Cette configuration est plus souple, vous n'avez pas à associer d'Additional IP
 
 > [!warning]
 >
-> Il n'est pas possible d'utiliser une IP Failover (/32) directement dans le vRack. Pour utiliser une IP Failover, elle doit être [configurée sur une interface publique](#additionalipmoderoute) et ne peut pas être directement intégrée au vRack.
+> Il n'est pas possible d'utiliser une Additional IP (/32) directement dans le vRack. Pour utiliser une Additional IP, elle doit être [configurée sur une interface publique](#additionalipmoderoute) et ne peut pas être directement intégrée au vRack.
 >
 
 #### Prérequis
