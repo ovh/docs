@@ -1,6 +1,6 @@
 ---
-title: Backup einer Instanz herunterladen von einer OpenStack-Region in eine andere übertragen
-excerpt: Erfahren Sie hier, wie Sie ein Instanz-Backup herunterladen von einer OpenStack-Region in eine andere verschieben und dabei die Konfiguration und den Zustand der Instanz beibehalten
+title: Backup einer Instanz herunterladen und in eine andere OpenStack-Region übertragen
+excerpt: Erfahren Sie hier, wie Sie ein Instanz-Backup herunterladen und von einer OpenStack-Region in eine andere verschieben und dabei die Konfiguration und den Zustand der Instanz beibehalten
 updated: 2023-09-25
 ---
 
@@ -10,7 +10,7 @@ updated: 2023-09-25
 
 ## Ziel
 
-Möglicherweise müssen Sie Ihre [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) von einer OpenStack-Region in eine andere verschieben; etwa weil Sie in einer neuen OpenStack-Region operieren möchten, oder weil Sie von OVHcloud Labs in die Public Cloud migrieren möchten.
+Möglicherweise müssen Sie Ihre [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) von einer OpenStack-Region in eine andere verschieben; etwa weil Sie in einer neuen OpenStack-Region operieren möchten, oder um von OVHcloud Labs in die Public Cloud zu migrieren.
 
 **Diese Anleitung erklärt, wie Sie ein Instanz-Backup von einer OpenStack-Region in eine andere übertragen und dabei die Konfiguration und den Zustand der Instanz beibehalten.**
 

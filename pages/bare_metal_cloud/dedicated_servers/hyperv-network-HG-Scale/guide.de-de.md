@@ -1,6 +1,6 @@
 ---
-title: 'Netzwerk auf Windows Server mit Hyper-V konfigurieren'
-excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Windows Server mit Hyper-V konfigurieren'
+title: "Netzwerk auf Windows Server mit Hyper-V konfigurieren"
+excerpt: "Erfahren Sie hier, wie Sie das Netzwerk auf Windows Server mit Hyper-V konfigurieren"
 updated: 2024-08-07
 ---
 
@@ -20,7 +20,7 @@ Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *
 
 Da die Advance Server nur über zwei Netzwerkinterfaces verfügen, wird empfohlen, den Server im privaten Modus zu konfigurieren, indem ein Teaming-Modus mit beiden an das vRack angebundenen Interfaces erstellt wird. Ein zweiter Server kann dann als Internet-Gateway dienen, wobei eine Schnittstelle mit dem privaten Netzwerk und eine andere mit dem öffentlichen Netzwerk verbunden ist.
 
-Für diese Art der Konfiguration können Sie die im Artikel [Konfiguration von IP-Aliasing](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing) beschriebene Alias-IP-Funktion verwenden.
+Für diese Art der Konfiguration können Sie die in der Anleitung zur [Konfiguration von IP-Aliasing](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing) beschriebene Funktion verwenden.
 
 Es ist auch möglich, diese Konfiguration auf jedem der Hyper-V Server (ein privates Interface / ein öffentliches Interface auf jedem Server) einzurichten und keine Port-Aggregation zu konfigurieren. In diesem Fall verfügt das private Netzwerk jedoch über eine geringere Bandbreite und keine hohe Verfügbarkeit der Netzwerkinterfaces.
 
