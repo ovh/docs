@@ -1,6 +1,6 @@
 ---
 title: "Logs Data Platform - VMware logs forwarding"
-excerpt: "Find out how to enable managed VMware on OVHcloud logs forwarding to a Logs Data Platform stream" 
+excerpt: "Find out how to enable logs forwarding in a managed VMware vSphere on OVHcloud to a Logs Data Platform stream" 
 updated: 2024-08-20
 ---
 
@@ -103,7 +103,7 @@ Leave the 2 booleans "showIncompatible", "showInternal" empty.
 > [!primary]
 > Hosted Private Cloud and LDP resources must belong to the same OVHcloud account.
 >
-> You will need to create a Data Logs Stream beforehand.
+> You will need to create a Data Logs Stream beforehand. And enable the logForwarder as indicated previously.
 >
 
 #### Via the OVHcloud control panel
@@ -112,7 +112,7 @@ You can refer to this guide to find out how to manage your streams via the Logs 
 
 Retrieve the **streamId** and save (copy and paste) it. You will need it to activate your Hosted Private Cloud subscription with the Logs Data Platform stream in question.
 
-In the next step, we will look at how to create a stream
+In the next step, we will look at how to create a stream.
 
 ### Step 3 - Activate the Logs Data Platform Hosted Private Cloud subscription
 

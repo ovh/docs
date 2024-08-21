@@ -1,7 +1,7 @@
 ---
 title: "Logs Data Platform - Transfert de logs VMware"
-excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) VMware managé on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-08-20
+excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) dans un VMware vSphere managé on OVHcloud vers un stream Logs Data Platform"
+updated: 2024-08-21
 ---
 
 > [!primary]
@@ -10,13 +10,13 @@ updated: 2024-08-20
 
 ## Objectif
 
-**Découvrez comment activer le transfert des logs VMware on OVHcloud vers un stream Logs Data Platform**.
+**L'objectif est de vous montrer comment activer le transfert des logs de votre VMware vSphere managé on OVHcloud vers un stream Logs Data Platform**.
 
 ## Prérequis
 
 - Disposer d'un [compte client OVHcloud](/links/manager).
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud.
-- Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud (pour verifier lancer l'appel API [suivant](#security-options))
+- Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud (pour vérifier lancer l'appel API [suivant](#security-options))
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
 - Vous devez avoir le « logForwarder » activé. Pour vérifier, lancez l'appel API [suivant](#security-options).
 
@@ -42,10 +42,10 @@ Un kind est un « type » de logs que votre produit génère.
 
 Ils sont les types de logs que vous voulez transférer à votre stream Logs Data Platform. Voici des exemples qui peuvent être disponibles en fonction des composants de votre architecture Hosted Private Cloud VMware on OVHcloud :
 
-- **esxi** : seulement certaines applications sont redirigées
-- **nsxtEdge** : tout est redirigé, pas de filtre
-- **vcsa** : filtré par application
-- **nsxtManager** : filtré par application
+- **esxi** : Seulement certaines applications sont redirigées.
+- **nsxtEdge** : Tout est redirigé, pas de filtre.
+- **vcsa** : Filtré par application.
+- **nsxtManager** : Filtré par application.
 
 ### Étape 1 - Activation des options de sécurité
 
@@ -98,19 +98,19 @@ Laissez les 2 booleans "showIncompatible", "showInternal" vide.
 > Contactez bien le support OVHcloud si vous ne disposez pas du `logForwarder` activé avant de créer un stream et souscrire à l'offre LDP Hosted Private Cloud.
 > 
 
-### Étape 2 - Création d'un stream Logs Data Platform
+### Étape 2 - Création d'un stream Logs Data Platform HPC
 
 > [!primary]
 > Les ressources Hosted Private Cloud et LDP doivent appartenir au même compte OVHcloud.
 >
-> Vous devez avoir préalablement créer un stream Logs Data Platform.
+> Vous devez avoir préalablement créer un stream Logs Data Platform. Et activé le logForwarder comme indiqué précédemment.
 >
 
 Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
 Récupérez le **streamId** et sauvegardez-le (copier-coller). Vous en aurez besoin pour activer votre souscription Hosted Private Cloud avec le stream Logs Data Platform en question.
 
-Nous allons voir dans l'étape suivante comment créer un stream
+Nous allons voir dans l'étape suivante comment créer un stream.
 
 ### Étape 3 - Activation de l'abonnement LDP Hosted Private Cloud
 
@@ -197,7 +197,7 @@ Exemple de retour :
 **Comment désactiver votre abonnement de souscription Hosted Private Cloud Log Data Platform** ?
 
 > [!primary]
-> La résiliation de votre abonnement Hosted Private Cloud LDP ne signifie pas la suppression de vos stream. Le stockage consommé au moment de la désactivation reste soumis à facturation.
+> La résiliation de votre abonnement Hosted Private Cloud LDP ne signifie pas la suppression de vos streams. Le stockage consommé au moment de la désactivation reste soumis à facturation.
 >
 > **Remarque** : Il n'est possible (à ce jour) que de supprimer un stream, en entier.
 >
