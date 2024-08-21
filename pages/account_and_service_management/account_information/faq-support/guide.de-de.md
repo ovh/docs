@@ -22,9 +22,9 @@ Mögliche Ursachen für dieses Problem:
 
 - Sie haben ein ungültiges Passwort eingegeben.
 - Cookies sind in Ihrem Browser nicht erlaubt.
-- Sie versuchen, sich von einem anderen Land als Ihrem Abrechnungsland aus zu verbinden.
+- Sie versuchen, sich von einem anderen Land als Ihrem Abrechnungsland aus einzuloggen.
 
-Hier sind die Lösungen, die Sie ausprobieren können:
+Versuchen Sie zunächst die folgenden Lösungen:
 
 - **Passwort**: Überprüfen Sie, ob Sie das richtige Passwort eingegeben haben, oder setzen Sie Ihr Passwort zurück, indem Sie [diese Anleitung](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password) befolgen.
 - **Cookies**: Stellen Sie sicher, dass Cookies in Ihrem Browser zugelassen sind.
@@ -36,7 +36,7 @@ Wenn das Problem weiterhin besteht, wenden Sie sich bitte an unser Support-Team.
 
 #### Tipps und Tricks
 
-Sollten Sie Probleme bei der Verbindung mit Ihrem Kundencenter haben, können Sie auch versuchen, sich mit einem der folgenden Gateways anzumelden:
+Sollten Sie Probleme bei der Verbindung mit Ihrem Kundencenter haben, können Sie auch versuchen, sich über eines der folgenden Gateways anzumelden:
 
 - Europäische Union (EU): <https://www.ovh.com/auth/>
 - Kanada (CA): <https://ca.ovh.com/auth/>

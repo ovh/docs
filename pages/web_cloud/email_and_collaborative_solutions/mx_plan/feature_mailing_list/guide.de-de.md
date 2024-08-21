@@ -43,7 +43,7 @@ Der Absender (sender) sendet die E-Mail an die Mailingliste. Der Moderator (mode
 
 > [!success]
 >
-> Eine Mailingliste verhält sich wie eine E-Mail-Adresse, es ist nicht möglich, ihren Namen zu ändern. Wenn der Name einer Mailingliste nicht mehr Ihren Vorstellungen entspricht, müssen Sie eine neue erstellen und die alte löschen.
+> Eine Mailingliste verhält sich wie eine E-Mail-Adresse. Es ist nicht möglich, den Namen zu ändern. Um den Namen einer Mailingliste zu ändern, müssen Sie die Liste neu erstellen und die alte löschen.
 
 Um Ihre Mailingliste zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie oben die Kategorie `Web Cloud`{.action}.
 
@@ -105,7 +105,7 @@ Das folgende Fenster wird angezeigt:
 
 Es gibt zwei Methoden zum Hinzufügen/Entfernen von Abonnenten:
 
-- manuelle Eingabe von Adressen durch Klicken auf `E-Mail-Adresse hinzufügen`{.action}.
+- Manuelle Eingabe von Adressen durch Klicken auf `E-Mail-Adresse hinzufügen`{.action}.
 - Import einer Textdatei mit einer E-Mail-Adresse pro Zeile durch Klicken auf das Download-Symbol über dem Eingaberahmen.
 
 #### Ihre Abonnentenliste in eine CSV-Datei exportieren

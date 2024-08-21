@@ -25,23 +25,23 @@ Die IPMI-Konsole (Intelligent Platform Management Interface) ermöglicht eine di
 
 ## In der praktischen Anwendung
 
-Die Verbindung mit IPMI kann auf verschiedene Arten hergestellt werden¹. Hier eine Tabelle:
+Die Verbindung mit IPMI kann auf verschiedene Arten hergestellt werden¹:
 
-|Methodenname|Alternativer Name|Beschreibung|Kopieren-Einfügen|Virtuelles ISO-Laufwerk²|Anwendungsfälle|
+|Methode|Alternativer Name|Beschreibung|Kopieren-Einfügen|Virtuelles ISO-Laufwerk²|Anwendungsfälle|
 |---|---|---|---|---|---|
-|**KVM**³ über **Webbrowser**|**KVM HTML**|Emulation des Videobildschirms durch eine **Canvas HTML**, so als würden Sie eine USB-Tastatur/Maus und einen VGA-Videobildschirm physisch an Ihren Dedicated Server anschließen.|❌|⚠️⁴|- Diagnostizieren Sie ein Problem mit einem Dedicated Server-Boot.|
-|**KVM**³ über **Java-Applet**|**KVM Java**|Dasselbe gilt für HTML-KVM, mit der Ausnahme, dass die Emulation über ein **Java-Applet** anstelle des HTML-Canvas durchgeführt wird.|❌|✅|- Diagnose eines Bootproblems des Dedicated Servers. <br />- Manuelles Installieren eines bestimmten Betriebssystems (außer [Katalog](/links/bare-metal/os))⁵.|
-|**SoL**⁶ über **Webbrowser**|**SoL JavaScript**|Serielle Verbindung über Webbrowser emulieren, so als ob Sie eine serielle Konsole physisch in RS-232 an Ihren Dedicated Server anschließen würden.|✅|❌|- Netzwerkproblem diagnostizieren: Logs abrufen und Konfigurationsdateien bearbeiten.|
-|**SoL**⁶ über **SSH**|**SoL SSH**|Wie bei JavaScript-SoL, mit der Ausnahme, dass die Emulation über ein SSH-Gateway erfolgt. Sie verbinden sich mit Ihrem bevorzugten SSH-Client via SSH mit einem Fremdserver, der die Befehle dann seriell an den Dedicated Server weiterleitet.|✅|❌|- Das Gleiche gilt für SoL JavaScript, allerdings nicht für die grafische Oberfläche.|
+|**KVM**³ über **Webbrowser**|**KVM HTML**|Emulation des Bildschirms mit **HTML Canvas**, so als würden Sie eine USB-Tastatur/Maus und einen VGA-Bildschirm physisch an Ihren Dedicated Server anschließen.|❌|⚠️⁴|- Diagnostizieren eines Problems mit dem Server-Boot.|
+|**KVM**³ über **Java-Applet**|**KVM Java**|Wie KVM HTML, mit der Ausnahme, dass die Emulation über ein **Java-Applet** anstelle von HTML Canvas durchgeführt wird.|❌|✅|- Diagnose eines Bootproblems des Dedicated Servers. <br />- Manuelles Installieren eines bestimmten Betriebssystems (außerhalb des [Katalogs](/links/bare-metal/os))⁵.|
+|**SoL**⁶ über **Webbrowser**|**SoL JavaScript**|Serielle Verbindung über Webbrowser emuliert, als ob Sie eine serielle Konsole physisch in RS-232 an Ihren Dedicated Server anschließen würden.|✅|❌|- Netzwerkproblem diagnostizieren: Logs abrufen und Konfigurationsdateien bearbeiten.|
+|**SoL**⁶ über **SSH**|**SoL SSH**|Wie SoL JavaScript, mit der Ausnahme, dass die Emulation über ein SSH-Gateway erfolgt. Sie verbinden sich über Ihren bevorzugten SSH-Client mit einem Server, der die Befehle dann seriell an den Dedicated Server weiterleitet.|✅|❌|- Wie bei SoL JavaScript, allerdings ohne grafische Oberfläche.|
 
 ¹ Abhängig von der Hardware-Kompatibilität Ihres Dedicated Servers (einige Methoden werden nicht im [OVHcloud Kundencenter](/links/manager) angezeigt).<br />
-² Funktion zum Mounten eines lokal auf Ihrem Rechner gespeicherten ISO-Images auf einen dedizierten Server an einer entfernten Stelle, mit der Sie ein Betriebssystem über IPMI installieren können.<br />
+² Funktion zum Mounten eines lokal auf Ihrem Rechner gespeicherten ISO-Images auf einem dedizierten Server, um ein Betriebssystem über IPMI installieren zu können.<br />
 ³ KVM = Keyboard Video and Mouse<br />
-⁴ Je nach Hardware-Kompatibilität Ihres Dedicated Servers : wenn nicht kompatibel, Java KVM verwenden.<br />
-⁵ Wenn das Betriebssystem, das Sie installieren möchten, nicht im [Katalog der für die OVHcloud Dedicated Server verfügbaren Betriebssysteme](/links/bare-metal/os) verfügbar ist, können Sie auch ein personalisiertes Image verwenden: siehe [Vergleich von Bring Your Own Image (BYOI) und Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) für weitere Details.<br />
+⁴ Je nach Hardware-Kompatibilität Ihres Dedicated Servers; wenn nicht kompatibel, KVM Java verwenden.<br />
+⁵ Wenn das Betriebssystem, das Sie installieren möchten, nicht im [Katalog der für OVHcloud Dedicated Server verfügbaren Betriebssysteme](/links/bare-metal/os) ist, können Sie auch ein personalisiertes Image verwenden: siehe [Vergleich von Bring Your Own Image (BYOI) und Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) für weitere Details.<br />
 ⁶ SoL = Serial over LAN
 
-Um eine dieser Methoden zu aktivieren, loggen Sie sich in Ihrem [OVHcloud Kundencenter] ein (/links/manager). Klicken Sie im Bereich `Bare Metal Cloud`{.action} auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus und klicken Sie dann auf den Tab `IPMI/KVM`{.action}.
+Um eine dieser Methoden zu aktivieren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie im Bereich `Bare Metal Cloud`{.action} auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus und klicken Sie dann auf den Tab `IPMI/KVM`{.action}.
 
 ### KVM über Java-Applet öffnen <a name="applet-java"></a>
 
@@ -63,7 +63,7 @@ Sie können nun Ihren Server verwalten.
 
 ### KVM über Webbrowser öffnen <a name="kvm-browser"></a>
 
-Klicken Sie in Ihrem OVHcloud Kundencenter im Bereich `Remote KVM`{.action} auf `Von Ihrem Browser (KVM)`{.action} :
+Klicken Sie in Ihrem OVHcloud Kundencenter im Bereich `Remote KVM`{.action} auf `Von Ihrem Browser (KVM)`{.action}:
 
 ![KVM HTML Zugang](images/ipmi-kvm-html-01.png){.thumbnail}
 
@@ -93,28 +93,28 @@ Wenn die Sitzung bereit ist, erscheint eine Bestätigungsmeldung und ein URI, da
 
 Weitere Informationen zur Verwendung eines SSH-Schlüssels für die SSH-Verbindung finden Sie auf [dieser Seite](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys).
 
-### SoL über Webbrowser öffnen <a name=„sol-browser“></a>
+### SoL über Webbrowser öffnen <a name="sol-browser"></a>
 
 Klicken Sie in Ihrem OVHcloud Kundencenter im Bereich `Serial over LAN (SoL)`{.action} auf `Von Ihrem Browser (SoL)`{.action}.
 
 ![SoL JavaScript Zugang](images/ipmi-sol-html-01.png){.thumbnail}
 
 > [!primary]
-> Wenn der Wechsel zum Popup nicht automatisch erfolgt, können Sie immer noch auf die Schaltfläche `Auf die Konsole zugreifen (SoL)`{.action} klicken.
+> Wenn der Wechsel zum Popup nicht automatisch erfolgt, können Sie auf die Schaltfläche `Auf die Konsole zugreifen (SoL)`{.action} klicken.
 
 ![SoL JavaScript öffnen](images/ipmi-sol-html-02.png){.thumbnail}
 
 ### IPMI testen und neu starten
 
-Es kann vorkommen, dass die IPMI nicht mehr reagiert. Sie können dann zunächst einen Test durchführen, indem Sie auf `IPMI-Test `{.action} klicken. Die Ergebnisse der Diagnose werden unten auf der Seite angezeigt.
+Es kann vorkommen, dass IPMI nicht mehr reagiert. Sie können dann zunächst einen Test durchführen, indem Sie auf `IPMI-Test `{.action} klicken. Die Ergebnisse der Diagnose werden unten auf der Seite angezeigt.
 
 ![IPMI-Test](images/ipmi-test.png){.thumbnail}
 
-Wenn alles normal ist, wie in hier verwendeten Beispiel, dann haben Sie wahrscheinlich lokale Probleme (Internetverbindung, lokales Gerät). Wenn die IPMI-Funktion tatsächlich auf Schwierigkeiten stößt, können Sie sie neu starten, indem Sie auf `IPMI neu starten`{.action} klicken.
+Wenn alles normal ist, wie im hier gezeigten Beispiel, bestehen wahrscheinlich lokale Probleme (Internetverbindung, lokales Gerät). Wenn die IPMI-Funktion tatsächlich Störungen aufweist, können Sie sie neu starten, indem Sie auf `IPMI neu starten`{.action} klicken.
 
 ![IPMI-Test](images/ipmi-reboot.png){.thumbnail}
 
-Der Neustart des IPMI dauert einige Minuten.
+Der Neustart von IPMI dauert einige Minuten.
 
 > [!primary]
 > Dieser Vorgang beeinträchtigt nicht den Betrieb des Servers.
@@ -131,33 +131,33 @@ Um zu beginnen, öffnen Sie [IPMI über Java-Applet](#applet-java) in Ihrem [OVH
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
-Wählen Sie dann die ISO aus, die Sie im Dateisystem Ihres lokalen Computers verwenden möchten. Wenn Sie Ihr ISO-Zertifikat ausgewählt haben, klicken Sie auf den `Ctrl Alt Del`{.action} in der oberen rechten Ecke des Bildschirms, um den Server neu zu starten. Tippen Sie auf die Taste `F`, um auf die Startoptionen zuzugreifen.
+Wählen Sie dann die ISO im Dateisystem Ihres lokalen Computers aus. Wenn Sie die ISO-Datei ausgewählt haben, klicken Sie auf `Ctrl Alt Del`{.action} in der oberen rechten Ecke des Bildschirms, um den Server neu zu starten. Tippen Sie auf die Taste `F`, um auf die Startoptionen zuzugreifen.
 
 > [!primary]
-> Vielleicht müssen Sie die Software-Tastatur verwenden, um die Einträge in IPMI zu speichern. Um darauf zuzugreifen, klicken Sie oben im Fenster auf die `Keyboard`{.action}-Option . Wählen Sie anschließend im Drop-down-Menü `Soft Keyboard` aus und klicken Sie auf `Show`{.action}.
+> Vielleicht müssen Sie die Software-Tastatur verwenden, um die Einträge in IPMI zu speichern. Um darauf zuzugreifen, klicken Sie oben im Fenster auf die `Keyboard`{.action}-Option. Wählen Sie anschließend im Drop-down-Menü `Soft Keyboard` aus und klicken Sie auf `Show`{.action}.
 >
 
-Wählen Sie die `UEFI Virtual CDROM 1.00` im Startmenü (Boot) aus, um den Server von der zuvor verbundenen ISO zu starten.
+Wählen Sie `UEFI Virtual CDROM 1.00` im Startmenü (Boot) aus, um den Server von der zuvor verbundenen ISO zu starten.
 
 ![UEFI_Virt](images/UEFIVirt.jpg){.thumbnail}
 
-Folgen Sie den notwendigen Schritten für die Installation des Betriebssystems. Vergessen Sie nicht, die ISO-Norm aus der Option "Redirect ISO"zu löschen.
+Folgen Sie den notwendigen Schritten für die Installation des Betriebssystems. Vergessen Sie nicht, die ISO aus der Option "Redirect ISO" zu löschen.
 
 ### Installation eines Betriebssystems mit IPMIv2
 
 > [!warning]
-> OVHcloud garantiert nicht die Funktionalität der über IPMI installierten Betriebssysteme. Diese Methode sollte nur von einem erfahrenen Server-Administrator erwogen werden.
+> OVHcloud garantiert nicht die Funktionalität von über IPMI installierten Betriebssystemen. Diese Methode sollte nur von einem erfahrenen Server-Administrator erwogen werden.
 >
 
 Um zu beginnen, öffnen Sie [IPMI mit einem Java-Applet](#applet-java) über Ihr [OVHcloud Kundencenter](/links/manager). Klicken Sie dann auf `Virtual Media`{.action} und auf `Virtual Storage`{.action}.
 
 ![Virtual Storage](images/virtual_storage.png){.thumbnail}
 
-Wählen Sie im angezeigten Fenster `ISO File` aus der Drop-down-Liste "Logical Drive Type". Klicken Sie anschließend auf `Open Image`{.action} und navigieren Sie zu Ihrer ISO Datei. Klicken Sie abschließend auf `Plug-in`{.action} und `OK`{.action}.
+Wählen Sie im angezeigten Fenster `ISO File` aus der Drop-down-Liste "Logical Drive Type". Klicken Sie anschließend auf `Open Image`{.action} und navigieren Sie zu Ihrer ISO-Datei. Klicken Sie abschließend auf `Plug-in`{.action} und `OK`{.action}.
 
 ![ISO_file](images/iso_file.png){.thumbnail}
 
-Um von Ihrer ISO Datei aus zu starten müssen Sie auf das BIOS zugreifen und die Startoptionen ändern. Klicken Sie hierzu auf `Power Control`{.action} und dann auf `Set Power Reset`{.action}.
+Um von Ihrer ISO-Datei aus zu starten müssen Sie auf das BIOS zugreifen und die Startoptionen ändern. Klicken Sie hierzu auf `Power Control`{.action} und dann auf `Set Power Reset`{.action}.
 
 ![Power_Reserver](images/power_reset.png){.thumbnail}
 
@@ -178,7 +178,7 @@ Klicken Sie auf die Taste `F4`, um die Änderungen zu speichern und den Server n
 ### Installation eines Betriebssystems mit KVM über Webbrowser (nur für neuere Server)
 
 > [!warning]
-> OVHcloud garantiert nicht die Funktionalität der über IPMI installierten Betriebssysteme. Diese Methode sollte nur von einem erfahrenen Server-Administrator erwogen werden.
+> OVHcloud garantiert nicht die Funktionalität von über IPMI installierten Betriebssystemen. Diese Methode sollte nur von einem erfahrenen Server-Administrator erwogen werden.
 >
 
 Öffnen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) die [KVM-Konsole](#kvm-browser).
@@ -198,7 +198,7 @@ Klicken Sie auf `Start Media`{.action}. Dadurch wird die ISO-Datei für den Inst
 
 ![KVM installieren](images/kvm_install02.png){.thumbnail}
 
-Die nun angezeigte Dateigröße ist nicht die tatsächliche Größe. Das ist normal, denn die Datei wird in diesem Schritt nicht vollständig übertragen.
+Die nun angezeigte Dateigröße ist nicht die echte Größe. Das ist normal, denn die Datei wird in diesem Schritt nicht vollständig übertragen.
 
 ![KVM installieren](images/kvm_install03.png){.thumbnail}
 
