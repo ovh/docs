@@ -6,7 +6,7 @@ updated: 2024-08-21
 
 ## Objectif
 
-**L'objectif est de vous montrer comment vous connecter à votre interface Web vSphere managée depuis l'espace client HPC* VMware on OVHcloud.**
+**L'objectif est de vous montrer comment vous connecter à votre interface Web vSphere managée depuis l'espace client HPC VMware on OVHcloud.**
 
 ## Prérequis
 
